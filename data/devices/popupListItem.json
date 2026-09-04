@@ -2,10 +2,243 @@
     "id": "popupListItem",
     "name": "Popup Call To Action",
     "description": "List item to be used as a call to action in a popup",
-    "optionSchema": "{\"categories\":{\"categories\":[{\"id\":\"featured\",\"name\":\"Featured\"},{\"id\":\"availability\",\"name\":\"Availability\"}],\"showAllOptionsAt\":\"end\"},\"options\":[{\"key\":\"title\",\"option\":{\"label\":\"Header Text\",\"description\":\"Content shown in larger text\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"}},\"categories\":[\"featured\"]},{\"key\":\"description\",\"option\":{\"label\":\"Context Text\",\"description\":\"Content shown in smaller text. Use for descriptions & additional info.\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"}},\"categories\":[\"featured\"]},{\"key\":\"image\",\"option\":{\"label\":\"Image\",\"description\":\"Image used for the call to action\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"}}},{\"key\":\"selectChannel\",\"option\":{\"label\":\"When call to action selected, transmit on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"When a player selects this call to action, the device sends a signal on the selected channel\"},\"categories\":[\"featured\"]},{\"key\":\"group\",\"option\":{\"label\":\"Popup Group\",\"description\":\"Corresponding group of Popup Devices this call to action belongs to. If set, this call to action will only be shown on Popup Devices with the same group.\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\",\"category\":\"group\"}},\"categories\":[\"featured\"]},{\"key\":\"scope\",\"option\":{\"label\":\"Scope\",\"type\":\"select\",\"defaultValue\":\"global\",\"validators\":[null],\"props\":{\"options\":[{\"value\":\"global\",\"name\":\"global\"},{\"value\":\"player\",\"name\":\"player\"},{\"value\":\"team\",\"name\":\"team\"}],\"allowEmpty\":false},\"description\":\"When this call to action is activated/deactivated, who does it apply to?\"},\"categories\":[\"availability\"]},{\"key\":\"activeOnGameStart\",\"option\":{\"label\":\"Active On Game Start\",\"type\":\"select\",\"description\":\"Is this call to action active when the game starts?\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"availability\"]},{\"key\":\"activateChannel\",\"option\":{\"label\":\"Activate when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Activate this call to action when the device receives a signal from the selected channel\"},\"categories\":[\"availability\"]},{\"key\":\"deactivateChannel\",\"option\":{\"label\":\"Deactivate when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Deactivate this call to action when the device receives a signal from the selected channel\"},\"categories\":[\"availability\"]}]}",
-    "defaultState": "{\"active\":true}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"activate\",\"name\":\"Activate call to action\"},{\"id\":\"deactivate\",\"name\":\"Deactivate call to action\"}]},\"out\":{\"connections\":[{\"id\":\"selected\",\"name\":\"Call to action selected\"}]}}",
+    "optionSchema": {
+        "categories": {
+            "categories": [
+                {
+                    "id": "featured",
+                    "name": "Featured"
+                },
+                {
+                    "id": "availability",
+                    "name": "Availability"
+                }
+            ],
+            "showAllOptionsAt": "end"
+        },
+        "options": [
+            {
+                "key": "title",
+                "option": {
+                    "label": "Header Text",
+                    "description": "Content shown in larger text",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here..."
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "description",
+                "option": {
+                    "label": "Context Text",
+                    "description": "Content shown in smaller text. Use for descriptions & additional info.",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here..."
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "image",
+                "option": {
+                    "label": "Image",
+                    "description": "Image used for the call to action",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here..."
+                    }
+                }
+            },
+            {
+                "key": "selectChannel",
+                "option": {
+                    "label": "When call to action selected, transmit on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "When a player selects this call to action, the device sends a signal on the selected channel"
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "group",
+                "option": {
+                    "label": "Popup Group",
+                    "description": "Corresponding group of Popup Devices this call to action belongs to. If set, this call to action will only be shown on Popup Devices with the same group.",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here...",
+                        "category": "group"
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "scope",
+                "option": {
+                    "label": "Scope",
+                    "type": "select",
+                    "defaultValue": "global",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": "global",
+                                "name": "global"
+                            },
+                            {
+                                "value": "player",
+                                "name": "player"
+                            },
+                            {
+                                "value": "team",
+                                "name": "team"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "description": "When this call to action is activated/deactivated, who does it apply to?"
+                },
+                "categories": [
+                    "availability"
+                ]
+            },
+            {
+                "key": "activeOnGameStart",
+                "option": {
+                    "label": "Active On Game Start",
+                    "type": "select",
+                    "description": "Is this call to action active when the game starts?",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "availability"
+                ]
+            },
+            {
+                "key": "activateChannel",
+                "option": {
+                    "label": "Activate when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Activate this call to action when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "availability"
+                ]
+            },
+            {
+                "key": "deactivateChannel",
+                "option": {
+                    "label": "Deactivate when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Deactivate this call to action when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "availability"
+                ]
+            }
+        ]
+    },
+    "defaultState": {
+        "active": true
+    },
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "in": {
+            "connections": [
+                {
+                    "id": "activate",
+                    "name": "Activate call to action"
+                },
+                {
+                    "id": "deactivate",
+                    "name": "Deactivate call to action"
+                }
+            ]
+        },
+        "out": {
+            "connections": [
+                {
+                    "id": "selected",
+                    "name": "Call to action selected"
+                }
+            ]
+        }
+    },
     "seasonTicketRequired": true,
     "maxOnMap": 500,
     "initialMemoryCost": 35,

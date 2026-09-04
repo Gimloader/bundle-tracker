@@ -98,7 +98,12 @@ async function extractGameData(mapId: string) {
                 await writeJson(join(terrainPath, `${terrain.id}.json`), terrain);
             }
         
-            for(const device of options.deviceOptions) {
+            for(const device of options.deviceOptions as any[]) {
+                if(device.optionSchema) device.optionSchema = JSON.parse(device.optionSchema);
+                if(device.defaultState) device.defaultState = JSON.parse(device.defaultState);
+                if(device.codeGridSchema) device.codeGridSchema = JSON.parse(device.codeGridSchema);
+                if(device.wireConfig) device.wireConfig = JSON.parse(device.wireConfig);
+
                 await writeJson(join(devicesPath, `${device.id}.json`), device);
             }
         

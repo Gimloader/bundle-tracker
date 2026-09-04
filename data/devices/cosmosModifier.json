@@ -2,9 +2,90 @@
     "id": "cosmosModifier",
     "name": "Cosmos Modifier",
     "description": "Modify a player's Gim! For use by Team Gimkit only.",
-    "optionSchema": "{\"options\":[{\"key\":\"skinId\",\"option\":{\"label\":\"Skin\",\"description\":\"Change the appearance of the character\",\"type\":\"skinId\",\"defaultValue\":\"character_sentryRobot\",\"props\":{\"allowEmpty\":false},\"validators\":[null]}},{\"key\":\"trailId\",\"option\":{\"label\":\"Trail ID\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"}}},{\"key\":\"applyChannel\",\"option\":{\"label\":\"Apply when receiving on channel...\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100}}},{\"key\":\"resetChannel\",\"option\":{\"label\":\"Reset when receiving on channel...\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100}}}]}",
-    "defaultState": "{}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"apply\",\"name\":\"Apply modifier\"},{\"id\":\"reset\",\"name\":\"Reset player To selected appearance\"}]}}",
+    "optionSchema": {
+        "options": [
+            {
+                "key": "skinId",
+                "option": {
+                    "label": "Skin",
+                    "description": "Change the appearance of the character",
+                    "type": "skinId",
+                    "defaultValue": "character_sentryRobot",
+                    "props": {
+                        "allowEmpty": false
+                    },
+                    "validators": [
+                        null
+                    ]
+                }
+            },
+            {
+                "key": "trailId",
+                "option": {
+                    "label": "Trail ID",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here..."
+                    }
+                }
+            },
+            {
+                "key": "applyChannel",
+                "option": {
+                    "label": "Apply when receiving on channel...",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    }
+                }
+            },
+            {
+                "key": "resetChannel",
+                "option": {
+                    "label": "Reset when receiving on channel...",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    }
+                }
+            }
+        ]
+    },
+    "defaultState": {},
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "in": {
+            "connections": [
+                {
+                    "id": "apply",
+                    "name": "Apply modifier"
+                },
+                {
+                    "id": "reset",
+                    "name": "Reset player To selected appearance"
+                }
+            ]
+        }
+    },
     "minimumRoleLevel": 90
 }

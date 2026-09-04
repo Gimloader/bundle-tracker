@@ -2,9 +2,106 @@
     "id": "countdown",
     "name": "Countdown",
     "description": "A ticking countdown for an important event",
-    "optionSchema": "{\"options\":[{\"key\":\"minutes\",\"option\":{\"label\":\"Minutes\",\"type\":\"numberInput\",\"defaultValue\":10,\"validators\":[null],\"props\":{\"min\":0,\"max\":60,\"step\":1}}},{\"key\":\"seconds\",\"option\":{\"label\":\"Seconds\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"min\":0,\"max\":59,\"step\":1}}},{\"key\":\"startWhenReceivingFrom\",\"option\":{\"label\":\"Start When Receiving From...\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100}}},{\"key\":\"onEndTransmitOn\",\"option\":{\"label\":\"When Ends, Transmit On...\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100}}}]}",
-    "defaultState": "{}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[{\"type\":\"OnTick\",\"name\":\"On Tick...\"}],\"customBlocks\":[\"get_minutes\",\"get_seconds\",\"get_time_left_formatted\"]}",
-    "wireConfig": "{\"out\":{\"connections\":[{\"id\":\"ends\",\"name\":\"Countdown ends\"}]},\"in\":{\"connections\":[{\"id\":\"start\",\"name\":\"Start countdown\"}]}}",
+    "optionSchema": {
+        "options": [
+            {
+                "key": "minutes",
+                "option": {
+                    "label": "Minutes",
+                    "type": "numberInput",
+                    "defaultValue": 10,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 60,
+                        "step": 1
+                    }
+                }
+            },
+            {
+                "key": "seconds",
+                "option": {
+                    "label": "Seconds",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 59,
+                        "step": 1
+                    }
+                }
+            },
+            {
+                "key": "startWhenReceivingFrom",
+                "option": {
+                    "label": "Start When Receiving From...",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    }
+                }
+            },
+            {
+                "key": "onEndTransmitOn",
+                "option": {
+                    "label": "When Ends, Transmit On...",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    }
+                }
+            }
+        ]
+    },
+    "defaultState": {},
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [
+            {
+                "type": "OnTick",
+                "name": "On Tick..."
+            }
+        ],
+        "customBlocks": [
+            "get_minutes",
+            "get_seconds",
+            "get_time_left_formatted"
+        ]
+    },
+    "wireConfig": {
+        "out": {
+            "connections": [
+                {
+                    "id": "ends",
+                    "name": "Countdown ends"
+                }
+            ]
+        },
+        "in": {
+            "connections": [
+                {
+                    "id": "start",
+                    "name": "Start countdown"
+                }
+            ]
+        }
+    },
     "minimumRoleLevel": 90
 }

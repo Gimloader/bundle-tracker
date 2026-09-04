@@ -2,9 +2,154 @@
     "id": "itemSpawner",
     "name": "Item Spawner",
     "description": "Spawn items for players to collect",
-    "optionSchema": "{\"categories\":{\"categories\":[{\"id\":\"featured\",\"name\":\"Featured\"}],\"showAllOptionsAt\":\"end\"},\"options\":[{\"key\":\"itemId\",\"option\":{\"label\":\"Item\",\"description\":\"The item to spawn for players to collect\",\"type\":\"itemId\",\"validators\":[null],\"props\":{}},\"categories\":[\"featured\"]},{\"key\":\"itemAmount\",\"option\":{\"label\":\"Amount Of Item\",\"description\":\"The amount of the selected item player receive when they collect it\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":1,\"max\":999999999999999,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}},\"categories\":[\"featured\"]},{\"key\":\"msTimeBetweenSpawns\",\"option\":{\"label\":\"Time Between Spawns\",\"description\":\"When the item is collected, how long should it take before the item respawns?\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":1000,\"props\":{\"options\":[{\"name\":\"Instant\",\"value\":0},{\"name\":\"1 Second\",\"value\":1000},{\"name\":\"3 Seconds\",\"value\":3000},{\"name\":\"5 Seconds\",\"value\":5000},{\"name\":\"10 Seconds\",\"value\":10000},{\"name\":\"30 Seconds\",\"value\":30000},{\"name\":\"1 Minute\",\"value\":60000},{\"name\":\"2 Minutes\",\"value\":120000},{\"name\":\"3 Minutes\",\"value\":180000},{\"name\":\"5 Minutes\",\"value\":300000},{\"name\":\"10 Minutes\",\"value\":600000}],\"allowEmpty\":false}}},{\"key\":\"scope\",\"option\":{\"label\":\"Respawn Scope\",\"type\":\"select\",\"defaultValue\":\"global\",\"validators\":[null],\"props\":{\"options\":[{\"value\":\"global\",\"name\":\"global\"},{\"value\":\"player\",\"name\":\"player\"},{\"value\":\"team\",\"name\":\"team\"}],\"allowEmpty\":false},\"description\":\"The time between spawns is applied to who?\"}}]}",
-    "defaultState": "{\"itemAvailableTimestamp\":0}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
+    "optionSchema": {
+        "categories": {
+            "categories": [
+                {
+                    "id": "featured",
+                    "name": "Featured"
+                }
+            ],
+            "showAllOptionsAt": "end"
+        },
+        "options": [
+            {
+                "key": "itemId",
+                "option": {
+                    "label": "Item",
+                    "description": "The item to spawn for players to collect",
+                    "type": "itemId",
+                    "validators": [
+                        null
+                    ],
+                    "props": {}
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "itemAmount",
+                "option": {
+                    "label": "Amount Of Item",
+                    "description": "The amount of the selected item player receive when they collect it",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 999999999999999,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "msTimeBetweenSpawns",
+                "option": {
+                    "label": "Time Between Spawns",
+                    "description": "When the item is collected, how long should it take before the item respawns?",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": 1000,
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Instant",
+                                "value": 0
+                            },
+                            {
+                                "name": "1 Second",
+                                "value": 1000
+                            },
+                            {
+                                "name": "3 Seconds",
+                                "value": 3000
+                            },
+                            {
+                                "name": "5 Seconds",
+                                "value": 5000
+                            },
+                            {
+                                "name": "10 Seconds",
+                                "value": 10000
+                            },
+                            {
+                                "name": "30 Seconds",
+                                "value": 30000
+                            },
+                            {
+                                "name": "1 Minute",
+                                "value": 60000
+                            },
+                            {
+                                "name": "2 Minutes",
+                                "value": 120000
+                            },
+                            {
+                                "name": "3 Minutes",
+                                "value": 180000
+                            },
+                            {
+                                "name": "5 Minutes",
+                                "value": 300000
+                            },
+                            {
+                                "name": "10 Minutes",
+                                "value": 600000
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "scope",
+                "option": {
+                    "label": "Respawn Scope",
+                    "type": "select",
+                    "defaultValue": "global",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": "global",
+                                "name": "global"
+                            },
+                            {
+                                "value": "player",
+                                "name": "player"
+                            },
+                            {
+                                "value": "team",
+                                "name": "team"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "description": "The time between spawns is applied to who?"
+                }
+            }
+        ]
+    },
+    "defaultState": {
+        "itemAvailableTimestamp": 0
+    },
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
     "maxOnMap": 100,
     "initialMemoryCost": 20,
     "subsequentMemoryCost": 8

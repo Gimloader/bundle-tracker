@@ -2,10 +2,258 @@
     "id": "notification",
     "name": "Notification",
     "description": "Send an important message/alert to players",
-    "optionSchema": "{\"categories\":{\"categories\":[{\"id\":\"featured\",\"name\":\"Featured\"}],\"showAllOptionsAt\":\"end\"},\"options\":[{\"key\":\"title\",\"option\":{\"label\":\"Notification Title\",\"description\":\"Text shown on the notification in larger text\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\",\"maxLength\":128}},\"categories\":[\"featured\"]},{\"key\":\"description\",\"option\":{\"label\":\"Notification Content\",\"description\":\"Text shown on the notification in smaller text\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\",\"maxLength\":512}},\"categories\":[\"featured\"]},{\"key\":\"notifyChannel\",\"option\":{\"label\":\"Send notification when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Send the notification when the device receives a signal from the selected channel\"},\"categories\":[\"featured\"]},{\"key\":\"notificationType\",\"option\":{\"label\":\"Notification Type\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"none\",\"props\":{\"options\":[{\"name\":\"None\",\"value\":\"none\"},{\"name\":\"Info\",\"value\":\"info\"},{\"name\":\"Success\",\"value\":\"success\"},{\"name\":\"Warning\",\"value\":\"warning\"},{\"name\":\"Error\",\"value\":\"error\"}],\"allowEmpty\":false}}},{\"key\":\"notificationPlacement\",\"option\":{\"label\":\"Notification Placement\",\"description\":\"Which corner of the screen the notification will appear in\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"topRight\",\"props\":{\"options\":[{\"name\":\"Top Right\",\"value\":\"topRight\"},{\"name\":\"Top Left\",\"value\":\"topLeft\"},{\"name\":\"Bottom Right\",\"value\":\"bottomRight\"},{\"name\":\"Bottom Left\",\"value\":\"bottomLeft\"}],\"allowEmpty\":false}}},{\"key\":\"notificationDurationStrategy\",\"option\":{\"label\":\"Notification Duration\",\"description\":\"Set a manual duration or let the notification disappear automatically based off the length of the content\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"auto\",\"props\":{\"options\":[{\"name\":\"Auto\",\"value\":\"auto\"},{\"name\":\"Specific Time Amount\",\"value\":\"manual\"}],\"allowEmpty\":false}}},{\"key\":\"customDurationSeconds\",\"option\":{\"label\":\"Notification Duration\",\"description\":\"How long (in seconds) the notification sticks around\",\"type\":\"numberInput\",\"defaultValue\":10,\"validators\":[null],\"props\":{\"min\":1,\"max\":30,\"step\":1,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"notificationDurationStrategy\",\"compare\":\"NOT_EQUAL\",\"value\":\"manual\"}]]}},{\"key\":\"sendTo\",\"option\":{\"label\":\"Send Notification To\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"characterTriggering\",\"props\":{\"options\":[{\"name\":\"Triggering Player\",\"value\":\"characterTriggering\"},{\"name\":\"All On Triggering Player's Team\",\"value\":\"allOnTeam\"},{\"name\":\"All On Triggering Player's Team, Except Triggering Player\",\"value\":\"allOnTeamExceptTriggeringPlayer\"},{\"name\":\"Everybody\",\"value\":\"allCharacters\"}],\"allowEmpty\":false}}}]}",
-    "defaultState": "{}",
-    "codeGridSchema": "{\"allowChannelGrids\":true,\"triggers\":[{\"type\":\"wire\",\"name\":\"On wire pulse...\"}],\"customBlocks\":[\"send_custom_notification\"]}",
-    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"notify\",\"name\":\"Send notification\"},{\"id\":\"codeGrid\",\"name\":\"Run wire pulse block\"}]}}",
+    "optionSchema": {
+        "categories": {
+            "categories": [
+                {
+                    "id": "featured",
+                    "name": "Featured"
+                }
+            ],
+            "showAllOptionsAt": "end"
+        },
+        "options": [
+            {
+                "key": "title",
+                "option": {
+                    "label": "Notification Title",
+                    "description": "Text shown on the notification in larger text",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here...",
+                        "maxLength": 128
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "description",
+                "option": {
+                    "label": "Notification Content",
+                    "description": "Text shown on the notification in smaller text",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here...",
+                        "maxLength": 512
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "notifyChannel",
+                "option": {
+                    "label": "Send notification when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Send the notification when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "notificationType",
+                "option": {
+                    "label": "Notification Type",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "none",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "None",
+                                "value": "none"
+                            },
+                            {
+                                "name": "Info",
+                                "value": "info"
+                            },
+                            {
+                                "name": "Success",
+                                "value": "success"
+                            },
+                            {
+                                "name": "Warning",
+                                "value": "warning"
+                            },
+                            {
+                                "name": "Error",
+                                "value": "error"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "notificationPlacement",
+                "option": {
+                    "label": "Notification Placement",
+                    "description": "Which corner of the screen the notification will appear in",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "topRight",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Top Right",
+                                "value": "topRight"
+                            },
+                            {
+                                "name": "Top Left",
+                                "value": "topLeft"
+                            },
+                            {
+                                "name": "Bottom Right",
+                                "value": "bottomRight"
+                            },
+                            {
+                                "name": "Bottom Left",
+                                "value": "bottomLeft"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "notificationDurationStrategy",
+                "option": {
+                    "label": "Notification Duration",
+                    "description": "Set a manual duration or let the notification disappear automatically based off the length of the content",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "auto",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Auto",
+                                "value": "auto"
+                            },
+                            {
+                                "name": "Specific Time Amount",
+                                "value": "manual"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "customDurationSeconds",
+                "option": {
+                    "label": "Notification Duration",
+                    "description": "How long (in seconds) the notification sticks around",
+                    "type": "numberInput",
+                    "defaultValue": 10,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 30,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "notificationDurationStrategy",
+                                "compare": "NOT_EQUAL",
+                                "value": "manual"
+                            }
+                        ]
+                    ]
+                }
+            },
+            {
+                "key": "sendTo",
+                "option": {
+                    "label": "Send Notification To",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "characterTriggering",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Triggering Player",
+                                "value": "characterTriggering"
+                            },
+                            {
+                                "name": "All On Triggering Player's Team",
+                                "value": "allOnTeam"
+                            },
+                            {
+                                "name": "All On Triggering Player's Team, Except Triggering Player",
+                                "value": "allOnTeamExceptTriggeringPlayer"
+                            },
+                            {
+                                "name": "Everybody",
+                                "value": "allCharacters"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            }
+        ]
+    },
+    "defaultState": {},
+    "codeGridSchema": {
+        "allowChannelGrids": true,
+        "triggers": [
+            {
+                "type": "wire",
+                "name": "On wire pulse..."
+            }
+        ],
+        "customBlocks": [
+            "send_custom_notification"
+        ]
+    },
+    "wireConfig": {
+        "in": {
+            "connections": [
+                {
+                    "id": "notify",
+                    "name": "Send notification"
+                },
+                {
+                    "id": "codeGrid",
+                    "name": "Run wire pulse block"
+                }
+            ]
+        }
+    },
     "initialMemoryCost": 15,
     "subsequentMemoryCost": 15
 }

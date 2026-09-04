@@ -2,10 +2,102 @@
     "id": "healthGranter",
     "name": "Health Granter",
     "description": "Grant a player health & shield",
-    "optionSchema": "{\"options\":[{\"key\":\"amount\",\"option\":{\"label\":\"Amount\",\"description\":\"Amount of health or shield to grant\",\"type\":\"numberInput\",\"defaultValue\":25,\"validators\":[null],\"props\":{\"min\":1,\"max\":200,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"grantType\",\"option\":{\"label\":\"Grant Type\",\"description\":\"Grant just health, just shield, or health first, then shield (if leftovers)\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"health\",\"props\":{\"options\":[{\"value\":\"health\",\"name\":\"Health\"},{\"value\":\"shield\",\"name\":\"Shield\"},{\"value\":\"healthFirst\",\"name\":\"Health, Then Shield\"}],\"allowEmpty\":false}}},{\"key\":\"grantChannel\",\"option\":{\"label\":\"Grant health when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Grant health to the triggering player when the device receives a signal from the selected channel\"}}]}",
-    "defaultState": "{}",
-    "codeGridSchema": "{\"allowChannelGrids\":true,\"triggers\":[{\"type\":\"wire\",\"name\":\"On wire pulse...\"}],\"customBlocks\":[\"grant_health_custom\"]}",
-    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"grant\",\"name\":\"Grant player health\"},{\"id\":\"codeGrid\",\"name\":\"Run wire pulse block\"}]}}",
+    "optionSchema": {
+        "options": [
+            {
+                "key": "amount",
+                "option": {
+                    "label": "Amount",
+                    "description": "Amount of health or shield to grant",
+                    "type": "numberInput",
+                    "defaultValue": 25,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 200,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            },
+            {
+                "key": "grantType",
+                "option": {
+                    "label": "Grant Type",
+                    "description": "Grant just health, just shield, or health first, then shield (if leftovers)",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "health",
+                    "props": {
+                        "options": [
+                            {
+                                "value": "health",
+                                "name": "Health"
+                            },
+                            {
+                                "value": "shield",
+                                "name": "Shield"
+                            },
+                            {
+                                "value": "healthFirst",
+                                "name": "Health, Then Shield"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "grantChannel",
+                "option": {
+                    "label": "Grant health when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Grant health to the triggering player when the device receives a signal from the selected channel"
+                }
+            }
+        ]
+    },
+    "defaultState": {},
+    "codeGridSchema": {
+        "allowChannelGrids": true,
+        "triggers": [
+            {
+                "type": "wire",
+                "name": "On wire pulse..."
+            }
+        ],
+        "customBlocks": [
+            "grant_health_custom"
+        ]
+    },
+    "wireConfig": {
+        "in": {
+            "connections": [
+                {
+                    "id": "grant",
+                    "name": "Grant player health"
+                },
+                {
+                    "id": "codeGrid",
+                    "name": "Run wire pulse block"
+                }
+            ]
+        }
+    },
     "maxOnMap": 100,
     "initialMemoryCost": 20,
     "subsequentMemoryCost": 20

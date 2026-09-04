@@ -2,10 +2,362 @@
     "id": "laserBeam",
     "name": "Laser Beam",
     "description": "A laser that deals damage to players that touch it",
-    "optionSchema": "{\"categories\":{\"categories\":[{\"id\":\"featured\",\"name\":\"Featured\"},{\"id\":\"channels\",\"name\":\"Channels\"}],\"showAllOptionsAt\":\"end\"},\"options\":[{\"key\":\"damageToDeal\",\"option\":{\"label\":\"Damage Dealt\",\"description\":\"Amount of damage dealt to players when hit by the laser beam\",\"type\":\"numberInput\",\"defaultValue\":10,\"validators\":[null],\"props\":{\"min\":0,\"max\":500000,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}},\"categories\":[\"featured\"]},{\"key\":\"appearance\",\"option\":{\"label\":\"Style\",\"description\":\"Change the style of the laser beam emitters\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"Standard\",\"props\":{\"options\":[{\"name\":\"Standard\",\"value\":\"Standard\"},{\"name\":\"Plant\",\"value\":\"Plant\"}],\"allowEmpty\":false}},\"categories\":[\"featured\"]},{\"key\":\"laserColor\",\"option\":{\"label\":\"Laser Color\",\"type\":\"color\",\"defaultValue\":\"#ff0000\",\"validators\":[null]},\"categories\":[\"featured\"]},{\"key\":\"activeOnGameStart\",\"option\":{\"label\":\"Active On Game Start\",\"type\":\"select\",\"description\":\"Is the laser on when the game begins?\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"featured\"]},{\"key\":\"laserGroup\",\"option\":{\"label\":\"Laser Group\",\"description\":\"Set the name of a group this laser belongs to\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Group name...\",\"category\":\"laserGroup\"}},\"categories\":[\"featured\"]},{\"key\":\"scope\",\"option\":{\"label\":\"Laser Scope\",\"type\":\"select\",\"defaultValue\":\"global\",\"validators\":[null],\"props\":{\"options\":[{\"value\":\"global\",\"name\":\"global\"},{\"value\":\"player\",\"name\":\"player\"},{\"value\":\"team\",\"name\":\"team\"}],\"allowEmpty\":false},\"description\":\"When the laser is activated/deactivated, who does it apply to?\"}},{\"key\":\"transmitOnWhenHitPlayer\",\"option\":{\"label\":\"When player hit, transmit on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"When a player is hit, the device sends a signal on the selected channel\"},\"categories\":[\"channels\"]},{\"key\":\"activateOnChannel\",\"option\":{\"label\":\"Activate when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Activate the laser when the device receives a signal from the selected channel\"},\"categories\":[\"channels\"]},{\"key\":\"deactivateOnChannel\",\"option\":{\"label\":\"Deactivate when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Deactivate the laser when the device receives a signal from the selected channel\"},\"categories\":[\"channels\"]},{\"key\":\"angle\",\"option\":{\"label\":\"Angle\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"allowEmpty\":false,\"useSlider\":false},\"hidden\":true}},{\"key\":\"distance\",\"option\":{\"label\":\"Distance\",\"type\":\"numberInput\",\"defaultValue\":350,\"validators\":[null],\"props\":{\"min\":75,\"max\":3500,\"allowEmpty\":false,\"useSlider\":false},\"hidden\":true}},{\"key\":\"showPath\",\"option\":{\"label\":\"Show Path\",\"type\":\"select\",\"description\":\"When the laser is inactive, show a dotted path showing the start & end points\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}},{\"key\":\"showOrigin\",\"option\":{\"label\":\"Show Start Point\",\"type\":\"select\",\"description\":\"Show the starting point of the laser beam\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}},{\"key\":\"showEndPoint\",\"option\":{\"label\":\"Show End Point\",\"type\":\"select\",\"description\":\"Show the ending point of the laser beam\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}}]}",
-    "defaultState": "{\"active\":true}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"out\":{\"connections\":[{\"id\":\"hitPlayer\",\"name\":\"Player hit by laser\"}]},\"in\":{\"connections\":[{\"id\":\"activate\",\"name\":\"Activate laser\"},{\"id\":\"deactivate\",\"name\":\"Deactivate laser\"}]}}",
+    "optionSchema": {
+        "categories": {
+            "categories": [
+                {
+                    "id": "featured",
+                    "name": "Featured"
+                },
+                {
+                    "id": "channels",
+                    "name": "Channels"
+                }
+            ],
+            "showAllOptionsAt": "end"
+        },
+        "options": [
+            {
+                "key": "damageToDeal",
+                "option": {
+                    "label": "Damage Dealt",
+                    "description": "Amount of damage dealt to players when hit by the laser beam",
+                    "type": "numberInput",
+                    "defaultValue": 10,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 500000,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "appearance",
+                "option": {
+                    "label": "Style",
+                    "description": "Change the style of the laser beam emitters",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "Standard",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Standard",
+                                "value": "Standard"
+                            },
+                            {
+                                "name": "Plant",
+                                "value": "Plant"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "laserColor",
+                "option": {
+                    "label": "Laser Color",
+                    "type": "color",
+                    "defaultValue": "#ff0000",
+                    "validators": [
+                        null
+                    ]
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "activeOnGameStart",
+                "option": {
+                    "label": "Active On Game Start",
+                    "type": "select",
+                    "description": "Is the laser on when the game begins?",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "laserGroup",
+                "option": {
+                    "label": "Laser Group",
+                    "description": "Set the name of a group this laser belongs to",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Group name...",
+                        "category": "laserGroup"
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "scope",
+                "option": {
+                    "label": "Laser Scope",
+                    "type": "select",
+                    "defaultValue": "global",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": "global",
+                                "name": "global"
+                            },
+                            {
+                                "value": "player",
+                                "name": "player"
+                            },
+                            {
+                                "value": "team",
+                                "name": "team"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "description": "When the laser is activated/deactivated, who does it apply to?"
+                }
+            },
+            {
+                "key": "transmitOnWhenHitPlayer",
+                "option": {
+                    "label": "When player hit, transmit on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "When a player is hit, the device sends a signal on the selected channel"
+                },
+                "categories": [
+                    "channels"
+                ]
+            },
+            {
+                "key": "activateOnChannel",
+                "option": {
+                    "label": "Activate when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Activate the laser when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "channels"
+                ]
+            },
+            {
+                "key": "deactivateOnChannel",
+                "option": {
+                    "label": "Deactivate when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Deactivate the laser when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "channels"
+                ]
+            },
+            {
+                "key": "angle",
+                "option": {
+                    "label": "Angle",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            },
+            {
+                "key": "distance",
+                "option": {
+                    "label": "Distance",
+                    "type": "numberInput",
+                    "defaultValue": 350,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 75,
+                        "max": 3500,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            },
+            {
+                "key": "showPath",
+                "option": {
+                    "label": "Show Path",
+                    "type": "select",
+                    "description": "When the laser is inactive, show a dotted path showing the start & end points",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "showOrigin",
+                "option": {
+                    "label": "Show Start Point",
+                    "type": "select",
+                    "description": "Show the starting point of the laser beam",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "showEndPoint",
+                "option": {
+                    "label": "Show End Point",
+                    "type": "select",
+                    "description": "Show the ending point of the laser beam",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            }
+        ]
+    },
+    "defaultState": {
+        "active": true
+    },
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "out": {
+            "connections": [
+                {
+                    "id": "hitPlayer",
+                    "name": "Player hit by laser"
+                }
+            ]
+        },
+        "in": {
+            "connections": [
+                {
+                    "id": "activate",
+                    "name": "Activate laser"
+                },
+                {
+                    "id": "deactivate",
+                    "name": "Deactivate laser"
+                }
+            ]
+        }
+    },
     "maxOnMap": 100,
     "initialMemoryCost": 250,
     "subsequentMemoryCost": 75

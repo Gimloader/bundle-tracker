@@ -1,10 +1,88 @@
 {
     "id": "changingBooth",
     "name": "Changing Booth",
-    "optionSchema": "{\"options\":[{\"key\":\"activeOnGameStart\",\"option\":{\"label\":\"Active on game start\",\"type\":\"select\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}},{\"key\":\"activateWhenReceivingFrom\",\"option\":{\"label\":\"Activate when receiving from\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100}}},{\"key\":\"deactivateWhenReceivingFrom\",\"option\":{\"label\":\"Deactivate when receiving from\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100}}}]}",
-    "defaultState": "{\"active\":true}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"activate\",\"name\":\"Activate barrier\"},{\"id\":\"deactivate\",\"name\":\"Deactivate barrier\"}]}}",
+    "optionSchema": {
+        "options": [
+            {
+                "key": "activeOnGameStart",
+                "option": {
+                    "label": "Active on game start",
+                    "type": "select",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "activateWhenReceivingFrom",
+                "option": {
+                    "label": "Activate when receiving from",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    }
+                }
+            },
+            {
+                "key": "deactivateWhenReceivingFrom",
+                "option": {
+                    "label": "Deactivate when receiving from",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    }
+                }
+            }
+        ]
+    },
+    "defaultState": {
+        "active": true
+    },
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "in": {
+            "connections": [
+                {
+                    "id": "activate",
+                    "name": "Activate barrier"
+                },
+                {
+                    "id": "deactivate",
+                    "name": "Deactivate barrier"
+                }
+            ]
+        }
+    },
     "minimumRoleLevel": 90,
     "initialMemoryCost": 0,
     "subsequentMemoryCost": 0

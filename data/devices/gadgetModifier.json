@@ -2,10 +2,462 @@
     "id": "gadgetModifier",
     "name": "Gadget Modifier",
     "description": "Modify gadget properties.",
-    "optionSchema": "{\"options\":[{\"key\":\"itemId\",\"option\":{\"label\":\"Item ID\",\"description\":\"ID of the item to use\",\"type\":\"itemId\",\"validators\":[null],\"props\":{\"allowedItemsCategories\":[\"weapon\"]}}},{\"key\":\"activateChannel\",\"option\":{\"label\":\"Activate class when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Activate class for triggering character when the device receives a signal from the selected channel\"}},{\"key\":\"deactivateChannel\",\"option\":{\"label\":\"Deactivate class when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Deactivate class for triggering character when the device receives a signal from the selected channel\"}},{\"key\":\"scope\",\"option\":{\"label\":\"Scope\",\"type\":\"select\",\"defaultValue\":\"global\",\"validators\":[null],\"props\":{\"options\":[{\"value\":\"global\",\"name\":\"global\"},{\"value\":\"player\",\"name\":\"player\"},{\"value\":\"team\",\"name\":\"team\"}],\"allowEmpty\":false},\"description\":\"Scope of the class\"}},{\"key\":\"modifyDurability\",\"option\":{\"label\":\"Modify Durability\",\"type\":\"select\",\"description\":\"Modify Durability of the item\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}},{\"key\":\"enableDurability\",\"option\":{\"label\":\"Enable Durability\",\"type\":\"select\",\"description\":\"Enable Durability of the item\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false},\"hideIf\":[[{\"key\":\"modifyDurability\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]}},{\"key\":\"modifyDurabilityCost\",\"option\":{\"label\":\"Modify Durability Cost\",\"type\":\"select\",\"description\":\"Modify Durability Cost of the item\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}},{\"key\":\"durabilityCost\",\"option\":{\"label\":\"Durability Cost\",\"description\":\"Durability Cost of the item (1000 uses the item after first use)\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"min\":0,\"max\":1000,\"step\":1,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"modifyDurabilityCost\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]}},{\"key\":\"modifyClipSize\",\"option\":{\"label\":\"Modify Clip Size\",\"type\":\"select\",\"description\":\"Modify Clip size of the item\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}},{\"key\":\"clipSize\",\"option\":{\"label\":\"Clip Size\",\"description\":\"Clip size of the item\",\"type\":\"numberInput\",\"defaultValue\":100,\"validators\":[null],\"props\":{\"min\":0,\"max\":999999999,\"step\":1,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"modifyClipSize\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]}},{\"key\":\"modifyDamage\",\"option\":{\"label\":\"Modify Damage\",\"type\":\"select\",\"description\":\"Modify Damage of the item\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}},{\"key\":\"damage\",\"option\":{\"label\":\"Damage\",\"description\":\"Damage of the item\",\"type\":\"numberInput\",\"defaultValue\":100,\"validators\":[null],\"props\":{\"min\":0,\"max\":999999999,\"step\":1,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"modifyDamage\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]}},{\"key\":\"modifyDistance\",\"option\":{\"label\":\"Modify Distance\",\"type\":\"select\",\"description\":\"Modify Distance of the item\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}},{\"key\":\"distance\",\"option\":{\"label\":\"Distance\",\"description\":\"Distance of the item\",\"type\":\"numberInput\",\"defaultValue\":100,\"validators\":[null],\"props\":{\"min\":0,\"max\":999999999,\"step\":1,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"modifyDistance\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]}},{\"key\":\"modifySpeed\",\"option\":{\"label\":\"Modify Speed\",\"type\":\"select\",\"description\":\"Modify Speed of the item\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}},{\"key\":\"speed\",\"option\":{\"label\":\"Speed\",\"description\":\"Speed of the item\",\"type\":\"numberInput\",\"defaultValue\":100,\"validators\":[null],\"props\":{\"min\":1,\"max\":999999999,\"step\":1,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"modifySpeed\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]}},{\"key\":\"disableDestructionOfDynamicBuildings\",\"option\":{\"label\":\"Disable Destruction of Dynamic Buildings\",\"description\":\"When a player hits a dynamic building, should it be damaged?\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":1,\"props\":{\"options\":[{\"value\":1,\"name\":\"Do Not Override\"},{\"value\":2,\"name\":\"Yes\"},{\"value\":3,\"name\":\"No\"}],\"allowEmpty\":false}}}]}",
-    "defaultState": "{}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"activate\",\"name\":\"Activate class\"},{\"id\":\"deactivate\",\"name\":\"Deactivate class\"}]}}",
+    "optionSchema": {
+        "options": [
+            {
+                "key": "itemId",
+                "option": {
+                    "label": "Item ID",
+                    "description": "ID of the item to use",
+                    "type": "itemId",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "allowedItemsCategories": [
+                            "weapon"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "activateChannel",
+                "option": {
+                    "label": "Activate class when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Activate class for triggering character when the device receives a signal from the selected channel"
+                }
+            },
+            {
+                "key": "deactivateChannel",
+                "option": {
+                    "label": "Deactivate class when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Deactivate class for triggering character when the device receives a signal from the selected channel"
+                }
+            },
+            {
+                "key": "scope",
+                "option": {
+                    "label": "Scope",
+                    "type": "select",
+                    "defaultValue": "global",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": "global",
+                                "name": "global"
+                            },
+                            {
+                                "value": "player",
+                                "name": "player"
+                            },
+                            {
+                                "value": "team",
+                                "name": "team"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "description": "Scope of the class"
+                }
+            },
+            {
+                "key": "modifyDurability",
+                "option": {
+                    "label": "Modify Durability",
+                    "type": "select",
+                    "description": "Modify Durability of the item",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "enableDurability",
+                "option": {
+                    "label": "Enable Durability",
+                    "type": "select",
+                    "description": "Enable Durability of the item",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "modifyDurability",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                }
+            },
+            {
+                "key": "modifyDurabilityCost",
+                "option": {
+                    "label": "Modify Durability Cost",
+                    "type": "select",
+                    "description": "Modify Durability Cost of the item",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "durabilityCost",
+                "option": {
+                    "label": "Durability Cost",
+                    "description": "Durability Cost of the item (1000 uses the item after first use)",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 1000,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "modifyDurabilityCost",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                }
+            },
+            {
+                "key": "modifyClipSize",
+                "option": {
+                    "label": "Modify Clip Size",
+                    "type": "select",
+                    "description": "Modify Clip size of the item",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "clipSize",
+                "option": {
+                    "label": "Clip Size",
+                    "description": "Clip size of the item",
+                    "type": "numberInput",
+                    "defaultValue": 100,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 999999999,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "modifyClipSize",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                }
+            },
+            {
+                "key": "modifyDamage",
+                "option": {
+                    "label": "Modify Damage",
+                    "type": "select",
+                    "description": "Modify Damage of the item",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "damage",
+                "option": {
+                    "label": "Damage",
+                    "description": "Damage of the item",
+                    "type": "numberInput",
+                    "defaultValue": 100,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 999999999,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "modifyDamage",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                }
+            },
+            {
+                "key": "modifyDistance",
+                "option": {
+                    "label": "Modify Distance",
+                    "type": "select",
+                    "description": "Modify Distance of the item",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "distance",
+                "option": {
+                    "label": "Distance",
+                    "description": "Distance of the item",
+                    "type": "numberInput",
+                    "defaultValue": 100,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 999999999,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "modifyDistance",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                }
+            },
+            {
+                "key": "modifySpeed",
+                "option": {
+                    "label": "Modify Speed",
+                    "type": "select",
+                    "description": "Modify Speed of the item",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "speed",
+                "option": {
+                    "label": "Speed",
+                    "description": "Speed of the item",
+                    "type": "numberInput",
+                    "defaultValue": 100,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 999999999,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "modifySpeed",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                }
+            },
+            {
+                "key": "disableDestructionOfDynamicBuildings",
+                "option": {
+                    "label": "Disable Destruction of Dynamic Buildings",
+                    "description": "When a player hits a dynamic building, should it be damaged?",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": 1,
+                    "props": {
+                        "options": [
+                            {
+                                "value": 1,
+                                "name": "Do Not Override"
+                            },
+                            {
+                                "value": 2,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": 3,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            }
+        ]
+    },
+    "defaultState": {},
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "in": {
+            "connections": [
+                {
+                    "id": "activate",
+                    "name": "Activate class"
+                },
+                {
+                    "id": "deactivate",
+                    "name": "Deactivate class"
+                }
+            ]
+        }
+    },
     "minimumRoleLevel": 90,
     "maxOnMap": 512,
     "initialMemoryCost": 25,

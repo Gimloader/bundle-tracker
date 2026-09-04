@@ -2,10 +2,239 @@
     "id": "dialogueAction",
     "name": "Dialogue Action",
     "description": "An action button that can be clicked on in the Dialogue Device",
-    "optionSchema": "{\"categories\":{\"categories\":[{\"id\":\"featured\",\"name\":\"Featured\"},{\"id\":\"activeAndScope\",\"name\":\"Active and Scope\"}],\"showAllOptionsAt\":\"end\"},\"options\":[{\"key\":\"text\",\"option\":{\"label\":\"Text\",\"description\":\"Text displayed on the action button\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\",\"maxLength\":64}},\"categories\":[\"featured\"]},{\"key\":\"selectChannel\",\"option\":{\"label\":\"When action clicked, transmit on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"When the action is clicked, the device sends a signal on the selected channel\"},\"categories\":[\"featured\"]},{\"key\":\"group\",\"option\":{\"label\":\"Dialogue Group\",\"description\":\"This action will be displayed on all Dialogue devices with the same group name\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\",\"category\":\"dialogue\"}},\"categories\":[\"featured\"]},{\"key\":\"scope\",\"option\":{\"label\":\"Active Scope\",\"type\":\"select\",\"defaultValue\":\"global\",\"validators\":[null],\"props\":{\"options\":[{\"value\":\"global\",\"name\":\"global\"},{\"value\":\"player\",\"name\":\"player\"},{\"value\":\"team\",\"name\":\"team\"}],\"allowEmpty\":false},\"description\":\"When the action is activated/deactivated, who does it apply to?\"},\"categories\":[\"activeAndScope\"]},{\"key\":\"activeOnGameStart\",\"option\":{\"label\":\"Active on Game Start\",\"type\":\"select\",\"description\":\"Is this action active when the game starts?\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"activeAndScope\"]},{\"key\":\"deactivateAfterUse\",\"option\":{\"label\":\"Deactivate After Use\",\"type\":\"select\",\"description\":\"Deactivate the action after it is clicked\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"activeAndScope\"]},{\"key\":\"activateChannel\",\"option\":{\"label\":\"Activate when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Activate the action when the device receives a signal from the selected channel\"},\"categories\":[\"activeAndScope\"]},{\"key\":\"deactivateChannel\",\"option\":{\"label\":\"Deactivate when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Deactivate the action when the device receives a signal from the selected channel\"},\"categories\":[\"activeAndScope\"]}]}",
-    "defaultState": "{\"active\":false}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"activate\",\"name\":\"Activate action\"},{\"id\":\"deactivate\",\"name\":\"Deactivate action\"}]},\"out\":{\"connections\":[{\"id\":\"selected\",\"name\":\"Action clicked\"}]}}",
+    "optionSchema": {
+        "categories": {
+            "categories": [
+                {
+                    "id": "featured",
+                    "name": "Featured"
+                },
+                {
+                    "id": "activeAndScope",
+                    "name": "Active and Scope"
+                }
+            ],
+            "showAllOptionsAt": "end"
+        },
+        "options": [
+            {
+                "key": "text",
+                "option": {
+                    "label": "Text",
+                    "description": "Text displayed on the action button",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here...",
+                        "maxLength": 64
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "selectChannel",
+                "option": {
+                    "label": "When action clicked, transmit on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "When the action is clicked, the device sends a signal on the selected channel"
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "group",
+                "option": {
+                    "label": "Dialogue Group",
+                    "description": "This action will be displayed on all Dialogue devices with the same group name",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here...",
+                        "category": "dialogue"
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "scope",
+                "option": {
+                    "label": "Active Scope",
+                    "type": "select",
+                    "defaultValue": "global",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": "global",
+                                "name": "global"
+                            },
+                            {
+                                "value": "player",
+                                "name": "player"
+                            },
+                            {
+                                "value": "team",
+                                "name": "team"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "description": "When the action is activated/deactivated, who does it apply to?"
+                },
+                "categories": [
+                    "activeAndScope"
+                ]
+            },
+            {
+                "key": "activeOnGameStart",
+                "option": {
+                    "label": "Active on Game Start",
+                    "type": "select",
+                    "description": "Is this action active when the game starts?",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "activeAndScope"
+                ]
+            },
+            {
+                "key": "deactivateAfterUse",
+                "option": {
+                    "label": "Deactivate After Use",
+                    "type": "select",
+                    "description": "Deactivate the action after it is clicked",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "activeAndScope"
+                ]
+            },
+            {
+                "key": "activateChannel",
+                "option": {
+                    "label": "Activate when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Activate the action when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "activeAndScope"
+                ]
+            },
+            {
+                "key": "deactivateChannel",
+                "option": {
+                    "label": "Deactivate when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Deactivate the action when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "activeAndScope"
+                ]
+            }
+        ]
+    },
+    "defaultState": {
+        "active": false
+    },
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "in": {
+            "connections": [
+                {
+                    "id": "activate",
+                    "name": "Activate action"
+                },
+                {
+                    "id": "deactivate",
+                    "name": "Deactivate action"
+                }
+            ]
+        },
+        "out": {
+            "connections": [
+                {
+                    "id": "selected",
+                    "name": "Action clicked"
+                }
+            ]
+        }
+    },
     "seasonTicketRequired": true,
     "maxOnMap": 512,
     "initialMemoryCost": 25,

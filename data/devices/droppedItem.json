@@ -1,7 +1,183 @@
 {
     "id": "droppedItem",
     "name": "Dropped Item",
-    "optionSchema": "{\"options\":[{\"key\":\"itemId\",\"option\":{\"label\":\"Item\",\"type\":\"itemId\",\"validators\":[null],\"props\":{}}},{\"key\":\"amount\",\"option\":{\"label\":\"Amount\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"placedByCharacterId\",\"option\":{\"label\":\"Placed By Character ID\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"}}},{\"key\":\"useCurrentClipCount\",\"option\":{\"label\":\"Use Current Clip Count\",\"type\":\"select\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}},{\"key\":\"currentClip\",\"option\":{\"label\":\"Amount\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"useCurrentDurability\",\"option\":{\"label\":\"Use Current Durability\",\"type\":\"select\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}},{\"key\":\"currentDurability\",\"option\":{\"label\":\"Amount\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"decay\",\"option\":{\"label\":\"Amount\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"originX\",\"option\":{\"label\":\"OriginX\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"originY\",\"option\":{\"label\":\"OriginY\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"allowEmpty\":false,\"useSlider\":false}}}]}",
-    "defaultState": "{\"visible\":false,\"amount\":0,\"canBeCollected\":false,\"alreadyCollected\":false,\"fallY\":0}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}"
+    "optionSchema": {
+        "options": [
+            {
+                "key": "itemId",
+                "option": {
+                    "label": "Item",
+                    "type": "itemId",
+                    "validators": [
+                        null
+                    ],
+                    "props": {}
+                }
+            },
+            {
+                "key": "amount",
+                "option": {
+                    "label": "Amount",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            },
+            {
+                "key": "placedByCharacterId",
+                "option": {
+                    "label": "Placed By Character ID",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here..."
+                    }
+                }
+            },
+            {
+                "key": "useCurrentClipCount",
+                "option": {
+                    "label": "Use Current Clip Count",
+                    "type": "select",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "currentClip",
+                "option": {
+                    "label": "Amount",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            },
+            {
+                "key": "useCurrentDurability",
+                "option": {
+                    "label": "Use Current Durability",
+                    "type": "select",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "currentDurability",
+                "option": {
+                    "label": "Amount",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            },
+            {
+                "key": "decay",
+                "option": {
+                    "label": "Amount",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            },
+            {
+                "key": "originX",
+                "option": {
+                    "label": "OriginX",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            },
+            {
+                "key": "originY",
+                "option": {
+                    "label": "OriginY",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            }
+        ]
+    },
+    "defaultState": {
+        "visible": false,
+        "amount": 0,
+        "canBeCollected": false,
+        "alreadyCollected": false,
+        "fallY": 0
+    },
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    }
 }

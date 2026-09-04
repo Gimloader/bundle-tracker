@@ -2,9 +2,98 @@
     "id": "assignmentCheckpoint",
     "name": "Assignment Checkpoint",
     "description": "Update the percentage completion of an assignment!",
-    "optionSchema": "{\"options\":[{\"key\":\"action\",\"option\":{\"label\":\"Action\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"set\",\"props\":{\"options\":[{\"name\":\"Set Percentage\",\"value\":\"set\"},{\"name\":\"Increment Percentage\",\"value\":\"increment\"},{\"name\":\"Decrement Percentage\",\"value\":\"decrement\"}],\"allowEmpty\":false}}},{\"key\":\"actionValue\",\"option\":{\"label\":\"Value\",\"type\":\"numberInput\",\"validators\":[null],\"props\":{\"min\":0,\"max\":100,\"step\":1,\"allowEmpty\":true,\"useSlider\":false}}},{\"key\":\"applyActionOnChannel\",\"option\":{\"label\":\"Apply action when receiving on channel...\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100}}}]}",
-    "defaultState": "{}",
-    "codeGridSchema": "{\"allowChannelGrids\":true,\"triggers\":[{\"type\":\"wire\",\"name\":\"On wire pulse...\"}],\"customBlocks\":[\"set_percentage_complete\",\"increment_percentage_complete\"]}",
-    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"applyAction\",\"name\":\"Apply Configured Action\"},{\"id\":\"codeGrid\",\"name\":\"Run wire pulse block\"}]}}",
+    "optionSchema": {
+        "options": [
+            {
+                "key": "action",
+                "option": {
+                    "label": "Action",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "set",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Set Percentage",
+                                "value": "set"
+                            },
+                            {
+                                "name": "Increment Percentage",
+                                "value": "increment"
+                            },
+                            {
+                                "name": "Decrement Percentage",
+                                "value": "decrement"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "actionValue",
+                "option": {
+                    "label": "Value",
+                    "type": "numberInput",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 100,
+                        "step": 1,
+                        "allowEmpty": true,
+                        "useSlider": false
+                    }
+                }
+            },
+            {
+                "key": "applyActionOnChannel",
+                "option": {
+                    "label": "Apply action when receiving on channel...",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    }
+                }
+            }
+        ]
+    },
+    "defaultState": {},
+    "codeGridSchema": {
+        "allowChannelGrids": true,
+        "triggers": [
+            {
+                "type": "wire",
+                "name": "On wire pulse..."
+            }
+        ],
+        "customBlocks": [
+            "set_percentage_complete",
+            "increment_percentage_complete"
+        ]
+    },
+    "wireConfig": {
+        "in": {
+            "connections": [
+                {
+                    "id": "applyAction",
+                    "name": "Apply Configured Action"
+                },
+                {
+                    "id": "codeGrid",
+                    "name": "Run wire pulse block"
+                }
+            ]
+        }
+    },
     "minimumRoleLevel": 90
 }

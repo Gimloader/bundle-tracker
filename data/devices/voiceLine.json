@@ -2,10 +2,245 @@
     "id": "voiceLine",
     "name": "Voice Line",
     "description": "Plays Voice Overs",
-    "optionSchema": "{\"options\":[{\"key\":\"playBehavior\",\"option\":{\"label\":\"Play Bahavior\",\"description\":\"What should happen when the device is triggered and an audio line is already playing?\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"interrupt\",\"props\":{\"options\":[{\"name\":\"Interrupt\",\"value\":\"interrupt\"},{\"name\":\"Queue\",\"value\":\"queue\"},{\"name\":\"Cancel\",\"value\":\"cancel\"}],\"allowEmpty\":false}}},{\"key\":\"volume\",\"option\":{\"label\":\"Volume\",\"description\":\"The volume of Voice Overs\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":0,\"max\":1,\"step\":0.001,\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"playChance\",\"option\":{\"label\":\"Play Chance\",\"description\":\"Percentage chance that the voice line will play when triggered\",\"type\":\"numberInput\",\"defaultValue\":100,\"validators\":[null],\"props\":{\"min\":0,\"max\":100,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"audioUrl1\",\"option\":{\"label\":\"Audio URL 1\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"}}},{\"key\":\"audioUrl2\",\"option\":{\"label\":\"Audio URL 2\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"}}},{\"key\":\"audioUrl3\",\"option\":{\"label\":\"Audio URL 3\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"}}},{\"key\":\"audioUrl4\",\"option\":{\"label\":\"Audio URL 4\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"}}},{\"key\":\"audioUrl5\",\"option\":{\"label\":\"Audio URL 5\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"}}},{\"key\":\"audioUrl6\",\"option\":{\"label\":\"Audio URL 6\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"}}},{\"key\":\"audioUrl7\",\"option\":{\"label\":\"Audio URL 7\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"}}},{\"key\":\"audioUrl8\",\"option\":{\"label\":\"Audio URL 8\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"}}},{\"key\":\"activeOnGameStart\",\"option\":{\"label\":\"Active on game start\",\"type\":\"select\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}},{\"key\":\"playWhenReceivingOnChannel\",\"option\":{\"label\":\"Play When Receiving On...\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100}}}]}",
-    "defaultState": "{}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"play\",\"name\":\"Play sound\"}]}}",
+    "optionSchema": {
+        "options": [
+            {
+                "key": "playBehavior",
+                "option": {
+                    "label": "Play Bahavior",
+                    "description": "What should happen when the device is triggered and an audio line is already playing?",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "interrupt",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Interrupt",
+                                "value": "interrupt"
+                            },
+                            {
+                                "name": "Queue",
+                                "value": "queue"
+                            },
+                            {
+                                "name": "Cancel",
+                                "value": "cancel"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "volume",
+                "option": {
+                    "label": "Volume",
+                    "description": "The volume of Voice Overs",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 1,
+                        "step": 0.001,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            },
+            {
+                "key": "playChance",
+                "option": {
+                    "label": "Play Chance",
+                    "description": "Percentage chance that the voice line will play when triggered",
+                    "type": "numberInput",
+                    "defaultValue": 100,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 100,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            },
+            {
+                "key": "audioUrl1",
+                "option": {
+                    "label": "Audio URL 1",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here..."
+                    }
+                }
+            },
+            {
+                "key": "audioUrl2",
+                "option": {
+                    "label": "Audio URL 2",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here..."
+                    }
+                }
+            },
+            {
+                "key": "audioUrl3",
+                "option": {
+                    "label": "Audio URL 3",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here..."
+                    }
+                }
+            },
+            {
+                "key": "audioUrl4",
+                "option": {
+                    "label": "Audio URL 4",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here..."
+                    }
+                }
+            },
+            {
+                "key": "audioUrl5",
+                "option": {
+                    "label": "Audio URL 5",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here..."
+                    }
+                }
+            },
+            {
+                "key": "audioUrl6",
+                "option": {
+                    "label": "Audio URL 6",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here..."
+                    }
+                }
+            },
+            {
+                "key": "audioUrl7",
+                "option": {
+                    "label": "Audio URL 7",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here..."
+                    }
+                }
+            },
+            {
+                "key": "audioUrl8",
+                "option": {
+                    "label": "Audio URL 8",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here..."
+                    }
+                }
+            },
+            {
+                "key": "activeOnGameStart",
+                "option": {
+                    "label": "Active on game start",
+                    "type": "select",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "playWhenReceivingOnChannel",
+                "option": {
+                    "label": "Play When Receiving On...",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    }
+                }
+            }
+        ]
+    },
+    "defaultState": {},
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "in": {
+            "connections": [
+                {
+                    "id": "play",
+                    "name": "Play sound"
+                }
+            ]
+        }
+    },
     "minimumRoleLevel": 90,
     "maxOnMap": 512,
     "initialMemoryCost": 25,

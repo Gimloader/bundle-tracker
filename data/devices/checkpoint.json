@@ -2,10 +2,224 @@
     "id": "checkpoint",
     "name": "Checkpoint",
     "description": "A respawn point for players",
-    "optionSchema": "{\"categories\":{\"categories\":[{\"id\":\"featured\",\"name\":\"Featured\"},{\"id\":\"channels\",\"name\":\"Channels\"}],\"showAllOptionsAt\":\"end\"},\"options\":[{\"key\":\"enabled\",\"option\":{\"label\":\"Enabled\",\"type\":\"select\",\"description\":\"Is the checkpoint enabled?\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"minimumRoleLevel\":90},{\"key\":\"visibleInGame\",\"option\":{\"label\":\"Visible In-Game\",\"type\":\"select\",\"description\":\"Is the checkpoint visible to players in-game?\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"featured\"]},{\"key\":\"playAudio\",\"option\":{\"label\":\"Play Audio\",\"type\":\"select\",\"description\":\"Play audio when the checkpoint is activated\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false},\"hideIf\":[[{\"key\":\"visibleInGame\",\"compare\":\"EQUAL\",\"value\":false}]]}},{\"key\":\"maxActivations\",\"option\":{\"label\":\"Activation Limit\",\"description\":\"How many times can a player activate this checkpoint?\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":0,\"props\":{\"options\":[{\"value\":0,\"name\":\"Infinite\"},{\"value\":1,\"name\":\"Once\"}],\"allowEmpty\":false}},\"categories\":[\"featured\"]},{\"key\":\"setAsActiveChannel\",\"option\":{\"label\":\"Set as active checkpoint when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Set as active checkpoint when the device receives a signal from the selected channel\"},\"categories\":[\"featured\",\"channels\"]},{\"key\":\"onActiveChannel\",\"option\":{\"label\":\"When checkpoint activated, transmit on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"When the this checkpoint is activated for a player, the device sends a signal on the selected channel\"},\"categories\":[\"channels\"]},{\"key\":\"width\",\"option\":{\"label\":\"Width\",\"type\":\"numberInput\",\"defaultValue\":125,\"validators\":[null],\"props\":{\"min\":65,\"max\":300,\"allowEmpty\":false,\"useSlider\":false},\"hidden\":true}}]}",
-    "defaultState": "{\"active\":false}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"setAsCheckpoint\",\"name\":\"Set as active checkpoint\"}]},\"out\":{\"connections\":[{\"id\":\"activated\",\"name\":\"Checkpoint activated\"}]}}",
+    "optionSchema": {
+        "categories": {
+            "categories": [
+                {
+                    "id": "featured",
+                    "name": "Featured"
+                },
+                {
+                    "id": "channels",
+                    "name": "Channels"
+                }
+            ],
+            "showAllOptionsAt": "end"
+        },
+        "options": [
+            {
+                "key": "enabled",
+                "option": {
+                    "label": "Enabled",
+                    "type": "select",
+                    "description": "Is the checkpoint enabled?",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "minimumRoleLevel": 90
+            },
+            {
+                "key": "visibleInGame",
+                "option": {
+                    "label": "Visible In-Game",
+                    "type": "select",
+                    "description": "Is the checkpoint visible to players in-game?",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "playAudio",
+                "option": {
+                    "label": "Play Audio",
+                    "type": "select",
+                    "description": "Play audio when the checkpoint is activated",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "visibleInGame",
+                                "compare": "EQUAL",
+                                "value": false
+                            }
+                        ]
+                    ]
+                }
+            },
+            {
+                "key": "maxActivations",
+                "option": {
+                    "label": "Activation Limit",
+                    "description": "How many times can a player activate this checkpoint?",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": 0,
+                    "props": {
+                        "options": [
+                            {
+                                "value": 0,
+                                "name": "Infinite"
+                            },
+                            {
+                                "value": 1,
+                                "name": "Once"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "setAsActiveChannel",
+                "option": {
+                    "label": "Set as active checkpoint when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Set as active checkpoint when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "featured",
+                    "channels"
+                ]
+            },
+            {
+                "key": "onActiveChannel",
+                "option": {
+                    "label": "When checkpoint activated, transmit on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "When the this checkpoint is activated for a player, the device sends a signal on the selected channel"
+                },
+                "categories": [
+                    "channels"
+                ]
+            },
+            {
+                "key": "width",
+                "option": {
+                    "label": "Width",
+                    "type": "numberInput",
+                    "defaultValue": 125,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 65,
+                        "max": 300,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            }
+        ]
+    },
+    "defaultState": {
+        "active": false
+    },
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "in": {
+            "connections": [
+                {
+                    "id": "setAsCheckpoint",
+                    "name": "Set as active checkpoint"
+                }
+            ]
+        },
+        "out": {
+            "connections": [
+                {
+                    "id": "activated",
+                    "name": "Checkpoint activated"
+                }
+            ]
+        }
+    },
     "maxOnMap": 256,
     "initialMemoryCost": 40,
     "subsequentMemoryCost": 40

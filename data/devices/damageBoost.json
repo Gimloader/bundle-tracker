@@ -2,10 +2,202 @@
     "id": "damageBoost",
     "name": "Damage Boost",
     "description": "Increase the amount of damage a player deals",
-    "optionSchema": "{\"options\":[{\"key\":\"multiplier\",\"option\":{\"label\":\"Boost Amount\",\"description\":\"When a deals damage, multiply the amount by this value\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":2,\"props\":{\"options\":[{\"name\":\"0.25x\",\"value\":0.25},{\"name\":\"0.5x\",\"value\":0.5},{\"name\":\"0.75x\",\"value\":0.75},{\"name\":\"1x\",\"value\":1},{\"name\":\"1.25x\",\"value\":1.25},{\"name\":\"1.5x\",\"value\":1.5},{\"name\":\"1.75x\",\"value\":1.75},{\"name\":\"2x\",\"value\":2},{\"name\":\"2.5x\",\"value\":2.5},{\"name\":\"3x\",\"value\":3},{\"name\":\"4x\",\"value\":4},{\"name\":\"5x\",\"value\":5},{\"name\":\"6x\",\"value\":6},{\"name\":\"7x\",\"value\":7},{\"name\":\"8x\",\"value\":8},{\"name\":\"9x\",\"value\":9},{\"name\":\"10x\",\"value\":10}],\"allowEmpty\":false}}},{\"key\":\"durationMS\",\"option\":{\"label\":\"Boost Duration\",\"description\":\"How long the boost lasts for\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":30000,\"props\":{\"options\":[{\"name\":\"Forever\",\"value\":-1},{\"name\":\"5 Seconds\",\"value\":5000},{\"name\":\"10 Seconds\",\"value\":10000},{\"name\":\"20 Seconds\",\"value\":20000},{\"name\":\"30 Seconds\",\"value\":30000},{\"name\":\"1 Minute\",\"value\":60000},{\"name\":\"2 Minutes\",\"value\":120000},{\"name\":\"3 Minutes\",\"value\":180000},{\"name\":\"5 Minutes\",\"value\":300000}],\"allowEmpty\":false}}},{\"key\":\"activateChannel\",\"option\":{\"label\":\"Activate boost when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Activate the damage boost when the device receives a signal from the selected channel\"}},{\"key\":\"deactivateChannel\",\"option\":{\"label\":\"Deactivate boost when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Deactivate the damage boost when the device receives a signal from the selected channel\"}}]}",
-    "defaultState": "{}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"activate\",\"name\":\"Activate damage boost\"},{\"id\":\"deactivate\",\"name\":\"Deactivate damage boost\"}]}}",
+    "optionSchema": {
+        "options": [
+            {
+                "key": "multiplier",
+                "option": {
+                    "label": "Boost Amount",
+                    "description": "When a deals damage, multiply the amount by this value",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": 2,
+                    "props": {
+                        "options": [
+                            {
+                                "name": "0.25x",
+                                "value": 0.25
+                            },
+                            {
+                                "name": "0.5x",
+                                "value": 0.5
+                            },
+                            {
+                                "name": "0.75x",
+                                "value": 0.75
+                            },
+                            {
+                                "name": "1x",
+                                "value": 1
+                            },
+                            {
+                                "name": "1.25x",
+                                "value": 1.25
+                            },
+                            {
+                                "name": "1.5x",
+                                "value": 1.5
+                            },
+                            {
+                                "name": "1.75x",
+                                "value": 1.75
+                            },
+                            {
+                                "name": "2x",
+                                "value": 2
+                            },
+                            {
+                                "name": "2.5x",
+                                "value": 2.5
+                            },
+                            {
+                                "name": "3x",
+                                "value": 3
+                            },
+                            {
+                                "name": "4x",
+                                "value": 4
+                            },
+                            {
+                                "name": "5x",
+                                "value": 5
+                            },
+                            {
+                                "name": "6x",
+                                "value": 6
+                            },
+                            {
+                                "name": "7x",
+                                "value": 7
+                            },
+                            {
+                                "name": "8x",
+                                "value": 8
+                            },
+                            {
+                                "name": "9x",
+                                "value": 9
+                            },
+                            {
+                                "name": "10x",
+                                "value": 10
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "durationMS",
+                "option": {
+                    "label": "Boost Duration",
+                    "description": "How long the boost lasts for",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": 30000,
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Forever",
+                                "value": -1
+                            },
+                            {
+                                "name": "5 Seconds",
+                                "value": 5000
+                            },
+                            {
+                                "name": "10 Seconds",
+                                "value": 10000
+                            },
+                            {
+                                "name": "20 Seconds",
+                                "value": 20000
+                            },
+                            {
+                                "name": "30 Seconds",
+                                "value": 30000
+                            },
+                            {
+                                "name": "1 Minute",
+                                "value": 60000
+                            },
+                            {
+                                "name": "2 Minutes",
+                                "value": 120000
+                            },
+                            {
+                                "name": "3 Minutes",
+                                "value": 180000
+                            },
+                            {
+                                "name": "5 Minutes",
+                                "value": 300000
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "activateChannel",
+                "option": {
+                    "label": "Activate boost when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Activate the damage boost when the device receives a signal from the selected channel"
+                }
+            },
+            {
+                "key": "deactivateChannel",
+                "option": {
+                    "label": "Deactivate boost when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Deactivate the damage boost when the device receives a signal from the selected channel"
+                }
+            }
+        ]
+    },
+    "defaultState": {},
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "in": {
+            "connections": [
+                {
+                    "id": "activate",
+                    "name": "Activate damage boost"
+                },
+                {
+                    "id": "deactivate",
+                    "name": "Deactivate damage boost"
+                }
+            ]
+        }
+    },
     "maxOnMap": 32,
     "initialMemoryCost": 30,
     "subsequentMemoryCost": 30

@@ -2,9 +2,1123 @@
     "id": "teamSettings",
     "name": "Team Settings",
     "description": "Set a team's name and modify other settings",
-    "optionSchema": "{\"options\":[{\"key\":\"team\",\"option\":{\"label\":\"Team\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"1\",\"props\":{\"options\":[{\"name\":\"Team 1\",\"value\":\"1\"},{\"name\":\"Team 2\",\"value\":\"2\"},{\"name\":\"Team 3\",\"value\":\"3\"},{\"name\":\"Team 4\",\"value\":\"4\"},{\"name\":\"Team 5\",\"value\":\"5\"},{\"name\":\"Team 6\",\"value\":\"6\"},{\"name\":\"Team 7\",\"value\":\"7\"},{\"name\":\"Team 8\",\"value\":\"8\"},{\"name\":\"Team 9\",\"value\":\"9\"},{\"name\":\"Team 10\",\"value\":\"10\"},{\"name\":\"Team 11\",\"value\":\"11\"},{\"name\":\"Team 12\",\"value\":\"12\"},{\"name\":\"Team 13\",\"value\":\"13\"},{\"name\":\"Team 14\",\"value\":\"14\"},{\"name\":\"Team 15\",\"value\":\"15\"},{\"name\":\"Team 16\",\"value\":\"16\"},{\"name\":\"Team 17\",\"value\":\"17\"},{\"name\":\"Team 18\",\"value\":\"18\"},{\"name\":\"Team 19\",\"value\":\"19\"},{\"name\":\"Team 20\",\"value\":\"20\"},{\"name\":\"Team 21\",\"value\":\"21\"},{\"name\":\"Team 22\",\"value\":\"22\"},{\"name\":\"Team 23\",\"value\":\"23\"},{\"name\":\"Team 24\",\"value\":\"24\"},{\"name\":\"Team 25\",\"value\":\"25\"},{\"name\":\"Team 26\",\"value\":\"26\"},{\"name\":\"Team 27\",\"value\":\"27\"},{\"name\":\"Team 28\",\"value\":\"28\"},{\"name\":\"Team 29\",\"value\":\"29\"},{\"name\":\"Team 30\",\"value\":\"30\"},{\"name\":\"Team 31\",\"value\":\"31\"},{\"name\":\"Team 32\",\"value\":\"32\"},{\"name\":\"Team 33\",\"value\":\"33\"},{\"name\":\"Team 34\",\"value\":\"34\"},{\"name\":\"Team 35\",\"value\":\"35\"},{\"name\":\"Team 36\",\"value\":\"36\"},{\"name\":\"Team 37\",\"value\":\"37\"},{\"name\":\"Team 38\",\"value\":\"38\"},{\"name\":\"Team 39\",\"value\":\"39\"},{\"name\":\"Team 40\",\"value\":\"40\"},{\"name\":\"Team 41\",\"value\":\"41\"},{\"name\":\"Team 42\",\"value\":\"42\"},{\"name\":\"Team 43\",\"value\":\"43\"},{\"name\":\"Team 44\",\"value\":\"44\"},{\"name\":\"Team 45\",\"value\":\"45\"},{\"name\":\"Team 46\",\"value\":\"46\"},{\"name\":\"Team 47\",\"value\":\"47\"},{\"name\":\"Team 48\",\"value\":\"48\"},{\"name\":\"Team 49\",\"value\":\"49\"},{\"name\":\"Team 50\",\"value\":\"50\"},{\"name\":\"Team 51\",\"value\":\"51\"},{\"name\":\"Team 52\",\"value\":\"52\"},{\"name\":\"Team 53\",\"value\":\"53\"},{\"name\":\"Team 54\",\"value\":\"54\"},{\"name\":\"Team 55\",\"value\":\"55\"},{\"name\":\"Team 56\",\"value\":\"56\"},{\"name\":\"Team 57\",\"value\":\"57\"},{\"name\":\"Team 58\",\"value\":\"58\"},{\"name\":\"Team 59\",\"value\":\"59\"},{\"name\":\"Team 60\",\"value\":\"60\"}],\"allowEmpty\":false}}},{\"key\":\"teamName\",\"option\":{\"label\":\"Team Name\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"}}},{\"key\":\"whenPlayerJoinsTransmitOn\",\"option\":{\"label\":\"When player joins team, transmit on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"When a player joins this team, the device sends a signal on the selected channel\"}},{\"key\":\"maxPlayers\",\"option\":{\"label\":\"Max Players\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":4,\"props\":{\"options\":[{\"name\":\"1\",\"value\":1},{\"name\":\"2\",\"value\":2},{\"name\":\"3\",\"value\":3},{\"name\":\"4\",\"value\":4},{\"name\":\"5\",\"value\":5},{\"name\":\"6\",\"value\":6},{\"name\":\"7\",\"value\":7},{\"name\":\"8\",\"value\":8},{\"name\":\"9\",\"value\":9},{\"name\":\"10\",\"value\":10},{\"name\":\"11\",\"value\":11},{\"name\":\"12\",\"value\":12},{\"name\":\"13\",\"value\":13},{\"name\":\"14\",\"value\":14},{\"name\":\"15\",\"value\":15},{\"name\":\"16\",\"value\":16},{\"name\":\"17\",\"value\":17},{\"name\":\"18\",\"value\":18},{\"name\":\"19\",\"value\":19},{\"name\":\"20\",\"value\":20},{\"name\":\"21\",\"value\":21},{\"name\":\"22\",\"value\":22},{\"name\":\"23\",\"value\":23},{\"name\":\"24\",\"value\":24},{\"name\":\"25\",\"value\":25},{\"name\":\"26\",\"value\":26},{\"name\":\"27\",\"value\":27},{\"name\":\"28\",\"value\":28},{\"name\":\"29\",\"value\":29},{\"name\":\"30\",\"value\":30},{\"name\":\"31\",\"value\":31},{\"name\":\"32\",\"value\":32},{\"name\":\"33\",\"value\":33},{\"name\":\"34\",\"value\":34},{\"name\":\"35\",\"value\":35},{\"name\":\"36\",\"value\":36},{\"name\":\"37\",\"value\":37},{\"name\":\"38\",\"value\":38},{\"name\":\"39\",\"value\":39},{\"name\":\"40\",\"value\":40},{\"name\":\"41\",\"value\":41},{\"name\":\"42\",\"value\":42},{\"name\":\"43\",\"value\":43},{\"name\":\"44\",\"value\":44},{\"name\":\"45\",\"value\":45},{\"name\":\"46\",\"value\":46},{\"name\":\"47\",\"value\":47},{\"name\":\"48\",\"value\":48},{\"name\":\"49\",\"value\":49},{\"name\":\"50\",\"value\":50},{\"name\":\"51\",\"value\":51},{\"name\":\"52\",\"value\":52},{\"name\":\"53\",\"value\":53},{\"name\":\"54\",\"value\":54},{\"name\":\"55\",\"value\":55},{\"name\":\"56\",\"value\":56},{\"name\":\"57\",\"value\":57},{\"name\":\"58\",\"value\":58},{\"name\":\"59\",\"value\":59},{\"name\":\"60\",\"value\":60}],\"allowEmpty\":false}}},{\"key\":\"placementPriorityOnGameStart\",\"option\":{\"label\":\"Placement Priority On Game Start\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":30,\"props\":{\"options\":[{\"name\":\"1st\",\"value\":1},{\"name\":\"2nd\",\"value\":2},{\"name\":\"3rd\",\"value\":3},{\"name\":\"4th\",\"value\":4},{\"name\":\"5th\",\"value\":5},{\"name\":\"6th\",\"value\":6},{\"name\":\"7th\",\"value\":7},{\"name\":\"8th\",\"value\":8},{\"name\":\"9th\",\"value\":9},{\"name\":\"10th\",\"value\":10},{\"name\":\"11th\",\"value\":11},{\"name\":\"12th\",\"value\":12},{\"name\":\"13th\",\"value\":13},{\"name\":\"14th\",\"value\":14},{\"name\":\"15th\",\"value\":15},{\"name\":\"16th\",\"value\":16},{\"name\":\"17th\",\"value\":17},{\"name\":\"18th\",\"value\":18},{\"name\":\"19th\",\"value\":19},{\"name\":\"20th\",\"value\":20},{\"name\":\"21st\",\"value\":21},{\"name\":\"22nd\",\"value\":22},{\"name\":\"23rd\",\"value\":23},{\"name\":\"24th\",\"value\":24},{\"name\":\"25th\",\"value\":25},{\"name\":\"26th\",\"value\":26},{\"name\":\"27th\",\"value\":27},{\"name\":\"28th\",\"value\":28},{\"name\":\"29th\",\"value\":29},{\"name\":\"30th\",\"value\":30},{\"name\":\"31st\",\"value\":31},{\"name\":\"32nd\",\"value\":32},{\"name\":\"33rd\",\"value\":33},{\"name\":\"34th\",\"value\":34},{\"name\":\"35th\",\"value\":35},{\"name\":\"36th\",\"value\":36},{\"name\":\"37th\",\"value\":37},{\"name\":\"38th\",\"value\":38},{\"name\":\"39th\",\"value\":39},{\"name\":\"40th\",\"value\":40},{\"name\":\"41st\",\"value\":41},{\"name\":\"42nd\",\"value\":42},{\"name\":\"43rd\",\"value\":43},{\"name\":\"44th\",\"value\":44},{\"name\":\"45th\",\"value\":45},{\"name\":\"46th\",\"value\":46},{\"name\":\"47th\",\"value\":47},{\"name\":\"48th\",\"value\":48},{\"name\":\"49th\",\"value\":49},{\"name\":\"50th\",\"value\":50},{\"name\":\"51st\",\"value\":51},{\"name\":\"52nd\",\"value\":52},{\"name\":\"53rd\",\"value\":53},{\"name\":\"54th\",\"value\":54},{\"name\":\"55th\",\"value\":55},{\"name\":\"56th\",\"value\":56},{\"name\":\"57th\",\"value\":57},{\"name\":\"58th\",\"value\":58},{\"name\":\"59th\",\"value\":59},{\"name\":\"60th\",\"value\":60}],\"allowEmpty\":false}}},{\"key\":\"placementPriorityDuringGame\",\"option\":{\"label\":\"Placement Priority During Game\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":30,\"props\":{\"options\":[{\"name\":\"1st\",\"value\":1},{\"name\":\"2nd\",\"value\":2},{\"name\":\"3rd\",\"value\":3},{\"name\":\"4th\",\"value\":4},{\"name\":\"5th\",\"value\":5},{\"name\":\"6th\",\"value\":6},{\"name\":\"7th\",\"value\":7},{\"name\":\"8th\",\"value\":8},{\"name\":\"9th\",\"value\":9},{\"name\":\"10th\",\"value\":10},{\"name\":\"11th\",\"value\":11},{\"name\":\"12th\",\"value\":12},{\"name\":\"13th\",\"value\":13},{\"name\":\"14th\",\"value\":14},{\"name\":\"15th\",\"value\":15},{\"name\":\"16th\",\"value\":16},{\"name\":\"17th\",\"value\":17},{\"name\":\"18th\",\"value\":18},{\"name\":\"19th\",\"value\":19},{\"name\":\"20th\",\"value\":20},{\"name\":\"21st\",\"value\":21},{\"name\":\"22nd\",\"value\":22},{\"name\":\"23rd\",\"value\":23},{\"name\":\"24th\",\"value\":24},{\"name\":\"25th\",\"value\":25},{\"name\":\"26th\",\"value\":26},{\"name\":\"27th\",\"value\":27},{\"name\":\"28th\",\"value\":28},{\"name\":\"29th\",\"value\":29},{\"name\":\"30th\",\"value\":30},{\"name\":\"31st\",\"value\":31},{\"name\":\"32nd\",\"value\":32},{\"name\":\"33rd\",\"value\":33},{\"name\":\"34th\",\"value\":34},{\"name\":\"35th\",\"value\":35},{\"name\":\"36th\",\"value\":36},{\"name\":\"37th\",\"value\":37},{\"name\":\"38th\",\"value\":38},{\"name\":\"39th\",\"value\":39},{\"name\":\"40th\",\"value\":40},{\"name\":\"41st\",\"value\":41},{\"name\":\"42nd\",\"value\":42},{\"name\":\"43rd\",\"value\":43},{\"name\":\"44th\",\"value\":44},{\"name\":\"45th\",\"value\":45},{\"name\":\"46th\",\"value\":46},{\"name\":\"47th\",\"value\":47},{\"name\":\"48th\",\"value\":48},{\"name\":\"49th\",\"value\":49},{\"name\":\"50th\",\"value\":50},{\"name\":\"51st\",\"value\":51},{\"name\":\"52nd\",\"value\":52},{\"name\":\"53rd\",\"value\":53},{\"name\":\"54th\",\"value\":54},{\"name\":\"55th\",\"value\":55},{\"name\":\"56th\",\"value\":56},{\"name\":\"57th\",\"value\":57},{\"name\":\"58th\",\"value\":58},{\"name\":\"59th\",\"value\":59},{\"name\":\"60th\",\"value\":60}],\"allowEmpty\":false}}},{\"key\":\"allowCustomHostPlacement\",\"option\":{\"label\":\"Allow custom host placement\",\"type\":\"select\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}},{\"key\":\"color\",\"option\":{\"label\":\"Team Color\",\"type\":\"color\",\"defaultValue\":\"#ff0000\",\"validators\":[null]},\"minimumRoleLevel\":90}]}",
-    "defaultState": "{}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[{\"type\":\"WHEN_PLAYER_COUNT_CHANGES\",\"name\":\"When player count changes...\"}],\"customBlocks\":[\"get_player_count\"]}",
-    "wireConfig": "{\"out\":{\"connections\":[{\"id\":\"characterJoinsTeam\",\"name\":\"Player joins team\"}]}}",
+    "optionSchema": {
+        "options": [
+            {
+                "key": "team",
+                "option": {
+                    "label": "Team",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "1",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Team 1",
+                                "value": "1"
+                            },
+                            {
+                                "name": "Team 2",
+                                "value": "2"
+                            },
+                            {
+                                "name": "Team 3",
+                                "value": "3"
+                            },
+                            {
+                                "name": "Team 4",
+                                "value": "4"
+                            },
+                            {
+                                "name": "Team 5",
+                                "value": "5"
+                            },
+                            {
+                                "name": "Team 6",
+                                "value": "6"
+                            },
+                            {
+                                "name": "Team 7",
+                                "value": "7"
+                            },
+                            {
+                                "name": "Team 8",
+                                "value": "8"
+                            },
+                            {
+                                "name": "Team 9",
+                                "value": "9"
+                            },
+                            {
+                                "name": "Team 10",
+                                "value": "10"
+                            },
+                            {
+                                "name": "Team 11",
+                                "value": "11"
+                            },
+                            {
+                                "name": "Team 12",
+                                "value": "12"
+                            },
+                            {
+                                "name": "Team 13",
+                                "value": "13"
+                            },
+                            {
+                                "name": "Team 14",
+                                "value": "14"
+                            },
+                            {
+                                "name": "Team 15",
+                                "value": "15"
+                            },
+                            {
+                                "name": "Team 16",
+                                "value": "16"
+                            },
+                            {
+                                "name": "Team 17",
+                                "value": "17"
+                            },
+                            {
+                                "name": "Team 18",
+                                "value": "18"
+                            },
+                            {
+                                "name": "Team 19",
+                                "value": "19"
+                            },
+                            {
+                                "name": "Team 20",
+                                "value": "20"
+                            },
+                            {
+                                "name": "Team 21",
+                                "value": "21"
+                            },
+                            {
+                                "name": "Team 22",
+                                "value": "22"
+                            },
+                            {
+                                "name": "Team 23",
+                                "value": "23"
+                            },
+                            {
+                                "name": "Team 24",
+                                "value": "24"
+                            },
+                            {
+                                "name": "Team 25",
+                                "value": "25"
+                            },
+                            {
+                                "name": "Team 26",
+                                "value": "26"
+                            },
+                            {
+                                "name": "Team 27",
+                                "value": "27"
+                            },
+                            {
+                                "name": "Team 28",
+                                "value": "28"
+                            },
+                            {
+                                "name": "Team 29",
+                                "value": "29"
+                            },
+                            {
+                                "name": "Team 30",
+                                "value": "30"
+                            },
+                            {
+                                "name": "Team 31",
+                                "value": "31"
+                            },
+                            {
+                                "name": "Team 32",
+                                "value": "32"
+                            },
+                            {
+                                "name": "Team 33",
+                                "value": "33"
+                            },
+                            {
+                                "name": "Team 34",
+                                "value": "34"
+                            },
+                            {
+                                "name": "Team 35",
+                                "value": "35"
+                            },
+                            {
+                                "name": "Team 36",
+                                "value": "36"
+                            },
+                            {
+                                "name": "Team 37",
+                                "value": "37"
+                            },
+                            {
+                                "name": "Team 38",
+                                "value": "38"
+                            },
+                            {
+                                "name": "Team 39",
+                                "value": "39"
+                            },
+                            {
+                                "name": "Team 40",
+                                "value": "40"
+                            },
+                            {
+                                "name": "Team 41",
+                                "value": "41"
+                            },
+                            {
+                                "name": "Team 42",
+                                "value": "42"
+                            },
+                            {
+                                "name": "Team 43",
+                                "value": "43"
+                            },
+                            {
+                                "name": "Team 44",
+                                "value": "44"
+                            },
+                            {
+                                "name": "Team 45",
+                                "value": "45"
+                            },
+                            {
+                                "name": "Team 46",
+                                "value": "46"
+                            },
+                            {
+                                "name": "Team 47",
+                                "value": "47"
+                            },
+                            {
+                                "name": "Team 48",
+                                "value": "48"
+                            },
+                            {
+                                "name": "Team 49",
+                                "value": "49"
+                            },
+                            {
+                                "name": "Team 50",
+                                "value": "50"
+                            },
+                            {
+                                "name": "Team 51",
+                                "value": "51"
+                            },
+                            {
+                                "name": "Team 52",
+                                "value": "52"
+                            },
+                            {
+                                "name": "Team 53",
+                                "value": "53"
+                            },
+                            {
+                                "name": "Team 54",
+                                "value": "54"
+                            },
+                            {
+                                "name": "Team 55",
+                                "value": "55"
+                            },
+                            {
+                                "name": "Team 56",
+                                "value": "56"
+                            },
+                            {
+                                "name": "Team 57",
+                                "value": "57"
+                            },
+                            {
+                                "name": "Team 58",
+                                "value": "58"
+                            },
+                            {
+                                "name": "Team 59",
+                                "value": "59"
+                            },
+                            {
+                                "name": "Team 60",
+                                "value": "60"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "teamName",
+                "option": {
+                    "label": "Team Name",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here..."
+                    }
+                }
+            },
+            {
+                "key": "whenPlayerJoinsTransmitOn",
+                "option": {
+                    "label": "When player joins team, transmit on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "When a player joins this team, the device sends a signal on the selected channel"
+                }
+            },
+            {
+                "key": "maxPlayers",
+                "option": {
+                    "label": "Max Players",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": 4,
+                    "props": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 1
+                            },
+                            {
+                                "name": "2",
+                                "value": 2
+                            },
+                            {
+                                "name": "3",
+                                "value": 3
+                            },
+                            {
+                                "name": "4",
+                                "value": 4
+                            },
+                            {
+                                "name": "5",
+                                "value": 5
+                            },
+                            {
+                                "name": "6",
+                                "value": 6
+                            },
+                            {
+                                "name": "7",
+                                "value": 7
+                            },
+                            {
+                                "name": "8",
+                                "value": 8
+                            },
+                            {
+                                "name": "9",
+                                "value": 9
+                            },
+                            {
+                                "name": "10",
+                                "value": 10
+                            },
+                            {
+                                "name": "11",
+                                "value": 11
+                            },
+                            {
+                                "name": "12",
+                                "value": 12
+                            },
+                            {
+                                "name": "13",
+                                "value": 13
+                            },
+                            {
+                                "name": "14",
+                                "value": 14
+                            },
+                            {
+                                "name": "15",
+                                "value": 15
+                            },
+                            {
+                                "name": "16",
+                                "value": 16
+                            },
+                            {
+                                "name": "17",
+                                "value": 17
+                            },
+                            {
+                                "name": "18",
+                                "value": 18
+                            },
+                            {
+                                "name": "19",
+                                "value": 19
+                            },
+                            {
+                                "name": "20",
+                                "value": 20
+                            },
+                            {
+                                "name": "21",
+                                "value": 21
+                            },
+                            {
+                                "name": "22",
+                                "value": 22
+                            },
+                            {
+                                "name": "23",
+                                "value": 23
+                            },
+                            {
+                                "name": "24",
+                                "value": 24
+                            },
+                            {
+                                "name": "25",
+                                "value": 25
+                            },
+                            {
+                                "name": "26",
+                                "value": 26
+                            },
+                            {
+                                "name": "27",
+                                "value": 27
+                            },
+                            {
+                                "name": "28",
+                                "value": 28
+                            },
+                            {
+                                "name": "29",
+                                "value": 29
+                            },
+                            {
+                                "name": "30",
+                                "value": 30
+                            },
+                            {
+                                "name": "31",
+                                "value": 31
+                            },
+                            {
+                                "name": "32",
+                                "value": 32
+                            },
+                            {
+                                "name": "33",
+                                "value": 33
+                            },
+                            {
+                                "name": "34",
+                                "value": 34
+                            },
+                            {
+                                "name": "35",
+                                "value": 35
+                            },
+                            {
+                                "name": "36",
+                                "value": 36
+                            },
+                            {
+                                "name": "37",
+                                "value": 37
+                            },
+                            {
+                                "name": "38",
+                                "value": 38
+                            },
+                            {
+                                "name": "39",
+                                "value": 39
+                            },
+                            {
+                                "name": "40",
+                                "value": 40
+                            },
+                            {
+                                "name": "41",
+                                "value": 41
+                            },
+                            {
+                                "name": "42",
+                                "value": 42
+                            },
+                            {
+                                "name": "43",
+                                "value": 43
+                            },
+                            {
+                                "name": "44",
+                                "value": 44
+                            },
+                            {
+                                "name": "45",
+                                "value": 45
+                            },
+                            {
+                                "name": "46",
+                                "value": 46
+                            },
+                            {
+                                "name": "47",
+                                "value": 47
+                            },
+                            {
+                                "name": "48",
+                                "value": 48
+                            },
+                            {
+                                "name": "49",
+                                "value": 49
+                            },
+                            {
+                                "name": "50",
+                                "value": 50
+                            },
+                            {
+                                "name": "51",
+                                "value": 51
+                            },
+                            {
+                                "name": "52",
+                                "value": 52
+                            },
+                            {
+                                "name": "53",
+                                "value": 53
+                            },
+                            {
+                                "name": "54",
+                                "value": 54
+                            },
+                            {
+                                "name": "55",
+                                "value": 55
+                            },
+                            {
+                                "name": "56",
+                                "value": 56
+                            },
+                            {
+                                "name": "57",
+                                "value": 57
+                            },
+                            {
+                                "name": "58",
+                                "value": 58
+                            },
+                            {
+                                "name": "59",
+                                "value": 59
+                            },
+                            {
+                                "name": "60",
+                                "value": 60
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "placementPriorityOnGameStart",
+                "option": {
+                    "label": "Placement Priority On Game Start",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": 30,
+                    "props": {
+                        "options": [
+                            {
+                                "name": "1st",
+                                "value": 1
+                            },
+                            {
+                                "name": "2nd",
+                                "value": 2
+                            },
+                            {
+                                "name": "3rd",
+                                "value": 3
+                            },
+                            {
+                                "name": "4th",
+                                "value": 4
+                            },
+                            {
+                                "name": "5th",
+                                "value": 5
+                            },
+                            {
+                                "name": "6th",
+                                "value": 6
+                            },
+                            {
+                                "name": "7th",
+                                "value": 7
+                            },
+                            {
+                                "name": "8th",
+                                "value": 8
+                            },
+                            {
+                                "name": "9th",
+                                "value": 9
+                            },
+                            {
+                                "name": "10th",
+                                "value": 10
+                            },
+                            {
+                                "name": "11th",
+                                "value": 11
+                            },
+                            {
+                                "name": "12th",
+                                "value": 12
+                            },
+                            {
+                                "name": "13th",
+                                "value": 13
+                            },
+                            {
+                                "name": "14th",
+                                "value": 14
+                            },
+                            {
+                                "name": "15th",
+                                "value": 15
+                            },
+                            {
+                                "name": "16th",
+                                "value": 16
+                            },
+                            {
+                                "name": "17th",
+                                "value": 17
+                            },
+                            {
+                                "name": "18th",
+                                "value": 18
+                            },
+                            {
+                                "name": "19th",
+                                "value": 19
+                            },
+                            {
+                                "name": "20th",
+                                "value": 20
+                            },
+                            {
+                                "name": "21st",
+                                "value": 21
+                            },
+                            {
+                                "name": "22nd",
+                                "value": 22
+                            },
+                            {
+                                "name": "23rd",
+                                "value": 23
+                            },
+                            {
+                                "name": "24th",
+                                "value": 24
+                            },
+                            {
+                                "name": "25th",
+                                "value": 25
+                            },
+                            {
+                                "name": "26th",
+                                "value": 26
+                            },
+                            {
+                                "name": "27th",
+                                "value": 27
+                            },
+                            {
+                                "name": "28th",
+                                "value": 28
+                            },
+                            {
+                                "name": "29th",
+                                "value": 29
+                            },
+                            {
+                                "name": "30th",
+                                "value": 30
+                            },
+                            {
+                                "name": "31st",
+                                "value": 31
+                            },
+                            {
+                                "name": "32nd",
+                                "value": 32
+                            },
+                            {
+                                "name": "33rd",
+                                "value": 33
+                            },
+                            {
+                                "name": "34th",
+                                "value": 34
+                            },
+                            {
+                                "name": "35th",
+                                "value": 35
+                            },
+                            {
+                                "name": "36th",
+                                "value": 36
+                            },
+                            {
+                                "name": "37th",
+                                "value": 37
+                            },
+                            {
+                                "name": "38th",
+                                "value": 38
+                            },
+                            {
+                                "name": "39th",
+                                "value": 39
+                            },
+                            {
+                                "name": "40th",
+                                "value": 40
+                            },
+                            {
+                                "name": "41st",
+                                "value": 41
+                            },
+                            {
+                                "name": "42nd",
+                                "value": 42
+                            },
+                            {
+                                "name": "43rd",
+                                "value": 43
+                            },
+                            {
+                                "name": "44th",
+                                "value": 44
+                            },
+                            {
+                                "name": "45th",
+                                "value": 45
+                            },
+                            {
+                                "name": "46th",
+                                "value": 46
+                            },
+                            {
+                                "name": "47th",
+                                "value": 47
+                            },
+                            {
+                                "name": "48th",
+                                "value": 48
+                            },
+                            {
+                                "name": "49th",
+                                "value": 49
+                            },
+                            {
+                                "name": "50th",
+                                "value": 50
+                            },
+                            {
+                                "name": "51st",
+                                "value": 51
+                            },
+                            {
+                                "name": "52nd",
+                                "value": 52
+                            },
+                            {
+                                "name": "53rd",
+                                "value": 53
+                            },
+                            {
+                                "name": "54th",
+                                "value": 54
+                            },
+                            {
+                                "name": "55th",
+                                "value": 55
+                            },
+                            {
+                                "name": "56th",
+                                "value": 56
+                            },
+                            {
+                                "name": "57th",
+                                "value": 57
+                            },
+                            {
+                                "name": "58th",
+                                "value": 58
+                            },
+                            {
+                                "name": "59th",
+                                "value": 59
+                            },
+                            {
+                                "name": "60th",
+                                "value": 60
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "placementPriorityDuringGame",
+                "option": {
+                    "label": "Placement Priority During Game",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": 30,
+                    "props": {
+                        "options": [
+                            {
+                                "name": "1st",
+                                "value": 1
+                            },
+                            {
+                                "name": "2nd",
+                                "value": 2
+                            },
+                            {
+                                "name": "3rd",
+                                "value": 3
+                            },
+                            {
+                                "name": "4th",
+                                "value": 4
+                            },
+                            {
+                                "name": "5th",
+                                "value": 5
+                            },
+                            {
+                                "name": "6th",
+                                "value": 6
+                            },
+                            {
+                                "name": "7th",
+                                "value": 7
+                            },
+                            {
+                                "name": "8th",
+                                "value": 8
+                            },
+                            {
+                                "name": "9th",
+                                "value": 9
+                            },
+                            {
+                                "name": "10th",
+                                "value": 10
+                            },
+                            {
+                                "name": "11th",
+                                "value": 11
+                            },
+                            {
+                                "name": "12th",
+                                "value": 12
+                            },
+                            {
+                                "name": "13th",
+                                "value": 13
+                            },
+                            {
+                                "name": "14th",
+                                "value": 14
+                            },
+                            {
+                                "name": "15th",
+                                "value": 15
+                            },
+                            {
+                                "name": "16th",
+                                "value": 16
+                            },
+                            {
+                                "name": "17th",
+                                "value": 17
+                            },
+                            {
+                                "name": "18th",
+                                "value": 18
+                            },
+                            {
+                                "name": "19th",
+                                "value": 19
+                            },
+                            {
+                                "name": "20th",
+                                "value": 20
+                            },
+                            {
+                                "name": "21st",
+                                "value": 21
+                            },
+                            {
+                                "name": "22nd",
+                                "value": 22
+                            },
+                            {
+                                "name": "23rd",
+                                "value": 23
+                            },
+                            {
+                                "name": "24th",
+                                "value": 24
+                            },
+                            {
+                                "name": "25th",
+                                "value": 25
+                            },
+                            {
+                                "name": "26th",
+                                "value": 26
+                            },
+                            {
+                                "name": "27th",
+                                "value": 27
+                            },
+                            {
+                                "name": "28th",
+                                "value": 28
+                            },
+                            {
+                                "name": "29th",
+                                "value": 29
+                            },
+                            {
+                                "name": "30th",
+                                "value": 30
+                            },
+                            {
+                                "name": "31st",
+                                "value": 31
+                            },
+                            {
+                                "name": "32nd",
+                                "value": 32
+                            },
+                            {
+                                "name": "33rd",
+                                "value": 33
+                            },
+                            {
+                                "name": "34th",
+                                "value": 34
+                            },
+                            {
+                                "name": "35th",
+                                "value": 35
+                            },
+                            {
+                                "name": "36th",
+                                "value": 36
+                            },
+                            {
+                                "name": "37th",
+                                "value": 37
+                            },
+                            {
+                                "name": "38th",
+                                "value": 38
+                            },
+                            {
+                                "name": "39th",
+                                "value": 39
+                            },
+                            {
+                                "name": "40th",
+                                "value": 40
+                            },
+                            {
+                                "name": "41st",
+                                "value": 41
+                            },
+                            {
+                                "name": "42nd",
+                                "value": 42
+                            },
+                            {
+                                "name": "43rd",
+                                "value": 43
+                            },
+                            {
+                                "name": "44th",
+                                "value": 44
+                            },
+                            {
+                                "name": "45th",
+                                "value": 45
+                            },
+                            {
+                                "name": "46th",
+                                "value": 46
+                            },
+                            {
+                                "name": "47th",
+                                "value": 47
+                            },
+                            {
+                                "name": "48th",
+                                "value": 48
+                            },
+                            {
+                                "name": "49th",
+                                "value": 49
+                            },
+                            {
+                                "name": "50th",
+                                "value": 50
+                            },
+                            {
+                                "name": "51st",
+                                "value": 51
+                            },
+                            {
+                                "name": "52nd",
+                                "value": 52
+                            },
+                            {
+                                "name": "53rd",
+                                "value": 53
+                            },
+                            {
+                                "name": "54th",
+                                "value": 54
+                            },
+                            {
+                                "name": "55th",
+                                "value": 55
+                            },
+                            {
+                                "name": "56th",
+                                "value": 56
+                            },
+                            {
+                                "name": "57th",
+                                "value": 57
+                            },
+                            {
+                                "name": "58th",
+                                "value": 58
+                            },
+                            {
+                                "name": "59th",
+                                "value": 59
+                            },
+                            {
+                                "name": "60th",
+                                "value": 60
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "allowCustomHostPlacement",
+                "option": {
+                    "label": "Allow custom host placement",
+                    "type": "select",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "color",
+                "option": {
+                    "label": "Team Color",
+                    "type": "color",
+                    "defaultValue": "#ff0000",
+                    "validators": [
+                        null
+                    ]
+                },
+                "minimumRoleLevel": 90
+            }
+        ]
+    },
+    "defaultState": {},
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [
+            {
+                "type": "WHEN_PLAYER_COUNT_CHANGES",
+                "name": "When player count changes..."
+            }
+        ],
+        "customBlocks": [
+            "get_player_count"
+        ]
+    },
+    "wireConfig": {
+        "out": {
+            "connections": [
+                {
+                    "id": "characterJoinsTeam",
+                    "name": "Player joins team"
+                }
+            ]
+        }
+    },
     "minimumRoleLevel": 90
 }

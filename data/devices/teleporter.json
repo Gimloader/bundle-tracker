@@ -2,10 +2,179 @@
     "id": "teleporter",
     "name": "Teleporter",
     "description": "Teleport players from one location to another",
-    "optionSchema": "{\"categories\":{\"categories\":[{\"id\":\"featured\",\"name\":\"Featured\"},{\"id\":\"channels\",\"name\":\"Channels\"}],\"showAllOptionsAt\":\"end\"},\"options\":[{\"key\":\"group\",\"option\":{\"label\":\"Group\",\"description\":\"The group this teleporter belongs to\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Group here...\",\"category\":\"teleporter-group\",\"maxLength\":64}},\"categories\":[\"featured\"]},{\"key\":\"targetGroup\",\"option\":{\"label\":\"Target Group\",\"description\":\"When a player enters, they will teleport to a teleporter with this group\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Group here...\",\"category\":\"teleporter-group\",\"maxLength\":64}},\"categories\":[\"featured\"]},{\"key\":\"whenTeleportedHereChannel\",\"option\":{\"label\":\"When teleported here, transmit on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"When a player is teleported here, the device sends a signal on the selected channel\"},\"categories\":[\"channels\"]},{\"key\":\"teleportToOnChannel\",\"option\":{\"label\":\"Teleport here when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Teleport to this teleporter when the device receives a signal from the selected channel\"},\"categories\":[\"channels\"]},{\"key\":\"teleportToTargetChannel\",\"option\":{\"label\":\"Teleport to target when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Teleport to the teleporter's target when the device receives a signal from the selected channel\"},\"categories\":[\"channels\"]},{\"key\":\"visibleInGame\",\"option\":{\"label\":\"Visible In-Game\",\"type\":\"select\",\"description\":\"Whether the teleporter is visible in-game\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"featured\"]}]}",
-    "defaultState": "{}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"out\":{\"connections\":[{\"id\":\"teleportedHere\",\"name\":\"Player teleported here\"}]},\"in\":{\"connections\":[{\"id\":\"teleportHere\",\"name\":\"Teleport player here\"},{\"id\":\"teleportToTarget\",\"name\":\"Teleport player to target\"}]}}",
+    "optionSchema": {
+        "categories": {
+            "categories": [
+                {
+                    "id": "featured",
+                    "name": "Featured"
+                },
+                {
+                    "id": "channels",
+                    "name": "Channels"
+                }
+            ],
+            "showAllOptionsAt": "end"
+        },
+        "options": [
+            {
+                "key": "group",
+                "option": {
+                    "label": "Group",
+                    "description": "The group this teleporter belongs to",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Group here...",
+                        "category": "teleporter-group",
+                        "maxLength": 64
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "targetGroup",
+                "option": {
+                    "label": "Target Group",
+                    "description": "When a player enters, they will teleport to a teleporter with this group",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Group here...",
+                        "category": "teleporter-group",
+                        "maxLength": 64
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "whenTeleportedHereChannel",
+                "option": {
+                    "label": "When teleported here, transmit on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "When a player is teleported here, the device sends a signal on the selected channel"
+                },
+                "categories": [
+                    "channels"
+                ]
+            },
+            {
+                "key": "teleportToOnChannel",
+                "option": {
+                    "label": "Teleport here when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Teleport to this teleporter when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "channels"
+                ]
+            },
+            {
+                "key": "teleportToTargetChannel",
+                "option": {
+                    "label": "Teleport to target when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Teleport to the teleporter's target when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "channels"
+                ]
+            },
+            {
+                "key": "visibleInGame",
+                "option": {
+                    "label": "Visible In-Game",
+                    "type": "select",
+                    "description": "Whether the teleporter is visible in-game",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            }
+        ]
+    },
+    "defaultState": {},
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "out": {
+            "connections": [
+                {
+                    "id": "teleportedHere",
+                    "name": "Player teleported here"
+                }
+            ]
+        },
+        "in": {
+            "connections": [
+                {
+                    "id": "teleportHere",
+                    "name": "Teleport player here"
+                },
+                {
+                    "id": "teleportToTarget",
+                    "name": "Teleport player to target"
+                }
+            ]
+        }
+    },
     "maxOnMap": 300,
     "initialMemoryCost": 50,
     "subsequentMemoryCost": 50

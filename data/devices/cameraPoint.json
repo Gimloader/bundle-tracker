@@ -2,10 +2,66 @@
     "id": "cameraPoint",
     "name": "Camera Point",
     "description": "Move the camera to a specific location",
-    "optionSchema": "{\"options\":[{\"key\":\"activateChannel\",\"option\":{\"label\":\"Activate point when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Activate the camera point when the device receives a signal from the selected channel\"}},{\"key\":\"deactivateChannel\",\"option\":{\"label\":\"Deactivate point when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Deactivate the camera point when the device receives a signal from the selected channel\"}}]}",
-    "defaultState": "{\"active\":false}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"activate\",\"name\":\"Activate camera point\"},{\"id\":\"deactivate\",\"name\":\"Deactivate camera point\"}]}}",
+    "optionSchema": {
+        "options": [
+            {
+                "key": "activateChannel",
+                "option": {
+                    "label": "Activate point when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Activate the camera point when the device receives a signal from the selected channel"
+                }
+            },
+            {
+                "key": "deactivateChannel",
+                "option": {
+                    "label": "Deactivate point when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Deactivate the camera point when the device receives a signal from the selected channel"
+                }
+            }
+        ]
+    },
+    "defaultState": {
+        "active": false
+    },
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "in": {
+            "connections": [
+                {
+                    "id": "activate",
+                    "name": "Activate camera point"
+                },
+                {
+                    "id": "deactivate",
+                    "name": "Deactivate camera point"
+                }
+            ]
+        }
+    },
     "initialMemoryCost": 100,
     "subsequentMemoryCost": 100
 }

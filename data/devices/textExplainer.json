@@ -2,10 +2,559 @@
     "id": "textExplainer",
     "name": "Popup",
     "description": "Create modals & banners",
-    "optionSchema": "{\"categories\":{\"categories\":[{\"id\":\"Featured\",\"name\":\"Featured\"},{\"id\":\"Look & Behavior\",\"name\":\"Look & Behavior\"},{\"id\":\"Call To Action\",\"name\":\"Call To Action\"},{\"id\":\"Channels\",\"name\":\"Channels\"}],\"showAllOptionsAt\":\"end\"},\"options\":[{\"key\":\"header\",\"option\":{\"label\":\"Header Text\",\"description\":\"Content shown in larger text\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\",\"maxLength\":256}},\"categories\":[\"Featured\"]},{\"key\":\"content\",\"option\":{\"label\":\"Content Text\",\"description\":\"Content shown in smaller text. Use for descriptions & additional info.\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\",\"maxLength\":512}},\"categories\":[\"Featured\"]},{\"key\":\"openWhenReceivingFrom\",\"option\":{\"label\":\"Open popup when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Open the popup when the device receives a signal from the selected channel\"},\"categories\":[\"Featured\",\"Channels\"]},{\"key\":\"iconImage\",\"option\":{\"label\":\"Icon Image\",\"description\":\"Small icon image shown above the header & content. Custom images are not allowed. Refer to the Gimkit Creative documentation for usage of icon images.\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\",\"maxLength\":128}}},{\"key\":\"style\",\"option\":{\"label\":\"Popup Style\",\"description\":\"Modal: a large popup the obstructs the center of the screen. Banner: a smaller popup that slides up from the bottom.\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"modal\",\"props\":{\"options\":[{\"name\":\"Modal\",\"value\":\"modal\"},{\"name\":\"Banner\",\"value\":\"banner\"}],\"allowEmpty\":false},\"hideIf\":[[{\"key\":\"callToActionStyle\",\"compare\":\"EQUAL\",\"value\":\"list\"}]]},\"categories\":[\"Featured\",\"Look & Behavior\"]},{\"key\":\"callToActionStyle\",\"option\":{\"label\":\"Call To Action Style\",\"description\":\"Set to 'List' to use Popup Call To Action devices for dynamic call to actions\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"standard\",\"props\":{\"options\":[{\"name\":\"Standard\",\"value\":\"standard\"},{\"name\":\"List\",\"value\":\"list\"}],\"allowEmpty\":false}},\"categories\":[\"Call To Action\"]},{\"key\":\"group\",\"option\":{\"label\":\"Popup Group\",\"description\":\"Group this popup belongs to. If set, only Popup Call To Actions with a matching group will show for this popup.\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"},\"hideIf\":[[{\"key\":\"callToActionStyle\",\"compare\":\"NOT_EQUAL\",\"value\":\"list\"}]]},\"categories\":[\"Call To Action\"]},{\"key\":\"callToActionLabel\",\"option\":{\"label\":\"Call To Action Label\",\"description\":\"Label shown on call to action button. Leave empty for no call to action.\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\",\"maxLength\":32},\"hideIf\":[[{\"key\":\"callToActionStyle\",\"compare\":\"NOT_EQUAL\",\"value\":\"standard\"}]]},\"categories\":[\"Call To Action\"]},{\"key\":\"callToActionChannel\",\"option\":{\"label\":\"Call To Action Channel\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Channel to transmit on when call to action is clicked\",\"hideIf\":[[{\"key\":\"callToActionStyle\",\"compare\":\"NOT_EQUAL\",\"value\":\"standard\"}]]},\"categories\":[\"Call To Action\",\"Channels\"]},{\"key\":\"secondaryCallToActionLabel\",\"option\":{\"label\":\"Secondary Call To Action Label\",\"description\":\"Label shown on secondary call to action button. Leave empty for no secondary call to action.\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\",\"maxLength\":32},\"hideIf\":[[{\"key\":\"callToActionStyle\",\"compare\":\"NOT_EQUAL\",\"value\":\"standard\"}]]},\"categories\":[\"Call To Action\"]},{\"key\":\"secondaryCallToActionChannel\",\"option\":{\"label\":\"Secondary Call To Action Channel\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Channel to transmit on when secondary call to action is clicked\",\"hideIf\":[[{\"key\":\"callToActionStyle\",\"compare\":\"NOT_EQUAL\",\"value\":\"standard\"}]]},\"categories\":[\"Call To Action\",\"Channels\"]},{\"key\":\"scope\",\"option\":{\"label\":\"Content Scope\",\"type\":\"select\",\"defaultValue\":\"global\",\"validators\":[null],\"props\":{\"options\":[{\"value\":\"global\",\"name\":\"global\"},{\"value\":\"player\",\"name\":\"player\"},{\"value\":\"team\",\"name\":\"team\"}],\"allowEmpty\":false},\"description\":\"When the content of the popup is updated, who does it apply to?\"},\"categories\":[\"Look & Behavior\"]},{\"key\":\"backgroundColor\",\"option\":{\"label\":\"Background Color\",\"description\":\"Background color of the popup. The text color will automatically adapt to be readable\",\"type\":\"color\",\"defaultValue\":\"#FFFFFF\",\"validators\":[null]},\"categories\":[\"Look & Behavior\"]},{\"key\":\"fontFamily\",\"option\":{\"label\":\"Font\",\"description\":\"Select a font that fits the style of your popup\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"Rubik\",\"props\":{\"options\":[{\"name\":\"Rubik\",\"value\":\"Rubik\"},{\"name\":\"Roboto\",\"value\":\"Roboto\"},{\"name\":\"Staatliches\",\"value\":\"Staatliches\"},{\"name\":\"Galindo\",\"value\":\"Galindo\"},{\"name\":\"Kalam\",\"value\":\"Kalam\"},{\"name\":\"Bangers\",\"value\":\"Bangers\"},{\"name\":\"Fugaz One\",\"value\":\"Fugaz One\"},{\"name\":\"Outfit\",\"value\":\"Outfit\"},{\"name\":\"PT Mono\",\"value\":\"PT Mono\"},{\"name\":\"Space Grotesk\",\"value\":\"Space Grotesk\"},{\"name\":\"Lobster\",\"value\":\"Lobster\"},{\"name\":\"Zeyada\",\"value\":\"Zeyada\"},{\"name\":\"Titan One\",\"value\":\"Titan One\"},{\"name\":\"Rye\",\"value\":\"Rye\"},{\"name\":\"Caprasimo\",\"value\":\"Caprasimo\"}],\"allowEmpty\":false}},\"categories\":[\"Look & Behavior\"]},{\"key\":\"closableByUser\",\"option\":{\"label\":\"Closable By Player\",\"type\":\"select\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false},\"description\":\"Are players allowed to close the popup once opened?\"}},{\"key\":\"closeWhenReceivingFrom\",\"option\":{\"label\":\"Close popup when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Close the popup when the device receives a signal from the selected channel\"},\"categories\":[\"Channels\"]},{\"key\":\"whenClosedTransmitOn\",\"option\":{\"label\":\"When popup closed, transmit on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"When popup closed, the device sends a signal on the selected channel\"},\"categories\":[\"Channels\"]}]}",
-    "defaultState": "{\"textColor\":\"#000000\",\"header\":\"\",\"content\":\"\"}",
-    "codeGridSchema": "{\"allowChannelGrids\":true,\"triggers\":[{\"type\":\"wire\",\"name\":\"On wire pulse...\"}],\"customBlocks\":[\"set_header\",\"set_content\"]}",
-    "wireConfig": "{\"out\":{\"connections\":[{\"id\":\"closed\",\"name\":\"Popup closed\"},{\"id\":\"callToAction\",\"name\":\"Primary call to action clicked\"},{\"id\":\"secondaryCallToAction\",\"name\":\"Secondary call to action clicked\"}]},\"in\":{\"connections\":[{\"id\":\"open\",\"name\":\"Open popup\"},{\"id\":\"close\",\"name\":\"Close popup\"},{\"id\":\"codeGrid\",\"name\":\"Run wire pulse block\"}]}}",
+    "optionSchema": {
+        "categories": {
+            "categories": [
+                {
+                    "id": "Featured",
+                    "name": "Featured"
+                },
+                {
+                    "id": "Look & Behavior",
+                    "name": "Look & Behavior"
+                },
+                {
+                    "id": "Call To Action",
+                    "name": "Call To Action"
+                },
+                {
+                    "id": "Channels",
+                    "name": "Channels"
+                }
+            ],
+            "showAllOptionsAt": "end"
+        },
+        "options": [
+            {
+                "key": "header",
+                "option": {
+                    "label": "Header Text",
+                    "description": "Content shown in larger text",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here...",
+                        "maxLength": 256
+                    }
+                },
+                "categories": [
+                    "Featured"
+                ]
+            },
+            {
+                "key": "content",
+                "option": {
+                    "label": "Content Text",
+                    "description": "Content shown in smaller text. Use for descriptions & additional info.",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here...",
+                        "maxLength": 512
+                    }
+                },
+                "categories": [
+                    "Featured"
+                ]
+            },
+            {
+                "key": "openWhenReceivingFrom",
+                "option": {
+                    "label": "Open popup when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Open the popup when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "Featured",
+                    "Channels"
+                ]
+            },
+            {
+                "key": "iconImage",
+                "option": {
+                    "label": "Icon Image",
+                    "description": "Small icon image shown above the header & content. Custom images are not allowed. Refer to the Gimkit Creative documentation for usage of icon images.",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here...",
+                        "maxLength": 128
+                    }
+                }
+            },
+            {
+                "key": "style",
+                "option": {
+                    "label": "Popup Style",
+                    "description": "Modal: a large popup the obstructs the center of the screen. Banner: a smaller popup that slides up from the bottom.",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "modal",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Modal",
+                                "value": "modal"
+                            },
+                            {
+                                "name": "Banner",
+                                "value": "banner"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "callToActionStyle",
+                                "compare": "EQUAL",
+                                "value": "list"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "Featured",
+                    "Look & Behavior"
+                ]
+            },
+            {
+                "key": "callToActionStyle",
+                "option": {
+                    "label": "Call To Action Style",
+                    "description": "Set to 'List' to use Popup Call To Action devices for dynamic call to actions",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "standard",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Standard",
+                                "value": "standard"
+                            },
+                            {
+                                "name": "List",
+                                "value": "list"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "Call To Action"
+                ]
+            },
+            {
+                "key": "group",
+                "option": {
+                    "label": "Popup Group",
+                    "description": "Group this popup belongs to. If set, only Popup Call To Actions with a matching group will show for this popup.",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here..."
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "callToActionStyle",
+                                "compare": "NOT_EQUAL",
+                                "value": "list"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "Call To Action"
+                ]
+            },
+            {
+                "key": "callToActionLabel",
+                "option": {
+                    "label": "Call To Action Label",
+                    "description": "Label shown on call to action button. Leave empty for no call to action.",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here...",
+                        "maxLength": 32
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "callToActionStyle",
+                                "compare": "NOT_EQUAL",
+                                "value": "standard"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "Call To Action"
+                ]
+            },
+            {
+                "key": "callToActionChannel",
+                "option": {
+                    "label": "Call To Action Channel",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Channel to transmit on when call to action is clicked",
+                    "hideIf": [
+                        [
+                            {
+                                "key": "callToActionStyle",
+                                "compare": "NOT_EQUAL",
+                                "value": "standard"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "Call To Action",
+                    "Channels"
+                ]
+            },
+            {
+                "key": "secondaryCallToActionLabel",
+                "option": {
+                    "label": "Secondary Call To Action Label",
+                    "description": "Label shown on secondary call to action button. Leave empty for no secondary call to action.",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here...",
+                        "maxLength": 32
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "callToActionStyle",
+                                "compare": "NOT_EQUAL",
+                                "value": "standard"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "Call To Action"
+                ]
+            },
+            {
+                "key": "secondaryCallToActionChannel",
+                "option": {
+                    "label": "Secondary Call To Action Channel",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Channel to transmit on when secondary call to action is clicked",
+                    "hideIf": [
+                        [
+                            {
+                                "key": "callToActionStyle",
+                                "compare": "NOT_EQUAL",
+                                "value": "standard"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "Call To Action",
+                    "Channels"
+                ]
+            },
+            {
+                "key": "scope",
+                "option": {
+                    "label": "Content Scope",
+                    "type": "select",
+                    "defaultValue": "global",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": "global",
+                                "name": "global"
+                            },
+                            {
+                                "value": "player",
+                                "name": "player"
+                            },
+                            {
+                                "value": "team",
+                                "name": "team"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "description": "When the content of the popup is updated, who does it apply to?"
+                },
+                "categories": [
+                    "Look & Behavior"
+                ]
+            },
+            {
+                "key": "backgroundColor",
+                "option": {
+                    "label": "Background Color",
+                    "description": "Background color of the popup. The text color will automatically adapt to be readable",
+                    "type": "color",
+                    "defaultValue": "#FFFFFF",
+                    "validators": [
+                        null
+                    ]
+                },
+                "categories": [
+                    "Look & Behavior"
+                ]
+            },
+            {
+                "key": "fontFamily",
+                "option": {
+                    "label": "Font",
+                    "description": "Select a font that fits the style of your popup",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "Rubik",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Rubik",
+                                "value": "Rubik"
+                            },
+                            {
+                                "name": "Roboto",
+                                "value": "Roboto"
+                            },
+                            {
+                                "name": "Staatliches",
+                                "value": "Staatliches"
+                            },
+                            {
+                                "name": "Galindo",
+                                "value": "Galindo"
+                            },
+                            {
+                                "name": "Kalam",
+                                "value": "Kalam"
+                            },
+                            {
+                                "name": "Bangers",
+                                "value": "Bangers"
+                            },
+                            {
+                                "name": "Fugaz One",
+                                "value": "Fugaz One"
+                            },
+                            {
+                                "name": "Outfit",
+                                "value": "Outfit"
+                            },
+                            {
+                                "name": "PT Mono",
+                                "value": "PT Mono"
+                            },
+                            {
+                                "name": "Space Grotesk",
+                                "value": "Space Grotesk"
+                            },
+                            {
+                                "name": "Lobster",
+                                "value": "Lobster"
+                            },
+                            {
+                                "name": "Zeyada",
+                                "value": "Zeyada"
+                            },
+                            {
+                                "name": "Titan One",
+                                "value": "Titan One"
+                            },
+                            {
+                                "name": "Rye",
+                                "value": "Rye"
+                            },
+                            {
+                                "name": "Caprasimo",
+                                "value": "Caprasimo"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "Look & Behavior"
+                ]
+            },
+            {
+                "key": "closableByUser",
+                "option": {
+                    "label": "Closable By Player",
+                    "type": "select",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "description": "Are players allowed to close the popup once opened?"
+                }
+            },
+            {
+                "key": "closeWhenReceivingFrom",
+                "option": {
+                    "label": "Close popup when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Close the popup when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "Channels"
+                ]
+            },
+            {
+                "key": "whenClosedTransmitOn",
+                "option": {
+                    "label": "When popup closed, transmit on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "When popup closed, the device sends a signal on the selected channel"
+                },
+                "categories": [
+                    "Channels"
+                ]
+            }
+        ]
+    },
+    "defaultState": {
+        "textColor": "#000000",
+        "header": "",
+        "content": ""
+    },
+    "codeGridSchema": {
+        "allowChannelGrids": true,
+        "triggers": [
+            {
+                "type": "wire",
+                "name": "On wire pulse..."
+            }
+        ],
+        "customBlocks": [
+            "set_header",
+            "set_content"
+        ]
+    },
+    "wireConfig": {
+        "out": {
+            "connections": [
+                {
+                    "id": "closed",
+                    "name": "Popup closed"
+                },
+                {
+                    "id": "callToAction",
+                    "name": "Primary call to action clicked"
+                },
+                {
+                    "id": "secondaryCallToAction",
+                    "name": "Secondary call to action clicked"
+                }
+            ]
+        },
+        "in": {
+            "connections": [
+                {
+                    "id": "open",
+                    "name": "Open popup"
+                },
+                {
+                    "id": "close",
+                    "name": "Close popup"
+                },
+                {
+                    "id": "codeGrid",
+                    "name": "Run wire pulse block"
+                }
+            ]
+        }
+    },
     "maxOnMap": 200,
     "initialMemoryCost": 50,
     "subsequentMemoryCost": 50

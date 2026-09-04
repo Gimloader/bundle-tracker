@@ -2,8 +2,47 @@
     "id": "shadow",
     "name": "Shadow",
     "description": "Create more realistic lighting by casting shadows",
-    "optionSchema": "{\"options\":[{\"key\":\"width\",\"option\":{\"label\":\"Width\",\"type\":\"numberInput\",\"defaultValue\":300,\"validators\":[null],\"props\":{\"min\":15,\"max\":500},\"hidden\":true}},{\"key\":\"height\",\"option\":{\"label\":\"Height\",\"type\":\"numberInput\",\"defaultValue\":130,\"validators\":[null],\"props\":{\"min\":15,\"max\":500},\"hidden\":true}}]}",
-    "defaultState": "{}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
+    "optionSchema": {
+        "options": [
+            {
+                "key": "width",
+                "option": {
+                    "label": "Width",
+                    "type": "numberInput",
+                    "defaultValue": 300,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 15,
+                        "max": 500
+                    },
+                    "hidden": true
+                }
+            },
+            {
+                "key": "height",
+                "option": {
+                    "label": "Height",
+                    "type": "numberInput",
+                    "defaultValue": 130,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 15,
+                        "max": 500
+                    },
+                    "hidden": true
+                }
+            }
+        ]
+    },
+    "defaultState": {},
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
     "minimumRoleLevel": 90
 }

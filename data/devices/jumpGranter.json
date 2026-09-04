@@ -2,10 +2,224 @@
     "id": "jumpGranter",
     "name": "Jump Granter",
     "description": "Grants jumps to players.",
-    "optionSchema": "{\"categories\":{\"categories\":[{\"id\":\"featured\",\"name\":\"Featured\"},{\"id\":\"channels\",\"name\":\"Channels\"}],\"showAllOptionsAt\":\"end\"},\"options\":[{\"key\":\"mode\",\"option\":{\"label\":\"Mode\",\"description\":\"Choose whether to reset or grant jumps\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"reset\",\"props\":{\"options\":[{\"value\":\"reset\",\"name\":\"Reset\"},{\"value\":\"grant\",\"name\":\"Grant\"}],\"allowEmpty\":false}},\"categories\":[\"featured\"]},{\"key\":\"jumpsNumber\",\"option\":{\"label\":\"Jumps Number\",\"description\":\"The number of jumps to grant\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":1,\"max\":10,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"mode\",\"compare\":\"NOT_EQUAL\",\"value\":\"grant\"}]]},\"categories\":[\"featured\"]},{\"key\":\"disabledTime\",\"option\":{\"label\":\"Disabled Time\",\"description\":\"The time in seconds to disable the device after use\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"allowEmpty\":false,\"useSlider\":false}},\"categories\":[\"featured\"]},{\"key\":\"activeOnStart\",\"option\":{\"label\":\"Active On Start\",\"type\":\"select\",\"description\":\"Whether the device is active when the game starts\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"channels\",\"featured\"]},{\"key\":\"activateOnChannel\",\"option\":{\"label\":\"Activate On Channel\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"The channel to activate the device on\"},\"categories\":[\"channels\"]},{\"key\":\"deactivateOnChannel\",\"option\":{\"label\":\"Deactivate On Channel\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"The channel to deactivate the device on\"},\"categories\":[\"channels\"]},{\"key\":\"scope\",\"option\":{\"label\":\"Scope\",\"type\":\"select\",\"defaultValue\":\"global\",\"validators\":[null],\"props\":{\"options\":[{\"value\":\"global\",\"name\":\"global\"},{\"value\":\"player\",\"name\":\"player\"},{\"value\":\"team\",\"name\":\"team\"}],\"allowEmpty\":false},\"description\":\"The scope of the device\"},\"categories\":[\"featured\"]}]}",
-    "defaultState": "{\"active\":false,\"disabled\":false}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"activate\",\"name\":\"Activate\"},{\"id\":\"deactivate\",\"name\":\"Deactivate\"}]}}",
+    "optionSchema": {
+        "categories": {
+            "categories": [
+                {
+                    "id": "featured",
+                    "name": "Featured"
+                },
+                {
+                    "id": "channels",
+                    "name": "Channels"
+                }
+            ],
+            "showAllOptionsAt": "end"
+        },
+        "options": [
+            {
+                "key": "mode",
+                "option": {
+                    "label": "Mode",
+                    "description": "Choose whether to reset or grant jumps",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "reset",
+                    "props": {
+                        "options": [
+                            {
+                                "value": "reset",
+                                "name": "Reset"
+                            },
+                            {
+                                "value": "grant",
+                                "name": "Grant"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "jumpsNumber",
+                "option": {
+                    "label": "Jumps Number",
+                    "description": "The number of jumps to grant",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 10,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "mode",
+                                "compare": "NOT_EQUAL",
+                                "value": "grant"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "disabledTime",
+                "option": {
+                    "label": "Disabled Time",
+                    "description": "The time in seconds to disable the device after use",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "activeOnStart",
+                "option": {
+                    "label": "Active On Start",
+                    "type": "select",
+                    "description": "Whether the device is active when the game starts",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "channels",
+                    "featured"
+                ]
+            },
+            {
+                "key": "activateOnChannel",
+                "option": {
+                    "label": "Activate On Channel",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "The channel to activate the device on"
+                },
+                "categories": [
+                    "channels"
+                ]
+            },
+            {
+                "key": "deactivateOnChannel",
+                "option": {
+                    "label": "Deactivate On Channel",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "The channel to deactivate the device on"
+                },
+                "categories": [
+                    "channels"
+                ]
+            },
+            {
+                "key": "scope",
+                "option": {
+                    "label": "Scope",
+                    "type": "select",
+                    "defaultValue": "global",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": "global",
+                                "name": "global"
+                            },
+                            {
+                                "value": "player",
+                                "name": "player"
+                            },
+                            {
+                                "value": "team",
+                                "name": "team"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "description": "The scope of the device"
+                },
+                "categories": [
+                    "featured"
+                ]
+            }
+        ]
+    },
+    "defaultState": {
+        "active": false,
+        "disabled": false
+    },
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "in": {
+            "connections": [
+                {
+                    "id": "activate",
+                    "name": "Activate"
+                },
+                {
+                    "id": "deactivate",
+                    "name": "Deactivate"
+                }
+            ]
+        }
+    },
     "minimumRoleLevel": 90,
     "maxOnMap": 512,
     "initialMemoryCost": 25,

@@ -2,10 +2,394 @@
     "id": "character",
     "name": "Character",
     "description": "Place a Gim on your map to be used for decoration or as an NPC",
-    "optionSchema": "{\"categories\":{\"categories\":[{\"id\":\"featured\",\"name\":\"Featured\"},{\"id\":\"interaction\",\"name\":\"Interaction\"},{\"id\":\"appearance\",\"name\":\"Appearance\"},{\"id\":\"availability\",\"name\":\"Availability\"},{\"id\":\"channels\",\"name\":\"Channels\"}],\"showAllOptionsAt\":\"end\"},\"options\":[{\"key\":\"skinId\",\"option\":{\"label\":\"Gim\",\"description\":\"Set the Gim for this character\",\"type\":\"skinId\",\"defaultValue\":\"character_hamster\",\"props\":{\"allowEmpty\":false},\"validators\":[null]},\"categories\":[\"featured\",\"appearance\"]},{\"key\":\"interactionEnabled\",\"option\":{\"label\":\"Interaction Enabled\",\"type\":\"select\",\"description\":\"Can the player interact with the character?\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"featured\",\"interaction\"]},{\"key\":\"interactionMessage\",\"option\":{\"label\":\"Character Message\",\"description\":\"The message shown to player when they become within interaction distance of the character\",\"type\":\"textInput\",\"defaultValue\":\"Talk\",\"validators\":[null],\"props\":{\"placeholder\":\"Enter message here...\",\"maxLength\":128},\"hideIf\":[[{\"key\":\"interactionEnabled\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]},\"categories\":[\"featured\",\"interaction\"]},{\"key\":\"flipX\",\"option\":{\"label\":\"Direction\",\"description\":\"Which way is the character facing?\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":false,\"props\":{\"options\":[{\"name\":\"Right\",\"value\":false},{\"name\":\"Left\",\"value\":true}],\"allowEmpty\":false}},\"categories\":[\"featured\",\"appearance\"]},{\"key\":\"useNaturalDepth\",\"option\":{\"label\":\"Use Natural Depth\",\"type\":\"select\",\"description\":\"Automatically set the the depth of the character based on their position. Disable to customize the depth via the layers panel.\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"appearance\"]},{\"key\":\"interactionChannel\",\"option\":{\"label\":\"When interact with character, transmit on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"When interact with character, the device sends a signal on the selected channel\",\"hideIf\":[[{\"key\":\"interactionEnabled\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]},\"categories\":[\"channels\",\"interaction\"]},{\"key\":\"interactionDuration\",\"option\":{\"label\":\"Interaction Duration\",\"description\":\"How long does it takes to trigger the interaction?\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":1,\"props\":{\"options\":[{\"name\":\"Instant\",\"value\":0},{\"name\":\"1 Second\",\"value\":1},{\"name\":\"3 Seconds\",\"value\":3},{\"name\":\"5 Seconds\",\"value\":5}],\"allowEmpty\":false},\"hideIf\":[[{\"key\":\"interactionEnabled\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]},\"categories\":[\"interaction\"]},{\"key\":\"activeOnStart\",\"option\":{\"label\":\"Active On Game Start\",\"type\":\"select\",\"description\":\"Can the player interact with character when the game starts?\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"availability\"]},{\"key\":\"activateChannel\",\"option\":{\"label\":\"Activate character when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Activate the character when the device receives a signal from the selected channel\"},\"categories\":[\"availability\",\"channels\"]},{\"key\":\"deactivateChannel\",\"option\":{\"label\":\"Deactivate character when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Deactivate the character when the device receives a signal from the selected channel\"},\"categories\":[\"availability\",\"channels\"]},{\"key\":\"scope\",\"option\":{\"label\":\"Active Scope\",\"type\":\"select\",\"defaultValue\":\"global\",\"validators\":[null],\"props\":{\"options\":[{\"value\":\"global\",\"name\":\"global\"},{\"value\":\"player\",\"name\":\"player\"},{\"value\":\"team\",\"name\":\"team\"}],\"allowEmpty\":false},\"description\":\"When the character is activated/deactivated, who does it apply to?\"},\"categories\":[\"availability\"]},{\"key\":\"radius\",\"option\":{\"label\":\"Interaction Radius\",\"type\":\"numberInput\",\"defaultValue\":100,\"validators\":[null],\"props\":{\"min\":75,\"max\":300,\"allowEmpty\":false,\"useSlider\":false},\"hidden\":true}}]}",
-    "defaultState": "{\"active\":true}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"out\":{\"connections\":[{\"id\":\"interacted\",\"name\":\"Interacted with character\"}]},\"in\":{\"connections\":[{\"id\":\"activate\",\"name\":\"Activate character\"},{\"id\":\"deactivate\",\"name\":\"Deactivate character\"}]}}",
+    "optionSchema": {
+        "categories": {
+            "categories": [
+                {
+                    "id": "featured",
+                    "name": "Featured"
+                },
+                {
+                    "id": "interaction",
+                    "name": "Interaction"
+                },
+                {
+                    "id": "appearance",
+                    "name": "Appearance"
+                },
+                {
+                    "id": "availability",
+                    "name": "Availability"
+                },
+                {
+                    "id": "channels",
+                    "name": "Channels"
+                }
+            ],
+            "showAllOptionsAt": "end"
+        },
+        "options": [
+            {
+                "key": "skinId",
+                "option": {
+                    "label": "Gim",
+                    "description": "Set the Gim for this character",
+                    "type": "skinId",
+                    "defaultValue": "character_hamster",
+                    "props": {
+                        "allowEmpty": false
+                    },
+                    "validators": [
+                        null
+                    ]
+                },
+                "categories": [
+                    "featured",
+                    "appearance"
+                ]
+            },
+            {
+                "key": "interactionEnabled",
+                "option": {
+                    "label": "Interaction Enabled",
+                    "type": "select",
+                    "description": "Can the player interact with the character?",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured",
+                    "interaction"
+                ]
+            },
+            {
+                "key": "interactionMessage",
+                "option": {
+                    "label": "Character Message",
+                    "description": "The message shown to player when they become within interaction distance of the character",
+                    "type": "textInput",
+                    "defaultValue": "Talk",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Enter message here...",
+                        "maxLength": 128
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "interactionEnabled",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "featured",
+                    "interaction"
+                ]
+            },
+            {
+                "key": "flipX",
+                "option": {
+                    "label": "Direction",
+                    "description": "Which way is the character facing?",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": false,
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Right",
+                                "value": false
+                            },
+                            {
+                                "name": "Left",
+                                "value": true
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured",
+                    "appearance"
+                ]
+            },
+            {
+                "key": "useNaturalDepth",
+                "option": {
+                    "label": "Use Natural Depth",
+                    "type": "select",
+                    "description": "Automatically set the the depth of the character based on their position. Disable to customize the depth via the layers panel.",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "appearance"
+                ]
+            },
+            {
+                "key": "interactionChannel",
+                "option": {
+                    "label": "When interact with character, transmit on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "When interact with character, the device sends a signal on the selected channel",
+                    "hideIf": [
+                        [
+                            {
+                                "key": "interactionEnabled",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "channels",
+                    "interaction"
+                ]
+            },
+            {
+                "key": "interactionDuration",
+                "option": {
+                    "label": "Interaction Duration",
+                    "description": "How long does it takes to trigger the interaction?",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": 1,
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Instant",
+                                "value": 0
+                            },
+                            {
+                                "name": "1 Second",
+                                "value": 1
+                            },
+                            {
+                                "name": "3 Seconds",
+                                "value": 3
+                            },
+                            {
+                                "name": "5 Seconds",
+                                "value": 5
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "interactionEnabled",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "interaction"
+                ]
+            },
+            {
+                "key": "activeOnStart",
+                "option": {
+                    "label": "Active On Game Start",
+                    "type": "select",
+                    "description": "Can the player interact with character when the game starts?",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "availability"
+                ]
+            },
+            {
+                "key": "activateChannel",
+                "option": {
+                    "label": "Activate character when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Activate the character when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "availability",
+                    "channels"
+                ]
+            },
+            {
+                "key": "deactivateChannel",
+                "option": {
+                    "label": "Deactivate character when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Deactivate the character when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "availability",
+                    "channels"
+                ]
+            },
+            {
+                "key": "scope",
+                "option": {
+                    "label": "Active Scope",
+                    "type": "select",
+                    "defaultValue": "global",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": "global",
+                                "name": "global"
+                            },
+                            {
+                                "value": "player",
+                                "name": "player"
+                            },
+                            {
+                                "value": "team",
+                                "name": "team"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "description": "When the character is activated/deactivated, who does it apply to?"
+                },
+                "categories": [
+                    "availability"
+                ]
+            },
+            {
+                "key": "radius",
+                "option": {
+                    "label": "Interaction Radius",
+                    "type": "numberInput",
+                    "defaultValue": 100,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 75,
+                        "max": 300,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            }
+        ]
+    },
+    "defaultState": {
+        "active": true
+    },
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "out": {
+            "connections": [
+                {
+                    "id": "interacted",
+                    "name": "Interacted with character"
+                }
+            ]
+        },
+        "in": {
+            "connections": [
+                {
+                    "id": "activate",
+                    "name": "Activate character"
+                },
+                {
+                    "id": "deactivate",
+                    "name": "Deactivate character"
+                }
+            ]
+        }
+    },
     "seasonTicketRequired": true,
     "maxOnMap": 300,
     "initialMemoryCost": 200,

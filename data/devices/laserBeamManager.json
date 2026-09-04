@@ -2,10 +2,161 @@
     "id": "laserBeamManager",
     "name": "Laser Beam Manager",
     "description": "Activate/deactivate multiple lasers at the same time",
-    "optionSchema": "{\"options\":[{\"key\":\"laserGroup\",\"option\":{\"label\":\"Laser Group\",\"description\":\"The group of lasers the manager will update. Leave empty to update all lasers without a group.\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Group name...\",\"category\":\"laserGroup\"}}},{\"key\":\"autoSwitch\",\"option\":{\"label\":\"Auto-Switch\",\"type\":\"select\",\"description\":\"Automatically active & deactivate lasers at a set interval\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}},{\"key\":\"activatedDuration\",\"option\":{\"label\":\"Activated Duration\",\"description\":\"How long (in seconds) the lasers will be activated\",\"type\":\"numberInput\",\"defaultValue\":2,\"validators\":[null],\"props\":{\"min\":1,\"max\":60,\"step\":0.1,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"autoSwitch\",\"value\":false,\"compare\":\"EQUAL\"}]]}},{\"key\":\"deactivatedDuration\",\"option\":{\"label\":\"Deactivated Duration\",\"description\":\"How long (in seconds) the lasers will be deactivated\",\"type\":\"numberInput\",\"defaultValue\":3,\"validators\":[null],\"props\":{\"min\":1,\"max\":60,\"step\":0.1,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"autoSwitch\",\"value\":false,\"compare\":\"EQUAL\"}]]}},{\"key\":\"activateOnChannel\",\"option\":{\"label\":\"Activate lasers when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Activate the managed lasers when the device receives a signal from the selected channel\"}},{\"key\":\"deactivateOnChannel\",\"option\":{\"label\":\"Deactivate lasers when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Deactivate the managed lasers when the device receives a signal from the selected channel\"}}]}",
-    "defaultState": "{}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"activate\",\"name\":\"Activate managed lasers\"},{\"id\":\"deactivate\",\"name\":\"Deactivate managed lasers\"}]}}",
+    "optionSchema": {
+        "options": [
+            {
+                "key": "laserGroup",
+                "option": {
+                    "label": "Laser Group",
+                    "description": "The group of lasers the manager will update. Leave empty to update all lasers without a group.",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Group name...",
+                        "category": "laserGroup"
+                    }
+                }
+            },
+            {
+                "key": "autoSwitch",
+                "option": {
+                    "label": "Auto-Switch",
+                    "type": "select",
+                    "description": "Automatically active & deactivate lasers at a set interval",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "activatedDuration",
+                "option": {
+                    "label": "Activated Duration",
+                    "description": "How long (in seconds) the lasers will be activated",
+                    "type": "numberInput",
+                    "defaultValue": 2,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 60,
+                        "step": 0.1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "autoSwitch",
+                                "value": false,
+                                "compare": "EQUAL"
+                            }
+                        ]
+                    ]
+                }
+            },
+            {
+                "key": "deactivatedDuration",
+                "option": {
+                    "label": "Deactivated Duration",
+                    "description": "How long (in seconds) the lasers will be deactivated",
+                    "type": "numberInput",
+                    "defaultValue": 3,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 60,
+                        "step": 0.1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "autoSwitch",
+                                "value": false,
+                                "compare": "EQUAL"
+                            }
+                        ]
+                    ]
+                }
+            },
+            {
+                "key": "activateOnChannel",
+                "option": {
+                    "label": "Activate lasers when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Activate the managed lasers when the device receives a signal from the selected channel"
+                }
+            },
+            {
+                "key": "deactivateOnChannel",
+                "option": {
+                    "label": "Deactivate lasers when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Deactivate the managed lasers when the device receives a signal from the selected channel"
+                }
+            }
+        ]
+    },
+    "defaultState": {},
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "in": {
+            "connections": [
+                {
+                    "id": "activate",
+                    "name": "Activate managed lasers"
+                },
+                {
+                    "id": "deactivate",
+                    "name": "Deactivate managed lasers"
+                }
+            ]
+        }
+    },
     "maxOnMap": 16,
     "initialMemoryCost": 32,
     "subsequentMemoryCost": 32

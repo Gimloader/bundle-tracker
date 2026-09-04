@@ -2,10 +2,1431 @@
     "id": "vendingMachine",
     "name": "Vending Machine",
     "description": "Device used to sell items to players",
-    "optionSchema": "{\"categories\":{\"categories\":[{\"id\":\"Featured\",\"name\":\"Featured\"},{\"id\":\"Grant Item\",\"name\":\"Grant Item\"},{\"id\":\"Transmit On Channel\",\"name\":\"Transmit On Channel\"},{\"id\":\"Appearance\",\"name\":\"Appearance\"},{\"id\":\"Availability\",\"name\":\"Availability\"},{\"id\":\"Adaptive Cost\",\"name\":\"Adaptive Cost\"},{\"id\":\"Stock\",\"name\":\"Stock\"},{\"id\":\"Funding\",\"name\":\"Funding\"},{\"id\":\"Channels\",\"name\":\"Channels\"}],\"showAllOptionsAt\":\"end\"},\"options\":[{\"key\":\"grantAction\",\"option\":{\"label\":\"Purchase Action\",\"description\":\"When a player purchases from the vending machine, does the device grant an item or transmit on a channel?\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"Grant Item\",\"props\":{\"options\":[{\"value\":\"Grant Item\",\"name\":\"Grant Item\"},{\"value\":\"Broadcast On Channel\",\"name\":\"Transmit On Channel\"}],\"allowEmpty\":false}},\"categories\":[\"Featured\",\"Grant Item\",\"Transmit On Channel\"]},{\"key\":\"requiredItemId\",\"option\":{\"label\":\"Required Item\",\"description\":\"The item required for a player to purchase from the vending machine\",\"type\":\"itemId\",\"validators\":[null],\"props\":{}},\"categories\":[\"Featured\"]},{\"key\":\"amountOfRequiredItem\",\"option\":{\"label\":\"Required Item Amount\",\"description\":\"How much of the required item a player must have to purchase from the vending machine\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":0,\"max\":999999999999999,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}},\"categories\":[\"Featured\"]},{\"key\":\"grantedItemId\",\"option\":{\"label\":\"Granted Item\",\"description\":\"When a player purchases from the vending machine, what item is granted to them?\",\"type\":\"itemId\",\"validators\":[null],\"props\":{},\"hideIf\":[[{\"key\":\"grantAction\",\"compare\":\"NOT_EQUAL\",\"value\":\"Grant Item\"}]]},\"categories\":[\"Featured\",\"Grant Item\"]},{\"key\":\"amountOfGrantedItem\",\"option\":{\"label\":\"Granted Item Amount\",\"description\":\"How much of the granted item is given to the player\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":1,\"max\":999999999999999,\"step\":1,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"grantAction\",\"compare\":\"NOT_EQUAL\",\"value\":\"Grant Item\"}]]},\"categories\":[\"Featured\",\"Grant Item\"]},{\"key\":\"purchaseChannel\",\"option\":{\"label\":\"When item purchased, transmit on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"When a player purchases the item from the vending machine, the device sends a signal on the selected channel\"},\"categories\":[\"Featured\",\"Transmit On Channel\",\"Channels\"]},{\"key\":\"visibleInGame\",\"option\":{\"label\":\"Visible In-Game\",\"type\":\"select\",\"description\":\"Is the body of the Vending Machine present in-game?\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"Featured\",\"Appearance\"]},{\"key\":\"grantedItemImageUrl\",\"option\":{\"label\":\"Item Image\",\"description\":\"Supply an image shown for the item in the vending machine. Custom images are not allowed. Refer to the Gimkit Creative documentation for usage of icon images.\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\",\"maxLength\":64},\"hideIf\":[[{\"key\":\"grantAction\",\"compare\":\"NOT_EQUAL\",\"value\":\"Broadcast On Channel\"}],[{\"key\":\"visibleInGame\",\"compare\":\"EQUAL\",\"value\":false}]]},\"categories\":[\"Transmit On Channel\",\"Appearance\"]},{\"key\":\"grantedItemName\",\"option\":{\"label\":\"Item Name\",\"description\":\"The name of the item being purchased from the vending machine. By default, the name of the Granted Item is used.\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\",\"maxLength\":64}},\"categories\":[\"Appearance\",\"Transmit On Channel\"]},{\"key\":\"grantedItemDescription\",\"option\":{\"label\":\"Item Description\",\"description\":\"An optional description of the item being purchased from the vending machine.\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\",\"maxLength\":128}},\"categories\":[\"Appearance\",\"Transmit On Channel\"]},{\"key\":\"deactivateOnPurchase\",\"option\":{\"label\":\"Deactivate On Purchase\",\"type\":\"select\",\"description\":\"If enabled, the vending machine will deactivate after the item is purchased.\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"Availability\"]},{\"key\":\"useAdaptiveCost\",\"option\":{\"label\":\"Use Adaptive Cost\",\"type\":\"select\",\"description\":\"If enabled, the cost of the item will increase based on the number of players in-game\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"Adaptive Cost\"]},{\"key\":\"adaptiveCostIncreasePerPlayer\",\"option\":{\"label\":\"Adaptive Cost Increase Per Player\",\"description\":\"How much the cost of the item increases per additional player\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"min\":0,\"max\":999999999,\"step\":1,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"useAdaptiveCost\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]},\"categories\":[\"Adaptive Cost\"]},{\"key\":\"allowFunding\",\"option\":{\"label\":\"Allow Funding\",\"type\":\"select\",\"description\":\"If enabled, players can fund the vending machine to decrease the cost of the item\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"Funding\"]},{\"key\":\"fundingScope\",\"option\":{\"label\":\"Funding Scope\",\"type\":\"select\",\"defaultValue\":\"global\",\"validators\":[null],\"props\":{\"options\":[{\"value\":\"global\",\"name\":\"global\"},{\"value\":\"player\",\"name\":\"player\"},{\"value\":\"team\",\"name\":\"team\"}],\"allowEmpty\":false},\"description\":\"For funding, the current price of the item is applied to who?\",\"hideIf\":[[{\"key\":\"allowFunding\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]},\"categories\":[\"Funding\"]},{\"key\":\"useLimitedStock\",\"option\":{\"label\":\"Use Limited Stock\",\"type\":\"select\",\"description\":\"If enabled, the vending machine will be out of stock after a certain amount of purchases\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false},\"hideIf\":[[{\"key\":\"deactivateOnPurchase\",\"compare\":\"EQUAL\",\"value\":true}]]},\"categories\":[\"Stock\"]},{\"key\":\"maxStock\",\"option\":{\"label\":\"Limited Stock Amount\",\"description\":\"The maximum amount of purchases that can be made from the vending machine before it goes out of stock\",\"type\":\"numberInput\",\"defaultValue\":10,\"validators\":[null],\"props\":{\"min\":1,\"max\":999,\"step\":1,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"useLimitedStock\",\"compare\":\"NOT_EQUAL\",\"value\":true}],[{\"key\":\"deactivateOnPurchase\",\"compare\":\"EQUAL\",\"value\":true}]]},\"categories\":[\"Stock\"]},{\"key\":\"maxStockScope\",\"option\":{\"label\":\"Limited Stock Scope\",\"type\":\"select\",\"defaultValue\":\"global\",\"validators\":[null],\"props\":{\"options\":[{\"value\":\"global\",\"name\":\"global\"},{\"value\":\"player\",\"name\":\"player\"},{\"value\":\"team\",\"name\":\"team\"}],\"allowEmpty\":false},\"description\":\"The current stock of the vending machine is applied to who?\",\"hideIf\":[[{\"key\":\"useLimitedStock\",\"compare\":\"NOT_EQUAL\",\"value\":true}],[{\"key\":\"deactivateOnPurchase\",\"compare\":\"EQUAL\",\"value\":true}]]},\"categories\":[\"Stock\"]},{\"key\":\"attachCostToNameWhenHidden\",\"option\":{\"label\":\"Attach Cost To Name\",\"type\":\"select\",\"description\":\"When enabled, the cost of the item will be added to the end of the item's name\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false},\"hideIf\":[[{\"key\":\"visibleInGame\",\"compare\":\"EQUAL\",\"value\":true}]]}},{\"key\":\"activeOnStart\",\"option\":{\"label\":\"Active On Game Start\",\"type\":\"select\",\"description\":\"Is this vending machine available to make purchases from when the game starts?\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"Availability\"]},{\"key\":\"activeScope\",\"option\":{\"label\":\"Active Scope\",\"type\":\"select\",\"defaultValue\":\"player\",\"validators\":[null],\"props\":{\"options\":[{\"value\":\"global\",\"name\":\"global\"},{\"value\":\"player\",\"name\":\"player\"},{\"value\":\"team\",\"name\":\"team\"}],\"allowEmpty\":false},\"description\":\"When activated/deactivated, who does it apply to?\"},\"categories\":[\"Availability\"]},{\"key\":\"activateChannel\",\"option\":{\"label\":\"Activate when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Activate the vending machine when the device receives a signal from the selected channel\"},\"categories\":[\"Availability\",\"Channels\"]},{\"key\":\"deactivateChannel\",\"option\":{\"label\":\"Deactivate when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Deactivate the vending machine when the device receives a signal from the selected channel\"},\"categories\":[\"Availability\",\"Channels\"]},{\"key\":\"allowedPurchaseTeam\",\"option\":{\"label\":\"Team Allowed To Purchased\",\"description\":\"Which team is allowed to purchase from the vending machine?\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"__ANY_TEAM__\",\"props\":{\"options\":[{\"name\":\"Any Team\",\"value\":\"__ANY_TEAM__\"},{\"name\":\"Team 1\",\"value\":\"1\"},{\"name\":\"Team 2\",\"value\":\"2\"},{\"name\":\"Team 3\",\"value\":\"3\"},{\"name\":\"Team 4\",\"value\":\"4\"},{\"name\":\"Team 5\",\"value\":\"5\"},{\"name\":\"Team 6\",\"value\":\"6\"},{\"name\":\"Team 7\",\"value\":\"7\"},{\"name\":\"Team 8\",\"value\":\"8\"},{\"name\":\"Team 9\",\"value\":\"9\"},{\"name\":\"Team 10\",\"value\":\"10\"},{\"name\":\"Team 11\",\"value\":\"11\"},{\"name\":\"Team 12\",\"value\":\"12\"},{\"name\":\"Team 13\",\"value\":\"13\"},{\"name\":\"Team 14\",\"value\":\"14\"},{\"name\":\"Team 15\",\"value\":\"15\"},{\"name\":\"Team 16\",\"value\":\"16\"},{\"name\":\"Team 17\",\"value\":\"17\"},{\"name\":\"Team 18\",\"value\":\"18\"},{\"name\":\"Team 19\",\"value\":\"19\"},{\"name\":\"Team 20\",\"value\":\"20\"},{\"name\":\"Team 21\",\"value\":\"21\"},{\"name\":\"Team 22\",\"value\":\"22\"},{\"name\":\"Team 23\",\"value\":\"23\"},{\"name\":\"Team 24\",\"value\":\"24\"},{\"name\":\"Team 25\",\"value\":\"25\"},{\"name\":\"Team 26\",\"value\":\"26\"},{\"name\":\"Team 27\",\"value\":\"27\"},{\"name\":\"Team 28\",\"value\":\"28\"},{\"name\":\"Team 29\",\"value\":\"29\"},{\"name\":\"Team 30\",\"value\":\"30\"},{\"name\":\"Team 31\",\"value\":\"31\"},{\"name\":\"Team 32\",\"value\":\"32\"},{\"name\":\"Team 33\",\"value\":\"33\"},{\"name\":\"Team 34\",\"value\":\"34\"},{\"name\":\"Team 35\",\"value\":\"35\"},{\"name\":\"Team 36\",\"value\":\"36\"},{\"name\":\"Team 37\",\"value\":\"37\"},{\"name\":\"Team 38\",\"value\":\"38\"},{\"name\":\"Team 39\",\"value\":\"39\"},{\"name\":\"Team 40\",\"value\":\"40\"},{\"name\":\"Team 41\",\"value\":\"41\"},{\"name\":\"Team 42\",\"value\":\"42\"},{\"name\":\"Team 43\",\"value\":\"43\"},{\"name\":\"Team 44\",\"value\":\"44\"},{\"name\":\"Team 45\",\"value\":\"45\"},{\"name\":\"Team 46\",\"value\":\"46\"},{\"name\":\"Team 47\",\"value\":\"47\"},{\"name\":\"Team 48\",\"value\":\"48\"},{\"name\":\"Team 49\",\"value\":\"49\"},{\"name\":\"Team 50\",\"value\":\"50\"},{\"name\":\"Team 51\",\"value\":\"51\"},{\"name\":\"Team 52\",\"value\":\"52\"},{\"name\":\"Team 53\",\"value\":\"53\"},{\"name\":\"Team 54\",\"value\":\"54\"},{\"name\":\"Team 55\",\"value\":\"55\"},{\"name\":\"Team 56\",\"value\":\"56\"},{\"name\":\"Team 57\",\"value\":\"57\"},{\"name\":\"Team 58\",\"value\":\"58\"},{\"name\":\"Team 59\",\"value\":\"59\"},{\"name\":\"Team 60\",\"value\":\"60\"}],\"allowEmpty\":false}},\"categories\":[\"Availability\"]},{\"key\":\"attemptToPurchaseChannel\",\"option\":{\"label\":\"Attempt to purchase when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Attempt to purchase an item from the vending machine when the device receives a signal from the selected channel\"},\"categories\":[\"Channels\"]},{\"key\":\"onAttemptedPurchaseFailedChannel\",\"option\":{\"label\":\"When attempted purchase failed, transmit on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"When a player attempted to purchase an item from the vending machine, but failed, the device sends a signal on the selected channel\"},\"categories\":[\"Channels\"]},{\"key\":\"interactionDuration\",\"option\":{\"label\":\"Interaction Duration\",\"description\":\"How long does a player have to interact with the vending machine to make the purchase?\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":1,\"props\":{\"options\":[{\"name\":\"Instant\",\"value\":0},{\"name\":\"1 Second\",\"value\":1},{\"name\":\"3 Seconds\",\"value\":3},{\"name\":\"5 Seconds\",\"value\":5}],\"allowEmpty\":false}},\"categories\":[\"Appearance\"]},{\"key\":\"matchItemRarity\",\"option\":{\"label\":\"Match Item Rarity\",\"type\":\"select\",\"description\":\"Match the colors of the vending machine to the granted item's rarity\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false},\"hideIf\":[[{\"key\":\"grantAction\",\"compare\":\"NOT_EQUAL\",\"value\":\"Grant Item\"}]]},\"categories\":[\"Appearance\"]},{\"key\":\"backgroundColor1\",\"option\":{\"label\":\"Exterior Color\",\"description\":\"The color of the vending machine background exterior\",\"type\":\"color\",\"defaultValue\":\"#d44224\",\"validators\":[null],\"hideIf\":[[{\"key\":\"matchItemRarity\",\"compare\":\"EQUAL\",\"value\":true}]]},\"categories\":[\"Appearance\"]},{\"key\":\"backgroundColor2\",\"option\":{\"label\":\"Interior Color\",\"description\":\"The color of the vending machine background interior\",\"type\":\"color\",\"defaultValue\":\"#f7d253\",\"validators\":[null],\"hideIf\":[[{\"key\":\"matchItemRarity\",\"compare\":\"EQUAL\",\"value\":true}]]},\"categories\":[\"Appearance\"]},{\"key\":\"raysColor\",\"option\":{\"label\":\"Rays Color\",\"description\":\"The color of the rays rotating on the vending machine\",\"type\":\"color\",\"defaultValue\":\"#f7d253\",\"validators\":[null],\"hideIf\":[[{\"key\":\"matchItemRarity\",\"compare\":\"EQUAL\",\"value\":true}]]},\"categories\":[\"Appearance\"]},{\"key\":\"numberOfRays\",\"option\":{\"label\":\"Number Of Rays\",\"type\":\"numberInput\",\"defaultValue\":16,\"validators\":[null],\"props\":{\"min\":4,\"max\":64,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}},\"minimumRoleLevel\":90,\"categories\":[\"Appearance\"]},{\"key\":\"raysWidthFactor\",\"option\":{\"label\":\"Ray Width Factor\",\"type\":\"numberInput\",\"defaultValue\":1.25,\"validators\":[null],\"props\":{\"min\":0.5,\"max\":3,\"step\":0.05,\"allowEmpty\":false,\"useSlider\":false}},\"minimumRoleLevel\":90,\"categories\":[\"Appearance\"]},{\"key\":\"raysAlpha\",\"option\":{\"label\":\"Ray Alpha\",\"type\":\"numberInput\",\"defaultValue\":0.5,\"validators\":[null],\"props\":{\"min\":0,\"max\":1,\"step\":0.01,\"allowEmpty\":false,\"useSlider\":false}},\"minimumRoleLevel\":90,\"categories\":[\"Appearance\"]},{\"key\":\"raysAdditive\",\"option\":{\"label\":\"Use Additive Blend Mode\",\"type\":\"select\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"minimumRoleLevel\":90,\"categories\":[\"Appearance\"]},{\"key\":\"soundEnabled\",\"option\":{\"label\":\"Sound Enabled\",\"type\":\"select\",\"description\":\"Play a sound effect when the item is purchased\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"Appearance\"]},{\"key\":\"showShadow\",\"option\":{\"label\":\"Cast Shadow\",\"type\":\"select\",\"description\":\"Does the vending machine cast a shadow?\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false},\"hideIf\":[[{\"value\":\"visibleInGame\",\"compare\":\"EQUAL\",\"key\":\"false\"}]]},\"categories\":[\"Appearance\"]},{\"key\":\"width\",\"option\":{\"label\":\"Width\",\"type\":\"numberInput\",\"defaultValue\":250,\"validators\":[null],\"props\":{\"min\":250,\"max\":750,\"step\":1,\"allowEmpty\":false,\"useSlider\":false},\"hidden\":true}},{\"key\":\"height\",\"option\":{\"label\":\"Height\",\"type\":\"numberInput\",\"defaultValue\":250,\"validators\":[null],\"props\":{\"min\":250,\"max\":750,\"step\":1,\"allowEmpty\":false,\"useSlider\":false},\"hidden\":true}},{\"key\":\"radius\",\"option\":{\"label\":\"InteractionRadius\",\"type\":\"numberInput\",\"defaultValue\":100,\"validators\":[null],\"props\":{\"min\":50,\"max\":200,\"step\":1,\"allowEmpty\":false,\"useSlider\":false},\"hidden\":true}}]}",
-    "defaultState": "{\"active\":false,\"currentStock\":0,\"fundedAmount\":0,\"cost\":0}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"out\":{\"connections\":[{\"id\":\"itemPurchased\",\"name\":\"Item purchased\"},{\"id\":\"activated\",\"name\":\"Machine activated\"},{\"id\":\"deactivated\",\"name\":\"Machine deactivated\"},{\"id\":\"purchasedFailed\",\"name\":\"Attempt to purchase fails\"}]},\"in\":{\"connections\":[{\"id\":\"attemptToPurchase\",\"name\":\"Attempt to purchase\"},{\"id\":\"activate\",\"name\":\"Activate machine\"},{\"id\":\"deactivate\",\"name\":\"Deactivate machine\"}]}}",
+    "optionSchema": {
+        "categories": {
+            "categories": [
+                {
+                    "id": "Featured",
+                    "name": "Featured"
+                },
+                {
+                    "id": "Grant Item",
+                    "name": "Grant Item"
+                },
+                {
+                    "id": "Transmit On Channel",
+                    "name": "Transmit On Channel"
+                },
+                {
+                    "id": "Appearance",
+                    "name": "Appearance"
+                },
+                {
+                    "id": "Availability",
+                    "name": "Availability"
+                },
+                {
+                    "id": "Adaptive Cost",
+                    "name": "Adaptive Cost"
+                },
+                {
+                    "id": "Stock",
+                    "name": "Stock"
+                },
+                {
+                    "id": "Funding",
+                    "name": "Funding"
+                },
+                {
+                    "id": "Channels",
+                    "name": "Channels"
+                }
+            ],
+            "showAllOptionsAt": "end"
+        },
+        "options": [
+            {
+                "key": "grantAction",
+                "option": {
+                    "label": "Purchase Action",
+                    "description": "When a player purchases from the vending machine, does the device grant an item or transmit on a channel?",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "Grant Item",
+                    "props": {
+                        "options": [
+                            {
+                                "value": "Grant Item",
+                                "name": "Grant Item"
+                            },
+                            {
+                                "value": "Broadcast On Channel",
+                                "name": "Transmit On Channel"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "Featured",
+                    "Grant Item",
+                    "Transmit On Channel"
+                ]
+            },
+            {
+                "key": "requiredItemId",
+                "option": {
+                    "label": "Required Item",
+                    "description": "The item required for a player to purchase from the vending machine",
+                    "type": "itemId",
+                    "validators": [
+                        null
+                    ],
+                    "props": {}
+                },
+                "categories": [
+                    "Featured"
+                ]
+            },
+            {
+                "key": "amountOfRequiredItem",
+                "option": {
+                    "label": "Required Item Amount",
+                    "description": "How much of the required item a player must have to purchase from the vending machine",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 999999999999999,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                },
+                "categories": [
+                    "Featured"
+                ]
+            },
+            {
+                "key": "grantedItemId",
+                "option": {
+                    "label": "Granted Item",
+                    "description": "When a player purchases from the vending machine, what item is granted to them?",
+                    "type": "itemId",
+                    "validators": [
+                        null
+                    ],
+                    "props": {},
+                    "hideIf": [
+                        [
+                            {
+                                "key": "grantAction",
+                                "compare": "NOT_EQUAL",
+                                "value": "Grant Item"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "Featured",
+                    "Grant Item"
+                ]
+            },
+            {
+                "key": "amountOfGrantedItem",
+                "option": {
+                    "label": "Granted Item Amount",
+                    "description": "How much of the granted item is given to the player",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 999999999999999,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "grantAction",
+                                "compare": "NOT_EQUAL",
+                                "value": "Grant Item"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "Featured",
+                    "Grant Item"
+                ]
+            },
+            {
+                "key": "purchaseChannel",
+                "option": {
+                    "label": "When item purchased, transmit on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "When a player purchases the item from the vending machine, the device sends a signal on the selected channel"
+                },
+                "categories": [
+                    "Featured",
+                    "Transmit On Channel",
+                    "Channels"
+                ]
+            },
+            {
+                "key": "visibleInGame",
+                "option": {
+                    "label": "Visible In-Game",
+                    "type": "select",
+                    "description": "Is the body of the Vending Machine present in-game?",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "Featured",
+                    "Appearance"
+                ]
+            },
+            {
+                "key": "grantedItemImageUrl",
+                "option": {
+                    "label": "Item Image",
+                    "description": "Supply an image shown for the item in the vending machine. Custom images are not allowed. Refer to the Gimkit Creative documentation for usage of icon images.",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here...",
+                        "maxLength": 64
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "grantAction",
+                                "compare": "NOT_EQUAL",
+                                "value": "Broadcast On Channel"
+                            }
+                        ],
+                        [
+                            {
+                                "key": "visibleInGame",
+                                "compare": "EQUAL",
+                                "value": false
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "Transmit On Channel",
+                    "Appearance"
+                ]
+            },
+            {
+                "key": "grantedItemName",
+                "option": {
+                    "label": "Item Name",
+                    "description": "The name of the item being purchased from the vending machine. By default, the name of the Granted Item is used.",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here...",
+                        "maxLength": 64
+                    }
+                },
+                "categories": [
+                    "Appearance",
+                    "Transmit On Channel"
+                ]
+            },
+            {
+                "key": "grantedItemDescription",
+                "option": {
+                    "label": "Item Description",
+                    "description": "An optional description of the item being purchased from the vending machine.",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here...",
+                        "maxLength": 128
+                    }
+                },
+                "categories": [
+                    "Appearance",
+                    "Transmit On Channel"
+                ]
+            },
+            {
+                "key": "deactivateOnPurchase",
+                "option": {
+                    "label": "Deactivate On Purchase",
+                    "type": "select",
+                    "description": "If enabled, the vending machine will deactivate after the item is purchased.",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "Availability"
+                ]
+            },
+            {
+                "key": "useAdaptiveCost",
+                "option": {
+                    "label": "Use Adaptive Cost",
+                    "type": "select",
+                    "description": "If enabled, the cost of the item will increase based on the number of players in-game",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "Adaptive Cost"
+                ]
+            },
+            {
+                "key": "adaptiveCostIncreasePerPlayer",
+                "option": {
+                    "label": "Adaptive Cost Increase Per Player",
+                    "description": "How much the cost of the item increases per additional player",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 999999999,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "useAdaptiveCost",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "Adaptive Cost"
+                ]
+            },
+            {
+                "key": "allowFunding",
+                "option": {
+                    "label": "Allow Funding",
+                    "type": "select",
+                    "description": "If enabled, players can fund the vending machine to decrease the cost of the item",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "Funding"
+                ]
+            },
+            {
+                "key": "fundingScope",
+                "option": {
+                    "label": "Funding Scope",
+                    "type": "select",
+                    "defaultValue": "global",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": "global",
+                                "name": "global"
+                            },
+                            {
+                                "value": "player",
+                                "name": "player"
+                            },
+                            {
+                                "value": "team",
+                                "name": "team"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "description": "For funding, the current price of the item is applied to who?",
+                    "hideIf": [
+                        [
+                            {
+                                "key": "allowFunding",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "Funding"
+                ]
+            },
+            {
+                "key": "useLimitedStock",
+                "option": {
+                    "label": "Use Limited Stock",
+                    "type": "select",
+                    "description": "If enabled, the vending machine will be out of stock after a certain amount of purchases",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "deactivateOnPurchase",
+                                "compare": "EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "Stock"
+                ]
+            },
+            {
+                "key": "maxStock",
+                "option": {
+                    "label": "Limited Stock Amount",
+                    "description": "The maximum amount of purchases that can be made from the vending machine before it goes out of stock",
+                    "type": "numberInput",
+                    "defaultValue": 10,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 999,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "useLimitedStock",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ],
+                        [
+                            {
+                                "key": "deactivateOnPurchase",
+                                "compare": "EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "Stock"
+                ]
+            },
+            {
+                "key": "maxStockScope",
+                "option": {
+                    "label": "Limited Stock Scope",
+                    "type": "select",
+                    "defaultValue": "global",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": "global",
+                                "name": "global"
+                            },
+                            {
+                                "value": "player",
+                                "name": "player"
+                            },
+                            {
+                                "value": "team",
+                                "name": "team"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "description": "The current stock of the vending machine is applied to who?",
+                    "hideIf": [
+                        [
+                            {
+                                "key": "useLimitedStock",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ],
+                        [
+                            {
+                                "key": "deactivateOnPurchase",
+                                "compare": "EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "Stock"
+                ]
+            },
+            {
+                "key": "attachCostToNameWhenHidden",
+                "option": {
+                    "label": "Attach Cost To Name",
+                    "type": "select",
+                    "description": "When enabled, the cost of the item will be added to the end of the item's name",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "visibleInGame",
+                                "compare": "EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                }
+            },
+            {
+                "key": "activeOnStart",
+                "option": {
+                    "label": "Active On Game Start",
+                    "type": "select",
+                    "description": "Is this vending machine available to make purchases from when the game starts?",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "Availability"
+                ]
+            },
+            {
+                "key": "activeScope",
+                "option": {
+                    "label": "Active Scope",
+                    "type": "select",
+                    "defaultValue": "player",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": "global",
+                                "name": "global"
+                            },
+                            {
+                                "value": "player",
+                                "name": "player"
+                            },
+                            {
+                                "value": "team",
+                                "name": "team"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "description": "When activated/deactivated, who does it apply to?"
+                },
+                "categories": [
+                    "Availability"
+                ]
+            },
+            {
+                "key": "activateChannel",
+                "option": {
+                    "label": "Activate when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Activate the vending machine when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "Availability",
+                    "Channels"
+                ]
+            },
+            {
+                "key": "deactivateChannel",
+                "option": {
+                    "label": "Deactivate when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Deactivate the vending machine when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "Availability",
+                    "Channels"
+                ]
+            },
+            {
+                "key": "allowedPurchaseTeam",
+                "option": {
+                    "label": "Team Allowed To Purchased",
+                    "description": "Which team is allowed to purchase from the vending machine?",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "__ANY_TEAM__",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Any Team",
+                                "value": "__ANY_TEAM__"
+                            },
+                            {
+                                "name": "Team 1",
+                                "value": "1"
+                            },
+                            {
+                                "name": "Team 2",
+                                "value": "2"
+                            },
+                            {
+                                "name": "Team 3",
+                                "value": "3"
+                            },
+                            {
+                                "name": "Team 4",
+                                "value": "4"
+                            },
+                            {
+                                "name": "Team 5",
+                                "value": "5"
+                            },
+                            {
+                                "name": "Team 6",
+                                "value": "6"
+                            },
+                            {
+                                "name": "Team 7",
+                                "value": "7"
+                            },
+                            {
+                                "name": "Team 8",
+                                "value": "8"
+                            },
+                            {
+                                "name": "Team 9",
+                                "value": "9"
+                            },
+                            {
+                                "name": "Team 10",
+                                "value": "10"
+                            },
+                            {
+                                "name": "Team 11",
+                                "value": "11"
+                            },
+                            {
+                                "name": "Team 12",
+                                "value": "12"
+                            },
+                            {
+                                "name": "Team 13",
+                                "value": "13"
+                            },
+                            {
+                                "name": "Team 14",
+                                "value": "14"
+                            },
+                            {
+                                "name": "Team 15",
+                                "value": "15"
+                            },
+                            {
+                                "name": "Team 16",
+                                "value": "16"
+                            },
+                            {
+                                "name": "Team 17",
+                                "value": "17"
+                            },
+                            {
+                                "name": "Team 18",
+                                "value": "18"
+                            },
+                            {
+                                "name": "Team 19",
+                                "value": "19"
+                            },
+                            {
+                                "name": "Team 20",
+                                "value": "20"
+                            },
+                            {
+                                "name": "Team 21",
+                                "value": "21"
+                            },
+                            {
+                                "name": "Team 22",
+                                "value": "22"
+                            },
+                            {
+                                "name": "Team 23",
+                                "value": "23"
+                            },
+                            {
+                                "name": "Team 24",
+                                "value": "24"
+                            },
+                            {
+                                "name": "Team 25",
+                                "value": "25"
+                            },
+                            {
+                                "name": "Team 26",
+                                "value": "26"
+                            },
+                            {
+                                "name": "Team 27",
+                                "value": "27"
+                            },
+                            {
+                                "name": "Team 28",
+                                "value": "28"
+                            },
+                            {
+                                "name": "Team 29",
+                                "value": "29"
+                            },
+                            {
+                                "name": "Team 30",
+                                "value": "30"
+                            },
+                            {
+                                "name": "Team 31",
+                                "value": "31"
+                            },
+                            {
+                                "name": "Team 32",
+                                "value": "32"
+                            },
+                            {
+                                "name": "Team 33",
+                                "value": "33"
+                            },
+                            {
+                                "name": "Team 34",
+                                "value": "34"
+                            },
+                            {
+                                "name": "Team 35",
+                                "value": "35"
+                            },
+                            {
+                                "name": "Team 36",
+                                "value": "36"
+                            },
+                            {
+                                "name": "Team 37",
+                                "value": "37"
+                            },
+                            {
+                                "name": "Team 38",
+                                "value": "38"
+                            },
+                            {
+                                "name": "Team 39",
+                                "value": "39"
+                            },
+                            {
+                                "name": "Team 40",
+                                "value": "40"
+                            },
+                            {
+                                "name": "Team 41",
+                                "value": "41"
+                            },
+                            {
+                                "name": "Team 42",
+                                "value": "42"
+                            },
+                            {
+                                "name": "Team 43",
+                                "value": "43"
+                            },
+                            {
+                                "name": "Team 44",
+                                "value": "44"
+                            },
+                            {
+                                "name": "Team 45",
+                                "value": "45"
+                            },
+                            {
+                                "name": "Team 46",
+                                "value": "46"
+                            },
+                            {
+                                "name": "Team 47",
+                                "value": "47"
+                            },
+                            {
+                                "name": "Team 48",
+                                "value": "48"
+                            },
+                            {
+                                "name": "Team 49",
+                                "value": "49"
+                            },
+                            {
+                                "name": "Team 50",
+                                "value": "50"
+                            },
+                            {
+                                "name": "Team 51",
+                                "value": "51"
+                            },
+                            {
+                                "name": "Team 52",
+                                "value": "52"
+                            },
+                            {
+                                "name": "Team 53",
+                                "value": "53"
+                            },
+                            {
+                                "name": "Team 54",
+                                "value": "54"
+                            },
+                            {
+                                "name": "Team 55",
+                                "value": "55"
+                            },
+                            {
+                                "name": "Team 56",
+                                "value": "56"
+                            },
+                            {
+                                "name": "Team 57",
+                                "value": "57"
+                            },
+                            {
+                                "name": "Team 58",
+                                "value": "58"
+                            },
+                            {
+                                "name": "Team 59",
+                                "value": "59"
+                            },
+                            {
+                                "name": "Team 60",
+                                "value": "60"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "Availability"
+                ]
+            },
+            {
+                "key": "attemptToPurchaseChannel",
+                "option": {
+                    "label": "Attempt to purchase when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Attempt to purchase an item from the vending machine when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "Channels"
+                ]
+            },
+            {
+                "key": "onAttemptedPurchaseFailedChannel",
+                "option": {
+                    "label": "When attempted purchase failed, transmit on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "When a player attempted to purchase an item from the vending machine, but failed, the device sends a signal on the selected channel"
+                },
+                "categories": [
+                    "Channels"
+                ]
+            },
+            {
+                "key": "interactionDuration",
+                "option": {
+                    "label": "Interaction Duration",
+                    "description": "How long does a player have to interact with the vending machine to make the purchase?",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": 1,
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Instant",
+                                "value": 0
+                            },
+                            {
+                                "name": "1 Second",
+                                "value": 1
+                            },
+                            {
+                                "name": "3 Seconds",
+                                "value": 3
+                            },
+                            {
+                                "name": "5 Seconds",
+                                "value": 5
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "Appearance"
+                ]
+            },
+            {
+                "key": "matchItemRarity",
+                "option": {
+                    "label": "Match Item Rarity",
+                    "type": "select",
+                    "description": "Match the colors of the vending machine to the granted item's rarity",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "grantAction",
+                                "compare": "NOT_EQUAL",
+                                "value": "Grant Item"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "Appearance"
+                ]
+            },
+            {
+                "key": "backgroundColor1",
+                "option": {
+                    "label": "Exterior Color",
+                    "description": "The color of the vending machine background exterior",
+                    "type": "color",
+                    "defaultValue": "#d44224",
+                    "validators": [
+                        null
+                    ],
+                    "hideIf": [
+                        [
+                            {
+                                "key": "matchItemRarity",
+                                "compare": "EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "Appearance"
+                ]
+            },
+            {
+                "key": "backgroundColor2",
+                "option": {
+                    "label": "Interior Color",
+                    "description": "The color of the vending machine background interior",
+                    "type": "color",
+                    "defaultValue": "#f7d253",
+                    "validators": [
+                        null
+                    ],
+                    "hideIf": [
+                        [
+                            {
+                                "key": "matchItemRarity",
+                                "compare": "EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "Appearance"
+                ]
+            },
+            {
+                "key": "raysColor",
+                "option": {
+                    "label": "Rays Color",
+                    "description": "The color of the rays rotating on the vending machine",
+                    "type": "color",
+                    "defaultValue": "#f7d253",
+                    "validators": [
+                        null
+                    ],
+                    "hideIf": [
+                        [
+                            {
+                                "key": "matchItemRarity",
+                                "compare": "EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "Appearance"
+                ]
+            },
+            {
+                "key": "numberOfRays",
+                "option": {
+                    "label": "Number Of Rays",
+                    "type": "numberInput",
+                    "defaultValue": 16,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 4,
+                        "max": 64,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                },
+                "minimumRoleLevel": 90,
+                "categories": [
+                    "Appearance"
+                ]
+            },
+            {
+                "key": "raysWidthFactor",
+                "option": {
+                    "label": "Ray Width Factor",
+                    "type": "numberInput",
+                    "defaultValue": 1.25,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0.5,
+                        "max": 3,
+                        "step": 0.05,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                },
+                "minimumRoleLevel": 90,
+                "categories": [
+                    "Appearance"
+                ]
+            },
+            {
+                "key": "raysAlpha",
+                "option": {
+                    "label": "Ray Alpha",
+                    "type": "numberInput",
+                    "defaultValue": 0.5,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 1,
+                        "step": 0.01,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                },
+                "minimumRoleLevel": 90,
+                "categories": [
+                    "Appearance"
+                ]
+            },
+            {
+                "key": "raysAdditive",
+                "option": {
+                    "label": "Use Additive Blend Mode",
+                    "type": "select",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "minimumRoleLevel": 90,
+                "categories": [
+                    "Appearance"
+                ]
+            },
+            {
+                "key": "soundEnabled",
+                "option": {
+                    "label": "Sound Enabled",
+                    "type": "select",
+                    "description": "Play a sound effect when the item is purchased",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "Appearance"
+                ]
+            },
+            {
+                "key": "showShadow",
+                "option": {
+                    "label": "Cast Shadow",
+                    "type": "select",
+                    "description": "Does the vending machine cast a shadow?",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "value": "visibleInGame",
+                                "compare": "EQUAL",
+                                "key": "false"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "Appearance"
+                ]
+            },
+            {
+                "key": "width",
+                "option": {
+                    "label": "Width",
+                    "type": "numberInput",
+                    "defaultValue": 250,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 250,
+                        "max": 750,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            },
+            {
+                "key": "height",
+                "option": {
+                    "label": "Height",
+                    "type": "numberInput",
+                    "defaultValue": 250,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 250,
+                        "max": 750,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            },
+            {
+                "key": "radius",
+                "option": {
+                    "label": "InteractionRadius",
+                    "type": "numberInput",
+                    "defaultValue": 100,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 50,
+                        "max": 200,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            }
+        ]
+    },
+    "defaultState": {
+        "active": false,
+        "currentStock": 0,
+        "fundedAmount": 0,
+        "cost": 0
+    },
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "out": {
+            "connections": [
+                {
+                    "id": "itemPurchased",
+                    "name": "Item purchased"
+                },
+                {
+                    "id": "activated",
+                    "name": "Machine activated"
+                },
+                {
+                    "id": "deactivated",
+                    "name": "Machine deactivated"
+                },
+                {
+                    "id": "purchasedFailed",
+                    "name": "Attempt to purchase fails"
+                }
+            ]
+        },
+        "in": {
+            "connections": [
+                {
+                    "id": "attemptToPurchase",
+                    "name": "Attempt to purchase"
+                },
+                {
+                    "id": "activate",
+                    "name": "Activate machine"
+                },
+                {
+                    "id": "deactivate",
+                    "name": "Deactivate machine"
+                }
+            ]
+        }
+    },
     "initialMemoryCost": 125,
     "subsequentMemoryCost": 125
 }

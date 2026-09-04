@@ -2,10 +2,386 @@
     "id": "textBillboard",
     "name": "Text",
     "description": "Place down text with your content & style",
-    "optionSchema": "{\"categories\":{\"categories\":[{\"id\":\"featured\",\"name\":\"Featured\"},{\"id\":\"appearance\",\"name\":\"Appearance\"},{\"id\":\"availability\",\"name\":\"Availability\"}],\"showAllOptionsAt\":\"end\"},\"options\":[{\"key\":\"text\",\"option\":{\"label\":\"Text\",\"description\":\"Set the text to display\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Enter text here...\",\"textArea\":true,\"maxLength\":256}},\"categories\":[\"featured\"]},{\"key\":\"fontSize\",\"option\":{\"label\":\"Text Size\",\"description\":\"Set the font size\",\"type\":\"numberInput\",\"defaultValue\":22,\"validators\":[null],\"props\":{\"min\":6,\"max\":144,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}},\"categories\":[\"featured\",\"appearance\"]},{\"key\":\"scope\",\"option\":{\"label\":\"Content Scope\",\"type\":\"select\",\"defaultValue\":\"global\",\"validators\":[null],\"props\":{\"options\":[{\"value\":\"global\",\"name\":\"global\"},{\"value\":\"player\",\"name\":\"player\"},{\"value\":\"team\",\"name\":\"team\"}],\"allowEmpty\":false},\"description\":\"When the content of the text changes, who does it apply to?\"},\"categories\":[\"featured\"]},{\"key\":\"googleFont\",\"option\":{\"label\":\"Font\",\"description\":\"Select the font for the text\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"Rubik\",\"props\":{\"options\":[{\"value\":\"Rubik\",\"name\":\"Rubik\"},{\"value\":\"Roboto\",\"name\":\"Roboto\"},{\"value\":\"Staatliches\",\"name\":\"Staatliches\"},{\"value\":\"Galindo\",\"name\":\"Galindo\"},{\"value\":\"Kalam\",\"name\":\"Kalam\"},{\"value\":\"Bangers\",\"name\":\"Bangers\"},{\"value\":\"Fugaz One\",\"name\":\"Fugaz One\"},{\"value\":\"Outfit\",\"name\":\"Outfit\"},{\"value\":\"PT Mono\",\"name\":\"PT Mono\"},{\"value\":\"Space Grotesk\",\"name\":\"Space Grotesk\"},{\"value\":\"Lobster\",\"name\":\"Lobster\"},{\"value\":\"Zeyada\",\"name\":\"Zeyada\"},{\"value\":\"Titan One\",\"name\":\"Titan One\"},{\"value\":\"Rye\",\"name\":\"Rye\"},{\"value\":\"Caprasimo\",\"name\":\"Caprasimo\"}],\"allowEmpty\":false}},\"categories\":[\"appearance\"]},{\"key\":\"color\",\"option\":{\"label\":\"Text Color\",\"type\":\"color\",\"defaultValue\":\"#000000\",\"validators\":[null]},\"categories\":[\"appearance\"]},{\"key\":\"alpha\",\"option\":{\"label\":\"Alpha\",\"description\":\"Set the transparency of the text. 1 is fully visible, 0 is invisible.\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":0.2,\"max\":1,\"step\":0.01,\"allowEmpty\":false,\"useSlider\":false}},\"categories\":[\"appearance\"]},{\"key\":\"strokeThickness\",\"option\":{\"label\":\"Stroke Width\",\"description\":\"Add a stroke traced around each letter\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"min\":0,\"max\":36,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}},\"categories\":[\"appearance\"]},{\"key\":\"strokeColor\",\"option\":{\"label\":\"Stroke Color\",\"description\":\"The color of the stroke around each letter\",\"type\":\"color\",\"defaultValue\":\"#FFFFFF\",\"validators\":[null],\"hideIf\":[[{\"key\":\"strokeThickness\",\"compare\":\"EQUAL\",\"value\":0}]]},\"categories\":[\"appearance\"]},{\"key\":\"rotation\",\"option\":{\"label\":\"Rotation\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"min\":-360,\"max\":360,\"allowEmpty\":false,\"useSlider\":false},\"hidden\":true}},{\"key\":\"visibleOnGameStart\",\"option\":{\"label\":\"Visible On Game Start\",\"description\":\"Should the text be visible when the game starts?\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"Yes\",\"props\":{\"options\":[{\"value\":\"Yes\",\"name\":\"Yes\"},{\"value\":\"No\",\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"availability\"]},{\"key\":\"showWhenReceivingFrom\",\"option\":{\"label\":\"Show text when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Show the text when the device receives a signal from the selected channel\"},\"categories\":[\"availability\"]},{\"key\":\"hideWhenReceivingFrom\",\"option\":{\"label\":\"Hide text when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Hide the text when the device receives a signal from the selected channel\"},\"categories\":[\"availability\"]}]}",
-    "defaultState": "{\"text\":\"\",\"textColor\":\"\",\"visible\":true}",
-    "codeGridSchema": "{\"allowChannelGrids\":true,\"triggers\":[{\"type\":\"wire\",\"name\":\"On wire pulse...\"}],\"customBlocks\":[\"set_billboard_text\",\"set_text_color\"]}",
-    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"show\",\"name\":\"Show text\"},{\"id\":\"hide\",\"name\":\"Hide text\"},{\"id\":\"codeGrid\",\"name\":\"Run wire pulse block\"}]}}",
+    "optionSchema": {
+        "categories": {
+            "categories": [
+                {
+                    "id": "featured",
+                    "name": "Featured"
+                },
+                {
+                    "id": "appearance",
+                    "name": "Appearance"
+                },
+                {
+                    "id": "availability",
+                    "name": "Availability"
+                }
+            ],
+            "showAllOptionsAt": "end"
+        },
+        "options": [
+            {
+                "key": "text",
+                "option": {
+                    "label": "Text",
+                    "description": "Set the text to display",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Enter text here...",
+                        "textArea": true,
+                        "maxLength": 256
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "fontSize",
+                "option": {
+                    "label": "Text Size",
+                    "description": "Set the font size",
+                    "type": "numberInput",
+                    "defaultValue": 22,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 6,
+                        "max": 144,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                },
+                "categories": [
+                    "featured",
+                    "appearance"
+                ]
+            },
+            {
+                "key": "scope",
+                "option": {
+                    "label": "Content Scope",
+                    "type": "select",
+                    "defaultValue": "global",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": "global",
+                                "name": "global"
+                            },
+                            {
+                                "value": "player",
+                                "name": "player"
+                            },
+                            {
+                                "value": "team",
+                                "name": "team"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "description": "When the content of the text changes, who does it apply to?"
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "googleFont",
+                "option": {
+                    "label": "Font",
+                    "description": "Select the font for the text",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "Rubik",
+                    "props": {
+                        "options": [
+                            {
+                                "value": "Rubik",
+                                "name": "Rubik"
+                            },
+                            {
+                                "value": "Roboto",
+                                "name": "Roboto"
+                            },
+                            {
+                                "value": "Staatliches",
+                                "name": "Staatliches"
+                            },
+                            {
+                                "value": "Galindo",
+                                "name": "Galindo"
+                            },
+                            {
+                                "value": "Kalam",
+                                "name": "Kalam"
+                            },
+                            {
+                                "value": "Bangers",
+                                "name": "Bangers"
+                            },
+                            {
+                                "value": "Fugaz One",
+                                "name": "Fugaz One"
+                            },
+                            {
+                                "value": "Outfit",
+                                "name": "Outfit"
+                            },
+                            {
+                                "value": "PT Mono",
+                                "name": "PT Mono"
+                            },
+                            {
+                                "value": "Space Grotesk",
+                                "name": "Space Grotesk"
+                            },
+                            {
+                                "value": "Lobster",
+                                "name": "Lobster"
+                            },
+                            {
+                                "value": "Zeyada",
+                                "name": "Zeyada"
+                            },
+                            {
+                                "value": "Titan One",
+                                "name": "Titan One"
+                            },
+                            {
+                                "value": "Rye",
+                                "name": "Rye"
+                            },
+                            {
+                                "value": "Caprasimo",
+                                "name": "Caprasimo"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "appearance"
+                ]
+            },
+            {
+                "key": "color",
+                "option": {
+                    "label": "Text Color",
+                    "type": "color",
+                    "defaultValue": "#000000",
+                    "validators": [
+                        null
+                    ]
+                },
+                "categories": [
+                    "appearance"
+                ]
+            },
+            {
+                "key": "alpha",
+                "option": {
+                    "label": "Alpha",
+                    "description": "Set the transparency of the text. 1 is fully visible, 0 is invisible.",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0.2,
+                        "max": 1,
+                        "step": 0.01,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                },
+                "categories": [
+                    "appearance"
+                ]
+            },
+            {
+                "key": "strokeThickness",
+                "option": {
+                    "label": "Stroke Width",
+                    "description": "Add a stroke traced around each letter",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 36,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                },
+                "categories": [
+                    "appearance"
+                ]
+            },
+            {
+                "key": "strokeColor",
+                "option": {
+                    "label": "Stroke Color",
+                    "description": "The color of the stroke around each letter",
+                    "type": "color",
+                    "defaultValue": "#FFFFFF",
+                    "validators": [
+                        null
+                    ],
+                    "hideIf": [
+                        [
+                            {
+                                "key": "strokeThickness",
+                                "compare": "EQUAL",
+                                "value": 0
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "appearance"
+                ]
+            },
+            {
+                "key": "rotation",
+                "option": {
+                    "label": "Rotation",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": -360,
+                        "max": 360,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            },
+            {
+                "key": "visibleOnGameStart",
+                "option": {
+                    "label": "Visible On Game Start",
+                    "description": "Should the text be visible when the game starts?",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "Yes",
+                    "props": {
+                        "options": [
+                            {
+                                "value": "Yes",
+                                "name": "Yes"
+                            },
+                            {
+                                "value": "No",
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "availability"
+                ]
+            },
+            {
+                "key": "showWhenReceivingFrom",
+                "option": {
+                    "label": "Show text when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Show the text when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "availability"
+                ]
+            },
+            {
+                "key": "hideWhenReceivingFrom",
+                "option": {
+                    "label": "Hide text when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Hide the text when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "availability"
+                ]
+            }
+        ]
+    },
+    "defaultState": {
+        "text": "",
+        "textColor": "",
+        "visible": true
+    },
+    "codeGridSchema": {
+        "allowChannelGrids": true,
+        "triggers": [
+            {
+                "type": "wire",
+                "name": "On wire pulse..."
+            }
+        ],
+        "customBlocks": [
+            "set_billboard_text",
+            "set_text_color"
+        ]
+    },
+    "wireConfig": {
+        "in": {
+            "connections": [
+                {
+                    "id": "show",
+                    "name": "Show text"
+                },
+                {
+                    "id": "hide",
+                    "name": "Hide text"
+                },
+                {
+                    "id": "codeGrid",
+                    "name": "Run wire pulse block"
+                }
+            ]
+        }
+    },
     "maxOnMap": 400,
     "initialMemoryCost": 60,
     "subsequentMemoryCost": 60

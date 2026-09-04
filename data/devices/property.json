@@ -2,9 +2,233 @@
     "id": "property",
     "name": "Property",
     "description": "Core device to store data used in blocks",
-    "optionSchema": "{\"options\":[{\"key\":\"propertyName\",\"option\":{\"label\":\"Property Name\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Property...\",\"category\":\"property\",\"maxLength\":64},\"description\":\"Provide a unique name for this property\"}},{\"key\":\"valueType\",\"option\":{\"label\":\"Property Type\",\"description\":\"Select a data type for this property\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"string\",\"props\":{\"options\":[{\"name\":\"Text\",\"value\":\"string\"},{\"name\":\"Number\",\"value\":\"number\"},{\"name\":\"True/False\",\"value\":\"boolean\"}],\"allowEmpty\":false}}},{\"key\":\"defaultValueText\",\"option\":{\"label\":\"Default Value\",\"description\":\"The default value for this property\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\",\"maxLength\":256},\"hideIf\":[[{\"key\":\"valueType\",\"compare\":\"NOT_EQUAL\",\"value\":\"string\"}]]}},{\"key\":\"defaultValueNumber\",\"option\":{\"label\":\"Default Value\",\"description\":\"The default value for this property\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"min\":-99999999999,\"max\":99999999999,\"step\":1,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"valueType\",\"compare\":\"NOT_EQUAL\",\"value\":\"number\"}]]}},{\"key\":\"defaultValueBoolean\",\"option\":{\"label\":\"Default Value\",\"description\":\"The default value for this property\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":true,\"props\":{\"options\":[{\"name\":\"True\",\"value\":true},{\"name\":\"False\",\"value\":false}],\"allowEmpty\":false},\"hideIf\":[[{\"key\":\"valueType\",\"compare\":\"NOT_EQUAL\",\"value\":\"boolean\"}]]}},{\"key\":\"propertyType\",\"option\":{\"label\":\"Property Scope\",\"type\":\"select\",\"defaultValue\":\"global\",\"validators\":[null],\"props\":{\"options\":[{\"value\":\"global\",\"name\":\"global\"},{\"value\":\"player\",\"name\":\"player\"},{\"value\":\"team\",\"name\":\"team\"}],\"allowEmpty\":false},\"description\":\"When this property is updated, the value is applied to who?\"}},{\"key\":\"whenValueChangesBroadcastOnChannel\",\"option\":{\"label\":\"When property value changes, transmit on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"When the value of the property changes, the device sends a signal on the selected channel\"}},{\"key\":\"broadcastValueChangesOnGameStart\",\"option\":{\"label\":\"Broadcast value change on game start\",\"type\":\"select\",\"description\":\"When the game begins, should the property be marked as changed?\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}}]}",
-    "defaultState": "{\"valueNumber\":0,\"valueString\":\"\",\"valueBoolean\":false}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"out\":{\"connections\":[{\"id\":\"triggered\",\"name\":\"Property value changed\"}]}}",
+    "optionSchema": {
+        "options": [
+            {
+                "key": "propertyName",
+                "option": {
+                    "label": "Property Name",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Property...",
+                        "category": "property",
+                        "maxLength": 64
+                    },
+                    "description": "Provide a unique name for this property"
+                }
+            },
+            {
+                "key": "valueType",
+                "option": {
+                    "label": "Property Type",
+                    "description": "Select a data type for this property",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "string",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Text",
+                                "value": "string"
+                            },
+                            {
+                                "name": "Number",
+                                "value": "number"
+                            },
+                            {
+                                "name": "True/False",
+                                "value": "boolean"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "defaultValueText",
+                "option": {
+                    "label": "Default Value",
+                    "description": "The default value for this property",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here...",
+                        "maxLength": 256
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "valueType",
+                                "compare": "NOT_EQUAL",
+                                "value": "string"
+                            }
+                        ]
+                    ]
+                }
+            },
+            {
+                "key": "defaultValueNumber",
+                "option": {
+                    "label": "Default Value",
+                    "description": "The default value for this property",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": -99999999999,
+                        "max": 99999999999,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "valueType",
+                                "compare": "NOT_EQUAL",
+                                "value": "number"
+                            }
+                        ]
+                    ]
+                }
+            },
+            {
+                "key": "defaultValueBoolean",
+                "option": {
+                    "label": "Default Value",
+                    "description": "The default value for this property",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": true,
+                    "props": {
+                        "options": [
+                            {
+                                "name": "True",
+                                "value": true
+                            },
+                            {
+                                "name": "False",
+                                "value": false
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "valueType",
+                                "compare": "NOT_EQUAL",
+                                "value": "boolean"
+                            }
+                        ]
+                    ]
+                }
+            },
+            {
+                "key": "propertyType",
+                "option": {
+                    "label": "Property Scope",
+                    "type": "select",
+                    "defaultValue": "global",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": "global",
+                                "name": "global"
+                            },
+                            {
+                                "value": "player",
+                                "name": "player"
+                            },
+                            {
+                                "value": "team",
+                                "name": "team"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "description": "When this property is updated, the value is applied to who?"
+                }
+            },
+            {
+                "key": "whenValueChangesBroadcastOnChannel",
+                "option": {
+                    "label": "When property value changes, transmit on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "When the value of the property changes, the device sends a signal on the selected channel"
+                }
+            },
+            {
+                "key": "broadcastValueChangesOnGameStart",
+                "option": {
+                    "label": "Broadcast value change on game start",
+                    "type": "select",
+                    "description": "When the game begins, should the property be marked as changed?",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            }
+        ]
+    },
+    "defaultState": {
+        "valueNumber": 0,
+        "valueString": "",
+        "valueBoolean": false
+    },
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "out": {
+            "connections": [
+                {
+                    "id": "triggered",
+                    "name": "Property value changed"
+                }
+            ]
+        }
+    },
     "maxOnMap": 128
 }

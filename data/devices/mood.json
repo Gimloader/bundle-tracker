@@ -2,9 +2,147 @@
     "id": "mood",
     "name": "Mood",
     "description": "Apply effects & filters to the player's camera",
-    "optionSchema": "{\"options\":[{\"key\":\"useVignette\",\"option\":{\"label\":\"Use Vignette\",\"type\":\"select\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}},{\"key\":\"vignetteStrength\",\"option\":{\"label\":\"Vignette Strength\",\"type\":\"numberInput\",\"defaultValue\":50,\"validators\":[null],\"props\":{\"min\":0,\"max\":100,\"step\":1,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"useVignette\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]}},{\"key\":\"activeOnGameStart\",\"option\":{\"label\":\"Active On Game Start\",\"type\":\"select\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false},\"hideIf\":[[{\"key\":\"useVignette\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]}},{\"key\":\"activateChannel\",\"option\":{\"label\":\"Activate On Channel\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100}}},{\"key\":\"deactivateChannel\",\"option\":{\"label\":\"Deactivate On Channel\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100}}}]}",
-    "defaultState": "{\"active\":true}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"activate\",\"name\":\"Activate mood\"},{\"id\":\"deactivate\",\"name\":\"Deactivate mood\"}]}}",
+    "optionSchema": {
+        "options": [
+            {
+                "key": "useVignette",
+                "option": {
+                    "label": "Use Vignette",
+                    "type": "select",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "vignetteStrength",
+                "option": {
+                    "label": "Vignette Strength",
+                    "type": "numberInput",
+                    "defaultValue": 50,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 100,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "useVignette",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                }
+            },
+            {
+                "key": "activeOnGameStart",
+                "option": {
+                    "label": "Active On Game Start",
+                    "type": "select",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "useVignette",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                }
+            },
+            {
+                "key": "activateChannel",
+                "option": {
+                    "label": "Activate On Channel",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    }
+                }
+            },
+            {
+                "key": "deactivateChannel",
+                "option": {
+                    "label": "Deactivate On Channel",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    }
+                }
+            }
+        ]
+    },
+    "defaultState": {
+        "active": true
+    },
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "in": {
+            "connections": [
+                {
+                    "id": "activate",
+                    "name": "Activate mood"
+                },
+                {
+                    "id": "deactivate",
+                    "name": "Deactivate mood"
+                }
+            ]
+        }
+    },
     "minimumRoleLevel": 90
 }

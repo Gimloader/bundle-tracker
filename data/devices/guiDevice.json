@@ -2,10 +2,406 @@
     "id": "guiDevice",
     "name": "Game Overlay",
     "description": "Display text or a button on-screen for players during the game",
-    "optionSchema": "{\"categories\":{\"categories\":[{\"id\":\"featured\",\"name\":\"Featured\"},{\"id\":\"channels\",\"name\":\"Channels\"},{\"id\":\"scope\",\"name\":\"Scope\"}],\"showAllOptionsAt\":\"end\"},\"options\":[{\"key\":\"type\",\"option\":{\"label\":\"Overlay Type\",\"description\":\"Type of overlay to show\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"Text\",\"props\":{\"options\":[{\"name\":\"Text\",\"value\":\"Text\"},{\"name\":\"Button\",\"value\":\"Button\"},{\"name\":\"Tracked Item\",\"value\":\"Tracked Item\"}],\"allowEmpty\":false}},\"categories\":[\"featured\"]},{\"key\":\"position\",\"option\":{\"label\":\"Overlay Position\",\"description\":\"Which corner of the screen the overlay will appear in\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"Top Left\",\"props\":{\"options\":[{\"name\":\"Top Left\",\"value\":\"Top Left\"},{\"name\":\"Top Right\",\"value\":\"Top Right\"},{\"name\":\"Bottom Left\",\"value\":\"Bottom Left\"},{\"name\":\"Bottom Right\",\"value\":\"Bottom Right\"}],\"allowEmpty\":false}},\"categories\":[\"featured\"]},{\"key\":\"text\",\"option\":{\"label\":\"Overlay Text\",\"description\":\"The default text shown on the overlay\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\",\"maxLength\":64},\"hideIf\":[[{\"key\":\"type\",\"compare\":\"EQUAL\",\"value\":\"Tracked Item\"}]]},\"categories\":[\"featured\"]},{\"key\":\"trackedItemId\",\"option\":{\"label\":\"Tracked Item\",\"description\":\"The item & amount to show on the overlay\",\"type\":\"itemId\",\"validators\":[null],\"props\":{},\"hideIf\":[[{\"key\":\"type\",\"compare\":\"NOT_EQUAL\",\"value\":\"Tracked Item\"}]]},\"categories\":[\"featured\"]},{\"key\":\"showTrackedItemMaximumAmount\",\"option\":{\"label\":\"Show Tracked Item Maximum Amount\",\"type\":\"select\",\"description\":\"If enabled, the maximum amount of the tracked item will be shown (e.g: 70/100)\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false},\"hideIf\":[[{\"key\":\"type\",\"compare\":\"NOT_EQUAL\",\"value\":\"Tracked Item\"}]]}},{\"key\":\"whenButtonClickedTransmitOnChannel\",\"option\":{\"label\":\"When button clicked, transmit on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"When a player clicks the overlay button, the device sends a signal on the selected channel\",\"hideIf\":[[{\"key\":\"type\",\"compare\":\"NOT_EQUAL\",\"value\":\"Button\"}]]},\"categories\":[\"featured\",\"channels\"]},{\"key\":\"showOnGameStart\",\"option\":{\"label\":\"Visible On Game Start\",\"type\":\"select\",\"description\":\"Is the overlay visible when the game begins?\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"featured\"]},{\"key\":\"color\",\"option\":{\"label\":\"Overlay Color\",\"description\":\"Background color of the overlay\",\"type\":\"color\",\"defaultValue\":\"#ffffff\",\"validators\":[null],\"hideIf\":[[{\"key\":\"type\",\"compare\":\"EQUAL\",\"value\":\"Button\"}]]}},{\"key\":\"contentScope\",\"option\":{\"label\":\"Content Scope\",\"type\":\"select\",\"defaultValue\":\"global\",\"validators\":[null],\"props\":{\"options\":[{\"value\":\"global\",\"name\":\"global\"},{\"value\":\"player\",\"name\":\"player\"},{\"value\":\"team\",\"name\":\"team\"}],\"allowEmpty\":false},\"description\":\"When the overlay content is updated, who is it applied to?\",\"hideIf\":[[{\"key\":\"type\",\"compare\":\"EQUAL\",\"value\":\"Tracked Item\"}]]},\"categories\":[\"scope\"]},{\"key\":\"visibilityScope\",\"option\":{\"label\":\"Visibility Scope\",\"type\":\"select\",\"defaultValue\":\"global\",\"validators\":[null],\"props\":{\"options\":[{\"value\":\"global\",\"name\":\"global\"},{\"value\":\"player\",\"name\":\"player\"},{\"value\":\"team\",\"name\":\"team\"}],\"allowEmpty\":false},\"description\":\"When the overlay is shown/hidden, who does it apply to?\"},\"categories\":[\"scope\"]},{\"key\":\"showWhenReceivingFromChannel\",\"option\":{\"label\":\"Show overlay when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Show the overlay when the device receives a signal from the selected channel\"},\"categories\":[\"channels\"]},{\"key\":\"hideWhenReceivingFromChannel\",\"option\":{\"label\":\"Hide overlay when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Hide the overlay when the device receives a signal from the selected channel\"},\"categories\":[\"channels\"]}]}",
-    "defaultState": "{\"activationTime\":null,\"text\":\"\"}",
-    "codeGridSchema": "{\"allowChannelGrids\":true,\"triggers\":[],\"customBlocks\":[\"set_gui_text\"]}",
-    "wireConfig": "{\"out\":{\"connections\":[{\"id\":\"buttonPressed\",\"name\":\"Button pressed\"}]},\"in\":{\"connections\":[{\"id\":\"show\",\"name\":\"Show overlay\"},{\"id\":\"hide\",\"name\":\"Hide overlay\"}]}}",
+    "optionSchema": {
+        "categories": {
+            "categories": [
+                {
+                    "id": "featured",
+                    "name": "Featured"
+                },
+                {
+                    "id": "channels",
+                    "name": "Channels"
+                },
+                {
+                    "id": "scope",
+                    "name": "Scope"
+                }
+            ],
+            "showAllOptionsAt": "end"
+        },
+        "options": [
+            {
+                "key": "type",
+                "option": {
+                    "label": "Overlay Type",
+                    "description": "Type of overlay to show",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "Text",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Text",
+                                "value": "Text"
+                            },
+                            {
+                                "name": "Button",
+                                "value": "Button"
+                            },
+                            {
+                                "name": "Tracked Item",
+                                "value": "Tracked Item"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "position",
+                "option": {
+                    "label": "Overlay Position",
+                    "description": "Which corner of the screen the overlay will appear in",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "Top Left",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Top Left",
+                                "value": "Top Left"
+                            },
+                            {
+                                "name": "Top Right",
+                                "value": "Top Right"
+                            },
+                            {
+                                "name": "Bottom Left",
+                                "value": "Bottom Left"
+                            },
+                            {
+                                "name": "Bottom Right",
+                                "value": "Bottom Right"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "text",
+                "option": {
+                    "label": "Overlay Text",
+                    "description": "The default text shown on the overlay",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here...",
+                        "maxLength": 64
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "type",
+                                "compare": "EQUAL",
+                                "value": "Tracked Item"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "trackedItemId",
+                "option": {
+                    "label": "Tracked Item",
+                    "description": "The item & amount to show on the overlay",
+                    "type": "itemId",
+                    "validators": [
+                        null
+                    ],
+                    "props": {},
+                    "hideIf": [
+                        [
+                            {
+                                "key": "type",
+                                "compare": "NOT_EQUAL",
+                                "value": "Tracked Item"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "showTrackedItemMaximumAmount",
+                "option": {
+                    "label": "Show Tracked Item Maximum Amount",
+                    "type": "select",
+                    "description": "If enabled, the maximum amount of the tracked item will be shown (e.g: 70/100)",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "type",
+                                "compare": "NOT_EQUAL",
+                                "value": "Tracked Item"
+                            }
+                        ]
+                    ]
+                }
+            },
+            {
+                "key": "whenButtonClickedTransmitOnChannel",
+                "option": {
+                    "label": "When button clicked, transmit on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "When a player clicks the overlay button, the device sends a signal on the selected channel",
+                    "hideIf": [
+                        [
+                            {
+                                "key": "type",
+                                "compare": "NOT_EQUAL",
+                                "value": "Button"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "featured",
+                    "channels"
+                ]
+            },
+            {
+                "key": "showOnGameStart",
+                "option": {
+                    "label": "Visible On Game Start",
+                    "type": "select",
+                    "description": "Is the overlay visible when the game begins?",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "color",
+                "option": {
+                    "label": "Overlay Color",
+                    "description": "Background color of the overlay",
+                    "type": "color",
+                    "defaultValue": "#ffffff",
+                    "validators": [
+                        null
+                    ],
+                    "hideIf": [
+                        [
+                            {
+                                "key": "type",
+                                "compare": "EQUAL",
+                                "value": "Button"
+                            }
+                        ]
+                    ]
+                }
+            },
+            {
+                "key": "contentScope",
+                "option": {
+                    "label": "Content Scope",
+                    "type": "select",
+                    "defaultValue": "global",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": "global",
+                                "name": "global"
+                            },
+                            {
+                                "value": "player",
+                                "name": "player"
+                            },
+                            {
+                                "value": "team",
+                                "name": "team"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "description": "When the overlay content is updated, who is it applied to?",
+                    "hideIf": [
+                        [
+                            {
+                                "key": "type",
+                                "compare": "EQUAL",
+                                "value": "Tracked Item"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "scope"
+                ]
+            },
+            {
+                "key": "visibilityScope",
+                "option": {
+                    "label": "Visibility Scope",
+                    "type": "select",
+                    "defaultValue": "global",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": "global",
+                                "name": "global"
+                            },
+                            {
+                                "value": "player",
+                                "name": "player"
+                            },
+                            {
+                                "value": "team",
+                                "name": "team"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "description": "When the overlay is shown/hidden, who does it apply to?"
+                },
+                "categories": [
+                    "scope"
+                ]
+            },
+            {
+                "key": "showWhenReceivingFromChannel",
+                "option": {
+                    "label": "Show overlay when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Show the overlay when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "channels"
+                ]
+            },
+            {
+                "key": "hideWhenReceivingFromChannel",
+                "option": {
+                    "label": "Hide overlay when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Hide the overlay when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "channels"
+                ]
+            }
+        ]
+    },
+    "defaultState": {
+        "activationTime": null,
+        "text": ""
+    },
+    "codeGridSchema": {
+        "allowChannelGrids": true,
+        "triggers": [],
+        "customBlocks": [
+            "set_gui_text"
+        ]
+    },
+    "wireConfig": {
+        "out": {
+            "connections": [
+                {
+                    "id": "buttonPressed",
+                    "name": "Button pressed"
+                }
+            ]
+        },
+        "in": {
+            "connections": [
+                {
+                    "id": "show",
+                    "name": "Show overlay"
+                },
+                {
+                    "id": "hide",
+                    "name": "Hide overlay"
+                }
+            ]
+        }
+    },
     "maxOnMap": 32,
     "initialMemoryCost": 175,
     "subsequentMemoryCost": 175

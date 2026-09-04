@@ -2,10 +2,321 @@
     "id": "itemImage",
     "name": "Item Image",
     "description": "Display an image of an item on the map",
-    "optionSchema": "{\"categories\":{\"categories\":[{\"id\":\"featured\",\"name\":\"Featured\"},{\"id\":\"availability\",\"name\":\"Availability\"}],\"showAllOptionsAt\":\"end\"},\"options\":[{\"key\":\"itemId\",\"option\":{\"label\":\"Item\",\"description\":\"Select an item to display an image of\",\"type\":\"itemId\",\"validators\":[null],\"props\":{}},\"categories\":[\"featured\"]},{\"key\":\"outline\",\"option\":{\"label\":\"Outline\",\"type\":\"select\",\"description\":\"Show an outline around the item\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"featured\"]},{\"key\":\"outlineColor\",\"option\":{\"label\":\"Outline Color\",\"description\":\"Set the color of item's outline\",\"type\":\"color\",\"defaultValue\":\"#ffffff\",\"validators\":[null],\"hideIf\":[[{\"key\":\"outline\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]},\"categories\":[\"featured\"]},{\"key\":\"outlineSize\",\"option\":{\"label\":\"Outline Size\",\"description\":\"Select what strategy to use for the size of the outline\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"automatic\",\"props\":{\"options\":[{\"value\":\"automatic\",\"name\":\"Automatic\"},{\"value\":\"custom\",\"name\":\"Custom\"}],\"allowEmpty\":false},\"hideIf\":[[{\"key\":\"outline\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]},\"categories\":[\"featured\"]},{\"key\":\"customOutlineSize\",\"option\":{\"label\":\"Custom Outline Size\",\"description\":\"Set the size of the item outline\",\"type\":\"numberInput\",\"defaultValue\":3,\"validators\":[null],\"props\":{\"min\":1,\"max\":50,\"step\":1,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"outline\",\"compare\":\"NOT_EQUAL\",\"value\":true}],[{\"key\":\"outlineSize\",\"compare\":\"NOT_EQUAL\",\"value\":\"custom\"}]]},\"categories\":[\"featured\"]},{\"key\":\"visibleOnGameStart\",\"option\":{\"label\":\"Visible On Game Start\",\"type\":\"select\",\"description\":\"Is the item image visible when the game begins?\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"availability\"]},{\"key\":\"scope\",\"option\":{\"label\":\"Visibility Scope\",\"type\":\"select\",\"defaultValue\":\"global\",\"validators\":[null],\"props\":{\"options\":[{\"value\":\"global\",\"name\":\"global\"},{\"value\":\"player\",\"name\":\"player\"},{\"value\":\"team\",\"name\":\"team\"}],\"allowEmpty\":false},\"description\":\"When the item image is shown/hidden, who does it apply to?\"},\"categories\":[\"availability\"]},{\"key\":\"showChannel\",\"option\":{\"label\":\"Show when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Show the item image when the device receives a signal from the selected channel\"},\"categories\":[\"availability\"]},{\"key\":\"hideChannel\",\"option\":{\"label\":\"Hide when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Hide the item image when the device receives a signal from the selected channel\"},\"categories\":[\"availability\"]},{\"key\":\"size\",\"option\":{\"label\":\"Size\",\"type\":\"numberInput\",\"defaultValue\":64,\"validators\":[null],\"props\":{\"min\":32,\"max\":512,\"allowEmpty\":false,\"useSlider\":false},\"hidden\":true}},{\"key\":\"angle\",\"option\":{\"label\":\"Angle\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"allowEmpty\":false,\"useSlider\":false},\"hidden\":true}}]}",
-    "defaultState": "{\"visible\":true}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"show\",\"name\":\"Show item image\"},{\"id\":\"hide\",\"name\":\"Hide item image\"}]}}",
+    "optionSchema": {
+        "categories": {
+            "categories": [
+                {
+                    "id": "featured",
+                    "name": "Featured"
+                },
+                {
+                    "id": "availability",
+                    "name": "Availability"
+                }
+            ],
+            "showAllOptionsAt": "end"
+        },
+        "options": [
+            {
+                "key": "itemId",
+                "option": {
+                    "label": "Item",
+                    "description": "Select an item to display an image of",
+                    "type": "itemId",
+                    "validators": [
+                        null
+                    ],
+                    "props": {}
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "outline",
+                "option": {
+                    "label": "Outline",
+                    "type": "select",
+                    "description": "Show an outline around the item",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "outlineColor",
+                "option": {
+                    "label": "Outline Color",
+                    "description": "Set the color of item's outline",
+                    "type": "color",
+                    "defaultValue": "#ffffff",
+                    "validators": [
+                        null
+                    ],
+                    "hideIf": [
+                        [
+                            {
+                                "key": "outline",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "outlineSize",
+                "option": {
+                    "label": "Outline Size",
+                    "description": "Select what strategy to use for the size of the outline",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "automatic",
+                    "props": {
+                        "options": [
+                            {
+                                "value": "automatic",
+                                "name": "Automatic"
+                            },
+                            {
+                                "value": "custom",
+                                "name": "Custom"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "outline",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "customOutlineSize",
+                "option": {
+                    "label": "Custom Outline Size",
+                    "description": "Set the size of the item outline",
+                    "type": "numberInput",
+                    "defaultValue": 3,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 50,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "outline",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ],
+                        [
+                            {
+                                "key": "outlineSize",
+                                "compare": "NOT_EQUAL",
+                                "value": "custom"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "visibleOnGameStart",
+                "option": {
+                    "label": "Visible On Game Start",
+                    "type": "select",
+                    "description": "Is the item image visible when the game begins?",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "availability"
+                ]
+            },
+            {
+                "key": "scope",
+                "option": {
+                    "label": "Visibility Scope",
+                    "type": "select",
+                    "defaultValue": "global",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": "global",
+                                "name": "global"
+                            },
+                            {
+                                "value": "player",
+                                "name": "player"
+                            },
+                            {
+                                "value": "team",
+                                "name": "team"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "description": "When the item image is shown/hidden, who does it apply to?"
+                },
+                "categories": [
+                    "availability"
+                ]
+            },
+            {
+                "key": "showChannel",
+                "option": {
+                    "label": "Show when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Show the item image when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "availability"
+                ]
+            },
+            {
+                "key": "hideChannel",
+                "option": {
+                    "label": "Hide when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Hide the item image when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "availability"
+                ]
+            },
+            {
+                "key": "size",
+                "option": {
+                    "label": "Size",
+                    "type": "numberInput",
+                    "defaultValue": 64,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 32,
+                        "max": 512,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            },
+            {
+                "key": "angle",
+                "option": {
+                    "label": "Angle",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            }
+        ]
+    },
+    "defaultState": {
+        "visible": true
+    },
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "in": {
+            "connections": [
+                {
+                    "id": "show",
+                    "name": "Show item image"
+                },
+                {
+                    "id": "hide",
+                    "name": "Hide item image"
+                }
+            ]
+        }
+    },
     "maxOnMap": 1024,
     "initialMemoryCost": 15,
     "subsequentMemoryCost": 15

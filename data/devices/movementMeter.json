@@ -2,10 +2,443 @@
     "id": "movementMeter",
     "name": "Movement Meter",
     "description": "Require a player to have an item to move around",
-    "optionSchema": "{\"categories\":{\"categories\":[{\"id\":\"featured\",\"name\":\"Featured\"},{\"id\":\"waring\",\"name\":\"Warning\"},{\"id\":\"channels\",\"name\":\"Channels\"}],\"showAllOptionsAt\":\"end\"},\"options\":[{\"key\":\"itemToTrack\",\"option\":{\"label\":\"Tracked Item\",\"description\":\"The item tied to a player's movement speed\",\"type\":\"itemId\",\"validators\":[null],\"props\":{}},\"categories\":[\"featured\"]},{\"key\":\"drainAmount\",\"option\":{\"label\":\"Item Drain Per Tick\",\"description\":\"The amount of the tracked item to remove from the player's inventory\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":1,\"max\":1000000000,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}},\"categories\":[\"featured\"]},{\"key\":\"drainIntervalMs\",\"option\":{\"label\":\"Drain Interval\",\"description\":\"How often to drain the tracked item from the player's inventory\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":500,\"props\":{\"options\":[{\"value\":250,\"name\":\"Every 0.25 Seconds\"},{\"value\":500,\"name\":\"Every 0.5 Seconds\"},{\"value\":1000,\"name\":\"Every 1 Second\"}],\"allowEmpty\":false}},\"categories\":[\"featured\"]},{\"key\":\"showOutOfItemAlert\",\"option\":{\"label\":\"Show Out Of Item Alert\",\"type\":\"select\",\"description\":\"Show an alert when the player runs out of the tracked item\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"featured\"]},{\"key\":\"outOfItemAlertTitle\",\"option\":{\"label\":\"Out Of Item Alert Title\",\"description\":\"The title of the alert\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Out Of Energy!\",\"maxLength\":128},\"hideIf\":[[{\"key\":\"showOutOfItemAlert\",\"compare\":\"EQUAL\",\"value\":false}]]},\"categories\":[\"featured\"]},{\"key\":\"outOfItemAlertContent\",\"option\":{\"label\":\"Warning Alert Content\",\"description\":\"The content of the alert\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"You can't move!\",\"maxLength\":256},\"hideIf\":[[{\"key\":\"showOutOfItemAlert\",\"compare\":\"EQUAL\",\"value\":false}]]},\"categories\":[\"featured\"]},{\"key\":\"outOfItemChannel\",\"option\":{\"label\":\"When player runs out of tracked item, transmit on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"When the player runs out of the tracked item, the device sends a signal on the selected channel\"},\"categories\":[\"channels\"]},{\"key\":\"speedWhenOutOfItem\",\"option\":{\"label\":\"Player Speed When Out Of Tracked Item\",\"description\":\"When the player runs out of the tracked item, what should their speed be set to? 1 is default speed, 0.5 is half speed, 2 is double speed, etc.\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"min\":0,\"max\":4,\"step\":0.01,\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"useAsDefault\",\"option\":{\"label\":\"Use As Default\",\"type\":\"select\",\"description\":\"Use this Movement Meter for all players by default\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}},{\"key\":\"warningAmount\",\"option\":{\"label\":\"Warning Amount\",\"description\":\"Transmit when the player has reaches than this amount or less of the tracked item\",\"type\":\"numberInput\",\"defaultValue\":5,\"validators\":[null],\"props\":{\"min\":1,\"max\":1000000000,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}},\"categories\":[\"waring\"]},{\"key\":\"showWarningAlert\",\"option\":{\"label\":\"Show Warning Alert\",\"type\":\"select\",\"description\":\"Show an alert when the player reaches the warning amount\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"waring\"]},{\"key\":\"warningAlertTitle\",\"option\":{\"label\":\"Warning Alert Title\",\"description\":\"The title of the warning alert\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Low On Energy\",\"maxLength\":128},\"hideIf\":[[{\"key\":\"showWarningAlert\",\"compare\":\"EQUAL\",\"value\":false}]]},\"categories\":[\"waring\"]},{\"key\":\"warningAlertContent\",\"option\":{\"label\":\"Warning Alert Content\",\"description\":\"The content of the warning alert\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"You are running low on energy!\",\"maxLength\":256},\"hideIf\":[[{\"key\":\"showWarningAlert\",\"compare\":\"EQUAL\",\"value\":false}]]},\"categories\":[\"waring\"]},{\"key\":\"warningChannel\",\"option\":{\"label\":\"When warning amount reached, transmit on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"When the amount of the tracked item reaches the warning amount, the device sends a signal on the selected channel\"},\"categories\":[\"waring\",\"channels\"]},{\"key\":\"activateChannel\",\"option\":{\"label\":\"Activate when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Activate the movement meter when the device receives a signal from the selected channel\"},\"categories\":[\"channels\"]},{\"key\":\"deactivateChannel\",\"option\":{\"label\":\"Deactivate when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Deactivate the movement meter when the device receives a signal from the selected channel\"},\"categories\":[\"channels\"]}]}",
-    "defaultState": "{}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"activate\",\"name\":\"Activate Movement Meter\"},{\"id\":\"deactivate\",\"name\":\"Deactivate Movement Meter\"}]},\"out\":{\"connections\":[{\"id\":\"outOfResource\",\"name\":\"Player runs out of movement resource\"},{\"id\":\"warningReached\",\"name\":\"Player reaches warning amount of movement resource\"}]}}",
+    "optionSchema": {
+        "categories": {
+            "categories": [
+                {
+                    "id": "featured",
+                    "name": "Featured"
+                },
+                {
+                    "id": "waring",
+                    "name": "Warning"
+                },
+                {
+                    "id": "channels",
+                    "name": "Channels"
+                }
+            ],
+            "showAllOptionsAt": "end"
+        },
+        "options": [
+            {
+                "key": "itemToTrack",
+                "option": {
+                    "label": "Tracked Item",
+                    "description": "The item tied to a player's movement speed",
+                    "type": "itemId",
+                    "validators": [
+                        null
+                    ],
+                    "props": {}
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "drainAmount",
+                "option": {
+                    "label": "Item Drain Per Tick",
+                    "description": "The amount of the tracked item to remove from the player's inventory",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 1000000000,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "drainIntervalMs",
+                "option": {
+                    "label": "Drain Interval",
+                    "description": "How often to drain the tracked item from the player's inventory",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": 500,
+                    "props": {
+                        "options": [
+                            {
+                                "value": 250,
+                                "name": "Every 0.25 Seconds"
+                            },
+                            {
+                                "value": 500,
+                                "name": "Every 0.5 Seconds"
+                            },
+                            {
+                                "value": 1000,
+                                "name": "Every 1 Second"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "showOutOfItemAlert",
+                "option": {
+                    "label": "Show Out Of Item Alert",
+                    "type": "select",
+                    "description": "Show an alert when the player runs out of the tracked item",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "outOfItemAlertTitle",
+                "option": {
+                    "label": "Out Of Item Alert Title",
+                    "description": "The title of the alert",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Out Of Energy!",
+                        "maxLength": 128
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "showOutOfItemAlert",
+                                "compare": "EQUAL",
+                                "value": false
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "outOfItemAlertContent",
+                "option": {
+                    "label": "Warning Alert Content",
+                    "description": "The content of the alert",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "You can't move!",
+                        "maxLength": 256
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "showOutOfItemAlert",
+                                "compare": "EQUAL",
+                                "value": false
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "outOfItemChannel",
+                "option": {
+                    "label": "When player runs out of tracked item, transmit on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "When the player runs out of the tracked item, the device sends a signal on the selected channel"
+                },
+                "categories": [
+                    "channels"
+                ]
+            },
+            {
+                "key": "speedWhenOutOfItem",
+                "option": {
+                    "label": "Player Speed When Out Of Tracked Item",
+                    "description": "When the player runs out of the tracked item, what should their speed be set to? 1 is default speed, 0.5 is half speed, 2 is double speed, etc.",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 4,
+                        "step": 0.01,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            },
+            {
+                "key": "useAsDefault",
+                "option": {
+                    "label": "Use As Default",
+                    "type": "select",
+                    "description": "Use this Movement Meter for all players by default",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "warningAmount",
+                "option": {
+                    "label": "Warning Amount",
+                    "description": "Transmit when the player has reaches than this amount or less of the tracked item",
+                    "type": "numberInput",
+                    "defaultValue": 5,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 1000000000,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                },
+                "categories": [
+                    "waring"
+                ]
+            },
+            {
+                "key": "showWarningAlert",
+                "option": {
+                    "label": "Show Warning Alert",
+                    "type": "select",
+                    "description": "Show an alert when the player reaches the warning amount",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "waring"
+                ]
+            },
+            {
+                "key": "warningAlertTitle",
+                "option": {
+                    "label": "Warning Alert Title",
+                    "description": "The title of the warning alert",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Low On Energy",
+                        "maxLength": 128
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "showWarningAlert",
+                                "compare": "EQUAL",
+                                "value": false
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "waring"
+                ]
+            },
+            {
+                "key": "warningAlertContent",
+                "option": {
+                    "label": "Warning Alert Content",
+                    "description": "The content of the warning alert",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "You are running low on energy!",
+                        "maxLength": 256
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "showWarningAlert",
+                                "compare": "EQUAL",
+                                "value": false
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "waring"
+                ]
+            },
+            {
+                "key": "warningChannel",
+                "option": {
+                    "label": "When warning amount reached, transmit on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "When the amount of the tracked item reaches the warning amount, the device sends a signal on the selected channel"
+                },
+                "categories": [
+                    "waring",
+                    "channels"
+                ]
+            },
+            {
+                "key": "activateChannel",
+                "option": {
+                    "label": "Activate when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Activate the movement meter when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "channels"
+                ]
+            },
+            {
+                "key": "deactivateChannel",
+                "option": {
+                    "label": "Deactivate when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Deactivate the movement meter when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "channels"
+                ]
+            }
+        ]
+    },
+    "defaultState": {},
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "in": {
+            "connections": [
+                {
+                    "id": "activate",
+                    "name": "Activate Movement Meter"
+                },
+                {
+                    "id": "deactivate",
+                    "name": "Deactivate Movement Meter"
+                }
+            ]
+        },
+        "out": {
+            "connections": [
+                {
+                    "id": "outOfResource",
+                    "name": "Player runs out of movement resource"
+                },
+                {
+                    "id": "warningReached",
+                    "name": "Player reaches warning amount of movement resource"
+                }
+            ]
+        }
+    },
     "maxOnMap": 10,
     "initialMemoryCost": 400,
     "subsequentMemoryCost": 100

@@ -2,10 +2,109 @@
     "id": "lifecycle",
     "name": "Lifecycle",
     "description": "Run actions when lifecycle events occur in-game",
-    "optionSchema": "{\"options\":[{\"key\":\"event\",\"option\":{\"label\":\"Event\",\"description\":\"Event the device listens for\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"Game Starts\",\"props\":{\"options\":[{\"name\":\"Game Start\",\"value\":\"Game Starts\"},{\"name\":\"Player Starts Moving\",\"value\":\"characterStartsMoving\",\"minimumRoleLevel\":90},{\"name\":\"Player Stops Moving\",\"value\":\"characterStopsMoving\",\"minimumRoleLevel\":90},{\"name\":\"Player Joins Late\",\"value\":\"characterJoinsLate\"},{\"name\":\"Player Knocks Out\",\"value\":\"characterKnocksOut\"},{\"name\":\"Player Knocked Out\",\"value\":\"characterKnockedOut\"},{\"name\":\"Player Fires Gadget\",\"value\":\"characterFiresGadget\"},{\"name\":\"Player Destroys Terrain\",\"value\":\"characterDestroysTerrain\",\"minimumRoleLevel\":90},{\"name\":\"Player Places Terrain\",\"value\":\"characterPlacesTerrain\",\"minimumRoleLevel\":90},{\"name\":\"Player Captures Team's Color Tile\",\"value\":\"characterCapturesTeamColorTile\",\"minimumRoleLevel\":90},{\"name\":\"Game Ending\",\"value\":\"gameEnding\"}],\"allowEmpty\":false}}},{\"key\":\"transmitOnChannel\",\"option\":{\"label\":\"When event occurs, transmit on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"When when the event occurs, the device sends a signal on the selected channel\"}}]}",
-    "defaultState": "{}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"out\":{\"connections\":[{\"id\":\"eventOccurs\",\"name\":\"Event occurs\"}]}}",
+    "optionSchema": {
+        "options": [
+            {
+                "key": "event",
+                "option": {
+                    "label": "Event",
+                    "description": "Event the device listens for",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "Game Starts",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Game Start",
+                                "value": "Game Starts"
+                            },
+                            {
+                                "name": "Player Starts Moving",
+                                "value": "characterStartsMoving",
+                                "minimumRoleLevel": 90
+                            },
+                            {
+                                "name": "Player Stops Moving",
+                                "value": "characterStopsMoving",
+                                "minimumRoleLevel": 90
+                            },
+                            {
+                                "name": "Player Joins Late",
+                                "value": "characterJoinsLate"
+                            },
+                            {
+                                "name": "Player Knocks Out",
+                                "value": "characterKnocksOut"
+                            },
+                            {
+                                "name": "Player Knocked Out",
+                                "value": "characterKnockedOut"
+                            },
+                            {
+                                "name": "Player Fires Gadget",
+                                "value": "characterFiresGadget"
+                            },
+                            {
+                                "name": "Player Destroys Terrain",
+                                "value": "characterDestroysTerrain",
+                                "minimumRoleLevel": 90
+                            },
+                            {
+                                "name": "Player Places Terrain",
+                                "value": "characterPlacesTerrain",
+                                "minimumRoleLevel": 90
+                            },
+                            {
+                                "name": "Player Captures Team's Color Tile",
+                                "value": "characterCapturesTeamColorTile",
+                                "minimumRoleLevel": 90
+                            },
+                            {
+                                "name": "Game Ending",
+                                "value": "gameEnding"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "transmitOnChannel",
+                "option": {
+                    "label": "When event occurs, transmit on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "When when the event occurs, the device sends a signal on the selected channel"
+                }
+            }
+        ]
+    },
+    "defaultState": {},
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "out": {
+            "connections": [
+                {
+                    "id": "eventOccurs",
+                    "name": "Event occurs"
+                }
+            ]
+        }
+    },
     "maxOnMap": 16,
     "initialMemoryCost": 50,
     "subsequentMemoryCost": 50

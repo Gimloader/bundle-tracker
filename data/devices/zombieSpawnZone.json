@@ -2,10 +2,145 @@
     "id": "zombieSpawnZone",
     "name": "Zombie Spawn Zone",
     "description": "Area where Zombies can spawn.",
-    "optionSchema": "{\"options\":[{\"key\":\"activeOnStart\",\"option\":{\"label\":\"Active On Game Start\",\"type\":\"select\",\"description\":\"Is the zone active when the game starts?\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}},{\"key\":\"activateChannel\",\"option\":{\"label\":\"Activate zone when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Activate the zone when the device receives a signal from the selected channel\"}},{\"key\":\"deactivateChannel\",\"option\":{\"label\":\"Deactivate zone when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Deactivate the zone when the device receives a signal from the selected channel\"}},{\"key\":\"width\",\"option\":{\"label\":\"Width\",\"type\":\"numberInput\",\"defaultValue\":200,\"validators\":[null],\"props\":{\"min\":100,\"max\":2500,\"allowEmpty\":false,\"useSlider\":false},\"hidden\":true}},{\"key\":\"height\",\"option\":{\"label\":\"Height\",\"type\":\"numberInput\",\"defaultValue\":200,\"validators\":[null],\"props\":{\"min\":100,\"max\":2500,\"allowEmpty\":false,\"useSlider\":false},\"hidden\":true}},{\"key\":\"rotation\",\"option\":{\"label\":\"Rotation\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"min\":0,\"max\":360,\"allowEmpty\":false,\"useSlider\":false},\"hidden\":true}}]}",
-    "defaultState": "{\"active\":false}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"activate\",\"name\":\"Activate zone\"},{\"id\":\"deactivate\",\"name\":\"Deactivate zone\"}]}}",
+    "optionSchema": {
+        "options": [
+            {
+                "key": "activeOnStart",
+                "option": {
+                    "label": "Active On Game Start",
+                    "type": "select",
+                    "description": "Is the zone active when the game starts?",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "activateChannel",
+                "option": {
+                    "label": "Activate zone when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Activate the zone when the device receives a signal from the selected channel"
+                }
+            },
+            {
+                "key": "deactivateChannel",
+                "option": {
+                    "label": "Deactivate zone when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Deactivate the zone when the device receives a signal from the selected channel"
+                }
+            },
+            {
+                "key": "width",
+                "option": {
+                    "label": "Width",
+                    "type": "numberInput",
+                    "defaultValue": 200,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 100,
+                        "max": 2500,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            },
+            {
+                "key": "height",
+                "option": {
+                    "label": "Height",
+                    "type": "numberInput",
+                    "defaultValue": 200,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 100,
+                        "max": 2500,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            },
+            {
+                "key": "rotation",
+                "option": {
+                    "label": "Rotation",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 360,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            }
+        ]
+    },
+    "defaultState": {
+        "active": false
+    },
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "in": {
+            "connections": [
+                {
+                    "id": "activate",
+                    "name": "Activate zone"
+                },
+                {
+                    "id": "deactivate",
+                    "name": "Deactivate zone"
+                }
+            ]
+        }
+    },
     "minimumRoleLevel": 90,
     "maxOnMap": 512,
     "initialMemoryCost": 0,

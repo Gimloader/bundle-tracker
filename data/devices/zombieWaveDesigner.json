@@ -2,10 +2,90 @@
     "id": "zombieWaveDesigner",
     "name": "Zombie Wave Designer",
     "description": "Zombie Wave Designer.",
-    "optionSchema": "{\"options\":[{\"key\":\"waveNumber\",\"option\":{\"label\":\"Wave Number\",\"description\":\"The number of the wave\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"waveDuration\",\"option\":{\"label\":\"Wave Duration\",\"description\":\"The duration of the wave in seconds\",\"type\":\"numberInput\",\"defaultValue\":60,\"validators\":[null],\"props\":{\"min\":1,\"max\":6000,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"powerScore\",\"option\":{\"label\":\"Power Score\",\"description\":\"The power score of the wave\",\"type\":\"numberInput\",\"defaultValue\":1000,\"validators\":[null],\"props\":{\"min\":1,\"max\":999999999,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"powerScoreAdditionPerPlayer\",\"option\":{\"label\":\"Power Score Addition Per Player\",\"description\":\"The power score addition per player\",\"type\":\"numberInput\",\"defaultValue\":10,\"validators\":[null],\"props\":{\"min\":1,\"max\":999999,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}}}]}",
-    "defaultState": "{}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{}",
+    "optionSchema": {
+        "options": [
+            {
+                "key": "waveNumber",
+                "option": {
+                    "label": "Wave Number",
+                    "description": "The number of the wave",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            },
+            {
+                "key": "waveDuration",
+                "option": {
+                    "label": "Wave Duration",
+                    "description": "The duration of the wave in seconds",
+                    "type": "numberInput",
+                    "defaultValue": 60,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 6000,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            },
+            {
+                "key": "powerScore",
+                "option": {
+                    "label": "Power Score",
+                    "description": "The power score of the wave",
+                    "type": "numberInput",
+                    "defaultValue": 1000,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 999999999,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            },
+            {
+                "key": "powerScoreAdditionPerPlayer",
+                "option": {
+                    "label": "Power Score Addition Per Player",
+                    "description": "The power score addition per player",
+                    "type": "numberInput",
+                    "defaultValue": 10,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 999999,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            }
+        ]
+    },
+    "defaultState": {},
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {},
     "minimumRoleLevel": 90,
     "maxOnMap": 512,
     "initialMemoryCost": 0,

@@ -2,8 +2,153 @@
     "id": "startingInventory",
     "name": "Starting Inventory",
     "description": "Give players items when the game begins",
-    "optionSchema": "{\"options\":[{\"key\":\"itemId\",\"option\":{\"label\":\"Item To Grant\",\"description\":\"The item that will be granted to the player at the start of the game\",\"type\":\"itemId\",\"validators\":[null],\"props\":{}}},{\"key\":\"itemAmount\",\"option\":{\"label\":\"Granted Item Amount\",\"description\":\"The amount of the item that will be granted to the player at the start of the game\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":1,\"max\":999999999999999,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"equipOnGrant\",\"option\":{\"label\":\"Equip When Granted\",\"type\":\"select\",\"description\":\"If the item is a gadget or usable, should it be automatically equipped when granted?\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}},{\"key\":\"grantDuringPhase\",\"option\":{\"label\":\"Grant During Phase\",\"description\":\"The phase the player gets the item.\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"game\",\"props\":{\"options\":[{\"name\":\"All\",\"value\":\"all\"},{\"name\":\"Game\",\"value\":\"game\"},{\"name\":\"Pre-Game\",\"value\":\"preGame\"}],\"allowEmpty\":false}},\"minimumRoleLevel\":90},{\"key\":\"grantForSavedCharacters\",\"option\":{\"label\":\"Grant For Saved Players\",\"type\":\"select\",\"description\":\"Should the item still be granted for players that have a save? This could allow players to duplicate the item by loading in, leaving, and then rejoining.\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"minimumRoleLevel\":90},{\"key\":\"enabled\",\"option\":{\"label\":\"Enabled\",\"type\":\"select\",\"description\":\"If disabled, then this item will not be granted to the player.\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"minimumRoleLevel\":90}]}",
-    "defaultState": "{}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
+    "optionSchema": {
+        "options": [
+            {
+                "key": "itemId",
+                "option": {
+                    "label": "Item To Grant",
+                    "description": "The item that will be granted to the player at the start of the game",
+                    "type": "itemId",
+                    "validators": [
+                        null
+                    ],
+                    "props": {}
+                }
+            },
+            {
+                "key": "itemAmount",
+                "option": {
+                    "label": "Granted Item Amount",
+                    "description": "The amount of the item that will be granted to the player at the start of the game",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 999999999999999,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            },
+            {
+                "key": "equipOnGrant",
+                "option": {
+                    "label": "Equip When Granted",
+                    "type": "select",
+                    "description": "If the item is a gadget or usable, should it be automatically equipped when granted?",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "grantDuringPhase",
+                "option": {
+                    "label": "Grant During Phase",
+                    "description": "The phase the player gets the item.",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "game",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "All",
+                                "value": "all"
+                            },
+                            {
+                                "name": "Game",
+                                "value": "game"
+                            },
+                            {
+                                "name": "Pre-Game",
+                                "value": "preGame"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "minimumRoleLevel": 90
+            },
+            {
+                "key": "grantForSavedCharacters",
+                "option": {
+                    "label": "Grant For Saved Players",
+                    "type": "select",
+                    "description": "Should the item still be granted for players that have a save? This could allow players to duplicate the item by loading in, leaving, and then rejoining.",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "minimumRoleLevel": 90
+            },
+            {
+                "key": "enabled",
+                "option": {
+                    "label": "Enabled",
+                    "type": "select",
+                    "description": "If disabled, then this item will not be granted to the player.",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "minimumRoleLevel": 90
+            }
+        ]
+    },
+    "defaultState": {},
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
     "maxOnMap": 64
 }

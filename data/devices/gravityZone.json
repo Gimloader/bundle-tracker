@@ -2,10 +2,143 @@
     "id": "gravityZone",
     "name": "Gravity Zone",
     "description": "Changes the gravity for the player inside the zone.",
-    "optionSchema": "{\"categories\":{\"categories\":[{\"id\":\"Featured\",\"name\":\"Featured\"}],\"showAllOptionsAt\":\"end\"},\"options\":[{\"key\":\"visibleInGame\",\"option\":{\"label\":\"Visible In Game\",\"type\":\"select\",\"description\":\"Is the gravity zone visible to players during the game?\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"Featured\"]},{\"key\":\"color\",\"option\":{\"label\":\"Color\",\"description\":\"Set the color of the gravity zone.\",\"type\":\"color\",\"defaultValue\":\"#000000\",\"validators\":[null]},\"categories\":[\"Featured\"]},{\"key\":\"gravityMultiplier\",\"option\":{\"label\":\"Gravity Multiplier\",\"description\":\"Set the strength of the gravity in the zone. A value of 1 is normal gravity, less than 1 is weaker gravity, and greater than 1 is stronger gravity.\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":0.35,\"max\":2,\"step\":0.01,\"allowEmpty\":false,\"useSlider\":true}},\"categories\":[\"Featured\"]},{\"key\":\"width\",\"option\":{\"label\":\"Width\",\"type\":\"numberInput\",\"defaultValue\":200,\"validators\":[null],\"props\":{\"min\":100,\"max\":25000,\"allowEmpty\":false,\"useSlider\":false},\"hidden\":true}},{\"key\":\"height\",\"option\":{\"label\":\"Height\",\"type\":\"numberInput\",\"defaultValue\":200,\"validators\":[null],\"props\":{\"min\":100,\"max\":25000,\"allowEmpty\":false,\"useSlider\":false},\"hidden\":true}},{\"key\":\"rotation\",\"option\":{\"label\":\"Angle\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"allowEmpty\":false,\"useSlider\":false},\"hidden\":true}}]}",
-    "defaultState": "{}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{}",
+    "optionSchema": {
+        "categories": {
+            "categories": [
+                {
+                    "id": "Featured",
+                    "name": "Featured"
+                }
+            ],
+            "showAllOptionsAt": "end"
+        },
+        "options": [
+            {
+                "key": "visibleInGame",
+                "option": {
+                    "label": "Visible In Game",
+                    "type": "select",
+                    "description": "Is the gravity zone visible to players during the game?",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "Featured"
+                ]
+            },
+            {
+                "key": "color",
+                "option": {
+                    "label": "Color",
+                    "description": "Set the color of the gravity zone.",
+                    "type": "color",
+                    "defaultValue": "#000000",
+                    "validators": [
+                        null
+                    ]
+                },
+                "categories": [
+                    "Featured"
+                ]
+            },
+            {
+                "key": "gravityMultiplier",
+                "option": {
+                    "label": "Gravity Multiplier",
+                    "description": "Set the strength of the gravity in the zone. A value of 1 is normal gravity, less than 1 is weaker gravity, and greater than 1 is stronger gravity.",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0.35,
+                        "max": 2,
+                        "step": 0.01,
+                        "allowEmpty": false,
+                        "useSlider": true
+                    }
+                },
+                "categories": [
+                    "Featured"
+                ]
+            },
+            {
+                "key": "width",
+                "option": {
+                    "label": "Width",
+                    "type": "numberInput",
+                    "defaultValue": 200,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 100,
+                        "max": 25000,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            },
+            {
+                "key": "height",
+                "option": {
+                    "label": "Height",
+                    "type": "numberInput",
+                    "defaultValue": 200,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 100,
+                        "max": 25000,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            },
+            {
+                "key": "rotation",
+                "option": {
+                    "label": "Angle",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            }
+        ]
+    },
+    "defaultState": {},
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {},
     "minimumRoleLevel": 90,
     "maxOnMap": 64,
     "initialMemoryCost": 300,

@@ -2,9 +2,95 @@
     "id": "music",
     "name": "Music",
     "description": "Play music in the background",
-    "optionSchema": "{\"options\":[{\"key\":\"audioUrl\",\"option\":{\"label\":\"Audio URL\",\"type\":\"textInput\",\"defaultValue\":\"https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_1MG.mp3\",\"validators\":[null],\"props\":{\"placeholder\":\"Enter audio url here...\"}}},{\"key\":\"volume\",\"option\":{\"label\":\"Volume\",\"type\":\"numberInput\",\"defaultValue\":50,\"validators\":[null],\"props\":{\"min\":1,\"max\":50,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"playWhenReceivingFrom\",\"option\":{\"label\":\"Play When Receiving From...\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100}}},{\"key\":\"stopWhenReceivingFrom\",\"option\":{\"label\":\"Stop When Receiving From...\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100}}}]}",
-    "defaultState": "{\"currentState\":\"stopped\"}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"play\",\"name\":\"Play music\"},{\"id\":\"stop\",\"name\":\"Stop music\"}]}}",
+    "optionSchema": {
+        "options": [
+            {
+                "key": "audioUrl",
+                "option": {
+                    "label": "Audio URL",
+                    "type": "textInput",
+                    "defaultValue": "https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_1MG.mp3",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Enter audio url here..."
+                    }
+                }
+            },
+            {
+                "key": "volume",
+                "option": {
+                    "label": "Volume",
+                    "type": "numberInput",
+                    "defaultValue": 50,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 50,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            },
+            {
+                "key": "playWhenReceivingFrom",
+                "option": {
+                    "label": "Play When Receiving From...",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    }
+                }
+            },
+            {
+                "key": "stopWhenReceivingFrom",
+                "option": {
+                    "label": "Stop When Receiving From...",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    }
+                }
+            }
+        ]
+    },
+    "defaultState": {
+        "currentState": "stopped"
+    },
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "in": {
+            "connections": [
+                {
+                    "id": "play",
+                    "name": "Play music"
+                },
+                {
+                    "id": "stop",
+                    "name": "Stop music"
+                }
+            ]
+        }
+    },
     "minimumRoleLevel": 90
 }

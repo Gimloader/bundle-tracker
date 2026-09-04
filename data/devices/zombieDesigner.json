@@ -2,10 +2,1236 @@
     "id": "zombieDesigner",
     "name": "Zombie Designer",
     "description": "Zombie Designer",
-    "optionSchema": "{\"categories\":{\"categories\":[{\"id\":\"zombie\",\"name\":\"Zombie\"},{\"id\":\"featured\",\"name\":\"Featured\"},{\"id\":\"difficulty\",\"name\":\"Difficulty\"},{\"id\":\"health\",\"name\":\"Health\"},{\"id\":\"knockout\",\"name\":\"Knockout\"},{\"id\":\"channels\",\"name\":\"Channels\"}],\"showAllOptionsAt\":\"end\"},\"options\":[{\"key\":\"type\",\"option\":{\"label\":\"Type\",\"description\":\"The unique type id of the zombie class\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\",\"category\":\"zombieType\"}},\"categories\":[\"zombie\"]},{\"key\":\"skinId\",\"option\":{\"label\":\"Sentry Appearance\",\"description\":\"Change the appearance of the sentry\",\"type\":\"skinId\",\"defaultValue\":\"character_sentryRobot\",\"props\":{\"allowEmpty\":false},\"validators\":[null]},\"categories\":[\"featured\",\"zombie\"]},{\"key\":\"weapon\",\"option\":{\"label\":\"Gadget\",\"description\":\"The gadget the sentry will use to fire at players\",\"type\":\"itemId\",\"defaultValue\":\"zapper_common\",\"validators\":[null],\"props\":{\"blockedItems\":[\"pixel_common\",\"pixel_uncommon\",\"pixel_rare\",\"pixel_epic\",\"pixel_legendary\"],\"allowedItemsCategories\":[\"weapon\"]}},\"categories\":[\"featured\",\"zombie\"]},{\"key\":\"aimAccuracy\",\"option\":{\"label\":\"Aim Accuracy\",\"description\":\"Customize how accurate the sentry is when aiming at players\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":0.5,\"props\":{\"options\":[{\"name\":\"Very Low\",\"value\":0},{\"name\":\"Low\",\"value\":0.25},{\"name\":\"Medium\",\"value\":0.5},{\"name\":\"High\",\"value\":0.7},{\"name\":\"Very High\",\"value\":0.9},{\"name\":\"Max\",\"value\":1}],\"allowEmpty\":false}},\"categories\":[\"difficulty\",\"zombie\"]},{\"key\":\"fireRate\",\"option\":{\"label\":\"Fire Rate\",\"description\":\"How quickly does the sentry fire projectiles?\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":0.5,\"props\":{\"options\":[{\"name\":\"Super Slow\",\"value\":0},{\"name\":\"Very Slow\",\"value\":0.1},{\"name\":\"Slow\",\"value\":0.25},{\"name\":\"Medium\",\"value\":0.5},{\"name\":\"Fast\",\"value\":0.75},{\"name\":\"Very Fast\",\"value\":0.9},{\"name\":\"Fastest\",\"value\":1}],\"allowEmpty\":false}},\"categories\":[\"difficulty\",\"zombie\"]},{\"key\":\"damageMultiplier\",\"option\":{\"label\":\"Damage Multiplier\",\"description\":\"How much damage the sentry is causing?\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":0.01,\"max\":100,\"step\":0.01,\"allowEmpty\":false,\"useSlider\":false}},\"categories\":[\"difficulty\",\"zombie\"]},{\"key\":\"scale\",\"option\":{\"label\":\"Sentry Scale\",\"description\":\"How large is the sentry?\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":0.5,\"max\":2,\"step\":0.1,\"allowEmpty\":false,\"useSlider\":false}},\"categories\":[\"zombie\",\"difficulty\"]},{\"key\":\"randomScaleAddition\",\"option\":{\"label\":\"Random Scale Addition\",\"description\":\"Randomly add this amount from the scale\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"min\":0,\"max\":1.5,\"step\":0.01,\"allowEmpty\":false,\"useSlider\":false}},\"categories\":[\"zombie\",\"difficulty\"]},{\"key\":\"intention\",\"option\":{\"label\":\"Sentry Intention\",\"description\":\"What is the sentry's intention?\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"destroy\",\"props\":{\"options\":[{\"name\":\"Normal\",\"value\":\"normal\"},{\"name\":\"Destroy\",\"value\":\"destroy\"}],\"allowEmpty\":false}},\"supportedMapStyles\":[\"topDown\"],\"categories\":[\"zombie\"]},{\"key\":\"intentionMetadata\",\"option\":{\"label\":\"Intention Metadata\",\"description\":\"Extra information about the sentry's intention\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"...metadata\"}},\"supportedMapStyles\":[\"topDown\"]},{\"key\":\"runsFromObstacles\",\"option\":{\"label\":\"Run Away From Obstacles\",\"type\":\"select\",\"description\":\"If enabled, the sentry will try to avoid obstacles\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false},\"hideIf\":[[{\"key\":\"intention\",\"compare\":\"NOT_EQUAL\",\"value\":\"destroy\"}]]},\"supportedMapStyles\":[\"topDown\"],\"categories\":[\"zombie\"]},{\"key\":\"speed\",\"option\":{\"label\":\"Speed\",\"description\":\"Speed the sentry will move at. 0.5 is half of normal speed, 1 is a normal speed.\",\"type\":\"numberInput\",\"defaultValue\":0.25,\"validators\":[null],\"props\":{\"min\":0.01,\"max\":1,\"step\":0.01,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"intention\",\"compare\":\"NOT_EQUAL\",\"value\":\"destroy\"}]]},\"minimumRoleLevel\":90,\"supportedMapStyles\":[\"topDown\"],\"categories\":[\"zombie\",\"difficulty\"]},{\"key\":\"baseHealth\",\"option\":{\"label\":\"Sentry Health\",\"description\":\"How much health does the sentry have?\",\"type\":\"numberInput\",\"defaultValue\":100,\"validators\":[null],\"props\":{\"min\":1,\"max\":100000,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}},\"categories\":[\"featured\",\"health\",\"zombie\"]},{\"key\":\"baseShield\",\"option\":{\"label\":\"Sentry Shield\",\"description\":\"How much shield does the sentry have?\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"min\":0,\"max\":100000,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}},\"categories\":[\"health\"]},{\"key\":\"showHealthBar\",\"option\":{\"label\":\"Show Health Bar\",\"type\":\"select\",\"description\":\"Should the sentry show a health bar below it?\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"health\"]},{\"key\":\"useAdaptiveHealth\",\"option\":{\"label\":\"Use Adaptive Health\",\"type\":\"select\",\"description\":\"If enabled, the sentry will increase its health and shield based on the number of players in the game.\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"health\"]},{\"key\":\"adaptiveHealth\",\"option\":{\"label\":\"Adaptive Health Amount\",\"description\":\"How much health should the sentry gain per player?\",\"type\":\"numberInput\",\"defaultValue\":5,\"validators\":[null],\"props\":{\"min\":0,\"max\":10000,\"step\":1,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"useAdaptiveHealth\",\"compare\":\"EQUAL\",\"value\":false}]]},\"categories\":[\"health\"]},{\"key\":\"adaptiveShield\",\"option\":{\"label\":\"Adaptive Shield Amount\",\"description\":\"How much shield should the sentry gain per player?\",\"type\":\"numberInput\",\"defaultValue\":5,\"validators\":[null],\"props\":{\"min\":0,\"max\":10000,\"step\":1,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"useAdaptiveHealth\",\"compare\":\"EQUAL\",\"value\":false}]]},\"categories\":[\"health\"]},{\"key\":\"team\",\"option\":{\"label\":\"Sentry Team\",\"description\":\"Set the team the Sentry belongs to. The Sentry will not attack other players/sentries on the same team.\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"__SENTRY_TEAM\",\"props\":{\"options\":[{\"value\":\"__SENTRY_TEAM\",\"name\":\"Team Sentry\"},{\"name\":\"Team 1\",\"value\":\"1\"},{\"name\":\"Team 2\",\"value\":\"2\"},{\"name\":\"Team 3\",\"value\":\"3\"},{\"name\":\"Team 4\",\"value\":\"4\"},{\"name\":\"Team 5\",\"value\":\"5\"},{\"name\":\"Team 6\",\"value\":\"6\"},{\"name\":\"Team 7\",\"value\":\"7\"},{\"name\":\"Team 8\",\"value\":\"8\"},{\"name\":\"Team 9\",\"value\":\"9\"},{\"name\":\"Team 10\",\"value\":\"10\"},{\"name\":\"Team 11\",\"value\":\"11\"},{\"name\":\"Team 12\",\"value\":\"12\"},{\"name\":\"Team 13\",\"value\":\"13\"},{\"name\":\"Team 14\",\"value\":\"14\"},{\"name\":\"Team 15\",\"value\":\"15\"},{\"name\":\"Team 16\",\"value\":\"16\"},{\"name\":\"Team 17\",\"value\":\"17\"},{\"name\":\"Team 18\",\"value\":\"18\"},{\"name\":\"Team 19\",\"value\":\"19\"},{\"name\":\"Team 20\",\"value\":\"20\"},{\"name\":\"Team 21\",\"value\":\"21\"},{\"name\":\"Team 22\",\"value\":\"22\"},{\"name\":\"Team 23\",\"value\":\"23\"},{\"name\":\"Team 24\",\"value\":\"24\"},{\"name\":\"Team 25\",\"value\":\"25\"},{\"name\":\"Team 26\",\"value\":\"26\"},{\"name\":\"Team 27\",\"value\":\"27\"},{\"name\":\"Team 28\",\"value\":\"28\"},{\"name\":\"Team 29\",\"value\":\"29\"},{\"name\":\"Team 30\",\"value\":\"30\"},{\"name\":\"Team 31\",\"value\":\"31\"},{\"name\":\"Team 32\",\"value\":\"32\"},{\"name\":\"Team 33\",\"value\":\"33\"},{\"name\":\"Team 34\",\"value\":\"34\"},{\"name\":\"Team 35\",\"value\":\"35\"},{\"name\":\"Team 36\",\"value\":\"36\"},{\"name\":\"Team 37\",\"value\":\"37\"},{\"name\":\"Team 38\",\"value\":\"38\"},{\"name\":\"Team 39\",\"value\":\"39\"},{\"name\":\"Team 40\",\"value\":\"40\"},{\"name\":\"Team 41\",\"value\":\"41\"},{\"name\":\"Team 42\",\"value\":\"42\"},{\"name\":\"Team 43\",\"value\":\"43\"},{\"name\":\"Team 44\",\"value\":\"44\"},{\"name\":\"Team 45\",\"value\":\"45\"},{\"name\":\"Team 46\",\"value\":\"46\"},{\"name\":\"Team 47\",\"value\":\"47\"},{\"name\":\"Team 48\",\"value\":\"48\"},{\"name\":\"Team 49\",\"value\":\"49\"},{\"name\":\"Team 50\",\"value\":\"50\"},{\"name\":\"Team 51\",\"value\":\"51\"},{\"name\":\"Team 52\",\"value\":\"52\"},{\"name\":\"Team 53\",\"value\":\"53\"},{\"name\":\"Team 54\",\"value\":\"54\"},{\"name\":\"Team 55\",\"value\":\"55\"},{\"name\":\"Team 56\",\"value\":\"56\"},{\"name\":\"Team 57\",\"value\":\"57\"},{\"name\":\"Team 58\",\"value\":\"58\"},{\"name\":\"Team 59\",\"value\":\"59\"},{\"name\":\"Team 60\",\"value\":\"60\"}],\"allowEmpty\":false}},\"categories\":[\"featured\"]},{\"key\":\"doesRespawn\",\"option\":{\"label\":\"Respawn Enabled\",\"type\":\"select\",\"description\":\"Does the sentry respawn after getting knocked out?\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"featured\",\"difficulty\"]},{\"key\":\"respawnDurationSeconds\",\"option\":{\"label\":\"Respawn Duration (Seconds)\",\"description\":\"When knocked out, how many seconds does the sentry take to respawn?\",\"type\":\"numberInput\",\"defaultValue\":10,\"validators\":[null],\"props\":{\"min\":0,\"max\":600,\"step\":1,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"doesRespawn\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]},\"categories\":[\"featured\",\"difficulty\"]},{\"key\":\"characterName\",\"option\":{\"label\":\"Sentry Name\",\"description\":\"Set a custom name for this sentry, shown when a player causes it to get knocked out\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Sentry\",\"maxLength\":24}},\"categories\":[\"featured\",\"zombie\"]},{\"key\":\"rangeRadius\",\"option\":{\"label\":\"Range Radius\",\"description\":\"How far away can the sentry detect players?\",\"type\":\"numberInput\",\"defaultValue\":1000,\"validators\":[null],\"props\":{\"min\":250,\"max\":5000,\"step\":1,\"allowEmpty\":false,\"useSlider\":false},\"hidden\":true}},{\"key\":\"dropItem\",\"option\":{\"label\":\"Item Drop\",\"type\":\"select\",\"description\":\"Does this sentry drop an item when knocked out?\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"knockout\"]},{\"key\":\"itemId\",\"option\":{\"label\":\"Dropped Item\",\"description\":\"What item does this sentry drop when knocked out?\",\"type\":\"itemId\",\"validators\":[null],\"props\":{},\"hideIf\":[[{\"key\":\"dropItem\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]},\"categories\":[\"knockout\"]},{\"key\":\"itemAmount\",\"option\":{\"label\":\"Dropped Item Amount\",\"description\":\"How many of the item does this sentry drop when knocked out?\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":1,\"max\":999999999,\"step\":1,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"dropItem\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]},\"categories\":[\"knockout\"]},{\"key\":\"onKnockoutChannel\",\"option\":{\"label\":\"When sentry knocked out, transmit on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"When the sentry is knocked out, the device sends a signal on the selected channel\"},\"categories\":[\"knockout\",\"channels\"]},{\"key\":\"minimumWave\",\"option\":{\"label\":\"Minimum Wave\",\"description\":\"The minimum wave the sentry will spawn in\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":1,\"max\":100000,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}},\"categories\":[\"zombie\"]},{\"key\":\"maximumWave\",\"option\":{\"label\":\"Maximum Wave\",\"description\":\"The maximum wave the sentry will spawn in\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"min\":0,\"max\":10000,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}},\"categories\":[\"zombie\"]},{\"key\":\"defaultWeight\",\"option\":{\"label\":\"Default Weight\",\"description\":\"The default weight of the sentry\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":0,\"max\":100,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}},\"categories\":[\"zombie\"]},{\"key\":\"runsFromObstacles\",\"option\":{\"label\":\"Runs From Obstacles\",\"type\":\"select\",\"description\":\"The sentry will run from obstacles\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"zombie\"]},{\"key\":\"splits\",\"option\":{\"label\":\"Splits\",\"type\":\"select\",\"description\":\"The sentry will split into multiple sentries\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"zombie\"]},{\"key\":\"splitsAmount\",\"option\":{\"label\":\"Splits Amount\",\"description\":\"The amount of sentries the sentry will split into\",\"type\":\"numberInput\",\"defaultValue\":2,\"validators\":[null],\"props\":{\"min\":1,\"max\":100,\"step\":1,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"splits\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]},\"categories\":[\"zombie\"]},{\"key\":\"splitsType\",\"option\":{\"label\":\"Splits Type\",\"description\":\"The type of sentry the sentry will split into\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\",\"category\":\"zombieType\"},\"hideIf\":[[{\"key\":\"splits\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]},\"categories\":[\"zombie\"]},{\"key\":\"powerScore\",\"option\":{\"label\":\"Power Score\",\"description\":\"The power score of the sentry\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":1,\"max\":10000,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}},\"categories\":[\"zombie\"]}]}",
-    "defaultState": "{}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{}",
+    "optionSchema": {
+        "categories": {
+            "categories": [
+                {
+                    "id": "zombie",
+                    "name": "Zombie"
+                },
+                {
+                    "id": "featured",
+                    "name": "Featured"
+                },
+                {
+                    "id": "difficulty",
+                    "name": "Difficulty"
+                },
+                {
+                    "id": "health",
+                    "name": "Health"
+                },
+                {
+                    "id": "knockout",
+                    "name": "Knockout"
+                },
+                {
+                    "id": "channels",
+                    "name": "Channels"
+                }
+            ],
+            "showAllOptionsAt": "end"
+        },
+        "options": [
+            {
+                "key": "type",
+                "option": {
+                    "label": "Type",
+                    "description": "The unique type id of the zombie class",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here...",
+                        "category": "zombieType"
+                    }
+                },
+                "categories": [
+                    "zombie"
+                ]
+            },
+            {
+                "key": "skinId",
+                "option": {
+                    "label": "Sentry Appearance",
+                    "description": "Change the appearance of the sentry",
+                    "type": "skinId",
+                    "defaultValue": "character_sentryRobot",
+                    "props": {
+                        "allowEmpty": false
+                    },
+                    "validators": [
+                        null
+                    ]
+                },
+                "categories": [
+                    "featured",
+                    "zombie"
+                ]
+            },
+            {
+                "key": "weapon",
+                "option": {
+                    "label": "Gadget",
+                    "description": "The gadget the sentry will use to fire at players",
+                    "type": "itemId",
+                    "defaultValue": "zapper_common",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "blockedItems": [
+                            "pixel_common",
+                            "pixel_uncommon",
+                            "pixel_rare",
+                            "pixel_epic",
+                            "pixel_legendary"
+                        ],
+                        "allowedItemsCategories": [
+                            "weapon"
+                        ]
+                    }
+                },
+                "categories": [
+                    "featured",
+                    "zombie"
+                ]
+            },
+            {
+                "key": "aimAccuracy",
+                "option": {
+                    "label": "Aim Accuracy",
+                    "description": "Customize how accurate the sentry is when aiming at players",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": 0.5,
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Very Low",
+                                "value": 0
+                            },
+                            {
+                                "name": "Low",
+                                "value": 0.25
+                            },
+                            {
+                                "name": "Medium",
+                                "value": 0.5
+                            },
+                            {
+                                "name": "High",
+                                "value": 0.7
+                            },
+                            {
+                                "name": "Very High",
+                                "value": 0.9
+                            },
+                            {
+                                "name": "Max",
+                                "value": 1
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "difficulty",
+                    "zombie"
+                ]
+            },
+            {
+                "key": "fireRate",
+                "option": {
+                    "label": "Fire Rate",
+                    "description": "How quickly does the sentry fire projectiles?",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": 0.5,
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Super Slow",
+                                "value": 0
+                            },
+                            {
+                                "name": "Very Slow",
+                                "value": 0.1
+                            },
+                            {
+                                "name": "Slow",
+                                "value": 0.25
+                            },
+                            {
+                                "name": "Medium",
+                                "value": 0.5
+                            },
+                            {
+                                "name": "Fast",
+                                "value": 0.75
+                            },
+                            {
+                                "name": "Very Fast",
+                                "value": 0.9
+                            },
+                            {
+                                "name": "Fastest",
+                                "value": 1
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "difficulty",
+                    "zombie"
+                ]
+            },
+            {
+                "key": "damageMultiplier",
+                "option": {
+                    "label": "Damage Multiplier",
+                    "description": "How much damage the sentry is causing?",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0.01,
+                        "max": 100,
+                        "step": 0.01,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                },
+                "categories": [
+                    "difficulty",
+                    "zombie"
+                ]
+            },
+            {
+                "key": "scale",
+                "option": {
+                    "label": "Sentry Scale",
+                    "description": "How large is the sentry?",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0.5,
+                        "max": 2,
+                        "step": 0.1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                },
+                "categories": [
+                    "zombie",
+                    "difficulty"
+                ]
+            },
+            {
+                "key": "randomScaleAddition",
+                "option": {
+                    "label": "Random Scale Addition",
+                    "description": "Randomly add this amount from the scale",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 1.5,
+                        "step": 0.01,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                },
+                "categories": [
+                    "zombie",
+                    "difficulty"
+                ]
+            },
+            {
+                "key": "intention",
+                "option": {
+                    "label": "Sentry Intention",
+                    "description": "What is the sentry's intention?",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "destroy",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Normal",
+                                "value": "normal"
+                            },
+                            {
+                                "name": "Destroy",
+                                "value": "destroy"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "supportedMapStyles": [
+                    "topDown"
+                ],
+                "categories": [
+                    "zombie"
+                ]
+            },
+            {
+                "key": "intentionMetadata",
+                "option": {
+                    "label": "Intention Metadata",
+                    "description": "Extra information about the sentry's intention",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "...metadata"
+                    }
+                },
+                "supportedMapStyles": [
+                    "topDown"
+                ]
+            },
+            {
+                "key": "runsFromObstacles",
+                "option": {
+                    "label": "Run Away From Obstacles",
+                    "type": "select",
+                    "description": "If enabled, the sentry will try to avoid obstacles",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "intention",
+                                "compare": "NOT_EQUAL",
+                                "value": "destroy"
+                            }
+                        ]
+                    ]
+                },
+                "supportedMapStyles": [
+                    "topDown"
+                ],
+                "categories": [
+                    "zombie"
+                ]
+            },
+            {
+                "key": "speed",
+                "option": {
+                    "label": "Speed",
+                    "description": "Speed the sentry will move at. 0.5 is half of normal speed, 1 is a normal speed.",
+                    "type": "numberInput",
+                    "defaultValue": 0.25,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0.01,
+                        "max": 1,
+                        "step": 0.01,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "intention",
+                                "compare": "NOT_EQUAL",
+                                "value": "destroy"
+                            }
+                        ]
+                    ]
+                },
+                "minimumRoleLevel": 90,
+                "supportedMapStyles": [
+                    "topDown"
+                ],
+                "categories": [
+                    "zombie",
+                    "difficulty"
+                ]
+            },
+            {
+                "key": "baseHealth",
+                "option": {
+                    "label": "Sentry Health",
+                    "description": "How much health does the sentry have?",
+                    "type": "numberInput",
+                    "defaultValue": 100,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 100000,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                },
+                "categories": [
+                    "featured",
+                    "health",
+                    "zombie"
+                ]
+            },
+            {
+                "key": "baseShield",
+                "option": {
+                    "label": "Sentry Shield",
+                    "description": "How much shield does the sentry have?",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 100000,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                },
+                "categories": [
+                    "health"
+                ]
+            },
+            {
+                "key": "showHealthBar",
+                "option": {
+                    "label": "Show Health Bar",
+                    "type": "select",
+                    "description": "Should the sentry show a health bar below it?",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "health"
+                ]
+            },
+            {
+                "key": "useAdaptiveHealth",
+                "option": {
+                    "label": "Use Adaptive Health",
+                    "type": "select",
+                    "description": "If enabled, the sentry will increase its health and shield based on the number of players in the game.",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "health"
+                ]
+            },
+            {
+                "key": "adaptiveHealth",
+                "option": {
+                    "label": "Adaptive Health Amount",
+                    "description": "How much health should the sentry gain per player?",
+                    "type": "numberInput",
+                    "defaultValue": 5,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 10000,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "useAdaptiveHealth",
+                                "compare": "EQUAL",
+                                "value": false
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "health"
+                ]
+            },
+            {
+                "key": "adaptiveShield",
+                "option": {
+                    "label": "Adaptive Shield Amount",
+                    "description": "How much shield should the sentry gain per player?",
+                    "type": "numberInput",
+                    "defaultValue": 5,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 10000,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "useAdaptiveHealth",
+                                "compare": "EQUAL",
+                                "value": false
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "health"
+                ]
+            },
+            {
+                "key": "team",
+                "option": {
+                    "label": "Sentry Team",
+                    "description": "Set the team the Sentry belongs to. The Sentry will not attack other players/sentries on the same team.",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "__SENTRY_TEAM",
+                    "props": {
+                        "options": [
+                            {
+                                "value": "__SENTRY_TEAM",
+                                "name": "Team Sentry"
+                            },
+                            {
+                                "name": "Team 1",
+                                "value": "1"
+                            },
+                            {
+                                "name": "Team 2",
+                                "value": "2"
+                            },
+                            {
+                                "name": "Team 3",
+                                "value": "3"
+                            },
+                            {
+                                "name": "Team 4",
+                                "value": "4"
+                            },
+                            {
+                                "name": "Team 5",
+                                "value": "5"
+                            },
+                            {
+                                "name": "Team 6",
+                                "value": "6"
+                            },
+                            {
+                                "name": "Team 7",
+                                "value": "7"
+                            },
+                            {
+                                "name": "Team 8",
+                                "value": "8"
+                            },
+                            {
+                                "name": "Team 9",
+                                "value": "9"
+                            },
+                            {
+                                "name": "Team 10",
+                                "value": "10"
+                            },
+                            {
+                                "name": "Team 11",
+                                "value": "11"
+                            },
+                            {
+                                "name": "Team 12",
+                                "value": "12"
+                            },
+                            {
+                                "name": "Team 13",
+                                "value": "13"
+                            },
+                            {
+                                "name": "Team 14",
+                                "value": "14"
+                            },
+                            {
+                                "name": "Team 15",
+                                "value": "15"
+                            },
+                            {
+                                "name": "Team 16",
+                                "value": "16"
+                            },
+                            {
+                                "name": "Team 17",
+                                "value": "17"
+                            },
+                            {
+                                "name": "Team 18",
+                                "value": "18"
+                            },
+                            {
+                                "name": "Team 19",
+                                "value": "19"
+                            },
+                            {
+                                "name": "Team 20",
+                                "value": "20"
+                            },
+                            {
+                                "name": "Team 21",
+                                "value": "21"
+                            },
+                            {
+                                "name": "Team 22",
+                                "value": "22"
+                            },
+                            {
+                                "name": "Team 23",
+                                "value": "23"
+                            },
+                            {
+                                "name": "Team 24",
+                                "value": "24"
+                            },
+                            {
+                                "name": "Team 25",
+                                "value": "25"
+                            },
+                            {
+                                "name": "Team 26",
+                                "value": "26"
+                            },
+                            {
+                                "name": "Team 27",
+                                "value": "27"
+                            },
+                            {
+                                "name": "Team 28",
+                                "value": "28"
+                            },
+                            {
+                                "name": "Team 29",
+                                "value": "29"
+                            },
+                            {
+                                "name": "Team 30",
+                                "value": "30"
+                            },
+                            {
+                                "name": "Team 31",
+                                "value": "31"
+                            },
+                            {
+                                "name": "Team 32",
+                                "value": "32"
+                            },
+                            {
+                                "name": "Team 33",
+                                "value": "33"
+                            },
+                            {
+                                "name": "Team 34",
+                                "value": "34"
+                            },
+                            {
+                                "name": "Team 35",
+                                "value": "35"
+                            },
+                            {
+                                "name": "Team 36",
+                                "value": "36"
+                            },
+                            {
+                                "name": "Team 37",
+                                "value": "37"
+                            },
+                            {
+                                "name": "Team 38",
+                                "value": "38"
+                            },
+                            {
+                                "name": "Team 39",
+                                "value": "39"
+                            },
+                            {
+                                "name": "Team 40",
+                                "value": "40"
+                            },
+                            {
+                                "name": "Team 41",
+                                "value": "41"
+                            },
+                            {
+                                "name": "Team 42",
+                                "value": "42"
+                            },
+                            {
+                                "name": "Team 43",
+                                "value": "43"
+                            },
+                            {
+                                "name": "Team 44",
+                                "value": "44"
+                            },
+                            {
+                                "name": "Team 45",
+                                "value": "45"
+                            },
+                            {
+                                "name": "Team 46",
+                                "value": "46"
+                            },
+                            {
+                                "name": "Team 47",
+                                "value": "47"
+                            },
+                            {
+                                "name": "Team 48",
+                                "value": "48"
+                            },
+                            {
+                                "name": "Team 49",
+                                "value": "49"
+                            },
+                            {
+                                "name": "Team 50",
+                                "value": "50"
+                            },
+                            {
+                                "name": "Team 51",
+                                "value": "51"
+                            },
+                            {
+                                "name": "Team 52",
+                                "value": "52"
+                            },
+                            {
+                                "name": "Team 53",
+                                "value": "53"
+                            },
+                            {
+                                "name": "Team 54",
+                                "value": "54"
+                            },
+                            {
+                                "name": "Team 55",
+                                "value": "55"
+                            },
+                            {
+                                "name": "Team 56",
+                                "value": "56"
+                            },
+                            {
+                                "name": "Team 57",
+                                "value": "57"
+                            },
+                            {
+                                "name": "Team 58",
+                                "value": "58"
+                            },
+                            {
+                                "name": "Team 59",
+                                "value": "59"
+                            },
+                            {
+                                "name": "Team 60",
+                                "value": "60"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "doesRespawn",
+                "option": {
+                    "label": "Respawn Enabled",
+                    "type": "select",
+                    "description": "Does the sentry respawn after getting knocked out?",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured",
+                    "difficulty"
+                ]
+            },
+            {
+                "key": "respawnDurationSeconds",
+                "option": {
+                    "label": "Respawn Duration (Seconds)",
+                    "description": "When knocked out, how many seconds does the sentry take to respawn?",
+                    "type": "numberInput",
+                    "defaultValue": 10,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 600,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "doesRespawn",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "featured",
+                    "difficulty"
+                ]
+            },
+            {
+                "key": "characterName",
+                "option": {
+                    "label": "Sentry Name",
+                    "description": "Set a custom name for this sentry, shown when a player causes it to get knocked out",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Sentry",
+                        "maxLength": 24
+                    }
+                },
+                "categories": [
+                    "featured",
+                    "zombie"
+                ]
+            },
+            {
+                "key": "rangeRadius",
+                "option": {
+                    "label": "Range Radius",
+                    "description": "How far away can the sentry detect players?",
+                    "type": "numberInput",
+                    "defaultValue": 1000,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 250,
+                        "max": 5000,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            },
+            {
+                "key": "dropItem",
+                "option": {
+                    "label": "Item Drop",
+                    "type": "select",
+                    "description": "Does this sentry drop an item when knocked out?",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "knockout"
+                ]
+            },
+            {
+                "key": "itemId",
+                "option": {
+                    "label": "Dropped Item",
+                    "description": "What item does this sentry drop when knocked out?",
+                    "type": "itemId",
+                    "validators": [
+                        null
+                    ],
+                    "props": {},
+                    "hideIf": [
+                        [
+                            {
+                                "key": "dropItem",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "knockout"
+                ]
+            },
+            {
+                "key": "itemAmount",
+                "option": {
+                    "label": "Dropped Item Amount",
+                    "description": "How many of the item does this sentry drop when knocked out?",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 999999999,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "dropItem",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "knockout"
+                ]
+            },
+            {
+                "key": "onKnockoutChannel",
+                "option": {
+                    "label": "When sentry knocked out, transmit on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "When the sentry is knocked out, the device sends a signal on the selected channel"
+                },
+                "categories": [
+                    "knockout",
+                    "channels"
+                ]
+            },
+            {
+                "key": "minimumWave",
+                "option": {
+                    "label": "Minimum Wave",
+                    "description": "The minimum wave the sentry will spawn in",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 100000,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                },
+                "categories": [
+                    "zombie"
+                ]
+            },
+            {
+                "key": "maximumWave",
+                "option": {
+                    "label": "Maximum Wave",
+                    "description": "The maximum wave the sentry will spawn in",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 10000,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                },
+                "categories": [
+                    "zombie"
+                ]
+            },
+            {
+                "key": "defaultWeight",
+                "option": {
+                    "label": "Default Weight",
+                    "description": "The default weight of the sentry",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 100,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                },
+                "categories": [
+                    "zombie"
+                ]
+            },
+            {
+                "key": "runsFromObstacles",
+                "option": {
+                    "label": "Runs From Obstacles",
+                    "type": "select",
+                    "description": "The sentry will run from obstacles",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "zombie"
+                ]
+            },
+            {
+                "key": "splits",
+                "option": {
+                    "label": "Splits",
+                    "type": "select",
+                    "description": "The sentry will split into multiple sentries",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "zombie"
+                ]
+            },
+            {
+                "key": "splitsAmount",
+                "option": {
+                    "label": "Splits Amount",
+                    "description": "The amount of sentries the sentry will split into",
+                    "type": "numberInput",
+                    "defaultValue": 2,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 100,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "splits",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "zombie"
+                ]
+            },
+            {
+                "key": "splitsType",
+                "option": {
+                    "label": "Splits Type",
+                    "description": "The type of sentry the sentry will split into",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here...",
+                        "category": "zombieType"
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "splits",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "zombie"
+                ]
+            },
+            {
+                "key": "powerScore",
+                "option": {
+                    "label": "Power Score",
+                    "description": "The power score of the sentry",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 10000,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                },
+                "categories": [
+                    "zombie"
+                ]
+            }
+        ]
+    },
+    "defaultState": {},
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {},
     "minimumRoleLevel": 90,
     "maxOnMap": 512,
     "initialMemoryCost": 0,

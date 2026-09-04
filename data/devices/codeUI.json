@@ -2,10 +2,292 @@
     "id": "codeUI",
     "name": "Code UI",
     "description": "Create modals & banners in code",
-    "optionSchema": "{\"categories\":{\"categories\":[{\"id\":\"Featured\",\"name\":\"Featured\"},{\"id\":\"Look & Behavior\",\"name\":\"Look & Behavior\"},{\"id\":\"Channels\",\"name\":\"Channels\"}],\"showAllOptionsAt\":\"end\"},\"options\":[{\"key\":\"code\",\"option\":{\"label\":\"Code\",\"description\":\"Code to define UI.\",\"type\":\"textInput\",\"defaultValue\":\"const App = ()=>{\\n  const goldAmount = useItemAmount('gold')\\n  const propertyValue = usePropertyValue('randomNumber')\\n\\n  const handleAction = ()=> {\\n    CallAction('Some Action')\\n  }\\n\\n  return (<div>\\n    <div> Gold amount:{goldAmount} </div>\\n    <div> Property value: {propertyValue} </div>\\n    <MapButton size=\\\"small\\\" onClick={handleAction}>\\n      Handle action\\n    </MapButton>\\n  </div>)\\n}\\n\\nrender(<App />)\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\",\"codeEditor\":true,\"maxLength\":262144}},\"categories\":[\"Featured\"]},{\"key\":\"openWhenReceivingFrom\",\"option\":{\"label\":\"Open popup when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Open the popup when the device receives a signal from the selected channel\"},\"categories\":[\"Featured\",\"Channels\"]},{\"key\":\"style\",\"option\":{\"label\":\"Popup Style\",\"description\":\"Modal: a large popup the obstructs the center of the screen. Banner: a smaller popup that slides up from the bottom.\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"modal\",\"props\":{\"options\":[{\"name\":\"Modal\",\"value\":\"modal\"},{\"name\":\"Banner\",\"value\":\"banner\"}],\"allowEmpty\":false}},\"categories\":[\"Featured\",\"Look & Behavior\"]},{\"key\":\"defaultBackgroundColor\",\"option\":{\"label\":\"Default Background Color\",\"description\":\"Background color of the popup. The default text color will automatically adapt to be readable\",\"type\":\"color\",\"defaultValue\":\"#FFFFFF\",\"validators\":[null]},\"categories\":[\"Look & Behavior\"]},{\"key\":\"defaultFontFamily\",\"option\":{\"label\":\"Default Font\",\"description\":\"Select a font that fits the style of your popup\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"Rubik\",\"props\":{\"options\":[{\"name\":\"Rubik\",\"value\":\"Rubik\"},{\"name\":\"Roboto\",\"value\":\"Roboto\"},{\"name\":\"Staatliches\",\"value\":\"Staatliches\"},{\"name\":\"Galindo\",\"value\":\"Galindo\"},{\"name\":\"Kalam\",\"value\":\"Kalam\"},{\"name\":\"Bangers\",\"value\":\"Bangers\"},{\"name\":\"Fugaz One\",\"value\":\"Fugaz One\"},{\"name\":\"Outfit\",\"value\":\"Outfit\"},{\"name\":\"PT Mono\",\"value\":\"PT Mono\"},{\"name\":\"Space Grotesk\",\"value\":\"Space Grotesk\"},{\"name\":\"Lobster\",\"value\":\"Lobster\"},{\"name\":\"Zeyada\",\"value\":\"Zeyada\"},{\"name\":\"Titan One\",\"value\":\"Titan One\"},{\"name\":\"Rye\",\"value\":\"Rye\"},{\"name\":\"Caprasimo\",\"value\":\"Caprasimo\"}],\"allowEmpty\":false}},\"categories\":[\"Look & Behavior\"]},{\"key\":\"closableByUser\",\"option\":{\"label\":\"Closable By Player\",\"type\":\"select\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false},\"description\":\"Are players allowed to close the popup once opened?\"}},{\"key\":\"closeWhenReceivingFrom\",\"option\":{\"label\":\"Close popup when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Close the popup when the device receives a signal from the selected channel\"},\"categories\":[\"Channels\"]},{\"key\":\"whenClosedTransmitOn\",\"option\":{\"label\":\"When popup closed, transmit on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"When popup closed, the device sends a signal on the selected channel\"},\"categories\":[\"Channels\"]}]}",
-    "defaultState": "{}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[{\"type\":\"callAction\",\"name\":\"When action called...\"}],\"customBlocks\":[\"get_called_action_name\"]}",
-    "wireConfig": "{\"out\":{\"connections\":[{\"id\":\"closed\",\"name\":\"UI closed\"}]},\"in\":{\"connections\":[{\"id\":\"open\",\"name\":\"Open UI\"},{\"id\":\"close\",\"name\":\"Close UI\"}]}}",
+    "optionSchema": {
+        "categories": {
+            "categories": [
+                {
+                    "id": "Featured",
+                    "name": "Featured"
+                },
+                {
+                    "id": "Look & Behavior",
+                    "name": "Look & Behavior"
+                },
+                {
+                    "id": "Channels",
+                    "name": "Channels"
+                }
+            ],
+            "showAllOptionsAt": "end"
+        },
+        "options": [
+            {
+                "key": "code",
+                "option": {
+                    "label": "Code",
+                    "description": "Code to define UI.",
+                    "type": "textInput",
+                    "defaultValue": "const App = ()=>{\n  const goldAmount = useItemAmount('gold')\n  const propertyValue = usePropertyValue('randomNumber')\n\n  const handleAction = ()=> {\n    CallAction('Some Action')\n  }\n\n  return (<div>\n    <div> Gold amount:{goldAmount} </div>\n    <div> Property value: {propertyValue} </div>\n    <MapButton size=\"small\" onClick={handleAction}>\n      Handle action\n    </MapButton>\n  </div>)\n}\n\nrender(<App />)",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here...",
+                        "codeEditor": true,
+                        "maxLength": 262144
+                    }
+                },
+                "categories": [
+                    "Featured"
+                ]
+            },
+            {
+                "key": "openWhenReceivingFrom",
+                "option": {
+                    "label": "Open popup when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Open the popup when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "Featured",
+                    "Channels"
+                ]
+            },
+            {
+                "key": "style",
+                "option": {
+                    "label": "Popup Style",
+                    "description": "Modal: a large popup the obstructs the center of the screen. Banner: a smaller popup that slides up from the bottom.",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "modal",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Modal",
+                                "value": "modal"
+                            },
+                            {
+                                "name": "Banner",
+                                "value": "banner"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "Featured",
+                    "Look & Behavior"
+                ]
+            },
+            {
+                "key": "defaultBackgroundColor",
+                "option": {
+                    "label": "Default Background Color",
+                    "description": "Background color of the popup. The default text color will automatically adapt to be readable",
+                    "type": "color",
+                    "defaultValue": "#FFFFFF",
+                    "validators": [
+                        null
+                    ]
+                },
+                "categories": [
+                    "Look & Behavior"
+                ]
+            },
+            {
+                "key": "defaultFontFamily",
+                "option": {
+                    "label": "Default Font",
+                    "description": "Select a font that fits the style of your popup",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "Rubik",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Rubik",
+                                "value": "Rubik"
+                            },
+                            {
+                                "name": "Roboto",
+                                "value": "Roboto"
+                            },
+                            {
+                                "name": "Staatliches",
+                                "value": "Staatliches"
+                            },
+                            {
+                                "name": "Galindo",
+                                "value": "Galindo"
+                            },
+                            {
+                                "name": "Kalam",
+                                "value": "Kalam"
+                            },
+                            {
+                                "name": "Bangers",
+                                "value": "Bangers"
+                            },
+                            {
+                                "name": "Fugaz One",
+                                "value": "Fugaz One"
+                            },
+                            {
+                                "name": "Outfit",
+                                "value": "Outfit"
+                            },
+                            {
+                                "name": "PT Mono",
+                                "value": "PT Mono"
+                            },
+                            {
+                                "name": "Space Grotesk",
+                                "value": "Space Grotesk"
+                            },
+                            {
+                                "name": "Lobster",
+                                "value": "Lobster"
+                            },
+                            {
+                                "name": "Zeyada",
+                                "value": "Zeyada"
+                            },
+                            {
+                                "name": "Titan One",
+                                "value": "Titan One"
+                            },
+                            {
+                                "name": "Rye",
+                                "value": "Rye"
+                            },
+                            {
+                                "name": "Caprasimo",
+                                "value": "Caprasimo"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "Look & Behavior"
+                ]
+            },
+            {
+                "key": "closableByUser",
+                "option": {
+                    "label": "Closable By Player",
+                    "type": "select",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "description": "Are players allowed to close the popup once opened?"
+                }
+            },
+            {
+                "key": "closeWhenReceivingFrom",
+                "option": {
+                    "label": "Close popup when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Close the popup when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "Channels"
+                ]
+            },
+            {
+                "key": "whenClosedTransmitOn",
+                "option": {
+                    "label": "When popup closed, transmit on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "When popup closed, the device sends a signal on the selected channel"
+                },
+                "categories": [
+                    "Channels"
+                ]
+            }
+        ]
+    },
+    "defaultState": {},
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [
+            {
+                "type": "callAction",
+                "name": "When action called..."
+            }
+        ],
+        "customBlocks": [
+            "get_called_action_name"
+        ]
+    },
+    "wireConfig": {
+        "out": {
+            "connections": [
+                {
+                    "id": "closed",
+                    "name": "UI closed"
+                }
+            ]
+        },
+        "in": {
+            "connections": [
+                {
+                    "id": "open",
+                    "name": "Open UI"
+                },
+                {
+                    "id": "close",
+                    "name": "Close UI"
+                }
+            ]
+        }
+    },
     "minimumRoleLevel": 90,
     "maxOnMap": 200,
     "initialMemoryCost": 50,

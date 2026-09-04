@@ -2,10 +2,657 @@
     "id": "classDesigner",
     "name": "Class Designer",
     "description": "Assign character to a class of characters.",
-    "optionSchema": "{\"categories\":{\"categories\":[{\"id\":\"abilities\",\"name\":\"Abilities\"},{\"id\":\"channels\",\"name\":\"Channels\"},{\"id\":\"jumping\",\"name\":\"Jumping\",\"supportedMapStyles\":[\"platformer\"]},{\"id\":\"gravity\",\"name\":\"Gravity\",\"supportedMapStyles\":[\"platformer\"]}],\"showAllOptionsAt\":\"end\"},\"options\":[{\"key\":\"activateChannel\",\"option\":{\"label\":\"Activate class when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Activate class for triggering character when the device receives a signal from the selected channel\"},\"categories\":[\"channels\"]},{\"key\":\"allowedToUseGadget\",\"option\":{\"label\":\"Allowed To Use Gadget\",\"description\":\"Is the character allowed to use gadget?\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":1,\"props\":{\"options\":[{\"value\":1,\"name\":\"Do Not Override\"},{\"value\":2,\"name\":\"Yes\"},{\"value\":3,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"abilities\"]},{\"key\":\"immunity\",\"option\":{\"label\":\"Invincibility\",\"description\":\"Is the character invincible?\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":1,\"props\":{\"options\":[{\"value\":1,\"name\":\"Do Not Override\"},{\"value\":2,\"name\":\"Yes\"},{\"value\":3,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"abilities\"]},{\"key\":\"overrideMaxGravityPerSecondMultiplier\",\"option\":{\"label\":\"Override Max Gravity Multiplier\",\"type\":\"select\",\"description\":\"Override the maximum gravity multiplier?\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"supportedMapStyles\":[\"platformer\"],\"categories\":[\"gravity\"]},{\"key\":\"maxGravityPerSecondMultiplier\",\"option\":{\"label\":\"Max Gravity Multiplier\",\"description\":\"Multiplies the default maximum gravity velocity.\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":0.1,\"max\":3,\"step\":0.05,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"overrideMaxGravityPerSecondMultiplier\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]},\"supportedMapStyles\":[\"platformer\"],\"categories\":[\"gravity\"]},{\"key\":\"overrideTimeToMaxGravityMultiplier\",\"option\":{\"label\":\"Override Time To Max Gravity Multiplier\",\"type\":\"select\",\"description\":\"Override the multiplier for how long it takes to reach maximum gravity velocity?\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"supportedMapStyles\":[\"platformer\"],\"categories\":[\"gravity\"]},{\"key\":\"timeToMaxGravityMultiplier\",\"option\":{\"label\":\"Time To Max Gravity Multiplier\",\"description\":\"Multiplies how long it takes to reach maximum gravity velocity.\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":0.08,\"max\":3.2,\"step\":0.01,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"overrideTimeToMaxGravityMultiplier\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]},\"supportedMapStyles\":[\"platformer\"],\"categories\":[\"gravity\"]},{\"key\":\"overrideYTravelUntilMaxGravityMultiplier\",\"option\":{\"label\":\"Override Fall Distance Until Max Gravity Multiplier\",\"type\":\"select\",\"description\":\"Override the multiplier for how far the character falls before reaching max gravity?\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"supportedMapStyles\":[\"platformer\"],\"categories\":[\"gravity\"]},{\"key\":\"yTravelUntilMaxGravityMultiplier\",\"option\":{\"label\":\"Fall Distance Until Max Gravity Multiplier\",\"description\":\"Multiplies how far the character falls before reaching max gravity.\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":0.29,\"max\":2.86,\"step\":0.01,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"overrideYTravelUntilMaxGravityMultiplier\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]},\"supportedMapStyles\":[\"platformer\"],\"categories\":[\"gravity\"]},{\"key\":\"overrideJumpHeightMultiplier\",\"option\":{\"label\":\"Override Jump Height Multiplier\",\"type\":\"select\",\"description\":\"Should override how high the character jumps?\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"supportedMapStyles\":[\"platformer\"],\"categories\":[\"jumping\"]},{\"key\":\"jumpHeightMultiplier\",\"option\":{\"label\":\"Jump Height Multiplier\",\"description\":\"Multiplies how high the character jumps.\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":0.26,\"max\":2.08,\"step\":0.01,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"overrideJumpHeightMultiplier\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]},\"supportedMapStyles\":[\"platformer\"],\"categories\":[\"jumping\"]},{\"key\":\"overrideJumpDurationMultiplier\",\"option\":{\"label\":\"Override Jump Duration Multiplier\",\"type\":\"select\",\"description\":\"Should override how long the jump lasts?\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"supportedMapStyles\":[\"platformer\"],\"categories\":[\"jumping\"]},{\"key\":\"jumpDurationMultiplier\",\"option\":{\"label\":\"Jump Duration Multiplier\",\"description\":\"Multiplies how long the jump lasts.\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":0.25,\"max\":5,\"step\":0.05,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"overrideJumpDurationMultiplier\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]},\"supportedMapStyles\":[\"platformer\"],\"categories\":[\"jumping\"]},{\"key\":\"overrideJumpHangTimeMultiplier\",\"option\":{\"label\":\"Override Jump Hang Time Multiplier\",\"type\":\"select\",\"description\":\"Should override how long the character hangs during the jump?\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"supportedMapStyles\":[\"platformer\"],\"categories\":[\"jumping\"]},{\"key\":\"jumpHangTimeMultiplier\",\"option\":{\"label\":\"Jump Hang Time Multiplier\",\"description\":\"Multiplies how long the character hangs during the jump.\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":0,\"max\":10,\"step\":0.05,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"overrideJumpHangTimeMultiplier\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]},\"supportedMapStyles\":[\"platformer\"],\"categories\":[\"jumping\"]},{\"key\":\"overrideSubsequentJumpHeightMultiplier\",\"option\":{\"label\":\"Override Subsequent Jump Height Multiplier\",\"type\":\"select\",\"description\":\"Should override the height multiplier for subsequent jumps?\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"supportedMapStyles\":[\"platformer\"],\"categories\":[\"jumping\"]},{\"key\":\"subsequentJumpHeightMultiplier\",\"option\":{\"label\":\"Subsequent Jump Height Multiplier\",\"description\":\"Multiplies the default height multiplier for subsequent jumps.\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":0.15,\"max\":3.03,\"step\":0.01,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"overrideSubsequentJumpHeightMultiplier\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]},\"supportedMapStyles\":[\"platformer\"],\"categories\":[\"jumping\"]},{\"key\":\"overrideMaxJumps\",\"option\":{\"label\":\"Override Maximum Number Of Jumps\",\"type\":\"select\",\"description\":\"Should Override How Many Jumps The Character Can Make?\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"supportedMapStyles\":[\"platformer\"],\"categories\":[\"jumping\"]},{\"key\":\"maxJumps\",\"option\":{\"label\":\"Max Jumps\",\"description\":\"How Many Jumps The Character Can Make?\",\"type\":\"numberInput\",\"defaultValue\":2,\"validators\":[null],\"props\":{\"min\":0,\"max\":5,\"step\":1,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"overrideMaxJumps\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]},\"supportedMapStyles\":[\"platformer\"],\"categories\":[\"jumping\"]}]}",
-    "defaultState": "{}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"activate\",\"name\":\"Activate class\"}]}}",
+    "optionSchema": {
+        "categories": {
+            "categories": [
+                {
+                    "id": "abilities",
+                    "name": "Abilities"
+                },
+                {
+                    "id": "channels",
+                    "name": "Channels"
+                },
+                {
+                    "id": "jumping",
+                    "name": "Jumping",
+                    "supportedMapStyles": [
+                        "platformer"
+                    ]
+                },
+                {
+                    "id": "gravity",
+                    "name": "Gravity",
+                    "supportedMapStyles": [
+                        "platformer"
+                    ]
+                }
+            ],
+            "showAllOptionsAt": "end"
+        },
+        "options": [
+            {
+                "key": "activateChannel",
+                "option": {
+                    "label": "Activate class when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Activate class for triggering character when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "channels"
+                ]
+            },
+            {
+                "key": "allowedToUseGadget",
+                "option": {
+                    "label": "Allowed To Use Gadget",
+                    "description": "Is the character allowed to use gadget?",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": 1,
+                    "props": {
+                        "options": [
+                            {
+                                "value": 1,
+                                "name": "Do Not Override"
+                            },
+                            {
+                                "value": 2,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": 3,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "abilities"
+                ]
+            },
+            {
+                "key": "immunity",
+                "option": {
+                    "label": "Invincibility",
+                    "description": "Is the character invincible?",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": 1,
+                    "props": {
+                        "options": [
+                            {
+                                "value": 1,
+                                "name": "Do Not Override"
+                            },
+                            {
+                                "value": 2,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": 3,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "abilities"
+                ]
+            },
+            {
+                "key": "overrideMaxGravityPerSecondMultiplier",
+                "option": {
+                    "label": "Override Max Gravity Multiplier",
+                    "type": "select",
+                    "description": "Override the maximum gravity multiplier?",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "supportedMapStyles": [
+                    "platformer"
+                ],
+                "categories": [
+                    "gravity"
+                ]
+            },
+            {
+                "key": "maxGravityPerSecondMultiplier",
+                "option": {
+                    "label": "Max Gravity Multiplier",
+                    "description": "Multiplies the default maximum gravity velocity.",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0.1,
+                        "max": 3,
+                        "step": 0.05,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "overrideMaxGravityPerSecondMultiplier",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "supportedMapStyles": [
+                    "platformer"
+                ],
+                "categories": [
+                    "gravity"
+                ]
+            },
+            {
+                "key": "overrideTimeToMaxGravityMultiplier",
+                "option": {
+                    "label": "Override Time To Max Gravity Multiplier",
+                    "type": "select",
+                    "description": "Override the multiplier for how long it takes to reach maximum gravity velocity?",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "supportedMapStyles": [
+                    "platformer"
+                ],
+                "categories": [
+                    "gravity"
+                ]
+            },
+            {
+                "key": "timeToMaxGravityMultiplier",
+                "option": {
+                    "label": "Time To Max Gravity Multiplier",
+                    "description": "Multiplies how long it takes to reach maximum gravity velocity.",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0.08,
+                        "max": 3.2,
+                        "step": 0.01,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "overrideTimeToMaxGravityMultiplier",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "supportedMapStyles": [
+                    "platformer"
+                ],
+                "categories": [
+                    "gravity"
+                ]
+            },
+            {
+                "key": "overrideYTravelUntilMaxGravityMultiplier",
+                "option": {
+                    "label": "Override Fall Distance Until Max Gravity Multiplier",
+                    "type": "select",
+                    "description": "Override the multiplier for how far the character falls before reaching max gravity?",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "supportedMapStyles": [
+                    "platformer"
+                ],
+                "categories": [
+                    "gravity"
+                ]
+            },
+            {
+                "key": "yTravelUntilMaxGravityMultiplier",
+                "option": {
+                    "label": "Fall Distance Until Max Gravity Multiplier",
+                    "description": "Multiplies how far the character falls before reaching max gravity.",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0.29,
+                        "max": 2.86,
+                        "step": 0.01,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "overrideYTravelUntilMaxGravityMultiplier",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "supportedMapStyles": [
+                    "platformer"
+                ],
+                "categories": [
+                    "gravity"
+                ]
+            },
+            {
+                "key": "overrideJumpHeightMultiplier",
+                "option": {
+                    "label": "Override Jump Height Multiplier",
+                    "type": "select",
+                    "description": "Should override how high the character jumps?",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "supportedMapStyles": [
+                    "platformer"
+                ],
+                "categories": [
+                    "jumping"
+                ]
+            },
+            {
+                "key": "jumpHeightMultiplier",
+                "option": {
+                    "label": "Jump Height Multiplier",
+                    "description": "Multiplies how high the character jumps.",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0.26,
+                        "max": 2.08,
+                        "step": 0.01,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "overrideJumpHeightMultiplier",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "supportedMapStyles": [
+                    "platformer"
+                ],
+                "categories": [
+                    "jumping"
+                ]
+            },
+            {
+                "key": "overrideJumpDurationMultiplier",
+                "option": {
+                    "label": "Override Jump Duration Multiplier",
+                    "type": "select",
+                    "description": "Should override how long the jump lasts?",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "supportedMapStyles": [
+                    "platformer"
+                ],
+                "categories": [
+                    "jumping"
+                ]
+            },
+            {
+                "key": "jumpDurationMultiplier",
+                "option": {
+                    "label": "Jump Duration Multiplier",
+                    "description": "Multiplies how long the jump lasts.",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0.25,
+                        "max": 5,
+                        "step": 0.05,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "overrideJumpDurationMultiplier",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "supportedMapStyles": [
+                    "platformer"
+                ],
+                "categories": [
+                    "jumping"
+                ]
+            },
+            {
+                "key": "overrideJumpHangTimeMultiplier",
+                "option": {
+                    "label": "Override Jump Hang Time Multiplier",
+                    "type": "select",
+                    "description": "Should override how long the character hangs during the jump?",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "supportedMapStyles": [
+                    "platformer"
+                ],
+                "categories": [
+                    "jumping"
+                ]
+            },
+            {
+                "key": "jumpHangTimeMultiplier",
+                "option": {
+                    "label": "Jump Hang Time Multiplier",
+                    "description": "Multiplies how long the character hangs during the jump.",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 10,
+                        "step": 0.05,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "overrideJumpHangTimeMultiplier",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "supportedMapStyles": [
+                    "platformer"
+                ],
+                "categories": [
+                    "jumping"
+                ]
+            },
+            {
+                "key": "overrideSubsequentJumpHeightMultiplier",
+                "option": {
+                    "label": "Override Subsequent Jump Height Multiplier",
+                    "type": "select",
+                    "description": "Should override the height multiplier for subsequent jumps?",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "supportedMapStyles": [
+                    "platformer"
+                ],
+                "categories": [
+                    "jumping"
+                ]
+            },
+            {
+                "key": "subsequentJumpHeightMultiplier",
+                "option": {
+                    "label": "Subsequent Jump Height Multiplier",
+                    "description": "Multiplies the default height multiplier for subsequent jumps.",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0.15,
+                        "max": 3.03,
+                        "step": 0.01,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "overrideSubsequentJumpHeightMultiplier",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "supportedMapStyles": [
+                    "platformer"
+                ],
+                "categories": [
+                    "jumping"
+                ]
+            },
+            {
+                "key": "overrideMaxJumps",
+                "option": {
+                    "label": "Override Maximum Number Of Jumps",
+                    "type": "select",
+                    "description": "Should Override How Many Jumps The Character Can Make?",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "supportedMapStyles": [
+                    "platformer"
+                ],
+                "categories": [
+                    "jumping"
+                ]
+            },
+            {
+                "key": "maxJumps",
+                "option": {
+                    "label": "Max Jumps",
+                    "description": "How Many Jumps The Character Can Make?",
+                    "type": "numberInput",
+                    "defaultValue": 2,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 5,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "overrideMaxJumps",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "supportedMapStyles": [
+                    "platformer"
+                ],
+                "categories": [
+                    "jumping"
+                ]
+            }
+        ]
+    },
+    "defaultState": {},
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "in": {
+            "connections": [
+                {
+                    "id": "activate",
+                    "name": "Activate class"
+                }
+            ]
+        }
+    },
     "minimumRoleLevel": 90,
     "maxOnMap": 512,
     "initialMemoryCost": 25,

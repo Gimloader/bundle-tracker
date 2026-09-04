@@ -2,10 +2,471 @@
     "id": "waypoint",
     "name": "Waypoint",
     "description": "Mark a location for players to pay attention to",
-    "optionSchema": "{\"categories\":{\"categories\":[{\"id\":\"featured\",\"name\":\"Featured\"},{\"id\":\"channels\",\"name\":\"Channels\"}],\"showAllOptionsAt\":\"end\"},\"options\":[{\"key\":\"target\",\"option\":{\"label\":\"Waypoint Target\",\"description\":\"What is the waypoint tracking?\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"deviceLocation\",\"props\":{\"options\":[{\"name\":\"Location Of Device\",\"value\":\"deviceLocation\"},{\"name\":\"Location Of Player\",\"value\":\"player\"},{\"name\":\"Flag\",\"value\":\"flag\",\"supportedMapStyles\":[\"topDown\"]},{\"name\":\"Ball\",\"value\":\"ball\",\"supportedMapStyles\":[\"topDown\"]}],\"allowEmpty\":false}},\"categories\":[\"featured\"]},{\"key\":\"flagColor\",\"option\":{\"label\":\"Flag Color\",\"description\":\"The color of the flag the waypoint will track\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"black\",\"props\":{\"options\":[{\"name\":\"Black\",\"value\":\"black\"},{\"name\":\"Blue\",\"value\":\"blue\"},{\"name\":\"Green\",\"value\":\"green\"},{\"name\":\"Orange\",\"value\":\"orange\"},{\"name\":\"Purple\",\"value\":\"purple\"},{\"name\":\"Red\",\"value\":\"red\"},{\"name\":\"White\",\"value\":\"white\"}],\"allowEmpty\":false},\"hideIf\":[[{\"key\":\"target\",\"compare\":\"NOT_EQUAL\",\"value\":\"flag\"}]]},\"categories\":[\"featured\"]},{\"key\":\"ballId\",\"option\":{\"label\":\"Ball Identifier\",\"description\":\"Enter the identifier of the Ball you want to track. Make sure to set the identifier on the proper Ball Device as well.\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Enter ID here...\",\"category\":\"ball-id\"},\"hideIf\":[[{\"key\":\"target\",\"compare\":\"NOT_EQUAL\",\"value\":\"ball\"}]]},\"categories\":[\"featured\"]},{\"key\":\"name\",\"option\":{\"label\":\"Waypoint Name\",\"description\":\"The display name of the waypoint shown in-game\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\",\"maxLength\":32}},\"categories\":[\"featured\"]},{\"key\":\"useDeactivateWithinRange\",\"option\":{\"label\":\"Deactivate When Player Within Range\",\"type\":\"select\",\"description\":\"Automatically deactivate the waypoint when a player is within range to it\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false},\"hideIf\":[[{\"key\":\"target\",\"compare\":\"NOT_EQUAL\",\"value\":\"deviceLocation\"}]]},\"categories\":[\"featured\"]},{\"key\":\"deactivateWithinRange\",\"option\":{\"label\":\"Automatic Deactivation Range\",\"description\":\"Distance (in meters) the waypoint will automatically deactivate when a player is within range to it\",\"type\":\"numberInput\",\"defaultValue\":3,\"validators\":[null],\"props\":{\"min\":1,\"max\":50,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"target\",\"compare\":\"NOT_EQUAL\",\"value\":\"deviceLocation\"}],[{\"key\":\"useDeactivateWithinRange\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]},\"categories\":[\"featured\"]},{\"key\":\"startFollowingPlayer\",\"option\":{\"label\":\"Start following player when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Start following the triggering player when the device receives a signal from the selected channel\",\"hideIf\":[[{\"key\":\"target\",\"compare\":\"NOT_EQUAL\",\"value\":\"player\"}]]},\"categories\":[\"featured\",\"channels\"]},{\"key\":\"stopFollowingPlayer\",\"option\":{\"label\":\"Stop following player when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Stop following the currently tracked player when the device receives a signal from the selected channel\",\"hideIf\":[[{\"key\":\"target\",\"compare\":\"NOT_EQUAL\",\"value\":\"player\"}]]},\"categories\":[\"featured\",\"channels\"]},{\"key\":\"hideWhenFlagIsInBase\",\"option\":{\"label\":\"Hide When Flag Is In Base\",\"type\":\"select\",\"description\":\"Hide the waypoint when the flag is in the base\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false},\"hideIf\":[[{\"key\":\"target\",\"compare\":\"NOT_EQUAL\",\"value\":\"flag\"}]]}},{\"key\":\"activeOnGameStart\",\"option\":{\"label\":\"Active On Game Start\",\"type\":\"select\",\"description\":\"Is the waypoint active & visible when the game starts?\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"featured\"]},{\"key\":\"color\",\"option\":{\"label\":\"Waypoint Color\",\"description\":\"Change the color of the waypoint's UI\",\"type\":\"color\",\"defaultValue\":\"#FFFFFF\",\"validators\":[null]},\"categories\":[\"featured\"]},{\"key\":\"activateChannel\",\"option\":{\"label\":\"Activate when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Activate when the device receives a signal from the selected channel\"},\"categories\":[\"channels\"]},{\"key\":\"deactivateChannel\",\"option\":{\"label\":\"Deactivate when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Deactivate when the device receives a signal from the selected channel\"},\"categories\":[\"channels\"]},{\"key\":\"scope\",\"option\":{\"label\":\"Activate Scope\",\"type\":\"select\",\"defaultValue\":\"global\",\"validators\":[null],\"props\":{\"options\":[{\"value\":\"global\",\"name\":\"global\"},{\"value\":\"player\",\"name\":\"player\"},{\"value\":\"team\",\"name\":\"team\"}],\"allowEmpty\":false},\"description\":\"Activation/deactivation of the waypoint applies to who?\"}}]}",
-    "defaultState": "{\"active\":false}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
-    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"activate\",\"name\":\"Activate waypoint\"},{\"id\":\"deactivate\",\"name\":\"Deactivate waypoint\"}]}}",
+    "optionSchema": {
+        "categories": {
+            "categories": [
+                {
+                    "id": "featured",
+                    "name": "Featured"
+                },
+                {
+                    "id": "channels",
+                    "name": "Channels"
+                }
+            ],
+            "showAllOptionsAt": "end"
+        },
+        "options": [
+            {
+                "key": "target",
+                "option": {
+                    "label": "Waypoint Target",
+                    "description": "What is the waypoint tracking?",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "deviceLocation",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Location Of Device",
+                                "value": "deviceLocation"
+                            },
+                            {
+                                "name": "Location Of Player",
+                                "value": "player"
+                            },
+                            {
+                                "name": "Flag",
+                                "value": "flag",
+                                "supportedMapStyles": [
+                                    "topDown"
+                                ]
+                            },
+                            {
+                                "name": "Ball",
+                                "value": "ball",
+                                "supportedMapStyles": [
+                                    "topDown"
+                                ]
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "flagColor",
+                "option": {
+                    "label": "Flag Color",
+                    "description": "The color of the flag the waypoint will track",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "black",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Black",
+                                "value": "black"
+                            },
+                            {
+                                "name": "Blue",
+                                "value": "blue"
+                            },
+                            {
+                                "name": "Green",
+                                "value": "green"
+                            },
+                            {
+                                "name": "Orange",
+                                "value": "orange"
+                            },
+                            {
+                                "name": "Purple",
+                                "value": "purple"
+                            },
+                            {
+                                "name": "Red",
+                                "value": "red"
+                            },
+                            {
+                                "name": "White",
+                                "value": "white"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "target",
+                                "compare": "NOT_EQUAL",
+                                "value": "flag"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "ballId",
+                "option": {
+                    "label": "Ball Identifier",
+                    "description": "Enter the identifier of the Ball you want to track. Make sure to set the identifier on the proper Ball Device as well.",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Enter ID here...",
+                        "category": "ball-id"
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "target",
+                                "compare": "NOT_EQUAL",
+                                "value": "ball"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "name",
+                "option": {
+                    "label": "Waypoint Name",
+                    "description": "The display name of the waypoint shown in-game",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Text here...",
+                        "maxLength": 32
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "useDeactivateWithinRange",
+                "option": {
+                    "label": "Deactivate When Player Within Range",
+                    "type": "select",
+                    "description": "Automatically deactivate the waypoint when a player is within range to it",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "target",
+                                "compare": "NOT_EQUAL",
+                                "value": "deviceLocation"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "deactivateWithinRange",
+                "option": {
+                    "label": "Automatic Deactivation Range",
+                    "description": "Distance (in meters) the waypoint will automatically deactivate when a player is within range to it",
+                    "type": "numberInput",
+                    "defaultValue": 3,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 50,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "target",
+                                "compare": "NOT_EQUAL",
+                                "value": "deviceLocation"
+                            }
+                        ],
+                        [
+                            {
+                                "key": "useDeactivateWithinRange",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "startFollowingPlayer",
+                "option": {
+                    "label": "Start following player when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Start following the triggering player when the device receives a signal from the selected channel",
+                    "hideIf": [
+                        [
+                            {
+                                "key": "target",
+                                "compare": "NOT_EQUAL",
+                                "value": "player"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "featured",
+                    "channels"
+                ]
+            },
+            {
+                "key": "stopFollowingPlayer",
+                "option": {
+                    "label": "Stop following player when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Stop following the currently tracked player when the device receives a signal from the selected channel",
+                    "hideIf": [
+                        [
+                            {
+                                "key": "target",
+                                "compare": "NOT_EQUAL",
+                                "value": "player"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "featured",
+                    "channels"
+                ]
+            },
+            {
+                "key": "hideWhenFlagIsInBase",
+                "option": {
+                    "label": "Hide When Flag Is In Base",
+                    "type": "select",
+                    "description": "Hide the waypoint when the flag is in the base",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "target",
+                                "compare": "NOT_EQUAL",
+                                "value": "flag"
+                            }
+                        ]
+                    ]
+                }
+            },
+            {
+                "key": "activeOnGameStart",
+                "option": {
+                    "label": "Active On Game Start",
+                    "type": "select",
+                    "description": "Is the waypoint active & visible when the game starts?",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "color",
+                "option": {
+                    "label": "Waypoint Color",
+                    "description": "Change the color of the waypoint's UI",
+                    "type": "color",
+                    "defaultValue": "#FFFFFF",
+                    "validators": [
+                        null
+                    ]
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "activateChannel",
+                "option": {
+                    "label": "Activate when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Activate when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "channels"
+                ]
+            },
+            {
+                "key": "deactivateChannel",
+                "option": {
+                    "label": "Deactivate when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Deactivate when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "channels"
+                ]
+            },
+            {
+                "key": "scope",
+                "option": {
+                    "label": "Activate Scope",
+                    "type": "select",
+                    "defaultValue": "global",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": "global",
+                                "name": "global"
+                            },
+                            {
+                                "value": "player",
+                                "name": "player"
+                            },
+                            {
+                                "value": "team",
+                                "name": "team"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "description": "Activation/deactivation of the waypoint applies to who?"
+                }
+            }
+        ]
+    },
+    "defaultState": {
+        "active": false
+    },
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "in": {
+            "connections": [
+                {
+                    "id": "activate",
+                    "name": "Activate waypoint"
+                },
+                {
+                    "id": "deactivate",
+                    "name": "Deactivate waypoint"
+                }
+            ]
+        }
+    },
     "maxOnMap": 64,
     "initialMemoryCost": 175,
     "subsequentMemoryCost": 175

@@ -2,10 +2,242 @@
     "id": "zombieInvasion",
     "name": "Zombie Invasion",
     "description": "Sentry Waves Manager.",
-    "optionSchema": "{\"options\":[{\"key\":\"startNewWaveChannel\",\"option\":{\"label\":\"Start New Wave Channel\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100}}},{\"key\":\"onWaveEndChannel\",\"option\":{\"label\":\"On Wave End Channel\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100}}},{\"key\":\"waveDuration\",\"option\":{\"label\":\"Wave Duration\",\"description\":\"For how long the zombies will be spawned.\",\"type\":\"numberInput\",\"defaultValue\":30,\"validators\":[null],\"props\":{\"min\":1,\"max\":6000,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"powerScore\",\"option\":{\"label\":\"Power Score\",\"description\":\"The power score of the wave\",\"type\":\"numberInput\",\"defaultValue\":1000,\"validators\":[null],\"props\":{\"min\":1,\"max\":999999999,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"powerScoreIncreasePerWave\",\"option\":{\"label\":\"Power Score Increase Per Wave\",\"description\":\"The power score increase per wave\",\"type\":\"numberInput\",\"defaultValue\":250,\"validators\":[null],\"props\":{\"min\":0,\"max\":999999,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"powerScoreIncreaseAdditionPerPlayer\",\"option\":{\"label\":\"Power Score Increase Addition Per Player\",\"description\":\"The power score incrase addition per player\",\"type\":\"numberInput\",\"defaultValue\":100,\"validators\":[null],\"props\":{\"min\":0,\"max\":999999,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"powerScoreIncreaseAdditionPerWavePerPlayer\",\"option\":{\"label\":\"Power Score Increase Addition Per Wave Per Player\",\"description\":\"The power score incrase addition per player with each wave\",\"type\":\"numberInput\",\"defaultValue\":100,\"validators\":[null],\"props\":{\"min\":0,\"max\":999999,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"globalHealthPercentageIncreasePerPlayer\",\"option\":{\"label\":\"Global Health Percentage Increase Per Player\",\"description\":\"The global health multiplier per player\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"min\":0,\"max\":1000,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"globalDamagePercentageIncreasePerPlayer\",\"option\":{\"label\":\"Global Damage Percentage Increase Per Player\",\"description\":\"The global damage multiplier per player\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"min\":0,\"max\":1000,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"targetDeviceId\",\"option\":{\"label\":\"Target Device ID\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"The target device id that will be used for the zombies.\"}},{\"key\":\"targetRadius\",\"option\":{\"label\":\"Target Radius\",\"description\":\"The target radius for the zombies.\",\"type\":\"numberInput\",\"defaultValue\":100,\"validators\":[null],\"props\":{\"min\":1,\"max\":999999999,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}}}]}",
-    "defaultState": "{}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[{\"type\":\"WHEN_NUMBER_OF_ZOMBIES_CHANGES\",\"name\":\"When number of zombies changes...\"}],\"customBlocks\":[\"active_zombies_count\"]}",
-    "wireConfig": "{\"out\":{\"connections\":[{\"id\":\"onWaveEnded\",\"name\":\"The wave has beed ended\"}]},\"in\":{\"connections\":[{\"id\":\"startNextWave\",\"name\":\"Start the next wave\"}]}}",
+    "optionSchema": {
+        "options": [
+            {
+                "key": "startNewWaveChannel",
+                "option": {
+                    "label": "Start New Wave Channel",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    }
+                }
+            },
+            {
+                "key": "onWaveEndChannel",
+                "option": {
+                    "label": "On Wave End Channel",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    }
+                }
+            },
+            {
+                "key": "waveDuration",
+                "option": {
+                    "label": "Wave Duration",
+                    "description": "For how long the zombies will be spawned.",
+                    "type": "numberInput",
+                    "defaultValue": 30,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 6000,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            },
+            {
+                "key": "powerScore",
+                "option": {
+                    "label": "Power Score",
+                    "description": "The power score of the wave",
+                    "type": "numberInput",
+                    "defaultValue": 1000,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 999999999,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            },
+            {
+                "key": "powerScoreIncreasePerWave",
+                "option": {
+                    "label": "Power Score Increase Per Wave",
+                    "description": "The power score increase per wave",
+                    "type": "numberInput",
+                    "defaultValue": 250,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 999999,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            },
+            {
+                "key": "powerScoreIncreaseAdditionPerPlayer",
+                "option": {
+                    "label": "Power Score Increase Addition Per Player",
+                    "description": "The power score incrase addition per player",
+                    "type": "numberInput",
+                    "defaultValue": 100,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 999999,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            },
+            {
+                "key": "powerScoreIncreaseAdditionPerWavePerPlayer",
+                "option": {
+                    "label": "Power Score Increase Addition Per Wave Per Player",
+                    "description": "The power score incrase addition per player with each wave",
+                    "type": "numberInput",
+                    "defaultValue": 100,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 999999,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            },
+            {
+                "key": "globalHealthPercentageIncreasePerPlayer",
+                "option": {
+                    "label": "Global Health Percentage Increase Per Player",
+                    "description": "The global health multiplier per player",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 1000,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            },
+            {
+                "key": "globalDamagePercentageIncreasePerPlayer",
+                "option": {
+                    "label": "Global Damage Percentage Increase Per Player",
+                    "description": "The global damage multiplier per player",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 1000,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            },
+            {
+                "key": "targetDeviceId",
+                "option": {
+                    "label": "Target Device ID",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "The target device id that will be used for the zombies."
+                }
+            },
+            {
+                "key": "targetRadius",
+                "option": {
+                    "label": "Target Radius",
+                    "description": "The target radius for the zombies.",
+                    "type": "numberInput",
+                    "defaultValue": 100,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 999999999,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                }
+            }
+        ]
+    },
+    "defaultState": {},
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [
+            {
+                "type": "WHEN_NUMBER_OF_ZOMBIES_CHANGES",
+                "name": "When number of zombies changes..."
+            }
+        ],
+        "customBlocks": [
+            "active_zombies_count"
+        ]
+    },
+    "wireConfig": {
+        "out": {
+            "connections": [
+                {
+                    "id": "onWaveEnded",
+                    "name": "The wave has beed ended"
+                }
+            ]
+        },
+        "in": {
+            "connections": [
+                {
+                    "id": "startNextWave",
+                    "name": "Start the next wave"
+                }
+            ]
+        }
+    },
     "minimumRoleLevel": 90,
     "maxOnMap": 512,
     "initialMemoryCost": 0,

@@ -2,8 +2,359 @@
     "id": "characterSpawnPad",
     "name": "Spawn Pad",
     "description": "Set where players should be when the game begins",
-    "optionSchema": "{\"options\":[{\"key\":\"visibleInGame\",\"option\":{\"label\":\"Visible In-Game\",\"type\":\"select\",\"description\":\"Is the spawn pad visible when the game starts?\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}},{\"key\":\"phase\",\"option\":{\"label\":\"Use During Phase\",\"description\":\"Which phase of the game should this spawn pad be used?\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"All\",\"props\":{\"options\":[{\"value\":\"All\",\"name\":\"All\"},{\"value\":\"Game\",\"name\":\"Game\"},{\"value\":\"Pre-Game\",\"name\":\"Pre-Game\"}],\"allowEmpty\":false}}},{\"key\":\"teamId\",\"option\":{\"label\":\"Allowed Team\",\"description\":\"Which team can spawn at this spawn pad?\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"__ANY_TEAM__\",\"props\":{\"options\":[{\"name\":\"Any Team\",\"value\":\"__ANY_TEAM__\"},{\"name\":\"Team 1\",\"value\":\"1\"},{\"name\":\"Team 2\",\"value\":\"2\"},{\"name\":\"Team 3\",\"value\":\"3\"},{\"name\":\"Team 4\",\"value\":\"4\"},{\"name\":\"Team 5\",\"value\":\"5\"},{\"name\":\"Team 6\",\"value\":\"6\"},{\"name\":\"Team 7\",\"value\":\"7\"},{\"name\":\"Team 8\",\"value\":\"8\"},{\"name\":\"Team 9\",\"value\":\"9\"},{\"name\":\"Team 10\",\"value\":\"10\"},{\"name\":\"Team 11\",\"value\":\"11\"},{\"name\":\"Team 12\",\"value\":\"12\"},{\"name\":\"Team 13\",\"value\":\"13\"},{\"name\":\"Team 14\",\"value\":\"14\"},{\"name\":\"Team 15\",\"value\":\"15\"},{\"name\":\"Team 16\",\"value\":\"16\"},{\"name\":\"Team 17\",\"value\":\"17\"},{\"name\":\"Team 18\",\"value\":\"18\"},{\"name\":\"Team 19\",\"value\":\"19\"},{\"name\":\"Team 20\",\"value\":\"20\"},{\"name\":\"Team 21\",\"value\":\"21\"},{\"name\":\"Team 22\",\"value\":\"22\"},{\"name\":\"Team 23\",\"value\":\"23\"},{\"name\":\"Team 24\",\"value\":\"24\"},{\"name\":\"Team 25\",\"value\":\"25\"},{\"name\":\"Team 26\",\"value\":\"26\"},{\"name\":\"Team 27\",\"value\":\"27\"},{\"name\":\"Team 28\",\"value\":\"28\"},{\"name\":\"Team 29\",\"value\":\"29\"},{\"name\":\"Team 30\",\"value\":\"30\"},{\"name\":\"Team 31\",\"value\":\"31\"},{\"name\":\"Team 32\",\"value\":\"32\"},{\"name\":\"Team 33\",\"value\":\"33\"},{\"name\":\"Team 34\",\"value\":\"34\"},{\"name\":\"Team 35\",\"value\":\"35\"},{\"name\":\"Team 36\",\"value\":\"36\"},{\"name\":\"Team 37\",\"value\":\"37\"},{\"name\":\"Team 38\",\"value\":\"38\"},{\"name\":\"Team 39\",\"value\":\"39\"},{\"name\":\"Team 40\",\"value\":\"40\"},{\"name\":\"Team 41\",\"value\":\"41\"},{\"name\":\"Team 42\",\"value\":\"42\"},{\"name\":\"Team 43\",\"value\":\"43\"},{\"name\":\"Team 44\",\"value\":\"44\"},{\"name\":\"Team 45\",\"value\":\"45\"},{\"name\":\"Team 46\",\"value\":\"46\"},{\"name\":\"Team 47\",\"value\":\"47\"},{\"name\":\"Team 48\",\"value\":\"48\"},{\"name\":\"Team 49\",\"value\":\"49\"},{\"name\":\"Team 50\",\"value\":\"50\"},{\"name\":\"Team 51\",\"value\":\"51\"},{\"name\":\"Team 52\",\"value\":\"52\"},{\"name\":\"Team 53\",\"value\":\"53\"},{\"name\":\"Team 54\",\"value\":\"54\"},{\"name\":\"Team 55\",\"value\":\"55\"},{\"name\":\"Team 56\",\"value\":\"56\"},{\"name\":\"Team 57\",\"value\":\"57\"},{\"name\":\"Team 58\",\"value\":\"58\"},{\"name\":\"Team 59\",\"value\":\"59\"},{\"name\":\"Team 60\",\"value\":\"60\"}],\"allowEmpty\":false}}},{\"key\":\"characterType\",\"option\":{\"label\":\"Allowed Player Type\",\"description\":\"Which kinds of players can spawn at this spawn pad?\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"all\",\"props\":{\"options\":[{\"value\":\"all\",\"name\":\"Everybody\"},{\"value\":\"gameOwner\",\"name\":\"Game Host\"},{\"value\":\"nonGameOwner\",\"name\":\"Players\"}],\"allowEmpty\":false}}}]}",
-    "defaultState": "{}",
-    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
+    "optionSchema": {
+        "options": [
+            {
+                "key": "visibleInGame",
+                "option": {
+                    "label": "Visible In-Game",
+                    "type": "select",
+                    "description": "Is the spawn pad visible when the game starts?",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "phase",
+                "option": {
+                    "label": "Use During Phase",
+                    "description": "Which phase of the game should this spawn pad be used?",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "All",
+                    "props": {
+                        "options": [
+                            {
+                                "value": "All",
+                                "name": "All"
+                            },
+                            {
+                                "value": "Game",
+                                "name": "Game"
+                            },
+                            {
+                                "value": "Pre-Game",
+                                "name": "Pre-Game"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "teamId",
+                "option": {
+                    "label": "Allowed Team",
+                    "description": "Which team can spawn at this spawn pad?",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "__ANY_TEAM__",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Any Team",
+                                "value": "__ANY_TEAM__"
+                            },
+                            {
+                                "name": "Team 1",
+                                "value": "1"
+                            },
+                            {
+                                "name": "Team 2",
+                                "value": "2"
+                            },
+                            {
+                                "name": "Team 3",
+                                "value": "3"
+                            },
+                            {
+                                "name": "Team 4",
+                                "value": "4"
+                            },
+                            {
+                                "name": "Team 5",
+                                "value": "5"
+                            },
+                            {
+                                "name": "Team 6",
+                                "value": "6"
+                            },
+                            {
+                                "name": "Team 7",
+                                "value": "7"
+                            },
+                            {
+                                "name": "Team 8",
+                                "value": "8"
+                            },
+                            {
+                                "name": "Team 9",
+                                "value": "9"
+                            },
+                            {
+                                "name": "Team 10",
+                                "value": "10"
+                            },
+                            {
+                                "name": "Team 11",
+                                "value": "11"
+                            },
+                            {
+                                "name": "Team 12",
+                                "value": "12"
+                            },
+                            {
+                                "name": "Team 13",
+                                "value": "13"
+                            },
+                            {
+                                "name": "Team 14",
+                                "value": "14"
+                            },
+                            {
+                                "name": "Team 15",
+                                "value": "15"
+                            },
+                            {
+                                "name": "Team 16",
+                                "value": "16"
+                            },
+                            {
+                                "name": "Team 17",
+                                "value": "17"
+                            },
+                            {
+                                "name": "Team 18",
+                                "value": "18"
+                            },
+                            {
+                                "name": "Team 19",
+                                "value": "19"
+                            },
+                            {
+                                "name": "Team 20",
+                                "value": "20"
+                            },
+                            {
+                                "name": "Team 21",
+                                "value": "21"
+                            },
+                            {
+                                "name": "Team 22",
+                                "value": "22"
+                            },
+                            {
+                                "name": "Team 23",
+                                "value": "23"
+                            },
+                            {
+                                "name": "Team 24",
+                                "value": "24"
+                            },
+                            {
+                                "name": "Team 25",
+                                "value": "25"
+                            },
+                            {
+                                "name": "Team 26",
+                                "value": "26"
+                            },
+                            {
+                                "name": "Team 27",
+                                "value": "27"
+                            },
+                            {
+                                "name": "Team 28",
+                                "value": "28"
+                            },
+                            {
+                                "name": "Team 29",
+                                "value": "29"
+                            },
+                            {
+                                "name": "Team 30",
+                                "value": "30"
+                            },
+                            {
+                                "name": "Team 31",
+                                "value": "31"
+                            },
+                            {
+                                "name": "Team 32",
+                                "value": "32"
+                            },
+                            {
+                                "name": "Team 33",
+                                "value": "33"
+                            },
+                            {
+                                "name": "Team 34",
+                                "value": "34"
+                            },
+                            {
+                                "name": "Team 35",
+                                "value": "35"
+                            },
+                            {
+                                "name": "Team 36",
+                                "value": "36"
+                            },
+                            {
+                                "name": "Team 37",
+                                "value": "37"
+                            },
+                            {
+                                "name": "Team 38",
+                                "value": "38"
+                            },
+                            {
+                                "name": "Team 39",
+                                "value": "39"
+                            },
+                            {
+                                "name": "Team 40",
+                                "value": "40"
+                            },
+                            {
+                                "name": "Team 41",
+                                "value": "41"
+                            },
+                            {
+                                "name": "Team 42",
+                                "value": "42"
+                            },
+                            {
+                                "name": "Team 43",
+                                "value": "43"
+                            },
+                            {
+                                "name": "Team 44",
+                                "value": "44"
+                            },
+                            {
+                                "name": "Team 45",
+                                "value": "45"
+                            },
+                            {
+                                "name": "Team 46",
+                                "value": "46"
+                            },
+                            {
+                                "name": "Team 47",
+                                "value": "47"
+                            },
+                            {
+                                "name": "Team 48",
+                                "value": "48"
+                            },
+                            {
+                                "name": "Team 49",
+                                "value": "49"
+                            },
+                            {
+                                "name": "Team 50",
+                                "value": "50"
+                            },
+                            {
+                                "name": "Team 51",
+                                "value": "51"
+                            },
+                            {
+                                "name": "Team 52",
+                                "value": "52"
+                            },
+                            {
+                                "name": "Team 53",
+                                "value": "53"
+                            },
+                            {
+                                "name": "Team 54",
+                                "value": "54"
+                            },
+                            {
+                                "name": "Team 55",
+                                "value": "55"
+                            },
+                            {
+                                "name": "Team 56",
+                                "value": "56"
+                            },
+                            {
+                                "name": "Team 57",
+                                "value": "57"
+                            },
+                            {
+                                "name": "Team 58",
+                                "value": "58"
+                            },
+                            {
+                                "name": "Team 59",
+                                "value": "59"
+                            },
+                            {
+                                "name": "Team 60",
+                                "value": "60"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            },
+            {
+                "key": "characterType",
+                "option": {
+                    "label": "Allowed Player Type",
+                    "description": "Which kinds of players can spawn at this spawn pad?",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "all",
+                    "props": {
+                        "options": [
+                            {
+                                "value": "all",
+                                "name": "Everybody"
+                            },
+                            {
+                                "value": "gameOwner",
+                                "name": "Game Host"
+                            },
+                            {
+                                "value": "nonGameOwner",
+                                "name": "Players"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                }
+            }
+        ]
+    },
+    "defaultState": {},
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
     "maxOnMap": 200
 }
