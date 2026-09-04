@@ -66,7 +66,19 @@ export async function getMapContents(experience: any, authToken: string, mapsDir
         const onGotten = async () => {
             if(!terrain || !devices || !codeGrids) return;
 
-            await writeJson(join(mapsDir, `${experience._id}.json`), {
+            // Remove procedural terrain
+            const proceduralZones = devices.filter((d) => d.deviceId === "proceduralTerrainZone");
+            terrain = terrain.filter(({ x, y }) => {   
+                const worldX = x * 64;
+                const worldY = y * 64;
+                return !proceduralZones.some((zone) => (
+                    worldX > zone.x - zone.options.width / 2 && worldX < zone.x + zone.options.width / 2 &&
+                    worldY > zone.y - zone.options.height / 2 && worldY < zone.y + zone.options.height / 2
+                ));
+            });
+
+            const filename = experience.name.replace(/[^a-zA-Z0-9]/g, "");
+            await writeJson(join(mapsDir, `${filename}.json`), {
                 experience,
                 hooks,
                 terrain,
