@@ -119,13 +119,28 @@ export async function getMapContents(experience: any, authToken: string, mapsDir
 
         room.onMessage("TERRAIN_CHANGES", async (message) => {
             const val = (index: number) => message.added.terrains[index];
-            terrain = message.added.tiles.map((tile: any) => ({
-                x: tile[0],
-                y: tile[1],
-                terrain: val(tile[2]),
-                collides: tile[3] === 1,
-                depth: tile[4]
-            }));
+            terrain = [];
+            for(const tile of message.added.tiles) {
+                const baseTile = {
+                    terrain: val(tile[2]),
+                    collides: tile[3] === 1,
+                    depth: tile[4]
+                }
+
+                terrain.push({ x: tile[0], y: tile[1], ...baseTile });
+
+                if(tile[5]) {
+                    for(let i = 1; i <= tile[5]; i++) {
+                        terrain.push({ x: tile[0] + i, y: tile[1], ...baseTile });
+                    }
+                }
+
+                if(tile[6]) {
+                    for(let i = 1; i <= tile[6]; i++) {
+                        terrain.push({ x: tile[0], y: tile[1] + i, ...baseTile });
+                    }
+                }
+            }
             onGotten();
         });
         
