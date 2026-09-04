@@ -1,0 +1,52 @@
+{
+    "id": "medieval/fruit_box/orange",
+    "name": "Fruit Box (Oranges)",
+    "image": {
+        "path": "props/medieval/fruit_box/orange.png",
+        "width": 568,
+        "height": 552
+    },
+    "scale": 0.14,
+    "originX": 0.5,
+    "originY": 0.8,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 194.17,
+            "radiusX": 757.14,
+            "radiusY": 371.43
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 144.17,
+                    "width": 564.29,
+                    "height": 250,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 22.74,
+                    "width": 564.29,
+                    "height": 500,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

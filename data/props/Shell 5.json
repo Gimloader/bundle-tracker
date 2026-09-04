@@ -1,0 +1,29 @@
+{
+    "id": "Shell 5",
+    "name": "Shell",
+    "image": {
+        "path": "props/shells/shell_5.png",
+        "width": 60,
+        "height": 59
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.65,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

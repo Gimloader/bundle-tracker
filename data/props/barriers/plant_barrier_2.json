@@ -1,0 +1,52 @@
+{
+    "id": "barriers/plant_barrier_2",
+    "name": "Plant Barrier (Horizontal)",
+    "image": {
+        "path": "props/barriers/plant_barrier_2.png",
+        "width": 482,
+        "height": 351
+    },
+    "scale": 0.43,
+    "originX": 0.5,
+    "originY": 0.6,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 60.68,
+            "radiusX": 525.58,
+            "radiusY": 358.14
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 44.4,
+                    "width": 448.84,
+                    "height": 230.23,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0.22,
+                    "width": 481.4,
+                    "height": 346.51,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

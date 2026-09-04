@@ -1,0 +1,38 @@
+{
+    "id": "school_biome/art_materials/palette",
+    "name": "Art Palette",
+    "image": {
+        "path": "props/school_biome/art_materials/palette.png",
+        "width": 466,
+        "height": 388
+    },
+    "scale": 0.12,
+    "originX": 0.5,
+    "originY": 0,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -8.33,
+                    "y": -202.33,
+                    "radius": 158.33,
+                    "halfHeight": 83.33,
+                    "angle": 70
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

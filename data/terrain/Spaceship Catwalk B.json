@@ -1,0 +1,11 @@
+{
+    "id": "Spaceship Catwalk B",
+    "name": "Spaceship Catwalk (Grills)",
+    "maskTilesUrl": "tilesets/spaceship_catwalk/mask.png",
+    "borderTilesUrl": "tilesets/spaceship_catwalk/border.png",
+    "fillUrl": "tilesets/spaceship_catwalk/fill_b.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/spaceship_catwalk/preview_b.png"
+}

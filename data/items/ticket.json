@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "ticket",
+    "name": "Ticket",
+    "editorName": "Ticket",
+    "description": "Redeem for a reward!",
+    "previewImage": "inventory/resources/ticket.png"
+}

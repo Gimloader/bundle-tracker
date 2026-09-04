@@ -1,0 +1,45 @@
+{
+    "id": "wasteland_biome/wasteland_guide_book",
+    "name": "Guide Book",
+    "image": {
+        "path": "props/wasteland_biome/wasteland_guide_book.png",
+        "width": 341,
+        "height": 442
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 6.67,
+            "radiusX": 466.67,
+            "radiusY": 533.33
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 346.67,
+                    "height": 433.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

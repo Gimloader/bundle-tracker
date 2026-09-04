@@ -1,0 +1,74 @@
+{
+    "id": "bare-tree-2",
+    "name": "Snowy Bare Tree",
+    "image": {
+        "path": "props/trees/tree_bare_2.png",
+        "width": 536,
+        "height": 698
+    },
+    "scale": 0.27,
+    "originX": 0.5,
+    "originY": 0.92,
+    "shadows": [
+        {
+            "x": 14.81,
+            "y": 315.38,
+            "radiusX": 266.67,
+            "radiusY": 140.74
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 37.04,
+                    "y": 145.01,
+                    "width": 125.93,
+                    "height": 351.85,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 14.81,
+                    "y": 174.64,
+                    "width": 103.7,
+                    "height": 351.85,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 85.19,
+                    "y": -21.65,
+                    "radius": 185.19,
+                    "halfHeight": 18.52,
+                    "angle": 0
+                },
+                {
+                    "x": -100,
+                    "y": -58.69,
+                    "radius": 166.67,
+                    "halfHeight": 40.74,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -262.4,
+                    "radius": 92.59,
+                    "halfHeight": 18.52,
+                    "angle": 0
+                }
+            ]
+        }
+    }
+}

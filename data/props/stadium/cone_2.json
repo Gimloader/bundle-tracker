@@ -1,0 +1,60 @@
+{
+    "id": "stadium/cone_2",
+    "name": "Cone",
+    "image": {
+        "path": "props/stadium/cone_2.png",
+        "width": 312,
+        "height": 373
+    },
+    "scale": 0.16,
+    "originX": 0.5,
+    "originY": 0.91,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 71.68,
+            "radiusX": 387.5,
+            "radiusY": 337.5
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 71.68,
+                    "width": 312.5,
+                    "height": 231.25,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 71.68,
+                    "width": 312.5,
+                    "height": 231.25,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -65.82,
+                    "radius": 81.25,
+                    "halfHeight": 43.75,
+                    "angle": 0
+                }
+            ]
+        }
+    }
+}

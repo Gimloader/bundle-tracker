@@ -1,0 +1,57 @@
+{
+    "id": "Bush Pot 3",
+    "name": "Potted Plant",
+    "image": {
+        "path": "props/plants/bush_pot_3.png",
+        "width": 135,
+        "height": 136
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 50,
+            "radiusX": 128,
+            "radiusY": 60
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 18,
+                    "radius": 50
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -16,
+                    "radius": 54,
+                    "halfHeight": 16,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": 22,
+                    "radius": 50,
+                    "halfHeight": 6,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

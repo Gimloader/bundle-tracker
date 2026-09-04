@@ -1,0 +1,63 @@
+{
+    "id": "snowman",
+    "name": "Snowman",
+    "image": {
+        "path": "props/snowmen/snowman.png",
+        "width": 335,
+        "height": 548
+    },
+    "scale": 0.29,
+    "originX": 0.5,
+    "originY": 0.93,
+    "shadows": [
+        {
+            "x": 10.34,
+            "y": 245.98,
+            "radiusX": 441.38,
+            "radiusY": 137.93
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 97.71,
+                    "radius": 172.41
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -10.34,
+                    "y": -102.29,
+                    "width": 137.93,
+                    "height": 344.83,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -57.46,
+                    "width": 227.59,
+                    "height": 224.14,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": -3.45,
+                    "y": 114.95,
+                    "radius": 162.07
+                }
+            ],
+            "capsule": []
+        }
+    }
+}

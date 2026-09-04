@@ -1,0 +1,80 @@
+{
+    "id": "Horizontal Wooden Fence",
+    "name": "Wooden Fence (Horizontal)",
+    "image": {
+        "path": "props/farm/wooden_fence/horizontal.png",
+        "width": 951,
+        "height": 234
+    },
+    "scale": 0.35,
+    "originX": 0.5,
+    "originY": 0.82,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 97.74,
+            "radiusX": 1011.43,
+            "radiusY": 120
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 32.02,
+                    "width": 914.29,
+                    "height": 100,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 3.45,
+                    "width": 942.86,
+                    "height": 137.14,
+                    "angle": 0
+                },
+                {
+                    "x": -440,
+                    "y": 0.59,
+                    "width": 71.43,
+                    "height": 237.14,
+                    "angle": 0
+                },
+                {
+                    "x": -145.71,
+                    "y": -2.26,
+                    "width": 65.71,
+                    "height": 228.57,
+                    "angle": 0
+                },
+                {
+                    "x": 148.57,
+                    "y": 0.59,
+                    "width": 68.57,
+                    "height": 237.14,
+                    "angle": 0
+                },
+                {
+                    "x": 440,
+                    "y": 0.59,
+                    "width": 71.43,
+                    "height": 234.29,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

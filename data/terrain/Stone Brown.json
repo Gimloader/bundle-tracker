@@ -1,0 +1,11 @@
+{
+    "id": "Stone Brown",
+    "name": "Stone (Brown)",
+    "maskTilesUrl": "tilesets/stone/mask.png",
+    "borderTilesUrl": "tilesets/stone/brown_border.png",
+    "fillUrl": "tilesets/stone/brown_fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/stone/brown_preview.png"
+}

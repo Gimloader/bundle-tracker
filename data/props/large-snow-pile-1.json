@@ -1,0 +1,81 @@
+{
+    "id": "large-snow-pile-1",
+    "name": "Large Snow Pile",
+    "image": {
+        "path": "props/snow_piles/large/pile_1.png",
+        "width": 623,
+        "height": 244
+    },
+    "scale": 0.49,
+    "originX": 0.5,
+    "originY": 0.76,
+    "shadows": [
+        {
+            "x": -4.08,
+            "y": 92.01,
+            "radiusX": 693.88,
+            "radiusY": 142.86
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -30.61,
+                    "y": 63.44,
+                    "radius": 51.02,
+                    "halfHeight": 228.57,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 200,
+                    "y": 30.79,
+                    "width": 153.06,
+                    "height": 40.82,
+                    "angle": 40
+                },
+                {
+                    "x": 0,
+                    "y": 63.44,
+                    "width": 357.14,
+                    "height": 91.84,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -26.53,
+                    "y": 2.22,
+                    "radius": 114.29,
+                    "halfHeight": 63.27,
+                    "angle": 90
+                },
+                {
+                    "x": 183.67,
+                    "y": 83.85,
+                    "radius": 30.61,
+                    "halfHeight": 91.84,
+                    "angle": 90
+                },
+                {
+                    "x": -214.29,
+                    "y": 63.44,
+                    "radius": 51.02,
+                    "halfHeight": 51.02,
+                    "angle": 80
+                }
+            ]
+        }
+    }
+}

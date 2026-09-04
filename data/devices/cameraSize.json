@@ -1,0 +1,11 @@
+{
+    "id": "cameraSize",
+    "name": "Camera View",
+    "description": "Set the bounds that players are allowed to see within",
+    "optionSchema": "{\"options\":[{\"key\":\"width\",\"option\":{\"label\":\"Width\",\"type\":\"numberInput\",\"defaultValue\":1000,\"validators\":[null],\"props\":{\"min\":500,\"max\":50000},\"hidden\":true}},{\"key\":\"height\",\"option\":{\"label\":\"Height\",\"type\":\"numberInput\",\"defaultValue\":1000,\"validators\":[null],\"props\":{\"min\":500,\"max\":50000},\"hidden\":true}}]}",
+    "defaultState": "{}",
+    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
+    "maxOnMap": 128,
+    "initialMemoryCost": 150,
+    "subsequentMemoryCost": 150
+}

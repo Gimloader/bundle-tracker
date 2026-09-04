@@ -1,0 +1,8 @@
+{
+    "type": "active_zombies_count",
+    "message0": "Active Zombies Count",
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": "Number"
+}

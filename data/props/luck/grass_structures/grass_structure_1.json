@@ -1,0 +1,76 @@
+{
+    "id": "luck/grass_structures/grass_structure_1",
+    "name": "Grass Structure",
+    "image": {
+        "path": "props/luck/grass_structures/grass_structure_1.png",
+        "width": 769,
+        "height": 592
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 176.8,
+            "radiusX": 933.33,
+            "radiusY": 466.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 143.47,
+                    "width": 760,
+                    "height": 306.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -23.2,
+                    "radius": 66.67,
+                    "halfHeight": 306.67,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 143.47,
+                    "width": 760,
+                    "height": 306.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -23.2,
+                    "radius": 166.67,
+                    "halfHeight": 206.67,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -29.87,
+                    "radius": 266.67,
+                    "halfHeight": 33.33,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "minimumRoleLevel": 90
+}

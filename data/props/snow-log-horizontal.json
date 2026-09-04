@@ -1,0 +1,59 @@
+{
+    "id": "snow-log-horizontal",
+    "name": "Snowy Log (Horizontal)",
+    "image": {
+        "path": "props/logs/snow/log_horizontal.png",
+        "width": 624,
+        "height": 220
+    },
+    "scale": 0.31,
+    "originX": 0.5,
+    "originY": 0.96,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 85.07,
+            "radiusX": 677.42,
+            "radiusY": 141.94
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 46.36,
+                    "width": 580.65,
+                    "height": 129.03,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 20.55,
+                    "width": 625.81,
+                    "height": 180.65,
+                    "angle": 0
+                },
+                {
+                    "x": -170.97,
+                    "y": -69.77,
+                    "width": 70.97,
+                    "height": 80.65,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

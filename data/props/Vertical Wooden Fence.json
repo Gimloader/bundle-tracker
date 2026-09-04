@@ -1,0 +1,52 @@
+{
+    "id": "Vertical Wooden Fence",
+    "name": "Wooden Fence (Vertical)",
+    "image": {
+        "path": "props/farm/wooden_fence/vertical.png",
+        "width": 71,
+        "height": 794
+    },
+    "scale": 0.35,
+    "originX": 0.5,
+    "originY": 0.98,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 141.12,
+            "radiusX": 131.43,
+            "radiusY": 560
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 9.69,
+                    "width": 85.71,
+                    "height": 757.14,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -4.59,
+                    "width": 71.43,
+                    "height": 785.71,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

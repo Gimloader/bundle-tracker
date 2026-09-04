@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "gim-fish",
+    "name": "GimFish",
+    "editorName": "GimFish",
+    "description": "You're representing Gimkit...so look sharp.",
+    "previewImage": "inventory/resources/gimfish.png"
+}

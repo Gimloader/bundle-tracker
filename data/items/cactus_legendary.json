@@ -1,0 +1,21 @@
+{
+    "type": "weapon",
+    "id": "cactus_legendary",
+    "name": "Prickler",
+    "editorName": "Prickler (Legendary)",
+    "description": "Be careful, it's sharp!",
+    "previewImage": "inventory/weapons/cactus.png",
+    "rarity": "legendary",
+    "weapon": {
+        "type": "bullet",
+        "appearance": "cactus",
+        "shared": {
+            "cooldownBetweenShots": 200,
+            "allowAutoFire": false,
+            "startingProjectileDistanceFromCharacter": 0.4
+        },
+        "bullet": {
+            "ammoItemId": "medium-shards"
+        }
+    }
+}

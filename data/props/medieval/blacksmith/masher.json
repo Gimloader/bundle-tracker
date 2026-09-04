@@ -1,0 +1,67 @@
+{
+    "id": "medieval/blacksmith/masher",
+    "name": "Masher",
+    "image": {
+        "path": "props/medieval/blacksmith/masher.png",
+        "width": 691,
+        "height": 537
+    },
+    "scale": 0.09,
+    "originX": 0.5,
+    "originY": 0.72,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 162.58,
+            "radiusX": 933.33,
+            "radiusY": 444.44
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 11.11,
+                    "y": 162.58,
+                    "width": 611.11,
+                    "height": 222.22,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 11.11,
+                    "y": 162.58,
+                    "width": 611.11,
+                    "height": 222.22,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -70.75,
+                    "width": 688.89,
+                    "height": 244.44,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 33.33,
+                    "y": -104.08,
+                    "radius": 155.56,
+                    "halfHeight": 22.22,
+                    "angle": 0
+                }
+            ]
+        }
+    }
+}

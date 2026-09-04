@@ -1,0 +1,66 @@
+{
+    "id": "farm_wooden_bench",
+    "name": "Wooden Bench",
+    "image": {
+        "path": "props/farm/wooden_bench.png",
+        "width": 667,
+        "height": 239
+    },
+    "scale": 0.38,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 71.05,
+            "radiusX": 689.47,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -26.32,
+                    "width": 657.89,
+                    "height": 113.16,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -44.74,
+                    "width": 663.16,
+                    "height": 150,
+                    "angle": 0
+                },
+                {
+                    "x": 207.89,
+                    "y": 73.68,
+                    "width": 128.95,
+                    "height": 89.47,
+                    "angle": 0
+                },
+                {
+                    "x": -207.89,
+                    "y": 73.68,
+                    "width": 128.95,
+                    "height": 89.47,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "id": "Metal-Pole-1",
+    "name": "Metal Pole",
+    "image": {
+        "path": "props/signs/metal/pole1.png",
+        "width": 39,
+        "height": 570
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 271,
+            "radiusX": 84,
+            "radiusY": 56
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 277,
+                    "width": 40,
+                    "height": 16,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 1,
+                    "width": 40,
+                    "height": 572,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

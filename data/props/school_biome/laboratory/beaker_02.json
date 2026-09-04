@@ -1,0 +1,75 @@
+{
+    "id": "school_biome/laboratory/beaker_02",
+    "name": "Beaker",
+    "image": {
+        "path": "props/school_biome/laboratory/beaker_02.png",
+        "width": 341,
+        "height": 446
+    },
+    "scale": 0.12,
+    "originX": 0.5,
+    "originY": 0.86,
+    "shadows": [
+        {
+            "x": -16.67,
+            "y": 143.89,
+            "radiusX": 416.67,
+            "radiusY": 250
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -16.67,
+                    "y": 93.89,
+                    "radius": 125,
+                    "halfHeight": 16.67,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 66.67,
+                    "y": -64.44,
+                    "width": 166.67,
+                    "height": 166.67,
+                    "angle": 20
+                },
+                {
+                    "x": -83.33,
+                    "y": -164.44,
+                    "width": 58.33,
+                    "height": 125,
+                    "angle": -13
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -16.67,
+                    "y": 93.89,
+                    "radius": 125,
+                    "halfHeight": 16.67,
+                    "angle": 90
+                },
+                {
+                    "x": -16.67,
+                    "y": -47.77,
+                    "radius": 125,
+                    "halfHeight": 16.67,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

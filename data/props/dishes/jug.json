@@ -1,0 +1,52 @@
+{
+    "id": "dishes/jug",
+    "name": "Jug (Infested)",
+    "image": {
+        "path": "props/dishes/jug.png",
+        "width": 129,
+        "height": 140
+    },
+    "scale": 0.35,
+    "originX": 0.44,
+    "originY": 0.97,
+    "shadows": [
+        {
+            "x": -10.6,
+            "y": 57.23,
+            "radiusX": 125.71,
+            "radiusY": 40
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -13.45,
+                    "y": 22.94,
+                    "radius": 42.86,
+                    "halfHeight": 14.29,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -13.45,
+                    "y": 22.94,
+                    "radius": 42.86,
+                    "halfHeight": 14.29,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

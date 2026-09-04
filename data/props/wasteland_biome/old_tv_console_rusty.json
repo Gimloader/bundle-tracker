@@ -1,0 +1,100 @@
+{
+    "id": "wasteland_biome/old_tv_console_rusty",
+    "name": "Old TV Console (Rusty)",
+    "image": {
+        "path": "props/wasteland_biome/old_tv_console_rusty.png",
+        "width": 1063,
+        "height": 1052
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 200,
+            "y": -133.33,
+            "radiusX": 600,
+            "radiusY": 533.33
+        },
+        {
+            "x": -146.67,
+            "y": 133.33,
+            "radiusX": 466.67,
+            "radiusY": 333.33
+        },
+        {
+            "x": -146.67,
+            "y": 433.33,
+            "radiusX": 333.33,
+            "radiusY": 266.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 86.67,
+                    "y": -20,
+                    "radius": 166.67,
+                    "halfHeight": 300,
+                    "angle": 65
+                },
+                {
+                    "x": -146.67,
+                    "y": 433.33,
+                    "radius": 100,
+                    "halfHeight": 53.33,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 86.67,
+                    "y": -20,
+                    "radius": 166.67,
+                    "halfHeight": 300,
+                    "angle": 65
+                },
+                {
+                    "x": -146.67,
+                    "y": 433.33,
+                    "radius": 100,
+                    "halfHeight": 53.33,
+                    "angle": 90
+                },
+                {
+                    "x": 206.67,
+                    "y": -280,
+                    "radius": 200,
+                    "halfHeight": 66.67,
+                    "angle": 122
+                },
+                {
+                    "x": 0,
+                    "y": -266.67,
+                    "radius": 100,
+                    "halfHeight": 80,
+                    "angle": 0
+                },
+                {
+                    "x": -340,
+                    "y": -46.67,
+                    "radius": 66.67,
+                    "halfHeight": 133.33,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

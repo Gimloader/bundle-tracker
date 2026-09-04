@@ -1,0 +1,81 @@
+{
+    "id": "wasteland_biome/toyboxes",
+    "name": "Toy Boxes",
+    "image": {
+        "path": "props/wasteland_biome/toyboxes.png",
+        "width": 609,
+        "height": 785
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.98,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 303.47,
+            "radiusX": 533.33,
+            "radiusY": 306.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 110.13,
+                    "width": 453.33,
+                    "height": 566.67,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -56.53,
+                    "width": 600,
+                    "height": 266.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 110.13,
+                    "width": 453.33,
+                    "height": 566.67,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -56.53,
+                    "width": 600,
+                    "height": 266.67,
+                    "angle": 0
+                },
+                {
+                    "x": 40,
+                    "y": -189.87,
+                    "width": 433.33,
+                    "height": 266.67,
+                    "angle": 28
+                },
+                {
+                    "x": -126.67,
+                    "y": -203.2,
+                    "width": 266.67,
+                    "height": 233.33,
+                    "angle": 45
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

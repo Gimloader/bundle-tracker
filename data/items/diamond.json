@@ -1,0 +1,9 @@
+{
+    "type": "resource",
+    "id": "diamond",
+    "name": "Diamond",
+    "editorName": "Diamond",
+    "description": "Forged under pressure. Wielded with precision.",
+    "previewImage": "inventory/resources/diamond.png",
+    "minimumRoleLevel": 90
+}

@@ -1,0 +1,81 @@
+{
+    "id": "school_biome/teacher_chairs/chair_back",
+    "name": "Teacher Chair (Back)",
+    "image": {
+        "path": "props/school_biome/teacher_chairs/chair_back.png",
+        "width": 590,
+        "height": 518
+    },
+    "scale": 0.16,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 207.2,
+            "radiusX": 650,
+            "radiusY": 350
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 32.2,
+                    "width": 587.5,
+                    "height": 275,
+                    "angle": 0
+                },
+                {
+                    "x": 256.25,
+                    "y": 194.7,
+                    "width": 75,
+                    "height": 125,
+                    "angle": 0
+                },
+                {
+                    "x": -250,
+                    "y": 194.7,
+                    "width": 75,
+                    "height": 125,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -42.8,
+                    "width": 590,
+                    "height": 425,
+                    "angle": 0
+                },
+                {
+                    "x": 255,
+                    "y": 197.2,
+                    "width": 75,
+                    "height": 125,
+                    "angle": 0
+                },
+                {
+                    "x": -250,
+                    "y": 197.2,
+                    "width": 75,
+                    "height": 125,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

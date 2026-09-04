@@ -1,0 +1,59 @@
+{
+    "id": "stools/purple_seat",
+    "name": "Purple Seat",
+    "image": {
+        "path": "props/stools/purple_seat.png",
+        "width": 428,
+        "height": 415
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 166,
+            "radiusX": 280,
+            "radiusY": 160
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 66,
+                    "radius": 113.33,
+                    "halfHeight": 100,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -27.33,
+                    "radius": 180,
+                    "halfHeight": 33.33,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": 166,
+                    "radius": 33.33,
+                    "halfHeight": 33.33,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

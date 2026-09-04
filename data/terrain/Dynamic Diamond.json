@@ -1,0 +1,9 @@
+{
+    "id": "Dynamic Diamond",
+    "name": "Dynamic Diamond",
+    "maskTilesUrl": "tilesets/dynamic/mask.png",
+    "borderTilesUrl": "tilesets/dynamic/diamond/border.png",
+    "fillUrl": "tilesets/dynamic/diamond/fill.png",
+    "previewUrl": "tilesets/dynamic/diamond/preview.png",
+    "health": 1500
+}

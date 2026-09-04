@@ -1,0 +1,11 @@
+{
+    "id": "Spaceship Wall",
+    "name": "Spaceship Interior",
+    "maskTilesUrl": "tilesets/spaceship_wall/mask.png",
+    "borderTilesUrl": "tilesets/spaceship_wall/border.png",
+    "fillUrl": "tilesets/spaceship_wall/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/spaceship_wall/preview.png"
+}

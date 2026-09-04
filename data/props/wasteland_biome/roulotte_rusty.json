@@ -1,0 +1,110 @@
+{
+    "id": "wasteland_biome/roulotte_rusty",
+    "name": "Roulotte (Rusty)",
+    "image": {
+        "path": "props/wasteland_biome/roulotte_rusty.png",
+        "width": 1889,
+        "height": 1182
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.85,
+    "shadows": [
+        {
+            "x": -50,
+            "y": 353.7,
+            "radiusX": 1800,
+            "radiusY": 650
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 163.7,
+                    "width": 1890,
+                    "height": 625,
+                    "angle": 0
+                },
+                {
+                    "x": 100,
+                    "y": -161.3,
+                    "width": 1675,
+                    "height": 500,
+                    "angle": 0
+                },
+                {
+                    "x": -630,
+                    "y": -136.3,
+                    "width": 510,
+                    "height": 345,
+                    "angle": 35
+                }
+            ],
+            "circle": [
+                {
+                    "x": -620,
+                    "y": 478.7,
+                    "radius": 115
+                },
+                {
+                    "x": 380,
+                    "y": 473.7,
+                    "radius": 115
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -25,
+                    "y": 163.7,
+                    "width": 1815,
+                    "height": 625,
+                    "angle": 0
+                },
+                {
+                    "x": 135,
+                    "y": -161.3,
+                    "width": 1500,
+                    "height": 850,
+                    "angle": 0
+                },
+                {
+                    "x": -590,
+                    "y": -216.3,
+                    "width": 485,
+                    "height": 545,
+                    "angle": 38
+                },
+                {
+                    "x": 700,
+                    "y": -96.3,
+                    "width": 500,
+                    "height": 750,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": -620,
+                    "y": 478.7,
+                    "radius": 115
+                },
+                {
+                    "x": 380,
+                    "y": 473.7,
+                    "radius": 115
+                }
+            ],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

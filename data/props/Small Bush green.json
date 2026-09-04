@@ -1,0 +1,80 @@
+{
+    "id": "Small Bush green",
+    "name": "Green Bush (Small)",
+    "image": {
+        "path": "props/plants/bushes/small_green.png",
+        "width": 385,
+        "height": 274
+    },
+    "scale": 0.26,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 83.15,
+            "radiusX": 453.85,
+            "radiusY": 161.54
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 79.31,
+                    "radius": 38.46,
+                    "halfHeight": 126.92,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -42.31,
+                    "y": -39.92,
+                    "radius": 92.31,
+                    "halfHeight": 19.23,
+                    "angle": 90
+                },
+                {
+                    "x": -115.38,
+                    "y": 56.23,
+                    "radius": 57.69,
+                    "halfHeight": 19.23,
+                    "angle": 90
+                },
+                {
+                    "x": -19.23,
+                    "y": 83.15,
+                    "radius": 53.85,
+                    "halfHeight": 57.69,
+                    "angle": 90
+                },
+                {
+                    "x": 61.54,
+                    "y": -63,
+                    "radius": 57.69,
+                    "halfHeight": 7.69,
+                    "angle": 90
+                },
+                {
+                    "x": 115.38,
+                    "y": 33.15,
+                    "radius": 76.92,
+                    "halfHeight": 3.85,
+                    "angle": 0
+                }
+            ]
+        }
+    }
+}

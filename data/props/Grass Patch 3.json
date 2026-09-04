@@ -1,0 +1,31 @@
+{
+    "id": "Grass Patch 3",
+    "name": "Grass Patch 3",
+    "image": {
+        "path": "props/patches/grass_patch_3.png",
+        "width": 64,
+        "height": 64
+    },
+    "scale": 1,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "minimumRoleLevel": 90,
+    "defaultLayer": "DevicesUnderCharacters"
+}

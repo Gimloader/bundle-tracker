@@ -1,0 +1,11 @@
+{
+    "id": "Plastic Red",
+    "name": "Plastic (Red)",
+    "maskTilesUrl": "tilesets/plastic/mask.png",
+    "borderTilesUrl": "tilesets/plastic/red_border.png",
+    "fillUrl": "tilesets/plastic/red_fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/plastic/red_preview.png"
+}

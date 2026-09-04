@@ -1,0 +1,38 @@
+{
+    "id": "mining/mining_cart_rails_1",
+    "name": "Mining Cart Rails",
+    "image": {
+        "path": "props/mining/mining_cart_rails_1.png",
+        "width": 1023,
+        "height": 84
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 1020,
+                    "height": 80,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "minimumRoleLevel": 90
+}

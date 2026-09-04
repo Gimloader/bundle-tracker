@@ -1,0 +1,37 @@
+{
+    "id": "Space Trash 9",
+    "name": "Space Trash",
+    "image": {
+        "path": "props/space_props/trash_9.png",
+        "width": 244,
+        "height": 110
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -10,
+                    "y": 25,
+                    "radius": 30,
+                    "halfHeight": 70,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

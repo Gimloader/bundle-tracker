@@ -1,0 +1,109 @@
+{
+    "id": "school_biome/laboratory/bunsen_burner",
+    "name": "Bunsen Burner",
+    "image": {
+        "path": "props/school_biome/laboratory/bunsen_burner.png",
+        "width": 894,
+        "height": 578
+    },
+    "scale": 0.12,
+    "originX": 0.5,
+    "originY": 0.85,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 185.63,
+            "radiusX": 1000,
+            "radiusY": 400
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 291.67,
+                    "y": 185.63,
+                    "radius": 91.67,
+                    "halfHeight": 58.33,
+                    "angle": 90
+                },
+                {
+                    "x": -266.67,
+                    "y": 110.63,
+                    "radius": 150,
+                    "halfHeight": 33.33,
+                    "angle": 90
+                },
+                {
+                    "x": 291.67,
+                    "y": 102.3,
+                    "radius": 100,
+                    "halfHeight": 41.67,
+                    "angle": 90
+                },
+                {
+                    "x": 33.33,
+                    "y": 118.97,
+                    "radius": 41.67,
+                    "halfHeight": 158.33,
+                    "angle": 71
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 290,
+                    "y": 182.3,
+                    "radius": 90,
+                    "halfHeight": 60,
+                    "angle": 90
+                },
+                {
+                    "x": -270,
+                    "y": 22.3,
+                    "radius": 170,
+                    "halfHeight": 80,
+                    "angle": 0
+                },
+                {
+                    "x": 290,
+                    "y": 102.3,
+                    "radius": 100,
+                    "halfHeight": 40,
+                    "angle": 90
+                },
+                {
+                    "x": 30,
+                    "y": 122.3,
+                    "radius": 40,
+                    "halfHeight": 160,
+                    "angle": 71
+                },
+                {
+                    "x": -310,
+                    "y": -197.7,
+                    "radius": 100,
+                    "halfHeight": 20,
+                    "angle": 90
+                },
+                {
+                    "x": 290,
+                    "y": -97.7,
+                    "radius": 70,
+                    "halfHeight": 50,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

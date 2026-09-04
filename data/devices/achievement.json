@@ -1,0 +1,13 @@
+{
+    "id": "achievement",
+    "name": "Achievement",
+    "description": "Show an achievement UI",
+    "optionSchema": "{\"options\":[{\"key\":\"showChannel\",\"option\":{\"label\":\"Show achievement when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Show the achievement when the device receives a signal from the selected channel\"}},{\"key\":\"image\",\"option\":{\"label\":\"Image\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"}}},{\"key\":\"title\",\"option\":{\"label\":\"Title\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"}}},{\"key\":\"description\",\"option\":{\"label\":\"Description\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"}}},{\"key\":\"durationType\",\"option\":{\"label\":\"Duration Type\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"auto\",\"props\":{\"options\":[{\"value\":\"auto\",\"name\":\"Auto\"},{\"value\":\"manual\",\"name\":\"Manual\"}],\"allowEmpty\":false}}},{\"key\":\"customDurationSeconds\",\"option\":{\"label\":\"Custom Duration (seconds)\",\"type\":\"numberInput\",\"defaultValue\":5,\"validators\":[null],\"props\":{\"min\":1,\"max\":60,\"allowEmpty\":false,\"useSlider\":false},\"hideIf\":[[{\"key\":\"durationType\",\"compare\":\"EQUAL\",\"value\":\"auto\"}]]}}]}",
+    "defaultState": "{}",
+    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
+    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"show\",\"name\":\"Show achievement\"}]}}",
+    "minimumRoleLevel": 90,
+    "maxOnMap": 128,
+    "initialMemoryCost": 150,
+    "subsequentMemoryCost": 150
+}

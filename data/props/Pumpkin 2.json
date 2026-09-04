@@ -1,0 +1,52 @@
+{
+    "id": "Pumpkin 2",
+    "name": "Pumpkin",
+    "image": {
+        "path": "/props/farm/pumpkin/2.png",
+        "width": 245,
+        "height": 220
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.93,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 84.6,
+            "radiusX": 280,
+            "radiusY": 90
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 19.6,
+                    "radius": 70,
+                    "halfHeight": 50,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 14.6,
+                    "radius": 90,
+                    "halfHeight": 30,
+                    "angle": 99
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "id": "Desk",
+    "name": "Desk",
+    "image": {
+        "path": "props/office/desk.png",
+        "width": 497,
+        "height": 419
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 127.5,
+            "radiusX": 608,
+            "radiusY": 288
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 31.5,
+                    "width": 500,
+                    "height": 360,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -86.5,
+                    "width": 498,
+                    "height": 248,
+                    "angle": 0
+                },
+                {
+                    "x": 218,
+                    "y": 109.5,
+                    "width": 38,
+                    "height": 200,
+                    "angle": 0
+                },
+                {
+                    "x": -152,
+                    "y": 109.5,
+                    "width": 170,
+                    "height": 200,
+                    "angle": 0
+                },
+                {
+                    "x": 70,
+                    "y": 43.5,
+                    "width": 292,
+                    "height": 80,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

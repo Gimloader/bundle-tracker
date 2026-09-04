@@ -1,0 +1,12 @@
+{
+    "id": "Platformer Wall",
+    "name": "Brick",
+    "maskTilesUrl": "tilesets/platformer_wall/mask.png",
+    "borderTilesUrl": "tilesets/platformer_wall/border.png",
+    "fillUrl": "tilesets/platformer_wall/fill.png",
+    "blockedMapStyles": [
+        "topDown"
+    ],
+    "seasonTicketRequired": true,
+    "previewUrl": "tilesets/platformer_wall/preview.png"
+}

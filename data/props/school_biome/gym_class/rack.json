@@ -1,0 +1,75 @@
+{
+    "id": "school_biome/gym_class/rack",
+    "name": "Gym Ball Rack",
+    "image": {
+        "path": "props/school_biome/gym_class/rack.png",
+        "width": 1391,
+        "height": 1267
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.85,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 550.12,
+            "radiusX": 1466.67,
+            "radiusY": 466.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 90.12,
+                    "width": 1373.33,
+                    "height": 866.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": 620,
+                    "y": 556.78,
+                    "radius": 73.33
+                },
+                {
+                    "x": -620,
+                    "y": 563.45,
+                    "radius": 66.67
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -43.22,
+                    "width": 1373.33,
+                    "height": 1133.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": 620,
+                    "y": 556.78,
+                    "radius": 73.33
+                },
+                {
+                    "x": -620,
+                    "y": 563.45,
+                    "radius": 66.67
+                }
+            ],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "blueberry",
+    "name": "Blueberry",
+    "editorName": "Blueberry",
+    "description": "I really am more purple though, aren't I?",
+    "previewImage": "inventory/resources/blueberry.png"
+}

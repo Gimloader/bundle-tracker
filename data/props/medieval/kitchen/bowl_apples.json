@@ -1,0 +1,60 @@
+{
+    "id": "medieval/kitchen/bowl_apples",
+    "name": "Basket Of Apples",
+    "image": {
+        "path": "props/medieval/kitchen/bowl_apples.png",
+        "width": 541,
+        "height": 459
+    },
+    "scale": 0.13,
+    "originX": 0.5,
+    "originY": 0.86,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 157.55,
+            "radiusX": 538.46,
+            "radiusY": 246.15
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 149.86,
+                    "radius": 61.54,
+                    "halfHeight": 107.69,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 142.16,
+                    "width": 507.69,
+                    "height": 161.54,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -11.68,
+                    "radius": 138.46,
+                    "halfHeight": 130.77,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

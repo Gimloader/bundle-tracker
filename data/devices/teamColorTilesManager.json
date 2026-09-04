@@ -1,0 +1,13 @@
+{
+    "id": "teamColorTilesManager",
+    "name": "Team Color Tiles Manager",
+    "description": "Keep track of how much of a team color tiles a team has.",
+    "optionSchema": "{\"options\":[{\"key\":\"updateProperty\",\"option\":{\"label\":\"Use Property\",\"type\":\"select\",\"description\":\"Use a property to save the team tiles\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}},{\"key\":\"property\",\"option\":{\"label\":\"Property Name\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Property...\",\"category\":\"property\",\"maxLength\":64},\"description\":\"The property to save the team tiles\",\"hideIf\":[[{\"key\":\"updateProperty\",\"value\":true,\"compare\":\"NOT_EQUAL\"}]]}}]}",
+    "defaultState": "{}",
+    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
+    "wireConfig": "{}",
+    "minimumRoleLevel": 90,
+    "maxOnMap": 1,
+    "initialMemoryCost": 215,
+    "subsequentMemoryCost": 215
+}

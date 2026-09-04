@@ -1,0 +1,13 @@
+{
+    "type": "item",
+    "id": "terrain_dynamic_silver",
+    "name": "Dynamic Silver",
+    "editorName": "Dynamic Silver",
+    "description": "Build structures made of silver",
+    "previewImage": "inventory/items/terrain_dynamic_silver.png",
+    "rarity": "rare",
+    "useCommand": "Drop",
+    "consumeType": "buildTerrain",
+    "terrainId": "Dynamic Silver",
+    "maxStackSize": 50
+}

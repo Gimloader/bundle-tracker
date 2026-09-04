@@ -1,0 +1,124 @@
+{
+    "id": "wasteland_biome/ruins_07",
+    "name": "Ruins",
+    "image": {
+        "path": "props/wasteland_biome/ruins_07.png",
+        "width": 1073,
+        "height": 1459
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.85,
+    "shadows": [
+        {
+            "x": 25,
+            "y": 535.65,
+            "radiusX": 1070,
+            "radiusY": 370
+        },
+        {
+            "x": -425,
+            "y": 660.65,
+            "radiusX": 260,
+            "radiusY": 150
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 10,
+                    "y": 415.65,
+                    "width": 1000,
+                    "height": 375,
+                    "angle": 0
+                },
+                {
+                    "x": -290,
+                    "y": 10.65,
+                    "width": 400,
+                    "height": 625,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -425,
+                    "y": 635.65,
+                    "radius": 100,
+                    "halfHeight": 0,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 10,
+                    "y": 390.65,
+                    "width": 1000,
+                    "height": 425,
+                    "angle": 0
+                },
+                {
+                    "x": -225,
+                    "y": 140.65,
+                    "width": 525,
+                    "height": 475,
+                    "angle": 0
+                },
+                {
+                    "x": -445,
+                    "y": -384.35,
+                    "width": 100,
+                    "height": 700,
+                    "angle": 0
+                },
+                {
+                    "x": 185,
+                    "y": 185.65,
+                    "width": 75,
+                    "height": 250,
+                    "angle": 0
+                },
+                {
+                    "x": 455,
+                    "y": 210.65,
+                    "width": 105,
+                    "height": 275,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -325,
+                    "y": -264.35,
+                    "radius": 150,
+                    "halfHeight": 175,
+                    "angle": 0
+                },
+                {
+                    "x": -425,
+                    "y": 645.65,
+                    "radius": 85,
+                    "halfHeight": 35,
+                    "angle": 90
+                },
+                {
+                    "x": -125,
+                    "y": -239.35,
+                    "radius": 100,
+                    "halfHeight": 0,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

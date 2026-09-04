@@ -1,0 +1,12 @@
+{
+    "id": "playerPositionDetector",
+    "name": "Player Coordinates",
+    "description": "Detect when a player's position changes and get their coordinates",
+    "optionSchema": "{\"options\":[{\"key\":\"whenPositionChangeDetectedTransmitOn\",\"option\":{\"label\":\"When player position changes, transmit on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"When a player's position changes, the device sends a signal on the selected channel\"}},{\"key\":\"updateProperties\",\"option\":{\"label\":\"Update Properties\",\"type\":\"select\",\"description\":\"When a player's position changes, update a property\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}},{\"key\":\"xProperty\",\"option\":{\"label\":\"X Position Property\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Property...\",\"category\":\"property\",\"maxLength\":64},\"description\":\"The name of the property to update when the X position changes. Must be a number property to work correctly.\",\"hideIf\":[[{\"key\":\"updateProperties\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]}},{\"key\":\"yProperty\",\"option\":{\"label\":\"Y Position Property\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Property...\",\"category\":\"property\",\"maxLength\":64},\"description\":\"The name of the property to update when the Y position changes. Must be a number property to work correctly.\",\"hideIf\":[[{\"key\":\"updateProperties\",\"compare\":\"NOT_EQUAL\",\"value\":true}]]}}]}",
+    "defaultState": "{}",
+    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[{\"type\":\"On Player Position Change\",\"name\":\"When player position changes...\"}],\"customBlocks\":[\"player_position_detector_player_x_position\",\"player_position_detector_player_y_position\"]}",
+    "wireConfig": "{\"out\":{\"connections\":[{\"id\":\"positionChangeDetected\",\"name\":\"Position Change Detected\"}]}}",
+    "maxOnMap": 1,
+    "initialMemoryCost": 3500,
+    "subsequentMemoryCost": 3500
+}

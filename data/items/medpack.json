@@ -1,0 +1,10 @@
+{
+    "type": "item",
+    "id": "medpack",
+    "name": "Med Pack",
+    "editorName": "Med Pack",
+    "description": "Patch up and get back in the game!",
+    "previewImage": "inventory/items/medpack.png",
+    "rarity": "uncommon",
+    "maxStackSize": 2
+}

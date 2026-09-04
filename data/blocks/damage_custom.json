@@ -1,0 +1,20 @@
+{
+    "type": "damage_custom",
+    "message0": "Damage Player (Custom Amount) %1 Amount %2 ",
+    "args0": [
+        {
+            "type": "input_dummy"
+        },
+        {
+            "type": "input_value",
+            "name": "amount",
+            "check": "Number",
+            "align": "RIGHT"
+        }
+    ],
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "previousStatement": null,
+    "nextStatement": null
+}

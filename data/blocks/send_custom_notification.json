@@ -1,0 +1,26 @@
+{
+    "type": "send_custom_notification",
+    "message0": "Send Notification %1 Title %2 Content %3 ",
+    "args0": [
+        {
+            "type": "input_dummy"
+        },
+        {
+            "type": "input_value",
+            "name": "title",
+            "check": "String",
+            "align": "RIGHT"
+        },
+        {
+            "type": "input_value",
+            "name": "content",
+            "check": "String",
+            "align": "RIGHT"
+        }
+    ],
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "previousStatement": null,
+    "nextStatement": null
+}

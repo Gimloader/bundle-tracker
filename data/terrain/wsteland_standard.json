@@ -1,0 +1,12 @@
+{
+    "id": "wsteland_standard",
+    "name": "Wasteland",
+    "maskTilesUrl": "tilesets/wasteland/mask.png",
+    "borderTilesUrl": "tilesets/wasteland/border_standard.png",
+    "fillUrl": "tilesets/wasteland/fill_standard.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "seasonTicketRequired": true,
+    "previewUrl": "tilesets/wasteland/preview_standard.png"
+}

@@ -1,0 +1,66 @@
+{
+    "id": "Marble Sign 2",
+    "name": "Marble Sign",
+    "image": {
+        "path": "props/marble_signs/marble_sign_2.png",
+        "width": 408,
+        "height": 435
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 179.75,
+            "radiusX": 484,
+            "radiusY": 144
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 35.75,
+                    "width": 380,
+                    "height": 340,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -50.25,
+                    "width": 398,
+                    "height": 326,
+                    "angle": 0
+                },
+                {
+                    "x": -128,
+                    "y": 153.75,
+                    "width": 128,
+                    "height": 120,
+                    "angle": 0
+                },
+                {
+                    "x": 128,
+                    "y": 153.75,
+                    "width": 128,
+                    "height": 120,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "id": "space/containers/purple_on",
+    "name": "Purple Space Container (On)",
+    "image": {
+        "path": "props/space/containers/purple_on.png",
+        "width": 607,
+        "height": 757
+    },
+    "scale": 0.17,
+    "originX": 0.5,
+    "originY": 0.59,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 232.84,
+            "radiusX": 823.53,
+            "radiusY": 529.41
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 68.13,
+                    "width": 600,
+                    "height": 588.24,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -2.46,
+                    "width": 617.65,
+                    "height": 764.71,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

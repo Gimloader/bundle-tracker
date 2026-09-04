@@ -1,0 +1,74 @@
+{
+    "id": "mining/dirt_pile_1",
+    "name": "Dirt Pile",
+    "image": {
+        "path": "props/mining/dirt_pile_1.png",
+        "width": 946,
+        "height": 346
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 129,
+            "radiusX": 1072,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 125,
+                    "radius": 40,
+                    "halfHeight": 400,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 129,
+                    "radius": 44,
+                    "halfHeight": 432,
+                    "angle": 90
+                },
+                {
+                    "x": -12,
+                    "y": 93,
+                    "radius": 80,
+                    "halfHeight": 300,
+                    "angle": 90
+                },
+                {
+                    "x": 24,
+                    "y": 1,
+                    "radius": 80,
+                    "halfHeight": 196,
+                    "angle": 90
+                },
+                {
+                    "x": 36,
+                    "y": -7,
+                    "radius": 160,
+                    "halfHeight": 52,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "minimumRoleLevel": 90
+}

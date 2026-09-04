@@ -1,0 +1,53 @@
+{
+    "id": "school_biome/dining_room/dish_02",
+    "name": "Food Tray",
+    "image": {
+        "path": "props/school_biome/dining_room/dish_02.png",
+        "width": 290,
+        "height": 206
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 22.4,
+            "radiusX": 340,
+            "radiusY": 230
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 7.4,
+                    "width": 285,
+                    "height": 185,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 2.4,
+                    "width": 285,
+                    "height": 210,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

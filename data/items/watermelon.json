@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "watermelon",
+    "name": "Watermelon",
+    "editorName": "Watermelon",
+    "description": "Perfect for a hot summer day",
+    "previewImage": "inventory/resources/watermelon.png"
+}

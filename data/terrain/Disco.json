@@ -1,0 +1,11 @@
+{
+    "id": "Disco",
+    "name": "Disco",
+    "maskTilesUrl": "tilesets/disco/mask.png",
+    "borderTilesUrl": "tilesets/disco/border.png",
+    "fillUrl": "tilesets/disco/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/disco/preview.png"
+}

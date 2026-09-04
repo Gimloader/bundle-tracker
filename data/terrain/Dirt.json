@@ -1,0 +1,11 @@
+{
+    "id": "Dirt",
+    "name": "Dirt",
+    "maskTilesUrl": "tilesets/dirt/27_dirt_mask.png",
+    "borderTilesUrl": "tilesets/dirt/27_dirt_border.png",
+    "fillUrl": "tilesets/dirt/27_dirt_fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/dirt/27_dirt_preview.png"
+}

@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "coral-seed",
+    "name": "Coral Seed",
+    "editorName": "Coral Seed",
+    "description": "Grow something special.",
+    "previewImage": "inventory/resources/coral_seed.png"
+}

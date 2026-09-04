@@ -1,0 +1,21 @@
+{
+    "type": "weapon",
+    "id": "evil_eye_uncommon",
+    "name": "Evil Eye",
+    "editorName": "Evil Eye (Uncommon)",
+    "description": "Keep an eye on your target.",
+    "previewImage": "inventory/weapons/evil_eye.png",
+    "rarity": "uncommon",
+    "weapon": {
+        "type": "bullet",
+        "appearance": "evilEye",
+        "shared": {
+            "cooldownBetweenShots": 370,
+            "allowAutoFire": false,
+            "startingProjectileDistanceFromCharacter": 0.8
+        },
+        "bullet": {
+            "ammoItemId": "heavy-shards"
+        }
+    }
+}

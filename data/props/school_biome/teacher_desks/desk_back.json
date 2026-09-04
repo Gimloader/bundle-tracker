@@ -1,0 +1,89 @@
+{
+    "id": "school_biome/teacher_desks/desk_back",
+    "name": "Teacher Desk (Back)",
+    "image": {
+        "path": "props/school_biome/teacher_desks/desk_back.png",
+        "width": 1257,
+        "height": 993
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 300,
+            "radiusX": 1400,
+            "radiusY": 733.33
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 1266.67,
+                    "height": 533.33,
+                    "angle": 0
+                },
+                {
+                    "x": 553.33,
+                    "y": 366.67,
+                    "width": 80,
+                    "height": 246.67,
+                    "angle": 0
+                },
+                {
+                    "x": -553.33,
+                    "y": 366.67,
+                    "width": 80,
+                    "height": 233.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -60,
+                    "width": 1266.67,
+                    "height": 666.67,
+                    "angle": 0
+                },
+                {
+                    "x": 553.33,
+                    "y": 366.67,
+                    "width": 80,
+                    "height": 246.67,
+                    "angle": 0
+                },
+                {
+                    "x": -553.33,
+                    "y": 366.67,
+                    "width": 80,
+                    "height": 233.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 306.67,
+                    "y": -380,
+                    "radius": 73.33,
+                    "halfHeight": 60,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

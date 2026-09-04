@@ -1,0 +1,51 @@
+{
+    "id": "Metal-Sign-3",
+    "name": "Metal Sign",
+    "image": {
+        "path": "props/signs/metal/sign3.png",
+        "width": 285,
+        "height": 141
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -32,
+                    "y": 2.5,
+                    "width": 222,
+                    "height": 134,
+                    "angle": 0
+                },
+                {
+                    "x": 100,
+                    "y": 24.5,
+                    "width": 92,
+                    "height": 30,
+                    "angle": -45
+                },
+                {
+                    "x": 92,
+                    "y": -21.5,
+                    "width": 80,
+                    "height": 40,
+                    "angle": 45
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

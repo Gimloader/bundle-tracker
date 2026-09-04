@@ -1,0 +1,931 @@
+[
+    {
+        "id": "character_atom",
+        "name": "Adam"
+    },
+    {
+        "id": "character_astroCaptain",
+        "name": "Admiral Pulsar"
+    },
+    {
+        "id": "character_pilot",
+        "name": "Airheart"
+    },
+    {
+        "id": "character_fisher",
+        "name": "Angler"
+    },
+    {
+        "id": "character_axolotlBlue",
+        "name": "Axle (Blue)"
+    },
+    {
+        "id": "character_axolotlPink",
+        "name": "Axle (Pink)"
+    },
+    {
+        "id": "character_axolotlYellow",
+        "name": "Axle (Yellow)"
+    },
+    {
+        "id": "character_beetle",
+        "name": "Beetrix"
+    },
+    {
+        "id": "character_blastball",
+        "name": "BlastBro"
+    },
+    {
+        "id": "character_terrainBlock",
+        "name": "Block Party"
+    },
+    {
+        "id": "character_skeleton",
+        "name": "Bonesy"
+    },
+    {
+        "id": "character_calacaOne",
+        "name": "Calavera"
+    },
+    {
+        "id": "character_camoBlue",
+        "name": "Camo (Blue)"
+    },
+    {
+        "id": "character_camoTan",
+        "name": "Camo (Sand)"
+    },
+    {
+        "id": "character_incognito",
+        "name": "Capt. Camouflage"
+    },
+    {
+        "id": "character_pirate",
+        "name": "Captain Buck"
+    },
+    {
+        "id": "character_shark",
+        "name": "Carver Costume"
+    },
+    {
+        "id": "character_glyphsYellowBrown",
+        "name": "Cato"
+    },
+    {
+        "id": "character_cellGold",
+        "name": "Cell Snap (Gold)"
+    },
+    {
+        "id": "character_sprinklesChocolate",
+        "name": "Chocolate Sprinkles"
+    },
+    {
+        "id": "character_redDino",
+        "name": "Chompz"
+    },
+    {
+        "id": "character_redDinoCostume",
+        "name": "Chompz Costume"
+    },
+    {
+        "id": "character_hourglass",
+        "name": "Chronos"
+    },
+    {
+        "id": "character_clock",
+        "name": "Clock-O-Matic"
+    },
+    {
+        "id": "character_luckyClover",
+        "name": "Clover"
+    },
+    {
+        "id": "character_hotChocolate",
+        "name": "Cocoa Cup"
+    },
+    {
+        "id": "character_7thAnniversary",
+        "name": "Confettius"
+    },
+    {
+        "id": "character_constellationPurpleYellow",
+        "name": "Constellar"
+    },
+    {
+        "id": "character_constellationYellowPink",
+        "name": "Constellar (Lemonade)"
+    },
+    {
+        "id": "character_constellationBlackWhite",
+        "name": "Constellar (Midnight)"
+    },
+    {
+        "id": "character_constellationBlackGreen",
+        "name": "Constellar (Spooky)"
+    },
+    {
+        "id": "character_constellationPinkGreen",
+        "name": "Constellar (Sweet Galaxy)"
+    },
+    {
+        "id": "character_corn",
+        "name": "Cornelius"
+    },
+    {
+        "id": "character_defender",
+        "name": "Crimson Cruz"
+    },
+    {
+        "id": "character_cookie",
+        "name": "Crumble"
+    },
+    {
+        "id": "character_rainCloud",
+        "name": "Cumulus"
+    },
+    {
+        "id": "character_rollercoaster",
+        "name": "Custom Coaster"
+    },
+    {
+        "id": "character_daisy",
+        "name": "Daisy"
+    },
+    {
+        "id": "character_dayOne",
+        "name": "Day One"
+    },
+    {
+        "id": "character_detective",
+        "name": "Detective Baka"
+    },
+    {
+        "id": "character_8bitFox",
+        "name": "DODG3"
+    },
+    {
+        "id": "character_fox",
+        "name": "Dodge"
+    },
+    {
+        "id": "character_golden",
+        "name": "Dorado"
+    },
+    {
+        "id": "character_polkaDotFestiveReverse",
+        "name": "Dotty (Festive Flipped)"
+    },
+    {
+        "id": "character_polkaDotFestive",
+        "name": "Dotty (Festive)"
+    },
+    {
+        "id": "character_polkaDotWhiteAndRed",
+        "name": "Dotty (Snow & Berry)"
+    },
+    {
+        "id": "character_polkaDotBlueAndYellow",
+        "name": "Dotty (Water & Sun)"
+    },
+    {
+        "id": "character_miner",
+        "name": "Doug"
+    },
+    {
+        "id": "character_doc",
+        "name": "Dr. Synapse"
+    },
+    {
+        "id": "character_rainDrop",
+        "name": "Drizzle"
+    },
+    {
+        "id": "character_yinYang",
+        "name": "Duality"
+    },
+    {
+        "id": "character_echoAgent",
+        "name": "Echo Agent"
+    },
+    {
+        "id": "character_evilPlantGreen",
+        "name": "Evil Plant (Green)"
+    },
+    {
+        "id": "character_evilPlantPink",
+        "name": "Evil Plant (Pink)"
+    },
+    {
+        "id": "character_referee",
+        "name": "Fair Play"
+    },
+    {
+        "id": "character_feast",
+        "name": "Feast"
+    },
+    {
+        "id": "character_crashTestDummy",
+        "name": "Fender"
+    },
+    {
+        "id": "character_festiveOnesieBlue",
+        "name": "Festive Onesie (Blue)"
+    },
+    {
+        "id": "character_festiveOnesieGreen",
+        "name": "Festive Onesie (Green)"
+    },
+    {
+        "id": "character_festiveOnesieRed",
+        "name": "Festive Onesie (Red)"
+    },
+    {
+        "id": "character_festiveOnesieTan",
+        "name": "Festive Onesie (Yellow)"
+    },
+    {
+        "id": "character_taco",
+        "name": "Fiesta"
+    },
+    {
+        "id": "character_arcticFox",
+        "name": "Flurry"
+    },
+    {
+        "id": "character_circuitBlue",
+        "name": "Flux (Blue)"
+    },
+    {
+        "id": "character_circuitGray",
+        "name": "Flux (Gray)"
+    },
+    {
+        "id": "character_circuitGreen",
+        "name": "Flux (Green)"
+    },
+    {
+        "id": "character_bigEye",
+        "name": "Focus"
+    },
+    {
+        "id": "character_strawberry",
+        "name": "Fraise"
+    },
+    {
+        "id": "character_frankengim",
+        "name": "Frankengim"
+    },
+    {
+        "id": "character_artist",
+        "name": "Fresco"
+    },
+    {
+        "id": "character_viking",
+        "name": "Freya"
+    },
+    {
+        "id": "character_frostBuddy",
+        "name": "FrostBuddy"
+    },
+    {
+        "id": "character_snowman",
+        "name": "Frostington"
+    },
+    {
+        "id": "character_sockGremlin",
+        "name": "Fuzzfoot"
+    },
+    {
+        "id": "character_zombieGeckoGreen",
+        "name": "Geckasaurus"
+    },
+    {
+        "id": "character_ghostCostume",
+        "name": "Ghostume"
+    },
+    {
+        "id": "character_blastballGimchester",
+        "name": "Gimaldo"
+    },
+    {
+        "id": "character_8bitBlue",
+        "name": "Gimbit  (Cyan)"
+    },
+    {
+        "id": "character_8bit",
+        "name": "Gimbit  (Green)"
+    },
+    {
+        "id": "character_8bitPurple",
+        "name": "Gimbit  (Purple)"
+    },
+    {
+        "id": "character_8bitRed",
+        "name": "Gimbit  (Red)"
+    },
+    {
+        "id": "character_8bitYellow",
+        "name": "Gimbit  (Yellow)"
+    },
+    {
+        "id": "character_blastballKitcelona",
+        "name": "Gimessi"
+    },
+    {
+        "id": "character_costumeGimfish",
+        "name": "GimFish Guru"
+    },
+    {
+        "id": "character_glassHalfFull",
+        "name": "Glass Half Full"
+    },
+    {
+        "id": "character_turkey",
+        "name": "Gobble"
+    },
+    {
+        "id": "character_goldenHotChocolate",
+        "name": "Golden Cocoa"
+    },
+    {
+        "id": "character_graduate",
+        "name": "Graduate"
+    },
+    {
+        "id": "character_graduateBlue",
+        "name": "Graduate (Blue)"
+    },
+    {
+        "id": "character_grayGradient",
+        "name": "Graydient"
+    },
+    {
+        "id": "character_stripeDoubleGreen",
+        "name": "Green Split"
+    },
+    {
+        "id": "character_goat",
+        "name": "Gus"
+    },
+    {
+        "id": "character_penguinBlue",
+        "name": "Harold"
+    },
+    {
+        "id": "character_mountainAndSun",
+        "name": "Horizono"
+    },
+    {
+        "id": "character_paintCan",
+        "name": "Huebert"
+    },
+    {
+        "id": "character_causticWaterRed",
+        "name": "Hydro (Berry Blast)"
+    },
+    {
+        "id": "character_causticWaterOcean",
+        "name": "Hydro (Deep Sea)"
+    },
+    {
+        "id": "character_causticWaterBlue",
+        "name": "Hydro (Fishtopia)"
+    },
+    {
+        "id": "character_causticWaterCaribe",
+        "name": "Hydro (Lagoon)"
+    },
+    {
+        "id": "character_causticWaterGreen",
+        "name": "Hydro (Lime Time)"
+    },
+    {
+        "id": "character_causticWaterPurple",
+        "name": "Hydro (Purple Pond)"
+    },
+    {
+        "id": "character_yeti",
+        "name": "Icebeard"
+    },
+    {
+        "id": "character_fireSpirit",
+        "name": "Inferno"
+    },
+    {
+        "id": "character_trickTreat",
+        "name": "Jack-O-Treat"
+    },
+    {
+        "id": "character_puzzleGrayWhite",
+        "name": "Jigsaw (Black & White)"
+    },
+    {
+        "id": "character_puzzleGreenBlue",
+        "name": "Jigsaw (Green & Blue)"
+    },
+    {
+        "id": "character_puzzleRedGreen",
+        "name": "Jigsaw (Green & Magenta)"
+    },
+    {
+        "id": "character_puzzleOrangeBlue",
+        "name": "Jigsaw (Orange & Blue)"
+    },
+    {
+        "id": "character_puzzleYellowPurple",
+        "name": "Jigsaw (Purple & Lime)"
+    },
+    {
+        "id": "character_gimKing",
+        "name": "King Gimrick"
+    },
+    {
+        "id": "character_santaClaus",
+        "name": "Kit Claus"
+    },
+    {
+        "id": "character_fadedBlueGradient",
+        "name": "Kool"
+    },
+    {
+        "id": "character_redNinja",
+        "name": "Kynami"
+    },
+    {
+        "id": "character_luchador",
+        "name": "Libre"
+    },
+    {
+        "id": "character_floatingTube",
+        "name": "Life Saver"
+    },
+    {
+        "id": "character_heart",
+        "name": "Lovely"
+    },
+    {
+        "id": "character_autumnTree",
+        "name": "Maple"
+    },
+    {
+        "id": "character_smashedPotatoes",
+        "name": "Mash"
+    },
+    {
+        "id": "character_deadMariachi",
+        "name": "Melodioso"
+    },
+    {
+        "id": "character_watermelon",
+        "name": "Melody"
+    },
+    {
+        "id": "character_christmasTree",
+        "name": "Merrygreen"
+    },
+    {
+        "id": "character_miningCart",
+        "name": "MineRide"
+    },
+    {
+        "id": "character_hamster",
+        "name": "Niblet"
+    },
+    {
+        "id": "character_vampire",
+        "name": "Nocturne"
+    },
+    {
+        "id": "character_costumeOctopus",
+        "name": "Octo"
+    },
+    {
+        "id": "character_galaxy",
+        "name": "Orbit"
+    },
+    {
+        "id": "character_blacksmith",
+        "name": "Orehound"
+    },
+    {
+        "id": "character_christmasBall",
+        "name": "Ornamento"
+    },
+    {
+        "id": "character_mummy",
+        "name": "Ozi"
+    },
+    {
+        "id": "character_coolRedBlueGradient",
+        "name": "Peaceful Morning"
+    },
+    {
+        "id": "character_tent",
+        "name": "Peggie"
+    },
+    {
+        "id": "character_pencilPack",
+        "name": "Pencil Pack"
+    },
+    {
+        "id": "character_pinkPaste",
+        "name": "Pink Paste"
+    },
+    {
+        "id": "character_discoBall",
+        "name": "Pinky"
+    },
+    {
+        "id": "character_astroHelmet",
+        "name": "Polaris"
+    },
+    {
+        "id": "character_pufferFish",
+        "name": "Poppy"
+    },
+    {
+        "id": "character_gift",
+        "name": "Presento"
+    },
+    {
+        "id": "character_pufferJacket",
+        "name": "Puffer"
+    },
+    {
+        "id": "character_pumpkin",
+        "name": "Pumpgim"
+    },
+    {
+        "id": "character_pumpkinPie",
+        "name": "Pumpgim Pie"
+    },
+    {
+        "id": "character_purplePaste",
+        "name": "Purple Paste"
+    },
+    {
+        "id": "character_stripeDoublePurple",
+        "name": "Purple Split"
+    },
+    {
+        "id": "character_rainbowWave",
+        "name": "Rainbow Wave"
+    },
+    {
+        "id": "character_witch",
+        "name": "Raveena"
+    },
+    {
+        "id": "character_stripeDoubleRed",
+        "name": "Red Split"
+    },
+    {
+        "id": "character_sprinklesRed",
+        "name": "Red Sprinkles"
+    },
+    {
+        "id": "character_rudolph",
+        "name": "Reinkle"
+    },
+    {
+        "id": "character_rockstar",
+        "name": "Riff"
+    },
+    {
+        "id": "character_rockyWest",
+        "name": "Rocky West"
+    },
+    {
+        "id": "character_roses",
+        "name": "Rosalind"
+    },
+    {
+        "id": "character_winter",
+        "name": "Scarflet"
+    },
+    {
+        "id": "character_squiggles",
+        "name": "Scribblz"
+    },
+    {
+        "id": "character_farmer",
+        "name": "Seed Sid"
+    },
+    {
+        "id": "character_sentryRobot",
+        "name": "Sentry Robot"
+    },
+    {
+        "id": "character_wraith",
+        "name": "Shadeborn"
+    },
+    {
+        "id": "character_leprechaun",
+        "name": "Shamrock Sam"
+    },
+    {
+        "id": "character_knight",
+        "name": "Sirath"
+    },
+    {
+        "id": "character_firework",
+        "name": "SizzleStar"
+    },
+    {
+        "id": "character_mantis",
+        "name": "Skara"
+    },
+    {
+        "id": "character_sketch",
+        "name": "Sketch"
+    },
+    {
+        "id": "character_sketchBlue",
+        "name": "Sketch (Graph Paper)"
+    },
+    {
+        "id": "character_snowball",
+        "name": "Snowmuff"
+    },
+    {
+        "id": "character_snowglobe",
+        "name": "Snowsphere"
+    },
+    {
+        "id": "character_eclipse",
+        "name": "Solaria"
+    },
+    {
+        "id": "character_bananaSplit",
+        "name": "Splitzy"
+    },
+    {
+        "id": "character_dotsBluePink",
+        "name": "Spotlight (Dazzling)"
+    },
+    {
+        "id": "character_dotsYellowOrange",
+        "name": "Spotlight (Heat)"
+    },
+    {
+        "id": "character_dotsGreenBlue",
+        "name": "Spotlight (Jungle)"
+    },
+    {
+        "id": "character_dotsYellowPurple",
+        "name": "Spotlight (Late Night)"
+    },
+    {
+        "id": "character_dotsPurpleGreen",
+        "name": "Spotlight (Party)"
+    },
+    {
+        "id": "character_dotsPurpleYellow",
+        "name": "Spotlight (Sunrise)"
+    },
+    {
+        "id": "character_sproutingFlower",
+        "name": "Sprout"
+    },
+    {
+        "id": "character_spiderWeb",
+        "name": "Spyde"
+    },
+    {
+        "id": "character_mustache",
+        "name": "Stache"
+    },
+    {
+        "id": "character_mustacheBrown",
+        "name": "Stache (Brown)"
+    },
+    {
+        "id": "character_mustachePink",
+        "name": "Stache (Pink)"
+    },
+    {
+        "id": "character_mustacheSanta",
+        "name": "Stache Santa"
+    },
+    {
+        "id": "character_vanGogh",
+        "name": "Starry Night"
+    },
+    {
+        "id": "character_zebra",
+        "name": "Striperson"
+    },
+    {
+        "id": "character_whiteAndBlueVerticalStripes",
+        "name": "Stripy (Beach Towel)"
+    },
+    {
+        "id": "character_climber",
+        "name": "Summit Seeker"
+    },
+    {
+        "id": "character_sunny",
+        "name": "Sunny"
+    },
+    {
+        "id": "character_diamondRainbow",
+        "name": "Sunset Diamond"
+    },
+    {
+        "id": "character_fifthBirthday",
+        "name": "Sweet Celebration"
+    },
+    {
+        "id": "character_volcanoCracks",
+        "name": "Tectonic Rumbles"
+    },
+    {
+        "id": "character_tuxedo",
+        "name": "The Broker"
+    },
+    {
+        "id": "character_brainJar",
+        "name": "The Experiment"
+    },
+    {
+        "id": "character_wavesApple",
+        "name": "Tidal (Apple)"
+    },
+    {
+        "id": "character_wavesBorealis",
+        "name": "Tidal (Borealis)"
+    },
+    {
+        "id": "character_wavesNight",
+        "name": "Tidal (Deep Sleep)"
+    },
+    {
+        "id": "character_wavesFantasy",
+        "name": "Tidal (Fantasy)"
+    },
+    {
+        "id": "character_wavesFire",
+        "name": "Tidal (Fire)"
+    },
+    {
+        "id": "character_wavesIcecream",
+        "name": "Tidal (Ice Cream)"
+    },
+    {
+        "id": "character_wavesCalmSea",
+        "name": "Tidal (Ocean)"
+    },
+    {
+        "id": "character_wavesCandy",
+        "name": "Tidal (Taffy)"
+    },
+    {
+        "id": "character_marshmallow",
+        "name": "Toasty"
+    },
+    {
+        "id": "character_partyPineapple",
+        "name": "Tropicool"
+    },
+    {
+        "id": "character_zombieTruckPurple",
+        "name": "Truck-A-Tron"
+    },
+    {
+        "id": "character_valenTime",
+        "name": "Valentime"
+    },
+    {
+        "id": "character_tennisPlayer",
+        "name": "Volley"
+    },
+    {
+        "id": "character_yellowCracksPurple",
+        "name": "Vordon"
+    },
+    {
+        "id": "character_vortexAgent",
+        "name": "Vortex Agent"
+    },
+    {
+        "id": "character_whistle",
+        "name": "Whistler"
+    },
+    {
+        "id": "character_candle",
+        "name": "Wick"
+    },
+    {
+        "id": "character_stripeDoubleYellow",
+        "name": "Yellow Split"
+    },
+    {
+        "id": "character_mountain",
+        "name": "Zenith"
+    },
+    {
+        "id": "character_zombieGeckoGrey",
+        "name": "zombieGeckoGrey",
+        "minimumRoleLevel": 90
+    },
+    {
+        "id": "character_zombieGeckoPurple",
+        "name": "zombieGeckoPurple",
+        "minimumRoleLevel": 90
+    },
+    {
+        "id": "character_zombieBasicGrey",
+        "name": "zombieBasicGrey",
+        "minimumRoleLevel": 90
+    },
+    {
+        "id": "character_zombieBasicPurple",
+        "name": "zombieBasicPurple",
+        "minimumRoleLevel": 90
+    },
+    {
+        "id": "character_zombieBasicTan",
+        "name": "zombieBasicTan",
+        "minimumRoleLevel": 90
+    },
+    {
+        "id": "character_zombieCactusBrightGreen",
+        "name": "zombieCactusBrightGreen",
+        "minimumRoleLevel": 90
+    },
+    {
+        "id": "character_zombieCactusGreen",
+        "name": "zombieCactusGreen",
+        "minimumRoleLevel": 90
+    },
+    {
+        "id": "character_zombieCactusPurple",
+        "name": "zombieCactusPurple",
+        "minimumRoleLevel": 90
+    },
+    {
+        "id": "character_zombieCageGrey",
+        "name": "zombieCageGrey",
+        "minimumRoleLevel": 90
+    },
+    {
+        "id": "character_zombieCagePurple",
+        "name": "zombieCagePurple",
+        "minimumRoleLevel": 90
+    },
+    {
+        "id": "character_zombieCageTan",
+        "name": "zombieCageTan",
+        "minimumRoleLevel": 90
+    },
+    {
+        "id": "character_zombieRockDarkGrey",
+        "name": "zombieRockDarkGrey",
+        "minimumRoleLevel": 90
+    },
+    {
+        "id": "character_zombieRockGrey",
+        "name": "zombieRockGrey",
+        "minimumRoleLevel": 90
+    },
+    {
+        "id": "character_zombieRockPurple",
+        "name": "zombieRockPurple",
+        "minimumRoleLevel": 90
+    },
+    {
+        "id": "character_zombieTornadoBrown",
+        "name": "zombieTornadoBrown",
+        "minimumRoleLevel": 90
+    },
+    {
+        "id": "character_zombieTornadoGreen",
+        "name": "zombieTornadoGreen",
+        "minimumRoleLevel": 90
+    },
+    {
+        "id": "character_zombieTornadoPurple",
+        "name": "zombieTornadoPurple",
+        "minimumRoleLevel": 90
+    },
+    {
+        "id": "character_zombieTruckGreen",
+        "name": "zombieTruckGreen",
+        "minimumRoleLevel": 90
+    },
+    {
+        "id": "character_zombieTruckGrey",
+        "name": "zombieTruckGrey",
+        "minimumRoleLevel": 90
+    },
+    {
+        "id": "character_frozenMummy",
+        "name": "frozenMummy",
+        "minimumRoleLevel": 90
+    },
+    {
+        "id": "character_mayorCoal",
+        "name": "mayorCoal",
+        "minimumRoleLevel": 90
+    }
+]

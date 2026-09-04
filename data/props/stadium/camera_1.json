@@ -1,0 +1,80 @@
+{
+    "id": "stadium/camera_1",
+    "name": "Camera",
+    "image": {
+        "path": "props/stadium/camera_1.png",
+        "width": 762,
+        "height": 811
+    },
+    "scale": 0.15,
+    "originX": 0.54,
+    "originY": 0.94,
+    "shadows": [
+        {
+            "x": 43.81,
+            "y": 163.51,
+            "radiusX": 560,
+            "radiusY": 493.33
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 43.81,
+                    "y": 170.17,
+                    "radius": 233.33,
+                    "halfHeight": 40,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 43.81,
+                    "y": 123.51,
+                    "width": 120,
+                    "height": 566.67,
+                    "angle": -3
+                },
+                {
+                    "x": -69.52,
+                    "y": 43.51,
+                    "width": 100,
+                    "height": 466.67,
+                    "angle": 35
+                },
+                {
+                    "x": 157.15,
+                    "y": 30.17,
+                    "width": 100,
+                    "height": 366.67,
+                    "angle": -50
+                },
+                {
+                    "x": 97.15,
+                    "y": -203.16,
+                    "width": 566.67,
+                    "height": 320,
+                    "angle": 0
+                },
+                {
+                    "x": -169.52,
+                    "y": -263.16,
+                    "width": 446.67,
+                    "height": 166.67,
+                    "angle": 20
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

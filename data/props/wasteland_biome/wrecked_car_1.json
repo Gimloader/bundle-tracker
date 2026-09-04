@@ -1,0 +1,56 @@
+{
+    "id": "wasteland_biome/wrecked_car_1",
+    "name": "Wrecked Car",
+    "image": {
+        "path": "props/wasteland_biome/wrecked_car_1.png",
+        "width": 1745,
+        "height": 1511
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.6,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 276.1,
+            "radiusX": 1700,
+            "radiusY": 1200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": -450,
+                    "y": 251.1,
+                    "radius": 125
+                },
+                {
+                    "x": 160,
+                    "y": 566.1,
+                    "radius": 125
+                }
+            ],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 151.1,
+                    "radius": 330,
+                    "halfHeight": 595,
+                    "angle": 120
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

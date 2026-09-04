@@ -1,0 +1,21 @@
+{
+    "type": "weapon",
+    "id": "quantum_portal_common",
+    "name": "Quantum Portal",
+    "editorName": "Quantum Portal (Common)",
+    "description": "Blast the competition into a new dimension.",
+    "previewImage": "inventory/weapons/quantum_portal.png",
+    "rarity": "common",
+    "weapon": {
+        "type": "bullet",
+        "appearance": "quantumPortal",
+        "shared": {
+            "cooldownBetweenShots": 0,
+            "allowAutoFire": false,
+            "startingProjectileDistanceFromCharacter": 0.6
+        },
+        "bullet": {
+            "ammoItemId": "heavy-shards"
+        }
+    }
+}

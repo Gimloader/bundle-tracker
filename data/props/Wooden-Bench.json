@@ -1,0 +1,98 @@
+{
+    "id": "Wooden-Bench",
+    "name": "Wooden Bench",
+    "image": {
+        "path": "props/park/wooden_bench.png",
+        "width": 806,
+        "height": 471
+    },
+    "scale": 0.34,
+    "originX": 0.5,
+    "originY": 0.59,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 201.21,
+            "radiusX": 876.47,
+            "radiusY": 229.41
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 51.21,
+                    "width": 802.94,
+                    "height": 170.59,
+                    "angle": 0
+                },
+                {
+                    "x": -364.71,
+                    "y": 183.57,
+                    "width": 52.94,
+                    "height": 102.94,
+                    "angle": 0
+                },
+                {
+                    "x": 364.71,
+                    "y": 183.57,
+                    "width": 52.94,
+                    "height": 102.94,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 7.1,
+                    "width": 802.94,
+                    "height": 261.76,
+                    "angle": 0
+                },
+                {
+                    "x": -364.71,
+                    "y": 183.57,
+                    "width": 52.94,
+                    "height": 102.94,
+                    "angle": 0
+                },
+                {
+                    "x": 364.71,
+                    "y": 183.57,
+                    "width": 52.94,
+                    "height": 102.94,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -84.08,
+                    "width": 573.53,
+                    "height": 294.12,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": -279.41,
+                    "y": -113.49,
+                    "radius": 117.65
+                },
+                {
+                    "x": 279.41,
+                    "y": -113.49,
+                    "radius": 117.65
+                }
+            ],
+            "capsule": []
+        }
+    }
+}

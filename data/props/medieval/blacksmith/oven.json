@@ -1,0 +1,81 @@
+{
+    "id": "medieval/blacksmith/oven",
+    "name": "Wood Fired Oven",
+    "image": {
+        "path": "props/medieval/blacksmith/oven.png",
+        "width": 1102,
+        "height": 1142
+    },
+    "scale": 0.23,
+    "originX": 0.5,
+    "originY": 0.78,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 454.54,
+            "radiusX": 1252.17,
+            "radiusY": 434.78
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 271.93,
+                    "width": 1000,
+                    "height": 565.22,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 271.93,
+                    "width": 1000,
+                    "height": 569.57,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -75.89,
+                    "width": 1091.3,
+                    "height": 239.13,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -256.52,
+                    "y": -184.59,
+                    "radius": 195.65,
+                    "halfHeight": 56.52,
+                    "angle": 63
+                },
+                {
+                    "x": 256.52,
+                    "y": -184.59,
+                    "radius": 195.65,
+                    "halfHeight": 56.52,
+                    "angle": 112
+                },
+                {
+                    "x": 0,
+                    "y": -441.11,
+                    "radius": 130.43,
+                    "halfHeight": 165.22,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

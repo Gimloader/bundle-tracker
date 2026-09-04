@@ -1,0 +1,18 @@
+{
+    "type": "weapon",
+    "id": "pickaxe_uncommon",
+    "name": "Pickaxe",
+    "editorName": "Pickaxe (Uncommon)",
+    "description": "Dig deep.",
+    "previewImage": "inventory/weapons/pickaxe.png",
+    "rarity": "uncommon",
+    "weapon": {
+        "type": "melee",
+        "appearance": "pickaxe",
+        "shared": {
+            "cooldownBetweenShots": 550,
+            "allowAutoFire": true,
+            "startingProjectileDistanceFromCharacter": 0.8
+        }
+    }
+}

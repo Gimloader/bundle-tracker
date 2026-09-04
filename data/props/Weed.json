@@ -1,0 +1,29 @@
+{
+    "id": "Weed",
+    "name": "Pond Grass",
+    "image": {
+        "path": "props/plants/weed.png",
+        "width": 82,
+        "height": 67
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "id": "medieval/kitchen/jar_3",
+    "name": "Medieval Pitcher (Purple)",
+    "image": {
+        "path": "props/medieval/kitchen/jar_3.png",
+        "width": 500,
+        "height": 479
+    },
+    "scale": 0.12,
+    "originX": 0.5,
+    "originY": 0.8,
+    "shadows": [
+        {
+            "x": -50,
+            "y": 152.03,
+            "radiusX": 516.67,
+            "radiusY": 250
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -50,
+                    "y": 152.03,
+                    "radius": 75,
+                    "halfHeight": 66.67,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": -33.33,
+                    "y": 68.7,
+                    "radius": 141.67
+                }
+            ],
+            "capsule": [
+                {
+                    "x": 25,
+                    "y": 2.03,
+                    "radius": 100,
+                    "halfHeight": 58.33,
+                    "angle": 298
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "id": "school_biome/class_supplies/school_book_02",
+    "name": "Book (History)",
+    "image": {
+        "path": "props/school_biome/class_supplies/school_book_02.png",
+        "width": 290,
+        "height": 360
+    },
+    "scale": 0.13,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 30.77,
+            "radiusX": 415.38,
+            "radiusY": 384.62
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 23.08,
+                    "width": 292.31,
+                    "height": 300,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 7.69,
+                    "y": 0,
+                    "width": 292.31,
+                    "height": 353.85,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

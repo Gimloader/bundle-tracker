@@ -1,0 +1,8 @@
+{
+    "type": "seconds_into_game",
+    "message0": "Seconds Into Game",
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": "Number"
+}

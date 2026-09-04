@@ -1,0 +1,11 @@
+{
+    "id": "Sand",
+    "name": "Sand",
+    "maskTilesUrl": "tilesets/sand/mask.png",
+    "borderTilesUrl": "tilesets/sand/border.png",
+    "fillUrl": "tilesets/sand/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/sand/preview.png"
+}

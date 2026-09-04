@@ -1,0 +1,60 @@
+{
+    "id": "wasteland_biome/tape",
+    "name": "Tape",
+    "image": {
+        "path": "props/wasteland_biome/tape.png",
+        "width": 287,
+        "height": 280
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.89,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 34.2,
+            "radiusX": 300,
+            "radiusY": 250
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 59.2,
+                    "radius": 100,
+                    "halfHeight": 50,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -20,
+                    "y": -0.8,
+                    "radius": 125,
+                    "halfHeight": 10,
+                    "angle": 0
+                },
+                {
+                    "x": 50,
+                    "y": 89.2,
+                    "radius": 50,
+                    "halfHeight": 50,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

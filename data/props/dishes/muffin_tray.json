@@ -1,0 +1,59 @@
+{
+    "id": "dishes/muffin_tray",
+    "name": "Muffin Tray",
+    "image": {
+        "path": "props/dishes/muffin_tray.png",
+        "width": 505,
+        "height": 403
+    },
+    "scale": 0.16,
+    "originX": 0.5,
+    "originY": 0.66,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 1.98,
+                    "width": 262.5,
+                    "height": 337.5,
+                    "angle": -50
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 50,
+                    "y": 14.48,
+                    "width": 262.5,
+                    "height": 306.25,
+                    "angle": -48
+                },
+                {
+                    "x": -62.5,
+                    "y": -23.02,
+                    "width": 237.5,
+                    "height": 250,
+                    "angle": -38
+                },
+                {
+                    "x": -12.5,
+                    "y": -154.27,
+                    "width": 93.75,
+                    "height": 93.75,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "id": "Stone Dark",
+    "name": "Stone (Dark)",
+    "maskTilesUrl": "tilesets/stone/mask.png",
+    "borderTilesUrl": "tilesets/stone/dark_border.png",
+    "fillUrl": "tilesets/stone/dark_fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/stone/dark_preview.png"
+}

@@ -1,0 +1,49 @@
+{
+    "id": "Metal Shovel Standing",
+    "name": "Metal Shovel (Standing)",
+    "image": {
+        "path": "/props/farm/metal_shovel/standing.png",
+        "width": 240,
+        "height": 447
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": -25,
+                    "y": 141.15,
+                    "radius": 65
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 15,
+                    "y": -8.85,
+                    "width": 110,
+                    "height": 425,
+                    "angle": 15
+                }
+            ],
+            "circle": [
+                {
+                    "x": -25,
+                    "y": 141.15,
+                    "radius": 65
+                }
+            ],
+            "capsule": []
+        }
+    }
+}

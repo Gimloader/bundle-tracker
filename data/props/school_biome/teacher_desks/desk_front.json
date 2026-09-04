@@ -1,0 +1,74 @@
+{
+    "id": "school_biome/teacher_desks/desk_front",
+    "name": "Teacher Desk (Front)",
+    "image": {
+        "path": "props/school_biome/teacher_desks/desk_front.png",
+        "width": 1257,
+        "height": 884
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.89,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 311.43,
+            "radiusX": 1333.33,
+            "radiusY": 600
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 78.09,
+                    "width": 1266.67,
+                    "height": 726.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -115.24,
+                    "width": 1266.67,
+                    "height": 646.67,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 244.76,
+                    "width": 1193.33,
+                    "height": 233.33,
+                    "angle": 0
+                },
+                {
+                    "x": 553.33,
+                    "y": 344.76,
+                    "width": 80,
+                    "height": 200,
+                    "angle": 0
+                },
+                {
+                    "x": -560,
+                    "y": 344.76,
+                    "width": 66.67,
+                    "height": 200,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

@@ -1,0 +1,37 @@
+{
+    "id": "Sign 6",
+    "name": "Wooden Sign",
+    "image": {
+        "path": "props/signs/sign_6.png",
+        "width": 298,
+        "height": 150
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 2,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -1,
+                    "width": 280,
+                    "height": 144,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

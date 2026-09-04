@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "cash-berry",
+    "name": "Cash Berry",
+    "editorName": "Cash Berry",
+    "description": "Money does grow on trees!",
+    "previewImage": "inventory/resources/cash_berry.png"
+}

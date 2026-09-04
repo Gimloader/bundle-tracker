@@ -1,0 +1,52 @@
+{
+    "id": "medieval/sand_pile",
+    "name": "Sand Pile",
+    "image": {
+        "path": "props/medieval/sand_pile.png",
+        "width": 753,
+        "height": 365
+    },
+    "scale": 0.22,
+    "originX": 0.5,
+    "originY": 0.75,
+    "shadows": [
+        {
+            "x": -18.18,
+            "y": 91.25,
+            "radiusX": 836.36,
+            "radiusY": 300
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -72.73,
+                    "y": 68.52,
+                    "radius": 90.91,
+                    "halfHeight": 213.64,
+                    "angle": 94
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 4.55,
+                    "y": -8.75,
+                    "radius": 172.73,
+                    "halfHeight": 163.64,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

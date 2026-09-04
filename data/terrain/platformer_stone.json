@@ -1,0 +1,11 @@
+{
+    "id": "platformer_stone",
+    "name": "Stone",
+    "maskTilesUrl": "tilesets/platformer_stone/mask.png",
+    "borderTilesUrl": "tilesets/platformer_stone/border.png",
+    "fillUrl": "tilesets/platformer_stone/fill.png",
+    "blockedMapStyles": [
+        "topDown"
+    ],
+    "previewUrl": "tilesets/platformer_stone/preview.png"
+}

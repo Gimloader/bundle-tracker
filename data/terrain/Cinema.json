@@ -1,0 +1,11 @@
+{
+    "id": "Cinema",
+    "name": "Cinema Carpet",
+    "maskTilesUrl": "tilesets/cinema/mask.png",
+    "borderTilesUrl": "tilesets/cinema/border.png",
+    "fillUrl": "tilesets/cinema/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/cinema/preview.png"
+}

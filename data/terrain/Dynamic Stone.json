@@ -1,0 +1,9 @@
+{
+    "id": "Dynamic Stone",
+    "name": "Dynamic Stone",
+    "maskTilesUrl": "tilesets/dynamic/mask.png",
+    "borderTilesUrl": "tilesets/dynamic/stone/border.png",
+    "fillUrl": "tilesets/dynamic/stone/fill.png",
+    "previewUrl": "tilesets/dynamic/stone/preview.png",
+    "health": 10
+}

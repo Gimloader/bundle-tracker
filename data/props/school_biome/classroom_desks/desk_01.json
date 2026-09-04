@@ -1,0 +1,95 @@
+{
+    "id": "school_biome/classroom_desks/desk_01",
+    "name": "Classroom Desk",
+    "image": {
+        "path": "props/school_biome/classroom_desks/desk_01.png",
+        "width": 663,
+        "height": 745
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 205.83,
+            "radiusX": 693.33,
+            "radiusY": 573.33
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -60.83,
+                    "width": 666.67,
+                    "height": 366.67,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 139.17,
+                    "width": 586.67,
+                    "height": 133.33,
+                    "angle": 0
+                },
+                {
+                    "x": -253.33,
+                    "y": 272.5,
+                    "width": 93.33,
+                    "height": 200,
+                    "angle": 0
+                },
+                {
+                    "x": 253.33,
+                    "y": 272.5,
+                    "width": 80,
+                    "height": 200,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -120.83,
+                    "width": 666.67,
+                    "height": 493.33,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 139.17,
+                    "width": 586.67,
+                    "height": 133.33,
+                    "angle": 0
+                },
+                {
+                    "x": -253.33,
+                    "y": 272.5,
+                    "width": 93.33,
+                    "height": 200,
+                    "angle": 0
+                },
+                {
+                    "x": 253.33,
+                    "y": 272.5,
+                    "width": 80,
+                    "height": 200,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

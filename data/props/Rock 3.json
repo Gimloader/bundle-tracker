@@ -1,0 +1,66 @@
+{
+    "id": "Rock 3",
+    "name": "Rocks",
+    "image": {
+        "path": "props/rocks/rock_3.png",
+        "width": 394,
+        "height": 234
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.75,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 62.5,
+            "radiusX": 492,
+            "radiusY": 160
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 60.5,
+                    "radius": 50,
+                    "halfHeight": 150,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 22,
+                    "y": 2.5,
+                    "radius": 120,
+                    "halfHeight": 60,
+                    "angle": 96
+                },
+                {
+                    "x": -152,
+                    "y": 64.5,
+                    "radius": 30,
+                    "halfHeight": 20,
+                    "angle": 75
+                },
+                {
+                    "x": 130,
+                    "y": 88.5,
+                    "radius": 30,
+                    "halfHeight": 10,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

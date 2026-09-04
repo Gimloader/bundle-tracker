@@ -1,0 +1,72 @@
+{
+    "id": "school_biome/trophies/trophy_baseball_gloves",
+    "name": "Baseball Glove",
+    "image": {
+        "path": "props/school_biome/trophies/trophy_baseball_gloves.png",
+        "width": 255,
+        "height": 367
+    },
+    "scale": 0.12,
+    "originX": 0.5,
+    "originY": 0.86,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 132.12,
+            "radiusX": 250,
+            "radiusY": 150
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": -8.33,
+                    "y": 132.12,
+                    "radius": 50
+                }
+            ],
+            "capsule": [
+                {
+                    "x": 16.67,
+                    "y": 15.45,
+                    "radius": 125,
+                    "halfHeight": 0,
+                    "angle": 76
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": -8.33,
+                    "y": 132.12,
+                    "radius": 50
+                }
+            ],
+            "capsule": [
+                {
+                    "x": -16.67,
+                    "y": -1.21,
+                    "radius": 100,
+                    "halfHeight": 50,
+                    "angle": 336
+                },
+                {
+                    "x": 50,
+                    "y": -67.88,
+                    "radius": 66.67,
+                    "halfHeight": 50,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

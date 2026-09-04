@@ -1,0 +1,73 @@
+{
+    "id": "Scarecrow",
+    "name": "Scarerow",
+    "image": {
+        "path": "/props/farm/scarecrow.png",
+        "width": 516,
+        "height": 547
+    },
+    "scale": 0.26,
+    "originX": 0.5,
+    "originY": 0.89,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 263.33,
+            "radiusX": 269.23,
+            "radiusY": 100
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 197.95,
+                    "width": 69.23,
+                    "height": 134.62,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 197.95,
+                    "width": 69.23,
+                    "height": 134.62,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 5.64,
+                    "width": 515.38,
+                    "height": 115.38,
+                    "angle": 0
+                },
+                {
+                    "x": 3.85,
+                    "y": -5.9,
+                    "width": 296.15,
+                    "height": 365.38,
+                    "angle": 0
+                },
+                {
+                    "x": 3.85,
+                    "y": -144.36,
+                    "width": 200,
+                    "height": 200,
+                    "angle": 48
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

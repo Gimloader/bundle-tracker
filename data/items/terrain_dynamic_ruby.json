@@ -1,0 +1,13 @@
+{
+    "type": "item",
+    "id": "terrain_dynamic_ruby",
+    "name": "Dynamic Ruby",
+    "editorName": "Dynamic Ruby",
+    "description": "Build structures made of ruby",
+    "previewImage": "inventory/items/terrain_dynamic_ruby.png",
+    "rarity": "epic",
+    "useCommand": "Drop",
+    "consumeType": "buildTerrain",
+    "terrainId": "Dynamic Ruby",
+    "maxStackSize": 50
+}

@@ -1,0 +1,9 @@
+{
+    "id": "Dynamic Ruby",
+    "name": "Dynamic Ruby",
+    "maskTilesUrl": "tilesets/dynamic/mask.png",
+    "borderTilesUrl": "tilesets/dynamic/ruby/border.png",
+    "fillUrl": "tilesets/dynamic/ruby/fill.png",
+    "previewUrl": "tilesets/dynamic/ruby/preview.png",
+    "health": 500
+}

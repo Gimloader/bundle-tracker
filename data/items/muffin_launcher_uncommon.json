@@ -1,0 +1,21 @@
+{
+    "type": "weapon",
+    "id": "muffin_launcher_uncommon",
+    "name": "P.M.L",
+    "editorName": "P.M.L (Uncommon)",
+    "description": "Bake the competition into shreds.",
+    "previewImage": "inventory/weapons/muffin_launcher.png",
+    "rarity": "uncommon",
+    "weapon": {
+        "type": "bullet",
+        "appearance": "muffinLauncher",
+        "shared": {
+            "cooldownBetweenShots": 740,
+            "allowAutoFire": false,
+            "startingProjectileDistanceFromCharacter": 0.97
+        },
+        "bullet": {
+            "ammoItemId": "medium-shards"
+        }
+    }
+}

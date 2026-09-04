@@ -1,0 +1,45 @@
+{
+    "id": "Blackboard 4x3",
+    "name": "Blackboard (Tall)",
+    "image": {
+        "path": "props/blackboards/blackboard_4x3.png",
+        "width": 1371,
+        "height": 1105
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 137.25,
+                    "width": 1352,
+                    "height": 820,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 1.25,
+                    "width": 1364,
+                    "height": 1100,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

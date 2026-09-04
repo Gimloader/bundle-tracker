@@ -1,0 +1,10 @@
+{
+    "id": "endGame",
+    "name": "End Game",
+    "description": "Nothing lasts forever. End the game with this device",
+    "optionSchema": "{\"options\":[{\"key\":\"activateWhenReceivingFrom\",\"option\":{\"label\":\"End the game when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"End the game when the device receives a signal from the selected channel\"}}]}",
+    "defaultState": "{}",
+    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
+    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"endGame\",\"name\":\"End the game\"}]}}",
+    "maxOnMap": 16
+}

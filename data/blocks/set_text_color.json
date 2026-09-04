@@ -1,0 +1,16 @@
+{
+    "type": "set_text_color",
+    "message0": "Set Text Color To %1 ",
+    "args0": [
+        {
+            "type": "field_colour",
+            "name": "set_text_color_to",
+            "colour": "#ff0000"
+        }
+    ],
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "previousStatement": null,
+    "nextStatement": null
+}

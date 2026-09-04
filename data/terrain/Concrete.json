@@ -1,0 +1,11 @@
+{
+    "id": "Concrete",
+    "name": "Concrete",
+    "maskTilesUrl": "tilesets/concrete/mask.png",
+    "borderTilesUrl": "tilesets/concrete/border.png",
+    "fillUrl": "tilesets/concrete/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/concrete/preview.png"
+}

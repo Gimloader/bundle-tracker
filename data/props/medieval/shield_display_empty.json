@@ -1,0 +1,66 @@
+{
+    "id": "medieval/shield_display_empty",
+    "name": "Shield Display (Empty)",
+    "image": {
+        "path": "props/medieval/shield_display_empty.png",
+        "width": 1189,
+        "height": 767
+    },
+    "scale": 0.13,
+    "originX": 0.5,
+    "originY": 0.78,
+    "shadows": [
+        {
+            "x": -15.38,
+            "y": 307.07,
+            "radiusX": 1400,
+            "radiusY": 353.85
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 222.45,
+                    "width": 1184.62,
+                    "height": 307.69,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -15.38,
+                    "y": -8.32,
+                    "width": 1030.77,
+                    "height": 476.92,
+                    "angle": 0
+                },
+                {
+                    "x": -523.08,
+                    "y": -0.62,
+                    "width": 146.15,
+                    "height": 769.23,
+                    "angle": 0
+                },
+                {
+                    "x": 523.08,
+                    "y": -0.62,
+                    "width": 146.15,
+                    "height": 769.23,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

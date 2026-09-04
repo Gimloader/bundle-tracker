@@ -1,0 +1,145 @@
+{
+    "id": "Boat No Effects",
+    "name": "Boat",
+    "image": {
+        "path": "props/boats/boat_noeffects.png",
+        "width": 798,
+        "height": 436
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.61,
+    "shadows": [
+        {
+            "x": 18,
+            "y": 155.96,
+            "radiusX": 788,
+            "radiusY": 224
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 56,
+                    "y": 79.96,
+                    "width": 534,
+                    "height": 270,
+                    "angle": 0
+                },
+                {
+                    "x": -242,
+                    "y": 5.96,
+                    "width": 238,
+                    "height": 132,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 332,
+                    "y": 23.96,
+                    "radius": 56,
+                    "halfHeight": 16,
+                    "angle": 90
+                },
+                {
+                    "x": -268,
+                    "y": 93.96,
+                    "radius": 60,
+                    "halfHeight": 84,
+                    "angle": 312
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 56,
+                    "y": 79.96,
+                    "width": 534,
+                    "height": 270,
+                    "angle": 1
+                },
+                {
+                    "x": -74,
+                    "y": -126.04,
+                    "width": 304,
+                    "height": 188,
+                    "angle": 0
+                },
+                {
+                    "x": 164,
+                    "y": -76.04,
+                    "width": 188,
+                    "height": 104,
+                    "angle": 0
+                },
+                {
+                    "x": 282,
+                    "y": -98.04,
+                    "width": 70,
+                    "height": 40,
+                    "angle": 25
+                },
+                {
+                    "x": 282,
+                    "y": -62.04,
+                    "width": 80,
+                    "height": 50,
+                    "angle": 0
+                },
+                {
+                    "x": 338,
+                    "y": 107.96,
+                    "width": 50,
+                    "height": 64,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 332,
+                    "y": 23.96,
+                    "radius": 56,
+                    "halfHeight": 16,
+                    "angle": 90
+                },
+                {
+                    "x": -268,
+                    "y": 93.96,
+                    "radius": 60,
+                    "halfHeight": 84,
+                    "angle": 312
+                },
+                {
+                    "x": -282,
+                    "y": -28.04,
+                    "radius": 68,
+                    "halfHeight": 58,
+                    "angle": 58
+                },
+                {
+                    "x": 84,
+                    "y": -132.04,
+                    "radius": 20,
+                    "halfHeight": 14,
+                    "angle": 116
+                },
+                {
+                    "x": -244,
+                    "y": -122.04,
+                    "radius": 16,
+                    "halfHeight": 24,
+                    "angle": 65
+                }
+            ]
+        }
+    }
+}

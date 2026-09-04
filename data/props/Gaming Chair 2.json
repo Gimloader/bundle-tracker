@@ -1,0 +1,67 @@
+{
+    "id": "Gaming Chair 2",
+    "name": "Gaming Chair",
+    "image": {
+        "path": "props/chairs/gaming_chair_2.png",
+        "width": 527,
+        "height": 784
+    },
+    "scale": 0.22,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 27.27,
+            "y": 270.98,
+            "radiusX": 572.73,
+            "radiusY": 281.82
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 36.36,
+                    "y": 166.44,
+                    "width": 445.45,
+                    "height": 459.09,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 36.36,
+                    "y": 166.44,
+                    "width": 445.45,
+                    "height": 459.09,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 113.64,
+                    "y": -60.84,
+                    "radius": 100,
+                    "halfHeight": 45.45,
+                    "angle": 90
+                },
+                {
+                    "x": -131.82,
+                    "y": -97.2,
+                    "radius": 104.55,
+                    "halfHeight": 200,
+                    "angle": 345
+                }
+            ]
+        }
+    }
+}

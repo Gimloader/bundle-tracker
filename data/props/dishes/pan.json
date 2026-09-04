@@ -1,0 +1,60 @@
+{
+    "id": "dishes/pan",
+    "name": "Pan",
+    "image": {
+        "path": "props/dishes/pan.png",
+        "width": 261,
+        "height": 111
+    },
+    "scale": 0.35,
+    "originX": 0.3,
+    "originY": 0.58,
+    "shadows": [
+        {
+            "x": -52.2,
+            "y": 17.45,
+            "radiusX": 171.43,
+            "radiusY": 102.86
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -49.34,
+                    "y": 6.02,
+                    "radius": 40,
+                    "halfHeight": 42.86,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 44.94,
+                    "y": -2.55,
+                    "width": 171.43,
+                    "height": 40,
+                    "angle": -3
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -52.2,
+                    "y": -2.55,
+                    "radius": 60,
+                    "halfHeight": 20,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

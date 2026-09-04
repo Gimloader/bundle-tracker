@@ -1,0 +1,29 @@
+{
+    "id": "leaf-pile-dark-small",
+    "name": "Small Leaf Pile",
+    "image": {
+        "path": "props/farm/leaf/pile-dark-small.png",
+        "width": 316,
+        "height": 230
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

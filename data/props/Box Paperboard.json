@@ -1,0 +1,52 @@
+{
+    "id": "Box Paperboard",
+    "name": "Cardboard Box",
+    "image": {
+        "path": "props/boxes/box_paperboard.png",
+        "width": 273,
+        "height": 247
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 119.5,
+            "radiusX": 340,
+            "radiusY": 100
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 25.5,
+                    "width": 276,
+                    "height": 200,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -0.5,
+                    "width": 272,
+                    "height": 246,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "id": "Bathroom",
+    "name": "Restroom",
+    "maskTilesUrl": "tilesets/bathroom/mask.png",
+    "borderTilesUrl": "tilesets/bathroom/border.png",
+    "fillUrl": "tilesets/bathroom/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "seasonTicketRequired": true,
+    "previewUrl": "tilesets/bathroom/preview.png"
+}

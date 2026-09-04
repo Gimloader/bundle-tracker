@@ -1,0 +1,43 @@
+{
+    "id": "mining/teapot",
+    "name": "Teapot",
+    "image": {
+        "path": "props/mining/teapot.png",
+        "width": 217,
+        "height": 227
+    },
+    "scale": 0.17,
+    "originX": 0.5,
+    "originY": 0.88,
+    "shadows": [
+        {
+            "x": 17.65,
+            "y": 86.26,
+            "radiusX": 235.29,
+            "radiusY": 117.65
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": 17.65,
+                    "y": 3.91,
+                    "radius": 123.53
+                }
+            ],
+            "capsule": []
+        }
+    },
+    "minimumRoleLevel": 90
+}

@@ -1,0 +1,80 @@
+{
+    "id": "medieval/streetlight/off",
+    "name": "Medieval Streetlight Lamp (Off)",
+    "image": {
+        "path": "props/medieval/streetlight/off.png",
+        "width": 668,
+        "height": 1506
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0.91,
+    "shadows": [
+        {
+            "x": 204,
+            "y": 677.46,
+            "radiusX": 456,
+            "radiusY": 296
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 212,
+                    "y": 657.46,
+                    "width": 248,
+                    "height": 192,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 212,
+                    "y": 605.46,
+                    "width": 248,
+                    "height": 296,
+                    "angle": 0
+                },
+                {
+                    "x": 208,
+                    "y": -130.54,
+                    "width": 144,
+                    "height": 1256,
+                    "angle": 0
+                },
+                {
+                    "x": -92,
+                    "y": -546.54,
+                    "width": 492,
+                    "height": 160,
+                    "angle": 0
+                },
+                {
+                    "x": -196,
+                    "y": -294.54,
+                    "width": 176,
+                    "height": 300,
+                    "angle": 0
+                },
+                {
+                    "x": 40,
+                    "y": -382.54,
+                    "width": 140,
+                    "height": 452,
+                    "angle": -41
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

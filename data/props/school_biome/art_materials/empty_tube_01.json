@@ -1,0 +1,74 @@
+{
+    "id": "school_biome/art_materials/empty_tube_01",
+    "name": "Open Paint Tube (Pink)",
+    "image": {
+        "path": "props/school_biome/art_materials/empty_tube_01.png",
+        "width": 281,
+        "height": 307
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.44,
+    "shadows": [
+        {
+            "x": 13.33,
+            "y": -25.09,
+            "radiusX": 266.67,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -25.09,
+                    "radius": 66.67,
+                    "halfHeight": 20,
+                    "angle": 45
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -25.09,
+                    "radius": 66.67,
+                    "halfHeight": 20,
+                    "angle": 45
+                },
+                {
+                    "x": 60,
+                    "y": -85.09,
+                    "radius": 40,
+                    "halfHeight": 46.67,
+                    "angle": 125
+                },
+                {
+                    "x": -60,
+                    "y": 61.58,
+                    "radius": 66.67,
+                    "halfHeight": 13.33,
+                    "angle": 90
+                },
+                {
+                    "x": -60,
+                    "y": 121.58,
+                    "radius": 33.33,
+                    "halfHeight": 0,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

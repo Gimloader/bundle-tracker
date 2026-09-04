@@ -1,0 +1,9 @@
+{
+    "type": "resource",
+    "id": "chemicals",
+    "name": "Chemicals",
+    "editorName": "Chemicals",
+    "description": "A compound for an important experiment",
+    "previewImage": "inventory/resources/chemicals.png",
+    "minimumRoleLevel": 90
+}

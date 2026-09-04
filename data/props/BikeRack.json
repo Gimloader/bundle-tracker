@@ -1,0 +1,66 @@
+{
+    "id": "BikeRack",
+    "name": "Bicycle Rack",
+    "image": {
+        "path": "props/park/bike_rack.png",
+        "width": 373,
+        "height": 143
+    },
+    "scale": 0.6,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 68.17,
+            "radiusX": 416.67,
+            "radiusY": 63.33
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 29.83,
+                    "width": 375,
+                    "height": 83.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 3.17,
+                    "width": 375,
+                    "height": 121.67,
+                    "angle": 0
+                },
+                {
+                    "x": -176.67,
+                    "y": 1.5,
+                    "width": 21.67,
+                    "height": 145,
+                    "angle": 0
+                },
+                {
+                    "x": 176.67,
+                    "y": 1.5,
+                    "width": 21.67,
+                    "height": 145,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

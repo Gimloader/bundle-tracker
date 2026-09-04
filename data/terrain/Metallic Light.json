@@ -1,0 +1,11 @@
+{
+    "id": "Metallic Light",
+    "name": "Metallic (Light)",
+    "maskTilesUrl": "tilesets/metallic/mask.png",
+    "borderTilesUrl": "tilesets/metallic/border_light.png",
+    "fillUrl": "tilesets/metallic/fill_light.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/metallic/preview_light.png"
+}

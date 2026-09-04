@@ -1,0 +1,60 @@
+{
+    "id": "school_biome/laboratory/molecule_model",
+    "name": "Molecule Model",
+    "image": {
+        "path": "props/school_biome/laboratory/molecule_model.png",
+        "width": 290,
+        "height": 263
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.79,
+    "shadows": [
+        {
+            "x": -6.67,
+            "y": 76.27,
+            "radiusX": 320,
+            "radiusY": 173.33
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 69.6,
+                    "radius": 46.67,
+                    "halfHeight": 100,
+                    "angle": 82
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 69.6,
+                    "radius": 46.67,
+                    "halfHeight": 100,
+                    "angle": 82
+                },
+                {
+                    "x": 6.67,
+                    "y": -37.06,
+                    "radius": 53.33,
+                    "halfHeight": 46.67,
+                    "angle": 7
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

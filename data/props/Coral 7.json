@@ -1,0 +1,60 @@
+{
+    "id": "Coral 7",
+    "name": "Coral",
+    "image": {
+        "path": "props/corals/coral_7.png",
+        "width": 140,
+        "height": 97
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 42.5,
+            "radiusX": 104,
+            "radiusY": 36
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 20.5,
+                    "radius": 30,
+                    "halfHeight": 30,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 32.5,
+                    "width": 46,
+                    "height": 30,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -9.5,
+                    "radius": 40,
+                    "halfHeight": 30,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

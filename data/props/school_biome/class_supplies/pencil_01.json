@@ -1,0 +1,53 @@
+{
+    "id": "school_biome/class_supplies/pencil_01",
+    "name": "Pencil",
+    "image": {
+        "path": "props/school_biome/class_supplies/pencil_01.png",
+        "width": 209,
+        "height": 111
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 13.33,
+            "radiusX": 226.67,
+            "radiusY": 106.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 6.67,
+                    "radius": 33.33,
+                    "halfHeight": 73.33,
+                    "angle": 110
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 6.67,
+                    "radius": 33.33,
+                    "halfHeight": 73.33,
+                    "angle": 110
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

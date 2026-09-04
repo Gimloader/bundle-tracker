@@ -1,0 +1,11 @@
+{
+    "id": "Dungeon Gray",
+    "name": "Dungeon (Gray)",
+    "maskTilesUrl": "tilesets/dungeon/mask.png",
+    "borderTilesUrl": "tilesets/dungeon/border_gray.png",
+    "fillUrl": "tilesets/dungeon/fill_gray.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/dungeon/preview_gray.png"
+}

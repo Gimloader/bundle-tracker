@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "light-shards",
+    "name": "Light Shards",
+    "editorName": "Light Shards",
+    "description": "Unique stone used to refill certain gadgets",
+    "previewImage": "inventory/resources/light_shards.png"
+}

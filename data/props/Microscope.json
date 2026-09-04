@@ -1,0 +1,63 @@
+{
+    "id": "Microscope",
+    "name": "Microscope",
+    "image": {
+        "path": "props/science_lab/microscope.png",
+        "width": 226,
+        "height": 364
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.74,
+    "shadows": [
+        {
+            "x": -25,
+            "y": 122.36,
+            "radiusX": 270,
+            "radiusY": 210
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 62.36,
+                    "radius": 100
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -25,
+                    "y": 97.36,
+                    "width": 175,
+                    "height": 175,
+                    "angle": 0
+                },
+                {
+                    "x": 5,
+                    "y": -92.64,
+                    "width": 75,
+                    "height": 175,
+                    "angle": 15
+                }
+            ],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 12.36,
+                    "radius": 115
+                }
+            ],
+            "capsule": []
+        }
+    }
+}

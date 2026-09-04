@@ -1,0 +1,52 @@
+{
+    "id": "barriers/scifi_barrier_4",
+    "name": "Scifi Plant Barrier (Horizontal)",
+    "image": {
+        "path": "props/barriers/scifi_barrier_4.png",
+        "width": 481,
+        "height": 358
+    },
+    "scale": 0.43,
+    "originX": 0.5,
+    "originY": 0.6,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 61.38,
+            "radiusX": 525.58,
+            "radiusY": 358.14
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 45.1,
+                    "width": 448.84,
+                    "height": 230.23,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 4.65,
+                    "y": 10.22,
+                    "width": 472.09,
+                    "height": 327.91,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

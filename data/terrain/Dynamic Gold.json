@@ -1,0 +1,9 @@
+{
+    "id": "Dynamic Gold",
+    "name": "Dynamic Gold",
+    "maskTilesUrl": "tilesets/dynamic/mask.png",
+    "borderTilesUrl": "tilesets/dynamic/gold/border.png",
+    "fillUrl": "tilesets/dynamic/gold/fill.png",
+    "previewUrl": "tilesets/dynamic/gold/preview.png",
+    "health": 250
+}

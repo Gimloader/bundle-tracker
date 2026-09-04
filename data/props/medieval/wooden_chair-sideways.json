@@ -1,0 +1,59 @@
+{
+    "id": "medieval/wooden_chair-sideways",
+    "name": "Wooden Chair",
+    "image": {
+        "path": "props/medieval/wooden_chair-sideways.png",
+        "width": 510,
+        "height": 725
+    },
+    "scale": 0.17,
+    "originX": 0.5,
+    "originY": 0.57,
+    "shadows": [
+        {
+            "x": -47.06,
+            "y": 262.51,
+            "radiusX": 670.59,
+            "radiusY": 294.12
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 186.04,
+                    "width": 505.88,
+                    "height": 352.94,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -41.18,
+                    "y": 109.57,
+                    "width": 411.76,
+                    "height": 505.88,
+                    "angle": 0
+                },
+                {
+                    "x": 188.24,
+                    "y": -84.54,
+                    "width": 135.29,
+                    "height": 558.82,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

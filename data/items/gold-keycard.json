@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "gold-keycard",
+    "name": "Gold Keycard",
+    "editorName": "Gold Keycard",
+    "description": "Deposit and gain access.",
+    "previewImage": "inventory/resources/keycard_gold.png"
+}

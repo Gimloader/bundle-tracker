@@ -1,0 +1,51 @@
+{
+    "id": "medieval/paper/map",
+    "name": "Paper Map",
+    "image": {
+        "path": "props/medieval/paper/map.png",
+        "width": 909,
+        "height": 638
+    },
+    "scale": 0.09,
+    "originX": 0.5,
+    "originY": 0,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -388.89,
+                    "y": 3.22,
+                    "width": 122.22,
+                    "height": 644.44,
+                    "angle": 0
+                },
+                {
+                    "x": 400,
+                    "y": 3.22,
+                    "width": 122.22,
+                    "height": 644.44,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 25.44,
+                    "width": 677.78,
+                    "height": 533.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "id": "mining/cooking_pan",
+    "name": "Campfire Pan",
+    "image": {
+        "path": "props/mining/cooking_pan.png",
+        "width": 298,
+        "height": 68
+    },
+    "scale": 0.17,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -7.18,
+                    "width": 300,
+                    "height": 70.59,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "minimumRoleLevel": 90
+}

@@ -1,0 +1,11 @@
+{
+    "id": "Castle Tile Purple",
+    "name": "Castle Tile (Purple)",
+    "maskTilesUrl": "tilesets/castle_tile/mask.png",
+    "borderTilesUrl": "tilesets/castle_tile/purple_border.png",
+    "fillUrl": "tilesets/castle_tile/purple_fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/castle_tile/purple_preview.png"
+}

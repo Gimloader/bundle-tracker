@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "green-fish",
+    "name": "Green Fish",
+    "editorName": "Green Fish",
+    "description": "Just because I'm green, doesn't mean I'm healthy.",
+    "previewImage": "inventory/resources/green_fish.png"
+}

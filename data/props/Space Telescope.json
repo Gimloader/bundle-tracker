@@ -1,0 +1,60 @@
+{
+    "id": "Space Telescope",
+    "name": "Space Telescope",
+    "image": {
+        "path": "props/space_props/telescope.png",
+        "width": 249,
+        "height": 207
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 75.5,
+            "radiusX": 200,
+            "radiusY": 92
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 55.5,
+                    "radius": 50,
+                    "halfHeight": 40,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -40.5,
+                    "width": 250,
+                    "height": 70,
+                    "angle": -15
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 55.5,
+                    "radius": 50,
+                    "halfHeight": 40,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "type": "item",
+    "id": "terrain_dynamic_copper",
+    "name": "Dynamic Copper",
+    "editorName": "Dynamic Copper",
+    "description": "Build structures made of copper",
+    "previewImage": "inventory/items/terrain_dynamic_copper.png",
+    "rarity": "rare",
+    "useCommand": "Drop",
+    "consumeType": "buildTerrain",
+    "terrainId": "Dynamic Copper",
+    "maxStackSize": 50
+}

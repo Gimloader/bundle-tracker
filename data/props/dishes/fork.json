@@ -1,0 +1,29 @@
+{
+    "id": "dishes/fork",
+    "name": "Fork",
+    "image": {
+        "path": "props/dishes/fork.png",
+        "width": 69,
+        "height": 109
+    },
+    "scale": 0.35,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

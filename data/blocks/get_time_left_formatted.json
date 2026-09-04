@@ -1,0 +1,15 @@
+{
+    "type": "get_time_left_formatted",
+    "message0": "Get Time Left Formatted %1 ",
+    "args0": [
+        {
+            "type": "input_dummy"
+        }
+    ],
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": [
+        "String"
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "id": "stones/8",
+    "name": "Stone Rock",
+    "image": {
+        "path": "props/stones/8.png",
+        "width": 796,
+        "height": 379
+    },
+    "scale": 0.3,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 116.17,
+            "radiusX": 966.67,
+            "radiusY": 260
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 116.17,
+                    "radius": 70,
+                    "halfHeight": 330,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 116.17,
+                    "radius": 70,
+                    "halfHeight": 330,
+                    "angle": 90
+                },
+                {
+                    "x": -80,
+                    "y": 26.17,
+                    "radius": 100,
+                    "halfHeight": 210,
+                    "angle": 90
+                },
+                {
+                    "x": -76.67,
+                    "y": -63.83,
+                    "radius": 123.33,
+                    "halfHeight": 90,
+                    "angle": 90
+                },
+                {
+                    "x": 240,
+                    "y": 59.5,
+                    "radius": 76.67,
+                    "halfHeight": 83.33,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "minimumRoleLevel": 90
+}

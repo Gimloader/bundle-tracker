@@ -1,0 +1,58 @@
+{
+    "id": "Office Plant 2",
+    "name": "Office Plant",
+    "image": {
+        "path": "props/office/office_plant_2.png",
+        "width": 702,
+        "height": 971
+    },
+    "scale": 0.18,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": -27.78,
+            "y": 436.95,
+            "radiusX": 622.22,
+            "radiusY": 255.56
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": -27.78,
+                    "y": 298.06,
+                    "radius": 250
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -27.78,
+                    "y": 292.51,
+                    "width": 472.22,
+                    "height": 388.89,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -124.16,
+                    "radius": 388.89,
+                    "halfHeight": 0,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

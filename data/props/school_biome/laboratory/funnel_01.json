@@ -1,0 +1,74 @@
+{
+    "id": "school_biome/laboratory/funnel_01",
+    "name": "Funnel",
+    "image": {
+        "path": "props/school_biome/laboratory/funnel_01.png",
+        "width": 332,
+        "height": 429
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.8,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 128.7,
+            "radiusX": 373.33,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 128.7,
+                    "radius": 80,
+                    "halfHeight": 80,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": 68.7,
+                    "radius": 100,
+                    "halfHeight": 0,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 128.7,
+                    "radius": 80,
+                    "halfHeight": 80,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": 68.7,
+                    "radius": 100,
+                    "halfHeight": 0,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -77.97,
+                    "radius": 46.67,
+                    "halfHeight": 86.67,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

@@ -1,0 +1,59 @@
+{
+    "id": "Briefcase-black",
+    "name": "Black Briefcase",
+    "image": {
+        "path": "props/briefcases/black_briefcase.png",
+        "width": 554,
+        "height": 463
+    },
+    "scale": 0.11,
+    "originX": 0.5,
+    "originY": 0.8,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 220.72,
+            "radiusX": 690.91,
+            "radiusY": 181.82
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 111.63,
+                    "width": 554.55,
+                    "height": 227.27,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 29.81,
+                    "width": 554.55,
+                    "height": 390.91,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -161.1,
+                    "width": 272.73,
+                    "height": 136.36,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

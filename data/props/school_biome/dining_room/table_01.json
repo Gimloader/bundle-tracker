@@ -1,0 +1,59 @@
+{
+    "id": "school_biome/dining_room/table_01",
+    "name": "Lunch Table (Horizontal)",
+    "image": {
+        "path": "props/school_biome/dining_room/table_01.png",
+        "width": 797,
+        "height": 755
+    },
+    "scale": 0.28,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 127,
+            "radiusX": 950,
+            "radiusY": 750
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 2,
+                    "width": 775,
+                    "height": 575,
+                    "angle": 0
+                },
+                {
+                    "x": -335.71,
+                    "y": 302,
+                    "width": 50,
+                    "height": 150,
+                    "angle": 0
+                },
+                {
+                    "x": 339.29,
+                    "y": 302,
+                    "width": 50,
+                    "height": 150,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

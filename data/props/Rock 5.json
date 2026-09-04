@@ -1,0 +1,59 @@
+{
+    "id": "Rock 5",
+    "name": "Rock",
+    "image": {
+        "path": "props/rocks/rock_5.png",
+        "width": 176,
+        "height": 72
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.75,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 20,
+            "radiusX": 208,
+            "radiusY": 60
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 18,
+                    "radius": 20,
+                    "halfHeight": 60,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 18,
+                    "radius": 22,
+                    "halfHeight": 64,
+                    "angle": 90
+                },
+                {
+                    "x": -30,
+                    "y": -2,
+                    "radius": 30,
+                    "halfHeight": 30,
+                    "angle": 70
+                }
+            ]
+        }
+    }
+}

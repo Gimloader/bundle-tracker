@@ -1,0 +1,11 @@
+{
+    "id": "Castle Tile Green",
+    "name": "Castle Tile (Green)",
+    "maskTilesUrl": "tilesets/castle_tile/mask.png",
+    "borderTilesUrl": "tilesets/castle_tile/green_border.png",
+    "fillUrl": "tilesets/castle_tile/green_fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/castle_tile/green_preview.png"
+}

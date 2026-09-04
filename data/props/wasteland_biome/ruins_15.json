@@ -1,0 +1,67 @@
+{
+    "id": "wasteland_biome/ruins_15",
+    "name": "Ruins",
+    "image": {
+        "path": "props/wasteland_biome/ruins_15.png",
+        "width": 795,
+        "height": 361
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 124.4,
+            "radiusX": 820,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 94.4,
+                    "radius": 50,
+                    "halfHeight": 350,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 94.4,
+                    "radius": 75,
+                    "halfHeight": 325,
+                    "angle": 90
+                },
+                {
+                    "x": -135,
+                    "y": -30.6,
+                    "radius": 150,
+                    "halfHeight": 0,
+                    "angle": 90
+                },
+                {
+                    "x": -160,
+                    "y": 19.4,
+                    "radius": 100,
+                    "halfHeight": 115,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

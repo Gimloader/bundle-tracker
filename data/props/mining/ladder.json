@@ -1,0 +1,67 @@
+{
+    "id": "mining/ladder",
+    "name": "Ladder",
+    "image": {
+        "path": "props/mining/ladder.png",
+        "width": 551,
+        "height": 1354
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": -33.33,
+            "y": 643.67,
+            "radiusX": 600,
+            "radiusY": 266.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 143.67,
+                    "width": 466.67,
+                    "height": 1053.33,
+                    "angle": 3
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 23.67,
+                    "width": 300,
+                    "height": 920,
+                    "angle": 3
+                },
+                {
+                    "x": 173.33,
+                    "y": 3.67,
+                    "width": 140,
+                    "height": 1353.33,
+                    "angle": 3
+                },
+                {
+                    "x": -166.67,
+                    "y": -3,
+                    "width": 133.33,
+                    "height": 1353.33,
+                    "angle": 3
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "minimumRoleLevel": 90
+}

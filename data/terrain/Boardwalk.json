@@ -1,0 +1,11 @@
+{
+    "id": "Boardwalk",
+    "name": "Boardwalk",
+    "maskTilesUrl": "tilesets/boardwalk/mask.png",
+    "borderTilesUrl": "tilesets/boardwalk/border.png",
+    "fillUrl": "tilesets/boardwalk/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/boardwalk/preview.png"
+}

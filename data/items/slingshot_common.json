@@ -1,0 +1,21 @@
+{
+    "type": "weapon",
+    "id": "slingshot_common",
+    "name": "Slingshot",
+    "editorName": "Slingshot (Common)",
+    "description": "Fling the competition away.",
+    "previewImage": "inventory/weapons/slingshot.png",
+    "rarity": "common",
+    "weapon": {
+        "type": "bullet",
+        "appearance": "slingshot",
+        "shared": {
+            "cooldownBetweenShots": 645,
+            "allowAutoFire": false,
+            "startingProjectileDistanceFromCharacter": 0.8
+        },
+        "bullet": {
+            "ammoItemId": "medium-shards"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "id": "Platformer Dining Room",
+    "name": "Cafeteria",
+    "maskTilesUrl": "tilesets/platformer_dining_room/mask.png",
+    "borderTilesUrl": "tilesets/platformer_dining_room/border.png",
+    "fillUrl": "tilesets/platformer_dining_room/fill.png",
+    "blockedMapStyles": [
+        "topDown"
+    ],
+    "seasonTicketRequired": true,
+    "previewUrl": "tilesets/platformer_dining_room/preview.png"
+}

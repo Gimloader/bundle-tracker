@@ -1,0 +1,130 @@
+{
+    "id": "wasteland_biome/rocks_15",
+    "name": "Rocks",
+    "image": {
+        "path": "props/wasteland_biome/rocks_15.png",
+        "width": 1491,
+        "height": 1194
+    },
+    "scale": 0.35,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 497,
+            "radiusX": 1542.86,
+            "radiusY": 400
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -500,
+                    "y": 397,
+                    "radius": 200,
+                    "halfHeight": 28.57,
+                    "angle": 90
+                },
+                {
+                    "x": 468.57,
+                    "y": 394.14,
+                    "radius": 200,
+                    "halfHeight": 28.57,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 457.14,
+                    "y": 397,
+                    "radius": 171.43,
+                    "halfHeight": 57.14,
+                    "angle": 90
+                },
+                {
+                    "x": 442.86,
+                    "y": 122.71,
+                    "radius": 157.14,
+                    "halfHeight": 100,
+                    "angle": 340
+                },
+                {
+                    "x": 314.29,
+                    "y": -103,
+                    "radius": 214.29,
+                    "halfHeight": 42.86,
+                    "angle": 315
+                },
+                {
+                    "x": -471.43,
+                    "y": 325.57,
+                    "radius": 200,
+                    "halfHeight": 42.86,
+                    "angle": 0
+                },
+                {
+                    "x": -342.86,
+                    "y": -3,
+                    "radius": 142.86,
+                    "halfHeight": 114.29,
+                    "angle": 30
+                },
+                {
+                    "x": 0,
+                    "y": -174.43,
+                    "radius": 157.14,
+                    "halfHeight": 114.29,
+                    "angle": 90
+                },
+                {
+                    "x": -571.43,
+                    "y": 425.57,
+                    "radius": 157.14,
+                    "halfHeight": 28.57,
+                    "angle": 50
+                },
+                {
+                    "x": 80,
+                    "y": -385.86,
+                    "radius": 171.43,
+                    "halfHeight": 28.57,
+                    "angle": 45
+                },
+                {
+                    "x": 614.29,
+                    "y": 497,
+                    "radius": 85.71,
+                    "halfHeight": 42.86,
+                    "angle": 65
+                },
+                {
+                    "x": 271.43,
+                    "y": -345.86,
+                    "radius": 100,
+                    "halfHeight": 57.14,
+                    "angle": 60
+                },
+                {
+                    "x": -228.57,
+                    "y": -157.29,
+                    "radius": 185.71,
+                    "halfHeight": 71.43,
+                    "angle": 75
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

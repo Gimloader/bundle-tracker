@@ -1,0 +1,10 @@
+{
+    "id": "soundEffect",
+    "name": "Sound Effect",
+    "description": "Play a sound effect",
+    "optionSchema": "{\"options\":[{\"key\":\"audioUrl\",\"option\":{\"label\":\"Audio URL\",\"type\":\"textInput\",\"defaultValue\":\"https://www.soundjay.com/mechanical/sounds/empty-bullet-shell-fall-02.mp3\",\"validators\":[null],\"props\":{\"placeholder\":\"Enter audio url here...\"}}},{\"key\":\"volume\",\"option\":{\"label\":\"Volume\",\"type\":\"numberInput\",\"defaultValue\":50,\"validators\":[null],\"props\":{\"min\":1,\"max\":100,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"playWhenReceivingFrom\",\"option\":{\"label\":\"Play When Receiving From...\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100}}},{\"key\":\"characterType\",\"option\":{\"label\":\"Allowed Player Type\",\"description\":\"Which kinds of players can this sound play for?\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"all\",\"props\":{\"options\":[{\"value\":\"all\",\"name\":\"Everybody\"},{\"value\":\"gameOwner\",\"name\":\"Game Host\"}],\"allowEmpty\":false}}}]}",
+    "defaultState": "{}",
+    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
+    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"play\",\"name\":\"Play sound effect\"}]}}",
+    "minimumRoleLevel": 90
+}

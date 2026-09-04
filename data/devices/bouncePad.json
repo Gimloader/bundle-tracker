@@ -1,0 +1,15 @@
+{
+    "id": "bouncePad",
+    "name": "Bounce Pad",
+    "description": "Bounce Pad Device",
+    "optionSchema": "{\"categories\":{\"categories\":[{\"id\":\"featured\",\"name\":\"Featured\"}],\"showAllOptionsAt\":\"end\"},\"options\":[{\"key\":\"force\",\"option\":{\"label\":\"Force\",\"description\":\"How strong the bounce is\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":0.5,\"max\":2,\"step\":0.05,\"allowEmpty\":false,\"useSlider\":true}},\"categories\":[\"featured\"]},{\"key\":\"color\",\"option\":{\"label\":\"Color\",\"description\":\"Color of the Bounce Pad\",\"type\":\"color\",\"defaultValue\":\"#FF0000\",\"validators\":[null]},\"categories\":[\"featured\"]},{\"key\":\"disableDownward\",\"option\":{\"label\":\"Disable Downward Bounce\",\"type\":\"select\",\"description\":\"Should the Bounce Pad block downward bounce?\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"featured\"]},{\"key\":\"scale\",\"option\":{\"label\":\"Scale\",\"type\":\"numberInput\",\"defaultValue\":0.7,\"validators\":[null],\"props\":{\"min\":0.3,\"max\":3,\"step\":0.1,\"allowEmpty\":false,\"useSlider\":false},\"hidden\":true}},{\"key\":\"angle\",\"option\":{\"label\":\"Angle\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"min\":-360,\"max\":360,\"step\":1,\"allowEmpty\":false,\"useSlider\":false},\"hidden\":true}}]}",
+    "defaultState": "{}",
+    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
+    "wireConfig": "{}",
+    "minimumRoleLevel": 90,
+    "initialMemoryCost": 0,
+    "subsequentMemoryCost": 0,
+    "supportedMapStyles": [
+        "platformer"
+    ]
+}

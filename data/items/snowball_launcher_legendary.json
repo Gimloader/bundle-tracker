@@ -1,0 +1,21 @@
+{
+    "type": "weapon",
+    "id": "snowball_launcher_legendary",
+    "name": "Snowball Launcher",
+    "editorName": "Snowball Launcher (Legendary)",
+    "description": "Bestow your enemies with the gift of snow!",
+    "previewImage": "inventory/weapons/snowball_launcher.png",
+    "rarity": "legendary",
+    "weapon": {
+        "type": "bullet",
+        "appearance": "snowball",
+        "shared": {
+            "cooldownBetweenShots": 160,
+            "allowAutoFire": false,
+            "startingProjectileDistanceFromCharacter": 0.95
+        },
+        "bullet": {
+            "ammoItemId": "snowballs"
+        }
+    }
+}

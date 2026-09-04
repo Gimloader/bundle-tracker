@@ -1,0 +1,11 @@
+{
+    "id": "Purple Sand",
+    "name": "Purple Sand",
+    "maskTilesUrl": "tilesets/purple_sand/mask.png",
+    "borderTilesUrl": "tilesets/purple_sand/border.png",
+    "fillUrl": "tilesets/purple_sand/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/purple_sand/preview.png"
+}

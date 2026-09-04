@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "cyan-seed",
+    "name": "Cyan Seed",
+    "editorName": "Cyan Seed",
+    "description": "Grow something special.",
+    "previewImage": "inventory/resources/cyan_seed.png"
+}

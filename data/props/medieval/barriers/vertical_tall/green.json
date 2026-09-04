@@ -1,0 +1,52 @@
+{
+    "id": "medieval/barriers/vertical_tall/green",
+    "name": "Green Stone Barrier (Tall Vertical)",
+    "image": {
+        "path": "props/medieval/barriers/vertical_tall/green.png",
+        "width": 358,
+        "height": 1961
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.93,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 858.23,
+            "radiusX": 570,
+            "radiusY": 450
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 58.23,
+                    "width": 365,
+                    "height": 1850,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 3.23,
+                    "width": 365,
+                    "height": 1960,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

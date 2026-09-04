@@ -1,0 +1,66 @@
+{
+    "id": "TV Off",
+    "name": "Television",
+    "image": {
+        "path": "props/office/tv_off.png",
+        "width": 1030,
+        "height": 842
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 354.9,
+            "radiusX": 1008,
+            "radiusY": 248
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -8,
+                    "y": 338.9,
+                    "width": 408,
+                    "height": 160,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -13.1,
+                    "width": 1032,
+                    "height": 560,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -8,
+                    "y": 338.9,
+                    "width": 408,
+                    "height": 160,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -73.1,
+                    "width": 1032,
+                    "height": 688,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

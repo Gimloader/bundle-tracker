@@ -1,0 +1,13 @@
+{
+    "type": "item",
+    "id": "terrain_dynamic_dirt",
+    "name": "Dynamic Dirt",
+    "editorName": "Dynamic Dirt",
+    "description": "Build structures made of dirt",
+    "previewImage": "inventory/items/terrain_dynamic_dirt.png",
+    "rarity": "common",
+    "useCommand": "Drop",
+    "consumeType": "buildTerrain",
+    "terrainId": "Dynamic Dirt",
+    "maxStackSize": 50
+}

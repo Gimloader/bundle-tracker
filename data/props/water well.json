@@ -1,0 +1,96 @@
+{
+    "id": "water well",
+    "name": "Water Well",
+    "image": {
+        "path": "props/farm/water_well.png",
+        "width": 757,
+        "height": 746
+    },
+    "scale": 0.38,
+    "originX": 0.5,
+    "originY": 0.94,
+    "shadows": [
+        {
+            "x": 26.32,
+            "y": 283.5,
+            "radiusX": 794.74,
+            "radiusY": 226.32
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -234.21,
+                    "y": 236.13,
+                    "width": 78.95,
+                    "height": 157.89,
+                    "angle": 0
+                },
+                {
+                    "x": 292.11,
+                    "y": 236.13,
+                    "width": 78.95,
+                    "height": 157.89,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 31.58,
+                    "y": 170.35,
+                    "radius": 197.37,
+                    "halfHeight": 21.05,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 31.58,
+                    "y": -24.39,
+                    "width": 605.26,
+                    "height": 694.74,
+                    "angle": 0
+                },
+                {
+                    "x": 326.32,
+                    "y": -237.55,
+                    "width": 65.79,
+                    "height": 263.16,
+                    "angle": -13
+                },
+                {
+                    "x": -268.42,
+                    "y": -237.55,
+                    "width": 65.79,
+                    "height": 263.16,
+                    "angle": 13
+                },
+                {
+                    "x": -247.37,
+                    "y": -13.87,
+                    "width": 263.16,
+                    "height": 97.37,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 34.21,
+                    "y": 309.82,
+                    "radius": 65.79,
+                    "halfHeight": 105.26,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

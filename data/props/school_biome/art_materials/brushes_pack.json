@@ -1,0 +1,60 @@
+{
+    "id": "school_biome/art_materials/brushes_pack",
+    "name": "Brushes Pack",
+    "image": {
+        "path": "props/school_biome/art_materials/brushes_pack.png",
+        "width": 167,
+        "height": 302
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 114.13,
+            "radiusX": 173.33,
+            "radiusY": 106.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 47.47,
+                    "radius": 66.67,
+                    "halfHeight": 33.33,
+                    "angle": 0
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 47.47,
+                    "radius": 66.67,
+                    "halfHeight": 33.33,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -79.2,
+                    "radius": 66.67,
+                    "halfHeight": 13.33,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

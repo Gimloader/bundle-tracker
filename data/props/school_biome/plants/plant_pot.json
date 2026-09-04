@@ -1,0 +1,67 @@
+{
+    "id": "school_biome/plants/plant_pot",
+    "name": "Plant Pot",
+    "image": {
+        "path": "props/school_biome/plants/plant_pot.png",
+        "width": 340,
+        "height": 382
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.85,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 120.37,
+            "radiusX": 373.33,
+            "radiusY": 240
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 100.37,
+                    "radius": 86.67,
+                    "halfHeight": 40,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": 7.03,
+                    "radius": 33.33,
+                    "halfHeight": 133.33,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 100.37,
+                    "radius": 86.67,
+                    "halfHeight": 40,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -59.63,
+                    "radius": 133.33,
+                    "halfHeight": 33.33,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

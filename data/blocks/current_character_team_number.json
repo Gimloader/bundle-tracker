@@ -1,0 +1,8 @@
+{
+    "type": "current_character_team_number",
+    "message0": "Triggering Player's Team Number",
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": "Number"
+}

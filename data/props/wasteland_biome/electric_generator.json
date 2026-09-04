@@ -1,0 +1,74 @@
+{
+    "id": "wasteland_biome/electric_generator",
+    "name": "Electric Generator",
+    "image": {
+        "path": "props/wasteland_biome/electric_generator.png",
+        "width": 714,
+        "height": 723
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": -30,
+            "y": 230.35,
+            "radiusX": 720,
+            "radiusY": 350
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -15,
+                    "y": 125.35,
+                    "width": 650,
+                    "height": 425,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -50,
+                    "y": -54.65,
+                    "width": 605,
+                    "height": 545,
+                    "angle": 0
+                },
+                {
+                    "x": 125,
+                    "y": 170.35,
+                    "width": 75,
+                    "height": 250,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": -145,
+                    "y": 240.35,
+                    "radius": 125
+                }
+            ],
+            "capsule": [
+                {
+                    "x": 290,
+                    "y": -209.65,
+                    "radius": 75,
+                    "halfHeight": 75,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

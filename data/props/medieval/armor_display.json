@@ -1,0 +1,67 @@
+{
+    "id": "medieval/armor_display",
+    "name": "Armor Display",
+    "image": {
+        "path": "props/medieval/armor_display.png",
+        "width": 802,
+        "height": 1191
+    },
+    "scale": 0.14,
+    "originX": 0.53,
+    "originY": 0.86,
+    "shadows": [
+        {
+            "x": 24.06,
+            "y": 521.62,
+            "radiusX": 928.57,
+            "radiusY": 357.14
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 24.06,
+                    "y": 507.33,
+                    "width": 664.29,
+                    "height": 171.43,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 24.06,
+                    "y": 221.62,
+                    "width": 664.29,
+                    "height": 742.86,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -161.65,
+                    "y": -199.81,
+                    "radius": 164.29,
+                    "halfHeight": 85.71,
+                    "angle": 58
+                },
+                {
+                    "x": 116.92,
+                    "y": -228.38,
+                    "radius": 178.57,
+                    "halfHeight": 85.71,
+                    "angle": 114
+                }
+            ]
+        }
+    }
+}

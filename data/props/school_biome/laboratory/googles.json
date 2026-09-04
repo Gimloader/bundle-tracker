@@ -1,0 +1,67 @@
+{
+    "id": "school_biome/laboratory/googles",
+    "name": "Safety Goggles",
+    "image": {
+        "path": "props/school_biome/laboratory/googles.png",
+        "width": 739,
+        "height": 458
+    },
+    "scale": 0.1,
+    "originX": 0.5,
+    "originY": 0.76,
+    "shadows": [
+        {
+            "x": 50,
+            "y": 89.08,
+            "radiusX": 720,
+            "radiusY": 340
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 80,
+                    "y": 79.08,
+                    "radius": 160,
+                    "halfHeight": 110,
+                    "angle": 90
+                },
+                {
+                    "x": -30,
+                    "y": -30.92,
+                    "radius": 150,
+                    "halfHeight": 200,
+                    "angle": 110
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 80,
+                    "y": 79.08,
+                    "radius": 160,
+                    "halfHeight": 110,
+                    "angle": 90
+                },
+                {
+                    "x": -30,
+                    "y": -30.92,
+                    "radius": 150,
+                    "halfHeight": 200,
+                    "angle": 110
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

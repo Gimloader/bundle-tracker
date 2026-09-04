@@ -1,0 +1,21 @@
+{
+    "type": "weapon",
+    "id": "zapper_epic",
+    "name": "Zapper",
+    "editorName": "Zapper (Epic)",
+    "description": "Zap the enemies away!",
+    "previewImage": "inventory/weapons/zapper.png",
+    "rarity": "epic",
+    "weapon": {
+        "type": "bullet",
+        "appearance": "zapper",
+        "shared": {
+            "cooldownBetweenShots": 160,
+            "allowAutoFire": true,
+            "startingProjectileDistanceFromCharacter": 0.8
+        },
+        "bullet": {
+            "ammoItemId": "light-shards"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "id": "platformer_sky_pixel_space",
+    "name": "Pixel Space",
+    "maskTilesUrl": "tilesets/sky/mask.png",
+    "borderTilesUrl": "tilesets/sky/border.png",
+    "fillUrl": "tilesets/platformer_sky_pixel_space/fill.jpg",
+    "blockedMapStyles": [
+        "topDown"
+    ],
+    "minimumRoleLevel": 90,
+    "previewUrl": "tilesets/sky/preview.png"
+}

@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "galaxy-fish",
+    "name": "Galaxy Fish",
+    "editorName": "Galaxy Fish",
+    "description": "I swam here from across the Milky Way.",
+    "previewImage": "inventory/resources/galaxy_fish.png"
+}

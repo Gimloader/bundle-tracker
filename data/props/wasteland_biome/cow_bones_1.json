@@ -1,0 +1,95 @@
+{
+    "id": "wasteland_biome/cow_bones_1",
+    "name": "Cow Bones",
+    "image": {
+        "path": "props/wasteland_biome/cow_bones_1.png",
+        "width": 563,
+        "height": 348
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0.6,
+    "shadows": [
+        {
+            "x": -12,
+            "y": 94.8,
+            "radiusX": 560,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -176,
+                    "y": 134.8,
+                    "radius": 40,
+                    "halfHeight": 64,
+                    "angle": 90
+                },
+                {
+                    "x": 40,
+                    "y": 14.8,
+                    "radius": 80,
+                    "halfHeight": 120,
+                    "angle": 90
+                },
+                {
+                    "x": 188,
+                    "y": 94.8,
+                    "radius": 40,
+                    "halfHeight": 40,
+                    "angle": 65
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -176,
+                    "y": 134.8,
+                    "radius": 40,
+                    "halfHeight": 64,
+                    "angle": 90
+                },
+                {
+                    "x": 72,
+                    "y": -1.2,
+                    "radius": 40,
+                    "halfHeight": 200,
+                    "angle": 65
+                },
+                {
+                    "x": 188,
+                    "y": 94.8,
+                    "radius": 40,
+                    "halfHeight": 40,
+                    "angle": 65
+                },
+                {
+                    "x": -40,
+                    "y": -65.2,
+                    "radius": 96,
+                    "halfHeight": 24,
+                    "angle": 320
+                },
+                {
+                    "x": 100,
+                    "y": -9.2,
+                    "radius": 100,
+                    "halfHeight": 20,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

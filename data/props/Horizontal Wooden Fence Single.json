@@ -1,0 +1,66 @@
+{
+    "id": "Horizontal Wooden Fence Single",
+    "name": "Wooden Fence (Horizontal)",
+    "image": {
+        "path": "props/farm/wooden_fence/horizontal_single.png",
+        "width": 364,
+        "height": 234
+    },
+    "scale": 0.345,
+    "originX": 0.5,
+    "originY": 0.82,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 100.97,
+            "radiusX": 423.19,
+            "radiusY": 86.96
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 31.4,
+                    "width": 318.84,
+                    "height": 86.96,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 2.42,
+                    "width": 347.83,
+                    "height": 144.93,
+                    "angle": 0
+                },
+                {
+                    "x": -147.83,
+                    "y": 2.42,
+                    "width": 72.46,
+                    "height": 237.68,
+                    "angle": 0
+                },
+                {
+                    "x": 144.93,
+                    "y": -0.48,
+                    "width": 72.46,
+                    "height": 237.68,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

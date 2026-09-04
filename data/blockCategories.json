@@ -1,0 +1,128 @@
+[
+    {
+        "name": "Essentials",
+        "color": "#283593",
+        "blocks": [
+            {
+                "type": "message_broadcaster"
+            },
+            {
+                "type": "set_property"
+            },
+            {
+                "type": "get_property"
+            },
+            {
+                "type": "current_character_name"
+            },
+            {
+                "type": "current_character_id"
+            },
+            {
+                "type": "add_activity_feed_item_for_everyone"
+            },
+            {
+                "type": "add_activity_feed_item_for_triggering_player"
+            },
+            {
+                "type": "add_activity_feed_item_for_game_host"
+            },
+            {
+                "type": "current_character_team_number"
+            },
+            {
+                "type": "triggering_player_score"
+            },
+            {
+                "type": "get_team_score"
+            },
+            {
+                "type": "is_a_live_game"
+            },
+            {
+                "type": "is_an_assignment"
+            },
+            {
+                "type": "seconds_into_game"
+            }
+        ]
+    },
+    {
+        "name": "Logic",
+        "color": "#5C81A6",
+        "blocks": [
+            {
+                "type": "controls_if"
+            },
+            {
+                "type": "logic_compare"
+            },
+            {
+                "type": "logic_operation"
+            },
+            {
+                "type": "logic_boolean"
+            }
+        ]
+    },
+    {
+        "name": "Math",
+        "color": "#5CA65C",
+        "blocks": [
+            {
+                "type": "math_number"
+            },
+            {
+                "type": "math_arithmetic"
+            },
+            {
+                "type": "math_single"
+            },
+            {
+                "type": "math_trig"
+            },
+            {
+                "type": "math_number_property"
+            },
+            {
+                "type": "math_round"
+            },
+            {
+                "type": "math_random_int"
+            }
+        ]
+    },
+    {
+        "name": "Text",
+        "color": "#5ba58c",
+        "blocks": [
+            {
+                "type": "text"
+            },
+            {
+                "type": "text_join"
+            },
+            {
+                "type": "text_length"
+            },
+            {
+                "type": "number_with_commas"
+            },
+            {
+                "type": "text_getSubstring"
+            },
+            {
+                "type": "text_charAt"
+            },
+            {
+                "type": "text_indexOf"
+            }
+        ]
+    },
+    {
+        "name": "Variables",
+        "color": "#a55b80",
+        "custom": "VARIABLE",
+        "blocks": []
+    }
+]

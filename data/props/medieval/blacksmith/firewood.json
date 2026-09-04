@@ -1,0 +1,52 @@
+{
+    "id": "medieval/blacksmith/firewood",
+    "name": "Firewood",
+    "image": {
+        "path": "props/medieval/blacksmith/firewood.png",
+        "width": 528,
+        "height": 368
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.73,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 117.97,
+            "radiusX": 653.33,
+            "radiusY": 253.33
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 84.64,
+                    "radius": 73.33,
+                    "halfHeight": 140,
+                    "angle": 88
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 6.67,
+                    "y": 17.97,
+                    "width": 466.67,
+                    "height": 326.67,
+                    "angle": -1
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

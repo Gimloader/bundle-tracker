@@ -1,0 +1,53 @@
+{
+    "id": "wasteland_biome/vending_machine_rusty",
+    "name": "Vending Machine (Rusty)",
+    "image": {
+        "path": "props/wasteland_biome/vending_machine_rusty.png",
+        "width": 684,
+        "height": 1217
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 507.65,
+            "radiusX": 820,
+            "radiusY": 310
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 57.65,
+                    "width": 690,
+                    "height": 1075,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -7.35,
+                    "width": 690,
+                    "height": 1200,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

@@ -1,0 +1,80 @@
+{
+    "id": "medieval/wooden_table_vertical",
+    "name": "Wooden Table (Vertical)",
+    "image": {
+        "path": "props/medieval/wooden_table_vertical.png",
+        "width": 969,
+        "height": 1687
+    },
+    "scale": 0.26,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": -11.54,
+            "y": 676.92,
+            "radiusX": 1292.31,
+            "radiusY": 607.69
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -96.15,
+                    "width": 969.23,
+                    "height": 1473.08,
+                    "angle": 0
+                },
+                {
+                    "x": -380.77,
+                    "y": 650,
+                    "width": 180.77,
+                    "height": 384.62,
+                    "angle": 0
+                },
+                {
+                    "x": 376.92,
+                    "y": 650,
+                    "width": 173.08,
+                    "height": 384.62,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -96.15,
+                    "width": 969.23,
+                    "height": 1473.08,
+                    "angle": 0
+                },
+                {
+                    "x": -380.77,
+                    "y": 650,
+                    "width": 180.77,
+                    "height": 384.62,
+                    "angle": 0
+                },
+                {
+                    "x": 376.92,
+                    "y": 650,
+                    "width": 173.08,
+                    "height": 384.62,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

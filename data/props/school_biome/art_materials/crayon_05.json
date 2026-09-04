@@ -1,0 +1,53 @@
+{
+    "id": "school_biome/art_materials/crayon_05",
+    "name": "Crayon (Blue)",
+    "image": {
+        "path": "props/school_biome/art_materials/crayon_05.png",
+        "width": 178,
+        "height": 81
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 6.67,
+            "radiusX": 200,
+            "radiusY": 106.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "radius": 33.33,
+                    "halfHeight": 60,
+                    "angle": 101
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "radius": 33.33,
+                    "halfHeight": 60,
+                    "angle": 101
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

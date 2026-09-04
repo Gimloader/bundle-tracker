@@ -1,0 +1,53 @@
+{
+    "id": "school_biome/art_materials/paint_tube_07",
+    "name": "Paint Tube (Pink)",
+    "image": {
+        "path": "props/school_biome/art_materials/paint_tube_07.png",
+        "width": 274,
+        "height": 233
+    },
+    "scale": 0.12,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 16.67,
+            "radiusX": 333.33,
+            "radiusY": 216.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -16.67,
+                    "y": 16.67,
+                    "radius": 75,
+                    "halfHeight": 75,
+                    "angle": 49
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -16.67,
+                    "y": 16.67,
+                    "radius": 75,
+                    "halfHeight": 75,
+                    "angle": 49
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

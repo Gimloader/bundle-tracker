@@ -1,0 +1,59 @@
+{
+    "id": "Command Table On",
+    "name": "Command Table",
+    "image": {
+        "path": "props/command_table/command_table_on.png",
+        "width": 432,
+        "height": 250
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 60.5,
+            "radiusX": 496,
+            "radiusY": 216
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 32.5,
+                    "width": 420,
+                    "height": 160,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 12.5,
+                    "width": 432,
+                    "height": 230,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -27.5,
+                    "width": 156,
+                    "height": 194,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

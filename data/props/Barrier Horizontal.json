@@ -1,0 +1,59 @@
+{
+    "id": "Barrier Horizontal",
+    "name": "Barrier (Horizontal)",
+    "image": {
+        "path": "props/barriers/barrier_horizontal.png",
+        "width": 380,
+        "height": 240
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.6,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 48,
+            "radiusX": 444,
+            "radiusY": 260
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 34,
+                    "width": 380,
+                    "height": 160,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 344,
+                    "height": 238,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 52,
+                    "width": 380,
+                    "height": 136,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

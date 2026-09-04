@@ -1,0 +1,81 @@
+{
+    "id": "wasteland_biome/cactus_1",
+    "name": "Cactus",
+    "image": {
+        "path": "props/wasteland_biome/cactus_1.png",
+        "width": 670,
+        "height": 760
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 25,
+            "y": 342,
+            "radiusX": 350,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 15,
+                    "y": 142,
+                    "radius": 100,
+                    "halfHeight": 150,
+                    "angle": 0
+                },
+                {
+                    "x": 135,
+                    "y": 2,
+                    "radius": 125,
+                    "halfHeight": 50,
+                    "angle": 90
+                },
+                {
+                    "x": -105,
+                    "y": 67,
+                    "radius": 150,
+                    "halfHeight": 0,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 15,
+                    "y": 7,
+                    "radius": 130,
+                    "halfHeight": 250,
+                    "angle": 0
+                },
+                {
+                    "x": 145,
+                    "y": -83,
+                    "radius": 190,
+                    "halfHeight": 15,
+                    "angle": 0
+                },
+                {
+                    "x": -105,
+                    "y": -58,
+                    "radius": 200,
+                    "halfHeight": 75,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

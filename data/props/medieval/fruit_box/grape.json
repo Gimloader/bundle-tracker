@@ -1,0 +1,52 @@
+{
+    "id": "medieval/fruit_box/grape",
+    "name": "Fruit Box (Grape)",
+    "image": {
+        "path": "props/medieval/fruit_box/grape.png",
+        "width": 568,
+        "height": 592
+    },
+    "scale": 0.14,
+    "originX": 0.5,
+    "originY": 0.8,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 206.17,
+            "radiusX": 757.14,
+            "radiusY": 371.43
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 170.46,
+                    "width": 564.29,
+                    "height": 250,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 41.89,
+                    "width": 564.29,
+                    "height": 500,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "type": "get_player_count",
+    "message0": "Number Of Players On Team %1 ",
+    "args0": [
+        {
+            "type": "input_dummy"
+        }
+    ],
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": [
+        "Number"
+    ]
+}

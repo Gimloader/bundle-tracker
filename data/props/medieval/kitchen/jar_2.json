@@ -1,0 +1,58 @@
+{
+    "id": "medieval/kitchen/jar_2",
+    "name": "Medieval Pitcher (Red)",
+    "image": {
+        "path": "props/medieval/kitchen/jar_2.png",
+        "width": 446,
+        "height": 546
+    },
+    "scale": 0.12,
+    "originX": 0.5,
+    "originY": 0.84,
+    "shadows": [
+        {
+            "x": -41.67,
+            "y": 185.64,
+            "radiusX": 450,
+            "radiusY": 250
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -25,
+                    "y": 177.31,
+                    "radius": 91.67,
+                    "halfHeight": 50,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": -16.67,
+                    "y": 102.31,
+                    "radius": 141.67
+                }
+            ],
+            "capsule": [
+                {
+                    "x": 25,
+                    "y": -6.03,
+                    "radius": 100,
+                    "halfHeight": 58.33,
+                    "angle": 298
+                }
+            ]
+        }
+    }
+}

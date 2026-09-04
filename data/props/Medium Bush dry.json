@@ -1,0 +1,101 @@
+{
+    "id": "Medium Bush dry",
+    "name": "Dry Bush",
+    "image": {
+        "path": "props/plants/bushes/medium_dry.png",
+        "width": 650,
+        "height": 345
+    },
+    "scale": 0.26,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 110.96,
+            "radiusX": 715.38,
+            "radiusY": 223.08
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -196.15,
+                    "y": 26.35,
+                    "radius": 115.38,
+                    "halfHeight": 11.54,
+                    "angle": 90
+                },
+                {
+                    "x": -57.69,
+                    "y": -58.27,
+                    "radius": 115.38,
+                    "halfHeight": 19.23,
+                    "angle": 90
+                },
+                {
+                    "x": 115.38,
+                    "y": -31.35,
+                    "radius": 115.38,
+                    "halfHeight": 0,
+                    "angle": 90
+                },
+                {
+                    "x": 211.54,
+                    "y": 30.19,
+                    "radius": 88.46,
+                    "halfHeight": 26.92,
+                    "angle": 90
+                },
+                {
+                    "x": 7.69,
+                    "y": 107.12,
+                    "radius": 57.69,
+                    "halfHeight": 19.23,
+                    "angle": 90
+                },
+                {
+                    "x": -126.92,
+                    "y": 57.12,
+                    "radius": 115.38,
+                    "halfHeight": 11.54,
+                    "angle": 90
+                },
+                {
+                    "x": 134.62,
+                    "y": 57.12,
+                    "radius": 115.38,
+                    "halfHeight": 19.23,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 41.73,
+                    "radius": 130.77,
+                    "halfHeight": 192.31,
+                    "angle": 90
+                },
+                {
+                    "x": 19.23,
+                    "y": -104.42,
+                    "radius": 65.38,
+                    "halfHeight": 134.62,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

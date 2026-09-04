@@ -1,0 +1,66 @@
+{
+    "id": "Log 2",
+    "name": "Stump",
+    "image": {
+        "path": "props/logs/log_2.png",
+        "width": 257,
+        "height": 145
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 20.5,
+            "radiusX": 284,
+            "radiusY": 128
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 14.5,
+                    "radius": 50,
+                    "halfHeight": 70,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -2,
+                    "y": -33.5,
+                    "radius": 38,
+                    "halfHeight": 42,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": 8.5,
+                    "radius": 34,
+                    "halfHeight": 96,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": 22.5,
+                    "radius": 30,
+                    "halfHeight": 20,
+                    "angle": 0
+                }
+            ]
+        }
+    }
+}

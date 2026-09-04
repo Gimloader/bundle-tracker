@@ -1,0 +1,53 @@
+{
+    "id": "space/crashed_ship",
+    "name": "Crashed Ship",
+    "image": {
+        "path": "props/space/crashed_ship.png",
+        "width": 2601,
+        "height": 1932
+    },
+    "scale": 0.3,
+    "originX": 0.5,
+    "originY": 0.53,
+    "shadows": [
+        {
+            "x": 36.67,
+            "y": 367.96,
+            "radiusX": 2520,
+            "radiusY": 500
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": false
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": -36.67,
+                    "y": 71.29,
+                    "radius": 743.33
+                },
+                {
+                    "x": -756.67,
+                    "y": 381.29,
+                    "radius": 326.67
+                },
+                {
+                    "x": 760,
+                    "y": 57.96,
+                    "radius": 533.33
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "minimumRoleLevel": 90
+}

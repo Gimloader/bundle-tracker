@@ -1,0 +1,11 @@
+{
+    "id": "platformer_light_scraps",
+    "name": "Light Scraps",
+    "maskTilesUrl": "tilesets/platformer_light_scraps/mask.png",
+    "borderTilesUrl": "tilesets/platformer_light_scraps/border.png",
+    "fillUrl": "tilesets/platformer_light_scraps/fill.png",
+    "blockedMapStyles": [
+        "topDown"
+    ],
+    "previewUrl": "tilesets/platformer_light_scraps/preview.png"
+}

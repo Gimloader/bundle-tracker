@@ -1,0 +1,21 @@
+{
+    "type": "weapon",
+    "id": "wooden_wand_epic",
+    "name": "Wooden Wand",
+    "editorName": "Wooden Wand (Epic)",
+    "description": "Cast a botanical spell.",
+    "previewImage": "inventory/weapons/wooden_wand.png",
+    "rarity": "epic",
+    "weapon": {
+        "type": "bullet",
+        "appearance": "woodenWand",
+        "shared": {
+            "cooldownBetweenShots": 375,
+            "allowAutoFire": false,
+            "startingProjectileDistanceFromCharacter": 0.9
+        },
+        "bullet": {
+            "ammoItemId": "medium-shards"
+        }
+    }
+}

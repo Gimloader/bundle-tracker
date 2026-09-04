@@ -1,0 +1,64 @@
+{
+    "id": "Flower Pot 5",
+    "name": "Flower Pot",
+    "image": {
+        "path": "props/plants/flower_pot_5.png",
+        "width": 194,
+        "height": 251
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 107.5,
+            "radiusX": 160,
+            "radiusY": 72
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": 2,
+                    "y": 67.5,
+                    "radius": 62
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -62.5,
+                    "width": 188,
+                    "height": 130,
+                    "angle": 0
+                },
+                {
+                    "x": -6,
+                    "y": 59.5,
+                    "width": 128,
+                    "height": 130,
+                    "angle": 0
+                },
+                {
+                    "x": -76,
+                    "y": 19.5,
+                    "width": 40,
+                    "height": 40,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

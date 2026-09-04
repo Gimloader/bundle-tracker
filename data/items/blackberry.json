@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "blackberry",
+    "name": "Blackberry",
+    "editorName": "Blackberry",
+    "description": "The berry, not the phone.",
+    "previewImage": "inventory/resources/blackberry.png"
+}

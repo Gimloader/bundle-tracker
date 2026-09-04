@@ -1,0 +1,29 @@
+{
+    "id": "Fish Stack",
+    "name": "Fish Stack ",
+    "image": {
+        "path": "props/stacks/stack_fish.png",
+        "width": 210,
+        "height": 183
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

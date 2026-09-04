@@ -1,0 +1,74 @@
+{
+    "id": "wasteland_biome/trash_pile_03",
+    "name": "Trash Pile",
+    "image": {
+        "path": "props/wasteland_biome/trash_pile_03.png",
+        "width": 747,
+        "height": 746
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.6,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 74.6,
+            "radiusX": 800,
+            "radiusY": 650
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 50,
+                    "y": 124.6,
+                    "radius": 200,
+                    "halfHeight": 120,
+                    "angle": 60
+                },
+                {
+                    "x": -75,
+                    "y": 124.6,
+                    "radius": 200,
+                    "halfHeight": 100,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 50,
+                    "y": 124.6,
+                    "radius": 200,
+                    "halfHeight": 120,
+                    "angle": 60
+                },
+                {
+                    "x": -75,
+                    "y": 124.6,
+                    "radius": 200,
+                    "halfHeight": 100,
+                    "angle": 90
+                },
+                {
+                    "x": -35,
+                    "y": -100.4,
+                    "radius": 225,
+                    "halfHeight": 100,
+                    "angle": 60
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

@@ -1,0 +1,11 @@
+{
+    "id": "Sci-Fi Lab Floor Green",
+    "name": "Lab Floor (Green)",
+    "maskTilesUrl": "tilesets/scifi_lab_floor/mask.png",
+    "borderTilesUrl": "tilesets/scifi_lab_floor/border_green.png",
+    "fillUrl": "tilesets/scifi_lab_floor/fill_green.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/scifi_lab_floor/preview_green.png"
+}

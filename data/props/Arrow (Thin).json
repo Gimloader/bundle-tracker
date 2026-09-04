@@ -1,0 +1,30 @@
+{
+    "id": "Arrow (Thin)",
+    "name": "Arrow (Thin)",
+    "image": {
+        "path": "props/arrows/arrow_thin.png",
+        "width": 512,
+        "height": 512
+    },
+    "scale": 0.3,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "minimumRoleLevel": 90
+}

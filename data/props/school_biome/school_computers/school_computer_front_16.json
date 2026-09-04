@@ -1,0 +1,82 @@
+{
+    "id": "school_biome/school_computers/school_computer_front_16",
+    "name": "School Computer",
+    "image": {
+        "path": "props/school_biome/school_computers/school_computer_front_16.png",
+        "width": 770,
+        "height": 879
+    },
+    "scale": 0.12,
+    "originX": 0.5,
+    "originY": 0.7,
+    "shadows": [
+        {
+            "x": 16.67,
+            "y": 234.13,
+            "radiusX": 866.67,
+            "radiusY": 666.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -66.67,
+                    "y": 100.8,
+                    "width": 366.67,
+                    "height": 208.33,
+                    "angle": 0
+                },
+                {
+                    "x": -66.67,
+                    "y": -115.87,
+                    "width": 625,
+                    "height": 333.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -66.67,
+                    "y": 100.8,
+                    "width": 366.67,
+                    "height": 208.33,
+                    "angle": 0
+                },
+                {
+                    "x": -66.67,
+                    "y": -199.2,
+                    "width": 625,
+                    "height": 500,
+                    "angle": 0
+                },
+                {
+                    "x": -66.67,
+                    "y": 334.13,
+                    "width": 500,
+                    "height": 233.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 300,
+                    "y": 334.13,
+                    "radius": 83.33,
+                    "halfHeight": 41.67,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

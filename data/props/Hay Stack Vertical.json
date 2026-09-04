@@ -1,0 +1,52 @@
+{
+    "id": "Hay Stack Vertical",
+    "name": "Hay Stack",
+    "image": {
+        "path": "props/farm/hay_stack_vertical.png",
+        "width": 255,
+        "height": 358
+    },
+    "scale": 0.39,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 64.1,
+            "radiusX": 292.31,
+            "radiusY": 302.56
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 12.82,
+                    "width": 220.51,
+                    "height": 269.23,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 253.85,
+                    "height": 358.97,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

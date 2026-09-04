@@ -1,0 +1,11 @@
+{
+    "id": "Cracked Wood",
+    "name": "Cracked Oak",
+    "maskTilesUrl": "tilesets/cracked_wood/mask.png",
+    "borderTilesUrl": "tilesets/cracked_wood/border.png",
+    "fillUrl": "tilesets/cracked_wood/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/cracked_wood/preview.png"
+}

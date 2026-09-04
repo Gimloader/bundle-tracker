@@ -1,0 +1,13 @@
+{
+    "type": "item",
+    "id": "terrain_dynamic_sand",
+    "name": "Dynamic Sand",
+    "editorName": "Dynamic Sand",
+    "description": "Build structures made of sand",
+    "previewImage": "inventory/items/terrain_dynamic_sand.png",
+    "rarity": "uncommon",
+    "useCommand": "Drop",
+    "consumeType": "buildTerrain",
+    "terrainId": "Dynamic Sand",
+    "maxStackSize": 50
+}

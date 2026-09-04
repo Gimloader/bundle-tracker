@@ -1,0 +1,66 @@
+{
+    "id": "Shelf",
+    "name": "Metal Shelf",
+    "image": {
+        "path": "props/workshop/shelf.png",
+        "width": 353,
+        "height": 552
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 254,
+            "radiusX": 436,
+            "radiusY": 188
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 36,
+                    "width": 360,
+                    "height": 500,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -26,
+                    "width": 360,
+                    "height": 500,
+                    "angle": 0
+                },
+                {
+                    "x": 158,
+                    "y": 232,
+                    "width": 40,
+                    "height": 90,
+                    "angle": 0
+                },
+                {
+                    "x": -160,
+                    "y": 234,
+                    "width": 40,
+                    "height": 90,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "id": "Shovel 9",
+    "name": "Shovel",
+    "image": {
+        "path": "props/shovels/shovel_9.png",
+        "width": 117,
+        "height": 166
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.85,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": -10,
+                    "y": 44.1,
+                    "radius": 28
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 6,
+                    "y": -5.9,
+                    "width": 46,
+                    "height": 140,
+                    "angle": 23
+                }
+            ],
+            "circle": [
+                {
+                    "x": -12,
+                    "y": 44.1,
+                    "radius": 34
+                }
+            ],
+            "capsule": []
+        }
+    }
+}

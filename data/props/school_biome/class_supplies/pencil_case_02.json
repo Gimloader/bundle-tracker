@@ -1,0 +1,53 @@
+{
+    "id": "school_biome/class_supplies/pencil_case_02",
+    "name": "Pencil Case",
+    "image": {
+        "path": "props/school_biome/class_supplies/pencil_case_02.png",
+        "width": 333,
+        "height": 199
+    },
+    "scale": 0.12,
+    "originX": 0.5,
+    "originY": 0.76,
+    "shadows": [
+        {
+            "x": 8.33,
+            "y": 43.41,
+            "radiusX": 333.33,
+            "radiusY": 166.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 16.67,
+                    "y": 26.74,
+                    "radius": 58.33,
+                    "halfHeight": 91.67,
+                    "angle": 81
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 16.67,
+                    "y": 1.74,
+                    "radius": 91.67,
+                    "halfHeight": 66.67,
+                    "angle": 81
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

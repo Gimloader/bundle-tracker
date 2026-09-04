@@ -1,0 +1,74 @@
+{
+    "id": "school_biome/flag_poles/flag_pole_01",
+    "name": "Flag Pole (Empty)",
+    "image": {
+        "path": "props/school_biome/flag_poles/flag_pole_01.png",
+        "width": 163,
+        "height": 1033
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 438.2,
+            "radiusX": 220,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 423.2,
+                    "radius": 85,
+                    "halfHeight": 15,
+                    "angle": 0
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -11.8,
+                    "width": 50,
+                    "height": 875,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": -481.8,
+                    "radius": 35
+                }
+            ],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 423.2,
+                    "radius": 85,
+                    "halfHeight": 15,
+                    "angle": 0
+                },
+                {
+                    "x": -35,
+                    "y": -31.8,
+                    "radius": 15,
+                    "halfHeight": 365,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

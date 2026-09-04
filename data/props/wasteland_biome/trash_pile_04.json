@@ -1,0 +1,88 @@
+{
+    "id": "wasteland_biome/trash_pile_04",
+    "name": "Trash Pile",
+    "image": {
+        "path": "props/wasteland_biome/trash_pile_04.png",
+        "width": 1270,
+        "height": 1060
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": -20,
+            "y": 115,
+            "radiusX": 1270,
+            "radiusY": 890
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 75,
+                    "radius": 200,
+                    "halfHeight": 450,
+                    "angle": 83
+                },
+                {
+                    "x": 0,
+                    "y": 350,
+                    "radius": 125,
+                    "halfHeight": 245,
+                    "angle": 83
+                },
+                {
+                    "x": -50,
+                    "y": 10,
+                    "radius": 260,
+                    "halfHeight": 240,
+                    "angle": 83
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 75,
+                    "radius": 200,
+                    "halfHeight": 450,
+                    "angle": 83
+                },
+                {
+                    "x": 0,
+                    "y": 350,
+                    "radius": 125,
+                    "halfHeight": 245,
+                    "angle": 83
+                },
+                {
+                    "x": -50,
+                    "y": -65,
+                    "radius": 260,
+                    "halfHeight": 240,
+                    "angle": 83
+                },
+                {
+                    "x": 0,
+                    "y": -375,
+                    "radius": 150,
+                    "halfHeight": 50,
+                    "angle": 83
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

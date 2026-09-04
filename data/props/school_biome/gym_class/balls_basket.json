@@ -1,0 +1,53 @@
+{
+    "id": "school_biome/gym_class/balls_basket",
+    "name": "Ball Bin",
+    "image": {
+        "path": "props/school_biome/gym_class/balls_basket.png",
+        "width": 584,
+        "height": 923
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.96,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 157.91,
+            "radiusX": 733.33,
+            "radiusY": 933.33
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 124.58,
+                    "width": 566.67,
+                    "height": 666.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -8.75,
+                    "width": 566.67,
+                    "height": 913.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

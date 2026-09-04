@@ -1,0 +1,12 @@
+{
+    "id": "Outdoor Pavement",
+    "name": "Sidewalk Pavement",
+    "maskTilesUrl": "tilesets/outdoor_pavement/mask.png",
+    "borderTilesUrl": "tilesets/outdoor_pavement/border.png",
+    "fillUrl": "tilesets/outdoor_pavement/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "seasonTicketRequired": true,
+    "previewUrl": "tilesets/outdoor_pavement/preview.png"
+}

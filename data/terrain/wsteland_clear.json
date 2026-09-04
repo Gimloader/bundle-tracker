@@ -1,0 +1,12 @@
+{
+    "id": "wsteland_clear",
+    "name": "Wasteland (Clear)",
+    "maskTilesUrl": "tilesets/wasteland/mask.png",
+    "borderTilesUrl": "tilesets/wasteland/border_clear.png",
+    "fillUrl": "tilesets/wasteland/fill_clear.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "seasonTicketRequired": true,
+    "previewUrl": "tilesets/wasteland/preview_clear.png"
+}

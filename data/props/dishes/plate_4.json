@@ -1,0 +1,29 @@
+{
+    "id": "dishes/plate_4",
+    "name": "Ceramic Plate (Broccoli)",
+    "image": {
+        "path": "props/dishes/plate_4.png",
+        "width": 144,
+        "height": 96
+    },
+    "scale": 0.35,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

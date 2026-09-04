@@ -1,0 +1,73 @@
+{
+    "id": "plants/plant_canister/plant_canister_6",
+    "name": "Plant Canister",
+    "image": {
+        "path": "props/plants/plant_canister/plant_canister_6.png",
+        "width": 325,
+        "height": 640
+    },
+    "scale": 0.18,
+    "originX": 0.43,
+    "originY": 0.85,
+    "shadows": [
+        {
+            "x": -22.75,
+            "y": 185.11,
+            "radiusX": 355.56,
+            "radiusY": 222.22
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -22.75,
+                    "y": 107.33,
+                    "radius": 138.89,
+                    "halfHeight": 0,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -22.75,
+                    "y": 135.11,
+                    "radius": 138.89,
+                    "halfHeight": 0,
+                    "angle": 90
+                },
+                {
+                    "x": -22.75,
+                    "y": -53.78,
+                    "radius": 111.11,
+                    "halfHeight": 83.33,
+                    "angle": 0
+                },
+                {
+                    "x": -17.19,
+                    "y": -248.22,
+                    "radius": 44.44,
+                    "halfHeight": 38.89,
+                    "angle": 0
+                },
+                {
+                    "x": 32.81,
+                    "y": 190.67,
+                    "radius": 111.11,
+                    "halfHeight": 27.78,
+                    "angle": 125
+                }
+            ]
+        }
+    }
+}

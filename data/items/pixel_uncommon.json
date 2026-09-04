@@ -1,0 +1,21 @@
+{
+    "type": "weapon",
+    "id": "pixel_uncommon",
+    "name": "Pixelator",
+    "editorName": "Pixelator (Uncommon)",
+    "description": "Crumbles the competition into...bits.",
+    "previewImage": "inventory/weapons/pixel.png",
+    "rarity": "uncommon",
+    "weapon": {
+        "type": "bullet",
+        "appearance": "pixel",
+        "shared": {
+            "cooldownBetweenShots": 270,
+            "allowAutoFire": true,
+            "startingProjectileDistanceFromCharacter": 0.8
+        },
+        "bullet": {
+            "ammoItemId": "light-shards"
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "energy",
+    "name": "Energy",
+    "editorName": "Energy",
+    "description": "Just keep moving, just keep moving...",
+    "previewImage": "inventory/resources/energy.png"
+}

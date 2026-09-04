@@ -1,0 +1,57 @@
+{
+    "id": "Plant 1",
+    "name": "Potted Plant",
+    "image": {
+        "path": "props/plants/plant_pot_1.png",
+        "width": 169,
+        "height": 189
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": -2,
+            "y": 76.5,
+            "radiusX": 136,
+            "radiusY": 76
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 46.5,
+                    "radius": 50
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -49.5,
+                    "radius": 54,
+                    "halfHeight": 32,
+                    "angle": 90
+                },
+                {
+                    "x": -4,
+                    "y": 14.5,
+                    "radius": 60,
+                    "halfHeight": 20,
+                    "angle": 0
+                }
+            ]
+        }
+    }
+}

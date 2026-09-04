@@ -1,0 +1,61 @@
+{
+    "id": "luck/clover_trees/clover_tree_1",
+    "name": "Clover Tree",
+    "image": {
+        "path": "props/luck/clover_trees/clover_tree_1.png",
+        "width": 310,
+        "height": 519
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 28,
+            "y": 241.55,
+            "radiusX": 104,
+            "radiusY": 64
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 40,
+                    "y": 141.55,
+                    "width": 44,
+                    "height": 240,
+                    "angle": 7
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 40,
+                    "y": 141.55,
+                    "width": 44,
+                    "height": 240,
+                    "angle": 7
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -86.45,
+                    "radius": 148,
+                    "halfHeight": 12,
+                    "angle": 350
+                }
+            ]
+        }
+    },
+    "minimumRoleLevel": 90
+}

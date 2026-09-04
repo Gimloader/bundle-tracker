@@ -1,0 +1,95 @@
+{
+    "id": "mining/bulletin_board",
+    "name": "Bulletin Board",
+    "image": {
+        "path": "props/mining/bulletin_board.png",
+        "width": 1418,
+        "height": 1137
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 568.5,
+            "radiusX": 1333.33,
+            "radiusY": 400
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -500,
+                    "y": 188.5,
+                    "width": 126.67,
+                    "height": 766.67,
+                    "angle": 0
+                },
+                {
+                    "x": 453.33,
+                    "y": 201.83,
+                    "width": 133.33,
+                    "height": 733.33,
+                    "angle": 0
+                },
+                {
+                    "x": -20,
+                    "y": 1.83,
+                    "width": 1073.33,
+                    "height": 666.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -500,
+                    "y": 188.5,
+                    "width": 126.67,
+                    "height": 766.67,
+                    "angle": 0
+                },
+                {
+                    "x": 453.33,
+                    "y": 201.83,
+                    "width": 133.33,
+                    "height": 733.33,
+                    "angle": 0
+                },
+                {
+                    "x": -20,
+                    "y": -104.83,
+                    "width": 1073.33,
+                    "height": 933.33,
+                    "angle": 0
+                },
+                {
+                    "x": -500,
+                    "y": -338.17,
+                    "width": 300,
+                    "height": 366.67,
+                    "angle": 24
+                },
+                {
+                    "x": 513.33,
+                    "y": -351.5,
+                    "width": 266.67,
+                    "height": 366.67,
+                    "angle": -23
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "minimumRoleLevel": 90
+}

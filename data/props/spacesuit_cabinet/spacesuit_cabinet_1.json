@@ -1,0 +1,52 @@
+{
+    "id": "spacesuit_cabinet/spacesuit_cabinet_1",
+    "name": "Spacesuit Cabinet",
+    "image": {
+        "path": "props/spacesuit_cabinet/spacesuit_cabinet_1.png",
+        "width": 466,
+        "height": 800
+    },
+    "scale": 0.23,
+    "originX": 0.5,
+    "originY": 0.96,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 389.74,
+            "radiusX": 626.09,
+            "radiusY": 191.3
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 85.39,
+                    "width": 456.52,
+                    "height": 565.22,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -1.57,
+                    "width": 456.52,
+                    "height": 804.35,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

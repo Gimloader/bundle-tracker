@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "wheat",
+    "name": "Wheat",
+    "editorName": "Wheat",
+    "description": "An essential grain for your favorite foods",
+    "previewImage": "inventory/resources/wheat.png"
+}

@@ -1,0 +1,53 @@
+{
+    "id": "school_biome/library/library_tall_01",
+    "name": "Oak Bookshelf",
+    "image": {
+        "path": "props/school_biome/library/library_tall_01.png",
+        "width": 875,
+        "height": 1247
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 498.8,
+            "radiusX": 1000,
+            "radiusY": 533.33
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 112.13,
+                    "width": 866.67,
+                    "height": 1000,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 5.47,
+                    "width": 866.67,
+                    "height": 1233.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

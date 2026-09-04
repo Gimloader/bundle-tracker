@@ -1,0 +1,74 @@
+{
+    "id": "Hay Pile",
+    "name": "Hay Pile",
+    "image": {
+        "path": "props/farm/hay_pile.png",
+        "width": 691,
+        "height": 629
+    },
+    "scale": 0.27,
+    "originX": 0.5,
+    "originY": 0.73,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 196.52,
+            "radiusX": 770.37,
+            "radiusY": 281.48
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 126.15,
+                    "width": 537.04,
+                    "height": 259.26,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 192.59,
+                    "y": 15.04,
+                    "width": 166.67,
+                    "height": 388.89,
+                    "angle": -20
+                },
+                {
+                    "x": -192.59,
+                    "y": 15.04,
+                    "width": 166.67,
+                    "height": 388.89,
+                    "angle": 20
+                },
+                {
+                    "x": 0,
+                    "y": 70.6,
+                    "width": 370.37,
+                    "height": 370.37,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -129.4,
+                    "radius": 177.78,
+                    "halfHeight": 44.44,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

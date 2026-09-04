@@ -1,0 +1,52 @@
+{
+    "id": "school_biome/library/library_book_01",
+    "name": "Books",
+    "image": {
+        "path": "props/school_biome/library/library_book_01.png",
+        "width": 368,
+        "height": 435
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.75,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 48.75,
+            "radiusX": 466.67,
+            "radiusY": 400
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -13.33,
+                    "y": 68.75,
+                    "width": 280,
+                    "height": 266.67,
+                    "angle": 31
+                },
+                {
+                    "x": -6.67,
+                    "y": -24.58,
+                    "width": 233.33,
+                    "height": 213.33,
+                    "angle": -4
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

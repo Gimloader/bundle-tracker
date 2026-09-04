@@ -1,0 +1,11 @@
+{
+    "id": "Dry Grass",
+    "name": "Dry Grass",
+    "maskTilesUrl": "tilesets/grass/mask.png",
+    "borderTilesUrl": "tilesets/grass/26_grass_dry_border.png",
+    "fillUrl": "tilesets/grass/26_grass_dry_fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/grass/26_grass_dry_preview.png"
+}

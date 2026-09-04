@@ -1,0 +1,12 @@
+{
+    "id": "crackled_earth_white",
+    "name": "Crackled Desert (White)",
+    "maskTilesUrl": "tilesets/crackled_earth/mask.png",
+    "borderTilesUrl": "tilesets/crackled_earth/border_white.png",
+    "fillUrl": "tilesets/crackled_earth/fill_white.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "seasonTicketRequired": true,
+    "previewUrl": "tilesets/crackled_earth/preview_white.png"
+}

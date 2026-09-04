@@ -1,0 +1,12 @@
+{
+    "id": "Classtoom Red",
+    "name": "Classroom Tile (Red)",
+    "maskTilesUrl": "tilesets/classroom_red/mask.png",
+    "borderTilesUrl": "tilesets/classroom_red/border.png",
+    "fillUrl": "tilesets/classroom_red/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "seasonTicketRequired": true,
+    "previewUrl": "tilesets/classroom_red/preview.png"
+}

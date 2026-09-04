@@ -1,0 +1,89 @@
+{
+    "id": "wasteland_biome/wrecked_car_3",
+    "name": "Wrecked Car",
+    "image": {
+        "path": "props/wasteland_biome/wrecked_car_3.png",
+        "width": 2046,
+        "height": 1073
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.8,
+    "shadows": [
+        {
+            "x": -30,
+            "y": 321.9,
+            "radiusX": 2150,
+            "radiusY": 600
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 71.9,
+                    "width": 2050,
+                    "height": 700,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": 520,
+                    "y": 386.9,
+                    "radius": 145
+                },
+                {
+                    "x": -650,
+                    "y": 386.9,
+                    "radius": 150
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -590,
+                    "y": 71.9,
+                    "width": 865,
+                    "height": 700,
+                    "angle": 0
+                },
+                {
+                    "x": 375,
+                    "y": 31.9,
+                    "width": 1275,
+                    "height": 725,
+                    "angle": 0
+                },
+                {
+                    "x": -65,
+                    "y": -278.1,
+                    "width": 1775,
+                    "height": 500,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": 520,
+                    "y": 386.9,
+                    "radius": 145
+                },
+                {
+                    "x": -650,
+                    "y": 386.9,
+                    "radius": 150
+                }
+            ],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

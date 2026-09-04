@@ -1,0 +1,9 @@
+{
+    "id": "editingAccessPoint",
+    "name": "Editing Access Point",
+    "description": "Create points to easily access and teleport to while editing your map",
+    "optionSchema": "{\"options\":[{\"key\":\"name\",\"option\":{\"label\":\"Access Point Name\",\"description\":\"Set the name of this access point to easily identify it\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Spawn Area\",\"maxLength\":48}}}]}",
+    "defaultState": "{}",
+    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
+    "minimumRoleLevel": 90
+}

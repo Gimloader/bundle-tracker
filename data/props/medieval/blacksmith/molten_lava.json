@@ -1,0 +1,52 @@
+{
+    "id": "medieval/blacksmith/molten_lava",
+    "name": "Molten Lava Bucket",
+    "image": {
+        "path": "props/medieval/blacksmith/molten_lava.png",
+        "width": 403,
+        "height": 476
+    },
+    "scale": 0.14,
+    "originX": 0.5,
+    "originY": 0.68,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 164.25,
+            "radiusX": 485.71,
+            "radiusY": 257.14
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 78.54,
+                    "radius": 150,
+                    "halfHeight": 35.71,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -0.03,
+                    "radius": 200,
+                    "halfHeight": 42.86,
+                    "angle": 0
+                }
+            ]
+        }
+    }
+}

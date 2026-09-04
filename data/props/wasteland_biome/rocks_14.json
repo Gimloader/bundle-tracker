@@ -1,0 +1,81 @@
+{
+    "id": "wasteland_biome/rocks_14",
+    "name": "Rocks",
+    "image": {
+        "path": "props/wasteland_biome/rocks_14.png",
+        "width": 1219,
+        "height": 805
+    },
+    "scale": 0.35,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": -42.86,
+            "y": 302.5,
+            "radiusX": 1000,
+            "radiusY": 342.86
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -54.29,
+                    "y": 276.79,
+                    "radius": 114.29,
+                    "halfHeight": 385.71,
+                    "angle": 88
+                },
+                {
+                    "x": -100,
+                    "y": 2.5,
+                    "radius": 185.71,
+                    "halfHeight": 328.57,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -54.29,
+                    "y": 276.79,
+                    "radius": 114.29,
+                    "halfHeight": 385.71,
+                    "angle": 88
+                },
+                {
+                    "x": -100,
+                    "y": 2.5,
+                    "radius": 185.71,
+                    "halfHeight": 328.57,
+                    "angle": 90
+                },
+                {
+                    "x": 25.71,
+                    "y": -197.5,
+                    "radius": 171.43,
+                    "halfHeight": 385.71,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -311.79,
+                    "radius": 85.71,
+                    "halfHeight": 100,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

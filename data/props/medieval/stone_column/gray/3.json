@@ -1,0 +1,81 @@
+{
+    "id": "medieval/stone_column/gray/3",
+    "name": "Stone Column (Gray)",
+    "image": {
+        "path": "props/medieval/stone_column/gray/3.png",
+        "width": 394,
+        "height": 830
+    },
+    "scale": 0.22,
+    "originX": 0.5,
+    "originY": 0.89,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 328.25,
+            "radiusX": 609.09,
+            "radiusY": 345.45
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 241.88,
+                    "width": 400,
+                    "height": 345.45,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 241.88,
+                    "width": 400,
+                    "height": 345.45,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -94.48,
+                    "width": 300,
+                    "height": 359.09,
+                    "angle": 0
+                },
+                {
+                    "x": -127.27,
+                    "y": -308.12,
+                    "width": 54.55,
+                    "height": 218.18,
+                    "angle": 0
+                },
+                {
+                    "x": -81.82,
+                    "y": -399.03,
+                    "width": 68.18,
+                    "height": -45.45,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 45.45,
+                    "y": -335.39,
+                    "radius": 22.73,
+                    "halfHeight": 104.55,
+                    "angle": 129
+                }
+            ]
+        }
+    }
+}

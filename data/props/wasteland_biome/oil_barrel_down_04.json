@@ -1,0 +1,70 @@
+{
+    "id": "wasteland_biome/oil_barrel_down_04",
+    "name": "Oil Barrel (Down)",
+    "image": {
+        "path": "props/wasteland_biome/oil_barrel_down_04.png",
+        "width": 428,
+        "height": 671
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 93.4,
+            "radiusX": 450,
+            "radiusY": 550
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -6.6,
+                    "width": 410,
+                    "height": 300,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 123.4,
+                    "radius": 210
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -6.6,
+                    "width": 360,
+                    "height": 300,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 123.4,
+                    "radius": 210
+                },
+                {
+                    "x": 0,
+                    "y": -131.6,
+                    "radius": 200
+                }
+            ],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

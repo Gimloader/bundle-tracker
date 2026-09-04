@@ -1,0 +1,88 @@
+{
+    "id": "wasteland_biome/pipe_01",
+    "name": "Pipe",
+    "image": {
+        "path": "props/wasteland_biome/pipe_01.png",
+        "width": 648,
+        "height": 811
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 56,
+            "y": 316.4,
+            "radiusX": 360,
+            "radiusY": 336
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 52,
+                    "y": 296.4,
+                    "width": 272,
+                    "height": 220,
+                    "angle": 0
+                },
+                {
+                    "x": 48,
+                    "y": 144.4,
+                    "width": 168,
+                    "height": 440,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 52,
+                    "y": 296.4,
+                    "width": 272,
+                    "height": 220,
+                    "angle": 0
+                },
+                {
+                    "x": 48,
+                    "y": -55.6,
+                    "width": 168,
+                    "height": 700,
+                    "angle": 0
+                },
+                {
+                    "x": 204,
+                    "y": -63.6,
+                    "width": 240,
+                    "height": 160,
+                    "angle": 0
+                },
+                {
+                    "x": -80,
+                    "y": -231.6,
+                    "width": 300,
+                    "height": 100,
+                    "angle": -55
+                },
+                {
+                    "x": -228,
+                    "y": -75.6,
+                    "width": 200,
+                    "height": 80,
+                    "angle": -20
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

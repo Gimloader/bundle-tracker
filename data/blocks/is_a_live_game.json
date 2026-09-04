@@ -1,0 +1,8 @@
+{
+    "type": "is_a_live_game",
+    "message0": "Is A Live Game",
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": "Boolean"
+}

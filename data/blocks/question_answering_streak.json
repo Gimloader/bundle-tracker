@@ -1,0 +1,8 @@
+{
+    "type": "question_answering_streak",
+    "message0": "Questions Answered Correctly In A Row",
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": "Number"
+}

@@ -1,0 +1,81 @@
+{
+    "id": "wasteland_biome/trash_08",
+    "name": "Trash",
+    "image": {
+        "path": "props/wasteland_biome/trash_08.png",
+        "width": 532,
+        "height": 396
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 10,
+            "y": 25,
+            "radiusX": 570,
+            "radiusY": 400
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "radius": 100,
+                    "halfHeight": 125,
+                    "angle": 70
+                },
+                {
+                    "x": -65,
+                    "y": -30,
+                    "radius": 75,
+                    "halfHeight": 125,
+                    "angle": 90
+                },
+                {
+                    "x": 120,
+                    "y": 10,
+                    "radius": 35,
+                    "halfHeight": 110,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -25,
+                    "radius": 135,
+                    "halfHeight": 90,
+                    "angle": 60
+                },
+                {
+                    "x": -210,
+                    "y": -85,
+                    "radius": 45,
+                    "halfHeight": 75,
+                    "angle": 20
+                },
+                {
+                    "x": 95,
+                    "y": 40,
+                    "radius": 160,
+                    "halfHeight": 20,
+                    "angle": 55
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

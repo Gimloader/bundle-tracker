@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "gold-key",
+    "name": "Gold Key",
+    "editorName": "Gold Key",
+    "description": "What you need to get where you want.",
+    "previewImage": "inventory/resources/key_4.png"
+}

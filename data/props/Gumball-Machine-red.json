@@ -1,0 +1,75 @@
+{
+    "id": "Gumball-Machine-red",
+    "name": "Gumball Machine (Red)",
+    "image": {
+        "path": "props/restaurant/gumball_red.png",
+        "width": 271,
+        "height": 592
+    },
+    "scale": 0.23,
+    "originX": 0.5,
+    "originY": 0.81,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 205.26,
+            "radiusX": 373.91,
+            "radiusY": 252.17
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 118.3,
+                    "width": 173.91,
+                    "height": 65.22,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 200.91,
+                    "radius": 95.65,
+                    "halfHeight": 39.13,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 74.82,
+                    "width": 173.91,
+                    "height": 239.13,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 192.22,
+                    "radius": 104.35,
+                    "halfHeight": 30.43,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -125.18,
+                    "radius": 130.43,
+                    "halfHeight": 34.78,
+                    "angle": 0
+                }
+            ]
+        }
+    }
+}

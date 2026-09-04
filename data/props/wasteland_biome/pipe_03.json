@@ -1,0 +1,89 @@
+{
+    "id": "wasteland_biome/pipe_03",
+    "name": "Pipe",
+    "image": {
+        "path": "props/wasteland_biome/pipe_03.png",
+        "width": 462,
+        "height": 421
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 180.4,
+            "radiusX": 480,
+            "radiusY": 120
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -156,
+                    "y": 88.4,
+                    "width": 140,
+                    "height": 220,
+                    "angle": 0
+                },
+                {
+                    "x": 148,
+                    "y": 88.4,
+                    "width": 140,
+                    "height": 220,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -31.6,
+                    "width": 440,
+                    "height": 60,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -156,
+                    "y": 88.4,
+                    "width": 140,
+                    "height": 220,
+                    "angle": 0
+                },
+                {
+                    "x": 148,
+                    "y": 88.4,
+                    "width": 140,
+                    "height": 220,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -59.6,
+                    "radius": 60,
+                    "halfHeight": 160,
+                    "angle": 90
+                },
+                {
+                    "x": -4,
+                    "y": -131.6,
+                    "radius": 60,
+                    "halfHeight": 20,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

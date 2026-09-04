@@ -1,0 +1,59 @@
+{
+    "id": "Storage Container",
+    "name": "Storage Container",
+    "image": {
+        "path": "props/workshop/storage_container.png",
+        "width": 385,
+        "height": 355
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 111.5,
+            "radiusX": 400,
+            "radiusY": 212
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 29.5,
+                    "width": 384,
+                    "height": 300,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -60.5,
+                    "width": 384,
+                    "height": 240,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 77.5,
+                    "width": 340,
+                    "height": 200,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

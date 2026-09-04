@@ -1,0 +1,11 @@
+{
+    "id": "Exposed Boardwalk",
+    "name": "Exposed Boardwalk",
+    "maskTilesUrl": "tilesets/exposed_boardwalk/mask.png",
+    "borderTilesUrl": "tilesets/exposed_boardwalk/border.png",
+    "fillUrl": "tilesets/exposed_boardwalk/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/exposed_boardwalk/preview.png"
+}

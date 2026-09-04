@@ -1,0 +1,67 @@
+{
+    "id": "medieval/kitchen/candle",
+    "name": "Candle",
+    "image": {
+        "path": "props/medieval/kitchen/candle.png",
+        "width": 193,
+        "height": 427
+    },
+    "scale": 0.11,
+    "originX": 0.5,
+    "originY": 0.8,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 164.46,
+            "radiusX": 218.18,
+            "radiusY": 163.64
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 155.37,
+                    "radius": 54.55,
+                    "halfHeight": 27.27,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -99.17,
+                    "width": 90.91,
+                    "height": 181.82,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 155.37,
+                    "radius": 54.55,
+                    "halfHeight": 27.27,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": 19.01,
+                    "radius": 100,
+                    "halfHeight": 0,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

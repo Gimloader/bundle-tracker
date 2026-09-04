@@ -1,0 +1,59 @@
+{
+    "id": "Ice Barrier Vertical",
+    "name": "Ice Barrier (Vertical)",
+    "image": {
+        "path": "props/barriers/ice_barrier_vertical.png",
+        "width": 196,
+        "height": 435
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.4,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 62.5,
+            "radiusX": 280,
+            "radiusY": 420
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 28.5,
+                    "width": 180,
+                    "height": 360,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0.5,
+                    "width": 156,
+                    "height": 434,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 38.5,
+                    "width": 200,
+                    "height": 360,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

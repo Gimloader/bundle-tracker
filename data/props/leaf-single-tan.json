@@ -1,0 +1,29 @@
+{
+    "id": "leaf-single-tan",
+    "name": "Leaf",
+    "image": {
+        "path": "props/farm/leaf/single-tan.png",
+        "width": 114,
+        "height": 72
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

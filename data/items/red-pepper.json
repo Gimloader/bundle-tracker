@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "red-pepper",
+    "name": "Red Pepper",
+    "editorName": "Red Pepper",
+    "description": "Spicy!!!",
+    "previewImage": "inventory/resources/red_pepper.png"
+}

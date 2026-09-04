@@ -1,0 +1,94 @@
+{
+    "id": "plants/earthbreaking/earthbreaking_plant_8",
+    "name": "Groundbreaking Plant",
+    "image": {
+        "path": "props/plants/earthbreaking/earthbreaking_plant_8.png",
+        "width": 1059,
+        "height": 890
+    },
+    "scale": 0.2,
+    "originX": 0.61,
+    "originY": 0.72,
+    "shadows": [
+        {
+            "x": 96.49,
+            "y": 310.8,
+            "radiusX": 880,
+            "radiusY": 300
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -3.51,
+                    "y": 215.8,
+                    "radius": 100,
+                    "halfHeight": 275,
+                    "angle": 80
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -138.51,
+                    "y": 210.8,
+                    "width": 500,
+                    "height": 125,
+                    "angle": -20
+                },
+                {
+                    "x": -378.51,
+                    "y": -404.2,
+                    "width": 300,
+                    "height": 75,
+                    "angle": -10
+                },
+                {
+                    "x": -133.51,
+                    "y": -229.2,
+                    "width": 150,
+                    "height": 500,
+                    "angle": -20
+                },
+                {
+                    "x": 396.49,
+                    "y": -69.2,
+                    "width": 125,
+                    "height": 500,
+                    "angle": 30
+                },
+                {
+                    "x": 116.49,
+                    "y": 240.8,
+                    "width": 350,
+                    "height": 175,
+                    "angle": 0
+                },
+                {
+                    "x": 41.49,
+                    "y": 45.8,
+                    "width": 150,
+                    "height": 325,
+                    "angle": -50
+                },
+                {
+                    "x": 141.49,
+                    "y": -59.2,
+                    "width": 70,
+                    "height": 200,
+                    "angle": 30
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

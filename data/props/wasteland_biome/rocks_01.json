@@ -1,0 +1,80 @@
+{
+    "id": "wasteland_biome/rocks_01",
+    "name": "Rocks",
+    "image": {
+        "path": "props/wasteland_biome/rocks_01.png",
+        "width": 751,
+        "height": 323
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 75,
+            "y": 0,
+            "radiusX": 600,
+            "radiusY": 200
+        },
+        {
+            "x": -250,
+            "y": 100,
+            "radiusX": 250,
+            "radiusY": 150
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -250,
+                    "y": 100,
+                    "radius": 65,
+                    "halfHeight": 60,
+                    "angle": 90
+                },
+                {
+                    "x": 90,
+                    "y": -5,
+                    "radius": 60,
+                    "halfHeight": 240,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -250,
+                    "y": 100,
+                    "radius": 65,
+                    "halfHeight": 60,
+                    "angle": 90
+                },
+                {
+                    "x": 90,
+                    "y": -5,
+                    "radius": 55,
+                    "halfHeight": 235,
+                    "angle": 90
+                },
+                {
+                    "x": 75,
+                    "y": -50,
+                    "radius": 100,
+                    "halfHeight": 100,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

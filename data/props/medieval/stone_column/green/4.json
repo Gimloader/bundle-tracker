@@ -1,0 +1,73 @@
+{
+    "id": "medieval/stone_column/green/4",
+    "name": "Stone Column (Green)",
+    "image": {
+        "path": "props/medieval/stone_column/green/4.png",
+        "width": 394,
+        "height": 613
+    },
+    "scale": 0.22,
+    "originX": 0.5,
+    "originY": 0.89,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 243.62,
+            "radiusX": 609.09,
+            "radiusY": 345.45
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 134.52,
+                    "width": 395.45,
+                    "height": 345.45,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 134.52,
+                    "width": 400,
+                    "height": 354.55,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -120.02,
+                    "width": 300,
+                    "height": 163.64,
+                    "angle": 0
+                },
+                {
+                    "x": -50,
+                    "y": -192.75,
+                    "width": 150,
+                    "height": 163.64,
+                    "angle": -35
+                },
+                {
+                    "x": 50,
+                    "y": -242.75,
+                    "width": 200,
+                    "height": 131.82,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "id": "mud",
+    "name": "Mud",
+    "maskTilesUrl": "tilesets/mud/mask.png",
+    "borderTilesUrl": "tilesets/mud/border.png",
+    "fillUrl": "tilesets/mud/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/mud/preview.png"
+}

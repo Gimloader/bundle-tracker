@@ -1,0 +1,50 @@
+{
+    "id": "Pole Dark 3",
+    "name": "Dark Wooden Pole",
+    "image": {
+        "path": "props/signs/pole_dark_3.png",
+        "width": 44,
+        "height": 308
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 148,
+            "radiusX": 92,
+            "radiusY": 48
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 124,
+                    "radius": 40
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 40,
+                    "height": 308,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

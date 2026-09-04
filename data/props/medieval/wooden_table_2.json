@@ -1,0 +1,80 @@
+{
+    "id": "medieval/wooden_table_2",
+    "name": "Wooden Table",
+    "image": {
+        "path": "props/medieval/wooden_table_2.png",
+        "width": 1486,
+        "height": 1043
+    },
+    "scale": 0.26,
+    "originX": 0.5,
+    "originY": 0.72,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 387.15,
+            "radiusX": 1746.15,
+            "radiusY": 500
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -93.62,
+                    "width": 1476.92,
+                    "height": 811.54,
+                    "angle": 0
+                },
+                {
+                    "x": -626.92,
+                    "y": 321.77,
+                    "width": 176.92,
+                    "height": 388.46,
+                    "angle": 0
+                },
+                {
+                    "x": 626.92,
+                    "y": 321.77,
+                    "width": 176.92,
+                    "height": 388.46,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -93.62,
+                    "width": 1476.92,
+                    "height": 811.54,
+                    "angle": 0
+                },
+                {
+                    "x": -626.92,
+                    "y": 321.77,
+                    "width": 176.92,
+                    "height": 388.46,
+                    "angle": 0
+                },
+                {
+                    "x": 626.92,
+                    "y": 321.77,
+                    "width": 176.92,
+                    "height": 388.46,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

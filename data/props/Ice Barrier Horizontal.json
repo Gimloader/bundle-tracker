@@ -1,0 +1,52 @@
+{
+    "id": "Ice Barrier Horizontal",
+    "name": "Ice Barrier (Horizontal)",
+    "image": {
+        "path": "props/barriers/ice_barrier_horizontal.png",
+        "width": 402,
+        "height": 241
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.6,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 52.1,
+            "radiusX": 492,
+            "radiusY": 244
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 14.1,
+                    "width": 380,
+                    "height": 190,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0.1,
+                    "width": 402,
+                    "height": 240,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "teal-seed",
+    "name": "Teal Seed",
+    "editorName": "Teal Seed",
+    "description": "Grow something special.",
+    "previewImage": "inventory/resources/teal_seed.png"
+}

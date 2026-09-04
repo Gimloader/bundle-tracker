@@ -1,0 +1,110 @@
+{
+    "id": "corner_sofa/corner_sofa_green_back",
+    "name": "Green Corner Sofa (Back)",
+    "image": {
+        "path": "props/corner_sofa/corner_sofa_green_back.png",
+        "width": 1302,
+        "height": 1478
+    },
+    "scale": 0.16,
+    "originX": 0.5,
+    "originY": 0.57,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -281.25,
+                    "y": 340.96,
+                    "width": 718.75,
+                    "height": 656.25,
+                    "angle": 0
+                },
+                {
+                    "x": 231.25,
+                    "y": -159.04,
+                    "width": 812.5,
+                    "height": 843.75,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 125,
+                    "y": 278.46,
+                    "radius": 425,
+                    "halfHeight": 93.75,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -593.75,
+                    "y": 259.71,
+                    "width": 106.25,
+                    "height": 968.75,
+                    "angle": 0
+                },
+                {
+                    "x": 256.25,
+                    "y": -490.29,
+                    "width": 787.5,
+                    "height": 362.5,
+                    "angle": 0
+                },
+                {
+                    "x": -325,
+                    "y": 322.21,
+                    "width": 581.25,
+                    "height": 781.25,
+                    "angle": 0
+                },
+                {
+                    "x": 306.25,
+                    "y": -146.54,
+                    "width": 687.5,
+                    "height": 625,
+                    "angle": 0
+                },
+                {
+                    "x": 87.5,
+                    "y": 540.96,
+                    "width": 312.5,
+                    "height": 281.25,
+                    "angle": -12
+                },
+                {
+                    "x": -75,
+                    "y": -96.54,
+                    "width": 375,
+                    "height": 237.5,
+                    "angle": -47
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 450,
+                    "y": -609.04,
+                    "radius": 131.25,
+                    "halfHeight": 68.75,
+                    "angle": 90
+                },
+                {
+                    "x": 231.25,
+                    "y": 247.21,
+                    "radius": 375,
+                    "halfHeight": 62.5,
+                    "angle": 40
+                }
+            ]
+        }
+    }
+}

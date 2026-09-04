@@ -1,0 +1,80 @@
+{
+    "id": "flags/blastball/flag_2_blue",
+    "name": "Arena Flag (Blue)",
+    "image": {
+        "path": "props/flags/blastball/flag_2_blue.png",
+        "width": 621,
+        "height": 1291
+    },
+    "scale": 0.15,
+    "originX": 0.2,
+    "originY": 0.93,
+    "shadows": [
+        {
+            "x": -186.3,
+            "y": 581.8,
+            "radiusX": 426.67,
+            "radiusY": 240
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -186.3,
+                    "y": 535.13,
+                    "radius": 106.67,
+                    "halfHeight": 13.33,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -186.3,
+                    "y": -131.54,
+                    "width": 66.67,
+                    "height": 1033.33,
+                    "angle": 0
+                },
+                {
+                    "x": 33.7,
+                    "y": -184.87,
+                    "width": 500,
+                    "height": 66.67,
+                    "angle": -27
+                },
+                {
+                    "x": 47.03,
+                    "y": -371.54,
+                    "width": 466.67,
+                    "height": 53.33,
+                    "angle": 20
+                }
+            ],
+            "circle": [
+                {
+                    "x": -186.3,
+                    "y": 508.46,
+                    "radius": 140
+                }
+            ],
+            "capsule": [
+                {
+                    "x": -186.3,
+                    "y": -531.54,
+                    "radius": 100,
+                    "halfHeight": 13.33,
+                    "angle": 0
+                }
+            ]
+        }
+    }
+}

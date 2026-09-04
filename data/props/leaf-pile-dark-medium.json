@@ -1,0 +1,29 @@
+{
+    "id": "leaf-pile-dark-medium",
+    "name": "Medium Leaf Pile",
+    "image": {
+        "path": "props/farm/leaf/pile-dark-medium.png",
+        "width": 399,
+        "height": 323
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

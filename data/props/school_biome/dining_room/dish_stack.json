@@ -1,0 +1,53 @@
+{
+    "id": "school_biome/dining_room/dish_stack",
+    "name": "Lunch Tray Stack",
+    "image": {
+        "path": "props/school_biome/dining_room/dish_stack.png",
+        "width": 290,
+        "height": 267
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 31.8,
+            "radiusX": 330,
+            "radiusY": 290
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 16.8,
+                    "width": 290,
+                    "height": 230,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -3.2,
+                    "width": 290,
+                    "height": 270,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

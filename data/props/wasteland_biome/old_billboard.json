@@ -1,0 +1,123 @@
+{
+    "id": "wasteland_biome/old_billboard",
+    "name": "Old Billboard",
+    "image": {
+        "path": "props/wasteland_biome/old_billboard.png",
+        "width": 1581,
+        "height": 1182
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 556.9,
+            "radiusX": 1650,
+            "radiusY": 300
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -8.1,
+                    "width": 1575,
+                    "height": 825,
+                    "angle": 0
+                },
+                {
+                    "x": -5,
+                    "y": 466.9,
+                    "width": 85,
+                    "height": 250,
+                    "angle": 0
+                },
+                {
+                    "x": 335,
+                    "y": 476.9,
+                    "width": 85,
+                    "height": 225,
+                    "angle": 0
+                },
+                {
+                    "x": -365,
+                    "y": 466.9,
+                    "width": 85,
+                    "height": 250,
+                    "angle": 0
+                },
+                {
+                    "x": 695,
+                    "y": 466.9,
+                    "width": 85,
+                    "height": 245,
+                    "angle": 0
+                },
+                {
+                    "x": -710,
+                    "y": 476.9,
+                    "width": 80,
+                    "height": 225,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -93.1,
+                    "width": 1575,
+                    "height": 990,
+                    "angle": 0
+                },
+                {
+                    "x": -5,
+                    "y": 466.9,
+                    "width": 85,
+                    "height": 250,
+                    "angle": 0
+                },
+                {
+                    "x": 335,
+                    "y": 476.9,
+                    "width": 85,
+                    "height": 225,
+                    "angle": 0
+                },
+                {
+                    "x": -365,
+                    "y": 466.9,
+                    "width": 85,
+                    "height": 250,
+                    "angle": 0
+                },
+                {
+                    "x": 695,
+                    "y": 466.9,
+                    "width": 85,
+                    "height": 245,
+                    "angle": 0
+                },
+                {
+                    "x": -710,
+                    "y": 476.9,
+                    "width": 80,
+                    "height": 225,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

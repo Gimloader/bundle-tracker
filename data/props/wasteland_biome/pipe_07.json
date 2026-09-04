@@ -1,0 +1,53 @@
+{
+    "id": "wasteland_biome/pipe_07",
+    "name": "Pipe",
+    "image": {
+        "path": "props/wasteland_biome/pipe_07.png",
+        "width": 203,
+        "height": 751
+    },
+    "scale": 0.24,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 71.23,
+            "radiusX": 291.67,
+            "radiusY": 666.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -4.17,
+                    "y": 0.4,
+                    "width": 191.67,
+                    "height": 750,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 71.23,
+                    "width": 187.5,
+                    "height": 604.17,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

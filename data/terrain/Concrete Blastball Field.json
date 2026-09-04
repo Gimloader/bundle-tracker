@@ -1,0 +1,11 @@
+{
+    "id": "Concrete Blastball Field",
+    "name": "Blastball Court",
+    "maskTilesUrl": "tilesets/concrete_blastball_field/mask.png",
+    "borderTilesUrl": "tilesets/concrete_blastball_field/border.png",
+    "fillUrl": "tilesets/concrete_blastball_field/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/concrete_blastball_field/preview.png"
+}

@@ -1,0 +1,12 @@
+{
+    "id": "Platformer Library",
+    "name": "Library",
+    "maskTilesUrl": "tilesets/platformer_library/mask.png",
+    "borderTilesUrl": "tilesets/platformer_library/border.png",
+    "fillUrl": "tilesets/platformer_library/fill.png",
+    "blockedMapStyles": [
+        "topDown"
+    ],
+    "seasonTicketRequired": true,
+    "previewUrl": "tilesets/platformer_library/preview.png"
+}

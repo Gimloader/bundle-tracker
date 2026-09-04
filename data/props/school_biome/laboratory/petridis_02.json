@@ -1,0 +1,45 @@
+{
+    "id": "school_biome/laboratory/petridis_02",
+    "name": "Petri Dish",
+    "image": {
+        "path": "props/school_biome/laboratory/petridis_02.png",
+        "width": 274,
+        "height": 187
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 13.33,
+            "radiusX": 346.67,
+            "radiusY": 186.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "radius": 93.33,
+                    "halfHeight": 40,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

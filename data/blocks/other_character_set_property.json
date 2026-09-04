@@ -1,0 +1,27 @@
+{
+    "type": "other_character_set_property",
+    "message0": "Set Property (As Other Player) %1 Value %2 ",
+    "args0": [
+        {
+            "type": "input_value",
+            "name": "set_property_as_other_player",
+            "check": "String",
+            "align": "RIGHT"
+        },
+        {
+            "type": "input_value",
+            "name": "value",
+            "check": [
+                "String",
+                "Number",
+                "Boolean"
+            ],
+            "align": "RIGHT"
+        }
+    ],
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "previousStatement": null,
+    "nextStatement": null
+}

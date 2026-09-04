@@ -1,0 +1,53 @@
+{
+    "id": "wasteland_biome/dry_grass_yellow_5",
+    "name": "Dry Grass (Yellow)",
+    "image": {
+        "path": "props/wasteland_biome/dry_grass_yellow_5.png",
+        "width": 291,
+        "height": 260
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 94,
+            "radiusX": 300,
+            "radiusY": 150
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 49,
+                    "radius": 75,
+                    "halfHeight": 75,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 9,
+                    "radius": 125,
+                    "halfHeight": 25,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

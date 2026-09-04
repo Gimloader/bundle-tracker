@@ -1,0 +1,52 @@
+{
+    "id": "Rock 8",
+    "name": "Rock",
+    "image": {
+        "path": "props/rocks/rock_8.png",
+        "width": 126,
+        "height": 62
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 21,
+            "radiusX": 152,
+            "radiusY": 44
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 11,
+                    "radius": 20,
+                    "halfHeight": 40,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 7,
+                    "radius": 38,
+                    "halfHeight": 30,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

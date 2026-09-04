@@ -1,0 +1,9 @@
+{
+    "type": "resource",
+    "id": "gray-crystal",
+    "name": "Gray Crystal",
+    "editorName": "Gray Crystal",
+    "description": "Shiny gray crystal.",
+    "previewImage": "inventory/resources/gray_crystal.png",
+    "minimumRoleLevel": 90
+}

@@ -1,0 +1,66 @@
+{
+    "id": "snow-stump",
+    "name": "Stump (Snowy)",
+    "image": {
+        "path": "props/logs/snow/stump.png",
+        "width": 429,
+        "height": 243
+    },
+    "scale": 0.27,
+    "originX": 0.5,
+    "originY": 0.78,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 38.41,
+            "radiusX": 481.48,
+            "radiusY": 214.81
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 23.6,
+                    "radius": 74.07,
+                    "halfHeight": 148.15,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -46.77,
+                    "radius": 74.07,
+                    "halfHeight": 74.07,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": 16.19,
+                    "radius": 62.96,
+                    "halfHeight": 159.26,
+                    "angle": 90
+                },
+                {
+                    "x": -3.7,
+                    "y": 49.52,
+                    "radius": 55.56,
+                    "halfHeight": 18.52,
+                    "angle": 0
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "type": "other_character_get_property",
+    "message0": "Get Property As Other Player %1 ",
+    "args0": [
+        {
+            "type": "input_value",
+            "name": "get_property_as_other_player",
+            "check": "String",
+            "align": "RIGHT"
+        }
+    ],
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": [
+        "String",
+        "Number",
+        "Boolean"
+    ]
+}

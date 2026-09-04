@@ -1,0 +1,102 @@
+{
+    "id": "tractor",
+    "name": "Tractor",
+    "image": {
+        "path": "props/farm/tractor.png",
+        "width": 1000,
+        "height": 781
+    },
+    "scale": 0.29,
+    "originX": 0.5,
+    "originY": 0.73,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 224.46,
+            "radiusX": 1124.14,
+            "radiusY": 420.69
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -34.48,
+                    "y": 41.7,
+                    "width": 775.86,
+                    "height": 344.83,
+                    "angle": 0
+                },
+                {
+                    "x": -448.28,
+                    "y": 24.46,
+                    "width": 68.97,
+                    "height": 206.9,
+                    "angle": 5
+                }
+            ],
+            "circle": [
+                {
+                    "x": -289.66,
+                    "y": 241.7,
+                    "radius": 151.72
+                },
+                {
+                    "x": 279.31,
+                    "y": 179.63,
+                    "radius": 206.9
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -17.24,
+                    "y": 76.18,
+                    "width": 775.86,
+                    "height": 431.03,
+                    "angle": 0
+                },
+                {
+                    "x": 24.14,
+                    "y": -192.78,
+                    "width": 496.55,
+                    "height": 379.31,
+                    "angle": 0
+                },
+                {
+                    "x": 293.1,
+                    "y": -216.92,
+                    "width": 86.21,
+                    "height": 293.1,
+                    "angle": -25
+                },
+                {
+                    "x": 0,
+                    "y": 24.46,
+                    "width": 982.76,
+                    "height": 206.9,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": -289.66,
+                    "y": 241.7,
+                    "radius": 151.72
+                },
+                {
+                    "x": 279.31,
+                    "y": 179.63,
+                    "radius": 206.9
+                }
+            ],
+            "capsule": []
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "type": "get_team_score",
+    "message0": "Get Score Of Team %1 ",
+    "args0": [
+        {
+            "type": "input_value",
+            "name": "get_score_of_team",
+            "check": "Number",
+            "align": "RIGHT"
+        }
+    ],
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": "Number"
+}

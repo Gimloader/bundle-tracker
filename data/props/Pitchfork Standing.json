@@ -1,0 +1,49 @@
+{
+    "id": "Pitchfork Standing",
+    "name": "Pitchfork (Standing)",
+    "image": {
+        "path": "/props/farm/pitchfork/standing.png",
+        "width": 222,
+        "height": 568
+    },
+    "scale": 0.24,
+    "originX": 0.5,
+    "originY": 0.85,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 198.8,
+                    "radius": 83.33
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 45.83,
+                    "y": -17.87,
+                    "width": 41.67,
+                    "height": 541.67,
+                    "angle": 10
+                }
+            ],
+            "circle": [
+                {
+                    "x": 4.17,
+                    "y": 198.8,
+                    "radius": 95.83
+                }
+            ],
+            "capsule": []
+        }
+    }
+}

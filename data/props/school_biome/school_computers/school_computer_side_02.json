@@ -1,0 +1,111 @@
+{
+    "id": "school_biome/school_computers/school_computer_side_02",
+    "name": "School Computer",
+    "image": {
+        "path": "props/school_biome/school_computers/school_computer_side_02.png",
+        "width": 567,
+        "height": 1010
+    },
+    "scale": 0.12,
+    "originX": 0.5,
+    "originY": 0.75,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 252.5,
+            "radiusX": 733.33,
+            "radiusY": 666.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -183.33,
+                    "y": 160.83,
+                    "width": 200,
+                    "height": 366.67,
+                    "angle": 0
+                },
+                {
+                    "x": 158.33,
+                    "y": 119.17,
+                    "width": 250,
+                    "height": 358.33,
+                    "angle": 0
+                },
+                {
+                    "x": 41.67,
+                    "y": -97.5,
+                    "width": 133.33,
+                    "height": 408.33,
+                    "angle": 0
+                },
+                {
+                    "x": 133.33,
+                    "y": -139.17,
+                    "width": 166.67,
+                    "height": 325,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -183.33,
+                    "y": 435.83,
+                    "radius": 83.33,
+                    "halfHeight": 25,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -183.33,
+                    "y": 160.83,
+                    "width": 200,
+                    "height": 366.67,
+                    "angle": 0
+                },
+                {
+                    "x": 158.33,
+                    "y": 119.17,
+                    "width": 250,
+                    "height": 358.33,
+                    "angle": 0
+                },
+                {
+                    "x": 41.67,
+                    "y": -197.5,
+                    "width": 133.33,
+                    "height": 616.67,
+                    "angle": 0
+                },
+                {
+                    "x": 133.33,
+                    "y": -180.83,
+                    "width": 166.67,
+                    "height": 533.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -183.33,
+                    "y": 435.83,
+                    "radius": 83.33,
+                    "halfHeight": 25,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

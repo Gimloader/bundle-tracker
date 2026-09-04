@@ -1,0 +1,67 @@
+{
+    "id": "Theatre Seat",
+    "name": "Theater Chair",
+    "image": {
+        "path": "props/chairs/theatre_seat.png",
+        "width": 517,
+        "height": 606
+    },
+    "scale": 0.3,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 26.67,
+            "y": 176.03,
+            "radiusX": 553.33,
+            "radiusY": 373.33
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 26.67,
+                    "y": 142.7,
+                    "width": 326.67,
+                    "height": 300,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -3.33,
+                    "y": 56.03,
+                    "width": 466.67,
+                    "height": 490,
+                    "angle": 0
+                },
+                {
+                    "x": 90,
+                    "y": 106.03,
+                    "width": 333.33,
+                    "height": 66.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -133.33,
+                    "y": -100.63,
+                    "radius": 116.67,
+                    "halfHeight": 83.33,
+                    "angle": 354
+                }
+            ]
+        }
+    }
+}

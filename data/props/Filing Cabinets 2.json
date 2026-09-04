@@ -1,0 +1,52 @@
+{
+    "id": "Filing Cabinets 2",
+    "name": "Filing Cabinet",
+    "image": {
+        "path": "props/office/filing_cabinets_2.png",
+        "width": 507,
+        "height": 1246
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 515.7,
+            "radiusX": 670,
+            "radiusY": 390
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 110.7,
+                    "width": 510,
+                    "height": 1000,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0.7,
+                    "width": 510,
+                    "height": 1240,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

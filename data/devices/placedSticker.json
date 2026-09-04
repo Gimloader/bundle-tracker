@@ -1,0 +1,9 @@
+{
+    "id": "placedSticker",
+    "name": "Placed Sticker",
+    "optionSchema": "{\"options\":[{\"key\":\"stickerId\",\"option\":{\"label\":\"Sticker ID\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"}}},{\"key\":\"depth\",\"option\":{\"label\":\"Depth\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":0,\"max\":10,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"scale\",\"option\":{\"label\":\"Scale\",\"type\":\"numberInput\",\"defaultValue\":0.15,\"validators\":[null],\"props\":{\"min\":0,\"max\":1,\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"placedByCharacterId\",\"option\":{\"label\":\"Character ID\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"}}},{\"key\":\"placedAtTimeStamp\",\"option\":{\"label\":\"Time Stamp\",\"type\":\"numberInput\",\"defaultValue\":0,\"validators\":[null],\"props\":{\"step\":1,\"allowEmpty\":false,\"useSlider\":false}}}]}",
+    "defaultState": "{\"beingRemoved\":false}",
+    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
+    "initialMemoryCost": 0,
+    "subsequentMemoryCost": 0
+}

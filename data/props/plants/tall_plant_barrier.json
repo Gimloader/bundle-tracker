@@ -1,0 +1,46 @@
+{
+    "id": "plants/tall_plant_barrier",
+    "name": "Tall Plant Barrier",
+    "image": {
+        "path": "props/plants/tall_plant_barrier.png",
+        "width": 512,
+        "height": 1280
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -12,
+                    "y": 0,
+                    "width": 390,
+                    "height": 1280,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 470,
+                    "height": 1280,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "minimumRoleLevel": 90
+}

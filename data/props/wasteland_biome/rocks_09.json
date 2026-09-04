@@ -1,0 +1,81 @@
+{
+    "id": "wasteland_biome/rocks_09",
+    "name": "Rocks",
+    "image": {
+        "path": "props/wasteland_biome/rocks_09.png",
+        "width": 507,
+        "height": 695
+    },
+    "scale": 0.35,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 220.86,
+            "radiusX": 542.86,
+            "radiusY": 314.29
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 178,
+                    "radius": 157.14,
+                    "halfHeight": 97.14,
+                    "angle": 90
+                },
+                {
+                    "x": 22.86,
+                    "y": 49.43,
+                    "radius": 214.29,
+                    "halfHeight": 14.29,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 178,
+                    "radius": 157.14,
+                    "halfHeight": 97.14,
+                    "angle": 90
+                },
+                {
+                    "x": 22.86,
+                    "y": 49.43,
+                    "radius": 214.29,
+                    "halfHeight": 14.29,
+                    "angle": 90
+                },
+                {
+                    "x": 42.86,
+                    "y": -36.29,
+                    "radius": 197.14,
+                    "halfHeight": 17.14,
+                    "angle": 0
+                },
+                {
+                    "x": 100,
+                    "y": -193.43,
+                    "radius": 114.29,
+                    "halfHeight": 28.57,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

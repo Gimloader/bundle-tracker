@@ -1,0 +1,11 @@
+{
+    "id": "Spaceship Corridor Gray",
+    "name": "Spaceship Corridor",
+    "maskTilesUrl": "tilesets/spaceship_corridor/mask.png",
+    "borderTilesUrl": "tilesets/spaceship_corridor/border.png",
+    "fillUrl": "tilesets/spaceship_corridor/fill_gray.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/spaceship_corridor/preview_gray.png"
+}

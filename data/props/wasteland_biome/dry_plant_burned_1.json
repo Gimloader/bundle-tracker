@@ -1,0 +1,30 @@
+{
+    "id": "wasteland_biome/dry_plant_burned_1",
+    "name": "Dry Plant (Burned)",
+    "image": {
+        "path": "props/wasteland_biome/dry_plant_burned_1.png",
+        "width": 225,
+        "height": 161
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

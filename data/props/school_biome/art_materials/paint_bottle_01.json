@@ -1,0 +1,60 @@
+{
+    "id": "school_biome/art_materials/paint_bottle_01",
+    "name": "Paint Bottle (Blue)",
+    "image": {
+        "path": "props/school_biome/art_materials/paint_bottle_01.png",
+        "width": 115,
+        "height": 243
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.85,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 85.05,
+            "radiusX": 160,
+            "radiusY": 106.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 38.38,
+                    "radius": 53.33,
+                    "halfHeight": 26.67,
+                    "angle": 0
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 38.38,
+                    "radius": 53.33,
+                    "halfHeight": 26.67,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -48.28,
+                    "radius": 40,
+                    "halfHeight": 33.33,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

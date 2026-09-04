@@ -1,0 +1,53 @@
+{
+    "id": "school_biome/gym_class/gym_bars_01",
+    "name": "Gym Bars",
+    "image": {
+        "path": "props/school_biome/gym_class/gym_bars_01.png",
+        "width": 792,
+        "height": 1457
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 682.32,
+            "radiusX": 893.33,
+            "radiusY": 266.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 122.32,
+                    "width": 800,
+                    "height": 1200,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 8.98,
+                    "width": 800,
+                    "height": 1446.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

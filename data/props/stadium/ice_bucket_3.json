@@ -1,0 +1,67 @@
+{
+    "id": "stadium/ice_bucket_3",
+    "name": "Ice Bucket (Purple)",
+    "image": {
+        "path": "props/stadium/ice_bucket_3.png",
+        "width": 372,
+        "height": 393
+    },
+    "scale": 0.14,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 132.21,
+            "radiusX": 428.57,
+            "radiusY": 214.29
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 89.36,
+                    "radius": 107.14,
+                    "halfHeight": 64.29,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 96.5,
+                    "width": 250,
+                    "height": 200,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -50,
+                    "y": 25.07,
+                    "radius": 92.86,
+                    "halfHeight": 50,
+                    "angle": 90
+                },
+                {
+                    "x": 14.29,
+                    "y": -82.07,
+                    "radius": 114.29,
+                    "halfHeight": 64.29,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "type": "weapon",
+    "id": "hammer_uncommon",
+    "name": "Hammer",
+    "editorName": "Hammer (Uncommon)",
+    "description": "Hit hard.",
+    "previewImage": "inventory/weapons/hammer.png",
+    "minimumRoleLevel": 90,
+    "rarity": "uncommon",
+    "weapon": {
+        "type": "melee",
+        "appearance": "hammer",
+        "shared": {
+            "cooldownBetweenShots": 550,
+            "allowAutoFire": true,
+            "startingProjectileDistanceFromCharacter": 0.8
+        }
+    }
+}

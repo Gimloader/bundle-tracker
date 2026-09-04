@@ -1,0 +1,60 @@
+{
+    "id": "school_biome/class_supplies/pencil_holder",
+    "name": "Pencil Holder",
+    "image": {
+        "path": "props/school_biome/class_supplies/pencil_holder.png",
+        "width": 151,
+        "height": 249
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 99.6,
+            "radiusX": 146.67,
+            "radiusY": 80
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 32.93,
+                    "radius": 66.67,
+                    "halfHeight": 26.67,
+                    "angle": 0
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 32.93,
+                    "radius": 66.67,
+                    "halfHeight": 26.67,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -40.4,
+                    "radius": 60,
+                    "halfHeight": 26.67,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

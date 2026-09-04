@@ -1,0 +1,52 @@
+{
+    "id": "stadium/ads_base",
+    "name": "Stadium Ad Base",
+    "image": {
+        "path": "props/stadium/ads_base.png",
+        "width": 1188,
+        "height": 570
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.92,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 146.07,
+            "radiusX": 1400,
+            "radiusY": 600
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 79.4,
+                    "width": 1180,
+                    "height": 400,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -0.6,
+                    "width": 1180,
+                    "height": 566.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

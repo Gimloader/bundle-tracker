@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "dark-green-seed",
+    "name": "Dark Green Seed",
+    "editorName": "Dark Green Seed",
+    "description": "Grow something special.",
+    "previewImage": "inventory/resources/dark_green_seed.png"
+}

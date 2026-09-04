@@ -1,0 +1,29 @@
+{
+    "id": "science_lab/vial_broken_1",
+    "name": "Broken Glass",
+    "image": {
+        "path": "props/science_lab/vial_broken_1.png",
+        "width": 157,
+        "height": 133
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

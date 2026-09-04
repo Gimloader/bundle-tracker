@@ -1,0 +1,12 @@
+{
+    "id": "Library",
+    "name": "Library Carpet",
+    "maskTilesUrl": "tilesets/library/mask.png",
+    "borderTilesUrl": "tilesets/library/border.png",
+    "fillUrl": "tilesets/library/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "seasonTicketRequired": true,
+    "previewUrl": "tilesets/library/preview.png"
+}

@@ -1,0 +1,52 @@
+{
+    "id": "Arcade Machine On",
+    "name": "Arcade Machine (On)",
+    "image": {
+        "path": "props/arcade_machine/arcade_machine_on.png",
+        "width": 792,
+        "height": 1251
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 602.95,
+            "radiusX": 900,
+            "radiusY": 300
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 5,
+                    "y": 37.95,
+                    "width": 680,
+                    "height": 1125,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 5,
+                    "y": -2.05,
+                    "width": 675,
+                    "height": 1225,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

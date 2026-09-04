@@ -1,0 +1,92 @@
+{
+    "id": "medieval/wagon/1",
+    "name": "Wooden Wagon",
+    "image": {
+        "path": "props/medieval/wagon/1.png",
+        "width": 1288,
+        "height": 924
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.67,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 267.08,
+            "radiusX": 1540,
+            "radiusY": 610
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 40,
+                    "y": 162.08,
+                    "width": 1210,
+                    "height": 170,
+                    "angle": -11
+                }
+            ],
+            "circle": [
+                {
+                    "x": 375,
+                    "y": 217.08,
+                    "radius": 240
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 40,
+                    "y": 162.08,
+                    "width": 1210,
+                    "height": 170,
+                    "angle": -11
+                },
+                {
+                    "x": -375,
+                    "y": 102.08,
+                    "width": 555,
+                    "height": 95,
+                    "angle": -14
+                },
+                {
+                    "x": 105,
+                    "y": -152.92,
+                    "width": 710,
+                    "height": 490,
+                    "angle": -12
+                },
+                {
+                    "x": 450,
+                    "y": -257.92,
+                    "width": 355,
+                    "height": 160,
+                    "angle": 52
+                },
+                {
+                    "x": 595,
+                    "y": -62.92,
+                    "width": 70,
+                    "height": 205,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": 375,
+                    "y": 227.08,
+                    "radius": 240
+                }
+            ],
+            "capsule": []
+        }
+    }
+}

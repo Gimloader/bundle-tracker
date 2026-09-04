@@ -1,0 +1,9 @@
+{
+    "id": "Dynamic Copper",
+    "name": "Dynamic Copper",
+    "maskTilesUrl": "tilesets/dynamic/mask.png",
+    "borderTilesUrl": "tilesets/dynamic/copper/border.png",
+    "fillUrl": "tilesets/dynamic/copper/fill.png",
+    "previewUrl": "tilesets/dynamic/copper/preview.png",
+    "health": 50
+}

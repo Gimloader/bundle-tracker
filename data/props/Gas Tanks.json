@@ -1,0 +1,59 @@
+{
+    "id": "Gas Tanks",
+    "name": "Gas Tank",
+    "image": {
+        "path": "props/workshop/gas_tanks.png",
+        "width": 373,
+        "height": 400
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 122,
+            "radiusX": 472,
+            "radiusY": 268
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 70,
+                    "width": 380,
+                    "height": 260,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 30,
+                    "width": 380,
+                    "height": 340,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -166,
+                    "width": 270,
+                    "height": 70,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

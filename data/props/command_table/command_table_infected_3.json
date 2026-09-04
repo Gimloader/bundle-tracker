@@ -1,0 +1,80 @@
+{
+    "id": "command_table/command_table_infected_3",
+    "name": "Command Table (Infected)",
+    "image": {
+        "path": "props/command_table/command_table_infected_3.png",
+        "width": 992,
+        "height": 632
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0.68,
+    "shadows": [
+        {
+            "x": -36,
+            "y": 181.76,
+            "radiusX": 992,
+            "radiusY": 392
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -40,
+                    "y": 125.76,
+                    "width": 860,
+                    "height": 320,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -52,
+                    "y": 45.76,
+                    "width": 884,
+                    "height": 456,
+                    "angle": 0
+                },
+                {
+                    "x": -44,
+                    "y": -26.24,
+                    "width": 308,
+                    "height": 400,
+                    "angle": 0
+                },
+                {
+                    "x": 80,
+                    "y": -226.24,
+                    "width": 176,
+                    "height": 180,
+                    "angle": 0
+                },
+                {
+                    "x": -272,
+                    "y": -166.24,
+                    "width": 148,
+                    "height": 160,
+                    "angle": 0
+                },
+                {
+                    "x": 368,
+                    "y": 173.76,
+                    "width": 260,
+                    "height": 280,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

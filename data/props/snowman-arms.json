@@ -1,0 +1,77 @@
+{
+    "id": "snowman-arms",
+    "name": "Snowman (Arms)",
+    "image": {
+        "path": "props/snowmen/arms.png",
+        "width": 569,
+        "height": 548
+    },
+    "scale": 0.29,
+    "originX": 0.5,
+    "originY": 0.93,
+    "shadows": [
+        {
+            "x": 10.34,
+            "y": 245.98,
+            "radiusX": 441.38,
+            "radiusY": 137.93
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 97.71,
+                    "radius": 172.41
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 6.9,
+                    "y": -102.29,
+                    "width": 137.93,
+                    "height": 344.83,
+                    "angle": 0
+                },
+                {
+                    "x": 17.24,
+                    "y": -57.46,
+                    "width": 227.59,
+                    "height": 224.14,
+                    "angle": 0
+                },
+                {
+                    "x": -206.9,
+                    "y": -5.74,
+                    "width": 206.9,
+                    "height": 86.21,
+                    "angle": 35
+                },
+                {
+                    "x": 189.66,
+                    "y": -22.98,
+                    "width": 244.83,
+                    "height": 68.97,
+                    "angle": -40
+                }
+            ],
+            "circle": [
+                {
+                    "x": 13.79,
+                    "y": 114.95,
+                    "radius": 162.07
+                }
+            ],
+            "capsule": []
+        }
+    }
+}

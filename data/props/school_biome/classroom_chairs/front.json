@@ -1,0 +1,81 @@
+{
+    "id": "school_biome/classroom_chairs/front",
+    "name": "Classroom Chair",
+    "image": {
+        "path": "props/school_biome/classroom_chairs/front.png",
+        "width": 455,
+        "height": 706
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 219.67,
+            "radiusX": 533.33,
+            "radiusY": 400
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 19.67,
+                    "width": 446.67,
+                    "height": 433.33,
+                    "angle": 0
+                },
+                {
+                    "x": 146.67,
+                    "y": 286.33,
+                    "width": 93.33,
+                    "height": 133.33,
+                    "angle": 0
+                },
+                {
+                    "x": -146.67,
+                    "y": 286.33,
+                    "width": 93.33,
+                    "height": 133.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -53.67,
+                    "width": 446.67,
+                    "height": 593.33,
+                    "angle": 0
+                },
+                {
+                    "x": 146.67,
+                    "y": 286.33,
+                    "width": 93.33,
+                    "height": 133.33,
+                    "angle": 0
+                },
+                {
+                    "x": -146.67,
+                    "y": 286.33,
+                    "width": 93.33,
+                    "height": 133.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

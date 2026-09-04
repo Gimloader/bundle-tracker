@@ -1,0 +1,66 @@
+{
+    "id": "Corn Stalk",
+    "name": "Corn Stalk",
+    "image": {
+        "path": "/props/farm/corn_stalk/stalk.png",
+        "width": 526,
+        "height": 510
+    },
+    "scale": 0.32,
+    "originX": 0.5,
+    "originY": 0.93,
+    "shadows": [
+        {
+            "x": 15.63,
+            "y": 238.05,
+            "radiusX": 606.25,
+            "radiusY": 156.25
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 188.05,
+                    "width": 375,
+                    "height": 93.75,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -5.7,
+                    "width": 218.75,
+                    "height": 500,
+                    "angle": 0
+                },
+                {
+                    "x": 156.25,
+                    "y": 13.05,
+                    "width": 209.38,
+                    "height": 465.63,
+                    "angle": 0
+                },
+                {
+                    "x": -156.25,
+                    "y": 9.93,
+                    "width": 215.63,
+                    "height": 484.38,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

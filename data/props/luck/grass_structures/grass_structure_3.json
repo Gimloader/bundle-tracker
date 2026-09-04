@@ -1,0 +1,90 @@
+{
+    "id": "luck/grass_structures/grass_structure_3",
+    "name": "Grass Structure",
+    "image": {
+        "path": "props/luck/grass_structures/grass_structure_3.png",
+        "width": 1498,
+        "height": 1009
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 350.27,
+            "radiusX": 1733.33,
+            "radiusY": 733.33
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 216.93,
+                    "width": 1506.67,
+                    "height": 580,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -63.07,
+                    "radius": 166.67,
+                    "halfHeight": 586.67,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 216.93,
+                    "width": 1506.67,
+                    "height": 580,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -63.07,
+                    "radius": 166.67,
+                    "halfHeight": 586.67,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -63.07,
+                    "radius": 433.33,
+                    "halfHeight": 133.33,
+                    "angle": 90
+                },
+                {
+                    "x": -413.33,
+                    "y": -163.07,
+                    "radius": 220,
+                    "halfHeight": 46.67,
+                    "angle": 55
+                },
+                {
+                    "x": 413.33,
+                    "y": -163.07,
+                    "radius": 220,
+                    "halfHeight": 46.67,
+                    "angle": 125
+                }
+            ]
+        }
+    },
+    "minimumRoleLevel": 90
+}

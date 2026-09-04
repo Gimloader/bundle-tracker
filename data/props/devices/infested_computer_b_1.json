@@ -1,0 +1,80 @@
+{
+    "id": "devices/infested_computer_b_1",
+    "name": "Computer",
+    "image": {
+        "path": "props/devices/infested_computer_b_1.png",
+        "width": 676,
+        "height": 711
+    },
+    "scale": 0.16,
+    "originX": 0.5,
+    "originY": 0.75,
+    "shadows": [
+        {
+            "x": -12.5,
+            "y": 190.25,
+            "radiusX": 750,
+            "radiusY": 400
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 50,
+                    "y": 52.75,
+                    "width": 562.5,
+                    "height": 281.25,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 56.25,
+                    "y": 2.75,
+                    "width": 556.25,
+                    "height": 500,
+                    "angle": 0
+                },
+                {
+                    "x": -75,
+                    "y": -209.75,
+                    "width": 218.75,
+                    "height": 212.5,
+                    "angle": -31
+                },
+                {
+                    "x": 106.25,
+                    "y": -184.75,
+                    "width": 312.5,
+                    "height": 250,
+                    "angle": 21
+                },
+                {
+                    "x": -12.5,
+                    "y": -309.75,
+                    "width": 62.5,
+                    "height": 93.75,
+                    "angle": 0
+                },
+                {
+                    "x": -137.5,
+                    "y": 227.75,
+                    "width": 406.25,
+                    "height": 250,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

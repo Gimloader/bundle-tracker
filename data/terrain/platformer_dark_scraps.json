@@ -1,0 +1,11 @@
+{
+    "id": "platformer_dark_scraps",
+    "name": "Dark Scraps",
+    "maskTilesUrl": "tilesets/platformer_dark_scraps/mask.png",
+    "borderTilesUrl": "tilesets/platformer_dark_scraps/border.png",
+    "fillUrl": "tilesets/platformer_dark_scraps/fill.png",
+    "blockedMapStyles": [
+        "topDown"
+    ],
+    "previewUrl": "tilesets/platformer_dark_scraps/preview.png"
+}

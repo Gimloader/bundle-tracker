@@ -1,0 +1,52 @@
+{
+    "id": "Sand 2",
+    "name": "Sand Pile",
+    "image": {
+        "path": "props/sand/sand_2.png",
+        "width": 479,
+        "height": 179
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.65,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 46.85,
+            "radiusX": 524,
+            "radiusY": 168
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 10,
+                    "y": 26.85,
+                    "radius": 40,
+                    "halfHeight": 160,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 10,
+                    "y": 26.85,
+                    "radius": 40,
+                    "halfHeight": 160,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

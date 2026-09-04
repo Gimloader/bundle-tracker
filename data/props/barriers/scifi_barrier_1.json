@@ -1,0 +1,52 @@
+{
+    "id": "barriers/scifi_barrier_1",
+    "name": "Spaceship Barrier (Vertical)",
+    "image": {
+        "path": "props/barriers/scifi_barrier_1.png",
+        "width": 220,
+        "height": 526
+    },
+    "scale": 0.43,
+    "originX": 0.5,
+    "originY": 0.4,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 72.98,
+            "radiusX": 297.67,
+            "radiusY": 493.02
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 47.4,
+                    "width": 220.93,
+                    "height": 420.93,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0.89,
+                    "width": 218.6,
+                    "height": 525.58,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

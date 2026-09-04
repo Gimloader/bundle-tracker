@@ -1,0 +1,46 @@
+{
+    "id": "wasteland_biome/vault_open",
+    "name": "Vault (Open)",
+    "image": {
+        "path": "props/wasteland_biome/vault_open.png",
+        "width": 1153,
+        "height": 961
+    },
+    "scale": 0.3,
+    "originX": 0.5,
+    "originY": 0.73,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -25.64,
+                    "radius": 466.67,
+                    "halfHeight": 146.67,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -15.64,
+                    "radius": 453.33,
+                    "halfHeight": 96.67,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

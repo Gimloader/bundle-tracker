@@ -1,0 +1,11 @@
+{
+    "id": "Gym Floor",
+    "name": "Gym Floor",
+    "maskTilesUrl": "tilesets/gym/mask.png",
+    "borderTilesUrl": "tilesets/gym/border.png",
+    "fillUrl": "tilesets/gym/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/gym/preview.png"
+}

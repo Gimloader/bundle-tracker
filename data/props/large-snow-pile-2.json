@@ -1,0 +1,95 @@
+{
+    "id": "large-snow-pile-2",
+    "name": "Large Snow Pile",
+    "image": {
+        "path": "props/snow_piles/large/pile_2.png",
+        "width": 715,
+        "height": 318
+    },
+    "scale": 0.47,
+    "originX": 0.5,
+    "originY": 0.86,
+    "shadows": [
+        {
+            "x": -4.26,
+            "y": 122.99,
+            "radiusX": 808.51,
+            "radiusY": 182.98
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -19.15,
+                    "y": 78.31,
+                    "radius": 74.47,
+                    "halfHeight": 234.04,
+                    "angle": 90
+                },
+                {
+                    "x": 244.68,
+                    "y": 93.2,
+                    "radius": 42.55,
+                    "halfHeight": 31.91,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 114.48,
+                    "width": 457.45,
+                    "height": 74.47,
+                    "angle": 0
+                },
+                {
+                    "x": 191.49,
+                    "y": -13.18,
+                    "width": 223.4,
+                    "height": 95.74,
+                    "angle": 50
+                },
+                {
+                    "x": -212.77,
+                    "y": -13.18,
+                    "width": 202.13,
+                    "height": 106.38,
+                    "angle": -45
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -8.51,
+                    "y": -19.56,
+                    "radius": 138.3,
+                    "halfHeight": 74.47,
+                    "angle": 90
+                },
+                {
+                    "x": -253.19,
+                    "y": 67.67,
+                    "radius": 74.47,
+                    "halfHeight": 31.91,
+                    "angle": 75
+                },
+                {
+                    "x": 234.04,
+                    "y": 103.84,
+                    "radius": 53.19,
+                    "halfHeight": 63.83,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

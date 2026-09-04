@@ -1,0 +1,82 @@
+{
+    "id": "mining/town_hall",
+    "name": "Town Hall",
+    "image": {
+        "path": "props/mining/town_hall.png",
+        "width": 1234,
+        "height": 2048
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 984,
+            "radiusX": 1256,
+            "radiusY": 408
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 144,
+                    "width": 980,
+                    "height": 1740,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 244,
+                    "width": 1000,
+                    "height": 1560,
+                    "angle": 0
+                },
+                {
+                    "x": 488,
+                    "y": -584,
+                    "width": 220,
+                    "height": 300,
+                    "angle": -10
+                },
+                {
+                    "x": -484,
+                    "y": -584,
+                    "width": 220,
+                    "height": 300,
+                    "angle": 10
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 4,
+                    "y": -676,
+                    "radius": 340,
+                    "halfHeight": 240,
+                    "angle": 90
+                },
+                {
+                    "x": -396,
+                    "y": -824,
+                    "radius": 80,
+                    "halfHeight": 120,
+                    "angle": 125
+                }
+            ]
+        }
+    },
+    "minimumRoleLevel": 90
+}

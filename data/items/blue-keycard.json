@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "blue-keycard",
+    "name": "Blue Keycard",
+    "editorName": "Blue Keycard",
+    "description": "Deposit and gain access.",
+    "previewImage": "inventory/resources/keycard_blue.png"
+}

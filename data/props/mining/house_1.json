@@ -1,0 +1,88 @@
+{
+    "id": "mining/house_1",
+    "name": "Metal House",
+    "image": {
+        "path": "props/mining/house_1.png",
+        "width": 2048,
+        "height": 1294
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 591,
+            "radiusX": 2096,
+            "radiusY": 384
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 247,
+                    "width": 1880,
+                    "height": 780,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -237,
+                    "width": 1644,
+                    "height": 192,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -413,
+                    "width": 1332,
+                    "height": 168,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 247,
+                    "width": 1880,
+                    "height": 780,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -361,
+                    "width": 1300,
+                    "height": 560,
+                    "angle": 0
+                },
+                {
+                    "x": -760,
+                    "y": -309,
+                    "width": 168,
+                    "height": 656,
+                    "angle": 34
+                },
+                {
+                    "x": 760,
+                    "y": -309,
+                    "width": 168,
+                    "height": 656,
+                    "angle": -34
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "minimumRoleLevel": 90
+}

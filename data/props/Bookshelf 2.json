@@ -1,0 +1,52 @@
+{
+    "id": "Bookshelf 2",
+    "name": "Bookshelf",
+    "image": {
+        "path": "props/office/bookshelf_2.png",
+        "width": 795,
+        "height": 1312
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 605.4,
+            "radiusX": 1010,
+            "radiusY": 380
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 80.4,
+                    "width": 800,
+                    "height": 1150,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0.4,
+                    "width": 795,
+                    "height": 1305,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

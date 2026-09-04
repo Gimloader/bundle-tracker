@@ -1,0 +1,103 @@
+{
+    "id": "school_biome/teacher_chairs/chair_side",
+    "name": "Teacher Chair (Side)",
+    "image": {
+        "path": "props/school_biome/teacher_chairs/chair_side.png",
+        "width": 568,
+        "height": 739
+    },
+    "scale": 0.16,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 195.6,
+            "radiusX": 700,
+            "radiusY": 600
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -37.5,
+                    "y": 70.6,
+                    "width": 425,
+                    "height": 400,
+                    "angle": 0
+                },
+                {
+                    "x": -187.5,
+                    "y": 195.6,
+                    "width": 81.25,
+                    "height": 375,
+                    "angle": 18
+                },
+                {
+                    "x": 187.5,
+                    "y": 195.6,
+                    "width": 87.5,
+                    "height": 375,
+                    "angle": -20
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -35,
+                    "y": 70.6,
+                    "width": 425,
+                    "height": 400,
+                    "angle": 0
+                },
+                {
+                    "x": -190,
+                    "y": 195.6,
+                    "width": 80,
+                    "height": 375,
+                    "angle": 18
+                },
+                {
+                    "x": 185,
+                    "y": 195.6,
+                    "width": 85,
+                    "height": 375,
+                    "angle": -20
+                },
+                {
+                    "x": 125,
+                    "y": -204.4,
+                    "width": 100,
+                    "height": 325,
+                    "angle": 0
+                },
+                {
+                    "x": 185,
+                    "y": -104.4,
+                    "width": 75,
+                    "height": 375,
+                    "angle": -20
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -50,
+                    "y": -179.4,
+                    "radius": 75,
+                    "halfHeight": 100,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

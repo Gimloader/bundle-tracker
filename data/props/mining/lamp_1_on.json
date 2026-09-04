@@ -1,0 +1,68 @@
+{
+    "id": "mining/lamp_1_on",
+    "name": "Lamp 1 (On)",
+    "image": {
+        "path": "props/mining/lamp_1_on.png",
+        "width": 905,
+        "height": 1128
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 120,
+            "y": 530.67,
+            "radiusX": 400,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 120,
+                    "y": 297.33,
+                    "width": 200,
+                    "height": 500,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 126.67,
+                    "y": -2.67,
+                    "width": 200,
+                    "height": 1120,
+                    "angle": 0
+                },
+                {
+                    "x": 60,
+                    "y": -422.67,
+                    "width": 800,
+                    "height": 133.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -126.67,
+                    "y": -102.67,
+                    "radius": 213.33,
+                    "halfHeight": 20,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "minimumRoleLevel": 90
+}

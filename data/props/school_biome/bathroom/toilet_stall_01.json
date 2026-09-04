@@ -1,0 +1,109 @@
+{
+    "id": "school_biome/bathroom/toilet_stall_01",
+    "name": "Bathroom Stall (Locked)",
+    "image": {
+        "path": "props/school_biome/bathroom/toilet_stall_01.png",
+        "width": 1215,
+        "height": 1774
+    },
+    "scale": 0.14,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 512.59,
+            "radiusX": 1428.57,
+            "radiusY": 1214.29
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 41.16,
+                    "width": 1207.14,
+                    "height": 1285.71,
+                    "angle": 0
+                },
+                {
+                    "x": 500,
+                    "y": 405.44,
+                    "width": 214.29,
+                    "height": 750,
+                    "angle": 0
+                },
+                {
+                    "x": -500,
+                    "y": 405.44,
+                    "width": 214.29,
+                    "height": 750,
+                    "angle": 0
+                },
+                {
+                    "x": 492.86,
+                    "y": 798.3,
+                    "width": 100,
+                    "height": 178.57,
+                    "angle": 0
+                },
+                {
+                    "x": -492.86,
+                    "y": 798.3,
+                    "width": 100,
+                    "height": 178.57,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -101.7,
+                    "width": 1207.14,
+                    "height": 1571.43,
+                    "angle": 0
+                },
+                {
+                    "x": 500,
+                    "y": 405.44,
+                    "width": 214.29,
+                    "height": 750,
+                    "angle": 0
+                },
+                {
+                    "x": -500,
+                    "y": 405.44,
+                    "width": 214.29,
+                    "height": 750,
+                    "angle": 0
+                },
+                {
+                    "x": 492.86,
+                    "y": 798.3,
+                    "width": 100,
+                    "height": 178.57,
+                    "angle": 0
+                },
+                {
+                    "x": -492.86,
+                    "y": 798.3,
+                    "width": 100,
+                    "height": 178.57,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

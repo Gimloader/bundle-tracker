@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "gray-fish",
+    "name": "Gray Fish",
+    "editorName": "Gray Fish",
+    "description": "A gray(t) catch.",
+    "previewImage": "inventory/resources/gray_fish.png"
+}

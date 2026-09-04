@@ -1,0 +1,74 @@
+{
+    "id": "school_biome/dining_room/dispenser_02",
+    "name": "Cafeteria Food Line",
+    "image": {
+        "path": "props/school_biome/dining_room/dispenser_02.png",
+        "width": 942,
+        "height": 508
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 187.2,
+            "radiusX": 1008,
+            "radiusY": 320
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 203.2,
+                    "width": 900,
+                    "height": 100,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 47.2,
+                    "width": 940,
+                    "height": 224,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 203.2,
+                    "width": 900,
+                    "height": 100,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 19.2,
+                    "width": 940,
+                    "height": 284,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -156.8,
+                    "width": 852,
+                    "height": 200,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

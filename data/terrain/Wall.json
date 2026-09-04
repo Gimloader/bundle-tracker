@@ -1,0 +1,12 @@
+{
+    "id": "Wall",
+    "name": "Brick & Concrete",
+    "maskTilesUrl": "tilesets/wall/mask.png",
+    "borderTilesUrl": "tilesets/wall/border.png",
+    "fillUrl": "tilesets/wall/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "seasonTicketRequired": true,
+    "previewUrl": "tilesets/wall/preview.png"
+}

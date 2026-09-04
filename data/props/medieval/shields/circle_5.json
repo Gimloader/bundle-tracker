@@ -1,0 +1,50 @@
+{
+    "id": "medieval/shields/circle_5",
+    "name": "Circular Shield",
+    "image": {
+        "path": "props/medieval/shields/circle_5.png",
+        "width": 462,
+        "height": 462
+    },
+    "scale": 0.14,
+    "originX": 0.5,
+    "originY": 0.89,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 158.75,
+            "radiusX": 514.29,
+            "radiusY": 214.29
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 173.04,
+                    "radius": 42.86,
+                    "halfHeight": 42.86,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 1.61,
+                    "radius": 235.71
+                }
+            ],
+            "capsule": []
+        }
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "id": "school_biome/class_supplies/ruler_04",
+    "name": "Ruler",
+    "image": {
+        "path": "props/school_biome/class_supplies/ruler_04.png",
+        "width": 240,
+        "height": 169
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 13.33,
+                    "width": 233.33,
+                    "height": 66.67,
+                    "angle": -20
+                }
+            ],
+            "circle": [
+                {
+                    "x": -13.33,
+                    "y": -13.33,
+                    "radius": 66.67
+                }
+            ],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

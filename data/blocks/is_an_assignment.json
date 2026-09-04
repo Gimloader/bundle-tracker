@@ -1,0 +1,8 @@
+{
+    "type": "is_an_assignment",
+    "message0": "Is An Assignment",
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": "Boolean"
+}

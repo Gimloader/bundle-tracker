@@ -1,0 +1,88 @@
+{
+    "id": "school_biome/laboratory/funnel_02",
+    "name": "Funnel",
+    "image": {
+        "path": "props/school_biome/laboratory/funnel_02.png",
+        "width": 448,
+        "height": 360
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.62,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 63.2,
+            "radiusX": 466.67,
+            "radiusY": 266.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 16.53,
+                    "radius": 33.33,
+                    "halfHeight": 186.67,
+                    "angle": 90
+                },
+                {
+                    "x": -146.67,
+                    "y": 83.2,
+                    "radius": 66.67,
+                    "halfHeight": 33.33,
+                    "angle": 0
+                },
+                {
+                    "x": -26.67,
+                    "y": 56.53,
+                    "radius": 40,
+                    "halfHeight": 60,
+                    "angle": 60
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 16.53,
+                    "radius": 33.33,
+                    "halfHeight": 186.67,
+                    "angle": 90
+                },
+                {
+                    "x": -140,
+                    "y": 3.2,
+                    "radius": 66.67,
+                    "halfHeight": 113.33,
+                    "angle": 0
+                },
+                {
+                    "x": -26.67,
+                    "y": 56.53,
+                    "radius": 40,
+                    "halfHeight": 60,
+                    "angle": 60
+                },
+                {
+                    "x": 0,
+                    "y": -30.13,
+                    "radius": 33.33,
+                    "halfHeight": 86.67,
+                    "angle": 125
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

@@ -1,0 +1,53 @@
+{
+    "id": "school_biome/class_supplies/school_book_open_02",
+    "name": "Open Book",
+    "image": {
+        "path": "props/school_biome/class_supplies/school_book_open_02.png",
+        "width": 539,
+        "height": 356
+    },
+    "scale": 0.12,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 58.33,
+            "radiusX": 666.67,
+            "radiusY": 416.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 33.33,
+                    "width": 541.67,
+                    "height": 283.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 541.67,
+                    "height": 341.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

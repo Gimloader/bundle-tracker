@@ -1,0 +1,15 @@
+{
+    "type": "get_seconds",
+    "message0": "Get Seconds %1 ",
+    "args0": [
+        {
+            "type": "input_dummy"
+        }
+    ],
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": [
+        "Number"
+    ]
+}

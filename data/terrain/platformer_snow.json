@@ -1,0 +1,11 @@
+{
+    "id": "platformer_snow",
+    "name": "Snow",
+    "maskTilesUrl": "tilesets/platformer_snow/mask.png",
+    "borderTilesUrl": "tilesets/platformer_snow/border.png",
+    "fillUrl": "tilesets/platformer_snow/fill.png",
+    "blockedMapStyles": [
+        "topDown"
+    ],
+    "previewUrl": "tilesets/platformer_snow/preview.png"
+}

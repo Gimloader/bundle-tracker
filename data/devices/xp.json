@@ -1,0 +1,10 @@
+{
+    "id": "xp",
+    "name": "XP Granter",
+    "description": "Grant XP to allow players to level up!",
+    "optionSchema": "{\"options\":[{\"key\":\"amount\",\"option\":{\"label\":\"XP To Grant\",\"type\":\"numberInput\",\"defaultValue\":10,\"validators\":[null],\"props\":{\"min\":1,\"max\":10000,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"reason\",\"option\":{\"label\":\"Reason\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Achievement accomplished\"}}},{\"key\":\"grantOnChannel\",\"option\":{\"label\":\"Grant when receiving on channel...\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100}}},{\"key\":\"useIncrementalGrant\",\"option\":{\"label\":\"Use Incremental Grant\",\"type\":\"select\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}},{\"key\":\"incrementalGrantCharacterRequirement\",\"option\":{\"label\":\"Incremental Grant Character Requirement\",\"type\":\"numberInput\",\"defaultValue\":10,\"validators\":[null],\"props\":{\"min\":1,\"max\":60,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"useMinimumCharacterCount\",\"option\":{\"label\":\"Use Minimum Character Count\",\"type\":\"select\",\"defaultValue\":false,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}}},{\"key\":\"minimumCharacterCount\",\"option\":{\"label\":\"Minimum Character Count\",\"type\":\"numberInput\",\"defaultValue\":6,\"validators\":[null],\"props\":{\"min\":1,\"max\":60,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}}}]}",
+    "defaultState": "{}",
+    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
+    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"grant\",\"name\":\"Grant XP\"}]}}",
+    "minimumRoleLevel": 90
+}

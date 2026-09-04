@@ -1,0 +1,73 @@
+{
+    "id": "flags/blastball/flag_1_red",
+    "name": "Arena Flag (Red)",
+    "image": {
+        "path": "props/flags/blastball/flag_1_red.png",
+        "width": 652,
+        "height": 1291
+    },
+    "scale": 0.15,
+    "originX": 0.2,
+    "originY": 0.93,
+    "shadows": [
+        {
+            "x": -202.27,
+            "y": 581.8,
+            "radiusX": 426.67,
+            "radiusY": 240
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -202.27,
+                    "y": 541.8,
+                    "radius": 100,
+                    "halfHeight": 26.67,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -202.27,
+                    "y": -131.54,
+                    "width": 80,
+                    "height": 1033.33,
+                    "angle": 0
+                },
+                {
+                    "x": 71.07,
+                    "y": -231.54,
+                    "width": 500,
+                    "height": 466.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": -195.6,
+                    "y": 508.46,
+                    "radius": 140
+                }
+            ],
+            "capsule": [
+                {
+                    "x": -195.6,
+                    "y": -531.54,
+                    "radius": 100,
+                    "halfHeight": 13.33,
+                    "angle": 0
+                }
+            ]
+        }
+    }
+}

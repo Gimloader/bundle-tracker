@@ -1,0 +1,29 @@
+{
+    "id": "small-snow-pile-1",
+    "name": "Small Snow Pile",
+    "image": {
+        "path": "props/snow_piles/small/pile_1.png",
+        "width": 166,
+        "height": 72
+    },
+    "scale": 0.38,
+    "originX": 0.5,
+    "originY": 0,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

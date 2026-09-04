@@ -1,0 +1,52 @@
+{
+    "id": "medieval/barriers/horizontal/dark_gray",
+    "name": "Dark Gray Stone Barrier",
+    "image": {
+        "path": "props/medieval/barriers/horizontal/dark_gray.png",
+        "width": 804,
+        "height": 574
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.57,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 175.18,
+            "radiusX": 1060,
+            "radiusY": 430
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 135.18,
+                    "width": 800,
+                    "height": 305,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0.18,
+                    "width": 800,
+                    "height": 565,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

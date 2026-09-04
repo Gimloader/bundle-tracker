@@ -1,0 +1,11 @@
+{
+    "id": "Spaceship Catwalk A",
+    "name": "Spaceship Catwalk (Lined)",
+    "maskTilesUrl": "tilesets/spaceship_catwalk/mask.png",
+    "borderTilesUrl": "tilesets/spaceship_catwalk/border.png",
+    "fillUrl": "tilesets/spaceship_catwalk/fill_a.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/spaceship_catwalk/preview_a.png"
+}

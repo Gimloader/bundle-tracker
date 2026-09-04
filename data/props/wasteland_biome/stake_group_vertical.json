@@ -1,0 +1,53 @@
+{
+    "id": "wasteland_biome/stake_group_vertical",
+    "name": "Stake Group (Vertical)",
+    "image": {
+        "path": "props/wasteland_biome/stake_group_vertical.png",
+        "width": 408,
+        "height": 629
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 65,
+            "radiusX": 450,
+            "radiusY": 650
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 400,
+                    "height": 600,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 400,
+                    "height": 600,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

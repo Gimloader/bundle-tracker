@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "plastic-bottle",
+    "name": "Plastic Bottle",
+    "editorName": "Plastic Bottle",
+    "description": "When finished, please recycle.",
+    "previewImage": "inventory/resources/plastic_bottle.png"
+}

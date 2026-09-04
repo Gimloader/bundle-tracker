@@ -1,0 +1,36 @@
+{
+    "id": "science_lab/chemical_blue_infected",
+    "name": "Blue Chemical (Infected)",
+    "image": {
+        "path": "props/science_lab/chemical_blue_infected.png",
+        "width": 179,
+        "height": 251
+    },
+    "scale": 0.17,
+    "originX": 0.5,
+    "originY": 0.85,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 117.26,
+            "radiusX": 235.29,
+            "radiusY": 70.59
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

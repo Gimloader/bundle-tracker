@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "water",
+    "name": "Water",
+    "editorName": "Water",
+    "description": "H20 to go",
+    "previewImage": "inventory/resources/water.png"
+}

@@ -1,0 +1,17 @@
+{
+    "type": "set_gui_text",
+    "message0": "Set Text %1 ",
+    "args0": [
+        {
+            "type": "input_value",
+            "name": "set_text",
+            "check": "String",
+            "align": "RIGHT"
+        }
+    ],
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "previousStatement": null,
+    "nextStatement": null
+}

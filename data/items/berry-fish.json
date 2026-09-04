@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "berry-fish",
+    "name": "Berry Fish",
+    "editorName": "Berry Fish",
+    "description": "You're looking berry good.",
+    "previewImage": "inventory/resources/berry_fish.png"
+}

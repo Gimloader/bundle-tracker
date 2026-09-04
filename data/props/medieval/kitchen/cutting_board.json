@@ -1,0 +1,52 @@
+{
+    "id": "medieval/kitchen/cutting_board",
+    "name": "Cutting Board",
+    "image": {
+        "path": "props/medieval/kitchen/cutting_board.png",
+        "width": 523,
+        "height": 375
+    },
+    "scale": 0.13,
+    "originX": 0.5,
+    "originY": 0.8,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 89.42,
+            "radiusX": 692.31,
+            "radiusY": 369.23
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 112.5,
+                    "width": 523.08,
+                    "height": 146.15,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -2.88,
+                    "width": 523.08,
+                    "height": 376.92,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

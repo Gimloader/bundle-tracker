@@ -1,0 +1,12 @@
+{
+    "id": "sky_blue",
+    "name": "Sky",
+    "maskTilesUrl": "tilesets/sky/mask.png",
+    "borderTilesUrl": "tilesets/sky/border.png",
+    "fillUrl": "tilesets/sky/fill.jpg",
+    "blockedMapStyles": [
+        "topDown"
+    ],
+    "minimumRoleLevel": 90,
+    "previewUrl": "tilesets/sky/preview.png"
+}

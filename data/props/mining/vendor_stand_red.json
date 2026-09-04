@@ -1,0 +1,96 @@
+{
+    "id": "mining/vendor_stand_red",
+    "name": "Vendor Stand (Red)",
+    "image": {
+        "path": "props/mining/vendor_stand_red.png",
+        "width": 1544,
+        "height": 1332
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 33.33,
+            "y": 579.33,
+            "radiusX": 1640,
+            "radiusY": 400
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 20,
+                    "y": 132.67,
+                    "width": 1473.33,
+                    "height": 1033.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 20,
+                    "y": 499.33,
+                    "width": 1406.67,
+                    "height": 333.33,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -340.67,
+                    "width": 1526.67,
+                    "height": 306.67,
+                    "angle": 0
+                },
+                {
+                    "x": 20,
+                    "y": 66,
+                    "width": 1166.67,
+                    "height": 666.67,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -527.33,
+                    "width": 1033.33,
+                    "height": 266.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -40,
+                    "y": -0.67,
+                    "radius": 133.33,
+                    "halfHeight": 606.67,
+                    "angle": 90
+                },
+                {
+                    "x": -540,
+                    "y": -527.33,
+                    "radius": 66.67,
+                    "halfHeight": 100,
+                    "angle": 40
+                },
+                {
+                    "x": 566.67,
+                    "y": -527.33,
+                    "radius": 66.67,
+                    "halfHeight": 100,
+                    "angle": 134
+                }
+            ]
+        }
+    },
+    "minimumRoleLevel": 90
+}

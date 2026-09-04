@@ -1,0 +1,29 @@
+{
+    "id": "dishes/glass_1",
+    "name": "Glass Cup",
+    "image": {
+        "path": "props/dishes/glass_1.png",
+        "width": 64,
+        "height": 86
+    },
+    "scale": 0.35,
+    "originX": 0.5,
+    "originY": 0.94,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

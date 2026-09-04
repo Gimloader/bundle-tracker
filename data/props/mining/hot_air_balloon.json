@@ -1,0 +1,88 @@
+{
+    "id": "mining/hot_air_balloon",
+    "name": "Hot Air Balloon",
+    "image": {
+        "path": "props/mining/hot_air_balloon.png",
+        "width": 1230,
+        "height": 2183
+    },
+    "scale": 0.29,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 974.26,
+            "radiusX": 806.9,
+            "radiusY": 344.83
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -17.24,
+                    "y": 981.16,
+                    "radius": 75.86,
+                    "halfHeight": 210.34,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -189.66,
+                    "y": 263.91,
+                    "width": 41.38,
+                    "height": 441.38,
+                    "angle": -23
+                },
+                {
+                    "x": 189.66,
+                    "y": 263.91,
+                    "width": 41.38,
+                    "height": 441.38,
+                    "angle": 23
+                },
+                {
+                    "x": -186.21,
+                    "y": 698.4,
+                    "width": 37.93,
+                    "height": 555.17,
+                    "angle": 14
+                },
+                {
+                    "x": 189.66,
+                    "y": 698.4,
+                    "width": 37.93,
+                    "height": 555.17,
+                    "angle": -14
+                }
+            ],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": -467.12,
+                    "radius": 613.79
+                }
+            ],
+            "capsule": [
+                {
+                    "x": -3.45,
+                    "y": 957.02,
+                    "radius": 124.14,
+                    "halfHeight": 179.31,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "minimumRoleLevel": 90
+}

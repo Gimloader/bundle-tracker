@@ -1,0 +1,36 @@
+{
+    "id": "leaf-pile-light-large",
+    "name": "Large Leaf Pile",
+    "image": {
+        "path": "props/farm/leaf/pile-light-large.png",
+        "width": 462,
+        "height": 329
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 79.5,
+            "radiusX": 528,
+            "radiusY": 256
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

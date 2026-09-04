@@ -1,0 +1,75 @@
+{
+    "id": "mining/mining_cart_1",
+    "name": "Mining Cart",
+    "image": {
+        "path": "props/mining/mining_cart_1.png",
+        "width": 642,
+        "height": 509
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": -8,
+            "y": 217.05,
+            "radiusX": 584,
+            "radiusY": 160
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -8,
+                    "y": 121.05,
+                    "width": 560,
+                    "height": 280,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -12,
+                    "y": 69.05,
+                    "width": 536,
+                    "height": 384,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -66.95,
+                    "width": 640,
+                    "height": 132,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 84,
+                    "y": -130.95,
+                    "radius": 60,
+                    "halfHeight": 140,
+                    "angle": 90
+                },
+                {
+                    "x": -172,
+                    "y": -150.95,
+                    "radius": 64,
+                    "halfHeight": 56,
+                    "angle": 345
+                }
+            ]
+        }
+    },
+    "minimumRoleLevel": 90
+}

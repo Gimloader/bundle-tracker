@@ -1,0 +1,12 @@
+{
+    "id": "sky_pink_stripes",
+    "name": "Sky Pink Stripes",
+    "maskTilesUrl": "tilesets/sky/mask.png",
+    "borderTilesUrl": "tilesets/sky/border.png",
+    "fillUrl": "tilesets/sky/fill_pink_stripes.png",
+    "blockedMapStyles": [
+        "topDown"
+    ],
+    "minimumRoleLevel": 90,
+    "previewUrl": "tilesets/sky/preview.png"
+}

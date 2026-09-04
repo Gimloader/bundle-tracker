@@ -1,0 +1,21 @@
+{
+    "type": "weapon",
+    "id": "blaster_legendary",
+    "name": "Blaster",
+    "editorName": "Blaster (Legendary)",
+    "description": "Primary gadget used for Blastball",
+    "previewImage": "inventory/weapons/blaster.png",
+    "rarity": "legendary",
+    "weapon": {
+        "type": "bullet",
+        "appearance": "blaster",
+        "shared": {
+            "cooldownBetweenShots": 200,
+            "allowAutoFire": true,
+            "startingProjectileDistanceFromCharacter": 0.9
+        },
+        "bullet": {
+            "ammoItemId": "medium-shards"
+        }
+    }
+}

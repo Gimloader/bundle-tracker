@@ -1,0 +1,74 @@
+{
+    "id": "school_biome/dining_room/table_02",
+    "name": "Lunch Table (Vertical)",
+    "image": {
+        "path": "props/school_biome/dining_room/table_02.png",
+        "width": 928,
+        "height": 848
+    },
+    "scale": 0.28,
+    "originX": 0.5,
+    "originY": 0.86,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 105.28,
+            "radiusX": 1000,
+            "radiusY": 950
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 55.28,
+                    "width": 925,
+                    "height": 596.43,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 305.28,
+                    "width": 775,
+                    "height": 239.29,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 30.28,
+                    "width": 925,
+                    "height": 645,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 305.28,
+                    "width": 775,
+                    "height": 240,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -184.72,
+                    "width": 490,
+                    "height": 480,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

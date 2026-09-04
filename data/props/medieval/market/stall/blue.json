@@ -1,0 +1,100 @@
+{
+    "id": "medieval/market/stall/blue",
+    "name": "Market Stand (Blue)",
+    "image": {
+        "path": "props/medieval/market/stall/blue.png",
+        "width": 991,
+        "height": 1086
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0.8,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 413.8,
+            "radiusX": 1024,
+            "radiusY": 400
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 28,
+                    "y": 337.8,
+                    "width": 800,
+                    "height": 336,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 28,
+                    "y": -10.2,
+                    "width": 816,
+                    "height": 868,
+                    "angle": 0
+                },
+                {
+                    "x": -328,
+                    "y": 449.8,
+                    "width": 88,
+                    "height": 116,
+                    "angle": 0
+                },
+                {
+                    "x": -424,
+                    "y": 217.8,
+                    "width": 144,
+                    "height": 44,
+                    "angle": 0
+                },
+                {
+                    "x": -424,
+                    "y": 61.8,
+                    "width": 144,
+                    "height": 44,
+                    "angle": 0
+                },
+                {
+                    "x": 28,
+                    "y": -418.2,
+                    "width": 932,
+                    "height": 44,
+                    "angle": 0
+                },
+                {
+                    "x": -324,
+                    "y": -478.2,
+                    "width": 44,
+                    "height": 128,
+                    "angle": 0
+                },
+                {
+                    "x": 384,
+                    "y": -478.2,
+                    "width": 44,
+                    "height": 128,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": 208,
+                    "y": 393.8,
+                    "radius": 152
+                }
+            ],
+            "capsule": []
+        }
+    }
+}

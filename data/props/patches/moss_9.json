@@ -1,0 +1,30 @@
+{
+    "id": "patches/moss_9",
+    "name": "Moss",
+    "image": {
+        "path": "props/patches/moss_9.png",
+        "width": 314,
+        "height": 212
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "defaultLayer": "DevicesUnderCharacters"
+}

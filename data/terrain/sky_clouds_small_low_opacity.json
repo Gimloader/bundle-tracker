@@ -1,0 +1,12 @@
+{
+    "id": "sky_clouds_small_low_opacity",
+    "name": "Sky Clouds Small (Low Opacity)",
+    "maskTilesUrl": "tilesets/sky/mask.png",
+    "borderTilesUrl": "tilesets/sky/border.png",
+    "fillUrl": "tilesets/sky/clouds_small_low_opacity.png",
+    "blockedMapStyles": [
+        "topDown"
+    ],
+    "minimumRoleLevel": 90,
+    "previewUrl": "tilesets/sky/preview.png"
+}

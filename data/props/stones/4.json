@@ -1,0 +1,85 @@
+{
+    "id": "stones/4",
+    "name": "Stone Rock",
+    "image": {
+        "path": "props/stones/4.png",
+        "width": 472,
+        "height": 397
+    },
+    "scale": 0.3,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 95.17,
+            "radiusX": 560,
+            "radiusY": 280
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 31.83,
+                    "radius": 80,
+                    "halfHeight": 153.33,
+                    "angle": 90
+                },
+                {
+                    "x": 60,
+                    "y": 105.17,
+                    "radius": 100,
+                    "halfHeight": 40,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": -113.33,
+                    "y": -54.83,
+                    "radius": 73.33
+                },
+                {
+                    "x": 100,
+                    "y": -88.17,
+                    "radius": 76.67
+                }
+            ],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 31.83,
+                    "radius": 80,
+                    "halfHeight": 153.33,
+                    "angle": 90
+                },
+                {
+                    "x": 60,
+                    "y": 105.17,
+                    "radius": 100,
+                    "halfHeight": 40,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -98.17,
+                    "radius": 100,
+                    "halfHeight": 43.33,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "minimumRoleLevel": 90
+}

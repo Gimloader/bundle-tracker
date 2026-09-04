@@ -1,0 +1,60 @@
+{
+    "id": "snow-log-group-vertical",
+    "name": "Snowy Log (Vertical)",
+    "image": {
+        "path": "props/logs/snow/log_group_vertical.png",
+        "width": 316,
+        "height": 674
+    },
+    "scale": 0.4,
+    "originX": 0.5,
+    "originY": 0.26,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 98.24,
+            "radiusX": 410,
+            "radiusY": 670
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 50.74,
+                    "width": 287.5,
+                    "height": 537.5,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 50.74,
+                    "width": 320,
+                    "height": 577.5,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -236.76,
+                    "radius": 105,
+                    "halfHeight": 55,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

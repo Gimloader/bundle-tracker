@@ -1,0 +1,8 @@
+{
+    "type": "get_called_action_name",
+    "message0": "Get Called Action's Name",
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": "String"
+}

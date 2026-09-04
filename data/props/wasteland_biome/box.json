@@ -1,0 +1,102 @@
+{
+    "id": "wasteland_biome/box",
+    "name": "Box",
+    "image": {
+        "path": "props/wasteland_biome/box.png",
+        "width": 670,
+        "height": 522
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.69,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 52.51,
+            "radiusX": 733.33,
+            "radiusY": 466.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -146.67,
+                    "y": 92.51,
+                    "width": 320,
+                    "height": 200,
+                    "angle": 27
+                },
+                {
+                    "x": 113.33,
+                    "y": 99.18,
+                    "width": 406.67,
+                    "height": 160,
+                    "angle": -25
+                },
+                {
+                    "x": 0,
+                    "y": -0.82,
+                    "width": 666.67,
+                    "height": 186.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -146.67,
+                    "y": 92.51,
+                    "width": 320,
+                    "height": 200,
+                    "angle": 27
+                },
+                {
+                    "x": 113.33,
+                    "y": 99.18,
+                    "width": 406.67,
+                    "height": 160,
+                    "angle": -25
+                },
+                {
+                    "x": 0,
+                    "y": -0.82,
+                    "width": 666.67,
+                    "height": 186.67,
+                    "angle": 0
+                },
+                {
+                    "x": -153.33,
+                    "y": -127.49,
+                    "width": 346.67,
+                    "height": 100,
+                    "angle": -30
+                },
+                {
+                    "x": 126.67,
+                    "y": -167.49,
+                    "width": 300,
+                    "height": 166.67,
+                    "angle": 0
+                },
+                {
+                    "x": 266.67,
+                    "y": -154.15,
+                    "width": 86.67,
+                    "height": 166.67,
+                    "angle": -18
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

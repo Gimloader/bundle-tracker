@@ -1,0 +1,80 @@
+{
+    "id": "snow-tree-1",
+    "name": "Snowy Tree",
+    "image": {
+        "path": "props/trees/tree_snow_1.png",
+        "width": 376,
+        "height": 647
+    },
+    "scale": 0.36,
+    "originX": 0.5,
+    "originY": 0.93,
+    "shadows": [
+        {
+            "x": -5.56,
+            "y": 289.32,
+            "radiusX": 272.22,
+            "radiusY": 111.11
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -5.56,
+                    "y": 230.99,
+                    "width": 152.78,
+                    "height": 161.11,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -5.56,
+                    "y": 253.21,
+                    "width": 111.11,
+                    "height": 147.22,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 167.1,
+                    "width": 361.11,
+                    "height": 138.89,
+                    "angle": 0
+                },
+                {
+                    "x": -13.89,
+                    "y": 28.21,
+                    "width": 277.78,
+                    "height": 138.89,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -96.79,
+                    "width": 236.11,
+                    "height": 111.11,
+                    "angle": 0
+                },
+                {
+                    "x": -8.33,
+                    "y": -235.68,
+                    "width": 166.67,
+                    "height": 166.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

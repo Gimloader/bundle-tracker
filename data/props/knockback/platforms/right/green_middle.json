@@ -1,0 +1,38 @@
+{
+    "id": "knockback/platforms/right/green_middle",
+    "name": "Knockback Platform (Left Lean)",
+    "image": {
+        "path": "props/knockback/platforms/right/green_middle.png",
+        "width": 671,
+        "height": 198
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0,
+    "shadows": [],
+    "available": {
+        "topDown": false,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -2,
+                    "y": 19,
+                    "width": 620,
+                    "height": 162,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "minimumRoleLevel": 90
+}

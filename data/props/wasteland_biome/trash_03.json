@@ -1,0 +1,67 @@
+{
+    "id": "wasteland_biome/trash_03",
+    "name": "Trash",
+    "image": {
+        "path": "props/wasteland_biome/trash_03.png",
+        "width": 422,
+        "height": 336
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 10,
+            "y": 30,
+            "radiusX": 430,
+            "radiusY": 300
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 10,
+                    "radius": 25,
+                    "halfHeight": 185,
+                    "angle": 103
+                },
+                {
+                    "x": 0,
+                    "y": 75,
+                    "radius": 75,
+                    "halfHeight": 50,
+                    "angle": 112
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -5,
+                    "radius": 50,
+                    "halfHeight": 170,
+                    "angle": 103
+                },
+                {
+                    "x": 15,
+                    "y": -5,
+                    "radius": 130,
+                    "halfHeight": 35,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

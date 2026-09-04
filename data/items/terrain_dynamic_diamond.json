@@ -1,0 +1,13 @@
+{
+    "type": "item",
+    "id": "terrain_dynamic_diamond",
+    "name": "Dynamic Diamond",
+    "editorName": "Dynamic Diamond",
+    "description": "Build structures made of diamond",
+    "previewImage": "inventory/items/terrain_dynamic_diamond.png",
+    "rarity": "legendary",
+    "useCommand": "Drop",
+    "consumeType": "buildTerrain",
+    "terrainId": "Dynamic Diamond",
+    "maxStackSize": 50
+}

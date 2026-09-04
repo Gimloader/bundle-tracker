@@ -1,0 +1,52 @@
+{
+    "id": "medieval/barriers/horizontal_wide/purple",
+    "name": "Purple Stone Barrier (Wide)",
+    "image": {
+        "path": "props/medieval/barriers/horizontal_wide/purple.png",
+        "width": 2360,
+        "height": 574
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.64,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 170.36,
+            "radiusX": 2740,
+            "radiusY": 660
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 150.36,
+                    "width": 2360,
+                    "height": 265,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0.36,
+                    "width": 2360,
+                    "height": 570,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

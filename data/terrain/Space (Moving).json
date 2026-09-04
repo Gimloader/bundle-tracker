@@ -1,0 +1,11 @@
+{
+    "id": "Space (Moving)",
+    "name": "Space (Moving)",
+    "maskTilesUrl": "tilesets/space/mask.png",
+    "borderTilesUrl": "tilesets/space/border.png",
+    "fillUrl": "tilesets/space/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/space/preview.png"
+}

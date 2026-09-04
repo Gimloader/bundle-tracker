@@ -1,0 +1,96 @@
+{
+    "id": "school_biome/school_bus",
+    "name": "School Bus",
+    "image": {
+        "path": "props/school_biome/school_bus.png",
+        "width": 3000,
+        "height": 1578
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.87,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 583.86,
+            "radiusX": 3066.67,
+            "radiusY": 933.33
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 250.53,
+                    "width": 3000,
+                    "height": 833.33,
+                    "angle": 0
+                },
+                {
+                    "x": 326.67,
+                    "y": -282.81,
+                    "width": 2266.67,
+                    "height": 666.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": 933.33,
+                    "y": 597.19,
+                    "radius": 193.33
+                },
+                {
+                    "x": -1126.67,
+                    "y": 603.86,
+                    "radius": 186.67
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 183.86,
+                    "width": 3000,
+                    "height": 900,
+                    "angle": 0
+                },
+                {
+                    "x": 353.33,
+                    "y": -276.14,
+                    "width": 2233.33,
+                    "height": 1033.33,
+                    "angle": 0
+                },
+                {
+                    "x": -586.67,
+                    "y": -182.81,
+                    "width": 666.67,
+                    "height": 666.67,
+                    "angle": 25
+                }
+            ],
+            "circle": [
+                {
+                    "x": 933.33,
+                    "y": 597.19,
+                    "radius": 193.33
+                },
+                {
+                    "x": -1126.67,
+                    "y": 603.86,
+                    "radius": 186.67
+                }
+            ],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

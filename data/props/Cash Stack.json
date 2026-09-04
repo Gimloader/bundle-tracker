@@ -1,0 +1,29 @@
+{
+    "id": "Cash Stack",
+    "name": "Cash Stack ",
+    "image": {
+        "path": "props/stacks/stack_cash.png",
+        "width": 214,
+        "height": 154
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

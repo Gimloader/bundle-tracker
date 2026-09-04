@@ -1,0 +1,29 @@
+{
+    "id": "dishes/spoon",
+    "name": "Spoon",
+    "image": {
+        "path": "props/dishes/spoon.png",
+        "width": 109,
+        "height": 58
+    },
+    "scale": 0.35,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

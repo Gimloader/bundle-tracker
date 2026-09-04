@@ -1,0 +1,53 @@
+{
+    "id": "luck/lucky_block/lucky_block",
+    "name": "Lucky Block",
+    "image": {
+        "path": "props/luck/lucky_block/lucky_block.png",
+        "width": 548,
+        "height": 668
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 87.2,
+            "radiusX": 733.33,
+            "radiusY": 666.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 67.2,
+                    "width": 546.67,
+                    "height": 533.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0.53,
+                    "width": 546.67,
+                    "height": 666.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "minimumRoleLevel": 90
+}

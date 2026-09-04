@@ -1,0 +1,45 @@
+{
+    "id": "Blackboard 16x9",
+    "name": "Blackboard (Wide)",
+    "image": {
+        "path": "props/blackboards/blackboard_16x9.png",
+        "width": 1778,
+        "height": 1105
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 147.25,
+                    "width": 1770,
+                    "height": 800,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 2.25,
+                    "width": 1770,
+                    "height": 1105,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

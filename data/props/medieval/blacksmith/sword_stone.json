@@ -1,0 +1,52 @@
+{
+    "id": "medieval/blacksmith/sword_stone",
+    "name": "Sword Stone",
+    "image": {
+        "path": "props/medieval/blacksmith/sword_stone.png",
+        "width": 1072,
+        "height": 590
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.65,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 155.17,
+            "radiusX": 1386.67,
+            "radiusY": 573.33
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 115.17,
+                    "width": 1073.33,
+                    "height": 346.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 1.83,
+                    "width": 1073.33,
+                    "height": 586.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

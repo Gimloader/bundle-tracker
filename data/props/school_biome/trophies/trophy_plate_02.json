@@ -1,0 +1,38 @@
+{
+    "id": "school_biome/trophies/trophy_plate_02",
+    "name": "Trophy Plate (Silver)",
+    "image": {
+        "path": "props/school_biome/trophies/trophy_plate_02.png",
+        "width": 310,
+        "height": 221
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 300,
+                    "height": 225,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

@@ -1,0 +1,60 @@
+{
+    "id": "Bucket 2",
+    "name": "Bucket",
+    "image": {
+        "path": "props/buckets/bucket_2.png",
+        "width": 117,
+        "height": 137
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 18.5,
+            "radiusX": 112,
+            "radiusY": 48
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 40.5,
+                    "radius": 30,
+                    "halfHeight": 20,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 38.5,
+                    "width": 76,
+                    "height": 60,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -7.5,
+                    "radius": 60,
+                    "halfHeight": 0,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

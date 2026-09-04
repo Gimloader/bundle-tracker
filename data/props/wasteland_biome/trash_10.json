@@ -1,0 +1,81 @@
+{
+    "id": "wasteland_biome/trash_10",
+    "name": "Trash",
+    "image": {
+        "path": "props/wasteland_biome/trash_10.png",
+        "width": 313,
+        "height": 394
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 65,
+            "radiusX": 350,
+            "radiusY": 250
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 5,
+                    "y": 95,
+                    "radius": 75,
+                    "halfHeight": 95,
+                    "angle": 65
+                },
+                {
+                    "x": -25,
+                    "y": 50,
+                    "radius": 50,
+                    "halfHeight": 75,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": 25,
+                    "radius": 100,
+                    "halfHeight": 0,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 5,
+                    "y": 95,
+                    "radius": 75,
+                    "halfHeight": 95,
+                    "angle": 65
+                },
+                {
+                    "x": -25,
+                    "y": 50,
+                    "radius": 50,
+                    "halfHeight": 75,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -50,
+                    "radius": 100,
+                    "halfHeight": 50,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

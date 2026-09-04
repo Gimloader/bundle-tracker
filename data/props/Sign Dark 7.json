@@ -1,0 +1,51 @@
+{
+    "id": "Sign Dark 7",
+    "name": "Dark Wooden Sign",
+    "image": {
+        "path": "props/signs/sign_dark_7.png",
+        "width": 293,
+        "height": 147
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 2,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -36,
+                    "y": 2.5,
+                    "width": 200,
+                    "height": 140,
+                    "angle": 0
+                },
+                {
+                    "x": 90,
+                    "y": -23.5,
+                    "width": 100,
+                    "height": 40,
+                    "angle": 35
+                },
+                {
+                    "x": 74,
+                    "y": 20.5,
+                    "width": 92,
+                    "height": 60,
+                    "angle": -41
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

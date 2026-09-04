@@ -1,0 +1,67 @@
+{
+    "id": "wasteland_biome/olive_jar",
+    "name": "Olive Jar",
+    "image": {
+        "path": "props/wasteland_biome/olive_jar.png",
+        "width": 285,
+        "height": 425
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 156.67,
+            "radiusX": 360,
+            "radiusY": 173.33
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 103.33,
+                    "radius": 100,
+                    "halfHeight": 33.33,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 103.33,
+                    "radius": 100,
+                    "halfHeight": 33.33,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -3.33,
+                    "radius": 100,
+                    "halfHeight": 33.33,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -130,
+                    "radius": 80,
+                    "halfHeight": 20,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "heavy-shards",
+    "name": "Heavy Shards",
+    "editorName": "Heavy Shards",
+    "description": "Unique stone used to refill certain gadgets",
+    "previewImage": "inventory/resources/heavy_shards.png"
+}

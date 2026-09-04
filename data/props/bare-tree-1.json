@@ -1,0 +1,81 @@
+{
+    "id": "bare-tree-1",
+    "name": "Snowy Bare Tree",
+    "image": {
+        "path": "props/trees/tree_bare_1.png",
+        "width": 637,
+        "height": 775
+    },
+    "scale": 0.27,
+    "originX": 0.5,
+    "originY": 0.92,
+    "shadows": [
+        {
+            "x": 29.63,
+            "y": 355.13,
+            "radiusX": 288.89,
+            "radiusY": 140.74
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 37.04,
+                    "y": 177.35,
+                    "width": 125.93,
+                    "height": 351.85,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 33.33,
+                    "y": 214.39,
+                    "width": 125.93,
+                    "height": 351.85,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 62.54,
+                    "radius": 111.11,
+                    "halfHeight": 74.07,
+                    "angle": 90
+                },
+                {
+                    "x": 129.63,
+                    "y": -63.39,
+                    "radius": 122.22,
+                    "halfHeight": 70.37,
+                    "angle": 90
+                },
+                {
+                    "x": -111.11,
+                    "y": -26.35,
+                    "radius": 129.63,
+                    "halfHeight": 92.59,
+                    "angle": 90
+                },
+                {
+                    "x": 51.85,
+                    "y": -230.06,
+                    "radius": 166.67,
+                    "halfHeight": 18.52,
+                    "angle": 0
+                }
+            ]
+        }
+    }
+}

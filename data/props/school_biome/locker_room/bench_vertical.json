@@ -1,0 +1,69 @@
+{
+    "id": "school_biome/locker_room/bench_vertical",
+    "name": "Oak Bench (Vertical)",
+    "image": {
+        "path": "props/school_biome/locker_room/bench_vertical.png",
+        "width": 242,
+        "height": 1004
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 35,
+            "radiusX": 360,
+            "radiusY": 1000
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 245,
+                    "height": 700,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 350,
+                    "radius": 50,
+                    "halfHeight": 100,
+                    "angle": 0
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -65,
+                    "width": 245,
+                    "height": 865,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 350,
+                    "radius": 50,
+                    "halfHeight": 100,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

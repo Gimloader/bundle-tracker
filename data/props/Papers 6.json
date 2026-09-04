@@ -1,0 +1,29 @@
+{
+    "id": "Papers 6",
+    "name": "Papers",
+    "image": {
+        "path": "props/office/papers_6.png",
+        "width": 255,
+        "height": 221
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

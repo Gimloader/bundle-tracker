@@ -1,0 +1,81 @@
+{
+    "id": "wasteland_biome/warning_sign_04",
+    "name": "Warning Sign",
+    "image": {
+        "path": "props/wasteland_biome/warning_sign_04.png",
+        "width": 676,
+        "height": 753
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 321.2,
+            "radiusX": 700,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 51.2,
+                    "width": 675,
+                    "height": 400,
+                    "angle": 0
+                },
+                {
+                    "x": 230,
+                    "y": 286.2,
+                    "width": 100,
+                    "height": 150,
+                    "angle": 0
+                },
+                {
+                    "x": -235,
+                    "y": 246.2,
+                    "width": 100,
+                    "height": 225,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -13.8,
+                    "width": 675,
+                    "height": 535,
+                    "angle": 0
+                },
+                {
+                    "x": 230,
+                    "y": -8.8,
+                    "width": 100,
+                    "height": 735,
+                    "angle": 0
+                },
+                {
+                    "x": -235,
+                    "y": -3.8,
+                    "width": 100,
+                    "height": 750,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

@@ -1,0 +1,36 @@
+{
+    "id": "science_lab/vial_infected_2",
+    "name": "Vial (Infected)",
+    "image": {
+        "path": "props/science_lab/vial_infected_2.png",
+        "width": 146,
+        "height": 217
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 96.5,
+            "radiusX": 160,
+            "radiusY": 64
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

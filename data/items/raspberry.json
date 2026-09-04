@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "raspberry",
+    "name": "Raspberry",
+    "editorName": "Raspberry",
+    "description": "Sour, not sweet.",
+    "previewImage": "inventory/resources/raspberry.png"
+}

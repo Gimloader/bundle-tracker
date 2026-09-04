@@ -1,0 +1,73 @@
+{
+    "id": "snow-tree-3",
+    "name": "Snowy Tree",
+    "image": {
+        "path": "props/trees/tree_snow_3.png",
+        "width": 472,
+        "height": 766
+    },
+    "scale": 0.33,
+    "originX": 0.5,
+    "originY": 0.93,
+    "shadows": [
+        {
+            "x": -6.06,
+            "y": 356.65,
+            "radiusX": 357.58,
+            "radiusY": 145.45
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -3.03,
+                    "y": 283.93,
+                    "width": 154.55,
+                    "height": 212.12,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -9.09,
+                    "y": 274.83,
+                    "width": 124.24,
+                    "height": 212.12,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 147.56,
+                    "width": 472.73,
+                    "height": 272.73,
+                    "angle": 0
+                },
+                {
+                    "x": -12.12,
+                    "y": -79.71,
+                    "width": 333.33,
+                    "height": 181.82,
+                    "angle": 0
+                },
+                {
+                    "x": -18.18,
+                    "y": -276.68,
+                    "width": 293.94,
+                    "height": 215.15,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

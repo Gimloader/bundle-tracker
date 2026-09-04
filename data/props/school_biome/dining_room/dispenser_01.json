@@ -1,0 +1,81 @@
+{
+    "id": "school_biome/dining_room/dispenser_01",
+    "name": "Cafeteria Food Line",
+    "image": {
+        "path": "props/school_biome/dining_room/dispenser_01.png",
+        "width": 1262,
+        "height": 508
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 187.2,
+            "radiusX": 1368,
+            "radiusY": 320
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 203.2,
+                    "width": 1220,
+                    "height": 100,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 47.2,
+                    "width": 1260,
+                    "height": 224,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 203.2,
+                    "width": 1220,
+                    "height": 100,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 19.2,
+                    "width": 1260,
+                    "height": 284,
+                    "angle": 0
+                },
+                {
+                    "x": -160,
+                    "y": -156.8,
+                    "width": 852,
+                    "height": 200,
+                    "angle": 0
+                },
+                {
+                    "x": 468,
+                    "y": -124.8,
+                    "width": 292,
+                    "height": 68,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

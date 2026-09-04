@@ -1,0 +1,58 @@
+{
+    "id": "Stool Echo",
+    "name": "Stool",
+    "image": {
+        "path": "props/stools/stool_echo.png",
+        "width": 166,
+        "height": 194
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 55,
+            "radiusX": 204,
+            "radiusY": 136
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 37,
+                    "radius": 80
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 27,
+                    "width": 160,
+                    "height": 140,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -43,
+                    "radius": 50,
+                    "halfHeight": 30,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

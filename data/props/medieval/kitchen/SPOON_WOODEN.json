@@ -1,0 +1,37 @@
+{
+    "id": "medieval/kitchen/SPOON_WOODEN",
+    "name": "Wooden Spoon",
+    "image": {
+        "path": "props/medieval/kitchen/SPOON_WOODEN.png",
+        "width": 472,
+        "height": 184
+    },
+    "scale": 0.1,
+    "originX": 0.5,
+    "originY": 0,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -2,
+                    "width": 490,
+                    "height": 150,
+                    "angle": -11
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

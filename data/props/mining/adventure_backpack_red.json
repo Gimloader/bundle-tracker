@@ -1,0 +1,74 @@
+{
+    "id": "mining/adventure_backpack_red",
+    "name": "Backpack (Red)",
+    "image": {
+        "path": "props/mining/adventure_backpack_red.png",
+        "width": 722,
+        "height": 642
+    },
+    "scale": 0.11,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": -27.27,
+            "y": 184.64,
+            "radiusX": 690.91,
+            "radiusY": 418.18
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 133.5,
+                    "radius": 187.5,
+                    "halfHeight": 175,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 130.09,
+                    "radius": 190.91,
+                    "halfHeight": 118.18,
+                    "angle": 90
+                },
+                {
+                    "x": 36.36,
+                    "y": -151.73,
+                    "radius": 145.45,
+                    "halfHeight": 181.82,
+                    "angle": 90
+                },
+                {
+                    "x": 163.64,
+                    "y": 30.09,
+                    "radius": 36.36,
+                    "halfHeight": 172.73,
+                    "angle": 90
+                },
+                {
+                    "x": -209.09,
+                    "y": 193.73,
+                    "radius": 90.91,
+                    "halfHeight": 72.73,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "minimumRoleLevel": 90
+}

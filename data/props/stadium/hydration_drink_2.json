@@ -1,0 +1,52 @@
+{
+    "id": "stadium/hydration_drink_2",
+    "name": "Hydration Drink (Purple)",
+    "image": {
+        "path": "props/stadium/hydration_drink_2.png",
+        "width": 195,
+        "height": 443
+    },
+    "scale": 0.12,
+    "originX": 0.5,
+    "originY": 0.97,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 166.54,
+            "radiusX": 233.33,
+            "radiusY": 166.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 116.54,
+                    "radius": 91.67,
+                    "halfHeight": 16.67,
+                    "angle": 0
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 8.21,
+                    "radius": 100,
+                    "halfHeight": 116.67,
+                    "angle": 0
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "id": "dishes/pot_plant",
+    "name": "Plant In Pot",
+    "image": {
+        "path": "props/dishes/pot_plant.png",
+        "width": 210,
+        "height": 163
+    },
+    "scale": 0.35,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 52.93,
+            "radiusX": 205.71,
+            "radiusY": 91.43
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 27.21,
+                    "radius": 57.14,
+                    "halfHeight": 14.29,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 24.36,
+                    "width": 142.86,
+                    "height": 100,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -35.64,
+                    "radius": 42.86,
+                    "halfHeight": 37.14,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -27.07,
+                    "radius": 42.86,
+                    "halfHeight": 62.86,
+                    "angle": 84
+                }
+            ]
+        }
+    }
+}

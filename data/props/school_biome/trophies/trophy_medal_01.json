@@ -1,0 +1,44 @@
+{
+    "id": "school_biome/trophies/trophy_medal_01",
+    "name": "Medal",
+    "image": {
+        "path": "props/school_biome/trophies/trophy_medal_01.png",
+        "width": 180,
+        "height": 209
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -50,
+                    "width": 175,
+                    "height": 105,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 45,
+                    "radius": 60
+                }
+            ],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

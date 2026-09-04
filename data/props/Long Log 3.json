@@ -1,0 +1,59 @@
+{
+    "id": "Long Log 3",
+    "name": "Wooden Log",
+    "image": {
+        "path": "props/logs/log_3.png",
+        "width": 365,
+        "height": 131
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 53.5,
+            "radiusX": 408,
+            "radiusY": 88
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 37.5,
+                    "width": 360,
+                    "height": 60,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 11.5,
+                    "width": 366,
+                    "height": 110,
+                    "angle": 0
+                },
+                {
+                    "x": -100,
+                    "y": -40.5,
+                    "width": 40,
+                    "height": 50,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

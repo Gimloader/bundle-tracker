@@ -1,0 +1,53 @@
+{
+    "id": "school_biome/library/library_cart",
+    "name": "Library Cart",
+    "image": {
+        "path": "props/school_biome/library/library_cart.png",
+        "width": 323,
+        "height": 654
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 261.6,
+            "radiusX": 400,
+            "radiusY": 266.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 141.6,
+                    "width": 320,
+                    "height": 366.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 8.27,
+                    "width": 320,
+                    "height": 633.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

@@ -1,0 +1,66 @@
+{
+    "id": "Ground Hay 1",
+    "name": "Ground Hay",
+    "image": {
+        "path": "props/farm/ground_hay_1.png",
+        "width": 374,
+        "height": 175
+    },
+    "scale": 0.27,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 48.15,
+            "radiusX": 444.44,
+            "radiusY": 125.93
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 11.11,
+                    "width": 314.81,
+                    "height": 74.07,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "radius": 92.59,
+                    "halfHeight": 55.56,
+                    "angle": 90
+                },
+                {
+                    "x": -85.19,
+                    "y": 11.11,
+                    "radius": 74.07,
+                    "halfHeight": 37.04,
+                    "angle": 68
+                },
+                {
+                    "x": 118.52,
+                    "y": 11.11,
+                    "radius": 44.44,
+                    "halfHeight": 29.63,
+                    "angle": 125
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "id": "Laptop",
+    "name": "Laptop",
+    "image": {
+        "path": "props/office/laptop.png",
+        "width": 390,
+        "height": 262
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 41.9,
+            "radiusX": 448,
+            "radiusY": 240
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

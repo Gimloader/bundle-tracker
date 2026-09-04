@@ -1,0 +1,110 @@
+{
+    "id": "school_biome/boards/board_05",
+    "name": "Blank Map",
+    "image": {
+        "path": "props/school_biome/boards/board_05.png",
+        "width": 1349,
+        "height": 1118
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.96,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 514.28,
+            "radiusX": 850,
+            "radiusY": 250
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 210,
+                    "y": 379.28,
+                    "width": 100,
+                    "height": 375,
+                    "angle": -22
+                },
+                {
+                    "x": -210,
+                    "y": 379.28,
+                    "width": 100,
+                    "height": 375,
+                    "angle": 22
+                },
+                {
+                    "x": 0,
+                    "y": 344.28,
+                    "width": 1350,
+                    "height": 75,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -35.72,
+                    "width": 1200,
+                    "height": 750,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 210,
+                    "y": 379.28,
+                    "width": 100,
+                    "height": 375,
+                    "angle": -22
+                },
+                {
+                    "x": -210,
+                    "y": 379.28,
+                    "width": 100,
+                    "height": 375,
+                    "angle": 22
+                },
+                {
+                    "x": 0,
+                    "y": 344.28,
+                    "width": 1350,
+                    "height": 75,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -430.72,
+                    "width": 1350,
+                    "height": 75,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -35.72,
+                    "width": 1200,
+                    "height": 750,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -5,
+                    "y": -410.72,
+                    "radius": 70,
+                    "halfHeight": 80,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

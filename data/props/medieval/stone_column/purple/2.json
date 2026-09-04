@@ -1,0 +1,66 @@
+{
+    "id": "medieval/stone_column/purple/2",
+    "name": "Stone Column (Purple)",
+    "image": {
+        "path": "props/medieval/stone_column/purple/2.png",
+        "width": 449,
+        "height": 1308
+    },
+    "scale": 0.22,
+    "originX": 0.5,
+    "originY": 0.89,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 532.85,
+            "radiusX": 636.36,
+            "radiusY": 418.18
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 482.85,
+                    "width": 400,
+                    "height": 345.45,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 482.85,
+                    "width": 400,
+                    "height": 345.45,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 5.57,
+                    "width": 300,
+                    "height": 677.27,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -426.24,
+                    "width": 440.91,
+                    "height": 463.64,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

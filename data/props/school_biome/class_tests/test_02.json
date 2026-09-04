@@ -1,0 +1,46 @@
+{
+    "id": "school_biome/class_tests/test_02",
+    "name": "Test",
+    "image": {
+        "path": "props/school_biome/class_tests/test_02.png",
+        "width": 295,
+        "height": 376
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 280,
+                    "height": 366.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 280,
+                    "height": 366.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

@@ -1,0 +1,12 @@
+{
+    "id": "field_solid_border",
+    "name": "Field (Solid Border)",
+    "maskTilesUrl": "tilesets/field/mask.png",
+    "borderTilesUrl": "tilesets/field/border_solid.png",
+    "fillUrl": "tilesets/field/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "minimumRoleLevel": 90,
+    "previewUrl": "tilesets/field/preview.png"
+}

@@ -1,0 +1,17 @@
+{
+    "type": "set_image",
+    "message0": "Set Image URL %1 ",
+    "args0": [
+        {
+            "type": "input_value",
+            "name": "set_image_url",
+            "check": "String",
+            "align": "RIGHT"
+        }
+    ],
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "previousStatement": null,
+    "nextStatement": null
+}

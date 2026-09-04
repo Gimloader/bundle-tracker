@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "yellow-seed",
+    "name": "Yellow Seed",
+    "editorName": "Yellow Seed",
+    "description": "Grow something special.",
+    "previewImage": "inventory/resources/yellow_seed.png"
+}

@@ -1,0 +1,67 @@
+{
+    "id": "Office Chair 2",
+    "name": "Office Chair",
+    "image": {
+        "path": "props/chairs/office_chair_2.png",
+        "width": 476,
+        "height": 663
+    },
+    "scale": 0.22,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 18.18,
+            "y": 243.8,
+            "radiusX": 527.27,
+            "radiusY": 254.55
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 36.36,
+                    "y": 134.71,
+                    "width": 404.55,
+                    "height": 381.82,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 4.55,
+                    "y": 134.71,
+                    "width": 463.64,
+                    "height": 381.82,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -136.36,
+                    "y": -188.01,
+                    "radius": 95.45,
+                    "halfHeight": 40.91,
+                    "angle": 0
+                },
+                {
+                    "x": 45.45,
+                    "y": -38.01,
+                    "radius": 136.36,
+                    "halfHeight": 0,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

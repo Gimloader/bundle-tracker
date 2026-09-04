@@ -1,0 +1,76 @@
+{
+    "id": "school_biome/dining_room/drinking_fountain_01",
+    "name": "Drinking Fountain",
+    "image": {
+        "path": "props/school_biome/dining_room/drinking_fountain_01.png",
+        "width": 211,
+        "height": 444
+    },
+    "scale": 0.24,
+    "originX": 0.5,
+    "originY": 0.82,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 158.75,
+            "radiusX": 250,
+            "radiusY": 216.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -41.67,
+                    "y": 46.25,
+                    "width": 125,
+                    "height": 345.83,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 16.67,
+                    "y": 46.25,
+                    "radius": 87.5,
+                    "halfHeight": 83.33,
+                    "angle": 0
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -41.67,
+                    "y": 12.91,
+                    "width": 125,
+                    "height": 408.33,
+                    "angle": 0
+                },
+                {
+                    "x": -83.33,
+                    "y": -199.59,
+                    "width": 41.67,
+                    "height": 41.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 16.67,
+                    "y": 12.91,
+                    "radius": 87.5,
+                    "halfHeight": 116.67,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

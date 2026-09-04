@@ -1,0 +1,53 @@
+{
+    "id": "wasteland_biome/dry_plant_gray_2",
+    "name": "Dry Plant (Gray) 2",
+    "image": {
+        "path": "props/wasteland_biome/dry_plant_gray_2.png",
+        "width": 282,
+        "height": 250
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 15,
+            "y": 85,
+            "radiusX": 230,
+            "radiusY": 120
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 50,
+                    "radius": 60,
+                    "halfHeight": 85,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -20,
+                    "y": 5,
+                    "radius": 100,
+                    "halfHeight": 55,
+                    "angle": 130
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

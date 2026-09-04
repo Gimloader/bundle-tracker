@@ -1,0 +1,59 @@
+{
+    "id": "medieval/kitchen/bowl",
+    "name": "Wooden Bowl",
+    "image": {
+        "path": "props/medieval/kitchen/bowl.png",
+        "width": 434,
+        "height": 336
+    },
+    "scale": 0.1,
+    "originX": 0.5,
+    "originY": 0.79,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 97.44,
+            "radiusX": 420,
+            "radiusY": 220
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 107.44,
+                    "radius": 60,
+                    "halfHeight": 70,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -32.56,
+                    "radius": 140,
+                    "halfHeight": 80,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": 97.44,
+                    "radius": 70,
+                    "halfHeight": 90,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

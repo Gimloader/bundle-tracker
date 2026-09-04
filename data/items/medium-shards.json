@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "medium-shards",
+    "name": "Medium Shards",
+    "editorName": "Medium Shards",
+    "description": "Unique stone used to refill certain gadgets",
+    "previewImage": "inventory/resources/medium_shards.png"
+}

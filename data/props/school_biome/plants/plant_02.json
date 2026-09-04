@@ -1,0 +1,88 @@
+{
+    "id": "school_biome/plants/plant_02",
+    "name": "Plant",
+    "image": {
+        "path": "props/school_biome/plants/plant_02.png",
+        "width": 412,
+        "height": 741
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.85,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 292.68,
+            "radiusX": 373.33,
+            "radiusY": 240
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 272.68,
+                    "radius": 86.67,
+                    "halfHeight": 40,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": 132.68,
+                    "radius": 133.33,
+                    "halfHeight": 33.33,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 272.68,
+                    "radius": 86.67,
+                    "halfHeight": 40,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": 132.68,
+                    "radius": 133.33,
+                    "halfHeight": 33.33,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -120.65,
+                    "radius": 146.67,
+                    "halfHeight": 100,
+                    "angle": 0
+                },
+                {
+                    "x": -93.33,
+                    "y": 12.68,
+                    "radius": 66.67,
+                    "halfHeight": 133.33,
+                    "angle": 335
+                },
+                {
+                    "x": 106.67,
+                    "y": 19.35,
+                    "radius": 66.67,
+                    "halfHeight": 133.33,
+                    "angle": 15
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

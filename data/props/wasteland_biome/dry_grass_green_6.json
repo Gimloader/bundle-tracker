@@ -1,0 +1,60 @@
+{
+    "id": "wasteland_biome/dry_grass_green_6",
+    "name": "Dry Grass (Green)",
+    "image": {
+        "path": "props/wasteland_biome/dry_grass_green_6.png",
+        "width": 452,
+        "height": 355
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 10,
+            "y": 127,
+            "radiusX": 450,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 67,
+                    "radius": 100,
+                    "halfHeight": 115,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 52,
+                    "radius": 125,
+                    "halfHeight": 105,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -83,
+                    "radius": 95,
+                    "halfHeight": 35,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

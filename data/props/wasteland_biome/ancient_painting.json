@@ -1,0 +1,30 @@
+{
+    "id": "wasteland_biome/ancient_painting",
+    "name": "Ancient Painting",
+    "image": {
+        "path": "props/wasteland_biome/ancient_painting.png",
+        "width": 1715,
+        "height": 706
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

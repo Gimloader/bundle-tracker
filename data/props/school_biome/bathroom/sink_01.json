@@ -1,0 +1,61 @@
+{
+    "id": "school_biome/bathroom/sink_01",
+    "name": "Sink (Horizontal)",
+    "image": {
+        "path": "props/school_biome/bathroom/sink_01.png",
+        "width": 587,
+        "height": 538
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.89,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 143.15,
+            "radiusX": 666.67,
+            "radiusY": 400
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 43.15,
+                    "width": 586.67,
+                    "height": 433.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 43.15,
+                    "width": 586.67,
+                    "height": 433.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -130.18,
+                    "radius": 133.33,
+                    "halfHeight": 166.67,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

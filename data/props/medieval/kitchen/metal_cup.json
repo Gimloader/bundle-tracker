@@ -1,0 +1,67 @@
+{
+    "id": "medieval/kitchen/metal_cup",
+    "name": "Metal Cup",
+    "image": {
+        "path": "props/medieval/kitchen/metal_cup.png",
+        "width": 241,
+        "height": 351
+    },
+    "scale": 0.11,
+    "originX": 0.5,
+    "originY": 0.79,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 119.97,
+            "radiusX": 236.36,
+            "radiusY": 145.45
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 119.97,
+                    "radius": 54.55,
+                    "halfHeight": 27.27,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 29.06,
+                    "width": 45.45,
+                    "height": 109.09,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 119.97,
+                    "radius": 54.55,
+                    "halfHeight": 27.27,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -70.94,
+                    "radius": 109.09,
+                    "halfHeight": 9.09,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

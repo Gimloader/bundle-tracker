@@ -1,0 +1,52 @@
+{
+    "id": "medieval/blacksmith/coal",
+    "name": "Coal",
+    "image": {
+        "path": "props/medieval/blacksmith/coal.png",
+        "width": 593,
+        "height": 535
+    },
+    "scale": 0.12,
+    "originX": 0.5,
+    "originY": 0.8,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 118.83,
+            "radiusX": 733.33,
+            "radiusY": 433.33
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 118.83,
+                    "radius": 141.67,
+                    "halfHeight": 125,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -6.17,
+                    "radius": 266.67,
+                    "halfHeight": 41.67,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

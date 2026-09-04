@@ -1,0 +1,11 @@
+{
+    "id": "Speckled Gray",
+    "name": "Speckled Gray",
+    "maskTilesUrl": "tilesets/speckled_gray/28_speckled_gray_mask.png",
+    "borderTilesUrl": "tilesets/speckled_gray/28_speckled_gray_border.png",
+    "fillUrl": "tilesets/speckled_gray/28_speckled_gray_fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/speckled_gray/28_speckled_gray_preview.png"
+}

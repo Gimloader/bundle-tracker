@@ -1,0 +1,97 @@
+{
+    "id": "wasteland_biome/working_bench_rusty",
+    "name": "Working Bench (Rusty)",
+    "image": {
+        "path": "props/wasteland_biome/working_bench_rusty.png",
+        "width": 1234,
+        "height": 897
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": -100,
+            "y": 283.8,
+            "radiusX": 1200,
+            "radiusY": 600
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -105,
+                    "y": 33.8,
+                    "width": 1015,
+                    "height": 475,
+                    "angle": 0
+                },
+                {
+                    "x": 360,
+                    "y": -106.2,
+                    "width": 500,
+                    "height": 175,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 260,
+                    "y": 333.8,
+                    "radius": 125,
+                    "halfHeight": 25,
+                    "angle": 330
+                },
+                {
+                    "x": -485,
+                    "y": 333.8,
+                    "radius": 125,
+                    "halfHeight": 25,
+                    "angle": 30
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -105,
+                    "y": -41.2,
+                    "width": 1015,
+                    "height": 600,
+                    "angle": 0
+                },
+                {
+                    "x": 400,
+                    "y": -231.2,
+                    "width": 350,
+                    "height": 425,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 260,
+                    "y": 333.8,
+                    "radius": 125,
+                    "halfHeight": 25,
+                    "angle": 330
+                },
+                {
+                    "x": -485,
+                    "y": 333.8,
+                    "radius": 125,
+                    "halfHeight": 25,
+                    "angle": 30
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

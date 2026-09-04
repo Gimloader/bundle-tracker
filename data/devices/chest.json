@@ -1,0 +1,12 @@
+{
+    "id": "chest",
+    "name": "Chest",
+    "description": "Device that drops items when opened.",
+    "optionSchema": "{\"categories\":{\"categories\":[{\"id\":\"featured\",\"name\":\"Featured\"},{\"id\":\"channels\",\"name\":\"Channels\"}],\"showAllOptionsAt\":\"end\"},\"options\":[{\"key\":\"items\",\"option\":{\"label\":\"Items\",\"type\":\"itemsList\",\"props\":{\"maxItems\":5,\"amount\":{\"use\":true,\"defaultValue\":1,\"min\":1,\"max\":999999999,\"step\":1,\"label\":\"Amount\"}},\"defaultValue\":[],\"validators\":[null]},\"categories\":[\"featured\"]},{\"key\":\"activateChannel\",\"option\":{\"label\":\"Activate Channel\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100}},\"categories\":[\"channels\"]},{\"key\":\"deactivateChannel\",\"option\":{\"label\":\"Deactivate Channel\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100}},\"categories\":[\"channels\"]},{\"key\":\"closeChannel\",\"option\":{\"label\":\"Close Channel\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100}},\"categories\":[\"channels\"]},{\"key\":\"whenOpenedChannel\",\"option\":{\"label\":\"When Opened Channel\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100}},\"categories\":[\"channels\"]},{\"key\":\"activeOnGameStart\",\"option\":{\"label\":\"Active on Game Start\",\"type\":\"select\",\"defaultValue\":true,\"validators\":[null],\"props\":{\"options\":[{\"value\":true,\"name\":\"Yes\"},{\"value\":false,\"name\":\"No\"}],\"allowEmpty\":false}},\"categories\":[\"featured\"]}]}",
+    "defaultState": "{\"open\":false,\"active\":false}",
+    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
+    "wireConfig": "{\"out\":{\"connections\":[{\"id\":\"opened\",\"name\":\"Opened\"}]},\"in\":{\"connections\":[{\"id\":\"activate\",\"name\":\"Activate\"},{\"id\":\"deactivate\",\"name\":\"Deactivate\"},{\"id\":\"close\",\"name\":\"Close\"}]}}",
+    "minimumRoleLevel": 90,
+    "initialMemoryCost": 0,
+    "subsequentMemoryCost": 0
+}

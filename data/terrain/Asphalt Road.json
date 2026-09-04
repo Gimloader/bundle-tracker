@@ -1,0 +1,11 @@
+{
+    "id": "Asphalt Road",
+    "name": "Asphalt Road",
+    "maskTilesUrl": "tilesets/asphalt_road/29_asphalt_road_mask.png",
+    "borderTilesUrl": "tilesets/asphalt_road/29_asphalt_road_border.png",
+    "fillUrl": "tilesets/asphalt_road/29_asphalt_road_fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/asphalt_road/29_asphalt_road_preview.png"
+}

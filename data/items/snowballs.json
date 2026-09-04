@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "snowballs",
+    "name": "Snowball",
+    "editorName": "Snowball",
+    "description": "Tightly compacted for maximum aerodynamic efficiency",
+    "previewImage": "inventory/resources/snowball.png"
+}

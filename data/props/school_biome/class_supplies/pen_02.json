@@ -1,0 +1,53 @@
+{
+    "id": "school_biome/class_supplies/pen_02",
+    "name": "Pen",
+    "image": {
+        "path": "props/school_biome/class_supplies/pen_02.png",
+        "width": 250,
+        "height": 102
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 13.33,
+            "radiusX": 226.67,
+            "radiusY": 106.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -6.67,
+                    "radius": 40,
+                    "halfHeight": 93.33,
+                    "angle": 106
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -6.67,
+                    "radius": 40,
+                    "halfHeight": 93.33,
+                    "angle": 106
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

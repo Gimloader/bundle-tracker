@@ -1,0 +1,80 @@
+{
+    "id": "space/beds/purple",
+    "name": "Space Bed (Purple)",
+    "image": {
+        "path": "props/space/beds/purple.png",
+        "width": 1180,
+        "height": 845
+    },
+    "scale": 0.17,
+    "originX": 0.5,
+    "originY": 0.68,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 310.92,
+            "radiusX": 1458.82,
+            "radiusY": 529.41
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 187.39,
+                    "width": 1176.47,
+                    "height": 464.71,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 146.22,
+                    "width": 1176.47,
+                    "height": 541.18,
+                    "angle": 0
+                },
+                {
+                    "x": 94.12,
+                    "y": -171.43,
+                    "width": 411.76,
+                    "height": 176.47,
+                    "angle": 0
+                },
+                {
+                    "x": -500,
+                    "y": -200.84,
+                    "width": 176.47,
+                    "height": 441.18,
+                    "angle": 0
+                },
+                {
+                    "x": 329.41,
+                    "y": -47.9,
+                    "width": 264.71,
+                    "height": 323.53,
+                    "angle": 30
+                },
+                {
+                    "x": -323.53,
+                    "y": -200.84,
+                    "width": 382.35,
+                    "height": 294.12,
+                    "angle": 30
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

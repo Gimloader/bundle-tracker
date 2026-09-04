@@ -1,0 +1,81 @@
+{
+    "id": "school_biome/flag_poles/flag_pole_05",
+    "name": "Flag Pole (Orange)",
+    "image": {
+        "path": "props/school_biome/flag_poles/flag_pole_05.png",
+        "width": 397,
+        "height": 1033
+    },
+    "scale": 0.2,
+    "originX": 0.21,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": -115.13,
+            "y": 438.2,
+            "radiusX": 220,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -115.13,
+                    "y": 423.2,
+                    "radius": 85,
+                    "halfHeight": 15,
+                    "angle": 0
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 44.87,
+                    "y": -326.8,
+                    "width": 310,
+                    "height": 250,
+                    "angle": 0
+                },
+                {
+                    "x": -115.13,
+                    "y": -11.8,
+                    "width": 50,
+                    "height": 875,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": -115.13,
+                    "y": -481.8,
+                    "radius": 35
+                }
+            ],
+            "capsule": [
+                {
+                    "x": -115.13,
+                    "y": 423.2,
+                    "radius": 85,
+                    "halfHeight": 15,
+                    "angle": 0
+                },
+                {
+                    "x": -150.13,
+                    "y": -31.8,
+                    "radius": 15,
+                    "halfHeight": 365,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

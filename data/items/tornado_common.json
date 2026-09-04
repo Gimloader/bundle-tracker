@@ -1,0 +1,21 @@
+{
+    "type": "weapon",
+    "id": "tornado_common",
+    "name": "Twister",
+    "editorName": "Twister (Common)",
+    "description": "Blow everybody away.",
+    "previewImage": "inventory/weapons/tornado.png",
+    "rarity": "common",
+    "weapon": {
+        "type": "bullet",
+        "appearance": "tornado",
+        "shared": {
+            "cooldownBetweenShots": 0,
+            "allowAutoFire": false,
+            "startingProjectileDistanceFromCharacter": 0.8
+        },
+        "bullet": {
+            "ammoItemId": "heavy-shards"
+        }
+    }
+}

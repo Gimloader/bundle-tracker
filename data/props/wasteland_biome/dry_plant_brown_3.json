@@ -1,0 +1,53 @@
+{
+    "id": "wasteland_biome/dry_plant_brown_3",
+    "name": "Dry Plant (Brown)",
+    "image": {
+        "path": "props/wasteland_biome/dry_plant_brown_3.png",
+        "width": 483,
+        "height": 346
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 138.4,
+            "radiusX": 350,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 63.4,
+                    "radius": 100,
+                    "halfHeight": 100,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 3.4,
+                    "radius": 170,
+                    "halfHeight": 75,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

@@ -1,0 +1,83 @@
+{
+    "id": "wasteland_biome/mailbox_rusty_letter",
+    "name": "Mailbox (Rusty Full)",
+    "image": {
+        "path": "props/wasteland_biome/mailbox_rusty_letter.png",
+        "width": 551,
+        "height": 688
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 40,
+            "y": 309.6,
+            "radiusX": 186.67,
+            "radiusY": 120
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 40,
+                    "y": 109.6,
+                    "width": 120,
+                    "height": 466.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -166.67,
+                    "y": 42.93,
+                    "radius": 100,
+                    "halfHeight": 33.33,
+                    "angle": 10
+                },
+                {
+                    "x": 26.67,
+                    "y": -83.73,
+                    "radius": 100,
+                    "halfHeight": 166.67,
+                    "angle": 75
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 40,
+                    "y": 109.6,
+                    "width": 120,
+                    "height": 466.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -166.67,
+                    "y": 42.93,
+                    "radius": 100,
+                    "halfHeight": 33.33,
+                    "angle": 10
+                },
+                {
+                    "x": 26.67,
+                    "y": -143.73,
+                    "radius": 166.67,
+                    "halfHeight": 100,
+                    "angle": 75
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

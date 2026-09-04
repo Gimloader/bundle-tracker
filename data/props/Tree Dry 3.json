@@ -1,0 +1,81 @@
+{
+    "id": "Tree Dry 3",
+    "name": "Tree (Dry)",
+    "image": {
+        "path": "props/trees/tree_dry_3.png",
+        "width": 409,
+        "height": 480
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 232,
+            "radiusX": 236,
+            "radiusY": 88
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -6,
+                    "y": 140,
+                    "width": 54,
+                    "height": 190,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -6,
+                    "y": 140,
+                    "width": 54,
+                    "height": 190,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -16,
+                    "y": -140,
+                    "radius": 90,
+                    "halfHeight": 30,
+                    "angle": 90
+                },
+                {
+                    "x": -130,
+                    "y": -20,
+                    "radius": 70,
+                    "halfHeight": 20,
+                    "angle": 0
+                },
+                {
+                    "x": 40,
+                    "y": 0,
+                    "radius": 80,
+                    "halfHeight": 80,
+                    "angle": 90
+                },
+                {
+                    "x": 80,
+                    "y": -84,
+                    "radius": 60,
+                    "halfHeight": 40,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

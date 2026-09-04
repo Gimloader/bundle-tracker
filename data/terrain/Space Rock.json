@@ -1,0 +1,11 @@
+{
+    "id": "Space Rock",
+    "name": "Space Rock",
+    "maskTilesUrl": "tilesets/space_rock/mask.png",
+    "borderTilesUrl": "tilesets/space_rock/border.png",
+    "fillUrl": "tilesets/space_rock/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/space_rock/preview.png"
+}

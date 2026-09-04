@@ -1,0 +1,81 @@
+{
+    "id": "wasteland_biome/warning_sign_03",
+    "name": "Warning Sign",
+    "image": {
+        "path": "props/wasteland_biome/warning_sign_03.png",
+        "width": 466,
+        "height": 512
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 224.8,
+            "radiusX": 700,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 29.8,
+                    "width": 450,
+                    "height": 275,
+                    "angle": 0
+                },
+                {
+                    "x": 160,
+                    "y": 189.8,
+                    "width": 75,
+                    "height": 110,
+                    "angle": 0
+                },
+                {
+                    "x": -160,
+                    "y": 149.8,
+                    "width": 75,
+                    "height": 190,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -15.2,
+                    "width": 450,
+                    "height": 375,
+                    "angle": 0
+                },
+                {
+                    "x": 160,
+                    "y": -10.2,
+                    "width": 75,
+                    "height": 485,
+                    "angle": 0
+                },
+                {
+                    "x": -160,
+                    "y": -0.2,
+                    "width": 75,
+                    "height": 490,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

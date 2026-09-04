@@ -1,0 +1,11 @@
+{
+    "id": "Water Purple",
+    "name": "Water (Purple)",
+    "maskTilesUrl": "tilesets/water/mask.png",
+    "borderTilesUrl": "tilesets/water/03_water_purple_border.png",
+    "fillUrl": "tilesets/water/03_water_purple_fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/water/03_water_purple_preview.png"
+}

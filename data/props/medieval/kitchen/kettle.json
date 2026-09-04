@@ -1,0 +1,59 @@
+{
+    "id": "medieval/kitchen/kettle",
+    "name": "Kettle",
+    "image": {
+        "path": "props/medieval/kitchen/kettle.png",
+        "width": 348,
+        "height": 382
+    },
+    "scale": 0.11,
+    "originX": 0.5,
+    "originY": 0.79,
+    "shadows": [
+        {
+            "x": -36.36,
+            "y": 119.87,
+            "radiusX": 363.64,
+            "radiusY": 218.18
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -36.36,
+                    "y": 128.96,
+                    "radius": 54.55,
+                    "halfHeight": 63.64,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -36.36,
+                    "y": 1.69,
+                    "radius": 127.27,
+                    "halfHeight": 63.64,
+                    "angle": 0
+                },
+                {
+                    "x": 118.18,
+                    "y": -34.67,
+                    "radius": 63.64,
+                    "halfHeight": 72.73,
+                    "angle": 0
+                }
+            ]
+        }
+    }
+}

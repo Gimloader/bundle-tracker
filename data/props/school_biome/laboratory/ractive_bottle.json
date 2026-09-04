@@ -1,0 +1,60 @@
+{
+    "id": "school_biome/laboratory/ractive_bottle",
+    "name": "Chemical Bottle",
+    "image": {
+        "path": "props/school_biome/laboratory/ractive_bottle.png",
+        "width": 232,
+        "height": 400
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.88,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 132,
+            "radiusX": 333.33,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 85.33,
+                    "radius": 106.67,
+                    "halfHeight": 6.67,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 45.33,
+                    "radius": 113.33,
+                    "halfHeight": 40,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -114.67,
+                    "radius": 66.67,
+                    "halfHeight": 13.33,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

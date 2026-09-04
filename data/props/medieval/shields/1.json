@@ -1,0 +1,100 @@
+{
+    "id": "medieval/shields/1",
+    "name": "Shield",
+    "image": {
+        "path": "props/medieval/shields/1.png",
+        "width": 481,
+        "height": 611
+    },
+    "scale": 0.12,
+    "originX": 0.5,
+    "originY": 0.88,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 232.18,
+            "radiusX": 400,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 198.85,
+                    "radius": 83.33
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -92.82,
+                    "width": 491.67,
+                    "height": 233.33,
+                    "angle": 0
+                },
+                {
+                    "x": -8.33,
+                    "y": -292.82,
+                    "width": 33.33,
+                    "height": 41.67,
+                    "angle": -1
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 33.33,
+                    "y": 198.85,
+                    "radius": 75,
+                    "halfHeight": 50,
+                    "angle": 45
+                },
+                {
+                    "x": -33.33,
+                    "y": 198.85,
+                    "radius": 75,
+                    "halfHeight": 50,
+                    "angle": 315
+                },
+                {
+                    "x": 133.33,
+                    "y": 107.18,
+                    "radius": 58.33,
+                    "halfHeight": 75,
+                    "angle": 209
+                },
+                {
+                    "x": -133.33,
+                    "y": 107.18,
+                    "radius": 58.33,
+                    "halfHeight": 75,
+                    "angle": 331
+                },
+                {
+                    "x": -108.33,
+                    "y": -234.49,
+                    "radius": 66.67,
+                    "halfHeight": 66.67,
+                    "angle": 77
+                },
+                {
+                    "x": 100,
+                    "y": -234.49,
+                    "radius": 66.67,
+                    "halfHeight": 91.67,
+                    "angle": 99
+                }
+            ]
+        }
+    }
+}

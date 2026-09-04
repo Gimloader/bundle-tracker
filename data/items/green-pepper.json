@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "green-pepper",
+    "name": "Green Pepper",
+    "editorName": "Green Pepper",
+    "description": "Still pretty spicy",
+    "previewImage": "inventory/resources/green_pepper.png"
+}

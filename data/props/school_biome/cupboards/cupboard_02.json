@@ -1,0 +1,59 @@
+{
+    "id": "school_biome/cupboards/cupboard_02",
+    "name": "Art Shelf",
+    "image": {
+        "path": "props/school_biome/cupboards/cupboard_02.png",
+        "width": 1000,
+        "height": 595
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 217.5,
+            "radiusX": 1100,
+            "radiusY": 400
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 82.5,
+                    "width": 1000,
+                    "height": 420,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 27.5,
+                    "width": 1000,
+                    "height": 540,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": 275,
+                    "y": -202.5,
+                    "radius": 100
+                }
+            ],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

@@ -1,0 +1,60 @@
+{
+    "id": "luck/flowers/flowers_8",
+    "name": "Flowers",
+    "image": {
+        "path": "props/luck/flowers/flowers_8.png",
+        "width": 522,
+        "height": 327
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.76,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 71.69,
+            "radiusX": 466.67,
+            "radiusY": 266.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 65.02,
+                    "radius": 100,
+                    "halfHeight": 166.67,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 65.02,
+                    "radius": 100,
+                    "halfHeight": 166.67,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -14.98,
+                    "radius": 146.67,
+                    "halfHeight": 53.33,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "minimumRoleLevel": 90
+}

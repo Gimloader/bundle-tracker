@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "energy-bar",
+    "name": "Energy Bar",
+    "editorName": "Energy Bar",
+    "description": "Enough energy to get you through the day.",
+    "previewImage": "inventory/resources/energy_bar.png"
+}

@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "bait",
+    "name": "Bait",
+    "editorName": "Bait",
+    "description": "Catch on!",
+    "previewImage": "inventory/resources/bait.png"
+}

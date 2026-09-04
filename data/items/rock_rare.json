@@ -1,0 +1,21 @@
+{
+    "type": "weapon",
+    "id": "rock_rare",
+    "name": "Stoneburster",
+    "editorName": "Stoneburster (Rare)",
+    "description": "Rock and roll!",
+    "previewImage": "inventory/weapons/rock.png",
+    "rarity": "rare",
+    "weapon": {
+        "type": "bullet",
+        "appearance": "rock",
+        "shared": {
+            "cooldownBetweenShots": 210,
+            "allowAutoFire": true,
+            "startingProjectileDistanceFromCharacter": 0.8
+        },
+        "bullet": {
+            "ammoItemId": "light-shards"
+        }
+    }
+}

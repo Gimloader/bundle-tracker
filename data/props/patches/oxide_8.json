@@ -1,0 +1,30 @@
+{
+    "id": "patches/oxide_8",
+    "name": "Dirt",
+    "image": {
+        "path": "props/patches/oxide_8.png",
+        "width": 815,
+        "height": 673
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "defaultLayer": "DevicesUnderCharacters"
+}

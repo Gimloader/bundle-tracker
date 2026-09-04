@@ -1,0 +1,93 @@
+{
+    "id": "Plant Pot 3",
+    "name": "Potted Plant",
+    "image": {
+        "path": "props/plants/plant_pot_3.png",
+        "width": 413,
+        "height": 447
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": -6,
+            "y": 185.5,
+            "radiusX": 224,
+            "radiusY": 132
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": -6,
+                    "y": 145.5,
+                    "radius": 84
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 56,
+                    "y": -132.5,
+                    "width": 78,
+                    "height": 170,
+                    "angle": 34
+                },
+                {
+                    "x": -72,
+                    "y": -158.5,
+                    "width": 100,
+                    "height": 170,
+                    "angle": -45
+                },
+                {
+                    "x": -104,
+                    "y": -56.5,
+                    "width": 90,
+                    "height": 200,
+                    "angle": -65
+                },
+                {
+                    "x": -104,
+                    "y": 37.5,
+                    "width": 80,
+                    "height": 200,
+                    "angle": 45
+                },
+                {
+                    "x": 100,
+                    "y": -46.5,
+                    "width": 70,
+                    "height": 200,
+                    "angle": 85
+                },
+                {
+                    "x": 100,
+                    "y": 37.5,
+                    "width": 210,
+                    "height": 80,
+                    "angle": 15
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -6,
+                    "y": 113.5,
+                    "radius": 80,
+                    "halfHeight": 40,
+                    "angle": 0
+                }
+            ]
+        }
+    }
+}

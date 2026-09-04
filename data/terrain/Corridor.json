@@ -1,0 +1,12 @@
+{
+    "id": "Corridor",
+    "name": "Hallway",
+    "maskTilesUrl": "tilesets/corridor/mask.png",
+    "borderTilesUrl": "tilesets/corridor/border.png",
+    "fillUrl": "tilesets/corridor/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "seasonTicketRequired": true,
+    "previewUrl": "tilesets/corridor/preview.png"
+}

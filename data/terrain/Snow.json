@@ -1,0 +1,11 @@
+{
+    "id": "Snow",
+    "name": "Snow",
+    "maskTilesUrl": "tilesets/snow/30_snow_mask.png",
+    "borderTilesUrl": "tilesets/snow/30_snow_border.png",
+    "fillUrl": "tilesets/snow/30_snow_fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/snow/30_snow_preview.png"
+}

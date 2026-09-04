@@ -1,0 +1,8 @@
+{
+    "type": "knockout_manager_other_character_team_number",
+    "message0": "Knocked Player's Team Number",
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": "Number"
+}

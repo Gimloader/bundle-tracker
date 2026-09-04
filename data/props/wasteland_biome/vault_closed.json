@@ -1,0 +1,52 @@
+{
+    "id": "wasteland_biome/vault_closed",
+    "name": "Vault (Closed)",
+    "image": {
+        "path": "props/wasteland_biome/vault_closed.png",
+        "width": 1153,
+        "height": 1023
+    },
+    "scale": 0.3,
+    "originX": 0.5,
+    "originY": 0.73,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 68.62,
+                    "radius": 400,
+                    "halfHeight": 180,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": -341.38,
+                    "radius": 176.67
+                }
+            ],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 55.29,
+                    "radius": 453.33,
+                    "halfHeight": 96.67,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

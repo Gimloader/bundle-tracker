@@ -1,0 +1,70 @@
+{
+    "id": "wasteland_biome/oil_barrel_vertical_03",
+    "name": "Oil Barrel (Vertical)",
+    "image": {
+        "path": "props/wasteland_biome/oil_barrel_vertical_03.png",
+        "width": 425,
+        "height": 670
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.63,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 162.1,
+            "radiusX": 450,
+            "radiusY": 400
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 32.1,
+                    "width": 400,
+                    "height": 250,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 132.1,
+                    "radius": 200
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 32.1,
+                    "width": 400,
+                    "height": 250,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 137.1,
+                    "radius": 200
+                },
+                {
+                    "x": 0,
+                    "y": -132.9,
+                    "radius": 200
+                }
+            ],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

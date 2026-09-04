@@ -1,0 +1,66 @@
+{
+    "id": "Toolbox",
+    "name": "Toolbox",
+    "image": {
+        "path": "props/workshop/toolbox.png",
+        "width": 254,
+        "height": 321
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 120.5,
+            "radiusX": 320,
+            "radiusY": 168
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 32.5,
+                    "width": 250,
+                    "height": 260,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -13.5,
+                    "width": 250,
+                    "height": 296,
+                    "angle": 0
+                },
+                {
+                    "x": -98,
+                    "y": 146.5,
+                    "width": 48,
+                    "height": 30,
+                    "angle": 0
+                },
+                {
+                    "x": 98,
+                    "y": 146.5,
+                    "width": 48,
+                    "height": 30,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

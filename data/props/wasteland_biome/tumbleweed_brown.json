@@ -1,0 +1,53 @@
+{
+    "id": "wasteland_biome/tumbleweed_brown",
+    "name": "Tumbleweed (Brown)",
+    "image": {
+        "path": "props/wasteland_biome/tumbleweed_brown.png",
+        "width": 460,
+        "height": 396
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 150.4,
+            "radiusX": 456,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 58.4,
+                    "radius": 140,
+                    "halfHeight": 76,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 6.4,
+                    "radius": 200,
+                    "halfHeight": 36,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

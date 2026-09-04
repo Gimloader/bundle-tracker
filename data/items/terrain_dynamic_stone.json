@@ -1,0 +1,13 @@
+{
+    "type": "item",
+    "id": "terrain_dynamic_stone",
+    "name": "Dynamic Stone",
+    "editorName": "Dynamic Stone",
+    "description": "Build structures made of stone",
+    "previewImage": "inventory/items/terrain_dynamic_stone.png",
+    "rarity": "rare",
+    "useCommand": "Drop",
+    "consumeType": "buildTerrain",
+    "terrainId": "Dynamic Stone",
+    "maxStackSize": 50
+}

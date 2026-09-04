@@ -1,0 +1,17 @@
+{
+    "type": "message_incorrect_answer",
+    "message0": "Set Message Shown When Player Answers Incorrectly %1 ",
+    "args0": [
+        {
+            "type": "input_value",
+            "name": "set_message_shown_when_player_answers_incorrectly",
+            "check": "String",
+            "align": "RIGHT"
+        }
+    ],
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "previousStatement": null,
+    "nextStatement": null
+}

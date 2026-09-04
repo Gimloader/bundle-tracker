@@ -1,0 +1,52 @@
+{
+    "id": "Can 8",
+    "name": "Metal Can",
+    "image": {
+        "path": "props/cans/can_8.png",
+        "width": 72,
+        "height": 52
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -4,
+                    "y": -4,
+                    "radius": 20,
+                    "halfHeight": 8,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -4,
+                    "y": -4,
+                    "radius": 20,
+                    "halfHeight": 8,
+                    "angle": 90
+                },
+                {
+                    "x": 16,
+                    "y": 12,
+                    "radius": 14,
+                    "halfHeight": 6,
+                    "angle": 115
+                }
+            ]
+        }
+    }
+}

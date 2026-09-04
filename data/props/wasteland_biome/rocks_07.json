@@ -1,0 +1,88 @@
+{
+    "id": "wasteland_biome/rocks_07",
+    "name": "Rocks",
+    "image": {
+        "path": "props/wasteland_biome/rocks_07.png",
+        "width": 1206,
+        "height": 1356
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 557.4,
+            "radiusX": 1300,
+            "radiusY": 400
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 492.4,
+                    "radius": 150,
+                    "halfHeight": 450,
+                    "angle": 90
+                },
+                {
+                    "x": -75,
+                    "y": 67.4,
+                    "radius": 275,
+                    "halfHeight": 175,
+                    "angle": 0
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 492.4,
+                    "radius": 150,
+                    "halfHeight": 450,
+                    "angle": 90
+                },
+                {
+                    "x": -75,
+                    "y": 67.4,
+                    "radius": 275,
+                    "halfHeight": 175,
+                    "angle": 0
+                },
+                {
+                    "x": -50,
+                    "y": -307.6,
+                    "radius": 225,
+                    "halfHeight": 50,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -507.6,
+                    "radius": 125,
+                    "halfHeight": 50,
+                    "angle": 30
+                },
+                {
+                    "x": -75,
+                    "y": 292.4,
+                    "radius": 275,
+                    "halfHeight": 50,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

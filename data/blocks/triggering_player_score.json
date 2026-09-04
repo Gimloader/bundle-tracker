@@ -1,0 +1,8 @@
+{
+    "type": "triggering_player_score",
+    "message0": "Triggering Player's Score",
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": "Number"
+}

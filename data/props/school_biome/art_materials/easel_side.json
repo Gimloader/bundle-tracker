@@ -1,0 +1,97 @@
+{
+    "id": "school_biome/art_materials/easel_side",
+    "name": "Easel (Side)",
+    "image": {
+        "path": "props/school_biome/art_materials/easel_side.png",
+        "width": 396,
+        "height": 841
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.96,
+    "shadows": [
+        {
+            "x": 6.67,
+            "y": 386.86,
+            "radiusX": 400,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -106.67,
+                    "y": 153.53,
+                    "width": 166.67,
+                    "height": 300,
+                    "angle": 8
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -53.33,
+                    "y": 226.86,
+                    "radius": 40,
+                    "halfHeight": 153.33,
+                    "angle": 7
+                },
+                {
+                    "x": 60,
+                    "y": 220.19,
+                    "radius": 33.33,
+                    "halfHeight": 166.67,
+                    "angle": 350
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -80,
+                    "y": -26.47,
+                    "width": 166.67,
+                    "height": 666.67,
+                    "angle": 8
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -20,
+                    "y": -6.47,
+                    "radius": 40,
+                    "halfHeight": 386.67,
+                    "angle": 7
+                },
+                {
+                    "x": 60,
+                    "y": 220.19,
+                    "radius": 40,
+                    "halfHeight": 160,
+                    "angle": 350
+                },
+                {
+                    "x": 140,
+                    "y": -106.47,
+                    "radius": 53.33,
+                    "halfHeight": 33.33,
+                    "angle": 8
+                },
+                {
+                    "x": 26.67,
+                    "y": -119.81,
+                    "radius": 66.67,
+                    "halfHeight": 66.67,
+                    "angle": 10
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

@@ -1,0 +1,88 @@
+{
+    "id": "Rock 2",
+    "name": "Rocks",
+    "image": {
+        "path": "props/rocks/rock_2.png",
+        "width": 688,
+        "height": 362
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.75,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 108.5,
+            "radiusX": 760,
+            "radiusY": 232
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 92.5,
+                    "radius": 80,
+                    "halfHeight": 220,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -180,
+                    "y": 0.5,
+                    "width": 200,
+                    "height": 90,
+                    "angle": -40
+                },
+                {
+                    "x": 190,
+                    "y": -3.5,
+                    "width": 200,
+                    "height": 60,
+                    "angle": 35
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 74.5,
+                    "radius": 114,
+                    "halfHeight": 204,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -49.5,
+                    "radius": 130,
+                    "halfHeight": 20,
+                    "angle": 90
+                },
+                {
+                    "x": 304,
+                    "y": 120.5,
+                    "radius": 20,
+                    "halfHeight": 20,
+                    "angle": 90
+                },
+                {
+                    "x": -310,
+                    "y": 122.5,
+                    "radius": 20,
+                    "halfHeight": 20,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

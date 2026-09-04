@@ -1,0 +1,37 @@
+{
+    "id": "medieval/paper/scroll_2",
+    "name": "Paper Scroll",
+    "image": {
+        "path": "props/medieval/paper/scroll_2.png",
+        "width": 220,
+        "height": 467
+    },
+    "scale": 0.12,
+    "originX": 0.5,
+    "originY": 0,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -0.17,
+                    "width": 175,
+                    "height": 458.33,
+                    "angle": 11
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

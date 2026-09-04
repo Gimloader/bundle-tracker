@@ -1,0 +1,83 @@
+{
+    "id": "wasteland_biome/pipe_02",
+    "name": "Pipe",
+    "image": {
+        "path": "props/wasteland_biome/pipe_02.png",
+        "width": 293,
+        "height": 496
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": -64,
+            "y": 198.4,
+            "radiusX": 200,
+            "radiusY": 120
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -68,
+                    "y": 126.4,
+                    "width": 128,
+                    "height": 240,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -21.6,
+                    "radius": 40,
+                    "halfHeight": 100,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -68,
+                    "y": 126.4,
+                    "width": 128,
+                    "height": 240,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -21.6,
+                    "radius": 40,
+                    "halfHeight": 100,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -61.6,
+                    "radius": 100,
+                    "halfHeight": 28,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -185.6,
+                    "radius": 60,
+                    "halfHeight": 0,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

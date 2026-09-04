@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "orange",
+    "name": "Orange",
+    "editorName": "Orange",
+    "description": "Orange you glad you found this?",
+    "previewImage": "inventory/resources/orange.png"
+}

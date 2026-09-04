@@ -1,0 +1,11 @@
+{
+    "id": "Water Dark",
+    "name": "Water (Dark Blue)",
+    "maskTilesUrl": "tilesets/water/mask.png",
+    "borderTilesUrl": "tilesets/water/02_water_dark_border.png",
+    "fillUrl": "tilesets/water/02_water_dark_fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/water/02_water_dark_preview.png"
+}

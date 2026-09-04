@@ -1,0 +1,12 @@
+{
+    "id": "scriptRunner",
+    "name": "Script Runner",
+    "description": "Run script",
+    "optionSchema": "{\"options\":[{\"key\":\"scriptId\",\"option\":{\"label\":\"Script\",\"description\":\"Script to run\",\"type\":\"select\",\"validators\":[null],\"defaultValue\":\"Test.GrantSomeFishThreeTimes\",\"props\":{\"options\":[{\"name\":\"Test.GrantSomeFishThreeTimes\",\"value\":\"Test.GrantSomeFishThreeTimes\"},{\"name\":\"Internal.Modes.Lucky.RandomGim\",\"value\":\"Internal.Modes.Lucky.RandomGim\"},{\"name\":\"Internal.Modes.Lucky.RandomGadget\",\"value\":\"Internal.Modes.Lucky.RandomGadget\"},{\"name\":\"Internal.Modes.Lucky.OnKnockedOut\",\"value\":\"Internal.Modes.Lucky.OnKnockedOut\"},{\"name\":\"Internal.Modes.Lucky.OnKnockout\",\"value\":\"Internal.Modes.Lucky.OnKnockout\"}],\"allowEmpty\":false}}},{\"key\":\"runScriptChannel\",\"option\":{\"label\":\"Run script when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Run script when the device receives a signal from the selected channel\"}},{\"key\":\"scriptArg1\",\"option\":{\"label\":\"Script argument 1\",\"description\":\"Script argument 1\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"}}},{\"key\":\"scriptArg2\",\"option\":{\"label\":\"Script argument 2\",\"description\":\"Script argument 2\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"}}},{\"key\":\"scriptArg3\",\"option\":{\"label\":\"Script argument 3\",\"description\":\"Script argument 3\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"}}}]}",
+    "defaultState": "{}",
+    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
+    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"run\",\"name\":\"Run script\"}]}}",
+    "minimumRoleLevel": 90,
+    "initialMemoryCost": 100,
+    "subsequentMemoryCost": 100
+}

@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "star-fish",
+    "name": "Starfish",
+    "editorName": "Starfish",
+    "description": "I'm the star of my own show.",
+    "previewImage": "inventory/resources/star_fish.png"
+}

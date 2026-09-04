@@ -1,0 +1,21 @@
+{
+    "type": "weapon",
+    "id": "sand_uncommon",
+    "name": "Timekeeper",
+    "editorName": "Timekeeper (Uncommon)",
+    "description": "Time is on your side.",
+    "previewImage": "inventory/weapons/sand.png",
+    "rarity": "uncommon",
+    "weapon": {
+        "type": "bullet",
+        "appearance": "sand",
+        "shared": {
+            "cooldownBetweenShots": 220,
+            "allowAutoFire": false,
+            "startingProjectileDistanceFromCharacter": 0.8
+        },
+        "bullet": {
+            "ammoItemId": "medium-shards"
+        }
+    }
+}

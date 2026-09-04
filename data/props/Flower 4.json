@@ -1,0 +1,29 @@
+{
+    "id": "Flower 4",
+    "name": "Flower",
+    "image": {
+        "path": "props/plants/flower_4.png",
+        "width": 61,
+        "height": 63
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

@@ -1,0 +1,102 @@
+{
+    "id": "luck/clover_trees/clover_tree_4",
+    "name": "Clover Tree",
+    "image": {
+        "path": "props/luck/clover_trees/clover_tree_4.png",
+        "width": 497,
+        "height": 652
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 8,
+            "y": 292.8,
+            "radiusX": 200,
+            "radiusY": 120
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 8,
+                    "y": 204.8,
+                    "radius": 60,
+                    "halfHeight": 60,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 140.8,
+                    "radius": 68,
+                    "halfHeight": 72,
+                    "angle": 87
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 12,
+                    "y": 204.8,
+                    "radius": 40,
+                    "halfHeight": 80,
+                    "angle": 0
+                },
+                {
+                    "x": -52,
+                    "y": 128.8,
+                    "radius": 44,
+                    "halfHeight": 56,
+                    "angle": 52
+                },
+                {
+                    "x": -104,
+                    "y": -175.2,
+                    "radius": 140,
+                    "halfHeight": 8,
+                    "angle": 45
+                },
+                {
+                    "x": 112,
+                    "y": -15.2,
+                    "radius": 132,
+                    "halfHeight": 4,
+                    "angle": 20
+                },
+                {
+                    "x": 72,
+                    "y": 136.8,
+                    "radius": 36,
+                    "halfHeight": 44,
+                    "angle": 122
+                },
+                {
+                    "x": 4,
+                    "y": 288.8,
+                    "radius": 40,
+                    "halfHeight": 28,
+                    "angle": 90
+                },
+                {
+                    "x": -16,
+                    "y": -19.2,
+                    "radius": 20,
+                    "halfHeight": 80,
+                    "angle": 340
+                }
+            ]
+        }
+    },
+    "minimumRoleLevel": 90
+}

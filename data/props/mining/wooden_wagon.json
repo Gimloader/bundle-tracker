@@ -1,0 +1,90 @@
+{
+    "id": "mining/wooden_wagon",
+    "name": "Wooden Wagon",
+    "image": {
+        "path": "props/mining/wooden_wagon.png",
+        "width": 1809,
+        "height": 1045
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 66.67,
+            "y": 422.5,
+            "radiusX": 1866.67,
+            "radiusY": 466.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -66.67,
+                    "y": -44.17,
+                    "width": 1633.33,
+                    "height": 300,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 189.17,
+                    "radius": 333.33,
+                    "halfHeight": 400,
+                    "angle": 90
+                },
+                {
+                    "x": 700,
+                    "y": 322.5,
+                    "radius": 80,
+                    "halfHeight": 186.67,
+                    "angle": 130
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -66.67,
+                    "y": -44.17,
+                    "width": 1633.33,
+                    "height": 300,
+                    "angle": 0
+                },
+                {
+                    "x": -300,
+                    "y": -330.83,
+                    "width": 1200,
+                    "height": 366.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 189.17,
+                    "radius": 333.33,
+                    "halfHeight": 400,
+                    "angle": 90
+                },
+                {
+                    "x": 700,
+                    "y": 322.5,
+                    "radius": 80,
+                    "halfHeight": 186.67,
+                    "angle": 130
+                }
+            ]
+        }
+    },
+    "minimumRoleLevel": 90
+}

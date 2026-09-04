@@ -1,0 +1,66 @@
+{
+    "id": "space/containers/light_gray_on",
+    "name": "Light Gray Space Container (On)",
+    "image": {
+        "path": "props/space/containers/light_gray_on.png",
+        "width": 564,
+        "height": 690
+    },
+    "scale": 0.19,
+    "originX": 0.5,
+    "originY": 0.72,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 167.59,
+            "radiusX": 736.84,
+            "radiusY": 526.32
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 72.85,
+                    "width": 342.11,
+                    "height": 526.32,
+                    "angle": 0
+                },
+                {
+                    "x": -210.53,
+                    "y": 20.22,
+                    "width": 131.58,
+                    "height": 421.05,
+                    "angle": 0
+                },
+                {
+                    "x": 210.53,
+                    "y": 20.22,
+                    "width": 131.58,
+                    "height": 421.05,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -6.09,
+                    "width": 552.63,
+                    "height": 684.21,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

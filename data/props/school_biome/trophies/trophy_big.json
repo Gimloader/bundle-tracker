@@ -1,0 +1,90 @@
+{
+    "id": "school_biome/trophies/trophy_big",
+    "name": "Grand Trophy",
+    "image": {
+        "path": "props/school_biome/trophies/trophy_big.png",
+        "width": 357,
+        "height": 824
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 304.6,
+            "radiusX": 460,
+            "radiusY": 300
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 299.6,
+                    "width": 350,
+                    "height": 225,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 129.6,
+                    "width": 275,
+                    "height": 350,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -45.4,
+                    "radius": 150,
+                    "halfHeight": 25,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 299.6,
+                    "width": 350,
+                    "height": 225,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 129.6,
+                    "width": 275,
+                    "height": 350,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -45.4,
+                    "radius": 150,
+                    "halfHeight": 25,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -260.4,
+                    "radius": 115,
+                    "halfHeight": 35,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

@@ -1,0 +1,52 @@
+{
+    "id": "dishes/plate_pile_1",
+    "name": "Ceramic Plate Pile (Infested)",
+    "image": {
+        "path": "props/dishes/plate_pile_1.png",
+        "width": 156,
+        "height": 132
+    },
+    "scale": 0.35,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": -2.86,
+            "y": 34.57,
+            "radiusX": 205.71,
+            "radiusY": 97.14
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 11.71,
+                    "radius": 57.14,
+                    "halfHeight": 14.29,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 11.71,
+                    "radius": 57.14,
+                    "halfHeight": 14.29,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

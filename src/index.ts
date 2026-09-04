@@ -3,8 +3,10 @@ import { join } from "path";
 import fsp from "node:fs/promises";
 import { parseArgs } from "util";
 import beautify from "js-beautify";
-import { pushChanges, rebaseToLatest } from "./push";
+import { pushJsChanges, rebaseToLatest } from "./push";
 import { sendEmbed } from "./webhook";
+import { assets, base } from "./consts";
+import { data, prepareDataDir } from "./util";
 
 const { values: { force, push }} = parseArgs({
     args: process.argv.slice(2),
@@ -14,14 +16,10 @@ const { values: { force, push }} = parseArgs({
     }
 });
 
-const base = "https://www.gimkit.com";
-const assets = base + "/assets/";
-const data = join(__dirname, "../", "data");
-
 // get the index script
 console.log("Fetching html...");
 
-const res = await fetch(base + '/join');
+const res = await fetch(base + "/join");
 const text = await res.text();
 const root = parse(text);
 
@@ -51,9 +49,7 @@ lastIndex = indexUrl;
 // Clear the temp directory
 console.log("Clearing temp directory...");
 
-const tmpPath = join(data, "tmp");
-await fsp.rm(tmpPath, { recursive: true, force: true });
-await fsp.mkdir(tmpPath, { recursive: true });
+const tmpPath = await prepareDataDir("tmp");
 
 // Fetch the index file and get the urls of all the assets
 console.log("Fetching index file...");
@@ -153,13 +149,8 @@ for(let i = 0; i < names.length; i++) {
 // Clear the js directory
 console.log("\nFormatting files...");
 
-const jsPath = join(data, "js");
-const rawjsPath = join(data, "rawjs");
-
-await fsp.rm(jsPath, { recursive: true, force: true });
-await fsp.mkdir(jsPath, { recursive: true });
-await fsp.rm(rawjsPath, { recursive: true, force: true });
-await fsp.mkdir(rawjsPath, { recursive: true });
+const jsPath = await prepareDataDir("js");
+const rawjsPath = await prepareDataDir("rawjs");
 
 // Update the files to have consistent names and formatted code
 for(const url in urlMap) {
@@ -175,7 +166,7 @@ console.log("Cleaning up...");
 await fsp.rm(tmpPath, { recursive: true, force: true });
 lastRunFile.write(JSON.stringify({ lastIndex, urls: urlMap }, null, 4));
 
-if(push) pushChanges();
+if(push) await pushJsChanges();
 
 function getUrls(code: string) {
     if(!code.startsWith("const __vite__mapDeps")) return [];

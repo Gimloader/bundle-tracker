@@ -1,0 +1,66 @@
+{
+    "id": "plants/earthbreaking/earthbreaking_plant_3",
+    "name": "Groundbreaking Plant",
+    "image": {
+        "path": "props/plants/earthbreaking/earthbreaking_plant_3.png",
+        "width": 770,
+        "height": 447
+    },
+    "scale": 0.2,
+    "originX": 0.3,
+    "originY": 0.52,
+    "shadows": [
+        {
+            "x": -154,
+            "y": 93.94,
+            "radiusX": 510,
+            "radiusY": 300
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -154,
+                    "y": 8.94,
+                    "radius": 125,
+                    "halfHeight": 25,
+                    "angle": 90
+                },
+                {
+                    "x": 121,
+                    "y": -91.06,
+                    "radius": 50,
+                    "halfHeight": 200,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 96,
+                    "y": -96.06,
+                    "width": 580,
+                    "height": 145,
+                    "angle": 0
+                },
+                {
+                    "x": -139,
+                    "y": 8.94,
+                    "width": 175,
+                    "height": 200,
+                    "angle": 20
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

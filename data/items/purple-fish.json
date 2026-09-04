@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "purple-fish",
+    "name": "Purple Fish",
+    "editorName": "Purple Fish",
+    "description": "Believe it or not, I'm all natural.",
+    "previewImage": "inventory/resources/purple_fish.png"
+}

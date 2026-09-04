@@ -1,0 +1,17 @@
+{
+    "type": "message_broadcaster",
+    "message0": "Broadcast Message On Channel %1 ",
+    "args0": [
+        {
+            "type": "input_value",
+            "name": "broadcast_message_on_channel",
+            "check": "String",
+            "align": "RIGHT"
+        }
+    ],
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "previousStatement": null,
+    "nextStatement": null
+}

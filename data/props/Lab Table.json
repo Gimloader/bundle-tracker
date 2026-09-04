@@ -1,0 +1,73 @@
+{
+    "id": "Lab Table",
+    "name": "Lab Table",
+    "image": {
+        "path": "props/science_lab/table.png",
+        "width": 739,
+        "height": 474
+    },
+    "scale": 0.32,
+    "originX": 0.5,
+    "originY": 0.88,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 145.75,
+            "radiusX": 806.25,
+            "radiusY": 387.5
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -23,
+                    "width": 734.38,
+                    "height": 359.38,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -73,
+                    "width": 734.38,
+                    "height": 325,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 89.5,
+                    "width": 675,
+                    "height": 78.13,
+                    "angle": 0
+                },
+                {
+                    "x": -309.37,
+                    "y": 158.25,
+                    "width": 78.13,
+                    "height": 162.5,
+                    "angle": 0
+                },
+                {
+                    "x": 306.25,
+                    "y": 161.37,
+                    "width": 75,
+                    "height": 156.25,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

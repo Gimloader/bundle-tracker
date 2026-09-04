@@ -1,0 +1,67 @@
+{
+    "id": "wasteland_biome/warning_sign_02",
+    "name": "Warning Sign",
+    "image": {
+        "path": "props/wasteland_biome/warning_sign_02.png",
+        "width": 323,
+        "height": 732
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 329.4,
+            "radiusX": 150,
+            "radiusY": 100
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 104.4,
+                    "width": 75,
+                    "height": 500,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -20.6,
+                    "width": 325,
+                    "height": 325,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -10.6,
+                    "width": 75,
+                    "height": 700,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -65.6,
+                    "width": 325,
+                    "height": 415,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

@@ -1,0 +1,15 @@
+{
+    "type": "player_position_detector_player_y_position",
+    "message0": "Player's Y Position %1 ",
+    "args0": [
+        {
+            "type": "input_dummy"
+        }
+    ],
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": [
+        "Number"
+    ]
+}

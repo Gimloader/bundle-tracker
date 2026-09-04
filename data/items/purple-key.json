@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "purple-key",
+    "name": "Purple Key",
+    "editorName": "Purple Key",
+    "description": "What you need to get where you want.",
+    "previewImage": "inventory/resources/key_3.png"
+}

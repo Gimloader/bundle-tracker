@@ -1,0 +1,12 @@
+{
+    "id": "sky_clouds_small_painted",
+    "name": "Sky Clouds Small Painted",
+    "maskTilesUrl": "tilesets/sky/mask.png",
+    "borderTilesUrl": "tilesets/sky/border.png",
+    "fillUrl": "tilesets/sky/clouds_small_painted.png",
+    "blockedMapStyles": [
+        "topDown"
+    ],
+    "minimumRoleLevel": 90,
+    "previewUrl": "tilesets/sky/preview.png"
+}

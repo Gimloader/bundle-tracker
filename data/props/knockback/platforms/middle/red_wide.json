@@ -1,0 +1,38 @@
+{
+    "id": "knockback/platforms/middle/red_wide",
+    "name": "Knockback Platform (Middle)",
+    "image": {
+        "path": "props/knockback/platforms/middle/red_wide.png",
+        "width": 1920,
+        "height": 198
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0,
+    "shadows": [],
+    "available": {
+        "topDown": false,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 17,
+                    "width": 1848,
+                    "height": 162,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "minimumRoleLevel": 90
+}

@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "lottery-ticket",
+    "name": "Lottery Ticket",
+    "editorName": "Lottery Ticket",
+    "description": "Is today your lucky day?",
+    "previewImage": "inventory/resources/lottery_ticket.png"
+}

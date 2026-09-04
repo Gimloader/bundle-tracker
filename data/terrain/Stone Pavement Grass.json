@@ -1,0 +1,11 @@
+{
+    "id": "Stone Pavement Grass",
+    "name": "Stone Pavement (Grass)",
+    "maskTilesUrl": "tilesets/stone_pavement/mask.png",
+    "borderTilesUrl": "tilesets/stone_pavement/border.png",
+    "fillUrl": "tilesets/stone_pavement/fill_grass.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/stone_pavement/preview_grass.png"
+}

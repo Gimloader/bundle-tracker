@@ -1,0 +1,9 @@
+{
+    "type": "resource",
+    "id": "pink-crystal",
+    "name": "Pink Crystal",
+    "editorName": "Pink Crystal",
+    "description": "Ethereal pink crystal.",
+    "previewImage": "inventory/resources/pink_crystal.png",
+    "minimumRoleLevel": 90
+}

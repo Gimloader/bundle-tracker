@@ -1,0 +1,59 @@
+{
+    "id": "medieval/blacksmith/heavy_hammer",
+    "name": "Heavy Hammer",
+    "image": {
+        "path": "props/medieval/blacksmith/heavy_hammer.png",
+        "width": 494,
+        "height": 253
+    },
+    "scale": 0.13,
+    "originX": 0.5,
+    "originY": 0,
+    "shadows": [
+        {
+            "x": -7.69,
+            "y": 42.73,
+            "radiusX": 630.77,
+            "radiusY": 230.77
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 123.08,
+                    "y": -3.42,
+                    "width": 176.92,
+                    "height": 253.85,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 123.08,
+                    "y": -3.42,
+                    "width": 176.92,
+                    "height": 253.85,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 11.96,
+                    "width": 492.31,
+                    "height": 100,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

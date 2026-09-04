@@ -1,0 +1,50 @@
+{
+    "id": "Pole 1",
+    "name": "Wooden Pole 1",
+    "image": {
+        "path": "props/signs/pole_1.png",
+        "width": 44,
+        "height": 570
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 277,
+            "radiusX": 92,
+            "radiusY": 44
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 255,
+                    "radius": 40
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 1,
+                    "width": 40,
+                    "height": 570,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

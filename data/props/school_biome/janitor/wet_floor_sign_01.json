@@ -1,0 +1,81 @@
+{
+    "id": "school_biome/janitor/wet_floor_sign_01",
+    "name": "Wet Floor Sign",
+    "image": {
+        "path": "props/school_biome/janitor/wet_floor_sign_01.png",
+        "width": 370,
+        "height": 800
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 86.67,
+            "radiusX": 466.67,
+            "radiusY": 266.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -60,
+                    "width": 166.67,
+                    "height": 366.67,
+                    "angle": 0
+                },
+                {
+                    "x": 100,
+                    "y": -46.67,
+                    "width": 146.67,
+                    "height": 400,
+                    "angle": -5
+                },
+                {
+                    "x": -106.67,
+                    "y": -46.67,
+                    "width": 133.33,
+                    "height": 400,
+                    "angle": 5
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -60,
+                    "width": 166.67,
+                    "height": 366.67,
+                    "angle": 0
+                },
+                {
+                    "x": 93.33,
+                    "y": -120,
+                    "width": 146.67,
+                    "height": 566.67,
+                    "angle": -5
+                },
+                {
+                    "x": -93.33,
+                    "y": -120,
+                    "width": 133.33,
+                    "height": 566.67,
+                    "angle": 5
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

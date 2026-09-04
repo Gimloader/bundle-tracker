@@ -1,0 +1,59 @@
+{
+    "id": "school_biome/trophies/trophy_blastball",
+    "name": "Blastball Trophy",
+    "image": {
+        "path": "props/school_biome/trophies/trophy_blastball.png",
+        "width": 275,
+        "height": 391
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 136.4,
+            "radiusX": 280,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 56.4,
+                    "width": 275,
+                    "height": 275,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 56.4,
+                    "width": 225,
+                    "height": 275,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": -58.6,
+                    "radius": 135
+                }
+            ],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

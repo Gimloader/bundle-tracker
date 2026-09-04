@@ -1,0 +1,36 @@
+{
+    "id": "leaf-pile-dark-large",
+    "name": "Large Leaf Pile",
+    "image": {
+        "path": "props/farm/leaf/pile-dark-large.png",
+        "width": 668,
+        "height": 521
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 67.5,
+            "radiusX": 688,
+            "radiusY": 424
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

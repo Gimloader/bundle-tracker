@@ -1,0 +1,74 @@
+{
+    "id": "medium-snow-pile-2",
+    "name": "Medium Snow Pile",
+    "image": {
+        "path": "props/snow_piles/medium/pile_2.png",
+        "width": 492,
+        "height": 288
+    },
+    "scale": 0.38,
+    "originX": 0.5,
+    "originY": 0.56,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 88.33,
+            "radiusX": 568.42,
+            "radiusY": 178.95
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 56.75,
+                    "radius": 78.95,
+                    "halfHeight": 131.58,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 147.37,
+                    "y": 17.28,
+                    "width": 78.95,
+                    "height": 118.42,
+                    "angle": -35
+                },
+                {
+                    "x": -144.74,
+                    "y": 27.81,
+                    "width": 78.95,
+                    "height": 118.42,
+                    "angle": 31
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -3.77,
+                    "radius": 139.47,
+                    "halfHeight": 18.42,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": 83.07,
+                    "radius": 52.63,
+                    "halfHeight": 184.21,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

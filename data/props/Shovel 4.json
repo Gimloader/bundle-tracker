@@ -1,0 +1,29 @@
+{
+    "id": "Shovel 4",
+    "name": "Shovel",
+    "image": {
+        "path": "props/shovels/shovel_4.png",
+        "width": 172,
+        "height": 77
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.85,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

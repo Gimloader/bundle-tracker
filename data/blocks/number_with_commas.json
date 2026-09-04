@@ -1,0 +1,16 @@
+{
+    "type": "number_with_commas",
+    "message0": "Convert Number To Text (With Commas) %1 ",
+    "args0": [
+        {
+            "type": "input_value",
+            "name": "convert_number_to_text_with_commas",
+            "check": "Number",
+            "align": "RIGHT"
+        }
+    ],
+    "colour": 159.7,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": "String"
+}

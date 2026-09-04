@@ -1,0 +1,11 @@
+{
+    "id": "Stone Pavement Purple Grass",
+    "name": "Stone Pavement (Purple Grass)",
+    "maskTilesUrl": "tilesets/stone_pavement/mask.png",
+    "borderTilesUrl": "tilesets/stone_pavement/border.png",
+    "fillUrl": "tilesets/stone_pavement/fill_purple_grass.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/stone_pavement/preview_purple_grass.png"
+}

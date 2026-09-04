@@ -1,0 +1,8 @@
+{
+    "type": "get_max_prop_health",
+    "message0": "Prop's Max Health",
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": "Number"
+}

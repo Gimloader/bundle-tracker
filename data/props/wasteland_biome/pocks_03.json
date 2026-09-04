@@ -1,0 +1,60 @@
+{
+    "id": "wasteland_biome/pocks_03",
+    "name": "Rocks",
+    "image": {
+        "path": "props/wasteland_biome/pocks_03.png",
+        "width": 686,
+        "height": 462
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.7,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 92.4,
+            "radiusX": 750,
+            "radiusY": 400
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 10,
+                    "y": 57.4,
+                    "radius": 125,
+                    "halfHeight": 205,
+                    "angle": 77
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 10,
+                    "y": 57.4,
+                    "radius": 125,
+                    "halfHeight": 205,
+                    "angle": 77
+                },
+                {
+                    "x": 0,
+                    "y": -32.6,
+                    "radius": 150,
+                    "halfHeight": 140,
+                    "angle": 71
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

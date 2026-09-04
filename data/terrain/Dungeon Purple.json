@@ -1,0 +1,11 @@
+{
+    "id": "Dungeon Purple",
+    "name": "Dungeon (Purple)",
+    "maskTilesUrl": "tilesets/dungeon/mask.png",
+    "borderTilesUrl": "tilesets/dungeon/border_purple.png",
+    "fillUrl": "tilesets/dungeon/fill_purple.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/dungeon/preview_purple.png"
+}

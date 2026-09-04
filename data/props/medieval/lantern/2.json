@@ -1,0 +1,58 @@
+{
+    "id": "medieval/lantern/2",
+    "name": "Medieval Lantern",
+    "image": {
+        "path": "props/medieval/lantern/2.png",
+        "width": 274,
+        "height": 478
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.8,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 168.4,
+            "radiusX": 360,
+            "radiusY": 210
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 113.4,
+                    "width": 220,
+                    "height": 255,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 63.4,
+                    "width": 280,
+                    "height": 360,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": -146.6,
+                    "radius": 100
+                }
+            ],
+            "capsule": []
+        }
+    }
+}

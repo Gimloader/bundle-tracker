@@ -1,0 +1,53 @@
+{
+    "id": "Rake Standing",
+    "name": "Rake (Standing)",
+    "image": {
+        "path": "/props/farm/rake/standing.png",
+        "width": 253,
+        "height": 541
+    },
+    "scale": 0.24,
+    "originX": 0.5,
+    "originY": 0.85,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 197.68,
+                    "radius": 41.67,
+                    "halfHeight": 75,
+                    "angle": 105
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 50,
+                    "y": -23.15,
+                    "width": 41.67,
+                    "height": 500,
+                    "angle": 13
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 197.68,
+                    "radius": 41.67,
+                    "halfHeight": 75,
+                    "angle": 105
+                }
+            ]
+        }
+    }
+}

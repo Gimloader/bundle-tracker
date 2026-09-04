@@ -1,0 +1,19 @@
+{
+    "type": "weapon",
+    "id": "hammer_common",
+    "name": "Hammer",
+    "editorName": "Hammer (Common)",
+    "description": "Hit hard.",
+    "previewImage": "inventory/weapons/hammer.png",
+    "minimumRoleLevel": 90,
+    "rarity": "common",
+    "weapon": {
+        "type": "melee",
+        "appearance": "hammer",
+        "shared": {
+            "cooldownBetweenShots": 550,
+            "allowAutoFire": true,
+            "startingProjectileDistanceFromCharacter": 0.8
+        }
+    }
+}

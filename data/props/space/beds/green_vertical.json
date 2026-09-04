@@ -1,0 +1,52 @@
+{
+    "id": "space/beds/green_vertical",
+    "name": "Vertical Space Bed (Green)",
+    "image": {
+        "path": "props/space/beds/green_vertical.png",
+        "width": 599,
+        "height": 1146
+    },
+    "scale": 0.17,
+    "originX": 0.5,
+    "originY": 0.36,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 251.32,
+            "radiusX": 882.35,
+            "radiusY": 1058.82
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 68.97,
+                    "width": 594.12,
+                    "height": 1000,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -1.62,
+                    "width": 594.12,
+                    "height": 1147.06,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

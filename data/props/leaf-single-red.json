@@ -1,0 +1,29 @@
+{
+    "id": "leaf-single-red",
+    "name": "Leaf",
+    "image": {
+        "path": "props/farm/leaf/single-red.png",
+        "width": 136,
+        "height": 131
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

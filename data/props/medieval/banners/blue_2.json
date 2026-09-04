@@ -1,0 +1,74 @@
+{
+    "id": "medieval/banners/blue_2",
+    "name": "Medieval Banner (Blue)",
+    "image": {
+        "path": "props/medieval/banners/blue_2.png",
+        "width": 558,
+        "height": 1556
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.91,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 712.96,
+            "radiusX": 450,
+            "radiusY": 260
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 667.96,
+                    "width": 250,
+                    "height": 220,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 627.96,
+                    "width": 250,
+                    "height": 300,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -92.04,
+                    "width": 55,
+                    "height": 1210,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -517.04,
+                    "width": 560,
+                    "height": 60,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -5,
+                    "y": -702.04,
+                    "radius": -40,
+                    "halfHeight": 120,
+                    "angle": 0
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "id": "Basketball",
+    "name": "Basketball",
+    "image": {
+        "path": "props/basketball/basketball.png",
+        "width": 245,
+        "height": 245
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 118.5,
+            "radiusX": 304,
+            "radiusY": 72
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 2.5,
+                    "radius": 120
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 2.5,
+                    "radius": 120
+                }
+            ],
+            "capsule": []
+        }
+    }
+}

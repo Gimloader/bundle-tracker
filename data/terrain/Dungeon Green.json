@@ -1,0 +1,11 @@
+{
+    "id": "Dungeon Green",
+    "name": "Dungeon (Green)",
+    "maskTilesUrl": "tilesets/dungeon/mask.png",
+    "borderTilesUrl": "tilesets/dungeon/border_green.png",
+    "fillUrl": "tilesets/dungeon/fill_green.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/dungeon/preview_green.png"
+}

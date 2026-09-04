@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "coffee-bean",
+    "name": "Coffee Bean",
+    "editorName": "Coffee Bean",
+    "description": "Roast me!",
+    "previewImage": "inventory/resources/coffee_bean.png"
+}

@@ -1,0 +1,38 @@
+{
+    "id": "school_biome/art_materials/paint_tube_05",
+    "name": "Paint Tube (Yellow)",
+    "image": {
+        "path": "props/school_biome/art_materials/paint_tube_05.png",
+        "width": 116,
+        "height": 229
+    },
+    "scale": 0.12,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "radius": 50,
+                    "halfHeight": 75,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

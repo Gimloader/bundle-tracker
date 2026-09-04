@@ -1,0 +1,12 @@
+{
+    "id": "damager",
+    "name": "Damager",
+    "description": "Deal a specific amount of a damage to a player",
+    "optionSchema": "{\"options\":[{\"key\":\"amount\",\"option\":{\"label\":\"Damage Amount\",\"description\":\"The amount of damage to deal to the player\",\"type\":\"numberInput\",\"defaultValue\":15,\"validators\":[null],\"props\":{\"min\":1,\"max\":10000,\"step\":1,\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"damageOnChannel\",\"option\":{\"label\":\"Damage player when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Damage the triggering player when the device receives a signal from the selected channel\"}},{\"key\":\"knockoutActivityFeedMessage\",\"option\":{\"label\":\"Knockout Activity Feed Message\",\"description\":\"When the damage applied knocks out a player, this message will be displayed in the activity feed. Use {name} to insert the player's name.\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Text here...\"}}}]}",
+    "defaultState": "{}",
+    "codeGridSchema": "{\"allowChannelGrids\":true,\"triggers\":[{\"type\":\"wire\",\"name\":\"On wire pulse...\"}],\"customBlocks\":[\"damage_custom\"]}",
+    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"damage\",\"name\":\"Damage player\"},{\"id\":\"codeGrid\",\"name\":\"Run wire pulse block\"}]}}",
+    "maxOnMap": 128,
+    "initialMemoryCost": 30,
+    "subsequentMemoryCost": 30
+}

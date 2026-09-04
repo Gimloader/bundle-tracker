@@ -1,0 +1,17 @@
+{
+    "type": "knockout_manager_other_character_message_broadcaster",
+    "message0": "Broadcast Message (As Knocked Out Player) On Channel %1 ",
+    "args0": [
+        {
+            "type": "input_value",
+            "name": "broadcast_message_as_knocked_out_player_on_channel",
+            "check": "String",
+            "align": "RIGHT"
+        }
+    ],
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "previousStatement": null,
+    "nextStatement": null
+}

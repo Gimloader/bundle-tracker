@@ -1,0 +1,52 @@
+{
+    "id": "Blackboard Leg",
+    "name": "Blackboard Leg",
+    "image": {
+        "path": "props/blackboards/blackboard_legs.png",
+        "width": 99,
+        "height": 158
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 30,
+            "y": 77.1,
+            "radiusX": 84,
+            "radiusY": 40
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 4,
+                    "y": 1.1,
+                    "width": 30,
+                    "height": 180,
+                    "angle": -21
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 4,
+                    "y": 1.1,
+                    "width": 30,
+                    "height": 180,
+                    "angle": -21
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "id": "school_biome/statues/statue_01",
+    "name": "School Statue",
+    "image": {
+        "path": "props/school_biome/statues/statue_01.png",
+        "width": 1010,
+        "height": 1455
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 515.33,
+            "radiusX": 1266.67,
+            "radiusY": 800
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 482,
+                    "width": 1000,
+                    "height": 466.67,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 15.33,
+                    "width": 833.33,
+                    "height": 666.67,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -151.33,
+                    "width": 766.67,
+                    "height": 633.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 482,
+                    "width": 1000,
+                    "height": 466.67,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 15.33,
+                    "width": 833.33,
+                    "height": 666.67,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -418,
+                    "width": 766.67,
+                    "height": 633.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

@@ -1,0 +1,17 @@
+{
+    "type": "add_activity_feed_item_for_everyone",
+    "message0": "Add Activity Feed Item For Everyone %1 ",
+    "args0": [
+        {
+            "type": "input_value",
+            "name": "add_activity_feed_item_for_everyone",
+            "check": "String",
+            "align": "RIGHT"
+        }
+    ],
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "previousStatement": null,
+    "nextStatement": null
+}

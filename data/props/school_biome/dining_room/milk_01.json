@@ -1,0 +1,83 @@
+{
+    "id": "school_biome/dining_room/milk_01",
+    "name": "Milk",
+    "image": {
+        "path": "props/school_biome/dining_room/milk_01.png",
+        "width": 224,
+        "height": 284
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 75,
+            "radiusX": 300,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 20,
+                    "y": 50,
+                    "width": 175,
+                    "height": 175,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -20,
+                    "y": 40,
+                    "radius": 80,
+                    "halfHeight": 20,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 20,
+                    "y": 50,
+                    "width": 175,
+                    "height": 175,
+                    "angle": 0
+                },
+                {
+                    "x": 5,
+                    "y": -30,
+                    "width": 160,
+                    "height": 225,
+                    "angle": 0
+                },
+                {
+                    "x": 50,
+                    "y": -50,
+                    "width": 100,
+                    "height": 75,
+                    "angle": -20
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -30,
+                    "y": 10,
+                    "radius": 80,
+                    "halfHeight": 50,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

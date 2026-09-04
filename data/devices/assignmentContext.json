@@ -1,0 +1,9 @@
+{
+    "id": "assignmentContext",
+    "name": "Assignment Context",
+    "description": "Set the objective of an assignment!",
+    "optionSchema": "{\"options\":[{\"key\":\"objective\",\"option\":{\"label\":\"Objective\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Reach the finish line...\"}}}]}",
+    "defaultState": "{}",
+    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[{\"type\":\"WHEN_PLAYER_LOADS_IN\",\"name\":\"When player loads in...\",\"blockedGlobalBlocks\":[\"message_broadcaster\",\"set_property\",\"current_character_name\",\"current_character_id\",\"add_activity_feed_item_for_everyone\",\"add_activity_feed_item_for_triggering_player\",\"add_activity_feed_item_for_game_host\",\"current_character_team_number\",\"triggering_player_score\",\"get_team_score\",\"is_a_live_game\",\"is_an_assignment\",\"seconds_into_game\"]}],\"customBlocks\":[\"set_assignment_objective\"]}",
+    "minimumRoleLevel": 90
+}

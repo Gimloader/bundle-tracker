@@ -1,0 +1,95 @@
+{
+    "id": "Basketball Hoop",
+    "name": "Basketball Hoop",
+    "image": {
+        "path": "props/basketball/basketball_hoop.png",
+        "width": 646,
+        "height": 1167
+    },
+    "scale": 0.36,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": -144.44,
+            "y": 489.04,
+            "radiusX": 516.67,
+            "radiusY": 266.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -138.89,
+                    "y": 486.26,
+                    "width": 366.67,
+                    "height": 188.89,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -141.67,
+                    "y": 486.26,
+                    "width": 366.67,
+                    "height": 194.44,
+                    "angle": 0
+                },
+                {
+                    "x": -172.22,
+                    "y": 66.82,
+                    "width": 50,
+                    "height": 750,
+                    "angle": 8
+                },
+                {
+                    "x": -22.22,
+                    "y": -433.18,
+                    "width": 27.78,
+                    "height": 308.33,
+                    "angle": 23
+                },
+                {
+                    "x": 47.22,
+                    "y": -447.07,
+                    "width": 41.67,
+                    "height": 275,
+                    "angle": 0
+                },
+                {
+                    "x": 97.22,
+                    "y": -138.74,
+                    "width": 369.44,
+                    "height": 263.89,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 180.56,
+                    "y": -224.85,
+                    "radius": 83.33,
+                    "halfHeight": 55.56,
+                    "angle": 90
+                },
+                {
+                    "x": -130.56,
+                    "y": 380.71,
+                    "radius": 55.56,
+                    "halfHeight": 97.22,
+                    "angle": 130
+                }
+            ]
+        }
+    }
+}

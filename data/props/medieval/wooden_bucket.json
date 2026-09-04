@@ -1,0 +1,52 @@
+{
+    "id": "medieval/wooden_bucket",
+    "name": "Wooden Bucket",
+    "image": {
+        "path": "props/medieval/wooden_bucket.png",
+        "width": 380,
+        "height": 379
+    },
+    "scale": 0.17,
+    "originX": 0.5,
+    "originY": 0.78,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 106.12,
+            "radiusX": 400,
+            "radiusY": 247.06
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 117.88,
+                    "radius": 58.82,
+                    "halfHeight": 47.06,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -11.53,
+                    "radius": 176.47,
+                    "halfHeight": 35.29,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

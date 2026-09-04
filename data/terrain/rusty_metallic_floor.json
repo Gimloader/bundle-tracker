@@ -1,0 +1,12 @@
+{
+    "id": "rusty_metallic_floor",
+    "name": "Rusty Metallic",
+    "maskTilesUrl": "tilesets/rusty_metallic_floor/mask.png",
+    "borderTilesUrl": "tilesets/rusty_metallic_floor/border.png",
+    "fillUrl": "tilesets/rusty_metallic_floor/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "seasonTicketRequired": true,
+    "previewUrl": "tilesets/rusty_metallic_floor/preview.png"
+}

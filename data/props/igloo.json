@@ -1,0 +1,67 @@
+{
+    "id": "igloo",
+    "name": "Igloo",
+    "image": {
+        "path": "props/igloos/igloo.png",
+        "width": 731,
+        "height": 616
+    },
+    "scale": 0.32,
+    "originX": 0.5,
+    "originY": 0.72,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 116.77,
+            "radiusX": 856.25,
+            "radiusY": 456.25
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 35.52,
+                    "radius": 234.38,
+                    "halfHeight": 134.38,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 135.52,
+                    "width": 406.25,
+                    "height": 343.75,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 35.52,
+                    "radius": 234.38,
+                    "halfHeight": 134.38,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -73.86,
+                    "radius": 218.75,
+                    "halfHeight": 93.75,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

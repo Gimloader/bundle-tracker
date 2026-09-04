@@ -1,0 +1,9 @@
+{
+    "type": "resource",
+    "id": "gimgulp",
+    "name": "GimGulp",
+    "editorName": "GimGulp",
+    "description": "Not the healthiest, but for sure the tastiest.",
+    "previewImage": "inventory/resources/gimgulp.png",
+    "minimumRoleLevel": 90
+}

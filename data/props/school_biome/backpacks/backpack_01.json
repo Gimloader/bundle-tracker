@@ -1,0 +1,67 @@
+{
+    "id": "school_biome/backpacks/backpack_01",
+    "name": "School Backpack (Pink)",
+    "image": {
+        "path": "props/school_biome/backpacks/backpack_01.png",
+        "width": 574,
+        "height": 573
+    },
+    "scale": 0.12,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 137.53,
+            "radiusX": 633.33,
+            "radiusY": 416.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -8.33,
+                    "y": 104.2,
+                    "radius": 158.33,
+                    "halfHeight": 116.67,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -33.33,
+                    "y": 129.2,
+                    "radius": 158.33,
+                    "halfHeight": 91.67,
+                    "angle": 90
+                },
+                {
+                    "x": 16.67,
+                    "y": 20.87,
+                    "radius": 250,
+                    "halfHeight": 25,
+                    "angle": 105
+                },
+                {
+                    "x": -33.33,
+                    "y": -187.47,
+                    "radius": 91.67,
+                    "halfHeight": 8.33,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

@@ -1,0 +1,11 @@
+{
+    "id": "Sci-Fi Lab Floor Red",
+    "name": "Lab Floor (Magenta)",
+    "maskTilesUrl": "tilesets/scifi_lab_floor/mask.png",
+    "borderTilesUrl": "tilesets/scifi_lab_floor/border_red.png",
+    "fillUrl": "tilesets/scifi_lab_floor/fill_red.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/scifi_lab_floor/preview_red.png"
+}

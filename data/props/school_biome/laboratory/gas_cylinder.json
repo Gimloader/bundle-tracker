@@ -1,0 +1,81 @@
+{
+    "id": "school_biome/laboratory/gas_cylinder",
+    "name": "Gas Cylinder",
+    "image": {
+        "path": "props/school_biome/laboratory/gas_cylinder.png",
+        "width": 366,
+        "height": 538
+    },
+    "scale": 0.14,
+    "originX": 0.5,
+    "originY": 0.92,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 183.1,
+            "radiusX": 428.57,
+            "radiusY": 285.71
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 154.53,
+                    "radius": 107.14,
+                    "halfHeight": 71.43,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": 61.67,
+                    "radius": 142.86,
+                    "halfHeight": 14.29,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 154.53,
+                    "radius": 107.14,
+                    "halfHeight": 71.43,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": 25.96,
+                    "radius": 157.14,
+                    "halfHeight": 71.43,
+                    "angle": 0
+                },
+                {
+                    "x": -107.14,
+                    "y": -181.18,
+                    "radius": 57.14,
+                    "halfHeight": 0,
+                    "angle": 90
+                },
+                {
+                    "x": 7.14,
+                    "y": -202.61,
+                    "radius": 42.86,
+                    "halfHeight": 28.57,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

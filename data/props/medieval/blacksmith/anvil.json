@@ -1,0 +1,67 @@
+{
+    "id": "medieval/blacksmith/anvil",
+    "name": "Anvil",
+    "image": {
+        "path": "props/medieval/blacksmith/anvil.png",
+        "width": 650,
+        "height": 545
+    },
+    "scale": 0.12,
+    "originX": 0.5,
+    "originY": 0.81,
+    "shadows": [
+        {
+            "x": 83.33,
+            "y": 177.28,
+            "radiusX": 566.67,
+            "radiusY": 283.33
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 91.67,
+                    "y": 93.95,
+                    "radius": 166.67,
+                    "halfHeight": 66.67,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 91.67,
+                    "y": -131.05,
+                    "width": 441.67,
+                    "height": 283.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 91.67,
+                    "y": 110.62,
+                    "radius": 150,
+                    "halfHeight": 83.33,
+                    "angle": 90
+                },
+                {
+                    "x": -200,
+                    "y": -164.38,
+                    "radius": 66.67,
+                    "halfHeight": 66.67,
+                    "angle": 85
+                }
+            ]
+        }
+    }
+}

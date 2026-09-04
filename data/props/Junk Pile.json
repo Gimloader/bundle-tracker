@@ -1,0 +1,73 @@
+{
+    "id": "Junk Pile",
+    "name": "Junk Pile",
+    "image": {
+        "path": "props/workshop/junk_pile.png",
+        "width": 471,
+        "height": 275
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.75,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 66.75,
+            "radiusX": 524,
+            "radiusY": 208
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 68.75,
+                    "radius": 50,
+                    "halfHeight": 180,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 68.75,
+                    "radius": 50,
+                    "halfHeight": 180,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -27.25,
+                    "radius": 60,
+                    "halfHeight": 130,
+                    "angle": 90
+                },
+                {
+                    "x": 26,
+                    "y": -87.25,
+                    "radius": 60,
+                    "halfHeight": 10,
+                    "angle": 90
+                },
+                {
+                    "x": 130,
+                    "y": -63.25,
+                    "radius": 40,
+                    "halfHeight": 30,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

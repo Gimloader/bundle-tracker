@@ -1,0 +1,9 @@
+{
+    "id": "Dynamic Dirt",
+    "name": "Dynamic Dirt",
+    "maskTilesUrl": "tilesets/dynamic/mask.png",
+    "borderTilesUrl": "tilesets/dynamic/dirt/border.png",
+    "fillUrl": "tilesets/dynamic/dirt/fill.png",
+    "previewUrl": "tilesets/dynamic/dirt/preview.png",
+    "health": 2
+}

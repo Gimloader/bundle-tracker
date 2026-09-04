@@ -1,0 +1,21 @@
+{
+    "type": "weapon",
+    "id": "slingshot_rare",
+    "name": "Slingshot",
+    "editorName": "Slingshot (Rare)",
+    "description": "Fling the competition away.",
+    "previewImage": "inventory/weapons/slingshot.png",
+    "rarity": "rare",
+    "weapon": {
+        "type": "bullet",
+        "appearance": "slingshot",
+        "shared": {
+            "cooldownBetweenShots": 645,
+            "allowAutoFire": false,
+            "startingProjectileDistanceFromCharacter": 0.8
+        },
+        "bullet": {
+            "ammoItemId": "medium-shards"
+        }
+    }
+}

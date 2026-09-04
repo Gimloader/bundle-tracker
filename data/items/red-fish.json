@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "red-fish",
+    "name": "Red Fish",
+    "editorName": "Red Fish",
+    "description": "Yes, I'm angry. No, I don't want to talk about it.",
+    "previewImage": "inventory/resources/red_fish.png"
+}

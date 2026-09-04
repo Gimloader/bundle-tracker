@@ -1,0 +1,59 @@
+{
+    "id": "plants/manecing_flowerpot/menacing_flowerpot_1",
+    "name": "Evil Potted Plant",
+    "image": {
+        "path": "props/plants/manecing_flowerpot/menacing_flowerpot_1.png",
+        "width": 336,
+        "height": 401
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0.88,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 164.38,
+            "radiusX": 312,
+            "radiusY": 136
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 48.38,
+                    "radius": 140,
+                    "halfHeight": 32,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -51.62,
+                    "radius": 172,
+                    "halfHeight": 8,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": 112.38,
+                    "radius": 100,
+                    "halfHeight": 20,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

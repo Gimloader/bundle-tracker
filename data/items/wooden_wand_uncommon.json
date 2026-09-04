@@ -1,0 +1,21 @@
+{
+    "type": "weapon",
+    "id": "wooden_wand_uncommon",
+    "name": "Wooden Wand",
+    "editorName": "Wooden Wand (Uncommon)",
+    "description": "Cast a botanical spell.",
+    "previewImage": "inventory/weapons/wooden_wand.png",
+    "rarity": "uncommon",
+    "weapon": {
+        "type": "bullet",
+        "appearance": "woodenWand",
+        "shared": {
+            "cooldownBetweenShots": 375,
+            "allowAutoFire": false,
+            "startingProjectileDistanceFromCharacter": 0.9
+        },
+        "bullet": {
+            "ammoItemId": "medium-shards"
+        }
+    }
+}

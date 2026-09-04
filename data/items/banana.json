@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "banana",
+    "name": "Banana",
+    "editorName": "Banana",
+    "description": "Good for potassium",
+    "previewImage": "inventory/resources/banana.png"
+}

@@ -1,0 +1,53 @@
+{
+    "id": "school_biome/art_materials/paint_box",
+    "name": "Paint Box",
+    "image": {
+        "path": "props/school_biome/art_materials/paint_box.png",
+        "width": 366,
+        "height": 300
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 56.67,
+            "radiusX": 466.67,
+            "radiusY": 333.33
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 30,
+                    "width": 366.67,
+                    "height": 233.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 3.33,
+                    "width": 366.67,
+                    "height": 300,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

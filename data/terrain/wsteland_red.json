@@ -1,0 +1,12 @@
+{
+    "id": "wsteland_red",
+    "name": "Wasteland (Red)",
+    "maskTilesUrl": "tilesets/wasteland/mask.png",
+    "borderTilesUrl": "tilesets/wasteland/border_red.png",
+    "fillUrl": "tilesets/wasteland/fill_red.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "seasonTicketRequired": true,
+    "previewUrl": "tilesets/wasteland/preview_red.png"
+}

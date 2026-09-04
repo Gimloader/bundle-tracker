@@ -1,0 +1,49 @@
+{
+    "id": "school_biome/gym_class/ball_05",
+    "name": "Toy Ball (Green)",
+    "image": {
+        "path": "props/school_biome/gym_class/ball_05.png",
+        "width": 341,
+        "height": 341
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 103.83,
+            "radiusX": 333.33,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 3.83,
+                    "radius": 166.67
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 3.83,
+                    "radius": 166.67
+                }
+            ],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

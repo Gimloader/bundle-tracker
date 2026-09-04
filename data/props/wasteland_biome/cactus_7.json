@@ -1,0 +1,53 @@
+{
+    "id": "wasteland_biome/cactus_7",
+    "name": "Cactus",
+    "image": {
+        "path": "props/wasteland_biome/cactus_7.png",
+        "width": 394,
+        "height": 441
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 5,
+            "y": 161.4,
+            "radiusX": 330,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 116.4,
+                    "radius": 100,
+                    "halfHeight": 90,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 1.4,
+                    "radius": 165,
+                    "halfHeight": 60,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

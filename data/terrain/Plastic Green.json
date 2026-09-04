@@ -1,0 +1,11 @@
+{
+    "id": "Plastic Green",
+    "name": "Plastic (Green)",
+    "maskTilesUrl": "tilesets/plastic/mask.png",
+    "borderTilesUrl": "tilesets/plastic/green_border.png",
+    "fillUrl": "tilesets/plastic/green_fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/plastic/green_preview.png"
+}

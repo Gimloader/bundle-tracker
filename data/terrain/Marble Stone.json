@@ -1,0 +1,11 @@
+{
+    "id": "Marble Stone",
+    "name": "Marble Stone (Light)",
+    "maskTilesUrl": "tilesets/marble/mask.png",
+    "borderTilesUrl": "tilesets/marble/07_marble_border.png",
+    "fillUrl": "tilesets/marble/07_marble_fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/marble/07_marble_preview.png"
+}

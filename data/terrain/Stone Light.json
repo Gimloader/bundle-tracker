@@ -1,0 +1,11 @@
+{
+    "id": "Stone Light",
+    "name": "Stone (Light)",
+    "maskTilesUrl": "tilesets/stone/mask.png",
+    "borderTilesUrl": "tilesets/stone/light_border.png",
+    "fillUrl": "tilesets/stone/light_fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/stone/light_preview.png"
+}

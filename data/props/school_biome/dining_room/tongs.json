@@ -1,0 +1,45 @@
+{
+    "id": "school_biome/dining_room/tongs",
+    "name": "Tongs",
+    "image": {
+        "path": "props/school_biome/dining_room/tongs.png",
+        "width": 221,
+        "height": 367
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 60,
+                    "y": 0,
+                    "radius": 53.33,
+                    "halfHeight": 133.33,
+                    "angle": 0
+                },
+                {
+                    "x": -6.67,
+                    "y": -13.33,
+                    "radius": 53.33,
+                    "halfHeight": 126.67,
+                    "angle": 22
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

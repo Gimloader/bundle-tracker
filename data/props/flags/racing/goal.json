@@ -1,0 +1,50 @@
+{
+    "id": "flags/racing/goal",
+    "name": "Racing Flag (Checkered)",
+    "image": {
+        "path": "props/flags/racing/goal.png",
+        "width": 688,
+        "height": 1334
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.94,
+    "shadows": [
+        {
+            "x": -306.67,
+            "y": 633.63,
+            "radiusX": 226.67,
+            "radiusY": 186.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": -306.67,
+                    "y": 620.29,
+                    "radius": 40
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -306.67,
+                    "y": 0.29,
+                    "width": 86.67,
+                    "height": 1340,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

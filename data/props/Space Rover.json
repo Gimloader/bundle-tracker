@@ -1,0 +1,72 @@
+{
+    "id": "Space Rover",
+    "name": "Space Rover",
+    "image": {
+        "path": "props/space_props/rover.png",
+        "width": 382,
+        "height": 383
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 54,
+            "radiusX": 480,
+            "radiusY": 404
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 40,
+                    "width": 380,
+                    "height": 300,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 30,
+                    "width": 380,
+                    "height": 320,
+                    "angle": 0
+                },
+                {
+                    "x": -80,
+                    "y": -140,
+                    "width": 60,
+                    "height": 104,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -70,
+                    "width": 200,
+                    "height": 200,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": 106,
+                    "y": -126,
+                    "radius": 50
+                }
+            ],
+            "capsule": []
+        }
+    }
+}

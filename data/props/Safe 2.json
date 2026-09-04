@@ -1,0 +1,52 @@
+{
+    "id": "Safe 2",
+    "name": "Safe",
+    "image": {
+        "path": "props/office/safe_2.png",
+        "width": 669,
+        "height": 1313
+    },
+    "scale": 0.18,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 529.74,
+            "radiusX": 900,
+            "radiusY": 488.89
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 146.41,
+                    "width": 666.67,
+                    "height": 1011.11,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 1.96,
+                    "width": 666.67,
+                    "height": 1316.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "id": "school_biome/gym_class/ball_08",
+    "name": "Toy Ball (Basketball)",
+    "image": {
+        "path": "props/school_biome/gym_class/ball_08.png",
+        "width": 342,
+        "height": 342
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 104.33,
+            "radiusX": 333.33,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 4.33,
+                    "radius": 166.67
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 4.33,
+                    "radius": 166.67
+                }
+            ],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

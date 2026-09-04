@@ -1,0 +1,8 @@
+{
+    "type": "get_current_prop_health_percent",
+    "message0": "Prop's Current Health (Percent)",
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": "Number"
+}

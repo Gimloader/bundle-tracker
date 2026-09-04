@@ -1,0 +1,44 @@
+{
+    "id": "Chemical Tube",
+    "name": "Chemical Tube",
+    "image": {
+        "path": "props/science_lab/chemical_tube.png",
+        "width": 280,
+        "height": 248
+    },
+    "scale": 0.19,
+    "originX": 0.5,
+    "originY": 0.83,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 113.42,
+            "radiusX": 357.89,
+            "radiusY": 94.74
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -2.37,
+                    "width": 278.95,
+                    "height": 252.63,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

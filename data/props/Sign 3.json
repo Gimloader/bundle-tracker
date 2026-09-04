@@ -1,0 +1,44 @@
+{
+    "id": "Sign 3",
+    "name": "Wooden Sign",
+    "image": {
+        "path": "props/signs/sign_3.png",
+        "width": 294,
+        "height": 141
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 2,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -28,
+                    "y": 3.5,
+                    "width": 230,
+                    "height": 138,
+                    "angle": 0
+                },
+                {
+                    "x": 80,
+                    "y": 1.5,
+                    "width": 90,
+                    "height": 100,
+                    "angle": 45
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

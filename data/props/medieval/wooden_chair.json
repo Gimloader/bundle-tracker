@@ -1,0 +1,52 @@
+{
+    "id": "medieval/wooden_chair",
+    "name": "Wooden Chair",
+    "image": {
+        "path": "props/medieval/wooden_chair.png",
+        "width": 489,
+        "height": 736
+    },
+    "scale": 0.17,
+    "originX": 0.5,
+    "originY": 0.57,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 269.17,
+            "radiusX": 658.82,
+            "radiusY": 329.41
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 169.17,
+                    "width": 494.12,
+                    "height": 400,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -1.42,
+                    "width": 482.35,
+                    "height": 735.29,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "type": "item",
+    "id": "terrain_dynamic_gold",
+    "name": "Dynamic Gold",
+    "editorName": "Dynamic Gold",
+    "description": "Build structures made of gold",
+    "previewImage": "inventory/items/terrain_dynamic_gold.png",
+    "rarity": "epic",
+    "useCommand": "Drop",
+    "consumeType": "buildTerrain",
+    "terrainId": "Dynamic Gold",
+    "maxStackSize": 50
+}

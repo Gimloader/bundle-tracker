@@ -1,0 +1,11 @@
+{
+    "id": "Spaceship Corridor White",
+    "name": "Spaceship Corridor (White)",
+    "maskTilesUrl": "tilesets/spaceship_corridor/mask.png",
+    "borderTilesUrl": "tilesets/spaceship_corridor/border.png",
+    "fillUrl": "tilesets/spaceship_corridor/fill_white.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/spaceship_corridor/preview_white.png"
+}

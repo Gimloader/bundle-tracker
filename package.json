@@ -3,10 +3,12 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "getCode": "bun run src/index.ts"
+    "getCode": "bun run src/index.ts",
+    "getData": "bun run src/gamedata/index.ts"
   },
   "private": true,
   "devDependencies": {
+    "@gimloader/types": "^2.1.0",
     "@types/bun": "latest",
     "@types/cli-progress": "^3.11.6",
     "@types/js-beautify": "^1.14.3",
@@ -16,6 +18,7 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "colyseus.js": "^0.15.17",
     "js-beautify": "^1.15.4",
     "node-html-parser": "^7.0.1"
   }

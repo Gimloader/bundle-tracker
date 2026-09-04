@@ -1,0 +1,11 @@
+{
+    "id": "Metallic Dark",
+    "name": "Metallic (Dark)",
+    "maskTilesUrl": "tilesets/metallic/mask.png",
+    "borderTilesUrl": "tilesets/metallic/border_dark.png",
+    "fillUrl": "tilesets/metallic/fill_dark.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/metallic/preview_dark.png"
+}

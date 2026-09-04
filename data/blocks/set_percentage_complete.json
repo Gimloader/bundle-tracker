@@ -1,0 +1,17 @@
+{
+    "type": "set_percentage_complete",
+    "message0": "Set Percentage Complete To %1 ",
+    "args0": [
+        {
+            "type": "input_value",
+            "name": "set_percentage_complete_to",
+            "check": "Number",
+            "align": "RIGHT"
+        }
+    ],
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "previousStatement": null,
+    "nextStatement": null
+}

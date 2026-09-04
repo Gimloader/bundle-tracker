@@ -1,0 +1,10 @@
+{
+    "type": "item",
+    "id": "shield-can",
+    "name": "Shield Can",
+    "editorName": "Shield Can",
+    "description": "Drink up and restore your shield!",
+    "previewImage": "inventory/items/shield_can.png",
+    "rarity": "uncommon",
+    "maxStackSize": 4
+}

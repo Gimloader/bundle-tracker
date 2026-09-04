@@ -1,0 +1,9 @@
+{
+    "type": "resource",
+    "id": "silver-ore",
+    "name": "Silver Ore",
+    "editorName": "Silver Ore",
+    "description": "A rare & valuable metal",
+    "previewImage": "inventory/resources/silver_ore.png",
+    "minimumRoleLevel": 90
+}

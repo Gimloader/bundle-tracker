@@ -1,0 +1,74 @@
+{
+    "id": "tables/kitchen_table_infected_4",
+    "name": "Kitchen Table (Infected)",
+    "image": {
+        "path": "props/tables/kitchen_table_infected_4.png",
+        "width": 615,
+        "height": 561
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 80,
+            "radiusX": 640,
+            "radiusY": 440
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "radius": 250,
+                    "halfHeight": 50,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 250,
+                    "width": 40,
+                    "height": 60,
+                    "angle": 0
+                },
+                {
+                    "x": 254,
+                    "y": 130,
+                    "width": 40,
+                    "height": 50,
+                    "angle": 0
+                },
+                {
+                    "x": -250,
+                    "y": 126,
+                    "width": 50,
+                    "height": 60,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -10,
+                    "radius": 262,
+                    "halfHeight": 44,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

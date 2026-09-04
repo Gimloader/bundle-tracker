@@ -1,0 +1,29 @@
+{
+    "id": "leaf-single-lime",
+    "name": "Leaf",
+    "image": {
+        "path": "props/farm/leaf/single-lime.png",
+        "width": 94,
+        "height": 112
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

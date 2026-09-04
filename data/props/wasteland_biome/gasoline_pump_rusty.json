@@ -1,0 +1,75 @@
+{
+    "id": "wasteland_biome/gasoline_pump_rusty",
+    "name": "Gasoline Pump (Rusty)",
+    "image": {
+        "path": "props/wasteland_biome/gasoline_pump_rusty.png",
+        "width": 523,
+        "height": 1030
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.97,
+    "shadows": [
+        {
+            "x": 50,
+            "y": 454.1,
+            "radiusX": 500,
+            "radiusY": 250
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 60,
+                    "y": 109.1,
+                    "width": 365,
+                    "height": 800,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -100,
+                    "y": 154.1,
+                    "radius": 175,
+                    "halfHeight": 175,
+                    "angle": 0
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 60,
+                    "y": 109.1,
+                    "width": 365,
+                    "height": 800,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": 50,
+                    "y": -365.9,
+                    "radius": 150
+                }
+            ],
+            "capsule": [
+                {
+                    "x": -100,
+                    "y": 154.1,
+                    "radius": 175,
+                    "halfHeight": 175,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

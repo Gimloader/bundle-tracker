@@ -1,0 +1,89 @@
+{
+    "id": "medieval/big_barrel",
+    "name": "Large Barrel",
+    "image": {
+        "path": "props/medieval/big_barrel.png",
+        "width": 872,
+        "height": 1049
+    },
+    "scale": 0.21,
+    "originX": 0.5,
+    "originY": 0.8,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 419.46,
+            "radiusX": 1161.9,
+            "radiusY": 476.19
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 4.76,
+                    "y": 386.13,
+                    "width": 876.19,
+                    "height": 247.62,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 105.18,
+                    "radius": 347.62,
+                    "halfHeight": 42.86,
+                    "angle": 0
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -323.81,
+                    "y": 424.22,
+                    "width": 219.05,
+                    "height": 180.95,
+                    "angle": 0
+                },
+                {
+                    "x": 323.81,
+                    "y": 424.22,
+                    "width": 219.05,
+                    "height": 180.95,
+                    "angle": 0
+                },
+                {
+                    "x": -385.71,
+                    "y": 19.46,
+                    "width": 100,
+                    "height": 176.19,
+                    "angle": 0
+                },
+                {
+                    "x": 385.71,
+                    "y": 19.46,
+                    "width": 100,
+                    "height": 176.19,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -18.63,
+                    "radius": 404.76,
+                    "halfHeight": 104.76,
+                    "angle": 0
+                }
+            ]
+        }
+    }
+}

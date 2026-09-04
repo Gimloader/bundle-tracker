@@ -1,0 +1,36 @@
+{
+    "id": "leaf-pile-light-medium",
+    "name": "Medium Leaf Pile",
+    "image": {
+        "path": "props/farm/leaf/pile-light-medium.png",
+        "width": 300,
+        "height": 241
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 51.5,
+            "radiusX": 376,
+            "radiusY": 192
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

@@ -1,0 +1,115 @@
+{
+    "id": "wasteland_biome/ruins_08",
+    "name": "Ruins",
+    "image": {
+        "path": "props/wasteland_biome/ruins_08.png",
+        "width": 1011,
+        "height": 903
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.68,
+    "shadows": [
+        {
+            "x": -50,
+            "y": 212.54,
+            "radiusX": 900,
+            "radiusY": 500
+        },
+        {
+            "x": 400,
+            "y": 387.54,
+            "radiusX": 250,
+            "radiusY": 150
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 250,
+                    "y": 262.54,
+                    "radius": 100,
+                    "halfHeight": 200,
+                    "angle": 125
+                },
+                {
+                    "x": -245,
+                    "y": 157.54,
+                    "radius": 125,
+                    "halfHeight": 125,
+                    "angle": 65
+                },
+                {
+                    "x": -60,
+                    "y": 37.54,
+                    "radius": 150,
+                    "halfHeight": 175,
+                    "angle": 90
+                },
+                {
+                    "x": 240,
+                    "y": 147.54,
+                    "radius": 100,
+                    "halfHeight": 0,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 250,
+                    "y": 262.54,
+                    "radius": 100,
+                    "halfHeight": 200,
+                    "angle": 125
+                },
+                {
+                    "x": -245,
+                    "y": 157.54,
+                    "radius": 125,
+                    "halfHeight": 125,
+                    "angle": 65
+                },
+                {
+                    "x": -60,
+                    "y": 37.54,
+                    "radius": 150,
+                    "halfHeight": 175,
+                    "angle": 90
+                },
+                {
+                    "x": 240,
+                    "y": 147.54,
+                    "radius": 100,
+                    "halfHeight": 0,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -212.46,
+                    "radius": 175,
+                    "halfHeight": 50,
+                    "angle": 0
+                },
+                {
+                    "x": -40,
+                    "y": -82.46,
+                    "radius": 150,
+                    "halfHeight": 125,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

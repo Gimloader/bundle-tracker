@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "green-key",
+    "name": "Green Key",
+    "editorName": "Green Key",
+    "description": "What you need to get where you want.",
+    "previewImage": "inventory/resources/key_1.png"
+}

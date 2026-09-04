@@ -1,0 +1,56 @@
+{
+    "id": "Bin",
+    "name": "Trash Bin",
+    "image": {
+        "path": "props/office/bin.png",
+        "width": 188,
+        "height": 259
+    },
+    "scale": 0.3,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 109.5,
+            "radiusX": 226.67,
+            "radiusY": 100
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 29.5,
+                    "radius": 100
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 46.17,
+                    "width": 183.33,
+                    "height": 150,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": -47.17,
+                    "radius": 83.33
+                }
+            ],
+            "capsule": []
+        }
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "id": "school_biome/locker_room/locker_row_04",
+    "name": "Locker Row (Yellow)",
+    "image": {
+        "path": "props/school_biome/locker_room/locker_row_04.png",
+        "width": 1958,
+        "height": 880
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 402,
+            "radiusX": 2100,
+            "radiusY": 400
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 77,
+                    "width": 1955,
+                    "height": 710,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 2,
+                    "width": 1955,
+                    "height": 875,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

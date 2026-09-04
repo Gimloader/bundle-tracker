@@ -1,0 +1,85 @@
+{
+    "id": "wasteland_biome/nuclear_barrel_down_01",
+    "name": "Nuclear Barrel (Down)",
+    "image": {
+        "path": "props/wasteland_biome/nuclear_barrel_down_01.png",
+        "width": 427,
+        "height": 774
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 34.6,
+            "radiusX": 450,
+            "radiusY": 550
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -65.4,
+                    "width": 410,
+                    "height": 300,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 89.6,
+                    "radius": 210
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -15.4,
+                    "width": 360,
+                    "height": 300,
+                    "angle": 0
+                }
+            ],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 64.6,
+                    "radius": 210
+                },
+                {
+                    "x": 0,
+                    "y": -190.4,
+                    "radius": 200
+                }
+            ],
+            "capsule": [
+                {
+                    "x": -10,
+                    "y": 184.6,
+                    "radius": 150,
+                    "halfHeight": 30,
+                    "angle": 90
+                },
+                {
+                    "x": 80,
+                    "y": 309.6,
+                    "radius": 75,
+                    "halfHeight": 15,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

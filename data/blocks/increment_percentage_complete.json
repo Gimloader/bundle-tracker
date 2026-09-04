@@ -1,0 +1,17 @@
+{
+    "type": "increment_percentage_complete",
+    "message0": "Increment Percentage Complete By %1 ",
+    "args0": [
+        {
+            "type": "input_value",
+            "name": "increment_percentage_complete_by",
+            "check": "Number",
+            "align": "RIGHT"
+        }
+    ],
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "previousStatement": null,
+    "nextStatement": null
+}

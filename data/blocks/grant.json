@@ -1,0 +1,9 @@
+{
+    "type": "grant",
+    "message0": "Grant Player Selected Item",
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "previousStatement": null,
+    "nextStatement": null
+}

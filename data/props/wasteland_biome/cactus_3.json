@@ -1,0 +1,81 @@
+{
+    "id": "wasteland_biome/cactus_3",
+    "name": "Cactus",
+    "image": {
+        "path": "props/wasteland_biome/cactus_3.png",
+        "width": 721,
+        "height": 1018
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 458.1,
+            "radiusX": 350,
+            "radiusY": 200
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 5,
+                    "y": 233.1,
+                    "radius": 100,
+                    "halfHeight": 175,
+                    "angle": 0
+                },
+                {
+                    "x": 110,
+                    "y": 218.1,
+                    "radius": 150,
+                    "halfHeight": 25,
+                    "angle": 90
+                },
+                {
+                    "x": -115,
+                    "y": 108.1,
+                    "radius": 75,
+                    "halfHeight": 100,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 15,
+                    "y": 8.1,
+                    "radius": 150,
+                    "halfHeight": 350,
+                    "angle": 3
+                },
+                {
+                    "x": 160,
+                    "y": -16.9,
+                    "radius": 150,
+                    "halfHeight": 230,
+                    "angle": 7
+                },
+                {
+                    "x": -175,
+                    "y": -11.9,
+                    "radius": 150,
+                    "halfHeight": 50,
+                    "angle": 352
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

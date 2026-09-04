@@ -1,0 +1,52 @@
+{
+    "id": "medieval/kitchen/bread",
+    "name": "Bread",
+    "image": {
+        "path": "props/medieval/kitchen/bread.png",
+        "width": 457,
+        "height": 208
+    },
+    "scale": 0.12,
+    "originX": 0.5,
+    "originY": 0.71,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 35.35,
+            "radiusX": 516.67,
+            "radiusY": 216.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 16.67,
+                    "y": 43.68,
+                    "width": 391.67,
+                    "height": 50,
+                    "angle": -11
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 2.01,
+                    "radius": 100,
+                    "halfHeight": 141.67,
+                    "angle": 81
+                }
+            ]
+        }
+    }
+}

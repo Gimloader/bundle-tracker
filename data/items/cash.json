@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "cash",
+    "name": "Cash",
+    "editorName": "Cash",
+    "description": "Make it rain.",
+    "previewImage": "inventory/resources/cash.png"
+}

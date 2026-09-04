@@ -1,0 +1,36 @@
+{
+    "id": "plants/alien/alien_plant_3",
+    "name": "Alien Plant",
+    "image": {
+        "path": "props/plants/alien/alien_plant_3.png",
+        "width": 220,
+        "height": 209
+    },
+    "scale": 0.2,
+    "originX": 0.52,
+    "originY": 0.87,
+    "shadows": [
+        {
+            "x": -0.6,
+            "y": 62.33,
+            "radiusX": 180,
+            "radiusY": 100
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

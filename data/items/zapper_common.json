@@ -1,0 +1,21 @@
+{
+    "type": "weapon",
+    "id": "zapper_common",
+    "name": "Zapper",
+    "editorName": "Zapper (Common)",
+    "description": "Zap the enemies away!",
+    "previewImage": "inventory/weapons/zapper.png",
+    "rarity": "common",
+    "weapon": {
+        "type": "bullet",
+        "appearance": "zapper",
+        "shared": {
+            "cooldownBetweenShots": 160,
+            "allowAutoFire": true,
+            "startingProjectileDistanceFromCharacter": 0.8
+        },
+        "bullet": {
+            "ammoItemId": "light-shards"
+        }
+    }
+}

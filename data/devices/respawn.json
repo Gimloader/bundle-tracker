@@ -1,0 +1,10 @@
+{
+    "id": "respawn",
+    "name": "Respawn",
+    "description": "Force a player to respawn",
+    "optionSchema": "{\"options\":[{\"key\":\"respawnOnChannel\",\"option\":{\"label\":\"Respawn player when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Respawn the triggering player when the device receives a signal from the selected channel\"}}]}",
+    "defaultState": "{}",
+    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
+    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"respawn\",\"name\":\"Respawn player\"}]}}",
+    "maxOnMap": 16
+}

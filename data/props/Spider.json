@@ -1,0 +1,36 @@
+{
+    "id": "Spider",
+    "name": "Spider",
+    "image": {
+        "path": "props/bugs/spider.png",
+        "width": 185,
+        "height": 158
+    },
+    "scale": 0.24,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 20.83,
+            "radiusX": 200,
+            "radiusY": 125
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

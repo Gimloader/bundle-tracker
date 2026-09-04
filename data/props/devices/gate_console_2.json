@@ -1,0 +1,82 @@
+{
+    "id": "devices/gate_console_2",
+    "name": "Gate Console",
+    "image": {
+        "path": "props/devices/gate_console_2.png",
+        "width": 540,
+        "height": 670
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.85,
+    "shadows": [
+        {
+            "x": 5,
+            "y": 254.5,
+            "radiusX": 480,
+            "radiusY": 290
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 89.5,
+                    "width": 320,
+                    "height": 500,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 170,
+                    "y": 199.5,
+                    "radius": 80,
+                    "halfHeight": 20,
+                    "angle": 90
+                },
+                {
+                    "x": -170,
+                    "y": 59.5,
+                    "radius": 110,
+                    "halfHeight": 50,
+                    "angle": 0
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 5,
+                    "y": -0.5,
+                    "width": 320,
+                    "height": 665,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 170,
+                    "y": 204.5,
+                    "radius": 70,
+                    "halfHeight": 30,
+                    "angle": 90
+                },
+                {
+                    "x": -160,
+                    "y": 54.5,
+                    "radius": 135,
+                    "halfHeight": 50,
+                    "angle": 0
+                }
+            ]
+        }
+    }
+}

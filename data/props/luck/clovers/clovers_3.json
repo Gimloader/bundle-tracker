@@ -1,0 +1,60 @@
+{
+    "id": "luck/clovers/clovers_3",
+    "name": "Clovers",
+    "image": {
+        "path": "props/luck/clovers/clovers_3.png",
+        "width": 266,
+        "height": 187
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0.75,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 18.75,
+            "radiusX": 280,
+            "radiusY": 160
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 18.75,
+                    "radius": 60,
+                    "halfHeight": 72,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 10.75,
+                    "radius": 76,
+                    "halfHeight": 52,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -53.25,
+                    "radius": 40,
+                    "halfHeight": 20,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "minimumRoleLevel": 90
+}

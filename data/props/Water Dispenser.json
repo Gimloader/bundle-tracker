@@ -1,0 +1,60 @@
+{
+    "id": "Water Dispenser",
+    "name": "Water Dispenser",
+    "image": {
+        "path": "props/office/water_dispenser.png",
+        "width": 171,
+        "height": 423
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 167.5,
+            "radiusX": 220,
+            "radiusY": 184
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 53.5,
+                    "width": 170,
+                    "height": 320,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 23.5,
+                    "width": 170,
+                    "height": 380,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -160.5,
+                    "radius": 50,
+                    "halfHeight": 36,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

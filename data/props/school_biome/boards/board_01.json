@@ -1,0 +1,81 @@
+{
+    "id": "school_biome/boards/board_01",
+    "name": "Classroom Board",
+    "image": {
+        "path": "props/school_biome/boards/board_01.png",
+        "width": 1233,
+        "height": 1016
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 458,
+            "radiusX": 1200,
+            "radiusY": 300
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -57,
+                    "width": 1225,
+                    "height": 725,
+                    "angle": 0
+                },
+                {
+                    "x": 490,
+                    "y": 383,
+                    "width": 90,
+                    "height": 250,
+                    "angle": 0
+                },
+                {
+                    "x": -490,
+                    "y": 383,
+                    "width": 90,
+                    "height": 250,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -97,
+                    "width": 1225,
+                    "height": 815,
+                    "angle": 0
+                },
+                {
+                    "x": 490,
+                    "y": 383,
+                    "width": 90,
+                    "height": 250,
+                    "angle": 0
+                },
+                {
+                    "x": -490,
+                    "y": 383,
+                    "width": 90,
+                    "height": 250,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

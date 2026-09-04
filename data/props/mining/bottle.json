@@ -1,0 +1,61 @@
+{
+    "id": "mining/bottle",
+    "name": "Bottle",
+    "image": {
+        "path": "props/mining/bottle.png",
+        "width": 227,
+        "height": 283
+    },
+    "scale": 0.13,
+    "originX": 0.5,
+    "originY": 0.97,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 79.16,
+            "radiusX": 261.54,
+            "radiusY": 169.23
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 48.39,
+                    "radius": 84.62,
+                    "halfHeight": 23.08,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -7.69,
+                    "y": -59.3,
+                    "width": 92.31,
+                    "height": 169.23,
+                    "angle": -14
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 48.39,
+                    "radius": 92.31,
+                    "halfHeight": 23.08,
+                    "angle": 76
+                }
+            ]
+        }
+    },
+    "minimumRoleLevel": 90
+}

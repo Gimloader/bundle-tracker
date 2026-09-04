@@ -1,0 +1,82 @@
+{
+    "id": "school_biome/janitor/wet_floor_sign_02",
+    "name": "Wet Floor Sign",
+    "image": {
+        "path": "props/school_biome/janitor/wet_floor_sign_02.png",
+        "width": 414,
+        "height": 584
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.8,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 181.87,
+            "radiusX": 493.33,
+            "radiusY": 333.33
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -26.67,
+                    "y": 95.2,
+                    "width": 333.33,
+                    "height": 333.33,
+                    "angle": 11
+                },
+                {
+                    "x": 73.33,
+                    "y": 115.2,
+                    "width": 233.33,
+                    "height": 266.67,
+                    "angle": -10
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -40,
+                    "y": 15.2,
+                    "width": 266.67,
+                    "height": 466.67,
+                    "angle": 10
+                },
+                {
+                    "x": 60,
+                    "y": 15.2,
+                    "width": 233.33,
+                    "height": 433.33,
+                    "angle": -10
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -218.13,
+                    "radius": 66.67,
+                    "halfHeight": 66.67,
+                    "angle": 100
+                },
+                {
+                    "x": 0,
+                    "y": 141.87,
+                    "radius": 133.33,
+                    "halfHeight": 66.67,
+                    "angle": 102
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

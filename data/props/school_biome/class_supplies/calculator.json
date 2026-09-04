@@ -1,0 +1,53 @@
+{
+    "id": "school_biome/class_supplies/calculator",
+    "name": "Calculator",
+    "image": {
+        "path": "props/school_biome/class_supplies/calculator.png",
+        "width": 185,
+        "height": 232
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 26.67,
+            "radiusX": 266.67,
+            "radiusY": 266.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 26.67,
+                    "width": 186.67,
+                    "height": 173.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 186.67,
+                    "height": 226.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

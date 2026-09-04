@@ -1,0 +1,29 @@
+{
+    "id": "leaf-single-bright-yellow",
+    "name": "Leaf",
+    "image": {
+        "path": "props/farm/leaf/single-bright-yellow.png",
+        "width": 108,
+        "height": 68
+    },
+    "scale": 0.25,
+    "originX": 0.5,
+    "originY": 0,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

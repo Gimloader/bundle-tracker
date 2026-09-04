@@ -1,0 +1,21 @@
+{
+    "type": "weapon",
+    "id": "sand_epic",
+    "name": "Timekeeper",
+    "editorName": "Timekeeper (Epic)",
+    "description": "Time is on your side.",
+    "previewImage": "inventory/weapons/sand.png",
+    "rarity": "epic",
+    "weapon": {
+        "type": "bullet",
+        "appearance": "sand",
+        "shared": {
+            "cooldownBetweenShots": 220,
+            "allowAutoFire": false,
+            "startingProjectileDistanceFromCharacter": 0.8
+        },
+        "bullet": {
+            "ammoItemId": "medium-shards"
+        }
+    }
+}

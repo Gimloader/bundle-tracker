@@ -1,0 +1,53 @@
+{
+    "id": "school_biome/class_supplies/school_book_03",
+    "name": "Book (Math)",
+    "image": {
+        "path": "props/school_biome/class_supplies/school_book_03.png",
+        "width": 357,
+        "height": 418
+    },
+    "scale": 0.13,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 30.77,
+            "radiusX": 415.38,
+            "radiusY": 384.62
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 23.08,
+                    "width": 307.69,
+                    "height": 300,
+                    "angle": -13
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -7.69,
+                    "y": 0,
+                    "width": 307.69,
+                    "height": 353.85,
+                    "angle": -14
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

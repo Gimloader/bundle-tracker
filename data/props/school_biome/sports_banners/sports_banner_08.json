@@ -1,0 +1,96 @@
+{
+    "id": "school_biome/sports_banners/sports_banner_08",
+    "name": "Sports Banner",
+    "image": {
+        "path": "props/school_biome/sports_banners/sports_banner_08.png",
+        "width": 858,
+        "height": 2339
+    },
+    "scale": 0.1,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 1072.55,
+            "radiusX": 500,
+            "radiusY": 300
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 1062.55,
+                    "radius": 100,
+                    "halfHeight": 50,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 402.55,
+                    "width": 100,
+                    "height": 1250,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -447.45,
+                    "width": 700,
+                    "height": 850,
+                    "angle": 0
+                },
+                {
+                    "x": -110,
+                    "y": 2.55,
+                    "width": 400,
+                    "height": 250,
+                    "angle": 35
+                },
+                {
+                    "x": 100,
+                    "y": -17.45,
+                    "width": 400,
+                    "height": 300,
+                    "angle": -35
+                },
+                {
+                    "x": 0,
+                    "y": -827.45,
+                    "width": 850,
+                    "height": 100,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 1062.55,
+                    "radius": 100,
+                    "halfHeight": 50,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -867.45,
+                    "radius": 100,
+                    "halfHeight": 200,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

@@ -1,0 +1,11 @@
+{
+    "id": "Frozen Lake",
+    "name": "Frozen Lake",
+    "maskTilesUrl": "tilesets/snow/32_frozen_lake_mask.png",
+    "borderTilesUrl": "tilesets/snow/32_frozen_lake_border.png",
+    "fillUrl": "tilesets/snow/32_frozen_lake_fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/snow/32_frozen_lake_preview.png"
+}

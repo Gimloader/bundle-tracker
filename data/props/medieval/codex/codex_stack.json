@@ -1,0 +1,52 @@
+{
+    "id": "medieval/codex/codex_stack",
+    "name": "Codex Stack",
+    "image": {
+        "path": "props/medieval/codex/codex_stack.png",
+        "width": 423,
+        "height": 734
+    },
+    "scale": 0.12,
+    "originX": 0.5,
+    "originY": 0.83,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 267.22,
+            "radiusX": -550,
+            "radiusY": 350
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 200.55,
+                    "width": 366.67,
+                    "height": 325,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0.55,
+                    "width": 416.67,
+                    "height": 725,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

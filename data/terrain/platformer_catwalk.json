@@ -1,0 +1,11 @@
+{
+    "id": "platformer_catwalk",
+    "name": "Catwalk",
+    "maskTilesUrl": "tilesets/platformer_catwalk/mask.png",
+    "borderTilesUrl": "tilesets/platformer_catwalk/border.png",
+    "fillUrl": "tilesets/platformer_catwalk/fill.png",
+    "blockedMapStyles": [
+        "topDown"
+    ],
+    "previewUrl": "tilesets/platformer_catwalk/preview.png"
+}

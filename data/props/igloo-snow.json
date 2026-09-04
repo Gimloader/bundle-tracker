@@ -1,0 +1,67 @@
+{
+    "id": "igloo-snow",
+    "name": "Igloo (Snow)",
+    "image": {
+        "path": "props/igloos/snow.png",
+        "width": 731,
+        "height": 628
+    },
+    "scale": 0.32,
+    "originX": 0.5,
+    "originY": 0.72,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 119.41,
+            "radiusX": 856.25,
+            "radiusY": 456.25
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 38.16,
+                    "radius": 234.38,
+                    "halfHeight": 134.38,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 138.16,
+                    "width": 406.25,
+                    "height": 343.75,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 38.16,
+                    "radius": 234.38,
+                    "halfHeight": 134.38,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": -102.46,
+                    "radius": 218.75,
+                    "halfHeight": 93.75,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

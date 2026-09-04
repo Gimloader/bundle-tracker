@@ -1,0 +1,10 @@
+{
+    "id": "speed",
+    "name": "Speed Modifier",
+    "description": "Change how fast a player moves",
+    "optionSchema": "{\"options\":[{\"key\":\"speed\",\"option\":{\"label\":\"Speed\",\"description\":\"Speed the player will move at. 1 is default speed, 0.5 is half speed, 2 is double speed, etc.\",\"type\":\"numberInput\",\"defaultValue\":1,\"validators\":[null],\"props\":{\"min\":0,\"max\":4,\"step\":0.01,\"allowEmpty\":false,\"useSlider\":false}}},{\"key\":\"activateWhenReceivingFrom\",\"option\":{\"label\":\"Set player to configured speed when receiving on\",\"type\":\"textInput\",\"defaultValue\":\"\",\"validators\":[null],\"props\":{\"placeholder\":\"Channel name...\",\"category\":\"channel\",\"maxLength\":100},\"description\":\"Set the triggering player to the configured speed when the device receives a signal from the selected channel\"}}]}",
+    "defaultState": "{}",
+    "codeGridSchema": "{\"allowChannelGrids\":false,\"triggers\":[],\"customBlocks\":[]}",
+    "wireConfig": "{\"in\":{\"connections\":[{\"id\":\"setSpeed\",\"name\":\"Set player to configured speed\"}]}}",
+    "maxOnMap": 32
+}

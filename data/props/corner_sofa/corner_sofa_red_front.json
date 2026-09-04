@@ -1,0 +1,82 @@
+{
+    "id": "corner_sofa/corner_sofa_red_front",
+    "name": "Red Corner Sofa (Front)",
+    "image": {
+        "path": "props/corner_sofa/corner_sofa_red_front.png",
+        "width": 1303,
+        "height": 1362
+    },
+    "scale": 0.16,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -93.75,
+                    "y": -93.75,
+                    "width": 1093.75,
+                    "height": 437.5,
+                    "angle": 0
+                },
+                {
+                    "x": 156.25,
+                    "y": 375,
+                    "width": 562.5,
+                    "height": 625,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 406.25,
+                    "y": 187.5,
+                    "radius": 250,
+                    "halfHeight": 243.75,
+                    "angle": 0
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -450,
+                    "y": -262.5,
+                    "width": 406.25,
+                    "height": 831.25,
+                    "angle": 0
+                },
+                {
+                    "x": 256.25,
+                    "y": 331.25,
+                    "width": 787.5,
+                    "height": 543.75,
+                    "angle": 0
+                },
+                {
+                    "x": 150,
+                    "y": 531.25,
+                    "width": 581.25,
+                    "height": 300,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -162.5,
+                    "radius": 418.75,
+                    "halfHeight": 293.75,
+                    "angle": 121
+                }
+            ]
+        }
+    }
+}

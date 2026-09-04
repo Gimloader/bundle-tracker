@@ -1,0 +1,61 @@
+{
+    "id": "wasteland_biome/electric_post",
+    "name": "Electric Post",
+    "image": {
+        "path": "props/wasteland_biome/electric_post.png",
+        "width": 1075,
+        "height": 2306
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 5,
+            "y": 1067.7,
+            "radiusX": 330,
+            "radiusY": 250
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 5,
+                    "y": 922.7,
+                    "radius": 110,
+                    "halfHeight": 115,
+                    "angle": 0
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -792.3,
+                    "width": 1075,
+                    "height": 525,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -2.3,
+                    "radius": 110,
+                    "halfHeight": 1015,
+                    "angle": 0
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

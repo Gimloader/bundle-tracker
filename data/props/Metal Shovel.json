@@ -1,0 +1,29 @@
+{
+    "id": "Metal Shovel",
+    "name": "Metal Shovel",
+    "image": {
+        "path": "/props/farm/metal_shovel/shovel.png",
+        "width": 457,
+        "height": 192
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.48,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

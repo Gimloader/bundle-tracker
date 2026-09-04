@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "beach-fish",
+    "name": "Beach Fish",
+    "editorName": "Beach Fish",
+    "description": "You catch some waves while I swim in them.",
+    "previewImage": "inventory/resources/beach_fish.png"
+}

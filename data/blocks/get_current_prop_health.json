@@ -1,0 +1,8 @@
+{
+    "type": "get_current_prop_health",
+    "message0": "Prop's Current Health",
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": "Number"
+}

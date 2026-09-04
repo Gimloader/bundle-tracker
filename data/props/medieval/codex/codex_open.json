@@ -1,0 +1,37 @@
+{
+    "id": "medieval/codex/codex_open",
+    "name": "Codex (Open)",
+    "image": {
+        "path": "props/medieval/codex/codex_open.png",
+        "width": 604,
+        "height": 467
+    },
+    "scale": 0.12,
+    "originX": 0.5,
+    "originY": 0,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -25.17,
+                    "width": 616.67,
+                    "height": 433.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

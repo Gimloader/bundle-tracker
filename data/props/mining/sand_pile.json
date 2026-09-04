@@ -1,0 +1,90 @@
+{
+    "id": "mining/sand_pile",
+    "name": "Sand Pile",
+    "image": {
+        "path": "props/mining/sand_pile.png",
+        "width": 422,
+        "height": 329
+    },
+    "scale": 0.11,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 54.55,
+            "y": 128.14,
+            "radiusX": 381.82,
+            "radiusY": 145.45
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 27.27,
+                    "y": 73.59,
+                    "width": 354.55,
+                    "height": 181.82,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 36.36,
+                    "y": 91.77,
+                    "radius": 72.73,
+                    "halfHeight": 81.82,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 92.86,
+                    "y": 278.79,
+                    "width": 235.71,
+                    "height": 100,
+                    "angle": 0
+                },
+                {
+                    "x": 142.86,
+                    "y": 193.07,
+                    "width": 78.57,
+                    "height": 142.86,
+                    "angle": -21
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 28.79,
+                    "radius": 128.57,
+                    "halfHeight": 35.71,
+                    "angle": 60
+                },
+                {
+                    "x": 64.29,
+                    "y": -106.93,
+                    "radius": 42.86,
+                    "halfHeight": 14.29,
+                    "angle": 33
+                },
+                {
+                    "x": -142.86,
+                    "y": -21.21,
+                    "radius": 35.71,
+                    "halfHeight": 42.86,
+                    "angle": 97
+                }
+            ]
+        }
+    },
+    "minimumRoleLevel": 90
+}

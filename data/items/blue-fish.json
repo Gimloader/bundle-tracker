@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "blue-fish",
+    "name": "Blue Fish",
+    "editorName": "Blue Fish",
+    "description": "Just blending in...",
+    "previewImage": "inventory/resources/blue_fish.png"
+}

@@ -1,0 +1,15 @@
+{
+    "type": "get_amount",
+    "message0": "Get Amount Of Current Item %1 ",
+    "args0": [
+        {
+            "type": "input_dummy"
+        }
+    ],
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": [
+        "Number"
+    ]
+}

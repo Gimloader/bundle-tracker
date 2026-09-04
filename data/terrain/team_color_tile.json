@@ -1,0 +1,9 @@
+{
+    "id": "team_color_tile",
+    "name": "Team Color Tile",
+    "maskTilesUrl": "tilesets/team_color_tile/mask.png",
+    "borderTilesUrl": "tilesets/team_color_tile/border.png",
+    "fillUrl": "tilesets/team_color_tile/fill.png",
+    "minimumRoleLevel": 90,
+    "previewUrl": "tilesets/team_color_tile/preview.png"
+}

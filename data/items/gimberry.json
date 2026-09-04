@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "gimberry",
+    "name": "GimBerry",
+    "editorName": "GimBerry",
+    "description": "Fancy fruit.",
+    "previewImage": "inventory/resources/gimberry.png"
+}

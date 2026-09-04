@@ -1,0 +1,36 @@
+{
+    "id": "Chemical green",
+    "name": "Green Chemical ",
+    "image": {
+        "path": "props/science_lab/chemical_green.png",
+        "width": 146,
+        "height": 217
+    },
+    "scale": 0.17,
+    "originX": 0.5,
+    "originY": 0.85,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 99.48,
+            "radiusX": 188.24,
+            "radiusY": 58.82
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

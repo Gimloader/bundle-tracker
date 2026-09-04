@@ -1,0 +1,66 @@
+{
+    "id": "Wide Bush dry",
+    "name": "Dry Bush (Wide)",
+    "image": {
+        "path": "props/plants/bushes/wide_dry.png",
+        "width": 905,
+        "height": 353
+    },
+    "scale": 0.26,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 103.42,
+            "radiusX": 984.62,
+            "radiusY": 246.15
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 99.58,
+                    "radius": 57.69,
+                    "halfHeight": 365.38,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -57.69,
+                    "y": 3.42,
+                    "width": 557.69,
+                    "height": 346.15,
+                    "angle": 0
+                },
+                {
+                    "x": 326.92,
+                    "y": 26.5,
+                    "width": 253.85,
+                    "height": 280.77,
+                    "angle": 0
+                },
+                {
+                    "x": -403.85,
+                    "y": 41.88,
+                    "width": 134.62,
+                    "height": 207.69,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

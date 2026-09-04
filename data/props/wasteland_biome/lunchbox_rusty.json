@@ -1,0 +1,95 @@
+{
+    "id": "wasteland_biome/lunchbox_rusty",
+    "name": "Lunch Box (Rusty)",
+    "image": {
+        "path": "props/wasteland_biome/lunchbox_rusty.png",
+        "width": 499,
+        "height": 376
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.65,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 56.4,
+            "radiusX": 550,
+            "radiusY": 300
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 85,
+                    "y": 96.4,
+                    "width": 325,
+                    "height": 75,
+                    "angle": -20
+                },
+                {
+                    "x": -140,
+                    "y": 106.4,
+                    "width": 200,
+                    "height": 75,
+                    "angle": 30
+                },
+                {
+                    "x": 0,
+                    "y": 6.4,
+                    "width": 500,
+                    "height": 150,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 85,
+                    "y": 96.4,
+                    "width": 325,
+                    "height": 75,
+                    "angle": -20
+                },
+                {
+                    "x": -140,
+                    "y": 106.4,
+                    "width": 200,
+                    "height": 75,
+                    "angle": 30
+                },
+                {
+                    "x": 0,
+                    "y": 6.4,
+                    "width": 500,
+                    "height": 150,
+                    "angle": 0
+                },
+                {
+                    "x": -75,
+                    "y": -73.6,
+                    "width": 325,
+                    "height": 125,
+                    "angle": -21
+                },
+                {
+                    "x": 135,
+                    "y": -93.6,
+                    "width": 200,
+                    "height": 100,
+                    "angle": 30
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

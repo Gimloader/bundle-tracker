@@ -1,0 +1,74 @@
+{
+    "id": "school_biome/plants/plant_01",
+    "name": "Plant",
+    "image": {
+        "path": "props/school_biome/plants/plant_01.png",
+        "width": 340,
+        "height": 523
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.85,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 189.72,
+            "radiusX": 373.33,
+            "radiusY": 240
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 169.72,
+                    "radius": 86.67,
+                    "halfHeight": 40,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": 16.38,
+                    "radius": 133.33,
+                    "halfHeight": 33.33,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 169.72,
+                    "radius": 86.67,
+                    "halfHeight": 40,
+                    "angle": 90
+                },
+                {
+                    "x": 0,
+                    "y": 16.38,
+                    "radius": 133.33,
+                    "halfHeight": 33.33,
+                    "angle": 90
+                },
+                {
+                    "x": 20,
+                    "y": -63.62,
+                    "radius": 100,
+                    "halfHeight": 100,
+                    "angle": 11
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

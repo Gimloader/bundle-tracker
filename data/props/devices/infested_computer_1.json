@@ -1,0 +1,52 @@
+{
+    "id": "devices/infested_computer_1",
+    "name": "Computer",
+    "image": {
+        "path": "props/devices/infested_computer_1.png",
+        "width": 366,
+        "height": 626
+    },
+    "scale": 0.16,
+    "originX": 0.5,
+    "originY": 0.74,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 212.74,
+            "radiusX": 612.5,
+            "radiusY": 275
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0.24,
+                    "width": 343.75,
+                    "height": 343.75,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0.24,
+                    "width": 362.5,
+                    "height": 625,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

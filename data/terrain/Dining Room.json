@@ -1,0 +1,12 @@
+{
+    "id": "Dining Room",
+    "name": "Cafeteria",
+    "maskTilesUrl": "tilesets/dining_room/mask.png",
+    "borderTilesUrl": "tilesets/dining_room/border.png",
+    "fillUrl": "tilesets/dining_room/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "seasonTicketRequired": true,
+    "previewUrl": "tilesets/dining_room/preview.png"
+}

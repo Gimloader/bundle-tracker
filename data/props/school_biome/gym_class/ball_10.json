@@ -1,0 +1,53 @@
+{
+    "id": "school_biome/gym_class/ball_10",
+    "name": "Toy Ball (Football)",
+    "image": {
+        "path": "props/school_biome/gym_class/ball_10.png",
+        "width": 442,
+        "height": 307
+    },
+    "scale": 0.12,
+    "originX": 0.5,
+    "originY": 0.77,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 57.89,
+            "radiusX": 500,
+            "radiusY": 300
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -0.44,
+                    "radius": 150,
+                    "halfHeight": 75,
+                    "angle": 75
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -0.44,
+                    "radius": 150,
+                    "halfHeight": 75,
+                    "angle": 75
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

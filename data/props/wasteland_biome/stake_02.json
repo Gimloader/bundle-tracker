@@ -1,0 +1,53 @@
+{
+    "id": "wasteland_biome/stake_02",
+    "name": "Stake",
+    "image": {
+        "path": "props/wasteland_biome/stake_02.png",
+        "width": 167,
+        "height": 377
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 15,
+            "y": 169.65,
+            "radiusX": 180,
+            "radiusY": 100
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 104.65,
+                    "width": 115,
+                    "height": 155,
+                    "angle": -10
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -20,
+                    "y": -5.35,
+                    "width": 115,
+                    "height": 380,
+                    "angle": -10
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

@@ -1,0 +1,18 @@
+{
+    "type": "weapon",
+    "id": "pickaxe_legendary",
+    "name": "Pickaxe",
+    "editorName": "Pickaxe (Legendary)",
+    "description": "Dig deep.",
+    "previewImage": "inventory/weapons/pickaxe.png",
+    "rarity": "legendary",
+    "weapon": {
+        "type": "melee",
+        "appearance": "pickaxe",
+        "shared": {
+            "cooldownBetweenShots": 550,
+            "allowAutoFire": true,
+            "startingProjectileDistanceFromCharacter": 0.8
+        }
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "id": "mining/sand_pile_2",
+    "name": "Sand Pile",
+    "image": {
+        "path": "props/mining/sand_pile_2.png",
+        "width": 417,
+        "height": 522
+    },
+    "scale": 0.14,
+    "originX": 0.5,
+    "originY": 0.66,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 212.09,
+            "radiusX": 485.71,
+            "radiusY": 214.29
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 119.23,
+                    "width": 392.86,
+                    "height": 285.71,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -2.19,
+                    "width": 400,
+                    "height": 521.43,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "minimumRoleLevel": 90
+}

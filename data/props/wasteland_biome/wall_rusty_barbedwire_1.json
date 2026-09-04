@@ -1,0 +1,53 @@
+{
+    "id": "wasteland_biome/wall_rusty_barbedwire_1",
+    "name": "Wall Barbed Wire (Horizontal Rusty)",
+    "image": {
+        "path": "props/wasteland_biome/wall_rusty_barbedwire_1.png",
+        "width": 1124,
+        "height": 682
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.93,
+    "shadows": [
+        {
+            "x": 30,
+            "y": 233.26,
+            "radiusX": 1130,
+            "radiusY": 380
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 20,
+                    "y": 118.26,
+                    "width": 1050,
+                    "height": 425,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 20,
+                    "y": -6.74,
+                    "width": 1050,
+                    "height": 675,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

@@ -1,0 +1,52 @@
+{
+    "id": "Box Wooden",
+    "name": "Wooden Crate",
+    "image": {
+        "path": "props/boxes/box_wooden.png",
+        "width": 281,
+        "height": 265
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 128.5,
+            "radiusX": 352,
+            "radiusY": 92
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 34.5,
+                    "width": 280,
+                    "height": 200,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0.5,
+                    "width": 280,
+                    "height": 240,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

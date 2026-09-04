@@ -1,0 +1,43 @@
+{
+    "id": "mining/stovetop",
+    "name": "Stovetop",
+    "image": {
+        "path": "props/mining/stovetop.png",
+        "width": 223,
+        "height": 236
+    },
+    "scale": 0.17,
+    "originX": 0.5,
+    "originY": 0.97,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 105.04,
+            "radiusX": 247.06,
+            "radiusY": 94.12
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": 0,
+                    "y": 40.33,
+                    "radius": 94.12
+                }
+            ],
+            "capsule": []
+        }
+    },
+    "minimumRoleLevel": 90
+}

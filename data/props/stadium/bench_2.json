@@ -1,0 +1,52 @@
+{
+    "id": "stadium/bench_2",
+    "name": "Stadium Bench (Blue)",
+    "image": {
+        "path": "props/stadium/bench_2.png",
+        "width": 3154,
+        "height": 1627
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.92,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 430.01,
+            "radiusX": 3533.33,
+            "radiusY": 1466.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 176.67,
+                    "width": 3133.33,
+                    "height": 1266.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 16.67,
+                    "width": 3133.33,
+                    "height": 1633.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

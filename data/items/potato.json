@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "potato",
+    "name": "Potato",
+    "editorName": "Potato",
+    "description": "Starchy. Flies around your room.",
+    "previewImage": "inventory/resources/potato.png"
+}

@@ -1,0 +1,74 @@
+{
+    "id": "medieval/beds/blue_horizontal",
+    "name": "Medieval Bed (Blue)",
+    "image": {
+        "path": "props/medieval/beds/blue_horizontal.png",
+        "width": 994,
+        "height": 785
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.53,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 308.55,
+            "radiusX": 1260,
+            "radiusY": 450
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 133.55,
+                    "width": 990,
+                    "height": 405,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 68.55,
+                    "width": 995,
+                    "height": 540,
+                    "angle": 0
+                },
+                {
+                    "x": -455,
+                    "y": -1.45,
+                    "width": 85,
+                    "height": 785,
+                    "angle": 0
+                },
+                {
+                    "x": 435,
+                    "y": 343.55,
+                    "width": 85,
+                    "height": 100,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -275,
+                    "y": -186.45,
+                    "radius": -60,
+                    "halfHeight": 230,
+                    "angle": 96
+                }
+            ]
+        }
+    }
+}

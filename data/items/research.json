@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "research",
+    "name": "Research",
+    "editorName": "Research",
+    "description": "What you need to uncover the next breakthrough",
+    "previewImage": "inventory/resources/research.png"
+}

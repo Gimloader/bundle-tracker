@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "corn",
+    "name": "Corn",
+    "editorName": "Corn",
+    "description": "Have a corntastic day!",
+    "previewImage": "inventory/resources/corn.png"
+}

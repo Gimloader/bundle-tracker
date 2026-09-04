@@ -1,0 +1,11 @@
+{
+    "id": "Sci-Fi Lab Floor White",
+    "name": "Lab Floor (White)",
+    "maskTilesUrl": "tilesets/scifi_lab_floor/mask.png",
+    "borderTilesUrl": "tilesets/scifi_lab_floor/border_white.png",
+    "fillUrl": "tilesets/scifi_lab_floor/fill_white.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/scifi_lab_floor/preview_white.png"
+}

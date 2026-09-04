@@ -1,0 +1,9 @@
+{
+    "id": "Dynamic Sand",
+    "name": "Dynamic Sand",
+    "maskTilesUrl": "tilesets/dynamic/mask.png",
+    "borderTilesUrl": "tilesets/dynamic/sand/border.png",
+    "fillUrl": "tilesets/dynamic/sand/fill.png",
+    "previewUrl": "tilesets/dynamic/sand/preview.png",
+    "health": 5
+}

@@ -1,0 +1,66 @@
+{
+    "id": "Bench",
+    "name": "Park Bench",
+    "image": {
+        "path": "props/park/bench.png",
+        "width": 543,
+        "height": 332
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 144,
+            "radiusX": 592,
+            "radiusY": 136
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 56,
+                    "width": 540,
+                    "height": 220,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -18,
+                    "width": 540,
+                    "height": 240,
+                    "angle": 0
+                },
+                {
+                    "x": 222,
+                    "y": 2,
+                    "width": 34,
+                    "height": 332,
+                    "angle": 0
+                },
+                {
+                    "x": -222,
+                    "y": 2,
+                    "width": 34,
+                    "height": 332,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

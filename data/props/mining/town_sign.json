@@ -1,0 +1,89 @@
+{
+    "id": "mining/town_sign",
+    "name": "Town Sign",
+    "image": {
+        "path": "props/mining/town_sign.png",
+        "width": 1135,
+        "height": 982
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": 20,
+            "y": 457.67,
+            "radiusX": 1133.33,
+            "radiusY": 333.33
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -9,
+                    "width": 1133.33,
+                    "height": 500,
+                    "angle": 0
+                },
+                {
+                    "x": -353.33,
+                    "y": 324.33,
+                    "width": 153.33,
+                    "height": 333.33,
+                    "angle": 0
+                },
+                {
+                    "x": 413.33,
+                    "y": 291,
+                    "width": 153.33,
+                    "height": 400,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -55.67,
+                    "width": 1133.33,
+                    "height": 626.67,
+                    "angle": 0
+                },
+                {
+                    "x": -353.33,
+                    "y": 11,
+                    "width": 153.33,
+                    "height": 946.67,
+                    "angle": 0
+                },
+                {
+                    "x": 413.33,
+                    "y": 17.67,
+                    "width": 153.33,
+                    "height": 953.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -275.67,
+                    "radius": 200,
+                    "halfHeight": 66.67,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "minimumRoleLevel": 90
+}

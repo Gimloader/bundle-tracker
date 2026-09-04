@@ -1,0 +1,53 @@
+{
+    "id": "school_biome/locker_room/locker_05",
+    "name": "Locker (Red)",
+    "image": {
+        "path": "props/school_biome/locker_room/locker_05.png",
+        "width": 342,
+        "height": 880
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.92,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 369.6,
+            "radiusX": 470,
+            "radiusY": 300
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 64.6,
+                    "width": 345,
+                    "height": 750,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 4.6,
+                    "width": 345,
+                    "height": 875,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

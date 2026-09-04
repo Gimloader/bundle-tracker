@@ -1,0 +1,75 @@
+{
+    "id": "wasteland_biome/nuclear_barrel_horizontal_01",
+    "name": "Nuclear Barrel (Horizontal)",
+    "image": {
+        "path": "props/wasteland_biome/nuclear_barrel_horizontal_01.png",
+        "width": 681,
+        "height": 493
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.63,
+    "shadows": [
+        {
+            "x": -20,
+            "y": 49.09,
+            "radiusX": 650,
+            "radiusY": 450
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -25,
+                    "y": 39.09,
+                    "radius": 150,
+                    "halfHeight": 165,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -25,
+                    "y": -25.91,
+                    "width": 375,
+                    "height": 390,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 150,
+                    "y": -30.91,
+                    "radius": 140,
+                    "halfHeight": 75,
+                    "angle": 0
+                },
+                {
+                    "x": -215,
+                    "y": -20.91,
+                    "radius": 115,
+                    "halfHeight": 85,
+                    "angle": 0
+                },
+                {
+                    "x": 175,
+                    "y": 164.09,
+                    "radius": 75,
+                    "halfHeight": 100,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

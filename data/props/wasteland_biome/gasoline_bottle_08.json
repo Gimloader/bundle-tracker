@@ -1,0 +1,117 @@
+{
+    "id": "wasteland_biome/gasoline_bottle_08",
+    "name": "Gasoline Bottle",
+    "image": {
+        "path": "props/wasteland_biome/gasoline_bottle_08.png",
+        "width": 419,
+        "height": 599
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.79,
+    "shadows": [
+        {
+            "x": 15,
+            "y": 173.71,
+            "radiusX": 450,
+            "radiusY": 300
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -45,
+                    "y": 173.71,
+                    "width": 175,
+                    "height": 200,
+                    "angle": 26
+                },
+                {
+                    "x": 55,
+                    "y": 163.71,
+                    "width": 250,
+                    "height": 175,
+                    "angle": -31
+                },
+                {
+                    "x": 20,
+                    "y": 73.71,
+                    "width": 375,
+                    "height": 200,
+                    "angle": 0
+                },
+                {
+                    "x": -30,
+                    "y": 173.71,
+                    "width": 275,
+                    "height": 100,
+                    "angle": 0
+                },
+                {
+                    "x": -90,
+                    "y": -141.29,
+                    "width": 100,
+                    "height": 375,
+                    "angle": -30
+                },
+                {
+                    "x": -25,
+                    "y": 23.71,
+                    "width": 200,
+                    "height": 225,
+                    "angle": -25
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 75,
+                    "y": -1.29,
+                    "radius": 75,
+                    "halfHeight": 75,
+                    "angle": 40
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -45,
+                    "y": 173.71,
+                    "width": 175,
+                    "height": 200,
+                    "angle": 26
+                },
+                {
+                    "x": 55,
+                    "y": 163.71,
+                    "width": 250,
+                    "height": 175,
+                    "angle": -31
+                },
+                {
+                    "x": 20,
+                    "y": 98.71,
+                    "width": 375,
+                    "height": 125,
+                    "angle": 0
+                },
+                {
+                    "x": -30,
+                    "y": 173.71,
+                    "width": 275,
+                    "height": 100,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

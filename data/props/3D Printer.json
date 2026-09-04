@@ -1,0 +1,52 @@
+{
+    "id": "3D Printer",
+    "name": "3D Printer",
+    "image": {
+        "path": "props/science_lab/3D_printer.png",
+        "width": 309,
+        "height": 300
+    },
+    "scale": 0.22,
+    "originX": 0.5,
+    "originY": 0.85,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 114.09,
+            "radiusX": 418.18,
+            "radiusY": 181.82
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 73.18,
+                    "width": 304.55,
+                    "height": 136.36,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0.45,
+                    "width": 304.55,
+                    "height": 300,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

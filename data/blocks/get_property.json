@@ -1,0 +1,20 @@
+{
+    "type": "get_property",
+    "message0": "Get Property %1 ",
+    "args0": [
+        {
+            "type": "input_value",
+            "name": "get_property",
+            "check": "String",
+            "align": "RIGHT"
+        }
+    ],
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": [
+        "String",
+        "Number",
+        "Boolean"
+    ]
+}

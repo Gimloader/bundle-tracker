@@ -1,0 +1,9 @@
+{
+    "id": "Dynamic Silver",
+    "name": "Dynamic Silver",
+    "maskTilesUrl": "tilesets/dynamic/mask.png",
+    "borderTilesUrl": "tilesets/dynamic/silver/border.png",
+    "fillUrl": "tilesets/dynamic/silver/fill.png",
+    "previewUrl": "tilesets/dynamic/silver/preview.png",
+    "health": 100
+}

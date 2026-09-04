@@ -1,0 +1,8 @@
+{
+    "type": "tag_zone_other_character_name",
+    "message0": "Other Player's Name",
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": "String"
+}

@@ -1,0 +1,12 @@
+{
+    "id": "field",
+    "name": "Field",
+    "maskTilesUrl": "tilesets/field/mask.png",
+    "borderTilesUrl": "tilesets/field/border.png",
+    "fillUrl": "tilesets/field/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "minimumRoleLevel": 90,
+    "previewUrl": "tilesets/field/preview.png"
+}

@@ -1,0 +1,12 @@
+{
+    "id": "Platformer Classtoom Green",
+    "name": "Classroom Tile  (Green)",
+    "maskTilesUrl": "tilesets/platformer_classroom_green/mask.png",
+    "borderTilesUrl": "tilesets/platformer_classroom_green/border.png",
+    "fillUrl": "tilesets/platformer_classroom_green/fill.png",
+    "blockedMapStyles": [
+        "topDown"
+    ],
+    "seasonTicketRequired": true,
+    "previewUrl": "tilesets/platformer_classroom_green/preview.png"
+}

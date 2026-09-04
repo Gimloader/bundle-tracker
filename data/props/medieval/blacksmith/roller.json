@@ -1,0 +1,37 @@
+{
+    "id": "medieval/blacksmith/roller",
+    "name": "Roller",
+    "image": {
+        "path": "props/medieval/blacksmith/roller.png",
+        "width": 604,
+        "height": 106
+    },
+    "scale": 0.11,
+    "originX": 0.5,
+    "originY": 0,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 1.55,
+                    "width": 600,
+                    "height": 109.09,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

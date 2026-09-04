@@ -1,0 +1,11 @@
+{
+    "id": "Stone Pavement Dry Grass",
+    "name": "Stone Pavement (Dry Grass)",
+    "maskTilesUrl": "tilesets/stone_pavement/mask.png",
+    "borderTilesUrl": "tilesets/stone_pavement/border.png",
+    "fillUrl": "tilesets/stone_pavement/fill_dry_grass.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/stone_pavement/preview_dry_grass.png"
+}

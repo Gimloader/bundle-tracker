@@ -1,0 +1,38 @@
+{
+    "id": "school_biome/notebooks/notebook_open_03",
+    "name": "Notebook (Open)",
+    "image": {
+        "path": "props/school_biome/notebooks/notebook_open_03.png",
+        "width": 557,
+        "height": 323
+    },
+    "scale": 0.12,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 541.67,
+                    "height": 333.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

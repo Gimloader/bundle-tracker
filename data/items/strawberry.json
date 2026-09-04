@@ -1,0 +1,8 @@
+{
+    "type": "resource",
+    "id": "strawberry",
+    "name": "Strawberry",
+    "editorName": "Strawberry",
+    "description": "Not the thing you put in your cup, that's just a straw.",
+    "previewImage": "inventory/resources/strawberry.png"
+}

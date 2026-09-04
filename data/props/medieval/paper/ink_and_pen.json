@@ -1,0 +1,50 @@
+{
+    "id": "medieval/paper/ink_and_pen",
+    "name": "Ink & Pen",
+    "image": {
+        "path": "props/medieval/paper/ink_and_pen.png",
+        "width": 296,
+        "height": 392
+    },
+    "scale": 0.17,
+    "originX": 0.5,
+    "originY": 0.82,
+    "shadows": [
+        {
+            "x": -52.94,
+            "y": 125.44,
+            "radiusX": 258.82,
+            "radiusY": 188.24
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [
+                {
+                    "x": -52.94,
+                    "y": 137.2,
+                    "radius": 58.82
+                }
+            ],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -52.94,
+                    "y": 96.03,
+                    "radius": 105.88,
+                    "halfHeight": 5.88,
+                    "angle": 0
+                }
+            ]
+        }
+    }
+}

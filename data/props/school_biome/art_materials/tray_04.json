@@ -1,0 +1,69 @@
+{
+    "id": "school_biome/art_materials/tray_04",
+    "name": "Storage Tray (Red)",
+    "image": {
+        "path": "props/school_biome/art_materials/tray_04.png",
+        "width": 328,
+        "height": 319
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 26.67,
+            "radiusX": 400,
+            "radiusY": 333.33
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "width": 326.67,
+                    "height": 166.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 60,
+                    "radius": 100,
+                    "halfHeight": 46.67,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -33.33,
+                    "width": 326.67,
+                    "height": 253.33,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 60,
+                    "radius": 100,
+                    "halfHeight": 46.67,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

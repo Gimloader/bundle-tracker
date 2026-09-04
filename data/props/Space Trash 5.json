@@ -1,0 +1,29 @@
+{
+    "id": "Space Trash 5",
+    "name": "Space Trash",
+    "image": {
+        "path": "props/space_props/trash_5.png",
+        "width": 134,
+        "height": 80
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

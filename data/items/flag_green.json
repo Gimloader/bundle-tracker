@@ -1,0 +1,12 @@
+{
+    "type": "item",
+    "id": "flag_green",
+    "name": "Flag",
+    "editorName": "Flag",
+    "description": "Claim & capture!",
+    "previewImage": "inventory/items/flag_green.png",
+    "minimumRoleLevel": 90,
+    "rarity": "rare",
+    "useCommand": "Drop",
+    "maxStackSize": 1
+}

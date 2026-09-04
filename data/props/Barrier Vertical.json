@@ -1,0 +1,59 @@
+{
+    "id": "Barrier Vertical",
+    "name": "Barrier (Vertical)",
+    "image": {
+        "path": "props/barriers/barrier_vertical.png",
+        "width": 178,
+        "height": 426
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.4,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 83.4,
+            "radiusX": 260,
+            "radiusY": 356
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 57.4,
+                    "width": 180,
+                    "height": 310,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 57.4,
+                    "width": 180,
+                    "height": 310,
+                    "angle": 0
+                },
+                {
+                    "x": 0,
+                    "y": -112.6,
+                    "width": 90,
+                    "height": 200,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

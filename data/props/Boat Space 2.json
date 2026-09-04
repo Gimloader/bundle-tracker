@@ -1,0 +1,30 @@
+{
+    "id": "Boat Space 2",
+    "name": "Boat Space 2",
+    "image": {
+        "path": "props/boats/boat_space_2.png",
+        "width": 798,
+        "height": 467
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "minimumRoleLevel": 90
+}

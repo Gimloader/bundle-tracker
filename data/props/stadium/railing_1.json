@@ -1,0 +1,66 @@
+{
+    "id": "stadium/railing_1",
+    "name": "Railing",
+    "image": {
+        "path": "props/stadium/railing_1.png",
+        "width": 385,
+        "height": 1336
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.95,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 154.53,
+            "radiusX": 586.67,
+            "radiusY": 1266.67
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 147.87,
+                    "width": 386.67,
+                    "height": 1000,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 133.33,
+                    "y": 1.2,
+                    "width": 140,
+                    "height": 1340,
+                    "angle": 0
+                },
+                {
+                    "x": -60,
+                    "y": -272.13,
+                    "width": 280,
+                    "height": 166.67,
+                    "angle": 0
+                },
+                {
+                    "x": -40,
+                    "y": 561.2,
+                    "width": 300,
+                    "height": 166.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

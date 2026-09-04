@@ -1,0 +1,9 @@
+{
+    "type": "resource",
+    "id": "gold",
+    "name": "Gold",
+    "editorName": "Gold",
+    "description": "Ahoy! Get me some gold coins!",
+    "previewImage": "inventory/resources/dollar-coin.png",
+    "minimumRoleLevel": 90
+}

@@ -1,0 +1,36 @@
+{
+    "id": "Chemical red",
+    "name": "Red Chemical ",
+    "image": {
+        "path": "props/science_lab/chemical_red.png",
+        "width": 142,
+        "height": 222
+    },
+    "scale": 0.17,
+    "originX": 0.5,
+    "originY": 0.85,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 101.23,
+            "radiusX": 188.24,
+            "radiusY": 58.82
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

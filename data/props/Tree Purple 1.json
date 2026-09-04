@@ -1,0 +1,81 @@
+{
+    "id": "Tree Purple 1",
+    "name": "Tree (Purple)",
+    "image": {
+        "path": "props/trees/tree_purple_1.png",
+        "width": 394,
+        "height": 449
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 1,
+    "shadows": [
+        {
+            "x": -10,
+            "y": 212.5,
+            "radiusX": 232,
+            "radiusY": 80
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": -8,
+                    "y": 126.5,
+                    "width": 60,
+                    "height": 140,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": -8,
+                    "y": 146.5,
+                    "width": 60,
+                    "height": 140,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 90,
+                    "y": -33.5,
+                    "radius": 80,
+                    "halfHeight": 20,
+                    "angle": 90
+                },
+                {
+                    "x": -20,
+                    "y": -105.5,
+                    "radius": 110,
+                    "halfHeight": 20,
+                    "angle": 90
+                },
+                {
+                    "x": -100,
+                    "y": -45.5,
+                    "radius": 90,
+                    "halfHeight": 10,
+                    "angle": 0
+                },
+                {
+                    "x": -14,
+                    "y": 4.5,
+                    "radius": 70,
+                    "halfHeight": 50,
+                    "angle": 90
+                }
+            ]
+        }
+    }
+}

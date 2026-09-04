@@ -1,0 +1,11 @@
+{
+    "id": "Snowy Grass",
+    "name": "Snowy Grass",
+    "maskTilesUrl": "tilesets/snow/31_snowy_grass_mask.png",
+    "borderTilesUrl": "tilesets/snow/31_snowy_grass_border.png",
+    "fillUrl": "tilesets/snow/31_snowy_grass_fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "previewUrl": "tilesets/snow/31_snowy_grass_preview.png"
+}

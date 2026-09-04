@@ -1,0 +1,30 @@
+{
+    "id": "school_biome/classroom_chairs/back",
+    "name": "Classroom Chair",
+    "image": {
+        "path": "props/school_biome/classroom_chairs/back.png",
+        "width": 454,
+        "height": 497
+    },
+    "scale": 0.5,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

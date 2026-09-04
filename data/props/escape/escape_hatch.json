@@ -1,0 +1,60 @@
+{
+    "id": "escape/escape_hatch",
+    "name": "Escape Hatch",
+    "image": {
+        "path": "props/escape/escape_hatch.png",
+        "width": 793,
+        "height": 871
+    },
+    "scale": 0.22,
+    "originX": 0.34,
+    "originY": 1,
+    "shadows": [],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -126.88,
+                    "y": 212.77,
+                    "radius": 227.27,
+                    "halfHeight": 45.45,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 182.21,
+                    "y": 108.23,
+                    "width": 272.73,
+                    "height": 136.36,
+                    "angle": 45
+                }
+            ],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": -126.88,
+                    "y": 212.77,
+                    "radius": 227.27,
+                    "halfHeight": 45.45,
+                    "angle": 90
+                },
+                {
+                    "x": 164.03,
+                    "y": -169.05,
+                    "radius": 227.27,
+                    "halfHeight": 45.45,
+                    "angle": 340
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "id": "wasteland_biome/dry_grass_brown_2",
+    "name": "Dry Grass (Brown)",
+    "image": {
+        "path": "props/wasteland_biome/dry_grass_brown_2.png",
+        "width": 166,
+        "height": 236
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 94.4,
+            "radiusX": 200,
+            "radiusY": 100
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": -0.6,
+                    "radius": 90,
+                    "halfHeight": 5,
+                    "angle": 0
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 0,
+                    "y": 44.4,
+                    "radius": 70,
+                    "halfHeight": 15,
+                    "angle": 90
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}

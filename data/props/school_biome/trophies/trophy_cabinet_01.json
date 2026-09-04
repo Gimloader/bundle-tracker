@@ -1,0 +1,45 @@
+{
+    "id": "school_biome/trophies/trophy_cabinet_01",
+    "name": "Trophy Cabinet",
+    "image": {
+        "path": "props/school_biome/trophies/trophy_cabinet_01.png",
+        "width": 742,
+        "height": 1455
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.9,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 582,
+            "radiusX": 933.33,
+            "radiusY": 533.33
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": 82,
+                    "width": 733.33,
+                    "height": 1280,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

@@ -1,0 +1,95 @@
+{
+    "id": "wasteland_biome/old_tv_rusty",
+    "name": "Old TV (Rusty)",
+    "image": {
+        "path": "props/wasteland_biome/old_tv_rusty.png",
+        "width": 636,
+        "height": 620
+    },
+    "scale": 0.15,
+    "originX": 0.5,
+    "originY": 0.75,
+    "shadows": [
+        {
+            "x": -26.67,
+            "y": 155,
+            "radiusX": 666.67,
+            "radiusY": 333.33
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 133.33,
+                    "y": 175,
+                    "width": 366.67,
+                    "height": 100,
+                    "angle": -29
+                },
+                {
+                    "x": -166.67,
+                    "y": 188.33,
+                    "width": 333.33,
+                    "height": 66.67,
+                    "angle": 28
+                },
+                {
+                    "x": 0,
+                    "y": -11.67,
+                    "width": 633.33,
+                    "height": 166.67,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 100,
+                    "y": 201.67,
+                    "width": 300,
+                    "height": 100,
+                    "angle": -29
+                },
+                {
+                    "x": -166.67,
+                    "y": 188.33,
+                    "width": 333.33,
+                    "height": 66.67,
+                    "angle": 28
+                },
+                {
+                    "x": 0,
+                    "y": -11.67,
+                    "width": 633.33,
+                    "height": 266.67,
+                    "angle": 0
+                },
+                {
+                    "x": -166.67,
+                    "y": -211.67,
+                    "width": 300,
+                    "height": 100,
+                    "angle": -30
+                },
+                {
+                    "x": 66.67,
+                    "y": -178.33,
+                    "width": 333.33,
+                    "height": 133.33,
+                    "angle": 30
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    },
+    "seasonTicketRequired": true
+}

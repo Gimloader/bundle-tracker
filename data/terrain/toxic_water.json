@@ -1,0 +1,12 @@
+{
+    "id": "toxic_water",
+    "name": "Toxic Water",
+    "maskTilesUrl": "tilesets/toxic_water/mask.png",
+    "borderTilesUrl": "tilesets/toxic_water/border.png",
+    "fillUrl": "tilesets/toxic_water/fill.png",
+    "blockedMapStyles": [
+        "platformer"
+    ],
+    "minimumRoleLevel": 90,
+    "previewUrl": "tilesets/toxic_water/preview.png"
+}

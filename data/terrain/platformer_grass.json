@@ -1,0 +1,11 @@
+{
+    "id": "platformer_grass",
+    "name": "Grass",
+    "maskTilesUrl": "tilesets/platformer_grass/mask.png",
+    "borderTilesUrl": "tilesets/platformer_grass/border.png",
+    "fillUrl": "tilesets/platformer_grass/fill.png",
+    "blockedMapStyles": [
+        "topDown"
+    ],
+    "previewUrl": "tilesets/platformer_grass/preview.png"
+}

@@ -1,0 +1,80 @@
+{
+    "id": "tables/lab_table_infected_1",
+    "name": "Lab Table (Infected)",
+    "image": {
+        "path": "props/tables/lab_table_infected_1.png",
+        "width": 1468,
+        "height": 981
+    },
+    "scale": 0.18,
+    "originX": 0.5,
+    "originY": 0.5,
+    "shadows": [
+        {
+            "x": 0,
+            "y": 322.22,
+            "radiusX": 1700,
+            "radiusY": 800
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -55.56,
+                    "width": 1461.11,
+                    "height": 611.11,
+                    "angle": 0
+                },
+                {
+                    "x": -683.33,
+                    "y": 372.22,
+                    "width": 100,
+                    "height": 222.22,
+                    "angle": 0
+                },
+                {
+                    "x": 683.33,
+                    "y": 372.22,
+                    "width": 100,
+                    "height": 222.22,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        },
+        "platformer": {
+            "rectangle": [
+                {
+                    "x": 0,
+                    "y": -105.56,
+                    "width": 1461.11,
+                    "height": 766.67,
+                    "angle": 0
+                },
+                {
+                    "x": -683.33,
+                    "y": 372.22,
+                    "width": 100,
+                    "height": 222.22,
+                    "angle": 0
+                },
+                {
+                    "x": 683.33,
+                    "y": 372.22,
+                    "width": 100,
+                    "height": 222.22,
+                    "angle": 0
+                }
+            ],
+            "circle": [],
+            "capsule": []
+        }
+    }
+}

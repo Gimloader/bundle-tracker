@@ -1,0 +1,74 @@
+{
+    "id": "wasteland_biome/cow_skull_1",
+    "name": "Cow Skull",
+    "image": {
+        "path": "props/wasteland_biome/cow_skull_1.png",
+        "width": 625,
+        "height": 443
+    },
+    "scale": 0.2,
+    "originX": 0.5,
+    "originY": 0.7,
+    "shadows": [
+        {
+            "x": 30,
+            "y": 63.6,
+            "radiusX": 550,
+            "radiusY": 350
+        }
+    ],
+    "available": {
+        "topDown": true,
+        "platformer": true
+    },
+    "colliders": {
+        "topDown": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 35,
+                    "y": 88.6,
+                    "radius": 125,
+                    "halfHeight": 150,
+                    "angle": 90
+                }
+            ]
+        },
+        "platformer": {
+            "rectangle": [],
+            "circle": [],
+            "capsule": [
+                {
+                    "x": 35,
+                    "y": 88.6,
+                    "radius": 125,
+                    "halfHeight": 140,
+                    "angle": 75
+                },
+                {
+                    "x": -40,
+                    "y": 13.6,
+                    "radius": 125,
+                    "halfHeight": 25,
+                    "angle": 0
+                },
+                {
+                    "x": 85,
+                    "y": -76.4,
+                    "radius": 50,
+                    "halfHeight": 100,
+                    "angle": 0
+                },
+                {
+                    "x": -200,
+                    "y": 23.6,
+                    "radius": 50,
+                    "halfHeight": 100,
+                    "angle": 305
+                }
+            ]
+        }
+    },
+    "seasonTicketRequired": true
+}
