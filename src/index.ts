@@ -1,10 +1,10 @@
 import "dotenv/config";
 import { parseArgs } from "node:util";
-import { sendError } from "./net/webhook";
-import { HandledError } from "./util";
-import extractCode from "./extractors/code";
-import { extractGamedata } from "./extractors/gamedata";
-import { extractMaps } from "./extractors/maps";
+import { sendError } from "./net/webhook.ts";
+import { HandledError } from "./util.ts";
+import extractCode from "./extractors/code.ts";
+import { extractGamedata } from "./extractors/gamedata.ts";
+import { extractMaps } from "./extractors/maps.ts";
 
 const { values: { force, push }, positionals: [extractor] } = parseArgs({
     args: process.argv.slice(2),

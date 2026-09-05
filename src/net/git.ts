@@ -1,6 +1,6 @@
-import { exec, execSync } from "node:child_process";
-import { sendEmbed, sendError } from "./webhook";
-import { HandledError } from "../util";
+import { execSync } from "node:child_process";
+import { sendEmbed, sendError } from "./webhook.ts";
+import { HandledError } from "../util.ts";
 
 export async function rebaseToLatest() {
     execSync("git fetch");

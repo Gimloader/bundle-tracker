@@ -1,8 +1,8 @@
-import { createGame, findServer, getExperiences, getHooks, getRoom, getSource, getToken } from "../net/fetch";
-import { checkIfChanges, pushMapChanges, rebaseToLatest } from "../net/git";
-import { sendError } from "../net/webhook";
-import { HandledError, prepareDataDir } from "../util";
-import { writeJson } from "../util";
+import { createGame, findServer, getExperiences, getHooks, getRoom, getSource, getToken } from "../net/fetch.ts";
+import { checkIfChanges, pushMapChanges, rebaseToLatest } from "../net/git.ts";
+import { sendError } from "../net/webhook.ts";
+import { HandledError, prepareDataDir } from "../util.ts";
+import { writeJson } from "../util.ts";
 import { join } from "node:path";
 
 export async function extractMaps(push: boolean) {

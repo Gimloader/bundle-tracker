@@ -1,8 +1,8 @@
-import { sendError } from "../net/webhook";
-import { createCreativeGame, findServer, getRoom, getSource, getToken } from "../net/fetch";
+import { sendError } from "../net/webhook.ts";
+import { createCreativeGame, findServer, getRoom, getSource, getToken } from "../net/fetch.ts";
 import { join } from "node:path";
-import { data, HandledError, prepareDataDir, writeJson } from "../util";
-import { checkIfChanges, pushDataChanges, rebaseToLatest } from "../net/git";
+import { data, HandledError, prepareDataDir, writeJson } from "../util.ts";
+import { checkIfChanges, pushDataChanges, rebaseToLatest } from "../net/git.ts";
 
 export async function extractGamedata(push: boolean) {
     if(!process.env.CONNECT_SID) {

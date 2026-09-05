@@ -8,7 +8,7 @@ export class HandledError extends Error {
     }
 }
 
-export const data = join(__dirname, "../", "data");
+export const data = join(import.meta.dirname, "../", "data");
 
 export async function prepareDataDir(name: string) {
     const path = join(data, name);

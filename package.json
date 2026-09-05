@@ -3,9 +3,9 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "getCode": "bun run src/index.ts code",
-    "getData": "bun run src/index.ts gamedata",
-    "getMaps": "bun run src/index.ts maps"
+    "getCode": "node src/index.ts code",
+    "getData": "node src/index.ts gamedata",
+    "getMaps": "node src/index.ts maps"
   },
   "private": true,
   "devDependencies": {

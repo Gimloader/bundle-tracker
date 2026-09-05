@@ -1,11 +1,12 @@
 import { parse } from "node-html-parser";
-import { join } from "path";
+import { join } from "node:path";
 import fsp from "node:fs/promises";
+import { existsSync } from "node:fs";
 import beautify from "js-beautify";
-import { pushJsChanges, rebaseToLatest } from "../net/git";
-import { sendEmbed } from "../net/webhook";
-import { assets, base } from "../consts";
-import { data, HandledError, prepareDataDir } from "../util";
+import { pushJsChanges, rebaseToLatest } from "../net/git.ts";
+import { sendEmbed } from "../net/webhook.ts";
+import { assets, base } from "../consts.ts";
+import { data, HandledError, prepareDataDir } from "../util.ts";
 
 export default async function extractCode(force: boolean, push: boolean) {
     // get the index script
@@ -23,10 +24,10 @@ export default async function extractCode(force: boolean, push: boolean) {
     const indexUrl = indexPath.split("/").pop();
     
     // check that the url has changed
-    const lastRunFile = Bun.file(join(data, "lastRun.json"));
+    const lastRunPath = join(data, "lastRun.json");
     let lastIndex = "";
-    if(await lastRunFile.exists()) {
-        let lastRun = await lastRunFile.json();
+    if(existsSync(lastRunPath)) {
+        let lastRun = JSON.parse(await fsp.readFile(lastRunPath, "utf-8"));
         lastIndex = lastRun.lastIndex;
     }
     
@@ -151,7 +152,7 @@ export default async function extractCode(force: boolean, push: boolean) {
     // Delete the temp directory
     console.log("Cleaning up...");
     await fsp.rm(tmpPath, { recursive: true, force: true });
-    lastRunFile.write(JSON.stringify({ lastIndex, urls: urlMap }, null, 4));
+    await fsp.writeFile(lastRunPath, JSON.stringify({ lastIndex, urls: urlMap }, null, 4));
     
     if(push) await pushJsChanges();
 }

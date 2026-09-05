@@ -1,5 +1,5 @@
 import { Client } from "colyseus.js";
-import { base, matchmaker } from "../consts";
+import { base, matchmaker } from "../consts.ts";
 
 const cookie = `connect.sid=${process.env.CONNECT_SID}`;
 
