@@ -10,15 +10,15 @@
   "private": true,
   "devDependencies": {
     "@gimloader/types": "^2.1.0",
-    "@types/bun": "latest",
     "@types/js-beautify": "^1.14.3",
-    "terser": "^5.49.0"
+    "@types/node": "^26.4.1"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
     "colyseus.js": "^0.15.17",
+    "dotenv": "^17.4.2",
     "js-beautify": "^1.15.4",
     "node-html-parser": "^7.0.1"
   }

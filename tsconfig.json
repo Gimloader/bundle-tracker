@@ -25,7 +25,7 @@
     "noUnusedParameters": false,
     "noPropertyAccessFromIndexSignature": false,
 
-    "types": ["bun", "@gimloader/types"]
+    "types": ["node", "@gimloader/types"]
   },
   "include": ["src", "scripts"]
 }

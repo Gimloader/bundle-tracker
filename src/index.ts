@@ -1,3 +1,4 @@
+import "dotenv/config";
 import { parseArgs } from "node:util";
 import { sendError } from "./net/webhook";
 import { HandledError } from "./util";
@@ -15,18 +16,13 @@ const { values: { force, push }, positionals: [extractor] } = parseArgs({
 });
 
 if(extractor === "code") {
-    extractCode(force, push).then(quit, onExtractError);
+    extractCode(force, push).catch(onExtractError);
 } else if(extractor === "gamedata") {
-    extractGamedata(push).then(quit, onExtractError);
+    extractGamedata(push).catch(onExtractError);
 } else if(extractor === "maps") {
-    extractMaps(push).then(quit, onExtractError);
+    extractMaps(push).catch(onExtractError);
 } else {
     throw new Error("Extractor must be either 'code', 'gamedata', or 'maps'");
-}
-
-function quit() {
-    // Force any stuff that might still be running to shut down
-    process.exit(0);
 }
 
 function onExtractError(err: unknown) {

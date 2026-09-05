@@ -1,83 +1,85 @@
-import { $ } from "bun";
+import { exec, execSync } from "node:child_process";
 import { sendEmbed, sendError } from "./webhook";
 import { HandledError } from "../util";
 
 export async function rebaseToLatest() {
-    await $`git fetch`;
-    const result = await $`git rebase --no-ff`.nothrow();
-
-    if(result.exitCode !== 0) {
+    execSync("git fetch");
+    try {
+        execSync("git rebase --no-ff");
+    } catch {
         await sendError(
             "Failed to rebase",
             "Could not rebase to latest commit before pushing changes. This will require manual fixing."
         );
-
-        await $`git rebase --abort`;
+    
+        execSync("git rebase --abort");
         throw new HandledError("Failed to rebase to latest commit");
     }
 }
 
 export async function checkIfChanges() {
-    await $`git update-index --refresh`;
-    const result = await $`git diff-index --quiet HEAD --`.nothrow();
-    return result.exitCode !== 0;
+    execSync("git update-index --refresh");
+
+    try {
+        execSync("git diff-index --quiet HEAD --");
+        return false;
+    } catch {
+        return true;
+    }
+}
+
+const getStat = () => execSync("git diff --shortstat").toString();
+const getHash = () => execSync("git rev-parse HEAD").toString();
+const getDateStr = () => {
+    const date = new Date();
+    return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`;
 }
 
 export async function pushDataChanges() {
-    const stat = await $`git diff --shortstat`.text();
+    const hash = getHash();
 
-    const date = new Date();
-    const dateStr = `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`
+    execSync("git add data");
+    execSync(`git commit -m "Update game data (${getDateStr()})"`);
 
-    await $`git add data`;
-    await $`git commit -m "Update game data (${dateStr})"`;
-    const hash = await $`git rev-parse HEAD`.text();
-
-    if(!Bun.env.WEBHOOK_URL) return;
+    if(!process.env.WEBHOOK_URL) return;
 
     await sendEmbed({
         title: "New updates to Gimkit's game data",
-        description: `**[View changes](https://github.com/Gimloader/bundle-tracker/commit/${hash})**\n${stat}`,
+        description: `**[View changes](https://github.com/Gimloader/bundle-tracker/commit/${hash})**\n${getStat()}`,
         url: `https://github.com/Gimloader/bundle-tracker/commit/${hash}`,
         color: 7220975
     });
 }
 
 export async function pushMapChanges() {
-    const stat = await $`git diff --shortstat`.text();
+    const hash = getHash();
 
-    const date = new Date();
-    const dateStr = `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`
+    execSync("git add data");
+    execSync(`git commit -m "Update game data (${getDateStr()})"`);
 
-    await $`git add data`;
-    await $`git commit -m "Update map data (${dateStr})"`;
-    const hash = await $`git rev-parse HEAD`.text();
-
-    if(!Bun.env.WEBHOOK_URL) return;
+    if(!process.env.WEBHOOK_URL) return;
 
     await sendEmbed({
         title: "New updates to Gimkit's map data",
-        description: `**[View changes](https://github.com/Gimloader/bundle-tracker/commit/${hash})**\n${stat}`,
+        description: `**[View changes](https://github.com/Gimloader/bundle-tracker/commit/${hash})**\n${getStat()}`,
         url: `https://github.com/Gimloader/bundle-tracker/commit/${hash}`,
         color: 7220975
     });
 }
 
 export async function pushJsChanges() {
-    const stat = await $`git diff --shortstat`.text();
+    const stat = getStat();
+    const dateStr = getDateStr();
 
-    const date = new Date();
-    const dateStr = `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`
-    
-    await $`git add data/js data/lastRun.json`;
-    await $`git commit -m "Update data (${dateStr})"`;
-    const hash = await $`git rev-parse HEAD`.text();
-    
-    await $`git add data/rawjs`;
-    await $`git commit -m "Update raw js (${dateStr})`;
-    await $`git push`;
+    execSync("git add data/js data/lastRun.json");
+    execSync(`git commit -m "Update data (${dateStr})"`);
+    const hash = getHash();
 
-    if(!Bun.env.WEBHOOK_URL) return;
+    execSync("git add data/rawjs");
+    execSync(`git commit -m "Update raw js (${dateStr})`);
+    execSync("git push");
+
+    if(!process.env.WEBHOOK_URL) return;
 
     await sendEmbed({
         title: "New updates to Gimkit's bundle",

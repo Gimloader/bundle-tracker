@@ -7,7 +7,7 @@ export async function sendError(title: string, description: string) {
 }
 
 export async function sendEmbed(embed: any) {
-    const webhook = Bun.env.WEBHOOK_URL;
+    const webhook = process.env.WEBHOOK_URL;
     if(!webhook) return;
 
     const embedWithDefaults = {
