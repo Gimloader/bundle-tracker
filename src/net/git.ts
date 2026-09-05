@@ -18,9 +18,8 @@ export async function rebaseToLatest() {
 }
 
 export async function checkIfChanges() {
-    execSync("git update-index --refresh");
-
     try {
+        execSync("git update-index --refresh");
         execSync("git diff-index --quiet HEAD --");
         return false;
     } catch {

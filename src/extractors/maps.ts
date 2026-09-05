@@ -117,9 +117,11 @@ export async function getMapContents(experience: any, authToken: string, mapsDir
             onGotten();
         });
 
-        room.onMessage("TERRAIN_CHANGES", async (message) => {
+        room.onMessage("TERRAIN_CHANGES", (message) => {
+            if(!message.initial) return;
             const val = (index: number) => message.added.terrains[index];
             terrain = [];
+            
             for(const tile of message.added.tiles) {
                 const baseTile = {
                     terrain: val(tile[2]),
@@ -145,6 +147,7 @@ export async function getMapContents(experience: any, authToken: string, mapsDir
         });
         
         room.onMessage("WORLD_CHANGES", (message) => {
+            if(!message.devices.initial) return;
             const val = (index: string) => message.devices.addedDevices.values[index];
 
             devices = [];
