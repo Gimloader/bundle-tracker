@@ -117,7 +117,7 @@ const u = e => t.jsxs(p, {
             ...s
         }, "benefit" + o))
     }),
-    N = "September 9th",
+    N = "September 16th",
     I = n("stickers/season_2_2026.png");
 export {
     w as B, N as S, I as a
