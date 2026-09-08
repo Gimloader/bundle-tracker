@@ -1,5 +1,6 @@
 import "dotenv/config";
 import { parseArgs } from "node:util";
+import { execSync } from "node:child_process";
 import { sendError } from "./net/webhook.ts";
 import { HandledError } from "./util.ts";
 import extractCode from "./extractors/code.ts";
@@ -27,7 +28,14 @@ if(extractor === "code") {
 
 function onExtractError(err: unknown) {
     console.error(err);
-    if(err instanceof HandledError) process.exit(1);
+    try {
+        execSync("git reset --hard HEAD");
+        execSync("git clean --force");
+    } catch(e) {
+        console.error("Failed to reset repo", e);
+    }
+
+    if(err instanceof HandledError) return;
 
     sendError("An Unexpected Error Occurred", `Failed to run ${extractor} extractor: ${err}`).then(() => {
         process.exit(1);
