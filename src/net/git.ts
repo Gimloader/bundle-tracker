@@ -75,7 +75,7 @@ export async function pushJsChanges() {
     const hash = getHash();
 
     execSync("git add data/rawjs");
-    execSync(`git commit -m "Update raw js (${dateStr})`);
+    execSync(`git commit -m "Update raw js (${dateStr})"`);
     execSync("git push");
 
     if(!process.env.WEBHOOK_URL) return;
