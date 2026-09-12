@@ -28,11 +28,14 @@ if(extractor === "code") {
 
 function onExtractError(err: unknown) {
     console.error(err);
-    try {
-        execSync("git reset --hard HEAD");
-        execSync("git clean --force");
-    } catch(e) {
-        console.error("Failed to reset repo", e);
+    
+    if(push) {
+        try {
+            execSync("git reset --hard HEAD");
+            execSync("git clean --force");
+        } catch(e) {
+            console.error("Failed to reset repo", e);
+        }
     }
 
     if(err instanceof HandledError) return;
