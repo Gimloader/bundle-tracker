@@ -7,8 +7,8 @@ import { checkIfChanges, pushDataChanges, rebaseToLatest } from "../net/git.ts";
 export async function extractGamedata(push: boolean) {
     if(!process.env.EMAIL || !process.env.PASSWORD) {
         await sendError(
-            "Username or Password Missing",
-            "Cannot fetch game data without username and password specified.",
+            "Username or Email Missing",
+            "Cannot fetch game data without email and password specified.",
         );
         throw new HandledError("CONNECT_SID environment variable missing");
     }

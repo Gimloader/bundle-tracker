@@ -8,8 +8,8 @@ import { join } from "node:path";
 export async function extractMaps(push: boolean) {
     if(!process.env.EMAIL || !process.env.PASSWORD) {
         await sendError(
-            "Username or Password Missing",
-            "Cannot fetch game data without username and password specified."
+            "Email or Password Missing",
+            "Cannot fetch game data without email and password specified."
         );
         throw new HandledError("CONNECT_SID environment variable missing");
     }

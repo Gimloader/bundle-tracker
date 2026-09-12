@@ -16,12 +16,12 @@ You can also pass `--push` to getCode to automatically commit and push if change
 ### Getting Map Data
 
 To get map data, three environment variables need to be present.
-1. `CONNECT_SID`: the `connect.sid` cookie of an account, used for authentication
-2. `TOP_DOWN_MAP`: the id of a top-down map owned by the account with the associated `CONNECT_SID`
+1. `EMAIL`, `PASSWORD`: the email and password of the account to use to get the data
+2. `TOP_DOWN_MAP`: the id of a top-down map owned by the account with the associated email
 3. `PLATFORMER_MAP`: the id of a platformer map, also owned by said account.
 
 Then, run `npm run getData`, again with the optional `--push` parameter.
 
 ### Getting Official Maps
 
-To get official maps data, you need the aforementioned `CONNECT_SID`, as well as a `KIT_ID` variable. Again, run `npm run getMaps`, optionally with `--push`.
+To get official maps data, you need the aforementioned `EMAIL` and `PASSWORD`, as well as a `KIT_ID` variable. Again, run `npm run getMaps`, optionally with `--push`.
