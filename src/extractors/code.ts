@@ -4,7 +4,7 @@ import fsp from "node:fs/promises";
 import { existsSync } from "node:fs";
 import beautify from "js-beautify";
 import { pushJsChanges, rebaseToLatest } from "../net/git.ts";
-import { sendEmbed } from "../net/webhook.ts";
+import { sendEmbed, sendError } from "../net/webhook.ts";
 import { assets, base } from "../consts.ts";
 import { data, HandledError, prepareDataDir } from "../util.ts";
 
@@ -88,11 +88,10 @@ export default async function extractCode(force: boolean, push: boolean) {
             console.error("Failed to fetch assets 5 times, aborting");
             const failedList = Array.from(failedUrls).map((url) => `* ${url}`).join("\n");
     
-            await sendEmbed({
-                title: "Failed to fetch Gimkit's bundle after five tries",
-                description: `The following assets could not be fetched:\n${failedList}`,
-                color: 14948890
-            });
+            await sendError(
+                "Failed to fetch Gimkit's bundle after five tries",
+                `The following assets could not be fetched:\n${failedList}`
+            );
     
             throw new HandledError("Failed to fetch assets after 5 tries");
         }
