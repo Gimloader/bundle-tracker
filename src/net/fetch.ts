@@ -1,7 +1,7 @@
 import { Client } from "colyseus.js";
 import { base, matchmaker } from "../consts.ts";
 
-const cookie = `connect.sid=${process.env.CONNECT_SID}`;
+let cookie = "";
 
 export function get(url: string) {
     return fetch(url, {
@@ -105,4 +105,17 @@ export async function getRoom(serverUrl: string, intentId: string, authToken: st
 
     room.onMessage("*", () => {});
     return room;
+}
+
+export async function fetchCookie() {
+    const url = `${base}/api/login`;
+    const res = await post(url, {
+        email: process.env.EMAIL,
+        password: process.env.PASSWORD,
+        googleToken: ""
+    });
+
+    const cookies = res.headers.get("set-cookie");
+    const end = cookies.indexOf(";");
+    cookie = cookies.slice(0, end);
 }

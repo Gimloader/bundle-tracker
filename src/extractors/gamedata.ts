@@ -1,14 +1,14 @@
 import { sendError } from "../net/webhook.ts";
-import { createCreativeGame, findServer, getRoom, getSource, getToken } from "../net/fetch.ts";
+import { createCreativeGame, findServer, fetchCookie, getRoom, getSource, getToken } from "../net/fetch.ts";
 import { join } from "node:path";
 import { data, HandledError, prepareDataDir, writeJson } from "../util.ts";
 import { checkIfChanges, pushDataChanges, rebaseToLatest } from "../net/git.ts";
 
 export async function extractGamedata(push: boolean) {
-    if(!process.env.CONNECT_SID) {
+    if(!process.env.EMAIL || !process.env.PASSWORD) {
         await sendError(
-            "Cookie missing",
-            "Cannot fetch game data without a cookie manually specified.",
+            "Username or Password Missing",
+            "Cannot fetch game data without username and password specified.",
         );
         throw new HandledError("CONNECT_SID environment variable missing");
     }
@@ -29,6 +29,7 @@ export async function extractGamedata(push: boolean) {
     const devicesPath = await prepareDataDir("devices");
     const blocksPath = await prepareDataDir("blocks");
     
+    await fetchCookie();
     const authToken = await getToken();
     await extractFromMap(process.env.TOP_DOWN_MAP);
     await extractFromMap(process.env.PLATFORMER_MAP);

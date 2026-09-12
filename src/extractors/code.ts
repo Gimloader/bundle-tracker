@@ -4,7 +4,7 @@ import fsp from "node:fs/promises";
 import { existsSync } from "node:fs";
 import beautify from "js-beautify";
 import { pushJsChanges, rebaseToLatest } from "../net/git.ts";
-import { sendEmbed, sendError } from "../net/webhook.ts";
+import { sendError } from "../net/webhook.ts";
 import { assets, base } from "../consts.ts";
 import { data, HandledError, prepareDataDir } from "../util.ts";
 

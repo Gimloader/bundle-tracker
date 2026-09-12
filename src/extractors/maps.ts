@@ -1,4 +1,4 @@
-import { createGame, findServer, getExperiences, getHooks, getRoom, getSource, getToken } from "../net/fetch.ts";
+import { createGame, fetchCookie, findServer, getExperiences, getHooks, getRoom, getSource, getToken } from "../net/fetch.ts";
 import { checkIfChanges, pushMapChanges, rebaseToLatest } from "../net/git.ts";
 import { sendError } from "../net/webhook.ts";
 import { HandledError, prepareDataDir } from "../util.ts";
@@ -6,10 +6,10 @@ import { writeJson } from "../util.ts";
 import { join } from "node:path";
 
 export async function extractMaps(push: boolean) {
-    if(!process.env.CONNECT_SID) {
+    if(!process.env.EMAIL || !process.env.PASSWORD) {
         await sendError(
-            "Cookie missing",
-            "Cannot fetch game data without a cookie manually specified."
+            "Username or Password Missing",
+            "Cannot fetch game data without username and password specified."
         );
         throw new HandledError("CONNECT_SID environment variable missing");
     }
@@ -25,6 +25,8 @@ export async function extractMaps(push: boolean) {
     if(push) await rebaseToLatest();
 
     const maps = await prepareDataDir("maps");
+
+    await fetchCookie();
     const authToken = await getToken();
     const experiences = await getExperiences();
 
