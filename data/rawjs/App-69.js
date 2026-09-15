@@ -1,20 +1,50 @@
-import{r as m,j as t,U as f,d,e as x}from"./_index.js";import{r as g,u as y,e as C,S as j}from"./ShopItem.js";import{C as h}from"./Centered.js";import{L as S,g as w}from"./App-44.js";import{u as v}from"./ElementIds.js";import{P as T}from"./Pack.js";import{a as P}from"./App-67.js";import{u as N}from"./useIntervalWhen.js";import{u as L}from"./useWillUnmount.js";import{C as b}from"./CircularProgress.js";import{S as k}from"./index-2.js";import"./motion.js";import"./playSound.js";import"./howler.js";import"./GetAssetPath.js";import"./useQuery.js";import"./TrackEvent.js";import"./TrackPostHogEvent.js";import"./Names.js";import"./SeasonTicketName.js";import"./SeasonTicketInlineUpsell.js";import"./AccessibleAnchor.js";import"./OwnsSeasonTicket.js";import"./polished.esm.js";import"./inheritsLoose.js";import"./FontAwesomeIcon.js";import"./Button.js";import"./confetti.js";import"./clsx.m.js";const l=(s,i)=>{const o=s%i;return[Math.floor(s/i),o]},D=s=>{const[i,o]=l(s,86400),[r,a]=l(o,3600),[n,c]=l(a,60);let e="";return i&&(e+=`${i}d `),(r||i)&&(e+=`${r}h `),e+=`${n}m `,e+=`${c}s`,e},W=s=>{const[i,o]=m.useState(Math.floor(Date.now()/1e3)-s.serverNowTime),[r,a]=m.useState(-999999);m.useEffect(()=>{o(Math.floor(Date.now()/1e3)-s.serverNowTime),n()},[s.serverNowTime]);const n=()=>{const c=s.shopRefreshTime-(Math.floor(Date.now()/1e3)-i);a(c)};return m.useEffect(()=>{n()},[]),m.useEffect(()=>{r<0&&r>-999&&g()},[r]),N(()=>{n()},1e3),r<0?null:t.jsx($,{children:D(r)})},$=d.div`
-  text-transform: uppercase;
-  font-size: 18px;
-  font-family: ${f.FugazOne};
-  color: rgba(255, 255, 255, 0.9);
-`,de=s=>{const{isLoading:i,data:o,error:r}=y(),{data:a,isLoading:n,error:c}=v();return L(()=>{C()}),i||n?t.jsx(h,{className:"maxAll",children:t.jsx(b,{style:{color:x.White}})}):r||c?t.jsx(h,{className:"maxAll",children:"There was an error loading The Shop. Please refresh and try again."}):t.jsx(S,{customWidth:900,children:t.jsxs(I,{children:[t.jsx(p,{children:"Packs"}),t.jsx(u,{children:"Open packs to earn new items that you can use in-game!"}),t.jsx(z,{style:{marginTop:20},children:o.packs.map(e=>t.jsx(T,{id:e.id,name:e.name,color:e.color,cost:e.currencyCost,redirect:!s.setToPackScreen,handleClick:()=>{P(),s.setToPackScreen&&s.setToPackScreen(e.id)}},e.id))}),o.shop.items.length?t.jsxs("div",{className:"maxWidth",style:{marginTop:40},children:[t.jsxs("div",{className:"maxWidth flex between vc",children:[t.jsx(p,{children:"Items"}),t.jsx(W,{serverNowTime:o.shop.now,shopRefreshTime:o.shop.endUnix})]}),t.jsxs(u,{children:["Purchase new items to use in-game!",t.jsx("br",{}),"Make sure to get the items you want before the shop refreshes!"]}),t.jsx("div",{className:"maxWidth",style:{marginTop:20},children:t.jsx(k,{direction:"vertical",size:20,className:"maxWidth",children:o.shop.items.map(e=>t.jsx(j,{id:e.cosmetic.id,name:e.cosmetic.name,image:w({id:e.cosmetic.id,type:e.cosmetic.type}),description:e.cosmetic.description,type:e.cosmetic.type,rarity:e.cosmetic.rarity,cost:e.currencyCost,owned:e.owned,tag:e.tag,style:e.cosmetic.style,currentCurrency:a.currency,onCosmeticSelectionChanged:s.onCosmeticSelectionChanged,blockCharacterPreview:s.blockCharacterPreview},e.cosmetic.id+"-item"))})})]}):null]})})},I=d.div.attrs({className:"flex-column"})``,p=d.div`
-  font-family: ${f.FugazOne};
-  text-transform: uppercase;
-  font-size: 32px;
-`,u=d.div`
-  font-family: ${f.SFPro};
+import{y as g,j as r,e as f,d as s,U as m,F as S,z as T,r as y,E as $,cm as W,b as z,i as N,T as D,C as k}from"./_index.js";import{u as j}from"./useQuery.js";import{A as F}from"./AccessibleAnchor.js";import{g as I}from"./getCloudinaryUrl.js";import{S as c}from"./index-2.js";import{C as d,T as P,D as A,a as x}from"./App-42.js";import{C as v}from"./Button.js";import{I as E}from"./index-3.js";import{C as u}from"./Centered.js";import{C as H}from"./CircularProgress.js";import"./AnimatedBackground-1.js";import"./App-4.js";import"./Shortcut.js";import"./Names.js";import"./mobxreact.esm.js";import"./index-1.js";import"./index-6.js";import"./FontAwesomeIcon.js";import"./App-2.js";import"./Sizes.js";import"./motion.js";import"./price.js";import"./TrackPostHogEvent.js";import"./index-4.js";import"./context.js";import"./StarOutlined.js";import"./NavigateTo.js";import"./index-15.js";import"./colors.js";import"./useWarningOnMountInDevelopment.js";import"./index-10.js";import"./index-5.js";import"./move.js";import"./App-5.js";import"./index-24.js";import"./GetAssetPath.js";import"./index-14.js";import"./EditOutlined.js";import"./styleChecker.js";import"./CheckOutlined.js";import"./CopyOutlined.js";import"./TrackEvent.js";import"./MapStyle.js";import"./SeasonTicketInlineUpsell.js";import"./SeasonTicketName.js";import"./OwnsSeasonTicket.js";import"./polished.esm.js";import"./inheritsLoose.js";import"./clsx.m.js";const _=["creative-discovery"],L=()=>j(_,()=>g({url:"/api/created-map/listing/discovery"}),{refetchOnMount:!1,refetchOnWindowFocus:!1}),b=130,O=b*.5625,C=t=>{const{_id:o,title:i,image:n,tags:e}=t.listing;return r.jsx("div",{className:"maxWidth",children:r.jsx(F,{className:"maxWidth",style:{color:f.White},to:`/creative/map/${o}`,children:r.jsx(M,{children:r.jsxs(c,{direction:"horizontal",size:20,align:"center",children:[r.jsx(R,{style:{backgroundImage:`url(${I(n)})`}}),r.jsxs("div",{children:[r.jsx(q,{children:i}),e.length?r.jsx(c,{direction:"horizontal",size:6,wrap:!0,style:{marginTop:6},children:e.map(l=>r.jsx(U,{children:l},l+o))}):null]})]})})})})},M=s.div.attrs({className:"maxWidth"})`
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: background 0.2s ease-in-out;
+  line-height: 0;
+  overflow: hidden;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.17);
+  }
+`,R=s.div`
+  width: ${b}px;
+  height: ${O}px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-size: cover;
+`,q=s.div`
+  font-family: ${m.FugazOne};
   font-size: 16px;
-  margin-top: -2px;
+  line-height: 1;
+  margin-top: 2px;
+  text-transform: uppercase;
+`,U=s.div`
+  background: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.9);
-`,z=d.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 280px);
-  grid-gap: 27px;
-  justify-content: center;
-`;export{de as default};
+  line-height: 1;
+  font-size: 10px;
+  padding: 4px 8px;
+  border-radius: 50px;
+  font-style: italic;
+  font-weight: ${S.Bold};
+`,B=t=>{const{name:o,description:i,items:n}=t.list;return r.jsxs(d,{children:[r.jsx(P,{children:o}),r.jsx(A,{children:i}),r.jsx(c,{style:{marginTop:18},direction:"vertical",className:"maxWidth",size:14,children:n.map(e=>r.jsx(C,{listing:e},e._id))})]})},Y="useDiscoverySearch",G=t=>j({queryKey:[Y,{searchQuery:t}],enabled:!!t,queryFn:()=>g({url:"/api/created-map/listing/discovery/search",data:{query:t}})}),K=t=>{const[o]=T(),[i,n]=y.useState(o.get("q")),{data:e,isLoading:l}=G(i),p=!!(i&&l),w=a=>{const h=new URL(window.location.href);h.searchParams.set("q",a),window.history.pushState({},"",h),n(a)};return r.jsxs(r.Fragment,{children:[r.jsx($,{theme:{algorithm:W.darkAlgorithm},children:r.jsx(E.Search,{onSearch:w,loading:p,placeholder:"Search for maps...",size:"large",style:{marginBottom:20}})}),!p&&i?r.jsx("div",{className:"maxWidth",style:{marginBottom:20},children:r.jsx(d,{className:"maxWidth",children:e.length?r.jsx(c,{direction:"vertical",size:14,className:"maxWidth",children:e.map(a=>r.jsx(C,{listing:a},a._id+"-search"))}):r.jsxs("div",{style:{opacity:.9,fontStyle:"italic"},children:[r.jsx("span",{style:{color:v.Yellow},children:"No results found."})," ","Try searching for something else!"]})})}):null,r.jsx(c,{className:"maxWidth",direction:"vertical",size:20,children:t.lists.map(a=>r.jsx(B,{list:a},a.name+"-list"))})]})},Q=8,J=16,V=()=>r.jsxs(X,{children:[r.jsx("img",{src:"/client/img/creative/banner.png",style:{height:200}}),r.jsx(Z,{children:"Discovery Is Closed During School Hours"}),r.jsxs(rr,{children:["Check back in after ",r.jsx("b",{style:{color:v.Yellow},children:"4pm"})," to view & play maps made by the Gimkit Creative community!"]})]}),X=s(d).attrs({className:"flex-column flex-center"})`
+  max-width: 700px;
+  font-family: ${m.FugazOne};
+  overflow: hidden;
+`,Z=s.div`
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-top: 15px;
+`,rr=s.div`
+  font-family: ${m.SFPro};
+  opacity: 0.9;
+  font-size: 16px;
+  margin-top: 3px;
+`,Xr=()=>{const{isLoading:t,error:o,data:i}=L(),n=y.useMemo(()=>{const e=z();return e.day()===0||e.day()===6?!1:e.hour()>=Q&&e.hour()<J},[]);return N()&&n?r.jsx(u,{style:{padding:35},children:r.jsx(V,{})}):o?r.jsx("div",{className:"flex-center maxWidth",style:{marginTop:50},children:r.jsx("div",{className:"light-shadow",style:{background:"rgba(255,255,255,0.1)",padding:35,borderRadius:12,maxWidth:"90%"},children:"There was an error loading Discovery. Please refresh and try again."})}):t?r.jsx(u,{style:{marginTop:100},children:r.jsx(H,{style:{color:f.White}})}):r.jsxs(er,{children:[r.jsx(D,{title:`${k} Creative | Discovery`,override:!0}),r.jsx(tr,{children:r.jsx(K,{lists:i??[]})})]})},er=s.div.attrs({className:"maxWidth flex hc"})`
+  padding: 35px 0px;
+`,tr=s.div`
+  width: ${x.width};
+  max-width: ${x.maxWidth};
+`;export{Xr as default};

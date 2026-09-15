@@ -1,1 +1,1 @@
-import{aT as i}from"./App-41.js";const t=o=>{o.colliders.forEach(d=>{const e=d.bodyId;i(e)})};export{t as A};
+import{bg as i}from"./App-41.js";const t=o=>{o.colliders.forEach(d=>{const e=d.bodyId;i(e)})};export{t as A};

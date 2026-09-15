@@ -26,7 +26,7 @@ import{x as r,r as l,j as e,d as s,a as X,ar as st,F as rt,dN as ct,u as lt}from
   ${t=>t.isOnDesktop&&`
     transition: background 0.18s ease-in-out;
     &:hover {
-      background: ${G(.1,t.answerColors[t.position].background)};
+      background: ${t.answerColors[t.position].hoverBackground||G(.1,t.answerColors[t.position].background)};
     }
   `}
 `,ot=t=>{const[n,i]=r.useState(t.text),o=()=>{if(t.language!=="en"&&!(t.disableIfContains&&t.text.includes(t.disableIfContains))){if(t.translations&&t.translations[t.text]){i(t.translations[t.text]);return}X({url:"",data:{to:t.language,text:t.text},success:a=>{i(a),t.translations[t.text]=a}})}};r.useEffect(()=>{t.text!==n&&(i(t.text),o())},[t.text]);const c=()=>{let a=n;return t.suffix&&(a+=t.suffix),a};return e.jsx(e.Fragment,{children:c()})},C={White:"white",Black:"black",DisabledGray:"#838383"},Y='"Product Sans"',vt={mainFontName:Y,name:`${Y}, sans-serif`},jt=t=>{const[n,i]=r.useState(""),[o,c]=r.useState(!0),a=g=>{i(g.target.value)},h=g=>{g.preventDefault(),d()},d=()=>{n&&o&&(c(!1),t.onQuestionAnswered(n))};return e.jsxs(St,{children:[e.jsx(Wt,{onSubmit:h,children:e.jsx(Et,{autoFocus:!0,value:n,onChange:a,placeholder:"Enter answer here..."})}),e.jsx(Mt,{buttonColor:t.buttonColor,onClick:d,children:e.jsx(ot,{language:t.language,translations:t.translations,text:"Submit"})})]})},St=s.div`
@@ -57,7 +57,7 @@ import{x as r,r as l,j as e,d as s,a as X,ar as st,F as rt,dN as ct,u as lt}from
   background: ${t=>t.buttonColor.background};
   color: ${t=>t.buttonColor.text};
   &:hover {
-    background: ${t=>G(.1,t.buttonColor.background)};
+    background: ${t=>t.buttonColor.hoverBackground||G(.1,t.buttonColor.background)};
   }
   font-weight: bold;
   font-size: 32px;
@@ -149,4 +149,4 @@ import{x as r,r as l,j as e,d as s,a as X,ar as st,F as rt,dN as ct,u as lt}from
   width: 100%;
   height: 100%;
   will-change: opacity;
-`;export{q as D,kt as E,vt as F,je as G,nt as S,I as T};
+`;export{pt as A,Xt as C,q as D,kt as E,vt as F,je as G,nt as S,I as T};
