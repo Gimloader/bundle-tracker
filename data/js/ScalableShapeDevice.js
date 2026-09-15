@@ -1,21 +1,21 @@
 import {
-    al as W,
-    aC as l,
-    aD as d,
-    aE as c,
-    am as G,
-    aF as u,
-    aq as g,
-    aG as P
+    aL as W,
+    b1 as l,
+    b2 as d,
+    b3 as c,
+    aM as P,
+    b4 as u,
+    aQ as g,
+    b5 as _
 } from "./App-41.js";
 import {
     F as w,
-    R as _
+    R as k
 } from "./ReplaceVisualEditingPreview.js";
 import {
     I as f,
-    i as v,
-    d as k
+    i as b,
+    d as G
 } from "./FixSpinePlugin.js";
 import "./_index.js";
 import "./Button.js";
@@ -30,6 +30,7 @@ import "./TutorialConsts.js";
 import "./ActionButton.js";
 import "./index-5.js";
 import "./playSound.js";
+import "./MapSound.js";
 import "./howler.js";
 import "./index-18.js";
 import "./context.js";
@@ -59,12 +60,10 @@ import "./util-2.js";
 import "./Shortcut.js";
 import "./Names.js";
 import "./useWillUnmount.js";
-import "./use-motion-value.js";
-import "./use-transform.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
+import "./index-6.js";
+import "./AccessibleAnchor.js";
 import "./index-17.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
@@ -72,6 +71,7 @@ import "./Text.js";
 import "./getCloudinaryUrl.js";
 import "./LazyLatexRenderer.js";
 import "./Tooltip.js";
+import "./use-motion-value.js";
 import "./index-9.js";
 import "./index-23.js";
 import "./useIntervalWhen.js";
@@ -86,8 +86,8 @@ import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 var r = (s => (s.none = "None", s.pulse = "Pulse", s.spinClockwise = "Spin Clockwise", s.spinCounterClockwise = "Spin Counter Clockwise", s))(r || {});
-const b = 1.2,
-    E = 500;
+const v = 1.2,
+    X = 500;
 class Zt extends W {
     constructor(C) {
         super(C), this.isDuringAnimation = !1, this.needsTextureUpdate = !0, this.playTween = () => {
@@ -104,7 +104,7 @@ class Zt extends W {
                 };
             if (this.options.loop && (i.repeat = -1, i.repeatDelay = this.options.animationLoopDelay * 1e3), e === r.pulse) {
                 const o = this.getScale();
-                i.scaleX = o * b, i.scaleY = o * b, i.yoyo = !0
+                i.scaleX = o * v, i.scaleY = o * v, i.yoyo = !0
             }
             e === r.spinClockwise && (i.angle = 360), e === r.spinCounterClockwise && (i.angle = -360), this.tweens.add(i)
         }, this.calculateOrigin = t => {
@@ -145,7 +145,7 @@ class Zt extends W {
             });
             this.fill.view.setTexture(t), this.fill.view.setOrigin(a, h), this.fill.view.angle = this.options.angle, this.border.view.setTexture(i), this.border.view.setOrigin(a, h), this.border.view.angle = this.options.angle, this.boundingBox.clearCached()
         }, this.getScale = () => .5 * this.options.width / d.editor.baseSize, this.setupVisualEditing = () => {
-            if (!f() || !v()) return;
+            if (!f() || !b()) return;
             const t = w(this, "width"),
                 e = w(this, "height");
             this.visualEditing.add.box({
@@ -159,7 +159,7 @@ class Zt extends W {
                 maxHeight: e.max / 2,
                 keepRatio: !0,
                 onChange: i => {
-                    _(i.x, i.y, {
+                    k(i.x, i.y, {
                         width: i.width * 2,
                         height: i.height * 2,
                         angle: i.angle
@@ -170,7 +170,7 @@ class Zt extends W {
             this.tweens.add({
                 targets: [this.fill.view, this.border.view],
                 alpha: t ? 1 : 0,
-                duration: E
+                duration: X
             })
         }, this.onStateChange = t => {
             t === "visible" && this.tweenVisibility(this.state.visible), t === "animationCounter" && this.state.animationCounter > 0 && this.playTween()
@@ -188,14 +188,14 @@ class Zt extends W {
             }))
         }, this.fill = this.parts.add.sprite({
             imageId: u.imageId,
-            depthChange: G(1)
+            depthChange: P(1)
         }), this.border = this.parts.add.sprite({
             imageId: u.imageId
         }), this.fill.view.tint = g(this.options.fillColor), this.border.view.tint = g(this.options.borderColor);
         const m = this.getScale();
         if (this.fill.view.setScale(m), this.border.view.setScale(m), this.setupVisualEditing(), this.cull.setOnEnterViewCallback(() => {
                 this.needsTextureUpdate && (this.updateTexture(), this.needsTextureUpdate = !1)
-            }), P() && this.options.animation !== r.none && this.options.animateOnGameStart && this.playTween(), f() && v() && !this.options.visibleOnGameStart && (this.fill.view.setAlpha(.6), this.border.view.setAlpha(.6)), k()) {
+            }), _() && this.options.animation !== r.none && this.options.animateOnGameStart && this.playTween(), f() && b() && !this.options.visibleOnGameStart && (this.fill.view.setAlpha(.6), this.border.view.setAlpha(.6)), G()) {
             const t = this.state.visible ?? this.options.visibleOnGameStart;
             this.fill.view.setAlpha(t ? 1 : 0), this.border.view.setAlpha(t ? 1 : 0)
         }

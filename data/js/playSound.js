@@ -1,45 +1,45 @@
 import {
-    h as c
-} from "./howler.js";
-const n = new Map,
-    w = e => {
+    M as c
+} from "./MapSound.js";
+const l = new Map,
+    f = e => {
         const t = Date.now();
         if (!e.path) return null;
-        const l = e.forceCreateNewSound ? void 0 : n.get(e.path),
-            a = l || new c.Howl({
+        const n = e.forceCreateNewSound ? void 0 : l.get(e.path),
+            a = n || new c({
                 src: e.path
             });
-        if (a.volume(e.volume), l) e.delay ? setTimeout(() => {
+        if (a.volume(e.volume), n) e.delay ? setTimeout(() => {
             a.play()
         }, e.delay) : a.play();
         else {
-            const o = () => {
-                if (!n.get(e.path) && !e.forceCreateNewSound && n.set(e.path, a), e.delay) {
-                    const s = t + e.delay,
-                        r = Date.now();
-                    r > s ? a.play() : setTimeout(() => {
+            const s = () => {
+                if (!l.get(e.path) && !e.forceCreateNewSound && l.set(e.path, a), e.delay) {
+                    const o = t + e.delay,
+                        u = Date.now();
+                    u > o ? a.play() : setTimeout(() => {
                         a.play()
-                    }, s - r)
+                    }, o - u)
                 } else a.play()
             };
-            a.state() === "loaded" ? o() : a.once("load", o)
+            a.state() === "loaded" ? s() : a.once("load", s)
         }
         return a
     },
     d = new Set,
-    f = e => {
+    w = e => {
         const {
             path: t
         } = e;
-        if (n.get(t) || d.has(t)) return;
+        if (l.get(t) || d.has(t)) return;
         d.add(t);
-        const l = new c.Howl({
+        const n = new c({
             src: t
         });
-        l.once("load", () => {
-            d.delete(t), n.set(t, l)
+        n.once("load", () => {
+            d.delete(t), l.set(t, n)
         })
     };
 export {
-    f as a, w as p
+    w as a, f as p
 };

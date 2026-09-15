@@ -6,7 +6,7 @@ import {
     C as f,
     e as u,
     U as g,
-    d as r,
+    d as s,
     u as h,
     r as i,
     n as j,
@@ -43,6 +43,7 @@ import "./index-17.js";
 import "./use-force-update.js";
 import "./use-motion-value.js";
 import "./sounds.js";
+import "./MapSound.js";
 import "./GetAssetPath.js";
 const z = t => e.jsx(k, {
         children: e.jsxs(q, {
@@ -91,14 +92,14 @@ const z = t => e.jsx(k, {
             })]
         })
     }),
-    k = r.div.attrs({
+    k = s.div.attrs({
         className: "flex-center scroll-y maxAll"
     })`
   background: #303f9f;
   color: ${u.Black};
   font-family: ${g.SFPro};
 `,
-    q = r(y).attrs({
+    q = s(y).attrs({
         className: "flex-center flex-column animated fadeIn"
     })`
   width: 90%;
@@ -109,17 +110,17 @@ const z = t => e.jsx(k, {
   box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.1),
     0 10px 50px rgba(0, 0, 0, 0.4);
 `,
-    O = r.div`
+    O = s.div`
   margin-top: 14px;
   font-size: 48px;
   font-weight: ${o.UltraBold};
   text-align: center;
 `,
-    B = r.div`
+    B = s.div`
   font-size: 24px;
   margin-top: -4px;
 `,
-    E = r.div.attrs({
+    E = s.div.attrs({
         className: "flex vc"
     })`
   font-size: 16px;
@@ -128,7 +129,7 @@ const z = t => e.jsx(k, {
   line-height: 1;
 `,
     se = () => {
-        const [t, n] = h(!1), [s, c] = i.useState(null), [l, m] = i.useState(""), {
+        const [t, n] = h(!1), [r, c] = i.useState(null), [l, m] = i.useState(""), {
             id: x
         } = j();
         return i.useEffect(() => {
@@ -139,13 +140,13 @@ const z = t => e.jsx(k, {
                 },
                 error: () => w(P)
             })
-        }, []), s ? t ? e.jsx(C, {
-            questions: s.questions
+        }, []), r ? t ? e.jsx(C, {
+            questions: r.questions
         }) : e.jsx(z, {
-            title: s.title,
-            image: s.gif,
+            title: r.title,
+            image: r.gif,
             creator: l,
-            numberOfQuestions: s.questions.length,
+            numberOfQuestions: r.questions.length,
             setToPreview: n
         }) : e.jsx("div", {
             className: "maxAll flex-center",

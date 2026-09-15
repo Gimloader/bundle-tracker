@@ -1,15 +1,15 @@
 import {
-    al as D,
+    aL as D,
     L as g,
-    am as l,
+    aM as l,
     T as y,
-    an as C,
-    ao as I,
-    ap as S,
-    aq as V
+    aN as C,
+    aO as I,
+    aP as S,
+    aQ as V
 } from "./App-41.js";
 import {
-    B as d,
+    H as d,
     s as A,
     F as R,
     I as x,
@@ -34,6 +34,7 @@ import "./TutorialConsts.js";
 import "./ActionButton.js";
 import "./index-5.js";
 import "./playSound.js";
+import "./MapSound.js";
 import "./howler.js";
 import "./index-18.js";
 import "./context.js";
@@ -63,12 +64,10 @@ import "./util-2.js";
 import "./Shortcut.js";
 import "./Names.js";
 import "./useWillUnmount.js";
-import "./use-motion-value.js";
-import "./use-transform.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
+import "./index-6.js";
+import "./AccessibleAnchor.js";
 import "./index-17.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
@@ -76,6 +75,7 @@ import "./Text.js";
 import "./getCloudinaryUrl.js";
 import "./LazyLatexRenderer.js";
 import "./Tooltip.js";
+import "./use-motion-value.js";
 import "./index-9.js";
 import "./index-23.js";
 import "./useIntervalWhen.js";
@@ -103,9 +103,9 @@ const F = {
         imageId: p("devices/movement_zone/particle.png"),
         imageUrl: p("devices/movement_zone/particle.png")
     },
-    U = n => n * 1e3,
+    L = n => n * 1e3,
     v = {
-        startTime: U(1),
+        startTime: L(1),
         pingCompensation: 100,
         bgMargin: 64
     };

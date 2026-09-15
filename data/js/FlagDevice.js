@@ -1,11 +1,11 @@
 import {
-    b3 as w,
-    be as g,
+    ah as w,
+    by as g,
     T as d,
-    al as F,
+    aL as F,
     G as I,
     L as n,
-    am as l
+    aM as h
 } from "./App-41.js";
 import {
     C as s
@@ -67,12 +67,10 @@ import "./util-2.js";
 import "./Shortcut.js";
 import "./Names.js";
 import "./useWillUnmount.js";
-import "./use-motion-value.js";
-import "./use-transform.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
+import "./index-6.js";
+import "./AccessibleAnchor.js";
 import "./index-17.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
@@ -81,6 +79,7 @@ import "./getCloudinaryUrl.js";
 import "./LazyLatexRenderer.js";
 import "./Tooltip.js";
 import "./howler.js";
+import "./use-motion-value.js";
 import "./index-9.js";
 import "./index-23.js";
 import "./useIntervalWhen.js";
@@ -88,6 +87,7 @@ import "./index-10.js";
 import "./move.js";
 import "./react-flip-move.es.js";
 import "./sounds.js";
+import "./MapSound.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
@@ -135,7 +135,7 @@ const C = {
             }
         }
     },
-    h = t => {
+    l = t => {
         if (c()) return;
         if (!w().interactiveItemsSlots) {
             t.interactiveZones.setInfo({
@@ -283,7 +283,7 @@ class Qt extends F {
             }, this.transitionToState = () => {
                 this.state.currentState === s.carried ? D(this) : this.state.currentState === s.dropped ? P(this) : this.state.currentState === s.idle && X(this)
             }, this.onStateChange = r => {
-                p(this), h(this), r === "currentState" && this.transitionToState(), r === "characterId" && this.state.characterId && (this.lastCharacterIdToHoldFlag = this.state.characterId)
+                p(this), l(this), r === "currentState" && this.transitionToState(), r === "characterId" && this.state.characterId && (this.lastCharacterIdToHoldFlag = this.state.characterId)
             }, this.setupVisualEditing = () => {
                 if (!c() || !y()) return;
                 const r = x(this, "radius");
@@ -310,7 +310,7 @@ class Qt extends F {
                 originX: a.PlatformOriginX,
                 originY: a.PlatformOriginY,
                 layerId: n.DevicesUnderCharacters,
-                depthChange: l(2),
+                depthChange: h(2),
                 onReady: r => {
                     r.view.setScale(a.BaseScale)
                 }
@@ -324,7 +324,7 @@ class Qt extends F {
                 r: a.InteractivityRadius
             }), this.interactiveZones.onInteraction = () => {
                 this.sendToServerDevice("interact")
-            }, h(this), p(this), this.state.currentState === s.carried ? O(this) : this.state.currentState === s.dropped && b(this)), this.options.useSafeZone) {
+            }, l(this), p(this), this.state.currentState === s.carried ? O(this) : this.state.currentState === s.dropped && b(this)), this.options.useSafeZone) {
             this.setupVisualEditing();
             const r = this.options.owningTeamId === g();
             this.parts.add.circle({
@@ -336,7 +336,7 @@ class Qt extends F {
                 borderColor: r ? a.Colors.SafeZone.Border.Owner : a.Colors.SafeZone.Border.NonOwner,
                 borderAlpha: .5,
                 borderWidth: 4,
-                depthChange: l(1)
+                depthChange: h(1)
             }), r && this.colliders.add.circle({
                 x: 0,
                 y: 0,

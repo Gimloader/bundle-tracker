@@ -1,6 +1,6 @@
 import {
-    al as C,
-    am as H,
+    aL as C,
+    aM as H,
     k as S,
     L as P
 } from "./App-41.js";
@@ -15,10 +15,10 @@ import {
 } from "./GetAssetPath.js";
 import {
     F as B,
-    R as F
+    R as M
 } from "./ReplaceVisualEditingPreview.js";
 import {
-    A as M
+    A as F
 } from "./AddIgnoredStaticBodiesWhenCollisionsEnabled.js";
 import "./_index.js";
 import "./Button.js";
@@ -32,6 +32,7 @@ import "./TutorialConsts.js";
 import "./ActionButton.js";
 import "./index-5.js";
 import "./playSound.js";
+import "./MapSound.js";
 import "./howler.js";
 import "./index-18.js";
 import "./context.js";
@@ -61,12 +62,10 @@ import "./util-2.js";
 import "./Shortcut.js";
 import "./Names.js";
 import "./useWillUnmount.js";
-import "./use-motion-value.js";
-import "./use-transform.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
+import "./index-6.js";
+import "./AccessibleAnchor.js";
 import "./index-17.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
@@ -74,6 +73,7 @@ import "./Text.js";
 import "./getCloudinaryUrl.js";
 import "./LazyLatexRenderer.js";
 import "./Tooltip.js";
+import "./use-motion-value.js";
 import "./index-9.js";
 import "./index-23.js";
 import "./useIntervalWhen.js";
@@ -157,7 +157,7 @@ class ii extends C {
             const i = t ?? 1;
             this.healthbar.view.scaleX = i, this.healthbar.view.x = -(c * (1 - i)) / 2, this.healthbarBg.view.alpha = 0, this.healthbar.view.alpha = 0, this.healthbarMark.view.alpha = 0, i > 0 && (this.healthbar.view.alpha = 1, this.healthbarBg.view.alpha = 1, this.healthbarMark.view.alpha = this.healthbar.view.alpha, this.healthbarMark.view.x = -c / 2 + c * i - 1)
         }, this.onStateChange = t => {
-            if (t === "visible" && (this.state.visible ? (M(this), this.show()) : this.hide()), t === "hitData") {
+            if (t === "visible" && (this.state.visible ? (F(this), this.show()) : this.hide()), t === "hitData") {
                 const i = JSON.parse(this.state.hitData);
                 i.alpha !== void 0 && i.damageToDeal !== void 0 && this.onHealthChange(i)
             }
@@ -223,7 +223,7 @@ class ii extends C {
                             y: (.5 - this.propOption.originY) * s
                         },
                         u = d(f.x, f.y, v, b, this.options.FlipX);
-                    F(n.x - u.x, n.y - u.y, {
+                    M(n.x - u.x, n.y - u.y, {
                         Angle: b,
                         Scale: v
                     })

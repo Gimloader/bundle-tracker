@@ -1,21 +1,21 @@
 import {
-    aW as Z,
-    aX as j,
-    U as q,
-    T as P,
-    aY as y,
-    aZ as C,
-    L as B,
-    al as J,
-    aA as K,
-    aB as Q
+    bj as j,
+    bk as q,
+    U as J,
+    T as C,
+    bl as T,
+    L as b,
+    aL as K,
+    a$ as Q,
+    b0 as Z,
+    bm as O
 } from "./App-41.js";
 import {
-    G as W
+    G as B
 } from "./GetAssetPath.js";
 import {
-    a as M,
-    F as b,
+    a as P,
+    F as v,
     P as tt,
     s as u,
     I as k,
@@ -41,6 +41,7 @@ import "./MapModeType.js";
 import "./ActionButton.js";
 import "./index-5.js";
 import "./playSound.js";
+import "./MapSound.js";
 import "./howler.js";
 import "./index-18.js";
 import "./context.js";
@@ -70,12 +71,10 @@ import "./util-2.js";
 import "./Shortcut.js";
 import "./Names.js";
 import "./useWillUnmount.js";
-import "./use-motion-value.js";
-import "./use-transform.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
+import "./index-6.js";
+import "./AccessibleAnchor.js";
 import "./index-17.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
@@ -83,6 +82,7 @@ import "./Text.js";
 import "./getCloudinaryUrl.js";
 import "./LazyLatexRenderer.js";
 import "./Tooltip.js";
+import "./use-motion-value.js";
 import "./index-9.js";
 import "./index-23.js";
 import "./useIntervalWhen.js";
@@ -98,7 +98,7 @@ import "./FillRemainingSpace.js";
 import "./index-24.js";
 const rt = {
         imageId: "radar_arrow",
-        imageUrl: W("devices/waypoint/arrow.png")
+        imageUrl: B("devices/waypoint/arrow.png")
     },
     s = {
         NameTextFontSize: 20,
@@ -115,7 +115,7 @@ const rt = {
         CharacterShift: -25,
         SafeAreaTopMarginWithGUIDevices: 180,
         SafeAreaTopMarginWithoutGUIDevices: 110,
-        SafeAreaExtraTopMarginWithScorebar: j,
+        SafeAreaExtraTopMarginWithScorebar: q,
         SafeAreaBottomMarginWithGUIDevices: 100,
         SafeAreaBottomMarginWithoutGUIDevices: 30,
         SafeAreaLeftRightMargin: 30,
@@ -123,10 +123,10 @@ const rt = {
     },
     nt = {
         fontFamily: ot.ProductSans,
-        fontSize: `${Z.fontWeight} ${s.NameTextFontSize}px`
+        fontSize: `${j.fontWeight} ${s.NameTextFontSize}px`
     },
     st = () => {
-        const t = M(),
+        const t = P(),
             i = t.cameras.main.worldView.left,
             e = t.cameras.main.worldView.right,
             o = t.cameras.main.worldView.top,
@@ -145,16 +145,16 @@ const rt = {
 var h = (t => (t.deviceLocation = "deviceLocation", t.player = "player", t.flag = "flag", t.ball = "ball", t))(h || {});
 const E = t => {
         if (t.options.flagColor === void 0) return;
-        const i = M().worldManager.devices.allDevices.find(e => e.deviceOption.id === G.flag && e.options.flagColor === t.options.flagColor && (e.pointedByWaypointDeviceID === void 0 || e.pointedByWaypointDeviceID === t.id));
+        const i = P().worldManager.devices.allDevices.find(e => e.deviceOption.id === G.flag && e.options.flagColor === t.options.flagColor && (e.pointedByWaypointDeviceID === void 0 || e.pointedByWaypointDeviceID === t.id));
         return i && (i.pointedByWaypointDeviceID = t.id), i
     },
     V = t => {
         if (t.options.ballId === void 0) return;
         if (t.trackedBallDeviceId) {
-            const e = q(t.trackedBallDeviceId);
+            const e = J(t.trackedBallDeviceId);
             if (e) return e
         }
-        const i = M().worldManager.devices.allDevices.find(e => e.deviceOption.id === G.ball && e.options.identifier === t.options.ballId);
+        const i = P().worldManager.devices.allDevices.find(e => e.deviceOption.id === G.ball && e.options.identifier === t.options.ballId);
         return i && (t.trackedBallDeviceId = i.id), i
     },
     ct = t => {
@@ -163,8 +163,8 @@ const E = t => {
             e = t.y;
         const o = st();
         if (t.options.target === h.player) {
-            const n = b(t.state.characterId);
-            if (!n || n.id === P()) return;
+            const n = v(t.state.characterId);
+            if (!n || n.id === C()) return;
             i = n.body.x, e = n.body.y + s.CharacterShift
         } else if (t.options.target === h.flag) {
             const n = E(t);
@@ -197,47 +197,48 @@ const E = t => {
             angle: a
         }
     },
-    Y = (t, i) => {
-        const e = t.scene.cameras.main.zoom / y(),
-            o = u.gui.guiSlots.find(c => c.position === C.topLeft || c.position === C.topRight),
-            a = u.gui.guiSlots.find(c => c.position === C.bottomLeft || c.position === C.bottomRight);
+    $ = (t, i) => {
+        const e = t.scene.cameras.main.zoom / t.scene.resizeManager.usedDpi,
+            o = u.gui.guiSlots.find(c => c.position === T.topLeft || c.position === T.topRight),
+            a = u.gui.guiSlots.find(c => c.position === T.bottomLeft || c.position === T.bottomRight);
         let r = o ? s.SafeAreaTopMarginWithGUIDevices : s.SafeAreaTopMarginWithoutGUIDevices;
         u.gui.scorebar && (r += s.SafeAreaExtraTopMarginWithScorebar), r = r / e;
         const n = (a ? s.SafeAreaBottomMarginWithGUIDevices : s.SafeAreaBottomMarginWithoutGUIDevices) / e,
             l = s.SafeAreaLeftRightMargin / e;
         return new Phaser.Geom.Rectangle(i.camData.left + l, i.camData.top + r, i.camData.width - 2 * l, i.camData.height - r - n)
     },
-    lt = (t, i) => Phaser.Geom.Intersects.CircleToRectangle(new Phaser.Geom.Circle(i.x, i.y, 1), Y(t, i)),
+    lt = (t, i) => Phaser.Geom.Intersects.CircleToRectangle(new Phaser.Geom.Circle(i.x, i.y, 1), $(t, i)),
     ht = (t, i, e) => {
-        var m, p, f, w, I, x;
+        var m, p, f, w, y, x;
         let o = !((m = t.pointer) != null && m.view) || !((p = t.nameText) != null && p.view);
         if (t.options.target === h.ball && (o = !0), o) {
             (f = t.pointer) != null && f.view && (t.pointer.view.alpha = 0), (w = t.nameText) != null && w.view && (t.nameText.view.alpha = 0);
             return
         }
-        const a = t.scene.cameras.main.zoom / y(),
-            r = t.pointer.view.width * s.PointerBaseScale / a,
+        const a = t.scene.cameras.main.zoom / t.scene.resizeManager.usedDpi;
+        t.nameText.view.setText(`${t.options.name}`), t.nameText.view.setScale(1 / a);
+        const r = t.pointer.view.width * s.PointerBaseScale / a,
             n = t.nameText.view.width / a,
             l = -10 / a,
             c = 25;
-        e.x > e.camData.x ? (t.pointer.view.x = e.x - r / 2 - c, t.pointer.view.y = e.y, t.pointer.view.angle = 0, t.nameText.view.x = e.x - r - n / 2 - c - l, t.nameText.view.y = e.y) : (t.pointer.view.x = e.x + r / 2 + c, t.pointer.view.y = e.y, t.pointer.view.angle = 180, t.nameText.view.x = e.x + r + n / 2 + c + l, t.nameText.view.y = e.y), t.pointer.view.setScale(s.PointerBaseScale / a * .65), t.nameText.view.setText(`${t.options.name}`), (x = (I = t.icon) == null ? void 0 : I.view) == null || x.setAlpha(0)
+        e.x > e.camData.x ? (t.pointer.view.x = e.x - r / 2 - c, t.pointer.view.y = e.y, t.pointer.view.angle = 0, t.nameText.view.x = e.x - r - n / 2 - c - l, t.nameText.view.y = e.y) : (t.pointer.view.x = e.x + r / 2 + c, t.pointer.view.y = e.y, t.pointer.view.angle = 180, t.nameText.view.x = e.x + r + n / 2 + c + l, t.nameText.view.y = e.y), t.pointer.view.setScale(s.PointerBaseScale / a * .65), (x = (y = t.icon) == null ? void 0 : y.view) == null || x.setAlpha(0)
     },
     pt = t => {
         var a, r;
-        const i = b(t.state.characterId);
+        const i = v(t.state.characterId);
         if (!i) {
             (a = t.icon) == null || a.destroy();
             return
         }
         const e = i.skin.skinId.replace("character_", "");
         if (!e) return;
-        const o = W(`characters/spine/normalized_preview/${e}.png`);
+        const o = B(`characters/spine/normalized_preview/${e}.png`);
         ((r = t.icon) == null ? void 0 : r.options.imageUrl) !== o && t.parts.add.sprite({
             imageId: o,
             imageUrl: o,
-            layerId: B.InGameUIElements,
+            layerId: b.InGameUIElements,
             onReady: n => {
-                const l = b(t.state.characterId);
+                const l = v(t.state.characterId);
                 if (!l && l !== i) return;
                 const c = l.skin.skinId.replace("character_", "");
                 !c && c !== e || (t.icon && t.icon.destroy(), t.icon = n)
@@ -245,93 +246,93 @@ const E = t => {
         })
     },
     mt = (t, i, e) => {
-        var F, L, O, z;
-        const o = t.scene.cameras.main.zoom / y(),
+        var U, F, z, L;
+        const o = t.scene.cameras.main.zoom / t.scene.resizeManager.usedDpi,
             a = 999999999,
             r = e.camData.x + Math.cos(e.angle) * a,
             n = e.camData.y + Math.sin(e.angle) * a,
-            l = Phaser.Geom.Intersects.GetLineToRectangle(new Phaser.Geom.Line(e.camData.x, e.camData.y, r, n), Y(t, e));
+            l = Phaser.Geom.Intersects.GetLineToRectangle(new Phaser.Geom.Line(e.camData.x, e.camData.y, r, n), $(t, e));
         if (!l[0]) {
-            (F = t.pointer) != null && F.view && (t.pointer.view.alpha = 0);
+            (U = t.pointer) != null && U.view && (t.pointer.view.alpha = 0);
             return
         }
         const c = l[0].x,
             m = l[0].y;
-        if ((L = t.pointer) != null && L.view && (t.pointer.view.x = c, t.pointer.view.y = m, t.pointer.view.alpha = 1, t.pointer.view.rotation = e.angle, t.pointer.view.setScale(s.PointerBaseScale / o)), !((O = t.nameText) != null && O.view)) return;
+        if ((F = t.pointer) != null && F.view && (t.pointer.view.x = c, t.pointer.view.y = m, t.pointer.view.alpha = 1, t.pointer.view.rotation = e.angle, t.pointer.view.setScale(s.PointerBaseScale / o)), !((z = t.nameText) != null && z.view)) return;
         const p = t.options.target === h.player;
         p && pt(t), t.nameText.view.setScale(1 / o);
         const f = t.nameText.view.getBounds(),
             w = f.width,
-            I = f.height,
+            y = f.height,
             x = p ? s.CharacterPreviewSize : w,
-            R = p ? s.CharacterPreviewSize : I,
-            A = s.PointerCircleRadius / o;
-        let d = Phaser.Math.Distance.Between(c, m, e.camData.x, e.camData.y) - A,
+            W = p ? s.CharacterPreviewSize : y,
+            R = s.PointerCircleRadius / o;
+        let d = Phaser.Math.Distance.Between(c, m, e.camData.x, e.camData.y) - R,
             g = e.camData.x + Math.cos(e.angle) * d,
-            S = e.camData.y + Math.sin(e.angle) * d,
-            U = !0;
-        for (; U;) {
-            d -= 1 / o, g = e.camData.x + Math.cos(e.angle) * d, S = e.camData.y + Math.sin(e.angle) * d;
-            const T = new Phaser.Geom.Circle(c, m, A),
-                N = new Phaser.Geom.Rectangle(g - x / 2, S - R / 2, x, R);
-            U = Phaser.Geom.Intersects.CircleToRectangle(T, N)
+            I = e.camData.y + Math.sin(e.angle) * d,
+            A = !0;
+        for (; A;) {
+            d -= 1 / o, g = e.camData.x + Math.cos(e.angle) * d, I = e.camData.y + Math.sin(e.angle) * d;
+            const S = new Phaser.Geom.Circle(c, m, R),
+                N = new Phaser.Geom.Rectangle(g - x / 2, I - W / 2, x, W);
+            A = Phaser.Geom.Intersects.CircleToRectangle(S, N)
         }
-        if (t.nameText.view.x = g, t.nameText.view.y = S, p) {
-            (z = t.icon) != null && z.view && (t.icon.view.setOrigin(s.CharacterPreviewOriginX, s.CharacterPreviewOriginY), t.icon.view.x = g, t.icon.view.y = S, t.icon.view.setScale(s.CharacterPreviewScale / o), t.icon.view.setAlpha(1));
-            const T = w / 2 + s.CharacterPreviewAndTextSpace;
-            t.nameText.view.x = g + T, e.camData.x < g && (t.nameText.view.x = g - T)
+        if (t.nameText.view.x = g, t.nameText.view.y = I, p) {
+            (L = t.icon) != null && L.view && (t.icon.view.setOrigin(s.CharacterPreviewOriginX, s.CharacterPreviewOriginY), t.icon.view.x = g, t.icon.view.y = I, t.icon.view.setScale(s.CharacterPreviewScale / o), t.icon.view.setAlpha(1));
+            const S = w / 2 + s.CharacterPreviewAndTextSpace;
+            t.nameText.view.x = g + S, e.camData.x < g && (t.nameText.view.x = g - S)
         }
-        const D = u.phaser.mainCharacter;
-        if (!D) return;
-        const $ = Phaser.Math.Distance.Between(D.body.x, D.body.y, e.x, e.y),
-            H = s.PixelsPerMeter,
-            _ = Math.round($ / H);
+        const M = u.phaser.mainCharacter;
+        if (!M) return;
+        const H = Phaser.Math.Distance.Between(M.body.x, M.body.y, e.x, e.y),
+            X = s.PixelsPerMeter,
+            _ = Math.round(H / X);
         t.nameText.view.setText(`${t.options.name} (${_}m)`)
     },
-    v = t => {
+    D = t => {
         var e, o, a;
         let i = 1;
-        if (k() && (i = 0), t.state.active || (i = 0), t.options.target === h.player && !t.state.characterId && (i = 0), t.options.target === h.player && t.state.characterId === P() && (i = 0), t.options.target === h.flag) {
+        if (k() && (i = 0), t.state.active || (i = 0), t.options.target === h.player && !t.state.characterId && (i = 0), t.options.target === h.player && t.state.characterId === C() && (i = 0), t.options.target === h.flag) {
             const r = E(t);
-            r ? (r.state.characterId === P() || r.lastCharacterIdToHoldFlag === P() && r.goingBackToBase || t.options.hideWhenFlagIsInBase && r.isInBase()) && (i = 0) : i = 0
+            r ? (r.state.characterId === C() || r.lastCharacterIdToHoldFlag === C() && r.goingBackToBase || t.options.hideWhenFlagIsInBase && r.isInBase()) && (i = 0) : i = 0
         } else if (t.options.target === h.ball) {
             const r = V(t);
             r && r.state.active || (i = 0)
         }
         return (e = t.pointer) != null && e.view && (t.pointer.view.alpha = i), (o = t.nameText) != null && o.view && (t.nameText.view.alpha = i), (a = t.icon) != null && a.view && (t.icon.view.alpha = i), i
     };
-var X = (t => (t.deactivateWithinRange = "deactivateWithinRange", t))(X || {});
+var Y = (t => (t.deactivateWithinRange = "deactivateWithinRange", t))(Y || {});
 const ft = (t, i) => {
         if (!t.options.useDeactivateWithinRange || t.options.target !== h.deviceLocation || !t.state.active) return;
         const e = u.phaser.mainCharacter;
         if (!e) return;
         const o = Phaser.Math.Distance.Between(e.body.x, e.body.y, i.x, i.y),
             a = s.PixelsPerMeter;
-        Math.round(o / a) < t.options.deactivateWithinRange && t.sendToServerDevice(X.deactivateWithinRange)
+        Math.round(o / a) < t.options.deactivateWithinRange && t.sendToServerDevice(Y.deactivateWithinRange)
     },
     gt = t => {
         if (t.options.flagColor === void 0) return;
-        const i = M().worldManager.devices.allDevices.find(e => e.deviceOption.id === G.flag && e.options.flagColor === t.options.flagColor && e.pointedByWaypointDeviceID === t.id);
+        const i = P().worldManager.devices.allDevices.find(e => e.deviceOption.id === G.flag && e.options.flagColor === t.options.flagColor && e.pointedByWaypointDeviceID === t.id);
         i && (i.pointedByWaypointDeviceID = void 0)
     };
-class Re extends J {
+class Re extends K {
     constructor(i) {
         if (super(i), this.onUpdate = e => {
-                if (!v(this)) return;
+                if (!D(this)) return;
                 const a = ct(this);
                 if (!a) return;
                 lt(this, a) ? ht(this, e, a) : mt(this, e, a), ft(this, a)
             }, this.onDestroy = e => {
                 gt(this)
             }, k() && et()) {
-            const e = Q.Overlay;
-            new K({
+            const e = Z.Overlay;
+            new Q({
                 device: this,
                 baseColor: e.baseColor,
                 boxColor: e.boxColor,
                 content: {
                     icon: {
-                        image: W("devices/waypoint/icon.png"),
+                        image: B("devices/waypoint/icon.png"),
                         scale: .9
                     }
                 }
@@ -342,18 +343,18 @@ class Re extends J {
             const e = Phaser.Display.Color.HexStringToColor(this.options.color).color;
             this.pointer = this.parts.add.sprite({
                 ...rt,
-                layerId: B.InGameUIElements,
+                layerId: b.InGameUIElements,
                 onReady: o => {
-                    o.view.setTint(e), v(this)
+                    o.view.setTint(e), D(this)
                 }
             }), this.nameText = this.parts.add.text({
                 text: this.options.name,
-                layerId: B.InGameUIElements,
+                layerId: b.InGameUIElements,
                 textStyle: {
                     ...nt,
                     color: this.options.color
                 }
-            }), this.nameText.view.setPadding(5 * y()), this.nameText.view.setShadow(0, 0, "#333333", s.ShadowBlur, !1, !0), this.nameText.view.setResolution(y()), v(this)
+            }), this.nameText.view.setPadding(5 * O()), this.nameText.view.setShadow(0, 0, "#333333", s.ShadowBlur, !1, !0), this.nameText.view.setResolution(O()), D(this)
         }
     }
 }

@@ -1,9 +1,9 @@
 import {
-    aU as d,
-    aV as g,
+    bh as d,
+    bi as g,
     G as b,
     L as f,
-    al as v
+    aL as v
 } from "./App-41.js";
 import {
     d as y,
@@ -32,6 +32,7 @@ import "./TutorialConsts.js";
 import "./ActionButton.js";
 import "./index-5.js";
 import "./playSound.js";
+import "./MapSound.js";
 import "./howler.js";
 import "./index-18.js";
 import "./context.js";
@@ -61,12 +62,10 @@ import "./util-2.js";
 import "./Shortcut.js";
 import "./Names.js";
 import "./useWillUnmount.js";
-import "./use-motion-value.js";
-import "./use-transform.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
+import "./index-6.js";
+import "./AccessibleAnchor.js";
 import "./index-17.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
@@ -74,6 +73,7 @@ import "./Text.js";
 import "./getCloudinaryUrl.js";
 import "./LazyLatexRenderer.js";
 import "./Tooltip.js";
+import "./use-motion-value.js";
 import "./index-9.js";
 import "./index-23.js";
 import "./useIntervalWhen.js";
@@ -262,7 +262,7 @@ const E = {
         const a = 1 - B * i.animations.ballHeight / n.animation.maxHeight;
         i.shadow.r1 = R * a * i.container2.view.scaleX * i.options.radius, i.shadow.r2 = _ * a * i.container2.view.scaleY * i.options.radius, i.shadow.alphaMultip = i.container2.view.alpha * i.container.view.alpha
     },
-    F = i => {
+    L = i => {
         l() && !c() || (i.projectiles.setDynamic(!0), i.projectiles.collidesWithProjectile = a => {
             const {
                 x: t,
@@ -332,7 +332,7 @@ class ei extends v {
                 t.key === "goal" && (this.hide(), setTimeout(() => {
                     this.isDestroyed || this.particles.burst(this.container.view.x, this.container.view.y, this.container.view.depth)
                 }, 250)), t.key === "reset" && (this.movement.onReset(), this.show())
-            }, A(this), F(this), this.movement = new X(this), this.animations = new Y(this), this.rotation = new I(this), this.particles = new H(this), this.updateActive(), l() && S()) {
+            }, A(this), L(this), this.movement = new X(this), this.animations = new Y(this), this.rotation = new I(this), this.particles = new H(this), this.updateActive(), l() && S()) {
             const t = P(this, "radius");
             this.visualEditing.add.circle({
                 angle: 0,

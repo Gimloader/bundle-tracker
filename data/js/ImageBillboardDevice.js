@@ -1,11 +1,11 @@
 import {
-    al as P,
-    aS as x,
+    aL as P,
+    bf as x,
     L as I,
-    b5 as C,
-    b6 as M,
-    aq as w,
-    ai as y
+    bp as C,
+    bq as M,
+    aQ as w,
+    aE as y
 } from "./App-41.js";
 import {
     F as D
@@ -33,6 +33,7 @@ import "./TutorialConsts.js";
 import "./ActionButton.js";
 import "./index-5.js";
 import "./playSound.js";
+import "./MapSound.js";
 import "./howler.js";
 import "./index-18.js";
 import "./context.js";
@@ -62,12 +63,10 @@ import "./util-2.js";
 import "./Shortcut.js";
 import "./Names.js";
 import "./useWillUnmount.js";
-import "./use-motion-value.js";
-import "./use-transform.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
+import "./index-6.js";
+import "./AccessibleAnchor.js";
 import "./index-17.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
@@ -75,6 +74,7 @@ import "./Text.js";
 import "./getCloudinaryUrl.js";
 import "./LazyLatexRenderer.js";
 import "./Tooltip.js";
+import "./use-motion-value.js";
 import "./index-9.js";
 import "./index-23.js";
 import "./useIntervalWhen.js";
@@ -127,7 +127,7 @@ const H = o => {
         height: c
     }
 };
-class Qi extends P {
+class Ki extends P {
     constructor(t) {
         super(t), this.matchesPhase = !0, this.createVisuals = () => {
             this.matchesPhase && (this.createFrame(), this.createImage()), this.boundingBox.setHardcoded(H({
@@ -204,6 +204,6 @@ class Qi extends P {
     }
 }
 export {
-    Qi as
+    Ki as
     default
 };

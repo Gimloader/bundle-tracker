@@ -1,13 +1,13 @@
 import {
-    al as N,
+    aL as N,
     L as y,
-    aq as M
+    aQ as M
 } from "./App-41.js";
 import {
     G as r
 } from "./GetAssetPath.js";
 import {
-    B as D,
+    H as D,
     I as g,
     i as C,
     d as x
@@ -17,7 +17,7 @@ import {
     R as G
 } from "./ReplaceVisualEditingPreview.js";
 import {
-    O
+    O as L
 } from "./OnHit.js";
 import "./_index.js";
 import "./Button.js";
@@ -31,6 +31,7 @@ import "./TutorialConsts.js";
 import "./ActionButton.js";
 import "./index-5.js";
 import "./playSound.js";
+import "./MapSound.js";
 import "./howler.js";
 import "./index-18.js";
 import "./context.js";
@@ -60,12 +61,10 @@ import "./util-2.js";
 import "./Shortcut.js";
 import "./Names.js";
 import "./useWillUnmount.js";
-import "./use-motion-value.js";
-import "./use-transform.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
+import "./index-6.js";
+import "./AccessibleAnchor.js";
 import "./index-17.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
@@ -73,6 +72,7 @@ import "./Text.js";
 import "./getCloudinaryUrl.js";
 import "./LazyLatexRenderer.js";
 import "./Tooltip.js";
+import "./use-motion-value.js";
 import "./index-9.js";
 import "./index-23.js";
 import "./useIntervalWhen.js";
@@ -89,17 +89,17 @@ import "./index-24.js";
 var t = (e => (e.active = "ACTIVE", e.inactive = "INACTIVE", e.toActive = "TO_ACTIVE", e.toInactive = "TO_INACTIVE", e))(t || {});
 const i = (e, n) => "LASER_BEAM_DEVICE_ORIGIN_ANIM_" + n + e;
 var I = (e => (e.standard = "Standard", e.plant = "Plant", e))(I || {});
-const V = {
+const O = {
         imageId: r("devices/laser_beam/laser.png"),
         imageUrl: r("devices/laser_beam/laser.png")
     },
-    L = {
+    V = {
         imageId: r("devices/laser_beam/dot.png"),
         imageUrl: r("devices/laser_beam/dot.png")
     },
     d = I.standard,
     l = I.plant,
-    B = {
+    H = {
         baseScale: .36,
         spritesheetId: r("devices/laser_beam/standard_base.png"),
         spritesheetUrl: r("devices/laser_beam/standard_base.png"),
@@ -137,7 +137,7 @@ const V = {
             }
         }]
     },
-    H = {
+    B = {
         baseScale: .5,
         spritesheetId: r("devices/laser_beam/plant_base.png"),
         spritesheetUrl: r("devices/laser_beam/plant_base.png"),
@@ -176,8 +176,8 @@ const V = {
         }]
     },
     U = {
-        [d]: B,
-        [l]: H
+        [d]: H,
+        [l]: B
     },
     Y = 600,
     R = 55,
@@ -201,7 +201,7 @@ class ni extends N {
                 this.state.active && !this.prevState.active ? (this.origin.view.play(i(t.toActive, this.options.appearance)), this.endPoint.view.play(i(t.toActive, this.options.appearance))) : !this.state.active && this.prevState.active && (this.origin.view.play(i(t.toInactive, this.options.appearance)), this.endPoint.view.play(i(t.toInactive, this.options.appearance)))
             }
         }, this.onMessage = a => {
-            a.key === "hit" && O(a.data)
+            a.key === "hit" && L(a.data)
         }, this.setupVisualEditing = () => {
             if (!g() || !C()) return;
             const a = T(this, "distance"),
@@ -234,7 +234,7 @@ class ni extends N {
                 this.animationsReady = !0, this.state.active || g() ? (this.origin.view.play(i(t.active, this.options.appearance)), a.view.play(i(t.active, this.options.appearance))) : (this.origin.view.play(i(t.inactive, this.options.appearance)), a.view.play(i(t.inactive, this.options.appearance)))
             }
         }), this.laser = this.parts.add.sprite({
-            ...V,
+            ...O,
             layerId: y.DevicesAboveCharacters
         }), this.origin.view.rotation = o, this.endPoint.view.rotation = this.origin.view.rotation + Math.PI, this.origin.view.setScale(this.base.baseScale), this.endPoint.view.setScale(this.base.baseScale), this.laser.view.rotation = o, this.laser.view.blendMode = Phaser.BlendModes.ADD, this.laser.view.tint = M(this.options.laserColor), this.laser.view.scaleX = (this.options.distance - R) / Y, this.laser.view.scaleY = .75, this.options.showOrigin || (this.origin.view.alpha = 0), this.options.showEndPoint || (this.endPoint.view.alpha = 0), x() && !this.state.active && (this.activeFactor = 0, this.laser.view.scaleY = 0)
     }
@@ -257,7 +257,7 @@ class ni extends N {
             const E = a + v * S,
                 u = s + v * _;
             this.parts.add.sprite({
-                ...L,
+                ...V,
                 depthChange: Math.min(s, P) - u,
                 ignoreInput: !0,
                 layerId: y.DevicesUnderCharacters,

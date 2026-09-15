@@ -170,7 +170,7 @@ const Ct = () => {
   ${t=>t.isOnDesktop&&`
     transition: background 0.18s ease-in-out;
     &:hover {
-      background: ${G(.1,t.answerColors[t.position].background)};
+      background: ${t.answerColors[t.position].hoverBackground||G(.1,t.answerColors[t.position].background)};
     }
   `}
 `,
@@ -273,7 +273,7 @@ const Ct = () => {
   background: ${t=>t.buttonColor.background};
   color: ${t=>t.buttonColor.text};
   &:hover {
-    background: ${t=>G(.1,t.buttonColor.background)};
+    background: ${t=>t.buttonColor.hoverBackground||G(.1,t.buttonColor.background)};
   }
   font-weight: bold;
   font-size: 32px;
@@ -1147,5 +1147,5 @@ const re = t => e.jsxs(Yt, {
   will-change: opacity;
 `;
 export {
-    q as D, kt as E, vt as F, je as G, nt as S, I as T
+    pt as A, Xt as C, q as D, kt as E, vt as F, je as G, nt as S, I as T
 };

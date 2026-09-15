@@ -1,7 +1,7 @@
 import {
-    al as l,
-    am as s,
-    aq as c,
+    aL as l,
+    aM as m,
+    aQ as c,
     L as g
 } from "./App-41.js";
 import {
@@ -11,10 +11,10 @@ import {
     e
 } from "./FixSpinePlugin.js";
 import {
-    a as h
+    Z as h
 } from "./ZonedDeviceDisplay.js";
 import {
-    F as m,
+    F as s,
     R as u
 } from "./ReplaceVisualEditingPreview.js";
 import {
@@ -32,6 +32,7 @@ import "./TutorialConsts.js";
 import "./ActionButton.js";
 import "./index-5.js";
 import "./playSound.js";
+import "./MapSound.js";
 import "./howler.js";
 import "./index-18.js";
 import "./context.js";
@@ -61,12 +62,10 @@ import "./util-2.js";
 import "./Shortcut.js";
 import "./Names.js";
 import "./useWillUnmount.js";
-import "./use-motion-value.js";
-import "./use-transform.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
+import "./index-6.js";
+import "./AccessibleAnchor.js";
 import "./index-17.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
@@ -74,6 +73,7 @@ import "./Text.js";
 import "./getCloudinaryUrl.js";
 import "./LazyLatexRenderer.js";
 import "./Tooltip.js";
+import "./use-motion-value.js";
 import "./index-9.js";
 import "./index-23.js";
 import "./useIntervalWhen.js";
@@ -91,7 +91,7 @@ const w = {
     imageId: n("devices/zombie_spawn_zone/icon.png"),
     imageUrl: n("devices/zombie_spawn_zone/icon.png")
 };
-class Lt extends l {
+class _t extends l {
     constructor(d) {
         if (super(d), this.updatePartAlpha = t => {
                 const i = this.getAlpha();
@@ -103,9 +103,9 @@ class Lt extends l {
                 }), this.rect && this.rect.updateAlpha(t)
             }, this.setupVisualEditing = () => {
                 if (!a() || !p()) return;
-                const t = m(this, "width"),
-                    i = m(this, "height");
-                m(this, "rotation"), this.visualEditing.add.box({
+                const t = s(this, "width"),
+                    i = s(this, "height");
+                s(this, "rotation"), this.visualEditing.add.box({
                     width: this.options.width,
                     height: this.options.height,
                     angle: this.options.rotation,
@@ -125,7 +125,7 @@ class Lt extends l {
                 })
             }, a() && p() && this.parts.add.sprite({
                 ...w,
-                depthChange: s(2)
+                depthChange: m(2)
             }).view.setScale(.17), r() || e() ? 0 : h.shouldShow(this)) {
             this.setupVisualEditing();
             const t = c("#00FF00");
@@ -138,7 +138,7 @@ class Lt extends l {
                 borderColor: t,
                 borderAlpha: r() || e() ? 0 : 1,
                 borderWidth: 4,
-                depthChange: s(1),
+                depthChange: m(1),
                 ignoreInput: !0,
                 angle: this.options.rotation
             })
@@ -149,6 +149,6 @@ class Lt extends l {
     }
 }
 export {
-    Lt as ZombieSpawnZoneDevice, Lt as
+    _t as ZombieSpawnZoneDevice, _t as
     default
 };

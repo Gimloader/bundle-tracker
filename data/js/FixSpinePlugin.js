@@ -1,46 +1,49 @@
-var wa = Object.defineProperty;
-var La = (V, T, E) => T in V ? wa(V, T, {
+var Fa = Object.defineProperty;
+var wa = (V, T, E) => T in V ? Fa(V, T, {
     enumerable: !0,
     configurable: !0,
     writable: !0,
     value: E
 }) : V[T] = E;
-var z = (V, T, E) => La(V, typeof T != "symbol" ? T + "" : T, E);
+var z = (V, T, E) => wa(V, typeof T != "symbol" ? T + "" : T, E);
 import {
     G as ds
 } from "./GetAssetPath.js";
 import {
     m as Ot,
     o as j,
-    dF as Jn,
+    dF as Zn,
     aZ as zs,
-    ce as Oa,
-    ar as Ia,
-    au as gi,
-    aw as Da
+    ce as La,
+    ar as Oa,
+    au as xi,
+    aw as Ia
 } from "./_index.js";
 import {
-    M as Qn
+    M as Jn
 } from "./MapModeType.js";
 import {
     M as Ws
 } from "./MapStyle.js";
 import {
-    p as $n
+    g as Da
+} from "./MapSound.js";
+import {
+    p as Qn
 } from "./playSound.js";
-var jn = (V => (V.preload = "preload", V.game = "game", V))(jn || {}),
+var $n = (V => (V.preload = "preload", V.game = "game", V))($n || {}),
     Ba = Object.defineProperty,
-    kn = (V, T, E, M) => {
+    jn = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Ba(T, E, A), A
     };
 class Hs {
     constructor() {
-        this.currentScene = jn.preload, this.isCursorOverCanvas = !1, this.gpuTier = 0, Ot(this)
+        this.currentScene = $n.preload, this.isCursorOverCanvas = !1, this.gpuTier = 0, Ot(this)
     }
 }
-kn([j], Hs.prototype, "currentScene");
-kn([j], Hs.prototype, "isCursorOverCanvas");
+jn([j], Hs.prototype, "currentScene");
+jn([j], Hs.prototype, "isCursorOverCanvas");
 var Ga = Object.defineProperty,
     he = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -86,7 +89,7 @@ let Na = class {
         this.mainCharacterTeleported = !1
     }
 };
-var qn = (V => (V.none = "none", V.adding = "adding", V.removing = "removing", V.editingDevice = "editingDevice", V.editingWire = "editingWire", V.hooks = "hooks", V.deviceUI = "deviceUI", V))(qn || {}),
+var kn = (V => (V.none = "none", V.adding = "adding", V.removing = "removing", V.editingDevice = "editingDevice", V.editingWire = "editingWire", V.hooks = "hooks", V.deviceUI = "deviceUI", V))(kn || {}),
     Xa = Object.defineProperty,
     Ks = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -146,12 +149,12 @@ var za = Object.defineProperty,
         return A && za(T, E, A), A
     },
     Ha = (V => (V.none = "none", V.device = "device", V.terrain = "terrain", V.wire = "wire", V))(Ha || {});
-class _n {
+class qn {
     constructor() {
         this.terrain = new Wi, this.devices = new cs, this.wires = new ms, this.mode = "none", Ot(this)
     }
 }
-Wa([j], _n.prototype, "mode");
+Wa([j], qn.prototype, "mode");
 var Ka = Object.defineProperty,
     Za = Object.getOwnPropertyDescriptor,
     Js = (V, T, E, M) => {
@@ -169,11 +172,11 @@ class gs {
         return !!this.__wiresUnderCursor.size
     }
 }
-Js([Jn], gs.prototype, "cursorIsOverDevice", 1);
-Js([Jn], gs.prototype, "cursorIsOverWire", 1);
+Js([Zn], gs.prototype, "cursorIsOverDevice", 1);
+Js([Zn], gs.prototype, "cursorIsOverWire", 1);
 Js([j], gs.prototype, "cursorIsOverCharacterId", 2);
 var Ja = Object.defineProperty,
-    tr = (V, T, E, M) => {
+    _n = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Ja(T, E, A), A
     };
@@ -185,37 +188,37 @@ class Qs {
         }, this.desiredOpenDeviceId = "", this.serverVersionOpenDeviceId = "", Ot(this)
     }
 }
-tr([j], Qs.prototype, "current");
-tr([j], Qs.prototype, "serverVersionOpenDeviceId");
+_n([j], Qs.prototype, "current");
+_n([j], Qs.prototype, "serverVersionOpenDeviceId");
 var Qa = Object.defineProperty,
-    ui = (V, T, E, M) => {
+    fi = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Qa(T, E, A), A
     },
     $a = (V => (V.home = "home", V.grid = "grid", V))($a || {});
-class Ze {
+class Qe {
     constructor() {
         this.currentlyEditedDevice = {}, this.visualEditing = {}, this.screen = "home", this.currentlyEditedGridId = "", this.sortingState = j.array(), this.currentlySortedDeviceId = "", this.usingMultiselect = !1, Ot(this)
     }
 }
-ui([j], Ze.prototype, "currentlyEditedDevice");
-ui([j], Ze.prototype, "visualEditing");
-ui([j], Ze.prototype, "screen");
-ui([j], Ze.prototype, "currentlyEditedGridId");
-ui([j], Ze.prototype, "sortingState");
-ui([j], Ze.prototype, "currentlySortedDeviceId");
-ui([j], Ze.prototype, "usingMultiselect");
+fi([j], Qe.prototype, "currentlyEditedDevice");
+fi([j], Qe.prototype, "visualEditing");
+fi([j], Qe.prototype, "screen");
+fi([j], Qe.prototype, "currentlyEditedGridId");
+fi([j], Qe.prototype, "sortingState");
+fi([j], Qe.prototype, "currentlySortedDeviceId");
+fi([j], Qe.prototype, "usingMultiselect");
 var ja = Object.defineProperty,
     ka = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && ja(T, E, A), A
     };
-class er {
+class tr {
     constructor() {
         this.currentlyEditedWireId = "", Ot(this)
     }
 }
-ka([j], er.prototype, "currentlyEditedWireId");
+ka([j], tr.prototype, "currentlyEditedWireId");
 var qa = Object.defineProperty,
     Hi = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -233,11 +236,11 @@ Hi([j], Di.prototype, "cameraZoom");
 Hi([j], Di.prototype, "topDownControlsActive");
 let _a = class {
     constructor() {
-        this.device = new Ze, this.wire = new er, this.preferences = new Di
+        this.device = new Qe, this.wire = new tr, this.preferences = new Di
     }
 };
 var to = Object.defineProperty,
-    ir = (V, T, E, M) => {
+    er = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && to(T, E, A), A
     };
@@ -246,8 +249,8 @@ class $s {
         this.deviceId = "", this.info = null, Ot(this)
     }
 }
-ir([j], $s.prototype, "deviceId");
-ir([j], $s.prototype, "info");
+er([j], $s.prototype, "deviceId");
+er([j], $s.prototype, "info");
 var eo = Object.defineProperty,
     te = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -287,26 +290,26 @@ te([j], Ie.prototype, "interactiveSlotsOrder");
 te([j], Ie.prototype, "interactiveSlotErrorMessages");
 te([j], Ie.prototype, "infiniteAmmo");
 var so = Object.defineProperty,
-    fi = (V, T, E, M) => {
+    di = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && so(T, E, A), A
     },
     no = (V => (V.everything = "Everything", V.propsAndDevices = "Props & Devices", V.tiles = "Tiles", V.wires = "Wires", V))(no || {}),
     ro = (V => (V.allLayers = "All Layers", V.topLayer = "Top Layer", V.layer = "Layer", V))(ro || {});
-class Je {
+class $e {
     constructor() {
         this.deviceIdToRemove = null, this.wireIdToRemove = null, this.tilesToRemove = [], this.removingMode = "Everything", this.removingTilesMode = "Top Layer", this.removingTilesLayer = 3, this.removingTilesEraserSize = 1, Ot(this)
     }
 }
-fi([j], Je.prototype, "deviceIdToRemove");
-fi([j], Je.prototype, "wireIdToRemove");
-fi([j], Je.prototype, "tilesToRemove");
-fi([j], Je.prototype, "removingMode");
-fi([j], Je.prototype, "removingTilesMode");
-fi([j], Je.prototype, "removingTilesLayer");
-fi([j], Je.prototype, "removingTilesEraserSize");
+di([j], $e.prototype, "deviceIdToRemove");
+di([j], $e.prototype, "wireIdToRemove");
+di([j], $e.prototype, "tilesToRemove");
+di([j], $e.prototype, "removingMode");
+di([j], $e.prototype, "removingTilesMode");
+di([j], $e.prototype, "removingTilesLayer");
+di([j], $e.prototype, "removingTilesEraserSize");
 var ao = Object.defineProperty,
-    sr = (V, T, E, M) => {
+    ir = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && ao(T, E, A), A
     };
@@ -315,8 +318,8 @@ class js {
         this.title = "", this.description = "", Ot(this)
     }
 }
-sr([j], js.prototype, "title");
-sr([j], js.prototype, "description");
+ir([j], js.prototype, "title");
+ir([j], js.prototype, "description");
 var oo = Object.defineProperty,
     ks = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -331,7 +334,7 @@ ks([j], xs.prototype, "id");
 ks([j], xs.prototype, "name");
 ks([j], xs.prototype, "shuffle");
 var ho = Object.defineProperty,
-    nr = (V, T, E, M) => {
+    sr = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && ho(T, E, A), A
     };
@@ -340,51 +343,51 @@ class qs {
         this.additions = j.array(), this.additionTimeouts = new Map, this.showingLevelUp = !1, Ot(this)
     }
 }
-nr([j], qs.prototype, "additions");
-nr([j], qs.prototype, "showingLevelUp");
+sr([j], qs.prototype, "additions");
+sr([j], qs.prototype, "showingLevelUp");
 var lo = Object.defineProperty,
     uo = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && lo(T, E, A), A
     };
-class rr {
+class nr {
     constructor() {
-        this.startGameWithMode = Qn.liveGame, Ot(this)
+        this.startGameWithMode = Jn.liveGame, Ot(this)
     }
 }
-uo([j], rr.prototype, "startGameWithMode");
+uo([j], nr.prototype, "startGameWithMode");
 var fo = Object.defineProperty,
     Bi = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && fo(T, E, A), A
     };
-class di {
+class vi {
     constructor() {
         this.enabled = !!localStorage.getItem("cinematicMode"), this.mainCharacterVisible = !0, this.charactersVisible = !0, this.nameTagsVisible = !0, this.followingMainCharacter = !0, this.hidingGUI = !1, Ot(this)
     }
 }
-Bi([j], di.prototype, "enabled");
-Bi([j], di.prototype, "mainCharacterVisible");
-Bi([j], di.prototype, "charactersVisible");
-Bi([j], di.prototype, "nameTagsVisible");
-Bi([j], di.prototype, "followingMainCharacter");
-Bi([j], di.prototype, "hidingGUI");
+Bi([j], vi.prototype, "enabled");
+Bi([j], vi.prototype, "mainCharacterVisible");
+Bi([j], vi.prototype, "charactersVisible");
+Bi([j], vi.prototype, "nameTagsVisible");
+Bi([j], vi.prototype, "followingMainCharacter");
+Bi([j], vi.prototype, "hidingGUI");
 var vo = Object.defineProperty,
     Gi = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && vo(T, E, A), A
     };
-class vi {
+class ci {
     constructor() {
         this.lives = -1, this.health = 0, this.shield = 0, this.fragility = 0, this.maxHealth = 0, this.maxShield = 0, Ot(this)
     }
 }
-Gi([j], vi.prototype, "lives");
-Gi([j], vi.prototype, "health");
-Gi([j], vi.prototype, "shield");
-Gi([j], vi.prototype, "fragility");
-Gi([j], vi.prototype, "maxHealth");
-Gi([j], vi.prototype, "maxShield");
+Gi([j], ci.prototype, "lives");
+Gi([j], ci.prototype, "health");
+Gi([j], ci.prototype, "shield");
+Gi([j], ci.prototype, "fragility");
+Gi([j], ci.prototype, "maxHealth");
+Gi([j], ci.prototype, "maxShield");
 var co = Object.defineProperty,
     _s = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -399,7 +402,7 @@ _s([j], ys.prototype, "allowWeaponDrop");
 _s([j], ys.prototype, "allowItemDrop");
 _s([j], ys.prototype, "allowResourceDrop");
 var po = Object.defineProperty,
-    ar = (V, T, E, M) => {
+    rr = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && po(T, E, A), A
     };
@@ -408,8 +411,8 @@ class tn {
         this.activeDeviceId = "", this.vignetteActive = !0, this.vignetteStrength = 0, Ot(this)
     }
 }
-ar([j], tn.prototype, "vignetteActive");
-ar([j], tn.prototype, "vignetteStrength");
+rr([j], tn.prototype, "vignetteActive");
+rr([j], tn.prototype, "vignetteStrength");
 const mo = {
     normal: 310
 };
@@ -423,14 +426,14 @@ var xo = Object.defineProperty,
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && xo(T, E, A), A
     };
-class or {
+class ar {
     constructor() {
         this.activeClassDeviceId = "", this.lastActivatedClassDeviceId = "", this.lastClassDeviceActivationId = -1, Ot(this)
     }
 }
-yo([j], or.prototype, "activeClassDeviceId");
+yo([j], ar.prototype, "activeClassDeviceId");
 var To = Object.defineProperty,
-    Ve = (V, T, E, M) => {
+    ze = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && To(T, E, A), A
     };
@@ -439,41 +442,41 @@ let De = class {
         this.currentId = "", this.currentOptionId = "", this.currentIcon = "", this.currentName = "", this.currentData = {}, this.pendingDeleteId = null, this.showDeleteConfirm = !1, this.isUIOpen = !1, this.openOptionId = null, Ot(this)
     }
 };
-Ve([j], De.prototype, "currentId");
-Ve([j], De.prototype, "currentOptionId");
-Ve([j], De.prototype, "currentIcon");
-Ve([j], De.prototype, "currentName");
-Ve([j], De.prototype, "currentData");
-Ve([j], De.prototype, "pendingDeleteId");
-Ve([j], De.prototype, "showDeleteConfirm");
-Ve([j], De.prototype, "isUIOpen");
-Ve([j], De.prototype, "openOptionId");
+ze([j], De.prototype, "currentId");
+ze([j], De.prototype, "currentOptionId");
+ze([j], De.prototype, "currentIcon");
+ze([j], De.prototype, "currentName");
+ze([j], De.prototype, "currentData");
+ze([j], De.prototype, "pendingDeleteId");
+ze([j], De.prototype, "showDeleteConfirm");
+ze([j], De.prototype, "isUIOpen");
+ze([j], De.prototype, "openOptionId");
 var So = Object.defineProperty,
-    ci = (V, T, E, M) => {
+    pi = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && So(T, E, A), A
     };
-class Qe {
+class je {
     constructor() {
-        this.currentAction = qn.none, this.phase = !1, this.movementSpeed = mo.normal, this.roleLevel = 0, this.completedInitialPlacement = !1, this.isRespawning = !1, this.unredeemedXP = 0, this.properties = j.map(), this.myTeam = "", this.spawnPosition = {
+        this.currentAction = kn.none, this.phase = !1, this.movementSpeed = mo.normal, this.roleLevel = 0, this.completedInitialPlacement = !1, this.isRespawning = !1, this.unredeemedXP = 0, this.properties = j.map(), this.myTeam = "", this.spawnPosition = {
             x: 0,
             y: 0
-        }, this.teleportCount = 0, this.classDesigner = new or, this.adding = new _n, this.removing = new Je, this.editing = new _a, this.inventory = new Ie, this.context = new gs, this.interactives = new $s, this.deviceUI = new Qs, this.nonDismissMessage = new js, this.spectating = new xs, this.xp = new qs, this.preferences = new rr, this.cinematicMode = new di, this.health = new vi, this.zoneDropOverrides = new ys, this.mood = new tn, this.mobileControls = new go, this.customAssets = new De, this.gotKicked = !1, Ot(this)
+        }, this.teleportCount = 0, this.classDesigner = new ar, this.adding = new qn, this.removing = new $e, this.editing = new _a, this.inventory = new Ie, this.context = new gs, this.interactives = new $s, this.deviceUI = new Qs, this.nonDismissMessage = new js, this.spectating = new xs, this.xp = new qs, this.preferences = new nr, this.cinematicMode = new vi, this.health = new ci, this.zoneDropOverrides = new ys, this.mood = new tn, this.mobileControls = new go, this.customAssets = new De, this.gotKicked = !1, Ot(this)
     }
 }
-ci([j], Qe.prototype, "currentAction");
-ci([j], Qe.prototype, "phase");
-ci([j], Qe.prototype, "movementSpeed");
-ci([j], Qe.prototype, "completedInitialPlacement");
-ci([j], Qe.prototype, "isRespawning");
-ci([j], Qe.prototype, "unredeemedXP");
-ci([j], Qe.prototype, "properties");
+pi([j], je.prototype, "currentAction");
+pi([j], je.prototype, "phase");
+pi([j], je.prototype, "movementSpeed");
+pi([j], je.prototype, "completedInitialPlacement");
+pi([j], je.prototype, "isRespawning");
+pi([j], je.prototype, "unredeemedXP");
+pi([j], je.prototype, "properties");
 const Tn = {
     width: 1e3,
     height: 1e3
 };
 var Co = Object.defineProperty,
-    hr = (V, T, E, M) => {
+    or = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Co(T, E, A), A
     };
@@ -482,8 +485,8 @@ class en {
         this.devices = j.map(), this.codeGrids = j.map(), this.states = new Map, Ot(this)
     }
 }
-hr([j], en.prototype, "devices");
-hr([j], en.prototype, "codeGrids");
+or([j], en.prototype, "devices");
+or([j], en.prototype, "codeGrids");
 class Eo {
     constructor() {
         this.tiles = new Map, this.modifiedHealth = new Map, this.teamColorTiles = new Map, this.currentTerrainUpdateId = 0, this.queuedTiles = new Map
@@ -494,12 +497,12 @@ var Ao = Object.defineProperty,
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Ao(T, E, A), A
     };
-class lr {
+class hr {
     constructor() {
         this.wires = j.map(), Ot(this)
     }
 }
-Po([j], lr.prototype, "wires");
+Po([j], hr.prototype, "wires");
 var Mo = Object.defineProperty,
     bi = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -526,60 +529,60 @@ var Ro = Object.defineProperty,
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Ro(T, E, A), A
     };
-class ur {
+class lr {
     constructor() {
-        this.width = Tn.width, this.height = Tn.height, this.terrain = new Eo, this.customAssets = new Ts, this.devices = new en, this.wires = new lr, this.mapOptionsJSON = "", Ot(this)
+        this.width = Tn.width, this.height = Tn.height, this.terrain = new Eo, this.customAssets = new Ts, this.devices = new en, this.wires = new hr, this.mapOptionsJSON = "", Ot(this)
     }
 }
-Fo([j], ur.prototype, "mapOptionsJSON");
+Fo([j], lr.prototype, "mapOptionsJSON");
 var wo = Object.defineProperty,
     Lo = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && wo(T, E, A), A
     };
-class fr {
+class ur {
     constructor() {
         this.terrainOptions = [], this.propsOptions = [], this.deviceOptions = [], this.customAssetsOptions = [], this.itemOptions = [], this.skinOptions = [], this.requestedAllProps = !1, this.hasAllProps = !1, Ot(this)
     }
 }
-Lo([j], fr.prototype, "hasAllProps");
+Lo([j], ur.prototype, "hasAllProps");
 var Oo = Object.defineProperty,
     Io = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Oo(T, E, A), A
     },
     Do = (V => (V.home = "home", V.terrain = "terrain", V.props = "props", V.devices = "devices", V))(Do || {});
-class dr {
+class fr {
     constructor() {
         this.screen = "home", Ot(this)
     }
 }
-Io([j], dr.prototype, "screen");
+Io([j], fr.prototype, "screen");
 var Bo = Object.defineProperty,
     Go = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Bo(T, E, A), A
     },
     bo = (V => (V.home = "home", V.mapOptions = "mapOptions", V.editing = "editing", V.permissions = "permissions", V.saving = "saving", V.help = "help", V.publishing = "publishing", V))(bo || {});
-class vr {
+class dr {
     constructor() {
         this.screen = "home", Ot(this)
     }
 }
-Go([j], vr.prototype, "screen");
+Go([j], dr.prototype, "screen");
 var No = Object.defineProperty,
-    cr = (V, T, E, M) => {
+    vr = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && No(T, E, A), A
     },
     Xo = (V => (V.home = "home", V.add = "add", V.inventory = "inventory", V.scoreboard = "scoreboard", V.sorting = "sorting", V.startScreen = "startScreen", V.playerManager = "playerManager", V.soundOptions = "soundOptions", V.assignmentInfo = "assignmentInfo", V.options = "options", V.teamCustomization = "teamCustomization", V))(Xo || {});
 class nn {
     constructor() {
-        this.screen = "home", this.duringGameScreenVisible = !1, this.addMenu = new dr, this.optionsMenu = new vr, Ot(this)
+        this.screen = "home", this.duringGameScreenVisible = !1, this.addMenu = new fr, this.optionsMenu = new dr, Ot(this)
     }
 }
-cr([j], nn.prototype, "screen");
-cr([j], nn.prototype, "duringGameScreenVisible");
+vr([j], nn.prototype, "screen");
+vr([j], nn.prototype, "duringGameScreenVisible");
 var Yo = Object.defineProperty,
     rn = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -595,21 +598,21 @@ class Ss {
 rn([j], Ss.prototype, "cosmosModalOpen");
 rn([j], Ss.prototype, "switchToRegisterScreenWhenCosmosModalOpens");
 rn([zs], Ss.prototype, "closeAllModals");
-var pr = (V => (V.brokenShield = "b", V.shield = "s", V.health = "h", V.fragility = "f", V))(pr || {}),
+var cr = (V => (V.brokenShield = "b", V.shield = "s", V.health = "h", V.fragility = "f", V))(cr || {}),
     Uo = Object.defineProperty,
-    mr = (V, T, E, M) => {
+    pr = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Uo(T, E, A), A
     };
 class an {
     constructor() {
-        this.type = pr.shield, this.show = !1, Ot(this)
+        this.type = cr.shield, this.show = !1, Ot(this)
     }
 }
-mr([j], an.prototype, "type");
-mr([j], an.prototype, "show");
+pr([j], an.prototype, "type");
+pr([j], an.prototype, "show");
 var Vo = Object.defineProperty,
-    gr = (V, T, E, M) => {
+    mr = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Vo(T, E, A), A
     };
@@ -618,8 +621,8 @@ class on {
         this.interactionWantsToBeVisible = !1, this.prioritizeInteraction = !0, Ot(this)
     }
 }
-gr([j], on.prototype, "interactionWantsToBeVisible");
-gr([j], on.prototype, "prioritizeInteraction");
+mr([j], on.prototype, "interactionWantsToBeVisible");
+mr([j], on.prototype, "prioritizeInteraction");
 var zo = Object.defineProperty,
     Se = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -657,18 +660,18 @@ var Wo = Object.defineProperty,
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Wo(T, E, A), A
     };
-class xr {
+class gr {
     constructor() {
         this.feedItems = j.array(), Ot(this)
     }
 }
-Ho([j], xr.prototype, "feedItems");
+Ho([j], gr.prototype, "feedItems");
 var Cs = (V => (V.saved = "saved", V.published = "published", V))(Cs || {}),
-    yr = (V => (V.player = "player", V.spectator = "spectator", V))(yr || {}),
+    xr = (V => (V.player = "player", V.spectator = "spectator", V))(xr || {}),
     hn = (V => (V.preGame = "preGame", V.game = "game", V))(hn || {}),
-    Tr = (V => (V.countdown = "countdown", V.game = "game", V.results = "results", V))(Tr || {}),
+    yr = (V => (V.countdown = "countdown", V.game = "game", V.results = "results", V))(yr || {}),
     Ko = Object.defineProperty,
-    Sr = (V, T, E, M) => {
+    Tr = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Ko(T, E, A), A
     };
@@ -677,19 +680,19 @@ class ln {
         this.categories = j.array(), this.items = j.array(), Ot(this)
     }
 }
-Sr([j], ln.prototype, "categories");
-Sr([j], ln.prototype, "items");
+Tr([j], ln.prototype, "categories");
+Tr([j], ln.prototype, "items");
 var Zo = Object.defineProperty,
     Jo = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && Zo(T, E, A), A
     };
-class Cr {
+class Sr {
     constructor() {
         this.widgets = j.array(), Ot(this)
     }
 }
-Jo([j], Cr.prototype, "widgets");
+Jo([j], Sr.prototype, "widgets");
 var Qo = Object.defineProperty,
     un = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -697,7 +700,7 @@ var Qo = Object.defineProperty,
     };
 class Es {
     constructor() {
-        this.phase = Tr.countdown, this.callToAction = new ln, this.widgets = new Cr, this.countdownEnd = 0, this.resultsEnd = 0, Ot(this)
+        this.phase = yr.countdown, this.callToAction = new ln, this.widgets = new Sr, this.countdownEnd = 0, this.resultsEnd = 0, Ot(this)
     }
 }
 un([j], Es.prototype, "phase");
@@ -722,12 +725,12 @@ var jo = Object.defineProperty,
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && jo(T, E, A), A
     };
-class Er {
+class Cr {
     constructor() {
         this.characterToTeamMap = j.map(), Ot(this)
     }
 }
-ko([j], Er.prototype, "characterToTeamMap");
+ko([j], Cr.prototype, "characterToTeamMap");
 var qo = Object.defineProperty,
     le = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -735,7 +738,7 @@ var qo = Object.defineProperty,
     };
 class se {
     constructor() {
-        this.amIGameOwner = !1, this.ownerRole = yr.player, this.gameOwnerId = "", this.mapStyle = Ws.topDown, this.version = Cs.published, this.modeType = Qn.liveGame, this.gameTime = 0, this.phaseChangedAtServerAt = 0, this.gameTimeLastUpdateAt = 0, this.loadingPhase = !1, this.phaseChangedAt = Date.now(), this.phase = null, this.duringTransition = !1, this.gameClockDuration = "", this.canAddGameTime = !1, this.cosmosBlocked = !1, this.allowGoogleTranslate = !1, this.mapCreatorRoleLevel = 0, this.gameSession = new Es, this.globalPermissions = new Zi, this.customTeams = new Er, Ot(this)
+        this.amIGameOwner = !1, this.ownerRole = xr.player, this.gameOwnerId = "", this.mapStyle = Ws.topDown, this.version = Cs.published, this.modeType = Jn.liveGame, this.gameTime = 0, this.phaseChangedAtServerAt = 0, this.gameTimeLastUpdateAt = 0, this.loadingPhase = !1, this.phaseChangedAt = Date.now(), this.phase = null, this.duringTransition = !1, this.gameClockDuration = "", this.canAddGameTime = !1, this.cosmosBlocked = !1, this.allowGoogleTranslate = !1, this.mapCreatorRoleLevel = 0, this.gameSession = new Es, this.globalPermissions = new Zi, this.customTeams = new Cr, Ot(this)
     }
 }
 le([j], se.prototype, "amIGameOwner");
@@ -759,14 +762,14 @@ var _o = Object.defineProperty,
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && _o(T, E, A), A
     };
-class Ar {
+class Er {
     constructor() {
         this.characters = j.map(), Ot(this)
     }
 }
-th([j], Ar.prototype, "characters");
+th([j], Er.prototype, "characters");
 var eh = Object.defineProperty,
-    Pr = (V, T, E, M) => {
+    Ar = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && eh(T, E, A), A
     };
@@ -775,19 +778,19 @@ class fn {
         this.teams = j.map(), this.updateCounter = 0, Ot(this)
     }
 }
-Pr([j], fn.prototype, "teams");
-Pr([j], fn.prototype, "updateCounter");
+Ar([j], fn.prototype, "teams");
+Ar([j], fn.prototype, "updateCounter");
 var ih = Object.defineProperty,
     sh = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && ih(T, E, A), A
     };
-class Mr {
+class Pr {
     constructor() {
         this.gameCode = "", Ot(this)
     }
 }
-sh([j], Mr.prototype, "gameCode");
+sh([j], Pr.prototype, "gameCode");
 var nh = Object.defineProperty,
     dn = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -806,14 +809,14 @@ var rh = Object.defineProperty,
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && rh(T, E, A), A
     };
-class Rr {
+class Mr {
     constructor() {
         this.hookJSON = JSON.stringify({
             hooks: []
         }), Ot(this)
     }
 }
-ah([j], Rr.prototype, "hookJSON");
+ah([j], Mr.prototype, "hookJSON");
 var oh = Object.defineProperty,
     vn = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
@@ -828,7 +831,7 @@ vn([j], Ms.prototype, "objective");
 vn([j], Ms.prototype, "percentageComplete");
 vn([j], Ms.prototype, "hasSavedProgress");
 var hh = Object.defineProperty,
-    $e = (V, T, E, M) => {
+    ke = (V, T, E, M) => {
         for (var A = void 0, I = V.length - 1, c; I >= 0; I--)(c = V[I]) && (A = c(T, E, A) || A);
         return A && hh(T, E, A), A
     };
@@ -842,25 +845,25 @@ class uh {
         this.deviceInitialDefault = 999999999999, this.deviceSubsequentDefault = 999999999999, this.nonCollidingTile = 999999999999, this.collidingTile = 999999999999, this.wire = 999999999999, this.codeGrid = 999999999999, this.customAssetDefault = 999999999999
     }
 }
-class pi {
+class mi {
     constructor() {
         this.devices = j.map(), this.collidingTiles = 0, this.nonCollidingTiles = 0, this.wires = 0, this.codeGrids = 0, this.customAssets = j.map(), Ot(this)
     }
 }
-$e([j], pi.prototype, "devices");
-$e([j], pi.prototype, "collidingTiles");
-$e([j], pi.prototype, "nonCollidingTiles");
-$e([j], pi.prototype, "wires");
-$e([j], pi.prototype, "codeGrids");
-$e([j], pi.prototype, "customAssets");
+ke([j], mi.prototype, "devices");
+ke([j], mi.prototype, "collidingTiles");
+ke([j], mi.prototype, "nonCollidingTiles");
+ke([j], mi.prototype, "wires");
+ke([j], mi.prototype, "codeGrids");
+ke([j], mi.prototype, "customAssets");
 class cn {
     constructor() {
-        this.usedMemoryCost = 0, this.maxUsedMemory = 0, this.counters = new pi, this.limits = new lh, this.costs = new uh, Ot(this)
+        this.usedMemoryCost = 0, this.maxUsedMemory = 0, this.counters = new mi, this.limits = new lh, this.costs = new uh, Ot(this)
     }
 }
-$e([j], cn.prototype, "usedMemoryCost");
-$e([j], cn.prototype, "maxUsedMemory");
-Oa({
+ke([j], cn.prototype, "usedMemoryCost");
+ke([j], cn.prototype, "maxUsedMemory");
+La({
     enforceActions: "never"
 });
 const pe = {
@@ -869,49 +872,43 @@ const pe = {
         loading: new zi,
         phaser: new Na,
         memorySystem: new cn,
-        me: new Qe,
-        worldOptions: new fr,
-        world: new ur,
-        characters: new Ar,
+        me: new je,
+        worldOptions: new ur,
+        world: new lr,
+        characters: new Er,
         teams: new fn,
         session: new se,
         gui: new Be,
-        matchmaker: new Mr,
-        activityFeed: new xr,
+        matchmaker: new Pr,
+        activityFeed: new gr,
         editing: new Ps,
-        hooks: new Rr,
+        hooks: new Mr,
         assignment: new Ms
     },
     fh = () => pe.phaser.scene,
     Rs = V => fh().characterManager.characters.get(V),
-    pu = () => pe.session.version === Cs.saved,
+    mu = () => pe.session.version === Cs.saved,
     dh = () => pe.session.version === Cs.published,
-    Fr = () => pe.session.phase === hn.game,
-    wr = () => pe.session.phase === hn.preGame,
-    mu = () => Fr() && !pe.session.duringTransition || wr() && pe.session.duringTransition && !pe.me.isRespawning,
-    vh = () => wr() && !pe.session.duringTransition || Fr() && pe.session.duringTransition && !pe.me.isRespawning,
-    Sn = {
-        musicVolume: "map-music-volume",
-        soundEffectVolume: "map-sound-effect-volume"
-    };
+    Rr = () => pe.session.phase === hn.game,
+    Fr = () => pe.session.phase === hn.preGame,
+    gu = () => Rr() && !pe.session.duringTransition || Fr() && pe.session.duringTransition && !pe.me.isRespawning,
+    vh = () => Fr() && !pe.session.duringTransition || Rr() && pe.session.duringTransition && !pe.me.isRespawning;
 var pn = (V => (V.music = "music", V.soundEffect = "soundEffect", V))(pn || {});
-const Lr = V => {
-        const T = V.type === "music" ? Sn.musicVolume : Sn.soundEffectVolume,
-            E = localStorage.getItem(T) || "1";
-        let M = Ia.clamp(Number(E), 0, 1);
-        return isNaN(M) && (M = 1), V.volume * M
+const wr = V => {
+        const T = Da(V.type === "music" ? "musicVolume" : "soundEffectVolume");
+        return V.volume * Oa.clamp(T, 0, 1)
     },
     Fi = () => pe.session.mapStyle === Ws.platformer,
-    Or = () => Fi() && !dh() && vh() && pe.me.editing.preferences.topDownControlsActive,
+    Lr = () => Fi() && !dh() && vh() && pe.me.editing.preferences.topDownControlsActive,
     ch = () => pe.session.mapStyle === Ws.topDown;
 var $i = {
         exports: {}
     },
     ph = $i.exports,
-    Cn;
+    Sn;
 
 function mh() {
-    return Cn || (Cn = 1, (function(V, T) {
+    return Sn || (Sn = 1, (function(V, T) {
         (function(M, A) {
             V.exports = A()
         })(ph, () => (() => {
@@ -5857,7 +5854,7 @@ function mh() {
                             var o = navigator.userAgent;
                             /Windows/.test(o) ? g.windows = !0 : /Mac OS/.test(o) && !/like Mac OS/.test(o) ? navigator.maxTouchPoints && navigator.maxTouchPoints > 2 ? (g.iOS = !0, g.iPad = !0, navigator.appVersion.match(/Version\/(\d+)/), g.iOSVersion = parseInt(RegExp.$1, 10)) : g.macOS = !0 : /Android/.test(o) ? g.android = !0 : /Linux/.test(o) ? g.linux = !0 : /iP[ao]d|iPhone/i.test(o) ? (g.iOS = !0, navigator.appVersion.match(/OS (\d+)/), g.iOSVersion = parseInt(RegExp.$1, 10), g.iPhone = o.toLowerCase().indexOf("iphone") !== -1, g.iPad = o.toLowerCase().indexOf("ipad") !== -1) : /Kindle/.test(o) || /\bKF[A-Z][A-Z]+/.test(o) || /Silk.*Mobile Safari/.test(o) ? g.kindle = !0 : /CrOS/.test(o) && (g.chromeOS = !0), (/Windows Phone/i.test(o) || /IEMobile/i.test(o)) && (g.android = !1, g.iOS = !1, g.macOS = !1, g.windows = !0, g.windowsPhone = !0);
                             var v = /Silk/.test(o);
-                            return (g.windows || g.macOS || g.linux && !v || g.chromeOS) && (g.desktop = !0), (g.windowsPhone || /Windows NT/i.test(o) && /Touch/i.test(o)) && (g.desktop = !1), navigator.standalone && (g.webApp = !0), typeof importScripts != "function" && (window.cordova !== void 0 && (g.cordova = !0), window.ejecta !== void 0 && (g.ejecta = !0)), typeof gi < "u" && gi.versions && gi.versions.node && (g.node = !0), g.node && typeof gi.versions == "object" && (g.nodeWebkit = !!gi.versions["node-webkit"], g.electron = !!gi.versions.electron), /Crosswalk/.test(o) && (g.crosswalk = !0), g.pixelRatio = window.devicePixelRatio || 1, g
+                            return (g.windows || g.macOS || g.linux && !v || g.chromeOS) && (g.desktop = !0), (g.windowsPhone || /Windows NT/i.test(o) && /Touch/i.test(o)) && (g.desktop = !1), navigator.standalone && (g.webApp = !0), typeof importScripts != "function" && (window.cordova !== void 0 && (g.cordova = !0), window.ejecta !== void 0 && (g.ejecta = !0)), typeof xi < "u" && xi.versions && xi.versions.node && (g.node = !0), g.node && typeof xi.versions == "object" && (g.nodeWebkit = !!xi.versions["node-webkit"], g.electron = !!xi.versions.electron), /Crosswalk/.test(o) && (g.crosswalk = !0), g.pixelRatio = window.devicePixelRatio || 1, g
                         }
                         c.exports = t()
                     }),
@@ -8615,10 +8612,10 @@ function mh() {
                                 B, U, b, K = [],
                                 Z = [],
                                 J = null,
-                                Q = function(Kt, jt) {
+                                Q = function(Kt, kt) {
                                     for (var zt = 0, Zt = 0; Zt < Kt.length; Zt++) {
-                                        var Qt = Kt.charCodeAt(Zt),
-                                            ne = jt.chars[Qt];
+                                        var $t = Kt.charCodeAt(Zt),
+                                            ne = kt.chars[$t];
                                         ne && (zt += ne.xAdvance)
                                     }
                                     return zt * w
@@ -9152,17 +9149,17 @@ function mh() {
                                                     Bt = G.v0,
                                                     Gt = G.u1,
                                                     Kt = G.v1,
-                                                    jt = X,
+                                                    kt = X,
                                                     zt = B,
                                                     Zt = p.e,
-                                                    Qt = p.f,
+                                                    $t = p.f,
                                                     ne = zt * p.c + p.e,
-                                                    qe = zt * p.d + p.f,
-                                                    _e = jt * p.a + zt * p.c + p.e,
-                                                    ti = jt * p.b + zt * p.d + p.f,
-                                                    ei = jt * p.a + p.e,
-                                                    ii = jt * p.b + p.f;
-                                                ft && (Zt = Math.round(Zt), Qt = Math.round(Qt), ne = Math.round(ne), qe = Math.round(qe), _e = Math.round(_e), ti = Math.round(ti), ei = Math.round(ei), ii = Math.round(ii)), f.shouldFlush(6) && (f.flush(), O = f.setGameObject(s)), f.batchQuad(s, Zt, Qt, ne, qe, _e, ti, ei, ii, Wt, Bt, Gt, Kt, R, L, F, w, P, C, O)
+                                                    ti = zt * p.d + p.f,
+                                                    ei = kt * p.a + zt * p.c + p.e,
+                                                    ii = kt * p.b + zt * p.d + p.f,
+                                                    si = kt * p.a + p.e,
+                                                    ni = kt * p.b + p.f;
+                                                ft && (Zt = Math.round(Zt), $t = Math.round($t), ne = Math.round(ne), ti = Math.round(ti), ei = Math.round(ei), ii = Math.round(ii), si = Math.round(si), ni = Math.round(ni)), f.shouldFlush(6) && (f.flush(), O = f.setGameObject(s)), f.batchQuad(s, Zt, $t, ne, ti, ei, ii, si, ni, Wt, Bt, Gt, Kt, R, L, F, w, P, C, O)
                                             }
                                         }
                                     }
@@ -21406,17 +21403,17 @@ function mh() {
                                     for (_ = 0; _ < b; _++) {
                                         var Gt = (_ + Z * nt) * 2,
                                             Kt = (_ + Z * (nt + 1)) * 2,
-                                            jt = (_ + 1 + Z * (nt + 1)) * 2,
+                                            kt = (_ + 1 + Z * (nt + 1)) * 2,
                                             zt = (_ + 1 + Z * nt) * 2,
                                             Zt = D[Bt],
-                                            Qt = N[Wt],
-                                            ne = new i(et[Gt], et[Gt + 1], 0, k[Gt], k[Gt + 1], Zt, Qt).transformMat4(h),
-                                            qe = new i(et[Kt], et[Kt + 1], 0, k[Kt], k[Kt + 1], Zt, Qt).transformMat4(h),
-                                            _e = new i(et[zt], et[zt + 1], 0, k[zt], k[zt + 1], Zt, Qt).transformMat4(h),
-                                            ti = new i(et[Kt], et[Kt + 1], 0, k[Kt], k[Kt + 1], Zt, Qt).transformMat4(h),
-                                            ei = new i(et[jt], et[jt + 1], 0, k[jt], k[jt + 1], Zt, Qt).transformMat4(h),
-                                            ii = new i(et[zt], et[zt + 1], 0, k[zt], k[zt + 1], Zt, Qt).transformMat4(h);
-                                        Y && (ne.setUVs(rt, vt), qe.setUVs(rt, ft), _e.setUVs(it, vt), ti.setUVs(rt, ft), ei.setUVs(it, ft), ii.setUVs(it, vt)), Bt++, Bt === D.length && (Bt = 0), Wt++, Wt === N.length && (Wt = 0), G.verts.push(ne, qe, _e, ti, ei, ii), G.faces.push(new o(ne, qe, _e), new o(ti, ei, ii))
+                                            $t = N[Wt],
+                                            ne = new i(et[Gt], et[Gt + 1], 0, k[Gt], k[Gt + 1], Zt, $t).transformMat4(h),
+                                            ti = new i(et[Kt], et[Kt + 1], 0, k[Kt], k[Kt + 1], Zt, $t).transformMat4(h),
+                                            ei = new i(et[zt], et[zt + 1], 0, k[zt], k[zt + 1], Zt, $t).transformMat4(h),
+                                            ii = new i(et[Kt], et[Kt + 1], 0, k[Kt], k[Kt + 1], Zt, $t).transformMat4(h),
+                                            si = new i(et[kt], et[kt + 1], 0, k[kt], k[kt + 1], Zt, $t).transformMat4(h),
+                                            ni = new i(et[zt], et[zt + 1], 0, k[zt], k[zt + 1], Zt, $t).transformMat4(h);
+                                        Y && (ne.setUVs(rt, vt), ti.setUVs(rt, ft), ei.setUVs(it, vt), ii.setUVs(rt, ft), si.setUVs(it, ft), ni.setUVs(it, vt)), Bt++, Bt === D.length && (Bt = 0), Wt++, Wt === N.length && (Wt = 0), G.verts.push(ne, ti, ei, ii, si, ni), G.faces.push(new o(ne, ti, ei), new o(ii, si, ni))
                                     }
                                 return u && (u.faces = u.faces.concat(G.faces), u.vertices = u.vertices.concat(G.verts)), G
                             };
@@ -33971,12 +33968,12 @@ return new ` + this.key + `();
                                     var Gt = !B.pushable && !U.pushable;
                                     if (rt) {
                                         var Kt = J.x - Q.x,
-                                            jt = J.y - Q.y,
-                                            zt = Math.sqrt(Math.pow(Kt, 2) + Math.pow(jt, 2)),
+                                            kt = J.y - Q.y,
+                                            zt = Math.sqrt(Math.pow(Kt, 2) + Math.pow(kt, 2)),
                                             Zt = (Q.x - J.x) / zt || 0,
-                                            Qt = (Q.y - J.y) / zt || 0,
-                                            ne = 2 * (et.x * Zt + et.y * Qt - _.x * Zt - _.y * Qt) / (B.mass + U.mass);
-                                        ($ || k || !B.pushable || !U.pushable) && (ne *= 2), !$ && B.pushable && (et.x = et.x - ne / B.mass * Zt, et.y = et.y - ne / B.mass * Qt, et.multiply(B.bounce)), !k && U.pushable && (_.x = _.x + ne / U.mass * Zt, _.y = _.y + ne / U.mass * Qt, _.multiply(U.bounce)), !$ && !k && (bt *= .5, Wt *= .5), (!$ || B.pushable || Gt) && (B.x -= bt, B.y -= Wt, B.updateCenter()), (!k || U.pushable || Gt) && (U.x += bt, U.y += Wt, U.updateCenter()), Bt.result = !0
+                                            $t = (Q.y - J.y) / zt || 0,
+                                            ne = 2 * (et.x * Zt + et.y * $t - _.x * Zt - _.y * $t) / (B.mass + U.mass);
+                                        ($ || k || !B.pushable || !U.pushable) && (ne *= 2), !$ && B.pushable && (et.x = et.x - ne / B.mass * Zt, et.y = et.y - ne / B.mass * $t, et.multiply(B.bounce)), !k && U.pushable && (_.x = _.x + ne / U.mass * Zt, _.y = _.y + ne / U.mass * $t, _.multiply(U.bounce)), !$ && !k && (bt *= .5, Wt *= .5), (!$ || B.pushable || Gt) && (B.x -= bt, B.y -= Wt, B.updateCenter()), (!k || U.pushable || Gt) && (U.x += bt, U.y += Wt, U.updateCenter()), Bt.result = !0
                                     } else !$ && (B.pushable || Gt) && (B.x -= bt, B.y -= Wt, B.updateCenter()), !k && (U.pushable || Gt) && (U.x += bt, U.y += Wt, U.updateCenter()), Bt.x = void 0, Bt.y = void 0;
                                     return Bt
                                 },
@@ -37786,8 +37783,8 @@ return new ` + this.key + `();
                                                 Kt = (1 + C.restitution) * st * Gt;
                                             if (m *= Gt, st < l) J.normalImpulse = 0;
                                             else {
-                                                var jt = J.normalImpulse;
-                                                J.normalImpulse += Kt, J.normalImpulse > 0 && (J.normalImpulse = 0), Kt = J.normalImpulse - jt
+                                                var kt = J.normalImpulse;
+                                                J.normalImpulse += Kt, J.normalImpulse > 0 && (J.normalImpulse = 0), Kt = J.normalImpulse - kt
                                             }
                                             if (ut < -u || ut > u) J.tangentImpulse = 0;
                                             else {
@@ -37795,8 +37792,8 @@ return new ` + this.key + `();
                                                 J.tangentImpulse += m, J.tangentImpulse < -y && (J.tangentImpulse = -y), J.tangentImpulse > y && (J.tangentImpulse = y), m = J.tangentImpulse - zt
                                             }
                                             var Zt = F * Kt + O * m,
-                                                Qt = w * Kt + D * m;
-                                            R.isStatic || R.isSleeping || (R.positionPrev.x += Zt * R.inverseMass, R.positionPrev.y += Qt * R.inverseMass, R.anglePrev += ($ * Qt - k * Zt) * R.inverseInertia), L.isStatic || L.isSleeping || (L.positionPrev.x -= Zt * L.inverseMass, L.positionPrev.y -= Qt * L.inverseMass, L.anglePrev -= (et * Qt - _ * Zt) * L.inverseInertia)
+                                                $t = w * Kt + D * m;
+                                            R.isStatic || R.isSleeping || (R.positionPrev.x += Zt * R.inverseMass, R.positionPrev.y += $t * R.inverseMass, R.anglePrev += ($ * $t - k * Zt) * R.inverseInertia), L.isStatic || L.isSleeping || (L.positionPrev.x -= Zt * L.inverseMass, L.positionPrev.y -= $t * L.inverseMass, L.anglePrev -= (et * $t - _ * Zt) * L.inverseInertia)
                                         }
                                     }
                                 }
@@ -42142,8 +42139,8 @@ return new ` + this.key + `();
                                             Gt = Wt.height;
                                         ut = Bt, lt = Gt, x = Bt, S = Gt, Y = Wt.x, H = Wt.y;
                                         var Kt = Y,
-                                            jt = H;
-                                        L && (Kt = W - Wt.x - Bt), F && (jt = G - Wt.y - Gt), ft = Kt / d + Z, vt = jt / p + J, dt = (Kt + Bt) / d + Z, st = (jt + Gt) / p + J, It = -D + Y, bt = -N + H
+                                            kt = H;
+                                        L && (Kt = W - Wt.x - Bt), F && (kt = G - Wt.y - Gt), ft = Kt / d + Z, vt = kt / p + J, dt = (Kt + Bt) / d + Z, st = (kt + Gt) / p + J, It = -D + Y, bt = -N + H
                                     }
                                     F = F ^ (!k && f.isRenderTexture ? 1 : 0), L && (ut *= -1, It += x), F && (lt *= -1, bt += S), Q.roundPixels && (m = Math.floor(m), y = Math.floor(y)), rt.applyITRS(m, y, R, C, P), nt.copyFrom(Q.matrix), $ ? (nt.multiplyWithOffset($, -Q.scrollX * w, -Q.scrollY * O), rt.e = m, rt.f = y) : (rt.e -= Q.scrollX * w, rt.f -= Q.scrollY * O), nt.multiply(rt, it);
                                     var zt = it.setQuad(It, bt, It + ut, bt + lt, Q.renderRoundPixels);
@@ -55187,8 +55184,8 @@ return new ` + this.key + `();
     })($i)), $i.exports
 }
 var de = mh();
-const Ir = Da(de);
-var qt = (V => (V.rest = "rest", V.run = "run", V.jumpStart = "jumpStart", V.jumpMiddleIdle = "jumpMiddleIdle", V.jumpDownIdle = "jumpDownIdle", V.jumpLand = "jumpLand", V))(qt || {});
+const Or = Ia(de);
+var jt = (V => (V.rest = "rest", V.run = "run", V.jumpStart = "jumpStart", V.jumpMiddleIdle = "jumpMiddleIdle", V.jumpDownIdle = "jumpDownIdle", V.jumpLand = "jumpLand", V))(jt || {});
 const gh = {
     rest: "idle",
     run: "run",
@@ -55197,12 +55194,12 @@ const gh = {
     jumpDownIdle: "jumpDownIdle",
     jumpLand: "jumpLand"
 };
-var Ti = (V => (V.idle = "idle", V.blink = "blink", V))(Ti || {});
+var He = (V => (V.idle = "idle", V.blink = "blink", V))(He || {});
 const xh = {
         idle: "eyesOpen",
         blink: "eyesBlink"
     },
-    $t = {
+    Jt = {
         enterAnimationDuration: 350,
         exitAnimationDuration: 350,
         body: {
@@ -55232,17 +55229,22 @@ const xh = {
         },
         bodyLoopedAnimations: ["rest", "run"],
         jumpAnimations: ["jumpStart", "jumpMiddleIdle", "jumpDownIdle", "jumpLand"]
-    };
+    },
+    yh = "esotericsoftware.spine.skeletonFile.cache",
+    Th = "esotericsoftware.spine.atlas.cache",
+    Sh = "spineSkeletonData",
+    Ch = "spineAtlasData",
+    ji = "spine";
 var Os = {},
-    xi = {},
     yi = {},
-    En;
+    Ti = {},
+    Cn;
 
-function Dr() {
-    if (En) return yi;
-    En = 1, Object.defineProperty(yi, "__esModule", {
+function Ir() {
+    if (Cn) return Ti;
+    Cn = 1, Object.defineProperty(Ti, "__esModule", {
         value: !0
-    }), yi.getType = V, yi.throwUnknownDataType = T, yi.throwUnsupportedData = E;
+    }), Ti.getType = V, Ti.throwUnknownDataType = T, Ti.throwUnsupportedData = E;
 
     function V(M) {
         return Object.prototype.toString.call(M)
@@ -55255,15 +55257,15 @@ function Dr() {
     function E(M) {
         throw new TypeError("unsupported data type: " + M)
     }
-    return yi
+    return Ti
 }
 var Re = {},
     Fe = {},
-    An;
+    En;
 
-function Br() {
-    if (An) return Fe;
-    An = 1, Object.defineProperty(Fe, "__esModule", {
+function Dr() {
+    if (En) return Fe;
+    En = 1, Object.defineProperty(Fe, "__esModule", {
         value: !0
     }), Fe.s_to_int = M, Fe.s_to_big_int = A, Fe.int_to_s = I, Fe.big_int_to_s = c, Fe.num_to_s = t, Fe.int_str_to_s = o, Fe.s_to_num = a;
     let V = "";
@@ -55386,14 +55388,14 @@ function Br() {
     }
     return Fe
 }
-var Pn;
+var An;
 
-function Gr() {
-    if (Pn) return Re;
-    Pn = 1, Object.defineProperty(Re, "__esModule", {
+function Br() {
+    if (An) return Re;
+    An = 1, Object.defineProperty(Re, "__esModule", {
         value: !0
     }), Re.encodeNum = T, Re.decodeNum = E, Re.decodeKey = M, Re.encodeBool = A, Re.decodeBool = I, Re.encodeStr = c, Re.decodeStr = g;
-    const V = Br();
+    const V = Dr();
 
     function T(t) {
         return t === 1 / 0 ? "N|+" : t === -1 / 0 ? "N|-" : Number.isNaN(t) ? "N|0" : "n|" + (0, V.num_to_s)(t)
@@ -55446,12 +55448,12 @@ function Gr() {
     }
     return Re
 }
-var ze = {},
+var We = {},
     Xi = {},
-    Mn;
+    Pn;
 
-function br() {
-    return Mn || (Mn = 1, Object.defineProperty(Xi, "__esModule", {
+function Gr() {
+    return Pn || (Pn = 1, Object.defineProperty(Xi, "__esModule", {
         value: !0
     }), Xi.config = void 0, Xi.config = {
         sort_key: !1,
@@ -55459,17 +55461,17 @@ function br() {
         error_on_infinite: !1
     }), Xi
 }
-var Rn;
+var Mn;
 
-function Nr() {
-    if (Rn) return ze;
-    Rn = 1, Object.defineProperty(ze, "__esModule", {
+function br() {
+    if (Mn) return We;
+    Mn = 1, Object.defineProperty(We, "__esModule", {
         value: !0
-    }), ze.memToValues = A, ze.makeInMemoryStore = I, ze.makeInMemoryCache = c, ze.makeInMemoryMemory = g, ze.addValue = v;
-    const V = br(),
-        T = Dr(),
-        E = Gr(),
-        M = Br();
+    }), We.memToValues = A, We.makeInMemoryStore = I, We.makeInMemoryCache = c, We.makeInMemoryMemory = g, We.addValue = v;
+    const V = Gr(),
+        T = Ir(),
+        E = Br(),
+        M = Dr();
 
     function A(a) {
         return a.store.toArray()
@@ -55585,18 +55587,18 @@ function Nr() {
         }
         return (0, T.throwUnknownDataType)(r)
     }
-    return ze
+    return We
 }
-var Fn;
+var Rn;
 
-function wn() {
-    if (Fn) return xi;
-    Fn = 1, Object.defineProperty(xi, "__esModule", {
+function Fn() {
+    if (Rn) return yi;
+    Rn = 1, Object.defineProperty(yi, "__esModule", {
         value: !0
-    }), xi.compress = M, xi.decode = c, xi.decompress = g;
-    const V = Dr(),
-        T = Gr(),
-        E = Nr();
+    }), yi.compress = M, yi.decode = c, yi.decompress = g;
+    const V = Ir(),
+        T = Br(),
+        E = br();
 
     function M(t) {
         const o = (0, E.makeInMemoryMemory)(),
@@ -55666,14 +55668,14 @@ function wn() {
         const [o, v] = t;
         return c(o, v)
     }
-    return xi
+    return yi
 }
 var Yi = {},
-    Ln;
+    wn;
 
-function yh() {
-    if (Ln) return Yi;
-    Ln = 1, Object.defineProperty(Yi, "__esModule", {
+function Eh() {
+    if (wn) return Yi;
+    wn = 1, Object.defineProperty(Yi, "__esModule", {
         value: !0
     }), Yi.trimUndefined = V, Yi.trimUndefinedRecursively = T;
 
@@ -55696,14 +55698,14 @@ function yh() {
     }
     return Yi
 }
-var On;
+var Ln;
 
-function Th() {
-    return On || (On = 1, (function(V) {
+function Ah() {
+    return Ln || (Ln = 1, (function(V) {
         Object.defineProperty(V, "__esModule", {
             value: !0
         }), V.config = V.trimUndefinedRecursively = V.trimUndefined = V.addValue = V.decode = V.decompress = V.compress = void 0;
-        var T = wn();
+        var T = Fn();
         Object.defineProperty(V, "compress", {
             enumerable: !0,
             get: function() {
@@ -55715,21 +55717,21 @@ function Th() {
                 return T.decompress
             }
         });
-        var E = wn();
+        var E = Fn();
         Object.defineProperty(V, "decode", {
             enumerable: !0,
             get: function() {
                 return E.decode
             }
         });
-        var M = Nr();
+        var M = br();
         Object.defineProperty(V, "addValue", {
             enumerable: !0,
             get: function() {
                 return M.addValue
             }
         });
-        var A = yh();
+        var A = Eh();
         Object.defineProperty(V, "trimUndefined", {
             enumerable: !0,
             get: function() {
@@ -55741,7 +55743,7 @@ function Th() {
                 return A.trimUndefinedRecursively
             }
         });
-        var I = br();
+        var I = Gr();
         Object.defineProperty(V, "config", {
             enumerable: !0,
             get: function() {
@@ -55750,9 +55752,9 @@ function Th() {
         })
     })(Os)), Os
 }
-var gu = Th(),
+var xu = Ah(),
     bs = (V => (V.jump = "jump", V.land = "land", V))(bs || {});
-const Sh = {
+const Ph = {
         url: ds("characters/particles/jump.png"),
         frameHeight: 88,
         frameWidth: 495,
@@ -55767,7 +55769,7 @@ const Sh = {
         },
         scale: .33
     },
-    Ch = {
+    Mh = {
         url: ds("characters/particles/land.png"),
         frameHeight: 121,
         frameWidth: 588,
@@ -55782,16 +55784,16 @@ const Sh = {
         },
         scale: .18
     },
-    xu = {
-        jump: Sh,
-        land: Ch
+    yu = {
+        jump: Ph,
+        land: Mh
     },
-    Eh = {
+    Rh = {
         land: {
             minimumAirTime: 240
         }
     },
-    Ah = V => {
+    Fh = V => {
         const T = Rs(V.characterId);
         if (!T || !Fi()) return !1;
         if (T.isMain) {
@@ -55803,75 +55805,75 @@ const Sh = {
         }
         return !1
     },
-    Ph = V => {
+    wh = V => {
         const T = Rs(V.characterId);
         return !T || !Fi() ? !1 : T.isMain ? T.physics.state.grounded && !T.physics.prevState.grounded : T.animation.nonMainCharacterState.grounded && !T.animation.prevNonMainCharacterState.grounded
     },
-    Mh = V => {
+    Lh = V => {
         const T = Rs(V.characterId);
         return !T || !Fi() ? !1 : T.isMain ? Fi() && T.physics.state.jump.isJumping : !T.animation.nonMainCharacterState.grounded
     },
-    Rh = V => {
-        if (!Fi() || Or()) return !0;
+    Oh = V => {
+        if (!Fi() || Lr()) return !0;
         const T = Rs(V.characterId);
         return T ? T.isMain ? T.physics.state.grounded : T.animation.nonMainCharacterState.grounded : !1
     };
-class Xr {
+class Nr {
     constructor(T) {
         this.size = 1, this.currentCount = 1, this.next = () => (this.currentCount++, this.currentCount > this.size && (this.currentCount = 1), this.currentCount), this.size = T
     }
 }
-const Fh = new Xr(3),
-    wh = new Xr(3),
-    yu = () => {
-        $n({
-            path: ds(`sounds/core/platforming/jump/${Fh.next()}.mp3`),
-            volume: Lr({
+const Ih = new Nr(3),
+    Dh = new Nr(3),
+    Tu = () => {
+        Qn({
+            path: ds(`sounds/core/platforming/jump/${Ih.next()}.mp3`),
+            volume: wr({
                 volume: .37,
                 type: pn.soundEffect
             }),
             forceCreateNewSound: !0
         })
     },
-    Lh = () => {
-        $n({
-            path: ds(`sounds/core/platforming/land/${wh.next()}.mp3`),
-            volume: Lr({
+    Bh = () => {
+        Qn({
+            path: ds(`sounds/core/platforming/land/${Dh.next()}.mp3`),
+            volume: wr({
                 volume: .24,
                 type: pn.soundEffect
             }),
             forceCreateNewSound: !0
         })
     },
-    Oh = (V, T) => {
+    Gh = (V, T) => {
         const E = V.body,
             M = V.prevBody,
-            A = Ir.Math.Distance.Between(E.x, E.y, M.x, M.y),
+            A = Or.Math.Distance.Between(E.x, E.y, M.x, M.y),
             I = Math.abs(E.x - M.x);
-        if (ch() || Or()) return A > $t.movementPixels.running(T) ? qt.run : qt.rest;
-        const g = Rh({
+        if (ch() || Lr()) return A > Jt.movementPixels.running(T) ? jt.run : jt.rest;
+        const g = Oh({
             characterId: V.id
         });
-        if (Ah({
+        if (Fh({
                 characterId: V.id
-            }) && A > $t.movementPixels.rising(T)) {
+            }) && A > Jt.movementPixels.rising(T)) {
             const t = V.isMain ? V.physics.prevState.grounded : V.animation.prevNonMainCharacterState.grounded;
-            return !g && t && V.animation.currentBodyAnimation !== qt.jumpStart && V.impactAnimation.play(bs.jump), qt.jumpStart
+            return !g && t && V.animation.currentBodyAnimation !== jt.jumpStart && V.impactAnimation.play(bs.jump), jt.jumpStart
         }
         if (g) {
-            if (Ph({
+            if (wh({
                     characterId: V.id
-                }) && (A > $t.movementPixels.falling(T) || !V.isMain)) return V.animation.currentBodyAnimation !== qt.jumpLand && Date.now() - V.animation.lastGroundedAnimationAt > Eh.land.minimumAirTime && (V.impactAnimation.play(bs.land), V.isMain && Lh()), qt.jumpLand;
-            if (I > $t.movementPixels.running(T)) return qt.run
+                }) && (A > Jt.movementPixels.falling(T) || !V.isMain)) return V.animation.currentBodyAnimation !== jt.jumpLand && Date.now() - V.animation.lastGroundedAnimationAt > Rh.land.minimumAirTime && (V.impactAnimation.play(bs.land), V.isMain && Bh()), jt.jumpLand;
+            if (I > Jt.movementPixels.running(T)) return jt.run
         } else {
             const t = E.y < M.y;
-            return t && A > $t.movementPixels.rising(T) ? qt.jumpMiddleIdle : A > $t.movementPixels.falling(T) ? qt.jumpDownIdle : t ? qt.jumpMiddleIdle : qt.jumpDownIdle
+            return t && A > Jt.movementPixels.rising(T) ? jt.jumpMiddleIdle : A > Jt.movementPixels.falling(T) ? jt.jumpDownIdle : t ? jt.jumpMiddleIdle : jt.jumpDownIdle
         }
-        return Mh({
+        return Lh({
             characterId: V.id
-        }) ? V.animation.currentBodyAnimation : qt.rest
+        }) ? V.animation.currentBodyAnimation : jt.rest
     },
-    si = {
+    be = {
         COMMON: 0,
         BODY_SUPPLEMENTAL: 1,
         MOVEMENT_SUPPLEMENTAL: 2,
@@ -55879,40 +55881,44 @@ const Fh = new Xr(3),
         EYES: 4,
         BODY: 5
     };
-class Tu {
+class Su {
     constructor(T) {
-        this.skinChanged = !1, this.availableAnimations = [], this.currentBodyAnimation = qt.rest, this.bodyAnimationLocked = !1, this.bodyAnimationStartedAt = 0, this.currentEyeAnimation = Ti.idle, this.nonMainCharacterState = {
+        this.skinChanged = !1, this.availableAnimations = [], this.currentBodyAnimation = jt.rest, this.bodyAnimationLocked = !1, this.bodyAnimationStartedAt = 0, this.currentEyeAnimation = He.idle, this.nonMainCharacterState = {
             grounded: !0
         }, this.prevNonMainCharacterState = {
             ...this.nonMainCharacterState
         }, this.lastGroundedAnimationAt = 0, this.update = E => {
             this.character.isMain || (this.nonMainCharacterState.grounded = this.character.movement.nonMainCharacterGrounded);
-            const M = Oh(this.character, E);
-            this.playBodyAnimation(M), (M === qt.rest || M === qt.run) && (this.lastGroundedAnimationAt = Date.now()), this.character.isMain || (this.prevNonMainCharacterState = {
+            const M = Gh(this.character, E);
+            this.playBodyAnimation(M), (M === jt.rest || M === jt.run) && (this.lastGroundedAnimationAt = Date.now()), this.character.isMain || (this.prevNonMainCharacterState = {
                 ...this.nonMainCharacterState
             })
         }, this.setupAnimations = () => {
             const E = this.character.spine;
-            this.availableAnimations = E.skeleton.data.animations.map(M => M.name), E.animationStateData.defaultMix = $t.body.transition.defaultDuration, E.animationStateData.setMix($t.body.animationNames.jumpMiddleIdle, $t.body.animationNames.jumpDownIdle, $t.body.transition.jumpFallingDuration), E.animationStateData.setMix($t.eyes.animationNames.blink, $t.eyes.animationNames.idle, 0), E.animationStateData.setMix($t.eyes.animationNames.idle, $t.eyes.animationNames.blink, 0), this.playBodyAnimation(this.currentBodyAnimation), this.playEyeAnimation(this.currentEyeAnimation), this.availableAnimations.includes(`skins-${this.character.skin.skinId}-common`) && this.character.spine.animationState.setAnimation(si.COMMON, `skins-${this.character.skin.skinId}-common`, !0), this.character.spine.animationState.addListener({
+            this.availableAnimations = E.skeleton.data.animations.map(M => M.name), E.animationStateData.defaultMix = Jt.body.transition.defaultDuration, E.animationStateData.setMix(Jt.body.animationNames.jumpMiddleIdle, Jt.body.animationNames.jumpDownIdle, Jt.body.transition.jumpFallingDuration), E.animationStateData.setMix(Jt.eyes.animationNames.blink, Jt.eyes.animationNames.idle, 0), E.animationStateData.setMix(Jt.eyes.animationNames.idle, Jt.eyes.animationNames.blink, 0), this.playBodyAnimation(this.currentBodyAnimation), this.playEyeAnimation(this.currentEyeAnimation), this.availableAnimations.includes(`skins-${this.character.skin.skinId}-common`) && this.character.spine.animationState.setAnimation(be.COMMON, `skins-${this.character.skin.skinId}-common`, !0), this.character.spine.animationState.addListener({
                 complete: M => {
                     this.onAnimationComplete(M)
                 }
             })
+        }, this.applyIdlePoseForCapture = () => {
+            const E = this.character.spine,
+                M = jt.rest;
+            this.currentBodyAnimation = M, this.currentEyeAnimation = He.idle, this.bodyAnimationLocked = !1, E.animationState.setAnimation(be.BODY, Jt.body.animationNames[M], !0), E.animationState.setAnimation(be.EYES, Jt.eyes.animationNames[He.idle], !0), this.playBodySupplementalAnimation(M), E.updatePose(0)
         }, this.playBodyAnimation = E => {
             var A, I, c;
             if (E === this.currentBodyAnimation && !this.skinChanged) return;
             if (this.bodyAnimationLocked && !this.skinChanged) {
-                const g = ((I = (A = $t.animationLocks) == null ? void 0 : A[this.currentBodyAnimation]) == null ? void 0 : I[E]) ?? 0;
+                const g = ((I = (A = Jt.animationLocks) == null ? void 0 : A[this.currentBodyAnimation]) == null ? void 0 : I[E]) ?? 0;
                 if (g) {
                     const t = Date.now(),
                         o = this.bodyAnimationStartedAt + g;
                     if (t < o) return
                 }
             }
-            const M = !!((c = $t.animationLocks) != null && c[E]);
-            this.bodyAnimationLocked = M, this.bodyAnimationStartedAt = Date.now(), E === qt.rest ? this.startBlinkAnimation() : this.stopBlinkAnimation(), this.currentBodyAnimation = E, this.character.spine.animationState.setAnimation(si.BODY, $t.body.animationNames[E], $t.bodyLoopedAnimations.includes(E)), this.character.dimensions.onPotentialDimensionsChange(), this.playBodySupplementalAnimation(E)
+            const M = !!((c = Jt.animationLocks) != null && c[E]);
+            this.bodyAnimationLocked = M, this.bodyAnimationStartedAt = Date.now(), E === jt.rest ? this.startBlinkAnimation() : this.stopBlinkAnimation(), this.currentBodyAnimation = E, this.character.spine.animationState.setAnimation(be.BODY, Jt.body.animationNames[E], Jt.bodyLoopedAnimations.includes(E)), this.character.dimensions.onPotentialDimensionsChange(), this.playBodySupplementalAnimation(E)
         }, this.playEyeAnimation = E => {
-            E === this.currentEyeAnimation && !this.skinChanged || (this.currentEyeAnimation = E, this.character.spine.animationState.setAnimation(si.EYES, $t.eyes.animationNames[E], !0))
+            E === this.currentEyeAnimation && !this.skinChanged || (this.currentEyeAnimation = E, this.character.spine.animationState.setAnimation(be.EYES, Jt.eyes.animationNames[E], !0))
         }, this.playAnimationOrClearTrack = (E, M) => {
             let A = !1;
             for (const I of E)
@@ -55921,24 +55927,26 @@ class Tu {
                     break
                 } A || this.character.spine.animationState.clearTrack(M)
         }, this.playBodySupplementalAnimation = E => {
-            this.playAnimationOrClearTrack([`skins-${this.character.skin.skinId}-${$t.body.animationNames[E]}`, `skins-${this.character.skin.skinId}-pose`], si.BODY_SUPPLEMENTAL), this.playMovementSupplementalAnimation(E), this.playJumpSupplementalAnimation(E)
+            this.playAnimationOrClearTrack([`skins-${this.character.skin.skinId}-${Jt.body.animationNames[E]}`, `skins-${this.character.skin.skinId}-pose`], be.BODY_SUPPLEMENTAL), this.playMovementSupplementalAnimation(E), this.playJumpSupplementalAnimation(E)
         }, this.playMovementSupplementalAnimation = E => {
-            this.playAnimationOrClearTrack([`skins-${this.character.skin.skinId}-movement=${E===qt.rest?"false":"true"}`], si.MOVEMENT_SUPPLEMENTAL)
+            this.playAnimationOrClearTrack([`skins-${this.character.skin.skinId}-movement=${E===jt.rest?"false":"true"}`], be.MOVEMENT_SUPPLEMENTAL)
         }, this.playJumpSupplementalAnimation = E => {
-            const M = $t.jumpAnimations.includes(E);
-            this.playAnimationOrClearTrack([`skins-${this.character.skin.skinId}-jumping=${M?"true":"false"}`], si.JUMP_SUPPLEMENTAL)
+            const M = Jt.jumpAnimations.includes(E);
+            this.playAnimationOrClearTrack([`skins-${this.character.skin.skinId}-jumping=${M?"true":"false"}`], be.JUMP_SUPPLEMENTAL)
         }, this.startBlinkAnimation = () => {
-            this.blinkTimer || (this.playEyeAnimation(Ti.idle), this.blinkTimer = window.setTimeout(() => {
-                this.blinkTimer = null, this.playEyeAnimation(Ti.blink)
-            }, $t.eyes.blinkEvery))
+            this.blinkTimer || (this.playEyeAnimation(He.idle), this.blinkTimer = window.setTimeout(() => {
+                this.blinkTimer = null, this.playEyeAnimation(He.blink)
+            }, Jt.eyes.blinkEvery))
         }, this.stopBlinkAnimation = () => {
-            this.playEyeAnimation(Ti.idle), this.blinkTimer && (window.clearTimeout(this.blinkTimer), this.blinkTimer = null)
+            this.playEyeAnimation(He.idle), this.blinkTimer && (window.clearTimeout(this.blinkTimer), this.blinkTimer = null)
         }, this.onAnimationComplete = E => {
-            E.trackIndex === si.EYES && this.currentBodyAnimation === qt.rest && this.currentEyeAnimation === Ti.blink && this.startBlinkAnimation()
+            E.trackIndex === be.EYES && this.currentBodyAnimation === jt.rest && this.currentEyeAnimation === He.blink && this.startBlinkAnimation()
         }, this.onSkinChanged = () => {
             this.skinChanged = !0, this.setupAnimations(), this.skinChanged = !1
-        }, this.destroy = () => {
+        }, this.suspend = () => {
             this.blinkTimer && (window.clearTimeout(this.blinkTimer), this.blinkTimer = null)
+        }, this.destroy = () => {
+            this.suspend()
         }, this.character = T.character
     }
 }
@@ -55949,12 +55957,7 @@ if (typeof window < "u" && window.Phaser) {
         if (T === "Phaser") return window.Phaser
     }
 }
-const Ih = "esotericsoftware.spine.skeletonFile.cache",
-    Dh = "esotericsoftware.spine.atlas.cache",
-    Bh = "spineSkeletonData",
-    Gh = "spineAtlasData",
-    ji = "spine";
-class Yr {
+class Xr {
     constructor() {
         z(this, "entries", {});
         z(this, "size", 0)
@@ -56014,18 +56017,18 @@ const ge = class ge {
 };
 z(ge, "WHITE", new ge(1, 1, 1, 1)), z(ge, "RED", new ge(1, 0, 0, 1)), z(ge, "GREEN", new ge(0, 1, 0, 1)), z(ge, "BLUE", new ge(0, 0, 1, 1)), z(ge, "MAGENTA", new ge(1, 0, 1, 1));
 let Lt = ge;
-const kt = class kt {
+const qt = class qt {
     static clamp(T, E, M) {
         return T < E ? E : T > M ? M : T
     }
     static cosDeg(T) {
-        return Math.cos(T * kt.degRad)
+        return Math.cos(T * qt.degRad)
     }
     static sinDeg(T) {
-        return Math.sin(T * kt.degRad)
+        return Math.sin(T * qt.degRad)
     }
     static atan2Deg(T, E) {
-        return Math.atan2(T, E) * kt.degRad
+        return Math.atan2(T, E) * qt.degRad
     }
     static signum(T) {
         return T > 0 ? 1 : T < 0 ? -1 : 0
@@ -56038,7 +56041,7 @@ const kt = class kt {
         return T < 0 ? -E : E
     }
     static randomTriangular(T, E) {
-        return kt.randomTriangularWith(T, E, (T + E) * .5)
+        return qt.randomTriangularWith(T, E, (T + E) * .5)
     }
     static randomTriangularWith(T, E, M) {
         let A = Math.random(),
@@ -56049,9 +56052,9 @@ const kt = class kt {
         return T && (T & T - 1) === 0
     }
 };
-z(kt, "PI", 3.1415927), z(kt, "PI2", kt.PI * 2), z(kt, "invPI2", 1 / kt.PI2), z(kt, "radiansToDegrees", 180 / kt.PI), z(kt, "radDeg", kt.radiansToDegrees), z(kt, "degreesToRadians", kt.PI / 180), z(kt, "degRad", kt.degreesToRadians);
-let ht = kt;
-const We = class We {
+z(qt, "PI", 3.1415927), z(qt, "PI2", qt.PI * 2), z(qt, "invPI2", 1 / qt.PI2), z(qt, "radiansToDegrees", 180 / qt.PI), z(qt, "radDeg", qt.radiansToDegrees), z(qt, "degreesToRadians", qt.PI / 180), z(qt, "degRad", qt.degreesToRadians);
+let ht = qt;
+const Ke = class Ke {
     static arrayCopy(T, E, M, A, I) {
         for (let c = E, g = A; c < E + I; c++, g++) M[g] = T[c]
     }
@@ -56066,7 +56069,7 @@ const We = class We {
         return T
     }
     static ensureArrayCapacity(T, E, M = 0) {
-        return T.length >= E ? T : We.setArraySize(T, E, M)
+        return T.length >= E ? T : Ke.setArraySize(T, E, M)
     }
     static newArray(T, E) {
         let M = new Array(T);
@@ -56074,7 +56077,7 @@ const We = class We {
         return M
     }
     static newFloatArray(T) {
-        if (We.SUPPORTS_TYPED_ARRAYS) return new Float32Array(T);
+        if (Ke.SUPPORTS_TYPED_ARRAYS) return new Float32Array(T);
         {
             let E = new Array(T);
             for (let M = 0; M < E.length; M++) E[M] = 0;
@@ -56082,7 +56085,7 @@ const We = class We {
         }
     }
     static newShortArray(T) {
-        if (We.SUPPORTS_TYPED_ARRAYS) return new Int16Array(T);
+        if (Ke.SUPPORTS_TYPED_ARRAYS) return new Int16Array(T);
         {
             let E = new Array(T);
             for (let M = 0; M < E.length; M++) E[M] = 0;
@@ -56090,10 +56093,10 @@ const We = class We {
         }
     }
     static toFloatArray(T) {
-        return We.SUPPORTS_TYPED_ARRAYS ? new Float32Array(T) : T
+        return Ke.SUPPORTS_TYPED_ARRAYS ? new Float32Array(T) : T
     }
     static toSinglePrecision(T) {
-        return We.SUPPORTS_TYPED_ARRAYS ? Math.fround(T) : T
+        return Ke.SUPPORTS_TYPED_ARRAYS ? Math.fround(T) : T
     }
     static webkit602BugfixHelper(T, E) {}
     static contains(T, E, M = !0) {
@@ -56105,8 +56108,8 @@ const We = class We {
         return T[E[0].toUpperCase() + E.slice(1)]
     }
 };
-z(We, "SUPPORTS_TYPED_ARRAYS", typeof Float32Array < "u");
-let ot = We;
+z(Ke, "SUPPORTS_TYPED_ARRAYS", typeof Float32Array < "u");
+let ot = Ke;
 class ki {
     constructor(T) {
         z(this, "items", new Array);
@@ -56145,14 +56148,14 @@ class wi {
         return T != 0 && (this.x /= T, this.y /= T), this
     }
 }
-class Ur {
+class Yr {
     constructor(T) {
         z(this, "name");
         if (!T) throw new Error("name cannot be null.");
         this.name = T
     }
 }
-const hs = class hs extends Ur {
+const hs = class hs extends Yr {
     constructor(E) {
         super(E);
         z(this, "id", hs.nextID++);
@@ -56261,12 +56264,12 @@ var ee;
 (function(V) {
     V[V.hold = 0] = "hold", V[V.once = 1] = "once", V[V.loop = 2] = "loop", V[V.pingpong = 3] = "pingpong", V[V.onceReverse = 4] = "onceReverse", V[V.loopReverse = 5] = "loopReverse", V[V.pingpongReverse = 6] = "pingpongReverse"
 })(ee || (ee = {}));
-const Vr = [ee.hold, ee.once, ee.loop, ee.pingpong, ee.onceReverse, ee.loopReverse, ee.pingpongReverse];
+const Ur = [ee.hold, ee.once, ee.loop, ee.pingpong, ee.onceReverse, ee.loopReverse, ee.pingpongReverse];
 class mn {
     constructor(T, E, M) {
         z(this, "name");
         z(this, "timelines", []);
-        z(this, "timelineIds", new Yr);
+        z(this, "timelineIds", new Xr);
         z(this, "duration");
         if (!T) throw new Error("name cannot be null.");
         this.name = T, this.setTimelines(E), this.duration = M
@@ -56539,7 +56542,7 @@ class _i extends Me {
         o.active && (o.rotation = this.getRelativeValue(A, c, g, o.rotation, o.data.rotation))
     }
 }
-class zr extends gn {
+class Vr extends gn {
     constructor(E, M, A) {
         super(E, M, Dt.x + "|" + A, Dt.y + "|" + A);
         z(this, "boneIndex", 0);
@@ -56589,7 +56592,7 @@ class zr extends gn {
         }
     }
 }
-class Wr extends Me {
+class zr extends Me {
     constructor(E, M, A) {
         super(E, M, Dt.x + "|" + A);
         z(this, "boneIndex", 0);
@@ -56600,7 +56603,7 @@ class Wr extends Me {
         o.active && (o.x = this.getRelativeValue(A, c, g, o.x, o.data.x))
     }
 }
-class Hr extends Me {
+class Wr extends Me {
     constructor(E, M, A) {
         super(E, M, Dt.y + "|" + A);
         z(this, "boneIndex", 0);
@@ -56611,7 +56614,7 @@ class Hr extends Me {
         o.active && (o.y = this.getRelativeValue(A, c, g, o.y, o.data.y))
     }
 }
-class Kr extends gn {
+class Hr extends gn {
     constructor(E, M, A) {
         super(E, M, Dt.scaleX + "|" + A, Dt.scaleY + "|" + A);
         z(this, "boneIndex", 0);
@@ -56674,7 +56677,7 @@ class Kr extends gn {
         }
     }
 }
-class Zr extends Me {
+class Kr extends Me {
     constructor(E, M, A) {
         super(E, M, Dt.scaleX + "|" + A);
         z(this, "boneIndex", 0);
@@ -56685,7 +56688,7 @@ class Zr extends Me {
         o.active && (o.scaleX = this.getScaleValue(A, c, g, t, o.scaleX, o.data.scaleX))
     }
 }
-class Jr extends Me {
+class Zr extends Me {
     constructor(E, M, A) {
         super(E, M, Dt.scaleY + "|" + A);
         z(this, "boneIndex", 0);
@@ -56696,7 +56699,7 @@ class Jr extends Me {
         o.active && (o.scaleY = this.getScaleValue(A, c, g, t, o.scaleY, o.data.scaleY))
     }
 }
-class Qr extends gn {
+class Jr extends gn {
     constructor(E, M, A) {
         super(E, M, Dt.shearX + "|" + A, Dt.shearY + "|" + A);
         z(this, "boneIndex", 0);
@@ -56746,7 +56749,7 @@ class Qr extends gn {
         }
     }
 }
-class $r extends Me {
+class Qr extends Me {
     constructor(E, M, A) {
         super(E, M, Dt.shearX + "|" + A);
         z(this, "boneIndex", 0);
@@ -56757,7 +56760,7 @@ class $r extends Me {
         o.active && (o.shearX = this.getRelativeValue(A, c, g, o.shearX, o.data.shearX))
     }
 }
-class jr extends Me {
+class $r extends Me {
     constructor(E, M, A) {
         super(E, M, Dt.shearY + "|" + A);
         z(this, "boneIndex", 0);
@@ -56768,7 +56771,7 @@ class jr extends Me {
         o.active && (o.shearY = this.getRelativeValue(A, c, g, o.shearY, o.data.shearY))
     }
 }
-class kr extends Ht {
+class jr extends Ht {
     constructor(E, M) {
         super(E, [Dt.inherit + "|" + M]);
         z(this, "boneIndex", 0);
@@ -56795,7 +56798,7 @@ class kr extends Ht {
         o.inherit = this.frames[Ht.search(v, A, 2) + 1]
     }
 }
-class qr extends Ge {
+class kr extends Ge {
     constructor(E, M, A) {
         super(E, M, [Dt.rgb + "|" + A, Dt.alpha + "|" + A]);
         z(this, "slotIndex", 0);
@@ -56845,7 +56848,7 @@ class qr extends Ge {
         c == 1 ? a.set(r, i, e, s) : (g == at.setup && a.setFromColor(o.data.color), a.add((r - a.r) * c, (i - a.g) * c, (e - a.b) * c, (s - a.a) * c))
     }
 }
-class _r extends Ge {
+class qr extends Ge {
     constructor(E, M, A) {
         super(E, M, [Dt.rgb + "|" + A]);
         z(this, "slotIndex", 0);
@@ -56901,7 +56904,7 @@ class _r extends Ge {
         }
     }
 }
-class ta extends Me {
+class _r extends Me {
     constructor(E, M, A) {
         super(E, M, Dt.alpha + "|" + A);
         z(this, "slotIndex", 0);
@@ -56926,7 +56929,7 @@ class ta extends Me {
         c == 1 ? v.a = a : (g == at.setup && (v.a = o.data.color.a), v.a += (a - v.a) * c)
     }
 }
-class ea extends Ge {
+class ta extends Ge {
     constructor(E, M, A) {
         super(E, M, [Dt.rgb + "|" + A, Dt.alpha + "|" + A, Dt.rgb2 + "|" + A]);
         z(this, "slotIndex", 0);
@@ -56989,7 +56992,7 @@ class ea extends Ge {
         }
     }
 }
-class ia extends Ge {
+class ea extends Ge {
     constructor(E, M, A) {
         super(E, M, [Dt.rgb + "|" + A, Dt.rgb2 + "|" + A]);
         z(this, "slotIndex", 0);
@@ -57082,7 +57085,7 @@ class Si extends Ht {
         M.setAttachment(A ? E.getAttachment(this.slotIndex, A) : null)
     }
 }
-class sa extends Ge {
+class ia extends Ge {
     constructor(E, M, A, I) {
         super(E, M, [Dt.deform + "|" + A + "|" + I.id]);
         z(this, "slotIndex", 0);
@@ -57334,8 +57337,8 @@ const us = class us extends Ht {
     }
 };
 z(us, "propertyIds", ["" + Dt.drawOrder]);
-let ai = us;
-class na extends Ge {
+let oi = us;
+class sa extends Ge {
     constructor(E, M, A) {
         super(E, M, [Dt.ikConstraint + "|" + A]);
         z(this, "constraintIndex", 0);
@@ -57381,7 +57384,7 @@ class na extends Ge {
         g == at.setup ? (o.mix = o.data.mix + (a - o.data.mix) * c, o.softness = o.data.softness + (r - o.data.softness) * c, t == oe.mixOut ? (o.bendDirection = o.data.bendDirection, o.compress = o.data.compress, o.stretch = o.data.stretch) : (o.bendDirection = v[i + 3], o.compress = v[i + 4] != 0, o.stretch = v[i + 5] != 0)) : (o.mix += (a - o.mix) * c, o.softness += (r - o.softness) * c, t == oe.mixIn && (o.bendDirection = v[i + 3], o.compress = v[i + 4] != 0, o.stretch = v[i + 5] != 0))
     }
 }
-class ra extends Ge {
+class na extends Ge {
     constructor(E, M, A) {
         super(E, M, [Dt.transformConstraint + "|" + A]);
         z(this, "constraintIndex", 0);
@@ -57430,7 +57433,7 @@ class ra extends Ge {
         } else o.mixRotate += (a - o.mixRotate) * c, o.mixX += (r - o.mixX) * c, o.mixY += (i - o.mixY) * c, o.mixScaleX += (e - o.mixScaleX) * c, o.mixScaleY += (s - o.mixScaleY) * c, o.mixShearY += (h - o.mixShearY) * c
     }
 }
-class aa extends Me {
+class ra extends Me {
     constructor(E, M, A) {
         super(E, M, Dt.pathConstraintPosition + "|" + A);
         z(this, "constraintIndex", 0);
@@ -57441,7 +57444,7 @@ class aa extends Me {
         o.active && (o.position = this.getAbsoluteValue(A, c, g, o.position, o.data.position))
     }
 }
-class oa extends Me {
+class aa extends Me {
     constructor(E, M, A) {
         super(E, M, Dt.pathConstraintSpacing + "|" + A);
         z(this, "constraintIndex", 0);
@@ -57452,7 +57455,7 @@ class oa extends Me {
         o.active && (o.spacing = this.getAbsoluteValue(A, c, g, o.spacing, o.data.spacing))
     }
 }
-class ha extends Ge {
+class oa extends Ge {
     constructor(E, M, A) {
         super(E, M, [Dt.pathConstraintMix + "|" + A]);
         z(this, "constraintIndex", 0);
@@ -57500,7 +57503,7 @@ class ha extends Ge {
         } else o.mixRotate += (a - o.mixRotate) * c, o.mixX += (r - o.mixX) * c, o.mixY += (i - o.mixY) * c
     }
 }
-class mi extends Me {
+class gi extends Me {
     constructor(E, M, A, I) {
         super(E, M, I + "|" + A);
         z(this, "constraintIndex", 0);
@@ -57514,7 +57517,7 @@ class mi extends Me {
         } else o = E.physicsConstraints[this.constraintIndex], o.active && this.set(o, this.getAbsoluteValue(A, c, g, this.get(o), this.setup(o)))
     }
 }
-class la extends mi {
+class ha extends gi {
     constructor(T, E, M) {
         super(T, E, M, Dt.physicsConstraintInertia)
     }
@@ -57531,7 +57534,7 @@ class la extends mi {
         return T.inertiaGlobal
     }
 }
-class ua extends mi {
+class la extends gi {
     constructor(T, E, M) {
         super(T, E, M, Dt.physicsConstraintStrength)
     }
@@ -57548,7 +57551,7 @@ class ua extends mi {
         return T.strengthGlobal
     }
 }
-class fa extends mi {
+class ua extends gi {
     constructor(T, E, M) {
         super(T, E, M, Dt.physicsConstraintDamping)
     }
@@ -57565,7 +57568,7 @@ class fa extends mi {
         return T.dampingGlobal
     }
 }
-class da extends mi {
+class fa extends gi {
     constructor(T, E, M) {
         super(T, E, M, Dt.physicsConstraintMass)
     }
@@ -57582,7 +57585,7 @@ class da extends mi {
         return T.massGlobal
     }
 }
-class va extends mi {
+class da extends gi {
     constructor(T, E, M) {
         super(T, E, M, Dt.physicsConstraintWind)
     }
@@ -57599,7 +57602,7 @@ class va extends mi {
         return T.windGlobal
     }
 }
-class ca extends mi {
+class va extends gi {
     constructor(T, E, M) {
         super(T, E, M, Dt.physicsConstraintGravity)
     }
@@ -57616,7 +57619,7 @@ class ca extends mi {
         return T.gravityGlobal
     }
 }
-class pa extends mi {
+class ca extends gi {
     constructor(T, E, M) {
         super(T, E, M, Dt.physicsConstraintMix)
     }
@@ -57701,7 +57704,7 @@ const Ce = class Ce extends Ht {
         if (!this.attachment.sequence) return;
         let n = s >> 4,
             l = this.attachment.sequence.regions.length,
-            u = Vr[s & 15];
+            u = Ur[s & 15];
         if (u != ee.hold) switch (n += (A - e) / h + 1e-5 | 0, u) {
             case ee.once:
                 n = Math.min(l - 1, n);
@@ -57739,7 +57742,7 @@ const Ai = class Ai {
         z(this, "events", new Array);
         z(this, "listeners", new Array);
         z(this, "queue", new Nh(this));
-        z(this, "propertyIDs", new Yr);
+        z(this, "propertyIDs", new Xr);
         z(this, "animationsChanged", !1);
         z(this, "trackEntryPool", new ki(() => new bh));
         this.data = T
@@ -57828,7 +57831,7 @@ const Ai = class Ai {
             }
             this.queueEvents(e, u), E.length = 0, e.nextAnimationLast = u, e.nextTrackLast = e.trackTime
         }
-        for (var c = this.unkeyedState + Bn, g = T.slots, t = 0, o = T.slots.length; t < o; t++) {
+        for (var c = this.unkeyedState + Dn, g = T.slots, t = 0, o = T.slots.length; t < o; t++) {
             var v = g[t];
             if (v.attachmentState == c) {
                 var a = v.data.attachmentName;
@@ -57866,13 +57869,13 @@ const Ai = class Ai {
                     m, y = 0;
                 switch (h[f]) {
                     case Is:
-                        if (!g && d instanceof ai) continue;
+                        if (!g && d instanceof oi) continue;
                         m = M, y = a;
                         break;
-                    case In:
+                    case On:
                         m = at.setup, y = a;
                         break;
-                    case Dn:
+                    case In:
                         m = M, y = v;
                         break;
                     case Ds:
@@ -57884,14 +57887,14 @@ const Ai = class Ai {
                         y = v * Math.max(0, 1 - x.mixTime / x.mixDuration);
                         break
                 }
-                A.totalAlpha += y, !l && d instanceof _i ? this.applyRotateTimeline(d, E, e, y, m, A.timelinesRotation, f << 1, u) : d instanceof Si ? this.applyAttachmentTimeline(d, E, e, m, c && y >= A.alphaAttachmentThreshold) : (g && d instanceof ai && m == at.setup && (p = oe.mixIn), d.apply(E, r, e, s, y, m, p))
+                A.totalAlpha += y, !l && d instanceof _i ? this.applyRotateTimeline(d, E, e, y, m, A.timelinesRotation, f << 1, u) : d instanceof Si ? this.applyAttachmentTimeline(d, E, e, m, c && y >= A.alphaAttachmentThreshold) : (g && d instanceof oi && m == at.setup && (p = oe.mixIn), d.apply(E, r, e, s, y, m, p))
             }
         }
         return T.mixDuration > 0 && this.queueEvents(A, i), this.events.length = 0, A.nextAnimationLast = i, A.nextTrackLast = A.trackTime, I
     }
     applyAttachmentTimeline(T, E, M, A, I) {
         var c = E.slots[T.slotIndex];
-        c.bone.active && (M < T.frames[0] ? (A == at.setup || A == at.first) && this.setAttachment(E, c, c.data.attachmentName, I) : this.setAttachment(E, c, T.attachmentNames[Ht.search1(T.frames, M)], I), c.attachmentState <= this.unkeyedState && (c.attachmentState = this.unkeyedState + Bn))
+        c.bone.active && (M < T.frames[0] ? (A == at.setup || A == at.first) && this.setAttachment(E, c, c.data.attachmentName, I) : this.setAttachment(E, c, T.attachmentNames[Ht.search1(T.frames, M)], I), c.attachmentState <= this.unkeyedState && (c.attachmentState = this.unkeyedState + Dn))
     }
     setAttachment(T, E, M, A) {
         E.setAttachment(M ? T.getAttachment(E.data.index, M) : null), A && (E.attachmentState = this.unkeyedState + Yh)
@@ -58054,14 +58057,14 @@ const Ai = class Ai {
         c.length = 0;
         let g = this.propertyIDs;
         if (E && E.holdPrevious) {
-            for (let t = 0; t < A; t++) I[t] = g.addAll(M[t].getPropertyIds()) ? Ds : Dn;
+            for (let t = 0; t < A; t++) I[t] = g.addAll(M[t].getPropertyIds()) ? Ds : In;
             return
         }
         t: for (let t = 0; t < A; t++) {
             let o = M[t],
                 v = o.getPropertyIds();
             if (!g.addAll(v)) I[t] = Is;
-            else if (!E || o instanceof Si || o instanceof ai || o instanceof Vi || !E.animation.hasTimeline(v)) I[t] = In;
+            else if (!E || o instanceof Si || o instanceof oi || o instanceof Vi || !E.animation.hasTimeline(v)) I[t] = On;
             else {
                 for (let a = E.mixingTo; a; a = a.mixingTo)
                     if (!a.animation.hasTimeline(v)) {
@@ -58264,11 +58267,11 @@ var ve;
     V[V.start = 0] = "start", V[V.interrupt = 1] = "interrupt", V[V.end = 2] = "end", V[V.dispose = 3] = "dispose", V[V.complete = 4] = "complete", V[V.event = 5] = "event"
 })(ve || (ve = {}));
 const Is = 0,
-    In = 1,
-    Dn = 2,
+    On = 1,
+    In = 2,
     Ds = 3,
     Xh = 4,
-    Bn = 1,
+    Dn = 1,
     Yh = 2;
 class Uh {
     constructor(T) {
@@ -58318,7 +58321,7 @@ class Ni extends Pe {
         return this.copyTo(E), E.endSlot = this.endSlot, E.color.setFromColor(this.color), E
     }
 }
-class ma {
+class pa {
     constructor(T) {
         z(this, "_image");
         this._image = T
@@ -58395,7 +58398,7 @@ class zh {
         for (; c !== null;)
             if (c.trim().length == 0) g = null, c = E.readLine();
             else if (g) {
-            let v = new ga(g, c);
+            let v = new ma(g, c);
             for (;;) {
                 let a = E.readEntry(M, c = E.readLine());
                 if (a == 0) break;
@@ -58470,7 +58473,7 @@ class Hh {
         for (let E of this.regions) E.texture = T
     }
 }
-class ga extends Vh {
+class ma extends Vh {
     constructor(E, M) {
         super();
         z(this, "page");
@@ -58488,7 +58491,7 @@ class ga extends Vh {
         this.page = E, this.name = M, E.regions.push(this)
     }
 }
-class Ue extends Pe {
+class Ve extends Pe {
     constructor(E, M) {
         super(E);
         z(this, "region", null);
@@ -58516,7 +58519,7 @@ class Ue extends Pe {
             c = this.region.v,
             g = 0,
             t = 0;
-        if (this.region instanceof ga) {
+        if (this.region instanceof ma) {
             let o = this.region,
                 v = o.page,
                 a = v.width,
@@ -58547,18 +58550,18 @@ class Ue extends Pe {
     }
     copy() {
         if (this.parentMesh) return this.newLinkedMesh();
-        let E = new Ue(this.name, this.path);
+        let E = new Ve(this.name, this.path);
         return E.region = this.region, E.color.setFromColor(this.color), this.copyTo(E), E.regionUVs = new Array(this.regionUVs.length), ot.arrayCopy(this.regionUVs, 0, E.regionUVs, 0, this.regionUVs.length), E.uvs = new Array(this.uvs.length), ot.arrayCopy(this.uvs, 0, E.uvs, 0, this.uvs.length), E.triangles = new Array(this.triangles.length), ot.arrayCopy(this.triangles, 0, E.triangles, 0, this.triangles.length), E.hullLength = this.hullLength, E.sequence = this.sequence != null ? this.sequence.copy() : null, this.edges && (E.edges = new Array(this.edges.length), ot.arrayCopy(this.edges, 0, E.edges, 0, this.edges.length)), E.width = this.width, E.height = this.height, E
     }
     computeWorldVertices(E, M, A, I, c, g) {
         this.sequence != null && this.sequence.apply(E, this), super.computeWorldVertices(E, M, A, I, c, g)
     }
     newLinkedMesh() {
-        let E = new Ue(this.name, this.path);
+        let E = new Ve(this.name, this.path);
         return E.region = this.region, E.color.setFromColor(this.color), E.timelineAttachment = this.timelineAttachment, E.setParentMesh(this.parentMesh ? this.parentMesh : this), E.region != null && E.updateRegion(), E
     }
 }
-class li extends Pe {
+class ui extends Pe {
     constructor(E) {
         super(E);
         z(this, "lengths", []);
@@ -58567,7 +58570,7 @@ class li extends Pe {
         z(this, "color", new Lt(1, 1, 1, 1))
     }
     copy() {
-        let E = new li(this.name);
+        let E = new ui(this.name);
         return this.copyTo(E), E.lengths = new Array(this.lengths.length), ot.arrayCopy(this.lengths, 0, E.lengths, 0, this.lengths.length), E.closed = closed, E.constantSpeed = this.constantSpeed, E.color.setFromColor(this.color), E
     }
 }
@@ -58595,7 +58598,7 @@ class xn extends Pe {
         return E.x = this.x, E.y = this.y, E.rotation = this.rotation, E.color.setFromColor(this.color), E
     }
 }
-const Xt = class Xt extends Ur {
+const Xt = class Xt extends Yr {
     constructor(E, M) {
         super(E);
         z(this, "x", 0);
@@ -58665,7 +58668,7 @@ const Xt = class Xt extends Ur {
 };
 z(Xt, "X1", 0), z(Xt, "Y1", 1), z(Xt, "C1R", 2), z(Xt, "C1G", 3), z(Xt, "C1B", 4), z(Xt, "C1A", 5), z(Xt, "U1", 6), z(Xt, "V1", 7), z(Xt, "X2", 8), z(Xt, "Y2", 9), z(Xt, "C2R", 10), z(Xt, "C2G", 11), z(Xt, "C2B", 12), z(Xt, "C2A", 13), z(Xt, "U2", 14), z(Xt, "V2", 15), z(Xt, "X3", 16), z(Xt, "Y3", 17), z(Xt, "C3R", 18), z(Xt, "C3G", 19), z(Xt, "C3B", 20), z(Xt, "C3A", 21), z(Xt, "U3", 22), z(Xt, "V3", 23), z(Xt, "X4", 24), z(Xt, "Y4", 25), z(Xt, "C4R", 26), z(Xt, "C4G", 27), z(Xt, "C4B", 28), z(Xt, "C4A", 29), z(Xt, "U4", 30), z(Xt, "V4", 31);
 let Vt = Xt;
-class Gn {
+class Bn {
     constructor(T) {
         z(this, "atlas");
         this.atlas = T
@@ -58690,7 +58693,7 @@ class Gn {
         return I
     }
     newMeshAttachment(T, E, M, A) {
-        let I = new Ue(E, M);
+        let I = new Ve(E, M);
         if (A != null) this.loadSequence(E, M, A);
         else {
             let c = this.atlas.findRegion(M);
@@ -58703,7 +58706,7 @@ class Gn {
         return new Fs(E)
     }
     newPathAttachment(T, E) {
-        return new li(E)
+        return new ui(E)
     }
     newPointAttachment(T, E) {
         return new xn(E)
@@ -58712,7 +58715,7 @@ class Gn {
         return new Ni(E)
     }
 }
-class xa {
+class ga {
     constructor(T, E, M) {
         z(this, "index", 0);
         z(this, "name");
@@ -58725,7 +58728,7 @@ class xa {
         z(this, "scaleY", 1);
         z(this, "shearX", 0);
         z(this, "shearY", 0);
-        z(this, "inherit", Jt.Normal);
+        z(this, "inherit", Qt.Normal);
         z(this, "skinRequired", !1);
         z(this, "color", new Lt);
         z(this, "icon");
@@ -58735,11 +58738,11 @@ class xa {
         this.index = T, this.name = E, this.parent = M
     }
 }
-var Jt;
+var Qt;
 (function(V) {
     V[V.Normal = 0] = "Normal", V[V.OnlyTranslation = 1] = "OnlyTranslation", V[V.NoRotationOrReflection = 2] = "NoRotationOrReflection", V[V.NoScale = 3] = "NoScale", V[V.NoScaleOrReflection = 4] = "NoScaleOrReflection"
-})(Jt || (Jt = {}));
-class bn {
+})(Qt || (Qt = {}));
+class Gn {
     constructor(T, E, M) {
         z(this, "data");
         z(this, "skeleton");
@@ -58765,7 +58768,7 @@ class bn {
         z(this, "d", 0);
         z(this, "worldY", 0);
         z(this, "worldX", 0);
-        z(this, "inherit", Jt.Normal);
+        z(this, "inherit", Qt.Normal);
         z(this, "sorted", !1);
         z(this, "active", !1);
         if (!T) throw new Error("data cannot be null.");
@@ -58798,7 +58801,7 @@ class bn {
             a = t.c,
             r = t.d;
         switch (this.worldX = o * T + v * E + t.worldX, this.worldY = a * T + r * E + t.worldY, this.inherit) {
-            case Jt.Normal: {
+            case Qt.Normal: {
                 const i = (M + c) * ht.degRad,
                     e = (M + 90 + g) * ht.degRad,
                     s = Math.cos(i) * A,
@@ -58808,13 +58811,13 @@ class bn {
                 this.a = o * s + v * n, this.b = o * h + v * l, this.c = a * s + r * n, this.d = a * h + r * l;
                 return
             }
-            case Jt.OnlyTranslation: {
+            case Qt.OnlyTranslation: {
                 const i = (M + c) * ht.degRad,
                     e = (M + 90 + g) * ht.degRad;
                 this.a = Math.cos(i) * A, this.b = Math.cos(e) * I, this.c = Math.sin(i) * A, this.d = Math.sin(e) * I;
                 break
             }
-            case Jt.NoRotationOrReflection: {
+            case Qt.NoRotationOrReflection: {
                 let i = 1 / this.skeleton.scaleX,
                     e = 1 / this.skeleton.scaleY;
                 o *= i, a *= e;
@@ -58830,15 +58833,15 @@ class bn {
                 this.a = o * u - v * d, this.b = o * f - v * p, this.c = a * u + r * d, this.d = a * f + r * p;
                 break
             }
-            case Jt.NoScale:
-            case Jt.NoScaleOrReflection: {
+            case Qt.NoScale:
+            case Qt.NoScaleOrReflection: {
                 M *= ht.degRad;
                 const i = Math.cos(M),
                     e = Math.sin(M);
                 let s = (o * i + v * e) / this.skeleton.scaleX,
                     h = (a * i + r * e) / this.skeleton.scaleY,
                     n = Math.sqrt(s * s + h * h);
-                n > 1e-5 && (n = 1 / n), s *= n, h *= n, n = Math.sqrt(s * s + h * h), this.inherit == Jt.NoScale && o * r - v * a < 0 != (this.skeleton.scaleX < 0 != this.skeleton.scaleY < 0) && (n = -n), M = Math.PI / 2 + Math.atan2(h, s);
+                n > 1e-5 && (n = 1 / n), s *= n, h *= n, n = Math.sqrt(s * s + h * h), this.inherit == Qt.NoScale && o * r - v * a < 0 != (this.skeleton.scaleX < 0 != this.skeleton.scaleY < 0) && (n = -n), M = Math.PI / 2 + Math.atan2(h, s);
                 const l = Math.cos(M) * n,
                     u = Math.sin(M) * n;
                 c *= ht.degRad, g = (90 + g) * ht.degRad;
@@ -58875,21 +58878,21 @@ class bn {
             r = this.worldY - T.worldY;
         this.ax = a * g - r * t, this.ay = r * v - a * o;
         let i, e, s, h;
-        if (this.inherit == Jt.OnlyTranslation) i = this.a, e = this.b, s = this.c, h = this.d;
+        if (this.inherit == Qt.OnlyTranslation) i = this.a, e = this.b, s = this.c, h = this.d;
         else {
             switch (this.inherit) {
-                case Jt.NoRotationOrReflection: {
+                case Qt.NoRotationOrReflection: {
                     let d = Math.abs(E * I - M * A) / (E * E + A * A);
                     M = -A * this.skeleton.scaleX * d / this.skeleton.scaleY, I = E * this.skeleton.scaleY * d / this.skeleton.scaleX, c = 1 / (E * I - M * A), g = I * c, t = M * c;
                     break
                 }
-                case Jt.NoScale:
-                case Jt.NoScaleOrReflection:
+                case Qt.NoScale:
+                case Qt.NoScaleOrReflection:
                     let n = ht.cosDeg(this.rotation),
                         l = ht.sinDeg(this.rotation);
                     E = (E * n + M * l) / this.skeleton.scaleX, A = (A * n + I * l) / this.skeleton.scaleY;
                     let u = Math.sqrt(E * E + A * A);
-                    u > 1e-5 && (u = 1 / u), E *= u, A *= u, u = Math.sqrt(E * E + A * A), this.inherit == Jt.NoScale && c < 0 != (this.skeleton.scaleX < 0 != this.skeleton.scaleY < 0) && (u = -u);
+                    u > 1e-5 && (u = 1 / u), E *= u, A *= u, u = Math.sqrt(E * E + A * A), this.inherit == Qt.NoScale && c < 0 != (this.skeleton.scaleX < 0 != this.skeleton.scaleY < 0) && (u = -u);
                     let f = ht.PI / 2 + Math.atan2(A, E);
                     M = Math.cos(f) * u, I = Math.sin(f) * u, c = 1 / (E * I - M * A), g = I * c, t = M * c, o = A * c, v = E * c
             }
@@ -58959,7 +58962,7 @@ class ws {
         this.name = T, this.order = E, this.skinRequired = M
     }
 }
-class ya {
+class xa {
     constructor(T, E) {
         z(this, "data");
         z(this, "intValue", 0);
@@ -58972,7 +58975,7 @@ class ya {
         this.time = T, this.data = E
     }
 }
-class Ta {
+class ya {
     constructor(T) {
         z(this, "name");
         z(this, "intValue", 0);
@@ -59038,10 +59041,10 @@ class Kh {
             e = 0,
             s = 0;
         switch (T.inherit) {
-            case Jt.OnlyTranslation:
+            case Qt.OnlyTranslation:
                 e = (E - T.worldX) * ht.signum(T.skeleton.scaleX), s = (M - T.worldY) * ht.signum(T.skeleton.scaleY);
                 break;
-            case Jt.NoRotationOrReflection:
+            case Qt.NoRotationOrReflection:
                 let l = Math.abs(o * r - v * a) / Math.max(1e-4, o * o + a * a),
                     u = o / T.skeleton.scaleX,
                     f = a / T.skeleton.scaleY;
@@ -59057,8 +59060,8 @@ class Kh {
             n = T.ascaleY;
         if (A || I) {
             switch (T.inherit) {
-                case Jt.NoScale:
-                case Jt.NoScaleOrReflection:
+                case Qt.NoScale:
+                case Qt.NoScaleOrReflection:
                     e = E - T.worldX, s = M - T.worldY
             }
             const l = T.data.length * h;
@@ -59073,7 +59076,7 @@ class Kh {
         T.updateWorldTransformWith(T.ax, T.ay, T.arotation + i * g, h, n, T.ashearX, T.ashearY)
     }
     apply2(T, E, M, A, I, c, g, t, o) {
-        if (T.inherit != Jt.Normal || E.inherit != Jt.Normal) return;
+        if (T.inherit != Qt.Normal || E.inherit != Qt.Normal) return;
         let v = T.ax,
             a = T.ay,
             r = T.ascaleX,
@@ -59162,7 +59165,7 @@ class Kh {
         H = (H - U) * ht.radDeg + n - b, H > 180 ? H -= 360 : H < -180 && (H += 360), T.updateWorldTransformWith(v, a, b + H * o, e, s, 0, 0), b = E.arotation, W = ((W + U) * ht.radDeg - E.ashearX) * u + l - b, W > 180 ? W -= 360 : W < -180 && (W += 360), E.updateWorldTransformWith(f, d, b + W * o, E.ascaleX, E.ascaleY, E.ashearX, E.ashearY)
     }
 }
-class Sa extends ws {
+class Ta extends ws {
     constructor(E) {
         super(E, 0, !1);
         z(this, "bones", new Array);
@@ -59182,14 +59185,14 @@ class Sa extends ws {
         throw new Error("BoneData not set.")
     }
 }
-class Ca extends ws {
+class Sa extends ws {
     constructor(E) {
         super(E, 0, !1);
         z(this, "bones", new Array);
         z(this, "_target", null);
         z(this, "positionMode", Oe.Fixed);
         z(this, "spacingMode", _t.Fixed);
-        z(this, "rotateMode", oi.Chain);
+        z(this, "rotateMode", hi.Chain);
         z(this, "offsetRotation", 0);
         z(this, "position", 0);
         z(this, "spacing", 0);
@@ -59213,10 +59216,10 @@ var _t;
 (function(V) {
     V[V.Length = 0] = "Length", V[V.Fixed = 1] = "Fixed", V[V.Percent = 2] = "Percent", V[V.Proportional = 3] = "Proportional"
 })(_t || (_t = {}));
-var oi;
+var hi;
 (function(V) {
     V[V.Tangent = 0] = "Tangent", V[V.Chain = 1] = "Chain", V[V.ChainScale = 2] = "ChainScale"
-})(oi || (oi = {}));
+})(hi || (hi = {}));
 const xe = class xe {
     constructor(T, E) {
         z(this, "data");
@@ -59255,14 +59258,14 @@ const xe = class xe {
     }
     update(T) {
         let E = this.target.getAttachment();
-        if (!(E instanceof li)) return;
+        if (!(E instanceof ui)) return;
         let M = this.mixRotate,
             A = this.mixX,
             I = this.mixY;
         if (M == 0 && A == 0 && I == 0) return;
         let c = this.data,
-            g = c.rotateMode == oi.Tangent,
-            t = c.rotateMode == oi.ChainScale,
+            g = c.rotateMode == hi.Tangent,
+            t = c.rotateMode == hi.ChainScale,
             o = this.bones,
             v = o.length,
             a = g ? v : v + 1,
@@ -59318,7 +59321,7 @@ const xe = class xe {
             n = s[1],
             l = c.offsetRotation,
             u = !1;
-        if (l == 0) u = c.rotateMode == oi.Chain;
+        if (l == 0) u = c.rotateMode == hi.Chain;
         else {
             u = !1;
             let f = this.target.bone;
@@ -59643,7 +59646,7 @@ class Zh {
                             const S = this.massInverse * s,
                                 C = this.strength,
                                 P = this.wind,
-                                R = Ke.yDown ? -this.gravity : this.gravity,
+                                R = Je.yDown ? -this.gravity : this.gravity,
                                 L = t / h;
                             for (;;)
                                 if (i -= s, c && (this.scaleVelocity += (P * d - R * p - this.scaleOffset * C) * S, this.scaleOffset += this.scaleVelocity * s, this.scaleVelocity *= n), I) {
@@ -59925,10 +59928,10 @@ const Pi = class Pi {
         for (let E = 0; E < T.bones.length; E++) {
             let M = T.bones[E],
                 A;
-            if (!M.parent) A = new bn(M, this, null);
+            if (!M.parent) A = new Gn(M, this, null);
             else {
                 let I = this.bones[M.parent.index];
-                A = new bn(M, this, I), I.children.push(A)
+                A = new Gn(M, this, I), I.children.push(A)
             }
             this.bones.push(A)
         }
@@ -60043,7 +60046,7 @@ const Pi = class Pi {
         this.skin && this.sortPathConstraintAttachment(this.skin, M, A), this.data.defaultSkin && this.data.defaultSkin != this.skin && this.sortPathConstraintAttachment(this.data.defaultSkin, M, A);
         for (let t = 0, o = this.data.skins.length; t < o; t++) this.sortPathConstraintAttachment(this.data.skins[t], M, A);
         let I = E.getAttachment();
-        I instanceof li && this.sortPathConstraintAttachmentWith(I, A);
+        I instanceof ui && this.sortPathConstraintAttachmentWith(I, A);
         let c = T.bones,
             g = c.length;
         for (let t = 0; t < g; t++) this.sortBone(c[t]);
@@ -60072,7 +60075,7 @@ const Pi = class Pi {
             for (let I in A) this.sortPathConstraintAttachmentWith(A[I], M)
     }
     sortPathConstraintAttachmentWith(T, E) {
-        if (!(T instanceof li)) return;
+        if (!(T instanceof ui)) return;
         let M = T.bones;
         if (!M) this.sortBone(E);
         else {
@@ -60262,7 +60265,7 @@ const Pi = class Pi {
                 s = null,
                 h = r.getAttachment();
             if (h instanceof Vt) i = 8, e = ot.setArraySize(M, i, 0), h.computeWorldVertices(r, e, 0, 2), s = Pi.quadTriangles;
-            else if (h instanceof Ue) {
+            else if (h instanceof Ve) {
                 let n = h;
                 i = n.worldVerticesLength, e = ot.setArraySize(M, i, 0), n.computeWorldVertices(r, 0, i, e, 0, 2), s = n.triangles
             } else if (h instanceof Ni && A != null) {
@@ -60294,12 +60297,12 @@ const Pi = class Pi {
     }
 };
 z(Pi, "quadTriangles", [0, 1, 2, 2, 3, 0]), z(Pi, "yDown", !1);
-let Ke = Pi;
+let Je = Pi;
 var Te;
 (function(V) {
     V[V.none = 0] = "none", V[V.reset = 1] = "reset", V[V.update = 2] = "update", V[V.pose = 3] = "pose"
 })(Te || (Te = {}));
-class Ea extends ws {
+class Ca extends ws {
     constructor(E) {
         super(E, 0, !1);
         z(this, "_bone", null);
@@ -60333,7 +60336,7 @@ class Ea extends ws {
         throw new Error("BoneData not set.")
     }
 }
-class Aa {
+class Ea {
     constructor() {
         z(this, "name", null);
         z(this, "bones", new Array);
@@ -60439,7 +60442,7 @@ class Aa {
         return null
     }
 }
-class Nn {
+class bn {
     constructor(T = 0, E, M) {
         z(this, "slotIndex");
         z(this, "name");
@@ -60509,7 +60512,7 @@ class ss {
         let E = T.getAttachments();
         for (let A = 0; A < E.length; A++) {
             var M = E[A];
-            M.attachment && (M.attachment instanceof Ue ? (M.attachment = M.attachment.newLinkedMesh(), this.setAttachment(M.slotIndex, M.name, M.attachment)) : (M.attachment = M.attachment.copy(), this.setAttachment(M.slotIndex, M.name, M.attachment)))
+            M.attachment && (M.attachment instanceof Ve ? (M.attachment = M.attachment.newLinkedMesh(), this.setAttachment(M.slotIndex, M.name, M.attachment)) : (M.attachment = M.attachment.copy(), this.setAttachment(M.slotIndex, M.name, M.attachment)))
         }
     }
     getAttachment(T, E) {
@@ -60527,7 +60530,7 @@ class ss {
             if (M)
                 for (let A in M) {
                     let I = M[A];
-                    I && T.push(new Nn(E, A, I))
+                    I && T.push(new bn(E, A, I))
                 }
         }
         return T
@@ -60537,7 +60540,7 @@ class ss {
         if (M)
             for (let A in M) {
                 let I = M[A];
-                I && E.push(new Nn(T, A, I))
+                I && E.push(new bn(T, A, I))
             }
     }
     clear() {
@@ -60563,7 +60566,7 @@ class ss {
         }
     }
 }
-class Pa {
+class Aa {
     constructor(T, E, M) {
         z(this, "index", 0);
         z(this, "name");
@@ -60583,7 +60586,7 @@ var ns;
 (function(V) {
     V[V.Normal = 0] = "Normal", V[V.Additive = 1] = "Additive", V[V.Multiply = 2] = "Multiply", V[V.Screen = 3] = "Screen"
 })(ns || (ns = {}));
-class Ma extends ws {
+class Pa extends ws {
     constructor(E) {
         super(E, 0, !1);
         z(this, "bones", new Array);
@@ -60620,7 +60623,7 @@ class $h {
     }
     readSkeletonData(T) {
         let E = this.scale,
-            M = new Aa;
+            M = new Ea;
         M.name = "";
         let A = new jh(T),
             I = A.readInt32(),
@@ -60640,7 +60643,7 @@ class $h {
             let a = A.readString();
             if (!a) throw new Error("Bone name must not be null.");
             let r = v == 0 ? null : M.bones[A.readInt(!0)],
-                i = new xa(v, a, r);
+                i = new ga(v, a, r);
             i.rotation = A.readFloat(), i.x = A.readFloat() * E, i.y = A.readFloat() * E, i.scaleX = A.readFloat(), i.scaleY = A.readFloat(), i.shearX = A.readFloat(), i.shearY = A.readFloat(), i.length = A.readFloat() * E, i.inherit = A.readByte(), i.skinRequired = A.readBoolean(), g && (Lt.rgba8888ToColor(i.color, A.readInt32()), i.icon = A.readString() ?? void 0, i.visible = A.readBoolean()), M.bones.push(i)
         }
         t = A.readInt(!0);
@@ -60648,7 +60651,7 @@ class $h {
             let a = A.readString();
             if (!a) throw new Error("Slot name must not be null.");
             let r = M.bones[A.readInt(!0)],
-                i = new Pa(v, a, r);
+                i = new Aa(v, a, r);
             Lt.rgba8888ToColor(i.color, A.readInt32());
             let e = A.readInt32();
             e != -1 && Lt.rgb888ToColor(i.darkColor = new Lt, e), i.attachmentName = A.readStringRef(), i.blendMode = A.readInt(!0), g && (i.visible = A.readBoolean()), M.slots.push(i)
@@ -60657,7 +60660,7 @@ class $h {
         for (let v = 0, a; v < t; v++) {
             let r = A.readString();
             if (!r) throw new Error("IK constraint data name must not be null.");
-            let i = new Sa(r);
+            let i = new Ta(r);
             i.order = A.readInt(!0), a = A.readInt(!0);
             for (let s = 0; s < a; s++) i.bones.push(M.bones[A.readInt(!0)]);
             i.target = M.bones[A.readInt(!0)];
@@ -60668,7 +60671,7 @@ class $h {
         for (let v = 0, a; v < t; v++) {
             let r = A.readString();
             if (!r) throw new Error("Transform constraint data name must not be null.");
-            let i = new Ma(r);
+            let i = new Pa(r);
             i.order = A.readInt(!0), a = A.readInt(!0);
             for (let s = 0; s < a; s++) i.bones.push(M.bones[A.readInt(!0)]);
             i.target = M.bones[A.readInt(!0)];
@@ -60679,7 +60682,7 @@ class $h {
         for (let v = 0, a; v < t; v++) {
             let r = A.readString();
             if (!r) throw new Error("Path constraint data name must not be null.");
-            let i = new Ca(r);
+            let i = new Sa(r);
             i.order = A.readInt(!0), i.skinRequired = A.readBoolean(), a = A.readInt(!0);
             for (let s = 0; s < a; s++) i.bones.push(M.bones[A.readInt(!0)]);
             i.target = M.slots[A.readInt(!0)];
@@ -60690,7 +60693,7 @@ class $h {
         for (let v = 0, a; v < t; v++) {
             const r = A.readString();
             if (!r) throw new Error("Physics constraint data name must not be null.");
-            const i = new Ea(r);
+            const i = new Ca(r);
             i.order = A.readInt(!0), i.bone = M.bones[A.readInt(!0)];
             let e = A.readByte();
             i.skinRequired = (e & 1) != 0, (e & 2) != 0 && (i.x = A.readFloat()), (e & 4) != 0 && (i.y = A.readFloat()), (e & 8) != 0 && (i.rotate = A.readFloat()), (e & 16) != 0 && (i.scaleX = A.readFloat()), (e & 32) != 0 && (i.shearX = A.readFloat()), i.limit = ((e & 64) != 0 ? A.readFloat() : 5e3) * E, i.step = 1 / A.readUnsignedByte(), i.inertia = A.readFloat(), i.strength = A.readFloat(), i.damping = A.readFloat(), i.massInverse = (e & 128) != 0 ? A.readFloat() : 1, i.wind = A.readFloat(), i.gravity = A.readFloat(), e = A.readByte(), (e & 1) != 0 && (i.inertiaGlobal = !0), (e & 2) != 0 && (i.strengthGlobal = !0), (e & 4) != 0 && (i.dampingGlobal = !0), (e & 8) != 0 && (i.massGlobal = !0), (e & 16) != 0 && (i.windGlobal = !0), (e & 32) != 0 && (i.gravityGlobal = !0), (e & 64) != 0 && (i.mixGlobal = !0), i.mix = (e & 128) != 0 ? A.readFloat() : 1, M.physicsConstraints.push(i)
@@ -60718,7 +60721,7 @@ class $h {
         for (let v = 0; v < t; v++) {
             let a = A.readString();
             if (!a) throw new Error("Event data name must not be null");
-            let r = new Ta(a);
+            let r = new ya(a);
             r.intValue = A.readInt(!1), r.floatValue = A.readFloat(), r.stringValue = A.readString(), r.audioPath = A.readString(), r.audioPath && (r.volume = A.readFloat(), r.balance = A.readFloat()), M.events.push(r)
         }
         t = A.readInt(!0);
@@ -60763,7 +60766,7 @@ class $h {
         const o = (t & 8) != 0 ? T.readStringRef() : I;
         if (!o) throw new Error("Attachment name must not be null");
         switch (t & 7) {
-            case Ne.Region: {
+            case Xe.Region: {
                 let v = (t & 16) != 0 ? T.readStringRef() : null;
                 const a = (t & 32) != 0 ? T.readInt32() : 4294967295,
                     r = (t & 64) != 0 ? this.readSequence(T) : null;
@@ -60778,13 +60781,13 @@ class $h {
                 let f = this.attachmentLoader.newRegionAttachment(M, o, v, r);
                 return f ? (f.path = v, f.x = e * g, f.y = s * g, f.scaleX = h, f.scaleY = n, f.rotation = i, f.width = l * g, f.height = u * g, Lt.rgba8888ToColor(f.color, a), f.sequence = r, r == null && f.updateRegion(), f) : null
             }
-            case Ne.BoundingBox: {
+            case Xe.BoundingBox: {
                 let v = this.readVertices(T, (t & 16) != 0),
                     a = c ? T.readInt32() : 0,
                     r = this.attachmentLoader.newBoundingBoxAttachment(M, o);
                 return r ? (r.worldVerticesLength = v.length, r.vertices = v.vertices, r.bones = v.bones, c && Lt.rgba8888ToColor(r.color, a), r) : null
             }
-            case Ne.Mesh: {
+            case Xe.Mesh: {
                 let v = (t & 16) != 0 ? T.readStringRef() : o;
                 const a = (t & 32) != 0 ? T.readInt32() : 4294967295,
                     r = (t & 64) != 0 ? this.readSequence(T) : null,
@@ -60799,7 +60802,7 @@ class $h {
                 let f = this.attachmentLoader.newMeshAttachment(M, o, v, r);
                 return f ? (f.path = v, Lt.rgba8888ToColor(f.color, a), f.bones = e.bones, f.vertices = e.vertices, f.worldVerticesLength = e.length, f.triangles = h, f.regionUVs = s, r == null && f.updateRegion(), f.hullLength = i << 1, f.sequence = r, c && (f.edges = n, f.width = l * g, f.height = u * g), f) : null
             }
-            case Ne.LinkedMesh: {
+            case Xe.LinkedMesh: {
                 const v = (t & 16) != 0 ? T.readStringRef() : o;
                 if (v == null) throw new Error("Path of linked mesh must not be null");
                 const a = (t & 32) != 0 ? T.readInt32() : 4294967295,
@@ -60813,7 +60816,7 @@ class $h {
                 let l = this.attachmentLoader.newMeshAttachment(M, o, v, r);
                 return l ? (l.path = v, Lt.rgba8888ToColor(l.color, a), l.sequence = r, c && (l.width = h * g, l.height = n * g), this.linkedMeshes.push(new kh(l, e, A, s, i)), l) : null
             }
-            case Ne.Path: {
+            case Xe.Path: {
                 const v = (t & 16) != 0,
                     a = (t & 32) != 0,
                     r = this.readVertices(T, (t & 64) != 0),
@@ -60823,7 +60826,7 @@ class $h {
                     s = this.attachmentLoader.newPathAttachment(M, o);
                 return s ? (s.closed = v, s.constantSpeed = a, s.worldVerticesLength = r.length, s.vertices = r.vertices, s.bones = r.bones, s.lengths = i, c && Lt.rgba8888ToColor(s.color, e), s) : null
             }
-            case Ne.Point: {
+            case Xe.Point: {
                 const v = T.readFloat(),
                     a = T.readFloat(),
                     r = T.readFloat(),
@@ -60831,7 +60834,7 @@ class $h {
                     e = this.attachmentLoader.newPointAttachment(M, o);
                 return e ? (e.x = a * g, e.y = r * g, e.rotation = v, c && Lt.rgba8888ToColor(e.color, i), e) : null
             }
-            case Ne.Clipping: {
+            case Xe.Clipping: {
                 const v = T.readInt(!0),
                     a = this.readVertices(T, (t & 16) != 0);
                 let r = c ? T.readInt32() : 0,
@@ -60891,7 +60894,7 @@ class $h {
                     }
                     case fl: {
                         let n = T.readInt(!0),
-                            l = new qr(s, n, a),
+                            l = new kr(s, n, a),
                             u = T.readFloat(),
                             f = T.readUnsignedByte() / 255,
                             d = T.readUnsignedByte() / 255,
@@ -60917,7 +60920,7 @@ class $h {
                     }
                     case dl: {
                         let n = T.readInt(!0),
-                            l = new _r(s, n, a),
+                            l = new qr(s, n, a),
                             u = T.readFloat(),
                             f = T.readUnsignedByte() / 255,
                             d = T.readUnsignedByte() / 255,
@@ -60941,7 +60944,7 @@ class $h {
                     }
                     case vl: {
                         let n = T.readInt(!0),
-                            l = new ea(s, n, a),
+                            l = new ta(s, n, a),
                             u = T.readFloat(),
                             f = T.readUnsignedByte() / 255,
                             d = T.readUnsignedByte() / 255,
@@ -60973,7 +60976,7 @@ class $h {
                     }
                     case cl: {
                         let n = T.readInt(!0),
-                            l = new ia(s, n, a),
+                            l = new ea(s, n, a),
                             u = T.readFloat(),
                             f = T.readUnsignedByte() / 255,
                             d = T.readUnsignedByte() / 255,
@@ -61002,7 +61005,7 @@ class $h {
                         break
                     }
                     case pl: {
-                        let n = new ta(s, T.readInt(!0), a),
+                        let n = new _r(s, T.readInt(!0), a),
                             l = T.readFloat(),
                             u = T.readUnsignedByte() / 255;
                         for (let f = 0, d = 0; n.setFrame(f, l, u), f != h; f++) {
@@ -61028,7 +61031,7 @@ class $h {
                 let e = T.readByte(),
                     s = T.readInt(!0);
                 if (e == ll) {
-                    let n = new kr(s, a);
+                    let n = new jr(s, a);
                     for (let l = 0; l < s; l++) n.setFrame(l, T.readFloat(), T.readByte());
                     A.push(n);
                     continue
@@ -61039,31 +61042,31 @@ class $h {
                         A.push(re(T, new _i(s, h, a), 1));
                         break;
                     case tl:
-                        A.push(Bs(T, new zr(s, h, a), I));
+                        A.push(Bs(T, new Vr(s, h, a), I));
                         break;
                     case el:
-                        A.push(re(T, new Wr(s, h, a), I));
+                        A.push(re(T, new zr(s, h, a), I));
                         break;
                     case il:
-                        A.push(re(T, new Hr(s, h, a), I));
+                        A.push(re(T, new Wr(s, h, a), I));
                         break;
                     case sl:
-                        A.push(Bs(T, new Kr(s, h, a), 1));
+                        A.push(Bs(T, new Hr(s, h, a), 1));
                         break;
                     case nl:
-                        A.push(re(T, new Zr(s, h, a), 1));
+                        A.push(re(T, new Kr(s, h, a), 1));
                         break;
                     case rl:
-                        A.push(re(T, new Jr(s, h, a), 1));
+                        A.push(re(T, new Zr(s, h, a), 1));
                         break;
                     case al:
-                        A.push(Bs(T, new Qr(s, h, a), 1));
+                        A.push(Bs(T, new Jr(s, h, a), 1));
                         break;
                     case ol:
-                        A.push(re(T, new $r(s, h, a), 1));
+                        A.push(re(T, new Qr(s, h, a), 1));
                         break;
                     case hl:
-                        A.push(re(T, new jr(s, h, a), 1))
+                        A.push(re(T, new $r(s, h, a), 1))
                 }
             }
         }
@@ -61071,7 +61074,7 @@ class $h {
             let a = T.readInt(!0),
                 r = T.readInt(!0),
                 i = r - 1,
-                e = new na(r, T.readInt(!0), a),
+                e = new sa(r, T.readInt(!0), a),
                 s = T.readByte(),
                 h = T.readFloat(),
                 n = (s & 1) != 0 ? (s & 2) != 0 ? T.readFloat() : 1 : 0,
@@ -61089,7 +61092,7 @@ class $h {
             let a = T.readInt(!0),
                 r = T.readInt(!0),
                 i = r - 1,
-                e = new ra(r, T.readInt(!0), a),
+                e = new na(r, T.readInt(!0), a),
                 s = T.readFloat(),
                 h = T.readFloat(),
                 n = T.readFloat(),
@@ -61125,13 +61128,13 @@ class $h {
                     n = T.readInt(!0);
                 switch (s) {
                     case xl:
-                        A.push(re(T, new aa(h, n, a), r.positionMode == Oe.Fixed ? I : 1));
+                        A.push(re(T, new ra(h, n, a), r.positionMode == Oe.Fixed ? I : 1));
                         break;
                     case yl:
-                        A.push(re(T, new oa(h, n, a), r.spacingMode == _t.Length || r.spacingMode == _t.Fixed ? I : 1));
+                        A.push(re(T, new aa(h, n, a), r.spacingMode == _t.Length || r.spacingMode == _t.Fixed ? I : 1));
                         break;
                     case Tl:
-                        let l = new ha(h, n, a),
+                        let l = new oa(h, n, a),
                             u = T.readFloat(),
                             f = T.readFloat(),
                             d = T.readFloat(),
@@ -61168,25 +61171,25 @@ class $h {
                 const h = T.readInt(!0);
                 switch (e) {
                     case Sl:
-                        A.push(re(T, new la(s, h, a), 1));
+                        A.push(re(T, new ha(s, h, a), 1));
                         break;
                     case Cl:
-                        A.push(re(T, new ua(s, h, a), 1));
+                        A.push(re(T, new la(s, h, a), 1));
                         break;
                     case El:
-                        A.push(re(T, new fa(s, h, a), 1));
+                        A.push(re(T, new ua(s, h, a), 1));
                         break;
                     case Al:
-                        A.push(re(T, new da(s, h, a), 1));
+                        A.push(re(T, new fa(s, h, a), 1));
                         break;
                     case Pl:
-                        A.push(re(T, new va(s, h, a), 1));
+                        A.push(re(T, new da(s, h, a), 1));
                         break;
                     case Ml:
-                        A.push(re(T, new ca(s, h, a), 1));
+                        A.push(re(T, new va(s, h, a), 1));
                         break;
                     case Rl:
-                        A.push(re(T, new pa(s, h, a), 1))
+                        A.push(re(T, new ca(s, h, a), 1))
                 }
             }
         }
@@ -61208,7 +61211,7 @@ class $h {
                                 y = p.vertices,
                                 x = m ? y.length / 3 * 2 : y.length,
                                 S = T.readInt(!0),
-                                C = new sa(f, S, e, p),
+                                C = new ia(f, S, e, p),
                                 P = T.readFloat();
                             for (let R = 0, L = 0;; R++) {
                                 let F, w = T.readInt(!0);
@@ -61242,7 +61245,7 @@ class $h {
                             for (let m = 0; m < f; m++) {
                                 let y = T.readFloat(),
                                     x = T.readInt32();
-                                p.setFrame(m, y, Vr[x & 15], x >> 4, T.readFloat())
+                                p.setFrame(m, y, Ur[x & 15], x >> 4, T.readFloat())
                             }
                             A.push(p);
                             break
@@ -61253,7 +61256,7 @@ class $h {
         }
         let c = T.readInt(!0);
         if (c > 0) {
-            let o = new ai(c),
+            let o = new oi(c),
                 v = M.slots.length;
             for (let a = 0; a < c; a++) {
                 let r = T.readFloat(),
@@ -61280,7 +61283,7 @@ class $h {
             for (let v = 0; v < g; v++) {
                 let a = T.readFloat(),
                     r = M.events[T.readInt(!0)],
-                    i = new ya(a, r);
+                    i = new xa(a, r);
                 i.intValue = T.readInt(!1), i.floatValue = T.readFloat(), i.stringValue = T.readString(), i.stringValue == null && (i.stringValue = r.stringValue), i.data.audioPath && (i.volume = T.readFloat(), i.balance = T.readFloat()), o.setFrame(v, i)
             }
             A.push(o)
@@ -61372,10 +61375,10 @@ class qh {
         this.bones = T, this.vertices = E, this.length = M
     }
 }
-var Ne;
+var Xe;
 (function(V) {
     V[V.Region = 0] = "Region", V[V.BoundingBox = 1] = "BoundingBox", V[V.Mesh = 2] = "Mesh", V[V.LinkedMesh = 3] = "LinkedMesh", V[V.Path = 4] = "Path", V[V.Point = 5] = "Point", V[V.Clipping = 6] = "Clipping"
-})(Ne || (Ne = {}));
+})(Xe || (Xe = {}));
 
 function re(V, T, E) {
     let M = V.readFloat(),
@@ -62024,7 +62027,7 @@ class Ll {
     }
     readSkeletonData(T) {
         let E = this.scale,
-            M = new Aa,
+            M = new Ea,
             A = typeof T == "string" ? JSON.parse(T) : T,
             I = A.skeleton;
         if (I && (M.hash = I.hash, M.version = I.spine, M.x = I.x, M.y = I.y, M.width = I.width, M.height = I.height, M.referenceScale = tt(I, "referenceScale", 100) * E, M.fps = I.fps, M.imagesPath = I.images ?? null, M.audioPath = I.audio ?? null), A.bones)
@@ -62033,8 +62036,8 @@ class Ll {
                     t = null,
                     o = tt(g, "parent", null);
                 o && (t = M.findBone(o));
-                let v = new xa(M.bones.length, g.name, t);
-                v.length = tt(g, "length", 0) * E, v.x = tt(g, "x", 0) * E, v.y = tt(g, "y", 0) * E, v.rotation = tt(g, "rotation", 0), v.scaleX = tt(g, "scaleX", 1), v.scaleY = tt(g, "scaleY", 1), v.shearX = tt(g, "shearX", 0), v.shearY = tt(g, "shearY", 0), v.inherit = ot.enumValue(Jt, tt(g, "inherit", "Normal")), v.skinRequired = tt(g, "skin", !1);
+                let v = new ga(M.bones.length, g.name, t);
+                v.length = tt(g, "length", 0) * E, v.x = tt(g, "x", 0) * E, v.y = tt(g, "y", 0) * E, v.rotation = tt(g, "rotation", 0), v.scaleX = tt(g, "scaleX", 1), v.scaleY = tt(g, "scaleY", 1), v.shearX = tt(g, "shearX", 0), v.shearY = tt(g, "shearY", 0), v.inherit = ot.enumValue(Qt, tt(g, "inherit", "Normal")), v.skinRequired = tt(g, "skin", !1);
                 let a = tt(g, "color", null);
                 a && v.color.setFromString(a), M.bones.push(v)
             }
@@ -62044,7 +62047,7 @@ class Ll {
                     t = g.name,
                     o = M.findBone(g.bone);
                 if (!o) throw new Error(`Couldn't find bone ${g.bone} for slot ${t}`);
-                let v = new Pa(M.slots.length, t, o),
+                let v = new Aa(M.slots.length, t, o),
                     a = tt(g, "color", null);
                 a && v.color.setFromString(a);
                 let r = tt(g, "dark", null);
@@ -62053,7 +62056,7 @@ class Ll {
         if (A.ik)
             for (let c = 0; c < A.ik.length; c++) {
                 let g = A.ik[c],
-                    t = new Sa(g.name);
+                    t = new Ta(g.name);
                 t.order = tt(g, "order", 0), t.skinRequired = tt(g, "skin", !1);
                 for (let v = 0; v < g.bones.length; v++) {
                     let a = M.findBone(g.bones[v]);
@@ -62067,7 +62070,7 @@ class Ll {
         if (A.transform)
             for (let c = 0; c < A.transform.length; c++) {
                 let g = A.transform[c],
-                    t = new Ma(g.name);
+                    t = new Pa(g.name);
                 t.order = tt(g, "order", 0), t.skinRequired = tt(g, "skin", !1);
                 for (let a = 0; a < g.bones.length; a++) {
                     let r = g.bones[a],
@@ -62083,7 +62086,7 @@ class Ll {
         if (A.path)
             for (let c = 0; c < A.path.length; c++) {
                 let g = A.path[c],
-                    t = new Ca(g.name);
+                    t = new Sa(g.name);
                 t.order = tt(g, "order", 0), t.skinRequired = tt(g, "skin", !1);
                 for (let a = 0; a < g.bones.length; a++) {
                     let r = g.bones[a],
@@ -62094,12 +62097,12 @@ class Ll {
                 let o = g.target,
                     v = M.findSlot(o);
                 if (!v) throw new Error(`Couldn't find target slot ${o} for path constraint ${g.name}.`);
-                t.target = v, t.positionMode = ot.enumValue(Oe, tt(g, "positionMode", "Percent")), t.spacingMode = ot.enumValue(_t, tt(g, "spacingMode", "Length")), t.rotateMode = ot.enumValue(oi, tt(g, "rotateMode", "Tangent")), t.offsetRotation = tt(g, "rotation", 0), t.position = tt(g, "position", 0), t.positionMode == Oe.Fixed && (t.position *= E), t.spacing = tt(g, "spacing", 0), (t.spacingMode == _t.Length || t.spacingMode == _t.Fixed) && (t.spacing *= E), t.mixRotate = tt(g, "mixRotate", 1), t.mixX = tt(g, "mixX", 1), t.mixY = tt(g, "mixY", t.mixX), M.pathConstraints.push(t)
+                t.target = v, t.positionMode = ot.enumValue(Oe, tt(g, "positionMode", "Percent")), t.spacingMode = ot.enumValue(_t, tt(g, "spacingMode", "Length")), t.rotateMode = ot.enumValue(hi, tt(g, "rotateMode", "Tangent")), t.offsetRotation = tt(g, "rotation", 0), t.position = tt(g, "position", 0), t.positionMode == Oe.Fixed && (t.position *= E), t.spacing = tt(g, "spacing", 0), (t.spacingMode == _t.Length || t.spacingMode == _t.Fixed) && (t.spacing *= E), t.mixRotate = tt(g, "mixRotate", 1), t.mixX = tt(g, "mixX", 1), t.mixY = tt(g, "mixY", t.mixX), M.pathConstraints.push(t)
             }
         if (A.physics)
             for (let c = 0; c < A.physics.length; c++) {
                 const g = A.physics[c],
-                    t = new Ea(g.name);
+                    t = new Ca(g.name);
                 t.order = tt(g, "order", 0), t.skinRequired = tt(g, "skin", !1);
                 const o = g.bone,
                     v = M.findBone(o);
@@ -62167,7 +62170,7 @@ class Ll {
         if (this.linkedMeshes.length = 0, A.events)
             for (let c in A.events) {
                 let g = A.events[c],
-                    t = new Ta(c);
+                    t = new ya(c);
                 t.intValue = tt(g, "int", 0), t.floatValue = tt(g, "float", 0), t.stringValue = tt(g, "string", ""), t.audioPath = tt(g, "audio", null), t.audioPath && (t.volume = tt(g, "volume", 1), t.balance = tt(g, "balance", 0)), M.events.push(t)
             }
         if (A.animations)
@@ -62288,7 +62291,7 @@ class Ll {
                         }
                         I.push(e)
                     } else if (a == "rgba") {
-                        let e = new qr(i, i << 2, v),
+                        let e = new kr(i, i << 2, v),
                             s = r[0],
                             h = tt(s, "time", 0),
                             n = Lt.fromString(s.color);
@@ -62306,7 +62309,7 @@ class Ll {
                         }
                         I.push(e)
                     } else if (a == "rgb") {
-                        let e = new _r(i, i * 3, v),
+                        let e = new qr(i, i * 3, v),
                             s = r[0],
                             h = tt(s, "time", 0),
                             n = Lt.fromString(s.color);
@@ -62323,9 +62326,9 @@ class Ll {
                             m && (u = Ut(m, e, u, l, 0, h, d, n.r, p.r, 1), u = Ut(m, e, u, l, 1, h, d, n.g, p.g, 1), u = Ut(m, e, u, l, 2, h, d, n.b, p.b, 1)), h = d, n = p, s = f
                         }
                         I.push(e)
-                    } else if (a == "alpha") I.push(Ee(r, new ta(i, i, v), 0, 1));
+                    } else if (a == "alpha") I.push(Ee(r, new _r(i, i, v), 0, 1));
                     else if (a == "rgba2") {
-                        let e = new ea(i, i * 7, v),
+                        let e = new ta(i, i * 7, v),
                             s = r[0],
                             h = tt(s, "time", 0),
                             n = Lt.fromString(s.light),
@@ -62345,7 +62348,7 @@ class Ll {
                         }
                         I.push(e)
                     } else if (a == "rgb2") {
-                        let e = new ia(i, i * 6, v),
+                        let e = new ea(i, i * 6, v),
                             s = r[0],
                             h = tt(s, "time", 0),
                             n = Lt.fromString(s.light),
@@ -62379,37 +62382,37 @@ class Ll {
                     if (i != 0) {
                         if (a === "rotate") I.push(Ee(r, new _i(i, i, v), 0, 1));
                         else if (a === "translate") {
-                            let e = new zr(i, i << 1, v);
+                            let e = new Vr(i, i << 1, v);
                             I.push(Gs(r, e, "x", "y", 0, A))
                         } else if (a === "translatex") {
-                            let e = new Wr(i, i, v);
+                            let e = new zr(i, i, v);
                             I.push(Ee(r, e, 0, A))
                         } else if (a === "translatey") {
-                            let e = new Hr(i, i, v);
+                            let e = new Wr(i, i, v);
                             I.push(Ee(r, e, 0, A))
                         } else if (a === "scale") {
-                            let e = new Kr(i, i << 1, v);
+                            let e = new Hr(i, i << 1, v);
                             I.push(Gs(r, e, "x", "y", 1, 1))
                         } else if (a === "scalex") {
-                            let e = new Zr(i, i, v);
+                            let e = new Kr(i, i, v);
                             I.push(Ee(r, e, 1, 1))
                         } else if (a === "scaley") {
-                            let e = new Jr(i, i, v);
+                            let e = new Zr(i, i, v);
                             I.push(Ee(r, e, 1, 1))
                         } else if (a === "shear") {
-                            let e = new Qr(i, i << 1, v);
+                            let e = new Jr(i, i << 1, v);
                             I.push(Gs(r, e, "x", "y", 0, 1))
                         } else if (a === "shearx") {
-                            let e = new $r(i, i, v);
+                            let e = new Qr(i, i, v);
                             I.push(Ee(r, e, 0, 1))
                         } else if (a === "sheary") {
-                            let e = new jr(i, i, v);
+                            let e = new $r(i, i, v);
                             I.push(Ee(r, e, 0, 1))
                         } else if (a === "inherit") {
-                            let e = new kr(i, o.index);
+                            let e = new jr(i, o.index);
                             for (let s = 0; s < r.length; s++) {
                                 let h = r[s];
-                                e.setFrame(s, tt(h, "time", 0), ot.enumValue(Jt, tt(h, "inherit", "Normal")))
+                                e.setFrame(s, tt(h, "time", 0), ot.enumValue(Qt, tt(h, "inherit", "Normal")))
                             }
                             I.push(e)
                         }
@@ -62424,7 +62427,7 @@ class Ll {
                 let v = M.findIkConstraint(g);
                 if (!v) throw new Error("IK Constraint not found: " + g);
                 let a = M.ikConstraints.indexOf(v),
-                    r = new na(t.length, t.length << 1, a),
+                    r = new sa(t.length, t.length << 1, a),
                     i = tt(o, "time", 0),
                     e = tt(o, "mix", 1),
                     s = tt(o, "softness", 0) * A;
@@ -62451,7 +62454,7 @@ class Ll {
                 let v = M.findTransformConstraint(g);
                 if (!v) throw new Error("Transform constraint not found: " + g);
                 let a = M.transformConstraints.indexOf(v),
-                    r = new ra(t.length, t.length * 6, a),
+                    r = new na(t.length, t.length * 6, a),
                     i = tt(o, "time", 0),
                     e = tt(o, "mixRotate", 1),
                     s = tt(o, "mixX", 1),
@@ -62490,13 +62493,13 @@ class Ll {
                     if (!i) continue;
                     let e = r.length;
                     if (a === "position") {
-                        let s = new aa(e, e, v);
+                        let s = new ra(e, e, v);
                         I.push(Ee(r, s, 0, o.positionMode == Oe.Fixed ? A : 1))
                     } else if (a === "spacing") {
-                        let s = new oa(e, e, v);
+                        let s = new aa(e, e, v);
                         I.push(Ee(r, s, 0, o.spacingMode == _t.Length || o.spacingMode == _t.Fixed ? A : 1))
                     } else if (a === "mix") {
-                        let s = new ha(e, e * 3, v),
+                        let s = new oa(e, e * 3, v),
                             h = tt(i, "time", 0),
                             n = tt(i, "mixRotate", 1),
                             l = tt(i, "mixX", 1),
@@ -62540,13 +62543,13 @@ class Ll {
                         continue
                     }
                     let e;
-                    if (v == "inertia") e = new la(i, i, o);
-                    else if (v == "strength") e = new ua(i, i, o);
-                    else if (v == "damping") e = new fa(i, i, o);
-                    else if (v == "mass") e = new da(i, i, o);
-                    else if (v == "wind") e = new va(i, i, o);
-                    else if (v == "gravity") e = new ca(i, i, o);
-                    else if (v == "mix") e = new pa(i, i, o);
+                    if (v == "inertia") e = new ha(i, i, o);
+                    else if (v == "strength") e = new la(i, i, o);
+                    else if (v == "damping") e = new ua(i, i, o);
+                    else if (v == "mass") e = new fa(i, i, o);
+                    else if (v == "wind") e = new da(i, i, o);
+                    else if (v == "gravity") e = new va(i, i, o);
+                    else if (v == "mix") e = new ca(i, i, o);
                     else continue;
                     I.push(Ee(a, e, 0, 1))
                 }
@@ -62572,7 +62575,7 @@ class Ll {
                                     let f = h.bones,
                                         d = h.vertices,
                                         p = f ? d.length / 3 * 2 : d.length,
-                                        m = new sa(l.length, l.length, i, h),
+                                        m = new ia(l.length, l.length, i, h),
                                         y = tt(u, "time", 0);
                                     for (let x = 0, S = 0;; x++) {
                                         let C, P = tt(u, "vertices", null);
@@ -62614,7 +62617,7 @@ class Ll {
                 }
             }
         if (T.drawOrder) {
-            let g = new ai(T.drawOrder.length),
+            let g = new oi(T.drawOrder.length),
                 t = M.slots.length,
                 o = 0;
             for (let v = 0; v < T.drawOrder.length; v++, o++) {
@@ -62648,7 +62651,7 @@ class Ll {
                 let v = T.events[o],
                     a = M.findEvent(v.name);
                 if (!a) throw new Error("Event not found: " + v.name);
-                let r = new ya(ot.toSinglePrecision(tt(v, "time", 0)), a);
+                let r = new xa(ot.toSinglePrecision(tt(v, "time", 0)), a);
                 r.intValue = tt(v, "int", a.intValue), r.floatValue = tt(v, "float", a.floatValue), r.stringValue = tt(v, "string", a.stringValue), r.data.audioPath && (r.volume = tt(v, "volume", 1), r.balance = tt(v, "balance", 0)), g.setFrame(t, r)
             }
             I.push(g)
@@ -62745,7 +62748,7 @@ class me {
         E > -1 && this.restorables.splice(E, 1)
     }
 }
-const Ui = class Ui extends ma {
+const Ui = class Ui extends pa {
     constructor(E, M, A = !1) {
         super(M);
         z(this, "context");
@@ -63208,7 +63211,7 @@ void main () {
 };
 z(Yt, "MVP_MATRIX", "u_projTrans"), z(Yt, "POSITION", "a_position"), z(Yt, "COLOR", "a_color"), z(Yt, "COLOR2", "a_color2"), z(Yt, "TEXCOORDS", "a_texCoords"), z(Yt, "SAMPLER", "u_texture");
 let Ae = Yt;
-class Ra {
+class Ma {
     constructor(T, E, M, A) {
         z(this, "attributes");
         z(this, "context");
@@ -63321,7 +63324,7 @@ class Ys extends Ls {
         super(Ae.POSITION, Ii.Float, 2)
     }
 }
-class Xn extends Ls {
+class Nn extends Ls {
     constructor(T = 0) {
         super(Ae.TEXCOORDS + (T == 0 ? "" : T), Ii.Float, 2)
     }
@@ -63340,12 +63343,12 @@ var Ii;
 (function(V) {
     V[V.Float = 0] = "Float"
 })(Ii || (Ii = {}));
-const be = 1,
+const Ne = 1,
     Bl = 769,
-    Yn = 770,
-    Un = 771,
-    Vn = 774,
-    Xe = class Xe {
+    Xn = 770,
+    Yn = 771,
+    Un = 774,
+    Ye = class Ye {
         constructor(T, E = !0, M = 10920) {
             z(this, "context");
             z(this, "drawCalls", 0);
@@ -63361,8 +63364,8 @@ const be = 1,
             z(this, "cullWasEnabled", !1);
             if (M > 10920) throw new Error("Can't have more than 10920 triangles per batch: " + M);
             this.context = T instanceof me ? T : new me(T);
-            let A = E ? [new Ys, new Us, new Xn, new Dl] : [new Ys, new Us, new Xn];
-            this.mesh = new Ra(T, A, M, M * 3);
+            let A = E ? [new Ys, new Us, new Nn, new Dl] : [new Ys, new Us, new Nn];
+            this.mesh = new Ma(T, A, M, M * 3);
             let I = this.context.gl;
             this.srcColorBlend = I.SRC_ALPHA, this.srcAlphaBlend = I.ONE, this.dstBlend = I.ONE_MINUS_SRC_ALPHA
         }
@@ -63373,7 +63376,7 @@ const be = 1,
             E.enable(E.BLEND), E.blendFuncSeparate(this.srcColorBlend, this.dstBlend, this.srcAlphaBlend, this.dstBlend)
         }
         setBlendMode(T, E) {
-            const M = Xe.blendModesGL[T],
+            const M = Ye.blendModesGL[T],
                 A = E ? M.srcRgbPma : M.srcRgb,
                 I = M.srcAlpha,
                 c = M.dstRgb;
@@ -63392,7 +63395,7 @@ const be = 1,
             if (this.verticesLength != 0) {
                 if (!this.lastTexture) throw new Error("No texture set.");
                 if (!this.shader) throw new Error("No shader set.");
-                this.lastTexture.bind(), this.mesh.draw(this.shader, this.context.gl.TRIANGLES), this.verticesLength = 0, this.indicesLength = 0, this.mesh.setVerticesLength(0), this.mesh.setIndicesLength(0), this.drawCalls++, Xe.globalDrawCalls++
+                this.lastTexture.bind(), this.mesh.draw(this.shader, this.context.gl.TRIANGLES), this.verticesLength = 0, this.indicesLength = 0, this.mesh.setVerticesLength(0), this.mesh.setIndicesLength(0), this.drawCalls++, Ye.globalDrawCalls++
             }
         }
         end() {
@@ -63405,36 +63408,36 @@ const be = 1,
             return this.drawCalls
         }
         static getAndResetGlobalDrawCalls() {
-            let T = Xe.globalDrawCalls;
-            return Xe.globalDrawCalls = 0, T
+            let T = Ye.globalDrawCalls;
+            return Ye.globalDrawCalls = 0, T
         }
         dispose() {
             this.mesh.dispose()
         }
     };
-z(Xe, "disableCulling", !1), z(Xe, "globalDrawCalls", 0), z(Xe, "blendModesGL", [{
-    srcRgb: Yn,
-    srcRgbPma: be,
-    dstRgb: Un,
-    srcAlpha: be
+z(Ye, "disableCulling", !1), z(Ye, "globalDrawCalls", 0), z(Ye, "blendModesGL", [{
+    srcRgb: Xn,
+    srcRgbPma: Ne,
+    dstRgb: Yn,
+    srcAlpha: Ne
 }, {
-    srcRgb: Yn,
-    srcRgbPma: be,
-    dstRgb: be,
-    srcAlpha: be
+    srcRgb: Xn,
+    srcRgbPma: Ne,
+    dstRgb: Ne,
+    srcAlpha: Ne
 }, {
-    srcRgb: Vn,
-    srcRgbPma: Vn,
-    dstRgb: Un,
-    srcAlpha: be
+    srcRgb: Un,
+    srcRgbPma: Un,
+    dstRgb: Yn,
+    srcAlpha: Ne
 }, {
-    srcRgb: be,
-    srcRgbPma: be,
+    srcRgb: Ne,
+    srcRgbPma: Ne,
     dstRgb: Bl,
-    srcAlpha: be
+    srcAlpha: Ne
 }]);
-let rs = Xe;
-class zn {
+let rs = Ye;
+class Vn {
     constructor(T, E = 10920) {
         z(this, "context");
         z(this, "isDrawing", !1);
@@ -63448,7 +63451,7 @@ class zn {
         z(this, "srcAlphaBlend");
         z(this, "dstBlend");
         if (E > 10920) throw new Error("Can't have more than 10920 triangles per batch: " + E);
-        this.context = T instanceof me ? T : new me(T), this.mesh = new Ra(T, [new Ys, new Us], E, 0);
+        this.context = T instanceof me ? T : new me(T), this.mesh = new Ma(T, [new Ys, new Us], E, 0);
         let M = this.context.gl;
         this.srcColorBlend = M.SRC_ALPHA, this.srcAlphaBlend = M.ONE, this.dstBlend = M.ONE_MINUS_SRC_ALPHA
     }
@@ -63653,7 +63656,7 @@ const Mi = class Mi {
                 let r = o[v];
                 if (!r.bone.active) continue;
                 let i = r.getAttachment();
-                if (!(i instanceof Ue)) continue;
+                if (!(i instanceof Ve)) continue;
                 let e = i,
                     s = this.vertices;
                 e.computeWorldVertices(r, 0, e.worldVerticesLength, s, 0, 2);
@@ -63696,7 +63699,7 @@ const Mi = class Mi {
                 let r = o[v];
                 if (!r.bone.active) continue;
                 let i = r.getAttachment();
-                if (!(i instanceof li)) continue;
+                if (!(i instanceof ui)) continue;
                 let e = i,
                     s = e.worldVerticesLength,
                     h = this.temp = ot.setArraySize(this.temp, s, 0);
@@ -63765,8 +63768,8 @@ class Gl {
         this.vertices = T, this.numVertices = E, this.numFloats = M
     }
 }
-var ri;
-let bl = (ri = class {
+var ai;
+let bl = (ai = class {
     constructor(T, E = !0) {
         z(this, "premultipliedAlpha", !1);
         z(this, "tempColor", new Lt);
@@ -63809,8 +63812,8 @@ let bl = (ri = class {
                 m;
             if (p instanceof Vt) {
                 let y = p;
-                v.vertices = this.vertices, v.numVertices = 4, v.numFloats = f << 2, y.computeWorldVertices(d, v.vertices, 0, f), r = ri.QUAD_TRIANGLES, a = y.uvs, m = y.region.texture, e = y.color
-            } else if (p instanceof Ue) {
+                v.vertices = this.vertices, v.numVertices = 4, v.numFloats = f << 2, y.computeWorldVertices(d, v.vertices, 0, f), r = ai.QUAD_TRIANGLES, a = y.uvs, m = y.region.texture, e = y.color
+            } else if (p instanceof Ve) {
                 let y = p;
                 v.vertices = this.vertices, v.numVertices = y.worldVerticesLength >> 1, v.numFloats = v.numVertices * f, v.numFloats > v.vertices.length && (v.vertices = this.vertices = ot.newFloatArray(v.numFloats)), y.computeWorldVertices(d, 0, y.worldVerticesLength, v.vertices, 0, f), r = y.triangles, m = y.region.texture, a = y.uvs, e = y.color
             } else if (p instanceof Ni) {
@@ -63850,11 +63853,11 @@ let bl = (ri = class {
     getSkeletonClipping() {
         return this.clipper
     }
-}, z(ri, "QUAD_TRIANGLES", [0, 1, 2, 2, 3, 0]), ri);
+}, z(ai, "QUAD_TRIANGLES", [0, 1, 2, 2, 3, 0]), ai);
 const q = [0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0],
     Ji = [0, 1, 2, 2, 3, 0],
     Qi = new Lt(1, 1, 1, 1);
-class Fa {
+class Ra {
     constructor(T, E, M = !0) {
         z(this, "context");
         z(this, "canvas");
@@ -63867,7 +63870,7 @@ class Fa {
         z(this, "activeRenderer", null);
         z(this, "skeletonRenderer");
         z(this, "skeletonDebugRenderer");
-        this.canvas = T, this.context = E instanceof me ? E : new me(E), this.twoColorTint = M, this.camera = new Il(T.width, T.height), this.batcherShader = M ? Ae.newTwoColoredTextured(this.context) : Ae.newColoredTextured(this.context), this.batcher = new rs(this.context, M), this.shapesShader = Ae.newColored(this.context), this.shapes = new zn(this.context), this.skeletonRenderer = new bl(this.context, M), this.skeletonDebugRenderer = new Vs(this.context)
+        this.canvas = T, this.context = E instanceof me ? E : new me(E), this.twoColorTint = M, this.camera = new Il(T.width, T.height), this.batcherShader = M ? Ae.newTwoColoredTextured(this.context) : Ae.newColoredTextured(this.context), this.batcher = new rs(this.context, M), this.shapesShader = Ae.newColored(this.context), this.shapes = new Vn(this.context), this.skeletonRenderer = new bl(this.context, M), this.skeletonDebugRenderer = new Vs(this.context)
     }
     dispose() {
         this.batcher.dispose(), this.batcherShader.dispose(), this.shapes.dispose(), this.shapesShader.dispose(), this.skeletonDebugRenderer.dispose()
@@ -63975,34 +63978,34 @@ class Fa {
         this.camera.update()
     }
     enableRenderer(T) {
-        this.activeRenderer !== T && (this.end(), T instanceof rs ? (this.batcherShader.bind(), this.batcherShader.setUniform4x4f(Ae.MVP_MATRIX, this.camera.projectionView.values), this.batcherShader.setUniformi("u_texture", 0), this.batcher.begin(this.batcherShader), this.activeRenderer = this.batcher) : T instanceof zn ? (this.shapesShader.bind(), this.shapesShader.setUniform4x4f(Ae.MVP_MATRIX, this.camera.projectionView.values), this.shapes.begin(this.shapesShader), this.activeRenderer = this.shapes) : this.activeRenderer = this.skeletonDebugRenderer)
+        this.activeRenderer !== T && (this.end(), T instanceof rs ? (this.batcherShader.bind(), this.batcherShader.setUniform4x4f(Ae.MVP_MATRIX, this.camera.projectionView.values), this.batcherShader.setUniformi("u_texture", 0), this.batcher.begin(this.batcherShader), this.activeRenderer = this.batcher) : T instanceof Vn ? (this.shapesShader.bind(), this.shapesShader.setUniform4x4f(Ae.MVP_MATRIX, this.camera.projectionView.values), this.shapes.begin(this.shapesShader), this.activeRenderer = this.shapes) : this.activeRenderer = this.skeletonDebugRenderer)
     }
 }
 var as;
 (function(V) {
     V[V.Stretch = 0] = "Stretch", V[V.Expand = 1] = "Expand", V[V.Fit = 2] = "Fit"
 })(as || (as = {}));
-let je = Phaser.GameObjects.Components;
-const Nl = je.ComputedSize,
-    Xl = je.Depth,
-    Yl = je.Flip,
-    Ul = je.ScrollFactor,
-    Vl = je.Transform,
-    zl = je.Visible,
-    Wl = je.Origin,
-    Hl = je.Alpha;
+let qe = Phaser.GameObjects.Components;
+const Nl = qe.ComputedSize,
+    Xl = qe.Depth,
+    Yl = qe.Flip,
+    Ul = qe.ScrollFactor,
+    Vl = qe.Transform,
+    zl = qe.Visible,
+    Wl = qe.Origin,
+    Hl = qe.Alpha;
 
-function ke(...V) {
+function _e(...V) {
     return T => (Phaser.Class.mixin(T, V), T)
 }
-const Kl = ke(Nl),
-    Zl = ke(Xl),
-    Jl = ke(Yl),
-    Ql = ke(Ul),
-    $l = ke(Vl),
-    jl = ke(zl),
-    kl = ke(Wl),
-    ql = ke(Hl);
+const Kl = _e(Nl),
+    Zl = _e(Xl),
+    Jl = _e(Yl),
+    Ql = _e(Ul),
+    $l = _e(Vl),
+    jl = _e(zl),
+    kl = _e(Wl),
+    ql = _e(Hl);
 class _l extends Phaser.GameObjects.GameObject {
     constructor(T, E) {
         super(T, E)
@@ -64020,7 +64023,7 @@ class tu {
             width: 0,
             height: 0
         };
-        const E = new Ke(T.skeleton.data);
+        const E = new Je(T.skeleton.data);
         E.setToSetupPose(), E.updateWorldTransform(Te.update);
         const M = E.getBoundsRect(this.clipping ? new Oi : void 0);
         return M.width == Number.NEGATIVE_INFINITY ? {
@@ -64031,7 +64034,7 @@ class tu {
         } : M
     }
 }
-class Cu {
+class Eu {
     constructor(T, E = [], M = .05, A = !1) {
         z(this, "animation");
         z(this, "skins");
@@ -64047,7 +64050,7 @@ class Cu {
             height: 0
         };
         const E = new is(T.animationState.data),
-            M = new Ke(T.skeleton.data),
+            M = new Je(T.skeleton.data),
             A = this.clipping ? new Oi : void 0,
             I = M.data;
         if (this.skins.length > 0) {
@@ -64097,7 +64100,7 @@ class Cu {
         }
     }
 }
-class Wn extends Zl(kl(Kl(Jl(Ql($l(jl(ql(_l)))))))) {
+class zn extends Zl(kl(Kl(Jl(Ql($l(jl(ql(_l)))))))) {
     constructor(E, M, A, I, c, g, t = new tu) {
         super(E, window.SPINE_GAME_OBJECT_TYPE ? window.SPINE_GAME_OBJECT_TYPE : ji);
         z(this, "plugin");
@@ -64192,7 +64195,7 @@ class Wn extends Zl(kl(Kl(Jl(Ql($l(jl(ql(_l)))))))) {
         v.rotation = -57.29577866666166 * t.rotationNormalized, this.skeleton.updateWorldTransform(Te.update), c.save(), g.draw(o), c.restore()
     }
 }
-class eu extends ma {
+class eu extends pa {
     constructor(T) {
         super(T)
     }
@@ -64201,7 +64204,7 @@ class eu extends ma {
     dispose() {}
 }
 const iu = ot.newFloatArray(8),
-    ni = class ni {
+    ri = class ri {
         constructor(T) {
             z(this, "ctx");
             z(this, "triangleRendering", !1);
@@ -64256,8 +64259,8 @@ const iu = ot.newFloatArray(8),
                     e;
                 if (i instanceof Vt) {
                     let s = i;
-                    g = this.computeRegionVertices(r, s, !1), t = ni.QUAD_TRIANGLES, e = s.region.texture.getImage()
-                } else if (i instanceof Ue) {
+                    g = this.computeRegionVertices(r, s, !1), t = ri.QUAD_TRIANGLES, e = s.region.texture.getImage()
+                } else if (i instanceof Ve) {
                     let s = i;
                     g = this.computeMeshVertices(r, s, !1), t = s.triangles, e = s.region.texture.getImage()
                 } else continue;
@@ -64311,7 +64314,7 @@ const iu = ot.newFloatArray(8),
                 g = A.a * I.a * c.a,
                 t = M ? g : 1,
                 o = this.tempColor;
-            o.set(A.r * I.r * c.r * t, A.g * I.g * c.g * t, A.b * I.b * c.b * t, g), E.computeWorldVertices(T, this.vertices, 0, ni.VERTEX_SIZE);
+            o.set(A.r * I.r * c.r * t, A.g * I.g * c.g * t, A.b * I.b * c.b * t, g), E.computeWorldVertices(T, this.vertices, 0, ri.VERTEX_SIZE);
             let v = this.vertices,
                 a = E.uvs;
             return v[Vt.C1R] = o.r, v[Vt.C1G] = o.g, v[Vt.C1B] = o.b, v[Vt.C1A] = o.a, v[Vt.U1] = a[0], v[Vt.V1] = a[1], v[Vt.C2R] = o.r, v[Vt.C2G] = o.g, v[Vt.C2B] = o.b, v[Vt.C2A] = o.a, v[Vt.U2] = a[2], v[Vt.V2] = a[3], v[Vt.C3R] = o.r, v[Vt.C3G] = o.g, v[Vt.C3B] = o.b, v[Vt.C3A] = o.a, v[Vt.U3] = a[4], v[Vt.V3] = a[5], v[Vt.C4R] = o.r, v[Vt.C4G] = o.g, v[Vt.C4B] = o.b, v[Vt.C4A] = o.a, v[Vt.U4] = a[6], v[Vt.V4] = a[7], v
@@ -64326,15 +64329,15 @@ const iu = ot.newFloatArray(8),
             o.set(A.r * I.r * c.r * t, A.g * I.g * c.g * t, A.b * I.b * c.b * t, g);
             let v = E.worldVerticesLength / 2,
                 a = this.vertices;
-            a.length < E.worldVerticesLength && (this.vertices = a = ot.newFloatArray(E.worldVerticesLength)), E.computeWorldVertices(T, 0, E.worldVerticesLength, a, 0, ni.VERTEX_SIZE);
+            a.length < E.worldVerticesLength && (this.vertices = a = ot.newFloatArray(E.worldVerticesLength)), E.computeWorldVertices(T, 0, E.worldVerticesLength, a, 0, ri.VERTEX_SIZE);
             let r = E.uvs;
             for (let i = 0, e = 0, s = 2; i < v; i++) a[s++] = o.r, a[s++] = o.g, a[s++] = o.b, a[s++] = o.a, a[s++] = r[e++], a[s++] = r[e++], s += 2;
             return a
         }
     };
-z(ni, "QUAD_TRIANGLES", [0, 1, 2, 2, 3, 0]), z(ni, "VERTEX_SIZE", 8);
-let os = ni;
-const He = class He extends de.Plugins.ScenePlugin {
+z(ri, "QUAD_TRIANGLES", [0, 1, 2, 2, 3, 0]), z(ri, "VERTEX_SIZE", 8);
+let os = ri;
+const Ze = class Ze extends de.Plugins.ScenePlugin {
     constructor(E, M, A) {
         super(E, M, A);
         z(this, "game");
@@ -64344,14 +64347,14 @@ const He = class He extends de.Plugins.ScenePlugin {
         z(this, "phaserRenderer");
         z(this, "skeletonDataCache");
         z(this, "atlasCache");
-        this.game = M.game, this.isWebGL = this.game.config.renderType === 2, this.gl = this.isWebGL ? this.game.renderer.gl : null, this.phaserRenderer = this.game.renderer, this.canvasRenderer = null, this.skeletonDataCache = this.game.cache.addCustom(Ih), this.atlasCache = this.game.cache.addCustom(Dh);
+        this.game = M.game, this.isWebGL = this.game.config.renderType === 2, this.gl = this.isWebGL ? this.game.renderer.gl : null, this.phaserRenderer = this.game.renderer, this.canvasRenderer = null, this.skeletonDataCache = this.game.cache.addCustom(yh), this.atlasCache = this.game.cache.addCustom(Th);
         let I = function(v, a, r) {
-            let i = new Hn(this, v, a, hi.json, r);
+            let i = new Wn(this, v, a, li.json, r);
             return this.addFile(i.files), this
         };
         M.registerFileType("spineJson", I, E);
         let c = function(v, a, r) {
-            let i = new Hn(this, v, a, hi.binary, r);
+            let i = new Wn(this, v, a, li.binary, r);
             return this.addFile(i.files), this
         };
         M.registerFileType("spineBinary", c, E);
@@ -64363,7 +64366,7 @@ const He = class He extends de.Plugins.ScenePlugin {
         let t = function(v, a, r, i, e) {
                 this.scene.sys.renderer instanceof de.Renderer.WebGL.WebGLRenderer && this.scene.sys.renderer.pipelines.clear();
                 const s = this.scene.sys[A];
-                let h = new Wn(this.scene, s, v, a, r, i, e);
+                let h = new zn(this.scene, s, v, a, r, i, e);
                 return this.displayList.add(h), this.updateList.add(h), this.scene.sys.renderer instanceof de.Renderer.WebGL.WebGLRenderer && this.scene.sys.renderer.pipelines.rebind(), h
             },
             o = function(v, a = !1) {
@@ -64372,16 +64375,16 @@ const He = class He extends de.Plugins.ScenePlugin {
                     i = v.y ? v.y : 0,
                     e = v.boundsProvider ? v.boundsProvider : void 0;
                 const s = this.scene.sys[A];
-                let h = new Wn(this.scene, s, r, i, v.dataKey, v.atlasKey, e);
+                let h = new zn(this.scene, s, r, i, v.dataKey, v.atlasKey, e);
                 return a !== void 0 && (v.add = a), this.scene.sys.renderer instanceof de.Renderer.WebGL.WebGLRenderer && this.scene.sys.renderer.pipelines.rebind(), de.GameObjects.BuildGameObject(this.scene, h, v)
             };
         M.registerGameObject(window.SPINE_GAME_OBJECT_TYPE ? window.SPINE_GAME_OBJECT_TYPE : ji, t, o)
     }
     get webGLRenderer() {
-        return He.gameWebGLRenderer
+        return Ze.gameWebGLRenderer
     }
     boot() {
-        Ke.yDown = !0, this.isWebGL ? (He.gameWebGLRenderer || (He.gameWebGLRenderer = new Fa(this.game.renderer.canvas, this.gl, !0)), this.onResize(), this.game.scale.on(de.Scale.Events.RESIZE, this.onResize, this)) : this.canvasRenderer || (this.canvasRenderer = new os(this.scene.sys.context));
+        Je.yDown = !0, this.isWebGL ? (Ze.gameWebGLRenderer || (Ze.gameWebGLRenderer = new Ra(this.game.renderer.canvas, this.gl, !0)), this.onResize(), this.game.scale.on(de.Scale.Events.RESIZE, this.onResize, this)) : this.canvasRenderer || (this.canvasRenderer = new os(this.scene.sys.context));
         var E = this.systems.events;
         E.once("shutdown", this.shutdown, this), E.once("destroy", this.destroy, this), this.game.events.once("destroy", this.gameDestroy, this)
     }
@@ -64401,7 +64404,7 @@ const He = class He extends de.Plugins.ScenePlugin {
         this.shutdown()
     }
     gameDestroy() {
-        this.pluginManager.removeGameObject(window.SPINE_GAME_OBJECT_TYPE ? window.SPINE_GAME_OBJECT_TYPE : ji, !0, !0), this.webGLRenderer && this.webGLRenderer.dispose(), He.gameWebGLRenderer = null
+        this.pluginManager.removeGameObject(window.SPINE_GAME_OBJECT_TYPE ? window.SPINE_GAME_OBJECT_TYPE : ji, !0, !0), this.webGLRenderer && this.webGLRenderer.dispose(), Ze.gameWebGLRenderer = null
     }
     getAtlas(E) {
         let M;
@@ -64432,33 +64435,33 @@ const He = class He extends de.Plugins.ScenePlugin {
         else {
             if (this.game.cache.json.exists(E)) {
                 let g = this.game.cache.json.get(E);
-                c = new Ll(new Gn(A)).readSkeletonData(g)
+                c = new Ll(new Bn(A)).readSkeletonData(g)
             } else {
                 let g = this.game.cache.binary.get(E);
-                c = new $h(new Gn(A)).readSkeletonData(new Uint8Array(g))
+                c = new $h(new Bn(A)).readSkeletonData(new Uint8Array(g))
             }
             this.skeletonDataCache.add(I, c)
         }
         return c
     }
     createSkeleton(E, M) {
-        return new Ke(this.getSkeletonData(E, M))
+        return new Je(this.getSkeletonData(E, M))
     }
 };
-z(He, "gameWebGLRenderer", null), z(He, "rendererId", 0);
-let Ye = He;
-var hi;
+z(Ze, "gameWebGLRenderer", null), z(Ze, "rendererId", 0);
+let Ue = Ze;
+var li;
 (function(V) {
     V[V.json = 0] = "json", V[V.binary = 1] = "binary"
-})(hi || (hi = {}));
-class Hn extends de.Loader.MultiFile {
+})(li || (li = {}));
+class Wn extends de.Loader.MultiFile {
     constructor(E, M, A, I, c) {
         if (typeof M != "string") {
             const o = M;
-            M = o.key, A = o.url, I = o.type === "spineJson" ? hi.json : hi.binary, c = o.xhrSettings
+            M = o.key, A = o.url, I = o.type === "spineJson" ? li.json : li.binary, c = o.xhrSettings
         }
         let g = null;
-        I == hi.json ? g = new de.Loader.FileTypes.JSONFile(E, {
+        I == li.json ? g = new de.Loader.FileTypes.JSONFile(E, {
             key: M,
             url: A,
             extension: "json",
@@ -64469,7 +64472,7 @@ class Hn extends de.Loader.MultiFile {
             extension: "skel",
             xhrSettings: c
         });
-        super(E, Bh, M, [g]);
+        super(E, Sh, M, [g]);
         z(this, "fileType");
         this.fileType = I
     }
@@ -64486,7 +64489,7 @@ class su extends de.Loader.MultiFile {
             const g = M;
             M = g.key, A = g.url, I = g.premultipliedAlpha, c = g.xhrSettings
         }
-        super(E, Gh, M, [new de.Loader.FileTypes.TextFile(E, {
+        super(E, Ch, M, [new de.Loader.FileTypes.TextFile(E, {
             key: M,
             url: A,
             xhrSettings: c,
@@ -64524,13 +64527,13 @@ class su extends de.Loader.MultiFile {
     }
 }
 window.spine = {
-    SpinePlugin: Ye
+    SpinePlugin: Ue
 };
-window["spine.SpinePlugin"] = Ye;
-let Kn = !1;
-const Eu = () => {
-    if (Kn) return;
-    Kn = !0;
+window["spine.SpinePlugin"] = Ue;
+let Hn = !1;
+const Au = () => {
+    if (Hn) return;
+    Hn = !0;
     const V = Phaser.Renderer.WebGL.PipelineManager.prototype.boot;
     Phaser.Renderer.WebGL.PipelineManager.prototype.boot = function(T, E, M) {
         if (T != null && T.skipPipelinesAtBoot) {
@@ -64542,24 +64545,24 @@ const Eu = () => {
         } else V.call(this, T, E, M)
     }
 };
-let Zn = !1;
-const Au = () => {
-    Zn || (Zn = !0, delete Ye.gameWebGLRenderer, Object.defineProperty(Ye.prototype, "gameWebGLRenderer", {
+let Kn = !1;
+const Pu = () => {
+    Kn || (Kn = !0, delete Ue.gameWebGLRenderer, Object.defineProperty(Ue.prototype, "gameWebGLRenderer", {
         value: null,
         writable: !0,
         configurable: !0
-    }), Object.defineProperty(Ye.prototype, "webGLRenderer", {
+    }), Object.defineProperty(Ue.prototype, "webGLRenderer", {
         get: function() {
             return this.gameWebGLRenderer
         }
-    }), Ye.prototype.boot = function() {
-        Ke.yDown = !0, this.isWebGL ? (this.gameWebGLRenderer || (this.gameWebGLRenderer = new Fa(this.game.renderer.canvas, this.gl, !0)), this.onResize(), this.game.scale.on(Ir.Scale.Events.RESIZE, this.onResize, this)) : this.canvasRenderer || (this.canvasRenderer = new os(this.scene.sys.context));
+    }), Ue.prototype.boot = function() {
+        Je.yDown = !0, this.isWebGL ? (this.gameWebGLRenderer || (this.gameWebGLRenderer = new Ra(this.game.renderer.canvas, this.gl, !0)), this.onResize(), this.game.scale.on(Or.Scale.Events.RESIZE, this.onResize, this)) : this.canvasRenderer || (this.canvasRenderer = new os(this.scene.sys.context));
         const V = this.systems.events;
         V.once("shutdown", this.shutdown, this), V.once("destroy", this.destroy, this), this.game.events.once("destroy", this.gameDestroy, this)
-    }, Ye.prototype.gameDestroy = function() {
+    }, Ue.prototype.gameDestroy = function() {
         this.pluginManager.removeGameObject(window.SPINE_GAME_OBJECT_TYPE ? window.SPINE_GAME_OBJECT_TYPE : ji, !0, !0), this.webGLRenderer && this.webGLRenderer.dispose(), this.gameWebGLRenderer = null
     })
 };
 export {
-    Ha as A, mu as B, mo as C, jn as D, Ya as E, Rs as F, Tr as G, Ye as H, wr as I, Au as J, Eu as K, Do as L, qn as M, Xo as N, yr as O, Ir as P, $a as Q, no as R, pn as S, yn as T, Sn as U, bo as V, fh as a, io as b, Fi as c, Fr as d, dh as e, pr as f, Lr as g, $t as h, pu as i, Tn as j, gu as k, qt as l, si as m, Ti as n, hn as o, Cs as p, ro as q, Or as r, pe as s, ch as t, yu as u, vh as v, Cu as w, bs as x, xu as y, Tu as z
+    Ha as A, yu as B, mo as C, Su as D, Ya as E, Rs as F, yr as G, gu as H, Fr as I, $n as J, Ue as K, Pu as L, kn as M, Xo as N, xr as O, Or as P, Au as Q, no as R, pn as S, yn as T, Do as U, $a as V, bo as W, fh as a, io as b, Fi as c, Rr as d, dh as e, cr as f, wr as g, Jt as h, mu as i, Tn as j, Sh as k, Ch as l, xu as m, jt as n, be as o, He as p, hn as q, Cs as r, pe as s, ro as t, Lr as u, ch as v, Tu as w, vh as x, Eu as y, bs as z
 };

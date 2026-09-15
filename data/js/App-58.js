@@ -1,39 +1,37 @@
 import {
-    j as e,
-    d as r,
-    u as f,
-    r as m
+    r as x,
+    j as i,
+    D as d,
+    B as e,
+    d as C,
+    e as s
 } from "./_index.js";
 import {
-    ai as y,
-    q as C,
-    ae as h,
-    o as g,
-    af as b
+    F as l,
+    s as o,
+    a,
+    P as g
+} from "./FixSpinePlugin.js";
+import {
+    T as p,
+    o as w,
+    aB as S
 } from "./App-41.js";
 import {
-    S as v
+    S as U
 } from "./SixteenByNineScaler.js";
 import {
-    g as I,
-    m as l
-} from "./motion.js";
-import {
-    L as j,
-    u as B,
-    a as A,
-    C as N,
-    d as k
-} from "./useItemAmount.js";
-import {
-    M as P
-} from "./Button.js";
-import "./FixSpinePlugin.js";
+    S as h
+} from "./index-28.js";
 import "./GetAssetPath.js";
 import "./MapModeType.js";
 import "./MapStyle.js";
-import "./playSound.js";
+import "./MapSound.js";
 import "./howler.js";
+import "./playSound.js";
+import "./Button.js";
+import "./polished.esm.js";
+import "./inheritsLoose.js";
 import "./mobxreact.esm.js";
 import "./index-21.js";
 import "./QuizTypes.js";
@@ -46,6 +44,7 @@ import "./FontAwesomeIcon.js";
 import "./Centered.js";
 import "./CapitalizeFirstLetter.js";
 import "./index-4.js";
+import "./motion.js";
 import "./index-2.js";
 import "./index-14.js";
 import "./EditOutlined.js";
@@ -63,13 +62,10 @@ import "./util-2.js";
 import "./Shortcut.js";
 import "./Names.js";
 import "./useWillUnmount.js";
-import "./use-motion-value.js";
-import "./use-transform.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
-import "./inheritsLoose.js";
+import "./index-6.js";
+import "./AccessibleAnchor.js";
 import "./index-17.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
@@ -77,8 +73,8 @@ import "./Text.js";
 import "./getCloudinaryUrl.js";
 import "./LazyLatexRenderer.js";
 import "./Tooltip.js";
-import "./polished.esm.js";
 import "./index-1.js";
+import "./use-motion-value.js";
 import "./index-9.js";
 import "./index-23.js";
 import "./useIntervalWhen.js";
@@ -93,178 +89,162 @@ import "./FillRemainingSpace.js";
 import "./index-24.js";
 import "./index-20.js";
 import "./index-22.js";
-import "./clsx.js";
-const M = {
-        emptyMessage: "Nothing in here...yet! End the game and modify this device to include your content."
+const k = () => {
+        const t = l(p());
+        t && (t.alpha.cinematicModeAlpha = 0, o.me.cinematicMode.mainCharacterVisible = !1)
     },
-    U = t => {
-        const o = () => e.jsx(e.Fragment, {
-            children: e.jsx("div", {
-                style: t.isBanner ? void 0 : {
-                    display: "flex",
-                    width: "100%",
-                    alignItems: "center",
-                    flexDirection: "column"
-                },
-                children: e.jsx(D, {
-                    children: t.code ? e.jsx(j, {
-                        noInline: !0,
-                        code: t.code,
-                        scope: {
-                            MapButton: P,
-                            CallAction: N,
-                            usePropertyValue: A,
-                            useItemAmount: B
-                        },
-                        children: e.jsx(k, {})
-                    }) : M.emptyMessage
-                })
+    b = () => {
+        o.me.cinematicMode.nameTagsVisible = !0
+    },
+    y = () => {
+        o.me.cinematicMode.nameTagsVisible = !1
+    },
+    v = () => {
+        const t = l(p());
+        t && (t.alpha.cinematicModeAlpha = 1, o.me.cinematicMode.mainCharacterVisible = !0)
+    },
+    F = () => {
+        const t = l(p());
+        t && (a().cameraHelper.startFollowingObject({
+            object: t.body
+        }), o.me.cinematicMode.followingMainCharacter = !0)
+    },
+    N = () => {
+        a().cameraHelper.stopFollow(), o.me.cinematicMode.followingMainCharacter = !1
+    },
+    _ = () => {
+        o.me.cinematicMode.hidingGUI = !1
+    },
+    H = () => {
+        o.me.cinematicMode.hidingGUI = !0
+    },
+    n = t => {
+        const r = a().cameras.main;
+        r.centerOn(r.worldView.centerX + t.x, r.worldView.centerY + t.y)
+    },
+    I = t => {
+        const r = a().cameras.main;
+        a().cameraHelper.setBounds(o.world.width, o.world.height), r.setZoom(t)
+    },
+    V = () => {
+        const [t, r] = x.useState(50), m = f => {
+            I(f)
+        }, c = () => {
+            n({
+                x: -t,
+                y: 0
             })
-        });
-        return e.jsx(e.Fragment, {
-            children: t.isBanner ? e.jsx(w, {
-                children: o()
-            }) : e.jsx(F, {
-                children: o()
+        }, M = () => {
+            n({
+                x: t,
+                y: 0
             })
-        })
-    },
-    w = r.div.attrs({
-        className: "maxWidth flex vc"
-    })`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-`,
-    F = r.div.attrs({
-        className: "maxWidth flex-column vc"
-    })``,
-    D = r.div`
-  font-size: 24px;
-  margin: 6px;
-`,
-    s = {
-        y: " 100%",
-        opacity: 0
-    },
-    W = {
-        y: "0%",
-        opacity: 1
-    },
-    _ = t => {
-        const o = I(),
-            [n, a] = f(!1),
-            p = () => {
-                o && n && t.close()
-            },
-            u = y(t.defaultBackgroundColor),
-            x = m.useMemo(() => {
-                let i = {
-                    background: t.defaultBackgroundColor,
-                    color: u,
-                    fontFamily: t.defaultFontFamily
-                };
-                return t.isBanner ? {
-                    ...i,
-                    ...{
-                        padding: "30px 40px",
-                        width: "100%",
-                        maxWidth: "100%",
-                        borderRadius: 0
-                    }
-                } : {
-                    ...i,
-                    ...{
-                        padding: "40px 30px",
-                        width: "90%",
-                        maxWidth: 650,
-                        borderRadius: 5
-                    }
-                }
-            }, [t.defaultBackgroundColor, t.isBanner]);
-        return e.jsxs(E, {
-            onClick: p,
-            style: t.isBanner ? {
-                alignItems: "flex-end",
-                justifyContent: "center"
-            } : {
-                justifyContent: "center",
-                alignItems: "center"
-            },
-            children: [e.jsx(O, {
-                initial: s,
-                animate: W,
-                exit: s,
-                transition: {
-                    duration: d,
-                    ease: "easeOut"
-                },
-                onClick: i => i.stopPropagation(),
-                onAnimationComplete: a,
-                style: x,
-                children: e.jsx(U, {
-                    ...t
-                })
-            }), t.closableByUser ? e.jsx(C, {
-                onClick: t.close
-            }) : null]
-        })
-    },
-    E = r.div.attrs({
-        className: "maxAll flex"
-    })``,
-    O = r(l.div).attrs({
-        className: "medium-shadow flex-column vc scroll-y"
-    })`
-  max-height: 80%;
-`;
-var c = (t => (t.modal = "modal", t.banner = "banner", t))(c || {});
-const d = .3,
-    R = t => {
-        const o = m.useCallback(() => {
-            t.closableByUser && t.close()
-        }, [t.closableByUser]);
-        g(Phaser.Input.Keyboard.KeyCodes.ESC, o, [o]);
-        const n = () => {
-            const a = {
-                ...t,
-                isBanner: t.style === c.banner,
-                close: o,
-                code: t.code
-            };
-            return e.jsx(_, {
-                ...a
+        }, u = () => {
+            n({
+                x: 0,
+                y: -t
+            })
+        }, j = () => {
+            n({
+                x: 0,
+                y: t
             })
         };
-        return e.jsx(T, {
-            children: e.jsx(z, {
-                initial: {
-                    background: "rgba(0,0,0,0)"
-                },
-                animate: {
-                    background: "rgba(0,0,0,0.7)"
-                },
-                exit: {
-                    background: "rgba(0,0,0,0)"
-                },
-                transition: {
-                    duration: d
-                },
-                children: n()
-            })
+        return i.jsxs("div", {
+            className: "maxWidth",
+            children: [i.jsx(d, {}), i.jsx("div", {
+                className: "maxWidth flex-center",
+                children: i.jsx(e, {
+                    onClick: u,
+                    children: "Up"
+                })
+            }), i.jsxs("div", {
+                className: "maxWidth flex between",
+                children: [i.jsx(e, {
+                    onClick: c,
+                    children: "Left"
+                }), i.jsx(e, {
+                    onClick: M,
+                    children: "Right"
+                })]
+            }), i.jsx("div", {
+                className: "maxWidth flex-center",
+                children: i.jsx(e, {
+                    onClick: j,
+                    children: "Down"
+                })
+            }), i.jsx(h, {
+                value: t,
+                onChange: r,
+                min: 1,
+                max: 200,
+                step: 1
+            }), i.jsx(d, {}), i.jsx("p", {
+                children: "Zoom"
+            }), i.jsx(h, {
+                onChange: m,
+                min: .2,
+                max: 10,
+                step: .1
+            })]
         })
     },
-    se = h(R),
-    T = r(v).attrs({
-        className: "maxAll"
+    Qi = () => {
+        const [t, r] = x.useState(!0), m = () => r(c => !c);
+        return w(g.Input.Keyboard.KeyCodes.SPACE, m), t ? i.jsx(B, {
+            children: i.jsxs(G, {
+                children: [i.jsx("h2", {
+                    children: "Cinematic Mode"
+                }), i.jsxs("div", {
+                    className: "flex-column",
+                    children: [i.jsx(e, {
+                        onClick: N,
+                        children: "Stop Focus Main Character"
+                    }), i.jsx(e, {
+                        onClick: F,
+                        children: "Start Focus Main Character"
+                    }), i.jsx(e, {
+                        onClick: v,
+                        children: "Show Main Character"
+                    }), i.jsx(e, {
+                        onClick: k,
+                        children: "Hide Main Character"
+                    }), i.jsx(e, {
+                        onClick: b,
+                        children: "Show Nametags"
+                    }), i.jsx(e, {
+                        onClick: y,
+                        children: "Hide Nametags"
+                    }), i.jsx(e, {
+                        onClick: _,
+                        children: "Show GUI"
+                    }), i.jsx(e, {
+                        onClick: H,
+                        children: "Hide GUI"
+                    }), i.jsx(V, {})]
+                })]
+            })
+        }) : null
+    },
+    B = C.div.attrs({
+        className: "maxAll flex"
     })`
-  overflow: hidden;
-  z-index: ${b.primaryContent};
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 20px;
+  padding-bottom: 75px;
+  z-index: ${S.overlayContent};
 `,
-    z = r(l.div).attrs({
-        className: "maxAll"
-    })``;
+    G = C(U)`
+  padding: 20px;
+  background: ${s.White};
+  border: 4px solid ${s.Black};
+  color: ${s.Black};
+`;
 export {
-    d as ANIMATION_DURATION, se as
+    Qi as
     default
 };

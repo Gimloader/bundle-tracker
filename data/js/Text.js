@@ -1,6 +1,6 @@
 import {
     r as f,
-    aB as $e,
+    aB as je,
     _ as re,
     x as p,
     bx as fn,
@@ -10,7 +10,7 @@ import {
     bI as Et,
     bJ as hn,
     j as M,
-    d as _e,
+    d as we,
     ax as mn,
     aw as gn,
     m as vn,
@@ -26,15 +26,15 @@ import {
     L as Ot
 } from "./LazyLatexRenderer.js";
 import {
-    o as _n
+    o as wn
 } from "./mobxreact.esm.js";
 import {
-    w as je,
+    w as Ve,
     c as se,
     a as Ce
 } from "./clsx.m.js";
 import {
-    c as wn,
+    c as _n,
     s as xn,
     u as Rn,
     a as Tn,
@@ -103,7 +103,7 @@ var Sn = function(e) {
             g = e.titleAccess,
             I = e.viewBox,
             S = I === void 0 ? "0 0 24 24" : I,
-            P = $e(e, ["children", "classes", "className", "color", "component", "fontSize", "htmlColor", "titleAccess", "viewBox"]);
+            P = je(e, ["children", "classes", "className", "color", "component", "fontSize", "htmlColor", "titleAccess", "viewBox"]);
         return f.createElement(c, re({
             className: se(o.root, i, a !== "inherit" && o["color".concat(Ce(a))], h !== "default" && h !== "medium" && o["fontSize".concat(Ce(h))]),
             focusable: "false",
@@ -115,7 +115,7 @@ var Sn = function(e) {
         }, P), n, g ? f.createElement("title", null, g) : null)
     });
 It.muiName = "SvgIcon";
-const it = je(Sn, {
+const it = Ve(Sn, {
     name: "MuiSvgIcon"
 })(It);
 
@@ -186,7 +186,7 @@ function ce(t) {
 const $n = Object.freeze(Object.defineProperty({
     __proto__: null,
     capitalize: Ce,
-    createChainedFunction: wn,
+    createChainedFunction: _n,
     createSvgIcon: En,
     debounce: On,
     deprecatedPropType: Pn,
@@ -205,7 +205,7 @@ const $n = Object.freeze(Object.defineProperty({
     value: "Module"
 }));
 
-function Ge(t, e) {
+function Je(t, e) {
     var r = function(i) {
             return e && f.isValidElement(i) ? e(i) : i
         },
@@ -244,7 +244,7 @@ function le(t, e, r) {
 }
 
 function Vn(t, e) {
-    return Ge(t.children, function(r) {
+    return Je(t.children, function(r) {
         return f.cloneElement(r, {
             onExited: e.bind(null, r),
             in: !0,
@@ -256,7 +256,7 @@ function Vn(t, e) {
 }
 
 function Nn(t, e, r) {
-    var n = Ge(t.children),
+    var n = Je(t.children),
         o = jn(e, n);
     return Object.keys(o).forEach(function(i) {
         var l = o[i];
@@ -286,13 +286,13 @@ var An = Object.values || function(t) {
             return t[e]
         })
     },
-    Wn = {
+    Ln = {
         component: "div",
         childFactory: function(e) {
             return e
         }
     },
-    Je = (function(t) {
+    et = (function(t) {
         zt(e, t);
 
         function e(n, o) {
@@ -325,7 +325,7 @@ var An = Object.values || function(t) {
                 firstRender: !1
             }
         }, r.handleExited = function(o, i) {
-            var l = Ge(this.props.children);
+            var l = Je(this.props.children);
             o.key in l || (o.props.onExited && o.props.onExited(i), this.mounted && this.setState(function(a) {
                 var s = re({}, a.children);
                 return delete s[o.key], {
@@ -346,9 +346,9 @@ var An = Object.values || function(t) {
             }, p.createElement(i, a, c))
         }, e
     })(p.Component);
-Je.propTypes = {};
-Je.defaultProps = Wn;
-var Ln = typeof window > "u" ? f.useEffect : f.useLayoutEffect;
+et.propTypes = {};
+et.defaultProps = Ln;
+var Wn = typeof window > "u" ? f.useEffect : f.useLayoutEffect;
 
 function qn(t) {
     var e = t.classes,
@@ -373,7 +373,7 @@ function qn(t) {
         },
         P = se(e.child, d && e.childLeaving, n && e.childPulsate),
         T = ce(c);
-    return Ln(function() {
+    return Wn(function() {
         if (!a) {
             g(!0);
             var z = setTimeout(T, u);
@@ -388,7 +388,7 @@ function qn(t) {
         className: P
     }))
 }
-var Be = 550,
+var Ue = 550,
     Fn = 80,
     Hn = function(e) {
         return {
@@ -410,7 +410,7 @@ var Be = 550,
             rippleVisible: {
                 opacity: .3,
                 transform: "scale(1)",
-                animation: "$enter ".concat(Be, "ms ").concat(e.transitions.easing.easeInOut)
+                animation: "$enter ".concat(Ue, "ms ").concat(e.transitions.easing.easeInOut)
             },
             ripplePulsate: {
                 animationDuration: "".concat(e.transitions.duration.shorter, "ms")
@@ -425,7 +425,7 @@ var Be = 550,
             },
             childLeaving: {
                 opacity: 0,
-                animation: "$exit ".concat(Be, "ms ").concat(e.transitions.easing.easeInOut)
+                animation: "$exit ".concat(Ue, "ms ").concat(e.transitions.easing.easeInOut)
             },
             childPulsate: {
                 position: "absolute",
@@ -469,7 +469,7 @@ var Be = 550,
             o = n === void 0 ? !1 : n,
             i = e.classes,
             l = e.className,
-            a = $e(e, ["center", "classes", "className"]),
+            a = je(e, ["center", "classes", "className"]),
             s = f.useState([]),
             c = s[0],
             u = s[1],
@@ -492,18 +492,18 @@ var Be = 550,
                     V = R.rippleX,
                     G = R.rippleY,
                     Z = R.rippleSize,
-                    w = R.cb;
+                    _ = R.cb;
                 u(function(m) {
                     return [].concat(dn(m), [f.createElement(qn, {
                         key: h.current,
                         classes: i,
-                        timeout: Be,
+                        timeout: Ue,
                         pulsate: C,
                         rippleX: V,
                         rippleY: G,
                         rippleSize: Z
                     })])
-                }), h.current += 1, d.current = w
+                }), h.current += 1, d.current = _
             }, [i]),
             z = f.useCallback(function() {
                 var R = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {},
@@ -511,8 +511,8 @@ var Be = 550,
                     V = arguments.length > 2 ? arguments[2] : void 0,
                     G = C.pulsate,
                     Z = G === void 0 ? !1 : G,
-                    w = C.center,
-                    m = w === void 0 ? o || C.pulsate : w,
+                    _ = C.center,
+                    m = _ === void 0 ? o || C.pulsate : _,
                     E = C.fakeElement,
                     v = E === void 0 ? !1 : E;
                 if (R.type === "mousedown" && g.current) {
@@ -527,7 +527,7 @@ var Be = 550,
                         left: 0,
                         top: 0
                     },
-                    j, N, W;
+                    j, N, L;
                 if (m || R.clientX === 0 && R.clientY === 0 || !R.clientX && !R.touches) j = Math.round(D.width / 2), N = Math.round(D.height / 2);
                 else {
                     var oe = R.touches ? R.touches[0] : R,
@@ -535,18 +535,18 @@ var Be = 550,
                         K = oe.clientY;
                     j = Math.round(J - D.left), N = Math.round(K - D.top)
                 }
-                if (m) W = Math.sqrt((2 * Math.pow(D.width, 2) + Math.pow(D.height, 2)) / 3), W % 2 === 0 && (W += 1);
+                if (m) L = Math.sqrt((2 * Math.pow(D.width, 2) + Math.pow(D.height, 2)) / 3), L % 2 === 0 && (L += 1);
                 else {
                     var Y = Math.max(Math.abs((x ? x.clientWidth : 0) - j), j) * 2 + 2,
                         H = Math.max(Math.abs((x ? x.clientHeight : 0) - N), N) * 2 + 2;
-                    W = Math.sqrt(Math.pow(Y, 2) + Math.pow(H, 2))
+                    L = Math.sqrt(Math.pow(Y, 2) + Math.pow(H, 2))
                 }
                 R.touches ? S.current === null && (S.current = function() {
                     T({
                         pulsate: Z,
                         rippleX: j,
                         rippleY: N,
-                        rippleSize: W,
+                        rippleSize: L,
                         cb: V
                     })
                 }, I.current = setTimeout(function() {
@@ -555,7 +555,7 @@ var Be = 550,
                     pulsate: Z,
                     rippleX: j,
                     rippleY: N,
-                    rippleSize: W,
+                    rippleSize: L,
                     cb: V
                 })
             }, [o, T]),
@@ -564,10 +564,10 @@ var Be = 550,
                     pulsate: !0
                 })
             }, [z]),
-            _ = f.useCallback(function(R, C) {
+            w = f.useCallback(function(R, C) {
                 if (clearTimeout(I.current), R.type === "touchend" && S.current) {
                     R.persist(), S.current(), S.current = null, I.current = setTimeout(function() {
-                        _(R, C)
+                        w(R, C)
                     });
                     return
                 }
@@ -579,17 +579,17 @@ var Be = 550,
             return {
                 pulsate: $,
                 start: z,
-                stop: _
+                stop: w
             }
-        }, [$, z, _]), f.createElement("span", re({
+        }, [$, z, w]), f.createElement("span", re({
             className: se(i.root, l),
             ref: P
-        }, a), f.createElement(Je, {
+        }, a), f.createElement(et, {
             component: null,
             exit: !0
         }, c))
     });
-const Un = je(Hn, {
+const Un = Ve(Hn, {
     flip: !1,
     name: "MuiTouchRipple"
 })(f.memo(Bn));
@@ -645,13 +645,13 @@ var Qn = {
             T = P === void 0 ? !1 : P,
             z = e.focusRipple,
             $ = z === void 0 ? !1 : z,
-            _ = e.focusVisibleClassName,
+            w = e.focusVisibleClassName,
             R = e.onBlur,
             C = e.onClick,
             V = e.onFocus,
             G = e.onFocusVisible,
             Z = e.onKeyDown,
-            w = e.onKeyUp,
+            _ = e.onKeyUp,
             m = e.onMouseDown,
             E = e.onMouseLeave,
             v = e.onMouseUp,
@@ -659,12 +659,12 @@ var Qn = {
             D = e.onTouchMove,
             j = e.onTouchStart,
             N = e.onDragLeave,
-            W = e.tabIndex,
-            oe = W === void 0 ? 0 : W,
+            L = e.tabIndex,
+            oe = L === void 0 ? 0 : L,
             J = e.TouchRippleProps,
             K = e.type,
             Y = K === void 0 ? "button" : K,
-            H = $e(e, ["action", "buttonRef", "centerRipple", "children", "classes", "className", "component", "disabled", "disableRipple", "disableTouchRipple", "focusRipple", "focusVisibleClassName", "onBlur", "onClick", "onFocus", "onFocusVisible", "onKeyDown", "onKeyUp", "onMouseDown", "onMouseLeave", "onMouseUp", "onTouchEnd", "onTouchMove", "onTouchStart", "onDragLeave", "tabIndex", "TouchRippleProps", "type"]),
+            H = je(e, ["action", "buttonRef", "centerRipple", "children", "classes", "className", "component", "disabled", "disableRipple", "disableTouchRipple", "focusRipple", "focusVisibleClassName", "onBlur", "onClick", "onFocus", "onFocusVisible", "onKeyDown", "onKeyUp", "onMouseDown", "onMouseLeave", "onMouseUp", "onTouchEnd", "onTouchMove", "onTouchStart", "onDragLeave", "tabIndex", "TouchRippleProps", "type"]),
             B = f.useRef(null);
 
         function ee() {
@@ -673,8 +673,8 @@ var Qn = {
         var k = f.useRef(null),
             de = f.useState(!1),
             O = de[0],
-            L = de[1];
-        g && O && L(!1);
+            W = de[1];
+        g && O && W(!1);
         var U = Pt(),
             q = U.isFocusVisible,
             te = U.onBlurVisible,
@@ -682,7 +682,7 @@ var Qn = {
         f.useImperativeHandle(n, function() {
             return {
                 focusVisible: function() {
-                    L(!0), B.current.focus()
+                    W(!0), B.current.focus()
                 }
             }
         }, []), f.useEffect(function() {
@@ -707,25 +707,25 @@ var Qn = {
             Yt = ie("stop", x),
             Xt = ie("stop", D),
             Gt = ie("stop", function(b) {
-                O && (te(b), L(!1)), R && R(b)
+                O && (te(b), W(!1)), R && R(b)
             }, !1),
             Jt = ce(function(b) {
-                B.current || (B.current = b.currentTarget), q(b) && (L(!0), G && G(b)), V && V(b)
+                B.current || (B.current = b.currentTarget), q(b) && (W(!0), G && G(b)), V && V(b)
             }),
-            Ve = function() {
+            Ne = function() {
                 var me = ee();
                 return h && h !== "button" && !(me.tagName === "A" && me.href)
             },
-            Ne = f.useRef(!1),
+            Ae = f.useRef(!1),
             en = ce(function(b) {
-                $ && !Ne.current && O && k.current && b.key === " " && (Ne.current = !0, b.persist(), k.current.stop(b, function() {
+                $ && !Ae.current && O && k.current && b.key === " " && (Ae.current = !0, b.persist(), k.current.stop(b, function() {
                     k.current.start(b)
-                })), b.target === b.currentTarget && Ve() && b.key === " " && b.preventDefault(), Z && Z(b), b.target === b.currentTarget && Ve() && b.key === "Enter" && !g && (b.preventDefault(), C && C(b))
+                })), b.target === b.currentTarget && Ne() && b.key === " " && b.preventDefault(), Z && Z(b), b.target === b.currentTarget && Ne() && b.key === "Enter" && !g && (b.preventDefault(), C && C(b))
             }),
             tn = ce(function(b) {
-                $ && b.key === " " && k.current && O && !b.defaultPrevented && (Ne.current = !1, b.persist(), k.current.stop(b, function() {
+                $ && b.key === " " && k.current && O && !b.defaultPrevented && (Ae.current = !1, b.persist(), k.current.stop(b, function() {
                     k.current.pulsate(b)
-                })), w && w(b), C && b.target === b.currentTarget && Ve() && b.key === " " && !b.defaultPrevented && C(b)
+                })), _ && _(b), C && b.target === b.currentTarget && Ne() && b.key === " " && !b.defaultPrevented && C(b)
             }),
             pe = h;
         pe === "button" && H.href && (pe = "a");
@@ -742,7 +742,7 @@ var Qn = {
         }, []);
         var sn = an && !S && !g;
         return f.createElement(pe, re({
-            className: se(s.root, c, O && [s.focusVisible, _], g && s.disabled),
+            className: se(s.root, c, O && [s.focusVisible, w], g && s.disabled),
             onBlur: Gt,
             onClick: C,
             onFocus: Jt,
@@ -762,7 +762,7 @@ var Qn = {
             center: l
         }, J)) : null)
     });
-const Kn = je(Qn, {
+const Kn = Ve(Qn, {
     name: "MuiButtonBase"
 })(Zn);
 var Yn = function(e) {
@@ -883,7 +883,7 @@ var Yn = function(e) {
             P = S === void 0 ? "large" : S,
             T = e.variant,
             z = T === void 0 ? "circular" : T,
-            $ = $e(e, ["children", "classes", "className", "color", "component", "disabled", "disableFocusRipple", "focusVisibleClassName", "size", "variant"]);
+            $ = je(e, ["children", "classes", "className", "color", "component", "disabled", "disableFocusRipple", "focusVisibleClassName", "size", "variant"]);
         return f.createElement(Kn, re({
             className: se(o.root, i, P !== "large" && o["size".concat(Ce(P))], h && o.disabled, z === "extended" && o.extended, {
                 primary: o.primary,
@@ -899,17 +899,17 @@ var Yn = function(e) {
             className: o.label
         }, n))
     });
-const Gn = je(Yn, {
+const Gn = Ve(Yn, {
     name: "MuiFab"
 })(Xn);
 
-function Ue(t) {
+function Qe(t) {
     "@babel/helpers - typeof";
-    return Ue = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function(e) {
+    return Qe = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function(e) {
         return typeof e
     } : function(e) {
         return e && typeof Symbol == "function" && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
-    }, Ue(t)
+    }, Qe(t)
 }
 
 function Jn(t, e) {
@@ -939,13 +939,13 @@ function nr(t, e) {
         }
     }), Object.defineProperty(t, "prototype", {
         writable: !1
-    }), e && Qe(t, e)
+    }), e && Ze(t, e)
 }
 
-function Qe(t, e) {
-    return Qe = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(n, o) {
+function Ze(t, e) {
+    return Ze = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(n, o) {
         return n.__proto__ = o, n
-    }, Qe(t, e)
+    }, Ze(t, e)
 }
 
 function rr(t) {
@@ -962,7 +962,7 @@ function rr(t) {
 }
 
 function or(t, e) {
-    if (e && (Ue(e) === "object" || typeof e == "function")) return e;
+    if (e && (Qe(e) === "object" || typeof e == "function")) return e;
     if (e !== void 0) throw new TypeError("Derived constructors may only return object or undefined");
     return ir(t)
 }
@@ -1230,28 +1230,28 @@ var vr = function(e) {
         }, n))
     };
 
-function Ze(t) {
+function Ke(t) {
     "@babel/helpers - typeof";
-    return Ze = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function(e) {
+    return Ke = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function(e) {
         return typeof e
     } : function(e) {
         return e && typeof Symbol == "function" && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
-    }, Ze(t)
+    }, Ke(t)
 }
 
 function br(t, e) {
     if (!(t instanceof e)) throw new TypeError("Cannot call a class as a function")
 }
 
-function _r(t, e) {
+function wr(t, e) {
     for (var r = 0; r < e.length; r++) {
         var n = e[r];
         n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
     }
 }
 
-function wr(t, e, r) {
-    return e && _r(t.prototype, e), Object.defineProperty(t, "prototype", {
+function _r(t, e, r) {
+    return e && wr(t.prototype, e), Object.defineProperty(t, "prototype", {
         writable: !1
     }), t
 }
@@ -1266,13 +1266,13 @@ function xr(t, e) {
         }
     }), Object.defineProperty(t, "prototype", {
         writable: !1
-    }), e && Ke(t, e)
+    }), e && Ye(t, e)
 }
 
-function Ke(t, e) {
-    return Ke = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(n, o) {
+function Ye(t, e) {
+    return Ye = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(n, o) {
         return n.__proto__ = o, n
-    }, Ke(t, e)
+    }, Ye(t, e)
 }
 
 function Rr(t) {
@@ -1289,7 +1289,7 @@ function Rr(t) {
 }
 
 function Tr(t, e) {
-    if (e && (Ze(e) === "object" || typeof e == "function")) return e;
+    if (e && (Ke(e) === "object" || typeof e == "function")) return e;
     if (e !== void 0) throw new TypeError("Derived constructors may only return object or undefined");
     return Oe(t)
 }
@@ -1315,7 +1315,7 @@ function Ie(t) {
     }, Ie(t)
 }
 
-function Ae(t, e, r) {
+function Le(t, e, r) {
     return e in t ? Object.defineProperty(t, e, {
         value: r,
         enumerable: !0,
@@ -1331,17 +1331,17 @@ var at = (function(t) {
         var n;
         br(this, r);
         for (var o = arguments.length, i = new Array(o), l = 0; l < o; l++) i[l] = arguments[l];
-        return n = e.call.apply(e, [this].concat(i)), Ae(Oe(n), "state", {
+        return n = e.call.apply(e, [this].concat(i)), Le(Oe(n), "state", {
             loading: !0
-        }), Ae(Oe(n), "handleOnLoad", function() {
+        }), Le(Oe(n), "handleOnLoad", function() {
             n.setState({
                 loading: !1
             })
-        }), Ae(Oe(n), "handleOnContextMenu", function(a) {
+        }), Le(Oe(n), "handleOnContextMenu", function(a) {
             !n.props.contextMenu && a.preventDefault()
         }), n
     }
-    return wr(r, [{
+    return _r(r, [{
         key: "render",
         value: function() {
             var o = this.props,
@@ -1363,13 +1363,13 @@ var at = (function(t) {
     }]), r
 })(f.Component);
 
-function Ye(t) {
+function Xe(t) {
     "@babel/helpers - typeof";
-    return Ye = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function(e) {
+    return Xe = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function(e) {
         return typeof e
     } : function(e) {
         return e && typeof Symbol == "function" && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
-    }, Ye(t)
+    }, Xe(t)
 }
 
 function Sr(t, e) {
@@ -1399,13 +1399,13 @@ function Pr(t, e) {
         }
     }), Object.defineProperty(t, "prototype", {
         writable: !1
-    }), e && Xe(t, e)
+    }), e && Ge(t, e)
 }
 
-function Xe(t, e) {
-    return Xe = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(n, o) {
+function Ge(t, e) {
+    return Ge = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(n, o) {
         return n.__proto__ = o, n
-    }, Xe(t, e)
+    }, Ge(t, e)
 }
 
 function Cr(t) {
@@ -1422,7 +1422,7 @@ function Cr(t) {
 }
 
 function zr(t, e) {
-    if (e && (Ye(e) === "object" || typeof e == "function")) return e;
+    if (e && (Xe(e) === "object" || typeof e == "function")) return e;
     if (e !== void 0) throw new TypeError("Derived constructors may only return object or undefined");
     return ne(t)
 }
@@ -1582,8 +1582,8 @@ var kt = (function(t) {
                     onTouchStart: this.handleMouseDownOrTouchStart,
                     onTouchEnd: this.handleMouseUpOrTouchEnd,
                     onTouchMove: this.handleMouseMoveOrTouchMove,
-                    ref: function(_) {
-                        o.contentEl = _
+                    ref: function(w) {
+                        o.contentEl = w
                     }
                 }, T && p.createElement(at, {
                     id: "react-modal-image-img",
@@ -1621,7 +1621,7 @@ var kt = (function(t) {
         }]), r
     })(f.Component),
     ue = {},
-    we = {},
+    _e = {},
     xe = {},
     lt;
 
@@ -1657,8 +1657,8 @@ function kr() {
             }
         });
 
-        function e(_) {
-            return _ && _.__esModule && Object.prototype.hasOwnProperty.call(_, "default") ? _.default : _
+        function e(w) {
+            return w && w.__esModule && Object.prototype.hasOwnProperty.call(w, "default") ? w.default : w
         }
         var r = {
                 exports: {}
@@ -1685,30 +1685,30 @@ function kr() {
             }
         })();
 
-        function s(_) {
-            if (o === setTimeout) return setTimeout(_, 0);
-            if ((o === l || !o) && setTimeout) return o = setTimeout, setTimeout(_, 0);
+        function s(w) {
+            if (o === setTimeout) return setTimeout(w, 0);
+            if ((o === l || !o) && setTimeout) return o = setTimeout, setTimeout(w, 0);
             try {
-                return o(_, 0)
+                return o(w, 0)
             } catch {
                 try {
-                    return o.call(null, _, 0)
+                    return o.call(null, w, 0)
                 } catch {
-                    return o.call(this, _, 0)
+                    return o.call(this, w, 0)
                 }
             }
         }
 
-        function c(_) {
-            if (i === clearTimeout) return clearTimeout(_);
-            if ((i === a || !i) && clearTimeout) return i = clearTimeout, clearTimeout(_);
+        function c(w) {
+            if (i === clearTimeout) return clearTimeout(w);
+            if ((i === a || !i) && clearTimeout) return i = clearTimeout, clearTimeout(w);
             try {
-                return i(_)
+                return i(w)
             } catch {
                 try {
-                    return i.call(null, _)
+                    return i.call(null, w)
                 } catch {
-                    return i.call(this, _)
+                    return i.call(this, w)
                 }
             }
         }
@@ -1722,37 +1722,37 @@ function kr() {
 
         function S() {
             if (!h) {
-                var _ = s(I);
+                var w = s(I);
                 h = !0;
                 for (var R = u.length; R;) {
                     for (d = u, u = []; ++g < R;) d && d[g].run();
                     g = -1, R = u.length
                 }
-                d = null, h = !1, c(_)
+                d = null, h = !1, c(w)
             }
         }
-        n.nextTick = function(_) {
+        n.nextTick = function(w) {
             var R = new Array(arguments.length - 1);
             if (arguments.length > 1)
                 for (var C = 1; C < arguments.length; C++) R[C - 1] = arguments[C];
-            u.push(new P(_, R)), u.length === 1 && !h && s(S)
+            u.push(new P(w, R)), u.length === 1 && !h && s(S)
         };
 
-        function P(_, R) {
-            this.fun = _, this.array = R
+        function P(w, R) {
+            this.fun = w, this.array = R
         }
         P.prototype.run = function() {
             this.fun.apply(null, this.array)
         }, n.title = "browser", n.browser = !0, n.env = {}, n.argv = [], n.version = "", n.versions = {};
 
         function T() {}
-        n.on = T, n.addListener = T, n.once = T, n.off = T, n.removeListener = T, n.removeAllListeners = T, n.emit = T, n.prependListener = T, n.prependOnceListener = T, n.listeners = function(_) {
+        n.on = T, n.addListener = T, n.once = T, n.off = T, n.removeListener = T, n.removeAllListeners = T, n.emit = T, n.prependListener = T, n.prependOnceListener = T, n.listeners = function(w) {
             return []
-        }, n.binding = function(_) {
+        }, n.binding = function(w) {
             throw new Error("process.binding is not supported")
         }, n.cwd = function() {
             return "/"
-        }, n.chdir = function(_) {
+        }, n.chdir = function(w) {
             throw new Error("process.chdir is not supported")
         }, n.umask = function() {
             return 0
@@ -1880,27 +1880,27 @@ function Ar() {
 }
 var ht;
 
-function Wr() {
-    if (ht) return we;
-    ht = 1, Object.defineProperty(we, "__esModule", {
+function Lr() {
+    if (ht) return _e;
+    ht = 1, Object.defineProperty(_e, "__esModule", {
         value: !0
     });
-    var t = Object.assign || function(w) {
+    var t = Object.assign || function(_) {
             for (var m = 1; m < arguments.length; m++) {
                 var E = arguments[m];
-                for (var v in E) Object.prototype.hasOwnProperty.call(E, v) && (w[v] = E[v])
+                for (var v in E) Object.prototype.hasOwnProperty.call(E, v) && (_[v] = E[v])
             }
-            return w
+            return _
         },
         e = (function() {
-            function w(m, E) {
+            function _(m, E) {
                 for (var v = 0; v < E.length; v++) {
                     var x = E[v];
                     x.enumerable = x.enumerable || !1, x.configurable = !0, "value" in x && (x.writable = !0), Object.defineProperty(m, x.key, x)
                 }
             }
             return function(m, E, v) {
-                return E && w(m.prototype, E), v && w(m, v), m
+                return E && _(m.prototype, E), v && _(m, v), m
             }
         })(),
         r = Et(),
@@ -1919,54 +1919,54 @@ function Wr() {
         S = T(I),
         P = Ar();
 
-    function T(w) {
-        return w && w.__esModule ? w : {
-            default: w
+    function T(_) {
+        return _ && _.__esModule ? _ : {
+            default: _
         }
     }
 
-    function z(w, m) {
+    function z(_, m) {
         var E = {};
-        for (var v in w) m.indexOf(v) >= 0 || Object.prototype.hasOwnProperty.call(w, v) && (E[v] = w[v]);
+        for (var v in _) m.indexOf(v) >= 0 || Object.prototype.hasOwnProperty.call(_, v) && (E[v] = _[v]);
         return E
     }
 
-    function $(w, m) {
-        if (!(w instanceof m)) throw new TypeError("Cannot call a class as a function")
+    function $(_, m) {
+        if (!(_ instanceof m)) throw new TypeError("Cannot call a class as a function")
     }
 
-    function _(w, m) {
-        if (!w) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-        return m && (typeof m == "object" || typeof m == "function") ? m : w
+    function w(_, m) {
+        if (!_) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+        return m && (typeof m == "object" || typeof m == "function") ? m : _
     }
 
-    function R(w, m) {
+    function R(_, m) {
         if (typeof m != "function" && m !== null) throw new TypeError("Super expression must either be null or a function, not " + typeof m);
-        w.prototype = Object.create(m && m.prototype, {
+        _.prototype = Object.create(m && m.prototype, {
             constructor: {
-                value: w,
+                value: _,
                 enumerable: !1,
                 writable: !0,
                 configurable: !0
             }
-        }), m && (Object.setPrototypeOf ? Object.setPrototypeOf(w, m) : w.__proto__ = m)
+        }), m && (Object.setPrototypeOf ? Object.setPrototypeOf(_, m) : _.__proto__ = m)
     }
 
-    function C(w, m) {
-        return w.scrollWidth - 1 <= m
+    function C(_, m) {
+        return _.scrollWidth - 1 <= m
     }
 
-    function V(w, m) {
-        return w.scrollHeight - 1 <= m
+    function V(_, m) {
+        return _.scrollHeight - 1 <= m
     }
 
     function G() {}
-    var Z = (function(w) {
-        R(m, w);
+    var Z = (function(_) {
+        R(m, _);
 
         function m(E) {
             $(this, m);
-            var v = _(this, (m.__proto__ || Object.getPrototypeOf(m)).call(this, E));
+            var v = w(this, (m.__proto__ || Object.getPrototypeOf(m)).call(this, E));
             return v.state = {
                 fontSize: null,
                 ready: !1
@@ -2000,7 +2000,7 @@ function Wr() {
                     D = x.min,
                     j = x.max,
                     N = x.mode,
-                    W = x.forceSingleModeWidth,
+                    L = x.forceSingleModeWidth,
                     oe = x.onReady,
                     J = this._parent,
                     K = this._child,
@@ -2030,34 +2030,34 @@ function Wr() {
                         return V(K, H)
                     },
                     O = void 0,
-                    L = D,
+                    W = D,
                     U = j;
                 this.setState({
                     ready: !1
                 }), (0, c.default)([function(q) {
                     return (0, h.default)(function() {
-                        return L <= U
+                        return W <= U
                     }, function(te) {
                         if (ee()) return te(!0);
-                        O = parseInt((L + U) / 2, 10), v.setState({
+                        O = parseInt((W + U) / 2, 10), v.setState({
                             fontSize: O
                         }, function() {
-                            return ee() ? te(!0) : (k() ? L = O + 1 : U = O - 1, te())
+                            return ee() ? te(!0) : (k() ? W = O + 1 : U = O - 1, te())
                         })
                     }, q)
                 }, function(q) {
-                    return N === "single" && W || de() ? q() : (L = D, U = O, (0, h.default)(function() {
-                        return L < U
+                    return N === "single" && L || de() ? q() : (W = D, U = O, (0, h.default)(function() {
+                        return W < U
                     }, function(te) {
                         if (ee()) return te(!0);
-                        O = parseInt((L + U) / 2, 10), v.setState({
+                        O = parseInt((W + U) / 2, 10), v.setState({
                             fontSize: O
                         }, function() {
-                            return B !== v.pid ? te(!0) : (de() ? L = O + 1 : U = O - 1, te())
+                            return B !== v.pid ? te(!0) : (de() ? W = O + 1 : U = O - 1, te())
                         })
                     }, q))
                 }, function(q) {
-                    if (O = Math.min(L, U), O = Math.max(O, D), O = Math.min(O, j), O = Math.max(O, 0), ee()) return q(!0);
+                    if (O = Math.min(W, U), O = Math.max(O, D), O = Math.min(O, j), O = Math.max(O, 0), ee()) return q(!0);
                     v.setState({
                         fontSize: O
                     }, q)
@@ -2078,7 +2078,7 @@ function Wr() {
                     j = x.text,
                     N = x.style;
                 x.min, x.max;
-                var W = x.mode;
+                var L = x.mode;
                 x.forceWidth, x.forceSingleModeWidth, x.throttle, x.autoResize, x.onReady;
                 var oe = z(x, ["children", "text", "style", "min", "max", "mode", "forceWidth", "forceSingleModeWidth", "throttle", "autoResize", "onReady"]),
                     J = this.state,
@@ -2090,7 +2090,7 @@ function Wr() {
                     B = {
                         display: Y ? "block" : "inline-block"
                     };
-                return W === "single" && (B.whiteSpace = "nowrap"), n.default.createElement("div", t({
+                return L === "single" && (B.whiteSpace = "nowrap"), n.default.createElement("div", t({
                     ref: function(k) {
                         return v._parent = k
                     },
@@ -2121,16 +2121,16 @@ function Wr() {
         throttle: 50,
         autoResize: !0,
         onReady: G
-    }, we.default = Z, we
+    }, _e.default = Z, _e
 }
 var mt;
 
-function Lr() {
+function Wr() {
     if (mt) return ue;
     mt = 1, Object.defineProperty(ue, "__esModule", {
         value: !0
     }), ue.Textfit = void 0;
-    var t = Wr(),
+    var t = Lr(),
         e = r(t);
 
     function r(n) {
@@ -2140,20 +2140,21 @@ function Lr() {
     }
     return ue.Textfit = e.default, ue.default = e.default, ue
 }
-var qr = Lr();
-const Fr = {
+var qr = Wr();
+const Fr = f.createContext(!1),
+    Hr = {
         backgroundColor: "rgba(255,255,31, 0.21)",
         boxShadow: "10px 0 0 rgba(255,255,31, 0.21), -10px 0 0 rgba(255,255,31, 0.21)",
         borderRadius: 9
     },
-    Hr = _e.div`
+    Br = we.div`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
 `,
-    tt = class tt extends f.Component {
+    $e = class $e extends f.Component {
         render() {
             const {
                 paddingHorizontal: e,
@@ -2161,7 +2162,7 @@ const Fr = {
                 customStyle: n,
                 ...o
             } = this.props;
-            return delete o.text, delete o.highlighted, M.jsx(Hr, {
+            return delete o.text, delete o.highlighted, M.jsx(Br, {
                 className: this.props.customClass,
                 style: n,
                 children: M.jsx(qr.Textfit, {
@@ -2176,32 +2177,33 @@ const Fr = {
                         paddingLeft: this.props.paddingLeft || e,
                         paddingRight: e,
                         boxSizing: "border-box",
-                        fontWeight: this.props.noBold ? "normal" : 900
+                        fontWeight: this.props.noBold ? "normal" : "var(--question-text-font-weight, 900)"
                     },
                     ...o,
+                    max: this.context ? 1e4 : this.props.max,
                     children: M.jsx("div", {
-                        style: this.props.highlighted ? Fr : void 0,
+                        style: this.props.highlighted ? Hr : void 0,
                         children: this.props.text
                     })
                 })
             })
         }
     };
-tt.defaultProps = {
+$e.contextType = Fr, $e.defaultProps = {
     paddingHorizontal: "6%",
     paddingVertical: 15,
     max: 50,
     mode: "single",
     forceSingleModeWidth: !1
 };
-let fe = tt;
+let fe = $e;
 var ve = {},
-    Le = {
+    qe = {
         exports: {}
     },
     gt;
 
-function Br() {
+function Ur() {
     return gt || (gt = 1, (function(t) {
         function e(r) {
             return r && r.__esModule ? r : {
@@ -2209,17 +2211,17 @@ function Br() {
             }
         }
         t.exports = e, t.exports.__esModule = !0, t.exports.default = t.exports
-    })(Le)), Le.exports
+    })(qe)), qe.exports
 }
-var qe = {
+var Fe = {
         exports: {}
     },
-    Fe = {
+    He = {
         exports: {}
     },
     vt;
 
-function Ur() {
+function Qr() {
     return vt || (vt = 1, (function(t) {
         function e(r) {
             "@babel/helpers - typeof";
@@ -2230,13 +2232,13 @@ function Ur() {
             }, t.exports.__esModule = !0, t.exports.default = t.exports, e(r)
         }
         t.exports = e, t.exports.__esModule = !0, t.exports.default = t.exports
-    })(Fe)), Fe.exports
+    })(He)), He.exports
 }
 var yt;
 
-function Qr() {
+function Zr() {
     return yt || (yt = 1, (function(t) {
-        var e = Ur().default;
+        var e = Qr().default;
 
         function r(n, o) {
             if (typeof WeakMap == "function") var i = new WeakMap,
@@ -2257,13 +2259,13 @@ function Qr() {
             }, t.exports.__esModule = !0, t.exports.default = t.exports)(n, o)
         }
         t.exports = r, t.exports.__esModule = !0, t.exports.default = t.exports
-    })(qe)), qe.exports
+    })(Fe)), Fe.exports
 }
-var He = {};
-const Zr = mn($n);
+var Be = {};
+const Kr = mn($n);
 var bt;
 
-function Kr() {
+function Yr() {
     return bt || (bt = 1, (function(t) {
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -2273,34 +2275,34 @@ function Kr() {
                 return e.createSvgIcon
             }
         });
-        var e = Zr
-    })(He)), He
+        var e = Kr
+    })(Be)), Be
 }
-var _t;
+var wt;
 
-function Yr() {
-    if (_t) return ve;
-    _t = 1;
-    var t = Br(),
-        e = Qr();
+function Xr() {
+    if (wt) return ve;
+    wt = 1;
+    var t = Ur(),
+        e = Zr();
     Object.defineProperty(ve, "__esModule", {
         value: !0
     }), ve.default = void 0;
     var r = e(Et()),
-        n = t(Kr()),
+        n = t(Yr()),
         o = (0, n.default)(r.createElement("path", {
             d: "M8 5v14l11-7z"
         }), "PlayArrow");
     return ve.default = o, ve
 }
-var Xr = Yr();
-const Gr = gn(Xr);
+var Gr = Xr();
+const Jr = gn(Gr);
 var ke = (t => (t.multipleChoice = "mc", t.textInput = "text", t))(ke || {}),
     Pe = (t => (t[t.exact = 1] = "exact", t[t.contains = 2] = "contains", t))(Pe || {}),
-    Jr = Object.defineProperty,
+    eo = Object.defineProperty,
     F = (t, e, r, n) => {
         for (var o = void 0, i = t.length - 1, l; i >= 0; i--)(l = t[i]) && (o = l(e, r, o) || o);
-        return o && Jr(e, r, o), o
+        return o && eo(e, r, o), o
     };
 let A = class {
     constructor() {
@@ -2327,14 +2329,14 @@ const y = {
     },
     $t = 500,
     jt = .8,
-    eo = ["Samantha", "Victoria"],
-    to = (t, e = !0) => {
-        Vt(e), no(t)
+    to = ["Samantha", "Victoria"],
+    no = (t, e = !0) => {
+        Vt(e), ro(t)
     },
     Vt = t => {
         y.readToMe.audioQuestion && (y.readToMe.audioQuestion.stop(), y.readToMe.audioQuestion = null), y.readToMe.speechQuestion && (y.readToMe.speechQuestion.onend = null, y.readToMe.speechQuestion = null), y.readToMe.answersTimeout && clearTimeout(y.readToMe.answersTimeout), y.readToMe.reset(t), window.speechSynthesis.cancel()
     },
-    no = async t => {
+    ro = async t => {
         if (!y.readToMe.enabled && t.audio && !y.readToMe.hasPlayedForCurrentQuestion) {
             Nt(t.audio);
             return
@@ -2342,7 +2344,7 @@ const y = {
         if ("speechSynthesis" in window && y.readToMe.enabled && !y.readToMe.isCurrentlySpeaking && !y.readToMe.hasPlayedForCurrentQuestion) {
             y.readToMe.isCurrentlySpeaking = !0;
             let e, r;
-            t != null && t.text && (r = new SpeechSynthesisUtterance(t.text), r.voice = await Wt(), r.rate = jt, y.readToMe.speechQuestion = r), t != null && t.audio && (e = new Ct.Howl({
+            t != null && t.text && (r = new SpeechSynthesisUtterance(t.text), r.voice = await Lt(), r.rate = jt, y.readToMe.speechQuestion = r), t != null && t.audio && (e = new Ct.Howl({
                 src: [t.audio],
                 onplay: At,
                 onend: t != null && t.text ? () => window.speechSynthesis.speak(r) : () => ye(t)
@@ -2358,7 +2360,7 @@ const y = {
             });
             y.readToMe.audioQuestion = e, e.play()
         }
-    }, ro = async t => {
+    }, oo = async t => {
         y.readToMe.isCurrentlySpeaking = !0;
         const e = t.answers.filter(r => r.text != null);
         if (t.type === ke.multipleChoice && e.length) {
@@ -2367,27 +2369,27 @@ const y = {
             for (const [n, o] of t.answers.entries()) {
                 if (!o.text) continue;
                 let i = new SpeechSynthesisUtterance;
-                i.text = o.text, i.rate = jt, i.voice = await Wt(), i.onstart = () => y.readToMe.answerIndex = n, i.onend = () => {
+                i.text = o.text, i.rate = jt, i.voice = await Lt(), i.onstart = () => y.readToMe.answerIndex = n, i.onend = () => {
                     window.speechSynthesis.pause(), setTimeout(() => window.speechSynthesis.resume(), $t)
-                }, n >= r && (i.onend = () => wt()), window.speechSynthesis.speak(i)
+                }, n >= r && (i.onend = () => _t()), window.speechSynthesis.speak(i)
             }
-        } else wt()
-    }, wt = () => {
+        } else _t()
+    }, _t = () => {
         y.readToMe.isCurrentlySpeaking = !1, y.readToMe.currentlyPlayingAnswerAudio = !1, y.readToMe.finishedReadingQuestion = !0, window.speechSynthesis.cancel()
     }, At = () => {
         y.readToMe.currentlyPlayingQuestionAudio = !0
     }, xt = () => {
         y.readToMe.currentlyPlayingQuestionText = !0
     }, ye = t => {
-        y.readToMe.currentlyPlayingQuestionAudio = !1, y.readToMe.currentlyPlayingQuestionText = !1, t && (y.readToMe.answersTimeout = setTimeout(() => ro(t), $t))
-    }, Wt = async () => {
-        let t = await oo();
+        y.readToMe.currentlyPlayingQuestionAudio = !1, y.readToMe.currentlyPlayingQuestionText = !1, t && (y.readToMe.answersTimeout = setTimeout(() => oo(t), $t))
+    }, Lt = async () => {
+        let t = await io();
         if (t != null && t.length) {
-            const e = t.filter(r => eo.includes(r.name));
+            const e = t.filter(r => to.includes(r.name));
             if (e.length) return e[0]
         }
         return null
-    }, oo = () => new Promise(t => {
+    }, io = () => new Promise(t => {
         y.readToMe.chosenVoice && t([y.readToMe.chosenVoice]);
         let e = speechSynthesis.getVoices();
         if (e.length) {
@@ -2397,22 +2399,22 @@ const y = {
         speechSynthesis.onvoiceschanged = () => {
             e = speechSynthesis.getVoices(), t(e)
         }
-    }), io = () => y.readToMe.finishedReadingQuestion, ao = () => y.readToMe.canPlayAgain, lo = {
-        play: to,
+    }), ao = () => y.readToMe.finishedReadingQuestion, lo = () => y.readToMe.canPlayAgain, so = {
+        play: no,
         stop: Vt,
-        hasFinishedReading: io,
+        hasFinishedReading: ao,
         playAudio: Nt,
-        canPlayAgain: ao
-    }, so = "Replay Audio", Lt = _n(t => {
+        canPlayAgain: lo
+    }, uo = "Replay Audio", Wt = wn(t => {
         const e = () => {
-            lo.playAudio(t.audio)
+            so.playAudio(t.audio)
         };
         return M.jsx(Mn, {
             title: M.jsx("span", {
                 style: {
                     fontSize: 14
                 },
-                children: so
+                children: uo
             }),
             placement: "left",
             children: M.jsx(Gn, {
@@ -2421,15 +2423,15 @@ const y = {
                 style: {
                     flexShrink: 0
                 },
-                children: M.jsx(Gr, {})
+                children: M.jsx(Jr, {})
             })
         })
     });
-var uo = ["client", "offset", "scroll", "bounds", "margin"];
+var co = ["client", "offset", "scroll", "bounds", "margin"];
 
 function Rt(t) {
     var e = [];
-    return uo.forEach(function(r) {
+    return co.forEach(function(r) {
         t[r] && e.push(r)
     }), e
 }
@@ -2474,12 +2476,12 @@ function Tt(t, e) {
     return r
 }
 
-function co(t) {
+function fo(t) {
     var e = t && t.ownerDocument && t.ownerDocument.defaultView;
     return e || window
 }
 
-function fo(t) {
+function po(t) {
     return function(e) {
         var r, n;
         return n = r = (function(o) {
@@ -2504,7 +2506,7 @@ function fo(t) {
                         }), typeof a.props.onResize == "function" && a.props.onResize(d))
                     })
                 }, a._handleRef = function(h) {
-                    a._resizeObserver !== null && a._node !== null && a._resizeObserver.unobserve(a._node), a._node = h, a._window = co(a._node);
+                    a._resizeObserver !== null && a._node !== null && a._resizeObserver.unobserve(a._node), a._node = h, a._window = fo(a._node);
                     var d = a.props.innerRef;
                     d && (typeof d == "function" ? d(a._node) : d.current = a._node), a._resizeObserver !== null && a._node !== null && a._resizeObserver.observe(a._node)
                 }, a
@@ -2535,7 +2537,7 @@ function fo(t) {
         }, n
     }
 }
-var et = fo()(function(t) {
+var tt = po()(function(t) {
     var e = t.measure,
         r = t.measureRef,
         n = t.contentRect,
@@ -2546,17 +2548,17 @@ var et = fo()(function(t) {
         contentRect: n
     })
 });
-et.displayName = "Measure";
-et.propTypes.children = X.func;
+tt.displayName = "Measure";
+tt.propTypes.children = X.func;
 const qt = (t, e) => M.jsx("span", {
         className: t ? "" : "notranslate lang-en",
         children: e
     }),
-    po = t => t && (t.isTrusted === !0 || t.isTrusted === !1) ? t.isTrusted : !0,
-    So = (t, e) => {
-        e && po(t) && e()
-    },
+    ho = t => t && (t.isTrusted === !0 || t.isTrusted === !1) ? t.isTrusted : !0,
     Eo = (t, e) => {
+        e && ho(t) && e()
+    },
+    Oo = (t, e) => {
         if (!e) return !1;
         let r = !1;
         return t && t.answers.find(o => {
@@ -2577,7 +2579,7 @@ const qt = (t, e) => M.jsx("span", {
         let e = t.trim();
         return e = e.replace(/[\u2018\u2019]/g, "'").replace(/[\u201C\u201D]/g, '"'), e = e.toLowerCase(), e
     },
-    Oo = t => {
+    Po = t => {
         const [e, r] = p.useState({
             width: -1,
             height: -1
@@ -2599,8 +2601,8 @@ const qt = (t, e) => M.jsx("span", {
                 showRotate: !1,
                 hideZoom: !0
             }), M.jsxs(Ft, {
-                children: [M.jsxs(ho, {
-                    children: [M.jsx(et, {
+                children: [M.jsxs(mo, {
+                    children: [M.jsx(tt, {
                         bounds: !0,
                         onResize: i,
                         children: ({
@@ -2611,7 +2613,7 @@ const qt = (t, e) => M.jsx("span", {
                                 flex: 1
                             }
                         })
-                    }), u && M.jsx(Lt, {
+                    }), u && M.jsx(Wt, {
                         audio: u
                     }), u && !c && !h && M.jsx("div", {
                         style: {
@@ -2629,7 +2631,7 @@ const qt = (t, e) => M.jsx("span", {
                             borderRadius: 4,
                             cursor: "pointer"
                         }
-                    }), h && M.jsx(mo, {
+                    }), h && M.jsx(go, {
                         style: {
                             width: `calc(80% - ${u?56:0}px)`,
                             marginLeft: u ? "2vw" : 0
@@ -2641,7 +2643,7 @@ const qt = (t, e) => M.jsx("span", {
                             noBold: !0
                         })
                     })]
-                }), M.jsxs(go, {
+                }), M.jsxs(vo, {
                     children: [M.jsx(fe, {
                         text: qt(t.allowGoogleTranslate, s),
                         paddingHorizontal: "0px",
@@ -2663,7 +2665,7 @@ const qt = (t, e) => M.jsx("span", {
             })]
         })
     },
-    Ft = _e.div`
+    Ft = we.div`
   box-sizing: border-box;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2674,26 +2676,26 @@ const qt = (t, e) => M.jsx("span", {
   align-items: center;
   padding: 0px 4%;
 `,
-    ho = _e.div`
+    mo = we.div`
   width: 40%;
   height: 100%;
   display: flex;
   align-items: center;
 `,
-    mo = _e.div`
+    go = we.div`
   height: 90%;
   margin-right: 2vw;
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.2);
   padding: 10%;
 `,
-    go = _e.div`
+    vo = we.div`
   width: 60%;
   display: flex;
   align-items: center;
   height: 100%;
 `,
-    Po = t => {
+    Co = t => {
         const [e, r] = p.useState(!1), {
             image: n,
             audio: o,
@@ -2707,7 +2709,7 @@ const qt = (t, e) => M.jsx("span", {
                 showRotate: !1,
                 hideZoom: !0
             }), M.jsxs(Ft, {
-                children: [o && M.jsx(Lt, {
+                children: [o && M.jsx(Wt, {
                     audio: o
                 }), n && M.jsx("img", {
                     src: be(n),
@@ -2729,12 +2731,12 @@ const qt = (t, e) => M.jsx("span", {
             })]
         })
     },
-    Co = t => M.jsx(fe, {
+    zo = t => M.jsx(fe, {
         mode: "multi",
         text: qt(t.allowGoogleTranslate || !1, t.text),
         highlighted: t.highlighted,
         noBold: t.noBold
     });
 export {
-    Kn as B, Po as I, ke as Q, lo as R, Co as T, Oo as a, fe as b, So as c, En as d, zn as e, On as f, Cn as g, Qr as h, Eo as i, Kr as j, qr as l, Dt as o, qt as p, Br as r, y as s, ce as u
+    Kn as B, Co as I, Fr as L, ke as Q, so as R, zo as T, Po as a, fe as b, Eo as c, En as d, zn as e, On as f, Cn as g, Zr as h, Oo as i, Yr as j, qr as l, Dt as o, qt as p, Ur as r, y as s, ce as u
 };

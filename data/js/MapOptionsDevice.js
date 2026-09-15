@@ -7,21 +7,21 @@ import {
     d as f
 } from "./FixSpinePlugin.js";
 import {
-    b4 as g,
-    al as w,
-    a8 as y
+    bo as g,
+    aL as w,
+    ao as y
 } from "./App-41.js";
 import {
-    h as T
-} from "./howler.js";
+    M as T
+} from "./MapSound.js";
 import {
-    S as P
+    S as M
 } from "./SecondsToDuration.js";
 import {
     C as h
 } from "./Consts.js";
 import {
-    I as M
+    I as P
 } from "./ActionButton.js";
 import {
     G as S
@@ -66,12 +66,10 @@ import "./util-2.js";
 import "./Shortcut.js";
 import "./Names.js";
 import "./useWillUnmount.js";
-import "./use-motion-value.js";
-import "./use-transform.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
+import "./index-6.js";
+import "./AccessibleAnchor.js";
 import "./index-17.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
@@ -79,6 +77,8 @@ import "./Text.js";
 import "./getCloudinaryUrl.js";
 import "./LazyLatexRenderer.js";
 import "./Tooltip.js";
+import "./howler.js";
+import "./use-motion-value.js";
 import "./index-9.js";
 import "./index-23.js";
 import "./useIntervalWhen.js";
@@ -93,7 +93,7 @@ import "./FillRemainingSpace.js";
 import "./index-24.js";
 var r = (t => (t.stopped = "stopped", t.playing = "playing", t.fadingOut = "fadingOut", t))(r || {});
 const A = t => {
-        if (M()) return "";
+        if (P()) return "";
         if (t.options.musicUrl) return g(t.options.musicUrl);
         const o = t.options.presetMusicId;
         return o !== "NONE" ? S("music/presets/" + o + ".mp3") : null
@@ -102,14 +102,14 @@ const A = t => {
     O = !1,
     e = new Map,
     p = new Map;
-class qt extends w {
+class kt extends w {
     constructor(o) {
         if (super(o), this.onUpdate = () => {
                 if (!this.state.countdownActive && !this.state.countupActive) return;
                 const i = m.session.gameTime,
                     s = this.state.countdownActive ? this.state.countdownEndTimestamp - i : i - this.state.countupStartTimestamp,
                     d = Math.max(0, s / 1e3);
-                m.session.gameClockDuration = P(d)
+                m.session.gameClockDuration = M(d)
             }, this.onMasterVolumeChange = () => {
                 this.howl && this.howl.volume(a({
                     volume: u(this) / 100,
@@ -122,7 +122,7 @@ class qt extends w {
                 i.isBeingReplaced || ((s = e.get(this.id)) == null || s.unload(), e.delete(this.id), p.delete(this.id))
             }, l() && c(), f() && y()) {
             if (!e.get(this.id)) {
-                const s = new T.Howl({
+                const s = new T({
                     src: [A(this)],
                     preload: !0,
                     loop: !0
@@ -156,6 +156,6 @@ class qt extends w {
     }
 }
 export {
-    qt as
+    kt as
     default
 };

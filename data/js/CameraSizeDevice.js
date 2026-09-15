@@ -1,5 +1,5 @@
 import {
-    al as s
+    aL as s
 } from "./App-41.js";
 import {
     G as r
@@ -11,11 +11,11 @@ import {
     d
 } from "./FixSpinePlugin.js";
 import {
-    a as e
+    Z as e
 } from "./ZonedDeviceDisplay.js";
 import {
     F as p,
-    R as l
+    R as c
 } from "./ReplaceVisualEditingPreview.js";
 import "./_index.js";
 import "./Button.js";
@@ -29,6 +29,7 @@ import "./TutorialConsts.js";
 import "./ActionButton.js";
 import "./index-5.js";
 import "./playSound.js";
+import "./MapSound.js";
 import "./howler.js";
 import "./index-18.js";
 import "./context.js";
@@ -58,12 +59,10 @@ import "./util-2.js";
 import "./Shortcut.js";
 import "./Names.js";
 import "./useWillUnmount.js";
-import "./use-motion-value.js";
-import "./use-transform.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
+import "./index-6.js";
+import "./AccessibleAnchor.js";
 import "./index-17.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
@@ -71,6 +70,7 @@ import "./Text.js";
 import "./getCloudinaryUrl.js";
 import "./LazyLatexRenderer.js";
 import "./Tooltip.js";
+import "./use-motion-value.js";
 import "./index-9.js";
 import "./index-23.js";
 import "./useIntervalWhen.js";
@@ -84,7 +84,7 @@ import "./useDebouncedValue.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-const c = {
+const l = {
     imageId: r("devices/camera_size/base.png"),
     imageUrl: r("devices/camera_size/base.png")
 };
@@ -108,14 +108,14 @@ class Ri extends s {
                     rotable: !1,
                     keepRatio: !1,
                     onChange: i => {
-                        l(i.x, i.y, {
+                        c(i.x, i.y, {
                             width: i.width,
                             height: i.height
                         })
                     }
                 })
             }, this.setupVisualEditing(), this.notifyManagerAboutUpdate(), n() || d()) return;
-        this.layers.forceDepthManually(0), this.parts.add.sprite(c).view.setScale(.5), e.shouldShow(this) && this.parts.add.rect({
+        this.layers.forceDepthManually(0), this.parts.add.sprite(l).view.setScale(.5), e.shouldShow(this) && this.parts.add.rect({
             color: 11400448,
             alpha: e.shouldShowInnerZone(this) ? .2 : 0,
             width: Math.abs(this.options.width),

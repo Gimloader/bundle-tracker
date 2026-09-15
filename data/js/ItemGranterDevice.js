@@ -1,6 +1,6 @@
 import {
-    al as a,
-    am as m,
+    aL as a,
+    aM as m,
     L as h
 } from "./App-41.js";
 import {
@@ -15,8 +15,8 @@ import {
     F as c
 } from "./FetchTextureDimensions.js";
 import {
-    B as l,
-    U as I
+    B as I,
+    U as l
 } from "./Assets.js";
 import "./_index.js";
 import "./Button.js";
@@ -31,6 +31,7 @@ import "./TutorialConsts.js";
 import "./ActionButton.js";
 import "./index-5.js";
 import "./playSound.js";
+import "./MapSound.js";
 import "./howler.js";
 import "./index-18.js";
 import "./context.js";
@@ -60,12 +61,10 @@ import "./util-2.js";
 import "./Shortcut.js";
 import "./Names.js";
 import "./useWillUnmount.js";
-import "./use-motion-value.js";
-import "./use-transform.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
+import "./index-6.js";
+import "./AccessibleAnchor.js";
 import "./index-17.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
@@ -73,6 +72,7 @@ import "./Text.js";
 import "./getCloudinaryUrl.js";
 import "./LazyLatexRenderer.js";
 import "./Tooltip.js";
+import "./use-motion-value.js";
 import "./index-9.js";
 import "./index-23.js";
 import "./useIntervalWhen.js";
@@ -91,7 +91,7 @@ class Nt extends a {
         super(p), this.addBase = () => {
             const i = m(1);
             this.base = this.parts.add.sprite({
-                ...l,
+                ...I,
                 y: -30,
                 depthChange: i
             }), this.base.view.setScale(.5), this.colliders.add.box({
@@ -104,7 +104,7 @@ class Nt extends a {
             if (!this.base) return;
             const i = m(2),
                 t = {
-                    ...I
+                    ...l
                 };
             if (this.options.itemId) {
                 const e = d.worldOptions.itemOptions.find(s => s.id === this.options.itemId);

@@ -1,17 +1,17 @@
-const r = {
-    zonedDeviceViews: "zoned-device-views"
-};
-var o = (e => (e.visible = "visible", e.bordersOnly = "bordersOnly", e.fullyHidden = "fullyHidden", e))(o || {});
-const n = () => {
-        const e = localStorage.getItem(r.zonedDeviceViews);
-        return e || "bordersOnly"
-    },
-    s = e => n() !== "fullyHidden",
-    l = e => n() !== "bordersOnly",
-    d = {
-        shouldShow: s,
-        shouldShowInnerZone: l
+import {
+    ap as s,
+    a_ as e
+} from "./App-41.js";
+import {
+    i
+} from "./FixSpinePlugin.js";
+const o = () => i() ? s().zonedDeviceDisplay : e.bordersOnly,
+    r = n => o() !== e.fullyHidden,
+    d = n => o() !== e.bordersOnly,
+    l = {
+        shouldShow: r,
+        shouldShowInnerZone: d
     };
 export {
-    r as D, o as Z, d as a
+    l as Z
 };

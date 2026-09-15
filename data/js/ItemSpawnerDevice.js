@@ -12,25 +12,27 @@ import {
     N as S
 } from "./NewWidthSameAspectRatio.js";
 import {
-    bb as s,
-    al as b,
-    a$ as O,
-    b0 as W,
-    b1 as C,
-    b2 as A,
-    bi as G,
+    bv as s,
+    aL as O,
+    ae as W,
+    ac as b,
+    ad as C,
+    bC as A,
     L as f
 } from "./App-41.js";
 import {
-    G as R,
-    a as T,
+    G,
+    a as R,
     D as p
 } from "./Constants.js";
 import {
-    p as x
+    I as L
+} from "./InventoryItemNameWithCount.js";
+import {
+    p as T
 } from "./playSound.js";
 import {
-    A as L
+    A as x
 } from "./AddOutline.js";
 import {
     R as M
@@ -38,6 +40,8 @@ import {
 import "./_index.js";
 import "./MapModeType.js";
 import "./MapStyle.js";
+import "./MapSound.js";
+import "./howler.js";
 import "./Button.js";
 import "./polished.esm.js";
 import "./inheritsLoose.js";
@@ -75,12 +79,10 @@ import "./util-2.js";
 import "./Shortcut.js";
 import "./Names.js";
 import "./useWillUnmount.js";
-import "./use-motion-value.js";
-import "./use-transform.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
+import "./index-6.js";
+import "./AccessibleAnchor.js";
 import "./index-17.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
@@ -88,7 +90,7 @@ import "./Text.js";
 import "./getCloudinaryUrl.js";
 import "./LazyLatexRenderer.js";
 import "./Tooltip.js";
-import "./howler.js";
+import "./use-motion-value.js";
 import "./index-9.js";
 import "./index-23.js";
 import "./useIntervalWhen.js";
@@ -116,26 +118,26 @@ const c = {
         return c[r]
     };
 var w = (e => (e.collect = "collect", e))(w || {});
-class ii extends b {
+class ei extends O {
     constructor(o) {
         super(o), this.hasLoaded = !1, this.isShowing = !0, this.isWithinInteractionRange = !1, this.itemDimensions = {
             width: 0,
             height: 0
         }, this.setInteractionInfo = () => {
             var u;
-            const t = O(this.options.itemId),
-                i = W(this.options.itemId),
+            const t = W(this.options.itemId),
+                i = b(this.options.itemId),
                 I = C(this.options.itemId);
             let n = !0;
             if (i || I) {
                 const a = ((u = l.me.inventory.slots.get(this.options.itemId)) == null ? void 0 : u.amount) ?? 0;
                 if (i) {
-                    const h = R({
+                    const h = G({
                         itemId: this.options.itemId
                     });
                     n = a < h
                 } else if (I) {
-                    const h = T({
+                    const h = R({
                         itemId: this.options.itemId
                     });
                     n = a < h
@@ -144,7 +146,7 @@ class ii extends b {
             if (t) {
                 const a = this.options.itemAmount;
                 this.interactiveZones.setInfo({
-                    message: A(t, a),
+                    message: L(t, a),
                     action: p.interaction.message.action,
                     allowedToInteract: n,
                     topHeader: n ? void 0 : p.interaction.message.fullInventory,
@@ -152,7 +154,7 @@ class ii extends b {
                 })
             }
         }, this.addOutline = () => {
-            this.hasLoaded && L({
+            this.hasLoaded && x({
                 view: this.itemImage.view
             })
         }, this.removeOutline = () => {
@@ -177,7 +179,7 @@ class ii extends b {
             }), this.interactiveZones.setForceDisabled(!0), this.isWithinInteractionRange && this.removeOutline()
         }, this.onUpdate = () => {
             if (!this.hasLoaded) return;
-            const t = G(),
+            const t = A(),
                 i = this.state.itemAvailableTimestamp ?? 0;
             if (t >= i) {
                 if (this.isShowing) return;
@@ -223,7 +225,7 @@ class ii extends b {
             }, this.interactiveZones.onNonInteractive = () => {
                 g() || (this.removeOutline(), this.isWithinInteractionRange = !1)
             }, this.interactiveZones.onInteraction = () => {
-                this.sendToServerDevice(w.collect), x({
+                this.sendToServerDevice(w.collect), T({
                     path: v("sounds/core/collectItem.mp3"),
                     volume: y({
                         volume: .7,
@@ -235,6 +237,6 @@ class ii extends b {
     }
 }
 export {
-    ii as
+    ei as
     default
 };

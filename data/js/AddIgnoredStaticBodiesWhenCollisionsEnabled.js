@@ -1,5 +1,5 @@
 import {
-    aT as i
+    bg as i
 } from "./App-41.js";
 const t = o => {
     o.colliders.forEach(d => {

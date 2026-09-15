@@ -1,11 +1,11 @@
 import {
-    al as w,
-    ar as b,
+    aL as w,
+    aR as b,
     T as f,
-    aq as M,
-    as as v,
-    at as y,
-    au as x,
+    aQ as M,
+    aS as v,
+    aT as y,
+    aU as x,
     L as P
 } from "./App-41.js";
 import {
@@ -17,11 +17,11 @@ import {
     F as u,
     I as D,
     d as V,
-    e as k
+    e as S
 } from "./FixSpinePlugin.js";
 import {
-    F as I,
-    R as S
+    F as k,
+    R as I
 } from "./ReplaceVisualEditingPreview.js";
 import {
     p as B
@@ -67,12 +67,10 @@ import "./util-2.js";
 import "./Shortcut.js";
 import "./Names.js";
 import "./useWillUnmount.js";
-import "./use-motion-value.js";
-import "./use-transform.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
+import "./index-6.js";
+import "./AccessibleAnchor.js";
 import "./index-17.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
@@ -81,6 +79,7 @@ import "./getCloudinaryUrl.js";
 import "./LazyLatexRenderer.js";
 import "./Tooltip.js";
 import "./howler.js";
+import "./use-motion-value.js";
 import "./index-9.js";
 import "./index-23.js";
 import "./useIntervalWhen.js";
@@ -88,13 +87,14 @@ import "./index-10.js";
 import "./move.js";
 import "./react-flip-move.es.js";
 import "./sounds.js";
+import "./MapSound.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-const F = {
+const R = {
         atlasUrl: c("devices/bounce_pad/spine/skeleton.atlas"),
         jsonUrl: c("devices/bounce_pad/spine/skeleton.json")
     },
@@ -117,7 +117,7 @@ const F = {
         }
     };
 var d = (l => (l.use = "use", l))(d || {});
-class Kt extends w {
+class zt extends w {
     constructor(g) {
         super(g), this.use = () => {
             this.cull.isInsideView && B({
@@ -142,7 +142,7 @@ class Kt extends w {
                 o = t * e + i * r,
                 p = t * r + i * e;
             this.spine = this.parts.add.spine({
-                ...F,
+                ...R,
                 spineViewId: this.id,
                 defaultAnimation: "idle",
                 boundingBox: {
@@ -218,8 +218,8 @@ class Kt extends w {
                 (t = this.spine) != null && t.view && (this.spine.setMixDuration(0), this.playAnimation((this.state.active, "idle")), this.spine.view.updatePose(0), this.spine.resetMixDuration())
             })
         }, this.setupVisualEditing = () => {
-            if (V() || k()) return;
-            const t = I(this, "scale"),
+            if (V() || S()) return;
+            const t = k(this, "scale"),
                 i = n.boundingBox.width,
                 s = n.boundingBox.height;
             this.visualEditing.add.box({
@@ -233,7 +233,7 @@ class Kt extends w {
                 minHeight: s * t.min,
                 maxHeight: s * t.max,
                 onChange: e => {
-                    S(e.x, e.y, {
+                    I(e.x, e.y, {
                         scale: e.width / i,
                         angle: e.angle
                     })
@@ -243,6 +243,6 @@ class Kt extends w {
     }
 }
 export {
-    Kt as
+    zt as
     default
 };

@@ -1,33 +1,33 @@
 import {
-    Z as u
+    Z as y
 } from "./ZoneConstants.js";
 import {
-    av as T,
-    aw as E,
-    ax as F,
-    al as S,
+    aV as T,
+    aW as E,
+    aX as F,
+    aL as S,
     T as p,
-    ay as f,
-    am as I,
-    aq as R,
-    az as D
+    aY as f,
+    aM as I,
+    aQ as R,
+    aZ as D
 } from "./App-41.js";
 import {
     F as m,
-    I as w,
+    I as G,
     i as d,
     d as l,
     e as O
 } from "./FixSpinePlugin.js";
 import {
-    a as G
+    Z as w
 } from "./ZonedDeviceDisplay.js";
 import {
     G as Z
 } from "./GetAssetPath.js";
 import {
     F as k,
-    R as H
+    R as V
 } from "./ReplaceVisualEditingPreview.js";
 import "./_index.js";
 import "./Button.js";
@@ -41,6 +41,7 @@ import "./TutorialConsts.js";
 import "./ActionButton.js";
 import "./index-5.js";
 import "./playSound.js";
+import "./MapSound.js";
 import "./howler.js";
 import "./index-18.js";
 import "./context.js";
@@ -70,12 +71,10 @@ import "./util-2.js";
 import "./Shortcut.js";
 import "./Names.js";
 import "./useWillUnmount.js";
-import "./use-motion-value.js";
-import "./use-transform.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
+import "./index-6.js";
+import "./AccessibleAnchor.js";
 import "./index-17.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
@@ -83,6 +82,7 @@ import "./Text.js";
 import "./getCloudinaryUrl.js";
 import "./LazyLatexRenderer.js";
 import "./Tooltip.js";
+import "./use-motion-value.js";
 import "./index-9.js";
 import "./index-23.js";
 import "./useIntervalWhen.js";
@@ -96,11 +96,11 @@ import "./useDebouncedValue.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-const V = {
+const W = {
         imageId: Z("devices/zone/base.png"),
         imageUrl: Z("devices/zone/base.png")
     },
-    M = o => {
+    x = o => {
         const {
             character: s
         } = o, a = s.physics.state.jump.lastJumpGravityMultiplier ?? 1, t = T({
@@ -113,8 +113,8 @@ const V = {
             r = e.findIndex(n => n.y === 0),
             h = r === -1 ? e : e.slice(0, r),
             g = r === -1 ? 0 : e.length - r,
-            v = h.reduce((n, b) => n + -Math.min(b.y, 0), 0);
-        if (v <= 1e-6) {
+            u = h.reduce((n, b) => n + -Math.min(b.y, 0), 0);
+        if (u <= 1e-6) {
             i.ticks = Array.from({
                 length: g
             }, () => ({
@@ -123,11 +123,11 @@ const V = {
             }));
             return
         }
-        const y = a / t,
+        const v = a / t,
             C = h.length;
-        let c = Math.round(C * y);
+        let c = Math.round(C * v);
         c < 1 && (c = 1);
-        const A = v * y,
+        const A = u * v,
             P = [...F({
                 count: A,
                 numTicks: c,
@@ -143,38 +143,38 @@ const V = {
             }))];
         i.ticks = P
     },
-    W = o => {
+    H = o => {
         const {
             character: s
         } = o;
         s.physics.state.gravityZones.find(t => t.deviceId === o.deviceId) || (s.physics.state.gravityZones.push({
             deviceId: o.deviceId,
             gravityMultiplier: o.gravityMultiplier
-        }), M({
+        }), x({
             character: s
         }))
     },
-    z = o => {
+    L = o => {
         const {
             character: s
         } = o;
-        s.physics.state.gravityZones.find(t => t.deviceId === o.deviceId) && (s.physics.state.gravityZones = s.physics.state.gravityZones.filter(t => t.deviceId !== o.deviceId), M({
+        s.physics.state.gravityZones.find(t => t.deviceId === o.deviceId) && (s.physics.state.gravityZones = s.physics.state.gravityZones.filter(t => t.deviceId !== o.deviceId), x({
             character: s
         }))
     },
-    x = 55;
+    M = 55;
 class hi extends S {
     constructor(s) {
         if (super(s), this.onEnter = () => {
                 const t = m(p());
-                t && W({
+                t && H({
                     character: t,
                     deviceId: this.id,
                     gravityMultiplier: this.options.gravityMultiplier
                 })
             }, this.onLeave = () => {
                 const t = m(p());
-                t && z({
+                t && L({
                     character: t,
                     deviceId: this.id,
                     gravityMultiplier: this.options.gravityMultiplier
@@ -191,7 +191,7 @@ class hi extends S {
                 const e = f().bodies.find(this.sensor.bodyId);
                 i.physics.state.gravityZones.find(h => h.deviceId === this.id) !== void 0 ? e.sensor.charactersInSensor.add(t) : e.sensor.charactersInSensor.delete(t)
             }, this.setupVisualEditing = () => {
-                if (!w() || !d()) return;
+                if (!G() || !d()) return;
                 const t = k(this, "width"),
                     i = k(this, "height");
                 this.visualEditing.add.box({
@@ -204,21 +204,21 @@ class hi extends S {
                     maxHeight: i.max,
                     keepRatio: !1,
                     onChange: e => {
-                        H(e.x, e.y, {
+                        V(e.x, e.y, {
                             rotation: e.angle,
                             width: e.width,
                             height: e.height
                         })
                     }
                 })
-            }, w() && d()) {
+            }, G() && d()) {
             const t = this.parts.add.sprite({
-                ...V,
+                ...W,
                 depthChange: I(2)
             });
             t.view.angle = this.options.rotation, t.view.setScale(.5)
         }
-        if (l() || O() ? this.options.visibleInGame : G.shouldShow(this)) {
+        if (l() || O() ? this.options.visibleInGame : w.shouldShow(this)) {
             this.setupVisualEditing();
             const t = R(this.options.color);
             this.zone = this.parts.add.rect({
@@ -237,8 +237,8 @@ class hi extends S {
         this.sensor = this.sensors.add.rect({
             x: 0,
             y: 0,
-            w: this.options.width - 2 * x,
-            h: this.options.height - 2 * x,
+            w: this.options.width - 2 * M,
+            h: this.options.height - 2 * M,
             angle: this.options.rotation,
             type: D.around,
             onFresh: () => {
@@ -250,7 +250,7 @@ class hi extends S {
         })
     }
     getAlpha() {
-        return l() ? u.alpha : d() && G.shouldShowInnerZone(this) ? u.alpha : 0
+        return l() ? y.alpha : d() && w.shouldShowInnerZone(this) ? y.alpha : 0
     }
 }
 export {

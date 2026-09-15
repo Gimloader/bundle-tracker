@@ -1,10 +1,10 @@
 import {
-    h as l
-} from "./howler.js";
+    M as l
+} from "./MapSound.js";
 import {
-    al as n,
-    a8 as u,
-    b4 as d
+    aL as n,
+    ao as u,
+    bo as d
 } from "./App-41.js";
 import {
     g as m,
@@ -18,6 +18,7 @@ import {
 import {
     C as h
 } from "./Consts.js";
+import "./howler.js";
 import "./_index.js";
 import "./Button.js";
 import "./polished.esm.js";
@@ -58,12 +59,10 @@ import "./util-2.js";
 import "./Shortcut.js";
 import "./Names.js";
 import "./useWillUnmount.js";
-import "./use-motion-value.js";
-import "./use-transform.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
+import "./index-6.js";
+import "./AccessibleAnchor.js";
 import "./index-17.js";
 import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
@@ -71,6 +70,7 @@ import "./Text.js";
 import "./getCloudinaryUrl.js";
 import "./LazyLatexRenderer.js";
 import "./Tooltip.js";
+import "./use-motion-value.js";
 import "./index-9.js";
 import "./index-23.js";
 import "./useIntervalWhen.js";
@@ -84,7 +84,7 @@ import "./useDebouncedValue.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-const w = {
+const y = {
     imageId: "music_device",
     imageUrl: c("devices/music/music-device.png")
 };
@@ -105,7 +105,7 @@ class Dt extends n {
                 s.isBeingReplaced || ((r = t.get(this.id)) == null || r.unload(), t.delete(this.id), p.delete(this.id))
             }, g() && u()) {
             if (!t.get(this.id)) {
-                const r = new l.Howl({
+                const r = new l({
                     src: [d(this.options.audioUrl)],
                     volume: this.options.volume / 100,
                     preload: !0,
@@ -115,7 +115,7 @@ class Dt extends n {
             }
             this.state.currentState === i.playing && this.play(), this.state.currentState === i.stopped && this.isPlaying && this.stop()
         }
-        f() && (this.parts.add.sprite(w), t.delete(this.id))
+        f() && (this.parts.add.sprite(y), t.delete(this.id))
     }
     get howl() {
         return t.get(this.id)

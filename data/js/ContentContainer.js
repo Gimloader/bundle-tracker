@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/PreviewComponent.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/GimkitLiveQuestion.js", "assets/mobxreact.esm.js", "assets/Text.js", "assets/getCloudinaryUrl.js", "assets/LazyLatexRenderer.js", "assets/clsx.m.js", "assets/inheritsLoose.js", "assets/Tooltip.js", "assets/howler.js", "assets/polished.esm.js", "assets/index-1.js", "assets/motion.js", "assets/index-17.js", "assets/use-force-update.js", "assets/use-motion-value.js", "assets/sounds.js", "assets/GetAssetPath.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/PreviewComponent.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/GimkitLiveQuestion.js", "assets/mobxreact.esm.js", "assets/Text.js", "assets/getCloudinaryUrl.js", "assets/LazyLatexRenderer.js", "assets/clsx.m.js", "assets/inheritsLoose.js", "assets/Tooltip.js", "assets/howler.js", "assets/polished.esm.js", "assets/index-1.js", "assets/motion.js", "assets/index-17.js", "assets/use-force-update.js", "assets/use-motion-value.js", "assets/sounds.js", "assets/MapSound.js", "assets/GetAssetPath.js"]))) => i.map(i => d[i]);
 import {
     r as ce,
     I as ia,
@@ -3989,7 +3989,7 @@ var Rc = Object.getOwnPropertyDescriptor,
         for (var n = t > 1 ? void 0 : t ? Rc(r, o) : r, s = e.length - 1, a; s >= 0; s--)(a = e[s]) && (n = a(n) || n);
         return n
     };
-const Tc = ce.lazy(() => Ha(() => import("./PreviewComponent.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19])));
+const Tc = ce.lazy(() => Ha(() => import("./PreviewComponent.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20])));
 let ln = class extends ce.Component {
     constructor() {
         super(...arguments), this.getLink = () => {
