@@ -29085,7 +29085,7 @@ const GU = ["Below", "Above", "Exact"],
                     prefix: D.jsx(vU, {
                         children: D.jsx(yc, {})
                     }),
-                    placeholder: "Search stickers",
+                    placeholder: "Search stickers...",
                     "aria-label": "Search stickers",
                     allowClear: !0,
                     value: A,
@@ -40793,7 +40793,7 @@ class LT {
             Q = Math.min(t / C, E / i);
         this.usedDpi = Q, this.scene.scale.resize(Q * C, Q * i);
         const o = 1 / Q;
-        this.scene.game.canvas.style.transform = "scaleX(" + o + ") scaleY(" + o + ")", this.scene.game.canvas.style.transformOrigin = "0 0", window.scrollTo(0, 0);
+        this.scene.game.canvas.style.width = this.scene.game.canvas.width + "px", this.scene.game.canvas.style.height = this.scene.game.canvas.height + "px", this.scene.game.canvas.style.transform = "scaleX(" + o + ") scaleY(" + o + ")", this.scene.game.canvas.style.transformOrigin = "0 0", window.scrollTo(0, 0);
         const r = C > bC.None.DuringGame.ShowDefaultScaleWhenWidthIsGreaterThan ? bC.None.DuringGame.DefaultScale : C < bC.None.DuringGame.ShowSmallScaleWhenWidthIsLessThan ? bC.None.DuringGame.SmallScale : hA.Math.Linear(bC.None.DuringGame.SmallScale, bC.None.DuringGame.DefaultScale, (C - bC.None.DuringGame.ShowSmallScaleWhenWidthIsLessThan) / (bC.None.DuringGame.ShowDefaultScaleWhenWidthIsGreaterThan - bC.None.DuringGame.ShowSmallScaleWhenWidthIsLessThan));
         w.gui.scale = r, this.scene.scale.refresh()
     }
