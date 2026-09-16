@@ -1,4 +1,4 @@
-import{j as t,d as i,U as r,i as a}from"./_index.js";import{b as c}from"./Centered.js";import{G as n}from"./GetAssetPath.js";import{S as d}from"./SeasonTicketName.js";import{C as l}from"./Names.js";import{S as m}from"./index-2.js";const u=e=>t.jsxs(p,{children:[t.jsx(g,{children:t.jsx(x,{src:n(`seasonTicket/${e.icon}.svg`)})}),t.jsxs(h,{children:[e.tag?t.jsx(f,{children:e.tag}):null,t.jsx(b,{children:e.title}),t.jsx(v,{children:e.description})]})]}),p=i(c).attrs({className:"maxWidth light-shadow"})`
+import{j as t,d as i,U as s,i as a}from"./_index.js";import{b as c}from"./Centered.js";import{G as n}from"./GetAssetPath.js";import{S as d}from"./SeasonTicketName.js";import{C as l}from"./Names.js";import{S as m}from"./index-2.js";const u=e=>t.jsxs(p,{children:[t.jsx(g,{children:t.jsx(x,{src:n(`seasonTicket/${e.icon}.svg`)})}),t.jsxs(h,{children:[e.tag?t.jsx(f,{children:e.tag}):null,t.jsx(b,{children:e.title}),t.jsx(v,{children:e.description})]})]}),p=i(c).attrs({className:"maxWidth light-shadow"})`
   padding: 28px 32px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
@@ -15,7 +15,7 @@ import{j as t,d as i,U as r,i as a}from"./_index.js";import{b as c}from"./Center
 `,h=i.div.attrs({className:"flex-column"})`
   align-items: flex-start;
 `,f=i.div`
-  font-family: ${r.FugazOne};
+  font-family: ${s.FugazOne};
   background: rgba(255, 255, 255, 0.1);
   line-height: 1;
   text-transform: uppercase;
@@ -29,11 +29,11 @@ import{j as t,d as i,U as r,i as a}from"./_index.js";import{b as c}from"./Center
     background: rgba(255, 255, 255, 0.17);
   }
 `,b=i.div`
-  font-family: ${r.FugazOne};
+  font-family: ${s.FugazOne};
   text-transform: uppercase;
   font-size: 22px;
 `,v=i.div`
   font-size: 16px;
   color: rgba(255, 255, 255, 0.94);
   margin-top: -1px;
-`,y=[{icon:"vip",title:"Exclusive Cosmetics",description:`Instantly earn over 20 exclusive cosmetics, only available by purchasing this season's ${d.singularName}. Cosmetics stay in your Locker after the season ends.`},{icon:"rise",title:"Increased XP Limit",description:"Weekly XP limit increased to 20,000. Earn more GimBucks and rewards for your learning!"},{icon:"hammer",title:"Terrains, Props, & Devices",description:"Exclusive access to over 75 terrains, props, and devices to use in your Gimkit Creative maps."},{icon:"megaphone",title:"Free Creative Publishing",description:`Publish your maps to the world without paying 1,000 ${l.currency}!`},{icon:"idea",title:"Creative Slots",description:"Store up to 25 maps on your account!"},{icon:"dog",title:"Play With Friends",description:"Host live games with up to 15 players!",show:e=>e?a():!0}],w=e=>t.jsx(m,{direction:"vertical",size:20,className:"maxWidth",children:y.filter(s=>s.show?s.show(e.forSelf):!0).map((s,o)=>t.jsx(u,{...s},"benefit"+o))}),N="September 16th",I=n("stickers/season_2_2026.png");export{w as B,N as S,I as a};
+`,y=[{icon:"vip",title:"Exclusive Cosmetics",description:`Instantly earn over 15 exclusive cosmetics, only available by purchasing this season's ${d.singularName}. Cosmetics stay in your Locker after the season ends.`},{icon:"rise",title:"Increased XP Limit",description:"Weekly XP limit increased to 20,000. Earn more GimBucks and rewards for your learning!"},{icon:"hammer",title:"Terrains, Props, & Devices",description:"Exclusive access to over 75 terrains, props, and devices to use in your Gimkit Creative maps."},{icon:"megaphone",title:"Free Creative Publishing",description:`Publish your maps to the world without paying 1,000 ${l.currency}!`},{icon:"idea",title:"Creative Slots",description:"Store up to 25 maps on your account!"},{icon:"dog",title:"Play With Friends",description:"Host live games with up to 15 players!",show:e=>e?a():!0}],w=e=>t.jsx(m,{direction:"vertical",size:20,className:"maxWidth",children:y.filter(r=>r.show?r.show(e.forSelf):!0).map((r,o)=>t.jsx(u,{...r},"benefit"+o))}),N="December 9th",I=n("stickers/circus_ticket.png");export{w as B,N as S,I as a};
