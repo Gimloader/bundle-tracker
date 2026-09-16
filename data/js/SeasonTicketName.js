@@ -4,7 +4,7 @@ const e = {
     },
     a = {
         seasonName: "Season",
-        seasonNumber: "2"
+        seasonNumber: "1"
     };
 export {
     e as S, a

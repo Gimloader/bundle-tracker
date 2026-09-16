@@ -1,7 +1,7 @@
 import {
     j as t,
     d as i,
-    U as r,
+    U as s,
     i as a
 } from "./_index.js";
 import {
@@ -59,7 +59,7 @@ const u = e => t.jsxs(p, {
   align-items: flex-start;
 `,
     f = i.div`
-  font-family: ${r.FugazOne};
+  font-family: ${s.FugazOne};
   background: rgba(255, 255, 255, 0.1);
   line-height: 1;
   text-transform: uppercase;
@@ -74,7 +74,7 @@ const u = e => t.jsxs(p, {
   }
 `,
     b = i.div`
-  font-family: ${r.FugazOne};
+  font-family: ${s.FugazOne};
   text-transform: uppercase;
   font-size: 22px;
 `,
@@ -86,7 +86,7 @@ const u = e => t.jsxs(p, {
     y = [{
         icon: "vip",
         title: "Exclusive Cosmetics",
-        description: `Instantly earn over 20 exclusive cosmetics, only available by purchasing this season's ${d.singularName}. Cosmetics stay in your Locker after the season ends.`
+        description: `Instantly earn over 15 exclusive cosmetics, only available by purchasing this season's ${d.singularName}. Cosmetics stay in your Locker after the season ends.`
     }, {
         icon: "rise",
         title: "Increased XP Limit",
@@ -113,12 +113,12 @@ const u = e => t.jsxs(p, {
         direction: "vertical",
         size: 20,
         className: "maxWidth",
-        children: y.filter(s => s.show ? s.show(e.forSelf) : !0).map((s, o) => t.jsx(u, {
-            ...s
+        children: y.filter(r => r.show ? r.show(e.forSelf) : !0).map((r, o) => t.jsx(u, {
+            ...r
         }, "benefit" + o))
     }),
-    N = "September 16th",
-    I = n("stickers/season_2_2026.png");
+    N = "December 9th",
+    I = n("stickers/circus_ticket.png");
 export {
     w as B, N as S, I as a
 };
