@@ -1,1 +1,1 @@
-import{ap as s,a_ as e}from"./App-41.js";import{i}from"./FixSpinePlugin.js";const o=()=>i()?s().zonedDeviceDisplay:e.bordersOnly,r=n=>o()!==e.fullyHidden,d=n=>o()!==e.bordersOnly,l={shouldShow:r,shouldShowInnerZone:d};export{l as Z};
+import{ao as s,aP as e}from"./App-41.js";import{i}from"./FixSpinePlugin.js";const o=()=>i()?s().zonedDeviceDisplay:e.bordersOnly,r=n=>o()!==e.fullyHidden,d=n=>o()!==e.bordersOnly,l={shouldShow:r,shouldShowInnerZone:d};export{l as Z};
