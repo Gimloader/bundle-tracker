@@ -35,10 +35,11 @@ const getDateStr = () => {
 }
 
 export async function pushDataChanges() {
-    const hash = getHash();
-
     execSync("git add data");
     execSync(`git commit -m "Update game data (${getDateStr()})"`);
+    const hash = getHash();
+
+    execSync("git push");
 
     if(!process.env.WEBHOOK_URL) return;
 
@@ -51,10 +52,11 @@ export async function pushDataChanges() {
 }
 
 export async function pushMapChanges() {
+    execSync("git add data");
+    execSync(`git commit -m "Update map data (${getDateStr()})"`);
     const hash = getHash();
 
-    execSync("git add data");
-    execSync(`git commit -m "Update game data (${getDateStr()})"`);
+    execSync("git push");    
 
     if(!process.env.WEBHOOK_URL) return;
 
@@ -71,7 +73,7 @@ export async function pushJsChanges() {
     const dateStr = getDateStr();
 
     execSync("git add data/js data/lastRun.json");
-    execSync(`git commit -m "Update data (${dateStr})"`);
+    execSync(`git commit -m "Update javascript data (${dateStr})"`);
     const hash = getHash();
 
     execSync("git add data/rawjs");
