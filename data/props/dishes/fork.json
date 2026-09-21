@@ -1,6 +1,27 @@
 {
     "id": "dishes/fork",
     "name": "Fork",
+    "tags": [
+        "cutlery",
+        "dinner",
+        "eating",
+        "flatware",
+        "fork",
+        "gray",
+        "grey",
+        "handle",
+        "kitchen",
+        "kitchenware",
+        "metal",
+        "metallic",
+        "prong",
+        "restaurant",
+        "silver",
+        "silverware",
+        "tableware",
+        "tine",
+        "utensil"
+    ],
     "image": {
         "path": "props/dishes/fork.png",
         "width": 69,

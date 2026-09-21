@@ -1,6 +1,23 @@
 {
     "id": "Sand Patch 2",
     "name": "Sand Patch 2",
+    "tags": [
+        "sand",
+        "patch",
+        "sand patch",
+        "ground",
+        "terrain",
+        "dirt",
+        "soil",
+        "earth",
+        "beach",
+        "desert",
+        "dust",
+        "decal",
+        "tan",
+        "beige",
+        "path"
+    ],
     "image": {
         "path": "props/patches/sand_patch_2.png",
         "width": 64,

@@ -1,6 +1,27 @@
 {
     "id": "dishes/glass_1",
     "name": "Glass Cup",
+    "tags": [
+        "glass",
+        "cup",
+        "drinking glass",
+        "tumbler",
+        "glassware",
+        "drinkware",
+        "tableware",
+        "dishes",
+        "water glass",
+        "drink",
+        "beverage",
+        "kitchen",
+        "dining",
+        "restaurant",
+        "bar",
+        "empty",
+        "blue",
+        "clear",
+        "transparent"
+    ],
     "image": {
         "path": "props/dishes/glass_1.png",
         "width": 64,

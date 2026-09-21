@@ -1,6 +1,27 @@
 {
     "id": "Bucket 2",
     "name": "Bucket",
+    "tags": [
+        "bucket",
+        "pail",
+        "water",
+        "container",
+        "handle",
+        "water bucket",
+        "plastic bucket",
+        "liquid",
+        "cleaning",
+        "washing",
+        "wash",
+        "gardening",
+        "garden",
+        "green",
+        "blue",
+        "gray",
+        "grey",
+        "plastic",
+        "metal"
+    ],
     "image": {
         "path": "props/buckets/bucket_2.png",
         "width": 117,

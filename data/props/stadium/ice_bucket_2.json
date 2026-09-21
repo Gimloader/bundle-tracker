@@ -1,6 +1,21 @@
 {
     "id": "stadium/ice_bucket_2",
     "name": "Ice Bucket (Blue)",
+    "tags": [
+        "blue",
+        "bucket",
+        "chilled",
+        "cold",
+        "container",
+        "frozen",
+        "grip",
+        "handle",
+        "ice",
+        "ice bucket",
+        "ice cubes",
+        "pail",
+        "plastic"
+    ],
     "image": {
         "path": "props/stadium/ice_bucket_2.png",
         "width": 372,

@@ -1,6 +1,28 @@
 {
     "id": "medieval/fruit_box/cabbage",
     "name": "Fruit Box (Cabbage)",
+    "tags": [
+        "box",
+        "brown",
+        "cabbage",
+        "crate",
+        "farm",
+        "food",
+        "fruit box",
+        "green",
+        "harvest",
+        "leafy",
+        "lettuce",
+        "market",
+        "medieval",
+        "produce",
+        "vegetable",
+        "vegetable crate",
+        "wood",
+        "wooden",
+        "wooden box",
+        "wooden crate"
+    ],
     "image": {
         "path": "props/medieval/fruit_box/cabbage.png",
         "width": 568,

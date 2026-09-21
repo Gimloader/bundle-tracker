@@ -1,6 +1,24 @@
 {
     "id": "leaf-single-red-2",
     "name": "Leaf",
+    "tags": [
+        "leaf",
+        "autumn",
+        "fall",
+        "autumn leaf",
+        "fall leaf",
+        "foliage",
+        "nature",
+        "plant",
+        "brown",
+        "red",
+        "reddish brown",
+        "russet",
+        "vein",
+        "stem",
+        "single",
+        "cartoon"
+    ],
     "image": {
         "path": "props/farm/leaf/single-red-2.png",
         "width": 128,

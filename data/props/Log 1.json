@@ -1,6 +1,27 @@
 {
     "id": "Log 1",
     "name": "Stump",
+    "tags": [
+        "stump",
+        "tree stump",
+        "log",
+        "wood",
+        "wooden",
+        "timber",
+        "bark",
+        "tree",
+        "forest",
+        "woods",
+        "nature",
+        "outdoor",
+        "root",
+        "roots",
+        "tree rings",
+        "rings",
+        "cut",
+        "chopped",
+        "brown"
+    ],
     "image": {
         "path": "props/logs/log_1.png",
         "width": 257,

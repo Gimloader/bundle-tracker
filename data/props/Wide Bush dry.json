@@ -1,6 +1,27 @@
 {
     "id": "Wide Bush dry",
     "name": "Dry Bush (Wide)",
+    "tags": [
+        "dry bush",
+        "bush",
+        "shrub",
+        "hedge",
+        "plant",
+        "foliage",
+        "vegetation",
+        "nature",
+        "dry",
+        "dead",
+        "brown",
+        "tan",
+        "desert",
+        "arid",
+        "autumn",
+        "fall",
+        "wide",
+        "long",
+        "large"
+    ],
     "image": {
         "path": "props/plants/bushes/wide_dry.png",
         "width": 905,

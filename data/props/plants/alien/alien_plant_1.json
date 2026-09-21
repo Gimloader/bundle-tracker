@@ -1,6 +1,25 @@
 {
     "id": "plants/alien/alien_plant_1",
     "name": "Alien Plant",
+    "tags": [
+        "alien",
+        "alien plant",
+        "extraterrestrial",
+        "fantasy",
+        "flora",
+        "grass",
+        "kelp",
+        "plant",
+        "purple",
+        "sci-fi",
+        "seaweed",
+        "stalk",
+        "tendril",
+        "underwater",
+        "vegetation",
+        "violet",
+        "weed"
+    ],
     "image": {
         "path": "props/plants/alien/alien_plant_1.png",
         "width": 224,

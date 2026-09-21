@@ -1,6 +1,25 @@
 {
     "id": "Stool Vortex",
     "name": "Stool",
+    "tags": [
+        "stool",
+        "furniture",
+        "seating",
+        "seat",
+        "chair",
+        "gray",
+        "grey",
+        "dark gray",
+        "dark grey",
+        "charcoal",
+        "round",
+        "circular",
+        "backless",
+        "wooden",
+        "wood",
+        "kitchen",
+        "low"
+    ],
     "image": {
         "path": "props/stools/stool_vortex.png",
         "width": 166,

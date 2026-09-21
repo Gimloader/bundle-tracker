@@ -1,6 +1,28 @@
 {
     "id": "Cash Stack",
     "name": "Cash Stack ",
+    "tags": [
+        "cash",
+        "money",
+        "stack",
+        "pile",
+        "bill",
+        "banknote",
+        "currency",
+        "paper money",
+        "green",
+        "wealth",
+        "rich",
+        "finance",
+        "bank",
+        "bucks",
+        "dough",
+        "dollars",
+        "reward",
+        "payment",
+        "treasure",
+        "loot"
+    ],
     "image": {
         "path": "props/stacks/stack_cash.png",
         "width": 214,

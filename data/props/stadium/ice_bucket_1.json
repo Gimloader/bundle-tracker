@@ -1,6 +1,21 @@
 {
     "id": "stadium/ice_bucket_1",
     "name": "Ice Bucket (Red)",
+    "tags": [
+        "bucket",
+        "chilled",
+        "cold",
+        "container",
+        "frozen",
+        "grip",
+        "handle",
+        "ice",
+        "ice bucket",
+        "ice cubes",
+        "pail",
+        "plastic",
+        "red"
+    ],
     "image": {
         "path": "props/stadium/ice_bucket_1.png",
         "width": 372,

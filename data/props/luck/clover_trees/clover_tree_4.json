@@ -1,6 +1,23 @@
 {
     "id": "luck/clover_trees/clover_tree_4",
     "name": "Clover Tree",
+    "tags": [
+        "clover",
+        "four-leaf clover",
+        "shamrock",
+        "tree",
+        "plant",
+        "luck",
+        "lucky",
+        "st patricks day",
+        "irish",
+        "nature",
+        "vegetation",
+        "green",
+        "stem",
+        "leaf",
+        "grass"
+    ],
     "image": {
         "path": "props/luck/clover_trees/clover_tree_4.png",
         "width": 497,

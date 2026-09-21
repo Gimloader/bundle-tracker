@@ -1,6 +1,27 @@
 {
     "id": "stadium/ads_base",
     "name": "Stadium Ad Base",
+    "tags": [
+        "ad base",
+        "ad board",
+        "advertising",
+        "arena",
+        "barrier",
+        "billboard",
+        "blank",
+        "board",
+        "empty",
+        "gray",
+        "grey",
+        "hoarding",
+        "panel",
+        "rectangle",
+        "sideline",
+        "sign",
+        "signboard",
+        "sports",
+        "stadium"
+    ],
     "image": {
         "path": "props/stadium/ads_base.png",
         "width": 1188,

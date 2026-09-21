@@ -1,6 +1,26 @@
 {
     "id": "medieval/wooden_table",
     "name": "Wooden Table",
+    "tags": [
+        "board",
+        "brown",
+        "desk",
+        "fantasy",
+        "furniture",
+        "horizontal",
+        "leg",
+        "medieval",
+        "plank",
+        "rustic",
+        "table",
+        "tabletop",
+        "tavern",
+        "timber",
+        "wood",
+        "wooden",
+        "wooden table",
+        "workbench"
+    ],
     "image": {
         "path": "props/medieval/wooden_table.png",
         "width": 1487,

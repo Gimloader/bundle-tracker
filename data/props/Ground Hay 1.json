@@ -1,6 +1,28 @@
 {
     "id": "Ground Hay 1",
     "name": "Ground Hay",
+    "tags": [
+        "agriculture",
+        "barn",
+        "bedding",
+        "dry grass",
+        "farm",
+        "farming",
+        "gold",
+        "golden",
+        "ground",
+        "hay",
+        "hay pile",
+        "haystack",
+        "heap",
+        "mound",
+        "pile",
+        "ranch",
+        "rustic",
+        "stable",
+        "straw",
+        "yellow"
+    ],
     "image": {
         "path": "props/farm/ground_hay_1.png",
         "width": 374,

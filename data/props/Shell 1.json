@@ -1,6 +1,28 @@
 {
     "id": "Shell 1",
     "name": "Shell",
+    "tags": [
+        "shell",
+        "seashell",
+        "sea shell",
+        "conch",
+        "snail shell",
+        "spiral",
+        "beach",
+        "sea",
+        "ocean",
+        "marine",
+        "coast",
+        "shore",
+        "aquatic",
+        "underwater",
+        "orange",
+        "peach",
+        "tan",
+        "aperture",
+        "coiled",
+        "gastropod"
+    ],
     "image": {
         "path": "props/shells/shell_1.png",
         "width": 69,

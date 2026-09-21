@@ -1,6 +1,26 @@
 {
     "id": "Tree Pink 1",
     "name": "Tree (Pink)",
+    "tags": [
+        "tree",
+        "pink tree",
+        "cherry blossom",
+        "sakura",
+        "blossom",
+        "plant",
+        "foliage",
+        "canopy",
+        "trunk",
+        "branch",
+        "wood",
+        "bark",
+        "nature",
+        "outdoor",
+        "pink",
+        "brown",
+        "spring",
+        "cartoon"
+    ],
     "image": {
         "path": "props/trees/tree_pink_1.png",
         "width": 394,

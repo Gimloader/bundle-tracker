@@ -1,6 +1,26 @@
 {
     "id": "dishes/spoon",
     "name": "Spoon",
+    "tags": [
+        "spoon",
+        "cutlery",
+        "utensil",
+        "silverware",
+        "flatware",
+        "tableware",
+        "kitchen",
+        "dining",
+        "eating",
+        "food",
+        "restaurant",
+        "metal",
+        "silver",
+        "gray",
+        "grey",
+        "handle",
+        "teaspoon",
+        "tablespoon"
+    ],
     "image": {
         "path": "props/dishes/spoon.png",
         "width": 109,

@@ -1,6 +1,28 @@
 {
     "id": "Ladybug",
     "name": "Ladybug",
+    "tags": [
+        "ladybug",
+        "ladybird",
+        "lady beetle",
+        "beetle",
+        "bug",
+        "insect",
+        "critter",
+        "animal",
+        "nature",
+        "garden",
+        "red",
+        "black",
+        "spotted",
+        "spots",
+        "dots",
+        "polka dot",
+        "shell",
+        "legs",
+        "cartoon",
+        "cute"
+    ],
     "image": {
         "path": "props/bugs/ladybug.png",
         "width": 137,

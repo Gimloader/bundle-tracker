@@ -1,6 +1,28 @@
 {
     "id": "mining/bottle",
     "name": "Bottle",
+    "tags": [
+        "alchemy",
+        "bottle",
+        "brown",
+        "canteen",
+        "ceramic",
+        "clay",
+        "container",
+        "cork",
+        "earthenware",
+        "elixir",
+        "fantasy",
+        "flask",
+        "jug",
+        "medieval",
+        "mining",
+        "potion",
+        "pottery",
+        "round",
+        "stopper",
+        "vial"
+    ],
     "image": {
         "path": "props/mining/bottle.png",
         "width": 227,

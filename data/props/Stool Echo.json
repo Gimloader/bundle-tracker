@@ -1,6 +1,23 @@
 {
     "id": "Stool Echo",
     "name": "Stool",
+    "tags": [
+        "stool",
+        "furniture",
+        "seating",
+        "seat",
+        "chair",
+        "white",
+        "cream",
+        "off-white",
+        "round",
+        "circular",
+        "backless",
+        "wooden",
+        "wood",
+        "kitchen",
+        "low"
+    ],
     "image": {
         "path": "props/stools/stool_echo.png",
         "width": 166,

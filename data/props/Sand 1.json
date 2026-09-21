@@ -1,6 +1,26 @@
 {
     "id": "Sand 1",
     "name": "Sand Pile",
+    "tags": [
+        "beach",
+        "beige",
+        "construction",
+        "desert",
+        "dirt",
+        "dune",
+        "dust",
+        "earth",
+        "grain",
+        "ground",
+        "heap",
+        "mound",
+        "pile",
+        "sand",
+        "sand pile",
+        "soil",
+        "tan",
+        "yellow"
+    ],
     "image": {
         "path": "props/sand/sand_1.png",
         "width": 394,

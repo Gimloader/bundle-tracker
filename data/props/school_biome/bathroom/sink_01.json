@@ -1,6 +1,28 @@
 {
     "id": "school_biome/bathroom/sink_01",
     "name": "Sink (Horizontal)",
+    "tags": [
+        "sink",
+        "washbasin",
+        "basin",
+        "faucet",
+        "tap",
+        "drain",
+        "bathroom",
+        "restroom",
+        "washroom",
+        "lavatory",
+        "plumbing",
+        "school",
+        "hygiene",
+        "washing",
+        "clean",
+        "white",
+        "blue",
+        "gray",
+        "grey",
+        "horizontal"
+    ],
     "image": {
         "path": "props/school_biome/bathroom/sink_01.png",
         "width": 587,

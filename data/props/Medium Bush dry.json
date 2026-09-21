@@ -1,6 +1,24 @@
 {
     "id": "Medium Bush dry",
     "name": "Dry Bush",
+    "tags": [
+        "dry bush",
+        "bush",
+        "shrub",
+        "hedge",
+        "plant",
+        "foliage",
+        "vegetation",
+        "nature",
+        "dry",
+        "dead",
+        "brown",
+        "tan",
+        "desert",
+        "arid",
+        "autumn",
+        "fall"
+    ],
     "image": {
         "path": "props/plants/bushes/medium_dry.png",
         "width": 650,

@@ -1,6 +1,23 @@
 {
     "id": "Pumpkin 1",
     "name": "Pumpkin",
+    "tags": [
+        "pumpkin",
+        "squash",
+        "gourd",
+        "vegetable",
+        "produce",
+        "food",
+        "plant",
+        "halloween",
+        "fall",
+        "autumn",
+        "harvest",
+        "thanksgiving",
+        "farm",
+        "stem",
+        "orange"
+    ],
     "image": {
         "path": "/props/farm/pumpkin/1.png",
         "width": 330,

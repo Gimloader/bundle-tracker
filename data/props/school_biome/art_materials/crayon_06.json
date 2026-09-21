@@ -1,6 +1,26 @@
 {
     "id": "school_biome/art_materials/crayon_06",
     "name": "Crayon (Yellow)",
+    "tags": [
+        "art",
+        "art supplies",
+        "black",
+        "classroom",
+        "coloring",
+        "colouring",
+        "craft",
+        "crayon",
+        "drawing",
+        "horizontal",
+        "kindergarten",
+        "preschool",
+        "school",
+        "school supplies",
+        "stationery",
+        "wax",
+        "wax crayon",
+        "yellow"
+    ],
     "image": {
         "path": "props/school_biome/art_materials/crayon_06.png",
         "width": 178,

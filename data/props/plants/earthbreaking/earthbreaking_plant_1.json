@@ -1,6 +1,28 @@
 {
     "id": "plants/earthbreaking/earthbreaking_plant_1",
     "name": "Groundbreaking Plant",
+    "tags": [
+        "breakthrough",
+        "crack",
+        "cracked",
+        "emerging",
+        "fissure",
+        "flora",
+        "green",
+        "groundbreaking",
+        "growing",
+        "growth",
+        "leaf",
+        "plant",
+        "sapling",
+        "shoot",
+        "sprout",
+        "sprouting",
+        "stalk",
+        "stem",
+        "vegetation",
+        "weed"
+    ],
     "image": {
         "path": "props/plants/earthbreaking/earthbreaking_plant_1.png",
         "width": 181,

@@ -1,6 +1,22 @@
 {
     "id": "Medium Bush green",
     "name": "Green Bush ",
+    "tags": [
+        "bush",
+        "green bush",
+        "shrub",
+        "hedge",
+        "plant",
+        "foliage",
+        "vegetation",
+        "greenery",
+        "nature",
+        "garden",
+        "outdoor",
+        "park",
+        "landscape",
+        "green"
+    ],
     "image": {
         "path": "props/plants/bushes/medium_green.png",
         "width": 650,

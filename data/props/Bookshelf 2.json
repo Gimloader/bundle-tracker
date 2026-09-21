@@ -1,6 +1,23 @@
 {
     "id": "Bookshelf 2",
     "name": "Bookshelf",
+    "tags": [
+        "bookcase",
+        "bookshelf",
+        "brown",
+        "empty",
+        "furniture",
+        "interior",
+        "library",
+        "office",
+        "rack",
+        "shelf",
+        "shelves",
+        "storage",
+        "study",
+        "wood",
+        "wooden"
+    ],
     "image": {
         "path": "props/office/bookshelf_2.png",
         "width": 795,

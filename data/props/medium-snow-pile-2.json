@@ -1,6 +1,26 @@
 {
     "id": "medium-snow-pile-2",
     "name": "Medium Snow Pile",
+    "tags": [
+        "blue",
+        "cold",
+        "drift",
+        "frozen",
+        "heap",
+        "hill",
+        "ice",
+        "mound",
+        "nature",
+        "pile",
+        "snow",
+        "snow pile",
+        "snowbank",
+        "snowdrift",
+        "snowy",
+        "weather",
+        "white",
+        "winter"
+    ],
     "image": {
         "path": "props/snow_piles/medium/pile_2.png",
         "width": 492,

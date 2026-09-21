@@ -1,6 +1,28 @@
 {
     "id": "Rock 6",
     "name": "Rock",
+    "tags": [
+        "boulder",
+        "cartoon",
+        "cave",
+        "cluster",
+        "flat",
+        "geology",
+        "granite",
+        "gray",
+        "grey",
+        "ground",
+        "landscape",
+        "mountain",
+        "nature",
+        "outdoor",
+        "pebble",
+        "rock",
+        "rocky",
+        "rubble",
+        "stone",
+        "terrain"
+    ],
     "image": {
         "path": "props/rocks/rock_6.png",
         "width": 176,

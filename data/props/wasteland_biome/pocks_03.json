@@ -1,6 +1,25 @@
 {
     "id": "wasteland_biome/pocks_03",
     "name": "Rocks",
+    "tags": [
+        "boulder",
+        "brown",
+        "clay",
+        "desert",
+        "geology",
+        "ground",
+        "mineral",
+        "nature",
+        "outdoor",
+        "rock",
+        "rust",
+        "sandstone",
+        "sedimentary",
+        "smooth",
+        "stone",
+        "terrain",
+        "wasteland"
+    ],
     "image": {
         "path": "props/wasteland_biome/pocks_03.png",
         "width": 686,

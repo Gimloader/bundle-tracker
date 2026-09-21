@@ -1,6 +1,26 @@
 {
     "id": "Wide Bush green",
     "name": "Green Bush (Wide)",
+    "tags": [
+        "bush",
+        "green bush",
+        "wide bush",
+        "shrub",
+        "hedge",
+        "plant",
+        "foliage",
+        "vegetation",
+        "greenery",
+        "nature",
+        "garden",
+        "outdoor",
+        "park",
+        "landscape",
+        "green",
+        "wide",
+        "long",
+        "large"
+    ],
     "image": {
         "path": "props/plants/bushes/wide_green.png",
         "width": 905,

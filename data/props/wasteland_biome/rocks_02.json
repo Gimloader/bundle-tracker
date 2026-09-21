@@ -1,6 +1,27 @@
 {
     "id": "wasteland_biome/rocks_02",
     "name": "Rocks",
+    "tags": [
+        "boulder",
+        "brown",
+        "clay",
+        "desert",
+        "dry",
+        "geology",
+        "ground",
+        "mineral",
+        "nature",
+        "outdoor",
+        "pebble",
+        "rock",
+        "rust",
+        "sandstone",
+        "sedimentary",
+        "smooth",
+        "stone",
+        "terrain",
+        "wasteland"
+    ],
     "image": {
         "path": "props/wasteland_biome/rocks_02.png",
         "width": 709,

@@ -1,6 +1,26 @@
 {
     "id": "school_biome/art_materials/crayon_03",
     "name": "Crayon (Blue)",
+    "tags": [
+        "crayon",
+        "wax crayon",
+        "art supplies",
+        "school supplies",
+        "stationery",
+        "drawing",
+        "coloring",
+        "colouring",
+        "art",
+        "craft",
+        "school",
+        "classroom",
+        "kindergarten",
+        "preschool",
+        "wax",
+        "blue",
+        "black",
+        "horizontal"
+    ],
     "image": {
         "path": "props/school_biome/art_materials/crayon_03.png",
         "width": 195,

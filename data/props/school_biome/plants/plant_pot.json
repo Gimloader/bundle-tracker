@@ -1,6 +1,25 @@
 {
     "id": "school_biome/plants/plant_pot",
     "name": "Plant Pot",
+    "tags": [
+        "brown",
+        "ceramic",
+        "clay",
+        "container",
+        "dirt",
+        "earth",
+        "empty",
+        "flowerpot",
+        "garden",
+        "gardening",
+        "indoor",
+        "plant pot",
+        "planter",
+        "planting",
+        "pot",
+        "soil",
+        "terracotta"
+    ],
     "image": {
         "path": "props/school_biome/plants/plant_pot.png",
         "width": 340,

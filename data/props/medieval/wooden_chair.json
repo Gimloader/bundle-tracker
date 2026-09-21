@@ -1,6 +1,26 @@
 {
     "id": "medieval/wooden_chair",
     "name": "Wooden Chair",
+    "tags": [
+        "backrest",
+        "brown",
+        "chair",
+        "fantasy",
+        "front",
+        "furniture",
+        "leg",
+        "medieval",
+        "plank",
+        "rustic",
+        "seat",
+        "seating",
+        "tavern",
+        "timber",
+        "village",
+        "wood",
+        "wooden",
+        "wooden chair"
+    ],
     "image": {
         "path": "props/medieval/wooden_chair.png",
         "width": 489,

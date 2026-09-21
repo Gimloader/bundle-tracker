@@ -1,6 +1,26 @@
 {
     "id": "stadium/cone_1",
     "name": "Cone",
+    "tags": [
+        "cone",
+        "traffic cone",
+        "pylon",
+        "safety cone",
+        "marker",
+        "obstacle",
+        "orange",
+        "plastic",
+        "road",
+        "street",
+        "construction",
+        "sports",
+        "stadium",
+        "training",
+        "drill",
+        "practice",
+        "safety",
+        "barrier"
+    ],
     "image": {
         "path": "props/stadium/cone_1.png",
         "width": 404,

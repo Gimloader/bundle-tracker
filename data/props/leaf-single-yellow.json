@@ -1,6 +1,28 @@
 {
     "id": "leaf-single-yellow",
     "name": "Leaf",
+    "tags": [
+        "leaf",
+        "autumn",
+        "fall",
+        "autumn leaf",
+        "fall leaf",
+        "foliage",
+        "nature",
+        "plant",
+        "yellow",
+        "brown",
+        "ochre",
+        "amber",
+        "mustard",
+        "golden brown",
+        "maple",
+        "maple leaf",
+        "vein",
+        "stem",
+        "single",
+        "cartoon"
+    ],
     "image": {
         "path": "props/farm/leaf/single-yellow.png",
         "width": 138,

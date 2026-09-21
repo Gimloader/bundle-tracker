@@ -1,6 +1,27 @@
 {
     "id": "Rock 2",
     "name": "Rocks",
+    "tags": [
+        "boulder",
+        "geology",
+        "gray",
+        "grey",
+        "ground",
+        "heap",
+        "mineral",
+        "mound",
+        "nature",
+        "outdoor",
+        "pebble",
+        "pile",
+        "rock",
+        "rock pile",
+        "rocks",
+        "rubble",
+        "stone",
+        "stones",
+        "terrain"
+    ],
     "image": {
         "path": "props/rocks/rock_2.png",
         "width": 688,

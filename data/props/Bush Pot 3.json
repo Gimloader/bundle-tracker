@@ -1,6 +1,27 @@
 {
     "id": "Bush Pot 3",
     "name": "Potted Plant",
+    "tags": [
+        "potted plant",
+        "plant",
+        "bush",
+        "shrub",
+        "pot",
+        "flower pot",
+        "plant pot",
+        "planter",
+        "foliage",
+        "greenery",
+        "topiary",
+        "houseplant",
+        "indoor plant",
+        "gardening",
+        "garden",
+        "terracotta",
+        "clay",
+        "green",
+        "brown"
+    ],
     "image": {
         "path": "props/plants/bush_pot_3.png",
         "width": 135,

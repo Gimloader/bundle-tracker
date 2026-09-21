@@ -1,6 +1,28 @@
 {
     "id": "Basketball",
     "name": "Basketball",
+    "tags": [
+        "basketball",
+        "ball",
+        "sport",
+        "sports",
+        "equipment",
+        "orange",
+        "round",
+        "sphere",
+        "rubber",
+        "leather",
+        "lines",
+        "dots",
+        "pebbled",
+        "textured",
+        "court",
+        "gym",
+        "game",
+        "hoops",
+        "athletics",
+        "recreation"
+    ],
     "image": {
         "path": "props/basketball/basketball.png",
         "width": 245,

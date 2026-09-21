@@ -1,6 +1,28 @@
 {
     "id": "luck/grass_structures/grass_structure_7",
     "name": "Grass Structure",
+    "tags": [
+        "block",
+        "brown",
+        "column",
+        "dirt",
+        "earth",
+        "grass",
+        "grassy",
+        "green",
+        "ground",
+        "nature",
+        "pedestal",
+        "pillar",
+        "platform",
+        "rock",
+        "soil",
+        "stone",
+        "structure",
+        "terrain",
+        "turf",
+        "vertical"
+    ],
     "image": {
         "path": "props/luck/grass_structures/grass_structure_7.png",
         "width": 725,

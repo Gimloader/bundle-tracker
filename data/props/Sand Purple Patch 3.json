@@ -1,6 +1,26 @@
 {
     "id": "Sand Purple Patch 3",
     "name": "Sand Purple Patch 3",
+    "tags": [
+        "sand",
+        "patch",
+        "sand patch",
+        "ground",
+        "terrain",
+        "dirt",
+        "soil",
+        "earth",
+        "beach",
+        "desert",
+        "dust",
+        "decal",
+        "purple",
+        "violet",
+        "lavender",
+        "path",
+        "alien",
+        "fantasy"
+    ],
     "image": {
         "path": "props/patches/sand_purple_patch_3.png",
         "width": 64,

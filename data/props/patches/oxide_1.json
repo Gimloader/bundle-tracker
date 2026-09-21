@@ -1,6 +1,26 @@
 {
     "id": "patches/oxide_1",
     "name": "Dirt",
+    "tags": [
+        "dirt",
+        "patch",
+        "mud",
+        "soil",
+        "dirt patch",
+        "mud patch",
+        "mud puddle",
+        "puddle",
+        "earth",
+        "ground",
+        "terrain",
+        "stain",
+        "oxide",
+        "rust",
+        "brown",
+        "blotch",
+        "splat",
+        "spot"
+    ],
     "image": {
         "path": "props/patches/oxide_1.png",
         "width": 131,

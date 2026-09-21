@@ -1,6 +1,23 @@
 {
     "id": "medieval/kitchen/SPOON_WOODEN",
     "name": "Wooden Spoon",
+    "tags": [
+        "baking",
+        "brown",
+        "cooking",
+        "cutlery",
+        "flatware",
+        "kitchen",
+        "medieval",
+        "rustic",
+        "spoon",
+        "tableware",
+        "tavern",
+        "utensil",
+        "wood",
+        "wooden",
+        "wooden spoon"
+    ],
     "image": {
         "path": "props/medieval/kitchen/SPOON_WOODEN.png",
         "width": 472,

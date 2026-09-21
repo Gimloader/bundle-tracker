@@ -1,6 +1,22 @@
 {
     "id": "mining/dirt_pile_1",
     "name": "Dirt Pile",
+    "tags": [
+        "dirt",
+        "dirt pile",
+        "soil",
+        "earth",
+        "mound",
+        "pile",
+        "heap",
+        "mud",
+        "mining",
+        "excavation",
+        "digging",
+        "construction",
+        "ground",
+        "brown"
+    ],
     "image": {
         "path": "props/mining/dirt_pile_1.png",
         "width": 946,

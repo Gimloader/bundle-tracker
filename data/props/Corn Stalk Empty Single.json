@@ -1,6 +1,28 @@
 {
     "id": "Corn Stalk Empty Single",
     "name": "Corn Stalk (Empty)",
+    "tags": [
+        "corn stalk",
+        "cornstalk",
+        "corn",
+        "maize",
+        "stalk",
+        "stem",
+        "plant",
+        "crop",
+        "leaf",
+        "leaves",
+        "root",
+        "green",
+        "farm",
+        "farming",
+        "agriculture",
+        "field",
+        "garden",
+        "vegetation",
+        "tall",
+        "empty"
+    ],
     "image": {
         "path": "/props/farm/corn_stalk/stalk_empty_single.png",
         "width": 225,

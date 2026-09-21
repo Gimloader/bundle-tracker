@@ -1,6 +1,28 @@
 {
     "id": "Wooden-Bench",
     "name": "Wooden Bench",
+    "tags": [
+        "bench",
+        "wooden bench",
+        "park bench",
+        "garden bench",
+        "seat",
+        "seating",
+        "furniture",
+        "wood",
+        "wooden",
+        "timber",
+        "brown",
+        "backrest",
+        "armrest",
+        "slats",
+        "outdoor",
+        "park",
+        "garden",
+        "patio",
+        "yard",
+        "porch"
+    ],
     "image": {
         "path": "props/park/wooden_bench.png",
         "width": 806,

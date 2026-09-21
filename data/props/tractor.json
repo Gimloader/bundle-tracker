@@ -1,6 +1,28 @@
 {
     "id": "tractor",
     "name": "Tractor",
+    "tags": [
+        "tractor",
+        "vehicle",
+        "farm",
+        "farming",
+        "agriculture",
+        "agricultural",
+        "machinery",
+        "green",
+        "wheel",
+        "tire",
+        "rim",
+        "cab",
+        "seat",
+        "exhaust",
+        "headlight",
+        "ladder",
+        "steps",
+        "hood",
+        "transport",
+        "heavy machinery"
+    ],
     "image": {
         "path": "props/farm/tractor.png",
         "width": 1000,

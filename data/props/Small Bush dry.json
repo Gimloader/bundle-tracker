@@ -1,6 +1,25 @@
 {
     "id": "Small Bush dry",
     "name": "Dry Bush (Small)",
+    "tags": [
+        "dry bush",
+        "bush",
+        "shrub",
+        "hedge",
+        "plant",
+        "foliage",
+        "vegetation",
+        "nature",
+        "dry",
+        "dead",
+        "brown",
+        "tan",
+        "desert",
+        "arid",
+        "autumn",
+        "fall",
+        "small"
+    ],
     "image": {
         "path": "props/plants/bushes/small_dry.png",
         "width": 385,

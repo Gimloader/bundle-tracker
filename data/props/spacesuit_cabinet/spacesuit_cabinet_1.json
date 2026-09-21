@@ -1,6 +1,28 @@
 {
     "id": "spacesuit_cabinet/spacesuit_cabinet_1",
     "name": "Spacesuit Cabinet",
+    "tags": [
+        "spacesuit",
+        "space suit",
+        "cabinet",
+        "locker",
+        "storage",
+        "astronaut",
+        "helmet",
+        "visor",
+        "boots",
+        "gear",
+        "equipment",
+        "sci-fi",
+        "futuristic",
+        "space",
+        "spaceship",
+        "station",
+        "orange",
+        "white",
+        "gray",
+        "grey"
+    ],
     "image": {
         "path": "props/spacesuit_cabinet/spacesuit_cabinet_1.png",
         "width": 466,

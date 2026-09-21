@@ -1,6 +1,26 @@
 {
     "id": "Bench",
     "name": "Park Bench",
+    "tags": [
+        "bench",
+        "bolt",
+        "brown",
+        "furniture",
+        "garden",
+        "metal",
+        "outdoor",
+        "outdoor furniture",
+        "park",
+        "park bench",
+        "plank",
+        "red",
+        "seat",
+        "seating",
+        "slat",
+        "street",
+        "wood",
+        "wooden"
+    ],
     "image": {
         "path": "props/park/bench.png",
         "width": 543,

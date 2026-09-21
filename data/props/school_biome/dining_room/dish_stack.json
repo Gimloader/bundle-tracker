@@ -1,6 +1,27 @@
 {
     "id": "school_biome/dining_room/dish_stack",
     "name": "Lunch Tray Stack",
+    "tags": [
+        "lunch tray",
+        "food tray",
+        "tray",
+        "cafeteria tray",
+        "compartment tray",
+        "stack",
+        "stacked",
+        "pile",
+        "school lunch",
+        "lunch",
+        "cafeteria",
+        "school",
+        "canteen",
+        "dining room",
+        "mess hall",
+        "empty",
+        "clean",
+        "blue",
+        "plastic"
+    ],
     "image": {
         "path": "props/school_biome/dining_room/dish_stack.png",
         "width": 290,

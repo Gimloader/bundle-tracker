@@ -1,6 +1,28 @@
 {
     "id": "Grass Patch 4",
     "name": "Grass Patch 4",
+    "tags": [
+        "circular",
+        "field",
+        "garden",
+        "grass",
+        "grass patch",
+        "grassy",
+        "green",
+        "ground",
+        "lawn",
+        "meadow",
+        "nature",
+        "outdoor",
+        "patch",
+        "round",
+        "terrain",
+        "tile",
+        "top-down",
+        "turf",
+        "vegetation",
+        "yard"
+    ],
     "image": {
         "path": "props/patches/grass_patch_4.png",
         "width": 64,

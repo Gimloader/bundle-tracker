@@ -1,6 +1,24 @@
 {
     "id": "Laptop",
     "name": "Laptop",
+    "tags": [
+        "laptop",
+        "computer",
+        "notebook",
+        "pc",
+        "electronics",
+        "technology",
+        "gadget",
+        "hardware",
+        "office",
+        "work",
+        "study",
+        "keyboard",
+        "gray",
+        "grey",
+        "silver",
+        "open"
+    ],
     "image": {
         "path": "props/office/laptop.png",
         "width": 390,

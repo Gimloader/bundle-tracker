@@ -1,6 +1,23 @@
 {
     "id": "large-snow-pile-1",
     "name": "Large Snow Pile",
+    "tags": [
+        "snow",
+        "snow pile",
+        "snowdrift",
+        "drift",
+        "mound",
+        "heap",
+        "winter",
+        "cold",
+        "frozen",
+        "ice",
+        "weather",
+        "white",
+        "blue",
+        "nature",
+        "hill"
+    ],
     "image": {
         "path": "props/snow_piles/large/pile_1.png",
         "width": 623,

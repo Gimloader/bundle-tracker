@@ -1,6 +1,25 @@
 {
     "id": "dishes/plate_1",
     "name": "Ceramic Plate",
+    "tags": [
+        "plate",
+        "ceramic plate",
+        "dish",
+        "platter",
+        "saucer",
+        "tableware",
+        "dinnerware",
+        "crockery",
+        "ceramic",
+        "porcelain",
+        "kitchen",
+        "dining",
+        "empty",
+        "oval",
+        "pale green",
+        "mint",
+        "white"
+    ],
     "image": {
         "path": "props/dishes/plate_1.png",
         "width": 144,

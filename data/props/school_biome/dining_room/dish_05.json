@@ -1,6 +1,24 @@
 {
     "id": "school_biome/dining_room/dish_05",
     "name": "Food Tray",
+    "tags": [
+        "food tray",
+        "lunch tray",
+        "tray",
+        "cafeteria tray",
+        "compartment tray",
+        "school lunch",
+        "lunch",
+        "meal",
+        "cafeteria",
+        "school",
+        "canteen",
+        "dining room",
+        "empty",
+        "clean",
+        "blue",
+        "plastic"
+    ],
     "image": {
         "path": "props/school_biome/dining_room/dish_05.png",
         "width": 290,

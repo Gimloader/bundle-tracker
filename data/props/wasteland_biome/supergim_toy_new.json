@@ -1,6 +1,26 @@
 {
     "id": "wasteland_biome/supergim_toy_new",
     "name": "Supergim Toy",
+    "tags": [
+        "action figure",
+        "blue",
+        "cape",
+        "character",
+        "collectible",
+        "doll",
+        "figurine",
+        "gim",
+        "gimkit",
+        "hero",
+        "plush",
+        "plushie",
+        "red",
+        "red cape",
+        "superhero",
+        "supergim",
+        "toy",
+        "wasteland"
+    ],
     "image": {
         "path": "props/wasteland_biome/supergim_toy_new.png",
         "width": 367,

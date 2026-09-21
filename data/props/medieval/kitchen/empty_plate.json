@@ -1,6 +1,23 @@
 {
     "id": "medieval/kitchen/empty_plate",
     "name": "Wooden Plate",
+    "tags": [
+        "brown",
+        "dish",
+        "empty",
+        "kitchen",
+        "medieval",
+        "oval",
+        "plate",
+        "platter",
+        "rustic",
+        "tableware",
+        "tavern",
+        "trencher",
+        "wood",
+        "wooden",
+        "wooden plate"
+    ],
     "image": {
         "path": "props/medieval/kitchen/empty_plate.png",
         "width": 454,

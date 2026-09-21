@@ -1,6 +1,23 @@
 {
     "id": "Space Telescope",
     "name": "Space Telescope",
+    "tags": [
+        "telescope",
+        "space telescope",
+        "astronomy",
+        "tripod",
+        "stargazing",
+        "science",
+        "space",
+        "lens",
+        "eyepiece",
+        "optics",
+        "observatory",
+        "stand",
+        "white",
+        "gray",
+        "grey"
+    ],
     "image": {
         "path": "props/space_props/telescope.png",
         "width": 249,

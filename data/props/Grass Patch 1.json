@@ -1,6 +1,26 @@
 {
     "id": "Grass Patch 1",
     "name": "Grass Patch 1",
+    "tags": [
+        "field",
+        "garden",
+        "grass",
+        "grass patch",
+        "grassy",
+        "green",
+        "ground",
+        "lawn",
+        "meadow",
+        "nature",
+        "outdoor",
+        "patch",
+        "terrain",
+        "tile",
+        "top-down",
+        "turf",
+        "vegetation",
+        "yard"
+    ],
     "image": {
         "path": "props/patches/grass_patch_1.png",
         "width": 64,

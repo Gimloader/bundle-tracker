@@ -1,6 +1,28 @@
 {
     "id": "Tree Dry 1",
     "name": "Tree (Dry)",
+    "tags": [
+        "tree",
+        "autumn tree",
+        "dry tree",
+        "fall tree",
+        "plant",
+        "foliage",
+        "canopy",
+        "trunk",
+        "branch",
+        "wood",
+        "bark",
+        "nature",
+        "outdoor",
+        "dry",
+        "autumn",
+        "fall",
+        "drought",
+        "wilted",
+        "brown",
+        "cartoon"
+    ],
     "image": {
         "path": "props/trees/tree_dry_1.png",
         "width": 394,

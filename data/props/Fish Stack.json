@@ -1,6 +1,26 @@
 {
     "id": "Fish Stack",
     "name": "Fish Stack ",
+    "tags": [
+        "animal",
+        "blue",
+        "catch",
+        "colorful",
+        "fin",
+        "fish",
+        "fishery",
+        "fishing",
+        "food",
+        "gray",
+        "grey",
+        "heap",
+        "market",
+        "pile",
+        "red",
+        "seafood",
+        "spotted",
+        "stack"
+    ],
     "image": {
         "path": "props/stacks/stack_fish.png",
         "width": 210,

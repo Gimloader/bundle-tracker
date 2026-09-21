@@ -1,6 +1,25 @@
 {
     "id": "farm_wooden_bench",
     "name": "Wooden Bench",
+    "tags": [
+        "bench",
+        "wooden bench",
+        "seat",
+        "seating",
+        "furniture",
+        "wood",
+        "wooden",
+        "timber",
+        "brown",
+        "backless",
+        "rustic",
+        "farm",
+        "outdoor",
+        "park",
+        "garden",
+        "plank",
+        "board"
+    ],
     "image": {
         "path": "props/farm/wooden_bench.png",
         "width": 667,

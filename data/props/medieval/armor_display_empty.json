@@ -1,6 +1,28 @@
 {
     "id": "medieval/armor_display_empty",
     "name": "Armor Display (Empty)",
+    "tags": [
+        "armor display",
+        "armor rack",
+        "armor stand",
+        "armory",
+        "blacksmith",
+        "brown",
+        "castle",
+        "display",
+        "dummy",
+        "empty",
+        "fantasy",
+        "hanger",
+        "mannequin",
+        "medieval",
+        "rack",
+        "rpg",
+        "stand",
+        "timber",
+        "wood",
+        "wooden"
+    ],
     "image": {
         "path": "props/medieval/armor_display_empty.png",
         "width": 665,

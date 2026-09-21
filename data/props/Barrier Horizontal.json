@@ -1,6 +1,27 @@
 {
     "id": "Barrier Horizontal",
     "name": "Barrier (Horizontal)",
+    "tags": [
+        "barrier",
+        "barricade",
+        "jersey barrier",
+        "concrete barrier",
+        "concrete",
+        "cement",
+        "roadblock",
+        "divider",
+        "traffic",
+        "road",
+        "street",
+        "highway",
+        "construction",
+        "wall",
+        "obstacle",
+        "defense",
+        "horizontal",
+        "gray",
+        "grey"
+    ],
     "image": {
         "path": "props/barriers/barrier_horizontal.png",
         "width": 380,

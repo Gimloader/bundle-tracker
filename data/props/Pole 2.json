@@ -1,6 +1,25 @@
 {
     "id": "Pole 2",
     "name": "Wooden Pole 2",
+    "tags": [
+        "pole",
+        "wooden pole",
+        "post",
+        "fence post",
+        "plank",
+        "board",
+        "beam",
+        "wood",
+        "wooden",
+        "lumber",
+        "timber",
+        "stake",
+        "stick",
+        "slat",
+        "brown",
+        "vertical",
+        "construction"
+    ],
     "image": {
         "path": "props/signs/pole_2.png",
         "width": 45,

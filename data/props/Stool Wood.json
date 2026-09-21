@@ -1,6 +1,25 @@
 {
     "id": "Stool Wood",
     "name": "Wooden Stool",
+    "tags": [
+        "stool",
+        "wooden stool",
+        "seat",
+        "chair",
+        "furniture",
+        "wood",
+        "wooden",
+        "brown",
+        "round",
+        "backless",
+        "rustic",
+        "bar stool",
+        "barstool",
+        "tavern",
+        "pub",
+        "kitchen",
+        "footrest"
+    ],
     "image": {
         "path": "props/stools/stool_wood.png",
         "width": 166,

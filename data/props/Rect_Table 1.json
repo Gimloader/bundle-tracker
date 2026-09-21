@@ -1,6 +1,28 @@
 {
     "id": "Rect_Table 1",
     "name": "Table",
+    "tags": [
+        "table",
+        "desk",
+        "furniture",
+        "rectangular",
+        "rectangle",
+        "tabletop",
+        "leg",
+        "office",
+        "classroom",
+        "school",
+        "indoor",
+        "interior",
+        "workstation",
+        "counter",
+        "beige",
+        "cream",
+        "pale green",
+        "khaki",
+        "simple",
+        "minimalist"
+    ],
     "image": {
         "path": "props/tables/rectangular_table_1.png",
         "width": 1468,

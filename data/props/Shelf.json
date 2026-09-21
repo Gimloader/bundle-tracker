@@ -1,6 +1,28 @@
 {
     "id": "Shelf",
     "name": "Metal Shelf",
+    "tags": [
+        "shelf",
+        "shelves",
+        "shelving",
+        "metal shelf",
+        "shelving unit",
+        "rack",
+        "storage rack",
+        "storage",
+        "metal",
+        "steel",
+        "gray",
+        "grey",
+        "warehouse",
+        "garage",
+        "workshop",
+        "storeroom",
+        "industrial",
+        "factory",
+        "empty",
+        "utility"
+    ],
     "image": {
         "path": "props/workshop/shelf.png",
         "width": 353,

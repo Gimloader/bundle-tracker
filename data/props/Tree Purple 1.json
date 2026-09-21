@@ -1,6 +1,25 @@
 {
     "id": "Tree Purple 1",
     "name": "Tree (Purple)",
+    "tags": [
+        "tree",
+        "purple tree",
+        "plant",
+        "foliage",
+        "canopy",
+        "trunk",
+        "branch",
+        "wood",
+        "bark",
+        "nature",
+        "outdoor",
+        "purple",
+        "violet",
+        "brown",
+        "alien",
+        "fantasy",
+        "cartoon"
+    ],
     "image": {
         "path": "props/trees/tree_purple_1.png",
         "width": 394,

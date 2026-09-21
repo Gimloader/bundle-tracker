@@ -1,6 +1,28 @@
 {
     "id": "Gumball-Machine-blue",
     "name": "Gumball Machine (Blue)",
+    "tags": [
+        "arcade",
+        "blue",
+        "bubblegum",
+        "bubblegum machine",
+        "candy",
+        "candy dispenser",
+        "chute",
+        "coin slot",
+        "coin-operated",
+        "colorful",
+        "dispenser",
+        "glass",
+        "globe",
+        "gum",
+        "gumball",
+        "gumball machine",
+        "retro",
+        "sweets",
+        "vending machine",
+        "vintage"
+    ],
     "image": {
         "path": "props/restaurant/gumball_blue.png",
         "width": 271,

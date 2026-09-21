@@ -1,6 +1,27 @@
 {
     "id": "Shovel 3",
     "name": "Shovel",
+    "tags": [
+        "blade",
+        "construction",
+        "dig",
+        "digging",
+        "dirt",
+        "farm",
+        "gardening",
+        "ground",
+        "handle",
+        "metal",
+        "red",
+        "shovel",
+        "soil",
+        "spade",
+        "stuck",
+        "tool",
+        "wood",
+        "wooden",
+        "yard"
+    ],
     "image": {
         "path": "props/shovels/shovel_3.png",
         "width": 117,

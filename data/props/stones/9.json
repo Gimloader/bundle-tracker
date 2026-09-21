@@ -1,6 +1,27 @@
 {
     "id": "stones/9",
     "name": "Stone Rock",
+    "tags": [
+        "boulder",
+        "boulders",
+        "dots",
+        "gray",
+        "grey",
+        "ground",
+        "landscape",
+        "nature",
+        "outdoor",
+        "pebble",
+        "rock",
+        "rocks",
+        "rounded",
+        "single",
+        "smooth",
+        "spots",
+        "spotted",
+        "stone",
+        "stones"
+    ],
     "image": {
         "path": "props/stones/9.png",
         "width": 179,

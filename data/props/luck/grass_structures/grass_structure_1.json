@@ -1,6 +1,28 @@
 {
     "id": "luck/grass_structures/grass_structure_1",
     "name": "Grass Structure",
+    "tags": [
+        "arch",
+        "archway",
+        "cave",
+        "dirt",
+        "dome",
+        "earth",
+        "entrance",
+        "grass",
+        "grassy",
+        "green",
+        "ground",
+        "hill",
+        "hollow",
+        "mound",
+        "nature",
+        "passage",
+        "passageway",
+        "soil",
+        "terrain",
+        "tunnel"
+    ],
     "image": {
         "path": "props/luck/grass_structures/grass_structure_1.png",
         "width": 769,

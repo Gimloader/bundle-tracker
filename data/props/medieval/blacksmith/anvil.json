@@ -1,6 +1,23 @@
 {
     "id": "medieval/blacksmith/anvil",
     "name": "Anvil",
+    "tags": [
+        "anvil",
+        "blacksmith",
+        "forge",
+        "smithy",
+        "metalworking",
+        "crafting",
+        "tool",
+        "iron",
+        "steel",
+        "metal",
+        "stone",
+        "medieval",
+        "workshop",
+        "gray",
+        "grey"
+    ],
     "image": {
         "path": "props/medieval/blacksmith/anvil.png",
         "width": 650,

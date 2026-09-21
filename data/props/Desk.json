@@ -1,6 +1,26 @@
 {
     "id": "Desk",
     "name": "Desk",
+    "tags": [
+        "desk",
+        "table",
+        "furniture",
+        "wood",
+        "wooden",
+        "brown",
+        "drawer",
+        "knob",
+        "handle",
+        "leg",
+        "office",
+        "office desk",
+        "writing desk",
+        "study",
+        "workstation",
+        "classroom",
+        "school",
+        "interior"
+    ],
     "image": {
         "path": "props/office/desk.png",
         "width": 497,

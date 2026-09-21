@@ -1,6 +1,27 @@
 {
     "id": "medieval/kitchen/bread",
     "name": "Bread",
+    "tags": [
+        "baguette",
+        "baked good",
+        "bakery",
+        "baking",
+        "bread",
+        "brown",
+        "carb",
+        "crust",
+        "food",
+        "kitchen",
+        "loaf",
+        "loaf of bread",
+        "market",
+        "meal",
+        "medieval",
+        "rustic",
+        "tan",
+        "tavern",
+        "wheat"
+    ],
     "image": {
         "path": "props/medieval/kitchen/bread.png",
         "width": 457,

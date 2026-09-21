@@ -1,6 +1,23 @@
 {
     "id": "mining/cooking_pan",
     "name": "Campfire Pan",
+    "tags": [
+        "campfire",
+        "camping",
+        "cooking",
+        "cooking pan",
+        "cookware",
+        "frying pan",
+        "gray",
+        "green",
+        "grey",
+        "handle",
+        "kitchen",
+        "kitchenware",
+        "metal",
+        "pan",
+        "skillet"
+    ],
     "image": {
         "path": "props/mining/cooking_pan.png",
         "width": 298,

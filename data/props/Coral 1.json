@@ -1,6 +1,27 @@
 {
     "id": "Coral 1",
     "name": "Coral",
+    "tags": [
+        "algae",
+        "aquarium",
+        "aquatic",
+        "branch",
+        "branching",
+        "coral",
+        "coral reef",
+        "deep sea",
+        "green",
+        "marine",
+        "ocean",
+        "plant",
+        "reef",
+        "sea",
+        "seabed",
+        "seafloor",
+        "seaweed",
+        "sponge",
+        "underwater"
+    ],
     "image": {
         "path": "props/corals/coral_1.png",
         "width": 208,

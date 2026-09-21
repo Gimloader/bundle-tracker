@@ -1,6 +1,28 @@
 {
     "id": "snow-log-group-vertical",
     "name": "Snowy Log (Vertical)",
+    "tags": [
+        "cold",
+        "firewood",
+        "forest",
+        "frost",
+        "frosty",
+        "fuel",
+        "ice",
+        "icy",
+        "log",
+        "logs",
+        "lumber",
+        "pile",
+        "snow",
+        "snowy",
+        "stack",
+        "timber",
+        "vertical",
+        "winter",
+        "wood",
+        "woodpile"
+    ],
     "image": {
         "path": "props/logs/snow/log_group_vertical.png",
         "width": 316,

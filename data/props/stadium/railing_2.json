@@ -1,6 +1,26 @@
 {
     "id": "stadium/railing_2",
     "name": "Railing",
+    "tags": [
+        "railing",
+        "handrail",
+        "guardrail",
+        "fence",
+        "barrier",
+        "safety",
+        "post",
+        "pole",
+        "bar",
+        "metal",
+        "steel",
+        "iron",
+        "gray",
+        "grey",
+        "vertical",
+        "stadium",
+        "bleachers",
+        "arena"
+    ],
     "image": {
         "path": "props/stadium/railing_2.png",
         "width": 391,

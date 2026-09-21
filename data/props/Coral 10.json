@@ -1,6 +1,28 @@
 {
     "id": "Coral 10",
     "name": "Coral",
+    "tags": [
+        "anemone",
+        "aquarium",
+        "aquatic",
+        "coral",
+        "coral reef",
+        "deep sea",
+        "magenta",
+        "marine",
+        "ocean",
+        "pink",
+        "polyp",
+        "purple",
+        "reef",
+        "sea",
+        "seabed",
+        "seafloor",
+        "sponge",
+        "tube",
+        "underwater",
+        "violet"
+    ],
     "image": {
         "path": "props/corals/coral_10.png",
         "width": 81,

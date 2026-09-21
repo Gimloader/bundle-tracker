@@ -1,6 +1,25 @@
 {
     "id": "snowman",
     "name": "Snowman",
+    "tags": [
+        "buttons",
+        "carrot",
+        "carrot nose",
+        "celebration",
+        "christmas",
+        "coal",
+        "festive",
+        "frosty",
+        "hat",
+        "holiday",
+        "scarf",
+        "snow",
+        "snowman",
+        "striped scarf",
+        "top hat",
+        "winter",
+        "xmas"
+    ],
     "image": {
         "path": "props/snowmen/snowman.png",
         "width": 335,

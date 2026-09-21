@@ -1,6 +1,26 @@
 {
     "id": "school_biome/laboratory/petridis_01",
     "name": "Petri Dish",
+    "tags": [
+        "petri dish",
+        "dish",
+        "culture dish",
+        "laboratory",
+        "lab",
+        "science",
+        "biology",
+        "microbiology",
+        "chemistry",
+        "school",
+        "glassware",
+        "glass",
+        "container",
+        "transparent",
+        "clear",
+        "empty",
+        "round",
+        "circular"
+    ],
     "image": {
         "path": "props/school_biome/laboratory/petridis_01.png",
         "width": 274,

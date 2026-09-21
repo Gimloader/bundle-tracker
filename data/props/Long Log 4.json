@@ -1,6 +1,23 @@
 {
     "id": "Long Log 4",
     "name": "Wooden Log",
+    "tags": [
+        "branch",
+        "brown",
+        "firewood",
+        "forest",
+        "horizontal",
+        "log",
+        "lumber",
+        "nature",
+        "outdoors",
+        "timber",
+        "tree trunk",
+        "trunk",
+        "wood",
+        "wooden",
+        "wooden log"
+    ],
     "image": {
         "path": "props/logs/log_4.png",
         "width": 365,

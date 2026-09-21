@@ -1,6 +1,28 @@
 {
     "id": "luck/clovers/clovers_1",
     "name": "Clovers",
+    "tags": [
+        "charm",
+        "clover",
+        "clovers",
+        "foliage",
+        "fortune",
+        "four-leaf clover",
+        "good luck",
+        "grass",
+        "green",
+        "ireland",
+        "irish",
+        "leaf",
+        "leaves",
+        "luck",
+        "lucky",
+        "nature",
+        "plant",
+        "saint patricks day",
+        "shamrock",
+        "st patricks day"
+    ],
     "image": {
         "path": "props/luck/clovers/clovers_1.png",
         "width": 166,

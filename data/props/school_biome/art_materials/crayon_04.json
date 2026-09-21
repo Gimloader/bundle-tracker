@@ -1,6 +1,26 @@
 {
     "id": "school_biome/art_materials/crayon_04",
     "name": "Crayon (Green)",
+    "tags": [
+        "art",
+        "art supplies",
+        "black",
+        "classroom",
+        "coloring",
+        "colouring",
+        "craft",
+        "crayon",
+        "drawing",
+        "green",
+        "horizontal",
+        "kindergarten",
+        "preschool",
+        "school",
+        "school supplies",
+        "stationery",
+        "wax",
+        "wax crayon"
+    ],
     "image": {
         "path": "props/school_biome/art_materials/crayon_04.png",
         "width": 195,

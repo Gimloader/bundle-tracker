@@ -1,6 +1,27 @@
 {
     "id": "Pole Dark 2",
     "name": "Dark Wooden Pole",
+    "tags": [
+        "pole",
+        "wooden pole",
+        "post",
+        "fence post",
+        "plank",
+        "board",
+        "beam",
+        "wood",
+        "wooden",
+        "dark wood",
+        "lumber",
+        "timber",
+        "stake",
+        "stick",
+        "slat",
+        "brown",
+        "dark brown",
+        "vertical",
+        "construction"
+    ],
     "image": {
         "path": "props/signs/pole_dark_2.png",
         "width": 45,

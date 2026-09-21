@@ -1,6 +1,24 @@
 {
     "id": "leaf-single-lime",
     "name": "Leaf",
+    "tags": [
+        "leaf",
+        "autumn",
+        "fall",
+        "autumn leaf",
+        "fall leaf",
+        "foliage",
+        "nature",
+        "plant",
+        "green",
+        "lime",
+        "lime green",
+        "olive",
+        "vein",
+        "stem",
+        "single",
+        "cartoon"
+    ],
     "image": {
         "path": "props/farm/leaf/single-lime.png",
         "width": 94,

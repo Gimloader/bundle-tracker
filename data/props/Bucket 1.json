@@ -1,6 +1,26 @@
 {
     "id": "Bucket 1",
     "name": "Bucket",
+    "tags": [
+        "bucket",
+        "pail",
+        "fish",
+        "fishing",
+        "catch",
+        "water",
+        "red fish",
+        "fish bucket",
+        "container",
+        "handle",
+        "tail",
+        "fin",
+        "gray",
+        "grey",
+        "red",
+        "blue",
+        "metal",
+        "seafood"
+    ],
     "image": {
         "path": "props/buckets/bucket_1.png",
         "width": 120,

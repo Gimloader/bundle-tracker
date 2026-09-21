@@ -1,6 +1,23 @@
 {
     "id": "stones/12",
     "name": "Stone Rock",
+    "tags": [
+        "boulder",
+        "boulders",
+        "gray",
+        "grey",
+        "ground",
+        "landscape",
+        "nature",
+        "outdoor",
+        "rock",
+        "rocks",
+        "rounded",
+        "single",
+        "smooth",
+        "stone",
+        "stones"
+    ],
     "image": {
         "path": "props/stones/12.png",
         "width": 395,

@@ -1,0 +1,835 @@
+{
+    "id": "gadgetBlaster",
+    "name": "Gadget Blaster",
+    "description": "Aims and fires a selected gadget at players or through a configured sequence.",
+    "optionSchema": {
+        "categories": {
+            "categories": [
+                {
+                    "id": "featured",
+                    "name": "Featured"
+                },
+                {
+                    "id": "targeting",
+                    "name": "Shoot At Players",
+                    "hideIf": [
+                        [
+                            {
+                                "key": "mode",
+                                "compare": "NOT_EQUAL",
+                                "value": "shootAtPlayers"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "id": "sequence",
+                    "name": "Sequence",
+                    "hideIf": [
+                        [
+                            {
+                                "key": "mode",
+                                "compare": "NOT_EQUAL",
+                                "value": "sequence"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "id": "availability",
+                    "name": "Availability"
+                }
+            ],
+            "showAllOptionsAt": "end"
+        },
+        "options": [
+            {
+                "key": "gadgetId",
+                "option": {
+                    "label": "Gadget",
+                    "description": "The gadget used by the Gadget Blaster.",
+                    "type": "itemId",
+                    "defaultValue": "zapper_common",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "allowedItemsCategories": [
+                            "weapon"
+                        ]
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "mode",
+                "option": {
+                    "label": "Mode",
+                    "description": "Choose how the Gadget Blaster aims and fires.",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "shootAtPlayers",
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Shoot At Players",
+                                "value": "shootAtPlayers"
+                            },
+                            {
+                                "name": "Sequence",
+                                "value": "sequence"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "radiusOffset",
+                "option": {
+                    "label": "Radius Offset",
+                    "description": "Additional distance applied to the gadget and projectile while aiming.",
+                    "type": "numberInput",
+                    "defaultValue": -30,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": -1000,
+                        "max": 1000,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            },
+            {
+                "key": "team",
+                "option": {
+                    "label": "Safe Team",
+                    "description": "The Gadget Blaster will not target or damage players on this team.",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": "__SENTRY_TEAM",
+                    "props": {
+                        "options": [
+                            {
+                                "value": "__SENTRY_TEAM",
+                                "name": "Team Sentry"
+                            },
+                            {
+                                "name": "Team 1",
+                                "value": "1"
+                            },
+                            {
+                                "name": "Team 2",
+                                "value": "2"
+                            },
+                            {
+                                "name": "Team 3",
+                                "value": "3"
+                            },
+                            {
+                                "name": "Team 4",
+                                "value": "4"
+                            },
+                            {
+                                "name": "Team 5",
+                                "value": "5"
+                            },
+                            {
+                                "name": "Team 6",
+                                "value": "6"
+                            },
+                            {
+                                "name": "Team 7",
+                                "value": "7"
+                            },
+                            {
+                                "name": "Team 8",
+                                "value": "8"
+                            },
+                            {
+                                "name": "Team 9",
+                                "value": "9"
+                            },
+                            {
+                                "name": "Team 10",
+                                "value": "10"
+                            },
+                            {
+                                "name": "Team 11",
+                                "value": "11"
+                            },
+                            {
+                                "name": "Team 12",
+                                "value": "12"
+                            },
+                            {
+                                "name": "Team 13",
+                                "value": "13"
+                            },
+                            {
+                                "name": "Team 14",
+                                "value": "14"
+                            },
+                            {
+                                "name": "Team 15",
+                                "value": "15"
+                            },
+                            {
+                                "name": "Team 16",
+                                "value": "16"
+                            },
+                            {
+                                "name": "Team 17",
+                                "value": "17"
+                            },
+                            {
+                                "name": "Team 18",
+                                "value": "18"
+                            },
+                            {
+                                "name": "Team 19",
+                                "value": "19"
+                            },
+                            {
+                                "name": "Team 20",
+                                "value": "20"
+                            },
+                            {
+                                "name": "Team 21",
+                                "value": "21"
+                            },
+                            {
+                                "name": "Team 22",
+                                "value": "22"
+                            },
+                            {
+                                "name": "Team 23",
+                                "value": "23"
+                            },
+                            {
+                                "name": "Team 24",
+                                "value": "24"
+                            },
+                            {
+                                "name": "Team 25",
+                                "value": "25"
+                            },
+                            {
+                                "name": "Team 26",
+                                "value": "26"
+                            },
+                            {
+                                "name": "Team 27",
+                                "value": "27"
+                            },
+                            {
+                                "name": "Team 28",
+                                "value": "28"
+                            },
+                            {
+                                "name": "Team 29",
+                                "value": "29"
+                            },
+                            {
+                                "name": "Team 30",
+                                "value": "30"
+                            },
+                            {
+                                "name": "Team 31",
+                                "value": "31"
+                            },
+                            {
+                                "name": "Team 32",
+                                "value": "32"
+                            },
+                            {
+                                "name": "Team 33",
+                                "value": "33"
+                            },
+                            {
+                                "name": "Team 34",
+                                "value": "34"
+                            },
+                            {
+                                "name": "Team 35",
+                                "value": "35"
+                            },
+                            {
+                                "name": "Team 36",
+                                "value": "36"
+                            },
+                            {
+                                "name": "Team 37",
+                                "value": "37"
+                            },
+                            {
+                                "name": "Team 38",
+                                "value": "38"
+                            },
+                            {
+                                "name": "Team 39",
+                                "value": "39"
+                            },
+                            {
+                                "name": "Team 40",
+                                "value": "40"
+                            },
+                            {
+                                "name": "Team 41",
+                                "value": "41"
+                            },
+                            {
+                                "name": "Team 42",
+                                "value": "42"
+                            },
+                            {
+                                "name": "Team 43",
+                                "value": "43"
+                            },
+                            {
+                                "name": "Team 44",
+                                "value": "44"
+                            },
+                            {
+                                "name": "Team 45",
+                                "value": "45"
+                            },
+                            {
+                                "name": "Team 46",
+                                "value": "46"
+                            },
+                            {
+                                "name": "Team 47",
+                                "value": "47"
+                            },
+                            {
+                                "name": "Team 48",
+                                "value": "48"
+                            },
+                            {
+                                "name": "Team 49",
+                                "value": "49"
+                            },
+                            {
+                                "name": "Team 50",
+                                "value": "50"
+                            },
+                            {
+                                "name": "Team 51",
+                                "value": "51"
+                            },
+                            {
+                                "name": "Team 52",
+                                "value": "52"
+                            },
+                            {
+                                "name": "Team 53",
+                                "value": "53"
+                            },
+                            {
+                                "name": "Team 54",
+                                "value": "54"
+                            },
+                            {
+                                "name": "Team 55",
+                                "value": "55"
+                            },
+                            {
+                                "name": "Team 56",
+                                "value": "56"
+                            },
+                            {
+                                "name": "Team 57",
+                                "value": "57"
+                            },
+                            {
+                                "name": "Team 58",
+                                "value": "58"
+                            },
+                            {
+                                "name": "Team 59",
+                                "value": "59"
+                            },
+                            {
+                                "name": "Team 60",
+                                "value": "60"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "activeOnGameStart",
+                "option": {
+                    "label": "Active On Game Start",
+                    "type": "select",
+                    "description": "Whether the Gadget Blaster starts aiming and firing when the game begins.",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured",
+                    "availability"
+                ]
+            },
+            {
+                "key": "semiTransparentWhenInactive",
+                "option": {
+                    "label": "Semi-Transparent When Inactive",
+                    "type": "select",
+                    "description": "Whether the Gadget Blaster remains semi-transparent while inactive.",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "availability"
+                ]
+            },
+            {
+                "key": "activateChannel",
+                "option": {
+                    "label": "Activate Gadget Blaster when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Activate the Gadget Blaster when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "availability"
+                ]
+            },
+            {
+                "key": "deactivateChannel",
+                "option": {
+                    "label": "Deactivate Gadget Blaster when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Deactivate the Gadget Blaster when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "availability"
+                ]
+            },
+            {
+                "key": "damageMultiplier",
+                "option": {
+                    "label": "Damage Multiplier",
+                    "description": "Multiplies the selected gadget's projectile damage.",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0.01,
+                        "max": 100,
+                        "step": 0.01,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "aimAccuracy",
+                "option": {
+                    "label": "Aim Accuracy",
+                    "description": "How accurately the Gadget Blaster aims at players.",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": 0.5,
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Very Low",
+                                "value": 0
+                            },
+                            {
+                                "name": "Low",
+                                "value": 0.25
+                            },
+                            {
+                                "name": "Medium",
+                                "value": 0.5
+                            },
+                            {
+                                "name": "High",
+                                "value": 0.7
+                            },
+                            {
+                                "name": "Very High",
+                                "value": 0.9
+                            },
+                            {
+                                "name": "Max",
+                                "value": 1
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "mode",
+                                "compare": "NOT_EQUAL",
+                                "value": "shootAtPlayers"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "targeting"
+                ]
+            },
+            {
+                "key": "fireRate",
+                "option": {
+                    "label": "Fire Rate",
+                    "description": "How quickly the Gadget Blaster fires at players.",
+                    "type": "select",
+                    "validators": [
+                        null
+                    ],
+                    "defaultValue": 0.5,
+                    "props": {
+                        "options": [
+                            {
+                                "name": "Super Slow",
+                                "value": 0
+                            },
+                            {
+                                "name": "Very Slow",
+                                "value": 0.1
+                            },
+                            {
+                                "name": "Slow",
+                                "value": 0.25
+                            },
+                            {
+                                "name": "Medium",
+                                "value": 0.5
+                            },
+                            {
+                                "name": "Fast",
+                                "value": 0.75
+                            },
+                            {
+                                "name": "Very Fast",
+                                "value": 0.9
+                            },
+                            {
+                                "name": "Fastest",
+                                "value": 1
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "mode",
+                                "compare": "NOT_EQUAL",
+                                "value": "shootAtPlayers"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "targeting"
+                ]
+            },
+            {
+                "key": "targetRange",
+                "option": {
+                    "label": "Target Range",
+                    "description": "How far from the base the Gadget Blaster can detect players.",
+                    "type": "numberInput",
+                    "defaultValue": 1000,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 100,
+                        "max": 5000,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            },
+            {
+                "key": "angleRange",
+                "option": {
+                    "label": "Angle Range",
+                    "description": "The total angle the Gadget Blaster can aim through, centered around the direction set with Live Editing.",
+                    "type": "numberInput",
+                    "defaultValue": 180,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 360,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "mode",
+                                "compare": "NOT_EQUAL",
+                                "value": "shootAtPlayers"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "targeting"
+                ]
+            },
+            {
+                "key": "restAngle",
+                "option": {
+                    "label": "Rest Angle",
+                    "description": "The angle the Gadget Blaster returns to when it cannot find a player. 0 is up, 90 is right, 180 is down and 270 is left.",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0,
+                        "max": 360,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            },
+            {
+                "key": "angleSequence",
+                "option": {
+                    "label": "Angle Sequence",
+                    "description": "Aiming angles in degrees, with one step per line. 0 is up, 90 is right, 180 is down and 270 is left. Maximum 128 steps.",
+                    "type": "textInput",
+                    "defaultValue": "0",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "0\n45\n90\n135",
+                        "textArea": true,
+                        "rows": 4,
+                        "maxLength": 1024
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "mode",
+                                "compare": "NOT_EQUAL",
+                                "value": "sequence"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "sequence"
+                ]
+            },
+            {
+                "key": "fireSequence",
+                "option": {
+                    "label": "Fire Sequence",
+                    "description": "Use one step per line: 1 to fire and 0 to pause. Maximum 128 steps.",
+                    "type": "textInput",
+                    "defaultValue": "1",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "1\n1\n0",
+                        "textArea": true,
+                        "rows": 4,
+                        "maxLength": 1024
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "mode",
+                                "compare": "NOT_EQUAL",
+                                "value": "sequence"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "sequence"
+                ]
+            },
+            {
+                "key": "fireSequencePerAngle",
+                "option": {
+                    "label": "Fire Sequence Per Angle",
+                    "type": "select",
+                    "description": "When enabled, the complete Fire Sequence runs at each angle before advancing to the next Angle Sequence entry.",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "mode",
+                                "compare": "NOT_EQUAL",
+                                "value": "sequence"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "sequence"
+                ]
+            },
+            {
+                "key": "sequenceStepIntervalMs",
+                "option": {
+                    "label": "Sequence Step Interval (Milliseconds)",
+                    "description": "How many milliseconds pass between sequence steps. Timing stays consistent if the server tick rate changes.",
+                    "type": "numberInput",
+                    "defaultValue": 200,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 25,
+                        "max": 300000,
+                        "step": 25,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "mode",
+                                "compare": "NOT_EQUAL",
+                                "value": "sequence"
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "sequence"
+                ]
+            }
+        ]
+    },
+    "defaultState": {
+        "aimAngle": 0,
+        "active": true
+    },
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {
+        "in": {
+            "connections": [
+                {
+                    "id": "activate",
+                    "name": "Activate Gadget Blaster"
+                },
+                {
+                    "id": "deactivate",
+                    "name": "Deactivate Gadget Blaster"
+                }
+            ]
+        }
+    },
+    "minimumRoleLevel": 90,
+    "maxOnMap": 512,
+    "initialMemoryCost": 25,
+    "subsequentMemoryCost": 25
+}

@@ -1,6 +1,27 @@
 {
     "id": "mining/town_sign",
     "name": "Town Sign",
+    "tags": [
+        "town sign",
+        "sign",
+        "signboard",
+        "signpost",
+        "wooden sign",
+        "board",
+        "notice board",
+        "placard",
+        "wood",
+        "wooden",
+        "plank",
+        "post",
+        "bolt",
+        "blank",
+        "empty",
+        "rustic",
+        "western",
+        "mining",
+        "brown"
+    ],
     "image": {
         "path": "props/mining/town_sign.png",
         "width": 1135,

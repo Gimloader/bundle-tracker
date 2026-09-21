@@ -1,6 +1,26 @@
 {
     "id": "school_biome/trophies/trophy_baseball_gloves",
     "name": "Baseball Glove",
+    "tags": [
+        "baseball glove",
+        "baseball mitt",
+        "glove",
+        "mitt",
+        "baseball",
+        "ball",
+        "catchers mitt",
+        "sport",
+        "sports",
+        "sports equipment",
+        "athletic",
+        "school",
+        "trophy",
+        "leather",
+        "stitching",
+        "brown",
+        "white",
+        "red"
+    ],
     "image": {
         "path": "props/school_biome/trophies/trophy_baseball_gloves.png",
         "width": 255,

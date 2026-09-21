@@ -1,6 +1,25 @@
 {
     "id": "Ice Barrier Horizontal",
     "name": "Ice Barrier (Horizontal)",
+    "tags": [
+        "barrier",
+        "block",
+        "blue",
+        "breakable",
+        "cold",
+        "crack",
+        "cracked",
+        "crystal",
+        "fractured",
+        "frost",
+        "frozen",
+        "horizontal",
+        "ice",
+        "ice barrier",
+        "obstacle",
+        "wall",
+        "winter"
+    ],
     "image": {
         "path": "props/barriers/ice_barrier_horizontal.png",
         "width": 402,

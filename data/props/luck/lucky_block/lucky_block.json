@@ -1,6 +1,26 @@
 {
     "id": "luck/lucky_block/lucky_block",
     "name": "Lucky Block",
+    "tags": [
+        "lucky block",
+        "block",
+        "cube",
+        "box",
+        "question block",
+        "mystery box",
+        "question mark",
+        "yellow",
+        "gold",
+        "golden",
+        "mystery",
+        "surprise",
+        "bonus",
+        "powerup",
+        "loot",
+        "reward",
+        "platformer",
+        "rivet"
+    ],
     "image": {
         "path": "props/luck/lucky_block/lucky_block.png",
         "width": 548,

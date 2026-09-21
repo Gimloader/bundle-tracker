@@ -1,6 +1,24 @@
 {
     "id": "Arrow (Thin)",
     "name": "Arrow (Thin)",
+    "tags": [
+        "arrow",
+        "direction",
+        "forward",
+        "horizontal",
+        "icon",
+        "indicator",
+        "next",
+        "pointer",
+        "right",
+        "right arrow",
+        "rounded",
+        "sign",
+        "symbol",
+        "thin",
+        "ui",
+        "white"
+    ],
     "image": {
         "path": "props/arrows/arrow_thin.png",
         "width": 512,

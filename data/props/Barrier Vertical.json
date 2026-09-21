@@ -1,6 +1,27 @@
 {
     "id": "Barrier Vertical",
     "name": "Barrier (Vertical)",
+    "tags": [
+        "barrier",
+        "barricade",
+        "jersey barrier",
+        "concrete barrier",
+        "concrete",
+        "cement",
+        "roadblock",
+        "divider",
+        "traffic",
+        "road",
+        "street",
+        "highway",
+        "construction",
+        "wall",
+        "obstacle",
+        "defense",
+        "vertical",
+        "gray",
+        "grey"
+    ],
     "image": {
         "path": "props/barriers/barrier_vertical.png",
         "width": 178,

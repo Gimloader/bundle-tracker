@@ -1,6 +1,28 @@
 {
     "id": "Briefcase-metal",
     "name": "Metal Briefcase",
+    "tags": [
+        "aluminum",
+        "attache case",
+        "briefcase",
+        "business",
+        "case",
+        "gray",
+        "grey",
+        "handle",
+        "heist",
+        "keyhole",
+        "latch",
+        "lock",
+        "luggage",
+        "metal",
+        "metallic",
+        "ridged",
+        "security",
+        "silver",
+        "spy",
+        "suitcase"
+    ],
     "image": {
         "path": "props/briefcases/metal_briefcase.png",
         "width": 554,

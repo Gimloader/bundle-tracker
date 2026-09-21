@@ -1,6 +1,21 @@
 {
     "id": "medieval/kitchen/bowl",
     "name": "Wooden Bowl",
+    "tags": [
+        "basin",
+        "bowl",
+        "brown",
+        "container",
+        "dish",
+        "empty",
+        "kitchen",
+        "medieval",
+        "rustic",
+        "tableware",
+        "wood",
+        "wooden",
+        "wooden bowl"
+    ],
     "image": {
         "path": "props/medieval/kitchen/bowl.png",
         "width": 434,

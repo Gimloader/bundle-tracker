@@ -1,6 +1,27 @@
 {
     "id": "Ice Barrier Vertical",
     "name": "Ice Barrier (Vertical)",
+    "tags": [
+        "barrier",
+        "block",
+        "blue",
+        "breakable",
+        "cold",
+        "column",
+        "crack",
+        "cracked",
+        "crystal",
+        "fractured",
+        "frost",
+        "frozen",
+        "ice",
+        "ice barrier",
+        "obstacle",
+        "pillar",
+        "vertical",
+        "wall",
+        "winter"
+    ],
     "image": {
         "path": "props/barriers/ice_barrier_vertical.png",
         "width": 196,

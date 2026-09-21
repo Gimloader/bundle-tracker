@@ -1,6 +1,26 @@
 {
     "id": "Tree Red 3",
     "name": "Tree (Red)",
+    "tags": [
+        "tree",
+        "red tree",
+        "autumn tree",
+        "fall tree",
+        "plant",
+        "foliage",
+        "canopy",
+        "trunk",
+        "branch",
+        "wood",
+        "bark",
+        "nature",
+        "outdoor",
+        "autumn",
+        "fall",
+        "red",
+        "brown",
+        "cartoon"
+    ],
     "image": {
         "path": "props/trees/tree_red_3.png",
         "width": 409,

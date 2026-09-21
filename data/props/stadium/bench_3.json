@@ -1,6 +1,26 @@
 {
     "id": "stadium/bench_3",
     "name": "Stadium Bench (Purple)",
+    "tags": [
+        "stadium bench",
+        "bench",
+        "dugout",
+        "shelter",
+        "team bench",
+        "sideline",
+        "stadium",
+        "sports",
+        "soccer",
+        "football",
+        "canopy",
+        "awning",
+        "roof",
+        "seat",
+        "seating",
+        "aluminum",
+        "metal",
+        "purple"
+    ],
     "image": {
         "path": "props/stadium/bench_3.png",
         "width": 3154,

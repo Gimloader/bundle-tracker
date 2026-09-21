@@ -1,6 +1,27 @@
 {
     "id": "stadium/bench_4",
     "name": "Stadium Bench (Grey)",
+    "tags": [
+        "aluminum",
+        "awning",
+        "bench",
+        "canopy",
+        "dugout",
+        "football",
+        "gray",
+        "grey",
+        "metal",
+        "roof",
+        "seat",
+        "seating",
+        "shelter",
+        "sideline",
+        "soccer",
+        "sports",
+        "stadium",
+        "stadium bench",
+        "team bench"
+    ],
     "image": {
         "path": "props/stadium/bench_4.png",
         "width": 3154,

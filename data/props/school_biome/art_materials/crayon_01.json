@@ -1,6 +1,25 @@
 {
     "id": "school_biome/art_materials/crayon_01",
     "name": "Crayon (Pink)",
+    "tags": [
+        "crayon",
+        "wax crayon",
+        "art supplies",
+        "school supplies",
+        "stationery",
+        "drawing",
+        "coloring",
+        "colouring",
+        "art",
+        "craft",
+        "school",
+        "classroom",
+        "kindergarten",
+        "preschool",
+        "wax",
+        "pink",
+        "horizontal"
+    ],
     "image": {
         "path": "props/school_biome/art_materials/crayon_01.png",
         "width": 195,

@@ -1,6 +1,24 @@
 {
     "id": "Filing Cabinets 1",
     "name": "Filing Cabinet",
+    "tags": [
+        "filing cabinet",
+        "file cabinet",
+        "cabinet",
+        "furniture",
+        "office",
+        "storage",
+        "drawer",
+        "handle",
+        "label",
+        "metal",
+        "steel",
+        "beige",
+        "cream",
+        "archive",
+        "tall",
+        "closed"
+    ],
     "image": {
         "path": "props/office/filing_cabinets_1.png",
         "width": 507,

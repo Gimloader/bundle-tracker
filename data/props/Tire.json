@@ -1,6 +1,23 @@
 {
     "id": "Tire",
     "name": "Tire",
+    "tags": [
+        "tire",
+        "tyre",
+        "rubber",
+        "wheel",
+        "automotive",
+        "vehicle",
+        "car",
+        "tread",
+        "black",
+        "garage",
+        "mechanic",
+        "junkyard",
+        "repair",
+        "racetrack",
+        "spare tire"
+    ],
     "image": {
         "path": "props/workshop/tire.png",
         "width": 267,

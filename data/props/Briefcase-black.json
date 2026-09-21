@@ -1,6 +1,27 @@
 {
     "id": "Briefcase-black",
     "name": "Black Briefcase",
+    "tags": [
+        "briefcase",
+        "case",
+        "attache case",
+        "suitcase",
+        "bag",
+        "luggage",
+        "black",
+        "dark gray",
+        "dark grey",
+        "handle",
+        "lock",
+        "keyhole",
+        "latch",
+        "business",
+        "office",
+        "work",
+        "agent",
+        "spy",
+        "travel"
+    ],
     "image": {
         "path": "props/briefcases/black_briefcase.png",
         "width": 554,

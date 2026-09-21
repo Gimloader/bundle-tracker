@@ -1,6 +1,24 @@
 {
     "id": "stools/purple_seat",
     "name": "Purple Seat",
+    "tags": [
+        "stool",
+        "barstool",
+        "bar stool",
+        "seat",
+        "chair",
+        "furniture",
+        "purple",
+        "violet",
+        "round",
+        "circular",
+        "cushion",
+        "padded",
+        "interior",
+        "bar",
+        "diner",
+        "counter"
+    ],
     "image": {
         "path": "props/stools/purple_seat.png",
         "width": 428,

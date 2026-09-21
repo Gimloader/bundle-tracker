@@ -1,6 +1,28 @@
 {
     "id": "school_biome/art_materials/palette",
     "name": "Art Palette",
+    "tags": [
+        "palette",
+        "art palette",
+        "paint palette",
+        "artist palette",
+        "paint",
+        "painting",
+        "art",
+        "artist",
+        "painter",
+        "art supplies",
+        "school supplies",
+        "craft",
+        "school",
+        "classroom",
+        "studio",
+        "wooden",
+        "brown",
+        "colorful",
+        "paint splotch",
+        "thumb hole"
+    ],
     "image": {
         "path": "props/school_biome/art_materials/palette.png",
         "width": 466,

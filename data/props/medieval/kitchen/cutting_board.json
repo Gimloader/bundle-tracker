@@ -1,6 +1,25 @@
 {
     "id": "medieval/kitchen/cutting_board",
     "name": "Cutting Board",
+    "tags": [
+        "board",
+        "brown",
+        "butcher block",
+        "chopping block",
+        "chopping board",
+        "cooking",
+        "cutting block",
+        "cutting board",
+        "food prep",
+        "kitchen",
+        "medieval",
+        "rectangular",
+        "rustic",
+        "tan",
+        "tavern",
+        "wood",
+        "wooden"
+    ],
     "image": {
         "path": "props/medieval/kitchen/cutting_board.png",
         "width": 523,

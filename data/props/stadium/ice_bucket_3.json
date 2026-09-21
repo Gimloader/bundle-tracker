@@ -1,6 +1,21 @@
 {
     "id": "stadium/ice_bucket_3",
     "name": "Ice Bucket (Purple)",
+    "tags": [
+        "bucket",
+        "chilled",
+        "cold",
+        "container",
+        "frozen",
+        "grip",
+        "handle",
+        "ice",
+        "ice bucket",
+        "ice cubes",
+        "pail",
+        "plastic",
+        "purple"
+    ],
     "image": {
         "path": "props/stadium/ice_bucket_3.png",
         "width": 372,

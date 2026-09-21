@@ -1,6 +1,27 @@
 {
     "id": "Box Wooden",
     "name": "Wooden Crate",
+    "tags": [
+        "crate",
+        "box",
+        "wooden crate",
+        "wooden box",
+        "wood",
+        "wooden",
+        "timber",
+        "plank",
+        "board",
+        "cargo",
+        "shipping",
+        "freight",
+        "storage",
+        "container",
+        "warehouse",
+        "brown",
+        "nail",
+        "brace",
+        "square"
+    ],
     "image": {
         "path": "props/boxes/box_wooden.png",
         "width": 281,

@@ -1,6 +1,28 @@
 {
     "id": "Flower 1",
     "name": "Flower",
+    "tags": [
+        "bloom",
+        "blossom",
+        "cartoon",
+        "daisy",
+        "doodle",
+        "flora",
+        "flower",
+        "garden",
+        "green",
+        "leaf",
+        "leaves",
+        "meadow",
+        "nature",
+        "outdoor",
+        "petal",
+        "plant",
+        "spring",
+        "stem",
+        "white",
+        "yellow"
+    ],
     "image": {
         "path": "props/plants/flower_1.png",
         "width": 40,

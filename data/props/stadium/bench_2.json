@@ -1,6 +1,26 @@
 {
     "id": "stadium/bench_2",
     "name": "Stadium Bench (Blue)",
+    "tags": [
+        "stadium bench",
+        "bench",
+        "dugout",
+        "shelter",
+        "team bench",
+        "sideline",
+        "stadium",
+        "sports",
+        "soccer",
+        "football",
+        "canopy",
+        "awning",
+        "roof",
+        "seat",
+        "seating",
+        "aluminum",
+        "metal",
+        "blue"
+    ],
     "image": {
         "path": "props/stadium/bench_2.png",
         "width": 3154,

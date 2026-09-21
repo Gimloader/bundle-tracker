@@ -1,6 +1,28 @@
 {
     "id": "patches/moss_10",
     "name": "Moss",
+    "tags": [
+        "moss",
+        "mossy",
+        "patch",
+        "algae",
+        "lichen",
+        "mold",
+        "slime",
+        "blob",
+        "puddle",
+        "green",
+        "dots",
+        "spotted",
+        "ground",
+        "terrain",
+        "nature",
+        "vegetation",
+        "swamp",
+        "forest",
+        "floor",
+        "fungus"
+    ],
     "image": {
         "path": "props/patches/moss_10.png",
         "width": 449,

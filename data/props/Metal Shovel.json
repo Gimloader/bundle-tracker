@@ -1,6 +1,28 @@
 {
     "id": "Metal Shovel",
     "name": "Metal Shovel",
+    "tags": [
+        "shovel",
+        "spade",
+        "tool",
+        "hand tool",
+        "garden tool",
+        "gardening",
+        "digging",
+        "metal",
+        "wood",
+        "wooden",
+        "blade",
+        "handle",
+        "scoop",
+        "construction",
+        "excavation",
+        "farming",
+        "gray",
+        "grey",
+        "silver",
+        "brown"
+    ],
     "image": {
         "path": "/props/farm/metal_shovel/shovel.png",
         "width": 457,

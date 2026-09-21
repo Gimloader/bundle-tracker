@@ -1,6 +1,27 @@
 {
     "id": "luck/grass_structures/grass_structure_8",
     "name": "Grass Structure",
+    "tags": [
+        "block",
+        "brown",
+        "cube",
+        "dirt",
+        "earth",
+        "grass",
+        "grassy",
+        "green",
+        "ground",
+        "ledge",
+        "nature",
+        "platform",
+        "platformer",
+        "soil",
+        "square",
+        "structure",
+        "terrain",
+        "tile",
+        "turf"
+    ],
     "image": {
         "path": "props/luck/grass_structures/grass_structure_8.png",
         "width": 1401,

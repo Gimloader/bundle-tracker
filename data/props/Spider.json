@@ -1,6 +1,27 @@
 {
     "id": "Spider",
     "name": "Spider",
+    "tags": [
+        "spider",
+        "arachnid",
+        "bug",
+        "insect",
+        "tarantula",
+        "pest",
+        "creature",
+        "animal",
+        "halloween",
+        "spooky",
+        "creepy",
+        "scary",
+        "black",
+        "dark",
+        "gray",
+        "grey",
+        "legs",
+        "fangs",
+        "crawler"
+    ],
     "image": {
         "path": "props/bugs/spider.png",
         "width": 185,

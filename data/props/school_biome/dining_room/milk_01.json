@@ -1,6 +1,27 @@
 {
     "id": "school_biome/dining_room/milk_01",
     "name": "Milk",
+    "tags": [
+        "milk",
+        "milk carton",
+        "carton",
+        "school milk",
+        "beverage",
+        "drink",
+        "dairy",
+        "school lunch",
+        "lunch",
+        "breakfast",
+        "food",
+        "cafeteria",
+        "school",
+        "canteen",
+        "dining room",
+        "cardboard",
+        "white",
+        "blue",
+        "light blue"
+    ],
     "image": {
         "path": "props/school_biome/dining_room/milk_01.png",
         "width": 224,

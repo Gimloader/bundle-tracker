@@ -1,6 +1,24 @@
 {
     "id": "Tree Green 1",
     "name": "Tree (Green)",
+    "tags": [
+        "tree",
+        "green tree",
+        "plant",
+        "foliage",
+        "canopy",
+        "trunk",
+        "branch",
+        "wood",
+        "bark",
+        "nature",
+        "outdoor",
+        "green",
+        "brown",
+        "summer",
+        "spring",
+        "cartoon"
+    ],
     "image": {
         "path": "props/trees/tree_green_1.png",
         "width": 394,

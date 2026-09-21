@@ -1,6 +1,27 @@
 {
     "id": "school_biome/art_materials/brushes_pack",
     "name": "Brushes Pack",
+    "tags": [
+        "paintbrush",
+        "paint brush",
+        "brush",
+        "brush holder",
+        "holder",
+        "cup",
+        "pot",
+        "jar",
+        "art supplies",
+        "art",
+        "painting",
+        "artist",
+        "craft",
+        "school",
+        "classroom",
+        "studio",
+        "stationery",
+        "desk",
+        "blue"
+    ],
     "image": {
         "path": "props/school_biome/art_materials/brushes_pack.png",
         "width": 167,

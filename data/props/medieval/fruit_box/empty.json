@@ -1,6 +1,26 @@
 {
     "id": "medieval/fruit_box/empty",
     "name": "Fruit Box (Empty)",
+    "tags": [
+        "box",
+        "brown",
+        "container",
+        "crate",
+        "empty",
+        "farm",
+        "fruit box",
+        "fruit crate",
+        "harvest",
+        "market",
+        "medieval",
+        "produce",
+        "storage",
+        "vegetable crate",
+        "wood",
+        "wooden",
+        "wooden box",
+        "wooden crate"
+    ],
     "image": {
         "path": "props/medieval/fruit_box/empty.png",
         "width": 568,

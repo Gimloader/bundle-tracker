@@ -1,6 +1,28 @@
 {
     "id": "Horizontal Wooden Fence Single",
     "name": "Wooden Fence (Horizontal)",
+    "tags": [
+        "fence",
+        "wooden fence",
+        "fencing",
+        "barrier",
+        "boundary",
+        "enclosure",
+        "post",
+        "rail",
+        "railing",
+        "wood",
+        "wooden",
+        "timber",
+        "log",
+        "horizontal",
+        "brown",
+        "farm",
+        "ranch",
+        "corral",
+        "yard",
+        "outdoor"
+    ],
     "image": {
         "path": "props/farm/wooden_fence/horizontal_single.png",
         "width": 364,

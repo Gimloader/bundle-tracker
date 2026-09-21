@@ -1,6 +1,25 @@
 {
     "id": "Bookshelf 1",
     "name": "Bookshelf",
+    "tags": [
+        "book",
+        "bookcase",
+        "books",
+        "bookshelf",
+        "brown",
+        "colorful",
+        "furniture",
+        "interior",
+        "library",
+        "office",
+        "reading",
+        "shelf",
+        "shelves",
+        "storage",
+        "study",
+        "wood",
+        "wooden"
+    ],
     "image": {
         "path": "props/office/bookshelf_1.png",
         "width": 795,

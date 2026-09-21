@@ -1,6 +1,27 @@
 {
     "id": "Rock 7",
     "name": "Rock",
+    "tags": [
+        "boulder",
+        "cartoon",
+        "cave",
+        "flat",
+        "geology",
+        "granite",
+        "gray",
+        "grey",
+        "ground",
+        "landscape",
+        "mountain",
+        "nature",
+        "outdoor",
+        "pebble",
+        "rock",
+        "rocky",
+        "smooth",
+        "stone",
+        "terrain"
+    ],
     "image": {
         "path": "props/rocks/rock_7.png",
         "width": 126,

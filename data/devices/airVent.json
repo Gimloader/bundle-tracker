@@ -1,0 +1,110 @@
+{
+    "id": "airVent",
+    "name": "Air Vent",
+    "description": "Applies a directional impulse when a character enters.",
+    "optionSchema": {
+        "categories": {
+            "categories": [
+                {
+                    "id": "Featured",
+                    "name": "Featured"
+                }
+            ],
+            "showAllOptionsAt": "end"
+        },
+        "options": [
+            {
+                "key": "forceMultiplier",
+                "option": {
+                    "label": "Force Multiplier",
+                    "description": "Multiplies the force applied by the Air Vent",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0.5,
+                        "max": 2,
+                        "step": 0.1,
+                        "allowEmpty": false,
+                        "useSlider": true
+                    }
+                },
+                "categories": [
+                    "Featured"
+                ]
+            },
+            {
+                "key": "scale",
+                "option": {
+                    "label": "Scale",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0.3,
+                        "max": 3,
+                        "step": 0.1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            },
+            {
+                "key": "angle",
+                "option": {
+                    "label": "Angle",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": -360,
+                        "max": 360,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            },
+            {
+                "key": "zoneLength",
+                "option": {
+                    "label": "Zone Length",
+                    "type": "numberInput",
+                    "defaultValue": 200,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 100,
+                        "max": 25000,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            }
+        ]
+    },
+    "defaultState": {},
+    "codeGridSchema": {
+        "allowChannelGrids": false,
+        "triggers": [],
+        "customBlocks": []
+    },
+    "wireConfig": {},
+    "minimumRoleLevel": 90,
+    "maxOnMap": 64,
+    "initialMemoryCost": 300,
+    "subsequentMemoryCost": 200,
+    "supportedMapStyles": [
+        "platformer"
+    ]
+}

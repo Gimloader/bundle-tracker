@@ -1,6 +1,26 @@
 {
     "id": "stadium/bench_1",
     "name": "Stadium Bench (Red)",
+    "tags": [
+        "stadium bench",
+        "bench",
+        "dugout",
+        "shelter",
+        "team bench",
+        "sideline",
+        "stadium",
+        "sports",
+        "soccer",
+        "football",
+        "canopy",
+        "awning",
+        "roof",
+        "seat",
+        "seating",
+        "aluminum",
+        "metal",
+        "red"
+    ],
     "image": {
         "path": "props/stadium/bench_1.png",
         "width": 3154,

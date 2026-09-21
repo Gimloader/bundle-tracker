@@ -1,6 +1,27 @@
 {
     "id": "Spacerock Patch 3",
     "name": "Spacerock Patch 3",
+    "tags": [
+        "spacerock",
+        "space rock",
+        "asteroid",
+        "meteorite",
+        "meteor",
+        "crater",
+        "craters",
+        "patch",
+        "terrain",
+        "ground",
+        "surface",
+        "lunar",
+        "moon",
+        "space",
+        "sci-fi",
+        "rock",
+        "stone",
+        "gray",
+        "grey"
+    ],
     "image": {
         "path": "props/patches/spacerock_patch_3.png",
         "width": 64,

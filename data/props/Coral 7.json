@@ -1,6 +1,27 @@
 {
     "id": "Coral 7",
     "name": "Coral",
+    "tags": [
+        "aquarium",
+        "aquatic",
+        "branch",
+        "branching",
+        "coral",
+        "coral reef",
+        "deep sea",
+        "marine",
+        "ocean",
+        "pink",
+        "red",
+        "reef",
+        "salmon",
+        "sea",
+        "seabed",
+        "seafloor",
+        "sponge",
+        "spotted",
+        "underwater"
+    ],
     "image": {
         "path": "props/corals/coral_7.png",
         "width": 140,

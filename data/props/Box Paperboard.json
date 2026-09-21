@@ -1,6 +1,26 @@
 {
     "id": "Box Paperboard",
     "name": "Cardboard Box",
+    "tags": [
+        "box",
+        "cardboard",
+        "cardboard box",
+        "carton",
+        "package",
+        "parcel",
+        "paperboard",
+        "shipping",
+        "delivery",
+        "storage",
+        "warehouse",
+        "container",
+        "cargo",
+        "brown",
+        "square",
+        "label",
+        "sticker",
+        "moving"
+    ],
     "image": {
         "path": "props/boxes/box_paperboard.png",
         "width": 273,

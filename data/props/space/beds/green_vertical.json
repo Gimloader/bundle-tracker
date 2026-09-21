@@ -1,6 +1,28 @@
 {
     "id": "space/beds/green_vertical",
     "name": "Vertical Space Bed (Green)",
+    "tags": [
+        "bed",
+        "bedding",
+        "bedframe",
+        "bedroom",
+        "blanket",
+        "bunk",
+        "crew quarters",
+        "furniture",
+        "futuristic",
+        "green",
+        "mattress",
+        "orange",
+        "sci-fi",
+        "sheet",
+        "single bed",
+        "sleep",
+        "sleeping",
+        "space",
+        "spaceship",
+        "vertical"
+    ],
     "image": {
         "path": "props/space/beds/green_vertical.png",
         "width": 599,

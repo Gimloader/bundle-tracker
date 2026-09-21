@@ -1,6 +1,26 @@
 {
     "id": "luck/flowers/flowers_21",
     "name": "Flowers",
+    "tags": [
+        "flower",
+        "blossom",
+        "bloom",
+        "flora",
+        "floral",
+        "plant",
+        "petal",
+        "flower head",
+        "pink",
+        "magenta",
+        "purple",
+        "yellow",
+        "spring",
+        "garden",
+        "nature",
+        "cartoon",
+        "cute",
+        "simple"
+    ],
     "image": {
         "path": "props/luck/flowers/flowers_21.png",
         "width": 223,

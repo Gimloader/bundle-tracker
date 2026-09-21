@@ -1,6 +1,24 @@
 {
     "id": "dishes/pan",
     "name": "Pan",
+    "tags": [
+        "pan",
+        "frying pan",
+        "skillet",
+        "cookware",
+        "kitchenware",
+        "kitchen",
+        "cooking",
+        "frypan",
+        "handle",
+        "nonstick",
+        "red",
+        "black",
+        "gray",
+        "grey",
+        "metal",
+        "round"
+    ],
     "image": {
         "path": "props/dishes/pan.png",
         "width": 261,

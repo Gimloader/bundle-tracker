@@ -1,6 +1,28 @@
 {
     "id": "Papers 1",
     "name": "Papers",
+    "tags": [
+        "document",
+        "documents",
+        "file",
+        "manuscript",
+        "notes",
+        "office",
+        "page",
+        "pages",
+        "paper",
+        "papers",
+        "pile",
+        "report",
+        "school",
+        "sheet",
+        "sheets",
+        "stack",
+        "stationery",
+        "text",
+        "white",
+        "writing"
+    ],
     "image": {
         "path": "props/office/papers_1.png",
         "width": 185,

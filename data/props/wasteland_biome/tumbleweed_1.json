@@ -1,6 +1,28 @@
 {
     "id": "wasteland_biome/tumbleweed_1",
     "name": "Tumbleweed",
+    "tags": [
+        "arid",
+        "branch",
+        "brown",
+        "bush",
+        "dead plant",
+        "desert",
+        "desert plant",
+        "dry",
+        "flora",
+        "plant",
+        "prairie",
+        "shrub",
+        "southwest",
+        "tan",
+        "tangled",
+        "tumbleweed",
+        "twig",
+        "wasteland",
+        "western",
+        "wild west"
+    ],
     "image": {
         "path": "props/wasteland_biome/tumbleweed_1.png",
         "width": 485,

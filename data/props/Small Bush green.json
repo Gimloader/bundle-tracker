@@ -1,6 +1,24 @@
 {
     "id": "Small Bush green",
     "name": "Green Bush (Small)",
+    "tags": [
+        "bush",
+        "green bush",
+        "small bush",
+        "shrub",
+        "hedge",
+        "plant",
+        "foliage",
+        "vegetation",
+        "greenery",
+        "nature",
+        "garden",
+        "outdoor",
+        "park",
+        "landscape",
+        "green",
+        "small"
+    ],
     "image": {
         "path": "props/plants/bushes/small_green.png",
         "width": 385,

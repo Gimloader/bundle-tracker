@@ -1,6 +1,25 @@
 {
     "id": "Storage Container",
     "name": "Storage Container",
+    "tags": [
+        "storage container",
+        "container",
+        "storage bin",
+        "bin",
+        "crate",
+        "storage box",
+        "box",
+        "tote",
+        "plastic bin",
+        "plastic",
+        "lid",
+        "green",
+        "garage",
+        "warehouse",
+        "cargo",
+        "utility",
+        "organizer"
+    ],
     "image": {
         "path": "props/workshop/storage_container.png",
         "width": 385,

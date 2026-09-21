@@ -1,6 +1,28 @@
 {
     "id": "wasteland_biome/supergim_comic",
     "name": "Supergim Comic",
+    "tags": [
+        "book",
+        "booklet",
+        "cape",
+        "city",
+        "collectible",
+        "comic",
+        "comic book",
+        "entertainment",
+        "graphic novel",
+        "green",
+        "hero",
+        "literature",
+        "magazine",
+        "moon",
+        "paper",
+        "purple",
+        "reading",
+        "superhero",
+        "supergim",
+        "wasteland"
+    ],
     "image": {
         "path": "props/wasteland_biome/supergim_comic.png",
         "width": 567,

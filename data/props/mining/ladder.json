@@ -1,6 +1,23 @@
 {
     "id": "mining/ladder",
     "name": "Ladder",
+    "tags": [
+        "ladder",
+        "wooden ladder",
+        "wood",
+        "wooden",
+        "climbing",
+        "climb",
+        "rung",
+        "step",
+        "steps",
+        "rail",
+        "mining",
+        "mine",
+        "brown",
+        "vertical",
+        "tool"
+    ],
     "image": {
         "path": "props/mining/ladder.png",
         "width": 551,

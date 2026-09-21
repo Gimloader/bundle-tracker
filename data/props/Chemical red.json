@@ -1,6 +1,27 @@
 {
     "id": "Chemical red",
     "name": "Red Chemical ",
+    "tags": [
+        "flask",
+        "erlenmeyer flask",
+        "chemical",
+        "potion",
+        "elixir",
+        "liquid",
+        "red",
+        "glass",
+        "beaker",
+        "chemistry",
+        "science",
+        "laboratory",
+        "lab",
+        "alchemy",
+        "experiment",
+        "bubbles",
+        "solution",
+        "vial",
+        "bottle"
+    ],
     "image": {
         "path": "props/science_lab/chemical_red.png",
         "width": 142,
