@@ -4,7 +4,7 @@ import {
     i as o
 } from "./FixSpinePlugin.js";
 import {
-    aL as p
+    aK as p
 } from "./App-41.js";
 import "./GetAssetPath.js";
 import "./_index.js";

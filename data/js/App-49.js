@@ -11,20 +11,20 @@ import {
     S as z
 } from "./SixteenByNineScaler.js";
 import {
-    ah as b,
-    T as k,
-    ai as M,
-    aj as x,
-    u as v,
-    o as w,
-    a2 as A,
-    q as P,
+    T as b,
+    ah as k,
+    ai as x,
+    u as M,
+    o as v,
+    a2 as w,
+    q as A,
     n as F
 } from "./App-41.js";
 import {
     s as r,
+    k as P,
     O as _,
-    P as $,
+    n as $,
     N as E
 } from "./FixSpinePlugin.js";
 import {
@@ -121,11 +121,11 @@ const K = () => {
     },
     h = () => {
         let t = !1;
-        b().allowGameOwnerToSpectate && r.session.ownerRole === _.spectator && (t = !0);
-        const s = k(),
+        P().allowGameOwnerToSpectate && r.session.ownerRole === _.spectator && (t = !0);
+        const s = b(),
             o = [];
         return r.characters.characters.forEach(m => {
-            m.type === M.player && (t && m.id === s || o.push(m))
+            m.type === k.player && (t && m.id === s || o.push(m))
         }), o
     },
     V = () => {
@@ -211,7 +211,7 @@ const K = () => {
             session: {
                 customTeams: s
             }
-        } = v(), o = h(), a = [];
+        } = M(), o = h(), a = [];
         o.forEach(n => {
             const c = s.characterToTeamMap.get(n.id);
             c && c !== t || a.push({
@@ -310,7 +310,7 @@ const K = () => {
                 F(E.startScreen)
             },
             o = S.useMemo(() => t ? .3 : .2, [t]);
-        return w($.Input.Keyboard.KeyCodes.ESC, s, [s]), A(), e.jsxs(mt, {
+        return v($.Input.Keyboard.KeyCodes.ESC, s, [s]), w(), e.jsxs(mt, {
             children: [e.jsx(N, {
                 initial: p.out,
                 animate: p.in,
@@ -331,7 +331,7 @@ const K = () => {
                     onClick: a => a.stopPropagation(),
                     children: e.jsx(it, {})
                 })
-            }), e.jsx(P, {
+            }), e.jsx(A, {
                 onClick: s
             })]
         })

@@ -1,6 +1,6 @@
 import {
     s as l,
-    P as d,
+    n as d,
     I as g,
     g as y,
     S as D
@@ -12,12 +12,12 @@ import {
     N as S
 } from "./NewWidthSameAspectRatio.js";
 import {
-    bv as s,
-    aL as O,
+    bu as s,
+    aK as O,
     ae as W,
     ac as b,
     ad as C,
-    bC as A,
+    bB as A,
     L as f
 } from "./App-41.js";
 import {
@@ -26,13 +26,13 @@ import {
     D as p
 } from "./Constants.js";
 import {
-    I as L
+    I as T
 } from "./InventoryItemNameWithCount.js";
 import {
-    p as T
+    p as x
 } from "./playSound.js";
 import {
-    A as x
+    A as L
 } from "./AddOutline.js";
 import {
     R as M
@@ -146,7 +146,7 @@ class ei extends O {
             if (t) {
                 const a = this.options.itemAmount;
                 this.interactiveZones.setInfo({
-                    message: L(t, a),
+                    message: T(t, a),
                     action: p.interaction.message.action,
                     allowedToInteract: n,
                     topHeader: n ? void 0 : p.interaction.message.fullInventory,
@@ -154,7 +154,7 @@ class ei extends O {
                 })
             }
         }, this.addOutline = () => {
-            this.hasLoaded && x({
+            this.hasLoaded && L({
                 view: this.itemImage.view
             })
         }, this.removeOutline = () => {
@@ -225,7 +225,7 @@ class ei extends O {
             }, this.interactiveZones.onNonInteractive = () => {
                 g() || (this.removeOutline(), this.isWithinInteractionRange = !1)
             }, this.interactiveZones.onInteraction = () => {
-                this.sendToServerDevice(w.collect), T({
+                this.sendToServerDevice(w.collect), x({
                     path: v("sounds/core/collectItem.mp3"),
                     volume: y({
                         volume: .7,

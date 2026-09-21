@@ -1,22 +1,22 @@
 import {
     s as g,
-    a as Y,
-    d as b,
-    e as f
+    f as c,
+    a as f,
+    e as Y,
+    j as X
 } from "./FixSpinePlugin.js";
 import {
-    F as X,
+    F as b,
     R as z
-} from "./ReplaceVisualEditingPreview.js";
+} from "./FetchOptionSchemaProperty.js";
 import {
-    bc as c,
-    aM as C,
+    aQ as C,
     bd as D,
-    aL as S,
-    aQ as F,
+    aK as S,
+    aU as F,
     be as _,
-    a$ as k,
-    b0 as Z
+    a_ as k,
+    a$ as Z
 } from "./App-41.js";
 import {
     G as E
@@ -182,7 +182,7 @@ class oi extends S {
                     minY: r,
                     maxX: t,
                     maxY: h
-                } = L(this), a = P(this), p = Y().tileManager.layerManager.backgroundLayersManager.createLayer({
+                } = L(this), a = P(this), p = f().tileManager.layerManager.backgroundLayersManager.createLayer({
                     layerId: this.id,
                     depth: a
                 }), m = {
@@ -204,7 +204,7 @@ class oi extends S {
                     tint: F(this.options.tint)
                 })
             }, this.removeLayer = () => {
-                Y().tileManager.layerManager.backgroundLayersManager.removeLayer({
+                f().tileManager.layerManager.backgroundLayersManager.removeLayer({
                     layerId: this.id
                 })
             }, this.onShow = () => {
@@ -245,12 +245,12 @@ class oi extends S {
                     borderWidth: l.border.width
                 })
             }, this.setupVisualEditing = () => {
-                if (b() || f()) return;
+                if (Y() || X()) return;
                 const s = T(this),
                     e = w(this);
                 if (s && e) return;
-                const r = X(this, "width"),
-                    t = X(this, "height"),
+                const r = b(this, "width"),
+                    t = b(this, "height"),
                     {
                         minX: h,
                         minY: a,
@@ -283,7 +283,7 @@ class oi extends S {
                 })
             }, this.destroy = s => {
                 super.destroy(s), this.removeLayer()
-            }, this.addLayer(), b() || f()) return;
+            }, this.addLayer(), Y() || X()) return;
         const n = Z.Setting;
         new k({
             device: this,

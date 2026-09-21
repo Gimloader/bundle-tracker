@@ -2,13 +2,13 @@ import {
     G as t
 } from "./GetAssetPath.js";
 import {
-    d as i,
-    e as m
+    e as i,
+    j as m
 } from "./FixSpinePlugin.js";
 import {
-    aL as p,
-    a$ as e,
-    b0 as s
+    aK as p,
+    a_ as e,
+    a$ as a
 } from "./App-41.js";
 import "./_index.js";
 import "./MapModeType.js";
@@ -80,7 +80,7 @@ import "./index-24.js";
 class Bo extends p {
     constructor(r) {
         if (super(r), i() || m()) return;
-        const o = s.Utility;
+        const o = a.Utility;
         new e({
             device: this,
             baseColor: o.baseColor,

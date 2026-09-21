@@ -3,13 +3,13 @@ import {
     i as a
 } from "./FixSpinePlugin.js";
 import {
-    aL as l,
-    aE as n
+    aK as l,
+    aD as n
 } from "./App-41.js";
 import {
     F as s,
     R as h
-} from "./ReplaceVisualEditingPreview.js";
+} from "./FetchOptionSchemaProperty.js";
 import {
     A as d
 } from "./AddIgnoredStaticBodiesWhenCollisionsEnabled.js";

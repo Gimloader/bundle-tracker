@@ -1,14 +1,14 @@
 import {
     bh as d,
-    bi as g,
-    G as b,
-    L as f,
-    aL as v
+    G as g,
+    L as b,
+    aK as f
 } from "./App-41.js";
 import {
-    d as y,
-    e as c,
-    P as T,
+    U as v,
+    e as y,
+    j as c,
+    n as T,
     a as x,
     I as l,
     i as S
@@ -19,7 +19,7 @@ import {
 import {
     F as P,
     R as M
-} from "./ReplaceVisualEditingPreview.js";
+} from "./FetchOptionSchemaProperty.js";
 import "./_index.js";
 import "./Button.js";
 import "./polished.esm.js";
@@ -87,7 +87,7 @@ import "./useDebouncedValue.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-const u = 1e3 / d.tickRate;
+const u = 1e3 / v.tickRate;
 class X {
     constructor(a) {
         this.targetX = 0, this.targetY = 0, this.targetIsDirty = !1, this.pointMap = [], this.currentPoint = null, this.currentTime = 0, this.moveToTargetPosition = () => {
@@ -194,7 +194,7 @@ class H {
         }, this.load = () => {
             if (!y() && !c()) return;
             const t = m("devices/crafting_table/particle.png");
-            g({
+            d({
                 key: t,
                 url: t,
                 onLoad: () => {
@@ -224,7 +224,7 @@ const E = {
     },
     C = .75,
     w = i => {
-        i.container.view.setDepth(b(i.container.view.y + i.options.radius * C, f.DepthSortedCharactersAndDevices))
+        i.container.view.setDepth(g(i.container.view.y + i.options.radius * C, b.DepthSortedCharactersAndDevices))
     },
     A = i => {
         i.container = i.parts.add.container({}), i.container2 = i.parts.add.container({
@@ -262,7 +262,7 @@ const E = {
         const a = 1 - B * i.animations.ballHeight / n.animation.maxHeight;
         i.shadow.r1 = R * a * i.container2.view.scaleX * i.options.radius, i.shadow.r2 = _ * a * i.container2.view.scaleY * i.options.radius, i.shadow.alphaMultip = i.container2.view.alpha * i.container.view.alpha
     },
-    L = i => {
+    F = i => {
         l() && !c() || (i.projectiles.setDynamic(!0), i.projectiles.collidesWithProjectile = a => {
             const {
                 x: t,
@@ -281,7 +281,7 @@ const E = {
             i.animations.hit(s)
         })
     };
-class ei extends v {
+class ei extends f {
     constructor(a) {
         if (super(a), this.onUpdate = t => {
                 this.movement.update(t), this.animations.update(t), this.rotation.update(), O(this), w(this)
@@ -332,7 +332,7 @@ class ei extends v {
                 t.key === "goal" && (this.hide(), setTimeout(() => {
                     this.isDestroyed || this.particles.burst(this.container.view.x, this.container.view.y, this.container.view.depth)
                 }, 250)), t.key === "reset" && (this.movement.onReset(), this.show())
-            }, A(this), L(this), this.movement = new X(this), this.animations = new Y(this), this.rotation = new I(this), this.particles = new H(this), this.updateActive(), l() && S()) {
+            }, A(this), F(this), this.movement = new X(this), this.animations = new Y(this), this.rotation = new I(this), this.particles = new H(this), this.updateActive(), l() && S()) {
             const t = P(this, "radius");
             this.visualEditing.add.circle({
                 angle: 0,

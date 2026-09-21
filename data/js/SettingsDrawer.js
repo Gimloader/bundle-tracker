@@ -21,10 +21,10 @@ import {
     N as D
 } from "./FixSpinePlugin.js";
 import {
-    aH as T,
-    aI as W,
-    aJ as $,
-    aK as q,
+    aG as T,
+    aH as W,
+    aI as $,
+    aJ as q,
     n as G
 } from "./App-41.js";
 import {
@@ -122,7 +122,7 @@ import "./DownOutlined.js";
 import "./EditOutlined.js";
 import "./styleChecker.js";
 import "./CopyOutlined.js";
-const K = () => {
+const V = () => {
         const t = g.useSyncExternalStore(C, () => F("muted"));
         return e.jsx(i, {
             children: e.jsxs(o, {
@@ -138,7 +138,7 @@ const K = () => {
             })
         })
     },
-    V = t => Math.round(t * 100),
+    Y = t => Math.round(t * 100),
     v = [{
         value: 25,
         label: "Minimum"
@@ -164,11 +164,11 @@ const K = () => {
         value: 200,
         label: "Maximum"
     }],
-    Y = t => v.reduce((r, s) => Math.abs(s.value - t) < Math.abs(r - t) ? s.value : r, v[0].value),
+    K = t => v.reduce((r, s) => Math.abs(s.value - t) < Math.abs(r - t) ? s.value : r, v[0].value),
     X = () => {
         const t = m("renderingQuality"),
             r = t === null,
-            s = Y(V(t ?? z().resizeManager.usedDpi)),
+            s = K(Y(t ?? z().resizeManager.usedDpi)),
             p = x => T(x / 100),
             y = x => {
                 x ? W() : T(s / 100)
@@ -422,7 +422,7 @@ const K = () => {
                         direction: "vertical",
                         size: 14,
                         className: "maxWidth",
-                        children: [e.jsx(K, {}), s ? null : e.jsx(U, {
+                        children: [e.jsx(V, {}), s ? null : e.jsx(U, {
                             cardLayout: !0
                         })]
                     })]

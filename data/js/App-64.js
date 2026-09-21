@@ -17,13 +17,13 @@ import {
 import {
     M as L,
     N as Z,
-    c as D,
+    d as D,
     s as r,
     E as M,
     a as $,
     T as _,
-    U as ae,
-    P as de
+    a9 as ae,
+    n as de
 } from "./FixSpinePlugin.js";
 import {
     u as U,
@@ -51,13 +51,13 @@ import {
     o as Te
 } from "./App-41.js";
 import {
-    D as P
+    D as R
 } from "./TutorialConsts.js";
 import {
     C as w
 } from "./CapitalizeFirstLetter.js";
 import {
-    F as R
+    F as P
 } from "./FetchDeviceName.js";
 import {
     s as Ce
@@ -203,7 +203,7 @@ const be = e => {
             return `Reached placement limit for this ${d.device.singular} (${n.current}/${n.max})`
         }
         let t = d.device.singular;
-        return e.deviceTypeId === P.prop && (t = d.prop.singular), e.reason === v.noMemory ? `Not enough ${y} available to place this ${t}` : ""
+        return e.deviceTypeId === R.prop && (t = d.prop.singular), e.reason === v.noMemory ? `Not enough ${y} available to place this ${t}` : ""
     },
     De = e => {
         var t;
@@ -258,13 +258,13 @@ const be = e => {
                         m = De(o),
                         W = r.me.adding.devices.existingDevice.action === M.copy,
                         S = $().actionManager.multiselect.movedOrCopiedDevices,
-                        A = $().actionManager.multiselect.movedOrCopiedDevices.filter(T => T.deviceOption.id === P.prop),
+                        A = $().actionManager.multiselect.movedOrCopiedDevices.filter(T => T.deviceOption.id === R.prop),
                         oe = A.length > 0,
                         G = $().actionManager.multiselect.movedOrCopiedDevices.length === A.length;
                     let j = `Multiple ${d.device.plural}`;
                     if (oe && !G ? j = `Multiple ${d.device.plural}/${d.prop.plural}` : G && (j = `Multiple ${d.prop.plural}`), S.length === 1) {
                         const T = S[0],
-                            K = R(T == null ? void 0 : T.id);
+                            K = P(T == null ? void 0 : T.id);
                         K && (j = K)
                     }
                     return {
@@ -285,7 +285,7 @@ const be = e => {
                     });
                 let a = "Device";
                 if (n) {
-                    const o = R(t.id);
+                    const o = P(t.id);
                     o && (a = o)
                 }
                 if (!n) return {
@@ -322,7 +322,7 @@ const be = e => {
                         reason: n.reason
                     });
                 let c = t.name;
-                if (t.id === P.prop && r.me.adding.devices.currentlySelectedProp) {
+                if (t.id === R.prop && r.me.adding.devices.currentlySelectedProp) {
                     const a = he(r.me.adding.devices.currentlySelectedProp);
                     a != null && a.name && (c = a.name)
                 }
@@ -495,7 +495,7 @@ const be = e => {
                     __devicesUnderCursor: t
                 }
             }
-        } = U(), n = h.useMemo(() => e.hoveringOverSupportedDevice ? t[0] ? R(t[0]) ?? q(d.device.singular) : q(d.device.singular) : `Select a ${d.device.singular} or ${d.prop.singular} to ${e.startDeviceSelected?"complete":"start"} the ${d.wire.singular}`, [e.hoveringOverSupportedDevice, t, e.startDeviceSelected]);
+        } = U(), n = h.useMemo(() => e.hoveringOverSupportedDevice ? t[0] ? P(t[0]) ?? q(d.device.singular) : q(d.device.singular) : `Select a ${d.device.singular} or ${d.prop.singular} to ${e.startDeviceSelected?"complete":"start"} the ${d.wire.singular}`, [e.hoveringOverSupportedDevice, t, e.startDeviceSelected]);
         return i.jsxs(Me, {
             className: "maxWidth",
             children: [i.jsx(Be, {
@@ -539,13 +539,13 @@ const be = e => {
   flex: 1;
   background: rgba(255, 255, 255, 0.7);
 `,
-    Pe = O(() => ie() ? i.jsx(Ne, {}) : null),
-    Re = e => i.jsxs(Ee, {
+    Re = O(() => ie() ? i.jsx(Ne, {}) : null),
+    Pe = e => i.jsxs(Ee, {
         children: [i.jsxs(Ue, {
             children: [i.jsx(We, {
                 addingInfo: e.addingInfo
             }), i.jsx(Fe, {})]
-        }), i.jsx(Pe, {})]
+        }), i.jsx(Re, {})]
     }),
     Ee = l.div`
   padding: 25px;
@@ -597,7 +597,7 @@ const be = e => {
                                 onClick: a
                             })
                         })
-                    }), i.jsx(Re, {
+                    }), i.jsx(Pe, {
                         addingInfo: n
                     }), n.notAllowedToAddMessage ? i.jsx(_e, {
                         children: i.jsxs(f.Text, {

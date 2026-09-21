@@ -1,16 +1,16 @@
 import {
-    P as n,
+    n,
     I as m,
     i as e
 } from "./FixSpinePlugin.js";
 import {
-    aL as h,
+    aK as h,
     af as l
 } from "./App-41.js";
 import {
     F as u,
     R as g
-} from "./ReplaceVisualEditingPreview.js";
+} from "./FetchOptionSchemaProperty.js";
 import {
     U as d
 } from "./Assets.js";

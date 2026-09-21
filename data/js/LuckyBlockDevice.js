@@ -1,6 +1,6 @@
 import {
-    aL as p,
-    aR as h,
+    aK as p,
+    aV as h,
     L as n
 } from "./App-41.js";
 import {
@@ -10,13 +10,13 @@ import {
     g as l,
     S as m,
     I as c,
-    d,
-    e as u
+    e as d,
+    j as u
 } from "./FixSpinePlugin.js";
 import {
     F as v,
     R as g
-} from "./ReplaceVisualEditingPreview.js";
+} from "./FetchOptionSchemaProperty.js";
 import {
     p as y
 } from "./playSound.js";
@@ -115,7 +115,7 @@ const f = {
             r2: 50
         }
     };
-class _i extends p {
+class Oi extends p {
     constructor(r) {
         super(r), this.use = () => {
             this.cull.isInsideView && y({
@@ -201,6 +201,6 @@ class _i extends p {
     }
 }
 export {
-    _i as
+    Oi as
     default
 };

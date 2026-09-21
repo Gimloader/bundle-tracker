@@ -1,25 +1,25 @@
 import {
-    aL as P,
+    aK as P,
     bf as x,
     L as I,
-    bp as C,
-    bq as M,
-    aQ as w,
-    aE as y
+    bo as C,
+    bp as M,
+    aU as w,
+    aD as y
 } from "./App-41.js";
 import {
     F as D
 } from "./FetchTextureDimensions.js";
 import {
-    d as n,
+    e as n,
     I as g,
     i as G,
-    e as v
+    j as v
 } from "./FixSpinePlugin.js";
 import {
     F as b,
     R as F
-} from "./ReplaceVisualEditingPreview.js";
+} from "./FetchOptionSchemaProperty.js";
 import "./_index.js";
 import "./Button.js";
 import "./polished.esm.js";
@@ -127,7 +127,7 @@ const H = o => {
         height: c
     }
 };
-class Ki extends P {
+class Qi extends P {
     constructor(t) {
         super(t), this.matchesPhase = !0, this.createVisuals = () => {
             this.matchesPhase && (this.createFrame(), this.createImage()), this.boundingBox.setHardcoded(H({
@@ -204,6 +204,6 @@ class Ki extends P {
     }
 }
 export {
-    Ki as
+    Qi as
     default
 };

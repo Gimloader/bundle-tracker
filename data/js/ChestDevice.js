@@ -1,9 +1,9 @@
 import {
     I as r,
-    c as l
+    d as l
 } from "./FixSpinePlugin.js";
 import {
-    aL as d
+    aK as d
 } from "./App-41.js";
 import {
     G as e

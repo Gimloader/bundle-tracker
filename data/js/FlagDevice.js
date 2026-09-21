@@ -1,11 +1,10 @@
 import {
-    ah as w,
-    by as g,
+    bx as g,
     T as d,
-    aL as F,
-    G as I,
+    aK as w,
+    G as F,
     L as n,
-    aM as h
+    aQ as h
 } from "./App-41.js";
 import {
     C as s
@@ -15,11 +14,12 @@ import {
 } from "./GetAssetPath.js";
 import {
     I as c,
+    k as I,
     F as m,
     g as f,
     S as u,
     i as y,
-    d as k
+    e as k
 } from "./FixSpinePlugin.js";
 import {
     p as S
@@ -27,7 +27,7 @@ import {
 import {
     F as x,
     R as B
-} from "./ReplaceVisualEditingPreview.js";
+} from "./FetchOptionSchemaProperty.js";
 import "./_index.js";
 import "./Button.js";
 import "./polished.esm.js";
@@ -137,7 +137,7 @@ const C = {
     },
     l = t => {
         if (c()) return;
-        if (!w().interactiveItemsSlots) {
+        if (!I().interactiveItemsSlots) {
             t.interactiveZones.setInfo({
                 message: a.NoInteractiveSlotsText,
                 allowedToInteract: !1,
@@ -276,10 +276,10 @@ const C = {
         const i = m(t.state.characterId);
         i && (t.currentFlagX = i.body.x, t.currentFlagY = i.body.y, t.flipScale = i.flip.isFlipped ? -1 : 1)
     };
-class Qt extends F {
+class Jt extends w {
     constructor(i) {
         if (super(i), this.goingBackToBase = !1, this.idleRotation = 0, this.currentFlagX = 0, this.currentFlagY = 0, this.pickupShiftX = 0, this.pickupShiftY = 0, this.dropShiftY = 0, this.backScale = 1, this.backAlpha = 1, this.shadowAlpha = 0, this.shadowScale = 0, this.flipScale = 1, this.cumulTime = Math.random() * 1e3, this.onUpdate = r => {
-                A(this), this.cumulTime += r, this.idleRotation = Math.sin(this.cumulTime / 400 / a.FlagSwingInterval) * a.FlagSwingAmplitude, this.flag.view.rotation = this.idleRotation, this.flag.view.scaleX = a.BaseScale * this.flipScale, this.flag.view.scaleY = a.BaseScale * this.backScale, this.flag.view.x = this.currentFlagX + this.pickupShiftX, this.flag.view.y = this.currentFlagY + this.pickupShiftY + this.dropShiftY, this.flag.view.setDepth(I(this.flag.view.y, n.DepthSortedCharactersAndDevices)), this.flagShadow.view.alpha = this.shadowAlpha, this.flagShadow.view.scaleX = this.flagShadow.view.scaleY = this.shadowScale
+                A(this), this.cumulTime += r, this.idleRotation = Math.sin(this.cumulTime / 400 / a.FlagSwingInterval) * a.FlagSwingAmplitude, this.flag.view.rotation = this.idleRotation, this.flag.view.scaleX = a.BaseScale * this.flipScale, this.flag.view.scaleY = a.BaseScale * this.backScale, this.flag.view.x = this.currentFlagX + this.pickupShiftX, this.flag.view.y = this.currentFlagY + this.pickupShiftY + this.dropShiftY, this.flag.view.setDepth(F(this.flag.view.y, n.DepthSortedCharactersAndDevices)), this.flagShadow.view.alpha = this.shadowAlpha, this.flagShadow.view.scaleX = this.flagShadow.view.scaleY = this.shadowScale
             }, this.transitionToState = () => {
                 this.state.currentState === s.carried ? D(this) : this.state.currentState === s.dropped ? P(this) : this.state.currentState === s.idle && X(this)
             }, this.onStateChange = r => {
@@ -347,6 +347,6 @@ class Qt extends F {
     }
 }
 export {
-    Qt as
+    Jt as
     default
 };

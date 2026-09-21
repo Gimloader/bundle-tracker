@@ -10,12 +10,12 @@ import {
     F as l,
     s as o,
     a,
-    P as g
+    n as g
 } from "./FixSpinePlugin.js";
 import {
     T as p,
     o as w,
-    aB as S
+    aA as S
 } from "./App-41.js";
 import {
     S as U
@@ -191,7 +191,7 @@ const k = () => {
     },
     Qi = () => {
         const [t, r] = x.useState(!0), m = () => r(c => !c);
-        return w(g.Input.Keyboard.KeyCodes.SPACE, m), t ? i.jsx(B, {
+        return w(g.Input.Keyboard.KeyCodes.SPACE, m), t ? i.jsx(A, {
             children: i.jsxs(G, {
                 children: [i.jsx("h2", {
                     children: "Cinematic Mode"
@@ -226,7 +226,7 @@ const k = () => {
             })
         }) : null
     },
-    B = C.div.attrs({
+    A = C.div.attrs({
         className: "maxAll flex"
     })`
   position: absolute;

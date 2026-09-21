@@ -1,27 +1,27 @@
 import {
-    aL as D,
-    L as g,
-    aM as l,
+    aK as S,
+    L as v,
+    aQ as d,
     T as y,
-    aN as C,
-    aO as I,
-    aP as S,
-    aQ as V
+    aR as x,
+    aS as C,
+    aT as F,
+    aU as D
 } from "./App-41.js";
 import {
-    H as d,
-    s as A,
-    F as R,
-    I as x,
+    a4 as g,
+    s as R,
+    F as V,
+    I,
     i as b
 } from "./FixSpinePlugin.js";
 import {
     G as p
 } from "./GetAssetPath.js";
 import {
-    F as P,
-    R as _
-} from "./ReplaceVisualEditingPreview.js";
+    F as M,
+    R as A
+} from "./FetchOptionSchemaProperty.js";
 import "./_index.js";
 import "./Button.js";
 import "./polished.esm.js";
@@ -90,55 +90,57 @@ import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 var u = (n => (n.none = "none", n.leftRight = "leftRight", n.rightLeft = "rightLeft", n))(u || {}),
-    c = (n => (n.enter = "enter", n.exit = "exit", n))(c || {});
-const F = {
+    l = (n => (n.enter = "enter", n.exit = "exit", n))(l || {});
+const _ = {
         imageId: p("devices/movement_zone/icon.png"),
         imageUrl: p("devices/movement_zone/icon.png")
     },
-    M = {
+    P = {
         imageId: p("devices/movement_zone/background.png"),
         imageUrl: p("devices/movement_zone/background.png")
     },
-    E = {
+    U = {
         imageId: p("devices/movement_zone/particle.png"),
         imageUrl: p("devices/movement_zone/particle.png")
     },
-    L = n => n * 1e3,
-    v = {
-        startTime: L(1),
+    E = n => n * 1e3,
+    c = {
+        startTime: E(1),
+        baseForce: .25,
+        maxForceSpeedMultiplier: 2,
         pingCompensation: 100,
         bgMargin: 64
     };
-class $t extends D {
+class $t extends S {
     constructor(Z) {
         super(Z), this.particles = [], this.isCharacterInZone = !1, this.onUpdate = i => {
-            d() && this.moveView(i)
+            g() && this.moveView(i)
         }, this.moveView = i => {
             if (this.options.movement === u.none) {
                 this.updateParticles(this.x, i);
                 return
             }
-            const e = v.startTime,
-                t = Date.now() - A.session.phaseChangedAt + v.pingCompensation;
+            const e = c.startTime,
+                t = Date.now() - R.session.phaseChangedAt + c.pingCompensation;
             if (t < e) return;
             const o = t - e,
                 r = this.options.movement === u.leftRight ? 1 : -1,
                 a = this.x + Math.sin(o / this.options.movementDuration / 1e3 * 2 * Math.PI) * this.options.movementDistance * r;
             this.updateParticles(a, i), this.bg.view.setPosition(a, this.y), this.bg2.view.setPosition(a, this.y)
         }, this.setupParticles = () => {
-            if (!d()) return;
+            if (!g()) return;
             const i = this.options.width,
                 e = this.options.height,
                 t = i * e,
                 o = Math.floor(t / 5e3);
             for (let r = 0; r < o; r++) {
                 const a = this.parts.add.sprite({
-                        ...E,
+                        ...U,
                         x: -this.options.width / 2 + Math.random() * this.options.width,
                         y: -this.options.height / 2 + Math.random() * this.options.height,
-                        depthChange: l(2),
+                        depthChange: d(2),
                         ignoreInput: !0,
-                        layerId: Math.random() > .5 ? g.DevicesAboveCharacters : g.DevicesUnderCharacters
+                        layerId: Math.random() > .5 ? v.DevicesAboveCharacters : v.DevicesUnderCharacters
                     }),
                     m = .25 + Math.random() * .25;
                 a.view.setScale(m), this.particles.push({
@@ -150,24 +152,24 @@ class $t extends D {
             }
         }, this.onSyncedData = i => {
             const e = y();
-            i.type === c.enter ? (this.isCharacterInZone = !0, C({
+            i.type === l.enter ? (this.isCharacterInZone = !0, x({
                 characterId: e,
                 movementZone: this
-            })) : i.type === c.exit && (this.isCharacterInZone = !1, I({
+            })) : i.type === l.exit && (this.isCharacterInZone = !1, C({
                 characterId: e,
                 movementZone: this
             }))
         }, this.onSyncedDataRollback = i => {
             const e = y();
-            i.type === c.enter ? (this.isCharacterInZone = !1, I({
+            i.type === l.enter ? (this.isCharacterInZone = !1, C({
                 characterId: e,
                 movementZone: this
-            })) : i.type === c.exit && (this.isCharacterInZone = !0, C({
+            })) : i.type === l.exit && (this.isCharacterInZone = !0, x({
                 characterId: e,
                 movementZone: this
             }))
         }, this.updateParticles = (i, e) => {
-            d() && this.particles.forEach(t => {
+            g() && this.particles.forEach(t => {
                 t.particle.view.x = i - this.options.width / 2 + t.baseX + Math.sin(Date.now() / 250 * t.baseSpeed) * 50 * t.baseSpeed, t.particle.view.y -= t.baseSpeed * e * .45, t.particle.view.y < this.y - this.options.height / 2 && (t.particle.view.y += this.options.height);
                 const o = 50,
                     r = i - this.options.width / 2,
@@ -178,14 +180,14 @@ class $t extends D {
                 t.particle.view.x < r + o && (h = (t.particle.view.x - r) / o), t.particle.view.x > a - o && (h = (a - t.particle.view.x) / o), t.particle.view.y < m + o && (h = Math.min(h, (t.particle.view.y - m) / o)), t.particle.view.y > f - o && (h = Math.min(h, (f - t.particle.view.y) / o)), t.particle.view.alpha = Math.max(0, Math.min(1, h))
             })
         }, this.onPhysicsStepStrongest = i => {
-            d() && this.isCharacterInZone && this.applyForce(i)
+            g() && this.isCharacterInZone && this.applyForce(i)
         }, this.isCharacterInside = () => this.isCharacterInZone, this.applyForce = i => {
-            const e = R(i);
+            const e = V(i);
             if (!e) return;
-            let t = -this.options.force;
-            const o = -this.options.force * 2;
+            const t = -(this.options.forceMultiplier * c.baseForce),
+                o = t * c.maxForceSpeedMultiplier;
             let r = t;
-            e.physics.state.velocity.y + r < o && (r = o - e.physics.state.velocity.y), r !== 0 && S({
+            e.physics.state.velocity.y + r < o && (r = o - e.physics.state.velocity.y), r !== 0 && F({
                 character: e,
                 deltaVelocity: {
                     x: 0,
@@ -193,9 +195,9 @@ class $t extends D {
                 }
             }), e.physics.state.jump.jumpCounter = 1, e.physics.state.jump.jumpsLeft = 0
         }, this.setupVisualEditing = () => {
-            if (!x() || !b()) return;
-            const i = P(this, "width"),
-                e = P(this, "height");
+            if (!I() || !b()) return;
+            const i = M(this, "width"),
+                e = M(this, "height");
             this.visualEditing.add.box({
                 width: this.options.width,
                 height: this.options.height,
@@ -206,42 +208,42 @@ class $t extends D {
                 rotable: !1,
                 keepRatio: !1,
                 onChange: t => {
-                    _(t.x, t.y, {
+                    A(t.x, t.y, {
                         width: t.width,
                         height: t.height
                     })
                 }
             })
-        }, x() && b() && this.parts.add.sprite({
-            ...F,
-            depthChange: l(2)
+        }, I() && b() && this.parts.add.sprite({
+            ..._,
+            depthChange: d(2)
         }).view.setScale(.5), this.setupVisualEditing(), this.cull.ignoreCulling();
-        const w = V(this.options.color),
-            s = v.bgMargin;
+        const w = D(this.options.color),
+            s = c.bgMargin;
         this.bg = this.parts.add.ninePatch({
-            ...M,
+            ...P,
             width: this.options.width + s,
             height: this.options.height + s,
             rows: [s, s],
             columns: [s, s],
             scale: 1,
             tint: w,
-            depthChange: l(0),
+            depthChange: d(0),
             ignoreInput: !0,
             onReady: i => {
                 i.view.alpha = .5
             }
         }), this.bg2 = this.parts.add.ninePatch({
-            ...M,
+            ...P,
             width: this.options.width + s,
             height: this.options.height + s,
             rows: [s, s],
             columns: [s, s],
             scale: 1,
             tint: w,
-            depthChange: l(0),
+            depthChange: d(0),
             ignoreInput: !0,
-            layerId: g.DevicesAboveCharacters,
+            layerId: v.DevicesAboveCharacters,
             onReady: i => {
                 i.view.alpha = .25
             }

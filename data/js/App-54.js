@@ -18,8 +18,8 @@ import {
     a as p,
     s as u,
     M as E,
-    P as Q,
-    c as g
+    n as Q,
+    d as g
 } from "./FixSpinePlugin.js";
 import {
     r as D,

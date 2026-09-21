@@ -1,10 +1,10 @@
 import {
-    d as p,
-    e as o,
+    e as p,
+    j as o,
     I as m
 } from "./FixSpinePlugin.js";
 import {
-    aL as e,
+    aK as e,
     L as a
 } from "./App-41.js";
 import {
@@ -85,7 +85,7 @@ const s = {
         imageId: t("devices/spawn_pad/base_with_character.png"),
         imageUrl: t("devices/spawn_pad/base_with_character.png")
     };
-class At extends e {
+class Lt extends e {
     constructor(r) {
         if (super(r), !this.options.visibleInGame && (p() || o())) return;
         const i = m() ? c : s;
@@ -96,6 +96,6 @@ class At extends e {
     }
 }
 export {
-    At as
+    Lt as
     default
 };

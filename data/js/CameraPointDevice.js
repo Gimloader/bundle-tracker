@@ -1,5 +1,5 @@
 import {
-    aL as p,
+    aK as p,
     L as a
 } from "./App-41.js";
 import {
@@ -78,7 +78,7 @@ import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const m = s("devices/camera_point/icon.png");
-class xt extends p {
+class At extends p {
     constructor(i) {
         super(i), this.resetCameraPoint = () => {
             r().cameraHelper.resetCameraPointDevice()
@@ -107,6 +107,6 @@ class xt extends p {
     }
 }
 export {
-    xt as
+    At as
     default
 };

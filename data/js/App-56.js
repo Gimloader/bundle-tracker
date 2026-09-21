@@ -24,9 +24,9 @@ import {
 import {
     s as te,
     i as ne,
-    C as ye,
+    X as ye,
     a as I,
-    W as c,
+    ab as c,
     M as be
 } from "./FixSpinePlugin.js";
 import {
@@ -37,20 +37,20 @@ import {
     J as Z,
     u as G,
     M as m,
-    ap as V,
-    aq as q,
-    ar as Se,
-    as as j,
-    at as Ce,
-    au as we,
-    av as Oe,
-    aw as ke,
+    ao as V,
+    ap as q,
+    aq as Se,
+    ar as j,
+    as as Ce,
+    at as we,
+    au as Oe,
+    av as ke,
     b as A,
-    ax as Te,
-    ay as Pe,
+    aw as Te,
+    ax as Pe,
     P as De,
     F as Me,
-    az as Ae,
+    ay as Ae,
     x as Ee,
     _ as se,
     a5 as _e,
@@ -82,14 +82,14 @@ import {
     D as y
 } from "./index-6.js";
 import {
-    S as W
+    S as R
 } from "./index-2.js";
 import {
     S as k
 } from "./index-9.js";
 import {
-    S as We,
-    a as Re,
+    S as Re,
+    a as We,
     b as Le,
     c as ze,
     d as Fe
@@ -107,7 +107,7 @@ import {
     R as Ve
 } from "./ShareAltOutlined.js";
 import {
-    R as Q
+    R as X
 } from "./SaveOutlined.js";
 import {
     I as qe
@@ -255,7 +255,7 @@ const f = i => {
             title: "Permissions",
             children: [e.jsx(d.Text, {
                 children: "Set what other players collaborating with you are allowed to do! Changes are applied immediately."
-            }), e.jsxs(W, {
+            }), e.jsxs(R, {
                 direction: "vertical",
                 className: "maxWidth",
                 size: 14,
@@ -286,7 +286,7 @@ const f = i => {
             })]
         })
     }),
-    E = i => e.jsxs(Qe, {
+    E = i => e.jsxs(Xe, {
         children: [e.jsxs("div", {
             style: {
                 marginRight: 35
@@ -307,14 +307,14 @@ const f = i => {
             })
         })]
     }),
-    Qe = N.div.attrs({
+    Xe = N.div.attrs({
         className: "flex between"
     })`
   padding: 17px;
   background: rgba(255, 255, 255, 0.08);
   border-radius: 6px;
 `,
-    Xe = P(i => {
+    Qe = P(i => {
         const {
             editing: n,
             me: o,
@@ -339,7 +339,7 @@ const f = i => {
                 onClose: i.close,
                 width: 450,
                 title: "Editing Options",
-                children: e.jsxs(W, {
+                children: e.jsxs(R, {
                     direction: "vertical",
                     className: "maxWidth",
                     size: 14,
@@ -443,8 +443,8 @@ const f = i => {
         }) : null
     }),
     v = i => {
-        const n = e.jsxs(We, {
-            children: [e.jsx(Re, {
+        const n = e.jsxs(Re, {
+            children: [e.jsx(We, {
                 children: i.name
             }), i.description ? e.jsx(Le, {
                 children: i.description
@@ -620,7 +620,7 @@ const f = i => {
                 block: !0,
                 size: "large",
                 type: "primary",
-                icon: e.jsx(Q, {}),
+                icon: e.jsx(X, {}),
                 onClick: () => H(Z.save, {}),
                 style: {
                     marginTop: 10
@@ -631,7 +631,7 @@ const f = i => {
                     block: !0,
                     size: "large",
                     type: "primary",
-                    icon: e.jsx(Q, {}),
+                    icon: e.jsx(X, {}),
                     onClick: () => H(Z.publish),
                     children: "Team Gimkit Publish"
                 })]
@@ -644,22 +644,22 @@ const f = i => {
         onClose: i.close,
         width: 500,
         title: "Documentation & Help",
-        children: e.jsxs(W, {
+        children: e.jsxs(R, {
             className: "maxName",
             direction: "vertical",
             size: 14,
-            children: [e.jsx(X, {
+            children: [e.jsx(Q, {
                 link: "https://forum.creative.gimkit.com",
                 name: "Community Forum",
                 description: "Find answers, ask questions, and get help with your map!"
-            }), e.jsx(X, {
+            }), e.jsx(Q, {
                 link: "https://docs.creative.gimkit.com",
                 name: "Help Docs",
                 description: "We're still building out our documentation, but you can find some helpful articles here!"
             })]
         })
     }),
-    X = i => e.jsx("a", {
+    Q = i => e.jsx("a", {
         href: i.link,
         target: "_blank",
         children: e.jsxs(si, {
@@ -789,7 +789,7 @@ const f = i => {
             t = r.useMemo(() => n === c.editing, [n]),
             w = r.useMemo(() => n === c.permissions, [n]),
             u = r.useMemo(() => n === c.saving, [n]),
-            R = r.useMemo(() => n === c.help, [n]),
+            W = r.useMemo(() => n === c.help, [n]),
             L = r.useMemo(() => n === c.publishing, [n]),
             z = () => {
                 i.setToHomeScreen(), D(c.home)
@@ -799,8 +799,8 @@ const f = i => {
                     z();
                     return
                 }
-                t || w || x || u || R || L || l()
-            }, [l, x, t, w, u, R, L, h, z]),
+                t || w || x || u || W || L || l()
+            }, [l, x, t, w, u, W, L, h, z]),
             D = S => Ue(S),
             O = S => {
                 J(), D(S)
@@ -836,7 +836,7 @@ const f = i => {
                     style: {
                         height: 14
                     }
-                }), e.jsxs(W, {
+                }), e.jsxs(R, {
                     className: "maxAll",
                     direction: "vertical",
                     size: 14,
@@ -892,10 +892,10 @@ const f = i => {
                         description: "Get help building your map!",
                         onClick: () => O(c.help)
                     }), e.jsx(ni, {
-                        open: R,
+                        open: W,
                         close: b
                     })]
-                }), e.jsx(Xe, {
+                }), e.jsx(Qe, {
                     open: t,
                     close: b
                 })]

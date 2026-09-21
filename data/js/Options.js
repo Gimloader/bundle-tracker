@@ -10,7 +10,7 @@ import {
     b as n
 } from "./MapSound.js";
 import {
-    ao as $
+    an as $
 } from "./App-41.js";
 import {
     S as s

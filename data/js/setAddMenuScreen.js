@@ -3,14 +3,14 @@ import {
     T as o
 } from "./ActionButton.js";
 import {
-    U as n,
-    s
+    a9 as a,
+    s as n
 } from "./FixSpinePlugin.js";
 const m = e => {
-    e !== n.home && t({
+    e !== a.home && t({
         event: o.OPEN_ADD_SUBMENU,
         menu: e
-    }), s.gui.none.addMenu.screen = e
+    }), n.gui.none.addMenu.screen = e
 };
 export {
     m as s

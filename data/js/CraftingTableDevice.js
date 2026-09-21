@@ -1,11 +1,11 @@
 import {
-    bi as H,
+    bh as H,
     L as T,
     af as k,
-    aM as D,
+    aQ as D,
     T as N,
-    bC as B,
-    aL as V
+    bB as B,
+    aK as V
 } from "./App-41.js";
 import {
     p as w
@@ -16,10 +16,10 @@ import {
 import {
     g as y,
     S as b,
-    d as _,
-    P as m,
-    v as O,
-    c as A,
+    e as _,
+    n as m,
+    L as O,
+    d as A,
     s as R
 } from "./FixSpinePlugin.js";
 import {
@@ -40,10 +40,10 @@ import {
     ar as Q
 } from "./_index.js";
 import {
-    A as X
+    A as K
 } from "./AddOutline.js";
 import {
-    R as j
+    R as X
 } from "./RemoveOutline.js";
 import "./Button.js";
 import "./polished.esm.js";
@@ -110,7 +110,7 @@ import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 var I = (t => (t.craft = "craft", t.collect = "collect", t))(I || {});
-class q {
+class j {
     constructor(e) {
         this.craft = i => {
             this.device.sendToServerDevice(I.craft, {
@@ -135,7 +135,7 @@ class q {
         }, this.device = e
     }
 }
-class J {
+class q {
     constructor(e) {
         this.burst = () => {
             this.emitter && (this.emitter.setDepth(this.device.getMaxDepth() + 1), this.emitter.explode(50))
@@ -171,7 +171,7 @@ class J {
         }, this.device = e
     }
 }
-const K = t => {
+const J = t => {
         t.options.style === h.craft && (O() ? t.colliders.add.box({
             x: 0,
             y: 13,
@@ -521,9 +521,9 @@ const K = t => {
                     color: a.expirationColor
                 })
             }
-            t.itemIsOutlined && (!t.interactivity.withinBounds || t.state.status !== r.availableForCollection) && (t.itemIsOutlined = !1, (f = t.pieces) != null && f.item && j({
+            t.itemIsOutlined && (!t.interactivity.withinBounds || t.state.status !== r.availableForCollection) && (t.itemIsOutlined = !1, (f = t.pieces) != null && f.item && X({
                 view: t.pieces.item.view
-            })), t.interactivity.withinBounds && t.state.status === r.availableForCollection && !t.itemIsOutlined && (S = t.pieces.item) != null && S.view && (t.itemIsOutlined = !0, X({
+            })), t.interactivity.withinBounds && t.state.status === r.availableForCollection && !t.itemIsOutlined && (S = t.pieces.item) != null && S.view && (t.itemIsOutlined = !0, K({
                 view: t.pieces.item.view
             }))
         }
@@ -542,7 +542,7 @@ class Fe extends V {
             nt(this)
         }, this.onDestroy = () => {
             this.particles.destroy(), this.refetchInteractionTimeout && window.clearTimeout(this.refetchInteractionTimeout)
-        }, this.createdAt = Date.now(), K(this), this.callbackHelper = new q(this), this.particles = new J(this), it(this), tt(this), d(this), this.interactiveZones.onInteractiveCb = () => {
+        }, this.createdAt = Date.now(), J(this), this.callbackHelper = new j(this), this.particles = new q(this), it(this), tt(this), d(this), this.interactiveZones.onInteractiveCb = () => {
             this.interactivity.withinBounds = !0
         }, this.interactiveZones.onNonInteractive = () => {
             this.interactivity.withinBounds = !1

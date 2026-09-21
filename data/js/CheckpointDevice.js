@@ -7,8 +7,8 @@ import {
 import {
     g as l,
     S as c,
-    e as b,
-    d as u
+    j as b,
+    e as u
 } from "./FixSpinePlugin.js";
 import {
     p as w
@@ -16,9 +16,9 @@ import {
 import {
     F as v,
     R as g
-} from "./ReplaceVisualEditingPreview.js";
+} from "./FetchOptionSchemaProperty.js";
 import {
-    aL as f
+    aK as f
 } from "./App-41.js";
 import "./_index.js";
 import "./MapModeType.js";

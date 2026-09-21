@@ -1,24 +1,24 @@
 import {
-    aL as C,
-    aM as H,
+    aK as C,
+    aQ as H,
     k as S,
     L as P
 } from "./App-41.js";
 import {
     a as T,
     i as D,
-    c as y,
-    d as E
+    d as y,
+    e as E
 } from "./FixSpinePlugin.js";
 import {
     G as w
 } from "./GetAssetPath.js";
 import {
     F as B,
-    R as M
-} from "./ReplaceVisualEditingPreview.js";
+    R as F
+} from "./FetchOptionSchemaProperty.js";
 import {
-    A as F
+    A as M
 } from "./AddIgnoredStaticBodiesWhenCollisionsEnabled.js";
 import "./_index.js";
 import "./Button.js";
@@ -157,7 +157,7 @@ class ii extends C {
             const i = t ?? 1;
             this.healthbar.view.scaleX = i, this.healthbar.view.x = -(c * (1 - i)) / 2, this.healthbarBg.view.alpha = 0, this.healthbar.view.alpha = 0, this.healthbarMark.view.alpha = 0, i > 0 && (this.healthbar.view.alpha = 1, this.healthbarBg.view.alpha = 1, this.healthbarMark.view.alpha = this.healthbar.view.alpha, this.healthbarMark.view.x = -c / 2 + c * i - 1)
         }, this.onStateChange = t => {
-            if (t === "visible" && (this.state.visible ? (F(this), this.show()) : this.hide()), t === "hitData") {
+            if (t === "visible" && (this.state.visible ? (M(this), this.show()) : this.hide()), t === "hitData") {
                 const i = JSON.parse(this.state.hitData);
                 i.alpha !== void 0 && i.damageToDeal !== void 0 && this.onHealthChange(i)
             }
@@ -223,7 +223,7 @@ class ii extends C {
                             y: (.5 - this.propOption.originY) * s
                         },
                         u = d(f.x, f.y, v, b, this.options.FlipX);
-                    M(n.x - u.x, n.y - u.y, {
+                    F(n.x - u.x, n.y - u.y, {
                         Angle: b,
                         Scale: v
                     })

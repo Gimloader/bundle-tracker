@@ -1,7 +1,7 @@
 import {
     F as d,
     R as c
-} from "./ReplaceVisualEditingPreview.js";
+} from "./FetchOptionSchemaProperty.js";
 import {
     E as r
 } from "./GimkitLiveQuestion.js";
@@ -11,8 +11,8 @@ import {
     i as u
 } from "./FixSpinePlugin.js";
 import {
-    aL as l,
-    br as n
+    aK as l,
+    bq as n
 } from "./App-41.js";
 import {
     G as a

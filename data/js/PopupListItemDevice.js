@@ -5,16 +5,16 @@ import {
     i as m
 } from "./FixSpinePlugin.js";
 import {
-    D as s
+    D as a
 } from "./TutorialConsts.js";
 import {
-    G as a
+    G as s
 } from "./GetAssetPath.js";
 import {
-    aL as n,
+    aK as n,
     U as c,
-    a$ as l,
-    b0 as v
+    a_ as l,
+    a$ as v
 } from "./App-41.js";
 import "./_index.js";
 import "./MapModeType.js";
@@ -82,7 +82,7 @@ import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-class Lt extends n {
+class St extends n {
     constructor(r) {
         if (super(r), this.onInit = () => {
                 this.alertTextExplainerDeviceAboutChange()
@@ -90,7 +90,7 @@ class Lt extends n {
                 if (o.me.currentAction === p.deviceUI) {
                     const t = o.me.deviceUI.current.deviceId,
                         i = c(t);
-                    i && i.deviceOption.id === s.textExplainer && (i == null || i.onPopupListItemStateChange())
+                    i && i.deviceOption.id === a.textExplainer && (i == null || i.onPopupListItemStateChange())
                 }
             }, this.onStateChange = t => {
                 this.alertTextExplainerDeviceAboutChange()
@@ -102,7 +102,7 @@ class Lt extends n {
                 boxColor: t.boxColor,
                 content: {
                     icon: {
-                        image: a("devices/popup_list_item/icon.png"),
+                        image: s("devices/popup_list_item/icon.png"),
                         scale: .85
                     }
                 }
@@ -111,6 +111,6 @@ class Lt extends n {
     }
 }
 export {
-    Lt as
+    St as
     default
 };

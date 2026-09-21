@@ -16,7 +16,7 @@ import {
     m as s
 } from "./motion.js";
 import {
-    P as l
+    n as l
 } from "./FixSpinePlugin.js";
 import {
     o as u,

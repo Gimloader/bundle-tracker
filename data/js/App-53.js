@@ -7,11 +7,11 @@ import {
 } from "./SixteenByNineScaler.js";
 import {
     o as c,
-    an as d,
+    am as d,
     q as u
 } from "./App-41.js";
 import {
-    P as l
+    n as l
 } from "./FixSpinePlugin.js";
 import {
     e as x,

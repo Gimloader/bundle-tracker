@@ -1,17 +1,17 @@
 import {
-    aL as l
+    aK as l
 } from "./App-41.js";
 import {
     i as c,
     L as d
 } from "./LoadGoogleFontAfterSceneStart.js";
 import {
-    P as g,
+    n as g,
     a as r,
     i as h,
     I as a,
-    e as f,
-    d as u
+    j as f,
+    e as u
 } from "./FixSpinePlugin.js";
 import {
     T as x
@@ -19,7 +19,7 @@ import {
 import {
     F as S,
     R as v
-} from "./ReplaceVisualEditingPreview.js";
+} from "./FetchOptionSchemaProperty.js";
 import "./_index.js";
 import "./Button.js";
 import "./polished.esm.js";

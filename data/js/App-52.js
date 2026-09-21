@@ -1,7 +1,7 @@
 import {
-    cm as E,
+    cm as D,
     j as t,
-    U as C,
+    U as T,
     d as f,
     B as V,
     r as p,
@@ -13,18 +13,18 @@ import {
     u as pe
 } from "./_index.js";
 import {
-    y as K,
-    M as x,
-    u as D,
-    o as b,
+    y as L,
+    M as v,
+    u as F,
+    o as C,
     s as H,
     z as fe,
     S as ge,
     J as he,
     F as xe,
     B as ve,
-    a2 as ye,
-    m as be
+    a2 as be,
+    m as ye
 } from "./App-41.js";
 import {
     a as N,
@@ -38,24 +38,24 @@ import {
     T as h
 } from "./index-14.js";
 import {
-    G as L
+    G as z
 } from "./GetAssetPath.js";
 import {
     a as oe,
     o as se
 } from "./mobxreact.esm.js";
 import {
-    c as ie,
-    P as O,
+    d as ie,
+    n as O,
     s as I,
-    A as z,
-    M as W,
-    U as y
+    A as W,
+    M as _,
+    a9 as y
 } from "./FixSpinePlugin.js";
 import {
     I as j,
-    E as _,
-    T as q
+    E as q,
+    T as G
 } from "./ActionButton.js";
 import {
     s as Q
@@ -81,7 +81,7 @@ import {
     S as ae
 } from "./index-2.js";
 import {
-    D as F
+    D as R
 } from "./index-6.js";
 import {
     I as X
@@ -145,7 +145,7 @@ import "./styleChecker.js";
 import "./CopyOutlined.js";
 const {
     useToken: Ie
-} = E, R = e => {
+} = D, P = e => {
     const {
         token: {
             borderRadius: n
@@ -155,7 +155,7 @@ const {
         description: s,
         icon: l
     } = e, i = () => {
-        K(), e.onClick()
+        L(), e.onClick()
     };
     return t.jsx(Oe, {
         onClick: i,
@@ -170,7 +170,7 @@ const {
                 level: 3,
                 style: {
                     marginBottom: -1,
-                    fontFamily: C.FugazOne,
+                    fontFamily: T.FugazOne,
                     textTransform: "uppercase"
                 },
                 children: S(o)
@@ -195,36 +195,36 @@ const {
   margin-bottom: 5px;
 `, we = f.img`
   height: 70px;
-`, A = e => L(`editor/icons/${e}.png`), Ne = e => t.jsxs($e, {
+`, M = e => z(`editor/icons/${e}.png`), Ne = e => t.jsxs($e, {
     children: [t.jsx(h.Title, {
         level: 1,
         style: {
-            fontFamily: C.FugazOne,
+            fontFamily: T.FugazOne,
             marginBottom: 25,
             marginTop: 5
         },
         className: "allCaps",
         children: "Add"
     }), t.jsxs(Ee, {
-        children: [t.jsx(R, {
-            name: x.terrain.singular,
+        children: [t.jsx(P, {
+            name: v.terrain.singular,
             description: "The floors and walls on the map",
-            icon: A("terrain"),
+            icon: M("terrain"),
             onClick: e.setToTerrain
-        }), t.jsx(R, {
-            name: x.prop.plural,
+        }), t.jsx(P, {
+            name: v.prop.plural,
             description: "Objects and decorations",
-            icon: A("prop"),
+            icon: M("prop"),
             onClick: e.setToProps
-        }), t.jsx(R, {
-            name: x.device.plural,
+        }), t.jsx(P, {
+            name: v.device.plural,
             description: "Create game mechanics!",
-            icon: A("device"),
+            icon: M("device"),
             onClick: e.setToDevices
-        }), t.jsx(R, {
-            name: x.wire.plural,
+        }), t.jsx(P, {
+            name: v.wire.plural,
             description: "Connect devices together",
-            icon: A("wire"),
+            icon: M("wire"),
             onClick: e.setToWires
         })]
     }), e.children]
@@ -245,7 +245,7 @@ const {
                 terrain: e
             }
         }
-    } = D(), n = e.buildTerrainAsWall, o = s => {
+    } = F(), n = e.buildTerrainAsWall, o = s => {
         ie() || (e.buildTerrainAsWall = s)
     };
     return t.jsxs(J, {
@@ -253,7 +253,7 @@ const {
             style: {
                 marginRight: 10
             },
-            children: ["Place down ", x.terrain.singular, " as a"]
+            children: ["Place down ", v.terrain.singular, " as a"]
         }), t.jsxs(V.Group, {
             children: [t.jsx(V, {
                 type: n ? "default" : "primary",
@@ -285,13 +285,13 @@ const {
   );
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: ${C.FugazOne};
+  font-family: ${T.FugazOne};
   text-transform: uppercase;
   font-size: 12px;
   line-height: 1;
 `, {
-    useToken: Pe
-} = E, Re = e => {
+    useToken: Re
+} = D, Ae = e => {
     const {
         id: n,
         name: o,
@@ -301,13 +301,13 @@ const {
         token: {
             borderRadius: a
         }
-    } = Pe(), u = l && !Y(), r = c => {
-        u || (I.me.adding.terrain.currentlySelectedTerrain = n, I.me.adding.mode = z.terrain, H(W.adding), j() && Q(y.home), _({
-            event: q.SELECT_TERRAIN_TO_ADD,
+    } = Re(), u = l && !Y(), r = c => {
+        u || (I.me.adding.terrain.currentlySelectedTerrain = n, I.me.adding.mode = W.terrain, H(_.adding), j() && Q(y.home), q({
+            event: G.SELECT_TERRAIN_TO_ADD,
             terrainId: n
         }), c && c())
     };
-    return b(O.Input.Keyboard.KeyCodes.ENTER, () => {
+    return C(O.Input.Keyboard.KeyCodes.ENTER, () => {
         e.focused && r()
     }, [e.focused, r]), p.useEffect(() => {
         var c;
@@ -315,12 +315,12 @@ const {
             behavior: "smooth",
             block: "center"
         }))
-    }, [e.focused]), t.jsxs(Ae, {
+    }, [e.focused]), t.jsxs(Pe, {
         borderRadius: a,
         focused: e.focused,
         onClick: () => {
             r(() => {
-                K()
+                L()
             })
         },
         ref: i,
@@ -331,7 +331,7 @@ const {
                 level: 5,
                 className: "allCaps",
                 style: {
-                    fontFamily: C.FugazOne
+                    fontFamily: T.FugazOne
                 },
                 children: o
             }), l ? t.jsx("div", {
@@ -342,7 +342,7 @@ const {
             }) : null]
         })]
     })
-}, Ae = f(Ce)`
+}, Pe = f(Ce)`
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
   border-radius: ${e=>e.borderRadius}px;
@@ -380,20 +380,20 @@ const Me = f.div`
             worldOptions: {
                 terrainOptions: n
             }
-        } = D(), [o, s] = p.useState(-1), [l] = Z(e.searchQuery, 150), i = p.useMemo(() => {
+        } = F(), [o, s] = p.useState(-1), [l] = Z(e.searchQuery, 150), i = p.useMemo(() => {
             var r;
             const a = (r = l == null ? void 0 : l.trim()) == null ? void 0 : r.toLowerCase();
             if (!a && !j()) return n.filter(c => te(c.id));
             const u = n.filter(c => c.name.toLowerCase().includes(a) && te(c.id));
             return j() ? u.sort((c, m) => {
                 const g = w.topTerrain.indexOf(c.id),
-                    v = w.topTerrain.indexOf(m.id);
-                return g === -1 && v === -1 ? 0 : g === -1 ? 1 : v === -1 ? -1 : g - v
+                    x = w.topTerrain.indexOf(m.id);
+                return g === -1 && x === -1 ? 0 : g === -1 ? 1 : x === -1 ? -1 : g - x
             }) : u
         }, [n.length, l]);
-        return b(O.Input.Keyboard.KeyCodes.UP, () => {
+        return C(O.Input.Keyboard.KeyCodes.UP, () => {
             s(Math.max(0, o - 1))
-        }, [o]), b(O.Input.Keyboard.KeyCodes.DOWN, () => {
+        }, [o]), C(O.Input.Keyboard.KeyCodes.DOWN, () => {
             const a = i.length - 1;
             s(Math.min(a, o + 1))
         }, [i.length, o]), p.useEffect(() => {
@@ -402,7 +402,7 @@ const Me = f.div`
             direction: "vertical",
             size: 12,
             className: "maxWidth",
-            children: i.map((a, u) => t.jsx(Re, {
+            children: i.map((a, u) => t.jsx(Ae, {
                 option: a,
                 focused: o === u
             }, a.id))
@@ -415,7 +415,7 @@ const Me = f.div`
             var r;
             u ? (r = s == null ? void 0 : s.current) == null || r.focus() : o("")
         }, a = ie();
-        return t.jsx(F, {
+        return t.jsx(R, {
             open: e.open,
             onClose: e.close,
             width: 500,
@@ -425,17 +425,17 @@ const Me = f.div`
                 children: [t.jsx(h.Title, {
                     level: 1,
                     style: {
-                        fontFamily: C.FugazOne,
+                        fontFamily: T.FugazOne,
                         marginBottom: 12,
                         marginTop: 5
                     },
                     className: "allCaps",
-                    children: S(x.terrain.singular)
+                    children: S(v.terrain.singular)
                 }), a ? null : t.jsxs(t.Fragment, {
                     children: [t.jsx(De, {}), " ", t.jsx(re, {})]
                 }), t.jsx(X.Search, {
                     size: "large",
-                    placeholder: `Search for ${x.terrain.plural}...`,
+                    placeholder: `Search for ${v.terrain.plural}...`,
                     style: {
                         marginBottom: 23
                     },
@@ -448,12 +448,12 @@ const Me = f.div`
             })
         })
     };
-var M = {},
+var B = {},
     ne;
 
 function _e() {
-    if (ne) return M;
-    ne = 1, Object.defineProperty(M, "__esModule", {
+    if (ne) return B;
+    ne = 1, Object.defineProperty(B, "__esModule", {
         value: !0
     });
     const e = le();
@@ -466,30 +466,30 @@ function _e() {
             s && i.unobserve(o.current)
         }, [s, i, o]), s
     }
-    return M.default = n, M
+    return B.default = n, B
 }
 var qe = _e();
-const Qe = de(qe),
+const Ge = de(qe),
     {
-        useToken: Ge
-    } = E,
+        useToken: Qe
+    } = D,
     Ue = e => {
         const {
             id: n,
             name: o,
             image: s,
             seasonTicketRequired: l
-        } = e.option, i = p.useRef(null), a = Qe(i), {
+        } = e.option, i = p.useRef(null), a = Ge(i), {
             token: {
                 borderRadius: u
             }
-        } = Ge(), r = l && !Y(), c = m => {
-            r || (I.me.adding.devices.selectedDeviceType = d.prop, I.me.adding.devices.currentlySelectedProp = n, I.me.adding.mode = z.device, H(W.adding), j() && Q(y.home), _({
-                event: q.SELECT_PROP_TO_ADD,
+        } = Qe(), r = l && !Y(), c = m => {
+            r || (I.me.adding.devices.selectedDeviceType = d.prop, I.me.adding.devices.currentlySelectedProp = n, I.me.adding.mode = W.device, H(_.adding), j() && Q(y.home), q({
+                event: G.SELECT_PROP_TO_ADD,
                 propId: n
             }), m && m())
         };
-        return b(O.Input.Keyboard.KeyCodes.ENTER, () => {
+        return C(O.Input.Keyboard.KeyCodes.ENTER, () => {
             e.focused && c()
         }, [e.focused, c]), p.useEffect(() => {
             var m;
@@ -500,7 +500,7 @@ const Qe = de(qe),
             ref: i,
             onClick: () => {
                 c(() => {
-                    K()
+                    L()
                 })
             },
             focused: e.focused,
@@ -508,13 +508,13 @@ const Qe = de(qe),
             children: a ? t.jsxs(t.Fragment, {
                 children: [t.jsx(He, {
                     children: t.jsx(Je, {
-                        src: L(s.path)
+                        src: z(s.path)
                     })
                 }), t.jsx(Ye, {
                     level: 5,
                     className: "allCaps",
                     style: {
-                        fontFamily: C.FugazOne
+                        fontFamily: T.FugazOne
                     },
                     children: o
                 }), l ? t.jsx(ee, {}) : null]
@@ -562,17 +562,21 @@ const Qe = de(qe),
     Xe = se(e => {
         const {
             worldOptions: n
-        } = D(), [o, s] = p.useState(-1), [l] = Z(e.searchQuery, 200), i = p.useMemo(() => {
-            var m, g;
-            const u = n.propsOptions.filter(v => fe(v.minimumRoleLevel)),
-                r = (g = (m = e.searchQuery) == null ? void 0 : m.trim()) == null ? void 0 : g.toLowerCase();
+        } = F(), [o, s] = p.useState(-1), [l] = Z(e.searchQuery, 200), i = p.useMemo(() => {
+            var g;
+            const u = n.propsOptions.filter(x => fe(x.minimumRoleLevel)),
+                r = (g = l == null ? void 0 : l.trim()) == null ? void 0 : g.toLowerCase();
             if (!r && !j()) return u;
-            const c = u.filter(v => v.name.toLowerCase().includes(r));
-            return j() ? c.sort((v, G) => {
-                const T = w.topProps.indexOf(v.id),
-                    $ = w.topProps.indexOf(G.id);
-                return T === -1 && $ === -1 ? 0 : T === -1 ? 1 : $ === -1 ? -1 : T - $
-            }) : c
+            const c = r.split(/\s+/),
+                m = u.filter(x => {
+                    const $ = [x.name, ...x.tags ?? []].join(" ").toLowerCase();
+                    return c.every(b => $.includes(b))
+                });
+            return j() ? m.sort((x, $) => {
+                const b = w.topProps.indexOf(x.id),
+                    E = w.topProps.indexOf($.id);
+                return b === -1 && E === -1 ? 0 : b === -1 ? 1 : E === -1 ? -1 : b - E
+            }) : m
         }, [n.propsOptions.length, l]);
         ue(() => {
             n.requestedAllProps || (n.requestedAllProps = !0, ge(he.requestAllProps))
@@ -581,13 +585,13 @@ const Qe = de(qe),
             const r = Math.max(0, Math.min(i.length - 1, o + u));
             s(r)
         }, [i.length, o]);
-        return b(Phaser.Input.Keyboard.KeyCodes.UP, () => {
+        return C(Phaser.Input.Keyboard.KeyCodes.UP, () => {
             a(-2)
-        }, [a]), b(Phaser.Input.Keyboard.KeyCodes.DOWN, () => {
+        }, [a]), C(Phaser.Input.Keyboard.KeyCodes.DOWN, () => {
             a(2)
-        }, [a]), b(Phaser.Input.Keyboard.KeyCodes.LEFT, () => {
+        }, [a]), C(Phaser.Input.Keyboard.KeyCodes.LEFT, () => {
             a(-1)
-        }, [a]), b(Phaser.Input.Keyboard.KeyCodes.RIGHT, () => {
+        }, [a]), C(Phaser.Input.Keyboard.KeyCodes.RIGHT, () => {
             a(1)
         }, [a]), p.useEffect(() => {
             s(l ? 0 : -1)
@@ -613,7 +617,7 @@ const Qe = de(qe),
             var u;
             a ? (u = s == null ? void 0 : s.current) == null || u.focus() : o("")
         };
-        return t.jsx(F, {
+        return t.jsx(R, {
             open: e.open,
             onClose: e.close,
             width: 550,
@@ -623,15 +627,15 @@ const Qe = de(qe),
                 children: [t.jsx(h.Title, {
                     level: 1,
                     style: {
-                        fontFamily: C.FugazOne,
+                        fontFamily: T.FugazOne,
                         marginBottom: 12,
                         marginTop: 5
                     },
                     className: "allCaps",
-                    children: S(x.prop.plural)
+                    children: S(v.prop.plural)
                 }), t.jsx(X.Search, {
                     size: "large",
-                    placeholder: `Search for ${x.prop.plural}...`,
+                    placeholder: `Search for ${v.prop.plural}...`,
                     style: {
                         marginBottom: 23
                     },
@@ -647,7 +651,7 @@ const Qe = de(qe),
     nt = [d.placedSticker, d.droppedItem],
     {
         useToken: rt
-    } = E,
+    } = D,
     ot = e => {
         const {
             option: {
@@ -661,12 +665,12 @@ const Qe = de(qe),
                 borderRadius: a
             }
         } = rt(), u = l && !Y(), r = c => {
-            u || (I.me.adding.devices.selectedDeviceType = n, I.me.adding.mode = z.device, I.me.currentAction = W.adding, j() && Q(y.home), _({
-                event: q.SELECT_DEVICE_TO_ADD,
+            u || (I.me.adding.devices.selectedDeviceType = n, I.me.adding.mode = W.device, I.me.currentAction = _.adding, j() && Q(y.home), q({
+                event: G.SELECT_DEVICE_TO_ADD,
                 deviceTypeId: n
             }), c && c())
         };
-        return b(O.Input.Keyboard.KeyCodes.ENTER, () => {
+        return C(O.Input.Keyboard.KeyCodes.ENTER, () => {
             e.focused && r()
         }, [e.focused, r]), p.useEffect(() => {
             var c;
@@ -679,12 +683,12 @@ const Qe = de(qe),
             focused: e.focused,
             onClick: () => {
                 r(() => {
-                    K()
+                    L()
                 })
             },
             children: [t.jsx(it, {
                 children: t.jsx(at, {
-                    src: L("editor/icons/device.png")
+                    src: z("editor/icons/device.png")
                 })
             }), t.jsxs(ct, {
                 children: [l ? t.jsx("div", {
@@ -696,7 +700,7 @@ const Qe = de(qe),
                     level: 5,
                     className: "allCaps",
                     style: {
-                        fontFamily: C.FugazOne,
+                        fontFamily: T.FugazOne,
                         marginBottom: 0
                     },
                     children: o
@@ -750,7 +754,7 @@ const Qe = de(qe),
             worldOptions: {
                 deviceOptions: s
             }
-        } = D(), [l] = Z(e.searchQuery, 150), i = p.useMemo(() => {
+        } = F(), [l] = Z(e.searchQuery, 150), i = p.useMemo(() => {
             const a = l == null ? void 0 : l.toLowerCase(),
                 u = s.filter(r => !pt.includes(r.id)).filter(r => ve(r.id, void 0)).filter(r => mt({
                     deviceTypeId: r.id
@@ -776,9 +780,9 @@ const Qe = de(qe),
             }
             return u
         }, [s.length, l, e.list]);
-        return b(O.Input.Keyboard.KeyCodes.UP, () => {
+        return C(O.Input.Keyboard.KeyCodes.UP, () => {
             e.blockKeyboardNavigation || o(Math.max(0, n - 1))
-        }, [n, e.blockKeyboardNavigation]), b(O.Input.Keyboard.KeyCodes.DOWN, () => {
+        }, [n, e.blockKeyboardNavigation]), C(O.Input.Keyboard.KeyCodes.DOWN, () => {
             if (e.blockKeyboardNavigation) return;
             const a = i.length - 1;
             o(Math.min(a, n + 1))
@@ -796,7 +800,7 @@ const Qe = de(qe),
     }),
     {
         useToken: ft
-    } = E,
+    } = D,
     gt = e => {
         const {
             token: {
@@ -819,7 +823,7 @@ const Qe = de(qe),
                 }), t.jsx(h.Title, {
                     level: 4,
                     style: {
-                        fontFamily: C.FugazOne,
+                        fontFamily: T.FugazOne,
                         marginBottom: 2
                     },
                     className: "allCaps",
@@ -829,7 +833,7 @@ const Qe = de(qe),
                         children: l
                     })
                 })]
-            }), t.jsx(F, {
+            }), t.jsx(R, {
                 open: e.isOpen,
                 onClose: e.close,
                 title: s,
@@ -859,30 +863,30 @@ const Qe = de(qe),
   margin-bottom: 15px;
   opacity: 0.85;
 `,
-    k = `${S(x.device.plural)}`,
-    B = e => L(`editor/icons/device_collections/${e}.svg`),
+    k = `${S(v.device.plural)}`,
+    K = e => z(`editor/icons/device_collections/${e}.svg`),
     vt = [{
-        icon: B("starting"),
+        icon: K("starting"),
         name: `Starting ${k}`,
         description: `${k} you might need for every map`,
         devices: [d.characterSpawnPad, d.trigger, d.gimkitLiveQuestion, d.itemGranter, d.itemSpawner, d.sentry, d.startingInventory, d.wireRepeater, d.teleporter]
     }, {
-        icon: B("inventory"),
+        icon: K("inventory"),
         name: `Inventory ${k}`,
         description: `${k} to manage what items & resources players have`,
         devices: [d.vendingMachine, d.itemGranter, d.startingInventory, d.itemSpawner, d.inventoryItemManager]
     }, {
-        icon: B("interaction"),
+        icon: K("interaction"),
         name: `Interaction ${k}`,
         description: `${k} to create rich interactions`,
         devices: [d.button, d.vendingMachine, d.zone, d.textExplainer, d.dialogue, d.textBillboard]
     }, {
-        icon: B("new"),
+        icon: K("new"),
         name: `New ${k}`,
         description: `${k} recently added to ${me} Creative`,
-        devices: [d.scalableShape, d.popupListItem, d.character, d.dialogue, d.dialogueAction, d.damager, d.cameraPoint, d.playerPositionDetector, d.itemImage, d.ball, d.ballZone, d.craftingTable, d.craftingRecipe, d.damageBoost]
+        devices: [d.gadgetBlaster, d.scalableShape, d.popupListItem, d.character, d.dialogue, d.dialogueAction, d.damager, d.cameraPoint, d.playerPositionDetector, d.itemImage, d.ball, d.ballZone, d.craftingTable, d.craftingRecipe, d.damageBoost]
     }],
-    yt = e => t.jsx(bt, {
+    bt = e => t.jsx(yt, {
         children: vt.map(n => t.jsx(gt, {
             collection: n,
             isOpen: n.name === e.openCollectionName,
@@ -890,7 +894,7 @@ const Qe = de(qe),
             close: () => e.open("")
         }, `device-collection-${n.name}`))
     }),
-    bt = f.div.attrs({
+    yt = f.div.attrs({
         className: "maxWidth"
     })`
   display: grid;
@@ -907,7 +911,7 @@ const Qe = de(qe),
             var m;
             c ? (m = i == null ? void 0 : i.current) == null || m.focus() : o("")
         };
-        return t.jsxs(F, {
+        return t.jsxs(R, {
             open: e.open,
             onClose: u,
             width: 680,
@@ -917,15 +921,15 @@ const Qe = de(qe),
                 children: [t.jsx(h.Title, {
                     level: 1,
                     style: {
-                        fontFamily: C.FugazOne,
+                        fontFamily: T.FugazOne,
                         marginBottom: 12,
                         marginTop: 5
                     },
                     className: "allCaps",
-                    children: S(x.device.plural)
+                    children: S(v.device.plural)
                 }), t.jsx(X.Search, {
                     size: "large",
-                    placeholder: `Search for ${x.device.plural}...`,
+                    placeholder: `Search for ${v.device.plural}...`,
                     style: {
                         marginBottom: 23
                     },
@@ -933,13 +937,13 @@ const Qe = de(qe),
                     onChange: a,
                     ref: i
                 }), !n && !j() ? t.jsxs(t.Fragment, {
-                    children: [t.jsx(yt, {
+                    children: [t.jsx(bt, {
                         openCollectionName: s,
                         open: l
                     }), t.jsx(re, {
                         children: t.jsxs(h.Text, {
                             italic: !0,
-                            children: ["All ", S(x.device.plural)]
+                            children: ["All ", S(v.device.plural)]
                         })
                     })]
                 }) : null]
@@ -961,49 +965,49 @@ const Qe = de(qe),
             me: {
                 adding: o
             }
-        } = D(), [s, l, i] = pe(!0), [a, u] = p.useState(!0);
-        ye();
+        } = F(), [s, l, i] = pe(!0), [a, u] = p.useState(!0);
+        be();
         const r = p.useMemo(() => n === y.terrain, [n]),
             c = p.useMemo(() => n === y.props, [n]),
             m = p.useMemo(() => n === y.devices, [n]),
             g = () => {
-                e.setToHomeScreen(), T(y.home)
+                e.setToHomeScreen(), b(y.home)
             },
-            v = be();
+            x = ye();
         p.useEffect(() => {
-            v || i()
-        }, [v]);
-        const G = p.useCallback(() => {
+            x || i()
+        }, [x]);
+        const $ = p.useCallback(() => {
                 if (a) {
                     g();
                     return
                 }
                 r || c || m || i()
             }, [i, r, c, m, a, g]),
-            T = P => Q(P),
-            $ = P => {
-                P && u(!1), P || g()
+            b = A => Q(A),
+            E = A => {
+                A && u(!1), A || g()
             },
             U = () => {
-                T(y.home)
+                b(y.home)
             };
-        return t.jsx(F, {
+        return t.jsx(R, {
             open: s,
-            onClose: G,
-            afterOpenChange: $,
+            onClose: $,
+            afterOpenChange: E,
             width: 600,
             destroyOnClose: !0,
             children: t.jsx(Tt, {
                 children: t.jsxs(Ne, {
                     close: e.setToHomeScreen,
-                    setToTerrain: () => T(y.terrain),
+                    setToTerrain: () => b(y.terrain),
                     setToProps: () => {
-                        T(y.props)
+                        b(y.props)
                     },
-                    setToDevices: () => T(y.devices),
+                    setToDevices: () => b(y.devices),
                     setToWires: () => {
-                        o.mode = z.wire, H(W.adding), _({
-                            event: q.START_ADDING_WIRE
+                        o.mode = W.wire, H(_.adding), q({
+                            event: G.START_ADDING_WIRE
                         })
                     },
                     children: [t.jsx(We, {

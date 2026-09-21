@@ -1,15 +1,15 @@
 import {
-    M as l
+    M as n
 } from "./MapSound.js";
 import {
-    aL as n,
-    ao as u,
-    bo as d
+    aK as l,
+    an as u,
+    bn as d
 } from "./App-41.js";
 import {
     g as m,
     S as a,
-    d as g,
+    e as g,
     I as f
 } from "./FixSpinePlugin.js";
 import {
@@ -91,7 +91,7 @@ const y = {
 var i = (o => (o.stopped = "stopped", o.playing = "playing", o.fadingOut = "fadingOut", o))(i || {});
 const t = new Map,
     p = new Map;
-class Dt extends n {
+class Dt extends l {
     constructor(e) {
         if (super(e), this.onMasterVolumeChange = () => {
                 this.howl && this.howl.volume(m({
@@ -105,7 +105,7 @@ class Dt extends n {
                 s.isBeingReplaced || ((r = t.get(this.id)) == null || r.unload(), t.delete(this.id), p.delete(this.id))
             }, g() && u()) {
             if (!t.get(this.id)) {
-                const r = new l({
+                const r = new n({
                     src: [d(this.options.audioUrl)],
                     volume: this.options.volume / 100,
                     preload: !0,

@@ -1,26 +1,26 @@
 import {
-    aM as K,
-    aQ as A,
+    aQ as J,
+    aU as A,
     $ as v,
-    bv as tt,
-    bw as nt,
-    bq as B,
-    bp as et,
+    bu as tt,
+    bv as nt,
+    bp as B,
+    bo as et,
     ae as x,
+    bw as ot,
     bx as it,
-    by as ot,
-    aL as at,
+    aK as at,
     T as st
 } from "./App-41.js";
 import {
     s as X,
     I,
-    c as rt,
+    d as rt,
     a as z,
     g as N,
     S as D,
     i as b,
-    d as ht
+    e as ht
 } from "./FixSpinePlugin.js";
 import {
     b5 as f
@@ -49,7 +49,7 @@ import {
 import {
     F as M,
     R as U
-} from "./ReplaceVisualEditingPreview.js";
+} from "./FetchOptionSchemaProperty.js";
 import "./Button.js";
 import "./mobxreact.esm.js";
 import "./index-21.js";
@@ -131,7 +131,7 @@ const d = {
         INACTIVE_ANIMATION_SLOW_DOWN: .5,
         PRICE_TEXT_SIZE: 24
     },
-    c = {
+    u = {
         BG: 1,
         RAYS: 2,
         LEG: 3,
@@ -173,11 +173,11 @@ const d = {
         bg1: "#6A6A6A",
         bg2: "#CECECE"
     },
-    ct = {
+    ut = {
         imageId: "vending_machine_bg_a",
         imageUrl: l("devices/vending_machine/bg_a.png")
     },
-    ut = {
+    ct = {
         imageId: "vending_machine_bg_b",
         imageUrl: l("devices/vending_machine/bg_b.png")
     };
@@ -202,7 +202,7 @@ const k = {
         imageUrl: l("devices/vending_machine/previewIcon.png")
     };
 l("devices/item_granter/question-mark-2.png");
-const u = (t, n) => t.options.height / 2 + K(n),
+const c = (t, n) => t.options.height / 2 + J(n),
     G = (t, n) => {
         const e = Phaser.Display.Color.HexStringToColor(t);
         return {
@@ -222,11 +222,11 @@ const u = (t, n) => t.options.height / 2 + K(n),
         if (t.options.grantAction === y.grantItem && t.options.matchItemRarity) {
             const n = v(t.options.grantedItemId),
                 e = (n == null ? void 0 : n.rarity) ?? tt.common,
-                i = nt[e];
+                o = nt[e];
             return {
-                rays: i.a,
-                bg1: i.b,
-                bg2: i.a
+                rays: o.a,
+                bg1: o.b,
+                bg2: o.a
             }
         }
         return {
@@ -244,11 +244,11 @@ const u = (t, n) => t.options.height / 2 + K(n),
         if (t.lastGrayscaleFactorUpdate === t.grayScaleFactor && !n) return;
         t.lastGrayscaleFactorUpdate = t.grayScaleFactor, t.raysGrayscale || $(t);
         const e = F(t.raysGrayscale, t.grayScaleFactor),
-            i = F(t.bg1Grayscale, t.grayScaleFactor),
-            o = F(t.bg2Grayscale, t.grayScaleFactor);
+            o = F(t.bg1Grayscale, t.grayScaleFactor),
+            i = F(t.bg2Grayscale, t.grayScaleFactor);
         t.rays.forEach(p => {
             p.view.tint = e
-        }), (h = (r = t.bg1) == null ? void 0 : r.view) == null || h.setTint(i), (a = (m = t.bg2) == null ? void 0 : m.view) == null || a.setTint(o)
+        }), (h = (r = t.bg1) == null ? void 0 : r.view) == null || h.setTint(o), (a = (m = t.bg2) == null ? void 0 : m.view) == null || a.setTint(i)
     },
     St = t => {
         const n = P(t);
@@ -259,19 +259,19 @@ const u = (t, n) => t.options.height / 2 + K(n),
             originX: .5,
             originY: 1,
             ignoreInput: !0,
-            depthChange: u(t, c.RAYS),
-            onReady: i => {
-                t.rays.push(i), Q(t, i, e), i.view.alpha = t.options.raysAlpha, i.view.blendMode = t.options.raysAdditive ? 1 : 0, i.view.tint = A(n.rays), e === t.options.numberOfRays - 1 && _(t, !0)
+            depthChange: c(t, u.RAYS),
+            onReady: o => {
+                t.rays.push(o), Q(t, o, e), o.view.alpha = t.options.raysAlpha, o.view.blendMode = t.options.raysAdditive ? 1 : 0, o.view.tint = A(n.rays), e === t.options.numberOfRays - 1 && _(t, !0)
             }
         })
     },
     Q = (t, n, e) => {
-        const i = Math.PI * 2 / t.options.numberOfRays,
-            o = e * i + t.currentRaysAngle;
-        n.view.rotation = o;
+        const o = Math.PI * 2 / t.options.numberOfRays,
+            i = e * o + t.currentRaysAngle;
+        n.view.rotation = i;
         const r = 39,
             h = 380,
-            m = o,
+            m = i,
             a = Math.atan(r / 2 * t.options.raysWidthFactor / h),
             p = t.options.width / 2,
             E = (t.options.height - s.LEGS_HEIGHT) / 2,
@@ -283,7 +283,7 @@ const u = (t, n) => t.options.height / 2 + K(n),
             intensity: t.grayScaleFactor
         }))
     },
-    q = (t, n) => {
+    W = (t, n) => {
         t.scene.plugins.get("rexGrayScalePipeline").remove(n.view)
     },
     Et = t => {
@@ -292,14 +292,14 @@ const u = (t, n) => t.options.height / 2 + K(n),
     },
     At = t => {
         var n, e;
-        t.grayScalePipelines.length !== 0 && ((n = t.requiredImage) != null && n.view && q(t, t.requiredImage), (e = t.grantedImage) != null && e.view && q(t, t.grantedImage), t.grayScalePipelines = [])
+        t.grayScalePipelines.length !== 0 && ((n = t.requiredImage) != null && n.view && W(t, t.requiredImage), (e = t.grantedImage) != null && e.view && W(t, t.grantedImage), t.grayScalePipelines = [])
     },
     _t = t => {
         t.grayScaleFactor > 0 ? (Et(t), t.grayScalePipelines.forEach(n => {
             n.intensity = t.grayScaleFactor
         })) : At(t)
     },
-    j = (t, n, e, i, o, r) => {
+    K = (t, n, e, o, i, r) => {
         const h = {
             ...gt
         };
@@ -311,13 +311,13 @@ const u = (t, n) => t.options.height / 2 + K(n),
             a = B({
                 height: m.height,
                 width: m.width,
-                newWidth: i,
+                newWidth: o,
                 newHeight: e
             });
         return t.parts.add.sprite({
             imageId: h.imageId,
             imageUrl: h.imageUrl,
-            depthChange: u(t, o),
+            depthChange: c(t, i),
             displayWidth: a.width,
             displayHeight: a.height,
             onReady: p => {
@@ -326,7 +326,7 @@ const u = (t, n) => t.options.height / 2 + K(n),
         })
     },
     w = t => I() ? t.options.amountOfRequiredItem : t.state.cost ?? t.options.amountOfRequiredItem,
-    W = t => {
+    q = t => {
         let n = `${f(w(t))}`;
         return t.options.allowFunding ? `${f(t.state.fundedAmount||0)} / ${n}` : n
     },
@@ -336,40 +336,40 @@ const u = (t, n) => t.options.height / 2 + K(n),
         t.priceAreaInfoRectangle || (t.priceAreaInfoRectangle = t.parts.add.sprite({
             ...ft,
             y: n,
-            depthChange: u(t, c.INFO_BG)
+            depthChange: c(t, u.INFO_BG)
         })), pt({
             familyName: V.fontFamily,
             onLoad: () => {
-                const e = W(t);
+                const e = q(t);
                 if (t.priceText) t.priceText.view.setText(e);
                 else {
                     const r = t.parts.add.text({
-                        text: W(t),
+                        text: q(t),
                         y: n,
-                        depthChange: u(t, c.INFO),
+                        depthChange: c(t, u.INFO),
                         textStyle: V
                     });
                     t.priceText = r
                 }
                 t.updateFontSize();
-                const i = s.REQUIRED_ITEM_MAX_SIZE,
-                    o = r => {
+                const o = s.REQUIRED_ITEM_MAX_SIZE,
+                    i = r => {
                         r.view.y = t.y + n;
                         const h = t.priceText.getBounds().width,
-                            a = i + h + 7;
-                        r.view.x = -a / 2 + i / 2 + t.x, t.priceText.view.x = a / 2 - h / 2 + t.x
+                            a = o + h + 7;
+                        r.view.x = -a / 2 + o / 2 + t.x, t.priceText.view.x = a / 2 - h / 2 + t.x
                     };
-                t.requiredImage ? o(t.requiredImage) : t.requiredImage = j(t, t.options.requiredItemId, i, s.PRICE_HEIGHT * .8, c.INFO, r => {
-                    o(r)
+                t.requiredImage ? i(t.requiredImage) : t.requiredImage = K(t, t.options.requiredItemId, o, s.PRICE_HEIGHT * .8, u.INFO, r => {
+                    i(r)
                 })
             }
         })
     },
     Tt = t => {
-        const i = {
+        const o = {
             displayWidth: t.options.width - 20,
             displayHeight: t.options.height - 20 - s.LEGS_HEIGHT,
-            depthChange: u(t, c.BG),
+            depthChange: c(t, u.BG),
             y: -20
         };
         t.options.showShadow && !rt() && t.shadows.add({
@@ -377,25 +377,25 @@ const u = (t, n) => t.options.height / 2 + K(n),
             r2: 60,
             y: t.options.height / 2 - 20
         });
-        const o = P(t);
+        const i = P(t);
         t.parts.add.sprite({
-            ...ct,
-            ...i,
+            ...ut,
+            ...o,
             onReady: a => {
-                t.bg1 = a, a.view.setTint(A(o.bg1)), _(t, !0)
+                t.bg1 = a, a.view.setTint(A(i.bg1)), _(t, !0)
             }
         }), t.parts.add.sprite({
-            ...ut,
-            ...i,
+            ...ct,
+            ...o,
             ignoreInput: !0,
             onReady: a => {
-                t.bg2 = a, a.view.setTint(A(o.bg2)), _(t, !0)
+                t.bg2 = a, a.view.setTint(A(i.bg2)), _(t, !0)
             }
         });
         const r = {
                 ...dt,
                 y: t.options.height / 2 + -20 - 2,
-                depthChange: u(t, c.LEG)
+                depthChange: c(t, u.LEG)
             },
             h = -t.options.width / 2 + 60;
         t.parts.add.sprite({
@@ -414,7 +414,7 @@ const u = (t, n) => t.options.height / 2 + K(n),
             scale: s.FRAME_SCALE,
             height: t.options.height - s.LEGS_HEIGHT,
             width: t.options.width,
-            depthChange: u(t, c.FRAME),
+            depthChange: c(t, u.FRAME),
             imageUrl: It.imageUrl
         })
     },
@@ -432,16 +432,16 @@ const u = (t, n) => t.options.height / 2 + K(n),
             imageId: n,
             imageUrl: n,
             y: -40 / 2,
-            depthChange: u(t, c.GRANTED_ITEM),
+            depthChange: c(t, u.GRANTED_ITEM),
             onReady: e => {
-                const i = Y(n),
-                    o = B({
-                        height: i.height,
-                        width: i.width,
+                const o = Y(n),
+                    i = B({
+                        height: o.height,
+                        width: o.width,
                         newWidth: Math.min(s.ITEM_MAX_SIZE, t.options.width * .7),
                         newHeight: Math.min(s.ITEM_MAX_SIZE, t.options.height * .4 - s.PRICE_HEIGHT)
                     });
-                e.view.setDisplaySize(o.width, o.height), t.grayScaleFactor > 0 && T(t, e)
+                e.view.setDisplaySize(i.width, i.height), t.grayScaleFactor > 0 && T(t, e)
             }
         })
     },
@@ -481,7 +481,7 @@ const u = (t, n) => t.options.height / 2 + K(n),
         let n = (e = t.options.grantedItemName) == null ? void 0 : e.trim();
         return !n && t.options.grantAction === y.grantItem && (n = x(t.options.grantedItemId)), n || (n = g.defaultItemName), t.options.grantAction === y.grantItem && !t.options.visibleInGame && t.options.attachCostToNameWhenHidden && t.options.requiredItemId && w(t) ? `${n} - ${f(t.options.amountOfRequiredItem)} ${x(t.options.requiredItemId)}` : n
     },
-    Pt = t => !!(!t.options.visibleInGame && !t.state.active || t.options.allowedPurchaseTeam && t.options.allowedPurchaseTeam !== it && ot() !== t.options.allowedPurchaseTeam),
+    Pt = t => !!(!t.options.visibleInGame && !t.state.active || t.options.allowedPurchaseTeam && t.options.allowedPurchaseTeam !== ot && it() !== t.options.allowedPurchaseTeam),
     Ht = t => {
         if (!t.state.active) return {
             text: g.notAvailable.message,
@@ -493,25 +493,25 @@ const u = (t, n) => t.options.height / 2 + K(n),
         };
         const n = H(t),
             e = S(t),
-            i = C(t);
-        return e < n && !i ? {
+            o = C(t);
+        return e < n && !o ? {
             text: g.notEnoughRequiredItem.message,
             color: g.notEnoughRequiredItem.color
         } : t.options.useLimitedStock ? {
             text: g.inStock(t.state.currentStock).message,
             color: g.inStock(t.state.currentStock).color
-        } : i ? {
+        } : o ? {
             text: g.fundingStatus.message(t.state.fundedAmount || 0, w(t), x(t.options.requiredItemId))
         } : {}
     },
-    J = (t, n) => {
+    j = (t, n) => {
         if (Pt(t)) {
             t.interactiveZones.setForceDisabled(!0);
             return
         } else t.interactiveZones.setForceDisabled(!1);
         if (!bt(t.id) && !n) return;
         const e = Ht(t),
-            i = {
+            o = {
                 message: xt(t),
                 action: Mt(t),
                 topHeader: e == null ? void 0 : e.text,
@@ -520,7 +520,7 @@ const u = (t, n) => t.options.height / 2 + K(n),
                 duration: Ft(t),
                 allowedToInteract: Rt(t)
             };
-        t.interactiveZones.setInfo(i)
+        t.interactiveZones.setInfo(o)
     },
     Ot = t => {
         I() || (t.options.visibleInGame ? t.interactiveZones.add.rect({
@@ -532,22 +532,22 @@ const u = (t, n) => t.options.height / 2 + K(n),
         }), t.interactiveZones.setCanInteractThroughColliders(!0), t.interactiveZones.onInteraction = () => {
             t.sendToServerDevice(d.purchase)
         }, t.interactiveZones.onInteractiveCb = () => {
-            J(t, !0)
+            j(t, !0)
         })
     };
-class oe extends at {
+class ie extends at {
     constructor(n) {
         if (super(n), this.grayScalePipelines = [], this.grayScaleFactor = 0, this.animationSpeedFactor = 1, this.rays = [], this.cumulTime = 0, this.currentRaysAngle = 0, this.onUpdate = e => {
                 if (this.cull.isInsideView) {
-                    if (this.currentRaysAngle += e / 1e4 * this.animationSpeedFactor, this.rays.forEach((i, o) => {
-                            Q(this, i, o)
+                    if (this.currentRaysAngle += e / 1e4 * this.animationSpeedFactor, this.rays.forEach((o, i) => {
+                            Q(this, o, i)
                         }), this.grantedImage && this.grantedImage.view) {
                         this.cumulTime += e;
-                        const i = this.y - s.LEGS_HEIGHT / 2,
-                            o = 5;
-                        this.grantedImage.view.y = i + this.animationSpeedFactor * Math.sin(this.cumulTime / 550) * o
+                        const o = this.y - s.LEGS_HEIGHT / 2,
+                            i = 5;
+                        this.grantedImage.view.y = o + this.animationSpeedFactor * Math.sin(this.cumulTime / 550) * i
                     }
-                    _t(this), _(this), J(this)
+                    _t(this), _(this), j(this)
                 }
             }, this.onStateChange = e => {
                 e === "active" && (this.state.active ? this.tweens.add({
@@ -578,21 +578,21 @@ class oe extends at {
             }, this.setupVisualEditing = () => {
                 if (!I() || !b()) return;
                 const e = M(this, "width"),
-                    i = M(this, "height");
+                    o = M(this, "height");
                 this.visualEditing.add.box({
                     width: this.options.width,
                     height: this.options.height,
                     angle: 0,
                     minWidth: e.min,
                     maxWidth: e.max,
-                    minHeight: i.min,
-                    maxHeight: i.max,
+                    minHeight: o.min,
+                    maxHeight: o.max,
                     rotable: !1,
                     keepRatio: !1,
-                    onChange: o => {
-                        U(o.x, o.y, {
-                            width: o.width,
-                            height: o.height
+                    onChange: i => {
+                        U(i.x, i.y, {
+                            width: i.width,
+                            height: i.height
                         })
                     }
                 })
@@ -605,9 +605,9 @@ class oe extends at {
                     maxRadius: e.max,
                     rotable: !1,
                     resizable: !0,
-                    onChange: i => {
-                        U(i.x, i.y, {
-                            radius: i.radius
+                    onChange: o => {
+                        U(o.x, o.y, {
+                            radius: o.radius
                         })
                     }
                 })
@@ -624,7 +624,7 @@ class oe extends at {
         this.boundingBox.setHardcoded({
             width: this.options.width,
             height: this.options.height
-        }), this.wirePoints.setBoth(this.x, this.y - this.options.height / 2 + 20), Tt(this), !this.isPreview && (wt(this), this.options.grantAction === y.broadcastOnChannel ? this.options.grantedItemImageUrl && (this.grantedImage = Ct(this)) : this.grantedImage = j(this, this.options.grantedItemId, Math.min(s.ITEM_MAX_SIZE, this.options.width * .7), Math.min(s.ITEM_MAX_SIZE, this.options.height * .5 - s.PRICE_HEIGHT), u(this, c.GRANTED_ITEM)), Z(this), St(this), $(this))
+        }), this.wirePoints.setBoth(this.x, this.y - this.options.height / 2 + 20), Tt(this), !this.isPreview && (wt(this), this.options.grantAction === y.broadcastOnChannel ? this.options.grantedItemImageUrl && (this.grantedImage = Ct(this)) : this.grantedImage = K(this, this.options.grantedItemId, Math.min(s.ITEM_MAX_SIZE, this.options.width * .7), Math.min(s.ITEM_MAX_SIZE, this.options.height * .5 - s.PRICE_HEIGHT), c(this, u.GRANTED_ITEM)), Z(this), St(this), $(this))
     }
     addIconLook() {
         this.parts.add.sprite(yt).view.setScale(.25)
@@ -633,20 +633,20 @@ class oe extends at {
         if (!this.priceText) return;
         const n = this.priceText.view.text.length,
             e = this.options.width * .85;
-        let i = s.PRICE_TEXT_SIZE,
-            o = n * i;
+        let o = s.PRICE_TEXT_SIZE,
+            i = n * o;
         const r = () => {
-            o > e && (i -= 1, o = n * i, r())
+            i > e && (o -= 1, i = n * o, r())
         };
         r();
         const h = z().cameraHelper.zoom,
-            m = i * h;
+            m = o * h;
         this.priceText.view.setFontSize(m), this.priceText.view.setScale(1 / h);
         const a = lt();
         this.priceText.view.setPadding(a, a, a, a)
     }
 }
 export {
-    oe as
+    ie as
     default
 };

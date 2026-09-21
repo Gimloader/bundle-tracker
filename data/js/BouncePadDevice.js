@@ -1,11 +1,11 @@
 import {
-    aL as w,
-    aR as b,
+    aK as w,
+    aV as b,
     T as f,
-    aQ as M,
-    aS as v,
-    aT as y,
-    aU as x,
+    aU as M,
+    aM as v,
+    aN as y,
+    aW as x,
     L as P
 } from "./App-41.js";
 import {
@@ -16,13 +16,13 @@ import {
     S as A,
     F as u,
     I as D,
-    d as V,
-    e as S
+    e as V,
+    j as k
 } from "./FixSpinePlugin.js";
 import {
-    F as k,
-    R as I
-} from "./ReplaceVisualEditingPreview.js";
+    F as I,
+    R as S
+} from "./FetchOptionSchemaProperty.js";
 import {
     p as B
 } from "./playSound.js";
@@ -94,7 +94,7 @@ import "./useDebouncedValue.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-const R = {
+const F = {
         atlasUrl: c("devices/bounce_pad/spine/skeleton.atlas"),
         jsonUrl: c("devices/bounce_pad/spine/skeleton.json")
     },
@@ -142,7 +142,7 @@ class zt extends w {
                 o = t * e + i * r,
                 p = t * r + i * e;
             this.spine = this.parts.add.spine({
-                ...R,
+                ...F,
                 spineViewId: this.id,
                 defaultAnimation: "idle",
                 boundingBox: {
@@ -218,8 +218,8 @@ class zt extends w {
                 (t = this.spine) != null && t.view && (this.spine.setMixDuration(0), this.playAnimation((this.state.active, "idle")), this.spine.view.updatePose(0), this.spine.resetMixDuration())
             })
         }, this.setupVisualEditing = () => {
-            if (V() || S()) return;
-            const t = k(this, "scale"),
+            if (V() || k()) return;
+            const t = I(this, "scale"),
                 i = n.boundingBox.width,
                 s = n.boundingBox.height;
             this.visualEditing.add.box({
@@ -233,7 +233,7 @@ class zt extends w {
                 minHeight: s * t.min,
                 maxHeight: s * t.max,
                 onChange: e => {
-                    I(e.x, e.y, {
+                    S(e.x, e.y, {
                         scale: e.width / i,
                         angle: e.angle
                     })

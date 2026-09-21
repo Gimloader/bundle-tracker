@@ -1,26 +1,26 @@
 import {
-    bj as j,
-    bk as q,
-    U as J,
+    bi as j,
+    bj as K,
+    U as q,
     T as C,
-    bl as T,
-    L as b,
-    aL as K,
-    a$ as Q,
-    b0 as Z,
-    bm as O
+    bk as T,
+    L as v,
+    aK as J,
+    a_ as Q,
+    a$ as Z,
+    bl as O
 } from "./App-41.js";
 import {
     G as B
 } from "./GetAssetPath.js";
 import {
     a as P,
-    F as v,
-    P as tt,
+    F as b,
+    n as tt,
     s as u,
     I as k,
     i as et,
-    d as it
+    e as it
 } from "./FixSpinePlugin.js";
 import {
     U as ot
@@ -115,7 +115,7 @@ const rt = {
         CharacterShift: -25,
         SafeAreaTopMarginWithGUIDevices: 180,
         SafeAreaTopMarginWithoutGUIDevices: 110,
-        SafeAreaExtraTopMarginWithScorebar: q,
+        SafeAreaExtraTopMarginWithScorebar: K,
         SafeAreaBottomMarginWithGUIDevices: 100,
         SafeAreaBottomMarginWithoutGUIDevices: 30,
         SafeAreaLeftRightMargin: 30,
@@ -151,7 +151,7 @@ const E = t => {
     V = t => {
         if (t.options.ballId === void 0) return;
         if (t.trackedBallDeviceId) {
-            const e = J(t.trackedBallDeviceId);
+            const e = q(t.trackedBallDeviceId);
             if (e) return e
         }
         const i = P().worldManager.devices.allDevices.find(e => e.deviceOption.id === G.ball && e.options.identifier === t.options.ballId);
@@ -163,7 +163,7 @@ const E = t => {
             e = t.y;
         const o = st();
         if (t.options.target === h.player) {
-            const n = v(t.state.characterId);
+            const n = b(t.state.characterId);
             if (!n || n.id === C()) return;
             i = n.body.x, e = n.body.y + s.CharacterShift
         } else if (t.options.target === h.flag) {
@@ -225,7 +225,7 @@ const E = t => {
     },
     pt = t => {
         var a, r;
-        const i = v(t.state.characterId);
+        const i = b(t.state.characterId);
         if (!i) {
             (a = t.icon) == null || a.destroy();
             return
@@ -236,9 +236,9 @@ const E = t => {
         ((r = t.icon) == null ? void 0 : r.options.imageUrl) !== o && t.parts.add.sprite({
             imageId: o,
             imageUrl: o,
-            layerId: b.InGameUIElements,
+            layerId: v.InGameUIElements,
             onReady: n => {
-                const l = v(t.state.characterId);
+                const l = b(t.state.characterId);
                 if (!l && l !== i) return;
                 const c = l.skin.skinId.replace("character_", "");
                 !c && c !== e || (t.icon && t.icon.destroy(), t.icon = n)
@@ -284,10 +284,10 @@ const E = t => {
         }
         const M = u.phaser.mainCharacter;
         if (!M) return;
-        const H = Phaser.Math.Distance.Between(M.body.x, M.body.y, e.x, e.y),
-            X = s.PixelsPerMeter,
-            _ = Math.round(H / X);
-        t.nameText.view.setText(`${t.options.name} (${_}m)`)
+        const _ = Phaser.Math.Distance.Between(M.body.x, M.body.y, e.x, e.y),
+            H = s.PixelsPerMeter,
+            X = Math.round(_ / H);
+        t.nameText.view.setText(`${t.options.name} (${X}m)`)
     },
     D = t => {
         var e, o, a;
@@ -315,7 +315,7 @@ const ft = (t, i) => {
         const i = P().worldManager.devices.allDevices.find(e => e.deviceOption.id === G.flag && e.options.flagColor === t.options.flagColor && e.pointedByWaypointDeviceID === t.id);
         i && (i.pointedByWaypointDeviceID = void 0)
     };
-class Re extends K {
+class Re extends J {
     constructor(i) {
         if (super(i), this.onUpdate = e => {
                 if (!D(this)) return;
@@ -343,13 +343,13 @@ class Re extends K {
             const e = Phaser.Display.Color.HexStringToColor(this.options.color).color;
             this.pointer = this.parts.add.sprite({
                 ...rt,
-                layerId: b.InGameUIElements,
+                layerId: v.InGameUIElements,
                 onReady: o => {
                     o.view.setTint(e), D(this)
                 }
             }), this.nameText = this.parts.add.text({
                 text: this.options.name,
-                layerId: b.InGameUIElements,
+                layerId: v.InGameUIElements,
                 textStyle: {
                     ...nt,
                     color: this.options.color

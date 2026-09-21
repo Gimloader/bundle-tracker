@@ -6,9 +6,9 @@ import {
     i as m
 } from "./FixSpinePlugin.js";
 import {
-    aL as p,
-    a$ as e,
-    b0 as s
+    aK as p,
+    a_ as e,
+    a$ as a
 } from "./App-41.js";
 import "./_index.js";
 import "./MapModeType.js";
@@ -80,7 +80,7 @@ import "./index-24.js";
 class yo extends p {
     constructor(t) {
         if (super(t), r() && m()) {
-            const o = s.Utility;
+            const o = a.Utility;
             new e({
                 device: this,
                 baseColor: o.baseColor,

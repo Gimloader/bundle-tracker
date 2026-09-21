@@ -10,9 +10,9 @@ import {
     i as e
 } from "./FixSpinePlugin.js";
 import {
-    aL as a,
-    a$ as s,
-    b0 as n
+    aK as a,
+    a_ as s,
+    a$ as n
 } from "./App-41.js";
 import "./TutorialConsts.js";
 import "./_index.js";

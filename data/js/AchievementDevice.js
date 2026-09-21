@@ -3,11 +3,11 @@ import {
 } from "./_index.js";
 import {
     s as p,
-    e,
-    d as s
+    j as e,
+    e as s
 } from "./FixSpinePlugin.js";
 import {
-    aL as a,
+    aK as a,
     T as h
 } from "./App-41.js";
 import {
@@ -84,7 +84,7 @@ const c = {
     imageUrl: n("devices/achievement/icon.png")
 };
 var r = (t => (t.show = "show", t))(r || {});
-class ki extends a {
+class ji extends a {
     constructor(o) {
         super(o), this.onMessage = i => {
             i.key === r.show && (i == null ? void 0 : i.data) === h() && p.gui.achievement.update(this.id, m())
@@ -92,6 +92,6 @@ class ki extends a {
     }
 }
 export {
-    ki as
+    ji as
     default
 };

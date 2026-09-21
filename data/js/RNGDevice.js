@@ -3,9 +3,9 @@ import {
     i
 } from "./FixSpinePlugin.js";
 import {
-    aL as m,
-    a$ as p,
-    b0 as e
+    aK as m,
+    a_ as p,
+    a$ as e
 } from "./App-41.js";
 import "./GetAssetPath.js";
 import "./_index.js";

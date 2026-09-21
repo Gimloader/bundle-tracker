@@ -4,16 +4,16 @@ import {
     j as b
 } from "./_index.js";
 import {
-    P as f,
-    K as w,
-    n as p,
-    p as y,
-    h as l,
-    o as u,
-    y as I,
-    m as v,
-    L as B,
-    Q as P
+    n as f,
+    a6 as v,
+    r as p,
+    v as y,
+    m as l,
+    u,
+    a0 as w,
+    t as I,
+    a7 as B,
+    a8 as P
 } from "./FixSpinePlugin.js";
 import {
     G as S
@@ -35,7 +35,7 @@ const x = {
         plugins: {
             scene: [{
                 key: "spine.SpinePlugin",
-                plugin: w,
+                plugin: v,
                 mapping: "spine"
             }]
         },
@@ -163,7 +163,7 @@ class O {
 }
 class _ {
     constructor(a) {
-        this.scene = a, this.skinId = a.skinId, this.editStyles = new L(this), this.animation = new O(this), this.spine = a.add.spinePreview(0, 0, "data_" + this.skinId, "atlas_" + this.skinId, new I("idle", [this.skinId])), this.spine.skeleton.setSkinByName(this.skinId), this.editStyles.apply(), this.animation.onSkinChanged(), E(a)
+        this.scene = a, this.skinId = a.skinId, this.editStyles = new L(this), this.animation = new O(this), this.spine = a.add.spinePreview(0, 0, "data_" + this.skinId, "atlas_" + this.skinId, new w("idle", [this.skinId])), this.spine.skeleton.setSkinByName(this.skinId), this.editStyles.apply(), this.animation.onSkinChanged(), E(a)
     }
     destroy() {
         this.animation.destroy()
@@ -179,7 +179,7 @@ class D extends Phaser.Scene {
     create() {
         const a = this.cache.json.get("data_compressed_" + this.skinId);
         if (!this.cache.json.get("data_" + this.skinId) && a) {
-            const e = v.decompress(a);
+            const e = I.decompress(a);
             this.cache.json.add("data_" + this.skinId, e)
         }
         try {
@@ -198,7 +198,7 @@ class D extends Phaser.Scene {
 const A = 3;
 let n = null,
     d = null;
-const K = i => {
+const V = i => {
     const [a, t] = k.useState(!1), [e, c] = k.useState(0);
     k.useEffect(() => {
         if (!a) return () => {};
@@ -227,6 +227,6 @@ const K = i => {
     })
 };
 export {
-    K as
+    V as
     default
 };

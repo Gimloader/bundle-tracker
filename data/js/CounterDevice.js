@@ -1,5 +1,5 @@
 import {
-    aL as m
+    aK as m
 } from "./App-41.js";
 import {
     G as t
@@ -8,8 +8,8 @@ import {
     L as p
 } from "./LoadGoogleFontAfterSceneStart.js";
 import {
-    d as s,
-    e as a
+    e as s,
+    j as a
 } from "./FixSpinePlugin.js";
 import "./_index.js";
 import "./Button.js";
@@ -86,7 +86,7 @@ const n = {
         imageId: t("devices/counter/background.png"),
         imageUrl: t("devices/counter/background.png")
     };
-class kt extends m {
+class zt extends m {
     constructor(e) {
         if (super(e), this.textScale = 1, this.onStateChange = o => {
                 var i;
@@ -117,6 +117,6 @@ class kt extends m {
     }
 }
 export {
-    kt as
+    zt as
     default
 };

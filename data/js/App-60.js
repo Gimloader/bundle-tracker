@@ -6,9 +6,9 @@ import {
     p as m
 } from "./_index.js";
 import {
-    aA as p,
+    az as p,
     o as a,
-    aB as s
+    aA as s
 } from "./App-41.js";
 import {
     S as e
@@ -106,7 +106,7 @@ const c = t.lazy(() => m(() => import("./Modal.js"), __vite__mapDeps([0, 1, 2, 3
             })
         })
     })),
-    Dr = p(l),
+    zr = p(l),
     u = i(e).attrs({
         className: "maxAll"
     })`
@@ -117,6 +117,6 @@ const c = t.lazy(() => m(() => import("./Modal.js"), __vite__mapDeps([0, 1, 2, 3
         className: "maxAll"
     })``;
 export {
-    d as ANIMATION_DURATION, Dr as
+    d as ANIMATION_DURATION, zr as
     default
 };

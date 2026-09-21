@@ -6,7 +6,7 @@ import {
     dQ as f
 } from "./_index.js";
 import {
-    o as j
+    o as C
 } from "./mobxreact.esm.js";
 import {
     M as h,
@@ -18,26 +18,26 @@ import {
 import {
     s as d,
     a as M,
-    P as w,
-    e as A,
+    n as w,
+    j as A,
     I as F,
     N as y
 } from "./FixSpinePlugin.js";
 import {
     T as E,
-    ai as B,
-    ak as S,
-    al as L,
+    ah as B,
+    aj as S,
+    ak as L,
     S as $,
     J as G,
-    u as k,
+    u as j,
     o as K,
     q as T,
     n as g
 } from "./App-41.js";
 import {
     e as W,
-    m as v
+    m as k
 } from "./motion.js";
 import "./polished.esm.js";
 import "./inheritsLoose.js";
@@ -176,7 +176,7 @@ const m = () => {
     J = e => {
         const {
             gui: t
-        } = k(), o = i => t.selectedPlayerId = i;
+        } = j(), o = i => t.selectedPlayerId = i;
         return r.jsx(Q, {
             children: e.players.map(i => r.jsx(H, {
                 name: i.name,
@@ -218,10 +218,10 @@ const m = () => {
             opacity: 1
         }
     },
-    ft = j(() => {
+    ft = C(() => {
         const {
             gui: e
-        } = k(), t = W(), o = () => {
+        } = j(), t = W(), o = () => {
             e.selectedPlayerId = "", A() && F() ? g(y.startScreen) : g(y.home)
         };
         K(w.Input.Keyboard.KeyCodes.ESC, o, [o]);
@@ -232,13 +232,13 @@ const m = () => {
                 }, {
                     fireImmediately: !0
                 }),
-                C = f(() => e.selectedPlayerId, () => {
+                b = f(() => e.selectedPlayerId, () => {
                     u(m())
                 }, {
                     fireImmediately: !0
                 });
             return () => {
-                s(), C()
+                s(), b()
             }
         }, []);
         const c = n.useMemo(() => e.selectedPlayerId ? i.find(s => s.id === e.selectedPlayerId) : null, [e.selectedPlayerId, i.length]);
@@ -246,7 +246,7 @@ const m = () => {
             !c && i.length && (e.selectedPlayerId = i[0].id)
         }, [c, i.length]);
         const x = n.useMemo(() => t ? .3 : .2, [t]),
-            b = () => i.length ? c ? r.jsxs(r.Fragment, {
+            v = () => i.length ? c ? r.jsxs(r.Fragment, {
                 children: [r.jsx(R, {
                     selectedPlayer: c,
                     close: o
@@ -281,7 +281,7 @@ const m = () => {
                         ease: "easeOut"
                     },
                     onClick: s => s.stopPropagation(),
-                    children: b()
+                    children: v()
                 })
             }), r.jsx(T, {
                 onClick: o
@@ -291,13 +291,13 @@ const m = () => {
     X = a(N).attrs({
         className: "maxAll"
     })``,
-    Y = a(v.div).attrs({
+    Y = a(k.div).attrs({
         className: "maxAll flex-center"
     })`
   background: rgba(0, 0, 0, 0.6);
   overflow: hidden;
 `,
-    Z = a(v.div).attrs({
+    Z = a(k.div).attrs({
         className: "medium-shadow flex-column"
     })`
   position: relative;

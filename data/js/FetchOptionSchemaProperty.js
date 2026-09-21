@@ -7,19 +7,10 @@ import {
 import {
     a as l
 } from "./FixSpinePlugin.js";
-const h = (n, a) => {
-        var i, t, s;
-        const e = n.deviceOption.optionSchema.options.find(o => o.key === a);
-        return {
-            min: (i = e == null ? void 0 : e.option.props) == null ? void 0 : i.min,
-            max: (t = e == null ? void 0 : e.option.props) == null ? void 0 : t.max,
-            step: (s = e == null ? void 0 : e.option.props) == null ? void 0 : s.step
-        }
-    },
-    v = n => {
+const v = n => {
         l().worldManager.devices.getDeviceById(n.id) && c(n)
     },
-    D = (n, a, e) => {
+    h = (n, a, e) => {
         const i = d(),
             t = r();
         if (!t || !i) return;
@@ -40,7 +31,16 @@ const h = (n, a) => {
             placedByClient: !0,
             state: i.deviceOption.defaultState
         })
+    },
+    D = (n, a) => {
+        var i, t, s;
+        const e = n.deviceOption.optionSchema.options.find(o => o.key === a);
+        return {
+            min: (i = e == null ? void 0 : e.option.props) == null ? void 0 : i.min,
+            max: (t = e == null ? void 0 : e.option.props) == null ? void 0 : t.max,
+            step: (s = e == null ? void 0 : e.option.props) == null ? void 0 : s.step
+        }
     };
 export {
-    h as F, D as R
+    D as F, h as R
 };

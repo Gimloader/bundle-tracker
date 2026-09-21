@@ -29,7 +29,7 @@ import {
 } from "./App-41.js";
 import {
     s as X,
-    P as je
+    n as je
 } from "./FixSpinePlugin.js";
 import {
     o as ae

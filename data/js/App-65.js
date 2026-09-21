@@ -16,8 +16,8 @@ import {
 import {
     s as h,
     R as d,
-    t as l,
-    P as k,
+    J as l,
+    n as k,
     A as D,
     M as E
 } from "./FixSpinePlugin.js";
@@ -29,9 +29,9 @@ import {
 } from "./CapitalizeFirstLetter.js";
 import {
     M as v,
-    u as P,
-    c as U,
-    K,
+    u as U,
+    c as K,
+    K as P,
     a as _,
     o as Y,
     q as B,
@@ -47,10 +47,10 @@ import {
     S as q
 } from "./SixteenByNineScaler.js";
 import {
-    T as G
+    T as J
 } from "./TerrainLayerNames.js";
 import {
-    S as J
+    S as G
 } from "./index-2.js";
 import {
     S as f
@@ -182,7 +182,7 @@ const re = () => {
             me: {
                 removing: t
             }
-        } = P(), i = p.useRef(), n = p.useRef(), o = p.useRef(), s = () => {
+        } = U(), i = p.useRef(), n = p.useRef(), o = p.useRef(), s = () => {
             var e, a, x, S, T, w;
             (a = (e = i == null ? void 0 : i.current) == null ? void 0 : e.blur) == null || a.call(e), (S = (x = n == null ? void 0 : n.current) == null ? void 0 : x.blur) == null || S.call(x), (w = (T = o == null ? void 0 : o.current) == null ? void 0 : T.blur) == null || w.call(T)
         }, c = e => {
@@ -204,7 +204,7 @@ const re = () => {
             const x = `${e}-${a}`;
             return r.jsx(f.Option, {
                 value: a,
-                children: a + " - " + G[a - 1] || "Layer"
+                children: a + " - " + J[a - 1] || "Layer"
             }, `remove-tiles-mode-${x}`)
         }, g = e => r.jsx(f.Option, {
             value: e,
@@ -212,7 +212,7 @@ const re = () => {
         }, `remove-tiles-eraser-size-${e}`);
         return r.jsx(q, {
             className: "maxWidth",
-            children: r.jsxs(J, {
+            children: r.jsxs(G, {
                 className: "maxWidth",
                 direction: "vertical",
                 size: 13,
@@ -336,7 +336,7 @@ const re = () => {
                 $(E.none)
             };
         p.useEffect(() => {
-            const o = U(K.Removing.SwitchToAddingMode(), () => {
+            const o = K(P.Removing.SwitchToAddingMode(), () => {
                 h.me.adding.mode = D.terrain, $(E.adding)
             });
             return () => {

@@ -23,7 +23,7 @@ import {
 import {
     s as g,
     M as y,
-    P as _
+    n as _
 } from "./FixSpinePlugin.js";
 import {
     S as V

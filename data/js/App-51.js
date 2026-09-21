@@ -7,7 +7,7 @@ import {
 import {
     u as f,
     a2 as g,
-    am as x
+    al as x
 } from "./App-41.js";
 import {
     o as u

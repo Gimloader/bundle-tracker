@@ -1,23 +1,23 @@
 import {
-    aL as N,
+    aK as N,
     L as y,
-    aQ as M
+    aU as M
 } from "./App-41.js";
 import {
     G as r
 } from "./GetAssetPath.js";
 import {
-    H as D,
+    a4 as D,
     I as g,
     i as C,
-    d as x
+    e as x
 } from "./FixSpinePlugin.js";
 import {
     F as T,
     R as G
-} from "./ReplaceVisualEditingPreview.js";
+} from "./FetchOptionSchemaProperty.js";
 import {
-    O as L
+    O
 } from "./OnHit.js";
 import "./_index.js";
 import "./Button.js";
@@ -89,17 +89,17 @@ import "./index-24.js";
 var t = (e => (e.active = "ACTIVE", e.inactive = "INACTIVE", e.toActive = "TO_ACTIVE", e.toInactive = "TO_INACTIVE", e))(t || {});
 const i = (e, n) => "LASER_BEAM_DEVICE_ORIGIN_ANIM_" + n + e;
 var I = (e => (e.standard = "Standard", e.plant = "Plant", e))(I || {});
-const O = {
+const V = {
         imageId: r("devices/laser_beam/laser.png"),
         imageUrl: r("devices/laser_beam/laser.png")
     },
-    V = {
+    L = {
         imageId: r("devices/laser_beam/dot.png"),
         imageUrl: r("devices/laser_beam/dot.png")
     },
     d = I.standard,
     l = I.plant,
-    H = {
+    U = {
         baseScale: .36,
         spritesheetId: r("devices/laser_beam/standard_base.png"),
         spritesheetUrl: r("devices/laser_beam/standard_base.png"),
@@ -175,8 +175,8 @@ const O = {
             }
         }]
     },
-    U = {
-        [d]: H,
+    H = {
+        [d]: U,
         [l]: B
     },
     Y = 600,
@@ -201,7 +201,7 @@ class ni extends N {
                 this.state.active && !this.prevState.active ? (this.origin.view.play(i(t.toActive, this.options.appearance)), this.endPoint.view.play(i(t.toActive, this.options.appearance))) : !this.state.active && this.prevState.active && (this.origin.view.play(i(t.toInactive, this.options.appearance)), this.endPoint.view.play(i(t.toInactive, this.options.appearance)))
             }
         }, this.onMessage = a => {
-            a.key === "hit" && L(a.data)
+            a.key === "hit" && O(a.data)
         }, this.setupVisualEditing = () => {
             if (!g() || !C()) return;
             const a = T(this, "distance"),
@@ -218,7 +218,7 @@ class ni extends N {
                     })
                 }
             })
-        }, this.base = U[this.options.appearance], this.setupVisualEditing();
+        }, this.base = H[this.options.appearance], this.setupVisualEditing();
         const o = Phaser.Math.DegToRad(this.options.angle),
             m = Math.cos(o) * this.options.distance,
             h = Math.sin(o) * this.options.distance;
@@ -234,7 +234,7 @@ class ni extends N {
                 this.animationsReady = !0, this.state.active || g() ? (this.origin.view.play(i(t.active, this.options.appearance)), a.view.play(i(t.active, this.options.appearance))) : (this.origin.view.play(i(t.inactive, this.options.appearance)), a.view.play(i(t.inactive, this.options.appearance)))
             }
         }), this.laser = this.parts.add.sprite({
-            ...O,
+            ...V,
             layerId: y.DevicesAboveCharacters
         }), this.origin.view.rotation = o, this.endPoint.view.rotation = this.origin.view.rotation + Math.PI, this.origin.view.setScale(this.base.baseScale), this.endPoint.view.setScale(this.base.baseScale), this.laser.view.rotation = o, this.laser.view.blendMode = Phaser.BlendModes.ADD, this.laser.view.tint = M(this.options.laserColor), this.laser.view.scaleX = (this.options.distance - R) / Y, this.laser.view.scaleY = .75, this.options.showOrigin || (this.origin.view.alpha = 0), this.options.showEndPoint || (this.endPoint.view.alpha = 0), x() && !this.state.active && (this.activeFactor = 0, this.laser.view.scaleY = 0)
     }
@@ -257,7 +257,7 @@ class ni extends N {
             const E = a + v * S,
                 u = s + v * _;
             this.parts.add.sprite({
-                ...V,
+                ...L,
                 depthChange: Math.min(s, P) - u,
                 ignoreInput: !0,
                 layerId: y.DevicesUnderCharacters,

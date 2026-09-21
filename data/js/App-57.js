@@ -33,7 +33,7 @@ import {
     D as $$
 } from "./TutorialConsts.js";
 import {
-    c as wm,
+    d as wm,
     s as ft
 } from "./FixSpinePlugin.js";
 import {
@@ -19357,6 +19357,7 @@ const v$ = ($, C) => {
             onChange: f,
             onBlur: G,
             placeholder: r.placeholder,
+            rows: r.rows,
             style: {
                 width: "100%"
             }

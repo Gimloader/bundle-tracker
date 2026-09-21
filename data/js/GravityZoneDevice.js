@@ -2,22 +2,22 @@ import {
     Z as y
 } from "./ZoneConstants.js";
 import {
-    aV as T,
-    aW as E,
-    aX as F,
-    aL as S,
+    aX as T,
+    aY as E,
+    aZ as F,
+    aK as S,
     T as p,
-    aY as f,
-    aM as I,
-    aQ as R,
-    aZ as D
+    aO as f,
+    aQ as I,
+    aU as O,
+    aL as R
 } from "./App-41.js";
 import {
     F as m,
     I as G,
     i as d,
-    d as l,
-    e as O
+    e as l,
+    j as D
 } from "./FixSpinePlugin.js";
 import {
     Z as w
@@ -27,8 +27,8 @@ import {
 } from "./GetAssetPath.js";
 import {
     F as k,
-    R as V
-} from "./ReplaceVisualEditingPreview.js";
+    R as H
+} from "./FetchOptionSchemaProperty.js";
 import "./_index.js";
 import "./Button.js";
 import "./polished.esm.js";
@@ -96,11 +96,11 @@ import "./useDebouncedValue.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-const W = {
+const L = {
         imageId: Z("devices/zone/base.png"),
         imageUrl: Z("devices/zone/base.png")
     },
-    x = o => {
+    M = o => {
         const {
             character: s
         } = o, a = s.physics.state.jump.lastJumpGravityMultiplier ?? 1, t = T({
@@ -143,38 +143,38 @@ const W = {
             }))];
         i.ticks = P
     },
-    H = o => {
+    V = o => {
         const {
             character: s
         } = o;
         s.physics.state.gravityZones.find(t => t.deviceId === o.deviceId) || (s.physics.state.gravityZones.push({
             deviceId: o.deviceId,
             gravityMultiplier: o.gravityMultiplier
-        }), x({
+        }), M({
             character: s
         }))
     },
-    L = o => {
+    W = o => {
         const {
             character: s
         } = o;
-        s.physics.state.gravityZones.find(t => t.deviceId === o.deviceId) && (s.physics.state.gravityZones = s.physics.state.gravityZones.filter(t => t.deviceId !== o.deviceId), x({
+        s.physics.state.gravityZones.find(t => t.deviceId === o.deviceId) && (s.physics.state.gravityZones = s.physics.state.gravityZones.filter(t => t.deviceId !== o.deviceId), M({
             character: s
         }))
     },
-    M = 55;
+    x = 55;
 class hi extends S {
     constructor(s) {
         if (super(s), this.onEnter = () => {
                 const t = m(p());
-                t && H({
+                t && V({
                     character: t,
                     deviceId: this.id,
                     gravityMultiplier: this.options.gravityMultiplier
                 })
             }, this.onLeave = () => {
                 const t = m(p());
-                t && L({
+                t && W({
                     character: t,
                     deviceId: this.id,
                     gravityMultiplier: this.options.gravityMultiplier
@@ -204,7 +204,7 @@ class hi extends S {
                     maxHeight: i.max,
                     keepRatio: !1,
                     onChange: e => {
-                        V(e.x, e.y, {
+                        H(e.x, e.y, {
                             rotation: e.angle,
                             width: e.width,
                             height: e.height
@@ -213,14 +213,14 @@ class hi extends S {
                 })
             }, G() && d()) {
             const t = this.parts.add.sprite({
-                ...W,
+                ...L,
                 depthChange: I(2)
             });
             t.view.angle = this.options.rotation, t.view.setScale(.5)
         }
-        if (l() || O() ? this.options.visibleInGame : w.shouldShow(this)) {
+        if (l() || D() ? this.options.visibleInGame : w.shouldShow(this)) {
             this.setupVisualEditing();
-            const t = R(this.options.color);
+            const t = O(this.options.color);
             this.zone = this.parts.add.rect({
                 color: t,
                 alpha: this.getAlpha(),
@@ -237,10 +237,10 @@ class hi extends S {
         this.sensor = this.sensors.add.rect({
             x: 0,
             y: 0,
-            w: this.options.width - 2 * M,
-            h: this.options.height - 2 * M,
+            w: this.options.width - 2 * x,
+            h: this.options.height - 2 * x,
             angle: this.options.rotation,
-            type: D.around,
+            type: R.around,
             onFresh: () => {
                 this.onEnter()
             },
