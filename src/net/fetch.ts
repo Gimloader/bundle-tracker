@@ -97,14 +97,23 @@ export async function createGame(experienceId: string, hooks: any): Promise<stri
 export async function getRoom(serverUrl: string, intentId: string, authToken: string) {
     const wsUrl = serverUrl.replace("https://", "wss://");
 
-    const client = new Client(wsUrl);
-    const room = await client.create<Gimloader.Schema.GimkitSchema>("MapRoom", {
-        intentId,
-        authToken
-    });
+    for(let i = 0; i < 3; i++) {
+        try {
+            const client = new Client(wsUrl);
+            const room = await client.create<Gimloader.Schema.GimkitSchema>("MapRoom", {
+                intentId,
+                authToken
+            });
 
-    room.onMessage("*", () => {});
-    return room;
+            room.onMessage("*", () => {});
+            return room;
+        } catch {
+            console.log("Server connection failed, retrying");
+            await new Promise((res) => setTimeout(res, 3500));
+        }
+    }
+
+    throw new Error("Could not connect to " + wsUrl);
 }
 
 export async function fetchCookie() {
