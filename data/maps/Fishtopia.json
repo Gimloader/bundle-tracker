@@ -7,7 +7,7 @@
         "source": "map",
         "pageId": "641b5951015641ff9b6a63956dec3d2b",
         "mapId": "61aacf32d653f900239d23f4",
-        "isPremiumExperience": false,
+        "isPremiumExperience": true,
         "tag": "",
         "labels": {
             "c": "Normal",
