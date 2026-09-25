@@ -1,35 +1,36 @@
 import {
-    cm as D,
+    cm as F,
     j as t,
     U as T,
     d as f,
     B as V,
-    r as p,
+    r as m,
     D as re,
     bI as le,
     aw as de,
     s as ue,
-    C as me,
-    u as pe
+    ar as me,
+    C as pe,
+    u as fe
 } from "./_index.js";
 import {
-    y as L,
+    y as _,
     M as v,
-    u as F,
+    u as D,
     o as C,
     s as H,
-    z as fe,
-    S as ge,
-    J as he,
-    F as xe,
-    B as ve,
+    z as ge,
+    S as he,
+    J as xe,
+    F as ve,
+    B as be,
     a3 as ye,
-    m as be
+    m as Ce
 } from "./App-41.js";
 import {
     a as N,
-    C as J,
-    b as Ce
+    C as Z,
+    b as Te
 } from "./Centered.js";
 import {
     C as S
@@ -38,7 +39,7 @@ import {
     T as h
 } from "./index-14.js";
 import {
-    G as z
+    G as L
 } from "./GetAssetPath.js";
 import {
     a as oe,
@@ -48,9 +49,9 @@ import {
     d as ie,
     n as O,
     s as I,
-    A as W,
-    M as _,
-    a9 as b
+    A as z,
+    M as W,
+    a9 as y
 } from "./FixSpinePlugin.js";
 import {
     I as j,
@@ -61,33 +62,33 @@ import {
     s as Q
 } from "./setAddMenuScreen.js";
 import {
-    O as Y
+    O as J
 } from "./OwnsSeasonTicket.js";
 import {
-    S as Te
+    S as je
 } from "./SeasonTicketName.js";
 import {
     C as te,
-    G as je
+    G as ke
 } from "./GetCurrentMapStyle.js";
 import {
     T as w,
     D as d
 } from "./TutorialConsts.js";
 import {
-    u as Z
+    u as Y
 } from "./useDebouncedValue.js";
 import {
     S as ae
 } from "./index-2.js";
 import {
-    D as A
+    D as P
 } from "./index-6.js";
 import {
     I as X
 } from "./index-3.js";
 import {
-    B as ke
+    B as Ie
 } from "./index-24.js";
 import "./Button.js";
 import "./polished.esm.js";
@@ -144,27 +145,27 @@ import "./EditOutlined.js";
 import "./styleChecker.js";
 import "./CopyOutlined.js";
 const {
-    useToken: Ie
-} = D, R = e => {
+    useToken: Oe
+} = F, R = e => {
     const {
         token: {
             borderRadius: n
         }
-    } = Ie(), {
-        name: o,
-        description: s,
-        icon: l
+    } = Oe(), {
+        name: r,
+        description: o,
+        icon: c
     } = e, i = () => {
-        L(), e.onClick()
+        _(), e.onClick()
     };
-    return t.jsx(Oe, {
+    return t.jsx(Se, {
         onClick: i,
         borderRadius: n,
         children: t.jsxs(N, {
             className: "maxAll",
-            children: [t.jsx(Se, {
-                children: t.jsx(we, {
-                    src: l
+            children: [t.jsx(we, {
+                children: t.jsx(Ne, {
+                    src: c
                 })
             }), t.jsx(h.Title, {
                 level: 3,
@@ -173,13 +174,13 @@ const {
                     fontFamily: T.FugazOne,
                     textTransform: "uppercase"
                 },
-                children: S(o)
+                children: S(r)
             }), t.jsx(h.Text, {
-                children: s
+                children: o
             })]
         })
     })
-}, Oe = f.div.attrs({
+}, Se = f.div.attrs({
     className: "maxAll"
 })`
   cursor: pointer;
@@ -191,11 +192,11 @@ const {
   &:hover {
     background: rgba(255, 255, 255, 0.25);
   }
-`, Se = f.div`
+`, we = f.div`
   margin-bottom: 5px;
-`, we = f.img`
+`, Ne = f.img`
   height: 70px;
-`, M = e => z(`editor/icons/${e}.png`), Ne = e => t.jsxs($e, {
+`, M = e => L(`editor/icons/${e}.png`), $e = e => t.jsxs(Ee, {
     children: [t.jsx(h.Title, {
         level: 1,
         style: {
@@ -205,7 +206,7 @@ const {
         },
         className: "allCaps",
         children: "Add"
-    }), t.jsxs(Ee, {
+    }), t.jsxs(Fe, {
         children: [t.jsx(R, {
             name: v.terrain.singular,
             description: "The floors and walls on the map",
@@ -228,9 +229,9 @@ const {
             onClick: e.setToWires
         })]
     }), e.children]
-}), $e = f.div.attrs({
+}), Ee = f.div.attrs({
     className: "flex-column flex-center maxWidth"
-})``, Ee = f.div.attrs({
+})``, Fe = f.div.attrs({
     className: "maxWidth"
 })`
   display: grid;
@@ -245,10 +246,10 @@ const {
                 terrain: e
             }
         }
-    } = F(), n = e.buildTerrainAsWall, o = s => {
-        ie() || (e.buildTerrainAsWall = s)
+    } = D(), n = e.buildTerrainAsWall, r = o => {
+        ie() || (e.buildTerrainAsWall = o)
     };
-    return t.jsxs(J, {
+    return t.jsxs(Z, {
         children: [t.jsxs(h.Text, {
             style: {
                 marginRight: 10
@@ -257,18 +258,18 @@ const {
         }), t.jsxs(V.Group, {
             children: [t.jsx(V, {
                 type: n ? "default" : "primary",
-                onClick: () => o(!1),
+                onClick: () => r(!1),
                 children: "Floor"
             }), t.jsx(V, {
                 type: n ? "primary" : "default",
-                onClick: () => o(!0),
+                onClick: () => r(!0),
                 children: "Wall"
             })]
         })]
     })
-}), ee = () => t.jsxs(Fe, {
-    children: [Te.name, " Exclusive"]
-}), Fe = f.div`
+}), ee = () => t.jsxs(Pe, {
+    children: [je.name, " Exclusive"]
+}), Pe = f.div`
   color: rgb(218, 165, 32);
   background: linear-gradient(
     45deg,
@@ -291,50 +292,50 @@ const {
   line-height: 1;
 `, {
     useToken: Ae
-} = D, Pe = e => {
+} = F, Re = e => {
     const {
         id: n,
-        name: o,
-        previewUrl: s,
-        seasonTicketRequired: l
-    } = e.option, i = p.useRef(null), {
+        name: r,
+        previewUrl: o,
+        seasonTicketRequired: c
+    } = e.option, i = m.useRef(null), {
         token: {
             borderRadius: a
         }
-    } = Ae(), u = l && !Y(), r = c => {
-        u || (I.me.adding.terrain.currentlySelectedTerrain = n, I.me.adding.mode = W.terrain, H(_.adding), j() && Q(b.home), q({
+    } = Ae(), u = c && !J(), s = l => {
+        u || (I.me.adding.terrain.currentlySelectedTerrain = n, I.me.adding.mode = z.terrain, H(W.adding), j() && Q(y.home), q({
             event: G.SELECT_TERRAIN_TO_ADD,
             terrainId: n
-        }), c && c())
+        }), l && l())
     };
     return C(O.Input.Keyboard.KeyCodes.ENTER, () => {
-        e.focused && r()
-    }, [e.focused, r]), p.useEffect(() => {
-        var c;
-        e.focused && ((c = i.current) == null || c.scrollIntoView({
+        e.focused && s()
+    }, [e.focused, s]), m.useEffect(() => {
+        var l;
+        e.focused && ((l = i.current) == null || l.scrollIntoView({
             behavior: "smooth",
             block: "center"
         }))
-    }, [e.focused]), t.jsxs(Re, {
+    }, [e.focused]), t.jsxs(Me, {
         borderRadius: a,
         focused: e.focused,
         onClick: () => {
-            r(() => {
-                L()
+            s(() => {
+                _()
             })
         },
         ref: i,
-        children: [t.jsx(Be, {
-            src: s
-        }), t.jsxs(Me, {
-            children: [t.jsx(Ke, {
+        children: [t.jsx(Ke, {
+            src: o
+        }), t.jsxs(Be, {
+            children: [t.jsx(_e, {
                 level: 5,
                 className: "allCaps",
                 style: {
                     fontFamily: T.FugazOne
                 },
-                children: o
-            }), l ? t.jsx("div", {
+                children: r
+            }), c ? t.jsx("div", {
                 style: {
                     marginTop: 2
                 },
@@ -342,7 +343,7 @@ const {
             }) : null]
         })]
     })
-}, Re = f(Ce)`
+}, Me = f(Te)`
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
   border-radius: ${e=>e.borderRadius}px;
@@ -358,17 +359,17 @@ f.div`
   display: flex;
   align-items: center;
 `;
-const Me = f.div`
+const Be = f.div`
   display: flex;
   flex-direction: column;
 `,
-    Be = f.img`
+    Ke = f.img`
   height: 54px;
   border-radius: 3px;
   border: 2px solid rgba(255, 255, 255, 0.25);
   margin-right: 15px;
 `,
-    Ke = f(h.Title)`
+    _e = f(h.Title)`
   margin-bottom: 0 !important;
 `,
     Le = () => t.jsx(h.Text, {
@@ -380,42 +381,42 @@ const Me = f.div`
             worldOptions: {
                 terrainOptions: n
             }
-        } = F(), [o, s] = p.useState(-1), [l] = Z(e.searchQuery, 150), i = p.useMemo(() => {
-            var r;
-            const a = (r = l == null ? void 0 : l.trim()) == null ? void 0 : r.toLowerCase();
-            if (!a && !j()) return n.filter(c => te(c.id));
-            const u = n.filter(c => c.name.toLowerCase().includes(a) && te(c.id));
-            return j() ? u.sort((c, m) => {
-                const g = w.topTerrain.indexOf(c.id),
-                    x = w.topTerrain.indexOf(m.id);
+        } = D(), [r, o] = m.useState(-1), [c] = Y(e.searchQuery, 150), i = m.useMemo(() => {
+            var s;
+            const a = (s = c == null ? void 0 : c.trim()) == null ? void 0 : s.toLowerCase();
+            if (!a && !j()) return n.filter(l => te(l.id));
+            const u = n.filter(l => l.name.toLowerCase().includes(a) && te(l.id));
+            return j() ? u.sort((l, p) => {
+                const g = w.topTerrain.indexOf(l.id),
+                    x = w.topTerrain.indexOf(p.id);
                 return g === -1 && x === -1 ? 0 : g === -1 ? 1 : x === -1 ? -1 : g - x
             }) : u
-        }, [n.length, l]);
+        }, [n.length, c]);
         return C(O.Input.Keyboard.KeyCodes.UP, () => {
-            s(Math.max(0, o - 1))
-        }, [o]), C(O.Input.Keyboard.KeyCodes.DOWN, () => {
+            o(Math.max(0, r - 1))
+        }, [r]), C(O.Input.Keyboard.KeyCodes.DOWN, () => {
             const a = i.length - 1;
-            s(Math.min(a, o + 1))
-        }, [i.length, o]), p.useEffect(() => {
-            s(l ? 0 : -1)
-        }, [l]), i.length ? t.jsx(ae, {
+            o(Math.min(a, r + 1))
+        }, [i.length, r]), m.useEffect(() => {
+            o(c ? 0 : -1)
+        }, [c]), i.length ? t.jsx(ae, {
             direction: "vertical",
             size: 12,
             className: "maxWidth",
-            children: i.map((a, u) => t.jsx(Pe, {
+            children: i.map((a, u) => t.jsx(Re, {
                 option: a,
-                focused: o === u
+                focused: r === u
             }, a.id))
         }) : t.jsx(Le, {})
     },
     We = e => {
-        const [n, o] = p.useState(""), s = p.useRef(null), l = u => {
-            o(u.target.value)
+        const [n, r] = m.useState(""), o = m.useRef(null), c = u => {
+            r(u.target.value)
         }, i = u => {
-            var r;
-            u ? (r = s == null ? void 0 : s.current) == null || r.focus() : o("")
+            var s;
+            u ? (s = o == null ? void 0 : o.current) == null || s.focus() : r("")
         }, a = ie();
-        return t.jsx(A, {
+        return t.jsx(P, {
             open: e.open,
             onClose: e.close,
             width: 500,
@@ -440,8 +441,8 @@ const Me = f.div`
                         marginBottom: 23
                     },
                     value: n,
-                    onChange: l,
-                    ref: s
+                    onChange: c,
+                    ref: o
                 }), t.jsx(ze, {
                     searchQuery: n
                 })]
@@ -451,64 +452,64 @@ const Me = f.div`
 var B = {},
     ne;
 
-function _e() {
+function qe() {
     if (ne) return B;
     ne = 1, Object.defineProperty(B, "__esModule", {
         value: !0
     });
     const e = le();
 
-    function n(o) {
-        const [s, l] = (0, e.useState)(!1), i = (0, e.useMemo)(() => new IntersectionObserver(([a]) => l(a.isIntersecting)), []);
-        return (0, e.useEffect)(() => (i.observe(o.current), () => {
+    function n(r) {
+        const [o, c] = (0, e.useState)(!1), i = (0, e.useMemo)(() => new IntersectionObserver(([a]) => c(a.isIntersecting)), []);
+        return (0, e.useEffect)(() => (i.observe(r.current), () => {
             i.disconnect()
         }), []), (0, e.useEffect)(() => {
-            s && i.unobserve(o.current)
-        }, [s, i, o]), s
+            o && i.unobserve(r.current)
+        }, [o, i, r]), o
     }
     return B.default = n, B
 }
-var qe = _e();
-const Ge = de(qe),
+var Ge = qe();
+const Qe = de(Ge),
     {
-        useToken: Qe
-    } = D,
-    Ue = e => {
+        useToken: Ue
+    } = F,
+    Ve = e => {
         const {
             id: n,
-            name: o,
-            image: s,
-            seasonTicketRequired: l
-        } = e.option, i = p.useRef(null), a = Ge(i), {
+            name: r,
+            image: o,
+            seasonTicketRequired: c
+        } = e.option, i = m.useRef(null), a = Qe(i), {
             token: {
                 borderRadius: u
             }
-        } = Qe(), r = l && !Y(), c = m => {
-            r || (I.me.adding.devices.selectedDeviceType = d.prop, I.me.adding.devices.currentlySelectedProp = n, I.me.adding.mode = W.device, H(_.adding), j() && Q(b.home), q({
+        } = Ue(), s = c && !J(), l = p => {
+            s || (I.me.adding.devices.selectedDeviceType = d.prop, I.me.adding.devices.currentlySelectedProp = n, I.me.adding.mode = z.device, H(W.adding), j() && Q(y.home), q({
                 event: G.SELECT_PROP_TO_ADD,
                 propId: n
-            }), m && m())
+            }), p && p())
         };
         return C(O.Input.Keyboard.KeyCodes.ENTER, () => {
-            e.focused && c()
-        }, [e.focused, c]), p.useEffect(() => {
-            var m;
-            e.focused && ((m = i.current) == null || m.scrollIntoView({
+            e.focused && l()
+        }, [e.focused, l]), m.useEffect(() => {
+            var p;
+            e.focused && ((p = i.current) == null || p.scrollIntoView({
                 block: "center"
             }))
-        }, [e.focused]), t.jsx(Ve, {
+        }, [e.focused]), t.jsx(He, {
             ref: i,
             onClick: () => {
-                c(() => {
-                    L()
+                l(() => {
+                    _()
                 })
             },
             focused: e.focused,
             borderRadius: u,
             children: a ? t.jsxs(t.Fragment, {
-                children: [t.jsx(He, {
+                children: [t.jsx(Ze, {
                     children: t.jsx(Je, {
-                        src: z(s.path)
+                        src: L(o.path)
                     })
                 }), t.jsx(Ye, {
                     level: 5,
@@ -516,12 +517,12 @@ const Ge = de(qe),
                     style: {
                         fontFamily: T.FugazOne
                     },
-                    children: o
-                }), l ? t.jsx(ee, {}) : null]
+                    children: r
+                }), c ? t.jsx(ee, {}) : null]
             }) : null
         })
     },
-    Ve = f(N)`
+    He = f(N)`
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
   border-radius: ${e=>e.borderRadius}px;
@@ -536,7 +537,7 @@ const Ge = de(qe),
     background: rgba(255, 255, 255, 0.25);
   }
 `,
-    He = f(J)`
+    Ze = f(Z)`
   width: 120px;
   height: 120px;
   padding: 10px;
@@ -555,36 +556,36 @@ const Ge = de(qe),
   text-overflow: ellipsis;
   text-align: center;
 `,
-    Ze = () => t.jsx(h.Text, {
+    Xe = () => t.jsx(h.Text, {
         italic: !0,
         children: "No results found. Try a different search."
     }),
-    Xe = se(e => {
+    et = se(e => {
         const {
             worldOptions: n
-        } = F(), [o, s] = p.useState(-1), [l] = Z(e.searchQuery, 200), i = p.useMemo(() => {
+        } = D(), [r, o] = m.useState(-1), [c] = Y(e.searchQuery, 200), i = m.useMemo(() => {
             var g;
-            const u = n.propsOptions.filter(x => fe(x.minimumRoleLevel)),
-                r = (g = l == null ? void 0 : l.trim()) == null ? void 0 : g.toLowerCase();
-            if (!r && !j()) return u;
-            const c = r.split(/\s+/),
-                m = u.filter(x => {
+            const u = n.propsOptions.filter(x => ge(x.minimumRoleLevel)),
+                s = (g = c == null ? void 0 : c.trim()) == null ? void 0 : g.toLowerCase();
+            if (!s && !j()) return u;
+            const l = s.split(/\s+/),
+                p = u.filter(x => {
                     const $ = [x.name, ...x.tags ?? []].join(" ").toLowerCase();
-                    return c.every(y => $.includes(y))
+                    return l.every(b => $.includes(b))
                 });
-            return j() ? m.sort((x, $) => {
-                const y = w.topProps.indexOf(x.id),
+            return j() ? p.sort((x, $) => {
+                const b = w.topProps.indexOf(x.id),
                     E = w.topProps.indexOf($.id);
-                return y === -1 && E === -1 ? 0 : y === -1 ? 1 : E === -1 ? -1 : y - E
-            }) : m
-        }, [n.propsOptions.length, l]);
+                return b === -1 && E === -1 ? 0 : b === -1 ? 1 : E === -1 ? -1 : b - E
+            }) : p
+        }, [n.propsOptions.length, c]);
         ue(() => {
-            n.requestedAllProps || (n.requestedAllProps = !0, ge(he.requestAllProps))
+            n.requestedAllProps || (n.requestedAllProps = !0, he(xe.requestAllProps))
         });
-        const a = p.useCallback(u => {
-            const r = Math.max(0, Math.min(i.length - 1, o + u));
-            s(r)
-        }, [i.length, o]);
+        const a = m.useCallback(u => {
+            const s = Math.max(0, Math.min(i.length - 1, r + u));
+            o(s)
+        }, [i.length, r]);
         return C(Phaser.Input.Keyboard.KeyCodes.UP, () => {
             a(-2)
         }, [a]), C(Phaser.Input.Keyboard.KeyCodes.DOWN, () => {
@@ -593,16 +594,16 @@ const Ge = de(qe),
             a(-1)
         }, [a]), C(Phaser.Input.Keyboard.KeyCodes.RIGHT, () => {
             a(1)
-        }, [a]), p.useEffect(() => {
-            s(l ? 0 : -1)
-        }, [l]), n.hasAllProps ? i.length ? t.jsx(et, {
-            children: i.map((u, r) => t.jsx(Ue, {
-                focused: r === o,
+        }, [a]), m.useEffect(() => {
+            o(c ? 0 : -1)
+        }, [c]), n.hasAllProps ? i.length ? t.jsx(tt, {
+            children: i.map((u, s) => t.jsx(Ve, {
+                focused: s === r,
                 option: u
             }, u.id + "-option"))
-        }) : t.jsx(Ze, {}) : null
+        }) : t.jsx(Xe, {}) : null
     }),
-    et = f.div.attrs({
+    tt = f.div.attrs({
         className: "maxWidth"
     })`
   display: grid;
@@ -610,14 +611,14 @@ const Ge = de(qe),
   gap: 10px 10px;
   overflow: hidden;
 `,
-    tt = e => {
-        const [n, o] = p.useState(""), s = p.useRef(null), l = a => {
-            o(a.target.value)
+    nt = e => {
+        const [n, r] = m.useState(""), o = m.useRef(null), c = a => {
+            r(a.target.value)
         }, i = a => {
             var u;
-            a ? (u = s == null ? void 0 : s.current) == null || u.focus() : o("")
+            a ? (u = o == null ? void 0 : o.current) == null || u.focus() : r("")
         };
-        return t.jsx(A, {
+        return t.jsx(P, {
             open: e.open,
             onClose: e.close,
             width: 550,
@@ -640,77 +641,104 @@ const Ge = de(qe),
                         marginBottom: 23
                     },
                     value: n,
-                    onChange: l,
-                    ref: s
-                }), t.jsx(Xe, {
+                    onChange: c,
+                    ref: o
+                }), t.jsx(et, {
                     searchQuery: n
                 })]
             })
         })
     },
-    nt = [d.placedSticker, d.droppedItem],
+    rt = [d.placedSticker, d.droppedItem],
+    ot = {
+        [d.characterSpawnPad]: "spawn_pad",
+        [d.backgroundTilesZone]: "background_tile_zone",
+        [d.proceduralTerrainZoneZoneInstruction]: "procedural_terrain_zone_instruction",
+        [d.mapOptions]: "map_settings",
+        [d.guiDevice]: "gui"
+    },
+    st = ({
+        deviceId: e
+    }) => {
+        const [n, r] = m.useState(!1);
+        m.useEffect(() => r(!1), [e]);
+        const o = ot[e] ?? me.snakeCase(e),
+            c = n ? "editor/icons/device.png" : `devices/${o}/editing_preview.png`;
+        return t.jsx("img", {
+            src: L(c),
+            alt: "",
+            draggable: !1,
+            style: {
+                display: "block",
+                width: "100%",
+                height: "100%",
+                objectFit: "contain"
+            },
+            onError: () => r(!0)
+        })
+    },
     {
-        useToken: rt
-    } = D,
-    ot = e => {
+        useToken: it
+    } = F,
+    at = e => {
         const {
             option: {
                 id: n,
-                name: o,
-                description: s,
-                seasonTicketRequired: l
+                name: r,
+                description: o,
+                seasonTicketRequired: c
             }
-        } = e, i = p.useRef(null), {
+        } = e, i = m.useRef(null), {
             token: {
                 borderRadius: a
             }
-        } = rt(), u = l && !Y(), r = c => {
-            u || (I.me.adding.devices.selectedDeviceType = n, I.me.adding.mode = W.device, I.me.currentAction = _.adding, j() && Q(b.home), q({
+        } = it(), u = c && !J(), s = l => {
+            u || (I.me.adding.devices.selectedDeviceType = n, I.me.adding.mode = z.device, I.me.currentAction = W.adding, j() && Q(y.home), q({
                 event: G.SELECT_DEVICE_TO_ADD,
                 deviceTypeId: n
-            }), c && c())
+            }), l && l())
         };
         return C(O.Input.Keyboard.KeyCodes.ENTER, () => {
-            e.focused && r()
-        }, [e.focused, r]), p.useEffect(() => {
-            var c;
-            e.focused && ((c = i.current) == null || c.scrollIntoView({
+            e.focused && s()
+        }, [e.focused, s]), m.useEffect(() => {
+            var l;
+            e.focused && ((l = i.current) == null || l.scrollIntoView({
                 block: "center"
             }))
-        }, [e.focused]), t.jsxs(st, {
+        }, [e.focused]), t.jsxs(ct, {
             ref: i,
             borderRadius: a,
             focused: e.focused,
             onClick: () => {
-                r(() => {
-                    L()
+                s(() => {
+                    _()
                 })
             },
-            children: [t.jsx(it, {
-                children: t.jsx(at, {
-                    src: z("editor/icons/device.png")
+            children: [t.jsx(lt, {
+                children: t.jsx(st, {
+                    deviceId: n
                 })
-            }), t.jsxs(ct, {
-                children: [l ? t.jsx("div", {
+            }), t.jsxs(dt, {
+                children: [c ? t.jsx("div", {
                     style: {
                         marginBottom: 2
                     },
                     children: t.jsx(ee, {})
-                }) : null, t.jsx(lt, {
+                }) : null, t.jsx(ut, {
                     level: 5,
                     className: "allCaps",
                     style: {
                         fontFamily: T.FugazOne,
                         marginBottom: 0
                     },
+                    children: r
+                }), o ? t.jsx(mt, {
                     children: o
-                }), s ? t.jsx(dt, {
-                    children: s
                 }) : null]
             })]
         })
     },
-    st = f.div.attrs({
+    ct = f.div.attrs({
         className: "flex vc"
     })`
   background: rgba(255, 255, 255, 0.1);
@@ -725,101 +753,97 @@ const Ge = de(qe),
     background: rgba(255, 255, 255, 0.25);
   }
 `,
-    it = f(J)`
+    lt = f(Z)`
   height: 50px;
   width: 50px;
   margin-right: 20px;
   flex-shrink: 0;
 `,
-    at = f.img`
-  max-height: 100%;
-  max-width: 100%;
-`,
-    ct = f.div``,
-    lt = f(h.Title)``,
-    dt = f(h.Text)``,
-    ut = () => t.jsx(h.Text, {
+    dt = f.div``,
+    ut = f(h.Title)``,
+    mt = f(h.Text)``,
+    pt = () => t.jsx(h.Text, {
         italic: !0,
         children: "No results found. Try a different search."
     }),
-    mt = e => {
+    ft = e => {
         const {
             deviceTypeId: n
-        } = e, o = xe(n);
-        return o ? o.supportedMapStyles ? o.supportedMapStyles.includes(je()) : !0 : !1
+        } = e, r = ve(n);
+        return r ? r.supportedMapStyles ? r.supportedMapStyles.includes(ke()) : !0 : !1
     },
-    pt = [...nt, d.prop, d.mapOptions],
+    gt = [...rt, d.prop, d.mapOptions],
     ce = oe(e => {
-        const [n, o] = p.useState(-1), {
+        const [n, r] = m.useState(-1), {
             worldOptions: {
-                deviceOptions: s
+                deviceOptions: o
             }
-        } = F(), [l] = Z(e.searchQuery, 150), i = p.useMemo(() => {
-            const a = l == null ? void 0 : l.toLowerCase(),
-                u = s.filter(r => !pt.includes(r.id)).filter(r => ve(r.id, void 0)).filter(r => mt({
-                    deviceTypeId: r.id
-                })).filter(r => e.list ? e.list.includes(r.id) : !0).filter(r => {
-                    var c, m;
-                    return a ? r.name.toLowerCase().includes(a) || ((m = (c = r.description) == null ? void 0 : c.toLowerCase()) == null ? void 0 : m.includes(a)) : !0
-                }).sort((r, c) => {
-                    const m = r.name.toLowerCase().includes(a),
-                        g = c.name.toLowerCase().includes(a);
-                    return m && !g ? -1 : !m && g ? 1 : r.name.length < c.name.length ? -1 : r.name.length > c.name.length ? 1 : 0
+        } = D(), [c] = Y(e.searchQuery, 150), i = m.useMemo(() => {
+            const a = c == null ? void 0 : c.toLowerCase(),
+                u = o.filter(s => !gt.includes(s.id)).filter(s => be(s.id, void 0)).filter(s => ft({
+                    deviceTypeId: s.id
+                })).filter(s => e.list ? e.list.includes(s.id) : !0).filter(s => {
+                    var l, p;
+                    return a ? s.name.toLowerCase().includes(a) || ((p = (l = s.description) == null ? void 0 : l.toLowerCase()) == null ? void 0 : p.includes(a)) : !0
+                }).sort((s, l) => {
+                    const p = s.name.toLowerCase().includes(a),
+                        g = l.name.toLowerCase().includes(a);
+                    return p && !g ? -1 : !p && g ? 1 : s.name.length < l.name.length ? -1 : s.name.length > l.name.length ? 1 : 0
                 });
-            if (j()) return u.sort((r, c) => {
-                const m = w.topDevices.indexOf(r.id),
-                    g = w.topDevices.indexOf(c.id);
-                return m === -1 && g === -1 ? 0 : m === -1 ? 1 : g === -1 ? -1 : m - g
+            if (j()) return u.sort((s, l) => {
+                const p = w.topDevices.indexOf(s.id),
+                    g = w.topDevices.indexOf(l.id);
+                return p === -1 && g === -1 ? 0 : p === -1 ? 1 : g === -1 ? -1 : p - g
             });
             if (e.list) {
-                const r = [];
-                return e.list.forEach(c => {
-                    const m = u.find(g => g.id === c);
-                    m && r.push(m)
-                }), r
+                const s = [];
+                return e.list.forEach(l => {
+                    const p = u.find(g => g.id === l);
+                    p && s.push(p)
+                }), s
             }
             return u
-        }, [s.length, l, e.list]);
+        }, [o.length, c, e.list]);
         return C(O.Input.Keyboard.KeyCodes.UP, () => {
-            e.blockKeyboardNavigation || o(Math.max(0, n - 1))
+            e.blockKeyboardNavigation || r(Math.max(0, n - 1))
         }, [n, e.blockKeyboardNavigation]), C(O.Input.Keyboard.KeyCodes.DOWN, () => {
             if (e.blockKeyboardNavigation) return;
             const a = i.length - 1;
-            o(Math.min(a, n + 1))
-        }, [i.length, n, e.blockKeyboardNavigation]), p.useEffect(() => {
-            !l || e.blockKeyboardNavigation ? o(-1) : o(0)
-        }, [l, e.blockKeyboardNavigation]), i.length ? t.jsx(ae, {
+            r(Math.min(a, n + 1))
+        }, [i.length, n, e.blockKeyboardNavigation]), m.useEffect(() => {
+            !c || e.blockKeyboardNavigation ? r(-1) : r(0)
+        }, [c, e.blockKeyboardNavigation]), i.length ? t.jsx(ae, {
             direction: "vertical",
             size: 12,
             className: "maxWidth",
-            children: i.map((a, u) => t.jsx(ot, {
+            children: i.map((a, u) => t.jsx(at, {
                 option: a,
                 focused: u === n
             }, a.id + "-option"))
-        }) : t.jsx(ut, {})
+        }) : t.jsx(pt, {})
     }),
     {
-        useToken: ft
-    } = D,
-    gt = e => {
+        useToken: ht
+    } = F,
+    xt = e => {
         const {
             token: {
                 borderRadius: n
             }
-        } = ft(), {
+        } = ht(), {
             collection: {
-                icon: o,
-                name: s,
-                description: l,
+                icon: r,
+                name: o,
+                description: c,
                 devices: i
             }
         } = e;
         return t.jsxs(t.Fragment, {
-            children: [t.jsxs(ht, {
+            children: [t.jsxs(vt, {
                 borderRadius: n,
                 onClick: e.open,
-                children: [t.jsx(xt, {
-                    src: o
+                children: [t.jsx(bt, {
+                    src: r
                 }), t.jsx(h.Title, {
                     level: 4,
                     style: {
@@ -827,16 +851,16 @@ const Ge = de(qe),
                         marginBottom: 2
                     },
                     className: "allCaps",
-                    children: s
+                    children: o
                 }), t.jsx(h.Text, {
-                    children: t.jsx(ke, {
-                        children: l
+                    children: t.jsx(Ie, {
+                        children: c
                     })
                 })]
-            }), t.jsx(A, {
+            }), t.jsx(P, {
                 open: e.isOpen,
                 onClose: e.close,
-                title: s,
+                title: o,
                 width: 500,
                 children: t.jsx(ce, {
                     list: i
@@ -844,7 +868,7 @@ const Ge = de(qe),
             })]
         })
     },
-    ht = f(N)`
+    vt = f(N)`
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
   border-radius: ${e=>e.borderRadius}px;
@@ -858,14 +882,14 @@ const Ge = de(qe),
     background: rgba(255, 255, 255, 0.25);
   }
 `,
-    xt = f.img`
+    bt = f.img`
   height: 50px;
   margin-bottom: 15px;
   opacity: 0.85;
 `,
     k = `${S(v.device.plural)}`,
-    K = e => z(`editor/icons/device_collections/${e}.svg`),
-    vt = [{
+    K = e => L(`editor/icons/device_collections/${e}.svg`),
+    yt = [{
         icon: K("starting"),
         name: `Starting ${k}`,
         description: `${k} you might need for every map`,
@@ -883,18 +907,18 @@ const Ge = de(qe),
     }, {
         icon: K("new"),
         name: `New ${k}`,
-        description: `${k} recently added to ${me} Creative`,
+        description: `${k} recently added to ${pe} Creative`,
         devices: [d.jumpGranter, d.luckyBlock, d.scalableShape, d.popupListItem, d.character, d.dialogue, d.dialogueAction, d.damager, d.cameraPoint, d.playerPositionDetector, d.itemImage, d.ball, d.ballZone]
     }],
-    yt = e => t.jsx(bt, {
-        children: vt.map(n => t.jsx(gt, {
+    Ct = e => t.jsx(Tt, {
+        children: yt.map(n => t.jsx(xt, {
             collection: n,
             isOpen: n.name === e.openCollectionName,
             open: () => e.open(n.name),
             close: () => e.open("")
         }, `device-collection-${n.name}`))
     }),
-    bt = f.div.attrs({
+    Tt = f.div.attrs({
         className: "maxWidth"
     })`
   display: grid;
@@ -902,20 +926,20 @@ const Ge = de(qe),
   gap: 12px 12px;
   overflow: hidden;
 `,
-    Ct = e => {
-        const [n, o] = p.useState(""), [s, l] = p.useState(null), i = p.useRef(null), a = c => {
-            o(c.target.value)
-        }, u = p.useCallback(() => {
-            s || e.close()
-        }, [s, e.close]), r = c => {
-            var m;
-            c ? (m = i == null ? void 0 : i.current) == null || m.focus() : o("")
+    jt = e => {
+        const [n, r] = m.useState(""), [o, c] = m.useState(null), i = m.useRef(null), a = l => {
+            r(l.target.value)
+        }, u = m.useCallback(() => {
+            o || e.close()
+        }, [o, e.close]), s = l => {
+            var p;
+            l ? (p = i == null ? void 0 : i.current) == null || p.focus() : r("")
         };
-        return t.jsxs(A, {
+        return t.jsxs(P, {
             open: e.open,
             onClose: u,
             width: 680,
-            afterOpenChange: r,
+            afterOpenChange: s,
             destroyOnClose: !0,
             children: [t.jsxs(N, {
                 children: [t.jsx(h.Title, {
@@ -937,9 +961,9 @@ const Ge = de(qe),
                     onChange: a,
                     ref: i
                 }), !n && !j() ? t.jsxs(t.Fragment, {
-                    children: [t.jsx(yt, {
-                        openCollectionName: s,
-                        open: l
+                    children: [t.jsx(Ct, {
+                        openCollectionName: o,
+                        open: c
                     }), t.jsx(re, {
                         children: t.jsxs(h.Text, {
                             italic: !0,
@@ -949,11 +973,11 @@ const Ge = de(qe),
                 }) : null]
             }), t.jsx(ce, {
                 searchQuery: n,
-                blockKeyboardNavigation: !!s
+                blockKeyboardNavigation: !!o
             })]
         })
     },
-    _n = se(e => {
+    Gn = se(e => {
         const {
             gui: {
                 none: {
@@ -963,71 +987,71 @@ const Ge = de(qe),
                 }
             },
             me: {
-                adding: o
+                adding: r
             }
-        } = F(), [s, l, i] = pe(!0), [a, u] = p.useState(!0);
+        } = D(), [o, c, i] = fe(!0), [a, u] = m.useState(!0);
         ye();
-        const r = p.useMemo(() => n === b.terrain, [n]),
-            c = p.useMemo(() => n === b.props, [n]),
-            m = p.useMemo(() => n === b.devices, [n]),
+        const s = m.useMemo(() => n === y.terrain, [n]),
+            l = m.useMemo(() => n === y.props, [n]),
+            p = m.useMemo(() => n === y.devices, [n]),
             g = () => {
-                e.setToHomeScreen(), y(b.home)
+                e.setToHomeScreen(), b(y.home)
             },
-            x = be();
-        p.useEffect(() => {
+            x = Ce();
+        m.useEffect(() => {
             x || i()
         }, [x]);
-        const $ = p.useCallback(() => {
+        const $ = m.useCallback(() => {
                 if (a) {
                     g();
                     return
                 }
-                r || c || m || i()
-            }, [i, r, c, m, a, g]),
-            y = P => Q(P),
-            E = P => {
-                P && u(!1), P || g()
+                s || l || p || i()
+            }, [i, s, l, p, a, g]),
+            b = A => Q(A),
+            E = A => {
+                A && u(!1), A || g()
             },
             U = () => {
-                y(b.home)
+                b(y.home)
             };
-        return t.jsx(A, {
-            open: s,
+        return t.jsx(P, {
+            open: o,
             onClose: $,
             afterOpenChange: E,
             width: 600,
             destroyOnClose: !0,
-            children: t.jsx(Tt, {
-                children: t.jsxs(Ne, {
+            children: t.jsx(kt, {
+                children: t.jsxs($e, {
                     close: e.setToHomeScreen,
-                    setToTerrain: () => y(b.terrain),
+                    setToTerrain: () => b(y.terrain),
                     setToProps: () => {
-                        y(b.props)
+                        b(y.props)
                     },
-                    setToDevices: () => y(b.devices),
+                    setToDevices: () => b(y.devices),
                     setToWires: () => {
-                        o.mode = W.wire, H(_.adding), q({
+                        r.mode = z.wire, H(W.adding), q({
                             event: G.START_ADDING_WIRE
                         })
                     },
                     children: [t.jsx(We, {
-                        open: r,
+                        open: s,
                         close: U
-                    }), t.jsx(tt, {
-                        open: c,
+                    }), t.jsx(nt, {
+                        open: l,
                         close: U
-                    }), t.jsx(Ct, {
-                        open: m,
+                    }), t.jsx(jt, {
+                        open: p,
                         close: U
                     })]
                 })
             })
         })
     }),
-    Tt = f.div.attrs({
+    kt = f.div.attrs({
         className: "maxWidth"
     })``;
 export {
-    _n as
+    Gn as
     default
 };
