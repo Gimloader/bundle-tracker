@@ -23,8 +23,8 @@ import {
     J as he,
     F as xe,
     B as ve,
-    a2 as be,
-    m as ye
+    a3 as ye,
+    m as be
 } from "./App-41.js";
 import {
     a as N,
@@ -50,7 +50,7 @@ import {
     s as I,
     A as W,
     M as _,
-    a9 as y
+    a9 as b
 } from "./FixSpinePlugin.js";
 import {
     I as j,
@@ -81,7 +81,7 @@ import {
     S as ae
 } from "./index-2.js";
 import {
-    D as R
+    D as A
 } from "./index-6.js";
 import {
     I as X
@@ -145,7 +145,7 @@ import "./styleChecker.js";
 import "./CopyOutlined.js";
 const {
     useToken: Ie
-} = D, P = e => {
+} = D, R = e => {
     const {
         token: {
             borderRadius: n
@@ -206,22 +206,22 @@ const {
         className: "allCaps",
         children: "Add"
     }), t.jsxs(Ee, {
-        children: [t.jsx(P, {
+        children: [t.jsx(R, {
             name: v.terrain.singular,
             description: "The floors and walls on the map",
             icon: M("terrain"),
             onClick: e.setToTerrain
-        }), t.jsx(P, {
+        }), t.jsx(R, {
             name: v.prop.plural,
             description: "Objects and decorations",
             icon: M("prop"),
             onClick: e.setToProps
-        }), t.jsx(P, {
+        }), t.jsx(R, {
             name: v.device.plural,
             description: "Create game mechanics!",
             icon: M("device"),
             onClick: e.setToDevices
-        }), t.jsx(P, {
+        }), t.jsx(R, {
             name: v.wire.plural,
             description: "Connect devices together",
             icon: M("wire"),
@@ -290,8 +290,8 @@ const {
   font-size: 12px;
   line-height: 1;
 `, {
-    useToken: Re
-} = D, Ae = e => {
+    useToken: Ae
+} = D, Pe = e => {
     const {
         id: n,
         name: o,
@@ -301,8 +301,8 @@ const {
         token: {
             borderRadius: a
         }
-    } = Re(), u = l && !Y(), r = c => {
-        u || (I.me.adding.terrain.currentlySelectedTerrain = n, I.me.adding.mode = W.terrain, H(_.adding), j() && Q(y.home), q({
+    } = Ae(), u = l && !Y(), r = c => {
+        u || (I.me.adding.terrain.currentlySelectedTerrain = n, I.me.adding.mode = W.terrain, H(_.adding), j() && Q(b.home), q({
             event: G.SELECT_TERRAIN_TO_ADD,
             terrainId: n
         }), c && c())
@@ -315,7 +315,7 @@ const {
             behavior: "smooth",
             block: "center"
         }))
-    }, [e.focused]), t.jsxs(Pe, {
+    }, [e.focused]), t.jsxs(Re, {
         borderRadius: a,
         focused: e.focused,
         onClick: () => {
@@ -342,7 +342,7 @@ const {
             }) : null]
         })]
     })
-}, Pe = f(Ce)`
+}, Re = f(Ce)`
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
   border-radius: ${e=>e.borderRadius}px;
@@ -402,7 +402,7 @@ const Me = f.div`
             direction: "vertical",
             size: 12,
             className: "maxWidth",
-            children: i.map((a, u) => t.jsx(Ae, {
+            children: i.map((a, u) => t.jsx(Pe, {
                 option: a,
                 focused: o === u
             }, a.id))
@@ -415,7 +415,7 @@ const Me = f.div`
             var r;
             u ? (r = s == null ? void 0 : s.current) == null || r.focus() : o("")
         }, a = ie();
-        return t.jsx(R, {
+        return t.jsx(A, {
             open: e.open,
             onClose: e.close,
             width: 500,
@@ -484,7 +484,7 @@ const Ge = de(qe),
                 borderRadius: u
             }
         } = Qe(), r = l && !Y(), c = m => {
-            r || (I.me.adding.devices.selectedDeviceType = d.prop, I.me.adding.devices.currentlySelectedProp = n, I.me.adding.mode = W.device, H(_.adding), j() && Q(y.home), q({
+            r || (I.me.adding.devices.selectedDeviceType = d.prop, I.me.adding.devices.currentlySelectedProp = n, I.me.adding.mode = W.device, H(_.adding), j() && Q(b.home), q({
                 event: G.SELECT_PROP_TO_ADD,
                 propId: n
             }), m && m())
@@ -570,12 +570,12 @@ const Ge = de(qe),
             const c = r.split(/\s+/),
                 m = u.filter(x => {
                     const $ = [x.name, ...x.tags ?? []].join(" ").toLowerCase();
-                    return c.every(b => $.includes(b))
+                    return c.every(y => $.includes(y))
                 });
             return j() ? m.sort((x, $) => {
-                const b = w.topProps.indexOf(x.id),
+                const y = w.topProps.indexOf(x.id),
                     E = w.topProps.indexOf($.id);
-                return b === -1 && E === -1 ? 0 : b === -1 ? 1 : E === -1 ? -1 : b - E
+                return y === -1 && E === -1 ? 0 : y === -1 ? 1 : E === -1 ? -1 : y - E
             }) : m
         }, [n.propsOptions.length, l]);
         ue(() => {
@@ -617,7 +617,7 @@ const Ge = de(qe),
             var u;
             a ? (u = s == null ? void 0 : s.current) == null || u.focus() : o("")
         };
-        return t.jsx(R, {
+        return t.jsx(A, {
             open: e.open,
             onClose: e.close,
             width: 550,
@@ -665,7 +665,7 @@ const Ge = de(qe),
                 borderRadius: a
             }
         } = rt(), u = l && !Y(), r = c => {
-            u || (I.me.adding.devices.selectedDeviceType = n, I.me.adding.mode = W.device, I.me.currentAction = _.adding, j() && Q(y.home), q({
+            u || (I.me.adding.devices.selectedDeviceType = n, I.me.adding.mode = W.device, I.me.currentAction = _.adding, j() && Q(b.home), q({
                 event: G.SELECT_DEVICE_TO_ADD,
                 deviceTypeId: n
             }), c && c())
@@ -833,7 +833,7 @@ const Ge = de(qe),
                         children: l
                     })
                 })]
-            }), t.jsx(R, {
+            }), t.jsx(A, {
                 open: e.isOpen,
                 onClose: e.close,
                 title: s,
@@ -884,9 +884,9 @@ const Ge = de(qe),
         icon: K("new"),
         name: `New ${k}`,
         description: `${k} recently added to ${me} Creative`,
-        devices: [d.gadgetBlaster, d.scalableShape, d.popupListItem, d.character, d.dialogue, d.dialogueAction, d.damager, d.cameraPoint, d.playerPositionDetector, d.itemImage, d.ball, d.ballZone, d.craftingTable, d.craftingRecipe, d.damageBoost]
+        devices: [d.jumpGranter, d.luckyBlock, d.scalableShape, d.popupListItem, d.character, d.dialogue, d.dialogueAction, d.damager, d.cameraPoint, d.playerPositionDetector, d.itemImage, d.ball, d.ballZone]
     }],
-    bt = e => t.jsx(yt, {
+    yt = e => t.jsx(bt, {
         children: vt.map(n => t.jsx(gt, {
             collection: n,
             isOpen: n.name === e.openCollectionName,
@@ -894,7 +894,7 @@ const Ge = de(qe),
             close: () => e.open("")
         }, `device-collection-${n.name}`))
     }),
-    yt = f.div.attrs({
+    bt = f.div.attrs({
         className: "maxWidth"
     })`
   display: grid;
@@ -911,7 +911,7 @@ const Ge = de(qe),
             var m;
             c ? (m = i == null ? void 0 : i.current) == null || m.focus() : o("")
         };
-        return t.jsxs(R, {
+        return t.jsxs(A, {
             open: e.open,
             onClose: u,
             width: 680,
@@ -937,7 +937,7 @@ const Ge = de(qe),
                     onChange: a,
                     ref: i
                 }), !n && !j() ? t.jsxs(t.Fragment, {
-                    children: [t.jsx(bt, {
+                    children: [t.jsx(yt, {
                         openCollectionName: s,
                         open: l
                     }), t.jsx(re, {
@@ -966,14 +966,14 @@ const Ge = de(qe),
                 adding: o
             }
         } = F(), [s, l, i] = pe(!0), [a, u] = p.useState(!0);
-        be();
-        const r = p.useMemo(() => n === y.terrain, [n]),
-            c = p.useMemo(() => n === y.props, [n]),
-            m = p.useMemo(() => n === y.devices, [n]),
+        ye();
+        const r = p.useMemo(() => n === b.terrain, [n]),
+            c = p.useMemo(() => n === b.props, [n]),
+            m = p.useMemo(() => n === b.devices, [n]),
             g = () => {
-                e.setToHomeScreen(), b(y.home)
+                e.setToHomeScreen(), y(b.home)
             },
-            x = ye();
+            x = be();
         p.useEffect(() => {
             x || i()
         }, [x]);
@@ -984,14 +984,14 @@ const Ge = de(qe),
                 }
                 r || c || m || i()
             }, [i, r, c, m, a, g]),
-            b = A => Q(A),
-            E = A => {
-                A && u(!1), A || g()
+            y = P => Q(P),
+            E = P => {
+                P && u(!1), P || g()
             },
             U = () => {
-                b(y.home)
+                y(b.home)
             };
-        return t.jsx(R, {
+        return t.jsx(A, {
             open: s,
             onClose: $,
             afterOpenChange: E,
@@ -1000,11 +1000,11 @@ const Ge = de(qe),
             children: t.jsx(Tt, {
                 children: t.jsxs(Ne, {
                     close: e.setToHomeScreen,
-                    setToTerrain: () => b(y.terrain),
+                    setToTerrain: () => y(b.terrain),
                     setToProps: () => {
-                        b(y.props)
+                        y(b.props)
                     },
-                    setToDevices: () => b(y.devices),
+                    setToDevices: () => y(b.devices),
                     setToWires: () => {
                         o.mode = W.wire, H(_.adding), q({
                             event: G.START_ADDING_WIRE

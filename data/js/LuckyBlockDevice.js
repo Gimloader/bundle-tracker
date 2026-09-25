@@ -1,27 +1,28 @@
 import {
-    aK as p,
-    aV as h,
-    L as n
+    aK as h,
+    aV as n,
+    L as m
 } from "./App-41.js";
 import {
     G as a
 } from "./GetAssetPath.js";
 import {
     g as l,
-    S as m,
-    I as c,
-    e as d,
-    j as u
+    S as c,
+    d as r,
+    I as d,
+    e as u,
+    j as v
 } from "./FixSpinePlugin.js";
 import {
-    F as v,
-    R as g
+    F as g,
+    R as w
 } from "./FetchOptionSchemaProperty.js";
 import {
-    p as y
+    p as f
 } from "./playSound.js";
 import {
-    ar as w
+    ar as y
 } from "./_index.js";
 import "./Button.js";
 import "./polished.esm.js";
@@ -88,7 +89,7 @@ import "./useDebouncedValue.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-const f = {
+const x = {
         atlasUrl: a("devices/lucky_block/spine/luckyBlock.atlas"),
         jsonUrl: a("devices/lucky_block/spine/luckyBlock.json")
     },
@@ -98,11 +99,20 @@ const f = {
             height: 134
         },
         collisions: {
-            x: 0,
-            y: 17,
-            width: 110,
-            height: 100,
-            margin: 22
+            topDown: {
+                x: 0,
+                y: 17,
+                width: 110,
+                height: 100,
+                margin: 22
+            },
+            platformer: {
+                x: 0,
+                y: 0,
+                width: 109,
+                height: 134,
+                margin: 0
+            }
         },
         spine: {
             yCorrection: 2,
@@ -115,14 +125,14 @@ const f = {
             r2: 50
         }
     };
-class Oi extends p {
-    constructor(r) {
-        super(r), this.use = () => {
-            this.cull.isInsideView && y({
-                path: a(`devices/lucky_block/sound/impact${w.random(1,2)}.mp3`),
+class _i extends h {
+    constructor(p) {
+        super(p), this.use = () => {
+            this.cull.isInsideView && f({
+                path: a(`devices/lucky_block/sound/impact${y.random(1,2)}.mp3`),
                 volume: l({
-                    volume: h(this.x, this.y) * .7,
-                    type: m.soundEffect
+                    volume: n(this.x, this.y) * .7,
+                    type: c.soundEffect
                 })
             }), this.playAnimation("explode-short")
         }, this.recharge = () => {
@@ -141,7 +151,7 @@ class Oi extends p {
             const i = t.boundingBox.width,
                 s = t.boundingBox.height;
             this.spine = this.parts.add.spine({
-                ...f,
+                ...x,
                 spineViewId: this.id,
                 y: (s / 2 - t.spine.yCorrection) * this.options.scale,
                 defaultAnimation: this.options.activeOnGameStart ? "idle-active" : "idle-inactive",
@@ -159,27 +169,28 @@ class Oi extends p {
                 }
             })
         }, this.setupCollider = () => {
+            const i = r() ? t.collisions.platformer : t.collisions.topDown;
             this.colliders.add.box({
-                x: t.collisions.x * this.options.scale,
-                y: t.collisions.y * this.options.scale,
-                w: t.collisions.width * this.options.scale + t.collisions.margin,
-                h: t.collisions.height * this.options.scale
+                x: i.x * this.options.scale,
+                y: i.y * this.options.scale,
+                w: i.width * this.options.scale + i.margin,
+                h: i.height * this.options.scale
             })
         }, this.setupShadow = () => {
-            this.options.showShadow && this.shadows.add({
+            !this.options.showShadow || r() || this.shadows.add({
                 x: t.shadow.x * this.options.scale,
                 y: t.shadow.y * this.options.scale,
                 r1: t.shadow.r1 * this.options.scale,
                 r2: t.shadow.r2 * this.options.scale
             })
         }, this.setupInViewCallbacks = () => {
-            c() || this.cull.setOnEnterViewCallback(() => {
+            d() || this.cull.setOnEnterViewCallback(() => {
                 var i;
                 (i = this.spine) != null && i.view && (this.spine.setMixDuration(0), this.playAnimation(this.state.active && this.state.charged ? "idle-active" : "idle-inactive"), this.spine.view.updatePose(0), this.spine.resetMixDuration())
             })
         }, this.setupVisualEditing = () => {
-            if (d() || u()) return;
-            const i = v(this, "scale"),
+            if (u() || v()) return;
+            const i = g(this, "scale"),
                 s = t.boundingBox.width,
                 e = t.boundingBox.height;
             this.visualEditing.add.box({
@@ -192,15 +203,15 @@ class Oi extends p {
                 minHeight: e * i.min,
                 maxHeight: e * i.max,
                 onChange: o => {
-                    g(o.x, o.y, {
+                    w(o.x, o.y, {
                         scale: o.width / s
                     })
                 }
             })
-        }, this.layers.setDefaultLayer(n.DepthSortedCharactersAndDevices), this.setupView(), this.setupShadow(), this.setupCollider(), this.setupVisualEditing(), this.setupInViewCallbacks(), this.cull.setMargin(50)
+        }, this.layers.setDefaultLayer(m.DepthSortedCharactersAndDevices), this.setupView(), this.setupShadow(), this.setupCollider(), this.setupVisualEditing(), this.setupInViewCallbacks(), this.cull.setMargin(50)
     }
 }
 export {
-    Oi as
+    _i as
     default
 };
