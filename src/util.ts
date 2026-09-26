@@ -24,3 +24,15 @@ export async function writeJson(path: string, contents: any) {
     await mkdir(dirname(path), { recursive: true });
     await writeFile(path, json);
 }
+
+export async function retryAsync<T>(name: string, fn: () => Promise<T>, retries = 3, delay = 3500): Promise<T> {
+    for(let i = 0; i < retries; i++) {
+        try {
+            return await fn();
+        } catch(err) {
+            console.warn("Failed to get", name);
+            if(i === retries - 1) throw err;
+            await new Promise(res => setTimeout(res, delay));
+        }
+    }
+}

@@ -1,7 +1,7 @@
 import { createGame, fetchCookie, findServer, getExperiences, getHooks, getRoom, getSource, getToken } from "../net/fetch.ts";
 import { checkIfChanges, pushMapChanges, rebaseToLatest } from "../net/git.ts";
 import { sendError } from "../net/webhook.ts";
-import { HandledError, prepareDataDir } from "../util.ts";
+import { HandledError, prepareDataDir, retryAsync } from "../util.ts";
 import { writeJson } from "../util.ts";
 import { join } from "node:path";
 
@@ -37,7 +37,7 @@ export async function extractMaps(push: boolean) {
             if(processed.has(item._id)) continue;
             processed.add(item._id);
 
-            await getMapContents(item, authToken, maps);
+            await retryAsync("contents of map " + experiences._id, () => getMapContents(item, authToken, maps));
         }
     }
 
