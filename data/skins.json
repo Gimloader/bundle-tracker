@@ -8,12 +8,28 @@
         "name": "Admiral Pulsar"
     },
     {
+        "id": "character_elementalWind",
+        "name": "Aero"
+    },
+    {
         "id": "character_pilot",
         "name": "Airheart"
     },
     {
         "id": "character_fisher",
         "name": "Angler"
+    },
+    {
+        "id": "character_ant",
+        "name": "Ant-onio"
+    },
+    {
+        "id": "character_elementalWater",
+        "name": "Aqua"
+    },
+    {
+        "id": "character_atlasAtlantis",
+        "name": "Atlantis"
     },
     {
         "id": "character_axolotlBlue",
@@ -28,8 +44,24 @@
         "name": "Axle (Yellow)"
     },
     {
+        "id": "character_ringmaster",
+        "name": "Baron Big Top"
+    },
+    {
+        "id": "character_elementalEarth",
+        "name": "Bedrock"
+    },
+    {
         "id": "character_beetle",
         "name": "Beetrix"
+    },
+    {
+        "id": "character_christmasBell",
+        "name": "Bellz"
+    },
+    {
+        "id": "character_rocket",
+        "name": "Blast Off"
     },
     {
         "id": "character_blastball",
@@ -40,8 +72,36 @@
         "name": "Block Party"
     },
     {
+        "id": "character_8bitConstruction",
+        "name": "Blu3Pr1nt"
+    },
+    {
         "id": "character_skeleton",
         "name": "Bonesy"
+    },
+    {
+        "id": "character_skeletonFluorescent",
+        "name": "Bonesy (Ghoul)"
+    },
+    {
+        "id": "character_broccoli",
+        "name": "Brock"
+    },
+    {
+        "id": "character_strongman",
+        "name": "Bruno"
+    },
+    {
+        "id": "character_bugPicasso",
+        "name": "Brushwing"
+    },
+    {
+        "id": "character_bugCustom",
+        "name": "Build-A-Bug"
+    },
+    {
+        "id": "character_bee",
+        "name": "Buzz"
     },
     {
         "id": "character_calacaOne",
@@ -56,6 +116,14 @@
         "name": "Camo (Sand)"
     },
     {
+        "id": "character_kwanzaa",
+        "name": "Candle Kin"
+    },
+    {
+        "id": "character_amanitaMuscaria",
+        "name": "Cappy"
+    },
+    {
         "id": "character_incognito",
         "name": "Capt. Camouflage"
     },
@@ -64,12 +132,28 @@
         "name": "Captain Buck"
     },
     {
+        "id": "character_captain",
+        "name": "Captain Grimwater"
+    },
+    {
         "id": "character_shark",
         "name": "Carver Costume"
     },
     {
+        "id": "character_barrel",
+        "name": "Casky"
+    },
+    {
         "id": "character_glyphsYellowBrown",
         "name": "Cato"
+    },
+    {
+        "id": "character_cavegim",
+        "name": "CaveGim"
+    },
+    {
+        "id": "character_cellBlue",
+        "name": "Cell Snap (Blue)"
     },
     {
         "id": "character_cellGold",
@@ -92,6 +176,10 @@
         "name": "Chronos"
     },
     {
+        "id": "character_toGoCup",
+        "name": "Chug Bud"
+    },
+    {
         "id": "character_clock",
         "name": "Clock-O-Matic"
     },
@@ -102,6 +190,10 @@
     {
         "id": "character_hotChocolate",
         "name": "Cocoa Cup"
+    },
+    {
+        "id": "character_atlasColosseum",
+        "name": "Colosseum"
     },
     {
         "id": "character_7thAnniversary",
@@ -132,12 +224,24 @@
         "name": "Cornelius"
     },
     {
+        "id": "character_candyCorn",
+        "name": "Corny Candy"
+    },
+    {
         "id": "character_defender",
         "name": "Crimson Cruz"
     },
     {
+        "id": "character_8bitCookie",
+        "name": "Crumb13"
+    },
+    {
         "id": "character_cookie",
         "name": "Crumble"
+    },
+    {
+        "id": "character_carrot",
+        "name": "Crunch"
     },
     {
         "id": "character_rainCloud",
@@ -148,12 +252,24 @@
         "name": "Custom Coaster"
     },
     {
+        "id": "character_catStripesCustom",
+        "name": "Custom Kitten"
+    },
+    {
         "id": "character_daisy",
         "name": "Daisy"
     },
     {
+        "id": "character_dandelion",
+        "name": "Dandy"
+    },
+    {
         "id": "character_dayOne",
         "name": "Day One"
+    },
+    {
+        "id": "character_christmasLights",
+        "name": "Dazzle"
     },
     {
         "id": "character_detective",
@@ -170,6 +286,10 @@
     {
         "id": "character_golden",
         "name": "Dorado"
+    },
+    {
+        "id": "character_dogDalmatian",
+        "name": "Dottie The Dalmatian"
     },
     {
         "id": "character_polkaDotFestiveReverse",
@@ -192,6 +312,10 @@
         "name": "Doug"
     },
     {
+        "id": "character_dogRottweiler",
+        "name": "Dozer The Rottweiler"
+    },
+    {
         "id": "character_doc",
         "name": "Dr. Synapse"
     },
@@ -206,6 +330,26 @@
     {
         "id": "character_echoAgent",
         "name": "Echo Agent"
+    },
+    {
+        "id": "character_batPattern",
+        "name": "Echolocation"
+    },
+    {
+        "id": "character_atlasEiffel",
+        "name": "Eiffel"
+    },
+    {
+        "id": "character_elf",
+        "name": "Elfy"
+    },
+    {
+        "id": "character_elementalFire",
+        "name": "Ember"
+    },
+    {
+        "id": "character_elementalMythic",
+        "name": "Everything"
     },
     {
         "id": "character_evilPlantGreen",
@@ -248,8 +392,20 @@
         "name": "Fiesta"
     },
     {
+        "id": "character_dogFinn",
+        "name": "Finn The Boston Terrier"
+    },
+    {
+        "id": "character_christmasSock",
+        "name": "Fleece Navidad"
+    },
+    {
         "id": "character_arcticFox",
         "name": "Flurry"
+    },
+    {
+        "id": "character_butterfly",
+        "name": "Flutter"
     },
     {
         "id": "character_circuitBlue",
@@ -266,6 +422,10 @@
     {
         "id": "character_bigEye",
         "name": "Focus"
+    },
+    {
+        "id": "character_fortuneCookie",
+        "name": "Fortu-Nate"
     },
     {
         "id": "character_strawberry",
@@ -296,8 +456,16 @@
         "name": "Fuzzfoot"
     },
     {
+        "id": "character_gasolino",
+        "name": "Gasolino"
+    },
+    {
         "id": "character_zombieGeckoGreen",
         "name": "Geckasaurus"
+    },
+    {
+        "id": "character_captainGhost",
+        "name": "Ghost Grimwater"
     },
     {
         "id": "character_ghostCostume",
@@ -328,6 +496,14 @@
         "name": "Gimbit  (Yellow)"
     },
     {
+        "id": "character_burger",
+        "name": "GimBurger"
+    },
+    {
+        "id": "character_magician",
+        "name": "Gimdini"
+    },
+    {
         "id": "character_blastballKitcelona",
         "name": "Gimessi"
     },
@@ -336,8 +512,32 @@
         "name": "GimFish Guru"
     },
     {
+        "id": "character_island",
+        "name": "Gimhakea"
+    },
+    {
+        "id": "character_gimstrong",
+        "name": "GimStrong"
+    },
+    {
+        "id": "character_atlasPyramid",
+        "name": "Giza"
+    },
+    {
+        "id": "character_frozen",
+        "name": "Glacier"
+    },
+    {
+        "id": "character_8bitWater",
+        "name": "Glass Ha1f Fu11"
+    },
+    {
         "id": "character_glassHalfFull",
         "name": "Glass Half Full"
+    },
+    {
+        "id": "character_alien",
+        "name": "Glorp"
     },
     {
         "id": "character_turkey",
@@ -372,8 +572,24 @@
         "name": "Harold"
     },
     {
+        "id": "character_ghost",
+        "name": "Hauntis"
+    },
+    {
+        "id": "character_vegetablePattern_chili",
+        "name": "Heat Wave"
+    },
+    {
+        "id": "character_tomato",
+        "name": "Heirloom"
+    },
+    {
         "id": "character_mountainAndSun",
         "name": "Horizono"
+    },
+    {
+        "id": "character_groundControl",
+        "name": "Houston"
     },
     {
         "id": "character_paintCan",
@@ -404,12 +620,24 @@
         "name": "Hydro (Purple Pond)"
     },
     {
+        "id": "character_comet",
+        "name": "Ice Scream"
+    },
+    {
         "id": "character_yeti",
         "name": "Icebeard"
     },
     {
+        "id": "character_snowflake",
+        "name": "Icelis"
+    },
+    {
         "id": "character_fireSpirit",
         "name": "Inferno"
+    },
+    {
+        "id": "character_hook",
+        "name": "Ironhook"
     },
     {
         "id": "character_trickTreat",
@@ -436,6 +664,18 @@
         "name": "Jigsaw (Purple & Lime)"
     },
     {
+        "id": "character_elementalElectricity",
+        "name": "Jolt"
+    },
+    {
+        "id": "character_dogInu",
+        "name": "Juno The Shiba Inu"
+    },
+    {
+        "id": "character_canon",
+        "name": "Kaboom"
+    },
+    {
         "id": "character_gimKing",
         "name": "King Gimrick"
     },
@@ -448,8 +688,20 @@
         "name": "Kool"
     },
     {
+        "id": "character_elementalLife",
+        "name": "Koru"
+    },
+    {
+        "id": "character_krampus",
+        "name": "Krampus"
+    },
+    {
         "id": "character_redNinja",
         "name": "Kynami"
+    },
+    {
+        "id": "character_onion",
+        "name": "Layers"
     },
     {
         "id": "character_luchador",
@@ -464,12 +716,32 @@
         "name": "Lovely"
     },
     {
+        "id": "character_leek",
+        "name": "Lt. Leek"
+    },
+    {
+        "id": "character_dogGorgy",
+        "name": "Luna The Corgi"
+    },
+    {
         "id": "character_autumnTree",
         "name": "Maple"
     },
     {
+        "id": "character_vegetablePattern_vegetable",
+        "name": "Market Mix"
+    },
+    {
+        "id": "character_crystalMarble",
+        "name": "Marv"
+    },
+    {
         "id": "character_smashedPotatoes",
         "name": "Mash"
+    },
+    {
+        "id": "character_skeletonCow",
+        "name": "Matterhorn"
     },
     {
         "id": "character_deadMariachi",
@@ -480,20 +752,68 @@
         "name": "Melody"
     },
     {
+        "id": "character_menorah",
+        "name": "Menorah"
+    },
+    {
         "id": "character_christmasTree",
         "name": "Merrygreen"
+    },
+    {
+        "id": "character_dogMilo",
+        "name": "Milo The Beagle"
     },
     {
         "id": "character_miningCart",
         "name": "MineRide"
     },
     {
+        "id": "character_catSiamese",
+        "name": "Miso"
+    },
+    {
+        "id": "character_mistletoe",
+        "name": "Mistle Pro"
+    },
+    {
+        "id": "character_catLongHair",
+        "name": "Mocha Mist"
+    },
+    {
+        "id": "character_moth",
+        "name": "Mothica"
+    },
+    {
+        "id": "character_gingerbreadMan",
+        "name": "Mr. Crumbly"
+    },
+    {
+        "id": "character_atlasRushmore",
+        "name": "Mt. Rushmore"
+    },
+    {
+        "id": "character_vegetablePattern_mushroom",
+        "name": "Mushroom Mania"
+    },
+    {
         "id": "character_hamster",
         "name": "Niblet"
     },
     {
+        "id": "character_weregim",
+        "name": "Nightclaw"
+    },
+    {
+        "id": "character_deadTree",
+        "name": "Nightroot"
+    },
+    {
         "id": "character_vampire",
         "name": "Nocturne"
+    },
+    {
+        "id": "character_catYellow",
+        "name": "Noodles"
     },
     {
         "id": "character_costumeOctopus",
@@ -504,6 +824,10 @@
         "name": "Orbit"
     },
     {
+        "id": "character_satellite",
+        "name": "Orbitron"
+    },
+    {
         "id": "character_blacksmith",
         "name": "Orehound"
     },
@@ -512,8 +836,20 @@
         "name": "Ornamento"
     },
     {
+        "id": "character_atlasOsaka",
+        "name": "Osaka"
+    },
+    {
+        "id": "character_dogPug",
+        "name": "Otis The Pug"
+    },
+    {
         "id": "character_mummy",
         "name": "Ozi"
+    },
+    {
+        "id": "character_yarn",
+        "name": "Patches"
     },
     {
         "id": "character_coolRedBlueGradient",
@@ -528,6 +864,18 @@
         "name": "Pencil Pack"
     },
     {
+        "id": "character_catPink",
+        "name": "Peony"
+    },
+    {
+        "id": "character_vegetablePattern_pepper",
+        "name": "Pep Rally"
+    },
+    {
+        "id": "character_bellPepper",
+        "name": "Peppy"
+    },
+    {
         "id": "character_pinkPaste",
         "name": "Pink Paste"
     },
@@ -536,12 +884,20 @@
         "name": "Pinky"
     },
     {
+        "id": "character_pinata",
+        "name": "Pinllama"
+    },
+    {
         "id": "character_astroHelmet",
         "name": "Polaris"
     },
     {
         "id": "character_pufferFish",
         "name": "Poppy"
+    },
+    {
+        "id": "character_mushroom",
+        "name": "Portobello"
     },
     {
         "id": "character_gift",
@@ -560,12 +916,24 @@
         "name": "Pumpgim Pie"
     },
     {
+        "id": "character_8bitPurplePaste",
+        "name": "Purpl3 Pa5t3"
+    },
+    {
         "id": "character_purplePaste",
         "name": "Purple Paste"
     },
     {
         "id": "character_stripeDoublePurple",
         "name": "Purple Split"
+    },
+    {
+        "id": "character_tombstone",
+        "name": "R.I.P"
+    },
+    {
+        "id": "character_catStray",
+        "name": "Rags"
     },
     {
         "id": "character_rainbowWave",
@@ -576,6 +944,14 @@
         "name": "Raveena"
     },
     {
+        "id": "character_cauldron",
+        "name": "Raveena's Creation"
+    },
+    {
+        "id": "character_desertPunky",
+        "name": "Raze"
+    },
+    {
         "id": "character_stripeDoubleRed",
         "name": "Red Split"
     },
@@ -584,28 +960,64 @@
         "name": "Red Sprinkles"
     },
     {
+        "id": "character_radish",
+        "name": "Reddy"
+    },
+    {
         "id": "character_rudolph",
         "name": "Reinkle"
+    },
+    {
+        "id": "character_rudolphGold",
+        "name": "Reinkle The Gold-Nosed"
     },
     {
         "id": "character_rockstar",
         "name": "Riff"
     },
     {
+        "id": "character_vegetablePattern_onion",
+        "name": "Ring Around"
+    },
+    {
         "id": "character_rockyWest",
         "name": "Rocky West"
+    },
+    {
+        "id": "character_lettuce",
+        "name": "Romaine Calm"
+    },
+    {
+        "id": "character_vegetablePattern_radish",
+        "name": "Root Route"
     },
     {
         "id": "character_roses",
         "name": "Rosalind"
     },
     {
+        "id": "character_vegetablePattern_lettuce",
+        "name": "Salad Party"
+    },
+    {
+        "id": "character_catHalloween",
+        "name": "Scaredy Cat"
+    },
+    {
         "id": "character_winter",
         "name": "Scarflet"
     },
     {
+        "id": "character_chiliPepper",
+        "name": "Scoville"
+    },
+    {
         "id": "character_squiggles",
         "name": "Scribblz"
+    },
+    {
+        "id": "character_treasureChest",
+        "name": "Sea Stash"
     },
     {
         "id": "character_farmer",
@@ -622,6 +1034,14 @@
     {
         "id": "character_leprechaun",
         "name": "Shamrock Sam"
+    },
+    {
+        "id": "character_cannonball",
+        "name": "Short Fuse"
+    },
+    {
+        "id": "character_poker",
+        "name": "Shuffler"
     },
     {
         "id": "character_knight",
@@ -644,6 +1064,22 @@
         "name": "Sketch (Graph Paper)"
     },
     {
+        "id": "character_bonePattern",
+        "name": "Skully"
+    },
+    {
+        "id": "character_catStripesGray",
+        "name": "Slate"
+    },
+    {
+        "id": "character_catBlue",
+        "name": "Smurf"
+    },
+    {
+        "id": "character_blizzard",
+        "name": "Snowfall"
+    },
+    {
         "id": "character_snowball",
         "name": "Snowmuff"
     },
@@ -654,6 +1090,10 @@
     {
         "id": "character_eclipse",
         "name": "Solaria"
+    },
+    {
+        "id": "character_ladybug",
+        "name": "Speckles"
     },
     {
         "id": "character_bananaSplit",
@@ -684,12 +1124,20 @@
         "name": "Spotlight (Sunrise)"
     },
     {
+        "id": "character_8bitPixelMythic",
+        "name": "Sprite"
+    },
+    {
         "id": "character_sproutingFlower",
         "name": "Sprout"
     },
     {
         "id": "character_spiderWeb",
         "name": "Spyde"
+    },
+    {
+        "id": "character_8bitMustache",
+        "name": "Stach3"
     },
     {
         "id": "character_mustache",
@@ -708,8 +1156,16 @@
         "name": "Stache Santa"
     },
     {
+        "id": "character_starCat",
+        "name": "Stardust"
+    },
+    {
         "id": "character_vanGogh",
         "name": "Starry Night"
+    },
+    {
+        "id": "character_acrobat",
+        "name": "Stella"
     },
     {
         "id": "character_zebra",
@@ -718,6 +1174,10 @@
     {
         "id": "character_whiteAndBlueVerticalStripes",
         "name": "Stripy (Beach Towel)"
+    },
+    {
+        "id": "character_ticketBooth",
+        "name": "Stubby"
     },
     {
         "id": "character_climber",
@@ -736,8 +1196,20 @@
         "name": "Sweet Celebration"
     },
     {
+        "id": "character_atlasTajMahal",
+        "name": "Taj Mahal"
+    },
+    {
+        "id": "character_potatoSack",
+        "name": "Tater Tote"
+    },
+    {
         "id": "character_volcanoCracks",
         "name": "Tectonic Rumbles"
+    },
+    {
+        "id": "character_dogGoldenRetrieverMythic",
+        "name": "The \"Golden\" Retriever"
     },
     {
         "id": "character_tuxedo",
@@ -746,6 +1218,18 @@
     {
         "id": "character_brainJar",
         "name": "The Experiment"
+    },
+    {
+        "id": "character_nomad",
+        "name": "The Nomad"
+    },
+    {
+        "id": "character_circusCaravan",
+        "name": "The Showrunner"
+    },
+    {
+        "id": "character_galleon",
+        "name": "The Skull Armadana"
     },
     {
         "id": "character_wavesApple",
@@ -784,12 +1268,28 @@
         "name": "Toasty"
     },
     {
+        "id": "character_juggler",
+        "name": "Topsy"
+    },
+    {
+        "id": "character_tourist",
+        "name": "Tourist"
+    },
+    {
+        "id": "character_truffle",
+        "name": "Treasure Truffle"
+    },
+    {
         "id": "character_partyPineapple",
         "name": "Tropicool"
     },
     {
         "id": "character_zombieTruckPurple",
         "name": "Truck-A-Tron"
+    },
+    {
+        "id": "character_UFO",
+        "name": "U.F.O"
     },
     {
         "id": "character_valenTime",
@@ -808,6 +1308,14 @@
         "name": "Vortex Agent"
     },
     {
+        "id": "character_treasureMap",
+        "name": "Wayfinder"
+    },
+    {
+        "id": "character_fortuneWheel",
+        "name": "Wheelie Wonder"
+    },
+    {
         "id": "character_whistle",
         "name": "Whistler"
     },
@@ -816,8 +1324,24 @@
         "name": "Wick"
     },
     {
+        "id": "character_monocycle",
+        "name": "Wobble"
+    },
+    {
+        "id": "character_christmasPattern",
+        "name": "Wrapped"
+    },
+    {
         "id": "character_stripeDoubleYellow",
         "name": "Yellow Split"
+    },
+    {
+        "id": "character_frog",
+        "name": "Yorp"
+    },
+    {
+        "id": "character_bugBlue",
+        "name": "Zappy"
     },
     {
         "id": "character_mountain",

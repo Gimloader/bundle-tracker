@@ -239,7 +239,6 @@
             ]
         }
     },
-    "seasonTicketRequired": true,
     "maxOnMap": 500,
     "initialMemoryCost": 35,
     "subsequentMemoryCost": 35

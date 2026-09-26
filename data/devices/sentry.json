@@ -372,7 +372,7 @@
                 "option": {
                     "label": "Show Health Bar",
                     "type": "select",
-                    "description": "Should the sentry show a health bar below it?",
+                    "description": "Should a health bar be shown beneath the Sentry?",
                     "defaultValue": false,
                     "validators": [
                         null
@@ -393,8 +393,7 @@
                 },
                 "categories": [
                     "health"
-                ],
-                "minimumRoleLevel": 90
+                ]
             },
             {
                 "key": "useAdaptiveHealth",

@@ -1,7 +1,7 @@
 {
     "id": "luckyBlock",
     "name": "Lucky Block",
-    "description": "Lucky Block Device",
+    "description": "Grant players something special when they hit this block!",
     "optionSchema": {
         "categories": {
             "categories": [
@@ -12,6 +12,10 @@
                 {
                     "id": "availability",
                     "name": "Availability"
+                },
+                {
+                    "id": "channels",
+                    "name": "Channels"
                 }
             ],
             "showAllOptionsAt": "end"
@@ -20,7 +24,7 @@
             {
                 "key": "whenUsedChannel",
                 "option": {
-                    "label": "When used, transmit on",
+                    "label": "When hit, transmit on",
                     "type": "textInput",
                     "defaultValue": "",
                     "validators": [
@@ -31,10 +35,11 @@
                         "category": "channel",
                         "maxLength": 100
                     },
-                    "description": "When this block is used, the device sends a signal on the selected channel"
+                    "description": "When this Lucky Block is hit, the device sends a signal on the selected channel"
                 },
                 "categories": [
-                    "featured"
+                    "featured",
+                    "channels"
                 ]
             },
             {
@@ -42,7 +47,7 @@
                 "option": {
                     "label": "Active On Game Start",
                     "type": "select",
-                    "description": "Is the Lucky Block active and ready to be used when the game starts?",
+                    "description": "Can this Lucky Block be used when the game starts?",
                     "defaultValue": true,
                     "validators": [
                         null
@@ -82,7 +87,8 @@
                     "description": "Activate this Lucky Block when the device receives a signal from the selected channel"
                 },
                 "categories": [
-                    "availability"
+                    "availability",
+                    "channels"
                 ]
             },
             {
@@ -102,13 +108,14 @@
                     "description": "Deactivate this Lucky Block when the device receives a signal from the selected channel"
                 },
                 "categories": [
-                    "availability"
+                    "availability",
+                    "channels"
                 ]
             },
             {
                 "key": "scope",
                 "option": {
-                    "label": "Scope",
+                    "label": "Active & Recharge Scope",
                     "type": "select",
                     "defaultValue": "global",
                     "validators": [
@@ -131,7 +138,7 @@
                         ],
                         "allowEmpty": false
                     },
-                    "description": "When the Lucky Block is activated/deactivated, who does it apply to?"
+                    "description": "Who shares this Lucky Block’s active state and recharge timer?"
                 },
                 "categories": [
                     "availability"
@@ -140,8 +147,8 @@
             {
                 "key": "rechargeAfterTime",
                 "option": {
-                    "label": "Recharge After Time",
-                    "description": "How long to wait before the Lucky Block can be used again?",
+                    "label": "Recharge Time",
+                    "description": "How long (in seconds) does this Lucky Block take to recharge after being used? Set to 0 for no recharge time.",
                     "type": "numberInput",
                     "defaultValue": 3,
                     "validators": [
@@ -150,7 +157,7 @@
                     "props": {
                         "min": 0,
                         "max": 1000,
-                        "step": 1,
+                        "step": 0.1,
                         "allowEmpty": false,
                         "useSlider": false
                     }
@@ -162,8 +169,8 @@
             {
                 "key": "delayTrigger",
                 "option": {
-                    "label": "Delay Trigger",
-                    "description": "How many seconds to wait before the Lucky Block actually triggers the channel/wire?",
+                    "label": "Trigger Delay",
+                    "description": "After this Lucky Block is hit, how long (in seconds) does it wait before sending a signal through channels and wires?",
                     "type": "numberInput",
                     "defaultValue": 0,
                     "validators": [
@@ -202,7 +209,7 @@
                 "option": {
                     "label": "Show Shadow",
                     "type": "select",
-                    "description": "Show shadow under the Lucky Block",
+                    "description": "Is a shadow shown beneath this Lucky Block?",
                     "defaultValue": true,
                     "validators": [
                         null
@@ -221,8 +228,8 @@
                         "allowEmpty": false
                     }
                 },
-                "categories": [
-                    "featured"
+                "supportedMapStyles": [
+                    "topDown"
                 ]
             }
         ]
@@ -237,7 +244,7 @@
         "triggers": [
             {
                 "type": "WHEN_TRIGGERED",
-                "name": "When triggered..."
+                "name": "When hit"
             }
         ],
         "customBlocks": []
@@ -247,16 +254,12 @@
             "connections": [
                 {
                     "id": "used",
-                    "name": "Used"
+                    "name": "Block hit"
                 }
             ]
         },
         "in": {
             "connections": [
-                {
-                    "id": "use",
-                    "name": "Use"
-                },
                 {
                     "id": "activate",
                     "name": "Activate Lucky Block"
@@ -268,7 +271,8 @@
             ]
         }
     },
-    "minimumRoleLevel": 90,
-    "initialMemoryCost": 0,
-    "subsequentMemoryCost": 0
+    "seasonTicketRequired": true,
+    "maxOnMap": 200,
+    "initialMemoryCost": 200,
+    "subsequentMemoryCost": 200
 }
