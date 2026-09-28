@@ -19,6 +19,12 @@
                 "type": "current_character_id"
             },
             {
+                "type": "current_character_health"
+            },
+            {
+                "type": "current_character_shield"
+            },
+            {
                 "type": "add_activity_feed_item_for_everyone"
             },
             {

@@ -54,6 +54,34 @@
                 ]
             },
             {
+                "key": "fillEnclosedAreas",
+                "option": {
+                    "label": "Fill",
+                    "type": "select",
+                    "description": "Fill the enclosed areas of the shape with color",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
                 "key": "borderColor",
                 "option": {
                     "label": "Border Color",

@@ -1,0 +1,8 @@
+{
+    "type": "current_character_health",
+    "message0": "Triggering Player's Health",
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": "Number"
+}
