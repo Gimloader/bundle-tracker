@@ -30,8 +30,12 @@ export async function retryAsync<T>(name: string, fn: () => Promise<T>, retries 
         try {
             return await fn();
         } catch(err) {
-            console.warn("Failed to get", name);
-            if(i === retries - 1) throw err;
+            if(i === retries - 1) {
+                console.warn("Failed to get", name);
+                throw err;
+            }
+
+            console.warn(`Failed to get`, name, err);
             await new Promise(res => setTimeout(res, delay));
         }
     }

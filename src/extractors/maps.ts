@@ -37,7 +37,7 @@ export async function extractMaps(push: boolean) {
             if(processed.has(item._id)) continue;
             processed.add(item._id);
 
-            await retryAsync("contents of map " + experiences._id, () => getMapContents(item, authToken, maps));
+            await retryAsync("contents of map " + item._id, () => getMapContents(item, authToken, maps));
         }
     }
 
