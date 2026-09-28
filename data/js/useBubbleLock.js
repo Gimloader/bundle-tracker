@@ -1,17 +1,17 @@
 import {
     r as n,
-    aB as $,
-    aG as w,
-    az as D,
+    b1 as $,
+    b6 as w,
+    b3 as D,
     am as M,
-    aA as g,
+    b5 as g,
     _ as j,
-    aD as m,
-    x as A,
-    b8 as _
+    aZ as m,
+    x as V,
+    aX as _
 } from "./_index.js";
-var B = ["prefixCls", "className", "style", "checked", "disabled", "defaultChecked", "type", "title", "onChange"],
-    z = n.forwardRef(function(e, a) {
+var A = ["prefixCls", "className", "style", "checked", "disabled", "defaultChecked", "type", "title", "onChange"],
+    H = n.forwardRef(function(e, a) {
         var r = e.prefixCls,
             c = r === void 0 ? "rc-checkbox" : r,
             d = e.className,
@@ -24,15 +24,15 @@ var B = ["prefixCls", "className", "style", "checked", "disabled", "defaultCheck
             h = v === void 0 ? "checkbox" : v,
             R = e.title,
             i = e.onChange,
-            E = $(e, B),
+            E = $(e, A),
             s = n.useRef(null),
             p = n.useRef(null),
             P = w(y, {
                 value: x
             }),
-            k = D(P, 2),
-            b = k[0],
-            N = k[1];
+            b = D(P, 2),
+            k = b[0],
+            N = b[1];
         n.useImperativeHandle(a, function() {
             return {
                 focus: function(t) {
@@ -47,7 +47,7 @@ var B = ["prefixCls", "className", "style", "checked", "disabled", "defaultCheck
                 nativeElement: p.current
             }
         });
-        var L = M(c, d, g(g({}, "".concat(c, "-checked"), b), "".concat(c, "-disabled"), o)),
+        var L = M(c, d, g(g({}, "".concat(c, "-checked"), k), "".concat(c, "-disabled"), o)),
             S = function(t) {
                 o || ("checked" in e || N(t.target.checked), i == null || i({
                     target: m(m({}, e), {}, {
@@ -73,15 +73,15 @@ var B = ["prefixCls", "className", "style", "checked", "disabled", "defaultCheck
             ref: s,
             onChange: S,
             disabled: o,
-            checked: !!b,
+            checked: !!k,
             type: h
         })), n.createElement("span", {
             className: "".concat(c, "-inner")
         }))
     });
 
-function G(e) {
-    const a = A.useRef(null),
+function I(e) {
+    const a = V.useRef(null),
         r = () => {
             _.cancel(a.current), a.current = null
         };
@@ -94,5 +94,5 @@ function G(e) {
     }]
 }
 export {
-    z as C, G as u
+    H as C, I as u
 };

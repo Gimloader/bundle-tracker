@@ -75,6 +75,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -86,7 +87,7 @@ const n = {
         imageId: t("devices/counter/background.png"),
         imageUrl: t("devices/counter/background.png")
     };
-class zt extends m {
+class Dt extends m {
     constructor(e) {
         if (super(e), this.textScale = 1, this.onStateChange = o => {
                 var i;
@@ -117,6 +118,6 @@ class zt extends m {
     }
 }
 export {
-    zt as
+    Dt as
     default
 };

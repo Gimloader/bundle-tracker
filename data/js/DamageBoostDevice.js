@@ -75,9 +75,10 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-class yo extends p {
+class Io extends p {
     constructor(t) {
         if (super(t), r() && m()) {
             const o = a.Utility;
@@ -96,6 +97,6 @@ class yo extends p {
     }
 }
 export {
-    yo as
+    Io as
     default
 };

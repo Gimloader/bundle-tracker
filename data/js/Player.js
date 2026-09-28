@@ -10,7 +10,7 @@ import {
     e as y,
     c as w,
     r as p,
-    aY as g
+    aH as g
 } from "./_index.js";
 import {
     Q as B
@@ -170,11 +170,11 @@ const a = {
   color: ${a.Red} !important;
   margin-left: 10px !important;
 `,
-    G = n(f)`
+    H = n(f)`
   color: ${a.Blue} !important;
   margin-left: 10px !important;
 `,
-    H = e => t.jsxs(q, {
+    G = e => t.jsxs(q, {
         children: [t.jsx(h, {
             title: "Correct",
             children: t.jsx(_, {
@@ -187,7 +187,7 @@ const a = {
             })
         }), t.jsx(h, {
             title: "Accuracy",
-            children: t.jsx(G, {
+            children: t.jsx(H, {
                 children: `${e.accuracy}%`
             })
         })]
@@ -197,15 +197,15 @@ const a = {
   width: 100%;
   justify-content: space-between;
 `,
-    Y = n.div`
+    L = n.div`
   width: 100%;
 `,
-    L = e => t.jsxs(O, {
-        children: [t.jsx(Y, {
+    Y = e => t.jsxs(O, {
+        children: [t.jsx(L, {
             children: t.jsx(B, {
                 question: e.question
             })
-        }), t.jsx(H, {
+        }), t.jsx(G, {
             correct: e.correct,
             incorrect: e.incorrect,
             accuracy: e.accuracy
@@ -286,7 +286,7 @@ const a = {
                     })
                 })
             }), t.jsx("div", {
-                children: u.sort((r, i) => r.resultData.accuracy > i.resultData.accuracy ? 1 : -1).map(r => t.jsx(L, {
+                children: u.sort((r, i) => r.resultData.accuracy > i.resultData.accuracy ? 1 : -1).map(r => t.jsx(Y, {
                     question: r.question,
                     correct: r.resultData.correct,
                     incorrect: r.resultData.incorrect,
@@ -296,5 +296,5 @@ const a = {
         })
     };
 export {
-    L as B, W as C, R as H, T as I, et as P, H as Q, a
+    Y as B, W as C, R as H, T as I, et as P, G as Q, a
 };

@@ -75,9 +75,10 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-class Vi extends s {
+class Wi extends s {
     constructor(m) {
         if (super(m), p() || e()) return;
         this.parts.add.rect({
@@ -107,6 +108,6 @@ class Vi extends s {
     }
 }
 export {
-    Vi as
+    Wi as
     default
 };

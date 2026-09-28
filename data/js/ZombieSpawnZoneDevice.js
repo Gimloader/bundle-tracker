@@ -1,6 +1,6 @@
 import {
     aK as l,
-    aQ as m,
+    aQ as s,
     aU as c,
     L as g
 } from "./App-41.js";
@@ -14,7 +14,7 @@ import {
     Z as h
 } from "./ZonedDeviceDisplay.js";
 import {
-    F as s,
+    F as m,
     R as u
 } from "./FetchOptionSchemaProperty.js";
 import {
@@ -84,6 +84,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -91,7 +92,7 @@ const w = {
     imageId: n("devices/zombie_spawn_zone/icon.png"),
     imageUrl: n("devices/zombie_spawn_zone/icon.png")
 };
-class Lt extends l {
+class Mt extends l {
     constructor(d) {
         if (super(d), this.updatePartAlpha = t => {
                 const i = this.getAlpha();
@@ -103,9 +104,9 @@ class Lt extends l {
                 }), this.rect && this.rect.updateAlpha(t)
             }, this.setupVisualEditing = () => {
                 if (!a() || !p()) return;
-                const t = s(this, "width"),
-                    i = s(this, "height");
-                s(this, "rotation"), this.visualEditing.add.box({
+                const t = m(this, "width"),
+                    i = m(this, "height");
+                m(this, "rotation"), this.visualEditing.add.box({
                     width: this.options.width,
                     height: this.options.height,
                     angle: this.options.rotation,
@@ -125,7 +126,7 @@ class Lt extends l {
                 })
             }, a() && p() && this.parts.add.sprite({
                 ...w,
-                depthChange: m(2)
+                depthChange: s(2)
             }).view.setScale(.17), r() || e() ? 0 : h.shouldShow(this)) {
             this.setupVisualEditing();
             const t = c("#00FF00");
@@ -138,7 +139,7 @@ class Lt extends l {
                 borderColor: t,
                 borderAlpha: r() || e() ? 0 : 1,
                 borderWidth: 4,
-                depthChange: m(1),
+                depthChange: s(1),
                 ignoreInput: !0,
                 angle: this.options.rotation
             })
@@ -149,6 +150,6 @@ class Lt extends l {
     }
 }
 export {
-    Lt as ZombieSpawnZoneDevice, Lt as
+    Mt as ZombieSpawnZoneDevice, Mt as
     default
 };

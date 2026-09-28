@@ -75,9 +75,10 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-class _o extends m {
+class Bo extends m {
     constructor(r) {
         if (super(r), i() || p()) return;
         const o = s.Manager;
@@ -95,6 +96,6 @@ class _o extends m {
     }
 }
 export {
-    _o as
+    Bo as
     default
 };

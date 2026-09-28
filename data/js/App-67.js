@@ -4,10 +4,10 @@ import {
     d as i,
     r as h,
     e as N,
-    dQ as D
+    dT as T
 } from "./_index.js";
 import {
-    t as T,
+    t as D,
     a2 as L,
     w as A,
     z as F,
@@ -34,7 +34,7 @@ import {
 import {
     V as G,
     C as v,
-    a as Q
+    a as H
 } from "./Centered.js";
 import {
     F as C
@@ -46,10 +46,10 @@ import {
     o as E
 } from "./mobxreact.esm.js";
 import {
-    F as H
+    F as J
 } from "./FetchDeviceName.js";
 import {
-    D as J
+    D as Q
 } from "./TutorialConsts.js";
 import {
     C as X
@@ -114,6 +114,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -176,7 +177,7 @@ const ie = t => e.jsxs(re, {
     se = () => e.jsx(R, {
         children: "Repeat the wire pulse!"
     }),
-    ae = i(Q).attrs({
+    ae = i(H).attrs({
         className: "maxWidth"
     })`
   padding: 20px;
@@ -191,11 +192,11 @@ const ie = t => e.jsxs(re, {
 `,
     k = E(t => {
         var o;
-        const a = !T() || !L(),
+        const a = !D() || !L(),
             s = t.side === "left",
             p = s ? t.wire.startDevice : t.wire.endDevice,
             r = A(p),
-            c = ((o = r == null ? void 0 : r.deviceOption) == null ? void 0 : o.id) === J.wireRepeater,
+            c = ((o = r == null ? void 0 : r.deviceOption) == null ? void 0 : o.id) === Q.wireRepeater,
             u = () => {
                 r && (g.me.editing.device.currentlyEditedDevice = {
                     id: r.id,
@@ -223,7 +224,7 @@ const ie = t => e.jsxs(re, {
                     },
                     level: 4,
                     onClick: u,
-                    children: H(p)
+                    children: J(p)
                 })
             }), c ? s ? e.jsx(ne, {}) : e.jsx(se, {}) : e.jsxs(e.Fragment, {
                 children: [e.jsx(pe, {
@@ -305,7 +306,7 @@ const ie = t => e.jsxs(re, {
   font-size: 42px;
   line-height: 1;
 `,
-    $t = E(() => {
+    Mt = E(() => {
         const {
             world: {
                 wires: t
@@ -329,7 +330,7 @@ const ie = t => e.jsxs(re, {
             }
         };
         return h.useEffect(() => {
-            const x = D(() => g.world.wires.wires.get(g.me.editing.wire.currentlyEditedWireId), o => {
+            const x = T(() => g.world.wires.wires.get(g.me.editing.wire.currentlyEditedWireId), o => {
                 o ? (r(!0), s(o)) : r(!1)
             });
             return () => x()
@@ -388,6 +389,6 @@ const ie = t => e.jsxs(re, {
   backdrop-filter: blur(3px);
 `;
 export {
-    $t as
+    Mt as
     default
 };

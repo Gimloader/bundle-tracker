@@ -74,11 +74,12 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const m = s("devices/camera_point/icon.png");
-class At extends p {
+class Ht extends p {
     constructor(i) {
         super(i), this.resetCameraPoint = () => {
             r().cameraHelper.resetCameraPointDevice()
@@ -107,6 +108,6 @@ class At extends p {
     }
 }
 export {
-    At as
+    Ht as
     default
 };

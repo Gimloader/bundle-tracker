@@ -89,6 +89,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 var r = (t => (t.stopped = "stopped", t.playing = "playing", t.fadingOut = "fadingOut", t))(r || {});
@@ -102,7 +103,7 @@ const A = t => {
     O = !1,
     e = new Map,
     p = new Map;
-class kt extends w {
+class qt extends w {
     constructor(o) {
         if (super(o), this.onUpdate = () => {
                 if (!this.state.countdownActive && !this.state.countupActive) return;
@@ -156,6 +157,6 @@ class kt extends w {
     }
 }
 export {
-    kt as
+    qt as
     default
 };

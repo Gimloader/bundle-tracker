@@ -1,22 +1,22 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Chart.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/index-1.js", "assets/useIntervalWhen.js", "assets/motion.js", "assets/mobxreact.esm.js", "assets/QuizTypes.js", "assets/howler.js", "assets/Codes.js", "assets/fonts.js", "assets/index-5.js", "assets/SixteenByNineScaler.js", "assets/index-2.js", "assets/Button.js", "assets/polished.esm.js", "assets/inheritsLoose.js", "assets/index-20.js", "assets/index-22.js", "assets/index-4.js", "assets/context.js", "assets/react-flip-move.es.js", "assets/index-6.js", "assets/progress.js", "assets/CheckOutlined.js", "assets/index-18.js", "assets/index-26.js", "assets/___vite-browser-external_commonjs-proxy.js", "assets/confetti.js", "assets/colors.js", "assets/Text.js", "assets/getCloudinaryUrl.js", "assets/LazyLatexRenderer.js", "assets/clsx.m.js", "assets/Tooltip.js", "assets/index-10.js", "assets/move.js", "assets/use-force-update.js", "assets/use-motion-value.js", "assets/RocketOutlined.js", "assets/UsergroupAddOutlined.js", "assets/CircularProgress.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Chart.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/index-1.js", "assets/useIntervalWhen.js", "assets/motion.js", "assets/mobxreact.esm.js", "assets/QuizTypes.js", "assets/howler.js", "assets/Codes.js", "assets/fonts.js", "assets/index-5.js", "assets/SixteenByNineScaler.js", "assets/index-2.js", "assets/Button.js", "assets/polished.esm.js", "assets/inheritsLoose.js", "assets/index-20.js", "assets/index-22.js", "assets/index-4.js", "assets/context.js", "assets/react-flip-move.es.js", "assets/index-6.js", "assets/progress.js", "assets/CheckOutlined.js", "assets/index-18.js", "assets/BulbOutlined.js", "assets/index-26.js", "assets/___vite-browser-external_commonjs-proxy.js", "assets/confetti.js", "assets/colors.js", "assets/Text.js", "assets/getCloudinaryUrl.js", "assets/LazyLatexRenderer.js", "assets/clsx.m.js", "assets/Tooltip.js", "assets/index-10.js", "assets/move.js", "assets/use-force-update.js", "assets/use-motion-value.js", "assets/RocketOutlined.js", "assets/UsergroupAddOutlined.js", "assets/CircularProgress.js", "assets/CloseCircleOutlined.js"]))) => i.map(i => d[i]);
 import {
     r as c,
-    I as Bt,
-    _ as Ft,
+    I as Zt,
+    _ as Xt,
     m as ge,
     o as v,
     a9 as Ri,
-    aZ as Di,
+    aI as Di,
     dF as en,
     j as t,
-    dQ as Te,
+    dT as Te,
     ar as Ue,
     bI as tn,
     bJ as Pi,
     aw as fs,
     B as Q,
     d as l,
-    dN as Ai,
+    dQ as Ai,
     p as Ni,
     e as Ne,
     s as Mi,
@@ -24,27 +24,27 @@ import {
     x as Rt,
     q as tt,
     D as bt,
-    e4 as dr,
-    at as Bi,
+    e5 as dr,
+    at as Fi,
     l as gs,
-    F as Fe,
-    dR as ur,
+    F as Be,
+    dU as ur,
     M as nn,
-    c as Fi,
+    c as Bi,
     E as Li,
     cm as Wi,
-    dP as pr,
+    dS as pr,
     i as Vi,
     f as zi,
-    e5 as ln,
+    e6 as ln,
     a as xs,
     h as Hi,
     u as hr,
-    e2 as Gi,
+    e3 as Gi,
     a3 as Ui,
     S as mr,
     $ as qi,
-    bg as Yi,
+    bf as Yi,
     U as Qi,
     N as Ji,
     T as Ki
@@ -68,12 +68,12 @@ import {
     C as no
 } from "./Codes.js";
 import {
-    F,
+    F as B,
     a as $n,
     R as so
 } from "./fonts.js";
 import {
-    T as Lt
+    T as Ft
 } from "./index-5.js";
 import {
     b as fr,
@@ -101,17 +101,20 @@ import {
     s as co
 } from "./index-18.js";
 import {
+    R as uo
+} from "./BulbOutlined.js";
+import {
     L as vr,
-    A as uo,
+    A as po,
     O as ys,
-    m as po
+    m as ho
 } from "./index-26.js";
 import {
     C as nt
 } from "./confetti.js";
 import {
-    a as ho,
-    c as mo
+    a as mo,
+    c as fo
 } from "./polished.esm.js";
 import {
     b as vt
@@ -120,19 +123,19 @@ import {
     C as yr
 } from "./colors.js";
 import {
-    b as fo,
+    b as go,
     I as br,
-    a as go,
+    a as xo,
     T as Tn
 } from "./Text.js";
 import {
-    D as xo
+    D as vo
 } from "./index-10.js";
 import {
     u as wr
 } from "./useIntervalWhen.js";
 import {
-    u as vo
+    u as yo
 } from "./use-force-update.js";
 import {
     u as Os
@@ -141,18 +144,18 @@ import {
     R as _s
 } from "./CheckOutlined.js";
 import {
-    R as yo
+    R as bo
 } from "./RocketOutlined.js";
 import {
-    R as bo
+    R as wo
 } from "./UsergroupAddOutlined.js";
 import {
-    C as wo
+    C as jo
 } from "./CircularProgress.js";
 import {
-    R as jo
-} from "./___vite-browser-external_commonjs-proxy.js";
-var Co = {
+    R as Co
+} from "./CloseCircleOutlined.js";
+var So = {
         icon: {
             tag: "svg",
             attrs: {
@@ -169,38 +172,14 @@ var Co = {
         name: "arrow-up",
         theme: "outlined"
     },
-    So = function(n, r) {
-        return c.createElement(Bt, Ft({}, n, {
+    $o = function(n, r) {
+        return c.createElement(Zt, Xt({}, n, {
             ref: r,
-            icon: Co
+            icon: So
         }))
     },
-    $o = c.forwardRef(So),
-    To = {
-        icon: {
-            tag: "svg",
-            attrs: {
-                viewBox: "64 64 896 896",
-                focusable: "false"
-            },
-            children: [{
-                tag: "path",
-                attrs: {
-                    d: "M632 888H392c-4.4 0-8 3.6-8 8v32c0 17.7 14.3 32 32 32h192c17.7 0 32-14.3 32-32v-32c0-4.4-3.6-8-8-8zM512 64c-181.1 0-328 146.9-328 328 0 121.4 66 227.4 164 284.1V792c0 17.7 14.3 32 32 32h264c17.7 0 32-14.3 32-32V676.1c98-56.7 164-162.7 164-284.1 0-181.1-146.9-328-328-328zm127.9 549.8L604 634.6V752H420V634.6l-35.9-20.8C305.4 568.3 256 484.5 256 392c0-141.4 114.6-256 256-256s256 114.6 256 256c0 92.5-49.4 176.3-128.1 221.8z"
-                }
-            }]
-        },
-        name: "bulb",
-        theme: "outlined"
-    },
-    Eo = function(n, r) {
-        return c.createElement(Bt, Ft({}, n, {
-            ref: r,
-            icon: To
-        }))
-    },
-    Oo = c.forwardRef(Eo),
-    _o = {
+    To = c.forwardRef($o),
+    Eo = {
         icon: {
             tag: "svg",
             attrs: {
@@ -217,14 +196,14 @@ var Co = {
         name: "highlight",
         theme: "outlined"
     },
-    ko = function(n, r) {
-        return c.createElement(Bt, Ft({}, n, {
+    Oo = function(n, r) {
+        return c.createElement(Zt, Xt({}, n, {
             ref: r,
-            icon: _o
+            icon: Eo
         }))
     },
-    jr = c.forwardRef(ko),
-    Io = {
+    jr = c.forwardRef(Oo),
+    _o = {
         icon: {
             tag: "svg",
             attrs: {
@@ -241,14 +220,14 @@ var Co = {
         name: "logout",
         theme: "outlined"
     },
-    Ro = function(n, r) {
-        return c.createElement(Bt, Ft({}, n, {
+    ko = function(n, r) {
+        return c.createElement(Zt, Xt({}, n, {
             ref: r,
-            icon: Io
+            icon: _o
         }))
     },
-    Cr = c.forwardRef(Ro),
-    Do = {
+    Cr = c.forwardRef(ko),
+    Io = {
         icon: {
             tag: "svg",
             attrs: {
@@ -265,20 +244,20 @@ var Co = {
         name: "solution",
         theme: "outlined"
     },
-    Po = function(n, r) {
-        return c.createElement(Bt, Ft({}, n, {
+    Ro = function(n, r) {
+        return c.createElement(Zt, Xt({}, n, {
             ref: r,
-            icon: Do
+            icon: Io
         }))
     },
-    Ao = c.forwardRef(Po);
-const No = c.createContext(null),
-    Mo = e => !e.isLayoutDirty && e.willUpdate(!1);
+    Do = c.forwardRef(Ro);
+const Po = c.createContext(null),
+    Ao = e => !e.isLayoutDirty && e.willUpdate(!1);
 
 function ks() {
     const e = new Set,
         n = new WeakMap,
-        r = () => e.forEach(Mo);
+        r = () => e.forEach(Ao);
     return {
         add: i => {
             e.add(i), n.set(i, i.addEventListener("willUpdate", r))
@@ -291,8 +270,8 @@ function ks() {
     }
 }
 const Sr = e => e === !0,
-    Bo = e => Sr(e === !0) || e === "id",
-    Fo = ({
+    No = e => Sr(e === !0) || e === "id",
+    Mo = ({
         children: e,
         id: n,
         inheritId: r,
@@ -300,11 +279,11 @@ const Sr = e => e === !0,
     }) => {
         r !== void 0 && (i = r);
         const s = c.useContext(Ts),
-            o = c.useContext(No),
-            [a, d] = vo(),
+            o = c.useContext(Po),
+            [a, d] = yo(),
             m = c.useRef(null),
             f = s.id || o;
-        m.current === null && (Bo(i) && f && (n = n ? f + "-" + n : f), m.current = {
+        m.current === null && (No(i) && f && (n = n ? f + "-" + n : f), m.current = {
             id: n,
             group: Sr(i) && s.group || ks()
         });
@@ -316,16 +295,16 @@ const Sr = e => e === !0,
             value: $
         }, e)
     };
-let Lo = 0;
+let Fo = 0;
 const $r = ({
     children: e
-}) => (c.useEffect(() => {}, []), c.createElement(Fo, {
-    id: lo(() => `asl-${Lo++}`)
+}) => (c.useEffect(() => {}, []), c.createElement(Mo, {
+    id: lo(() => `asl-${Fo++}`)
 }, e));
-var Wo = Object.defineProperty,
+var Bo = Object.defineProperty,
     Ce = (e, n, r, i) => {
         for (var s = void 0, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(n, r, s) || s);
-        return s && Wo(n, r, s), s
+        return s && Bo(n, r, s), s
     };
 class xe {
     constructor() {
@@ -344,10 +323,10 @@ Ce([v], xe.prototype, "joinedRoom");
 Ce([v], xe.prototype, "attemptingToJoinRoom");
 Ce([v], xe.prototype, "errorJoiningRoom");
 Ce([v], xe.prototype, "roomError");
-var Vo = Object.defineProperty,
+var Lo = Object.defineProperty,
     Tr = (e, n, r, i) => {
         for (var s = void 0, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(n, r, s) || s);
-        return s && Vo(n, r, s), s
+        return s && Lo(n, r, s), s
     };
 class bs {
     constructor() {
@@ -356,12 +335,12 @@ class bs {
 }
 Tr([v], bs.prototype, "defendingHomebase");
 Tr([v], bs.prototype, "lava");
-class zo {}
-var Ho = Object.defineProperty,
-    Go = Object.getOwnPropertyDescriptor,
+class Wo {}
+var Vo = Object.defineProperty,
+    zo = Object.getOwnPropertyDescriptor,
     se = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? Go(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = (i ? a(n, r, s) : a(s)) || s);
-        return i && s && Ho(n, r, s), s
+        for (var s = i > 1 ? void 0 : i ? zo(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = (i ? a(n, r, s) : a(s)) || s);
+        return i && s && Vo(n, r, s), s
     };
 class te {
     constructor() {
@@ -395,10 +374,10 @@ se([v], te.prototype, "music", 2);
 se([v], te.prototype, "modeOptions", 2);
 se([Di.bound], te.prototype, "setGameOptionsFromStorage", 2);
 se([en], te.prototype, "formattedGameOptions", 1);
-var Uo = Object.defineProperty,
+var Ho = Object.defineProperty,
     _e = (e, n, r, i) => {
         for (var s = void 0, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(n, r, s) || s);
-        return s && Uo(n, r, s), s
+        return s && Ho(n, r, s), s
     };
 class Se {
     constructor() {
@@ -416,19 +395,19 @@ _e([v], Se.prototype, "showBossBattleModal");
 _e([v], Se.prototype, "gameEndDate");
 _e([v], Se.prototype, "defendingHomebaseResults");
 _e([v], Se.prototype, "roomIntentErrorMessage");
-class qo {
+class Go {
     constructor() {
         this.questions = []
     }
 }
-var Yo = Object.defineProperty,
-    Qo = Object.getOwnPropertyDescriptor,
+var Uo = Object.defineProperty,
+    qo = Object.getOwnPropertyDescriptor,
     wt = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? Qo(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = (i ? a(n, r, s) : a(s)) || s);
-        return i && s && Yo(n, r, s), s
+        for (var s = i > 1 ? void 0 : i ? qo(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = (i ? a(n, r, s) : a(s)) || s);
+        return i && s && Uo(n, r, s), s
     };
 const Is = (e, n) => e + n.balance,
-    Jo = (e, n) => e + n.stones;
+    Yo = (e, n) => e + n.stones;
 class it {
     constructor() {
         this.players = v.array([]), this.teams = v.array(), this.finalResults = v.array(), ge(this)
@@ -437,7 +416,7 @@ class it {
         return this.players.filter(n => n.name !== "Player [Still Entering Name]")
     }
     get totalStones() {
-        return this.players.reduce(Jo, 0)
+        return this.players.reduce(Yo, 0)
     }
     get totalBalance() {
         return this.teams.length ? this.teams.reduce(Is, 0) : this.players.reduce(Is, 0)
@@ -449,39 +428,39 @@ wt([v], it.prototype, "finalResults", 2);
 wt([en], it.prototype, "filteredPlayers", 1);
 wt([en], it.prototype, "totalStones", 1);
 wt([en], it.prototype, "totalBalance", 1);
-var Ko = Object.defineProperty,
-    Zo = (e, n, r, i) => {
+var Qo = Object.defineProperty,
+    Jo = (e, n, r, i) => {
         for (var s = void 0, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(n, r, s) || s);
-        return s && Ko(n, r, s), s
+        return s && Qo(n, r, s), s
     };
 class Er {
     constructor() {
         this.specialSongIsPlaying = !1, ge(this)
     }
 }
-Zo([v], Er.prototype, "specialSongIsPlaying");
-var Xo = Object.defineProperty,
-    ea = (e, n, r, i) => {
+Jo([v], Er.prototype, "specialSongIsPlaying");
+var Ko = Object.defineProperty,
+    Zo = (e, n, r, i) => {
         for (var s = void 0, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(n, r, s) || s);
-        return s && Xo(n, r, s), s
+        return s && Ko(n, r, s), s
     };
 let Or = class {
     constructor() {
         this.playerStats = v.array(), ge(this)
     }
 };
-ea([v], Or.prototype, "playerStats");
-var ta = Object.defineProperty,
-    na = (e, n, r, i) => {
+Zo([v], Or.prototype, "playerStats");
+var Xo = Object.defineProperty,
+    ea = (e, n, r, i) => {
         for (var s = void 0, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(n, r, s) || s);
-        return s && ta(n, r, s), s
+        return s && Xo(n, r, s), s
     };
 class _r {
     constructor() {
         ge(this)
     }
 }
-na([v], _r.prototype, "translations");
+ea([v], _r.prototype, "translations");
 const C = {
     Black: "#000000",
     White: "#FFFFFF",
@@ -491,10 +470,10 @@ const C = {
     DisabledGray: "#838383",
     Gold: "#FFD700"
 };
-var sa = Object.defineProperty,
+var ta = Object.defineProperty,
     jt = (e, n, r, i) => {
         for (var s = void 0, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(n, r, s) || s);
-        return s && sa(n, r, s), s
+        return s && ta(n, r, s), s
     };
 class ot {
     constructor() {
@@ -507,10 +486,10 @@ jt([v], ot.prototype, "showingLavaPreScreen");
 jt([v], ot.prototype, "showingHumansVsZombiesPreScreen");
 jt([v], ot.prototype, "snowing");
 jt([v], ot.prototype, "showingClassTip");
-var ra = Object.defineProperty,
+var na = Object.defineProperty,
     at = (e, n, r, i) => {
         for (var s = void 0, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(n, r, s) || s);
-        return s && ra(n, r, s), s
+        return s && na(n, r, s), s
     },
     En = (e => (e.detective = "detective", e.imposter = "imposter", e))(En || {}),
     be = (e => (e.intro = "intro", e.questions = "questions", e.discussion = "discussion", e.voting = "voting", e.votingResult = "votingResult", e))(be || {});
@@ -526,10 +505,10 @@ at([v], Ke.prototype, "impostersLeft");
 at([v], Ke.prototype, "votes");
 at([v], Ke.prototype, "meetingResults");
 at([v], Ke.prototype, "people");
-var ia = Object.defineProperty,
+var sa = Object.defineProperty,
     Le = (e, n, r, i) => {
         for (var s = void 0, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(n, r, s) || s);
-        return s && ia(n, r, s), s
+        return s && sa(n, r, s), s
     },
     et = (e => (e.pickDrawer = "pickDrawer", e.termSelection = "termSelection", e.drawing = "drawing", e.results = "results", e))(et || {});
 class ke {
@@ -556,10 +535,10 @@ Le([v], ke.prototype, "showingFeed");
 Le([v], ke.prototype, "pointAdditions");
 Le([v], ke.prototype, "drawingHistory");
 Le([v], ke.prototype, "drawingsModalOpen");
-var oa = Object.defineProperty,
+var ra = Object.defineProperty,
     ve = (e, n, r, i) => {
         for (var s = void 0, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(n, r, s) || s);
-        return s && oa(n, r, s), s
+        return s && ra(n, r, s), s
     },
     we = (e => (e.home = "home", e.question = "question", e.answer = "answer", e))(we || {}),
     he = (e => (e.preview = "preview", e.finale = "finale", e.question = "question", e))(he || {}),
@@ -582,10 +561,10 @@ ve([v], ue.prototype, "betsPlaced");
 ve([v], ue.prototype, "playersAnswered");
 ve([v], ue.prototype, "playersAnsweredCorrectly");
 ve([v], ue.prototype, "nameOfFirstPlayerToAnswerCorrectly");
-var aa = Object.defineProperty,
+var ia = Object.defineProperty,
     kr = (e, n, r, i) => {
         for (var s = void 0, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(n, r, s) || s);
-        return s && aa(n, r, s), s
+        return s && ia(n, r, s), s
     };
 class ws {
     constructor() {
@@ -595,7 +574,7 @@ class ws {
 kr([v], ws.prototype, "hasReceivedHostStaticState");
 kr([v], ws.prototype, "currentGameIsUsingGroups");
 const u = {
-    kit: new qo,
+    kit: new Go,
     players: new it,
     gameValues: new Se,
     gameOptions: new te,
@@ -605,15 +584,15 @@ const u = {
     powerups: new Er,
     ui: new ot,
     entities: new bs,
-    events: new zo,
+    events: new Wo,
     imposter: new Ke,
     draw: new ke,
     pardy: new ue,
     metadata: new ws
 };
-var la = Object.getOwnPropertyDescriptor,
-    ca = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? la(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var oa = Object.getOwnPropertyDescriptor,
+    aa = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? oa(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
 let Xe = class extends c.Component {
@@ -626,9 +605,9 @@ let Xe = class extends c.Component {
         return t.jsx(n, {})
     }
 };
-Xe = ca([I("gameValues"), j], Xe);
+Xe = aa([I("gameValues"), j], Xe);
 
-function da() {
+function la() {
     var e = !0,
         n = document.getElementById("snow-canv");
     if (!n) return;
@@ -655,7 +634,7 @@ function da() {
         !e && S ? (e = S, T()) : e = S
     })
 }
-class ua extends c.Component {
+class ca extends c.Component {
     constructor() {
         super(...arguments), this.state = {
             hasShown: !1
@@ -664,7 +643,7 @@ class ua extends c.Component {
     componentDidUpdate(n) {
         this.state.hasShown || !n.isSnowing && this.props.isSnowing && (this.setState({
             hasShown: !0
-        }), da())
+        }), la())
     }
     render() {
         return t.jsx("canvas", {
@@ -684,19 +663,19 @@ class ua extends c.Component {
         })
     }
 }
-var pa = Object.getOwnPropertyDescriptor,
-    ha = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? pa(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var da = Object.getOwnPropertyDescriptor,
+    ua = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? da(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
 let On = class extends c.Component {
     render() {
-        return t.jsx(ua, {
+        return t.jsx(ca, {
             isSnowing: this.props.ui.snowing
         })
     }
 };
-On = ha([I("ui"), j], On);
+On = ua([I("ui"), j], On);
 const gt = .45,
     N = !1,
     Ze = e => new A.Howl({
@@ -907,16 +886,16 @@ const gt = .45,
             setQuestionStatus: "PARDY_SET_QUESTION_STATUS"
         }
     },
-    ma = "THANOS",
-    fa = "HIDDEN",
+    pa = "THANOS",
+    ha = "HIDDEN",
     Ir = "BOSS_BATTLE",
     Rr = "HUMAN_ZOMBIE_DEFENDING_HOMEBASE",
-    ga = "LAVA",
-    xa = "IMPOSTER",
-    va = "DRAW",
-    ya = "PARDY";
-var ba = typeof document < "u",
-    wa = [{
+    ma = "LAVA",
+    fa = "IMPOSTER",
+    ga = "DRAW",
+    xa = "PARDY";
+var va = typeof document < "u",
+    ya = [{
         hidden: "hidden",
         event: "visibilitychange",
         state: "visibilityState"
@@ -937,14 +916,14 @@ var ba = typeof document < "u",
         event: "ovisibilitychange",
         state: "oVisibilityState"
     }],
-    Dr = ba && !!document.addEventListener,
+    Dr = va && !!document.addEventListener,
     xt = (function() {
         if (!Dr) return null;
         var e = !0,
             n = !1,
             r = void 0;
         try {
-            for (var i = wa[Symbol.iterator](), s; !(e = (s = i.next()).done); e = !0) {
+            for (var i = ya[Symbol.iterator](), s; !(e = (s = i.next()).done); e = !0) {
                 var o = s.value;
                 if (o.hidden in document) return o
             }
@@ -990,8 +969,8 @@ var ba = typeof document < "u",
             throw new TypeError("Invalid attempt to destructure non-iterable instance")
         }
     })(),
-    ja = Dr && xt,
-    Ca = function() {
+    ba = Dr && xt,
+    wa = function() {
         var n = Rs(),
             r = cn(n, 1),
             i = r[0],
@@ -1000,7 +979,7 @@ var ba = typeof document < "u",
             a = o[0],
             d = o[1];
         return c.useEffect(function() {
-            if (ja) {
+            if (ba) {
                 var m = function() {
                     var $ = Rs(),
                         E = cn($, 1),
@@ -1017,7 +996,7 @@ var ba = typeof document < "u",
 const kt = function() {
         return ((1 + Math.random()) * 65536 | 0).toString(16).substring(1)
     },
-    Sa = () => kt() + kt() + "-" + kt() + "-" + kt() + "-" + kt(),
+    ja = () => kt() + kt() + "-" + kt() + "-" + kt() + "-" + kt(),
     ie = (e, n, r) => n === 1 ? e : e + "s",
     Qe = e => e.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","),
     ne = e => {
@@ -1027,10 +1006,10 @@ const kt = function() {
     Pr = e => {
         u.engine.game.send(G.kickPlayer, e), u.players.players.replace(u.players.players.filter(n => n.id !== e)), !u.ui.showingClassTip && !u.metadata.currentGameIsUsingGroups && (u.ui.showingClassTip = !0)
     },
-    Qt = e => {
+    qt = e => {
         u.gameValues.activityItems.replace([...Ue.takeRight(u.gameValues.activityItems, 22), {
             ...e,
-            key: Sa()
+            key: ja()
         }])
     },
     st = () => [to, Rr, Ir].includes(u.gameOptions.specialGameType[0]),
@@ -1045,8 +1024,8 @@ const kt = function() {
             st() ? u.engine.game.send(G.requestTeamLeaderboard, "final") : u.engine.game.send(G.requestPlayerLeaderboard, "final"), u.gameValues.currentRoute = V.results
         }, 500)
     },
-    yt = () => le() ? g.thanos.thanos : de() ? g.halloween : Be() ? g.lava.panther : me() ? g.imposter.mysteriousCase : X() ? g.draw.background : g.realityShow,
-    $a = (e, n) => {
+    yt = () => le() ? g.thanos.thanos : de() ? g.halloween : Fe() ? g.lava.panther : me() ? g.imposter.mysteriousCase : X() ? g.draw.background : g.realityShow,
+    Ca = (e, n) => {
         const r = u.gameOptions.music,
             i = yt();
         u.powerups.specialSongIsPlaying || (r && i.fade(gt, 0, 1e3), setTimeout(() => {
@@ -1086,25 +1065,25 @@ const kt = function() {
         };
         return e.once("end", r), e.once("loaderror", s), e.once("playerror", s), e
     },
-    Ta = (e, n, r = 1e3) => {
+    Sa = (e, n, r = 1e3) => {
         e.stop()
     },
     Ae = (e, n) => {
         const r = u.engine.game;
         r && r.send(e, n)
     },
-    sn = e => Ca() ? t.jsx(t.Fragment, {
+    sn = e => wa() ? t.jsx(t.Fragment, {
         children: e.children
     }) : t.jsx("div", {}),
     Me = () => u.gameOptions.music === !0,
-    le = () => u.gameOptions.specialGameType.includes(ma),
-    _n = () => u.gameOptions.specialGameType.includes(fa),
+    le = () => u.gameOptions.specialGameType.includes(pa),
+    _n = () => u.gameOptions.specialGameType.includes(ha),
     Ee = () => u.gameOptions.specialGameType.includes(Ir),
     de = () => u.gameOptions.specialGameType.includes(Rr),
-    Be = () => u.gameOptions.specialGameType.includes(ga),
-    me = () => u.gameOptions.specialGameType.includes(xa),
-    X = () => u.gameOptions.specialGameType.includes(va),
-    ae = () => u.gameOptions.specialGameType.includes(ya);
+    Fe = () => u.gameOptions.specialGameType.includes(ma),
+    me = () => u.gameOptions.specialGameType.includes(fa),
+    X = () => u.gameOptions.specialGameType.includes(ga),
+    ae = () => u.gameOptions.specialGameType.includes(xa);
 
 function ht() {
     return !0
@@ -1116,7 +1095,7 @@ function _(e) {
 var Ye = {},
     Ds;
 
-function Ea() {
+function $a() {
     if (Ds) return Ye;
     Ds = 1, Object.defineProperty(Ye, "__esModule", {
         value: !0
@@ -1332,9 +1311,9 @@ function Ea() {
         children: null
     }, Ye
 }
-var Oa = Ea();
-const _a = fs(Oa),
-    Ps = e => t.jsx(Lt, {
+var Ta = $a();
+const Ea = fs(Ta),
+    Ps = e => t.jsx(Ft, {
         placement: "leftBottom",
         title: e.tooltipMessage,
         children: t.jsx(Q, {
@@ -1348,7 +1327,7 @@ const _a = fs(Oa),
             size: "large"
         })
     }),
-    ka = l.div`
+    Oa = l.div`
   height: 64px;
   width: 100%;
   flex-shrink: 0;
@@ -1359,14 +1338,14 @@ const _a = fs(Oa),
   display: flex;
   align-items: center;
 `,
-    Ia = l.div`
+    _a = l.div`
   padding: 6px;
   font-size: 14px;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 4px;
   margin-left: 10px;
   cursor: pointer;
-  font-family: ${F.fontFamilyName};
+  font-family: ${B.fontFamilyName};
   ${e=>e.showLargeCode?`
     position: absolute;
     margin-left: auto;
@@ -1384,28 +1363,28 @@ const _a = fs(Oa),
     align-items: center;
   `:null}
 `,
-    Ra = l.div`
+    ka = l.div`
   width: 100%;
   text-align: center;
   box-sizing: border-box;
   padding: 10px;
   font-size: 29px;
-  ${F.black};
+  ${B.black};
 `,
     dn = l.div`
   ${e=>e.customCSS?e.customCSS:""}
   width: ${e=>e.customWidth?e.customWidth:25}%;
 ;
 `;
-var Da = Object.getOwnPropertyDescriptor,
-    Pa = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? Da(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var Ia = Object.getOwnPropertyDescriptor,
+    Ra = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? Ia(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-const Aa = e => t.jsxs("span", {
+const Da = e => t.jsxs("span", {
     children: [e.minutes, ":", e.seconds]
 });
-let Jt = class extends c.Component {
+let Yt = class extends c.Component {
     constructor() {
         super(...arguments), this.state = {
             startDate: Date.now(),
@@ -1418,8 +1397,8 @@ let Jt = class extends c.Component {
             this.props.gameOptions.music = !this.props.gameOptions.music
         }, this.newGame = () => {
             this.props.engine.game.send("DEV_NEW_GAME"), setTimeout(() => window.location.reload(), 200)
-        }, this.timeRender = () => this.props.gameValues.gameEndDate ? t.jsx(_a, {
-            renderer: Aa,
+        }, this.timeRender = () => this.props.gameValues.gameEndDate ? t.jsx(Ea, {
+            renderer: Da,
             onComplete: Oe,
             date: this.props.gameValues.gameEndDate
         }) : null, this.getGameGoalText = () => {
@@ -1436,7 +1415,7 @@ let Jt = class extends c.Component {
     }
     render() {
         const n = this.getGameGoalText();
-        return t.jsxs(ka, {
+        return t.jsxs(Oa, {
             children: [t.jsxs(dn, {
                 customCSS: `
           display: flex;
@@ -1447,9 +1426,9 @@ let Jt = class extends c.Component {
                     style: {
                         height: 30
                     }
-                }), this.props.gameOptions.joinInLate ? t.jsx(Lt, {
+                }), this.props.gameOptions.joinInLate ? t.jsx(Ft, {
                     title: "Game Code (Click to enlarge)",
-                    children: t.jsx(Ia, {
+                    children: t.jsx(_a, {
                         onClick: this.toggleLargeCode,
                         showLargeCode: this.state.showLargeCode,
                         children: this.props.gameValues.gameCode
@@ -1457,7 +1436,7 @@ let Jt = class extends c.Component {
                 }) : null]
             }), t.jsx(dn, {
                 customWidth: 50,
-                children: !de() && t.jsx(Ra, {
+                children: !de() && t.jsx(ka, {
                     children: le() ? "Collect All 6 Infinity Stones" : n === "TIME" ? this.timeRender() : n
                 })
             }), t.jsx(dn, {
@@ -1483,16 +1462,16 @@ let Jt = class extends c.Component {
         })
     }
 };
-Jt = Pa([I("gameValues", "gameOptions", "ui", "engine"), j], Jt);
-const Na = {
+Yt = Ra([I("gameValues", "gameOptions", "ui", "engine"), j], Yt);
+const Pa = {
     undercover: "Undercover"
 };
-var Ma = Object.getOwnPropertyDescriptor,
-    Ba = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? Ma(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var Aa = Object.getOwnPropertyDescriptor,
+    Na = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? Aa(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-let B = class extends c.Component {
+let F = class extends c.Component {
     constructor() {
         super(...arguments), this.state = {
             text: this.props.text
@@ -1534,14 +1513,14 @@ let B = class extends c.Component {
         return this.buildString()
     }
 };
-B = Ba([I("translations", "gameOptions"), j], B);
+F = Na([I("translations", "gameOptions"), j], F);
 const We = {
         basic: "0px 4px 33px -6px rgba(0, 0, 0, 0.46)"
     },
-    Gt = e => t.jsx(Lt, {
+    zt = e => t.jsx(Ft, {
         title: e.tooltip,
         placement: "bottomRight",
-        children: t.jsx(La, {
+        children: t.jsx(Fa, {
             onClick: e.handleClick,
             backgroundColor: e.backgroundColor,
             children: t.jsx("i", {
@@ -1549,7 +1528,7 @@ const We = {
             })
         })
     });
-class Fa extends c.Component {
+class Ma extends c.Component {
     constructor() {
         super(...arguments), this.kickPlayer = () => {
             Pr(this.props.playerId), this.props.close()
@@ -1600,22 +1579,22 @@ class Fa extends c.Component {
                     alignItems: "center",
                     flexWrap: "wrap"
                 },
-                children: [t.jsx(Gt, {
+                children: [t.jsx(zt, {
                     icon: "fas fa-user-slash",
                     handleClick: this.kickPlayer,
                     tooltip: "Remove From Game",
                     backgroundColor: "#c62828"
-                }), t.jsx(Gt, {
+                }), t.jsx(zt, {
                     icon: "fas fa-plus",
                     handleClick: this.increaseBalance,
                     tooltip: "Increase Balance by 10%",
                     backgroundColor: "#1b5e20"
-                }), t.jsx(Gt, {
+                }), t.jsx(zt, {
                     icon: "fas fa-minus",
                     handleClick: this.decreaseBalance,
                     tooltip: "Decrease Balance By 10%",
                     backgroundColor: "#ac1900"
-                }), t.jsx(Gt, {
+                }), t.jsx(zt, {
                     icon: "fas fa-snowflake",
                     handleClick: this.freezePlayer,
                     tooltip: "Freeze",
@@ -1625,7 +1604,7 @@ class Fa extends c.Component {
         })
     }
 }
-const La = l.div`
+const Fa = l.div`
   height: 55px;
   width: 55px;
   border-radius: 50%;
@@ -1645,7 +1624,7 @@ const La = l.div`
     border-width: 4px;
   }
 `,
-    Wt = e => {
+    Bt = e => {
         let n = "";
         return e.forEach((r, i) => {
             n += r, i + 1 !== e.length && (n += ", ")
@@ -1670,11 +1649,11 @@ const La = l.div`
   transition: background 0.25s;
 `,
     Ns = l.div`
-  ${F.black};
+  ${B.black};
   font-size: ${e=>e.large?34:23}px;
 `,
-    Wa = l.div`
-  ${F.bold};
+    Ba = l.div`
+  ${B.bold};
   font-size: ${e=>e.large?30:20}px;
   margin-left: 7px;
   margin-right: 7px;
@@ -1685,18 +1664,18 @@ const La = l.div`
     Ms = l.div`
   font-size: ${e=>e.large?30:20}px;
 `,
-    Va = l.div`
+    La = l.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: 10px;
   margin-right: 10px;
 `,
-    za = l.div`
+    Wa = l.div`
   display: flex;
   align-items: center;
 `,
-    Ha = l.div`
+    Va = l.div`
   height: ${e=>e.large?37:25}px;
   width: ${e=>e.large?37:25}px;
   border-radius: 4px;
@@ -1706,16 +1685,16 @@ const La = l.div`
   align-items: center;
   justify-content: center;
 `,
-    Ga = l.div`
+    za = l.div`
   font-size: ${e=>e.large?37:25}px;
-  ${F.bold};
+  ${B.bold};
 `,
-    Ua = l.div`
+    Ha = l.div`
   font-size: ${e=>e.large?24:16}px;
   text-align: center;
 `,
-    Bs = "takes the lead";
-let qa = class extends c.Component {
+    Fs = "takes the lead";
+let Ga = class extends c.Component {
     constructor() {
         super(...arguments), this.state = {
             drawerVisible: !1
@@ -1725,7 +1704,7 @@ let qa = class extends c.Component {
             drawerVisible: !1
         }), this.getTeamPlayerNames = () => {
             const n = this.props.data;
-            return Wt(n.players)
+            return Bt(n.players)
         }, this.getColors = () => {
             const n = this.props.data,
                 {
@@ -1751,16 +1730,16 @@ let qa = class extends c.Component {
             if (this.props.hidden) return;
             if (this.props.isPlayer) {
                 const r = this.props.data;
-                Qt({
+                qt({
                     name: _n() ? "Someone" : r.name,
-                    action: Bs,
+                    action: Fs,
                     customTextColor: C.LightSuccessGreen
                 })
             } else {
                 const r = this.props.data;
-                Qt({
+                qt({
                     name: r.id,
-                    action: Bs,
+                    action: Fs,
                     customTextColor: C.LightSuccessGreen
                 })
             }
@@ -1784,7 +1763,7 @@ let qa = class extends c.Component {
                     children: [t.jsxs(Ns, {
                         large: this.props.large,
                         children: [n, "."]
-                    }), t.jsx(Wa, {
+                    }), t.jsx(Ba, {
                         large: this.props.large,
                         children: this.props.hideName ? "Someone" : i.name
                     }), t.jsx(Ms, {
@@ -1799,10 +1778,10 @@ let qa = class extends c.Component {
                     placement: "bottom",
                     height: "auto",
                     rootStyle: {
-                        fontFamily: F.fontFamilyName,
+                        fontFamily: B.fontFamilyName,
                         color: C.Black
                     },
-                    children: t.jsx(Fa, {
+                    children: t.jsx(Ma, {
                         close: this.closeDrawer,
                         playerId: i.id,
                         playerName: i.name,
@@ -1819,9 +1798,9 @@ let qa = class extends c.Component {
             children: [t.jsxs(Ns, {
                 large: this.props.large,
                 children: [n, "."]
-            }), t.jsxs(Va, {
-                children: [t.jsxs(za, {
-                    children: [t.jsx(Ha, {
+            }), t.jsxs(La, {
+                children: [t.jsxs(Wa, {
+                    children: [t.jsx(Va, {
                         large: this.props.large,
                         background: js(r.id),
                         children: r.icon && t.jsx("i", {
@@ -1830,13 +1809,13 @@ let qa = class extends c.Component {
                                 color: r.color.text
                             }
                         })
-                    }), t.jsx(Ga, {
+                    }), t.jsx(za, {
                         large: this.props.large,
-                        children: t.jsx(B, {
+                        children: t.jsx(F, {
                             text: r.id
                         })
                     })]
-                }), t.jsx(Ua, {
+                }), t.jsx(Ha, {
                     large: this.props.large,
                     children: this.getTeamPlayerNames()
                 })]
@@ -1847,16 +1826,16 @@ let qa = class extends c.Component {
         })
     }
 };
-var Ya = Object.getOwnPropertyDescriptor,
-    Qa = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? Ya(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var Ua = Object.getOwnPropertyDescriptor,
+    qa = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? Ua(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-const Vt = e => {
+const Lt = e => {
         const n = le() ? "stones" : "balance";
         return e.slice().sort((r, i) => r[n] === i[n] ? 0 : r[n] > i[n] ? -1 : 1)
     },
-    Ja = l.div`
+    Ya = l.div`
   max-width: ${e=>e.customWidth?e.customMaxWidth:"420px"};
   ${e=>e.customWidth?"width:"+e.customWidth+";":null} min-width: 420px;
   flex: 1;
@@ -1864,12 +1843,12 @@ const Vt = e => {
   ${e=>e.blockScroll?null:"overflow: scroll;"} display: flex;
   flex-direction: column;
 `;
-let Kt = class extends c.Component {
+let Qt = class extends c.Component {
     render() {
         const n = st(),
-            r = Vt(n ? this.props.players.teams : this.props.players.players),
+            r = Lt(n ? this.props.players.teams : this.props.players.players),
             i = Ee();
-        return t.jsx(Ja, {
+        return t.jsx(Ya, {
             customWidth: this.props.customWidth,
             customMaxWidth: this.props.customMaxWidth,
             blockScroll: this.props.blockScroll,
@@ -1884,13 +1863,13 @@ let Kt = class extends c.Component {
                     style: {
                         paddingTop: 11
                     },
-                    children: r.map((s, o) => this.props.hideTop3 && o + 1 <= 3 ? null : t.jsx(qa, {
+                    children: r.map((s, o) => this.props.hideTop3 && o + 1 <= 3 ? null : t.jsx(Ga, {
                         position: o + 1,
                         data: s,
                         isPlayer: !n,
                         gameGoal: this.props.gameOptions.goal,
                         themes: this.props.gameValues.availableThemes,
-                        hidden: !this.props.showHidden && s.activePowerups.includes(Na.undercover),
+                        hidden: !this.props.showHidden && s.activePowerups.includes(Pa.undercover),
                         hideName: !!(_n() && this.props.gameValues.currentRoute === V.gameplay),
                         hideBalance: this.props.forceShowBalance ? !1 : this.props.gameValues.currentRoute === V.gameplay ? !!(_n() || this.props.gameOptions.specialGameType.includes(no)) : !1
                     }, s.id || s.name))
@@ -1899,41 +1878,41 @@ let Kt = class extends c.Component {
         })
     }
 };
-Kt = Qa([I("players", "gameOptions", "gameValues"), j], Kt);
-const Ka = l.div`
+Qt = qa([I("players", "gameOptions", "gameValues"), j], Qt);
+const Qa = l.div`
   color: ${C.White};
   margin-bottom: 5px;
   font-size: 21px;
   padding: 5px;
   box-sizing: border-box;
 `,
-    Za = l.span`
+    Ja = l.span`
   color: ${e=>e.customColor?e.customColor:C.Gold};
   font-weight: 800;
 `;
-class Xa extends c.Component {
+class Ka extends c.Component {
     render() {
-        return t.jsxs(Ka, {
+        return t.jsxs(Qa, {
             style: {
-                fontFamily: this.props.customFont || F.fontFamilyName
+                fontFamily: this.props.customFont || B.fontFamilyName
             },
-            children: [t.jsx(Za, {
+            children: [t.jsx(Ja, {
                 customColor: this.props.item.customTextColor,
                 children: this.props.item.name + " "
             }), t.jsx("span", {
-                children: t.jsx(B, {
+                children: t.jsx(F, {
                     text: this.props.item.action
                 })
             })]
         })
     }
 }
-var el = Object.getOwnPropertyDescriptor,
-    tl = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? el(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var Za = Object.getOwnPropertyDescriptor,
+    Xa = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? Za(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-const nl = l.div`
+const el = l.div`
   height: 45%;
   border-radius: 8px;
   margin-bottom: 10px;
@@ -1944,7 +1923,7 @@ const nl = l.div`
 `;
 let kn = class extends c.Component {
     constructor() {
-        super(...arguments), this.getContent = () => this.props.withoutContainer ? this.getFeed() : t.jsx(nl, {
+        super(...arguments), this.getContent = () => this.props.withoutContainer ? this.getFeed() : t.jsx(el, {
             children: this.getFeed()
         }), this.getFeed = () => {
             const e = this.props.gameValues.activityItems.slice().reverse();
@@ -1953,7 +1932,7 @@ let kn = class extends c.Component {
                 style: {
                     padding: 8
                 },
-                children: e.map(n => t.jsx(Xa, {
+                children: e.map(n => t.jsx(Ka, {
                     customFont: this.props.customFont,
                     item: n
                 }, "ai-" + n.key))
@@ -1964,7 +1943,7 @@ let kn = class extends c.Component {
         return this.getContent()
     }
 };
-kn = tl([I("gameValues"), j], kn);
+kn = Xa([I("gameValues"), j], kn);
 const rn = e => t.jsx(sn, {
     children: t.jsx(kn, {
         ...e
@@ -1974,14 +1953,14 @@ var It = {},
     Dt = {
         exports: {}
     },
-    sl = Dt.exports,
-    Fs;
+    tl = Dt.exports,
+    Bs;
 
-function rl() {
-    return Fs || (Fs = 1, (function(e, n) {
+function nl() {
+    return Bs || (Bs = 1, (function(e, n) {
         (function(r, i) {
             i(n)
-        })(sl, (function(r) {
+        })(tl, (function(r) {
             var i = function() {
                     return i = Object.assign || function(o) {
                         for (var a, d = 1, m = arguments.length; d < m; d++)
@@ -2095,13 +2074,13 @@ function rl() {
 }
 var Ls;
 
-function il() {
+function sl() {
     if (Ls) return It;
     Ls = 1, Object.defineProperty(It, "__esModule", {
         value: !0
     });
     var e = tn(),
-        n = rl();
+        n = nl();
 
     function r(b, x) {
         var h = b == null ? null : typeof Symbol < "u" && b[Symbol.iterator] || b["@@iterator"];
@@ -2299,8 +2278,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         K = function(x) {
             var h = Object.fromEntries(Object.entries(x).filter(function(De) {
                     var _t = E(De, 2),
-                        Ht = _t[1];
-                    return Ht !== void 0
+                        Vt = _t[1];
+                    return Vt !== void 0
                 })),
                 p = e.useMemo(function() {
                     return s(s({}, J), h)
@@ -2324,8 +2303,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 $e = y(function(De) {
                     var _t = dt.current;
                     if (_t && !De) return _t;
-                    var Ht = ut();
-                    return dt.current = Ht, Ht
+                    var Vt = ut();
+                    return dt.current = Vt, Vt
                 }),
                 pt = y(function() {
                     var De = function() {
@@ -2445,16 +2424,16 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         };
     return It.default = ee, It.useCountUp = K, It
 }
-var ol = il();
-const Nr = fs(ol);
-var al = Object.getOwnPropertyDescriptor,
-    ll = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? al(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var rl = sl();
+const Nr = fs(rl);
+var il = Object.getOwnPropertyDescriptor,
+    ol = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? il(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
 const Ws = e => ne(e),
     Vs = e => `${e} ${ie("stone",e)}`,
-    cl = l.div`
+    al = l.div`
   width: 100%;
   height: 100%;
   position: absolute;
@@ -2463,9 +2442,9 @@ const Ws = e => ne(e),
   display: flex;
   justify-content: center;
   align-items: center;
-  ${F.black};
+  ${B.black};
 `,
-    dl = l.div`
+    ll = l.div`
   font-size: ${e=>e.fontSize}px;
   background: rgba(0, 0, 0, 0.9);
   padding: 4vh 5vw;
@@ -2474,7 +2453,7 @@ const Ws = e => ne(e),
   box-shadow: ${We.basic};
   z-index: 5;
 `,
-    ul = (e, n, r) => (e + n) / 2 / (r + (r < 3 ? 4 : 2)) * .9;
+    cl = (e, n, r) => (e + n) / 2 / (r + (r < 3 ? 4 : 2)) * .9;
 let In = class extends c.Component {
     constructor() {
         super(...arguments), this.state = {
@@ -2493,9 +2472,9 @@ let In = class extends c.Component {
     }
     render() {
         const e = le() ? Vs : Ws,
-            n = ul(this.props.width, this.props.height, e(this.state.currentBalance).length);
-        return t.jsx(cl, {
-            children: t.jsx(dl, {
+            n = cl(this.props.width, this.props.height, e(this.state.currentBalance).length);
+        return t.jsx(al, {
+            children: t.jsx(ll, {
                 fontSize: n,
                 children: t.jsx(Nr, {
                     start: this.state.lastBalance,
@@ -2507,11 +2486,11 @@ let In = class extends c.Component {
         })
     }
 };
-In = ll([I("gameOptions"), j], In);
+In = ol([I("gameOptions"), j], In);
 const D = c.createContext(u),
-    pl = c.lazy(() => Ni(() => import("./Chart.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41]))),
-    hl = "gimkit-balance-tracker",
-    ml = l.div`
+    dl = c.lazy(() => Ni(() => import("./Chart.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43]))),
+    ul = "gimkit-balance-tracker",
+    pl = l.div`
   height: 55%;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -2534,15 +2513,15 @@ const D = c.createContext(u),
     stroke: white !important;
   }
 `,
-    fl = j(() => {
+    hl = j(() => {
         const {
             innerWidth: e,
             innerHeight: n
         } = ro(), {
             players: r
         } = c.useContext(D), i = le() ? r.totalStones : r.totalBalance;
-        return t.jsxs(ml, {
-            id: hl,
+        return t.jsxs(pl, {
+            id: ul,
             children: [t.jsx(sn, {
                 children: t.jsx(In, {
                     width: e,
@@ -2551,13 +2530,13 @@ const D = c.createContext(u),
                 })
             }), t.jsx(c.Suspense, {
                 fallback: null,
-                children: t.jsx(pl, {
+                children: t.jsx(dl, {
                     balance: i
                 })
             })]
         })
     }),
-    gl = l.div`
+    ml = l.div`
   min-height: 0;
   flex: 1;
   min-height: 0;
@@ -2566,29 +2545,29 @@ const D = c.createContext(u),
   justify-content: space-between;
   overflow: hidden;
 `;
-let xl = class extends c.Component {
+let fl = class extends c.Component {
     render() {
-        return t.jsxs(gl, {
-            children: [t.jsx(fl, {}), t.jsx(rn, {})]
+        return t.jsxs(ml, {
+            children: [t.jsx(hl, {}), t.jsx(rn, {})]
         })
     }
 };
-const vl = l.div`
+const gl = l.div`
   min-height: 0;
   flex: 1;
   display: flex;
   min-height: 0;
 `;
-let yl = class extends c.Component {
+let xl = class extends c.Component {
     render() {
-        return t.jsxs(vl, {
-            children: [t.jsx(Kt, {
+        return t.jsxs(gl, {
+            children: [t.jsx(Qt, {
                 forceShowBalance: le()
-            }), t.jsx(xl, {})]
+            }), t.jsx(fl, {})]
         })
     }
 };
-class bl extends c.Component {
+class vl extends c.Component {
     render() {
         const n = this.props,
             r = n.currentHealth / n.maxHealth * 100;
@@ -2629,81 +2608,81 @@ class bl extends c.Component {
                 strokeColor: "#66bb6a"
             }), t.jsxs("div", {
                 style: {
-                    fontFamily: F.fontFamilyName,
+                    fontFamily: B.fontFamilyName,
                     fontWeight: "bold",
                     fontSize: 18,
                     opacity: .7,
                     marginTop: -8
                 },
-                children: [Qe(n.currentHealth), " /", " ", Qe(n.maxHealth), " ", t.jsx(B, {
+                children: [Qe(n.currentHealth), " /", " ", Qe(n.maxHealth), " ", t.jsx(F, {
                     text: "health"
                 })]
             })]
         })
     }
 }
-var wl = Object.getOwnPropertyDescriptor,
-    jl = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? wl(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var yl = Object.getOwnPropertyDescriptor,
+    bl = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? yl(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-const Cl = "halloween-human",
+const wl = "halloween-human",
     Mr = "halloween-zombie",
-    Sl = e => e === Cl ? "#003c8f" : e === Mr ? "#494949" : C.Black,
-    Br = e => _(e === Mr ? "zombie-head.svg" : "support.svg");
+    jl = e => e === wl ? "#003c8f" : e === Mr ? "#494949" : C.Black,
+    Fr = e => _(e === Mr ? "zombie-head.svg" : "support.svg");
 let Rn = class extends c.Component {
     render() {
-        return t.jsx($l, {
-            children: this.props.entities.defendingHomebase.map(e => t.jsx(bl, {
-                backgroundColor: Sl(e.id),
+        return t.jsx(Cl, {
+            children: this.props.entities.defendingHomebase.map(e => t.jsx(vl, {
+                backgroundColor: jl(e.id),
                 color: C.White,
                 maxHealth: e.maxHealth,
                 currentHealth: e.health,
                 name: e.name,
-                image: Br(e.id)
+                image: Fr(e.id)
             }, `base-${e.id}`))
         })
     }
 };
-Rn = jl([I("entities"), j], Rn);
-const $l = l.div`
+Rn = bl([I("entities"), j], Rn);
+const Cl = l.div`
   width: 100%;
   height: 100%;
   display: flex;
 `,
-    Tl = "'Bowlby One SC', cursive",
-    El = () => (Mi(() => {
+    Sl = "'Bowlby One SC', cursive",
+    $l = () => (Mi(() => {
         qe("https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap")
-    }), t.jsxs(Ol, {
-        children: [t.jsx(Jt, {}), t.jsxs(_l, {
-            children: [t.jsx(kl, {
+    }), t.jsxs(Tl, {
+        children: [t.jsx(Yt, {}), t.jsxs(El, {
+            children: [t.jsx(Ol, {
                 children: t.jsx(Rn, {})
-            }), t.jsx(Il, {
+            }), t.jsx(_l, {
                 children: t.jsx(rn, {
                     withoutContainer: !0
                 })
             })]
         })]
     })),
-    Ol = l.div`
+    Tl = l.div`
   height: 100vh;
   width: 100%;
   display: flex;
   background: #151515;
   flex-direction: column;
 `,
-    _l = l.div`
+    El = l.div`
   flex: 1;
   height: 100%;
   display: flex;
   flex-direction: column;
 `,
-    kl = l.div`
-  font-family: ${Tl};
+    Ol = l.div`
+  font-family: ${Sl};
   height: 65%;
   width: 100%;
 `,
-    Il = l.div`
+    _l = l.div`
   height: 35%;
   width: 100%;
   box-sizing: border-box;
@@ -2713,13 +2692,13 @@ const $l = l.div`
   background: rgba(0, 0, 0, 0.6);
   overflow: hidden;
 `,
-    Rl = () => t.jsx(Dl, {
+    kl = () => t.jsx(Il, {
         children: t.jsxs("div", {
             className: "lavaBackground",
             children: [t.jsx("span", {}), t.jsx("span", {}), t.jsx("span", {}), t.jsx("span", {}), t.jsx("span", {}), t.jsx("span", {}), t.jsx("span", {}), t.jsx("span", {}), t.jsx("span", {}), t.jsx("span", {}), t.jsx("span", {}), t.jsx("span", {}), t.jsx("span", {}), t.jsx("span", {}), t.jsx("span", {}), t.jsx("span", {}), t.jsx("span", {}), t.jsx("span", {}), t.jsx("span", {})]
         })
     }),
-    Dl = l.div`
+    Il = l.div`
   @keyframes move {
     100% {
       transform: translate3d(0, 0, 1px) rotate(360deg);
@@ -2920,22 +2899,22 @@ const $l = l.div`
     box-shadow: 54vmin 0 7.411246749707873vmin currentColor;
   }
 `;
-var Pl = Object.getOwnPropertyDescriptor,
-    Al = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? Pl(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var Rl = Object.getOwnPropertyDescriptor,
+    Dl = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? Rl(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
 let Dn = class extends c.Component {
     render() {
-        return !this.props.entities.lava || !this.props.entities.lava.lavaIncreasePaused ? null : t.jsxs(Nl, {
-            children: [t.jsx(Ml, {}), t.jsx(Bl, {
+        return !this.props.entities.lava || !this.props.entities.lava.lavaIncreasePaused ? null : t.jsxs(Pl, {
+            children: [t.jsx(Al, {}), t.jsx(Nl, {
                 children: "Lava Paused!"
             })]
         })
     }
 };
-Dn = Al([I("entities"), j], Dn);
-const Nl = l.div.attrs({
+Dn = Dl([I("entities"), j], Dn);
+const Pl = l.div.attrs({
         className: "animated fadeIn"
     })`
   position: absolute;
@@ -2948,20 +2927,20 @@ const Nl = l.div.attrs({
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: ${F.fontFamilyName};
+  font-family: ${B.fontFamilyName};
 `,
-    Ml = l.i.attrs({
+    Al = l.i.attrs({
         className: "fas fa-pause-circle"
     })`
   font-size: 100px;
   color: #f5f5f5;
 `,
-    Bl = l.div`
+    Nl = l.div`
   margin-left: 30px;
   font-size: 57px;
   font-weight: bold;
 `;
-var Fl = class extends c.Component {
+var Ml = class extends c.Component {
     constructor(e) {
         super(e), this.t = () => this.i.current.offsetWidth, this.h = () => this.i.current.offsetHeight, this.i = Rt.createRef(), this.state = {
             path: ""
@@ -3060,7 +3039,7 @@ var Fl = class extends c.Component {
         }, T))))
     }
 };
-const Ll = {
+const Fl = {
         fill: "#fff",
         paused: !1,
         height: 20,
@@ -3068,16 +3047,16 @@ const Ll = {
         speed: .15,
         points: 3
     },
-    Wl = e => {
+    Bl = e => {
         let {
             options: n,
             ...r
         } = e;
-        return Rt.createElement(Fl, Object.assign({}, Ll, n, r))
+        return Rt.createElement(Ml, Object.assign({}, Fl, n, r))
     },
-    Vl = Wl,
+    Ll = Bl,
     Cs = 156,
-    zl = (e, n) => {
+    Wl = (e, n) => {
         if (n / e > .8) return Math.round(e * 1.2);
         const r = Math.round(e).toString().length;
         let i = "";
@@ -3085,33 +3064,33 @@ const Ll = {
         let s = Number(i) + 1;
         return s *= 1.1, Math.round(s)
     },
-    Hl = () => !!(typeof window < "u" && window && window.navigator && navigator.userAgent.indexOf("Firefox") > 0),
-    Fr = e => {
+    Vl = () => !!(typeof window < "u" && window && window.navigator && navigator.userAgent.indexOf("Firefox") > 0),
+    Br = e => {
         const n = (s, o) => (Math.pow(10, o) + ~~s).toString().substring(1),
             r = Math.floor(e / 60),
             i = e % 60;
         return `${n(r,2)}:${n(i,2)}`
     },
-    Gl = e => {
+    zl = e => {
         const {
             buildHeight: n,
             lavaHeight: r,
             seconds: i
-        } = e, s = Hl();
+        } = e, s = Vl();
         c.useEffect(() => {
             n < r && Oe()
         }, [r]);
-        const o = zl(n, r),
+        const o = Wl(n, r),
             a = Math.round(n / o * 100),
             d = Math.round(r / o * 100);
         return t.jsx(t.Fragment, {
-            children: t.jsxs(Ul, {
+            children: t.jsxs(Hl, {
                 children: [t.jsxs("div", {
                     className: "maxWidth",
                     style: {
                         transform: `translateY(${Cs}px)`
                     },
-                    children: [t.jsx(Vl, {
+                    children: [t.jsx(Ll, {
                         fill: "rgba(244,114,9,0.8)",
                         paused: !1,
                         options: {
@@ -3136,13 +3115,13 @@ const Ll = {
                             background: "linear-gradient(180deg, rgba(244,114,9,0.8) 0%, rgba(208,8,8,0.8) 100%)"
                         }
                     })]
-                }), t.jsx(Kl, {
-                    children: t.jsxs(Zl, {
-                        children: [t.jsxs(ec, {
-                            children: [t.jsxs(tc, {
+                }), t.jsx(Ql, {
+                    children: t.jsxs(Jl, {
+                        children: [t.jsxs(Zl, {
+                            children: [t.jsxs(Xl, {
                                 children: [Qe(n), " ", ie("block", n)]
-                            }), t.jsxs(nc, {
-                                children: [t.jsx(rc, {}), t.jsx(sc, {
+                            }), t.jsxs(ec, {
+                                children: [t.jsx(nc, {}), t.jsx(tc, {
                                     initial: {
                                         height: 0
                                     },
@@ -3154,17 +3133,17 @@ const Ll = {
                                     }
                                 })]
                             })]
-                        }), t.jsx(Xl, {
+                        }), t.jsx(Kl, {
                             children: t.jsx(rn, {
                                 withoutContainer: !0
                             })
                         })]
                     })
-                }), t.jsx(ql, {
-                    children: t.jsxs(Yl, {
-                        children: [t.jsx(Ql, {
-                            children: Fr(i)
-                        }), t.jsxs(Jl, {
+                }), t.jsx(Gl, {
+                    children: t.jsxs(Ul, {
+                        children: [t.jsx(ql, {
+                            children: Br(i)
+                        }), t.jsxs(Yl, {
                             children: [t.jsx("b", {
                                 children: "Game Code:"
                             }), " ", e.gameCode]
@@ -3174,7 +3153,7 @@ const Ll = {
             })
         })
     },
-    Ul = l.div`
+    Hl = l.div`
   width: calc(100% - 350px);
   height: 100%;
   display: flex;
@@ -3182,7 +3161,7 @@ const Ll = {
   position: relative;
   overflow: hidden;
 `,
-    ql = l.div`
+    Gl = l.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -3190,7 +3169,7 @@ const Ll = {
   display: flex;
   justify-content: center;
 `,
-    Yl = l.div`
+    Ul = l.div`
   background: rgba(0, 0, 0, 0.7);
   min-width: 300px;
   padding: 15px;
@@ -3203,16 +3182,16 @@ const Ll = {
   flex-direction: column;
   text-align: center;
 `,
-    Ql = l.div`
+    ql = l.div`
   font-size: 70px;
   line-height: 70px;
 `,
-    Jl = l.div`
+    Yl = l.div`
   font-size: 21px;
   color: rgba(255, 255, 255, 0.8);
   margin-top: 5px;
 `,
-    Kl = l.div`
+    Ql = l.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -3221,13 +3200,13 @@ const Ll = {
   display: flex;
   flex-direction: column-reverse;
 `,
-    Zl = l.div`
+    Jl = l.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: flex-end;
 `,
-    Xl = l.div`
+    Kl = l.div`
   width: 330px;
   flex-shrink: 0;
   margin-left: 50px;
@@ -3240,7 +3219,7 @@ const Ll = {
   margin-right: 50px;
   height: 250px;
 `,
-    ec = l.div`
+    Zl = l.div`
   transform: translateY(${Cs}px);
   width: 250px;
   margin-left: 50px;
@@ -3250,12 +3229,12 @@ const Ll = {
   flex-shrink: 0;
   z-index: -1;
 `,
-    tc = l.div`
+    Xl = l.div`
   font-size: 18px;
   margin-bottom: 5px;
   font-weight: bold;
 `,
-    nc = l.div`
+    ec = l.div`
   background: url(${_("brickTexture.jpg")});
   background-size: 168px;
   border-top-left-radius: 20px;
@@ -3267,10 +3246,10 @@ const Ll = {
   border-bottom-style: none;
   width: 100%;
 `,
-    sc = l(U.div)`
+    tc = l(U.div)`
   width: 100%;
 `,
-    rc = l.div`
+    nc = l.div`
   width: 100%;
   height: ${Cs-6}px;
   display: flex;
@@ -3278,22 +3257,22 @@ const Ll = {
   align-items: center;
   flex-direction: column;
 `,
-    ft = e => t.jsxs(ic, {
-        children: [t.jsxs(oc, {
-            children: [t.jsx(ac, {
+    ft = e => t.jsxs(sc, {
+        children: [t.jsxs(rc, {
+            children: [t.jsx(ic, {
                 className: e.icon
-            }), t.jsx(lc, {
+            }), t.jsx(oc, {
                 children: e.title
             })]
-        }), t.jsxs(cc, {
-            children: [t.jsx(dc, {
+        }), t.jsxs(ac, {
+            children: [t.jsx(lc, {
                 children: Qe(e.value)
-            }), e.label ? t.jsx(uc, {
+            }), e.label ? t.jsx(cc, {
                 children: e.label
             }) : null, e.footer ? e.footer : null]
         })]
     }),
-    ic = l.div`
+    sc = l.div`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -3304,7 +3283,7 @@ const Ll = {
   border-width: 1px;
   border-color: rgba(255, 255, 255, 0.8);
 `,
-    oc = l.div`
+    rc = l.div`
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -3314,21 +3293,21 @@ const Ll = {
   padding: 10px;
   padding-left: 20px;
 `,
-    ac = l.i`
+    ic = l.i`
   font-size: 15px;
   line-height: 15px;
   margin-right: 8px;
 `,
-    lc = l.div`
+    oc = l.div`
   font-size: 14px;
   line-height: 14px;
   font-weight: bold;
 `,
-    cc = l.div`
+    ac = l.div`
   width: 100%;
   padding: 20px;
 `,
-    dc = l.div`
+    lc = l.div`
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -3337,12 +3316,12 @@ const Ll = {
   line-height: 32px;
   font-weight: bold;
 `,
-    uc = l.div`
+    cc = l.div`
   font-size: 16px;
   line-height: 16px;
   margin-top: 4px;
 `,
-    pc = e => {
+    dc = e => {
         const n = () => {
             Ae(G.hostIncreaseLavaHeight, {
                 amount: .1
@@ -3351,8 +3330,8 @@ const Ll = {
                 placement: "bottomRight"
             })
         };
-        return t.jsx(hc, {
-            children: t.jsxs(mc, {
+        return t.jsx(uc, {
+            children: t.jsxs(pc, {
                 children: [t.jsx(ft, {
                     icon: "fas fa-volcano",
                     title: "Lava Height",
@@ -3368,7 +3347,7 @@ const Ll = {
                         }), t.jsx(Q, {
                             onClick: n,
                             block: !0,
-                            icon: t.jsx($o, {}),
+                            icon: t.jsx(To, {}),
                             type: "primary",
                             children: "Increase Lava Height by 10%"
                         })]
@@ -3407,7 +3386,7 @@ const Ll = {
             })
         })
     },
-    hc = l.div`
+    uc = l.div`
   width: 350px;
   height: 100%;
   overflow-y: auto;
@@ -3415,15 +3394,15 @@ const Ll = {
   border-left-width: 5px;
   border-left-color: rgba(0, 0, 0, 0.2);
 `,
-    mc = l.div`
+    pc = l.div`
   width: 100%;
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 25px;
 `;
-var fc = Object.getOwnPropertyDescriptor,
-    gc = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? fc(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var hc = Object.getOwnPropertyDescriptor,
+    mc = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? hc(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
 let Pn = class extends c.Component {
@@ -3434,31 +3413,31 @@ let Pn = class extends c.Component {
         this.sound = z(g.lava.lavaRumble, {})
     }
     componentWillUnmount() {
-        this.sound && Ta(g.lava.lavaRumble)
+        this.sound && Sa(g.lava.lavaRumble)
     }
     render() {
         const {
             lava: e
         } = this.props.entities;
         return e ? t.jsxs(t.Fragment, {
-            children: [t.jsxs(xc, {
-                children: [t.jsx(Gl, {
+            children: [t.jsxs(fc, {
+                children: [t.jsx(zl, {
                     buildHeight: e.buildHeight,
                     lavaHeight: e.lavaHeight,
                     seconds: e.secondsLasted,
                     gameCode: this.props.gameValues.gameCode
-                }), t.jsx(pc, {
+                }), t.jsx(dc, {
                     buildHeight: e.buildHeight,
                     lavaHeight: e.lavaHeight,
                     lavaSpeed: e.lavaIncreaseSpeed,
                     buildsInProgress: e.buildsInProgress
                 })]
-            }), t.jsx(Rl, {}), t.jsx(Dn, {})]
+            }), t.jsx(kl, {}), t.jsx(Dn, {})]
         }) : null
     }
 };
-Pn = gc([I("entities", "gameValues"), j], Pn);
-const xc = l.div.attrs({
+Pn = mc([I("entities", "gameValues"), j], Pn);
+const fc = l.div.attrs({
     className: "animated fadeIn"
 })`
   height: 100vh;
@@ -3466,11 +3445,11 @@ const xc = l.div.attrs({
   background: transparent;
   z-index: 2;
   display: flex;
-  font-family: ${F.fontFamilyName};
+  font-family: ${B.fontFamilyName};
 `;
 class Lr extends c.Component {
     render() {
-        return t.jsxs(vc, {
+        return t.jsxs(gc, {
             children: [t.jsx("div", {
                 className: "stars"
             }), t.jsx("div", {
@@ -3481,7 +3460,7 @@ class Lr extends c.Component {
         })
     }
 }
-const vc = l.div`
+const gc = l.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -3556,9 +3535,9 @@ const vc = l.div`
     Wr = () => {
         u.imposter.status === be.questions && (u.imposter.status = be.discussion)
     };
-var yc = Object.getOwnPropertyDescriptor,
-    bc = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? yc(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var xc = Object.getOwnPropertyDescriptor,
+    vc = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? xc(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
 let An = class extends c.Component {
@@ -3574,26 +3553,26 @@ let An = class extends c.Component {
     }
     render() {
         const e = this.props.imposter.people.filter(n => n.markedAsClear);
-        return t.jsxs(wc, {
-            children: [t.jsxs(jc, {
-                children: [this.canShowClearList() ? t.jsx(Sc, {
-                    children: t.jsx(B, {
+        return t.jsxs(yc, {
+            children: [t.jsxs(bc, {
+                children: [this.canShowClearList() ? t.jsx(jc, {
+                    children: t.jsx(F, {
                         text: Pe.clearList
                     })
-                }) : null, e.map(n => t.jsx($c, {
+                }) : null, e.map(n => t.jsx(Cc, {
                     children: n.name
                 }, `clear-${n.id}`))]
-            }), t.jsxs(Cc, {
+            }), t.jsxs(wc, {
                 children: [t.jsx(Q, {
                     size: "large",
                     block: !0,
                     type: "primary",
-                    icon: t.jsx(Oo, {}),
+                    icon: t.jsx(uo, {}),
                     style: {
                         marginBottom: 10
                     },
                     onClick: Wr,
-                    children: t.jsx(B, {
+                    children: t.jsx(F, {
                         text: "Call Meeting"
                     })
                 }), t.jsx(Q, {
@@ -3605,12 +3584,12 @@ let An = class extends c.Component {
                         background: C.BackgroundPurple,
                         borderColor: C.BackgroundPurple
                     },
-                    children: t.jsx(B, {
+                    children: t.jsx(F, {
                         text: "End Game Early (Impostors Win)"
                     })
-                }), t.jsxs(Tc, {
+                }), t.jsxs(Sc, {
                     children: [t.jsxs("b", {
-                        children: [t.jsx(B, {
+                        children: [t.jsx(F, {
                             text: "Game Code"
                         }), ":"]
                     }), " ", this.props.gameValues.gameCode]
@@ -3619,8 +3598,8 @@ let An = class extends c.Component {
         })
     }
 };
-An = bc([I("imposter", "gameValues", "gameOptions"), j], An);
-const wc = l.div`
+An = vc([I("imposter", "gameValues", "gameOptions"), j], An);
+const yc = l.div`
   width: 350px;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
@@ -3632,12 +3611,12 @@ const wc = l.div`
   border-color: rgba(255, 255, 255, 0.5);
   border-right-width: 2px;
 `,
-    jc = l.div`
+    bc = l.div`
   padding: 20px;
   flex: 1;
   overflow-y: auto;
 `,
-    Cc = l.div`
+    wc = l.div`
   flex-shrink: 0;
   padding: 20px;
   background: rgba(0, 0, 0, 0.2);
@@ -3645,13 +3624,13 @@ const wc = l.div`
   border-color: rgba(255, 255, 255, 0.5);
   border-width: 2px;
 `,
-    Sc = l.div`
+    jc = l.div`
   font-size: 44px;
   line-height: 44px;
   font-weight: bold;
   margin-bottom: 15px;
 `,
-    $c = l.div`
+    Cc = l.div`
   background: rgba(0, 0, 0, 0.4);
   padding: 14px;
   font-size: 16px;
@@ -3664,20 +3643,20 @@ const wc = l.div`
   margin-bottom: 10px;
   width: 100%;
 `,
-    Tc = l.div`
+    Sc = l.div`
   opacity: 0.9;
   font-size: 16px;
   margin-top: 10px;
   text-align: center;
 `;
-class Ec extends c.Component {
+class $c extends c.Component {
     render() {
-        return t.jsxs(Oc, {
-            children: [t.jsx(_c, {
-                children: t.jsx(B, {
+        return t.jsxs(Tc, {
+            children: [t.jsx(Ec, {
+                children: t.jsx(F, {
                     text: Pe.investigationLog
                 })
-            }), t.jsx(kc, {
+            }), t.jsx(Oc, {
                 children: t.jsx(rn, {
                     withoutContainer: !0,
                     customFont: Ct
@@ -3686,7 +3665,7 @@ class Ec extends c.Component {
         })
     }
 }
-const Oc = l.div`
+const Tc = l.div`
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -3694,13 +3673,13 @@ const Oc = l.div`
   margin-top: 35px;
   overflow: hidden;
 `,
-    _c = l.div`
+    Ec = l.div`
   font-size: 44px;
   line-height: 44px;
   font-weight: bold;
   margin-bottom: 15px;
 `,
-    kc = l.div`
+    Oc = l.div`
   flex: 1;
   background: rgba(0, 0, 0, 0.4);
   padding: 30px;
@@ -3713,16 +3692,16 @@ const Oc = l.div`
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 `;
-var Ic = Object.getOwnPropertyDescriptor,
-    Rc = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? Ic(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var _c = Object.getOwnPropertyDescriptor,
+    kc = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? _c(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-const un = e => t.jsxs(Pc, {
-    children: [t.jsx(Ac, {
+const un = e => t.jsxs(Rc, {
+    children: [t.jsx(Dc, {
         children: e.num
-    }), t.jsx(Nc, {
-        children: t.jsx(B, {
+    }), t.jsx(Pc, {
+        children: t.jsx(F, {
             text: `${ie(e.stat,e.num)} left`
         })
     })]
@@ -3736,7 +3715,7 @@ let Nn = class extends c.Component {
                 impostersLeft: r
             }
         } = this.props;
-        return t.jsxs(Dc, {
+        return t.jsxs(Ic, {
             children: [t.jsx(un, {
                 num: r,
                 stat: "impostor"
@@ -3750,8 +3729,8 @@ let Nn = class extends c.Component {
         })
     }
 };
-Nn = Rc([I("imposter"), j], Nn);
-const Dc = l.div`
+Nn = kc([I("imposter"), j], Nn);
+const Ic = l.div`
   flex-shrink: 0;
   padding: 0px 35px;
   border-radius: 8px;
@@ -3773,31 +3752,31 @@ const Dc = l.div`
   margin-left: 35px;
   margin-right: 35px;
 `,
-    Pc = l.div`
+    Rc = l.div`
   display: flex;
   height: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 `,
-    Ac = l.div`
+    Dc = l.div`
   font-size: 42px;
   line-height: 42px;
   font-weight: bold;
 `,
-    Nc = l.div`
+    Pc = l.div`
   font-size: 18px;
   line-height: 18px;
   margin-top: 10px;
 `;
-let Mc = class extends c.Component {
+let Ac = class extends c.Component {
     render() {
-        return t.jsxs(Bc, {
-            children: [t.jsx(Nn, {}), t.jsx(Ec, {})]
+        return t.jsxs(Nc, {
+            children: [t.jsx(Nn, {}), t.jsx($c, {})]
         })
     }
 };
-const Bc = l.div`
+const Nc = l.div`
   flex: 1;
   overflow: hidden;
   font-family: ${Ct};
@@ -3806,9 +3785,9 @@ const Bc = l.div`
   align-items: center;
   flex-direction: column;
 `;
-var Fc = Object.getOwnPropertyDescriptor,
-    Lc = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? Fc(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var Mc = Object.getOwnPropertyDescriptor,
+    Fc = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? Mc(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
 let Mn = class extends c.Component {
@@ -3833,33 +3812,33 @@ let Mn = class extends c.Component {
         this.checkForGameToEnd(), this.shouldGameEnd() || yt().fade(0, .27, 1e3)
     }
     render() {
-        return this.shouldGameEnd() ? null : t.jsx(Wc, {
-            children: t.jsxs(Vc, {
+        return this.shouldGameEnd() ? null : t.jsx(Bc, {
+            children: t.jsxs(Lc, {
                 className: "animated fadeIn",
-                children: [t.jsx(An, {}), t.jsx(Mc, {})]
+                children: [t.jsx(An, {}), t.jsx(Ac, {})]
             })
         })
     }
 };
-Mn = Lc([I("imposter"), j], Mn);
-const Wc = l.div`
+Mn = Fc([I("imposter"), j], Mn);
+const Bc = l.div`
   flex: 1;
   display: flex;
   flex-direction: column;
   max-height: 100vh;
   max-width: 100vw;
 `,
-    Vc = l.div`
+    Lc = l.div`
   flex: 1;
   display: flex;
   overflow: hidden;
 `;
-var zc = Object.getOwnPropertyDescriptor,
-    Hc = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? zc(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var Wc = Object.getOwnPropertyDescriptor,
+    Vc = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? Wc(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-let Bn = class extends c.Component {
+let Fn = class extends c.Component {
     constructor() {
         super(...arguments), this.startVoting = () => this.props.imposter.status = be.voting
     }
@@ -3882,15 +3861,15 @@ let Bn = class extends c.Component {
                 children: [t.jsx(Hr, {
                     src: _("discussion.svg")
                 }), t.jsx(Gr, {
-                    children: t.jsx(B, {
+                    children: t.jsx(F, {
                         text: Pe.discussionHeader
                     })
                 }), t.jsx(Ur, {
-                    children: t.jsx(B, {
+                    children: t.jsx(F, {
                         text: Pe.discussionDescription
                     })
                 }), t.jsx(qr, {}), t.jsx(Yr, {
-                    children: t.jsx(B, {
+                    children: t.jsx(F, {
                         text: Pe.discussionActionWaiting
                     })
                 }), t.jsx(Q, {
@@ -3907,7 +3886,7 @@ let Bn = class extends c.Component {
         })
     }
 };
-Bn = Hc([I("imposter"), j], Bn);
+Fn = Vc([I("imposter"), j], Fn);
 const Vr = l.div.attrs({
         className: "maxWidth maxHeight scroll-y flex hc vc"
     })`
@@ -3947,12 +3926,12 @@ const Vr = l.div.attrs({
   margin-bottom: 11px;
   font-size: 15px;
 `;
-var Gc = Object.getOwnPropertyDescriptor,
-    Uc = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? Gc(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var zc = Object.getOwnPropertyDescriptor,
+    Hc = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? zc(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-let Fn = class extends c.Component {
+let Bn = class extends c.Component {
     constructor() {
         super(...arguments), this.possibleVotes = () => this.props.imposter.people.filter(e => !e.votedOff).length, this.endVoting = () => {
             this.props.imposter.status = be.votingResult
@@ -3974,11 +3953,11 @@ let Fn = class extends c.Component {
                 children: [t.jsx(Hr, {
                     src: _("vote.svg")
                 }), t.jsx(Gr, {
-                    children: t.jsx(B, {
+                    children: t.jsx(F, {
                         text: Pe.voteHeader
                     })
                 }), t.jsx(Ur, {
-                    children: t.jsx(B, {
+                    children: t.jsx(F, {
                         text: Pe.voteDescription
                     })
                 }), t.jsx(qr, {}), t.jsx(Yr, {
@@ -3997,8 +3976,8 @@ let Fn = class extends c.Component {
         })
     }
 };
-Fn = Uc([I("imposter"), j], Fn);
-const qc = e => {
+Bn = Hc([I("imposter"), j], Bn);
+const Gc = e => {
     const [n, r] = c.useState(!1);
     return c.useEffect(() => {
         setTimeout(() => {
@@ -4027,7 +4006,7 @@ function fe(e) {
     return !(!Array.isArray(e) || e.length !== 3 || !Array.isArray(e[0]) || !Array.isArray(e[1]))
 }
 
-function Ut(e, n) {
+function Ht(e, n) {
     return [
         [], e.split(""), n
     ]
@@ -4039,11 +4018,11 @@ function Qr(e, n) {
     ]
 }
 
-function zt(e) {
+function Wt(e) {
     var n = e[0],
         r = e[1];
     return n.length > 0 ? !1 : r.reduce(function(i, s) {
-        return fe(s) && fe(e) && i ? zt(s) : i
+        return fe(s) && fe(e) && i ? Wt(s) : i
     }, !0)
 }
 
@@ -4058,7 +4037,7 @@ function Jr(e) {
 }
 
 function Kr(e) {
-    if (zt(e)) return e;
+    if (Wt(e)) return e;
     var n = e[0],
         r = e[1],
         i = e[2],
@@ -4075,16 +4054,16 @@ function Zr(e) {
     var n = e[0],
         r = e[1],
         i = r.reduce(function(o, a) {
-            return fe(a) && !zt(a) ? Zt(a) : o
+            return fe(a) && !Wt(a) ? Jt(a) : o
         }, void 0);
     if (i) return i;
     var s = n[n.length - 1];
     return s
 }
 
-function Zt(e) {
+function Jt(e) {
     var n = Zr(e);
-    return fe(n) ? Zt(n) : n
+    return fe(n) ? Jt(n) : n
 }
 
 function Ln(e) {
@@ -4098,7 +4077,7 @@ function Ln(e) {
             return a
         }),
         s = r[0];
-    if (fe(s) && !zt(s)) {
+    if (fe(s) && !Wt(s)) {
         var o = s[2];
         return [].concat(i, [
             [Ln(s), o]
@@ -4141,7 +4120,7 @@ function pe() {
     }, pe.apply(this, arguments)
 }
 
-function Yc(e, n) {
+function Uc(e, n) {
     if (e == null) return {};
     var r = {},
         i = Object.keys(e),
@@ -4150,7 +4129,7 @@ function Yc(e, n) {
     return r
 }
 
-function Qc(e, n) {
+function qc(e, n) {
     switch (e) {
         case "—":
         case "…":
@@ -4175,11 +4154,11 @@ var ei = function(n) {
     return c.createElement(c.Fragment, null, r)
 };
 
-function Jc(e) {
+function Yc(e) {
     return e.type === ei
 }
 
-function Kc(e) {
+function Qc(e) {
     return "ms" in e
 }
 
@@ -4191,13 +4170,13 @@ function ti(e, n) {
         return s && fe(s) ? ti(s, i.pace || n) : i.pace || n
     }
 }
-var Zc = function(n) {
+var Jc = function(n) {
     var r = n.children;
     return c.createElement(c.Fragment, null, r)
 };
 
-function Xc(e) {
-    return e.type === Zc
+function Kc(e) {
+    return e.type === Jc
 }
 
 function Wn(e) {
@@ -4206,7 +4185,7 @@ function Wn(e) {
         i = Zr(e),
         s = n[0],
         o = [];
-    return i && fe(i) && o.push.apply(o, Wn(i)), s && fe(s) && !zt(s) && o.push.apply(o, Wn(s)), r.onChar && o.push(r.onChar), o
+    return i && fe(i) && o.push.apply(o, Wn(i)), s && fe(s) && !Wt(s) && o.push.apply(o, Wn(s)), r.onChar && o.push(r.onChar), o
 }
 
 function ni(e) {
@@ -4216,7 +4195,7 @@ function ni(e) {
     }
 }
 
-function ed(e, n) {
+function Zc(e, n) {
     switch (n.type) {
         case "replace":
             return ni(n.windup);
@@ -4241,8 +4220,8 @@ function ed(e, n) {
     }
 }
 
-function td(e, n) {
-    var r = c.useReducer(ed, e, ni),
+function Xc(e, n) {
+    var r = c.useReducer(Zc, e, ni),
         i = r[0],
         s = i.windup,
         o = i.didFinishOnce,
@@ -4291,7 +4270,7 @@ function td(e, n) {
         })
     }, [n.skipped]), c.useEffect(function() {
         var S = Wn(s),
-            y = Zt(s);
+            y = Jt(s);
         S.length > 0 && y && S.forEach(function(R) {
             R(y)
         })
@@ -4308,8 +4287,8 @@ function td(e, n) {
         }
     }, [o, m, n]), c.useEffect(function() {
         if (!m) {
-            var S = ti(s) || Qc,
-                y = Zt(s),
+            var S = ti(s) || qc,
+                y = Jt(s),
                 R = Xr(s),
                 L = y ? S(y, R) : 0;
             return f.current = Date.now() + L, E.current !== !0 && (d.current = setTimeout(function() {
@@ -4330,7 +4309,7 @@ function td(e, n) {
         isFinished: m
     }
 }
-var nd = ["area", "base", "br", "col", "command", "embed", "hr", "img", "input", "keygen", "link", "meta", "param", "source", "track", "wbr"];
+var ed = ["area", "base", "br", "col", "command", "embed", "hr", "img", "input", "keygen", "link", "meta", "param", "source", "track", "wbr"];
 
 function si(e) {
     var n = Hs(e) ? e[1] : e[2],
@@ -4347,20 +4326,20 @@ function si(e) {
         }
         return [].concat(o, [si(a)])
     }, []);
-    return typeof n.element == "string" && nd.includes(n.element) ? c.createElement(i, Object.assign({
+    return typeof n.element == "string" && ed.includes(n.element) ? c.createElement(i, Object.assign({
         key: n.key
     }, n.props)) : c.createElement(i, Object.assign({
         key: n.key
     }, n.props), s)
 }
-var sd = function() {
+var td = function() {
     return null
 };
 
-function rd(e) {
-    return e.type === sd
+function nd(e) {
+    return e.type === td
 }
-var id = c.createContext({
+var sd = c.createContext({
     skip: function() {
         console.warn("Tried to use the useSkip hook outside of a WindupChildren component!!")
     },
@@ -4382,19 +4361,19 @@ function ri(e, n) {
     if (!c.isValidElement(n)) return e;
     var r = n.props,
         i = r.children,
-        s = Yc(r, ["children"]),
-        o = Jc(n) ? {
+        s = Uc(r, ["children"]),
+        o = Yc(n) ? {
             pace: function(E) {
-                return Kc(n.props) ? n.props.ms : n.props.getPace(E)
+                return Qc(n.props) ? n.props.ms : n.props.getPace(E)
             }
         } : {},
-        a = Xc(n) ? {
+        a = Kc(n) ? {
             onChar: n.props.fn
         } : {},
         d = n.key ? {
             key: n.key
         } : {};
-    if (rd(n)) return [].concat(e, [Ut(" ", pe({
+    if (nd(n)) return [].concat(e, [Ht(" ", pe({
         element: c.Fragment
     }, d, {
         props: {
@@ -4404,17 +4383,17 @@ function ri(e, n) {
             return n.props.ms
         }
     }))]);
-    if (i === void 0) return [].concat(e, [Ut(" ", pe({
+    if (i === void 0) return [].concat(e, [Ht(" ", pe({
         element: n.type,
         props: pe({}, s, {
             children: void 0
         })
     }, d, o, a))]);
-    if (typeof i == "string") return [].concat(e, [Ut(i, pe({
+    if (typeof i == "string") return [].concat(e, [Ht(i, pe({
         element: n.type,
         props: s
     }, d, o, a))]);
-    if (i instanceof Function) return [].concat(e, [Ut(" ", pe({
+    if (i instanceof Function) return [].concat(e, [Ht(" ", pe({
         element: n.type,
         props: pe({
             children: i
@@ -4444,22 +4423,22 @@ function ii(e) {
     return n ? n.join(",") : ""
 }
 
-function od(e, n) {
+function rd(e, n) {
     var r = c.useMemo(e, [ii(n)]);
     return r
 }
-var ad = function(n) {
+var id = function(n) {
     var r = n.children,
         i = n.onFinished,
         s = n.skipped,
         o = n.isPaused,
         a = o === void 0 ? !1 : o,
-        d = od(function() {
+        d = rd(function() {
             return Qr(c.Children.toArray(r).reduce(ri, []), {
                 element: void 0
             })
         }, r),
-        m = td(d, {
+        m = Xc(d, {
             onFinished: i,
             skipped: s
         }),
@@ -4471,7 +4450,7 @@ var ad = function(n) {
         T = m.isFinished;
     return c.useEffect(function() {
         a === !0 ? E() : k()
-    }, [a, E, k]), c.createElement(id.Provider, {
+    }, [a, E, k]), c.createElement(sd.Provider, {
         value: {
             skip: $,
             pause: E,
@@ -4489,7 +4468,7 @@ const $s = e => {
         }, []);
         const n = e.text,
             r = e.pace ? e.pace : e.soundDuration ? Math.round(e.soundDuration / n.length) : 140;
-        return t.jsx(ad, {
+        return t.jsx(id, {
             onFinished: e.onFinish,
             children: t.jsx(ei, {
                 ms: r,
@@ -4497,7 +4476,7 @@ const $s = e => {
             })
         })
     },
-    ld = e => {
+    od = e => {
         const [n, r] = c.useState(!1), i = () => {
             setTimeout(() => r(!0), 2e3), setTimeout(e.onFinish, 3e3)
         };
@@ -4511,7 +4490,7 @@ const $s = e => {
             })
         })
     },
-    cd = e => {
+    ad = e => {
         const n = () => {
                 setTimeout(e.onFinish, 2200)
             },
@@ -4523,9 +4502,9 @@ const $s = e => {
             onFinish: n
         })
     };
-var dd = Object.getOwnPropertyDescriptor,
-    ud = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? dd(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var ld = Object.getOwnPropertyDescriptor,
+    cd = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? ld(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
 let Vn = class extends c.Component {
@@ -4549,14 +4528,14 @@ let Vn = class extends c.Component {
             const {
                 stage: e
             } = this.state;
-            return e === "boom" ? null : e === "name" ? t.jsx(ld, {
+            return e === "boom" ? null : e === "name" ? t.jsx(od, {
                 onFinish: this.setToReveal,
                 name: this.props.imposter.meetingResults.name
-            }) : e === "reveal" ? t.jsx(qc, {
+            }) : e === "reveal" ? t.jsx(Gc, {
                 onFinish: this.setToStats,
                 name: this.props.imposter.meetingResults.name,
                 wasImposter: this.props.imposter.meetingResults.wasImposter
-            }) : t.jsx(cd, {
+            }) : t.jsx(ad, {
                 onFinish: this.onFinish,
                 remainingImposters: this.props.imposter.impostersLeft,
                 meetingsLeft: this.props.imposter.meetingsLeft
@@ -4576,7 +4555,7 @@ let Vn = class extends c.Component {
         })
     }
 };
-Vn = ud([I("imposter"), j], Vn);
+Vn = cd([I("imposter"), j], Vn);
 const oi = l.div.attrs({
         className: "maxWidth maxHeight flex vc"
     })`
@@ -4587,7 +4566,7 @@ const oi = l.div.attrs({
     ai = l.div``;
 var pn, Gs;
 
-function pd() {
+function dd() {
     if (Gs) return pn;
     Gs = 1;
     var e = dr(),
@@ -4786,18 +4765,18 @@ function pd() {
 }
 var hn, Us;
 
-function hd() {
+function ud() {
     if (Us) return hn;
     Us = 1;
     var e = tn(),
-        n = pd();
+        n = dd();
     if (typeof e > "u") throw Error("create-react-class could not find the React object. If you are using script tags, make sure that React is being loaded before create-react-class.");
     var r = new e.Component().updater;
     return hn = n(e.Component, e.isValidElement, r), hn
 }
 var mn, qs;
 
-function md() {
+function pd() {
     if (qs) return mn;
     qs = 1;
     var e = {
@@ -4852,14 +4831,14 @@ function md() {
 }
 var fn, Ys;
 
-function fd() {
+function hd() {
     if (Ys) return fn;
     Ys = 1;
-    var e = hd(),
+    var e = ud(),
         n = dr(),
-        r = md(),
+        r = pd(),
         i = function(s) {
-            var o = typeof window > "u" ? Bi : window,
+            var o = typeof window > "u" ? Fi : window,
                 a = function(q, ee, b) {
                     return function(x, h) {
                         var p = Array.prototype.slice.call(arguments, 2),
@@ -4934,21 +4913,21 @@ function fd() {
 }
 var gn, Qs;
 
-function gd() {
+function md() {
     if (Qs) return gn;
     Qs = 1;
     var e = tn(),
-        n = fd();
+        n = hd();
     return gn = n(e), gn
 }
-var xd = gd();
-const vd = fs(xd);
-var yd = Object.getOwnPropertyDescriptor,
-    bd = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? yd(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var fd = md();
+const gd = fs(fd);
+var xd = Object.getOwnPropertyDescriptor,
+    vd = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? xd(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-const wd = (e, n) => [{
+const yd = (e, n) => [{
     text: `Crewmates, this is Captain ${e} here. We're in big trouble.`
 }, {
     text: `It appears ${n} ${tt("impostor",n)} ${n===1?"has":"have"} made it onto our spaceship in an attempt to steal our research.`
@@ -4961,20 +4940,20 @@ const wd = (e, n) => [{
 }];
 let zn = class extends c.Component {
     render() {
-        return t.jsx(Cd, {
+        return t.jsx(wd, {
             gameOptions: this.props.gameOptions,
             imposter: this.props.imposter
         })
     }
 };
-zn = bd([I("gameOptions", "imposter"), j], zn);
-class jd extends c.Component {
+zn = vd([I("gameOptions", "imposter"), j], zn);
+class bd extends c.Component {
     constructor() {
         super(...arguments), this.state = {
             stageIndex: 0,
             show: !1,
             exiting: !1
-        }, this.stages = wd(gs().lastName, this.props.gameOptions.modeOptions.numberOfImposters), this.close = () => this.props.imposter.status = be.questions, this.nextStage = () => {
+        }, this.stages = yd(gs().lastName, this.props.gameOptions.modeOptions.numberOfImposters), this.close = () => this.props.imposter.status = be.questions, this.nextStage = () => {
             const n = this.stages;
             this.props.setTimeout(() => {
                 n[this.state.stageIndex + 1] ? (this.state.stageIndex + 1 === 1 && this.props.setTimeout(() => {
@@ -5014,7 +4993,7 @@ class jd extends c.Component {
                         onFinish: this.nextStage
                     }, `imposter-intro-stage-${this.state.stageIndex}`) : null
                 })
-            }), t.jsxs(Sd, {
+            }), t.jsxs(jd, {
                 children: [t.jsx("div", {}), t.jsx("div", {
                     children: t.jsx(Q, {
                         type: "primary",
@@ -5031,8 +5010,8 @@ class jd extends c.Component {
         })
     }
 }
-const Cd = vd(jd),
-    Sd = l.div`
+const wd = gd(bd),
+    jd = l.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -5041,9 +5020,9 @@ const Cd = vd(jd),
   display: flex;
   justify-content: space-between;
 `;
-var $d = Object.getOwnPropertyDescriptor,
-    Td = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? $d(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var Cd = Object.getOwnPropertyDescriptor,
+    Sd = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? Cd(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
 let Hn = class extends c.Component {
@@ -5052,7 +5031,7 @@ let Hn = class extends c.Component {
             const {
                 status: e
             } = this.props.imposter;
-            return e === be.intro ? t.jsx(zn, {}) : e === be.questions ? t.jsx(Mn, {}) : e === be.discussion ? t.jsx(Bn, {}) : e === be.voting ? t.jsx(Fn, {}) : e === be.votingResult ? t.jsx(Vn, {}) : null
+            return e === be.intro ? t.jsx(zn, {}) : e === be.questions ? t.jsx(Mn, {}) : e === be.discussion ? t.jsx(Fn, {}) : e === be.voting ? t.jsx(Bn, {}) : e === be.votingResult ? t.jsx(Vn, {}) : null
         }
     }
     componentDidMount() {
@@ -5070,7 +5049,7 @@ let Hn = class extends c.Component {
         })
     }
 };
-Hn = Td([I("imposter"), j], Hn);
+Hn = Sd([I("imposter"), j], Hn);
 const li = l.div`
   flex: 1;
   background: ${C.Black};
@@ -5095,7 +5074,7 @@ const li = l.div`
   overflow: hidden;
   -webkit-transform: translateZ(0); // needed in Safari for some weird reason
 `,
-    Ed = j(e => {
+    $d = j(e => {
         const {
             draw: n
         } = c.useContext(D), r = c.useRef();
@@ -5118,7 +5097,7 @@ const li = l.div`
             canEdit: !1
         })
     }),
-    Od = l.div`
+    Td = l.div`
   margin-top: 11.5%;
   animation-delay: ${e=>e.animationDelay}s;
   background: ${e=>e.colors.background};
@@ -5148,7 +5127,7 @@ const li = l.div`
   justify-content: center;
   align-items: center;
 `,
-    _d = l.div`
+    Ed = l.div`
   position: absolute;
   top: -41px;
   left: 0;
@@ -5160,9 +5139,9 @@ const li = l.div`
   border-radius: 50%;
   font-size: 28px;
   color: ${C.White};
-  ${F.black};
+  ${B.black};
 `,
-    kd = l.div`
+    Od = l.div`
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.15);
@@ -5171,16 +5150,16 @@ const li = l.div`
   align-items: center;
   border-radius: 50%;
 `,
-    Id = l.div`
+    _d = l.div`
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   font-size: 26px;
-  ${F.black};
+  ${B.black};
 `,
-    Rd = l.div`
-  ${F.bold};
+    kd = l.div`
+  ${B.bold};
   width: 100%;
   font-size: 18px;
   margin-top: -4px;
@@ -5188,8 +5167,8 @@ const li = l.div`
   white-space: nowrap;
   overflow: hidden;
 `,
-    Dd = l.div`
-  ${F.normal};
+    Id = l.div`
+  ${B.normal};
   font-size: 14px;
   margin-left: 15px;
   margin-right: 15px;
@@ -5236,7 +5215,7 @@ class xn extends c.Component {
             }
             const r = this.props.snapshot;
             return {
-                background: ho(.1, js(r.id)),
+                background: mo(.1, js(r.id)),
                 text: C.White
             }
         }, this.getMainName = () => {
@@ -5245,7 +5224,7 @@ class xn extends c.Component {
             } = this.props;
             if (n) return this.props.snapshot.name;
             const r = this.props.snapshot;
-            return t.jsx(B, {
+            return t.jsx(F, {
                 text: r.id
             })
         }, this.getDescription = () => {
@@ -5254,7 +5233,7 @@ class xn extends c.Component {
             } = this.props;
             if (n) return "";
             const r = this.props.snapshot;
-            return Wt(r.players)
+            return Bt(r.players)
         }, this.getAnimationDelay = () => {
             const {
                 position: n
@@ -5282,20 +5261,20 @@ class xn extends c.Component {
     render() {
         const n = this.getColors();
         return t.jsxs(t.Fragment, {
-            children: [t.jsxs(Od, {
+            children: [t.jsxs(Td, {
                 animationDelay: this.getAnimationDelay(),
                 colors: n,
                 className: "animated zoomInDown",
-                children: [t.jsx(_d, {
+                children: [t.jsx(Ed, {
                     background: this.getCircleBackground(),
-                    children: t.jsx(kd, {
+                    children: t.jsx(Od, {
                         children: this.getCircleMessage()
                     })
-                }), t.jsx(Id, {
+                }), t.jsx(_d, {
                     children: this.getMainName()
-                }), t.jsx(Rd, {
+                }), t.jsx(kd, {
                     children: ne(this.props.snapshot.balance)
-                }), t.jsx(Dd, {
+                }), t.jsx(Id, {
                     children: this.getDescription()
                 })]
             }), this.props.position === 1 ? t.jsx(St, {
@@ -5307,19 +5286,19 @@ class xn extends c.Component {
         })
     }
 }
-const Pd = {
+const Rd = {
         width: 667,
         height: 500
     },
-    Ad = {
+    Dd = {
         width: 553,
         height: 400
     },
-    Nd = {
+    Pd = {
         width: 360,
         height: 270
     },
-    Md = e => {
+    Ad = e => {
         const n = e.text.split(""),
             r = !n.includes("_") && e.noTimeLeft;
         return t.jsxs(t.Fragment, {
@@ -5331,7 +5310,7 @@ const Pd = {
                     config: rt,
                     active: r
                 })
-            }), t.jsx(Hd, {
+            }), t.jsx(Vd, {
                 children: n.map((i, s) => {
                     const o = `letter-${s}`;
                     return i === " " && !r ? t.jsx(c.Fragment, {
@@ -5343,7 +5322,7 @@ const Pd = {
             })]
         })
     },
-    Bd = j(e => {
+    Nd = j(e => {
         const {
             draw: {
                 round: {
@@ -5353,28 +5332,28 @@ const Pd = {
                 }
             }
         } = c.useContext(D), s = c.useRef(null), [o, a] = vt(s), d = c.useMemo(() => i === 0, [i]), m = c.useMemo(() => {
-            let f = Pd;
-            return (o < 790 || a < 700) && (f = Ad), (o < 680 || a < 530) && (f = Nd), f
+            let f = Rd;
+            return (o < 790 || a < 700) && (f = Dd), (o < 680 || a < 530) && (f = Pd), f
         }, [o, a]);
-        return t.jsx(Fd, {
+        return t.jsx(Md, {
             className: e.isFadingOut ? "animated fadeOut" : "",
-            children: t.jsxs(Ld, {
+            children: t.jsxs(Fd, {
                 ref: s,
-                children: [t.jsx(Vd, {
-                    children: t.jsx(Md, {
+                children: [t.jsx(Ld, {
+                    children: t.jsx(Ad, {
                         text: n,
                         noTimeLeft: d
                     })
-                }), t.jsx(Wd, {
+                }), t.jsx(Bd, {
                     style: {
                         width: m.width,
                         height: m.height
                     },
-                    children: t.jsx(Ed, {
+                    children: t.jsx($d, {
                         width: m.width,
                         height: m.height
                     })
-                }), t.jsxs(zd, {
+                }), t.jsxs(Wd, {
                     children: [t.jsx("b", {
                         children: "Drawer:"
                     }), " ", r.name]
@@ -5382,49 +5361,49 @@ const Pd = {
             })
         })
     }),
-    Fd = l.div`
+    Md = l.div`
   position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
   bottom: 0px;
 `,
-    Ld = l.div.attrs({
+    Fd = l.div.attrs({
         className: "maxWidth maxHeight flex flex-column vc hc"
     })`
   overflow: hidden;
   z-index: 1;
 `,
-    Wd = l(lt)`
+    Bd = l(lt)`
   flex-shrink: 0;
   background: ${C.White};
   overflow: hidden;
 `,
-    Vd = l.div`
+    Ld = l.div`
   font-size: 45px;
   margin-bottom: 10px;
 `,
-    zd = l.div`
+    Wd = l.div`
   font-size: 22px;
   margin-top: 10px;
 `,
-    Hd = l.span``,
-    di = e => t.jsxs(Gd, {
+    Vd = l.span``,
+    di = e => t.jsxs(zd, {
         iconOnLeft: e.iconOnLeft,
-        children: [t.jsx(Ud, {
-            children: t.jsx(qd, {
+        children: [t.jsx(Hd, {
+            children: t.jsx(Gd, {
                 src: e.icon
             })
-        }), t.jsx(Yd, {
+        }), t.jsx(Ud, {
             children: e.value
         })]
     }),
-    Gd = l.div.attrs({
+    zd = l.div.attrs({
         className: "flex flex-column"
     })`
   align-items: ${e=>e.iconOnLeft?"flex-start":"flex-end"};
 `,
-    Ud = l.div.attrs({
+    Hd = l.div.attrs({
         className: "flex hc vc"
     })`
   height: 50px;
@@ -5436,10 +5415,10 @@ const Pd = {
   margin-bottom: -26px;
   position: relative;
 `,
-    qd = l.img.attrs({
+    Gd = l.img.attrs({
         className: "maxWidth maxHeight"
     })``,
-    Yd = l.div.attrs({
+    Ud = l.div.attrs({
         className: "flex hc vc"
     })`
   height: 100px;
@@ -5458,7 +5437,7 @@ const Pd = {
     $t = .4,
     pi = "'Pangolin', sans-serif",
     Js = 8e3,
-    Qd = j(e => {
+    qd = j(e => {
         const {
             draw: n
         } = c.useContext(D);
@@ -5516,7 +5495,7 @@ const Pd = {
                 }), t.jsx(Ks, {
                     onClick: r,
                     children: "Clear Canvas"
-                }), t.jsx(Jd, {
+                }), t.jsx(Yd, {
                     onClick: Gn,
                     children: "End Round Early"
                 })]
@@ -5537,7 +5516,7 @@ const Pd = {
   text-decoration: underline;
   cursor: pointer;
 `,
-    Jd = l(lt).attrs({
+    Yd = l(lt).attrs({
         borderWidth: 2
     })`
   text-transform: uppercase;
@@ -5550,15 +5529,15 @@ const Pd = {
     mi = 35,
     fi = 8,
     Zs = 2,
-    Kd = 120,
-    Zd = j(() => {
+    Qd = 120,
+    Jd = j(() => {
         const {
             draw: e
         } = c.useContext(D), [n, r] = c.useState([]), i = a => {
             a.important ? r(d => [...d, a]) : s(a)
         }, s = Ue.debounce(a => {
             r(d => [...d, a])
-        }, Kd);
+        }, Qd);
         c.useEffect(() => {
             const a = Te(() => e.latestFeedItem, d => {
                 d && i({
@@ -5584,14 +5563,14 @@ const Pd = {
                     enterAnimation: "fade",
                     leaveAnimation: "accordionVertical",
                     duration: 150,
-                    children: Ue.takeRight(n, o).map(a => t.jsx(Xd, {
+                    children: Ue.takeRight(n, o).map(a => t.jsx(Kd, {
                         item: a
                     }, `draw-feed-${a.id}`))
                 })
             })
         }) : null
     });
-class Xd extends c.Component {
+class Kd extends c.Component {
     render() {
         const {
             name: n,
@@ -5600,8 +5579,8 @@ class Xd extends c.Component {
             nameColor: s,
             actionColor: o
         } = this.props.item;
-        return t.jsx(eu, {
-            children: t.jsxs(tu, {
+        return t.jsx(Zd, {
+            children: t.jsxs(Xd, {
                 children: [n && t.jsxs(t.Fragment, {
                     children: [t.jsx("b", {
                         style: {
@@ -5613,7 +5592,7 @@ class Xd extends c.Component {
                     style: {
                         color: o || C.Black
                     },
-                    children: i ? t.jsx(B, {
+                    children: i ? t.jsx(F, {
                         text: r
                     }) : r
                 })]
@@ -5621,7 +5600,7 @@ class Xd extends c.Component {
         })
     }
 }
-const eu = l(lt).attrs({
+const Zd = l(lt).attrs({
         className: "flex vc",
         borderWidth: 2
     })`
@@ -5638,13 +5617,13 @@ const eu = l(lt).attrs({
     }
   }
 `,
-    tu = l.span.attrs({
+    Xd = l.span.attrs({
         className: "maxWidth"
     })`
   text-overflow: ellipsis;
   white-space: nowrap;
 `,
-    nu = j(() => {
+    eu = j(() => {
         var r, i;
         const {
             draw: e
@@ -5662,30 +5641,30 @@ const eu = l(lt).attrs({
                     value: n()
                 })
             }), t.jsx("div", {
-                children: t.jsx(Zd, {})
+                children: t.jsx(Jd, {})
             })]
         })
     }),
-    su = () => {
+    tu = () => {
         const [e, n] = c.useState(!1), r = () => n(!0);
         return t.jsx(t.Fragment, {
-            children: t.jsxs(ru, {
+            children: t.jsxs(nu, {
                 className: e ? "animated fadeOut" : "",
-                children: [t.jsx(Qd, {
+                children: [t.jsx(qd, {
                     fadeOut: r
-                }), t.jsx(nu, {}), t.jsx(Bd, {
+                }), t.jsx(eu, {}), t.jsx(Nd, {
                     isFadingOut: e
                 })]
             })
         })
     },
-    ru = l.div.attrs({
+    nu = l.div.attrs({
         className: "flex maxWidth maxHeight"
     })`
   justify-content: space-between;
   position: relative;
 `,
-    iu = () => {
+    su = () => {
         const {
             draw: {
                 round: e,
@@ -5706,10 +5685,10 @@ const eu = l(lt).attrs({
             a = Math.min(s / 4, (o - 120) / 3),
             d = a * 4,
             m = a * 3;
-        return t.jsx(ou, {
-            children: t.jsxs(au, {
+        return t.jsx(ru, {
+            children: t.jsxs(iu, {
                 ref: i,
-                children: [t.jsx(lu, {
+                children: [t.jsx(ou, {
                     children: e.term
                 }), d && m ? t.jsx(lt, {
                     style: {
@@ -5722,29 +5701,29 @@ const eu = l(lt).attrs({
                         canEdit: !1,
                         initialImage: e.drawingBase64
                     })
-                }) : null, n ? t.jsx(cu, {
-                    children: t.jsx(B, {
+                }) : null, n ? t.jsx(au, {
+                    children: t.jsx(F, {
                         text: "Everybody guessed correctly!"
                     })
                 }) : null]
             })
         })
     },
-    ou = l.div.attrs({
+    ru = l.div.attrs({
         className: "maxHeight"
     })`
   width: 50%;
   padding: 30px;
   padding-right: 15px;
 `,
-    au = l.div.attrs({
+    iu = l.div.attrs({
         className: "maxWidth maxHeight flex flex-column hc vc"
     })``,
-    lu = l.div`
+    ou = l.div`
   font-size: 40px;
   margin-bottom: 7px;
 `,
-    cu = l.div`
+    au = l.div`
   background: ${C.SuccessGreen};
   color: ${C.White};
   margin-top: 16px;
@@ -5752,22 +5731,22 @@ const eu = l(lt).attrs({
   border-radius: 55px;
   font-size: 17px;
 `,
-    du = e => t.jsxs(gi, {
-        children: [t.jsx(hu, {
+    lu = e => t.jsxs(gi, {
+        children: [t.jsx(uu, {
             children: e.name
-        }), t.jsxs(mu, {
+        }), t.jsxs(pu, {
             children: ["+ ", ne(e.amount)]
         })]
     }),
-    uu = j(() => {
+    cu = j(() => {
         const {
             draw: {
                 pointAdditions: e
             }
         } = c.useContext(D);
-        return t.jsx(pu, {
+        return t.jsx(du, {
             children: e.length ? t.jsx(t.Fragment, {
-                children: e.map(n => t.jsx(du, {
+                children: e.map(n => t.jsx(lu, {
                     name: n.name,
                     amount: n.amount
                 }, `addition-${n.id}`))
@@ -5779,7 +5758,7 @@ const eu = l(lt).attrs({
                         style: {
                             textAlign: "center"
                         },
-                        children: t.jsx(B, {
+                        children: t.jsx(F, {
                             text: "Nobody was able to guess the term this time!"
                         })
                     })
@@ -5787,7 +5766,7 @@ const eu = l(lt).attrs({
             })
         })
     }),
-    pu = l.div.attrs({
+    du = l.div.attrs({
         className: "maxHeight scroll-y"
     })`
   width: 50%;
@@ -5811,25 +5790,25 @@ const eu = l(lt).attrs({
     margin-bottom: 0px;
   }
 `,
-    hu = l.div`
+    uu = l.div`
   font-weight: bold;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 `,
-    mu = l.div`
+    pu = l.div`
   color: #1b5e20;
   font-weight: bold;
   margin-left: 10px;
   flex-shrink: 0;
 `,
-    fu = j(() => {
+    hu = j(() => {
         const {
             draw: e
         } = c.useContext(D), n = () => {
             e.status = et.pickDrawer
         };
-        return t.jsxs(gu, {
+        return t.jsxs(mu, {
             children: [t.jsx(Q, {
                 size: "large",
                 type: "primary",
@@ -5846,7 +5825,7 @@ const eu = l(lt).attrs({
             })]
         })
     }),
-    gu = l.div.attrs({
+    mu = l.div.attrs({
         className: "maxWidth flex hc vc"
     })`
   flex-shrink: 0;
@@ -5854,30 +5833,30 @@ const eu = l(lt).attrs({
   background: rgba(255, 255, 255, 0.8);
   box-shadow: 0px 4px 16px rgb(0 0 0 / 50%);
 `,
-    xu = () => (c.useEffect(() => {
+    fu = () => (c.useEffect(() => {
         Me() && g.draw.background.fade(g.draw.background.volume(), $t, 2e3)
-    }, []), t.jsxs(vu, {
-        children: [t.jsxs(yu, {
-            children: [t.jsx(iu, {}), t.jsx(uu, {})]
-        }), t.jsx(fu, {})]
+    }, []), t.jsxs(gu, {
+        children: [t.jsxs(xu, {
+            children: [t.jsx(su, {}), t.jsx(cu, {})]
+        }), t.jsx(hu, {})]
     })),
-    vu = l.div.attrs({
+    gu = l.div.attrs({
         className: "maxWidth maxHeight flex flex-column"
     })``,
-    yu = l.div.attrs({
+    xu = l.div.attrs({
         className: "flex animated fadeIn"
     })`
   flex: 1;
   overflow: hidden;
   animation-duration: 2.2s;
 `,
-    bu = (e, n) => {
+    vu = (e, n) => {
         const r = e.toLowerCase(),
             i = n.toLowerCase();
         return r < i ? -1 : r > i ? 1 : 0
     },
-    wu = e => t.jsxs($u, {
-        children: [t.jsx(Tu, {
+    yu = e => t.jsxs(Cu, {
+        children: [t.jsx(Su, {
             children: e.name
         }), t.jsx(Q, {
             type: "dashed",
@@ -5885,7 +5864,7 @@ const eu = l(lt).attrs({
             children: "Select"
         })]
     }),
-    ju = j(() => {
+    bu = j(() => {
         const {
             players: {
                 players: e
@@ -5897,8 +5876,8 @@ const eu = l(lt).attrs({
             const i = Ue.sample(e);
             n(i.id)
         };
-        return t.jsxs(Cu, {
-            children: [t.jsxs(Su, {
+        return t.jsxs(wu, {
+            children: [t.jsxs(ju, {
                 children: [t.jsxs("div", {
                     className: "flex vc",
                     children: [t.jsx("img", {
@@ -5920,16 +5899,16 @@ const eu = l(lt).attrs({
                     onClick: r,
                     children: "Select"
                 })]
-            }), e.slice().sort((i, s) => bu(i.name, s.name)).map(i => t.jsx(wu, {
+            }), e.slice().sort((i, s) => vu(i.name, s.name)).map(i => t.jsx(yu, {
                 name: i.name,
                 onSelect: () => n(i.id)
             }, i.id))]
         })
     }),
-    Cu = l.div.attrs({
+    wu = l.div.attrs({
         className: "maxWidth"
     })``,
-    Su = l(lt).attrs({
+    ju = l(lt).attrs({
         className: "maxWidth flex vc"
     })`
   justify-content: space-between;
@@ -5937,7 +5916,7 @@ const eu = l(lt).attrs({
   margin-bottom: 10px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
 `,
-    $u = l.div.attrs({
+    Cu = l.div.attrs({
         className: "maxWidth flex vc"
     })`
   justify-content: space-between;
@@ -5952,35 +5931,35 @@ const eu = l(lt).attrs({
     margin-bottom: 0px;
   }
 `,
-    Tu = l.div`
+    Su = l.div`
   font-size: 19px;
 `,
-    Eu = j(() => {
+    $u = j(() => {
         const {
             draw: e
         } = c.useContext(D);
         return c.useEffect(() => {
             e.personCount = null, e.everybodyGotLastRoundCorrect = !1
-        }, []), t.jsx(Ou, {
-            children: t.jsxs(_u, {
-                children: [t.jsx(ku, {}), t.jsx(Iu, {
-                    children: t.jsx(B, {
+        }, []), t.jsx(Tu, {
+            children: t.jsxs(Eu, {
+                children: [t.jsx(Ou, {}), t.jsx(_u, {
+                    children: t.jsx(F, {
                         text: "Who's drawing?"
                     })
-                }), t.jsx(Ru, {
-                    children: t.jsx(B, {
+                }), t.jsx(ku, {
+                    children: t.jsx(F, {
                         text: "Select the drawer for this round!"
                     })
-                }), t.jsx(bt, {}), t.jsx(ju, {})]
+                }), t.jsx(bt, {}), t.jsx(bu, {})]
             })
         })
     }),
-    Ou = l.div.attrs({
+    Tu = l.div.attrs({
         className: "maxWidth maxHeight scroll-y flex hc"
     })`
   align-items: flex-start;
 `,
-    _u = l.div.attrs({
+    Eu = l.div.attrs({
         className: "flex flex-column vc medium-shadow"
     })`
   width: 80%;
@@ -5993,64 +5972,64 @@ const eu = l(lt).attrs({
   padding: 30px;
   margin: 20px;
 `,
-    ku = l.img.attrs({
+    Ou = l.img.attrs({
         src: _("drawing.svg")
     })`
   height: 160px;
   margin-bottom: 14px;
 `,
-    Iu = l.div`
+    _u = l.div`
   font-size: 54px;
   font-weight: bold;
 `,
-    Ru = l.div`
+    ku = l.div`
   font-size: 23px;
 `,
-    Du = j(() => {
+    Iu = j(() => {
         var n;
         const {
             draw: {
                 round: e
             }
         } = c.useContext(D);
-        return (n = e == null ? void 0 : e.drawer) != null && n.name ? t.jsx(Pu, {
-            children: t.jsxs(Au, {
-                children: [t.jsx(Nu, {}), t.jsx(Mu, {
+        return (n = e == null ? void 0 : e.drawer) != null && n.name ? t.jsx(Ru, {
+            children: t.jsxs(Du, {
+                children: [t.jsx(Pu, {}), t.jsx(Au, {
                     children: "Get ready!"
-                }), t.jsxs(Bu, {
+                }), t.jsxs(Nu, {
                     children: [e.drawer.name, " is selecting a term..."]
                 })]
             })
         }) : null
     }),
-    Pu = l.div.attrs({
+    Ru = l.div.attrs({
         className: "maxWidth maxHeight flex hc vc"
     })`
   padding: 30px;
   text-align: center;
 `,
-    Au = l(lt).attrs({
+    Du = l(lt).attrs({
         className: "flex hc vc flex-column medium-shadow"
     })`
   height: 440px;
   width: 600px;
   background: rgba(255, 255, 255, 0.7);
 `,
-    Nu = l.img.attrs({
+    Pu = l.img.attrs({
         src: _("paint.svg")
     })`
   height: 160px;
 `,
-    Mu = l.div`
+    Au = l.div`
   margin-top: 20px;
   font-size: 68px;
   font-weight: bold;
 `,
-    Bu = l.div`
+    Nu = l.div`
   font-size: 30px;
   margin-top: --6px;
 `,
-    Fu = j(() => {
+    Mu = j(() => {
         const {
             gameValues: {
                 gameCode: e
@@ -6064,15 +6043,15 @@ const eu = l(lt).attrs({
         }, o = () => {
             n.music ? i() : s()
         };
-        return t.jsxs(Lu, {
-            children: [t.jsxs(Wu, {
-                children: [t.jsx(Vu, {}), t.jsxs(zu, {
+        return t.jsxs(Fu, {
+            children: [t.jsxs(Bu, {
+                children: [t.jsx(Lu, {}), t.jsxs(Wu, {
                     children: [t.jsx("b", {
                         children: "Game Code:"
                     }), " ", e]
                 })]
             }), t.jsx("div", {
-                children: t.jsx(Lt, {
+                children: t.jsx(Ft, {
                     title: `Turn ${n.music?"Off":"On"} Music`,
                     placement: "left",
                     children: t.jsx(Q, {
@@ -6085,24 +6064,24 @@ const eu = l(lt).attrs({
             })]
         })
     }),
-    Lu = l.div.attrs({
+    Fu = l.div.attrs({
         className: "light-shadow flex vc"
     })`
   flex-shrink: 0;
   color: ${C.Black};
-  font-family: ${F.fontFamilyName};
+  font-family: ${B.fontFamilyName};
   font-size: 13px;
   background: ${C.White};
   padding: 14px 19px;
   justify-content: space-between;
 `,
-    Wu = l.div``,
-    Vu = l.img.attrs({
+    Bu = l.div``,
+    Lu = l.img.attrs({
         src: "/client/img/svgLogo.svg"
     })`
   height: 22px;
 `,
-    zu = l.div`
+    Wu = l.div`
   font-size: 14px;
   margin-top: 10px;
   line-height: 1;
@@ -6120,7 +6099,7 @@ background-image: linear-gradient(
 background-size: 45px 45px;
 background-position: center;
 `,
-    Hu = j(() => {
+    Vu = j(() => {
         const {
             draw: {
                 status: e
@@ -6129,16 +6108,16 @@ background-position: center;
         c.useEffect(() => {
             g.draw.background.volume($t)
         }, []);
-        const n = () => e === et.pickDrawer ? t.jsx(Eu, {}) : e === et.termSelection ? t.jsx(Du, {}) : e === et.drawing ? t.jsx(su, {}) : e === et.results ? t.jsx(xu, {}) : null;
+        const n = () => e === et.pickDrawer ? t.jsx($u, {}) : e === et.termSelection ? t.jsx(Iu, {}) : e === et.drawing ? t.jsx(tu, {}) : e === et.results ? t.jsx(fu, {}) : null;
         return t.jsx(t.Fragment, {
-            children: t.jsxs(Gu, {
-                children: [t.jsx(Fu, {}), t.jsx(Uu, {
+            children: t.jsxs(zu, {
+                children: [t.jsx(Mu, {}), t.jsx(Hu, {
                     children: n()
                 })]
             })
         })
     }),
-    Gu = l.div.attrs({
+    zu = l.div.attrs({
         className: "flex maxWidth flex-column"
     })`
   height: 100vh;
@@ -6147,13 +6126,13 @@ background-position: center;
   ${xi}
   overflow: hidden;
 `,
-    Uu = l.div.attrs({
+    Hu = l.div.attrs({
         className: "flex flex-column"
     })`
   height: 100%;
   overflow: hidden;
 `,
-    qu = (e, n, r) => {
+    Gu = (e, n, r) => {
         let o = !1,
             a = !1;
         return e < n || (o = !0), r < 5 || (a = !0), {
@@ -6163,10 +6142,10 @@ background-position: center;
             left: !0
         }
     },
-    Yu = e => {
-        const n = qu(e.categoryIndex + 1, e.totalCategories, e.itemIndex + 1),
+    Uu = e => {
+        const n = Gu(e.categoryIndex + 1, e.totalCategories, e.itemIndex + 1),
             r = i => i ? 2 : 0;
-        return t.jsx(Qu, {
+        return t.jsx(qu, {
             onClick: e.disabled ? void 0 : e.onSelect,
             style: {
                 borderBottomWidth: r(n.bottom),
@@ -6176,20 +6155,20 @@ background-position: center;
                 background: e.disabled ? "rgba(0,0,0,0.2" : "transparent",
                 cursor: e.disabled ? "not-allowed" : "pointer"
             },
-            children: t.jsx(Ju, {
+            children: t.jsx(Yu, {
                 style: {
                     opacity: e.disabled ? .5 : 1,
                     pointerEvents: e.disabled ? "none" : "auto"
                 },
                 layoutId: `item-${e.id}`,
-                children: t.jsx(Ku, {
+                children: t.jsx(Qu, {
                     layoutId: `item-${e.id}-amount`,
                     children: ne(e.amount)
                 })
             })
         })
     },
-    Qu = l.div.attrs({
+    qu = l.div.attrs({
         className: "flex hc vc"
     })`
   background: rgba(0, 0, 0, 0.2);
@@ -6198,7 +6177,7 @@ background-position: center;
   height: 20%;
   user-select: none;
 `,
-    Ju = l(U.div).attrs({
+    Yu = l(U.div).attrs({
         className: "maxAll flex-center"
     })`
   text-shadow: 0px 2px 2px ${C.Black};
@@ -6208,8 +6187,8 @@ background-position: center;
     background: rgba(0, 0, 0, 0.4);
   }
 `,
-    Ku = l(U.div)``,
-    Zu = j(e => {
+    Qu = l(U.div)``,
+    Ju = j(e => {
         const {
             pardy: n
         } = c.useContext(D), r = i => {
@@ -6221,14 +6200,14 @@ background-position: center;
                 }
             }, n.questionScreen = he.preview, n.questionStatus = je.preview, n.screen = we.question
         };
-        return t.jsxs(Xu, {
+        return t.jsxs(Ku, {
             width: e.width,
-            children: [t.jsx(ep, {
-                children: t.jsx(tp, {
+            children: [t.jsx(Zu, {
+                children: t.jsx(Xu, {
                     children: e.category.name
                 })
-            }), t.jsx(np, {
-                children: e.category.items.map((i, s) => t.jsx(Yu, {
+            }), t.jsx(ep, {
+                children: e.category.items.map((i, s) => t.jsx(Uu, {
                     id: i.id,
                     amount: i.amount,
                     totalCategories: e.totalCategories,
@@ -6240,14 +6219,14 @@ background-position: center;
             })]
         })
     }),
-    Xu = l.div.attrs({
+    Ku = l.div.attrs({
         className: "flex flex-column vc"
     })`
   height: 100%;
   width: ${e=>e.width};
   overflow: hidden;
 `,
-    ep = l.div.attrs({
+    Zu = l.div.attrs({
         className: "flex hc"
     })`
   font-size: 32px;
@@ -6256,17 +6235,17 @@ background-position: center;
   text-shadow: 0px 3px 3px ${C.Black};
   width: 100%;
 `,
-    tp = l.div`
+    Xu = l.div`
   max-width: 80%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 `,
-    np = l.div`
+    ep = l.div`
   flex: 1;
   width: 100%;
 `,
-    sp = j(() => {
+    tp = j(() => {
         const {
             pardy: {
                 board: e
@@ -6274,8 +6253,8 @@ background-position: center;
         } = c.useContext(D);
         if (!e) return null;
         const n = `${Math.round(100/e.categories.length)}%`;
-        return t.jsx(rp, {
-            children: e.categories.map((r, i) => t.jsx(Zu, {
+        return t.jsx(np, {
+            children: e.categories.map((r, i) => t.jsx(Ju, {
                 category: r,
                 width: n,
                 totalCategories: e.categories.length,
@@ -6283,43 +6262,43 @@ background-position: center;
             }, r.name))
         })
     }),
-    rp = l.div.attrs({
+    np = l.div.attrs({
         className: "flex hc maxAll"
     })`
   padding: 20px;
 `,
     Xs = e => {
         const n = e.size === "normal";
-        return t.jsxs(ip, {
+        return t.jsxs(sp, {
             className: n ? "light-shadow" : "medium-shadow",
             style: {
                 width: n ? 300 : 600
             },
-            children: [t.jsx(op, {
+            children: [t.jsx(rp, {
                 children: e.place
-            }), t.jsx(ap, {
+            }), t.jsx(ip, {
                 style: {
                     height: n ? 150 : 200,
                     backgroundColor: e.backgroundColor || "rgba(0,0,0,0.15)"
                 },
-                children: t.jsx(fo, {
+                children: t.jsx(go, {
                     mode: "single",
                     text: e.name,
                     noBold: !0
                 })
-            }), t.jsx(lp, {
+            }), t.jsx(op, {
                 children: ne(e.amount)
             })]
         })
     },
-    ip = l.div`
+    sp = l.div`
   border-radius: 5px;
   border: 2px solid ${Ne.White};
-  font-family: ${F.fontFamilyName};
-  font-weight: ${Fe.Bold};
+  font-family: ${B.fontFamilyName};
+  font-weight: ${Be.Bold};
   max-width: 100%;
 `,
-    op = l.div.attrs({
+    rp = l.div.attrs({
         className: "maxWidth"
     })`
   padding: 10px;
@@ -6328,14 +6307,14 @@ background-position: center;
   font-size: 22px;
   border-bottom: 2px solid ${Ne.White};
 `,
-    ap = l.div.attrs({
+    ip = l.div.attrs({
         className: "flex hc vc maxWidth"
     })`
   font-family: 'Londrina Solid', sans-serif;
   padding: 10px;
   text-shadow: #000 3px 3px 2px;
 `,
-    lp = l.div.attrs({
+    op = l.div.attrs({
         className: "maxWidth"
     })`
   padding: 10px;
@@ -6350,7 +6329,7 @@ background-position: center;
             pardy: {
                 powers: n
             }
-        } = c.useContext(D), r = Vt(e.filteredPlayers), i = r[0], s = r.filter((a, d) => d !== 0), o = a => {
+        } = c.useContext(D), r = Lt(e.filteredPlayers), i = r[0], s = r.filter((a, d) => d !== 0), o = a => {
             if (!a) return null;
             const d = n.find(m => m.id === a);
             return d ? d.background : null
@@ -6373,7 +6352,7 @@ background-position: center;
                     amount: i.balance,
                     backgroundColor: o(i.power)
                 }) : null
-            }), s && s.length ? t.jsx(cp, {
+            }), s && s.length ? t.jsx(ap, {
                 children: s.map((a, d) => t.jsx(Xs, {
                     size: "normal",
                     backgroundColor: o(a.power),
@@ -6384,7 +6363,7 @@ background-position: center;
             }) : null]
         })
     }),
-    cp = l.div.attrs({
+    ap = l.div.attrs({
         className: "flex wrap hc vc"
     })`
   display: grid;
@@ -6393,7 +6372,7 @@ background-position: center;
   justify-content: center;
 `,
     er = 140,
-    dp = e => t.jsxs(up, {
+    lp = e => t.jsxs(cp, {
         children: [t.jsx(Q, {
             type: e.screen === Un.board ? "primary" : "default",
             onClick: e.setToBoardScreen,
@@ -6411,7 +6390,7 @@ background-position: center;
             children: "Rankings"
         })]
     }),
-    up = l.div.attrs({
+    cp = l.div.attrs({
         className: "flex hc vc"
     })`
   flex-shrink: 0;
@@ -6421,9 +6400,9 @@ background-position: center;
   z-index: 2;
 `;
 var Un = (e => (e.board = "board", e.rankings = "rankings", e))(Un || {});
-const pp = () => {
-        const [e, n] = c.useState("board"), r = () => e === "rankings" ? t.jsx(vi, {}) : t.jsx(sp, {}), i = () => n("board"), s = () => n("rankings");
-        return t.jsxs(hp, {
+const dp = () => {
+        const [e, n] = c.useState("board"), r = () => e === "rankings" ? t.jsx(vi, {}) : t.jsx(tp, {}), i = () => n("board"), s = () => n("rankings");
+        return t.jsxs(up, {
             initial: {
                 scale: .8,
                 y: "20%",
@@ -6438,19 +6417,19 @@ const pp = () => {
                 duration: .7,
                 ease: "easeOut"
             },
-            children: [t.jsx(mp, {
+            children: [t.jsx(pp, {
                 children: r()
-            }), t.jsx(dp, {
+            }), t.jsx(lp, {
                 screen: e,
                 setToBoardScreen: i,
                 setToRankingScreen: s
             })]
         })
     },
-    hp = l(U.div).attrs({
+    up = l(U.div).attrs({
         className: "flex maxWidth maxHeight flex-column"
     })``,
-    mp = l.div`
+    pp = l.div`
   flex: 1;
   z-index: 1;
   overflow: hidden;
@@ -6490,7 +6469,7 @@ const pp = () => {
     },
     Mt = 50,
     bi = 125,
-    fp = j(() => {
+    hp = j(() => {
         const {
             gameValues: {
                 gameCode: e
@@ -6526,11 +6505,11 @@ const pp = () => {
             label: o.music ? "Mute" : "Enable Music",
             onClick: m
         }];
-        return t.jsxs(xp, {
-            children: [t.jsxs(vp, {
+        return t.jsxs(fp, {
+            children: [t.jsxs(gp, {
                 children: ["Code: ", e]
-            }), t.jsx(gp, {}), t.jsx(jp, {
-                children: t.jsx(xo.Button, {
+            }), t.jsx(mp, {}), t.jsx(bp, {
+                children: t.jsx(vo.Button, {
                     onClick: d,
                     menu: {
                         items: f
@@ -6540,7 +6519,7 @@ const pp = () => {
             })]
         })
     }),
-    gp = j(() => {
+    mp = j(() => {
         const {
             pardy: e
         } = c.useContext(D), n = () => e.screen === we.home || e.questionScreen === he.finale || e.questionScreen === he.preview, i = (() => {
@@ -6552,7 +6531,7 @@ const pp = () => {
             const a = Nt();
             return a && a.categoryName && a.amount ? `${a.categoryName} - ${ne(a.amount)}` : null
         })(), s = i ? n() : !0;
-        return t.jsx(yp, {
+        return t.jsx(xp, {
             children: t.jsxs(U.div, {
                 initial: {
                     y: -Mt
@@ -6565,9 +6544,9 @@ const pp = () => {
                     ease: "anticipate"
                 },
                 className: "maxWidth",
-                children: [t.jsx(wp, {
+                children: [t.jsx(yp, {
                     children: i || ""
-                }), t.jsx(bp, {
+                }), t.jsx(vp, {
                     children: t.jsx("img", {
                         src: _("pardyLogo.png"),
                         style: {
@@ -6578,7 +6557,7 @@ const pp = () => {
             })
         })
     }),
-    xp = l.div.attrs({
+    fp = l.div.attrs({
         className: "flex vc"
     })`
   width: 100%;
@@ -6589,28 +6568,28 @@ const pp = () => {
   flex-shrink: 0;
   z-index: 2;
 `,
-    vp = l.div`
+    gp = l.div`
   flex-shrink: 0;
   width: ${bi}px;
 `,
-    yp = l.div`
+    xp = l.div`
   flex: 1;
   height: ${Mt}px;
   overflow: hidden;
 `,
-    bp = l.div.attrs({
+    vp = l.div.attrs({
         className: "flex-center"
     })`
   height: ${Mt}px;
 `,
-    wp = l.div.attrs({
+    yp = l.div.attrs({
         className: "flex-center maxWidth"
     })`
   height: ${Mt}px;
   font-size: 22px;
   font-weight: 400;
 `,
-    jp = l.div.attrs({
+    bp = l.div.attrs({
         className: "flex"
     })`
   flex-shrink: 0;
@@ -6625,7 +6604,7 @@ const pp = () => {
                 return
             }
             r(s => s - 1), e.onTick && e.onTick()
-        }, 1e3), t.jsx(Cp, {
+        }, 1e3), t.jsx(wp, {
             layoutId: "time-circle",
             transition: {
                 duration: .5
@@ -6634,7 +6613,7 @@ const pp = () => {
             children: n
         })
     },
-    Cp = l(U.div).attrs({
+    wp = l(U.div).attrs({
         className: "flex hc vc"
     })`
   height: 70px;
@@ -6644,7 +6623,7 @@ const pp = () => {
   border-radius: 50%;
   line-height: 1;
 `,
-    Sp = j(e => {
+    jp = j(e => {
         const {
             pardy: {
                 playersAnswered: n,
@@ -6667,15 +6646,15 @@ const pp = () => {
             }, f * 1e3)
         }, []);
         const o = c.useMemo(() => s.questionDuration, []);
-        return t.jsx($p, {
-            children: t.jsxs(Tp, {
+        return t.jsx(Cp, {
+            children: t.jsxs(Sp, {
                 style: {
                     marginTop: e.spaceBetweenQuestionAndEdgeOfContainer
                 },
                 children: [t.jsx(wi, {
                     seconds: o,
                     onFinish: e.setToTimesUpScreen
-                }), t.jsxs(Ep, {
+                }), t.jsxs($p, {
                     initial: {
                         opacity: 0
                     },
@@ -6690,24 +6669,24 @@ const pp = () => {
             })
         })
     }),
-    $p = l.div.attrs({
+    Cp = l.div.attrs({
         className: "maxWidth maxHeight flex vc hc"
     })``,
-    Tp = l.div.attrs({
+    Sp = l.div.attrs({
         className: "flex vc"
     })`
   justify-content: space-between;
   width: 90%;
   opacity: 0.9;
 `,
-    Ep = l(U.div)`
+    $p = l(U.div)`
   font-size: 24px;
 `,
-    Op = e => {
+    Tp = e => {
         const n = () => {
             z(g.pardy.tick, {})
         };
-        return t.jsx(_p, {
+        return t.jsx(Ep, {
             children: t.jsx(wi, {
                 seconds: 3,
                 onFinish: e.setToAskScreen,
@@ -6718,10 +6697,10 @@ const pp = () => {
             })
         })
     },
-    _p = l.div.attrs({
+    Ep = l.div.attrs({
         className: "flex maxWidth maxHeight hc vc"
     })``,
-    kp = e => {
+    Op = e => {
         const [n, r] = c.useState(!1);
         return c.useEffect(() => {
             r(!0), setTimeout(() => {
@@ -6730,8 +6709,8 @@ const pp = () => {
                     i.fade(i.volume(), e.inFinale ? Ge.finaleMusicVolume : Ge.musicVolume, 1e3)
                 }
             }, 2500)
-        }, []), t.jsx(Ip, {
-            children: t.jsxs(Rp, {
+        }, []), t.jsx(_p, {
+            children: t.jsxs(kp, {
                 style: {
                     marginTop: e.spaceBetweenQuestionAndEdgeOfContainer
                 },
@@ -6743,7 +6722,7 @@ const pp = () => {
                         active: n,
                         config: rt
                     })
-                }), t.jsx(Dp, {
+                }), t.jsx(Ip, {
                     initial: {
                         scale: 0,
                         opacity: .3
@@ -6761,39 +6740,39 @@ const pp = () => {
             })
         })
     },
-    Ip = l.div.attrs({
+    _p = l.div.attrs({
         className: "flex maxWidth maxHeight vc hc"
     })``,
-    Rp = l.div``,
-    Dp = l(U.div)`
+    kp = l.div``,
+    Ip = l(U.div)`
   font-size: 36px;
-  font-weight: ${Fe.Bold};
+  font-weight: ${Be.Bold};
 `,
-    Pp = j(e => {
+    Rp = j(e => {
         const {
             pardy: {
                 questionStatus: n
             }
         } = c.useContext(D), [r, i] = c.useState(!1), s = a => {
             a && i(!0), e.setToTimesUpScreen(a)
-        }, o = () => n === je.preview ? t.jsx(Op, {
+        }, o = () => n === je.preview ? t.jsx(Tp, {
             setToAskScreen: e.setToAskScreen,
             spaceBetweenQuestionAndEdgeOfContainer: e.spaceBetweenQuestionAndEdgeOfContainer
-        }) : n === je.timesUp ? t.jsx(kp, {
+        }) : n === je.timesUp ? t.jsx(Op, {
             spaceBetweenQuestionAndEdgeOfContainer: e.spaceBetweenQuestionAndEdgeOfContainer,
             everybodyAnswered: r,
             inFinale: e.inFinale
-        }) : n === je.ask ? t.jsx(Sp, {
+        }) : n === je.ask ? t.jsx(jp, {
             spaceBetweenQuestionAndEdgeOfContainer: e.spaceBetweenQuestionAndEdgeOfContainer,
             setToTimesUpScreen: s
         }) : null;
         return t.jsx($r, {
-            children: t.jsx(Ap, {
+            children: t.jsx(Dp, {
                 children: o()
             })
         })
     }),
-    Ap = l.div.attrs({
+    Dp = l.div.attrs({
         className: "maxWidth"
     })`
   height: 25%;
@@ -6802,7 +6781,7 @@ const pp = () => {
         const e = Nt();
         return e ? u.kit.questions.find(r => r._id === e.questionId) : null
     },
-    Np = j(e => {
+    Pp = j(e => {
         const n = c.useRef(),
             [, r] = vt(n),
             i = c.useRef(),
@@ -6813,7 +6792,7 @@ const pp = () => {
             const d = (r - s) / 2;
             e.onSpaceBetweenChanged(d)
         }, [r, s]);
-        const a = () => o.text ? o.audio || o.image ? t.jsx(go, {
+        const a = () => o.text ? o.audio || o.image ? t.jsx(xo, {
             text: o.text,
             image: o.image,
             audio: o.audio,
@@ -6853,8 +6832,8 @@ const pp = () => {
   overflow: hidden;
   height: 90%;
 `,
-    Mp = e => t.jsx(Bp, {
-        children: t.jsx(Fp, {
+    Ap = e => t.jsx(Np, {
+        children: t.jsx(Mp, {
             style: {
                 marginBottom: e.spaceBetweenQuestionAndEdgeOfContainer
             },
@@ -6875,14 +6854,14 @@ const pp = () => {
             })
         })
     }),
-    Bp = l.div.attrs({
+    Np = l.div.attrs({
         className: "flex maxWidth maxHeight vc"
     })`
   justify-content: flex-end;
   width: 90%;
 `,
-    Fp = l(U.div)``,
-    $i = e => t.jsx(Lp, {
+    Mp = l(U.div)``,
+    $i = e => t.jsx(Fp, {
         style: {
             height: e.height || 15
         },
@@ -6905,7 +6884,7 @@ const pp = () => {
             }
         })
     }),
-    Lp = l.div.attrs({
+    Fp = l.div.attrs({
         className: "maxWidth"
     })`
   background: rgba(255, 255, 255, 0.4);
@@ -6922,12 +6901,12 @@ const pp = () => {
             y: 0
         }
     },
-    Wp = e => t.jsx(Vp, {
-        children: t.jsx(zp, {
+    Bp = e => t.jsx(Lp, {
+        children: t.jsx(Wp, {
             style: {
                 marginBottom: e.spaceBetweenQuestionAndEdgeOfContainer
             },
-            children: t.jsx(Hp, {
+            children: t.jsx(Vp, {
                 initial: tr.out,
                 animate: tr.in,
                 transition: {
@@ -6942,32 +6921,32 @@ const pp = () => {
             })
         })
     }),
-    Vp = l.div.attrs({
+    Lp = l.div.attrs({
         className: "flex maxWidth maxHeight hc vc"
     })``,
-    zp = l.div`
+    Wp = l.div`
   width: 90%;
 `,
-    Hp = l(U.div).attrs({
+    Vp = l(U.div).attrs({
         className: "maxWidth"
     })``,
-    Gp = j(e => {
+    zp = j(e => {
         const {
             pardy: {
                 questionStatus: n
             }
-        } = c.useContext(D), r = () => n === je.ask ? t.jsx(Mp, {
+        } = c.useContext(D), r = () => n === je.ask ? t.jsx(Ap, {
             spaceBetweenQuestionAndEdgeOfContainer: e.spaceBetweenQuestionAndEdgeOfContainer,
             setToTimesUpScreen: () => e.setToTimesUpScreen(!0)
-        }) : n === je.timesUp ? t.jsx(Wp, {
+        }) : n === je.timesUp ? t.jsx(Bp, {
             spaceBetweenQuestionAndEdgeOfContainer: e.spaceBetweenQuestionAndEdgeOfContainer,
             animateOut: e.animateOut
         }) : null;
-        return t.jsx(Up, {
+        return t.jsx(Hp, {
             children: r()
         })
     }),
-    Up = l.div.attrs({
+    Hp = l.div.attrs({
         className: "maxWidth flex hc"
     })`
   height: 25%;
@@ -6989,7 +6968,7 @@ const pp = () => {
             x: "-100%"
         }
     },
-    qp = j(() => {
+    Gp = j(() => {
         const {
             pardy: e
         } = c.useContext(D), [n, r] = c.useState(0), [i, s] = c.useState(!1), o = c.useMemo(() => !Nt().categoryItemId, []);
@@ -7014,8 +6993,8 @@ const pp = () => {
             E = k => {
                 e.questionStatus = je.timesUp, k && (z(g.pardy.complete, {}), g.pardy.countdown.fade(g.pardy.countdown.volume(), 0, 600))
             };
-        return t.jsx(Yp, {
-            children: t.jsxs(Qp, {
+        return t.jsx(Up, {
+            children: t.jsxs(qp, {
                 initial: vn.out,
                 animate: i ? vn.movingOut : vn.in,
                 onAnimationComplete: m,
@@ -7023,14 +7002,14 @@ const pp = () => {
                     duration: .7,
                     ease: "easeOut"
                 },
-                children: [t.jsx(Pp, {
+                children: [t.jsx(Rp, {
                     setToAskScreen: $,
                     setToTimesUpScreen: E,
                     spaceBetweenQuestionAndEdgeOfContainer: n,
                     inFinale: o
-                }), t.jsx(Np, {
+                }), t.jsx(Pp, {
                     onSpaceBetweenChanged: f
-                }), t.jsx(Gp, {
+                }), t.jsx(zp, {
                     animateOut: d,
                     spaceBetweenQuestionAndEdgeOfContainer: n,
                     setToTimesUpScreen: E
@@ -7038,13 +7017,13 @@ const pp = () => {
             })
         })
     }),
-    Yp = l.div.attrs({
+    Up = l.div.attrs({
         className: "maxWidth maxHeight"
     })`
   background: rgba(0, 0, 0, 0.2);
   z-index: 2;
 `,
-    Qp = l(U.div).attrs({
+    qp = l(U.div).attrs({
         className: "maxWidth maxHeight flex flex-column"
     })`
   overflow: hidden;
@@ -7069,7 +7048,7 @@ const pp = () => {
             y: "100%"
         }
     },
-    Jp = j(e => {
+    Yp = j(e => {
         const {
             pardy: n
         } = c.useContext(D), [r, i] = c.useState(!1), [s, o] = c.useState(!1), a = c.useMemo(Nt, []);
@@ -7085,13 +7064,13 @@ const pp = () => {
                 s && e.setToQuestionScreen()
             };
         return !a || !a.categoryItemId || !a.categoryName ? null : t.jsxs(t.Fragment, {
-            children: [t.jsx(Kp, {
-                children: t.jsx(Zp, {
+            children: [t.jsx(Qp, {
+                children: t.jsx(Jp, {
                     layoutId: `item-${a.categoryItemId}`,
                     transition: {
                         duration: .9
                     },
-                    children: t.jsxs(Xp, {
+                    children: t.jsxs(Kp, {
                         initial: bn.in,
                         animate: s ? bn.out : bn.in,
                         transition: {
@@ -7099,7 +7078,7 @@ const pp = () => {
                             duration: .7
                         },
                         onAnimationComplete: m,
-                        children: [t.jsx(eh, {
+                        children: [t.jsx(Zp, {
                             initial: {
                                 opacity: 0
                             },
@@ -7110,7 +7089,7 @@ const pp = () => {
                                 duration: .5
                             },
                             children: a.categoryName
-                        }), t.jsx(th, {
+                        }), t.jsx(Xp, {
                             layoutId: `item-${a.categoryItemId}-amount`,
                             transition: {
                                 duration: .9
@@ -7119,8 +7098,8 @@ const pp = () => {
                         })]
                     })
                 })
-            }), t.jsx(nh, {
-                children: t.jsx(sh, {
+            }), t.jsx(eh, {
+                children: t.jsx(th, {
                     initial: yn.out,
                     animate: r ? yn.out : yn.in,
                     transition: {
@@ -7136,42 +7115,42 @@ const pp = () => {
             })]
         })
     }),
-    Kp = l.div.attrs({
+    Qp = l.div.attrs({
         className: "flex hc vc maxWidth maxHeight"
     })``,
-    Zp = l(U.div).attrs({
+    Jp = l(U.div).attrs({
         className: "maxWidth maxHeight"
     })`
   background: rgba(0, 0, 0, 0.2);
 `,
-    Xp = l(U.div).attrs({
+    Kp = l(U.div).attrs({
         className: "flex flex-column hc vc maxWidth maxHeight"
     })``,
     Ti = l(U.div)`
   text-shadow: 0px 5px 5px ${Ne.Black};
 `,
-    eh = l(Ti)`
+    Zp = l(Ti)`
   font-size: 42px;
 `,
-    th = l(Ti)`
+    Xp = l(Ti)`
   font-size: 142px;
 `,
-    nh = l.div.attrs({
+    eh = l.div.attrs({
         className: "maxWidth flex hc"
     })`
   position: absolute;
   bottom: 0;
   left: 0;
 `,
-    sh = l(U.div)`
+    th = l(U.div)`
   width: 80%;
 `,
-    rh = j(e => {
+    nh = j(e => {
         const {
             pardy: n
         } = c.useContext(D);
-        return t.jsxs(ih, {
-            children: [t.jsxs(oh, {
+        return t.jsxs(sh, {
+            children: [t.jsxs(rh, {
                 children: [n.betsPlaced, "/", n.playerCount, " bets placed"]
             }), t.jsx(Q, {
                 onClick: e.exit,
@@ -7185,23 +7164,23 @@ const pp = () => {
             })]
         })
     }),
-    ih = l.div.attrs({
+    sh = l.div.attrs({
         className: "maxWidth flex vcc"
     })`
   max-width: 900px;
   justify-content: space-between;
   margin-top: 40px;
 `,
-    oh = l.div`
+    rh = l.div`
   font-size: 24px;
-  font-weight: ${Fe.Bold};
+  font-weight: ${Be.Bold};
 `,
-    qt = e => {
+    Gt = e => {
         const {
             x: n,
             y: r
-        } = ch(Ue.random(4e3, 9e3));
-        return t.jsx(ah, {
+        } = ah(Ue.random(4e3, 9e3));
+        return t.jsx(ih, {
             initial: {
                 opacity: 0
             },
@@ -7211,7 +7190,7 @@ const pp = () => {
             transition: {
                 duration: e.animatingOut ? qn : 1.4
             },
-            children: t.jsx(lh, {
+            children: t.jsx(oh, {
                 style: {
                     x: n,
                     y: r
@@ -7219,7 +7198,7 @@ const pp = () => {
             })
         })
     },
-    ah = l(U.div).attrs({
+    ih = l(U.div).attrs({
         className: "maxWidth maxHeight"
     })`
   position: absolute;
@@ -7229,7 +7208,7 @@ const pp = () => {
   pointer-events: none;
   overflow: hidden;
 `,
-    lh = l(U.div)`
+    oh = l(U.div)`
   height: 220px;
   width: 220px;
   border-radius: 50%;
@@ -7237,7 +7216,7 @@ const pp = () => {
   background: #fff59d;
   opacity: 0.2;
 `,
-    ch = (e = 5e3) => {
+    ah = (e = 5e3) => {
         const n = Os(0),
             r = Os(0),
             i = window.innerWidth,
@@ -7292,7 +7271,7 @@ const pp = () => {
         }
     },
     qn = .7,
-    dh = j(e => {
+    lh = j(e => {
         const {
             pardy: n
         } = c.useContext(D), [r, i] = c.useState(!1);
@@ -7315,14 +7294,14 @@ const pp = () => {
                 r && e.setToQuestionScreen()
             };
         return t.jsxs(t.Fragment, {
-            children: [t.jsx(uh, {
+            children: [t.jsx(ch, {
                 initial: wn.out,
                 animate: r ? wn.movingOut : wn.in,
                 transition: {
                     duration: r ? qn : .5
                 },
                 onAnimationComplete: o,
-                children: t.jsxs(ph, {
+                children: t.jsxs(dh, {
                     initial: jn.out,
                     animate: r ? jn.movingOut : jn.in,
                     transition: {
@@ -7330,70 +7309,70 @@ const pp = () => {
                         delay: r ? 0 : 3,
                         ease: "easeOut"
                     },
-                    children: [t.jsx(hh, {
+                    children: [t.jsx(uh, {
                         children: "The Finale"
-                    }), t.jsxs(mh, {
-                        children: [t.jsx(Yt, {
+                    }), t.jsxs(ph, {
+                        children: [t.jsx(Ut, {
                             children: "You will be asked one more question"
-                        }), t.jsx(Yt, {
+                        }), t.jsx(Ut, {
                             children: "Make your bet on whether or not you'll answer correctly"
-                        }), t.jsx(Yt, {
+                        }), t.jsx(Ut, {
                             children: "Bet as much or as little as you want; the maximum is your current cash amount"
-                        }), t.jsx(Yt, {
+                        }), t.jsx(Ut, {
                             children: "Powers are disabled for The Finale"
                         })]
-                    }), t.jsx(rh, {
+                    }), t.jsx(nh, {
                         exit: s
                     })]
                 })
             }), t.jsxs(t.Fragment, {
-                children: [t.jsx(qt, {
+                children: [t.jsx(Gt, {
                     animatingOut: r
-                }), t.jsx(qt, {
+                }), t.jsx(Gt, {
                     animatingOut: r
-                }), t.jsx(qt, {
+                }), t.jsx(Gt, {
                     animatingOut: r
-                }), t.jsx(qt, {
+                }), t.jsx(Gt, {
                     animatingOut: r
                 })]
             })]
         })
     }),
-    uh = l(U.div).attrs({
+    ch = l(U.div).attrs({
         className: "maxWidth maxHeight scroll-y"
     })``,
-    ph = l(U.div).attrs({
+    dh = l(U.div).attrs({
         className: "maxWidth flex hc vc flex-column"
     })`
   min-height: 100%;
   padding: 20px;
   z-index: 3;
 `,
-    hh = l.div`
+    uh = l.div`
   text-transform: uppercase;
   font-size: 94px;
-  font-weight: ${Fe.UltraBold};
+  font-weight: ${Be.UltraBold};
   text-decoration: underline;
   margin-bottom: 20px;
 `,
-    mh = l.ul`
+    ph = l.ul`
   font-size: 26px;
-  font-weight: ${Fe.Normal};
+  font-weight: ${Be.Normal};
 `,
-    Yt = l.li``,
-    fh = j(e => {
+    Ut = l.li``,
+    hh = j(e => {
         const {
             pardy: n
         } = c.useContext(D), r = () => {
             n.questionScreen = he.question
         };
-        return n.questionScreen === he.preview ? t.jsx(Jp, {
+        return n.questionScreen === he.preview ? t.jsx(Yp, {
             setToQuestionScreen: r
-        }) : n.questionScreen === he.finale ? t.jsx(dh, {
+        }) : n.questionScreen === he.finale ? t.jsx(lh, {
             setToQuestionScreen: r
-        }) : t.jsx(qp, {})
+        }) : t.jsx(Gp, {})
     }),
-    gh = e => {
+    mh = e => {
         const n = c.useRef(),
             [, r] = vt(n),
             i = c.useRef(),
@@ -7424,7 +7403,7 @@ const pp = () => {
             })
         })
     },
-    xh = j(e => {
+    fh = j(e => {
         const {
             pardy: {
                 playerCount: n,
@@ -7456,18 +7435,18 @@ const pp = () => {
                 }
             }
         }, []);
-        return t.jsx(vh, {
-            children: t.jsxs(yh, {
+        return t.jsx(gh, {
+            children: t.jsxs(xh, {
                 style: {
                     marginBottom: e.spaceBetweenContentAndEdgeOfContainer
                 },
                 children: [t.jsxs("div", {
-                    children: [t.jsxs(bh, {
+                    children: [t.jsxs(vh, {
                         children: [r, "/", n, " answered correctly"]
-                    }), i ? t.jsxs(wh, {
+                    }), i ? t.jsxs(yh, {
                         children: [i, " was the first to answer correctly!"]
                     }) : null]
-                }), t.jsx(jh, {
+                }), t.jsx(bh, {
                     children: t.jsx(Q, {
                         type: "primary",
                         size: "large",
@@ -7481,49 +7460,49 @@ const pp = () => {
             })
         })
     }),
-    vh = l.div.attrs({
+    gh = l.div.attrs({
         className: "maxWidth flex vc hc"
     })`
   height: 25%;
 `,
-    yh = l.div.attrs({
+    xh = l.div.attrs({
         className: "flex"
     })`
   width: 90%;
   justify-content: space-between;
   align-items: flex-end;
 `,
-    bh = l.div`
+    vh = l.div`
   font-weight: 400;
   font-size: 22px;
 `,
-    wh = l.div`
+    yh = l.div`
   font-weight: 300;
   font-size: 18px;
   color: rgba(255, 255, 255, 0.7);
   margin-top: 2px;
 `,
-    jh = l.div``,
-    Ch = e => t.jsx(Sh, {
-        children: t.jsx($h, {
+    bh = l.div``,
+    wh = e => t.jsx(jh, {
+        children: t.jsx(Ch, {
             style: {
                 marginTop: e.spaceBetweenContentAndEdgeOfContainer
             },
-            children: t.jsx(Th, {
+            children: t.jsx(Sh, {
                 children: "Answer:"
             })
         })
     }),
-    Sh = l.div.attrs({
+    jh = l.div.attrs({
         className: "maxWidth flex vc hc"
     })`
   height: 25%;
 `,
-    $h = l.div``,
-    Th = l.div`
+    Ch = l.div``,
+    Sh = l.div`
   font-size: 32px;
 `,
-    Eh = e => ({
+    $h = e => ({
         out: {
             background: e,
             opacity: 0
@@ -7553,15 +7532,15 @@ const pp = () => {
             scale: .8
         }
     },
-    Oh = e => {
+    Th = e => {
         const [n, r] = c.useState(!1), [i, s] = c.useState(0), o = () => {
             r(!0), setTimeout(() => {
                 z(g.pardy.swoosh, {})
             }, 200)
         }, a = () => {
             n && e.setToHomeScreen()
-        }, d = Eh("#388e3c");
-        return t.jsx(_h, {
+        }, d = $h("#388e3c");
+        return t.jsx(Eh, {
             initial: {
                 background: "rgba(0, 0, 0, 0.2)",
                 opacity: 1
@@ -7573,44 +7552,44 @@ const pp = () => {
                 ease: "easeOut"
             },
             onAnimationComplete: a,
-            children: t.jsxs(kh, {
+            children: t.jsxs(Oh, {
                 initial: Cn.initial,
                 animate: n ? Cn.out : Cn.in,
                 transition: {
                     duration: .7,
                     ease: "easeOut"
                 },
-                children: [t.jsx(Ch, {
+                children: [t.jsx(wh, {
                     spaceBetweenContentAndEdgeOfContainer: i
-                }), t.jsx(gh, {
+                }), t.jsx(mh, {
                     onSpaceBetweenChanged: s
-                }), t.jsx(xh, {
+                }), t.jsx(fh, {
                     spaceBetweenContentAndEdgeOfContainer: i,
                     exit: o
                 })]
             })
         })
     },
-    _h = l(U.div).attrs({
+    Eh = l(U.div).attrs({
         className: "maxWidth maxHeight"
     })`
   overflow: hidden;
 `,
-    kh = l(U.div).attrs({
+    Oh = l(U.div).attrs({
         className: "maxWidth maxHeight"
     })``,
-    Ei = e => t.jsxs(Ih, {
+    Ei = e => t.jsxs(_h, {
         children: [t.jsx("div", {
             className: "area",
             children: t.jsxs("ul", {
                 className: "circles",
                 children: [t.jsx("li", {}), t.jsx("li", {}), t.jsx("li", {}), t.jsx("li", {}), t.jsx("li", {}), t.jsx("li", {}), t.jsx("li", {}), t.jsx("li", {}), t.jsx("li", {}), t.jsx("li", {})]
             })
-        }), t.jsx(Rh, {
+        }), t.jsx(kh, {
             children: e.children
         })]
     }),
-    Ih = l.div`
+    _h = l.div`
   flex: 1;
   height: 100%;
   width: 100%;
@@ -7734,38 +7713,38 @@ const pp = () => {
     }
   }
 `,
-    Rh = l.div.attrs({
+    kh = l.div.attrs({
         className: "maxAll"
     })`
   position: absolute;
   top: 0;
   left: 0;
 `,
-    Dh = "rgba(0,0,0,0.2)",
-    Ph = j(() => {
+    Ih = "rgba(0,0,0,0.2)",
+    Rh = j(() => {
         const {
             pardy: e
         } = c.useContext(D), n = () => {
             e.screen = we.home
-        }, r = () => e.screen === we.home ? t.jsx(pp, {}) : e.screen === we.answer ? t.jsx(Oh, {
+        }, r = () => e.screen === we.home ? t.jsx(dp, {}) : e.screen === we.answer ? t.jsx(Th, {
             setToHomeScreen: n
-        }) : t.jsx(fh, {
+        }) : t.jsx(hh, {
             setToHomeScreen: n
-        }), s = !!(e && e.currentRound && e.currentRound.type === "Finale") ? "rgba(0,0,0,0.4)" : Dh;
+        }), s = !!(e && e.currentRound && e.currentRound.type === "Finale") ? "rgba(0,0,0,0.4)" : Ih;
         return t.jsx($r, {
             children: t.jsx(Ei, {
-                children: t.jsxs(Ah, {
+                children: t.jsxs(Dh, {
                     style: {
                         background: s
                     },
-                    children: [t.jsx(fp, {}), t.jsx(Nh, {
+                    children: [t.jsx(hp, {}), t.jsx(Ph, {
                         children: r()
                     })]
                 })
             })
         })
     }),
-    Ah = l.div.attrs({
+    Dh = l.div.attrs({
         className: "flex flex-column"
     })`
   font-family: 'Londrina Solid', cursive;
@@ -7777,26 +7756,26 @@ const pp = () => {
     overflow: hidden;
   }
 `,
-    Nh = l.div`
+    Ph = l.div`
   flex: 1;
   overflow: hidden;
 `;
-var Mh = Object.getOwnPropertyDescriptor,
-    Bh = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? Mh(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var Ah = Object.getOwnPropertyDescriptor,
+    Nh = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? Ah(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-const Fh = l.div`
+const Mh = l.div`
   height: 100vh;
   width: 100%;
-  font-family: ${F.fontFamilyName};
+  font-family: ${B.fontFamilyName};
   display: flex;
   flex-direction: column;
 `;
 let Yn = class extends c.Component {
     componentDidMount() {
         if (this.props.blockComponentDidMountScript) return;
-        Qt({
+        qt({
             name: "The Game",
             action: "has started!",
             customTextColor: C.LightSuccessGreen
@@ -7807,42 +7786,42 @@ let Yn = class extends c.Component {
         })
     }
     render() {
-        return de() ? t.jsx(El, {}) : Be() ? t.jsx(Pn, {}) : me() ? t.jsx(Hn, {}) : X() ? t.jsx(Hu, {}) : ae() ? t.jsx(Ph, {}) : t.jsxs(Fh, {
-            children: [t.jsx(Jt, {}), t.jsx(yl, {})]
+        return de() ? t.jsx($l, {}) : Fe() ? t.jsx(Pn, {}) : me() ? t.jsx(Hn, {}) : X() ? t.jsx(Vu, {}) : ae() ? t.jsx(Rh, {}) : t.jsxs(Mh, {
+            children: [t.jsx(Yt, {}), t.jsx(xl, {})]
         })
     }
 };
-Yn = Bh([I("gameOptions"), j], Yn);
-var Lh = Object.getOwnPropertyDescriptor,
-    Wh = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? Lh(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+Yn = Nh([I("gameOptions"), j], Yn);
+var Fh = Object.getOwnPropertyDescriptor,
+    Bh = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? Fh(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-const Vh = (e, n) => {
+const Lh = (e, n) => {
         const r = e.name.toUpperCase(),
             i = n.name.toUpperCase();
         return r < i ? -1 : r > i ? 1 : 0
     },
-    zh = l.div`
+    Wh = l.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 3px;
 `,
-    Hh = l.img.attrs({
+    Vh = l.img.attrs({
         src: `${_("power-fight.svg")}`
     })`
   height: 136px;
   margin-bottom: 12px;
   margin-top: 8px;
 `,
-    Gh = l.h2`
+    zh = l.h2`
   font-size: 44px;
   font-family: 'Product Sans';
   font-weight: bold;
   margin-bottom: 3px;
 `,
-    Uh = l.div`
+    Hh = l.div`
   display: flex;
   flex-wrap: wrap;
 `;
@@ -7861,19 +7840,19 @@ let Qn = class extends c.Component {
             maskClosable: !1,
             closable: !1,
             keyboard: !1,
-            children: [t.jsxs(zh, {
-                children: [t.jsx(Hh, {
+            children: [t.jsxs(Wh, {
+                children: [t.jsx(Vh, {
                     className: "animated pulse infinite"
-                }), t.jsx(Gh, {
+                }), t.jsx(zh, {
                     children: "Choose The Boss"
                 })]
             }), t.jsx("div", {
-                children: t.jsx(Uh, {
-                    children: e.sort(Vh).map(n => t.jsx(Fi, {
+                children: t.jsx(Hh, {
+                    children: e.sort(Lh).map(n => t.jsx(Bi, {
                         "data-id": n.id,
                         style: {
                             display: "flex",
-                            fontFamily: F.fontFamilyName,
+                            fontFamily: B.fontFamilyName,
                             margin: "4px",
                             fontSize: "17px",
                             color: "black"
@@ -7892,10 +7871,10 @@ let Qn = class extends c.Component {
         })
     }
 };
-Qn = Wh([I("engine", "players", "gameValues"), j], Qn);
-var qh = Object.getOwnPropertyDescriptor,
-    Yh = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? qh(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+Qn = Bh([I("engine", "players", "gameValues"), j], Qn);
+var Gh = Object.getOwnPropertyDescriptor,
+    Uh = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? Gh(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
 let Jn = class extends c.Component {
@@ -7919,13 +7898,13 @@ let Jn = class extends c.Component {
         })
     }
 };
-Jn = Yh([I("gameValues"), j], Jn);
-var Qh = Object.getOwnPropertyDescriptor,
-    Jh = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? Qh(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+Jn = Uh([I("gameValues"), j], Jn);
+var qh = Object.getOwnPropertyDescriptor,
+    Yh = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? qh(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-const Kh = l.div`
+const Qh = l.div`
   padding: 18px;
   width: 100%;
   background: ${e=>e.background};
@@ -7948,7 +7927,7 @@ let Kn = class extends c.Component {
                     type: n,
                     value: r
                 } = e;
-            return le() ? "Be the first to acquire all 6 Infinity Stones!" : de() ? "Be the last team to survive!" : Be() ? "Work together to stay above the lava as long as you can!" : me() ? Pe.goal : X() ? "Guess student drawings to earn the most points!" : ae() ? "Answer questions correctly & choose the right power to come out on top!" : n === ye.time ? `Try to make as much money as you can in ${Qe(r)} ${ie("minute",r)}!` : n === ye.race ? `The first ${this.getNoun()} to earn ${ne(r)} wins!` : n === ye.allIn ? `The game ends once the combined balance of all ${this.getNoun(!0)} reaches ${ne(r)}!` : ""
+            return le() ? "Be the first to acquire all 6 Infinity Stones!" : de() ? "Be the last team to survive!" : Fe() ? "Work together to stay above the lava as long as you can!" : me() ? Pe.goal : X() ? "Guess student drawings to earn the most points!" : ae() ? "Answer questions correctly & choose the right power to come out on top!" : n === ye.time ? `Try to make as much money as you can in ${Qe(r)} ${ie("minute",r)}!` : n === ye.race ? `The first ${this.getNoun()} to earn ${ne(r)} wins!` : n === ye.allIn ? `The game ends once the combined balance of all ${this.getNoun(!0)} reaches ${ne(r)}!` : ""
         }
     }
     render() {
@@ -7958,28 +7937,28 @@ let Kn = class extends c.Component {
                     type: r
                 }
             } = this.props.gameOptions;
-            return le() || de() || Be() ? _s : me() ? yo : X() ? jr : ae() ? $n : r === ye.time ? so : r === ye.race ? $n : r === ye.allIn ? bo : _s
+            return le() || de() || Fe() ? _s : me() ? bo : X() ? jr : ae() ? $n : r === ye.time ? so : r === ye.race ? $n : r === ye.allIn ? wo : _s
         })();
-        return t.jsxs(Kh, {
+        return t.jsxs(Qh, {
             background: this.getContainerBackground(),
             color: this.getContainerColor(),
             children: [t.jsx(n, {
                 style: {
                     marginRight: 7
                 }
-            }), t.jsx(B, {
+            }), t.jsx(F, {
                 text: this.getMessage()
             })]
         })
     }
 };
-Kn = Jh([I("gameOptions"), j], Kn);
-var Zh = Object.getOwnPropertyDescriptor,
-    Xh = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? Zh(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+Kn = Yh([I("gameOptions"), j], Kn);
+var Jh = Object.getOwnPropertyDescriptor,
+    Kh = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? Jh(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-const em = l.div`
+const Zh = l.div`
   background: rgba(255, 255, 255, 0.2);
   padding: 15px;
   padding-top: 6px;
@@ -7988,7 +7967,7 @@ const em = l.div`
   font-size: 33px;
   margin: 6px 12px 6px 0px;
   border: ${e=>e.showBorder?"2px solid":"none"};
-  ${F.normal};
+  ${B.normal};
   cursor: pointer;
   &:hover {
     text-decoration: line-through;
@@ -8002,43 +7981,43 @@ let Zn = class extends c.Component {
         const {
             player: n
         } = this.props;
-        return t.jsx(em, {
+        return t.jsx(Zh, {
             onClick: this.banPlayer,
             showBorder: this.shouldShowBorder,
-            children: t.jsx(Lt, {
+            children: t.jsx(Ft, {
                 title: "Remove from Game",
                 children: n.name
             })
         })
     }
 };
-Zn = Xh([I("kit", "gameOptions"), j], Zn);
-var tm = Object.getOwnPropertyDescriptor,
-    nm = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? tm(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+Zn = Kh([I("kit", "gameOptions"), j], Zn);
+var Xh = Object.getOwnPropertyDescriptor,
+    em = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? Xh(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-const sm = "Start Game",
-    rm = l.div`
+const tm = "Start Game",
+    nm = l.div`
   display: flex;
   align-items: center;
 `,
-    im = l.div`
+    sm = l.div`
   padding: 6px 14px 6px 14px;
   border-radius: 4px;
   background: ${e=>e.disabled?C.DisabledGray:e.customColor||C.SuccessGreen};
   color: ${C.White};
-  ${F.black};
+  ${B.black};
   font-size: 24px;
   box-shadow: ${We.basic};
   transition: all 0.23s;
   cursor: ${e=>e.disabled?"not-allowed":"pointer"};
   &:hover {
-    background: ${e=>e.disabled?C.DisabledGray:mo(.1,e.customColor||C.SuccessGreen)};
+    background: ${e=>e.disabled?C.DisabledGray:fo(.1,e.customColor||C.SuccessGreen)};
     transform: scale(1.04);
   }
 `;
-let Xt = class extends c.Component {
+let Kt = class extends c.Component {
     constructor() {
         super(...arguments), this.playerCount = () => this.props.players.filteredPlayers.length, this.handleClickCallback = () => {
             if (Ee() && !this.props.onTeamScreen) {
@@ -8057,7 +8036,7 @@ let Xt = class extends c.Component {
                 this.props.ui.showingHumansVsZombiesPreScreen = !0;
                 return
             }
-            if (Be()) {
+            if (Fe()) {
                 this.props.ui.showingLavaPreScreen = !0;
                 return
             }
@@ -8114,15 +8093,15 @@ let Xt = class extends c.Component {
             }
             return {
                 disabled: e === 0 && ht(),
-                text: sm
+                text: tm
             }
         }
     }
     render() {
         const e = this.getButtonInfo();
         let n = () => null;
-        return e.disabled || (n = this.handleClick), t.jsx(rm, {
-            children: t.jsx(im, {
+        return e.disabled || (n = this.handleClick), t.jsx(nm, {
+            children: t.jsx(sm, {
                 onClick: n,
                 disabled: e.disabled,
                 children: e.text
@@ -8130,47 +8109,47 @@ let Xt = class extends c.Component {
         })
     }
 };
-Xt = nm([I("gameOptions", "gameValues", "players", "kit", "ui"), j], Xt);
-const om = l.div`
+Kt = em([I("gameOptions", "gameValues", "players", "kit", "ui"), j], Kt);
+const rm = l.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
 `,
-    am = l.div`
-  ${F.black};
+    im = l.div`
+  ${B.black};
   font-size: 28px;
 `,
-    lm = e => {
+    om = e => {
         const {
             amountOfPlayers: n
         } = e, r = c.useMemo(() => ae() ? "contestant" : "player", []);
-        return t.jsxs(om, {
-            children: [t.jsx(am, {
+        return t.jsxs(rm, {
+            children: [t.jsx(im, {
                 children: `${n} ${ie(r,n)}`
-            }), t.jsx(Xt, {})]
+            }), t.jsx(Kt, {})]
         })
     };
-var cm = Object.getOwnPropertyDescriptor,
-    dm = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? cm(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var am = Object.getOwnPropertyDescriptor,
+    lm = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? am(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-const um = l.div.attrs({
+const cm = l.div.attrs({
         className: "scroll-y"
     })`
   flex: 1;
   min-height: 0;
   color: ${e=>e.color};
 `,
-    pm = l.div`
+    dm = l.div`
   width: 100%;
   padding-left: 23px;
   padding-right: 23px;
   padding-top: 10px;
 `,
-    hm = l.div`
+    um = l.div`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -8182,12 +8161,12 @@ let Xn = class extends c.Component {
         super(...arguments), this.getContainerColor = () => X() ? C.Black : C.White
     }
     render() {
-        return t.jsx(um, {
+        return t.jsx(cm, {
             color: this.getContainerColor(),
-            children: t.jsxs(pm, {
-                children: [t.jsx(lm, {
+            children: t.jsxs(dm, {
+                children: [t.jsx(om, {
                     amountOfPlayers: this.props.players.filteredPlayers.length
-                }), t.jsx(hm, {
+                }), t.jsx(um, {
                     children: this.props.players.filteredPlayers.reverse().map(e => t.jsx(Zn, {
                         player: e
                     }, e.id))
@@ -8196,13 +8175,13 @@ let Xn = class extends c.Component {
         })
     }
 };
-Xn = dm([I("players"), j], Xn);
-var mm = Object.getOwnPropertyDescriptor,
-    fm = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? mm(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+Xn = lm([I("players"), j], Xn);
+var pm = Object.getOwnPropertyDescriptor,
+    hm = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? pm(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-const gm = "'Bowlby One SC', cursive";
+const mm = "'Bowlby One SC', cursive";
 let es = class extends c.Component {
     constructor() {
         super(...arguments), this.state = {
@@ -8258,17 +8237,17 @@ let es = class extends c.Component {
         }), g.lava.pantherShort.on("loaderror", this.startGame), g.lava.pantherShort.on("playerror", this.startGame)
     }
     render() {
-        return t.jsx(xm, {
-            children: t.jsx(vm, {
-                children: t.jsx(ym, {
+        return t.jsx(fm, {
+            children: t.jsx(gm, {
+                children: t.jsx(xm, {
                     children: this.state.content
                 })
             })
         })
     }
 };
-es = fm([I("gameValues", "ui"), j], es);
-const xm = l.div`
+es = hm([I("gameValues", "ui"), j], es);
+const fm = l.div`
   background: linear-gradient(182deg, #c86300, #dd3725);
   background-size: 400% 400%;
   background-size: cover;
@@ -8276,7 +8255,7 @@ const xm = l.div`
   width: 100vw;
   box-sizing: border-box;
 `,
-    vm = l.div`
+    gm = l.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8284,20 +8263,20 @@ const xm = l.div`
   width: 100vw;
   font-size: 65px;
   padding: 50px;
-  font-family: ${gm};
+  font-family: ${mm};
   text-align: center;
 `,
-    ym = l.div`
+    xm = l.div`
   max-width: 800px;
 `,
-    bm = l.div`
+    vm = l.div`
   height: 100vh;
   width: 100%;
-  font-family: ${F.fontFamilyName};
+  font-family: ${B.fontFamilyName};
   display: flex;
   animation-duration: 0.5s;
 `,
-    wm = l.div.attrs({
+    ym = l.div.attrs({
         className: "animated fadeIn"
     })`
   flex: 1;
@@ -8305,7 +8284,7 @@ const xm = l.div`
   display: flex;
   flex-direction: column;
 `,
-    jm = j(() => {
+    bm = j(() => {
         const {
             ui: e
         } = c.useContext(D);
@@ -8318,18 +8297,18 @@ const xm = l.div`
                     volume: Me() ? Ge.musicVolume : 0
                 })
             }
-            Be() && (e.backgroundColor = "#ac1900"), me() && (e.backgroundColor = "#000a12"), X() && (e.backgroundColor = "#f1f2f3")
+            Fe() && (e.backgroundColor = "#ac1900"), me() && (e.backgroundColor = "#000a12"), X() && (e.backgroundColor = "#f1f2f3")
         }, []);
-        const n = c.useMemo(() => ae() ? uo : c.Fragment, []);
+        const n = c.useMemo(() => ae() ? po : c.Fragment, []);
         return e.showingLavaPreScreen ? t.jsx(es, {}) : t.jsx(n, {
-            children: t.jsxs(bm, {
-                children: [t.jsxs(wm, {
+            children: t.jsxs(vm, {
+                children: [t.jsxs(ym, {
                     children: [t.jsx(Jn, {}), t.jsx(Xn, {}), t.jsx(Kn, {})]
                 }), t.jsx(Qn, {})]
             })
         })
     });
-class Cm extends c.Component {
+class wm extends c.Component {
     constructor() {
         super(...arguments), this.state = {
             showSurvived: !1,
@@ -8380,12 +8359,12 @@ class Cm extends c.Component {
         }, this.props.id) : null
     }
 }
-var Sm = Object.getOwnPropertyDescriptor,
-    $m = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? Sm(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var jm = Object.getOwnPropertyDescriptor,
+    Cm = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? jm(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-const Tm = e => new Promise(n => setTimeout(() => n(), e)),
+const Sm = e => new Promise(n => setTimeout(() => n(), e)),
     nr = e => {
         let n = "";
         return e.forEach((r, i) => {
@@ -8406,9 +8385,9 @@ const Tm = e => new Promise(n => setTimeout(() => n(), e)),
   align-items: center;
   background: black;
   overflow: scroll;
-  ${F.normal}
+  ${B.normal}
 `,
-    Em = l.div`
+    $m = l.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8425,7 +8404,7 @@ let ts = class extends c.Component {
             stage: "Countdown",
             secondsLeft: 0,
             survivesResult: null
-        }, this.getContent = () => this.state.stage === "Results" ? t.jsx(Cm, {
+        }, this.getContent = () => this.state.stage === "Results" ? t.jsx(wm, {
             ...this.state.survivesResult
         }, this.state.survivesResult.id + "-parent") : this.state.stage === "Countdown" ? t.jsxs(t.Fragment, {
             children: [t.jsx("div", {
@@ -8508,7 +8487,7 @@ let ts = class extends c.Component {
             for (let r = 0; r < n.length; r++) r === 0 && g.eventBoom.play(), this.setState({
                 survivesResult: n[r],
                 stage: "Results"
-            }), await Tm(4e3);
+            }), await Sm(4e3);
             g.eventBoom.play(), this.setState({
                 stage: "Final"
             })
@@ -8528,16 +8507,16 @@ let ts = class extends c.Component {
     }
     render() {
         return t.jsx(Oi, {
-            children: t.jsx(Em, {
+            children: t.jsx($m, {
                 children: this.getContent()
             })
         })
     }
 };
-ts = $m([I("gameValues")], ts);
-var Om = Object.getOwnPropertyDescriptor,
-    _m = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? Om(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+ts = Cm([I("gameValues")], ts);
+var Tm = Object.getOwnPropertyDescriptor,
+    Em = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? Tm(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
 let ns = class extends c.Component {
@@ -8545,14 +8524,14 @@ let ns = class extends c.Component {
         return this.props.gameValues.thanosValues ? t.jsx(ts, {}) : null
     }
 };
-ns = _m([I("gameValues"), j], ns);
-var km = Object.getOwnPropertyDescriptor,
-    Im = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? km(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+ns = Em([I("gameValues"), j], ns);
+var Om = Object.getOwnPropertyDescriptor,
+    _m = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? Om(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
 const Sn = "The Boss",
-    Rm = "'Bowlby One SC', cursive",
+    km = "'Bowlby One SC', cursive",
     sr = e => t.jsx("div", {
         style: {
             width: "100%",
@@ -8631,30 +8610,30 @@ let ss = class extends c.Component {
         e.volume(1), e.play(), e.on("play", this.handlePlay), e.on("loaderror", this.handlePlay), e.on("playerror", this.handlePlay)
     }
     render() {
-        return this.state.showFinalContent ? this.props.contentWhenComplete : t.jsx(Dm, {
+        return this.state.showFinalContent ? this.props.contentWhenComplete : t.jsx(Im, {
             children: this.getContent()
         })
     }
 };
-ss = Im([I("players"), j], ss);
-const Dm = l.div`
+ss = _m([I("players"), j], ss);
+const Im = l.div`
   height: 100%;
   width: 100%;
   background: ${C.Black};
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: ${Rm};
+  font-family: ${km};
   font-size: 72px;
   text-align: center;
 `,
-    Pm = () => "👏";
-var Am = Object.getOwnPropertyDescriptor,
-    Nm = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? Am(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+    Rm = () => "👏";
+var Dm = Object.getOwnPropertyDescriptor,
+    Pm = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? Dm(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-const Mm = l.div`
+const Am = l.div`
   background: rgba(0, 0, 0, 0.6);
   color: ${C.White};
   width: 100%;
@@ -8666,13 +8645,13 @@ const Mm = l.div`
   padding-left: 22px;
   padding-right: 22px;
   z-index: 999;
-  ${F.bold};
+  ${B.bold};
 `,
     rr = l.div`
   width: 33% !important;
   ${e=>e.customCSS?e.customCSS:null};
 `,
-    Bm = l.div`
+    Nm = l.div`
   font-size: 32px;
 `;
 let Je = class extends c.Component {
@@ -8694,13 +8673,13 @@ let Je = class extends c.Component {
         }
     }
     render() {
-        return t.jsxs(Mm, {
+        return t.jsxs(Am, {
             children: [t.jsx(rr, {
                 style: {
                     textAlign: "left"
                 },
-                children: this.props.gameOptions.clapping && !me() ? t.jsxs(Bm, {
-                    children: [Pm(), " ", Qe(this.props.gameValues.clapCount)]
+                children: this.props.gameOptions.clapping && !me() ? t.jsxs(Nm, {
+                    children: [Rm(), " ", Qe(this.props.gameValues.clapCount)]
                 }) : t.jsx("div", {})
             }), this.props.hideLogo ? t.jsx("div", {}) : ae() ? t.jsx("img", {
                 src: _("pardyLogo.png"),
@@ -8723,7 +8702,7 @@ let Je = class extends c.Component {
                     },
                     children: [this.props.gameValues.reportId ? t.jsx(Q, {
                         onClick: this.openReport,
-                        icon: t.jsx(Ao, {}),
+                        icon: t.jsx(Do, {}),
                         size: "large",
                         type: "primary",
                         style: {
@@ -8752,13 +8731,13 @@ let Je = class extends c.Component {
         })
     }
 };
-Je = Nm([I("gameOptions", "gameValues", "draw"), j], Je);
-var Fm = Object.getOwnPropertyDescriptor,
-    Lm = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? Fm(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+Je = Pm([I("gameOptions", "gameValues", "draw"), j], Je);
+var Mm = Object.getOwnPropertyDescriptor,
+    Fm = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? Mm(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-const Wm = "'Bowlby One SC', cursive";
+const Bm = "'Bowlby One SC', cursive";
 let rs = class extends c.Component {
     componentDidMount() {
         qe("https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap"), g.boom.play(), setTimeout(() => {
@@ -8768,13 +8747,13 @@ let rs = class extends c.Component {
     render() {
         const e = this.props.gameValues.defendingHomebaseResults;
         return e ? t.jsx(Oi, {
-            children: t.jsx(Vm, {
+            children: t.jsx(Lm, {
                 className: "animated fadeIn",
                 style: {
                     animationDuration: "12s",
                     animationDelay: "8s"
                 },
-                children: t.jsxs(zm, {
+                children: t.jsxs(Wm, {
                     children: [t.jsx(Je, {}), t.jsxs("div", {
                         style: {
                             flex: 1,
@@ -8793,11 +8772,11 @@ let rs = class extends c.Component {
                                 fontSize: 40,
                                 opacity: .7
                             },
-                            children: t.jsx(B, {
+                            children: t.jsx(F, {
                                 text: `${e.loser.name} Defeated!`
                             })
                         }), t.jsx("img", {
-                            src: Br(e.winner.id),
+                            src: Fr(e.winner.id),
                             style: {
                                 height: 150,
                                 marginTop: 20
@@ -8807,16 +8786,16 @@ let rs = class extends c.Component {
                             style: {
                                 fontSize: 91
                             },
-                            children: t.jsx(B, {
+                            children: t.jsx(F, {
                                 text: `${e.winner.name} Win!`
                             })
                         }), t.jsxs("div", {
                             style: {
                                 fontSize: 20
                             },
-                            children: [t.jsx(B, {
+                            children: [t.jsx(F, {
                                 text: "Congratulations"
-                            }), " ", Wt(e.winnerPlayerNames), "!"]
+                            }), " ", Bt(e.winnerPlayerNames), "!"]
                         })]
                     })]
                 })
@@ -8824,18 +8803,18 @@ let rs = class extends c.Component {
         }) : null
     }
 };
-rs = Lm([I("gameValues"), j], rs);
+rs = Fm([I("gameValues"), j], rs);
 const _i = pr`
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
 `,
-    Vm = l.div`
-  font-family: ${Wm};
+    Lm = l.div`
+  font-family: ${Bm};
   height: 100%;
   width: 100%;
 `,
-    zm = l.div`
+    Wm = l.div`
   height: 100%;
   width: 100%;
   display: flex;
@@ -8845,12 +8824,12 @@ const _i = pr`
   animation: ${_i} 21s ease infinite;
   text-align: center;
 `;
-var Hm = Object.getOwnPropertyDescriptor,
-    Gm = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? Hm(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var Vm = Object.getOwnPropertyDescriptor,
+    zm = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? Vm(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-const Um = l.div.attrs({
+const Hm = l.div.attrs({
         className: "scroll-y"
     })`
   min-height: 0;
@@ -8862,7 +8841,7 @@ const Um = l.div.attrs({
   justify-content: center;
   min-height: 0;
 `,
-    qm = l.div`
+    Gm = l.div`
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
@@ -8872,10 +8851,10 @@ let is = class extends c.Component {
     render() {
         const e = st(),
             n = Ee(),
-            r = Vt(this.props.players.finalResults);
+            r = Lt(this.props.players.finalResults);
         let i, s, o;
-        return r[0] && (i = r[0]), r[1] && (s = r[1]), r[2] && (o = r[2]), t.jsxs(Um, {
-            children: [!n && t.jsxs(qm, {
+        return r[0] && (i = r[0]), r[1] && (s = r[1]), r[2] && (o = r[2]), t.jsxs(Hm, {
+            children: [!n && t.jsxs(Gm, {
                 children: [o ? t.jsx(xn, {
                     snapshot: o,
                     isPlayer: !e,
@@ -8892,7 +8871,7 @@ let is = class extends c.Component {
                     position: 2,
                     themes: this.props.gameValues.availableThemes
                 }) : null]
-            }), t.jsx(Kt, {
+            }), t.jsx(Qt, {
                 customWidth: "881px",
                 customMaxWidth: "90%",
                 blockScroll: !0,
@@ -8904,18 +8883,18 @@ let is = class extends c.Component {
         })
     }
 };
-is = Gm([I("players", "gameValues", "gameOptions"), j], is);
-const Ym = e => t.jsxs(Qm, {
+is = zm([I("players", "gameValues", "gameOptions"), j], is);
+const Um = e => t.jsxs(qm, {
         children: [t.jsx(ir, {
             style: {
                 marginRight: 70,
                 transform: "rotate(-16deg)"
             }
         }), t.jsxs("div", {
-            children: [t.jsx(Jm, {
+            children: [t.jsx(Ym, {
                 children: "Lava Survival Time:"
-            }), t.jsx(Km, {
-                children: Fr(e.seconds)
+            }), t.jsx(Qm, {
+                children: Br(e.seconds)
             })]
         }), t.jsx(ir, {
             style: {
@@ -8924,7 +8903,7 @@ const Ym = e => t.jsxs(Qm, {
             }
         })]
     }),
-    Qm = l.div.attrs({
+    qm = l.div.attrs({
         className: "flex hc vc animated zoomInDown"
     })`
   width: 100%;
@@ -8935,12 +8914,12 @@ const Ym = e => t.jsxs(Qm, {
   animation-delay: 7.7s;
   animation-duration: 1.5;
 `,
-    Jm = l.div`
+    Ym = l.div`
   font-size: 28px;
   line-height: 28px;
   color: rgba(255, 255, 255, 0.9);
 `,
-    Km = l.div`
+    Qm = l.div`
   font-size: 146px;
   line-height: 146px;
   font-weight: bold;
@@ -8952,7 +8931,7 @@ const Ym = e => t.jsxs(Qm, {
   height: 105px;
   opacity: 0.8;
 `,
-    Zm = e => t.jsxs(Xm, {
+    Jm = e => t.jsxs(Km, {
         children: [t.jsx(or, {
             children: t.jsx(ft, {
                 icon: "fas fa-building",
@@ -8973,7 +8952,7 @@ const Ym = e => t.jsxs(Qm, {
             })
         })]
     }),
-    Xm = l.div.attrs({
+    Km = l.div.attrs({
         className: "flex vc hc maxWidth"
     })`
   margin-top: 50px;
@@ -8983,31 +8962,31 @@ const Ym = e => t.jsxs(Qm, {
     or = l.div`
   width: 350px;
 `;
-var ef = Object.getOwnPropertyDescriptor,
-    tf = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? ef(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var Zm = Object.getOwnPropertyDescriptor,
+    Xm = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? Zm(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
 let os = class extends c.Component {
     render() {
-        return t.jsxs(nf, {
+        return t.jsxs(ef, {
             children: [t.jsx("b", {
                 children: "Builders:"
-            }), " ", Wt(this.props.players.players.map(e => e.name))]
+            }), " ", Bt(this.props.players.players.map(e => e.name))]
         })
     }
 };
-os = tf([I("players"), j], os);
-const nf = l.div`
+os = Xm([I("players"), j], os);
+const ef = l.div`
   width: 90%;
   max-width: 732px;
   font-size: 21px;
   opacity: 0.8;
   margin-top: 50px;
 `;
-var sf = Object.getOwnPropertyDescriptor,
-    rf = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? sf(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var tf = Object.getOwnPropertyDescriptor,
+    nf = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? tf(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
 let as = class extends c.Component {
@@ -9041,9 +9020,9 @@ let as = class extends c.Component {
                 width: "100%",
                 background: C.Black
             }
-        }) : t.jsx(of, {
-            children: t.jsx(af, {
-                children: t.jsxs(lf, {
+        }) : t.jsx(sf, {
+            children: t.jsx(rf, {
+                children: t.jsxs(of, {
                     children: [t.jsx("div", {
                         className: "maxWidth",
                         style: {
@@ -9051,10 +9030,10 @@ let as = class extends c.Component {
                             zIndex: 2
                         },
                         children: t.jsx(Je, {})
-                    }), t.jsxs(cf, {
-                        children: [t.jsx(Ym, {
+                    }), t.jsxs(af, {
+                        children: [t.jsx(Um, {
                             seconds: e.secondsLasted
-                        }), t.jsx(Zm, {
+                        }), t.jsx(Jm, {
                             buildHeight: e.buildHeight,
                             pieceCount: e.buildPieces
                         }), t.jsx(os, {})]
@@ -9064,41 +9043,44 @@ let as = class extends c.Component {
         })
     }
 };
-as = rf([I("gameOptions", "entities"), j], as);
-const of = l.div.attrs({
-    className: "maxWidth"
-})`
+as = nf([I("gameOptions", "entities"), j], as);
+const sf = l.div.attrs({
+        className: "maxWidth"
+    })`
   height: 100vh;
   background: ${C.Black};
-`, af = l.div.attrs({
-    className: "maxWidth maxHeight animated fadeIn"
-})`
+`,
+    rf = l.div.attrs({
+        className: "maxWidth maxHeight animated fadeIn"
+    })`
   animation-duration: 6s;
-`, lf = l.div.attrs({
-    className: "maxWidth maxHeight flex flex-column"
-})`
+`,
+    of = l.div.attrs({
+        className: "maxWidth maxHeight flex flex-column"
+    })`
   overflow: hidden;
   background: linear-gradient(285deg, #a62a16, #b5761f, #2f2d2a);
   background-size: 600% 600%;
   animation: ${_i} 10s ease infinite;
-  font-family: ${F.fontFamilyName};
-`, cf = l.div.attrs({
-    className: "flex flex-column vc maxWidth animated fadeInDown"
-})`
+  font-family: ${B.fontFamilyName};
+`,
+    af = l.div.attrs({
+        className: "flex flex-column vc maxWidth animated fadeInDown"
+    })`
   flex: 1;
   z-index: 1;
   overflow-y: auto;
   padding-bottom: 50px;
   animation-duration: 8.2s;
 `;
-var df = Object.getOwnPropertyDescriptor,
-    uf = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? df(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var lf = Object.getOwnPropertyDescriptor,
+    cf = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? lf(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
 let ls = class extends c.Component {
     constructor() {
-        super(...arguments), this.impostersWon = () => this.props.imposter.impostersLeft >= 1, this.imposterNames = () => Wt(this.props.imposter.people.filter(e => e.role === En.imposter).map(e => e.name))
+        super(...arguments), this.impostersWon = () => this.props.imposter.impostersLeft >= 1, this.imposterNames = () => Bt(this.props.imposter.people.filter(e => e.role === En.imposter).map(e => e.name))
     }
     componentDidMount() {
         Ae(G.imposter.requestPeople), this.impostersWon() ? z(g.imposter.imposterWin, {
@@ -9110,20 +9092,20 @@ let ls = class extends c.Component {
     render() {
         const e = this.impostersWon(),
             n = this.imposterNames();
-        return t.jsxs(pf, {
-            children: [t.jsxs(hf, {
+        return t.jsxs(df, {
+            children: [t.jsxs(uf, {
                 children: [e ? "Impostors" : "Crewmates", " Win"]
-            }), t.jsxs(mf, {
-                children: [t.jsx(ff, {
+            }), t.jsxs(pf, {
+                children: [t.jsx(hf, {
                     style: {
                         background: e ? "#d32f2f" : "#4caf50"
                     }
-                }), t.jsx(gf, {
-                    children: t.jsx(xf, {
+                }), t.jsx(mf, {
+                    children: t.jsx(ff, {
                         src: _(e ? "astronaut2.svg" : "astronaut.svg")
                     })
                 })]
-            }), t.jsxs(vf, {
+            }), t.jsxs(gf, {
                 children: [t.jsxs("b", {
                     children: [ie("Impostor", this.props.imposter.people.filter(r => r.role === En.imposter).length), ":"]
                 }), " ", n]
@@ -9131,8 +9113,8 @@ let ls = class extends c.Component {
         })
     }
 };
-ls = uf([I("imposter"), j], ls);
-const pf = l.div.attrs({
+ls = cf([I("imposter"), j], ls);
+const df = l.div.attrs({
         className: "flex flex-column vc animated fadeIn"
     })`
   animation-duration: 12s;
@@ -9141,25 +9123,25 @@ const pf = l.div.attrs({
   font-family: ${Ct};
   text-align: center;
 `,
-    hf = l.div`
+    uf = l.div`
   font-size: 75px;
   font-weight: 700;
 `,
-    mf = l.div`
+    pf = l.div`
   height: 250px;
   width: 300px;
   position: relative;
   margin-top: 50px;
   margin-bottom: 75px;
 `,
-    ff = l.div.attrs({
+    hf = l.div.attrs({
         className: "maxWidth maxHeight animated pulse infinite"
     })`
   border-radius: 50%;
   animation-duration: 2.5s;
   filter: blur(50px);
 `,
-    gf = l.div.attrs({
+    mf = l.div.attrs({
         className: "flex maxWidth hc vc"
     })`
   position: absolute;
@@ -9168,17 +9150,17 @@ const pf = l.div.attrs({
   bottom: 0;
   right: 0;
 `,
-    xf = l.img`
+    ff = l.img`
   filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.4));
   height: 160px;
 `,
-    vf = l.div`
+    gf = l.div`
   font-size: 24px;
 `;
-class yf extends c.Component {
+class xf extends c.Component {
     render() {
         return t.jsx(li, {
-            children: t.jsxs(bf, {
+            children: t.jsxs(vf, {
                 children: [t.jsx(Lr, {}), t.jsxs(ci, {
                     style: {
                         flexDirection: "column"
@@ -9204,30 +9186,30 @@ class yf extends c.Component {
         })
     }
 }
-const bf = l.div.attrs({
+const vf = l.div.attrs({
         className: "flex animated fadeIn"
     })`
   flex: 1;
   animation-duration: 1.8s;
 `,
-    wf = e => t.jsxs(jf, {
-        children: [t.jsx(Cf, {
-            children: t.jsx(Sf, {})
-        }), t.jsxs($f, {
-            children: [t.jsx(Tf, {
+    yf = e => t.jsxs(bf, {
+        children: [t.jsx(wf, {
+            children: t.jsx(jf, {})
+        }), t.jsxs(Cf, {
+            children: [t.jsx(Sf, {
                 children: e.name
-            }), t.jsx(Ef, {
+            }), t.jsx($f, {
                 children: ne(e.amount)
             })]
         })]
     }),
-    jf = l.div.attrs({
+    bf = l.div.attrs({
         className: "flex vc flex-column animated zoomInDown"
     })`
   width: 90%;
   max-width: 580px;
 `,
-    Cf = l.div.attrs({
+    wf = l.div.attrs({
         className: "flex hc vc light-shadow"
     })`
   height: 162px;
@@ -9241,48 +9223,48 @@ const bf = l.div.attrs({
   margin-bottom: -60px;
   transform: rotate(352deg);
 `,
-    Sf = l.img.attrs({
+    jf = l.img.attrs({
         src: _("hand-drawn-trophy.svg")
     })`
   height: 93px;
 `,
-    $f = l(lt).attrs({
+    Cf = l(lt).attrs({
         className: "maxWidth flex flex-column vc medium-shadow"
     })`
   padding: 30px;
   padding-top: 65px;
   background: ${C.White};
 `,
-    Tf = l.div`
+    Sf = l.div`
   font-size: 53px;
   font-weight: bold;
 `,
-    Ef = l.div`
+    $f = l.div`
   font-size: 24px;
 `,
-    Of = e => t.jsxs(If, {
-        children: [t.jsxs(Rf, {
-            children: [t.jsx(Df, {
+    Tf = e => t.jsxs(_f, {
+        children: [t.jsxs(kf, {
+            children: [t.jsx(If, {
                 children: ur(e.place)
-            }), t.jsx(Pf, {
+            }), t.jsx(Rf, {
                 children: e.name
             })]
-        }), t.jsx(Af, {
+        }), t.jsx(Df, {
             children: ne(e.amount)
         })]
     }),
-    _f = e => t.jsx(kf, {
-        children: e.people.map((n, r) => t.jsx(Of, {
+    Ef = e => t.jsx(Of, {
+        children: e.people.map((n, r) => t.jsx(Tf, {
             name: n.name,
             amount: n.balance,
             place: r + 2
         }, `draw-leaderboard-${n.id}`))
     }),
-    kf = l.div`
+    Of = l.div`
   width: 90%;
   max-width: 780px;
 `,
-    If = l.div.attrs({
+    _f = l.div.attrs({
         className: "flex vc maxWidth light-shadow"
     })`
   justify-content: space-between;
@@ -9295,12 +9277,12 @@ const bf = l.div.attrs({
   line-height: 1;
   margin-bottom: 10px;
 `,
-    Rf = l.div.attrs({
+    kf = l.div.attrs({
         className: "flex vc"
     })`
   margin-right: 20px;
 `,
-    Df = l.div.attrs({
+    If = l.div.attrs({
         className: "flex hc vc"
     })`
   height: 50px;
@@ -9311,15 +9293,15 @@ const bf = l.div.attrs({
   border-radius: 50%;
   font-size: 13px;
 `,
-    Pf = l.div`
+    Rf = l.div`
   font-size: 21px;
   margin-left: 12px;
   font-weight: bold;
 `,
-    Af = l.div`
+    Df = l.div`
   font-size: 18px;
 `,
-    Nf = e => {
+    Pf = e => {
         const [n, r] = c.useState(!1), [i, s] = c.useState(!1), o = () => {
             n || i || (r(!0), xs({
                 url: "/api/v1/fun/draw-that/add",
@@ -9337,15 +9319,15 @@ const bf = l.div.attrs({
                 both: () => r(!1)
             }))
         };
-        return t.jsxs(Bf, {
-            children: [t.jsxs(zf, {
+        return t.jsxs(Nf, {
+            children: [t.jsxs(Wf, {
                 children: [t.jsxs("div", {
-                    children: [t.jsx(Gf, {
+                    children: [t.jsx(zf, {
                         children: e.term
-                    }), t.jsx(Uf, {
+                    }), t.jsx(Hf, {
                         children: e.name
                     })]
-                }), t.jsx(Hf, {
+                }), t.jsx(Vf, {
                     children: e.canPublish ? t.jsx(Q, {
                         onClick: o,
                         type: "primary",
@@ -9354,12 +9336,12 @@ const bf = l.div.attrs({
                         children: i ? "Published" : "Publish"
                     }) : null
                 })]
-            }), t.jsx(qf, {
+            }), t.jsx(Gf, {
                 src: e.image
             })]
         })
     },
-    Mf = j(() => {
+    Af = j(() => {
         const {
             draw: e
         } = c.useContext(D), n = () => {
@@ -9399,14 +9381,14 @@ const bf = l.div.attrs({
             onCancel: n,
             style: {
                 top: 20,
-                fontFamily: F.fontFamilyName,
+                fontFamily: B.fontFamilyName,
                 color: C.Black
             },
             footer: null,
-            children: [t.jsxs(Ff, {
-                children: [t.jsx(Lf, {}), t.jsx(Wf, {
+            children: [t.jsxs(Mf, {
+                children: [t.jsx(Ff, {}), t.jsx(Bf, {
                     children: "Drawings"
-                }), t.jsx(Vf, {
+                }), t.jsx(Lf, {
                     children: i ? s : o
                 }), t.jsx(Q, {
                     block: !0,
@@ -9415,7 +9397,7 @@ const bf = l.div.attrs({
                     href: ln,
                     children: "Visit Draw That Art Gallery"
                 })]
-            }), t.jsx(bt, {}), e.drawingHistory.map((a, d) => t.jsx(Nf, {
+            }), t.jsx(bt, {}), e.drawingHistory.map((a, d) => t.jsx(Pf, {
                 image: a.image,
                 name: a.name,
                 term: a.term,
@@ -9423,7 +9405,7 @@ const bf = l.div.attrs({
             }, `drawing-history-${a.index}`))]
         })
     }),
-    Bf = l.div.attrs({
+    Nf = l.div.attrs({
         className: "maxWidth flex flex-column vc"
     })`
   margin-bottom: 25px;
@@ -9431,24 +9413,24 @@ const bf = l.div.attrs({
     margin-bottom: 0px;
   }
 `,
-    Ff = l.div.attrs({
+    Mf = l.div.attrs({
         className: "maxWidth flex flex-column vc"
     })`
   background: #fff3e0;
   padding: 20px;
   border-radius: 5px;
 `,
-    Lf = l.img.attrs({
+    Ff = l.img.attrs({
         src: "/client/img/drawThat/art-gallery.svg"
     })`
   height: 65px;
 `,
-    Wf = l.div`
+    Bf = l.div`
   font-size: 30px;
   margin-top: 6px;
-  font-weight: ${Fe.Bold};
+  font-weight: ${Be.Bold};
 `,
-    Vf = l.ul`
+    Lf = l.ul`
   margin-top: 4px;
   font-size: 14px;
   li {
@@ -9461,30 +9443,30 @@ const bf = l.div.attrs({
     margin-bottom: 0px;
   }
 `,
-    zf = l.div.attrs({
+    Wf = l.div.attrs({
         className: "maxWidth flex vc"
     })`
   justify-content: space-between;
   margin-bottom: 10px;
 `,
-    Hf = l.div`
+    Vf = l.div`
   margin-left: 15px;
 `,
-    Gf = l.div`
+    zf = l.div`
   font-size: 22px;
-  font-weight: ${Fe.Bold};
+  font-weight: ${Be.Bold};
 `,
-    Uf = l.div`
+    Hf = l.div`
   font-size: 14px;
   opacity: 0.7;
 `,
-    qf = l.img.attrs({
+    Gf = l.img.attrs({
         className: "maxWidth"
     })`
   border: 2px solid #e8e8e8;
   border-radius: 4px;
 `,
-    Yf = j(() => {
+    Uf = j(() => {
         const {
             players: {
                 finalResults: e
@@ -9503,11 +9485,11 @@ const bf = l.div.attrs({
                 }, 2e3)
             }, 2300)
         }, []);
-        const d = Vt(e),
+        const d = Lt(e),
             m = d.length ? d[0] : null,
             f = d.filter(($, E) => E > 0);
-        return t.jsxs(Jf, {
-            children: [t.jsx(Je, {}), t.jsxs(Kf, {
+        return t.jsxs(Yf, {
+            children: [t.jsx(Je, {}), t.jsxs(Qf, {
                 children: [m ? t.jsxs("div", {
                     className: "maxWidth vc flex-column",
                     style: {
@@ -9518,28 +9500,28 @@ const bf = l.div.attrs({
                             active: i,
                             config: rt
                         })
-                    }), t.jsx(wf, {
+                    }), t.jsx(yf, {
                         name: m.name,
                         amount: m.balance
                     })]
                 }) : null, f && f.length && o ? t.jsxs("div", {
                     className: "maxWidth animated fadeIn flex flex-column vc",
-                    children: [t.jsx(Zf, {}), t.jsx(_f, {
+                    children: [t.jsx(Jf, {}), t.jsx(Ef, {
                         people: f
                     })]
                 }) : null]
-            }), t.jsx(Mf, {})]
+            }), t.jsx(Af, {})]
         })
     }),
-    Qf = j(() => {
+    qf = j(() => {
         const {
             players: {
                 finalResults: e
             }
         } = c.useContext(D);
-        return e ? t.jsx(Yf, {}) : null
+        return e ? t.jsx(Uf, {}) : null
     }),
-    Jf = l.div.attrs({
+    Yf = l.div.attrs({
         className: "flex flex-column scroll-y"
     })`
   flex: 1;
@@ -9547,13 +9529,13 @@ const bf = l.div.attrs({
   color: ${C.Black};
   ${xi}
 `,
-    Kf = l.div.attrs({
+    Qf = l.div.attrs({
         className: "scroll-y flex vc flex-column"
     })`
   flex: 1;
   padding: 40px 0px;
 `,
-    Zf = l.div`
+    Jf = l.div`
   width: 95%;
   max-width: 1200px;
   margin: 40px 0px;
@@ -9562,7 +9544,7 @@ const bf = l.div.attrs({
   flex-shrink: 0;
   height: 2px;
 `,
-    Xf = () => t.jsx(eg, {
+    Kf = () => t.jsx(Zf, {
         initial: {
             x: "100%"
         },
@@ -9575,23 +9557,23 @@ const bf = l.div.attrs({
         },
         children: t.jsx(vi, {})
     }),
-    eg = l(U.div).attrs({
+    Zf = l(U.div).attrs({
         className: "maxAll"
     })``,
-    ar = e => t.jsxs(rg, {
+    ar = e => t.jsxs(ng, {
         style: {
             background: e.isWinner ? "#005005" : "rgba(0, 0, 0, 0.6)"
         },
         className: e.isWinner ? "animated tada" : "",
-        children: [t.jsxs(ig, {
+        children: [t.jsxs(sg, {
             children: ["Contestant ", e.contestantType]
-        }), t.jsx(og, {
+        }), t.jsx(rg, {
             children: e.contestantName
         }), t.jsx(bt, {
             style: {
                 margin: "12px 0px"
             }
-        }), t.jsx(ag, {
+        }), t.jsx(ig, {
             children: t.jsx(Nr, {
                 start: 0,
                 end: e.balance,
@@ -9602,13 +9584,13 @@ const bf = l.div.attrs({
             })
         })]
     }),
-    tg = j(e => {
+    Xf = j(e => {
         const {
             players: {
                 players: n
             }
         } = c.useContext(D), [r, i] = c.useState(!1), s = c.useMemo(() => {
-            const m = Vt(n),
+            const m = Lt(n),
                 f = [];
             return m[0] && f.push(m[0]), m[1] && f.push(m[1]), Ue.shuffle(f)
         }, []);
@@ -9634,7 +9616,7 @@ const bf = l.div.attrs({
         if (!s || s.length !== 2) return null;
         const d = s[0].balance > s[1].balance;
         return t.jsxs(t.Fragment, {
-            children: [t.jsx(ng, {
+            children: [t.jsx(eg, {
                 initial: {
                     y: "100%",
                     x: "0"
@@ -9650,7 +9632,7 @@ const bf = l.div.attrs({
                 },
                 onAnimationComplete: a,
                 children: t.jsx(oo, {
-                    children: t.jsxs(sg, {
+                    children: t.jsxs(tg, {
                         children: [t.jsx(ar, {
                             contestantType: "A",
                             contestantName: s[0].name,
@@ -9673,15 +9655,15 @@ const bf = l.div.attrs({
             })]
         })
     }),
-    ng = l(U.div).attrs({
+    eg = l(U.div).attrs({
         className: "maxAll"
     })``,
-    sg = l.div.attrs({
+    tg = l.div.attrs({
         className: "flex-center maxAll"
     })`
   padding: 30px;
 `,
-    rg = l.div.attrs({
+    ng = l.div.attrs({
         className: "medium-shadow"
     })`
   border: 3px solid;
@@ -9693,22 +9675,22 @@ const bf = l.div.attrs({
   animation-duration: 1.4s;
   transition: background 0.8s;
 `,
-    ig = l.div`
+    sg = l.div`
   font-style: italic;
   text-transform: uppercase;
   font-size: 18px;
 `,
-    og = l.div`
+    rg = l.div`
   font-size: 32px;
-  font-weight: ${Fe.Normal};
+  font-weight: ${Be.Normal};
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 `,
-    ag = l.div`
+    ig = l.div`
   font-size: 32px;
 `,
-    lg = j(() => {
+    og = j(() => {
         const {
             players: {
                 players: e
@@ -9717,29 +9699,29 @@ const bf = l.div.attrs({
         c.useEffect(() => {
             g.pardy.countdown.stop(), g.pardy.music.fade(g.pardy.music.volume(), 0, 400), g.pardy.finaleMusic.fade(g.pardy.finaleMusic.volume(), 0, 400)
         }, []);
-        const [n, r] = hr(!(e.length >= 2)), i = () => n ? t.jsx(Xf, {}) : t.jsx(tg, {
+        const [n, r] = hr(!(e.length >= 2)), i = () => n ? t.jsx(Kf, {}) : t.jsx(Xf, {
             setToLeaderboardScreen: r
         });
-        return t.jsx(cg, {
+        return t.jsx(ag, {
             children: t.jsx(Ei, {
-                children: t.jsxs(dg, {
-                    children: [t.jsx(Je, {}), t.jsx(ug, {
+                children: t.jsxs(lg, {
+                    children: [t.jsx(Je, {}), t.jsx(cg, {
                         children: i()
                     })]
                 })
             })
         })
     }),
-    cg = l.div.attrs({
+    ag = l.div.attrs({
         className: "flex"
     })`
   flex: 1;
   background: ${Ne.Black};
   font-family: 'Londrina Solid', cursive;
-  font-weight: ${Fe.Light};
+  font-weight: ${Be.Light};
   overflow: hidden;
 `,
-    dg = l(U.div).attrs({
+    lg = l(U.div).attrs({
         initial: {
             opacity: 0
         },
@@ -9753,13 +9735,13 @@ const bf = l.div.attrs({
     })`
   overflow: hidden;
 `,
-    ug = l.div`
+    cg = l.div`
   flex: 1;
   overflow: hidden;
 `;
-var pg = Object.getOwnPropertyDescriptor,
-    hg = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? pg(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var dg = Object.getOwnPropertyDescriptor,
+    ug = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? dg(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
 const lr = l.div`
@@ -9768,7 +9750,7 @@ const lr = l.div`
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  ${F.normal};
+  ${B.normal};
 `;
 let cs = class extends c.Component {
     constructor() {
@@ -9778,7 +9760,7 @@ let cs = class extends c.Component {
             children: t.jsx(ss, {
                 contentWhenComplete: this.getContent(!0)
             })
-        }) : de() ? t.jsx(rs, {}) : me() ? t.jsx(yf, {}) : X() ? t.jsx(Qf, {}) : ae() ? t.jsx(lg, {}) : t.jsxs(t.Fragment, {
+        }) : de() ? t.jsx(rs, {}) : me() ? t.jsx(xf, {}) : X() ? t.jsx(qf, {}) : ae() ? t.jsx(og, {}) : t.jsxs(t.Fragment, {
             children: [t.jsx(Je, {}), t.jsx(is, {})]
         })
     }
@@ -9786,18 +9768,18 @@ let cs = class extends c.Component {
         Gi(() => !!this.props.players.finalResults, () => {
             this.setState({
                 show: !0
-            }), !le() && !Ee() && !de() && !Be() && !me() && !X() && !ae() && g.winner.play()
+            }), !le() && !Ee() && !de() && !Fe() && !me() && !X() && !ae() && g.winner.play()
         })
     }
     render() {
-        return this.state.show ? Be() ? t.jsx(as, {}) : t.jsx(lr, {
+        return this.state.show ? Fe() ? t.jsx(as, {}) : t.jsx(lr, {
             children: this.getContent()
         }) : t.jsx(lr, {})
     }
 };
-cs = hg([I("players")], cs);
+cs = ug([I("players")], cs);
 var ki = (e => (e.setup = "setup", e.join = "join", e.teams = "teams", e.gameplay = "gameplay", e.results = "results", e))(ki || {});
-const mg = () => new Promise((e, n) => {
+const pg = () => new Promise((e, n) => {
         xs({
             url: "/api/matchmaker/find-server-to-host-game",
             data: {
@@ -9811,12 +9793,12 @@ const mg = () => new Promise((e, n) => {
             }
         })
     }),
-    fg = async () => {
+    hg = async () => {
         try {
             u.engine.findingServerForGame = !0;
             let e = "";
             try {
-                const n = await mg();
+                const n = await pg();
                 if (!n || !n.url) throw "No server response";
                 e = n.url
             } catch (n) {
@@ -9868,7 +9850,7 @@ const mg = () => new Promise((e, n) => {
         pardy: {
             state: "PARDY_MODE_STATE"
         }
-    }, gg = (e, n, r) => {
+    }, mg = (e, n, r) => {
         if (e === on.gameStatus) {
             u.gameValues.currentRoute !== n && (u.gameValues.currentRoute = n);
             return
@@ -9887,16 +9869,16 @@ const mg = () => new Promise((e, n) => {
             e.send(G.requestTeamLeaderboard), setTimeout(() => Pt(e), 4700);
             return
         } else if (n === V.gameplay) {
-            if (Be()) return;
+            if (Fe()) return;
             me() ? e.send(G.imposter.requestPeople) : de() ? e.send(G.requestDefendingHomebase) : st() ? e.send(G.requestTeamLeaderboard) : e.send(G.requestPlayerLeaderboard), setTimeout(() => Pt(e), 2500);
             return
         } else {
             if (n === V.results) return;
             setTimeout(() => Pt(e), 1e3)
         }
-    }, xg = ["secondsLeft", "term", "drawer", "drawingBase64", "revealText"], vg = () => {
+    }, fg = ["secondsLeft", "term", "drawer", "drawingBase64", "revealText"], gg = () => {
         const e = new ys;
-        return xg.forEach(n => {
+        return fg.forEach(n => {
             e.onPropChange(n, r => {
                 u.draw.round[n] = r
             })
@@ -9904,7 +9886,7 @@ const mg = () => new Promise((e, n) => {
             key: on.draw.round,
             listener: e
         }
-    }, yg = () => {
+    }, xg = () => {
         const e = new ys;
         return e.onPropChange("value", n => {
             u.draw.status = n
@@ -9912,9 +9894,9 @@ const mg = () => new Promise((e, n) => {
             key: on.draw.status,
             listener: e
         }
-    }, bg = ["board", "powers", "finaleQuestionId", "playerCount", "betsPlaced", "playersAnswered", "playersAnsweredCorrectly", "nameOfFirstPlayerToAnswerCorrectly"], wg = () => {
+    }, vg = ["board", "powers", "finaleQuestionId", "playerCount", "betsPlaced", "playersAnswered", "playersAnsweredCorrectly", "nameOfFirstPlayerToAnswerCorrectly"], yg = () => {
         const e = new ys;
-        return bg.forEach(n => {
+        return vg.forEach(n => {
             e.onPropChange(n, r => {
                 n === "powers" ? u.pardy.powers.replace(r) : u.pardy[n] = r
             })
@@ -9922,7 +9904,7 @@ const mg = () => new Promise((e, n) => {
             key: on.pardy.state,
             listener: e
         }
-    }, jg = [vg, yg, wg], Cg = e => {
+    }, bg = [gg, xg, yg], wg = e => {
         Te(() => u.gameValues.currentRoute, n => {
             V.gameplay, e.send(G.newGameStatus, n)
         }), me() && Te(() => u.imposter.status, n => e.send(G.imposter.status, n)), ae() && (Te(() => u.pardy.currentRound, n => {
@@ -9934,7 +9916,7 @@ const mg = () => new Promise((e, n) => {
         }), Te(() => u.pardy.questionStatus, n => {
             e.send(G.pardy.setQuestionStatus, n)
         }))
-    }, Sg = () => {
+    }, jg = () => {
         Object.keys(g).forEach(e => {
             g[e] && g[e].load && g[e].load()
         })
@@ -9942,27 +9924,27 @@ const mg = () => new Promise((e, n) => {
         g[e] && Object.keys(g[e]).forEach(n => {
             g[e][n] && g[e][n].load && g[e][n].load()
         })
-    }, $g = () => {
+    }, Cg = () => {
         Tt("imposter")
-    }, Tg = () => {
+    }, Sg = () => {
         Tt("thanos")
-    }, Eg = () => {
+    }, $g = () => {
         Tt("lava")
-    }, Og = () => {
+    }, Tg = () => {
         Tt("bossBattle")
-    }, _g = () => {
+    }, Eg = () => {
         Tt("draw")
-    }, kg = () => {
+    }, Og = () => {
         Tt("pardy")
-    }, Ig = e => {
-        const n = jg.map(r => r());
+    }, _g = e => {
+        const n = bg.map(r => r());
         e.onMessage.add((r, i) => {
             const s = {
                 action: r,
                 payload: i
             };
             if (s.action === Y.stateUpdate) {
-                gg(i.type, i.value, n);
+                mg(i.type, i.value, n);
                 return
             }
             if (s.action === Y.viewableGameCode) {
@@ -9973,11 +9955,11 @@ const mg = () => new Promise((e, n) => {
                 if (u.metadata.hasReceivedHostStaticState) return;
                 Object.keys(i.options || {}).forEach(o => {
                     u.gameOptions[o] = i.options[o]
-                }), u.gameValues.availableThemes.replace(i.themes), u.gameValues.gameCode = i.gameCode, Sg(), me() && $g(), le() && Tg(), Be() && Eg(), Ee() && Og(), X() && (_g(), qe("https://fonts.googleapis.com/css2?family=Pangolin&display=swap")), ae() && (qe("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap"), kg()), Cg(e), u.metadata.hasReceivedHostStaticState = !0;
+                }), u.gameValues.availableThemes.replace(i.themes), u.gameValues.gameCode = i.gameCode, jg(), me() && Cg(), le() && Sg(), Fe() && $g(), Ee() && Tg(), X() && (Eg(), qe("https://fonts.googleapis.com/css2?family=Pangolin&display=swap")), ae() && (qe("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap"), Og()), wg(e), u.metadata.hasReceivedHostStaticState = !0;
                 return
             }
             if (s.action === Y.newActivityItem) {
-                Qt(s.payload);
+                qt(s.payload);
                 return
             }
             if (s.action === Y.newPlayerStats) {
@@ -9986,7 +9968,7 @@ const mg = () => new Promise((e, n) => {
             }
             if (s.action === Y.specialSongPlayed) {
                 if (!i.audioFile || !i.background) return;
-                $a(i.audioFile, i.background);
+                Ca(i.audioFile, i.background);
                 return
             }
             if (s.action === Y.updatedPlayerLeaderboard) {
@@ -10065,7 +10047,7 @@ const mg = () => new Promise((e, n) => {
                 return
             }
         }), Pt(e)
-    }, Rg = e => {
+    }, kg = e => {
         const {
             joinOptions: n,
             createOptions: r
@@ -10075,7 +10057,7 @@ const mg = () => new Promise((e, n) => {
             u.engine.attemptingToConnect = !1, u.engine.hasConnected = !1, u.engine.connected = !1, u.engine.connectionError = !1, u.engine.joinedRoom = !1, u.engine.attemptingToJoinRoom = !1, u.engine.errorJoiningRoom = !1, u.engine.roomError = null
         };
         i(), u.engine.attemptingToConnect = !0;
-        const s = new po.Client(n ? n.serverUrl : r.serverUrl, {
+        const s = new ho.Client(n ? n.serverUrl : r.serverUrl, {
                 transports: ["websocket"],
                 clientIdSuffix: "-host"
             }),
@@ -10104,7 +10086,7 @@ const mg = () => new Promise((e, n) => {
                 e.disposeOnError && i()
             });
             a.onJoin.add(() => {
-                Ig(a), e.onRoomJoin && e.onRoomJoin()
+                _g(a), e.onRoomJoin && e.onRoomJoin()
             }, !0), a.onJoin.add(() => {
                 d(), u.engine.joinedRoom = !0, u.engine.attemptingToJoinRoom = !1, u.engine.game || (u.engine.game = a)
             }), a.onLeave.add(() => {
@@ -10113,10 +10095,10 @@ const mg = () => new Promise((e, n) => {
         }, !0), s.onDisconnect.add(() => {
             u.engine.attemptingToConnect = !0, u.engine.connected = !1, e.onDisconnect && e.onDisconnect()
         })
-    }, Dg = async () => {
+    }, Ig = async () => {
         try {
-            const e = await fg();
-            await Rg({
+            const e = await hg();
+            await kg({
                 createOptions: {
                     serverUrl: e.serverUrl,
                     roomType: "LiveGame",
@@ -10131,9 +10113,9 @@ const mg = () => new Promise((e, n) => {
                 errorCreatingGame: e
             })
         }
-    }, Pg = () => {
-        Dg().then().catch(e => !1)
-    }, Ag = (e, n) => {
+    }, Rg = () => {
+        Ig().then().catch(e => !1)
+    }, Dg = (e, n) => {
         xs({
             url: `/api/matchmaker/intent/live-game/summary/${e}`,
             success: r => {
@@ -10143,16 +10125,16 @@ const mg = () => new Promise((e, n) => {
                 n.onError && n.onError(r)
             }
         })
-    }, Ng = j(() => {
+    }, Pg = j(() => {
         const {
             engine: e,
             gameValues: n,
             metadata: r
         } = c.useContext(D), i = Ar("id"), [s, o] = hr(!1);
         return c.useEffect(() => {
-            Ag(i, {
+            Dg(i, {
                 onSuccess: () => {
-                    o(), Pg()
+                    o(), Rg()
                 },
                 onError: a => {
                     a && a.message && a.message.text ? n.roomIntentErrorMessage = a.message.text : n.roomIntentErrorMessage = "There was an error. Please refresh and try again."
@@ -10160,25 +10142,25 @@ const mg = () => new Promise((e, n) => {
             })
         }, []), c.useEffect(() => {
             e.joinedRoom && s && r.hasReceivedHostStaticState && (n.currentRoute = ki.join)
-        }, [s, e.joinedRoom, r.hasReceivedHostStaticState]), t.jsx(Mg, {
-            children: t.jsx(wo, {
+        }, [s, e.joinedRoom, r.hasReceivedHostStaticState]), t.jsx(Ag, {
+            children: t.jsx(jo, {
                 style: {
                     color: Ne.White
                 },
                 size: 84
             }, "setup-loader")
         })
-    }), Mg = l.div.attrs({
+    }), Ag = l.div.attrs({
         className: "maxAll flex-center flex-column"
     })`
   color: ${Ne.White};
 `;
-var Bg = Object.getOwnPropertyDescriptor,
-    Fg = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? Bg(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var Ng = Object.getOwnPropertyDescriptor,
+    Mg = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? Ng(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-const Lg = "'Bowlby One SC', cursive";
+const Fg = "'Bowlby One SC', cursive";
 let ds = class extends c.Component {
     constructor() {
         super(...arguments), this.state = {
@@ -10266,8 +10248,8 @@ let ds = class extends c.Component {
         })
     }
     render() {
-        return t.jsx(Vg, {
-            children: t.jsxs(zg, {
+        return t.jsx(Lg, {
+            children: t.jsxs(Wg, {
                 children: [t.jsx(St, {
                     children: t.jsx(nt, {
                         config: rt,
@@ -10281,8 +10263,8 @@ let ds = class extends c.Component {
         })
     }
 };
-ds = Fg([I("players", "gameValues", "ui"), j], ds);
-const Wg = pr`
+ds = Mg([I("players", "gameValues", "ui"), j], ds);
+const Bg = pr`
   from {
     transform: scale(0.7);
   }
@@ -10290,30 +10272,30 @@ const Wg = pr`
     transform: scale(1);
   }
 `,
-    Vg = l.div`
+    Lg = l.div`
   background: #b53d00;
   background-size: cover;
   height: 100vh;
   width: 100vw;
   box-sizing: border-box;
 `,
-    zg = l.div`
+    Wg = l.div`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100vw;
   font-size: 65px;
-  font-family: ${Lg};
+  font-family: ${Fg};
   text-align: center;
-  animation: ${Wg} 12s ease-in-out;
+  animation: ${Bg} 12s ease-in-out;
 `;
-var Hg = Object.getOwnPropertyDescriptor,
-    Gg = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? Hg(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var Vg = Object.getOwnPropertyDescriptor,
+    zg = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? Vg(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-const Ug = "'Bowlby One SC', cursive";
+const Hg = "'Bowlby One SC', cursive";
 let us = class extends c.Component {
     constructor() {
         super(...arguments), this.state = {
@@ -10323,42 +10305,42 @@ let us = class extends c.Component {
             delay: 1300
         }, {
             content: t.jsx("div", {
-                children: t.jsx(B, {
+                children: t.jsx(F, {
                     text: "Protect your team!"
                 })
             }),
             delay: 2800
         }, {
             content: t.jsx("div", {
-                children: t.jsx(B, {
+                children: t.jsx(F, {
                     text: "Don't run out of health!"
                 })
             }),
             delay: 2900
         }, {
             content: t.jsx("div", {
-                children: t.jsx(B, {
+                children: t.jsx(F, {
                     text: "Purchase team upgrades in the shop!"
                 })
             }),
             delay: 2900
         }, {
             content: t.jsx("div", {
-                children: t.jsx(B, {
+                children: t.jsx(F, {
                     text: "Upgrade your team's health!"
                 })
             }),
             delay: 2800
         }, {
             content: t.jsx("div", {
-                children: t.jsx(B, {
+                children: t.jsx(F, {
                     text: "Sabotage the other team!"
                 })
             }),
             delay: 2800
         }, {
             content: t.jsx("div", {
-                children: t.jsx(B, {
+                children: t.jsx(F, {
                     text: "Last team remaining wins!"
                 })
             }),
@@ -10397,15 +10379,15 @@ let us = class extends c.Component {
         }), g.engagingSuspense.on("loaderror", this.startGame), g.engagingSuspense.on("playerror", this.startGame)
     }
     render() {
-        return t.jsx(qg, {
-            children: t.jsx(Yg, {
+        return t.jsx(Gg, {
+            children: t.jsx(Ug, {
                 children: this.state.content
             })
         })
     }
 };
-us = Gg([I("players", "gameValues", "ui"), j], us);
-const qg = l.div`
+us = zg([I("players", "gameValues", "ui"), j], us);
+const Gg = l.div`
   background: rgb(96, 72, 6);
   background: radial-gradient(
     circle,
@@ -10416,7 +10398,7 @@ const qg = l.div`
   width: 100vw;
   box-sizing: border-box;
 `,
-    Yg = l.div`
+    Ug = l.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10425,11 +10407,11 @@ const qg = l.div`
   box-sizing: border-box;
   width: 100vw;
   font-size: 65px;
-  font-family: ${Ug};
+  font-family: ${Hg};
   text-align: center;
 `,
     Ii = "83px",
-    Qg = l.div`
+    qg = l.div`
   height: ${Ii};
   width: 100%;
   box-shadow: ${We.basic};
@@ -10441,37 +10423,37 @@ const qg = l.div`
   padding-left: 20px;
   padding-right: 20px;
 `,
-    Jg = l.div`
-  ${F.black};
+    Yg = l.div`
+  ${B.black};
   font-size: 38px;
 `,
-    Kg = l.div`
+    Qg = l.div`
   display: flex;
   align-items: center;
 `;
-class Zg extends c.Component {
+class Jg extends c.Component {
     render() {
-        return t.jsxs(Qg, {
-            children: [t.jsx(Jg, {
+        return t.jsxs(qg, {
+            children: [t.jsx(Yg, {
                 children: !de() && "Teams"
-            }), t.jsxs(Kg, {
+            }), t.jsxs(Qg, {
                 children: [this.props.reshuffle && t.jsx(Q, {
                     type: "primary",
                     icon: t.jsx(gr, {}),
                     style: {
-                        fontFamily: F.fontFamilyName,
+                        fontFamily: B.fontFamilyName,
                         marginRight: 10
                     },
                     onClick: this.props.reshuffle,
                     children: "Reshuffle"
-                }), t.jsx(Xt, {
+                }), t.jsx(Kt, {
                     onTeamScreen: !0
                 })]
             })]
         })
     }
 }
-const Xg = l.div`
+const Kg = l.div`
   width: 324px;
   margin: 12px;
   background: ${C.White};
@@ -10480,7 +10462,7 @@ const Xg = l.div`
   box-shadow: ${We.basic};
   color: ${C.Black};
 `,
-    ex = l.div`
+    Zg = l.div`
   height: 36px;
   width: 36px;
   margin-right: 6px;
@@ -10491,14 +10473,14 @@ const Xg = l.div`
   align-items: center;
   justify-content: center;
 `,
-    tx = l.div`
-  ${F.black};
+    Xg = l.div`
+  ${B.black};
   font-size: 23px;
   display: flex;
   align-items: center;
 `,
-    nx = l.div`
-  ${F.bold};
+    ex = l.div`
+  ${B.bold};
   font-size: 18px;
   background: rgba(0, 0, 0, 0.08);
   padding: 4px;
@@ -10511,14 +10493,14 @@ const Xg = l.div`
     margin-bottom: 0px;
   }
 `;
-class sx extends c.Component {
+class tx extends c.Component {
     render() {
         const {
             team: n
         } = this.props;
-        return t.jsxs(Xg, {
-            children: [t.jsxs(tx, {
-                children: [t.jsx(ex, {
+        return t.jsxs(Kg, {
+            children: [t.jsxs(Xg, {
+                children: [t.jsx(Zg, {
                     background: js(n.id),
                     children: n.icon && t.jsx("i", {
                         className: n.icon,
@@ -10526,7 +10508,7 @@ class sx extends c.Component {
                             color: n.color.text
                         }
                     })
-                }), t.jsx(B, {
+                }), t.jsx(F, {
                     text: n.id
                 })]
             }), t.jsx(bt, {
@@ -10534,18 +10516,18 @@ class sx extends c.Component {
                     marginTop: 7,
                     marginBottom: 7
                 }
-            }), n.players.map(r => t.jsx(nx, {
+            }), n.players.map(r => t.jsx(ex, {
                 children: r
             }, n.balance + r))]
         })
     }
 }
-var rx = Object.getOwnPropertyDescriptor,
-    ix = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? rx(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var nx = Object.getOwnPropertyDescriptor,
+    sx = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? nx(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-const ox = l.div`
+const rx = l.div`
   max-height: calc(100vh - ${Ii});
   width: 100%;
   padding: 10px;
@@ -10557,8 +10539,8 @@ const ox = l.div`
 `;
 let ps = class extends c.Component {
     render() {
-        return t.jsx(ox, {
-            children: this.props.players.teams && this.props.players.teams.length ? this.props.players.teams.map(e => t.jsx(sx, {
+        return t.jsx(rx, {
+            children: this.props.players.teams && this.props.players.teams.length ? this.props.players.teams.map(e => t.jsx(tx, {
                 team: e
             }, e.id)) : t.jsx(mr, {
                 style: {
@@ -10569,13 +10551,13 @@ let ps = class extends c.Component {
         })
     }
 };
-ps = ix([I("players"), j], ps);
-var ax = Object.getOwnPropertyDescriptor,
-    lx = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? ax(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+ps = sx([I("players"), j], ps);
+var ix = Object.getOwnPropertyDescriptor,
+    ox = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? ix(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-const cx = l.div`
+const ax = l.div`
   height: 100%;
   width: 100%;
   display: flex;
@@ -10596,15 +10578,15 @@ let hs = class extends c.Component {
     }
     render() {
         const e = !Ee();
-        return this.props.ui.showingBossPreScreen ? t.jsx(ds, {}) : this.props.ui.showingHumansVsZombiesPreScreen ? t.jsx(us, {}) : t.jsxs(cx, {
-            children: [t.jsx(Zg, {
+        return this.props.ui.showingBossPreScreen ? t.jsx(ds, {}) : this.props.ui.showingHumansVsZombiesPreScreen ? t.jsx(us, {}) : t.jsxs(ax, {
+            children: [t.jsx(Jg, {
                 reshuffle: e ? this.makeTeams : null
             }), t.jsx(ps, {})]
         })
     }
 };
-hs = lx([I("engine", "gameOptions", "gameValues", "ui"), j], hs);
-const dx = e => {
+hs = ox([I("engine", "gameOptions", "gameValues", "ui"), j], hs);
+const lx = e => {
     let n = "Error joining game",
         r = "";
     return e && e.includes && e.includes("No data found") ? (n = "All done", r = "You were disconnected for too long, so we closed down the game you were hosting.") : r = `Error message - ${JSON.stringify(e)}`, {
@@ -10612,14 +10594,14 @@ const dx = e => {
         description: r
     }
 };
-var ux = Object.getOwnPropertyDescriptor,
-    px = (e, n, r, i) => {
-        for (var s = i > 1 ? void 0 : i ? ux(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
+var cx = Object.getOwnPropertyDescriptor,
+    dx = (e, n, r, i) => {
+        for (var s = i > 1 ? void 0 : i ? cx(n, r) : n, o = e.length - 1, a; o >= 0; o--)(a = e[o]) && (s = a(s) || s);
         return s
     };
-const hx = "https://www.gimkit.com/connection",
+const ux = "https://www.gimkit.com/connection",
     cr = "https://status.gimkit.com",
-    mx = (e, n) => n.roomIntentErrorMessage && n.currentRoute === V.setup || e.errorFindingServerForGame ? !0 : n.currentRoute === V.results ? !1 : e.connectionError ? !0 : n.currentRoute === V.setup || !e.game ? !1 : e.errorJoiningRoom ? !0 : !e.joinedRoom;
+    px = (e, n) => n.roomIntentErrorMessage && n.currentRoute === V.setup || e.errorFindingServerForGame ? !0 : n.currentRoute === V.results ? !1 : e.connectionError ? !0 : n.currentRoute === V.setup || !e.game ? !1 : e.errorJoiningRoom ? !0 : !e.joinedRoom;
 let ms = class extends c.Component {
     constructor() {
         super(...arguments), this.getLoading = () => {
@@ -10636,7 +10618,7 @@ let ms = class extends c.Component {
                     flexDirection: "column",
                     width: "100%",
                     height: "100%",
-                    fontFamily: F.fontFamilyName,
+                    fontFamily: B.fontFamilyName,
                     color: C.Black,
                     textAlign: "center",
                     alignItems: "center",
@@ -10648,7 +10630,7 @@ let ms = class extends c.Component {
                         marginBottom: 10
                     }
                 }), !e && t.jsxs(t.Fragment, {
-                    children: [t.jsx(jo, {
+                    children: [t.jsx(Co, {
                         style: {
                             color: "red",
                             fontSize: 51
@@ -10695,12 +10677,12 @@ let ms = class extends c.Component {
             });
             if (!e.game && e.connectionError) return t.jsxs("span", {
                 children: ["Your network is blocking connection to our game servers. Get more details on how to fix this ", t.jsx("a", {
-                    href: hx,
+                    href: ux,
                     children: "here."
                 })]
             });
             if (e.errorJoiningRoom) {
-                const r = dx(e.roomError);
+                const r = lx(e.roomError);
                 return t.jsxs("span", {
                     children: [t.jsx("span", {
                         style: {
@@ -10737,7 +10719,7 @@ let ms = class extends c.Component {
         const {
             engine: e,
             gameValues: n
-        } = this.props, r = mx(e, n);
+        } = this.props, r = px(e, n);
         return n.currentRoute === V.setup ? t.jsx(nn, {
             open: r,
             closable: !1,
@@ -10757,8 +10739,8 @@ let ms = class extends c.Component {
         })
     }
 };
-ms = px([I("engine", "gameValues"), j], ms);
-const fx = e => {
+ms = dx([I("engine", "gameValues"), j], ms);
+const hx = e => {
         const [n, r] = c.useState(!0), [i, s] = c.useState(!1);
         c.useEffect(() => {
             s(!0)
@@ -10772,7 +10754,7 @@ const fx = e => {
             a = () => {
                 i || r(!1)
             };
-        return n ? t.jsxs(xx, {
+        return n ? t.jsxs(fx, {
             onAnimationComplete: a,
             initial: {
                 bottom: 0,
@@ -10786,26 +10768,26 @@ const fx = e => {
                 type: "spring",
                 stiffness: 120
             },
-            children: [t.jsxs(vx, {
-                children: [t.jsx(wx, {
+            children: [t.jsxs(gx, {
+                children: [t.jsx(yx, {
                     src: e.imageUrl
-                }), t.jsx(yx, {
+                }), t.jsx(xx, {
                     onClick: o,
-                    children: t.jsx(bx, {})
+                    children: t.jsx(vx, {})
                 })]
-            }), t.jsxs(jx, {
-                children: [t.jsx(Cx, {
+            }), t.jsxs(bx, {
+                children: [t.jsx(wx, {
                     children: e.title
-                }), t.jsx(Sx, {
+                }), t.jsx(jx, {
                     children: e.description
                 })]
             })]
         }) : null
     },
-    gx = e => Yi.createPortal(t.jsx(fx, {
+    mx = e => Yi.createPortal(t.jsx(hx, {
         ...e
     }), document.body),
-    xx = l(U.div).attrs({
+    fx = l(U.div).attrs({
         className: "medium-shadow"
     })`
   position: absolute;
@@ -10818,12 +10800,12 @@ const fx = e => {
   font-family: ${Qi.SFPro};
   z-index: 99999999;
 `,
-    vx = l.div.attrs({
+    gx = l.div.attrs({
         className: "maxWidth"
     })`
   position: relative;
 `,
-    yx = l.div.attrs({
+    xx = l.div.attrs({
         className: "flex hc vc"
     })`
   position: absolute;
@@ -10841,28 +10823,28 @@ const fx = e => {
     color: rgba(255, 255, 255, 1);
   }
 `,
-    bx = l.i.attrs({
+    vx = l.i.attrs({
         className: "fal fa-times"
     })``,
-    wx = l.img.attrs({
+    yx = l.img.attrs({
         className: "maxWidth"
     })``,
-    jx = l.div`
+    bx = l.div`
   padding: 20px;
 `,
-    Cx = l.div`
+    wx = l.div`
   font-size: 22px;
-  font-weight: ${Fe.Bold};
+  font-weight: ${Be.Bold};
 `,
-    Sx = l.div`
+    jx = l.div`
   font-size: 15px;
   margin-top: 7px;
 `,
-    $x = j(() => {
+    Cx = j(() => {
         const {
             ui: e
         } = c.useContext(D);
-        return e.showingClassTip ? t.jsx(gx, {
+        return e.showingClassTip ? t.jsx(mx, {
             imageUrl: "/client/img/tips/class.jpeg",
             title: "Keep games safe with classes",
             description: t.jsxs(t.Fragment, {
@@ -10880,25 +10862,25 @@ const fx = e => {
             autoCloseDuration: 25
         }) : null
     }),
-    Tx = () => t.jsxs(t.Fragment, {
+    Sx = () => t.jsxs(t.Fragment, {
         children: [t.jsx(Xe, {
             route: V.gameplay,
             component: Yn
         }), t.jsx(Xe, {
             route: V.join,
-            component: jm
+            component: bm
         }), t.jsx(Xe, {
             route: V.results,
             component: cs
         }), t.jsx(Xe, {
             route: V.setup,
-            component: Ng
+            component: Pg
         }), t.jsx(Xe, {
             route: V.teams,
             component: hs
-        }), t.jsx(ns, {}), t.jsx(On, {}), t.jsx($x, {}), t.jsx(ms, {})]
+        }), t.jsx(ns, {}), t.jsx(On, {}), t.jsx(Cx, {}), t.jsx(ms, {})]
     }),
-    Ex = j(() => {
+    $x = j(() => {
         const {
             ui: {
                 backgroundColor: e
@@ -10907,13 +10889,13 @@ const fx = e => {
                 currentRoute: n
             }
         } = c.useContext(D), r = n === V.setup || n === V.join;
-        return t.jsx(Ox, {
+        return t.jsx(Tx, {
             backgroundColor: e,
             instantAnimateBackground: r,
-            children: t.jsx(Tx, {})
+            children: t.jsx(Sx, {})
         })
     }),
-    Ox = l.div`
+    Tx = l.div`
   min-height: 100vh;
   width: 100%;
   color: ${C.White};
@@ -10922,26 +10904,26 @@ const fx = e => {
   display: flex;
   flex-direction: column;
 `,
-    _x = () => t.jsx(D.Provider, {
+    Ex = () => t.jsx(D.Provider, {
         value: u,
         children: t.jsxs(Zi, {
             ...u,
             children: [t.jsx(Ki, {
                 title: "Host",
                 description: "Host a game of Gimkit, an online strategic game show for the classroom."
-            }), t.jsx(Ex, {})]
+            }), t.jsx($x, {})]
         })
     }),
-    kx = () => t.jsx(t.Fragment, {
-        children: t.jsx(_x, {})
+    Ox = () => t.jsx(t.Fragment, {
+        children: t.jsx(Ex, {})
     }),
-    f0 = Object.freeze(Object.defineProperty({
+    m0 = Object.freeze(Object.defineProperty({
         __proto__: null,
-        default: kx
+        default: Ox
     }, Symbol.toStringTag, {
         value: "Module"
     }));
 export {
     C,
-    f0 as i
+    m0 as i
 };

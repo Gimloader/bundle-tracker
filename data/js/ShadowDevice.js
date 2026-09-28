@@ -76,6 +76,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -83,7 +84,7 @@ const d = {
     imageId: "shadow_device",
     imageUrl: s("devices/shadow/shadow_device.png")
 };
-class Ai extends m {
+class Bi extends m {
     constructor(p) {
         super(p), this.setupVisualEditing = () => {
             if (!e() || !h()) return;
@@ -113,6 +114,6 @@ class Ai extends m {
     }
 }
 export {
-    Ai as
+    Bi as
     default
 };

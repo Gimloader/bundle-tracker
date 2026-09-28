@@ -81,6 +81,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -91,7 +92,7 @@ const y = {
 var i = (o => (o.stopped = "stopped", o.playing = "playing", o.fadingOut = "fadingOut", o))(i || {});
 const t = new Map,
     p = new Map;
-class Dt extends l {
+class Kt extends l {
     constructor(e) {
         if (super(e), this.onMasterVolumeChange = () => {
                 this.howl && this.howl.volume(m({
@@ -140,6 +141,6 @@ class Dt extends l {
     }
 }
 export {
-    Dt as MusicDevice, Dt as
+    Kt as MusicDevice, Kt as
     default
 };

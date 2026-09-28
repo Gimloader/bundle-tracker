@@ -85,6 +85,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const m = {
@@ -135,7 +136,7 @@ const m = {
             background: "rgba(0,0,0,0.6)"
         }
     },
-    Ho = i => {
+    Ro = i => {
         const r = n(),
             o = () => i.setToHomeScreen();
         return u(l.Input.Keyboard.KeyCodes.ESC, o, [o]), t.jsxs(a, {
@@ -163,6 +164,6 @@ const m = {
   overflow: hidden;
 `;
 export {
-    Ho as
+    Ro as
     default
 };

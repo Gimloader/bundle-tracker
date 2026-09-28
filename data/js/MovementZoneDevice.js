@@ -86,6 +86,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -111,7 +112,7 @@ const _ = {
         pingCompensation: 100,
         bgMargin: 64
     };
-class $t extends S {
+class ti extends S {
     constructor(Z) {
         super(Z), this.particles = [], this.isCharacterInZone = !1, this.onUpdate = i => {
             g() && this.moveView(i)
@@ -251,6 +252,6 @@ class $t extends S {
     }
 }
 export {
-    $t as MovementZoneDevice, $t as
+    ti as MovementZoneDevice, ti as
     default
 };

@@ -1,28 +1,28 @@
 import {
-    dU as Me,
+    dX as Me,
     by as x,
     bw as Z,
-    aA as v,
-    r as B,
+    b5 as v,
+    r as F,
     x as E,
-    aB as ne,
-    az as Re,
-    aD as we,
-    _ as X,
+    b1 as ne,
+    b3 as Re,
+    aZ as we,
+    _ as q,
     I as pe,
     B as Se,
     S as ye,
-    ai as Ae,
-    aj as be,
+    ai as be,
+    aj as Ae,
     bF as Ne,
-    aL as ke,
-    ak as Ie,
-    bc as Pe,
+    aQ as Pe,
+    ak as ke,
+    b9 as Ie,
     al as Oe,
-    aI as ze,
-    aS as Le,
-    bd as Be,
-    am as Fe
+    aP as ze,
+    a$ as Le,
+    bc as Fe,
+    am as Be
 } from "./_index.js";
 
 function H(a, o) {
@@ -80,11 +80,11 @@ function N(a, o, e) {
     for (var t = o - 1; t >= 0; t--) e.push(a >>> t & 1)
 }
 
-function _(a, o) {
+function D(a, o) {
     return (a >>> o & 1) != 0
 }
 
-function P(a) {
+function I(a) {
     if (!a) throw new Error("Assertion error")
 }
 var T = (function() {
@@ -236,7 +236,7 @@ var U = (function() {
                 var h = this.getPenaltyScore();
                 h < c && (n = m, c = h), this.applyMask(m)
             }
-        P(0 <= n && n <= 7), this.mask = n, this.applyMask(n), this.drawFormatBits(n), this.isFunction = []
+        I(0 <= n && n <= 7), this.mask = n, this.applyMask(n), this.drawFormatBits(n), this.isFunction = []
     }
     return x(a, [{
         key: "getModule",
@@ -262,12 +262,12 @@ var U = (function() {
         value: function(e) {
             for (var t = this.errorCorrectionLevel.formatBits << 3 | e, r = t, n = 0; n < 10; n++) r = r << 1 ^ (r >>> 9) * 1335;
             var i = (t << 10 | r) ^ 21522;
-            P(i >>> 15 == 0);
-            for (var s = 0; s <= 5; s++) this.setFunctionModule(8, s, _(i, s));
-            this.setFunctionModule(8, 7, _(i, 6)), this.setFunctionModule(8, 8, _(i, 7)), this.setFunctionModule(7, 8, _(i, 8));
-            for (var l = 9; l < 15; l++) this.setFunctionModule(14 - l, 8, _(i, l));
-            for (var u = 0; u < 8; u++) this.setFunctionModule(this.size - 1 - u, 8, _(i, u));
-            for (var c = 8; c < 15; c++) this.setFunctionModule(8, this.size - 15 + c, _(i, c));
+            I(i >>> 15 == 0);
+            for (var s = 0; s <= 5; s++) this.setFunctionModule(8, s, D(i, s));
+            this.setFunctionModule(8, 7, D(i, 6)), this.setFunctionModule(8, 8, D(i, 7)), this.setFunctionModule(7, 8, D(i, 8));
+            for (var l = 9; l < 15; l++) this.setFunctionModule(14 - l, 8, D(i, l));
+            for (var u = 0; u < 8; u++) this.setFunctionModule(this.size - 1 - u, 8, D(i, u));
+            for (var c = 8; c < 15; c++) this.setFunctionModule(8, this.size - 15 + c, D(i, c));
             this.setFunctionModule(8, this.size - 8, !0)
         }
     }, {
@@ -276,9 +276,9 @@ var U = (function() {
             if (!(this.version < 7)) {
                 for (var e = this.version, t = 0; t < 12; t++) e = e << 1 ^ (e >>> 11) * 7973;
                 var r = this.version << 12 | e;
-                P(r >>> 18 == 0);
+                I(r >>> 18 == 0);
                 for (var n = 0; n < 18; n++) {
-                    var i = _(r, n),
+                    var i = D(r, n),
                         s = this.size - 11 + n % 3,
                         l = Math.floor(n / 3);
                     this.setFunctionModule(s, l, i), this.setFunctionModule(l, s, i)
@@ -324,7 +324,7 @@ var U = (function() {
                         (C != u - i || y >= l) && d.push(S[C])
                     })
                 }, w = 0; w < c[0].length; w++) M(w);
-            return P(d.length == s), d
+            return I(d.length == s), d
         }
     }, {
         key: "drawCodewords",
@@ -337,10 +337,10 @@ var U = (function() {
                         var s = r - i,
                             l = (r + 1 & 2) == 0,
                             u = l ? this.size - 1 - n : n;
-                        !this.isFunction[u][s] && t < e.length * 8 && (this.modules[u][s] = _(e[t >>> 3], 7 - (t & 7)), t++)
+                        !this.isFunction[u][s] && t < e.length * 8 && (this.modules[u][s] = D(e[t >>> 3], 7 - (t & 7)), t++)
                     }
             }
-            P(t == e.length * 8)
+            I(t == e.length * 8)
         }
     }, {
         key: "applyMask",
@@ -400,9 +400,9 @@ var U = (function() {
                 w;
             try {
                 for (M.s(); !(w = M.n()).done;) {
-                    var k = w.value;
-                    d = k.reduce(function(y, b) {
-                        return y + (b ? 1 : 0)
+                    var P = w.value;
+                    d = P.reduce(function(y, A) {
+                        return y + (A ? 1 : 0)
                     }, d)
                 }
             } catch (y) {
@@ -412,7 +412,7 @@ var U = (function() {
             }
             var C = this.size * this.size,
                 S = Math.ceil(Math.abs(d * 20 - C * 10) / C) - 1;
-            return P(0 <= S && S <= 9), e += S * a.PENALTY_N4, P(0 <= e && e <= 2568888), e
+            return I(0 <= S && S <= 9), e += S * a.PENALTY_N4, I(0 <= e && e <= 2568888), e
         }
     }, {
         key: "getAlignmentPatternPositions",
@@ -425,7 +425,7 @@ var U = (function() {
         key: "finderPenaltyCountPatterns",
         value: function(e) {
             var t = e[1];
-            P(t <= this.size * 3);
+            I(t <= this.size * 3);
             var r = t > 0 && e[2] == t && e[3] == t * 3 && e[4] == t && e[5] == t;
             return (r && e[0] >= t * 4 && e[6] >= t ? 1 : 0) + (r && e[6] >= t * 4 && e[0] >= t ? 1 : 0)
         }
@@ -480,33 +480,33 @@ var U = (function() {
                 w;
             try {
                 for (M.s(); !(w = M.n()).done;) {
-                    var k = w.value;
-                    N(k.mode.modeBits, 4, d), N(k.numChars, k.mode.numCharCountBits(l), d);
-                    var C = H(k.getData()),
+                    var P = w.value;
+                    N(P.mode.modeBits, 4, d), N(P.numChars, P.mode.numCharCountBits(l), d);
+                    var C = H(P.getData()),
                         S;
                     try {
                         for (C.s(); !(S = C.n()).done;) {
                             var y = S.value;
                             d.push(y)
                         }
-                    } catch (I) {
-                        C.e(I)
+                    } catch (k) {
+                        C.e(k)
                     } finally {
                         C.f()
                     }
                 }
-            } catch (I) {
-                M.e(I)
+            } catch (k) {
+                M.e(k)
             } finally {
                 M.f()
             }
-            P(d.length == u);
-            var b = a.getNumDataCodewords(l, h) * 8;
-            P(d.length <= b), N(0, Math.min(4, b - d.length), d), N(0, (8 - d.length % 8) % 8, d), P(d.length % 8 == 0);
-            for (var p = 236; d.length < b; p ^= 253) N(p, 8, d);
+            I(d.length == u);
+            var A = a.getNumDataCodewords(l, h) * 8;
+            I(d.length <= A), N(0, Math.min(4, A - d.length), d), N(0, (8 - d.length % 8) % 8, d), I(d.length % 8 == 0);
+            for (var p = 236; d.length < A; p ^= 253) N(p, 8, d);
             for (var z = []; z.length * 8 < d.length;) z.push(0);
-            return d.forEach(function(I, L) {
-                return z[L >>> 3] |= I << 7 - (L & 7)
+            return d.forEach(function(k, L) {
+                return z[L >>> 3] |= k << 7 - (L & 7)
             }), new a(l, h, z, i)
         }
     }, {
@@ -518,7 +518,7 @@ var U = (function() {
                 var r = Math.floor(e / 7) + 2;
                 t -= (25 * r - 10) * r - 55, e >= 7 && (t -= 36)
             }
-            return P(208 <= t && t <= 29648), t
+            return I(208 <= t && t <= 29648), t
         }
     }, {
         key: "getNumDataCodewords",
@@ -566,7 +566,7 @@ var U = (function() {
         value: function(e, t) {
             if (e >>> 8 || t >>> 8) throw new RangeError("Byte out of range");
             for (var r = 0, n = 7; n >= 0; n--) r = r << 1 ^ (r >>> 7) * 285, r ^= (t >>> n & 1) * e;
-            return P(r >>> 8 == 0), r
+            return I(r >>> 8 == 0), r
         }
     }]), a
 })();
@@ -600,8 +600,8 @@ var Te = {
     se = "#000000",
     le = !1,
     ue = 1,
-    De = 4,
-    _e = 0,
+    _e = 4,
+    De = 0,
     Ue = .1;
 
 function ce(a) {
@@ -668,7 +668,7 @@ function Ve(a, o, e, t) {
 }
 
 function $e(a, o) {
-    return o != null ? Math.floor(o) : a ? De : _e
+    return o != null ? Math.floor(o) : a ? _e : De
 }
 var Qe = (function() {
     try {
@@ -687,11 +687,11 @@ function ve(a) {
         n = a.marginSize,
         i = a.imageSettings,
         s = a.size,
-        l = B.useMemo(function() {
+        l = F.useMemo(function() {
             var f = $.makeSegments(o);
             return U.encodeSegments(f, Te[e], t)
         }, [o, e, t]),
-        u = B.useMemo(function() {
+        u = F.useMemo(function() {
             var f = l.getModules(),
                 R = $e(r, n),
                 d = f.length + R * 2,
@@ -733,16 +733,16 @@ var He = ["value", "size", "level", "bgColor", "fgColor", "includeMargin", "minV
             d = o.marginSize,
             M = o.style,
             w = o.imageSettings,
-            k = ne(o, He),
+            P = ne(o, He),
             C = w == null ? void 0 : w.src,
-            S = B.useRef(null),
-            y = B.useRef(null),
-            b = B.useCallback(function(F) {
-                S.current = F, typeof e == "function" ? e(F) : e && (e.current = F)
+            S = F.useRef(null),
+            y = F.useRef(null),
+            A = F.useCallback(function(B) {
+                S.current = B, typeof e == "function" ? e(B) : e && (e.current = B)
             }, [e]),
-            p = B.useState(!1),
+            p = F.useState(!1),
             z = Re(p, 2),
-            I = z[1],
+            k = z[1],
             L = ve({
                 value: t,
                 level: s,
@@ -755,29 +755,29 @@ var He = ["value", "size", "level", "bgColor", "fgColor", "includeMargin", "minV
             V = L.margin,
             Q = L.cells,
             W = L.numCells,
-            A = L.calculatedImageSettings;
-        B.useEffect(function() {
+            b = L.calculatedImageSettings;
+        F.useEffect(function() {
             if (S.current != null) {
-                var F = S.current,
-                    D = F.getContext("2d");
-                if (!D) return;
+                var B = S.current,
+                    _ = B.getContext("2d");
+                if (!_) return;
                 var J = Q,
                     K = y.current,
-                    ee = A != null && K !== null && K.complete && K.naturalHeight !== 0 && K.naturalWidth !== 0;
-                ee && A.excavation != null && (J = de(Q, A.excavation));
+                    ee = b != null && K !== null && K.complete && K.naturalHeight !== 0 && K.naturalWidth !== 0;
+                ee && b.excavation != null && (J = de(Q, b.excavation));
                 var te = window.devicePixelRatio || 1;
-                F.height = F.width = n * te;
+                B.height = B.width = n * te;
                 var re = n / W * te;
-                D.scale(re, re), D.fillStyle = u, D.fillRect(0, 0, W, W), D.fillStyle = m, Qe ? D.fill(new Path2D(ce(J, V))) : Q.forEach(function(me, ge) {
+                _.scale(re, re), _.fillStyle = u, _.fillRect(0, 0, W, W), _.fillStyle = m, Qe ? _.fill(new Path2D(ce(J, V))) : Q.forEach(function(me, ge) {
                     me.forEach(function(Ce, Ee) {
-                        Ce && D.fillRect(Ee + V, ge + V, 1, 1)
+                        Ce && _.fillRect(Ee + V, ge + V, 1, 1)
                     })
-                }), A && (D.globalAlpha = A.opacity), ee && D.drawImage(K, A.x + V, A.y + V, A.w, A.h)
+                }), b && (_.globalAlpha = b.opacity), ee && _.drawImage(K, b.x + V, b.y + V, b.w, b.h)
             }
-        }), B.useEffect(function() {
-            I(!1)
+        }), F.useEffect(function() {
+            k(!1)
         }, [C]);
-        var q = we({
+        var X = we({
                 height: n,
                 width: n
             }, M),
@@ -789,17 +789,17 @@ var He = ["value", "size", "level", "bgColor", "fgColor", "includeMargin", "minV
                 display: "none"
             },
             onLoad: function() {
-                I(!0)
+                k(!0)
             },
             ref: y,
-            crossOrigin: A == null ? void 0 : A.crossOrigin
-        })), E.createElement(E.Fragment, null, E.createElement("canvas", X({
-            style: q,
+            crossOrigin: b == null ? void 0 : b.crossOrigin
+        })), E.createElement(E.Fragment, null, E.createElement("canvas", q({
+            style: X,
             height: n,
             width: n,
-            ref: b,
+            ref: A,
             role: "img"
-        }, k)), j)
+        }, P)), j)
     });
 he.displayName = "QRCodeCanvas";
 var Ge = ["value", "size", "level", "bgColor", "fgColor", "includeMargin", "minVersion", "title", "marginSize", "imageSettings"],
@@ -820,7 +820,7 @@ var Ge = ["value", "size", "level", "bgColor", "fgColor", "includeMargin", "minV
             d = o.title,
             M = o.marginSize,
             w = o.imageSettings,
-            k = ne(o, Ge),
+            P = ne(o, Ge),
             C = ve({
                 value: t,
                 level: s,
@@ -832,11 +832,11 @@ var Ge = ["value", "size", "level", "bgColor", "fgColor", "includeMargin", "minV
             }),
             S = C.margin,
             y = C.cells,
-            b = C.numCells,
+            A = C.numCells,
             p = C.calculatedImageSettings,
             z = y,
-            I = null;
-        w != null && p != null && (p.excavation != null && (z = de(y, p.excavation)), I = E.createElement("image", {
+            k = null;
+        w != null && p != null && (p.excavation != null && (z = de(y, p.excavation)), k = E.createElement("image", {
             href: w.src,
             height: p.h,
             width: p.w,
@@ -847,21 +847,21 @@ var Ge = ["value", "size", "level", "bgColor", "fgColor", "includeMargin", "minV
             crossOrigin: p.crossOrigin
         }));
         var L = ce(z, S);
-        return E.createElement("svg", X({
+        return E.createElement("svg", q({
             height: n,
             width: n,
-            viewBox: "0 0 ".concat(b, " ").concat(b),
+            viewBox: "0 0 ".concat(A, " ").concat(A),
             ref: e,
             role: "img"
-        }, k), !!d && E.createElement("title", null, d), E.createElement("path", {
+        }, P), !!d && E.createElement("title", null, d), E.createElement("path", {
             fill: u,
-            d: "M0,0 h".concat(b, "v").concat(b, "H0z"),
+            d: "M0,0 h".concat(A, "v").concat(A, "H0z"),
             shapeRendering: "crispEdges"
         }), E.createElement("path", {
             fill: m,
             d: L,
             shapeRendering: "crispEdges"
-        }), I)
+        }), k)
     });
 fe.displayName = "QRCodeSVG";
 var We = {
@@ -882,12 +882,12 @@ var We = {
         theme: "outlined"
     },
     Ke = function(o, e) {
-        return B.createElement(pe, X({}, o, {
+        return F.createElement(pe, q({}, o, {
             ref: e,
             icon: We
         }))
     },
-    Ye = B.forwardRef(Ke);
+    Ye = F.forwardRef(Ke);
 const je = E.createElement(ye, null);
 
 function xe({
@@ -926,14 +926,14 @@ const Ze = a => {
             colorSplit: r
         } = a;
         return {
-            [o]: Object.assign(Object.assign({}, ke(a)), {
+            [o]: Object.assign(Object.assign({}, Pe(a)), {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 padding: a.paddingSM,
                 backgroundColor: a.colorWhite,
                 borderRadius: a.borderRadiusLG,
-                border: `${Ie(e)} ${t} ${r}`,
+                border: `${ke(e)} ${t} ${r}`,
                 position: "relative",
                 overflow: "hidden",
                 [`& > ${o}-mask`]: {
@@ -972,15 +972,15 @@ const Ze = a => {
             }
         }
     },
-    qe = a => ({
+    Xe = a => ({
         QRCodeMaskBackgroundColor: new Ne(a.colorBgContainer).setA(.96).toRgbString()
     }),
-    Xe = Ae("QRCode", a => {
-        const o = be(a, {
+    qe = be("QRCode", a => {
+        const o = Ae(a, {
             QRCodeTextColor: a.colorText
         });
         return Ze(o)
-    }, qe);
+    }, Xe);
 var Je = function(a, o) {
     var e = {};
     for (var t in a) Object.prototype.hasOwnProperty.call(a, t) && o.indexOf(t) < 0 && (e[t] = a[t]);
@@ -990,7 +990,7 @@ var Je = function(a, o) {
 };
 const tt = a => {
     var o, e, t, r;
-    const [, n] = Pe(), {
+    const [, n] = Ie(), {
         value: i,
         type: s = "canvas",
         icon: l = "",
@@ -1004,12 +1004,12 @@ const tt = a => {
         style: d,
         className: M,
         rootClassName: w,
-        prefixCls: k,
+        prefixCls: P,
         bgColor: C = "transparent",
         statusRender: S
     } = a, y = Je(a, ["value", "type", "icon", "size", "iconSize", "color", "errorLevel", "status", "bordered", "onRefresh", "style", "className", "rootClassName", "prefixCls", "bgColor", "statusRender"]), {
-        getPrefixCls: b
-    } = B.useContext(Oe), p = b("qrcode", k), [z, I, L] = Xe(p), V = {
+        getPrefixCls: A
+    } = F.useContext(Oe), p = A("qrcode", P), [z, k, L] = qe(p), V = {
         src: l,
         x: void 0,
         y: void 0,
@@ -1017,7 +1017,7 @@ const tt = a => {
         width: typeof c == "number" ? c : (e = c == null ? void 0 : c.width) !== null && e !== void 0 ? e : 40,
         excavate: !0,
         crossOrigin: "anonymous"
-    }, Q = ze(y, !0), W = Le(y, Object.keys(Q)), A = Object.assign({
+    }, Q = ze(y, !0), W = Le(y, Object.keys(Q)), b = Object.assign({
         value: i,
         size: u,
         level: h,
@@ -1028,12 +1028,12 @@ const tt = a => {
             height: d == null ? void 0 : d.height
         },
         imageSettings: l ? V : void 0
-    }, Q), [q] = Be("QRCode");
+    }, Q), [X] = Fe("QRCode");
     if (!i) return null;
-    const j = Fe(p, M, w, I, L, {
+    const j = Be(p, M, w, k, L, {
             [`${p}-borderless`]: !f
         }),
-        F = Object.assign(Object.assign({
+        B = Object.assign(Object.assign({
             backgroundColor: C
         }, d), {
             width: (t = d == null ? void 0 : d.width) !== null && t !== void 0 ? t : u,
@@ -1041,16 +1041,16 @@ const tt = a => {
         });
     return z(E.createElement("div", Object.assign({}, W, {
         className: j,
-        style: F
+        style: B
     }), g !== "active" && E.createElement("div", {
         className: `${p}-mask`
     }, E.createElement(xe, {
         prefixCls: p,
-        locale: q,
+        locale: X,
         status: g,
         onRefresh: R,
         statusRender: S
-    })), s === "canvas" ? E.createElement(he, Object.assign({}, A)) : E.createElement(fe, Object.assign({}, A))))
+    })), s === "canvas" ? E.createElement(he, Object.assign({}, b)) : E.createElement(fe, Object.assign({}, b))))
 };
 export {
     tt as Q

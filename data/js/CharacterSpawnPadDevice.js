@@ -75,6 +75,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const s = {
@@ -85,7 +86,7 @@ const s = {
         imageId: t("devices/spawn_pad/base_with_character.png"),
         imageUrl: t("devices/spawn_pad/base_with_character.png")
     };
-class Lt extends e {
+class Ut extends e {
     constructor(r) {
         if (super(r), !this.options.visibleInGame && (p() || o())) return;
         const i = m() ? c : s;
@@ -96,6 +97,6 @@ class Lt extends e {
     }
 }
 export {
-    Lt as
+    Ut as
     default
 };

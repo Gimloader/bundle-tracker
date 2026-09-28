@@ -81,6 +81,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -88,7 +89,7 @@ const l = {
     imageId: r("devices/camera_size/base.png"),
     imageUrl: r("devices/camera_size/base.png")
 };
-class Ri extends s {
+class Wi extends s {
     constructor(m) {
         if (super(m), this.notifyManagerAboutUpdate = () => {
                 this.scene.worldManager.devices.cameras.allCamerasNeedsUpdate = !0
@@ -128,6 +129,6 @@ class Ri extends s {
     }
 }
 export {
-    Ri as
+    Wi as
     default
 };

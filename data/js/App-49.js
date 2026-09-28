@@ -113,6 +113,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -304,7 +305,7 @@ const K = () => {
     })`
   padding: 35px;
 `,
-    ve = () => {
+    we = () => {
         const t = B(),
             s = () => {
                 F(E.startScreen)
@@ -344,6 +345,6 @@ const K = () => {
   height: 90%;
 `;
 export {
-    ve as
+    we as
     default
 };

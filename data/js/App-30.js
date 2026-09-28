@@ -12,25 +12,25 @@ import {
     C as B,
     af as Y,
     B as k,
-    a_ as de,
+    aD as de,
     b as v,
     Y as me,
     c as f,
-    U as R,
+    U as $,
     a as y,
-    h as $,
+    h as I,
     l as ue,
-    M as I,
+    M as R,
     a4 as xe,
     t as z,
     D as M,
     q as pe,
-    aX as he,
+    aG as he,
     aa as ge,
     T as L,
     S as V,
-    aT as fe,
-    a$ as q,
+    az as fe,
+    aJ as q,
     p as je,
     n as ve,
     cd as be
@@ -101,7 +101,7 @@ import "./colors.js";
 import "./useWarningOnMountInDevelopment.js";
 import "./index-10.js";
 import "./move.js";
-var $e = {
+var Ie = {
         icon: {
             tag: "svg",
             attrs: {
@@ -118,19 +118,19 @@ var $e = {
         name: "dollar",
         theme: "outlined"
     },
-    Ie = function(s, n) {
+    Re = function(s, n) {
         return m.createElement(ae, le({}, s, {
             ref: n,
-            icon: $e
+            icon: Ie
         }))
     },
-    Re = m.forwardRef(Ie);
-const O = new ce,
+    $e = m.forwardRef(Re);
+const G = new ce,
     X = ["specific-bulk"],
     ze = t => Q([X, t], () => _({
         url: "/api/bulk/fetch/" + t
     })),
-    N = t => O.refetchQueries([X, t]),
+    N = t => G.refetchQueries([X, t]),
     Ee = "#388e3c",
     Te = "#f44336",
     Le = t => {
@@ -147,9 +147,9 @@ const O = new ce,
                     background: r ? Ee : Te
                 },
                 children: r ? "Active" : "Inactive"
-            }), e.jsx(Oe, {
+            }), e.jsx(Ge, {
                 children: n
-            }), i ? e.jsxs(Ge, {
+            }), i ? e.jsxs(Oe, {
                 children: ["Started on ", i]
             }) : null]
         })
@@ -184,17 +184,17 @@ const O = new ce,
   margin-bottom: 9px;
   font-size: 12px;
 `,
-    Oe = l.div`
+    Ge = l.div`
   font-weight: ${x.Bold};
   font-size: 16px;
 `,
-    Ge = l.div`
+    Oe = l.div`
   font-style: italic;
   font-size: 13px;
   margin-top: 2px;
   color: rgba(0, 0, 0, 0.9);
 `,
-    Ue = t => e.jsx(Z, {
+    De = t => e.jsx(Z, {
         children: e.jsxs(ee, {
             children: [e.jsxs("div", {
                 style: {
@@ -203,7 +203,7 @@ const O = new ce,
                 className: "flex-column flex-center",
                 children: [e.jsxs(te, {
                     children: [B, " Groups"]
-                }), e.jsxs(De, {
+                }), e.jsxs(Ue, {
                     children: ["Welcome to ", B, " Groups! Below are the group licenses you manage. Click into a license to invite members, add managers, view usage analytics, and more!"]
                 }), e.jsx(b, {
                     to: Y,
@@ -247,7 +247,7 @@ const O = new ce,
   font-size: 54px;
   font-weight: ${x.UltraBold};
 `,
-    De = l.div`
+    Ue = l.div`
   font-size: 16px;
   margin-bottom: 30px;
   max-width: 700px;
@@ -263,7 +263,7 @@ const O = new ce,
 `,
     re = t => e.jsx(f, {
         style: {
-            fontFamily: R.SFPro,
+            fontFamily: $.SFPro,
             color: u.Black,
             marginBottom: 5
         },
@@ -287,8 +287,8 @@ const O = new ce,
             })]
         })
     }),
-    G = {
-        fontFamily: R.SFPro,
+    O = {
+        fontFamily: $.SFPro,
         color: u.Black
     },
     We = t => {
@@ -309,7 +309,7 @@ const O = new ce,
                 },
                 error: a => {
                     if (a && a.message && a.message.text && a.message.text === "USER NOT FOUND") {
-                        $({
+                        I({
                             title: "User not found",
                             content: "This user does not exist on Gimkit yet. In order to be an manager for this license, they will need to create a free account first."
                         });
@@ -321,20 +321,20 @@ const O = new ce,
             }))
         }, S = a => {
             if (s.owners.length < 2) {
-                $({
+                I({
                     title: "Cannot remove",
                     content: "Please add another admin before removing yourself"
                 });
                 return
             }
             if (ue().email !== a) {
-                $({
+                I({
                     title: "Cannot remove",
                     content: "Managers can only remove themselves"
                 });
                 return
             }
-            I.confirm({
+            R.confirm({
                 title: "Are you sure you want to remove yourself as a manager?",
                 onOk: () => {
                     y({
@@ -343,7 +343,7 @@ const O = new ce,
                             bulk: n
                         },
                         success: () => window.location.reload(),
-                        error: () => $({
+                        error: () => I({
                             title: "Error removing user from license"
                         })
                     })
@@ -352,7 +352,7 @@ const O = new ce,
         };
         return e.jsxs(e.Fragment, {
             children: [e.jsx(f, {
-                style: G,
+                style: O,
                 children: e.jsxs("div", {
                     children: [e.jsx("div", {
                         style: {
@@ -370,7 +370,7 @@ const O = new ce,
                 })
             }), e.jsxs(f, {
                 style: {
-                    ...G,
+                    ...O,
                     marginTop: 10,
                     marginBottom: 10
                 },
@@ -421,7 +421,7 @@ const O = new ce,
         url: "/api/bulk/fetch-all"
     })),
     _e = () => {
-        O.invalidateQueries(ne)
+        G.invalidateQueries(ne)
     },
     Ye = t => {
         const {
@@ -540,7 +540,7 @@ const O = new ce,
         const [s, n] = m.useState(""), i = !!s, r = c => n(c.target.value), o = () => {
             i && (t.onNewName(s), t.close())
         };
-        return e.jsx(I, {
+        return e.jsx(R, {
             open: t.open,
             closable: !0,
             onCancel: t.close,
@@ -572,7 +572,7 @@ const O = new ce,
         })
     },
     E = {
-        fontFamily: R.SFPro,
+        fontFamily: $.SFPro,
         color: u.Black
     },
     qe = t => e.jsx(f, {
@@ -583,7 +583,7 @@ const O = new ce,
         },
         children: e.jsxs("div", {
             className: "flex vc",
-            children: [e.jsx(U, {
+            children: [e.jsx(D, {
                 count: t.maxSeats,
                 description: "total seats"
             }), e.jsx(M, {
@@ -592,13 +592,13 @@ const O = new ce,
                     marginLeft: 20,
                     marginRight: 20
                 }
-            }), e.jsx(U, {
+            }), e.jsx(D, {
                 count: t.seatsRemaining,
                 description: `${pe("seat",t.seatsRemaining)} remaining`
             })]
         })
     }),
-    U = t => e.jsxs("div", {
+    D = t => e.jsxs("div", {
         className: "flex flex-column vc",
         children: [e.jsx("div", {
             style: {
@@ -690,7 +690,7 @@ const O = new ce,
                     importedBulk: r
                 },
                 success: () => {
-                    N(t.currentBulk), I.success({
+                    N(t.currentBulk), R.success({
                         title: "Members imported!",
                         content: e.jsxs(e.Fragment, {
                             children: ["All members from ", e.jsx("b", {
@@ -700,7 +700,7 @@ const O = new ce,
                     })
                 },
                 error: c => {
-                    $({
+                    I({
                         title: "Error importing members",
                         content: "Please try again."
                     })
@@ -710,7 +710,7 @@ const O = new ce,
                 }
             }))
         };
-        return e.jsx(I, {
+        return e.jsx(R, {
             open: t.visible,
             onCancel: t.close,
             width: 650,
@@ -749,7 +749,7 @@ const O = new ce,
     },
     Ke = l.div`
   color: ${u.Black};
-  font-family: ${R.SFPro};
+  font-family: ${$.SFPro};
 `,
     Je = l.div`
   font-size: 28px;
@@ -757,7 +757,7 @@ const O = new ce,
   line-height: 1;
   margin-top: 20px;
 `,
-    D = {
+    U = {
         ...E,
         width: "calc(50% - 4px)",
         flex: 1
@@ -798,7 +798,7 @@ const O = new ce,
                     blockSeatRenewalEmails: g
                 },
                 success: () => {
-                    I.success({
+                    R.success({
                         title: `Renewal emails ${g?"disabled":"enabled"}`,
                         content: `Members of this group will ${g?"no longer":"now"} receive renewal emails when this license is close to expiring.`
                     }), N(r)
@@ -844,11 +844,11 @@ const O = new ce,
                     }), e.jsx(M, {}), e.jsxs("div", {
                         className: "flex",
                         children: [e.jsxs(f, {
-                            style: D,
+                            style: U,
                             hoverable: !0,
                             bodyStyle: W,
                             className: "flex hc vc flex-column",
-                            children: [e.jsx(Re, {}), e.jsx(M, {}), e.jsxs("div", {
+                            children: [e.jsx($e, {}), e.jsx(M, {}), e.jsxs("div", {
                                 style: {
                                     fontSize: 16
                                 },
@@ -859,7 +859,7 @@ const O = new ce,
                                 width: 8
                             }
                         }), e.jsxs(f, {
-                            style: D,
+                            style: U,
                             hoverable: !0,
                             bodyStyle: W,
                             className: "flex hc vc flex-column",
@@ -1040,7 +1040,7 @@ const O = new ce,
                 })
             });
             const i = s && Array.isArray(s) ? s : [];
-            return i.length ? e.jsx(Ue, {
+            return i.length ? e.jsx(De, {
                 bulks: i
             }) : e.jsx(rt, {})
         };
@@ -1058,7 +1058,7 @@ const O = new ce,
             id: t
         } = ve(), s = t;
         return e.jsx(be, {
-            client: O,
+            client: G,
             children: e.jsxs(ct, {
                 children: [e.jsx(Ae, {
                     includeSpacer: !0
@@ -1074,7 +1074,7 @@ const O = new ce,
   flex: 1;
   color: ${u.Black};
   background: ${u.Snow};
-  font-family: ${R.SFPro};
+  font-family: ${$.SFPro};
 `;
 export {
     Yt as

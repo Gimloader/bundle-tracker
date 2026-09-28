@@ -1,7 +1,7 @@
 import {
     m as y,
     o as e,
-    aZ as O,
+    aI as O,
     dF as d
 } from "./_index.js";
 var P = Object.defineProperty,
@@ -95,10 +95,10 @@ n([e], t.prototype, "existingPayingPlan", 2);
 n([e], t.prototype, "stripePublicKey", 2);
 n([d], t.prototype, "totalCost", 1);
 n([O], t.prototype, "reset", 2);
-const Z = {
+const q = {
     navigation: new l,
     checkout: new t
 };
 export {
-    g as S, Z as s
+    g as S, q as s
 };

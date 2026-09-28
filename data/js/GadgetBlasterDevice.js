@@ -81,6 +81,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -95,7 +96,7 @@ const S = 80,
     r = 360,
     N = o => (o % r + r) % r,
     g = o => Phaser.Math.Angle.Wrap((N(o) - 90) * v);
-class Zt extends F {
+class Jt extends F {
     constructor(I) {
         super(I), this.currentAngle = 0, this.targetAngle = 0, this.idleAnimationName = "", this.fireAnimationName = "", this.createVisuals = () => {
             this.createEditorRangeGuide(), this.createGadget(), this.cull.setMargin(this.getRadius() + n), this.updateGadgetTransform()
@@ -257,6 +258,6 @@ class Zt extends F {
     }
 }
 export {
-    Zt as
+    Jt as
     default
 };

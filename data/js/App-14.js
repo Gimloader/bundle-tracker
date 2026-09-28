@@ -11,7 +11,7 @@ import {
     C as sr,
     f as or,
     i as nn,
-    a$ as gt,
+    aJ as gt,
     a4 as ar,
     B as te,
     d as se,
@@ -31,7 +31,7 @@ import {
 } from "./mobxreact.esm.js";
 import {
     b as ne,
-    c as $t,
+    c as zt,
     T as It
 } from "./Question.js";
 import {
@@ -42,7 +42,7 @@ import {
     T as Ss
 } from "./index-5.js";
 import {
-    s as zt
+    s as $t
 } from "./index-4.js";
 import {
     U as Rs
@@ -191,7 +191,7 @@ var Ps = {
         }))
     },
     Fs = V.forwardRef(Vs),
-    $s = {
+    zs = {
         icon: {
             tag: "svg",
             attrs: {
@@ -215,13 +215,13 @@ var Ps = {
         name: "function",
         theme: "outlined"
     },
-    zs = function(t, n) {
+    $s = function(t, n) {
         return V.createElement(Ee, xe({}, t, {
             ref: n,
-            icon: $s
+            icon: zs
         }))
     },
-    vr = V.forwardRef(zs),
+    vr = V.forwardRef($s),
     qs = {
         icon: {
             tag: "svg",
@@ -360,12 +360,12 @@ class so extends V.Component {
                 error: r => {
                     this.setState({
                         loading: !1
-                    }), zt.error("Error uploading. Please try again.")
+                    }), $t.error("Error uploading. Please try again.")
                 }
             })
         }, this.fileIsSmallEnough = t => {
             const n = t.size / 1024 / 1024 < 5;
-            return n || zt.error("Photo must be less than 5MB"), n
+            return n || $t.error("Photo must be less than 5MB"), n
         }
     }
     render() {
@@ -1287,7 +1287,7 @@ const jo = e => (t, n) => {
             return d = h !== void 0, h === void 0 ? u.call(i) : u.call(i, h)
         })(i.start), i
     },
-    $o = e => e === null || e.MediaRecorder === void 0 ? null : e.MediaRecorder,
+    zo = e => e === null || e.MediaRecorder === void 0 ? null : e.MediaRecorder,
     wt = () => {
         try {
             return new DOMException("", "NotSupportedError")
@@ -1295,7 +1295,7 @@ const jo = e => (t, n) => {
             return e.code = 9, e.name = "NotSupportedError", e
         }
     },
-    zo = e => (t, n, r, s = 2) => {
+    $o = e => (t, n, r, s = 2) => {
         const o = e(t, n);
         if (o === null) return o;
         const {
@@ -1834,7 +1834,7 @@ const ba = e => ({
     Fn = e => {
         if (e !== void 0 && !Array.isArray(e)) throw new TypeError("The parameterDescriptors property of given value for processorCtor is not an array.")
     },
-    $n = e => {
+    zn = e => {
         if (!Ra(e)) throw new TypeError("The given value for processorCtor should be a constructor.");
         if (e.prototype === null || typeof e.prototype != "object") throw new TypeError("The given value for processorCtor should have a prototype.")
     },
@@ -1863,8 +1863,8 @@ const ba = e => ({
                         const C = Qt.get(b);
                         if (C !== void 0) {
                             if (C.has(x)) throw t();
-                            $n(E), Fn(E.parameterDescriptors), C.set(x, E)
-                        } else $n(E), Fn(E.parameterDescriptors), Qt.set(b, new Map([
+                            zn(E), Fn(E.parameterDescriptors), C.set(x, E)
+                        } else zn(E), Fn(E.parameterDescriptors), Qt.set(b, new Map([
                             [x, E]
                         ]))
                     }, b.sampleRate, void 0, void 0))
@@ -1984,7 +1984,7 @@ const ba = e => ({
         e(t).add(n)
     },
     cn = (e, t) => e.context === t,
-    zn = e => {
+    $n = e => {
         try {
             e.copyToChannel(new Float32Array(1), 0, -1)
         } catch {
@@ -2025,7 +2025,7 @@ const ba = e => ({
                     sampleRate: p
                 }) : i.createBuffer(h, u, p);
                 if (m.numberOfChannels === 0) throw n();
-                return typeof m.copyFromChannel != "function" ? (a(m), Pa(m)) : t(zn, () => zn(m)) || c(m), e.add(m), m
+                return typeof m.copyFromChannel != "function" ? (a(m), Pa(m)) : t($n, () => $n(m)) || c(m), e.add(m), m
             }
             static[Symbol.hasInstance](d) {
                 return d !== null && typeof d == "object" && Object.getPrototypeOf(d) === Vr.prototype || e.has(d)
@@ -2146,8 +2146,8 @@ const ba = e => ({
     },
     Va = e => "playbackRate" in e,
     Fa = e => "frequency" in e && "gain" in e,
-    $a = e => "offset" in e,
-    za = e => !("frequency" in e) && "gain" in e,
+    za = e => "offset" in e,
+    $a = e => !("frequency" in e) && "gain" in e,
     qa = e => "detune" in e && "frequency" in e && !("gain" in e),
     Ga = e => "pan" in e,
     ee = e => ae(Nr, e),
@@ -2159,7 +2159,7 @@ const ba = e => ({
         n.forEach(s => s.forEach(([o]) => {
             t.includes(e) || Zt(o, [...t, e])
         }));
-        const r = Va(e) ? [e.playbackRate] : Wr(e) ? Array.from(e.parameters.values()) : Fa(e) ? [e.Q, e.detune, e.frequency, e.gain] : $a(e) ? [e.offset] : za(e) ? [e.gain] : qa(e) ? [e.detune, e.frequency] : Ga(e) ? [e.pan] : [];
+        const r = Va(e) ? [e.playbackRate] : Wr(e) ? Array.from(e.parameters.values()) : Fa(e) ? [e.Q, e.detune, e.frequency, e.gain] : za(e) ? [e.offset] : $a(e) ? [e.gain] : qa(e) ? [e.detune, e.frequency] : Ga(e) ? [e.pan] : [];
         for (const s of r) {
             const o = Ye(s);
             o !== void 0 && o.activeInputs.forEach(([a]) => Zt(a, t))
@@ -2381,13 +2381,13 @@ const ba = e => ({
         }
         return e.connect(t, n, r), [t, n, r]
     },
-    $r = (e, t, n) => {
+    zr = (e, t, n) => {
         for (const r of e)
             if (r[0] === t && r[1] === n) return e.delete(r), r;
         return null
     },
     Za = (e, t, n) => Ct(e, r => r[0] === t && r[1] === n),
-    zr = (e, t) => {
+    $r = (e, t) => {
         if (!Xe(e).delete(t)) throw new Error("Missing the expected event listener.")
     },
     qr = (e, t, n) => {
@@ -2481,19 +2481,19 @@ const ba = e => ({
         const {
             activeInputs: s,
             passiveInputs: o
-        } = ee(t), a = $r(s[r], e, n);
+        } = ee(t), a = zr(s[r], e, n);
         return a === null ? [Dr(o, e, n, r)[2], !1] : [a[2], !0]
     },
     ni = (e, t, n) => {
         const {
             activeInputs: r,
             passiveInputs: s
-        } = Ye(t), o = $r(r, e, n);
+        } = Ye(t), o = zr(r, e, n);
         return o === null ? [qr(s, e, n)[1], !1] : [o[2], !0]
     },
     ln = (e, t, n, r, s) => {
         const [o, a] = ti(e, n, r, s);
-        if (o !== null && (zr(e, o), a && !t && !ke(e) && en(re(e), re(n), r, s)), be(n)) {
+        if (o !== null && ($r(e, o), a && !t && !ke(e) && en(re(e), re(n), r, s)), be(n)) {
             const {
                 activeInputs: c
             } = ee(n);
@@ -2502,7 +2502,7 @@ const ba = e => ({
     },
     un = (e, t, n, r) => {
         const [s, o] = ni(e, n, r);
-        s !== null && (zr(e, s), o && !t && !ke(e) && re(e).disconnect(Ge(n), r))
+        s !== null && ($r(e, s), o && !t && !ke(e) && re(e).disconnect(Ge(n), r))
     },
     ri = (e, t) => {
         const n = ee(e),
@@ -3209,7 +3209,7 @@ const Hr = (e, t, n, r, s) => {
             }
             e.set(c, i)
         } else e.set(c, l + i)
-    }, Vi = e => t => e !== null && t instanceof e, Fi = e => t => e !== null && typeof e.AudioNode == "function" && t instanceof e.AudioNode, $i = e => t => e !== null && typeof e.AudioParam == "function" && t instanceof e.AudioParam, zi = e => t => e !== null && t instanceof e, qi = e => e !== null && e.isSecureContext, Gi = (e, t, n, r) => class extends e {
+    }, Vi = e => t => e !== null && t instanceof e, Fi = e => t => e !== null && typeof e.AudioNode == "function" && t instanceof e.AudioNode, zi = e => t => e !== null && typeof e.AudioParam == "function" && t instanceof e.AudioParam, $i = e => t => e !== null && t instanceof e, qi = e => e !== null && e.isSecureContext, Gi = (e, t, n, r) => class extends e {
         constructor(o, a) {
             const c = n(o),
                 i = t(c, a);
@@ -3507,14 +3507,14 @@ const Hr = (e, t, n, r, s) => {
                     defaultValue: A,
                     maxValue: I,
                     minValue: X,
-                    name: z
+                    name: $
                 }
                 of g.parameterDescriptors) {
                 const F = o(p, {
                     channelCount: 1,
                     channelCountMode: "explicit",
                     channelInterpretation: "discrete",
-                    offset: v.parameterData[z] !== void 0 ? v.parameterData[z] : A === void 0 ? 0 : A
+                    offset: v.parameterData[$] !== void 0 ? v.parameterData[$] : A === void 0 ? 0 : A
                 });
                 Object.defineProperties(F.offset, {
                     defaultValue: {
@@ -3627,8 +3627,8 @@ const Hr = (e, t, n, r, s) => {
             if (I[0] === "message") {
                 const X = typeof I[1] == "function" ? I[1] : typeof I[1] == "object" && I[1] !== null && typeof I[1].handleEvent == "function" ? I[1].handleEvent : null;
                 if (X !== null) {
-                    const z = k.get(I[1]);
-                    z !== void 0 ? I[1] = z : (I[1] = F => {
+                    const $ = k.get(I[1]);
+                    $ !== void 0 ? I[1] = $ : (I[1] = F => {
                         d(p.currentTime, p.sampleRate, () => X(F))
                     }, k.set(X, I[1]))
                 }
@@ -3663,7 +3663,7 @@ const Hr = (e, t, n, r, s) => {
                 v.numberOfOutputs > 0 && S.disconnect(L);
                 for (let A = 0, I = 0; A < v.numberOfOutputs; A += 1) {
                     const X = P[A];
-                    for (let z = 0; z < w[A]; z += 1) L.disconnect(X, I + z, z);
+                    for (let $ = 0; $ < w[A]; $ += 1) L.disconnect(X, I + $, $);
                     I += w[A]
                 }
             },
@@ -3674,13 +3674,13 @@ const Hr = (e, t, n, r, s) => {
         }) => {
             if (W !== null) {
                 const X = u(N);
-                for (let z = 0; z < O; z += 128) {
+                for (let $ = 0; $ < O; $ += 128) {
                     for (let F = 0; F < v.numberOfInputs; F += 1)
-                        for (let G = 0; G < v.channelCount; G += 1) mt(A, Y[F], G, G, z);
+                        for (let G = 0; G < v.channelCount; G += 1) mt(A, Y[F], G, G, $);
                     g.parameterDescriptors !== void 0 && g.parameterDescriptors.forEach(({
                         name: F
                     }, G) => {
-                        mt(A, pe, F, y + G, z)
+                        mt(A, pe, F, y + G, $)
                     });
                     for (let F = 0; F < v.numberOfInputs; F += 1)
                         for (let G = 0; G < w[F]; G += 1) ue[F][G].byteLength === 0 && (ue[F][G] = new Float32Array(128));
@@ -3688,11 +3688,11 @@ const Hr = (e, t, n, r, s) => {
                         const F = Y.map((J, ie) => {
                             if (X[ie].size > 0) return ge.set(ie, O / 128), J;
                             const Ue = ge.get(ie);
-                            return Ue === void 0 ? [] : (J.every(Q => Q.every($ => $ === 0)) && (Ue === 1 ? ge.delete(ie) : ge.set(ie, Ue - 1)), J)
+                            return Ue === void 0 ? [] : (J.every(Q => Q.every(z => z === 0)) && (Ue === 1 ? ge.delete(ie) : ge.set(ie, Ue - 1)), J)
                         });
-                        q = d(p.currentTime + z / p.sampleRate, p.sampleRate, () => W.process(F, ue, pe));
+                        q = d(p.currentTime + $ / p.sampleRate, p.sampleRate, () => W.process(F, ue, pe));
                         for (let J = 0, ie = 0; J < v.numberOfOutputs; J += 1) {
-                            for (let Ae = 0; Ae < w[J]; Ae += 1) Hr(I, ue[J], Ae, ie + Ae, z);
+                            for (let Ae = 0; Ae < w[J]; Ae += 1) Hr(I, ue[J], Ae, ie + Ae, $);
                             ie += w[J]
                         }
                     } catch (F) {
@@ -3706,7 +3706,7 @@ const Hr = (e, t, n, r, s) => {
                     if (!q) {
                         for (let F = 0; F < v.numberOfInputs; F += 1) {
                             x[F].disconnect(E[F]);
-                            for (let G = 0; G < v.channelCount; G += 1) E[z].disconnect(R, G, F * v.channelCount + G)
+                            for (let G = 0; G < v.channelCount; G += 1) E[$].disconnect(R, G, F * v.channelCount + G)
                         }
                         if (g.parameterDescriptors !== void 0) {
                             const F = g.parameterDescriptors.length;
@@ -3737,7 +3737,7 @@ const Hr = (e, t, n, r, s) => {
                     Be(), v.numberOfOutputs > 0 && S.connect(L);
                     for (let A = 0, I = 0; A < v.numberOfOutputs; A += 1) {
                         const X = P[A];
-                        for (let z = 0; z < w[A]; z += 1) L.connect(X, I + z, z);
+                        for (let $ = 0; $ < w[A]; $ += 1) L.connect(X, I + $, $);
                         I += w[A]
                     }
                 }
@@ -4115,7 +4115,7 @@ const Hr = (e, t, n, r, s) => {
             currentTarget: r,
             target: r
         }), typeof t == "function" ? t.call(e, n) : t.handleEvent.call(e, n)
-    }, Uc = Ta(Oe), Dc = Na(Oe), Wc = _i(Ct), Vc = new WeakMap, Fc = Oi(Vc), Fe = mi(new Map, new WeakMap), ce = xc(), ts = Ni(ee), xt = gc(ee, ts, ke), _e = Li(Lr), $e = mc(ce), le = zi($e), ns = new WeakMap, rs = Si(Je), At = Ji(ce), $c = Vi(At), ss = Fi(ce), zc = $i(ce), He = tc(ce), et = ai(Ma(Nr), Ia(Uc, Dc, Jt, Wc, en, ee, Fc, Xe, re, Oe, be, ke, ct), Fe, Wi(Xt, en, ee, re, Ge, be), Ne, Di, je, Ci(Jt, Xt, ee, re, Ge, _e, be, le), Ai(ns, ee, ae), rs, _e, $c, ss, zc, le, He), qc = new WeakSet, Qn = Yi(ce), os = bi(new Uint32Array(1)), Gc = Ac(os, Ne), Hc = Tc(os), Xc = Ba(qc, Fe, je, Qn, $e, bc(Qn), Gc, Hc), mn = Oa(Ce), as = vc(ts, Ye, ke), pn = pi(as), Tt = Zi(mn, Fe, Ic, Nc, Oc, Jr, jc, es, Lc, Mc(hn), Bc), gn = pc(ji(Ye), as), Qc = Wa(pn, Tt, re, gn, xt), Mt = ii(Sa(jr), ns, Pr, ci, ba, Ca, _a, Ea, xa, qt, kr, At, Zr), Yc = Da(et, Qc, Mt, oe, Tt, _e, le, Je), Kc = Qa(et, Ya, Ne, oe, ec(Ce, hn), _e, le, xt), St = Qi(Oe, ss), Zc = Sc(oe, St), vn = lc(At, Zc), Jc = fc(mn, Tt, Ce, St), tt = dc(mn, Fe, Jc, Jr, es), el = yi(pn, tt, re, gn, xt), tl = wi(et, Mt, el, tt, _e, le, Je), nl = wc(Fe, Ce, fn, _c(Ce, $e)), rl = Ka(Mt, vn, tt, fn, je, Rc, le, hn), is = new WeakMap, sl = Xi(Kc, rl, rs, le, is, Je), cs = qi(ce), wn = Ri(ce), ls = new WeakMap, ol = Bi(ls, $e), Yn = cs ? ka(Fe, je, Mi(ce), wn, ki(Aa), _e, ol, le, He, new WeakMap, new WeakMap, Cc(He, $e), ce) : void 0, al = Gi(et, hc, _e, le), us = Ui(is), il = ja(us), ds = gi(Ne), cl = Ei(us), fs = Ti(Ne), hs = new WeakMap, ll = Ii(hs, ae), ul = cc(ds, Ne, oe, vn, Yr, tt, Ce, fn, je, fs, wn, ll, St), dl = rc(oe, ul, Ce, je, St), fl = hi(pn, ds, Tt, vn, Yr, tt, Ce, cl, fs, wn, re, He, $e, gn, xt, nl), hl = Pi(ls), ml = yc(hs), Kn = cs ? ui(il, et, Mt, fl, dl, ee, hl, _e, le, He, kc, ml, Pc, Je) : void 0, pl = Hi(oe, je, Ec, sl, At), ms = "Missing AudioWorklet support. Maybe this is not running in a secure context.", gl = async (e, t, n, r, s) => {
+    }, Uc = Ta(Oe), Dc = Na(Oe), Wc = _i(Ct), Vc = new WeakMap, Fc = Oi(Vc), Fe = mi(new Map, new WeakMap), ce = xc(), ts = Ni(ee), xt = gc(ee, ts, ke), _e = Li(Lr), ze = mc(ce), le = $i(ze), ns = new WeakMap, rs = Si(Je), At = Ji(ce), zc = Vi(At), ss = Fi(ce), $c = zi(ce), He = tc(ce), et = ai(Ma(Nr), Ia(Uc, Dc, Jt, Wc, en, ee, Fc, Xe, re, Oe, be, ke, ct), Fe, Wi(Xt, en, ee, re, Ge, be), Ne, Di, je, Ci(Jt, Xt, ee, re, Ge, _e, be, le), Ai(ns, ee, ae), rs, _e, zc, ss, $c, le, He), qc = new WeakSet, Qn = Yi(ce), os = bi(new Uint32Array(1)), Gc = Ac(os, Ne), Hc = Tc(os), Xc = Ba(qc, Fe, je, Qn, ze, bc(Qn), Gc, Hc), mn = Oa(Ce), as = vc(ts, Ye, ke), pn = pi(as), Tt = Zi(mn, Fe, Ic, Nc, Oc, Jr, jc, es, Lc, Mc(hn), Bc), gn = pc(ji(Ye), as), Qc = Wa(pn, Tt, re, gn, xt), Mt = ii(Sa(jr), ns, Pr, ci, ba, Ca, _a, Ea, xa, qt, kr, At, Zr), Yc = Da(et, Qc, Mt, oe, Tt, _e, le, Je), Kc = Qa(et, Ya, Ne, oe, ec(Ce, hn), _e, le, xt), St = Qi(Oe, ss), Zc = Sc(oe, St), vn = lc(At, Zc), Jc = fc(mn, Tt, Ce, St), tt = dc(mn, Fe, Jc, Jr, es), el = yi(pn, tt, re, gn, xt), tl = wi(et, Mt, el, tt, _e, le, Je), nl = wc(Fe, Ce, fn, _c(Ce, ze)), rl = Ka(Mt, vn, tt, fn, je, Rc, le, hn), is = new WeakMap, sl = Xi(Kc, rl, rs, le, is, Je), cs = qi(ce), wn = Ri(ce), ls = new WeakMap, ol = Bi(ls, ze), Yn = cs ? ka(Fe, je, Mi(ce), wn, ki(Aa), _e, ol, le, He, new WeakMap, new WeakMap, Cc(He, ze), ce) : void 0, al = Gi(et, hc, _e, le), us = Ui(is), il = ja(us), ds = gi(Ne), cl = Ei(us), fs = Ti(Ne), hs = new WeakMap, ll = Ii(hs, ae), ul = cc(ds, Ne, oe, vn, Yr, tt, Ce, fn, je, fs, wn, ll, St), dl = rc(oe, ul, Ce, je, St), fl = hi(pn, ds, Tt, vn, Yr, tt, Ce, cl, fs, wn, re, He, ze, gn, xt, nl), hl = Pi(ls), ml = yc(hs), Kn = cs ? ui(il, et, Mt, fl, dl, ee, hl, _e, le, He, kc, ml, Pc, Je) : void 0, pl = Hi(oe, je, Ec, sl, At), ms = "Missing AudioWorklet support. Maybe this is not running in a secure context.", gl = async (e, t, n, r, s) => {
         const {
             encoderId: o,
             port: a
@@ -4469,12 +4469,12 @@ const wl = (e, t, n, r, s) => (o, a, c, i) => {
     vs = jo(Cl),
     _l = vl(vs, on, Uo, wt),
     yn = Go(ps),
-    El = zo(yn),
+    El = $o(yn),
     xl = qo(yn),
     Al = Po(El, xl),
     Tl = wl(vs, on, wt, Al, yn),
     Ml = Bo(Rt),
-    Sl = $o(Rt),
+    Sl = zo(Rt),
     Rl = Fo(on, wt),
     kl = Wo(Rl, wt, _l, Tl, gs, Lo(Ml, bl), Sl),
     Il = () => Do(Rt),
@@ -4513,7 +4513,7 @@ const wl = (e, t, n, r, s) => (o, a, c, i) => {
         return Pl(t)
     }, Bl = `(()=>{var e={455:function(e,t){!function(e){"use strict";var t=function(e){return function(t){var r=e(t);return t.add(r),r}},r=function(e){return function(t,r){return e.set(t,r),r}},n=void 0===Number.MAX_SAFE_INTEGER?9007199254740991:Number.MAX_SAFE_INTEGER,s=536870912,a=2*s,o=function(e,t){return function(r){var o=t.get(r),i=void 0===o?r.size:o<a?o+1:0;if(!r.has(i))return e(r,i);if(r.size<s){for(;r.has(i);)i=Math.floor(Math.random()*a);return e(r,i)}if(r.size>n)throw new Error("Congratulations, you created a collection of unique numbers which uses all available integers!");for(;r.has(i);)i=Math.floor(Math.random()*n);return e(r,i)}},i=new WeakMap,c=r(i),l=o(c,i),u=t(l);e.addUniqueNumber=u,e.generateUniqueNumber=l}(t)}},t={};function r(n){var s=t[n];if(void 0!==s)return s.exports;var a=t[n]={exports:{}};return e[n].call(a.exports,a,a.exports,r),a.exports}(()=>{"use strict";const e=-32603,t=-32602,n=-32601,s=(e,t)=>Object.assign(new Error(e),{status:t}),a=t=>s('The handler of the method called "'.concat(t,'" returned an unexpected result.'),e),o=(t,r)=>async({data:{id:o,method:i,params:c}})=>{const l=r[i];try{if(void 0===l)throw(e=>s('The requested method called "'.concat(e,'" is not supported.'),n))(i);const r=void 0===c?l():l(c);if(void 0===r)throw(t=>s('The handler of the method called "'.concat(t,'" returned no required result.'),e))(i);const u=r instanceof Promise?await r:r;if(null===o){if(void 0!==u.result)throw a(i)}else{if(void 0===u.result)throw a(i);const{result:e,transferables:r=[]}=u;t.postMessage({id:o,result:e},r)}}catch(e){const{message:r,status:n=-32603}=e;t.postMessage({error:{code:n,message:r},id:o})}};var i=r(455);const c=new Map,l=(e,r,n)=>({...r,connect:({port:t})=>{t.start();const n=e(t,r),s=(0,i.generateUniqueNumber)(c);return c.set(s,()=>{n(),t.close(),c.delete(s)}),{result:s}},disconnect:({portId:e})=>{const r=c.get(e);if(void 0===r)throw(e=>s('The specified parameter called "portId" with the given value "'.concat(e,'" does not identify a port connected to this worker.'),t))(e);return r(),{result:null}},isSupported:async()=>{if(await new Promise(e=>{const t=new ArrayBuffer(0),{port1:r,port2:n}=new MessageChannel;r.onmessage=({data:t})=>e(null!==t),n.postMessage(t,[t])})){const e=n();return{result:e instanceof Promise?await e:e}}return{result:!1}}}),u=(e,t,r=()=>!0)=>{const n=l(u,t,r),s=o(e,n);return e.addEventListener("message",s),()=>e.removeEventListener("message",s)},d=e=>e.reduce((e,t)=>e+t.length,0),h=(e,t)=>{const r=[];let n=0;e:for(;n<t;){const t=e.length;for(let s=0;s<t;s+=1){const t=e[s];void 0===r[s]&&(r[s]=[]);const a=t.shift();if(void 0===a)break e;r[s].push(a),0===s&&(n+=a.length)}}if(n>t){const s=n-t;r.forEach((t,r)=>{const n=t.pop(),a=n.length-s;t.push(n.subarray(0,a)),e[r].unshift(n.subarray(a))})}return r},f=new Map,m=(e=>(t,r,n)=>{const s=e.get(t);if(void 0===s){const s={channelDataArrays:n.map(e=>[e]),isComplete:!0,sampleRate:r};return e.set(t,s),s}return s.channelDataArrays.forEach((e,t)=>e.push(n[t])),s})(f),p=((e,t)=>(r,n,s,a)=>{const o=s>>3,i="subsequent"===n?0:44,c=r.length,l=e(r[0]),u=new ArrayBuffer(l*c*o+i),d=new DataView(u);return"subsequent"!==n&&t(d,s,c,"complete"===n?l:Number.POSITIVE_INFINITY,a),r.forEach((e,t)=>{let r=i+t*o;e.forEach(e=>{const t=e.length;for(let n=0;n<t;n+=1){const t=e[n];d.setInt16(r,t<0?32768*Math.max(-1,t):32767*Math.min(1,t),!0),r+=c*o}})}),[u]})(d,(e,t,r,n,s)=>{const a=t>>3,o=Math.min(n*r*a,4294967251);e.setUint32(0,1380533830),e.setUint32(4,o+36,!0),e.setUint32(8,1463899717),e.setUint32(12,1718449184),e.setUint32(16,16,!0),e.setUint16(20,1,!0),e.setUint16(22,r,!0),e.setUint32(24,s,!0),e.setUint32(28,s*r*a,!0),e.setUint16(32,r*a,!0),e.setUint16(34,t,!0),e.setUint32(36,1684108385),e.setUint32(40,o,!0)}),v=new Map;u(self,{characterize:()=>({result:/^audio\\/wav$/}),encode:({recordingId:e,timeslice:t})=>{const r=v.get(e);void 0!==r&&(v.delete(e),r.reject(new Error("Another request was made to initiate an encoding.")));const n=f.get(e);if(null!==t){if(void 0===n||d(n.channelDataArrays[0])*(1e3/n.sampleRate)<t)return new Promise((r,n)=>{v.set(e,{reject:n,resolve:r,timeslice:t})});const r=h(n.channelDataArrays,Math.ceil(t*(n.sampleRate/1e3))),s=p(r,n.isComplete?"initial":"subsequent",16,n.sampleRate);return n.isComplete=!1,{result:s,transferables:s}}if(void 0!==n){const t=p(n.channelDataArrays,n.isComplete?"complete":"subsequent",16,n.sampleRate);return f.delete(e),{result:t,transferables:t}}return{result:[],transferables:[]}},record:({recordingId:e,sampleRate:t,typedArrays:r})=>{const n=m(e,t,r),s=v.get(e);if(void 0!==s&&d(n.channelDataArrays[0])*(1e3/t)>=s.timeslice){const r=h(n.channelDataArrays,Math.ceil(s.timeslice*(t/1e3))),a=p(r,n.isComplete?"initial":"subsequent",16,t);n.isComplete=!1,v.delete(e),s.resolve({result:a,transferables:a})}return{result:null}}})})()})();`, Ul = new Blob([Bl], {
         type: "application/javascript; charset=utf-8"
-    }), ws = URL.createObjectURL(Ul), ze = Ll(ws), Dl = ze.characterize, Wl = ze.connect, Vl = ze.disconnect, Fl = ze.encode, $l = ze.isSupported, zl = ze.record;
+    }), ws = URL.createObjectURL(Ul), $e = Ll(ws), Dl = $e.characterize, Wl = $e.connect, Vl = $e.disconnect, Fl = $e.encode, zl = $e.isSupported, $l = $e.record;
 URL.revokeObjectURL(ws);
 const ql = Object.freeze(Object.defineProperty({
         __proto__: null,
@@ -4521,8 +4521,8 @@ const ql = Object.freeze(Object.defineProperty({
         connect: Wl,
         disconnect: Vl,
         encode: Fl,
-        isSupported: $l,
-        record: zl
+        isSupported: zl,
+        record: $l
     }, Symbol.toStringTag, {
         value: "Module"
     })),
@@ -4700,13 +4700,13 @@ function Hl() {
                 if (!kt) {
                     var Q = function() {
                         return t(d, void 0, void 0, function() {
-                            var $;
+                            var z;
                             return n(this, function(K) {
                                 switch (K.label) {
                                     case 0:
-                                        return K.trys.push([0, 3, , 4]), $ = r.register, [4, (0, o.connect)()];
+                                        return K.trys.push([0, 3, , 4]), z = r.register, [4, (0, o.connect)()];
                                     case 1:
-                                        return [4, $.apply(void 0, [K.sent()])];
+                                        return [4, z.apply(void 0, [K.sent()])];
                                     case 2:
                                         return K.sent(), [3, 4];
                                     case 3:
@@ -4722,7 +4722,7 @@ function Hl() {
             }, []);
             var I = (0, s.useCallback)(function() {
                 return t(d, void 0, void 0, function() {
-                    var Q, $, K, ve, st;
+                    var Q, z, K, ve, st;
                     return n(this, function(de) {
                         switch (de.label) {
                             case 0:
@@ -4739,17 +4739,17 @@ function Hl() {
                                     preferCurrentTab: y
                                 })] : [3, 6];
                             case 3:
-                                return $ = de.sent(), $.getVideoTracks()[0].addEventListener("ended", function() {
+                                return z = de.sent(), z.getVideoTracks()[0].addEventListener("ended", function() {
                                     Ue()
                                 }), h ? [4, window.navigator.mediaDevices.getUserMedia({
                                     audio: h
                                 })] : [3, 5];
                             case 4:
                                 K = de.sent(), K.getAudioTracks().forEach(function(Cs) {
-                                    return $.addTrack(Cs)
+                                    return z.addTrack(Cs)
                                 }), de.label = 5;
                             case 5:
-                                return T.current = $, [3, 8];
+                                return T.current = z, [3, 8];
                             case 6:
                                 return [4, window.navigator.mediaDevices.getUserMedia(Q)];
                             case 7:
@@ -4767,9 +4767,9 @@ function Hl() {
             (0, s.useEffect)(function() {
                 if (!window.MediaRecorder) throw new Error("Unsupported Browser");
                 if (R && !window.navigator.mediaDevices.getDisplayMedia) throw new Error("This browser doesn't support screen capturing");
-                var Q = function($) {
+                var Q = function(z) {
                     var K = navigator.mediaDevices.getSupportedConstraints(),
-                        ve = Object.keys($).filter(function(st) {
+                        ve = Object.keys(z).filter(function(st) {
                             return !K[st]
                         });
                     ve.length > 0 && console.error("The constraints " + ve.join(",") + " doesn't support on this browser. Please check your ReactMediaRecorder component.")
@@ -4777,8 +4777,8 @@ function Hl() {
                 return typeof h == "object" && Q(h), typeof m == "object" && Q(m), S && S.mimeType && (MediaRecorder.isTypeSupported(S.mimeType) || console.error("The specified MIME type you supplied for MediaRecorder doesn't support this browser")), !T.current && U && I(),
                     function() {
                         if (T.current) {
-                            var $ = T.current.getTracks();
-                            $.forEach(function(K) {
+                            var z = T.current.getTracks();
+                            z.forEach(function(K) {
                                 return K.clone().stop()
                             })
                         }
@@ -4787,52 +4787,52 @@ function Hl() {
             var X = function() {
                     return t(d, void 0, void 0, function() {
                         var Q;
-                        return n(this, function($) {
-                            switch ($.label) {
+                        return n(this, function(z) {
+                            switch (z.label) {
                                 case 0:
                                     return Be("NONE"), T.current ? [3, 2] : [4, I()];
                                 case 1:
-                                    $.sent(), $.label = 2;
+                                    z.sent(), z.label = 2;
                                 case 2:
                                     return T.current ? (Q = T.current.getTracks().some(function(K) {
                                         return K.readyState === "ended"
                                     }), Q ? [4, I()] : [3, 4]) : [3, 5];
                                 case 3:
-                                    $.sent(), $.label = 4;
+                                    z.sent(), z.label = 4;
                                 case 4:
                                     if (!T.current.active) return [2];
-                                    N.current = new r.MediaRecorder(T.current, S || void 0), N.current.ondataavailable = z, N.current.onstop = G, N.current.onstart = F, N.current.onerror = function() {
+                                    N.current = new r.MediaRecorder(T.current, S || void 0), N.current.ondataavailable = $, N.current.onstop = G, N.current.onstart = F, N.current.onerror = function() {
                                         Be("NO_RECORDER"), Y("idle")
-                                    }, N.current.start(), Y("recording"), $.label = 5;
+                                    }, N.current.start(), Y("recording"), z.label = 5;
                                 case 5:
                                     return [2]
                             }
                         })
                     })
                 },
-                z = function(Q) {
-                    var $ = Q.data;
-                    k.current.push($)
+                $ = function(Q) {
+                    var z = Q.data;
+                    k.current.push(z)
                 },
                 F = function() {
                     x()
                 },
                 G = function() {
                     var Q = k.current[0],
-                        $ = Object.assign({
+                        z = Object.assign({
                             type: Q.type
                         }, E || (m ? {
                             type: "video/mp4"
                         } : {
                             type: "audio/wav"
                         })),
-                        K = new Blob(k.current, $),
+                        K = new Blob(k.current, z),
                         ve = URL.createObjectURL(K);
                     Y("stopped"), Pe(ve), M(ve, K)
                 },
                 J = function(Q) {
-                    q(Q), T.current && T.current.getAudioTracks().forEach(function($) {
-                        return $.enabled = !Q
+                    q(Q), T.current && T.current.getAudioTracks().forEach(function(z) {
+                        return z.enabled = !Q
                     })
                 },
                 ie = function() {
@@ -4911,7 +4911,7 @@ const Yl = 3,
                     method: "post",
                     data: m,
                     success: g => e.onAudioChanged(g.url),
-                    error: g => zt.error("Error uploading. Please try again."),
+                    error: g => $t.error("Error uploading. Please try again."),
                     both: () => n(!1)
                 })
             }).catch()
@@ -4994,7 +4994,7 @@ const Yl = 3,
                             onClick: s,
                             size: "large",
                             type: "dashed",
-                            icon: f.jsx($t, {}),
+                            icon: f.jsx(zt, {}),
                             children: "New Recording"
                         })]
                     }), f.jsx("div", {
@@ -5005,7 +5005,7 @@ const Yl = 3,
                 }), r === "idle" && f.jsx(te, {
                     onClick: s,
                     style: er,
-                    icon: f.jsx($t, {}),
+                    icon: f.jsx(zt, {}),
                     type: "dashed",
                     children: "Start Recording"
                 }), r === "recording" && f.jsxs(f.Fragment, {
@@ -5186,7 +5186,7 @@ const Yl = 3,
                     }
                 }), f.jsx(Vt, {
                     disabled: e.audioBlocked || !window.MediaRecorder || nn(),
-                    icon: f.jsx($t, {}),
+                    icon: f.jsx(zt, {}),
                     label: `${e.question.audio?"":"Add "}Audio`,
                     onClick: m
                 }), f.jsx("div", {

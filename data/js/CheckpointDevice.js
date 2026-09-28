@@ -84,11 +84,12 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const m = "checkpoint-idle",
     p = "checkpoint-pop";
-class _i extends f {
+class Ti extends f {
     constructor(a) {
         if (super(a), this.bubbleIsReady = !1, this.createdAt = Date.now(), this.onBubbleActiveChange = () => {
                 this.state.active ? (Date.now() - this.createdAt > 1e3 && this.options.playAudio && this.options.visibleInGame && this.cull.isInsideView && w({
@@ -164,6 +165,6 @@ class _i extends f {
     }
 }
 export {
-    _i as
+    Ti as
     default
 };

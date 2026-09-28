@@ -5,7 +5,7 @@ import {
     cf as V,
     x as f,
     cg as S,
-    bg as G,
+    bf as G,
     ch as R,
     ci as O,
     cj as Z,

@@ -77,10 +77,11 @@ import "./MapSound.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-class Ct extends c {
+class Ft extends c {
     constructor(p) {
         if (super(p), this.onStateChange = t => {
                 t === "beingRemoved" && this.state.beingRemoved && this.sticker && this.tweens.add({
@@ -124,6 +125,6 @@ class Ct extends c {
     }
 }
 export {
-    Ct as
+    Ft as
     default
 };

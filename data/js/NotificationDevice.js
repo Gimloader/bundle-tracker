@@ -75,10 +75,11 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 var t = (o => (o.callToAction = "primaryCallToAction", o))(t || {});
-class Po extends a {
+class Bo extends a {
     constructor(r) {
         if (super(r), this.useCallToAction = () => {
                 this.sendToServerDevice(t.callToAction)
@@ -99,6 +100,6 @@ class Po extends a {
     }
 }
 export {
-    Po as
+    Bo as
     default
 };

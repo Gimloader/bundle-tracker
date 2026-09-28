@@ -78,6 +78,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const m = e => {
@@ -99,7 +100,7 @@ const m = e => {
         })
     }), i.slice(0, 10)
 };
-class To extends l {
+class Uo extends l {
     constructor(i) {
         if (super(i), this.openDeviceUI = () => {
                 this.deviceUI.open({
@@ -134,6 +135,6 @@ class To extends l {
     }
 }
 export {
-    To as
+    Uo as
     default
 };

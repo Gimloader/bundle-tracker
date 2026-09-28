@@ -79,9 +79,10 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-class _o extends n {
+class wo extends n {
     constructor(m) {
         if (super(m), this.onStateChange = i => {
                 var t;
@@ -109,6 +110,6 @@ class _o extends n {
     }
 }
 export {
-    _o as
+    wo as
     default
 };

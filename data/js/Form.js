@@ -123,6 +123,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 import "./TrackPostHogEvent.js";
@@ -1543,7 +1544,7 @@ const Yt = async (n, r, e = 0) => {
   background: rgba(255, 255, 255, 0.15);
   padding: 10px;
   border-radius: 6px;
-`, to = "https://docs.creative.gimkit.com/general/publishing/community-rules-for-publishing-with-gimkit-creative", Wr = n => {
+`, to = "https://docs.creative.gimkit.com/general/publishing/community-rules-for-publishing-with-gimkit-creative", Lr = n => {
     const [r, e, t] = lt(!1), [o] = U.useForm(), i = mt(), a = c => {
         o.setFieldsValue({
             imageUrl: c
@@ -1729,6 +1730,6 @@ const Yt = async (n, r, e = 0) => {
     }) : null]
 });
 export {
-    Wr as
+    Lr as
     default
 };

@@ -1,5 +1,5 @@
 import {
-    aQ as d,
+    aQ as m,
     L as e,
     aK as w,
     aU as f
@@ -87,6 +87,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -124,7 +125,7 @@ const y = {
             height: t.options.height,
             width: 203 * .15,
             scale: .15,
-            depthChange: d(2),
+            depthChange: m(2),
             x: a(-t.options.width / 2 + 5),
             onReady: i => {
                 t.updatePartAlpha(i)
@@ -190,9 +191,9 @@ const y = {
             }
         })
     };
-class Nt extends w {
-    constructor(m) {
-        if (super(m), this.updatePartAlpha = i => {
+class jt extends w {
+    constructor(d) {
+        if (super(d), this.updatePartAlpha = i => {
                 const s = this.getAlpha();
                 r() && i.updateAlpha(s > 0 ? 1 : 0)
             }, this.updateAlpha = () => {
@@ -225,7 +226,7 @@ class Nt extends w {
                 })
             }, g() && n() && this.parts.add.sprite({
                 ...y,
-                depthChange: d(2)
+                depthChange: m(2)
             }).view.setScale(.17), r() || l() ? this.options.visibleInGame : b.shouldShow(this)) {
             this.setupVisualEditing();
             const i = f(this.options.color);
@@ -238,7 +239,7 @@ class Nt extends w {
                 borderColor: i,
                 borderAlpha: r() || l() ? 0 : this.options.backgroundAlpha,
                 borderWidth: 4,
-                depthChange: d(1),
+                depthChange: m(1),
                 ignoreInput: !0
             }), this.options.style === u.blastball && I(this)
         }
@@ -248,6 +249,6 @@ class Nt extends w {
     }
 }
 export {
-    Nt as BallZoneDevice, Nt as
+    jt as BallZoneDevice, jt as
     default
 };

@@ -91,6 +91,7 @@ import "./MapSound.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -276,7 +277,7 @@ const C = {
         const i = m(t.state.characterId);
         i && (t.currentFlagX = i.body.x, t.currentFlagY = i.body.y, t.flipScale = i.flip.isFlipped ? -1 : 1)
     };
-class Jt extends w {
+class vt extends w {
     constructor(i) {
         if (super(i), this.goingBackToBase = !1, this.idleRotation = 0, this.currentFlagX = 0, this.currentFlagY = 0, this.pickupShiftX = 0, this.pickupShiftY = 0, this.dropShiftY = 0, this.backScale = 1, this.backAlpha = 1, this.shadowAlpha = 0, this.shadowScale = 0, this.flipScale = 1, this.cumulTime = Math.random() * 1e3, this.onUpdate = r => {
                 A(this), this.cumulTime += r, this.idleRotation = Math.sin(this.cumulTime / 400 / a.FlagSwingInterval) * a.FlagSwingAmplitude, this.flag.view.rotation = this.idleRotation, this.flag.view.scaleX = a.BaseScale * this.flipScale, this.flag.view.scaleY = a.BaseScale * this.backScale, this.flag.view.x = this.currentFlagX + this.pickupShiftX, this.flag.view.y = this.currentFlagY + this.pickupShiftY + this.dropShiftY, this.flag.view.setDepth(F(this.flag.view.y, n.DepthSortedCharactersAndDevices)), this.flagShadow.view.alpha = this.shadowAlpha, this.flagShadow.view.scaleX = this.flagShadow.view.scaleY = this.shadowScale
@@ -347,6 +348,6 @@ class Jt extends w {
     }
 }
 export {
-    Jt as
+    vt as
     default
 };

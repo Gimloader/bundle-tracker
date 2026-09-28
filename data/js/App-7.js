@@ -6,25 +6,27 @@ import {
     D as L,
     d as C,
     e as y,
-    F as f,
+    F as S,
     a6 as _,
     a7 as $,
     B as ae,
+    c as ie,
+    U as te,
     a as T,
     S as Q,
     V as B,
-    h as ie,
-    t as te,
+    h as oe,
+    t as re,
     a8 as O,
     $ as w,
-    M as oe,
-    a9 as re,
-    l as ce,
-    aa as se,
-    G as me,
+    M as ce,
+    a9 as se,
+    l as me,
+    aa as le,
+    G as ue,
     ab as z,
-    a3 as le,
-    T as ue
+    a3 as ge,
+    T as Fe
 } from "./_index.js";
 import {
     s as u,
@@ -37,9 +39,9 @@ import {
     o as M
 } from "./mobxreact.esm.js";
 import {
-    L as ge,
-    F as Fe,
-    E as Ue
+    L as Ue,
+    F as pe,
+    E as he
 } from "./EmailStage.js";
 import {
     I as K
@@ -48,25 +50,22 @@ import {
     A as j,
     T as R,
     P as ee,
-    N as pe
+    N as ve
 } from "./NameAndPasswordStage.js";
 import {
-    c as he
+    c as de
 } from "./polished.esm.js";
 import {
     S as H
-} from "./School.js";
-import {
-    S as V
 } from "./index-8.js";
 import {
-    E as ve
+    E as je
 } from "./EducatorSpecificInfoStage.js";
 import {
     N as x
 } from "./NavigateTo.js";
 import {
-    I as de
+    I as ye
 } from "./IsURLFromUs.js";
 import "./ErrorMessage.js";
 import "./index-4.js";
@@ -76,20 +75,20 @@ import "./inheritsLoose.js";
 import "./move.js";
 import "./CheckOutlined.js";
 import "./DownOutlined.js";
-const je = n => n.includes(r.email) ? g.email : n.includes(r.password) ? g.password : n.includes(r.acceptedLatestPolicies) ? g.acceptPolicies : n.includes(r.accountType) ? g.accountType : n.includes(r.accountPassword) ? g.nameAndPassword : n.includes(r.firstName) ? g.nameAndPassword : n.includes(r.lastName) ? g.nameAndPassword : n.includes(r.country) ? g.school : n.includes(r.areaOfExpertise) ? g.educatorSpecificInfo : n.includes(r.gradeLevel) ? g.educatorSpecificInfo : n.includes(r.organization) ? g.nonSchoolSpecificInfo : null,
-    ye = () => {
+const Se = n => n.includes(r.email) ? g.email : n.includes(r.password) ? g.password : n.includes(r.acceptedLatestPolicies) ? g.acceptPolicies : n.includes(r.accountType) ? g.accountType : n.includes(r.accountPassword) ? g.nameAndPassword : n.includes(r.firstName) ? g.nameAndPassword : n.includes(r.lastName) ? g.nameAndPassword : n.includes(r.country) ? g.school : n.includes(r.areaOfExpertise) ? g.educatorSpecificInfo : n.includes(r.gradeLevel) ? g.educatorSpecificInfo : n.includes(r.organization) ? g.nonSchoolSpecificInfo : null,
+    Ee = () => {
         const {
             informationNeeded: n
         } = u.login;
         return {
-            currentStage: je(n)
+            currentStage: Se(n)
         }
     },
-    Se = M(n => {
+    Ae = M(n => {
         const {
             navigation: t
         } = l.useContext(k), a = !!t.classJoiningName, o = a ? "/client/img/gimkitGIcon.svg" : "/client/img/svgLogo.svg", i = a ? 55 : 42;
-        return e.jsxs(Ee, {
+        return e.jsxs(fe, {
             children: [n.message && e.jsx(q, {
                 style: {
                     marginBottom: 5
@@ -99,7 +98,7 @@ const je = n => n.includes(r.email) ? g.email : n.includes(r.password) ? g.passw
                 showIcon: !0
             }), e.jsx(ne, {
                 to: "/",
-                children: e.jsx(Ae, {
+                children: e.jsx(Ce, {
                     style: {
                         height: i,
                         marginBottom: a ? 5 : 0
@@ -107,34 +106,34 @@ const je = n => n.includes(r.email) ? g.email : n.includes(r.password) ? g.passw
                     src: o
                 })
             }), t.classJoiningName ? e.jsxs(e.Fragment, {
-                children: [e.jsx(fe, {
+                children: [e.jsx(ke, {
                     children: t.classJoiningName
-                }), e.jsx(Ce, {
+                }), e.jsx(Ne, {
                     children: t.classJoiningTeacherName
                 })]
             }) : null, e.jsx(L, {})]
         })
     }),
-    Ee = C.div`
+    fe = C.div`
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 `,
-    Ae = C.img`
+    Ce = C.img`
   margin-top: 11px;
 `,
-    fe = C.div`
+    ke = C.div`
   color: ${y.Black};
   font-size: 28px;
-  font-weight: ${f.Bold};
+  font-weight: ${S.Bold};
 `,
-    Ce = C.div`
+    Ne = C.div`
   color: rgba(0, 0, 0, 0.9);
   font-size: 15px;
 `,
-    ke = M(() => {
+    be = M(() => {
         const {
             login: n,
             navigation: t
@@ -146,7 +145,7 @@ const je = n => n.includes(r.email) ? g.email : n.includes(r.password) ? g.passw
         return e.jsxs(e.Fragment, {
             children: [e.jsx("div", {
                 style: {
-                    fontWeight: f.Black,
+                    fontWeight: S.Black,
                     fontSize: 24,
                     color: y.Black
                 },
@@ -169,26 +168,26 @@ const je = n => n.includes(r.email) ? g.email : n.includes(r.password) ? g.passw
                 },
                 loading: t.loggingIn,
                 children: "Login"
-            }), e.jsx(ge, {}), e.jsx(L, {}), e.jsx("div", {
+            }), e.jsx(Ue, {}), e.jsx(L, {}), e.jsx("div", {
                 onClick: () => m(!0),
                 style: {
                     cursor: "pointer",
                     fontSize: 12
                 },
                 children: "Forgot password?"
-            }), e.jsx(Fe, {
+            }), e.jsx(pe, {
                 open: i,
                 close: () => m(!1),
                 defaultEmail: n.email
             })]
         })
     }),
-    Z = n => e.jsx(Be, {
+    V = n => e.jsx(Me, {
         backgroundColor: n.background,
         onClick: n.handleSelect,
         children: n.children
     }),
-    Ne = M(() => {
+    Be = M(() => {
         const [n, t] = l.useState(!0), {
             login: a
         } = l.useContext(k), o = () => a.informationNeeded.replace(a.informationNeeded.filter(N => N !== r.accountType)), i = () => a.googleToken ? [] : a.userExists ? [] : [r.firstName, r.lastName, r.accountPassword], m = () => {
@@ -217,7 +216,7 @@ const je = n => n.includes(r.email) ? g.email : n.includes(r.password) ? g.passw
         return n ? e.jsxs(e.Fragment, {
             children: [e.jsx("div", {
                 style: {
-                    fontWeight: f.Black,
+                    fontWeight: S.Black,
                     fontSize: 29,
                     color: y.Black,
                     width: "100%",
@@ -225,8 +224,8 @@ const je = n => n.includes(r.email) ? g.email : n.includes(r.password) ? g.passw
                     marginBottom: 8
                 },
                 children: "Select your account type..."
-            }), e.jsxs(be, {
-                children: [e.jsxs(Z, {
+            }), e.jsxs(Te, {
+                children: [e.jsxs(V, {
                     handleSelect: m,
                     background: "#33691e",
                     children: [e.jsx("div", {
@@ -234,7 +233,7 @@ const je = n => n.includes(r.email) ? g.email : n.includes(r.password) ? g.passw
                             className: "fas fa-chalkboard-teacher"
                         })
                     }), "Educator"]
-                }), e.jsxs(Z, {
+                }), e.jsxs(V, {
                     handleSelect: () => t(!1),
                     background: "#9E5F28",
                     children: [e.jsx("div", {
@@ -250,7 +249,7 @@ const je = n => n.includes(r.email) ? g.email : n.includes(r.password) ? g.passw
                     fontSize: 18,
                     color: y.Black,
                     marginBottom: 20,
-                    fontWeight: f.Bold
+                    fontWeight: S.Bold
                 },
                 children: ["I am at least 13 years of age (or 16+ outside the US) and agree to Gimkit's", " ", e.jsx("a", {
                     href: _,
@@ -273,7 +272,7 @@ const je = n => n.includes(r.email) ? g.email : n.includes(r.password) ? g.passw
             })]
         })
     }),
-    be = C.div`
+    Te = C.div`
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -281,11 +280,11 @@ const je = n => n.includes(r.email) ? g.email : n.includes(r.password) ? g.passw
   flex-wrap: wrap;
   margin-top: 20px;
 `,
-    Be = C.div.attrs({
+    Me = C.div.attrs({
         className: "flex-center flex-column light-shadow"
     })`
   border-radius: 4px;
-  font-weight: ${f.Bold};
+  font-weight: ${S.Bold};
   color: ${y.White};
   background: ${n=>n.backgroundColor};
   width: 46%;
@@ -295,21 +294,21 @@ const je = n => n.includes(r.email) ? g.email : n.includes(r.password) ? g.passw
   transition: all 0.25s;
   will-change: transform;
   &:hover {
-    background: ${n=>he(.1,n.backgroundColor)};
+    background: ${n=>de(.1,n.backgroundColor)};
     transform: scale(1.03);
   }
 `;
 var I = {
     exports: {}
 }; /*! countries-list v2.6.1 by Annexare | MIT */
-var Te = I.exports,
-    W;
+var Pe = I.exports,
+    Z;
 
-function Me() {
-    return W || (W = 1, (function(n, t) {
+function De() {
+    return Z || (Z = 1, (function(n, t) {
         (function(a, o) {
             n.exports = o()
-        })(Te, (function() {
+        })(Pe, (function() {
             var a = {
                     AF: "Africa",
                     AN: "Antarctica",
@@ -4292,13 +4291,13 @@ function Me() {
             function s(v) {
                 const d = [];
                 let b = 0;
-                const E = v.length;
-                for (; b < E;) {
-                    const A = v.charCodeAt(b++);
-                    if (A >= 55296 && A <= 56319 && b < E) {
+                const A = v.length;
+                for (; b < A;) {
+                    const f = v.charCodeAt(b++);
+                    if (f >= 55296 && f <= 56319 && b < A) {
                         const P = v.charCodeAt(b++);
-                        (64512 & P) == 56320 ? d.push(((1023 & A) << 10) + (1023 & P) + 65536) : (d.push(A), b--)
-                    } else d.push(A)
+                        (64512 & P) == 56320 ? d.push(((1023 & f) << 10) + (1023 & P) + 65536) : (d.push(f), b--)
+                    } else d.push(f)
                 }
                 return d
             }
@@ -4313,25 +4312,50 @@ function Me() {
                     decode: U,
                     encode: h
                 }
-            } = F, N = 127397, S = /^[A-Z]{2}$/;
+            } = F, N = 127397, E = /^[A-Z]{2}$/;
             return {
                 continents: a,
                 countries: o,
                 languages: i,
                 languagesAll: m,
-                getEmojiFlag: v => S.test(v) ? h(v.split("").map((d => N + d.charCodeAt(0)))) : "",
+                getEmojiFlag: v => E.test(v) ? h(v.split("").map((d => N + d.charCodeAt(0)))) : "",
                 getUnicode: v => U(v).map((d => "U+" + Number(d).toString(16).toUpperCase())).join(" ")
             }
         }))
     })(I)), I.exports
 }
-var J = Me();
-const X = "US",
-    Pe = () => {
+var W = De();
+const J = n => e.jsx(ie, {
+        hoverable: !0,
+        style: {
+            marginBottom: 10
+        },
+        onClick: n.onSelect,
+        children: e.jsxs("div", {
+            style: {
+                fontFamily: te.SFPro,
+                color: y.Black
+            },
+            children: [e.jsx("div", {
+                style: {
+                    fontSize: 18,
+                    fontWeight: S.Bold
+                },
+                children: n.name
+            }), e.jsx("div", {
+                style: {
+                    fontSize: 14
+                },
+                children: n.description
+            })]
+        })
+    }),
+    X = "US",
+    we = () => {
         const {
             login: n
-        } = l.useContext(k), [t, a] = l.useState(""), [o, i] = l.useState(!1), [m, s] = l.useState(""), [F, U] = l.useState(!1), [h, N] = l.useState(!1), [S, v] = l.useState([]), d = c => {
-            a(c), c !== X ? E(c) : i(!0)
+        } = l.useContext(k), [t, a] = l.useState(""), [o, i] = l.useState(!1), [m, s] = l.useState(""), [F, U] = l.useState(!1), [h, N] = l.useState(!1), [E, v] = l.useState([]), d = c => {
+            a(c), c !== X ? A(c) : i(!0)
         }, b = c => {
             const p = c.target.value;
             U(!1), p && String(p).length === 5 && s(p)
@@ -4344,23 +4368,23 @@ const X = "US",
                     zipCode: m
                 },
                 success: c => {
-                    c && c.schoolList && c.schoolList.length ? (v(c.schoolList), i(!1)) : E()
+                    c && c.schoolList && c.schoolList.length ? (v(c.schoolList), i(!1)) : A()
                 },
-                error: () => E(),
+                error: () => A(),
                 both: () => N(!1)
             }))
         }, [m]);
-        const E = c => {
+        const A = c => {
                 n.country = c || t, n.informationNeeded.replace(n.informationNeeded.filter(p => p !== r.country))
             },
-            A = (c, p) => {
-                n.schoolId = c, n.districtId = p, E()
+            f = (c, p) => {
+                n.schoolId = c, n.districtId = p, A()
             },
             P = () => {
                 v([]), s(""), i(!0), U(!1)
             };
         return e.jsxs(e.Fragment, {
-            children: [S && S.length && !o ? e.jsx(e.Fragment, {
+            children: [E && E.length && !o ? e.jsx(e.Fragment, {
                 children: e.jsxs("div", {
                     style: {
                         color: "blue",
@@ -4373,17 +4397,17 @@ const X = "US",
                 })
             }) : null, e.jsx("div", {
                 style: {
-                    fontWeight: f.Black,
+                    fontWeight: S.Black,
                     fontSize: 30,
                     color: y.Black,
                     marginBottom: 13
                 },
                 children: "🏫 Find your school"
-            }), !S.length && e.jsxs(e.Fragment, {
+            }), !E.length && e.jsxs(e.Fragment, {
                 children: [!o && e.jsxs(e.Fragment, {
                     children: [e.jsx(R, {
                         children: "🗺️ Country"
-                    }), e.jsx(V, {
+                    }), e.jsx(H, {
                         style: {
                             width: "100%"
                         },
@@ -4392,10 +4416,10 @@ const X = "US",
                         onChange: d,
                         filterOption: (c, p) => p.props.children.toLowerCase().indexOf(c.toLowerCase()) >= 0,
                         size: "large",
-                        children: Object.keys(J.countries).sort(c => c === X ? 1 : -1).reverse().map(c => {
-                            const p = J.countries[c];
+                        children: Object.keys(W.countries).sort(c => c === X ? 1 : -1).reverse().map(c => {
+                            const p = W.countries[c];
                             let D = "";
-                            return p.emoji && (D += `${p.emoji} `), p.name && (p.name === "United States" ? D += "United States Of America" : D += p.name), e.jsx(V.Option, {
+                            return p.emoji && (D += `${p.emoji} `), p.name && (p.name === "United States" ? D += "United States Of America" : D += p.name), e.jsx(H.Option, {
                                 value: c,
                                 children: D
                             }, c)
@@ -4420,7 +4444,7 @@ const X = "US",
                         message: "Invalid Zip Code",
                         description: e.jsxs(e.Fragment, {
                             children: ["Try entering another zip code or", " ", e.jsx("a", {
-                                onClick: () => E(),
+                                onClick: () => A(),
                                 children: "skip this step."
                             })]
                         })
@@ -4428,22 +4452,22 @@ const X = "US",
                 })]
             }), h && e.jsx(Q, {
                 size: "large"
-            }), S && S.length ? e.jsxs(e.Fragment, {
-                children: [S.map(c => e.jsx(H, {
+            }), E && E.length ? e.jsxs(e.Fragment, {
+                children: [E.map(c => e.jsx(J, {
                     name: c.schoolName,
                     description: `${c.address.city}, ${c.address.stateFull}`,
-                    onSelect: () => A(c && c.schoolid ? c.schoolid : null, c && c.district && c.district.districtID ? c.district.districtID : null)
-                }, c.schoolid)), e.jsx(H, {
+                    onSelect: () => f(c && c.schoolid ? c.schoolid : null, c && c.district && c.district.districtID ? c.district.districtID : null)
+                }, c.schoolid)), e.jsx(J, {
                     name: "Other",
                     description: "School not listed",
-                    onSelect: () => A(null, null)
+                    onSelect: () => f(null, null)
                 })]
             }) : null, e.jsx(L, {}), e.jsx(ee, {
                 link: "https://www.notion.so/gimkit/Country-Zip-Code-School-9bca6de77686407cad0a4298a4a1d00e"
             })]
         })
     },
-    De = () => {
+    Ie = () => {
         const {
             login: n
         } = u, t = Object.keys(n), a = [];
@@ -4482,15 +4506,15 @@ const X = "US",
             }))
         }), a
     },
-    we = () => {
+    xe = () => {
         const {
             login: n,
             navigation: t
         } = u, a = B("blockRedirect") === "true", o = () => {
             window && window.parent && window.parent.postMessage && window.parent.postMessage({
                 type: "_authenticated_",
-                user: re(ce())
-            }, se())
+                user: se(me())
+            }, le())
         };
         if (n.userExists) {
             const i = () => {
@@ -4504,7 +4528,7 @@ const X = "US",
                     method: "post",
                     data: m,
                     success: s => {
-                        if (O.user.setUser(s.user, !0), n.authenticated = !0, s.modal && s.modal.type && oe[s.modal.type]({
+                        if (O.user.setUser(s.user, !0), n.authenticated = !0, s.modal && s.modal.type && ce[s.modal.type]({
                                 title: "Account Information",
                                 content: s.modal.message
                             }), s.informationNeeded.length) n.informationNeeded.replace([...n.informationNeeded, ...s.informationNeeded]);
@@ -4520,7 +4544,7 @@ const X = "US",
                 })
             };
             if (n.authenticated) {
-                const m = De();
+                const m = Ie();
                 !m || !m.length ? i() : (u.navigation.updatingAccountInformation = !0, T({
                     url: "/api/users/update-information",
                     method: "post",
@@ -4531,7 +4555,7 @@ const X = "US",
                         i()
                     },
                     error: () => {
-                        u.navigation.updatingAccountInformation = !1, ie({
+                        u.navigation.updatingAccountInformation = !1, oe({
                             title: "Error updating account information",
                             content: "Please contact support."
                         })
@@ -4565,7 +4589,7 @@ const X = "US",
                     s || (s = w), a ? o() : x(s)
                 },
                 error: m => {
-                    te({
+                    re({
                         e: m,
                         default: {
                             title: "Error creating account",
@@ -4578,7 +4602,7 @@ const X = "US",
             })
         }
     },
-    Ie = M(() => {
+    Re = M(() => {
         const {
             login: n
         } = l.useContext(k), t = () => {
@@ -4588,7 +4612,7 @@ const X = "US",
             children: [e.jsxs("div", {
                 style: {
                     color: y.Black,
-                    fontWeight: f.Normal,
+                    fontWeight: S.Normal,
                     fontSize: 19
                 },
                 children: ["We've updated our", " ", e.jsx("a", {
@@ -4610,7 +4634,7 @@ const X = "US",
             })]
         })
     }),
-    xe = () => {
+    Le = () => {
         const [n, t] = l.useState(""), {
             login: a
         } = l.useContext(k), o = m => {
@@ -4646,15 +4670,15 @@ const X = "US",
             })]
         })
     },
-    Re = M(() => {
+    Ge = M(() => {
         const {
             login: n,
             navigation: t
         } = l.useContext(k), {
             currentStage: a
-        } = ye(), [o, i] = l.useState(!0), [m, s] = l.useState(!1);
+        } = Ee(), [o, i] = l.useState(!0), [m, s] = l.useState(!1);
         l.useEffect(() => {
-            n.informationNeeded.length || we()
+            n.informationNeeded.length || xe()
         }, [n.informationNeeded.length]), l.useEffect(() => {
             B("pwr") && s(!0);
             const U = B("class");
@@ -4676,7 +4700,7 @@ const X = "US",
                     }), e.jsx("div", {
                         style: {
                             marginTop: 5,
-                            fontWeight: f.Bold,
+                            fontWeight: S.Bold,
                             color: y.Black,
                             fontSize: 23
                         },
@@ -4684,10 +4708,10 @@ const X = "US",
                     })]
                 })
             }
-            return a === g.email ? e.jsx(Ue, {}) : a === g.password ? e.jsx(ke, {}) : a === g.accountType ? e.jsx(Ne, {}) : a === g.nameAndPassword ? e.jsx(pe, {}) : a === g.school ? e.jsx(Pe, {}) : a === g.educatorSpecificInfo ? e.jsx(ve, {}) : a === g.acceptPolicies ? e.jsx(Ie, {}) : a === g.nonSchoolSpecificInfo ? e.jsx(xe, {}) : null
+            return a === g.email ? e.jsx(he, {}) : a === g.password ? e.jsx(be, {}) : a === g.accountType ? e.jsx(Be, {}) : a === g.nameAndPassword ? e.jsx(ve, {}) : a === g.school ? e.jsx(we, {}) : a === g.educatorSpecificInfo ? e.jsx(je, {}) : a === g.acceptPolicies ? e.jsx(Re, {}) : a === g.nonSchoolSpecificInfo ? e.jsx(Le, {}) : null
         };
         return o ? e.jsx(Y, {}) : e.jsxs(Y, {
-            children: [e.jsx(Se, {
+            children: [e.jsx(Ae, {
                 message: a === g.email && m ? "Password changed successfully!" : ""
             }), F()]
         })
@@ -4702,28 +4726,28 @@ const X = "US",
   border-radius: 7px;
   max-height: 90vh;
 `,
-    rn = () => {
-        const [n, t] = l.useState(!1), a = me(), i = new URLSearchParams(a.search).get("accountType"), m = B("class");
+    cn = () => {
+        const [n, t] = l.useState(!1), a = ue(), i = new URLSearchParams(a.search).get("accountType"), m = B("class");
         return i && z[i] && (u.login.accountType = z[i]), l.useEffect(() => {
             u.navigation.redirectUri = "";
             let s = B("location") ? decodeURIComponent(B("location")) : "";
-            s && !de(s) && (s = "");
+            s && !ye(s) && (s = "");
             const F = () => {
                 u.navigation.reset(), u.login.reset()
             };
-            return s && (u.navigation.redirectUri = s), le() ? (x(s || w), F) : (window.location.href.includes("login") && t(!0), F)
+            return s && (u.navigation.redirectUri = s), ge() ? (x(s || w), F) : (window.location.href.includes("login") && t(!0), F)
         }, []), e.jsxs(e.Fragment, {
-            children: [e.jsx(ue, {
+            children: [e.jsx(Fe, {
                 title: m ? "Join Class" : n ? "Login" : "Sign Up"
             }), e.jsx(k.Provider, {
                 value: u,
-                children: e.jsx(Le, {
-                    children: e.jsx(Re, {})
+                children: e.jsx(Ke, {
+                    children: e.jsx(Ge, {})
                 })
             })]
         })
     },
-    Le = C.div`
+    Ke = C.div`
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('/client/img/signup/funky-lines.png') repeat 0 0;
   height: 100%;
@@ -4733,6 +4757,6 @@ const X = "US",
   align-items: center;
 `;
 export {
-    rn as
+    cn as
     default
 };

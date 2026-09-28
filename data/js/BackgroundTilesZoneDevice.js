@@ -86,6 +86,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const L = i => {
@@ -172,7 +173,7 @@ const L = i => {
         }
     },
     B = -999999999;
-class oi extends S {
+class si extends S {
     constructor(o) {
         if (super(o), this.addLayer = () => {
                 const s = g.worldOptions.terrainOptions.find(d => d.id === this.options.terrainId);
@@ -304,6 +305,6 @@ class oi extends S {
     }
 }
 export {
-    B as ZONE_UNSET_POSITION, oi as
+    B as ZONE_UNSET_POSITION, si as
     default
 };

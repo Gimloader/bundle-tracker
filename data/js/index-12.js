@@ -3,12 +3,12 @@ import {
     bF as J,
     aj as K,
     ak as _,
-    aL as Y,
+    aQ as Y,
     r as n,
-    al as L,
+    al as M,
     am as P,
-    bb as M,
-    aS as Z,
+    b8 as V,
+    a$ as Z,
     d0 as ee,
     d1 as oe,
     d2 as F,
@@ -117,7 +117,7 @@ const ae = e => {
         defaultBg: new J(e.colorFillQuaternary).onBackground(e.colorBgContainer).toHexString(),
         defaultColor: e.colorText
     }),
-    V = G("Tag", e => {
+    W = G("Tag", e => {
         const t = j(e);
         return ae(t)
     }, E);
@@ -141,9 +141,9 @@ const ce = n.forwardRef((e, t) => {
         } = e, S = se(e, ["prefixCls", "style", "className", "checked", "children", "icon", "onChange", "onClick"]), {
             getPrefixCls: f,
             tag: d
-        } = n.useContext(L), $ = v => {
+        } = n.useContext(M), $ = v => {
             i == null || i(!a), u == null || u(v)
-        }, p = f("tag", l), [g, x, h] = V(p), O = P(p, `${p}-checkable`, {
+        }, p = f("tag", l), [g, x, h] = W(p), O = P(p, `${p}-checkable`, {
             [`${p}-checkable-checked`]: a
         }, d == null ? void 0 : d.className, r, x, h);
         return g(n.createElement("span", Object.assign({}, S, {
@@ -173,7 +173,7 @@ const ce = n.forwardRef((e, t) => {
             }
         }
     })),
-    de = M(["Tag", "preset"], e => {
+    de = V(["Tag", "preset"], e => {
         const t = j(e);
         return ie(t)
     }, E);
@@ -194,7 +194,7 @@ const y = (e, t, l) => {
             }
         }
     },
-    ue = M(["Tag", "status"], e => {
+    ue = V(["Tag", "status"], e => {
         const t = j(e);
         return [y(t, "success", "Success"), y(t, "processing", "Info"), y(t, "error", "Error"), y(t, "warning", "Warning")]
     }, E);
@@ -221,18 +221,18 @@ const pe = n.forwardRef((e, t) => {
             getPrefixCls: $,
             direction: p,
             tag: g
-        } = n.useContext(L), [x, h] = n.useState(!0), O = Z(d, ["closeIcon", "closable"]);
+        } = n.useContext(M), [x, h] = n.useState(!0), O = Z(d, ["closeIcon", "closable"]);
         n.useEffect(() => {
             f !== void 0 && h(f)
         }, [f]);
         const v = le(i),
             N = ne(i),
             T = v || N,
-            W = Object.assign(Object.assign({
+            L = Object.assign(Object.assign({
                 backgroundColor: i && !T ? i : void 0
             }, g == null ? void 0 : g.style), a),
             s = $("tag", l),
-            [R, k, q] = V(s),
+            [R, k, q] = W(s),
             A = P(s, g == null ? void 0 : g.className, {
                 [`${s}-${i}`]: T,
                 [`${s}-has-color`]: i && !T,
@@ -265,7 +265,7 @@ const pe = n.forwardRef((e, t) => {
             B = n.createElement("span", Object.assign({}, O, {
                 ref: t,
                 className: A,
-                style: W
+                style: L
             }), Q, X, v && n.createElement(de, {
                 key: "preset",
                 prefixCls: s

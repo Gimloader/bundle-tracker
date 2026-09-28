@@ -79,10 +79,11 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 var e = (o => (o.rectangle = "rectangle", o.circle = "circle", o))(e || {});
-class Hi extends l {
+class Vi extends l {
     constructor(m) {
         if (super(m), this.createVisuals = () => {
                 this.part || (this.isCircle && (this.part = this.parts.add.circle({
@@ -179,6 +180,6 @@ class Hi extends l {
     }
 }
 export {
-    Hi as
+    Vi as
     default
 };

@@ -73,18 +73,19 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const p = {
     imageId: "cosmos_modifier",
     imageUrl: m("devices/cosmos_modifier/icon.png")
 };
-class yi extends t {
+class Ai extends t {
     constructor(i) {
         super(i), !(o() || r()) && (this.layers.forceDepthManually(0), this.parts.add.sprite(p))
     }
 }
 export {
-    yi as
+    Ai as
     default
 };

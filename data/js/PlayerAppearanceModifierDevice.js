@@ -75,11 +75,12 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 var t = (i => (i.triggered = "triggered", i))(t || {});
-class Ao extends e {
+class Bo extends e {
     constructor(m) {
         if (super(m), this.onMessage = o => {
                 var r;
@@ -106,6 +107,6 @@ class Ao extends e {
     }
 }
 export {
-    Ao as
+    Bo as
     default
 };

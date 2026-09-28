@@ -85,10 +85,11 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 var r = (o => (o.warning = "warning", o.outOfItem = "outOfItem", o))(r || {});
-class jt extends A {
+class zt extends A {
     constructor(v) {
         if (super(v), this.onMessage = t => {
                 var p, m, n, s, a;
@@ -133,6 +134,6 @@ class jt extends A {
     }
 }
 export {
-    jt as
+    zt as
     default
 };

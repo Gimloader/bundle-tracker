@@ -86,6 +86,7 @@ import "./MapSound.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -125,7 +126,7 @@ const x = {
             r2: 50
         }
     };
-class _i extends h {
+class Hi extends h {
     constructor(p) {
         super(p), this.use = () => {
             this.cull.isInsideView && f({
@@ -212,6 +213,6 @@ class _i extends h {
     }
 }
 export {
-    _i as
+    Hi as
     default
 };

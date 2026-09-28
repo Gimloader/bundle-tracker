@@ -93,6 +93,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -115,7 +116,7 @@ const G = {
             offsetLeft: 3
         }
     };
-class ei extends M {
+class oi extends M {
     constructor(x) {
         super(x), this.setupCollider = () => {
             const t = this.getDirection(),
@@ -274,6 +275,6 @@ class ei extends M {
     }
 }
 export {
-    ei as AirVentDevice, ei as
+    oi as AirVentDevice, oi as
     default
 };

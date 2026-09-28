@@ -1,92 +1,64 @@
 import {
-    x as p,
-    j as s,
-    b4 as j,
-    b7 as ye,
-    r as g,
-    M as _,
-    d as O,
-    B as W,
-    U as ke,
-    b5 as ee,
-    D as xe,
-    F as be,
-    cm as Ce,
-    ar as ve,
-    u as te,
-    dQ as L
+    r as l,
+    j as t,
+    q as u,
+    d as a,
+    U as b,
+    F as I,
+    aU as y,
+    e as B
 } from "./_index.js";
 import {
-    z as we,
-    w as Be,
-    S as U,
-    J as Y,
-    u as q,
-    T as Ie,
-    q as Se,
-    o as K,
-    M as re
-} from "./App-41.js";
+    b as N,
+    a as h,
+    d as m,
+    c as j,
+    F as D,
+    C as G
+} from "./ItemNameWithAmount.js";
 import {
-    s as X,
-    n as je
-} from "./FixSpinePlugin.js";
-import {
-    o as ae
+    o as p,
+    a as V
 } from "./mobxreact.esm.js";
 import {
-    N as Te,
-    c as Oe
-} from "./App-66.js";
+    u as A,
+    T as R,
+    bB as F,
+    af as v,
+    ae as L
+} from "./App-41.js";
 import {
-    B as k,
-    R as Pe,
-    b as N,
-    M as Q,
-    F as Ee,
-    a as oe
-} from "./App-57.js";
-import {
-    I as de
-} from "./index-3.js";
-import {
-    a as Re
-} from "./index-23.js";
-import {
-    C as ue
-} from "./Centered.js";
-import {
-    C as z
+    M as k
 } from "./Button.js";
 import {
-    C as H
-} from "./CapitalizeFirstLetter.js";
+    C as O
+} from "./confetti.js";
 import {
-    T as R
-} from "./index-14.js";
+    u as w
+} from "./useIntervalWhen.js";
 import {
-    S as me
-} from "./index-2.js";
-import {
-    m as Ge
+    m as g
 } from "./motion.js";
 import {
-    S as fe
-} from "./StopPropagation.js";
+    P as E
+} from "./progress.js";
 import {
-    D as Ne
-} from "./index-6.js";
+    A as U
+} from "./index-17.js";
 import {
-    u as Fe
-} from "./useTimeout.js";
+    s as q,
+    a as H
+} from "./FixSpinePlugin.js";
 import {
-    s as Me
-} from "./index-4.js";
+    C
+} from "./CapitalizeFirstLetter.js";
+import {
+    D as J
+} from "./TutorialConsts.js";
 import "./index-21.js";
 import "./QuizTypes.js";
 import "./MapModeType.js";
 import "./GetAssetPath.js";
-import "./TutorialConsts.js";
 import "./ActionButton.js";
 import "./index-5.js";
 import "./playSound.js";
@@ -95,12 +67,19 @@ import "./howler.js";
 import "./index-18.js";
 import "./context.js";
 import "./FontAwesomeIcon.js";
+import "./Centered.js";
+import "./index-4.js";
+import "./index-2.js";
+import "./index-14.js";
+import "./EditOutlined.js";
+import "./styleChecker.js";
+import "./index-3.js";
+import "./CheckOutlined.js";
+import "./CopyOutlined.js";
 import "./SixteenByNineScaler.js";
 import "./index-20.js";
 import "./index-22.js";
 import "./index-1.js";
-import "./progress.js";
-import "./CheckOutlined.js";
 import "./ElementIds.js";
 import "./SeasonTicketName.js";
 import "./useQuery.js";
@@ -113,9 +92,8 @@ import "./useWillUnmount.js";
 import "./CircularProgress.js";
 import "./clsx.m.js";
 import "./inheritsLoose.js";
+import "./index-6.js";
 import "./AccessibleAnchor.js";
-import "./index-17.js";
-import "./use-force-update.js";
 import "./GimkitLiveQuestion.js";
 import "./Text.js";
 import "./getCloudinaryUrl.js";
@@ -124,7 +102,7 @@ import "./Tooltip.js";
 import "./polished.esm.js";
 import "./use-motion-value.js";
 import "./index-9.js";
-import "./useIntervalWhen.js";
+import "./index-23.js";
 import "./index-10.js";
 import "./move.js";
 import "./react-flip-move.es.js";
@@ -132,1008 +110,592 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-import "./ReactionToMultipleProps.js";
-import "./FetchDeviceName.js";
-import "./ReplaceDevice.js";
-import "./index-29.js";
-import "./index-8.js";
-import "./DownOutlined.js";
-import "./DeleteOutlined.js";
-import "./GetCurrentMapStyle.js";
-import "./index-28.js";
-import "./index-7.js";
-import "./LoadGoogleFontAfterSceneStart.js";
-import "./useItemAmount.js";
-import "./clsx.js";
-import "./EditOutlined.js";
-import "./styleChecker.js";
-import "./CopyOutlined.js";
-import "./useWarningOnMountInDevelopment.js";
-const M = {
-    Animation: {
-        durationSeconds: .2,
-        easeType: "easeOut",
-        content: {
-            codegrid: {
-                initial: {
-                    opacity: 0,
-                    y: -20
-                },
-                active: {
-                    opacity: 1,
-                    y: 0
-                },
-                leave: {
-                    opacity: 0,
-                    y: 20
-                }
+import "./use-force-update.js";
+const K = p(e => {
+        const [, i] = l.useReducer(x => x + 1, 0), [r, n] = l.useState(!1), {
+            session: {
+                gameTime: s
             }
-        }
-    }
-};
-
-function Ae(e, t) {
-    let r = null,
-        o = null;
-    return [(...l) => {
-        o = () => {
-            r = null, e(...l)
-        }, r != null && clearTimeout(r), r = window.setTimeout(o, t)
-    }, () => {
-        r != null && (clearTimeout(r), o && o())
-    }]
-}
-
-function De(e, t, r) {
-    try {
-        return t.getAllBlocks(!1).length > 0 ? void 0 : (k.Xml.domToWorkspace(k.Xml.textToDom(e), t), !0)
-    } catch (o) {
-        return r && r(o), !1
-    }
-}
-
-function Le(e, t, r) {
-    try {
-        return k.serialization.workspaces.load(e, t), !0
-    } catch (o) {
-        return r && r(o), !1
-    }
-}
-const Je = ({
-        ref: e,
-        initialXml: t,
-        initialJson: r,
-        toolboxConfiguration: o,
-        workspaceConfiguration: c,
-        onWorkspaceChange: i,
-        onImportXmlError: l,
-        onImportError: u,
-        onInject: x,
-        onDispose: f
-    }) => {
-        u = u ?? l;
-        const [a, b] = p.useState(null), [h, n] = p.useState(t || null), [m, v] = p.useState(r || null), [d, w] = p.useState(!1), [B, V] = p.useState(!1), A = p.useRef(c);
-        p.useEffect(() => {
-            A.current = c
-        }, [c]);
-        const F = p.useRef(o);
-        p.useEffect(() => {
-            F.current = o, o && a && a.updateToolbox(o)
-        }, [o, a]);
-        const T = p.useRef(x),
-            D = p.useRef(f);
-        p.useEffect(() => {
-            T.current = x
-        }, [x]), p.useEffect(() => {
-            D.current = f
-        }, [f]);
-        const G = p.useCallback(C => {
-            i && i(C)
-        }, [i]);
-        return p.useEffect(() => {
-            if (!e.current) return;
-            const C = k.inject(e.current, {
-                ...A.current,
-                toolbox: F.current
-            });
-            b(C), w(!1), V(!1), T.current && T.current(C);
-            const I = D.current;
-            return () => {
-                C.dispose(), I && I(C)
-            }
-        }, [e]), p.useEffect(() => {
-            a && !B && G(a)
-        }, [G, B, a]), p.useEffect(() => {
-            if (a == null) return;
-            const C = () => {
-                G(a)
-            };
-            return a.addChangeListener(C), () => {
-                a.removeChangeListener(C)
-            }
-        }, [a, G]), p.useEffect(() => {
-            if (a == null) return;
-            const [C, I] = Ae(() => {
-                const S = k.Xml.domToText(k.Xml.workspaceToDom(a));
-                if (S === h) return;
-                const $ = k.serialization.workspaces.save(a);
-                v($), n(S)
-            }, 200);
-            return a.addChangeListener(C), () => {
-                a.removeChangeListener(C), I()
-            }
-        }, [a, h]), p.useEffect(() => {
-            if (h && a && !d) De(h, a, u) || n(null), w(!0);
-            else if (m && a && !d) {
-                Le(m, a, u) || v(null);
-                const I = k.Xml.domToText(k.Xml.workspaceToDom(a));
-                n(I), w(!0)
-            }
-        }, [m, h, a, d, u]), {
-            workspace: a,
-            xml: h,
-            json: m
-        }
-    },
-    We = {
-        initialXml: j.string,
-        initialJson: j.object,
-        toolboxConfiguration: j.object,
-        workspaceConfiguration: j.object,
-        className: j.string,
-        onWorkspaceChange: j.func,
-        onImportXmlError: j.func,
-        onImportError: j.func,
-        onXmlChange: j.func,
-        onJsonChange: j.func,
-        onInject: j.func,
-        onDispose: j.func
-    },
-    Xe = {
-        initialXml: null,
-        initialJson: null,
-        toolboxConfiguration: null,
-        workspaceConfiguration: null,
-        className: null,
-        onWorkspaceChange: null,
-        onImportXmlError: null,
-        onImportError: null,
-        onXmlChange: null,
-        onJsonChange: null,
-        onInject: null,
-        onDispose: null
-    };
-
-function Z({
-    initialXml: e,
-    initialJson: t,
-    toolboxConfiguration: r,
-    workspaceConfiguration: o,
-    className: c,
-    onWorkspaceChange: i,
-    onXmlChange: l,
-    onJsonChange: u,
-    onImportXmlError: x,
-    onImportError: f,
-    onInject: a,
-    onDispose: b
-}) {
-    const h = p.useRef(null),
-        {
-            xml: n,
-            json: m
-        } = Je({
-            ref: h,
-            initialXml: e,
-            initialJson: t,
-            toolboxConfiguration: r,
-            workspaceConfiguration: o,
-            onWorkspaceChange: i,
-            onImportXmlError: x,
-            onImportError: f,
-            onInject: a,
-            onDispose: b
-        }),
-        v = p.useRef(l);
-    p.useEffect(() => {
-        v.current = l
-    }, [l]);
-    const d = p.useRef(u);
-    return p.useEffect(() => {
-        d.current = u
-    }, [u]), p.useEffect(() => {
-        v.current && n && v.current(n), d.current && m && d.current(m)
-    }, [n, m]), s.jsx("div", {
-        className: c,
-        ref: h
-    })
-}
-Z.propTypes = We;
-Z.defaultProps = Xe;
-const pe = new Set,
-    ze = e => {
-        const t = document.createElement("div");
-        document.body.appendChild(t);
-        const r = ye.createRoot(t),
-            o = () => {
-                he(r)
-            };
-        r.render(s.jsx($e, {
-            ...e,
-            afterClose: o
-        }))
-    },
-    Ve = () => {
-        pe.forEach(e => {
-            he(e)
-        })
-    },
-    he = e => {
-        e.unmount(), pe.delete(e)
-    },
-    $e = e => {
-        const [t, r] = g.useState(!0), o = () => r(!1), c = e.content, i = e.modalProps ? e.modalProps({
-            close: o
-        }) : {};
-        return s.jsx(_, {
-            ...i,
-            afterClose: e.afterClose,
-            open: t,
-            children: s.jsx(c, {
-                close: o
-            })
-        })
-    };
-k.alert = (e, t) => {
-    _.info({
-        title: e,
-        onOk: t
-    })
-};
-k.confirm = (e, t) => {
-    _.confirm({
-        title: e,
-        onOk: () => t(!0),
-        onCancel: () => t(!1)
-    })
-};
-k.prompt = (e, t, r) => {
-    ze({
-        modalProps: o => ({
-            footer: null,
-            closable: !1,
-            style: {
-                top: 35
+        } = A();
+        l.useEffect(() => {
+            n(!0)
+        }, []), w(i, 33, !!e.itemDisposalMs);
+        const o = () => {
+                const x = Math.max(e.itemDisposalAt - F(), 0),
+                    $ = Math.ceil(x / 1e3);
+                return isNaN($) ? 0 : $
             },
-            onCancel: () => {
-                r(""), o.close()
-            }
-        }),
-        content: o => s.jsx(Ke, {
-            message: e,
-            defaultValue: t,
-            callback: c => {
-                r(c), o.close()
-            }
-        })
-    })
-};
-const Ke = e => {
-        const [t, r] = g.useState(e.defaultValue), o = u => {
-            r(u.target.value)
-        }, c = () => {
-            e.callback("")
-        }, i = () => {
-            e.callback(t)
-        }, l = e.message.includes("variable");
-        return s.jsxs(He, {
-            children: [s.jsx(_e, {
-                children: e.message
-            }), s.jsx(de, {
-                size: "large",
-                value: t,
-                onChange: o,
-                placeholder: l ? "Variable name..." : "",
-                onPressEnter: i,
-                autoFocus: !0
-            }), s.jsx(Ue, {
-                children: s.jsxs(Ye, {
-                    children: [s.jsx(W, {
-                        onClick: c,
-                        style: {
-                            marginRight: 6
-                        },
-                        children: "Cancel"
-                    }), s.jsx(W, {
-                        onClick: i,
-                        type: "primary",
-                        children: "Submit"
-                    })]
+            c = l.useMemo(() => {
+                if (!e.useCrafterCollectionAdvantage) return !1;
+                if (e.itemCrafterCharacterId !== R()) {
+                    const x = e.itemFinishesCraftingAt + N.secondsAdvantage * 1e3;
+                    return s < x
+                }
+                return !1
+            }, [e.useCrafterCollectionAdvantage, s, e.itemFinishesCraftingAt, e.itemCrafterCharacterId]),
+            f = () => {
+                e.collect(), e.close()
+            },
+            d = Math.max(1, o());
+        return t.jsxs(Q, {
+            children: [t.jsx(O, {
+                config: Y,
+                active: r
+            }), t.jsx(k, {
+                block: !0,
+                type: "success",
+                disabled: c,
+                style: {
+                    width: "80%"
+                },
+                onClick: f,
+                ariaLabel: "Collect",
+                children: t.jsx("span", {
+                    style: {
+                        textTransform: "uppercase"
+                    },
+                    children: "Collect"
                 })
-            })]
+            }), e.itemDisposalMs ? t.jsxs(X, {
+                children: ["Goes bad in ", d, " ", u("second", d)]
+            }) : null]
         })
-    },
-    He = O.div`
-  min-height: 160px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px;
-`,
-    _e = O.div`
-  font-size: 18px;
-  font-weight: 900;
-  margin-bottom: 3px;
-`,
-    Ue = O.div`
-  margin-top: 24px;
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-`,
-    Ye = O.div`
-  display: flex;
-`,
-    J = {
-        triggerOnly: {
-            name: "For This Block",
-            color: "#FFBF00"
+    }),
+    Q = a(g.div).attrs({
+        className: "maxWidth flex-center flex-column",
+        initial: {
+            opacity: 0
         },
-        deviceOnly: {
-            name: "For This Device"
+        animate: {
+            opacity: 1
+        },
+        exit: {
+            opacity: 0
+        },
+        transition: {
+            duration: .25
         }
+    })`
+  margin-top: 25px;
+`,
+    X = a.div`
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-family: ${b.ProductSans};
+  font-weight: ${I.Bold};
+  text-transform: none;
+`,
+    Y = {
+        angle: 90,
+        spread: 55,
+        elementCount: 50,
+        startVelocity: 30,
+        decay: .95
     },
-    ne = e => {
-        const t = X.worldOptions.codeGrids.customBlocksParsed.find(c => c.type === e);
-        if (!t) return !0;
-        const r = t.minimumRoleLevel,
-            o = t.maximumRoleLevel;
-        return we(r, o)
-    },
-    se = (e, t) => {
-        let r = e.deviceOption.codeGridSchema.customBlocks || [];
-        const o = (t == null ? void 0 : t.customBlocks) || [];
-        return t != null && t.blockedCustomBlocks && (r = r.filter(c => {
-            var i;
-            return !((i = t.blockedCustomBlocks) != null && i.includes(c))
-        })), {
-            deviceSpecificBlocks: r,
-            triggerSpecificBlocks: o
-        }
-    },
-    qe = (e, t) => {
-        var x, f, a, b, h;
-        let r = [],
-            o, c = [];
-        const i = Be(e);
-        if (i) {
-            const n = (f = (x = X.world.devices.codeGrids.get(e)) == null ? void 0 : x.items) == null ? void 0 : f.get(t);
-            if (n) {
-                const m = i.deviceOption.codeGridSchema.triggers.find(v => v.type === n.triggerType);
-                m ? (o = se(i, m), (a = m.blockedGlobalBlocks) != null && a.length && (c = m.blockedGlobalBlocks)) : o = se(i)
-            }
-        }
-        o && o.triggerSpecificBlocks.length && r.push({
-            name: J.triggerOnly.name,
-            color: J.triggerOnly.color,
-            blocks: o.triggerSpecificBlocks.map(n => ({
-                type: n
-            })).filter(n => ne(n.type))
-        }), o != null && o.deviceSpecificBlocks.length && r.push({
-            name: J.deviceOnly.name,
-            color: J.triggerOnly.color,
-            blocks: o.deviceSpecificBlocks.map(n => ({
-                type: n
-            })).filter(n => ne(n.type))
-        });
-        let l = JSON.parse(((h = (b = X.worldOptions) == null ? void 0 : b.codeGrids) == null ? void 0 : h.blockCategories) || "[]");
-        return c.length && (l = l.map(n => ({
-            ...n,
-            blocks: n.blocks.filter(m => !c.includes(m.type))
-        }))), r = [...r, ...l], {
-            kind: "categoryToolbox",
-            contents: r.map(n => {
-                const m = n.custom ? {
-                    custom: n.custom
-                } : {};
-                return {
-                    kind: "category",
-                    name: n.name,
-                    colour: n.color,
-                    expanded: !0,
-                    contents: n.blocks.map(v => ({
-                        kind: "block",
-                        type: v.type,
-                        message0: v.type
-                    })),
-                    ...m
-                }
-            })
-        }
-    },
-    ie = (e, t) => {
-        const r = g.useRef(0),
-            o = g.useRef(),
-            c = u => o.current = u,
-            i = u => {
-                const x = e[r.current];
-                if (!x) {
-                    r.current = 0, i(u);
-                    return
-                }
-                if (x(u, o.current, c)) r.current = r.current + 1, r.current === e.length && (t(o.current), r.current = 0);
-                else {
-                    if (r.current === 0) return;
-                    r.current = 0, i(u)
-                }
-            };
-        return [u => {
-            i(u)
-        }]
-    },
-    ce = e => [t => t.type === k.Events.TOOLBOX_ITEM_SELECT, (t, r, o) => t.type === k.Events.CREATE && t.json && t.json.type && e.some(i => t.json.type.includes(i)) ? (o({
-        ...r,
-        blockId: t.blockId
-    }), !0) : !1, (t, r) => t.type === k.Events.SELECTED ? t.newElementId && t.newElementId === r.blockId : !1, (t, r) => !!(t.type === k.Events.BLOCK_DRAG && t.isStart && t.blockId === r.blockId), (t, r, o) => {
-        var c, i;
-        if (t.type === k.Events.BLOCK_DRAG && !t.isStart && t.blockId === r.blockId) {
-            const l = (i = (c = t.blocks) == null ? void 0 : c[0]) == null ? void 0 : i.getRelativeToSurfaceXY();
-            if (l) return o({
-                ...r,
-                x: l.x,
-                y: l.y
-            }), !0
-        }
-        return !1
-    }],
-    Qe = e => {
-        const {
-            text: t,
-            location: r,
-            workspace: o
-        } = e;
-        let c = 0,
-            i = 0;
-        if (r) c = r.x, i = r.y;
-        else {
-            const u = o.getAllBlocks(!0);
-            if (u.length) {
-                const f = u[u.length - 1].getRelativeToSurfaceXY();
-                c = f.x, i = f.y
-            }
-        }
-        c += 40, i += 40, c = Math.round(c), i = Math.round(i);
-        const l = k.serialization.workspaces.save(o);
-        l.blocks || (l.blocks = {
-            blocks: []
-        }), l.blocks.blocks.push({
-            type: "text",
-            x: c,
-            y: i,
-            fields: {
-                TEXT: t
-            }
-        }), k.serialization.workspaces.load(l, o)
-    },
-    Ze = {
-        debouncedSaveDurationMs: 150
-    },
-    et = e => {
-        U(Y.setCodeGridJSON, {
-            json: e.json,
-            deviceId: e.deviceId,
-            gridId: e.gridId
-        })
-    },
-    tt = 512;
-k.FieldTextInput.prototype.doClassValidation_ = function(e) {
-    return e.substring(0, tt)
-};
-const rt = ae(g.forwardRef((e, t) => {
-        const {
-            memorySystem: r
-        } = q();
-        Pe();
-        const [o, c] = g.useState(e.gridJSON), i = g.useRef(), l = g.useRef(), [u] = ie(ce([N.messageBroadcaster, N.playerProximityMessageBroadcaster]), d => {
-            e.isOwner && (d.x && d.y && (i.current = {
-                x: d.x,
-                y: d.y
-            }), e.openChannelBrowser())
-        }), [x] = ie(ce([N.getProperty, N.setProperty, N.playerProximityGetProperty, N.playerProximitySetProperty]), d => {
-            e.isOwner && (d.x && d.y && (i.current = {
-                x: d.x,
-                y: d.y
-            }), e.openPropertyBrowser())
-        });
-        g.useEffect(() => {
-            f(e.gridJSON)
-        }, [e.gridJSON]), g.useEffect(() => () => {
-            Ve()
-        }, []);
-        const f = d => {
-                var w;
-                e.isOwner || d !== o && (c(d), (w = l == null ? void 0 : l.current) == null || w.clear(), k.serialization.workspaces.load(JSON.parse(d), l.current))
-            },
-            a = Re(d => {
-                e.isOwner && d !== o && (et({
-                    json: d,
-                    deviceId: e.deviceId,
-                    gridId: e.gridId
-                }), c(d))
-            }, Ze.debouncedSaveDurationMs),
-            b = g.useMemo(() => qe(e.deviceId, e.gridId), []);
-        g.useImperativeHandle(t, () => ({
-            addTextBlock: h
-        }));
-        const h = d => {
-                e.isOwner && Qe({
-                    text: d,
-                    location: i.current,
-                    workspace: l.current
-                })
-            },
-            n = () => {
-                const d = k.serialization.workspaces.save(l.current),
-                    w = l.current.getAllBlocks(!1).length;
-                e.onBlockCountChange(w), a(JSON.stringify(d))
-            },
-            m = d => {
-                var w;
-                l.current = d, (w = l.current) == null || w.addChangeListener(B => {
-                    e.isOwner && (u(B), x(B), n())
-                })
-            },
-            v = o === "" ? {} : JSON.parse(o);
-        return s.jsx(Z, {
-            toolboxConfiguration: e.isOwner ? b : void 0,
-            initialJson: v,
-            className: "fill-height",
-            onInject: m,
-            workspaceConfiguration: {
-                readOnly: !e.isOwner,
-                comments: !1,
-                disable: !1,
-                collapse: !1,
-                maxBlocks: r.limits.blocksPerCodeGrid,
-                move: {
-                    drag: !1
-                },
-                grid: {
-                    spacing: 20,
-                    length: 2,
-                    colour: "#ccc",
-                    snap: !0
-                }
-            }
-        })
-    })),
-    ot = e => s.jsxs(s.Fragment, {
-        children: [s.jsx(R.Text, {
-            style: {
-                fontFamily: ke.FugazOne,
-                textTransform: "uppercase",
-                color: "rgba(255,255,255,0.6)",
-                fontSize: 14
-            },
-            children: H(Q.grid.singular)
-        }), s.jsx(R.Title, {
-            level: 3,
-            style: {
-                color: z.White,
-                marginTop: 2
-            },
-            children: Te(e.deviceId, e.gridId)
-        })]
-    }),
-    nt = e => {
-        const {
-            memorySystem: t
-        } = q();
-        return s.jsxs(s.Fragment, {
-            children: [s.jsxs(me, {
-                direction: "horizontal",
-                size: 10,
-                style: {
-                    marginTop: 30
-                },
-                children: [s.jsx(W, {
-                    onClick: e.openChannelBrowser,
-                    type: "primary",
-                    children: "Channel Browser"
-                }), s.jsx(W, {
-                    onClick: e.openPropertyBrowser,
-                    type: "primary",
-                    children: "Property Browser"
-                })]
-            }), s.jsx("div", {
-                style: {
-                    marginTop: 6
-                },
-                children: s.jsxs(R.Text, {
-                    style: {
-                        color: "rgba(255,255,255,0.6)"
-                    },
-                    children: [ee(e.blockCount), "/", ee(t.limits.blocksPerCodeGrid), " ", Q.blocklyBlock.plural, " placed"]
-                })
+    Z = e => {
+        const [, i] = l.useReducer(c => c + 1, 0);
+        w(i, 33);
+        const r = Math.max(e.itemFinishesCraftingAt - F(), 0),
+            n = Math.max(100 - r / e.craftingDurationMs * 100, 0);
+        if (isNaN(r)) return null;
+        const s = Math.max(1, Math.ceil(r / 1e3)),
+            o = `Ready in ${s} ${u("second",s)}`;
+        return isNaN(n) ? null : t.jsxs(_, {
+            children: [t.jsx(E, {
+                percent: n,
+                showInfo: !1,
+                status: "active"
+            }), t.jsx(ee, {
+                children: o
             })]
         })
     },
-    st = e => {
-        const t = X.characters.characters.get(e);
-        return t ? t.name : "Player"
-    },
-    it = e => e.gridOwner ? s.jsxs(s.Fragment, {
-        children: [s.jsx(xe, {
-            style: {
-                background: "#8b8b8b"
-            }
-        }), s.jsx("div", {
-            children: s.jsxs(R.Text, {
-                children: [s.jsx("span", {
-                    style: {
-                        fontWeight: be.Bold
-                    },
-                    children: st(e.gridOwner)
-                }), " ", "is currently editing this block. Only one person can edit a block at a time."]
-            })
-        })]
-    }) : null,
-    ct = e => s.jsx(lt, {
-        children: s.jsxs(at, {
-            children: [s.jsx(ot, {
-                deviceId: e.deviceId,
-                gridId: e.gridId
-            }), e.isOwner ? s.jsx(nt, {
-                blockCount: e.blockCount,
-                openChannelBrowser: e.openChannelBrowser,
-                openPropertyBrowser: e.openPropertyBrowser
-            }) : s.jsx(it, {
-                gridOwner: e.gridOwner
-            })]
-        })
-    }),
-    lt = O(ue).attrs({
-        className: "maxAll"
+    _ = a(g.div).attrs({
+        className: "maxWidth",
+        initial: {
+            opacity: 0
+        },
+        animate: {
+            opacity: 1
+        },
+        exit: {
+            opacity: 0
+        },
+        transition: {
+            duration: .15
+        }
     })`
-  flex-shrink: 0;
-  color: ${z.White};
-  width: 360px;
-  padding: 25px;
-  padding-right: 0px;
-`,
-    at = O.div``;
-O.div`
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.6);
-`;
-const dt = O(Ge.div).attrs({
-        className: "flex medium-shadow"
-    })`
-  position: relative;
-  background: rgba(48, 28, 86, 0.85);
-  backdrop-filter: blur(3px);
-  color: ${z.Black};
-  padding: 25px;
-  border-radius: 7px;
-  width: 90%;
-  height: 90%;
-`,
-    ut = O(ue).attrs({
-        className: "maxAll"
-    })``,
-    mt = O.div.attrs({
-        className: "maxAll"
-    })`
-  .fill-height {
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    border-width: 0px;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  .blocklyToolboxDiv {
-    background-color: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(3px);
-  }
-  .blocklySvg {
-    background-color: rgba(255, 255, 255, 0.3);
-  }
-  .blocklyTrash {
-    filter: brightness(2);
-  }
-`,
-    ft = e => {
-        const {
-            deviceId: t,
-            gridId: r,
-            gridOwner: o,
-            gridVisitors: c,
-            gridJSON: i,
-            switchToHomeScreen: l,
-            openChannelBrowser: u,
-            channelBrowserOpen: x,
-            openPropertyBrowser: f,
-            propertyBrowserOpen: a,
-            editorRef: b
-        } = e, h = (Ie() === o || !c.length || !o) && Oe();
-        return s.jsx(ut, {
-            onClick: n => {
-                fe(n), l()
-            },
-            children: s.jsxs(dt, {
-                initial: M.Animation.content.codegrid.initial,
-                animate: M.Animation.content.codegrid.active,
-                exit: M.Animation.content.codegrid.leave,
-                transition: {
-                    duration: M.Animation.durationSeconds,
-                    ease: M.Animation.easeType
-                },
-                onClick: n => n.stopPropagation(),
-                children: [s.jsx(Se, {
-                    onClick: l,
-                    color: z.White,
-                    padding: 25
-                }), s.jsx(mt, {
-                    children: s.jsx(rt, {
-                        ref: b,
-                        deviceId: t,
-                        gridJSON: i,
-                        gridId: r,
-                        onBlockCountChange: e.setGridBlockCount,
-                        isOwner: h,
-                        openChannelBrowser: u,
-                        channelBrowserOpen: x,
-                        openPropertyBrowser: f,
-                        propertyBrowserOpen: a
-                    }, `blockly-editor-${String(h)}`)
-                }), s.jsx(ct, {
-                    deviceId: t,
-                    gridId: r,
-                    isOwner: h,
-                    gridOwner: o,
-                    blockCount: e.gridBlockCount,
-                    openChannelBrowser: u,
-                    openPropertyBrowser: f
-                })]
-            })
-        })
-    },
-    pt = e => {
-        U(Y.leaveCodeGrid, {
-            deviceId: e.deviceId,
-            gridId: e.gridId
-        })
-    },
-    ht = e => {
-        U(Y.joinCodeGrid, {
-            deviceId: e.deviceId,
-            gridId: e.gridId
-        })
-    },
-    gt = e => {
-        const {
-            token: {
-                borderRadius: t
-            }
-        } = Ce.useToken();
-        return s.jsx(yt, {
-            borderRadius: t,
-            focused: e.focused,
-            onClick: e.onSelect,
-            children: s.jsx(R.Text, {
-                children: e.name
-            })
-        })
-    },
-    yt = O.div`
   background: rgba(255, 255, 255, 0.1);
-  cursor: pointer;
-  border-radius: ${e=>e.borderRadius}px;
-  border: 2px solid
-    ${e=>e.focused?"#ffca28":"rgba(255, 255, 255, 0.1)"};
-  padding: 10px 15px;
-  transition: background 0.2s ease-in-out;
-  overflow: hidden;
-  &:hover {
-    background: rgba(255, 255, 255, 0.25);
+  padding: 40px 30px;
+  padding-bottom: 32px;
+  margin-top: 20px;
+  border-radius: 6px;
+  .ant-progress-bg {
+    height: 22px !important;
+    transition: all 0.05s cubic-bezier(0.78, 0.14, 0.15, 0.86) !important;
   }
 `,
-    le = e => {
-        const [t, r] = g.useState(-1), [o, c] = g.useState(""), i = g.useRef(), l = Ee(e.category), u = n => {
-            c(n.target.value), r(0)
-        }, x = n => {
-            var m;
-            c(""), r(-1), n && ((m = i == null ? void 0 : i.current) == null || m.focus())
-        }, f = g.useMemo(() => {
-            const n = () => o ? l.filter(m => m.toLowerCase().includes(o.toLowerCase())) : l;
-            return ve.orderBy(n(), [m => m.toLowerCase()], ["asc"])
-        }, [o]);
-        K(Phaser.Input.Keyboard.KeyCodes.DOWN, () => {
-            const n = t + 1;
-            f[n] && r(n)
-        }, [f.length, t]), K(Phaser.Input.Keyboard.KeyCodes.UP, () => {
-            if (t === -1) return;
-            const n = Math.max(0, t - 1);
-            r(n)
-        }, [f.length, t]);
-        const a = () => {
-                const n = f[t];
-                if (n) b(n);
-                else {
-                    const m = o == null ? void 0 : o.trim();
-                    m && b(m)
+    ee = a.div`
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  line-height: 1;
+`,
+    te = p(e => {
+        const i = l.useMemo(() => v(e.item), [e.item]),
+            {
+                session: {
+                    gameTime: r
                 }
-            },
-            b = n => {
-                e.onItemSelected(n), e.close()
-            },
-            h = () => l.length ? f.length ? s.jsx(me, {
-                className: "maxWidth",
-                direction: "vertical",
-                size: 8,
-                children: f.map((n, m) => s.jsx(gt, {
-                    name: n,
-                    focused: t === m,
-                    onSelect: () => b(n)
-                }, n))
-            }) : s.jsx(R.Text, {
-                children: e.noResultsFilteredText
-            }) : s.jsx(R.Text, {
-                children: e.noResultsText
-            });
-        return s.jsx("div", {
-            onClick: fe,
-            children: s.jsxs(Ne, {
-                open: e.visible,
-                onClose: n => {
-                    n.stopPropagation(), e.close()
+            } = A(),
+            n = l.useMemo(() => {
+                if (e.status === h.crafting) return `Currently ${m.preparing(e.style)}...`;
+                if (e.useCrafterCollectionAdvantage && e.itemCrafterCharacterId !== R()) {
+                    const o = e.itemFinishesCraftingAt + N.secondsAdvantage * 1e3 - r;
+                    if (o > 0) {
+                        const c = Math.ceil(o / 1e3);
+                        return `Collect in ${c} ${u("second",c)}`
+                    }
+                }
+                return "Ready to collect"
+            }, [e.status, r, e.useCrafterCollectionAdvantage, e.itemFinishesCraftingAt, e.itemCrafterCharacterId]);
+        return i ? t.jsxs(t.Fragment, {
+            children: [t.jsx(re, {
+                src: i.previewImage
+            }), t.jsx(ne, {
+                children: j(i.id, e.itemAmount)
+            }), t.jsxs(ie, {
+                children: [t.jsx(ae, {
+                    children: n
+                }), t.jsxs(U, {
+                    mode: "wait",
+                    children: [e.status === h.crafting ? t.jsx(Z, {
+                        itemFinishesCraftingAt: e.itemFinishesCraftingAt,
+                        craftingDurationMs: e.craftingDurationMs
+                    }, "craft-countdown") : null, e.status === h.availableForCollection ? t.jsx(K, {
+                        itemFinishesCraftingAt: e.itemFinishesCraftingAt,
+                        itemDisposalMs: e.itemDisposalMs,
+                        itemDisposalAt: e.itemDisposedAt,
+                        collect: e.collect,
+                        itemCrafterCharacterId: e.itemCrafterCharacterId,
+                        useCrafterCollectionAdvantage: e.useCrafterCollectionAdvantage,
+                        close: e.close
+                    }, "craft-collection") : null]
+                })]
+            })]
+        }) : null
+    }),
+    ie = a(g.div).attrs({
+        className: "maxWidth flex-column flex-center",
+        initial: {
+            opacity: 0
+        },
+        animate: {
+            opacity: 1
+        }
+    })``,
+    re = a.img`
+  height: 82px;
+`,
+    ne = a.div`
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 1;
+  margin-top: 10px;
+`,
+    ae = a.div`
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 8px;
+`,
+    z = e => !e.ingredients.find(r => {
+        if (!r.item) return !1;
+        const n = q.me.inventory.slots.get(r.item);
+        return !n || n.amount < r.amount
+    }),
+    se = p(e => {
+        const i = () => {
+            e.craft(e.recipe.id)
+        };
+        return t.jsxs(oe, {
+            children: [t.jsx(k, {
+                type: "success",
+                size: "small",
+                style: {
+                    width: "75%"
                 },
-                placement: "right",
-                width: 400,
-                afterOpenChange: x,
-                title: e.title,
-                children: [s.jsx(de, {
-                    ref: i,
-                    size: "large",
-                    className: "maxWidth",
-                    placeholder: e.searchPlaceholder,
+                block: !0,
+                disabled: !z(e.recipe),
+                onClick: i,
+                ariaLabel: C(m.baseVerb(e.style)),
+                children: t.jsx("span", {
                     style: {
-                        marginBottom: 20
+                        textTransform: "uppercase"
                     },
-                    allowClear: !0,
-                    value: o,
-                    onChange: u,
-                    onPressEnter: a,
-                    maxLength: 512
-                }), h()]
-            })
+                    children: C(m.baseVerb(e.style))
+                })
+            }), t.jsx(ce, {
+                onClick: e.goBack,
+                children: "...or go back"
+            })]
         })
-    },
-    Qr = ae(e => {
+    }),
+    oe = a.div.attrs({
+        className: "maxWidth flex-center flex-column"
+    })`
+  margin-top: 15px;
+`,
+    ce = a.div`
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 6px;
+  font-weight: ${I.Bold};
+  font-family: ${b.ProductSans};
+  text-transform: none;
+  text-decoration: underline;
+  transition: color 0.2s;
+  cursor: pointer;
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+`,
+    le = p(e => {
+        var f, d;
         const {
             me: {
-                editing: {
-                    device: t
-                }
-            },
-            world: {
-                devices: {
-                    codeGrids: r
-                }
-            },
-            memorySystem: {
-                limits: o
+                inventory: i
             }
-        } = q(), [c, i, l] = te(!1), [u, x, f] = te(!1), [a, b] = g.useState(void 0), [h, n] = g.useState(0), [m, v] = g.useState(void 0), [d, w] = g.useState(void 0), B = g.useRef(), V = () => {
-            var S;
-            (S = r.get(e.deviceId)) != null && S.items.has(t.currentlyEditedGridId) || (Me.error(`This ${Q.grid.singular} was deleted!`), e.close())
-        }, {
-            start: A,
-            clear: F
-        } = Fe(V, 25), T = t.currentlyEditedGridId;
-        g.useEffect(() => (ht({
-            deviceId: e.deviceId,
-            gridId: T
-        }), () => {
-            pt({
-                deviceId: e.deviceId,
-                gridId: T
-            })
-        }), []), g.useEffect(() => {
-            const I = L(() => {
-                    var y;
-                    return (y = r.get(e.deviceId)) == null ? void 0 : y.items.has(T)
-                }, y => {
-                    y || (F(), A())
-                }, {
-                    fireImmediately: !0
-                }),
-                S = L(() => {
-                    var y, P, E;
-                    return (E = (P = (y = r.get(e.deviceId)) == null ? void 0 : y.items) == null ? void 0 : P.get(T)) == null ? void 0 : E.visitors
-                }, y => {
-                    y && v(y)
-                }, {
-                    fireImmediately: !0
-                }),
-                $ = L(() => {
-                    var y, P, E;
-                    return (E = (P = (y = r.get(e.deviceId)) == null ? void 0 : y.items) == null ? void 0 : P.get(T)) == null ? void 0 : E.json
-                }, y => {
-                    y !== void 0 && b(y)
-                }, {
-                    fireImmediately: !0
-                }),
-                ge = L(() => {
-                    var y, P, E;
-                    return (E = (P = (y = r.get(e.deviceId)) == null ? void 0 : y.items) == null ? void 0 : P.get(T)) == null ? void 0 : E.owner
-                }, y => {
-                    y !== void 0 && w(y)
-                }, {
-                    fireImmediately: !0
-                });
-            return () => {
-                F(), I(), S(), $(), ge()
-            }
-        }, []), K(je.Input.Keyboard.KeyCodes.ESC, e.close);
-        const D = () => {
-                e.close()
+        } = A(), {
+            itemId: r,
+            requiredAmount: n
+        } = e;
+        let s = !0;
+        const o = ((f = i.slots.get(r)) == null ? void 0 : f.amount) || 0;
+        let c = L(r);
+        return o >= n ? c += ` (${y(n)})` : (s = !1, c += ` (${y(o)}/${y(n)})`), t.jsxs(me, {
+            style: {
+                background: s ? "rgba(255,255,255, 0.1)" : "rgba(198, 40, 40, 0.5)"
             },
-            G = I => {
-                var S;
-                h >= o.blocksPerCodeGrid || (S = B == null ? void 0 : B.current) == null || S.addTextBlock(I)
-            },
-            C = I => {
-                var S;
-                h >= o.blocksPerCodeGrid || (S = B == null ? void 0 : B.current) == null || S.addTextBlock(I)
-            };
-        return a === void 0 || m === void 0 || d === void 0 ? null : s.jsxs(s.Fragment, {
-            children: [s.jsx(ft, {
-                deviceId: e.deviceId,
-                gridId: T,
-                gridJSON: a,
-                gridVisitors: m,
-                gridOwner: d,
-                gridBlockCount: h,
-                setGridBlockCount: n,
-                switchToHomeScreen: D,
-                openChannelBrowser: i,
-                channelBrowserOpen: c,
-                openPropertyBrowser: x,
-                propertyBrowserOpen: u,
-                editorRef: B
-            }), s.jsx(le, {
-                visible: c,
-                close: l,
-                title: "Channel Browser",
-                searchPlaceholder: "Search channels...",
-                category: oe.channel,
-                noResultsText: "All the channels you broadcast on and listen to will appear here!",
-                noResultsFilteredText: "No channels matching your search. Press Enter to add the channel currently in the search bar!",
-                onItemSelected: G
-            }), s.jsx(le, {
-                visible: u,
-                close: f,
-                title: "Property Browser",
-                searchPlaceholder: "Search properties...",
-                category: oe.property,
-                noResultsText: `Properties you create using the Property ${H(re.device.singular)} will show up here!`,
-                noResultsFilteredText: `No properties match your search. Press Enter to add the property
-        currently in the search bar. Remember to add a corresponding Property
-        ${H(re.device.singular)} to your map!`,
-                onItemSelected: C
+            children: [t.jsx("img", {
+                src: (d = v(r)) == null ? void 0 : d.previewImage,
+                style: {
+                    height: 35
+                }
+            }), t.jsx(de, {
+                children: c
             })]
         })
-    });
+    }),
+    me = a.div.attrs({
+        className: "flex vc"
+    })`
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 4px;
+  &:last-of-type {
+    margin-bottom: 0px;
+  }
+`,
+    de = a.div`
+  line-height: 1;
+  margin-left: 8px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+`,
+    fe = e => {
+        const i = e.recipe.ingredients.filter(r => r.item && r.amount);
+        return t.jsx(t.Fragment, {
+            children: t.jsxs(P, {
+                children: [t.jsxs(W, {
+                    children: ["Required", " ", u(C(m.resource(e.style)), i.length)]
+                }), i.map((r, n) => t.jsx(le, {
+                    itemId: r.item,
+                    requiredAmount: r.amount
+                }, `ingredient-${r.item}-${n}`))]
+            })
+        })
+    },
+    P = a.div.attrs({
+        className: "maxWidth"
+    })`
+  margin-top: 30px;
+`,
+    W = a.div`
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  margin-bottom: 8px;
+`,
+    M = e => {
+        const i = e / 60;
+        return i >= 1 && e % 60 === 0 ? `${i} ${u("minute",i)}` : `${e} ${u("second",e)}`
+    },
+    T = e => t.jsx(ge, {
+        children: e.children
+    }),
+    ue = e => {
+        const {
+            recipe: i,
+            style: r
+        } = e, n = l.useMemo(() => {
+            if (i.timeToCraftMs === 0) return m.instantNote(r);
+            const o = Math.floor(i.timeToCraftMs / 1e3);
+            return m.durationNote(M(o))(r)
+        }, [i.timeToCraftMs]), s = l.useMemo(() => {
+            if (i.timeToDisposeMs === 0) return `Never ${m.expireVerb(r)}`;
+            const o = Math.floor(i.timeToDisposeMs / 1e3);
+            return `${C(m.expireVerb(r))} after ${M(o)}`
+        }, [i.timeToDisposeMs]);
+        return t.jsxs(P, {
+            children: [t.jsx(W, {
+                children: "Notes"
+            }), t.jsx(T, {
+                children: n
+            }), t.jsx(T, {
+                children: s
+            })]
+        })
+    },
+    ge = a.div.attrs({
+        className: "flex vc"
+    })`
+  margin-bottom: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1;
+  border-radius: 4px;
+  &:last-of-type {
+    margin-bottom: 0px;
+  }
+`,
+    xe = e => {
+        const {
+            recipe: i
+        } = e;
+        return t.jsxs(t.Fragment, {
+            children: [t.jsx(he, {
+                src: v(i.itemId).previewImage
+            }), t.jsx(pe, {
+                children: j(e.recipe.itemId, e.recipe.itemAmount)
+            })]
+        })
+    },
+    he = a.img`
+  height: 82px;
+`,
+    pe = a.div`
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 1;
+  margin-top: 10px;
+`,
+    Ce = V(e => {
+        const i = D(e.selectedRecipeId);
+        return i ? t.jsxs(t.Fragment, {
+            children: [t.jsx(xe, {
+                recipe: i
+            }), t.jsxs(be, {
+                children: [t.jsx(se, {
+                    craft: e.craft,
+                    recipe: i,
+                    goBack: e.backToRecipeSelectionScreen,
+                    style: e.style
+                }), t.jsx(fe, {
+                    recipe: i,
+                    style: e.style
+                }), t.jsx(ue, {
+                    recipe: i,
+                    style: e.style
+                })]
+            })]
+        }) : null
+    }),
+    be = a(g.div).attrs({
+        className: "maxWidth flex-column flex-center",
+        initial: {
+            opacity: 0
+        },
+        animate: {
+            opacity: 1
+        }
+    })``,
+    ve = e => {
+        if (!e.item || !e.itemAmount) return !1;
+        let i = !1;
+        for (let r = 1; r <= e.numberOfIngredients; r++)
+            if (e[`ingredient${r}Item`] && e[`ingredient${r}Amount`]) {
+                i = !0;
+                break
+            } return !!i
+    },
+    ye = (e = "") => {
+        const i = [];
+        return H().worldManager.devices.allDevices.filter(n => n.deviceOption.id === J.craftingRecipe).forEach(n => {
+            const s = n.options;
+            n.state.active && s.group === e && ve(n.options) && i.push({
+                id: n.id,
+                y: n.y
+            })
+        }), i.sort((n, s) => n.y - s.y).map(n => n.id)
+    },
+    Ie = e => {
+        const i = D(e.recipeId),
+            r = l.useMemo(() => v(i.itemId).previewImage, [i.itemId]),
+            n = z(i);
+        return t.jsxs(je, {
+            onClick: e.onSelect,
+            children: [t.jsx(Ae, {
+                src: r
+            }), t.jsxs($e, {
+                children: [t.jsx(Me, {
+                    children: j(i.itemId, i.itemAmount)
+                }), t.jsx(Te, {
+                    style: {
+                        color: n ? "#a5d6a7" : "#ef9a9a"
+                    },
+                    children: n ? m.availableToCraft(e.style) : "Insufficient Resources"
+                })]
+            })]
+        })
+    },
+    je = a.div.attrs({
+        className: "maxWidth flex vc"
+    })`
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background 0.2s;
+  overflow: hidden;
+  &:last-of-type {
+    margin-bottom: 0px;
+  }
+  &:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+`,
+    Ae = a.img`
+  height: 55px;
+`,
+    $e = a(g.div).attrs({
+        className: "flex-column"
+    })`
+  margin-left: 15px;
+  line-height: 1;
+`,
+    Me = a.div`
+  font-size: 20px;
+`,
+    Te = a.div`
+  color: #a5d6a7;
+  font-size: 12px;
+  margin-top: 6px;
+  opacity: 0.8;
+`,
+    Se = p(e => {
+        const i = ye(e.group);
+        return i.length ? t.jsxs(Ne, {
+            children: [t.jsx(S, {
+                children: m.selectItem(e.style)
+            }), i.map(r => t.jsx(Ie, {
+                recipeId: r,
+                style: e.style,
+                onSelect: () => e.setToRecipePreviewScreen(r)
+            }, `recipe-${r}`))]
+        }) : t.jsx("div", {
+            className: "maxAll flex-center",
+            style: {
+                textAlign: "center"
+            },
+            children: t.jsx(S, {
+                children: m.noItems(e.style)
+            })
+        })
+    }),
+    Ne = a(g.div).attrs({
+        className: "maxWidth flex-column flex-center",
+        initial: {
+            opacity: 0
+        },
+        animate: {
+            opacity: 1
+        }
+    })``,
+    S = a.div`
+  font-family: ${b.ProductSans};
+  font-weight: ${I.Bold};
+  text-transform: none;
+  margin-bottom: 15px;
+  font-size: 22px;
+`,
+    De = e => e === G.plant ? "rgba(0,51,0,0.93)" : "rgba(38,50,56,0.93)",
+    Yt = e => {
+        const [i, r] = l.useState("recipeSelection"), [n, s] = l.useState(null), o = d => {
+            s(d), r("itemPreview")
+        }, c = () => {
+            r("recipeSelection")
+        };
+        l.useEffect(() => {
+            e.status === h.availableForCollection && c()
+        }, [e.status]);
+        const f = () => {
+            if (e.status === h.idle) switch (i) {
+                case "recipeSelection":
+                    return t.jsx(Se, {
+                        setToRecipePreviewScreen: o,
+                        style: e.style,
+                        group: e.tableGroup
+                    }, "recipe-selection-screen");
+                case "itemPreview":
+                    return t.jsx(Ce, {
+                        craft: e.craft,
+                        selectedRecipeId: n,
+                        style: e.style,
+                        backToRecipeSelectionScreen: c
+                    }, "recipe-preview-screen");
+                default:
+                    return null
+            }
+            return t.jsx(te, {
+                item: e.item,
+                itemAmount: e.itemAmount,
+                status: e.status,
+                style: e.style,
+                craftingDurationMs: e.craftingDurationMs,
+                itemFinishesCraftingAt: e.itemFinishesCraftingAt,
+                itemDisposalMs: e.itemDisposalMs,
+                itemDisposedAt: e.itemDisposedAt,
+                itemCrafterCharacterId: e.itemCrafterCharacterId,
+                useCrafterCollectionAdvantage: e.useCrafterCollectionAdvantage,
+                collect: e.collect,
+                close: e.close
+            }, "crafting-status-screen")
+        };
+        return t.jsx(Re, {
+            style: {
+                background: De(e.style)
+            },
+            children: f()
+        })
+    },
+    Re = a.div.attrs({
+        className: "maxAll flex-column vc scroll-y"
+    })`
+  backdrop-filter: blur(5px);
+  color: ${B.White};
+  padding: 25px;
+  font-family: ${b.FugazOne};
+  text-transform: uppercase;
+`;
 export {
-    Qr as
+    Yt as
     default
 };

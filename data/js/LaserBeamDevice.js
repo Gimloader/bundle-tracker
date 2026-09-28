@@ -83,6 +83,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -183,7 +184,7 @@ const V = {
     R = 55,
     f = 16,
     b = .35;
-class ni extends N {
+class pi extends N {
     constructor(n) {
         super(n), this.activeFactor = 1, this.animationsReady = !1, this.dots = [], this.onUpdate = () => {
             D() && (this.laser.view.scaleY = (Math.random() * .5 + .5) * this.activeFactor, this.origin.view.scale = Math.random() * .03 * this.activeFactor + this.base.baseScale, this.endPoint.view.scale = Math.random() * .03 * this.activeFactor + this.base.baseScale, this.options.showPath && this.dots.forEach(a => {
@@ -271,6 +272,6 @@ class ni extends N {
     }
 }
 export {
-    ni as
+    pi as
     default
 };

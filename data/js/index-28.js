@@ -1,30 +1,30 @@
 import {
     r,
-    aB as pt,
+    b1 as pt,
     _ as at,
-    aD as K,
+    aZ as K,
     am as fe,
-    aA as Se,
-    aC as W,
-    az as ie,
-    bg as _t,
-    bf as jt,
-    bh as Je,
-    aK as we,
-    aJ as Lt,
-    aG as At,
-    bi as qt,
-    aH as Ct,
-    cV as zt,
-    b8 as Ge,
-    ai as It,
+    b5 as Se,
+    b4 as W,
+    b3 as ie,
+    bf as _t,
+    be as jt,
+    bg as Qe,
+    b0 as we,
+    aY as Lt,
+    b6 as At,
+    bh as qt,
+    a_ as Ct,
+    cV as It,
+    aX as Ge,
+    ai as zt,
     aj as Wt,
-    aL as Xt,
+    aQ as Xt,
     ak as ue,
     bF as St,
     x as Pe,
-    aO as Ut,
-    bV as Yt
+    ba as Yt,
+    bV as Ut
 } from "./_index.js";
 import {
     T as Gt
@@ -99,7 +99,7 @@ var Ae = r.createContext({
             p = a.ariaRequired,
             k = a.ariaValueTextFormatterForHandle,
             $ = a.styles,
-            z = a.classNames,
+            I = a.classNames,
             X = "".concat(o, "-handle"),
             j = function(w) {
                 M || u(w, i)
@@ -186,7 +186,7 @@ var Ae = r.createContext({
         }
         var ke = r.createElement("div", at({
             ref: t,
-            className: fe(X, Se(Se(Se({}, "".concat(X, "-").concat(i + 1), i !== null && B), "".concat(X, "-dragging"), f), "".concat(X, "-dragging-delete"), v), z.handle),
+            className: fe(X, Se(Se(Se({}, "".concat(X, "-").concat(i + 1), i !== null && B), "".concat(X, "-dragging"), f), "".concat(X, "-dragging-delete"), v), I.handle),
             style: K(K(K({}, ge), c), $.handle)
         }, de, s));
         return E && (ke = E(ke, {
@@ -197,8 +197,8 @@ var Ae = r.createContext({
             draggingDelete: v
         })), ke
     }),
-    Jt = ["prefixCls", "style", "onStartMove", "onOffsetChange", "values", "handleRender", "activeHandleRender", "draggingIndex", "draggingDelete", "onFocus"],
-    Qt = r.forwardRef(function(e, t) {
+    Qt = ["prefixCls", "style", "onStartMove", "onOffsetChange", "values", "handleRender", "activeHandleRender", "draggingIndex", "draggingDelete", "onFocus"],
+    Zt = r.forwardRef(function(e, t) {
         var o = e.prefixCls,
             n = e.style,
             i = e.onStartMove,
@@ -209,7 +209,7 @@ var Ae = r.createContext({
             f = e.draggingIndex,
             v = e.draggingDelete,
             S = e.onFocus,
-            y = pt(e, Jt),
+            y = pt(e, Qt),
             b = r.useRef({}),
             g = r.useState(!1),
             s = ie(g, 2),
@@ -277,7 +277,7 @@ var Ae = r.createContext({
             "aria-hidden": !0
         })))
     }),
-    Zt = function(t) {
+    Jt = function(t) {
         var o = t.prefixCls,
             n = t.style,
             i = t.children,
@@ -314,7 +314,7 @@ var Ae = r.createContext({
             var c = m.value,
                 E = m.style,
                 f = m.label;
-            return r.createElement(Zt, {
+            return r.createElement(Jt, {
                 key: c,
                 prefixCls: u,
                 style: E,
@@ -496,7 +496,7 @@ function oa(e, t, o, n, i, u, m, c, E, f, v) {
         p = q[1],
         k = r.useState(o),
         $ = ie(k, 2),
-        z = $[0],
+        I = $[0],
         X = $[1],
         j = r.useRef(null),
         V = r.useRef(null),
@@ -513,49 +513,49 @@ function oa(e, t, o, n, i, u, m, c, E, f, v) {
     }, []);
     var de = function(x, L, A) {
             L !== void 0 && g(L), p(x);
-            var Q = x;
-            A && (Q = x.filter(function(N, U) {
-                return U !== d
-            })), m(Q), ge && ge({
+            var Z = x;
+            A && (Z = x.filter(function(N, Y) {
+                return Y !== d
+            })), m(Z), ge && ge({
                 rawValues: x,
                 deleteIndex: A ? d : -1,
                 draggingIndex: d,
                 draggingValue: L
             })
         },
-        ae = Je(function(w, x, L) {
+        ae = Qe(function(w, x, L) {
             if (w === -1) {
-                var A = z[0],
-                    Q = z[z.length - 1],
+                var A = I[0],
+                    Z = I[I.length - 1],
                     N = n - A,
-                    U = i - Q,
+                    Y = i - Z,
                     re = x * (i - n);
-                re = Math.max(re, N), re = Math.min(re, U);
+                re = Math.max(re, N), re = Math.min(re, Y);
                 var se = u(A + re);
                 re = se - A;
-                var me = z.map(function(ve) {
+                var me = I.map(function(ve) {
                     return ve + re
                 });
                 de(me)
             } else {
                 var he = (i - n) * x,
                     be = we(D);
-                be[w] = z[w];
+                be[w] = I[w];
                 var Ee = E(be, he, w, "dist");
                 de(Ee.values, Ee.value, L)
             }
         }),
         ke = function(x, L, A) {
             x.stopPropagation();
-            var Q = A || o,
-                N = Q[L];
-            l(L), g(N), X(Q), p(Q), B(!1);
-            var U = Et(x),
-                re = U.pageX,
-                se = U.pageY,
+            var Z = A || o,
+                N = Z[L];
+            l(L), g(N), X(Z), p(Z), B(!1);
+            var Y = Et(x),
+                re = Y.pageX,
+                se = Y.pageY,
                 me = !1;
             te && te({
-                rawValues: Q,
+                rawValues: Z,
                 draggingIndex: L,
                 draggingValue: N
             });
@@ -567,7 +567,7 @@ function oa(e, t, o, n, i, u, m, c, E, f, v) {
                         pe = He - re,
                         ce = Be - se,
                         H = e.current.getBoundingClientRect(),
-                        Y = H.width,
+                        U = H.width,
                         $e = H.height,
                         Ce, oe;
                     switch (t) {
@@ -578,10 +578,10 @@ function oa(e, t, o, n, i, u, m, c, E, f, v) {
                             Ce = ce / $e, oe = pe;
                             break;
                         case "rtl":
-                            Ce = -pe / Y, oe = ce;
+                            Ce = -pe / U, oe = ce;
                             break;
                         default:
-                            Ce = pe / Y, oe = ce
+                            Ce = pe / U, oe = ce
                     }
                     me = f ? Math.abs(oe) > na && v < D.length : !1, B(me), ae(L, Ce, me)
                 },
@@ -590,12 +590,12 @@ function oa(e, t, o, n, i, u, m, c, E, f, v) {
                 };
             document.addEventListener("mouseup", be), document.addEventListener("mousemove", he), x.currentTarget.addEventListener("touchend", be), x.currentTarget.addEventListener("touchmove", he), j.current = he, V.current = be, T.current = x.currentTarget
         },
-        J = r.useMemo(function() {
-            var w = we(o).sort(function(N, U) {
-                    return N - U
+        Q = r.useMemo(function() {
+            var w = we(o).sort(function(N, Y) {
+                    return N - Y
                 }),
-                x = we(D).sort(function(N, U) {
-                    return N - U
+                x = we(D).sort(function(N, Y) {
+                    return N - Y
                 }),
                 L = {};
             x.forEach(function(N) {
@@ -604,12 +604,12 @@ function oa(e, t, o, n, i, u, m, c, E, f, v) {
                 L[N] = (L[N] || 0) - 1
             });
             var A = f ? 1 : 0,
-                Q = Object.values(L).reduce(function(N, U) {
-                    return N + Math.abs(U)
+                Z = Object.values(L).reduce(function(N, Y) {
+                    return N + Math.abs(Y)
                 }, 0);
-            return Q <= A ? D : o
+            return Z <= A ? D : o
         }, [o, D, f]);
-    return [d, b, R, J, ke]
+    return [d, b, R, Q, ke]
 }
 
 function la(e, t, o, n, i, u) {
@@ -708,9 +708,9 @@ function la(e, t, o, n, i, u) {
                         l[D - 1] = k.value, p = k.changed
                     }
                 for (var $ = l.length - 1; $ > 0; $ -= 1)
-                    for (var z = !0; S(l[$] - l[$ - 1]) && z;) {
+                    for (var I = !0; S(l[$] - l[$ - 1]) && I;) {
                         var X = v(l, -1, $ - 1);
-                        l[$ - 1] = X.value, z = X.changed
+                        l[$ - 1] = X.value, I = X.changed
                     }
                 for (var j = 0; j < l.length - 1; j += 1)
                     for (var V = !0; S(l[j + 1] - l[j]) && V;) {
@@ -764,7 +764,7 @@ var sa = r.forwardRef(function(e, t) {
         p = e.onChange,
         k = e.onBeforeChange,
         $ = e.onAfterChange,
-        z = e.onChangeComplete,
+        I = e.onChangeComplete,
         X = e.allowCross,
         j = X === void 0 ? !0 : X,
         V = e.pushable,
@@ -775,14 +775,14 @@ var sa = r.forwardRef(function(e, t) {
         de = ge === void 0 ? !0 : ge,
         ae = e.startPoint,
         ke = e.trackStyle,
-        J = e.handleStyle,
+        Q = e.handleStyle,
         w = e.railStyle,
         x = e.dotStyle,
         L = e.activeDotStyle,
         A = e.marks,
-        Q = e.dots,
+        Z = e.dots,
         N = e.handleRender,
-        U = e.activeHandleRender,
+        Y = e.activeHandleRender,
         re = e.track,
         se = e.tabIndex,
         me = se === void 0 ? 0 : se,
@@ -798,7 +798,7 @@ var sa = r.forwardRef(function(e, t) {
         pe = ia(q),
         ce = ie(pe, 5),
         H = ce[0],
-        Y = ce[1],
+        U = ce[1],
         $e = ce[2],
         Ce = ce[3],
         oe = ce[4],
@@ -814,7 +814,7 @@ var sa = r.forwardRef(function(e, t) {
         G = r.useMemo(function() {
             return typeof T == "boolean" ? T ? Me : !1 : T >= 0 ? T : !1
         }, [T, Me]),
-        Z = r.useMemo(function() {
+        J = r.useMemo(function() {
             return Object.keys(A || {}).map(function(O) {
                 var h = A[O],
                     P = {
@@ -828,10 +828,10 @@ var sa = r.forwardRef(function(e, t) {
                 return O.value - h.value
             })
         }, [A]),
-        Qe = la(le, xe, Me, Z, j, G),
-        Ie = ie(Qe, 2),
-        Fe = Ie[0],
-        We = Ie[1],
+        Ze = la(le, xe, Me, J, j, G),
+        ze = ie(Ze, 2),
+        Fe = ze[0],
+        We = ze[1],
         Xe = At(_, {
             value: B
         }),
@@ -843,89 +843,89 @@ var sa = r.forwardRef(function(e, t) {
                 h = ie(O, 1),
                 P = h[0],
                 F = P === void 0 ? le : P,
-                I = Te === null ? [] : [F];
+                z = Te === null ? [] : [F];
             if (H) {
-                if (I = we(O), D || Te === void 0) {
+                if (z = we(O), D || Te === void 0) {
                     var Ne = D >= 0 ? D + 1 : 2;
-                    for (I = I.slice(0, Ne); I.length < Ne;) {
+                    for (z = z.slice(0, Ne); z.length < Ne;) {
                         var Re;
-                        I.push((Re = I[I.length - 1]) !== null && Re !== void 0 ? Re : le)
+                        z.push((Re = z[z.length - 1]) !== null && Re !== void 0 ? Re : le)
                     }
                 }
-                I.sort(function(De, Oe) {
+                z.sort(function(De, Oe) {
                     return De - Oe
                 })
             }
-            return I.forEach(function(De, Oe) {
-                I[Oe] = Fe(De)
-            }), I
+            return z.forEach(function(De, Oe) {
+                z[Oe] = Fe(De)
+            }), z
         }, [Te, H, le, D, Fe]),
         qe = function(h) {
             return H ? h : h[0]
         },
-        Ke = Je(function(O) {
+        Ke = Qe(function(O) {
             var h = we(O).sort(function(P, F) {
                 return P - F
             });
             p && !qt(h, ee, !0) && p(qe(h)), Mt(h)
         }),
-        lt = Je(function(O) {
+        lt = Qe(function(O) {
             O && ne.current.hideHelp();
             var h = qe(ee);
-            $ == null || $(h), Ct(!$, "[rc-slider] `onAfterChange` is deprecated. Please use `onChangeComplete` instead."), z == null || z(h)
+            $ == null || $(h), Ct(!$, "[rc-slider] `onAfterChange` is deprecated. Please use `onChangeComplete` instead."), I == null || I(h)
         }),
         Rt = function(h) {
-            if (!(v || !Y || ee.length <= Ce)) {
+            if (!(v || !U || ee.length <= Ce)) {
                 var P = we(ee);
                 P.splice(h, 1), k == null || k(qe(P)), Ke(P);
                 var F = Math.max(0, h - 1);
                 ne.current.hideHelp(), ne.current.focus(F)
             }
         },
-        Dt = oa(He, Be, ee, le, xe, Fe, Ke, lt, We, Y, Ce),
-        Ue = ie(Dt, 5),
-        it = Ue[0],
-        Ot = Ue[1],
-        Pt = Ue[2],
-        Ze = Ue[3],
-        st = Ue[4],
+        Dt = oa(He, Be, ee, le, xe, Fe, Ke, lt, We, U, Ce),
+        Ye = ie(Dt, 5),
+        it = Ye[0],
+        Ot = Ye[1],
+        Pt = Ye[2],
+        Je = Ye[3],
+        st = Ye[4],
         ct = function(h, P) {
             if (!v) {
                 var F = we(ee),
-                    I = 0,
+                    z = 0,
                     Ne = 0,
                     Re = xe - le;
                 ee.forEach(function(_e, Ve) {
                     var bt = Math.abs(h - _e);
-                    bt <= Re && (Re = bt, I = Ve), _e < h && (Ne = Ve)
+                    bt <= Re && (Re = bt, z = Ve), _e < h && (Ne = Ve)
                 });
-                var De = I;
-                Y && Re !== 0 && (!oe || ee.length < oe) ? (F.splice(Ne + 1, 0, h), De = Ne + 1) : F[I] = h, H && !ee.length && D === void 0 && F.push(h);
+                var De = z;
+                U && Re !== 0 && (!oe || ee.length < oe) ? (F.splice(Ne + 1, 0, h), De = Ne + 1) : F[z] = h, H && !ee.length && D === void 0 && F.push(h);
                 var Oe = qe(F);
                 if (k == null || k(Oe), Ke(F), P) {
-                    var je, ze;
-                    (je = document.activeElement) === null || je === void 0 || (ze = je.blur) === null || ze === void 0 || ze.call(je), ne.current.focus(De), st(P, De, F)
-                } else $ == null || $(Oe), Ct(!$, "[rc-slider] `onAfterChange` is deprecated. Please use `onChangeComplete` instead."), z == null || z(Oe)
+                    var je, Ie;
+                    (je = document.activeElement) === null || je === void 0 || (Ie = je.blur) === null || Ie === void 0 || Ie.call(je), ne.current.focus(De), st(P, De, F)
+                } else $ == null || $(Oe), Ct(!$, "[rc-slider] `onAfterChange` is deprecated. Please use `onChangeComplete` instead."), I == null || I(Oe)
             }
         },
         wt = function(h) {
             h.preventDefault();
             var P = He.current.getBoundingClientRect(),
                 F = P.width,
-                I = P.height,
+                z = P.height,
                 Ne = P.left,
                 Re = P.top,
                 De = P.bottom,
                 Oe = P.right,
                 je = h.clientX,
-                ze = h.clientY,
+                Ie = h.clientY,
                 _e;
             switch (Be) {
                 case "btt":
-                    _e = (De - ze) / I;
+                    _e = (De - Ie) / z;
                     break;
                 case "ttb":
-                    _e = (ze - Re) / I;
+                    _e = (Ie - Re) / z;
                     break;
                 case "rtl":
                     _e = (Oe - je) / F;
@@ -956,7 +956,7 @@ var sa = r.forwardRef(function(e, t) {
     var Ft = r.useMemo(function() {
             return $e && Me === null ? !1 : $e
         }, [$e, Me]),
-        vt = Je(function(O, h) {
+        vt = Qe(function(O, h) {
             st(O, h), k == null || k(qe(ee))
         }),
         ft = it !== -1;
@@ -966,14 +966,14 @@ var sa = r.forwardRef(function(e, t) {
             ne.current.focus(O)
         }
     }, [ft]);
-    var Ye = r.useMemo(function() {
-            return we(Ze).sort(function(O, h) {
+    var Ue = r.useMemo(function() {
+            return we(Je).sort(function(O, h) {
                 return O - h
             })
-        }, [Ze]),
+        }, [Je]),
         Tt = r.useMemo(function() {
-            return H ? [Ye[0], Ye[Ye.length - 1]] : [le, Ye[0]]
-        }, [Ye, H, le]),
+            return H ? [Ue[0], Ue[Ue.length - 1]] : [le, Ue[0]]
+        }, [Ue, H, le]),
         gt = ie(Tt, 2),
         mt = gt[0],
         ht = gt[1];
@@ -1016,7 +1016,7 @@ var sa = r.forwardRef(function(e, t) {
         value: Nt
     }, r.createElement("div", {
         ref: He,
-        className: fe(n, i, Se(Se(Se(Se({}, "".concat(n, "-disabled"), v), "".concat(n, "-vertical"), te), "".concat(n, "-horizontal"), !te), "".concat(n, "-with-marks"), Z.length)),
+        className: fe(n, i, Se(Se(Se(Se({}, "".concat(n, "-disabled"), v), "".concat(n, "-vertical"), te), "".concat(n, "-horizontal"), !te), "".concat(n, "-with-marks"), J.length)),
         style: u,
         onMouseDown: wt,
         id: E
@@ -1031,15 +1031,15 @@ var sa = r.forwardRef(function(e, t) {
         onStartMove: Ft ? vt : void 0
     }), r.createElement(aa, {
         prefixCls: n,
-        marks: Z,
-        dots: Q,
+        marks: J,
+        dots: Z,
         style: x,
         activeStyle: L
-    }), r.createElement(Qt, {
+    }), r.createElement(Zt, {
         ref: ne,
         prefixCls: n,
-        style: J,
-        values: Ze,
+        style: Q,
+        values: Je,
         draggingIndex: it,
         draggingDelete: Pt,
         onStartMove: vt,
@@ -1047,12 +1047,12 @@ var sa = r.forwardRef(function(e, t) {
         onFocus: g,
         onBlur: s,
         handleRender: N,
-        activeHandleRender: U,
+        activeHandleRender: Y,
         onChangeComplete: lt,
-        onDelete: Y ? Rt : void 0
+        onDelete: U ? Rt : void 0
     }), r.createElement(ea, {
         prefixCls: n,
-        marks: Z,
+        marks: J,
         onClick: ct
     })))
 });
@@ -1075,7 +1075,7 @@ const ca = r.createContext({}),
             })
         }
         return r.useEffect(() => (m ? f() : E(), E), [m, e.title, i]), r.createElement(Gt, Object.assign({
-            ref: zt(u, t)
+            ref: It(u, t)
         }, e, {
             open: m
         }))
@@ -1379,7 +1379,7 @@ const ca = r.createContext({}),
             trackBgDisabled: e.colorBgContainerDisabled
         }
     },
-    ga = It("Slider", e => {
+    ga = zt("Slider", e => {
         const t = Wt(e, {
             marginPart: e.calc(e.controlHeight).sub(e.controlSize).div(2).equal(),
             marginFull: e.calc(e.controlSize).div(2).equal(),
@@ -1436,20 +1436,20 @@ const Sa = Pe.forwardRef((e, t) => {
         classNames: _,
         styles: q,
         getPopupContainer: D
-    } = Ut("slider"), p = Pe.useContext(Yt), k = c ?? p, {
+    } = Yt("slider"), p = Pe.useContext(Ut), k = c ?? p, {
         handleRender: $,
-        direction: z
-    } = Pe.useContext(ca), j = (z || M) === "rtl", [V, T] = tt(), [ye, te] = tt(), ge = Object.assign({}, b), {
+        direction: I
+    } = Pe.useContext(ca), j = (I || M) === "rtl", [V, T] = tt(), [ye, te] = tt(), ge = Object.assign({}, b), {
         open: de,
         placement: ae,
         getPopupContainer: ke,
-        prefixCls: J,
+        prefixCls: Q,
         formatter: w
-    } = ge, x = de ?? v, L = (V || ye) && x !== !1, A = ha(w, f), [Q, N] = tt(), U = H => {
+    } = ge, x = de ?? v, L = (V || ye) && x !== !1, A = ha(w, f), [Z, N] = tt(), Y = H => {
         g == null || g(H), N(!1)
-    }, re = (H, Y) => H || (Y ? j ? "left" : "right" : "top"), se = C("slider", o), [me, he, be] = ga(se), Ee = fe(i, R, _.root, s == null ? void 0 : s.root, u, {
+    }, re = (H, U) => H || (U ? j ? "left" : "right" : "top"), se = C("slider", o), [me, he, be] = ga(se), Ee = fe(i, R, _.root, s == null ? void 0 : s.root, u, {
         [`${se}-rtl`]: j,
-        [`${se}-lock`]: Q
+        [`${se}-lock`]: Z
     }, he, be);
     j && !d.vertical && (d.reverse = !d.reverse), Pe.useEffect(() => {
         const H = () => {
@@ -1462,14 +1462,14 @@ const Sa = Pe.forwardRef((e, t) => {
         }
     }, []);
     const ve = n && !x,
-        ne = $ || ((H, Y) => {
+        ne = $ || ((H, U) => {
             const {
                 index: $e
-            } = Y, Ce = H.props;
+            } = U, Ce = H.props;
 
-            function oe(G, Z, Qe) {
-                var Ie, Fe, We, Xe;
-                Qe && ((Fe = (Ie = d)[G]) === null || Fe === void 0 || Fe.call(Ie, Z)), (Xe = (We = Ce)[G]) === null || Xe === void 0 || Xe.call(We, Z)
+            function oe(G, J, Ze) {
+                var ze, Fe, We, Xe;
+                Ze && ((Fe = (ze = d)[G]) === null || Fe === void 0 || Fe.call(ze, J)), (Xe = (We = Ce)[G]) === null || Xe === void 0 || Xe.call(We, J)
             }
             const le = Object.assign(Object.assign({}, Ce), {
                     onMouseEnter: G => {
@@ -1482,20 +1482,20 @@ const Sa = Pe.forwardRef((e, t) => {
                         te(!0), N(!0), oe("onMouseDown", G)
                     },
                     onFocus: G => {
-                        var Z;
-                        te(!0), (Z = d.onFocus) === null || Z === void 0 || Z.call(d, G), oe("onFocus", G, !0)
+                        var J;
+                        te(!0), (J = d.onFocus) === null || J === void 0 || J.call(d, G), oe("onFocus", G, !0)
                     },
                     onBlur: G => {
-                        var Z;
-                        te(!1), (Z = d.onBlur) === null || Z === void 0 || Z.call(d, G), oe("onBlur", G, !0)
+                        var J;
+                        te(!1), (J = d.onBlur) === null || J === void 0 || J.call(d, G), oe("onBlur", G, !0)
                     }
                 }),
                 xe = Pe.cloneElement(H, le),
                 Me = (!!x || L) && A !== null;
             return ve ? xe : Pe.createElement($t, Object.assign({}, ge, {
-                prefixCls: C("tooltip", J ?? E),
-                title: A ? A(Y.value) : "",
-                value: Y.value,
+                prefixCls: C("tooltip", Q ?? E),
+                title: A ? A(U.value) : "",
+                value: U.value,
                 open: Me,
                 placement: re(ae ?? y, l),
                 key: $e,
@@ -1505,15 +1505,15 @@ const Sa = Pe.forwardRef((e, t) => {
                 getPopupContainer: ke || S || D
             }), xe)
         }),
-        He = ve ? (H, Y) => {
+        He = ve ? (H, U) => {
             const $e = Pe.cloneElement(H, {
                 style: Object.assign(Object.assign({}, H.props.style), {
                     visibility: "hidden"
                 })
             });
             return Pe.createElement($t, Object.assign({}, ge, {
-                prefixCls: C("tooltip", J ?? E),
-                title: A ? A(Y.value) : "",
+                prefixCls: C("tooltip", Q ?? E),
+                title: A ? A(U.value) : "",
                 open: A !== null && L,
                 placement: re(ae ?? y, l),
                 key: "tooltip",
@@ -1521,7 +1521,7 @@ const Sa = Pe.forwardRef((e, t) => {
                     root: `${se}-tooltip`
                 },
                 getPopupContainer: ke || S || D,
-                draggingDelete: Y.draggingDelete
+                draggingDelete: U.draggingDelete
             }), $e)
         } : void 0,
         Be = Object.assign(Object.assign(Object.assign(Object.assign({}, q.root), B), a == null ? void 0 : a.root), m),
@@ -1551,7 +1551,7 @@ const Sa = Pe.forwardRef((e, t) => {
         prefixCls: se,
         handleRender: ne,
         activeHandleRender: He,
-        onChangeComplete: U
+        onChangeComplete: Y
     })))
 });
 export {

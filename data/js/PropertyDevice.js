@@ -76,10 +76,11 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 var t = (o => (o.boolean = "boolean", o.number = "number", o.string = "string", o))(t || {});
-class Gt extends a {
+class Mt extends a {
     constructor(e) {
         if (super(e), this.onStateChange = i => {
                 this.options.valueType === t.boolean && i === "valueBoolean" ? this.setStoredValue() : this.options.valueType === t.number && i === "valueNumber" ? this.setStoredValue() : this.options.valueType === t.string && i === "valueString" && this.setStoredValue()
@@ -110,6 +111,6 @@ class Gt extends a {
     }
 }
 export {
-    Gt as
+    Mt as
     default
 };

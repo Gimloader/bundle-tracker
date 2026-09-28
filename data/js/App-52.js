@@ -139,6 +139,7 @@ import "./react-flip-move.es.js";
 import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./EditOutlined.js";
@@ -977,7 +978,7 @@ const Qe = de(Ge),
             })]
         })
     },
-    Gn = se(e => {
+    Qn = se(e => {
         const {
             gui: {
                 none: {
@@ -1052,6 +1053,6 @@ const Qe = de(Ge),
         className: "maxWidth"
     })``;
 export {
-    Gn as
+    Qn as
     default
 };

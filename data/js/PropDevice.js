@@ -84,6 +84,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -109,7 +110,7 @@ const d = (p, a, r, t, i = !1) => {
     L = 350,
     c = 200,
     m = 10;
-class ii extends C {
+class si extends C {
     constructor(a) {
         super(a), this.showing = !0, this.healthbarShowTween = null, this.healthbarHideTween = null, this.createHealthbar = () => {
             this.canBeDamaged() && this.options.healthbar !== g.off && (this.healthbarContainer = this.parts.add.container({}), this.healthbarContainer2 = this.parts.add.container({
@@ -361,6 +362,6 @@ class ii extends C {
     }
 }
 export {
-    ii as
+    si as
     default
 };

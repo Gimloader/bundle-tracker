@@ -1,37 +1,37 @@
 import {
     r as o,
-    az as w,
-    aJ as ge,
-    aI as Re,
+    b3 as w,
+    aY as ge,
+    aP as Re,
     _ as ee,
     am as Q,
-    aA as ue,
-    aC as Ae,
+    b5 as ue,
+    b4 as be,
     x as U,
-    db as pe,
-    aB as Ne,
-    aD as $,
-    aK as V,
-    bg as be,
-    bh as _e
+    db as Ae,
+    b1 as Ne,
+    aZ as z,
+    b0 as B,
+    bf as pe,
+    bg as Pe
 } from "./_index.js";
-var Le = o.forwardRef(function(e, r) {
+var _e = o.forwardRef(function(e, r) {
         var d = e.prefixCls,
             c = e.style,
             l = e.className,
             N = e.duration,
             C = N === void 0 ? 4.5 : N,
-            A = e.showProgress,
-            L = e.pauseOnHover,
-            p = L === void 0 ? !0 : L,
+            b = e.showProgress,
+            _ = e.pauseOnHover,
+            A = _ === void 0 ? !0 : _,
             F = e.eventKey,
             D = e.content,
             m = e.closable,
             g = e.closeIcon,
-            P = g === void 0 ? "x" : g,
+            L = g === void 0 ? "x" : g,
             y = e.props,
             f = e.onClick,
-            K = e.onNoticeClose,
+            j = e.onNoticeClose,
             H = e.times,
             E = e.hovering,
             S = o.useState(!1),
@@ -43,16 +43,16 @@ var Le = o.forwardRef(function(e, r) {
             n = t[0],
             s = t[1],
             R = o.useState(0),
-            b = w(R, 2),
-            k = b[0],
-            q = b[1],
+            p = w(R, 2),
+            k = p[0],
+            q = p[1],
             v = E || u,
-            _ = C > 0 && A,
+            P = C > 0 && b,
             T = function() {
-                K(F)
+                j(F)
             },
-            z = function(i) {
-                (i.key === "Enter" || i.code === "Enter" || i.keyCode === Ae.ENTER) && T()
+            Y = function(i) {
+                (i.key === "Enter" || i.code === "Enter" || i.keyCode === be.ENTER) && T()
             };
         o.useEffect(function() {
             if (!v && C > 0) {
@@ -61,32 +61,32 @@ var Le = o.forwardRef(function(e, r) {
                         T()
                     }, C * 1e3 - k);
                 return function() {
-                    p && clearTimeout(i), q(Date.now() - M)
+                    A && clearTimeout(i), q(Date.now() - M)
                 }
             }
         }, [C, v, H]), o.useEffect(function() {
-            if (!v && _ && (p || k === 0)) {
+            if (!v && P && (A || k === 0)) {
                 var M = performance.now(),
                     i, h = function ne() {
                         cancelAnimationFrame(i), i = requestAnimationFrame(function(oe) {
                             var G = oe + k - M,
-                                j = Math.min(G / (C * 1e3), 1);
-                            s(j * 100), j < 1 && ne()
+                                K = Math.min(G / (C * 1e3), 1);
+                            s(K * 100), K < 1 && ne()
                         })
                     };
                 return h(),
                     function() {
-                        p && cancelAnimationFrame(i)
+                        A && cancelAnimationFrame(i)
                     }
             }
-        }, [C, k, v, _, H]);
-        var X = o.useMemo(function() {
+        }, [C, k, v, P, H]);
+        var J = o.useMemo(function() {
                 return ge(m) === "object" && m !== null ? m : m ? {
-                    closeIcon: P
+                    closeIcon: L
                 } : {}
-            }, [m, P]),
-            te = Re(X, !0),
-            B = 100 - (!n || n < 0 ? 0 : n > 100 ? 100 : n),
+            }, [m, L]),
+            te = Re(J, !0),
+            Z = 100 - (!n || n < 0 ? 0 : n > 100 ? 100 : n),
             I = "".concat(d, "-notice");
         return o.createElement("div", ee({}, y, {
             ref: r,
@@ -106,17 +106,17 @@ var Le = o.forwardRef(function(e, r) {
         }, D), m && o.createElement("a", ee({
             tabIndex: 0,
             className: "".concat(I, "-close"),
-            onKeyDown: z,
+            onKeyDown: Y,
             "aria-label": "Close"
         }, te, {
             onClick: function(i) {
                 i.preventDefault(), i.stopPropagation(), T()
             }
-        }), X.closeIcon), _ && o.createElement("progress", {
+        }), J.closeIcon), P && o.createElement("progress", {
             className: "".concat(I, "-progress"),
             max: "100",
-            value: B
-        }, B + "%"))
+            value: Z
+        }, Z + "%"))
     }),
     he = U.createContext({}),
     Fe = function(r) {
@@ -131,7 +131,7 @@ var Le = o.forwardRef(function(e, r) {
     de = 8,
     me = 3,
     ye = 16,
-    Pe = function(r) {
+    Le = function(r) {
         var d = {
             offset: de,
             threshold: me,
@@ -150,17 +150,17 @@ var Le = o.forwardRef(function(e, r) {
             l = r.prefixCls,
             N = r.className,
             C = r.style,
-            A = r.motion,
-            L = r.onAllNoticeRemoved,
-            p = r.onNoticeClose,
+            b = r.motion,
+            _ = r.onAllNoticeRemoved,
+            A = r.onNoticeClose,
             F = r.stack,
             D = o.useContext(he),
             m = D.classNames,
             g = o.useRef({}),
-            P = o.useState(null),
-            y = w(P, 2),
+            L = o.useState(null),
+            y = w(L, 2),
             f = y[0],
-            K = y[1],
+            j = y[1],
             H = o.useState([]),
             E = w(H, 2),
             S = E[0],
@@ -171,31 +171,31 @@ var Le = o.forwardRef(function(e, r) {
                     key: String(v.key)
                 }
             }),
-            O = Pe(F),
+            O = Le(F),
             a = w(O, 2),
             t = a[0],
             n = a[1],
             s = n.offset,
             R = n.threshold,
-            b = n.gap,
+            p = n.gap,
             k = t && (S.length > 0 || u.length <= R),
-            q = typeof A == "function" ? A(c) : A;
+            q = typeof b == "function" ? b(c) : b;
         return o.useEffect(function() {
             t && S.length > 1 && x(function(v) {
-                return v.filter(function(_) {
+                return v.filter(function(P) {
                     return u.some(function(T) {
-                        var z = T.key;
-                        return _ === z
+                        var Y = T.key;
+                        return P === Y
                     })
                 })
             })
         }, [S, u, t]), o.useEffect(function() {
             var v;
             if (t && g.current[(v = u[u.length - 1]) === null || v === void 0 ? void 0 : v.key]) {
-                var _;
-                K(g.current[(_ = u[u.length - 1]) === null || _ === void 0 ? void 0 : _.key])
+                var P;
+                j(g.current[(P = u[u.length - 1]) === null || P === void 0 ? void 0 : P.key])
             }
-        }, [u, t]), U.createElement(pe, ee({
+        }, [u, t]), U.createElement(Ae, ee({
             key: c,
             className: Q(l, "".concat(l, "-").concat(c), m == null ? void 0 : m.list, N, ue(ue({}, "".concat(l, "-stack"), !!t), "".concat(l, "-stack-expanded"), k)),
             style: C,
@@ -203,49 +203,49 @@ var Le = o.forwardRef(function(e, r) {
             motionAppear: !0
         }, q, {
             onAllRemoved: function() {
-                L(c)
+                _(c)
             }
-        }), function(v, _) {
+        }), function(v, P) {
             var T = v.config,
-                z = v.className,
-                X = v.style,
+                Y = v.className,
+                J = v.style,
                 te = v.index,
-                B = T,
-                I = B.key,
-                M = B.times,
+                Z = T,
+                I = Z.key,
+                M = Z.times,
                 i = String(I),
                 h = T,
                 ne = h.className,
                 oe = h.style,
                 G = h.classNames,
-                j = h.styles,
+                K = h.styles,
                 Se = Ne(h, Me),
-                ae = u.findIndex(function(Z) {
-                    return Z.key === i
+                ae = u.findIndex(function(X) {
+                    return X.key === i
                 }),
-                Y = {};
+                V = {};
             if (t) {
-                var J = u.length - 1 - (ae > -1 ? ae : te - 1),
+                var $ = u.length - 1 - (ae > -1 ? ae : te - 1),
                     fe = c === "top" || c === "bottom" ? "-50%" : "0";
-                if (J > 0) {
+                if ($ > 0) {
                     var re, se, ie;
-                    Y.height = k ? (re = g.current[i]) === null || re === void 0 ? void 0 : re.offsetHeight : f == null ? void 0 : f.offsetHeight;
-                    for (var ve = 0, ce = 0; ce < J; ce++) {
+                    V.height = k ? (re = g.current[i]) === null || re === void 0 ? void 0 : re.offsetHeight : f == null ? void 0 : f.offsetHeight;
+                    for (var ve = 0, ce = 0; ce < $; ce++) {
                         var le;
-                        ve += ((le = g.current[u[u.length - 1 - ce].key]) === null || le === void 0 ? void 0 : le.offsetHeight) + b
+                        ve += ((le = g.current[u[u.length - 1 - ce].key]) === null || le === void 0 ? void 0 : le.offsetHeight) + p
                     }
-                    var ke = (k ? ve : J * s) * (c.startsWith("top") ? 1 : -1),
-                        Ee = !k && f !== null && f !== void 0 && f.offsetWidth && (se = g.current[i]) !== null && se !== void 0 && se.offsetWidth ? ((f == null ? void 0 : f.offsetWidth) - s * 2 * (J < 3 ? J : 3)) / ((ie = g.current[i]) === null || ie === void 0 ? void 0 : ie.offsetWidth) : 1;
-                    Y.transform = "translate3d(".concat(fe, ", ").concat(ke, "px, 0) scaleX(").concat(Ee, ")")
-                } else Y.transform = "translate3d(".concat(fe, ", 0, 0)")
+                    var ke = (k ? ve : $ * s) * (c.startsWith("top") ? 1 : -1),
+                        Ee = !k && f !== null && f !== void 0 && f.offsetWidth && (se = g.current[i]) !== null && se !== void 0 && se.offsetWidth ? ((f == null ? void 0 : f.offsetWidth) - s * 2 * ($ < 3 ? $ : 3)) / ((ie = g.current[i]) === null || ie === void 0 ? void 0 : ie.offsetWidth) : 1;
+                    V.transform = "translate3d(".concat(fe, ", ").concat(ke, "px, 0) scaleX(").concat(Ee, ")")
+                } else V.transform = "translate3d(".concat(fe, ", 0, 0)")
             }
             return U.createElement("div", {
-                ref: _,
-                className: Q("".concat(l, "-notice-wrapper"), z, G == null ? void 0 : G.wrapper),
-                style: $($($({}, X), Y), j == null ? void 0 : j.wrapper),
+                ref: P,
+                className: Q("".concat(l, "-notice-wrapper"), Y, G == null ? void 0 : G.wrapper),
+                style: z(z(z({}, J), V), K == null ? void 0 : K.wrapper),
                 onMouseEnter: function() {
                     return x(function(W) {
-                        return W.includes(i) ? W : [].concat(V(W), [i])
+                        return W.includes(i) ? W : [].concat(B(W), [i])
                     })
                 },
                 onMouseLeave: function() {
@@ -255,19 +255,19 @@ var Le = o.forwardRef(function(e, r) {
                         })
                     })
                 }
-            }, U.createElement(Le, ee({}, Se, {
+            }, U.createElement(_e, ee({}, Se, {
                 ref: function(W) {
                     ae > -1 ? g.current[i] = W : delete g.current[i]
                 },
                 prefixCls: l,
                 classNames: G,
-                styles: j,
+                styles: K,
                 className: Q(ne, m == null ? void 0 : m.notice),
                 style: oe,
                 times: M,
                 key: I,
                 eventKey: I,
-                onNoticeClose: p,
+                onNoticeClose: A,
                 hovering: t && S.length > 0
             })))
         })
@@ -278,22 +278,22 @@ var Le = o.forwardRef(function(e, r) {
             l = e.container,
             N = e.motion,
             C = e.maxCount,
-            A = e.className,
-            L = e.style,
-            p = e.onAllRemoved,
+            b = e.className,
+            _ = e.style,
+            A = e.onAllRemoved,
             F = e.stack,
             D = e.renderNotifications,
             m = o.useState([]),
             g = w(m, 2),
-            P = g[0],
+            L = g[0],
             y = g[1],
             f = function(t) {
-                var n, s = P.find(function(R) {
+                var n, s = L.find(function(R) {
                     return R.key === t
                 });
                 s == null || (n = s.onClose) === null || n === void 0 || n.call(s), y(function(R) {
-                    return R.filter(function(b) {
-                        return b.key !== t
+                    return R.filter(function(p) {
+                        return p.key !== t
                     })
                 })
             };
@@ -301,15 +301,15 @@ var Le = o.forwardRef(function(e, r) {
             return {
                 open: function(t) {
                     y(function(n) {
-                        var s = V(n),
+                        var s = B(n),
                             R = s.findIndex(function(q) {
                                 return q.key === t.key
                             }),
-                            b = $({}, t);
+                            p = z({}, t);
                         if (R >= 0) {
                             var k;
-                            b.times = (((k = n[R]) === null || k === void 0 ? void 0 : k.times) || 0) + 1, s[R] = b
-                        } else b.times = 0, s.push(b);
+                            p.times = (((k = n[R]) === null || k === void 0 ? void 0 : k.times) || 0) + 1, s[R] = p
+                        } else p.times = 0, s.push(p);
                         return C > 0 && s.length > C && (s = s.slice(-C)), s
                     })
                 },
@@ -321,41 +321,41 @@ var Le = o.forwardRef(function(e, r) {
                 }
             }
         });
-        var K = o.useState({}),
-            H = w(K, 2),
+        var j = o.useState({}),
+            H = w(j, 2),
             E = H[0],
             S = H[1];
         o.useEffect(function() {
             var a = {};
-            P.forEach(function(t) {
+            L.forEach(function(t) {
                 var n = t.placement,
                     s = n === void 0 ? "topRight" : n;
                 s && (a[s] = a[s] || [], a[s].push(t))
             }), Object.keys(E).forEach(function(t) {
                 a[t] = a[t] || []
             }), S(a)
-        }, [P]);
+        }, [L]);
         var x = function(t) {
                 S(function(n) {
-                    var s = $({}, n),
+                    var s = z({}, n),
                         R = s[t] || [];
                     return R.length || delete s[t], s
                 })
             },
             u = o.useRef(!1);
         if (o.useEffect(function() {
-                Object.keys(E).length > 0 ? u.current = !0 : u.current && (p == null || p(), u.current = !1)
+                Object.keys(E).length > 0 ? u.current = !0 : u.current && (A == null || A(), u.current = !1)
             }, [E]), !l) return null;
         var O = Object.keys(E);
-        return be.createPortal(o.createElement(o.Fragment, null, O.map(function(a) {
+        return pe.createPortal(o.createElement(o.Fragment, null, O.map(function(a) {
             var t = E[a],
                 n = o.createElement(we, {
                     key: a,
                     configList: t,
                     placement: a,
                     prefixCls: c,
-                    className: A == null ? void 0 : A(a),
-                    style: L == null ? void 0 : L(a),
+                    className: b == null ? void 0 : b(a),
+                    style: _ == null ? void 0 : _(a),
                     motion: N,
                     onNoticeClose: f,
                     onAllNoticeRemoved: x,
@@ -383,7 +383,7 @@ function Oe() {
     }), e
 }
 
-function Ke() {
+function je() {
     var e = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {},
         r = e.getContainer,
         d = r === void 0 ? De : r,
@@ -391,36 +391,36 @@ function Ke() {
         l = e.prefixCls,
         N = e.maxCount,
         C = e.className,
-        A = e.style,
-        L = e.onAllRemoved,
-        p = e.stack,
+        b = e.style,
+        _ = e.onAllRemoved,
+        A = e.stack,
         F = e.renderNotifications,
         D = Ne(e, Ie),
         m = o.useState(),
         g = w(m, 2),
-        P = g[0],
+        L = g[0],
         y = g[1],
         f = o.useRef(),
-        K = o.createElement(He, {
-            container: P,
+        j = o.createElement(He, {
+            container: L,
             ref: f,
             prefixCls: l,
             motion: c,
             maxCount: N,
             className: C,
-            style: A,
-            onAllRemoved: L,
-            stack: p,
+            style: b,
+            onAllRemoved: _,
+            stack: A,
             renderNotifications: F
         }),
         H = o.useState([]),
         E = w(H, 2),
         S = E[0],
         x = E[1],
-        u = _e(function(a) {
+        u = Pe(function(a) {
             var t = Oe(D, a);
             (t.key === null || t.key === void 0) && (t.key = "rc-notification-".concat(Ce), Ce += 1), x(function(n) {
-                return [].concat(V(n), [{
+                return [].concat(B(n), [{
                     type: "open",
                     config: t
                 }])
@@ -431,7 +431,7 @@ function Ke() {
                 open: u,
                 close: function(t) {
                     x(function(n) {
-                        return [].concat(V(n), [{
+                        return [].concat(B(n), [{
                             type: "close",
                             key: t
                         }])
@@ -439,7 +439,7 @@ function Ke() {
                 },
                 destroy: function() {
                     x(function(t) {
-                        return [].concat(V(t), [{
+                        return [].concat(B(t), [{
                             type: "destroy"
                         }])
                     })
@@ -470,9 +470,9 @@ function Ke() {
                 })), t
             })
         }
-    }, [S]), [O, K]
+    }, [S]), [O, j]
 }
-const je = U.createContext({});
+const Ke = U.createContext({});
 export {
-    je as A, Le as N, Fe as a, Ke as u
+    Ke as A, _e as N, Fe as a, je as u
 };

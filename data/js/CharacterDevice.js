@@ -83,11 +83,12 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 var h = (r => (r.interacted = "interacted", r))(h || {});
 const a = 34;
-class Gt extends v {
+class _t extends v {
     constructor(m) {
         super(m), this.onStateChange = t => {
             s() || t === "active" && (this.state.active ? (this.interactiveZones.setForceDisabled(!1), this.tweenAlpha(1)) : (this.interactiveZones.setForceDisabled(!0), this.tweenAlpha(0)))
@@ -160,6 +161,6 @@ class Gt extends v {
     }
 }
 export {
-    Gt as
+    _t as
     default
 };

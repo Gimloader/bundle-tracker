@@ -77,9 +77,10 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-class Ei extends s {
+class Fi extends s {
     constructor(r) {
         if (super(r), e() && a()) {
             const o = d.Zombies,
@@ -110,6 +111,6 @@ Invasion`
     }
 }
 export {
-    Ei as
+    Fi as
     default
 };

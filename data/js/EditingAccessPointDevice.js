@@ -72,9 +72,10 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-class Di extends p {
+class Ai extends p {
     constructor(t) {
         super(t), this.onDestroy = () => {
             i.editing.accessPoints.delete(this.id)
@@ -95,6 +96,6 @@ class Di extends p {
     }
 }
 export {
-    Di as
+    Ai as
     default
 };

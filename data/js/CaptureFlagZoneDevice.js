@@ -86,6 +86,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -97,7 +98,7 @@ const f = {
         imageId: e("devices/capture_flag_zone/icon.png"),
         imageUrl: e("devices/capture_flag_zone/icon.png")
     };
-class Ut extends g {
+class jt extends g {
     constructor(d) {
         if (super(d), this.onStateChange = t => {
                 if (t === "active") {
@@ -163,6 +164,6 @@ class Ut extends g {
     }
 }
 export {
-    Ut as
+    jt as
     default
 };

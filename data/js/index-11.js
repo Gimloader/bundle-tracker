@@ -1,21 +1,21 @@
 import {
-    ai as Q,
+    ai as J,
     aj as U,
-    aL as M,
+    aQ as M,
     ak as T,
-    ba as Y,
+    b7 as Y,
     x as Z,
     r as n,
-    al as L,
+    al as H,
     bW as ee,
     bV as re,
     cV as ae,
-    bH as H,
+    bH as L,
     am as j,
     d9 as oe,
     d3 as le,
-    aS as te,
-    aK as k
+    a$ as te,
+    b0 as k
 } from "./_index.js";
 import {
     u as ne,
@@ -204,7 +204,7 @@ function ce(e, r) {
     });
     return ie(o)
 }
-const q = Q("Checkbox", (e, {
+const q = J("Checkbox", (e, {
         prefixCls: r
     }) => [ce(r, e)]),
     F = Z.createContext(null);
@@ -232,7 +232,7 @@ const ue = (e, r) => {
             getPrefixCls: S,
             direction: R,
             checkbox: u
-        } = n.useContext(L), t = n.useContext(F), {
+        } = n.useContext(H), t = n.useContext(F), {
             isFormItemInput: O
         } = n.useContext(ee), w = n.useContext(re), h = (o = (t == null ? void 0 : t.disabled) || z) !== null && o !== void 0 ? o : w, p = n.useRef(i.value), g = n.useRef(null), P = ae(r, g);
         n.useEffect(() => {
@@ -244,7 +244,7 @@ const ue = (e, r) => {
             !((b = g.current) === null || b === void 0) && b.input && (g.current.input.indeterminate = x)
         }, [x]);
         const d = S("checkbox", l),
-            I = H(d),
+            I = L(d),
             [B, E, _] = q(d, I),
             f = Object.assign({}, i);
         t && !y && (f.onChange = (...b) => {
@@ -303,7 +303,7 @@ const pe = n.forwardRef((e, r) => {
         } = e, c = be(e, ["defaultValue", "children", "options", "prefixCls", "className", "rootClassName", "style", "onChange"]), {
             getPrefixCls: y,
             direction: z
-        } = n.useContext(L), [i, S] = n.useState(c.value || o || []), [R, u] = n.useState([]);
+        } = n.useContext(H), [i, S] = n.useState(c.value || o || []), [R, u] = n.useState([]);
         n.useEffect(() => {
             "value" in c && S(c.value || [])
         }, [c.value]);
@@ -322,13 +322,13 @@ const pe = n.forwardRef((e, r) => {
                     C = k(i);
                 m === -1 ? C.push(a.value) : C.splice(m, 1), "value" in c || S(C), $ == null || $(C.filter(b => R.includes(b)).sort((b, X) => {
                     const K = t.findIndex(G => G.value === b),
-                        J = t.findIndex(G => G.value === X);
-                    return K - J
+                        Q = t.findIndex(G => G.value === X);
+                    return K - Q
                 }))
             },
             p = y("checkbox", V),
             g = `${p}-group`,
-            P = H(p),
+            P = L(p),
             [d, I, B] = q(p, P),
             E = te(c, ["value", "disabled"]),
             _ = s.length ? t.map(a => n.createElement(W, {

@@ -1,95 +1,94 @@
 const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/NotionContent.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/NotionContent-Ctz5Og9E.css"]))) => i.map(i => d[i]);
 import {
-    r as s,
-    I as ie,
-    _ as le,
-    s as ce,
-    aW as je,
+    r as n,
+    I as H,
+    _ as V,
+    s as K,
+    aB as te,
     j as e,
-    p as we,
+    p as ne,
     d as m,
-    aq as be,
-    b as ye,
-    A as Ce,
-    U as R,
-    F as z,
-    C as S,
-    E as O,
-    cm as I,
-    B as D,
-    w as ke,
-    u as _,
-    a as de,
-    i as y,
-    t as Se,
-    M as Ne,
-    D as Ie,
-    m as he,
-    o as x,
-    aZ as Ae,
-    af as Me,
-    ad as Oe,
-    a1 as $,
-    f as De,
-    cn as Le,
-    l as T,
-    co as W,
-    aT as $e,
-    cp as _e,
-    cq as Ee,
-    cr as Pe,
-    cb as ue,
-    a5 as Be,
-    a3 as Fe
+    aq as se,
+    b as re,
+    A as ae,
+    U as F,
+    F as P,
+    C as k,
+    E as N,
+    cm as C,
+    B as A,
+    w as oe,
+    u as $,
+    a as q,
+    i as j,
+    t as ie,
+    M as le,
+    D as ce,
+    m as de,
+    o as ue,
+    af as me,
+    ad as he,
+    a1 as O,
+    f as fe,
+    cn as T,
+    az as ge,
+    co as xe,
+    l as pe,
+    aA as ve,
+    cp as je,
+    cq as we,
+    cb as J,
+    a5 as be,
+    a3 as ke
 } from "./_index.js";
 import {
-    d as me,
-    u as Re,
-    C as ze,
-    a as C,
-    S as B
+    d as Y,
+    u as ye,
+    C as Ce,
+    a as w,
+    S as _
 } from "./Shortcut.js";
 import {
-    o as ge
+    o as R
 } from "./mobxreact.esm.js";
 import {
-    A as fe
+    A as Q
 } from "./AccessibleAnchor.js";
 import {
-    b as U
+    b as W
 } from "./index-1.js";
 import {
-    S as F
+    S as z
 } from "./index-2.js";
 import {
-    D as Te
+    D as Se
 } from "./index-6.js";
 import {
-    F as f
+    F as g
 } from "./FontAwesomeIcon.js";
 import {
-    U as We
+    U as Ie
 } from "./App-2.js";
 import {
-    N as M
+    N as I
 } from "./NavigateTo.js";
 import {
-    a as Ue
+    a as Ne
 } from "./index-15.js";
 import {
-    C as Ge
+    C as Ae
 } from "./colors.js";
 import {
-    n as He
+    n as Le
 } from "./motion.js";
 import {
-    u as Ve
+    u as Oe
 } from "./useWarningOnMountInDevelopment.js";
 import {
-    M as G,
-    D as Ke
+    M as B,
+    D as $e
 } from "./index-10.js";
-var qe = {
+var Me = {
         icon: {
             tag: "svg",
             attrs: {
@@ -113,14 +112,14 @@ var qe = {
         name: "login",
         theme: "outlined"
     },
-    Je = function(n, a) {
-        return s.createElement(ie, le({}, n, {
+    Ee = function(s, a) {
+        return n.createElement(H, V({}, s, {
             ref: a,
-            icon: qe
+            icon: Me
         }))
     },
-    Ye = s.forwardRef(Je),
-    Ze = {
+    _e = n.forwardRef(Ee),
+    ze = {
         icon: {
             tag: "svg",
             attrs: {
@@ -137,65 +136,65 @@ var qe = {
         name: "menu",
         theme: "outlined"
     },
-    Qe = function(n, a) {
-        return s.createElement(ie, le({}, n, {
+    Fe = function(s, a) {
+        return n.createElement(H, V({}, s, {
             ref: a,
-            icon: Ze
+            icon: ze
         }))
     },
-    Xe = s.forwardRef(Qe);
+    Pe = n.forwardRef(Fe);
 
-function et(t, n) {
-    var a = s.useState(g()),
+function Re(t, s) {
+    var a = n.useState(f()),
         o = a[0],
-        l = a[1];
-    Ve();
+        h = a[1];
+    Oe();
 
-    function h() {
-        var c = g();
-        (c === null || c === "null") && i(n)
+    function d() {
+        var l = f();
+        (l === null || l === "null") && i(s)
     }
 
-    function g() {
+    function f() {
         if (typeof localStorage > "u") return null;
-        var c = localStorage.getItem(t) || "null";
+        var l = localStorage.getItem(t) || "null";
         try {
-            return JSON.parse(c)
-        } catch (j) {
-            console.error(j)
+            return JSON.parse(l)
+        } catch (x) {
+            console.error(x)
         }
-        return c
+        return l
     }
 
-    function d(c) {
-        return typeof localStorage > "u" ? null : localStorage.setItem(t, JSON.stringify(c))
+    function c(l) {
+        return typeof localStorage > "u" ? null : localStorage.setItem(t, JSON.stringify(l))
     }
-    var i = s.useCallback(function(c) {
-            l(c), d(c)
+    var i = n.useCallback(function(l) {
+            h(l), c(l)
         }, []),
-        r = s.useCallback(function(c) {
-            c.storageArea === localStorage && c.key === t && l(c.newValue)
+        r = n.useCallback(function(l) {
+            l.storageArea === localStorage && l.key === t && h(l.newValue)
         }, []),
-        u = s.useCallback(function() {
+        u = n.useCallback(function() {
             if (i(null), typeof localStorage > "u") return !1;
             localStorage.removeItem(t)
         }, [t]);
-    s.useEffect(function() {
-        h()
-    }, []), s.useEffect(function() {
+    n.useEffect(function() {
+        d()
+    }, []), n.useEffect(function() {
         return typeof window < "u" ? (window.addEventListener("storage", r), function() {
             window.removeEventListener("storage", r)
-        }) : (console.warn("useLocalstorage: window is undefined."), He)
+        }) : (console.warn("useLocalstorage: window is undefined."), Le)
     }, []);
-    var w = Object.assign([o, i, u], {
+    var p = Object.assign([o, i, u], {
         value: o,
         remove: u,
         set: i
     });
-    return w
+    return p
 }
-const H = Ue(() => we(() => import("./NotionContent.js"), __vite__mapDeps([0, 1, 2, 3]))),
-    V = () => e.jsx(Ce, {
+const U = Ne(() => ne(() => import("./NotionContent.js"), __vite__mapDeps([0, 1, 2, 3]))),
+    D = () => e.jsx(ae, {
         active: !0,
         title: !1,
         paragraph: {
@@ -205,101 +204,101 @@ const H = Ue(() => we(() => import("./NotionContent.js"), __vite__mapDeps([0, 1,
             padding: 20
         }
     }),
-    K = t => {
-        const [n, a] = s.useState(), {
+    G = t => {
+        const [s, a] = n.useState(), {
             item: {
                 notionPageId: o,
-                publishDate: l
+                publishDate: h
             }
         } = t;
-        ce(() => {
-            H.preload()
-        }), s.useEffect(() => {
-            !n && o && je({
+        K(() => {
+            U.preload()
+        }), n.useEffect(() => {
+            !s && o && te({
                 url: `/api/content/${o}`,
                 cacheKey: "NOTION_CONTENT",
-                success: d => a(d)
+                success: c => a(c)
             })
-        }, [o, n]);
-        const h = () => {
-                var c, j, L, b, A, k;
-                const d = o.replace(/-/g, ""),
-                    i = Object.keys(n == null ? void 0 : n.block).find(ve => ve.replace(/-/g, "") === d);
+        }, [o, s]);
+        const d = () => {
+                var l, x, L, v, S, b;
+                const c = o.replace(/-/g, ""),
+                    i = Object.keys(s == null ? void 0 : s.block).find(ee => ee.replace(/-/g, "") === c);
                 if (!i) return {
                     title: "",
                     coverImage: null
                 };
-                const r = (j = (c = n == null ? void 0 : n.block[i]) == null ? void 0 : c.value) == null ? void 0 : j.value;
+                const r = (x = (l = s == null ? void 0 : s.block[i]) == null ? void 0 : l.value) == null ? void 0 : x.value;
                 console.log(r);
-                const u = ((A = (b = (L = r == null ? void 0 : r.properties) == null ? void 0 : L.title) == null ? void 0 : b[0]) == null ? void 0 : A[0]) ?? null,
-                    w = ((k = r == null ? void 0 : r.format) == null ? void 0 : k.page_cover) ?? null;
+                const u = ((S = (v = (L = r == null ? void 0 : r.properties) == null ? void 0 : L.title) == null ? void 0 : v[0]) == null ? void 0 : S[0]) ?? null,
+                    p = ((b = r == null ? void 0 : r.format) == null ? void 0 : b.page_cover) ?? null;
                 return {
                     title: u,
-                    coverImage: w
+                    coverImage: p
                 }
             },
-            g = () => {
-                if (!n) return e.jsx(V, {});
+            f = () => {
+                if (!s) return e.jsx(D, {});
                 const {
-                    title: d,
+                    title: c,
                     coverImage: i
-                } = h();
-                return e.jsxs(s.Suspense, {
-                    fallback: e.jsx(V, {}),
-                    children: [i ? e.jsx(nt, {
+                } = d();
+                return e.jsxs(n.Suspense, {
+                    fallback: e.jsx(D, {}),
+                    children: [i ? e.jsx(We, {
                         draggable: !1,
                         src: i
-                    }) : null, e.jsxs(st, {
-                        children: [e.jsxs(at, {
+                    }) : null, e.jsxs(Be, {
+                        children: [e.jsxs(Ue, {
                             style: {
                                 marginTop: t.isFirstItem && !i ? 30 : 0
                             },
-                            children: [e.jsx(rt, {
-                                children: d
-                            }), e.jsxs(ot, {
-                                children: [e.jsx(f, {
+                            children: [e.jsx(De, {
+                                children: c
+                            }), e.jsxs(Ge, {
+                                children: [e.jsx(g, {
                                     name: "far fa-calendar-alt",
                                     style: {
                                         fontSize: "0.8em",
                                         marginRight: 5
                                     }
-                                }), be(ye.unix(l).fromNow())]
+                                }), se(re.unix(h).fromNow())]
                             })]
-                        }), e.jsx(H, {
-                            content: n
+                        }), e.jsx(U, {
+                            content: s
                         })]
                     })]
                 })
             };
-        return e.jsx(tt, {
-            children: g()
+        return e.jsx(Te, {
+            children: f()
         })
     },
-    tt = m.div.attrs({
+    Te = m.div.attrs({
         className: "maxWidth"
     })``,
-    nt = m.img.attrs({
+    We = m.img.attrs({
         className: "maxWidth"
     })`
   margin-bottom: 25px;
 `,
-    st = m.div.attrs({
+    Be = m.div.attrs({
         className: "maxWidth"
     })`
   padding: 0px 20px;
-  font-family: ${R.SFPro};
+  font-family: ${F.SFPro};
 `,
-    at = m.div.attrs({
+    Ue = m.div.attrs({
         className: "maxWidth flex between vc"
     })`
   line-height: 1;
   margin-bottom: 20px;
 `,
-    rt = m.div`
+    De = m.div`
   font-size: 28px;
-  font-weight: ${z.Bold};
+  font-weight: ${P.Bold};
 `,
-    ot = m.div.attrs({
+    Ge = m.div.attrs({
         className: "flex vc"
     })`
   color: rgba(0, 0, 0, 0.8);
@@ -307,64 +306,64 @@ const H = Ue(() => we(() => import("./NotionContent.js"), __vite__mapDeps([0, 1,
   font-size: 12px;
   flex-shrink: 0;
 `,
-    it = t => e.jsxs(lt, {
-        children: [e.jsxs(ct, {
-            children: [e.jsxs(dt, {
-                children: [S, " News"]
-            }), e.jsxs(ht, {
-                children: ["Your source for all things ", S, "!"]
+    He = t => e.jsxs(Ve, {
+        children: [e.jsxs(Ke, {
+            children: [e.jsxs(qe, {
+                children: [k, " News"]
+            }), e.jsxs(Je, {
+                children: ["Your source for all things ", k, "!"]
             })]
         }), e.jsx("div", {
-            children: e.jsx(O, {
+            children: e.jsx(N, {
                 theme: {
-                    algorithm: I.darkAlgorithm
+                    algorithm: C.darkAlgorithm
                 },
-                children: e.jsx(D, {
+                children: e.jsx(A, {
                     onClick: t.close,
                     type: "text",
-                    icon: e.jsx(ke, {})
+                    icon: e.jsx(oe, {})
                 })
             })
         })]
     }),
-    lt = m.div.attrs({
+    Ve = m.div.attrs({
         className: "maxWidth flex vc between"
     })`
-  color: ${Ge.White};
+  color: ${Ae.White};
   padding: 20px;
   background: #730aad;
 `,
-    ct = m.div``,
-    dt = m.div`
+    Ke = m.div``,
+    qe = m.div`
   font-size: 16px;
-  font-weight: ${z.Bold};
+  font-weight: ${P.Bold};
 `,
-    ht = m.div`
+    Je = m.div`
   font-size: 12px;
   font-style: italic;
   opacity: 0.9;
 `,
-    ut = t => {
-        const [n, a] = s.useState(!0), [o, l] = s.useState([]), [h, g] = et("last-viewed-news", 0), [d, i] = s.useState(!1), [r, u, w] = _(!0), c = s.useCallback(() => {
+    Ye = t => {
+        const [s, a] = n.useState(!0), [o, h] = n.useState([]), [d, f] = Re("last-viewed-news", 0), [c, i] = n.useState(!1), [r, u, p] = $(!0), l = n.useCallback(() => {
             i(!0)
-        }, [i]), j = s.useCallback(() => {
+        }, [i]), x = n.useCallback(() => {
             i(!1), t.onClose && t.onClose()
         }, [i, t.onClose]);
-        if (ce(() => {
-                de({
+        if (K(() => {
+                q({
                     url: "/api/news/fetch",
                     data: {
-                        isStudent: y()
+                        isStudent: j()
                     },
-                    success: b => {
-                        l(b);
-                        const A = h ?? 0,
-                            k = b[0];
-                        k && (k && k.publishDate > A && t.allowAutoOpen && c(), g(k.publishDate))
+                    success: v => {
+                        h(v);
+                        const S = d ?? 0,
+                            b = v[0];
+                        b && (b && b.publishDate > S && t.allowAutoOpen && l(), f(b.publishDate))
                     },
-                    error: b => {
-                        t.open && Se({
-                            e: b,
+                    error: v => {
+                        t.open && ie({
+                            e: v,
                             default: {
                                 title: "Error loading news"
                             }
@@ -374,14 +373,14 @@ const H = Ue(() => we(() => import("./NotionContent.js"), __vite__mapDeps([0, 1,
                         a(!1)
                     }
                 })
-            }), s.useEffect(() => {
-                t.open && c()
-            }, [t.open]), n) return null;
+            }), n.useEffect(() => {
+                t.open && l()
+            }, [t.open]), s) return null;
         const L = () => o.length ? o.length !== 1 && r ? e.jsxs("div", {
             style: {
                 paddingBottom: 35
             },
-            children: [e.jsx(K, {
+            children: [e.jsx(G, {
                 item: o[0],
                 isFirstItem: !0
             }), e.jsx("div", {
@@ -389,29 +388,29 @@ const H = Ue(() => we(() => import("./NotionContent.js"), __vite__mapDeps([0, 1,
                 style: {
                     marginTop: 30
                 },
-                children: e.jsx(D, {
+                children: e.jsx(A, {
                     shape: "round",
-                    onClick: w,
+                    onClick: p,
                     children: "View more news..."
                 })
             })]
         }) : e.jsx(e.Fragment, {
-            children: e.jsx(F, {
+            children: e.jsx(z, {
                 className: "maxWidth",
                 size: 30,
                 direction: "vertical",
                 style: {
                     paddingBottom: 35
                 },
-                split: e.jsx(Ie, {
+                split: e.jsx(ce, {
                     style: {
                         margin: 0
                     }
                 }),
-                children: o.map((b, A) => e.jsx(K, {
-                    item: b,
-                    isFirstItem: A === 0
-                }, b._id))
+                children: o.map((v, S) => e.jsx(G, {
+                    item: v,
+                    isFirstItem: S === 0
+                }, v._id))
             })
         }) : e.jsx(e.Fragment, {
             children: e.jsx("div", {
@@ -424,13 +423,13 @@ const H = Ue(() => we(() => import("./NotionContent.js"), __vite__mapDeps([0, 1,
                 children: "There currently is no news. Check back again later!"
             })
         });
-        return e.jsx(O, {
+        return e.jsx(N, {
             theme: {
-                algorithm: I.defaultAlgorithm
+                algorithm: C.defaultAlgorithm
             },
-            children: e.jsxs(Ne, {
-                open: d,
-                onCancel: j,
+            children: e.jsxs(le, {
+                open: c,
+                onCancel: x,
                 closable: !1,
                 footer: null,
                 width: 650,
@@ -449,177 +448,135 @@ const H = Ue(() => we(() => import("./NotionContent.js"), __vite__mapDeps([0, 1,
                     padding: 0,
                     marginBottom: 100
                 },
-                children: [e.jsx(it, {
-                    close: j
+                children: [e.jsx(He, {
+                    close: x
                 }), L()]
             })
         })
     };
-var E = (t => (t.accountInformation = "accountInformation", t.gameSettings = "game-settings", t.billing = "billing", t.support = "support", t))(E || {}),
-    mt = Object.defineProperty,
-    gt = (t, n, a, o) => {
-        for (var l = void 0, h = t.length - 1, g; h >= 0; h--)(g = t[h]) && (l = g(n, a, l) || l);
-        return l && mt(n, a, l), l
+var M = (t => (t.profile = "profile", t.account = "account", t.gameSettings = "game-settings", t.billing = "billing", t.support = "support", t))(M || {}),
+    Qe = Object.defineProperty,
+    Xe = (t, s, a, o) => {
+        for (var h = void 0, d = t.length - 1, f; d >= 0; d--)(f = t[d]) && (h = f(s, a, h) || h);
+        return h && Qe(s, a, h), h
     };
-class xe {
+class X {
     constructor() {
-        this.currentTab = E.accountInformation, he(this)
+        this.currentTab = M.profile, de(this)
     }
 }
-gt([x], xe.prototype, "currentTab");
-var ft = Object.defineProperty,
-    v = (t, n, a, o) => {
-        for (var l = void 0, h = t.length - 1, g; h >= 0; h--)(g = t[h]) && (l = g(n, a, l) || l);
-        return l && ft(n, a, l), l
-    };
-const q = "",
-    J = "",
-    Y = "",
-    Z = !1,
-    Q = "",
-    X = "",
-    ee = 0,
-    xt = x.array(),
-    te = "",
-    ne = "",
-    se = "",
-    ae = !1,
-    re = "",
-    oe = "";
-class p {
-    constructor() {
-        this.planName = q, this.planDescription = J, this.billingInterval = Y, this.hasNextCharge = Z, this.nextChargeAmount = Q, this.nextChargeDate = X, this.accountBalance = ee, this.charges = xt, this.cardName = te, this.last4DigitsOfCard = ne, this.stripePublicKey = se, this.canDowngrade = ae, this.downgradeMessage = re, this.downgradeDateMessage = oe, this.reset = () => {
-            this.planName = q, this.planDescription = J, this.billingInterval = Y, this.hasNextCharge = Z, this.nextChargeAmount = Q, this.nextChargeDate = X, this.accountBalance = ee, this.charges.replace([]), this.cardName = te, this.last4DigitsOfCard = ne, this.stripePublicKey = se, this.canDowngrade = ae, this.downgradeMessage = re, this.downgradeDateMessage = oe
-        }, he(this)
-    }
-}
-v([x], p.prototype, "planName");
-v([x], p.prototype, "planDescription");
-v([x], p.prototype, "billingInterval");
-v([x], p.prototype, "hasNextCharge");
-v([x], p.prototype, "nextChargeAmount");
-v([x], p.prototype, "nextChargeDate");
-v([x], p.prototype, "accountBalance");
-v([x], p.prototype, "charges");
-v([x], p.prototype, "cardName");
-v([x], p.prototype, "last4DigitsOfCard");
-v([x], p.prototype, "stripePublicKey");
-v([x], p.prototype, "canDowngrade");
-v([x], p.prototype, "downgradeMessage");
-v([x], p.prototype, "downgradeDateMessage");
-v([Ae], p.prototype, "reset");
-const P = {
-        navigation: new xe,
-        billing: new p
+Xe([ue], X.prototype, "currentTab");
+const E = {
+        navigation: new X
     },
-    pt = s.createContext(P),
-    pe = t => {
+    Ze = n.createContext(E),
+    Z = t => {
         const {
-            width: n
-        } = me.useWindowSize(), [a, o, l] = _(!1), [h, g] = s.useState(!1), [d, i] = s.useState(null), r = s.useRef(), [u] = U(r), w = s.useRef(), [c] = U(w);
-        return s.useEffect(() => {
-            (!n || !u ? !1 : !c) && (!d || n > d) && i(n)
-        }, [n, d, u, c]), s.useEffect(() => {
-            if (d && n <= d) {
-                g(!0);
+            width: s
+        } = Y.useWindowSize(), [a, o, h] = $(!1), [d, f] = n.useState(!1), [c, i] = n.useState(null), r = n.useRef(), [u] = W(r), p = n.useRef(), [l] = W(p);
+        return n.useEffect(() => {
+            (!s || !u ? !1 : !l) && (!c || s > c) && i(s)
+        }, [s, c, u, l]), n.useEffect(() => {
+            if (c && s <= c) {
+                f(!0);
                 return
             }
-            g(!1)
-        }, [n, d]), e.jsx(O, {
+            f(!1)
+        }, [s, c]), e.jsx(N, {
             theme: {
                 token: {
                     borderRadius: 50
                 }
             },
-            children: e.jsxs(vt, {
+            children: e.jsxs(et, {
                 ref: r,
                 children: [e.jsx("div", {
-                    ref: w,
+                    ref: p,
                     style: {
                         flex: 1
                     }
-                }), h ? e.jsx("div", {
+                }), d ? e.jsx("div", {
                     style: {
                         flexShrink: 0
                     },
-                    children: e.jsx(D, {
+                    children: e.jsx(A, {
                         onClick: o,
                         type: "text",
-                        icon: e.jsx(Xe, {})
+                        icon: e.jsx(Pe, {})
                     })
-                }) : e.jsx(jt, {
+                }) : e.jsx(tt, {
                     style: {
-                        opacity: c ? 1 : 0
+                        opacity: l ? 1 : 0
                     },
-                    children: e.jsx(F, {
+                    children: e.jsx(z, {
                         size: 10,
                         direction: "horizontal",
-                        children: t.items.map(j => e.jsx(s.Fragment, {
-                            children: j.item(h)
-                        }, j.key))
+                        children: t.items.map(x => e.jsx(n.Fragment, {
+                            children: x.item(d)
+                        }, x.key))
                     })
-                }), h ? e.jsx(Te, {
+                }), d ? e.jsx(Se, {
                     placement: "right",
                     open: a,
-                    onClose: l,
-                    children: e.jsx(F, {
+                    onClose: h,
+                    children: e.jsx(z, {
                         size: 12,
                         direction: "vertical",
                         className: "maxWidth",
-                        children: t.items.map(j => e.jsx(s.Fragment, {
+                        children: t.items.map(x => e.jsx(n.Fragment, {
                             children: e.jsx("div", {
                                 className: "maxAll flex-center",
-                                children: j.item(h)
+                                children: x.item(d)
                             })
-                        }, j.key))
+                        }, x.key))
                     })
                 }) : null]
             })
         })
     },
-    vt = m.div`
+    et = m.div`
   flex: 1;
   overflow: hidden;
   display: flex;
 `,
-    jt = m.div`
+    tt = m.div`
   flex-shrink: 0;
 `,
-    N = t => e.jsx(fe, {
+    y = t => e.jsx(Q, {
         to: t.path,
         onClick: t.onClick,
         className: "maxWidth",
-        children: e.jsx(D, {
+        children: e.jsx(A, {
             type: "dashed",
             icon: t.icon,
             block: t.block,
             children: t.children
         })
     }),
-    wt = ge(() => {
+    nt = R(() => {
         const t = () => {
                 let o = "/login";
                 return window && window.location && window.location.pathname && window.location.pathname.startsWith("/view") && (o += `?location=${encodeURIComponent(window.location.pathname)}`), o
             },
-            n = Re("(max-width: 850px)"),
+            s = ye("(max-width: 850px)"),
             a = [];
         return a.push({
             key: "join",
-            item: o => e.jsx(N, {
+            item: o => e.jsx(y, {
                 onClick: () => {
                     window.open("/join", "_self")
                 },
-                icon: e.jsx(f, {
+                icon: e.jsx(g, {
                     name: "far fa-gamepad"
                 }),
                 block: o,
                 children: "Join Game"
             })
-        }), n || a.push({
+        }), s || a.push({
             key: "pricing",
-            item: o => e.jsx(N, {
-                path: Me,
-                icon: e.jsx(f, {
+            item: o => e.jsx(y, {
+                path: me,
+                icon: e.jsx(g, {
                     name: "far fa-users"
                 }),
                 block: o,
@@ -627,9 +584,9 @@ const P = {
             })
         }), a.push({
             key: "signup",
-            item: o => e.jsx(N, {
-                path: Oe,
-                icon: e.jsx(f, {
+            item: o => e.jsx(y, {
+                path: he,
+                icon: e.jsx(g, {
                     name: "far fa-user-plus"
                 }),
                 block: o,
@@ -637,114 +594,108 @@ const P = {
             })
         }), a.push({
             key: "login",
-            item: o => e.jsx(fe, {
+            item: o => e.jsx(Q, {
                 to: t(),
                 className: "maxAll",
-                children: e.jsx(D, {
+                children: e.jsx(A, {
                     type: "primary",
                     size: "large",
-                    icon: e.jsx(Ye, {}),
+                    icon: e.jsx(_e, {}),
                     block: o,
                     children: "Login"
                 })
             })
-        }), e.jsx(pe, {
+        }), e.jsx(Z, {
             items: a
         })
     }),
-    bt = () => e.jsx("div", {
+    st = () => e.jsx("div", {
         style: {
             height: "var(--header-height)",
             flexShrink: 0,
             width: "100%"
         }
     }),
-    yt = t => t === $.pro ? `${S} Pro` : t === $.go ? `${S} Go` : t === $.proPass ? `${S} Pro (Monthly)` : t === $.basic ? `${S} Basic` : `Unknown ${S} Plan`,
-    Ct = t => {
-        const [n, a, o] = _(!1), [l, h] = _(!1), g = De(), d = [], i = s.useMemo(() => () => {
+    rt = t => t === O.pro ? `${k} Pro` : t === O.go ? `${k} Go` : t === O.proPass ? `${k} Pro (Monthly)` : t === O.basic ? `${k} Basic` : `Unknown ${k} Plan`,
+    at = t => {
+        const [s, a, o] = $(!1), [h, d] = $(!1), f = fe(), c = [], i = n.useMemo(() => () => {
             const r = [{
                 name: "Settings",
-                icon: () => e.jsx(f, {
+                icon: () => e.jsx(g, {
                     name: "far fa-cog"
                 }),
-                onClick: () => M("/settings")
+                onClick: () => I("/settings")
             }, {
                 name: "Creative",
-                onClick: () => M(W),
-                icon: () => e.jsx(f, {
+                onClick: () => I(T),
+                icon: () => e.jsx(g, {
                     name: "far fa-ruler"
                 }),
-                blockIf: [y]
+                blockIf: [j]
             }, {
                 name: "Billing",
-                icon: () => e.jsx(f, {
+                icon: () => e.jsx(g, {
                     name: "far fa-credit-card"
                 }),
                 onClick: () => {
-                    P.navigation.currentTab = E.billing, M("/settings")
+                    E.navigation.currentTab = M.billing, I("/settings")
                 },
-                blockIf: [y]
+                blockIf: [j]
             }, {
                 name: "News",
-                icon: () => e.jsx(f, {
+                icon: () => e.jsx(g, {
                     name: "far fa-newspaper"
                 }),
                 onClick: () => {
-                    a(), h()
+                    a(), d()
                 }
             }, {
                 name: "Group Licenses",
-                icon: () => e.jsx(f, {
+                icon: () => e.jsx(g, {
                     name: "far fa-users"
                 }),
-                onClick: () => M($e),
-                blockIf: [y]
+                onClick: () => I(ge),
+                blockIf: [j]
             }, {
                 name: "GiveKit",
-                icon: () => e.jsx(f, {
+                icon: () => e.jsx(g, {
                     name: "far fa-heart"
                 }),
-                onClick: () => M(_e),
-                blockIf: [y]
+                onClick: () => I(xe),
+                blockIf: [j]
             }, {
                 name: "Support",
-                icon: () => e.jsx(f, {
+                icon: () => e.jsx(g, {
                     name: "far fa-question-circle"
                 }),
                 onClick: () => {
-                    P.navigation.currentTab = E.support, M("/settings")
+                    E.navigation.currentTab = M.support, I("/settings")
                 },
-                blockIf: [y]
+                blockIf: [j]
             }, {
                 name: "Logout",
-                icon: () => e.jsx(f, {
+                icon: () => e.jsx(g, {
                     name: "far fa-sign-out-alt"
                 }),
-                onClick: () => de({
+                onClick: () => q({
                     url: "/logout",
                     success: () => {},
                     both: () => window.open("/", "_self")
                 })
             }];
             return e.jsx(e.Fragment, {
-                children: e.jsxs(G, {
+                children: e.jsxs(B, {
                     style: {
                         width: 250
                     },
-                    children: [y() ? null : e.jsxs(kt, {
-                        children: [e.jsx(St, {
-                            children: Le(T())
-                        }), e.jsx(Nt, {
-                            children: yt(T().type)
-                        })]
-                    }), r.filter(u => u.blockIf ? !u.blockIf.some(w => w()) : !0).map(u => e.jsx(G.Item, {
+                    children: [e.jsx(ot, {}), r.filter(u => u.blockIf ? !u.blockIf.some(p => p()) : !0).map(u => e.jsx(B.Item, {
                         onClick: u.onClick,
                         children: e.jsxs("div", {
                             className: "flex vc",
                             style: {
                                 textAlign: "center"
                             },
-                            children: [s.createElement(u.icon), e.jsx("div", {
+                            children: [n.createElement(u.icon), e.jsx("div", {
                                 style: {
                                     marginLeft: 7
                                 },
@@ -755,53 +706,53 @@ const P = {
                 })
             })
         }, [a]);
-        return d.push({
+        return c.push({
             key: "gallery",
-            item: r => e.jsx(N, {
-                path: Ee,
-                icon: e.jsx(f, {
+            item: r => e.jsx(y, {
+                path: je,
+                icon: e.jsx(g, {
                     name: "far fa-search"
                 }),
                 block: r,
                 children: "Discovery"
             })
-        }), y() && d.push({
+        }), j() && c.push({
             key: "creative",
-            item: r => e.jsx(N, {
-                path: W,
-                icon: e.jsx(f, {
+            item: r => e.jsx(y, {
+                path: T,
+                icon: e.jsx(g, {
                     name: "far fa-ruler"
                 }),
                 block: r,
                 children: "Creative"
             })
-        }), d.push({
+        }), c.push({
             key: "rewards",
-            item: r => e.jsx(N, {
-                path: Pe,
-                icon: e.jsx(f, {
+            item: r => e.jsx(y, {
+                path: we,
+                icon: e.jsx(g, {
                     name: "far fa-coins"
                 }),
                 block: r,
-                children: ze.name
+                children: Ce.name
             })
-        }), d.push({
+        }), c.push({
             key: "me",
-            item: r => e.jsx(O, {
+            item: r => e.jsx(N, {
                 theme: {
-                    algorithm: I.defaultAlgorithm
+                    algorithm: C.defaultAlgorithm
                 },
-                children: e.jsx(Ke, {
+                children: e.jsx($e, {
                     trigger: ["click"],
                     overlay: i,
                     children: e.jsx("div", {
                         className: "maxWidth",
-                        children: e.jsx(O, {
+                        children: e.jsx(N, {
                             theme: {
-                                algorithm: t.theme === C.dark ? I.darkAlgorithm : I.defaultAlgorithm
+                                algorithm: t.theme === w.dark ? C.darkAlgorithm : C.defaultAlgorithm
                             },
-                            children: e.jsx(N, {
-                                icon: e.jsx(f, {
+                            children: e.jsx(y, {
+                                icon: e.jsx(g, {
                                     name: "far fa-user"
                                 }),
                                 block: r,
@@ -811,11 +762,11 @@ const P = {
                     })
                 })
             })
-        }), !g && !y() && d.push({
+        }), !f && !j() && c.push({
             key: "upgrade",
             item: r => e.jsx("div", {
                 className: "maxAll",
-                children: e.jsx(D, {
+                children: e.jsx(A, {
                     size: "large",
                     type: "primary",
                     onClick: t.showUpgradeModal,
@@ -824,110 +775,120 @@ const P = {
                 })
             })
         }), e.jsxs(e.Fragment, {
-            children: [e.jsx(pe, {
-                items: d
-            }), e.jsx(s.Suspense, {
+            children: [e.jsx(Z, {
+                items: c
+            }), e.jsx(n.Suspense, {
                 fallback: null,
-                children: l ? e.jsx(ut, {
-                    open: n,
+                children: h ? e.jsx(Ye, {
+                    open: s,
                     onClose: o
                 }) : null
             })]
         })
     },
-    kt = m.div`
+    ot = R(() => {
+        const t = pe();
+        return !t || j() && !t.username ? null : e.jsxs(it, {
+            children: [e.jsx(lt, {
+                children: ve(t)
+            }), j() ? null : e.jsx(ct, {
+                children: rt(t.type)
+            })]
+        })
+    }),
+    it = m.div`
   background: rgb(232, 232, 232);
   margin: 6px 12px;
   padding: 14px;
   border-radius: 4px;
-  font-family: ${R.SFPro};
+  font-family: ${F.SFPro};
   color: rgba(0, 0, 0, 0.8);
 `,
-    St = m.div`
+    lt = m.div`
   font-size: 18px;
-  font-weight: ${z.Bold};
+  font-weight: ${P.Bold};
 `,
-    Nt = m.div`
+    ct = m.div`
   font-size: 12px;
 `,
-    It = "/client/img/svgLogo.svg",
-    At = "/client/img/svgLogoWhite.svg",
-    Mt = ge(t => {
+    dt = "/client/img/svgLogo.svg",
+    ut = "/client/img/svgLogoWhite.svg",
+    mt = R(t => {
         const {
             navigation: {
-                homeUrl: n
+                homeUrl: s
             }
-        } = s.useContext(ue), a = t.theme === C.dark ? At : It;
-        return e.jsx(Ot, {
-            to: n,
-            children: e.jsx(Dt, {
+        } = n.useContext(J), a = t.theme === w.dark ? ut : dt;
+        return e.jsx(ht, {
+            to: s,
+            children: e.jsx(ft, {
                 src: a
             }, a)
         })
     }),
-    Ot = m(Be)``,
-    Dt = m.img.attrs({
+    ht = m(be)``,
+    ft = m.img.attrs({
         alt: "Gimkit Logo"
     })`
   height: 32px;
   margin-right: 90px;
 `,
-    Lt = t => {
-        const [n, a] = s.useState(!1), {
+    gt = t => {
+        const [s, a] = n.useState(!1), {
             navigation: o
-        } = s.useContext(ue), {
-            ref: l,
-            height: h
-        } = me.useComponentSize();
-        s.useEffect(() => {
-            document.documentElement.style.setProperty("--header-height", `${h}px`), o.headerHeight = h
-        }, [h]);
-        const g = () => a(!0),
-            d = () => a(!1),
-            i = s.useMemo(() => t.theme ?? C.light, [t.theme]),
-            r = s.useMemo(() => t.alpha ?? B.standard, [t.alpha]),
-            u = s.useMemo(() => r === B.none ? 1 : r === B.darker ? i === C.light ? .9 : .75 : i === C.light ? .85 : .45, [r, i]),
-            w = s.useMemo(() => i === C.light ? `rgba(255, 255, 255, ${u})` : `rgba(16,16,16, ${u})`, [i, r]),
-            c = s.useMemo(() => i === C.light ? "rgb(235, 238, 241)" : "rgb(143 143 143 / 60%)", [i, u]);
+        } = n.useContext(J), {
+            ref: h,
+            height: d
+        } = Y.useComponentSize();
+        n.useEffect(() => {
+            document.documentElement.style.setProperty("--header-height", `${d}px`), o.headerHeight = d
+        }, [d]);
+        const f = () => a(!0),
+            c = () => a(!1),
+            i = n.useMemo(() => t.theme ?? w.light, [t.theme]),
+            r = n.useMemo(() => t.alpha ?? _.standard, [t.alpha]),
+            u = n.useMemo(() => r === _.none ? 1 : r === _.darker ? i === w.light ? .9 : .75 : i === w.light ? .85 : .45, [r, i]),
+            p = n.useMemo(() => i === w.light ? `rgba(255, 255, 255, ${u})` : `rgba(16,16,16, ${u})`, [i, r]),
+            l = n.useMemo(() => i === w.light ? "rgb(235, 238, 241)" : "rgb(143 143 143 / 60%)", [i, u]);
         return e.jsx(e.Fragment, {
-            children: e.jsxs(O, {
+            children: e.jsxs(N, {
                 theme: {
-                    algorithm: i === C.light ? I.defaultAlgorithm : I.darkAlgorithm,
+                    algorithm: i === w.light ? C.defaultAlgorithm : C.darkAlgorithm,
                     token: {
-                        fontFamily: R.SFPro
+                        fontFamily: F.SFPro
                     }
                 },
-                children: [e.jsxs($t, {
-                    ref: l,
+                children: [e.jsxs(xt, {
+                    ref: h,
                     style: t.containerDivStyle,
-                    children: [e.jsx(_t, {
-                        $background: w,
+                    children: [e.jsx(pt, {
+                        $background: p,
                         $hideBorder: t.hideBorder,
-                        $borderColor: c,
-                        children: e.jsx(pt.Provider, {
-                            value: P,
-                            children: e.jsxs(Et, {
-                                children: [e.jsx(Mt, {
+                        $borderColor: l,
+                        children: e.jsx(Ze.Provider, {
+                            value: E,
+                            children: e.jsxs(vt, {
+                                children: [e.jsx(mt, {
                                     theme: t.theme
-                                }), Fe() ? e.jsx(Ct, {
-                                    showUpgradeModal: g,
+                                }), ke() ? e.jsx(at, {
+                                    showUpgradeModal: f,
                                     theme: i
-                                }) : e.jsx(wt, {
+                                }) : e.jsx(nt, {
                                     theme: t.theme
                                 })]
                             })
                         })
                     }), t.children]
-                }), n ? e.jsx(We, {
+                }), s ? e.jsx(Ie, {
                     id: "header",
-                    visible: n,
-                    close: d,
+                    visible: s,
+                    close: c,
                     showModes: !0
-                }) : null, t.includeSpacer ? e.jsx(bt, {}) : null]
+                }) : null, t.includeSpacer ? e.jsx(st, {}) : null]
             })
         })
     },
-    $t = m.div.attrs({
+    xt = m.div.attrs({
         className: "maxWidth"
     })`
   height: auto;
@@ -937,7 +898,7 @@ const P = {
   right: 0;
   z-index: 9;
 `,
-    _t = m.header`
+    pt = m.header`
   display: flex;
   height: auto;
   background: ${t=>t.$background};
@@ -953,12 +914,12 @@ const P = {
     display: none;
   }
 `,
-    Et = m.div.attrs({
+    vt = m.div.attrs({
         className: "flex maxWidth between vc"
     })``,
-    Qt = t => e.jsx(Lt, {
+    zt = t => e.jsx(gt, {
         ...t
     });
 export {
-    yt as G, ut as N, Ye as R, Qt as S, E as T, bt as a, pt as b, P as s
+    rt as G, Ye as N, _e as R, zt as S, M as T, st as a, Ze as b, E as s
 };

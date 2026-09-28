@@ -1,11 +1,11 @@
 import {
     r as t,
-    aF as B,
-    al as $,
-    bY as F,
-    aS as f,
-    am as G,
-    b_ as M
+    aS as k,
+    al as B,
+    bY as G,
+    a$ as f,
+    am as M,
+    b_ as T
 } from "./_index.js";
 import {
     S as r
@@ -17,7 +17,7 @@ const {
 function g(e) {
     return (e == null ? void 0 : e.type) && (e.type.isSelectOption || e.type.isSelectOptGroup)
 }
-const T = (e, N) => {
+const U = (e, N) => {
         var a, i;
         const {
             prefixCls: y,
@@ -33,7 +33,7 @@ const T = (e, N) => {
             onOpenChange: h,
             styles: n,
             classNames: s
-        } = e, l = B(c), p = ((a = n == null ? void 0 : n.popup) === null || a === void 0 ? void 0 : a.root) || _, A = ((i = s == null ? void 0 : s.popup) === null || i === void 0 ? void 0 : i.root) || P || b, j = I || w, z = h || R;
+        } = e, l = k(c), p = ((a = n == null ? void 0 : n.popup) === null || a === void 0 ? void 0 : a.root) || _, A = ((i = s == null ? void 0 : s.popup) === null || i === void 0 ? void 0 : i.root) || P || b, j = I || w, z = h || R;
         let u;
         l.length === 1 && t.isValidElement(l[0]) && !g(l[0]) && ([u] = l);
         const D = u ? () => u : void 0;
@@ -61,7 +61,7 @@ const T = (e, N) => {
         }) : [];
         const {
             getPrefixCls: V
-        } = t.useContext($), v = V("select", y), [k] = F("SelectLike", p == null ? void 0 : p.zIndex);
+        } = t.useContext(B), v = V("select", y), [$] = G("SelectLike", p == null ? void 0 : p.zIndex);
         return t.createElement(r, Object.assign({
             ref: N,
             suffixIcon: null
@@ -76,26 +76,26 @@ const T = (e, N) => {
             styles: {
                 popup: {
                     root: Object.assign(Object.assign({}, p), {
-                        zIndex: k
+                        zIndex: $
                     })
                 },
                 root: n == null ? void 0 : n.root
             },
-            className: G(`${v}-auto-complete`, E),
+            className: M(`${v}-auto-complete`, E),
             mode: r.SECRET_COMBOBOX_MODE_DO_NOT_USE,
             popupRender: j,
             onOpenChange: z,
             getInputElement: D
         }), d)
     },
-    x = t.forwardRef(T),
+    x = t.forwardRef(U),
     {
-        Option: U
+        Option: Y
     } = r,
-    Y = M(x, "dropdownAlign", e => f(e, ["visible"])),
+    F = T(x, "dropdownAlign", e => f(e, ["visible"])),
     S = x;
-S.Option = U;
-S._InternalPanelDoNotUseOrYouWillBeFired = Y;
+S.Option = Y;
+S._InternalPanelDoNotUseOrYouWillBeFired = F;
 export {
     S as A
 };

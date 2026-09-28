@@ -77,6 +77,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const c = {
@@ -84,7 +85,7 @@ const c = {
     imageUrl: n("devices/achievement/icon.png")
 };
 var r = (t => (t.show = "show", t))(r || {});
-class ji extends a {
+class ki extends a {
     constructor(o) {
         super(o), this.onMessage = i => {
             i.key === r.show && (i == null ? void 0 : i.data) === h() && p.gui.achievement.update(this.id, m())
@@ -92,6 +93,6 @@ class ji extends a {
     }
 }
 export {
-    ji as
+    ki as
     default
 };

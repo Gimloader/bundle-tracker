@@ -87,15 +87,16 @@ import "./react-flip-move.es.js";
 import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const k = t => {
-        const [s, r] = l.useState(""), [m, a, n] = x(!1), f = o => {
+        const [m, r] = l.useState(""), [s, a, n] = x(!1), f = o => {
             r(o.target.value), n()
         }, g = o => {
             o.key === "Enter" && c()
         }, c = () => {
-            const o = s.trim();
+            const o = m.trim();
             o.length && t.guess(o)
         };
         N(() => {
@@ -125,11 +126,11 @@ const k = t => {
                 },
                 children: p.message
             }) : null, e.jsx(v, {
-                className: m ? "animated shake" : "",
+                className: s ? "animated shake" : "",
                 placeholder: "Enter password here...",
                 type: "text",
                 autoFocus: !0,
-                value: s,
+                value: m,
                 onChange: f,
                 maxLength: "64",
                 onKeyDown: g,
@@ -177,14 +178,14 @@ const k = t => {
         y: "0%",
         opacity: 1
     },
-    Yt = t => {
-        const s = j(),
-            [r, m] = x(!1);
+    Zt = t => {
+        const m = j(),
+            [r, s] = x(!1);
         A(() => {
             M("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap")
         });
         const a = () => {
-            s && r && t.close()
+            m && r && t.close()
         };
         return e.jsxs(D, {
             onClick: a,
@@ -197,7 +198,7 @@ const k = t => {
                     ease: "easeOut"
                 },
                 onClick: n => n.stopPropagation(),
-                onAnimationComplete: m,
+                onAnimationComplete: s,
                 children: e.jsx(k, {
                     ...t
                 })
@@ -223,6 +224,6 @@ const k = t => {
   font-weight: ${y.Bold};
 `;
 export {
-    Yt as
+    Zt as
     default
 };

@@ -80,10 +80,11 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-class Ii extends p {
+class Vi extends p {
     constructor(m) {
         if (super(m), this.onStateChange = i => {
                 this.updateState()
@@ -156,6 +157,6 @@ class Ii extends p {
     }
 }
 export {
-    Ii as
+    Vi as
     default
 };

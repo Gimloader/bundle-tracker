@@ -73,13 +73,14 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const e = {
     imageId: "wire_repeater_device",
     imageUrl: m("devices/wire_repeater/base.png")
 };
-class Ar extends p {
+class Dr extends p {
     constructor(r) {
         super(r), !(i() || o()) && this.parts.add.sprite({
             ...e,
@@ -90,6 +91,6 @@ class Ar extends p {
     }
 }
 export {
-    Ar as
+    Dr as
     default
 };

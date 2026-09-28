@@ -6,7 +6,7 @@ import {
     j as c,
     d as u,
     b as v,
-    aX as x,
+    aG as x,
     e as p,
     F as j,
     E as k
@@ -32,7 +32,7 @@ import {
 
 function O() {}
 
-function H(e, t, n = {}) {
+function G(e, t, n = {}) {
     const r = F(n.polyfill),
         d = g(t);
     return h(() => {
@@ -90,7 +90,7 @@ function A(e) {
 }
 let m;
 const F = e => m || (m = A(e)),
-    N = e => {
+    H = e => {
         const {
             total: t,
             current: n,
@@ -115,7 +115,7 @@ const F = e => m || (m = A(e)),
   font-size: 0.9em;
   border-radius: 50px;
 `,
-    W = e => {
+    N = e => {
         const t = v(x(e.dateId)).format("MMMM Do [at] LT");
         return c.jsxs(P, {
             direction: "horizontal",
@@ -161,7 +161,7 @@ const F = e => m || (m = A(e)),
   font-style: italic;
   margin-top: 0.05em;
 `,
-    X = e => {
+    W = e => {
         const t = e.percent < 60 ? "#F44336" : e.percent < 80 ? "#FFC107" : "#66BB6A";
         return c.jsx(k, {
             theme: {
@@ -181,5 +181,5 @@ const F = e => m || (m = A(e)),
         })
     };
 export {
-    N as R, W as a, X as b, E as c, H as u
+    H as R, N as a, W as b, E as c, G as u
 };

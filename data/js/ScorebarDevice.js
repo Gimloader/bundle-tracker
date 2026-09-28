@@ -76,9 +76,10 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-class Po extends a {
+class Io extends a {
     constructor(m) {
         if (super(m), this.getTeamColor = o => {
                 const t = "colorTeam" + o;
@@ -113,6 +114,6 @@ class Po extends a {
     }
 }
 export {
-    Po as
+    Io as
     default
 };

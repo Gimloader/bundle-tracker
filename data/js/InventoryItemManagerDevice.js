@@ -78,10 +78,11 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-class Ao extends m {
+class ko extends m {
     constructor(r) {
         if (super(r), n() && c()) {
             let o = l.imageUrl;
@@ -107,6 +108,6 @@ class Ao extends m {
     }
 }
 export {
-    Ao as
+    ko as
     default
 };

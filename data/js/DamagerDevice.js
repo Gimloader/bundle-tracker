@@ -78,9 +78,10 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-class Oo extends p {
+class ko extends p {
     constructor(i) {
         if (super(i), this.onMessage = o => {
                 o.key === "hit" && s(o.data)
@@ -101,6 +102,6 @@ class Oo extends p {
     }
 }
 export {
-    Oo as
+    ko as
     default
 };
