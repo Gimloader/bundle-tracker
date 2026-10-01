@@ -1,232 +1,1140 @@
 import {
-    r as k,
-    s as C,
-    j as b
+    x as p,
+    j as s,
+    aO as j,
+    aW as ye,
+    r as g,
+    M as _,
+    d as O,
+    B as J,
+    U as ke,
+    aU as ee,
+    D as xe,
+    F as be,
+    cm as Ce,
+    ar as ve,
+    u as te,
+    dT as L
 } from "./_index.js";
 import {
-    n as f,
-    a6 as v,
-    r as p,
-    v as y,
-    m as l,
-    u,
-    a0 as w,
-    t as I,
-    a7 as B,
-    a8 as P
+    z as we,
+    w as Be,
+    S as U,
+    J as Y,
+    u as q,
+    T as Ie,
+    q as Se,
+    o as K,
+    M as re
+} from "./App-41.js";
+import {
+    s as X,
+    n as je
 } from "./FixSpinePlugin.js";
 import {
-    G as S
-} from "./GetAssetPath.js";
+    o as ae
+} from "./mobxreact.esm.js";
 import {
-    C as T
-} from "./ElementIds.js";
+    N as Te,
+    c as Oe
+} from "./App-66.js";
+import {
+    B as k,
+    R as Pe,
+    b as N,
+    M as Q,
+    F as Ee,
+    a as oe
+} from "./App-57.js";
+import {
+    I as de
+} from "./index-3.js";
+import {
+    a as Re
+} from "./index-23.js";
+import {
+    C as ue
+} from "./Centered.js";
+import {
+    C as z
+} from "./Button.js";
+import {
+    C as H
+} from "./CapitalizeFirstLetter.js";
+import {
+    T as R
+} from "./index-14.js";
+import {
+    S as me
+} from "./index-2.js";
+import {
+    m as Ge
+} from "./motion.js";
+import {
+    S as fe
+} from "./StopPropagation.js";
+import {
+    D as Ne
+} from "./index-6.js";
+import {
+    u as Fe
+} from "./useTimeout.js";
+import {
+    s as Me
+} from "./index-4.js";
+import "./index-21.js";
+import "./QuizTypes.js";
 import "./MapModeType.js";
-import "./MapStyle.js";
+import "./GetAssetPath.js";
+import "./TutorialConsts.js";
+import "./ActionButton.js";
+import "./index-5.js";
+import "./playSound.js";
 import "./MapSound.js";
 import "./howler.js";
-import "./playSound.js";
+import "./index-18.js";
+import "./context.js";
+import "./FontAwesomeIcon.js";
+import "./SixteenByNineScaler.js";
+import "./index-20.js";
+import "./index-22.js";
+import "./index-1.js";
+import "./progress.js";
+import "./CheckOutlined.js";
+import "./ElementIds.js";
 import "./SeasonTicketName.js";
 import "./useQuery.js";
-const x = {
-        type: f.WEBGL,
-        roundPixels: !1,
-        transparent: !0,
-        plugins: {
-            scene: [{
-                key: "spine.SpinePlugin",
-                plugin: v,
-                mapping: "spine"
-            }]
-        },
-        scale: {
-            mode: f.Scale.NONE,
-            autoRound: !0
-        },
-        parent: "character-preview-div",
-        scene: [],
-        banner: !1,
-        pipeline: {
-            skipPipelinesAtBoot: !0
-        }
-    },
-    M = i => {
-        i.skinId = i.game.skin, i.editStyles = i.game.editStyles;
-        const a = Math.random().toString();
-        i.game.cache.json.exists("data_compressed_" + i.skinId) || (i.load.spineJson("data_compressed_" + i.skinId, S(`characters/spine/${i.skinId}.json?cb=${a}`)), i.load.spineAtlas("atlas_" + i.skinId, S(`characters/spine/${i.skinId}.atlas?cb=${a}`)))
-    },
-    E = i => {
-        if (!i.character) return;
-        const a = i.character.spine.displayWidth,
-            t = i.character.spine.displayHeight,
-            e = i.add.rectangle(0, 0, a, t, 16711680).setOrigin(i.character.spine.displayOriginX / a, i.character.spine.displayOriginY / t).setVisible(!1),
-            c = e.getBounds();
-        e.destroy(), i.cameras.main.centerOn(c.centerX, c.centerY)
-    },
-    N = .4,
-    g = i => {
-        const a = document.getElementById("character-preview-div");
-        if (!a) return;
-        const t = a.clientWidth,
-            e = a.clientHeight,
-            c = window.devicePixelRatio,
-            s = c * t,
-            o = c * e,
-            r = Math.min(s / t, o / e);
-        i.scale.resize(r * t, r * e);
-        const h = 1 / r;
-        i.game.canvas.style.transform = "scaleX(" + h + ") scaleY(" + h + ")", i.game.canvas.style.transformOrigin = "0 0", i.cameras.main.setZoom(N * r), E(i), i.scale.refresh()
-    };
-class L {
-    constructor(a) {
-        this.apply = () => {
-            var c;
-            const t = this.character.scene.cache.json.get("data_" + this.character.skinId),
-                e = [];
-            (c = t == null ? void 0 : t.style) == null || c.categories.forEach(s => {
-                const o = this.character.scene.editStyles[s.name];
-                if (s.type === T.color && s.color) e.push({
-                    type: "color",
-                    slotNames: s.color.slotNames,
-                    color: o || s.color.defaultColor
-                });
-                else if (s.options.length) {
-                    const r = s.options.find(h => o === h.name) ?? s.options[0];
-                    e.push(...r.applications)
-                }
-            }), e.forEach(s => {
-                s.type === "color" && s.slotNames.forEach(o => {
-                    const r = this.character.spine.skeleton.slots.find(h => {
-                        var m;
-                        return (h == null ? void 0 : h.data.name) === o || ((m = h == null ? void 0 : h.attachment) == null ? void 0 : m.name) === o
-                    });
-                    r && (r == null || r.color.setFromString(s.color))
-                })
-            })
-        }, this.character = a
-    }
-}
-class O {
-    constructor(a) {
-        this.skinChanged = !1, this.availableAnimations = [], this.currentBodyAnimation = p.rest, this.bodyAnimationLocked = !1, this.bodyAnimationStartedAt = 0, this.currentEyeAnimation = y.idle, this.lastGroundedAnimationAt = 0, this.setupAnimations = () => {
-            const t = this.character.spine;
-            this.availableAnimations = t.skeleton.data.animations.map(e => e.name), t.animationStateData.defaultMix = l.body.transition.defaultDuration, t.animationStateData.setMix(l.body.animationNames.jumpMiddleIdle, l.body.animationNames.jumpDownIdle, l.body.transition.jumpFallingDuration), t.animationStateData.setMix(l.eyes.animationNames.blink, l.eyes.animationNames.idle, 0), t.animationStateData.setMix(l.eyes.animationNames.idle, l.eyes.animationNames.blink, 0), this.playBodyAnimation(this.currentBodyAnimation), this.playEyeAnimation(this.currentEyeAnimation), this.availableAnimations.includes(`skins-${this.character.skinId}-common`) && this.character.spine.animationState.setAnimation(u.COMMON, `skins-${this.character.skinId}-common`, !0), this.character.spine.animationState.addListener({
-                complete: e => {
-                    this.onAnimationComplete(e)
-                }
-            })
-        }, this.playBodyAnimation = t => {
-            var c, s, o;
-            if (t === this.currentBodyAnimation && !this.skinChanged) return;
-            if (this.bodyAnimationLocked && !this.skinChanged) {
-                const r = ((s = (c = l.animationLocks) == null ? void 0 : c[this.currentBodyAnimation]) == null ? void 0 : s[t]) ?? 0;
-                if (r) {
-                    const h = Date.now(),
-                        m = this.bodyAnimationStartedAt + r;
-                    if (h < m) return
+import "./___vite-browser-external_commonjs-proxy.js";
+import "./util-1.js";
+import "./util-2.js";
+import "./Shortcut.js";
+import "./Names.js";
+import "./useWillUnmount.js";
+import "./CircularProgress.js";
+import "./clsx.m.js";
+import "./inheritsLoose.js";
+import "./AccessibleAnchor.js";
+import "./index-17.js";
+import "./use-force-update.js";
+import "./GimkitLiveQuestion.js";
+import "./Text.js";
+import "./getCloudinaryUrl.js";
+import "./LazyLatexRenderer.js";
+import "./Tooltip.js";
+import "./polished.esm.js";
+import "./use-motion-value.js";
+import "./index-9.js";
+import "./useIntervalWhen.js";
+import "./index-10.js";
+import "./move.js";
+import "./react-flip-move.es.js";
+import "./sounds.js";
+import "./App-5.js";
+import "./AnimatedBackground-2.js";
+import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
+import "./MapStyle.js";
+import "./FillRemainingSpace.js";
+import "./index-24.js";
+import "./ReactionToMultipleProps.js";
+import "./FetchDeviceName.js";
+import "./ReplaceDevice.js";
+import "./index-29.js";
+import "./index-8.js";
+import "./DownOutlined.js";
+import "./DeleteOutlined.js";
+import "./GetCurrentMapStyle.js";
+import "./index-28.js";
+import "./index-7.js";
+import "./LoadGoogleFontAfterSceneStart.js";
+import "./useItemAmount.js";
+import "./clsx.js";
+import "./EditOutlined.js";
+import "./styleChecker.js";
+import "./CopyOutlined.js";
+import "./useWarningOnMountInDevelopment.js";
+const M = {
+    Animation: {
+        durationSeconds: .2,
+        easeType: "easeOut",
+        content: {
+            codegrid: {
+                initial: {
+                    opacity: 0,
+                    y: -20
+                },
+                active: {
+                    opacity: 1,
+                    y: 0
+                },
+                leave: {
+                    opacity: 0,
+                    y: 20
                 }
             }
-            const e = !!((o = l.animationLocks) != null && o[t]);
-            this.bodyAnimationLocked = e, this.bodyAnimationStartedAt = Date.now(), t === p.rest ? this.startBlinkAnimation() : this.stopBlinkAnimation(), this.currentBodyAnimation = t, this.character.spine.animationState.setAnimation(u.BODY, l.body.animationNames[t], l.bodyLoopedAnimations.includes(t)), this.playBodySupplementalAnimation(t)
-        }, this.playEyeAnimation = t => {
-            t === this.currentEyeAnimation && !this.skinChanged || (this.currentEyeAnimation = t, this.character.spine.animationState.setAnimation(u.EYES, l.eyes.animationNames[t], !0))
-        }, this.playAnimationOrClearTrack = (t, e) => {
-            let c = !1;
-            for (const s of t)
-                if (this.availableAnimations.includes(s)) {
-                    this.character.spine.animationState.setAnimation(e, s, !0), c = !0;
-                    break
-                } c || this.character.spine.animationState.clearTrack(e)
-        }, this.playBodySupplementalAnimation = t => {
-            this.playAnimationOrClearTrack([`skins-${this.character.skinId}-${l.body.animationNames[t]}`, `skins-${this.character.skinId}-pose`], u.BODY_SUPPLEMENTAL), this.playMovementSupplementalAnimation(t), this.playJumpSupplementalAnimation(t)
-        }, this.playMovementSupplementalAnimation = t => {
-            this.playAnimationOrClearTrack([`skins-${this.character.skinId}-movement=${t===p.rest?"false":"true"}`], u.MOVEMENT_SUPPLEMENTAL)
-        }, this.playJumpSupplementalAnimation = t => {
-            const e = l.jumpAnimations.includes(t);
-            this.playAnimationOrClearTrack([`skins-${this.character.skinId}-jumping=${e?"true":"false"}`], u.JUMP_SUPPLEMENTAL)
-        }, this.startBlinkAnimation = () => {
-            this.blinkTimer || (this.playEyeAnimation(y.idle), this.blinkTimer = window.setTimeout(() => {
-                this.blinkTimer = null, this.playEyeAnimation(y.blink)
-            }, l.eyes.blinkEvery))
-        }, this.stopBlinkAnimation = () => {
-            this.playEyeAnimation(y.idle), this.blinkTimer && (window.clearTimeout(this.blinkTimer), this.blinkTimer = null)
-        }, this.onAnimationComplete = t => {
-            t.trackIndex === u.EYES && this.currentBodyAnimation === p.rest && this.currentEyeAnimation === y.blink && this.startBlinkAnimation()
-        }, this.toggleAnimation = () => {
-            this.currentBodyAnimation === p.rest ? this.playBodyAnimation(p.run) : this.playBodyAnimation(p.rest)
-        }, this.onSkinChanged = () => {
-            this.skinChanged = !0, this.setupAnimations(), this.skinChanged = !1
-        }, this.destroy = () => {
-            this.blinkTimer && (window.clearTimeout(this.blinkTimer), this.blinkTimer = null)
-        }, this.character = a
+        }
+    }
+};
+
+function Ae(e, t) {
+    let r = null,
+        o = null;
+    return [(...l) => {
+        o = () => {
+            r = null, e(...l)
+        }, r != null && clearTimeout(r), r = window.setTimeout(o, t)
+    }, () => {
+        r != null && (clearTimeout(r), o && o())
+    }]
+}
+
+function De(e, t, r) {
+    try {
+        return t.getAllBlocks(!1).length > 0 ? void 0 : (k.Xml.domToWorkspace(k.Xml.textToDom(e), t), !0)
+    } catch (o) {
+        return r && r(o), !1
     }
 }
-class _ {
-    constructor(a) {
-        this.scene = a, this.skinId = a.skinId, this.editStyles = new L(this), this.animation = new O(this), this.spine = a.add.spinePreview(0, 0, "data_" + this.skinId, "atlas_" + this.skinId, new w("idle", [this.skinId])), this.spine.skeleton.setSkinByName(this.skinId), this.editStyles.apply(), this.animation.onSkinChanged(), E(a)
-    }
-    destroy() {
-        this.animation.destroy()
-    }
-}
-class D extends Phaser.Scene {
-    constructor() {
-        super(...arguments), this.onError = null
-    }
-    preload() {
-        M(this)
-    }
-    create() {
-        const a = this.cache.json.get("data_compressed_" + this.skinId);
-        if (!this.cache.json.get("data_" + this.skinId) && a) {
-            const e = I.decompress(a);
-            this.cache.json.add("data_" + this.skinId, e)
-        }
-        try {
-            this.character = new _(this)
-        } catch {
-            this.game.onError && this.game.onError()
-        }
-        g(this), this.resizeListener = () => {
-            g(this)
-        }, window.addEventListener("resize", this.resizeListener), this.events.on("destroy", () => {
-            var e;
-            (e = this.character) == null || e.destroy(), window.removeEventListener("resize", this.resizeListener), this.resizeListener = void 0
-        })
+
+function Le(e, t, r) {
+    try {
+        return k.serialization.workspaces.load(e, t), !0
+    } catch (o) {
+        return r && r(o), !1
     }
 }
-const A = 3;
-let n = null,
-    d = null;
-const V = i => {
-    const [a, t] = k.useState(!1), [e, c] = k.useState(0);
-    k.useEffect(() => {
-        if (!a) return () => {};
-        if (e >= A) return () => {};
-        d || (d = document.createElement("div"), d.id = "character-preview-div", d.className = "maxWidth maxHeight");
-        const o = document.getElementById("character-preview-container");
-        return o && d && !o.contains(d) && o.appendChild(d), B(), P(), window.SPINE_GAME_OBJECT_TYPE = "spinePreview", n || (n = new Phaser.Game({
-            ...x,
-            parent: d
-        })), n.onError = () => {
-            c(r => r + 1), n == null || n.destroy(!0), n = null
-        }, n.skin = i.id, n.editStyles = i.editStyles, n == null || n.scene.remove("CharacterScene"), n == null || n.scene.add("CharacterScene", D, !0), () => {
-            e >= A && (n == null || n.destroy(!0), n = null, d = null), n == null || n.scene.remove("CharacterScene")
+const We = ({
+        ref: e,
+        initialXml: t,
+        initialJson: r,
+        toolboxConfiguration: o,
+        workspaceConfiguration: c,
+        onWorkspaceChange: i,
+        onImportXmlError: l,
+        onImportError: u,
+        onInject: x,
+        onDispose: f
+    }) => {
+        u = u ?? l;
+        const [a, b] = p.useState(null), [h, n] = p.useState(t || null), [m, v] = p.useState(r || null), [d, w] = p.useState(!1), [B, V] = p.useState(!1), A = p.useRef(c);
+        p.useEffect(() => {
+            A.current = c
+        }, [c]);
+        const F = p.useRef(o);
+        p.useEffect(() => {
+            F.current = o, o && a && a.updateToolbox(o)
+        }, [o, a]);
+        const T = p.useRef(x),
+            D = p.useRef(f);
+        p.useEffect(() => {
+            T.current = x
+        }, [x]), p.useEffect(() => {
+            D.current = f
+        }, [f]);
+        const G = p.useCallback(C => {
+            i && i(C)
+        }, [i]);
+        return p.useEffect(() => {
+            if (!e.current) return;
+            const C = k.inject(e.current, {
+                ...A.current,
+                toolbox: F.current
+            });
+            b(C), w(!1), V(!1), T.current && T.current(C);
+            const I = D.current;
+            return () => {
+                C.dispose(), I && I(C)
+            }
+        }, [e]), p.useEffect(() => {
+            a && !B && G(a)
+        }, [G, B, a]), p.useEffect(() => {
+            if (a == null) return;
+            const C = () => {
+                G(a)
+            };
+            return a.addChangeListener(C), () => {
+                a.removeChangeListener(C)
+            }
+        }, [a, G]), p.useEffect(() => {
+            if (a == null) return;
+            const [C, I] = Ae(() => {
+                const S = k.Xml.domToText(k.Xml.workspaceToDom(a));
+                if (S === h) return;
+                const $ = k.serialization.workspaces.save(a);
+                v($), n(S)
+            }, 200);
+            return a.addChangeListener(C), () => {
+                a.removeChangeListener(C), I()
+            }
+        }, [a, h]), p.useEffect(() => {
+            if (h && a && !d) De(h, a, u) || n(null), w(!0);
+            else if (m && a && !d) {
+                Le(m, a, u) || v(null);
+                const I = k.Xml.domToText(k.Xml.workspaceToDom(a));
+                n(I), w(!0)
+            }
+        }, [m, h, a, d, u]), {
+            workspace: a,
+            xml: h,
+            json: m
         }
-    }, [a, e, i.id, i.editStyles]), C(() => {
-        t(!0)
-    });
-    const s = () => {
-        var o, r, h, m;
-        (m = (h = (r = (o = n == null ? void 0 : n.scene) == null ? void 0 : o.scenes[0]) == null ? void 0 : r.character) == null ? void 0 : h.animation) == null || m.toggleAnimation()
+    },
+    Je = {
+        initialXml: j.string,
+        initialJson: j.object,
+        toolboxConfiguration: j.object,
+        workspaceConfiguration: j.object,
+        className: j.string,
+        onWorkspaceChange: j.func,
+        onImportXmlError: j.func,
+        onImportError: j.func,
+        onXmlChange: j.func,
+        onJsonChange: j.func,
+        onInject: j.func,
+        onDispose: j.func
+    },
+    Xe = {
+        initialXml: null,
+        initialJson: null,
+        toolboxConfiguration: null,
+        workspaceConfiguration: null,
+        className: null,
+        onWorkspaceChange: null,
+        onImportXmlError: null,
+        onImportError: null,
+        onXmlChange: null,
+        onJsonChange: null,
+        onInject: null,
+        onDispose: null
     };
-    return e >= A ? i.fallback : b.jsx("div", {
-        id: "character-preview-container",
-        className: "maxWidth maxHeight",
-        onClick: s
+
+function Z({
+    initialXml: e,
+    initialJson: t,
+    toolboxConfiguration: r,
+    workspaceConfiguration: o,
+    className: c,
+    onWorkspaceChange: i,
+    onXmlChange: l,
+    onJsonChange: u,
+    onImportXmlError: x,
+    onImportError: f,
+    onInject: a,
+    onDispose: b
+}) {
+    const h = p.useRef(null),
+        {
+            xml: n,
+            json: m
+        } = We({
+            ref: h,
+            initialXml: e,
+            initialJson: t,
+            toolboxConfiguration: r,
+            workspaceConfiguration: o,
+            onWorkspaceChange: i,
+            onImportXmlError: x,
+            onImportError: f,
+            onInject: a,
+            onDispose: b
+        }),
+        v = p.useRef(l);
+    p.useEffect(() => {
+        v.current = l
+    }, [l]);
+    const d = p.useRef(u);
+    return p.useEffect(() => {
+        d.current = u
+    }, [u]), p.useEffect(() => {
+        v.current && n && v.current(n), d.current && m && d.current(m)
+    }, [n, m]), s.jsx("div", {
+        className: c,
+        ref: h
+    })
+}
+Z.propTypes = Je;
+Z.defaultProps = Xe;
+const pe = new Set,
+    ze = e => {
+        const t = document.createElement("div");
+        document.body.appendChild(t);
+        const r = ye.createRoot(t),
+            o = () => {
+                he(r)
+            };
+        r.render(s.jsx($e, {
+            ...e,
+            afterClose: o
+        }))
+    },
+    Ve = () => {
+        pe.forEach(e => {
+            he(e)
+        })
+    },
+    he = e => {
+        e.unmount(), pe.delete(e)
+    },
+    $e = e => {
+        const [t, r] = g.useState(!0), o = () => r(!1), c = e.content, i = e.modalProps ? e.modalProps({
+            close: o
+        }) : {};
+        return s.jsx(_, {
+            ...i,
+            afterClose: e.afterClose,
+            open: t,
+            children: s.jsx(c, {
+                close: o
+            })
+        })
+    };
+k.alert = (e, t) => {
+    _.info({
+        title: e,
+        onOk: t
     })
 };
+k.confirm = (e, t) => {
+    _.confirm({
+        title: e,
+        onOk: () => t(!0),
+        onCancel: () => t(!1)
+    })
+};
+k.prompt = (e, t, r) => {
+    ze({
+        modalProps: o => ({
+            footer: null,
+            closable: !1,
+            style: {
+                top: 35
+            },
+            onCancel: () => {
+                r(""), o.close()
+            }
+        }),
+        content: o => s.jsx(Ke, {
+            message: e,
+            defaultValue: t,
+            callback: c => {
+                r(c), o.close()
+            }
+        })
+    })
+};
+const Ke = e => {
+        const [t, r] = g.useState(e.defaultValue), o = u => {
+            r(u.target.value)
+        }, c = () => {
+            e.callback("")
+        }, i = () => {
+            e.callback(t)
+        }, l = e.message.includes("variable");
+        return s.jsxs(He, {
+            children: [s.jsx(_e, {
+                children: e.message
+            }), s.jsx(de, {
+                size: "large",
+                value: t,
+                onChange: o,
+                placeholder: l ? "Variable name..." : "",
+                onPressEnter: i,
+                autoFocus: !0
+            }), s.jsx(Ue, {
+                children: s.jsxs(Ye, {
+                    children: [s.jsx(J, {
+                        onClick: c,
+                        style: {
+                            marginRight: 6
+                        },
+                        children: "Cancel"
+                    }), s.jsx(J, {
+                        onClick: i,
+                        type: "primary",
+                        children: "Submit"
+                    })]
+                })
+            })]
+        })
+    },
+    He = O.div`
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+`,
+    _e = O.div`
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 3px;
+`,
+    Ue = O.div`
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+`,
+    Ye = O.div`
+  display: flex;
+`,
+    W = {
+        triggerOnly: {
+            name: "For This Block",
+            color: "#FFBF00"
+        },
+        deviceOnly: {
+            name: "For This Device"
+        }
+    },
+    ne = e => {
+        const t = X.worldOptions.codeGrids.customBlocksParsed.find(c => c.type === e);
+        if (!t) return !0;
+        const r = t.minimumRoleLevel,
+            o = t.maximumRoleLevel;
+        return we(r, o)
+    },
+    se = (e, t) => {
+        let r = e.deviceOption.codeGridSchema.customBlocks || [];
+        const o = (t == null ? void 0 : t.customBlocks) || [];
+        return t != null && t.blockedCustomBlocks && (r = r.filter(c => {
+            var i;
+            return !((i = t.blockedCustomBlocks) != null && i.includes(c))
+        })), {
+            deviceSpecificBlocks: r,
+            triggerSpecificBlocks: o
+        }
+    },
+    qe = (e, t) => {
+        var x, f, a, b, h;
+        let r = [],
+            o, c = [];
+        const i = Be(e);
+        if (i) {
+            const n = (f = (x = X.world.devices.codeGrids.get(e)) == null ? void 0 : x.items) == null ? void 0 : f.get(t);
+            if (n) {
+                const m = i.deviceOption.codeGridSchema.triggers.find(v => v.type === n.triggerType);
+                m ? (o = se(i, m), (a = m.blockedGlobalBlocks) != null && a.length && (c = m.blockedGlobalBlocks)) : o = se(i)
+            }
+        }
+        o && o.triggerSpecificBlocks.length && r.push({
+            name: W.triggerOnly.name,
+            color: W.triggerOnly.color,
+            blocks: o.triggerSpecificBlocks.map(n => ({
+                type: n
+            })).filter(n => ne(n.type))
+        }), o != null && o.deviceSpecificBlocks.length && r.push({
+            name: W.deviceOnly.name,
+            color: W.triggerOnly.color,
+            blocks: o.deviceSpecificBlocks.map(n => ({
+                type: n
+            })).filter(n => ne(n.type))
+        });
+        let l = JSON.parse(((h = (b = X.worldOptions) == null ? void 0 : b.codeGrids) == null ? void 0 : h.blockCategories) || "[]");
+        return c.length && (l = l.map(n => ({
+            ...n,
+            blocks: n.blocks.filter(m => !c.includes(m.type))
+        }))), r = [...r, ...l], {
+            kind: "categoryToolbox",
+            contents: r.map(n => {
+                const m = n.custom ? {
+                    custom: n.custom
+                } : {};
+                return {
+                    kind: "category",
+                    name: n.name,
+                    colour: n.color,
+                    expanded: !0,
+                    contents: n.blocks.map(v => ({
+                        kind: "block",
+                        type: v.type,
+                        message0: v.type
+                    })),
+                    ...m
+                }
+            })
+        }
+    },
+    ie = (e, t) => {
+        const r = g.useRef(0),
+            o = g.useRef(),
+            c = u => o.current = u,
+            i = u => {
+                const x = e[r.current];
+                if (!x) {
+                    r.current = 0, i(u);
+                    return
+                }
+                if (x(u, o.current, c)) r.current = r.current + 1, r.current === e.length && (t(o.current), r.current = 0);
+                else {
+                    if (r.current === 0) return;
+                    r.current = 0, i(u)
+                }
+            };
+        return [u => {
+            i(u)
+        }]
+    },
+    ce = e => [t => t.type === k.Events.TOOLBOX_ITEM_SELECT, (t, r, o) => t.type === k.Events.CREATE && t.json && t.json.type && e.some(i => t.json.type.includes(i)) ? (o({
+        ...r,
+        blockId: t.blockId
+    }), !0) : !1, (t, r) => t.type === k.Events.SELECTED ? t.newElementId && t.newElementId === r.blockId : !1, (t, r) => !!(t.type === k.Events.BLOCK_DRAG && t.isStart && t.blockId === r.blockId), (t, r, o) => {
+        var c, i;
+        if (t.type === k.Events.BLOCK_DRAG && !t.isStart && t.blockId === r.blockId) {
+            const l = (i = (c = t.blocks) == null ? void 0 : c[0]) == null ? void 0 : i.getRelativeToSurfaceXY();
+            if (l) return o({
+                ...r,
+                x: l.x,
+                y: l.y
+            }), !0
+        }
+        return !1
+    }],
+    Qe = e => {
+        const {
+            text: t,
+            location: r,
+            workspace: o
+        } = e;
+        let c = 0,
+            i = 0;
+        if (r) c = r.x, i = r.y;
+        else {
+            const u = o.getAllBlocks(!0);
+            if (u.length) {
+                const f = u[u.length - 1].getRelativeToSurfaceXY();
+                c = f.x, i = f.y
+            }
+        }
+        c += 40, i += 40, c = Math.round(c), i = Math.round(i);
+        const l = k.serialization.workspaces.save(o);
+        l.blocks || (l.blocks = {
+            blocks: []
+        }), l.blocks.blocks.push({
+            type: "text",
+            x: c,
+            y: i,
+            fields: {
+                TEXT: t
+            }
+        }), k.serialization.workspaces.load(l, o)
+    },
+    Ze = {
+        debouncedSaveDurationMs: 150
+    },
+    et = e => {
+        U(Y.setCodeGridJSON, {
+            json: e.json,
+            deviceId: e.deviceId,
+            gridId: e.gridId
+        })
+    },
+    tt = 512;
+k.FieldTextInput.prototype.doClassValidation_ = function(e) {
+    return e.substring(0, tt)
+};
+const rt = ae(g.forwardRef((e, t) => {
+        const {
+            memorySystem: r
+        } = q();
+        Pe();
+        const [o, c] = g.useState(e.gridJSON), i = g.useRef(), l = g.useRef(), [u] = ie(ce([N.messageBroadcaster, N.playerProximityMessageBroadcaster]), d => {
+            e.isOwner && (d.x && d.y && (i.current = {
+                x: d.x,
+                y: d.y
+            }), e.openChannelBrowser())
+        }), [x] = ie(ce([N.getProperty, N.setProperty, N.playerProximityGetProperty, N.playerProximitySetProperty]), d => {
+            e.isOwner && (d.x && d.y && (i.current = {
+                x: d.x,
+                y: d.y
+            }), e.openPropertyBrowser())
+        });
+        g.useEffect(() => {
+            f(e.gridJSON)
+        }, [e.gridJSON]), g.useEffect(() => () => {
+            Ve()
+        }, []);
+        const f = d => {
+                var w;
+                e.isOwner || d !== o && (c(d), (w = l == null ? void 0 : l.current) == null || w.clear(), k.serialization.workspaces.load(JSON.parse(d), l.current))
+            },
+            a = Re(d => {
+                e.isOwner && d !== o && (et({
+                    json: d,
+                    deviceId: e.deviceId,
+                    gridId: e.gridId
+                }), c(d))
+            }, Ze.debouncedSaveDurationMs),
+            b = g.useMemo(() => qe(e.deviceId, e.gridId), []);
+        g.useImperativeHandle(t, () => ({
+            addTextBlock: h
+        }));
+        const h = d => {
+                e.isOwner && Qe({
+                    text: d,
+                    location: i.current,
+                    workspace: l.current
+                })
+            },
+            n = () => {
+                const d = k.serialization.workspaces.save(l.current),
+                    w = l.current.getAllBlocks(!1).length;
+                e.onBlockCountChange(w), a(JSON.stringify(d))
+            },
+            m = d => {
+                var w;
+                l.current = d, (w = l.current) == null || w.addChangeListener(B => {
+                    e.isOwner && (u(B), x(B), n())
+                })
+            },
+            v = o === "" ? {} : JSON.parse(o);
+        return s.jsx(Z, {
+            toolboxConfiguration: e.isOwner ? b : void 0,
+            initialJson: v,
+            className: "fill-height",
+            onInject: m,
+            workspaceConfiguration: {
+                readOnly: !e.isOwner,
+                comments: !1,
+                disable: !1,
+                collapse: !1,
+                maxBlocks: r.limits.blocksPerCodeGrid,
+                move: {
+                    drag: !1
+                },
+                grid: {
+                    spacing: 20,
+                    length: 2,
+                    colour: "#ccc",
+                    snap: !0
+                }
+            }
+        })
+    })),
+    ot = e => s.jsxs(s.Fragment, {
+        children: [s.jsx(R.Text, {
+            style: {
+                fontFamily: ke.FugazOne,
+                textTransform: "uppercase",
+                color: "rgba(255,255,255,0.6)",
+                fontSize: 14
+            },
+            children: H(Q.grid.singular)
+        }), s.jsx(R.Title, {
+            level: 3,
+            style: {
+                color: z.White,
+                marginTop: 2
+            },
+            children: Te(e.deviceId, e.gridId)
+        })]
+    }),
+    nt = e => {
+        const {
+            memorySystem: t
+        } = q();
+        return s.jsxs(s.Fragment, {
+            children: [s.jsxs(me, {
+                direction: "horizontal",
+                size: 10,
+                style: {
+                    marginTop: 30
+                },
+                children: [s.jsx(J, {
+                    onClick: e.openChannelBrowser,
+                    type: "primary",
+                    children: "Channel Browser"
+                }), s.jsx(J, {
+                    onClick: e.openPropertyBrowser,
+                    type: "primary",
+                    children: "Property Browser"
+                })]
+            }), s.jsx("div", {
+                style: {
+                    marginTop: 6
+                },
+                children: s.jsxs(R.Text, {
+                    style: {
+                        color: "rgba(255,255,255,0.6)"
+                    },
+                    children: [ee(e.blockCount), "/", ee(t.limits.blocksPerCodeGrid), " ", Q.blocklyBlock.plural, " placed"]
+                })
+            })]
+        })
+    },
+    st = e => {
+        const t = X.characters.characters.get(e);
+        return t ? t.name : "Player"
+    },
+    it = e => e.gridOwner ? s.jsxs(s.Fragment, {
+        children: [s.jsx(xe, {
+            style: {
+                background: "#8b8b8b"
+            }
+        }), s.jsx("div", {
+            children: s.jsxs(R.Text, {
+                children: [s.jsx("span", {
+                    style: {
+                        fontWeight: be.Bold
+                    },
+                    children: st(e.gridOwner)
+                }), " ", "is currently editing this block. Only one person can edit a block at a time."]
+            })
+        })]
+    }) : null,
+    ct = e => s.jsx(lt, {
+        children: s.jsxs(at, {
+            children: [s.jsx(ot, {
+                deviceId: e.deviceId,
+                gridId: e.gridId
+            }), e.isOwner ? s.jsx(nt, {
+                blockCount: e.blockCount,
+                openChannelBrowser: e.openChannelBrowser,
+                openPropertyBrowser: e.openPropertyBrowser
+            }) : s.jsx(it, {
+                gridOwner: e.gridOwner
+            })]
+        })
+    }),
+    lt = O(ue).attrs({
+        className: "maxAll"
+    })`
+  flex-shrink: 0;
+  color: ${z.White};
+  width: 360px;
+  padding: 25px;
+  padding-right: 0px;
+`,
+    at = O.div``;
+O.div`
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+`;
+const dt = O(Ge.div).attrs({
+        className: "flex medium-shadow"
+    })`
+  position: relative;
+  background: rgba(48, 28, 86, 0.85);
+  backdrop-filter: blur(3px);
+  color: ${z.Black};
+  padding: 25px;
+  border-radius: 7px;
+  width: 90%;
+  height: 90%;
+`,
+    ut = O(ue).attrs({
+        className: "maxAll"
+    })``,
+    mt = O.div.attrs({
+        className: "maxAll"
+    })`
+  .fill-height {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    border-width: 0px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .blocklyToolboxDiv {
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(3px);
+  }
+  .blocklySvg {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .blocklyTrash {
+    filter: brightness(2);
+  }
+`,
+    ft = e => {
+        const {
+            deviceId: t,
+            gridId: r,
+            gridOwner: o,
+            gridVisitors: c,
+            gridJSON: i,
+            switchToHomeScreen: l,
+            openChannelBrowser: u,
+            channelBrowserOpen: x,
+            openPropertyBrowser: f,
+            propertyBrowserOpen: a,
+            editorRef: b
+        } = e, h = (Ie() === o || !c.length || !o) && Oe();
+        return s.jsx(ut, {
+            onClick: n => {
+                fe(n), l()
+            },
+            children: s.jsxs(dt, {
+                initial: M.Animation.content.codegrid.initial,
+                animate: M.Animation.content.codegrid.active,
+                exit: M.Animation.content.codegrid.leave,
+                transition: {
+                    duration: M.Animation.durationSeconds,
+                    ease: M.Animation.easeType
+                },
+                onClick: n => n.stopPropagation(),
+                children: [s.jsx(Se, {
+                    onClick: l,
+                    color: z.White,
+                    padding: 25
+                }), s.jsx(mt, {
+                    children: s.jsx(rt, {
+                        ref: b,
+                        deviceId: t,
+                        gridJSON: i,
+                        gridId: r,
+                        onBlockCountChange: e.setGridBlockCount,
+                        isOwner: h,
+                        openChannelBrowser: u,
+                        channelBrowserOpen: x,
+                        openPropertyBrowser: f,
+                        propertyBrowserOpen: a
+                    }, `blockly-editor-${String(h)}`)
+                }), s.jsx(ct, {
+                    deviceId: t,
+                    gridId: r,
+                    isOwner: h,
+                    gridOwner: o,
+                    blockCount: e.gridBlockCount,
+                    openChannelBrowser: u,
+                    openPropertyBrowser: f
+                })]
+            })
+        })
+    },
+    pt = e => {
+        U(Y.leaveCodeGrid, {
+            deviceId: e.deviceId,
+            gridId: e.gridId
+        })
+    },
+    ht = e => {
+        U(Y.joinCodeGrid, {
+            deviceId: e.deviceId,
+            gridId: e.gridId
+        })
+    },
+    gt = e => {
+        const {
+            token: {
+                borderRadius: t
+            }
+        } = Ce.useToken();
+        return s.jsx(yt, {
+            borderRadius: t,
+            focused: e.focused,
+            onClick: e.onSelect,
+            children: s.jsx(R.Text, {
+                children: e.name
+            })
+        })
+    },
+    yt = O.div`
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  border-radius: ${e=>e.borderRadius}px;
+  border: 2px solid
+    ${e=>e.focused?"#ffca28":"rgba(255, 255, 255, 0.1)"};
+  padding: 10px 15px;
+  transition: background 0.2s ease-in-out;
+  overflow: hidden;
+  &:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+`,
+    le = e => {
+        const [t, r] = g.useState(-1), [o, c] = g.useState(""), i = g.useRef(), l = Ee(e.category), u = n => {
+            c(n.target.value), r(0)
+        }, x = n => {
+            var m;
+            c(""), r(-1), n && ((m = i == null ? void 0 : i.current) == null || m.focus())
+        }, f = g.useMemo(() => {
+            const n = () => o ? l.filter(m => m.toLowerCase().includes(o.toLowerCase())) : l;
+            return ve.orderBy(n(), [m => m.toLowerCase()], ["asc"])
+        }, [o]);
+        K(Phaser.Input.Keyboard.KeyCodes.DOWN, () => {
+            const n = t + 1;
+            f[n] && r(n)
+        }, [f.length, t]), K(Phaser.Input.Keyboard.KeyCodes.UP, () => {
+            if (t === -1) return;
+            const n = Math.max(0, t - 1);
+            r(n)
+        }, [f.length, t]);
+        const a = () => {
+                const n = f[t];
+                if (n) b(n);
+                else {
+                    const m = o == null ? void 0 : o.trim();
+                    m && b(m)
+                }
+            },
+            b = n => {
+                e.onItemSelected(n), e.close()
+            },
+            h = () => l.length ? f.length ? s.jsx(me, {
+                className: "maxWidth",
+                direction: "vertical",
+                size: 8,
+                children: f.map((n, m) => s.jsx(gt, {
+                    name: n,
+                    focused: t === m,
+                    onSelect: () => b(n)
+                }, n))
+            }) : s.jsx(R.Text, {
+                children: e.noResultsFilteredText
+            }) : s.jsx(R.Text, {
+                children: e.noResultsText
+            });
+        return s.jsx("div", {
+            onClick: fe,
+            children: s.jsxs(Ne, {
+                open: e.visible,
+                onClose: n => {
+                    n.stopPropagation(), e.close()
+                },
+                placement: "right",
+                width: 400,
+                afterOpenChange: x,
+                title: e.title,
+                children: [s.jsx(de, {
+                    ref: i,
+                    size: "large",
+                    className: "maxWidth",
+                    placeholder: e.searchPlaceholder,
+                    style: {
+                        marginBottom: 20
+                    },
+                    allowClear: !0,
+                    value: o,
+                    onChange: u,
+                    onPressEnter: a,
+                    maxLength: 512
+                }), h()]
+            })
+        })
+    },
+    Zr = ae(e => {
+        const {
+            me: {
+                editing: {
+                    device: t
+                }
+            },
+            world: {
+                devices: {
+                    codeGrids: r
+                }
+            },
+            memorySystem: {
+                limits: o
+            }
+        } = q(), [c, i, l] = te(!1), [u, x, f] = te(!1), [a, b] = g.useState(void 0), [h, n] = g.useState(0), [m, v] = g.useState(void 0), [d, w] = g.useState(void 0), B = g.useRef(), V = () => {
+            var S;
+            (S = r.get(e.deviceId)) != null && S.items.has(t.currentlyEditedGridId) || (Me.error(`This ${Q.grid.singular} was deleted!`), e.close())
+        }, {
+            start: A,
+            clear: F
+        } = Fe(V, 25), T = t.currentlyEditedGridId;
+        g.useEffect(() => (ht({
+            deviceId: e.deviceId,
+            gridId: T
+        }), () => {
+            pt({
+                deviceId: e.deviceId,
+                gridId: T
+            })
+        }), []), g.useEffect(() => {
+            const I = L(() => {
+                    var y;
+                    return (y = r.get(e.deviceId)) == null ? void 0 : y.items.has(T)
+                }, y => {
+                    y || (F(), A())
+                }, {
+                    fireImmediately: !0
+                }),
+                S = L(() => {
+                    var y, P, E;
+                    return (E = (P = (y = r.get(e.deviceId)) == null ? void 0 : y.items) == null ? void 0 : P.get(T)) == null ? void 0 : E.visitors
+                }, y => {
+                    y && v(y)
+                }, {
+                    fireImmediately: !0
+                }),
+                $ = L(() => {
+                    var y, P, E;
+                    return (E = (P = (y = r.get(e.deviceId)) == null ? void 0 : y.items) == null ? void 0 : P.get(T)) == null ? void 0 : E.json
+                }, y => {
+                    y !== void 0 && b(y)
+                }, {
+                    fireImmediately: !0
+                }),
+                ge = L(() => {
+                    var y, P, E;
+                    return (E = (P = (y = r.get(e.deviceId)) == null ? void 0 : y.items) == null ? void 0 : P.get(T)) == null ? void 0 : E.owner
+                }, y => {
+                    y !== void 0 && w(y)
+                }, {
+                    fireImmediately: !0
+                });
+            return () => {
+                F(), I(), S(), $(), ge()
+            }
+        }, []), K(je.Input.Keyboard.KeyCodes.ESC, e.close);
+        const D = () => {
+                e.close()
+            },
+            G = I => {
+                var S;
+                h >= o.blocksPerCodeGrid || (S = B == null ? void 0 : B.current) == null || S.addTextBlock(I)
+            },
+            C = I => {
+                var S;
+                h >= o.blocksPerCodeGrid || (S = B == null ? void 0 : B.current) == null || S.addTextBlock(I)
+            };
+        return a === void 0 || m === void 0 || d === void 0 ? null : s.jsxs(s.Fragment, {
+            children: [s.jsx(ft, {
+                deviceId: e.deviceId,
+                gridId: T,
+                gridJSON: a,
+                gridVisitors: m,
+                gridOwner: d,
+                gridBlockCount: h,
+                setGridBlockCount: n,
+                switchToHomeScreen: D,
+                openChannelBrowser: i,
+                channelBrowserOpen: c,
+                openPropertyBrowser: x,
+                propertyBrowserOpen: u,
+                editorRef: B
+            }), s.jsx(le, {
+                visible: c,
+                close: l,
+                title: "Channel Browser",
+                searchPlaceholder: "Search channels...",
+                category: oe.channel,
+                noResultsText: "All the channels you broadcast on and listen to will appear here!",
+                noResultsFilteredText: "No channels matching your search. Press Enter to add the channel currently in the search bar!",
+                onItemSelected: G
+            }), s.jsx(le, {
+                visible: u,
+                close: f,
+                title: "Property Browser",
+                searchPlaceholder: "Search properties...",
+                category: oe.property,
+                noResultsText: `Properties you create using the Property ${H(re.device.singular)} will show up here!`,
+                noResultsFilteredText: `No properties match your search. Press Enter to add the property
+        currently in the search bar. Remember to add a corresponding Property
+        ${H(re.device.singular)} to your map!`,
+                onItemSelected: C
+            })]
+        })
+    });
 export {
-    V as
+    Zr as
     default
 };

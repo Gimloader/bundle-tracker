@@ -101,6 +101,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const c = {
@@ -118,7 +119,7 @@ const c = {
         return c[r]
     };
 var w = (e => (e.collect = "collect", e))(w || {});
-class ei extends O {
+class oi extends O {
     constructor(o) {
         super(o), this.hasLoaded = !1, this.isShowing = !0, this.isWithinInteractionRange = !1, this.itemDimensions = {
             width: 0,
@@ -237,6 +238,6 @@ class ei extends O {
     }
 }
 export {
-    ei as
+    oi as
     default
 };

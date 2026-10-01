@@ -75,6 +75,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const u = {
@@ -95,7 +96,7 @@ const w = 350,
     o = t => {
         p().plugins.get("rexGrayScalePipeline").remove(t)
     };
-class Ut extends g {
+class bt extends g {
     constructor(m) {
         super(m), this.stepOnCounter = 0, this.onMessage = i => {
             if (i.key === s.steppedOn) {
@@ -119,6 +120,6 @@ class Ut extends g {
     }
 }
 export {
-    Ut as
+    bt as
     default
 };

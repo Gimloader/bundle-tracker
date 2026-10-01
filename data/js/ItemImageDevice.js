@@ -83,10 +83,11 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 var s = (o => (o.automatic = "automatic", o.custom = "custom", o))(s || {});
-class Wi extends h {
+class bi extends h {
     constructor(a) {
         super(a), this.createVisuals = () => {
             const i = {
@@ -134,6 +135,6 @@ class Wi extends h {
     }
 }
 export {
-    Wi as
+    bi as
     default
 };

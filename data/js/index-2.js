@@ -1,11 +1,11 @@
 import {
     x as ee,
     r as i,
-    aO as te,
-    aF as ae,
-    ct as re,
+    ba as te,
+    aS as ae,
+    cs as re,
     am as k,
-    cu as oe,
+    ct as oe,
     aw as ne
 } from "./_index.js";
 
@@ -16,10 +16,10 @@ function j(e) {
 function V(e) {
     return e ? typeof e == "number" && !Number.isNaN(e) : !1
 }
-const F = ee.createContext({
+const _ = ee.createContext({
         latestIndex: 0
     }),
-    se = F.Provider,
+    se = _.Provider,
     le = ({
         className: e,
         index: n,
@@ -29,7 +29,7 @@ const F = ee.createContext({
     }) => {
         const {
             latestIndex: l
-        } = i.useContext(F);
+        } = i.useContext(_);
         return o == null ? null : i.createElement(i.Fragment, null, i.createElement("div", {
             className: e,
             style: s
@@ -62,17 +62,17 @@ const ie = i.forwardRef((e, n) => {
             children: w,
             direction: c = "horizontal",
             prefixCls: g,
-            split: _,
+            split: F,
             style: G,
             wrap: H = !1,
             classNames: N,
             styles: E
-        } = e, M = ce(e, ["size", "align", "className", "rootClassName", "children", "direction", "prefixCls", "split", "style", "wrap", "classNames", "styles"]), [b, x] = Array.isArray(d) ? d : [d, d], R = j(x), $ = j(b), K = V(x), L = V(b), T = ae(w, {
+        } = e, M = ce(e, ["size", "align", "className", "rootClassName", "children", "direction", "prefixCls", "split", "style", "wrap", "classNames", "styles"]), [b, x] = Array.isArray(d) ? d : [d, d], O = j(x), $ = j(b), K = V(x), L = V(b), T = ae(w, {
             keepEmpty: !0
         }), A = m === void 0 && c === "horizontal" ? "center" : m, p = t("space", g), [W, X, B] = re(p), J = k(p, r, X, `${p}-${c}`, {
             [`${p}-rtl`]: s === "rtl",
             [`${p}-align-${A}`]: A,
-            [`${p}-gap-row-${x}`]: R,
+            [`${p}-gap-row-${x}`]: O,
             [`${p}-gap-col-${b}`]: $
         }, a, y, B), I = k(`${p}-item`, (o = N == null ? void 0 : N.item) !== null && o !== void 0 ? o : v.item);
         let D = 0;
@@ -84,7 +84,7 @@ const ie = i.forwardRef((e, n) => {
                     className: I,
                     key: Z,
                     index: h,
-                    split: _,
+                    split: F,
                     style: (z = E == null ? void 0 : E.item) !== null && z !== void 0 ? z : C.item
                 }, f)
             }),
@@ -93,7 +93,7 @@ const ie = i.forwardRef((e, n) => {
             }), [D]);
         if (T.length === 0) return null;
         const S = {};
-        return H && (S.flexWrap = "wrap"), !$ && L && (S.columnGap = b), !R && K && (S.rowGap = x), W(i.createElement("div", Object.assign({
+        return H && (S.flexWrap = "wrap"), !$ && L && (S.columnGap = b), !O && K && (S.rowGap = x), W(i.createElement("div", Object.assign({
             ref: n,
             className: J,
             style: Object.assign(Object.assign(Object.assign({}, S), u), G)
@@ -103,10 +103,10 @@ const ie = i.forwardRef((e, n) => {
     }),
     ue = ie;
 ue.Compact = oe;
-var O, U;
+var P, U;
 
 function de() {
-    return U || (U = 1, O = function() {
+    return U || (U = 1, P = function() {
         var e = document.getSelection();
         if (!e.rangeCount) return function() {};
         for (var n = document.activeElement, o = [], t = 0; t < e.rangeCount; t++) o.push(e.getRangeAt(t));
@@ -125,12 +125,12 @@ function de() {
                     e.addRange(s)
                 }), n && n.focus()
             }
-    }), O
+    }), P
 }
-var P, q;
+var R, q;
 
 function me() {
-    if (q) return P;
+    if (q) return R;
     q = 1;
     var e = de(),
         n = {
@@ -173,7 +173,7 @@ function me() {
         }
         return y
     }
-    return P = s, P
+    return R = s, R
 }
 var pe = me();
 const ye = ne(pe);

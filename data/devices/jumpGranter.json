@@ -1,7 +1,7 @@
 {
     "id": "jumpGranter",
-    "name": "Jump Granter",
-    "description": "Grants jumps to players.",
+    "name": "Jump Crystal",
+    "description": "Grant players additional jumps!",
     "optionSchema": {
         "categories": {
             "categories": [
@@ -20,22 +20,22 @@
             {
                 "key": "mode",
                 "option": {
-                    "label": "Mode",
-                    "description": "Choose whether to reset or grant jumps",
+                    "label": "Grant Mode",
+                    "description": "Specify whether to grant or reset jumps",
                     "type": "select",
                     "validators": [
                         null
                     ],
-                    "defaultValue": "reset",
+                    "defaultValue": "grant",
                     "props": {
                         "options": [
                             {
-                                "value": "reset",
-                                "name": "Reset"
+                                "value": "grant",
+                                "name": "Grant Jumps"
                             },
                             {
-                                "value": "grant",
-                                "name": "Grant"
+                                "value": "reset",
+                                "name": "Reset Jumps"
                             }
                         ],
                         "allowEmpty": false
@@ -48,7 +48,7 @@
             {
                 "key": "jumpsNumber",
                 "option": {
-                    "label": "Jumps Number",
+                    "label": "Jump Count",
                     "description": "The number of jumps to grant",
                     "type": "numberInput",
                     "defaultValue": 1,
@@ -78,14 +78,16 @@
             {
                 "key": "disabledTime",
                 "option": {
-                    "label": "Disabled Time",
-                    "description": "The time in seconds to disable the device after use",
+                    "label": "Cooldown Time (Seconds)",
+                    "description": "After being used, how long does it take for the Jump Crystal to be usable again?",
                     "type": "numberInput",
                     "defaultValue": 1,
                     "validators": [
                         null
                     ],
                     "props": {
+                        "max": 120,
+                        "step": 0.1,
                         "allowEmpty": false,
                         "useSlider": false
                     }
@@ -97,9 +99,9 @@
             {
                 "key": "activeOnStart",
                 "option": {
-                    "label": "Active On Start",
+                    "label": "Active On Game Start",
                     "type": "select",
-                    "description": "Whether the device is active when the game starts",
+                    "description": "Is the Jump Crystal active when the game starts?",
                     "defaultValue": true,
                     "validators": [
                         null
@@ -126,7 +128,7 @@
             {
                 "key": "activateOnChannel",
                 "option": {
-                    "label": "Activate On Channel",
+                    "label": "Activate when receiving on",
                     "type": "textInput",
                     "defaultValue": "",
                     "validators": [
@@ -137,7 +139,7 @@
                         "category": "channel",
                         "maxLength": 100
                     },
-                    "description": "The channel to activate the device on"
+                    "description": "Activate when the device receives a signal from the selected channel"
                 },
                 "categories": [
                     "channels"
@@ -146,7 +148,7 @@
             {
                 "key": "deactivateOnChannel",
                 "option": {
-                    "label": "Deactivate On Channel",
+                    "label": "Deactivate when receiving on",
                     "type": "textInput",
                     "defaultValue": "",
                     "validators": [
@@ -157,7 +159,7 @@
                         "category": "channel",
                         "maxLength": 100
                     },
-                    "description": "The channel to deactivate the device on"
+                    "description": "Deactivate when the device receives a signal from the selected channel"
                 },
                 "categories": [
                     "channels"
@@ -168,7 +170,7 @@
                 "option": {
                     "label": "Scope",
                     "type": "select",
-                    "defaultValue": "global",
+                    "defaultValue": "player",
                     "validators": [
                         null
                     ],
@@ -189,10 +191,10 @@
                         ],
                         "allowEmpty": false
                     },
-                    "description": "The scope of the device"
+                    "description": "When the Jump Crystal is used or activated/deactivated, who does it apply to?"
                 },
                 "categories": [
-                    "featured"
+                    "channels"
                 ]
             }
         ]
@@ -220,10 +222,10 @@
             ]
         }
     },
-    "minimumRoleLevel": 90,
-    "maxOnMap": 512,
-    "initialMemoryCost": 25,
-    "subsequentMemoryCost": 25,
+    "seasonTicketRequired": true,
+    "maxOnMap": 256,
+    "initialMemoryCost": 50,
+    "subsequentMemoryCost": 50,
     "supportedMapStyles": [
         "platformer"
     ]

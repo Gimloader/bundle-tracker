@@ -1,7 +1,7 @@
 import {
     dj as ce,
     r as Z,
-    bq as fe
+    bp as fe
 } from "./_index.js";
 const ee = e => typeof e == "object" && e != null && e.nodeType === 1,
     te = (e, o) => (!o || e !== "hidden") && e !== "visible" && e !== "clip",
@@ -99,8 +99,8 @@ const ee = e => typeof e == "object" && e != null && e.nodeType === 1,
                 g = 0;
             const x = "offsetWidth" in s ? s.offsetWidth - s.clientWidth - R - S : 0,
                 k = "offsetHeight" in s ? s.offsetHeight - s.clientHeight - E - T : 0,
-                q = "offsetWidth" in s ? s.offsetWidth === 0 ? 0 : W / s.offsetWidth : 0,
-                $ = "offsetHeight" in s ? s.offsetHeight === 0 ? 0 : O / s.offsetHeight : 0;
+                $ = "offsetWidth" in s ? s.offsetWidth === 0 ? 0 : W / s.offsetWidth : 0,
+                q = "offsetHeight" in s ? s.offsetHeight === 0 ? 0 : O / s.offsetHeight : 0;
             if (P === s) h = c === "start" ? d : c === "end" ? d - b : c === "nearest" ? C(y, y + b, b, E, T, y + d, y + d + v, v) : d - b / 2, g = f === "start" ? u : f === "center" ? u - m / 2 : f === "end" ? u - m : C(w, w + m, m, R, S, w + u, w + u + F, F), h = Math.max(0, h + y), g = Math.max(0, g + w);
             else {
                 h = c === "start" ? d - N - E : c === "end" ? d - Y + T + k : c === "nearest" ? C(N, Y, O, E, T + k, d, d + v, v) : d - (N + O / 2) + k / 2, g = f === "start" ? u - j - R : f === "center" ? u - (j + W / 2) + x / 2 : f === "end" ? u - X + S + x : C(j, X, W, R, S + x, u, u + F, F);
@@ -108,7 +108,7 @@ const ee = e => typeof e == "object" && e != null && e.nodeType === 1,
                     scrollLeft: Q,
                     scrollTop: U
                 } = s;
-                h = $ === 0 ? 0 : Math.max(0, Math.min(U + h / $, s.scrollHeight - O / $ + k)), g = q === 0 ? 0 : Math.max(0, Math.min(Q + g / q, s.scrollWidth - W / q + x)), d += U - h, u += Q - g
+                h = q === 0 ? 0 : Math.max(0, Math.min(U + h / q, s.scrollHeight - O / q + k)), g = $ === 0 ? 0 : Math.max(0, Math.min(Q + g / $, s.scrollWidth - W / $ + x)), d += U - h, u += Q - g
             }
             A.push({
                 el: s,

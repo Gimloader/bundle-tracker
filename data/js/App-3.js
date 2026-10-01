@@ -2,7 +2,7 @@ import {
     d as y,
     F as H,
     j as l,
-    b5 as q,
+    aU as q,
     r as m,
     u as F,
     ar as d,
@@ -22,15 +22,15 @@ import {
     I as P
 } from "./index-3.js";
 import {
-    T as $
+    T as U
 } from "./index-7.js";
 import {
     S as I
 } from "./index-8.js";
 import {
-    L as A
+    L as $
 } from "./AppTypes.js";
-const J = y.div.attrs({
+const A = y.div.attrs({
         className: "maxWidth flex vc between"
     })`
   box-sizing: border-box;
@@ -47,14 +47,14 @@ const J = y.div.attrs({
     transform: scale(1.02);
   }
 `,
-    Q = y.div.attrs({
+    J = y.div.attrs({
         className: "flex vc"
     })``,
-    R = y.div`
+    Q = y.div`
   font-size: 23px;
   margin-right: 10px;
 `,
-    U = y.div`
+    R = y.div`
   font-size: 23px;
   font-weight: ${H.Bold};
 `,
@@ -66,12 +66,12 @@ const J = y.div.attrs({
   flex-shrink: 0;
   margin-left: 25px;
 `,
-    b = e => l.jsxs(J, {
-        children: [l.jsxs(Q, {
-            children: [e.emoji ? l.jsx(R, {
+    S = e => l.jsxs(A, {
+        children: [l.jsxs(J, {
+            children: [e.emoji ? l.jsx(Q, {
                 children: e.emoji
             }) : null, l.jsxs("div", {
-                children: [l.jsx(U, {
+                children: [l.jsx(R, {
                     children: e.title
                 }), e.description ? l.jsx(G, {
                     children: e.description
@@ -83,7 +83,7 @@ const J = y.div.attrs({
     }),
     _ = e => {
         const n = t => e.onValueChanged(t);
-        return l.jsx(b, {
+        return l.jsx(S, {
             emoji: e.emoji,
             title: e.title,
             description: e.description,
@@ -113,7 +113,7 @@ const J = y.div.attrs({
         const r = () => {
             n !== i && e.onChange(n), o(), t(e.value)
         };
-        return l.jsx($, {
+        return l.jsx(U, {
             ...e,
             value: s ? n : i,
             onChange: c,
@@ -133,7 +133,7 @@ const J = y.div.attrs({
         const t = i => {
             e.onValueChanged(n(i))
         };
-        return l.jsx(b, {
+        return l.jsx(S, {
             emoji: e.emoji,
             title: e.title,
             description: e.description,
@@ -154,7 +154,7 @@ const J = y.div.attrs({
     },
     W = (e, n) => {
         var i;
-        return (i = JSON.parse(localStorage.getItem(A.hookSavedOptions) || "{}")[n]) == null ? void 0 : i[e]
+        return (i = JSON.parse(localStorage.getItem($.hookSavedOptions) || "{}")[n]) == null ? void 0 : i[e]
     },
     p = e => {
         var s;
@@ -196,7 +196,7 @@ const J = y.div.attrs({
         const n = t => {
             e.onValueChanged(t.target.value)
         };
-        return l.jsx(b, {
+        return l.jsx(S, {
             emoji: e.emoji,
             title: e.title,
             description: e.description,
@@ -214,7 +214,7 @@ const J = y.div.attrs({
     };
 var k = (e => (e.editor = "editor", e.experiencePicker = "experiencePicker", e))(k || {}),
     B = (e => (e.kit = "kit", e))(B || {});
-const S = e => {
+const b = e => {
         let n, t;
         return n = e.key, e.displayName && (n = e.displayName), e.displayDescription && (t = e.displayDescription), {
             title: n,
@@ -225,7 +225,7 @@ const S = e => {
         let {
             title: n,
             description: t
-        } = S(e.hook);
+        } = b(e.hook);
         if (e.location === k.editor) {
             const i = "We're showing this hook for testing purposes, but this hook won't be visible when choosing this map from the Mode Picker.";
             t ? t += ` - ${i}` : t = i
@@ -243,7 +243,7 @@ const S = e => {
         const {
             title: n,
             description: t
-        } = S(e.hook), i = e.hook.options, a = s => {
+        } = b(e.hook), i = e.hook.options, a = s => {
             if (d.isNil(s) && !d.isNil(i.defaultValue)) {
                 e.onChange(i.defaultValue);
                 return
@@ -266,7 +266,7 @@ const S = e => {
         const {
             title: n,
             description: t
-        } = S(e.hook), i = e.hook.options;
+        } = b(e.hook), i = e.hook.options;
         return l.jsx(_, {
             title: n,
             description: t,
@@ -373,5 +373,5 @@ const z = (e, n) => {
         })
     });
 export {
-    p as H, B as I, T as M, Z as N, b as O, _ as S, J as a, U as b, G as c, K as d, Q as e, me as f, k as g, C as h, O as i, Y as j, X as n
+    p as H, B as I, T as M, Z as N, S as O, _ as S, A as a, R as b, G as c, K as d, J as e, me as f, k as g, C as h, O as i, Y as j, X as n
 };

@@ -1,61 +1,61 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/App-76.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/index-4.js", "assets/context.js", "assets/App-77.js", "assets/index-2.js", "assets/index-14.js", "assets/EditOutlined.js", "assets/styleChecker.js", "assets/index-5.js", "assets/index-3.js", "assets/CheckOutlined.js", "assets/CopyOutlined.js", "assets/AccessibleAnchor.js", "assets/Button.js", "assets/polished.esm.js", "assets/inheritsLoose.js", "assets/App-41.js", "assets/FixSpinePlugin.js", "assets/GetAssetPath.js", "assets/MapModeType.js", "assets/MapStyle.js", "assets/MapSound.js", "assets/howler.js", "assets/playSound.js", "assets/mobxreact.esm.js", "assets/index-21.js", "assets/QuizTypes.js", "assets/TutorialConsts.js", "assets/ActionButton.js", "assets/index-18.js", "assets/FontAwesomeIcon.js", "assets/Centered.js", "assets/CapitalizeFirstLetter.js", "assets/motion.js", "assets/SixteenByNineScaler.js", "assets/index-20.js", "assets/index-22.js", "assets/index-1.js", "assets/progress.js", "assets/ElementIds.js", "assets/SeasonTicketName.js", "assets/useQuery.js", "assets/___vite-browser-external_commonjs-proxy.js", "assets/util-1.js", "assets/util-2.js", "assets/Shortcut.js", "assets/Names.js", "assets/useWillUnmount.js", "assets/CircularProgress.js", "assets/clsx.m.js", "assets/index-6.js", "assets/index-17.js", "assets/use-force-update.js", "assets/GimkitLiveQuestion.js", "assets/Text.js", "assets/getCloudinaryUrl.js", "assets/LazyLatexRenderer.js", "assets/Tooltip.js", "assets/use-motion-value.js", "assets/index-9.js", "assets/index-23.js", "assets/useIntervalWhen.js", "assets/index-10.js", "assets/move.js", "assets/react-flip-move.es.js", "assets/sounds.js", "assets/App-5.js", "assets/AnimatedBackground-2.js", "assets/useDebouncedValue.js", "assets/FillRemainingSpace.js", "assets/index-24.js", "assets/App-78.js", "assets/Form.js", "assets/index-19.js", "assets/PaperClipOutlined.js", "assets/useForceUpdate.js", "assets/DeleteOutlined.js", "assets/DownloadOutlined.js", "assets/index-28.js", "assets/OwnsSeasonTicket.js", "assets/TrackEvent.js", "assets/TrackPostHogEvent.js", "assets/index-16.js", "assets/useForm.js", "assets/useBreakpoint.js", "assets/QuestionCircleOutlined.js", "assets/index-8.js", "assets/DownOutlined.js", "assets/index-11.js", "assets/useBubbleLock.js", "assets/StarOutlined.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/App-77.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/index-4.js", "assets/context.js", "assets/App-78.js", "assets/index-2.js", "assets/index-14.js", "assets/EditOutlined.js", "assets/styleChecker.js", "assets/index-5.js", "assets/index-3.js", "assets/CheckOutlined.js", "assets/CopyOutlined.js", "assets/AccessibleAnchor.js", "assets/Button.js", "assets/polished.esm.js", "assets/inheritsLoose.js", "assets/App-41.js", "assets/FixSpinePlugin.js", "assets/GetAssetPath.js", "assets/MapModeType.js", "assets/MapStyle.js", "assets/MapSound.js", "assets/howler.js", "assets/playSound.js", "assets/mobxreact.esm.js", "assets/index-21.js", "assets/QuizTypes.js", "assets/TutorialConsts.js", "assets/ActionButton.js", "assets/index-18.js", "assets/FontAwesomeIcon.js", "assets/Centered.js", "assets/CapitalizeFirstLetter.js", "assets/motion.js", "assets/SixteenByNineScaler.js", "assets/index-20.js", "assets/index-22.js", "assets/index-1.js", "assets/progress.js", "assets/ElementIds.js", "assets/SeasonTicketName.js", "assets/useQuery.js", "assets/___vite-browser-external_commonjs-proxy.js", "assets/util-1.js", "assets/util-2.js", "assets/Shortcut.js", "assets/Names.js", "assets/useWillUnmount.js", "assets/CircularProgress.js", "assets/clsx.m.js", "assets/index-6.js", "assets/index-17.js", "assets/use-force-update.js", "assets/GimkitLiveQuestion.js", "assets/Text.js", "assets/getCloudinaryUrl.js", "assets/LazyLatexRenderer.js", "assets/Tooltip.js", "assets/use-motion-value.js", "assets/index-9.js", "assets/index-23.js", "assets/useIntervalWhen.js", "assets/index-10.js", "assets/move.js", "assets/react-flip-move.es.js", "assets/sounds.js", "assets/App-5.js", "assets/AnimatedBackground-2.js", "assets/useDebouncedValue.js", "assets/CloseCircleOutlined.js", "assets/FillRemainingSpace.js", "assets/index-24.js", "assets/App-79.js", "assets/Form.js", "assets/index-19.js", "assets/PaperClipOutlined.js", "assets/useForceUpdate.js", "assets/DeleteOutlined.js", "assets/DownloadOutlined.js", "assets/index-28.js", "assets/OwnsSeasonTicket.js", "assets/TrackEvent.js", "assets/TrackPostHogEvent.js", "assets/index-16.js", "assets/useForm.js", "assets/useBreakpoint.js", "assets/QuestionCircleOutlined.js", "assets/index-8.js", "assets/DownOutlined.js", "assets/index-11.js", "assets/useBubbleLock.js", "assets/StarOutlined.js"]))) => i.map(i => d[i]);
 import {
     j as e,
     F as ee,
-    d as N,
+    d as R,
     r,
     E as ie,
-    u as Y,
+    u as U,
     e as $,
-    B as M,
+    B as E,
     D as F,
     a as me,
     aa as pe,
     M as he,
     q as ue,
     s as ge,
-    aW as xe,
+    aB as xe,
     S as je,
     a4 as ve,
-    a$ as B,
-    p as U,
+    aJ as B,
+    p as Y,
     U as fe
 } from "./_index.js";
 import {
     s as te,
-    i as ne,
+    i as se,
     X as ye,
-    a as I,
-    ab as c,
+    a as G,
+    ab as a,
     M as be
 } from "./FixSpinePlugin.js";
 import {
-    o as P
+    o as M
 } from "./mobxreact.esm.js";
 import {
     S as H,
     J as Z,
-    u as G,
-    M as m,
-    ao as V,
-    ap as q,
+    u as W,
+    M as d,
+    ao as q,
+    ap as V,
     aq as Se,
-    ar as j,
+    ar as v,
     as as Ce,
     at as we,
     au as Oe,
     av as ke,
-    b as A,
+    b as _,
     aw as Te,
     ax as Pe,
     P as De,
     F as Me,
     ay as Ae,
     x as Ee,
-    _ as se,
-    a5 as _e,
-    a2 as $e,
-    s as Ie,
+    _ as ne,
+    a6 as _e,
+    a3 as Ie,
+    s as Ne,
     y as J
 } from "./App-41.js";
 import {
@@ -65,27 +65,27 @@ import {
     F as re
 } from "./FontAwesomeIcon.js";
 import {
-    T as d
+    T as l
 } from "./index-14.js";
 import {
     C as ae
 } from "./Button.js";
 import {
-    C as _
+    C as N
 } from "./CapitalizeFirstLetter.js";
 import {
     M as K,
-    u as Ne,
+    u as $e,
     D as Ge
 } from "./App-57.js";
 import {
-    D as y
+    D as b
 } from "./index-6.js";
 import {
-    S as R
+    S as L
 } from "./index-2.js";
 import {
-    S as k
+    S as P
 } from "./index-9.js";
 import {
     S as Re,
@@ -98,19 +98,19 @@ import {
     S as Be
 } from "./index-28.js";
 import {
-    S as C
+    S as O
 } from "./index-8.js";
 import {
-    D as T
+    D
 } from "./TutorialConsts.js";
 import {
-    R as Ve
+    R as qe
 } from "./ShareAltOutlined.js";
 import {
     R as X
 } from "./SaveOutlined.js";
 import {
-    I as qe
+    I as Ve
 } from "./index-3.js";
 import {
     s as He
@@ -167,6 +167,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 import "./EditOutlined.js";
@@ -180,12 +181,12 @@ import "./LoadGoogleFontAfterSceneStart.js";
 import "./useItemAmount.js";
 import "./clsx.js";
 import "./index-29.js";
-const f = i => {
+const y = i => {
         const {
-            title: n,
+            title: s,
             description: o
         } = i;
-        return e.jsxs(Ye, {
+        return e.jsxs(Ue, {
             onClick: i.onClick,
             children: [e.jsx("div", {
                 style: {
@@ -197,20 +198,20 @@ const f = i => {
                     name: i.icon
                 })
             }), e.jsxs("div", {
-                children: [e.jsx(d.Title, {
+                children: [e.jsx(l.Title, {
                     style: {
                         marginBottom: 2,
                         fontWeight: ee.Bold
                     },
                     level: 4,
-                    children: n
-                }), e.jsx(d.Text, {
+                    children: s
+                }), e.jsx(l.Text, {
                     children: o
                 })]
             })]
         })
     },
-    Ye = N(oe).attrs({
+    Ue = R(oe).attrs({
         className: "maxWidth"
     })`
   padding: 30px;
@@ -222,7 +223,7 @@ const f = i => {
     background: rgba(255, 255, 255, 0.17);
   }
 `,
-    Ue = i => {
+    Ye = i => {
         te.gui.none.optionsMenu.screen = i
     },
     Je = i => {
@@ -233,98 +234,98 @@ const f = i => {
             manageCodeGrids: i.manageCodeGrids
         })
     },
-    Ke = P(i => {
+    Ke = M(i => {
         const {
             session: {
-                globalPermissions: n
+                globalPermissions: s
             }
-        } = G(), o = (s, p) => {
-            const a = {
-                adding: n.adding,
-                removing: n.removing,
-                editing: n.editing,
-                manageCodeGrids: n.manageCodeGrids
+        } = W(), o = (n, m) => {
+            const c = {
+                adding: s.adding,
+                removing: s.removing,
+                editing: s.editing,
+                manageCodeGrids: s.manageCodeGrids
             };
-            a[s] = p, Je(a)
+            c[n] = m, Je(c)
         };
-        return e.jsxs(y, {
+        return e.jsxs(b, {
             placement: "left",
             open: i.open,
             onClose: i.close,
             width: 450,
             title: "Permissions",
-            children: [e.jsx(d.Text, {
+            children: [e.jsx(l.Text, {
                 children: "Set what other players collaborating with you are allowed to do! Changes are applied immediately."
-            }), e.jsxs(R, {
+            }), e.jsxs(L, {
                 direction: "vertical",
                 className: "maxWidth",
                 size: 14,
                 style: {
                     marginTop: 22
                 },
-                children: [e.jsx(E, {
+                children: [e.jsx(I, {
                     name: "Adding",
-                    description: `Are other players allowed to add ${m.terrain.singular}, ${m.prop.plural}, ${m.device.plural}, and ${m.wire.singular} to the map?`,
-                    enabled: n.adding,
-                    onChange: s => o("adding", s)
-                }), e.jsx(E, {
+                    description: `Are other players allowed to add ${d.terrain.singular}, ${d.prop.plural}, ${d.device.plural}, and ${d.wire.singular} to the map?`,
+                    enabled: s.adding,
+                    onChange: n => o("adding", n)
+                }), e.jsx(I, {
                     name: "Removing",
                     description: "Are other players allowed to remove things from the map?",
-                    enabled: n.removing,
-                    onChange: s => o("removing", s)
-                }), e.jsx(E, {
+                    enabled: s.removing,
+                    onChange: n => o("removing", n)
+                }), e.jsx(I, {
                     name: "Editing",
-                    description: `Are other players allowed to modify options for ${m.prop.plural}, ${m.device.plural}, and ${m.wire.singular}?`,
-                    enabled: n.editing,
-                    onChange: s => o("editing", s)
-                }), e.jsx(E, {
-                    name: _(K.grid.plural),
-                    description: `Are other players allowed to create and edit ${K.grid.plural} for ${m.device.plural}?`,
-                    enabled: n.manageCodeGrids,
-                    onChange: s => o("manageCodeGrids", s)
+                    description: `Are other players allowed to modify options for ${d.prop.plural}, ${d.device.plural}, and ${d.wire.singular}?`,
+                    enabled: s.editing,
+                    onChange: n => o("editing", n)
+                }), e.jsx(I, {
+                    name: N(K.grid.plural),
+                    description: `Are other players allowed to create and edit ${K.grid.plural} for ${d.device.plural}?`,
+                    enabled: s.manageCodeGrids,
+                    onChange: n => o("manageCodeGrids", n)
                 })]
             })]
         })
     }),
-    E = i => e.jsxs(Xe, {
+    I = i => e.jsxs(Xe, {
         children: [e.jsxs("div", {
             style: {
                 marginRight: 35
             },
-            children: [e.jsx(d.Title, {
+            children: [e.jsx(l.Title, {
                 level: 5,
                 style: {
                     color: ae.White
                 },
                 children: i.name
-            }), e.jsx(d.Text, {
+            }), e.jsx(l.Text, {
                 children: i.description
             })]
         }), e.jsx("div", {
-            children: e.jsx(k, {
+            children: e.jsx(P, {
                 checked: i.enabled,
                 onChange: i.onChange
             })
         })]
     }),
-    Xe = N.div.attrs({
+    Xe = R.div.attrs({
         className: "flex between"
     })`
   padding: 17px;
   background: rgba(255, 255, 255, 0.08);
   border-radius: 6px;
 `,
-    Qe = P(i => {
+    Qe = M(i => {
         const {
-            editing: n,
+            editing: s,
             me: o,
-            gui: s
-        } = G(), [p, a] = r.useState(V().zonedDeviceDisplay), [l, h] = r.useState(V().wireVisibility), g = t => {
-            j("phase", t), o.editing.preferences.phase = t, Pe(t)
+            gui: n
+        } = W(), [m, c] = r.useState(q().zonedDeviceDisplay), [p, h] = r.useState(q().wireVisibility), u = t => {
+            v("phase", t), o.editing.preferences.phase = t, Pe(t)
         }, x = t => {
-            j("cameraZoom", t), o.editing.preferences.cameraZoom = t, I().cameraHelper.forceRefresh()
+            v("cameraZoom", t), o.editing.preferences.cameraZoom = t, G().cameraHelper.forceRefresh()
         };
-        return ne() ? e.jsx(ie, {
+        return se() ? e.jsx(ie, {
             theme: {
                 components: {
                     Switch: {
@@ -333,108 +334,108 @@ const f = i => {
                     }
                 }
             },
-            children: e.jsx(y, {
+            children: e.jsx(b, {
                 placement: "left",
                 open: i.open,
                 onClose: i.close,
                 width: 450,
                 title: "Editing Options",
-                children: e.jsxs(R, {
+                children: e.jsxs(L, {
                     direction: "vertical",
                     className: "maxWidth",
                     size: 14,
-                    children: [e.jsx(v, {
+                    children: [e.jsx(f, {
                         name: "Camera Zoom",
                         description: "Zoom out to see more in edit mode",
                         children: e.jsx(Be, {
-                            min: q.min,
-                            max: q.max,
-                            step: q.step,
+                            min: V.min,
+                            max: V.max,
+                            step: V.step,
                             className: "maxWidth",
                             value: o.editing.preferences.cameraZoom,
                             onChange: x
                         })
-                    }), e.jsx(v, {
+                    }), e.jsx(f, {
                         inline: !0,
                         name: "Player Collision",
                         description: "Disable to walk through walls & objects in edit mode",
-                        children: e.jsx(k, {
+                        children: e.jsx(P, {
                             "aria-label": "Player Collision",
                             checked: !o.phase,
-                            onChange: t => g(!t)
+                            onChange: t => u(!t)
                         })
-                    }), e.jsx(v, {
+                    }), e.jsx(f, {
                         name: "Player Speed",
                         description: "Adjust how fast you move in edit mode",
-                        children: e.jsx(C, {
+                        children: e.jsx(O, {
                             className: "maxWidth",
                             value: o.movementSpeed / ye.normal,
                             onChange: t => {
-                                j("movementSpeed", t), o.editing.preferences.movementSpeed = t, Ce(t)
+                                v("movementSpeed", t), o.editing.preferences.movementSpeed = t, Ce(t)
                             },
-                            children: Se.map(t => e.jsx(C.Option, {
+                            children: Se.map(t => e.jsx(O.Option, {
                                 value: t,
                                 children: `${t}x`
                             }, `speed-${t}`))
                         })
-                    }), e.jsx(v, {
+                    }), e.jsx(f, {
                         name: "Grid Snap",
-                        description: `When placing ${m.prop.plural} & ${m.device.plural}, easily align them using grid snap`,
-                        children: e.jsx(C, {
+                        description: `When placing ${d.prop.plural} & ${d.device.plural}, easily align them using grid snap`,
+                        children: e.jsx(O, {
                             className: "maxWidth",
-                            value: n.gridSnap,
+                            value: s.gridSnap,
                             onChange: t => {
-                                j("gridSnap", t), n.gridSnap = t
+                                v("gridSnap", t), s.gridSnap = t
                             },
-                            children: we.map(t => e.jsx(C.Option, {
+                            children: we.map(t => e.jsx(O.Option, {
                                 value: t,
                                 children: t === 0 ? "Off" : t
                             }, `grid-snap-${t}`))
                         })
-                    }), e.jsx(v, {
+                    }), e.jsx(f, {
                         name: "Show Grid",
                         inline: !0,
-                        children: e.jsx(k, {
+                        children: e.jsx(P, {
                             "aria-label": "Show Grid",
-                            checked: s.showingGrid,
+                            checked: n.showingGrid,
                             onChange: t => {
-                                j("showGrid", t), o.editing.preferences.showGrid = t, s.showingGrid = t
+                                v("showGrid", t), o.editing.preferences.showGrid = t, n.showingGrid = t
                             }
                         })
-                    }), e.jsx(v, {
-                        name: `Zone ${_(m.device.singular)} Display`,
-                        description: `Set the appearance of ${m.device.plural} that use a zone area`,
-                        children: e.jsx(C, {
+                    }), e.jsx(f, {
+                        name: `Zone ${N(d.device.singular)} Display`,
+                        description: `Set the appearance of ${d.device.plural} that use a zone area`,
+                        children: e.jsx(O, {
                             className: "maxWidth",
-                            value: p,
+                            value: m,
                             onChange: t => {
-                                j("zonedDeviceDisplay", t), a(t), ke()
+                                v("zonedDeviceDisplay", t), c(t), ke()
                             },
-                            children: Oe.map(t => e.jsx(C.Option, {
+                            children: Oe.map(t => e.jsx(O.Option, {
                                 value: t.value,
                                 children: t.label
                             }, t.value))
                         })
-                    }), e.jsx(v, {
+                    }), e.jsx(f, {
                         inline: !0,
                         name: "Wire Visibility",
-                        description: `Disable to hide wires except ones connected to ${m.device.plural} you have selected`,
-                        children: e.jsx(k, {
+                        description: `Disable to hide wires except ones connected to ${d.device.plural} you have selected`,
+                        children: e.jsx(P, {
                             "aria-label": "Wire Visibility",
-                            checked: l,
+                            checked: p,
                             onChange: t => {
-                                j("wireVisibility", t), h(V().wireVisibility), I().worldManager.wires.visibilityManager.update()
+                                v("wireVisibility", t), h(q().wireVisibility), G().worldManager.wires.visibilityManager.update()
                             }
                         })
-                    }), e.jsx(v, {
+                    }), e.jsx(f, {
                         inline: !0,
-                        name: `${_(A)} Bar`,
-                        description: `Show the ${A} bar, even if ${A} is below ${Te}%`,
-                        children: e.jsx(k, {
-                            "aria-label": `${_(A)} Bar`,
-                            checked: n.showMemoryBarAtAllTimes,
+                        name: `${N(_)} Bar`,
+                        description: `Show the ${_} bar, even if ${_} is below ${Te}%`,
+                        children: e.jsx(P, {
+                            "aria-label": `${N(_)} Bar`,
+                            checked: s.showMemoryBarAtAllTimes,
                             onChange: t => {
-                                j("showMemoryBarAtAllTimes", t), n.showMemoryBarAtAllTimes = t
+                                v("showMemoryBarAtAllTimes", t), s.showMemoryBarAtAllTimes = t
                             }
                         })
                     })]
@@ -442,8 +443,8 @@ const f = i => {
             })
         }) : null
     }),
-    v = i => {
-        const n = e.jsxs(Re, {
+    f = i => {
+        const s = e.jsxs(Re, {
             children: [e.jsx(We, {
                 children: i.name
             }), i.description ? e.jsx(Le, {
@@ -452,9 +453,9 @@ const f = i => {
         });
         return e.jsx(ze, {
             children: i.inline ? e.jsxs(Fe, {
-                children: [n, i.children]
+                children: [s, i.children]
             }) : e.jsxs(e.Fragment, {
-                children: [n, e.jsx("div", {
+                children: [s, e.jsx("div", {
                     style: {
                         marginTop: 10
                     },
@@ -464,16 +465,16 @@ const f = i => {
         })
     },
     ei = i => {
-        const n = I().worldManager.devices.allDevices.find(s => s.deviceOption.id === T.mapOptions),
-            o = s => {
+        const s = G().worldManager.devices.allDevices.find(n => n.deviceOption.id === D.mapOptions),
+            o = n => {
                 te.me.editing.device.currentlyEditedDevice = {
-                    id: s,
-                    deviceOptionId: T.mapOptions
+                    id: n,
+                    deviceOptionId: D.mapOptions
                 }, i()
             };
-        n ? o(n.id) : De({
+        s ? o(s.id) : De({
             id: Ae(),
-            deviceOption: Me(T.mapOptions),
+            deviceOption: Me(D.mapOptions),
             x: 0,
             y: 0,
             name: "",
@@ -481,55 +482,55 @@ const f = i => {
             state: {},
             placedByClient: !0,
             isPreview: !1,
-            onPlace: s => {
+            onPlace: n => {
                 Ee({
-                    id: s.id,
-                    deviceTypeId: T.mapOptions,
-                    x: s.x,
-                    y: s.y,
-                    name: s.name,
-                    options: JSON.stringify(s.options)
-                }), o(s.id)
+                    id: n.id,
+                    deviceTypeId: D.mapOptions,
+                    x: n.x,
+                    y: n.y,
+                    name: n.name,
+                    options: JSON.stringify(n.options)
+                }), o(n.id)
             }
         })
     },
-    ii = P(i => {
+    ii = M(i => {
         const {
-            options: n,
+            options: s,
             position: o,
-            hooks: s
-        } = Ne(), p = () => {
-            const a = I().worldManager.devices.allDevices.find(l => l.deviceOption.id === T.mapOptions);
-            return a ? e.jsx(Ge, {
-                device: a,
-                deviceOption: a.deviceOption,
-                options: n,
+            hooks: n
+        } = $e(), m = () => {
+            const c = G().worldManager.devices.allDevices.find(p => p.deviceOption.id === D.mapOptions);
+            return c ? e.jsx(Ge, {
+                device: c,
+                deviceOption: c.deviceOption,
+                options: s,
                 position: o,
-                hooks: s
+                hooks: n
             }) : null
         };
-        return e.jsx(y, {
+        return e.jsx(b, {
             placement: "left",
             open: i.open,
             onClose: i.close,
             width: 550,
             title: "Map Options",
-            children: p()
+            children: m()
         })
     }),
-    ti = P(i => {
+    ti = M(i => {
         const {
             me: {
-                roleLevel: n
+                roleLevel: s
             }
-        } = G(), [o, s, p] = Y(!1), a = () => {
-            o || (s(), me({
+        } = W(), [o, n, m] = U(!1), c = () => {
+            o || (n(), me({
                 url: "/api/created-map/publish-link",
                 data: {
                     id: window._mapId
                 },
-                success: l => {
-                    const h = `${pe()}/creative/showcase/${l.id}`;
+                success: p => {
+                    const h = `${pe()}/creative/showcase/${p.id}`;
                     he.success({
                         icon: e.jsx(e.Fragment, {}),
                         footer: null,
@@ -540,7 +541,7 @@ const f = i => {
                             padding: 20
                         },
                         content: e.jsxs(e.Fragment, {
-                            children: [e.jsx(d.Title, {
+                            children: [e.jsx(l.Title, {
                                 level: 4,
                                 style: {
                                     fontWeight: ee.Bold
@@ -551,72 +552,72 @@ const f = i => {
                                 style: {
                                     marginTop: 2
                                 },
-                                children: [e.jsx(qe, {
+                                children: [e.jsx(Ve, {
                                     type: "text",
                                     value: h,
                                     readOnly: !0
-                                }), e.jsx(M, {
+                                }), e.jsx(E, {
                                     style: {
                                         marginLeft: 10
                                     },
                                     type: "primary",
                                     onClick: () => {
-                                        var g;
-                                        (g = navigator == null ? void 0 : navigator.clipboard) == null || g.writeText(h), He.success("Copied to clipboard!")
+                                        var u;
+                                        (u = navigator == null ? void 0 : navigator.clipboard) == null || u.writeText(h), He.success("Copied to clipboard!")
                                     },
                                     children: "Copy Link"
                                 })]
-                            }), e.jsx(F, {}), e.jsxs(d.Text, {
+                            }), e.jsx(F, {}), e.jsxs(l.Text, {
                                 children: ["Your map is ready to be showcased! Share this link with others, and they can play the map you've made! ", e.jsx("br", {}), e.jsx("br", {}), e.jsxs("b", {
-                                    children: ["This link expires ", l.expirationDays, " ", ue("day", l.expirationDays), " from now."]
+                                    children: ["This link expires ", p.expirationDays, " ", ue("day", p.expirationDays), " from now."]
                                 }), e.jsx("br", {}), e.jsx("br", {}), "After the link expires, you can always generate a new link."]
                             })]
                         })
                     })
                 },
-                both: p
+                both: m
             }))
         };
-        return e.jsxs(y, {
+        return e.jsxs(b, {
             placement: "left",
             open: i.open,
             onClose: i.close,
             width: 570,
             title: "Showcase & Save",
-            children: [e.jsx(d.Title, {
+            children: [e.jsx(l.Title, {
                 level: 4,
                 style: {
                     color: $.White
                 },
                 children: "Showcase Link"
-            }), e.jsx(d.Text, {
+            }), e.jsx(l.Text, {
                 style: {
                     marginTop: 2
                 },
                 children: "Generate a showcase link! Share the link with friends to have them test your map!"
-            }), e.jsx(M, {
+            }), e.jsx(E, {
                 block: !0,
                 size: "large",
                 type: "primary",
                 loading: o,
-                icon: e.jsx(Ve, {}),
-                onClick: a,
+                icon: e.jsx(qe, {}),
+                onClick: c,
                 style: {
                     marginTop: 10
                 },
                 children: "Generate Showcase Link"
-            }), e.jsx(F, {}), e.jsx(d.Title, {
+            }), e.jsx(F, {}), e.jsx(l.Title, {
                 level: 4,
                 style: {
                     color: $.White
                 },
                 children: "Save"
-            }), e.jsx(d.Text, {
+            }), e.jsx(l.Text, {
                 style: {
                     marginTop: 2
                 },
                 children: "Maps are automatically saved every few minutes. However, you can save manually by clicking the button below!"
-            }), e.jsx(M, {
+            }), e.jsx(E, {
                 block: !0,
                 size: "large",
                 type: "primary",
@@ -626,8 +627,8 @@ const f = i => {
                     marginTop: 10
                 },
                 children: "Save Map"
-            }), n >= se.admin ? e.jsxs(e.Fragment, {
-                children: [e.jsx(F, {}), e.jsx(M, {
+            }), s >= ne.admin ? e.jsxs(e.Fragment, {
+                children: [e.jsx(F, {}), e.jsx(E, {
                     block: !0,
                     size: "large",
                     type: "primary",
@@ -638,13 +639,13 @@ const f = i => {
             }) : null]
         })
     }),
-    ni = i => e.jsx(y, {
+    si = i => e.jsx(b, {
         placement: "left",
         open: i.open,
         onClose: i.close,
         width: 500,
         title: "Documentation & Help",
-        children: e.jsxs(R, {
+        children: e.jsxs(L, {
             className: "maxName",
             direction: "vertical",
             size: 14,
@@ -662,15 +663,15 @@ const f = i => {
     Q = i => e.jsx("a", {
         href: i.link,
         target: "_blank",
-        children: e.jsxs(si, {
+        children: e.jsxs(ni, {
             children: [e.jsxs("div", {
-                children: [e.jsx(d.Title, {
+                children: [e.jsx(l.Title, {
                     level: 4,
                     style: {
                         color: $.White
                     },
                     children: i.name
-                }), e.jsx(d.Text, {
+                }), e.jsx(l.Text, {
                     style: {
                         marginTop: 2
                     },
@@ -690,7 +691,7 @@ const f = i => {
             })]
         })
     }),
-    si = N(oe)`
+    ni = R(oe)`
   padding: 30px;
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
@@ -700,24 +701,24 @@ const f = i => {
     background: rgba(255, 255, 255, 0.17);
   }
 `,
-    oi = r.lazy(() => U(() => import("./App-76.js"), __vite__mapDeps([0, 1, 2, 3, 4]))),
-    ri = r.lazy(() => U(() => import("./App-77.js"), __vite__mapDeps([5, 1, 2, 6, 7, 8, 9, 10, 11, 12, 13, 3, 4, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72]))),
-    ai = r.lazy(() => U(() => import("./App-78.js"), __vite__mapDeps([73, 1, 2, 74, 75, 64, 10, 65, 6, 76, 77, 78, 79, 11, 40, 12, 80, 15, 16, 17, 3, 4, 48, 14, 42, 81, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 7, 8, 9, 13, 36, 37, 38, 39, 41, 43, 44, 45, 46, 47, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 66, 67, 68, 69, 70, 71, 72, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92]))),
+    oi = r.lazy(() => Y(() => import("./App-77.js"), __vite__mapDeps([0, 1, 2, 3, 4]))),
+    ri = r.lazy(() => Y(() => import("./App-78.js"), __vite__mapDeps([5, 1, 2, 6, 7, 8, 9, 10, 11, 12, 13, 3, 4, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73]))),
+    ai = r.lazy(() => Y(() => import("./App-79.js"), __vite__mapDeps([74, 1, 2, 75, 76, 64, 10, 65, 6, 77, 78, 79, 80, 11, 40, 12, 81, 15, 16, 17, 3, 4, 48, 14, 42, 82, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 7, 8, 9, 13, 36, 37, 38, 39, 41, 43, 44, 45, 46, 47, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 66, 67, 68, 69, 70, 71, 72, 73, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93]))),
     li = i => {
-        const [n, o, s] = Y(!0), [p, a] = r.useState(!1), [l, h] = r.useState(), [g, x] = r.useState(), t = () => {
-            o(), h(void 0), x(void 0), a(!1), xe({
+        const [s, o, n] = U(!0), [m, c] = r.useState(!1), [p, h] = r.useState(!1), [u, x] = r.useState(), [t, S] = r.useState(), j = () => {
+            o(), x(void 0), S(void 0), h(!1), xe({
                 url: `/api/created-map/listing/creator-info/${window._mapId}`,
-                success: u => {
-                    u.data && h(u.data), u.publishRequirementError && x(u.publishRequirementError)
+                success: g => {
+                    c(!!g.requiresUsername), g.data && x(g.data), g.publishRequirementError && S(g.publishRequirementError)
                 },
-                error: u => {
-                    a(!0)
+                error: g => {
+                    h(!0)
                 },
-                both: s
+                both: n
             })
         };
-        ge(t);
-        const w = () => n ? e.jsx("div", {
+        ge(j);
+        const k = () => s ? e.jsx("div", {
             className: "maxAll flex-center",
             children: e.jsx(je, {
                 size: "large"
@@ -727,7 +728,7 @@ const f = i => {
             showIcon: !0,
             message: "Error Loading Map Publishing",
             description: "There was an error fetching publishing details for this map. Please check back in later!"
-        }) : l ? e.jsx(ie, {
+        }) : u ? e.jsx(ie, {
             theme: {
                 components: {
                     Tabs: {
@@ -740,28 +741,30 @@ const f = i => {
                 children: [e.jsx(B.TabPane, {
                     tab: "Overview",
                     children: e.jsx(ri, {
-                        data: l,
-                        refetch: t,
-                        close: i.close
+                        data: u,
+                        refetch: j,
+                        close: i.close,
+                        requiresUsername: m
                     })
                 }, "overview"), e.jsx(B.TabPane, {
                     tab: "Map Details",
                     children: e.jsx(ai, {
-                        ...l,
-                        refetch: t
+                        ...u,
+                        refetch: j
                     })
                 }, "details")]
             })
         }) : e.jsx(oi, {
-            publishRequirementError: g,
-            refetch: t
+            requiresUsername: m,
+            publishRequirementError: t,
+            refetch: j
         });
         return e.jsx(r.Suspense, {
             fallback: null,
-            children: w()
+            children: k()
         })
     },
-    ci = i => e.jsx(y, {
+    ci = i => e.jsx(b, {
         placement: "left",
         open: i.open,
         onClose: i.close,
@@ -771,60 +774,60 @@ const f = i => {
             close: i.close
         })
     }),
-    zt = P(i => {
+    Ft = M(i => {
         const {
             gui: {
                 none: {
                     optionsMenu: {
-                        screen: n
+                        screen: s
                     }
                 }
             },
             me: {
                 roleLevel: o
             }
-        } = G(), s = _e(), [p, a, l] = Y(!0), [h, g] = r.useState(!0);
-        $e();
-        const x = r.useMemo(() => n === c.mapOptions, [n]),
-            t = r.useMemo(() => n === c.editing, [n]),
-            w = r.useMemo(() => n === c.permissions, [n]),
-            u = r.useMemo(() => n === c.saving, [n]),
-            W = r.useMemo(() => n === c.help, [n]),
-            L = r.useMemo(() => n === c.publishing, [n]),
+        } = W(), n = _e(), [m, c, p] = U(!0), [h, u] = r.useState(!0);
+        Ie();
+        const x = r.useMemo(() => s === a.mapOptions, [s]),
+            t = r.useMemo(() => s === a.editing, [s]),
+            S = r.useMemo(() => s === a.permissions, [s]),
+            j = r.useMemo(() => s === a.saving, [s]),
+            k = r.useMemo(() => s === a.help, [s]),
+            g = r.useMemo(() => s === a.publishing, [s]),
             z = () => {
-                i.setToHomeScreen(), D(c.home)
+                i.setToHomeScreen(), A(a.home)
             },
             le = r.useCallback(() => {
                 if (h) {
                     z();
                     return
                 }
-                t || w || x || u || W || L || l()
-            }, [l, x, t, w, u, W, L, h, z]),
-            D = S => Ue(S),
-            O = S => {
-                J(), D(S)
+                t || S || x || j || k || g || p()
+            }, [p, x, t, S, j, k, g, h, z]),
+            A = w => Ye(w),
+            T = w => {
+                J(), A(w)
             },
-            ce = S => {
-                S && g(!1), S || z()
+            ce = w => {
+                w && u(!1), w || z()
             },
             de = () => {
                 J(), ei(() => {
-                    D(c.mapOptions)
+                    A(a.mapOptions)
                 })
             },
-            b = () => {
-                D(c.home)
+            C = () => {
+                A(a.home)
             };
-        return e.jsx(y, {
+        return e.jsx(b, {
             placement: "left",
-            open: p,
+            open: m,
             onClose: le,
             afterOpenChange: ce,
             width: 600,
             destroyOnClose: !0,
             children: e.jsxs(di, {
-                children: [e.jsx(d.Title, {
+                children: [e.jsx(l.Title, {
                     style: {
                         fontFamily: fe.FugazOne,
                         textTransform: "uppercase",
@@ -836,76 +839,76 @@ const f = i => {
                     style: {
                         height: 14
                     }
-                }), e.jsxs(R, {
+                }), e.jsxs(L, {
                     className: "maxAll",
                     direction: "vertical",
                     size: 14,
-                    children: [s ? e.jsxs(e.Fragment, {
-                        children: [e.jsx(f, {
+                    children: [n ? e.jsxs(e.Fragment, {
+                        children: [e.jsx(y, {
                             icon: "fas fa-sliders-v-square",
                             title: "Map Options",
                             description: "Customize teams, game duration, and who is determined as the winner",
                             onClick: de
                         }), e.jsx(ii, {
                             open: x,
-                            close: b
+                            close: C
                         })]
-                    }) : null, ne() ? e.jsx(f, {
+                    }) : null, se() ? e.jsx(y, {
                         icon: "fas fa-i-cursor",
                         title: "Editing Options",
                         description: "Adjust player collision, speed, and other settings to help you while editing",
-                        onClick: () => O(c.editing)
-                    }) : null, s && !Ze() ? e.jsxs(e.Fragment, {
-                        children: [e.jsx(f, {
+                        onClick: () => T(a.editing)
+                    }) : null, n && !Ze() ? e.jsxs(e.Fragment, {
+                        children: [e.jsx(y, {
                             icon: "fas fa-upload",
                             title: "Publish",
                             description: "Publish your map to be played by Gimkit users from around the world!",
-                            onClick: () => O(c.publishing)
-                        }), e.jsx(f, {
+                            onClick: () => T(a.publishing)
+                        }), e.jsx(y, {
                             icon: "fas fa-share",
                             title: "Showcase & Save",
                             description: "Send a link to friends to have them test out your map!",
-                            onClick: () => O(c.saving)
-                        }), o >= se.admin ? e.jsx(f, {
+                            onClick: () => T(a.saving)
+                        }), o >= ne.admin ? e.jsx(y, {
                             icon: "fas fa-brackets-curly",
                             title: "Hooks",
                             description: "Allow game hosts to customize your map before hopping in!",
-                            onClick: () => Ie(be.hooks)
-                        }) : null, e.jsx(f, {
+                            onClick: () => Ne(be.hooks)
+                        }) : null, e.jsx(y, {
                             icon: "fas fa-user-tag",
                             title: "Permissions",
                             description: "Control who can make changes to the map when editing collaboratively",
-                            onClick: () => O(c.permissions)
+                            onClick: () => T(a.permissions)
                         }), e.jsx(ci, {
-                            open: L,
-                            close: b
+                            open: g,
+                            close: C
                         }), e.jsx(Ke, {
-                            open: w,
-                            close: b
+                            open: S,
+                            close: C
                         }), e.jsx(ti, {
-                            open: u,
-                            close: b
+                            open: j,
+                            close: C
                         })]
-                    }) : null, e.jsx(f, {
+                    }) : null, e.jsx(y, {
                         icon: "fas fa-comment-dots",
                         title: "Documentation & Help",
                         description: "Get help building your map!",
-                        onClick: () => O(c.help)
-                    }), e.jsx(ni, {
-                        open: W,
-                        close: b
+                        onClick: () => T(a.help)
+                    }), e.jsx(si, {
+                        open: k,
+                        close: C
                     })]
                 }), e.jsx(Qe, {
                     open: t,
-                    close: b
+                    close: C
                 })]
             })
         })
     }),
-    di = N.div.attrs({
+    di = R.div.attrs({
         className: "maxWidth"
     })``;
 export {
-    zt as
+    Ft as
     default
 };

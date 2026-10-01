@@ -1,0 +1,21 @@
+import {
+    j as i
+} from "./_index.js";
+const n = ({
+        value: t
+    }) => {
+        const e = t ? new Date(t) : null;
+        return !e || Number.isNaN(e.getTime()) ? null : i.jsx("time", {
+            dateTime: e.toISOString(),
+            title: e.toLocaleString(),
+            children: e.toLocaleDateString(void 0, {
+                month: "short",
+                day: "numeric",
+                year: "numeric"
+            })
+        })
+    },
+    a = t => !!t && !Number.isNaN(new Date(t).getTime());
+export {
+    n as P, a as h
+};

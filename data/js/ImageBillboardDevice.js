@@ -85,6 +85,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -127,7 +128,7 @@ const H = o => {
         height: c
     }
 };
-class Qi extends P {
+class Zi extends P {
     constructor(t) {
         super(t), this.matchesPhase = !0, this.createVisuals = () => {
             this.matchesPhase && (this.createFrame(), this.createImage()), this.boundingBox.setHardcoded(H({
@@ -204,6 +205,6 @@ class Qi extends P {
     }
 }
 export {
-    Qi as
+    Zi as
     default
 };

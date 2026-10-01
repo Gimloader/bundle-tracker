@@ -5,16 +5,16 @@ import {
     U as k,
     B as I,
     d as t,
-    aW as f,
+    aB as f,
     t as u,
     aa as A,
     e as v,
     r as g,
     a3 as j,
-    l as L,
-    W as B,
+    l as B,
+    W as L,
     F as R,
-    cr as O,
+    cq as O,
     V as M,
     s as w,
     T as W,
@@ -35,13 +35,13 @@ import {
 } from "./SeasonTicketName.js";
 import {
     S as N,
-    c as V
+    c as q
 } from "./index-2.js";
 import {
-    R as Y
+    R as V
 } from "./StarOutlined.js";
 import {
-    I as q
+    I as Y
 } from "./index-3.js";
 import {
     s as X
@@ -143,7 +143,7 @@ const ie = s => {
                 },
                 size: "large",
                 block: !0,
-                icon: e.jsx(Y, {}),
+                icon: e.jsx(V, {}),
                 type: "primary",
                 loading: i,
                 onClick: r,
@@ -156,7 +156,7 @@ const ie = s => {
     oe = s => {
         const i = `${A()}/season-ticket/${s.info.linkId}`,
             n = () => {
-                V(i), X.success("Link copied to clipboard!")
+                q(i), X.success("Link copied to clipboard!")
             };
         return e.jsxs(ae, {
             children: [e.jsxs("div", {
@@ -167,7 +167,7 @@ const ie = s => {
                     gap: 6,
                     marginTop: 12
                 },
-                children: [e.jsx(q, {
+                children: [e.jsx(Y, {
                     value: i,
                     readOnly: !0
                 }), e.jsx(I, {
@@ -345,7 +345,7 @@ const ie = s => {
 `,
     Se = s => (g.useEffect(() => {
         var i, n;
-        s.boughtForSelf && j() && !((n = (i = L()) == null ? void 0 : i.seasonTicket) != null && n.viewed) && B({})
+        s.boughtForSelf && j() && !((n = (i = B()) == null ? void 0 : i.seasonTicket) != null && n.viewed) && L({})
     }, [s.boughtForSelf]), e.jsxs(we, {
         children: [e.jsx(Te, {
             children: e.jsxs(be, {

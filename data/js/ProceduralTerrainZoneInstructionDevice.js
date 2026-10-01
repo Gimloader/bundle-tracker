@@ -73,19 +73,20 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const m = {
     imageId: "procedural-terrain-zone-instruction-device",
     imageUrl: p("devices/procedural_terrain_zone_instruction/icon.png")
 };
-class yr extends o {
+class zr extends o {
     constructor(r) {
         if (super(r), t() || i()) return;
         this.layers.forceDepthManually(0), this.parts.add.sprite(m).view.setScale(.25)
     }
 }
 export {
-    yr as
+    zr as
     default
 };

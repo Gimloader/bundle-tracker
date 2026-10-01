@@ -69,6 +69,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 var C = (t => (t.line = "rectangle", t.circle = "circle", t))(C || {}),
@@ -227,12 +228,12 @@ const I = (t, s, o, n, i) => {
             return
         }
     };
-class Zt extends L {
+class _t extends L {
     constructor(s) {
         super(s), this.onStateChange = o => {}, T(this)
     }
 }
 export {
-    Zt as OutlineDevice, Zt as
+    _t as OutlineDevice, _t as
     default
 };

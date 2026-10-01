@@ -73,18 +73,19 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const p = {
     imageId: "countdown_device",
     imageUrl: m("devices/countdown/count-down-device.png")
 };
-class At extends r {
+class Dt extends r {
     constructor(t) {
         super(t), o() && i() && this.parts.add.sprite(p)
     }
 }
 export {
-    At as
+    Dt as
     default
 };

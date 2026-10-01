@@ -76,9 +76,10 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-class Gt extends p {
+class Pt extends p {
     constructor(r) {
         if (super(r), this.resetStore = () => {
                 t.me.mood.activeDeviceId = "", t.me.mood.vignetteActive = !1, t.me.mood.vignetteStrength = 0
@@ -103,6 +104,6 @@ class Gt extends p {
     }
 }
 export {
-    Gt as
+    Pt as
     default
 };

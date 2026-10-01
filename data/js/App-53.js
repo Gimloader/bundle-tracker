@@ -79,6 +79,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -100,7 +101,7 @@ const i = {
             opacity: 1
         }
     },
-    Do = a => {
+    Ho = a => {
         const m = x() ? .3 : .2,
             t = () => {
                 a.setToHomeScreen()
@@ -151,6 +152,6 @@ const i = {
   overflow: hidden;
 `;
 export {
-    Do as
+    Ho as
     default
 };

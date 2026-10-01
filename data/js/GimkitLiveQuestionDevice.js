@@ -1,12 +1,12 @@
 import {
     F as d,
-    R as c
+    R as p
 } from "./FetchOptionSchemaProperty.js";
 import {
     E as r
 } from "./GimkitLiveQuestion.js";
 import {
-    s as p,
+    s as c,
     I as m,
     i as u
 } from "./FixSpinePlugin.js";
@@ -81,6 +81,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const g = {
@@ -93,7 +94,7 @@ const g = {
     },
     e = 96,
     i = 276;
-class Wt extends l {
+class Zt extends l {
     constructor(h) {
         super(h), this.questionsAnswered = 0, this.createBases = () => {
             this.base = this.parts.add.sprite(g), this.disabledBase = this.parts.add.sprite(v);
@@ -130,7 +131,7 @@ class Wt extends l {
                 },
                 closableByUser: this.options.closable,
                 questionsAnswered: this.questionsAnswered,
-                allowGoogleTranslate: p.session.allowGoogleTranslate
+                allowGoogleTranslate: c.session.allowGoogleTranslate
             })
         }, this.setupInteractiveZone = () => {
             this.interactiveZones.add.rect({
@@ -180,7 +181,7 @@ class Wt extends l {
                 keepRatio: !0,
                 rotable: !1,
                 onChange: o => {
-                    c(o.x, o.y, {
+                    p(o.x, o.y, {
                         size: o.height / 2
                     })
                 }
@@ -192,6 +193,6 @@ class Wt extends l {
     }
 }
 export {
-    Wt as
+    Zt as
     default
 };

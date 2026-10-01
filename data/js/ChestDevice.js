@@ -73,6 +73,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const a = {
@@ -95,7 +96,7 @@ const h = {
         h: 30
     }
 };
-class Di extends d {
+class Ri extends d {
     constructor(n) {
         super(n), this.animateOpen = () => {
             var t;
@@ -211,6 +212,6 @@ class Di extends d {
     }
 }
 export {
-    Di as
+    Ri as
     default
 };

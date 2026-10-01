@@ -115,6 +115,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 import "./index-28.js";
@@ -347,7 +348,7 @@ const V = () => {
         })
     },
     oe = "#00c853",
-    Ft = t => {
+    Ot = t => {
         const r = g.useSyncExternalStore(C, B),
             s = g.useSyncExternalStore(C, () => F("muted")),
             {
@@ -546,6 +547,6 @@ const V = () => {
   }
 `;
 export {
-    Ft as
+    Ot as
     default
 };

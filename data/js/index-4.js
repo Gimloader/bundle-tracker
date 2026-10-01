@@ -2,24 +2,24 @@ import {
     ai as k,
     aj as z,
     bz as M,
-    aL as L,
-    cY as B,
+    aQ as B,
+    cY as L,
     r as i,
     al as R,
     bH as T,
     am as j,
-    bA as U,
+    aC as U,
     an as V,
     ao as W,
-    ap as K,
-    cZ as X,
-    bt as Y,
+    ap as X,
+    cZ as Y,
+    bs as K,
     w as Q,
     c_ as Z,
     x as b,
     E as q,
     c$ as J,
-    aK as ee
+    b0 as ee
 } from "./_index.js";
 import {
     N as ne,
@@ -102,7 +102,7 @@ const ae = e => {
             }
         };
         return [{
-            [n]: Object.assign(Object.assign({}, L(e)), {
+            [n]: Object.assign(Object.assign({}, B(e)), {
                 color: o,
                 position: "fixed",
                 top: y,
@@ -155,7 +155,7 @@ const ae = e => {
         }]
     },
     re = e => ({
-        zIndexPopup: e.zIndexPopupBase + B + 10,
+        zIndexPopup: e.zIndexPopupBase + L + 10,
         contentBg: e.colorBgElevated,
         contentPadding: `${(e.controlHeightLG-e.fontSize*e.lineHeight)/2}px ${e.paddingSM}px`
     }),
@@ -173,8 +173,8 @@ var ce = function(e, n) {
     return s
 };
 const ie = {
-        info: i.createElement(X, null),
-        success: i.createElement(K, null),
+        info: i.createElement(Y, null),
+        success: i.createElement(X, null),
         error: i.createElement(W, null),
         warning: i.createElement(V, null),
         loading: i.createElement(U, null)
@@ -303,7 +303,7 @@ let _ = 0;
 
 function G(e) {
     const n = i.useRef(null);
-    return Y(), [i.useMemo(() => {
+    return K(), [i.useMemo(() => {
         const t = c => {
                 var r;
                 (r = n.current) === null || r === void 0 || r.close(c)

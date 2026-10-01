@@ -1,19 +1,19 @@
 import {
-    cv as V,
-    cw as x,
-    cx as K,
-    cy as D,
-    cz as P,
-    cA as z,
-    cB as G,
-    cC as H,
-    cD as k,
-    cE as N,
-    cF as b,
-    bI as W,
+    cu as V,
+    cv as x,
+    cw as K,
+    cx as D,
+    cy as P,
+    cz as z,
+    cA as G,
+    cB as N,
+    cC as k,
+    cD as W,
+    cE as b,
+    bI as H,
     r as S,
-    cG as J,
-    cH as X
+    cF as J,
+    cG as X
 } from "./_index.js";
 class Y extends V {
     constructor(e, t) {
@@ -151,7 +151,7 @@ class Y extends V {
             const p = this.hasListeners(),
                 C = !p && A(e, t),
                 q = p && L(e, s, t, c);
-            (C || q) && (h = H(e.options.networkMode) ? "fetching" : "paused", o || (d = "loading")), t._optimisticResults === "isRestoring" && (h = "idle")
+            (C || q) && (h = N(e.options.networkMode) ? "fetching" : "paused", o || (d = "loading")), t._optimisticResults === "isRestoring" && (h = "idle")
         }
         if (t.keepPreviousData && !i.dataUpdatedAt && f != null && f.isSuccess && d !== "error") v = f.data, o = f.dataUpdatedAt, d = f.status, U = !0;
         else if (t.select && typeof i.data < "u")
@@ -236,7 +236,7 @@ class Y extends V {
     }
     onQueryUpdate(e) {
         const t = {};
-        e.type === "success" ? t.onSuccess = !e.manual : e.type === "error" && !N(e.error) && (t.onError = !0), this.updateResult(t), this.hasListeners() && this.updateTimers()
+        e.type === "success" ? t.onSuccess = !e.manual : e.type === "error" && !W(e.error) && (t.onError = !0), this.updateResult(t), this.hasListeners() && this.updateTimers()
     }
     notify(e) {
         b.batch(() => {
@@ -304,7 +304,7 @@ var M;
 function $() {
     if (M) return O;
     M = 1;
-    var r = W();
+    var r = H();
 
     function e(i, o) {
         return i === o && (i !== 0 || 1 / i === 1 / o) || i !== i && o !== o

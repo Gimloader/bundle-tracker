@@ -1,34 +1,34 @@
 import {
-    de as G,
+    de as Q,
     df as ct,
     r as f,
     am as j,
-    aB as kt,
+    b1 as kt,
     da as Et,
-    aD as T,
+    aZ as T,
     bK as Vt,
     _ as zt,
     ak as V,
     ai as Lt,
     aj as dt,
-    cN as Bt,
-    aL as Mt,
-    aK as ft,
+    cM as Bt,
+    aQ as Mt,
+    b0 as ft,
     al as Dt,
-    bc as Ht,
-    aO as Xt,
-    bt as Wt,
-    aG as Yt,
+    b9 as Ht,
+    ba as Xt,
+    bs as Wt,
+    b6 as Yt,
     bZ as qt,
     dg as Ft,
     bY as Zt,
     d7 as Ut,
-    aQ as Gt,
-    cT as Qt
+    aT as Qt,
+    cT as Gt
 } from "./_index.js";
 
 function Jt(e, o) {
-    return G.reduce((a, t) => {
+    return Q.reduce((a, t) => {
         const r = e[`${t}1`],
             s = e[`${t}3`],
             n = e[`${t}6`],
@@ -165,7 +165,7 @@ var I = {
             N = o.placement,
             z = N === void 0 ? "right" : N,
             L = o.align,
-            Q = L === void 0 ? {} : L,
+            G = L === void 0 ? {} : L,
             B = o.destroyTooltipOnHide,
             J = B === void 0 ? !1 : B,
             K = o.defaultVisible,
@@ -211,7 +211,7 @@ var I = {
             builtinPlacements: te,
             popupPlacement: z,
             ref: X,
-            popupAlign: Q,
+            popupAlign: G,
             getPopupContainer: tt,
             onPopupVisibleChange: b,
             afterPopupVisibleChange: m,
@@ -696,11 +696,11 @@ const pe = e => {
         resetStyle: !1,
         injectStyle: o
     })(e),
-    ue = G.map(e => `${e}-inverse`),
+    ue = Q.map(e => `${e}-inverse`),
     me = ["success", "processing", "error", "default", "warning"];
 
 function ge(e, o = !0) {
-    return o ? [].concat(ft(ue), ft(G)).includes(e) : G.includes(e)
+    return o ? [].concat(ft(ue), ft(Q)).includes(e) : Q.includes(e)
 }
 
 function Ce(e) {
@@ -772,7 +772,7 @@ const ve = f.forwardRef((e, o) => {
             autoAdjustOverflow: N = !0,
             motion: z,
             getPopupContainer: L,
-            placement: Q = "top",
+            placement: G = "top",
             mouseEnterDelay: B = .1,
             mouseLeaveDelay: J = .1,
             overlayStyle: K,
@@ -839,7 +839,7 @@ const ve = f.forwardRef((e, o) => {
             It = f.createElement(re, Object.assign({}, E, {
                 zIndex: At,
                 showArrow: M,
-                placement: Q,
+                placement: G,
                 mouseEnterDelay: B,
                 mouseLeaveDelay: J,
                 prefixCls: A,
@@ -866,10 +866,10 @@ const ve = f.forwardRef((e, o) => {
                     motionDeadline: 1e3
                 },
                 destroyTooltipOnHide: g ?? !!c
-            }), st ? Gt(it, {
+            }), st ? Qt(it, {
                 className: xt
             }) : it);
-        return Pt(f.createElement(Qt.Provider, {
+        return Pt(f.createElement(Gt.Provider, {
             value: Rt
         }, It))
     }),

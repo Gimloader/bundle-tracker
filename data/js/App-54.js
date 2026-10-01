@@ -112,6 +112,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 import "./EditOutlined.js";
@@ -473,7 +474,7 @@ const M = (t, e) => {
   border: 2px solid rgba(255, 255, 255, 0.25);
   margin-top: 10px;
 `,
-    Gt = B(t => {
+    Bt = B(t => {
         const e = () => {
             t.setToHomeScreen()
         };
@@ -583,6 +584,6 @@ const M = (t, e) => {
         }
     });
 export {
-    xe as Container, ve as Content, Gt as
+    xe as Container, ve as Content, Bt as
     default
 };

@@ -3,7 +3,7 @@ import {
     d as a,
     F as P,
     r as n,
-    dQ as f
+    dT as f
 } from "./_index.js";
 import {
     o as C
@@ -28,11 +28,11 @@ import {
     ah as B,
     aj as S,
     ak as L,
-    S as $,
-    J as G,
+    S as T,
+    J as $,
     u as j,
-    o as K,
-    q as T,
+    o as G,
+    q as K,
     n as g
 } from "./App-41.js";
 import {
@@ -100,9 +100,10 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-const m = () => {
+const c = () => {
         const e = [];
         return d.characters.characters.forEach((t, o) => {
             E() !== t.id && t.name !== void 0 && t.isActive && t.type === B.player && e.push({
@@ -120,7 +121,7 @@ const m = () => {
         t && (M().characterManager.spectating.setShuffle(!1, !1), L(t))
     },
     O = e => {
-        $(G.kickPlayer, {
+        T($.kickPlayer, {
             characterId: e
         })
     },
@@ -166,7 +167,7 @@ const m = () => {
     })`
   margin-top: 17px;
 `,
-    H = e => r.jsx(V, {
+    H = e => r.jsx(Q, {
         onClick: e.select,
         style: {
             background: e.selected ? "#1565c0" : "rgba(255, 255, 255, 0.2)"
@@ -177,7 +178,7 @@ const m = () => {
         const {
             gui: t
         } = j(), o = i => t.selectedPlayerId = i;
-        return r.jsx(Q, {
+        return r.jsx(V, {
             children: e.players.map(i => r.jsx(H, {
                 name: i.name,
                 selected: i.selected,
@@ -185,12 +186,12 @@ const m = () => {
             }, `player-item-${i.id}`))
         })
     },
-    Q = a.div.attrs({
+    V = a.div.attrs({
         className: "flex wrap scroll-y"
     })`
   padding: 20px 35px;
 `,
-    V = a.div`
+    Q = a.div`
   padding: 5px 12px;
   border-radius: 4px;
   font-size: 22px;
@@ -218,22 +219,22 @@ const m = () => {
             opacity: 1
         }
     },
-    ft = C(() => {
+    ht = C(() => {
         const {
             gui: e
         } = j(), t = W(), o = () => {
             e.selectedPlayerId = "", A() && F() ? g(y.startScreen) : g(y.home)
         };
-        K(w.Input.Keyboard.KeyCodes.ESC, o, [o]);
-        const [i, u] = n.useState(m());
+        G(w.Input.Keyboard.KeyCodes.ESC, o, [o]);
+        const [i, u] = n.useState(c());
         n.useEffect(() => {
             const s = f(() => e.playersManagerUpdateCounter, () => {
-                    u(m())
+                    u(c())
                 }, {
                     fireImmediately: !0
                 }),
                 b = f(() => e.selectedPlayerId, () => {
-                    u(m())
+                    u(c())
                 }, {
                     fireImmediately: !0
                 });
@@ -241,14 +242,14 @@ const m = () => {
                 s(), b()
             }
         }, []);
-        const c = n.useMemo(() => e.selectedPlayerId ? i.find(s => s.id === e.selectedPlayerId) : null, [e.selectedPlayerId, i.length]);
+        const m = n.useMemo(() => e.selectedPlayerId ? i.find(s => s.id === e.selectedPlayerId) : null, [e.selectedPlayerId, i.length]);
         n.useEffect(() => {
-            !c && i.length && (e.selectedPlayerId = i[0].id)
-        }, [c, i.length]);
+            !m && i.length && (e.selectedPlayerId = i[0].id)
+        }, [m, i.length]);
         const x = n.useMemo(() => t ? .3 : .2, [t]),
-            v = () => i.length ? c ? r.jsxs(r.Fragment, {
+            v = () => i.length ? m ? r.jsxs(r.Fragment, {
                 children: [r.jsx(R, {
-                    selectedPlayer: c,
+                    selectedPlayer: m,
                     close: o
                 }), r.jsx(J, {
                     players: i
@@ -283,7 +284,7 @@ const m = () => {
                     onClick: s => s.stopPropagation(),
                     children: v()
                 })
-            }), r.jsx(T, {
+            }), r.jsx(K, {
                 onClick: o
             })]
         })
@@ -310,6 +311,6 @@ const m = () => {
   overflow: hidden;
 `;
 export {
-    Y as Container, Z as Content, l as containerAnim, p as contentAnim, ft as
+    Y as Container, Z as Content, l as containerAnim, p as contentAnim, ht as
     default
 };

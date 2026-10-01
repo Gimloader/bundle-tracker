@@ -6,7 +6,7 @@ import {
     a as X,
     ar as st,
     F as rt,
-    dN as ct,
+    dQ as ct,
     u as lt
 } from "./_index.js";
 import {
@@ -231,7 +231,7 @@ const Ct = () => {
                     onChange: a,
                     placeholder: "Enter answer here..."
                 })
-            }), e.jsx(Mt, {
+            }), e.jsx(Qt, {
                 buttonColor: t.buttonColor,
                 onClick: d,
                 children: e.jsx(ot, {
@@ -263,7 +263,7 @@ const Ct = () => {
   width: 100%;
   height: 100%;
 `,
-    Mt = s.div`
+    Qt = s.div`
   box-sizing: border-box;
   border-color: rgba(0, 0, 0, 0.3);
   border-width: 6px;
@@ -311,7 +311,7 @@ const Ct = () => {
             noBold: !0
         })]
     }),
-    Qt = [49, 50, 51, 52],
+    Mt = [49, 50, 51, 52],
     $t = L(t => {
         const [n, i] = r.useState(!0), [o, c] = r.useState(), {
             readToMe: a
@@ -338,7 +338,7 @@ const Ct = () => {
                 id: x._id,
                 position: f,
                 canAnswer: n,
-                keyCode: Qt[f],
+                keyCode: Mt[f],
                 gridView: y,
                 onQuestionAnswered: m,
                 answer: x._id,
@@ -851,14 +851,14 @@ const re = t => e.jsxs(Yt, {
                     k = c * j.maxTextWidthPercentage / d;
                 return Math.min(D, k)
             }, [a, g, d, c]),
-            M = l.useMemo(() => {
+            Q = l.useMemo(() => {
                 if (f) return 0;
                 let A = -(a / 2);
                 return A += g * T / 2, A += u, A
             }, [f, a, T, g, u]),
             S = l.useMemo(() => a - g * T - a * j.marginPercentage * 2, [a, g, T]),
             N = l.useMemo(() => S - a * j.continueButtonHeightPercentage - u, [S, a, u]),
-            Q = l.useMemo(() => a * j.continueButtonHeightPercentage, [a]);
+            M = l.useMemo(() => a * j.continueButtonHeightPercentage, [a]);
         l.useEffect(() => (t.onLockedChange && t.onLockedChange(!0), () => {
             t.onLockedChange && t.onLockedChange(!1)
         }), [t.onLockedChange]);
@@ -868,7 +868,7 @@ const re = t => e.jsxs(Yt, {
             },
             children: [e.jsx(Vt, {
                 style: {
-                    marginTop: M
+                    marginTop: Q
                 },
                 children: e.jsx(Ft, {
                     layout: !0,
@@ -887,7 +887,7 @@ const re = t => e.jsxs(Yt, {
                 })
             }), v ? e.jsx(Ut, {
                 style: {
-                    marginTop: M,
+                    marginTop: Q,
                     height: S,
                     overflow: "hidden"
                 },
@@ -902,7 +902,7 @@ const re = t => e.jsxs(Yt, {
                         language: t.language,
                         translations: t.translations
                     }), e.jsx(le, {
-                        continueButtonHeight: Q,
+                        continueButtonHeight: M,
                         containerWidth: c,
                         secondsToWait: y,
                         continueToQuestions: t.continueToQuestions,
@@ -1035,7 +1035,7 @@ const re = t => e.jsxs(Yt, {
         }), []), r.useEffect(() => {
             E.readToMe.enabled = t.readToMeEnabled || !1, o === "response" ? W.stop() : o === "questions" && d && W.play(u)
         }, [t.readToMeEnabled, o]);
-        const M = k => {
+        const Q = k => {
                 var b, F;
                 k ? (b = t.correctSound) == null || b.play() : (F = t.incorrectSound) == null || F.play()
             },
@@ -1047,7 +1047,7 @@ const re = t => e.jsxs(Yt, {
                         ease: "easeIn",
                         duration: .23,
                         onComplete: () => {
-                            h(!1), M(b), t.nextQuestion && t.nextQuestion(), N()
+                            h(!1), Q(b), t.nextQuestion && t.nextQuestion(), N()
                         }
                     })
                 }
@@ -1060,7 +1060,7 @@ const re = t => e.jsxs(Yt, {
                     }
                 })
             },
-            Q = () => {
+            M = () => {
                 x.set("0%"), i(!1), W.stop(), t.continueAction && t.continueAction(), g(y), c("questions"), v.set(0), $(v, 1, {
                     duration: .2
                 })
@@ -1098,7 +1098,7 @@ const re = t => e.jsxs(Yt, {
                     background: ((b = t == null ? void 0 : t.continueButtonColor) == null ? void 0 : b.background) || w.response.continue.background,
                     text: "Continue",
                     handleClick: () => {
-                        Q()
+                        M()
                     }
                 };
                 return t.responseActions ? [...t.responseActions, k] : [k]
@@ -1110,7 +1110,7 @@ const re = t => e.jsxs(Yt, {
                 children: e.jsx(de, {
                     canAdvanceToQuestions: n,
                     correctAnswer: t.lastQuestionCorrectAnswer,
-                    continueToQuestions: Q,
+                    continueToQuestions: M,
                     blockKeyboardEvents: t.blockKeyboardEvents,
                     lastQuestionCorrect: t.lastQuestionAnsweredCorrect || !1,
                     actions: A(),

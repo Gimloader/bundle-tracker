@@ -84,6 +84,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -281,7 +282,7 @@ const E = {
             i.animations.hit(s)
         })
     };
-class ei extends f {
+class ai extends f {
     constructor(a) {
         if (super(a), this.onUpdate = t => {
                 this.movement.update(t), this.animations.update(t), this.rotation.update(), O(this), w(this)
@@ -350,6 +351,6 @@ class ei extends f {
     }
 }
 export {
-    ei as BallDevice, ei as
+    ai as BallDevice, ai as
     default
 };

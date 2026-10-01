@@ -13,12 +13,16 @@
                     "name": "Appearance"
                 },
                 {
-                    "id": "availability",
-                    "name": "Availability"
+                    "id": "visibility",
+                    "name": "Visibility"
                 },
                 {
                     "id": "damage",
-                    "name": "Damage"
+                    "name": "Health & Damage"
+                },
+                {
+                    "id": "recovery",
+                    "name": "Respawn & Healing"
                 }
             ],
             "showAllOptionsAt": "end"
@@ -38,6 +42,235 @@
                     },
                     "hidden": true
                 }
+            },
+            {
+                "key": "Scale",
+                "option": {
+                    "label": "Scale",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": -10,
+                        "max": 10,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            },
+            {
+                "key": "Angle",
+                "option": {
+                    "label": "Angle",
+                    "type": "numberInput",
+                    "defaultValue": 0,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": -360,
+                        "max": 360,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hidden": true
+                }
+            },
+            {
+                "key": "UseColliders",
+                "option": {
+                    "label": "Collision Enabled",
+                    "type": "select",
+                    "description": "Does this prop have collision?",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured"
+                ]
+            },
+            {
+                "key": "visibleOnGameStart",
+                "option": {
+                    "label": "Visible On Game Start",
+                    "type": "select",
+                    "description": "Is this prop visible when the game starts?",
+                    "defaultValue": true,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "featured",
+                    "visibility"
+                ]
+            },
+            {
+                "key": "scope",
+                "option": {
+                    "label": "Scope",
+                    "type": "select",
+                    "defaultValue": "global",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": "global",
+                                "name": "global"
+                            },
+                            {
+                                "value": "player",
+                                "name": "player"
+                            },
+                            {
+                                "value": "team",
+                                "name": "team"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "description": "Scope of the visibility and damage of the prop."
+                },
+                "categories": [
+                    "visibility"
+                ]
+            },
+            {
+                "key": "showWhenReceivingFrom",
+                "option": {
+                    "label": "Show prop when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Show prop when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "visibility"
+                ]
+            },
+            {
+                "key": "hideWhenReceivingFrom",
+                "option": {
+                    "label": "Hide prop when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Hide prop when the device receives a signal from the selected channel"
+                },
+                "categories": [
+                    "visibility"
+                ]
+            },
+            {
+                "key": "Tint",
+                "option": {
+                    "label": "Tint",
+                    "description": "Adjust the color tint of the prop",
+                    "type": "color",
+                    "defaultValue": "#FFFFFF",
+                    "validators": [
+                        null
+                    ]
+                },
+                "categories": [
+                    "appearance"
+                ]
+            },
+            {
+                "key": "Alpha",
+                "option": {
+                    "label": "Alpha",
+                    "description": "Adjust the transparency of the prop. 0 is invisible, 1 is fully visible.",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0.15,
+                        "step": 0.01,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    }
+                },
+                "categories": [
+                    "appearance"
+                ]
+            },
+            {
+                "key": "FlipX",
+                "option": {
+                    "label": "Flip",
+                    "type": "select",
+                    "description": "Flip the prop to face the other direction",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    }
+                },
+                "categories": [
+                    "appearance"
+                ]
             },
             {
                 "key": "shadowsEnabled",
@@ -73,7 +306,7 @@
                     ]
                 },
                 "categories": [
-                    "featured"
+                    "appearance"
                 ],
                 "supportedMapStyles": [
                     "topDown"
@@ -120,238 +353,10 @@
                     ]
                 },
                 "categories": [
-                    "featured"
+                    "appearance"
                 ],
                 "supportedMapStyles": [
                     "topDown"
-                ]
-            },
-            {
-                "key": "UseColliders",
-                "option": {
-                    "label": "Collision Enabled",
-                    "type": "select",
-                    "description": "Does this prop have collision?",
-                    "defaultValue": true,
-                    "validators": [
-                        null
-                    ],
-                    "props": {
-                        "options": [
-                            {
-                                "value": true,
-                                "name": "Yes"
-                            },
-                            {
-                                "value": false,
-                                "name": "No"
-                            }
-                        ],
-                        "allowEmpty": false
-                    }
-                },
-                "categories": [
-                    "featured"
-                ]
-            },
-            {
-                "key": "Scale",
-                "option": {
-                    "label": "Scale",
-                    "type": "numberInput",
-                    "defaultValue": 1,
-                    "validators": [
-                        null
-                    ],
-                    "props": {
-                        "min": -10,
-                        "max": 10,
-                        "allowEmpty": false,
-                        "useSlider": false
-                    },
-                    "hidden": true
-                }
-            },
-            {
-                "key": "Angle",
-                "option": {
-                    "label": "Angle",
-                    "type": "numberInput",
-                    "defaultValue": 0,
-                    "validators": [
-                        null
-                    ],
-                    "props": {
-                        "min": -360,
-                        "max": 360,
-                        "allowEmpty": false,
-                        "useSlider": false
-                    },
-                    "hidden": true
-                }
-            },
-            {
-                "key": "Tint",
-                "option": {
-                    "label": "Tint",
-                    "description": "Adjust the color tint of the prop",
-                    "type": "color",
-                    "defaultValue": "#FFFFFF",
-                    "validators": [
-                        null
-                    ]
-                },
-                "categories": [
-                    "appearance"
-                ]
-            },
-            {
-                "key": "FlipX",
-                "option": {
-                    "label": "Flip",
-                    "type": "select",
-                    "description": "Flip the prop to face the other direction",
-                    "defaultValue": false,
-                    "validators": [
-                        null
-                    ],
-                    "props": {
-                        "options": [
-                            {
-                                "value": true,
-                                "name": "Yes"
-                            },
-                            {
-                                "value": false,
-                                "name": "No"
-                            }
-                        ],
-                        "allowEmpty": false
-                    }
-                },
-                "categories": [
-                    "appearance"
-                ]
-            },
-            {
-                "key": "Alpha",
-                "option": {
-                    "label": "Alpha",
-                    "description": "Adjust the transparency of the prop. 0 is invisible, 1 is fully visible.",
-                    "type": "numberInput",
-                    "defaultValue": 1,
-                    "validators": [
-                        null
-                    ],
-                    "props": {
-                        "min": 0.15,
-                        "step": 0.01,
-                        "allowEmpty": false,
-                        "useSlider": false
-                    }
-                },
-                "categories": [
-                    "appearance"
-                ]
-            },
-            {
-                "key": "visibleOnGameStart",
-                "option": {
-                    "label": "Visible On Game Start",
-                    "type": "select",
-                    "description": "Is this prop visible when the game starts?",
-                    "defaultValue": true,
-                    "validators": [
-                        null
-                    ],
-                    "props": {
-                        "options": [
-                            {
-                                "value": true,
-                                "name": "Yes"
-                            },
-                            {
-                                "value": false,
-                                "name": "No"
-                            }
-                        ],
-                        "allowEmpty": false
-                    }
-                },
-                "categories": [
-                    "availability"
-                ]
-            },
-            {
-                "key": "scope",
-                "option": {
-                    "label": "Scope",
-                    "type": "select",
-                    "defaultValue": "global",
-                    "validators": [
-                        null
-                    ],
-                    "props": {
-                        "options": [
-                            {
-                                "value": "global",
-                                "name": "global"
-                            },
-                            {
-                                "value": "player",
-                                "name": "player"
-                            },
-                            {
-                                "value": "team",
-                                "name": "team"
-                            }
-                        ],
-                        "allowEmpty": false
-                    },
-                    "description": "Scope of the visibility and damage of the prop."
-                },
-                "categories": [
-                    "availability"
-                ]
-            },
-            {
-                "key": "showWhenReceivingFrom",
-                "option": {
-                    "label": "Show prop when receiving on",
-                    "type": "textInput",
-                    "defaultValue": "",
-                    "validators": [
-                        null
-                    ],
-                    "props": {
-                        "placeholder": "Channel name...",
-                        "category": "channel",
-                        "maxLength": 100
-                    },
-                    "description": "Show prop when the device receives a signal from the selected channel"
-                },
-                "categories": [
-                    "availability"
-                ]
-            },
-            {
-                "key": "hideWhenReceivingFrom",
-                "option": {
-                    "label": "Hide prop when receiving on",
-                    "type": "textInput",
-                    "defaultValue": "",
-                    "validators": [
-                        null
-                    ],
-                    "props": {
-                        "placeholder": "Channel name...",
-                        "category": "channel",
-                        "maxLength": 100
-                    },
-                    "description": "Hide prop when the device receives a signal from the selected channel"
-                },
-                "categories": [
-                    "availability"
                 ]
             },
             {
@@ -379,6 +384,7 @@
                     }
                 },
                 "categories": [
+                    "featured",
                     "damage"
                 ]
             },
@@ -455,24 +461,37 @@
                     ]
                 },
                 "categories": [
+                    "featured",
                     "damage"
                 ]
             },
             {
-                "key": "onDestroyedChannel",
+                "key": "healthbar",
                 "option": {
-                    "label": "When prop destroyed, transmit on",
-                    "type": "textInput",
-                    "defaultValue": "",
+                    "label": "Health Bar",
+                    "description": "Select the visibility of the health bar",
+                    "type": "select",
                     "validators": [
                         null
                     ],
+                    "defaultValue": "Off",
                     "props": {
-                        "placeholder": "Channel name...",
-                        "category": "channel",
-                        "maxLength": 100
+                        "options": [
+                            {
+                                "name": "Off",
+                                "value": "Off"
+                            },
+                            {
+                                "name": "On",
+                                "value": "On"
+                            },
+                            {
+                                "name": "When Hit",
+                                "value": "When Hit"
+                            }
+                        ],
+                        "allowEmpty": false
                     },
-                    "description": "When the prop is destroyed, the device sends a signal on the selected channel",
                     "hideIf": [
                         [
                             {
@@ -584,335 +603,10 @@
                 ]
             },
             {
-                "key": "grantItemWhenDamaged",
-                "option": {
-                    "label": "Grant Item When Damaged",
-                    "type": "select",
-                    "description": "If enabled, the prop will grant an item when destroyed.",
-                    "defaultValue": false,
-                    "validators": [
-                        null
-                    ],
-                    "props": {
-                        "options": [
-                            {
-                                "value": true,
-                                "name": "Yes"
-                            },
-                            {
-                                "value": false,
-                                "name": "No"
-                            }
-                        ],
-                        "allowEmpty": false
-                    },
-                    "hideIf": [
-                        [
-                            {
-                                "key": "canBeDamaged",
-                                "compare": "NOT_EQUAL",
-                                "value": true
-                            }
-                        ]
-                    ]
-                },
-                "categories": [
-                    "damage"
-                ],
-                "minimumRoleLevel": 90
-            },
-            {
-                "key": "itemToGrant",
-                "option": {
-                    "label": "Item To Grant",
-                    "description": "The item to grant when the prop is destroyed",
-                    "type": "itemId",
-                    "validators": [
-                        null
-                    ],
-                    "props": {},
-                    "hideIf": [
-                        [
-                            {
-                                "key": "canBeDamaged",
-                                "compare": "NOT_EQUAL",
-                                "value": true
-                            }
-                        ],
-                        [
-                            {
-                                "key": "grantItemWhenDamaged",
-                                "compare": "NOT_EQUAL",
-                                "value": true
-                            }
-                        ]
-                    ]
-                },
-                "categories": [
-                    "damage"
-                ],
-                "minimumRoleLevel": 90
-            },
-            {
-                "key": "amountOfItem",
-                "option": {
-                    "label": "Amount Of Item",
-                    "description": "The amount of the item to grant",
-                    "type": "numberInput",
-                    "defaultValue": 1,
-                    "validators": [
-                        null
-                    ],
-                    "props": {
-                        "min": 0.01,
-                        "max": 999999,
-                        "step": 0.01,
-                        "allowEmpty": false,
-                        "useSlider": false
-                    },
-                    "hideIf": [
-                        [
-                            {
-                                "key": "canBeDamaged",
-                                "compare": "NOT_EQUAL",
-                                "value": true
-                            }
-                        ],
-                        [
-                            {
-                                "key": "grantItemWhenDamaged",
-                                "compare": "NOT_EQUAL",
-                                "value": true
-                            }
-                        ]
-                    ]
-                },
-                "categories": [
-                    "damage"
-                ],
-                "minimumRoleLevel": 90
-            },
-            {
-                "key": "healthbar",
-                "option": {
-                    "label": "Healthbar",
-                    "description": "When should the healthbar be shown?",
-                    "type": "select",
-                    "validators": [
-                        null
-                    ],
-                    "defaultValue": "Off",
-                    "props": {
-                        "options": [
-                            {
-                                "name": "Off",
-                                "value": "Off"
-                            },
-                            {
-                                "name": "On",
-                                "value": "On"
-                            },
-                            {
-                                "name": "When Hit",
-                                "value": "When Hit"
-                            }
-                        ],
-                        "allowEmpty": false
-                    },
-                    "hideIf": [
-                        [
-                            {
-                                "key": "canBeDamaged",
-                                "compare": "NOT_EQUAL",
-                                "value": true
-                            }
-                        ],
-                        [
-                            {
-                                "key": "infiniteHealth",
-                                "compare": "NOT_EQUAL",
-                                "value": false
-                            }
-                        ]
-                    ]
-                },
-                "categories": [
-                    "damage"
-                ],
-                "minimumRoleLevel": 90
-            },
-            {
-                "key": "healAmount",
-                "option": {
-                    "label": "Heal Amount",
-                    "description": "Amount of health to heal the prop when receiving a signal",
-                    "type": "numberInput",
-                    "defaultValue": 0,
-                    "validators": [
-                        null
-                    ],
-                    "props": {
-                        "min": 0,
-                        "max": 999999999,
-                        "step": 1,
-                        "allowEmpty": false,
-                        "useSlider": false
-                    },
-                    "hideIf": [
-                        [
-                            {
-                                "key": "canBeDamaged",
-                                "compare": "NOT_EQUAL",
-                                "value": true
-                            }
-                        ],
-                        [
-                            {
-                                "key": "infiniteHealth",
-                                "compare": "NOT_EQUAL",
-                                "value": false
-                            }
-                        ]
-                    ]
-                },
-                "categories": [
-                    "damage"
-                ],
-                "minimumRoleLevel": 90
-            },
-            {
-                "key": "healWhenReceivingFrom",
-                "option": {
-                    "label": "Heal prop when receiving on",
-                    "type": "textInput",
-                    "defaultValue": "",
-                    "validators": [
-                        null
-                    ],
-                    "props": {
-                        "placeholder": "Channel name...",
-                        "category": "channel",
-                        "maxLength": 100
-                    },
-                    "description": "Heal prop when the device receives a signal from the selected channel",
-                    "hideIf": [
-                        [
-                            {
-                                "key": "canBeDamaged",
-                                "compare": "NOT_EQUAL",
-                                "value": true
-                            }
-                        ],
-                        [
-                            {
-                                "key": "infiniteHealth",
-                                "compare": "NOT_EQUAL",
-                                "value": false
-                            }
-                        ]
-                    ]
-                },
-                "categories": [
-                    "damage"
-                ],
-                "minimumRoleLevel": 90
-            },
-            {
-                "key": "healWhenDestroyed",
-                "option": {
-                    "label": "Heal When Destroyed",
-                    "type": "select",
-                    "description": "If enabled, the prop will heal when destroyed",
-                    "defaultValue": false,
-                    "validators": [
-                        null
-                    ],
-                    "props": {
-                        "options": [
-                            {
-                                "value": true,
-                                "name": "Yes"
-                            },
-                            {
-                                "value": false,
-                                "name": "No"
-                            }
-                        ],
-                        "allowEmpty": false
-                    },
-                    "hideIf": [
-                        [
-                            {
-                                "key": "canBeDamaged",
-                                "compare": "NOT_EQUAL",
-                                "value": true
-                            }
-                        ],
-                        [
-                            {
-                                "key": "infiniteHealth",
-                                "compare": "NOT_EQUAL",
-                                "value": false
-                            }
-                        ]
-                    ]
-                },
-                "categories": [
-                    "damage"
-                ],
-                "minimumRoleLevel": 90
-            },
-            {
-                "key": "healAfterTime",
-                "option": {
-                    "label": "Heal After Time",
-                    "description": "Time in seconds before the prop heals",
-                    "type": "numberInput",
-                    "defaultValue": 0,
-                    "validators": [
-                        null
-                    ],
-                    "props": {
-                        "min": 0,
-                        "max": 999999999,
-                        "step": 0.1,
-                        "allowEmpty": false,
-                        "useSlider": false
-                    },
-                    "hideIf": [
-                        [
-                            {
-                                "key": "canBeDamaged",
-                                "compare": "NOT_EQUAL",
-                                "value": true
-                            }
-                        ],
-                        [
-                            {
-                                "key": "infiniteHealth",
-                                "compare": "NOT_EQUAL",
-                                "value": false
-                            }
-                        ],
-                        [
-                            {
-                                "key": "healWhenDestroyed",
-                                "compare": "NOT_EQUAL",
-                                "value": true
-                            }
-                        ]
-                    ]
-                },
-                "categories": [
-                    "damage"
-                ],
-                "minimumRoleLevel": 90
-            },
-            {
                 "key": "safeTeamId",
                 "option": {
                     "label": "Safe Team",
-                    "description": "The team that can damage the prop",
+                    "description": "Select a team that cannot damage this prop",
                     "type": "select",
                     "validators": [
                         null
@@ -1179,8 +873,315 @@
                 },
                 "categories": [
                     "damage"
+                ]
+            },
+            {
+                "key": "onDestroyedChannel",
+                "option": {
+                    "label": "When prop destroyed, transmit on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "When the prop is destroyed, the device sends a signal on the selected channel",
+                    "hideIf": [
+                        [
+                            {
+                                "key": "canBeDamaged",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ],
+                        [
+                            {
+                                "key": "infiniteHealth",
+                                "compare": "NOT_EQUAL",
+                                "value": false
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "damage"
+                ]
+            },
+            {
+                "key": "grantItemWhenDamaged",
+                "option": {
+                    "label": "Grant Item When Hit",
+                    "type": "select",
+                    "description": "If enabled, the prop will grant an item when hit",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "canBeDamaged",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "damage"
                 ],
                 "minimumRoleLevel": 90
+            },
+            {
+                "key": "itemToGrant",
+                "option": {
+                    "label": "Item To Grant",
+                    "description": "The item to grant when the prop is destroyed",
+                    "type": "itemId",
+                    "validators": [
+                        null
+                    ],
+                    "props": {},
+                    "hideIf": [
+                        [
+                            {
+                                "key": "canBeDamaged",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ],
+                        [
+                            {
+                                "key": "grantItemWhenDamaged",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "damage"
+                ],
+                "minimumRoleLevel": 90
+            },
+            {
+                "key": "amountOfItem",
+                "option": {
+                    "label": "Amount Of Item",
+                    "description": "How much of the item to grant when the prop is destroyed",
+                    "type": "numberInput",
+                    "defaultValue": 1,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 999999999999999,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "canBeDamaged",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ],
+                        [
+                            {
+                                "key": "grantItemWhenDamaged",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "damage"
+                ],
+                "minimumRoleLevel": 90
+            },
+            {
+                "key": "healWhenDestroyed",
+                "option": {
+                    "label": "Respawn Enabled",
+                    "type": "select",
+                    "description": "Does the prop respawn with full health after being destroyed?",
+                    "defaultValue": false,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "options": [
+                            {
+                                "value": true,
+                                "name": "Yes"
+                            },
+                            {
+                                "value": false,
+                                "name": "No"
+                            }
+                        ],
+                        "allowEmpty": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "canBeDamaged",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ],
+                        [
+                            {
+                                "key": "infiniteHealth",
+                                "compare": "NOT_EQUAL",
+                                "value": false
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "recovery"
+                ]
+            },
+            {
+                "key": "healAfterTime",
+                "option": {
+                    "label": "Respawn Delay (Seconds)",
+                    "description": "How many seconds after being destroyed does the prop respawn?",
+                    "type": "numberInput",
+                    "defaultValue": 3,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 0.5,
+                        "max": 999999999,
+                        "step": 0.1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "canBeDamaged",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ],
+                        [
+                            {
+                                "key": "infiniteHealth",
+                                "compare": "NOT_EQUAL",
+                                "value": false
+                            }
+                        ],
+                        [
+                            {
+                                "key": "healWhenDestroyed",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "recovery"
+                ]
+            },
+            {
+                "key": "healAmount",
+                "option": {
+                    "label": "Heal Amount",
+                    "description": "Amount of health to heal the prop when receiving a signal",
+                    "type": "numberInput",
+                    "defaultValue": 25,
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "min": 1,
+                        "max": 999999999,
+                        "step": 1,
+                        "allowEmpty": false,
+                        "useSlider": false
+                    },
+                    "hideIf": [
+                        [
+                            {
+                                "key": "canBeDamaged",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ],
+                        [
+                            {
+                                "key": "infiniteHealth",
+                                "compare": "NOT_EQUAL",
+                                "value": false
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "recovery"
+                ]
+            },
+            {
+                "key": "healWhenReceivingFrom",
+                "option": {
+                    "label": "Heal prop when receiving on",
+                    "type": "textInput",
+                    "defaultValue": "",
+                    "validators": [
+                        null
+                    ],
+                    "props": {
+                        "placeholder": "Channel name...",
+                        "category": "channel",
+                        "maxLength": 100
+                    },
+                    "description": "Heal prop when the device receives a signal from the selected channel",
+                    "hideIf": [
+                        [
+                            {
+                                "key": "canBeDamaged",
+                                "compare": "NOT_EQUAL",
+                                "value": true
+                            }
+                        ],
+                        [
+                            {
+                                "key": "infiniteHealth",
+                                "compare": "NOT_EQUAL",
+                                "value": false
+                            }
+                        ]
+                    ]
+                },
+                "categories": [
+                    "recovery"
+                ]
             }
         ]
     },
@@ -1237,8 +1238,7 @@
                 },
                 {
                     "id": "heal",
-                    "name": "Heal prop",
-                    "minimumRoleLevel": 90
+                    "name": "Heal prop"
                 }
             ]
         }

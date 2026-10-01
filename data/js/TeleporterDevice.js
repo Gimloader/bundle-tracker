@@ -76,6 +76,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const t = {
@@ -99,7 +100,7 @@ const a = {
         frameRate: 12
     }]
 };
-class Dt extends s {
+class Ft extends s {
     constructor(o) {
         super(o), this.addTeleporterAnim = () => {
             if (this.options.visibleInGame === !1 && (p() || e())) return;
@@ -120,6 +121,6 @@ class Dt extends s {
     }
 }
 export {
-    Dt as
+    Ft as
     default
 };

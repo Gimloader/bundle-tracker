@@ -102,6 +102,7 @@ import "./MapSound.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -109,7 +110,7 @@ const P = {
     imageId: "item_shadow",
     imageUrl: l("devices/dropped_item/item-shadow.png")
 };
-class ti extends w {
+class ii extends w {
     constructor(c) {
         if (super(c), this.hidden = !1, this.onUpdate = t => {
                 var i;
@@ -277,6 +278,6 @@ class ti extends w {
     }
 }
 export {
-    ti as
+    ii as
     default
 };

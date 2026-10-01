@@ -93,6 +93,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -315,7 +316,7 @@ const ft = (t, i) => {
         const i = P().worldManager.devices.allDevices.find(e => e.deviceOption.id === G.flag && e.options.flagColor === t.options.flagColor && e.pointedByWaypointDeviceID === t.id);
         i && (i.pointedByWaypointDeviceID = void 0)
     };
-class Re extends J {
+class Ae extends J {
     constructor(i) {
         if (super(i), this.onUpdate = e => {
                 if (!D(this)) return;
@@ -359,6 +360,6 @@ class Re extends J {
     }
 }
 export {
-    Re as
+    Ae as
     default
 };

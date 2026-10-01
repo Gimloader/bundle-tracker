@@ -1,26 +1,26 @@
 import {
     r as g,
-    aB as W,
-    aG as P,
-    az as A,
-    am as D,
-    aA as H,
-    _ as R,
-    aC as q,
+    b1 as L,
+    b6 as D,
+    b3 as R,
+    am as N,
+    b5 as H,
+    _ as A,
+    b4 as q,
     ai as X,
     aj as V,
-    aL as K,
+    aQ as K,
     ak as $,
-    aM as F,
+    aR as F,
     bF as _,
     al as B,
-    bV as G,
-    aP as Q,
+    bV as Q,
+    bb as G,
     d3 as J,
-    bA as U
+    aC as U
 } from "./_index.js";
 var Y = ["prefixCls", "className", "checked", "defaultChecked", "disabled", "loadingIcon", "checkedChildren", "unCheckedChildren", "onClick", "onChange", "onKeyDown"],
-    N = g.forwardRef(function(e, n) {
+    P = g.forwardRef(function(e, n) {
         var c, a = e.prefixCls,
             l = a === void 0 ? "rc-switch" : a,
             o = e.className,
@@ -33,18 +33,18 @@ var Y = ["prefixCls", "className", "checked", "defaultChecked", "disabled", "loa
             I = e.onClick,
             C = e.onChange,
             w = e.onKeyDown,
-            y = W(e, Y),
-            M = P(!1, {
+            y = L(e, Y),
+            M = D(!1, {
                 value: d,
                 defaultValue: t
             }),
-            f = A(M, 2),
-            p = f[0],
+            f = R(M, 2),
+            b = f[0],
             S = f[1];
 
         function v(h, k) {
-            var b = p;
-            return i || (b = h, S(b), C == null || C(b, k)), b
+            var p = b;
+            return i || (p = h, S(p), C == null || C(p, k)), p
         }
 
         function x(h) {
@@ -52,14 +52,14 @@ var Y = ["prefixCls", "className", "checked", "defaultChecked", "disabled", "loa
         }
 
         function m(h) {
-            var k = v(!p, h);
+            var k = v(!b, h);
             I == null || I(k, h)
         }
-        var E = D(l, o, (c = {}, H(c, "".concat(l, "-checked"), p), H(c, "".concat(l, "-disabled"), i), c));
-        return g.createElement("button", R({}, y, {
+        var E = N(l, o, (c = {}, H(c, "".concat(l, "-checked"), b), H(c, "".concat(l, "-disabled"), i), c));
+        return g.createElement("button", A({}, y, {
             type: "button",
             role: "switch",
-            "aria-checked": p,
+            "aria-checked": b,
             disabled: i,
             className: E,
             ref: n,
@@ -73,7 +73,7 @@ var Y = ["prefixCls", "className", "checked", "defaultChecked", "disabled", "loa
             className: "".concat(l, "-inner-unchecked")
         }, u)))
     });
-N.displayName = "Switch";
+P.displayName = "Switch";
 const Z = e => {
         const {
             componentCls: n,
@@ -384,29 +384,29 @@ const re = g.forwardRef((e, n) => {
             defaultChecked: u,
             defaultValue: I,
             onChange: C
-        } = e, w = le(e, ["prefixCls", "size", "disabled", "loading", "className", "rootClassName", "style", "checked", "value", "defaultChecked", "defaultValue", "onChange"]), [y, M] = P(!1, {
+        } = e, w = le(e, ["prefixCls", "size", "disabled", "loading", "className", "rootClassName", "style", "checked", "value", "defaultChecked", "defaultValue", "onChange"]), [y, M] = D(!1, {
             value: r ?? s,
             defaultValue: u ?? I
         }), {
             getPrefixCls: f,
-            direction: p,
+            direction: b,
             switch: S
-        } = g.useContext(B), v = g.useContext(G), x = (l ?? v) || o, m = f("switch", c), E = g.createElement("div", {
+        } = g.useContext(B), v = g.useContext(Q), x = (l ?? v) || o, m = f("switch", c), E = g.createElement("div", {
             className: `${m}-handle`
         }, o && g.createElement(U, {
             className: `${m}-loading-icon`
-        })), [h, k, b] = ce(m), O = Q(a), T = D(S == null ? void 0 : S.className, {
+        })), [h, k, p] = ce(m), O = G(a), T = N(S == null ? void 0 : S.className, {
             [`${m}-small`]: O === "small",
             [`${m}-loading`]: o,
-            [`${m}-rtl`]: p === "rtl"
-        }, d, t, k, b), j = Object.assign(Object.assign({}, S == null ? void 0 : S.style), i), L = (...z) => {
+            [`${m}-rtl`]: b === "rtl"
+        }, d, t, k, p), j = Object.assign(Object.assign({}, S == null ? void 0 : S.style), i), W = (...z) => {
             M(z[0]), C == null || C.apply(void 0, z)
         };
         return h(g.createElement(J, {
             component: "Switch"
-        }, g.createElement(N, Object.assign({}, w, {
+        }, g.createElement(P, Object.assign({}, w, {
             checked: y,
-            onChange: L,
+            onChange: W,
             prefixCls: m,
             className: T,
             style: j,

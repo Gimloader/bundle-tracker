@@ -84,6 +84,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const m = s("devices/tag_zone/zone_icon.png"),
@@ -92,7 +93,7 @@ const m = s("devices/tag_zone/zone_icon.png"),
         imageUrl: m
     };
 var a = (t => (t.everywhere = "everywhere", t.zone = "zone", t))(a || {});
-class Bi extends u {
+class Fi extends u {
     constructor(h) {
         if (super(h), this.setupVisualEditing = () => {
                 if (!n() || !d()) return;
@@ -144,6 +145,6 @@ class Bi extends u {
     }
 }
 export {
-    Bi as
+    Fi as
     default
 };

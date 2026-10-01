@@ -78,9 +78,10 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-class Bo extends a {
+class Io extends a {
     constructor(t) {
         if (super(t), this.onMessage = o => {
                 o.key == "end_game" && i({
@@ -103,6 +104,6 @@ class Bo extends a {
     }
 }
 export {
-    Bo as
+    Io as
     default
 };

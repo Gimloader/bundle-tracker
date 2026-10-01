@@ -10,7 +10,7 @@ import {
     r as u,
     a as h,
     S as C,
-    bA as G,
+    aC as G,
     B as j,
     c2 as b,
     e as y

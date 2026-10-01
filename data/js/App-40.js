@@ -87,9 +87,10 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
-const Ht = () => {
+const Jt = () => {
         const {
             id: m
         } = f(), [p, n] = i.useState(""), [l, c, d] = x(!1), [s, o] = i.useState("");
@@ -167,6 +168,6 @@ const Ht = () => {
   background: ${e.BackgroundPurple};
 `;
 export {
-    Ht as
+    Jt as
     default
 };

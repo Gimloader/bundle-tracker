@@ -76,12 +76,13 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const n = {
     clicked: "clicked"
 };
-class Lt extends p {
+class Mt extends p {
     constructor(r) {
         if (super(r), this.addToGUIDevicesList = () => {
                 i.gui.guiSlots.some(t => t.id === this.id) || (i.gui.guiSlots.push({
@@ -123,6 +124,6 @@ class Lt extends p {
     }
 }
 export {
-    Lt as
+    Mt as
     default
 };

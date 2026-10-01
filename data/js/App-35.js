@@ -12,8 +12,8 @@ import {
     c as D,
     U as F,
     M as K,
-    a3 as P,
-    dL as O,
+    a3 as O,
+    dO as P,
     n as R,
     S as _,
     T as H
@@ -38,7 +38,7 @@ import {
     s as I
 } from "./index-18.js";
 import {
-    T as Q
+    T as L
 } from "./index-5.js";
 import {
     u as Z
@@ -134,7 +134,7 @@ const se = () => t.jsxs(ie, {
                 children: s
             }), t.jsx(le, {
                 children: e.canEdit ? t.jsxs(t.Fragment, {
-                    children: [t.jsx(Q, {
+                    children: [t.jsx(L, {
                         title: "Edit Question",
                         children: t.jsx("div", {
                             onClick: e.openEditor,
@@ -145,7 +145,7 @@ const se = () => t.jsxs(ie, {
                                 name: "far fa-edit"
                             })
                         })
-                    }), t.jsx(Q, {
+                    }), t.jsx(L, {
                         title: "Delete Question",
                         children: t.jsx("div", {
                             onClick: e.deleteQuestion,
@@ -517,7 +517,7 @@ const he = e => {
         children: [t.jsx(E, {
             label: "Login",
             onClick: () => {
-                G(O(window.location.pathname))
+                G(P(window.location.pathname))
             },
             style: {
                 marginBottom: 15
@@ -554,7 +554,7 @@ const he = e => {
                 }
             }))
         }, b = () => {
-            const l = P();
+            const l = O();
             return !u && !l ? t.jsx(ye, {
                 join: f,
                 onNameChange: x,
@@ -617,7 +617,7 @@ const he = e => {
             [l, y] = i.useState(""),
             [p, r] = i.useState(!1),
             [j, C] = i.useState(!1),
-            [T, L] = i.useState(""),
+            [T, Q] = i.useState(""),
             W = () => n("dashboard");
         i.useEffect(() => {
             S({
@@ -626,7 +626,7 @@ const he = e => {
                     b(h.sessionOwnerName), y(h.gameName), r(h.canAccess), C(h.mustBeLoggedIn)
                 },
                 error: h => {
-                    h && h.message && h.message.text ? L(h.message.text) : L("There was an error. Please try again later.")
+                    h && h.message && h.message.text ? Q(h.message.text) : Q("There was an error. Please try again later.")
                 },
                 both: () => {
                     x(!1)
@@ -658,7 +658,7 @@ const he = e => {
             })
         }) : t.jsxs(t.Fragment, {
             children: [t.jsx($, {
-                children: t.jsx(Le, {
+                children: t.jsx(Qe, {
                     children: U()
                 })
             }), t.jsx(H, {
@@ -674,7 +674,7 @@ const he = e => {
   color: ${N.Black};
   font-family: ${F.SFPro};
 `,
-    Le = a(te)`
+    Qe = a(te)`
   width: 90%;
   max-width: 640px;
   border-radius: 8px;

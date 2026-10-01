@@ -1,4 +1,4 @@
-import{x as j,r as g,b9 as W,bg as I}from"./_index.js";function x(l){var e=!1;return function(){e||(console.warn(l),e=!0)}}var K=x(`
+import{x as j,r as g,b2 as W,bf as I}from"./_index.js";function x(l){var e=!1;return function(){e||(console.warn(l),e=!0)}}var K=x(`
 >> Warning, via react-flip-move <<
 
 When using "wrapperless" mode (by supplying 'typeName' of 'null'), strange things happen when the direct parent has the default "static" position.

@@ -77,6 +77,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 import "./useWarningOnMountInDevelopment.js";
@@ -99,8 +100,8 @@ const C = r => {
             useCustomAnimation: !0
         })
     },
-    Ot = a(C);
+    Pt = a(C);
 export {
-    Ot as
+    Pt as
     default
 };

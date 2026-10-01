@@ -54,6 +54,7 @@ import "./index-13.js";
 import "./useBubbleLock.js";
 import "./useForm.js";
 import "./index-20.js";
+import "./useInfiniteQuery.js";
 const y = i => x({
         queryKey: ["profile", i],
         queryFn: async () => await a({
@@ -61,7 +62,7 @@ const y = i => x({
         }),
         refetchOnMount: !1
     }),
-    nr = () => {
+    ar = () => {
         const {
             id: i
         } = p(), {
@@ -127,6 +128,6 @@ const y = i => x({
   font-weight: ${d.UltraBold};
 `;
 export {
-    nr as
+    ar as
     default
 };

@@ -43,8 +43,16 @@
                                 "value": "characterKnockedOut"
                             },
                             {
+                                "name": "Player's Health Changes",
+                                "value": "characterHealthChanges"
+                            },
+                            {
                                 "name": "Player Fires Gadget",
                                 "value": "characterFiresGadget"
+                            },
+                            {
+                                "name": "Player Hit By Gadget",
+                                "value": "characterHitByGadget"
                             },
                             {
                                 "name": "Player Destroys Terrain",

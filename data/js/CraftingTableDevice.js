@@ -106,6 +106,7 @@ import "./MapSound.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -528,7 +529,7 @@ const J = t => {
             }))
         }
     };
-class Fe extends V {
+class xe extends V {
     constructor(e) {
         super(e), this.pieces = {
             progressBar: {}
@@ -550,6 +551,6 @@ class Fe extends V {
     }
 }
 export {
-    Fe as
+    xe as
     default
 };

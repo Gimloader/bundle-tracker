@@ -73,18 +73,19 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const m = {
     imageId: "xp_device",
     imageUrl: o("devices/xp/xp.png")
 };
-class At extends p {
+class It extends p {
     constructor(t) {
         super(t), !(r() || i()) && (this.layers.forceDepthManually(0), this.parts.add.sprite(m))
     }
 }
 export {
-    At as
+    It as
     default
 };

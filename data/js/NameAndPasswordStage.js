@@ -154,5 +154,5 @@ const T = e => t.jsx(z, {
         })
     };
 export {
-    g as A, H as M, W as N, _ as P, M as R, h as T, B as a
+    g as A, B as M, W as N, _ as P, M as R, h as T, H as a
 };

@@ -78,10 +78,11 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 var i = (t => (t.callAction = "callAction", t))(i || {});
-class So extends e {
+class Mo extends e {
     constructor(r) {
         if (super(r), this.openDeviceUI = () => {
                 this.deviceUI.open({
@@ -114,6 +115,6 @@ class So extends e {
     }
 }
 export {
-    So as
+    Mo as
     default
 };

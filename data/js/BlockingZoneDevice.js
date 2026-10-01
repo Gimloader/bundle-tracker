@@ -84,6 +84,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -92,7 +93,7 @@ const A = {
     imageId: d("devices/blocking_zone/icon.png"),
     imageUrl: d("devices/blocking_zone/icon.png")
 };
-class Ut extends u {
+class zt extends u {
     constructor(c) {
         if (super(c), this.updatePartAlpha = t => {
                 const o = this.getAlpha();
@@ -150,6 +151,6 @@ class Ut extends u {
     }
 }
 export {
-    Ut as BlockingZoneDevice, Ut as
+    zt as BlockingZoneDevice, zt as
     default
 };

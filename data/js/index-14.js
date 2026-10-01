@@ -3,24 +3,24 @@ import {
     I as Ye,
     _ as Ze,
     cU as et,
-    bD as je,
+    bD as Te,
     ak as tt,
     ai as nt,
     am as Y,
-    aQ as ot,
-    aC as he,
-    bh as st,
-    aO as rt,
-    cV as Te,
-    bA as it,
-    aF as Ie,
-    bf as U,
-    aK as $e,
+    aT as ot,
+    b4 as he,
+    bg as st,
+    ba as rt,
+    cV as je,
+    aC as it,
+    aS as Ie,
+    be as U,
+    b0 as $e,
     al as lt,
-    bd as at,
-    aS as _e,
-    aG as xe,
-    bm as ct
+    bc as at,
+    a$ as _e,
+    b6 as xe,
+    bl as ct
 } from "./_index.js";
 import {
     R as ut
@@ -98,7 +98,7 @@ const Et = (e, n, s, t) => {
             componentCls: n
         } = e;
         return {
-            "a&, a": Object.assign(Object.assign({}, je(e)), {
+            "a&, a": Object.assign(Object.assign({}, Te(e)), {
                 userSelect: "text",
                 [`&[disabled], &${n}-disabled`]: {
                     color: e.colorTextDisabled,
@@ -324,7 +324,7 @@ const Et = (e, n, s, t) => {
         ${n}-collapse,
         ${n}-edit,
         ${n}-copy
-      `]: Object.assign(Object.assign({}, je(e)), {
+      `]: Object.assign(Object.assign({}, Te(e)), {
                     marginInlineStart: e.marginXXS
                 })
             }), Ot(e)), Ct(e)), wt()), {
@@ -334,12 +334,12 @@ const Et = (e, n, s, t) => {
             })
         }
     },
-    jt = () => ({
+    Tt = () => ({
         titleMarginTop: "1.2em",
         titleMarginBottom: "0.5em"
     }),
-    Le = nt("Typography", Rt, jt),
-    Tt = e => {
+    Le = nt("Typography", Rt, Tt),
+    jt = e => {
         const {
             prefixCls: n,
             "aria-label": s,
@@ -354,7 +354,7 @@ const Et = (e, n, s, t) => {
             onEnd: b,
             component: p,
             enterIcon: C = o.createElement(vt, null)
-        } = e, w = o.useRef(null), R = o.useRef(!1), T = o.useRef(null), [f, _] = o.useState(a);
+        } = e, w = o.useRef(null), R = o.useRef(!1), j = o.useRef(null), [f, _] = o.useState(a);
         o.useEffect(() => {
             _(a)
         }, [a]), o.useEffect(() => {
@@ -384,7 +384,7 @@ const Et = (e, n, s, t) => {
             I = ({
                 keyCode: g
             }) => {
-                R.current || (T.current = g)
+                R.current || (j.current = g)
             },
             y = () => {
                 c(f.trim())
@@ -394,9 +394,9 @@ const Et = (e, n, s, t) => {
                 ctrlKey: h,
                 altKey: E,
                 metaKey: A,
-                shiftKey: j
+                shiftKey: T
             }) => {
-                T.current !== g || R.current || h || E || A || j || (g === he.ENTER ? (y(), b == null || b()) : g === he.ESC && d())
+                j.current !== g || R.current || h || E || A || T || (g === he.ENTER ? (y(), b == null || b()) : g === he.ESC && d())
             },
             F = () => {
                 y()
@@ -525,13 +525,13 @@ const Pe = o.forwardRef((e, n) => {
         direction: p,
         className: C,
         style: w
-    } = rt("typography"), R = a ?? p, T = m ? Te(n, m) : n, f = b("typography", s), [_, H, x] = Le(f), S = Y(f, C, {
+    } = rt("typography"), R = a ?? p, j = m ? je(n, m) : n, f = b("typography", s), [_, H, x] = Le(f), S = Y(f, C, {
         [`${f}-rtl`]: R === "rtl"
     }, r, l, H, x), I = Object.assign(Object.assign({}, w), c);
     return _(o.createElement(t, Object.assign({
         className: S,
         style: I,
-        ref: T
+        ref: j
     }, d), v))
 });
 
@@ -573,7 +573,7 @@ const fe = e => ["string", "number"].includes(typeof e),
             R = typeof w == "string" ? w : C;
         return o.createElement(pe, {
             title: w,
-            getPopupContainer: T => T.parentNode
+            getPopupContainer: j => j.parentNode
         }, o.createElement("button", {
             type: "button",
             className: Y(`${e}-copy`, {
@@ -648,23 +648,23 @@ function kt(e) {
         expanded: m,
         miscDeps: v,
         onEllipsis: a
-    } = e, c = o.useMemo(() => Ie(t), [t]), d = o.useMemo(() => At(c), [t]), b = o.useMemo(() => r(c, !1), [t]), [p, C] = o.useState(null), w = o.useRef(null), R = o.useRef(null), T = o.useRef(null), f = o.useRef(null), _ = o.useRef(null), [H, x] = o.useState(!1), [S, I] = o.useState(ae), [y, B] = o.useState(0), [F, z] = o.useState(null);
+    } = e, c = o.useMemo(() => Ie(t), [t]), d = o.useMemo(() => At(c), [t]), b = o.useMemo(() => r(c, !1), [t]), [p, C] = o.useState(null), w = o.useRef(null), R = o.useRef(null), j = o.useRef(null), f = o.useRef(null), _ = o.useRef(null), [H, x] = o.useState(!1), [S, I] = o.useState(ae), [y, B] = o.useState(0), [F, z] = o.useState(null);
     U(() => {
         I(n && s && d ? ce : ae)
     }, [s, t, l, n, c]), U(() => {
         var g, h, E, A;
         if (S === ce) {
             I(ue);
-            const j = R.current && getComputedStyle(R.current).whiteSpace;
-            z(j)
+            const T = R.current && getComputedStyle(R.current).whiteSpace;
+            z(T)
         } else if (S === ue) {
-            const j = !!(!((g = T.current) === null || g === void 0) && g.isExceed());
-            I(j ? de : we), C(j ? [0, d] : null), x(j);
-            const W = ((h = T.current) === null || h === void 0 ? void 0 : h.getHeight()) || 0,
+            const T = !!(!((g = j.current) === null || g === void 0) && g.isExceed());
+            I(T ? de : we), C(T ? [0, d] : null), x(T);
+            const W = ((h = j.current) === null || h === void 0 ? void 0 : h.getHeight()) || 0,
                 te = l === 1 ? 0 : ((E = f.current) === null || E === void 0 ? void 0 : E.getHeight()) || 0,
                 q = ((A = _.current) === null || A === void 0 ? void 0 : A.getHeight()) || 0,
                 ne = Math.max(W, te + q);
-            B(ne + 1), a(j)
+            B(ne + 1), a(T)
         }
     }, [S]);
     const N = p ? Math.ceil((p[0] + p[1]) / 2) : 0;
@@ -672,9 +672,9 @@ function kt(e) {
         var g;
         const [h, E] = p || [0, 0];
         if (h !== E) {
-            const j = (((g = w.current) === null || g === void 0 ? void 0 : g.getHeight()) || 0) > y;
+            const T = (((g = w.current) === null || g === void 0 ? void 0 : g.getHeight()) || 0) > y;
             let W = N;
-            E - h === 1 && (W = j ? h : E), C(j ? [h, W] : [W, E])
+            E - h === 1 && (W = T ? h : E), C(T ? [h, W] : [W, E])
         }
     }, [p, N]);
     const V = o.useMemo(() => {
@@ -699,7 +699,7 @@ function kt(e) {
         style: Object.assign(Object.assign(Object.assign({}, M), Q), {
             WebkitLineClamp: l
         }),
-        ref: T
+        ref: j
     }, b), o.createElement(G, {
         style: Object.assign(Object.assign(Object.assign({}, M), Q), {
             WebkitLineClamp: l - 1
@@ -772,7 +772,7 @@ const Dt = "...",
             title: C
         } = e, w = Bt(e, ["prefixCls", "className", "style", "type", "disabled", "children", "ellipsis", "editable", "copyable", "component", "title"]), {
             getPrefixCls: R,
-            direction: T
+            direction: j
         } = o.useContext(lt), [f] = at("Text"), _ = o.useRef(null), H = o.useRef(null), x = R("typography", t), S = _e(w, Re), [I, y] = ie(d), [B, F] = xe(!1, {
             value: y.editing
         }), {
@@ -798,7 +798,7 @@ const Dt = "...",
             },
             [E, A] = ie(b),
             {
-                copied: j,
+                copied: T,
                 copyLoading: W,
                 onClick: te
             } = $t({
@@ -866,7 +866,7 @@ const Dt = "...",
             J = o.useMemo(() => {
                 if (!(!D || L)) return [y.text, a, C, se.title].find(fe)
             }, [D, L, C, se.title, ve]);
-        if (B) return o.createElement(Tt, {
+        if (B) return o.createElement(jt, {
             value: (s = y.text) !== null && s !== void 0 ? s : typeof a == "string" ? a : "",
             onSave: g,
             onCancel: h,
@@ -874,7 +874,7 @@ const Dt = "...",
             prefixCls: x,
             className: r,
             style: l,
-            direction: T,
+            direction: j,
             component: p,
             maxLength: y.maxLength,
             autoSize: y.autoSize,
@@ -920,7 +920,7 @@ const Dt = "...",
                 key: "copy"
             }, A, {
                 prefixCls: x,
-                copied: j,
+                copied: T,
                 locale: f,
                 onCopy: te,
                 loading: W,
@@ -951,8 +951,8 @@ const Dt = "...",
                 WebkitLineClamp: oe ? K : void 0
             }),
             component: p,
-            ref: Te(i, _, n),
-            direction: T,
+            ref: je(i, _, n),
+            direction: j,
             onClick: z.includes("text") ? M : void 0,
             "aria-label": J == null ? void 0 : J.toString(),
             title: C
@@ -963,7 +963,7 @@ const Dt = "...",
             width: Ee,
             onEllipsis: Ve,
             expanded: k,
-            miscDeps: [j, k, W, I, E, f].concat($e(Re.map(u => e[u])))
+            miscDeps: [T, k, W, I, E, f].concat($e(Re.map(u => e[u])))
         }, (u, P) => Wt(e, o.createElement(o.Fragment, null, u.length > 0 && P && !k && J ? o.createElement("span", {
             key: "show-content",
             "aria-hidden": !0

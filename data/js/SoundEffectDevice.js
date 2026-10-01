@@ -81,12 +81,13 @@ import "./MapSound.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 var r = (o => (o.play = "play", o))(r || {}),
     i = (o => (o.all = "all", o.gameOwner = "gameOwner", o))(i || {});
-class Vo extends m {
+class _o extends m {
     constructor(p) {
         if (super(p), this.onMessage = t => {
                 t.key === r.play && t.data.characterId === e() && this.play()
@@ -115,6 +116,6 @@ class Vo extends m {
     }
 }
 export {
-    Vo as
+    _o as
     default
 };

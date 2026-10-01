@@ -81,6 +81,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const g = {
@@ -88,7 +89,7 @@ const g = {
     imageUrl: l("devices/character_proximity/radar.png")
 };
 var e = (i => (i.everywhere = "everywhere", i.zone = "zone", i))(e || {});
-class Wi extends c {
+class Zi extends c {
     constructor(h) {
         super(h), this.setupVisualEditing = () => {
             if (!s() || !a()) return;
@@ -123,6 +124,6 @@ class Wi extends c {
     }
 }
 export {
-    Wi as
+    Zi as
     default
 };

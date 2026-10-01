@@ -7,7 +7,7 @@ import {
     d as c,
     m as qe,
     o as b,
-    aZ as Le,
+    aI as Le,
     l as He,
     j as t,
     a5 as Mt,
@@ -20,17 +20,17 @@ import {
     c as le,
     F as D,
     K as zt,
-    G as $,
-    a_ as xe,
+    G as E,
+    aD as xe,
     i as K,
     a4 as Fe,
     a9 as Me,
     h as wt,
     q as Nt,
-    a$ as It,
+    aJ as It,
     u as q,
     ar as ze,
-    b0 as St,
+    aK as St,
     n as Rt,
     s as Bt,
     S as Ne,
@@ -40,11 +40,11 @@ import {
     N as Ut,
     t as ce,
     x as T,
-    aW as Vt,
-    b1 as Gt,
+    aB as Vt,
+    aL as Gt,
     C as Jt,
-    b2 as Yt,
-    b3 as We
+    aM as Yt,
+    aN as We
 } from "./_index.js";
 import {
     i as O,
@@ -190,6 +190,8 @@ import "./ContentContainer.js";
 import "./CopyKit.js";
 import "./QuestionCircleOutlined.js";
 import "./ShareAltOutlined.js";
+import "./ExportOutlined.js";
+import "./ExclamationCircleOutlined.js";
 import "./App-4.js";
 import "./Shortcut.js";
 import "./Names.js";
@@ -253,7 +255,7 @@ var Qs = {
         }))
     },
     Ts = l.forwardRef(_s),
-    $s = {
+    Es = {
         icon: {
             tag: "svg",
             attrs: {
@@ -270,13 +272,13 @@ var Qs = {
         name: "funnel-plot",
         theme: "outlined"
     },
-    Es = function(s, i) {
+    $s = function(s, i) {
         return l.createElement(ee, te({}, s, {
             ref: i,
-            icon: $s
+            icon: Es
         }))
     },
-    Ps = l.forwardRef(Es),
+    Ps = l.forwardRef($s),
     qs = {
         icon: {
             tag: "svg",
@@ -953,7 +955,7 @@ const gi = e => zt + "/" + e,
         name: "far fa-sparkles"
     }),
     ki = v(() => {
-        const e = $(),
+        const e = E(),
             {
                 editor: s,
                 kitCollab: i
@@ -1076,7 +1078,7 @@ const Di = c.div.attrs({
     })`
   flex: 1;
 `;
-class $i extends l.Component {
+class Ei extends l.Component {
     render() {
         return t.jsxs(_i, {
             children: [t.jsx(Ie, {}), t.jsxs(Ti, {
@@ -1085,7 +1087,7 @@ class $i extends l.Component {
         })
     }
 }
-const Ei = e => {
+const $i = e => {
         const s = Me(e);
         I({
             url: "/api/v1/editor/questions/remove",
@@ -1135,7 +1137,7 @@ let Ae = class extends l.Component {
         super(...arguments), this.onSelectQuestionCount = () => {
             this.props.editor.questionsChecked.length === this.props.editor.questions.length ? this.props.editor.questionsChecked.replace([]) : this.props.editor.questionsChecked.replace(this.props.editor.questions.map(e => e._id))
         }, this.deleteSelectedQuestions = () => {
-            Ei(this.props.editor.questionsChecked)
+            $i(this.props.editor.questionsChecked)
         }, this.convertSelectedQuestions = () => {
             Pi(this.props.editor.questionsChecked)
         }
@@ -1465,7 +1467,7 @@ const tn = c.div`
             kitDetails: {
                 id: s
             }
-        } = l.useContext(A), i = $(), [o, n, r] = q(!1), a = l.useRef(), d = l.useMemo(() => e.currentlyEditingQuestionId ? !1 : e.questions.length >= Z, [e.questions.length, e.currentlyEditingQuestionId]), h = l.useMemo(() => i.pathname.endsWith("question"), [i.pathname.length]), x = l.useMemo(() => {
+        } = l.useContext(A), i = E(), [o, n, r] = q(!1), a = l.useRef(), d = l.useMemo(() => e.currentlyEditingQuestionId ? !1 : e.questions.length >= Z, [e.questions.length, e.currentlyEditingQuestionId]), h = l.useMemo(() => i.pathname.endsWith("question"), [i.pathname.length]), x = l.useMemo(() => {
             if (e.currentlyEditingQuestionId) return e.questions.find(j => j._id === e.currentlyEditingQuestionId)
         }, [e.currentlyEditingQuestionId]), p = () => {
             a.current && a.current.clear(), m()
@@ -1567,7 +1569,7 @@ const tn = c.div`
             })
         }), s
     },
-    $t = e => {
+    Et = e => {
         const s = e.questions.map((i, o) => ({
             _id: "quizlet-question-" + o,
             text: i.text,
@@ -1721,7 +1723,7 @@ let Te = class extends l.Component {
                         },
                         children: "Flip Term/Definition"
                     })]
-                }), t.jsx($t, {
+                }), t.jsx(Et, {
                     visible: this.state.overlayOpen,
                     questions: e,
                     close: this.toggleOverlay
@@ -1790,7 +1792,7 @@ const hn = c.div`
   }
 `,
     un = () => {
-        const e = $(),
+        const e = E(),
             s = () => w(k),
             i = e.pathname.endsWith("flashcard-import");
         return t.jsx(Te, {
@@ -1799,7 +1801,7 @@ const hn = c.div`
         })
     },
     pn = () => {
-        const e = $(),
+        const e = E(),
             s = () => w(k),
             i = e.pathname.endsWith("question-bank");
         return t.jsx(_e, {
@@ -1981,7 +1983,7 @@ const hn = c.div`
 `,
     vn = () => {
         const e = St(),
-            s = $(),
+            s = E(),
             i = () => e(-1),
             o = s.pathname.endsWith("spreadsheet");
         return t.jsx(gn, {
@@ -2027,27 +2029,27 @@ const hn = c.div`
         })
     },
     yt = e => {
-        const s = E => {
-                e.onTextChange(E)
+        const s = $ => {
+                e.onTextChange($)
             },
             [i, o] = l.useState(!1),
-            n = E => {
-                e.onImageChange(E)
+            n = $ => {
+                e.onImageChange($)
             },
             [r, a] = l.useState(!1),
-            d = E => {
-                e.onAudioChange && e.onAudioChange(E)
+            d = $ => {
+                e.onAudioChange && e.onAudioChange($)
             },
             [h, x] = l.useState(!1),
             p = () => x(!1),
             [m, f, g] = q(!1),
-            j = E => {
-                e.onLatexChange && e.onLatexChange(E)
+            j = $ => {
+                e.onLatexChange && e.onLatexChange($)
             },
             S = () => o(!0),
             G = () => o(!1),
-            re = E => {
-                d(E), Ke()
+            re = $ => {
+                d($), Ke()
             },
             Ft = () => {
                 Kt() ? a(!0) : x(!0)
@@ -2289,7 +2291,7 @@ var On = Object.getOwnPropertyDescriptor,
         return n
     };
 const ae = "flashcard-entry-editor",
-    Et = e => {
+    $t = e => {
         let s = !1;
         return (e.text || e.audio || e.image || e.latex) && (s = !0), s
     },
@@ -2297,7 +2299,7 @@ const ae = "flashcard-entry-editor",
         let s = 0;
         return e.text && s++, e.image && s++, e.latex && s++, s === 1
     },
-    je = e => Et(e.question) && Pt(e.answer),
+    je = e => $t(e.question) && Pt(e.answer),
     Y = () => ({
         question: {
             text: "",
@@ -2312,7 +2314,7 @@ const ae = "flashcard-entry-editor",
         }
     }),
     jt = () => [Y(), Y(), Y(), Y()];
-let $e = class extends l.Component {
+let Ee = class extends l.Component {
     constructor() {
         super(...arguments), this.state = {
             questions: jt(),
@@ -2322,7 +2324,7 @@ let $e = class extends l.Component {
             overlayVisible: !this.state.overlayVisible
         }), this.handleQuestionChange = (e, s) => {
             let i = this.state.questions;
-            s + 1 === this.state.questions.length && !this.state.questions[s + 1] && je(e) && i.length < 200 && i.push(Y()), i = i.map((o, n) => n !== s ? o : e), i = i.filter((o, n) => !(n > 3 && n + 1 !== i.length && !Et(o.question) && !Pt(o.answer))), localStorage.setItem(ae, JSON.stringify(i)), this.setState({
+            s + 1 === this.state.questions.length && !this.state.questions[s + 1] && je(e) && i.length < 200 && i.push(Y()), i = i.map((o, n) => n !== s ? o : e), i = i.filter((o, n) => !(n > 3 && n + 1 !== i.length && !$t(o.question) && !Pt(o.answer))), localStorage.setItem(ae, JSON.stringify(i)), this.setState({
                 questions: i
             })
         }, this.makeQuestions = () => pe(this.state.questions.filter(e => je(e))), this.addQuestions = () => {
@@ -2417,7 +2419,7 @@ let $e = class extends l.Component {
                         onChange: i
                     }, "flashcard-create-" + s)
                 }), t.jsx(ge, {})]
-            }), t.jsx($t, {
+            }), t.jsx(Et, {
                 questions: this.state.overlayVisible ? this.makeQuestions() : [],
                 visible: this.state.overlayVisible,
                 close: this.toggleOverlay
@@ -2425,12 +2427,12 @@ let $e = class extends l.Component {
         })
     }
 };
-$e = An([O("kitDetails"), v], $e);
+Ee = An([O("kitDetails"), v], Ee);
 const Dn = () => {
-    const e = $(),
+    const e = E(),
         s = () => w(k),
         i = e.pathname.endsWith("flashcard-create");
-    return t.jsx($e, {
+    return t.jsx(Ee, {
         visible: i,
         close: s
     })
@@ -2440,7 +2442,7 @@ var Qn = Object.getOwnPropertyDescriptor,
         for (var n = o > 1 ? void 0 : o ? Qn(s, i) : s, r = e.length - 1, a; r >= 0; r--)(a = e[r]) && (n = a(n) || n);
         return n
     };
-let Ee = class extends l.Component {
+let $e = class extends l.Component {
     constructor() {
         super(...arguments), this.createFlashcards = () => X(fi(this.props.kitDetails.id)), this.importFlashcards = () => X(mi(this.props.kitDetails.id))
     }
@@ -2518,18 +2520,18 @@ let Ee = class extends l.Component {
         })
     }
 };
-Ee = _n([O("kitDetails"), v], Ee);
+$e = _n([O("kitDetails"), v], $e);
 const Tn = () => {
-        const e = $(),
+        const e = E(),
             s = () => w(k),
             i = e.pathname.endsWith("flashcard-home");
-        return t.jsx(Ee, {
+        return t.jsx($e, {
             visible: i,
             close: s
         })
     },
-    $n = l.lazy(() => Ht(() => import("./QRCode.js"), __vite__mapDeps([0, 1, 2, 3]))),
-    En = e => t.jsx(_, {
+    En = l.lazy(() => Ht(() => import("./QRCode.js"), __vite__mapDeps([0, 1, 2, 3]))),
+    $n = e => t.jsx(_, {
         open: e.visible,
         onCancel: e.close,
         footer: null,
@@ -2538,7 +2540,7 @@ const Tn = () => {
             className: "maxAll flex-center",
             children: t.jsx(l.Suspense, {
                 fallback: null,
-                children: t.jsx($n, {
+                children: t.jsx(En, {
                     link: e.link
                 })
             })
@@ -2589,7 +2591,7 @@ const Tn = () => {
                         })]
                     })]
                 })]
-            }), t.jsx(En, {
+            }), t.jsx($n, {
                 link: n,
                 visible: e,
                 close: i
@@ -3009,7 +3011,7 @@ const Tn = () => {
     ho = v(() => {
         const {
             kitCollab: e
-        } = l.useContext(A), s = $(), i = l.useMemo(() => s.pathname.endsWith("kit-collab"), [s.pathname]);
+        } = l.useContext(A), s = E(), i = l.useMemo(() => s.pathname.endsWith("kit-collab"), [s.pathname]);
         l.useEffect(() => {
             i ? e.panelOpen = !0 : e.panelOpen = !1
         }, [i]);
@@ -3321,7 +3323,7 @@ const Tn = () => {
     },
     yo = () => {
         const e = St(),
-            s = $(),
+            s = E(),
             i = () => e(-1),
             o = s.pathname.endsWith("ai");
         return t.jsx(vo, {
@@ -3336,14 +3338,14 @@ const Tn = () => {
   align-items: center;
 `,
     Co = Xt(() => {
-        const e = $(),
+        const e = E(),
             {
                 kitDetails: s,
                 editor: i
             } = l.useContext(A),
             o = () => t.jsxs(t.Fragment, {
                 children: [t.jsxs(jo, {
-                    children: [t.jsx($i, {}), t.jsx(sn, {})]
+                    children: [t.jsx(Ei, {}), t.jsx(sn, {})]
                 }), t.jsx(nn, {}), t.jsx(un, {}), t.jsx(pn, {}), t.jsx(vn, {}), t.jsx(Dn, {}), t.jsx(Tn, {}), t.jsx(yo, {}), t.jsx(ho, {}), e.pathname.endsWith("editor") && i.questions.length === 0 && t.jsx(bo, {})]
             });
         return s.id ? o() : t.jsx(Cn, {})
@@ -3442,7 +3444,7 @@ let Pe = class extends l.Component {
     }
 };
 Pe = wo([O("kitDetails"), v], Pe);
-const xa = () => (Ds(() => {
+const va = () => (Ds(() => {
     u.editor.reset(), u.kitDetails.reset(), u.kitCollab.reset()
 }), t.jsxs(Hs, {
     children: [t.jsx(Gt, {
@@ -3466,6 +3468,6 @@ const xa = () => (Ds(() => {
     })]
 }));
 export {
-    xa as
+    va as
     default
 };

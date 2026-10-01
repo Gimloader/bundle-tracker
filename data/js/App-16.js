@@ -1,18 +1,18 @@
 import {
-    b6 as V,
+    aV as U,
     y as g,
-    aa as L,
+    aa as B,
     j as e,
-    c as B,
+    c as L,
     U as F,
     e as j,
     B as w,
     d as c,
-    b7 as D,
+    aW as D,
     r as h,
     M as b,
     R as N,
-    aW as P,
+    aB as P,
     t as T,
     a8 as H,
     F as _,
@@ -90,9 +90,9 @@ const z = ["group"],
             url: `/api/v1/groups/info/${t}`
         })
     }),
-    y = t => V.invalidateQueries([z, t]),
+    y = t => U.invalidateQueries([z, t]),
     ue = t => {
-        const r = `${L()}/class/join/${t.groupId}`,
+        const r = `${B()}/class/join/${t.groupId}`,
             a = () => {
                 ae(r), k.success("Link copied!")
             };
@@ -101,7 +101,7 @@ const z = ["group"],
                 children: ["Have your students visit this link to join ", e.jsx("b", {
                     children: t.groupName
                 }), ". They will have to authenticate with Google or email."]
-            }), e.jsx(B, {
+            }), e.jsx(L, {
                 hoverable: !0,
                 style: {
                     color: j.Black,
@@ -665,7 +665,7 @@ const O = t => new Promise((r, a) => {
                         }
                     }) : e.jsx(ye, {
                         data: s
-                    }), e.jsx(U, {
+                    }), e.jsx(V, {
                         children: d()
                     })]
                 })]
@@ -687,7 +687,7 @@ const O = t => new Promise((r, a) => {
   max-width: 1200px;
   flex: 1;
 `,
-    U = c(ee).attrs({
+    V = c(ee).attrs({
         className: "maxWidth"
     })`
   flex: 1;
@@ -699,12 +699,12 @@ const O = t => new Promise((r, a) => {
     Je = Object.freeze(Object.defineProperty({
         __proto__: null,
         Container: q,
-        Content: U,
+        Content: V,
         ContentContainer: G,
         default: $e
     }, Symbol.toStringTag, {
         value: "Module"
     }));
 export {
-    Je as A, q as C, Ne as G, G as a, U as b, ye as c, me as u
+    Je as A, q as C, Ne as G, G as a, V as b, ye as c, me as u
 };

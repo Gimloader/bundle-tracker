@@ -120,6 +120,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 import "./index-20.js";
@@ -330,7 +331,7 @@ const re = () => {
         className: "maxAll"
     })``,
     le = j.div``,
-    Ir = b(() => {
+    Wr = b(() => {
         const t = te(),
             i = () => {
                 $(E.none)
@@ -386,6 +387,6 @@ const re = () => {
   border: 2px dashed rgba(255, 255, 255, 0.5);
 `;
 export {
-    Ir as
+    Wr as
     default
 };

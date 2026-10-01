@@ -85,6 +85,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -96,7 +97,7 @@ const p = {
         }
     }
 };
-class Nt extends l {
+class Rt extends l {
     constructor(m) {
         super(m), this.createVisuals = () => {
             if (this.isDestroyed) return;
@@ -176,6 +177,6 @@ class Nt extends l {
     }
 }
 export {
-    Nt as
+    Rt as
     default
 };

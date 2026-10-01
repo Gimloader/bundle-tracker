@@ -85,6 +85,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 import "./index-20.js";
@@ -189,7 +190,7 @@ const k = () => {
             })]
         })
     },
-    Qi = () => {
+    it = () => {
         const [t, r] = x.useState(!0), m = () => r(c => !c);
         return w(g.Input.Keyboard.KeyCodes.SPACE, m), t ? i.jsx(A, {
             children: i.jsxs(G, {
@@ -245,6 +246,6 @@ const k = () => {
   color: ${s.Black};
 `;
 export {
-    Qi as
+    it as
     default
 };

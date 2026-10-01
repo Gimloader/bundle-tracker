@@ -1,12 +1,12 @@
 import {
     bz as w,
-    ai as K,
-    aj as Q,
+    ai as Q,
+    aj as K,
     ak as E,
-    aL as Y,
+    aQ as Y,
     cY as Z,
-    aM as J,
-    bb as tt,
+    aR as J,
+    b8 as tt,
     r as p,
     al as H,
     bH as A,
@@ -17,8 +17,8 @@ import {
     cZ as at,
     ap as it,
     x as f,
-    bt as rt,
-    bc as ct,
+    bs as rt,
+    b9 as ct,
     c_ as st,
     E as lt,
     c$ as dt
@@ -414,7 +414,7 @@ const mt = t => {
     k = t => {
         const e = t.paddingMD,
             o = t.paddingLG;
-        return Q(t, {
+        return K(t, {
             notificationBg: t.colorBgElevated,
             notificationPaddingVertical: e,
             notificationPaddingHorizontal: o,
@@ -429,7 +429,7 @@ const mt = t => {
             notificationProgressBg: `linear-gradient(90deg, ${t.colorPrimaryBorderHover}, ${t.colorPrimary})`
         })
     },
-    W = K("Notification", t => {
+    W = Q("Notification", t => {
         const e = k(t);
         return [St(e), mt(e), Ct(e)]
     }, G),

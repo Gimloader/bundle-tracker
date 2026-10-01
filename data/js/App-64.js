@@ -140,6 +140,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 import "./EditOutlined.js";
@@ -553,7 +554,7 @@ const be = e => {
     Ue = l.div.attrs({
         className: "flex between vc"
     })``,
-    yt = O(() => {
+    ht = O(() => {
         const [e, t] = h.useState(!0), [n, s] = h.useState(Q());
         h.useEffect(() => Se([() => r.memorySystem.usedMemoryCost, () => r.me.adding.terrain.brushSize, () => r.me.adding.terrain.buildTerrainAsWall, () => r.memorySystem.counters.collidingTiles, () => r.memorySystem.counters.nonCollidingTiles, () => r.memorySystem.counters.wires, () => r.memorySystem.counters.codeGrids], () => {
             s(Q())
@@ -641,6 +642,6 @@ const be = e => {
   background: #c62828;
 `;
 export {
-    yt as
+    ht as
     default
 };

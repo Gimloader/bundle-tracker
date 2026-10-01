@@ -73,6 +73,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -82,7 +83,7 @@ const n = {
 };
 var i = (r => (r.guess = "guess", r))(i || {}),
     o = (r => (r.incorrect = "incorrect", r))(o || {});
-class Pt extends m {
+class wt extends m {
     constructor(p) {
         super(p), this.incorrectCounter = 0, this.guess = t => {
             this.sendToServerDevice(i.guess, {
@@ -108,6 +109,6 @@ class Pt extends m {
     }
 }
 export {
-    Pt as
+    wt as
     default
 };

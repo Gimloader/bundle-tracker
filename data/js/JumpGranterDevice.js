@@ -87,6 +87,7 @@ import "./MapSound.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -127,7 +128,7 @@ const n = {
     radius: h(125),
     width: 125
 };
-class Hi extends d {
+class Li extends d {
     constructor(s) {
         super(s), this.isDisabled = !1, this.isAnimationReady = !1, this.size = {
             width: 0,
@@ -196,6 +197,6 @@ class Hi extends d {
     }
 }
 export {
-    Hi as
+    Li as
     default
 };

@@ -32,6 +32,8 @@
                     "set_property",
                     "current_character_name",
                     "current_character_id",
+                    "current_character_health",
+                    "current_character_shield",
                     "add_activity_feed_item_for_everyone",
                     "add_activity_feed_item_for_triggering_player",
                     "add_activity_feed_item_for_game_host",

@@ -1,7 +1,7 @@
 import {
     j as e,
     e as c,
-    F as T,
+    F as R,
     d as s,
     c3 as l,
     c4 as a,
@@ -11,7 +11,7 @@ import {
     c7 as E,
     D as h,
     C as M,
-    aT as B,
+    az as B,
     r,
     W as D,
     V as v,
@@ -57,18 +57,18 @@ const L = t => e.jsxs("div", {
             style: {
                 height: 130
             }
-        }), e.jsx(Y, {
-            children: "Woohoo!"
         }), e.jsx(z, {
+            children: "Woohoo!"
+        }), e.jsx(Y, {
             children: t.isRenewal ? "Your group license renewal is complete!" : "Your group license is ready to go!"
         })]
     }),
-    Y = s.h1`
+    z = s.h1`
   color: ${c.Black};
-  font-weight: ${T.UltraBold};
+  font-weight: ${R.UltraBold};
   font-size: 50px;
 `,
-    z = s.p`
+    Y = s.p`
   margin-top: -41px;
   font-size: 18px;
 `,
@@ -194,7 +194,7 @@ const L = t => e.jsxs("div", {
 `,
     w = s.h2`
   font-size: 32px;
-  font-weight: ${T.UltraBold};
+  font-weight: ${R.UltraBold};
   color: ${c.Black};
 `,
     S = s.p`
@@ -203,7 +203,7 @@ const L = t => e.jsxs("div", {
 `,
     d = "Error fetching subscription info. Try refreshing the page. If you continue to see this error, please contact support.",
     Se = () => {
-        const [t, o] = r.useState(!0), [m, x] = r.useState(""), [R, g] = r.useState(""), [P, j] = r.useState(""), [f, y] = r.useState(!1);
+        const [t, o] = r.useState(!0), [m, x] = r.useState(""), [T, g] = r.useState(""), [P, j] = r.useState(""), [f, y] = r.useState(!1);
         r.useEffect(() => {
             D({})
         }, []), r.useEffect(() => {
@@ -246,7 +246,7 @@ const L = t => e.jsxs("div", {
                 children: [e.jsx(L, {
                     isRenewal: f
                 }), e.jsx(h, {}), m === "creditCard" && e.jsx(H, {
-                    receiptLink: R
+                    receiptLink: T
                 }), m === "purchaseOrder" && e.jsx(W, {
                     invoiceLink: P
                 }), e.jsx("div", {

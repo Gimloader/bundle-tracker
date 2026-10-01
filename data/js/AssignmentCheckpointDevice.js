@@ -73,18 +73,19 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
 const m = {
     imageId: "assignment_checkpoint_device",
     imageUrl: p("devices/assignment_checkpoint/flag.png")
 };
-class _t extends o {
+class xt extends o {
     constructor(t) {
         super(t), !(i() || r()) && (this.layers.forceDepthManually(0), this.parts.add.sprite(m))
     }
 }
 export {
-    _t as
+    xt as
     default
 };

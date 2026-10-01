@@ -1,7 +1,7 @@
 import { sendError } from "../net/webhook.ts";
 import { createCreativeGame, findServer, fetchCookie, getRoom, getSource, getToken } from "../net/fetch.ts";
 import { join } from "node:path";
-import { data, HandledError, prepareDataDir, writeJson } from "../util.ts";
+import { data, HandledError, prepareDataDir, retryAsync, writeJson } from "../util.ts";
 import { checkIfChanges, pushDataChanges, rebaseToLatest } from "../net/git.ts";
 
 export async function extractGamedata(push: boolean) {
@@ -31,8 +31,8 @@ export async function extractGamedata(push: boolean) {
     
     await fetchCookie();
     const authToken = await getToken();
-    await extractFromMap(process.env.TOP_DOWN_MAP);
-    await extractFromMap(process.env.PLATFORMER_MAP);
+    await retryAsync("data from top-down map", () => extractFromMap(process.env.TOP_DOWN_MAP));
+    await retryAsync("data from platformer map", () => extractFromMap(process.env.PLATFORMER_MAP));
     
     if(push && await checkIfChanges()) await pushDataChanges();
     

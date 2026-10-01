@@ -86,6 +86,7 @@ import "./sounds.js";
 import "./App-5.js";
 import "./AnimatedBackground-2.js";
 import "./useDebouncedValue.js";
+import "./CloseCircleOutlined.js";
 import "./MapStyle.js";
 import "./FillRemainingSpace.js";
 import "./index-24.js";
@@ -94,7 +95,7 @@ const b = {
     imageId: g("devices/zone/base.png"),
     imageUrl: g("devices/zone/base.png")
 };
-class ki extends f {
+class Bi extends f {
     constructor(c) {
         if (super(c), this.onStateChange = i => {
                 if (i === "active" && this.zone && this.zone.view) {
@@ -179,6 +180,6 @@ class ki extends f {
     }
 }
 export {
-    ki as
+    Bi as
     default
 };

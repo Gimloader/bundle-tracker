@@ -1,0 +1,8 @@
+{
+    "type": "current_character_shield",
+    "message0": "Triggering Player's Shield",
+    "colour": 230,
+    "tooltip": "",
+    "helpUrl": "",
+    "output": "Number"
+}
