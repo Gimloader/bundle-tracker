@@ -16,25 +16,38 @@ const oldPath = await normalizeDir(oldCommit);
 const newPath = await normalizeDir(newCommit);
 
 try {
+    console.log("Generating diff...");
     execSync(`git diff --no-index ${oldPath} ${newPath} --output=tmp/changes.diff`);
 } catch {}
 
-async function normalizeDir(commit: string) {
-  const path = `tmp/normalized-${commit.slice(0, 5)}`;
-  await mkdir(path);
-  const files = execSync(`git show --name-only ${commit}:data/js/`).toString().split('\n').slice(2);
-  for (const file of files) {
-    if (!file) continue;
-    const code = await getFile(commit, `data/js/${file}`);
-    try {
-      const normalized = await normalizeCode(code);
-      await writeFile(`${path}/${file}`, normalized);
-    } catch(err) {
-      throw new Error(`Error at ${file}: ${err}`)
-    }
-  }
+console.log("Done! Changes written to tmp/changes.diff")
 
-  return path;
+async function normalizeDir(commit: string) {
+    console.log("Normalizing javascript for commit", commit);
+
+    const path = `tmp/normalized-${commit.slice(0, 5)}`;
+    await mkdir(path);
+    const files = execSync(`git show --name-only ${commit}:data/js/`).toString().split('\n').slice(2);
+    
+    for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        if (!file) continue;
+
+        if(i > 0) process.stdout.write("\x1b[2K\r");
+        process.stdout.write(`Normalizing ${i + 1}/${files.length} (${file})`);
+
+        const code = await getFile(commit, `data/js/${file}`);
+
+        try {
+            const normalized = await normalizeCode(code);
+            await writeFile(`${path}/${file}`, normalized);
+        } catch(err) {
+            throw new Error(`Error at ${file}: ${err}`)
+        }
+    }
+
+    process.stdout.write("\x1b[2K\r");
+    return path;
 }
 
 async function normalizeCode(code: string) {
