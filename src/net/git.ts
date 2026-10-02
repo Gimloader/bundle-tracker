@@ -27,7 +27,7 @@ export async function checkIfChanges() {
     }
 }
 
-const getStat = () => execSync("git diff --shortstat").toString();
+const getStat = () => execSync("git diff --cached --shortstat").toString();
 const getHash = () => execSync("git rev-parse HEAD").toString();
 const getDateStr = () => {
     const date = new Date();
@@ -36,6 +36,8 @@ const getDateStr = () => {
 
 export async function pushDataChanges() {
     execSync("git add data");
+    const stat = getStat();
+
     execSync(`git commit -m "Update game data (${getDateStr()})"`);
     const hash = getHash();
 
@@ -45,7 +47,7 @@ export async function pushDataChanges() {
 
     await sendEmbed({
         title: "New updates to Gimkit's game data",
-        description: `**[View changes](https://github.com/Gimloader/bundle-tracker/commit/${hash})**\n${getStat()}`,
+        description: `**[View changes](https://github.com/Gimloader/bundle-tracker/commit/${hash})**\n${stat}`,
         url: `https://github.com/Gimloader/bundle-tracker/commit/${hash}`,
         color: 7220975
     });
@@ -53,6 +55,8 @@ export async function pushDataChanges() {
 
 export async function pushMapChanges() {
     execSync("git add data");
+    const stat = getStat();
+
     execSync(`git commit -m "Update map data (${getDateStr()})"`);
     const hash = getHash();
 
@@ -62,17 +66,18 @@ export async function pushMapChanges() {
 
     await sendEmbed({
         title: "New updates to Gimkit's map data",
-        description: `**[View changes](https://github.com/Gimloader/bundle-tracker/commit/${hash})**\n${getStat()}`,
+        description: `**[View changes](https://github.com/Gimloader/bundle-tracker/commit/${hash})**\n${stat}`,
         url: `https://github.com/Gimloader/bundle-tracker/commit/${hash}`,
         color: 7220975
     });
 }
 
 export async function pushJsChanges() {
-    const stat = getStat();
     const dateStr = getDateStr();
 
     execSync("git add data/js data/lastRun.json");
+    const stat = getStat();
+
     execSync(`git commit -m "Update javascript data (${dateStr})"`);
     const hash = getHash();
 
