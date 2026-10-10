@@ -1,0 +1,1 @@
+import{o as e}from"./rolldown-runtime.js";import{t}from"./react-1.js";import{D as n,E as r}from"./Compact.js";import{c as i}from"./ContextIsolator.js";var a=e(t()),o=(e,t,o=void 0)=>{let{variant:s,[e]:c}=a.useContext(r),l=a.useContext(i),u=c==null?void 0:c.variant,d;d=t===void 0?o===!1?`borderless`:l??u??s??`outlined`:t;let f=n.includes(d);return[d,f]};export{o as t};

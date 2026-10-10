@@ -1,1 +1,1 @@
-import{cr as r}from"./_index.js";const t=o=>{r.push(o)};export{t as N};
+import{i as e}from"./_index.js";var t=t=>{e.push(t)};export{t};

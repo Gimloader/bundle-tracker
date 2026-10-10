@@ -1,1 +1,1 @@
-import{a as n}from"./FixSpinePlugin.js";const p=e=>{if(!e.view||!e.view.active)return;const t={thickness:2},i=e.options?{...t,...e.options}:{...t};n().plugins.get("rexOutlinePipeline").add(e.view,i)};export{p as A};
+import{t as e}from"./FetchScene.js";var t=t=>{if(!t.view||!t.view.active)return;let n={thickness:2},r=t.options?{...n,...t.options}:{...n};e().plugins.get(`rexOutlinePipeline`).add(t.view,r)};export{t};

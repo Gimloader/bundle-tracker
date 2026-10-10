@@ -1,1 +1,1 @@
-import{j as e}from"./_index.js";import{Q as r}from"./index-22.js";const a=o=>e.jsx(r,{value:o.link,size:300});export{a as default};
+import{t as e}from"./qr-code.js";import{t}from"./jsx-runtime.js";var n=t(),r=t=>(0,n.jsx)(e,{value:t.link,size:300});export{r as default};

@@ -1,0 +1,3 @@
+var e=e=>({[e.componentCls]:{[`${e.antCls}-motion-collapse-legacy`]:{overflow:`hidden`,"&-active":{transition:`height ${e.motionDurationMid} ${e.motionEaseInOut},
+        opacity ${e.motionDurationMid} ${e.motionEaseInOut} !important`}},[`${e.antCls}-motion-collapse`]:{overflow:`hidden`,transition:`height ${e.motionDurationMid} ${e.motionEaseInOut},
+        opacity ${e.motionDurationMid} ${e.motionEaseInOut} !important`}}});export{e as t};

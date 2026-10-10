@@ -1,52 +1,4 @@
-import{u as v,j as t,D as j,C as b,d as n,F as x,f as I,B as Q,e as y,c as w,r as p,aH as g}from"./_index.js";import{Q as B}from"./Question.js";import{T as h}from"./index-5.js";import{U as $}from"./App-2.js";import{R as D}from"./DownloadOutlined.js";const a={Red:"#d32f2f",Green:"#388e3c",Blue:"#303f9f"},A=n.div`
-  display: flex;
-  flex-direction: column;
-  min-height: max-content;
-`,E=n.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-`,k=n.div`
-  display: flex;
-  flex-direction: column;
-`,M=n.h2`
-  font-size: 46px;
-  line-height: 46px;
-  font-weight: ${x.UltraBold};
-  margin-bottom: 0px;
-  margin-top: 3px;
-`,S=n.p`
-  margin-bottom: 0px;
-  font-size: 20px;
-`,z=n(Q)`
-  @media print {
-    display: none;
-  }
-`,R=e=>{const[o,l,d]=v(!1),u=()=>{if(!I()){l();return}e==null||e.download()};return t.jsxs(t.Fragment,{children:[t.jsxs(A,{children:[t.jsxs(E,{children:[t.jsxs(k,{children:[t.jsx(M,{children:e.title}),e.description&&t.jsx(S,{children:e.description})]}),e.download?t.jsx(z,{style:{marginLeft:30},size:"large",icon:t.jsx(D,{}),onClick:u,children:"Export"}):null]}),t.jsx(j,{})]}),t.jsx($,{id:"report export",copy:{title:"Export reports with Pro",description:t.jsxs(t.Fragment,{children:["To export a game report to a spreadsheet file,"," ",t.jsxs("b",{children:["upgrade to ",b," Pro."]})]})},visible:o,close:d})]})},U=n(w)`
-  margin-bottom: 10px !important;
-`,N=n.h2`
-  margin-bottom: -9px;
-  font-weight: ${x.Bold};
-`,P=n.span`
-  font-size: 40px;
-  font-weight: ${x.Black};
-  color: ${e=>e.color?e.color:y.Black};
-`,T=e=>t.jsxs(U,{className:e.className,children:[e.header!==null&&t.jsx(N,{children:e.header}),e.content!==null&&t.jsx(P,{color:e.contentColor,children:e.content})]}),W=n.div`
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  padding: 30px;
-  overflow-y: ${e=>e.preventScroll?"hidden":"auto"};
-  overflow-x: hidden;
-  @media print {
-    overflow: visible;
-    ::-webkit-scrollbar {
-      visibility: hidden;
-    }
-  }
-`,q=n.div`
+import{o as e}from"./rolldown-runtime.js";import{O as t,n,v as r}from"./utils.js";import{t as i}from"./react-1.js";import{t as a}from"./tooltip.js";import{t as o}from"./button.js";import{t as s}from"./card.js";import{t as c}from"./Question.js";import{t as l}from"./DownloadOutlined.js";import{n as u}from"./Company.js";import{t as d}from"./jsx-runtime.js";import{l as f,n as p,s as m,y as h}from"./_index.js";import{n as g}from"./App-2.js";var _=e(i()),v={Red:`#d32f2f`,Green:`#388e3c`,Blue:`#303f9f`},y=d(),b=f.div`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -56,37 +8,85 @@ import{u as v,j as t,D as j,C as b,d as n,F as x,f as I,B as Q,e as y,c as w,r a
   @media print {
     break-inside: avoid;
   }
-`,f=n(w).attrs({bodyStyle:{textAlign:"center",padding:0}})`
+`,x=f(s).attrs({bodyStyle:{textAlign:`center`,padding:0}})`
   text-align: center;
   font-size: 20px !important;
   padding: 7px 0px !important;
-  color: ${y.Black};
+  color: ${p.Black};
   cursor: default;
   width: 100px !important;
-`,_=n(f)`
-  color: ${a.Green} !important;
+`,S=f(x)`
+  color: ${v.Green} !important;
   margin-left: 20px !important;
-`,F=n(f)`
-  color: ${a.Red} !important;
+`,C=f(x)`
+  color: ${v.Red} !important;
   margin-left: 10px !important;
-`,H=n(f)`
-  color: ${a.Blue} !important;
+`,w=f(x)`
+  color: ${v.Blue} !important;
   margin-left: 10px !important;
-`,G=e=>t.jsxs(q,{children:[t.jsx(h,{title:"Correct",children:t.jsx(_,{children:e.correct})}),t.jsx(h,{title:"Incorrect",children:t.jsx(F,{children:e.incorrect})}),t.jsx(h,{title:"Accuracy",children:t.jsx(H,{children:`${e.accuracy}%`})})]}),O=n.div`
+`,T=e=>(0,y.jsxs)(b,{children:[(0,y.jsx)(a,{title:`Correct`,children:(0,y.jsx)(S,{children:e.correct})}),(0,y.jsx)(a,{title:`Incorrect`,children:(0,y.jsx)(C,{children:e.incorrect})}),(0,y.jsx)(a,{title:`Accuracy`,children:(0,y.jsx)(w,{children:`${e.accuracy}%`})})]}),E=f.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
-`,L=n.div`
+`,D=f.div`
   width: 100%;
-`,Y=e=>t.jsxs(O,{children:[t.jsx(L,{children:t.jsx(B,{question:e.question})}),t.jsx(G,{correct:e.correct,incorrect:e.incorrect,accuracy:e.accuracy})]}),J=n.div`
+`,O=e=>(0,y.jsxs)(E,{children:[(0,y.jsx)(D,{children:(0,y.jsx)(c,{question:e.question})}),(0,y.jsx)(T,{correct:e.correct,incorrect:e.incorrect,accuracy:e.accuracy})]}),k=f.div`
+  display: flex;
+  flex-direction: column;
+  min-height: max-content;
+`,A=f.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+`,j=f.div`
+  display: flex;
+  flex-direction: column;
+`,M=f.h2`
+  font-size: 46px;
+  line-height: 46px;
+  font-weight: ${m.UltraBold};
+  margin-bottom: 0px;
+  margin-top: 3px;
+`,N=f.p`
+  margin-bottom: 0px;
+  font-size: 20px;
+`,P=f(o)`
+  @media print {
+    display: none;
+  }
+`,F=e=>{let[n,i,a]=t(!1);return(0,y.jsxs)(y.Fragment,{children:[(0,y.jsxs)(k,{children:[(0,y.jsxs)(A,{children:[(0,y.jsxs)(j,{children:[(0,y.jsx)(M,{children:e.title}),e.description&&(0,y.jsx)(N,{children:e.description})]}),e.download?(0,y.jsx)(P,{style:{marginLeft:30},size:`large`,icon:(0,y.jsx)(l,{}),onClick:()=>{r()?e==null||e.download():i()},children:`Export`}):null]}),(0,y.jsx)(h,{})]}),(0,y.jsx)(g,{id:`report export`,copy:{title:`Export reports with Pro`,description:(0,y.jsxs)(y.Fragment,{children:[`To export a game report to a spreadsheet file,`,` `,(0,y.jsxs)(`b`,{children:[`upgrade to `,u,` Pro.`]})]})},visible:n,close:a})]})},I=f(s)`
+  margin-bottom: 10px !important;
+`,L=f.h2`
+  margin-bottom: -9px;
+  font-weight: ${m.Bold};
+`,R=f.span`
+  font-size: 40px;
+  font-weight: ${m.Black};
+  color: ${e=>e.color?e.color:p.Black};
+`,z=e=>(0,y.jsxs)(I,{className:e.className,children:[e.header!==null&&(0,y.jsx)(L,{children:e.header}),e.content!==null&&(0,y.jsx)(R,{color:e.contentColor,children:e.content})]}),B=f.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 30px;
+  overflow-y: ${e=>e.preventScroll?`hidden`:`auto`};
+  overflow-x: hidden;
+  @media print {
+    overflow: visible;
+    ::-webkit-scrollbar {
+      visibility: hidden;
+    }
+  }
+`,V=f.div`
   display: flex;
   justify-content: space-around;
   min-height: max-content;
-`,m=n(T)`
+`,H=f(z)`
   flex-basis: 33%;
   margin-bottom: 10px;
   text-align: center;
   :not(:last-child) {
     margin-right: 10px;
   }
-`,et=e=>{const{player:o,questions:l}=e,d=p.useMemo(()=>{const r=new Set;o.correctQuestionIds.forEach(c=>{r.add(c)}),o.incorrectQuestionIds.forEach(c=>{r.add(c)});const i=[];return r.forEach(c=>{const s=l.find(C=>C._id===c);s&&i.push(s)}),i},[l.length,o.correctQuestionIds.length,o.incorrectQuestionIds.length]),u=p.useMemo(()=>d.map(r=>{let i=0,c=0;return o.correctQuestionIds.forEach(s=>{s===r._id&&i++}),o.incorrectQuestionIds.forEach(s=>{s===r._id&&c++}),{question:r,resultData:{correct:i,incorrect:c,accuracy:g(i,c)}}}),[d.length,o.correctQuestionIds.length,o.incorrectQuestionIds.length]);return t.jsxs(W,{preventScroll:e.preventScroll,children:[t.jsx(R,{title:o.name}),t.jsxs(J,{children:[t.jsx(m,{header:"Correct",content:o.correctQuestionIds.length,contentColor:a.Green}),t.jsx(m,{header:"Incorrect",content:o.incorrectQuestionIds.length,contentColor:a.Red}),t.jsx(m,{header:"Accuracy",content:`${g(o.correctQuestionIds.length,o.incorrectQuestionIds.length)}%`,contentColor:a.Blue})]}),t.jsx("div",{className:"maxWidth",children:t.jsx(j,{style:{fontSize:20,fontWeight:x.UltraBold},children:t.jsx("div",{children:"Questions"})})}),t.jsx("div",{children:u.sort((r,i)=>r.resultData.accuracy>i.resultData.accuracy?1:-1).map(r=>t.jsx(Y,{question:r.question,correct:r.resultData.correct,incorrect:r.resultData.incorrect,accuracy:r.resultData.accuracy},r.question._id+"-"+o.name+"-breakdown"))})]})};export{Y as B,W as C,R as H,T as I,et as P,G as Q,a};
+`,U=e=>{let{player:t,questions:r}=e,i=_.useMemo(()=>{let e=new Set;t.correctQuestionIds.forEach(t=>{e.add(t)}),t.incorrectQuestionIds.forEach(t=>{e.add(t)});let n=[];return e.forEach(e=>{let t=r.find(t=>t._id===e);t&&n.push(t)}),n},[r.length,t.correctQuestionIds.length,t.incorrectQuestionIds.length]),a=_.useMemo(()=>i.map(e=>{let r=0,i=0;return t.correctQuestionIds.forEach(t=>{t===e._id&&r++}),t.incorrectQuestionIds.forEach(t=>{t===e._id&&i++}),{question:e,resultData:{correct:r,incorrect:i,accuracy:n(r,i)}}}),[i.length,t.correctQuestionIds.length,t.incorrectQuestionIds.length]);return(0,y.jsxs)(B,{preventScroll:e.preventScroll,children:[(0,y.jsx)(F,{title:t.name}),(0,y.jsxs)(V,{children:[(0,y.jsx)(H,{header:`Correct`,content:t.correctQuestionIds.length,contentColor:v.Green}),(0,y.jsx)(H,{header:`Incorrect`,content:t.incorrectQuestionIds.length,contentColor:v.Red}),(0,y.jsx)(H,{header:`Accuracy`,content:`${n(t.correctQuestionIds.length,t.incorrectQuestionIds.length)}%`,contentColor:v.Blue})]}),(0,y.jsx)(`div`,{className:`maxWidth`,children:(0,y.jsx)(h,{style:{fontSize:20,fontWeight:m.UltraBold},children:(0,y.jsx)(`div`,{children:`Questions`})})}),(0,y.jsx)(`div`,{children:a.sort((e,t)=>e.resultData.accuracy>t.resultData.accuracy?1:-1).map(e=>(0,y.jsx)(O,{question:e.question,correct:e.resultData.correct,incorrect:e.resultData.incorrect,accuracy:e.resultData.accuracy},e.question._id+`-`+t.name+`-breakdown`))})]})};export{O as a,F as i,B as n,T as o,z as r,v as s,U as t};

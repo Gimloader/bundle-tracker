@@ -1,4 +1,4 @@
-import{j as i,d as t}from"./_index.js";const s=a=>i.jsxs(e,{children:[i.jsx("div",{className:"area",children:i.jsxs("ul",{className:"circles",children:[i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{})]})}),i.jsx(l,{children:a.children})]}),e=t.div`
+import"./rolldown-runtime.js";import{t as e}from"./react-1.js";import{t}from"./jsx-runtime.js";import{l as n}from"./_index.js";e();var r=t(),i=e=>(0,r.jsxs)(a,{children:[(0,r.jsx)(`div`,{className:`area`,children:(0,r.jsxs)(`ul`,{className:`circles`,children:[(0,r.jsx)(`li`,{}),(0,r.jsx)(`li`,{}),(0,r.jsx)(`li`,{}),(0,r.jsx)(`li`,{}),(0,r.jsx)(`li`,{}),(0,r.jsx)(`li`,{}),(0,r.jsx)(`li`,{}),(0,r.jsx)(`li`,{}),(0,r.jsx)(`li`,{}),(0,r.jsx)(`li`,{})]})}),(0,r.jsx)(o,{children:e.children})]}),a=n.div`
   flex: 1;
   height: 100%;
   width: 100%;
@@ -121,8 +121,8 @@ import{j as i,d as t}from"./_index.js";const s=a=>i.jsxs(e,{children:[i.jsx("div
       border-radius: 50%;
     }
   }
-`,l=t.div.attrs({className:"maxAll"})`
+`,o=n.div.attrs({className:`maxAll`})`
   position: absolute;
   top: 0;
   left: 0;
-`;export{s as default};
+`;export{i as default};

@@ -1,1 +1,1 @@
-const a=o=>{o==null||o.stopPropagation()};export{a as S};
+var e=e=>{e==null||e.stopPropagation()};export{e as t};

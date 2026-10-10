@@ -1,1 +1,1 @@
-const t=()=>4;export{t as T};
+var e=()=>4;export{e as t};

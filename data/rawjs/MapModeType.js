@@ -1,1 +1,1 @@
-var a=(e=>(e.liveGame="liveGame",e.assignment="assignment",e))(a||{});export{a as M};
+var e=function(e){return e.liveGame=`liveGame`,e.assignment=`assignment`,e}({});export{e as t};

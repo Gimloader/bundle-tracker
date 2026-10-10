@@ -1,1 +1,1 @@
-const e={name:"Season Ticket",singularName:"ticket"},a={seasonName:"Season",seasonNumber:"1"};export{e as S,a};
+var e={name:`Season Ticket`,singularName:`ticket`},t={seasonYear:`2027`,seasonName:`Season`,seasonNumber:`1`};export{t as n,e as t};

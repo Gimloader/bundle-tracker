@@ -1,126 +1,42 @@
-import{r as l,j as t,q as u,d as a,U as b,F as I,aU as y,e as B}from"./_index.js";import{b as N,a as h,d as m,c as j,F as D,C as G}from"./ItemNameWithAmount.js";import{o as p,a as V}from"./mobxreact.esm.js";import{u as A,T as R,bB as F,af as v,ae as L}from"./App-41.js";import{M as k}from"./Button.js";import{C as O}from"./confetti.js";import{u as w}from"./useIntervalWhen.js";import{m as g}from"./motion.js";import{P as E}from"./progress.js";import{A as U}from"./index-17.js";import{s as q,a as H}from"./FixSpinePlugin.js";import{C}from"./CapitalizeFirstLetter.js";import{D as J}from"./TutorialConsts.js";import"./index-21.js";import"./QuizTypes.js";import"./MapModeType.js";import"./GetAssetPath.js";import"./ActionButton.js";import"./index-5.js";import"./playSound.js";import"./MapSound.js";import"./howler.js";import"./index-18.js";import"./context.js";import"./FontAwesomeIcon.js";import"./Centered.js";import"./index-4.js";import"./index-2.js";import"./index-14.js";import"./EditOutlined.js";import"./styleChecker.js";import"./index-3.js";import"./CheckOutlined.js";import"./CopyOutlined.js";import"./SixteenByNineScaler.js";import"./index-20.js";import"./index-22.js";import"./index-1.js";import"./ElementIds.js";import"./SeasonTicketName.js";import"./useQuery.js";import"./___vite-browser-external_commonjs-proxy.js";import"./util-1.js";import"./util-2.js";import"./Shortcut.js";import"./Names.js";import"./useWillUnmount.js";import"./CircularProgress.js";import"./clsx.m.js";import"./inheritsLoose.js";import"./index-6.js";import"./AccessibleAnchor.js";import"./GimkitLiveQuestion.js";import"./Text.js";import"./getCloudinaryUrl.js";import"./LazyLatexRenderer.js";import"./Tooltip.js";import"./polished.esm.js";import"./use-motion-value.js";import"./index-9.js";import"./index-23.js";import"./index-10.js";import"./move.js";import"./react-flip-move.es.js";import"./sounds.js";import"./App-5.js";import"./AnimatedBackground-2.js";import"./useDebouncedValue.js";import"./CloseCircleOutlined.js";import"./MapStyle.js";import"./FillRemainingSpace.js";import"./index-24.js";import"./use-force-update.js";const K=p(e=>{const[,i]=l.useReducer(x=>x+1,0),[r,n]=l.useState(!1),{session:{gameTime:s}}=A();l.useEffect(()=>{n(!0)},[]),w(i,33,!!e.itemDisposalMs);const o=()=>{const x=Math.max(e.itemDisposalAt-F(),0),$=Math.ceil(x/1e3);return isNaN($)?0:$},c=l.useMemo(()=>{if(!e.useCrafterCollectionAdvantage)return!1;if(e.itemCrafterCharacterId!==R()){const x=e.itemFinishesCraftingAt+N.secondsAdvantage*1e3;return s<x}return!1},[e.useCrafterCollectionAdvantage,s,e.itemFinishesCraftingAt,e.itemCrafterCharacterId]),f=()=>{e.collect(),e.close()},d=Math.max(1,o());return t.jsxs(Q,{children:[t.jsx(O,{config:Y,active:r}),t.jsx(k,{block:!0,type:"success",disabled:c,style:{width:"80%"},onClick:f,ariaLabel:"Collect",children:t.jsx("span",{style:{textTransform:"uppercase"},children:"Collect"})}),e.itemDisposalMs?t.jsxs(X,{children:["Goes bad in ",d," ",u("second",d)]}):null]})}),Q=a(g.div).attrs({className:"maxWidth flex-center flex-column",initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},transition:{duration:.25}})`
-  margin-top: 25px;
-`,X=a.div`
-  margin-top: 10px;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 14px;
-  font-family: ${b.ProductSans};
-  font-weight: ${I.Bold};
-  text-transform: none;
-`,Y={angle:90,spread:55,elementCount:50,startVelocity:30,decay:.95},Z=e=>{const[,i]=l.useReducer(c=>c+1,0);w(i,33);const r=Math.max(e.itemFinishesCraftingAt-F(),0),n=Math.max(100-r/e.craftingDurationMs*100,0);if(isNaN(r))return null;const s=Math.max(1,Math.ceil(r/1e3)),o=`Ready in ${s} ${u("second",s)}`;return isNaN(n)?null:t.jsxs(_,{children:[t.jsx(E,{percent:n,showInfo:!1,status:"active"}),t.jsx(ee,{children:o})]})},_=a(g.div).attrs({className:"maxWidth",initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},transition:{duration:.15}})`
-  background: rgba(255, 255, 255, 0.1);
-  padding: 40px 30px;
-  padding-bottom: 32px;
-  margin-top: 20px;
-  border-radius: 6px;
-  .ant-progress-bg {
-    height: 22px !important;
-    transition: all 0.05s cubic-bezier(0.78, 0.14, 0.15, 0.86) !important;
-  }
-`,ee=a.div`
-  margin-top: 20px;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 14px;
-  line-height: 1;
-`,te=p(e=>{const i=l.useMemo(()=>v(e.item),[e.item]),{session:{gameTime:r}}=A(),n=l.useMemo(()=>{if(e.status===h.crafting)return`Currently ${m.preparing(e.style)}...`;if(e.useCrafterCollectionAdvantage&&e.itemCrafterCharacterId!==R()){const o=e.itemFinishesCraftingAt+N.secondsAdvantage*1e3-r;if(o>0){const c=Math.ceil(o/1e3);return`Collect in ${c} ${u("second",c)}`}}return"Ready to collect"},[e.status,r,e.useCrafterCollectionAdvantage,e.itemFinishesCraftingAt,e.itemCrafterCharacterId]);return i?t.jsxs(t.Fragment,{children:[t.jsx(re,{src:i.previewImage}),t.jsx(ne,{children:j(i.id,e.itemAmount)}),t.jsxs(ie,{children:[t.jsx(ae,{children:n}),t.jsxs(U,{mode:"wait",children:[e.status===h.crafting?t.jsx(Z,{itemFinishesCraftingAt:e.itemFinishesCraftingAt,craftingDurationMs:e.craftingDurationMs},"craft-countdown"):null,e.status===h.availableForCollection?t.jsx(K,{itemFinishesCraftingAt:e.itemFinishesCraftingAt,itemDisposalMs:e.itemDisposalMs,itemDisposalAt:e.itemDisposedAt,collect:e.collect,itemCrafterCharacterId:e.itemCrafterCharacterId,useCrafterCollectionAdvantage:e.useCrafterCollectionAdvantage,close:e.close},"craft-collection"):null]})]})]}):null}),ie=a(g.div).attrs({className:"maxWidth flex-column flex-center",initial:{opacity:0},animate:{opacity:1}})``,re=a.img`
-  height: 82px;
-`,ne=a.div`
-  text-transform: uppercase;
-  font-size: 26px;
-  line-height: 1;
-  margin-top: 10px;
-`,ae=a.div`
+import"./rolldown-runtime.js";import{x as e}from"./utils.js";import{t}from"./react-1.js";import{t as n}from"./modal.js";import{t as r}from"./button.js";import{r as i,t as a}from"./dropdown.js";import{t as o}from"./select.js";import{t as s}from"./EllipsisOutlined.js";import{a as c,r as l}from"./useDeviceEditingEssentials.js";import{t as u}from"./drawer.js";import{t as d}from"./jsx-runtime.js";import{b as f,l as p,s as m,y as h}from"./_index.js";import{t as g}from"./AccessibleAnchor.js";import{a as _,r as v}from"./mobxreact.esm.js";import{n as y}from"./Button.js";import{t as b}from"./lodash.js";import{t as x}from"./useStore.js";import{n as S,t as C}from"./Send.js";import{n as w}from"./TutorialConsts.js";import{t as T}from"./Hook.js";import{a as E,c as D,i as O,n as k,o as A,t as j}from"./DrawerContent.js";t();var M=e=>{C(S.hookOptionAction,{device:e.device,action:e.action,payload:e.payload})},N=e=>{M(e)},P={connect:`CONNECT`,createLink:`CREATE_LINK`,changeLinkOption:`CHANGE_LINK_OPTION`,changeLinkValue:`CHANGE_LINK_VALUE`,removeLink:`REMOVE_LINK`,disconnect:`DISCONNECT`},F=d(),I=(e,t,n)=>n===T.kit?e.key===`kitId`&&t===w.gimkitLiveQuestion:n!==T.number||e.option.type===c.numberInput,L=v(e=>{var t;let{hooks:{hookJSON:n}}=x(),r=JSON.parse(n);return r!=null&&(t=r.hooks)!=null&&t.length?(0,F.jsxs)(R,{children:[(0,F.jsxs)(B,{children:[`Choose a `,D.name.toLowerCase(),` to connect to...`]}),r.hooks.map(t=>{let n=!I(e.option,e.deviceType,t.type);return(0,F.jsx)(A,{style:{marginBottom:10,cursor:n?`not-allowed`:`pointer`,background:n?`#e0e0e0`:y.White},onClick:()=>{n||N({action:P.connect,payload:{hook:t.key,option:e.option.key},device:e.deviceId})},children:(0,F.jsxs)(`div`,{className:`flex-column`,style:{alignItems:`flex-start`},children:[(0,F.jsx)(ee,{children:E(t.type)}),(0,F.jsx)(V,{children:t.key}),n&&(0,F.jsxs)(H,{children:[`Cannot use `,D.name.toLowerCase(),` for this option`]})]})},`${t.key}-option-connect`)})]}):(0,F.jsx)(R,{children:(0,F.jsxs)(`div`,{className:`flex-column maxWidth flex-center`,children:[(0,F.jsx)(`div`,{style:{fontSize:42,marginBottom:10,color:`#3949ab`},children:(0,F.jsx)(`i`,{className:`fad fa-plus-square`})}),(0,F.jsxs)(z,{children:[`You haven't created any `,D.name.toLowerCase(),`s yet. Create one first and then come back here to connect this option to that`,` `,D.name.toLowerCase(),`.`]})]})})}),R=p.div``,z=p.div`
+  font-size: 18px;
+`,B=p.div`
+  font-style: italic;
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+`,ee=p.div`
+  font-size: 12px;
+  font-style: italic;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: ${m.Normal};
+`,V=p.div``,H=p.div`
+  background: #e53935;
+  font-size: 14px;
   margin-top: 8px;
-`,z=e=>!e.ingredients.find(r=>{if(!r.item)return!1;const n=q.me.inventory.slots.get(r.item);return!n||n.amount<r.amount}),se=p(e=>{const i=()=>{e.craft(e.recipe.id)};return t.jsxs(oe,{children:[t.jsx(k,{type:"success",size:"small",style:{width:"75%"},block:!0,disabled:!z(e.recipe),onClick:i,ariaLabel:C(m.baseVerb(e.style)),children:t.jsx("span",{style:{textTransform:"uppercase"},children:C(m.baseVerb(e.style))})}),t.jsx(ce,{onClick:e.goBack,children:"...or go back"})]})}),oe=a.div.attrs({className:"maxWidth flex-center flex-column"})`
-  margin-top: 15px;
-`,ce=a.div`
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.8);
-  margin-top: 6px;
-  font-weight: ${I.Bold};
-  font-family: ${b.ProductSans};
-  text-transform: none;
-  text-decoration: underline;
-  transition: color 0.2s;
-  cursor: pointer;
-  &:hover {
-    color: rgba(255, 255, 255, 1);
-  }
-`,le=p(e=>{var f,d;const{me:{inventory:i}}=A(),{itemId:r,requiredAmount:n}=e;let s=!0;const o=((f=i.slots.get(r))==null?void 0:f.amount)||0;let c=L(r);return o>=n?c+=` (${y(n)})`:(s=!1,c+=` (${y(o)}/${y(n)})`),t.jsxs(me,{style:{background:s?"rgba(255,255,255, 0.1)":"rgba(198, 40, 40, 0.5)"},children:[t.jsx("img",{src:(d=v(r))==null?void 0:d.previewImage,style:{height:35}}),t.jsx(de,{children:c})]})}),me=a.div.attrs({className:"flex vc"})`
-  margin-bottom: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 10px;
-  border-radius: 4px;
-  &:last-of-type {
-    margin-bottom: 0px;
-  }
-`,de=a.div`
+  font-weight: ${m.Normal};
+  color: ${y.White};
+  padding: 10px 12px;
+  border-radius: 8px;
   line-height: 1;
-  margin-left: 8px;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 14px;
-`,fe=e=>{const i=e.recipe.ingredients.filter(r=>r.item&&r.amount);return t.jsx(t.Fragment,{children:t.jsxs(P,{children:[t.jsxs(W,{children:["Required"," ",u(C(m.resource(e.style)),i.length)]}),i.map((r,n)=>t.jsx(le,{itemId:r.item,requiredAmount:r.amount},`ingredient-${r.item}-${n}`))]})})},P=a.div.attrs({className:"maxWidth"})`
-  margin-top: 30px;
-`,W=a.div`
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 14px;
-  margin-bottom: 8px;
-`,M=e=>{const i=e/60;return i>=1&&e%60===0?`${i} ${u("minute",i)}`:`${e} ${u("second",e)}`},T=e=>t.jsx(ge,{children:e.children}),ue=e=>{const{recipe:i,style:r}=e,n=l.useMemo(()=>{if(i.timeToCraftMs===0)return m.instantNote(r);const o=Math.floor(i.timeToCraftMs/1e3);return m.durationNote(M(o))(r)},[i.timeToCraftMs]),s=l.useMemo(()=>{if(i.timeToDisposeMs===0)return`Never ${m.expireVerb(r)}`;const o=Math.floor(i.timeToDisposeMs/1e3);return`${C(m.expireVerb(r))} after ${M(o)}`},[i.timeToDisposeMs]);return t.jsxs(P,{children:[t.jsx(W,{children:"Notes"}),t.jsx(T,{children:n}),t.jsx(T,{children:s})]})},ge=a.div.attrs({className:"flex vc"})`
-  margin-bottom: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 15px;
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.9);
-  line-height: 1;
-  border-radius: 4px;
-  &:last-of-type {
-    margin-bottom: 0px;
-  }
-`,xe=e=>{const{recipe:i}=e;return t.jsxs(t.Fragment,{children:[t.jsx(he,{src:v(i.itemId).previewImage}),t.jsx(pe,{children:j(e.recipe.itemId,e.recipe.itemAmount)})]})},he=a.img`
-  height: 82px;
-`,pe=a.div`
-  text-transform: uppercase;
-  font-size: 26px;
-  line-height: 1;
+`,U=e=>(0,F.jsxs)(`div`,{className:`flex between vc`,children:[(0,F.jsx)(`div`,{children:(0,F.jsx)(O,{title:e.optionName,descriptor:e.connectionName||`Connect ${D.name}`})}),(0,F.jsx)(`div`,{style:{marginLeft:10},children:e.connectionName?(0,F.jsx)(a,{overlay:(0,F.jsx)(i,{children:(0,F.jsxs)(i.Item,{onClick:()=>{n.confirm({title:`Are you sure you want to disconnect this option from this ${D.name.toLowerCase()}?`,onOk:()=>{N({action:P.disconnect,device:e.deviceId,payload:{option:e.optionKey}}),e.close()}})},children:[`Disconnect From `,D.name]})}),children:(0,F.jsx)(r,{shape:`circle`,icon:(0,F.jsx)(s,{}),type:`dashed`})}):null})]}),W=e=>(0,F.jsxs)(K,{children:[(0,F.jsx)(`div`,{children:(0,F.jsx)(`i`,{style:{color:`#388e3c`,fontSize:32},className:`fas fa-check`})}),(0,F.jsxs)(q,{children:[D.name,` connected!`]}),(0,F.jsxs)(J,{children:[`The value of this `,D.name.toLowerCase(),` will be the value of this option.`]}),e.children]}),G=()=>(0,F.jsx)(W,{}),K=p.div.attrs({className:`flex-column flex-center`})``,q=p.div`
+  font-weight: ${m.Bold};
+  font-size: 24px;
   margin-top: 10px;
-`,Ce=V(e=>{const i=D(e.selectedRecipeId);return i?t.jsxs(t.Fragment,{children:[t.jsx(xe,{recipe:i}),t.jsxs(be,{children:[t.jsx(se,{craft:e.craft,recipe:i,goBack:e.backToRecipeSelectionScreen,style:e.style}),t.jsx(fe,{recipe:i,style:e.style}),t.jsx(ue,{recipe:i,style:e.style})]})]}):null}),be=a(g.div).attrs({className:"maxWidth flex-column flex-center",initial:{opacity:0},animate:{opacity:1}})``,ve=e=>{if(!e.item||!e.itemAmount)return!1;let i=!1;for(let r=1;r<=e.numberOfIngredients;r++)if(e[`ingredient${r}Item`]&&e[`ingredient${r}Amount`]){i=!0;break}return!!i},ye=(e="")=>{const i=[];return H().worldManager.devices.allDevices.filter(n=>n.deviceOption.id===J.craftingRecipe).forEach(n=>{const s=n.options;n.state.active&&s.group===e&&ve(n.options)&&i.push({id:n.id,y:n.y})}),i.sort((n,s)=>n.y-s.y).map(n=>n.id)},Ie=e=>{const i=D(e.recipeId),r=l.useMemo(()=>v(i.itemId).previewImage,[i.itemId]),n=z(i);return t.jsxs(je,{onClick:e.onSelect,children:[t.jsx(Ae,{src:r}),t.jsxs($e,{children:[t.jsx(Me,{children:j(i.itemId,i.itemAmount)}),t.jsx(Te,{style:{color:n?"#a5d6a7":"#ef9a9a"},children:n?m.availableToCraft(e.style):"Insufficient Resources"})]})]})},je=a.div.attrs({className:"maxWidth flex vc"})`
-  background: rgba(255, 255, 255, 0.1);
-  padding: 25px 20px;
+`,J=p.div`
+  font-size: 16px;
+  margin-top: 4px;
+`,Y=b(),X=_(e=>{let{hooks:{hookJSON:t}}=x(),n=JSON.parse(t).hooks.find(t=>t.key===e.connection.hook);if(!n||n.type!==T.number)return null;let r=n.options||{},i=e.option.option.props||{},a=()=>{let e=[];return(0,Y.isNil)(i.min)||((0,Y.isNil)(r.min)?e.push({key:`Minimum`,device:i.min}):r.min<i.min&&e.push({key:`Minimum`,device:i.min,hook:r.min})),(0,Y.isNil)(i.max)||((0,Y.isNil)(r.max)&&e.push({key:`Maximum`,device:i.max}),r.max>i.max&&e.push({key:`Maximum`,device:i.max,hook:r.max})),(0,Y.isNil)(i.step)||((0,Y.isNil)(r.step)?e.push({key:`Step`,device:i.step}):r.step!==i.step&&e.push({key:`Step`,device:i.step,hook:r.step})),e},o=a();return(0,F.jsx)(W,{children:o.length?(0,F.jsxs)(F.Fragment,{children:[(0,F.jsx)(h,{}),(0,F.jsxs)(Q,{children:[(0,F.jsxs)($,{children:[`This `,D.name.toLowerCase(),`'s settings are setup in a way that a user could enter a number not allowed for this device's option. `,(0,F.jsx)(`br`,{}),` `,(0,F.jsx)(`br`,{}),` If a number invalid for this device's option is used, the value set on the device itself will be used.`]}),a().map(e=>(0,F.jsx)(Z,{name:e.key,deviceValue:e.device,hookValue:e.hook},e.key))]})]}):null})}),Z=t=>{let{name:n,deviceValue:r,hookValue:i}=t;return(0,F.jsx)(f,{style:{marginBottom:10},type:`warning`,message:(0,Y.isNil)(i)?(0,F.jsxs)(F.Fragment,{children:[`This device's option has a `,(0,F.jsx)(`b`,{children:n.toLowerCase()}),` of`,` `,(0,F.jsx)(`b`,{children:e(r)}),`, but no `,n.toLowerCase(),` is set on the `,D.name.toLowerCase(),`.`]}):(0,F.jsxs)(F.Fragment,{children:[`This device's option has a `,(0,F.jsx)(`b`,{children:n.toLowerCase()}),` of`,` `,(0,F.jsx)(`b`,{children:e(r)}),`, but the`,` `,D.name.toLowerCase(),` value is set to`,` `,(0,F.jsx)(`b`,{children:e(i)})]})})},Q=p.div`
+  background: rgba(0, 0, 0, 0.04);
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+`,$=p.div`
+  font-size: 16px;
+  margin-bottom: 18px;
+`,te=v(e=>{let{hooks:{hookJSON:t}}=x(),n=()=>{N({action:P.createLink,payload:{option:e.connection.option,hook:e.connection.hook},device:e.deviceId})},i=e.connection.options,a=Object.keys(i.valueMap),o=JSON.parse(t).hooks.find(t=>t.key===e.connection.hook);if(!o)return null;let s=o.options;if(!s.options.length)return(0,F.jsxs)(`div`,{style:{fontSize:16},children:[`Before you can connect the `,D.name.toLowerCase(),` to this option, you need to add selectable options. Go modify your`,` `,D.name.toLowerCase(),` to include options and then come back here!`]});if(!a.length)return(0,F.jsx)(re,{createLink:n});let c=s.options.filter(e=>!a.includes(e));return(0,F.jsxs)(ie,{children:[a.map(t=>(0,F.jsx)(ne,{option:e.option,selectKey:t,selectValue:e.connection.options.valueMap[t],selectOptions:[t,...c],deviceId:e.deviceId,hookId:e.connection.hook},t+`-hook-option`)),c.length?(0,F.jsxs)(F.Fragment,{children:[(0,F.jsx)(h,{}),(0,F.jsx)(r,{size:`large`,type:`primary`,block:!0,style:{height:60},onClick:n,children:`Add Another Link`})]}):null]})}),ne=e=>(0,F.jsxs)(ae,{children:[(0,F.jsxs)(k,{children:[D.name,` Value`]}),(0,F.jsx)(o,{style:{width:`100%`},value:e.selectKey,placeholder:`Choose a value...`,onChange:t=>{N({action:P.changeLinkOption,device:e.deviceId,payload:{option:e.option.key,hook:e.hookId,currentOption:e.selectKey,newOption:t}})},children:e.selectOptions.map(t=>(0,F.jsx)(o.Option,{value:t,children:t},t+e.selectKey))}),(0,F.jsx)(`div`,{style:{height:15}}),(0,F.jsx)(k,{children:`Option Value`}),(0,F.jsx)(l,{option:e.option.option,value:e.selectValue,onChange:t=>{N({action:P.changeLinkValue,device:e.deviceId,payload:{option:e.option.key,hook:e.hookId,key:e.selectKey,value:t}})},readOnly:!1}),(0,F.jsx)(`div`,{style:{height:15}}),(0,F.jsx)(`div`,{className:`maxWidth flex`,style:{justifyContent:`flex-end`},children:(0,F.jsx)(g,{onClick:()=>{n.confirm({title:`Are you sure you want to remove this link?`,onOk:()=>{N({action:P.removeLink,device:e.deviceId,payload:{option:e.option.key,hook:e.hookId,key:e.selectKey}})}})},children:`Remove link`})})]}),re=e=>(0,F.jsxs)(`div`,{className:`flex-column flex-center`,style:{background:`#eceff1`,padding:40,borderRadius:6,border:`1px dashed rgba(0, 0, 0, 0.5)`,cursor:`pointer`},onClick:e.createLink,children:[(0,F.jsx)(`div`,{style:{fontWeight:m.Bold,fontSize:18,marginBottom:6},children:`Create new link`}),(0,F.jsxs)(`div`,{children:[`Link the value of a `,D.name.toLowerCase(),` to the value of this option`]})]}),ie=p.div``,ae=p.div.attrs({className:`light-shadow`})`
+  background: #fafafa;
+  padding: 30px;
   border-radius: 6px;
-  cursor: pointer;
-  margin-bottom: 15px;
-  transition: background 0.2s;
-  overflow: hidden;
-  &:last-of-type {
-    margin-bottom: 0px;
-  }
-  &:hover {
-    background: rgba(255, 255, 255, 0.15);
-  }
-`,Ae=a.img`
-  height: 55px;
-`,$e=a(g.div).attrs({className:"flex-column"})`
-  margin-left: 15px;
-  line-height: 1;
-`,Me=a.div`
-  font-size: 20px;
-`,Te=a.div`
-  color: #a5d6a7;
-  font-size: 12px;
-  margin-top: 6px;
-  opacity: 0.8;
-`,Se=p(e=>{const i=ye(e.group);return i.length?t.jsxs(Ne,{children:[t.jsx(S,{children:m.selectItem(e.style)}),i.map(r=>t.jsx(Ie,{recipeId:r,style:e.style,onSelect:()=>e.setToRecipePreviewScreen(r)},`recipe-${r}`))]}):t.jsx("div",{className:"maxAll flex-center",style:{textAlign:"center"},children:t.jsx(S,{children:m.noItems(e.style)})})}),Ne=a(g.div).attrs({className:"maxWidth flex-column flex-center",initial:{opacity:0},animate:{opacity:1}})``,S=a.div`
-  font-family: ${b.ProductSans};
-  font-weight: ${I.Bold};
-  text-transform: none;
-  margin-bottom: 15px;
-  font-size: 22px;
-`,De=e=>e===G.plant?"rgba(0,51,0,0.93)":"rgba(38,50,56,0.93)",Yt=e=>{const[i,r]=l.useState("recipeSelection"),[n,s]=l.useState(null),o=d=>{s(d),r("itemPreview")},c=()=>{r("recipeSelection")};l.useEffect(()=>{e.status===h.availableForCollection&&c()},[e.status]);const f=()=>{if(e.status===h.idle)switch(i){case"recipeSelection":return t.jsx(Se,{setToRecipePreviewScreen:o,style:e.style,group:e.tableGroup},"recipe-selection-screen");case"itemPreview":return t.jsx(Ce,{craft:e.craft,selectedRecipeId:n,style:e.style,backToRecipeSelectionScreen:c},"recipe-preview-screen");default:return null}return t.jsx(te,{item:e.item,itemAmount:e.itemAmount,status:e.status,style:e.style,craftingDurationMs:e.craftingDurationMs,itemFinishesCraftingAt:e.itemFinishesCraftingAt,itemDisposalMs:e.itemDisposalMs,itemDisposedAt:e.itemDisposedAt,itemCrafterCharacterId:e.itemCrafterCharacterId,useCrafterCollectionAdvantage:e.useCrafterCollectionAdvantage,collect:e.collect,close:e.close},"crafting-status-screen")};return t.jsx(Re,{style:{background:De(e.style)},children:f()})},Re=a.div.attrs({className:"maxAll flex-column vc scroll-y"})`
-  backdrop-filter: blur(5px);
-  color: ${B.White};
-  padding: 25px;
-  font-family: ${b.FugazOne};
-  text-transform: uppercase;
-`;export{Yt as default};
+  margin-bottom: 20px;
+`,oe=v(e=>{var t;let n=(t=e.hooks)==null||(t=t.connections)==null?void 0:t.find(t=>t.option===e.option.key);return(0,F.jsx)(u,{open:e.visible,onClose:e.close,width:D.drawer.widths.default,placement:D.drawer.placement,closable:!0,children:(0,F.jsxs)(j,{children:[(0,F.jsx)(U,{optionName:e.option.option.label,optionKey:e.option.key,deviceId:e.deviceId,connectionName:n==null?void 0:n.hook,close:e.close}),(0,F.jsx)(h,{}),(()=>{if(n){if(n.hookType===T.selectBox)return(0,F.jsx)(te,{option:e.option,connection:n,deviceId:e.deviceId});if(n.hookType===T.kit)return(0,F.jsx)(G,{});if(n.hookType===T.number)return(0,F.jsx)(X,{option:e.option,connection:n})}return(0,F.jsx)(L,{option:e.option,deviceId:e.deviceId,deviceType:e.deviceType})})()]})})});export{oe as default};

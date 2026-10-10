@@ -1,13 +1,13 @@
-import{r as f,j as o,d as e,F as p}from"./_index.js";import{s as g,g as y,b as n}from"./MapSound.js";import{an as $}from"./App-41.js";import{S as s}from"./index-28.js";function r(t){return f.useSyncExternalStore(g,()=>y(t))}const u=t=>`${t}%`,E=t=>{const d=r("musicVolume"),m=r("soundEffectVolume"),l=a=>n("musicVolume",a/100),x=a=>n("soundEffectVolume",a/100);return o.jsxs(L,{$cardLayout:t.cardLayout,children:[$()?o.jsxs(c,{$cardLayout:t.cardLayout,children:[o.jsx(i,{$cardLayout:t.cardLayout,children:"Music Volume"}),o.jsx(s,{min:0,max:100,step:1,value:d*100,onChange:l,tooltip:{formatter:u}})]}):null,o.jsxs(c,{$cardLayout:t.cardLayout,children:[o.jsx(i,{$cardLayout:t.cardLayout,children:"Sound Effect Volume"}),o.jsx(s,{min:0,max:100,step:1,value:m*100,onChange:x,tooltip:{formatter:u}})]})]})},L=e.div`
+import{o as e}from"./rolldown-runtime.js";import{t}from"./react-1.js";import{t as n}from"./slider.js";import{t as r}from"./jsx-runtime.js";import{l as i,s as a}from"./_index.js";import{n as o,o as s,s as c}from"./MapSound.js";import{t as l}from"./AmIGameOwner.js";var u=e(t());function d(e){return(0,u.useSyncExternalStore)(c,()=>o(e))}var f=r(),p=e=>`${e}%`,m=e=>{let t=d(`musicVolume`),r=d(`soundEffectVolume`);return(0,f.jsxs)(h,{$cardLayout:e.cardLayout,children:[l()?(0,f.jsxs)(g,{$cardLayout:e.cardLayout,children:[(0,f.jsx)(_,{$cardLayout:e.cardLayout,children:`Music Volume`}),(0,f.jsx)(n,{min:0,max:100,step:1,value:t*100,onChange:e=>s(`musicVolume`,e/100),tooltip:{formatter:p}})]}):null,(0,f.jsxs)(g,{$cardLayout:e.cardLayout,children:[(0,f.jsx)(_,{$cardLayout:e.cardLayout,children:`Sound Effect Volume`}),(0,f.jsx)(n,{min:0,max:100,step:1,value:r*100,onChange:e=>s(`soundEffectVolume`,e/100),tooltip:{formatter:p}})]})]})},h=i.div`
   display: flex;
   flex-direction: column;
-  gap: ${t=>t.$cardLayout?"14px":"20px"};
-`,c=e.div`
-  padding: ${t=>t.$cardLayout?"17px":"0"};
-  background: ${t=>t.$cardLayout?"rgba(255, 255, 255, 0.08)":"transparent"};
-  border-radius: ${t=>t.$cardLayout?"6px":"0"};
-`,i=e.div`
-  font-size: ${t=>t.$cardLayout?"16px":"24px"};
-  font-weight: ${p.Bold};
+  gap: ${e=>e.$cardLayout?`14px`:`20px`};
+`,g=i.div`
+  padding: ${e=>e.$cardLayout?`17px`:`0`};
+  background: ${e=>e.$cardLayout?`rgba(255, 255, 255, 0.08)`:`transparent`};
+  border-radius: ${e=>e.$cardLayout?`6px`:`0`};
+`,_=i.div`
+  font-size: ${e=>e.$cardLayout?`16px`:`24px`};
+  font-weight: ${a.Bold};
   margin-bottom: 15px;
-`;export{E as O,r as u};
+`;export{d as n,m as t};

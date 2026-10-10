@@ -1,0 +1,1 @@
+import{t as e}from"./stores-2.js";import{t}from"./IsRoleLevelBetween.js";var n=()=>e.session.mapStyle,r=n=>{var r;let i=e.worldOptions.terrainOptions.find(e=>e.id===n);if(!i)return!1;if((r=i.blockedMapStyles)!=null&&r.length){let t=e.session.mapStyle;if(i.blockedMapStyles.includes(t))return!1}let a=i.minimumRoleLevel,o=i.maximumRoleLevel;return t(a,o)};export{n,r as t};

@@ -1,4 +1,4 @@
-import{j as i,d as t}from"./_index.js";const s=e=>i.jsxs(a,{children:[i.jsx(l,{children:e.children}),i.jsx("div",{className:"area",children:i.jsxs("ul",{className:"circles",children:[i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{}),i.jsx("li",{})]})})]}),a=t.div`
+import"./rolldown-runtime.js";import{t as e}from"./react-1.js";import{t}from"./jsx-runtime.js";import{l as n}from"./_index.js";e();var r=t(),i=e=>(0,r.jsxs)(a,{children:[(0,r.jsx)(o,{children:e.children}),(0,r.jsx)(`div`,{className:`area`,children:(0,r.jsxs)(`ul`,{className:`circles`,children:[(0,r.jsx)(`li`,{}),(0,r.jsx)(`li`,{}),(0,r.jsx)(`li`,{}),(0,r.jsx)(`li`,{}),(0,r.jsx)(`li`,{}),(0,r.jsx)(`li`,{}),(0,r.jsx)(`li`,{}),(0,r.jsx)(`li`,{}),(0,r.jsx)(`li`,{}),(0,r.jsx)(`li`,{})]})})]}),a=n.div`
   flex: 1;
   height: 100%;
   width: 100%;
@@ -125,7 +125,7 @@ import{j as i,d as t}from"./_index.js";const s=e=>i.jsxs(a,{children:[i.jsx(l,{c
       border-radius: 50%;
     }
   }
-`,l=t.div.attrs({className:"flex-column"})`
+`,o=n.div.attrs({className:`flex-column`})`
   z-index: 1;
   flex: 1;
-`;export{s as A};
+`;export{i as t};

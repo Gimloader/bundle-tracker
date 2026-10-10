@@ -1,0 +1,1 @@
+var e={codeGrids:{minimumRoleLevel:0,maximumRoleLevel:100},hooks:{minimumRoleLevel:0,maximumRoleLevel:100},wires:{minimumRoleLevel:0,maximumRoleLevel:100}};export{e as t};

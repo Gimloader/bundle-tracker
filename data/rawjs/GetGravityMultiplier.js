@@ -1,0 +1,1 @@
+import{t as e}from"./lodash.js";var t={jump:`jump`},n=e(),r=e=>{let{character:t}=e,r=t.physics.state.gravityZones.length;return r===0?1:(0,n.sum)(t.physics.state.gravityZones.map(e=>e.gravityMultiplier))/r};export{t as n,r as t};

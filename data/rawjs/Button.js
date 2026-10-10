@@ -1,4 +1,4 @@
-import{r as n,F as l,j as r,d as f}from"./_index.js";import{a as h}from"./polished.esm.js";const g={White:"#FFFFFF",Black:"#000000",Yellow:"#FFFF00",Purple:"#673ab7"},v=t=>{const e=t.size||"default",s=n.useMemo(()=>t.customColor?t.customColor:t.disabled?"#546e7a":t.type==="success"?"#2e7d32":t.type==="danger"?"#c62828":"#3f51b5",[t.disabled,t.type,t.customColor]),u=n.useMemo(()=>h(.1,s),[s]),c=n.useMemo(()=>e==="small"||e==="default"?14:20,[e]),o=n.useMemo(()=>e==="small"?6:e==="default"?8:12,[e]),d=n.useMemo(()=>{const a=e==="small"?"8px":"12px";return t.customHorizontalPadding?`${a} ${t.customHorizontalPadding}px`:e==="small"?`${a} 24px`:e==="default"?`${a} 28px`:`${a} 42px`},[e,t.customHorizontalPadding]),b=n.useMemo(()=>e==="small"?41:49,[e]),m=n.useMemo(()=>t.customFontWeight?t.customFontWeight:e==="large"?l.Bold:l.Normal,[t.customFontWeight,e]),i=()=>{t.disabled||t.onClick&&t.onClick()};return r.jsx(x,{style:Object.assign({pointerEvents:"all",WebkitFlexShrink:0,flexShrink:0,height:b},t.style||{}),children:r.jsxs("button",{className:"btn-pushable","aria-label":t.ariaLabel,onClick:t.usePointerDownEvent?void 0:i,onPointerDown:t.usePointerDownEvent?i:void 0,style:{cursor:t.disabled?"not-allowed":"pointer",width:t.block?"100%":"auto"},children:[r.jsx("span",{className:"btn-shadow",style:{borderRadius:o}}),r.jsx("span",{className:"btn-edge",style:{background:u,borderRadius:o}}),r.jsx("span",{className:"btn-front",style:{background:s,fontSize:c,borderRadius:o,padding:d,fontWeight:m},children:t.children})]})})},x=f.div.attrs({className:"flex"})`
+import{o as e}from"./rolldown-runtime.js";import{t}from"./react-1.js";import{t as n}from"./jsx-runtime.js";import{l as r,s as i}from"./_index.js";import{t as a}from"./polished.esm.js";var o=e(t()),s={White:`#FFFFFF`,Black:`#000000`,Yellow:`#FFFF00`,Purple:`#673ab7`},c=n(),l=e=>{let t=e.size||`default`,n=o.useMemo(()=>e.customColor?e.customColor:e.disabled?`#546e7a`:e.type===`success`?`#2e7d32`:e.type===`danger`?`#c62828`:`#3f51b5`,[e.disabled,e.type,e.customColor]),r=o.useMemo(()=>a(.1,n),[n]),s=o.useMemo(()=>t===`small`||t==="default"?14:20,[t]),l=o.useMemo(()=>t===`small`?6:t==="default"?8:12,[t]),d=o.useMemo(()=>{let n=t===`small`?`8px`:`12px`;return e.customHorizontalPadding?`${n} ${e.customHorizontalPadding}px`:t===`small`?`${n} 24px`:t==="default"?`${n} 28px`:`${n} 42px`},[t,e.customHorizontalPadding]),f=o.useMemo(()=>t===`small`?41:49,[t]),p=o.useMemo(()=>e.customFontWeight?e.customFontWeight:t===`large`?i.Bold:i.Normal,[e.customFontWeight,t]),m=()=>{e.disabled||e.onClick&&e.onClick()};return(0,c.jsx)(u,{style:Object.assign({pointerEvents:`all`,WebkitFlexShrink:0,flexShrink:0,height:f},e.style||{}),children:(0,c.jsxs)(`button`,{className:`btn-pushable`,"aria-label":e.ariaLabel,onClick:e.usePointerDownEvent?void 0:m,onPointerDown:e.usePointerDownEvent?m:void 0,style:{cursor:e.disabled?`not-allowed`:`pointer`,width:e.block?`100%`:`auto`},children:[(0,c.jsx)(`span`,{className:`btn-shadow`,style:{borderRadius:l}}),(0,c.jsx)(`span`,{className:`btn-edge`,style:{background:r,borderRadius:l}}),(0,c.jsx)(`span`,{className:`btn-front`,style:{background:n,fontSize:s,borderRadius:l,padding:d,fontWeight:p},children:e.children})]})})},u=r.div.attrs({className:`flex`})`
   align-items: flex-end;
 
   .btn-pushable {
@@ -31,7 +31,7 @@ import{r as n,F as l,j as r,d as f}from"./_index.js";import{a as h}from"./polish
   .btn-front {
     display: block;
     position: relative;
-    color: ${g.White};
+    color: ${s.White};
     will-change: transform;
     transform: translateY(-4px);
     transition: background 0.25s, transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
@@ -56,4 +56,4 @@ import{r as n,F as l,j as r,d as f}from"./_index.js";import{a as h}from"./polish
     transform: translateY(1px);
     transition: transform 34ms;
   }
-`;export{g as C,v as M};
+`;export{s as n,l as t};

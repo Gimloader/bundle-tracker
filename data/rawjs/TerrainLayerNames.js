@@ -1,1 +1,1 @@
-const e=["Bottom","Lower","Middle","Upper","Top"];export{e as T};
+var e=[`Bottom`,`Lower`,`Middle`,`Upper`,`Top`];export{e as t};

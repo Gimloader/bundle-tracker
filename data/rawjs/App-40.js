@@ -1,5 +1,26 @@
-import{n as f,r as i,u as x,a as g,j as t,T as h,e,d as j,M as C,U as k,D as y}from"./_index.js";import{C as b}from"./Centered.js";import{A as P}from"./App-41.js";import{C as S}from"./CircularProgress.js";import{R as v}from"./WarningOutlined.js";import"./Button.js";import"./polished.esm.js";import"./inheritsLoose.js";import"./FixSpinePlugin.js";import"./GetAssetPath.js";import"./MapModeType.js";import"./MapStyle.js";import"./MapSound.js";import"./howler.js";import"./playSound.js";import"./mobxreact.esm.js";import"./index-21.js";import"./QuizTypes.js";import"./TutorialConsts.js";import"./ActionButton.js";import"./index-5.js";import"./index-18.js";import"./context.js";import"./FontAwesomeIcon.js";import"./CapitalizeFirstLetter.js";import"./index-4.js";import"./motion.js";import"./index-2.js";import"./index-14.js";import"./EditOutlined.js";import"./styleChecker.js";import"./index-3.js";import"./CheckOutlined.js";import"./CopyOutlined.js";import"./SixteenByNineScaler.js";import"./index-20.js";import"./index-22.js";import"./index-1.js";import"./progress.js";import"./ElementIds.js";import"./SeasonTicketName.js";import"./useQuery.js";import"./___vite-browser-external_commonjs-proxy.js";import"./util-1.js";import"./util-2.js";import"./Shortcut.js";import"./Names.js";import"./useWillUnmount.js";import"./index-6.js";import"./AccessibleAnchor.js";import"./index-17.js";import"./use-force-update.js";import"./GimkitLiveQuestion.js";import"./Text.js";import"./getCloudinaryUrl.js";import"./LazyLatexRenderer.js";import"./clsx.m.js";import"./Tooltip.js";import"./use-motion-value.js";import"./index-9.js";import"./index-23.js";import"./useIntervalWhen.js";import"./index-10.js";import"./move.js";import"./react-flip-move.es.js";import"./sounds.js";import"./App-5.js";import"./AnimatedBackground-2.js";import"./useDebouncedValue.js";import"./CloseCircleOutlined.js";import"./FillRemainingSpace.js";import"./index-24.js";const Jt=()=>{const{id:m}=f(),[p,n]=i.useState(""),[l,c,d]=x(!1),[s,o]=i.useState("");i.useEffect(()=>{c(),o(""),g({url:"/api/matchmaker/intent/map/play/publish-link/create",data:{id:m},success:r=>{n(r)},error:r=>{var a;(a=r==null?void 0:r.message)!=null&&a.text?o(r.message.text):o("There was an error. Please try again.")},both:d})},[m]);const u=()=>{if(p)return t.jsx(P,{createDetails:{intentId:p}});const r=()=>l?t.jsx(S,{style:{color:e.White},size:42}):s?t.jsx(C,{open:!0,closable:!1,footer:null,width:700,centered:!0,bodyStyle:{padding:40},children:t.jsxs("div",{className:"maxAll flex-column flex-center",style:{color:e.Black,textAlign:"center",font:k.SFPro},children:[t.jsx(v,{style:{color:"darkorange",fontSize:51}})," ",t.jsx(y,{}),t.jsx("div",{style:{textAlign:"center",fontSize:23,fontWeight:"bold"},children:s})]})}):null;return t.jsx(A,{children:r()})};return t.jsxs(t.Fragment,{children:[t.jsx(h,{title:"Gimkit Creative Map"}),u()]})},A=j(b)`
-  flex: 1;
-  padding: 20px;
-  background: ${e.BackgroundPurple};
-`;export{Jt as default};
+import{o as e}from"./rolldown-runtime.js";import{C as t,O as n,S as r}from"./utils.js";import{t as i}from"./react-1.js";import{l as a}from"./dist-3.js";import{t as o}from"./spin.js";import{n as s}from"./Company.js";import"./Paths.js";import{t as c}from"./jsx-runtime.js";import{c as l,l as u,n as d,s as f,y as p}from"./_index.js";import{t as m}from"./Paper.js";import{t as h}from"./NavigateTo.js";import{t as g}from"./Button.js";import{t as _}from"./ImagePreview.js";import v from"./PreviewComponent.js";var y=e(i()),b=c(),x=e=>(0,b.jsx)(S,{children:(0,b.jsxs)(C,{children:[(0,b.jsx)(_,{size:92,blockModalOpen:!0,image:e.image,style:{cursor:`default`}}),(0,b.jsx)(w,{children:e.title}),(0,b.jsx)(T,{children:e.creator}),(0,b.jsx)(p,{}),e.numberOfQuestions===0?(0,b.jsx)(`div`,{style:{fontSize:18},children:`This kit cannot be practiced as it does not contain any questions.`}):(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(g,{customFontWeight:f.Bold,type:`success`,size:`large`,onClick:e.setToPreview,ariaLabel:`Practice`,children:`Practice`}),(0,b.jsxs)(E,{children:[(0,b.jsxs)(`div`,{children:[e.numberOfQuestions,` `,r(`question`,e.numberOfQuestions)]}),(0,b.jsx)(`div`,{style:{margin:`0px 12px`},className:`flex`,children:(0,b.jsx)(`i`,{className:`fas fa-circle`,style:{fontSize:10}})}),(0,b.jsxs)(`div`,{children:[`Powered by `,s]})]})]})]})}),S=u.div.attrs({className:`flex-center scroll-y maxAll`})`
+  background: #303f9f;
+  color: ${d.Black};
+  font-family: ${l.SFPro};
+`,C=u(m).attrs({className:`flex-center flex-column animated fadeIn`})`
+  width: 90%;
+  max-width: 700px;
+  border-radius: 8px;
+  padding: 40px 30px;
+  margin: 40px 0px;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.1),
+    0 10px 50px rgba(0, 0, 0, 0.4);
+`,w=u.div`
+  margin-top: 14px;
+  font-size: 48px;
+  font-weight: ${f.UltraBold};
+  text-align: center;
+`,T=u.div`
+  font-size: 24px;
+  margin-top: -4px;
+`,E=u.div.attrs({className:`flex vc`})`
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 20px;
+  line-height: 1;
+`,D=()=>{let[e,r]=n(!1),[i,s]=y.useState(null),[c,l]=y.useState(``),{id:u}=a();return y.useEffect(()=>{t({url:`/api/games/fetch/${u}`,success:e=>{s(e.kit),l(e.creator.name)},error:()=>h(`/`)})},[]),i?e?(0,b.jsx)(v,{questions:i.questions}):(0,b.jsx)(x,{title:i.title,image:i.gif,creator:c,numberOfQuestions:i.questions.length,setToPreview:r}):(0,b.jsx)(`div`,{className:`maxAll flex-center`,style:{background:`#303f9f`},children:(0,b.jsx)(o,{size:`large`})})};export{D as default};

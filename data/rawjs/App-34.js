@@ -1,47 +1,25 @@
-import{s as m,j as t,T as p,D as c,S as x,e as o,d as r,F as s,b as h,R as g,ah as f}from"./_index.js";import{I as u}from"./InfiniteScroller.js";import{S as j}from"./App-4.js";import{D as b,M as i}from"./index-10.js";import"./index.es.js";import"./Shortcut.js";import"./Names.js";import"./mobxreact.esm.js";import"./AccessibleAnchor.js";import"./index-1.js";import"./index-2.js";import"./index-6.js";import"./FontAwesomeIcon.js";import"./App-2.js";import"./Sizes.js";import"./motion.js";import"./price.js";import"./TrackPostHogEvent.js";import"./index-3.js";import"./index-4.js";import"./context.js";import"./StarOutlined.js";import"./NavigateTo.js";import"./index-15.js";import"./colors.js";import"./useWarningOnMountInDevelopment.js";import"./index-5.js";import"./move.js";const v=e=>{const{item:{_id:a,image:n,term:l,createdAt:d}}=e;return t.jsxs(S,{children:[t.jsxs(k,{children:[t.jsxs("div",{children:[t.jsx(A,{children:l}),t.jsxs(N,{children:["Added to the gallery ",h(d).fromNow()]})]}),t.jsx("div",{children:t.jsx(b,{overlay:t.jsx(i,{children:t.jsx(i.Item,{children:t.jsx("a",{href:`mailto:hello@gimkit.com?body=Art ID: ${a}`,children:"Report Abuse"})})}),children:t.jsx(g,{style:{cursor:"pointer"}})})})]}),t.jsx($,{src:n})]})},st=()=>(m(()=>{f("https://fonts.googleapis.com/css2?family=Pangolin&display=swap")}),t.jsxs(w,{children:[t.jsx(p,{title:"Draw That - Student Art Gallery",description:"Art created by students in Gimkit's Draw That!",override:!0}),t.jsx(j,{includeSpacer:!0}),t.jsxs(y,{children:[t.jsx(T,{}),t.jsx(I,{children:"Draw That!"}),t.jsx(D,{children:"Student Art Gallery - est. 2021"}),t.jsx(c,{}),t.jsx(u,{url:"/api/v1/fun/draw-that/fetch",limit:7,defaultPage:1,scrollStyle:{width:"100%",overflow:"hidden"},toRender:e=>t.jsx(v,{item:e},e._id),loader:t.jsx("div",{className:"maxWidth flex hc",style:{marginTop:20},children:t.jsx(x,{size:"large"})})})]})]})),w=r.div.attrs({className:"flex-column vc"})`
-  flex: 1;
-  background: linear-gradient(
-      rgba(253, 250, 250, 0.4),
-      rgba(253, 250, 250, 0.4)
-    ),
-    url('/client/img/drawThat/pattern.png') repeat 0 0;
-  color: ${o.Black};
-  font-family: 'Pangolin', sans-serif;
-`,y=r.div.attrs({className:"flex flex-column vc"})`
-  width: 90%;
-  max-width: 650px;
-  margin: 40px 0px;
-  padding: 50px;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  .infinite-scroll-component__outerdiv {
-    width: 100%;
-  }
-`,T=r.img.attrs({src:"/client/img/drawThat/art-gallery.svg"})`
-  height: 150px;
-  margin-bottom: 12px;
-`,I=r.div`
-  font-size: 65px;
-  font-weight: ${s.Black};
-  text-align: center;
-`,D=r.div`
-  font-size: 19px;
-`,S=r.div.attrs({className:"maxWidth"})`
-  margin-bottom: 30px;
-`,k=r.div.attrs({className:"flex maxWidth vc"})`
-  justify-content: space-between;
-  margin-bottom: 12px;
-`,A=r.div`
-  font-size: 26px;
-  font-weight: ${s.Bold};
-`,N=r.div`
-  font-size: 14px;
-  opacity: 0.8;
-`,$=r.img.attrs({className:"maxWidth"})`
+import{o as e}from"./rolldown-runtime.js";import{C as t,E as n,k as r,m as i,t as a}from"./utils.js";import{t as o}from"./react-1.js";import{l as s}from"./dist-3.js";import{t as c}from"./button.js";import{t as l}from"./spin.js";import{n as u}from"./Company.js";import{t as d}from"./jsx-runtime.js";import{c as f,l as p,n as m,s as h,y as g}from"./_index.js";import{t as _}from"./stripe.esm.js";import{n as v,t as y}from"./FetchStripeToken.js";var b=e(o()),x=p.div.attrs({className:`maxWidth maxHeight flex hc vc`})`
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/client/img/signup/funky-lines.png') repeat 0 0;
+`,S=p.div.attrs({className:`scroll-y`})`
+  background: ${m.White};
+  padding: 35px;
   border-radius: 5px;
-  border: 1px solid ${o.BorderGray};
-`;export{st as default};
+  box-shadow: 0px 4px 33px -6px rgba(0, 0, 0, 0.46);
+  width: 670px;
+  max-width: 90%;
+  max-height: 90%;
+  font-family: ${f.SFPro};
+  color: ${m.Black};
+`,C=p.div.attrs({className:`maxWidth flex flex-column vc`})``,w=p.img.attrs({src:`/client/img/svgLogo.svg`})`
+  height: 35px;
+`,T=p.div.attrs({className:`maxWidth flex flex-column vc`})``,E={TopHeader:p.div`
+    font-size: 17px;
+  `,Title:p.div`
+    font-size: 36px;
+    font-weight: ${h.Bold};
+  `,Description:p.div`
+    margin-top: 16px;
+    font-size: 17px;
+    text-align: center;
+  `},D=d(),O=()=>{let{checkout:e}=b.useContext(v),[o,d]=b.useState(!1),[f,p]=b.useState(!0),[m,h]=b.useState(``),[O,k]=b.useState(``),[A,j]=b.useState(!1),[M,N]=b.useState(null),{id:P}=s();b.useEffect(()=>{y();let e=i(`session_id`);e?r({sessionId:e,onSuccess:()=>{j(!0),F(e)},onError:e=>{p(!1),n({e,default:{title:`An error ocurred when charging your card`,content:`Please contact support.`}})}}):F()},[]);let F=e=>{t({url:`/api/billing/pay-for-me-info/${P}${e?`?session_id=${encodeURIComponent(e)}`:``}`,method:`GET`,success:e=>{d(e.isUpgraded),h(e.firstName),k(e.lastName),N(e.receiptUrl)},error:e=>n({e,default:{title:`We were unable to verify the user's id`,content:`Please try again later`}}),both:()=>p(!1)})},I=async r=>{if(e.stripePublicKey){if(f)return;p(!0);let r;try{r=await _(e.stripePublicKey)}catch{p(!1),n({default:{title:`Connection Error`,content:`An error ocurred while connecting to our payments provider. Please try again later`}})}r&&t({url:`/api/billing/create-pay-for-me-session`,method:`POST`,data:{encryptedUserId:P},success:async e=>{let t=e,i;try{if(i=await r.redirectToCheckout({sessionId:t.id}),i&&i.error)throw i.error}catch(e){p(!1),n({e,default:{title:`Connection Error`,content:`An error ocurred. Please try again later`}})}},error:e=>{p(!1),n({e,default:{title:`Connection Error`,content:`An error ocurred while connecting to our payments provider. Please try again later`}})}})}};return(0,D.jsxs)(D.Fragment,{children:[(0,D.jsx)(a,{title:`Pay For Me`}),(0,D.jsx)(x,{children:(0,D.jsxs)(S,{children:[(0,D.jsxs)(C,{children:[(0,D.jsx)(w,{}),(0,D.jsx)(g,{})]}),(0,D.jsx)(T,{children:f?(0,D.jsx)(l,{size:`large`,style:{marginTop:10}}):(()=>{let e=i(`session_id`);return o&&!e?(0,D.jsxs)(`div`,{style:{fontSize:20},children:[m,` has already been upgraded to `,u,` Pro.`]}):e&&o&&A?(0,D.jsxs)(D.Fragment,{children:[(0,D.jsxs)(E.TopHeader,{children:[m,` has been upgraded to`]}),(0,D.jsxs)(E.Title,{children:[u,` Pro!`]}),(0,D.jsxs)(E.Description,{children:[`We charged your card $59.88 and upgraded `,m,` to`,` `,u,` Pro for one year. This was a one-time charge and auto-renew is off.`]}),M&&(0,D.jsx)(`div`,{style:{marginTop:30},children:(0,D.jsx)(c,{type:`primary`,size:`large`,href:M,target:`_blank`,rel:`noopener noreferrer`,children:`View Receipt`})})]}):(0,D.jsxs)(D.Fragment,{children:[(0,D.jsxs)(E.TopHeader,{children:[`Purchase `,u,` Pro for`]}),(0,D.jsxs)(E.Title,{children:[m,` `,O]}),(0,D.jsxs)(E.Description,{children:[`Make a one-time $59.88 payment for `,m,` to receive one year of `,u,` Pro. Auto-renew is off, which means you will only be charged once.`]}),(0,D.jsx)(`div`,{style:{marginTop:30},children:(0,D.jsxs)(c,{type:`primary`,size:`large`,onClick:I,style:{width:400,height:60},children:[`Purchase `,u,` Pro for `,m]})})]})})()})]})})]})};export{O as default};

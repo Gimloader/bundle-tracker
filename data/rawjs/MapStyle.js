@@ -1,1 +1,1 @@
-var o=(r=>(r.topDown="topDown",r.platformer="platformer",r))(o||{});export{o as M};
+var e=function(e){return e.topDown=`topDown`,e.platformer=`platformer`,e}({});export{e as t};

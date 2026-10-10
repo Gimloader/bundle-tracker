@@ -1,14 +1,14 @@
-import{x as i,a as j,h as y,j as e,T as v,b as M,S as b,l as S,d as a,F as E,e as K}from"./_index.js";import{K as k}from"./KitPreview.js";import{I as w}from"./index.es.js";import"./ImagePreview.js";import"./getCloudinaryUrl.js";import"./AccessibleAnchor.js";import"./NavigateTo.js";const C="GIMKIT_LIBRARY_CACHE",L=()=>{const[h,n]=i.useState(!0),[r,d]=i.useState([]),[m,x]=i.useState(!0),[g,u]=i.useState(0);i.useEffect(()=>{l()},[]);const f=()=>{const t=new Map;return r.forEach(s=>{const o=M(s.createdDate).format("MMMM YYYY").toString();t[o]?t[o].push(s):t[o]=[s]}),t},l=()=>{n(!0),j({cacheKey:C,url:`/api/get-school-library/${g}`,method:"GET",success:t=>{d([...r,...t.games]),x(t.hasMore),u(t.newPage)},error:()=>y({title:"Error fetching Kits"}),both:()=>n(!1)})},c=f(),p=()=>h&&!r.length?e.jsx("div",{className:"maxAll flex-center",children:e.jsx(b,{size:"large"})}):r.length?e.jsx("div",{children:e.jsx(w,{dataLength:r.length,hasMore:m,style:{width:"100%",display:"flex",flexWrap:"wrap",overflow:"visible"},next:l,loader:null,children:Object.keys(c).map(t=>e.jsxs(B,{children:[e.jsxs(I,{children:[e.jsx(R,{children:t}),e.jsx(A,{})]}),c[t].map(s=>e.jsx(k,{id:s._id,title:s.title,gif:s.gif,numberOfQuestions:s.questions,creator:s.creator,redirectOnImageClick:!0,size:"small"},s._id))]},t))})}):e.jsxs("div",{className:"maxAll flex-center flex-column",children:[e.jsx("img",{src:"/client/img/dashboard/bookshelf.svg",style:{height:80,marginBottom:9}}),e.jsxs("div",{style:{fontSize:16,textAlign:"center"},children:["Find kits made by other educators at your school (",S().schoolName,"). ",e.jsx("br",{})," Once they make their kits, you'll see them here."]})]});return e.jsxs(e.Fragment,{children:[e.jsx(v,{title:"My School"}),e.jsx("div",{className:"maxHeight",children:p()})]})},I=a.div.attrs({className:"flex vc maxWidth"})`
+import{o as e,r as t}from"./rolldown-runtime.js";import{C as n,G as r,Q as i,h as a,t as o}from"./utils.js";import{t as s}from"./react-1.js";import{t as c}from"./spin.js";import{t as l}from"./jsx-runtime.js";import{l as u,n as d,s as f}from"./_index.js";import{t as p}from"./index.es.js";import{t as m}from"./KitPreview.js";var h=t({LIBRARY_CACHE_KEY:()=>y,default:()=>b}),g=e(s()),_=e(i()),v=l(),y=`GIMKIT_LIBRARY_CACHE`,b=()=>{let[e,t]=g.useState(!0),[i,s]=g.useState([]),[l,u]=g.useState(!0),[d,f]=g.useState(0);g.useEffect(()=>{b()},[]);let h=()=>{let e=new Map;return i.forEach(t=>{let n=(0,_.default)(t.createdDate).format(`MMMM YYYY`).toString();e[n]?e[n].push(t):e[n]=[t]}),e},b=()=>{t(!0),n({cacheKey:y,url:`/api/get-school-library/${d}`,method:`GET`,success:e=>{s([...i,...e.games]),u(e.hasMore),f(e.newPage)},error:()=>r({title:`Error fetching Kits`}),both:()=>t(!1)})},T=h();return(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(o,{title:`My School`}),(0,v.jsx)(`div`,{className:`maxHeight`,children:e&&!i.length?(0,v.jsx)(`div`,{className:`maxAll flex-center`,children:(0,v.jsx)(c,{size:`large`})}):i.length?(0,v.jsx)(`div`,{children:(0,v.jsx)(p,{dataLength:i.length,hasMore:l,style:{width:`100%`,display:`flex`,flexWrap:`wrap`,overflow:`visible`},next:b,loader:null,children:Object.keys(T).map(e=>(0,v.jsxs)(w,{children:[(0,v.jsxs)(x,{children:[(0,v.jsx)(S,{children:e}),(0,v.jsx)(C,{})]}),T[e].map(e=>(0,v.jsx)(m,{id:e._id,title:e.title,gif:e.gif,numberOfQuestions:e.questions,creator:e.creator,redirectOnImageClick:!0,size:`small`},e._id))]},e))})}):(0,v.jsxs)(`div`,{className:`maxAll flex-center flex-column`,children:[(0,v.jsx)(`img`,{src:`/client/img/dashboard/bookshelf.svg`,style:{height:80,marginBottom:9}}),(0,v.jsxs)(`div`,{style:{fontSize:16,textAlign:`center`},children:[`Find kits made by other educators at your school (`,a().schoolName,`). `,(0,v.jsx)(`br`,{}),` Once they make their kits, you'll see them here.`]})]})})]})},x=u.div.attrs({className:`flex vc maxWidth`})`
   margin-bottom: 20px;
-`,R=a.div`
-  font-weight: ${E.Bold};
+`,S=u.div`
+  font-weight: ${f.Bold};
   font-size: 28px;
   flex-shrink: 0;
   margin-right: 30px;
   line-height: 1;
-`,A=a.div.attrs({className:"maxWidth"})`
+`,C=u.div.attrs({className:`maxWidth`})`
   height: 1px;
-  background: ${K.BorderGray};
-`,B=a.div.attrs({className:"maxWidth"})`
+  background: ${d.BorderGray};
+`,w=u.div.attrs({className:`maxWidth`})`
   margin-bottom: 20px;
-`;export{C as LIBRARY_CACHE_KEY,L as default};
+`;export{h as n,y as t};

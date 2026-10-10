@@ -1,138 +1,109 @@
-import{y as $,n as R,r as g,j as e,T as u,d as i,U as l}from"./_index.js";import{u as T}from"./useInfiniteQuery.js";import{C}from"./App-42.js";import{M as E}from"./MapCard.js";import{C as b}from"./CircularProgress.js";import"./useQuery.js";import"./AnimatedBackground-1.js";import"./App-4.js";import"./Shortcut.js";import"./Names.js";import"./mobxreact.esm.js";import"./AccessibleAnchor.js";import"./index-1.js";import"./index-2.js";import"./index-6.js";import"./FontAwesomeIcon.js";import"./App-2.js";import"./Sizes.js";import"./motion.js";import"./price.js";import"./TrackPostHogEvent.js";import"./index-3.js";import"./index-4.js";import"./context.js";import"./StarOutlined.js";import"./NavigateTo.js";import"./index-15.js";import"./colors.js";import"./useWarningOnMountInDevelopment.js";import"./index-10.js";import"./index-5.js";import"./move.js";import"./App-5.js";import"./Centered.js";import"./index-24.js";import"./Button.js";import"./polished.esm.js";import"./inheritsLoose.js";import"./GetAssetPath.js";import"./index-14.js";import"./EditOutlined.js";import"./styleChecker.js";import"./CheckOutlined.js";import"./CopyOutlined.js";import"./TrackEvent.js";import"./MapStyle.js";import"./SeasonTicketInlineUpsell.js";import"./SeasonTicketName.js";import"./OwnsSeasonTicket.js";import"./PublishedDate.js";import"./getCloudinaryUrl.js";import"./clsx.m.js";const I=o=>T({queryKey:["creative-profile-pages",o],enabled:!!o,staleTime:6e4,refetchOnWindowFocus:!1,retry:!1,queryFn:({pageParam:n})=>$({url:`/api/created-map/listing/profile/${encodeURIComponent(o)}${n?`?cursor=${encodeURIComponent(n)}`:""}`}),getNextPageParam:n=>n.nextCursor||void 0}),Ge=()=>{const{id:o}=R(),n=o!=null&&o.startsWith("@")?o.slice(1):void 0,{data:t,isLoading:P,refetch:k,fetchNextPage:m,hasNextPage:s,isFetching:c,isFetchingNextPage:z,isError:d}=I(n),h=g.useRef(null),x=t==null?void 0:t.pages[0],f=g.useMemo(()=>{const r=new Map;return t==null||t.pages.forEach(p=>p.maps.forEach(a=>{r.has(a._id)||r.set(a._id,a)})),Array.from(r.values())},[t]);return g.useEffect(()=>{const r=h.current;if(!r||!s||c||d||typeof IntersectionObserver>"u")return;let p=!1;const a=new IntersectionObserver(([F])=>{F.isIntersecting&&!p&&(p=!0,m({cancelRefetch:!1}))},{rootMargin:"400px"});return a.observe(r),()=>a.disconnect()},[s,c,d,m,t==null?void 0:t.pages.length]),e.jsx(M,{children:n&&P?e.jsx(G,{role:"status","aria-label":"Loading creator profile",children:e.jsx(b,{style:{color:"white"}})}):x?e.jsxs(e.Fragment,{children:[e.jsx(u,{title:`@${x.username} | Gimkit Creative`,override:!0}),e.jsx(O,{children:e.jsxs(S,{children:["@",x.username]})}),e.jsxs(N,{children:[e.jsx(U,{children:"Maps"}),f.length?e.jsx(A,{children:f.map(r=>e.jsx("li",{children:e.jsx(E,{map:r})},r._id))}):s?null:e.jsxs(v,{children:[e.jsx(w,{src:"/client/img/creative/banner.png",alt:""}),e.jsx(y,{children:"This creator hasn't published any maps yet. Check back soon!"})]}),s?e.jsx(H,{ref:h,children:z?e.jsx("div",{role:"status","aria-label":"Loading more maps",children:e.jsx(b,{size:24,style:{color:"white"}})}):e.jsx(j,{disabled:c,onClick:()=>m({cancelRefetch:!1}),children:d?"Try again":"Load more"})}):null]})]}):e.jsxs(L,{children:[e.jsx(u,{title:"Profile unavailable | Gimkit Creative",override:!0}),e.jsxs(v,{children:[e.jsx(w,{src:"/client/img/creative/banner.png",alt:""}),e.jsx(q,{children:"Profile unavailable"}),e.jsx(y,{children:"We couldn't load this creator. Their username may have changed, or the profile may no longer be available."}),n?e.jsx(j,{onClick:()=>k(),children:"Try again"}):null]})]})})},M=i.div`
-  width: 90%;
-  max-width: 1160px;
-  margin: 32px auto 56px;
-`,O=i.header`
-  display: flex;
-  justify-content: center;
-  padding: 20px 14px 36px;
-  margin-bottom: 12px;
-`,S=i.h1`
-  position: relative;
-  box-sizing: border-box;
-  max-width: 100%;
-  margin: 0;
-  padding: 18px 32px;
-  border: 3px solid #210e43;
-  border-radius: 6px 14px 6px 14px;
-  background-color: #673ab7;
-  background-image: radial-gradient(
-      rgba(255, 255, 255, 0.12) 1px,
-      transparent 1px
-    ),
-    linear-gradient(135deg, #8856cf, #673ab7 65%, #512da8);
-  background-size: 6px 6px, 100% 100%;
-  box-shadow: 6px 7px 0 #210e43, 0 0 0 2px #d6c4ff;
-  transform: rotate(-2deg);
-  color: white;
-  font-family: ${l.FugazOne};
-  font-weight: 400;
-  font-size: clamp(24px, 4vw, 46px);
-  line-height: 1.2;
-  text-transform: uppercase;
-  text-align: center;
-  text-shadow: 2px 3px 0 #32165b;
-  overflow-wrap: anywhere;
-
-  @media (max-width: 600px) {
-    padding: 14px 20px;
-    box-shadow: 4px 5px 0 #210e43, 0 0 0 2px #d6c4ff;
-  }
-`,q=i.h1`
-  font-family: ${l.FugazOne};
-  font-weight: 400;
-  font-size: clamp(24px, 3vw, 32px);
-  line-height: 1.2;
-  text-transform: uppercase;
-  margin: 0;
-  overflow-wrap: anywhere;
-`,L=i(C)`
-  box-sizing: border-box;
-  max-width: 700px;
-  margin: 48px auto;
-  @media (max-width: 600px) {
-    margin: 24px auto;
-    padding: 22px;
-  }
-`,v=i.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  padding: 20px 0 28px;
-  text-align: center;
-`,w=i.img`
-  display: block;
-  width: 280px;
-  max-width: 80%;
-  height: auto;
-  margin-bottom: 8px;
-`,y=i.p`
-  max-width: 440px;
-  color: rgba(255, 255, 255, 0.85);
-  font-family: ${l.SFPro};
-  font-size: 16px;
-  line-height: 1.6;
-  margin: 0;
-`,N=i(C)`
-  box-sizing: border-box;
-  @media (max-width: 600px) {
-    padding: 22px;
-  }
-`,U=i.h2`
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  font-family: ${l.FugazOne};
-  font-size: 24px;
-  text-transform: uppercase;
-  margin: 0 0 24px;
-  &::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.12);
-  }
-`,A=i.ul`
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 22px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  > li {
-    min-width: 0;
-  }
-  @media (max-width: 1000px) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  @media (max-width: 600px) {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 18px;
-  }
-`,G=i.div`
-  display: grid;
-  place-items: center;
-  min-height: 220px;
-`,j=i.button`
-  background: #673ab7;
-  color: white;
-  font: inherit;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 8px;
-  padding: 10px 18px;
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/App-83.js","assets/rolldown-runtime.js","assets/utils.js","assets/dist-1.js","assets/react-1.js","assets/modal.js","assets/assertThisInitialized.js","assets/Compact.js","assets/color.js","assets/ContextIsolator.js","assets/dist-2.js","assets/wrapNativeSuper.js","assets/InfoCircleFilled.js","assets/compact-item.js","assets/useLocale.js","assets/useCSSVarCls.js","assets/pickAttrs.js","assets/button.js","assets/PurePanel.js","assets/Company.js","assets/Paths.js","assets/decorate.js","assets/jsx-runtime.js","assets/message.js","assets/context.js","assets/input.js","assets/es-2.js","assets/_index.js","assets/dist-3.js","assets/spin.js","assets/QueryClientProvider.js","assets/queryClient.js","assets/infiniteQueryBehavior.js","assets/index-Tu04tXLf.css","assets/useVariants.js","assets/useDeviceEditingEssentials.js","assets/select.js","assets/move.js","assets/es-3.js","assets/es-1.js","assets/CheckOutlined.js","assets/DownOutlined.js","assets/auto-complete.js","assets/tabs.js","assets/EllipsisOutlined.js","assets/input-number.js","assets/slider.js","assets/tooltip.js","assets/space.js","assets/typography.js","assets/styleChecker.js","assets/CopyOutlined.js","assets/EditOutlined.js","assets/EnterOutlined.js","assets/copy-to-clipboard.js","assets/mobxreact.esm.js","assets/FontAwesomeIcon.js","assets/GetAssetPath.js","assets/Centered.js","assets/Button.js","assets/polished.esm.js","assets/inheritsLoose.js","assets/FixPhaserBootProcess.js","assets/lodash.js","assets/MapSound.js","assets/howler.js","assets/playSound.js","assets/phaser.js","assets/defineProperty.js","assets/stores-2.js","assets/MapModeType.js","assets/MapStyle.js","assets/FetchScene.js","assets/isVersion.js","assets/InPhase.js","assets/FetchRoom.js","assets/useStore.js","assets/TutorialConsts.js","assets/ActionButton.js","assets/FetchDeviceOptionById.js","assets/canEditOnMap.js","assets/FetchMyId.js","assets/isModeType.js","assets/FetchPropOptionById.js","assets/playClickSound.js","assets/RoleLevelConsts.js","assets/IsRoleLevelBetween.js","assets/FetchItemOption.js","assets/module-2.js","assets/module-1.js","assets/App-42.js","assets/dropdown.js","assets/collapse.js","assets/notification.js","assets/drawer.js","assets/progress.js","assets/CloseCircleOutlined.js","assets/SixteenByNineScaler.js","assets/popover.js","assets/qr-code.js","assets/App-43.js","assets/noop.js","assets/DrawToCanvas.js","assets/CapitalizeFirstLetter.js","assets/switch.js","assets/useIntervalWhen.js","assets/useDebouncedValue.js","assets/useWillUnmount.js","assets/SiteHeaderAlpha.js","assets/AnimatePresence.js","assets/motion.js","assets/use-force-update.js","assets/AccessibleAnchor.js","assets/react-flip-move.es.js","assets/Navigation.js","assets/useQuery.js","assets/SeasonTicketName.js","assets/Names.js","assets/Text.js","assets/clsx.m.js","assets/Tooltip.js","assets/getCloudinaryUrl.js","assets/LazyLatexRenderer.js","assets/typeof.js","assets/CircularProgress.js","assets/App-6.js","assets/AnimatedBackground-2.js","assets/dist-4.js","assets/lib-2.js","assets/QuizTypes.js","assets/FetchMyTeam.js","assets/FetchSpectatedId.js","assets/Send.js","assets/setCurrentAction.js","assets/ExistingDeviceAddingActionUtils.js","assets/Device.js","assets/GlobalLocalDepth.js","assets/KeyShortcuts.js","assets/createKeyListener.js","assets/index.browser.js","assets/FetchDeviceById.js","assets/FetchItemById.js","assets/PlaceDevice.js","assets/WireBatcher.js","assets/GetAddingDeviceTypeMemoryCost.js","assets/PlaceWire.js","assets/Reset.js","assets/ScalableShapeCache.js","assets/CharacterType.js","assets/FetchVisualEditingPreview.js","assets/AmIGameOwner.js","assets/zIndex.js","assets/__vite-browser-external.js","assets/util.js","assets/process-nextick-args.js","assets/Shortcut.js","assets/GimkitLiveQuestion.js","assets/use-motion-value.js","assets/RarityBackgrounds.js","assets/InventoryItemRarity.js","assets/sounds.js","assets/CanUseMoreMemory.js","assets/GetGravityMultiplier.js","assets/GetActiveClassOptions.js","assets/RoleLevelPermissions.js","assets/FillRemainingSpace.js","assets/LoadGoogleFontAfterSceneStart.js","assets/useItemAmount.js","assets/clsx.js","assets/ReplaceDevice.js","assets/CanAddTerrain.js","assets/useTimeout.js","assets/useWarningOnMountInDevelopment.js","assets/StopPropagation.js"])))=>i.map(i=>d[i]);
+import{o as e,r as t}from"./rolldown-runtime.js";import{O as n,x as r}from"./utils.js";import{t as i}from"./react-1.js";import{t as a}from"./tooltip.js";import{t as o}from"./modal.js";import{t as s}from"./button.js";import{t as c}from"./dropdown.js";import{t as l}from"./input.js";import{t as u}from"./auto-complete.js";import{t as d}from"./EllipsisOutlined.js";import{d as f,i as p,n as m,o as ee,t as h,u as g}from"./useDeviceEditingEssentials.js";import{t as _}from"./space.js";import{t as v}from"./typography.js";import{t as te}from"./DeleteOutlined.js";import{r as y}from"./SixteenByNineScaler.js";import{i as b}from"./App-43.js";import{g as ne,m as x}from"./decorate.js";import{t as re}from"./jsx-runtime.js";import{t as ie}from"./useWillUnmount.js";import{t as ae}from"./useTimeout.js";import{b as oe,c as se,h as ce,l as S,n as le,s as ue}from"./_index.js";import{r as C}from"./mobxreact.esm.js";import{t as w}from"./FontAwesomeIcon.js";import{i as T,n as de,t as fe}from"./Centered.js";import{n as E}from"./Button.js";import{t as pe}from"./lodash.js";import{t as D}from"./motion.js";import{t as me}from"./phaser.js";import{h as O,t as k,y as A}from"./stores-2.js";import{t as j}from"./FetchScene.js";import{n as he}from"./isVersion.js";import{r as ge}from"./InPhase.js";import{t as M}from"./useStore.js";import{t as _e}from"./FetchMyId.js";import{n as N,t as P}from"./Send.js";import{t as F}from"./setCurrentAction.js";import{r as ve,t as ye}from"./isModeType.js";import{n as be}from"./TutorialConsts.js";import{i as xe,n as Se}from"./ActionButton.js";import{t as Ce}from"./FetchDeviceById.js";import{a as we,o as Te,t as Ee,u as De}from"./PlaceDevice.js";import{t as Oe}from"./FetchDeviceOptionById.js";import{t as ke}from"./canEditOnMap.js";import{t as I}from"./CapitalizeFirstLetter.js";import{n as Ae,t as je}from"./FetchVisualEditingPreview.js";import{t as L}from"./playClickSound.js";import{t as R}from"./IsRoleLevelBetween.js";import{n as z,t as Me}from"./CanUseMoreMemory.js";import{t as B}from"./RoleLevelPermissions.js";import{L as Ne,M as Pe,ct as Fe,j as V,kt as H,ot as U,rt as Ie,st as Le}from"./App-42.js";import{t as W}from"./StopPropagation.js";import{t as G}from"./FetchDeviceName.js";import{t as Re}from"./ReactionToMultipleProps.js";import{t as ze}from"./ReplaceDevice.js";var K=e(i()),q={enterExit:{duration:.22,ease:`easeInOut`}},J=re(),Y=e=>{let{selected:t,name:n,icon:r,onSelect:i}=e;return(0,J.jsxs)(Be,{onClick:e=>{W(e),L(),i()},children:[(0,J.jsx)(Ve,{selected:t,children:(0,J.jsx)(w,{name:r})}),(0,J.jsx)(He,{children:(0,J.jsx)(v.Title,{level:4,children:n})})]})},Be=S(T)`
+  padding: 8px 15px;
+  padding-left: 0px;
+  border-radius: 6px;
   cursor: pointer;
+  width: 300px;
+  transition: all 0.2s ease;
   &:hover {
-    background: #7e57c2;
+    padding-left: 15px;
+    background: rgba(255, 255, 255, 0.1);
   }
-  &:focus-visible {
-    outline: 2px solid #d6c4ff;
-    outline-offset: 4px;
+`,Ve=S(fe)`
+  height: 36px;
+  width: 36px;
+  border: 2px solid ${E.White};
+  background: ${e=>e.selected?`#269900`:`rgba(0,0,0,0.2)`};
+  border-radius: 50%;
+  transition: background 0.2s ease;
+`,He=S.div`
+  margin-left: 14px;
+`,Ue=(e,t)=>{let n=Oe(e);if(!n)return!1;let r=n.codeGridSchema.triggers.find(e=>e.type===t);if(!r)return!1;let i=r.minimumRoleLevel,a=r.maximumRoleLevel;return R(i,a)},We=()=>{let e=B.codeGrids.minimumRoleLevel,t=B.codeGrids.maximumRoleLevel;return R(e,t)},Ge=(e,t)=>{let n=k.worldOptions.deviceOptions.find(t=>t.id===e);if(!n||!Fe(e,t)||!We())return[];let r=[],{codeGridSchema:i}=n;if(i.allowChannelGrids){var a,o;R(i==null||(a=i.channelGridsRoleLevel)==null?void 0:a.min,i==null||(o=i.channelGridsRoleLevel)==null?void 0:o.max)&&r.push({type:f.broadcastMessage,name:`When receiving on channel...`})}return i.triggers.forEach(e=>{Ue(n.id,e.type)&&r.push({type:e.type,name:e.name})}),r},Ke=(e,t)=>!!Ge(e,t).length,qe=e=>{let{deviceId:t,deviceOption:n}=e,[i,a]=K.useState(De({deviceId:t}));return K.useEffect(()=>Re([()=>{var e;return(e=k.world.devices.codeGrids.get(t))==null?void 0:e.items.size},()=>k.memorySystem.counters.devices.get(n.id)],()=>{a(De({deviceId:t}))},{fireImmediately:!0}),[t]),(0,J.jsxs)(v.Text,{italic:!0,children:[r(i),` `,b]})},Je=e=>Array.from(k.world.wires.wires.keys()).filter(t=>t.startsWith(e)).map(e=>k.world.wires.wires.get(e)),Ye=e=>Array.from(k.world.wires.wires.keys()).filter(t=>t.endsWith(e)).map(e=>k.world.wires.wires.get(e)),Xe=e=>!!(Je(e).length||Ye(e).length),Ze=()=>{let e=j().worldManager.devices.getDeviceById(k.me.editing.device.currentlyEditedDevice.id??``);return e?e.visualEditing.uses():!1},Qe=()=>{let e=we();if(!e)return;e.parts.forceHide(),e.colliders.hideDebug(),e.shadows.hide(),e.onHide&&e.onHide(),k.me.editing.device.visualEditing={active:!0,instruction:``,keyboardHelpers:[],cursor:`default`,id:e.id};let t=e.layers.isOnNaturalDepth()?void 0:e.layers.getDepth();Ee({id:Ae.previewId,deviceOption:e.deviceOption,isPreview:!0,options:{...e.options},placedByClient:!0,state:{...e.deviceOption.defaultState},x:e.x,y:e.y,depth:t,name:e.name})},$e=C(e=>{let[t,r,i]=n(!1),[s,c]=K.useState(``),u=K.useRef(null);K.useEffect(()=>{if(t){var e;c(``),u==null||(e=u.current)==null||e.focus()}},[t]);let d=e=>{c(e.target.value)},f=()=>{let t=s==null?void 0:s.trim(),n=j().worldManager.devices.getDeviceById(e.deviceId);n&&(ze({depth:n.layers.getOptionsDepth(),layerId:n.layers.getOptionsLayer(),name:t,deviceOption:n.deviceOption,id:n.id,isPreview:!1,options:n.options,placedByClient:!1,state:n.deviceOption.defaultState,x:n.x,y:n.y}),i())},p=ke();return(0,J.jsx)(y,{className:`maxWidth`,children:(0,J.jsxs)(`div`,{className:`flex`,onClick:W,children:[(0,J.jsx)(a,{title:p?`Rename`:void 0,placement:`right`,children:(0,J.jsx)(v.Title,{level:2,style:{color:E.White,marginBottom:2,cursor:p?`pointer`:`auto`},onClick:p?r:void 0,children:G(e.deviceId)})}),(0,J.jsxs)(o,{open:t&&p,onCancel:i,onOk:f,children:[(0,J.jsx)(v.Title,{level:5,children:`Change name`}),(0,J.jsx)(l,{ref:u,maxLength:64,style:{marginTop:10},placeholder:`New name...`,value:s,onChange:d,onPressEnter:f})]})]})})}),et=C(e=>{let{device:t,deviceOption:n,options:r,tab:i,setTab:a}=e,o=()=>Ze()&&!Te()&&ke(),c=Ke(n.id,r),l=Xe(t.id);return(0,J.jsxs)(tt,{children:[(0,J.jsxs)(`div`,{className:`maxWidth`,children:[(0,J.jsx)($e,{deviceId:t.id}),(0,J.jsx)(qe,{deviceId:t.id,deviceOption:n}),(0,J.jsxs)(_,{direction:`vertical`,size:4,className:`maxWidth`,style:{marginTop:16},children:[(0,J.jsx)(Y,{icon:`fas fa-cog`,name:`Options`,selected:i===$.options,onSelect:()=>{a($.options)}}),c?(0,J.jsx)(Y,{icon:`fas fa-cubes`,name:I(g.grid.plural),selected:i===$.codeGrids,onSelect:()=>{a($.codeGrids)}}):null,l?(0,J.jsx)(Y,{icon:`fas fa-plug`,name:I(V.wire.plural),selected:i===$.wires,onSelect:()=>{a($.wires)}}):null]})]}),(0,J.jsx)(`div`,{children:o()?(0,J.jsx)(s,{size:`large`,type:`primary`,onClick:e=>{W(e),L(),Qe()},children:`Change Size`}):null})]})}),tt=S(D.div).attrs({className:`flex-column between maxWidth`,transition:{duration:q.enterExit.duration,ease:q.enterExit.ease},initial:{opacity:0},animate:{opacity:1},exit:{opacity:0}})`
+  padding: 25px;
+`,nt=S.div.attrs({className:`maxWidth`})`
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+`,rt=e=>(0,J.jsxs)(it,{onClick:e.onClick,children:[e.children,(0,J.jsx)(v.Text,{children:e.label})]}),it=S(fe).attrs({className:`maxWidth`})`
+  padding: 30px 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  cursor: pointer;
+  border: 2px dashed rgba(255, 244, 212, 0.5);
+  transition: background 0.2s ease;
+  position: relative;
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
   }
-`,H=i.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 56px;
-  margin-top: 20px;
-`;export{Ge as default};
+`,at=e=>{P(N.createCodeGrid,{deviceId:e.deviceId,triggerType:e.triggerType,triggerValue:e.triggerValue})},ot=e=>{var t;let n=k.memorySystem.costs.codeGrid;return Me({memory:n})?k.memorySystem.counters.codeGrids>=k.memorySystem.limits.codeGrids?{canAdd:!1,reason:z.limit}:(((t=k.world.devices.codeGrids.get(e))==null?void 0:t.items.size)??0)>=k.memorySystem.limits.codeGridsPerDevice?{canAdd:!1,reason:z.codeGridPerDeviceLimit}:{canAdd:!0}:{canAdd:!1,reason:z.noMemory}},st=e=>{if(e.reason===z.codeGridPerDeviceLimit)return`Cannot create more ${g.grid.plural}. Reached limit of ${k.memorySystem.limits.codeGridsPerDevice} ${g.grid.plural} per device.`;if(e.reason===z.limit)return`Cannot create more ${g.grid.plural}. Reached limit of ${k.memorySystem.limits.codeGrids} ${g.grid.plural} on map.`;let t=k.memorySystem.costs.codeGrid;return e.reason===z.noMemory?`Not enough ${b} to create ${g.grid.singular}. Requires ${r(t)} available ${b}.`:``},ct=e=>{let{memorySystem:t}=M(),[i,a]=K.useState(ot(e.deviceId)),[s,c,l]=n(!1),[d,m]=K.useState(``),h=K.useRef(null);K.useEffect(()=>Re([()=>k.memorySystem.counters.codeGrids,()=>k.memorySystem.usedMemoryCost],()=>{a(ot(e.deviceId))},{fireImmediately:!0}),[e.deviceId]),K.useEffect(()=>{var e;h==null||(e=h.current)==null||e.focus()},[s]);let _=K.useMemo(()=>p(ee.channel),[]),te=()=>{let t=d==null?void 0:d.trim();t&&t.length&&(e.setIsCreatingNewGrid(),at({deviceId:e.deviceId,triggerType:f.broadcastMessage,triggerValue:d}),l(),m(``))},y=st({reason:i.reason});return(0,J.jsxs)(lt,{children:[(0,J.jsxs)(ut,{children:[(0,J.jsxs)(v.Title,{level:4,style:{color:E.White},children:[`Create a new `,g.grid.singular]}),(0,J.jsxs)(v.Text,{italic:!0,children:[`+`,r(t.costs.codeGrid),` memory`]})]}),i.canAdd?(0,J.jsx)(nt,{style:{marginTop:20},children:e.codeGridOptions.map(t=>(0,J.jsx)(rt,{label:t.name,onClick:()=>{L(),t.type===f.broadcastMessage?c():(e.setIsCreatingNewGrid(),at({deviceId:e.deviceId,triggerType:t.type,triggerValue:``}))}},t.type+`-option`))}):(0,J.jsx)(oe,{type:`error`,showIcon:!0,message:y,style:{marginTop:15}}),(0,J.jsxs)(o,{open:s,onCancel:l,onOk:te,children:[(0,J.jsx)(v.Title,{level:5,children:`Channel name`}),(0,J.jsxs)(v.Text,{children:[`The `,g.grid.singular,` will run when receiving a message from this channel`]}),(0,J.jsx)(u,{ref:h,value:d,className:`maxWidth`,placeholder:`Channel name...`,onChange:m,maxLength:512,style:{marginTop:10,marginBottom:3},autoFocus:!0,options:_.map(e=>({value:e})),filterOption:(e,t)=>t.value.toUpperCase().indexOf(e.toUpperCase())!==-1})]})]})},lt=S.div.attrs({className:`maxWidth`})``,ut=S(T).attrs({className:`maxWidth between`})``,X=e=>{var t;if(!he()||ye()||!ge())return!1;let n=e||_e();return((t=k.characters.characters.get(n))==null||(t=t.permissions)==null?void 0:t.manageCodeGrids)||!1},dt=(e,t)=>{var n;let r=ve(e);if(!r)return null;let i=(n=k.world.devices.codeGrids.get(e))==null||(n=n.items)==null?void 0:n.get(t);if(!i)return null;let a=i.triggerType;if(a===f.broadcastMessage)return(0,J.jsxs)(`span`,{children:[`When receiving on channel`,` `,(0,J.jsx)(`span`,{style:{fontWeight:ue.Bold,color:`#57f784`},children:i.triggerValue||`channel`})]});let o=r.deviceOption.codeGridSchema.triggers.find(e=>e.type===a);return o?o.name:null},ft=(e,t)=>dt(e,t)||`Block`,pt=e=>{P(N.deleteCodeGrid,{deviceId:e.deviceId,gridId:e.gridId})},mt=pe(),ht=C(e=>{let{deviceId:t}=e,n=Array.from(e.codeGrids),r=X();return K.useEffect(()=>{e.isCreatingNewGrid&&(e.setIsNotCreatingNewGrid(),n.length>=1&&gt((0,mt.last)(n)[0]))},[n.length]),(0,J.jsxs)(_t,{children:[(0,J.jsxs)(v.Title,{style:{color:E.White},level:4,children:[r?`Edit`:`View`,` an existing`,` `,g.grid.singular]}),(0,J.jsx)(nt,{style:{marginTop:20},children:n.map(e=>(0,J.jsx)(rt,{label:ft(t,e[0]),onClick:()=>{L(),gt(e[0])},children:r?(0,J.jsx)(vt,{children:(0,J.jsx)(c,{menu:{items:[{key:`remove-grid-${e[0]}`,label:`Delete ${g.grid.singular}`,icon:(0,J.jsx)(te,{}),onClick:Pe(()=>{o.confirm({title:`Are you sure you want to delete this ${g.grid.singular}?`,onOk:()=>{pt({deviceId:t,gridId:e[0]})},okText:`Yes`,cancelText:`No`})})}]},children:(0,J.jsx)(s,{type:`text`,size:`small`,icon:(0,J.jsx)(d,{}),onClick:W})})}):null},e[0]+`-grid`))})]})}),gt=e=>{k.me.editing.device.currentlyEditedGridId=e,k.me.editing.device.screen=O.grid},_t=S.div.attrs({className:`maxWidth`})``,vt=S.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px 4px;
+`,yt=()=>(0,J.jsxs)(de,{className:`maxAll`,children:[(0,J.jsx)(`div`,{style:{fontSize:54,color:`rgba(255,255,255,0.6)`,marginBottom:5},children:(0,J.jsx)(w,{name:`fal fa-cubes`})}),(0,J.jsxs)(v.Text,{children:[`No `,g.grid.plural,` have been created for this`,` `,V.device.singular,`.`]})]}),bt=C(e=>{var t;let{world:{devices:{codeGrids:r}}}=M(),i=e.device.id,[a,o,s]=n(!1),c=(t=r.get(i))==null?void 0:t.items,l=Ge(e.deviceOption.id,e.options),u=c&&c.size>=1,d=l.length>=1,f=X();return!u&&!f?(0,J.jsx)(yt,{}):(0,J.jsx)(xt,{children:(0,J.jsxs)(_,{direction:`vertical`,size:40,className:`maxWidth`,children:[u?(0,J.jsx)(ht,{deviceId:i,codeGrids:c,isCreatingNewGrid:a,setIsNotCreatingNewGrid:s}):null,d&&f?(0,J.jsx)(ct,{codeGridOptions:l,deviceId:i,setIsCreatingNewGrid:o}):null]})})}),xt=S.div``,St=C(e=>{let{wire:t,deviceId:n}=e,{me:{editing:r}}=M(),i=t.startDevice===n,a=!i,o=Ce(t.startDevice),s=Ce(t.endDevice),c=G(t.startDevice),l=G(t.endDevice),u=K.useMemo(()=>{var e;if((o==null?void 0:o.deviceOption.id)===be.wireRepeater)return`Pulse received`;let n=o==null||(e=o.deviceOption)==null||(e=e.wireConfig)==null||(e=e.out)==null||(e=e.connections)==null?void 0:e.find(e=>e.id===t.startConnection);return n?n.name:`No event`},[t.startConnection]),d=K.useMemo(()=>{var e,n;if((s==null||(e=s.deviceOption)==null?void 0:e.id)===be.wireRepeater)return`Relay pulse`;let r=s==null||(n=s.deviceOption)==null||(n=n.wireConfig)==null||(n=n.in)==null||(n=n.connections)==null?void 0:n.find(e=>e.id===t.endConnection);return r?r.name:`No action`},[t.endConnection]);return(0,J.jsxs)(Ct,{onClick:()=>{r.wire.currentlyEditedWireId=t.id,F(A.editingWire)},children:[(0,J.jsxs)(wt,{children:[(0,J.jsx)(Tt,{selected:i}),(0,J.jsxs)(Et,{children:[(0,J.jsx)(Dt,{}),(0,J.jsx)(Ot,{children:(0,J.jsx)(w,{name:`fas fa-caret-right`})})]}),(0,J.jsx)(Tt,{selected:a})]}),(0,J.jsxs)(kt,{children:[(0,J.jsxs)(jt,{children:[a?(0,J.jsx)(Z,{children:c}):null,(0,J.jsx)(`div`,{children:(0,J.jsx)(v.Text,{children:u})})]}),(0,J.jsxs)(Mt,{children:[i?(0,J.jsx)(Z,{children:l}):null,(0,J.jsx)(v.Text,{children:d})]})]})]})}),Ct=S.div`
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.07);
+  cursor: pointer;
+  transition: background 0.3s ease;
+  &:hover {
+    background: rgba(255, 255, 255, 0.14);
+  }
+`,wt=S(T).attrs({className:`maxWidth`})``,Tt=S.div`
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background: ${e=>e.selected?`#269900`:`rgba(255,255,255,0.14)`};
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  flex-shrink: 0;
+`,Et=S(T)`
+  flex: 1;
+  padding: 0px 20px;
+`,Dt=S.div`
+  height: 2px;
+  flex: 1;
+  background: rgba(255, 255, 255, 0.75);
+`,Ot=S.div`
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 24px;
+  line-height: 1;
+`,kt=S.div.attrs({className:`maxWidth between flex`})`
+  align-items: flex-start;
+  margin-top: 10px;
+`,At=S.div`
+  max-width: 45%;
+  line-height: 1;
+`,jt=S(At)``,Mt=S(At)`
+  text-align: right;
+`,Z=e=>(0,J.jsx)(v.Title,{level:5,style:{fontWeight:ue.Bold},children:e.children}),Nt=C(e=>{let t=e.direction===`in`?Ye(e.deviceId):Je(e.deviceId);return t.length?(0,J.jsxs)(Pt,{children:[(0,J.jsxs)(v.Title,{level:4,style:{color:E.White},children:[I(V.wire.plural),` `,e.direction]}),(0,J.jsx)(_,{direction:`vertical`,size:12,style:{marginTop:15},className:`maxWidth`,children:t.map(t=>(0,J.jsx)(St,{wire:t,deviceId:e.deviceId},t.id))})]}):null}),Pt=S.div``,Ft=C(e=>Xe(e.deviceId)?(0,J.jsx)(It,{children:(0,J.jsxs)(_,{direction:`vertical`,size:25,className:`maxWidth`,children:[(0,J.jsx)(Nt,{direction:`in`,deviceId:e.deviceId}),(0,J.jsx)(Nt,{direction:`out`,deviceId:e.deviceId})]})}):(0,J.jsxs)(v.Text,{children:[`No `,V.wire.plural,` are connected to this`,` `,V.device.singular,`.`]})),It=S.div``,Lt=e=>(0,J.jsxs)(Rt,{children:[(0,J.jsx)(zt,{onClick:W,children:e.tab===$.options?(0,J.jsx)(m,{device:e.device,deviceOption:e.deviceOption,position:e.position,options:e.options,hooks:e.hooks}):e.tab===$.codeGrids?(0,J.jsx)(bt,{device:e.device,deviceOption:e.deviceOption,options:e.options}):(0,J.jsx)(Ft,{deviceId:e.device.id})}),(0,J.jsx)(Ne,{padding:25})]}),Rt=S.div.attrs({className:`maxAll flex`})`
+  position: relative;
+  justify-content: flex-end;
+`,zt=S(D.div).attrs({className:`maxAll scroll-y medium-shadow`,transition:{duration:q.enterExit.duration,ease:q.enterExit.ease},initial:{opacity:.25,x:`100%`},animate:{opacity:1,x:`0%`},exit:{opacity:.25,x:`100%`}})`
+  background: rgba(48, 28, 86, 0.85);
+  backdrop-filter: blur(3px);
+  width: 490px;
+  padding: 25px;
+  padding-top: 68px;
+  position: relative;
+`,Q=e(me()),$=function(e){return e.options=`options`,e.codeGrids=`codeGrids`,e.wires=`wires`,e}({}),Bt=e=>{U(Q.default.Input.Keyboard.KeyCodes.ESC,e.close,[e.close]);let[t,n]=K.useState(`options`);return(0,J.jsxs)(Vt,{children:[(0,J.jsx)(et,{device:e.device,deviceOption:e.deviceOption,options:e.options,tab:t,setTab:n}),(0,J.jsx)(Lt,{device:e.device,options:e.options,hooks:e.hooks,position:e.position,deviceOption:e.deviceOption,tab:t})]})},Vt=S.div.attrs({className:`maxAll flex between`})``,Ht=()=>{let{me:{editing:{device:{currentlyEditedDevice:e}}},worldOptions:{deviceOptions:t}}=M();return{device:K.useMemo(()=>j().worldManager.devices.getDeviceById(e.id),[e.id]),deviceOption:t.find(t=>t.id===e.deviceOptionId)}},Ut=()=>{F(A.editingDevice);let e=je(),t=we();H(),t&&e&&ze({deviceOption:t.deviceOption,id:t.id,x:Math.round(e.x),y:Math.round(e.y),depth:e.layers.getDepth(),layerId:t.layers.getOptionsLayer(),name:e.name,isPreview:!1,options:{...e.options},placedByClient:!0,state:t.deviceOption.defaultState})},Wt=C(()=>{let{me:{editing:{device:{visualEditing:{instruction:e,keyboardHelpers:t}}}}}=M();U(Q.default.Input.Keyboard.KeyCodes.ENTER,()=>{o()}),U(Q.default.Input.Keyboard.KeyCodes.ESC,()=>{o()}),ie(()=>{H()});let[n,r]=K.useState(e),[i,a]=K.useState(JSON.stringify(t));K.useEffect(()=>{let t=x(()=>e,()=>{n!==k.me.editing.device.visualEditing.instruction&&r(k.me.editing.device.visualEditing.instruction)},{fireImmediately:!0});return()=>{t()}},[e,n]),K.useEffect(()=>{let e=x(()=>t,()=>{i!==JSON.stringify(k.me.editing.device.visualEditing.keyboardHelpers)&&a(JSON.stringify(k.me.editing.device.visualEditing.keyboardHelpers))},{fireImmediately:!0});return()=>{e()}},[i,t]);let o=()=>{Ut()};return(0,J.jsxs)(Gt,{children:[(0,J.jsx)(Le,{items:JSON.parse(i),visible:!0}),(0,J.jsxs)(Kt,{children:[(0,J.jsx)(y,{children:(0,J.jsx)(`div`,{children:(0,J.jsx)(s,{type:`primary`,size:`large`,onClick:()=>{L(),o()},children:`Done`})})}),(0,J.jsx)(qt,{children:(0,J.jsx)(`div`,{children:n})})]})]})}),Gt=S.div.attrs({className:`maxAll flex`})`
+  align-items: flex-end;
+`,Kt=S.div.attrs({className:`maxWidth flex`})`
+  position: relative;
+  padding: 25px;
+`,qt=S.div.attrs({className:`maxAll flex-center`})`
+  position: absolute;
+  text-align: center;
+  font-family: ${se.FugazOne};
+  text-transform: uppercase;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.8);
+  font-size: 22px;
+  top: 0px;
+  left: 0px;
+`,Jt=t({default:()=>Xt}),Yt=K.lazy(()=>ce(()=>import(`./App-83.js`),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173]))),Xt=C(()=>{let{me:e,world:{devices:t}}=M(),{options:n,hooks:r,position:i}=h(),{device:a,deviceOption:o}=Ht(),s=Te();K.useEffect(()=>s?()=>{}:Ie().dispose,[s]);let{start:c,clear:l}=ae(()=>{t.devices.get(e.editing.device.currentlyEditedDevice.id)||u()},25);if(K.useEffect(()=>{let n=ne(()=>!t.devices.get(e.editing.device.currentlyEditedDevice.id),()=>{c()}),r=ne(()=>!!t.devices.get(e.editing.device.currentlyEditedDevice.id),()=>{l()});return()=>{n(),r()}},[e.editing.device.currentlyEditedDevice.id]),!a||!o)return null;let u=()=>{F(A.none),Se({event:xe.CLOSE_DEVICE_OPTIONS,device:a})};return s?(0,J.jsx)(Wt,{}):(0,J.jsx)(y,{className:`maxAll`,children:(0,J.jsx)(Zt,{onClick:u,children:(0,J.jsx)(K.Suspense,{fallback:null,children:e.editing.device.screen===O.grid?(0,J.jsx)(Yt,{close:()=>{e.editing.device.screen=O.home},deviceId:a.id}):(0,J.jsx)(Bt,{device:a,deviceOption:o,position:i,options:n,hooks:r,close:u})})})})}),Zt=S(D.div).attrs({className:`maxAll`,transition:{duration:q.enterExit.duration,ease:q.enterExit.ease},initial:{background:`rgba(0,0,0,0)`},animate:{background:`rgba(0,0,0,0.6)`},exit:{background:`rgba(0,0,0,0)`}})`
+  color: ${le.White};
+`;export{Xt as default,ft as n,X as r,Jt as t};

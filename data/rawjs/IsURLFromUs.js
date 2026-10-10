@@ -1,1 +1,1 @@
-const s=t=>t.startsWith(window.location.origin)||t.startsWith("/");export{s as I};
+var e=e=>e.startsWith(window.location.origin)||e.startsWith(`/`);export{e as t};

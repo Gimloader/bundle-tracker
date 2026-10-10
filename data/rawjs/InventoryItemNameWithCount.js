@@ -1,1 +1,1 @@
-import{aU as m}from"./_index.js";import"./FixSpinePlugin.js";const i=(r,t)=>t>1?`${r} (${m(t)})`:r;export{i as I};
+import{x as e}from"./utils.js";import"./stores-2.js";import"./App-42.js";var t=(t,n)=>n>1?`${t} (${e(n)})`:t;export{t};

@@ -1,1 +1,1 @@
-const e=h=>{const t=h.newWidth/h.width;return{height:h.height*t,width:h.width*t}};export{e as N};
+var e=e=>{let t=e.newWidth/e.width;return{height:e.height*t,width:e.width*t}};export{e as t};

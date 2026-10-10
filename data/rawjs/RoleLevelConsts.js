@@ -1,0 +1,1 @@
+var e={min:0,default:50,admin:90,max:100};export{e as t};

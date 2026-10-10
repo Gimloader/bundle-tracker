@@ -1,1 +1,1 @@
-const a={alpha:.5};export{a as Z};
+var e={alpha:.5,activateDeactivateTime:100};export{e as t};

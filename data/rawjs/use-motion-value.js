@@ -1,1 +1,1 @@
-import{r as t}from"./_index.js";import{u as a,M as u,d as r}from"./motion.js";function i(o){const e=a(()=>r(o)),{isStatic:s}=t.useContext(u);if(s){const[,n]=t.useState(o);t.useEffect(()=>e.on("change",n),[])}return e}export{i as u};
+import{o as e}from"./rolldown-runtime.js";import{t}from"./react-1.js";import{c as n,g as r,y as i}from"./motion.js";var a=e(t(),1);function o(e){let t=r(()=>n(e)),{isStatic:o}=(0,a.useContext)(i);if(o){let[,n]=(0,a.useState)(e);(0,a.useEffect)(()=>t.on(`change`,n),[])}return t}export{o as t};

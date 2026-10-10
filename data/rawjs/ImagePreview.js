@@ -1,10 +1,10 @@
-import{r as a,j as o,M as n,e as l,d as c}from"./_index.js";import{g}from"./getCloudinaryUrl.js";const d=c.img.attrs(i=>({src:i.image}))`
+import{o as e}from"./rolldown-runtime.js";import{t}from"./react-1.js";import{t as n}from"./modal.js";import{t as r}from"./jsx-runtime.js";import{l as i,n as a}from"./_index.js";import{t as o}from"./getCloudinaryUrl.js";var s=e(t()),c=r(),l=i.img.attrs(e=>({src:e.image}))`
   cursor: pointer;
-  height: ${i=>i.size}px;
-  width: ${i=>i.size}px;
-  margin-right: ${i=>i.customRightMargin?i.customRightMargin:0}px;
+  height: ${e=>e.size}px;
+  width: ${e=>e.size}px;
+  margin-right: ${e=>e.customRightMargin?e.customRightMargin:0}px;
   border-radius: 5px;
-  ${i=>i.showBorder&&`border: solid ${l.Black} 1px;`}
+  ${e=>e.showBorder&&`border: solid ${a.Black} 1px;`}
   flex-shrink: 0;
   object-fit: cover;
-`,x=i=>{const[r,t]=a.useState(!1),s=e=>{e.stopPropagation(),i.onClick&&i.onClick(),i.blockModalOpen||t(!0)};return o.jsxs(o.Fragment,{children:[o.jsx(d,{...i,onClick:s}),o.jsx(n,{open:r,onCancel:e=>{e.stopPropagation(),t(!1)},footer:null,closable:!1,children:o.jsx("img",{src:g(i.image),style:{width:"100%"}})})]})};export{x as I};
+`,u=e=>{let[t,r]=s.useState(!1),i=t=>{t.stopPropagation(),e.onClick&&e.onClick(),e.blockModalOpen||r(!0)};return(0,c.jsxs)(c.Fragment,{children:[(0,c.jsx)(l,{...e,onClick:i}),(0,c.jsx)(n,{open:t,onCancel:e=>{e.stopPropagation(),r(!1)},footer:null,closable:!1,children:(0,c.jsx)(`img`,{src:o(e.image),style:{width:`100%`}})})]})};export{u as t};

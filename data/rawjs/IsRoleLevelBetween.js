@@ -1,0 +1,1 @@
+import{t as e}from"./stores-2.js";import{t}from"./RoleLevelConsts.js";var n=(n,r)=>{let i=n??t.min,a=r??t.max,o=e.me.roleLevel;return o>=i&&o<=a};export{n as t};

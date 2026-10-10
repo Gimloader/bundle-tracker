@@ -1,1 +1,1 @@
-import{E as t,T as o}from"./ActionButton.js";import{a9 as a,s as n}from"./FixSpinePlugin.js";const m=e=>{e!==a.home&&t({event:o.OPEN_ADD_SUBMENU,menu:e}),n.gui.none.addMenu.screen=e};export{m as s};
+import{l as e,t}from"./stores-2.js";import{i as n,n as r}from"./ActionButton.js";var i=i=>{i!==e.home&&r({event:n.OPEN_ADD_SUBMENU,menu:i}),t.gui.none.addMenu.screen=i};export{i as t};

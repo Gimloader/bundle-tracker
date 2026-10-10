@@ -1,0 +1,1 @@
+import{t as e}from"./stores-2.js";var t={noTeamId:`__NO_TEAM_ID`,spectatorsTeam:`__SPECTATORS_TEAM`,sentryTeam:`__SENTRY_TEAM`},n=`__ANY_TEAM__`,r=()=>e.me.myTeam;export{n,t as r,r as t};

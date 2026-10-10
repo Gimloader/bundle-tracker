@@ -1,1 +1,1 @@
-import{dT as n}from"./_index.js";const p=(r,t,a)=>{const c=[];return r.forEach(o=>{const s=n(o,t,a);c.push(s)}),()=>{c.forEach(o=>{o()})}};export{p as R};
+import{m as e}from"./decorate.js";var t=(t,n,r)=>{let i=[];return t.forEach(t=>{let a=e(t,n,r);i.push(a)}),()=>{i.forEach(e=>{e()})}};export{t};

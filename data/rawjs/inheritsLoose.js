@@ -1,1 +1,1 @@
-import{d8 as e}from"./_index.js";function p(o,t){o.prototype=Object.create(t.prototype),o.prototype.constructor=o,e(o,t)}export{p as _};
+import{n as e}from"./rolldown-runtime.js";import{a as t,o as n}from"./assertThisInitialized.js";function r(e,n){e.prototype=Object.create(n.prototype),e.prototype.constructor=e,t(e,n)}var i=e((()=>{n()}));export{i as n,r as t};

@@ -1,1 +1,1 @@
-import{a as i}from"./FixSpinePlugin.js";const n=e=>{e.view&&i().plugins.get("rexOutlinePipeline").remove(e.view)};export{n as R};
+import{t as e}from"./FetchScene.js";var t=t=>{t.view&&e().plugins.get(`rexOutlinePipeline`).remove(t.view)};export{t};

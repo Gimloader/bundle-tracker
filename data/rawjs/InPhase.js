@@ -1,0 +1,1 @@
+import{r as e,t}from"./stores-2.js";var n=()=>t.session.phase===e.game,r=()=>t.session.phase===e.preGame,i=()=>n()&&!t.session.duringTransition||r()&&t.session.duringTransition&&!t.me.isRespawning,a=()=>r()&&!t.session.duringTransition||n()&&t.session.duringTransition&&!t.me.isRespawning;export{a as i,i as n,r,n as t};

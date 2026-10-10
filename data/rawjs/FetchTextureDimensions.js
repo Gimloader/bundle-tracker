@@ -1,1 +1,1 @@
-import{a as h}from"./FixSpinePlugin.js";const r={width:0,height:0},n=i=>{const t=h().textures.get(i);if(!t)return r;const e=t.frames[t.firstFrame];return e?{width:e.width,height:e.height}:r};export{n as F};
+import{t as e}from"./FetchScene.js";var t={width:0,height:0},n=n=>{let r=e().textures.get(n);if(!r)return t;let i=r.frames[r.firstFrame];return i?{width:i.width,height:i.height}:t};export{n as t};
