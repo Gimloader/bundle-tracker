@@ -1,0 +1,41 @@
+import {
+    t as e
+} from "./stores-2.js";
+import {
+    t
+} from "./FetchScene.js";
+var n = new class {
+    constructor() {
+        this.timeBetweenCallsMs = 60, this.budgetPerBatchMs = 8, this.waitingToRun = !1, this.items = [], this.cancel = e => {
+            let t = this.items.indexOf(e);
+            t !== -1 && this.items.splice(t, 1)
+        }, this.addItem = e => {
+            this.items.push(e), this.checkToRun()
+        }, this.addItems = e => {
+            this.items.push(...e), this.checkToRun()
+        }, this.clear = () => {
+            this.items = [], clearTimeout(this.timeoutId), this.waitingToRun = !1
+        }, this.checkToRun = () => {
+            if (!this.waitingToRun) {
+                if (this.items.length === 0) return;
+                let n = performance.now();
+                for (; performance.now() - n < this.budgetPerBatchMs && this.items.length > 0;) {
+                    let n = this.items.shift(),
+                        r = e.world.wires.wires.get(n);
+                    r && t().worldManager.wires.addWire({
+                        startDeviceId: r.startDevice,
+                        endDeviceId: r.endDevice,
+                        startConnection: r.startConnection,
+                        endConnection: r.endConnection
+                    })
+                }
+                this.waitingToRun = !0, this.timeoutId = window.setTimeout(() => {
+                    this.waitingToRun = !1, this.checkToRun()
+                }, this.timeBetweenCallsMs)
+            }
+        }
+    }
+};
+export {
+    n as t
+};

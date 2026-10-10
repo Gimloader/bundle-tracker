@@ -1,102 +1,113 @@
 import {
-    u as g,
-    a as h
-} from "./index-1.js";
+    o as e
+} from "./rolldown-runtime.js";
 import {
-    j as c,
-    d as u,
-    b as v,
-    aG as x,
-    e as p,
-    F as j,
-    E as k
-} from "./_index.js";
+    Q as t,
+    o as n
+} from "./utils.js";
 import {
-    P as z
+    t as r
+} from "./react-1.js";
+import {
+    a as i
+} from "./InfoCircleFilled.js";
+import {
+    a
 } from "./useClasses.js";
 import {
-    A as w
+    t as o
+} from "./space.js";
+import {
+    t as s
+} from "./progress.js";
+import {
+    t as c
+} from "./jsx-runtime.js";
+import {
+    l,
+    n as u,
+    s as d
+} from "./_index.js";
+import {
+    t as f
 } from "./AccessibleAnchor.js";
 import {
-    g as C
-} from "./getCloudinaryUrl.js";
+    n as p,
+    r as m
+} from "./module-1.js";
 import {
-    S as P
-} from "./index-2.js";
-import {
-    a as R
+    t as h
 } from "./polished.esm.js";
 import {
-    P as y
-} from "./progress.js";
+    t as g
+} from "./getCloudinaryUrl.js";
 
-function O() {}
+function _() {}
 
-function G(e, t, n = {}) {
-    const r = F(n.polyfill),
-        d = g(t);
-    return h(() => {
-        let s = !1;
-        const l = e && "current" in e ? e.current : e;
-        if (!l) return O;
+function v(e, t, n = {}) {
+    let r = x(n.polyfill),
+        i = p(t);
+    return m(() => {
+        let t = !1,
+            n = e && `current` in e ? e.current : e;
+        if (!n) return _;
 
-        function o(i, a) {
-            s || d.current(i, a)
+        function a(e, n) {
+            t || i.current(e, n)
         }
-        return r.subscribe(l, o), () => {
-            s = !0, r.unsubscribe(l, o)
+        return r.subscribe(n, a), () => {
+            t = !0, r.unsubscribe(n, a)
         }
-    }, [e, r, d]), r.observer
+    }, [e, r, i]), r.observer
 }
 
-function A(e) {
+function y(e) {
     let t = !1,
-        n = [];
-    const r = new Map,
-        d = new(e || window.ResizeObserver)((s, l) => {
-            n = n.concat(s);
+        n = [],
+        r = new Map,
+        i = new(e || window.ResizeObserver)((e, i) => {
+            n = n.concat(e);
 
-            function o() {
-                const i = new Set;
-                for (let a = 0; a < n.length; a++) {
-                    if (i.has(n[a].target)) continue;
-                    i.add(n[a].target);
-                    const f = r.get(n[a].target);
-                    f == null || f.forEach(b => b(n[a], l))
+            function a() {
+                let e = new Set;
+                for (let t = 0; t < n.length; t++) {
+                    if (e.has(n[t].target)) continue;
+                    e.add(n[t].target);
+                    let a = r.get(n[t].target);
+                    a == null || a.forEach(e => e(n[t], i))
                 }
                 n = [], t = !1
             }
-            t || window.requestAnimationFrame(o), t = !0
+            t || window.requestAnimationFrame(a), t = !0
         });
     return {
-        observer: d,
-        subscribe(s, l) {
-            var o;
-            d.observe(s);
-            const i = (o = r.get(s)) !== null && o !== void 0 ? o : [];
-            i.push(l), r.set(s, i)
+        observer: i,
+        subscribe(e, t) {
+            i.observe(e);
+            let n = r.get(e) ?? [];
+            n.push(t), r.set(e, n)
         },
-        unsubscribe(s, l) {
-            var o;
-            const i = (o = r.get(s)) !== null && o !== void 0 ? o : [];
-            if (i.length === 1) {
-                d.unobserve(s), r.delete(s);
+        unsubscribe(e, t) {
+            let n = r.get(e) ?? [];
+            if (n.length === 1) {
+                i.unobserve(e), r.delete(e);
                 return
             }
-            const a = i.indexOf(l);
-            a !== -1 && i.splice(a, 1), r.set(s, i)
+            let a = n.indexOf(t);
+            a !== -1 && n.splice(a, 1), r.set(e, n)
         }
     }
 }
-let m;
-const F = e => m || (m = A(e)),
-    H = e => {
-        const {
+var b, x = e => b || (b = y(e));
+r();
+var S = c(),
+    C = e => {
+        let {
             total: t,
             current: n,
             onPageChange: r
         } = e;
-        return c.jsx(z, {
+        return (0, S.jsx)(a, {
             simple: !0,
             current: n,
             total: t,
@@ -104,82 +115,83 @@ const F = e => m || (m = A(e)),
             onChange: r
         })
     },
-    E = e => c.jsx(I, {
-        onClick: t => t == null ? void 0 : t.stopPropagation(),
+    w = e(t()),
+    T = e => (0, S.jsx)(E, {
+        onClick: e => e == null ? void 0 : e.stopPropagation(),
         to: e.to,
         children: e.children
     }),
-    I = u(w)`
+    E = l(f)`
   background-color: rgba(0, 0, 0, 0.05) !important;
   padding: 0.2em 0.73em;
   font-size: 0.9em;
   border-radius: 50px;
 `,
-    N = e => {
-        const t = v(x(e.dateId)).format("MMMM Do [at] LT");
-        return c.jsxs(P, {
-            direction: "horizontal",
+    D = e => {
+        let t = (0, w.default)(n(e.dateId)).format(`MMMM Do [at] LT`);
+        return (0, S.jsxs)(o, {
+            direction: `horizontal`,
             size: 14,
-            align: "center",
-            children: [c.jsx("div", {
-                children: c.jsx(M, {
-                    src: C(e.kit.gif),
+            align: `center`,
+            children: [(0, S.jsx)(`div`, {
+                children: (0, S.jsx)(O, {
+                    src: g(e.kit.gif),
                     style: {
                         width: 55,
                         height: 55
                     }
                 })
-            }), c.jsxs("div", {
-                children: [c.jsx($, {
+            }), (0, S.jsxs)(`div`, {
+                children: [(0, S.jsx)(k, {
                     children: e.kit.title
-                }), c.jsx(_, {
+                }), (0, S.jsx)(A, {
                     children: t
-                }), e.assignmentId ? c.jsx("div", {
+                }), e.assignmentId ? (0, S.jsx)(`div`, {
                     style: {
-                        marginTop: "0.25em"
+                        marginTop: `0.25em`
                     },
-                    children: c.jsx(E, {
+                    children: (0, S.jsx)(T, {
                         to: `/assignment/${e.assignmentId}`,
-                        children: "Assignment"
+                        children: `Assignment`
                     })
                 }) : null]
             })]
         })
     },
-    M = u.img`
+    O = l.img`
   border-radius: 5px;
-  border: solid ${p.Black} 1px;
+  border: solid ${u.Black} 1px;
   flex-shrink: 0;
   object-fit: cover;
 `,
-    $ = u.div`
+    k = l.div`
   font-size: 1.1em;
-  font-weight: ${j.Bold};
+  font-weight: ${d.Bold};
 `,
-    _ = u.div`
+    A = l.div`
   font-size: 0.9em;
   font-style: italic;
   margin-top: 0.05em;
 `,
-    W = e => {
-        const t = e.percent < 60 ? "#F44336" : e.percent < 80 ? "#FFC107" : "#66BB6A";
-        return c.jsx(k, {
+    j = e => {
+        let t = e.percent < 60 ? `#F44336` : e.percent < 80 ? `#FFC107` : `#66BB6A`;
+        return (0, S.jsx)(i, {
             theme: {
                 components: {
                     Progress: {
-                        colorText: R(.2, t)
+                        colorText: h(.2, t)
                     }
                 }
             },
-            children: c.jsx(y, {
-                type: "dashboard",
+            children: (0, S.jsx)(s, {
+                type: `dashboard`,
                 percent: e.percent,
                 width: 65,
                 strokeColor: t,
-                status: "normal"
+                status: `normal`
             })
         })
     };
 export {
-    H as R, N as a, W as b, E as c, G as u
+    v as a, C as i, D as n, T as r, j as t
 };

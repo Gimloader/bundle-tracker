@@ -1,15 +1,23 @@
+import "./rolldown-runtime.js";
 import {
-    j as o,
-    C as t
-} from "./_index.js";
-const e = {
-    title: o.jsx(o.Fragment, {
-        children: "Copy kits with Pro"
-    }),
-    description: o.jsxs(o.Fragment, {
-        children: ["To copy kits and make them your own, upgrade to ", t, " Pro."]
-    })
-};
+    t as e
+} from "./react-1.js";
+import {
+    n as t
+} from "./Company.js";
+import {
+    t as n
+} from "./jsx-runtime.js";
+e();
+var r = n(),
+    i = {
+        title: (0, r.jsx)(r.Fragment, {
+            children: `Copy kits with Pro`
+        }),
+        description: (0, r.jsxs)(r.Fragment, {
+            children: [`To copy kits and make them your own, upgrade to `, t, ` Pro.`]
+        })
+    };
 export {
-    e as U
+    i as t
 };

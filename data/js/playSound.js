@@ -1,45 +1,45 @@
 import {
-    M as c
+    t as e
 } from "./MapSound.js";
-const l = new Map,
-    f = e => {
-        const t = Date.now();
-        if (!e.path) return null;
-        const n = e.forceCreateNewSound ? void 0 : l.get(e.path),
-            a = n || new c({
-                src: e.path
+var t = new Map,
+    n = n => {
+        let r = Date.now();
+        if (!n.path) return null;
+        let i = n.forceCreateNewSound ? void 0 : t.get(n.path),
+            a = i || new e({
+                src: n.path
             });
-        if (a.volume(e.volume), n) e.delay ? setTimeout(() => {
+        if (a.volume(n.volume), i) n.delay ? setTimeout(() => {
             a.play()
-        }, e.delay) : a.play();
+        }, n.delay) : a.play();
         else {
-            const s = () => {
-                if (!l.get(e.path) && !e.forceCreateNewSound && l.set(e.path, a), e.delay) {
-                    const o = t + e.delay,
-                        u = Date.now();
-                    u > o ? a.play() : setTimeout(() => {
+            let e = () => {
+                if (!t.get(n.path) && !n.forceCreateNewSound && t.set(n.path, a), n.delay) {
+                    let e = r + n.delay,
+                        t = Date.now();
+                    t > e ? a.play() : setTimeout(() => {
                         a.play()
-                    }, o - u)
+                    }, e - t)
                 } else a.play()
             };
-            a.state() === "loaded" ? s() : a.once("load", s)
+            a.state() === `loaded` ? e() : a.once(`load`, e)
         }
         return a
     },
-    d = new Set,
-    w = e => {
-        const {
-            path: t
-        } = e;
-        if (l.get(t) || d.has(t)) return;
-        d.add(t);
-        const n = new c({
-            src: t
+    r = new Set,
+    i = n => {
+        let {
+            path: i
+        } = n;
+        if (t.get(i) || r.has(i)) return;
+        r.add(i);
+        let a = new e({
+            src: i
         });
-        n.once("load", () => {
-            d.delete(t), l.set(t, n)
+        a.once(`load`, () => {
+            r.delete(i), t.set(i, a)
         })
     };
 export {
-    w as a, f as p
+    i as n, n as t
 };

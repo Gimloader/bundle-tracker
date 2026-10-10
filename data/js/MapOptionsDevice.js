@@ -1,162 +1,109 @@
 import {
-    s as m,
-    g as a,
-    S as n,
-    I as l,
-    i as c,
-    e as f
-} from "./FixSpinePlugin.js";
+    t as e
+} from "./GetAssetPath.js";
 import {
-    bn as g,
-    aK as w,
-    an as y
-} from "./App-41.js";
-import {
-    M as T
+    t
 } from "./MapSound.js";
 import {
-    S as M
-} from "./SecondsToDuration.js";
+    o as n,
+    s as r
+} from "./FixPhaserBootProcess.js";
 import {
-    C as h
-} from "./Consts.js";
+    t as i
+} from "./stores-2.js";
 import {
-    I as P
+    n as a
+} from "./isVersion.js";
+import {
+    r as o,
+    t as s
+} from "./InPhase.js";
+import {
+    t as c
+} from "./Device.js";
+import {
+    a as l
 } from "./ActionButton.js";
 import {
-    G as S
-} from "./GetAssetPath.js";
-import "./_index.js";
-import "./MapModeType.js";
-import "./MapStyle.js";
-import "./playSound.js";
-import "./Button.js";
-import "./polished.esm.js";
-import "./inheritsLoose.js";
-import "./mobxreact.esm.js";
-import "./index-21.js";
-import "./QuizTypes.js";
-import "./TutorialConsts.js";
-import "./index-18.js";
-import "./context.js";
-import "./FontAwesomeIcon.js";
-import "./Centered.js";
-import "./CapitalizeFirstLetter.js";
-import "./index-4.js";
-import "./motion.js";
-import "./index-2.js";
-import "./index-14.js";
-import "./EditOutlined.js";
-import "./styleChecker.js";
-import "./index-5.js";
-import "./index-3.js";
-import "./CheckOutlined.js";
-import "./CopyOutlined.js";
-import "./SixteenByNineScaler.js";
-import "./index-20.js";
-import "./index-22.js";
-import "./index-1.js";
-import "./progress.js";
-import "./ElementIds.js";
-import "./SeasonTicketName.js";
-import "./useQuery.js";
-import "./___vite-browser-external_commonjs-proxy.js";
-import "./util-1.js";
-import "./util-2.js";
-import "./Shortcut.js";
-import "./Names.js";
-import "./useWillUnmount.js";
-import "./CircularProgress.js";
-import "./clsx.m.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
-import "./index-17.js";
-import "./use-force-update.js";
-import "./GimkitLiveQuestion.js";
-import "./Text.js";
-import "./getCloudinaryUrl.js";
-import "./LazyLatexRenderer.js";
-import "./Tooltip.js";
-import "./howler.js";
-import "./use-motion-value.js";
-import "./index-9.js";
-import "./index-23.js";
-import "./useIntervalWhen.js";
-import "./index-10.js";
-import "./move.js";
-import "./react-flip-move.es.js";
-import "./sounds.js";
-import "./App-5.js";
-import "./AnimatedBackground-2.js";
-import "./useDebouncedValue.js";
-import "./CloseCircleOutlined.js";
-import "./FillRemainingSpace.js";
-import "./index-24.js";
-var r = (t => (t.stopped = "stopped", t.playing = "playing", t.fadingOut = "fadingOut", t))(r || {});
-const A = t => {
-        if (P()) return "";
-        if (t.options.musicUrl) return g(t.options.musicUrl);
-        const o = t.options.presetMusicId;
-        return o !== "NONE" ? S("music/presets/" + o + ".mp3") : null
+    t as u
+} from "./AmIGameOwner.js";
+import {
+    wt as d
+} from "./App-42.js";
+import {
+    t as f
+} from "./SecondsToDuration.js";
+import {
+    t as p
+} from "./Consts.js";
+var m = function(e) {
+        return e.stopped = `stopped`, e.playing = `playing`, e.fadingOut = `fadingOut`, e
+    }({}),
+    h = t => {
+        if (l()) return ``;
+        if (t.options.musicUrl) return d(t.options.musicUrl);
+        let n = t.options.presetMusicId;
+        return n === `NONE` ? null : e(`music/presets/` + n + `.mp3`)
     },
-    u = t => t.options.musicUrl ? t.options.musicVolume : 25,
-    O = !1,
-    e = new Map,
-    p = new Map;
-class qt extends w {
-    constructor(o) {
-        if (super(o), this.onUpdate = () => {
-                if (!this.state.countdownActive && !this.state.countupActive) return;
-                const i = m.session.gameTime,
-                    s = this.state.countdownActive ? this.state.countdownEndTimestamp - i : i - this.state.countupStartTimestamp,
-                    d = Math.max(0, s / 1e3);
-                m.session.gameClockDuration = M(d)
-            }, this.onMasterVolumeChange = () => {
-                this.howl && this.howl.volume(a({
-                    volume: u(this) / 100,
-                    type: n.music
-                }))
-            }, this.onStateChange = i => {
-                i === "gameMusicState" && (this.state.gameMusicState === r.playing ? this.play() : this.state.gameMusicState === r.stopped ? this.stop() : this.state.gameMusicState === r.fadingOut && this.fadeOut()), i === "allowedToAddTimeToEndCountdown" && (m.session.canAddGameTime = this.state.allowedToAddTimeToEndCountdown)
-            }, this.onDestroy = i => {
-                var s;
-                i.isBeingReplaced || ((s = e.get(this.id)) == null || s.unload(), e.delete(this.id), p.delete(this.id))
-            }, l() && c(), f() && y()) {
-            if (!e.get(this.id)) {
-                const s = new T({
-                    src: [A(this)],
-                    preload: !0,
-                    loop: !0
-                });
-                e.set(this.id, s)
+    g = e => e.options.musicUrl ? e.options.musicVolume : 25,
+    _ = new Map,
+    v = new Map,
+    y = class extends c {
+        constructor(e) {
+            if (super(e), this.onUpdate = () => {
+                    if (!this.state.countdownActive && !this.state.countupActive) return;
+                    let e = i.session.gameTime,
+                        t = this.state.countdownActive ? this.state.countdownEndTimestamp - e : e - this.state.countupStartTimestamp,
+                        n = Math.max(0, t / 1e3);
+                    i.session.gameClockDuration = f(n)
+                }, this.onMasterVolumeChange = () => {
+                    this.howl && this.howl.volume(r({
+                        volume: g(this) / 100,
+                        type: n.music
+                    }))
+                }, this.onStateChange = e => {
+                    e === `gameMusicState` && (this.state.gameMusicState === m.playing ? this.play() : this.state.gameMusicState === m.stopped ? this.stop() : this.state.gameMusicState === m.fadingOut && this.fadeOut()), e === `allowedToAddTimeToEndCountdown` && (i.session.canAddGameTime = this.state.allowedToAddTimeToEndCountdown)
+                }, this.onDestroy = e => {
+                    if (!e.isBeingReplaced) {
+                        var t;
+                        (t = _.get(this.id)) == null || t.unload(), _.delete(this.id), v.delete(this.id)
+                    }
+                }, o() && a(), s() && u()) {
+                if (!_.get(this.id)) {
+                    let e = new t({
+                        src: [h(this)],
+                        preload: !0,
+                        loop: !0
+                    });
+                    _.set(this.id, e)
+                }
+                this.state.gameMusicState === m.playing && this.play(), this.state.gameMusicState === m.stopped && this.isPlaying && this.stop()
             }
-            this.state.gameMusicState === r.playing && this.play(), this.state.gameMusicState === r.stopped && this.isPlaying && this.stop()
+            o() && _.delete(this.id), i.session.canAddGameTime = this.state.allowedToAddTimeToEndCountdown
         }
-        l() && e.delete(this.id), m.session.canAddGameTime = this.state.allowedToAddTimeToEndCountdown
-    }
-    get howl() {
-        return e.get(this.id)
-    }
-    get isPlaying() {
-        return p.get(this.id) || !1
-    }
-    set isPlaying(o) {
-        p.set(this.id, o)
-    }
-    play() {
-        !this.howl || this.isPlaying || (this.howl.volume(0), this.howl.play(), this.isPlaying = !0, this.howl.fade(0, a({
-            volume: u(this) / 100,
-            type: n.music
-        }), h.fadeInTime))
-    }
-    stop() {
-        !this.howl || !this.isPlaying || (this.howl.stop(), this.isPlaying = !1)
-    }
-    fadeOut() {
-        !this.howl || !this.isPlaying || (this.howl.fade(this.howl.volume(), 0, h.fadeOutTime), this.isPlaying = !1)
-    }
-}
+        get howl() {
+            return _.get(this.id)
+        }
+        get isPlaying() {
+            return v.get(this.id) || !1
+        }
+        set isPlaying(e) {
+            v.set(this.id, e)
+        }
+        play() {
+            this.howl && !this.isPlaying && (this.howl.volume(0), this.howl.play(), this.isPlaying = !0, this.howl.fade(0, r({
+                volume: g(this) / 100,
+                type: n.music
+            }), p.fadeInTime))
+        }
+        stop() {
+            this.howl && this.isPlaying && (this.howl.stop(), this.isPlaying = !1)
+        }
+        fadeOut() {
+            this.howl && this.isPlaying && (this.howl.fade(this.howl.volume(), 0, p.fadeOutTime), this.isPlaying = !1)
+        }
+    };
 export {
-    qt as
+    y as
     default
 };

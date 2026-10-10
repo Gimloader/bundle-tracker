@@ -1,19 +1,19 @@
-const d = t => {
-        const n = r(t);
-        return n ? t.includes("/video/upload") ? `https://${o}/video/upload/${n}` : `https://${o}/image/upload/f_auto,fl_lossy,q_auto/${n}` : t
+var e = e => {
+        let r = t(e);
+        return r ? e.includes(`/video/upload`) ? `https://${n}/video/upload/${r}` : `https://${n}/image/upload/f_auto,fl_lossy,q_auto/${r}` : e
     },
-    r = t => {
-        if (!c.some(e => t.includes(e)) || t.includes(l) && !t.includes(`/${s}/`)) return null;
-        const n = t.split("/");
-        if (!n || !n.length || n.length < 2) return null;
-        const i = n[n.length - 2],
-            u = n[n.length - 1];
-        return !i || !u || !i.startsWith("v") ? null : `${i}/${u}`
+    t = e => {
+        if (!a.some(t => e.includes(t)) || e.includes(r) && !e.includes(`/${i}/`)) return null;
+        let t = e.split(`/`);
+        if (!t || !t.length || t.length < 2) return null;
+        let n = t[t.length - 2],
+            o = t[t.length - 1];
+        return !n || !o || !n.startsWith(`v`) ? null : `${n}/${o}`
     },
-    o = "media.gimkit.com",
-    l = "res.cloudinary.com",
-    s = "gimkit-production",
-    c = [o, l];
+    n = `media.gimkit.com`,
+    r = `res.cloudinary.com`,
+    i = `gimkit-production`,
+    a = [n, r];
 export {
-    d as g
+    e as t
 };

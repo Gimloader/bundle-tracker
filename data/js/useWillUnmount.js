@@ -1,12 +1,16 @@
 import {
-    r
-} from "./_index.js";
+    o as e
+} from "./rolldown-runtime.js";
+import {
+    t
+} from "./react-1.js";
+var n = e(t());
 
-function o(t) {
-    r.useEffect(function() {
-        return t
+function r(e) {
+    (0, n.useEffect)(function() {
+        return e
     }, [])
 }
 export {
-    o as u
+    r as t
 };

@@ -1,14 +1,16 @@
 import {
-    Q as l,
-    a as p
-} from "./useQuery.js";
+    y as e
+} from "./QueryClientProvider.js";
 import {
-    dG as P,
-    dH as M,
-    dI as b,
-    cG as x
-} from "./_index.js";
-class m extends l {
+    n as t,
+    r as n,
+    t as r
+} from "./infiniteQueryBehavior.js";
+import {
+    n as i,
+    r as a
+} from "./useQuery.js";
+var o = class extends a {
     constructor(e, t) {
         super(e, t)
     }
@@ -18,11 +20,11 @@ class m extends l {
     setOptions(e, t) {
         super.setOptions({
             ...e,
-            behavior: P()
+            behavior: n()
         }, t)
     }
     getOptimisticResult(e) {
-        return e.behavior = P(), super.getOptimisticResult(e)
+        return e.behavior = n(), super.getOptimisticResult(e)
     }
     fetchNextPage({
         pageParam: e,
@@ -32,7 +34,7 @@ class m extends l {
             ...t,
             meta: {
                 fetchMore: {
-                    direction: "forward",
+                    direction: `forward`,
                     pageParam: e
                 }
             }
@@ -46,37 +48,37 @@ class m extends l {
             ...t,
             meta: {
                 fetchMore: {
-                    direction: "backward",
+                    direction: `backward`,
                     pageParam: e
                 }
             }
         })
     }
-    createResult(e, t) {
-        var s, r, c, h, o, n;
-        const {
-            state: a
-        } = e, u = super.createResult(e, t), {
+    createResult(e, n) {
+        var i, a, o, s, c, l;
+        let {
+            state: u
+        } = e, d = super.createResult(e, n), {
             isFetching: f,
-            isRefetching: v
-        } = u, d = f && ((s = a.fetchMeta) == null || (r = s.fetchMore) == null ? void 0 : r.direction) === "forward", g = f && ((c = a.fetchMeta) == null || (h = c.fetchMore) == null ? void 0 : h.direction) === "backward";
+            isRefetching: p
+        } = d, m = f && ((i = u.fetchMeta) == null || (a = i.fetchMore) == null ? void 0 : a.direction) === `forward`, h = f && ((o = u.fetchMeta) == null || (s = o.fetchMore) == null ? void 0 : s.direction) === `backward`;
         return {
-            ...u,
+            ...d,
             fetchNextPage: this.fetchNextPage,
             fetchPreviousPage: this.fetchPreviousPage,
-            hasNextPage: b(t, (o = a.data) == null ? void 0 : o.pages),
-            hasPreviousPage: M(t, (n = a.data) == null ? void 0 : n.pages),
-            isFetchingNextPage: d,
-            isFetchingPreviousPage: g,
-            isRefetching: v && !d && !g
+            hasNextPage: r(n, (c = u.data) == null ? void 0 : c.pages),
+            hasPreviousPage: t(n, (l = u.data) == null ? void 0 : l.pages),
+            isFetchingNextPage: m,
+            isFetchingPreviousPage: h,
+            isRefetching: p && !m && !h
         }
     }
-}
+};
 
-function Q(i, e, t) {
-    const s = x(i, e, t);
-    return p(s, m)
+function s(t, n, r) {
+    let a = e(t, n, r);
+    return i(a, o)
 }
 export {
-    Q as u
+    s as t
 };

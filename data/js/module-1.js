@@ -1,0 +1,444 @@
+import {
+    o as e
+} from "./rolldown-runtime.js";
+import {
+    t
+} from "./react-1.js";
+var n = e(t()),
+    r = [],
+    i = function() {
+        return r.some(function(e) {
+            return e.activeTargets.length > 0
+        })
+    },
+    a = function() {
+        return r.some(function(e) {
+            return e.skippedTargets.length > 0
+        })
+    },
+    o = `ResizeObserver loop completed with undelivered notifications.`,
+    s = function() {
+        var e;
+        typeof ErrorEvent == `function` ? e = new ErrorEvent(`error`, {
+            message: o
+        }) : (e = document.createEvent(`Event`), e.initEvent(`error`, !1, !1), e.message = o), window.dispatchEvent(e)
+    },
+    c;
+(function(e) {
+    e.BORDER_BOX = `border-box`, e.CONTENT_BOX = `content-box`, e.DEVICE_PIXEL_CONTENT_BOX = `device-pixel-content-box`
+})(c || (c = {}));
+var l = function(e) {
+        return Object.freeze(e)
+    },
+    u = function() {
+        function e(e, t) {
+            this.inlineSize = e, this.blockSize = t, l(this)
+        }
+        return e
+    }(),
+    d = function() {
+        function e(e, t, n, r) {
+            return this.x = e, this.y = t, this.width = n, this.height = r, this.top = this.y, this.left = this.x, this.bottom = this.top + this.height, this.right = this.left + this.width, l(this)
+        }
+        return e.prototype.toJSON = function() {
+            var e = this;
+            return {
+                x: e.x,
+                y: e.y,
+                top: e.top,
+                right: e.right,
+                bottom: e.bottom,
+                left: e.left,
+                width: e.width,
+                height: e.height
+            }
+        }, e.fromRect = function(t) {
+            return new e(t.x, t.y, t.width, t.height)
+        }, e
+    }(),
+    f = function(e) {
+        return e instanceof SVGElement && `getBBox` in e
+    },
+    p = function(e) {
+        if (f(e)) {
+            var t = e.getBBox(),
+                n = t.width,
+                r = t.height;
+            return !n && !r
+        }
+        var i = e,
+            a = i.offsetWidth,
+            o = i.offsetHeight;
+        return !(a || o || e.getClientRects().length)
+    },
+    m = function(e) {
+        var t;
+        if (e instanceof Element) return !0;
+        var n = (t = e == null ? void 0 : e.ownerDocument) == null ? void 0 : t.defaultView;
+        return !!(n && e instanceof n.Element)
+    },
+    h = function(e) {
+        switch (e.tagName) {
+            case `INPUT`:
+                if (e.type !== `image`) break;
+            case `VIDEO`:
+            case `AUDIO`:
+            case `EMBED`:
+            case `OBJECT`:
+            case `CANVAS`:
+            case `IFRAME`:
+            case `IMG`:
+                return !0
+        }
+        return !1
+    },
+    g = typeof window < `u` ? window : {},
+    _ = new WeakMap,
+    v = /auto|scroll/,
+    y = /^tb|vertical/,
+    b = /msie|trident/i.test(g.navigator && g.navigator.userAgent),
+    x = function(e) {
+        return parseFloat(e || `0`)
+    },
+    S = function(e, t, n) {
+        return e === void 0 && (e = 0), t === void 0 && (t = 0), n === void 0 && (n = !1), new u((n ? t : e) || 0, (n ? e : t) || 0)
+    },
+    C = l({
+        devicePixelContentBoxSize: S(),
+        borderBoxSize: S(),
+        contentBoxSize: S(),
+        contentRect: new d(0, 0, 0, 0)
+    }),
+    w = function(e, t) {
+        if (t === void 0 && (t = !1), _.has(e) && !t) return _.get(e);
+        if (p(e)) return _.set(e, C), C;
+        var n = getComputedStyle(e),
+            r = f(e) && e.ownerSVGElement && e.getBBox(),
+            i = !b && n.boxSizing === `border-box`,
+            a = y.test(n.writingMode || ``),
+            o = !r && v.test(n.overflowY || ``),
+            s = !r && v.test(n.overflowX || ``),
+            c = r ? 0 : x(n.paddingTop),
+            u = r ? 0 : x(n.paddingRight),
+            m = r ? 0 : x(n.paddingBottom),
+            h = r ? 0 : x(n.paddingLeft),
+            g = r ? 0 : x(n.borderTopWidth),
+            w = r ? 0 : x(n.borderRightWidth),
+            T = r ? 0 : x(n.borderBottomWidth),
+            E = r ? 0 : x(n.borderLeftWidth),
+            D = h + u,
+            O = c + m,
+            k = E + w,
+            A = g + T,
+            j = s ? e.offsetHeight - A - e.clientHeight : 0,
+            M = o ? e.offsetWidth - k - e.clientWidth : 0,
+            N = i ? D + k : 0,
+            P = i ? O + A : 0,
+            F = r ? r.width : x(n.width) - N - M,
+            I = r ? r.height : x(n.height) - P - j,
+            L = F + D + M + k,
+            R = I + O + j + A,
+            z = l({
+                devicePixelContentBoxSize: S(Math.round(F * devicePixelRatio), Math.round(I * devicePixelRatio), a),
+                borderBoxSize: S(L, R, a),
+                contentBoxSize: S(F, I, a),
+                contentRect: new d(h, c, F, I)
+            });
+        return _.set(e, z), z
+    },
+    T = function(e, t, n) {
+        var r = w(e, n),
+            i = r.borderBoxSize,
+            a = r.contentBoxSize,
+            o = r.devicePixelContentBoxSize;
+        switch (t) {
+            case c.DEVICE_PIXEL_CONTENT_BOX:
+                return o;
+            case c.BORDER_BOX:
+                return i;
+            default:
+                return a
+        }
+    },
+    E = function() {
+        function e(e) {
+            var t = w(e);
+            this.target = e, this.contentRect = t.contentRect, this.borderBoxSize = l([t.borderBoxSize]), this.contentBoxSize = l([t.contentBoxSize]), this.devicePixelContentBoxSize = l([t.devicePixelContentBoxSize])
+        }
+        return e
+    }(),
+    D = function(e) {
+        if (p(e)) return 1 / 0;
+        for (var t = 0, n = e.parentNode; n;) t += 1, n = n.parentNode;
+        return t
+    },
+    O = function() {
+        var e = 1 / 0,
+            t = [];
+        r.forEach(function(n) {
+            if (n.activeTargets.length !== 0) {
+                var r = [];
+                n.activeTargets.forEach(function(t) {
+                    var n = new E(t.target),
+                        i = D(t.target);
+                    r.push(n), t.lastReportedSize = T(t.target, t.observedBox), i < e && (e = i)
+                }), t.push(function() {
+                    n.callback.call(n.observer, r, n.observer)
+                }), n.activeTargets.splice(0, n.activeTargets.length)
+            }
+        });
+        for (var n = 0, i = t; n < i.length; n++) {
+            var a = i[n];
+            a()
+        }
+        return e
+    },
+    k = function(e) {
+        r.forEach(function(t) {
+            t.activeTargets.splice(0, t.activeTargets.length), t.skippedTargets.splice(0, t.skippedTargets.length), t.observationTargets.forEach(function(n) {
+                n.isActive() && (D(n.target) > e ? t.activeTargets.push(n) : t.skippedTargets.push(n))
+            })
+        })
+    },
+    A = function() {
+        var e = 0;
+        for (k(e); i();) e = O(), k(e);
+        return a() && s(), e > 0
+    },
+    j, M = [],
+    N = function() {
+        return M.splice(0).forEach(function(e) {
+            return e()
+        })
+    },
+    P = function(e) {
+        if (!j) {
+            var t = 0,
+                n = document.createTextNode(``);
+            new MutationObserver(function() {
+                return N()
+            }).observe(n, {
+                characterData: !0
+            }), j = function() {
+                n.textContent = `${t?t--:t++}`
+            }
+        }
+        M.push(e), j()
+    },
+    F = function(e) {
+        P(function() {
+            requestAnimationFrame(e)
+        })
+    },
+    I = 0,
+    L = function() {
+        return !!I
+    },
+    R = 250,
+    z = {
+        attributes: !0,
+        characterData: !0,
+        childList: !0,
+        subtree: !0
+    },
+    B = [`resize`, `load`, `transitionend`, `animationend`, `animationstart`, `animationiteration`, `keyup`, `keydown`, `mouseup`, `mousedown`, `mouseover`, `mouseout`, `blur`, `focus`],
+    V = function(e) {
+        return e === void 0 && (e = 0), Date.now() + e
+    },
+    H = !1,
+    U = new(function() {
+        function e() {
+            var e = this;
+            this.stopped = !0, this.listener = function() {
+                return e.schedule()
+            }
+        }
+        return e.prototype.run = function(e) {
+            var t = this;
+            if (e === void 0 && (e = R), !H) {
+                H = !0;
+                var n = V(e);
+                F(function() {
+                    var r = !1;
+                    try {
+                        r = A()
+                    } finally {
+                        if (H = !1, e = n - V(), !L()) return;
+                        r ? t.run(1e3) : e > 0 ? t.run(e) : t.start()
+                    }
+                })
+            }
+        }, e.prototype.schedule = function() {
+            this.stop(), this.run()
+        }, e.prototype.observe = function() {
+            var e = this,
+                t = function() {
+                    return e.observer && e.observer.observe(document.body, z)
+                };
+            document.body ? t() : g.addEventListener(`DOMContentLoaded`, t)
+        }, e.prototype.start = function() {
+            var e = this;
+            this.stopped && (this.stopped = !1, this.observer = new MutationObserver(this.listener), this.observe(), B.forEach(function(t) {
+                return g.addEventListener(t, e.listener, !0)
+            }))
+        }, e.prototype.stop = function() {
+            var e = this;
+            this.stopped || (this.observer && this.observer.disconnect(), B.forEach(function(t) {
+                return g.removeEventListener(t, e.listener, !0)
+            }), this.stopped = !0)
+        }, e
+    }()),
+    W = function(e) {
+        !I && e > 0 && U.start(), I += e, !I && U.stop()
+    },
+    G = function(e) {
+        return !f(e) && !h(e) && getComputedStyle(e).display === `inline`
+    },
+    K = function() {
+        function e(e, t) {
+            this.target = e, this.observedBox = t || c.CONTENT_BOX, this.lastReportedSize = {
+                inlineSize: 0,
+                blockSize: 0
+            }
+        }
+        return e.prototype.isActive = function() {
+            var e = T(this.target, this.observedBox, !0);
+            return G(this.target) && (this.lastReportedSize = e), this.lastReportedSize.inlineSize !== e.inlineSize || this.lastReportedSize.blockSize !== e.blockSize
+        }, e
+    }(),
+    q = function() {
+        function e(e, t) {
+            this.activeTargets = [], this.skippedTargets = [], this.observationTargets = [], this.observer = e, this.callback = t
+        }
+        return e
+    }(),
+    J = new WeakMap,
+    Y = function(e, t) {
+        for (var n = 0; n < e.length; n += 1)
+            if (e[n].target === t) return n;
+        return -1
+    },
+    X = function() {
+        function e() {}
+        return e.connect = function(e, t) {
+            var n = new q(e, t);
+            J.set(e, n)
+        }, e.observe = function(e, t, n) {
+            var i = J.get(e),
+                a = i.observationTargets.length === 0;
+            Y(i.observationTargets, t) < 0 && (a && r.push(i), i.observationTargets.push(new K(t, n && n.box)), W(1), U.schedule())
+        }, e.unobserve = function(e, t) {
+            var n = J.get(e),
+                i = Y(n.observationTargets, t),
+                a = n.observationTargets.length === 1;
+            i >= 0 && (a && r.splice(r.indexOf(n), 1), n.observationTargets.splice(i, 1), W(-1))
+        }, e.disconnect = function(e) {
+            var t = this,
+                n = J.get(e);
+            n.observationTargets.slice().forEach(function(n) {
+                return t.unobserve(e, n.target)
+            }), n.activeTargets.splice(0, n.activeTargets.length)
+        }, e
+    }(),
+    ee = function() {
+        function e(e) {
+            if (arguments.length === 0) throw TypeError(`Failed to construct 'ResizeObserver': 1 argument required, but only 0 present.`);
+            if (typeof e != `function`) throw TypeError(`Failed to construct 'ResizeObserver': The callback provided as parameter 1 is not a function.`);
+            X.connect(this, e)
+        }
+        return e.prototype.observe = function(e, t) {
+            if (arguments.length === 0) throw TypeError(`Failed to execute 'observe' on 'ResizeObserver': 1 argument required, but only 0 present.`);
+            if (!m(e)) throw TypeError(`Failed to execute 'observe' on 'ResizeObserver': parameter 1 is not of type 'Element`);
+            X.observe(this, e, t)
+        }, e.prototype.unobserve = function(e) {
+            if (arguments.length === 0) throw TypeError(`Failed to execute 'unobserve' on 'ResizeObserver': 1 argument required, but only 0 present.`);
+            if (!m(e)) throw TypeError(`Failed to execute 'unobserve' on 'ResizeObserver': parameter 1 is not of type 'Element`);
+            X.unobserve(this, e)
+        }, e.prototype.disconnect = function() {
+            X.disconnect(this)
+        }, e.toString = function() {
+            return `function ResizeObserver () { [polyfill code] }`
+        }, e
+    }(),
+    Z = n.default[typeof document < `u` && document.createElement !== void 0 ? `useLayoutEffect` : `useEffect`],
+    Q = e => {
+        let t = n.useRef(e);
+        return n.useEffect(() => {
+            t.current = e
+        }), t
+    },
+    te = typeof window < `u` && `ResizeObserver` in window ? window.ResizeObserver : ee;
+
+function ne() {}
+
+function re(e, t) {
+    let n = ae(),
+        r = Q(t);
+    return Z(() => {
+        let t = !1,
+            i = e && `current` in e ? e.current : e;
+        if (!i) return ne;
+
+        function a(e, n) {
+            t || r.current(e, n)
+        }
+        return n.subscribe(i, a), () => {
+            t = !0, n.unsubscribe(i, a)
+        }
+    }, [e, n, r]), n.observer
+}
+
+function ie() {
+    let e = !1,
+        t = [],
+        n = new Map,
+        r = new te((r, i) => {
+            t = t.concat(r);
+
+            function a() {
+                let r = new Set;
+                for (let e = 0; e < t.length; e++) {
+                    if (r.has(t[e].target)) continue;
+                    r.add(t[e].target);
+                    let a = n.get(t[e].target);
+                    a == null || a.forEach(n => n(t[e], i))
+                }
+                t = [], e = !1
+            }
+            e || window.requestAnimationFrame(a), e = !0
+        });
+    return {
+        observer: r,
+        subscribe(e, t) {
+            r.observe(e);
+            let i = n.get(e) ?? [];
+            i.push(t), n.set(e, i)
+        },
+        unsubscribe(e, t) {
+            let i = n.get(e) ?? [];
+            if (i.length === 1) {
+                r.unobserve(e), n.delete(e);
+                return
+            }
+            let a = i.indexOf(t);
+            a !== -1 && i.splice(a, 1), n.set(e, i)
+        }
+    }
+}
+var $, ae = () => $ || ($ = ie()),
+    oe = (e, t) => {
+        let [r, i] = n.useState(() => {
+            let n = e && `current` in e ? e.current : e;
+            return n ? [n.offsetWidth, n.offsetHeight] : [(t == null ? void 0 : t.initialWidth) ?? 0, (t == null ? void 0 : t.initialHeight) ?? 0]
+        });
+        return Z(() => {
+            let t = e && `current` in e ? e.current : e;
+            t && i([t.offsetWidth, t.offsetHeight])
+        }, [e]), re(e, e => {
+            let t = e.target;
+            i([t.offsetWidth, t.offsetHeight])
+        }), r
+    };
+export {
+    Q as n, Z as r, oe as t
+};

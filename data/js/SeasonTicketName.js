@@ -1,11 +1,12 @@
-const e = {
-        name: "Season Ticket",
-        singularName: "ticket"
+var e = {
+        name: `Season Ticket`,
+        singularName: `ticket`
     },
-    a = {
-        seasonName: "Season",
-        seasonNumber: "1"
+    t = {
+        seasonYear: `2027`,
+        seasonName: `Season`,
+        seasonNumber: `1`
     };
 export {
-    e as S, a
+    t as n, e as t
 };

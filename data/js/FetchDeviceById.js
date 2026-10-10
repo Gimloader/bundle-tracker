@@ -1,0 +1,7 @@
+import {
+    t as e
+} from "./FetchScene.js";
+var t = t => e().worldManager.devices.getDeviceById(t);
+export {
+    t
+};

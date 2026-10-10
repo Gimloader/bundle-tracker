@@ -1,394 +1,351 @@
 import {
-    j as e,
-    F as w,
-    d as i,
-    r as h,
-    e as N,
-    dT as T
-} from "./_index.js";
+    o as e
+} from "./rolldown-runtime.js";
 import {
-    t as D,
-    a2 as L,
-    w as A,
-    z as F,
-    s as W,
-    u as $,
-    o as M,
-    a3 as P,
-    q as z,
-    y as B,
-    a4 as U,
-    a5 as K
-} from "./App-41.js";
+    t
+} from "./react-1.js";
 import {
-    s as g,
-    M as y,
-    n as _
-} from "./FixSpinePlugin.js";
+    t as n
+} from "./select.js";
 import {
-    S as V
+    t as r
+} from "./space.js";
+import {
+    t as i
+} from "./typography.js";
+import {
+    r as a
 } from "./SixteenByNineScaler.js";
 import {
-    S as q
-} from "./StopPropagation.js";
+    t as o
+} from "./jsx-runtime.js";
 import {
-    V as G,
-    C as v,
-    a as H
-} from "./Centered.js";
+    c as s,
+    l as c,
+    n as l,
+    s as u,
+    y as d
+} from "./_index.js";
 import {
-    F as C
-} from "./FontAwesomeIcon.js";
-import {
-    T as f
-} from "./index-14.js";
-import {
-    o as E
+    r as f
 } from "./mobxreact.esm.js";
 import {
-    F as J
-} from "./FetchDeviceName.js";
+    t as p
+} from "./FontAwesomeIcon.js";
 import {
-    D as Q
-} from "./TutorialConsts.js";
+    n as m,
+    t as h
+} from "./Centered.js";
 import {
-    C as X
+    n as g
 } from "./Button.js";
 import {
-    S as Y
-} from "./index-2.js";
+    t as _
+} from "./phaser.js";
 import {
-    E as Z,
-    T as ee
-} from "./ActionButton.js";
+    f as v,
+    g as y,
+    p as b,
+    t as x,
+    y as S
+} from "./stores-2.js";
 import {
-    u as te
-} from "./index-17.js";
+    t as C
+} from "./useStore.js";
 import {
-    m as I
-} from "./motion.js";
-import "./index-21.js";
-import "./QuizTypes.js";
-import "./MapModeType.js";
-import "./GetAssetPath.js";
-import "./playSound.js";
-import "./MapSound.js";
-import "./howler.js";
-import "./index-18.js";
-import "./context.js";
-import "./CapitalizeFirstLetter.js";
-import "./index-4.js";
-import "./index-5.js";
-import "./progress.js";
-import "./CheckOutlined.js";
-import "./ElementIds.js";
-import "./SeasonTicketName.js";
-import "./useQuery.js";
-import "./___vite-browser-external_commonjs-proxy.js";
-import "./util-1.js";
-import "./util-2.js";
-import "./Shortcut.js";
-import "./Names.js";
-import "./useWillUnmount.js";
-import "./index-3.js";
-import "./CircularProgress.js";
-import "./clsx.m.js";
-import "./inheritsLoose.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
-import "./GimkitLiveQuestion.js";
-import "./Text.js";
-import "./getCloudinaryUrl.js";
-import "./LazyLatexRenderer.js";
-import "./Tooltip.js";
-import "./polished.esm.js";
-import "./index-1.js";
-import "./use-motion-value.js";
-import "./index-9.js";
-import "./index-23.js";
-import "./useIntervalWhen.js";
-import "./index-10.js";
-import "./move.js";
-import "./react-flip-move.es.js";
-import "./sounds.js";
-import "./App-5.js";
-import "./AnimatedBackground-2.js";
-import "./useDebouncedValue.js";
-import "./CloseCircleOutlined.js";
-import "./MapStyle.js";
-import "./FillRemainingSpace.js";
-import "./index-24.js";
-import "./index-20.js";
-import "./index-22.js";
-import "./EditOutlined.js";
-import "./styleChecker.js";
-import "./CopyOutlined.js";
-import "./use-force-update.js";
-const ie = t => e.jsxs(re, {
-        onClick: t.readOnly ? void 0 : t.onClick,
-        readOnly: t.readOnly,
-        children: [e.jsx(oe, {
-            selected: t.selected,
-            children: t.selected ? e.jsx(C, {
-                name: "fas fa-check"
-            }) : null
-        }), e.jsx(f.Text, {
-            style: {
-                fontWeight: t.selected ? w.Bold : w.Normal
-            },
-            children: t.children
-        })]
-    }),
-    re = i(G)`
-  padding: 10px 20px;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.1);
-  transition: background 0.23s ease;
-  cursor: ${t=>t.readOnly?"not-allowed":"pointer"};
-  &:hover {
-    background: rgba(255, 255, 255, 0.17);
-  }
-`,
-    oe = i(v)`
-  height: 40px;
-  width: 40px;
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  border-radius: 50%;
-  margin-right: 12px;
-  background: ${t=>t.selected?"#269900":"transparent"};
-  flex-shrink: 0;
-  transition: background 0.18s ease;
-`,
-    R = t => e.jsxs(ae, {
-        children: [e.jsx(ce, {
-            children: e.jsx(C, {
-                name: "fas fa-plug"
+    r as w,
+    t as T
+} from "./setCurrentAction.js";
+import {
+    n as E
+} from "./TutorialConsts.js";
+import {
+    t as D
+} from "./CapitalizeFirstLetter.js";
+import {
+    t as O
+} from "./KeyShortcuts.js";
+import {
+    t as k
+} from "./createKeyListener.js";
+import {
+    L as A,
+    j,
+    ot as M
+} from "./App-42.js";
+import {
+    t as N
+} from "./FetchDeviceName.js";
+import {
+    t as P
+} from "./ReactionToMultipleProps.js";
+import {
+    t as F
+} from "./TerrainLayerNames.js";
+import {
+    Container as I,
+    Content as L
+} from "./App-57.js";
+var R = e(t()),
+    z = () => {
+        let {
+            me: {
+                removing: {
+                    tilesToRemove: e,
+                    deviceIdToRemove: t,
+                    wireIdToRemove: n
+                }
+            }
+        } = x, r, i, a;
+        if (e.length) {
+            if (r = D(j.terrain.singular), i = `Unknown ${r}`, e.length === 1) {
+                let t = x.world.terrain.tiles.get(e[0].id);
+                if (t) {
+                    let e = x.worldOptions.terrainOptions.find(e => e.id === t.terrain);
+                    e && (i = e.name), a = t.collides ? `Wall` : `Floor`
+                }
+            } else i = `Multiple ${D(j.terrain.singular)} Pieces`
+        }
+        if (t) {
+            r = D(j.device.singular), i = `Unknown ${r}`;
+            let e = x.world.devices.devices.get(t);
+            e && (e.deviceOption.id === E.prop && (r = D(j.prop.singular), i = `Unknown ${r}`), i = N(t))
+        }
+        return n && (r = D(j.wire.singular), i = r), !r || !i ? null : {
+            type: r,
+            name: i,
+            description: a
+        }
+    },
+    B = () => {
+        let [e, t] = R.useState(!1), [n, r] = R.useState(``), [i, a] = R.useState(``), [o, s] = R.useState(``);
+        return R.useEffect(() => {
+            let e = P([() => x.me.removing.tilesToRemove, () => x.me.removing.deviceIdToRemove, () => x.me.removing.wireIdToRemove], () => {
+                let e = z();
+                e ? (r(e.type), a(e.name), s(e.description || ``), t(!0)) : t(!1)
+            }, {
+                fireImmediately: !0
+            });
+            return () => e()
+        }, []), e ? {
+            type: n,
+            name: i,
+            description: o
+        } : null
+    },
+    V = e(_()),
+    H = o(),
+    U = 99,
+    W = 100,
+    G = f(() => {
+        let {
+            me: {
+                removing: e
+            }
+        } = C(), t = R.useRef(), i = R.useRef(), o = R.useRef(), s = () => {
+            var e, n, r, a, s, c;
+            t == null || (e = t.current) == null || (n = e.blur) == null || n.call(e), i == null || (r = i.current) == null || (a = r.blur) == null || a.call(r), o == null || (s = o.current) == null || (c = s.blur) == null || c.call(s)
+        }, c = e => {
+            let t = e === v.propsAndDevices ? `${D(j.prop.plural)} & ${D(j.device.plural)}` : e === v.tiles ? D(j.terrain.singular) : e === v.wires ? D(j.wire.plural) : e;
+            return (0, H.jsx)(n.Option, {
+                value: e,
+                children: t
+            }, `remove-options-mode-${e}`)
+        }, l = (e, t) => {
+            if (e === b.allLayers) return (0, H.jsx)(n.Option, {
+                ref: i,
+                value: U,
+                children: e
+            }, `remove-tiles-mode-${e}`);
+            if (e === b.topLayer) return (0, H.jsx)(n.Option, {
+                value: W,
+                children: e
+            }, `remove-tiles-mode-${e}`);
+            let r = `${e}-${t}`;
+            return (0, H.jsx)(n.Option, {
+                value: t,
+                children: t + ` - ` + F[t - 1] || `Layer`
+            }, `remove-tiles-mode-${r}`)
+        }, u = e => (0, H.jsx)(n.Option, {
+            value: e,
+            children: e
+        }, `remove-tiles-eraser-size-${e}`);
+        return (0, H.jsx)(a, {
+            className: `maxWidth`,
+            children: (0, H.jsxs)(r, {
+                className: `maxWidth`,
+                direction: `vertical`,
+                size: 13,
+                children: [(0, H.jsxs)(K, {
+                    children: [(0, H.jsx)(q, {
+                        children: `Eraser Mode:`
+                    }), (0, H.jsxs)(n, {
+                        ref: t,
+                        style: {
+                            width: 200
+                        },
+                        value: e.removingMode,
+                        onChange: t => {
+                            e.removingMode = t, s()
+                        },
+                        children: [c(v.everything), c(v.tiles), c(v.propsAndDevices), c(v.wires)]
+                    })]
+                }), e.removingMode === v.tiles ? (0, H.jsxs)(K, {
+                    children: [(0, H.jsx)(q, {
+                        children: `Layer:`
+                    }), (0, H.jsxs)(n, {
+                        ref: i,
+                        style: {
+                            width: 200
+                        },
+                        value: e.removingTilesMode === b.allLayers ? U : e.removingTilesMode === b.topLayer ? W : e.removingTilesLayer,
+                        onChange: t => {
+                            t === U ? e.removingTilesMode = b.allLayers : t === W ? e.removingTilesMode = b.topLayer : (e.removingTilesMode = b.layer, e.removingTilesLayer = t), s()
+                        },
+                        children: [l(b.topLayer), l(b.allLayers), Array.from([, , , , , ].keys()).map(e => l(b.layer, e + 1))]
+                    })]
+                }) : null, e.removingMode === v.tiles ? (0, H.jsxs)(K, {
+                    children: [(0, H.jsx)(q, {
+                        children: `Eraser Size:`
+                    }), (0, H.jsx)(n, {
+                        ref: o,
+                        style: {
+                            width: 200
+                        },
+                        value: e.removingTilesEraserSize,
+                        onChange: t => {
+                            e.removingTilesEraserSize = t, s()
+                        },
+                        children: Array.from([, , , ].keys()).map(e => u(e + 1))
+                    })]
+                }) : null]
             })
-        }), e.jsx(f.Text, {
-            style: {
-                color: X.White
-            },
-            children: t.children
-        })]
-    }),
-    ne = () => e.jsx(R, {
-        children: "When the wire repeater receives a pulse..."
-    }),
-    se = () => e.jsx(R, {
-        children: "Repeat the wire pulse!"
-    }),
-    ae = i(H).attrs({
-        className: "maxWidth"
-    })`
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
-  margin-top: 10px;
-  text-align: center;
-`,
-    ce = i.div`
-  font-size: 24px;
-  margin-bottom: 6px;
-`,
-    k = E(t => {
-        var o;
-        const a = !D() || !L(),
-            s = t.side === "left",
-            p = s ? t.wire.startDevice : t.wire.endDevice,
-            r = A(p),
-            c = ((o = r == null ? void 0 : r.deviceOption) == null ? void 0 : o.id) === Q.wireRepeater,
-            u = () => {
-                r && (g.me.editing.device.currentlyEditedDevice = {
-                    id: r.id,
-                    deviceOptionId: r.deviceOption.id
-                }, W(y.editingDevice))
-            },
-            x = h.useMemo(() => {
-                var d, l, b, j;
-                return (((j = (b = (l = (d = r == null ? void 0 : r.deviceOption) == null ? void 0 : d.wireConfig) == null ? void 0 : l[s ? "out" : "in"]) == null ? void 0 : b.connections) == null ? void 0 : j.map(n => ({
-                    id: n.id,
-                    name: n.name,
-                    minimumRoleLevel: n.minimumRoleLevel,
-                    maximumRoleLevel: n.maximumRoleLevel
-                }))) || []).filter(n => F(n.minimumRoleLevel, n.maximumRoleLevel)).map(n => ({
-                    id: n.id,
-                    name: n.name
-                }))
-            }, [p, s]);
-        return e.jsxs(me, {
-            onClick: q,
-            children: [e.jsx(de, {
-                children: e.jsx(le, {
-                    style: {
-                        color: N.White
-                    },
-                    level: 4,
-                    onClick: u,
-                    children: J(p)
-                })
-            }), c ? s ? e.jsx(ne, {}) : e.jsx(se, {}) : e.jsxs(e.Fragment, {
-                children: [e.jsx(pe, {
-                    children: e.jsx(f.Text, {
-                        italic: !0,
-                        children: s ? "When this event occurs..." : "Run this action..."
-                    })
-                }), e.jsx(Y, {
-                    direction: "vertical",
-                    size: 10,
-                    className: "maxWidth",
-                    children: x.map(m => {
-                        const d = m.id === (s ? t.wire.startConnection : t.wire.endConnection);
-                        return e.jsx(ie, {
-                            readOnly: a,
-                            onClick: () => {
-                                s ? t.modifyWire(l => ({
-                                    ...l,
-                                    startConnection: d ? void 0 : m.id
-                                })) : t.modifyWire(l => ({
-                                    ...l,
-                                    endConnection: d ? void 0 : m.id
-                                }))
-                            },
-                            selected: d,
-                            children: m.name
-                        }, m.id)
-                    })
-                })]
-            })]
         })
     }),
-    me = i.div.attrs({
-        className: "flex-column vc scroll-y light-shadow"
-    })`
-  padding: 25px;
-  background: rgba(48, 28, 86, 0.85);
-  border-radius: 10px;
-  width: 40%;
-  max-width: 400px;
-  max-height: 95%;
-`,
-    de = i.div`
-  text-align: center;
-  margin-bottom: 2px;
-`,
-    le = i(f.Title)`
-  cursor: pointer;
-  &:hover {
-    text-decoration: underline;
-  }
-`,
-    pe = i(v).attrs({
-        className: "maxWidth"
-    })`
-  margin-bottom: 20px;
-  text-align: center;
-`,
-    O = "rgba(255,255,255,0.8)",
-    xe = () => e.jsxs(ue, {
-        children: [e.jsx(he, {}), e.jsx(ge, {
-            children: e.jsx(C, {
-                name: "fas fa-caret-right"
+    K = c.div.attrs({
+        className: `maxWidth vc between flex`
+    })``,
+    q = e => (0, H.jsx)(i.Text, {
+        style: {
+            fontWeight: u.Bold,
+            color: g.White
+        },
+        children: e.children
+    }),
+    J = () => (0, H.jsxs)(Y, {
+        children: [(0, H.jsx)(X, {
+            children: (0, H.jsx)(p, {
+                name: `fas fa-eraser`
+            })
+        }), (0, H.jsx)(`div`, {
+            children: (0, H.jsx)(i.Text, {
+                style: {
+                    color: l.White
+                },
+                children: `Hover over anything and click to erase it!`
             })
         })]
     }),
-    ue = i(v)`
-  flex: 1;
-  padding: 0px 30px;
+    Y = c(m)``,
+    X = c.div`
+  font-size: 24px;
+  color: ${l.White};
 `,
-    he = i.div`
-  height: 4px;
-  flex: 1;
-  background: ${O};
-`,
-    ge = i.div`
-  flex-shrink: 0;
-  color: ${O};
-  font-size: 42px;
-  line-height: 1;
-`,
-    Mt = E(() => {
-        const {
-            world: {
-                wires: t
+    Z = e => {
+        let {
+            removalInfo: {
+                type: t,
+                name: n,
+                description: r
             }
-        } = $(), [a, s] = h.useState(t.wires.get(g.me.editing.wire.currentlyEditedWireId)), [p, r] = h.useState(a !== void 0), c = () => {
-            W(y.none)
-        };
-        te(c, 25, !p), M(_.Input.Keyboard.KeyCodes.ESC, c, [c]), P();
-        const u = x => {
-            if (B(), t.wires.has(a.id)) {
-                const o = x(a);
-                Z({
-                    event: ee.CONFIGURE_WIRE,
-                    wire: o
-                }), U(o), K({
-                    startDevice: o.startDevice,
-                    endDevice: o.endDevice,
-                    startConnection: o.startConnection,
-                    endConnection: o.endConnection
+        } = e;
+        return (0, H.jsxs)(Q, {
+            children: [(0, H.jsx)($, {
+                style: r ? {
+                    marginBottom: 10
+                } : void 0,
+                children: (0, H.jsx)(i.Text, {
+                    italic: !0,
+                    children: t
                 })
-            }
-        };
-        return h.useEffect(() => {
-            const x = T(() => g.world.wires.wires.get(g.me.editing.wire.currentlyEditedWireId), o => {
-                o ? (r(!0), s(o)) : r(!1)
+            }), (0, H.jsx)(`div`, {
+                children: (0, H.jsx)(i.Title, {
+                    style: {
+                        color: l.White
+                    },
+                    level: 4,
+                    children: n
+                })
+            }), r ? (0, H.jsx)(`div`, {
+                children: (0, H.jsx)(i.Text, {
+                    style: {
+                        marginTop: 2
+                    },
+                    children: r
+                })
+            }) : null]
+        })
+    },
+    Q = c(m).attrs({
+        className: `maxAll`
+    })``,
+    $ = c.div``,
+    ee = f(() => {
+        let e = B(),
+            t = () => {
+                T(S.none)
+            };
+        R.useEffect(() => {
+            let e = k(O.Removing.SwitchToAddingMode(), () => {
+                x.me.adding.mode = y.terrain, T(S.adding)
             });
-            return () => x()
-        }, []), a ? e.jsx(V, {
-            className: "maxAll",
-            children: e.jsx(fe, {
-                onClick: c,
-                children: e.jsxs(ve, {
-                    children: [e.jsx(k, {
-                        wire: a,
-                        side: "left",
-                        modifyWire: u
-                    }), e.jsx(xe, {}), e.jsx(k, {
-                        wire: a,
-                        side: "right",
-                        modifyWire: u
-                    }), e.jsx(z, {})]
-                })
+            return () => {
+                e()
+            }
+        }, []);
+        let n = w();
+        return R.useEffect(() => {
+            n || t()
+        }, [n, t]), M(V.default.Input.Keyboard.KeyCodes.ESC, t, [t]), (0, H.jsx)(I, {
+            children: (0, H.jsxs)(L, {
+                style: {
+                    paddingTop: 53
+                },
+                children: [(0, H.jsx)(A, {
+                    onClick: t,
+                    padding: 20,
+                    fontSize: 20
+                }), (0, H.jsx)(i.Title, {
+                    level: 2,
+                    style: {
+                        fontFamily: s.FugazOne,
+                        textTransform: `uppercase`,
+                        color: g.White
+                    },
+                    children: `Eraser`
+                }), (0, H.jsx)(te, {
+                    children: e ? (0, H.jsx)(Z, {
+                        removalInfo: e
+                    }) : (0, H.jsx)(J, {})
+                }), (0, H.jsx)(d, {
+                    style: {
+                        borderTopColor: `rgba(255,255,255,0.25)`
+                    }
+                }), (0, H.jsx)(G, {})]
             })
-        }) : null
+        })
     }),
-    S = .2,
-    fe = i(I.div).attrs({
-        className: "maxAll flex-center",
-        initial: {
-            background: "rgba(0,0,0,0)"
-        },
-        animate: {
-            background: "rgba(0,0,0,0.68)"
-        },
-        exit: {
-            background: "rgba(0,0,0,0)"
-        },
-        transition: {
-            duration: S
-        }
+    te = c(h).attrs({
+        className: `maxWidth`
     })`
-  position: relative;
-`,
-    ve = i(I.div).attrs({
-        className: "maxAll flex vc",
-        initial: {
-            opacity: 0
-        },
-        animate: {
-            opacity: 1
-        },
-        exit: {
-            opacity: 0
-        },
-        transition: {
-            duration: S
-        }
-    })`
-  padding: 25px;
-  backdrop-filter: blur(3px);
+  margin-top: 10px;
+  padding: 20px;
+  min-height: 190px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 2px dashed rgba(255, 255, 255, 0.5);
 `;
 export {
-    Mt as
+    ee as
     default
 };

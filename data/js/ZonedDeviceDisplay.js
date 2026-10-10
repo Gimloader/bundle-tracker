@@ -1,17 +1,15 @@
 import {
-    ao as s,
-    aP as e
-} from "./App-41.js";
+    n as e
+} from "./isVersion.js";
 import {
-    i
-} from "./FixSpinePlugin.js";
-const o = () => i() ? s().zonedDeviceDisplay : e.bordersOnly,
-    r = n => o() !== e.fullyHidden,
-    d = n => o() !== e.bordersOnly,
-    l = {
-        shouldShow: r,
-        shouldShowInnerZone: d
+    _t as t,
+    vt as n
+} from "./App-42.js";
+var r = () => e() ? n().zonedDeviceDisplay : t.bordersOnly,
+    i = {
+        shouldShow: e => r() !== t.fullyHidden,
+        shouldShowInnerZone: e => r() !== t.bordersOnly
     };
 export {
-    l as Z
+    i as t
 };

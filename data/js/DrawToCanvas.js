@@ -1,0 +1,109 @@
+var e = {
+        editor: {
+            baseSize: 1024,
+            supportRetina: !0,
+            borderColor: `#2C3E50`,
+            borderWidth: 16,
+            fillColor: `#4A90E2`,
+            maxHistory: 50
+        },
+        pathWidth: 16,
+        maxBorderWidth: 64,
+        iconSize: 100,
+        maxDataSize: 10058,
+        emptyDataSize: 58
+    },
+    t = function(e) {
+        return e.path = `path`, e.circle = `circle`, e.rect = `rect`, e.line = `line`, e
+    }({}),
+    n = e => {
+        let {
+            ctx: t,
+            shapes: n,
+            fillColor: i,
+            borderColor: a,
+            borderWidth: o,
+            scale: s,
+            currentShape: c,
+            shiftX: l,
+            shiftY: u
+        } = e;
+        r({
+            ctx: t,
+            shapes: n,
+            color: a,
+            borderWidth: o,
+            scale: s,
+            shiftX: l,
+            shiftY: u,
+            currentShape: c
+        }), i !== a && r({
+            ctx: t,
+            shapes: n,
+            color: i,
+            borderWidth: 0,
+            scale: s,
+            shiftX: l,
+            shiftY: u,
+            currentShape: c
+        })
+    },
+    r = n => {
+        var r, i, a, o;
+        let {
+            ctx: s,
+            shapes: c,
+            color: l,
+            borderWidth: u,
+            scale: d,
+            currentShape: f
+        } = n, p = e.pathWidth, m = n.shiftX ?? 0, h = n.shiftY ?? 0;
+        s.lineCap = `round`, s.lineJoin = `round`;
+        let g = e => {
+                if (e.length) {
+                    s.beginPath();
+                    for (let t = 0; t < e.length; t += 2) {
+                        let n = (e[t] + m) * d,
+                            r = (e[t + 1] + h) * d;
+                        t === 0 ? s.moveTo(n, r) : s.lineTo(n, r)
+                    }
+                    s.strokeStyle = l, s.lineWidth = (p + u) * d, s.stroke()
+                }
+            },
+            _ = ([e, t, n]) => {
+                let r = (e + m) * d,
+                    i = (t + h) * d,
+                    a = (n + u / 2) * d;
+                s.beginPath(), s.arc(r, i, a, 0, 2 * Math.PI), s.fillStyle = l, s.fill(), s.restore()
+            },
+            v = ([e, t, n, r]) => {
+                let i = (e + m) * d,
+                    a = (t + h) * d,
+                    o = n * d,
+                    c = r * d;
+                s.beginPath(), u > 0 && (s.strokeStyle = l, s.lineWidth = u * d, s.strokeRect(i, a, o, c)), s.fillStyle = l, s.fillRect(i, a, o, c)
+            },
+            y = ([e, t, n, r]) => {
+                let i = (e + m) * d,
+                    a = (t + h) * d,
+                    o = (n + m) * d,
+                    c = (r + h) * d;
+                s.beginPath(), s.moveTo(i, a), s.lineTo(o, c), s.strokeStyle = l, s.lineWidth = (p + u) * d, s.stroke(), s.restore()
+            };
+        if ((r = c.paths) == null || r.forEach(g), (i = c.circles) == null || i.forEach(_), (a = c.rects) == null || a.forEach(v), (o = c.lines) == null || o.forEach(y), !f || !f.start || !f.current) return;
+        let b = f.path && f.path.length > 0,
+            x = f.type === t.path && b,
+            S = f.type === t.circle,
+            C = f.type === t.rect,
+            w = f.type === t.line;
+        if (x || S || C || w) {
+            if (x) g(f.path);
+            else if (S) {
+                let e = Phaser.Math.Distance.BetweenPoints(f.start, f.current);
+                _([f.start.x, f.start.y, e])
+            } else C ? v([Math.min(f.start.x, f.current.x), Math.min(f.start.y, f.current.y), Math.max(.01, Math.abs(f.current.x - f.start.x)), Math.max(.01, Math.abs(f.current.y - f.start.y))]) : w && y([f.start.x, f.start.y, f.current.x, f.current.y])
+        }
+    };
+export {
+    t as n, e as r, n as t
+};

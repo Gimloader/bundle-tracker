@@ -1,6 +1,6 @@
-const a = o => {
-    o == null || o.stopPropagation()
+var e = e => {
+    e == null || e.stopPropagation()
 };
 export {
-    a as S
+    e as t
 };

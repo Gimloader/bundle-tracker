@@ -1,12 +1,13 @@
 import {
-    h as g
+    t as e
 } from "./howler.js";
-const i = "map-settings",
+var t = e(),
+    n = `map-settings`,
     r = new Set,
-    p = e => (r.add(e), () => {
+    i = e => (r.add(e), () => {
         r.delete(e)
     }),
-    n = {
+    a = {
         renderingQuality: null,
         simpleCharacters: !1,
         otherPlayerTrails: !0,
@@ -19,73 +20,72 @@ const i = "map-settings",
         largeFontMode: !1,
         readToMe: !1
     },
-    m = Object.keys(n),
-    h = () => {
+    o = Object.keys(a),
+    s = (() => {
         let e = {};
         try {
-            const s = localStorage.getItem(i);
-            if (s === null) {
-                const t = f => {
-                    const u = Number(localStorage.getItem(f) ?? 1);
-                    return Number.isFinite(u) ? Math.max(0, Math.min(1, u)) : 1
+            let t = localStorage.getItem(n);
+            if (t === null) {
+                let t = e => {
+                    let t = Number(localStorage.getItem(e) ?? 1);
+                    return Number.isFinite(t) ? Math.max(0, Math.min(1, t)) : 1
                 };
                 e = {
-                    musicVolume: t("map-music-volume"),
-                    soundEffectVolume: t("map-sound-effect-volume"),
-                    readToMe: !!localStorage.getItem("read-to-me")
+                    musicVolume: t(`map-music-volume`),
+                    soundEffectVolume: t(`map-sound-effect-volume`),
+                    readToMe: !!localStorage.getItem(`read-to-me`)
                 }
             } else {
-                const t = JSON.parse(s);
-                t && typeof t == "object" && !Array.isArray(t) && (e = t)
+                let n = JSON.parse(t);
+                n && typeof n == `object` && !Array.isArray(n) && (e = n)
             }
         } catch {}
-        const o = {
-            ...n
+        let t = {
+            ...a
         };
-        return m.forEach(s => {
-            const t = e[s];
-            (typeof t == "boolean" && typeof n[s] == "boolean" || typeof t == "number" && Number.isFinite(t) && (s === "renderingQuality" || typeof n[s] == "number")) && Object.assign(o, {
-                [s]: t
+        return o.forEach(n => {
+            let r = e[n];
+            (typeof r == `boolean` && typeof a[n] == `boolean` || typeof r == `number` && Number.isFinite(r) && (n === `renderingQuality` || typeof a[n] == `number`)) && Object.assign(t, {
+                [n]: r
             })
-        }), o
+        }), t
+    })(),
+    c = () => {
+        try {
+            localStorage.setItem(n, JSON.stringify(s))
+        } catch {}
     };
-let a = h();
-const c = () => {
-    try {
-        localStorage.setItem(i, JSON.stringify(a))
-    } catch {}
-};
 c();
-const b = () => a,
-    d = e => a[e],
-    M = (e, o) => {
-        a[e] !== o && (a = {
-            ...a,
-            [e]: o
-        }, c(), r.forEach(s => s()))
+var l = () => s,
+    u = e => s[e],
+    d = (e, t) => {
+        s[e] !== t && (s = {
+            ...s,
+            [e]: t
+        }, c(), r.forEach(e => e()))
     },
-    y = () => m.some(e => a[e] !== n[e]),
-    E = () => {
-        a = {
-            ...n
+    f = () => o.some(e => s[e] !== a[e]),
+    p = () => {
+        s = {
+            ...a
         }, c(), r.forEach(e => e())
     },
-    l = new Set;
-p(() => {
-    const e = d("muted");
-    l.forEach(o => o.mute(e))
+    m = new Set;
+i(() => {
+    let e = u(`muted`);
+    m.forEach(t => t.mute(e))
 });
-class w extends g.Howl {
-    constructor(o) {
+var h = class extends t.Howl {
+    constructor(e) {
         super({
-            ...o,
-            mute: d("muted")
-        }), l.add(this)
+            ...e,
+            mute: u(`muted`)
+        }), m.add(this)
     }
     unload() {
-        return l.delete(this), super.unload()
+        return m.delete(this), super.unload()
     }
-}
+};
 export {
-    w as M, b as a, M as b, d as g, y as h, E as r, p as s
+    p as a, f as i, u as n, d as o, l as r, i as s, h as t
 };

@@ -1,12 +1,12 @@
-const A = "CLASSIC",
-    s = "TEAMS",
-    E = "THANOS",
-    S = "BOSS_BATTLE",
-    T = "HUMAN_ZOMBIE_DEFENDING_HOMEBASE",
-    a = "LAVA",
-    o = "IMPOSTER",
-    t = "DRAW",
-    M = "PARDY";
+var e = `CLASSIC`,
+    t = `TEAMS`,
+    n = `THANOS`,
+    r = `BOSS_BATTLE`,
+    i = `HUMAN_ZOMBIE_DEFENDING_HOMEBASE`,
+    a = `LAVA`,
+    o = `IMPOSTER`,
+    s = `DRAW`,
+    c = `PARDY`;
 export {
-    S as B, A as C, t as D, T as H, o as I, a as L, M as P, s as T, E as a
+    o as a, t as c, i, n as l, e as n, a as o, s as r, c as s, r as t
 };

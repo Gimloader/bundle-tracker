@@ -1,19 +1,27 @@
+import "./rolldown-runtime.js";
 import {
-    j as i,
-    d as t
+    t as e
+} from "./react-1.js";
+import {
+    t
+} from "./jsx-runtime.js";
+import {
+    l as n
 } from "./_index.js";
-const s = a => i.jsxs(e, {
-        children: [i.jsx("div", {
-            className: "area",
-            children: i.jsxs("ul", {
-                className: "circles",
-                children: [i.jsx("li", {}), i.jsx("li", {}), i.jsx("li", {}), i.jsx("li", {}), i.jsx("li", {}), i.jsx("li", {}), i.jsx("li", {}), i.jsx("li", {}), i.jsx("li", {}), i.jsx("li", {})]
+e();
+var r = t(),
+    i = e => (0, r.jsxs)(a, {
+        children: [(0, r.jsx)(`div`, {
+            className: `area`,
+            children: (0, r.jsxs)(`ul`, {
+                className: `circles`,
+                children: [(0, r.jsx)(`li`, {}), (0, r.jsx)(`li`, {}), (0, r.jsx)(`li`, {}), (0, r.jsx)(`li`, {}), (0, r.jsx)(`li`, {}), (0, r.jsx)(`li`, {}), (0, r.jsx)(`li`, {}), (0, r.jsx)(`li`, {}), (0, r.jsx)(`li`, {}), (0, r.jsx)(`li`, {})]
             })
-        }), i.jsx(l, {
-            children: a.children
+        }), (0, r.jsx)(o, {
+            children: e.children
         })]
     }),
-    e = t.div`
+    a = n.div`
   flex: 1;
   height: 100%;
   width: 100%;
@@ -137,14 +145,14 @@ const s = a => i.jsxs(e, {
     }
   }
 `,
-    l = t.div.attrs({
-        className: "maxAll"
+    o = n.div.attrs({
+        className: `maxAll`
     })`
   position: absolute;
   top: 0;
   left: 0;
 `;
 export {
-    s as
+    i as
     default
 };

@@ -1,0 +1,10 @@
+import {
+    t as e
+} from "./stores-2.js";
+var t = function(e) {
+        return e.limit = `limit`, e.noMemory = `noMemory`, e.codeGridPerDeviceLimit = `codeGridPerDeviceLimit`, e
+    }({}),
+    n = t => e.memorySystem.usedMemoryCost + t.memory <= e.memorySystem.maxUsedMemory;
+export {
+    t as n, n as t
+};

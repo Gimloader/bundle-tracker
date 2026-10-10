@@ -1,35 +1,43 @@
+import "./rolldown-runtime.js";
 import {
-    j as i,
-    q as s
-} from "./_index.js";
+    S as e
+} from "./utils.js";
 import {
-    c as e
+    t
+} from "./react-1.js";
+import {
+    t as n
+} from "./space.js";
+import {
+    t as r
+} from "./jsx-runtime.js";
+import {
+    r as i
 } from "./ReportAccuracyMeter.js";
-import {
-    S as n
-} from "./index-2.js";
-const p = t => {
-    var a;
-    return i.jsxs("div", {
-        children: [i.jsxs("div", {
-            style: {
-                fontStyle: "italic"
-            },
-            children: [t.participants, " ", s("participant", t.participants)]
-        }), (a = t.groups) != null && a.length ? i.jsx(n, {
-            direction: "horizontal",
-            wrap: !0,
-            size: "small",
-            style: {
-                marginTop: "0.3em"
-            },
-            children: t.groups.map(r => i.jsx(e, {
-                to: `/class/${r._id}`,
-                children: r.name
-            }, t.reportId + r._id))
-        }) : null]
-    })
-};
+t();
+var a = r(),
+    o = t => {
+        var r;
+        return (0, a.jsxs)(`div`, {
+            children: [(0, a.jsxs)(`div`, {
+                style: {
+                    fontStyle: `italic`
+                },
+                children: [t.participants, ` `, e(`participant`, t.participants)]
+            }), (r = t.groups) != null && r.length ? (0, a.jsx)(n, {
+                direction: `horizontal`,
+                wrap: !0,
+                size: `small`,
+                style: {
+                    marginTop: `0.3em`
+                },
+                children: t.groups.map(e => (0, a.jsx)(i, {
+                    to: `/class/${e._id}`,
+                    children: e.name
+                }, t.reportId + e._id))
+            }) : null]
+        })
+    };
 export {
-    p as R
+    o as t
 };

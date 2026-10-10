@@ -1,567 +1,424 @@
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/App-73.js", "assets/rolldown-runtime.js", "assets/utils.js", "assets/dist-1.js", "assets/react-1.js", "assets/modal.js", "assets/assertThisInitialized.js", "assets/Compact.js", "assets/color.js", "assets/ContextIsolator.js", "assets/dist-2.js", "assets/wrapNativeSuper.js", "assets/InfoCircleFilled.js", "assets/compact-item.js", "assets/useLocale.js", "assets/useCSSVarCls.js", "assets/pickAttrs.js", "assets/button.js", "assets/PurePanel.js", "assets/Company.js", "assets/Paths.js", "assets/decorate.js", "assets/jsx-runtime.js", "assets/space.js", "assets/ShopItem.js", "assets/noop.js", "assets/useQuery.js", "assets/QueryClientProvider.js", "assets/_index.js", "assets/dist-3.js", "assets/spin.js", "assets/queryClient.js", "assets/infiniteQueryBehavior.js", "assets/index-Tu04tXLf.css", "assets/TrackEvent.js", "assets/TrackPostHogEvent.js", "assets/GetAssetPath.js", "assets/Navigation.js", "assets/SeasonTicketName.js", "assets/App-74.js", "assets/FontAwesomeIcon.js", "assets/Centered.js", "assets/Names.js", "assets/Button.js", "assets/polished.esm.js", "assets/inheritsLoose.js", "assets/lodash.js", "assets/playSound.js", "assets/MapSound.js", "assets/howler.js", "assets/confetti.js", "assets/AccessibleAnchor.js", "assets/OwnsSeasonTicket.js", "assets/Benefits.js", "assets/App-75.js", "assets/dropdown.js", "assets/tooltip.js", "assets/es-1.js", "assets/es-2.js", "assets/collapse.js", "assets/move.js", "assets/es-3.js", "assets/EllipsisOutlined.js", "assets/useDebouncedValue.js", "assets/module-1.js", "assets/CircularProgress.js", "assets/clsx.m.js", "assets/App-76.js", "assets/useIntervalWhen.js", "assets/useWillUnmount.js", "assets/Pack.js", "assets/App-77.js", "assets/AnimatePresence.js", "assets/motion.js", "assets/use-force-update.js", "assets/toNumber.js", "assets/toInteger.js", "assets/use-motion-value.js", "assets/use-transform.js"]))) => i.map(i => d[i]);
 import {
-    r as l,
-    I as Q,
-    _ as U,
-    j as t,
-    T as G,
-    d as o,
-    u as V,
-    b as Y,
-    e as c,
-    F as y,
-    B as b,
-    y as A,
-    z as J,
-    D as X,
-    S as Z
+    o as e
+} from "./rolldown-runtime.js";
+import {
+    O as t,
+    t as n,
+    x as r,
+    y as i
+} from "./utils.js";
+import {
+    t as a
+} from "./react-1.js";
+import {
+    a as o
+} from "./InfoCircleFilled.js";
+import {
+    t as s
+} from "./space.js";
+import {
+    t as c
+} from "./jsx-runtime.js";
+import {
+    a as l,
+    c as u,
+    h as d,
+    l as f,
+    n as p,
+    s as m,
+    v as h
 } from "./_index.js";
 import {
-    S as ee
-} from "./App-4.js";
+    t as g
+} from "./GetAssetPath.js";
 import {
-    F as te
-} from "./FontAwesomeIcon.js";
+    a as _,
+    s as v,
+    u as y
+} from "./Navigation.js";
 import {
-    A as T
-} from "./AccessibleAnchor.js";
+    n as b,
+    t as x
+} from "./Centered.js";
 import {
-    C as L
-} from "./CapitalizeFirstLetter.js";
+    t as S
+} from "./Names.js";
 import {
-    g as ae
-} from "./getCloudinaryUrl.js";
+    n as C,
+    t as ee
+} from "./SeasonTicketName.js";
 import {
-    S as W
-} from "./index-2.js";
+    t as te
+} from "./SeasonTicketInlineUpsell.js";
 import {
-    a as re
-} from "./Shortcut.js";
-import {
-    c as se
-} from "./Language.js";
-import {
-    o as ne
-} from "./EducatorSpecificInfoStage.js";
-import {
-    R as oe
-} from "./index-13.js";
-import {
-    S as F
-} from "./index-8.js";
-import {
-    P as ie
-} from "./index-20.js";
-import {
-    R as le
-} from "./index-3.js";
-import {
-    u as ce
-} from "./useInfiniteQuery.js";
-import {
-    u as de
-} from "./useQuery.js";
-var ue = {
-        icon: {
-            tag: "svg",
-            attrs: {
-                viewBox: "64 64 896 896",
-                focusable: "false"
-            },
-            children: [{
-                tag: "path",
-                attrs: {
-                    d: "M924.8 625.7l-65.5-56c3.1-19 4.7-38.4 4.7-57.8s-1.6-38.8-4.7-57.8l65.5-56a32.03 32.03 0 009.3-35.2l-.9-2.6a443.74 443.74 0 00-79.7-137.9l-1.8-2.1a32.12 32.12 0 00-35.1-9.5l-81.3 28.9c-30-24.6-63.5-44-99.7-57.6l-15.7-85a32.05 32.05 0 00-25.8-25.7l-2.7-.5c-52.1-9.4-106.9-9.4-159 0l-2.7.5a32.05 32.05 0 00-25.8 25.7l-15.8 85.4a351.86 351.86 0 00-99 57.4l-81.9-29.1a32 32 0 00-35.1 9.5l-1.8 2.1a446.02 446.02 0 00-79.7 137.9l-.9 2.6c-4.5 12.5-.8 26.5 9.3 35.2l66.3 56.6c-3.1 18.8-4.6 38-4.6 57.1 0 19.2 1.5 38.4 4.6 57.1L99 625.5a32.03 32.03 0 00-9.3 35.2l.9 2.6c18.1 50.4 44.9 96.9 79.7 137.9l1.8 2.1a32.12 32.12 0 0035.1 9.5l81.9-29.1c29.8 24.5 63.1 43.9 99 57.4l15.8 85.4a32.05 32.05 0 0025.8 25.7l2.7.5a449.4 449.4 0 00159 0l2.7-.5a32.05 32.05 0 0025.8-25.7l15.7-85a350 350 0 0099.7-57.6l81.3 28.9a32 32 0 0035.1-9.5l1.8-2.1c34.8-41.1 61.6-87.5 79.7-137.9l.9-2.6c4.5-12.3.8-26.3-9.3-35zM788.3 465.9c2.5 15.1 3.8 30.6 3.8 46.1s-1.3 31-3.8 46.1l-6.6 40.1 74.7 63.9a370.03 370.03 0 01-42.6 73.6L721 702.8l-31.4 25.8c-23.9 19.6-50.5 35-79.3 45.8l-38.1 14.3-17.9 97a377.5 377.5 0 01-85 0l-17.9-97.2-37.8-14.5c-28.5-10.8-55-26.2-78.7-45.7l-31.4-25.9-93.4 33.2c-17-22.9-31.2-47.6-42.6-73.6l75.5-64.5-6.5-40c-2.4-14.9-3.7-30.3-3.7-45.5 0-15.3 1.2-30.6 3.7-45.5l6.5-40-75.5-64.5c11.3-26.1 25.6-50.7 42.6-73.6l93.4 33.2 31.4-25.9c23.7-19.5 50.2-34.9 78.7-45.7l37.9-14.3 17.9-97.2c28.1-3.2 56.8-3.2 85 0l17.9 97 38.1 14.3c28.7 10.8 55.4 26.2 79.3 45.8l31.4 25.8 92.8-32.9c17 22.9 31.2 47.6 42.6 73.6L781.8 426l6.5 39.9zM512 326c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm79.2 255.2A111.6 111.6 0 01512 614c-29.9 0-58-11.7-79.2-32.8A111.6 111.6 0 01400 502c0-29.9 11.7-58 32.8-79.2C454 401.6 482.1 390 512 390c29.9 0 58 11.6 79.2 32.8A111.6 111.6 0 01624 502c0 29.9-11.7 58-32.8 79.2z"
-                }
-            }]
-        },
-        name: "setting",
-        theme: "outlined"
-    },
-    ge = function(a, n) {
-        return l.createElement(Q, U({}, a, {
-            ref: n,
-            icon: ue
-        }))
-    },
-    me = l.forwardRef(ge);
-const xe = e => {
-        var a, n, i, r;
-        return t.jsxs(t.Fragment, {
-            children: [e.title ? t.jsx(G, {
-                title: e.title
-            }) : null, t.jsxs(he, {
-                style: (a = e.styles) == null ? void 0 : a.container,
-                className: (n = e.classNames) == null ? void 0 : n.container,
-                children: [e.noHeader ? null : t.jsx(ee, {
-                    includeSpacer: !0,
-                    theme: e.headerTheme
-                }), t.jsx(fe, {
-                    style: (i = e.styles) == null ? void 0 : i.content,
-                    className: (r = e.classNames) == null ? void 0 : r.content,
-                    children: e.children
-                })]
-            })]
-        })
-    },
-    he = o.div.attrs({
-        className: "flex-column"
-    })`
-  flex: 1;
+    t as w
+} from "./CircularProgress.js";
+var T = e(a()),
+    E = f.div`
+  padding: 30px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.09);
+  border: 4px solid ${p.White};
 `,
-    fe = o.div.attrs({
-        className: "maxWidth flex-column"
-    })`
-  flex: 1;
-`,
-    ye = e => e.startsWith("https://images.unsplash.com") ? e.split("?")[0] + "?w=1000" : ae(e),
-    f = {
-        kit: {
-            width: 350,
-            height: 350,
-            gap: 30
+    D = e => {
+        if (e.type === y.character) {
+            let t = e.id.replace(`character_`, ``);
+            return g(`characters/spine/preview/${t}.png`)
         }
+        if (e.type === y.trail) {
+            let t = e.id.replace(/^trail_/, ``);
+            return g(`trails/${t}/preview.png`)
+        }
+        if (e.type === y.sticker) {
+            let t = e.id.replace(/^sticker_/, ``);
+            return g(`stickers/${t}.png`)
+        }
+        return `/`
     },
-    je = new Intl.NumberFormat("en", {
-        notation: "compact"
-    }),
-    v = e => t.jsxs(Ce, {
-        children: [t.jsx(te, {
-            name: `far ${e.icon}`
-        }), t.jsx("span", {
-            style: {
-                marginLeft: 4
-            },
-            children: e.text
-        })]
-    }),
-    ve = e => {
-        const [a, n, i] = V(!1), r = ye(e.image);
-        return t.jsx(T, {
-            to: `/view/${e.id}`,
-            style: {
-                textDecoration: "none"
-            },
-            children: t.jsxs(pe, {
-                className: "maxWidth lightShadow mediumShadowOnHover",
-                onMouseEnter: n,
-                onMouseLeave: i,
-                children: [t.jsx(be, {
-                    $imageUrl: r,
-                    $isHovering: a
-                }), t.jsxs("div", {
-                    className: "maxWidth",
-                    style: {
-                        background: "rgba(0,0,0,0.4)",
-                        backdropFilter: "blur(10px)",
-                        padding: 18
-                    },
-                    children: [t.jsx(Se, {
-                        children: e.title
-                    }), t.jsx(we, {
-                        children: L(e.creatorName)
-                    }), t.jsxs(W, {
-                        direction: "horizontal",
-                        size: 16,
-                        style: {
-                            marginTop: 10
-                        },
-                        children: [t.jsx(v, {
-                            icon: "fa-question-circle",
-                            text: `${e.questionCount} questions`
-                        }), e.playCount > 50 ? t.jsx(v, {
-                            icon: "fa-play",
-                            text: `${je.format(e.playCount)} plays`
-                        }) : null, t.jsx(v, {
-                            icon: "fa-calendar",
-                            text: `${L(Y(e.createdAt).fromNow())}`
-                        })]
-                    })]
-                })]
+    O = c(),
+    k = e => {
+        let t = T.useMemo(() => e.selectedCharacter ? D({
+            type: y.character,
+            id: e.selectedCharacter
+        }) : g(`characters/spine/preview/default_yellow.png`), [e.selectedCharacter]);
+        return (0, O.jsx)(A, {
+            children: (0, O.jsx)(j, {
+                src: t
             })
         })
     },
-    pe = o.div.attrs({
-        className: "flex"
+    A = f.div.attrs({
+        className: `flex-center`
     })`
-  height: ${f.kit.height}px;
-  border-radius: 12px;
-  border: 2px solid ${c.Black};
-  position: relative;
-  overflow: hidden;
-  align-items: flex-end;
-  background: ${c.BackgroundPurple};
-`,
-    be = o.div.attrs({
-        className: "maxAll"
-    })`
-  background: url(${e=>e.$imageUrl});
-  background-size: cover;
-  transform: scale(${e=>e.$isHovering?1.1:1});
-  background-position: center;
-  transition: transform 0.2s ease-in-out;
-  position: absolute;
-`,
-    Se = o.div`
-  font-size: 18px;
-  font-weight: ${y.Bold};
-  color: ${c.White};
-`,
-    we = o.div`
-  font-style: italic;
-  color: rgba(255, 255, 255, 0.8);
-`,
-    Ce = o.div.attrs({
-        className: "flex vc"
-    })`
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.8);
-`;
-var M = (e => (e.relevant = "relevant", e.recent = "recent", e))(M || {});
-const $e = e => t.jsxs(W, {
-        direction: "vertical",
-        size: 10,
-        children: [t.jsxs("div", {
-            children: [t.jsx(p, {
-                children: "Sort"
-            }), t.jsx("div", {
-                children: t.jsx(oe.Group, {
-                    onChange: a => e.setSort(a.target.value),
-                    value: e.sort,
-                    options: [{
-                        value: "relevant",
-                        label: "Most Relevant"
-                    }, {
-                        value: "recent",
-                        label: "Most Recent"
-                    }]
-                })
-            })]
-        }), t.jsxs("div", {
-            children: [t.jsx(p, {
-                children: "Language"
-            }), t.jsx(F, {
-                showSearch: !0,
-                placeholder: "All languages",
-                allowClear: !0,
-                optionFilterProp: "label",
-                className: "maxWidth",
-                value: e.language,
-                onChange: a => e.setLanguage(a ?? void 0),
-                options: se().map(a => ({
-                    value: a.key,
-                    label: a.value
-                }))
-            })]
-        }), t.jsxs("div", {
-            children: [t.jsx(p, {
-                children: "Subject"
-            }), t.jsx(F, {
-                showSearch: !0,
-                placeholder: "All subjects",
-                allowClear: !0,
-                optionFilterProp: "label",
-                className: "maxWidth",
-                value: e.subject,
-                onChange: a => e.setSubject(a ?? void 0),
-                options: ne.map(a => ({
-                    value: a,
-                    label: a
-                }))
-            })]
-        })]
-    }),
-    p = o.div`
-  font-size: 14px;
-  font-weight: ${y.Bold};
-  margin-bottom: 1px;
-`,
-    Ne = e => {
-        const {
-            query: a,
-            setQuery: n,
-            search: i
-        } = e;
-        return t.jsxs(ke, {
-            children: [t.jsx(Pe, {
-                placeholder: "Search for kits...",
-                autoFocus: !0,
-                value: a,
-                onChange: r => n(r.target.value),
-                onKeyDown: r => {
-                    r.key === "Enter" && i()
-                }
-            }), t.jsx(q, {
-                style: {
-                    right: 55
-                },
-                children: t.jsx(ie, {
-                    content: t.jsx($e, {
-                        sort: e.sort,
-                        setSort: e.setSort,
-                        language: e.language,
-                        setLanguage: e.setLanguage,
-                        subject: e.subject,
-                        setSubject: e.setSubject
-                    }),
-                    trigger: "click",
-                    placement: "bottom",
-                    styles: {
-                        body: {
-                            padding: 20
-                        }
-                    },
-                    children: t.jsx(b, {
-                        shape: "circle",
-                        type: "dashed",
-                        size: "large",
-                        icon: t.jsx(me, {}),
-                        onClick: i
-                    })
-                })
-            }), t.jsx(q, {
-                children: t.jsx(b, {
-                    shape: "circle",
-                    type: "primary",
-                    size: "large",
-                    icon: t.jsx(le, {}),
-                    onClick: i
-                })
-            })]
-        })
-    },
-    ke = o.div.attrs({
-        className: "maxWidth"
-    })`
-  position: relative;
-`,
-    Pe = o.input.attrs({
-        className: "maxWidth"
-    })`
-  border: 2px solid ${c.Black};
-  font-size: 18px;
-  padding: 14px 21px;
-  border-radius: 50px;
-  &::placeholder {
-    font-style: italic;
-  }
-`,
-    q = o.div.attrs({
-        className: "maxHeight flex-center"
-    })`
-  position: absolute;
-  right: 9px;
-  top: 0px;
-`,
-    ze = () => t.jsxs(t.Fragment, {
-        children: [t.jsx(Le, {
-            children: "Discovery"
-        }), t.jsx(Fe, {
-            children: "Search from our library of over 30,000,000 kits!"
-        })]
-    }),
-    Le = o.div`
-  font-size: 56px;
-  color: ${c.Black};
-  font-weight: ${y.UltraBold};
-  margin-bottom: 1px;
-`,
-    Fe = o.div`
-  font-size: 18px;
-  font-style: italic;
-  color: rgba(0, 0, 0, 0.9);
-  margin-top: -10px;
-  margin-bottom: 20px;
-`,
-    qe = e => ce({
-        queryKey: ["search", e.query, e.sort, e.language, e.subject],
-        enabled: !!e.query,
-        refetchOnMount: !1,
-        queryFn: async ({
-            pageParam: a = 0
-        }) => {
-            const n = await A({
-                url: "/api/games/search",
-                data: {
-                    query: e.query,
-                    page: a,
-                    sort: e.sort,
-                    language: e.language,
-                    subject: e.subject
-                }
-            });
-            return {
-                data: n.results,
-                currentPage: n.page,
-                nextPage: n.hasMore ? n.page + 1 : void 0
-            }
-        },
-        getNextPageParam: a => a.nextPage ?? !1
-    }),
-    Ae = e => t.jsx("div", {
-        className: "maxWidth flex hc vc flex-column",
-        children: t.jsxs("div", {
-            style: {
-                padding: "0 38px",
-                marginTop: 42,
-                textAlign: "center"
-            },
-            children: [t.jsx("img", {
-                src: "/client/img/icons/sad.svg"
-            }), t.jsxs("div", {
-                style: {
-                    marginTop: 18,
-                    fontSize: 20
-                },
-                children: [t.jsx("div", {
-                    style: {
-                        fontWeight: y.Bold
-                    },
-                    children: e.error ? "There was an error searching for kits" : "We couldn't find any results."
-                }), t.jsx("div", {
-                    style: {
-                        marginTop: 5
-                    },
-                    children: e.error ? "Please try again later. If the issue persists, contact support." : t.jsxs(t.Fragment, {
-                        children: ["Try another search or maybe", " ", t.jsx(T, {
-                            to: "/create",
-                            children: "make your own kit!"
-                        })]
-                    })
-                })]
-            })]
-        })
-    }),
-    Te = e => de({
-        queryKey: ["gallery"],
-        enabled: !e,
-        queryFn: async () => await A({
-            url: "/api/games/gallery"
-        })
-    }),
-    B = new Map,
-    We = (e, a) => {
-        B.set(e, a)
-    },
-    Me = e => {
-        const a = B.get(e);
-        a && window.scrollTo(0, a)
-    },
-    Be = () => {
-        const [e, a] = l.useState(""), [n, i] = J(), r = n.get("q") ?? "", d = n.get("sort") ?? M.relevant, u = n.get("lang") ?? void 0, g = n.get("subject") ?? void 0, {
-            data: m,
-            error: S,
-            isLoading: w,
-            hasNextPage: E,
-            fetchNextPage: H,
-            isFetchingNextPage: O
-        } = qe({
-            query: r,
-            sort: d,
-            language: u,
-            subject: g
-        }), {
-            data: C,
-            error: $,
-            isLoading: N
-        } = Te(r), R = l.useMemo(() => r ? w : N, [w, N, r]), k = l.useMemo(() => r ? S : $, [S, $, r]), P = l.useMemo(() => r ? ((m == null ? void 0 : m.pages.flat()) ?? []).map(s => s.data).flat() : C ?? [], [r, m, C]), x = (s, z) => {
-            i(D => {
-                const j = Object.fromEntries(D);
-                return z === void 0 ? delete j[s] : j[s] = z, j
-            })
-        }, K = l.useCallback(() => {
-            e !== r && x("q", e || void 0)
-        }, [e, r, i]), h = l.useMemo(() => `${r}|${d}|${u}|${g}`, [r, d, u, g]);
-        l.useLayoutEffect(() => {
-            Me(h)
-        }, [h]), l.useLayoutEffect(() => () => {
-            We(h, window.scrollY)
-        }, [h]);
-        const _ = () => R ? t.jsx("div", {
-            style: {
-                flex: 1
-            },
-            className: "flex-center",
-            children: t.jsx(Z, {
-                size: "large"
-            })
-        }) : !P.length || k ? t.jsx(Ae, {
-            error: !!k
-        }) : t.jsxs(t.Fragment, {
-            children: [t.jsx(I, {
-                children: P.map(s => t.jsx(ve, {
-                    id: s._id,
-                    title: s.title,
-                    image: s.gif,
-                    questionCount: s.questionCount,
-                    playCount: s.playCount,
-                    creatorName: s.creator,
-                    createdAt: s.dateCreated
-                }, s._id))
-            }), E ? t.jsx("div", {
-                className: "maxWidth flex-center",
-                style: {
-                    marginTop: f.kit.gap
-                },
-                children: t.jsx(b, {
-                    type: "primary",
-                    size: "large",
-                    onClick: () => H(),
-                    loading: O,
-                    children: "Load more"
-                })
-            }) : null]
-        });
-        return t.jsxs(xe, {
-            title: r ? `Kits about "${r}"` : "Discovery",
-            headerTheme: re.light,
-            classNames: {
-                container: "flex-center"
-            },
-            styles: {
-                container: {
-                    background: c.Snow
-                },
-                content: {
-                    padding: "40px 0px",
-                    width: "85%",
-                    maxWidth: 1350
-                }
-            },
-            children: [t.jsx(ze, {}), t.jsx(Ne, {
-                query: e,
-                setQuery: a,
-                search: K,
-                sort: d,
-                language: u,
-                subject: g,
-                setSort: s => x("sort", s),
-                setLanguage: s => x("lang", s),
-                setSubject: s => x("subject", s)
-            }), t.jsx(X, {
-                style: {
-                    margin: "30px 0px"
-                }
-            }), _()]
-        })
-    },
-    I = o.div.attrs({
-        className: "maxWidth"
-    })`
-  display: grid;
-  grid-gap: ${f.kit.gap}px;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(min(${f.kit.width}px, 100%), 1fr)
+  height: ${150}px;
+  width: ${150}px;
+  border-radius: 50%;
+  margin-top: ${-105}px;
+  background-image: linear-gradient(
+    -225deg,
+    #3d4e81 0%,
+    #5753c9 48%,
+    #6e7ff3 100%
   );
+  border: 4px solid ${p.White};
 `,
-    et = Object.freeze(Object.defineProperty({
-        __proto__: null,
-        Items: I,
-        default: Be
-    }, Symbol.toStringTag, {
-        value: "Module"
-    }));
+    j = f.img`
+  max-height: 85%;
+  max-width: 85%;
+  margin-left: 2px;
+  transform: rotate(354deg);
+  filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.5));
+  transform: rotate(354deg);
+  user-drag: none;
+`,
+    M = e => (0, O.jsxs)(b, {
+        style: {
+            marginTop: 20,
+            textAlign: `center`
+        },
+        children: [(0, O.jsxs)(N, {
+            children: [C.seasonName, ` `, C.seasonNumber]
+        }), (0, O.jsxs)(P, {
+            children: [S.level, ` `, e.currentLevel]
+        })]
+    }),
+    N = f.div`
+  font-size: 18px;
+  font-style: italic;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  font-weight: ${m.Bold};
+`,
+    P = f.div`
+  font-family: ${u.FugazOne};
+  text-transform: uppercase;
+  font-size: 52px;
+  margin-top: -6px;
+  text-shadow: 1px 1px 21px rgba(0, 0, 0, 0.4);
+`,
+    F = () => (0, O.jsxs)(`div`, {
+        style: {
+            fontSize: 16,
+            marginTop: 20,
+            color: `rgba(255,255,255,0.9)`
+        },
+        children: [(0, O.jsxs)(I, {
+            children: [`Earn `, S.xp, ` to level up.`]
+        }), ` Each time you level up, you'll earn `, (0, O.jsxs)(I, {
+            children: [`100 `, S.currency]
+        }), ` which you can use to purchase items in the Shop.`, (0, O.jsx)(`br`, {}), ` `, (0, O.jsx)(`br`, {}), `You can earn `, S.xp, ` by playing 2D modes. `, S.xp, ` is granted every minute you play and answer questions correctly!`]
+    }),
+    I = f.span`
+  font-weight: ${m.Bold};
+`,
+    L = e => (0, O.jsxs)(R, {
+        style: {
+            height: e.height
+        },
+        children: [(0, O.jsx)(z, {
+            children: e.children
+        }), (0, O.jsx)(B, {
+            style: {
+                width: `${Math.max(e.percentageComplete,2)}%`
+            }
+        })]
+    }),
+    R = f.div.attrs({
+        className: `maxWidth`
+    })`
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  position: relative;
+`,
+    z = f.div.attrs({
+        className: `maxAll`
+    })`
+  position: absolute;
+  top: 0;
+  left: 0;
+`,
+    B = f.div.attrs({
+        className: `maxHeight`
+    })`
+  width: 50%;
+  background: #00c853;
+`,
+    V = e => {
+        let t = Math.min(e.xpNeededPerLevel - 1, e.unredeemedXP),
+            n = Math.max(1, e.xpNeededPerLevel - t),
+            i = t / e.xpNeededPerLevel * 100;
+        return (0, O.jsxs)(H, {
+            children: [(0, O.jsxs)(U, {
+                children: [(0, O.jsxs)(`div`, {
+                    children: [r(t), `/`, r(e.xpNeededPerLevel), `XP`]
+                }), (0, O.jsxs)(`div`, {
+                    children: [r(n), ` `, S.xp, ` to`, ` `, S.level, ` `, e.currentLevel + 1]
+                })]
+            }), (0, O.jsx)(L, {
+                height: 60,
+                percentageComplete: i
+            })]
+        })
+    },
+    H = f.div.attrs({
+        className: `maxWidth`
+    })`
+  margin-top: 14px;
+`,
+    U = f.div.attrs({
+        className: `maxWidth flex between vc`
+    })`
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.95);
+  text-transform: uppercase;
+  font-family: ${u.FugazOne};
+  margin-bottom: 8px;
+`,
+    ne = e => (0, O.jsxs)(W, {
+        style: {
+            backgroundImage: `linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.1) 100%)`
+        },
+        children: [(0, O.jsx)(k, {
+            selectedCharacter: e.selectedCharacter
+        }), (0, O.jsx)(M, {
+            currentLevel: e.currentLevel
+        }), (0, O.jsx)(V, {
+            currentLevel: e.currentLevel,
+            unredeemedXP: e.unredeemedXP,
+            xpNeededPerLevel: e.xpNeededPerLevel
+        }), (0, O.jsx)(F, {})]
+    }),
+    W = f(E).attrs({
+        className: `flex-center flex-column`
+    })`
+  margin-top: ${75}px;
+`,
+    G = e => (0, O.jsxs)(K, {
+        children: [(0, O.jsx)(q, {
+            children: e.name
+        }), (0, O.jsx)(J, {
+            children: e.description
+        }), (0, O.jsx)(L, {
+            height: 45,
+            percentageComplete: e.percentageComplete,
+            children: (0, O.jsx)(`div`, {
+                className: `maxAll flex vc`,
+                children: (0, O.jsx)(`span`, {
+                    style: {
+                        fontFamily: u.FugazOne,
+                        textTransform: `uppercase`,
+                        textShadow: `1px 1px 10px rgba(0,0,0,0.2)`,
+                        color: `rgba(255,255,255,0.9)`,
+                        fontSize: 12,
+                        marginLeft: 15
+                    },
+                    children: e.progressText
+                })
+            })
+        })]
+    }),
+    K = f.div``,
+    q = f.div`
+  font-size: 20px;
+  font-weight: ${m.UltraBold};
+`,
+    J = f.div`
+  font-size: 16px;
+  margin-bottom: 11px;
+  color: rgba(255, 255, 255, 0.85);
+  font-style: italic;
+  margin-top: -2px;
+`,
+    Y = e => {
+        Math.min(e.dailyXpLimit, e.dailyXp + e.notSyncedXP);
+        let t = Math.min(e.periodXpLimit, e.periodXp + e.notSyncedXP),
+            {
+                dailyXpLimit: n,
+                periodXpLimit: i
+            } = e;
+        return (0, O.jsxs)(X, {
+            children: [(0, O.jsx)(Z, {
+                children: `Limits`
+            }), (0, O.jsx)(E, {
+                children: (0, O.jsx)(s, {
+                    direction: `vertical`,
+                    size: 22,
+                    className: `maxWidth`,
+                    children: (0, O.jsxs)(`div`, {
+                        children: [(0, O.jsx)(G, {
+                            name: `Weekly ${S.xp}`,
+                            description: `Resets on Wednesdays at 2:00pm EST`,
+                            percentageComplete: Math.floor(t / i * 100),
+                            progressText: `${r(t)}/${r(i)} ${S.xp}`
+                        }), (0, O.jsx)(te, {
+                            text: `Increase your Weekly ${S.xp} limit to 20,000`,
+                            marginTop: 10
+                        })]
+                    })
+                })
+            })]
+        })
+    },
+    X = f.div``,
+    Z = f.div`
+  font-family: ${u.FugazOne};
+  text-transform: uppercase;
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 6px;
+`,
+    Q = e => (0, O.jsx)(re, {
+        children: (0, O.jsx)(ie, {
+            style: {
+                maxWidth: e.customWidth ?? 721
+            },
+            children: e.children
+        })
+    }),
+    re = f.div.attrs({
+        className: `maxWidth flex hc`
+    })``,
+    ie = f.div.attrs({
+        className: `maxWidth`
+    })``,
+    ae = e => {
+        let {
+            data: n,
+            error: r,
+            isLoading: i
+        } = v(), [a, o, c] = t(!1);
+        if (i) return (0, O.jsx)(x, {
+            className: `maxAll`,
+            children: (0, O.jsx)(w, {
+                style: {
+                    color: p.White
+                }
+            })
+        });
+        if (r) return (0, O.jsx)(x, {
+            className: `maxAll`,
+            children: `There was an error loading your info. Please refresh and try again.`
+        });
+        let l = e.notSyncedXP || 0,
+            u = Math.min(l + (n.unredeemedXP || 0), n.xpNeededPerLevel);
+        return (0, O.jsxs)(s, {
+            direction: `vertical`,
+            size: 35,
+            className: `maxAll`,
+            children: [(0, O.jsx)(ne, {
+                ...n,
+                unredeemedXP: u
+            }), (0, O.jsx)(Y, {
+                notSyncedXP: l,
+                dailyXp: n.xpGainedToday,
+                periodXp: n.xpGainedInPeriod,
+                dailyXpLimit: n.maxXpToday,
+                periodXpLimit: n.maxXpInPeriod
+            })]
+        })
+    },
+    oe = e => (0, O.jsx)(Q, {
+        children: (0, O.jsx)(ae, {
+            ...e
+        })
+    }),
+    $ = T.lazy(() => d(() => import(`./App-73.js`), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53]))),
+    se = T.lazy(() => d(() => import(`./App-75.js`), __vite__mapDeps([54, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 55, 56, 57, 58, 28, 29, 30, 27, 31, 32, 33, 59, 60, 61, 62, 23, 63, 64, 40, 36, 37, 26, 38, 41, 42, 65, 66, 45, 39, 43, 44, 46, 47, 48, 49, 50]))),
+    ce = T.lazy(() => d(() => import(`./App-76.js`), __vite__mapDeps([67, 1, 4, 23, 7, 6, 22, 68, 25, 24, 2, 3, 5, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 69, 65, 66, 70, 51]))),
+    le = T.lazy(() => d(() => import(`./App-77.js`), __vite__mapDeps([71, 1, 3, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 29, 23, 72, 25, 73, 74, 26, 27, 28, 30, 31, 32, 33, 40, 75, 76, 36, 37, 38, 41, 42, 66, 45, 65, 39, 43, 44, 46, 47, 48, 49, 50, 70, 51, 77, 78]))),
+    ue = e => {
+        let {
+            screen: t
+        } = e;
+        return l(() => {
+            i(`https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap`)
+        }), (0, O.jsx)(de, {
+            children: (0, O.jsx)(o, {
+                theme: {
+                    algorithm: h.defaultAlgorithm
+                },
+                children: (0, O.jsxs)(T.Suspense, {
+                    fallback: (0, O.jsx)(`div`, {}),
+                    children: [e.pageMode ? t === _.locker ? (0, O.jsx)(n, {
+                        title: `Locker`
+                    }) : t === _.shop ? (0, O.jsx)(n, {
+                        title: `Shop`
+                    }) : t === _.seasonTicket ? (0, O.jsx)(n, {
+                        title: ee.name
+                    }) : t === _.pack ? (0, O.jsx)(n, {
+                        title: `Pack`
+                    }) : (0, O.jsx)(n, {
+                        title: `Rewards`
+                    }) : null, t === _.locker ? (0, O.jsx)(se, {
+                        onCosmeticSelectionChanged: e.onCosmeticSelectionChanged,
+                        blockCharacterPreview: e.blockCharacterPreview
+                    }) : t === _.shop ? (0, O.jsx)(ce, {
+                        onCosmeticSelectionChanged: e.onCosmeticSelectionChanged,
+                        blockCharacterPreview: e.blockCharacterPreview,
+                        setToPackScreen: e.pageMode ? void 0 : t => {
+                            e == null || e.setMetadata(t), e == null || e.setScreen(_.pack)
+                        }
+                    }) : t === _.seasonTicket ? (0, O.jsx)($, {
+                        pageMode: e.pageMode
+                    }) : t === _.pack ? (0, O.jsx)(le, {
+                        pageMode: e.pageMode,
+                        metadata: e.metadata
+                    }) : (0, O.jsx)(oe, {
+                        notSyncedXP: e.notSyncedXP,
+                        blockDiscord: e.blockDiscord
+                    })]
+                })
+            })
+        })
+    },
+    de = f.div`
+  flex: 1;
+  color: ${p.White};
+  user-select: none;
+`;
 export {
-    et as A, I, ve as K, xe as P
+    ue as
+    default, D as n, Q as t
 };

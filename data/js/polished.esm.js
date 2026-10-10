@@ -1,557 +1,548 @@
 import {
-    bx as D,
-    cW as P,
-    _ as o
-} from "./_index.js";
+    c as e,
+    n as t,
+    s as n,
+    t as r
+} from "./assertThisInitialized.js";
 import {
-    _ as W
+    t as i
+} from "./wrapNativeSuper.js";
+import {
+    n as a,
+    t as o
 } from "./inheritsLoose.js";
-var h = (function(r) {
-    W(e, r);
+e(), t(), a();
+var s = function(e) {
+    o(t, e);
 
-    function e(a) {
-        var t;
-        return t = r.call(this, "An error occurred. See https://github.com/styled-components/polished/blob/main/src/internalHelpers/errors.md#" + a + " for more information.") || this, D(t)
+    function t(t) {
+        var n = e.call(this, `An error occurred. See https://github.com/styled-components/polished/blob/main/src/internalHelpers/errors.md#` + t + ` for more information.`) || this;
+        return r(n)
     }
-    return e
-})(P(Error));
+    return t
+}(i(Error));
 
-function T(r) {
-    return Math.round(r * 255)
+function c(e) {
+    return Math.round(e * 255)
 }
 
-function E(r, e, a) {
-    return T(r) + "," + T(e) + "," + T(a)
+function l(e, t, n) {
+    return c(e) + `,` + c(t) + `,` + c(n)
 }
 
-function F(r, e, a, t) {
-    if (t === void 0 && (t = E), e === 0) return t(a, a, a);
-    var n = (r % 360 + 360) % 360 / 60,
-        f = (1 - Math.abs(2 * a - 1)) * e,
-        i = f * (1 - Math.abs(n % 2 - 1)),
+function u(e, t, n, r) {
+    if (r === void 0 && (r = l), t === 0) return r(n, n, n);
+    var i = (e % 360 + 360) % 360 / 60,
+        a = (1 - Math.abs(2 * n - 1)) * t,
+        o = a * (1 - Math.abs(i % 2 - 1)),
         s = 0,
-        u = 0,
-        b = 0;
-    n >= 0 && n < 1 ? (s = f, u = i) : n >= 1 && n < 2 ? (s = i, u = f) : n >= 2 && n < 3 ? (u = f, b = i) : n >= 3 && n < 4 ? (u = i, b = f) : n >= 4 && n < 5 ? (s = i, b = f) : n >= 5 && n < 6 && (s = f, b = i);
-    var g = a - f / 2,
-        l = s + g,
-        d = u + g,
-        x = b + g;
-    return t(l, d, x)
+        c = 0,
+        u = 0;
+    i >= 0 && i < 1 ? (s = a, c = o) : i >= 1 && i < 2 ? (s = o, c = a) : i >= 2 && i < 3 ? (c = a, u = o) : i >= 3 && i < 4 ? (c = o, u = a) : i >= 4 && i < 5 ? (s = o, u = a) : i >= 5 && i < 6 && (s = a, u = o);
+    var d = n - a / 2,
+        f = s + d,
+        p = c + d,
+        m = u + d;
+    return r(f, p, m)
 }
-var q = {
-    aliceblue: "f0f8ff",
-    antiquewhite: "faebd7",
-    aqua: "00ffff",
-    aquamarine: "7fffd4",
-    azure: "f0ffff",
-    beige: "f5f5dc",
-    bisque: "ffe4c4",
-    black: "000",
-    blanchedalmond: "ffebcd",
-    blue: "0000ff",
-    blueviolet: "8a2be2",
-    brown: "a52a2a",
-    burlywood: "deb887",
-    cadetblue: "5f9ea0",
-    chartreuse: "7fff00",
-    chocolate: "d2691e",
-    coral: "ff7f50",
-    cornflowerblue: "6495ed",
-    cornsilk: "fff8dc",
-    crimson: "dc143c",
-    cyan: "00ffff",
-    darkblue: "00008b",
-    darkcyan: "008b8b",
-    darkgoldenrod: "b8860b",
-    darkgray: "a9a9a9",
-    darkgreen: "006400",
-    darkgrey: "a9a9a9",
-    darkkhaki: "bdb76b",
-    darkmagenta: "8b008b",
-    darkolivegreen: "556b2f",
-    darkorange: "ff8c00",
-    darkorchid: "9932cc",
-    darkred: "8b0000",
-    darksalmon: "e9967a",
-    darkseagreen: "8fbc8f",
-    darkslateblue: "483d8b",
-    darkslategray: "2f4f4f",
-    darkslategrey: "2f4f4f",
-    darkturquoise: "00ced1",
-    darkviolet: "9400d3",
-    deeppink: "ff1493",
-    deepskyblue: "00bfff",
-    dimgray: "696969",
-    dimgrey: "696969",
-    dodgerblue: "1e90ff",
-    firebrick: "b22222",
-    floralwhite: "fffaf0",
-    forestgreen: "228b22",
-    fuchsia: "ff00ff",
-    gainsboro: "dcdcdc",
-    ghostwhite: "f8f8ff",
-    gold: "ffd700",
-    goldenrod: "daa520",
-    gray: "808080",
-    green: "008000",
-    greenyellow: "adff2f",
-    grey: "808080",
-    honeydew: "f0fff0",
-    hotpink: "ff69b4",
-    indianred: "cd5c5c",
-    indigo: "4b0082",
-    ivory: "fffff0",
-    khaki: "f0e68c",
-    lavender: "e6e6fa",
-    lavenderblush: "fff0f5",
-    lawngreen: "7cfc00",
-    lemonchiffon: "fffacd",
-    lightblue: "add8e6",
-    lightcoral: "f08080",
-    lightcyan: "e0ffff",
-    lightgoldenrodyellow: "fafad2",
-    lightgray: "d3d3d3",
-    lightgreen: "90ee90",
-    lightgrey: "d3d3d3",
-    lightpink: "ffb6c1",
-    lightsalmon: "ffa07a",
-    lightseagreen: "20b2aa",
-    lightskyblue: "87cefa",
-    lightslategray: "789",
-    lightslategrey: "789",
-    lightsteelblue: "b0c4de",
-    lightyellow: "ffffe0",
-    lime: "0f0",
-    limegreen: "32cd32",
-    linen: "faf0e6",
-    magenta: "f0f",
-    maroon: "800000",
-    mediumaquamarine: "66cdaa",
-    mediumblue: "0000cd",
-    mediumorchid: "ba55d3",
-    mediumpurple: "9370db",
-    mediumseagreen: "3cb371",
-    mediumslateblue: "7b68ee",
-    mediumspringgreen: "00fa9a",
-    mediumturquoise: "48d1cc",
-    mediumvioletred: "c71585",
-    midnightblue: "191970",
-    mintcream: "f5fffa",
-    mistyrose: "ffe4e1",
-    moccasin: "ffe4b5",
-    navajowhite: "ffdead",
-    navy: "000080",
-    oldlace: "fdf5e6",
-    olive: "808000",
-    olivedrab: "6b8e23",
-    orange: "ffa500",
-    orangered: "ff4500",
-    orchid: "da70d6",
-    palegoldenrod: "eee8aa",
-    palegreen: "98fb98",
-    paleturquoise: "afeeee",
-    palevioletred: "db7093",
-    papayawhip: "ffefd5",
-    peachpuff: "ffdab9",
-    peru: "cd853f",
-    pink: "ffc0cb",
-    plum: "dda0dd",
-    powderblue: "b0e0e6",
-    purple: "800080",
-    rebeccapurple: "639",
-    red: "f00",
-    rosybrown: "bc8f8f",
-    royalblue: "4169e1",
-    saddlebrown: "8b4513",
-    salmon: "fa8072",
-    sandybrown: "f4a460",
-    seagreen: "2e8b57",
-    seashell: "fff5ee",
-    sienna: "a0522d",
-    silver: "c0c0c0",
-    skyblue: "87ceeb",
-    slateblue: "6a5acd",
-    slategray: "708090",
-    slategrey: "708090",
-    snow: "fffafa",
-    springgreen: "00ff7f",
-    steelblue: "4682b4",
-    tan: "d2b48c",
-    teal: "008080",
-    thistle: "d8bfd8",
-    tomato: "ff6347",
-    turquoise: "40e0d0",
-    violet: "ee82ee",
-    wheat: "f5deb3",
-    white: "fff",
-    whitesmoke: "f5f5f5",
-    yellow: "ff0",
-    yellowgreen: "9acd32"
+var d = {
+    aliceblue: `f0f8ff`,
+    antiquewhite: `faebd7`,
+    aqua: `00ffff`,
+    aquamarine: `7fffd4`,
+    azure: `f0ffff`,
+    beige: `f5f5dc`,
+    bisque: `ffe4c4`,
+    black: `000`,
+    blanchedalmond: `ffebcd`,
+    blue: `0000ff`,
+    blueviolet: `8a2be2`,
+    brown: `a52a2a`,
+    burlywood: `deb887`,
+    cadetblue: `5f9ea0`,
+    chartreuse: `7fff00`,
+    chocolate: `d2691e`,
+    coral: `ff7f50`,
+    cornflowerblue: `6495ed`,
+    cornsilk: `fff8dc`,
+    crimson: `dc143c`,
+    cyan: `00ffff`,
+    darkblue: `00008b`,
+    darkcyan: `008b8b`,
+    darkgoldenrod: `b8860b`,
+    darkgray: `a9a9a9`,
+    darkgreen: `006400`,
+    darkgrey: `a9a9a9`,
+    darkkhaki: `bdb76b`,
+    darkmagenta: `8b008b`,
+    darkolivegreen: `556b2f`,
+    darkorange: `ff8c00`,
+    darkorchid: `9932cc`,
+    darkred: `8b0000`,
+    darksalmon: `e9967a`,
+    darkseagreen: `8fbc8f`,
+    darkslateblue: `483d8b`,
+    darkslategray: `2f4f4f`,
+    darkslategrey: `2f4f4f`,
+    darkturquoise: `00ced1`,
+    darkviolet: `9400d3`,
+    deeppink: `ff1493`,
+    deepskyblue: `00bfff`,
+    dimgray: `696969`,
+    dimgrey: `696969`,
+    dodgerblue: `1e90ff`,
+    firebrick: `b22222`,
+    floralwhite: `fffaf0`,
+    forestgreen: `228b22`,
+    fuchsia: `ff00ff`,
+    gainsboro: `dcdcdc`,
+    ghostwhite: `f8f8ff`,
+    gold: `ffd700`,
+    goldenrod: `daa520`,
+    gray: `808080`,
+    green: `008000`,
+    greenyellow: `adff2f`,
+    grey: `808080`,
+    honeydew: `f0fff0`,
+    hotpink: `ff69b4`,
+    indianred: `cd5c5c`,
+    indigo: `4b0082`,
+    ivory: `fffff0`,
+    khaki: `f0e68c`,
+    lavender: `e6e6fa`,
+    lavenderblush: `fff0f5`,
+    lawngreen: `7cfc00`,
+    lemonchiffon: `fffacd`,
+    lightblue: `add8e6`,
+    lightcoral: `f08080`,
+    lightcyan: `e0ffff`,
+    lightgoldenrodyellow: `fafad2`,
+    lightgray: `d3d3d3`,
+    lightgreen: `90ee90`,
+    lightgrey: `d3d3d3`,
+    lightpink: `ffb6c1`,
+    lightsalmon: `ffa07a`,
+    lightseagreen: `20b2aa`,
+    lightskyblue: `87cefa`,
+    lightslategray: `789`,
+    lightslategrey: `789`,
+    lightsteelblue: `b0c4de`,
+    lightyellow: `ffffe0`,
+    lime: `0f0`,
+    limegreen: `32cd32`,
+    linen: `faf0e6`,
+    magenta: `f0f`,
+    maroon: `800000`,
+    mediumaquamarine: `66cdaa`,
+    mediumblue: `0000cd`,
+    mediumorchid: `ba55d3`,
+    mediumpurple: `9370db`,
+    mediumseagreen: `3cb371`,
+    mediumslateblue: `7b68ee`,
+    mediumspringgreen: `00fa9a`,
+    mediumturquoise: `48d1cc`,
+    mediumvioletred: `c71585`,
+    midnightblue: `191970`,
+    mintcream: `f5fffa`,
+    mistyrose: `ffe4e1`,
+    moccasin: `ffe4b5`,
+    navajowhite: `ffdead`,
+    navy: `000080`,
+    oldlace: `fdf5e6`,
+    olive: `808000`,
+    olivedrab: `6b8e23`,
+    orange: `ffa500`,
+    orangered: `ff4500`,
+    orchid: `da70d6`,
+    palegoldenrod: `eee8aa`,
+    palegreen: `98fb98`,
+    paleturquoise: `afeeee`,
+    palevioletred: `db7093`,
+    papayawhip: `ffefd5`,
+    peachpuff: `ffdab9`,
+    peru: `cd853f`,
+    pink: `ffc0cb`,
+    plum: `dda0dd`,
+    powderblue: `b0e0e6`,
+    purple: `800080`,
+    rebeccapurple: `639`,
+    red: `f00`,
+    rosybrown: `bc8f8f`,
+    royalblue: `4169e1`,
+    saddlebrown: `8b4513`,
+    salmon: `fa8072`,
+    sandybrown: `f4a460`,
+    seagreen: `2e8b57`,
+    seashell: `fff5ee`,
+    sienna: `a0522d`,
+    silver: `c0c0c0`,
+    skyblue: `87ceeb`,
+    slateblue: `6a5acd`,
+    slategray: `708090`,
+    slategrey: `708090`,
+    snow: `fffafa`,
+    springgreen: `00ff7f`,
+    steelblue: `4682b4`,
+    tan: `d2b48c`,
+    teal: `008080`,
+    thistle: `d8bfd8`,
+    tomato: `ff6347`,
+    turquoise: `40e0d0`,
+    violet: `ee82ee`,
+    wheat: `f5deb3`,
+    white: `fff`,
+    whitesmoke: `f5f5f5`,
+    yellow: `ff0`,
+    yellowgreen: `9acd32`
 };
 
-function N(r) {
-    if (typeof r != "string") return r;
-    var e = r.toLowerCase();
-    return q[e] ? "#" + q[e] : r
+function f(e) {
+    if (typeof e != `string`) return e;
+    var t = e.toLowerCase();
+    return d[t] ? `#` + d[t] : e
 }
-var _ = /^#[a-fA-F0-9]{6}$/,
-    B = /^#[a-fA-F0-9]{8}$/,
-    G = /^#[a-fA-F0-9]{3}$/,
-    J = /^#[a-fA-F0-9]{4}$/,
-    C = /^rgb\(\s*(\d{1,3})\s*(?:,)?\s*(\d{1,3})\s*(?:,)?\s*(\d{1,3})\s*\)$/i,
-    K = /^rgb(?:a)?\(\s*(\d{1,3})\s*(?:,)?\s*(\d{1,3})\s*(?:,)?\s*(\d{1,3})\s*(?:,|\/)\s*([-+]?\d*[.]?\d+[%]?)\s*\)$/i,
-    O = /^hsl\(\s*(\d{0,3}[.]?[0-9]+(?:deg)?)\s*(?:,)?\s*(\d{1,3}[.]?[0-9]?)%\s*(?:,)?\s*(\d{1,3}[.]?[0-9]?)%\s*\)$/i,
-    Q = /^hsl(?:a)?\(\s*(\d{0,3}[.]?[0-9]+(?:deg)?)\s*(?:,)?\s*(\d{1,3}[.]?[0-9]?)%\s*(?:,)?\s*(\d{1,3}[.]?[0-9]?)%\s*(?:,|\/)\s*([-+]?\d*[.]?\d+[%]?)\s*\)$/i;
+var p = /^#[a-fA-F0-9]{6}$/,
+    m = /^#[a-fA-F0-9]{8}$/,
+    h = /^#[a-fA-F0-9]{3}$/,
+    g = /^#[a-fA-F0-9]{4}$/,
+    _ = /^rgb\(\s*(\d{1,3})\s*(?:,)?\s*(\d{1,3})\s*(?:,)?\s*(\d{1,3})\s*\)$/i,
+    v = /^rgb(?:a)?\(\s*(\d{1,3})\s*(?:,)?\s*(\d{1,3})\s*(?:,)?\s*(\d{1,3})\s*(?:,|\/)\s*([-+]?\d*[.]?\d+[%]?)\s*\)$/i,
+    y = /^hsl\(\s*(\d{0,3}[.]?[0-9]+(?:deg)?)\s*(?:,)?\s*(\d{1,3}[.]?[0-9]?)%\s*(?:,)?\s*(\d{1,3}[.]?[0-9]?)%\s*\)$/i,
+    b = /^hsl(?:a)?\(\s*(\d{0,3}[.]?[0-9]+(?:deg)?)\s*(?:,)?\s*(\d{1,3}[.]?[0-9]?)%\s*(?:,)?\s*(\d{1,3}[.]?[0-9]?)%\s*(?:,|\/)\s*([-+]?\d*[.]?\d+[%]?)\s*\)$/i;
 
-function y(r) {
-    if (typeof r != "string") throw new h(3);
-    var e = N(r);
-    if (e.match(_)) return {
-        red: parseInt("" + e[1] + e[2], 16),
-        green: parseInt("" + e[3] + e[4], 16),
-        blue: parseInt("" + e[5] + e[6], 16)
+function x(e) {
+    if (typeof e != `string`) throw new s(3);
+    var t = f(e);
+    if (t.match(p)) return {
+        red: parseInt(`` + t[1] + t[2], 16),
+        green: parseInt(`` + t[3] + t[4], 16),
+        blue: parseInt(`` + t[5] + t[6], 16)
     };
-    if (e.match(B)) {
-        var a = parseFloat((parseInt("" + e[7] + e[8], 16) / 255).toFixed(2));
+    if (t.match(m)) {
+        var n = parseFloat((parseInt(`` + t[7] + t[8], 16) / 255).toFixed(2));
         return {
-            red: parseInt("" + e[1] + e[2], 16),
-            green: parseInt("" + e[3] + e[4], 16),
-            blue: parseInt("" + e[5] + e[6], 16),
-            alpha: a
+            red: parseInt(`` + t[1] + t[2], 16),
+            green: parseInt(`` + t[3] + t[4], 16),
+            blue: parseInt(`` + t[5] + t[6], 16),
+            alpha: n
         }
     }
-    if (e.match(G)) return {
-        red: parseInt("" + e[1] + e[1], 16),
-        green: parseInt("" + e[2] + e[2], 16),
-        blue: parseInt("" + e[3] + e[3], 16)
+    if (t.match(h)) return {
+        red: parseInt(`` + t[1] + t[1], 16),
+        green: parseInt(`` + t[2] + t[2], 16),
+        blue: parseInt(`` + t[3] + t[3], 16)
     };
-    if (e.match(J)) {
-        var t = parseFloat((parseInt("" + e[4] + e[4], 16) / 255).toFixed(2));
+    if (t.match(g)) {
+        var r = parseFloat((parseInt(`` + t[4] + t[4], 16) / 255).toFixed(2));
         return {
-            red: parseInt("" + e[1] + e[1], 16),
-            green: parseInt("" + e[2] + e[2], 16),
-            blue: parseInt("" + e[3] + e[3], 16),
-            alpha: t
+            red: parseInt(`` + t[1] + t[1], 16),
+            green: parseInt(`` + t[2] + t[2], 16),
+            blue: parseInt(`` + t[3] + t[3], 16),
+            alpha: r
         }
     }
-    var n = C.exec(e);
-    if (n) return {
-        red: parseInt("" + n[1], 10),
-        green: parseInt("" + n[2], 10),
-        blue: parseInt("" + n[3], 10)
+    var i = _.exec(t);
+    if (i) return {
+        red: parseInt(`` + i[1], 10),
+        green: parseInt(`` + i[2], 10),
+        blue: parseInt(`` + i[3], 10)
     };
-    var f = K.exec(e.substring(0, 50));
-    if (f) return {
-        red: parseInt("" + f[1], 10),
-        green: parseInt("" + f[2], 10),
-        blue: parseInt("" + f[3], 10),
-        alpha: parseFloat("" + f[4]) > 1 ? parseFloat("" + f[4]) / 100 : parseFloat("" + f[4])
+    var a = v.exec(t.substring(0, 50));
+    if (a) return {
+        red: parseInt(`` + a[1], 10),
+        green: parseInt(`` + a[2], 10),
+        blue: parseInt(`` + a[3], 10),
+        alpha: parseFloat(`` + a[4]) > 1 ? parseFloat(`` + a[4]) / 100 : parseFloat(`` + a[4])
     };
-    var i = O.exec(e);
-    if (i) {
-        var s = parseInt("" + i[1], 10),
-            u = parseInt("" + i[2], 10) / 100,
-            b = parseInt("" + i[3], 10) / 100,
-            g = "rgb(" + F(s, u, b) + ")",
-            l = C.exec(g);
-        if (!l) throw new h(4, e, g);
+    var o = y.exec(t);
+    if (o) {
+        var c = `rgb(` + u(parseInt(`` + o[1], 10), parseInt(`` + o[2], 10) / 100, parseInt(`` + o[3], 10) / 100) + `)`,
+            l = _.exec(c);
+        if (!l) throw new s(4, t, c);
         return {
-            red: parseInt("" + l[1], 10),
-            green: parseInt("" + l[2], 10),
-            blue: parseInt("" + l[3], 10)
+            red: parseInt(`` + l[1], 10),
+            green: parseInt(`` + l[2], 10),
+            blue: parseInt(`` + l[3], 10)
         }
     }
-    var d = Q.exec(e.substring(0, 50));
+    var d = b.exec(t.substring(0, 50));
     if (d) {
-        var x = parseInt("" + d[1], 10),
-            L = parseInt("" + d[2], 10) / 100,
-            S = parseInt("" + d[3], 10) / 100,
-            R = "rgb(" + F(x, L, S) + ")",
-            I = C.exec(R);
-        if (!I) throw new h(4, e, R);
+        var x = `rgb(` + u(parseInt(`` + d[1], 10), parseInt(`` + d[2], 10) / 100, parseInt(`` + d[3], 10) / 100) + `)`,
+            S = _.exec(x);
+        if (!S) throw new s(4, t, x);
         return {
-            red: parseInt("" + I[1], 10),
-            green: parseInt("" + I[2], 10),
-            blue: parseInt("" + I[3], 10),
-            alpha: parseFloat("" + d[4]) > 1 ? parseFloat("" + d[4]) / 100 : parseFloat("" + d[4])
+            red: parseInt(`` + S[1], 10),
+            green: parseInt(`` + S[2], 10),
+            blue: parseInt(`` + S[3], 10),
+            alpha: parseFloat(`` + d[4]) > 1 ? parseFloat(`` + d[4]) / 100 : parseFloat(`` + d[4])
         }
     }
-    throw new h(5)
+    throw new s(5)
 }
 
-function U(r) {
-    var e = r.red / 255,
-        a = r.green / 255,
-        t = r.blue / 255,
-        n = Math.max(e, a, t),
-        f = Math.min(e, a, t),
-        i = (n + f) / 2;
-    if (n === f) return r.alpha !== void 0 ? {
+function S(e) {
+    var t = e.red / 255,
+        n = e.green / 255,
+        r = e.blue / 255,
+        i = Math.max(t, n, r),
+        a = Math.min(t, n, r),
+        o = (i + a) / 2;
+    if (i === a) return e.alpha === void 0 ? {
         hue: 0,
         saturation: 0,
-        lightness: i,
-        alpha: r.alpha
+        lightness: o
     } : {
         hue: 0,
         saturation: 0,
-        lightness: i
+        lightness: o,
+        alpha: e.alpha
     };
-    var s, u = n - f,
-        b = i > .5 ? u / (2 - n - f) : u / (n + f);
-    switch (n) {
-        case e:
-            s = (a - t) / u + (a < t ? 6 : 0);
+    var s, c = i - a,
+        l = o > .5 ? c / (2 - i - a) : c / (i + a);
+    switch (i) {
+        case t:
+            s = (n - r) / c + (n < r ? 6 : 0);
             break;
-        case a:
-            s = (t - e) / u + 2;
+        case n:
+            s = (r - t) / c + 2;
             break;
         default:
-            s = (e - a) / u + 4;
-            break
+            s = (t - n) / c + 4
     }
-    return s *= 60, r.alpha !== void 0 ? {
+    return s *= 60, e.alpha === void 0 ? {
         hue: s,
-        saturation: b,
-        lightness: i,
-        alpha: r.alpha
+        saturation: l,
+        lightness: o
     } : {
         hue: s,
-        saturation: b,
-        lightness: i
+        saturation: l,
+        lightness: o,
+        alpha: e.alpha
     }
 }
 
-function m(r) {
-    return U(y(r))
+function C(e) {
+    return S(x(e))
 }
-var X = function(e) {
-        return e.length === 7 && e[1] === e[2] && e[3] === e[4] && e[5] === e[6] ? "#" + e[1] + e[3] + e[5] : e
-    },
-    $ = X;
+var w = function(e) {
+    return e.length === 7 && e[1] === e[2] && e[3] === e[4] && e[5] === e[6] ? `#` + e[1] + e[3] + e[5] : e
+};
 
-function v(r) {
-    var e = r.toString(16);
-    return e.length === 1 ? "0" + e : e
-}
-
-function M(r) {
-    return v(Math.round(r * 255))
+function T(e) {
+    var t = e.toString(16);
+    return t.length === 1 ? `0` + t : t
 }
 
-function Y(r, e, a) {
-    return $("#" + M(r) + M(e) + M(a))
+function E(e) {
+    return T(Math.round(e * 255))
 }
 
-function j(r, e, a) {
-    return F(r, e, a, Y)
+function D(e, t, n) {
+    return w(`#` + E(e) + E(t) + E(n))
 }
 
-function Z(r, e, a) {
-    if (typeof r == "object" && e === void 0 && a === void 0) return j(r.hue, r.saturation, r.lightness);
-    throw new h(1)
+function O(e, t, n) {
+    return u(e, t, n, D)
 }
 
-function V(r, e, a, t) {
-    if (typeof r == "object" && e === void 0 && a === void 0 && t === void 0) return r.alpha >= 1 ? j(r.hue, r.saturation, r.lightness) : "rgba(" + F(r.hue, r.saturation, r.lightness) + "," + r.alpha + ")";
-    throw new h(2)
+function k(e, t, n) {
+    if (typeof e == `number` && typeof t == `number` && typeof n == `number`) return O(e, t, n);
+    if (typeof e == `object` && t === void 0 && n === void 0) return O(e.hue, e.saturation, e.lightness);
+    throw new s(1)
 }
 
-function H(r, e, a) {
-    if (typeof r == "number" && typeof e == "number" && typeof a == "number") return $("#" + v(r) + v(e) + v(a));
-    if (typeof r == "object" && e === void 0 && a === void 0) return $("#" + v(r.red) + v(r.green) + v(r.blue));
-    throw new h(6)
+function A(e, t, n, r) {
+    if (typeof e == `number` && typeof t == `number` && typeof n == `number` && typeof r == `number`) return r >= 1 ? O(e, t, n) : `rgba(` + u(e, t, n) + `,` + r + `)`;
+    if (typeof e == `object` && t === void 0 && n === void 0 && r === void 0) return e.alpha >= 1 ? O(e.hue, e.saturation, e.lightness) : `rgba(` + u(e.hue, e.saturation, e.lightness) + `,` + e.alpha + `)`;
+    throw new s(2)
 }
 
-function k(r, e, a, t) {
-    if (typeof r == "string" && typeof e == "number") {
-        var n = y(r);
-        return "rgba(" + n.red + "," + n.green + "," + n.blue + "," + e + ")"
-    } else {
-        if (typeof r == "number" && typeof e == "number" && typeof a == "number" && typeof t == "number") return t >= 1 ? H(r, e, a) : "rgba(" + r + "," + e + "," + a + "," + t + ")";
-        if (typeof r == "object" && e === void 0 && a === void 0 && t === void 0) return r.alpha >= 1 ? H(r.red, r.green, r.blue) : "rgba(" + r.red + "," + r.green + "," + r.blue + "," + r.alpha + ")"
+function j(e, t, n) {
+    if (typeof e == `number` && typeof t == `number` && typeof n == `number`) return w(`#` + T(e) + T(t) + T(n));
+    if (typeof e == `object` && t === void 0 && n === void 0) return w(`#` + T(e.red) + T(e.green) + T(e.blue));
+    throw new s(6)
+}
+
+function M(e, t, n, r) {
+    if (typeof e == `string` && typeof t == `number`) {
+        var i = x(e);
+        return `rgba(` + i.red + `,` + i.green + `,` + i.blue + `,` + t + `)`
     }
-    throw new h(7)
+    if (typeof e == `number` && typeof t == `number` && typeof n == `number` && typeof r == `number`) return r >= 1 ? j(e, t, n) : `rgba(` + e + `,` + t + `,` + n + `,` + r + `)`;
+    if (typeof e == `object` && t === void 0 && n === void 0 && r === void 0) return e.alpha >= 1 ? j(e.red, e.green, e.blue) : `rgba(` + e.red + `,` + e.green + `,` + e.blue + `,` + e.alpha + `)`;
+    throw new s(7)
 }
-var ee = function(e) {
-        return typeof e.red == "number" && typeof e.green == "number" && typeof e.blue == "number" && (typeof e.alpha != "number" || typeof e.alpha > "u")
+var N = function(e) {
+        return typeof e.red == `number` && typeof e.green == `number` && typeof e.blue == `number` && (typeof e.alpha != `number` || e.alpha === void 0)
     },
-    re = function(e) {
-        return typeof e.red == "number" && typeof e.green == "number" && typeof e.blue == "number" && typeof e.alpha == "number"
+    P = function(e) {
+        return typeof e.red == `number` && typeof e.green == `number` && typeof e.blue == `number` && typeof e.alpha == `number`
     },
-    ae = function(e) {
-        return typeof e.hue == "number" && typeof e.saturation == "number" && typeof e.lightness == "number" && (typeof e.alpha != "number" || typeof e.alpha > "u")
+    F = function(e) {
+        return typeof e.hue == `number` && typeof e.saturation == `number` && typeof e.lightness == `number` && (typeof e.alpha != `number` || e.alpha === void 0)
     },
-    ne = function(e) {
-        return typeof e.hue == "number" && typeof e.saturation == "number" && typeof e.lightness == "number" && typeof e.alpha == "number"
+    I = function(e) {
+        return typeof e.hue == `number` && typeof e.saturation == `number` && typeof e.lightness == `number` && typeof e.alpha == `number`
     };
 
-function c(r) {
-    if (typeof r != "object") throw new h(8);
-    if (re(r)) return k(r);
-    if (ee(r)) return H(r);
-    if (ne(r)) return V(r);
-    if (ae(r)) return Z(r);
-    throw new h(8)
+function L(e) {
+    if (typeof e != `object`) throw new s(8);
+    if (P(e)) return M(e);
+    if (N(e)) return j(e);
+    if (I(e)) return A(e);
+    if (F(e)) return k(e);
+    throw new s(8)
 }
 
-function A(r, e, a) {
+function R(e, t, n) {
     return function() {
-        var n = a.concat(Array.prototype.slice.call(arguments));
-        return n.length >= e ? r.apply(this, n) : A(r, e, n)
+        var r = n.concat(Array.prototype.slice.call(arguments));
+        return r.length >= t ? e.apply(this, r) : R(e, t, r)
     }
 }
 
-function p(r) {
-    return A(r, r.length, [])
+function z(e) {
+    return R(e, e.length, [])
 }
 
-function te(r, e) {
-    if (e === "transparent") return e;
-    var a = m(e);
-    return c(o({}, a, {
-        hue: a.hue + parseFloat(r)
+function B(e, t) {
+    if (t === `transparent`) return t;
+    var r = C(t);
+    return L(n({}, r, {
+        hue: r.hue + parseFloat(e)
     }))
 }
-p(te);
+z(B);
 
-function w(r, e, a) {
-    return Math.max(r, Math.min(e, a))
+function V(e, t, n) {
+    return Math.max(e, Math.min(t, n))
 }
 
-function fe(r, e) {
-    if (e === "transparent") return e;
-    var a = m(e);
-    return c(o({}, a, {
-        lightness: w(0, 1, a.lightness - parseFloat(r))
+function H(e, t) {
+    if (t === `transparent`) return t;
+    var r = C(t);
+    return L(n({}, r, {
+        lightness: V(0, 1, r.lightness - parseFloat(e))
     }))
 }
-var ie = p(fe),
-    ke = ie;
+var U = z(H);
 
-function se(r, e) {
-    if (e === "transparent") return e;
-    var a = m(e);
-    return c(o({}, a, {
-        saturation: w(0, 1, a.saturation - parseFloat(r))
+function W(e, t) {
+    if (t === `transparent`) return t;
+    var r = C(t);
+    return L(n({}, r, {
+        saturation: V(0, 1, r.saturation - parseFloat(e))
     }))
 }
-p(se);
+z(W);
 
-function ue(r, e) {
-    if (e === "transparent") return e;
-    var a = m(e);
-    return c(o({}, a, {
-        lightness: w(0, 1, a.lightness + parseFloat(r))
+function G(e, t) {
+    if (t === `transparent`) return t;
+    var r = C(t);
+    return L(n({}, r, {
+        lightness: V(0, 1, r.lightness + parseFloat(e))
     }))
 }
-var de = p(ue),
-    Ie = de;
+var K = z(G);
 
-function pe(r, e, a) {
-    if (e === "transparent") return a;
-    if (a === "transparent") return e;
-    if (r === 0) return a;
-    var t = y(e),
-        n = o({}, t, {
-            alpha: typeof t.alpha == "number" ? t.alpha : 1
+function q(e, t, r) {
+    if (t === `transparent`) return r;
+    if (r === `transparent`) return t;
+    if (e === 0) return r;
+    var i = x(t),
+        a = n({}, i, {
+            alpha: typeof i.alpha == `number` ? i.alpha : 1
         }),
-        f = y(a),
-        i = o({}, f, {
-            alpha: typeof f.alpha == "number" ? f.alpha : 1
+        o = x(r),
+        s = n({}, o, {
+            alpha: typeof o.alpha == `number` ? o.alpha : 1
         }),
-        s = n.alpha - i.alpha,
-        u = parseFloat(r) * 2 - 1,
-        b = u * s === -1 ? u : u + s,
-        g = 1 + u * s,
-        l = (b / g + 1) / 2,
-        d = 1 - l,
-        x = {
-            red: Math.floor(n.red * l + i.red * d),
-            green: Math.floor(n.green * l + i.green * d),
-            blue: Math.floor(n.blue * l + i.blue * d),
-            alpha: n.alpha * parseFloat(r) + i.alpha * (1 - parseFloat(r))
-        };
-    return k(x)
+        c = a.alpha - s.alpha,
+        l = parseFloat(e) * 2 - 1,
+        u = ((l * c === -1 ? l : l + c) / (1 + l * c) + 1) / 2,
+        d = 1 - u;
+    return M({
+        red: Math.floor(a.red * u + s.red * d),
+        green: Math.floor(a.green * u + s.green * d),
+        blue: Math.floor(a.blue * u + s.blue * d),
+        alpha: a.alpha * parseFloat(e) + s.alpha * (1 - parseFloat(e))
+    })
 }
-var be = p(pe),
-    z = be;
+var J = z(q);
 
-function oe(r, e) {
-    if (e === "transparent") return e;
-    var a = y(e),
-        t = typeof a.alpha == "number" ? a.alpha : 1,
-        n = o({}, a, {
-            alpha: w(0, 1, (t * 100 + parseFloat(r) * 100) / 100)
-        });
-    return k(n)
+function Y(e, t) {
+    if (t === `transparent`) return t;
+    var r = x(t),
+        i = typeof r.alpha == `number` ? r.alpha : 1;
+    return M(n({}, r, {
+        alpha: V(0, 1, (i * 100 + parseFloat(e) * 100) / 100)
+    }))
 }
-p(oe);
+z(Y);
 
-function Fe(r) {
-    if (typeof r == "object" && typeof r.red == "number" && typeof r.green == "number" && typeof r.blue == "number") return typeof r.alpha == "number" ? k({
-        red: r.red,
-        green: r.green,
-        blue: r.blue,
-        alpha: r.alpha
-    }) : H({
-        red: r.red,
-        green: r.green,
-        blue: r.blue
+function X(e) {
+    if (typeof e == `object` && typeof e.red == `number` && typeof e.green == `number` && typeof e.blue == `number`) return typeof e.alpha == `number` ? M({
+        red: e.red,
+        green: e.green,
+        blue: e.blue,
+        alpha: e.alpha
+    }) : j({
+        red: e.red,
+        green: e.green,
+        blue: e.blue
     });
-    throw new h(46)
+    throw new s(46)
 }
 
-function le(r, e) {
-    if (e === "transparent") return e;
-    var a = m(e);
-    return c(o({}, a, {
-        saturation: w(0, 1, a.saturation + parseFloat(r))
+function Z(e, t) {
+    if (t === `transparent`) return t;
+    var r = C(t);
+    return L(n({}, r, {
+        saturation: V(0, 1, r.saturation + parseFloat(e))
     }))
 }
-p(le);
+z(Z);
 
-function he(r, e) {
-    return e === "transparent" ? e : c(o({}, m(e), {
-        hue: parseFloat(r)
+function Q(e, t) {
+    return t === `transparent` ? t : L(n({}, C(t), {
+        hue: parseFloat(e)
     }))
 }
-p(he);
+z(Q);
 
-function ge(r, e) {
-    return e === "transparent" ? e : c(o({}, m(e), {
-        lightness: parseFloat(r)
+function $(e, t) {
+    return t === `transparent` ? t : L(n({}, C(t), {
+        lightness: parseFloat(e)
     }))
 }
-p(ge);
+z($);
 
-function me(r, e) {
-    return e === "transparent" ? e : c(o({}, m(e), {
-        saturation: parseFloat(r)
+function ee(e, t) {
+    return t === `transparent` ? t : L(n({}, C(t), {
+        saturation: parseFloat(e)
     }))
 }
-p(me);
+z(ee);
 
-function ce(r, e) {
-    return e === "transparent" ? e : z(parseFloat(r), "rgb(0, 0, 0)", e)
+function te(e, t) {
+    return t === `transparent` ? t : J(parseFloat(e), `rgb(0, 0, 0)`, t)
 }
-p(ce);
+z(te);
 
-function ve(r, e) {
-    return e === "transparent" ? e : z(parseFloat(r), "rgb(255, 255, 255)", e)
+function ne(e, t) {
+    return t === `transparent` ? t : J(parseFloat(e), `rgb(255, 255, 255)`, t)
 }
-p(ve);
+z(ne);
 
-function ye(r, e) {
-    if (e === "transparent") return e;
-    var a = y(e),
-        t = typeof a.alpha == "number" ? a.alpha : 1,
-        n = o({}, a, {
-            alpha: w(0, 1, +(t * 100 - parseFloat(r) * 100).toFixed(2) / 100)
-        });
-    return k(n)
+function re(e, t) {
+    if (t === `transparent`) return t;
+    var r = x(t),
+        i = typeof r.alpha == `number` ? r.alpha : 1;
+    return M(n({}, r, {
+        alpha: V(0, 1, (i * 100 - parseFloat(e) * 100).toFixed(2) / 100)
+    }))
 }
-p(ye);
+z(re);
 export {
-    ke as a, Fe as b, Ie as c, k as r
+    M as i, K as n, X as r, U as t
 };

@@ -1,42 +1,54 @@
+import "./rolldown-runtime.js";
 import {
-    j as e,
-    E as o,
-    cm as s,
-    a4 as n,
-    F as r,
-    X as i
+    t as e
+} from "./react-1.js";
+import {
+    a as t
+} from "./InfoCircleFilled.js";
+import {
+    Q as n
+} from "./Paths.js";
+import {
+    t as r
+} from "./jsx-runtime.js";
+import {
+    b as i,
+    s as a,
+    v as o
 } from "./_index.js";
 import {
-    A as a
+    t as s
 } from "./AccessibleAnchor.js";
 import {
-    S as m
+    t as c
 } from "./SeasonTicketName.js";
 import {
-    O as l
+    t as l
 } from "./OwnsSeasonTicket.js";
-const f = t => l() ? null : e.jsx(o, {
-    theme: {
-        algorithm: s.defaultAlgorithm
-    },
-    children: e.jsx(n, {
-        showIcon: !0,
-        style: {
-            marginTop: t.marginTop ?? 0,
-            marginBottom: t.marginBottom ?? 0
+e();
+var u = r(),
+    d = e => l() ? null : (0, u.jsx)(t, {
+        theme: {
+            algorithm: o.defaultAlgorithm
         },
-        message: e.jsxs("span", {
-            children: [t.text, " with the", " ", e.jsx(a, {
-                to: i,
-                style: {
-                    textDecoration: "underline",
-                    fontWeight: r.Bold
-                },
-                children: m.name
-            })]
+        children: (0, u.jsx)(i, {
+            showIcon: !0,
+            style: {
+                marginTop: e.marginTop ?? 0,
+                marginBottom: e.marginBottom ?? 0
+            },
+            message: (0, u.jsxs)(`span`, {
+                children: [e.text, ` with the`, ` `, (0, u.jsx)(s, {
+                    to: n,
+                    style: {
+                        textDecoration: `underline`,
+                        fontWeight: a.Bold
+                    },
+                    children: c.name
+                })]
+            })
         })
-    })
-});
+    });
 export {
-    f as S
+    d as t
 };

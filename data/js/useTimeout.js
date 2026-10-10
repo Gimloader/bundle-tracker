@@ -1,48 +1,54 @@
 import {
-    n as l
-} from "./motion.js";
+    o as e
+} from "./rolldown-runtime.js";
 import {
-    r as e
-} from "./_index.js";
+    t
+} from "./react-1.js";
 import {
-    u as v
+    t as n
+} from "./noop.js";
+import {
+    t as r
 } from "./useWarningOnMountInDevelopment.js";
+var i = e(t());
 
-function w(u, n) {
-    n === void 0 && (n = 0), v();
-    var i = e.useState(!1),
-        t = i[0],
-        a = i[1],
-        r = e.useRef();
-    e.useEffect(function() {
-        r.current = u
-    }, [u]);
+function a(e, t) {
+    t === void 0 && (t = 0), r(`useTimeout is deprecated, it will be removed in rooks v7. Please use useTimeoutWhen instead.`);
+    var a = (0, i.useState)(!1),
+        o = a[0],
+        s = a[1],
+        c = (0, i.useRef)();
+    (0, i.useEffect)(function() {
+        c.current = e
+    }, [e]);
 
-    function s() {
-        r.current && r.current(), o()
+    function l() {
+        c.current && c.current(), u()
     }
-    var o = e.useCallback(function() {
-            a(!1)
+    var u = (0, i.useCallback)(function() {
+            s(!1)
         }, []),
-        f = e.useCallback(function() {
-            a(!0)
+        d = (0, i.useCallback)(function() {
+            s(!0)
         }, []);
-    return e.useEffect(function() {
-        if (t)
-            if (typeof window < "u") {
-                var c = window.setTimeout(s, n);
+    return (0, i.useEffect)(function() {
+        if (o) {
+            if (typeof window < `u`) {
+                var e = window.setTimeout(l, t);
                 return function() {
-                    window.clearTimeout(c)
+                    window.clearTimeout(e)
                 }
-            } else console.warn("useTimeout: window is undefined.");
-        return l
-    }, [t, n]), {
-        clear: o,
-        isActive: t,
-        start: f,
-        stop: o
+            }
+            console.warn(`useTimeout: window is undefined.`)
+        }
+        return n
+    }, [o, t]), {
+        clear: u,
+        isActive: o,
+        start: d,
+        stop: u
     }
 }
 export {
-    w as u
+    a as t
 };

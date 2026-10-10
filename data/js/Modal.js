@@ -1,166 +1,111 @@
 import {
-    r as l,
-    u as x,
-    q as h,
-    j as e,
-    d as i,
-    s as A,
-    ah as M,
-    F as y
-} from "./_index.js";
+    o as e
+} from "./rolldown-runtime.js";
 import {
-    ANIMATION_DURATION as b
-} from "./App-60.js";
+    O as t,
+    S as n,
+    y as r
+} from "./utils.js";
 import {
-    q as w
-} from "./App-41.js";
+    t as i
+} from "./react-1.js";
 import {
-    M as C
-} from "./Button.js";
+    t as a
+} from "./jsx-runtime.js";
 import {
-    a as N
+    n as o
 } from "./useDebouncedValue.js";
 import {
-    e as j,
-    m as I
+    a as s,
+    l as c,
+    s as l
+} from "./_index.js";
+import {
+    t as u
+} from "./Button.js";
+import {
+    f as d,
+    t as f
 } from "./motion.js";
-import "./SixteenByNineScaler.js";
-import "./index-2.js";
-import "./index-20.js";
-import "./index-5.js";
-import "./index-22.js";
-import "./index-4.js";
-import "./context.js";
-import "./index-1.js";
-import "./polished.esm.js";
-import "./inheritsLoose.js";
-import "./FixSpinePlugin.js";
-import "./GetAssetPath.js";
-import "./MapModeType.js";
-import "./MapStyle.js";
-import "./MapSound.js";
-import "./howler.js";
-import "./playSound.js";
-import "./mobxreact.esm.js";
-import "./index-21.js";
-import "./QuizTypes.js";
-import "./TutorialConsts.js";
-import "./ActionButton.js";
-import "./index-18.js";
-import "./FontAwesomeIcon.js";
-import "./Centered.js";
-import "./CapitalizeFirstLetter.js";
-import "./index-14.js";
-import "./EditOutlined.js";
-import "./styleChecker.js";
-import "./index-3.js";
-import "./CheckOutlined.js";
-import "./CopyOutlined.js";
-import "./progress.js";
-import "./ElementIds.js";
-import "./SeasonTicketName.js";
-import "./useQuery.js";
-import "./___vite-browser-external_commonjs-proxy.js";
-import "./util-1.js";
-import "./util-2.js";
-import "./Shortcut.js";
-import "./Names.js";
-import "./useWillUnmount.js";
-import "./CircularProgress.js";
-import "./clsx.m.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
-import "./index-17.js";
-import "./use-force-update.js";
-import "./GimkitLiveQuestion.js";
-import "./Text.js";
-import "./getCloudinaryUrl.js";
-import "./LazyLatexRenderer.js";
-import "./Tooltip.js";
-import "./use-motion-value.js";
-import "./index-9.js";
-import "./index-23.js";
-import "./useIntervalWhen.js";
-import "./index-10.js";
-import "./move.js";
-import "./react-flip-move.es.js";
-import "./sounds.js";
-import "./App-5.js";
-import "./AnimatedBackground-2.js";
-import "./CloseCircleOutlined.js";
-import "./FillRemainingSpace.js";
-import "./index-24.js";
-const k = t => {
-        const [m, r] = l.useState(""), [s, a, n] = x(!1), f = o => {
-            r(o.target.value), n()
-        }, g = o => {
-            o.key === "Enter" && c()
-        }, c = () => {
-            const o = m.trim();
-            o.length && t.guess(o)
+import {
+    L as p
+} from "./App-42.js";
+import {
+    ANIMATION_DURATION as m
+} from "./App-62.js";
+var h = e(i()),
+    g = a(),
+    _ = e => {
+        let [r, i] = h.useState(``), [a, s, c] = t(!1), l = e => {
+            i(e.target.value), c()
+        }, d = e => {
+            e.key === `Enter` && f()
+        }, f = () => {
+            let t = r.trim();
+            t.length && e.guess(t)
         };
-        N(() => {
-            a(), r("")
-        }, [t.incorrectCounter]), l.useEffect(() => {
-            t.useMaxAttempts && t.attempts >= t.maxAttempts && r("")
-        }, [t.attempts, t.maxAttempts, t.useMaxAttempts]);
-        const p = l.useMemo(() => {
-                if (!t.useMaxAttempts) return null;
-                if (t.attempts >= t.maxAttempts) return {
-                    message: "No More Guesses Allowed",
-                    color: "red"
+        o(() => {
+            s(), i(``)
+        }, [e.incorrectCounter]), h.useEffect(() => {
+            e.useMaxAttempts && e.attempts >= e.maxAttempts && i(``)
+        }, [e.attempts, e.maxAttempts, e.useMaxAttempts]);
+        let p = h.useMemo(() => {
+                if (!e.useMaxAttempts) return null;
+                if (e.attempts >= e.maxAttempts) return {
+                    message: `No More Guesses Allowed`,
+                    color: `red`
                 };
-                const o = t.maxAttempts - t.attempts;
+                let t = e.maxAttempts - e.attempts;
                 return {
-                    message: `${o} ${h("attempt",o)} remaining`,
-                    color: "yellow"
+                    message: `${t} ${n(`attempt`,t)} remaining`,
+                    color: `yellow`
                 }
-            }, [t.maxAttempts, t.attempts, t.useMaxAttempts]),
-            d = t.useMaxAttempts && t.attempts >= t.maxAttempts;
-        return e.jsxs(E, {
-            children: [e.jsx(T, {
-                children: "Enter Password:"
-            }), p ? e.jsx(S, {
+            }, [e.maxAttempts, e.attempts, e.useMaxAttempts]),
+            m = e.useMaxAttempts && e.attempts >= e.maxAttempts;
+        return (0, g.jsxs)(v, {
+            children: [(0, g.jsx)(y, {
+                children: `Enter Password:`
+            }), p ? (0, g.jsx)(b, {
                 style: {
                     color: p.color
                 },
                 children: p.message
-            }) : null, e.jsx(v, {
-                className: s ? "animated shake" : "",
-                placeholder: "Enter password here...",
-                type: "text",
+            }) : null, (0, g.jsx)(x, {
+                className: a ? `animated shake` : ``,
+                placeholder: `Enter password here...`,
+                type: `text`,
                 autoFocus: !0,
-                value: m,
-                onChange: f,
-                maxLength: "64",
-                onKeyDown: g,
-                disabled: d,
-                style: d ? {} : {
-                    cursor: "not-allowed"
+                value: r,
+                onChange: l,
+                maxLength: `64`,
+                onKeyDown: d,
+                disabled: m,
+                style: m ? {} : {
+                    cursor: `not-allowed`
                 }
-            }), e.jsx(C, {
-                size: "small",
-                type: "success",
-                onClick: c,
-                ariaLabel: "Submit",
-                children: "Submit"
+            }), (0, g.jsx)(u, {
+                size: `small`,
+                type: `success`,
+                onClick: f,
+                ariaLabel: `Submit`,
+                children: `Submit`
             })]
         })
     },
-    E = i.div.attrs({
-        className: "maxWidth flex-center flex-column"
+    v = c.div.attrs({
+        className: `maxWidth flex-center flex-column`
     })`
   line-height: 1;
 `,
-    T = i.div`
+    y = c.div`
   font-size: 26px;
 `,
-    S = i.div`
+    b = c.div`
   font-size: 14px;
   margin-top: 11px;
 `,
-    v = i.input.attrs({
-        className: "maxWidth"
+    x = c.input.attrs({
+        className: `maxWidth`
     })`
   background: rgba(255, 255, 255, 0.1);
   border: 0px;
@@ -170,48 +115,46 @@ const k = t => {
   margin-top: 22px;
   margin-bottom: 22px;
 `,
-    u = {
-        y: " 100%",
+    S = {
+        y: ` 100%`,
         opacity: 0
     },
-    P = {
-        y: "0%",
+    C = {
+        y: `0%`,
         opacity: 1
     },
-    Zt = t => {
-        const m = j(),
-            [r, s] = x(!1);
-        A(() => {
-            M("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap")
-        });
-        const a = () => {
-            m && r && t.close()
-        };
-        return e.jsxs(D, {
-            onClick: a,
-            children: [e.jsx(F, {
-                initial: u,
-                animate: P,
-                exit: u,
+    w = e => {
+        let n = d(),
+            [i, a] = t(!1);
+        return s(() => {
+            r(`https://fonts.googleapis.com/css2?family=PT+Mono&display=swap`)
+        }), (0, g.jsxs)(T, {
+            onClick: () => {
+                n && i && e.close()
+            },
+            children: [(0, g.jsx)(E, {
+                initial: S,
+                animate: C,
+                exit: S,
                 transition: {
-                    duration: b,
-                    ease: "easeOut"
+                    duration: m,
+                    ease: `easeOut`
                 },
-                onClick: n => n.stopPropagation(),
-                onAnimationComplete: s,
-                children: e.jsx(k, {
-                    ...t
+                onClick: e => e.stopPropagation(),
+                onAnimationComplete: a,
+                children: (0, g.jsx)(_, {
+                    ...e
                 })
-            }), e.jsx(w, {
-                onClick: t.close
+            }), (0, g.jsx)(p, {
+                onClick: e.close
             })]
         })
     },
-    D = i.div.attrs({
-        className: "maxAll flex-center"
+    T = c.div.attrs({
+        className: `maxAll flex-center`
     })``,
-    F = i(I.div).attrs({
-        className: "medium-shadow scroll-y"
+    E = c(f.div).attrs({
+        className: `medium-shadow scroll-y`
     })`
   max-height: 80%;
   background: rgba(0, 0, 0, 0.9);
@@ -221,9 +164,9 @@ const k = t => {
   border-radius: 14px;
   max-width: 650px;
   font-family: 'PT Mono', monospace;
-  font-weight: ${y.Bold};
+  font-weight: ${l.Bold};
 `;
 export {
-    Zt as
+    w as
     default
 };

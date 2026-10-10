@@ -1,455 +1,407 @@
 import {
-    bh as H,
-    L as T,
-    af as k,
-    aQ as D,
-    T as N,
-    bB as B,
-    aK as V
-} from "./App-41.js";
+    o as e
+} from "./rolldown-runtime.js";
 import {
-    p as w
-} from "./playSound.js";
-import {
-    G as c
+    t
 } from "./GetAssetPath.js";
 import {
-    g as y,
-    S as b,
-    e as _,
-    n as m,
-    L as O,
-    d as A,
-    s as R
-} from "./FixSpinePlugin.js";
+    t as n
+} from "./lodash.js";
 import {
-    F as Y,
-    C as h,
-    a as r,
-    b as z,
-    c as M,
-    d as F
-} from "./ItemNameWithAmount.js";
+    t as r
+} from "./playSound.js";
 import {
-    N as $
-} from "./NewWidthSameAspectRatio.js";
+    t as i
+} from "./phaser.js";
 import {
-    C as x
+    E as a,
+    T as o,
+    o as s,
+    s as c
+} from "./FixPhaserBootProcess.js";
+import {
+    t as l
+} from "./stores-2.js";
+import {
+    t as u
+} from "./InPhase.js";
+import {
+    t as d
+} from "./FetchMyId.js";
+import {
+    s as f,
+    t as p
+} from "./Device.js";
+import {
+    t as m
+} from "./FetchItemById.js";
+import {
+    r as h
+} from "./GlobalLocalDepth.js";
+import {
+    t as g
 } from "./CapitalizeFirstLetter.js";
 import {
-    ar as Q
-} from "./_index.js";
+    Bt as _,
+    Et as v
+} from "./App-42.js";
 import {
-    A as K
+    t as y
+} from "./NewWidthSameAspectRatio.js";
+import {
+    a as b,
+    i as x,
+    n as S,
+    o as C,
+    r as w,
+    t as T
+} from "./ItemNameWithAmount.js";
+import {
+    t as E
 } from "./AddOutline.js";
 import {
-    R as X
+    t as D
 } from "./RemoveOutline.js";
-import "./Button.js";
-import "./polished.esm.js";
-import "./inheritsLoose.js";
-import "./mobxreact.esm.js";
-import "./index-21.js";
-import "./QuizTypes.js";
-import "./MapModeType.js";
-import "./TutorialConsts.js";
-import "./ActionButton.js";
-import "./index-5.js";
-import "./index-18.js";
-import "./context.js";
-import "./FontAwesomeIcon.js";
-import "./Centered.js";
-import "./index-4.js";
-import "./motion.js";
-import "./index-2.js";
-import "./index-14.js";
-import "./EditOutlined.js";
-import "./styleChecker.js";
-import "./index-3.js";
-import "./CheckOutlined.js";
-import "./CopyOutlined.js";
-import "./SixteenByNineScaler.js";
-import "./index-20.js";
-import "./index-22.js";
-import "./index-1.js";
-import "./progress.js";
-import "./ElementIds.js";
-import "./SeasonTicketName.js";
-import "./useQuery.js";
-import "./___vite-browser-external_commonjs-proxy.js";
-import "./util-1.js";
-import "./util-2.js";
-import "./Shortcut.js";
-import "./Names.js";
-import "./useWillUnmount.js";
-import "./CircularProgress.js";
-import "./clsx.m.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
-import "./index-17.js";
-import "./use-force-update.js";
-import "./GimkitLiveQuestion.js";
-import "./Text.js";
-import "./getCloudinaryUrl.js";
-import "./LazyLatexRenderer.js";
-import "./Tooltip.js";
-import "./howler.js";
-import "./use-motion-value.js";
-import "./index-9.js";
-import "./index-23.js";
-import "./useIntervalWhen.js";
-import "./index-10.js";
-import "./move.js";
-import "./react-flip-move.es.js";
-import "./sounds.js";
-import "./MapSound.js";
-import "./App-5.js";
-import "./AnimatedBackground-2.js";
-import "./useDebouncedValue.js";
-import "./CloseCircleOutlined.js";
-import "./MapStyle.js";
-import "./FillRemainingSpace.js";
-import "./index-24.js";
-var I = (t => (t.craft = "craft", t.collect = "collect", t))(I || {});
-class j {
-    constructor(e) {
-        this.craft = i => {
-            this.device.sendToServerDevice(I.craft, {
-                recipe: i
-            });
-            const s = Y(i);
-            s && s.timeToCraftMs > 0 && w({
-                path: c("devices/crafting_table/appear.mp3"),
-                volume: y({
-                    volume: .35,
-                    type: b.soundEffect
+var O = function(e) {
+        return e.craft = `craft`, e.collect = `collect`, e
+    }({}),
+    k = class {
+        constructor(e) {
+            this.craft = e => {
+                this.device.sendToServerDevice(O.craft, {
+                    recipe: e
+                });
+                let n = C(e);
+                n && n.timeToCraftMs > 0 && r({
+                    path: t(`devices/crafting_table/appear.mp3`),
+                    volume: c({
+                        volume: .35,
+                        type: s.soundEffect
+                    })
                 })
-            })
-        }, this.collect = () => {
-            this.device.sendToServerDevice(I.collect), w({
-                path: c("sounds/core/collectItem.mp3"),
-                volume: y({
-                    volume: .7,
-                    type: b.soundEffect
+            }, this.collect = () => {
+                this.device.sendToServerDevice(O.collect), r({
+                    path: t(`sounds/core/collectItem.mp3`),
+                    volume: c({
+                        volume: .7,
+                        type: s.soundEffect
+                    })
                 })
-            })
-        }, this.device = e
-    }
-}
-class q {
-    constructor(e) {
-        this.burst = () => {
-            this.emitter && (this.emitter.setDepth(this.device.getMaxDepth() + 1), this.emitter.explode(50))
-        }, this.destroy = () => {
-            this.emitter && this.emitter.destroy(!0)
-        }, this.load = () => {
-            if (!_()) return;
-            const i = c("devices/crafting_table/particle.png");
-            H({
-                key: i,
-                url: i,
-                onLoad: () => {
-                    this.device.isDestroyed || (this.emitter = this.device.scene.add.particles(this.device.x, this.device.y, i, {
-                        speed: {
-                            min: -400,
-                            max: 400
-                        },
-                        angle: {
-                            min: 180,
-                            max: 360
-                        },
-                        scale: {
-                            start: .5,
-                            end: 0
-                        },
-                        blendMode: m.BlendModes.SCREEN,
-                        emitting: !1,
-                        lifespan: 1e3,
-                        gravityY: 250
-                    }))
-                }
-            })
-        }, this.device = e
-    }
-}
-const J = t => {
-        t.options.style === h.craft && (O() ? t.colliders.add.box({
+            }, this.device = e
+        }
+    },
+    A = e(i()),
+    j = class {
+        constructor(e) {
+            this.burst = () => {
+                this.emitter && (this.emitter.setDepth(this.device.getMaxDepth() + 1), this.emitter.explode(50))
+            }, this.destroy = () => {
+                this.emitter && this.emitter.destroy(!0)
+            }, this.load = () => {
+                if (!u()) return;
+                let e = t(`devices/crafting_table/particle.png`);
+                f({
+                    key: e,
+                    url: e,
+                    onLoad: () => {
+                        this.device.isDestroyed || (this.emitter = this.device.scene.add.particles(this.device.x, this.device.y, e, {
+                            speed: {
+                                min: -400,
+                                max: 400
+                            },
+                            angle: {
+                                min: 180,
+                                max: 360
+                            },
+                            scale: {
+                                start: .5,
+                                end: 0
+                            },
+                            blendMode: A.default.BlendModes.SCREEN,
+                            emitting: !1,
+                            lifespan: 1e3,
+                            gravityY: 250
+                        }))
+                    }
+                })
+            }, this.device = e
+        }
+    },
+    M = e => {
+        e.options.style === b.craft && (a() ? e.colliders.add.box({
             x: 0,
             y: 13,
             w: 105,
             h: 70
-        }) : A() && (t.colliders.add.box({
+        }) : o() && (e.colliders.add.box({
             x: 0,
             y: 0,
             w: 105,
             h: 92
-        }), t.colliders.add.box({
+        }), e.colliders.add.box({
             x: -39,
             y: 56,
             w: 14,
             h: 24
-        }), t.colliders.add.box({
+        }), e.colliders.add.box({
             x: 38,
             y: 56,
             w: 14,
             h: 24
         })))
     },
-    P = t => t.newWidth / t.width,
-    n = {
+    N = e => e.newWidth / e.width,
+    P = {
         itemCreated: {
             duration: 250,
-            ease: m.Math.Easing.Quadratic.Out
+            ease: A.default.Math.Easing.Quadratic.Out
         },
         itemDestroyed: {
             duration: 200,
-            ease: m.Math.Easing.Sine.Out
+            ease: A.default.Math.Easing.Sine.Out
         },
         itemReady: {
-            applyItemAnimation: (t, e) => {
-                const i = e.scale;
-                t.tweens.add({
-                    targets: e,
+            applyItemAnimation: (e, t) => {
+                let n = t.scale;
+                e.tweens.add({
+                    targets: t,
                     scale: {
-                        from: i,
-                        to: i * 1.1
+                        from: n,
+                        to: n * 1.1
                     },
                     duration: 1e3,
-                    ease: m.Math.Easing.Sine.Out,
+                    ease: A.default.Math.Easing.Sine.Out,
                     yoyo: !0,
                     repeat: -1
                 })
             },
-            applyShineAnimation: (t, e) => {
-                t.tweens.add({
-                    targets: e,
+            applyShineAnimation: (e, t) => {
+                e.tweens.add({
+                    targets: t,
                     alpha: .25,
                     duration: 500,
-                    ease: m.Math.Easing.Sine.In,
+                    ease: A.default.Math.Easing.Sine.In,
                     yoyo: !0,
                     repeat: -1
                 })
             }
         }
     },
-    E = {
+    F = {
         width: 60
     },
-    u = t => A() ? t.layers.getLayer() : t.options.style == h.plant ? T.DevicesUnderCharacters : T.DepthSortedCharactersAndDevices,
-    L = t => {
-        if (!t.state.itemId) return;
-        const e = k(t.state.itemId);
-        if (e) {
-            if (t.pieces.item) {
-                if (t.pieces.item.view.texture.key === e.previewImage) return;
-                t.pieces.item.destroy(), t.pieces.item = void 0
+    I = e => o() ? e.layers.getLayer() : e.options.style == b.plant ? h.DevicesUnderCharacters : h.DepthSortedCharactersAndDevices,
+    L = e => {
+        if (!e.state.itemId) return;
+        let t = m(e.state.itemId);
+        if (t) {
+            if (e.pieces.item) {
+                if (e.pieces.item.view.texture.key === t.previewImage) return;
+                e.pieces.item.destroy(), e.pieces.item = void 0
             }
-            t.pieces.item = t.parts.add.sprite({
-                imageId: e.previewImage,
-                imageUrl: e.previewImage,
-                layerId: u(t),
-                onReady: i => {
-                    i.view.setDepth(t.getMaxDepth() + D(1));
-                    const s = t.state.status === r.availableForCollection;
-                    i.view.alpha = s ? 1 : 0;
-                    const o = P({
-                        width: i.view.displayWidth,
-                        newWidth: E.width
+            e.pieces.item = e.parts.add.sprite({
+                imageId: t.previewImage,
+                imageUrl: t.previewImage,
+                layerId: I(e),
+                onReady: t => {
+                    t.view.setDepth(e.getMaxDepth() + v(1));
+                    let n = e.state.status === x.availableForCollection;
+                    t.view.alpha = +!!n;
+                    let r = N({
+                        width: t.view.displayWidth,
+                        newWidth: F.width
                     });
-                    if (i.view.setScale(o), s) {
-                        n.itemReady.applyItemAnimation(t, i.view);
+                    if (t.view.setScale(r), n) {
+                        P.itemReady.applyItemAnimation(e, t.view);
                         return
                     }
-                    const p = Number(i.view.scale);
-                    i.view.scale = 0, t.tweens.add({
-                        targets: i.view,
-                        scale: p,
-                        duration: n.itemCreated.duration,
-                        ease: n.itemCreated.ease
+                    let i = Number(t.view.scale);
+                    t.view.scale = 0, e.tweens.add({
+                        targets: t.view,
+                        scale: i,
+                        duration: P.itemCreated.duration,
+                        ease: P.itemCreated.ease
                     })
                 }
             })
         }
     },
-    Z = t => {
-        const e = t.state.itemId;
-        if (!e) return;
-        const i = k(e);
-        i && (t.pieces.itemShine && (t.pieces.itemShine.destroy(), t.pieces.itemShine = null), t.pieces.itemShine = t.parts.add.sprite({
-            imageId: i.previewImage,
-            imageUrl: i.previewImage,
-            layerId: u(t),
-            onReady: s => {
-                s.view.setDepth(t.getMaxDepth() + D(2));
-                const o = P({
-                    width: s.view.displayWidth,
-                    newWidth: E.width
+    R = e => {
+        let t = e.state.itemId;
+        if (!t) return;
+        let n = m(t);
+        n && (e.pieces.itemShine && (e.pieces.itemShine.destroy(), e.pieces.itemShine = null), e.pieces.itemShine = e.parts.add.sprite({
+            imageId: n.previewImage,
+            imageUrl: n.previewImage,
+            layerId: I(e),
+            onReady: t => {
+                t.view.setDepth(e.getMaxDepth() + v(2));
+                let n = N({
+                    width: t.view.displayWidth,
+                    newWidth: F.width
                 });
-                s.view.setScale(o), s.view.alpha = 0, s.view.blendMode = m.BlendModes.ADD, n.itemReady.applyShineAnimation(t, s.view)
+                t.view.setScale(n), t.view.alpha = 0, t.view.blendMode = A.default.BlendModes.ADD, P.itemReady.applyShineAnimation(e, t.view)
             }
         }))
     },
-    v = t => t.options.style === h.plant ? {
-        key: "crafting-table-plant",
-        url: c("/devices/crafting_table/dirt.png"),
+    z = e => e.options.style === b.plant ? {
+        key: `crafting-table-plant`,
+        url: t(`/devices/crafting_table/dirt.png`),
         displayWidth: 120
     } : {
-        key: "crafting-table",
-        url: c("/devices/crafting_table/table.png"),
+        key: `crafting-table`,
+        url: t(`/devices/crafting_table/table.png`),
         displayWidth: 110,
         originY: 1,
         y: 67
     },
-    tt = t => {
-        const {
-            key: e,
-            url: i,
-            displayWidth: s,
-            y: o,
-            originY: p
-        } = v(t);
-        t.pieces.base = t.parts.add.sprite({
-            imageId: e,
-            imageUrl: i,
-            originY: p ?? .5,
-            y: o ?? 0,
-            layerId: u(t),
-            depthChange: D(1),
-            onReady: l => {
-                const f = $({
-                    height: l.view.displayHeight,
-                    width: l.view.displayWidth,
-                    newWidth: s
+    B = e => {
+        let {
+            key: t,
+            url: n,
+            displayWidth: r,
+            y: i,
+            originY: o
+        } = z(e);
+        e.pieces.base = e.parts.add.sprite({
+            imageId: t,
+            imageUrl: n,
+            originY: o ?? .5,
+            y: i ?? 0,
+            layerId: I(e),
+            depthChange: v(1),
+            onReady: e => {
+                let t = y({
+                    height: e.view.displayHeight,
+                    width: e.view.displayWidth,
+                    newWidth: r
                 });
-                l.view.setDisplaySize(f.width, f.height)
+                e.view.setDisplaySize(t.width, t.height)
             }
-        }), t.options.style === h.craft && O() && t.shadows.add({
+        }), e.options.style === b.craft && a() && e.shadows.add({
             r1: 70,
             r2: 30,
             y: 52
-        }), t.state.status !== r.idle && (L(t), t.state.status === r.availableForCollection && Z(t)), t.particles.load()
+        }), e.state.status !== x.idle && (L(e), e.state.status === x.availableForCollection && R(e)), e.particles.load()
     },
-    et = t => {
-        t.deviceUI.open({
-            status: t.state.status,
-            style: t.options.style,
-            tableGroup: t.options.group,
-            craft: t.callbackHelper.craft,
-            collect: t.callbackHelper.collect,
-            item: t.state.itemId,
-            itemAmount: t.state.itemAmount,
-            craftingDurationMs: t.state.craftingDurationMs,
-            itemFinishesCraftingAt: t.state.itemFinishesCraftingAt,
-            itemDisposalMs: t.state.itemDisposalMs,
-            itemDisposedAt: t.state.itemDisposedAt,
-            itemCrafterCharacterId: t.state.itemCrafterCharacterId,
-            useCrafterCollectionAdvantage: t.options.useCrafterCollectionAdvantage
+    V = e => {
+        e.deviceUI.open({
+            status: e.state.status,
+            style: e.options.style,
+            tableGroup: e.options.group,
+            craft: e.callbackHelper.craft,
+            collect: e.callbackHelper.collect,
+            item: e.state.itemId,
+            itemAmount: e.state.itemAmount,
+            craftingDurationMs: e.state.craftingDurationMs,
+            itemFinishesCraftingAt: e.state.itemFinishesCraftingAt,
+            itemDisposalMs: e.state.itemDisposalMs,
+            itemDisposedAt: e.state.itemDisposedAt,
+            itemCrafterCharacterId: e.state.itemCrafterCharacterId,
+            useCrafterCollectionAdvantage: e.options.useCrafterCollectionAdvantage
         })
     },
-    it = t => {
-        const {
-            style: e
-        } = t.options;
-        if (e === h.plant) {
-            t.interactiveZones.add.circle({
-                r: 100
-            });
-            return
-        }
-        t.interactiveZones.add.circle({
+    H = e => {
+        let {
+            style: t
+        } = e.options;
+        t === b.plant ? e.interactiveZones.add.circle({
+            r: 100
+        }) : e.interactiveZones.add.circle({
             r: 120,
             y: 10
         })
     },
-    d = t => {
-        if (t.state.status === r.availableForCollection) {
-            let e = 1;
-            if (!(t.state.itemCrafterCharacterId === N()) && t.options.useCrafterCollectionAdvantage) {
-                const s = t.state.itemFinishesCraftingAt + z.secondsAdvantage * 1e3,
-                    o = Math.ceil((s - R.session.gameTime) / 1e3);
-                o < 1 ? e = 1 : (t.refetchInteractionTimeout = window.setTimeout(() => {
-                    d(t)
-                }, 250), e = o)
+    U = e => {
+        if (e.state.status === x.availableForCollection) {
+            let t = 1;
+            if (e.state.itemCrafterCharacterId !== d() && e.options.useCrafterCollectionAdvantage) {
+                let n = e.state.itemFinishesCraftingAt + S.secondsAdvantage * 1e3,
+                    r = Math.ceil((n - l.session.gameTime) / 1e3);
+                r < 1 ? t = 1 : (e.refetchInteractionTimeout = window.setTimeout(() => {
+                    U(e)
+                }, 250), t = r)
             }
-            t.interactiveZones.setInfo({
-                message: `Collect ${M(t.state.itemId,t.state.itemAmount)}`,
+            e.interactiveZones.setInfo({
+                message: `Collect ${T(e.state.itemId,e.state.itemAmount)}`,
                 allowedToInteract: !0,
-                duration: e
-            }), t.interactiveZones.onInteraction = () => {
-                t.callbackHelper.collect()
+                duration: t
+            }), e.interactiveZones.onInteraction = () => {
+                e.callbackHelper.collect()
             }
-        } else t.state.status === r.idle ? t.interactiveZones.setInfo({
-            message: x(F.baseVerb(t.options.style)),
+        } else e.state.status === x.idle ? e.interactiveZones.setInfo({
+            message: g(w.baseVerb(e.options.style)),
             allowedToInteract: !0
-        }) : t.interactiveZones.setInfo({
-            message: `${x(F.preparing(t.options.style))} ${M(t.state.itemId,t.state.itemAmount)}`,
-            action: "to check status",
+        }) : e.interactiveZones.setInfo({
+            message: `${g(w.preparing(e.options.style))} ${T(e.state.itemId,e.state.itemAmount)}`,
+            action: `to check status`,
             allowedToInteract: !0
-        }), t.interactiveZones.onInteraction = () => {
-            t.openDeviceUI()
+        }), e.interactiveZones.onInteraction = () => {
+            e.openDeviceUI()
         }
     },
-    st = t => {
-        if (t.pieces.item) {
-            const e = t.pieces.item;
-            t.pieces.item = void 0, t.tweens.add({
-                targets: e.view,
+    W = e => {
+        if (e.pieces.item) {
+            let t = e.pieces.item;
+            e.pieces.item = void 0, e.tweens.add({
+                targets: t.view,
                 scale: 0,
                 opacity: .5,
-                duration: n.itemDestroyed.duration,
-                ease: n.itemDestroyed.ease,
+                duration: P.itemDestroyed.duration,
+                ease: P.itemDestroyed.ease,
                 onComplete: () => {
-                    e.destroy()
+                    t.destroy()
                 }
             })
         }
-        if (t.pieces.itemShine) {
-            const e = t.pieces.itemShine;
-            t.pieces.itemShine = void 0, t.tweens.add({
-                targets: e.view,
+        if (e.pieces.itemShine) {
+            let t = e.pieces.itemShine;
+            e.pieces.itemShine = void 0, e.tweens.add({
+                targets: t.view,
                 scale: 0,
                 opacity: .5,
-                duration: n.itemDestroyed.duration,
-                ease: n.itemDestroyed.ease,
+                duration: P.itemDestroyed.duration,
+                ease: P.itemDestroyed.ease,
                 onComplete: () => {
-                    e.destroy()
+                    t.destroy()
                 }
             })
         }
     },
-    U = t => {
-        !t.pieces.progressBar.background || !t.pieces.progressBar.bar || (t.pieces.progressBar.background.view.destroy(), t.pieces.progressBar.bar.view.destroy(), t.pieces.progressBar.background = void 0, t.pieces.progressBar.bar = void 0)
+    G = e => {
+        e.pieces.progressBar.background && e.pieces.progressBar.bar && (e.pieces.progressBar.background.view.destroy(), e.pieces.progressBar.bar.view.destroy(), e.pieces.progressBar.background = void 0, e.pieces.progressBar.bar = void 0)
     },
-    at = t => {
-        const e = t.state.status;
-        e === r.idle && (st(t), U(t)), (e === r.crafting || e === r.availableForCollection) && L(t), e === r.availableForCollection && (t.pieces.item && n.itemReady.applyItemAnimation(t, t.pieces.item.view), Z(t), t.state.itemDisposedAt || U(t), t.cull.isInsideView && !R.session.loadingPhase && Date.now() - t.createdAt > 1500 && (w({
-            path: c("devices/crafting_table/complete.mp3"),
-            volume: y({
+    K = e => {
+        let n = e.state.status;
+        n === x.idle && (W(e), G(e)), (n === x.crafting || n === x.availableForCollection) && L(e), n === x.availableForCollection && (e.pieces.item && P.itemReady.applyItemAnimation(e, e.pieces.item.view), R(e), e.state.itemDisposedAt || G(e), e.cull.isInsideView && !l.session.loadingPhase && Date.now() - e.createdAt > 1500 && (r({
+            path: t(`devices/crafting_table/complete.mp3`),
+            volume: c({
                 volume: .4,
-                type: b.soundEffect
+                type: s.soundEffect
             })
-        }), t.particles.burst())), t.deviceUI.update({
-            status: t.state.status
-        }), d(t)
+        }), e.particles.burst())), e.deviceUI.update({
+            status: e.state.status
+        }), U(e)
     },
-    rt = (t, e) => {
-        t === "status" && at(e), t === "itemId" && (e.deviceUI.update({
-            item: e.state.itemId
-        }), d(e)), t === "craftingDurationMs" && e.deviceUI.update({
-            craftingDurationMs: e.state.craftingDurationMs
-        }), t === "itemFinishesCraftingAt" && e.deviceUI.update({
-            itemFinishesCraftingAt: e.state.itemFinishesCraftingAt
-        }), t === "itemAmount" && e.deviceUI.update({
-            itemAmount: e.state.itemAmount
-        }), t === "itemDisposedAt" && e.deviceUI.update({
-            itemDisposedAt: e.state.itemDisposedAt
-        }), t === "itemDisposalMs" && e.deviceUI.update({
-            itemDisposalMs: e.state.itemDisposalMs
-        }), t === "itemCrafterCharacterId" && e.deviceUI.update({
-            itemCrafterCharacterId: e.state.itemCrafterCharacterId
+    q = (e, t) => {
+        e === `status` && K(t), e === `itemId` && (t.deviceUI.update({
+            item: t.state.itemId
+        }), U(t)), e === `craftingDurationMs` && t.deviceUI.update({
+            craftingDurationMs: t.state.craftingDurationMs
+        }), e === `itemFinishesCraftingAt` && t.deviceUI.update({
+            itemFinishesCraftingAt: t.state.itemFinishesCraftingAt
+        }), e === `itemAmount` && t.deviceUI.update({
+            itemAmount: t.state.itemAmount
+        }), e === `itemDisposedAt` && t.deviceUI.update({
+            itemDisposedAt: t.state.itemDisposedAt
+        }), e === `itemDisposalMs` && t.deviceUI.update({
+            itemDisposalMs: t.state.itemDisposalMs
+        }), e === `itemCrafterCharacterId` && t.deviceUI.update({
+            itemCrafterCharacterId: t.state.itemCrafterCharacterId
         })
     },
-    a = {
+    J = n(),
+    Y = {
         width: 55,
         height: 12,
         backgroundColor: 16777215,
@@ -457,100 +409,109 @@ const J = t => {
         borderWidth: 5,
         progressColor: 4431943,
         expirationColor: 15092249,
-        yOffset: t => t.options.style === h.plant ? 70 : A() ? -75 : 85
+        yOffset: e => e.options.style === b.plant ? 70 : o() ? -75 : 85
     },
-    ot = t => {
-        t.pieces.progressBar.background && t.pieces.progressBar.background.destroy(), t.pieces.progressBar.bar && t.pieces.progressBar.bar.destroy(), t.pieces.progressBar.background = t.parts.add.rect({
-            width: a.width,
-            height: a.height,
-            y: a.yOffset(t),
-            color: a.backgroundColor,
-            borderColor: a.borderColor,
-            borderWidth: a.borderWidth,
+    X = e => {
+        e.pieces.progressBar.background && e.pieces.progressBar.background.destroy(), e.pieces.progressBar.bar && e.pieces.progressBar.bar.destroy(), e.pieces.progressBar.background = e.parts.add.rect({
+            width: Y.width,
+            height: Y.height,
+            y: Y.yOffset(e),
+            color: Y.backgroundColor,
+            borderColor: Y.borderColor,
+            borderWidth: Y.borderWidth,
             borderAlpha: 1,
-            layerId: u(t)
-        }), t.pieces.progressBar.bar = t.parts.add.rect({
-            width: a.width,
-            height: a.height,
-            y: a.yOffset(t),
-            color: a.progressColor,
-            layerId: u(t)
-        }), t.pieces.progressBar.background.view.setScale(0), t.pieces.progressBar.bar.view.setAlpha(0), t.tweens.add({
-            targets: t.pieces.progressBar.background.view,
+            layerId: I(e)
+        }), e.pieces.progressBar.bar = e.parts.add.rect({
+            width: Y.width,
+            height: Y.height,
+            y: Y.yOffset(e),
+            color: Y.progressColor,
+            layerId: I(e)
+        }), e.pieces.progressBar.background.view.setScale(0), e.pieces.progressBar.bar.view.setAlpha(0), e.tweens.add({
+            targets: e.pieces.progressBar.background.view,
             scale: 1,
-            duration: n.itemCreated.duration,
-            ease: n.itemCreated.ease,
+            duration: P.itemCreated.duration,
+            ease: P.itemCreated.ease,
             onComplete: () => {
-                var e;
-                (e = t.pieces.progressBar.bar) != null && e.view && t.pieces.progressBar.bar.view.setAlpha(1)
+                var t;
+                (t = e.pieces.progressBar.bar) != null && t.view && e.pieces.progressBar.bar.view.setAlpha(1)
             }
         })
     },
-    W = t => {
-        const {
-            device: e,
-            completion: i
-        } = t;
-        (!e.pieces.progressBar.bar || !e.pieces.progressBar.background) && ot(e), e.pieces.progressBar.bar.updateFillColor({
-            color: t.color,
+    Z = e => {
+        let {
+            device: t,
+            completion: n
+        } = e;
+        (!t.pieces.progressBar.bar || !t.pieces.progressBar.background) && X(t), t.pieces.progressBar.bar.updateFillColor({
+            color: e.color,
             blockRedraw: !0
-        }), e.pieces.progressBar.bar.updateDimensions({
-            height: a.height,
-            width: a.width * i
-        }), e.pieces.progressBar.bar.view.setX(e.x - (a.width - a.width * i) / 2)
+        }), t.pieces.progressBar.bar.updateDimensions({
+            height: Y.height,
+            width: Y.width * n
+        }), t.pieces.progressBar.bar.view.setX(t.x - (Y.width - Y.width * n) / 2)
     },
-    nt = t => {
-        var e, i, s, o, p, l, f, S;
-        if (t.cull.isInsideView) {
-            if (t.state.status === r.crafting) {
-                const C = t.state.itemFinishesCraftingAt - t.state.craftingDurationMs,
-                    g = (B() - C) / t.state.craftingDurationMs;
-                W({
-                    device: t,
-                    completion: g,
-                    color: a.progressColor
+    Q = e => {
+        if (e.cull.isInsideView) {
+            if (e.state.status === x.crafting) {
+                var t;
+                let n = e.state.itemFinishesCraftingAt - e.state.craftingDurationMs,
+                    r = (_() - n) / e.state.craftingDurationMs;
+                Z({
+                    device: e,
+                    completion: r,
+                    color: Y.progressColor
                 });
-                const G = Q.clamp(g, .25, 1);
-                (s = (i = (e = t.pieces) == null ? void 0 : e.item) == null ? void 0 : i.view) == null || s.setAlpha(G)
+                let i = (0, J.clamp)(r, .25, 1);
+                (t = e.pieces) == null || (t = t.item) == null || (t = t.view) == null || t.setAlpha(i)
             }
-            if (t.state.status === r.availableForCollection && ((l = (p = (o = t.pieces) == null ? void 0 : o.item) == null ? void 0 : p.view) == null || l.setAlpha(1), t.state.itemDisposedAt)) {
-                const C = t.state.itemDisposedAt - t.state.itemDisposalMs,
-                    g = 1 - (B() - C) / t.state.itemDisposalMs;
-                W({
-                    device: t,
-                    completion: g,
-                    color: a.expirationColor
+            if (e.state.status === x.availableForCollection) {
+                var n;
+                if ((n = e.pieces) == null || (n = n.item) == null || (n = n.view) == null || n.setAlpha(1), e.state.itemDisposedAt) {
+                    let t = e.state.itemDisposedAt - e.state.itemDisposalMs;
+                    Z({
+                        device: e,
+                        completion: 1 - (_() - t) / e.state.itemDisposalMs,
+                        color: Y.expirationColor
+                    })
+                }
+            }
+            if (e.itemIsOutlined && (!e.interactivity.withinBounds || e.state.status !== x.availableForCollection)) {
+                var r;
+                e.itemIsOutlined = !1, (r = e.pieces) != null && r.item && D({
+                    view: e.pieces.item.view
                 })
             }
-            t.itemIsOutlined && (!t.interactivity.withinBounds || t.state.status !== r.availableForCollection) && (t.itemIsOutlined = !1, (f = t.pieces) != null && f.item && X({
-                view: t.pieces.item.view
-            })), t.interactivity.withinBounds && t.state.status === r.availableForCollection && !t.itemIsOutlined && (S = t.pieces.item) != null && S.view && (t.itemIsOutlined = !0, K({
-                view: t.pieces.item.view
-            }))
+            if (e.interactivity.withinBounds && e.state.status === x.availableForCollection) {
+                var i;
+                !e.itemIsOutlined && (i = e.pieces.item) != null && i.view && (e.itemIsOutlined = !0, E({
+                    view: e.pieces.item.view
+                }))
+            }
+        }
+    },
+    $ = class extends p {
+        constructor(e) {
+            super(e), this.pieces = {
+                progressBar: {}
+            }, this.interactivity = {
+                withinBounds: !1
+            }, this.itemIsOutlined = !1, this.openDeviceUI = () => {
+                V(this)
+            }, this.onStateChange = e => {
+                q(e, this)
+            }, this.onUpdate = () => {
+                Q(this)
+            }, this.onDestroy = () => {
+                this.particles.destroy(), this.refetchInteractionTimeout && window.clearTimeout(this.refetchInteractionTimeout)
+            }, this.createdAt = Date.now(), M(this), this.callbackHelper = new k(this), this.particles = new j(this), H(this), B(this), U(this), this.interactiveZones.onInteractiveCb = () => {
+                this.interactivity.withinBounds = !0
+            }, this.interactiveZones.onNonInteractive = () => {
+                this.interactivity.withinBounds = !1
+            }
         }
     };
-class xe extends V {
-    constructor(e) {
-        super(e), this.pieces = {
-            progressBar: {}
-        }, this.interactivity = {
-            withinBounds: !1
-        }, this.itemIsOutlined = !1, this.openDeviceUI = () => {
-            et(this)
-        }, this.onStateChange = i => {
-            rt(i, this)
-        }, this.onUpdate = () => {
-            nt(this)
-        }, this.onDestroy = () => {
-            this.particles.destroy(), this.refetchInteractionTimeout && window.clearTimeout(this.refetchInteractionTimeout)
-        }, this.createdAt = Date.now(), J(this), this.callbackHelper = new j(this), this.particles = new q(this), it(this), tt(this), d(this), this.interactiveZones.onInteractiveCb = () => {
-            this.interactivity.withinBounds = !0
-        }, this.interactiveZones.onNonInteractive = () => {
-            this.interactivity.withinBounds = !1
-        }
-    }
-}
 export {
-    xe as
+    $ as
     default
 };

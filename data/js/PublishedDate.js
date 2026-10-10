@@ -1,21 +1,22 @@
 import {
-    j as i
-} from "./_index.js";
-const n = ({
-        value: t
+    t as e
+} from "./jsx-runtime.js";
+var t = e(),
+    n = ({
+        value: e
     }) => {
-        const e = t ? new Date(t) : null;
-        return !e || Number.isNaN(e.getTime()) ? null : i.jsx("time", {
-            dateTime: e.toISOString(),
-            title: e.toLocaleString(),
-            children: e.toLocaleDateString(void 0, {
-                month: "short",
-                day: "numeric",
-                year: "numeric"
+        let n = e ? new Date(e) : null;
+        return !n || Number.isNaN(n.getTime()) ? null : (0, t.jsx)(`time`, {
+            dateTime: n.toISOString(),
+            title: n.toLocaleString(),
+            children: n.toLocaleDateString(void 0, {
+                month: `short`,
+                day: `numeric`,
+                year: `numeric`
             })
         })
     },
-    a = t => !!t && !Number.isNaN(new Date(t).getTime());
+    r = e => !!e && !Number.isNaN(new Date(e).getTime());
 export {
-    n as P, a as h
+    r as n, n as t
 };

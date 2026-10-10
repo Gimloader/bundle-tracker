@@ -1,28 +1,28 @@
 import {
-    M as e
-} from "./MapSound.js";
-import {
-    G as s
+    t as e
 } from "./GetAssetPath.js";
-const c = {
-    correct: new e({
-        src: [s("devices/gimkit_live_question/sounds/correct.mp3")],
+import {
+    t
+} from "./MapSound.js";
+var n = {
+    correct: new t({
+        src: [e(`devices/gimkit_live_question/sounds/correct.mp3`)],
         volume: .7,
         preload: !1
     }),
-    correctCash: new e({
-        src: [s("devices/gimkit_live_question/sounds/correct_cash.mp3")],
+    correctCash: new t({
+        src: [e(`devices/gimkit_live_question/sounds/correct_cash.mp3`)],
         preload: !1
     }),
-    incorrect: new e({
-        src: [s("devices/gimkit_live_question/sounds/incorrect.mp3")],
+    incorrect: new t({
+        src: [e(`devices/gimkit_live_question/sounds/incorrect.mp3`)],
         preload: !1
     }),
-    click: new e({
-        src: [s("devices/gimkit_live_question/sounds/click.mp3")],
+    click: new t({
+        src: [e(`devices/gimkit_live_question/sounds/click.mp3`)],
         preload: !1
     })
 };
 export {
-    c as G
+    n as t
 };

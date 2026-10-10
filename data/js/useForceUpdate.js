@@ -1,11 +1,15 @@
 import {
-    r as t
-} from "./_index.js";
+    o as e
+} from "./rolldown-runtime.js";
+import {
+    t
+} from "./react-1.js";
+var n = e(t());
 
-function c() {
-    const [, e] = t.useReducer(r => r + 1, 0);
+function r() {
+    let [, e] = n.useReducer(e => e + 1, 0);
     return e
 }
 export {
-    c as u
+    r as t
 };

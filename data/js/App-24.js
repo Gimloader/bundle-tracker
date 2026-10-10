@@ -1,293 +1,355 @@
 import {
-    j as e,
-    e as c,
-    F as R,
-    d as s,
-    c3 as l,
-    c4 as a,
-    c5 as p,
-    B as u,
-    c6 as I,
-    c7 as E,
-    D as h,
-    C as M,
-    az as B,
-    r,
-    W as D,
-    V as v,
-    ac as O,
-    a as b,
-    T as _,
-    U as N,
-    S as U,
-    h as C,
-    t as F
+    o as e
+} from "./rolldown-runtime.js";
+import {
+    C as t,
+    D as n,
+    l as r
+} from "./utils.js";
+import {
+    t as i
+} from "./react-1.js";
+import {
+    n as a
+} from "./compact-item.js";
+import {
+    t as o
+} from "./message.js";
+import {
+    t as s
+} from "./modal.js";
+import {
+    t as c
+} from "./button.js";
+import {
+    t as l
+} from "./input.js";
+import {
+    t as u
+} from "./card.js";
+import {
+    t as d
+} from "./spin.js";
+import {
+    t as f
+} from "./App-4.js";
+import {
+    t as p
+} from "./copy-to-clipboard.js";
+import {
+    t as m
+} from "./jsx-runtime.js";
+import {
+    c as h,
+    l as g,
+    n as _,
+    s as v,
+    y
 } from "./_index.js";
 import {
-    S as G
-} from "./App-4.js";
-import "./Shortcut.js";
-import "./Names.js";
-import "./mobxreact.esm.js";
-import "./AccessibleAnchor.js";
-import "./index-1.js";
-import "./index-2.js";
-import "./index-6.js";
-import "./FontAwesomeIcon.js";
-import "./App-2.js";
-import "./Sizes.js";
-import "./motion.js";
-import "./price.js";
-import "./TrackPostHogEvent.js";
-import "./index-3.js";
-import "./index-4.js";
-import "./context.js";
-import "./StarOutlined.js";
-import "./NavigateTo.js";
-import "./index-15.js";
-import "./colors.js";
-import "./useWarningOnMountInDevelopment.js";
-import "./index-10.js";
-import "./index-5.js";
-import "./move.js";
-const L = t => e.jsxs("div", {
-        className: "flex vc flex-column",
-        children: [e.jsx("img", {
-            src: "/client/img/quote/medal.svg",
-            style: {
-                height: 130
-            }
-        }), e.jsx(z, {
-            children: "Woohoo!"
-        }), e.jsx(Y, {
-            children: t.isRenewal ? "Your group license renewal is complete!" : "Your group license is ready to go!"
-        })]
-    }),
-    z = s.h1`
-  color: ${c.Black};
-  font-weight: ${R.UltraBold};
-  font-size: 50px;
+    t as b
+} from "./Money.js";
+var x = e(i()),
+    S = e(p()),
+    C = m(),
+    w = g(u)`
+  display: flex;
+  padding: 20px;
+  margin-bottom: 14px !important;
+  border-radius: 6px;
+  color: black;
+  font-family: ${h.SFPro};
+
+  .ant-card-body {
+    width: 100%;
+    display: flex;
+  }
 `,
-    Y = s.p`
-  margin-top: -41px;
-  font-size: 18px;
+    T = g.h2`
+  font-size: 27px;
+  font-weight: ${v.UltraBold};
+  margin-bottom: 0px;
 `,
-    W = t => e.jsxs(e.Fragment, {
-        children: [e.jsxs(l, {
-            children: [e.jsx(a, {
-                children: "Invoice"
-            }), e.jsx(p, {
-                children: "Click the button below to print out your invoice. A copy of this invoice has also been sent to your email."
-            }), e.jsx(u, {
-                style: {
-                    marginTop: 5
-                },
-                href: t.invoiceLink,
-                target: "_blank",
-                type: "primary",
-                block: !0,
-                children: "Print Invoice"
-            })]
-        }), e.jsx("div", {
-            style: {
-                height: 10
-            }
-        }), e.jsxs(l, {
-            children: [e.jsx(a, {
-                children: "Payment Information"
-            }), e.jsxs(p, {
-                children: [e.jsx("div", {
-                    style: {
-                        marginTop: 3
-                    },
-                    children: "Please send your check to the following address:"
-                }), e.jsx("br", {}), e.jsx("div", {
-                    children: e.jsx("b", {
-                        children: "Gimkit, Inc"
-                    })
-                }), e.jsx("div", {
-                    children: I
-                }), e.jsx("div", {
-                    children: E
-                }), e.jsx(h, {}), e.jsx("div", {
-                    children: "With the check, please include a copy of the invoice. All Gimkit invoices on Purchase Orders have NET45 Terms."
-                })]
-            })]
-        })]
-    }),
-    H = t => e.jsx(e.Fragment, {
-        children: e.jsxs(l, {
-            children: [e.jsx(a, {
-                children: "Receipt"
-            }), e.jsx(p, {
-                children: "Click the button below to print out your receipt A copy of this receipt has also been sent to your email."
-            }), e.jsx(u, {
-                style: {
-                    marginTop: 5
-                },
-                href: t.receiptLink,
-                target: "_blank",
-                type: "primary",
-                block: !0,
-                children: "Print Receipt"
-            })]
-        })
-    }),
-    q = t => {
-        const {
-            isRenewal: o
-        } = t;
-        return e.jsxs(l, {
-            children: [e.jsx(a, {
-                children: o ? "Renewal Complete!" : "Get Started!"
-            }), e.jsx(p, {
-                children: o ? "Your new group license is active! All of your teachers have been imported over from your expiring group. Click the button below to manage your new group license!" : `Your group license is active! Click the button below to invite your teachers to join your license and gain ${M} Pro access!`
-            }), e.jsx(u, {
-                href: B,
-                type: "primary",
-                style: {
-                    marginTop: 5
-                },
-                block: !0,
-                children: "Manage Group"
-            })]
-        })
+    E = g(T)`
+  font-size: 22px;
+`,
+    D = g.p`
+  margin-bottom: 0px;
+`,
+    O = g.div`
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 50%;
+`,
+    k = g.div`
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 50%;
+`,
+    A = g.div`
+  margin: 0;
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 32px;
+  padding: 4px 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+
+  &:hover {
+    cursor: pointer;
+  }
+`,
+    j = e => e.replace(/(.{4})(.{4})(.{4})(.{4})(.{4})/, `$1-$2-$3-$4-$5`),
+    M = e => {
+        (0, S.default)(j(e)), o.success(`Gift card copied to clipboard!`)
     },
-    V = [{
-        text: "Group license help center",
-        link: "https://help.gimkit.com/en/category/group-subscriptions-3m7198/"
-    }, {
-        text: "Managing group licenses",
-        link: "https://help.gimkit.com/en/article/managing-group-subscriptions-117yzia/"
-    }],
-    J = () => e.jsxs(K, {
-        className: "flex vc flex-column",
-        children: [e.jsx(w, {
-            children: "📚 Resources"
-        }), e.jsx(S, {
-            children: "Take a look at the resources below to help you use your group license!"
-        }), V.map(t => e.jsx("div", {
-            style: {
-                fontSize: 16,
-                marginBottom: 5
-            },
-            children: e.jsx("a", {
-                href: t.link,
-                target: "_blank",
-                children: t.text
-            })
-        }, t.link)), e.jsx(h, {}), e.jsx(w, {
-            children: "👋 Need Help?"
-        }), e.jsx("div", {
-            style: {
-                height: 5
-            }
-        }), e.jsxs(S, {
-            children: ["Just email us at", " ", e.jsx("a", {
-                href: "mailto:groups@gimkit.com",
-                children: "groups@gimkit.com"
-            }), "!"]
+    N = e => (0, C.jsxs)(w, {
+        children: [(0, C.jsxs)(O, {
+            children: [(0, C.jsx)(T, {
+                children: b(e.value)
+            }), e.purchaseDate && (0, C.jsxs)(D, {
+                children: [`Purchased `, n(e.purchaseDate), ` `]
+            }), e.dateRedeemed ? (0, C.jsxs)(D, {
+                children: [`Redeemed `, n(e.dateRedeemed), ` `]
+            }) : (0, C.jsx)(D, {
+                children: `Not yet redeemed`
+            })]
+        }), e.code && (0, C.jsxs)(k, {
+            children: [(0, C.jsx)(E, {
+                children: `Gift Card Code:`
+            }), (0, C.jsx)(A, {
+                onClick: () => M(e.code),
+                children: j(e.code)
+            })]
         })]
     }),
-    K = s.div`
+    P = g.div``,
+    F = g.h2`
   text-align: center;
+  font-size: 36px;
+  font-family: ${h.SFPro};
+  font-weight: ${v.UltraBold};
 `,
-    w = s.h2`
-  font-size: 32px;
-  font-weight: ${R.UltraBold};
-  color: ${c.Black};
+    I = e => e.gifts && e.gifts.length !== 0 ? (0, C.jsxs)(P, {
+        children: [(0, C.jsx)(F, {
+            children: e.title
+        }), e.gifts.map(t => (0, C.jsx)(N, {
+            value: t.value,
+            dateRedeemed: t.dateRedeemed,
+            code: t.dateRedeemed ? null : t.code,
+            purchaseDate: e.hidePurchaseDate ? null : t.createdAt
+        }, t.code))]
+    }) : null,
+    L = g.div`
+  width: 80%;
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 `,
-    S = s.p`
-  font-size: 17px;
-  margin-top: -25px;
+    R = e => (0, C.jsxs)(L, {
+        children: [(0, C.jsx)(I, {
+            title: `Gifts you've purchased`,
+            gifts: e.purchasedGiftCards
+        }), e.redeemedGiftCards && e.redeemedGiftCards.length !== 0 && e.purchasedGiftCards && e.purchasedGiftCards.length !== 0 && (0, C.jsx)(y, {}), (0, C.jsx)(I, {
+            title: `Gifts you've redeemed`,
+            gifts: e.redeemedGiftCards,
+            hidePurchaseDate: !0
+        })]
+    }),
+    z = g(s)`
+  font-family: ${h.SFPro};
+  color: black;
 `,
-    d = "Error fetching subscription info. Try refreshing the page. If you continue to see this error, please contact support.",
-    Se = () => {
-        const [t, o] = r.useState(!0), [m, x] = r.useState(""), [T, g] = r.useState(""), [P, j] = r.useState(""), [f, y] = r.useState(!1);
-        r.useEffect(() => {
-            D({})
-        }, []), r.useEffect(() => {
-            const k = v("session_id");
-            if (k) O({
-                sessionId: k,
-                onSuccess: n => {
-                    b({
-                        url: `/api/bulk/complete/${n.subscriptionId}`,
-                        success: i => {
-                            x(i.paymentMethod), g(i.receiptUrl), j(i.invoiceUrl), y(i.renewal), o(!1)
-                        },
-                        error: i => C({
-                            title: d
+    B = g.h2`
+  font-weight: ${v.UltraBold};
+  font-size: 25px;
+  margin-bottom: -4px;
+`,
+    V = g.p`
+  font-size: 16px;
+  opacity: 0.8;
+  margin-bottom: 10px;
+`,
+    H = e => (0, C.jsxs)(z, {
+        visible: e.show,
+        onOk: e.redeemGiftCard,
+        onCancel: e.onHide,
+        okText: `Redeem`,
+        okButtonProps: {
+            disabled: !e.cardCode,
+            loading: e.loading
+        },
+        closable: !0,
+        children: [(0, C.jsx)(B, {
+            children: `Redeem a gift card`
+        }), (0, C.jsx)(V, {
+            children: `Dashes not required`
+        }), (0, C.jsx)(l, {
+            onChange: e.onCardCodeChange,
+            value: e.cardCode,
+            size: `large`,
+            placeholder: `Gift card code...`
+        })]
+    }),
+    U = g.div`
+  min-height: 100%;
+  background-color: ${_.Snow};
+`,
+    W = g.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+`,
+    G = g.h1`
+  font-size: 80px;
+  margin-bottom: 0px;
+  font-weight: ${v.UltraBold};
+  margin-top: -10px;
+`,
+    K = g.h2`
+  font-size: 23px;
+  margin-top: -14px;
+`,
+    q = class extends x.Component {
+        constructor(...e) {
+            super(...e), this.state = {
+                cardValue: 0,
+                cardCode: ``,
+                purchasedGiftCards: [],
+                redeemedGiftCards: [],
+                showingRedemptionModal: !1,
+                loading: !0,
+                redeemingGiftCard: !1
+            }, this.fetchPurchasedAndRedeemedGiftCards = () => {
+                t({
+                    url: `/api/gift-cards/fetch`,
+                    success: e => {
+                        this.setState({
+                            purchasedGiftCards: e.purchased,
+                            redeemedGiftCards: e.redeemed
                         })
-                    })
-                },
-                onError: n => C({
-                    title: d
-                }),
-                onBoth: () => o(!1)
-            });
-            else {
-                const n = v("subscriptionId");
-                b({
-                    url: `/api/bulk/complete/${n}`,
-                    success: i => {
-                        x(i.paymentMethod), g(i.receiptUrl), j(i.invoiceUrl), y(i.renewal), o(!1)
                     },
-                    error: i => F({
-                        e: i,
-                        default: {
-                            title: d
-                        }
+                    both: () => this.setState({
+                        loading: !1
                     })
                 })
-            }
-        }, []);
-        const $ = () => e.jsxs(e.Fragment, {
-                children: [e.jsx(L, {
-                    isRenewal: f
-                }), e.jsx(h, {}), m === "creditCard" && e.jsx(H, {
-                    receiptLink: T
-                }), m === "purchaseOrder" && e.jsx(W, {
-                    invoiceLink: P
-                }), e.jsx("div", {
-                    style: {
-                        height: 10
+            }, this.redeemGiftCard = () => {
+                this.setState({
+                    loading: !0,
+                    redeemingGiftCard: !0
+                }), t({
+                    url: `/api/gift-cards/redeem`,
+                    data: {
+                        code: this.state.cardCode
+                    },
+                    success: e => {
+                        s.success({
+                            title: `Success!`,
+                            content: `Gift card redeemed! ${r(e.value/100)} has been added to your account balance.`
+                        }), this.hideRedemptionModal(), this.fetchPurchasedAndRedeemedGiftCards(), this.setState({
+                            cardCode: ``
+                        })
+                    },
+                    error: e => {
+                        let t = e && e.message && e.message.text,
+                            n = `An error occured while redeeming your gift card. Please try again.`;
+                        t && (t.includes(`redeemed`) ? n = `This gift card has already been redeemed` : t.includes(`invalid`) && (n = `This gift card code is invalid`)), s.error({
+                            content: n
+                        })
+                    },
+                    both: () => {
+                        this.setState({
+                            loading: !1,
+                            redeemingGiftCard: !1
+                        })
                     }
-                }), e.jsx(q, {
-                    isRenewal: f
-                }), e.jsx(h, {}), e.jsx(J, {})]
-            }),
-            A = () => t ? e.jsx("div", {
-                className: "maxWidth flex hc",
-                children: e.jsx(U, {})
-            }) : $();
-        return e.jsxs(e.Fragment, {
-            children: [e.jsx(_, {
-                title: "Group License Complete"
-            }), e.jsxs(Q, {
-                className: "flex-column vc",
-                children: [e.jsx(G, {
+                })
+            }, this.showRedemptionModal = () => {
+                this.setState({
+                    showingRedemptionModal: !0
+                })
+            }, this.hideRedemptionModal = () => {
+                this.setState({
+                    showingRedemptionModal: !1
+                })
+            }, this.onCardCodeChange = e => this.setState({
+                cardCode: e.target.value
+            })
+        }
+        componentDidMount() {
+            this.fetchPurchasedAndRedeemedGiftCards()
+        }
+        render() {
+            return (0, C.jsxs)(U, {
+                children: [(0, C.jsx)(f, {
                     includeSpacer: !0
-                }), e.jsx(X, {
-                    children: A()
+                }), this.state.loading && !this.state.redeemingGiftCard && (0, C.jsx)(`div`, {
+                    className: `ant-modal-mask flex hc vc`,
+                    style: {
+                        flex: 1,
+                        width: `100%`
+                    },
+                    children: (0, C.jsx)(d, {
+                        indicator: (0, C.jsx)(a, {
+                            style: {
+                                color: `white`,
+                                fontSize: 40
+                            },
+                            spin: !0
+                        })
+                    })
+                }), (0, C.jsxs)(W, {
+                    children: [(0, C.jsx)(`img`, {
+                        className: `animated jackInTheBox`,
+                        src: `/client/img/dashboard/gift.svg`,
+                        style: {
+                            width: 140,
+                            marginTop: 40,
+                            height: 140
+                        }
+                    }), (0, C.jsx)(G, {
+                        children: `GiftKit`
+                    }), (0, C.jsx)(K, {
+                        children: `Have a Gimkit gift card? This is the place to redeem it!`
+                    }), (0, C.jsx)(c, {
+                        style: {
+                            width: 400,
+                            height: 55,
+                            marginTop: 20,
+                            marginBottom: 50
+                        },
+                        type: `primary`,
+                        size: `large`,
+                        onClick: this.showRedemptionModal,
+                        children: `Redeem Gift Card`
+                    }), (0, C.jsx)(R, {
+                        purchasedGiftCards: this.state.purchasedGiftCards,
+                        redeemedGiftCards: this.state.redeemedGiftCards
+                    }), (0, C.jsx)(H, {
+                        show: this.state.showingRedemptionModal,
+                        onHide: this.hideRedemptionModal,
+                        redeemGiftCard: this.redeemGiftCard,
+                        onCardCodeChange: this.onCardCodeChange,
+                        cardCode: this.state.cardCode,
+                        loading: this.state.loading
+                    })]
                 })]
-            })]
-        })
-    },
-    Q = s.div`
-  flex: 1;
-  background: ${c.Snow};
-  width: 100%;
-  color: ${c.Black};
-  font-family: ${N.SFPro};
-  padding: 20px;
-  min-height: 900px;
-`,
-    X = s.div`
-  width: 100%;
-  max-width: 550px;
-`;
+            })
+        }
+    };
 export {
-    Se as
+    q as
     default
 };

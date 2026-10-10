@@ -1,127 +1,83 @@
 import {
-    aQ as J,
-    aU as A,
-    a0 as v,
-    bu as tt,
-    bv as nt,
-    bp as B,
-    bo as et,
-    ae as x,
-    bw as ot,
-    bx as it,
-    aK as at,
-    T as st
-} from "./App-41.js";
+    x as e
+} from "./utils.js";
 import {
-    s as X,
-    I,
-    d as rt,
-    a as z,
-    g as N,
-    S as D,
-    i as b,
-    e as ht
-} from "./FixSpinePlugin.js";
-import {
-    aU as f
-} from "./_index.js";
-import {
-    G as l
+    t
 } from "./GetAssetPath.js";
 import {
-    b as mt
+    r as n
 } from "./polished.esm.js";
 import {
-    F as Y
-} from "./FetchTextureDimensions.js";
-import {
-    U as gt
-} from "./Assets.js";
-import {
-    L as pt
-} from "./LoadGoogleFontAfterSceneStart.js";
-import {
-    p as L
+    t as r
 } from "./playSound.js";
 import {
-    T as lt
-} from "./TextPadding.js";
+    T as i,
+    o as a,
+    s as o
+} from "./FixPhaserBootProcess.js";
 import {
-    F as M,
-    R as U
+    t as s
+} from "./stores-2.js";
+import {
+    t as c
+} from "./FetchScene.js";
+import {
+    n as l
+} from "./isVersion.js";
+import {
+    r as u,
+    t as d
+} from "./InPhase.js";
+import {
+    t as f
+} from "./FetchMyId.js";
+import {
+    t as ee
+} from "./FetchMyTeam.js";
+import {
+    t as te
+} from "./Device.js";
+import {
+    n as ne
+} from "./RarityBackgrounds.js";
+import {
+    t as p
+} from "./InventoryItemRarity.js";
+import {
+    t as m
+} from "./FetchItemOption.js";
+import {
+    Dt as h,
+    Et as g,
+    G as _,
+    V as v,
+    v as y
+} from "./App-42.js";
+import {
+    n as b,
+    t as x
 } from "./FetchOptionSchemaProperty.js";
-import "./Button.js";
-import "./mobxreact.esm.js";
-import "./index-21.js";
-import "./QuizTypes.js";
-import "./MapModeType.js";
-import "./TutorialConsts.js";
-import "./ActionButton.js";
-import "./index-5.js";
-import "./index-18.js";
-import "./context.js";
-import "./FontAwesomeIcon.js";
-import "./Centered.js";
-import "./CapitalizeFirstLetter.js";
-import "./index-4.js";
-import "./motion.js";
-import "./index-2.js";
-import "./index-14.js";
-import "./EditOutlined.js";
-import "./styleChecker.js";
-import "./index-3.js";
-import "./CheckOutlined.js";
-import "./CopyOutlined.js";
-import "./SixteenByNineScaler.js";
-import "./index-20.js";
-import "./index-22.js";
-import "./index-1.js";
-import "./progress.js";
-import "./ElementIds.js";
-import "./SeasonTicketName.js";
-import "./useQuery.js";
-import "./___vite-browser-external_commonjs-proxy.js";
-import "./util-1.js";
-import "./util-2.js";
-import "./Shortcut.js";
-import "./Names.js";
-import "./useWillUnmount.js";
-import "./CircularProgress.js";
-import "./clsx.m.js";
-import "./inheritsLoose.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
-import "./index-17.js";
-import "./use-force-update.js";
-import "./GimkitLiveQuestion.js";
-import "./Text.js";
-import "./getCloudinaryUrl.js";
-import "./LazyLatexRenderer.js";
-import "./Tooltip.js";
-import "./howler.js";
-import "./use-motion-value.js";
-import "./index-9.js";
-import "./index-23.js";
-import "./useIntervalWhen.js";
-import "./index-10.js";
-import "./move.js";
-import "./react-flip-move.es.js";
-import "./sounds.js";
-import "./MapSound.js";
-import "./App-5.js";
-import "./AnimatedBackground-2.js";
-import "./useDebouncedValue.js";
-import "./CloseCircleOutlined.js";
-import "./MapStyle.js";
-import "./FillRemainingSpace.js";
-import "./index-24.js";
-var y = (t => (t.grantItem = "Grant Item", t.broadcastOnChannel = "Broadcast On Channel", t))(y || {});
-const d = {
-        purchase: "purchase",
-        purchased: "purchased",
-        funded: "funded"
+import {
+    t as re
+} from "./LoadGoogleFontAfterSceneStart.js";
+import {
+    n as S
+} from "./Assets.js";
+import {
+    t as C
+} from "./FetchTextureDimensions.js";
+import {
+    t as w
+} from "./TextPadding.js";
+var T = function(e) {
+        return e.grantItem = `Grant Item`, e.broadcastOnChannel = `Broadcast On Channel`, e
+    }({}),
+    E = {
+        purchase: `purchase`,
+        purchased: `purchased`,
+        funded: `funded`
     },
-    s = {
+    D = {
         FRAME_SCALE: .4,
         FRAME_MARGINS_NINE_SLICE: 120,
         LEGS_HEIGHT: 40,
@@ -130,9 +86,11 @@ const d = {
         PRICE_HEIGHT: 42,
         INACTIVE_GRAY_SCALE_FACTOR: 1,
         INACTIVE_ANIMATION_SLOW_DOWN: .5,
+        RAY_TEXTURE_WIDTH: 39,
+        RAY_TEXTURE_HEIGHT: 380,
         PRICE_TEXT_SIZE: 24
     },
-    u = {
+    O = {
         BG: 1,
         RAYS: 2,
         LEG: 3,
@@ -141,513 +99,502 @@ const d = {
         GRANTED_ITEM: 6,
         FRAME: 7
     },
-    V = {
-        fontSize: `${s.PRICE_TEXT_SIZE}px`,
-        fontFamily: "Fugaz One"
+    k = {
+        fontSize: `${D.PRICE_TEXT_SIZE}px`,
+        fontFamily: `Fugaz One`
     },
-    g = {
-        inStock: t => ({
-            message: `In Stock (${t})`,
-            color: "#c8e6c9"
+    A = {
+        inStock: e => ({
+            message: `In Stock (${e})`,
+            color: `#c8e6c9`
         }),
         notEnoughRequiredItem: {
-            message: "Cannot Afford",
-            color: "#ffcdd2"
+            message: `Cannot Afford`,
+            color: `#ffcdd2`
         },
         outOfStock: {
-            message: "Out Of Stock",
-            color: "#ffcdd2"
+            message: `Out Of Stock`,
+            color: `#ffcdd2`
         },
         notAvailable: {
-            message: "Not Available",
-            color: "#ffcdd2"
+            message: `Not Available`,
+            color: `#ffcdd2`
         },
         fundingStatus: {
-            message: (t, n, e) => `${f(t)}/${f(n)} ${e}`
+            message: (t, n, r) => `${e(t)}/${e(n)} ${r}`
         },
-        defaultItemName: "Item",
-        purchaseAction: "to purchase",
-        fundingAction: "to fund"
+        defaultItemName: `Item`,
+        purchaseAction: `to purchase`,
+        fundingAction: `to fund`
     },
-    R = {
-        ray: "#CECECE",
-        bg1: "#6A6A6A",
-        bg2: "#CECECE"
+    j = {
+        ray: `#CECECE`,
+        bg1: `#6A6A6A`,
+        bg2: `#CECECE`
     },
-    ut = {
-        imageId: "vending_machine_bg_a",
-        imageUrl: l("devices/vending_machine/bg_a.png")
+    ie = {
+        imageId: `vending_machine_bg_a`,
+        imageUrl: t(`devices/vending_machine/bg_a.png`)
     },
-    ct = {
-        imageId: "vending_machine_bg_b",
-        imageUrl: l("devices/vending_machine/bg_b.png")
+    ae = {
+        imageId: `vending_machine_bg_b`,
+        imageUrl: t(`devices/vending_machine/bg_b.png`)
     };
-l("devices/vending_machine/rays.png");
-const k = {
-        imageId: "vending_machine_ray",
-        imageUrl: l("devices/vending_machine/ray.png")
+t(`devices/vending_machine/rays.png`);
+var M = {
+        imageId: `vending_machine_ray`,
+        imageUrl: t(`devices/vending_machine/ray.png`)
     },
-    It = {
-        imageUrl: l("devices/vending_machine/frame.png")
+    oe = {
+        imageId: `vending_machine_frame`,
+        imageUrl: t(`devices/vending_machine/frame.png`)
     },
-    dt = {
-        imageId: "vending_machine_leg",
-        imageUrl: l("devices/vending_machine/leg.png")
+    se = {
+        imageId: `vending_machine_leg`,
+        imageUrl: t(`devices/vending_machine/leg.png`)
     },
-    ft = {
-        imageId: "vending_machine_info",
-        imageUrl: l("devices/vending_machine/info.png")
+    ce = {
+        imageId: `vending_machine_info`,
+        imageUrl: t(`devices/vending_machine/info.png`)
     },
-    yt = {
-        imageId: "vending_machine_icon",
-        imageUrl: l("devices/vending_machine/previewIcon.png")
+    le = {
+        imageId: `vending_machine_icon`,
+        imageUrl: t(`devices/vending_machine/previewIcon.png`)
     };
-l("devices/item_granter/question-mark-2.png");
-const c = (t, n) => t.options.height / 2 + J(n),
-    G = (t, n) => {
-        const e = Phaser.Display.Color.HexStringToColor(t);
+t(`devices/item_granter/question-mark-2.png`);
+var N = (e, t) => e.options.height / 2 + g(t),
+    P = (e, t) => {
+        let n = Phaser.Display.Color.HexStringToColor(e);
         return {
-            grayscale: Phaser.Display.Color.HexStringToColor(n),
-            color: e
+            grayscale: Phaser.Display.Color.HexStringToColor(t),
+            color: n
         }
     },
-    F = (t, n) => {
-        const e = {
-            red: Math.round(Phaser.Math.Linear(t.color.red, t.grayscale.red, n)),
-            green: Math.round(Phaser.Math.Linear(t.color.green, t.grayscale.green, n)),
-            blue: Math.round(Phaser.Math.Linear(t.color.blue, t.grayscale.blue, n))
+    F = (e, t) => {
+        let r = {
+            red: Math.round(Phaser.Math.Linear(e.color.red, e.grayscale.red, t)),
+            green: Math.round(Phaser.Math.Linear(e.color.green, e.grayscale.green, t)),
+            blue: Math.round(Phaser.Math.Linear(e.color.blue, e.grayscale.blue, t))
         };
-        return A(mt(e))
+        return y(n(r))
     },
-    P = t => {
-        if (t.options.grantAction === y.grantItem && t.options.matchItemRarity) {
-            const n = v(t.options.grantedItemId),
-                e = (n == null ? void 0 : n.rarity) ?? tt.common,
-                o = nt[e];
+    I = e => {
+        if (e.options.grantAction === T.grantItem && e.options.matchItemRarity) {
+            let t = m(e.options.grantedItemId),
+                n = (t == null ? void 0 : t.rarity) ?? p.common,
+                r = ne[n];
             return {
-                rays: o.a,
-                bg1: o.b,
-                bg2: o.a
+                rays: r.a,
+                bg1: r.b,
+                bg2: r.a
             }
         }
         return {
-            rays: t.options.raysColor,
-            bg1: t.options.backgroundColor1,
-            bg2: t.options.backgroundColor2
+            rays: e.options.raysColor,
+            bg1: e.options.backgroundColor1,
+            bg2: e.options.backgroundColor2
         }
     },
-    $ = t => {
-        const n = P(t);
-        t.raysGrayscale = G(n.rays, R.ray), t.bg1Grayscale = G(n.bg1, R.bg1), t.bg2Grayscale = G(n.bg2, R.bg2)
+    L = e => {
+        let t = I(e);
+        e.raysGrayscale = P(t.rays, j.ray), e.bg1Grayscale = P(t.bg1, j.bg1), e.bg2Grayscale = P(t.bg2, j.bg2)
     },
-    _ = (t, n = !1) => {
-        var r, h, m, a;
-        if (t.lastGrayscaleFactorUpdate === t.grayScaleFactor && !n) return;
-        t.lastGrayscaleFactorUpdate = t.grayScaleFactor, t.raysGrayscale || $(t);
-        const e = F(t.raysGrayscale, t.grayScaleFactor),
-            o = F(t.bg1Grayscale, t.grayScaleFactor),
-            i = F(t.bg2Grayscale, t.grayScaleFactor);
-        t.rays.forEach(p => {
-            p.view.tint = e
-        }), (h = (r = t.bg1) == null ? void 0 : r.view) == null || h.setTint(o), (a = (m = t.bg2) == null ? void 0 : m.view) == null || a.setTint(i)
+    R = (e, t = !1) => {
+        var n, r;
+        if (e.lastGrayscaleFactorUpdate === e.grayScaleFactor && !t) return;
+        e.lastGrayscaleFactorUpdate = e.grayScaleFactor, e.raysGrayscale || L(e);
+        let i = F(e.raysGrayscale, e.grayScaleFactor),
+            a = F(e.bg1Grayscale, e.grayScaleFactor),
+            o = F(e.bg2Grayscale, e.grayScaleFactor);
+        e.rays.forEach(e => {
+            e.view.tint = i
+        }), (n = e.bg1) == null || (n = n.view) == null || n.setTint(a), (r = e.bg2) == null || (r = r.view) == null || r.setTint(o)
     },
-    St = t => {
-        const n = P(t);
-        for (let e = 0; e < t.options.numberOfRays; e++) t.parts.add.sprite({
-            imageId: k.imageId,
-            imageUrl: k.imageUrl,
+    z = e => {
+        let t = I(e);
+        for (let n = 0; n < e.options.numberOfRays; n++) e.parts.add.sprite({
+            imageId: M.imageId,
+            imageUrl: M.imageUrl,
             y: -20,
             originX: .5,
             originY: 1,
             ignoreInput: !0,
-            depthChange: c(t, u.RAYS),
-            onReady: o => {
-                t.rays.push(o), Q(t, o, e), o.view.alpha = t.options.raysAlpha, o.view.blendMode = t.options.raysAdditive ? 1 : 0, o.view.tint = A(n.rays), e === t.options.numberOfRays - 1 && _(t, !0)
+            depthChange: N(e, O.RAYS),
+            onReady: r => {
+                e.rays.push(r), B(e, r, n), r.view.alpha = e.options.raysAlpha, r.view.blendMode = +!!e.options.raysAdditive, r.view.tint = y(t.rays), n === e.options.numberOfRays - 1 && R(e, !0)
             }
         })
     },
-    Q = (t, n, e) => {
-        const o = Math.PI * 2 / t.options.numberOfRays,
-            i = e * o + t.currentRaysAngle;
-        n.view.rotation = i;
-        const r = 39,
-            h = 380,
-            m = i,
-            a = Math.atan(r / 2 * t.options.raysWidthFactor / h),
-            p = t.options.width / 2,
-            E = (t.options.height - s.LEGS_HEIGHT) / 2,
-            O = Math.min(Math.abs(E / Math.cos(m - a)), Math.abs(p / Math.cos(Math.PI / 2 - m - a)), Math.abs(E / Math.cos(m + a)), Math.abs(p / Math.cos(Math.PI / 2 - m + a))) / h;
-        n.view.scaleY = O, n.view.scaleX = O * t.options.raysWidthFactor
+    B = (e, t, n) => {
+        let r = n * (Math.PI * 2 / e.options.numberOfRays) + e.currentRaysAngle;
+        t.view.rotation = r;
+        let i = r,
+            a = Math.atan(39 / 2 * e.options.raysWidthFactor / 380),
+            o = e.options.width / 2,
+            s = (e.options.height - D.LEGS_HEIGHT) / 2,
+            c = Math.min(Math.abs(s / Math.cos(i - a)), Math.abs(o / Math.cos(Math.PI / 2 - i - a)), Math.abs(s / Math.cos(i + a)), Math.abs(o / Math.cos(Math.PI / 2 - i + a))) / 380;
+        t.view.scaleY = c, t.view.scaleX = c * e.options.raysWidthFactor
     },
-    T = (t, n) => {
-        t.grayScalePipelines.push(t.scene.plugins.get("rexGrayScalePipeline").add(n.view, {
-            intensity: t.grayScaleFactor
+    V = (e, t) => {
+        e.grayScalePipelines.push(e.scene.plugins.get(`rexGrayScalePipeline`).add(t.view, {
+            intensity: e.grayScaleFactor
         }))
     },
-    W = (t, n) => {
-        t.scene.plugins.get("rexGrayScalePipeline").remove(n.view)
+    H = (e, t) => {
+        e.scene.plugins.get(`rexGrayScalePipeline`).remove(t.view)
     },
-    Et = t => {
-        var n, e;
-        t.grayScalePipelines.length > 0 || ((n = t.requiredImage) != null && n.view && T(t, t.requiredImage), (e = t.grantedImage) != null && e.view && T(t, t.grantedImage))
+    U = e => {
+        var t, n;
+        e.grayScalePipelines.length > 0 || ((t = e.requiredImage) != null && t.view && V(e, e.requiredImage), (n = e.grantedImage) != null && n.view && V(e, e.grantedImage))
     },
-    At = t => {
-        var n, e;
-        t.grayScalePipelines.length !== 0 && ((n = t.requiredImage) != null && n.view && W(t, t.requiredImage), (e = t.grantedImage) != null && e.view && W(t, t.grantedImage), t.grayScalePipelines = [])
+    W = e => {
+        var t, n;
+        e.grayScalePipelines.length !== 0 && ((t = e.requiredImage) != null && t.view && H(e, e.requiredImage), (n = e.grantedImage) != null && n.view && H(e, e.grantedImage), e.grayScalePipelines = [])
     },
-    _t = t => {
-        t.grayScaleFactor > 0 ? (Et(t), t.grayScalePipelines.forEach(n => {
-            n.intensity = t.grayScaleFactor
-        })) : At(t)
+    ue = e => {
+        e.grayScaleFactor > 0 ? (U(e), e.grayScalePipelines.forEach(t => {
+            t.intensity = e.grayScaleFactor
+        })) : W(e)
     },
-    K = (t, n, e, o, i, r) => {
-        const h = {
-            ...gt
+    G = (e, t, n, r, i, a) => {
+        let o = {
+            ...S
         };
-        if (n) {
-            const p = X.worldOptions.itemOptions.find(E => E.id === n);
-            p && (h.imageId = p.id, h.imageUrl = p.previewImage)
+        if (t) {
+            let e = s.worldOptions.itemOptions.find(e => e.id === t);
+            e && (o.imageId = e.id, o.imageUrl = e.previewImage)
         }
-        const m = Y(h.imageId),
-            a = B({
-                height: m.height,
-                width: m.width,
-                newWidth: o,
-                newHeight: e
+        let c = C(o.imageId),
+            l = h({
+                height: c.height,
+                width: c.width,
+                newWidth: r,
+                newHeight: n
             });
-        return t.parts.add.sprite({
-            imageId: h.imageId,
-            imageUrl: h.imageUrl,
-            depthChange: c(t, i),
-            displayWidth: a.width,
-            displayHeight: a.height,
-            onReady: p => {
-                t.grayScaleFactor > 0 && T(t, p), r && r(p)
+        return e.parts.add.sprite({
+            imageId: o.imageId,
+            imageUrl: o.imageUrl,
+            depthChange: N(e, i),
+            displayWidth: l.width,
+            displayHeight: l.height,
+            onReady: t => {
+                e.grayScaleFactor > 0 && V(e, t), a && a(t)
             }
         })
     },
-    w = t => I() ? t.options.amountOfRequiredItem : t.state.cost ?? t.options.amountOfRequiredItem,
+    K = e => u() ? e.options.amountOfRequiredItem : e.state.cost ?? e.options.amountOfRequiredItem,
     q = t => {
-        let n = `${f(w(t))}`;
-        return t.options.allowFunding ? `${f(t.state.fundedAmount||0)} / ${n}` : n
+        let n = `${e(K(t))}`;
+        return t.options.allowFunding ? `${e(t.state.fundedAmount||0)} / ${n}` : n
     },
-    Z = t => {
-        if (!t.options.visibleInGame) return;
-        const n = t.options.height / 2 - 90;
-        t.priceAreaInfoRectangle || (t.priceAreaInfoRectangle = t.parts.add.sprite({
-            ...ft,
-            y: n,
-            depthChange: c(t, u.INFO_BG)
-        })), pt({
-            familyName: V.fontFamily,
+    J = e => {
+        if (!e.options.visibleInGame) return;
+        let t = e.options.height / 2 - 90;
+        e.priceAreaInfoRectangle || (e.priceAreaInfoRectangle = e.parts.add.sprite({
+            ...ce,
+            y: t,
+            depthChange: N(e, O.INFO_BG)
+        })), re({
+            familyName: k.fontFamily,
             onLoad: () => {
-                const e = q(t);
-                if (t.priceText) t.priceText.view.setText(e);
-                else {
-                    const r = t.parts.add.text({
-                        text: q(t),
-                        y: n,
-                        depthChange: c(t, u.INFO),
-                        textStyle: V
-                    });
-                    t.priceText = r
-                }
-                t.updateFontSize();
-                const o = s.REQUIRED_ITEM_MAX_SIZE,
-                    i = r => {
-                        r.view.y = t.y + n;
-                        const h = t.priceText.getBounds().width,
-                            a = o + h + 7;
-                        r.view.x = -a / 2 + o / 2 + t.x, t.priceText.view.x = a / 2 - h / 2 + t.x
+                let n = q(e);
+                e.priceText ? e.priceText.view.setText(n) : e.priceText = e.parts.add.text({
+                    text: q(e),
+                    y: t,
+                    depthChange: N(e, O.INFO),
+                    textStyle: k
+                }), e.updateFontSize();
+                let r = D.REQUIRED_ITEM_MAX_SIZE,
+                    i = n => {
+                        n.view.y = e.y + t;
+                        let i = e.priceText.getBounds().width,
+                            a = r + i + 7;
+                        n.view.x = -a / 2 + r / 2 + e.x, e.priceText.view.x = a / 2 - i / 2 + e.x
                     };
-                t.requiredImage ? i(t.requiredImage) : t.requiredImage = K(t, t.options.requiredItemId, o, s.PRICE_HEIGHT * .8, u.INFO, r => {
-                    i(r)
+                e.requiredImage ? i(e.requiredImage) : e.requiredImage = G(e, e.options.requiredItemId, r, D.PRICE_HEIGHT * .8, O.INFO, e => {
+                    i(e)
                 })
             }
         })
     },
-    Tt = t => {
-        const o = {
-            displayWidth: t.options.width - 20,
-            displayHeight: t.options.height - 20 - s.LEGS_HEIGHT,
-            depthChange: c(t, u.BG),
-            y: -20
-        };
-        t.options.showShadow && !rt() && t.shadows.add({
-            r1: t.options.width / 2 + 20,
+    de = e => {
+        let t = -D.LEGS_HEIGHT / 2,
+            n = {
+                displayWidth: e.options.width - 20,
+                displayHeight: e.options.height - 20 - D.LEGS_HEIGHT,
+                depthChange: N(e, O.BG),
+                y: t
+            };
+        e.options.showShadow && !i() && e.shadows.add({
+            r1: e.options.width / 2 + 20,
             r2: 60,
-            y: t.options.height / 2 - 20
+            y: e.options.height / 2 - 20
         });
-        const i = P(t);
-        t.parts.add.sprite({
-            ...ut,
-            ...o,
-            onReady: a => {
-                t.bg1 = a, a.view.setTint(A(i.bg1)), _(t, !0)
+        let r = I(e);
+        e.parts.add.sprite({
+            ...ie,
+            ...n,
+            onReady: t => {
+                e.bg1 = t, t.view.setTint(y(r.bg1)), R(e, !0)
             }
-        }), t.parts.add.sprite({
-            ...ct,
-            ...o,
+        }), e.parts.add.sprite({
+            ...ae,
+            ...n,
             ignoreInput: !0,
-            onReady: a => {
-                t.bg2 = a, a.view.setTint(A(i.bg2)), _(t, !0)
+            onReady: t => {
+                e.bg2 = t, t.view.setTint(y(r.bg2)), R(e, !0)
             }
         });
-        const r = {
-                ...dt,
-                y: t.options.height / 2 + -20 - 2,
-                depthChange: c(t, u.LEG)
+        let a = {
+                ...se,
+                y: e.options.height / 2 + t - 2,
+                depthChange: N(e, O.LEG)
             },
-            h = -t.options.width / 2 + 60;
-        t.parts.add.sprite({
-            ...r,
-            x: h
-        }), t.parts.add.sprite({
-            ...r,
-            x: -h,
+            o = -e.options.width / 2 + 60;
+        e.parts.add.sprite({
+            ...a,
+            x: o
+        }), e.parts.add.sprite({
+            ...a,
+            x: -o,
             flipX: !0
         });
-        const m = s.FRAME_MARGINS_NINE_SLICE;
-        t.parts.add.ninePatch({
-            columns: [m, m],
-            rows: [m, m],
-            y: -20,
-            scale: s.FRAME_SCALE,
-            height: t.options.height - s.LEGS_HEIGHT,
-            width: t.options.width,
-            depthChange: c(t, u.FRAME),
-            imageUrl: It.imageUrl
+        let s = D.FRAME_MARGINS_NINE_SLICE;
+        e.parts.add.ninePatch({
+            columns: [s, s],
+            rows: [s, s],
+            y: t,
+            scale: D.FRAME_SCALE,
+            height: e.options.height - D.LEGS_HEIGHT,
+            width: e.options.width,
+            depthChange: N(e, O.FRAME),
+            imageUrl: oe.imageUrl
         })
     },
-    wt = t => {
-        t.colliders.add.box({
+    fe = e => {
+        e.colliders.add.box({
             x: 0,
-            y: -40 + 10 / 2 + s.LEGS_HEIGHT / 2,
-            w: t.options.width,
-            h: t.options.height - s.LEGS_HEIGHT + 10
+            y: -D.LEGS_HEIGHT + 5 + D.LEGS_HEIGHT / 2,
+            w: e.options.width,
+            h: e.options.height - D.LEGS_HEIGHT + 10
         })
     },
-    Ct = t => {
-        const n = et(t.options.grantedItemImageUrl);
-        return t.parts.add.sprite({
-            imageId: n,
-            imageUrl: n,
-            y: -40 / 2,
-            depthChange: c(t, u.GRANTED_ITEM),
-            onReady: e => {
-                const o = Y(n),
-                    i = B({
-                        height: o.height,
-                        width: o.width,
-                        newWidth: Math.min(s.ITEM_MAX_SIZE, t.options.width * .7),
-                        newHeight: Math.min(s.ITEM_MAX_SIZE, t.options.height * .4 - s.PRICE_HEIGHT)
+    pe = e => {
+        let t = v(e.options.grantedItemImageUrl);
+        return e.parts.add.sprite({
+            imageId: t,
+            imageUrl: t,
+            y: -D.LEGS_HEIGHT / 2,
+            depthChange: N(e, O.GRANTED_ITEM),
+            onReady: n => {
+                let r = C(t),
+                    i = h({
+                        height: r.height,
+                        width: r.width,
+                        newWidth: Math.min(D.ITEM_MAX_SIZE, e.options.width * .7),
+                        newHeight: Math.min(D.ITEM_MAX_SIZE, e.options.height * .4 - D.PRICE_HEIGHT)
                     });
-                e.view.setDisplaySize(i.width, i.height), t.grayScaleFactor > 0 && T(t, e)
+                n.view.setDisplaySize(i.width, i.height), e.grayScaleFactor > 0 && V(e, n)
             }
         })
     },
-    bt = t => {
-        var n;
-        return ((n = z().worldManager.devices.interactives.currentDevice) == null ? void 0 : n.id) === t
+    me = e => {
+        var t;
+        return ((t = c().worldManager.devices.interactives.currentDevice) == null ? void 0 : t.id) === e
     },
-    C = t => t.options.allowFunding,
-    H = t => Math.max(0, w(t) - (C(t) && t.state.fundedAmount || 0)),
-    S = t => {
-        let n = 0;
-        const e = X.me.inventory.slots.get(t.options.requiredItemId);
-        return e && (n = e.amount), n
+    Y = e => e.options.allowFunding,
+    X = e => Math.max(0, K(e) - (Y(e) && e.state.fundedAmount || 0)),
+    Z = e => {
+        let t = 0,
+            n = s.me.inventory.slots.get(e.options.requiredItemId);
+        return n && (t = n.amount), t
     },
-    Mt = t => {
-        const n = H(t),
-            e = S(t);
-        return C(t) && e < n ? g.fundingAction : g.purchaseAction
+    Q = e => {
+        let t = X(e),
+            n = Z(e);
+        return Y(e) && n < t ? A.fundingAction : A.purchaseAction
     },
-    Rt = t => {
-        if (!t.state.active || t.options.useLimitedStock && t.state.currentStock <= 0) return !1;
-        const n = H(t),
-            e = S(t);
-        return C(t) ? !!e : !(e < n)
+    he = e => {
+        if (!e.state.active || e.options.useLimitedStock && e.state.currentStock <= 0) return !1;
+        let t = X(e),
+            n = Z(e);
+        return Y(e) ? !!n : !(n < t)
     },
-    Gt = t => {
-        var e;
-        const n = (e = t.options.grantedItemDescription) == null ? void 0 : e.trim();
+    ge = e => {
+        var t;
+        let n = (t = e.options.grantedItemDescription) == null ? void 0 : t.trim();
         if (n != null && n.length) return n
     },
-    Ft = t => {
-        const n = S(t);
-        return S(t) >= n ? t.options.interactionDuration : 1
+    _e = e => {
+        let t = Z(e);
+        return Z(e) >= t ? e.options.interactionDuration : 1
     },
-    xt = t => {
-        var e;
-        let n = (e = t.options.grantedItemName) == null ? void 0 : e.trim();
-        return !n && t.options.grantAction === y.grantItem && (n = x(t.options.grantedItemId)), n || (n = g.defaultItemName), t.options.grantAction === y.grantItem && !t.options.visibleInGame && t.options.attachCostToNameWhenHidden && t.options.requiredItemId && w(t) ? `${n} - ${f(t.options.amountOfRequiredItem)} ${x(t.options.requiredItemId)}` : n
+    ve = t => {
+        var n;
+        let r = (n = t.options.grantedItemName) == null ? void 0 : n.trim();
+        return !r && t.options.grantAction === T.grantItem && (r = _(t.options.grantedItemId)), r || (r = A.defaultItemName), t.options.grantAction === T.grantItem && !t.options.visibleInGame && t.options.attachCostToNameWhenHidden && t.options.requiredItemId && K(t) ? `${r} - ${e(t.options.amountOfRequiredItem)} ${_(t.options.requiredItemId)}` : r
     },
-    Pt = t => !!(!t.options.visibleInGame && !t.state.active || t.options.allowedPurchaseTeam && t.options.allowedPurchaseTeam !== ot && it() !== t.options.allowedPurchaseTeam),
-    Ht = t => {
-        if (!t.state.active) return {
-            text: g.notAvailable.message,
-            color: g.notAvailable.color
+    ye = e => !!(!e.options.visibleInGame && !e.state.active || e.options.allowedPurchaseTeam && e.options.allowedPurchaseTeam !== `__ANY_TEAM__` && ee() !== e.options.allowedPurchaseTeam),
+    be = e => {
+        if (!e.state.active) return {
+            text: A.notAvailable.message,
+            color: A.notAvailable.color
         };
-        if (t.options.useLimitedStock && t.state.currentStock <= 0) return {
-            text: g.outOfStock.message,
-            color: g.outOfStock.color
+        if (e.options.useLimitedStock && e.state.currentStock <= 0) return {
+            text: A.outOfStock.message,
+            color: A.outOfStock.color
         };
-        const n = H(t),
-            e = S(t),
-            o = C(t);
-        return e < n && !o ? {
-            text: g.notEnoughRequiredItem.message,
-            color: g.notEnoughRequiredItem.color
-        } : t.options.useLimitedStock ? {
-            text: g.inStock(t.state.currentStock).message,
-            color: g.inStock(t.state.currentStock).color
-        } : o ? {
-            text: g.fundingStatus.message(t.state.fundedAmount || 0, w(t), x(t.options.requiredItemId))
+        let t = X(e),
+            n = Z(e),
+            r = Y(e);
+        return n < t && !r ? {
+            text: A.notEnoughRequiredItem.message,
+            color: A.notEnoughRequiredItem.color
+        } : e.options.useLimitedStock ? {
+            text: A.inStock(e.state.currentStock).message,
+            color: A.inStock(e.state.currentStock).color
+        } : r ? {
+            text: A.fundingStatus.message(e.state.fundedAmount || 0, K(e), _(e.options.requiredItemId))
         } : {}
     },
-    j = (t, n) => {
-        if (Pt(t)) {
-            t.interactiveZones.setForceDisabled(!0);
+    $ = (e, t) => {
+        if (ye(e)) {
+            e.interactiveZones.setForceDisabled(!0);
             return
-        } else t.interactiveZones.setForceDisabled(!1);
-        if (!bt(t.id) && !n) return;
-        const e = Ht(t),
-            o = {
-                message: xt(t),
-                action: Mt(t),
-                topHeader: e == null ? void 0 : e.text,
-                topHeaderColor: e == null ? void 0 : e.color,
-                bottomHeader: Gt(t),
-                duration: Ft(t),
-                allowedToInteract: Rt(t)
+        }
+        if (e.interactiveZones.setForceDisabled(!1), !me(e.id) && !t) return;
+        let n = be(e),
+            r = {
+                message: ve(e),
+                action: Q(e),
+                topHeader: n == null ? void 0 : n.text,
+                topHeaderColor: n == null ? void 0 : n.color,
+                bottomHeader: ge(e),
+                duration: _e(e),
+                allowedToInteract: he(e)
             };
-        t.interactiveZones.setInfo(o)
+        e.interactiveZones.setInfo(r)
     },
-    Ot = t => {
-        I() || (t.options.visibleInGame ? t.interactiveZones.add.rect({
+    xe = e => {
+        u() || (e.options.visibleInGame ? e.interactiveZones.add.rect({
             y: 25,
-            width: t.options.width + 150,
-            height: t.options.height + 150
-        }) : t.interactiveZones.add.circle({
-            r: t.options.radius
-        }), t.interactiveZones.setCanInteractThroughColliders(!0), t.interactiveZones.onInteraction = () => {
-            t.sendToServerDevice(d.purchase)
-        }, t.interactiveZones.onInteractiveCb = () => {
-            j(t, !0)
+            width: e.options.width + 150,
+            height: e.options.height + 150
+        }) : e.interactiveZones.add.circle({
+            r: e.options.radius
+        }), e.interactiveZones.setCanInteractThroughColliders(!0), e.interactiveZones.onInteraction = () => {
+            e.sendToServerDevice(E.purchase)
+        }, e.interactiveZones.onInteractiveCb = () => {
+            $(e, !0)
         })
-    };
-class ae extends at {
-    constructor(n) {
-        if (super(n), this.grayScalePipelines = [], this.grayScaleFactor = 0, this.animationSpeedFactor = 1, this.rays = [], this.cumulTime = 0, this.currentRaysAngle = 0, this.onUpdate = e => {
+    },
+    Se = class extends te {
+        constructor(e) {
+            super(e), this.grayScalePipelines = [], this.grayScaleFactor = 0, this.animationSpeedFactor = 1, this.rays = [], this.cumulTime = 0, this.currentRaysAngle = 0, this.onUpdate = e => {
                 if (this.cull.isInsideView) {
-                    if (this.currentRaysAngle += e / 1e4 * this.animationSpeedFactor, this.rays.forEach((o, i) => {
-                            Q(this, o, i)
+                    if (this.currentRaysAngle += e / 1e4 * this.animationSpeedFactor, this.rays.forEach((e, t) => {
+                            B(this, e, t)
                         }), this.grantedImage && this.grantedImage.view) {
                         this.cumulTime += e;
-                        const o = this.y - s.LEGS_HEIGHT / 2,
-                            i = 5;
-                        this.grantedImage.view.y = o + this.animationSpeedFactor * Math.sin(this.cumulTime / 550) * i
+                        let t = this.y - D.LEGS_HEIGHT / 2;
+                        this.grantedImage.view.y = t + this.animationSpeedFactor * Math.sin(this.cumulTime / 550) * 5
                     }
-                    _t(this), _(this), j(this)
+                    ue(this), R(this), $(this)
                 }
             }, this.onStateChange = e => {
-                e === "active" && (this.state.active ? this.tweens.add({
+                e === `active` && (this.state.active ? this.tweens.add({
                     targets: this,
                     grayScaleFactor: 0,
                     animationSpeedFactor: 1,
                     duration: 350
                 }) : (this.grayScaleFactor = Math.max(this.grayScaleFactor, 1e-5), this.tweens.add({
                     targets: this,
-                    grayScaleFactor: s.INACTIVE_GRAY_SCALE_FACTOR,
-                    animationSpeedFactor: s.INACTIVE_ANIMATION_SLOW_DOWN,
+                    grayScaleFactor: D.INACTIVE_GRAY_SCALE_FACTOR,
+                    animationSpeedFactor: D.INACTIVE_ANIMATION_SLOW_DOWN,
                     duration: 350
-                }))), e === "fundedAmount" && Z(this)
+                }))), e === `fundedAmount` && J(this)
             }, this.onMessage = e => {
-                (e.key === d.purchased || e.key === d.funded) && e && e.data && e.data.characterId && e.data.characterId === st() && (e.key === d.purchased && this.options.soundEnabled && L({
-                    path: l("devices/vending_machine/purchase.mp3"),
-                    volume: N({
+                (e.key === E.purchased || e.key === E.funded) && e && e.data && e.data.characterId && e.data.characterId === f() && (e.key === E.purchased && this.options.soundEnabled && r({
+                    path: t(`devices/vending_machine/purchase.mp3`),
+                    volume: o({
                         volume: .76,
-                        type: D.soundEffect
+                        type: a.soundEffect
                     })
-                }), e.key === d.funded && this.options.soundEnabled && L({
-                    path: l("devices/vending_machine/fund.mp3"),
-                    volume: N({
+                }), e.key === E.funded && this.options.soundEnabled && r({
+                    path: t(`devices/vending_machine/fund.mp3`),
+                    volume: o({
                         volume: .8,
-                        type: D.soundEffect
+                        type: a.soundEffect
                     })
                 }))
             }, this.setupVisualEditing = () => {
-                if (!I() || !b()) return;
-                const e = M(this, "width"),
-                    o = M(this, "height");
+                if (!u() || !l()) return;
+                let e = x(this, `width`),
+                    t = x(this, `height`);
                 this.visualEditing.add.box({
                     width: this.options.width,
                     height: this.options.height,
                     angle: 0,
                     minWidth: e.min,
                     maxWidth: e.max,
-                    minHeight: o.min,
-                    maxHeight: o.max,
+                    minHeight: t.min,
+                    maxHeight: t.max,
                     rotable: !1,
                     keepRatio: !1,
-                    onChange: i => {
-                        U(i.x, i.y, {
-                            width: i.width,
-                            height: i.height
+                    onChange: e => {
+                        b(e.x, e.y, {
+                            width: e.width,
+                            height: e.height
                         })
                     }
                 })
             }, this.setupVisualEditingInvisible = () => {
-                if (!I() || !b()) return;
-                const e = M(this, "radius");
+                if (!u() || !l()) return;
+                let e = x(this, `radius`);
                 this.visualEditing.add.circle({
                     radius: this.options.radius,
                     minRadius: e.min,
                     maxRadius: e.max,
                     rotable: !1,
                     resizable: !0,
-                    onChange: o => {
-                        U(o.x, o.y, {
-                            radius: o.radius
+                    onChange: e => {
+                        b(e.x, e.y, {
+                            radius: e.radius
                         })
                     }
                 })
-            }, I() && !this.options.activeOnStart && (this.animationSpeedFactor = s.INACTIVE_ANIMATION_SLOW_DOWN, this.grayScaleFactor = s.INACTIVE_GRAY_SCALE_FACTOR), ht() && !this.state.active && (this.animationSpeedFactor = s.INACTIVE_ANIMATION_SLOW_DOWN, this.grayScaleFactor = s.INACTIVE_GRAY_SCALE_FACTOR), this.options.visibleInGame ? this.setupVisualEditing() : this.setupVisualEditingInvisible(), Ot(this), !this.options.visibleInGame) {
-            I() && b() ? this.addIconLook() : this.boundingBox.setHardcoded({
+            }, u() && !this.options.activeOnStart && (this.animationSpeedFactor = D.INACTIVE_ANIMATION_SLOW_DOWN, this.grayScaleFactor = D.INACTIVE_GRAY_SCALE_FACTOR), d() && !this.state.active && (this.animationSpeedFactor = D.INACTIVE_ANIMATION_SLOW_DOWN, this.grayScaleFactor = D.INACTIVE_GRAY_SCALE_FACTOR), this.options.visibleInGame ? this.setupVisualEditing() : this.setupVisualEditingInvisible(), xe(this), this.options.visibleInGame ? this.options.visibleInGame && this.addFullLook() : u() && l() ? this.addIconLook() : this.boundingBox.setHardcoded({
                 width: this.options.radius * 2,
                 height: this.options.radius * 2
-            });
-            return
+            })
         }
-        this.options.visibleInGame && this.addFullLook()
-    }
-    addFullLook() {
-        this.boundingBox.setHardcoded({
-            width: this.options.width,
-            height: this.options.height
-        }), this.wirePoints.setBoth(this.x, this.y - this.options.height / 2 + 20), Tt(this), !this.isPreview && (wt(this), this.options.grantAction === y.broadcastOnChannel ? this.options.grantedItemImageUrl && (this.grantedImage = Ct(this)) : this.grantedImage = K(this, this.options.grantedItemId, Math.min(s.ITEM_MAX_SIZE, this.options.width * .7), Math.min(s.ITEM_MAX_SIZE, this.options.height * .5 - s.PRICE_HEIGHT), c(this, u.GRANTED_ITEM)), Z(this), St(this), $(this))
-    }
-    addIconLook() {
-        this.parts.add.sprite(yt).view.setScale(.25)
-    }
-    updateFontSize() {
-        if (!this.priceText) return;
-        const n = this.priceText.view.text.length,
-            e = this.options.width * .85;
-        let o = s.PRICE_TEXT_SIZE,
-            i = n * o;
-        const r = () => {
-            i > e && (o -= 1, i = n * o, r())
-        };
-        r();
-        const h = z().cameraHelper.zoom,
-            m = o * h;
-        this.priceText.view.setFontSize(m), this.priceText.view.setScale(1 / h);
-        const a = lt();
-        this.priceText.view.setPadding(a, a, a, a)
-    }
-}
+        addFullLook() {
+            this.boundingBox.setHardcoded({
+                width: this.options.width,
+                height: this.options.height
+            }), this.wirePoints.setBoth(this.x, this.y - this.options.height / 2 + 20), de(this), !this.isPreview && (fe(this), this.options.grantAction === T.broadcastOnChannel ? this.options.grantedItemImageUrl && (this.grantedImage = pe(this)) : this.grantedImage = G(this, this.options.grantedItemId, Math.min(D.ITEM_MAX_SIZE, this.options.width * .7), Math.min(D.ITEM_MAX_SIZE, this.options.height * .5 - D.PRICE_HEIGHT), N(this, O.GRANTED_ITEM)), J(this), z(this), L(this))
+        }
+        addIconLook() {
+            this.parts.add.sprite(le).view.setScale(.25)
+        }
+        updateFontSize() {
+            if (!this.priceText) return;
+            let e = this.priceText.view.text.length,
+                t = this.options.width * .85,
+                n = D.PRICE_TEXT_SIZE,
+                r = e * n,
+                i = () => {
+                    r > t && (--n, r = e * n, i())
+                };
+            i();
+            let a = c().cameraHelper.zoom,
+                o = n * a;
+            this.priceText.view.setFontSize(o), this.priceText.view.setScale(1 / a);
+            let s = w();
+            this.priceText.view.setPadding(s, s, s, s)
+        }
+    };
 export {
-    ae as
+    Se as
     default
 };

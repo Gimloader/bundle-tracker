@@ -1,18 +1,16 @@
 import {
-    l as r,
-    ab as n
-} from "./_index.js";
-import {
-    T as p
-} from "./TrackPostHogEvent.js";
-const s = e => {
-    var o, t, c;
-    window.gtag && !((o = e.blockedSource) != null && o.google) && window.gtag("event", e.event, e.properties), ((t = r()) == null ? void 0 : t.accountType) === n.educator && ((c = e.blockedSource) != null && c.posthog || p({
-        event: e.event,
-        properties: e.properties,
-        force: e.forcePostHog
-    }))
+    K as e,
+    W as t,
+    h as n
+} from "./utils.js";
+import "./TrackPostHogEvent.js";
+var r = r => {
+    var i, a;
+    if (window.gtag && !((i = r.blockedSource) != null && i.google) && window.gtag(`event`, r.event, r.properties), t.educatorOnly) {
+        var o;
+        if (((o = n()) == null ? void 0 : o.accountType) !== e.educator) return
+    }(a = r.blockedSource) != null && a.posthog || (r.event, r.properties, r.forcePostHog)
 };
 export {
-    s as A
+    r as t
 };

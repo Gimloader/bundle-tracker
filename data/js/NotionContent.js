@@ -1,165 +1,178 @@
 import {
-    r as X,
-    b5 as Wt,
-    dh as gn,
-    x as M,
-    j as n,
-    e0 as Vt,
-    dN as Ue,
-    a as yn,
-    d as xn,
-    A as bn
+    o as e,
+    t
+} from "./rolldown-runtime.js";
+import {
+    n,
+    t as r
+} from "./dist-1.js";
+import {
+    C as i,
+    X as a
+} from "./utils.js";
+import {
+    t as o
+} from "./react-1.js";
+import {
+    a as s
+} from "./modal.js";
+import {
+    t as c
+} from "./jsx-runtime.js";
+import {
+    l
 } from "./_index.js";
+import {
+    t as u
+} from "./toPropertyKey.js";
+n();
+var d = e(o(), 1);
 
-function pt(e, {
+function f(e, {
     lenient: t = !1
 } = {}) {
-    if (typeof e != "string") throw new TypeError("Expected a string");
-    if (e = e.trim(), e.includes(" ")) return !1;
+    if (typeof e != `string`) throw TypeError(`Expected a string`);
+    if (e = e.trim(), e.includes(` `)) return !1;
     try {
         return new URL(e), !0
     } catch {
-        return t ? pt(`https://${e}`) : !1
+        return t ? f(`https://${e}`) : !1
     }
 }
-const _n = (e, t, o, i) => {
-        if (o === "length" || o === "prototype" || o === "arguments" || o === "caller") return;
-        const r = Object.getOwnPropertyDescriptor(e, o),
-            a = Object.getOwnPropertyDescriptor(t, o);
-        !jn(r, a) && i || Object.defineProperty(e, o, a)
+var p = (e, t, n, r) => {
+        if (n === `length` || n === `prototype` || n === `arguments` || n === `caller`) return;
+        let i = Object.getOwnPropertyDescriptor(e, n),
+            a = Object.getOwnPropertyDescriptor(t, n);
+        (m(i, a) || !r) && Object.defineProperty(e, n, a)
     },
-    jn = function(e, t) {
+    m = function(e, t) {
         return e === void 0 || e.configurable || e.writable === t.writable && e.enumerable === t.enumerable && e.configurable === t.configurable && (e.writable || e.value === t.value)
     },
-    wn = (e, t) => {
-        const o = Object.getPrototypeOf(t);
-        o !== Object.getPrototypeOf(e) && Object.setPrototypeOf(e, o)
+    h = (e, t) => {
+        let n = Object.getPrototypeOf(t);
+        n !== Object.getPrototypeOf(e) && Object.setPrototypeOf(e, n)
     },
-    kn = (e, t) => `/* Wrapped ${e}*/
-${t}`,
-    Cn = Object.getOwnPropertyDescriptor(Function.prototype, "toString"),
-    Nn = Object.getOwnPropertyDescriptor(Function.prototype.toString, "name"),
-    Ln = (e, t, o) => {
-        const i = o === "" ? "" : `with ${o.trim()}() `,
-            r = kn.bind(null, i, t.toString());
-        Object.defineProperty(r, "name", Nn);
-        const {
+    g = (e, t) => `/* Wrapped ${e}*/\n${t}`,
+    _ = Object.getOwnPropertyDescriptor(Function.prototype, `toString`),
+    v = Object.getOwnPropertyDescriptor(Function.prototype.toString, `name`),
+    y = (e, t, n) => {
+        let r = n === `` ? `` : `with ${n.trim()}() `,
+            i = g.bind(null, r, t.toString());
+        Object.defineProperty(i, "name", v);
+        let {
             writable: a,
-            enumerable: s,
-            configurable: l
-        } = Cn;
+            enumerable: o,
+            configurable: s
+        } = _;
         Object.defineProperty(e, "toString", {
-            value: r,
+            value: i,
             writable: a,
-            enumerable: s,
-            configurable: l
+            enumerable: o,
+            configurable: s
         })
     };
 
-function Pn(e, t, {
-    ignoreNonConfigurable: o = !1
+function b(e, t, {
+    ignoreNonConfigurable: n = !1
 } = {}) {
-    const {
-        name: i
+    let {
+        name: r
     } = e;
-    for (const r of Reflect.ownKeys(t)) _n(e, t, r, o);
-    return wn(e, t), Ln(e, t, i), e
+    for (let r of Reflect.ownKeys(t)) p(e, t, r, n);
+    return h(e, t), y(e, t, r), e
 }
-const De = 2147483647,
-    In = new WeakMap,
-    ot = new WeakMap,
-    Sn = new WeakMap;
+var x = 2147483647,
+    S = new WeakMap,
+    C = new WeakMap,
+    w = new WeakMap;
 
-function En(e, t) {
-    const o = e.get(t);
-    if (o) {
-        if (o.maxAge <= Date.now()) {
-            e.delete(t);
-            return
-        }
-        return o
+function T(e, t) {
+    let n = e.get(t);
+    if (n) {
+        if (n.maxAge <= Date.now()) e.delete(t);
+        else return n
     }
 }
 
-function On(e, {
+function E(e, {
     cacheKey: t,
-    cache: o = new Map,
-    maxAge: i
+    cache: n = new Map,
+    maxAge: r
 } = {}) {
-    if (i === 0) return e;
-    if (typeof i == "number" && Number.isFinite(i)) {
-        if (i > De) throw new TypeError(`The \`maxAge\` option cannot exceed ${De}.`);
-        if (i < 0) throw new TypeError("The `maxAge` option should not be a negative number.")
+    if (r === 0) return e;
+    if (typeof r == `number` && Number.isFinite(r)) {
+        if (r > x) throw TypeError(`The \`maxAge\` option cannot exceed ${x}.`);
+        if (r < 0) throw TypeError("The `maxAge` option should not be a negative number.")
     }
-    const r = function(...a) {
-        var p;
-        const s = t ? t(a) : a[0],
-            l = En(o, s);
-        if (l) return l.data;
-        const u = e.apply(this, a),
-            c = typeof i == "function" ? i(...a) : i;
-        if (c !== void 0 && c !== Number.POSITIVE_INFINITY) {
-            if (!Number.isFinite(c)) throw new TypeError("The `maxAge` function must return a finite number, `0`, or `Infinity`.");
-            if (c <= 0) return u;
-            if (c > De) throw new TypeError(`The \`maxAge\` function result cannot exceed ${De}.`)
+    let i = function(...a) {
+        let o = t ? t(a) : a[0],
+            s = T(n, o);
+        if (s) return s.data;
+        let c = e.apply(this, a),
+            l = typeof r == `function` ? r(...a) : r;
+        if (l !== void 0 && l !== 1 / 0) {
+            if (!Number.isFinite(l)) throw TypeError("The `maxAge` function must return a finite number, `0`, or `Infinity`.");
+            if (l <= 0) return c;
+            if (l > x) throw TypeError(`The \`maxAge\` function result cannot exceed ${x}.`)
         }
-        if (o.set(s, {
-                data: u,
-                maxAge: c === void 0 || c === Number.POSITIVE_INFINITY ? Number.POSITIVE_INFINITY : Date.now() + c
-            }), c !== void 0 && c !== Number.POSITIVE_INFINITY) {
-            const v = setTimeout(() => {
-                var b;
-                o.delete(s), (b = ot.get(r)) == null || b.delete(v)
-            }, c);
-            (p = v.unref) == null || p.call(v);
-            const m = ot.get(r) ?? new Set;
-            m.add(v), ot.set(r, m)
+        if (n.set(o, {
+                data: c,
+                maxAge: l === void 0 || l === 1 / 0 ? 1 / 0 : Date.now() + l
+            }), l !== void 0 && l !== 1 / 0) {
+            var u;
+            let e = setTimeout(() => {
+                var t;
+                n.delete(o), (t = C.get(i)) == null || t.delete(e)
+            }, l);
+            (u = e.unref) == null || u.call(e);
+            let t = C.get(i) ?? new Set;
+            t.add(e), C.set(i, t)
         }
-        return u
+        return c
     };
-    return Pn(r, e, {
+    return b(i, e, {
         ignoreNonConfigurable: !0
-    }), In.set(r, o), Sn.set(r, t ?? (a => a[0])), r
+    }), S.set(i, n), w.set(i, t ?? (e => e[0])), i
 }
-const zn = "text/plain",
-    $n = "us-ascii",
-    rt = (e, t) => t.some(o => o instanceof RegExp ? o.test(e) : o === e),
-    Tn = new Set(["https:", "http:", "file:"]),
-    Mn = e => {
+var D = `text/plain`,
+    ee = `us-ascii`,
+    te = (e, t) => t.some(t => t instanceof RegExp ? t.test(e) : t === e),
+    ne = new Set([`https:`, `http:`, `file:`]),
+    re = e => {
         try {
-            const {
+            let {
                 protocol: t
             } = new URL(e);
-            return t.endsWith(":") && !t.includes(".") && !Tn.has(t)
+            return t.endsWith(`:`) && !t.includes(`.`) && !ne.has(t)
         } catch {
             return !1
         }
     },
-    Rn = (e, {
+    ie = (e, {
         stripHash: t
     }) => {
-        var m;
-        const o = /^data:(?<type>[^,]*?),(?<data>[^#]*?)(?:#(?<hash>.*))?$/.exec(e);
-        if (!o) throw new Error(`Invalid URL: ${e}`);
-        const {
+        var n;
+        let r = /^data:(?<type>[^,]*?),(?<data>[^#]*?)(?:#(?<hash>.*))?$/.exec(e);
+        if (!r) throw Error(`Invalid URL: ${e}`);
+        let {
             type: i,
-            data: r,
-            hash: a
-        } = o.groups, s = i.split(";"), l = s.at(-1) === "base64";
-        l && s.pop();
-        const u = ((m = s.shift()) == null ? void 0 : m.toLowerCase()) ?? "",
-            p = [...s.map(b => {
-                let [_, g = ""] = b.split("=").map(w => w.trim());
-                return _ === "charset" && (g = g.toLowerCase(), g === $n) ? "" : `${_}${g?`=${g}`:""}`
+            data: a,
+            hash: o
+        } = r.groups, s = i.split(`;`), c = s.at(-1) === `base64`;
+        c && s.pop();
+        let l = ((n = s.shift()) == null ? void 0 : n.toLowerCase()) ?? ``,
+            u = [...s.map(e => {
+                let [t, n = ``] = e.split(`=`).map(e => e.trim());
+                return t === `charset` && (n = n.toLowerCase(), n === ee) ? `` : `${t}${n?`=${n}`:``}`
             }).filter(Boolean)];
-        l && p.push("base64"), (p.length > 0 || u && u !== zn) && p.unshift(u);
-        const v = t || !a ? "" : `#${a}`;
-        return `data:${p.join(";")},${l?r.trim():r}${v}`
+        c && u.push(`base64`), (u.length > 0 || l && l !== D) && u.unshift(l);
+        let d = t || !o ? `` : `#${o}`;
+        return `data:${u.join(`;`)},${c?a.trim():a}${d}`
     };
 
-function Hn(e, t) {
+function ae(e, t) {
     if (t = {
-            defaultProtocol: "http",
+            defaultProtocol: `http`,
             normalizeProtocol: !0,
             forceHttp: !1,
             forceHttps: !1,
@@ -176,296 +189,287 @@ function Hn(e, t) {
             removePath: !1,
             transformPath: !1,
             ...t
-        }, typeof t.defaultProtocol == "string" && !t.defaultProtocol.endsWith(":") && (t.defaultProtocol = `${t.defaultProtocol}:`), e = e.trim(), /^data:/i.test(e)) return Rn(e, t);
-    if (Mn(e)) return e;
-    const o = e.startsWith("//");
-    !o && /^\.*\//.test(e) || (e = e.replace(/^(?!(?:\w+:)?\/\/)|^\/\//, t.defaultProtocol));
-    const r = new URL(e);
-    if (t.forceHttp && t.forceHttps) throw new Error("The `forceHttp` and `forceHttps` options cannot be used together");
-    if (t.forceHttp && r.protocol === "https:" && (r.protocol = "http:"), t.forceHttps && r.protocol === "http:" && (r.protocol = "https:"), t.stripAuthentication && (r.username = "", r.password = ""), t.stripHash ? r.hash = "" : t.stripTextFragment && (r.hash = r.hash.replace(/#?:~:text.*?$/i, "")), r.pathname) {
-        const s = /\b[a-z][a-z\d+\-.]{1,50}:\/\//g;
-        let l = 0,
-            u = "";
+        }, typeof t.defaultProtocol == `string` && !t.defaultProtocol.endsWith(`:`) && (t.defaultProtocol = `${t.defaultProtocol}:`), e = e.trim(), /^data:/i.test(e)) return ie(e, t);
+    if (re(e)) return e;
+    let n = e.startsWith(`//`);
+    (n || !/^\.*\//.test(e)) && (e = e.replace(/^(?!(?:\w+:)?\/\/)|^\/\//, t.defaultProtocol));
+    let r = new URL(e);
+    if (t.forceHttp && t.forceHttps) throw Error("The `forceHttp` and `forceHttps` options cannot be used together");
+    if (t.forceHttp && r.protocol === `https:` && (r.protocol = `http:`), t.forceHttps && r.protocol === `http:` && (r.protocol = `https:`), t.stripAuthentication && (r.username = ``, r.password = ``), t.stripHash ? r.hash = `` : t.stripTextFragment && (r.hash = r.hash.replace(/#?:~:text.*?$/i, ``)), r.pathname) {
+        let e = /\b[a-z][a-z\d+\-.]{1,50}:\/\//g,
+            t = 0,
+            n = ``;
         for (;;) {
-            const p = s.exec(r.pathname);
-            if (!p) break;
-            const v = p[0],
-                m = p.index,
-                b = r.pathname.slice(l, m);
-            u += b.replace(/\/{2,}/g, "/"), u += v, l = m + v.length
+            let i = e.exec(r.pathname);
+            if (!i) break;
+            let a = i[0],
+                o = i.index,
+                s = r.pathname.slice(t, o);
+            n += s.replace(/\/{2,}/g, `/`), n += a, t = o + a.length
         }
-        const c = r.pathname.slice(l, r.pathname.length);
-        u += c.replace(/\/{2,}/g, "/"), r.pathname = u
+        let i = r.pathname.slice(t, r.pathname.length);
+        n += i.replace(/\/{2,}/g, `/`), r.pathname = n
     }
     if (r.pathname) try {
-        r.pathname = decodeURI(r.pathname).replace(/\\/g, "%5C")
+        r.pathname = decodeURI(r.pathname).replace(/\\/g, `%5C`)
     } catch {}
     if (t.removeDirectoryIndex === !0 && (t.removeDirectoryIndex = [/^index\.[a-z]+$/]), Array.isArray(t.removeDirectoryIndex) && t.removeDirectoryIndex.length > 0) {
-        const s = r.pathname.split("/").filter(Boolean),
-            l = s.at(-1);
-        l && rt(l, t.removeDirectoryIndex) && (s.pop(), r.pathname = s.length > 0 ? `/${s.join("/")}/` : "/")
+        let e = r.pathname.split(`/`).filter(Boolean),
+            n = e.at(-1);
+        n && te(n, t.removeDirectoryIndex) && (e.pop(), r.pathname = e.length > 0 ? `/${e.join(`/`)}/` : `/`)
     }
-    if (t.removePath && (r.pathname = "/"), t.transformPath && typeof t.transformPath == "function") {
-        const s = r.pathname.split("/").filter(Boolean),
-            l = t.transformPath(s);
-        r.pathname = (l == null ? void 0 : l.length) > 0 ? `/${l.join("/")}` : "/"
+    if (t.removePath && (r.pathname = `/`), t.transformPath && typeof t.transformPath == `function`) {
+        let e = r.pathname.split(`/`).filter(Boolean),
+            n = t.transformPath(e);
+        r.pathname = (n == null ? void 0 : n.length) > 0 ? `/${n.join(`/`)}` : `/`
     }
-    if (r.hostname && (r.hostname = r.hostname.replace(/\.$/, ""), t.stripWWW && /^www\.(?!www\.)[a-z\-\d]{1,63}\.[a-z.\-\d]{2,63}$/.test(r.hostname) && (r.hostname = r.hostname.replace(/^www\./, ""))), Array.isArray(t.removeQueryParameters))
-        for (const s of [...r.searchParams.keys()]) rt(s, t.removeQueryParameters) && r.searchParams.delete(s);
-    if (!Array.isArray(t.keepQueryParameters) && t.removeQueryParameters === !0 && (r.search = ""), Array.isArray(t.keepQueryParameters) && t.keepQueryParameters.length > 0)
-        for (const s of [...r.searchParams.keys()]) rt(s, t.keepQueryParameters) || r.searchParams.delete(s);
+    if (r.hostname && (r.hostname = r.hostname.replace(/\.$/, ``), t.stripWWW && /^www\.(?!www\.)[a-z\-\d]{1,63}\.[a-z.\-\d]{2,63}$/.test(r.hostname) && (r.hostname = r.hostname.replace(/^www\./, ``))), Array.isArray(t.removeQueryParameters))
+        for (let e of [...r.searchParams.keys()]) te(e, t.removeQueryParameters) && r.searchParams.delete(e);
+    if (!Array.isArray(t.keepQueryParameters) && t.removeQueryParameters === !0 && (r.search = ``), Array.isArray(t.keepQueryParameters) && t.keepQueryParameters.length > 0)
+        for (let e of [...r.searchParams.keys()]) te(e, t.keepQueryParameters) || r.searchParams.delete(e);
     if (t.sortQueryParameters) {
-        const s = r.search;
+        let e = r.search;
         r.searchParams.sort();
         try {
             r.search = decodeURIComponent(r.search)
         } catch {}
-        const l = s.slice(1).split("&").filter(u => u && !u.includes("="));
-        for (const u of l) {
-            const c = decodeURIComponent(u);
-            r.search = r.search.replace(`?${c}=`, `?${c}`).replace(`&${c}=`, `&${c}`)
+        let t = e.slice(1).split(`&`).filter(e => e && !e.includes(`=`));
+        for (let e of t) {
+            let t = decodeURIComponent(e);
+            r.search = r.search.replace(`?${t}=`, `?${t}`).replace(`&${t}=`, `&${t}`)
         }
     }
-    t.removeTrailingSlash && (r.pathname = r.pathname.replace(/\/$/, "")), t.removeExplicitPort && r.port && (r.port = "");
-    const a = e;
-    return e = r.toString(), !t.removeSingleSlash && r.pathname === "/" && !a.endsWith("/") && r.hash === "" && (e = e.replace(/\/$/, "")), (t.removeTrailingSlash || r.pathname === "/") && r.hash === "" && t.removeSingleSlash && (e = e.replace(/\/$/, "")), o && !t.normalizeProtocol && (e = e.replace(/^http:\/\//, "//")), t.stripProtocol && (e = e.replace(/^(?:https?:)?\/\//, "")), e
+    t.removeTrailingSlash && (r.pathname = r.pathname.replace(/\/$/, ``)), t.removeExplicitPort && r.port && (r.port = ``);
+    let i = e;
+    return e = r.toString(), !t.removeSingleSlash && r.pathname === `/` && !i.endsWith(`/`) && r.hash === `` && (e = e.replace(/\/$/, ``)), (t.removeTrailingSlash || r.pathname === `/`) && r.hash === `` && t.removeSingleSlash && (e = e.replace(/\/$/, ``)), n && !t.normalizeProtocol && (e = e.replace(/^http:\/\//, `//`)), t.stripProtocol && (e = e.replace(/^(?:https?:)?\/\//, ``)), e
 }
 
-function V(e) {
+function O(e) {
     if (e) {
-        if (e.value) return V(e.value);
+        if (e.value) return O(e.value);
         if (e.id) return e
     }
 }
 
-function ht(e, t) {
-    var o, i, r, a, s, l;
-    const u = e.collection_id || ((i = (o = e.format) == null ? void 0 : o.collection_pointer) == null ? void 0 : i.id);
-    if (u) return u;
-    const c = (r = e == null ? void 0 : e.view_ids) == null ? void 0 : r[0];
-    if (c) {
-        const p = V((a = t.collection_view) == null ? void 0 : a[c]);
-        if (p) return (l = (s = p.format) == null ? void 0 : s.collection_pointer) == null ? void 0 : l.id
+function oe(e, t) {
+    var n, r, i, a, o, s;
+    let c = e.collection_id || ((r = (n = e.format) == null ? void 0 : n.collection_pointer) == null ? void 0 : r.id);
+    if (c) return c;
+    let l = (i = e == null ? void 0 : e.view_ids) == null ? void 0 : i[0];
+    if (l) {
+        let e = O((a = t.collection_view) == null ? void 0 : a[l]);
+        if (e) return (s = (o = e.format) == null ? void 0 : o.collection_pointer) == null ? void 0 : s.id
     }
     return null
 }
-var ve = e => {
-    var t;
-    return e ? Array.isArray(e) ? (t = e == null ? void 0 : e.reduce((o, i) => o + (i[0] !== "⁍" && i[0] !== "‣" ? i[0] : ""), "")) != null ? t : "" : e : ""
-};
+var k = e => e ? Array.isArray(e) ? (e == null ? void 0 : e.reduce((e, t) => e + (t[0] !== `⁍` && t[0] !== `‣` ? t[0] : ``), ``)) ?? `` : e : ``;
 
-function Ge(e, t) {
-    var o;
-    if ((o = e.properties) != null && o.title) return ve(e.properties.title);
-    if (e.type === "collection_view_page" || e.type === "collection_view") {
-        const i = ht(e, t);
-        if (i) {
-            const r = V(t.collection[i]);
-            if (r) return ve(r.name)
+function A(e, t) {
+    var n;
+    if ((n = e.properties) != null && n.title) return k(e.properties.title);
+    if (e.type === `collection_view_page` || e.type === `collection_view`) {
+        let n = oe(e, t);
+        if (n) {
+            let e = O(t.collection[n]);
+            if (e) return k(e.name)
         }
     }
-    return ""
+    return ``
 }
-var An = {
+var se = {
         header: 0,
         sub_header: 1,
         sub_sub_header: 2,
         header_4: 3
     },
-    it = (e, t) => {
-        function o(s) {
-            return (s ?? []).map(l => {
-                var u;
-                const c = V(t.block[l]);
-                if (c) {
-                    const {
-                        type: p
-                    } = c;
-                    if (p === "header" || p === "sub_header" || p === "sub_sub_header" || p === "header_4") return {
-                        id: l,
-                        type: p,
-                        text: ve((u = c.properties) == null ? void 0 : u.title),
-                        indentLevel: An[p]
+    ce = (e, t) => {
+        function n(e) {
+            return (e ?? []).map(e => {
+                var r;
+                let i = O(t.block[e]);
+                if (i) {
+                    let {
+                        type: t
+                    } = i;
+                    if (t === `header` || t === `sub_header` || t === `sub_sub_header` || t === `header_4`) return {
+                        id: e,
+                        type: t,
+                        text: k((r = i.properties) == null ? void 0 : r.title),
+                        indentLevel: se[t]
                     };
-                    if (p === "transclusion_container" || p === "column_list" || p === "column") return o(c.content)
+                    if (t === `transclusion_container` || t === `column_list` || t === `column`) return n(i.content)
                 }
                 return null
             })
         }
 
-        function i(s) {
-            return s.flatMap(l => l == null ? [] : Array.isArray(l) ? i(l) : [l])
+        function r(e) {
+            return e.flatMap(e => e == null ? [] : Array.isArray(e) ? r(e) : [e])
         }
-        const r = i(o(e.content)),
+        let i = r(n(e.content)),
             a = [{
                 actual: -1,
                 effective: -1
             }];
-        for (const s of r) {
-            const {
-                indentLevel: l
-            } = s, u = l;
+        for (let e of i) {
+            let {
+                indentLevel: t
+            } = e, n = t;
             do {
-                const c = a.at(-1),
-                    {
-                        actual: p,
-                        effective: v
-                    } = c;
-                if (u > p) s.indentLevel = v + 1, a.push({
-                    actual: u,
-                    effective: s.indentLevel
+                let {
+                    actual: t,
+                    effective: r
+                } = a.at(-1);
+                if (n > t) e.indentLevel = r + 1, a.push({
+                    actual: n,
+                    effective: e.indentLevel
                 });
-                else if (u === p) {
-                    s.indentLevel = v;
+                else if (n === t) {
+                    e.indentLevel = r;
                     break
                 } else a.pop()
-            } while (!0)
+            } while (1)
         }
-        return r
+        return i
     },
-    Te = (e, {
-        month: t = "short"
+    j = (e, {
+        month: t = `short`
     } = {}) => {
-        const o = new Date(e);
-        return `${o.toLocaleString("en-US",{month:t})} ${o.getUTCDate()}, ${o.getUTCFullYear()}`
+        let n = new Date(e);
+        return `${n.toLocaleString(`en-US`,{month:t})} ${n.getUTCDate()}, ${n.getUTCFullYear()}`
     },
-    Bn = e => {
-        const t = `${e.start_date}T${e.start_time||"00:00"}+00:00`;
-        return Te(t)
-    },
-    Un = (e = "") => `${e.slice(0,8)}-${e.slice(8,12)}-${e.slice(12,16)}-${e.slice(16,20)}-${e.slice(20)}`,
-    Dn = /\b([\da-f]{32})\b/,
-    Fn = /\b([\da-f]{8}(?:-[\da-f]{4}){3}-[\da-f]{12})\b/,
-    ct = (e = "", {
+    le = e => j(`${e.start_date}T${e.start_time||`00:00`}+00:00`),
+    ue = (e = ``) => `${e.slice(0,8)}-${e.slice(8,12)}-${e.slice(12,16)}-${e.slice(16,20)}-${e.slice(20)}`,
+    de = /\b([\da-f]{32})\b/,
+    fe = /\b([\da-f]{8}(?:-[\da-f]{4}){3}-[\da-f]{12})\b/,
+    pe = (e = ``, {
         uuid: t = !0
     } = {}) => {
-        if (!e || (e = e.split("?")[0], !e)) return;
-        const o = e.match(Dn);
-        if (o) return t ? Un(o[1]) : o[1];
-        const i = e.match(Fn);
-        if (i) return t ? i[1] : i[1].replaceAll("-", "")
+        if (!e || (e = e.split(`?`)[0], !e)) return;
+        let n = e.match(de);
+        if (n) return t ? ue(n[1]) : n[1];
+        let r = e.match(fe);
+        if (r) return t ? r[1] : r[1].replaceAll(`-`, ``)
     };
 
-function vt(e, t) {
-    var o, i;
-    if ((o = e.format) != null && o.page_icon) return (i = e.format) == null ? void 0 : i.page_icon;
-    if (e.type === "collection_view_page" || e.type === "collection_view") {
-        const r = ht(e, t);
-        if (r) {
-            const a = V(t.collection[r]);
-            if (a) return a.icon
+function me(e, t) {
+    var n, r;
+    if ((n = e.format) != null && n.page_icon) return (r = e.format) == null ? void 0 : r.page_icon;
+    if (e.type === `collection_view_page` || e.type === `collection_view`) {
+        let n = oe(e, t);
+        if (n) {
+            let e = O(t.collection[n]);
+            if (e) return e.icon
         }
     }
     return null
 }
-var Ye = (e, t, {
-        inclusive: o = !1
+var he = (e, t, {
+        inclusive: n = !1
     } = {}) => {
-        let i = e;
-        for (; i;) {
-            if (o && (i == null ? void 0 : i.type) === "page") return i;
-            const r = i.parent_id,
-                a = i.parent_table;
-            if (!r) break;
-            if (a === "collection") i = V(t.collection[r]);
-            else if (i = V(t.block[r]), (i == null ? void 0 : i.type) === "page") return i
+        let r = e;
+        for (; r;) {
+            if (n && (r == null ? void 0 : r.type) === `page`) return r;
+            let e = r.parent_id,
+                i = r.parent_table;
+            if (!e) break;
+            if (i === `collection`) r = O(t.collection[e]);
+            else if (r = O(t.block[e]), (r == null ? void 0 : r.type) === `page`) return r
         }
         return null
     },
-    Ke = e => e.replaceAll("-", ""),
-    Pt = (e, t) => {
-        var o;
-        let i = 0,
-            r = e;
+    ge = e => e.replaceAll(`-`, ``),
+    _e = (e, t) => {
+        var n;
+        let r = 0,
+            i = e;
         for (;;) {
-            const a = (o = V(t[r])) == null ? void 0 : o.parent_id;
+            let e = (n = O(t[i])) == null ? void 0 : n.parent_id;
+            if (!e) break;
+            let a = O(t[e]);
             if (!a) break;
-            const s = V(t[a]);
-            if (!s) break;
-            if (s.type === "numbered_list") i++, r = a;
+            if (a.type === `numbered_list`) r++, i = e;
             else break
         }
-        return i
+        return r
     };
 
-function Wn(e) {
-    var t, o;
-    const i = [];
-    let r, a = -1;
-    for (const s of Object.keys(e)) {
-        const l = V(e[s]);
-        if (l && l.content)
-            for (const u of l.content) {
-                const c = (t = V(e[u])) == null ? void 0 : t.type;
-                c && c !== r && (a++, r = c, i[a] = []), a > -1 && ((o = i[a]) == null || o.push(u))
+function ve(e) {
+    var t, n;
+    let r = [],
+        i, a = -1;
+    for (let o of Object.keys(e)) {
+        let s = O(e[o]);
+        if (s && s.content)
+            for (let o of s.content) {
+                let s = (t = O(e[o])) == null ? void 0 : t.type;
+                s && s !== i && (a++, i = s, r[a] = []), a > -1 && ((n = r[a]) == null || n.push(o))
             }
-        r = void 0
+        i = void 0
     }
-    return i
+    return r
 }
 
-function Vn(e, t) {
-    var o, i, r;
-    const s = Wn(t).find(c => c.includes(e));
-    if (!s) return;
-    const l = s.indexOf(e) + 1,
-        u = (i = (o = V(t[e])) == null ? void 0 : o.format) == null ? void 0 : i.list_start_index;
-    return ((r = V(t[e])) == null ? void 0 : r.type) === "numbered_list" ? u ?? l : l
+function ye(e, t) {
+    var n, r, i;
+    let a = ve(t).find(t => t.includes(e));
+    if (!a) return;
+    let o = a.indexOf(e) + 1,
+        s = (r = (n = O(t[e])) == null ? void 0 : n.format) == null ? void 0 : r.list_start_index;
+    return ((i = O(t[e])) == null ? void 0 : i.type) === `numbered_list` ? s ?? o : o
 }
 
-function It(e) {
-    const t = ["decimal", "lower-alpha", "lower-roman"],
-        o = (e % t.length + t.length) % t.length;
-    return t[o]
+function be(e) {
+    let t = [`decimal`, `lower-alpha`, `lower-roman`];
+    return t[(e % t.length + t.length) % t.length]
 }
-var qn = (e, t) => {
-        const o = e.block,
-            i = [];
-        let r = t;
+var xe = (e, t) => {
+        let n = e.block,
+            r = [],
+            i = t;
         do {
-            const a = V(o[r]);
+            let a = O(n[i]);
             if (!a) break;
-            const s = Ge(a, e),
-                l = vt(a, e);
-            if (!(s || l)) break;
-            i.push({
+            let o = A(a, e),
+                s = me(a, e);
+            if (!(o || s)) break;
+            r.push({
                 block: a,
-                active: r === t,
-                pageId: r,
-                title: s,
-                icon: l
+                active: i === t,
+                pageId: i,
+                title: o,
+                icon: s
             });
-            const u = Ye(a, e),
-                c = u == null ? void 0 : u.id;
-            if (!c) break;
-            r = c
-        } while (!0);
-        return i.reverse(), i
+            let c = he(a, e),
+                l = c == null ? void 0 : c.id;
+            if (!l) break;
+            i = l
+        } while (1);
+        return r.reverse(), r
     },
-    Kn = /(?:https?:\/\/)?[^\s]+\.gif(?=$|\?|#)/,
-    qt = (e, t) => {
+    M = /(?:https?:\/\/)?[^\s]+\.gif(?=$|\?|#)/,
+    Se = (e, t) => {
         if (!e) return;
-        if (e.startsWith("data:") || Kn.test(e) || e.startsWith("https://images.unsplash.com")) return e;
+        if (e.startsWith(`data:`) || M.test(e) || e.startsWith(`https://images.unsplash.com`)) return e;
         try {
-            const r = new URL(e);
-            if (r.pathname.startsWith("/secure.notion-static.com") && r.hostname.endsWith(".amazonaws.com") && r.searchParams.has("X-Amz-Credential") && r.searchParams.has("X-Amz-Signature") && r.searchParams.has("X-Amz-Algorithm") || r.hostname === "img.notionusercontent.com") return e
+            let t = new URL(e);
+            if (t.pathname.startsWith(`/secure.notion-static.com`) && t.hostname.endsWith(`.amazonaws.com`) && t.searchParams.has(`X-Amz-Credential`) && t.searchParams.has(`X-Amz-Signature`) && t.searchParams.has(`X-Amz-Algorithm`) || t.hostname === `img.notionusercontent.com`) return e
         } catch {}
-        e.startsWith("/images") && (e = `https://www.notion.so${e}`), e = `https://www.notion.so${e.startsWith("/image")?e:`/image/${encodeURIComponent(e)}`}`;
-        const o = new URL(e);
-        let i = t.parent_table === "space" ? "block" : t.parent_table;
-        return (i === "collection" || i === "team") && (i = "block"), o.searchParams.set("table", i), o.searchParams.set("id", t.id), o.searchParams.set("cache", "v2"), e = o.toString(), e
+        e.startsWith(`/images`) && (e = `https://www.notion.so${e}`), e = `https://www.notion.so${e.startsWith(`/image`)?e:`/image/${encodeURIComponent(e)}`}`;
+        let n = new URL(e),
+            r = t.parent_table === `space` ? `block` : t.parent_table;
+        return (r === `collection` || r === `team`) && (r = `block`), n.searchParams.set(`table`, r), n.searchParams.set(`id`, t.id), n.searchParams.set(`cache`, `v2`), e = n.toString(), e
     },
-    Kt = e => t => (t = (t || "").replaceAll("-", ""), e && t === e ? "/" : `/${t}`),
-    Zt = On(e => {
-        if (!e) return "";
+    Ce = e => t => (t = (t || ``).replaceAll(`-`, ``), e && t === e ? `/` : `/${t}`),
+    N = E(e => {
+        if (!e) return ``;
         try {
-            if (e.startsWith("https://www.notion.so/image/")) {
-                const t = new URL(e),
-                    o = decodeURIComponent(t.pathname.slice(7)),
-                    i = Zt(o);
-                t.pathname = `/image/${encodeURIComponent(i)}`, e = t.toString()
+            if (e.startsWith(`https://www.notion.so/image/`)) {
+                let t = new URL(e),
+                    n = N(decodeURIComponent(t.pathname.slice(7)));
+                t.pathname = `/image/${encodeURIComponent(n)}`, e = t.toString()
             }
-            return Hn(e, {
+            return ae(e, {
                 stripProtocol: !0,
                 stripWWW: !0,
                 stripHash: !0,
@@ -473,93 +477,92 @@ var qn = (e, t) => {
                 removeQueryParameters: !0
             })
         } catch {
-            return ""
+            return ``
         }
     }),
-    Zn = Object.defineProperty,
-    Qn = (e, t, o) => t in e ? Zn(e, t, {
+    we = Object.defineProperty,
+    Te = (e, t, n) => t in e ? we(e, t, {
         enumerable: !0,
         configurable: !0,
         writable: !0,
-        value: o
-    }) : e[t] = o,
-    Fe = (e, t, o) => Qn(e, typeof t != "symbol" ? t + "" : t, o),
-    ut = new Map,
-    We = new WeakMap,
-    St = 0,
-    Yn = void 0;
+        value: n
+    }) : e[t] = n,
+    P = (e, t, n) => Te(e, typeof t == `symbol` ? t : t + ``, n),
+    Ee = new Map,
+    F = new WeakMap,
+    De = 0,
+    Oe = void 0;
 
-function Gn(e) {
-    return e ? (We.has(e) || (St += 1, We.set(e, St.toString())), We.get(e)) : "0"
+function ke(e) {
+    return e ? (F.has(e) || (De += 1, F.set(e, De.toString())), F.get(e)) : `0`
 }
 
-function Xn(e) {
-    return Object.keys(e).sort().filter(t => e[t] !== void 0).map(t => `${t}_${t==="root"?Gn(e.root):e[t]}`).toString()
+function Ae(e) {
+    return Object.keys(e).sort().filter(t => e[t] !== void 0).map(t => `${t}_${t===`root`?ke(e.root):e[t]}`).toString()
 }
 
-function Jn(e) {
-    const t = Xn(e);
-    let o = ut.get(t);
-    if (!o) {
-        const i = new Map;
-        let r;
-        const a = new IntersectionObserver(s => {
-            s.forEach(l => {
-                var u;
-                const c = l.isIntersecting && r.some(p => l.intersectionRatio >= p);
-                e.trackVisibility && typeof l.isVisible > "u" && (l.isVisible = c), (u = i.get(l.target)) == null || u.forEach(p => {
-                    p(c, l)
+function I(e) {
+    let t = Ae(e),
+        n = Ee.get(t);
+    if (!n) {
+        let r = new Map,
+            i, a = new IntersectionObserver(t => {
+                t.forEach(t => {
+                    var n;
+                    let a = t.isIntersecting && i.some(e => t.intersectionRatio >= e);
+                    e.trackVisibility && t.isVisible === void 0 && (t.isVisible = a), (n = r.get(t.target)) == null || n.forEach(e => {
+                        e(a, t)
+                    })
                 })
-            })
-        }, e);
-        r = a.thresholds || (Array.isArray(e.threshold) ? e.threshold : [e.threshold || 0]), o = {
+            }, e);
+        i = a.thresholds || (Array.isArray(e.threshold) ? e.threshold : [e.threshold || 0]), n = {
             id: t,
             observer: a,
-            elements: i
-        }, ut.set(t, o)
+            elements: r
+        }, Ee.set(t, n)
     }
-    return o
+    return n
 }
 
-function eo(e, t, o = {}, i = Yn) {
-    if (typeof window.IntersectionObserver > "u" && i !== void 0) {
-        const u = e.getBoundingClientRect();
-        return t(i, {
-            isIntersecting: i,
+function L(e, t, n = {}, r = Oe) {
+    if (window.IntersectionObserver === void 0 && r !== void 0) {
+        let i = e.getBoundingClientRect();
+        return t(r, {
+            isIntersecting: r,
             target: e,
-            intersectionRatio: typeof o.threshold == "number" ? o.threshold : 0,
+            intersectionRatio: typeof n.threshold == `number` ? n.threshold : 0,
             time: 0,
-            boundingClientRect: u,
-            intersectionRect: u,
-            rootBounds: u
+            boundingClientRect: i,
+            intersectionRect: i,
+            rootBounds: i
         }), () => {}
     }
-    const {
-        id: r,
+    let {
+        id: i,
         observer: a,
-        elements: s
-    } = Jn(o), l = s.get(e) || [];
-    return s.has(e) || s.set(e, l), l.push(t), a.observe(e),
+        elements: o
+    } = I(n), s = o.get(e) || [];
+    return o.has(e) || o.set(e, s), s.push(t), a.observe(e),
         function() {
-            l.splice(l.indexOf(t), 1), l.length === 0 && (s.delete(e), a.unobserve(e)), s.size === 0 && (a.disconnect(), ut.delete(r))
+            s.splice(s.indexOf(t), 1), s.length === 0 && (o.delete(e), a.unobserve(e)), o.size === 0 && (a.disconnect(), Ee.delete(i))
         }
 }
 
-function to(e) {
-    return typeof e.children != "function"
+function je(e) {
+    return typeof e.children != `function`
 }
-var no = class extends X.Component {
+var Me = class extends d.Component {
         constructor(e) {
-            super(e), Fe(this, "node", null), Fe(this, "_unobserveCb", null), Fe(this, "handleNode", t => {
-                this.node && (this.unobserve(), !t && !this.props.triggerOnce && !this.props.skip && this.setState({
+            super(e), P(this, `node`, null), P(this, `_unobserveCb`, null), P(this, `handleNode`, e => {
+                this.node && (this.unobserve(), !e && !this.props.triggerOnce && !this.props.skip && this.setState({
                     inView: !!this.props.initialInView,
                     entry: void 0
-                })), this.node = t || null, this.observeNode()
-            }), Fe(this, "handleChange", (t, o) => {
-                t && this.props.triggerOnce && this.unobserve(), to(this.props) || this.setState({
-                    inView: t,
-                    entry: o
-                }), this.props.onChange && this.props.onChange(t, o)
+                })), this.node = e || null, this.observeNode()
+            }), P(this, `handleChange`, (e, t) => {
+                e && this.props.triggerOnce && this.unobserve(), je(this.props) || this.setState({
+                    inView: e,
+                    entry: t
+                }), this.props.onChange && this.props.onChange(e, t)
             }), this.state = {
                 inView: !!e.initialInView,
                 entry: void 0
@@ -576,712 +579,727 @@ var no = class extends X.Component {
         }
         observeNode() {
             if (!this.node || this.props.skip) return;
-            const {
+            let {
                 threshold: e,
                 root: t,
-                rootMargin: o,
-                trackVisibility: i,
-                delay: r,
+                rootMargin: n,
+                trackVisibility: r,
+                delay: i,
                 fallbackInView: a
             } = this.props;
-            this._unobserveCb = eo(this.node, this.handleChange, {
+            this._unobserveCb = L(this.node, this.handleChange, {
                 threshold: e,
                 root: t,
-                rootMargin: o,
-                trackVisibility: i,
-                delay: r
+                rootMargin: n,
+                trackVisibility: r,
+                delay: i
             }, a)
         }
         unobserve() {
             this._unobserveCb && (this._unobserveCb(), this._unobserveCb = null)
         }
         render() {
-            const {
+            let {
                 children: e
             } = this.props;
-            if (typeof e == "function") {
-                const {
-                    inView: b,
-                    entry: _
+            if (typeof e == `function`) {
+                let {
+                    inView: t,
+                    entry: n
                 } = this.state;
                 return e({
-                    inView: b,
-                    entry: _,
+                    inView: t,
+                    entry: n,
                     ref: this.handleNode
                 })
             }
-            const {
+            let {
                 as: t,
-                triggerOnce: o,
-                threshold: i,
-                root: r,
+                triggerOnce: n,
+                threshold: r,
+                root: i,
                 rootMargin: a,
-                onChange: s,
-                skip: l,
-                trackVisibility: u,
-                delay: c,
-                initialInView: p,
-                fallbackInView: v,
-                ...m
+                onChange: o,
+                skip: s,
+                trackVisibility: c,
+                delay: l,
+                initialInView: u,
+                fallbackInView: f,
+                ...p
             } = this.props;
-            return X.createElement(t || "div", {
+            return d.createElement(t || `div`, {
                 ref: this.handleNode,
-                ...m
+                ...p
             }, e)
         }
     },
-    je = {},
-    Et;
+    Ne = t((e => {
+        var t = e && e.__assign || function() {
+            return t = Object.assign || function(e) {
+                for (var t, n = 1, r = arguments.length; n < r; n++)
+                    for (var i in t = arguments[n], t) Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
+                return e
+            }, t.apply(this, arguments)
+        };
+        Object.defineProperty(e, "__esModule", {
+            value: !0
+        });
 
-function oo() {
-    if (Et) return je;
-    Et = 1;
-    var e = je && je.__assign || function() {
-        return e = Object.assign || function(o) {
-            for (var i, r = 1, a = arguments.length; r < a; r++) {
-                i = arguments[r];
-                for (var s in i) Object.prototype.hasOwnProperty.call(i, s) && (o[s] = i[s])
+        function n(e, n) {
+            var r = n || {},
+                i = r.value,
+                a = i === void 0 ? void 0 : i,
+                o = r.tag,
+                s = o === void 0 ? `tag` : o,
+                c = {},
+                l = function(e) {
+                    c[e] = (function(n) {
+                        var r, i;
+                        return n === void 0 && (n = {}), a ? (r = {}, r[s] = e, r[a] = n, r) : t({}, n, (i = {}, i[s] = e, i))
+                    })
+                };
+            for (var u in e) l(u);
+            var d = {},
+                f = function(e) {
+                    d[e] = (function(t) {
+                        return t[s] === e
+                    })
+                };
+            for (var u in e) f(u);
+
+            function p(e, t, n) {
+                n === void 0 && (n = t.default);
+                var r = t[e[s]];
+                return r ? r(a ? e[a] : e) : n(e)
             }
-            return o
-        }, e.apply(this, arguments)
-    };
-    Object.defineProperty(je, "__esModule", {
-        value: !0
-    });
-
-    function t(o, i) {
-        var r = i || {},
-            a = r.value,
-            s = a === void 0 ? void 0 : a,
-            l = r.tag,
-            u = l === void 0 ? "tag" : l,
-            c = {},
-            p = function(h) {
-                c[h] = (function(C) {
-                    var y, d;
-                    return C === void 0 && (C = {}), s ? (y = {}, y[u] = h, y[s] = C, y) : e({}, C, (d = {}, d[u] = h, d))
-                })
-            };
-        for (var v in o) p(v);
-        var m = {},
-            b = function(h) {
-                m[h] = (function(C) {
-                    return C[u] === h
-                })
-            };
-        for (var v in o) b(v);
-
-        function _(h, C, y) {
-            y === void 0 && (y = C.default);
-            var d = C[h[u]];
-            return d ? d(s ? h[s] : h) : y(h)
+            var m = function(e, t) {
+                    return t ? p(e, t) : function(t) {
+                        return p(t, e)
+                    }
+                },
+                h = function(e) {
+                    return e
+                },
+                g = function(e, t) {
+                    return t ? p(e, t, h) : function(t) {
+                        return p(t, e, h)
+                    }
+                },
+                _ = {},
+                v = function(e) {
+                    var t;
+                    _[e] = m((t = {}, t[e] = function(e) {
+                        return e
+                    }, t.default = function(t) {
+                        throw Error(`Attempted to cast ` + t[s] + ` as ` + e)
+                    }, t))
+                };
+            for (var y in e) v(y);
+            return Object.assign({
+                is: d,
+                as: _,
+                match: m,
+                transform: g,
+                _Record: e
+            }, c)
         }
-        var g = function(h, C) {
-                return C ? _(h, C) : function(y) {
-                    return _(y, h)
+        e.unionize = n, e.ofType = function() {}
+    })),
+    Pe = t(((e, t) => {
+        var n = u();
+
+        function r(e, t, r) {
+            return (t = n(t)) in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0
+            }) : e[t] = r, e
+        }
+        t.exports = r, t.exports.__esModule = !0, t.exports.default = t.exports
+    })),
+    Fe = t(((e, t) => {
+        function n(e, t) {
+            if (e == null) return {};
+            var n = {};
+            for (var r in e)
+                if ({}.hasOwnProperty.call(e, r)) {
+                    if (t.indexOf(r) !== -1) continue;
+                    n[r] = e[r]
+                } return n
+        }
+        t.exports = n, t.exports.__esModule = !0, t.exports.default = t.exports
+    })),
+    Ie = t(((e, t) => {
+        (function(n, r) {
+            typeof e == `object` && t !== void 0 ? r(e, Pe(), Fe(), o()) : typeof define == `function` && define.amd ? define([`exports`, `@babel/runtime/helpers/defineProperty`, `@babel/runtime/helpers/objectWithoutPropertiesLoose`, `react`], r) : (n = typeof globalThis > `u` ? n || self : globalThis, r(n.Img = {}, n._defineProperty, n._objectWithoutPropertiesLoose, n.React))
+        })(e, function(e, t, n, r) {
+            function i(e) {
+                return e && typeof e == `object` && `default` in e ? e : {
+                    default: e
                 }
-            },
-            w = function(h) {
-                return h
-            },
-            x = function(h, C) {
-                return C ? _(h, C, w) : function(y) {
-                    return _(y, h, w)
+            }
+
+            function a(e, t) {
+                var n = Object.keys(e);
+                if (Object.getOwnPropertySymbols) {
+                    var r = Object.getOwnPropertySymbols(e);
+                    t && (r = r.filter(function(t) {
+                        return Object.getOwnPropertyDescriptor(e, t).enumerable
+                    })), n.push.apply(n, r)
                 }
-            },
-            S = {},
-            j = function(h) {
-                var C;
-                S[h] = g((C = {}, C[h] = function(y) {
-                    return y
-                }, C.default = function(y) {
-                    throw new Error("Attempted to cast " + y[u] + " as " + h)
-                }, C))
-            };
-        for (var E in o) j(E);
-        return Object.assign({
-            is: m,
-            as: S,
-            match: g,
-            transform: x,
-            _Record: o
-        }, c)
-    }
-    return je.unionize = t, je.ofType = function() {}, je.default = t, je
-}
-var Me = oo(),
-    Qt = (function(e) {
-        var t = e.decode,
-            o = t === void 0 ? !0 : t,
-            i = e.crossOrigin,
-            r = i === void 0 ? "" : i;
-        return function(a) {
-            return new Promise(function(s, l) {
-                var u = new Image;
-                r && (u.crossOrigin = r), u.onload = function() {
-                    o && u.decode ? u.decode().then(s).catch(l) : s()
-                }, u.onerror = l, u.src = a
+                return n
+            }
+
+            function o(e) {
+                for (var t, n = 1; n < arguments.length; n++) t = arguments[n] == null ? {} : arguments[n], n % 2 ? a(Object(t), !0).forEach(function(n) {
+                    u.default(e, n, t[n])
+                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(Object(t)).forEach(function(n) {
+                    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+                });
+                return e
+            }
+
+            function s(e) {
+                var t = e.srcList,
+                    n = e.imgPromise,
+                    i = n === void 0 ? p({
+                        decode: !0
+                    }) : n,
+                    a = e.useSuspense,
+                    s = a === void 0 || a,
+                    c = r.useState(!1)[1],
+                    l = m(h(t)),
+                    u = l.join(``);
+                if (g[u] || (g[u] = {
+                        promise: _(l, i),
+                        cache: `pending`,
+                        error: null
+                    }), g[u].cache === `resolved`) return {
+                    src: g[u].src,
+                    isLoading: !1,
+                    error: null
+                };
+                if (g[u].cache === `rejected`) {
+                    if (s) throw g[u].error;
+                    return {
+                        isLoading: !1,
+                        error: g[u].error,
+                        src: void 0
+                    }
+                }
+                if (g[u].promise.then(function(e) {
+                        g[u] = o(o({}, g[u]), {}, {
+                            cache: `resolved`,
+                            src: e
+                        }), s || c(u)
+                    }).catch(function(e) {
+                        g[u] = o(o({}, g[u]), {}, {
+                            cache: `rejected`,
+                            error: e
+                        }), s || c(u)
+                    }), s) throw g[u].promise;
+                return {
+                    isLoading: !0,
+                    src: void 0,
+                    error: null
+                }
+            }
+
+            function c(e, t) {
+                var n = Object.keys(e);
+                if (Object.getOwnPropertySymbols) {
+                    var r = Object.getOwnPropertySymbols(e);
+                    t && (r = r.filter(function(t) {
+                        return Object.getOwnPropertyDescriptor(e, t).enumerable
+                    })), n.push.apply(n, r)
+                }
+                return n
+            }
+
+            function l(e) {
+                for (var t, n = 1; n < arguments.length; n++) t = arguments[n] == null ? {} : arguments[n], n % 2 ? c(Object(t), !0).forEach(function(n) {
+                    u.default(e, n, t[n])
+                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach(function(n) {
+                    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+                });
+                return e
+            }
+            var u = i(t),
+                d = i(n),
+                f = i(r),
+                p = function(e) {
+                    var t = e.decode,
+                        n = e.crossOrigin,
+                        r = n === void 0 ? `` : n;
+                    return function(e) {
+                        return new Promise(function(n, i) {
+                            var a = new Image;
+                            r && (a.crossOrigin = r), a.onload = function() {
+                                (t === void 0 || t) && a.decode ? a.decode().then(n).catch(i) : n()
+                            }, a.onerror = i, a.src = e
+                        })
+                    }
+                },
+                m = function(e) {
+                    return e.filter(function(e) {
+                        return e
+                    })
+                },
+                h = function(e) {
+                    return Array.isArray(e) ? e : [e]
+                },
+                g = {},
+                _ = function(e, t) {
+                    var n = !1;
+                    return new Promise(function(r, i) {
+                        var a = function(e) {
+                            return t(e).then(function() {
+                                n = !0, r(e)
+                            })
+                        };
+                        e.reduce(function(e, t) {
+                            return e.catch(function() {
+                                if (!n) return a(t)
+                            })
+                        }, a(e.shift())).catch(i)
+                    })
+                },
+                v = [`decode`, `src`, `loader`, `unloader`, `container`, `loaderContainer`, `unloaderContainer`, `imgPromise`, `crossorigin`, `useSuspense`],
+                y = function(e) {
+                    return e
+                };
+            e.Img = function(e) {
+                var t = e.decode,
+                    n = e.src,
+                    r = n === void 0 ? [] : n,
+                    i = e.loader,
+                    a = i === void 0 ? null : i,
+                    o = e.unloader,
+                    c = o === void 0 ? null : o,
+                    u = e.container,
+                    m = u === void 0 ? y : u,
+                    h = e.loaderContainer,
+                    g = h === void 0 ? y : h,
+                    _ = e.unloaderContainer,
+                    b = _ === void 0 ? y : _,
+                    x = e.imgPromise,
+                    S = e.crossorigin,
+                    C = e.useSuspense,
+                    w = C !== void 0 && C,
+                    T = d.default(e, v);
+                x = x || p({
+                    decode: t === void 0 || t,
+                    crossOrigin: S
+                });
+                var E = s({
+                        srcList: r,
+                        imgPromise: x,
+                        useSuspense: w
+                    }),
+                    D = E.src,
+                    ee = E.isLoading;
+                return D ? m(f.default.createElement(`img`, l({
+                    src: D
+                }, T))) : !w && ee ? g(a) : !w && c ? b(c) : null
+            }, e.useImage = s, Object.defineProperty(e, "__esModule", {
+                value: !0
             })
-        }
-    });
-
-function Ot(e, t) {
-    var o = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        t && (i = i.filter(function(r) {
-            return Object.getOwnPropertyDescriptor(e, r).enumerable
-        })), o.push.apply(o, i)
-    }
-    return o
-}
-
-function Ve(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var o = arguments[t] != null ? arguments[t] : {};
-        t % 2 ? Ot(Object(o), !0).forEach(function(i) {
-            Wt(e, i, o[i])
-        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(o)) : Ot(Object(o)).forEach(function(i) {
-            Object.defineProperty(e, i, Object.getOwnPropertyDescriptor(o, i))
         })
-    }
-    return e
-}
-var ro = function(t) {
-        return t.filter(function(o) {
-            return o
-        })
-    },
-    io = function(t) {
-        return Array.isArray(t) ? t : [t]
-    },
-    se = {},
-    ao = function(t, o) {
-        var i = !1;
-        return new Promise(function(r, a) {
-            var s = function(u) {
-                return o(u).then(function() {
-                    i = !0, r(u)
-                })
-            };
-            t.reduce(function(l, u) {
-                return l.catch(function() {
-                    if (!i) return s(u)
-                })
-            }, s(t.shift())).catch(a)
-        })
-    };
+    })),
+    R = Ne(),
+    Le = Ie(),
+    z = c();
 
-function so(e) {
-    var t = e.srcList,
-        o = e.imgPromise,
-        i = o === void 0 ? Qt({
-            decode: !0
-        }) : o,
-        r = e.useSuspense,
-        a = r === void 0 ? !0 : r,
-        s = X.useState(!1),
-        l = s[1],
-        u = ro(io(t)),
-        c = u.join("");
-    if (se[c] || (se[c] = {
-            promise: ao(u, i),
-            cache: "pending",
-            error: null
-        }), se[c].cache === "resolved") return {
-        src: se[c].src,
-        isLoading: !1,
-        error: null
-    };
-    if (se[c].cache === "rejected") {
-        if (a) throw se[c].error;
-        return {
-            isLoading: !1,
-            error: se[c].error,
-            src: void 0
-        }
-    }
-    if (se[c].promise.then(function(p) {
-            se[c] = Ve(Ve({}, se[c]), {}, {
-                cache: "resolved",
-                src: p
-            }), a || l(c)
-        }).catch(function(p) {
-            se[c] = Ve(Ve({}, se[c]), {}, {
-                cache: "rejected",
-                error: p
-            }), a || l(c)
-        }), a) throw se[c].promise;
-    return {
-        isLoading: !0,
-        src: void 0,
-        error: null
-    }
-}
-var lo = ["decode", "src", "loader", "unloader", "container", "loaderContainer", "unloaderContainer", "imgPromise", "crossorigin", "useSuspense"];
-
-function zt(e, t) {
-    var o = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        t && (i = i.filter(function(r) {
-            return Object.getOwnPropertyDescriptor(e, r).enumerable
-        })), o.push.apply(o, i)
-    }
-    return o
-}
-
-function co(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var o = arguments[t] != null ? arguments[t] : {};
-        t % 2 ? zt(Object(o), !0).forEach(function(i) {
-            Wt(e, i, o[i])
-        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(o)) : zt(Object(o)).forEach(function(i) {
-            Object.defineProperty(e, i, Object.getOwnPropertyDescriptor(o, i))
-        })
-    }
-    return e
-}
-var at = function(t) {
-    return t
-};
-
-function uo(e) {
-    var t = e.decode,
-        o = t === void 0 ? !0 : t,
-        i = e.src,
-        r = i === void 0 ? [] : i,
-        a = e.loader,
-        s = a === void 0 ? null : a,
-        l = e.unloader,
-        u = l === void 0 ? null : l,
-        c = e.container,
-        p = c === void 0 ? at : c,
-        v = e.loaderContainer,
-        m = v === void 0 ? at : v,
-        b = e.unloaderContainer,
-        _ = b === void 0 ? at : b,
-        g = e.imgPromise,
-        w = e.crossorigin,
-        x = e.useSuspense,
-        S = x === void 0 ? !1 : x,
-        j = gn(e, lo);
-    g = g || Qt({
-        decode: o,
-        crossOrigin: w
-    });
-    var E = so({
-            srcList: r,
-            imgPromise: g,
-            useSuspense: S
-        }),
-        h = E.src,
-        C = E.isLoading;
-    return h ? p(M.createElement("img", co({
-        src: h
-    }, j))) : !S && C ? m(s) : !S && u ? _(u) : null
-}
-
-function dt() {
-    return dt = Object.assign ? Object.assign.bind() : function(e) {
+function Re() {
+    return Re = Object.assign ? Object.assign.bind() : function(e) {
         for (var t = 1; t < arguments.length; t++) {
-            var o = arguments[t];
-            for (var i in o)({}).hasOwnProperty.call(o, i) && (e[i] = o[i])
+            var n = arguments[t];
+            for (var r in n)({}).hasOwnProperty.call(n, r) && (e[r] = n[r])
         }
         return e
-    }, dt.apply(null, arguments)
+    }, Re.apply(null, arguments)
 }
-var Yt = ["shift", "alt", "meta", "mod", "ctrl"],
-    fo = {
-        esc: "escape",
-        return: "enter",
-        ".": "period",
-        ",": "comma",
-        "-": "slash",
-        " ": "space",
-        "`": "backquote",
-        "#": "backslash",
-        "+": "bracketright",
-        ShiftLeft: "shift",
-        ShiftRight: "shift",
-        AltLeft: "alt",
-        AltRight: "alt",
-        MetaLeft: "meta",
-        MetaRight: "meta",
-        OSLeft: "meta",
-        OSRight: "meta",
-        ControlLeft: "ctrl",
-        ControlRight: "ctrl"
+var ze = [`shift`, `alt`, `meta`, `mod`, `ctrl`],
+    Be = {
+        esc: `escape`,
+        return: `enter`,
+        ".": `period`,
+        ",": `comma`,
+        "-": `slash`,
+        " ": `space`,
+        "`": `backquote`,
+        "#": `backslash`,
+        "+": `bracketright`,
+        ShiftLeft: `shift`,
+        ShiftRight: `shift`,
+        AltLeft: `alt`,
+        AltRight: `alt`,
+        MetaLeft: `meta`,
+        MetaRight: `meta`,
+        OSLeft: `meta`,
+        OSRight: `meta`,
+        ControlLeft: `ctrl`,
+        ControlRight: `ctrl`
     };
 
-function we(e) {
-    return (e && fo[e] || e || "").trim().toLowerCase().replace(/key|digit|numpad|arrow/, "")
+function B(e) {
+    return (e && Be[e] || e || ``).trim().toLowerCase().replace(/key|digit|numpad|arrow/, ``)
 }
 
-function mo(e) {
-    return Yt.includes(e)
+function V(e) {
+    return ze.includes(e)
 }
 
-function st(e, t) {
-    return t === void 0 && (t = ","), e.split(t)
+function Ve(e, t) {
+    return t === void 0 && (t = `,`), e.split(t)
 }
 
-function lt(e, t, o) {
-    t === void 0 && (t = "+");
-    var i = e.toLocaleLowerCase().split(t).map(function(s) {
-            return we(s)
+function He(e, t, n) {
+    t === void 0 && (t = `+`);
+    var r = e.toLocaleLowerCase().split(t).map(function(e) {
+            return B(e)
         }),
-        r = {
-            alt: i.includes("alt"),
-            ctrl: i.includes("ctrl") || i.includes("control"),
-            shift: i.includes("shift"),
-            meta: i.includes("meta"),
-            mod: i.includes("mod")
+        i = {
+            alt: r.includes(`alt`),
+            ctrl: r.includes(`ctrl`) || r.includes(`control`),
+            shift: r.includes(`shift`),
+            meta: r.includes(`meta`),
+            mod: r.includes(`mod`)
         },
-        a = i.filter(function(s) {
-            return !Yt.includes(s)
+        a = r.filter(function(e) {
+            return !ze.includes(e)
         });
-    return dt({}, r, {
+    return Re({}, i, {
         keys: a,
-        description: o,
+        description: n,
         hotkey: e
     })
 }(function() {
-    typeof document < "u" && (document.addEventListener("keydown", function(e) {
-        e.key !== void 0 && Gt([we(e.key), we(e.code)])
-    }), document.addEventListener("keyup", function(e) {
-        e.key !== void 0 && Xt([we(e.key), we(e.code)])
-    })), typeof window < "u" && window.addEventListener("blur", function() {
-        ke.clear()
+    typeof document < `u` && (document.addEventListener(`keydown`, function(e) {
+        e.key !== void 0 && Ge([B(e.key), B(e.code)])
+    }), document.addEventListener(`keyup`, function(e) {
+        e.key !== void 0 && Ke([B(e.key), B(e.code)])
+    })), typeof window < `u` && window.addEventListener(`blur`, function() {
+        H.clear()
     })
 })();
-var ke = new Set;
+var H = new Set;
 
-function gt(e) {
+function Ue(e) {
     return Array.isArray(e)
 }
 
-function po(e, t) {
-    t === void 0 && (t = ",");
-    var o = gt(e) ? e : e.split(t);
-    return o.every(function(i) {
-        return ke.has(i.trim().toLowerCase())
+function We(e, t) {
+    return t === void 0 && (t = `,`), (Ue(e) ? e : e.split(t)).every(function(e) {
+        return H.has(e.trim().toLowerCase())
     })
 }
 
-function Gt(e) {
+function Ge(e) {
     var t = Array.isArray(e) ? e : [e];
-    ke.has("meta") && ke.forEach(function(o) {
-        return !mo(o) && ke.delete(o.toLowerCase())
-    }), t.forEach(function(o) {
-        return ke.add(o.toLowerCase())
+    H.has(`meta`) && H.forEach(function(e) {
+        return !V(e) && H.delete(e.toLowerCase())
+    }), t.forEach(function(e) {
+        return H.add(e.toLowerCase())
     })
 }
 
-function Xt(e) {
-    var t = Array.isArray(e) ? e : [e];
-    e === "meta" ? ke.clear() : t.forEach(function(o) {
-        return ke.delete(o.toLowerCase())
+function Ke(e) {
+    e === `meta` ? H.clear() : (Array.isArray(e) ? e : [e]).forEach(function(e) {
+        return H.delete(e.toLowerCase())
     })
 }
 
-function ho(e, t, o) {
-    (typeof o == "function" && o(e, t) || o === !0) && e.preventDefault()
+function qe(e, t, n) {
+    (typeof n == `function` && n(e, t) || n === !0) && e.preventDefault()
 }
 
-function vo(e, t, o) {
-    return typeof o == "function" ? o(e, t) : o === !0 || o === void 0
+function Je(e, t, n) {
+    return typeof n == `function` ? n(e, t) : n === !0 || n === void 0
 }
 
-function go(e) {
-    return Jt(e, ["input", "textarea", "select"])
+function Ye(e) {
+    return Xe(e, [`input`, `textarea`, `select`])
 }
 
-function Jt(e, t) {
+function Xe(e, t) {
     t === void 0 && (t = !1);
-    var o = e.target,
-        i = e.composed,
-        r = null;
-    return yo(o) && i ? r = e.composedPath()[0] && e.composedPath()[0].tagName : r = o && o.tagName, gt(t) ? !!(r && t && t.some(function(a) {
-        var s;
-        return a.toLowerCase() === ((s = r) == null ? void 0 : s.toLowerCase())
-    })) : !!(r && t && t)
+    var n = e.target,
+        r = e.composed,
+        i = null;
+    return i = Ze(n) && r ? e.composedPath()[0] && e.composedPath()[0].tagName : n && n.tagName, Ue(t) ? !!(i && t && t.some(function(e) {
+        var t;
+        return e.toLowerCase() === ((t = i) == null ? void 0 : t.toLowerCase())
+    })) : !!(i && t && t)
 }
 
-function yo(e) {
-    return !!e.tagName && !e.tagName.startsWith("-") && e.tagName.includes("-")
+function Ze(e) {
+    return !!e.tagName && !e.tagName.startsWith(`-`) && e.tagName.includes(`-`)
 }
 
-function xo(e, t) {
-    return e.length === 0 && t ? (console.warn('A hotkey has the "scopes" option set, however no active scopes were found. If you want to use the global scopes feature, you need to wrap your app in a <HotkeysProvider>'), !0) : t ? e.some(function(o) {
-        return t.includes(o)
-    }) || e.includes("*") : !0
+function Qe(e, t) {
+    return e.length === 0 && t ? (console.warn(`A hotkey has the "scopes" option set, however no active scopes were found. If you want to use the global scopes feature, you need to wrap your app in a <HotkeysProvider>`), !0) : !t || e.some(function(e) {
+        return t.includes(e)
+    }) || e.includes(`*`)
 }
-var bo = function(t, o, i) {
-        i === void 0 && (i = !1);
-        var r = o.alt,
-            a = o.meta,
-            s = o.mod,
-            l = o.shift,
-            u = o.ctrl,
-            c = o.keys,
-            p = t.key,
-            v = t.code,
-            m = t.ctrlKey,
-            b = t.metaKey,
-            _ = t.shiftKey,
-            g = t.altKey,
-            w = we(v),
-            x = p.toLowerCase();
-        if (!(c != null && c.includes(w)) && !(c != null && c.includes(x)) && !["ctrl", "control", "unknown", "meta", "alt", "shift", "os"].includes(w)) return !1;
-        if (!i) {
-            if (r === !g && x !== "alt" || l === !_ && x !== "shift") return !1;
-            if (s) {
-                if (!b && !m) return !1
-            } else if (a === !b && x !== "meta" && x !== "os" || u === !m && x !== "ctrl" && x !== "control") return !1
+var $e = function(e, t, n) {
+        n === void 0 && (n = !1);
+        var r = t.alt,
+            i = t.meta,
+            a = t.mod,
+            o = t.shift,
+            s = t.ctrl,
+            c = t.keys,
+            l = e.key,
+            u = e.code,
+            d = e.ctrlKey,
+            f = e.metaKey,
+            p = e.shiftKey,
+            m = e.altKey,
+            h = B(u),
+            g = l.toLowerCase();
+        if (!(c != null && c.includes(h)) && !(c != null && c.includes(g)) && ![`ctrl`, `control`, `unknown`, `meta`, `alt`, `shift`, `os`].includes(h)) return !1;
+        if (!n) {
+            if (r === !m && g !== `alt` || o === !p && g !== `shift`) return !1;
+            if (a) {
+                if (!f && !d) return !1
+            } else if (i === !f && g !== `meta` && g !== `os` || s === !d && g !== `ctrl` && g !== `control`) return !1
         }
-        return c && c.length === 1 && (c.includes(x) || c.includes(w)) ? !0 : c ? po(c) : !c
+        return c && c.length === 1 && (c.includes(g) || c.includes(h)) ? !0 : c ? We(c) : !c
     },
-    _o = X.createContext(void 0),
-    jo = function() {
-        return X.useContext(_o)
+    et = (0, d.createContext)(void 0),
+    tt = function() {
+        return (0, d.useContext)(et)
     };
 
-function wo(e, t) {
-    return e === t
+function nt(e, t) {
+    return e && t && typeof e == `object` && typeof t == `object` ? Object.keys(e).length === Object.keys(t).length && Object.keys(e).reduce(function(n, r) {
+        return n && nt(e[r], t[r])
+    }, !0) : e === t
 }
-var ko = X.createContext({
+var rt = (0, d.createContext)({
         hotkeys: [],
         enabledScopes: [],
         toggleScope: function() {},
         enableScope: function() {},
         disableScope: function() {}
     }),
-    Co = function() {
-        return X.useContext(ko)
+    it = function() {
+        return (0, d.useContext)(rt)
     };
 
-function No(e) {
-    var t = X.useRef(void 0);
-    return wo(t.current, e) || (t.current = e), t.current
+function at(e) {
+    var t = (0, d.useRef)(void 0);
+    return nt(t.current, e) || (t.current = e), t.current
 }
-var $t = function(t) {
-        t.stopPropagation(), t.preventDefault(), t.stopImmediatePropagation()
+var ot = function(e) {
+        e.stopPropagation(), e.preventDefault(), e.stopImmediatePropagation()
     },
-    Lo = typeof window < "u" ? X.useLayoutEffect : X.useEffect;
+    st = typeof window < `u` ? d.useLayoutEffect : d.useEffect;
 
-function Tt(e, t, o, i) {
-    var r = X.useState(null),
-        a = r[0],
-        s = r[1],
-        l = X.useRef(!1),
-        u = o instanceof Array ? i instanceof Array ? void 0 : i : o,
-        c = gt(e) ? e.join(void 0) : e,
-        p = X.useCallback(t, []),
-        v = X.useRef(p);
-    v.current = t;
-    var m = No(u),
-        b = Co(),
-        _ = b.enabledScopes,
-        g = jo();
-    return Lo(function() {
-        if (!((m == null ? void 0 : m.enabled) === !1 || !xo(_, m == null ? void 0 : m.scopes))) {
-            var w = function(h, C) {
-                    var y;
-                    if (C === void 0 && (C = !1), !(go(h) && !Jt(h, m == null ? void 0 : m.enableOnFormTags))) {
+function ct(e, t, n, r) {
+    var i = (0, d.useState)(null),
+        a = i[0],
+        o = i[1],
+        s = (0, d.useRef)(!1),
+        c = n instanceof Array ? r instanceof Array ? void 0 : r : n,
+        l = Ue(e) ? e.join(c == null ? void 0 : c.splitKey) : e,
+        u = n instanceof Array ? n : r instanceof Array ? r : void 0,
+        f = (0, d.useCallback)(t, u ?? []),
+        p = (0, d.useRef)(f);
+    p.current = u ? f : t;
+    var m = at(c),
+        h = it().enabledScopes,
+        g = tt();
+    return st(function() {
+        if ((m == null ? void 0 : m.enabled) !== !1 && Qe(h, m == null ? void 0 : m.scopes)) {
+            var e = function(e, t) {
+                    var n;
+                    if (t === void 0 && (t = !1), !Ye(e) || Xe(e, m == null ? void 0 : m.enableOnFormTags)) {
                         if (a !== null) {
-                            var d = a.getRootNode();
-                            if ((d instanceof Document || d instanceof ShadowRoot) && d.activeElement !== a && !a.contains(d.activeElement)) {
-                                $t(h);
+                            var r = a.getRootNode();
+                            if ((r instanceof Document || r instanceof ShadowRoot) && r.activeElement !== a && !a.contains(r.activeElement)) {
+                                ot(e);
                                 return
                             }
-                        }(y = h.target) != null && y.isContentEditable && !(m != null && m.enableOnContentEditable) || st(c, m == null ? void 0 : m.splitKey).forEach(function(z) {
-                            var L, $ = lt(z, m == null ? void 0 : m.combinationKey);
-                            if (bo(h, $, m == null ? void 0 : m.ignoreModifiers) || (L = $.keys) != null && L.includes("*")) {
-                                if (m != null && m.ignoreEventWhen != null && m.ignoreEventWhen(h) || C && l.current) return;
-                                if (ho(h, $, m == null ? void 0 : m.preventDefault), !vo(h, $, m == null ? void 0 : m.enabled)) {
-                                    $t(h);
+                        }((n = e.target) == null || !n.isContentEditable || m != null && m.enableOnContentEditable) && Ve(l, m == null ? void 0 : m.splitKey).forEach(function(n) {
+                            var r, i = He(n, m == null ? void 0 : m.combinationKey);
+                            if ($e(e, i, m == null ? void 0 : m.ignoreModifiers) || (r = i.keys) != null && r.includes(`*`)) {
+                                if (m != null && m.ignoreEventWhen != null && m.ignoreEventWhen(e) || t && s.current) return;
+                                if (qe(e, i, m == null ? void 0 : m.preventDefault), !Je(e, i, m == null ? void 0 : m.enabled)) {
+                                    ot(e);
                                     return
                                 }
-                                v.current(h, $), C || (l.current = !0)
+                                p.current(e, i), t || (s.current = !0)
                             }
                         })
                     }
                 },
-                x = function(h) {
-                    h.key !== void 0 && (Gt(we(h.code)), ((m == null ? void 0 : m.keydown) === void 0 && (m == null ? void 0 : m.keyup) !== !0 || m != null && m.keydown) && w(h))
+                t = function(t) {
+                    t.key !== void 0 && (Ge(B(t.code)), ((m == null ? void 0 : m.keydown) === void 0 && (m == null ? void 0 : m.keyup) !== !0 || m != null && m.keydown) && e(t))
                 },
-                S = function(h) {
-                    h.key !== void 0 && (Xt(we(h.code)), l.current = !1, m != null && m.keyup && w(h, !0))
+                n = function(t) {
+                    t.key !== void 0 && (Ke(B(t.code)), s.current = !1, m != null && m.keyup && e(t, !0))
                 },
-                j = a || void 0 || document;
-            return j.addEventListener("keyup", S, void 0), j.addEventListener("keydown", x, void 0), g && st(c, m == null ? void 0 : m.splitKey).forEach(function(E) {
-                    return g.addHotkey(lt(E, m == null ? void 0 : m.combinationKey, m == null ? void 0 : m.description))
+                r = a || (c == null ? void 0 : c.document) || document;
+            return r.addEventListener(`keyup`, n, c == null ? void 0 : c.eventListenerOptions), r.addEventListener(`keydown`, t, c == null ? void 0 : c.eventListenerOptions), g && Ve(l, m == null ? void 0 : m.splitKey).forEach(function(e) {
+                    return g.addHotkey(He(e, m == null ? void 0 : m.combinationKey, m == null ? void 0 : m.description))
                 }),
                 function() {
-                    j.removeEventListener("keyup", S, void 0), j.removeEventListener("keydown", x, void 0), g && st(c, m == null ? void 0 : m.splitKey).forEach(function(E) {
-                        return g.removeHotkey(lt(E, m == null ? void 0 : m.combinationKey, m == null ? void 0 : m.description))
+                    r.removeEventListener(`keyup`, n, c == null ? void 0 : c.eventListenerOptions), r.removeEventListener(`keydown`, t, c == null ? void 0 : c.eventListenerOptions), g && Ve(l, m == null ? void 0 : m.splitKey).forEach(function(e) {
+                        return g.removeHotkey(He(e, m == null ? void 0 : m.combinationKey, m == null ? void 0 : m.description))
                     })
                 }
         }
-    }, [a, c, m, _]), s
-} /*! @fisch0920/medium-zoom 1.0.7 | MIT License | https://github.com/francoischalifour/medium-zoom */
-var Ne = Object.assign || function(e) {
+    }, [a, l, m, h]), o
+}
+var lt = e(a(), 1),
+    U = Object.assign || function(e) {
         for (var t = 1; t < arguments.length; t++) {
-            var o = arguments[t];
-            for (var i in o) Object.prototype.hasOwnProperty.call(o, i) && (e[i] = o[i])
+            var n = arguments[t];
+            for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
         }
         return e
     },
-    qe = function(t) {
-        return t.tagName === "IMG"
+    ut = function(e) {
+        return e.tagName === `IMG`
     },
-    Po = function(t) {
-        return NodeList.prototype.isPrototypeOf(t)
+    dt = function(e) {
+        return NodeList.prototype.isPrototypeOf(e)
     },
-    Ze = function(t) {
-        return t && t.nodeType === 1
+    ft = function(e) {
+        return e && e.nodeType === 1
     },
-    Mt = function(t) {
-        var o = t.currentSrc || t.src;
-        return o.substr(-4).toLowerCase() === ".svg"
+    pt = function(e) {
+        return (e.currentSrc || e.src).substr(-4).toLowerCase() === `.svg`
     },
-    Rt = function(t) {
+    mt = function(e) {
         try {
-            return Array.isArray(t) ? t.filter(qe) : Po(t) ? [].slice.call(t).filter(qe) : Ze(t) ? [t].filter(qe) : typeof t == "string" ? [].slice.call(document.querySelectorAll(t)).filter(qe) : []
+            return Array.isArray(e) ? e.filter(ut) : dt(e) ? [].slice.call(e).filter(ut) : ft(e) ? [e].filter(ut) : typeof e == `string` ? [].slice.call(document.querySelectorAll(e)).filter(ut) : []
         } catch {
-            throw new TypeError(`The provided selector is invalid.
+            throw TypeError(`The provided selector is invalid.
 Expects a CSS selector, a Node element, a NodeList or an array.
 See: https://github.com/francoischalifour/medium-zoom`)
         }
     },
-    Io = function(t) {
-        var o = document.createElement("div");
-        return o.classList.add("medium-zoom-overlay"), o.style.background = t, o
+    ht = function(e) {
+        var t = document.createElement(`div`);
+        return t.classList.add(`medium-zoom-overlay`), t.style.background = e, t
     },
-    So = function(t) {
-        var o = t.getBoundingClientRect(),
-            i = o.top,
-            r = o.left,
-            a = o.width,
-            s = o.height,
-            l = t.cloneNode(),
-            u = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0,
+    gt = function(e) {
+        var t = e.getBoundingClientRect(),
+            n = t.top,
+            r = t.left,
+            i = t.width,
+            a = t.height,
+            o = e.cloneNode(),
+            s = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0,
             c = window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0;
-        return l.removeAttribute("id"), l.style.position = "absolute", l.style.top = i + u + "px", l.style.left = r + c + "px", l.style.width = a + "px", l.style.height = s + "px", l.style.transform = "", l
+        return o.removeAttribute(`id`), o.style.position = `absolute`, o.style.top = n + s + `px`, o.style.left = r + c + `px`, o.style.width = i + `px`, o.style.height = a + `px`, o.style.transform = ``, o
     },
-    Pe = function(t, o) {
-        var i = Ne({
+    W = function(e, t) {
+        var n = U({
             bubbles: !1,
             cancelable: !1,
             detail: void 0
-        }, o);
-        if (typeof window.CustomEvent == "function") return new CustomEvent(t, i);
-        var r = document.createEvent("CustomEvent");
-        return r.initCustomEvent(t, i.bubbles, i.cancelable, i.detail), r
+        }, t);
+        if (typeof window.CustomEvent == `function`) return new CustomEvent(e, n);
+        var r = document.createEvent(`CustomEvent`);
+        return r.initCustomEvent(e, n.bubbles, n.cancelable, n.detail), r
     },
-    Eo = function e(t) {
-        var o = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {},
-            i = window.Promise || function(k) {
-                function I() {}
-                k(I, I)
+    _t = function e(t) {
+        var n = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {},
+            r = window.Promise || function(e) {
+                function t() {}
+                e(t, t)
             },
-            r = function(k) {
-                var I = k.target;
-                if (I === z) {
-                    _();
-                    return
-                }
-                j.indexOf(I) !== -1 && g({
-                    target: I
+            i = function(e) {
+                var t = e.target;
+                t === T ? m() : y.indexOf(t) !== -1 && h({
+                    target: t
                 })
             },
             a = function() {
-                if (!(h || !d.original)) {
-                    var k = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-                    Math.abs(C - k) > y.scrollOffset && setTimeout(_, 150)
+                if (!x && w.original) {
+                    var e = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+                    Math.abs(S - e) > C.scrollOffset && setTimeout(m, 150)
                 }
             },
-            s = function(k) {
-                var I = k.key || k.keyCode;
-                (I === "Escape" || I === "Esc" || I === 27) && _()
+            o = function(e) {
+                var t = e.key || e.keyCode;
+                (t === `Escape` || t === `Esc` || t === 27) && m()
             },
-            l = function() {
-                var k = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {},
-                    I = k;
-                if (k.background && (z.style.background = k.background), k.container && k.container instanceof Object && (I.container = Ne({}, y.container, k.container)), k.template) {
-                    var A = Ze(k.template) ? k.template : document.querySelector(k.template);
-                    I.template = A
-                }
-                return y = Ne({}, y, I), j.forEach(function(T) {
-                    T.dispatchEvent(Pe("medium-zoom:update", {
+            s = function() {
+                var e = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {},
+                    t = e;
+                return e.background && (T.style.background = e.background), e.container && e.container instanceof Object && (t.container = U({}, C.container, e.container)), e.template && (t.template = ft(e.template) ? e.template : document.querySelector(e.template)), C = U({}, C, t), y.forEach(function(e) {
+                    e.dispatchEvent(W(`medium-zoom:update`, {
                         detail: {
-                            zoom: L
+                            zoom: E
                         }
                     }))
-                }), L
-            },
-            u = function() {
-                var k = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {};
-                return e(Ne({}, y, k))
+                }), E
             },
             c = function() {
-                for (var k = arguments.length, I = Array(k), A = 0; A < k; A++) I[A] = arguments[A];
-                var T = I.reduce(function(P, U) {
-                    return [].concat(P, Rt(U))
-                }, []);
-                return T.filter(function(P) {
-                    return j.indexOf(P) === -1
-                }).forEach(function(P) {
-                    j.push(P), P.classList.add("medium-zoom-image")
-                }), E.forEach(function(P) {
-                    var U = P.type,
-                        W = P.listener,
-                        D = P.options;
-                    T.forEach(function(K) {
-                        K.addEventListener(U, W, D)
-                    })
-                }), L
+                var t = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {};
+                return e(U({}, C, t))
             },
-            p = function() {
-                for (var k = arguments.length, I = Array(k), A = 0; A < k; A++) I[A] = arguments[A];
-                d.zoomed && _();
-                var T = I.length > 0 ? I.reduce(function(P, U) {
-                    return [].concat(P, Rt(U))
-                }, []) : j;
-                return T.forEach(function(P) {
-                    P.classList.remove("medium-zoom-image"), P.dispatchEvent(Pe("medium-zoom:detach", {
+            l = function() {
+                var e = [...arguments].reduce(function(e, t) {
+                    return [].concat(e, mt(t))
+                }, []);
+                return e.filter(function(e) {
+                    return y.indexOf(e) === -1
+                }).forEach(function(e) {
+                    y.push(e), e.classList.add(`medium-zoom-image`)
+                }), b.forEach(function(t) {
+                    var n = t.type,
+                        r = t.listener,
+                        i = t.options;
+                    e.forEach(function(e) {
+                        e.addEventListener(n, r, i)
+                    })
+                }), E
+            },
+            u = function() {
+                var e = [...arguments];
+                w.zoomed && m();
+                var t = e.length > 0 ? e.reduce(function(e, t) {
+                    return [].concat(e, mt(t))
+                }, []) : y;
+                return t.forEach(function(e) {
+                    e.classList.remove(`medium-zoom-image`), e.dispatchEvent(W(`medium-zoom:detach`, {
                         detail: {
-                            zoom: L
+                            zoom: E
                         }
                     }))
-                }), j = j.filter(function(P) {
-                    return T.indexOf(P) === -1
-                }), L
+                }), y = y.filter(function(e) {
+                    return t.indexOf(e) === -1
+                }), E
             },
-            v = function(k, I) {
-                var A = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {};
-                return j.forEach(function(T) {
-                    T.addEventListener("medium-zoom:" + k, I, A)
-                }), E.push({
-                    type: "medium-zoom:" + k,
-                    listener: I,
-                    options: A
-                }), L
+            d = function(e, t) {
+                var n = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {};
+                return y.forEach(function(r) {
+                    r.addEventListener(`medium-zoom:` + e, t, n)
+                }), b.push({
+                    type: `medium-zoom:` + e,
+                    listener: t,
+                    options: n
+                }), E
             },
-            m = function(k, I) {
-                var A = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {};
-                return j.forEach(function(T) {
-                    T.removeEventListener("medium-zoom:" + k, I, A)
-                }), E = E.filter(function(T) {
-                    return !(T.type === "medium-zoom:" + k && T.listener.toString() === I.toString())
-                }), L
+            f = function(e, t) {
+                var n = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {};
+                return y.forEach(function(r) {
+                    r.removeEventListener(`medium-zoom:` + e, t, n)
+                }), b = b.filter(function(n) {
+                    return n.type !== `medium-zoom:` + e || n.listener.toString() !== t.toString()
+                }), E
             },
-            b = function() {
-                var k = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {},
-                    I = k.target,
-                    A = function() {
-                        var P = {
+            p = function() {
+                var e = (arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {}).target,
+                    t = function() {
+                        var e = {
                                 width: document.documentElement.clientWidth,
                                 height: document.documentElement.clientHeight,
                                 left: 0,
@@ -1289,486 +1307,477 @@ See: https://github.com/francoischalifour/medium-zoom`)
                                 right: 0,
                                 bottom: 0
                             },
-                            U = void 0,
-                            W = void 0;
-                        if (y.container)
-                            if (y.container instanceof Object) P = Ne({}, P, y.container), U = P.width - P.left - P.right - y.margin * 2, W = P.height - P.top - P.bottom - y.margin * 2;
+                            t = void 0,
+                            n = void 0;
+                        if (C.container) {
+                            if (C.container instanceof Object) e = U({}, e, C.container), t = e.width - e.left - e.right - C.margin * 2, n = e.height - e.top - e.bottom - C.margin * 2;
                             else {
-                                var D = Ze(y.container) ? y.container : document.querySelector(y.container),
-                                    K = D.getBoundingClientRect(),
-                                    F = K.width,
-                                    ge = K.height,
-                                    me = K.left,
-                                    pe = K.top;
-                                P = Ne({}, P, {
-                                    width: F,
-                                    height: ge,
-                                    left: me,
-                                    top: pe
+                                var r = (ft(C.container) ? C.container : document.querySelector(C.container)).getBoundingClientRect(),
+                                    i = r.width,
+                                    a = r.height,
+                                    o = r.left,
+                                    s = r.top;
+                                e = U({}, e, {
+                                    width: i,
+                                    height: a,
+                                    left: o,
+                                    top: s
                                 })
-                            } U = U || P.width - y.margin * 2, W = W || P.height - y.margin * 2;
-                        var oe = y.minZoomScale || 1,
-                            Z = d.zoomedHd || d.original,
-                            q = Mt(Z) ? U : Z.naturalWidth || U,
-                            ye = Mt(Z) ? W : Z.naturalHeight || W,
-                            ce = Z.getBoundingClientRect(),
-                            R = ce.top,
-                            ie = ce.left,
-                            ae = ce.width,
-                            _e = ce.height,
-                            Xe = Math.min(Math.max(q * oe, ae), U) / ae,
-                            Ee = Math.min(Math.max(ye * oe, _e), W) / _e,
-                            Oe = Math.min(Xe, Ee),
-                            Je = (-ie + (U - ae) / 2 + y.margin + P.left) / Oe,
-                            et = (-R + (W - _e) / 2 + y.margin + P.top) / Oe,
-                            Be = "scale(" + Oe + ") translate3d(" + Je + "px, " + et + "px, 0)";
-                        d.zoomed.style.transform = Be, d.zoomedHd && (d.zoomedHd.style.transform = Be)
-                    };
-                return new i(function(T) {
-                    if (I && j.indexOf(I) === -1) {
-                        T(L);
-                        return
-                    }
-                    var P = function F() {
-                        h = !1, d.zoomed.removeEventListener("transitionend", F), d.original.dispatchEvent(Pe("medium-zoom:opened", {
-                            detail: {
-                                zoom: L
                             }
-                        })), T(L)
+                        }
+                        t = t || e.width - C.margin * 2, n = n || e.height - C.margin * 2;
+                        var c = C.minZoomScale || 1,
+                            l = w.zoomedHd || w.original,
+                            u = pt(l) ? t : l.naturalWidth || t,
+                            d = pt(l) ? n : l.naturalHeight || n,
+                            f = l.getBoundingClientRect(),
+                            p = f.top,
+                            m = f.left,
+                            h = f.width,
+                            g = f.height,
+                            _ = Math.min(Math.max(u * c, h), t) / h,
+                            v = Math.min(Math.max(d * c, g), n) / g,
+                            y = Math.min(_, v),
+                            b = (-m + (t - h) / 2 + C.margin + e.left) / y,
+                            x = (-p + (n - g) / 2 + C.margin + e.top) / y,
+                            S = `scale(` + y + `) translate3d(` + b + `px, ` + x + `px, 0)`;
+                        w.zoomed.style.transform = S, w.zoomedHd && (w.zoomedHd.style.transform = S)
                     };
-                    if (d.zoomed) {
-                        T(L);
-                        return
-                    }
-                    if (I) d.original = I;
-                    else if (j.length > 0) {
-                        var U = j;
-                        d.original = U[0]
-                    } else {
-                        T(L);
-                        return
-                    }
-                    if (d.original.dispatchEvent(Pe("medium-zoom:open", {
-                            detail: {
-                                zoom: L
-                            }
-                        })), C = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0, h = !0, d.zoomed = So(d.original), document.body.appendChild(z), y.template) {
-                        var W = Ze(y.template) ? y.template : document.querySelector(y.template);
-                        d.template = document.createElement("div"), d.template.appendChild(W.content.cloneNode(!0)), document.body.appendChild(d.template)
-                    }
-                    if (document.body.appendChild(d.zoomed), window.requestAnimationFrame(function() {
-                            document.body.classList.add("medium-zoom--opened")
-                        }), d.original.classList.add("medium-zoom-image--hidden"), d.zoomed.classList.add("medium-zoom-image--opened"), d.zoomed.addEventListener("click", _), d.zoomed.addEventListener("transitionend", P), d.original.getAttribute("data-zoom-src")) {
-                        d.zoomedHd = d.zoomed.cloneNode(), d.zoomedHd.removeAttribute("srcset"), d.zoomedHd.removeAttribute("sizes"), d.zoomedHd.removeAttribute("loading"), d.zoomedHd.src = d.zoomed.getAttribute("data-zoom-src"), d.zoomedHd.onerror = function() {
-                            clearInterval(D), console.warn("Unable to reach the zoom image target " + d.zoomedHd.src), d.zoomedHd = null, A()
+                return new r(function(n) {
+                    if (e && y.indexOf(e) === -1) n(E);
+                    else {
+                        var r = function e() {
+                            x = !1, w.zoomed.removeEventListener(`transitionend`, e), w.original.dispatchEvent(W(`medium-zoom:opened`, {
+                                detail: {
+                                    zoom: E
+                                }
+                            })), n(E)
                         };
-                        var D = setInterval(function() {
-                            d.zoomedHd.complete && (clearInterval(D), d.zoomedHd.classList.add("medium-zoom-image--opened"), d.zoomedHd.addEventListener("click", _), document.body.appendChild(d.zoomedHd), A())
-                        }, 10)
-                    } else if (d.original.hasAttribute("srcset")) {
-                        d.zoomedHd = d.zoomed.cloneNode(), d.zoomedHd.removeAttribute("sizes"), d.zoomedHd.removeAttribute("loading");
-                        var K = d.zoomedHd.addEventListener("load", function() {
-                            d.zoomedHd.removeEventListener("load", K), d.zoomedHd.classList.add("medium-zoom-image--opened"), d.zoomedHd.addEventListener("click", _), document.body.appendChild(d.zoomedHd), A()
-                        })
-                    } else A()
+                        if (w.zoomed) n(E);
+                        else {
+                            if (e) w.original = e;
+                            else if (y.length > 0) w.original = y[0];
+                            else {
+                                n(E);
+                                return
+                            }
+                            if (w.original.dispatchEvent(W(`medium-zoom:open`, {
+                                    detail: {
+                                        zoom: E
+                                    }
+                                })), S = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0, x = !0, w.zoomed = gt(w.original), document.body.appendChild(T), C.template) {
+                                var i = ft(C.template) ? C.template : document.querySelector(C.template);
+                                w.template = document.createElement(`div`), w.template.appendChild(i.content.cloneNode(!0)), document.body.appendChild(w.template)
+                            }
+                            if (document.body.appendChild(w.zoomed), window.requestAnimationFrame(function() {
+                                    document.body.classList.add(`medium-zoom--opened`)
+                                }), w.original.classList.add(`medium-zoom-image--hidden`), w.zoomed.classList.add(`medium-zoom-image--opened`), w.zoomed.addEventListener(`click`, m), w.zoomed.addEventListener(`transitionend`, r), w.original.getAttribute(`data-zoom-src`)) {
+                                w.zoomedHd = w.zoomed.cloneNode(), w.zoomedHd.removeAttribute(`srcset`), w.zoomedHd.removeAttribute(`sizes`), w.zoomedHd.removeAttribute(`loading`), w.zoomedHd.src = w.zoomed.getAttribute(`data-zoom-src`), w.zoomedHd.onerror = function() {
+                                    clearInterval(a), console.warn(`Unable to reach the zoom image target ` + w.zoomedHd.src), w.zoomedHd = null, t()
+                                };
+                                var a = setInterval(function() {
+                                    w.zoomedHd.complete && (clearInterval(a), w.zoomedHd.classList.add(`medium-zoom-image--opened`), w.zoomedHd.addEventListener(`click`, m), document.body.appendChild(w.zoomedHd), t())
+                                }, 10)
+                            } else if (w.original.hasAttribute(`srcset`)) {
+                                w.zoomedHd = w.zoomed.cloneNode(), w.zoomedHd.removeAttribute(`sizes`), w.zoomedHd.removeAttribute(`loading`);
+                                var o = w.zoomedHd.addEventListener(`load`, function() {
+                                    w.zoomedHd.removeEventListener(`load`, o), w.zoomedHd.classList.add(`medium-zoom-image--opened`), w.zoomedHd.addEventListener(`click`, m), document.body.appendChild(w.zoomedHd), t()
+                                })
+                            } else t()
+                        }
+                    }
                 })
             },
-            _ = function() {
-                return new i(function(k) {
-                    if (h || !d.original) {
-                        k(L);
-                        return
-                    }
-                    var I = function A() {
-                        d.original.classList.remove("medium-zoom-image--hidden"), document.body.removeChild(d.zoomed), d.zoomedHd && document.body.removeChild(d.zoomedHd), document.body.removeChild(z), d.zoomed.classList.remove("medium-zoom-image--opened"), d.template && document.body.removeChild(d.template), h = !1, d.zoomed.removeEventListener("transitionend", A), d.original.dispatchEvent(Pe("medium-zoom:closed", {
+            m = function() {
+                return new r(function(e) {
+                    if (x || !w.original) e(E);
+                    else {
+                        var t = function t() {
+                            w.original.classList.remove(`medium-zoom-image--hidden`), document.body.removeChild(w.zoomed), w.zoomedHd && document.body.removeChild(w.zoomedHd), document.body.removeChild(T), w.zoomed.classList.remove(`medium-zoom-image--opened`), w.template && document.body.removeChild(w.template), x = !1, w.zoomed.removeEventListener(`transitionend`, t), w.original.dispatchEvent(W(`medium-zoom:closed`, {
+                                detail: {
+                                    zoom: E
+                                }
+                            })), w.original = null, w.zoomed = null, w.zoomedHd = null, w.template = null, e(E)
+                        };
+                        x = !0, document.body.classList.remove(`medium-zoom--opened`), w.zoomed.style.transform = ``, w.zoomedHd && (w.zoomedHd.style.transform = ``), w.template && (w.template.style.transition = `opacity 150ms`, w.template.style.opacity = 0), w.original.dispatchEvent(W(`medium-zoom:close`, {
                             detail: {
-                                zoom: L
+                                zoom: E
                             }
-                        })), d.original = null, d.zoomed = null, d.zoomedHd = null, d.template = null, k(L)
-                    };
-                    h = !0, document.body.classList.remove("medium-zoom--opened"), d.zoomed.style.transform = "", d.zoomedHd && (d.zoomedHd.style.transform = ""), d.template && (d.template.style.transition = "opacity 150ms", d.template.style.opacity = 0), d.original.dispatchEvent(Pe("medium-zoom:close", {
-                        detail: {
-                            zoom: L
-                        }
-                    })), d.zoomed.addEventListener("transitionend", I)
+                        })), w.zoomed.addEventListener(`transitionend`, t)
+                    }
+                })
+            },
+            h = function() {
+                var e = (arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {}).target;
+                return w.original ? m() : p({
+                    target: e
                 })
             },
             g = function() {
-                var k = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {},
-                    I = k.target;
-                return d.original ? _() : b({
-                    target: I
-                })
+                return C
             },
-            w = function() {
+            _ = function() {
                 return y
             },
-            x = function() {
-                return j
+            v = function() {
+                return w.original
             },
-            S = function() {
-                return d.original
-            },
-            j = [],
-            E = [],
-            h = !1,
-            C = 0,
-            y = o,
-            d = {
+            y = [],
+            b = [],
+            x = !1,
+            S = 0,
+            C = n,
+            w = {
                 original: null,
                 zoomed: null,
                 zoomedHd: null,
                 template: null
             };
-        Object.prototype.toString.call(t) === "[object Object]" ? y = t : (t || typeof t == "string") && c(t), y = Ne({
+        Object.prototype.toString.call(t) === `[object Object]` ? C = t : (t || typeof t == `string`) && l(t), C = U({
             margin: 0,
-            background: "#fff",
+            background: `#fff`,
             scrollOffset: 40,
             minZoomScale: 1,
             container: null,
             template: null
-        }, y);
-        var z = Io(y.background);
-        document.addEventListener("click", r), document.addEventListener("keyup", s), document.addEventListener("scroll", a), window.addEventListener("resize", _);
-        var L = {
-            open: b,
-            close: _,
-            toggle: g,
-            update: l,
-            clone: u,
-            attach: c,
-            detach: p,
-            on: v,
-            off: m,
-            getOptions: w,
-            getImages: x,
-            getZoomedImage: S
+        }, C);
+        var T = ht(C.background);
+        document.addEventListener(`click`, i), document.addEventListener(`keyup`, o), document.addEventListener(`scroll`, a), window.addEventListener(`resize`, m);
+        var E = {
+            open: p,
+            close: m,
+            toggle: h,
+            update: s,
+            clone: c,
+            attach: l,
+            detach: u,
+            on: d,
+            off: f,
+            getOptions: g,
+            getImages: _,
+            getZoomedImage: v
         };
-        return L
+        return E
     };
 
-function Oo(e, t) {
+function vt(e, t) {
     t === void 0 && (t = {});
-    var o = t.insertAt;
-    if (!(typeof document > "u")) {
-        var i = document.head || document.getElementsByTagName("head")[0],
-            r = document.createElement("style");
-        r.type = "text/css", o === "top" && i.firstChild ? i.insertBefore(r, i.firstChild) : i.appendChild(r), r.styleSheet ? r.styleSheet.cssText = e : r.appendChild(document.createTextNode(e))
+    var n = t.insertAt;
+    if (e && typeof document < `u`) {
+        var r = document.head || document.getElementsByTagName(`head`)[0],
+            i = document.createElement(`style`);
+        i.type = `text/css`, n === `top` && r.firstChild ? r.insertBefore(i, r.firstChild) : r.appendChild(i), i.styleSheet ? i.styleSheet.cssText = e : i.appendChild(document.createTextNode(e))
     }
 }
-var zo = ".medium-zoom-overlay{position:fixed;top:0;right:0;bottom:0;left:0;opacity:0;transition:opacity .3s;will-change:opacity}.medium-zoom--opened .medium-zoom-overlay{cursor:pointer;cursor:zoom-out;opacity:1}.medium-zoom-image{cursor:pointer;cursor:zoom-in;transition:transform .3s cubic-bezier(.2,0,.2,1)!important}.medium-zoom-image--hidden{visibility:hidden}.medium-zoom-image--opened{position:relative;cursor:pointer;cursor:zoom-out;will-change:transform}";
-Oo(zo);
-var $o = Object.create,
-    yt = Object.defineProperty,
-    To = Object.getOwnPropertyDescriptor,
-    en = Object.getOwnPropertyNames,
-    Mo = Object.getPrototypeOf,
-    Ro = Object.prototype.hasOwnProperty,
-    Ho = (e, t, o) => t in e ? yt(e, t, {
+vt(`.medium-zoom-overlay{position:fixed;top:0;right:0;bottom:0;left:0;opacity:0;transition:opacity .3s;will-change:opacity}.medium-zoom--opened .medium-zoom-overlay{cursor:pointer;cursor:zoom-out;opacity:1}.medium-zoom-image{cursor:pointer;cursor:zoom-in;transition:transform .3s cubic-bezier(.2,0,.2,1)!important}.medium-zoom-image--hidden{visibility:hidden}.medium-zoom-image--opened{position:relative;cursor:pointer;cursor:zoom-out;will-change:transform}`);
+var yt = Object.create,
+    bt = Object.defineProperty,
+    xt = Object.getOwnPropertyDescriptor,
+    St = Object.getOwnPropertyNames,
+    Ct = Object.getPrototypeOf,
+    wt = Object.prototype.hasOwnProperty,
+    Tt = (e, t, n) => t in e ? bt(e, t, {
         enumerable: !0,
         configurable: !0,
         writable: !0,
-        value: o
-    }) : e[t] = o,
-    Ao = (e, t) => function() {
-        return t || (0, e[en(e)[0]])((t = {
+        value: n
+    }) : e[t] = n,
+    Et = (e, t) => function() {
+        return t || (0, e[St(e)[0]])((t = {
             exports: {}
         }).exports, t), t.exports
     },
-    Bo = (e, t, o, i) => {
-        if (t && typeof t == "object" || typeof t == "function")
-            for (let r of en(t)) !Ro.call(e, r) && r !== o && yt(e, r, {
-                get: () => t[r],
-                enumerable: !(i = To(t, r)) || i.enumerable
+    Dt = (e, t, n, r) => {
+        if (t && typeof t == `object` || typeof t == `function`)
+            for (let i of St(t)) !wt.call(e, i) && i !== n && bt(e, i, {
+                get: () => t[i],
+                enumerable: !(r = xt(t, i)) || r.enumerable
             });
         return e
     },
-    tn = (e, t, o) => (o = e != null ? $o(Mo(e)) : {}, Bo(yt(o, "default", {
+    Ot = (e, t, n) => (n = e == null ? {} : yt(Ct(e)), Dt(t || !e || !e.__esModule ? bt(n, `default`, {
         value: e,
         enumerable: !0
-    }), e)),
-    fe = (e, t, o) => Ho(e, typeof t != "symbol" ? t + "" : t, o),
-    nn = Ao({
+    }) : n, e)),
+    G = (e, t, n) => Tt(e, typeof t == `symbol` ? t : t + ``, n),
+    kt = Et({
         "../../node_modules/.pnpm/lodash.throttle@4.1.1/node_modules/lodash.throttle/index.js"(e, t) {
-            var o = "Expected a function",
+            var n = `Expected a function`,
                 i = NaN,
-                r = "[object Symbol]",
                 a = /^\s+|\s+$/g,
-                s = /^[-+]0x[0-9a-f]+$/i,
-                l = /^0b[01]+$/i,
-                u = /^0o[0-7]+$/i,
-                c = parseInt,
-                p = typeof Ue == "object" && Ue && Ue.Object === Object && Ue,
-                v = typeof self == "object" && self && self.Object === Object && self,
-                m = p || v || Function("return this")(),
-                b = Object.prototype,
-                _ = b.toString,
-                g = Math.max,
-                w = Math.min,
-                x = function() {
-                    return m.Date.now()
+                o = /^[-+]0x[0-9a-f]+$/i,
+                s = /^0b[01]+$/i,
+                c = /^0o[0-7]+$/i,
+                l = parseInt,
+                u = typeof r == `object` && r && r.Object === Object && r,
+                d = typeof self == `object` && self && self.Object === Object && self,
+                f = u || d || Function(`return this`)(),
+                p = Object.prototype.toString,
+                m = Math.max,
+                h = Math.min,
+                g = function() {
+                    return f.Date.now()
                 };
 
-            function S(d, z, L) {
-                var $, k, I, A, T, P, U = 0,
-                    W = !1,
-                    D = !1,
-                    K = !0;
-                if (typeof d != "function") throw new TypeError(o);
-                z = y(z) || 0, E(L) && (W = !!L.leading, D = "maxWait" in L, I = D ? g(y(L.maxWait) || 0, z) : I, K = "trailing" in L ? !!L.trailing : K);
+            function _(e, t, r) {
+                var i, a, o, s, c, l, u = 0,
+                    d = !1,
+                    f = !1,
+                    p = !0;
+                if (typeof e != `function`) throw TypeError(n);
+                t = S(t) || 0, y(r) && (d = !!r.leading, f = `maxWait` in r, o = f ? m(S(r.maxWait) || 0, t) : o, p = `trailing` in r ? !!r.trailing : p);
 
-                function F(R) {
-                    var ie = $,
-                        ae = k;
-                    return $ = k = void 0, U = R, A = d.apply(ae, ie), A
+                function _(t) {
+                    var n = i,
+                        r = a;
+                    return i = a = void 0, u = t, s = e.apply(r, n), s
                 }
 
-                function ge(R) {
-                    return U = R, T = setTimeout(oe, z), W ? F(R) : A
+                function v(e) {
+                    return u = e, c = setTimeout(C, t), d ? _(e) : s
                 }
 
-                function me(R) {
-                    var ie = R - P,
-                        ae = R - U,
-                        _e = z - ie;
-                    return D ? w(_e, I - ae) : _e
+                function b(e) {
+                    var n = e - l,
+                        r = e - u,
+                        i = t - n;
+                    return f ? h(i, o - r) : i
                 }
 
-                function pe(R) {
-                    var ie = R - P,
-                        ae = R - U;
-                    return P === void 0 || ie >= z || ie < 0 || D && ae >= I
+                function x(e) {
+                    var n = e - l,
+                        r = e - u;
+                    return l === void 0 || n >= t || n < 0 || f && r >= o
                 }
 
-                function oe() {
-                    var R = x();
-                    if (pe(R)) return Z(R);
-                    T = setTimeout(oe, me(R))
+                function C() {
+                    var e = g();
+                    if (x(e)) return w(e);
+                    c = setTimeout(C, b(e))
                 }
 
-                function Z(R) {
-                    return T = void 0, K && $ ? F(R) : ($ = k = void 0, A)
+                function w(e) {
+                    return c = void 0, p && i ? _(e) : (i = a = void 0, s)
                 }
 
-                function q() {
-                    T !== void 0 && clearTimeout(T), U = 0, $ = P = k = T = void 0
+                function T() {
+                    c !== void 0 && clearTimeout(c), u = 0, i = l = a = c = void 0
                 }
 
-                function ye() {
-                    return T === void 0 ? A : Z(x())
+                function E() {
+                    return c === void 0 ? s : w(g())
                 }
 
-                function ce() {
-                    var R = x(),
-                        ie = pe(R);
-                    if ($ = arguments, k = this, P = R, ie) {
-                        if (T === void 0) return ge(P);
-                        if (D) return T = setTimeout(oe, z), F(P)
+                function D() {
+                    var e = g(),
+                        n = x(e);
+                    if (i = arguments, a = this, l = e, n) {
+                        if (c === void 0) return v(l);
+                        if (f) return c = setTimeout(C, t), _(l)
                     }
-                    return T === void 0 && (T = setTimeout(oe, z)), A
+                    return c === void 0 && (c = setTimeout(C, t)), s
                 }
-                return ce.cancel = q, ce.flush = ye, ce
+                return D.cancel = T, D.flush = E, D
             }
 
-            function j(d, z, L) {
-                var $ = !0,
-                    k = !0;
-                if (typeof d != "function") throw new TypeError(o);
-                return E(L) && ($ = "leading" in L ? !!L.leading : $, k = "trailing" in L ? !!L.trailing : k), S(d, z, {
-                    leading: $,
-                    maxWait: z,
-                    trailing: k
+            function v(e, t, r) {
+                var i = !0,
+                    a = !0;
+                if (typeof e != `function`) throw TypeError(n);
+                return y(r) && (i = `leading` in r ? !!r.leading : i, a = `trailing` in r ? !!r.trailing : a), _(e, t, {
+                    leading: i,
+                    maxWait: t,
+                    trailing: a
                 })
             }
 
-            function E(d) {
-                var z = typeof d;
-                return !!d && (z == "object" || z == "function")
+            function y(e) {
+                var t = typeof e;
+                return !!e && (t == `object` || t == `function`)
             }
 
-            function h(d) {
-                return !!d && typeof d == "object"
+            function b(e) {
+                return !!e && typeof e == `object`
             }
 
-            function C(d) {
-                return typeof d == "symbol" || h(d) && _.call(d) == r
+            function x(e) {
+                return typeof e == `symbol` || b(e) && p.call(e) == `[object Symbol]`
             }
 
-            function y(d) {
-                if (typeof d == "number") return d;
-                if (C(d)) return i;
-                if (E(d)) {
-                    var z = typeof d.valueOf == "function" ? d.valueOf() : d;
-                    d = E(z) ? z + "" : z
+            function S(e) {
+                if (typeof e == `number`) return e;
+                if (x(e)) return i;
+                if (y(e)) {
+                    var t = typeof e.valueOf == `function` ? e.valueOf() : e;
+                    e = y(t) ? t + `` : t
                 }
-                if (typeof d != "string") return d === 0 ? d : +d;
-                d = d.replace(a, "");
-                var L = l.test(d);
-                return L || u.test(d) ? c(d.slice(2), L ? 2 : 8) : s.test(d) ? i : +d
+                if (typeof e != `string`) return e === 0 ? e : +e;
+                e = e.replace(a, ``);
+                var n = s.test(e);
+                return n || c.test(e) ? l(e.slice(2), n ? 2 : 8) : o.test(e) ? i : +e
             }
-            t.exports = j
+            t.exports = v
         }
     }),
-    N = (...e) => e.filter(t => !!t).join(" "),
-    Uo = e => e.includes("#") ? e.replace(/^.+(#.+)$/, "$1") : "",
-    Do = !!globalThis.window,
-    Fo = new Set(["youtu.be", "youtube.com", "www.youtube.com", "youtube-nocookie.com", "www.youtube-nocookie.com"]),
-    Wo = e => {
+    K = (...e) => e.filter(e => !!e).join(` `),
+    At = e => e.includes(`#`) ? e.replace(/^.+(#.+)$/, `$1`) : ``,
+    jt = !!globalThis.window,
+    Mt = new Set([`youtu.be`, `youtube.com`, `www.youtube.com`, `youtube-nocookie.com`, `www.youtube-nocookie.com`]),
+    Nt = e => {
         var t;
         try {
-            const {
-                hostname: o
+            let {
+                hostname: n
             } = new URL(e);
-            if (!Fo.has(o)) return null;
-            const i = /^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/i,
-                r = e.match(i);
+            if (!Mt.has(n)) return null;
+            let r = e.match(/^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/i);
             if (r && ((t = r[2]) == null ? void 0 : t.length) === 11) return r[2]
         } catch {}
         return null
     },
-    Vo = e => {
+    Pt = e => {
         try {
-            const {
+            let {
                 searchParams: t
-            } = new URL(e), o = {};
-            for (const [i, r] of t.entries()) o[i] = r;
-            return o
+            } = new URL(e), n = {};
+            for (let [e, r] of t.entries()) n[e] = r;
+            return n
         } catch {}
     },
-    de = Me.unionize({
+    q = (0, R.unionize)({
         NotAsked: {},
         Buffering: {},
         Loading: {},
         LoadSuccess: {},
-        LoadError: Me.ofType()
+        LoadError: (0, R.ofType)()
     }),
-    Re = Me.unionize({
-        ViewChanged: Me.ofType(),
+    Ft = (0, R.unionize)({
+        ViewChanged: (0, R.ofType)(),
         BufferingEnded: {},
         LoadSuccess: {},
-        LoadError: Me.ofType()
+        LoadError: (0, R.ofType)()
     }),
-    qo = e => t => {
-        const o = an(Yo(e));
-        o.promise.then(() => t.update(Re.BufferingEnded())).catch(i => {}), t.promiseCache.buffering = o
+    It = e => t => {
+        let n = Ut(Ht(e));
+        n.promise.then(() => t.update(Ft.BufferingEnded())).catch(e => {}), t.promiseCache.buffering = n
     },
-    Ht = (e, t) => o => {
-        const i = an(Qo(e, t));
-        i.promise.then(r => o.update(Re.LoadSuccess({}))).catch(r => {
-            r.isCanceled || o.update(new Re.LoadError({
-                msg: "LoadError"
+    Lt = (e, t) => n => {
+        let r = Ut(Vt(e, t));
+        r.promise.then(e => n.update(Ft.LoadSuccess({}))).catch(e => {
+            e.isCanceled || n.update(new Ft.LoadError({
+                msg: `LoadError`
             }))
-        }), o.promiseCache.loading = i
+        }), n.promiseCache.loading = r
     },
-    Ko = e => {
+    Rt = e => {
         var t;
         (t = e.promiseCache.buffering) == null || t.cancel()
     },
-    on = class rn extends X.Component {
-        constructor(t) {
-            super(t), fe(this, "promiseCache", {}), fe(this, "initialState", de.NotAsked()), this.state = this.initialState, this.update = this.update.bind(this)
+    zt = class e extends d.Component {
+        constructor(e) {
+            super(e), G(this, `promiseCache`, {}), G(this, `initialState`, q.NotAsked()), this.state = this.initialState, this.update = this.update.bind(this)
         }
-        static reducer(t, o, i) {
-            return Re.match(t, {
+        static reducer(e, t, n) {
+            return Ft.match(e, {
                 ViewChanged: ({
-                    inView: r
-                }) => r === !0 ? i.src ? de.match(o, {
-                    NotAsked: () => i.debounceDurationMs ? {
-                        nextState: de.Buffering(),
-                        cmd: qo(i.debounceDurationMs)
+                    inView: e
+                }) => e === !0 ? n.src ? q.match(t, {
+                    NotAsked: () => n.debounceDurationMs ? {
+                        nextState: q.Buffering(),
+                        cmd: It(n.debounceDurationMs)
                     } : {
-                        nextState: de.Loading(),
-                        cmd: Ht(i, i.experimentalDecode)
+                        nextState: q.Loading(),
+                        cmd: Lt(n, n.experimentalDecode)
                     },
                     default: () => ({
-                        nextState: o
+                        nextState: t
                     })
                 }) : {
-                    nextState: de.LoadSuccess()
-                } : de.match(o, {
+                    nextState: q.LoadSuccess()
+                } : q.match(t, {
                     Buffering: () => ({
-                        nextState: de.NotAsked(),
-                        cmd: Ko
+                        nextState: q.NotAsked(),
+                        cmd: Rt
                     }),
                     default: () => ({
-                        nextState: o
+                        nextState: t
                     })
                 }),
                 BufferingEnded: () => ({
-                    nextState: de.Loading(),
-                    cmd: Ht(i, i.experimentalDecode)
+                    nextState: q.Loading(),
+                    cmd: Lt(n, n.experimentalDecode)
                 }),
                 LoadSuccess: () => ({
-                    nextState: de.LoadSuccess()
+                    nextState: q.LoadSuccess()
                 }),
-                LoadError: r => ({
-                    nextState: new de.LoadError(r)
+                LoadError: e => ({
+                    nextState: new q.LoadError(e)
                 })
             })
         }
         update(t) {
-            const {
-                nextState: o,
-                cmd: i
-            } = rn.reducer(t, this.state, this.props);
+            let {
+                nextState: n,
+                cmd: r
+            } = e.reducer(t, this.state, this.props);
             this.props.debugActions && console.log({
                 action: t,
                 prevState: this.state,
-                nextState: o
-            }), this.setState(o, () => i && i(this))
+                nextState: n
+            }), this.setState(n, () => r && r(this))
         }
         componentWillUnmount() {
             this.promiseCache.loading && this.promiseCache.loading.cancel(), this.promiseCache.buffering && this.promiseCache.buffering.cancel(), this.promiseCache = {}
         }
         render() {
-            const {
-                children: t,
-                loadEagerly: o,
-                observerProps: i,
+            let {
+                children: e,
+                loadEagerly: t,
+                observerProps: n,
                 ...r
             } = this.props;
-            return o ? t({
-                imageState: de.LoadSuccess().tag,
+            return t ? e({
+                imageState: q.LoadSuccess().tag,
                 imageProps: r
-            }) : n.jsx(no, {
-                rootMargin: "50px 0px",
+            }) : (0, z.jsx)(Me, {
+                rootMargin: `50px 0px`,
                 threshold: .01,
-                ...i,
-                onChange: a => this.update(Re.ViewChanged({
-                    inView: a
+                ...n,
+                onChange: e => this.update(Ft.ViewChanged({
+                    inView: e
                 })),
                 children: ({
-                    ref: a
-                }) => t({
-                    imageState: this.state.tag === "Buffering" ? "Loading" : this.state.tag,
+                    ref: t
+                }) => e({
+                    imageState: this.state.tag === `Buffering` ? `Loading` : this.state.tag,
                     imageProps: r,
-                    ref: a
+                    ref: t
                 })
             })
         }
     };
-fe(on, "displayName", "LazyImageFull");
-var Zo = on,
-    Qo = ({
+G(zt, `displayName`, `LazyImageFull`);
+var Bt = zt,
+    Vt = ({
         src: e,
         srcSet: t,
-        alt: o,
-        sizes: i
-    }, r = !1) => new Promise((a, s) => {
-        const l = new Image;
-        if (t && (l.srcset = t), o && (l.alt = o), i && (l.sizes = i), l.src = e, r && "decode" in l) return l.decode().then(() => a(l)).catch(u => s(u));
-        l.addEventListener("load", a), l.addEventListener("error", s)
+        alt: n,
+        sizes: r
+    }, i = !1) => new Promise((a, o) => {
+        let s = new Image;
+        if (t && (s.srcset = t), n && (s.alt = n), r && (s.sizes = r), s.src = e, i && `decode` in s) return s.decode().then(() => a(s)).catch(e => o(e));
+        s.addEventListener(`load`, a), s.addEventListener(`error`, o)
     }),
-    Yo = e => new Promise(t => setTimeout(t, e)),
-    an = e => {
+    Ht = e => new Promise(t => setTimeout(t, e)),
+    Ut = e => {
         let t = !1;
         return {
-            promise: new Promise((i, r) => {
-                e.then(a => t ? r({
+            promise: new Promise((n, r) => {
+                e.then(e => t ? r({
                     isCanceled: !0
-                }) : i(a)), e.catch(a => r(t ? {
+                }) : n(e)), e.catch(e => r(t ? {
                     isCanceled: !0
-                } : a))
+                } : e))
             }),
             cancel() {
                 t = !0
@@ -1776,544 +1785,543 @@ var Zo = on,
         }
     };
 
-function Se({
+function J({
     src: e,
     alt: t,
-    className: o,
-    style: i,
-    zoomable: r = !1,
+    className: n,
+    style: r,
+    zoomable: i = !1,
     priority: a = !1,
-    height: s,
-    ...l
+    height: o,
+    ...s
 }) {
-    var u, c, p;
-    const {
-        recordMap: v,
-        zoom: m,
-        previewImages: b,
-        forceCustomImages: _,
-        components: g
-    } = ne(), w = M.useRef(m ? m.clone() : null), x = b ? (p = (u = v == null ? void 0 : v.preview_images) == null ? void 0 : u[e]) != null ? p : (c = v == null ? void 0 : v.preview_images) == null ? void 0 : c[Zt(e)] : null, S = M.useCallback(h => {
-        r && (h.target.src || h.target.srcset) && w.current && w.current.attach(h.target)
-    }, [w, r]), j = M.useCallback(h => {
-        w.current && h && w.current.attach(h)
-    }, [w]), E = M.useMemo(() => r ? j : void 0, [r, j]);
-    if (x) {
-        const h = x.originalHeight / x.originalWidth;
-        return g.Image ? n.jsx(g.Image, {
+    var c, l;
+    let {
+        recordMap: u,
+        zoom: f,
+        previewImages: p,
+        forceCustomImages: m,
+        components: h
+    } = $(), g = d.useRef(f ? f.clone() : null), _ = p ? ((c = u == null ? void 0 : u.preview_images) == null ? void 0 : c[e]) ?? ((l = u == null ? void 0 : u.preview_images) == null ? void 0 : l[N(e)]) : null, v = d.useCallback(e => {
+        i && (e.target.src || e.target.srcset) && g.current && g.current.attach(e.target)
+    }, [g, i]), y = d.useCallback(e => {
+        g.current && e && g.current.attach(e)
+    }, [g]), b = d.useMemo(() => i ? y : void 0, [i, y]);
+    if (_) {
+        let i = _.originalHeight / _.originalWidth;
+        return h.Image ? (0, z.jsx)(h.Image, {
             src: e,
             alt: t,
-            style: i,
-            className: o,
-            width: x.originalWidth,
-            height: x.originalHeight,
-            blurDataURL: x.dataURIBase64,
-            placeholder: "blur",
+            style: r,
+            className: n,
+            width: _.originalWidth,
+            height: _.originalHeight,
+            blurDataURL: _.dataURIBase64,
+            placeholder: `blur`,
             priority: a,
-            onLoad: S
-        }) : n.jsx(Zo, {
+            onLoad: v
+        }) : (0, z.jsx)(Bt, {
             src: e,
-            ...l,
+            ...s,
             experimentalDecode: !0,
             children: ({
-                imageState: C,
-                ref: y
+                imageState: a,
+                ref: s
             }) => {
-                const d = C === "LoadSuccess",
-                    z = {
-                        width: "100%"
+                let c = a === `LoadSuccess`,
+                    l = {
+                        width: `100%`
                     },
-                    L = {};
-                return s ? z.height = s : (L.position = "absolute", z.paddingBottom = `${h*100}%`), n.jsxs("div", {
-                    className: N("lazy-image-wrapper", d && "lazy-image-loaded", o),
-                    style: z,
-                    children: [n.jsx("img", {
-                        className: "lazy-image-preview",
-                        src: x.dataURIBase64,
+                    u = {};
+                return o ? l.height = o : (u.position = `absolute`, l.paddingBottom = `${i*100}%`), (0, z.jsxs)(`div`, {
+                    className: K(`lazy-image-wrapper`, c && `lazy-image-loaded`, n),
+                    style: l,
+                    children: [(0, z.jsx)(`img`, {
+                        className: `lazy-image-preview`,
+                        src: _.dataURIBase64,
                         alt: t,
-                        ref: y,
-                        style: i,
-                        decoding: "async"
-                    }), n.jsx("img", {
-                        className: "lazy-image-real",
+                        ref: s,
+                        style: r,
+                        decoding: `async`
+                    }), (0, z.jsx)(`img`, {
+                        className: `lazy-image-real`,
                         src: e,
                         alt: t,
-                        ref: E,
+                        ref: b,
                         style: {
-                            ...i,
-                            ...L
+                            ...r,
+                            ...u
                         },
-                        width: x.originalWidth,
-                        height: x.originalHeight,
-                        decoding: "async",
-                        loading: "lazy"
+                        width: _.originalWidth,
+                        height: _.originalHeight,
+                        decoding: `async`,
+                        loading: `lazy`
                     })]
                 })
             }
         })
-    } else return g.Image && _ ? n.jsx(g.Image, {
+    }
+    return h.Image && m ? (0, z.jsx)(h.Image, {
         src: e,
         alt: t,
-        className: o,
-        style: i,
+        className: n,
+        style: r,
         width: null,
-        height: s || null,
+        height: o || null,
         priority: a,
-        onLoad: S
-    }) : n.jsx("img", {
-        className: o,
-        style: i,
+        onLoad: v
+    }) : (0, z.jsx)(`img`, {
+        className: n,
+        style: r,
         src: e,
         alt: t,
-        ref: E,
-        loading: "lazy",
-        decoding: "async",
-        ...l
+        ref: b,
+        loading: `lazy`,
+        decoding: `async`,
+        ...s
     })
 }
-var Go = e => Object.keys(e).map(t => `${encodeURIComponent(t)}=${encodeURIComponent(e[t])}`).join("&"),
-    xt = [120, 320, 480, 640, 1280],
-    At = {
-        120: "default",
-        320: "mqdefault",
-        480: "hqdefault",
-        640: "sddefault",
-        1280: "maxresdefault"
+var Wt = e => Object.keys(e).map(t => `${encodeURIComponent(t)}=${encodeURIComponent(e[t])}`).join(`&`),
+    Gt = [120, 320, 480, 640, 1280],
+    Kt = {
+        120: `default`,
+        320: `mqdefault`,
+        480: `hqdefault`,
+        640: `sddefault`,
+        1280: `maxresdefault`
     },
-    Xo = xt.map(e => `(max-width: ${e}px) ${e}px`).join(", ");
+    qt = Gt.map(e => `(max-width: ${e}px) ${e}px`).join(`, `);
 
-function Qe(e, t = 480, o = "jpg") {
-    return o === "webp" ? `https://i.ytimg.com/vi_webp/${e}/${At[t]}.webp` : `https://i.ytimg.com/vi/${e}/${At[t]}.jpg`
+function Jt(e, t = 480, n = `jpg`) {
+    return n === `webp` ? `https://i.ytimg.com/vi_webp/${e}/${Kt[t]}.webp` : `https://i.ytimg.com/vi/${e}/${Kt[t]}.jpg`
 }
 
-function Jo(e, t = "jpg") {
-    return xt.map(o => `${Qe(e,o,t)} ${o}w`).join(", ")
+function Yt(e, t = `jpg`) {
+    return Gt.map(n => `${Jt(e,n,t)} ${n}w`).join(`, `)
 }
 
-function er({
+function Xt({
     id: e,
     defaultPlay: t = !1,
-    mute: o = !1,
-    lazyImage: i = !1,
-    iframeTitle: r = "YouTube video",
-    alt: a = "Video preview",
-    params: s = {},
-    adLinksPreconnect: l = !0,
-    style: u,
-    className: c
+    mute: n = !1,
+    lazyImage: r = !1,
+    iframeTitle: i = `YouTube video`,
+    alt: a = `Video preview`,
+    params: o = {},
+    adLinksPreconnect: s = !0,
+    style: c,
+    className: l
 }) {
-    const p = o || t ? "1" : "0",
-        v = M.useMemo(() => Go({
-            autoplay: "1",
-            mute: p,
-            ...s
-        }), [p, s]),
-        m = "https://www.youtube-nocookie.com",
-        b = `${m}/embed/${e}?${v}`,
-        [_, g] = M.useState(!1),
-        [w, x] = M.useState(t),
-        [S, j] = M.useState(!1),
-        E = M.useCallback(() => {
-            _ || g(!0)
+    let u = n || t ? `1` : `0`,
+        f = d.useMemo(() => Wt({
+            autoplay: `1`,
+            mute: u,
+            ...o
+        }), [u, o]),
+        p = `https://www.youtube-nocookie.com`,
+        m = `${p}/embed/${e}?${f}`,
+        [h, g] = d.useState(!1),
+        [_, v] = d.useState(t),
+        [y, b] = d.useState(!1),
+        x = d.useCallback(() => {
+            h || g(!0)
+        }, [h]),
+        S = d.useCallback(() => {
+            _ || v(!0)
         }, [_]),
-        h = M.useCallback(() => {
-            w || x(!0)
-        }, [w]),
-        C = M.useCallback(() => {
-            j(!0)
+        C = d.useCallback(() => {
+            b(!0)
         }, []);
-    return n.jsxs(n.Fragment, {
-        children: [n.jsx("link", {
-            rel: "preload",
-            as: "image",
-            href: Qe(e),
-            imageSrcSet: Jo(e, "webp"),
-            imageSizes: Xo
-        }), _ && n.jsxs(n.Fragment, {
-            children: [n.jsx("link", {
-                rel: "preconnect",
-                href: m
-            }), n.jsx("link", {
-                rel: "preconnect",
-                href: "https://www.google.com"
+    return (0, z.jsxs)(z.Fragment, {
+        children: [(0, z.jsx)(`link`, {
+            rel: `preload`,
+            as: `image`,
+            href: Jt(e),
+            imageSrcSet: Yt(e, `webp`),
+            imageSizes: qt
+        }), h && (0, z.jsxs)(z.Fragment, {
+            children: [(0, z.jsx)(`link`, {
+                rel: `preconnect`,
+                href: p
+            }), (0, z.jsx)(`link`, {
+                rel: `preconnect`,
+                href: `https://www.google.com`
             })]
-        }), _ && l && n.jsxs(n.Fragment, {
-            children: [n.jsx("link", {
-                rel: "preconnect",
-                href: "https://static.doubleclick.net"
-            }), n.jsx("link", {
-                rel: "preconnect",
-                href: "https://googleads.g.doubleclick.net"
+        }), h && s && (0, z.jsxs)(z.Fragment, {
+            children: [(0, z.jsx)(`link`, {
+                rel: `preconnect`,
+                href: `https://static.doubleclick.net`
+            }), (0, z.jsx)(`link`, {
+                rel: `preconnect`,
+                href: `https://googleads.g.doubleclick.net`
             })]
-        }), n.jsxs("div", {
-            onClick: h,
-            onPointerOver: E,
-            className: N("notion-yt-lite", S && "notion-yt-loaded", w && "notion-yt-initialized", c),
-            style: u,
-            children: [n.jsxs("picture", {
-                children: [xt.map(y => n.jsx("source", {
-                    srcSet: `${Qe(e,y,"webp")} ${y}w`,
-                    media: `(max-width: ${y}px)`,
-                    type: "image/webp"
-                }, y)), n.jsx("img", {
-                    src: Qe(e),
-                    className: "notion-yt-thumbnail",
-                    loading: i ? "lazy" : void 0,
+        }), (0, z.jsxs)(`div`, {
+            onClick: S,
+            onPointerOver: x,
+            className: K(`notion-yt-lite`, y && `notion-yt-loaded`, _ && `notion-yt-initialized`, l),
+            style: c,
+            children: [(0, z.jsxs)(`picture`, {
+                children: [Gt.map(t => (0, z.jsx)(`source`, {
+                    srcSet: `${Jt(e,t,`webp`)} ${t}w`,
+                    media: `(max-width: ${t}px)`,
+                    type: `image/webp`
+                }, t)), (0, z.jsx)(`img`, {
+                    src: Jt(e),
+                    className: `notion-yt-thumbnail`,
+                    loading: r ? `lazy` : void 0,
                     alt: a
                 })]
-            }), n.jsx("div", {
-                className: "notion-yt-playbtn"
-            }), w && n.jsx("iframe", {
-                width: "560",
-                height: "315",
-                frameBorder: "0",
-                allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+            }), (0, z.jsx)(`div`, {
+                className: `notion-yt-playbtn`
+            }), _ && (0, z.jsx)(`iframe`, {
+                width: `560`,
+                height: `315`,
+                frameBorder: `0`,
+                allow: `accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture`,
                 allowFullScreen: !0,
-                title: r,
-                src: b,
+                title: i,
+                src: m,
                 onLoad: C
             })]
         })]
     })
 }
-var tr = !globalThis.window,
-    nr = new Set(["replit", "video", "image", "embed", "figma", "typeform", "excalidraw", "maps", "tweet", "pdf", "gist", "codepen", "drive"]);
+var Zt = !globalThis.window,
+    Qt = new Set([`replit`, `video`, `image`, `embed`, `figma`, `typeform`, `excalidraw`, `maps`, `tweet`, `pdf`, `gist`, `codepen`, `drive`]);
 
-function or({
+function $t({
     block: e,
     zoomable: t = !0,
-    children: o
+    children: n
 }) {
-    var i, r, a, s, l, u, c, p, v, m, b, _, g;
-    const {
-        recordMap: w,
-        mapImageUrl: x,
-        components: S
-    } = ne();
-    if (!e || !nr.has(e.type)) return null;
-    const j = {
-            position: "relative",
-            display: "flex",
-            justifyContent: "center",
-            alignSelf: "center",
-            width: "100%",
-            maxWidth: "100%",
-            flexDirection: "column"
+    var r, i, a, o, s, c, l, u, d, f, p, m, h;
+    let {
+        recordMap: g,
+        mapImageUrl: _,
+        components: v
+    } = $();
+    if (!e || !Qt.has(e.type)) return null;
+    let y = {
+            position: `relative`,
+            display: `flex`,
+            justifyContent: `center`,
+            alignSelf: `center`,
+            width: `100%`,
+            maxWidth: `100%`,
+            flexDirection: `column`
         },
-        E = {};
+        b = {};
     if (e.format) {
-        const {
-            block_aspect_ratio: y,
-            block_height: d,
-            block_width: z,
-            block_full_width: L,
-            block_page_width: $,
-            block_preserve_scale: k
+        let {
+            block_aspect_ratio: t,
+            block_height: n,
+            block_width: i,
+            block_full_width: a,
+            block_page_width: o,
+            block_preserve_scale: s
         } = e.format;
-        if (L || $) L ? j.width = "100vw" : j.width = "100%", e.type === "video" ? d ? j.height = d : y ? j.paddingBottom = `${y*100}%` : k && (j.objectFit = "contain") : y && e.type !== "image" ? j.paddingBottom = `${y*100}%` : d ? j.height = d : k && (e.type === "image" ? j.height = "100%" : (j.paddingBottom = "75%", j.minHeight = 100));
+        if (a || o) y.width = a ? `100vw` : `100%`, e.type === `video` ? n ? y.height = n : t ? y.paddingBottom = `${t*100}%` : s && (y.objectFit = `contain`) : t && e.type !== `image` ? y.paddingBottom = `${t*100}%` : n ? y.height = n : s && (e.type === `image` ? y.height = `100%` : (y.paddingBottom = `75%`, y.minHeight = 100));
         else {
-            switch ((i = e.format) == null ? void 0 : i.block_alignment) {
-                case "center":
-                    j.alignSelf = "center";
+            switch ((r = e.format) == null ? void 0 : r.block_alignment) {
+                case `center`:
+                    y.alignSelf = `center`;
                     break;
-                case "left":
-                    j.alignSelf = "start";
+                case `left`:
+                    y.alignSelf = `start`;
                     break;
-                case "right":
-                    j.alignSelf = "end";
-                    break
+                case `right`:
+                    y.alignSelf = `end`
             }
-            z && (j.width = z), k && e.type !== "image" ? (j.paddingBottom = "50%", j.minHeight = 100) : d && e.type !== "image" && (j.height = d)
+            i && (y.width = i), s && e.type !== `image` ? (y.paddingBottom = `50%`, y.minHeight = 100) : n && e.type !== `image` && (y.height = n)
         }
-        e.type === "image" ? E.objectFit = "cover" : k && (E.objectFit = "contain")
+        e.type === `image` ? b.objectFit = `cover` : s && (b.objectFit = `contain`)
     }
-    let h = ((r = w.signed_urls) == null ? void 0 : r[e.id]) || ((l = (s = (a = e.properties) == null ? void 0 : a.source) == null ? void 0 : s[0]) == null ? void 0 : l[0]);
-    if (!h) return null;
+    let x = ((i = g.signed_urls) == null ? void 0 : i[e.id]) || ((s = (o = (a = e.properties) == null ? void 0 : a.source) == null ? void 0 : o[0]) == null ? void 0 : s[0]);
+    if (!x) return null;
     if (e.space_id) {
-        const y = new URL(h);
-        y.searchParams.set("spaceId", e.space_id), h = y.toString()
+        let t = new URL(x);
+        t.searchParams.set(`spaceId`, e.space_id), x = t.toString()
     }
-    let C = null;
-    if (e.type === "tweet") {
-        const y = h;
-        if (!y) return null;
-        const d = (c = (u = y.split("?")) == null ? void 0 : u[0]) == null ? void 0 : c.split("/").pop();
-        if (!d) return null;
-        C = n.jsx("div", {
+    let S = null;
+    if (e.type === `tweet`) {
+        let e = x;
+        if (!e) return null;
+        let t = (l = (c = e.split(`?`)) == null ? void 0 : c[0]) == null ? void 0 : l.split(`/`).pop();
+        if (!t) return null;
+        S = (0, z.jsx)(`div`, {
             style: {
-                ...E,
+                ...b,
                 maxWidth: 420,
-                width: "100%",
-                marginLeft: "auto",
-                marginRight: "auto"
+                width: `100%`,
+                marginLeft: `auto`,
+                marginRight: `auto`
             },
-            children: n.jsx(S.Tweet, {
-                id: d
+            children: (0, z.jsx)(v.Tweet, {
+                id: t
             })
         })
-    } else if (e.type === "pdf") j.overflow = "auto", j.background = "rgb(226, 226, 226)", j.display = "block", j.padding || (j.padding = "8px 16px"), tr || (C = n.jsx(S.Pdf, {
-        file: h
+    } else if (e.type === `pdf`) y.overflow = `auto`, y.background = `rgb(226, 226, 226)`, y.display = `block`, y.padding || (y.padding = `8px 16px`), Zt || (S = (0, z.jsx)(v.Pdf, {
+        file: x
     }));
-    else if (e.type === "embed" || e.type === "video" || e.type === "figma" || e.type === "typeform" || e.type === "gist" || e.type === "maps" || e.type === "excalidraw" || e.type === "codepen" || e.type === "drive" || e.type === "replit")
-        if (e.type === "video" && h && !h.includes("youtube") && !h.includes("youtu.be") && !h.includes("vimeo") && !h.includes("wistia") && !h.includes("loom") && !h.includes("videoask") && !h.includes("getcloudapp") && !h.includes("tella")) j.paddingBottom = void 0, C = n.jsx("video", {
+    else if (e.type === `embed` || e.type === `video` || e.type === `figma` || e.type === `typeform` || e.type === `gist` || e.type === `maps` || e.type === `excalidraw` || e.type === `codepen` || e.type === `drive` || e.type === `replit`) {
+        if (e.type === `video` && x && !x.includes(`youtube`) && !x.includes(`youtu.be`) && !x.includes(`vimeo`) && !x.includes(`wistia`) && !x.includes(`loom`) && !x.includes(`videoask`) && !x.includes(`getcloudapp`) && !x.includes(`tella`)) y.paddingBottom = void 0, S = (0, z.jsx)(`video`, {
             playsInline: !0,
             controls: !0,
-            preload: "metadata",
-            style: E,
-            src: h,
+            preload: `metadata`,
+            style: b,
+            src: x,
             title: e.type
         });
         else {
-            let y = ((p = e.format) == null ? void 0 : p.display_source) || h;
-            if (y) {
-                const d = e.type === "video" ? Wo(y) : null;
-                if (d) {
-                    const z = Vo(y);
-                    C = n.jsx(er, {
-                        id: d,
-                        style: E,
-                        className: "notion-asset-object-fit",
-                        params: z
+            let t = ((u = e.format) == null ? void 0 : u.display_source) || x;
+            if (t) {
+                let n = e.type === `video` ? Nt(t) : null;
+                if (n) {
+                    let e = Pt(t);
+                    S = (0, z.jsx)(Xt, {
+                        id: n,
+                        style: b,
+                        className: `notion-asset-object-fit`,
+                        params: e
                     })
-                } else e.type === "gist" ? (y.endsWith(".pibb") || (y = `${y}.pibb`), E.width = "100%", j.paddingBottom = "50%", C = n.jsx("iframe", {
-                    style: E,
-                    className: "notion-asset-object-fit",
-                    src: y,
-                    title: "GitHub Gist",
-                    frameBorder: "0",
-                    loading: "lazy",
-                    scrolling: "auto"
-                })) : (y += e.type === "typeform" ? "&disable-auto-focus=true" : "", C = n.jsx("iframe", {
-                    className: "notion-asset-object-fit",
-                    style: E,
-                    src: y,
+                } else e.type === `gist` ? (t.endsWith(`.pibb`) || (t = `${t}.pibb`), b.width = `100%`, y.paddingBottom = `50%`, S = (0, z.jsx)(`iframe`, {
+                    style: b,
+                    className: `notion-asset-object-fit`,
+                    src: t,
+                    title: `GitHub Gist`,
+                    frameBorder: `0`,
+                    loading: `lazy`,
+                    scrolling: `auto`
+                })) : (t += e.type === `typeform` ? `&disable-auto-focus=true` : ``, S = (0, z.jsx)(`iframe`, {
+                    className: `notion-asset-object-fit`,
+                    style: b,
+                    src: t,
                     title: `iframe ${e.type}`,
-                    frameBorder: "0",
+                    frameBorder: `0`,
                     allowFullScreen: !0,
-                    loading: "lazy",
-                    scrolling: "auto"
+                    loading: `lazy`,
+                    scrolling: `auto`
                 }))
             }
         }
-    else if (e.type === "image") {
-        !h.includes(".gif") && h.includes("file.notion.so") && (h = (b = (m = (v = e.properties) == null ? void 0 : v.source) == null ? void 0 : m[0]) == null ? void 0 : b[0]);
-        const y = x(h, e),
-            d = ve((_ = e.properties) == null ? void 0 : _.alt_text),
-            z = ve((g = e.properties) == null ? void 0 : g.caption),
-            L = d || z || "notion image";
-        C = n.jsx(Se, {
-            src: y,
-            alt: L,
+    } else if (e.type === `image`) {
+        !x.includes(`.gif`) && x.includes(`file.notion.so`) && (x = (p = (f = (d = e.properties) == null ? void 0 : d.source) == null ? void 0 : f[0]) == null ? void 0 : p[0]);
+        let n = _(x, e),
+            r = k((m = e.properties) == null ? void 0 : m.alt_text),
+            i = k((h = e.properties) == null ? void 0 : h.caption);
+        S = (0, z.jsx)(J, {
+            src: n,
+            alt: r || i || `notion image`,
             zoomable: t,
-            height: j.height,
-            style: E
+            height: y.height,
+            style: b
         })
     }
-    return n.jsxs(n.Fragment, {
-        children: [n.jsxs("div", {
-            style: j,
-            children: [C, e.type === "image" && o]
-        }), e.type !== "image" && o]
+    return (0, z.jsxs)(z.Fragment, {
+        children: [(0, z.jsxs)(`div`, {
+            style: y,
+            children: [S, e.type === `image` && n]
+        }), e.type !== `image` && n]
     })
 }
 
-function rr(e) {
-    return n.jsx("svg", {
-        viewBox: "0 0 260 260",
+function en(e) {
+    return (0, z.jsx)(`svg`, {
+        viewBox: `0 0 260 260`,
         ...e,
-        children: n.jsx("g", {
-            children: n.jsx("path", {
-                d: "M128.00106,0 C57.3172926,0 0,57.3066942 0,128.00106 C0,184.555281 36.6761997,232.535542 87.534937,249.460899 C93.9320223,250.645779 96.280588,246.684165 96.280588,243.303333 C96.280588,240.251045 96.1618878,230.167899 96.106777,219.472176 C60.4967585,227.215235 52.9826207,204.369712 52.9826207,204.369712 C47.1599584,189.574598 38.770408,185.640538 38.770408,185.640538 C27.1568785,177.696113 39.6458206,177.859325 39.6458206,177.859325 C52.4993419,178.762293 59.267365,191.04987 59.267365,191.04987 C70.6837675,210.618423 89.2115753,204.961093 96.5158685,201.690482 C97.6647155,193.417512 100.981959,187.77078 104.642583,184.574357 C76.211799,181.33766 46.324819,170.362144 46.324819,121.315702 C46.324819,107.340889 51.3250588,95.9223682 59.5132437,86.9583937 C58.1842268,83.7344152 53.8029229,70.715562 60.7532354,53.0843636 C60.7532354,53.0843636 71.5019501,49.6441813 95.9626412,66.2049595 C106.172967,63.368876 117.123047,61.9465949 128.00106,61.8978432 C138.879073,61.9465949 149.837632,63.368876 160.067033,66.2049595 C184.49805,49.6441813 195.231926,53.0843636 195.231926,53.0843636 C202.199197,70.715562 197.815773,83.7344152 196.486756,86.9583937 C204.694018,95.9223682 209.660343,107.340889 209.660343,121.315702 C209.660343,170.478725 179.716133,181.303747 151.213281,184.472614 C155.80443,188.444828 159.895342,196.234518 159.895342,208.176593 C159.895342,225.303317 159.746968,239.087361 159.746968,243.303333 C159.746968,246.709601 162.05102,250.70089 168.53925,249.443941 C219.370432,232.499507 256,184.536204 256,128.00106 C256,57.3066942 198.691187,0 128.00106,0 Z M47.9405593,182.340212 C47.6586465,182.976105 46.6581745,183.166873 45.7467277,182.730227 C44.8183235,182.312656 44.2968914,181.445722 44.5978808,180.80771 C44.8734344,180.152739 45.876026,179.97045 46.8023103,180.409216 C47.7328342,180.826786 48.2627451,181.702199 47.9405593,182.340212 Z M54.2367892,187.958254 C53.6263318,188.524199 52.4329723,188.261363 51.6232682,187.366874 C50.7860088,186.474504 50.6291553,185.281144 51.2480912,184.70672 C51.8776254,184.140775 53.0349512,184.405731 53.8743302,185.298101 C54.7115892,186.201069 54.8748019,187.38595 54.2367892,187.958254 Z M58.5562413,195.146347 C57.7719732,195.691096 56.4895886,195.180261 55.6968417,194.042013 C54.9125733,192.903764 54.9125733,191.538713 55.713799,190.991845 C56.5086651,190.444977 57.7719732,190.936735 58.5753181,192.066505 C59.3574669,193.22383 59.3574669,194.58888 58.5562413,195.146347 Z M65.8613592,203.471174 C65.1597571,204.244846 63.6654083,204.03712 62.5716717,202.981538 C61.4524999,201.94927 61.1409122,200.484596 61.8446341,199.710926 C62.5547146,198.935137 64.0575422,199.15346 65.1597571,200.200564 C66.2704506,201.230712 66.6095936,202.705984 65.8613592,203.471174 Z M75.3025151,206.281542 C74.9930474,207.284134 73.553809,207.739857 72.1039724,207.313809 C70.6562556,206.875043 69.7087748,205.700761 70.0012857,204.687571 C70.302275,203.678621 71.7478721,203.20382 73.2083069,203.659543 C74.6539041,204.09619 75.6035048,205.261994 75.3025151,206.281542 Z M86.046947,207.473627 C86.0829806,208.529209 84.8535871,209.404622 83.3316829,209.4237 C81.8013,209.457614 80.563428,208.603398 80.5464708,207.564772 C80.5464708,206.498591 81.7483088,205.631657 83.2786917,205.606221 C84.8005962,205.576546 86.046947,206.424403 86.046947,207.473627 Z M96.6021471,207.069023 C96.7844366,208.099171 95.7267341,209.156872 94.215428,209.438785 C92.7295577,209.710099 91.3539086,209.074206 91.1652603,208.052538 C90.9808515,206.996955 92.0576306,205.939253 93.5413813,205.66582 C95.054807,205.402984 96.4092596,206.021919 96.6021471,207.069023 Z",
-                fill: "#161614"
+        children: (0, z.jsx)(`g`, {
+            children: (0, z.jsx)(`path`, {
+                d: `M128.00106,0 C57.3172926,0 0,57.3066942 0,128.00106 C0,184.555281 36.6761997,232.535542 87.534937,249.460899 C93.9320223,250.645779 96.280588,246.684165 96.280588,243.303333 C96.280588,240.251045 96.1618878,230.167899 96.106777,219.472176 C60.4967585,227.215235 52.9826207,204.369712 52.9826207,204.369712 C47.1599584,189.574598 38.770408,185.640538 38.770408,185.640538 C27.1568785,177.696113 39.6458206,177.859325 39.6458206,177.859325 C52.4993419,178.762293 59.267365,191.04987 59.267365,191.04987 C70.6837675,210.618423 89.2115753,204.961093 96.5158685,201.690482 C97.6647155,193.417512 100.981959,187.77078 104.642583,184.574357 C76.211799,181.33766 46.324819,170.362144 46.324819,121.315702 C46.324819,107.340889 51.3250588,95.9223682 59.5132437,86.9583937 C58.1842268,83.7344152 53.8029229,70.715562 60.7532354,53.0843636 C60.7532354,53.0843636 71.5019501,49.6441813 95.9626412,66.2049595 C106.172967,63.368876 117.123047,61.9465949 128.00106,61.8978432 C138.879073,61.9465949 149.837632,63.368876 160.067033,66.2049595 C184.49805,49.6441813 195.231926,53.0843636 195.231926,53.0843636 C202.199197,70.715562 197.815773,83.7344152 196.486756,86.9583937 C204.694018,95.9223682 209.660343,107.340889 209.660343,121.315702 C209.660343,170.478725 179.716133,181.303747 151.213281,184.472614 C155.80443,188.444828 159.895342,196.234518 159.895342,208.176593 C159.895342,225.303317 159.746968,239.087361 159.746968,243.303333 C159.746968,246.709601 162.05102,250.70089 168.53925,249.443941 C219.370432,232.499507 256,184.536204 256,128.00106 C256,57.3066942 198.691187,0 128.00106,0 Z M47.9405593,182.340212 C47.6586465,182.976105 46.6581745,183.166873 45.7467277,182.730227 C44.8183235,182.312656 44.2968914,181.445722 44.5978808,180.80771 C44.8734344,180.152739 45.876026,179.97045 46.8023103,180.409216 C47.7328342,180.826786 48.2627451,181.702199 47.9405593,182.340212 Z M54.2367892,187.958254 C53.6263318,188.524199 52.4329723,188.261363 51.6232682,187.366874 C50.7860088,186.474504 50.6291553,185.281144 51.2480912,184.70672 C51.8776254,184.140775 53.0349512,184.405731 53.8743302,185.298101 C54.7115892,186.201069 54.8748019,187.38595 54.2367892,187.958254 Z M58.5562413,195.146347 C57.7719732,195.691096 56.4895886,195.180261 55.6968417,194.042013 C54.9125733,192.903764 54.9125733,191.538713 55.713799,190.991845 C56.5086651,190.444977 57.7719732,190.936735 58.5753181,192.066505 C59.3574669,193.22383 59.3574669,194.58888 58.5562413,195.146347 Z M65.8613592,203.471174 C65.1597571,204.244846 63.6654083,204.03712 62.5716717,202.981538 C61.4524999,201.94927 61.1409122,200.484596 61.8446341,199.710926 C62.5547146,198.935137 64.0575422,199.15346 65.1597571,200.200564 C66.2704506,201.230712 66.6095936,202.705984 65.8613592,203.471174 Z M75.3025151,206.281542 C74.9930474,207.284134 73.553809,207.739857 72.1039724,207.313809 C70.6562556,206.875043 69.7087748,205.700761 70.0012857,204.687571 C70.302275,203.678621 71.7478721,203.20382 73.2083069,203.659543 C74.6539041,204.09619 75.6035048,205.261994 75.3025151,206.281542 Z M86.046947,207.473627 C86.0829806,208.529209 84.8535871,209.404622 83.3316829,209.4237 C81.8013,209.457614 80.563428,208.603398 80.5464708,207.564772 C80.5464708,206.498591 81.7483088,205.631657 83.2786917,205.606221 C84.8005962,205.576546 86.046947,206.424403 86.046947,207.473627 Z M96.6021471,207.069023 C96.7844366,208.099171 95.7267341,209.156872 94.215428,209.438785 C92.7295577,209.710099 91.3539086,209.074206 91.1652603,208.052538 C90.9808515,206.996955 92.0576306,205.939253 93.5413813,205.66582 C95.054807,205.402984 96.4092596,206.021919 96.6021471,207.069023 Z`,
+                fill: `#161614`
             })
         })
     })
 }
-var ir = rr;
+var tn = en;
 
-function ar(e) {
-    return e ? e.charAt(0).toUpperCase() + e.slice(1) : ""
+function nn(e) {
+    return e ? e.charAt(0).toUpperCase() + e.slice(1) : ``
 }
 
-function sr({
+function rn({
     owner: e,
     lastUpdated: t,
-    externalImage: o,
-    title: i,
-    domain: r
+    externalImage: n,
+    title: r,
+    domain: i
 }) {
-    return n.jsxs("div", {
-        className: "notion-external-subtitle",
-        children: [o && n.jsxs("div", {
-            className: "notion-preview-card-domain-warp",
-            children: [n.jsx("div", {
-                className: "notion-preview-card-logo",
-                children: o
-            }), n.jsx("div", {
-                className: "notion-preview-card-domain",
-                children: ar(r.split(".")[0])
+    return (0, z.jsxs)(`div`, {
+        className: `notion-external-subtitle`,
+        children: [n && (0, z.jsxs)(`div`, {
+            className: `notion-preview-card-domain-warp`,
+            children: [(0, z.jsx)(`div`, {
+                className: `notion-preview-card-logo`,
+                children: n
+            }), (0, z.jsx)(`div`, {
+                className: `notion-preview-card-domain`,
+                children: nn(i.split(`.`)[0])
             })]
-        }), n.jsx("div", {
-            className: "notion-preview-card-title",
-            children: i
-        }), e && n.jsxs("div", {
-            className: "notion-external-subtitle-item",
-            children: [n.jsx("div", {
-                className: "notion-external-subtitle-item-name",
-                children: "Owner"
-            }), n.jsx("span", {
-                className: "notion-external-subtitle-item-desc",
+        }), (0, z.jsx)(`div`, {
+            className: `notion-preview-card-title`,
+            children: r
+        }), e && (0, z.jsxs)(`div`, {
+            className: `notion-external-subtitle-item`,
+            children: [(0, z.jsx)(`div`, {
+                className: `notion-external-subtitle-item-name`,
+                children: `Owner`
+            }), (0, z.jsx)(`span`, {
+                className: `notion-external-subtitle-item-desc`,
                 children: e
             })]
-        }), t && n.jsxs("div", {
-            className: "notion-external-subtitle-item",
-            children: [n.jsx("div", {
-                className: "notion-external-subtitle-item-name",
-                children: "Updated"
-            }), n.jsx("span", {
-                className: "notion-external-subtitle-item-desc",
+        }), t && (0, z.jsxs)(`div`, {
+            className: `notion-external-subtitle-item`,
+            children: [(0, z.jsx)(`div`, {
+                className: `notion-external-subtitle-item-name`,
+                children: `Updated`
+            }), (0, z.jsx)(`span`, {
+                className: `notion-external-subtitle-item-desc`,
                 children: t
             })]
-        }), r === "github.com" && n.jsxs("div", {
-            className: "notion-preview-card-github-shields",
-            children: [n.jsx("img", {
-                src: `https://img.shields.io/github/stars/${e}/${i}?logo=github`,
-                alt: ""
-            }), n.jsx("img", {
-                src: `https://img.shields.io/github/last-commit/${e}/${i}`,
-                alt: ""
+        }), i === `github.com` && (0, z.jsxs)(`div`, {
+            className: `notion-preview-card-github-shields`,
+            children: [(0, z.jsx)(`img`, {
+                src: `https://img.shields.io/github/stars/${e}/${r}?logo=github`,
+                alt: ``
+            }), (0, z.jsx)(`img`, {
+                src: `https://img.shields.io/github/last-commit/${e}/${r}`,
+                alt: ``
             })]
         })]
+    })
+}
+
+function an({
+    block: e,
+    inline: t,
+    className: n
+}) {
+    var r, i, a;
+    let {
+        components: o
+    } = $(), {
+        original_url: s,
+        attributes: c,
+        domain: l
+    } = (e == null ? void 0 : e.format) || {};
+    if (!s || !c) return null;
+    let u = (r = c.find(e => e.id === `title`)) == null ? void 0 : r.values[0],
+        d = (i = c.find(e => e.id === `owner`)) == null ? void 0 : i.values[0],
+        f = (a = c.find(e => e.id === `updated_at`)) == null ? void 0 : a.values[0],
+        p = f ? le(f) : null,
+        m;
+    switch (l) {
+        case `github.com`:
+            m = (0, z.jsx)(tn, {}), d && (d = d.split(`/`).at(-1));
+            break;
+        default:
+            return console.log(`Unsupported external_object_instance domain "${l}"`, JSON.stringify(e, null, 2)), null
+    }
+    return (0, z.jsxs)(o.Link, {
+        target: `_blank`,
+        rel: `noopener noreferrer`,
+        href: s,
+        className: K(`notion-external`, t ? `notion-external-mention` : `notion-external-block notion-row`, n),
+        children: [m && (0, z.jsx)(`div`, {
+            className: `notion-external-image`,
+            children: m
+        }), (0, z.jsxs)(`div`, {
+            className: `notion-external-description`,
+            children: [(0, z.jsx)(`div`, {
+                className: `notion-external-title`,
+                children: u
+            }), !t && d ? (0, z.jsxs)(`div`, {
+                className: `notion-external-block-desc`,
+                children: [d, p && (0, z.jsx)(`span`, {
+                    children: ` • `
+                }), p && `Updated ${p}`]
+            }) : null, t && (d || p) && (0, z.jsx)(rn, {
+                title: u,
+                owner: d,
+                lastUpdated: p,
+                domain: l,
+                externalImage: m
+            })]
+        })]
+    })
+}
+
+function on(e) {
+    return jt ? (0, z.jsx)(Le.Img, {
+        ...e
+    }) : (0, z.jsx)(`img`, {
+        ...e
     })
 }
 
 function sn({
-    block: e,
-    inline: t,
-    className: o
-}) {
-    var i, r, a;
-    const {
-        components: s
-    } = ne(), {
-        original_url: l,
-        attributes: u,
-        domain: c
-    } = (e == null ? void 0 : e.format) || {};
-    if (!l || !u) return null;
-    const p = (i = u.find(g => g.id === "title")) == null ? void 0 : i.values[0];
-    let v = (r = u.find(g => g.id === "owner")) == null ? void 0 : r.values[0];
-    const m = (a = u.find(g => g.id === "updated_at")) == null ? void 0 : a.values[0],
-        b = m ? Bn(m) : null;
-    let _;
-    switch (c) {
-        case "github.com":
-            _ = n.jsx(ir, {}), v && (v = v.split("/").at(-1));
-            break;
-        default:
-            return console.log(`Unsupported external_object_instance domain "${c}"`, JSON.stringify(e, null, 2)), null
-    }
-    return n.jsxs(s.Link, {
-        target: "_blank",
-        rel: "noopener noreferrer",
-        href: l,
-        className: N("notion-external", t ? "notion-external-mention" : "notion-external-block notion-row", o),
-        children: [_ && n.jsx("div", {
-            className: "notion-external-image",
-            children: _
-        }), n.jsxs("div", {
-            className: "notion-external-description",
-            children: [n.jsx("div", {
-                className: "notion-external-title",
-                children: p
-            }), !t && v ? n.jsxs("div", {
-                className: "notion-external-block-desc",
-                children: [v, b && n.jsx("span", {
-                    children: " • "
-                }), b && `Updated ${b}`]
-            }) : null, t && (v || b) && n.jsx(sr, {
-                title: p,
-                owner: v,
-                lastUpdated: b,
-                domain: c,
-                externalImage: _
-            })]
-        })]
-    })
-}
-
-function ft(e) {
-    return Do ? n.jsx(uo, {
-        ...e
-    }) : n.jsx("img", {
-        ...e
-    })
-}
-
-function lr({
     metadata: e
 }) {
-    return n.jsxs("span", {
-        className: "notion-link-mention",
-        children: [n.jsx(cr, {
+    return (0, z.jsxs)(`span`, {
+        className: `notion-link-mention`,
+        children: [(0, z.jsx)(cn, {
             metadata: e
-        }), n.jsx(ur, {
+        }), (0, z.jsx)(ln, {
             metadata: e
         })]
     })
 }
 
-function cr({
+function cn({
     metadata: e
 }) {
-    return n.jsxs("a", {
+    return (0, z.jsxs)(`a`, {
         href: e.href,
-        target: "_blank",
-        rel: "noopener noreferrer",
-        className: "notion-link-mention-link",
-        children: [n.jsx("img", {
-            className: "notion-link-mention-icon",
+        target: `_blank`,
+        rel: `noopener noreferrer`,
+        className: `notion-link-mention-link`,
+        children: [(0, z.jsx)(`img`, {
+            className: `notion-link-mention-icon`,
             src: e.icon_url,
             alt: e.link_provider
-        }), e.link_provider && n.jsx("span", {
-            className: "notion-link-mention-provider",
+        }), e.link_provider && (0, z.jsx)(`span`, {
+            className: `notion-link-mention-provider`,
             children: e.link_provider
-        }), n.jsx("span", {
-            className: "notion-link-mention-title",
+        }), (0, z.jsx)(`span`, {
+            className: `notion-link-mention-title`,
             children: e.title
         })]
     })
 }
 
-function ur({
+function ln({
     metadata: e
 }) {
-    return n.jsx("div", {
-        className: "notion-link-mention-preview",
-        children: n.jsxs("article", {
-            className: "notion-link-mention-card",
-            children: [n.jsx("img", {
-                className: "notion-link-mention-preview-thumbnail",
+    return (0, z.jsx)(`div`, {
+        className: `notion-link-mention-preview`,
+        children: (0, z.jsxs)(`article`, {
+            className: `notion-link-mention-card`,
+            children: [(0, z.jsx)(`img`, {
+                className: `notion-link-mention-preview-thumbnail`,
                 src: e.thumbnail_url,
                 alt: e.title,
-                referrerPolicy: "same-origin"
-            }), n.jsxs("div", {
-                className: "notion-link-mention-preview-content",
-                children: [n.jsx("p", {
-                    className: "notion-link-mention-preview-title",
+                referrerPolicy: `same-origin`
+            }), (0, z.jsxs)(`div`, {
+                className: `notion-link-mention-preview-content`,
+                children: [(0, z.jsx)(`p`, {
+                    className: `notion-link-mention-preview-title`,
                     children: e.title
-                }), n.jsx("p", {
-                    className: "notion-link-mention-preview-description",
+                }), (0, z.jsx)(`p`, {
+                    className: `notion-link-mention-preview-description`,
                     children: e.description
-                }), n.jsxs("div", {
-                    className: "notion-link-mention-preview-footer",
-                    children: [n.jsx("img", {
-                        className: "notion-link-mention-preview-icon",
+                }), (0, z.jsxs)(`div`, {
+                    className: `notion-link-mention-preview-footer`,
+                    children: [(0, z.jsx)(`img`, {
+                        className: `notion-link-mention-preview-icon`,
                         src: e.icon_url,
                         alt: e.link_provider,
-                        referrerPolicy: "same-origin"
-                    }), n.jsx("span", {
-                        className: "notion-link-mention-preview-provider",
+                        referrerPolicy: `same-origin`
+                    }), (0, z.jsx)(`span`, {
+                        className: `notion-link-mention-preview-provider`,
                         children: e.link_provider
                     })]
                 })]
@@ -2322,501 +2330,502 @@ function ur({
     })
 }
 
-function dr(e) {
-    const {
+function un(e) {
+    let {
         className: t,
-        ...o
+        ...n
     } = e;
-    return n.jsx("svg", {
+    return (0, z.jsx)(`svg`, {
         className: t,
-        ...o,
-        viewBox: "0 0 30 30",
-        width: "16",
-        children: n.jsx("path", {
-            d: "M16,1H4v28h22V11L16,1z M16,3.828L23.172,11H16V3.828z M24,27H6V3h8v10h10V27z M8,17h14v-2H8V17z M8,21h14v-2H8V21z M8,25h14v-2H8V25z"
+        ...n,
+        viewBox: `0 0 30 30`,
+        width: `16`,
+        children: (0, z.jsx)(`path`, {
+            d: `M16,1H4v28h22V11L16,1z M16,3.828L23.172,11H16V3.828z M24,27H6V3h8v10h10V27z M8,17h14v-2H8V17z M8,21h14v-2H8V21z M8,25h14v-2H8V25z`
         })
     })
 }
-var fr = e => e.type === "page" || e.type === "callout" || e.type === "collection_view" || e.type === "collection_view_page";
+var dn = e => e.type === `page` || e.type === `callout` || e.type === `collection_view` || e.type === `collection_view_page`;
 
-function mr({
+function fn({
     block: e,
     className: t,
-    inline: o = !0,
-    hideDefaultIcon: i = !1,
-    defaultIcon: r
+    inline: n = !0,
+    hideDefaultIcon: r = !1,
+    defaultIcon: i
 }) {
     var a;
-    const {
-        mapImageUrl: s,
-        recordMap: l,
-        darkMode: u
-    } = ne();
-    let c = !1,
-        p = null;
-    if (fr(e)) {
-        const v = ((a = vt(e, l)) == null ? void 0 : a.trim()) || r,
-            m = Ge(e, l);
-        if (v && pt(v)) {
-            const b = s(v, e);
-            c = !0, p = n.jsx(Se, {
-                src: b,
-                alt: m || "page icon",
-                className: N(t, "notion-page-icon")
+    let {
+        mapImageUrl: o,
+        recordMap: s,
+        darkMode: c
+    } = $(), l = !1, u = null;
+    if (dn(e)) {
+        let n = ((a = me(e, s)) == null ? void 0 : a.trim()) || i,
+            d = A(e, s);
+        if (n && f(n)) {
+            let r = o(n, e);
+            l = !0, u = (0, z.jsx)(J, {
+                src: r,
+                alt: d || `page icon`,
+                className: K(t, `notion-page-icon`)
             })
-        } else if (v && v.startsWith("/icons/")) {
-            const b = "https://www.notion.so" + v + "?mode=" + (u ? "dark" : "light");
-            p = n.jsx(Se, {
-                src: b,
-                alt: m || "page icon",
-                className: N(t, "notion-page-icon")
+        } else if (n && n.startsWith(`/icons/`)) {
+            let e = `https://www.notion.so` + n + `?mode=` + (c ? `dark` : `light`);
+            u = (0, z.jsx)(J, {
+                src: e,
+                alt: d || `page icon`,
+                className: K(t, `notion-page-icon`)
             })
-        } else v ? (c = !1, p = n.jsx("span", {
-            className: N(t, "notion-page-icon"),
-            role: "img",
-            "aria-label": v,
-            children: v
-        })) : i || (c = !0, p = n.jsx(dr, {
-            className: N(t, "notion-page-icon"),
-            alt: m || "page icon"
+        } else n ? (l = !1, u = (0, z.jsx)(`span`, {
+            className: K(t, `notion-page-icon`),
+            role: `img`,
+            "aria-label": n,
+            children: n
+        })) : r || (l = !0, u = (0, z.jsx)(un, {
+            className: K(t, `notion-page-icon`),
+            alt: d || `page icon`
         }))
     }
-    return p ? n.jsx("div", {
-        className: N(o ? "notion-page-icon-inline" : "notion-page-icon-hero", c ? "notion-page-icon-image" : "notion-page-icon-span"),
-        children: p
+    return u ? (0, z.jsx)(`div`, {
+        className: K(n ? `notion-page-icon-inline` : `notion-page-icon-hero`, l ? `notion-page-icon-image` : `notion-page-icon-span`),
+        children: u
     }) : null
 }
-var He = M.memo(mr);
+var pn = d.memo(fn);
 
-function pr({
+function mn({
     block: e,
     className: t,
-    defaultIcon: o,
-    ...i
+    defaultIcon: n,
+    ...r
 }) {
-    var r, a;
-    const {
-        recordMap: s
-    } = ne();
+    var i, a;
+    let {
+        recordMap: o
+    } = $();
     if (!e) return null;
-    if (e.type === "collection_view_page" || e.type === "collection_view") {
-        const l = Ge(e, s);
-        if (!l) return null;
-        const u = [
-            [l]
+    if (e.type === `collection_view_page` || e.type === `collection_view`) {
+        let i = A(e, o);
+        if (!i) return null;
+        let a = [
+            [i]
         ];
-        return n.jsxs("span", {
-            className: N("notion-page-title", t),
-            ...i,
-            children: [n.jsx(He, {
+        return (0, z.jsxs)(`span`, {
+            className: K(`notion-page-title`, t),
+            ...r,
+            children: [(0, z.jsx)(pn, {
                 block: e,
-                defaultIcon: o,
-                className: "notion-page-title-icon"
-            }), n.jsx("span", {
-                className: "notion-page-title-text",
-                children: n.jsx(Y, {
-                    value: u,
+                defaultIcon: n,
+                className: `notion-page-title-icon`
+            }), (0, z.jsx)(`span`, {
+                className: `notion-page-title-text`,
+                children: (0, z.jsx)(X, {
+                    value: a,
                     block: e
                 })
             })]
         })
     }
-    return (r = e.properties) != null && r.title ? n.jsxs("span", {
-        className: N("notion-page-title", t),
-        ...i,
-        children: [n.jsx(He, {
+    return (i = e.properties) != null && i.title ? (0, z.jsxs)(`span`, {
+        className: K(`notion-page-title`, t),
+        ...r,
+        children: [(0, z.jsx)(pn, {
             block: e,
-            defaultIcon: o,
-            className: "notion-page-title-icon"
-        }), n.jsx("span", {
-            className: "notion-page-title-text",
-            children: n.jsx(Y, {
+            defaultIcon: n,
+            className: `notion-page-title-icon`
+        }), (0, z.jsx)(`span`, {
+            className: `notion-page-title-text`,
+            children: (0, z.jsx)(X, {
                 value: (a = e.properties) == null ? void 0 : a.title,
                 block: e
             })
         })]
     }) : null
 }
-var Ae = M.memo(pr);
+var Y = d.memo(mn);
 
-function Y({
+function X({
     value: e,
     block: t,
-    linkProps: o,
-    linkProtocol: i
+    linkProps: n,
+    linkProtocol: r
 }) {
-    const {
-        components: r,
+    let {
+        components: i,
         recordMap: a,
-        mapPageUrl: s,
-        mapImageUrl: l,
-        rootDomain: u
-    } = ne();
-    return n.jsx(M.Fragment, {
-        children: e == null ? void 0 : e.map(([c, p], v) => {
-            if (!p) return c === "," ? n.jsx("span", {
+        mapPageUrl: o,
+        mapImageUrl: s,
+        rootDomain: c
+    } = $();
+    return (0, z.jsx)(d.Fragment, {
+        children: e == null ? void 0 : e.map(([e, l], u) => {
+            if (!l) return e === `,` ? (0, z.jsx)(`span`, {
                 style: {
-                    padding: "0.5em"
+                    padding: `0.5em`
                 }
-            }, v) : n.jsx(M.Fragment, {
-                children: c
-            }, v);
-            const m = p.reduce((b, _) => {
-                switch (_[0]) {
-                    case "p": {
-                        const g = _[1],
-                            w = V(a.block[g]);
-                        return w ? n.jsx(r.PageLink, {
-                            className: "notion-link",
-                            href: s(g),
-                            children: n.jsx(Ae, {
-                                block: w
+            }, u) : (0, z.jsx)(d.Fragment, {
+                children: e
+            }, u);
+            let f = l.reduce((e, l) => {
+                switch (l[0]) {
+                    case `p`: {
+                        let e = l[1],
+                            t = O(a.block[e]);
+                        return t ? (0, z.jsx)(i.PageLink, {
+                            className: `notion-link`,
+                            href: o(e),
+                            children: (0, z.jsx)(Y, {
+                                block: t
                             })
-                        }) : (console.log('"p" missing block', g), null)
+                        }) : (console.log(`"p" missing block`, e), null)
                     }
-                    case "‣": {
-                        const g = _[1][0],
-                            w = _[1][1];
-                        switch (g) {
-                            case "u": {
-                                const x = V(a.notion_user[w]);
-                                if (!x) return console.log('"‣" missing user', w), null;
-                                const S = l(x.profile_photo, t);
-                                if (!S) return null;
-                                const j = [x.given_name, x.family_name].filter(Boolean).join(" ");
-                                return n.jsx(ft, {
-                                    className: "notion-user",
-                                    src: S,
-                                    alt: j
+                    case `‣`: {
+                        let e = l[1][0],
+                            r = l[1][1];
+                        switch (e) {
+                            case `u`: {
+                                let e = O(a.notion_user[r]);
+                                if (!e) return console.log(`"‣" missing user`, r), null;
+                                let n = s(e.profile_photo, t);
+                                if (!n) return null;
+                                let i = [e.given_name, e.family_name].filter(Boolean).join(` `);
+                                return (0, z.jsx)(on, {
+                                    className: `notion-user`,
+                                    src: n,
+                                    alt: i
                                 })
                             }
                             default: {
-                                const x = V(a.block[w]);
-                                return x ? n.jsx(r.PageLink, {
-                                    className: "notion-link",
-                                    href: s(w),
-                                    ...o,
-                                    target: "_blank",
-                                    rel: "noopener noreferrer",
-                                    children: n.jsx(Ae, {
-                                        block: x
+                                let t = O(a.block[r]);
+                                return t ? (0, z.jsx)(i.PageLink, {
+                                    className: `notion-link`,
+                                    href: o(r),
+                                    ...n,
+                                    target: `_blank`,
+                                    rel: `noopener noreferrer`,
+                                    children: (0, z.jsx)(Y, {
+                                        block: t
                                     })
-                                }) : (console.log('"‣" missing block', g, w), null)
+                                }) : (console.log(`"‣" missing block`, e, r), null)
                             }
                         }
                     }
-                    case "h":
-                        return n.jsx("span", {
-                            className: `notion-${_[1]}`,
-                            children: b
+                    case `h`:
+                        return (0, z.jsx)(`span`, {
+                            className: `notion-${l[1]}`,
+                            children: e
                         });
-                    case "c":
-                        return n.jsx("code", {
-                            className: "notion-inline-code",
-                            children: b
+                    case `c`:
+                        return (0, z.jsx)(`code`, {
+                            className: `notion-inline-code`,
+                            children: e
                         });
-                    case "b":
-                        return n.jsx("b", {
-                            children: b
+                    case `b`:
+                        return (0, z.jsx)(`b`, {
+                            children: e
                         });
-                    case "i":
-                        return n.jsx("em", {
-                            children: b
+                    case `i`:
+                        return (0, z.jsx)(`em`, {
+                            children: e
                         });
-                    case "s":
-                        return n.jsx("s", {
-                            children: b
+                    case `s`:
+                        return (0, z.jsx)(`s`, {
+                            children: e
                         });
-                    case "_":
-                        return n.jsx("span", {
-                            className: "notion-inline-underscore",
-                            children: b
+                    case `_`:
+                        return (0, z.jsx)(`span`, {
+                            className: `notion-inline-underscore`,
+                            children: e
                         });
-                    case "e":
-                        return n.jsx(r.Equation, {
-                            math: _[1],
+                    case `e`:
+                        return (0, z.jsx)(i.Equation, {
+                            math: l[1],
                             inline: !0
                         });
-                    case "m":
-                        return b;
-                    case "a": {
-                        const g = _[1],
-                            w = g.slice(1),
-                            x = ct(w, {
+                    case `m`:
+                        return e;
+                    case `a`: {
+                        let t = l[1],
+                            a = pe(t.slice(1), {
                                 uuid: !0
                             });
-                        if (u && g.includes(u) || x && g[0] === "/") {
-                            const S = u && g.includes(u) ? g : `${s(x)}${Uo(g)}`;
-                            return n.jsx(r.PageLink, {
-                                className: "notion-link",
-                                href: S,
-                                ...o,
-                                children: b
+                        if (c && t.includes(c) || a && t[0] === `/`) {
+                            let r = c && t.includes(c) ? t : `${o(a)}${At(t)}`;
+                            return (0, z.jsx)(i.PageLink, {
+                                className: `notion-link`,
+                                href: r,
+                                ...n,
+                                children: e
                             })
-                        } else return n.jsx(r.Link, {
-                            className: "notion-link",
-                            href: i ? `${i}:${_[1]}` : _[1],
-                            ...o,
-                            children: b
+                        }
+                        return (0, z.jsx)(i.Link, {
+                            className: `notion-link`,
+                            href: r ? `${r}:${l[1]}` : l[1],
+                            ...n,
+                            children: e
                         })
                     }
-                    case "d": {
-                        const g = _[1],
-                            w = g == null ? void 0 : g.type;
-                        if (w === "date") {
-                            const x = g.start_date;
-                            return Te(x)
-                        } else if (w === "datetime") {
-                            const x = g.start_date,
-                                S = g.start_time;
-                            return `${Te(x)} ${S}`
-                        } else if (w === "daterange") {
-                            const x = g.start_date,
-                                S = g.end_date;
-                            return `${Te(x)} → ${Te(S)}`
-                        } else return b
+                    case `d`: {
+                        let t = l[1],
+                            n = t == null ? void 0 : t.type;
+                        if (n === `date`) {
+                            let e = t.start_date;
+                            return j(e)
+                        }
+                        if (n === `datetime`) {
+                            let e = t.start_date,
+                                n = t.start_time;
+                            return `${j(e)} ${n}`
+                        }
+                        if (n === `daterange`) {
+                            let e = t.start_date,
+                                n = t.end_date;
+                            return `${j(e)} \u2192 ${j(n)}`
+                        }
+                        return e
                     }
-                    case "u": {
-                        const g = _[1],
-                            w = V(a.notion_user[g]);
-                        if (!w) return console.log("missing user", g), null;
-                        const x = l(w.profile_photo, t);
-                        if (!x) return null;
-                        const S = [w.given_name, w.family_name].filter(Boolean).join(" ");
-                        return n.jsx(ft, {
-                            className: "notion-user",
-                            src: x,
-                            alt: S
+                    case `u`: {
+                        let e = l[1],
+                            n = O(a.notion_user[e]);
+                        if (!n) return console.log(`missing user`, e), null;
+                        let r = s(n.profile_photo, t);
+                        if (!r) return null;
+                        let i = [n.given_name, n.family_name].filter(Boolean).join(` `);
+                        return (0, z.jsx)(on, {
+                            className: `notion-user`,
+                            src: r,
+                            alt: i
                         })
                     }
-                    case "lm": {
-                        const g = _[1];
-                        return n.jsx(lr, {
-                            metadata: g
+                    case `lm`: {
+                        let e = l[1];
+                        return (0, z.jsx)(sn, {
+                            metadata: e
                         })
                     }
-                    case "eoi": {
-                        const g = _[1],
-                            w = V(a.block[g]);
-                        return w ? n.jsx(sn, {
-                            block: w,
+                    case `eoi`: {
+                        let e = l[1],
+                            t = O(a.block[e]);
+                        return t ? (0, z.jsx)(an, {
+                            block: t,
                             inline: !0
-                        }) : (console.log('"eoi" missing block', g), null)
+                        }) : (console.log(`"eoi" missing block`, e), null)
                     }
-                    case "si":
+                    case `si`:
                         return null;
                     default:
-                        return console.log("unsupported text format", _), b
+                        return console.log(`unsupported text format`, l), e
                 }
-            }, n.jsx(n.Fragment, {
-                children: c
+            }, (0, z.jsx)(z.Fragment, {
+                children: e
             }));
-            return n.jsx(M.Fragment, {
-                children: m
-            }, v)
+            return (0, z.jsx)(d.Fragment, {
+                children: f
+            }, u)
         })
     })
 }
-var hr = {
-    width: "100%"
+var hn = {
+    width: `100%`
 };
 
-function mt({
+function gn({
     blockId: e,
     block: t
 }) {
-    var o, i, r, a, s, l, u, c;
-    const p = t,
+    var n, r, i, a, o, s, c, l;
+    let u = t,
         {
-            components: v,
-            mapPageUrl: m,
-            rootDomain: b,
-            zoom: _
-        } = ne();
-    let g = !1;
-    if (t.type === "image") {
-        const x = (r = (i = (o = p == null ? void 0 : p.properties) == null ? void 0 : o.caption) == null ? void 0 : i[0]) == null ? void 0 : r[0];
-        if (x) {
-            const S = ct(x, {
+            components: d,
+            mapPageUrl: f,
+            rootDomain: p,
+            zoom: m
+        } = $(),
+        h = !1;
+    if (t.type === `image`) {
+        let e = (i = (r = (n = u == null ? void 0 : u.properties) == null ? void 0 : n.caption) == null ? void 0 : r[0]) == null ? void 0 : i[0];
+        if (e) {
+            let t = pe(e, {
                 uuid: !0
             });
-            (x.charAt(0) === "/" && S || vr(x)) && (g = !0)
+            (e.charAt(0) === `/` && t || _n(e)) && (h = !0)
         }
     }
-    const w = n.jsx("figure", {
-        className: N("notion-asset-wrapper", `notion-asset-wrapper-${t.type}`, ((a = p.format) == null ? void 0 : a.block_full_width) && "notion-asset-wrapper-full", e),
-        children: n.jsx(or, {
-            block: p,
-            zoomable: _ && !g,
-            children: ((s = p == null ? void 0 : p.properties) == null ? void 0 : s.caption) && !g && n.jsx("figcaption", {
-                className: "notion-asset-caption",
-                children: n.jsx(Y, {
-                    value: p.properties.caption,
+    let g = (0, z.jsx)(`figure`, {
+        className: K(`notion-asset-wrapper`, `notion-asset-wrapper-${t.type}`, ((a = u.format) == null ? void 0 : a.block_full_width) && `notion-asset-wrapper-full`, e),
+        children: (0, z.jsx)($t, {
+            block: u,
+            zoomable: m && !h,
+            children: ((o = u == null ? void 0 : u.properties) == null ? void 0 : o.caption) && !h && (0, z.jsx)(`figcaption`, {
+                className: `notion-asset-caption`,
+                children: (0, z.jsx)(X, {
+                    value: u.properties.caption,
                     block: t
                 })
             })
         })
     });
-    if (g) {
-        const x = (c = (u = (l = p == null ? void 0 : p.properties) == null ? void 0 : l.caption) == null ? void 0 : u[0]) == null ? void 0 : c[0],
-            S = ct(x, {
+    if (h) {
+        let e = (l = (c = (s = u == null ? void 0 : u.properties) == null ? void 0 : s.caption) == null ? void 0 : c[0]) == null ? void 0 : l[0],
+            t = pe(e, {
                 uuid: !0
             }),
-            j = (x == null ? void 0 : x.charAt(0)) === "/" && S,
-            E = gr(x);
-        return n.jsx(v.PageLink, {
-            style: hr,
-            href: j ? m(S) : x,
-            target: E && E !== b && !(x != null && x.startsWith("/")) ? "blank_" : null,
-            children: w
+            n = (e == null ? void 0 : e.charAt(0)) === `/` && t,
+            r = vn(e);
+        return (0, z.jsx)(d.PageLink, {
+            style: hn,
+            href: n ? f(t) : e,
+            target: r && r !== p && !(e != null && e.startsWith(`/`)) ? `blank_` : null,
+            children: g
         })
     }
-    return w
+    return g
 }
 
-function vr(e) {
-    return !!new RegExp("^(https?:\\/\\/)?((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|((\\d{1,3}\\.){3}\\d{1,3}))(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*(\\?[;&a-z\\d%_.~+=-]*)?(\\#[-a-z\\d_]*)?$", "i").test(e)
+function _n(e) {
+    return !!RegExp(`^(https?:\\/\\/)?((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|((\\d{1,3}\\.){3}\\d{1,3}))(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*(\\?[;&a-z\\d%_.~+=-]*)?(\\#[-a-z\\d_]*)?$`, `i`).test(e)
 }
 
-function gr(e) {
+function vn(e) {
     try {
         return new URL(e).hostname
     } catch {
-        return ""
+        return ``
     }
 }
 
-function yr(e) {
-    return n.jsx("svg", {
-        viewBox: "0 0 14 14",
+function yn(e) {
+    return (0, z.jsx)(`svg`, {
+        viewBox: `0 0 14 14`,
         ...e,
-        children: n.jsx("path", {
-            d: "M5.5 12L14 3.5 12.5 2l-7 7-4-4.003L0 6.499z"
+        children: (0, z.jsx)(`path`, {
+            d: `M5.5 12L14 3.5 12.5 2l-7 7-4-4.003L0 6.499z`
         })
     })
 }
-var xr = yr;
+var bn = yn;
 
-function br({
+function xn({
     isChecked: e
 }) {
     let t = null;
-    return e ? t = n.jsx("div", {
-        className: "notion-property-checkbox-checked",
-        children: n.jsx(xr, {})
-    }) : t = n.jsx("div", {
-        className: "notion-property-checkbox-unchecked"
-    }), n.jsx("span", {
-        className: "notion-property notion-property-checkbox",
+    return t = e ? (0, z.jsx)(`div`, {
+        className: `notion-property-checkbox-checked`,
+        children: (0, z.jsx)(bn, {})
+    }) : (0, z.jsx)(`div`, {
+        className: `notion-property-checkbox-unchecked`
+    }), (0, z.jsx)(`span`, {
+        className: `notion-property notion-property-checkbox`,
         children: t
     })
 }
 
-function ln(e) {
-    const {
+function Sn(e) {
+    let {
         className: t,
-        ...o
+        ...n
     } = e;
-    return n.jsx("svg", {
-        className: N("notion-icon", t),
-        viewBox: "0 0 17 17",
-        ...o,
-        children: n.jsx("path", {
-            d: "M6.78027 13.6729C8.24805 13.6729 9.60156 13.1982 10.709 12.4072L14.875 16.5732C15.0684 16.7666 15.3232 16.8633 15.5957 16.8633C16.167 16.8633 16.5713 16.4238 16.5713 15.8613C16.5713 15.5977 16.4834 15.3516 16.29 15.1582L12.1504 11.0098C13.0205 9.86719 13.5391 8.45215 13.5391 6.91406C13.5391 3.19629 10.498 0.155273 6.78027 0.155273C3.0625 0.155273 0.0214844 3.19629 0.0214844 6.91406C0.0214844 10.6318 3.0625 13.6729 6.78027 13.6729ZM6.78027 12.2139C3.87988 12.2139 1.48047 9.81445 1.48047 6.91406C1.48047 4.01367 3.87988 1.61426 6.78027 1.61426C9.68066 1.61426 12.0801 4.01367 12.0801 6.91406C12.0801 9.81445 9.68066 12.2139 6.78027 12.2139Z"
+    return (0, z.jsx)(`svg`, {
+        className: K(`notion-icon`, t),
+        viewBox: `0 0 17 17`,
+        ...n,
+        children: (0, z.jsx)(`path`, {
+            d: `M6.78027 13.6729C8.24805 13.6729 9.60156 13.1982 10.709 12.4072L14.875 16.5732C15.0684 16.7666 15.3232 16.8633 15.5957 16.8633C16.167 16.8633 16.5713 16.4238 16.5713 15.8613C16.5713 15.5977 16.4834 15.3516 16.29 15.1582L12.1504 11.0098C13.0205 9.86719 13.5391 8.45215 13.5391 6.91406C13.5391 3.19629 10.498 0.155273 6.78027 0.155273C3.0625 0.155273 0.0214844 3.19629 0.0214844 6.91406C0.0214844 10.6318 3.0625 13.6729 6.78027 13.6729ZM6.78027 12.2139C3.87988 12.2139 1.48047 9.81445 1.48047 6.91406C1.48047 4.01367 3.87988 1.61426 6.78027 1.61426C9.68066 1.61426 12.0801 4.01367 12.0801 6.91406C12.0801 9.81445 9.68066 12.2139 6.78027 12.2139Z`
         })
     })
 }
-var _r = tn(nn());
+var Cn = Ot(kt(), 1);
 
-function jr(e) {
-    const {
+function wn(e) {
+    let {
         className: t,
-        ...o
+        ...n
     } = e;
-    return n.jsx("svg", {
-        className: N("notion-icon", t),
-        ...o,
-        viewBox: "0 0 30 30",
-        children: n.jsx("path", {
-            d: "M15,0C6.716,0,0,6.716,0,15s6.716,15,15,15s15-6.716,15-15S23.284,0,15,0z M22,20.6L20.6,22L15,16.4L9.4,22L8,20.6l5.6-5.6 L8,9.4L9.4,8l5.6,5.6L20.6,8L22,9.4L16.4,15L22,20.6z"
+    return (0, z.jsx)(`svg`, {
+        className: K(`notion-icon`, t),
+        ...n,
+        viewBox: `0 0 30 30`,
+        children: (0, z.jsx)(`path`, {
+            d: `M15,0C6.716,0,0,6.716,0,15s6.716,15,15,15s15-6.716,15-15S23.284,0,15,0z M22,20.6L20.6,22L15,16.4L9.4,22L8,20.6l5.6-5.6 L8,9.4L9.4,8l5.6,5.6L20.6,8L22,9.4L16.4,15L22,20.6z`
         })
     })
 }
 
-function wr(e) {
-    const {
+function Tn(e) {
+    let {
         className: t,
-        ...o
+        ...n
     } = e;
-    return n.jsxs("svg", {
-        className: N("notion-icon", t),
-        ...o,
-        viewBox: "0 0 24 24",
-        children: [n.jsx("defs", {
-            children: n.jsxs("linearGradient", {
-                x1: "28.1542969%",
-                y1: "63.7402344%",
-                x2: "74.6289062%",
-                y2: "17.7832031%",
-                id: "linearGradient-1",
-                children: [n.jsx("stop", {
-                    stopColor: "rgba(164, 164, 164, 1)",
-                    offset: "0%"
-                }), n.jsx("stop", {
-                    stopColor: "rgba(164, 164, 164, 0)",
-                    stopOpacity: "0",
-                    offset: "100%"
+    return (0, z.jsxs)(`svg`, {
+        className: K(`notion-icon`, t),
+        ...n,
+        viewBox: `0 0 24 24`,
+        children: [(0, z.jsx)(`defs`, {
+            children: (0, z.jsxs)(`linearGradient`, {
+                x1: `28.1542969%`,
+                y1: `63.7402344%`,
+                x2: `74.6289062%`,
+                y2: `17.7832031%`,
+                id: `linearGradient-1`,
+                children: [(0, z.jsx)(`stop`, {
+                    stopColor: `rgba(164, 164, 164, 1)`,
+                    offset: `0%`
+                }), (0, z.jsx)(`stop`, {
+                    stopColor: `rgba(164, 164, 164, 0)`,
+                    stopOpacity: `0`,
+                    offset: `100%`
                 })]
             })
-        }), n.jsx("g", {
-            id: "Page-1",
-            stroke: "none",
-            strokeWidth: "1",
-            fill: "none",
-            children: n.jsx("g", {
-                transform: "translate(-236.000000, -286.000000)",
-                children: n.jsxs("g", {
-                    transform: "translate(238.000000, 286.000000)",
-                    children: [n.jsx("circle", {
-                        id: "Oval-2",
-                        stroke: "url(#linearGradient-1)",
-                        strokeWidth: "4",
-                        cx: "10",
-                        cy: "12",
-                        r: "10"
-                    }), n.jsx("path", {
-                        d: "M10,2 C4.4771525,2 0,6.4771525 0,12",
-                        id: "Oval-2",
-                        stroke: "rgba(164, 164, 164, 1)",
-                        strokeWidth: "4"
-                    }), n.jsx("rect", {
-                        id: "Rectangle-1",
-                        fill: "rgba(164, 164, 164, 1)",
-                        x: "8",
-                        y: "0",
-                        width: "4",
-                        height: "4",
-                        rx: "8"
+        }), (0, z.jsx)(`g`, {
+            id: `Page-1`,
+            stroke: `none`,
+            strokeWidth: `1`,
+            fill: `none`,
+            children: (0, z.jsx)(`g`, {
+                transform: `translate(-236.000000, -286.000000)`,
+                children: (0, z.jsxs)(`g`, {
+                    transform: `translate(238.000000, 286.000000)`,
+                    children: [(0, z.jsx)(`circle`, {
+                        id: `Oval-2`,
+                        stroke: `url(#linearGradient-1)`,
+                        strokeWidth: `4`,
+                        cx: `10`,
+                        cy: `12`,
+                        r: `10`
+                    }), (0, z.jsx)(`path`, {
+                        d: `M10,2 C4.4771525,2 0,6.4771525 0,12`,
+                        id: `Oval-2`,
+                        stroke: `rgba(164, 164, 164, 1)`,
+                        strokeWidth: `4`
+                    }), (0, z.jsx)(`rect`, {
+                        id: `Rectangle-1`,
+                        fill: `rgba(164, 164, 164, 1)`,
+                        x: `8`,
+                        y: `0`,
+                        width: `4`,
+                        height: `4`,
+                        rx: `8`
                     })]
                 })
             })
         })]
     })
 }
-var kr = class extends M.Component {
+var En = class extends d.Component {
     constructor(e) {
-        super(e), fe(this, "state", {
+        super(e), G(this, `state`, {
             isLoading: !1,
-            query: "",
+            query: ``,
             searchResult: null,
             searchError: null
-        }), fe(this, "_inputRef"), fe(this, "_search"), fe(this, "_onAfterOpen", () => {
+        }), G(this, `_inputRef`), G(this, `_search`), G(this, `_onAfterOpen`, () => {
             this._inputRef.current && this._inputRef.current.focus()
-        }), fe(this, "_onChangeQuery", t => {
-            const o = t.target.value;
+        }), G(this, `_onChangeQuery`, e => {
+            let t = e.target.value;
             if (this.setState({
-                    query: o
-                }), o.trim()) this._search();
+                    query: t
+                }), t.trim()) this._search();
             else {
                 this.setState({
                     isLoading: !1,
@@ -2825,29 +2834,29 @@ var kr = class extends M.Component {
                 });
                 return
             }
-        }), fe(this, "_onClearQuery", () => {
+        }), G(this, `_onClearQuery`, () => {
             this._onChangeQuery({
                 target: {
-                    value: ""
+                    value: ``
                 }
             })
-        }), fe(this, "_warmupSearch", async () => {
-            const {
-                searchNotion: t,
-                rootBlockId: o
+        }), G(this, `_warmupSearch`, async () => {
+            let {
+                searchNotion: e,
+                rootBlockId: t
             } = this.props;
-            await t({
-                query: "",
-                ancestorId: o
+            await e({
+                query: ``,
+                ancestorId: t
             })
-        }), fe(this, "_searchImpl", async () => {
-            const {
-                searchNotion: t,
-                rootBlockId: o
+        }), G(this, `_searchImpl`, async () => {
+            let {
+                searchNotion: e,
+                rootBlockId: t
             } = this.props, {
-                query: i
+                query: n
             } = this.state;
-            if (!i.trim()) {
+            if (!n.trim()) {
                 this.setState({
                     isLoading: !1,
                     searchResult: null,
@@ -2858,133 +2867,133 @@ var kr = class extends M.Component {
             this.setState({
                 isLoading: !0
             });
-            const r = await t({
-                query: i,
-                ancestorId: o
+            let r = await e({
+                query: n,
+                ancestorId: t
             });
-            console.log("search", i, r);
-            let a = null,
-                s = null;
-            if (r.error || r.errorId) s = r;
+            console.log(`search`, n, r);
+            let i = null,
+                a = null;
+            if (r.error || r.errorId) a = r;
             else {
-                a = {
+                i = {
                     ...r
                 };
-                const l = a.results.map(c => {
-                        var p, v;
-                        const m = (p = a.recordMap.block[c.id]) == null ? void 0 : p.value;
-                        if (!m) return;
-                        const b = Ge(m, a.recordMap);
-                        if (b && (c.title = b, c.block = m, c.recordMap = a.recordMap, c.page = Ye(m, a.recordMap, {
+                let e = i.results.map(e => {
+                        var t, n;
+                        let r = (t = i.recordMap.block[e.id]) == null ? void 0 : t.value;
+                        if (!r) return;
+                        let a = A(r, i.recordMap);
+                        if (a && (e.title = a, e.block = r, e.recordMap = i.recordMap, e.page = he(r, i.recordMap, {
                                 inclusive: !0
-                            }) || m, !!c.page.id)) return (v = c.highlight) != null && v.text && (c.highlight.html = c.highlight.text.replaceAll(/<gzknfouu>/gi, "<b>").replaceAll(/<\/gzknfouu>/gi, "</b>")), c
+                            }) || r, e.page.id)) return (n = e.highlight) != null && n.text && (e.highlight.html = e.highlight.text.replaceAll(/<gzknfouu>/gi, `<b>`).replaceAll(/<\/gzknfouu>/gi, `</b>`)), e
                     }).filter(Boolean),
-                    u = Object.fromEntries(l.map(c => [c.page.id, c]));
-                a.results = Object.values(u)
+                    t = Object.fromEntries(e.map(e => [e.page.id, e]));
+                i.results = Object.values(t)
             }
-            this.state.query === i && this.setState({
+            this.state.query === n && this.setState({
                 isLoading: !1,
-                searchResult: a,
-                searchError: s
+                searchResult: i,
+                searchError: a
             })
-        }), this._inputRef = M.createRef()
+        }), this._inputRef = d.createRef()
     }
     componentDidMount() {
-        this._search = (0, _r.default)(this._searchImpl.bind(this), 1e3), this._warmupSearch()
+        this._search = (0, Cn.default)(this._searchImpl.bind(this), 1e3), this._warmupSearch()
     }
     render() {
-        const {
+        let {
             isOpen: e,
             onClose: t
         } = this.props, {
-            isLoading: o,
-            query: i,
-            searchResult: r,
+            isLoading: n,
+            query: r,
+            searchResult: i,
             searchError: a
-        } = this.state, s = !!i.trim();
-        return n.jsx(Mr, {
-            children: l => {
-                const {
-                    components: u,
-                    defaultPageIcon: c,
-                    mapPageUrl: p
-                } = l;
-                return n.jsx(u.Modal, {
+        } = this.state, o = !!r.trim();
+        return (0, z.jsx)(Un, {
+            children: s => {
+                let {
+                    components: c,
+                    defaultPageIcon: l,
+                    mapPageUrl: u
+                } = s;
+                return (0, z.jsx)(c.Modal, {
                     isOpen: e,
-                    contentLabel: "Search",
-                    className: "notion-search",
-                    overlayClassName: "notion-search-overlay",
+                    contentLabel: `Search`,
+                    className: `notion-search`,
+                    overlayClassName: `notion-search-overlay`,
                     onRequestClose: t,
                     onAfterOpen: this._onAfterOpen,
-                    children: n.jsxs("div", {
-                        className: "quickFindMenu",
-                        children: [n.jsxs("div", {
-                            className: "searchBar",
-                            children: [n.jsx("div", {
-                                className: "inlineIcon",
-                                children: o ? n.jsx(wr, {
-                                    className: "loadingIcon"
-                                }) : n.jsx(ln, {})
-                            }), n.jsx("input", {
-                                className: "searchInput",
-                                placeholder: "Search",
-                                value: i,
+                    children: (0, z.jsxs)(`div`, {
+                        className: `quickFindMenu`,
+                        children: [(0, z.jsxs)(`div`, {
+                            className: `searchBar`,
+                            children: [(0, z.jsx)(`div`, {
+                                className: `inlineIcon`,
+                                children: n ? (0, z.jsx)(Tn, {
+                                    className: `loadingIcon`
+                                }) : (0, z.jsx)(Sn, {})
+                            }), (0, z.jsx)(`input`, {
+                                className: `searchInput`,
+                                placeholder: `Search`,
+                                value: r,
                                 ref: this._inputRef,
                                 onChange: this._onChangeQuery
-                            }), i && n.jsx("div", {
-                                role: "button",
-                                className: "clearButton",
+                            }), r && (0, z.jsx)(`div`, {
+                                role: `button`,
+                                className: `clearButton`,
                                 onClick: this._onClearQuery,
-                                children: n.jsx(jr, {
-                                    className: "clearIcon"
+                                children: (0, z.jsx)(wn, {
+                                    className: `clearIcon`
                                 })
                             })]
-                        }), s && r && n.jsx(n.Fragment, {
-                            children: r.results.length ? n.jsxs(dn, {
-                                ...l,
-                                recordMap: r.recordMap,
-                                children: [n.jsx("div", {
-                                    className: "resultsPane",
-                                    children: r.results.map(v => {
-                                        var m;
-                                        return n.jsxs(u.PageLink, {
-                                            className: N("result", "notion-page-link"),
-                                            href: p(v.page.id, r.recordMap),
-                                            children: [n.jsx(Ae, {
-                                                block: v.page,
-                                                defaultIcon: c
-                                            }), ((m = v.highlight) == null ? void 0 : m.html) && n.jsx("div", {
-                                                className: "notion-search-result-highlight",
+                        }), o && i && (0, z.jsx)(z.Fragment, {
+                            children: i.results.length ? (0, z.jsxs)(Hn, {
+                                ...s,
+                                recordMap: i.recordMap,
+                                children: [(0, z.jsx)(`div`, {
+                                    className: `resultsPane`,
+                                    children: i.results.map(e => {
+                                        var t;
+                                        return (0, z.jsxs)(c.PageLink, {
+                                            className: K(`result`, `notion-page-link`),
+                                            href: u(e.page.id, i.recordMap),
+                                            children: [(0, z.jsx)(Y, {
+                                                block: e.page,
+                                                defaultIcon: l
+                                            }), ((t = e.highlight) == null ? void 0 : t.html) && (0, z.jsx)(`div`, {
+                                                className: `notion-search-result-highlight`,
                                                 dangerouslySetInnerHTML: {
-                                                    __html: v.highlight.html
+                                                    __html: e.highlight.html
                                                 }
                                             })]
-                                        }, v.id)
+                                        }, e.id)
                                     })
-                                }), n.jsx("footer", {
-                                    className: "resultsFooter",
-                                    children: n.jsxs("div", {
-                                        children: [n.jsx("span", {
-                                            className: "resultsCount",
-                                            children: r.total
-                                        }), r.total === 1 ? " result" : " results"]
+                                }), (0, z.jsx)(`footer`, {
+                                    className: `resultsFooter`,
+                                    children: (0, z.jsxs)(`div`, {
+                                        children: [(0, z.jsx)(`span`, {
+                                            className: `resultsCount`,
+                                            children: i.total
+                                        }), i.total === 1 ? ` result` : ` results`]
                                     })
                                 })]
-                            }) : n.jsxs("div", {
-                                className: "noResultsPane",
-                                children: [n.jsx("div", {
-                                    className: "noResults",
-                                    children: "No results"
-                                }), n.jsx("div", {
-                                    className: "noResultsDetail",
-                                    children: "Try different search terms"
+                            }) : (0, z.jsxs)(`div`, {
+                                className: `noResultsPane`,
+                                children: [(0, z.jsx)(`div`, {
+                                    className: `noResults`,
+                                    children: `No results`
+                                }), (0, z.jsx)(`div`, {
+                                    className: `noResultsDetail`,
+                                    children: `Try different search terms`
                                 })]
                             })
-                        }), s && !r && a && n.jsx("div", {
-                            className: "noResultsPane",
-                            children: n.jsx("div", {
-                                className: "noResults",
-                                children: "Search error"
+                        }), o && !i && a && (0, z.jsx)(`div`, {
+                            className: `noResultsPane`,
+                            children: (0, z.jsx)(`div`, {
+                                className: `noResults`,
+                                children: `Search error`
                             })
                         })]
                     })
@@ -2994,236 +3003,236 @@ var kr = class extends M.Component {
     }
 };
 
-function Cr({
+function Dn({
     block: e
 }) {
-    return n.jsx("header", {
-        className: "notion-header",
-        children: n.jsxs("div", {
-            className: "notion-nav-header",
-            children: [n.jsx(Nr, {
+    return (0, z.jsx)(`header`, {
+        className: `notion-header`,
+        children: (0, z.jsxs)(`div`, {
+            className: `notion-nav-header`,
+            children: [(0, z.jsx)(On, {
                 block: e
-            }), n.jsx(Lr, {
+            }), (0, z.jsx)(kn, {
                 block: e
             })]
         })
     })
 }
 
-function Nr({
+function On({
     block: e,
     rootOnly: t = !1
 }) {
-    const {
-        recordMap: o,
-        mapPageUrl: i,
-        components: r
-    } = ne(), a = M.useMemo(() => {
-        const s = qn(o, e.id);
-        return t ? [s == null ? void 0 : s[0]].filter(Boolean) : s
-    }, [o, e.id, t]);
-    return n.jsx("div", {
-        className: "breadcrumbs",
-        children: a == null ? void 0 : a.map((s, l) => {
-            if (!s) return null;
-            const u = {},
-                c = {
-                    pageLink: r.PageLink
+    let {
+        recordMap: n,
+        mapPageUrl: r,
+        components: i
+    } = $(), a = d.useMemo(() => {
+        let r = xe(n, e.id);
+        return t ? [r == null ? void 0 : r[0]].filter(Boolean) : r
+    }, [n, e.id, t]);
+    return (0, z.jsx)(`div`, {
+        className: `breadcrumbs`,
+        children: a == null ? void 0 : a.map((e, t) => {
+            if (!e) return null;
+            let n = {},
+                o = {
+                    pageLink: i.PageLink
                 };
-            return s.active ? c.pageLink = p => n.jsx("div", {
-                ...p
-            }) : u.href = i(s.pageId), n.jsxs(M.Fragment, {
-                children: [n.jsxs(c.pageLink, {
-                    className: N("breadcrumb", s.active && "active"),
-                    ...u,
-                    children: [s.icon && n.jsx(He, {
-                        className: "icon",
-                        block: s.block
-                    }), s.title && n.jsx("span", {
-                        className: "title",
-                        children: s.title
+            return e.active ? o.pageLink = e => (0, z.jsx)(`div`, {
+                ...e
+            }) : n.href = r(e.pageId), (0, z.jsxs)(d.Fragment, {
+                children: [(0, z.jsxs)(o.pageLink, {
+                    className: K(`breadcrumb`, e.active && `active`),
+                    ...n,
+                    children: [e.icon && (0, z.jsx)(pn, {
+                        className: `icon`,
+                        block: e.block
+                    }), e.title && (0, z.jsx)(`span`, {
+                        className: `title`,
+                        children: e.title
                     })]
-                }), l < a.length - 1 && n.jsx("span", {
-                    className: "spacer",
-                    children: "/"
+                }), t < a.length - 1 && (0, z.jsx)(`span`, {
+                    className: `spacer`,
+                    children: `/`
                 })]
-            }, s.pageId)
+            }, e.pageId)
         })
-    }, "breadcrumbs")
+    }, `breadcrumbs`)
 }
 
-function Lr({
+function kn({
     block: e,
     search: t,
-    title: o = "Search"
+    title: n = `Search`
 }) {
-    const {
-        searchNotion: i,
-        rootPageId: r,
+    let {
+        searchNotion: r,
+        rootPageId: i,
         isShowingSearch: a,
-        onHideSearch: s
-    } = ne(), l = t || i, [u, c] = M.useState(a);
-    M.useEffect(() => {
-        c(a)
+        onHideSearch: o
+    } = $(), s = t || r, [c, l] = d.useState(a);
+    d.useEffect(() => {
+        l(a)
     }, [a]);
-    const p = M.useCallback(() => {
-            c(!0)
+    let u = d.useCallback(() => {
+            l(!0)
         }, []),
-        v = M.useCallback(() => {
-            c(!1), s && s()
-        }, [s]);
-    Tt("cmd+p", b => {
-        p(), b.preventDefault(), b.stopPropagation()
-    }), Tt("cmd+k", b => {
-        p(), b.preventDefault(), b.stopPropagation()
+        f = d.useCallback(() => {
+            l(!1), o && o()
+        }, [o]);
+    ct(`cmd+p`, e => {
+        u(), e.preventDefault(), e.stopPropagation()
+    }), ct(`cmd+k`, e => {
+        u(), e.preventDefault(), e.stopPropagation()
     });
-    const m = !!l;
-    return n.jsxs(n.Fragment, {
-        children: [m && n.jsxs("div", {
-            role: "button",
-            className: N("breadcrumb", "button", "notion-search-button"),
-            onClick: p,
-            children: [n.jsx(ln, {
-                className: "searchIcon"
-            }), o && n.jsx("span", {
-                className: "title",
-                children: o
+    let p = !!s;
+    return (0, z.jsxs)(z.Fragment, {
+        children: [p && (0, z.jsxs)(`div`, {
+            role: `button`,
+            className: K(`breadcrumb`, `button`, `notion-search-button`),
+            onClick: u,
+            children: [(0, z.jsx)(Sn, {
+                className: `searchIcon`
+            }), n && (0, z.jsx)(`span`, {
+                className: `title`,
+                children: n
             })]
-        }), u && m && n.jsx(kr, {
-            isOpen: u,
-            rootBlockId: r || (e == null ? void 0 : e.id),
-            onClose: v,
-            searchNotion: l
+        }), c && p && (0, z.jsx)(En, {
+            isOpen: c,
+            rootBlockId: i || (e == null ? void 0 : e.id),
+            onClose: f,
+            searchNotion: s
         })]
     })
 }
-var Bt = e => M.memo(function({
-        src: o,
-        alt: i,
+var An = e => d.memo(function({
+        src: t,
+        alt: n,
         width: r,
-        height: a,
-        className: s,
-        fill: l,
-        ...u
+        height: i,
+        className: a,
+        fill: o,
+        ...s
     }) {
-        return l === "undefined" && (l = !(r && a)), n.jsx(e, {
-            className: s,
-            src: o,
-            alt: i,
-            width: !l && r && a ? r : void 0,
-            height: !l && r && a ? a : void 0,
-            fill: l,
-            ...u
+        return o === `undefined` && (o = !(r && i)), (0, z.jsx)(e, {
+            className: a,
+            src: t,
+            alt: n,
+            width: !o && r && i ? r : void 0,
+            height: !o && r && i ? i : void 0,
+            fill: o,
+            ...s
         })
-    }, Vt),
-    Pr = e => M.memo(function({
-        src: o,
-        alt: i,
+    }, lt.default),
+    jn = e => d.memo(function({
+        src: t,
+        alt: n,
         width: r,
-        height: a,
-        className: s,
-        style: l,
-        layout: u,
+        height: i,
+        className: a,
+        style: o,
+        layout: s,
         ...c
     }) {
-        return u || (u = r && a ? "intrinsic" : "fill"), n.jsx(e, {
-            className: s,
-            src: o,
-            alt: i,
-            width: u === "intrinsic" && r,
-            height: u === "intrinsic" && a,
-            objectFit: l == null ? void 0 : l.objectFit,
-            objectPosition: l == null ? void 0 : l.objectPosition,
-            layout: u,
+        return s || (s = r && i ? `intrinsic` : `fill`), (0, z.jsx)(e, {
+            className: a,
+            src: t,
+            alt: n,
+            width: s === `intrinsic` && r,
+            height: s === `intrinsic` && i,
+            objectFit: o == null ? void 0 : o.objectFit,
+            objectPosition: o == null ? void 0 : o.objectPosition,
+            layout: s,
             ...c
         })
-    }, Vt);
+    }, lt.default);
 
-function Ir(e) {
+function Mn(e) {
     return ({
         href: t,
-        as: o,
-        passHref: i,
-        prefetch: r,
+        as: n,
+        passHref: r,
+        prefetch: i,
         replace: a,
-        scroll: s,
-        shallow: l,
-        locale: u,
-        ...c
-    }) => n.jsx(e, {
+        scroll: o,
+        shallow: s,
+        locale: c,
+        ...l
+    }) => (0, z.jsx)(e, {
         href: t,
-        as: o,
-        passHref: i,
-        prefetch: r,
+        as: n,
+        passHref: r,
+        prefetch: i,
         replace: a,
-        scroll: s,
-        shallow: l,
-        locale: u,
+        scroll: o,
+        shallow: s,
+        locale: c,
         legacyBehavior: !0,
-        children: n.jsx("a", {
-            ...c
+        children: (0, z.jsx)(`a`, {
+            ...l
         })
     })
 }
 
-function Sr(e) {
-    return n.jsx("a", {
-        target: "_blank",
-        rel: "noopener noreferrer",
+function Nn(e) {
+    return (0, z.jsx)(`a`, {
+        target: `_blank`,
+        rel: `noopener noreferrer`,
         ...e
     })
 }
-var Er = M.memo(Sr);
+var Pn = d.memo(Nn);
 
-function Or(e) {
-    return n.jsx("a", {
+function Fn(e) {
+    return (0, z.jsx)(`a`, {
         ...e
     })
 }
-var zr = M.memo(Or);
+var In = d.memo(Fn);
 
-function $r(e) {
-    return n.jsx(mt, {
+function Ln(e) {
+    return (0, z.jsx)(gn, {
         ...e
     })
 }
-var Tr = Cr,
-    Ie = e => () => (console.warn(`Warning: using empty component "${e}" (you should override this in NotionRenderer.components)`), null),
-    J = (e, t) => t(),
-    cn = {
+var Rn = Dn,
+    Z = e => () => (console.warn(`Warning: using empty component "${e}" (you should override this in NotionRenderer.components)`), null),
+    Q = (e, t) => t(),
+    zn = {
         Image: null,
-        Link: Er,
-        PageLink: zr,
-        Checkbox: br,
+        Link: Pn,
+        PageLink: In,
+        Checkbox: xn,
         Callout: void 0,
         Button: void 0,
-        Code: Ie("Code"),
-        Equation: Ie("Equation"),
-        Collection: Ie("Collection"),
+        Code: Z(`Code`),
+        Equation: Z(`Equation`),
+        Collection: Z(`Collection`),
         Property: void 0,
-        propertyTextValue: J,
-        propertySelectValue: J,
-        propertyRelationValue: J,
-        propertyFormulaValue: J,
-        propertyTitleValue: J,
-        propertyPersonValue: J,
-        propertyFileValue: J,
-        propertyCheckboxValue: J,
-        propertyUrlValue: J,
-        propertyEmailValue: J,
-        propertyPhoneNumberValue: J,
-        propertyNumberValue: J,
-        propertyLastEditedTimeValue: J,
-        propertyCreatedTimeValue: J,
-        propertyDateValue: J,
-        propertyAutoIncrementIdValue: J,
-        Pdf: Ie("Pdf"),
-        Tweet: Ie("Tweet"),
-        Modal: Ie("Modal"),
-        Header: Tr,
-        Embed: $r
+        propertyTextValue: Q,
+        propertySelectValue: Q,
+        propertyRelationValue: Q,
+        propertyFormulaValue: Q,
+        propertyTitleValue: Q,
+        propertyPersonValue: Q,
+        propertyFileValue: Q,
+        propertyCheckboxValue: Q,
+        propertyUrlValue: Q,
+        propertyEmailValue: Q,
+        propertyPhoneNumberValue: Q,
+        propertyNumberValue: Q,
+        propertyLastEditedTimeValue: Q,
+        propertyCreatedTimeValue: Q,
+        propertyDateValue: Q,
+        propertyAutoIncrementIdValue: Q,
+        Pdf: Z(`Pdf`),
+        Tweet: Z(`Tweet`),
+        Modal: Z(`Modal`),
+        Header: Rn,
+        Embed: Ln
     },
-    un = {
+    Bn = {
         recordMap: {
             block: {},
             collection: {},
@@ -3232,9 +3241,9 @@ var Tr = Cr,
             notion_user: {},
             signed_urls: {}
         },
-        components: cn,
-        mapPageUrl: Kt(),
-        mapImageUrl: qt,
+        components: zn,
+        mapPageUrl: Ce(),
+        mapImageUrl: Se,
         searchNotion: void 0,
         isShowingSearch: !1,
         onHideSearch: void 0,
@@ -3252,178 +3261,175 @@ var Tr = Cr,
         defaultPageCoverPosition: .5,
         zoom: null
     },
-    bt = M.createContext(un);
+    Vn = d.createContext(Bn);
 
-function dn({
+function Hn({
     components: e = {},
     children: t,
-    mapPageUrl: o,
-    mapImageUrl: i,
-    rootPageId: r,
+    mapPageUrl: n,
+    mapImageUrl: r,
+    rootPageId: i,
     ...a
 }) {
-    for (const u of Object.keys(a)) a[u] === void 0 && delete a[u];
-    const s = M.useMemo(() => ({
+    for (let e of Object.keys(a)) a[e] === void 0 && delete a[e];
+    let o = d.useMemo(() => ({
         ...e
     }), [e]);
-    s.nextImage && s.nextLegacyImage ? (console.warn("You should not pass both nextImage and nextLegacyImage. Only nextImage component will be used."), s.Image = Bt(e.nextImage)) : s.nextImage ? s.Image = Bt(e.nextImage) : s.nextLegacyImage && (s.Image = Pr(e.nextLegacyImage)), s.nextLink && (s.nextLink = Ir(e.nextLink));
-    for (const u of Object.keys(s)) s[u] || delete s[u];
-    const l = M.useMemo(() => ({
-        ...un,
+    o.nextImage && o.nextLegacyImage ? (console.warn(`You should not pass both nextImage and nextLegacyImage. Only nextImage component will be used.`), o.Image = An(e.nextImage)) : o.nextImage ? o.Image = An(e.nextImage) : o.nextLegacyImage && (o.Image = jn(e.nextLegacyImage)), o.nextLink && (o.nextLink = Mn(e.nextLink));
+    for (let e of Object.keys(o)) o[e] || delete o[e];
+    let s = d.useMemo(() => ({
+        ...Bn,
         ...a,
-        rootPageId: r,
-        mapPageUrl: o ?? Kt(r),
-        mapImageUrl: i ?? qt,
+        rootPageId: i,
+        mapPageUrl: n ?? Ce(i),
+        mapImageUrl: r ?? Se,
         components: {
-            ...cn,
-            ...s
+            ...zn,
+            ...o
         }
-    }), [i, o, s, r, a]);
-    return n.jsx(bt.Provider, {
-        value: l,
+    }), [r, n, o, i, a]);
+    return (0, z.jsx)(Vn.Provider, {
+        value: s,
         children: t
     })
 }
-var Mr = bt.Consumer,
-    ne = () => M.useContext(bt);
+var Un = Vn.Consumer,
+    $ = () => d.useContext(Vn);
 
-function Rr({
+function Wn({
     block: e,
     blockId: t,
-    className: o
+    className: n
 }) {
-    var i, r, a, s, l, u;
-    const {
-        recordMap: c,
-        mapPageUrl: p
-    } = ne(), [v, m] = M.useState(!1), [b, _] = M.useState(!1);
-    if (!e || e.type !== "button") return console.warn("Invalid button block:", {
+    var r, i, a, o, s, c;
+    let {
+        recordMap: l,
+        mapPageUrl: u
+    } = $(), [f, p] = d.useState(!1), [m, h] = d.useState(!1);
+    if (!e || e.type !== `button`) return console.warn(`Invalid button block:`, {
         block: e
     }), null;
-    const g = (i = e.format) == null ? void 0 : i.automation_id,
-        w = ((r = e.format) == null ? void 0 : r.block_color) || "default",
-        x = (a = e.properties) == null ? void 0 : a.title;
-    if (!g) return n.jsx("div", {
-        className: N("notion-button-block", t),
-        children: n.jsx("button", {
-            type: "button",
-            className: N("notion-button", `notion-${w}`, o),
-            children: x ? n.jsx(Y, {
-                value: x,
+    let g = (r = e.format) == null ? void 0 : r.automation_id,
+        _ = ((i = e.format) == null ? void 0 : i.block_color) || `default`,
+        v = (a = e.properties) == null ? void 0 : a.title;
+    if (!g) return (0, z.jsx)(`div`, {
+        className: K(`notion-button-block`, t),
+        children: (0, z.jsx)(`button`, {
+            type: `button`,
+            className: K(`notion-button`, `notion-${_}`, n),
+            children: v ? (0, z.jsx)(X, {
+                value: v,
                 block: e
-            }) : "Button"
+            }) : `Button`
         })
     });
-    const S = (l = (s = c.automation) == null ? void 0 : s[g]) == null ? void 0 : l.value;
-    if (!S) {
-        const C = x ? Ut(x) : "Button";
-        return n.jsx("div", {
-            className: N("notion-button-block", t),
-            children: n.jsx("button", {
-                type: "button",
-                className: N("notion-button", `notion-${w}`, o),
-                children: C
+    let y = (s = (o = l.automation) == null ? void 0 : o[g]) == null ? void 0 : s.value;
+    if (!y) {
+        let e = v ? Gn(v) : `Button`;
+        return (0, z.jsx)(`div`, {
+            className: K(`notion-button-block`, t),
+            children: (0, z.jsx)(`button`, {
+                type: `button`,
+                className: K(`notion-button`, `notion-${_}`, n),
+                children: e
             })
         })
     }
-    const j = ((u = S.properties) == null ? void 0 : u.name) || (x ? Ut(x) : "Button"),
-        E = async C => {
-            if (C.preventDefault(), !b) {
-                m(!1), _(!0);
+    let b = ((c = y.properties) == null ? void 0 : c.name) || (v ? Gn(v) : `Button`),
+        x = async e => {
+            if (e.preventDefault(), !m) {
+                p(!1), h(!0);
                 try {
-                    await h()
+                    await S()
                 } finally {
-                    _(!1)
+                    h(!1)
                 }
             }
-        }, h = async () => {
-            var C, y, d, z, L, $, k, I, A, T, P;
-            const U = (C = S.action_ids) == null ? void 0 : C[0];
-            if (!U) {
-                console.warn("No actions defined for automation:", g);
+        }, S = async () => {
+            var e, t, n, r, i, a, o, s, c, d, f;
+            let m = (e = y.action_ids) == null ? void 0 : e[0];
+            if (!m) {
+                console.warn(`No actions defined for automation:`, g);
                 return
             }
-            const W = (d = (y = c.automation_action) == null ? void 0 : y[U]) == null ? void 0 : d.value;
-            if (!W) {
-                console.warn("No action data found for ID:", U);
-                return
-            }
-            switch (W.type) {
-                case "open_page": {
-                    const D = (z = W.config) == null ? void 0 : z.target;
-                    if ((D == null ? void 0 : D.type) === "url" && D.url) window.open(D.url, "_blank", "noopener,noreferrer");
-                    else if ((D == null ? void 0 : D.type) === "page" && D.pageId) {
-                        const K = p(D.pageId);
-                        K && (window.location.href = K)
+            let h = (n = (t = l.automation_action) == null ? void 0 : t[m]) == null ? void 0 : n.value;
+            if (!h) console.warn(`No action data found for ID:`, m);
+            else switch (h.type) {
+                case `open_page`: {
+                    let e = (r = h.config) == null ? void 0 : r.target;
+                    if ((e == null ? void 0 : e.type) === `url` && e.url) window.open(e.url, `_blank`, `noopener,noreferrer`);
+                    else if ((e == null ? void 0 : e.type) === `page` && e.pageId) {
+                        let t = u(e.pageId);
+                        t && (window.location.href = t)
                     }
                     break
                 }
-                case "send_webhook":
-                case "http_request": {
-                    const D = ($ = (L = W.config) == null ? void 0 : L.url) == null ? void 0 : $.trim();
-                    if (D) try {
-                        if (typeof window < "u") {
-                            const K = Object.keys(c.block || {}).find(Z => {
-                                    var q;
-                                    const ye = (q = c.block[Z]) == null ? void 0 : q.value;
-                                    return ye && "type" in ye && ye.type === "page"
+                case `send_webhook`:
+                case `http_request`: {
+                    let e = (a = (i = h.config) == null ? void 0 : i.url) == null ? void 0 : a.trim();
+                    if (e) try {
+                        if (typeof window < `u`) {
+                            let t = Object.keys(l.block || {}).find(e => {
+                                    var t;
+                                    let n = (t = l.block[e]) == null ? void 0 : t.value;
+                                    return n && `type` in n && n.type === `page`
                                 }),
-                                F = K ? (k = c.block[K]) == null ? void 0 : k.value : null;
-                            if (!F) {
-                                console.warn("No page block found for webhook payload");
+                                n = t ? (o = l.block[t]) == null ? void 0 : o.value : null;
+                            if (!n) {
+                                console.warn(`No page block found for webhook payload`);
                                 return
                             }
-                            const ge = {
+                            let r = {
                                     source: {
-                                        type: "automation",
+                                        type: `automation`,
                                         automation_id: g,
-                                        action_id: W.id,
+                                        action_id: h.id,
                                         event_id: crypto.randomUUID(),
-                                        user_id: F.created_by_id || "unknown",
+                                        user_id: n.created_by_id || `unknown`,
                                         attempt: 1
                                     },
                                     data: {
-                                        object: "page",
-                                        id: F.id,
-                                        created_time: new Date(F.created_time).toISOString(),
-                                        last_edited_time: new Date(F.last_edited_time).toISOString(),
+                                        object: `page`,
+                                        id: n.id,
+                                        created_time: new Date(n.created_time).toISOString(),
+                                        last_edited_time: new Date(n.last_edited_time).toISOString(),
                                         created_by: {
-                                            object: "user",
-                                            id: F.created_by_id || "unknown"
+                                            object: `user`,
+                                            id: n.created_by_id || `unknown`
                                         },
                                         last_edited_by: {
-                                            object: "user",
-                                            id: F.last_edited_by_id || "unknown"
+                                            object: `user`,
+                                            id: n.last_edited_by_id || `unknown`
                                         },
-                                        cover: (I = F.format) != null && I.page_cover ? {
-                                            type: "external",
+                                        cover: (s = n.format) != null && s.page_cover ? {
+                                            type: `external`,
                                             external: {
-                                                url: F.format.page_cover.startsWith("/") ? `https://www.notion.so${F.format.page_cover}` : F.format.page_cover
+                                                url: n.format.page_cover.startsWith(`/`) ? `https://www.notion.so${n.format.page_cover}` : n.format.page_cover
                                             }
                                         } : null,
-                                        icon: (A = F.format) != null && A.page_icon ? {
-                                            type: "external",
+                                        icon: (c = n.format) != null && c.page_icon ? {
+                                            type: `external`,
                                             external: {
-                                                url: F.format.page_icon
+                                                url: n.format.page_icon
                                             }
                                         } : null,
                                         parent: {
-                                            type: "workspace",
+                                            type: `workspace`,
                                             workspace: !0
                                         },
-                                        archived: !F.alive,
+                                        archived: !n.alive,
                                         in_trash: !1,
                                         is_locked: !1,
                                         properties: {
                                             title: {
-                                                id: "title",
-                                                type: "title",
-                                                title: (T = F.properties) != null && T.title ? F.properties.title.map(Z => {
-                                                    const q = typeof Z == "string" ? Z : Z[0] || "";
+                                                id: `title`,
+                                                type: `title`,
+                                                title: (d = n.properties) != null && d.title ? n.properties.title.map(e => {
+                                                    let t = typeof e == `string` ? e : e[0] || ``;
                                                     return {
-                                                        type: "text",
+                                                        type: `text`,
                                                         text: {
-                                                            content: q,
+                                                            content: t,
                                                             link: null
                                                         },
                                                         annotations: {
@@ -3432,145 +3438,143 @@ function Rr({
                                                             strikethrough: !1,
                                                             underline: !1,
                                                             code: !1,
-                                                            color: "default"
+                                                            color: `default`
                                                         },
-                                                        plain_text: q,
+                                                        plain_text: t,
                                                         href: null
                                                     }
                                                 }) : []
                                             }
                                         },
-                                        url: `https://www.notion.so/${F.id}`,
+                                        url: `https://www.notion.so/${n.id}`,
                                         public_url: window.location.href,
                                         request_id: crypto.randomUUID()
                                     }
                                 },
-                                me = {
-                                    "Content-Type": "application/json"
+                                i = {
+                                    "Content-Type": `application/json`
                                 };
-                            if ((P = W.config) != null && P.customHeaders)
-                                for (const Z of W.config.customHeaders) me[Z.key] = Z.value;
-                            console.log("Sending webhook:", {
-                                url: D,
-                                payload: ge,
-                                headers: me
+                            if ((f = h.config) != null && f.customHeaders)
+                                for (let e of h.config.customHeaders) i[e.key] = e.value;
+                            console.log(`Sending webhook:`, {
+                                url: e,
+                                payload: r,
+                                headers: i
                             });
-                            const pe = await fetch("/api/webhook-proxy", {
-                                    method: "POST",
+                            let a = await fetch(`/api/webhook-proxy`, {
+                                    method: `POST`,
                                     headers: {
-                                        "Content-Type": "application/json"
+                                        "Content-Type": `application/json`
                                     },
                                     body: JSON.stringify({
-                                        url: D,
-                                        payload: ge,
-                                        headers: me
+                                        url: e,
+                                        payload: r,
+                                        headers: i
                                     })
                                 }),
-                                oe = await pe.json();
-                            !pe.ok || !oe.success ? console.error("Webhook request failed:", oe) : (console.log("Webhook sent successfully:", oe), m(!0), setTimeout(() => m(!1), 2e3))
-                        } else console.warn("Webhook functionality requires /api/webhook-proxy endpoint")
-                    } catch (K) {
-                        console.error("Error sending webhook:", K)
+                                u = await a.json();
+                            !a.ok || !u.success ? console.error(`Webhook request failed:`, u) : (console.log(`Webhook sent successfully:`, u), p(!0), setTimeout(() => p(!1), 2e3))
+                        } else console.warn(`Webhook functionality requires /api/webhook-proxy endpoint`)
+                    } catch (e) {
+                        console.error(`Error sending webhook:`, e)
                     }
                     break
                 }
                 default:
-                    console.warn("Unsupported action type:", W.type)
+                    console.warn(`Unsupported action type:`, h.type)
             }
         };
-    return n.jsx("div", {
-        className: N("notion-button-block", t),
-        children: n.jsx("button", {
-            type: "button",
-            className: N("notion-button", `notion-${w}`, v ? "notion-success" : "", o),
-            onClick: E,
-            title: j,
-            disabled: b,
-            children: j
+    return (0, z.jsx)(`div`, {
+        className: K(`notion-button-block`, t),
+        children: (0, z.jsx)(`button`, {
+            type: `button`,
+            className: K(`notion-button`, `notion-${_}`, f ? `notion-success` : ``, n),
+            onClick: x,
+            title: b,
+            disabled: m,
+            children: b
         })
     })
 }
 
-function Ut(e) {
-    return e.map(t => typeof t == "string" ? t : t[0] || "").join("")
+function Gn(e) {
+    return e.map(e => typeof e == `string` ? e : e[0] || ``).join(``)
 }
 
-function Hr({
+function Kn({
     block: e,
     className: t
 }) {
-    var o, i, r;
-    const {
+    var n, r, i;
+    let {
         recordMap: a
-    } = ne();
-    let s = a.signed_urls[e.id] || ((r = (i = (o = e.properties) == null ? void 0 : o.source) == null ? void 0 : i[0]) == null ? void 0 : r[0]);
-    if (!s) return null;
+    } = $(), o = a.signed_urls[e.id] || ((i = (r = (n = e.properties) == null ? void 0 : n.source) == null ? void 0 : r[0]) == null ? void 0 : i[0]);
+    if (!o) return null;
     if (e.space_id) {
-        const l = new URL(s);
-        l.searchParams.set("spaceId", e.space_id), s = l.toString()
+        let t = new URL(o);
+        t.searchParams.set(`spaceId`, e.space_id), o = t.toString()
     }
-    return n.jsx("div", {
-        className: N("notion-audio", t),
-        children: n.jsx("audio", {
+    return (0, z.jsx)(`div`, {
+        className: K(`notion-audio`, t),
+        children: (0, z.jsx)(`audio`, {
             controls: !0,
-            preload: "none",
-            src: s
+            preload: `none`,
+            src: o
         })
     })
 }
 
-function Ar(e) {
-    const {
+function qn(e) {
+    let {
         className: t,
-        ...o
+        ...n
     } = e;
-    return n.jsx("svg", {
+    return (0, z.jsx)(`svg`, {
         className: t,
-        ...o,
-        viewBox: "0 0 30 30",
-        children: n.jsx("path", {
-            d: "M22,8v12c0,3.866-3.134,7-7,7s-7-3.134-7-7V8c0-2.762,2.238-5,5-5s5,2.238,5,5v12c0,1.657-1.343,3-3,3s-3-1.343-3-3V8h-2v12c0,2.762,2.238,5,5,5s5-2.238,5-5V8c0-3.866-3.134-7-7-7S6,4.134,6,8v12c0,4.971,4.029,9,9,9s9-4.029,9-9V8H22z"
+        ...n,
+        viewBox: `0 0 30 30`,
+        children: (0, z.jsx)(`path`, {
+            d: `M22,8v12c0,3.866-3.134,7-7,7s-7-3.134-7-7V8c0-2.762,2.238-5,5-5s5,2.238,5,5v12c0,1.657-1.343,3-3,3s-3-1.343-3-3V8h-2v12c0,2.762,2.238,5,5,5s5-2.238,5-5V8c0-3.866-3.134-7-7-7S6,4.134,6,8v12c0,4.971,4.029,9,9,9s9-4.029,9-9V8H22z`
         })
     })
 }
 
-function Br({
+function Jn({
     block: e,
     className: t
 }) {
-    var o, i, r, a, s;
-    const {
-        components: l,
-        recordMap: u
-    } = ne();
-    let c = u.signed_urls[e.id] || ((r = (i = (o = e.properties) == null ? void 0 : o.source) == null ? void 0 : i[0]) == null ? void 0 : r[0]);
-    if (!c) return null;
+    var n, r, i, a, o;
+    let {
+        components: s,
+        recordMap: c
+    } = $(), l = c.signed_urls[e.id] || ((i = (r = (n = e.properties) == null ? void 0 : n.source) == null ? void 0 : r[0]) == null ? void 0 : i[0]);
+    if (!l) return null;
     if (e.space_id) {
-        const p = new URL(c);
-        p.searchParams.set("spaceId", e.space_id), c = p.toString()
+        let t = new URL(l);
+        t.searchParams.set(`spaceId`, e.space_id), l = t.toString()
     }
-    return n.jsx("div", {
-        className: N("notion-file", t),
-        children: n.jsxs(l.Link, {
-            className: "notion-file-link",
-            href: c,
-            target: "_blank",
-            rel: "noopener noreferrer",
-            children: [n.jsx(Ar, {
-                className: "notion-file-icon"
-            }), n.jsxs("div", {
-                className: "notion-file-info",
-                children: [n.jsx("div", {
-                    className: "notion-file-title",
-                    children: n.jsx(Y, {
+    return (0, z.jsx)(`div`, {
+        className: K(`notion-file`, t),
+        children: (0, z.jsxs)(s.Link, {
+            className: `notion-file-link`,
+            href: l,
+            target: `_blank`,
+            rel: `noopener noreferrer`,
+            children: [(0, z.jsx)(qn, {
+                className: `notion-file-icon`
+            }), (0, z.jsxs)(`div`, {
+                className: `notion-file-info`,
+                children: [(0, z.jsx)(`div`, {
+                    className: `notion-file-title`,
+                    children: (0, z.jsx)(X, {
                         value: ((a = e.properties) == null ? void 0 : a.title) || [
-                            ["File"]
+                            [`File`]
                         ],
                         block: e
                     })
-                }), ((s = e.properties) == null ? void 0 : s.size) && n.jsx("div", {
-                    className: "notion-file-size",
-                    children: n.jsx(Y, {
+                }), ((o = e.properties) == null ? void 0 : o.size) && (0, z.jsx)(`div`, {
+                    className: `notion-file-size`,
+                    children: (0, z.jsx)(X, {
                         value: e.properties.size,
                         block: e
                     })
@@ -3580,835 +3584,831 @@ function Br({
     })
 }
 
-function Ur({
+function Yn({
     block: e,
     className: t
 }) {
-    var o;
-    const {
-        components: i,
-        mapImageUrl: r
-    } = ne(), a = (o = e.format) == null ? void 0 : o.drive_properties;
+    var n;
+    let {
+        components: r,
+        mapImageUrl: i
+    } = $(), a = (n = e.format) == null ? void 0 : n.drive_properties;
     if (!a) return null;
-    let s;
+    let o;
     try {
-        s = new URL(a.url).hostname
+        o = new URL(a.url).hostname
     } catch {}
-    return n.jsx("div", {
-        className: N("notion-google-drive", t),
-        children: n.jsxs(i.Link, {
-            className: "notion-google-drive-link",
+    return (0, z.jsx)(`div`, {
+        className: K(`notion-google-drive`, t),
+        children: (0, z.jsxs)(r.Link, {
+            className: `notion-google-drive-link`,
             href: a.url,
-            target: "_blank",
-            rel: "noopener noreferrer",
-            children: [n.jsx("div", {
-                className: "notion-google-drive-preview",
-                children: n.jsx(ft, {
-                    src: r(a.thumbnail, e),
-                    alt: a.title || "Google Drive Document",
-                    loading: "lazy"
+            target: `_blank`,
+            rel: `noopener noreferrer`,
+            children: [(0, z.jsx)(`div`, {
+                className: `notion-google-drive-preview`,
+                children: (0, z.jsx)(on, {
+                    src: i(a.thumbnail, e),
+                    alt: a.title || `Google Drive Document`,
+                    loading: `lazy`
                 })
-            }), n.jsxs("div", {
-                className: "notion-google-drive-body",
-                children: [a.title && n.jsx("div", {
-                    className: "notion-google-drive-body-title",
+            }), (0, z.jsxs)(`div`, {
+                className: `notion-google-drive-body`,
+                children: [a.title && (0, z.jsx)(`div`, {
+                    className: `notion-google-drive-body-title`,
                     children: a.title
-                }), a.icon && s && n.jsxs("div", {
-                    className: "notion-google-drive-body-source",
-                    children: [a.icon && n.jsx("div", {
-                        className: "notion-google-drive-body-source-icon",
+                }), a.icon && o && (0, z.jsxs)(`div`, {
+                    className: `notion-google-drive-body-source`,
+                    children: [a.icon && (0, z.jsx)(`div`, {
+                        className: `notion-google-drive-body-source-icon`,
                         style: {
                             backgroundImage: `url(${a.icon})`
                         }
-                    }), s && n.jsx("div", {
-                        className: "notion-google-drive-body-source-domain",
-                        children: s
+                    }), o && (0, z.jsx)(`div`, {
+                        className: `notion-google-drive-body-source-domain`,
+                        children: o
                     })]
                 })]
             })]
         })
     })
 }
-var Dr = tn(nn());
+var Xn = Ot(kt(), 1);
 
-function Fr({
+function Zn({
     toc: e,
     activeSection: t,
-    setActiveSection: o,
-    pageAside: i,
-    hasToc: r,
+    setActiveSection: n,
+    pageAside: r,
+    hasToc: i,
     hasAside: a,
-    className: s
+    className: o
 }) {
-    const u = M.useMemo(() => (0, Dr.default)(() => {
-        const c = document.getElementsByClassName("notion-h");
-        let p = null,
-            v = t;
-        for (const m of c) {
-            if (!m || !(m instanceof Element)) continue;
-            v || (v = m.dataset.id);
-            const b = m.getBoundingClientRect(),
-                _ = p ? b.top - p.bottom : 0,
-                g = Math.max(150, _ / 4);
-            if (b.top - g < 0) {
-                v = m.dataset.id, p = b;
-                continue
-            }
-            break
+    let s = d.useMemo(() => (0, Xn.default)(() => {
+        let e = document.getElementsByClassName(`notion-h`),
+            r = null,
+            i = t;
+        for (let t of e) {
+            if (!t || !(t instanceof Element)) continue;
+            i || (i = t.dataset.id);
+            let e = t.getBoundingClientRect(),
+                n = r ? e.top - r.bottom : 0,
+                a = Math.max(150, n / 4);
+            if (e.top - a < 0) i = t.dataset.id, r = e;
+            else break
         }
-        o(v)
-    }, 100), [o]);
-    return M.useEffect(() => {
-        if (r) return window.addEventListener("scroll", u), u(), () => {
-            window.removeEventListener("scroll", u)
+        n(i)
+    }, 100), [n]);
+    return d.useEffect(() => {
+        if (i) return window.addEventListener(`scroll`, s), s(), () => {
+            window.removeEventListener(`scroll`, s)
         }
-    }, [r, u]), a ? n.jsxs("aside", {
-        className: N("notion-aside", s),
-        children: [r && n.jsxs("div", {
-            className: "notion-aside-table-of-contents",
-            children: [n.jsx("div", {
-                className: "notion-aside-table-of-contents-header",
-                children: "Table of Contents"
-            }), n.jsx("nav", {
-                className: "notion-table-of-contents",
-                children: e.map(c => {
-                    const p = Ke(c.id);
-                    return n.jsx("a", {
-                        href: `#${p}`,
-                        className: N("notion-table-of-contents-item", `notion-table-of-contents-item-indent-level-${c.indentLevel}`, t === p && "notion-table-of-contents-active-item"),
-                        children: n.jsx("span", {
-                            className: "notion-table-of-contents-item-body",
+    }, [i, s]), a ? (0, z.jsxs)(`aside`, {
+        className: K(`notion-aside`, o),
+        children: [i && (0, z.jsxs)(`div`, {
+            className: `notion-aside-table-of-contents`,
+            children: [(0, z.jsx)(`div`, {
+                className: `notion-aside-table-of-contents-header`,
+                children: `Table of Contents`
+            }), (0, z.jsx)(`nav`, {
+                className: `notion-table-of-contents`,
+                children: e.map(e => {
+                    let n = ge(e.id);
+                    return (0, z.jsx)(`a`, {
+                        href: `#${n}`,
+                        className: K(`notion-table-of-contents-item`, `notion-table-of-contents-item-indent-level-${e.indentLevel}`, t === n && `notion-table-of-contents-active-item`),
+                        children: (0, z.jsx)(`span`, {
+                            className: `notion-table-of-contents-item-body`,
                             style: {
-                                display: "inline-block",
-                                marginLeft: c.indentLevel * 16
+                                display: `inline-block`,
+                                marginLeft: e.indentLevel * 16
                             },
-                            children: c.text
+                            children: e.text
                         })
-                    }, p)
+                    }, n)
                 })
             })]
-        }), i]
+        }), r]
     }) : null
 }
 
-function Wr({
+function Qn({
     block: e,
     level: t
 }) {
-    var o, i;
-    if (!e) return console.warn("missing sync pointer block"), null;
-    const r = e,
-        a = (i = (o = r == null ? void 0 : r.format) == null ? void 0 : o.transclusion_reference_pointer) == null ? void 0 : i.id;
-    return a ? n.jsx(_t, {
+    var n, r;
+    if (!e) return console.warn(`missing sync pointer block`), null;
+    let i = e,
+        a = (r = (n = i == null ? void 0 : i.format) == null ? void 0 : n.transclusion_reference_pointer) == null ? void 0 : r.id;
+    return a ? (0, z.jsx)(ir, {
         level: t,
         blockId: a
     }, a) : null
 }
 
-function Vr(e) {
-    const {
+function $n(e) {
+    let {
         className: t,
-        ...o
+        ...n
     } = e;
-    return n.jsx("svg", {
+    return (0, z.jsx)(`svg`, {
         className: t,
-        ...o,
-        viewBox: "0 0 16 16",
-        width: "16",
-        height: "16",
-        children: n.jsx("path", {
-            fillRule: "evenodd",
-            d: "M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"
+        ...n,
+        viewBox: `0 0 16 16`,
+        width: `16`,
+        height: `16`,
+        children: (0, z.jsx)(`path`, {
+            fillRule: `evenodd`,
+            d: `M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z`
         })
     })
 }
-var Dt = {},
-    Ft = {};
+var er = {},
+    tr = {};
 
-function qr(e) {
-    var t, o, i, r, a, s, l, u, c, p, v, m, b, _, g, w, x, S, j, E, h, C, y, d, z, L, $, k, I, A, T, P, U, W, D, K, F, ge, me, pe, oe;
-    const Z = ne(),
+function nr(e) {
+    var t, n, r, i, a, o, s, c, l, u, p, m, h, g, _, v, y, b, x, S, C, w, T, E, D, ee, te, ne, re, ie, ae, A, se, j, le, ue, de, fe, pe, ve;
+    let xe = $(),
         {
-            components: q,
-            fullPage: ye,
-            darkMode: ce,
-            recordMap: R,
-            mapPageUrl: ie,
-            mapImageUrl: ae,
-            showTableOfContents: _e,
-            minTableOfContentsItems: Xe,
-            defaultPageIcon: Ee,
-            defaultPageCover: Oe,
-            defaultPageCoverPosition: Je
-        } = Z,
-        [et, Be] = M.useState(null),
+            components: M,
+            fullPage: Se,
+            darkMode: Ce,
+            recordMap: N,
+            mapPageUrl: we,
+            mapImageUrl: Te,
+            showTableOfContents: P,
+            minTableOfContentsItems: Ee,
+            defaultPageIcon: F,
+            defaultPageCover: De,
+            defaultPageCoverPosition: Oe
+        } = xe,
+        [ke, Ae] = d.useState(null),
         {
-            block: f,
-            children: ee,
-            level: tt,
-            className: jt,
-            bodyClassName: wt,
-            header: fn,
-            footer: mn,
-            pageHeader: kt,
-            pageFooter: Ct,
-            pageTitle: Nt,
-            pageAside: Lt,
-            pageCover: nt,
-            hideBlockId: pn,
-            disableHeader: hn
+            block: I,
+            children: L,
+            level: je,
+            className: Me,
+            bodyClassName: Ne,
+            header: Pe,
+            footer: Fe,
+            pageHeader: Ie,
+            pageFooter: R,
+            pageTitle: Le,
+            pageAside: Re,
+            pageCover: ze,
+            hideBlockId: Be,
+            disableHeader: B
         } = e;
-    if (!f) return null;
-    tt === 0 && f.type === "collection_view" && (f.type = "collection_view_page");
-    const B = pn ? "notion-block" : `notion-block-${Ke(f.id)}`;
-    switch (f.type) {
-        case "collection_view_page":
-        case "page":
-            if (tt === 0) {
-                const {
-                    page_icon: O = Ee,
-                    page_cover: H = Oe,
-                    page_cover_position: G = Je,
-                    page_full_width: Q,
-                    page_small_text: re
-                } = f.format || {};
-                if (ye) {
-                    const te = f.type === "page" ? f.properties : {
-                            title: (t = V(R.collection[ht(f, R)])) == null ? void 0 : t.name
+    if (!I) return null;
+    je === 0 && I.type === `collection_view` && (I.type = `collection_view_page`);
+    let V = Be ? `notion-block` : `notion-block-${ge(I.id)}`;
+    switch (I.type) {
+        case `collection_view_page`:
+        case `page`:
+            if (je === 0) {
+                let {
+                    page_icon: e = F,
+                    page_cover: n = De,
+                    page_cover_position: r = Oe,
+                    page_full_width: i,
+                    page_small_text: a
+                } = I.format || {};
+                if (Se) {
+                    let o = I.type === `page` ? I.properties : {
+                            title: (t = O(N.collection[oe(I, N)])) == null ? void 0 : t.name
                         },
-                        ue = `center ${(1-(G||.5))*100}%`;
-                    let Ce = Ft[ue];
-                    Ce || (Ce = Ft[ue] = {
-                        objectPosition: ue
+                        s = `center ${(1-(r||.5))*100}%`,
+                        c = tr[s];
+                    c || (c = tr[s] = {
+                        objectPosition: s
                     });
-                    const he = (o = vt(f, R)) != null ? o : Ee,
-                        xe = he && pt(he),
-                        le = it(f, R),
-                        be = _e && le.length >= Xe,
-                        Le = !!((be || Lt) && !Q),
-                        $e = !!(nt || H);
-                    return n.jsxs("div", {
-                        className: N("notion", "notion-app", ce ? "dark-mode" : "light-mode", B, jt),
-                        children: [n.jsx("div", {
-                            className: "notion-viewport"
-                        }), n.jsxs("div", {
-                            className: "notion-frame",
-                            children: [!hn && n.jsx(q.Header, {
-                                block: f
-                            }), fn, n.jsxs("div", {
-                                className: "notion-page-scroller",
-                                children: [$e && (nt ?? n.jsx("div", {
-                                    className: "notion-page-cover-wrapper",
-                                    children: n.jsx(Se, {
-                                        src: ae(H, f),
-                                        alt: ve(te == null ? void 0 : te.title),
+                    let l = me(I, N) ?? F,
+                        u = l && f(l),
+                        d = ce(I, N),
+                        p = P && d.length >= Ee,
+                        m = !(!p && !Re || i),
+                        h = !!(ze || n);
+                    return (0, z.jsxs)(`div`, {
+                        className: K(`notion`, `notion-app`, Ce ? `dark-mode` : `light-mode`, V, Me),
+                        children: [(0, z.jsx)(`div`, {
+                            className: `notion-viewport`
+                        }), (0, z.jsxs)(`div`, {
+                            className: `notion-frame`,
+                            children: [!B && (0, z.jsx)(M.Header, {
+                                block: I
+                            }), Pe, (0, z.jsxs)(`div`, {
+                                className: `notion-page-scroller`,
+                                children: [h && (ze ?? (0, z.jsx)(`div`, {
+                                    className: `notion-page-cover-wrapper`,
+                                    children: (0, z.jsx)(J, {
+                                        src: Te(n, I),
+                                        alt: k(o == null ? void 0 : o.title),
                                         priority: !0,
-                                        className: "notion-page-cover",
-                                        style: Ce
+                                        className: `notion-page-cover`,
+                                        style: c
                                     })
-                                })), n.jsxs("main", {
-                                    className: N("notion-page", $e ? "notion-page-has-cover" : "notion-page-no-cover", O ? "notion-page-has-icon" : "notion-page-no-icon", xe ? "notion-page-has-image-icon" : "notion-page-has-text-icon", "notion-full-page", Q && "notion-full-width", re && "notion-small-text", wt),
-                                    children: [O && n.jsx(He, {
-                                        block: f,
-                                        defaultIcon: Ee,
+                                })), (0, z.jsxs)(`main`, {
+                                    className: K(`notion-page`, h ? `notion-page-has-cover` : `notion-page-no-cover`, e ? `notion-page-has-icon` : `notion-page-no-icon`, u ? `notion-page-has-image-icon` : `notion-page-has-text-icon`, `notion-full-page`, i && `notion-full-width`, a && `notion-small-text`, Ne),
+                                    children: [e && (0, z.jsx)(pn, {
+                                        block: I,
+                                        defaultIcon: F,
                                         inline: !1
-                                    }), kt, n.jsx("h1", {
-                                        className: "notion-title",
-                                        children: Nt ?? n.jsx(Y, {
-                                            value: te == null ? void 0 : te.title,
-                                            block: f
+                                    }), Ie, (0, z.jsx)(`h1`, {
+                                        className: `notion-title`,
+                                        children: Le ?? (0, z.jsx)(X, {
+                                            value: o == null ? void 0 : o.title,
+                                            block: I
                                         })
-                                    }), (f.type === "collection_view_page" || f.type === "page" && f.parent_table === "collection") && n.jsx(q.Collection, {
-                                        block: f,
-                                        ctx: Z
-                                    }), f.type !== "collection_view_page" && n.jsxs("div", {
-                                        className: N("notion-page-content", Le && "notion-page-content-has-aside", be && "notion-page-content-has-toc"),
-                                        children: [n.jsx("article", {
-                                            className: "notion-page-content-inner",
-                                            children: ee
-                                        }), Le && n.jsx(Fr, {
-                                            toc: le,
-                                            activeSection: et,
-                                            setActiveSection: Be,
-                                            hasToc: be,
-                                            hasAside: Le,
-                                            pageAside: Lt
+                                    }), (I.type === `collection_view_page` || I.type === `page` && I.parent_table === `collection`) && (0, z.jsx)(M.Collection, {
+                                        block: I,
+                                        ctx: xe
+                                    }), I.type !== `collection_view_page` && (0, z.jsxs)(`div`, {
+                                        className: K(`notion-page-content`, m && `notion-page-content-has-aside`, p && `notion-page-content-has-toc`),
+                                        children: [(0, z.jsx)(`article`, {
+                                            className: `notion-page-content-inner`,
+                                            children: L
+                                        }), m && (0, z.jsx)(Zn, {
+                                            toc: d,
+                                            activeSection: ke,
+                                            setActiveSection: Ae,
+                                            hasToc: p,
+                                            hasAside: m,
+                                            pageAside: Re
                                         })]
-                                    }), Ct]
-                                }), mn]
+                                    }), R]
+                                }), Fe]
                             })]
                         })]
                     })
-                } else return n.jsxs("main", {
-                    className: N("notion", ce ? "dark-mode" : "light-mode", "notion-page", Q && "notion-full-width", re && "notion-small-text", B, jt, wt),
-                    children: [n.jsx("div", {
-                        className: "notion-viewport"
-                    }), kt, (f.type === "collection_view_page" || f.type === "page" && f.parent_table === "collection") && n.jsx(q.Collection, {
-                        block: f,
-                        ctx: Z
-                    }), f.type !== "collection_view_page" && ee, Ct]
+                }
+                return (0, z.jsxs)(`main`, {
+                    className: K(`notion`, Ce ? `dark-mode` : `light-mode`, `notion-page`, i && `notion-full-width`, a && `notion-small-text`, V, Me, Ne),
+                    children: [(0, z.jsx)(`div`, {
+                        className: `notion-viewport`
+                    }), Ie, (I.type === `collection_view_page` || I.type === `page` && I.parent_table === `collection`) && (0, z.jsx)(M.Collection, {
+                        block: I,
+                        ctx: xe
+                    }), I.type !== `collection_view_page` && L, R]
                 })
-            } else {
-                const O = (i = f.format) == null ? void 0 : i.block_color;
-                return n.jsx(q.PageLink, {
-                    className: N("notion-page-link", O && `notion-${O}`, B),
-                    href: ie(f.id),
-                    children: n.jsx(Ae, {
-                        block: f
+            } {
+                let e = (n = I.format) == null ? void 0 : n.block_color;
+                return (0, z.jsx)(M.PageLink, {
+                    className: K(`notion-page-link`, e && `notion-${e}`, V),
+                    href: we(I.id),
+                    children: (0, z.jsx)(Y, {
+                        block: I
                     })
                 })
             }
-        case "header":
-        case "sub_header":
-        case "sub_sub_header":
-        case "header_4": {
-            if (!f.properties) return null;
-            const O = (r = f.format) == null ? void 0 : r.block_color,
-                H = Ke(f.id),
-                G = ve(f.properties.title) || `Notion Header ${H}`;
-            let Q = Dt[f.id],
-                re;
-            if (Q === void 0) {
-                const be = Ye(f, R);
-                if (be) {
-                    const $e = it(be, R).find(vn => vn.id === f.id);
-                    $e && (Q = $e.indentLevel, Dt[f.id] = Q)
+        case `header`:
+        case `sub_header`:
+        case `sub_sub_header`:
+        case `header_4`: {
+            if (!I.properties) return null;
+            let e = (r = I.format) == null ? void 0 : r.block_color,
+                t = ge(I.id),
+                n = k(I.properties.title) || `Notion Header ${t}`,
+                o = er[I.id],
+                s;
+            if (o === void 0) {
+                let e = he(I, N);
+                if (e) {
+                    let t = ce(e, N).find(e => e.id === I.id);
+                    t && (o = t.indentLevel, er[I.id] = o)
                 }
             }
-            Q !== void 0 && (re = `notion-h-indent-${Q}`);
-            const te = f.type === "header",
-                ze = f.type === "sub_header",
-                ue = f.type === "sub_sub_header",
-                Ce = f.type === "header_4",
-                he = N(te && "notion-h notion-h1", ze && "notion-h notion-h2", ue && "notion-h notion-h3", Ce && "notion-h notion-h4", O && `notion-${O}`, re, B),
-                xe = n.jsxs("span", {
-                    children: [n.jsx("div", {
-                        id: H,
-                        className: "notion-header-anchor"
-                    }), !((a = f.format) != null && a.toggleable) && n.jsx("a", {
-                        className: "notion-hash-link",
-                        href: `#${H}`,
-                        title: G,
-                        children: n.jsx(Vr, {})
-                    }), n.jsx("span", {
-                        className: "notion-h-title",
-                        children: n.jsx(Y, {
-                            value: f.properties.title,
-                            block: f
+            o !== void 0 && (s = `notion-h-indent-${o}`);
+            let c = I.type === `header`,
+                l = I.type === `sub_header`,
+                u = I.type === `sub_sub_header`,
+                d = I.type === `header_4`,
+                f = K(c && `notion-h notion-h1`, l && `notion-h notion-h2`, u && `notion-h notion-h3`, d && `notion-h notion-h4`, e && `notion-${e}`, s, V),
+                p = (0, z.jsxs)(`span`, {
+                    children: [(0, z.jsx)(`div`, {
+                        id: t,
+                        className: `notion-header-anchor`
+                    }), !((i = I.format) != null && i.toggleable) && (0, z.jsx)(`a`, {
+                        className: `notion-hash-link`,
+                        href: `#${t}`,
+                        title: n,
+                        children: (0, z.jsx)($n, {})
+                    }), (0, z.jsx)(`span`, {
+                        className: `notion-h-title`,
+                        children: (0, z.jsx)(X, {
+                            value: I.properties.title,
+                            block: I
                         })
                     })]
-                });
-            let le = null;
-            return te ? le = n.jsx("h2", {
-                className: he,
-                "data-id": H,
-                children: xe
-            }) : ze ? le = n.jsx("h3", {
-                className: he,
-                "data-id": H,
-                children: xe
-            }) : ue ? le = n.jsx("h4", {
-                className: he,
-                "data-id": H,
-                children: xe
-            }) : le = n.jsx("h5", {
-                className: he,
-                "data-id": H,
-                children: xe
-            }), (s = f.format) != null && s.toggleable ? n.jsxs("details", {
-                className: N("notion-toggle", B),
-                children: [n.jsx("summary", {
-                    children: le
-                }), n.jsx("div", {
-                    children: ee
+                }),
+                m = null;
+            return m = c ? (0, z.jsx)(`h2`, {
+                className: f,
+                "data-id": t,
+                children: p
+            }) : l ? (0, z.jsx)(`h3`, {
+                className: f,
+                "data-id": t,
+                children: p
+            }) : u ? (0, z.jsx)(`h4`, {
+                className: f,
+                "data-id": t,
+                children: p
+            }) : (0, z.jsx)(`h5`, {
+                className: f,
+                "data-id": t,
+                children: p
+            }), (a = I.format) != null && a.toggleable ? (0, z.jsxs)(`details`, {
+                className: K(`notion-toggle`, V),
+                children: [(0, z.jsx)(`summary`, {
+                    children: m
+                }), (0, z.jsx)(`div`, {
+                    children: L
                 })]
-            }) : le
+            }) : m
         }
-        case "divider":
-            return n.jsx("hr", {
-                className: N("notion-hr", B)
+        case `divider`:
+            return (0, z.jsx)(`hr`, {
+                className: K(`notion-hr`, V)
             });
-        case "text": {
-            if (!f.properties && !((l = f.content) != null && l.length)) return n.jsx("div", {
-                className: N("notion-blank", B),
-                children: " "
+        case `text`: {
+            if (!I.properties && !((o = I.content) != null && o.length)) return (0, z.jsx)(`div`, {
+                className: K(`notion-blank`, V),
+                children: `\xA0`
             });
-            const O = (u = f.format) == null ? void 0 : u.block_color;
-            return n.jsxs("div", {
-                className: N("notion-text", O && `notion-${O}`, B),
-                children: [((c = f.properties) == null ? void 0 : c.title) && n.jsx(Y, {
-                    value: f.properties.title,
-                    block: f
-                }), ee && n.jsx("div", {
-                    className: "notion-text-children",
-                    children: ee
+            let e = (s = I.format) == null ? void 0 : s.block_color;
+            return (0, z.jsxs)(`div`, {
+                className: K(`notion-text`, e && `notion-${e}`, V),
+                children: [((c = I.properties) == null ? void 0 : c.title) && (0, z.jsx)(X, {
+                    value: I.properties.title,
+                    block: I
+                }), L && (0, z.jsx)(`div`, {
+                    className: `notion-text-children`,
+                    children: L
                 })]
             })
         }
-        case "bulleted_list":
-        case "numbered_list": {
-            const O = (re, te) => f.type === "bulleted_list" ? n.jsx("ul", {
-                className: N("notion-list", "notion-list-disc", B),
-                children: re
-            }) : n.jsx("ol", {
-                start: te,
-                className: N("notion-list", "notion-list-numbered", B),
-                style: f.type === "numbered_list" ? {
-                    listStyleType: It(Pt(f.id, R.block))
-                } : void 0,
-                children: re
-            });
-            let H = null;
-            const G = f.type !== ((p = V(R.block[f.parent_id])) == null ? void 0 : p.type),
-                Q = Vn(f.id, R.block);
-            if (f.content) {
-                const re = f.properties ? n.jsx("li", {
-                    children: n.jsx(Y, {
-                        value: f.properties.title,
-                        block: f
+        case `bulleted_list`:
+        case `numbered_list`: {
+            let e = (e, t) => I.type === `bulleted_list` ? (0, z.jsx)(`ul`, {
+                    className: K(`notion-list`, `notion-list-disc`, V),
+                    children: e
+                }) : (0, z.jsx)(`ol`, {
+                    start: t,
+                    className: K(`notion-list`, `notion-list-numbered`, V),
+                    style: I.type === `numbered_list` ? {
+                        listStyleType: be(_e(I.id, N.block))
+                    } : void 0,
+                    children: e
+                }),
+                t = null,
+                n = I.type !== ((l = O(N.block[I.parent_id])) == null ? void 0 : l.type),
+                r = ye(I.id, N.block);
+            if (I.content) {
+                let e = I.properties ? (0, z.jsx)(`li`, {
+                    children: (0, z.jsx)(X, {
+                        value: I.properties.title,
+                        block: I
                     })
                 }) : null;
-                if (f.type === "bulleted_list") H = n.jsxs(n.Fragment, {
-                    children: [re, n.jsx("ul", {
-                        className: N("notion-list", "notion-list-disc", B),
-                        children: ee
+                if (I.type === `bulleted_list`) t = (0, z.jsxs)(z.Fragment, {
+                    children: [e, (0, z.jsx)(`ul`, {
+                        className: K(`notion-list`, `notion-list-disc`, V),
+                        children: L
                     })]
                 });
                 else {
-                    const te = Pt(f.id, R.block);
-                    H = n.jsxs(n.Fragment, {
-                        children: [re, n.jsx("ol", {
-                            className: N("notion-list", "notion-list-numbered", B),
+                    let n = _e(I.id, N.block);
+                    t = (0, z.jsxs)(z.Fragment, {
+                        children: [e, (0, z.jsx)(`ol`, {
+                            className: K(`notion-list`, `notion-list-numbered`, V),
                             style: {
-                                listStyleType: It(te + 1)
+                                listStyleType: be(n + 1)
                             },
-                            children: ee
+                            children: L
                         })]
                     })
                 }
-            } else H = f.properties ? n.jsx("li", {
-                children: n.jsx(Y, {
-                    value: f.properties.title,
-                    block: f
+            } else t = I.properties ? (0, z.jsx)(`li`, {
+                children: (0, z.jsx)(X, {
+                    value: I.properties.title,
+                    block: I
                 })
             }) : null;
-            return G ? O(H, Q) : H
+            return n ? e(t, r) : t
         }
-        case "embed":
-            return n.jsx(q.Embed, {
-                blockId: B,
-                block: f
+        case `embed`:
+            return (0, z.jsx)(M.Embed, {
+                blockId: V,
+                block: I
             });
-        case "replit":
-        case "tweet":
-        case "maps":
-        case "pdf":
-        case "figma":
-        case "typeform":
-        case "codepen":
-        case "excalidraw":
-        case "image":
-        case "gist":
-        case "video":
-            return n.jsx(mt, {
-                blockId: B,
-                block: f
+        case `replit`:
+        case `tweet`:
+        case `maps`:
+        case `pdf`:
+        case `figma`:
+        case `typeform`:
+        case `codepen`:
+        case `excalidraw`:
+        case `image`:
+        case `gist`:
+        case `video`:
+            return (0, z.jsx)(gn, {
+                blockId: V,
+                block: I
             });
-        case "drive":
-            return !((v = f.format) == null ? void 0 : v.drive_properties) && (m = f.format) != null && m.display_source ? n.jsx(mt, {
-                blockId: B,
-                block: f
-            }) : n.jsx(Ur, {
-                block: f,
-                className: B
+        case `drive`:
+            return !((u = I.format) != null && u.drive_properties) && (p = I.format) != null && p.display_source ? (0, z.jsx)(gn, {
+                blockId: V,
+                block: I
+            }) : (0, z.jsx)(Yn, {
+                block: I,
+                className: V
             });
-        case "audio":
-            return n.jsx(Hr, {
-                block: f,
-                className: B
+        case `audio`:
+            return (0, z.jsx)(Kn, {
+                block: I,
+                className: V
             });
-        case "file":
-            return n.jsx(Br, {
-                block: f,
-                className: B
+        case `file`:
+            return (0, z.jsx)(Jn, {
+                block: I,
+                className: V
             });
-        case "equation":
-            return n.jsx(q.Equation, {
-                block: f,
+        case `equation`:
+            return (0, z.jsx)(M.Equation, {
+                block: I,
                 inline: !1,
-                className: B
+                className: V
             });
-        case "code":
-            return n.jsx(q.Code, {
-                block: f
+        case `code`:
+            return (0, z.jsx)(M.Code, {
+                block: I
             });
-        case "column_list":
-            return n.jsx("div", {
-                className: N("notion-row", B),
-                children: ee
+        case `column_list`:
+            return (0, z.jsx)(`div`, {
+                className: K(`notion-row`, V),
+                children: L
             });
-        case "column": {
-            const O = "min(32px, 4vw)",
-                H = ((b = f.format) == null ? void 0 : b.column_ratio) || .5,
-                G = V(R.block[f.parent_id]),
-                te = {
-                    width: `calc((100% - (${(((_=G==null?void 0:G.content)==null?void 0:_.length)||Math.max(2,Math.ceil(1/H)))-1} * ${O})) * ${H})`
+        case `column`: {
+            let e = ((m = I.format) == null ? void 0 : m.column_ratio) || .5,
+                t = O(N.block[I.parent_id]),
+                n = {
+                    width: `calc((100% - (${(((h=t==null?void 0:t.content)==null?void 0:h.length)||Math.max(2,Math.ceil(1/e)))-1} * min(32px, 4vw))) * ${e})`
                 };
-            return n.jsxs(n.Fragment, {
-                children: [n.jsx("div", {
-                    className: N("notion-column", B),
-                    style: te,
-                    children: ee
-                }), n.jsx("div", {
-                    className: "notion-spacer"
+            return (0, z.jsxs)(z.Fragment, {
+                children: [(0, z.jsx)(`div`, {
+                    className: K(`notion-column`, V),
+                    style: n,
+                    children: L
+                }), (0, z.jsx)(`div`, {
+                    className: `notion-spacer`
                 })]
             })
         }
-        case "quote": {
-            if (!f.properties) return null;
-            const O = (g = f.format) == null ? void 0 : g.block_color;
-            return n.jsxs("blockquote", {
-                className: N("notion-quote", O && `notion-${O}`, B),
-                children: [n.jsx("div", {
-                    children: n.jsx(Y, {
-                        value: f.properties.title,
-                        block: f
+        case `quote`: {
+            if (!I.properties) return null;
+            let e = (g = I.format) == null ? void 0 : g.block_color;
+            return (0, z.jsxs)(`blockquote`, {
+                className: K(`notion-quote`, e && `notion-${e}`, V),
+                children: [(0, z.jsx)(`div`, {
+                    children: (0, z.jsx)(X, {
+                        value: I.properties.title,
+                        block: I
                     })
-                }), ee]
+                }), L]
             })
         }
-        case "collection_view":
-            return n.jsx(q.Collection, {
-                block: f,
-                className: B,
-                ctx: Z
+        case `collection_view`:
+            return (0, z.jsx)(M.Collection, {
+                block: I,
+                className: V,
+                ctx: xe
             });
-        case "callout":
-            return q.Callout ? n.jsx(q.Callout, {
-                block: f,
-                className: B
-            }) : n.jsxs("div", {
-                className: N("notion-callout", ((w = f.format) == null ? void 0 : w.block_color) && `notion-${(x=f.format)==null?void 0:x.block_color}_co`, B),
-                children: [n.jsx(He, {
-                    block: f,
+        case `callout`:
+            return M.Callout ? (0, z.jsx)(M.Callout, {
+                block: I,
+                className: V
+            }) : (0, z.jsxs)(`div`, {
+                className: K(`notion-callout`, ((_ = I.format) == null ? void 0 : _.block_color) && `notion-${(v=I.format)==null?void 0:v.block_color}_co`, V),
+                children: [(0, z.jsx)(pn, {
+                    block: I,
                     hideDefaultIcon: !0
-                }), n.jsxs("div", {
-                    className: "notion-callout-text",
-                    children: [n.jsx(Y, {
-                        value: (S = f.properties) == null ? void 0 : S.title,
-                        block: f
-                    }), ee]
+                }), (0, z.jsxs)(`div`, {
+                    className: `notion-callout-text`,
+                    children: [(0, z.jsx)(X, {
+                        value: (y = I.properties) == null ? void 0 : y.title,
+                        block: I
+                    }), L]
                 })]
             });
-        case "bookmark": {
-            if (!f.properties) return null;
-            const O = f.properties.link;
-            if (!O || !((j = O[0]) != null && j[0])) return null;
-            let H = ve(f.properties.title);
-            if (H || (H = ve(O)), H && H.startsWith("http")) try {
-                H = new URL(H).hostname
+        case `bookmark`: {
+            if (!I.properties) return null;
+            let e = I.properties.link;
+            if (!e || !((b = e[0]) != null && b[0])) return null;
+            let t = k(I.properties.title);
+            if (t || (t = k(e)), t && t.startsWith(`http`)) try {
+                t = new URL(t).hostname
             } catch {}
-            return n.jsx("div", {
-                className: "notion-row",
-                children: n.jsxs(q.Link, {
-                    target: "_blank",
-                    rel: "noopener noreferrer",
-                    className: N("notion-bookmark", ((E = f.format) == null ? void 0 : E.block_color) && `notion-${f.format.block_color}`, B),
-                    href: O[0][0],
-                    children: [n.jsxs("div", {
-                        children: [H && n.jsx("div", {
-                            className: "notion-bookmark-title",
-                            children: n.jsx(Y, {
+            return (0, z.jsx)(`div`, {
+                className: `notion-row`,
+                children: (0, z.jsxs)(M.Link, {
+                    target: `_blank`,
+                    rel: `noopener noreferrer`,
+                    className: K(`notion-bookmark`, ((x = I.format) == null ? void 0 : x.block_color) && `notion-${I.format.block_color}`, V),
+                    href: e[0][0],
+                    children: [(0, z.jsxs)(`div`, {
+                        children: [t && (0, z.jsx)(`div`, {
+                            className: `notion-bookmark-title`,
+                            children: (0, z.jsx)(X, {
                                 value: [
-                                    [H]
+                                    [t]
                                 ],
-                                block: f
+                                block: I
                             })
-                        }), ((h = f.properties) == null ? void 0 : h.description) && n.jsx("div", {
-                            className: "notion-bookmark-description",
-                            children: n.jsx(Y, {
-                                value: (C = f.properties) == null ? void 0 : C.description,
-                                block: f
+                        }), ((S = I.properties) == null ? void 0 : S.description) && (0, z.jsx)(`div`, {
+                            className: `notion-bookmark-description`,
+                            children: (0, z.jsx)(X, {
+                                value: (C = I.properties) == null ? void 0 : C.description,
+                                block: I
                             })
-                        }), n.jsxs("div", {
-                            className: "notion-bookmark-link",
-                            children: [((y = f.format) == null ? void 0 : y.bookmark_icon) && n.jsx("div", {
-                                className: "notion-bookmark-link-icon",
-                                children: n.jsx(Se, {
-                                    src: ae((d = f.format) == null ? void 0 : d.bookmark_icon, f),
-                                    alt: H
+                        }), (0, z.jsxs)(`div`, {
+                            className: `notion-bookmark-link`,
+                            children: [((w = I.format) == null ? void 0 : w.bookmark_icon) && (0, z.jsx)(`div`, {
+                                className: `notion-bookmark-link-icon`,
+                                children: (0, z.jsx)(J, {
+                                    src: Te((T = I.format) == null ? void 0 : T.bookmark_icon, I),
+                                    alt: t
                                 })
-                            }), n.jsx("div", {
-                                className: "notion-bookmark-link-text",
-                                children: n.jsx(Y, {
-                                    value: O,
-                                    block: f
+                            }), (0, z.jsx)(`div`, {
+                                className: `notion-bookmark-link-text`,
+                                children: (0, z.jsx)(X, {
+                                    value: e,
+                                    block: I
                                 })
                             })]
                         })]
-                    }), ((z = f.format) == null ? void 0 : z.bookmark_cover) && n.jsx("div", {
-                        className: "notion-bookmark-image",
-                        children: n.jsx(Se, {
-                            src: ae((L = f.format) == null ? void 0 : L.bookmark_cover, f),
-                            alt: ve(($ = f.properties) == null ? void 0 : $.title),
+                    }), ((E = I.format) == null ? void 0 : E.bookmark_cover) && (0, z.jsx)(`div`, {
+                        className: `notion-bookmark-image`,
+                        children: (0, z.jsx)(J, {
+                            src: Te((D = I.format) == null ? void 0 : D.bookmark_cover, I),
+                            alt: k((ee = I.properties) == null ? void 0 : ee.title),
                             style: {
-                                objectFit: "cover"
+                                objectFit: `cover`
                             }
                         })
                     })]
                 })
             })
         }
-        case "toggle":
-            return n.jsxs("details", {
-                className: N("notion-toggle", B),
-                children: [n.jsx("summary", {
-                    children: n.jsx(Y, {
-                        value: (k = f.properties) == null ? void 0 : k.title,
-                        block: f
+        case `toggle`:
+            return (0, z.jsxs)(`details`, {
+                className: K(`notion-toggle`, V),
+                children: [(0, z.jsx)(`summary`, {
+                    children: (0, z.jsx)(X, {
+                        value: (te = I.properties) == null ? void 0 : te.title,
+                        block: I
                     })
-                }), n.jsx("div", {
-                    children: ee
+                }), (0, z.jsx)(`div`, {
+                    children: L
                 })]
             });
-        case "button": {
-            const O = q.Button || Rr;
-            return n.jsx(O, {
-                blockId: B,
-                block: f,
-                className: B
+        case `button`: {
+            let e = M.Button || Wn;
+            return (0, z.jsx)(e, {
+                blockId: V,
+                block: I,
+                className: V
             })
         }
-        case "table_of_contents": {
-            const O = Ye(f, R);
-            if (!O) return null;
-            const H = it(O, R),
-                G = (I = f.format) == null ? void 0 : I.block_color;
-            return n.jsx("div", {
-                className: N("notion-table-of-contents", G && `notion-${G}`, B),
-                children: H.map(Q => n.jsx("a", {
-                    href: `#${Ke(Q.id)}`,
-                    className: "notion-table-of-contents-item",
-                    children: n.jsx("span", {
-                        className: "notion-table-of-contents-item-body",
+        case `table_of_contents`: {
+            let e = he(I, N);
+            if (!e) return null;
+            let t = ce(e, N),
+                n = (ne = I.format) == null ? void 0 : ne.block_color;
+            return (0, z.jsx)(`div`, {
+                className: K(`notion-table-of-contents`, n && `notion-${n}`, V),
+                children: t.map(e => (0, z.jsx)(`a`, {
+                    href: `#${ge(e.id)}`,
+                    className: `notion-table-of-contents-item`,
+                    children: (0, z.jsx)(`span`, {
+                        className: `notion-table-of-contents-item-body`,
                         style: {
-                            display: "inline-block",
-                            marginLeft: Q.indentLevel * 24
+                            display: `inline-block`,
+                            marginLeft: e.indentLevel * 24
                         },
-                        children: Q.text
+                        children: e.text
                     })
-                }, Q.id))
+                }, e.id))
             })
         }
-        case "to_do": {
-            const O = ((P = (T = (A = f.properties) == null ? void 0 : A.checked) == null ? void 0 : T[0]) == null ? void 0 : P[0]) === "Yes";
-            return n.jsxs("div", {
-                className: N("notion-to-do", B),
-                children: [n.jsxs("div", {
-                    className: "notion-to-do-item",
-                    children: [n.jsx(q.Checkbox, {
-                        blockId: B,
-                        isChecked: O
-                    }), n.jsx("div", {
-                        className: N("notion-to-do-body", O && "notion-to-do-checked"),
-                        children: n.jsx(Y, {
-                            value: (U = f.properties) == null ? void 0 : U.title,
-                            block: f
+        case `to_do`: {
+            let e = ((ae = (ie = (re = I.properties) == null ? void 0 : re.checked) == null ? void 0 : ie[0]) == null ? void 0 : ae[0]) === `Yes`;
+            return (0, z.jsxs)(`div`, {
+                className: K(`notion-to-do`, V),
+                children: [(0, z.jsxs)(`div`, {
+                    className: `notion-to-do-item`,
+                    children: [(0, z.jsx)(M.Checkbox, {
+                        blockId: V,
+                        isChecked: e
+                    }), (0, z.jsx)(`div`, {
+                        className: K(`notion-to-do-body`, e && `notion-to-do-checked`),
+                        children: (0, z.jsx)(X, {
+                            value: (A = I.properties) == null ? void 0 : A.title,
+                            block: I
                         })
                     })]
-                }), n.jsx("div", {
-                    className: "notion-to-do-children",
-                    children: ee
+                }), (0, z.jsx)(`div`, {
+                    className: `notion-to-do-children`,
+                    children: L
                 })]
             })
         }
-        case "transclusion_container":
-            return n.jsx("div", {
-                className: N("notion-sync-block", B),
-                children: ee
+        case `transclusion_container`:
+            return (0, z.jsx)(`div`, {
+                className: K(`notion-sync-block`, V),
+                children: L
             });
-        case "transclusion_reference":
-            return n.jsx(Wr, {
+        case `transclusion_reference`:
+            return (0, z.jsx)(Qn, {
                 ...e,
-                level: tt + 1
+                level: je + 1
             });
-        case "alias": {
-            const O = (D = (W = f == null ? void 0 : f.format) == null ? void 0 : W.alias_pointer) == null ? void 0 : D.id,
-                H = V(R.block[O]);
-            return H ? n.jsx(q.PageLink, {
-                className: N("notion-page-link", O),
-                href: ie(O),
-                children: n.jsx(Ae, {
-                    block: H
+        case `alias`: {
+            let e = (j = (se = I == null ? void 0 : I.format) == null ? void 0 : se.alias_pointer) == null ? void 0 : j.id,
+                t = O(N.block[e]);
+            return t ? (0, z.jsx)(M.PageLink, {
+                className: K(`notion-page-link`, e),
+                href: we(e),
+                children: (0, z.jsx)(Y, {
+                    block: t
                 })
-            }) : (console.log('"alias" missing block', O), null)
+            }) : (console.log(`"alias" missing block`, e), null)
         }
-        case "table":
-            return n.jsx("table", {
-                className: N("notion-simple-table", B),
-                children: n.jsx("tbody", {
-                    children: ee
+        case `table`:
+            return (0, z.jsx)(`table`, {
+                className: K(`notion-simple-table`, V),
+                children: (0, z.jsx)(`tbody`, {
+                    children: L
                 })
             });
-        case "table_row": {
-            const O = V(R.block[f.parent_id]);
-            if (!O) return null;
-            const H = (K = O.format) == null ? void 0 : K.table_block_column_order,
-                G = (F = O.format) == null ? void 0 : F.table_block_column_format,
-                Q = (ge = f.format) == null ? void 0 : ge.block_color,
-                re = ((me = O.format) == null ? void 0 : me.table_block_column_header) === !0,
-                te = ((pe = O.format) == null ? void 0 : pe.table_block_row_header) === !0,
-                ze = re && ((oe = O.content) == null ? void 0 : oe[0]) === f.id;
-            return !O || !H ? null : n.jsx("tr", {
-                className: N("notion-simple-table-row", Q && `notion-${Q}`, ze && "notion-simple-table-header-row", B),
-                children: H.map((ue, Ce) => {
-                    var he, xe, le;
-                    const be = (he = G == null ? void 0 : G[ue]) == null ? void 0 : he.color,
-                        Le = te && Ce === 0;
-                    return n.jsx("td", {
-                        className: N(be ? `notion-${be}` : "", Le && "notion-simple-table-header-cell"),
+        case `table_row`: {
+            let e = O(N.block[I.parent_id]);
+            if (!e) return null;
+            let t = (le = e.format) == null ? void 0 : le.table_block_column_order,
+                n = (ue = e.format) == null ? void 0 : ue.table_block_column_format,
+                r = (de = I.format) == null ? void 0 : de.block_color,
+                i = ((fe = e.format) == null ? void 0 : fe.table_block_column_header) === !0,
+                a = ((pe = e.format) == null ? void 0 : pe.table_block_row_header) === !0,
+                o = i && ((ve = e.content) == null ? void 0 : ve[0]) === I.id;
+            return !e || !t ? null : (0, z.jsx)(`tr`, {
+                className: K(`notion-simple-table-row`, r && `notion-${r}`, o && `notion-simple-table-header-row`, V),
+                children: t.map((e, t) => {
+                    var r, i, o;
+                    let s = (r = n == null ? void 0 : n[e]) == null ? void 0 : r.color,
+                        c = a && t === 0;
+                    return (0, z.jsx)(`td`, {
+                        className: K(s ? `notion-${s}` : ``, c && `notion-simple-table-header-cell`),
                         style: {
-                            width: ((xe = G == null ? void 0 : G[ue]) == null ? void 0 : xe.width) || 120
+                            width: ((i = n == null ? void 0 : n[e]) == null ? void 0 : i.width) || 120
                         },
-                        children: n.jsx("div", {
-                            className: "notion-simple-table-cell",
-                            children: n.jsx(Y, {
-                                value: ((le = f.properties) == null ? void 0 : le[ue]) || [
-                                    ["ㅤ"]
+                        children: (0, z.jsx)(`div`, {
+                            className: `notion-simple-table-cell`,
+                            children: (0, z.jsx)(X, {
+                                value: ((o = I.properties) == null ? void 0 : o[e]) || [
+                                    [`ㅤ`]
                                 ],
-                                block: f
+                                block: I
                             })
                         })
-                    }, ue)
+                    }, e)
                 })
             })
         }
-        case "external_object_instance":
-            return n.jsx(sn, {
-                block: f,
-                className: B
+        case `external_object_instance`:
+            return (0, z.jsx)(an, {
+                block: I,
+                className: V
             });
         default:
-            return console.log("Unsupported block type " + f.type, JSON.stringify(f, null, 2)), n.jsx("div", {})
+            return console.log(`Unsupported block type ` + I.type, JSON.stringify(I, null, 2)), (0, z.jsx)(`div`, {})
     }
 }
 
-function Kr({
+function rr({
     components: e,
     recordMap: t,
-    mapPageUrl: o,
-    mapImageUrl: i,
-    searchNotion: r,
+    mapPageUrl: n,
+    mapImageUrl: r,
+    searchNotion: i,
     isShowingSearch: a,
-    onHideSearch: s,
-    fullPage: l,
-    rootPageId: u,
-    rootDomain: c,
-    darkMode: p,
-    previewImages: v,
-    forceCustomImages: m,
-    showCollectionViewDropdown: b,
-    linkTableTitleProperties: _,
+    onHideSearch: o,
+    fullPage: s,
+    rootPageId: c,
+    rootDomain: l,
+    darkMode: u,
+    previewImages: f,
+    forceCustomImages: p,
+    showCollectionViewDropdown: m,
+    linkTableTitleProperties: h,
     isLinkCollectionToUrlProperty: g,
-    isImageZoomable: w = !0,
-    showTableOfContents: x,
-    minTableOfContentsItems: S,
-    defaultPageIcon: j,
-    defaultPageCover: E,
-    defaultPageCoverPosition: h,
+    isImageZoomable: _ = !0,
+    showTableOfContents: v,
+    minTableOfContentsItems: y,
+    defaultPageIcon: b,
+    defaultPageCover: x,
+    defaultPageCoverPosition: S,
     ...C
 }) {
-    const y = X.useMemo(() => !!globalThis.window && Eo({
-        background: "rgba(0, 0, 0, 0.8)",
+    let w = d.useMemo(() => !!globalThis.window && _t({
+        background: `rgba(0, 0, 0, 0.8)`,
         minZoomScale: 2,
-        margin: Zr()
+        margin: ar()
     }), []);
-    return n.jsx(dn, {
+    return (0, z.jsx)(Hn, {
         components: e,
         recordMap: t,
-        mapPageUrl: o,
-        mapImageUrl: i,
-        searchNotion: r,
+        mapPageUrl: n,
+        mapImageUrl: r,
+        searchNotion: i,
         isShowingSearch: a,
-        onHideSearch: s,
-        fullPage: l,
-        rootPageId: u,
-        rootDomain: c,
-        darkMode: p,
-        previewImages: v,
-        forceCustomImages: m,
-        showCollectionViewDropdown: b,
-        linkTableTitleProperties: _,
+        onHideSearch: o,
+        fullPage: s,
+        rootPageId: c,
+        rootDomain: l,
+        darkMode: u,
+        previewImages: f,
+        forceCustomImages: p,
+        showCollectionViewDropdown: m,
+        linkTableTitleProperties: h,
         isLinkCollectionToUrlProperty: g,
-        showTableOfContents: x,
-        minTableOfContentsItems: S,
-        defaultPageIcon: j,
-        defaultPageCover: E,
-        defaultPageCoverPosition: h,
-        zoom: w ? y : null,
-        children: n.jsx(_t, {
+        showTableOfContents: v,
+        minTableOfContentsItems: y,
+        defaultPageIcon: b,
+        defaultPageCover: x,
+        defaultPageCoverPosition: S,
+        zoom: _ ? w : null,
+        children: (0, z.jsx)(ir, {
             ...C
         })
     })
 }
 
-function _t({
+function ir({
     level: e = 0,
     blockId: t,
-    ...o
+    ...n
 }) {
-    var i;
-    const {
-        recordMap: r
-    } = ne(), a = t || Object.keys(r.block)[0], s = V(r.block[a]);
-    return s ? n.jsx(qr, {
+    var r;
+    let {
+        recordMap: i
+    } = $(), a = t || Object.keys(i.block)[0], o = O(i.block[a]);
+    return o ? (0, z.jsx)(nr, {
         level: e,
-        block: s,
-        ...o,
-        children: (i = s == null ? void 0 : s.content) == null ? void 0 : i.map(l => n.jsx(_t, {
-            blockId: l,
+        block: o,
+        ...n,
+        children: (r = o == null ? void 0 : o.content) == null ? void 0 : r.map(t => (0, z.jsx)(ir, {
+            blockId: t,
             level: e + 1,
-            ...o
-        }, l))
-    }, a) : (console.warn("missing block", t), null)
+            ...n
+        }, t))
+    }, a) : (console.warn(`missing block`, t), null)
 }
 
-function Zr() {
-    const e = window.innerWidth;
+function ar() {
+    let e = window.innerWidth;
     return e < 500 ? 8 : e < 800 ? 20 : e < 1280 ? 30 : e < 1600 ? 40 : e < 1920 ? 48 : 72
 }
-const Gr = e => {
-        const [t, o] = X.useState();
-        X.useEffect(() => {
-            e.content || e.id && yn({
+var or = e => {
+        let [t, n] = d.useState();
+        d.useEffect(() => {
+            e.content || e.id && i({
                 url: `/api/content/${e.id}`,
-                cacheKey: "NOTION_CONTENT",
-                success: a => o(a)
+                cacheKey: `NOTION_CONTENT`,
+                success: e => n(e)
             })
         }, [e.id, e.content]);
-        const i = e.content || t,
-            r = () => i ? n.jsx(Kr, {
-                recordMap: i,
-                fullPage: !1,
-                darkMode: !1
-            }) : e.hideSkeleton ? null : n.jsx(bn, {
-                active: !0,
-                title: !1,
-                paragraph: {
-                    rows: 9
-                }
-            });
-        return n.jsxs("div", {
-            className: "maxWidth",
-            children: [n.jsx("base", {
-                target: "_blank"
-            }), n.jsx(Qr, {
-                children: r()
+        let r = e.content || t;
+        return (0, z.jsxs)(`div`, {
+            className: `maxWidth`,
+            children: [(0, z.jsx)(`base`, {
+                target: `_blank`
+            }), (0, z.jsx)(sr, {
+                children: r ? (0, z.jsx)(rr, {
+                    recordMap: r,
+                    fullPage: !1,
+                    darkMode: !1
+                }) : e.hideSkeleton ? null : (0, z.jsx)(s, {
+                    active: !0,
+                    title: !1,
+                    paragraph: {
+                        rows: 9
+                    }
+                })
             })]
         })
     },
-    Qr = xn.div.attrs({
-        className: "maxWidth"
+    sr = l.div.attrs({
+        className: `maxWidth`
     })`
   .notion {
     font-family: inherit !important;
@@ -4419,6 +4419,6 @@ const Gr = e => {
   }
 `;
 export {
-    Gr as
+    or as
     default
 };

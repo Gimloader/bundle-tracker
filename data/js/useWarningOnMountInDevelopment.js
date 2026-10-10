@@ -1,10 +1,10 @@
 import {
-    s as n
+    a as e
 } from "./_index.js";
 
-function s(e) {
-    n(function() {})
+function t(t) {
+    e(function() {})
 }
 export {
-    s as u
+    t
 };

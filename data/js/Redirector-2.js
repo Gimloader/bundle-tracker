@@ -1,18 +1,24 @@
 import {
-    r as i,
-    V as r
-} from "./_index.js";
-const s = () => (i.useEffect(() => {
-    if (window.location.href.includes("/group-subscription/complete")) {
-        let t = r("subscriptionId");
-        if (!t) {
-            const o = window.location.pathname.split("/");
-            t = o[o.length - 1]
+    o as e
+} from "./rolldown-runtime.js";
+import {
+    m as t
+} from "./utils.js";
+import {
+    t as n
+} from "./react-1.js";
+var r = e(n()),
+    i = () => (r.useEffect(() => {
+        if (window.location.href.includes(`/group-subscription/complete`)) {
+            let e = t(`subscriptionId`);
+            if (!e) {
+                let t = window.location.pathname.split(`/`);
+                e = t[t.length - 1]
+            }
+            window.location.href = `/group-subscription/complete?subscriptionId=${e}`
         }
-        window.location.href = `/group-subscription/complete?subscriptionId=${t}`
-    }
-}, []), null);
+    }, []), null);
 export {
-    s as
+    i as
     default
 };

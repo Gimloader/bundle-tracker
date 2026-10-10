@@ -1,36 +1,40 @@
 import {
-    a as c
-} from "./FixSpinePlugin.js";
+    t as e
+} from "./FetchScene.js";
 import {
-    w as s,
-    P as r,
-    x as a
-} from "./App-41.js";
-const l = e => {
-    const t = c().worldManager.devices.getDeviceById(e.id);
-    if (!t) return;
-    const o = s(e.id);
+    r as t
+} from "./isModeType.js";
+import {
+    t as n
+} from "./PlaceDevice.js";
+import {
+    u as r
+} from "./App-42.js";
+var i = i => {
+    let a = e().worldManager.devices.getDeviceById(i.id);
+    if (!a) return;
+    let o = t(i.id);
     if (!o) return;
-    const n = e.hooks || o.hooks;
-    r({
-        ...e,
-        hooks: n,
+    let s = i.hooks || o.hooks;
+    n({
+        ...i,
+        hooks: s,
         placeInstantly: !0,
-        onPlace: i => {
-            i && a({
-                id: t.id,
-                deviceTypeId: t.deviceOption.id,
-                options: JSON.stringify(e.options),
-                x: e.x,
-                y: e.y,
-                depth: i.layers.getOptionsDepth(),
-                layerId: i.layers.getOptionsLayer(),
-                name: e.name,
-                hooks: n
+        onPlace: e => {
+            e && r({
+                id: a.id,
+                deviceTypeId: a.deviceOption.id,
+                options: JSON.stringify(i.options),
+                x: i.x,
+                y: i.y,
+                depth: e.layers.getOptionsDepth(),
+                layerId: e.layers.getOptionsLayer(),
+                name: i.name,
+                hooks: s
             })
         }
     })
 };
 export {
-    l as R
+    i as t
 };

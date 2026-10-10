@@ -1,0 +1,111 @@
+import {
+    o as e
+} from "./rolldown-runtime.js";
+import {
+    t
+} from "./react-1.js";
+import {
+    Bt as n,
+    E as r,
+    Ut as i
+} from "./Compact.js";
+import {
+    i as a
+} from "./color.js";
+import {
+    E as o
+} from "./ContextIsolator.js";
+import {
+    t as s
+} from "./PurePanel.js";
+import {
+    t as c
+} from "./select.js";
+var l = e(t()),
+    u = e(i()),
+    {
+        Option: d
+    } = c;
+
+function f(e) {
+    return (e == null ? void 0 : e.type) && (e.type.isSelectOption || e.type.isSelectOptGroup)
+}
+var p = l.forwardRef((e, t) => {
+        var i, s;
+        let {
+            prefixCls: p,
+            className: m,
+            popupClassName: h,
+            dropdownClassName: g,
+            children: _,
+            dataSource: v,
+            dropdownStyle: y,
+            dropdownRender: b,
+            popupRender: x,
+            onDropdownVisibleChange: S,
+            onOpenChange: C,
+            styles: w,
+            classNames: T
+        } = e, E = n(_), D = ((i = w == null ? void 0 : w.popup) == null ? void 0 : i.root) || y, O = ((s = T == null ? void 0 : T.popup) == null ? void 0 : s.root) || h || g, k = x || b, A = C || S, j;
+        E.length === 1 && l.isValidElement(E[0]) && !f(E[0]) && ([j] = E);
+        let M = j ? () => j : void 0,
+            N;
+        N = E.length && f(E[0]) ? _ : v ? v.map(e => {
+            if (l.isValidElement(e)) return e;
+            switch (typeof e) {
+                case `string`:
+                    return l.createElement(d, {
+                        key: e,
+                        value: e
+                    }, e);
+                case `object`: {
+                    let {
+                        value: t
+                    } = e;
+                    return l.createElement(d, {
+                        key: t,
+                        value: t
+                    }, e.text)
+                }
+                default:
+                    return
+            }
+        }) : [];
+        let {
+            getPrefixCls: P
+        } = l.useContext(r), F = P(`select`, p), [I] = o(`SelectLike`, D == null ? void 0 : D.zIndex);
+        return l.createElement(c, Object.assign({
+            ref: t,
+            suffixIcon: null
+        }, a(e, [`dataSource`, `dropdownClassName`, `popupClassName`]), {
+            prefixCls: F,
+            classNames: {
+                popup: {
+                    root: O
+                },
+                root: T == null ? void 0 : T.root
+            },
+            styles: {
+                popup: {
+                    root: Object.assign(Object.assign({}, D), {
+                        zIndex: I
+                    })
+                },
+                root: w == null ? void 0 : w.root
+            },
+            className: (0, u.default)(`${F}-auto-complete`, m),
+            mode: c.SECRET_COMBOBOX_MODE_DO_NOT_USE,
+            popupRender: k,
+            onOpenChange: A,
+            getInputElement: M
+        }), N)
+    }),
+    {
+        Option: m
+    } = c,
+    h = s(p, `dropdownAlign`, e => a(e, [`visible`])),
+    g = p;
+g.Option = m, g._InternalPanelDoNotUseOrYouWillBeFired = h;
+export {
+    g as t
+};

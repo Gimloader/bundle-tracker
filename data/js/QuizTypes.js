@@ -1,244 +1,256 @@
-var a = (e => (e.multipleChoice = "mc", e.textInput = "text", e))(a || {}),
-    o = (e => (e.public = "public", e.private = "private", e))(o || {}),
-    n = (e => (e.setup = "setup", e.join = "join", e.teams = "teams", e.gameplay = "gameplay", e.results = "results", e))(n || {}),
-    i = (e => (e.live = "live", e))(i || {}),
-    r = (e => (e.time = "time", e.race = "race", e.allIn = "allIn", e))(r || {});
-const t = {
-        White: "#ffffff",
-        Black: "#000000"
+var e = function(e) {
+        return e.multipleChoice = `mc`, e.textInput = `text`, e
+    }({}),
+    t = function(e) {
+        return e.public = `public`, e.private = `private`, e
+    }({}),
+    n = function(e) {
+        return e.setup = `setup`, e.join = `join`, e.teams = `teams`, e.gameplay = `gameplay`, e.results = `results`, e
+    }({}),
+    r = function(e) {
+        return e.live = `live`, e
+    }({}),
+    i = function(e) {
+        return e.time = `time`, e.race = `race`, e.allIn = `allIn`, e
+    }({}),
+    a = {
+        White: `#ffffff`,
+        Black: `#000000`
     },
-    s = [{
+    o = [{
         cost: 0,
-        name: "Default",
-        description: "Works fine, that's all",
+        name: `Default`,
+        description: `Works fine, that's all`,
         question: {
-            background: "#303f9f",
-            text: t.White
+            background: `#303f9f`,
+            text: a.White
         },
         palette: [{
-            background: "#771322",
-            text: t.White
+            background: `#771322`,
+            text: a.White
         }, {
-            background: "#A85C15",
-            text: t.White
+            background: `#A85C15`,
+            text: a.White
         }, {
-            background: "#0D6B33",
-            text: t.White
+            background: `#0D6B33`,
+            text: a.White
         }, {
-            background: "#076296",
-            text: t.White
+            background: `#076296`,
+            text: a.White
         }],
         owned: !0,
         isActive: !0
     }, {
         cost: 5,
-        name: "Thanksgiving",
-        description: "The perfect theme to show your thanks",
+        name: `Thanksgiving`,
+        description: `The perfect theme to show your thanks`,
         question: {
-            background: "#6C2F00",
-            text: t.White
+            background: `#6C2F00`,
+            text: a.White
         },
         palette: [{
-            background: "#9E682A",
-            text: t.White
+            background: `#9E682A`,
+            text: a.White
         }, {
-            background: "#B54730",
-            text: t.White
+            background: `#B54730`,
+            text: a.White
         }, {
-            background: "#8A9748",
-            text: t.White
+            background: `#8A9748`,
+            text: a.White
         }, {
-            background: "#F1B930",
-            text: t.White
+            background: `#F1B930`,
+            text: a.White
         }],
         owned: !1,
         isActive: !1
     }, {
         cost: 10,
-        name: "Night",
-        description: "A little easier on the eyes",
+        name: `Night`,
+        description: `A little easier on the eyes`,
         question: {
-            background: "#000a12",
-            text: t.White
+            background: `#000a12`,
+            text: a.White
         },
         palette: [{
-            background: "#263238",
-            text: t.White
+            background: `#263238`,
+            text: a.White
         }, {
-            background: "#37474f",
-            text: t.White
+            background: `#37474f`,
+            text: a.White
         }, {
-            background: "#455a64",
-            text: t.White
+            background: `#455a64`,
+            text: a.White
         }, {
-            background: "#546e7a",
-            text: t.White
+            background: `#546e7a`,
+            text: a.White
         }],
         owned: !1,
         isActive: !1
     }, {
         cost: 5e5,
-        name: "Thanos",
-        description: "Perfectly balanced, as all things should be",
+        name: `Thanos`,
+        description: `Perfectly balanced, as all things should be`,
         question: {
-            background: "#0D0019",
-            text: t.White
+            background: `#0D0019`,
+            text: a.White
         },
         palette: [{
-            background: "#220044",
-            text: t.White
+            background: `#220044`,
+            text: a.White
         }, {
-            background: "#330066",
-            text: t.White
+            background: `#330066`,
+            text: a.White
         }, {
-            background: "#3E007C",
-            text: t.White
+            background: `#3E007C`,
+            text: a.White
         }, {
-            background: "#4F1787",
-            text: t.White
+            background: `#4F1787`,
+            text: a.White
         }],
         owned: !1,
         isActive: !1
     }, {
         cost: 2e3,
-        name: "Ocean",
-        description: "Under the sea...",
+        name: `Ocean`,
+        description: `Under the sea...`,
         question: {
-            background: "#000063",
-            text: t.White
+            background: `#000063`,
+            text: a.White
         },
         palette: [{
-            background: "#283593",
-            text: t.White
+            background: `#283593`,
+            text: a.White
         }, {
-            background: "#076296",
-            text: t.White
+            background: `#076296`,
+            text: a.White
         }, {
-            background: "#0277bd",
-            text: t.White
+            background: `#0277bd`,
+            text: a.White
         }, {
-            background: "#1565c0",
-            text: t.White
+            background: `#1565c0`,
+            text: a.White
         }],
         owned: !1,
         isActive: !1
     }, {
         cost: 1e5,
-        name: "Forest",
-        description: "A walk through the woods",
+        name: `Forest`,
+        description: `A walk through the woods`,
         question: {
-            background: "#4c3d33",
-            text: t.White
+            background: `#4c3d33`,
+            text: a.White
         },
         palette: [{
-            background: "#385645",
-            text: t.White
+            background: `#385645`,
+            text: a.White
         }, {
-            background: "#425C49",
-            text: t.White
+            background: `#425C49`,
+            text: a.White
         }, {
-            background: "#415641",
-            text: t.White
+            background: `#415641`,
+            text: a.White
         }, {
-            background: "#4C6349",
-            text: t.White
+            background: `#4C6349`,
+            text: a.White
         }],
         owned: !1,
         isActive: !1
     }, {
         cost: 1250,
-        name: "Sunset",
-        description: "Take a breather",
+        name: `Sunset`,
+        description: `Take a breather`,
         question: {
-            background: "#7F7496",
-            text: t.White
+            background: `#7F7496`,
+            text: a.White
         },
         palette: [{
-            background: "#F46F5A",
-            text: t.White
+            background: `#F46F5A`,
+            text: a.White
         }, {
-            background: "#ED712D",
-            text: t.White
+            background: `#ED712D`,
+            text: a.White
         }, {
-            background: "#7A596A",
-            text: t.White
+            background: `#7A596A`,
+            text: a.White
         }, {
-            background: "#E8AB3C",
-            text: t.White
+            background: `#E8AB3C`,
+            text: a.White
         }],
         owned: !1,
         isActive: !1
     }, {
         cost: 750,
-        name: "Pastel",
-        description: "Lighten the mood",
+        name: `Pastel`,
+        description: `Lighten the mood`,
         question: {
-            background: "#FFbfd1",
-            text: "#434343"
+            background: `#FFbfd1`,
+            text: `#434343`
         },
         palette: [{
-            background: "#FFA69E",
-            text: "#5b5b5b"
+            background: `#FFA69E`,
+            text: `#5b5b5b`
         }, {
-            background: "#FCF6BF",
-            text: "#5b5b5b"
+            background: `#FCF6BF`,
+            text: `#5b5b5b`
         }, {
-            background: "#D0F4DE",
-            text: "#5b5b5b"
+            background: `#D0F4DE`,
+            text: `#5b5b5b`
         }, {
-            background: "#93E1D8",
-            text: "#5b5b5b"
+            background: `#93E1D8`,
+            text: `#5b5b5b`
         }],
         owned: !1,
         isActive: !1
     }, {
         cost: 500,
-        name: "Retro",
-        description: "Old school...",
+        name: `Retro`,
+        description: `Old school...`,
         question: {
-            background: "#9C0022",
-            text: t.White
+            background: `#9C0022`,
+            text: a.White
         },
         palette: [{
-            background: "#001D3B",
-            text: t.White
+            background: `#001D3B`,
+            text: a.White
         }, {
-            background: "#FFAE52",
-            text: t.White
+            background: `#FFAE52`,
+            text: a.White
         }, {
-            background: "#FE5963",
-            text: t.White
+            background: `#FE5963`,
+            text: a.White
         }, {
-            background: "#A71C94",
-            text: t.White
+            background: `#A71C94`,
+            text: a.White
         }],
         owned: !1,
         isActive: !1
     }, {
         cost: 1e8,
-        name: "Pure Gold",
-        description: "Now you're just showing off",
+        name: `Pure Gold`,
+        description: `Now you're just showing off`,
         question: {
-            background: t.Black,
-            text: "#FFCD2B"
+            background: a.Black,
+            text: `#FFCD2B`
         },
         palette: [{
-            background: "#FFCD2B",
-            text: t.Black
+            background: `#FFCD2B`,
+            text: a.Black
         }, {
-            background: "#FFC721",
-            text: t.Black
+            background: `#FFC721`,
+            text: a.Black
         }, {
-            background: "#FFD147",
-            text: t.Black
+            background: `#FFD147`,
+            text: a.Black
         }, {
-            background: "#FFCD38",
-            text: t.Black
+            background: `#FFCD38`,
+            text: a.Black
         }],
         owned: !1,
         isActive: !1
-    }];
-var c = (e => (e.original = "original", e.map = "map", e))(c || {});
+    }],
+    s = function(e) {
+        return e.original = `original`, e.map = `map`, e
+    }({});
 export {
-    c as E, i as G, o as P, a as Q, r as a, n as b, s as t
+    t as a, r as i, i as n, e as o, n as r, o as s, s as t
 };

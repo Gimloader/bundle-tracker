@@ -1,17 +1,17 @@
 import {
-    dT as n
-} from "./_index.js";
-const p = (r, t, a) => {
-    const c = [];
-    return r.forEach(o => {
-        const s = n(o, t, a);
-        c.push(s)
+    m as e
+} from "./decorate.js";
+var t = (t, n, r) => {
+    let i = [];
+    return t.forEach(t => {
+        let a = e(t, n, r);
+        i.push(a)
     }), () => {
-        c.forEach(o => {
-            o()
+        i.forEach(e => {
+            e()
         })
     }
 };
 export {
-    p as R
+    t
 };

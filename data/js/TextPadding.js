@@ -1,4 +1,4 @@
-const t = () => 4;
+var e = () => 4;
 export {
-    t as T
+    e as t
 };

@@ -1,23 +1,27 @@
 import {
-    r as t
-} from "./_index.js";
+    o as e
+} from "./rolldown-runtime.js";
 import {
-    u as a,
-    M as u,
-    d as r
+    t
+} from "./react-1.js";
+import {
+    c as n,
+    g as r,
+    y as i
 } from "./motion.js";
+var a = e(t(), 1);
 
-function i(o) {
-    const e = a(() => r(o)),
+function o(e) {
+    let t = r(() => n(e)),
         {
-            isStatic: s
-        } = t.useContext(u);
-    if (s) {
-        const [, n] = t.useState(o);
-        t.useEffect(() => e.on("change", n), [])
+            isStatic: o
+        } = (0, a.useContext)(i);
+    if (o) {
+        let [, n] = (0, a.useState)(e);
+        (0, a.useEffect)(() => t.on(`change`, n), [])
     }
-    return e
+    return t
 }
 export {
-    i as u
+    o as t
 };

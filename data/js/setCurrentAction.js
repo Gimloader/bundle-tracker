@@ -1,0 +1,70 @@
+import {
+    g as e,
+    s as t,
+    t as n,
+    y as r
+} from "./stores-2.js";
+import {
+    t as i
+} from "./FetchScene.js";
+import {
+    n as a
+} from "./isVersion.js";
+import {
+    r as o
+} from "./InPhase.js";
+import {
+    t as s
+} from "./FetchMyId.js";
+import {
+    t as c
+} from "./isModeType.js";
+import {
+    a as l,
+    n as u
+} from "./ExistingDeviceAddingActionUtils.js";
+var d = () => n.me.currentAction === r.adding && n.me.adding.mode === e.device,
+    f = () => {
+        var e;
+        if (!a() || c() || !o() || n.gui.none.screen === t.startScreen) return !1;
+        let r = s();
+        return ((e = n.characters.characters.get(r)) == null || (e = e.permissions) == null ? void 0 : e.adding) || !1
+    },
+    p = () => {
+        var e;
+        if (!a() || c() || !o() || n.gui.none.screen === t.startScreen) return !1;
+        let r = s();
+        return ((e = n.characters.characters.get(r)) == null || (e = e.permissions) == null ? void 0 : e.removing) || !1
+    },
+    m = () => i().actionManager.multiselect,
+    h = t => {
+        if (d()) {
+            if (l()) {
+                if (n.me.editing.device.usingMultiselect) m().selectedDevices.forEach(e => {
+                    e.parts.forceShow(), e.colliders.showDebug(), e.shadows.show(), e.onShow && e.onShow()
+                });
+                else {
+                    let e = i().worldManager.devices.getDeviceById(u());
+                    e && (e.parts.forceShow(), e.colliders.showDebug(), e.shadows.show(), e.onShow && e.onShow())
+                }
+            }
+            n.me.adding.devices.existingDevice.use = !1
+        }
+        if (t === r.adding && n.me.adding.mode === e.device && l()) {
+            let e = i().worldManager.devices.getDeviceById(u());
+            n.me.editing.device.usingMultiselect && i().actionManager.multiselect.selectedDevices.includes(e) ? i().actionManager.multiselect.selectedDevices.forEach(e => {
+                e.parts.forceHide(), e.colliders.hideDebug(), e.shadows.hide(), e.onHide && e.onHide()
+            }) : e && (e.parts.forceHide(), e.colliders.hideDebug(), e.shadows.hide(), e.onHide && e.onHide())
+        }
+        if (t === r.adding && n.me.adding.mode === e.terrain) {
+            if (!f() || !n.me.adding.terrain.currentlySelectedTerrain) return;
+            n.me.currentAction = t
+        } else if (t === r.removing) {
+            if (!p()) return;
+            n.me.currentAction = t
+        }
+        n.me.currentAction = t
+    };
+export {
+    d as a, f as i, m as n, p as r, h as t
+};

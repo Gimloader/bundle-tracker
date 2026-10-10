@@ -1,10 +1,17 @@
 import {
-    d8 as e
-} from "./_index.js";
+    n as e
+} from "./rolldown-runtime.js";
+import {
+    a as t,
+    o as n
+} from "./assertThisInitialized.js";
 
-function p(o, t) {
-    o.prototype = Object.create(t.prototype), o.prototype.constructor = o, e(o, t)
+function r(e, n) {
+    e.prototype = Object.create(n.prototype), e.prototype.constructor = e, t(e, n)
 }
+var i = e((() => {
+    n()
+}));
 export {
-    p as _
+    i as n, r as t
 };

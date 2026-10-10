@@ -1,367 +1,312 @@
 import {
-    aK as C,
-    aQ as H,
-    k as S,
-    L as P
-} from "./App-41.js";
-import {
-    a as T,
-    i as D,
-    d as y,
-    e as E
-} from "./FixSpinePlugin.js";
-import {
-    G as w
+    t as e
 } from "./GetAssetPath.js";
 import {
-    F as B,
-    R as F
+    T as t
+} from "./FixPhaserBootProcess.js";
+import {
+    t as n
+} from "./FetchScene.js";
+import {
+    n as r
+} from "./isVersion.js";
+import {
+    t as i
+} from "./InPhase.js";
+import {
+    t as a
+} from "./Device.js";
+import {
+    t as o
+} from "./FetchPropOptionById.js";
+import {
+    r as s
+} from "./GlobalLocalDepth.js";
+import {
+    Et as c
+} from "./App-42.js";
+import {
+    n as l,
+    t as u
 } from "./FetchOptionSchemaProperty.js";
 import {
-    A as M
+    t as d
 } from "./AddIgnoredStaticBodiesWhenCollisionsEnabled.js";
-import "./_index.js";
-import "./Button.js";
-import "./polished.esm.js";
-import "./inheritsLoose.js";
-import "./mobxreact.esm.js";
-import "./index-21.js";
-import "./QuizTypes.js";
-import "./MapModeType.js";
-import "./TutorialConsts.js";
-import "./ActionButton.js";
-import "./index-5.js";
-import "./playSound.js";
-import "./MapSound.js";
-import "./howler.js";
-import "./index-18.js";
-import "./context.js";
-import "./FontAwesomeIcon.js";
-import "./Centered.js";
-import "./CapitalizeFirstLetter.js";
-import "./index-4.js";
-import "./motion.js";
-import "./index-2.js";
-import "./index-14.js";
-import "./EditOutlined.js";
-import "./styleChecker.js";
-import "./index-3.js";
-import "./CheckOutlined.js";
-import "./CopyOutlined.js";
-import "./SixteenByNineScaler.js";
-import "./index-20.js";
-import "./index-22.js";
-import "./index-1.js";
-import "./progress.js";
-import "./ElementIds.js";
-import "./SeasonTicketName.js";
-import "./useQuery.js";
-import "./___vite-browser-external_commonjs-proxy.js";
-import "./util-1.js";
-import "./util-2.js";
-import "./Shortcut.js";
-import "./Names.js";
-import "./useWillUnmount.js";
-import "./CircularProgress.js";
-import "./clsx.m.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
-import "./index-17.js";
-import "./use-force-update.js";
-import "./GimkitLiveQuestion.js";
-import "./Text.js";
-import "./getCloudinaryUrl.js";
-import "./LazyLatexRenderer.js";
-import "./Tooltip.js";
-import "./use-motion-value.js";
-import "./index-9.js";
-import "./index-23.js";
-import "./useIntervalWhen.js";
-import "./index-10.js";
-import "./move.js";
-import "./react-flip-move.es.js";
-import "./sounds.js";
-import "./App-5.js";
-import "./AnimatedBackground-2.js";
-import "./useDebouncedValue.js";
-import "./CloseCircleOutlined.js";
-import "./MapStyle.js";
-import "./FillRemainingSpace.js";
-import "./index-24.js";
-var A = (p => (p.floor = "Floor", p.beneathProp = "Beneath Prop", p))(A || {}),
-    g = (p => (p.off = "Off", p.on = "On", p.whenHit = "When Hit", p))(g || {});
-const d = (p, a, r, t, i = !1) => {
-        const s = i ? -r : r,
-            e = {
-                x: p * s,
-                y: a * r
+var f = function(e) {
+        return e.floor = `Floor`, e.beneathProp = `Beneath Prop`, e
+    }({}),
+    p = function(e) {
+        return e.off = `Off`, e.on = `On`, e.whenHit = `When Hit`, e
+    }({}),
+    m = (e, t, n, r, i = !1) => {
+        let a = {
+                x: e * (i ? -n : n),
+                y: t * n
             },
-            o = Phaser.Math.DegToRad(t);
+            o = Phaser.Math.DegToRad(r);
         return {
-            x: e.x * Math.cos(o) - e.y * Math.sin(o),
-            y: e.x * Math.sin(o) + e.y * Math.cos(o)
+            x: a.x * Math.cos(o) - a.y * Math.sin(o),
+            y: a.x * Math.sin(o) + a.y * Math.cos(o)
         }
     },
-    O = 20,
-    l = 100,
-    X = 200,
-    x = .25,
-    I = 1e3,
-    L = 350,
-    c = 200,
-    m = 10;
-class si extends C {
-    constructor(a) {
-        super(a), this.showing = !0, this.healthbarShowTween = null, this.healthbarHideTween = null, this.createHealthbar = () => {
-            this.canBeDamaged() && this.options.healthbar !== g.off && (this.healthbarContainer = this.parts.add.container({}), this.healthbarContainer2 = this.parts.add.container({
-                parent: this.healthbarContainer.view
-            }), this.healthbarContainer.view.x = this.x, this.healthbarContainer.view.y = this.y + 30, this.healthbarContainer2.view.x = 0, this.healthbarContainer2.view.y = 0, this.healthbarBg = this.parts.add.rect({
-                width: c,
-                height: m,
-                color: 0,
-                alpha: .25,
-                parent: this.healthbarContainer2.view
-            }), this.healthbarContainer2.view.add(this.healthbarBg.view), this.healthbarBg.view.x = 0, this.healthbarBg.view.y = 0, this.healthbar = this.parts.add.rect({
-                width: c,
-                height: m,
-                color: 4567883,
-                alpha: 1,
-                parent: this.healthbarContainer2.view
-            }), this.healthbarContainer2.view.add(this.healthbar.view), this.healthbar.view.x = 0, this.healthbar.view.y = 0, this.healthbarMark = this.parts.add.rect({
-                width: 2,
-                height: m,
-                color: 6800492,
-                alpha: 1,
-                parent: this.healthbarContainer2.view
-            }), this.healthbarContainer2.view.add(this.healthbarMark.view), this.healthbarMark.view.x = c / 2 - 1, this.healthbarMark.view.y = 0, this.options.healthbar === g.whenHit && (this.healthbarContainer2.view.alpha = 0), this.positionHealthbar())
-        }, this.positionHealthbar = () => {
-            var i, s;
-            if (!this.canBeDamaged() || this.options.healthbar === g.off || !((i = this.sprite) != null && i.view) || !((s = this.healthbarContainer) != null && s.view)) return;
-            const t = this.sprite.getBounds();
-            this.healthbarContainer.view.x = (t.left + t.right) / 2, this.healthbarContainer.view.y = t.bottom + 30
-        }, this.tweenHealthbarOnHit = () => {
-            var t, i;
-            this.options.healthbar === g.whenHit && ((t = this.healthbarShowTween) == null || t.stop(), this.healthbarShowTween = this.tweens.add({
-                targets: this.healthbarContainer2.view,
-                alpha: 1,
-                duration: l,
-                ease: Phaser.Math.Easing.Sine.InOut
-            }), (i = this.healthbarHideTween) == null || i.stop(), this.healthbarHideTween = this.tweens.add({
-                targets: this.healthbarContainer2.view,
-                alpha: 0,
-                duration: L,
-                delay: I,
-                ease: Phaser.Math.Easing.Sine.InOut
-            }))
-        }, this.updateHealthbar = t => {
-            if (!this.canBeDamaged() || this.options.healthbar === g.off) return;
-            const i = t ?? 1;
-            this.healthbar.view.scaleX = i, this.healthbar.view.x = -(c * (1 - i)) / 2, this.healthbarBg.view.alpha = 0, this.healthbar.view.alpha = 0, this.healthbarMark.view.alpha = 0, i > 0 && (this.healthbar.view.alpha = 1, this.healthbarBg.view.alpha = 1, this.healthbarMark.view.alpha = this.healthbar.view.alpha, this.healthbarMark.view.x = -c / 2 + c * i - 1)
-        }, this.onStateChange = t => {
-            if (t === "visible" && (this.state.visible ? (M(this), this.show()) : this.hide()), t === "hitData") {
-                const i = JSON.parse(this.state.hitData);
-                i.alpha !== void 0 && i.damageToDeal !== void 0 && this.onHealthChange(i)
-            }
-        }, this.onHealthChange = t => {
-            if ((t == null ? void 0 : t.damageToDeal) > 0) {
-                let i = t == null ? void 0 : t.x,
-                    s = t == null ? void 0 : t.y;
-                if (!i || !s) {
-                    const h = this.boundingBox.getBoundingBox(),
-                        n = {
-                            x: h.x + h.width / 2,
-                            y: h.y + h.height / 2
-                        };
-                    i = n.x, s = n.y
+    h = 20,
+    g = 100,
+    _ = 200,
+    v = .25,
+    y = 1e3,
+    b = 350,
+    x = 200,
+    S = 10,
+    C = class extends a {
+        constructor(a) {
+            super(a), this.showing = !0, this.healthbarShowTween = null, this.healthbarHideTween = null, this.createHealthbar = () => {
+                this.canBeDamaged() && this.options.healthbar !== p.off && (this.healthbarContainer = this.parts.add.container({}), this.healthbarContainer2 = this.parts.add.container({
+                    parent: this.healthbarContainer.view
+                }), this.healthbarContainer.view.x = this.x, this.healthbarContainer.view.y = this.y + 30, this.healthbarContainer2.view.x = 0, this.healthbarContainer2.view.y = 0, this.healthbarBg = this.parts.add.rect({
+                    width: x,
+                    height: S,
+                    color: 0,
+                    alpha: .25,
+                    parent: this.healthbarContainer2.view
+                }), this.healthbarContainer2.view.add(this.healthbarBg.view), this.healthbarBg.view.x = 0, this.healthbarBg.view.y = 0, this.healthbar = this.parts.add.rect({
+                    width: x,
+                    height: S,
+                    color: 4567883,
+                    alpha: 1,
+                    parent: this.healthbarContainer2.view
+                }), this.healthbarContainer2.view.add(this.healthbar.view), this.healthbar.view.x = 0, this.healthbar.view.y = 0, this.healthbarMark = this.parts.add.rect({
+                    width: 2,
+                    height: S,
+                    color: 6800492,
+                    alpha: 1,
+                    parent: this.healthbarContainer2.view
+                }), this.healthbarContainer2.view.add(this.healthbarMark.view), this.healthbarMark.view.x = x / 2 - 1, this.healthbarMark.view.y = 0, this.options.healthbar === p.whenHit && (this.healthbarContainer2.view.alpha = 0), this.positionHealthbar())
+            }, this.positionHealthbar = () => {
+                var e, t;
+                if (!this.canBeDamaged() || this.options.healthbar === p.off || !((e = this.sprite) != null && e.view) || !((t = this.healthbarContainer) != null && t.view)) return;
+                let n = this.sprite.getBounds();
+                this.healthbarContainer.view.x = (n.left + n.right) / 2, this.healthbarContainer.view.y = n.bottom + 30
+            }, this.tweenHealthbarOnHit = () => {
+                var e, t;
+                this.options.healthbar === p.whenHit && ((e = this.healthbarShowTween) == null || e.stop(), this.healthbarShowTween = this.tweens.add({
+                    targets: this.healthbarContainer2.view,
+                    alpha: 1,
+                    duration: g,
+                    ease: Phaser.Math.Easing.Sine.InOut
+                }), (t = this.healthbarHideTween) == null || t.stop(), this.healthbarHideTween = this.tweens.add({
+                    targets: this.healthbarContainer2.view,
+                    alpha: 0,
+                    duration: b,
+                    delay: y,
+                    ease: Phaser.Math.Easing.Sine.InOut
+                }))
+            }, this.updateHealthbar = e => {
+                if (!this.canBeDamaged() || this.options.healthbar === p.off) return;
+                let t = e ?? 1;
+                this.healthbar.view.scaleX = t, this.healthbar.view.x = -(x * (1 - t)) / 2, this.healthbarBg.view.alpha = 0, this.healthbar.view.alpha = 0, this.healthbarMark.view.alpha = 0, t > 0 && (this.healthbar.view.alpha = 1, this.healthbarBg.view.alpha = 1, this.healthbarMark.view.alpha = this.healthbar.view.alpha, this.healthbarMark.view.x = -100 + x * t - 1)
+            }, this.onStateChange = e => {
+                if (e === `visible` && (this.state.visible ? (d(this), this.show()) : this.hide()), e === `hitData`) {
+                    let e = JSON.parse(this.state.hitData);
+                    e.alpha !== void 0 && e.damageToDeal !== void 0 && this.onHealthChange(e)
                 }
-                const e = Phaser.Math.Snap.To(i, O),
-                    o = Phaser.Math.Snap.To(s, O);
-                T().worldManager.projectiles.damageMarkers.basic.applyDamage({
-                    markerId: this.id,
-                    damage: t.damageToDeal,
-                    x: e,
-                    y: o
-                })
-            }
-            this.updateVisibleAlpha(t.alpha), this.spriteFlashOverlay && this.spriteFlashOverlay.view && (this.spriteFlashOverlay.view.alpha = 1, this.tweens.add({
-                targets: this.spriteFlashOverlay.view,
-                alpha: 0,
-                duration: X
-            })), this.sprite && this.sprite.view && this.tweens.add({
-                targets: this.sprite.view,
-                alpha: this.visibleAlpha,
-                duration: l
-            }), this.shadows.forEach(i => this.tweens.add({
-                targets: i,
-                alphaMultip: this.getShadowVisibleAlpha(),
-                duration: l
-            })), this.updateHealthbar(t.alpha), this.tweenHealthbarOnHit()
-        }, this.addVisualEditing = () => {
-            const t = B(this, "Scale"),
-                i = this.propOption.image.width * this.propOption.scale,
-                s = this.propOption.image.height * this.propOption.scale,
-                e = {
-                    x: (.5 - this.propOption.originX) * i,
-                    y: (.5 - this.propOption.originY) * s
-                },
-                o = d(e.x, e.y, this.options.Scale, this.options.Angle, this.options.FlipX),
-                h = 0;
-            this.visualEditing.add.box({
-                x: o.x,
-                y: o.y,
-                angle: this.options.Angle,
-                width: i * this.options.Scale + h,
-                height: s * this.options.Scale + h,
-                minWidth: i * Math.max(.1, t.min) + h,
-                maxWidth: i * t.max + h,
-                minHeight: s * Math.max(.1, t.min) + h,
-                maxHeight: s * t.max + h,
-                onChange: n => {
-                    const v = (n.height - h) / s,
-                        b = n.angle,
-                        f = {
-                            x: (.5 - this.propOption.originX) * i,
-                            y: (.5 - this.propOption.originY) * s
-                        },
-                        u = d(f.x, f.y, v, b, this.options.FlipX);
-                    F(n.x - u.x, n.y - u.y, {
-                        Angle: b,
-                        Scale: v
+            }, this.onHealthChange = e => {
+                if ((e == null ? void 0 : e.damageToDeal) > 0) {
+                    let t = e == null ? void 0 : e.x,
+                        r = e == null ? void 0 : e.y;
+                    if (!t || !r) {
+                        let e = this.boundingBox.getBoundingBox(),
+                            n = {
+                                x: e.x + e.width / 2,
+                                y: e.y + e.height / 2
+                            };
+                        t = n.x, r = n.y
+                    }
+                    let i = Phaser.Math.Snap.To(t, h),
+                        a = Phaser.Math.Snap.To(r, h);
+                    n().worldManager.projectiles.damageMarkers.basic.applyDamage({
+                        markerId: this.id,
+                        damage: e.damageToDeal,
+                        x: i,
+                        y: a
                     })
                 }
-            })
-        }, this.addPart = t => {
-            this.sprite = this.parts.add.sprite({
-                imageId: w(t),
-                imageUrl: w(t),
-                originX: this.propOption.originX,
-                originY: this.propOption.originY,
-                onReady: i => {
-                    this.sprite = i, this.boundingBox.clearCached(), this.updateWirePoint(), this.addVisualEditing(), this.positionHealthbar()
-                }
-            }), this.sprite.view.scaleX = (this.options.Scale || 1) * this.propOption.scale, this.sprite.view.scaleY = (this.options.Scale || 1) * this.propOption.scale, this.sprite.view.angle = this.options.Angle, this.sprite.view.alpha = this.visibleAlpha, this.options.FlipX && (this.sprite.view.scaleX *= -1), this.options.Tint && (this.sprite.view.tint = Phaser.Display.Color.HexStringToColor(this.options.Tint).color), this.canBeDamaged() && (this.spriteFlashOverlay = this.parts.add.sprite({
-                imageId: w(t),
-                imageUrl: w(t),
-                originX: this.propOption.originX,
-                originY: this.propOption.originY,
-                flipX: this.options.FlipX,
-                depthChange: 10
-            }), this.spriteFlashOverlay.view.scaleX = (this.options.Scale || 1) * this.propOption.scale, this.spriteFlashOverlay.view.scaleY = (this.options.Scale || 1) * this.propOption.scale, this.spriteFlashOverlay.view.angle = this.options.Angle, this.spriteFlashOverlay.view.alpha = 0, this.spriteFlashOverlay.view.tint = 16777215, this.spriteFlashOverlay.view.tintFill = !0), this.boundingBox.clearCached(), this.updateWirePoint()
-        }, this.updateWirePoint = () => {
-            if (!D() || this.isPreview) return;
-            const t = this.sprite.getBounds();
-            this.wirePoints.setBoth(t.x + t.width / 2, t.y + t.height / 2)
-        }, this.convertOffsetToLocal = (t, i) => ({
-            x: (t - (this.propOption.originX - .5) * this.propOption.image.width) * this.propOption.scale,
-            y: (i - (this.propOption.originY - .5) * this.propOption.image.height) * this.propOption.scale
-        }), this.addCircleCollider = t => {
-            const i = this.convertOffsetToLocal(t.x, t.y),
-                s = this.options.FlipX ? -i.x : i.x,
-                e = d(s, i.y, this.options.Scale, this.options.Angle);
-            this.colliders.add.circle({
-                r: t.radius * this.propOption.scale * this.options.Scale,
-                x: e.x,
-                y: e.y
-            })
-        }, this.addRectCollider = t => {
-            const i = this.convertOffsetToLocal(t.x, t.y),
-                s = this.options.FlipX ? -i.x : i.x,
-                e = this.options.FlipX ? -t.angle : t.angle,
-                o = t.width * this.propOption.scale * this.options.Scale,
-                h = t.height * this.propOption.scale * this.options.Scale,
-                n = d(s, i.y, this.options.Scale, this.options.Angle);
-            this.colliders.add.box({
-                x: n.x,
-                y: n.y,
-                w: o,
-                h,
-                angle: this.options.Angle + e
-            })
-        }, this.addCapsuleCollider = t => {
-            const i = this.convertOffsetToLocal(t.x, t.y),
-                s = this.options.FlipX ? -i.x : i.x,
-                e = this.options.FlipX ? -t.angle : t.angle,
-                o = t.radius * this.propOption.scale,
-                h = t.halfHeight * this.propOption.scale,
-                n = d(s, i.y, this.options.Scale, this.options.Angle);
-            this.colliders.add.capsule({
-                x: n.x,
-                y: n.y,
-                r1: o * this.options.Scale,
-                r2: (o + h) * this.options.Scale,
-                angle: this.options.Angle + e
-            })
-        }, this.addShadow = t => {
-            if (y()) return;
-            const i = this.convertOffsetToLocal(t.x, t.y),
-                s = d(i.x, i.y, this.options.Scale, 0);
-            this.shadows.add({
-                x: this.options.FlipX ? -s.x : s.x,
-                y: s.y,
-                r1: t.radiusX / 2 * this.propOption.scale * this.options.Scale,
-                r2: t.radiusY / 2 * this.propOption.scale * this.options.Scale,
-                alphaMultip: this.getShadowVisibleAlpha(),
-                depth: this.options.shadowsPlacement === A.beneathProp ? this.layers.getGlobalDepth() - H(1) : 0
-            })
-        }, this.canBeDamaged = () => this.options.canBeDamaged, this.updateVisibleAlpha = t => {
-            const i = t === 0 ? 0 : (this.state.healthPercent ?? 1) * (1 - x) + x;
-            this.visibleAlpha = i * (this.options.Alpha ?? 1)
-        }, this.getShadowVisibleAlpha = () => this.visibleAlpha === 0 ? 0 : this.options.Alpha ?? 1, this.checkIfCollidersEnabled = () => this.state.visible && this.state.healthPercent > 0, this.updateVisibleAlpha(this.state.healthPercent ?? 1);
-        const r = S(this.options.propId);
-        r && (this.propOption = r, E() && !this.state.visible && (this.showing = !1), this.layers.setDefaultLayer(r.defaultLayer ?? P.DepthSortedCharactersAndDevices), this.createVisuals())
-    }
-    createVisuals() {
-        if (this.addPart(this.propOption.image.path), this.options.UseColliders) {
-            const a = y() ? this.propOption.colliders.platformer : this.propOption.colliders.topDown;
-            a.circle.forEach(r => {
-                this.addCircleCollider(r)
-            }), a.rectangle.forEach(r => {
-                this.addRectCollider(r)
-            }), a.capsule.forEach(r => {
-                this.addCapsuleCollider(r)
+                this.updateVisibleAlpha(e.alpha), this.spriteFlashOverlay && this.spriteFlashOverlay.view && (this.spriteFlashOverlay.view.alpha = 1, this.tweens.add({
+                    targets: this.spriteFlashOverlay.view,
+                    alpha: 0,
+                    duration: _
+                })), this.sprite && this.sprite.view && this.tweens.add({
+                    targets: this.sprite.view,
+                    alpha: this.visibleAlpha,
+                    duration: g
+                }), this.shadows.forEach(e => this.tweens.add({
+                    targets: e,
+                    alphaMultip: this.getShadowVisibleAlpha(),
+                    duration: g
+                })), this.updateHealthbar(e.alpha), this.tweenHealthbarOnHit()
+            }, this.addVisualEditing = () => {
+                let e = u(this, `Scale`),
+                    t = this.propOption.image.width * this.propOption.scale,
+                    n = this.propOption.image.height * this.propOption.scale,
+                    r = {
+                        x: (.5 - this.propOption.originX) * t,
+                        y: (.5 - this.propOption.originY) * n
+                    },
+                    i = m(r.x, r.y, this.options.Scale, this.options.Angle, this.options.FlipX);
+                Math.max(0, 50 - t * Math.max(.5, e.min)), Math.max(0, 50 - n * Math.max(.5, e.min)), this.visualEditing.add.box({
+                    x: i.x,
+                    y: i.y,
+                    angle: this.options.Angle,
+                    width: t * this.options.Scale + 0,
+                    height: n * this.options.Scale + 0,
+                    minWidth: t * Math.max(.1, e.min) + 0,
+                    maxWidth: t * e.max + 0,
+                    minHeight: n * Math.max(.1, e.min) + 0,
+                    maxHeight: n * e.max + 0,
+                    onChange: e => {
+                        let r = (e.height - 0) / n,
+                            i = e.angle,
+                            a = {
+                                x: (.5 - this.propOption.originX) * t,
+                                y: (.5 - this.propOption.originY) * n
+                            },
+                            o = m(a.x, a.y, r, i, this.options.FlipX);
+                        l(e.x - o.x, e.y - o.y, {
+                            Angle: i,
+                            Scale: r
+                        })
+                    }
+                })
+            }, this.addPart = t => {
+                this.sprite = this.parts.add.sprite({
+                    imageId: e(t),
+                    imageUrl: e(t),
+                    originX: this.propOption.originX,
+                    originY: this.propOption.originY,
+                    onReady: e => {
+                        this.sprite = e, this.boundingBox.clearCached(), this.updateWirePoint(), this.addVisualEditing(), this.positionHealthbar()
+                    }
+                }), this.sprite.view.scaleX = (this.options.Scale || 1) * this.propOption.scale, this.sprite.view.scaleY = (this.options.Scale || 1) * this.propOption.scale, this.sprite.view.angle = this.options.Angle, this.sprite.view.alpha = this.visibleAlpha, this.options.FlipX && (this.sprite.view.scaleX *= -1), this.options.Tint && (this.sprite.view.tint = Phaser.Display.Color.HexStringToColor(this.options.Tint).color), this.canBeDamaged() && (this.spriteFlashOverlay = this.parts.add.sprite({
+                    imageId: e(t),
+                    imageUrl: e(t),
+                    originX: this.propOption.originX,
+                    originY: this.propOption.originY,
+                    flipX: this.options.FlipX,
+                    depthChange: 10
+                }), this.spriteFlashOverlay.view.scaleX = (this.options.Scale || 1) * this.propOption.scale, this.spriteFlashOverlay.view.scaleY = (this.options.Scale || 1) * this.propOption.scale, this.spriteFlashOverlay.view.angle = this.options.Angle, this.spriteFlashOverlay.view.alpha = 0, this.spriteFlashOverlay.view.tint = 16777215, this.spriteFlashOverlay.view.tintFill = !0), this.boundingBox.clearCached(), this.updateWirePoint()
+            }, this.updateWirePoint = () => {
+                if (!r() || this.isPreview) return;
+                let e = this.sprite.getBounds();
+                this.wirePoints.setBoth(e.x + e.width / 2, e.y + e.height / 2)
+            }, this.convertOffsetToLocal = (e, t) => ({
+                x: (e - (this.propOption.originX - .5) * this.propOption.image.width) * this.propOption.scale,
+                y: (t - (this.propOption.originY - .5) * this.propOption.image.height) * this.propOption.scale
+            }), this.addCircleCollider = e => {
+                let t = this.convertOffsetToLocal(e.x, e.y),
+                    n = m(this.options.FlipX ? -t.x : t.x, t.y, this.options.Scale, this.options.Angle);
+                this.colliders.add.circle({
+                    r: e.radius * this.propOption.scale * this.options.Scale,
+                    x: n.x,
+                    y: n.y
+                })
+            }, this.addRectCollider = e => {
+                let t = this.convertOffsetToLocal(e.x, e.y),
+                    n = this.options.FlipX ? -t.x : t.x,
+                    r = this.options.FlipX ? -e.angle : e.angle,
+                    i = e.width * this.propOption.scale * this.options.Scale,
+                    a = e.height * this.propOption.scale * this.options.Scale,
+                    o = m(n, t.y, this.options.Scale, this.options.Angle);
+                this.colliders.add.box({
+                    x: o.x,
+                    y: o.y,
+                    w: i,
+                    h: a,
+                    angle: this.options.Angle + r
+                })
+            }, this.addCapsuleCollider = e => {
+                let t = this.convertOffsetToLocal(e.x, e.y),
+                    n = this.options.FlipX ? -t.x : t.x,
+                    r = this.options.FlipX ? -e.angle : e.angle,
+                    i = e.radius * this.propOption.scale,
+                    a = e.halfHeight * this.propOption.scale,
+                    o = m(n, t.y, this.options.Scale, this.options.Angle);
+                this.colliders.add.capsule({
+                    x: o.x,
+                    y: o.y,
+                    r1: i * this.options.Scale,
+                    r2: (i + a) * this.options.Scale,
+                    angle: this.options.Angle + r
+                })
+            }, this.addShadow = e => {
+                if (t()) return;
+                let n = this.convertOffsetToLocal(e.x, e.y),
+                    r = m(n.x, n.y, this.options.Scale, 0);
+                this.shadows.add({
+                    x: this.options.FlipX ? -r.x : r.x,
+                    y: r.y,
+                    r1: e.radiusX / 2 * this.propOption.scale * this.options.Scale,
+                    r2: e.radiusY / 2 * this.propOption.scale * this.options.Scale,
+                    alphaMultip: this.getShadowVisibleAlpha(),
+                    depth: this.options.shadowsPlacement === f.beneathProp ? this.layers.getGlobalDepth() - c(1) : 0
+                })
+            }, this.canBeDamaged = () => this.options.canBeDamaged, this.updateVisibleAlpha = e => {
+                let t = e === 0 ? 0 : (this.state.healthPercent ?? 1) * .75 + v;
+                this.visibleAlpha = t * (this.options.Alpha ?? 1)
+            }, this.getShadowVisibleAlpha = () => this.visibleAlpha === 0 ? 0 : this.options.Alpha ?? 1, this.checkIfCollidersEnabled = () => this.state.visible && this.state.healthPercent > 0, this.updateVisibleAlpha(this.state.healthPercent ?? 1);
+            let C = o(this.options.propId);
+            C && (this.propOption = C, i() && !this.state.visible && (this.showing = !1), this.layers.setDefaultLayer(C.defaultLayer ?? s.DepthSortedCharactersAndDevices), this.createVisuals())
+        }
+        createVisuals() {
+            if (this.addPart(this.propOption.image.path), this.options.UseColliders) {
+                let e = t() ? this.propOption.colliders.platformer : this.propOption.colliders.topDown;
+                e.circle.forEach(e => {
+                    this.addCircleCollider(e)
+                }), e.rectangle.forEach(e => {
+                    this.addRectCollider(e)
+                }), e.capsule.forEach(e => {
+                    this.addCapsuleCollider(e)
+                })
+            }
+            this.options.shadowsEnabled && this.options.Angle === 0 && this.propOption.shadows.forEach(e => {
+                this.addShadow(e)
+            }), this.createHealthbar(), this.updateHealthbar(this.state.healthPercent), this.showing || this.hideInstantly()
+        }
+        hide() {
+            this.showing = !1, this.sprite && this.sprite.view && this.tweens.add({
+                targets: this.sprite.view,
+                alpha: 0,
+                duration: g
+            }), this.healthbarContainer && this.healthbarContainer.view && this.tweens.add({
+                targets: this.healthbarContainer.view,
+                alpha: 0,
+                duration: g
+            }), this.shadows.forEach(e => this.tweens.add({
+                targets: e,
+                alphaMultip: 0,
+                duration: g
+            }))
+        }
+        hideInstantly() {
+            this.showing = !1, this.sprite && this.sprite.view && (this.sprite.view.alpha = 0), this.healthbarContainer && this.healthbarContainer.view && (this.healthbarContainer.view.alpha = 0), this.shadows.forEach(e => {
+                e.alphaMultip = 0
             })
         }
-        this.options.shadowsEnabled && this.options.Angle === 0 && this.propOption.shadows.forEach(a => {
-            this.addShadow(a)
-        }), this.createHealthbar(), this.updateHealthbar(this.state.healthPercent), this.showing || this.hideInstantly()
-    }
-    hide() {
-        this.showing = !1, this.sprite && this.sprite.view && this.tweens.add({
-            targets: this.sprite.view,
-            alpha: 0,
-            duration: l
-        }), this.healthbarContainer && this.healthbarContainer.view && this.tweens.add({
-            targets: this.healthbarContainer.view,
-            alpha: 0,
-            duration: l
-        }), this.shadows.forEach(a => this.tweens.add({
-            targets: a,
-            alphaMultip: 0,
-            duration: l
-        }))
-    }
-    hideInstantly() {
-        this.showing = !1, this.sprite && this.sprite.view && (this.sprite.view.alpha = 0), this.healthbarContainer && this.healthbarContainer.view && (this.healthbarContainer.view.alpha = 0), this.shadows.forEach(a => {
-            a.alphaMultip = 0
-        })
-    }
-    show() {
-        this.showing = !0, this.sprite && this.sprite.view && this.tweens.add({
-            targets: this.sprite.view,
-            alpha: this.visibleAlpha,
-            duration: l
-        }), this.healthbarContainer && this.healthbarContainer.view && this.tweens.add({
-            targets: this.healthbarContainer.view,
-            alpha: 1,
-            duration: l
-        }), this.shadows.forEach(a => this.tweens.add({
-            targets: a,
-            alphaMultip: this.getShadowVisibleAlpha(),
-            duration: l
-        }))
-    }
-}
+        show() {
+            this.showing = !0, this.sprite && this.sprite.view && this.tweens.add({
+                targets: this.sprite.view,
+                alpha: this.visibleAlpha,
+                duration: g
+            }), this.healthbarContainer && this.healthbarContainer.view && this.tweens.add({
+                targets: this.healthbarContainer.view,
+                alpha: 1,
+                duration: g
+            }), this.shadows.forEach(e => this.tweens.add({
+                targets: e,
+                alphaMultip: this.getShadowVisibleAlpha(),
+                duration: g
+            }))
+        }
+    };
 export {
-    si as
+    C as
     default
 };

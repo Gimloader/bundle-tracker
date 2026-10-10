@@ -1,4 +1,6 @@
-var a = (e => (e.liveGame = "liveGame", e.assignment = "assignment", e))(a || {});
+var e = function(e) {
+    return e.liveGame = `liveGame`, e.assignment = `assignment`, e
+}({});
 export {
-    a as M
+    e as t
 };

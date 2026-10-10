@@ -1,160 +1,163 @@
 import {
-    at as O,
-    aw as Y,
-    r as l,
-    s as Z
+    o as e,
+    t
+} from "./rolldown-runtime.js";
+import {
+    n,
+    t as r
+} from "./dist-1.js";
+import {
+    t as i
+} from "./react-1.js";
+import {
+    a
 } from "./_index.js";
-var R, _;
+var o = e(t(((e, t) => {
+        n();
+        var i = `Expected a function`,
+            a = NaN,
+            o = `[object Symbol]`,
+            s = /^\s+|\s+$/g,
+            c = /^[-+]0x[0-9a-f]+$/i,
+            l = /^0b[01]+$/i,
+            u = /^0o[0-7]+$/i,
+            d = parseInt,
+            f = typeof r == `object` && r && r.Object === Object && r,
+            p = typeof self == `object` && self && self.Object === Object && self,
+            m = f || p || Function(`return this`)(),
+            h = Object.prototype.toString,
+            g = Math.max,
+            _ = Math.min,
+            v = function() {
+                return m.Date.now()
+            };
 
-function w() {
-    if (_) return R;
-    _ = 1;
-    var i = "Expected a function",
-        r = NaN,
-        a = "[object Symbol]",
-        o = /^\s+|\s+$/g,
-        c = /^[-+]0x[0-9a-f]+$/i,
-        g = /^0b[01]+$/i,
-        j = /^0o[0-7]+$/i,
-        T = parseInt,
-        M = typeof O == "object" && O && O.Object === Object && O,
-        V = typeof self == "object" && self && self.Object === Object && self,
-        F = M || V || Function("return this")(),
-        $ = Object.prototype,
-        z = $.toString,
-        B = Math.max,
-        q = Math.min,
-        I = function() {
-            return F.Date.now()
-        };
+        function y(e, t, n) {
+            var r, a, o, s, c, l, u = 0,
+                d = !1,
+                f = !1,
+                p = !0;
+            if (typeof e != `function`) throw TypeError(i);
+            t = C(t) || 0, b(n) && (d = !!n.leading, f = `maxWait` in n, o = f ? g(C(n.maxWait) || 0, t) : o, p = `trailing` in n ? !!n.trailing : p);
 
-    function G(e, t, f) {
-        var b, y, x, m, u, d, h = 0,
-            L = !1,
-            p = !1,
-            k = !0;
-        if (typeof e != "function") throw new TypeError(i);
-        t = A(t) || 0, S(f) && (L = !!f.leading, p = "maxWait" in f, x = p ? B(A(f.maxWait) || 0, t) : x, k = "trailing" in f ? !!f.trailing : k);
-
-        function D(n) {
-            var s = b,
-                v = y;
-            return b = y = void 0, h = n, m = e.apply(v, s), m
-        }
-
-        function X(n) {
-            return h = n, u = setTimeout(E, t), L ? D(n) : m
-        }
-
-        function J(n) {
-            var s = n - d,
-                v = n - h,
-                W = t - s;
-            return p ? q(W, x - v) : W
-        }
-
-        function N(n) {
-            var s = n - d,
-                v = n - h;
-            return d === void 0 || s >= t || s < 0 || p && v >= x
-        }
-
-        function E() {
-            var n = I();
-            if (N(n)) return U(n);
-            u = setTimeout(E, J(n))
-        }
-
-        function U(n) {
-            return u = void 0, k && b ? D(n) : (b = y = void 0, m)
-        }
-
-        function K() {
-            u !== void 0 && clearTimeout(u), h = 0, b = d = y = u = void 0
-        }
-
-        function Q() {
-            return u === void 0 ? m : U(I())
-        }
-
-        function C() {
-            var n = I(),
-                s = N(n);
-            if (b = arguments, y = this, d = n, s) {
-                if (u === void 0) return X(d);
-                if (p) return u = setTimeout(E, t), D(d)
+            function m(t) {
+                var n = r,
+                    i = a;
+                return r = a = void 0, u = t, s = e.apply(i, n), s
             }
-            return u === void 0 && (u = setTimeout(E, t)), m
+
+            function h(e) {
+                return u = e, c = setTimeout(S, t), d ? m(e) : s
+            }
+
+            function y(e) {
+                var n = e - l,
+                    r = e - u,
+                    i = t - n;
+                return f ? _(i, o - r) : i
+            }
+
+            function x(e) {
+                var n = e - l,
+                    r = e - u;
+                return l === void 0 || n >= t || n < 0 || f && r >= o
+            }
+
+            function S() {
+                var e = v();
+                if (x(e)) return w(e);
+                c = setTimeout(S, y(e))
+            }
+
+            function w(e) {
+                return c = void 0, p && r ? m(e) : (r = a = void 0, s)
+            }
+
+            function T() {
+                c !== void 0 && clearTimeout(c), u = 0, r = l = a = c = void 0
+            }
+
+            function E() {
+                return c === void 0 ? s : w(v())
+            }
+
+            function D() {
+                var e = v(),
+                    n = x(e);
+                if (r = arguments, a = this, l = e, n) {
+                    if (c === void 0) return h(l);
+                    if (f) return c = setTimeout(S, t), m(l)
+                }
+                return c === void 0 && (c = setTimeout(S, t)), s
+            }
+            return D.cancel = T, D.flush = E, D
         }
-        return C.cancel = K, C.flush = Q, C
-    }
 
-    function S(e) {
-        var t = typeof e;
-        return !!e && (t == "object" || t == "function")
-    }
-
-    function P(e) {
-        return !!e && typeof e == "object"
-    }
-
-    function H(e) {
-        return typeof e == "symbol" || P(e) && z.call(e) == a
-    }
-
-    function A(e) {
-        if (typeof e == "number") return e;
-        if (H(e)) return r;
-        if (S(e)) {
-            var t = typeof e.valueOf == "function" ? e.valueOf() : e;
-            e = S(t) ? t + "" : t
+        function b(e) {
+            var t = typeof e;
+            return !!e && (t == `object` || t == `function`)
         }
-        if (typeof e != "string") return e === 0 ? e : +e;
-        e = e.replace(o, "");
-        var f = g.test(e);
-        return f || j.test(e) ? T(e.slice(2), f ? 2 : 8) : c.test(e) ? r : +e
-    }
-    return R = G, R
-}
-var ee = w();
-const ne = Y(ee);
 
-function re(i, r, a) {
-    var o = l.useCallback(function(g) {
-            return ne(g, r, a)
-        }, [r, a]),
-        c = l.useRef(o(i));
-    return l.useEffect(function() {
-        c.current = o(i)
-    }, [i, o]), c.current
+        function x(e) {
+            return !!e && typeof e == `object`
+        }
+
+        function S(e) {
+            return typeof e == `symbol` || x(e) && h.call(e) == o
+        }
+
+        function C(e) {
+            if (typeof e == `number`) return e;
+            if (S(e)) return a;
+            if (b(e)) {
+                var t = typeof e.valueOf == `function` ? e.valueOf() : e;
+                e = b(t) ? t + `` : t
+            }
+            if (typeof e != `string`) return e === 0 ? e : +e;
+            e = e.replace(s, ``);
+            var n = l.test(e);
+            return n || u.test(e) ? d(e.slice(2), n ? 2 : 8) : c.test(e) ? a : +e
+        }
+        t.exports = y
+    }))()),
+    s = e(i());
+
+function c(e, t, n) {
+    var r = (0, s.useCallback)(function(e) {
+            return (0, o.default)(e, t, n)
+        }, [t, n]),
+        i = (0, s.useRef)(r(e));
+    return (0, s.useEffect)(function() {
+        i.current = r(e)
+    }, [e, r]), i.current
 }
 
-function te(i, r) {
-    var a = l.useRef(!1);
-    typeof r < "u" && !Array.isArray(r) ? r = [r] : Array.isArray(r) && r.length === 0 && console.warn("Using [] as the second argument makes useDidUpdate a noop. The second argument should either be `undefined` or an array of length greater than 0."), l.useEffect(function() {
-        a.current ? i() : a.current = !0
-    }, r), l.useEffect(function() {
+function l(e, t) {
+    var n = (0, s.useRef)(!1);
+    t !== void 0 && !Array.isArray(t) ? t = [t] : Array.isArray(t) && t.length === 0 && console.warn("Using [] as the second argument makes useDidUpdate a noop. The second argument should either be `undefined` or an array of length greater than 0."), (0, s.useEffect)(function() {
+        n.current ? e() : n.current = !0
+    }, t), (0, s.useEffect)(function() {
         return function() {
-            a.current = !1
+            n.current = !1
         }
     }, [])
 }
-var ie = {
+var u = {
         initializeWithNull: !1
     },
-    ue = function(i, r, a) {
-        a === void 0 && (a = {});
-        var o = Object.assign({}, ie, a).initializeWithNull,
-            c = l.useState(o ? null : i),
-            g = c[0],
-            j = c[1],
-            T = re(j, r);
-        return Z(function() {
-            o && T(i)
-        }), te(function() {
-            T(i)
-        }, [i]), [g, j]
+    d = function(e, t, n) {
+        n === void 0 && (n = {});
+        var r = Object.assign({}, u, n).initializeWithNull,
+            i = (0, s.useState)(r ? null : e),
+            o = i[0],
+            d = i[1],
+            f = c(d, t);
+        return a(function() {
+            r && f(e)
+        }), l(function() {
+            f(e)
+        }, [e]), [o, d]
     };
 export {
-    te as a, ue as u
+    l as n, d as t
 };

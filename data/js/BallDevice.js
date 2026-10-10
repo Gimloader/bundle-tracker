@@ -1,356 +1,288 @@
 import {
-    bh as d,
-    G as g,
-    L as b,
-    aK as f
-} from "./App-41.js";
+    o as e
+} from "./rolldown-runtime.js";
 import {
-    U as v,
-    e as y,
-    j as c,
-    n as T,
-    a as x,
-    I as l,
-    i as S
-} from "./FixSpinePlugin.js";
-import {
-    G as m
+    t
 } from "./GetAssetPath.js";
 import {
-    F as P,
-    R as M
+    t as n
+} from "./phaser.js";
+import {
+    C as r
+} from "./FixPhaserBootProcess.js";
+import {
+    t as i
+} from "./FetchScene.js";
+import {
+    n as a,
+    t as o
+} from "./isVersion.js";
+import {
+    r as s,
+    t as c
+} from "./InPhase.js";
+import {
+    s as l,
+    t as u
+} from "./Device.js";
+import {
+    r as d,
+    t as f
+} from "./GlobalLocalDepth.js";
+import {
+    n as p,
+    t as m
 } from "./FetchOptionSchemaProperty.js";
-import "./_index.js";
-import "./Button.js";
-import "./polished.esm.js";
-import "./inheritsLoose.js";
-import "./mobxreact.esm.js";
-import "./index-21.js";
-import "./QuizTypes.js";
-import "./MapModeType.js";
-import "./TutorialConsts.js";
-import "./ActionButton.js";
-import "./index-5.js";
-import "./playSound.js";
-import "./MapSound.js";
-import "./howler.js";
-import "./index-18.js";
-import "./context.js";
-import "./FontAwesomeIcon.js";
-import "./Centered.js";
-import "./CapitalizeFirstLetter.js";
-import "./index-4.js";
-import "./motion.js";
-import "./index-2.js";
-import "./index-14.js";
-import "./EditOutlined.js";
-import "./styleChecker.js";
-import "./index-3.js";
-import "./CheckOutlined.js";
-import "./CopyOutlined.js";
-import "./SixteenByNineScaler.js";
-import "./index-20.js";
-import "./index-22.js";
-import "./index-1.js";
-import "./progress.js";
-import "./ElementIds.js";
-import "./SeasonTicketName.js";
-import "./useQuery.js";
-import "./___vite-browser-external_commonjs-proxy.js";
-import "./util-1.js";
-import "./util-2.js";
-import "./Shortcut.js";
-import "./Names.js";
-import "./useWillUnmount.js";
-import "./CircularProgress.js";
-import "./clsx.m.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
-import "./index-17.js";
-import "./use-force-update.js";
-import "./GimkitLiveQuestion.js";
-import "./Text.js";
-import "./getCloudinaryUrl.js";
-import "./LazyLatexRenderer.js";
-import "./Tooltip.js";
-import "./use-motion-value.js";
-import "./index-9.js";
-import "./index-23.js";
-import "./useIntervalWhen.js";
-import "./index-10.js";
-import "./move.js";
-import "./react-flip-move.es.js";
-import "./sounds.js";
-import "./App-5.js";
-import "./AnimatedBackground-2.js";
-import "./useDebouncedValue.js";
-import "./CloseCircleOutlined.js";
-import "./MapStyle.js";
-import "./FillRemainingSpace.js";
-import "./index-24.js";
-const u = 1e3 / v.tickRate;
-class X {
-    constructor(a) {
-        this.targetX = 0, this.targetY = 0, this.targetIsDirty = !1, this.pointMap = [], this.currentPoint = null, this.currentTime = 0, this.moveToTargetPosition = () => {
-            const t = this.pointMap[0];
-            if (!t) return;
-            const e = this.currentTime;
-            if (!(e < t.startTime)) {
-                if (e > t.endTime) {
-                    this.pointMap.shift(), this.ball.container.view.x = t.endX, this.ball.container.view.y = t.endY, this.moveToTargetPosition();
-                    return
+var h = 1e3 / r.tickRate,
+    g = class {
+        constructor(e) {
+            this.targetX = 0, this.targetY = 0, this.targetIsDirty = !1, this.pointMap = [], this.currentPoint = null, this.currentTime = 0, this.moveToTargetPosition = () => {
+                let e = this.pointMap[0];
+                if (!e) return;
+                let t = this.currentTime;
+                if (!(t < e.startTime)) {
+                    if (t > e.endTime) this.pointMap.shift(), this.ball.container.view.x = e.endX, this.ball.container.view.y = e.endY, this.moveToTargetPosition();
+                    else if (e.startTime <= t) {
+                        this.currentPoint = e;
+                        let n = Phaser.Math.Percent(t, e.startTime, e.endTime),
+                            r = Phaser.Math.Linear(e.startX, e.endX, n),
+                            i = Phaser.Math.Linear(e.startY, e.endY, n);
+                        this.ball.container.view.x = r, this.ball.container.view.y = i
+                    }
                 }
-                if (t.startTime <= e) {
-                    this.currentPoint = t;
-                    const s = Phaser.Math.Percent(e, t.startTime, t.endTime),
-                        r = Phaser.Math.Linear(t.startX, t.endX, s),
-                        p = Phaser.Math.Linear(t.startY, t.endY, s);
-                    this.ball.container.view.x = r, this.ball.container.view.y = p
+            }, this.getCurrentEndInfo = () => {
+                if (!this.pointMap.length) {
+                    let e = this.currentTime;
+                    return {
+                        x: this.ball.container.view.x,
+                        y: this.ball.container.view.y,
+                        start: e,
+                        end: e + h
+                    }
                 }
-            }
-        }, this.getCurrentEndInfo = () => {
-            if (!this.pointMap.length) {
-                const e = this.currentTime;
+                let e = this.pointMap[this.pointMap.length - 1];
                 return {
-                    x: this.ball.container.view.x,
-                    y: this.ball.container.view.y,
-                    start: e,
-                    end: e + u
+                    x: e.endX,
+                    y: e.endY,
+                    start: e.endTime,
+                    end: e.endTime + h
                 }
-            }
-            const t = this.pointMap[this.pointMap.length - 1];
-            return {
-                x: t.endX,
-                y: t.endY,
-                start: t.endTime,
-                end: t.endTime + u
-            }
-        }, this.update = t => {
-            if (this.currentTime += t, this.targetIsDirty) {
-                this.targetIsDirty = !1;
-                const e = this.getCurrentEndInfo();
-                this.pointMap.push({
-                    startX: e.x,
-                    startY: e.y,
-                    endX: this.targetX,
-                    endY: this.targetY,
-                    startTime: e.start,
-                    endTime: e.end
-                })
-            }
-            this.moveToTargetPosition()
-        }, this.onReset = () => {
-            this.pointMap = [], this.ball.container.view.x = this.ball.x, this.ball.container.view.y = this.ball.y, this.targetX = this.ball.x, this.targetY = this.ball.y
-        }, this.setTargetX = t => {
-            this.targetX !== t && (this.targetX = t, this.targetIsDirty = !0)
-        }, this.setTargetY = t => {
-            this.targetY !== t && (this.targetY = t, this.targetIsDirty = !0)
-        }, this.ball = a, this.targetX = a.x, this.targetY = a.y
-    }
-}
-const n = {
+            }, this.update = e => {
+                if (this.currentTime += e, this.targetIsDirty) {
+                    this.targetIsDirty = !1;
+                    let e = this.getCurrentEndInfo();
+                    this.pointMap.push({
+                        startX: e.x,
+                        startY: e.y,
+                        endX: this.targetX,
+                        endY: this.targetY,
+                        startTime: e.start,
+                        endTime: e.end
+                    })
+                }
+                this.moveToTargetPosition()
+            }, this.onReset = () => {
+                this.pointMap = [], this.ball.container.view.x = this.ball.x, this.ball.container.view.y = this.ball.y, this.targetX = this.ball.x, this.targetY = this.ball.y
+            }, this.setTargetX = e => {
+                this.targetX !== e && (this.targetX = e, this.targetIsDirty = !0)
+            }, this.setTargetY = e => {
+                this.targetY !== e && (this.targetY = e, this.targetIsDirty = !0)
+            }, this.ball = e, this.targetX = e.x, this.targetY = e.y
+        }
+    },
+    _ = {
         animation: {
             timeScale: 1,
             maxHeight: 35,
-            hitScale: .9
+            hitScale: .9,
+            animateShadow: !0
         }
     },
-    o = 175,
-    h = 100;
-class Y {
-    constructor(a) {
-        this.ballHeight = 0, this.squeezeScale = 1, this.cumulTime = 0, this.hitTimeHeight = 0, this.hitTimeScale = 0, this.updateScale = () => {
-            if (this.hitTimeScale === 0) return;
-            const t = this.cumulTime - this.hitTimeScale;
-            t < h ? this.squeezeScale = 1 - (1 - n.animation.hitScale) * Math.sin(t * Math.PI / 2 / h) : this.squeezeScale = Phaser.Math.Easing.Elastic.Out(Math.min(1, (t - h) / 2500)) * (1 - n.animation.hitScale) + n.animation.hitScale, this.ball.container.view.scaleX = this.squeezeScale
-        }, this.updateHeight = () => {
-            if (this.hitTimeHeight === 0) return;
-            const t = this.cumulTime - this.hitTimeHeight;
-            t < o ? this.ballHeight = n.animation.maxHeight * Math.sin(t * Math.PI / 2 / o) : this.ballHeight = n.animation.maxHeight - Phaser.Math.Easing.Bounce.Out(Math.min(1, (t - o) / 1e3)) * n.animation.maxHeight, this.ball.ball.view.y = -this.ballHeight, this.ball.frame.view.y = -this.ballHeight
-        }, this.update = t => {
-            this.cumulTime += t * n.animation.timeScale, this.updateScale(), this.updateHeight()
-        }, this.hit = t => {
-            this.hitTimeHeight = this.cumulTime - 2 * o * Math.asin(this.ballHeight / n.animation.maxHeight) / Math.PI, this.hitTimeScale = this.cumulTime - 2 * h * Math.asin((1 - this.squeezeScale) / (1 - n.animation.hitScale)) / Math.PI, this.ball.container.view.rotation = t, this.ball.container2.view.rotation = -t
-        }, this.ball = a
-    }
-}
-const D = 75e-5;
-class I {
-    constructor(a) {
-        this.prevX = 0, this.prevY = 0, this.cumulX = 0, this.cumulY = 0, this.update = () => {
-            let t = this.prevX - this.ball.container.view.x,
-                e = this.prevY - this.ball.container.view.y;
-            const s = this.ball.ball.view.rotation - t * 2 / this.ball.options.radius,
-                r = D * (520 / this.ball.options.radius);
-            this.cumulX += e * r * Math.sin(s), this.cumulY += e * r * Math.cos(s), this.ball.ball.view.setData("uAlpha", this.ball.container2.view.alpha), this.ball.ball.view.setData("uShiftX", this.cumulX), this.ball.ball.view.setData("uShiftY", this.cumulY), this.ball.ball.view.rotation = s, this.prevX = this.ball.container.view.x, this.prevY = this.ball.container.view.y
-        }, this.ball = a, this.prevX = a.x, this.prevY = a.y
-    }
-}
-class H {
-    constructor(a) {
-        this.burst = (t, e, s) => {
-            this.emitter && (this.emitter.setPosition(t, e), this.emitter.setDepth(s), this.emitter.explode(250))
-        }, this.destroy = () => {
-            this.emitter && this.emitter.destroy(!0)
-        }, this.load = () => {
-            if (!y() && !c()) return;
-            const t = m("devices/crafting_table/particle.png");
-            d({
-                key: t,
-                url: t,
-                onLoad: () => {
-                    this.device.isDestroyed || (this.emitter = this.device.scene.add.particles(this.device.x, this.device.y, t, {
-                        speed: {
-                            min: -400,
-                            max: 400
-                        },
-                        scale: {
-                            start: .5,
-                            end: 0
-                        },
-                        blendMode: T.BlendModes.SCREEN,
-                        emitting: !1,
-                        lifespan: 1e3
-                    }).setDepth(this.device.getMaxDepth() + 1))
-                }
-            })
-        }, this.device = a, this.load()
-    }
-}
-const E = {
+    v = 175,
+    y = 100,
+    b = class {
+        constructor(e) {
+            this.ballHeight = 0, this.squeezeScale = 1, this.cumulTime = 0, this.hitTimeHeight = 0, this.hitTimeScale = 0, this.updateScale = () => {
+                if (this.hitTimeScale === 0) return;
+                let e = this.cumulTime - this.hitTimeScale;
+                this.squeezeScale = e < y ? 1 - (1 - _.animation.hitScale) * Math.sin(e * Math.PI / 2 / y) : Phaser.Math.Easing.Elastic.Out(Math.min(1, (e - y) / 2500)) * (1 - _.animation.hitScale) + _.animation.hitScale, this.ball.container.view.scaleX = this.squeezeScale
+            }, this.updateHeight = () => {
+                if (this.hitTimeHeight === 0) return;
+                let e = this.cumulTime - this.hitTimeHeight;
+                this.ballHeight = e < v ? _.animation.maxHeight * Math.sin(e * Math.PI / 2 / v) : _.animation.maxHeight - Phaser.Math.Easing.Bounce.Out(Math.min(1, (e - v) / 1e3)) * _.animation.maxHeight, this.ball.ball.view.y = -this.ballHeight, this.ball.frame.view.y = -this.ballHeight
+            }, this.update = e => {
+                this.cumulTime += e * _.animation.timeScale, this.updateScale(), this.updateHeight()
+            }, this.hit = e => {
+                this.hitTimeHeight = this.cumulTime - 350 * Math.asin(this.ballHeight / _.animation.maxHeight) / Math.PI, this.hitTimeScale = this.cumulTime - 200 * Math.asin((1 - this.squeezeScale) / (1 - _.animation.hitScale)) / Math.PI, this.ball.container.view.rotation = e, this.ball.container2.view.rotation = -e
+            }, this.ball = e
+        }
+    },
+    x = 75e-5,
+    S = class {
+        constructor(e) {
+            this.prevX = 0, this.prevY = 0, this.cumulX = 0, this.cumulY = 0, this.update = () => {
+                let e = this.prevX - this.ball.container.view.x,
+                    t = this.prevY - this.ball.container.view.y,
+                    n = this.ball.ball.view.rotation - e * 2 / this.ball.options.radius,
+                    r = x * (520 / this.ball.options.radius);
+                this.cumulX += t * r * Math.sin(n), this.cumulY += t * r * Math.cos(n), this.ball.ball.view.setData(`uAlpha`, this.ball.container2.view.alpha), this.ball.ball.view.setData(`uShiftX`, this.cumulX), this.ball.ball.view.setData(`uShiftY`, this.cumulY), this.ball.ball.view.rotation = n, this.prevX = this.ball.container.view.x, this.prevY = this.ball.container.view.y
+            }, this.ball = e, this.prevX = e.x, this.prevY = e.y
+        }
+    },
+    C = e(n()),
+    w = class {
+        constructor(e) {
+            this.burst = (e, t, n) => {
+                this.emitter && (this.emitter.setPosition(e, t), this.emitter.setDepth(n), this.emitter.explode(250))
+            }, this.destroy = () => {
+                this.emitter && this.emitter.destroy(!0)
+            }, this.load = () => {
+                if (!c() && !o()) return;
+                let e = t(`devices/crafting_table/particle.png`);
+                l({
+                    key: e,
+                    url: e,
+                    onLoad: () => {
+                        this.device.isDestroyed || (this.emitter = this.device.scene.add.particles(this.device.x, this.device.y, e, {
+                            speed: {
+                                min: -400,
+                                max: 400
+                            },
+                            scale: {
+                                start: .5,
+                                end: 0
+                            },
+                            blendMode: C.default.BlendModes.SCREEN,
+                            emitting: !1,
+                            lifespan: 1e3
+                        }).setDepth(this.device.getMaxDepth() + 1))
+                    }
+                })
+            }, this.device = e, this.load()
+        }
+    },
+    T = {
         frame: {
-            imageId: m("devices/ball/ball_circle.png"),
-            imageUrl: m("devices/ball/ball_circle.png")
+            imageId: t(`devices/ball/ball_circle.png`),
+            imageUrl: t(`devices/ball/ball_circle.png`)
         }
     },
-    C = .75,
-    w = i => {
-        i.container.view.setDepth(g(i.container.view.y + i.options.radius * C, b.DepthSortedCharactersAndDevices))
+    E = .75,
+    D = e => {
+        e.container.view.setDepth(f(e.container.view.y + e.options.radius * E, d.DepthSortedCharactersAndDevices))
     },
-    A = i => {
-        i.container = i.parts.add.container({}), i.container2 = i.parts.add.container({
-            parent: i.container.view
-        }), i.container.view.x = i.x, i.container.view.y = i.y;
-        const a = m(`devices/ball/${i.options.appearance}.png`);
-        i.ball = i.parts.add.sprite({
-            imageId: a,
-            imageUrl: a,
-            parent: i.container2.view,
+    O = e => {
+        e.container = e.parts.add.container({}), e.container2 = e.parts.add.container({
+            parent: e.container.view
+        }), e.container.view.x = e.x, e.container.view.y = e.y;
+        let n = t(`devices/ball/${e.options.appearance}.png`);
+        e.ball = e.parts.add.sprite({
+            imageId: n,
+            imageUrl: n,
+            parent: e.container2.view,
             onReady: t => {
                 t.view.x = 0, t.view.y = 0;
-                const s = x().renderer.pipelines.get("Ball");
-                t.view.setData("uAlpha", i.isPreview ? .6 : 1), t.view.setData("uShiftX", 0), t.view.setData("uShiftY", 0), t.view.setPipeline(s)
+                let n = i().renderer.pipelines.get(`Ball`);
+                t.view.setData(`uAlpha`, e.isPreview ? .6 : 1), t.view.setData(`uShiftX`, 0), t.view.setData(`uShiftY`, 0), t.view.setPipeline(n)
             }
-        }), i.frame = i.parts.add.sprite({
-            ...E.frame,
-            parent: i.container2.view,
-            onReady: t => {
-                t.view.x = 0, t.view.y = 0
+        }), e.frame = e.parts.add.sprite({
+            ...T.frame,
+            parent: e.container2.view,
+            onReady: e => {
+                e.view.x = 0, e.view.y = 0
             }
-        }), i.ball.view.setScale(i.options.radius / 1700), i.frame.view.setScale(i.options.radius / 250), i.cull.ignoreCulling(), w(i), i.shadow = i.shadows.add({
+        }), e.ball.view.setScale(e.options.radius / 1700), e.frame.view.setScale(e.options.radius / 250), e.cull.ignoreCulling(), D(e), e.shadow = e.shadows.add({
             r1: 85,
             r2: 30,
             x: 0,
             y: 75
         })
     },
-    R = 1,
-    _ = .4,
-    B = .2,
-    O = i => {
-        if (!i.shadow) return;
-        i.shadow.x = i.container.view.x, i.shadow.y = i.container.view.y + i.options.radius * .9;
-        const a = 1 - B * i.animations.ballHeight / n.animation.maxHeight;
-        i.shadow.r1 = R * a * i.container2.view.scaleX * i.options.radius, i.shadow.r2 = _ * a * i.container2.view.scaleY * i.options.radius, i.shadow.alphaMultip = i.container2.view.alpha * i.container.view.alpha
+    k = 1,
+    A = .4,
+    j = .2,
+    M = e => {
+        if (!e.shadow || (e.shadow.x = e.container.view.x, e.shadow.y = e.container.view.y + e.options.radius * .9, _.animation.animateShadow === !1)) return;
+        let t = 1 - j * e.animations.ballHeight / _.animation.maxHeight;
+        e.shadow.r1 = k * t * e.container2.view.scaleX * e.options.radius, e.shadow.r2 = A * t * e.container2.view.scaleY * e.options.radius, e.shadow.alphaMultip = e.container2.view.alpha * e.container.view.alpha
     },
-    F = i => {
-        l() && !c() || (i.projectiles.setDynamic(!0), i.projectiles.collidesWithProjectile = a => {
-            const {
-                x: t,
-                y: e,
-                radius: s
-            } = a;
-            if (i.container2.view.alpha < .5 || !i.state.active) return !1;
-            const r = Phaser.Math.Distance.Between(t, e, i.container.view.x, i.container.view.y),
-                p = i.options.radius + s;
-            return r < p
-        }, i.projectiles.onClientPredictedHit = a => {
-            const {
-                x: t,
-                y: e
-            } = a, s = Phaser.Math.Angle.Between(t, e, i.container.view.x, i.container.view.y);
-            i.animations.hit(s)
+    N = e => {
+        (!s() || o()) && (e.projectiles.setDynamic(!0), e.projectiles.collidesWithProjectile = t => {
+            let {
+                x: n,
+                y: r,
+                radius: i
+            } = t;
+            return e.container2.view.alpha < .5 || !e.state.active ? !1 : Phaser.Math.Distance.Between(n, r, e.container.view.x, e.container.view.y) < e.options.radius + i
+        }, e.projectiles.onClientPredictedHit = t => {
+            let {
+                x: n,
+                y: r
+            } = t, i = Phaser.Math.Angle.Between(n, r, e.container.view.x, e.container.view.y);
+            e.animations.hit(i)
         })
-    };
-class ai extends f {
-    constructor(a) {
-        if (super(a), this.onUpdate = t => {
-                this.movement.update(t), this.animations.update(t), this.rotation.update(), O(this), w(this)
-            }, this.onStateChange = t => {
-                t === "x" && this.movement.setTargetX(this.state.x), t === "y" && this.movement.setTargetY(this.state.y), t === "active" && this.updateActive()
-            }, this.updateActive = () => {
-                if (l() && c()) {
-                    this.container.view.alpha = 1;
-                    return
-                }
-                if (l()) {
-                    this.container.view.alpha = this.options.activeOnStart ? 1 : .5;
-                    return
-                }
-                this.container.view.alpha = this.state.active ? 1 : 0
-            }, this.hide = () => {
-                this.tweens.add({
-                    targets: this.container2.view,
-                    scaleX: 0,
-                    scaleY: 0,
-                    ease: Phaser.Math.Easing.Back.In,
-                    duration: 300
-                }), this.tweens.add({
-                    targets: this.container2.view,
-                    alpha: 0,
-                    duration: 100,
-                    delay: 175
-                })
-            }, this.show = () => {
-                this.tweens.add({
-                    targets: this.container2.view,
-                    scaleX: 1,
-                    scaleY: 1,
-                    ease: Phaser.Math.Easing.Back.Out,
-                    duration: 350
-                }), this.tweens.add({
-                    targets: this.container2.view,
-                    alpha: 1,
-                    duration: 100
-                })
-            }, this.fakeProjectileExplosionCallback = t => {
-                const {
-                    x: e,
-                    y: s
-                } = t, r = Phaser.Math.Angle.Between(e, s, this.container.view.x, this.container.view.y);
-                this.animations.hit(r)
-            }, this.onMessage = t => {
-                t.key === "goal" && (this.hide(), setTimeout(() => {
-                    this.isDestroyed || this.particles.burst(this.container.view.x, this.container.view.y, this.container.view.depth)
-                }, 250)), t.key === "reset" && (this.movement.onReset(), this.show())
-            }, A(this), F(this), this.movement = new X(this), this.animations = new Y(this), this.rotation = new I(this), this.particles = new H(this), this.updateActive(), l() && S()) {
-            const t = P(this, "radius");
-            this.visualEditing.add.circle({
-                angle: 0,
-                rotable: !1,
-                radius: this.options.radius,
-                minRadius: t.min,
-                maxRadius: t.max,
-                onChange: e => {
-                    M(e.x, e.y, {
-                        radius: e.radius
+    },
+    P = class extends u {
+        constructor(e) {
+            if (super(e), this.onUpdate = e => {
+                    this.movement.update(e), this.animations.update(e), this.rotation.update(), M(this), D(this)
+                }, this.onStateChange = e => {
+                    e === `x` && this.movement.setTargetX(this.state.x), e === `y` && this.movement.setTargetY(this.state.y), e === `active` && this.updateActive()
+                }, this.updateActive = () => {
+                    s() && o() ? this.container.view.alpha = 1 : s() ? this.container.view.alpha = this.options.activeOnStart ? 1 : .5 : this.container.view.alpha = +!!this.state.active
+                }, this.hide = () => {
+                    this.tweens.add({
+                        targets: this.container2.view,
+                        scaleX: 0,
+                        scaleY: 0,
+                        ease: Phaser.Math.Easing.Back.In,
+                        duration: 300
+                    }), this.tweens.add({
+                        targets: this.container2.view,
+                        alpha: 0,
+                        duration: 100,
+                        delay: 175
                     })
-                }
-            })
+                }, this.show = () => {
+                    this.tweens.add({
+                        targets: this.container2.view,
+                        scaleX: 1,
+                        scaleY: 1,
+                        ease: Phaser.Math.Easing.Back.Out,
+                        duration: 350
+                    }), this.tweens.add({
+                        targets: this.container2.view,
+                        alpha: 1,
+                        duration: 100
+                    })
+                }, this.fakeProjectileExplosionCallback = e => {
+                    let {
+                        x: t,
+                        y: n
+                    } = e, r = Phaser.Math.Angle.Between(t, n, this.container.view.x, this.container.view.y);
+                    this.animations.hit(r)
+                }, this.onMessage = e => {
+                    e.key === `goal` && (this.hide(), setTimeout(() => {
+                        this.isDestroyed || this.particles.burst(this.container.view.x, this.container.view.y, this.container.view.depth)
+                    }, 250)), e.key === `reset` && (this.movement.onReset(), this.show())
+                }, O(this), N(this), this.movement = new g(this), this.animations = new b(this), this.rotation = new S(this), this.particles = new w(this), this.updateActive(), s() && a()) {
+                let e = m(this, `radius`);
+                this.visualEditing.add.circle({
+                    angle: 0,
+                    rotable: !1,
+                    radius: this.options.radius,
+                    minRadius: e.min,
+                    maxRadius: e.max,
+                    onChange: e => {
+                        p(e.x, e.y, {
+                            radius: e.radius
+                        })
+                    }
+                })
+            }
         }
-    }
-}
+    };
 export {
-    ai as BallDevice, ai as
+    P as BallDevice, P as
     default
 };

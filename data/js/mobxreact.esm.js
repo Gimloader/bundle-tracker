@@ -1,44 +1,52 @@
 import {
-    r as s,
-    m as Y,
-    ce as N,
-    cf as V,
-    x as f,
-    cg as S,
-    bf as G,
-    ch as R,
-    ci as O,
-    cj as Z,
-    ck as J,
-    cl as Q,
-    o as ee
-} from "./_index.js";
-if (!s.useState) throw new Error("mobx-react-lite requires React with Hooks support");
-if (!Y) throw new Error("mobx-react-lite@3 requires mobx at least version 6 to be available");
+    o as e
+} from "./rolldown-runtime.js";
+import {
+    t
+} from "./react-1.js";
+import {
+    l as n
+} from "./assertThisInitialized.js";
+import {
+    a as r,
+    d as i,
+    f as a,
+    l as o,
+    n as s,
+    o as c,
+    p as l,
+    r as u,
+    s as d,
+    u as ee
+} from "./decorate.js";
+var f = e(t());
+if (!f.useState) throw Error(`mobx-react-lite requires React with Hooks support`);
+if (!a) throw Error(`mobx-react-lite@3 requires mobx at least version 6 to be available`);
+var p = e(n());
 
-function re(e) {
+function m(e) {
     e()
 }
 
 function te(e) {
-    e || (e = re), N({
+    e || (e = m), o({
         reactionScheduler: e
     })
 }
 
-function ne(e) {
-    return V(e)
+function h(e) {
+    return i(e)
 }
-var oe = 1e4,
-    ie = 1e4,
-    ae = (function() {
-        function e(r) {
+var ne = 1e4,
+    re = 1e4,
+    ie = function() {
+        function e(e) {
             var t = this;
             Object.defineProperty(this, "finalize", {
                 enumerable: !0,
                 configurable: !0,
                 writable: !0,
-                value: r
+                value: e
             }), Object.defineProperty(this, "registrations", {
                 enumerable: !0,
                 configurable: !0,
@@ -53,11 +61,11 @@ var oe = 1e4,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0,
-                value: function(n) {
-                    n === void 0 && (n = oe), clearTimeout(t.sweepTimeout), t.sweepTimeout = void 0;
-                    var o = Date.now();
-                    t.registrations.forEach(function(a, i) {
-                        o - a.registeredAt >= n && (t.finalize(a.value), t.registrations.delete(i))
+                value: function(e) {
+                    e === void 0 && (e = ne), clearTimeout(t.sweepTimeout), t.sweepTimeout = void 0;
+                    var n = Date.now();
+                    t.registrations.forEach(function(r, i) {
+                        n - r.registeredAt >= e && (t.finalize(r.value), t.registrations.delete(i))
                     }), t.registrations.size > 0 && t.scheduleSweep()
                 }
             }), Object.defineProperty(this, "finalizeAllImmediately", {
@@ -73,7 +81,7 @@ var oe = 1e4,
             enumerable: !1,
             configurable: !0,
             writable: !0,
-            value: function(r, t, n) {
+            value: function(e, t, n) {
                 this.registrations.set(n, {
                     value: t,
                     registeredAt: Date.now()
@@ -83,117 +91,119 @@ var oe = 1e4,
             enumerable: !1,
             configurable: !0,
             writable: !0,
-            value: function(r) {
-                this.registrations.delete(r)
+            value: function(e) {
+                this.registrations.delete(e)
             }
         }), Object.defineProperty(e.prototype, "scheduleSweep", {
             enumerable: !1,
             configurable: !0,
             writable: !0,
             value: function() {
-                this.sweepTimeout === void 0 && (this.sweepTimeout = setTimeout(this.sweep, ie))
+                this.sweepTimeout === void 0 && (this.sweepTimeout = setTimeout(this.sweep, re))
             }
         }), e
-    })(),
-    ue = typeof FinalizationRegistry < "u" ? FinalizationRegistry : ae,
-    T = new ue(function(e) {
-        var r;
-        (r = e.reaction) === null || r === void 0 || r.dispose(), e.reaction = null
+    }(),
+    g = new(typeof FinalizationRegistry < `u` ? FinalizationRegistry : ie)(function(e) {
+        var t;
+        (t = e.reaction) == null || t.dispose(), e.reaction = null
     }),
-    D = function(e, r) {
-        var t = typeof Symbol == "function" && e[Symbol.iterator];
-        if (!t) return e;
-        var n = t.call(e),
-            o, a = [],
-            i;
-        try {
-            for (;
-                (r === void 0 || r-- > 0) && !(o = n.next()).done;) a.push(o.value)
-        } catch (c) {
-            i = {
-                error: c
-            }
-        } finally {
-            try {
-                o && !o.done && (t = n.return) && t.call(n)
-            } finally {
-                if (i) throw i.error
-            }
-        }
-        return a
-    };
+    _ = !1;
 
-function M(e) {
-    return "observer".concat(e)
+function v() {
+    return _
 }
-var ce = (function() {
+var y = function(e, t) {
+    var n = typeof Symbol == `function` && e[Symbol.iterator];
+    if (!n) return e;
+    var r = n.call(e),
+        i, a = [],
+        o;
+    try {
+        for (;
+            (t === void 0 || t-- > 0) && !(i = r.next()).done;) a.push(i.value)
+    } catch (e) {
+        o = {
+            error: e
+        }
+    } finally {
+        try {
+            i && !i.done && (n = r.return) && n.call(r)
+        } finally {
+            if (o) throw o.error
+        }
+    }
+    return a
+};
+
+function b(e) {
+    return `observer${e}`
+}
+var ae = function() {
     function e() {}
     return e
-})();
+}();
 
-function se() {
-    return new ce
+function x() {
+    return new ae
 }
 
-function fe(e, r) {
-    r === void 0 && (r = "observed");
-    var t = D(f.useState(se), 1),
-        n = t[0],
-        o = D(f.useState(), 2),
-        a = o[1],
+function oe(e, t) {
+    if (t === void 0 && (t = `observed`), v()) return e();
+    var n = y(f.useState(x), 1)[0],
+        r = y(f.useState(), 2)[1],
         i = function() {
-            return a([])
+            return r([])
         },
-        c = f.useRef(null);
-    c.current || (c.current = {
+        a = f.useRef(null);
+    a.current || (a.current = {
         reaction: null,
         mounted: !1,
         changedBeforeMount: !1
     });
-    var u = c.current;
-    u.reaction || (u.reaction = new S(M(r), function() {
-        u.mounted ? i() : u.changedBeforeMount = !0
-    }), T.register(n, u, u)), f.useDebugValue(u.reaction, ne), f.useEffect(function() {
-        return T.unregister(u), u.mounted = !0, u.reaction ? u.changedBeforeMount && (u.changedBeforeMount = !1, i()) : (u.reaction = new S(M(r), function() {
+    var o = a.current;
+    o.reaction || (o.reaction = new u(b(t), function() {
+        o.mounted ? i() : o.changedBeforeMount = !0
+    }), g.register(n, o, o)), f.useDebugValue(o.reaction, h), f.useEffect(function() {
+        return g.unregister(o), o.mounted = !0, o.reaction ? o.changedBeforeMount && (o.changedBeforeMount = !1, i()) : (o.reaction = new u(b(t), function() {
                 i()
             }), i()),
             function() {
-                u.reaction.dispose(), u.reaction = null, u.mounted = !1, u.changedBeforeMount = !1
+                o.reaction.dispose(), o.reaction = null, o.mounted = !1, o.changedBeforeMount = !1
             }
     }, []);
-    var l, v;
-    if (u.reaction.track(function() {
+    var s, c;
+    if (o.reaction.track(function() {
             try {
-                l = e()
-            } catch (g) {
-                v = g
+                s = e()
+            } catch (e) {
+                c = e
             }
-        }), v) throw v;
-    return l
+        }), c) throw c;
+    return s
 }
-var K = typeof Symbol == "function" && Symbol.for,
-    $ = K ? Symbol.for("react.forward_ref") : typeof s.forwardRef == "function" && s.forwardRef(function(e) {
+var S = typeof Symbol == `function` && Symbol.for,
+    C = S ? Symbol.for(`react.forward_ref`) : typeof f.forwardRef == `function` && (0, f.forwardRef)(function(e) {
         return null
     }).$$typeof,
-    F = K ? Symbol.for("react.memo") : typeof s.memo == "function" && s.memo(function(e) {
+    w = S ? Symbol.for(`react.memo`) : typeof f.memo == `function` && (0, f.memo)(function(e) {
         return null
     }).$$typeof;
 
-function le(e, r) {
-    var t;
-    if (F && e.$$typeof === F) throw new Error("[mobx-react-lite] You are trying to use `observer` on a function component wrapped in either another `observer` or `React.memo`. The observer already applies 'React.memo' for you.");
-    var n = (t = void 0) !== null && t !== void 0 ? t : !1,
-        o = e,
-        a = e.displayName || e.name;
-    if ($ && e.$$typeof === $ && (n = !0, o = e.render, typeof o != "function")) throw new Error("[mobx-react-lite] `render` property of ForwardRef was not a function");
-    var i = function(c, u) {
-        return fe(function() {
-            return o(c, u)
-        }, a)
+function T(e, t) {
+    if (w && e.$$typeof === w) throw Error("[mobx-react-lite] You are trying to use `observer` on a function component wrapped in either another `observer` or `React.memo`. The observer already applies 'React.memo' for you.");
+    if (v()) return e;
+    var n = (t == null ? void 0 : t.forwardRef) ?? !1,
+        r = e,
+        i = e.displayName || e.name;
+    if (C && e.$$typeof === C && (n = !0, r = e.render, typeof r != `function`)) throw Error("[mobx-react-lite] `render` property of ForwardRef was not a function");
+    var a = function(e, t) {
+        return oe(function() {
+            return r(e, t)
+        }, i)
     };
-    return a !== "" && (i.displayName = a), e.contextTypes && (i.contextTypes = e.contextTypes), n && (i = s.forwardRef(i)), i = s.memo(i), pe(e, i), i
+    return i !== `` && (a.displayName = i), e.contextTypes && (a.contextTypes = e.contextTypes), n && (a = (0, f.forwardRef)(a)), a = (0, f.memo)(a), D(e, a), a
 }
-var de = {
+var E = {
     $$typeof: !0,
     render: !0,
     compare: !0,
@@ -201,42 +211,48 @@ var de = {
     displayName: !0
 };
 
-function pe(e, r) {
-    Object.keys(e).forEach(function(t) {
-        de[t] || Object.defineProperty(r, t, Object.getOwnPropertyDescriptor(e, t))
+function D(e, t) {
+    Object.keys(e).forEach(function(n) {
+        E[n] || Object.defineProperty(t, n, Object.getOwnPropertyDescriptor(e, n))
     })
 }
-var P;
-te(G.unstable_batchedUpdates);
-P = T.finalizeAllImmediately;
-var B = 0;
 
-function ve(e) {
-    if (typeof Symbol == "function") return Symbol(e);
-    var r = "__$mobx-react " + e + " (" + B + ")";
-    return B++, r
+function se(e, t) {
+    return (0, f.useState)(function() {
+        return l(e(), t, {
+            autoBind: !0
+        })
+    })[0]
 }
-var j = {};
+te(p.unstable_batchedUpdates), g.finalizeAllImmediately;
+var O = 0;
 
-function p(e) {
-    return j[e] || (j[e] = ve(e)), j[e]
+function k(e) {
+    if (typeof Symbol == `function`) return Symbol(e);
+    var t = `__$mobx-react ` + e + ` (` + O + `)`;
+    return O++, t
+}
+var A = {};
+
+function j(e) {
+    return A[e] || (A[e] = k(e)), A[e]
 }
 
-function L(e, r) {
-    if (I(e, r)) return !0;
-    if (typeof e != "object" || e === null || typeof r != "object" || r === null) return !1;
-    var t = Object.keys(e),
-        n = Object.keys(r);
-    if (t.length !== n.length) return !1;
-    for (var o = 0; o < t.length; o++)
-        if (!Object.hasOwnProperty.call(r, t[o]) || !I(e[t[o]], r[t[o]])) return !1;
+function M(e, t) {
+    if (N(e, t)) return !0;
+    if (typeof e != `object` || !e || typeof t != `object` || !t) return !1;
+    var n = Object.keys(e),
+        r = Object.keys(t);
+    if (n.length !== r.length) return !1;
+    for (var i = 0; i < n.length; i++)
+        if (!Object.hasOwnProperty.call(t, n[i]) || !N(e[n[i]], t[n[i]])) return !1;
     return !0
 }
 
-function I(e, r) {
-    return e === r ? e !== 0 || 1 / e === 1 / r : e !== e && r !== r
+function N(e, t) {
+    return e === t ? e !== 0 || 1 / e == 1 / t : e !== e && t !== t
 }
-var be = {
+var ce = {
     $$typeof: 1,
     render: 1,
     compare: 1,
@@ -253,256 +269,254 @@ var be = {
     propTypes: 1
 };
 
-function ye(e, r) {
-    var t = Object.getOwnPropertyNames(Object.getPrototypeOf(e));
-    Object.getOwnPropertyNames(e).forEach(function(n) {
-        !be[n] && t.indexOf(n) === -1 && Object.defineProperty(r, n, Object.getOwnPropertyDescriptor(e, n))
+function le(e, t) {
+    var n = Object.getOwnPropertyNames(Object.getPrototypeOf(e));
+    Object.getOwnPropertyNames(e).forEach(function(r) {
+        !ce[r] && n.indexOf(r) === -1 && Object.defineProperty(t, r, Object.getOwnPropertyDescriptor(e, r))
     })
 }
 
-function d(e, r, t) {
-    Object.hasOwnProperty.call(e, r) ? e[r] = t : Object.defineProperty(e, r, {
+function P(e, t, n) {
+    Object.hasOwnProperty.call(e, t) ? e[t] = n : Object.defineProperty(e, t, {
         enumerable: !1,
         configurable: !0,
         writable: !0,
-        value: t
+        value: n
     })
 }
-var U = p("patchMixins"),
-    W = p("patchedDefinition");
+var F = j(`patchMixins`),
+    I = j(`patchedDefinition`);
 
-function he(e, r) {
-    var t = e[U] = e[U] || {},
-        n = t[r] = t[r] || {};
-    return n.locks = n.locks || 0, n.methods = n.methods || [], n
+function ue(e, t) {
+    var n = e[F] = e[F] || {},
+        r = n[t] = n[t] || {};
+    return r.locks = r.locks || 0, r.methods = r.methods || [], r
 }
 
-function z(e, r) {
-    for (var t = this, n = arguments.length, o = new Array(n > 2 ? n - 2 : 0), a = 2; a < n; a++) o[a - 2] = arguments[a];
-    r.locks++;
+function L(e, t) {
+    var n = this,
+        r = [...arguments].slice(2);
+    t.locks++;
     try {
         var i;
-        return e != null && (i = e.apply(this, o)), i
+        return e != null && (i = e.apply(this, r)), i
     } finally {
-        r.locks--, r.locks === 0 && r.methods.forEach(function(c) {
-            c.apply(t, o)
+        t.locks--, t.locks === 0 && t.methods.forEach(function(e) {
+            e.apply(n, r)
         })
     }
 }
 
-function C(e, r) {
-    var t = function() {
-        for (var o = arguments.length, a = new Array(o), i = 0; i < o; i++) a[i] = arguments[i];
-        z.call.apply(z, [this, e, r].concat(a))
-    };
-    return t
-}
-
-function k(e, r, t) {
-    var n = he(e, r);
-    n.methods.indexOf(t) < 0 && n.methods.push(t);
-    var o = Object.getOwnPropertyDescriptor(e, r);
-    if (!(o && o[W])) {
-        var a = e[r],
-            i = X(e, r, o ? o.enumerable : void 0, n, a);
-        Object.defineProperty(e, r, i)
+function R(e, t) {
+    return function() {
+        var n = [...arguments];
+        L.call.apply(L, [this, e, t].concat(n))
     }
 }
 
-function X(e, r, t, n, o) {
-    var a, i = C(o, n);
-    return a = {}, a[W] = !0, a.get = function() {
-        return i
-    }, a.set = function(u) {
-        if (this === e) i = C(u, n);
+function z(e, t, n) {
+    var r = ue(e, t);
+    r.methods.indexOf(n) < 0 && r.methods.push(n);
+    var i = Object.getOwnPropertyDescriptor(e, t);
+    if (!(i && i[I])) {
+        var a = e[t],
+            o = B(e, t, i ? i.enumerable : void 0, r, a);
+        Object.defineProperty(e, t, o)
+    }
+}
+
+function B(e, t, n, r, i) {
+    var a, o = R(i, r);
+    return a = {}, a[I] = !0, a.get = function() {
+        return o
+    }, a.set = function(i) {
+        if (this === e) o = R(i, r);
         else {
-            var l = X(this, r, t, n, u);
-            Object.defineProperty(this, r, l)
+            var a = B(this, t, n, r, i);
+            Object.defineProperty(this, t, a)
         }
-    }, a.configurable = !0, a.enumerable = t, a
+    }, a.configurable = !0, a.enumerable = n, a
 }
-var b = Q || "$mobx",
-    A = p("isMobXReactObserver"),
-    E = p("isUnmounted"),
-    m = p("skipRender"),
-    y = p("isForcingUpdate");
+var V = s || `$mobx`,
+    H = j(`isMobXReactObserver`),
+    U = j(`isUnmounted`),
+    W = j(`skipRender`),
+    G = j(`isForcingUpdate`);
 
-function me(e) {
-    var r = e.prototype;
-    if (e[A]) {
-        var t = h(r);
-        console.warn("The provided component class (" + t + `)
+function de(e) {
+    var t = e.prototype;
+    if (e[H]) {
+        var n = K(t);
+        console.warn(`The provided component class (` + n + `)
                 has already been declared as an observer component.`)
-    } else e[A] = !0;
-    if (r.componentWillReact) throw new Error("The componentWillReact life-cycle event is no longer supported");
-    if (e.__proto__ !== s.PureComponent) {
-        if (!r.shouldComponentUpdate) r.shouldComponentUpdate = q;
-        else if (r.shouldComponentUpdate !== q) throw new Error("It is not allowed to use shouldComponentUpdate in observer based components.")
+    } else e[H] = !0;
+    if (t.componentWillReact) throw Error(`The componentWillReact life-cycle event is no longer supported`);
+    if (e.__proto__ !== f.PureComponent) {
+        if (!t.shouldComponentUpdate) t.shouldComponentUpdate = q;
+        else if (t.shouldComponentUpdate !== q) throw Error(`It is not allowed to use shouldComponentUpdate in observer based components.`)
     }
-    x(r, "props"), x(r, "state"), e.contextType && x(r, "context");
-    var n = r.render;
-    if (typeof n != "function") {
-        var o = h(r);
-        throw new Error("[mobx-react] class component (" + o + ") is missing `render` method.\n`observer` requires `render` being a function defined on prototype.\n`render = () => {}` or `render = function() {}` is not supported.")
+    J(t, `props`), J(t, `state`), e.contextType && J(t, `context`);
+    var r = t.render;
+    if (typeof r != `function`) {
+        var i = K(t);
+        throw Error(`[mobx-react] class component (` + i + ") is missing `render` method.\n`observer` requires `render` being a function defined on prototype.\n`render = () => {}` or `render = function() {}` is not supported.")
     }
-    return r.render = function() {
-        return this.render = we.call(this, n), this.render()
-    }, k(r, "componentDidMount", function() {
-        this[E] = !1, this.render[b] || s.Component.prototype.forceUpdate.call(this)
-    }), k(r, "componentWillUnmount", function() {
-        var a = this.render[b];
-        if (a) a.dispose(), this.render[b] = null;
-        else {
-            var i = h(this);
-            console.warn("The reactive render of an observer class component (" + i + `)
+    return t.render = function() {
+        return this.render = v() ? r : fe.call(this, r), this.render()
+    }, z(t, `componentDidMount`, function() {
+        this[U] = !1, this.render[V] || f.Component.prototype.forceUpdate.call(this)
+    }), z(t, `componentWillUnmount`, function() {
+        if (!v()) {
+            var e = this.render[V];
+            if (e) e.dispose(), this.render[V] = null;
+            else {
+                var t = K(this);
+                console.warn(`The reactive render of an observer class component (` + t + `)
                 was overridden after MobX attached. This may result in a memory leak if the
                 overridden reactive render was not properly disposed.`)
+            }
+            this[U] = !0
         }
-        this[E] = !0
     }), e
 }
 
-function h(e) {
-    return e.displayName || e.name || e.constructor && (e.constructor.displayName || e.constructor.name) || "<component>"
+function K(e) {
+    return e.displayName || e.name || e.constructor && (e.constructor.displayName || e.constructor.name) || `<component>`
 }
 
-function we(e) {
-    var r = this;
-    d(this, m, !1), d(this, y, !1);
-    var t = h(this),
-        n = e.bind(this),
-        o = !1,
-        a = function() {
-            var u = new S(t + ".render()", function() {
-                if (!o && (o = !0, r[E] !== !0)) {
-                    var l = !0;
+function fe(e) {
+    var t = this;
+    P(this, W, !1), P(this, G, !1);
+    var n = K(this),
+        i = e.bind(this),
+        a = !1,
+        o = function() {
+            var e = new u(n + `.render()`, function() {
+                if (!a && (a = !0, t[U] !== !0)) {
+                    var n = !0;
                     try {
-                        d(r, y, !0), r[m] || s.Component.prototype.forceUpdate.call(r), l = !1
+                        P(t, G, !0), t[W] || f.Component.prototype.forceUpdate.call(t), n = !1
                     } finally {
-                        d(r, y, !1), l && (u.dispose(), r.render[b] = null)
+                        P(t, G, !1), n && (e.dispose(), t.render[V] = null)
                     }
                 }
             });
-            return u.reactComponent = r, u
+            return e.reactComponent = t, e
         };
 
-    function i() {
-        var c;
-        o = !1;
-        var u = (c = i[b]) != null ? c : i[b] = a(),
-            l = void 0,
-            v = void 0;
-        if (u.track(function() {
+    function s() {
+        a = !1;
+        var e = s[V] ?? (s[V] = o()),
+            t = void 0,
+            n = void 0;
+        if (e.track(function() {
                 try {
-                    v = J(!1, n)
-                } catch (g) {
-                    l = g
+                    n = r(!1, i)
+                } catch (e) {
+                    t = e
                 }
-            }), l) throw l;
-        return v
+            }), t) throw t;
+        return n
     }
-    return i
+    return s
 }
 
-function q(e, r) {
-    return this.state !== r ? !0 : !L(this.props, e)
+function q(e, t) {
+    return v() && console.warn(`[mobx-react] It seems that a re-rendering of a React component is triggered while in static (server-side) mode. Please make sure components are rendered only once server-side.`), this.state !== t || !M(this.props, e)
 }
 
-function x(e, r) {
-    var t = p("reactProp_" + r + "_valueHolder"),
-        n = p("reactProp_" + r + "_atomHolder");
+function J(e, t) {
+    var n = j(`reactProp_` + t + `_valueHolder`),
+        r = j(`reactProp_` + t + `_atomHolder`);
 
-    function o() {
-        return this[n] || d(this, n, Z("reactive " + r)), this[n]
+    function i() {
+        return this[r] || P(this, r, ee(`reactive ` + t)), this[r]
     }
-    Object.defineProperty(e, r, {
+    Object.defineProperty(e, t, {
         configurable: !0,
         enumerable: !0,
         get: function() {
-            var i = !1;
-            return R && O && (i = R(!0)), o.call(this).reportObserved(), R && O && O(i), this[t]
+            var e = !1;
+            return d && c && (e = d(!0)), i.call(this).reportObserved(), d && c && c(e), this[n]
         },
-        set: function(i) {
-            !this[y] && !L(this[t], i) ? (d(this, t, i), d(this, m, !0), o.call(this).reportChanged(), d(this, m, !1)) : d(this, t, i)
+        set: function(e) {
+            !this[G] && !M(this[n], e) ? (P(this, n, e), P(this, W, !0), i.call(this).reportChanged(), P(this, W, !1)) : P(this, n, e)
         }
     })
 }
 
-function ge(e) {
-    return e.isMobxInjector === !0 && console.warn("Mobx observer: You are trying to use `observer` on a component that already has `inject`. Please apply `observer` before applying `inject`"), Object.prototype.isPrototypeOf.call(s.Component, e) || Object.prototype.isPrototypeOf.call(s.PureComponent, e) ? me(e) : le(e)
+function Y(e) {
+    return e.isMobxInjector === !0 && console.warn("Mobx observer: You are trying to use `observer` on a component that already has `inject`. Please apply `observer` before applying `inject`"), Object.prototype.isPrototypeOf.call(f.Component, e) || Object.prototype.isPrototypeOf.call(f.PureComponent, e) ? de(e) : T(e)
 }
 
-function w() {
-    return w = Object.assign || function(e) {
-        for (var r = 1; r < arguments.length; r++) {
-            var t = arguments[r];
-            for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n])
+function X() {
+    return X = Object.assign || function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+            var n = arguments[t];
+            for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
         }
         return e
-    }, w.apply(this, arguments)
+    }, X.apply(this, arguments)
 }
 
-function Re(e, r) {
+function pe(e, t) {
     if (e == null) return {};
-    var t = {},
-        n = Object.keys(e),
-        o, a;
-    for (a = 0; a < n.length; a++) o = n[a], !(r.indexOf(o) >= 0) && (t[o] = e[o]);
-    return t
+    for (var n = {}, r = Object.keys(e), i, a = 0; a < r.length; a++) i = r[a], !(t.indexOf(i) >= 0) && (n[i] = e[i]);
+    return n
 }
-var Oe = ["children"],
-    _ = f.createContext({});
+var me = [`children`],
+    Z = f.createContext({});
 
-function Pe(e) {
-    var r = e.children,
-        t = Re(e, Oe),
-        n = f.useContext(_),
-        o = f.useRef(w({}, n, t)),
-        a = o.current;
-    return f.createElement(_.Provider, {
-        value: a
-    }, r)
+function Q(e) {
+    var t = e.children,
+        n = pe(e, me),
+        r = f.useContext(Z),
+        i = f.useRef(X({}, r, n)).current;
+    return f.createElement(Z.Provider, {
+        value: i
+    }, t)
 }
-Pe.displayName = "MobXProvider";
+Q.displayName = `MobXProvider`;
 
-function H(e, r, t, n) {
-    var o = f.forwardRef(function(a, i) {
-        var c = w({}, a),
-            u = f.useContext(_);
-        return Object.assign(c, e(u || {}, c) || {}), i && (c.ref = i), f.createElement(r, c)
+function $(e, t, n, r) {
+    var i = f.forwardRef(function(n, r) {
+        var i = X({}, n),
+            a = f.useContext(Z);
+        return Object.assign(i, e(a || {}, i) || {}), r && (i.ref = r), f.createElement(t, i)
     });
-    return n && (o = ge(o)), o.isMobxInjector = !0, ye(r, o), o.wrappedComponent = r, o.displayName = je(r, t), o
+    return r && (i = Y(i)), i.isMobxInjector = !0, le(t, i), i.wrappedComponent = t, i.displayName = he(t, n), i
 }
 
-function je(e, r) {
-    var t, n = e.displayName || e.name || e.constructor && e.constructor.name || "Component";
-    return r ? t = "inject-with-" + r + "(" + n + ")" : t = "inject(" + n + ")", t
+function he(e, t) {
+    var n, r = e.displayName || e.name || e.constructor && e.constructor.name || `Component`;
+    return n = t ? `inject-with-` + t + `(` + r + `)` : `inject(` + r + `)`, n
 }
 
-function xe(e) {
-    return function(r, t) {
-        return e.forEach(function(n) {
-            if (!(n in t)) {
-                if (!(n in r)) throw new Error("MobX injector: Store '" + n + "' is not available! Make sure it is provided by some Provider");
-                t[n] = r[n]
+function ge(e) {
+    return function(t, n) {
+        return e.forEach(function(e) {
+            if (!(e in n)) {
+                if (!(e in t)) throw Error(`MobX injector: Store '` + e + `' is not available! Make sure it is provided by some Provider`);
+                n[e] = t[e]
             }
-        }), t
+        }), n
     }
 }
 
-function Te() {
-    for (var e = arguments.length, r = new Array(e), t = 0; t < e; t++) r[t] = arguments[t];
-    if (typeof arguments[0] == "function") {
-        var n = arguments[0];
-        return function(o) {
-            return H(n, o, n.name, !0)
+function _e() {
+    var e = [...arguments];
+    if (typeof arguments[0] == `function`) {
+        var t = arguments[0];
+        return function(e) {
+            return $(t, e, t.name, !0)
         }
-    } else return function(o) {
-        return H(xe(r), o, r.join("-"), !1)
+    }
+    return function(t) {
+        return $(ge(e), t, e.join(`-`), !1)
     }
 }
-if (!s.Component) throw new Error("mobx-react requires React to be available");
-if (!ee) throw new Error("mobx-react requires mobx to be available");
+if (!f.Component) throw Error(`mobx-react requires React to be available`);
+if (!l) throw Error(`mobx-react requires mobx to be available`);
 export {
-    Pe as P, le as a, Te as i, ge as o
+    T as a, se as i, _e as n, Y as r, Q as t
 };

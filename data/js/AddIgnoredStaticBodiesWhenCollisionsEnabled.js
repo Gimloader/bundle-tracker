@@ -1,12 +1,12 @@
 import {
-    bg as i
-} from "./App-41.js";
-const t = o => {
-    o.colliders.forEach(d => {
-        const e = d.bodyId;
-        i(e)
+    b as e
+} from "./Device.js";
+var t = t => {
+    t.colliders.forEach(t => {
+        let n = t.bodyId;
+        e(n)
     })
 };
 export {
-    t as A
+    t
 };

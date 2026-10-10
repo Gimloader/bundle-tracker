@@ -1,46 +1,48 @@
 import {
-    P as c,
-    W as d,
-    E as r,
-    V as p
-} from "./App-41.js";
+    t as e
+} from "./FetchScene.js";
 import {
-    a as l
-} from "./FixSpinePlugin.js";
-const v = n => {
-        l().worldManager.devices.getDeviceById(n.id) && c(n)
+    a as t,
+    t as n
+} from "./PlaceDevice.js";
+import {
+    n as r,
+    t as i
+} from "./FetchVisualEditingPreview.js";
+var a = t => {
+        e().worldManager.devices.getDeviceById(t.id) && n(t)
     },
-    h = (n, a, e) => {
-        const i = d(),
-            t = r();
-        if (!t || !i) return;
-        const s = t.layers.isOnNaturalDepth() ? void 0 : a + t.layers.getDepthShift();
-        v({
-            deviceOption: i.deviceOption,
-            id: p.previewId,
-            x: n,
-            y: a,
-            depth: s,
-            layerId: t.layers.getLayer(),
-            name: i.name,
+    o = (e, n, o) => {
+        let s = i(),
+            c = t();
+        if (!c || !s) return;
+        let l = c.layers.isOnNaturalDepth() ? void 0 : n + c.layers.getDepthShift();
+        a({
+            deviceOption: s.deviceOption,
+            id: r.previewId,
+            x: e,
+            y: n,
+            depth: l,
+            layerId: c.layers.getLayer(),
+            name: s.name,
             isPreview: !0,
             options: {
-                ...i.options,
-                ...e
+                ...s.options,
+                ...o
             },
             placedByClient: !0,
-            state: i.deviceOption.defaultState
+            state: s.deviceOption.defaultState
         })
     },
-    D = (n, a) => {
-        var i, t, s;
-        const e = n.deviceOption.optionSchema.options.find(o => o.key === a);
+    s = (e, t) => {
+        var n, r, i;
+        let a = e.deviceOption.optionSchema.options.find(e => e.key === t);
         return {
-            min: (i = e == null ? void 0 : e.option.props) == null ? void 0 : i.min,
-            max: (t = e == null ? void 0 : e.option.props) == null ? void 0 : t.max,
-            step: (s = e == null ? void 0 : e.option.props) == null ? void 0 : s.step
+            min: a == null || (n = a.option.props) == null ? void 0 : n.min,
+            max: a == null || (r = a.option.props) == null ? void 0 : r.max,
+            step: a == null || (i = a.option.props) == null ? void 0 : i.step
         }
     };
 export {
-    D as F, h as R
+    o as n, s as t
 };

@@ -1,139 +1,91 @@
 import {
-    G as i
+    c as e
+} from "./utils.js";
+import {
+    t
 } from "./GetAssetPath.js";
 import {
-    g as l,
-    S as c,
-    e as w,
-    j as y
-} from "./FixSpinePlugin.js";
-import {
-    aK as A,
-    T as I,
-    by as f,
-    bz as h,
-    bA as u,
-    a_ as b,
-    a$ as C
-} from "./App-41.js";
-import {
-    p as g
+    t as n
 } from "./playSound.js";
 import {
-    b$ as d
-} from "./_index.js";
-import "./MapModeType.js";
-import "./MapStyle.js";
-import "./MapSound.js";
-import "./howler.js";
-import "./Button.js";
-import "./polished.esm.js";
-import "./inheritsLoose.js";
-import "./mobxreact.esm.js";
-import "./index-21.js";
-import "./QuizTypes.js";
-import "./TutorialConsts.js";
-import "./ActionButton.js";
-import "./index-5.js";
-import "./index-18.js";
-import "./context.js";
-import "./FontAwesomeIcon.js";
-import "./Centered.js";
-import "./CapitalizeFirstLetter.js";
-import "./index-4.js";
-import "./motion.js";
-import "./index-2.js";
-import "./index-14.js";
-import "./EditOutlined.js";
-import "./styleChecker.js";
-import "./index-3.js";
-import "./CheckOutlined.js";
-import "./CopyOutlined.js";
-import "./SixteenByNineScaler.js";
-import "./index-20.js";
-import "./index-22.js";
-import "./index-1.js";
-import "./progress.js";
-import "./ElementIds.js";
-import "./SeasonTicketName.js";
-import "./useQuery.js";
-import "./___vite-browser-external_commonjs-proxy.js";
-import "./util-1.js";
-import "./util-2.js";
-import "./Shortcut.js";
-import "./Names.js";
-import "./useWillUnmount.js";
-import "./CircularProgress.js";
-import "./clsx.m.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
-import "./index-17.js";
-import "./use-force-update.js";
-import "./GimkitLiveQuestion.js";
-import "./Text.js";
-import "./getCloudinaryUrl.js";
-import "./LazyLatexRenderer.js";
-import "./Tooltip.js";
-import "./use-motion-value.js";
-import "./index-9.js";
-import "./index-23.js";
-import "./useIntervalWhen.js";
-import "./index-10.js";
-import "./move.js";
-import "./react-flip-move.es.js";
-import "./sounds.js";
-import "./App-5.js";
-import "./AnimatedBackground-2.js";
-import "./useDebouncedValue.js";
-import "./CloseCircleOutlined.js";
-import "./FillRemainingSpace.js";
-import "./index-24.js";
-var r = (o => (o.warning = "warning", o.outOfItem = "outOfItem", o))(r || {});
-class zt extends A {
-    constructor(v) {
-        if (super(v), this.onMessage = t => {
-                var p, m, n, s, a;
-                ((p = t == null ? void 0 : t.data) == null ? void 0 : p.characterId) === I() && (t.key === r.warning ? (this.options.showWarningAlert && g({
-                    path: i("sounds/alert-notification.mp3"),
-                    volume: l({
-                        type: c.soundEffect,
-                        volume: .4
-                    })
-                }), ((m = this.options.warningAlertTitle) != null && m.length || (n = this.options.warningAlertContent) != null && n.length) && f({
-                    id: d(),
-                    title: this.options.warningAlertTitle,
-                    description: this.options.warningAlertContent,
-                    type: u.warning,
-                    placement: h.topRight
-                })) : t.key === r.outOfItem && (g({
-                    path: i("sounds/power-down.mp3"),
-                    volume: l({
-                        type: c.soundEffect,
-                        volume: .32
-                    })
-                }), ((s = this.options.outOfItemAlertTitle) != null && s.length || (a = this.options.outOfItemAlertTitle) != null && a.length) && f({
-                    id: d(),
-                    title: this.options.outOfItemAlertTitle,
-                    description: this.options.outOfItemAlertContent,
-                    type: u.error,
-                    placement: h.topRight
-                })))
-            }, w() || y()) return;
-        const e = C.Manager;
-        new b({
-            device: this,
-            baseColor: e.baseColor,
-            boxColor: e.boxColor,
-            content: {
-                icon: {
-                    image: i("devices/movement_meter/icon.png"),
-                    scale: 1
+    o as r,
+    s as i
+} from "./FixPhaserBootProcess.js";
+import {
+    t as a
+} from "./isVersion.js";
+import {
+    t as o
+} from "./InPhase.js";
+import {
+    t as s
+} from "./FetchMyId.js";
+import {
+    t as c
+} from "./Device.js";
+import {
+    Ft as l,
+    It as u,
+    Ot as d,
+    Pt as f,
+    Tt as p
+} from "./App-42.js";
+var m = function(e) {
+        return e.warning = `warning`, e.outOfItem = `outOfItem`, e
+    }({}),
+    h = class extends c {
+        constructor(c) {
+            if (super(c), this.onMessage = a => {
+                    var o;
+                    if ((a == null || (o = a.data) == null ? void 0 : o.characterId) === s()) {
+                        if (a.key === m.warning) {
+                            var c, d;
+                            this.options.showWarningAlert && n({
+                                path: t(`sounds/alert-notification.mp3`),
+                                volume: i({
+                                    type: r.soundEffect,
+                                    volume: .4
+                                })
+                            }), ((c = this.options.warningAlertTitle) != null && c.length || (d = this.options.warningAlertContent) != null && d.length) && u({
+                                id: e(),
+                                title: this.options.warningAlertTitle,
+                                description: this.options.warningAlertContent,
+                                type: l.warning,
+                                placement: f.topRight
+                            })
+                        } else if (a.key === m.outOfItem) {
+                            var p, h;
+                            n({
+                                path: t(`sounds/power-down.mp3`),
+                                volume: i({
+                                    type: r.soundEffect,
+                                    volume: .32
+                                })
+                            }), ((p = this.options.outOfItemAlertTitle) != null && p.length || (h = this.options.outOfItemAlertTitle) != null && h.length) && u({
+                                id: e(),
+                                title: this.options.outOfItemAlertTitle,
+                                description: this.options.outOfItemAlertContent,
+                                type: l.error,
+                                placement: f.topRight
+                            })
+                        }
+                    }
+                }, o() || a()) return;
+            let h = d.Manager;
+            new p({
+                device: this,
+                baseColor: h.baseColor,
+                boxColor: h.boxColor,
+                content: {
+                    icon: {
+                        image: t(`devices/movement_meter/icon.png`),
+                        scale: 1
+                    }
                 }
-            }
-        })
-    }
-}
+            })
+        }
+    };
 export {
-    zt as
+    h as
     default
 };

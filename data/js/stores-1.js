@@ -1,0 +1,79 @@
+import {
+    c as e,
+    f as t,
+    i as n,
+    p as r,
+    t as i
+} from "./decorate.js";
+var a = function(e) {
+        return e.checkout = `checkout`, e
+    }({}),
+    o = {
+        screen: `checkout`,
+        loadingTokenSubmit: !1
+    },
+    {
+        screen: s,
+        loadingTokenSubmit: c
+    } = o,
+    l = class {
+        constructor() {
+            this.screen = s, this.loadingTokenSubmit = c, this.reset = () => {
+                Object.keys(o).forEach(e => this[e] = o[e])
+            }, t(this)
+        }
+    };
+i([r], l.prototype, `screen`, void 0), i([r], l.prototype, `loadingTokenSubmit`, void 0), i([n], l.prototype, `reset`, void 0);
+var u = {
+        planName: ``,
+        planId: ``,
+        couponId: ``,
+        planCost: 0,
+        planDescription: ``,
+        accountCredit: 0,
+        percentageOff: 1,
+        amountOff: 0,
+        couponDescription: ``,
+        hasCoupon: !1,
+        couponOneUseOnly: !0,
+        couponIsOnlyForPlan: ``,
+        existingPayingPlan: ``,
+        stripePublicKey: ``
+    },
+    {
+        planName: d,
+        planId: f,
+        couponId: p,
+        planCost: m,
+        planDescription: h,
+        accountCredit: g,
+        percentageOff: _,
+        amountOff: v,
+        couponDescription: y,
+        hasCoupon: b,
+        couponOneUseOnly: x,
+        couponIsOnlyForPlan: S,
+        existingPayingPlan: C,
+        stripePublicKey: w
+    } = u,
+    T = class {
+        constructor() {
+            this.planName = d, this.planId = f, this.couponId = p, this.planCost = m, this.planDescription = h, this.accountCredit = g, this.percentageOff = _, this.amountOff = v, this.couponDescription = y, this.hasCoupon = b, this.couponOneUseOnly = x, this.couponIsOnlyForPlan = S, this.existingPayingPlan = C, this.stripePublicKey = w, this.reset = () => {
+                Object.keys(u).forEach(e => {
+                    this[e] = u[e]
+                })
+            }, t(this)
+        }
+        get totalCost() {
+            let e = this.planCost * this.percentageOff - this.amountOff - this.accountCredit;
+            return e < 0 ? 0 : e
+        }
+    };
+i([r], T.prototype, `planName`, void 0), i([r], T.prototype, `planId`, void 0), i([r], T.prototype, `couponId`, void 0), i([r], T.prototype, `planCost`, void 0), i([r], T.prototype, `planDescription`, void 0), i([r], T.prototype, `accountCredit`, void 0), i([r], T.prototype, `percentageOff`, void 0), i([r], T.prototype, `amountOff`, void 0), i([r], T.prototype, `couponDescription`, void 0), i([r], T.prototype, `hasCoupon`, void 0), i([r], T.prototype, `couponOneUseOnly`, void 0), i([r], T.prototype, `couponIsOnlyForPlan`, void 0), i([r], T.prototype, `existingPayingPlan`, void 0), i([r], T.prototype, `stripePublicKey`, void 0), i([e], T.prototype, `totalCost`, null), i([n], T.prototype, `reset`, void 0);
+var E = {
+    navigation: new l,
+    checkout: new T
+};
+export {
+    a as n, E as t
+};

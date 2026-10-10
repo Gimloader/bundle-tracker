@@ -1,6 +1,7 @@
-const a = {
-    alpha: .5
+var e = {
+    alpha: .5,
+    activateDeactivateTime: 100
 };
 export {
-    a as Z
+    e as t
 };

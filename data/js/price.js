@@ -1,19 +1,20 @@
-const d = () => {},
-    a = () => 5988,
-    f = () => {},
-    s = () => 1499,
-    c = (e, r = !1) => {
-        const t = Math.floor(e / 100),
-            n = e % 100;
-        return r && n === 0 ? `$${t}` : `$${t}.${n.toString().padStart(2,"0")}`
+var e = () => !1,
+    t = () => {},
+    n = () => 5988,
+    r = () => {},
+    i = () => 1499,
+    a = (e, t = !1) => {
+        let n = Math.floor(e / 100),
+            r = e % 100;
+        return t && r === 0 ? `$${n}` : `$${n}.${r.toString().padStart(2,`0`)}`
     },
-    l = (e, r) => {
-        let t = e;
-        return r != null && r.roundUp && t % 100 !== 0 && (t = Math.ceil(t / 100) * 100), c(t, (r == null ? void 0 : r.simple) ?? !1)
+    o = (e, t) => {
+        let n = e;
+        return t != null && t.roundUp && n % 100 != 0 && (n = Math.ceil(n / 100) * 100), a(n, (t == null ? void 0 : t.simple) ?? !1)
     },
-    g = e => l(a(), e),
-    P = e => c(Math.round(a() / 12), (e == null ? void 0 : e.simple) ?? !1),
-    i = e => l(s(), e);
+    s = e => o(n(), e),
+    c = e => a(Math.round(n() / 12), (e == null ? void 0 : e.simple) ?? !1),
+    l = e => o(i(), e);
 export {
-    f as a, a as b, s as c, g as d, P as e, i as f, d as g
+    l as a, e as c, c as i, t as n, r as o, n as r, i as s, s as t
 };

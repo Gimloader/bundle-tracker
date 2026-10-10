@@ -1,4 +1,6 @@
-var o = (r => (r.topDown = "topDown", r.platformer = "platformer", r))(o || {});
+var e = function(e) {
+    return e.topDown = `topDown`, e.platformer = `platformer`, e
+}({});
 export {
-    o as M
+    e as t
 };

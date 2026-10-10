@@ -1,4 +1,6 @@
-var r = (e => (e.selectBox = "selectBox", e.kit = "kit", e.number = "number", e))(r || {});
+var e = function(e) {
+    return e.selectBox = `selectBox`, e.kit = `kit`, e.number = `number`, e
+}({});
 export {
-    r as H
+    e as t
 };

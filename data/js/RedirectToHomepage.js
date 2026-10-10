@@ -1,20 +1,24 @@
 import {
-    a3 as a,
-    i as o,
-    P as t,
-    k as r,
-    cr as s
+    _ as e,
+    g as t
+} from "./utils.js";
+import {
+    D as n,
+    N as r
+} from "./Paths.js";
+import {
+    i
 } from "./_index.js";
 import {
-    N as i
+    t as a
 } from "./NavigateTo.js";
-const e = () => a() ? o() ? t : r : "/",
-    m = () => {
-        i(e())
+var o = () => t() ? e() ? n : r : `/`,
+    s = () => {
+        a(o())
     },
-    p = () => {
-        s.replace(e())
+    c = () => {
+        i.replace(o())
     };
 export {
-    e as G, p as R, m as a
+    s as n, c as r, o as t
 };

@@ -1,192 +1,212 @@
 import {
-    U as b,
-    r as l,
-    u as Q,
-    i as Y,
-    f as j,
-    j as e,
-    e as d,
-    d as s,
-    D as $,
-    F as S,
-    x as y,
-    a as B,
-    t as X,
-    M as O,
-    S as V,
-    C as F,
-    B as D,
-    aa as Z,
-    Z as J,
-    af as ee,
-    ah as te,
-    l as ie,
-    E as se,
-    cm as ne
+    o as e,
+    r as t
+} from "./rolldown-runtime.js";
+import {
+    C as n,
+    E as r,
+    O as i,
+    _ as a,
+    h as o,
+    u as s,
+    v as c,
+    y as l
+} from "./utils.js";
+import {
+    t as u
+} from "./react-1.js";
+import {
+    a as d
+} from "./InfoCircleFilled.js";
+import {
+    t as f
+} from "./message.js";
+import {
+    t as p
+} from "./modal.js";
+import {
+    t as m
+} from "./button.js";
+import {
+    t as ee
+} from "./input.js";
+import {
+    t as te
+} from "./spin.js";
+import {
+    t as ne
+} from "./StarOutlined.js";
+import {
+    t as re
+} from "./copy-to-clipboard.js";
+import {
+    n as h
+} from "./Company.js";
+import {
+    E as ie,
+    r as ae
+} from "./Paths.js";
+import {
+    t as oe
+} from "./jsx-runtime.js";
+import {
+    c as g,
+    l as _,
+    n as v,
+    s as y,
+    v as se,
+    y as b
 } from "./_index.js";
 import {
-    E as w
-} from "./Sizes.js";
-import {
-    A as _
+    t as x
 } from "./AccessibleAnchor.js";
 import {
-    m as g
-} from "./motion.js";
+    t as ce
+} from "./module-1.js";
 import {
-    b as oe
-} from "./index-1.js";
+    t as S
+} from "./tiny-invariant.js";
+import "./TrackPostHogEvent.js";
 import {
-    e as L
+    c as le,
+    i as C,
+    t as ue
 } from "./price.js";
 import {
-    T as ae
-} from "./TrackPostHogEvent.js";
+    t as w
+} from "./motion.js";
 import {
-    c as re
-} from "./index-2.js";
-import {
-    I as le
-} from "./index-3.js";
-import {
-    s as ce
-} from "./index-4.js";
-import {
-    R as de
-} from "./StarOutlined.js";
-const E = {
-    titleFont: b.FugazOne
-};
-var ue = "Invariant failed";
-
-function C(t, i) {
-    throw new Error(ue)
-}
-var T = new Map([
-        ["Win", "Meta"],
-        ["Scroll", "ScrollLock"],
-        ["Spacebar", " "],
-        ["Down", "ArrowDown"],
-        ["Left", "ArrowLeft"],
-        ["Right", "ArrowRight"],
-        ["Up", "ArrowUp"],
-        ["Del", "Delete"],
-        ["Crsel", "CrSel"],
-        ["Exsel", "ExSel"],
-        ["Apps", "ContextMenu"],
-        ["Esc", "Escape"],
-        ["Decimal", "."],
-        ["Multiply", "*"],
-        ["Add", "+"],
-        ["Subtract", "-"],
-        ["Divide", "/"]
+    t as T
+} from "./Sizes.js";
+var E = {
+        titleFont: g.FugazOne
+    },
+    D = e(u()),
+    O = new Map([
+        [`Win`, `Meta`],
+        [`Scroll`, `ScrollLock`],
+        [`Spacebar`, ` `],
+        [`Down`, `ArrowDown`],
+        [`Left`, `ArrowLeft`],
+        [`Right`, `ArrowRight`],
+        [`Up`, `ArrowUp`],
+        [`Del`, `Delete`],
+        [`Crsel`, `CrSel`],
+        [`Exsel`, `ExSel`],
+        [`Apps`, `ContextMenu`],
+        [`Esc`, `Escape`],
+        [`Decimal`, `.`],
+        [`Multiply`, `*`],
+        [`Add`, `+`],
+        [`Subtract`, `-`],
+        [`Divide`, `/`]
     ]),
-    he = function(i) {
-        if (T.has(i.key)) {
-            var a = T.get(i.key);
-            Object.defineProperty(i, "key", {
+    de = function(e) {
+        if (O.has(e.key)) {
+            var t = O.get(e.key);
+            Object.defineProperty(e, "key", {
                 configurable: !0,
                 enumerable: !0,
                 get: function() {
-                    return a
+                    return t
                 }
             })
         }
     },
-    me = function(i, a) {
-        Array.isArray(i) || typeof i == "string" || C(), Array.isArray(i) && i.forEach(function(n, r) {
-            typeof n != "string" && C()
-        }), typeof a == "function" || a == null || C();
-        var o = l.useRef();
-        l.useEffect(function() {
-            o.current = function(n) {
-                he(n), (Array.isArray(i) ? i.includes(n.key) : i === n.key) && (a == null || a(n))
+    k = function(e, t) {
+        !(Array.isArray(e) || typeof e == `string`) && S(!1), Array.isArray(e) && e.forEach(function(e, t) {
+            typeof e != `string` && S(!1)
+        }), typeof t != `function` && t != null && S(!1);
+        var n = (0, D.useRef)();
+        (0, D.useEffect)(function() {
+            n.current = function(n) {
+                de(n), (Array.isArray(e) ? e.includes(n.key) : e === n.key) && (t == null || t(n))
             }
-        }, [i, a]), l.useEffect(function() {
-            var n = function(u) {
-                o.current(u)
+        }, [e, t]), (0, D.useEffect)(function() {
+            var e = function(e) {
+                n.current(e)
             };
-            return window.addEventListener("keydown", n),
+            return window.addEventListener(`keydown`, e),
                 function() {
-                    window.removeEventListener("keydown", n)
+                    window.removeEventListener(`keydown`, e)
                 }
         }, [])
     },
-    x = (t => (t.limitedModes = "limitedModes", t.limitedGames = "limitedGames", t))(x || {});
-const p = () => "limitedModes",
-    xe = () => 5,
-    A = 350,
-    H = 10,
-    W = A + H,
-    v = .2,
-    fe = t => {
-        const [i, a, o] = Q(!1), n = p(), r = l.useMemo(() => t.isProExperience && !Y() && n === x.limitedModes && !j(), [t.isProExperience, n]);
-        return e.jsxs(ge, {
-            onMouseEnter: a,
-            onMouseLeave: o,
+    A = function(e) {
+        return e.limitedModes = `limitedModes`, e.limitedGames = `limitedGames`, e
+    }({}),
+    j = () => `limitedModes`,
+    M = () => 5,
+    N = oe(),
+    P = .2,
+    F = e => {
+        let [t, n, r] = i(!1), o = j(), s = D.useMemo(() => e.isProExperience && !a() && o === A.limitedModes && !c(), [e.isProExperience, o]);
+        return (0, N.jsxs)(I, {
+            onMouseEnter: n,
+            onMouseLeave: r,
             style: {
-                backgroundImage: `url('${t.image}')`,
-                borderColor: t.currentlySelected ? "#fdd835" : d.White
+                backgroundImage: `url('${e.image}')`,
+                borderColor: e.currentlySelected ? `#fdd835` : v.White
             },
-            onClick: t.onSelect,
-            className: t.noShadowOnContainer ? "" : "light-shadow",
-            children: [t.forcePremiumBadge || r ? e.jsx(pe, {
+            onClick: e.onSelect,
+            className: e.noShadowOnContainer ? `` : `light-shadow`,
+            children: [e.forcePremiumBadge || s ? (0, N.jsx)(L, {
                 animate: {
-                    opacity: i ? 0 : 1
+                    opacity: +!t
                 },
                 initial: {
                     opacity: 1
                 },
                 transition: {
-                    duration: v
+                    duration: P
                 },
-                children: e.jsx(ye, {})
-            }) : e.jsx("div", {}), e.jsxs(ve, {
-                children: [r ? e.jsx(we, {
+                children: (0, N.jsx)(R, {})
+            }) : (0, N.jsx)(`div`, {}), (0, N.jsxs)(z, {
+                children: [s ? (0, N.jsx)(B, {
                     animate: {
-                        opacity: i ? 0 : 1
+                        opacity: +!t
                     },
                     initial: {
                         opacity: 1
                     },
                     transition: {
-                        duration: v
+                        duration: P
                     },
-                    children: "Gimkit Pro Exclusive"
-                }) : null, !r && t.tag ? e.jsx(je, {
+                    children: `Gimkit Pro Exclusive`
+                }) : null, !s && e.tag ? (0, N.jsx)(V, {
                     animate: {
-                        opacity: i ? 0 : 1
+                        opacity: +!t
                     },
                     initial: {
                         opacity: 1
                     },
                     transition: {
-                        duration: v
+                        duration: P
                     },
-                    children: t.tag
-                }) : null, e.jsx(be, {
-                    children: t.name
-                }), e.jsx(Ee, {
+                    children: e.tag
+                }) : null, (0, N.jsx)(H, {
+                    children: e.name
+                }), (0, N.jsx)(fe, {
                     animate: {
-                        height: i ? "auto" : 0
+                        height: t ? `auto` : 0
                     },
                     initial: {
                         height: 0
                     },
                     transition: {
-                        duration: v
+                        duration: P
                     },
-                    children: t.tagline
+                    children: e.tagline
                 })]
             })]
         })
     },
-    ge = s.div.attrs({
-        className: "flex flex-column between"
+    I = _.div.attrs({
+        className: `flex flex-column between`
     })`
   border-width: 4px;
   border-style: solid;
-  width: ${A}px;
+  width: ${350}px;
   height: 180px;
   border-radius: 4px;
   background-image: url('');
@@ -197,18 +217,18 @@ const p = () => "limitedModes",
   cursor: pointer;
   transition: border-color 0.3s;
 `,
-    pe = s(g.div).attrs({
-        className: "maxWidth"
+    L = _(w.div).attrs({
+        className: `maxWidth`
     })`
   padding: 10px 15px;
 `,
-    ye = s.img.attrs({
-        src: "/client/img/pro/star.svg"
+    R = _.img.attrs({
+        src: `/client/img/pro/star.svg`
     })`
   height: 20px;
 `,
-    ve = s.div.attrs({
-        className: "maxWidth flex-column"
+    z = _.div.attrs({
+        className: `maxWidth flex-column`
     })`
   padding: 10px 15px;
   background: linear-gradient(
@@ -233,15 +253,15 @@ const p = () => "limitedModes",
   overflow: hidden;
   align-items: flex-start;
 `,
-    we = s(g.div)`
+    B = _(w.div)`
   font-family: ${E.titleFont};
   text-transform: uppercase;
   font-size: 12px;
   margin-bottom: -2px;
-  text-shadow: 1px 1px 1px ${d.Black};
-  color: ${d.White};
+  text-shadow: 1px 1px 1px ${v.Black};
+  color: ${v.White};
 `,
-    je = s(g.div)`
+    V = _(w.div)`
   font-family: ${E.titleFont};
   text-transform: uppercase;
   background: rgba(255, 87, 34, 0.8);
@@ -251,110 +271,110 @@ const p = () => "limitedModes",
   border-radius: 10px;
   margin-bottom: 4px;
 `,
-    be = s.div`
+    H = _.div`
   font-family: ${E.titleFont};
   text-transform: uppercase;
   font-size: 22px;
-  text-shadow: 2px 2px 2px ${d.Black};
-  color: ${d.White};
+  text-shadow: 2px 2px 2px ${v.Black};
+  color: ${v.White};
 `,
-    Ee = s(g.div)`
+    fe = _(w.div)`
   font-size: 14px;
-  text-shadow: 1px 1px 1px ${d.Black};
+  text-shadow: 1px 1px 1px ${v.Black};
   color: rgba(255, 255, 255, 0.95);
   margin-bottom: 1px;
   overflow: hidden;
-  font-family: ${b.ProductSans};
+  font-family: ${g.ProductSans};
 `,
-    ke = t => {
-        const [i, a] = l.useState(0), o = l.useRef(!1), n = l.useRef(null), [r] = oe(n), u = l.useMemo(() => t.verticalList ? 0 : i * W * -1 + w.sideMargin, [i, t.verticalList]), c = l.useMemo(() => !(i <= 0), [i]), f = () => {
-            o.current = !0
-        }, m = () => {
-            o.current = !1
+    U = e => {
+        let [t, n] = D.useState(0), r = D.useRef(!1), i = D.useRef(null), [a] = ce(i), o = D.useMemo(() => e.verticalList ? 0 : t * 360 * -1 + T.sideMargin, [t, e.verticalList]), s = D.useMemo(() => !(t <= 0), [t]), c = () => {
+            r.current = !0
+        }, l = () => {
+            r.current = !1
         };
-        me(["ArrowLeft", "ArrowRight"], h => {
-            o.current && (h.key === "ArrowLeft" && N(), h.key === "ArrowRight" && I())
+        k([`ArrowLeft`, `ArrowRight`], e => {
+            r.current && (e.key === `ArrowLeft` && d(), e.key === `ArrowRight` && f())
         });
-        const M = l.useMemo(() => {
-                if (i + 1 === t.list.items.length) return !1;
-                const h = (r - w.sideMargin) / W;
-                return !(i >= t.list.items.length - h)
-            }, [r, i, t.list.items.length]),
-            N = () => {
-                c && a(Math.max(0, i - 1))
+        let u = D.useMemo(() => {
+                if (t + 1 === e.list.items.length) return !1;
+                let n = (a - T.sideMargin) / 360;
+                return !(t >= e.list.items.length - n)
+            }, [a, t, e.list.items.length]),
+            d = () => {
+                s && n(Math.max(0, t - 1))
             },
-            I = () => {
-                M && a(i + 1)
+            f = () => {
+                u && n(t + 1)
             };
-        return e.jsxs(Me, {
-            onMouseEnter: f,
-            onMouseLeave: m,
-            children: [t.hideListName ? null : e.jsx(Ce, {
-                children: t.list.name
-            }), e.jsxs(Pe, {
-                children: [e.jsx($e, {
+        return (0, N.jsxs)(pe, {
+            onMouseEnter: c,
+            onMouseLeave: l,
+            children: [e.hideListName ? null : (0, N.jsx)(me, {
+                children: e.list.name
+            }), (0, N.jsxs)(he, {
+                children: [(0, N.jsx)(ge, {
                     animate: {
-                        x: u
+                        x: o
                     },
                     initial: {
-                        x: t.verticalList ? 0 : w.sideMargin
+                        x: e.verticalList ? 0 : T.sideMargin
                     },
                     transition: {
                         duration: .3,
-                        ease: "easeOut"
+                        ease: `easeOut`
                     },
-                    style: t.verticalList ? {
-                        display: "grid",
-                        gridTemplateColumns: `repeat(auto-fill, ${A}px)`,
-                        justifyContent: "center",
+                    style: e.verticalList ? {
+                        display: `grid`,
+                        gridTemplateColumns: `repeat(auto-fill, 350px)`,
+                        justifyContent: `center`,
                         gap: 20,
-                        margin: "0px 25px"
+                        margin: `0px 25px`
                     } : {
-                        gap: H
+                        gap: 10
                     },
-                    ref: n,
-                    children: t.list.items.map(h => e.jsx(fe, {
-                        name: h.name,
-                        tagline: h.tagline,
-                        image: h.imageUrl,
-                        currentlySelected: t.forceAllSelected ? !0 : t.currentlySelectedExperienceId === h._id,
-                        onSelect: t.onExperienceSelected ? () => t.onExperienceSelected(h._id) : null,
-                        isProExperience: h.isPremiumExperience,
-                        noShadowOnContainer: t.noShadowOnItems,
-                        forcePremiumBadge: t.forcePremiumBadge,
-                        tag: h.tag
-                    }, `list-${t.list._id}-${h._id}`))
-                }), t.verticalList ? null : e.jsxs(Se, {
-                    children: [e.jsx(Ae, {
+                    ref: i,
+                    children: e.list.items.map(t => (0, N.jsx)(F, {
+                        name: t.name,
+                        tagline: t.tagline,
+                        image: t.imageUrl,
+                        currentlySelected: e.forceAllSelected ? !0 : e.currentlySelectedExperienceId === t._id,
+                        onSelect: e.onExperienceSelected ? () => e.onExperienceSelected(t._id) : null,
+                        isProExperience: t.isPremiumExperience,
+                        noShadowOnContainer: e.noShadowOnItems,
+                        forcePremiumBadge: e.forcePremiumBadge,
+                        tag: t.tag
+                    }, `list-${e.list._id}-${t._id}`))
+                }), e.verticalList ? null : (0, N.jsxs)(_e, {
+                    children: [(0, N.jsx)(ve, {
                         animate: {
-                            opacity: c ? 1 : 0
+                            opacity: +!!s
                         },
                         initial: {
                             opacity: 0
                         },
-                        onClick: N,
-                        children: e.jsx(z, {
+                        onClick: d,
+                        children: (0, N.jsx)(G, {
                             style: {
-                                cursor: c ? "pointer" : "auto"
+                                cursor: s ? `pointer` : `auto`
                             },
-                            children: e.jsx("i", {
-                                className: "fas fa-chevron-left"
+                            children: (0, N.jsx)(`i`, {
+                                className: `fas fa-chevron-left`
                             })
                         })
-                    }), e.jsx(Ne, {
+                    }), (0, N.jsx)(ye, {
                         animate: {
-                            opacity: M ? 1 : 0
+                            opacity: +!!u
                         },
                         initial: {
                             opacity: 0
                         },
-                        onClick: I,
-                        children: e.jsx(z, {
+                        onClick: f,
+                        children: (0, N.jsx)(G, {
                             style: {
-                                cursor: M ? "pointer" : "auto"
+                                cursor: u ? `pointer` : `auto`
                             },
-                            children: e.jsx("i", {
-                                className: "fas fa-chevron-right"
+                            children: (0, N.jsx)(`i`, {
+                                className: `fas fa-chevron-right`
                             })
                         })
                     })]
@@ -362,10 +382,10 @@ const p = () => "limitedModes",
             })]
         })
     },
-    Me = s.div.attrs({
-        className: "maxWidth"
+    pe = _.div.attrs({
+        className: `maxWidth`
     })``,
-    Ce = s.div`
+    me = _.div`
   font-family: ${E.titleFont};
   text-align: center;
   margin-bottom: 15px;
@@ -373,31 +393,31 @@ const p = () => "limitedModes",
   font-size: 26px;
   color: rgba(255, 255, 255, 0.9);
 `,
-    Pe = s.div.attrs({
-        className: "maxWidth"
+    he = _.div.attrs({
+        className: `maxWidth`
     })`
   position: relative;
   overflow: hidden;
 `,
-    $e = s(g.div).attrs({
-        className: "flex"
+    ge = _(w.div).attrs({
+        className: `flex`
     })``,
-    Se = s.div.attrs({
-        className: "maxAll flex vc between"
+    _e = _.div.attrs({
+        className: `maxAll flex vc between`
     })`
   position: absolute;
   top: 0;
   left: 0;
   pointer-events: none;
 `,
-    q = s(g.div).attrs({
-        className: "flex-center maxHeight"
+    W = _(w.div).attrs({
+        className: `flex-center maxHeight`
     })`
   width: 60px;
   line-height: 1;
-  color: ${d.White};
+  color: ${v.White};
 `,
-    Ae = s(q)`
+    ve = _(W)`
   background: linear-gradient(
     to right,
     hsla(0, 0%, 0%, 0.61) 0%,
@@ -418,7 +438,7 @@ const p = () => "limitedModes",
     hsla(0, 0%, 0%, 0) 100%
   );
 `,
-    Ne = s(q)`
+    ye = _(W)`
   background: linear-gradient(
     to left,
     hsla(0, 0%, 0%, 0.61) 0%,
@@ -439,8 +459,8 @@ const p = () => "limitedModes",
     hsla(0, 0%, 0%, 0) 100%
   );
 `,
-    z = s.div.attrs({
-        className: "flex-center"
+    G = _.div.attrs({
+        className: `flex-center`
     })`
   font-size: 32px;
   pointer-events: all;
@@ -450,154 +470,155 @@ const p = () => "limitedModes",
     transform: scale(1.1);
   }
 `,
-    Ie = [{
-        question: "What happens if I pay now and my school pays later?",
-        answer: e.jsxs("span", {
-            children: ["If your school purchases a group license and you've already purchased Gimkit Pro, you’ll get refunded for your unused time.", " ", e.jsx("b", {
-                children: "So if you purchase a year of Gimkit Pro today and your school upgrades next month, we’d refund you $54.89."
-            }), " ", "That refund happens automatically. No need to contact support!"]
+    be = [{
+        question: `What happens if I pay now and my school pays later?`,
+        answer: (0, N.jsxs)(`span`, {
+            children: [`If your school purchases a group license and you've already purchased Gimkit Pro, you’ll get refunded for your unused time.`, ` `, (0, N.jsx)(`b`, {
+                children: `So if you purchase a year of Gimkit Pro today and your school upgrades next month, we’d refund you $54.89.`
+            }), ` `, `That refund happens automatically. No need to contact support!`]
         })
     }, {
-        question: "What's included with Gimkit Pro?",
-        answer: e.jsxs("span", {
-            children: [p() === x.limitedModes ? "Unrestricted access to all modes, including Gimkit Pro Exclusives." : "No game limits, host as many games as you'd like!", " ", "You'll also be able to create assignments (play Gimkit asynchronously) and upload audio + images to your questions."]
+        question: `What's included with Gimkit Pro?`,
+        answer: (0, N.jsxs)(`span`, {
+            children: [j() === A.limitedModes ? `Unrestricted access to all modes, including Gimkit Pro Exclusives.` : `No game limits, host as many games as you'd like!`, ` `, `You'll also be able to create assignments (play Gimkit asynchronously) and upload audio + images to your questions.`]
         })
     }, {
-        question: "What's your refund policy?",
-        answer: e.jsxs("span", {
-            children: ["Bad refund policies are infuriating. You feel like the company is just trying to rip you off. We never want our customers to feel that way, so our refund policy is simple: If you’re ever unhappy with your subscription for any reason, just contact us and we’ll take care of you.", " ", e.jsx("a", {
-                href: "https://www.notion.so/gimkit/A-fair-refund-policy-a1688f61330b49a495a48bd0fd08697b",
-                target: "_blank",
-                children: "Check out our full refund policy here."
+        question: `What's your refund policy?`,
+        answer: (0, N.jsxs)(`span`, {
+            children: [`Bad refund policies are infuriating. You feel like the company is just trying to rip you off. We never want our customers to feel that way, so our refund policy is simple: If you’re ever unhappy with your subscription for any reason, just contact us and we’ll take care of you.`, ` `, (0, N.jsx)(`a`, {
+                href: `https://www.notion.so/gimkit/A-fair-refund-policy-a1688f61330b49a495a48bd0fd08697b`,
+                target: `_blank`,
+                children: `Check out our full refund policy here.`
             })]
         })
     }],
-    Fe = () => e.jsxs(e.Fragment, {
-        children: [e.jsx($, {
+    xe = () => (0, N.jsxs)(N.Fragment, {
+        children: [(0, N.jsx)(b, {
             style: {
-                margin: "26px 0px"
+                margin: `26px 0px`
             }
-        }), e.jsx(Le, {
-            children: Ie.map(t => e.jsxs(Te, {
-                children: [e.jsx(We, {
-                    children: t.question
-                }), e.jsx(ze, {
-                    children: t.answer
+        }), (0, N.jsx)(Se, {
+            children: be.map(e => (0, N.jsxs)(Ce, {
+                children: [(0, N.jsx)(we, {
+                    children: e.question
+                }), (0, N.jsx)(Te, {
+                    children: e.answer
                 })]
-            }, t.question))
+            }, e.question))
         })]
     }),
-    Le = s.div.attrs({
-        className: "maxWidth"
+    Se = _.div.attrs({
+        className: `maxWidth`
     })`
-  padding: 0px ${()=>k}px;
+  padding: 0px ${()=>Q}px;
 `,
-    Te = s.div`
+    Ce = _.div`
   margin-bottom: 15px;
-  background: ${d.White};
+  background: ${v.White};
   padding: 30px;
   border-radius: 6px;
   border-style: solid;
-  border-color: ${d.BorderGray};
+  border-color: ${v.BorderGray};
   border-width: 2px;
   &:last-child {
     margin-bottom: 0px;
   }
 `,
-    We = s.div`
+    we = _.div`
   font-size: 21px;
-  font-weight: ${S.Bold};
+  font-weight: ${y.Bold};
 `,
-    ze = s.div`
+    Te = _.div`
   font-size: 16px;
   margin-top: 5px;
 `,
-    Re = t => {
-        const [i, a] = y.useState(!0), [o, n] = y.useState(null), [r, u] = y.useState(null), c = () => `${Z()}/pay-for-me/${r}`, f = () => {
-            re(c()), ce.success("Pay For Me link copied to clipboard!")
-        };
-        return y.useEffect(() => {
-            B({
-                method: "GET",
-                url: "/api/billing/pay-for-me-link",
-                success: m => {
-                    u(m)
+    Ee = e(re()),
+    De = e => {
+        let [t, i] = D.useState(!0), [a, o] = D.useState(null), [c, l] = D.useState(null), u = () => `${s()}/pay-for-me/${c}`;
+        return D.useEffect(() => {
+            n({
+                method: `GET`,
+                url: `/api/billing/pay-for-me-link`,
+                success: e => {
+                    l(e)
                 },
-                error: m => {
-                    n(m), X({
-                        e: m,
+                error: e => {
+                    o(e), r({
+                        e,
                         default: {
-                            title: "Error connecting to our server",
-                            content: "An error ocurred while connecting to our server. Please try again later."
+                            title: `Error connecting to our server`,
+                            content: `An error ocurred while connecting to our server. Please try again later.`
                         }
                     })
                 },
-                both: () => a(!1)
+                both: () => i(!1)
             })
-        }, []), e.jsx(O, {
-            open: t.showPayForMeModal,
-            onCancel: t.onCancel,
+        }, []), (0, N.jsx)(p, {
+            open: e.showPayForMeModal,
+            onCancel: e.onCancel,
             footer: null,
             closable: !1,
             width: 690,
             bodyStyle: {
                 padding: 0
             },
-            children: i ? e.jsx("div", {
+            children: t ? (0, N.jsx)(`div`, {
                 style: {
                     height: 361
                 },
-                className: "flex maxWidth maxHeight hc vc",
-                children: e.jsx(V, {
-                    size: "large"
+                className: `flex maxWidth maxHeight hc vc`,
+                children: (0, N.jsx)(te, {
+                    size: `large`
                 })
-            }) : e.jsxs(Ge, {
-                children: [e.jsx(Oe, {
-                    onClick: t.onCancel
-                }), e.jsxs(Ue, {
-                    children: [e.jsx("span", {
+            }) : (0, N.jsxs)(Oe, {
+                children: [(0, N.jsx)(je, {
+                    onClick: e.onCancel
+                }), (0, N.jsxs)(ke, {
+                    children: [(0, N.jsx)(`span`, {
                         style: {
-                            fontWeight: S.UltraBold
+                            fontWeight: y.UltraBold
                         },
-                        children: "Pay For Me"
-                    }), " ", "link"]
-                }), e.jsxs(Be, {
-                    children: ["Send this link to someone to allow them to pay for your", " ", F, " Pro subscription. Once they pay, you'll get one full year of ", F, " Pro and we'll make sure autorenew is off so they aren't charged again.", e.jsx("br", {}), " ", e.jsx("br", {}), "One more thing: once they pay for your subscription, we'll send you an email letting you know!"]
-                }), e.jsx($, {}), !o && e.jsxs("div", {
-                    className: "flex",
-                    children: [e.jsx(le, {
-                        value: c(),
-                        size: "large",
+                        children: `Pay For Me`
+                    }), ` `, `link`]
+                }), (0, N.jsxs)(Ae, {
+                    children: [`Send this link to someone to allow them to pay for your`, ` `, h, ` Pro subscription. Once they pay, you'll get one full year of `, h, ` Pro and we'll make sure autorenew is off so they aren't charged again.`, (0, N.jsx)(`br`, {}), ` `, (0, N.jsx)(`br`, {}), `One more thing: once they pay for your subscription, we'll send you an email letting you know!`]
+                }), (0, N.jsx)(b, {}), !a && (0, N.jsxs)(`div`, {
+                    className: `flex`,
+                    children: [(0, N.jsx)(ee, {
+                        value: u(),
+                        size: `large`,
                         readOnly: !0
-                    }), e.jsx(D, {
-                        size: "large",
-                        type: "primary",
+                    }), (0, N.jsx)(m, {
+                        size: `large`,
+                        type: `primary`,
                         style: {
                             marginLeft: 10
                         },
-                        onClick: f,
-                        children: "Copy Link"
+                        onClick: () => {
+                            (0, Ee.default)(u()), f.success(`Pay For Me link copied to clipboard!`)
+                        },
+                        children: `Copy Link`
                     })]
                 })]
             })
         })
     },
-    Ge = s.div.attrs({
-        className: "maxWidth"
+    Oe = _.div.attrs({
+        className: `maxWidth`
     })`
-  color: ${d.Black};
-  font-family: ${b.SFPro};
+  color: ${v.Black};
+  font-family: ${g.SFPro};
   padding: 30px;
 `,
-    Ue = s.div`
+    ke = _.div`
   font-size: 32px;
 `,
-    Be = s.div`
+    Ae = _.div`
   font-size: 17px;
   margin-top: 14px;
 `,
-    Oe = s.i.attrs({
-        className: "fal fa-times"
+    je = _.i.attrs({
+        className: `fal fa-times`
     })`
   position: absolute;
   font-size: 24px;
@@ -610,139 +631,145 @@ const p = () => "limitedModes",
     opacity: 1;
   }
 `,
-    De = t => {
-        const [i, a] = l.useState(!1), [o, n] = l.useState(!1), r = () => a(!0);
-        return e.jsxs("div", {
-            className: "flex flex-column vc",
+    Me = e => {
+        let [t, n] = D.useState(!1), [r, i] = D.useState(!1);
+        return (0, N.jsxs)(`div`, {
+            className: `flex flex-column vc`,
             style: {
-                marginTop: t.showingModes ? 25 : 20,
+                marginTop: e.showingModes ? 25 : 20,
                 paddingBottom: 30
             },
-            children: [e.jsx(_, {
-                to: J,
-                children: e.jsx(D, {
-                    type: "primary",
-                    size: "large",
-                    icon: e.jsx(de, {}),
+            children: [(0, N.jsx)(x, {
+                to: ae,
+                children: (0, N.jsx)(m, {
+                    type: `primary`,
+                    size: `large`,
+                    icon: (0, N.jsx)(ne, {}),
                     style: {
                         width: 380,
                         height: 70
                     },
-                    children: j() ? "Upgrade to Gimkit Pro early" : "Upgrade to Gimkit Pro"
+                    children: c() ? `Upgrade to Gimkit Pro early` : `Upgrade to Gimkit Pro`
                 })
-            }), null, e.jsx($, {
+            }), le() ? (0, N.jsxs)(Ne, {
+                children: [ue({
+                    simple: !0,
+                    roundUp: !0
+                }), ` a year - works out to `, C({
+                    simple: !0
+                }), ` a month`]
+            }) : null, (0, N.jsx)(b, {
                 style: {
-                    margin: "26px 0px"
+                    margin: `26px 0px`
                 }
-            }), e.jsxs("div", {
-                className: "flex vc",
-                children: [e.jsx(P, {
-                    to: ee,
-                    children: "Group license pricing"
-                }), e.jsx(R, {}), e.jsx(P, {
-                    onClick: () => n(!0),
-                    children: "Pay For Me Link"
-                }), !i && e.jsxs(e.Fragment, {
-                    children: [e.jsx(R, {}), e.jsx(P, {
-                        onClick: r,
-                        children: "FAQ"
+            }), (0, N.jsxs)(`div`, {
+                className: `flex vc`,
+                children: [(0, N.jsx)(K, {
+                    to: ie,
+                    children: `Group license pricing`
+                }), (0, N.jsx)(q, {}), (0, N.jsx)(K, {
+                    onClick: () => i(!0),
+                    children: `Pay For Me Link`
+                }), !t && (0, N.jsxs)(N.Fragment, {
+                    children: [(0, N.jsx)(q, {}), (0, N.jsx)(K, {
+                        onClick: () => n(!0),
+                        children: `FAQ`
                     })]
                 })]
-            }), i && e.jsx(Fe, {}), e.jsx(Re, {
-                showPayForMeModal: o,
-                onCancel: () => n(!1)
+            }), t && (0, N.jsx)(xe, {}), (0, N.jsx)(De, {
+                showPayForMeModal: r,
+                onCancel: () => i(!1)
             })]
         })
-    };
-s.div`
+    },
+    Ne = _.div`
   font-size: 14px;
   color: rgba(0, 0, 0, 0.8);
   margin-top: 12px;
-`;
-const P = s(_)`
+`,
+    K = _(x)`
   font-size: 16px;
   display: block;
-  color: ${d.Black};
+  color: ${v.Black};
   text-decoration: underline;
 `,
-    R = s.i.attrs({
-        className: "fas fa-circle"
+    q = _.i.attrs({
+        className: `fas fa-circle`
     })`
   margin: 0px 12px;
   font-size: 10px;
 `,
-    K = 180,
-    _e = t => {
-        const {
-            copy: i
-        } = t, a = () => i && i.title ? i.title : j() ? e.jsx(e.Fragment, {
-            children: "Your trial ends soon."
-        }) : p() === x.limitedGames ? e.jsx(e.Fragment, {
-            children: "Upgrade to host unlimited games"
-        }) : e.jsxs("div", {
-            style: {
-                fontSize: 40,
-                marginTop: 30
-            },
-            children: ["Get all game modes for ", L({
-                simple: !0
-            }), " a month."]
-        }), o = () => {
-            if (i && i.description) return i.description;
-            const n = p(),
-                r = n === x.limitedModes ? "a few game modes that rotate every few weeks" : `host ${xe()} games per month`;
-            return e.jsxs("div", {
-                className: "maxWidth",
-                style: {
-                    textAlign: "left"
-                },
-                children: [j() ? `After your Pro trial ends, you'll be placed on our free plan. Under the free plan, you're limited to ${r}.` : `You're on the free version of Gimkit, which limits you to ${r}.`, e.jsx("br", {}), " ", e.jsx("br", {}), n === x.limitedModes ? "Want access to every single mode?" : "Want to host unlimited games?", " ", "Upgrade to Gimkit Pro! It’s just", " ", L({
-                    simple: !0
-                }), " a month and you’ll be helping support us, an independent small business.", n === x.limitedModes ? e.jsxs(e.Fragment, {
-                    children: [e.jsx("br", {}), " ", e.jsx("br", {}), "Upgrade to get access to these game modes and more:"]
-                }) : null]
-            })
-        };
-        return e.jsxs(He, {
-            background: t.showingModes ? "#0A2540" : "transparent",
-            color: t.showingModes ? d.White : d.Black,
-            bottomPadding: t.showingModes ? K : 0,
-            maskImage: !!t.showingModes,
-            children: [e.jsx(qe, {
-                onClick: t.close
-            }), e.jsxs(Ke, {
-                children: [e.jsx(Qe, {
-                    children: a()
-                }), e.jsx(Ye, {
+    J = e => {
+        let {
+            copy: t
+        } = e;
+        return (0, N.jsxs)(Pe, {
+            background: e.showingModes ? `#0A2540` : `transparent`,
+            color: e.showingModes ? v.White : v.Black,
+            bottomPadding: e.showingModes ? 180 : 0,
+            maskImage: !!e.showingModes,
+            children: [(0, N.jsx)(Y, {
+                onClick: e.close
+            }), (0, N.jsxs)(Fe, {
+                children: [(0, N.jsx)(Ie, {
+                    children: t && t.title ? t.title : c() ? (0, N.jsx)(N.Fragment, {
+                        children: `Your trial ends soon.`
+                    }) : j() === A.limitedGames ? (0, N.jsx)(N.Fragment, {
+                        children: `Upgrade to host unlimited games`
+                    }) : (0, N.jsxs)(`div`, {
+                        style: {
+                            fontSize: 40,
+                            marginTop: 30
+                        },
+                        children: [`Get all game modes for `, C({
+                            simple: !0
+                        }), ` a month.`]
+                    })
+                }), (0, N.jsx)(Le, {
                     style: {
-                        marginTop: t.showingModes ? 10 : 5
+                        marginTop: e.showingModes ? 10 : 5
                     },
-                    children: o()
+                    children: (() => {
+                        if (t && t.description) return t.description;
+                        let e = j(),
+                            n = e === A.limitedModes ? `a few game modes that rotate every few weeks` : `host ${M()} games per month`;
+                        return (0, N.jsxs)(`div`, {
+                            className: `maxWidth`,
+                            style: {
+                                textAlign: `left`
+                            },
+                            children: [c() ? `After your Pro trial ends, you'll be placed on our free plan. Under the free plan, you're limited to ${n}.` : `You're on the free version of Gimkit, which limits you to ${n}.`, (0, N.jsx)(`br`, {}), ` `, (0, N.jsx)(`br`, {}), e === A.limitedModes ? `Want access to every single mode?` : `Want to host unlimited games?`, ` `, `Upgrade to Gimkit Pro! It’s just`, ` `, C({
+                                simple: !0
+                            }), ` a month and you’ll be helping support us, an independent small business.`, e === A.limitedModes ? (0, N.jsxs)(N.Fragment, {
+                                children: [(0, N.jsx)(`br`, {}), ` `, (0, N.jsx)(`br`, {}), `Upgrade to get access to these game modes and more:`]
+                            }) : null]
+                        })
+                    })()
                 })]
             })]
         })
     },
-    He = s.div.attrs({
-        className: "maxWidth flex flex-column vc"
+    Pe = _.div.attrs({
+        className: `maxWidth flex flex-column vc`
     })`
-  padding: ${()=>k}px 0px;
+  padding: ${()=>Q}px 0px;
   padding-top: 30px;
-  background: ${t=>t.background};
-  color: ${t=>t.color};
+  background: ${e=>e.background};
+  color: ${e=>e.color};
   text-align: center;
-  padding-bottom: ${t=>t.bottomPadding}px;
-  ${t=>t.maskImage?`mask-image: linear-gradient(
+  padding-bottom: ${e=>e.bottomPadding}px;
+  ${e=>e.maskImage?`mask-image: linear-gradient(
     to bottom,
-    ${t.background} 50%,
-    transparent 100%);`:""}
+    ${e.background} 50%,
+    transparent 100%);`:``}
 `,
-    qe = s.i.attrs({
-        className: "fal fa-times"
+    Y = _.i.attrs({
+        className: `fal fa-times`
     })`
   position: absolute;
   font-size: 24px;
   top: 25px;
-  right: ${()=>k}px;
+  right: ${()=>Q}px;
   opacity: 0.8;
   transition: opacity 0.3s;
   cursor: pointer;
@@ -750,93 +777,93 @@ const P = s(_)`
     opacity: 1;
   }
 `,
-    Ke = s.div.attrs({
-        className: "maxWidth"
+    Fe = _.div.attrs({
+        className: `maxWidth`
     })`
-  padding: 0px ${()=>k}px;
+  padding: 0px ${()=>Q}px;
 `,
-    Qe = s.div`
+    Ie = _.div`
   font-size: 42px;
-  font-weight: ${S.UltraBold};
+  font-weight: ${y.UltraBold};
 `,
-    Ye = s.div`
+    Le = _.div`
   font-size: 20px;
 `,
-    G = {
+    X = {
         Classic: 1
     },
-    Xe = () => {
-        const [t, i] = l.useState([]);
-        return l.useEffect(() => {
-            B({
-                url: "/api/experiences",
+    Re = () => {
+        let [e, t] = D.useState([]);
+        return D.useEffect(() => {
+            n({
+                url: `/api/experiences`,
                 data: {
-                    mode: "liveGame"
+                    mode: `liveGame`
                 },
-                cacheKey: "EXPERIENCES",
-                success: a => {
-                    let o = [];
-                    const n = [],
-                        r = a.every(u => u.items.every(c => !c.isPremiumExperience));
-                    a.forEach(u => {
-                        u.items.forEach(c => {
-                            (c.isPremiumExperience || r) && (n.includes(c._id) || (o.push({
-                                ...c,
+                cacheKey: `EXPERIENCES`,
+                success: e => {
+                    let n = [],
+                        r = [],
+                        i = e.every(e => e.items.every(e => !e.isPremiumExperience));
+                    e.forEach(e => {
+                        e.items.forEach(e => {
+                            (e.isPremiumExperience || i) && (r.includes(e._id) || (n.push({
+                                ...e,
                                 isPremiumExperience: !0
-                            }), n.push(c._id)))
+                            }), r.push(e._id)))
                         })
-                    }), Object.keys(G).forEach(u => {
-                        const c = G[u],
-                            f = o.find(m => m.name === u);
-                        f && (o = o.filter(m => m.name !== u), o.splice(c, 0, f))
-                    }), i(o)
+                    }), Object.keys(X).forEach(e => {
+                        let t = X[e],
+                            r = n.find(t => t.name === e);
+                        r && (n = n.filter(t => t.name !== e), n.splice(t, 0, r))
+                    }), t(n)
                 }
             })
-        }, []), t.length ? e.jsx(U, {
-            children: e.jsx(ke, {
+        }, []), e.length ? (0, N.jsx)(Z, {
+            children: (0, N.jsx)(U, {
                 list: {
-                    _id: "_",
-                    name: "_",
-                    items: t
+                    _id: `_`,
+                    name: `_`,
+                    items: e
                 },
                 hideListName: !0,
                 noShadowOnItems: !0,
                 forceAllSelected: !0,
                 forcePremiumBadge: !0
             })
-        }) : e.jsx(U, {
-            children: e.jsx("div", {
+        }) : (0, N.jsx)(Z, {
+            children: (0, N.jsx)(`div`, {
                 style: {
                     height: 180
                 }
             })
         })
     },
-    U = s.div.attrs({
-        className: "maxWidth"
+    Z = _.div.attrs({
+        className: `maxWidth`
     })`
-  margin-top: ${()=>-K+25}px;
+  margin-top: ${()=>-155}px;
 `,
-    k = w.sideMargin,
-    ct = t => {
-        l.useEffect(() => {
-            t.visible && t.showModes && te("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap")
-        }, [t.visible, t.showModes]), l.useEffect(() => {
-            t.visible && ae({
-                properties: {
-                    reason: t.id
-                }
-            })
-        }, [t.visible, t.id]);
-        const i = ie();
-        if (!i) return null;
-        const a = p(),
-            o = t.showModes && a === x.limitedModes;
-        return e.jsx(se, {
+    ze = t({
+        PADDING: () => Q,
+        default: () => $
+    }),
+    Q = T.sideMargin,
+    $ = e => {
+        D.useEffect(() => {
+            e.visible && e.showModes && l(`https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap`)
+        }, [e.visible, e.showModes]), D.useEffect(() => {
+            e.visible && e.id
+        }, [e.visible, e.id]);
+        let t = o();
+        if (!t) return null;
+        let n = j(),
+            r = e.showModes && n === A.limitedModes;
+        return (0, N.jsx)(d, {
             theme: {
-                algorithm: ne.defaultAlgorithm
+                algorithm: se.defaultAlgorithm
             },
-            children: e.jsx(O, {
+            children: (0, N.jsx)(p, {
                 footer: null,
                 width: 850,
                 style: {
@@ -846,43 +873,35 @@ const P = s(_)`
                     content: {
                         padding: 0,
                         borderRadius: 10,
-                        overflow: "hidden"
+                        overflow: `hidden`
                     },
                     body: {
                         padding: 0,
-                        color: d.Snow
+                        color: v.Snow
                     }
                 },
-                open: t.visible,
-                onCancel: t.close,
+                open: e.visible,
+                onCancel: e.close,
                 closable: !1,
-                children: e.jsxs(Ve, {
-                    children: [e.jsx(_e, {
-                        user: i,
-                        close: t.close,
-                        copy: t.copy,
-                        showingModes: o
-                    }), o ? e.jsx(Xe, {}) : null, e.jsx(De, {
-                        showingModes: o
+                children: (0, N.jsxs)(Be, {
+                    children: [(0, N.jsx)(J, {
+                        user: t,
+                        close: e.close,
+                        copy: e.copy,
+                        showingModes: r
+                    }), r ? (0, N.jsx)(Re, {}) : null, (0, N.jsx)(Me, {
+                        showingModes: r
                     })]
                 })
             })
         })
     },
-    Ve = s.div.attrs({
-        className: "maxWidth"
+    Be = _.div.attrs({
+        className: `maxWidth`
     })`
-  color: ${d.Black};
-  font-family: ${b.SFPro};
+  color: ${v.Black};
+  font-family: ${g.SFPro};
 `;
 export {
-    E,
-    x as F,
-    _e as T,
-    ct as U,
-    xe as a,
-    ke as b,
-    p as g,
-    C as i,
-    me as u
+    A as a, k as c, U as i, E as l, $ as n, j as o, J as r, M as s, ze as t
 };

@@ -1,165 +1,887 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/App-81.js", "assets/_index.js", "assets/index-BdOndhxL.css", "assets/ItemNameWithAmount.js", "assets/FixSpinePlugin.js", "assets/GetAssetPath.js", "assets/MapModeType.js", "assets/MapStyle.js", "assets/MapSound.js", "assets/howler.js", "assets/playSound.js", "assets/CapitalizeFirstLetter.js", "assets/App-41.js", "assets/Button.js", "assets/polished.esm.js", "assets/inheritsLoose.js", "assets/mobxreact.esm.js", "assets/index-21.js", "assets/QuizTypes.js", "assets/TutorialConsts.js", "assets/ActionButton.js", "assets/index-5.js", "assets/index-18.js", "assets/context.js", "assets/FontAwesomeIcon.js", "assets/Centered.js", "assets/index-4.js", "assets/motion.js", "assets/index-2.js", "assets/index-14.js", "assets/EditOutlined.js", "assets/styleChecker.js", "assets/index-3.js", "assets/CheckOutlined.js", "assets/CopyOutlined.js", "assets/SixteenByNineScaler.js", "assets/index-20.js", "assets/index-22.js", "assets/index-1.js", "assets/progress.js", "assets/ElementIds.js", "assets/SeasonTicketName.js", "assets/useQuery.js", "assets/___vite-browser-external_commonjs-proxy.js", "assets/util-1.js", "assets/util-2.js", "assets/Shortcut.js", "assets/Names.js", "assets/useWillUnmount.js", "assets/CircularProgress.js", "assets/clsx.m.js", "assets/index-6.js", "assets/AccessibleAnchor.js", "assets/index-17.js", "assets/use-force-update.js", "assets/GimkitLiveQuestion.js", "assets/Text.js", "assets/getCloudinaryUrl.js", "assets/LazyLatexRenderer.js", "assets/Tooltip.js", "assets/use-motion-value.js", "assets/index-9.js", "assets/index-23.js", "assets/useIntervalWhen.js", "assets/index-10.js", "assets/move.js", "assets/react-flip-move.es.js", "assets/sounds.js", "assets/App-5.js", "assets/AnimatedBackground-2.js", "assets/useDebouncedValue.js", "assets/CloseCircleOutlined.js", "assets/FillRemainingSpace.js", "assets/index-24.js", "assets/confetti.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/App-78.js", "assets/rolldown-runtime.js", "assets/utils.js", "assets/dist-1.js", "assets/react-1.js", "assets/modal.js", "assets/assertThisInitialized.js", "assets/Compact.js", "assets/color.js", "assets/ContextIsolator.js", "assets/dist-2.js", "assets/wrapNativeSuper.js", "assets/InfoCircleFilled.js", "assets/compact-item.js", "assets/useLocale.js", "assets/useCSSVarCls.js", "assets/pickAttrs.js", "assets/button.js", "assets/PurePanel.js", "assets/Company.js", "assets/Paths.js", "assets/decorate.js", "assets/jsx-runtime.js", "assets/message.js", "assets/context.js", "assets/_index.js", "assets/dist-3.js", "assets/spin.js", "assets/QueryClientProvider.js", "assets/queryClient.js", "assets/infiniteQueryBehavior.js", "assets/index-Tu04tXLf.css", "assets/App-79.js", "assets/input.js", "assets/es-2.js", "assets/useVariants.js", "assets/space.js", "assets/typography.js", "assets/tooltip.js", "assets/es-1.js", "assets/styleChecker.js", "assets/CheckOutlined.js", "assets/CopyOutlined.js", "assets/EditOutlined.js", "assets/EnterOutlined.js", "assets/copy-to-clipboard.js", "assets/AccessibleAnchor.js", "assets/Button.js", "assets/polished.esm.js", "assets/inheritsLoose.js", "assets/Send.js", "assets/FetchRoom.js", "assets/stores-2.js", "assets/MapModeType.js", "assets/MapStyle.js", "assets/App-80.js", "assets/Form.js", "assets/select.js", "assets/move.js", "assets/es-3.js", "assets/DownOutlined.js", "assets/checkbox.js", "assets/useBubbleLock.js", "assets/form.js", "assets/useForm.js", "assets/collapse.js", "assets/useBreakpoint.js", "assets/useForceUpdate.js", "assets/QuestionCircleOutlined.js", "assets/slider.js", "assets/upload.js", "assets/progress.js", "assets/DeleteOutlined.js", "assets/DownloadOutlined.js", "assets/PaperClipOutlined.js", "assets/StarOutlined.js", "assets/TrackEvent.js", "assets/TrackPostHogEvent.js", "assets/Names.js", "assets/SeasonTicketName.js", "assets/OwnsSeasonTicket.js"]))) => i.map(i => d[i]);
 import {
-    j as i,
-    r as m,
-    d as o,
-    p
+    o as e
+} from "./rolldown-runtime.js";
+import {
+    C as t,
+    O as n,
+    S as r,
+    u as i,
+    z as a
+} from "./utils.js";
+import {
+    t as o
+} from "./react-1.js";
+import {
+    a as s
+} from "./InfoCircleFilled.js";
+import {
+    t as c
+} from "./message.js";
+import {
+    t as l
+} from "./modal.js";
+import {
+    t as u
+} from "./button.js";
+import {
+    t as d
+} from "./select.js";
+import {
+    t as f
+} from "./input.js";
+import {
+    t as p
+} from "./tabs.js";
+import {
+    t as m
+} from "./spin.js";
+import {
+    n as h,
+    t as g,
+    u as _
+} from "./useDeviceEditingEssentials.js";
+import {
+    t as v
+} from "./slider.js";
+import {
+    t as y
+} from "./drawer.js";
+import {
+    t as b
+} from "./space.js";
+import {
+    t as x
+} from "./typography.js";
+import {
+    t as S
+} from "./SaveOutlined.js";
+import {
+    t as C
+} from "./ShareAltOutlined.js";
+import {
+    i as w
+} from "./App-43.js";
+import {
+    t as T
+} from "./switch.js";
+import {
+    t as ee
+} from "./jsx-runtime.js";
+import {
+    a as te,
+    b as ne,
+    c as re,
+    h as E,
+    l as D,
+    n as O,
+    s as k,
+    y as A
 } from "./_index.js";
 import {
-    az as s,
-    o as n,
-    aA as l
-} from "./App-41.js";
+    r as j
+} from "./mobxreact.esm.js";
 import {
-    S as c
-} from "./SixteenByNineScaler.js";
+    t as M
+} from "./FontAwesomeIcon.js";
 import {
-    m as a
-} from "./motion.js";
-import "./Button.js";
-import "./polished.esm.js";
-import "./inheritsLoose.js";
-import "./FixSpinePlugin.js";
-import "./GetAssetPath.js";
-import "./MapModeType.js";
-import "./MapStyle.js";
-import "./MapSound.js";
-import "./howler.js";
-import "./playSound.js";
-import "./mobxreact.esm.js";
-import "./index-21.js";
-import "./QuizTypes.js";
-import "./TutorialConsts.js";
-import "./ActionButton.js";
-import "./index-5.js";
-import "./index-18.js";
-import "./context.js";
-import "./FontAwesomeIcon.js";
-import "./Centered.js";
-import "./CapitalizeFirstLetter.js";
-import "./index-4.js";
-import "./index-2.js";
-import "./index-14.js";
-import "./EditOutlined.js";
-import "./styleChecker.js";
-import "./index-3.js";
-import "./CheckOutlined.js";
-import "./CopyOutlined.js";
-import "./progress.js";
-import "./ElementIds.js";
-import "./SeasonTicketName.js";
-import "./useQuery.js";
-import "./___vite-browser-external_commonjs-proxy.js";
-import "./util-1.js";
-import "./util-2.js";
-import "./Shortcut.js";
-import "./Names.js";
-import "./useWillUnmount.js";
-import "./CircularProgress.js";
-import "./clsx.m.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
-import "./index-17.js";
-import "./use-force-update.js";
-import "./GimkitLiveQuestion.js";
-import "./Text.js";
-import "./getCloudinaryUrl.js";
-import "./LazyLatexRenderer.js";
-import "./Tooltip.js";
-import "./index-1.js";
-import "./use-motion-value.js";
-import "./index-9.js";
-import "./index-23.js";
-import "./useIntervalWhen.js";
-import "./index-10.js";
-import "./move.js";
-import "./react-flip-move.es.js";
-import "./sounds.js";
-import "./App-5.js";
-import "./AnimatedBackground-2.js";
-import "./useDebouncedValue.js";
-import "./CloseCircleOutlined.js";
-import "./FillRemainingSpace.js";
-import "./index-24.js";
-import "./index-20.js";
-import "./index-22.js";
-const d = m.lazy(() => p(() => import("./App-81.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74]))),
-    r = .3,
-    x = t => (n(Phaser.Input.Keyboard.KeyCodes.ESC, t.close, []), i.jsx(u, {
-        children: i.jsx(f, {
-            initial: {
-                background: "rgba(0,0,0,0)"
-            },
-            animate: {
-                background: "rgba(0,0,0,0.4)"
-            },
-            exit: {
-                background: "rgba(0,0,0,0)"
-            },
-            transition: {
-                duration: r
-            },
-            onClick: t.close,
-            children: i.jsx(C, {
-                initial: {
-                    x: "125%"
+    i as N
+} from "./Centered.js";
+import {
+    n as P
+} from "./Button.js";
+import {
+    c as F,
+    d as ie,
+    t as I,
+    y as ae
+} from "./stores-2.js";
+import {
+    t as L
+} from "./FetchScene.js";
+import {
+    n as oe
+} from "./isVersion.js";
+import {
+    t as R
+} from "./useStore.js";
+import {
+    n as z,
+    t as B
+} from "./Send.js";
+import {
+    t as se
+} from "./setCurrentAction.js";
+import {
+    n as V
+} from "./TutorialConsts.js";
+import {
+    a as ce
+} from "./ActionButton.js";
+import {
+    t as le
+} from "./PlaceDevice.js";
+import {
+    t as ue
+} from "./FetchDeviceOptionById.js";
+import {
+    t as de
+} from "./Reset.js";
+import {
+    t as H
+} from "./CapitalizeFirstLetter.js";
+import {
+    t as U
+} from "./playClickSound.js";
+import {
+    t as W
+} from "./RoleLevelConsts.js";
+import {
+    bt as fe,
+    gt as pe,
+    ht as me,
+    it as he,
+    j as G,
+    lt as ge,
+    mt as _e,
+    o as ve,
+    pt as K,
+    u as ye,
+    vt as q,
+    xt as be,
+    yt as J
+} from "./App-42.js";
+import {
+    a as xe,
+    i as Se,
+    n as Ce,
+    r as we,
+    t as Te
+} from "./SettingCard.js";
+var Y = e(o()),
+    X = ee(),
+    Z = e => {
+        let {
+            title: t,
+            description: n
+        } = e;
+        return (0, X.jsxs)(Ee, {
+            onClick: e.onClick,
+            children: [(0, X.jsx)(`div`, {
+                style: {
+                    color: `rgba(255, 255, 255, 0.85)`,
+                    fontSize: 14,
+                    marginRight: 20
                 },
-                animate: {
-                    x: "0%"
+                children: (0, X.jsx)(M, {
+                    name: e.icon
+                })
+            }), (0, X.jsxs)(`div`, {
+                children: [(0, X.jsx)(x.Title, {
+                    style: {
+                        marginBottom: 2,
+                        fontWeight: k.Bold
+                    },
+                    level: 4,
+                    children: t
+                }), (0, X.jsx)(x.Text, {
+                    children: n
+                })]
+            })]
+        })
+    },
+    Ee = D(N).attrs({
+        className: `maxWidth`
+    })`
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: background 0.18s ease-in-out;
+  border-radius: 8px;
+  &:hover {
+    background: rgba(255, 255, 255, 0.17);
+  }
+`,
+    De = e => {
+        I.gui.none.optionsMenu.screen = e
+    },
+    Oe = e => {
+        B(z.setGlobalPermissions, {
+            adding: e.adding,
+            removing: e.removing,
+            editing: e.editing,
+            manageCodeGrids: e.manageCodeGrids
+        })
+    },
+    ke = j(e => {
+        let {
+            session: {
+                globalPermissions: t
+            }
+        } = R(), n = (e, n) => {
+            let r = {
+                adding: t.adding,
+                removing: t.removing,
+                editing: t.editing,
+                manageCodeGrids: t.manageCodeGrids
+            };
+            r[e] = n, Oe(r)
+        };
+        return (0, X.jsxs)(y, {
+            placement: `left`,
+            open: e.open,
+            onClose: e.close,
+            width: 450,
+            title: `Permissions`,
+            children: [(0, X.jsx)(x.Text, {
+                children: `Set what other players collaborating with you are allowed to do! Changes are applied immediately.`
+            }), (0, X.jsxs)(b, {
+                direction: `vertical`,
+                className: `maxWidth`,
+                size: 14,
+                style: {
+                    marginTop: 22
                 },
-                exit: {
-                    x: "125%"
+                children: [(0, X.jsx)(Q, {
+                    name: `Adding`,
+                    description: `Are other players allowed to add ${G.terrain.singular}, ${G.prop.plural}, ${G.device.plural}, and ${G.wire.singular} to the map?`,
+                    enabled: t.adding,
+                    onChange: e => n(`adding`, e)
+                }), (0, X.jsx)(Q, {
+                    name: `Removing`,
+                    description: `Are other players allowed to remove things from the map?`,
+                    enabled: t.removing,
+                    onChange: e => n(`removing`, e)
+                }), (0, X.jsx)(Q, {
+                    name: `Editing`,
+                    description: `Are other players allowed to modify options for ${G.prop.plural}, ${G.device.plural}, and ${G.wire.singular}?`,
+                    enabled: t.editing,
+                    onChange: e => n(`editing`, e)
+                }), (0, X.jsx)(Q, {
+                    name: H(_.grid.plural),
+                    description: `Are other players allowed to create and edit ${_.grid.plural} for ${G.device.plural}?`,
+                    enabled: t.manageCodeGrids,
+                    onChange: e => n(`manageCodeGrids`, e)
+                })]
+            })]
+        })
+    }),
+    Q = e => (0, X.jsxs)(Ae, {
+        children: [(0, X.jsxs)(`div`, {
+            style: {
+                marginRight: 35
+            },
+            children: [(0, X.jsx)(x.Title, {
+                level: 5,
+                style: {
+                    color: P.White
                 },
-                transition: {
-                    duration: r,
-                    ease: "easeOut"
-                },
-                onClick: e => e.stopPropagation(),
-                children: i.jsx(m.Suspense, {
-                    fallback: i.jsx("div", {}),
-                    children: i.jsx(d, {
-                        status: t.status,
-                        style: t.style,
-                        tableGroup: t.tableGroup,
-                        craft: t.craft,
-                        collect: t.collect,
-                        item: t.item,
-                        itemAmount: t.itemAmount,
-                        craftingDurationMs: t.craftingDurationMs,
-                        itemFinishesCraftingAt: t.itemFinishesCraftingAt,
-                        itemDisposalMs: t.itemDisposalMs,
-                        itemDisposedAt: t.itemDisposedAt,
-                        itemCrafterCharacterId: t.itemCrafterCharacterId,
-                        useCrafterCollectionAdvantage: t.useCrafterCollectionAdvantage,
-                        close: t.close
-                    })
+                children: e.name
+            }), (0, X.jsx)(x.Text, {
+                children: e.description
+            })]
+        }), (0, X.jsx)(`div`, {
+            children: (0, X.jsx)(T, {
+                checked: e.enabled,
+                onChange: e.onChange
+            })
+        })]
+    }),
+    Ae = D.div.attrs({
+        className: `flex between`
+    })`
+  padding: 17px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+`,
+    je = j(e => {
+        let {
+            editing: t,
+            me: n,
+            gui: r
+        } = R(), [i, a] = Y.useState(q().zonedDeviceDisplay), [o, c] = Y.useState(q().wireVisibility), l = e => {
+            J(`phase`, e), n.editing.preferences.phase = e, fe(e)
+        };
+        return oe() ? (0, X.jsx)(s, {
+            theme: {
+                components: {
+                    Switch: {
+                        colorPrimary: `#00c853`,
+                        colorPrimaryHover: `#00e676`
+                    }
+                }
+            },
+            children: (0, X.jsx)(y, {
+                placement: `left`,
+                open: e.open,
+                onClose: e.close,
+                width: 450,
+                title: `Editing Options`,
+                children: (0, X.jsxs)(b, {
+                    direction: `vertical`,
+                    className: `maxWidth`,
+                    size: 14,
+                    children: [(0, X.jsx)($, {
+                        name: `Camera Zoom`,
+                        description: `Zoom out to see more in edit mode`,
+                        children: (0, X.jsx)(v, {
+                            min: K.min,
+                            max: K.max,
+                            step: K.step,
+                            className: `maxWidth`,
+                            value: n.editing.preferences.cameraZoom,
+                            onChange: e => {
+                                J(`cameraZoom`, e), n.editing.preferences.cameraZoom = e, L().cameraHelper.forceRefresh()
+                            }
+                        })
+                    }), (0, X.jsx)($, {
+                        inline: !0,
+                        name: `Player Collision`,
+                        description: `Disable to walk through walls & objects in edit mode`,
+                        children: (0, X.jsx)(T, {
+                            "aria-label": `Player Collision`,
+                            checked: !n.phase,
+                            onChange: e => l(!e)
+                        })
+                    }), (0, X.jsx)($, {
+                        name: `Player Speed`,
+                        description: `Adjust how fast you move in edit mode`,
+                        children: (0, X.jsx)(d, {
+                            className: `maxWidth`,
+                            value: n.movementSpeed / ie.normal,
+                            onChange: e => {
+                                J(`movementSpeed`, e), n.editing.preferences.movementSpeed = e, be(e)
+                            },
+                            children: me.map(e => (0, X.jsx)(d.Option, {
+                                value: e,
+                                children: `${e}x`
+                            }, `speed-${e}`))
+                        })
+                    }), (0, X.jsx)($, {
+                        name: `Grid Snap`,
+                        description: `When placing ${G.prop.plural} & ${G.device.plural}, easily align them using grid snap`,
+                        children: (0, X.jsx)(d, {
+                            className: `maxWidth`,
+                            value: t.gridSnap,
+                            onChange: e => {
+                                J(`gridSnap`, e), t.gridSnap = e
+                            },
+                            children: _e.map(e => (0, X.jsx)(d.Option, {
+                                value: e,
+                                children: e === 0 ? `Off` : e
+                            }, `grid-snap-${e}`))
+                        })
+                    }), (0, X.jsx)($, {
+                        name: `Show Grid`,
+                        inline: !0,
+                        children: (0, X.jsx)(T, {
+                            "aria-label": `Show Grid`,
+                            checked: r.showingGrid,
+                            onChange: e => {
+                                J(`showGrid`, e), n.editing.preferences.showGrid = e, r.showingGrid = e
+                            }
+                        })
+                    }), (0, X.jsx)($, {
+                        name: `Zone ${H(G.device.singular)} Display`,
+                        description: `Set the appearance of ${G.device.plural} that use a zone area`,
+                        children: (0, X.jsx)(d, {
+                            className: `maxWidth`,
+                            value: i,
+                            onChange: e => {
+                                J(`zonedDeviceDisplay`, e), a(e), de()
+                            },
+                            children: pe.map(e => (0, X.jsx)(d.Option, {
+                                value: e.value,
+                                children: e.label
+                            }, e.value))
+                        })
+                    }), (0, X.jsx)($, {
+                        inline: !0,
+                        name: `Wire Visibility`,
+                        description: `Disable to hide wires except ones connected to ${G.device.plural} you have selected`,
+                        children: (0, X.jsx)(T, {
+                            "aria-label": `Wire Visibility`,
+                            checked: o,
+                            onChange: e => {
+                                J(`wireVisibility`, e), c(q().wireVisibility), L().worldManager.wires.visibilityManager.update()
+                            }
+                        })
+                    }), (0, X.jsx)($, {
+                        inline: !0,
+                        name: `${H(w)} Bar`,
+                        description: `Show the ${w} bar, even if ${w} is below 75%`,
+                        children: (0, X.jsx)(T, {
+                            "aria-label": `${H(w)} Bar`,
+                            checked: t.showMemoryBarAtAllTimes,
+                            onChange: e => {
+                                J(`showMemoryBarAtAllTimes`, e), t.showMemoryBarAtAllTimes = e
+                            }
+                        })
+                    })]
                 })
             })
+        }) : null
+    }),
+    $ = e => {
+        let t = (0, X.jsxs)(Ce, {
+            children: [(0, X.jsx)(xe, {
+                children: e.name
+            }), e.description ? (0, X.jsx)(we, {
+                children: e.description
+            }) : null]
+        });
+        return (0, X.jsx)(Te, {
+            children: e.inline ? (0, X.jsxs)(Se, {
+                children: [t, e.children]
+            }) : (0, X.jsxs)(X.Fragment, {
+                children: [t, (0, X.jsx)(`div`, {
+                    style: {
+                        marginTop: 10
+                    },
+                    children: e.children
+                })]
+            })
         })
-    })),
-    Ot = s(x),
-    u = o(c).attrs({
-        className: "maxAll"
-    })`
-  overflow: hidden;
-  z-index: ${l.primaryContent};
+    },
+    Me = e => {
+        let t = L().worldManager.devices.allDevices.find(e => e.deviceOption.id === V.mapOptions),
+            n = t => {
+                I.me.editing.device.currentlyEditedDevice = {
+                    id: t,
+                    deviceOptionId: V.mapOptions
+                }, e()
+            };
+        t ? n(t.id) : le({
+            id: ve(),
+            deviceOption: ue(V.mapOptions),
+            x: 0,
+            y: 0,
+            name: ``,
+            options: {},
+            state: {},
+            placedByClient: !0,
+            isPreview: !1,
+            onPlace: e => {
+                ye({
+                    id: e.id,
+                    deviceTypeId: V.mapOptions,
+                    x: e.x,
+                    y: e.y,
+                    name: e.name,
+                    options: JSON.stringify(e.options)
+                }), n(e.id)
+            }
+        })
+    },
+    Ne = j(e => {
+        let {
+            options: t,
+            position: n,
+            hooks: r
+        } = g();
+        return (0, X.jsx)(y, {
+            placement: `left`,
+            open: e.open,
+            onClose: e.close,
+            width: 550,
+            title: `Map Options`,
+            children: (() => {
+                let e = L().worldManager.devices.allDevices.find(e => e.deviceOption.id === V.mapOptions);
+                return e ? (0, X.jsx)(h, {
+                    device: e,
+                    deviceOption: e.deviceOption,
+                    options: t,
+                    position: n,
+                    hooks: r
+                }) : null
+            })()
+        })
+    }),
+    Pe = j(e => {
+        let {
+            me: {
+                roleLevel: a
+            }
+        } = R(), [o, s, d] = n(!1);
+        return (0, X.jsxs)(y, {
+            placement: `left`,
+            open: e.open,
+            onClose: e.close,
+            width: 570,
+            title: `Showcase & Save`,
+            children: [(0, X.jsx)(x.Title, {
+                level: 4,
+                style: {
+                    color: O.White
+                },
+                children: `Showcase Link`
+            }), (0, X.jsx)(x.Text, {
+                style: {
+                    marginTop: 2
+                },
+                children: `Generate a showcase link! Share the link with friends to have them test your map!`
+            }), (0, X.jsx)(u, {
+                block: !0,
+                size: `large`,
+                type: `primary`,
+                loading: o,
+                icon: (0, X.jsx)(C, {}),
+                onClick: () => {
+                    o || (s(), t({
+                        url: `/api/created-map/publish-link`,
+                        data: {
+                            id: window._mapId
+                        },
+                        success: e => {
+                            let t = `${i()}/creative/showcase/${e.id}`;
+                            l.success({
+                                icon: (0, X.jsx)(X.Fragment, {}),
+                                footer: null,
+                                width: 550,
+                                closable: !0,
+                                maskClosable: !0,
+                                bodyStyle: {
+                                    padding: 20
+                                },
+                                content: (0, X.jsxs)(X.Fragment, {
+                                    children: [(0, X.jsx)(x.Title, {
+                                        level: 4,
+                                        style: {
+                                            fontWeight: k.Bold
+                                        },
+                                        children: `Showcase Link`
+                                    }), (0, X.jsxs)(`div`, {
+                                        className: `flex vc`,
+                                        style: {
+                                            marginTop: 2
+                                        },
+                                        children: [(0, X.jsx)(f, {
+                                            type: `text`,
+                                            value: t,
+                                            readOnly: !0
+                                        }), (0, X.jsx)(u, {
+                                            style: {
+                                                marginLeft: 10
+                                            },
+                                            type: `primary`,
+                                            onClick: () => {
+                                                var e;
+                                                (e = navigator) == null || (e = e.clipboard) == null || e.writeText(t), c.success(`Copied to clipboard!`)
+                                            },
+                                            children: `Copy Link`
+                                        })]
+                                    }), (0, X.jsx)(A, {}), (0, X.jsxs)(x.Text, {
+                                        children: [`Your map is ready to be showcased! Share this link with others, and they can play the map you've made! `, (0, X.jsx)(`br`, {}), (0, X.jsx)(`br`, {}), (0, X.jsxs)(`b`, {
+                                            children: [`This link expires `, e.expirationDays, ` `, r(`day`, e.expirationDays), ` from now.`]
+                                        }), (0, X.jsx)(`br`, {}), (0, X.jsx)(`br`, {}), `After the link expires, you can always generate a new link.`]
+                                    })]
+                                })
+                            })
+                        },
+                        both: d
+                    }))
+                },
+                style: {
+                    marginTop: 10
+                },
+                children: `Generate Showcase Link`
+            }), (0, X.jsx)(A, {}), (0, X.jsx)(x.Title, {
+                level: 4,
+                style: {
+                    color: O.White
+                },
+                children: `Save`
+            }), (0, X.jsx)(x.Text, {
+                style: {
+                    marginTop: 2
+                },
+                children: `Maps are automatically saved every few minutes. However, you can save manually by clicking the button below!`
+            }), (0, X.jsx)(u, {
+                block: !0,
+                size: `large`,
+                type: `primary`,
+                icon: (0, X.jsx)(S, {}),
+                onClick: () => B(z.save, {}),
+                style: {
+                    marginTop: 10
+                },
+                children: `Save Map`
+            }), a >= W.admin ? (0, X.jsxs)(X.Fragment, {
+                children: [(0, X.jsx)(A, {}), (0, X.jsx)(u, {
+                    block: !0,
+                    size: `large`,
+                    type: `primary`,
+                    icon: (0, X.jsx)(S, {}),
+                    onClick: () => B(z.publish),
+                    children: `Team Gimkit Publish`
+                })]
+            }) : null]
+        })
+    }),
+    Fe = e => (0, X.jsx)(y, {
+        placement: `left`,
+        open: e.open,
+        onClose: e.close,
+        width: 500,
+        title: `Documentation & Help`,
+        children: (0, X.jsxs)(b, {
+            className: `maxName`,
+            direction: `vertical`,
+            size: 14,
+            children: [(0, X.jsx)(Ie, {
+                link: `https://forum.creative.gimkit.com`,
+                name: `Community Forum`,
+                description: `Find answers, ask questions, and get help with your map!`
+            }), (0, X.jsx)(Ie, {
+                link: `https://docs.creative.gimkit.com`,
+                name: `Help Docs`,
+                description: `We're still building out our documentation, but you can find some helpful articles here!`
+            })]
+        })
+    }),
+    Ie = e => (0, X.jsx)(`a`, {
+        href: e.link,
+        target: `_blank`,
+        children: (0, X.jsxs)(Le, {
+            children: [(0, X.jsxs)(`div`, {
+                children: [(0, X.jsx)(x.Title, {
+                    level: 4,
+                    style: {
+                        color: O.White
+                    },
+                    children: e.name
+                }), (0, X.jsx)(x.Text, {
+                    style: {
+                        marginTop: 2
+                    },
+                    children: e.description
+                })]
+            }), (0, X.jsx)(`div`, {
+                style: {
+                    fontSize: 18,
+                    marginLeft: 30
+                },
+                children: (0, X.jsx)(M, {
+                    name: `fas fa-external-link`,
+                    style: {
+                        color: O.White
+                    }
+                })
+            })]
+        })
+    }),
+    Le = D(N)`
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: background 0.18s ease-in-out;
+  border-radius: 8px;
+  &:hover {
+    background: rgba(255, 255, 255, 0.17);
+  }
 `,
-    f = o(a.div).attrs({
-        className: "maxAll"
-    })`
-  position: relative;
-`,
-    C = o(a.div)`
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 70%;
-  max-width: 420px;
-  box-shadow: -13px 2px 54px 1px rgba(0, 0, 0, 0.41);
-  overflow: hidden;
-`;
+    Re = Y.lazy(() => E(() => import(`./App-78.js`), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]))),
+    ze = Y.lazy(() => E(() => import(`./App-79.js`), __vite__mapDeps([32, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 33, 34, 25, 26, 27, 28, 29, 30, 31, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]))),
+    Be = Y.lazy(() => E(() => import(`./App-80.js`), __vite__mapDeps([55, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 56, 57, 34, 25, 26, 27, 28, 29, 30, 31, 58, 59, 39, 33, 35, 41, 60, 61, 62, 63, 38, 64, 65, 66, 67, 68, 69, 36, 37, 40, 42, 43, 44, 45, 70, 71, 72, 73, 74, 75, 46, 76, 77, 78, 79, 80, 47, 48, 49, 50, 51, 52, 53, 54]))),
+    Ve = e => {
+        let [t, r, i] = n(!0), [o, c] = Y.useState(!1), [l, u] = Y.useState(!1), [d, f] = Y.useState(), [h, g] = Y.useState(), _ = () => {
+            r(), f(void 0), g(void 0), u(!1), a({
+                url: `/api/created-map/listing/creator-info/${window._mapId}`,
+                success: e => {
+                    c(!!e.requiresUsername), e.data && f(e.data), e.publishRequirementError && g(e.publishRequirementError)
+                },
+                error: e => {
+                    u(!0)
+                },
+                both: i
+            })
+        };
+        return te(_), (0, X.jsx)(Y.Suspense, {
+            fallback: null,
+            children: t ? (0, X.jsx)(`div`, {
+                className: `maxAll flex-center`,
+                children: (0, X.jsx)(m, {
+                    size: `large`
+                })
+            }) : l ? (0, X.jsx)(ne, {
+                type: `error`,
+                showIcon: !0,
+                message: `Error Loading Map Publishing`,
+                description: `There was an error fetching publishing details for this map. Please check back in later!`
+            }) : d ? (0, X.jsx)(s, {
+                theme: {
+                    components: {
+                        Tabs: {
+                            colorPrimary: P.Yellow
+                        }
+                    }
+                },
+                children: (0, X.jsxs)(p, {
+                    defaultActiveKey: `overview`,
+                    children: [(0, X.jsx)(p.TabPane, {
+                        tab: `Overview`,
+                        children: (0, X.jsx)(ze, {
+                            data: d,
+                            refetch: _,
+                            close: e.close,
+                            requiresUsername: o
+                        })
+                    }, `overview`), (0, X.jsx)(p.TabPane, {
+                        tab: `Map Details`,
+                        children: (0, X.jsx)(Be, {
+                            ...d,
+                            refetch: _
+                        })
+                    }, `details`)]
+                })
+            }) : (0, X.jsx)(Re, {
+                requiresUsername: o,
+                publishRequirementError: h,
+                refetch: _
+            })
+        })
+    },
+    He = e => (0, X.jsx)(y, {
+        placement: `left`,
+        open: e.open,
+        onClose: e.close,
+        destroyOnClose: !0,
+        width: 500,
+        children: (0, X.jsx)(Ve, {
+            close: e.close
+        })
+    }),
+    Ue = j(e => {
+        let {
+            gui: {
+                none: {
+                    optionsMenu: {
+                        screen: t
+                    }
+                }
+            },
+            me: {
+                roleLevel: r
+            }
+        } = R(), i = ge(), [a, o, s] = n(!0), [c, l] = Y.useState(!0);
+        he();
+        let u = Y.useMemo(() => t === F.mapOptions, [t]),
+            d = Y.useMemo(() => t === F.editing, [t]),
+            f = Y.useMemo(() => t === F.permissions, [t]),
+            p = Y.useMemo(() => t === F.saving, [t]),
+            m = Y.useMemo(() => t === F.help, [t]),
+            h = Y.useMemo(() => t === F.publishing, [t]),
+            g = () => {
+                e.setToHomeScreen(), v(F.home)
+            },
+            _ = Y.useCallback(() => {
+                c ? g() : d || f || u || p || m || h || s()
+            }, [s, u, d, f, p, m, h, c, g]),
+            v = e => De(e),
+            S = e => {
+                U(), v(e)
+            },
+            C = e => {
+                e && l(!1), e || g()
+            },
+            w = () => {
+                U(), Me(() => {
+                    v(F.mapOptions)
+                })
+            },
+            T = () => {
+                v(F.home)
+            };
+        return (0, X.jsx)(y, {
+            placement: `left`,
+            open: a,
+            onClose: _,
+            afterOpenChange: C,
+            width: 600,
+            destroyOnClose: !0,
+            children: (0, X.jsxs)(We, {
+                children: [(0, X.jsx)(x.Title, {
+                    style: {
+                        fontFamily: re.FugazOne,
+                        textTransform: `uppercase`,
+                        textAlign: `center`
+                    },
+                    level: 1,
+                    children: `Options`
+                }), (0, X.jsx)(`div`, {
+                    style: {
+                        height: 14
+                    }
+                }), (0, X.jsxs)(b, {
+                    className: `maxAll`,
+                    direction: `vertical`,
+                    size: 14,
+                    children: [i ? (0, X.jsxs)(X.Fragment, {
+                        children: [(0, X.jsx)(Z, {
+                            icon: `fas fa-sliders-v-square`,
+                            title: `Map Options`,
+                            description: `Customize teams, game duration, and who is determined as the winner`,
+                            onClick: w
+                        }), (0, X.jsx)(Ne, {
+                            open: u,
+                            close: T
+                        })]
+                    }) : null, oe() ? (0, X.jsx)(Z, {
+                        icon: `fas fa-i-cursor`,
+                        title: `Editing Options`,
+                        description: `Adjust player collision, speed, and other settings to help you while editing`,
+                        onClick: () => S(F.editing)
+                    }) : null, i && !ce() ? (0, X.jsxs)(X.Fragment, {
+                        children: [(0, X.jsx)(Z, {
+                            icon: `fas fa-upload`,
+                            title: `Publish`,
+                            description: `Publish your map to be played by Gimkit users from around the world!`,
+                            onClick: () => S(F.publishing)
+                        }), (0, X.jsx)(Z, {
+                            icon: `fas fa-share`,
+                            title: `Showcase & Save`,
+                            description: `Send a link to friends to have them test out your map!`,
+                            onClick: () => S(F.saving)
+                        }), r >= W.admin ? (0, X.jsx)(Z, {
+                            icon: `fas fa-brackets-curly`,
+                            title: `Hooks`,
+                            description: `Allow game hosts to customize your map before hopping in!`,
+                            onClick: () => se(ae.hooks)
+                        }) : null, (0, X.jsx)(Z, {
+                            icon: `fas fa-user-tag`,
+                            title: `Permissions`,
+                            description: `Control who can make changes to the map when editing collaboratively`,
+                            onClick: () => S(F.permissions)
+                        }), (0, X.jsx)(He, {
+                            open: h,
+                            close: T
+                        }), (0, X.jsx)(ke, {
+                            open: f,
+                            close: T
+                        }), (0, X.jsx)(Pe, {
+                            open: p,
+                            close: T
+                        })]
+                    }) : null, (0, X.jsx)(Z, {
+                        icon: `fas fa-comment-dots`,
+                        title: `Documentation & Help`,
+                        description: `Get help building your map!`,
+                        onClick: () => S(F.help)
+                    }), (0, X.jsx)(Fe, {
+                        open: m,
+                        close: T
+                    })]
+                }), (0, X.jsx)(je, {
+                    open: d,
+                    close: T
+                })]
+            })
+        })
+    }),
+    We = D.div.attrs({
+        className: `maxWidth`
+    })``;
 export {
-    Ot as
+    Ue as
     default
 };

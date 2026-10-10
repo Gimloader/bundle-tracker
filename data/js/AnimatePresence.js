@@ -1,0 +1,224 @@
+import {
+    o as e
+} from "./rolldown-runtime.js";
+import {
+    t
+} from "./react-1.js";
+import {
+    t as n
+} from "./noop.js";
+import {
+    _ as r,
+    g as i,
+    h as a,
+    p as o,
+    v as s
+} from "./motion.js";
+import {
+    n as c,
+    t as l
+} from "./use-force-update.js";
+var u = e(t());
+
+function d(e, t, r) {
+    t === void 0 && (t = 0), r === void 0 && (r = !0);
+    var i = (0, u.useRef)();
+    (0, u.useEffect)(function() {
+        i.current = e
+    });
+
+    function a() {
+        i.current && i.current()
+    }(0, u.useEffect)(function() {
+        if (r) {
+            if (typeof window < `u`) {
+                var e = window.setTimeout(a, t);
+                return function() {
+                    window.clearTimeout(e)
+                }
+            }
+            console.warn(`useTimeoutWhen: window is undefined.`)
+        }
+        return n
+    }, [r])
+}
+var f = class extends u.Component {
+    getSnapshotBeforeUpdate(e) {
+        let t = this.props.childRef.current;
+        if (t && e.isPresent && !this.props.isPresent) {
+            let e = this.props.sizeRef.current;
+            e.height = t.offsetHeight || 0, e.width = t.offsetWidth || 0, e.top = t.offsetTop, e.left = t.offsetLeft
+        }
+        return null
+    }
+    componentDidUpdate() {}
+    render() {
+        return this.props.children
+    }
+};
+
+function p({
+    children: e,
+    isPresent: t
+}) {
+    let n = (0, u.useId)(),
+        r = (0, u.useRef)(null),
+        i = (0, u.useRef)({
+            width: 0,
+            height: 0,
+            top: 0,
+            left: 0
+        });
+    return (0, u.useInsertionEffect)(() => {
+        let {
+            width: e,
+            height: a,
+            top: o,
+            left: s
+        } = i.current;
+        if (t || !r.current || !e || !a) return;
+        r.current.dataset.motionPopId = n;
+        let c = document.createElement(`style`);
+        return document.head.appendChild(c), c.sheet && c.sheet.insertRule(`
+          [data-motion-pop-id="${n}"] {
+            position: absolute !important;
+            width: ${e}px !important;
+            height: ${a}px !important;
+            top: ${o}px !important;
+            left: ${s}px !important;
+          }
+        `), () => {
+            document.head.removeChild(c)
+        }
+    }, [t]), u.createElement(f, {
+        isPresent: t,
+        childRef: r,
+        sizeRef: i
+    }, u.cloneElement(e, {
+        ref: r
+    }))
+}
+var m = ({
+    children: e,
+    initial: t,
+    isPresent: n,
+    onExitComplete: r,
+    custom: a,
+    presenceAffectsLayout: o,
+    mode: c
+}) => {
+    let l = i(h),
+        d = (0, u.useId)(),
+        f = (0, u.useMemo)(() => ({
+            id: d,
+            initial: t,
+            isPresent: n,
+            custom: a,
+            onExitComplete: e => {
+                l.set(e, !0);
+                for (let e of l.values())
+                    if (!e) return;
+                r && r()
+            },
+            register: e => (l.set(e, !1), () => l.delete(e))
+        }), o ? void 0 : [n]);
+    return (0, u.useMemo)(() => {
+        l.forEach((e, t) => l.set(t, !1))
+    }, [n]), u.useEffect(() => {
+        !n && !l.size && r && r()
+    }, [n]), c === `popLayout` && (e = u.createElement(p, {
+        isPresent: n
+    }, e)), u.createElement(s.Provider, {
+        value: f
+    }, e)
+};
+
+function h() {
+    return new Map
+}
+var g = e => e.key || ``;
+
+function _(e, t) {
+    e.forEach(e => {
+        let n = g(e);
+        t.set(n, e)
+    })
+}
+
+function v(e) {
+    let t = [];
+    return u.Children.forEach(e, e => {
+        (0, u.isValidElement)(e) && t.push(e)
+    }), t
+}
+var y = ({
+    children: e,
+    custom: t,
+    initial: n = !0,
+    onExitComplete: i,
+    exitBeforeEnter: s,
+    presenceAffectsLayout: d = !0,
+    mode: f = `sync`
+}) => {
+    s && (f = `wait`);
+    let [p] = l(), h = (0, u.useContext)(a).forceRender;
+    h && (p = h);
+    let y = c(),
+        b = v(e),
+        x = b,
+        S = new Set,
+        C = (0, u.useRef)(x),
+        w = (0, u.useRef)(new Map).current,
+        T = (0, u.useRef)(!0);
+    if (r(() => {
+            T.current = !1, _(b, w), C.current = x
+        }), o(() => {
+            T.current = !0, w.clear(), S.clear()
+        }), T.current) return u.createElement(u.Fragment, null, x.map(e => u.createElement(m, {
+        key: g(e),
+        isPresent: !0,
+        initial: n ? void 0 : !1,
+        presenceAffectsLayout: d,
+        mode: f
+    }, e)));
+    x = [...x];
+    let E = C.current.map(g),
+        D = b.map(g),
+        O = E.length;
+    for (let e = 0; e < O; e++) {
+        let t = E[e];
+        D.indexOf(t) === -1 && S.add(t)
+    }
+    return f === `wait` && S.size && (x = []), S.forEach(e => {
+        if (D.indexOf(e) !== -1) return;
+        let n = w.get(e);
+        if (!n) return;
+        let r = E.indexOf(e);
+        x.splice(r, 0, u.createElement(m, {
+            key: g(n),
+            isPresent: !1,
+            onExitComplete: () => {
+                w.delete(e), S.delete(e);
+                let t = C.current.findIndex(t => t.key === e);
+                if (C.current.splice(t, 1), !S.size) {
+                    if (C.current = b, y.current === !1) return;
+                    p(), i && i()
+                }
+            },
+            custom: t,
+            presenceAffectsLayout: d,
+            mode: f
+        }, n))
+    }), x = x.map(e => {
+        let t = e.key;
+        return S.has(t) ? e : u.createElement(m, {
+            key: g(e),
+            isPresent: !0,
+            presenceAffectsLayout: d,
+            mode: f
+        }, e)
+    }), u.createElement(u.Fragment, null, S.size ? x : x.map(e => (0, u.cloneElement)(e)))
+};
+export {
+    d as n, y as t
+};

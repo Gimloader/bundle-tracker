@@ -1,0 +1,4 @@
+var e = function() {};
+export {
+    e as t
+};

@@ -1,4 +1,6 @@
-var r = (d => (d.idle = "idle", d.carried = "carried", d.dropped = "dropped", d))(r || {});
+var e = function(e) {
+    return e.idle = `idle`, e.carried = `carried`, e.dropped = `dropped`, e
+}({});
 export {
-    r as C
+    e as t
 };

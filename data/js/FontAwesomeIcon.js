@@ -1,10 +1,16 @@
+import "./rolldown-runtime.js";
 import {
-    j as e
-} from "./_index.js";
-const t = s => e.jsx("i", {
-    className: `${s.name}${s.className?` ${s.className}`:""}`,
-    style: s.style
-});
+    t as e
+} from "./react-1.js";
+import {
+    t
+} from "./jsx-runtime.js";
+e();
+var n = t(),
+    r = e => (0, n.jsx)(`i`, {
+        className: `${e.name}${e.className?` ${e.className}`:``}`,
+        style: e.style
+    });
 export {
-    t as F
+    r as t
 };

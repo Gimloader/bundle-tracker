@@ -1,19 +1,19 @@
 import {
-    a as h
-} from "./FixSpinePlugin.js";
-const r = {
+    t as e
+} from "./FetchScene.js";
+var t = {
         width: 0,
         height: 0
     },
-    n = i => {
-        const t = h().textures.get(i);
-        if (!t) return r;
-        const e = t.frames[t.firstFrame];
-        return e ? {
-            width: e.width,
-            height: e.height
-        } : r
+    n = n => {
+        let r = e().textures.get(n);
+        if (!r) return t;
+        let i = r.frames[r.firstFrame];
+        return i ? {
+            width: i.width,
+            height: i.height
+        } : t
     };
 export {
-    n as F
+    n as t
 };

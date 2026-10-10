@@ -1,9 +1,9 @@
 import {
-    cr as r
+    i as e
 } from "./_index.js";
-const t = o => {
-    r.push(o)
+var t = t => {
+    e.push(t)
 };
 export {
-    t as N
+    t
 };

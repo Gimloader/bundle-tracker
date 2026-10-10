@@ -1,56 +1,56 @@
 import {
-    h as i,
-    a as f,
-    s as m,
-    j as p,
-    u as l
+    _ as e,
+    d as t,
+    g as n,
+    r,
+    u as i
 } from "./motion.js";
 import {
-    u as y
+    t as a
 } from "./use-motion-value.js";
-const d = t => typeof t == "object" && t.mix,
-    h = t => d(t) ? t.mix : void 0;
+var o = e => typeof e == `object` && e.mix,
+    s = e => o(e) ? e.mix : void 0;
 
-function x(...t) {
-    const e = !Array.isArray(t[0]),
-        n = e ? 0 : -1,
-        s = t[0 + n],
-        o = t[1 + n],
-        u = t[2 + n],
-        r = t[3 + n],
-        c = i(o, u, {
-            mixer: h(u[0]),
-            ...r
+function c(...e) {
+    let t = !Array.isArray(e[0]),
+        n = t ? 0 : -1,
+        i = e[0 + n],
+        a = e[1 + n],
+        o = e[2 + n],
+        c = e[3 + n],
+        l = r(a, o, {
+            mixer: s(o[0]),
+            ...c
         });
-    return e ? c(s) : c
+    return t ? l(i) : l
 }
 
-function V(t, e) {
-    const n = y(e()),
-        s = () => n.set(e());
-    return s(), f(() => {
-        const o = () => m.update(s, !1, !0),
-            u = t.map(r => r.on("change", o));
+function l(n, r) {
+    let o = a(r()),
+        s = () => o.set(r());
+    return s(), e(() => {
+        let e = () => t.update(s, !1, !0),
+            r = n.map(t => t.on(`change`, e));
         return () => {
-            u.forEach(r => r()), p.update(s)
+            r.forEach(e => e()), i.update(s)
         }
-    }), n
+    }), o
 }
 
-function M(t, e, n, s) {
-    const o = typeof e == "function" ? e : x(e, n, s);
-    return Array.isArray(t) ? a(t, o) : a([t], ([u]) => o(u))
+function u(e, t, n, r) {
+    let i = typeof t == `function` ? t : c(t, n, r);
+    return Array.isArray(e) ? d(e, i) : d([e], ([e]) => i(e))
 }
 
-function a(t, e) {
-    const n = l(() => []);
-    return V(t, () => {
-        n.length = 0;
-        const s = t.length;
-        for (let o = 0; o < s; o++) n[o] = t[o].get();
-        return e(n)
+function d(e, t) {
+    let r = n(() => []);
+    return l(e, () => {
+        r.length = 0;
+        let n = e.length;
+        for (let t = 0; t < n; t++) r[t] = e[t].get();
+        return t(r)
     })
 }
 export {
-    M as u
+    u as t
 };

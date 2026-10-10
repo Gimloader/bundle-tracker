@@ -1,0 +1,6 @@
+var e = function(e) {
+    return e.common = `common`, e.uncommon = `uncommon`, e.rare = `rare`, e.epic = `epic`, e.legendary = `legendary`, e.mythic = `mythic`, e
+}({});
+export {
+    e as t
+};

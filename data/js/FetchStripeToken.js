@@ -1,27 +1,32 @@
 import {
-    r as e,
-    a as o,
-    h as s,
-    $ as a
-} from "./_index.js";
+    o as e
+} from "./rolldown-runtime.js";
 import {
-    s as r
-} from "./stores.js";
+    C as t,
+    G as n
+} from "./utils.js";
 import {
-    N as i
+    t as r
+} from "./react-1.js";
+import "./Paths.js";
+import {
+    t as i
 } from "./NavigateTo.js";
-const l = e.createContext(r),
-    m = () => {
-        o({
-            url: "/api/billing/stripe-key",
-            success: t => r.checkout.stripePublicKey = t.key,
-            error: () => s({
-                title: "Our payments provider is currently down",
-                content: "Please try again later",
-                onOk: () => i(a)
+import {
+    t as a
+} from "./stores-1.js";
+var o = e(r()).createContext(a),
+    s = () => {
+        t({
+            url: `/api/billing/stripe-key`,
+            success: e => a.checkout.stripePublicKey = e.key,
+            error: () => n({
+                title: `Our payments provider is currently down`,
+                content: `Please try again later`,
+                onOk: () => i(`/me`)
             })
         })
     };
 export {
-    m as F, l as S
+    o as n, s as t
 };

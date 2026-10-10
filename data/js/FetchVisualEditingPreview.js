@@ -1,0 +1,11 @@
+import {
+    t as e
+} from "./FetchScene.js";
+var t = {
+        previewId: `visual-editing-preview`,
+        angleSnapDegrees: 15
+    },
+    n = () => e().worldManager.devices.getDeviceById(t.previewId);
+export {
+    t as n, n as t
+};

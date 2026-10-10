@@ -1,509 +1,521 @@
 import {
-    r as n,
-    x as D,
-    j as e,
-    a4 as I,
-    a as w,
-    t as A,
-    M as Y,
-    e as y,
-    U as C,
-    B as O,
-    F as T,
-    D as L,
-    c as G,
-    S as Z,
-    V as H,
-    ad as K,
-    a6 as Q,
-    a7 as X,
-    d as b
+    o as e
+} from "./rolldown-runtime.js";
+import {
+    C as t,
+    E as n,
+    m as r
+} from "./utils.js";
+import {
+    t as i
+} from "./react-1.js";
+import {
+    t as a
+} from "./message.js";
+import {
+    t as o
+} from "./modal.js";
+import {
+    t as s
+} from "./button.js";
+import {
+    t as c
+} from "./input.js";
+import {
+    t as l
+} from "./card.js";
+import {
+    t as u
+} from "./spin.js";
+import {
+    W as d,
+    et as f,
+    q as p
+} from "./Paths.js";
+import {
+    t as m
+} from "./jsx-runtime.js";
+import {
+    b as h,
+    c as g,
+    l as _,
+    n as v,
+    s as y,
+    y as b
 } from "./_index.js";
 import {
-    o as W
+    r as x
 } from "./mobxreact.esm.js";
 import {
-    a as _,
-    C as ee,
-    i as v
-} from "./ContinueButton.js";
+    a as S,
+    i as C,
+    t as w
+} from "./StoreContext.js";
 import {
-    E as te
+    t as T
 } from "./ErrorMessage.js";
-import {
-    I as oe
-} from "./index-3.js";
-import {
-    s as ne
-} from "./index-4.js";
+var E = e(i());
 
-function se(t = {}) {
-    const {
-        onScriptLoadSuccess: a,
-        onScriptLoadError: r
-    } = t, [l, u] = n.useState(!1), g = n.useRef(a);
-    g.current = a;
-    const m = n.useRef(r);
-    return m.current = r, n.useEffect(() => {
-        const d = document.createElement("script");
-        return d.src = "https://accounts.google.com/gsi/client", d.async = !0, d.defer = !0, d.onload = () => {
-            var c;
-            u(!0), (c = g.current) === null || c === void 0 || c.call(g)
-        }, d.onerror = () => {
-            var c;
-            u(!1), (c = m.current) === null || c === void 0 || c.call(m)
-        }, document.body.appendChild(d), () => {
-            document.body.removeChild(d)
+function D(e = {}) {
+    let {
+        onScriptLoadSuccess: t,
+        onScriptLoadError: n
+    } = e, [r, i] = (0, E.useState)(!1), a = (0, E.useRef)(t);
+    a.current = t;
+    let o = (0, E.useRef)(n);
+    return o.current = n, (0, E.useEffect)(() => {
+        let e = document.createElement(`script`);
+        return e.src = `https://accounts.google.com/gsi/client`, e.async = !0, e.defer = !0, e.onload = () => {
+            var e;
+            i(!0), (e = a.current) == null || e.call(a)
+        }, e.onerror = () => {
+            var e;
+            i(!1), (e = o.current) == null || e.call(o)
+        }, document.body.appendChild(e), () => {
+            document.body.removeChild(e)
         }
-    }, []), l
+    }, []), r
 }
-const z = n.createContext(null);
+var O = (0, E.createContext)(null);
 
-function re({
-    clientId: t,
-    onScriptLoadSuccess: a,
-    onScriptLoadError: r,
-    children: l
+function k({
+    clientId: e,
+    onScriptLoadSuccess: t,
+    onScriptLoadError: n,
+    children: r
 }) {
-    const u = se({
-            onScriptLoadSuccess: a,
-            onScriptLoadError: r
+    let i = D({
+            onScriptLoadSuccess: t,
+            onScriptLoadError: n
         }),
-        g = n.useMemo(() => ({
-            clientId: t,
-            scriptLoadedSuccessfully: u
-        }), [t, u]);
-    return D.createElement(z.Provider, {
-        value: g
-    }, l)
+        a = (0, E.useMemo)(() => ({
+            clientId: e,
+            scriptLoadedSuccessfully: i
+        }), [e, i]);
+    return E.createElement(O.Provider, {
+        value: a
+    }, r)
 }
 
-function ie() {
-    const t = n.useContext(z);
-    if (!t) throw new Error("Google OAuth components must be used within GoogleOAuthProvider");
-    return t
+function A() {
+    let e = (0, E.useContext)(O);
+    if (!e) throw Error(`Google OAuth components must be used within GoogleOAuthProvider`);
+    return e
 }
 
-function ae({
-    flow: t = "implicit",
-    scope: a = "",
-    onSuccess: r,
-    onError: l,
-    ...u
+function j({
+    flow: e = `implicit`,
+    scope: t = ``,
+    onSuccess: n,
+    onError: r,
+    ...i
 }) {
-    const {
-        clientId: g,
-        scriptLoadedSuccessfully: m
-    } = ie(), d = n.useRef(), c = n.useRef(r);
-    c.current = r;
-    const h = n.useRef(l);
-    h.current = l, n.useEffect(() => {
-        var o;
-        if (!m) return;
-        const f = t === "implicit" ? "initTokenClient" : "initCodeClient",
-            x = (o = window.google) === null || o === void 0 ? void 0 : o.accounts.oauth2[f]({
-                client_id: g,
-                scope: `openid profile email ${a}`,
-                callback: k => {
-                    var s, p;
-                    if (k.error) return (s = h.current) === null || s === void 0 ? void 0 : s.call(h, k);
-                    (p = c.current) === null || p === void 0 || p.call(c, k)
+    let {
+        clientId: a,
+        scriptLoadedSuccessfully: o
+    } = A(), s = (0, E.useRef)(), c = (0, E.useRef)(n);
+    c.current = n;
+    let l = (0, E.useRef)(r);
+    l.current = r, (0, E.useEffect)(() => {
+        var n;
+        if (!o) return;
+        let r = e === `implicit` ? `initTokenClient` : `initCodeClient`,
+            u = (n = window.google) == null ? void 0 : n.accounts.oauth2[r]({
+                client_id: a,
+                scope: `openid profile email ${t}`,
+                callback: e => {
+                    var t, n;
+                    if (e.error) return (t = l.current) == null ? void 0 : t.call(l, e);
+                    (n = c.current) == null || n.call(c, e)
                 },
-                ...u
+                ...i
             });
-        d.current = x
-    }, [g, m, t, a]);
-    const E = n.useCallback(o => d.current.requestAccessToken(o), []),
-        S = n.useCallback(() => d.current.requestCode(), []);
-    return t === "implicit" ? E : S
+        s.current = u
+    }, [a, o, e, t]);
+    let u = (0, E.useCallback)(e => s.current.requestAccessToken(e), []),
+        d = (0, E.useCallback)(() => s.current.requestCode(), []);
+    return e === `implicit` ? u : d
 }
-const le = W(() => {
-        const {
-            navigation: t
-        } = n.useContext(_);
-        return t.loginError ? e.jsx(I, {
+var M = m(),
+    N = x(() => {
+        let {
+            navigation: e
+        } = E.useContext(w);
+        return e.loginError ? (0, M.jsx)(h, {
             style: {
                 marginTop: 5
             },
-            message: t.loginError && t.loginError.message && t.loginError.message.text ? t.loginError.message.text : "Error logging in. Please try again.",
-            type: "error",
+            message: e.loginError && e.loginError.message && e.loginError.message.text ? e.loginError.message.text : `Error logging in. Please try again.`,
+            type: `error`,
             showIcon: !0
         }) : null
     }),
-    ce = () => e.jsx("div", {
+    P = () => (0, M.jsx)(`div`, {
         style: {
             height: 150
         },
-        className: "maxWidth flex hc vc",
-        children: e.jsx(Z, {
-            size: "large"
+        className: `maxWidth flex hc vc`,
+        children: (0, M.jsx)(u, {
+            size: `large`
         })
     }),
-    de = t => {
-        const [a, r] = n.useState([]), [l, u] = n.useState(!1), [g, m] = n.useState(!1), [d, c] = n.useState(!1), [h, E] = n.useState(!1), [S, o] = n.useState("");
-        n.useEffect(() => {
-            t.open ? (m(!0), w({
-                url: "/api/users/password-reset-options",
-                method: "post",
+    F = e => {
+        let [r, i] = E.useState([]), [a, c] = E.useState(!1), [u, d] = E.useState(!1), [f, p] = E.useState(!1), [m, h] = E.useState(!1), [_, x] = E.useState(``);
+        E.useEffect(() => {
+            e.open ? (d(!0), t({
+                url: `/api/users/password-reset-options`,
+                method: `post`,
                 data: {
-                    email: t.defaultEmail
+                    email: e.defaultEmail
                 },
-                success: s => {
-                    s.passwordless && u(s.passwordless), s.others && s.others.length ? r(s.others) : x()
+                success: e => {
+                    e.passwordless && c(e.passwordless), e.others && e.others.length ? i(e.others) : C()
                 },
-                error: s => {
-                    A({
-                        e: s,
+                error: e => {
+                    n({
+                        e,
                         default: {
-                            title: "We ran into an error..."
+                            title: `We ran into an error...`
                         },
                         onOk: () => window.location.reload()
                     })
                 },
                 both: () => {
-                    m(!1)
+                    d(!1)
                 }
-            })) : (r([]), u(!1), m(!1), c(!1), E(!1), o(""))
-        }, [t.open]);
-        const f = (s, p) => {
-                d || (c(!0), w({
-                    url: "/api/users/requestPasswordReset",
-                    method: "post",
+            })) : (i([]), c(!1), d(!1), p(!1), h(!1), x(``))
+        }, [e.open]);
+        let S = (r, i) => {
+                f || (p(!0), t({
+                    url: `/api/users/requestPasswordReset`,
+                    method: `post`,
                     data: {
-                        email: t.defaultEmail,
-                        target: s
+                        email: e.defaultEmail,
+                        target: r
                     },
                     success: () => {
-                        o(p), E(!0), c(!1)
+                        x(i), h(!0), p(!1)
                     },
-                    error: N => {
-                        A({
-                            e: N,
+                    error: e => {
+                        n({
+                            e,
                             default: {
-                                title: "Error sending reset link"
+                                title: `Error sending reset link`
                             },
                             onOk: () => window.location.reload()
                         })
                     }
                 }))
             },
-            x = () => f(),
-            k = () => g || d ? e.jsx(ce, {}) : h ? e.jsxs("div", {
-                className: "flex flex-column maxWidth vc hc",
-                children: [e.jsx("div", {
-                    children: e.jsx("i", {
-                        className: "fas fa-check-circle",
-                        style: {
-                            fontSize: 75,
-                            marginBottom: 15,
-                            color: "#2e7d32"
-                        }
-                    })
-                }), e.jsx("div", {
-                    style: {
-                        fontSize: 22,
-                        textAlign: "center"
-                    },
-                    children: S ? `We just sent ${l?"an add password link":"a password reset link"} to ${S}. Ask them for the link and you should be good to go!` : `We just sent ${l?"an add password link":"a password reset link"} to your email. Open that link and you should be good to go!`
-                })]
-            }) : a.length ? e.jsxs("div", {
-                children: [e.jsxs("div", {
-                    style: {
-                        fontSize: 23,
-                        fontWeight: T.Bold,
-                        textAlign: "center",
-                        marginTop: 15,
-                        marginBottom: 5
-                    },
-                    children: ["Where should we send the link to", " ", l ? "add a password" : "reset your password", "?"]
-                }), e.jsx("div", {
-                    style: {
-                        fontSize: 17,
-                        textAlign: "center",
-                        color: "rgba(0,0,0,0.7)"
-                    },
-                    children: "If your school doesn't allow you to receive emails, select one of your teachers and they can give the link to you."
-                }), e.jsx(L, {}), e.jsx(G, {
-                    style: {
-                        color: y.Black,
-                        fontFamily: C.SFPro,
-                        marginBottom: 10
-                    },
-                    onClick: x,
-                    hoverable: !0,
-                    children: "Me"
-                }), a.map(s => e.jsx(G, {
-                    style: {
-                        color: y.Black,
-                        fontFamily: C.SFPro,
-                        marginBottom: 10
-                    },
-                    hoverable: !0,
-                    onClick: () => f(s.id, s.name),
-                    children: s.name
-                }, `reset-${s.id}`))]
-            }) : null;
-        return e.jsx(Y, {
+            C = () => S();
+        return (0, M.jsx)(o, {
             style: {
-                fontFamily: C.SFPro,
-                color: y.Black
+                fontFamily: g.SFPro,
+                color: v.Black
             },
-            footer: [e.jsx(O, {
-                onClick: t.close,
-                children: "Close"
+            footer: [(0, M.jsx)(s, {
+                onClick: e.close,
+                children: `Close`
             }, 1)],
             closable: !1,
             width: 700,
-            open: t.open,
-            children: k()
+            open: e.open,
+            children: u || f ? (0, M.jsx)(P, {}) : m ? (0, M.jsxs)(`div`, {
+                className: `flex flex-column maxWidth vc hc`,
+                children: [(0, M.jsx)(`div`, {
+                    children: (0, M.jsx)(`i`, {
+                        className: `fas fa-check-circle`,
+                        style: {
+                            fontSize: 75,
+                            marginBottom: 15,
+                            color: `#2e7d32`
+                        }
+                    })
+                }), (0, M.jsx)(`div`, {
+                    style: {
+                        fontSize: 22,
+                        textAlign: `center`
+                    },
+                    children: _ ? `We just sent ${a?`an add password link`:`a password reset link`} to ${_}. Ask them for the link and you should be good to go!` : `We just sent ${a?`an add password link`:`a password reset link`} to your email. Open that link and you should be good to go!`
+                })]
+            }) : r.length ? (0, M.jsxs)(`div`, {
+                children: [(0, M.jsxs)(`div`, {
+                    style: {
+                        fontSize: 23,
+                        fontWeight: y.Bold,
+                        textAlign: `center`,
+                        marginTop: 15,
+                        marginBottom: 5
+                    },
+                    children: [`Where should we send the link to`, ` `, a ? `add a password` : `reset your password`, `?`]
+                }), (0, M.jsx)(`div`, {
+                    style: {
+                        fontSize: 17,
+                        textAlign: `center`,
+                        color: `rgba(0,0,0,0.7)`
+                    },
+                    children: `If your school doesn't allow you to receive emails, select one of your teachers and they can give the link to you.`
+                }), (0, M.jsx)(b, {}), (0, M.jsx)(l, {
+                    style: {
+                        color: v.Black,
+                        fontFamily: g.SFPro,
+                        marginBottom: 10
+                    },
+                    onClick: C,
+                    hoverable: !0,
+                    children: `Me`
+                }), r.map(e => (0, M.jsx)(l, {
+                    style: {
+                        color: v.Black,
+                        fontFamily: g.SFPro,
+                        marginBottom: 10
+                    },
+                    hoverable: !0,
+                    onClick: () => S(e.id, e.name),
+                    children: e.name
+                }, `reset-${e.id}`))]
+            }) : null
         })
     },
-    M = t => e.jsx(O, {
+    I = e => (0, M.jsx)(s, {
         style: {
-            padding: "10px 20px",
-            height: "auto"
+            padding: `10px 20px`,
+            height: `auto`
         },
-        disabled: !t.onClick,
-        onClick: t.onClick,
-        children: e.jsxs("div", {
+        disabled: !e.onClick,
+        onClick: e.onClick,
+        children: (0, M.jsxs)(`div`, {
             style: {
-                fontFamily: C.SFPro,
-                color: "rgba(0,0,0,0.75)"
+                fontFamily: g.SFPro,
+                color: `rgba(0,0,0,0.75)`
             },
-            className: "flex vc",
-            children: [e.jsx("img", {
-                src: "/client/img/signup/google.svg",
-                alt: "Google Logo",
+            className: `flex vc`,
+            children: [(0, M.jsx)(`img`, {
+                src: `/client/img/signup/google.svg`,
+                alt: `Google Logo`,
                 style: {
                     height: 18,
                     marginRight: 11
                 }
-            }), e.jsxs("div", {
-                children: [t.text, " with Google"]
+            }), (0, M.jsxs)(`div`, {
+                children: [e.text, ` with Google`]
             })]
         })
     }),
-    ue = t => {
-        const a = ae({
-            onSuccess: r => {
-                t.onToken(r.code)
+    L = e => {
+        let t = j({
+            onSuccess: t => {
+                e.onToken(t.code)
             },
-            onError: r => {
-                t.onError(r)
+            onError: t => {
+                e.onError(t)
             },
-            flow: "auth-code"
+            flow: `auth-code`
         });
-        return e.jsx(e.Fragment, {
-            children: e.jsx(M, {
-                text: t.text,
-                onClick: a
+        return (0, M.jsx)(M.Fragment, {
+            children: (0, M.jsx)(I, {
+                text: e.text,
+                onClick: t
             })
         })
     },
-    ge = t => new Promise((a, r) => {
-        w({
-            url: "/api/users/google-auth-details",
+    R = e => new Promise((n, r) => {
+        t({
+            url: `/api/users/google-auth-details`,
             data: {
-                jwt: t
+                jwt: e
             },
-            success: l => {
-                a(l)
+            success: e => {
+                n(e)
             },
-            error: l => {
-                r(l)
+            error: e => {
+                r(e)
             }
         })
     }),
-    me = t => {
-        var a = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return a.test(String(t).toLowerCase())
-    },
-    ye = W(() => {
-        const [t, a] = n.useState(!1), [r, l] = n.useState(!1), [u, g] = n.useState(""), [m, d] = n.useState(!1), [c, h] = n.useState(null), [E, S] = n.useState(!1), {
-            login: o,
-            navigation: f
-        } = n.useContext(_), {
-            emailSignInBlocked: x
-        } = f;
-        n.useEffect(() => {
-            w({
-                url: "/api/users/google-token",
-                success: i => {
-                    i && i.token && g(i.token)
+    z = e => /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(String(e).toLowerCase()),
+    B = x(() => {
+        let [e, n] = E.useState(!1), [i, o] = E.useState(!1), [s, l] = E.useState(``), [u, m] = E.useState(!1), [g, _] = E.useState(null), [x, D] = E.useState(!1), {
+            login: O,
+            navigation: A
+        } = E.useContext(w), {
+            emailSignInBlocked: j
+        } = A;
+        E.useEffect(() => {
+            t({
+                url: `/api/users/google-token`,
+                success: e => {
+                    e && e.token && l(e.token)
                 }
             })
         }, []);
-        const k = i => {
-                if (h(null), r) return;
-                const j = i.target.value || "";
-                o.email = j, a(me(j))
-            },
-            s = () => {
-                t && B()
-            },
-            p = () => {
-                o.informationNeeded.replace(o.informationNeeded.filter(i => i !== v.email))
-            },
-            N = () => {
-                o.informationNeeded.replace([...o.informationNeeded, v.accountType]), o.firstName || o.informationNeeded.replace([...o.informationNeeded, v.firstName]), o.lastName || o.informationNeeded.replace([...o.informationNeeded, v.lastName]), p()
+        let P = e => {
+                if (_(null), i) return;
+                let t = e.target.value || ``;
+                O.email = t, n(z(t))
             },
             B = () => {
-                r || (h(null), l(!0), S(!1), w({
-                    url: "/api/users/register/email-info",
-                    method: "post",
+                e && K()
+            },
+            W = () => {
+                O.informationNeeded.replace(O.informationNeeded.filter(e => e !== C.email))
+            },
+            G = () => {
+                O.informationNeeded.replace([...O.informationNeeded, C.accountType]), O.firstName || O.informationNeeded.replace([...O.informationNeeded, C.firstName]), O.lastName || O.informationNeeded.replace([...O.informationNeeded, C.lastName]), W()
+            },
+            K = () => {
+                i || (_(null), o(!0), D(!1), t({
+                    url: `/api/users/register/email-info`,
+                    method: `post`,
                     data: {
-                        email: o.email
+                        email: O.email
                     },
-                    success: i => {
-                        if (l(!1), window.location.pathname.includes("login") && !i.accountExists) {
-                            o.googleToken = "", S(!0);
-                            return
-                        }
-                        if (i.accountExists) {
-                            if (o.userExists = !0, !o.googleToken) {
-                                if (i.noPassword) {
-                                    f.emailSignInBlocked = !0;
+                    success: e => {
+                        if (o(!1), window.location.pathname.includes(`login`) && !e.accountExists) O.googleToken = ``, D(!0);
+                        else if (e.accountExists) {
+                            if (O.userExists = !0, !O.googleToken) {
+                                if (e.noPassword) {
+                                    A.emailSignInBlocked = !0;
                                     return
                                 }
-                                o.informationNeeded.replace([...o.informationNeeded, v.password])
+                                O.informationNeeded.replace([...O.informationNeeded, C.password])
                             }
-                            p()
-                        } else p(), N()
+                            W()
+                        } else W(), G()
                     },
-                    error: i => {
-                        l(!1), h(i)
+                    error: e => {
+                        o(!1), _(e)
                     }
                 }))
             },
-            V = i => {
-                const {
-                    firstName: j,
-                    lastName: q,
-                    email: P,
-                    emailVerified: U,
-                    userToken: R
-                } = i;
-                P && (U && R && (o.googleToken = R), o.email = P, o.firstName = j, o.lastName = q, B())
-            },
-            F = () => {
-                ne.error("Error with Google Authentication. Please try again.")
-            },
-            $ = i => {
-                ge(i).then(j => {
-                    V(j)
-                }).catch(j => {
-                    F()
-                })
+            q = e => {
+                let {
+                    firstName: t,
+                    lastName: n,
+                    email: r,
+                    emailVerified: i,
+                    userToken: a
+                } = e;
+                r && (i && a && (O.googleToken = a), O.email = r, O.firstName = t, O.lastName = n, K())
             },
             J = () => {
-                const i = f.classJoiningName ? "Join" : "Continue";
-                return e.jsxs(e.Fragment, {
-                    children: [x && e.jsxs("div", {
+                a.error(`Error with Google Authentication. Please try again.`)
+            },
+            Y = e => {
+                R(e).then(e => {
+                    q(e)
+                }).catch(e => {
+                    J()
+                })
+            };
+        return (0, M.jsx)(V, {
+            children: (() => {
+                let t = A.classJoiningName ? `Join` : `Continue`;
+                return (0, M.jsxs)(M.Fragment, {
+                    children: [j && (0, M.jsxs)(`div`, {
                         style: {
-                            fontWeight: T.Bold,
-                            color: y.Black,
+                            fontWeight: y.Bold,
+                            color: v.Black,
                             fontSize: 19,
                             marginBottom: 11
                         },
-                        children: ["Authenticate with Google to", " ", f.classJoiningName ? "join" : "login"]
-                    }), u ? e.jsx(re, {
-                        clientId: u,
-                        children: e.jsx(ue, {
-                            text: i,
-                            onToken: $,
-                            onError: F
+                        children: [`Authenticate with Google to`, ` `, A.classJoiningName ? `join` : `login`]
+                    }), s ? (0, M.jsx)(k, {
+                        clientId: s,
+                        children: (0, M.jsx)(L, {
+                            text: t,
+                            onToken: Y,
+                            onError: J
                         })
-                    }) : e.jsx(M, {
-                        text: i
-                    }), x ? e.jsxs(e.Fragment, {
-                        children: [e.jsx(L, {}), e.jsx("a", {
+                    }) : (0, M.jsx)(I, {
+                        text: t
+                    }), j ? (0, M.jsxs)(M.Fragment, {
+                        children: [(0, M.jsx)(b, {}), (0, M.jsx)(`a`, {
                             style: {
-                                cursor: "pointer"
+                                cursor: `pointer`
                             },
-                            onClick: () => d(!0),
-                            children: "or add a password..."
-                        }), e.jsx(de, {
-                            defaultEmail: o.email,
-                            open: m,
-                            close: () => d(!1)
+                            onClick: () => m(!0),
+                            children: `or add a password...`
+                        }), (0, M.jsx)(F, {
+                            defaultEmail: O.email,
+                            open: u,
+                            close: () => m(!1)
                         })]
-                    }) : null, x ? null : e.jsx("div", {
-                        className: "maxWidth",
-                        children: e.jsx(L, {
-                            children: "or"
+                    }) : null, j ? null : (0, M.jsx)(`div`, {
+                        className: `maxWidth`,
+                        children: (0, M.jsx)(b, {
+                            children: `or`
                         })
-                    }), !x && e.jsx(e.Fragment, {
-                        children: e.jsxs(he, {
-                            children: [e.jsxs(xe, {
-                                children: [f.classJoiningName ? "Join" : "Continue", " with email..."]
-                            }), e.jsx(oe, {
-                                onChange: k,
-                                size: "large",
-                                placeholder: "Email address...",
-                                onPressEnter: s,
+                    }), !j && (0, M.jsx)(M.Fragment, {
+                        children: (0, M.jsxs)(H, {
+                            children: [(0, M.jsxs)(U, {
+                                children: [A.classJoiningName ? `Join` : `Continue`, ` with email...`]
+                            }), (0, M.jsx)(c, {
+                                onChange: P,
+                                size: `large`,
+                                placeholder: `Email address...`,
+                                onPressEnter: B,
                                 maxLength: 256
-                            }), e.jsx(ee, {
-                                disabled: !t,
+                            }), (0, M.jsx)(S, {
+                                disabled: !e,
                                 style: {
                                     marginTop: 5
                                 },
-                                onClick: s,
-                                loading: r,
-                                children: "Continue"
+                                onClick: B,
+                                loading: i,
+                                children: `Continue`
                             })]
                         })
-                    }), !c && E ? e.jsx(I, {
-                        type: "warning",
+                    }), !g && x ? (0, M.jsx)(h, {
+                        type: `warning`,
                         style: {
                             marginTop: 10
                         },
-                        message: e.jsxs("div", {
-                            children: ["No account found.", " ", H("blockRedirect") ? null : e.jsxs(e.Fragment, {
-                                children: ["Click here to ", e.jsx("a", {
-                                    href: K,
-                                    children: "sign up."
+                        message: (0, M.jsxs)(`div`, {
+                            children: [`No account found.`, ` `, r(`blockRedirect`) ? null : (0, M.jsxs)(M.Fragment, {
+                                children: [`Click here to `, (0, M.jsx)(`a`, {
+                                    href: p,
+                                    children: `sign up.`
                                 })]
                             })]
                         })
-                    }) : null, e.jsx(te, {
-                        error: c,
+                    }) : null, (0, M.jsx)(T, {
+                        error: g,
                         style: {
                             marginTop: 10
                         }
-                    }), e.jsx(le, {}), f.classJoiningName ? e.jsxs("div", {
+                    }), (0, M.jsx)(N, {}), A.classJoiningName ? (0, M.jsxs)(`div`, {
                         style: {
                             marginTop: 25
                         },
-                        children: ["By joining, you agree to our", " ", e.jsx("a", {
-                            href: Q,
-                            target: "_blank",
-                            children: "Privacy Policy"
-                        }), " ", "and", " ", e.jsx("a", {
-                            href: X,
-                            target: "_blank",
-                            children: "Terms Of Service"
-                        }), "."]
+                        children: [`By joining, you agree to our`, ` `, (0, M.jsx)(`a`, {
+                            href: d,
+                            target: `_blank`,
+                            children: `Privacy Policy`
+                        }), ` `, `and`, ` `, (0, M.jsx)(`a`, {
+                            href: f,
+                            target: `_blank`,
+                            children: `Terms Of Service`
+                        }), `.`]
                     }) : null]
                 })
-            };
-        return e.jsx(fe, {
-            children: J()
+            })()
         })
     }),
-    fe = b.div`
+    V = _.div`
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 100%;
 `,
-    he = b.div`
+    H = _.div`
   width: 100%;
-  color: ${y.Black};
+  color: ${v.Black};
 `,
-    xe = b.div`
+    U = _.div`
   font-size: 18px;
-  font-weight: ${T.Bold};
+  font-weight: ${y.Bold};
 `;
 export {
-    ye as E, de as F, le as L, me as v
+    N as i, z as n, F as r, B as t
 };

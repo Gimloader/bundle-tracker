@@ -1,107 +1,49 @@
 import {
-    Z as I
+    t as e
+} from "./GetAssetPath.js";
+import {
+    D as t
+} from "./FixPhaserBootProcess.js";
+import {
+    n,
+    t as r
+} from "./isVersion.js";
+import {
+    i,
+    n as a,
+    r as o,
+    t as s
+} from "./InPhase.js";
+import {
+    t as c
+} from "./FetchMyId.js";
+import {
+    S as l,
+    i as u,
+    t as d
+} from "./Device.js";
+import {
+    r as f
+} from "./GlobalLocalDepth.js";
+import {
+    k as p,
+    x as m
+} from "./App-42.js";
+import {
+    t as h
 } from "./ZoneConstants.js";
 import {
-    aK as M,
-    aL as L,
-    T as p,
-    aM as P,
-    aN as V,
-    aO as u,
-    L as D
-} from "./App-41.js";
-import {
-    I as S,
-    i as W,
-    a4 as O,
-    _ as C,
-    F as c,
-    e as F,
-    j as Z
-} from "./FixSpinePlugin.js";
-import {
-    Z as E
+    t as g
 } from "./ZonedDeviceDisplay.js";
 import {
-    F as y,
-    R as v
+    n as _,
+    t as v
 } from "./FetchOptionSchemaProperty.js";
-import {
-    G as b
-} from "./GetAssetPath.js";
-import "./_index.js";
-import "./Button.js";
-import "./polished.esm.js";
-import "./inheritsLoose.js";
-import "./mobxreact.esm.js";
-import "./index-21.js";
-import "./QuizTypes.js";
-import "./MapModeType.js";
-import "./TutorialConsts.js";
-import "./ActionButton.js";
-import "./index-5.js";
-import "./playSound.js";
-import "./MapSound.js";
-import "./howler.js";
-import "./index-18.js";
-import "./context.js";
-import "./FontAwesomeIcon.js";
-import "./Centered.js";
-import "./CapitalizeFirstLetter.js";
-import "./index-4.js";
-import "./motion.js";
-import "./index-2.js";
-import "./index-14.js";
-import "./EditOutlined.js";
-import "./styleChecker.js";
-import "./index-3.js";
-import "./CheckOutlined.js";
-import "./CopyOutlined.js";
-import "./SixteenByNineScaler.js";
-import "./index-20.js";
-import "./index-22.js";
-import "./index-1.js";
-import "./progress.js";
-import "./ElementIds.js";
-import "./SeasonTicketName.js";
-import "./useQuery.js";
-import "./___vite-browser-external_commonjs-proxy.js";
-import "./util-1.js";
-import "./util-2.js";
-import "./Shortcut.js";
-import "./Names.js";
-import "./useWillUnmount.js";
-import "./CircularProgress.js";
-import "./clsx.m.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
-import "./index-17.js";
-import "./use-force-update.js";
-import "./GimkitLiveQuestion.js";
-import "./Text.js";
-import "./getCloudinaryUrl.js";
-import "./LazyLatexRenderer.js";
-import "./Tooltip.js";
-import "./use-motion-value.js";
-import "./index-9.js";
-import "./index-23.js";
-import "./useIntervalWhen.js";
-import "./index-10.js";
-import "./move.js";
-import "./react-flip-move.es.js";
-import "./sounds.js";
-import "./App-5.js";
-import "./AnimatedBackground-2.js";
-import "./useDebouncedValue.js";
-import "./CloseCircleOutlined.js";
-import "./MapStyle.js";
-import "./FillRemainingSpace.js";
-import "./index-24.js";
-const G = {
-        atlasUrl: b("devices/air_vent/spine/skeleton.atlas"),
-        jsonUrl: b("devices/air_vent/spine/skeleton.json")
+var y = {
+        atlasUrl: e(`devices/air_vent/spine/skeleton.atlas`),
+        jsonUrl: e(`devices/air_vent/spine/skeleton.json`)
     },
-    n = {
+    b = {
         zoneBottomOffset: 35,
         zoneWidth: 162,
         collider: {
@@ -115,166 +57,166 @@ const G = {
             scale: .2,
             offsetLeft: 3
         }
+    },
+    x = class extends d {
+        constructor(e) {
+            super(e), this.setupCollider = () => {
+                let e = this.getDirection(),
+                    t = b.collider.offsetTop * this.options.scale;
+                this.colliders.add.box({
+                    x: e.x * t,
+                    y: e.y * t,
+                    w: b.collider.width * this.options.scale,
+                    h: b.collider.height * this.options.scale,
+                    angle: this.options.angle
+                })
+            }, this.setupView = () => {
+                let {
+                    width: e,
+                    height: t,
+                    scale: n,
+                    offsetLeft: r
+                } = b.view, i = this.options.angle * Math.PI / 180, a = Math.sin(i), o = Math.cos(i), s = r * this.options.scale, c = -o * s, l = -a * s, u = e * this.options.scale, d = t * this.options.scale, f = u * Math.abs(o) + d * Math.abs(a), p = u * Math.abs(a) + d * Math.abs(o);
+                this.parts.add.spine({
+                    ...y,
+                    x: c,
+                    y: l,
+                    spineViewId: this.id,
+                    defaultAnimation: `particles`,
+                    boundingBox: {
+                        left: -f / 2,
+                        right: f / 2,
+                        top: -p / 2,
+                        bottom: p / 2
+                    },
+                    onReady: e => {
+                        e.view.setScale(n * this.options.scale), e.view.angle = this.options.angle
+                    }
+                })
+            }, this.setupZonePreview = () => {
+                if (!o() || !n() || !g.shouldShow(this)) return;
+                let e = this.getDirection(),
+                    t = b.zoneWidth * this.options.scale,
+                    r = b.zoneBottomOffset * this.options.scale + this.options.zoneLength / 2;
+                this.parts.add.rect({
+                    x: e.x * r,
+                    y: e.y * r,
+                    width: t,
+                    height: this.options.zoneLength,
+                    angle: this.options.angle,
+                    color: 12186879,
+                    alpha: h.alpha,
+                    borderColor: 12186879,
+                    borderAlpha: 1,
+                    borderWidth: 4,
+                    ignoreInput: !0
+                })
+            }, this.setupSensor = () => {
+                let e = this.getDirection(),
+                    t = b.zoneWidth * this.options.scale,
+                    n = b.zoneBottomOffset * this.options.scale + this.options.zoneLength / 2;
+                this.sensor = this.sensors.add.rect({
+                    x: e.x * n,
+                    y: e.y * n,
+                    w: t,
+                    h: this.options.zoneLength,
+                    angle: this.options.angle,
+                    type: u.around,
+                    onFresh: this.onEnter,
+                    onStop: this.onLeave
+                })
+            }, this.onEnter = () => {
+                if (!a() && !i()) return;
+                let e = t(c());
+                if (!e || e.physics.state.airVentZones.includes(this.id)) return;
+                let n = this.getDirection();
+                e.physics.state.airVentZones.push(this.id);
+                let r = this.options.forceMultiplier,
+                    o = n.x * r,
+                    s = n.y * r,
+                    l = e.physics.state.lastUsedVelocityToCalculateMovement.x,
+                    u = o;
+                Math.sign(l) === Math.sign(o) ? Math.abs(l) > Math.abs(o) && (u = l) : u = o + l, p({
+                    character: e
+                }), m({
+                    character: e,
+                    x: u,
+                    y: s,
+                    cancelInertiaOnNextGrounded: !1,
+                    limitControlFactor: !0
+                })
+            }, this.onLeave = () => {
+                let e = t(c());
+                e && (e.physics.state.airVentZones = e.physics.state.airVentZones.filter(e => e !== this.id))
+            }, this.getDirection = () => {
+                let e = this.options.angle * Math.PI / 180,
+                    t = Math.sin(e),
+                    n = -Math.cos(e);
+                return {
+                    x: Math.abs(t) < 2 ** -52 * 10 ? 0 : t,
+                    y: Math.abs(n) < 2 ** -52 * 10 ? 0 : n
+                }
+            }, this.onReconcile = () => {
+                let e = c(),
+                    n = t(e),
+                    r = l().bodies.find(this.sensor.bodyId);
+                n && r != null && r.sensor && (n.physics.state.airVentZones.includes(this.id) ? r.sensor.charactersInSensor.add(e) : r.sensor.charactersInSensor.delete(e))
+            }, this.onDestroy = () => {
+                var e;
+                let t = c(),
+                    n = l().bodies.find(this.sensor.bodyId);
+                n != null && (e = n.sensor) != null && (e = e.charactersInSensor) != null && e.has(t) && this.onLeave()
+            }, this.setupVisualEditing = () => {
+                if (s() || r()) return;
+                let e = v(this, `scale`),
+                    t = v(this, `zoneLength`),
+                    {
+                        width: n,
+                        height: i
+                    } = b.view;
+                this.visualEditing.add.box({
+                    width: n * this.options.scale,
+                    height: i * this.options.scale,
+                    minWidth: n * e.min,
+                    maxWidth: n * e.max,
+                    minHeight: i * e.min,
+                    maxHeight: i * e.max,
+                    angle: this.options.angle,
+                    rotable: !0,
+                    keepRatio: !0,
+                    onChange: e => {
+                        _(e.x, e.y, {
+                            scale: e.width / n,
+                            angle: e.angle
+                        })
+                    }
+                });
+                let a = this.getDirection(),
+                    o = b.zoneWidth * this.options.scale,
+                    c = b.zoneBottomOffset * this.options.scale + this.options.zoneLength / 2;
+                this.visualEditing.add.box({
+                    x: a.x * c,
+                    y: a.y * c,
+                    width: o,
+                    height: this.options.zoneLength,
+                    minWidth: o,
+                    maxWidth: o,
+                    minHeight: t.min,
+                    maxHeight: t.max,
+                    angle: this.options.angle,
+                    movable: !1,
+                    rotable: !1,
+                    keepRatio: !1,
+                    onChange: e => {
+                        _(this.x, this.y, {
+                            zoneLength: e.height
+                        })
+                    }
+                })
+            }, this.layers.setDefaultLayer(f.DevicesUnderCharacters), this.setupView(), this.setupCollider(), this.setupZonePreview(), this.setupSensor(), this.setupVisualEditing()
+        }
     };
-class oi extends M {
-    constructor(x) {
-        super(x), this.setupCollider = () => {
-            const t = this.getDirection(),
-                i = n.collider.offsetTop * this.options.scale;
-            this.colliders.add.box({
-                x: t.x * i,
-                y: t.y * i,
-                w: n.collider.width * this.options.scale,
-                h: n.collider.height * this.options.scale,
-                angle: this.options.angle
-            })
-        }, this.setupView = () => {
-            const {
-                width: t,
-                height: i,
-                scale: s,
-                offsetLeft: e
-            } = n.view, h = this.options.angle * Math.PI / 180, o = Math.sin(h), r = Math.cos(h), a = e * this.options.scale, w = -r * a, z = -o * a, m = t * this.options.scale, l = i * this.options.scale, d = m * Math.abs(r) + l * Math.abs(o), g = m * Math.abs(o) + l * Math.abs(r);
-            this.parts.add.spine({
-                ...G,
-                x: w,
-                y: z,
-                spineViewId: this.id,
-                defaultAnimation: "particles",
-                boundingBox: {
-                    left: -d / 2,
-                    right: d / 2,
-                    top: -g / 2,
-                    bottom: g / 2
-                },
-                onReady: f => {
-                    f.view.setScale(s * this.options.scale), f.view.angle = this.options.angle
-                }
-            })
-        }, this.setupZonePreview = () => {
-            if (!S() || !W() || !E.shouldShow(this)) return;
-            const t = this.getDirection(),
-                i = n.zoneWidth * this.options.scale,
-                e = n.zoneBottomOffset * this.options.scale + this.options.zoneLength / 2;
-            this.parts.add.rect({
-                x: t.x * e,
-                y: t.y * e,
-                width: i,
-                height: this.options.zoneLength,
-                angle: this.options.angle,
-                color: 12186879,
-                alpha: I.alpha,
-                borderColor: 12186879,
-                borderAlpha: 1,
-                borderWidth: 4,
-                ignoreInput: !0
-            })
-        }, this.setupSensor = () => {
-            const t = this.getDirection(),
-                i = n.zoneWidth * this.options.scale,
-                s = n.zoneBottomOffset * this.options.scale + this.options.zoneLength / 2;
-            this.sensor = this.sensors.add.rect({
-                x: t.x * s,
-                y: t.y * s,
-                w: i,
-                h: this.options.zoneLength,
-                angle: this.options.angle,
-                type: L.around,
-                onFresh: this.onEnter,
-                onStop: this.onLeave
-            })
-        }, this.onEnter = () => {
-            if (!O() && !C()) return;
-            const t = c(p());
-            if (!t || t.physics.state.airVentZones.includes(this.id)) return;
-            const i = this.getDirection();
-            t.physics.state.airVentZones.push(this.id);
-            const s = this.options.forceMultiplier,
-                e = i.x * s,
-                h = i.y * s,
-                o = t.physics.state.lastUsedVelocityToCalculateMovement.x;
-            let r = e;
-            Math.sign(o) !== Math.sign(e) ? r = e + o : Math.abs(o) > Math.abs(e) && (r = o), P({
-                character: t
-            }), V({
-                character: t,
-                x: r,
-                y: h,
-                cancelInertiaOnNextGrounded: !1,
-                limitControlFactor: !0
-            })
-        }, this.onLeave = () => {
-            const t = c(p());
-            t && (t.physics.state.airVentZones = t.physics.state.airVentZones.filter(i => i !== this.id))
-        }, this.getDirection = () => {
-            const t = this.options.angle * Math.PI / 180,
-                i = Math.sin(t),
-                s = -Math.cos(t);
-            return {
-                x: Math.abs(i) < Number.EPSILON * 10 ? 0 : i,
-                y: Math.abs(s) < Number.EPSILON * 10 ? 0 : s
-            }
-        }, this.onReconcile = () => {
-            const t = p(),
-                i = c(t),
-                s = u().bodies.find(this.sensor.bodyId);
-            !i || !(s != null && s.sensor) || (i.physics.state.airVentZones.includes(this.id) ? s.sensor.charactersInSensor.add(t) : s.sensor.charactersInSensor.delete(t))
-        }, this.onDestroy = () => {
-            var s, e;
-            const t = p(),
-                i = u().bodies.find(this.sensor.bodyId);
-            (e = (s = i == null ? void 0 : i.sensor) == null ? void 0 : s.charactersInSensor) != null && e.has(t) && this.onLeave()
-        }, this.setupVisualEditing = () => {
-            if (F() || Z()) return;
-            const t = y(this, "scale"),
-                i = y(this, "zoneLength"),
-                {
-                    width: s,
-                    height: e
-                } = n.view;
-            this.visualEditing.add.box({
-                width: s * this.options.scale,
-                height: e * this.options.scale,
-                minWidth: s * t.min,
-                maxWidth: s * t.max,
-                minHeight: e * t.min,
-                maxHeight: e * t.max,
-                angle: this.options.angle,
-                rotable: !0,
-                keepRatio: !0,
-                onChange: a => {
-                    v(a.x, a.y, {
-                        scale: a.width / s,
-                        angle: a.angle
-                    })
-                }
-            });
-            const h = this.getDirection(),
-                o = n.zoneWidth * this.options.scale,
-                r = n.zoneBottomOffset * this.options.scale + this.options.zoneLength / 2;
-            this.visualEditing.add.box({
-                x: h.x * r,
-                y: h.y * r,
-                width: o,
-                height: this.options.zoneLength,
-                minWidth: o,
-                maxWidth: o,
-                minHeight: i.min,
-                maxHeight: i.max,
-                angle: this.options.angle,
-                movable: !1,
-                rotable: !1,
-                keepRatio: !1,
-                onChange: a => {
-                    v(this.x, this.y, {
-                        zoneLength: a.height
-                    })
-                }
-            })
-        }, this.layers.setDefaultLayer(D.DevicesUnderCharacters), this.setupView(), this.setupCollider(), this.setupZonePreview(), this.setupSensor(), this.setupVisualEditing()
-    }
-}
 export {
-    oi as AirVentDevice, oi as
+    x as AirVentDevice, x as
     default
 };

@@ -1,10 +1,10 @@
-const e = h => {
-    const t = h.newWidth / h.width;
+var e = e => {
+    let t = e.newWidth / e.width;
     return {
-        height: h.height * t,
-        width: h.width * t
+        height: e.height * t,
+        width: e.width * t
     }
 };
 export {
-    e as N
+    e as t
 };

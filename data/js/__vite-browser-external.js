@@ -1,0 +1,9 @@
+import {
+    t as e
+} from "./rolldown-runtime.js";
+var t = e(((e, t) => {
+    t.exports = {}
+}));
+export {
+    t
+};

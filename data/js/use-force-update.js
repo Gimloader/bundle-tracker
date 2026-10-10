@@ -1,26 +1,30 @@
 import {
-    a as n,
-    s as u
-} from "./motion.js";
+    o as e
+} from "./rolldown-runtime.js";
 import {
-    r
-} from "./_index.js";
+    t
+} from "./react-1.js";
+import {
+    _ as n,
+    d as r
+} from "./motion.js";
+var i = e(t(), 1);
 
-function c() {
-    const e = r.useRef(!1);
+function a() {
+    let e = (0, i.useRef)(!1);
     return n(() => (e.current = !0, () => {
         e.current = !1
     }), []), e
 }
 
-function i() {
-    const e = c(),
-        [t, s] = r.useState(0),
-        o = r.useCallback(() => {
-            e.current && s(t + 1)
+function o() {
+    let e = a(),
+        [t, n] = (0, i.useState)(0),
+        o = (0, i.useCallback)(() => {
+            e.current && n(t + 1)
         }, [t]);
-    return [r.useCallback(() => u.postRender(o), [o]), t]
+    return [(0, i.useCallback)(() => r.postRender(o), [o]), t]
 }
 export {
-    c as a, i as u
+    a as n, o as t
 };

@@ -1,7 +1,7 @@
-const e = {
+var e = {
     sideMargin: 50,
     optionWidth: 200
 };
 export {
-    e as E
+    e as t
 };

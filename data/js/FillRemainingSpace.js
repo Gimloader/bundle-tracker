@@ -1,86 +1,89 @@
 import {
-    r as s,
-    x as c,
-    j as h
-} from "./_index.js";
-var a = function() {
-        return a = Object.assign || function(e) {
-            for (var i, n = 1, t = arguments.length; n < t; n++) {
-                i = arguments[n];
-                for (var r in i) Object.prototype.hasOwnProperty.call(i, r) && (e[r] = i[r])
-            }
+    o as e
+} from "./rolldown-runtime.js";
+import {
+    t
+} from "./react-1.js";
+import {
+    t as n
+} from "./jsx-runtime.js";
+var r = e(t()),
+    i = function() {
+        return i = Object.assign || function(e) {
+            for (var t, n = 1, r = arguments.length; n < r; n++)
+                for (var i in t = arguments[n], t) Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
             return e
-        }, a.apply(this, arguments)
+        }, i.apply(this, arguments)
     },
-    v = function(e, i) {
+    a = function(e, t) {
         var n = {};
-        for (var t in e) Object.prototype.hasOwnProperty.call(e, t) && i.indexOf(t) < 0 && (n[t] = e[t]);
-        if (e != null && typeof Object.getOwnPropertySymbols == "function")
-            for (var r = 0, t = Object.getOwnPropertySymbols(e); r < t.length; r++) i.indexOf(t[r]) < 0 && Object.prototype.propertyIsEnumerable.call(e, t[r]) && (n[t[r]] = e[t[r]]);
+        for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
+        if (e != null && typeof Object.getOwnPropertySymbols == `function`)
+            for (var i = 0, r = Object.getOwnPropertySymbols(e); i < r.length; i++) t.indexOf(r[i]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[i]) && (n[r[i]] = e[r[i]]);
         return n
     },
-    u = !1,
-    g = s.forwardRef(function(e, i) {
+    o = !1,
+    s = (0, r.forwardRef)(function(e, t) {
         var n = e.style,
-            t = v(e, ["style"]),
-            r = l();
-        !u && (n != null && n.height) && (u = !0, console.warn("<Div100vh /> overrides the height property of the style prop"));
-        var o = a(a({}, n), {
-            height: r ? r + "px" : "100vh"
+            s = a(e, [`style`]),
+            l = c();
+        !o && n != null && n.height && (o = !0, console.warn(`<Div100vh /> overrides the height property of the style prop`));
+        var u = i(i({}, n), {
+            height: l ? l + `px` : `100vh`
         });
-        return c.createElement("div", a({
-            ref: i,
-            style: o
-        }, t))
+        return r.createElement(`div`, i({
+            ref: t,
+            style: u
+        }, s))
     });
-g.displayName = "Div100vh";
+s.displayName = `Div100vh`;
 
-function l() {
-    var e = s.useState(f),
-        i = e[0],
+function c() {
+    var e = (0, r.useState)(l),
+        t = e[0],
         n = e[1],
-        t = y();
-    return s.useEffect(function() {
-        if (!t) return;
+        i = u();
+    return (0, r.useEffect)(function() {
+        if (!i) return;
 
-        function r() {
-            var o = f();
-            n(o)
+        function e() {
+            n(l())
         }
-        return window.addEventListener("resize", r),
+        return window.addEventListener(`resize`, e),
             function() {
-                return window.removeEventListener("resize", r)
+                return window.removeEventListener(`resize`, e)
             }
-    }, [t]), t ? i : null
+    }, [i]), i ? t : null
 }
 
-function f() {
+function l() {
     return d() ? window.innerHeight : null
 }
 
-function y() {
-    var e = s.useState(!1),
-        i = e[0],
+function u() {
+    var e = (0, r.useState)(!1),
+        t = e[0],
         n = e[1];
-    return s.useEffect(function() {
+    return (0, r.useEffect)(function() {
         d() && n(!0)
-    }, []), i
+    }, []), t
 }
 
 function d() {
-    return typeof window < "u" && typeof document < "u"
+    return typeof window < `u` && typeof document < `u`
 }
-const O = e => {
-    const i = l();
-    return h.jsx("div", {
-        style: {
-            height: i,
-            width: "100%"
-        },
-        className: e.className,
-        children: e.children
-    })
-};
+var f = n(),
+    p = e => {
+        let t = c();
+        return (0, f.jsx)(`div`, {
+            style: {
+                height: t,
+                width: `100%`
+            },
+            className: e.className,
+            children: e.children
+        })
+    };
 export {
-    O as F
+    p as t
 };

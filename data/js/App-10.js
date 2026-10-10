@@ -1,3016 +1,15716 @@
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/play.js", "assets/rolldown-runtime.js", "assets/utils.js", "assets/dist-1.js", "assets/react-1.js", "assets/modal.js", "assets/assertThisInitialized.js", "assets/Compact.js", "assets/color.js", "assets/ContextIsolator.js", "assets/dist-2.js", "assets/wrapNativeSuper.js", "assets/InfoCircleFilled.js", "assets/compact-item.js", "assets/useLocale.js", "assets/useCSSVarCls.js", "assets/pickAttrs.js", "assets/button.js", "assets/PurePanel.js", "assets/Company.js", "assets/Paths.js", "assets/decorate.js", "assets/jsx-runtime.js", "assets/input.js", "assets/es-2.js", "assets/_index.js", "assets/dist-3.js", "assets/spin.js", "assets/QueryClientProvider.js", "assets/queryClient.js", "assets/infiniteQueryBehavior.js", "assets/index-Tu04tXLf.css", "assets/useVariants.js", "assets/input-number.js", "assets/es-1.js", "assets/DownOutlined.js", "assets/drawer.js", "assets/CloseCircleOutlined.js", "assets/switch.js", "assets/mobxreact.esm.js", "assets/module-1.js", "assets/FontAwesomeIcon.js", "assets/clsx.m.js", "assets/inheritsLoose.js", "assets/Tooltip.js", "assets/Text.js", "assets/howler.js", "assets/getCloudinaryUrl.js", "assets/LazyLatexRenderer.js", "assets/typeof.js", "assets/CircularProgress.js", "assets/polished.esm.js", "assets/lodash.js", "assets/confetti.js", "assets/motion.js", "assets/QuizTypes.js", "assets/GimkitLiveQuestion.js", "assets/AnimatePresence.js", "assets/noop.js", "assets/use-force-update.js", "assets/use-motion-value.js", "assets/module-2.js", "assets/FillRemainingSpace.js", "assets/Codes.js", "assets/ObjectListener.js", "assets/__vite-browser-external.js", "assets/colors-2.js", "assets/colors-1.js", "assets/react-2.js", "assets/play-DAk25vKn.css", "assets/App-42.js", "assets/tooltip.js", "assets/dropdown.js", "assets/collapse.js", "assets/move.js", "assets/es-3.js", "assets/EllipsisOutlined.js", "assets/space.js", "assets/notification.js", "assets/context.js", "assets/typography.js", "assets/styleChecker.js", "assets/CheckOutlined.js", "assets/CopyOutlined.js", "assets/EditOutlined.js", "assets/EnterOutlined.js", "assets/copy-to-clipboard.js", "assets/progress.js", "assets/SixteenByNineScaler.js", "assets/message.js", "assets/popover.js", "assets/qr-code.js", "assets/Button.js", "assets/App-43.js", "assets/Centered.js", "assets/useStore.js", "assets/stores-2.js", "assets/MapModeType.js", "assets/MapStyle.js", "assets/DrawToCanvas.js", "assets/CapitalizeFirstLetter.js", "assets/useIntervalWhen.js", "assets/useDebouncedValue.js", "assets/useWillUnmount.js", "assets/SiteHeaderAlpha.js", "assets/AccessibleAnchor.js", "assets/react-flip-move.es.js", "assets/GetAssetPath.js", "assets/Navigation.js", "assets/useQuery.js", "assets/SeasonTicketName.js", "assets/Names.js", "assets/MapSound.js", "assets/playSound.js", "assets/phaser.js", "assets/FixPhaserBootProcess.js", "assets/defineProperty.js", "assets/FetchScene.js", "assets/isVersion.js", "assets/InPhase.js", "assets/FetchRoom.js", "assets/App-6.js", "assets/AnimatedBackground-2.js", "assets/dist-4.js", "assets/lib-2.js", "assets/FetchMyId.js", "assets/FetchMyTeam.js", "assets/FetchSpectatedId.js", "assets/Send.js", "assets/setCurrentAction.js", "assets/isModeType.js", "assets/ExistingDeviceAddingActionUtils.js", "assets/Device.js", "assets/TutorialConsts.js", "assets/ActionButton.js", "assets/GlobalLocalDepth.js", "assets/KeyShortcuts.js", "assets/createKeyListener.js", "assets/index.browser.js", "assets/playClickSound.js", "assets/FetchDeviceById.js", "assets/FetchItemById.js", "assets/PlaceDevice.js", "assets/WireBatcher.js", "assets/FetchDeviceOptionById.js", "assets/canEditOnMap.js", "assets/GetAddingDeviceTypeMemoryCost.js", "assets/PlaceWire.js", "assets/FetchPropOptionById.js", "assets/Reset.js", "assets/ScalableShapeCache.js", "assets/CharacterType.js", "assets/FetchVisualEditingPreview.js", "assets/AmIGameOwner.js", "assets/zIndex.js", "assets/util.js", "assets/process-nextick-args.js", "assets/RoleLevelConsts.js", "assets/IsRoleLevelBetween.js", "assets/Shortcut.js", "assets/RarityBackgrounds.js", "assets/InventoryItemRarity.js", "assets/FetchItemOption.js", "assets/sounds.js", "assets/CanUseMoreMemory.js", "assets/GetGravityMultiplier.js", "assets/GetActiveClassOptions.js", "assets/RoleLevelPermissions.js"]))) => i.map(i => d[i]);
 import {
-    r as i,
-    I as N,
-    _ as M,
-    j as e,
-    i as T,
-    aa as Ne,
-    az as Me,
-    e as S,
-    d as o,
-    a as R,
-    W as X,
-    l as F,
-    aA as Oe,
-    a4 as $,
-    B as m,
-    aB as _,
-    aC as Fe,
-    a8 as Be,
-    S as ge,
-    aD as Ue,
-    M as z,
-    t as re,
-    aE as De,
-    s as Ye,
-    y as O,
-    A as $e,
-    ac as Ge,
-    U as G,
-    F as se,
-    aF as He,
-    ab as q,
-    ae as Ve,
-    E as _e,
-    T as We
+    a as __toCommonJS,
+    i as __require,
+    n as __esmMin,
+    o as __toESM,
+    r as __exportAll,
+    t as __commonJSMin
+} from "./rolldown-runtime.js";
+import {
+    n as init_dist,
+    t as global
+} from "./dist-1.js";
+import {
+    C as request,
+    E as throwMessageError,
+    H as init_dist$1,
+    O as useBoolean,
+    Q as require_dayjs_min,
+    V as Buffer,
+    g as isLoggedIn,
+    m as getUrlVariable,
+    r as capitalizeFirstLetter,
+    t as Title$1
+} from "./utils.js";
+import {
+    t as require_react
+} from "./react-1.js";
+import {
+    l as useParams
+} from "./dist-3.js";
+import {
+    t as Tooltip
+} from "./tooltip.js";
+import {
+    t as button_default
+} from "./button.js";
+import {
+    n as process$1,
+    t as init_dist$2
+} from "./dist-2.js";
+import {
+    t as staticMethods
+} from "./notification.js";
+import {
+    t as Card
+} from "./card.js";
+import {
+    t as require_jsx_runtime
+} from "./jsx-runtime.js";
+import {
+    n as useTimeoutWhen,
+    t as AnimatePresence
+} from "./AnimatePresence.js";
+import {
+    h as __vitePreload,
+    l as dt,
+    n as Colors,
+    s as FontWeights,
+    u as ft,
+    y as Divider
 } from "./_index.js";
 import {
-    T as k,
-    b as le,
-    G as ce,
-    s as ne,
-    S as qe
-} from "./App-4.js";
-import {
-    o as de
-} from "./mobxreact.esm.js";
-import {
-    A as Ze
+    t as AccessibleAnchor
 } from "./AccessibleAnchor.js";
 import {
-    R as Ae
-} from "./QuestionCircleOutlined.js";
+    t as CircularProgress_default
+} from "./CircularProgress.js";
 import {
-    R as Ke
-} from "./PlayCircleOutlined.js";
+    n as curriedLighten$1
+} from "./polished.esm.js";
 import {
-    R as Qe,
-    M as Xe,
-    a as Je
-} from "./NameAndPasswordStage.js";
+    t as require_lodash
+} from "./lodash.js";
 import {
-    R as H,
-    a as et
-} from "./ExportOutlined.js";
+    t as motion
+} from "./motion.js";
 import {
-    i as fe
-} from "./ContinueButton.js";
+    t as ExperienceSource
+} from "./QuizTypes.js";
 import {
-    I as B,
-    R as ye
-} from "./index-3.js";
+    d as require_type,
+    n as require_inherits_browser,
+    r as require_is_typed_array,
+    s as require_call_bound,
+    t as require_util$1
+} from "./util.js";
 import {
-    s as Y
-} from "./index-4.js";
+    a as require__stream_passthrough$1,
+    c as require_end_of_stream,
+    d as require__stream_duplex$1,
+    f as require__stream_writable$1,
+    h as require_dist$1,
+    i as require_pipeline,
+    l as require_string_decoder,
+    m as require_events,
+    n as require_util$2,
+    o as require__stream_transform$1,
+    p as require_browser$12,
+    r as require_stream_browserify,
+    s as require__stream_readable$1,
+    t as require_process_nextick_args,
+    u as require_safe_buffer$1
+} from "./process-nextick-args.js";
 import {
-    R as tt
-} from "./CloseCircleOutlined.js";
+    t as FillRemainingSpace
+} from "./FillRemainingSpace.js";
 import {
-    LIBRARY_CACHE_KEY as nt
-} from "./SchoolLibrary.js";
+    t as require_lib
+} from "./lib-1.js";
 import {
-    D as at
-} from "./index-6.js";
-import {
-    L as E
-} from "./AppTypes.js";
-import {
-    S as J
-} from "./index-8.js";
-import {
-    g as rt,
-    a as st,
-    b as it
-} from "./Language.js";
-import {
-    S as ue
-} from "./index-9.js";
-import {
-    u as ze
-} from "./useQuery.js";
-import {
-    T as pe
-} from "./index-12.js";
-import {
-    u as ot
-} from "./useInfiniteQuery.js";
-import {
-    R as lt
-} from "./ExclamationCircleOutlined.js";
-import {
-    R as Re
-} from "./TeamOutlined.js";
-import {
-    R as be
-} from "./index-13.js";
-import {
-    R as ct
-} from "./BulbOutlined.js";
-import {
-    v as dt,
-    F as ut
-} from "./EmailStage.js";
-import {
-    E as pt
-} from "./ErrorMessage.js";
-import "./Shortcut.js";
-import "./Names.js";
-import "./index-1.js";
-import "./index-2.js";
-import "./FontAwesomeIcon.js";
-import "./App-2.js";
-import "./Sizes.js";
-import "./motion.js";
-import "./price.js";
-import "./TrackPostHogEvent.js";
-import "./StarOutlined.js";
-import "./NavigateTo.js";
-import "./index-15.js";
-import "./colors.js";
-import "./useWarningOnMountInDevelopment.js";
-import "./index-10.js";
-import "./index-5.js";
-import "./move.js";
-import "./context.js";
-import "./KitPreview.js";
-import "./ImagePreview.js";
-import "./getCloudinaryUrl.js";
-import "./index.es.js";
-import "./CheckOutlined.js";
-import "./DownOutlined.js";
-import "./useBubbleLock.js";
-import "./useForm.js";
-var ht = {
-        icon: {
-            tag: "svg",
-            attrs: {
-                viewBox: "64 64 896 896",
-                focusable: "false"
-            },
-            children: [{
-                tag: "path",
-                attrs: {
-                    d: "M854.6 288.6L639.4 73.4c-6-6-14.1-9.4-22.6-9.4H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V311.3c0-8.5-3.4-16.7-9.4-22.7zM790.2 326H602V137.8L790.2 326zm1.8 562H232V136h302v216a42 42 0 0042 42h216v494zM504 618H320c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h184c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zM312 490v48c0 4.4 3.6 8 8 8h384c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8H320c-4.4 0-8 3.6-8 8z"
-                }
-            }]
+    t as colors_default
+} from "./colors-2.js";
+var import_lib = __toESM(require_lib()),
+    import_react = __toESM(require_react()),
+    import_jsx_runtime = require_jsx_runtime(),
+    JoinBackgroundContainer = e => (0, import_jsx_runtime.jsx)(FillRemainingSpace, {
+        children: (0, import_jsx_runtime.jsx)(Container$5, {
+            children: e.children
+        })
+    }),
+    Container$5 = dt.div.attrs({
+        className: `flex-center maxAll`
+    })`
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/assets/play/background.png') repeat 0 0;
+  color: ${Colors.Black};
+`,
+    JoinInput = dt.input`
+  height: 50px;
+  outline: none;
+  border-radius: 4px;
+  width: 100%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #838383;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.21s;
+  &:focus {
+    border-color: #303f9f;
+  }
+`,
+    getButtonColor = (e, t) => e === `disabled` ? colors_default.DisabledGray : t || (e === `primary` ? colors_default.PrimaryBlue : e === `secondary` ? colors_default.SecondaryPurple : colors_default.Black),
+    Button = dt.div`
+  box-sizing: border-box;
+  padding: ${e=>e.size===`medium`?`12px 16px 12px`:e.size===`large`?`13px 21px 13px`:`8px 13px 8px`};
+  font-size: ${e=>e.size===`medium`?17:e.size===`large`?23:15}px;
+  background: ${e=>e.color};
+  color: ${colors_default.White};
+  transition: background 0.2s ease;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  user-select: none;
+  cursor: ${e=>e.type===`disabled`?`not-allowed`:`pointer`};
+  &:hover {
+    background: ${e=>curriedLighten$1(.1,e.color)};
+  }
+`,
+    _Class = class extends import_react.Component {
+        constructor(...e) {
+            super(...e), this.onClick = () => {
+                this.props.type !== `disabled` && this.props.onClick && this.props.onClick()
+            }
+        }
+        render() {
+            return (0, import_jsx_runtime.jsx)(Button, {
+                id: this.props.id,
+                onClick: this.onClick,
+                type: this.props.type,
+                color: getButtonColor(this.props.type, this.props.customColor),
+                size: this.props.size,
+                style: this.props.style,
+                children: this.props.label
+            })
+        }
+    };
+_Class.defaultProps = {
+    size: `medium`
+};
+var JoinPrimaryButton = e => (0, import_jsx_runtime.jsx)(_Class, {
+        id: e.id,
+        type: `secondary`,
+        style: Object.assign(e.style || {}, {
+            width: `100%`
+        }),
+        size: `small`,
+        label: (0, import_jsx_runtime.jsx)(`div`, {
+            className: `maxAll flex-center`,
+            children: e.loading ? (0, import_jsx_runtime.jsx)(CircularProgress_default, {
+                size: 22
+            }) : (0, import_jsx_runtime.jsx)(`span`, {
+                children: e.label
+            })
+        }),
+        onClick: e.onClick
+    }),
+    OUT_ANIM = {
+        scale: .9,
+        opacity: 0
+    },
+    IN_ANIM = {
+        scale: 1,
+        opacity: 1
+    },
+    JoinModal = e => (0, import_jsx_runtime.jsx)(Container$4, {
+        className: e.containerClassName,
+        style: {
+            maxWidth: e.customMaxWidth || 400
         },
-        name: "file-text",
-        theme: "outlined"
-    },
-    mt = function(r, n) {
-        return i.createElement(N, M({}, r, {
-            ref: n,
-            icon: ht
-        }))
-    },
-    ie = i.forwardRef(mt),
-    xt = {
-        icon: {
-            tag: "svg",
-            attrs: {
-                viewBox: "64 64 896 896",
-                focusable: "false"
+        children: (0, import_jsx_runtime.jsxs)(Modal, {
+            initial: e.alreadyAnimatedIn ? IN_ANIM : OUT_ANIM,
+            animate: IN_ANIM,
+            exit: OUT_ANIM,
+            transition: {
+                duration: .4
             },
-            children: [{
-                tag: "path",
-                attrs: {
-                    d: "M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 000-48.4z"
+            className: e.className,
+            children: [e.noImage ? null : (0, import_jsx_runtime.jsx)(`img`, {
+                src: `/client/img/svgLogo.svg`,
+                style: {
+                    width: `70%`,
+                    maxWidth: 220
                 }
-            }]
-        },
-        name: "arrow-right",
-        theme: "outlined"
-    },
-    gt = function(r, n) {
-        return i.createElement(N, M({}, r, {
-            ref: n,
-            icon: xt
-        }))
-    },
-    ft = i.forwardRef(gt),
-    yt = {
-        icon: {
-            tag: "svg",
-            attrs: {
-                viewBox: "64 64 896 896",
-                focusable: "false"
-            },
-            children: [{
-                tag: "path",
-                attrs: {
-                    d: "M894 462c30.9 0 43.8-39.7 18.7-58L530.8 126.2a31.81 31.81 0 00-37.6 0L111.3 404c-25.1 18.2-12.2 58 18.8 58H192v374h-72c-4.4 0-8 3.6-8 8v52c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-52c0-4.4-3.6-8-8-8h-72V462h62zM512 196.7l271.1 197.2H240.9L512 196.7zM264 462h117v374H264V462zm189 0h117v374H453V462zm307 374H642V462h118v374z"
-                }
-            }]
-        },
-        name: "bank",
-        theme: "outlined"
-    },
-    bt = function(r, n) {
-        return i.createElement(N, M({}, r, {
-            ref: n,
-            icon: yt
-        }))
-    },
-    oe = i.forwardRef(bt),
-    jt = {
-        icon: {
-            tag: "svg",
-            attrs: {
-                viewBox: "64 64 896 896",
-                focusable: "false"
-            },
-            children: [{
-                tag: "path",
-                attrs: {
-                    d: "M699 353h-46.9c-10.2 0-19.9 4.9-25.9 13.3L469 584.3l-71.2-98.8c-6-8.3-15.6-13.3-25.9-13.3H325c-6.5 0-10.3 7.4-6.5 12.7l124.6 172.8a31.8 31.8 0 0051.7 0l210.6-292c3.9-5.3.1-12.7-6.4-12.7z"
-                }
-            }, {
-                tag: "path",
-                attrs: {
-                    d: "M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
-                }
-            }]
-        },
-        name: "check-circle",
-        theme: "outlined"
-    },
-    vt = function(r, n) {
-        return i.createElement(N, M({}, r, {
-            ref: n,
-            icon: jt
-        }))
-    },
-    Ee = i.forwardRef(vt),
-    wt = {
-        icon: {
-            tag: "svg",
-            attrs: {
-                viewBox: "64 64 896 896",
-                focusable: "false"
-            },
-            children: [{
-                tag: "path",
-                attrs: {
-                    d: "M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-792 72h752v120H136V232zm752 560H136V440h752v352zm-237-64h165c4.4 0 8-3.6 8-8v-72c0-4.4-3.6-8-8-8H651c-4.4 0-8 3.6-8 8v72c0 4.4 3.6 8 8 8z"
-                }
-            }]
-        },
-        name: "credit-card",
-        theme: "outlined"
-    },
-    St = function(r, n) {
-        return i.createElement(N, M({}, r, {
-            ref: n,
-            icon: wt
-        }))
-    },
-    he = i.forwardRef(St),
-    kt = {
-        icon: {
-            tag: "svg",
-            attrs: {
-                viewBox: "64 64 896 896",
-                focusable: "false"
-            },
-            children: [{
-                tag: "path",
-                attrs: {
-                    d: "M880 310H732.4c13.6-21.4 21.6-46.8 21.6-74 0-76.1-61.9-138-138-138-41.4 0-78.7 18.4-104 47.4-25.3-29-62.6-47.4-104-47.4-76.1 0-138 61.9-138 138 0 27.2 7.9 52.6 21.6 74H144c-17.7 0-32 14.3-32 32v200c0 4.4 3.6 8 8 8h40v344c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V550h40c4.4 0 8-3.6 8-8V342c0-17.7-14.3-32-32-32zm-334-74c0-38.6 31.4-70 70-70s70 31.4 70 70-31.4 70-70 70h-70v-70zm-138-70c38.6 0 70 31.4 70 70v70h-70c-38.6 0-70-31.4-70-70s31.4-70 70-70zM180 482V378h298v104H180zm48 68h250v308H228V550zm568 308H546V550h250v308zm48-376H546V378h298v104z"
-                }
-            }]
-        },
-        name: "gift",
-        theme: "outlined"
-    },
-    Ct = function(r, n) {
-        return i.createElement(N, M({}, r, {
-            ref: n,
-            icon: kt
-        }))
-    },
-    $t = i.forwardRef(Ct),
-    At = {
-        icon: {
-            tag: "svg",
-            attrs: {
-                viewBox: "64 64 896 896",
-                focusable: "false"
-            },
-            children: [{
-                tag: "path",
-                attrs: {
-                    d: "M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 110.8V792H136V270.8l-27.6-21.5 39.3-50.5 42.8 33.3h643.1l42.8-33.3 39.3 50.5-27.7 21.5zM833.6 232L512 482 190.4 232l-42.8-33.3-39.3 50.5 27.6 21.5 341.6 265.6a55.99 55.99 0 0068.7 0L888 270.8l27.6-21.5-39.3-50.5-42.7 33.2z"
-                }
-            }]
-        },
-        name: "mail",
-        theme: "outlined"
-    },
-    zt = function(r, n) {
-        return i.createElement(N, M({}, r, {
-            ref: n,
-            icon: At
-        }))
-    },
-    Rt = i.forwardRef(zt),
-    Et = {
-        icon: {
-            tag: "svg",
-            attrs: {
-                viewBox: "64 64 896 896",
-                focusable: "false"
-            },
-            children: [{
-                tag: "path",
-                attrs: {
-                    d: "M168 504.2c1-43.7 10-86.1 26.9-126 17.3-41 42.1-77.7 73.7-109.4S337 212.3 378 195c42.4-17.9 87.4-27 133.9-27s91.5 9.1 133.8 27A341.5 341.5 0 01755 268.8c9.9 9.9 19.2 20.4 27.8 31.4l-60.2 47a8 8 0 003 14.1l175.7 43c5 1.2 9.9-2.6 9.9-7.7l.8-180.9c0-6.7-7.7-10.5-12.9-6.3l-56.4 44.1C765.8 155.1 646.2 92 511.8 92 282.7 92 96.3 275.6 92 503.8a8 8 0 008 8.2h60c4.4 0 7.9-3.5 8-7.8zm756 7.8h-60c-4.4 0-7.9 3.5-8 7.8-1 43.7-10 86.1-26.9 126-17.3 41-42.1 77.8-73.7 109.4A342.45 342.45 0 01512.1 856a342.24 342.24 0 01-243.2-100.8c-9.9-9.9-19.2-20.4-27.8-31.4l60.2-47a8 8 0 00-3-14.1l-175.7-43c-5-1.2-9.9 2.6-9.9 7.7l-.7 181c0 6.7 7.7 10.5 12.9 6.3l56.4-44.1C258.2 868.9 377.8 932 512.2 932c229.2 0 415.5-183.7 419.8-411.8a8 8 0 00-8-8.2z"
-                }
-            }]
-        },
-        name: "sync",
-        theme: "outlined"
-    },
-    Tt = function(r, n) {
-        return i.createElement(N, M({}, r, {
-            ref: n,
-            icon: Et
-        }))
-    },
-    It = i.forwardRef(Tt),
-    Pt = {
-        icon: {
-            tag: "svg",
-            attrs: {
-                viewBox: "64 64 896 896",
-                focusable: "false"
-            },
-            children: [{
-                tag: "path",
-                attrs: {
-                    d: "M858.5 763.6a374 374 0 00-80.6-119.5 375.63 375.63 0 00-119.5-80.6c-.4-.2-.8-.3-1.2-.5C719.5 518 760 444.7 760 362c0-137-111-248-248-248S264 225 264 362c0 82.7 40.5 156 102.8 201.1-.4.2-.8.3-1.2.5-44.8 18.9-85 46-119.5 80.6a375.63 375.63 0 00-80.6 119.5A371.7 371.7 0 00136 901.8a8 8 0 008 8.2h60c4.4 0 7.9-3.5 8-7.8 2-77.2 33-149.5 87.8-204.3 56.7-56.7 132-87.9 212.2-87.9s155.5 31.2 212.2 87.9C779 752.7 810 825 812 902.2c.1 4.4 3.6 7.8 8 7.8h60a8 8 0 008-8.2c-1-47.8-10.9-94.3-29.5-138.2zM512 534c-45.9 0-89.1-17.9-121.6-50.4S340 407.9 340 362c0-45.9 17.9-89.1 50.4-121.6S466.1 190 512 190s89.1 17.9 121.6 50.4S684 316.1 684 362c0 45.9-17.9 89.1-50.4 121.6S557.9 534 512 534z"
-                }
-            }]
-        },
-        name: "user",
-        theme: "outlined"
-    },
-    Lt = function(r, n) {
-        return i.createElement(N, M({}, r, {
-            ref: n,
-            icon: Pt
-        }))
-    },
-    Nt = i.forwardRef(Lt);
-const Z = [{
-        tab: k.profile,
-        label: "Profile"
-    }, {
-        tab: k.account,
-        label: "Account & sign-in"
-    }, {
-        tab: k.billing,
-        label: "Plan & billing",
-        educatorOnly: !0
-    }, {
-        tab: k.gameSettings,
-        label: "Game settings",
-        educatorOnly: !0
-    }, {
-        tab: k.support,
-        label: "Help & support",
-        educatorOnly: !0
-    }],
-    Mt = {
-        [k.profile]: Nt,
-        [k.account]: Qe,
-        [k.gameSettings]: Ke,
-        [k.billing]: he,
-        [k.support]: Ae
-    },
-    Ot = de(() => {
-        const {
-            navigation: t
-        } = i.useContext(le), r = n => {
-            t.currentTab = n;
-            const a = new URL(window.location.href);
-            a.searchParams.set("tab", n), window.history.replaceState(null, "", a)
+            }), e.children]
+        })
+    }),
+    Container$4 = dt.div.attrs({
+        className: `scroll`
+    })`
+  @media (min-width: 736px) and (min-height: 512px) {
+    transform: scale(1.4);
+  }
+  width: 90%;
+  max-width: 400px;
+  max-height: 90%;
+  border-radius: 5px;
+`,
+    Modal = dt(motion.div).attrs({
+        className: `maxWidth`
+    })`
+  box-sizing: border-box;
+  background: ${Colors.White};
+  padding: 25px;
+  box-shadow: 0px 4px 33px -6px rgba(0, 0, 0, 0.46);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Product Sans';
+`,
+    EnterCode = e => {
+        let t = () => {
+            !e.loading && e.submit && e.submit()
         };
-        return e.jsxs(Ft, {
-            children: [e.jsx(Bt, {
-                "aria-label": "Settings sections",
-                children: Z.filter(n => !n.educatorOnly || !T()).map(n => {
-                    const a = Mt[n.tab];
-                    return e.jsxs(Ut, {
-                        type: "button",
-                        "aria-current": t.currentTab === n.tab ? "page" : void 0,
-                        onClick: () => r(n.tab),
-                        children: [e.jsx(a, {
-                            "aria-hidden": !0
-                        }), n.label]
-                    }, n.tab)
+        return (0, import_jsx_runtime.jsxs)(JoinModal, {
+            alreadyAnimatedIn: !0,
+            children: [(0, import_jsx_runtime.jsx)(JoinInput, {
+                style: {
+                    marginTop: 14,
+                    marginBottom: 7
+                },
+                placeholder: `Game Code`,
+                inputMode: `numeric`,
+                pattern: `[0-9]*`,
+                type: `number`,
+                value: e.value,
+                onChange: t => {
+                    e.onValueChange && e.onValueChange(t.target.value)
+                },
+                onKeyDown: e => {
+                    e.key === `Enter` && t()
+                },
+                spellCheck: `false`
+            }), (0, import_jsx_runtime.jsx)(JoinPrimaryButton, {
+                label: `Join`,
+                onClick: t,
+                loading: e.loading
+            })]
+        })
+    },
+    nouns = `turtle.elephant.eagle.iguana.flamingo.fox.giraffe.gecko.dragon.sloth.lion.penguin.tiger.kangaroo.butterfly.porcupine.frog.bear.panda.fish.kitten.puppy.otter.leopard.owl.zebra.potato.fruit.planet.cereal.muffin.cookie.cupcake.cloud.shirt.hat.shoe.stone.plant.tree.flower.bread.bike.boat`.split(`.`),
+    adjectives = `aqua.beige.blue.bronze.copper.coral.fuchsia.gold.gray.green.indigo.lime.magenta.maroon.orange.pink.purple.red.rose.silver.teal.turquoise.violet.friendly.quiet.spooky.hungry.lucky.adventurous.curious.fearless.grumpy.happy.determined.brave`.split(`.`),
+    FriendlyNameWords = {
+        nouns,
+        adjectives
+    },
+    import_lodash = require_lodash(),
+    CHANCES = 4,
+    generateName = () => `${capitalizeFirstLetter((0,import_lodash.sample)(FriendlyNameWords.adjectives))}${capitalizeFirstLetter((0,import_lodash.sample)(FriendlyNameWords.nouns))}`,
+    FriendlyNamePicker = e => {
+        let [t, n] = import_react.useState(0), r = import_react.useMemo(() => {
+            let e = [];
+            for (let t = 0; t < CHANCES; t++) e.push(generateName());
+            return e
+        }, []), i = import_react.useMemo(() => r[t], [t]);
+        import_react.useEffect(() => {
+            e.onNameChange(i)
+        }, [i]);
+        let a = import_react.useMemo(() => t + 1 !== CHANCES, [t]);
+        return (0, import_jsx_runtime.jsxs)(Container$3, {
+            children: [(0, import_jsx_runtime.jsx)(Divider, {
+                style: {
+                    marginTop: 20,
+                    marginBottom: 15
+                },
+                children: (0, import_jsx_runtime.jsx)(`span`, {
+                    style: {
+                        fontStyle: `italic`,
+                        color: `rgba(0,0,0,0.7)`
+                    },
+                    children: `Your nickname`
                 })
-            }), T() ? null : e.jsxs(Dt, {
-                children: [e.jsx("p", {
-                    children: "Looking to manage a group license?"
-                }), e.jsx("p", {
-                    children: "We moved license management to a dedicated page:"
-                }), e.jsxs(Ze, {
-                    to: Me,
-                    children: [Ne(), "/groups ", e.jsx(H, {})]
+            }), (0, import_jsx_runtime.jsxs)(`div`, {
+                className: `maxWidth flex vc`,
+                children: [(0, import_jsx_runtime.jsx)(JoinInput, {
+                    value: i,
+                    readOnly: !0,
+                    spellcheck: `false`
+                }), (0, import_jsx_runtime.jsx)(Tooltip, {
+                    title: a ? `Spin Again (${CHANCES-t-1} Left)` : `Out Of Spins!`,
+                    children: (0, import_jsx_runtime.jsx)(`div`, {
+                        style: {
+                            marginLeft: 7
+                        },
+                        children: (0, import_jsx_runtime.jsx)(_Class, {
+                            onClick: () => {
+                                a && n(e => e + 1)
+                            },
+                            type: a ? `primary` : `disabled`,
+                            label: (0, import_jsx_runtime.jsx)(`i`, {
+                                className: `fas fa-sync`
+                            }),
+                            customColor: `#1b5e20`
+                        })
+                    })
                 })]
             })]
         })
+    },
+    Container$3 = dt.div.attrs({
+        className: `maxWidth flex-center flex-column`
+    })`
+  margin-bottom: 10px;
+`;
+dt.div`
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  font-style: italic;
+  margin-bottom: 7px;
+`;
+var LOCAL_STORAGE_PLAY_AGAIN_LAST_USED_NAME = `play-again-last-used-name`,
+    EnterName = e => {
+        let [t, n] = import_react.useState(``), r = () => {
+            (e.value || ``).trim().length && !e.loading && e.submit && e.submit()
+        };
+        return import_react.useEffect(() => {
+            let t = localStorage.getItem(LOCAL_STORAGE_PLAY_AGAIN_LAST_USED_NAME);
+            t && (n(t), localStorage.removeItem(LOCAL_STORAGE_PLAY_AGAIN_LAST_USED_NAME), e.onValueChange(t))
+        }, []), import_react.useEffect(() => {
+            e.value && t && t === e.value && r()
+        }, [t, e.value]), (0, import_jsx_runtime.jsxs)(JoinModal, {
+            children: [e.useRandomNamePicker ? (0, import_jsx_runtime.jsx)(FriendlyNamePicker, {
+                onNameChange: e.onValueChange
+            }) : (0, import_jsx_runtime.jsx)(JoinInput, {
+                id: `player-name-input`,
+                style: {
+                    marginTop: 14,
+                    marginBottom: 7
+                },
+                placeholder: `Your Name`,
+                maxLength: 20,
+                value: e.value,
+                onChange: t => {
+                    e.onValueChange && e.onValueChange(t.target.value)
+                },
+                onKeyDown: e => {
+                    e.key === `Enter` && r()
+                },
+                spellcheck: `false`
+            }), (0, import_jsx_runtime.jsx)(JoinPrimaryButton, {
+                id: `join-game-button`,
+                label: `Join`,
+                onClick: r,
+                loading: e.loading
+            })]
+        })
+    };
+init_dist();
+var JoinClass = e => (0, import_jsx_runtime.jsx)(JoinModal, {
+        noImage: !0,
+        children: (0, import_jsx_runtime.jsxs)(Container$2, {
+            children: [(0, import_jsx_runtime.jsx)(Image, {}), (0, import_jsx_runtime.jsx)(Divider, {}), (0, import_jsx_runtime.jsxs)(Text$1, {
+                children: [`To access this game, you must join the `, (0, import_jsx_runtime.jsx)(`b`, {
+                    children: e.nameOfClass
+                }), ` `, `class.`]
+            }), (0, import_jsx_runtime.jsx)(button_default, {
+                href: e.link,
+                style: {
+                    marginTop: 20
+                },
+                type: `primary`,
+                block: !0,
+                children: `Join Class`
+            })]
+        })
     }),
-    Ft = o.aside`
-  position: sticky;
-  top: var(--header-height, 80px);
-  min-height: calc(100vh - var(--header-height, 80px));
-  padding: 24px 16px;
-  border-right: 1px solid ${S.BorderGray};
-  @media (max-width: 850px) {
-    position: static;
-    min-height: 0;
-    padding: 20px 16px 0;
-    border-right: 0;
-  }
+    Container$2 = dt.div.attrs({
+        className: `maxWidth flex-column flex-center`
+    })``,
+    Image = dt.img.attrs({
+        src: `/client/img/svgLogo.svg`
+    })`
+  height: 30px;
 `,
-    Bt = o.nav`
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  @media (max-width: 850px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+    Text$1 = dt.div`
+  font-size: 16px;
 `,
-    Ut = o.button`
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 13px 12px;
-  border: 0;
-  border-radius: 10px;
-  background: transparent;
-  color: #625b70;
-  font: inherit;
-  font-size: 14px;
-  font-weight: 550;
-  text-align: left;
-  cursor: pointer;
-  .anticon {
-    flex-shrink: 0;
-    font-size: 18px;
-  }
-  &:hover {
-    background: #eeebf3;
-    color: #382750;
-  }
-  &[aria-current='page'] {
-    background: #eae1fa;
-    color: #6031ae;
-    font-weight: 700;
-  }
-  &:focus-visible {
-    outline: 3px solid #a77de5;
-    outline-offset: 2px;
-  }
-`,
-    Dt = o.div`
-  border: 1px solid #e6e3eb;
-  border-radius: 12px;
-  background: #f8f7fa;
-  margin: 28px 0 0;
-  padding: 16px;
-  color: #716a7b;
-  font-size: 12px;
-  p {
-    margin: 0 0 10px;
-    line-height: 1.6;
-    &:first-child {
-      color: #5f586b;
-      font-weight: 600;
-    }
-  }
-  a {
-    color: #75628f;
-    font-weight: 500;
-    &:hover {
-      color: #6031ae;
-      text-decoration: underline;
-    }
-  }
-  @media (max-width: 850px) {
-    display: none;
-  }
-`,
-    Yt = t => {
-        R({
-            url: "/api/users/update-information",
-            method: "post",
+    submitCode = e => {
+        let {
+            code: t,
+            onSuccess: n,
+            onError: r
+        } = e;
+        t.length < 4 ? r && r({
+            message: {
+                text: `Game not found`
+            }
+        }) : request({
+            url: `/api/matchmaker/find-info-from-code`,
             data: {
-                changes: t.changes
+                code: t
             },
-            success: r => {
-                t.onSuccess && t.onSuccess(r), X({})
+            success: e => {
+                n && n(e)
             },
-            error: r => {
-                t.onError && t.onError(r)
+            error: e => {
+                r && r(e)
             }
         })
     },
-    P = t => e.jsxs(Te, {
-        "aria-labelledby": t.id,
-        children: [e.jsxs(Gt, {
-            children: [e.jsx("h2", {
-                id: t.id,
-                children: t.title
-            }), t.description ? e.jsx("p", {
-                children: t.description
-            }) : null]
-        }), t.children]
-    }),
-    Te = o.section`
-  background: #fff;
-  border: 1px solid #e8e5ed;
-  border-radius: 16px;
-  padding: 26px;
-  margin-bottom: 18px;
-  min-width: 0;
-  @media (max-width: 600px) {
-    padding: 20px;
-  }
-`,
-    Gt = o.div`
-  margin-bottom: 22px;
-  h2 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 700;
-    color: #262331;
-  }
-  p {
-    margin: 6px 0 0;
-    font-size: 14px;
-    line-height: 1.6;
-    color: #706a7c;
-  }
-`,
-    K = o.label`
-  display: block;
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #3f394d;
-`,
-    U = o.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  flex-wrap: wrap;
-  & + & {
-    border-top: 1px solid #efedf2;
-    margin-top: 20px;
-    padding-top: 20px;
-  }
-  p {
-    margin: 4px 0 0;
-    color: #706a7c;
-    font-size: 14px;
-    line-height: 1.6;
-  }
-  strong {
-    font-weight: 600;
-  }
-`,
-    Ie = o.div`
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 20px;
-  flex-wrap: wrap;
-  font-size: 13px;
-  color: #706a7c;
-`,
-    Ht = () => {
-        const t = {
-                firstName: Oe(F()),
-                lastName: F().lastName || ""
+    require_browser$11 = __commonJSMin(((e, t) => {
+        init_dist$2();
+        var n = 65536,
+            r = 4294967295;
+
+        function i() {
+            throw Error(`Secure random number generation is not supported by this browser.
+Use Chrome, Firefox or Internet Explorer 11`)
+        }
+        var a = require_safe_buffer$1().Buffer,
+            s = global.crypto || global.msCrypto;
+        t.exports = s && s.getRandomValues ? c : i;
+
+        function c(e, t) {
+            if (e > r) throw RangeError(`requested too many random bytes`);
+            var i = a.allocUnsafe(e);
+            if (e > 0) {
+                if (e > n)
+                    for (var c = 0; c < e; c += n) s.getRandomValues(i.slice(c, c + n));
+                else s.getRandomValues(i)
+            }
+            return typeof t == `function` ? process$1.nextTick(function() {
+                t(null, i)
+            }) : i
+        }
+    })),
+    require_readable_browser$1 = __commonJSMin(((e, t) => {
+        e = t.exports = require__stream_readable$1(), e.Stream = e, e.Readable = e, e.Writable = require__stream_writable$1(), e.Duplex = require__stream_duplex$1(), e.Transform = require__stream_transform$1(), e.PassThrough = require__stream_passthrough$1(), e.finished = require_end_of_stream(), e.pipeline = require_pipeline()
+    })),
+    require_hash_base$2 = __commonJSMin(((e, t) => {
+        var n = require_safe_buffer$1().Buffer,
+            r = require_readable_browser$1().Transform,
+            i = require_inherits_browser();
+
+        function a(e, t) {
+            if (!n.isBuffer(e) && typeof e != `string`) throw TypeError(t + ` must be a string or a buffer`)
+        }
+
+        function s(e) {
+            r.call(this), this._block = n.allocUnsafe(e), this._blockSize = e, this._blockOffset = 0, this._length = [0, 0, 0, 0], this._finalized = !1
+        }
+        i(s, r), s.prototype._transform = function(e, t, n) {
+            var r = null;
+            try {
+                this.update(e, t)
+            } catch (e) {
+                r = e
+            }
+            n(r)
+        }, s.prototype._flush = function(e) {
+            var t = null;
+            try {
+                this.push(this.digest())
+            } catch (e) {
+                t = e
+            }
+            e(t)
+        }, s.prototype.update = function(e, t) {
+            if (a(e, `Data`), this._finalized) throw Error(`Digest already called`);
+            n.isBuffer(e) || (e = n.from(e, t));
+            for (var r = this._block, i = 0; this._blockOffset + e.length - i >= this._blockSize;) {
+                for (var s = this._blockOffset; s < this._blockSize;) r[s++] = e[i++];
+                this._update(), this._blockOffset = 0
+            }
+            for (; i < e.length;) r[this._blockOffset++] = e[i++];
+            for (var c = 0, l = e.length * 8; l > 0; ++c) this._length[c] += l, l = this._length[c] / 4294967296 | 0, l > 0 && (this._length[c] -= 4294967296 * l);
+            return this
+        }, s.prototype._update = function() {
+            throw Error(`_update is not implemented`)
+        }, s.prototype.digest = function(e) {
+            if (this._finalized) throw Error(`Digest already called`);
+            this._finalized = !0;
+            var t = this._digest();
+            e !== void 0 && (t = t.toString(e)), this._block.fill(0), this._blockOffset = 0;
+            for (var n = 0; n < 4; ++n) this._length[n] = 0;
+            return t
+        }, s.prototype._digest = function() {
+            throw Error(`_digest is not implemented`)
+        }, t.exports = s
+    })),
+    require_md5_js = __commonJSMin(((e, t) => {
+        var n = require_inherits_browser(),
+            r = require_hash_base$2(),
+            i = require_safe_buffer$1().Buffer,
+            a = Array(16);
+
+        function s() {
+            r.call(this, 64), this._a = 1732584193, this._b = 4023233417, this._c = 2562383102, this._d = 271733878
+        }
+        n(s, r), s.prototype._update = function() {
+            for (var e = a, t = 0; t < 16; ++t) e[t] = this._block.readInt32LE(t * 4);
+            var n = this._a,
+                r = this._b,
+                i = this._c,
+                s = this._d;
+            n = l(n, r, i, s, e[0], 3614090360, 7), s = l(s, n, r, i, e[1], 3905402710, 12), i = l(i, s, n, r, e[2], 606105819, 17), r = l(r, i, s, n, e[3], 3250441966, 22), n = l(n, r, i, s, e[4], 4118548399, 7), s = l(s, n, r, i, e[5], 1200080426, 12), i = l(i, s, n, r, e[6], 2821735955, 17), r = l(r, i, s, n, e[7], 4249261313, 22), n = l(n, r, i, s, e[8], 1770035416, 7), s = l(s, n, r, i, e[9], 2336552879, 12), i = l(i, s, n, r, e[10], 4294925233, 17), r = l(r, i, s, n, e[11], 2304563134, 22), n = l(n, r, i, s, e[12], 1804603682, 7), s = l(s, n, r, i, e[13], 4254626195, 12), i = l(i, s, n, r, e[14], 2792965006, 17), r = l(r, i, s, n, e[15], 1236535329, 22), n = u(n, r, i, s, e[1], 4129170786, 5), s = u(s, n, r, i, e[6], 3225465664, 9), i = u(i, s, n, r, e[11], 643717713, 14), r = u(r, i, s, n, e[0], 3921069994, 20), n = u(n, r, i, s, e[5], 3593408605, 5), s = u(s, n, r, i, e[10], 38016083, 9), i = u(i, s, n, r, e[15], 3634488961, 14), r = u(r, i, s, n, e[4], 3889429448, 20), n = u(n, r, i, s, e[9], 568446438, 5), s = u(s, n, r, i, e[14], 3275163606, 9), i = u(i, s, n, r, e[3], 4107603335, 14), r = u(r, i, s, n, e[8], 1163531501, 20), n = u(n, r, i, s, e[13], 2850285829, 5), s = u(s, n, r, i, e[2], 4243563512, 9), i = u(i, s, n, r, e[7], 1735328473, 14), r = u(r, i, s, n, e[12], 2368359562, 20), n = d(n, r, i, s, e[5], 4294588738, 4), s = d(s, n, r, i, e[8], 2272392833, 11), i = d(i, s, n, r, e[11], 1839030562, 16), r = d(r, i, s, n, e[14], 4259657740, 23), n = d(n, r, i, s, e[1], 2763975236, 4), s = d(s, n, r, i, e[4], 1272893353, 11), i = d(i, s, n, r, e[7], 4139469664, 16), r = d(r, i, s, n, e[10], 3200236656, 23), n = d(n, r, i, s, e[13], 681279174, 4), s = d(s, n, r, i, e[0], 3936430074, 11), i = d(i, s, n, r, e[3], 3572445317, 16), r = d(r, i, s, n, e[6], 76029189, 23), n = d(n, r, i, s, e[9], 3654602809, 4), s = d(s, n, r, i, e[12], 3873151461, 11), i = d(i, s, n, r, e[15], 530742520, 16), r = d(r, i, s, n, e[2], 3299628645, 23), n = f(n, r, i, s, e[0], 4096336452, 6), s = f(s, n, r, i, e[7], 1126891415, 10), i = f(i, s, n, r, e[14], 2878612391, 15), r = f(r, i, s, n, e[5], 4237533241, 21), n = f(n, r, i, s, e[12], 1700485571, 6), s = f(s, n, r, i, e[3], 2399980690, 10), i = f(i, s, n, r, e[10], 4293915773, 15), r = f(r, i, s, n, e[1], 2240044497, 21), n = f(n, r, i, s, e[8], 1873313359, 6), s = f(s, n, r, i, e[15], 4264355552, 10), i = f(i, s, n, r, e[6], 2734768916, 15), r = f(r, i, s, n, e[13], 1309151649, 21), n = f(n, r, i, s, e[4], 4149444226, 6), s = f(s, n, r, i, e[11], 3174756917, 10), i = f(i, s, n, r, e[2], 718787259, 15), r = f(r, i, s, n, e[9], 3951481745, 21), this._a = this._a + n | 0, this._b = this._b + r | 0, this._c = this._c + i | 0, this._d = this._d + s | 0
+        }, s.prototype._digest = function() {
+            this._block[this._blockOffset++] = 128, this._blockOffset > 56 && (this._block.fill(0, this._blockOffset, 64), this._update(), this._blockOffset = 0), this._block.fill(0, this._blockOffset, 56), this._block.writeUInt32LE(this._length[0], 56), this._block.writeUInt32LE(this._length[1], 60), this._update();
+            var e = i.allocUnsafe(16);
+            return e.writeInt32LE(this._a, 0), e.writeInt32LE(this._b, 4), e.writeInt32LE(this._c, 8), e.writeInt32LE(this._d, 12), e
+        };
+
+        function c(e, t) {
+            return e << t | e >>> 32 - t
+        }
+
+        function l(e, t, n, r, i, a, s) {
+            return c(e + (t & n | ~t & r) + i + a | 0, s) + t | 0
+        }
+
+        function u(e, t, n, r, i, a, s) {
+            return c(e + (t & r | n & ~r) + i + a | 0, s) + t | 0
+        }
+
+        function d(e, t, n, r, i, a, s) {
+            return c(e + (t ^ n ^ r) + i + a | 0, s) + t | 0
+        }
+
+        function f(e, t, n, r, i, a, s) {
+            return c(e + (n ^ (t | ~r)) + i + a | 0, s) + t | 0
+        }
+        t.exports = s
+    })),
+    require_hash_base$1 = __commonJSMin(((e, t) => {
+        var n = require_safe_buffer$1().Buffer,
+            r = require_readable_browser$1().Transform,
+            i = require_inherits_browser();
+
+        function a(e, t) {
+            if (!n.isBuffer(e) && typeof e != `string`) throw TypeError(t + ` must be a string or a buffer`)
+        }
+
+        function s(e) {
+            r.call(this), this._block = n.allocUnsafe(e), this._blockSize = e, this._blockOffset = 0, this._length = [0, 0, 0, 0], this._finalized = !1
+        }
+        i(s, r), s.prototype._transform = function(e, t, n) {
+            var r = null;
+            try {
+                this.update(e, t)
+            } catch (e) {
+                r = e
+            }
+            n(r)
+        }, s.prototype._flush = function(e) {
+            var t = null;
+            try {
+                this.push(this.digest())
+            } catch (e) {
+                t = e
+            }
+            e(t)
+        }, s.prototype.update = function(e, t) {
+            if (a(e, `Data`), this._finalized) throw Error(`Digest already called`);
+            n.isBuffer(e) || (e = n.from(e, t));
+            for (var r = this._block, i = 0; this._blockOffset + e.length - i >= this._blockSize;) {
+                for (var s = this._blockOffset; s < this._blockSize;) r[s++] = e[i++];
+                this._update(), this._blockOffset = 0
+            }
+            for (; i < e.length;) r[this._blockOffset++] = e[i++];
+            for (var c = 0, l = e.length * 8; l > 0; ++c) this._length[c] += l, l = this._length[c] / 4294967296 | 0, l > 0 && (this._length[c] -= 4294967296 * l);
+            return this
+        }, s.prototype._update = function() {
+            throw Error(`_update is not implemented`)
+        }, s.prototype.digest = function(e) {
+            if (this._finalized) throw Error(`Digest already called`);
+            this._finalized = !0;
+            var t = this._digest();
+            e !== void 0 && (t = t.toString(e)), this._block.fill(0), this._blockOffset = 0;
+            for (var n = 0; n < 4; ++n) this._length[n] = 0;
+            return t
+        }, s.prototype._digest = function() {
+            throw Error(`_digest is not implemented`)
+        }, t.exports = s
+    })),
+    require_ripemd160$1 = __commonJSMin(((e, t) => {
+        var n = require_dist$1().Buffer,
+            r = require_inherits_browser(),
+            i = require_hash_base$1(),
+            a = Array(16),
+            s = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 7, 4, 13, 1, 10, 6, 15, 3, 12, 0, 9, 5, 2, 14, 11, 8, 3, 10, 14, 4, 9, 15, 8, 1, 2, 7, 0, 6, 13, 11, 5, 12, 1, 9, 11, 10, 0, 8, 12, 4, 13, 3, 7, 15, 14, 5, 6, 2, 4, 0, 5, 9, 7, 12, 2, 10, 14, 1, 3, 8, 11, 6, 15, 13],
+            c = [5, 14, 7, 0, 9, 2, 11, 4, 13, 6, 15, 8, 1, 10, 3, 12, 6, 11, 3, 7, 0, 13, 5, 10, 14, 15, 8, 12, 4, 9, 1, 2, 15, 5, 1, 3, 7, 14, 6, 9, 11, 8, 12, 2, 10, 0, 4, 13, 8, 6, 4, 1, 3, 11, 15, 0, 5, 12, 2, 13, 9, 7, 10, 14, 12, 15, 10, 4, 1, 5, 8, 7, 6, 2, 13, 14, 0, 3, 9, 11],
+            l = [11, 14, 15, 12, 5, 8, 7, 9, 11, 13, 14, 15, 6, 7, 9, 8, 7, 6, 8, 13, 11, 9, 7, 15, 7, 12, 15, 9, 11, 7, 13, 12, 11, 13, 6, 7, 14, 9, 13, 15, 14, 8, 13, 6, 5, 12, 7, 5, 11, 12, 14, 15, 14, 15, 9, 8, 9, 14, 5, 6, 8, 6, 5, 12, 9, 15, 5, 11, 6, 8, 13, 12, 5, 12, 13, 14, 11, 8, 5, 6],
+            u = [8, 9, 9, 11, 13, 15, 15, 5, 7, 7, 8, 11, 14, 14, 12, 6, 9, 13, 15, 7, 12, 8, 9, 11, 7, 7, 12, 7, 6, 15, 13, 11, 9, 7, 15, 11, 8, 6, 6, 14, 12, 13, 5, 14, 13, 13, 7, 5, 15, 5, 8, 11, 14, 14, 6, 14, 6, 9, 12, 9, 12, 5, 15, 8, 8, 5, 12, 9, 12, 5, 14, 6, 8, 13, 6, 5, 15, 13, 11, 11],
+            d = [0, 1518500249, 1859775393, 2400959708, 2840853838],
+            f = [1352829926, 1548603684, 1836072691, 2053994217, 0];
+
+        function p() {
+            i.call(this, 64), this._a = 1732584193, this._b = 4023233417, this._c = 2562383102, this._d = 271733878, this._e = 3285377520
+        }
+        r(p, i), p.prototype._update = function() {
+            for (var e = a, t = 0; t < 16; ++t) e[t] = this._block.readInt32LE(t * 4);
+            for (var n = this._a | 0, r = this._b | 0, i = this._c | 0, p = this._d | 0, b = this._e | 0, x = this._a | 0, S = this._b | 0, C = this._c | 0, w = this._d | 0, E = this._e | 0, ee = 0; ee < 80; ee += 1) {
+                var D, O;
+                ee < 16 ? (D = h(n, r, i, p, b, e[s[ee]], d[0], l[ee]), O = y(x, S, C, w, E, e[c[ee]], f[0], u[ee])) : ee < 32 ? (D = g(n, r, i, p, b, e[s[ee]], d[1], l[ee]), O = v(x, S, C, w, E, e[c[ee]], f[1], u[ee])) : ee < 48 ? (D = _(n, r, i, p, b, e[s[ee]], d[2], l[ee]), O = _(x, S, C, w, E, e[c[ee]], f[2], u[ee])) : ee < 64 ? (D = v(n, r, i, p, b, e[s[ee]], d[3], l[ee]), O = g(x, S, C, w, E, e[c[ee]], f[3], u[ee])) : (D = y(n, r, i, p, b, e[s[ee]], d[4], l[ee]), O = h(x, S, C, w, E, e[c[ee]], f[4], u[ee])), n = b, b = p, p = m(i, 10), i = r, r = D, x = E, E = w, w = m(C, 10), C = S, S = O
+            }
+            var te = this._b + i + w | 0;
+            this._b = this._c + p + E | 0, this._c = this._d + b + x | 0, this._d = this._e + n + S | 0, this._e = this._a + r + C | 0, this._a = te
+        }, p.prototype._digest = function() {
+            this._block[this._blockOffset++] = 128, this._blockOffset > 56 && (this._block.fill(0, this._blockOffset, 64), this._update(), this._blockOffset = 0), this._block.fill(0, this._blockOffset, 56), this._block.writeUInt32LE(this._length[0], 56), this._block.writeUInt32LE(this._length[1], 60), this._update();
+            var e = n.alloc ? n.alloc(20) : new n(20);
+            return e.writeInt32LE(this._a, 0), e.writeInt32LE(this._b, 4), e.writeInt32LE(this._c, 8), e.writeInt32LE(this._d, 12), e.writeInt32LE(this._e, 16), e
+        };
+
+        function m(e, t) {
+            return e << t | e >>> 32 - t
+        }
+
+        function h(e, t, n, r, i, a, s, c) {
+            return m(e + (t ^ n ^ r) + a + s | 0, c) + i | 0
+        }
+
+        function g(e, t, n, r, i, a, s, c) {
+            return m(e + (t & n | ~t & r) + a + s | 0, c) + i | 0
+        }
+
+        function _(e, t, n, r, i, a, s, c) {
+            return m(e + ((t | ~n) ^ r) + a + s | 0, c) + i | 0
+        }
+
+        function v(e, t, n, r, i, a, s, c) {
+            return m(e + (t & r | n & ~r) + a + s | 0, c) + i | 0
+        }
+
+        function y(e, t, n, r, i, a, s, c) {
+            return m(e + (t ^ (n | ~r)) + a + s | 0, c) + i | 0
+        }
+        t.exports = p
+    })),
+    require_isarray$1 = __commonJSMin(((e, t) => {
+        var n = {}.toString;
+        t.exports = Array.isArray || function(e) {
+            return n.call(e) == `[object Array]`
+        }
+    })),
+    require_typed_array_buffer = __commonJSMin(((e, t) => {
+        var n = require_type(),
+            r = require_call_bound()(`TypedArray.prototype.buffer`, !0),
+            i = require_is_typed_array();
+        t.exports = r || function(e) {
+            if (!i(e)) throw new n(`Not a Typed Array`);
+            return e.buffer
+        }
+    })),
+    require_to_buffer$1 = __commonJSMin(((e, t) => {
+        var n = require_safe_buffer$1().Buffer,
+            r = require_isarray$1(),
+            i = require_typed_array_buffer(),
+            a = ArrayBuffer.isView || function(e) {
+                try {
+                    return i(e), !0
+                } catch {
+                    return !1
+                }
             },
-            [r, n] = i.useState(t),
-            [a, l] = i.useState(t.firstName),
-            [d, s] = i.useState(t.lastName),
-            [c, u] = i.useState(!1),
-            [p, h] = i.useState(""),
-            y = T() && t.lastName.length < 2,
-            x = a.trim() === r.firstName && d.trim() === r.lastName,
-            b = j => {
-                if (j.preventDefault(), c || x) return;
-                if (!a.trim() || !d.trim()) {
-                    h("Please enter your first name and " + (y ? "last initial." : "last name."));
+            s = typeof Uint8Array < `u`,
+            c = typeof ArrayBuffer < `u` && typeof Uint8Array < `u`,
+            l = c && (n.prototype instanceof Uint8Array || n.TYPED_ARRAY_SUPPORT);
+        t.exports = function(e, t) {
+            if (e instanceof n) return e;
+            if (typeof e == `string`) return n.from(e, t);
+            if (c && a(e)) {
+                if (e.byteLength === 0) return n.alloc(0);
+                if (l) {
+                    var i = n.from(e.buffer, e.byteOffset, e.byteLength);
+                    if (i.byteLength === e.byteLength) return i
+                }
+                var u = e instanceof Uint8Array ? e : new Uint8Array(e.buffer, e.byteOffset, e.byteLength),
+                    d = n.from(u);
+                if (d.length === e.byteLength) return d
+            }
+            if (s && e instanceof Uint8Array) return n.from(e);
+            var f = r(e);
+            if (f)
+                for (var p = 0; p < e.length; p += 1) {
+                    var m = e[p];
+                    if (typeof m != `number` || m < 0 || m > 255 || ~~m !== m) throw RangeError(`Array items must be numbers in the range 0-255.`)
+                }
+            if (f || n.isBuffer(e) && e.constructor && typeof e.constructor.isBuffer == `function` && e.constructor.isBuffer(e)) return n.from(e);
+            throw TypeError(`The "data" argument must be a string, an Array, a Buffer, a Uint8Array, or a DataView.`)
+        }
+    })),
+    require_hash$1 = __commonJSMin(((e, t) => {
+        var n = require_safe_buffer$1().Buffer,
+            r = require_to_buffer$1();
+
+        function i(e, t) {
+            this._block = n.alloc(e), this._finalSize = t, this._blockSize = e, this._len = 0
+        }
+        i.prototype.update = function(e, t) {
+            e = r(e, t || `utf8`);
+            for (var n = this._block, i = this._blockSize, a = e.length, s = this._len, c = 0; c < a;) {
+                for (var l = s % i, u = Math.min(a - c, i - l), d = 0; d < u; d++) n[l + d] = e[c + d];
+                s += u, c += u, s % i === 0 && this._update(n)
+            }
+            return this._len += a, this
+        }, i.prototype.digest = function(e) {
+            var t = this._len % this._blockSize;
+            this._block[t] = 128, this._block.fill(0, t + 1), t >= this._finalSize && (this._update(this._block), this._block.fill(0));
+            var n = this._len * 8;
+            if (n <= 4294967295) this._block.writeUInt32BE(n, this._blockSize - 4);
+            else {
+                var r = (n | 0) >>> 0,
+                    i = (n - r) / 4294967296;
+                this._block.writeUInt32BE(i, this._blockSize - 8), this._block.writeUInt32BE(r, this._blockSize - 4)
+            }
+            this._update(this._block);
+            var a = this._hash();
+            return e ? a.toString(e) : a
+        }, i.prototype._update = function() {
+            throw Error(`_update must be implemented by subclass`)
+        }, t.exports = i
+    })),
+    require_sha$1 = __commonJSMin(((e, t) => {
+        var n = require_inherits_browser(),
+            r = require_hash$1(),
+            i = require_safe_buffer$1().Buffer,
+            a = [1518500249, 1859775393, -1894007588, -899497514],
+            s = Array(80);
+
+        function c() {
+            this.init(), this._w = s, r.call(this, 64, 56)
+        }
+        n(c, r), c.prototype.init = function() {
+            return this._a = 1732584193, this._b = 4023233417, this._c = 2562383102, this._d = 271733878, this._e = 3285377520, this
+        };
+
+        function l(e) {
+            return e << 5 | e >>> 27
+        }
+
+        function u(e) {
+            return e << 30 | e >>> 2
+        }
+
+        function d(e, t, n, r) {
+            return e === 0 ? t & n | ~t & r : e === 2 ? t & n | t & r | n & r : t ^ n ^ r
+        }
+        c.prototype._update = function(e) {
+            for (var t = this._w, n = this._a | 0, r = this._b | 0, i = this._c | 0, s = this._d | 0, c = this._e | 0, f = 0; f < 16; ++f) t[f] = e.readInt32BE(f * 4);
+            for (; f < 80; ++f) t[f] = t[f - 3] ^ t[f - 8] ^ t[f - 14] ^ t[f - 16];
+            for (var p = 0; p < 80; ++p) {
+                var m = ~~(p / 20),
+                    h = l(n) + d(m, r, i, s) + c + t[p] + a[m] | 0;
+                c = s, s = i, i = u(r), r = n, n = h
+            }
+            this._a = n + this._a | 0, this._b = r + this._b | 0, this._c = i + this._c | 0, this._d = s + this._d | 0, this._e = c + this._e | 0
+        }, c.prototype._hash = function() {
+            var e = i.allocUnsafe(20);
+            return e.writeInt32BE(this._a | 0, 0), e.writeInt32BE(this._b | 0, 4), e.writeInt32BE(this._c | 0, 8), e.writeInt32BE(this._d | 0, 12), e.writeInt32BE(this._e | 0, 16), e
+        }, t.exports = c
+    })),
+    require_sha1 = __commonJSMin(((e, t) => {
+        var n = require_inherits_browser(),
+            r = require_hash$1(),
+            i = require_safe_buffer$1().Buffer,
+            a = [1518500249, 1859775393, -1894007588, -899497514],
+            s = Array(80);
+
+        function c() {
+            this.init(), this._w = s, r.call(this, 64, 56)
+        }
+        n(c, r), c.prototype.init = function() {
+            return this._a = 1732584193, this._b = 4023233417, this._c = 2562383102, this._d = 271733878, this._e = 3285377520, this
+        };
+
+        function l(e) {
+            return e << 1 | e >>> 31
+        }
+
+        function u(e) {
+            return e << 5 | e >>> 27
+        }
+
+        function d(e) {
+            return e << 30 | e >>> 2
+        }
+
+        function f(e, t, n, r) {
+            return e === 0 ? t & n | ~t & r : e === 2 ? t & n | t & r | n & r : t ^ n ^ r
+        }
+        c.prototype._update = function(e) {
+            for (var t = this._w, n = this._a | 0, r = this._b | 0, i = this._c | 0, s = this._d | 0, c = this._e | 0, p = 0; p < 16; ++p) t[p] = e.readInt32BE(p * 4);
+            for (; p < 80; ++p) t[p] = l(t[p - 3] ^ t[p - 8] ^ t[p - 14] ^ t[p - 16]);
+            for (var m = 0; m < 80; ++m) {
+                var h = ~~(m / 20),
+                    g = u(n) + f(h, r, i, s) + c + t[m] + a[h] | 0;
+                c = s, s = i, i = d(r), r = n, n = g
+            }
+            this._a = n + this._a | 0, this._b = r + this._b | 0, this._c = i + this._c | 0, this._d = s + this._d | 0, this._e = c + this._e | 0
+        }, c.prototype._hash = function() {
+            var e = i.allocUnsafe(20);
+            return e.writeInt32BE(this._a | 0, 0), e.writeInt32BE(this._b | 0, 4), e.writeInt32BE(this._c | 0, 8), e.writeInt32BE(this._d | 0, 12), e.writeInt32BE(this._e | 0, 16), e
+        }, t.exports = c
+    })),
+    require_sha256 = __commonJSMin(((e, t) => {
+        var n = require_inherits_browser(),
+            r = require_hash$1(),
+            i = require_safe_buffer$1().Buffer,
+            a = [1116352408, 1899447441, 3049323471, 3921009573, 961987163, 1508970993, 2453635748, 2870763221, 3624381080, 310598401, 607225278, 1426881987, 1925078388, 2162078206, 2614888103, 3248222580, 3835390401, 4022224774, 264347078, 604807628, 770255983, 1249150122, 1555081692, 1996064986, 2554220882, 2821834349, 2952996808, 3210313671, 3336571891, 3584528711, 113926993, 338241895, 666307205, 773529912, 1294757372, 1396182291, 1695183700, 1986661051, 2177026350, 2456956037, 2730485921, 2820302411, 3259730800, 3345764771, 3516065817, 3600352804, 4094571909, 275423344, 430227734, 506948616, 659060556, 883997877, 958139571, 1322822218, 1537002063, 1747873779, 1955562222, 2024104815, 2227730452, 2361852424, 2428436474, 2756734187, 3204031479, 3329325298],
+            s = Array(64);
+
+        function c() {
+            this.init(), this._w = s, r.call(this, 64, 56)
+        }
+        n(c, r), c.prototype.init = function() {
+            return this._a = 1779033703, this._b = 3144134277, this._c = 1013904242, this._d = 2773480762, this._e = 1359893119, this._f = 2600822924, this._g = 528734635, this._h = 1541459225, this
+        };
+
+        function l(e, t, n) {
+            return n ^ e & (t ^ n)
+        }
+
+        function u(e, t, n) {
+            return e & t | n & (e | t)
+        }
+
+        function d(e) {
+            return (e >>> 2 | e << 30) ^ (e >>> 13 | e << 19) ^ (e >>> 22 | e << 10)
+        }
+
+        function f(e) {
+            return (e >>> 6 | e << 26) ^ (e >>> 11 | e << 21) ^ (e >>> 25 | e << 7)
+        }
+
+        function p(e) {
+            return (e >>> 7 | e << 25) ^ (e >>> 18 | e << 14) ^ e >>> 3
+        }
+
+        function m(e) {
+            return (e >>> 17 | e << 15) ^ (e >>> 19 | e << 13) ^ e >>> 10
+        }
+        c.prototype._update = function(e) {
+            for (var t = this._w, n = this._a | 0, r = this._b | 0, i = this._c | 0, s = this._d | 0, c = this._e | 0, h = this._f | 0, g = this._g | 0, _ = this._h | 0, v = 0; v < 16; ++v) t[v] = e.readInt32BE(v * 4);
+            for (; v < 64; ++v) t[v] = m(t[v - 2]) + t[v - 7] + p(t[v - 15]) + t[v - 16] | 0;
+            for (var y = 0; y < 64; ++y) {
+                var b = _ + f(c) + l(c, h, g) + a[y] + t[y] | 0,
+                    x = d(n) + u(n, r, i) | 0;
+                _ = g, g = h, h = c, c = s + b | 0, s = i, i = r, r = n, n = b + x | 0
+            }
+            this._a = n + this._a | 0, this._b = r + this._b | 0, this._c = i + this._c | 0, this._d = s + this._d | 0, this._e = c + this._e | 0, this._f = h + this._f | 0, this._g = g + this._g | 0, this._h = _ + this._h | 0
+        }, c.prototype._hash = function() {
+            var e = i.allocUnsafe(32);
+            return e.writeInt32BE(this._a, 0), e.writeInt32BE(this._b, 4), e.writeInt32BE(this._c, 8), e.writeInt32BE(this._d, 12), e.writeInt32BE(this._e, 16), e.writeInt32BE(this._f, 20), e.writeInt32BE(this._g, 24), e.writeInt32BE(this._h, 28), e
+        }, t.exports = c
+    })),
+    require_sha224 = __commonJSMin(((e, t) => {
+        var n = require_inherits_browser(),
+            r = require_sha256(),
+            i = require_hash$1(),
+            a = require_safe_buffer$1().Buffer,
+            s = Array(64);
+
+        function c() {
+            this.init(), this._w = s, i.call(this, 64, 56)
+        }
+        n(c, r), c.prototype.init = function() {
+            return this._a = 3238371032, this._b = 914150663, this._c = 812702999, this._d = 4144912697, this._e = 4290775857, this._f = 1750603025, this._g = 1694076839, this._h = 3204075428, this
+        }, c.prototype._hash = function() {
+            var e = a.allocUnsafe(28);
+            return e.writeInt32BE(this._a, 0), e.writeInt32BE(this._b, 4), e.writeInt32BE(this._c, 8), e.writeInt32BE(this._d, 12), e.writeInt32BE(this._e, 16), e.writeInt32BE(this._f, 20), e.writeInt32BE(this._g, 24), e
+        }, t.exports = c
+    })),
+    require_sha512 = __commonJSMin(((e, t) => {
+        var n = require_inherits_browser(),
+            r = require_hash$1(),
+            i = require_safe_buffer$1().Buffer,
+            a = [1116352408, 3609767458, 1899447441, 602891725, 3049323471, 3964484399, 3921009573, 2173295548, 961987163, 4081628472, 1508970993, 3053834265, 2453635748, 2937671579, 2870763221, 3664609560, 3624381080, 2734883394, 310598401, 1164996542, 607225278, 1323610764, 1426881987, 3590304994, 1925078388, 4068182383, 2162078206, 991336113, 2614888103, 633803317, 3248222580, 3479774868, 3835390401, 2666613458, 4022224774, 944711139, 264347078, 2341262773, 604807628, 2007800933, 770255983, 1495990901, 1249150122, 1856431235, 1555081692, 3175218132, 1996064986, 2198950837, 2554220882, 3999719339, 2821834349, 766784016, 2952996808, 2566594879, 3210313671, 3203337956, 3336571891, 1034457026, 3584528711, 2466948901, 113926993, 3758326383, 338241895, 168717936, 666307205, 1188179964, 773529912, 1546045734, 1294757372, 1522805485, 1396182291, 2643833823, 1695183700, 2343527390, 1986661051, 1014477480, 2177026350, 1206759142, 2456956037, 344077627, 2730485921, 1290863460, 2820302411, 3158454273, 3259730800, 3505952657, 3345764771, 106217008, 3516065817, 3606008344, 3600352804, 1432725776, 4094571909, 1467031594, 275423344, 851169720, 430227734, 3100823752, 506948616, 1363258195, 659060556, 3750685593, 883997877, 3785050280, 958139571, 3318307427, 1322822218, 3812723403, 1537002063, 2003034995, 1747873779, 3602036899, 1955562222, 1575990012, 2024104815, 1125592928, 2227730452, 2716904306, 2361852424, 442776044, 2428436474, 593698344, 2756734187, 3733110249, 3204031479, 2999351573, 3329325298, 3815920427, 3391569614, 3928383900, 3515267271, 566280711, 3940187606, 3454069534, 4118630271, 4000239992, 116418474, 1914138554, 174292421, 2731055270, 289380356, 3203993006, 460393269, 320620315, 685471733, 587496836, 852142971, 1086792851, 1017036298, 365543100, 1126000580, 2618297676, 1288033470, 3409855158, 1501505948, 4234509866, 1607167915, 987167468, 1816402316, 1246189591],
+            s = Array(160);
+
+        function c() {
+            this.init(), this._w = s, r.call(this, 128, 112)
+        }
+        n(c, r), c.prototype.init = function() {
+            return this._ah = 1779033703, this._bh = 3144134277, this._ch = 1013904242, this._dh = 2773480762, this._eh = 1359893119, this._fh = 2600822924, this._gh = 528734635, this._hh = 1541459225, this._al = 4089235720, this._bl = 2227873595, this._cl = 4271175723, this._dl = 1595750129, this._el = 2917565137, this._fl = 725511199, this._gl = 4215389547, this._hl = 327033209, this
+        };
+
+        function l(e, t, n) {
+            return n ^ e & (t ^ n)
+        }
+
+        function u(e, t, n) {
+            return e & t | n & (e | t)
+        }
+
+        function d(e, t) {
+            return (e >>> 28 | t << 4) ^ (t >>> 2 | e << 30) ^ (t >>> 7 | e << 25)
+        }
+
+        function f(e, t) {
+            return (e >>> 14 | t << 18) ^ (e >>> 18 | t << 14) ^ (t >>> 9 | e << 23)
+        }
+
+        function p(e, t) {
+            return (e >>> 1 | t << 31) ^ (e >>> 8 | t << 24) ^ e >>> 7
+        }
+
+        function m(e, t) {
+            return (e >>> 1 | t << 31) ^ (e >>> 8 | t << 24) ^ (e >>> 7 | t << 25)
+        }
+
+        function h(e, t) {
+            return (e >>> 19 | t << 13) ^ (t >>> 29 | e << 3) ^ e >>> 6
+        }
+
+        function g(e, t) {
+            return (e >>> 19 | t << 13) ^ (t >>> 29 | e << 3) ^ (e >>> 6 | t << 26)
+        }
+
+        function _(e, t) {
+            return +(e >>> 0 < t >>> 0)
+        }
+        c.prototype._update = function(e) {
+            for (var t = this._w, n = this._ah | 0, r = this._bh | 0, i = this._ch | 0, s = this._dh | 0, c = this._eh | 0, v = this._fh | 0, y = this._gh | 0, b = this._hh | 0, x = this._al | 0, S = this._bl | 0, C = this._cl | 0, w = this._dl | 0, E = this._el | 0, ee = this._fl | 0, D = this._gl | 0, O = this._hl | 0, te = 0; te < 32; te += 2) t[te] = e.readInt32BE(te * 4), t[te + 1] = e.readInt32BE(te * 4 + 4);
+            for (; te < 160; te += 2) {
+                var k = t[te - 30],
+                    A = t[te - 30 + 1],
+                    ne = p(k, A),
+                    j = m(A, k);
+                k = t[te - 4], A = t[te - 4 + 1];
+                var M = h(k, A),
+                    re = g(A, k),
+                    N = t[te - 14],
+                    P = t[te - 14 + 1],
+                    ie = t[te - 32],
+                    I = t[te - 32 + 1],
+                    L = j + P | 0,
+                    ae = ne + N + _(L, j) | 0;
+                L = L + re | 0, ae = ae + M + _(L, re) | 0, L = L + I | 0, ae = ae + ie + _(L, I) | 0, t[te] = ae, t[te + 1] = L
+            }
+            for (var R = 0; R < 160; R += 2) {
+                ae = t[R], L = t[R + 1];
+                var z = u(n, r, i),
+                    oe = u(x, S, C),
+                    B = d(n, x),
+                    V = d(x, n),
+                    se = f(c, E),
+                    H = f(E, c),
+                    U = a[R],
+                    ce = a[R + 1],
+                    W = l(c, v, y),
+                    G = l(E, ee, D),
+                    le = O + H | 0,
+                    K = b + se + _(le, O) | 0;
+                le = le + G | 0, K = K + W + _(le, G) | 0, le = le + ce | 0, K = K + U + _(le, ce) | 0, le = le + L | 0, K = K + ae + _(le, L) | 0;
+                var q = V + oe | 0,
+                    ue = B + z + _(q, V) | 0;
+                b = y, O = D, y = v, D = ee, v = c, ee = E, E = w + le | 0, c = s + K + _(E, w) | 0, s = i, w = C, i = r, C = S, r = n, S = x, x = le + q | 0, n = K + ue + _(x, le) | 0
+            }
+            this._al = this._al + x | 0, this._bl = this._bl + S | 0, this._cl = this._cl + C | 0, this._dl = this._dl + w | 0, this._el = this._el + E | 0, this._fl = this._fl + ee | 0, this._gl = this._gl + D | 0, this._hl = this._hl + O | 0, this._ah = this._ah + n + _(this._al, x) | 0, this._bh = this._bh + r + _(this._bl, S) | 0, this._ch = this._ch + i + _(this._cl, C) | 0, this._dh = this._dh + s + _(this._dl, w) | 0, this._eh = this._eh + c + _(this._el, E) | 0, this._fh = this._fh + v + _(this._fl, ee) | 0, this._gh = this._gh + y + _(this._gl, D) | 0, this._hh = this._hh + b + _(this._hl, O) | 0
+        }, c.prototype._hash = function() {
+            var e = i.allocUnsafe(64);
+
+            function t(t, n, r) {
+                e.writeInt32BE(t, r), e.writeInt32BE(n, r + 4)
+            }
+            return t(this._ah, this._al, 0), t(this._bh, this._bl, 8), t(this._ch, this._cl, 16), t(this._dh, this._dl, 24), t(this._eh, this._el, 32), t(this._fh, this._fl, 40), t(this._gh, this._gl, 48), t(this._hh, this._hl, 56), e
+        }, t.exports = c
+    })),
+    require_sha384 = __commonJSMin(((e, t) => {
+        var n = require_inherits_browser(),
+            r = require_sha512(),
+            i = require_hash$1(),
+            a = require_safe_buffer$1().Buffer,
+            s = Array(160);
+
+        function c() {
+            this.init(), this._w = s, i.call(this, 128, 112)
+        }
+        n(c, r), c.prototype.init = function() {
+            return this._ah = 3418070365, this._bh = 1654270250, this._ch = 2438529370, this._dh = 355462360, this._eh = 1731405415, this._fh = 2394180231, this._gh = 3675008525, this._hh = 1203062813, this._al = 3238371032, this._bl = 914150663, this._cl = 812702999, this._dl = 4144912697, this._el = 4290775857, this._fl = 1750603025, this._gl = 1694076839, this._hl = 3204075428, this
+        }, c.prototype._hash = function() {
+            var e = a.allocUnsafe(48);
+
+            function t(t, n, r) {
+                e.writeInt32BE(t, r), e.writeInt32BE(n, r + 4)
+            }
+            return t(this._ah, this._al, 0), t(this._bh, this._bl, 8), t(this._ch, this._cl, 16), t(this._dh, this._dl, 24), t(this._eh, this._el, 32), t(this._fh, this._fl, 40), e
+        }, t.exports = c
+    })),
+    require_sha_js = __commonJSMin(((e, t) => {
+        t.exports = function(e) {
+            var n = e.toLowerCase(),
+                r = t.exports[n];
+            if (!r) throw Error(n + ` is not supported (we accept pull requests)`);
+            return new r
+        }, t.exports.sha = require_sha$1(), t.exports.sha1 = require_sha1(), t.exports.sha224 = require_sha224(), t.exports.sha256 = require_sha256(), t.exports.sha384 = require_sha384(), t.exports.sha512 = require_sha512()
+    })),
+    require_cipher_base = __commonJSMin(((e, t) => {
+        var n = require_safe_buffer$1().Buffer,
+            r = require_stream_browserify().Transform,
+            i = require_string_decoder().StringDecoder,
+            a = require_inherits_browser();
+
+        function s(e) {
+            r.call(this), this.hashMode = typeof e == `string`, this.hashMode ? this[e] = this._finalOrDigest : this.final = this._finalOrDigest, this._final && (this.__final = this._final, this._final = null), this._decoder = null, this._encoding = null
+        }
+        a(s, r);
+        var c = typeof Uint8Array < `u`,
+            l = typeof ArrayBuffer < `u` && typeof Uint8Array < `u` && ArrayBuffer.isView && (n.prototype instanceof Uint8Array || n.TYPED_ARRAY_SUPPORT);
+
+        function u(e, t) {
+            if (e instanceof n) return e;
+            if (typeof e == `string`) return n.from(e, t);
+            if (l && ArrayBuffer.isView(e)) {
+                if (e.byteLength === 0) return n.alloc(0);
+                var r = n.from(e.buffer, e.byteOffset, e.byteLength);
+                if (r.byteLength === e.byteLength) return r
+            }
+            if (c && e instanceof Uint8Array || n.isBuffer(e) && e.constructor && typeof e.constructor.isBuffer == `function` && e.constructor.isBuffer(e)) return n.from(e);
+            throw TypeError(`The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView.`)
+        }
+        s.prototype.update = function(e, t, n) {
+            var r = u(e, t),
+                i = this._update(r);
+            return this.hashMode ? this : (n && (i = this._toString(i, n)), i)
+        }, s.prototype.setAutoPadding = function() {}, s.prototype.getAuthTag = function() {
+            throw Error(`trying to get auth tag in unsupported state`)
+        }, s.prototype.setAuthTag = function() {
+            throw Error(`trying to set auth tag in unsupported state`)
+        }, s.prototype.setAAD = function() {
+            throw Error(`trying to set aad in unsupported state`)
+        }, s.prototype._transform = function(e, t, n) {
+            var r;
+            try {
+                this.hashMode ? this._update(e) : this.push(this._update(e))
+            } catch (e) {
+                r = e
+            } finally {
+                n(r)
+            }
+        }, s.prototype._flush = function(e) {
+            var t;
+            try {
+                this.push(this.__final())
+            } catch (e) {
+                t = e
+            }
+            e(t)
+        }, s.prototype._finalOrDigest = function(e) {
+            var t = this.__final() || n.alloc(0);
+            return e && (t = this._toString(t, e, !0)), t
+        }, s.prototype._toString = function(e, t, n) {
+            if (this._decoder || (this._decoder = new i(t), this._encoding = t), this._encoding !== t) throw Error(`can’t switch encodings`);
+            var r = this._decoder.write(e);
+            return n && (r += this._decoder.end()), r
+        }, t.exports = s
+    })),
+    require_browser$10 = __commonJSMin(((e, t) => {
+        var n = require_inherits_browser(),
+            r = require_md5_js(),
+            i = require_ripemd160$1(),
+            a = require_sha_js(),
+            s = require_cipher_base();
+
+        function c(e) {
+            s.call(this, `digest`), this._hash = e
+        }
+        n(c, s), c.prototype._update = function(e) {
+            this._hash.update(e)
+        }, c.prototype._final = function() {
+            return this._hash.digest()
+        }, t.exports = function(e) {
+            return e = e.toLowerCase(), e === `md5` ? new r : e === `rmd160` || e === `ripemd160` ? new i : new c(a(e))
+        }
+    })),
+    require_legacy = __commonJSMin(((e, t) => {
+        var n = require_inherits_browser(),
+            r = require_safe_buffer$1().Buffer,
+            i = require_cipher_base(),
+            a = r.alloc(128),
+            s = 64;
+
+        function c(e, t) {
+            i.call(this, `digest`), typeof t == `string` && (t = r.from(t)), this._alg = e, this._key = t, t.length > s ? t = e(t) : t.length < s && (t = r.concat([t, a], s));
+            for (var n = this._ipad = r.allocUnsafe(s), c = this._opad = r.allocUnsafe(s), l = 0; l < s; l++) n[l] = t[l] ^ 54, c[l] = t[l] ^ 92;
+            this._hash = [n]
+        }
+        n(c, i), c.prototype._update = function(e) {
+            this._hash.push(e)
+        }, c.prototype._final = function() {
+            var e = this._alg(r.concat(this._hash));
+            return this._alg(r.concat([this._opad, e]))
+        }, t.exports = c
+    })),
+    require_md5$1 = __commonJSMin(((e, t) => {
+        var n = require_md5_js();
+        t.exports = function(e) {
+            return new n().update(e).digest()
+        }
+    })),
+    require_browser$9 = __commonJSMin(((e, t) => {
+        var n = require_inherits_browser(),
+            r = require_legacy(),
+            i = require_cipher_base(),
+            a = require_safe_buffer$1().Buffer,
+            s = require_md5$1(),
+            c = require_ripemd160$1(),
+            l = require_sha_js(),
+            u = a.alloc(128);
+
+        function d(e, t) {
+            i.call(this, `digest`), typeof t == `string` && (t = a.from(t));
+            var n = e === `sha512` || e === `sha384` ? 128 : 64;
+            this._alg = e, this._key = t, t.length > n ? t = (e === `rmd160` ? new c : l(e)).update(t).digest() : t.length < n && (t = a.concat([t, u], n));
+            for (var r = this._ipad = a.allocUnsafe(n), s = this._opad = a.allocUnsafe(n), d = 0; d < n; d++) r[d] = t[d] ^ 54, s[d] = t[d] ^ 92;
+            this._hash = e === `rmd160` ? new c : l(e), this._hash.update(r)
+        }
+        n(d, i), d.prototype._update = function(e) {
+            this._hash.update(e)
+        }, d.prototype._final = function() {
+            var e = this._hash.digest();
+            return (this._alg === `rmd160` ? new c : l(this._alg)).update(this._opad).update(e).digest()
+        }, t.exports = function(e, t) {
+            return e = e.toLowerCase(), e === `rmd160` || e === `ripemd160` ? new d(`rmd160`, t) : e === `md5` ? new r(s, t) : new d(e, t)
+        }
+    })),
+    algorithms_exports = __exportAll({
+        DSA: () => DSA,
+        default: () => algorithms_default,
+        md5WithRSAEncryption: () => md5WithRSAEncryption,
+        ripemd160WithRSA: () => ripemd160WithRSA,
+        sha224: () => sha224,
+        sha224WithRSAEncryption: () => sha224WithRSAEncryption,
+        sha256: () => sha256,
+        sha256WithRSAEncryption: () => sha256WithRSAEncryption,
+        sha384: () => sha384,
+        sha384WithRSAEncryption: () => sha384WithRSAEncryption,
+        sha512: () => sha512,
+        sha512WithRSAEncryption: () => sha512WithRSAEncryption
+    }),
+    sha224WithRSAEncryption, sha256WithRSAEncryption, sha384WithRSAEncryption, sha512WithRSAEncryption, sha256, sha224, sha384, sha512, DSA, ripemd160WithRSA, md5WithRSAEncryption, algorithms_default, init_algorithms = __esmMin((() => {
+        sha224WithRSAEncryption = {
+            sign: `rsa`,
+            hash: `sha224`,
+            id: `302d300d06096086480165030402040500041c`
+        }, sha256WithRSAEncryption = {
+            sign: `rsa`,
+            hash: `sha256`,
+            id: `3031300d060960864801650304020105000420`
+        }, sha384WithRSAEncryption = {
+            sign: `rsa`,
+            hash: `sha384`,
+            id: `3041300d060960864801650304020205000430`
+        }, sha512WithRSAEncryption = {
+            sign: `rsa`,
+            hash: `sha512`,
+            id: `3051300d060960864801650304020305000440`
+        }, sha256 = {
+            sign: `ecdsa`,
+            hash: `sha256`,
+            id: ``
+        }, sha224 = {
+            sign: `ecdsa`,
+            hash: `sha224`,
+            id: ``
+        }, sha384 = {
+            sign: `ecdsa`,
+            hash: `sha384`,
+            id: ``
+        }, sha512 = {
+            sign: `ecdsa`,
+            hash: `sha512`,
+            id: ``
+        }, DSA = {
+            sign: `dsa`,
+            hash: `sha1`,
+            id: ``
+        }, ripemd160WithRSA = {
+            sign: `rsa`,
+            hash: `rmd160`,
+            id: `3021300906052b2403020105000414`
+        }, md5WithRSAEncryption = {
+            sign: `rsa`,
+            hash: `md5`,
+            id: `3020300c06082a864886f70d020505000410`
+        }, algorithms_default = {
+            sha224WithRSAEncryption,
+            "RSA-SHA224": {
+                sign: `ecdsa/rsa`,
+                hash: `sha224`,
+                id: `302d300d06096086480165030402040500041c`
+            },
+            sha256WithRSAEncryption,
+            "RSA-SHA256": {
+                sign: `ecdsa/rsa`,
+                hash: `sha256`,
+                id: `3031300d060960864801650304020105000420`
+            },
+            sha384WithRSAEncryption,
+            "RSA-SHA384": {
+                sign: `ecdsa/rsa`,
+                hash: `sha384`,
+                id: `3041300d060960864801650304020205000430`
+            },
+            sha512WithRSAEncryption,
+            "RSA-SHA512": {
+                sign: `ecdsa/rsa`,
+                hash: `sha512`,
+                id: `3051300d060960864801650304020305000440`
+            },
+            "RSA-SHA1": {
+                sign: `rsa`,
+                hash: `sha1`,
+                id: `3021300906052b0e03021a05000414`
+            },
+            "ecdsa-with-SHA1": {
+                sign: `ecdsa`,
+                hash: `sha1`,
+                id: ``
+            },
+            sha256,
+            sha224,
+            sha384,
+            sha512,
+            "DSA-SHA": {
+                sign: `dsa`,
+                hash: `sha1`,
+                id: ``
+            },
+            "DSA-SHA1": {
+                sign: `dsa`,
+                hash: `sha1`,
+                id: ``
+            },
+            DSA,
+            "DSA-WITH-SHA224": {
+                sign: `dsa`,
+                hash: `sha224`,
+                id: ``
+            },
+            "DSA-SHA224": {
+                sign: `dsa`,
+                hash: `sha224`,
+                id: ``
+            },
+            "DSA-WITH-SHA256": {
+                sign: `dsa`,
+                hash: `sha256`,
+                id: ``
+            },
+            "DSA-SHA256": {
+                sign: `dsa`,
+                hash: `sha256`,
+                id: ``
+            },
+            "DSA-WITH-SHA384": {
+                sign: `dsa`,
+                hash: `sha384`,
+                id: ``
+            },
+            "DSA-SHA384": {
+                sign: `dsa`,
+                hash: `sha384`,
+                id: ``
+            },
+            "DSA-WITH-SHA512": {
+                sign: `dsa`,
+                hash: `sha512`,
+                id: ``
+            },
+            "DSA-SHA512": {
+                sign: `dsa`,
+                hash: `sha512`,
+                id: ``
+            },
+            "DSA-RIPEMD160": {
+                sign: `dsa`,
+                hash: `rmd160`,
+                id: ``
+            },
+            ripemd160WithRSA,
+            "RSA-RIPEMD160": {
+                sign: `rsa`,
+                hash: `rmd160`,
+                id: `3021300906052b2403020105000414`
+            },
+            md5WithRSAEncryption,
+            "RSA-MD5": {
+                sign: `rsa`,
+                hash: `md5`,
+                id: `3020300c06082a864886f70d020505000410`
+            }
+        }
+    })),
+    require_algos = __commonJSMin(((e, t) => {
+        t.exports = (init_algorithms(), __toCommonJS(algorithms_exports).default)
+    })),
+    require_precondition = __commonJSMin(((e, t) => {
+        var n = 2 ** 30 - 1;
+        t.exports = function(e, t) {
+            if (typeof e != `number`) throw TypeError(`Iterations not a number`);
+            if (e < 0) throw TypeError(`Bad iterations`);
+            if (typeof t != `number`) throw TypeError(`Key length not a number`);
+            if (t < 0 || t > n || t !== t) throw TypeError(`Bad key length`)
+        }
+    })),
+    require_default_encoding = __commonJSMin(((e, t) => {
+        init_dist(), init_dist$2(), t.exports = global.process && global.process.browser ? `utf-8` : global.process && global.process.version ? parseInt(process$1.version.split(`.`)[0].slice(1), 10) >= 6 ? `utf-8` : `binary` : `utf-8`
+    })),
+    require_make_hash = __commonJSMin(((e, t) => {
+        init_dist$1();
+        var n = 4,
+            r = new Buffer(n);
+        r.fill(0);
+        var i = 8,
+            a = 16;
+
+        function s(e) {
+            if (e.length % n !== 0) {
+                var t = e.length + (n - e.length % n);
+                e = Buffer.concat([e, r], t)
+            }
+            for (var i = Array(e.length >>> 2), a = 0, s = 0; a < e.length; a += n, s++) i[s] = e.readInt32LE(a);
+            return i
+        }
+        t.exports = function(e, t) {
+            var n = t(s(e), e.length * i);
+            e = new Buffer(a);
+            for (var r = 0; r < n.length; r++) e.writeInt32LE(n[r], r << 2, !0);
+            return e
+        }
+    })),
+    require_md5 = __commonJSMin(((e, t) => {
+        var n = require_make_hash();
+
+        function r(e, t) {
+            e[t >> 5] |= 128 << t % 32, e[(t + 64 >>> 9 << 4) + 14] = t;
+            for (var n = 1732584193, r = -271733879, i = -1732584194, d = 271733878, f = 0; f < e.length; f += 16) {
+                var p = n,
+                    m = r,
+                    h = i,
+                    g = d;
+                n = a(n, r, i, d, e[f + 0], 7, -680876936), d = a(d, n, r, i, e[f + 1], 12, -389564586), i = a(i, d, n, r, e[f + 2], 17, 606105819), r = a(r, i, d, n, e[f + 3], 22, -1044525330), n = a(n, r, i, d, e[f + 4], 7, -176418897), d = a(d, n, r, i, e[f + 5], 12, 1200080426), i = a(i, d, n, r, e[f + 6], 17, -1473231341), r = a(r, i, d, n, e[f + 7], 22, -45705983), n = a(n, r, i, d, e[f + 8], 7, 1770035416), d = a(d, n, r, i, e[f + 9], 12, -1958414417), i = a(i, d, n, r, e[f + 10], 17, -42063), r = a(r, i, d, n, e[f + 11], 22, -1990404162), n = a(n, r, i, d, e[f + 12], 7, 1804603682), d = a(d, n, r, i, e[f + 13], 12, -40341101), i = a(i, d, n, r, e[f + 14], 17, -1502002290), r = a(r, i, d, n, e[f + 15], 22, 1236535329), n = s(n, r, i, d, e[f + 1], 5, -165796510), d = s(d, n, r, i, e[f + 6], 9, -1069501632), i = s(i, d, n, r, e[f + 11], 14, 643717713), r = s(r, i, d, n, e[f + 0], 20, -373897302), n = s(n, r, i, d, e[f + 5], 5, -701558691), d = s(d, n, r, i, e[f + 10], 9, 38016083), i = s(i, d, n, r, e[f + 15], 14, -660478335), r = s(r, i, d, n, e[f + 4], 20, -405537848), n = s(n, r, i, d, e[f + 9], 5, 568446438), d = s(d, n, r, i, e[f + 14], 9, -1019803690), i = s(i, d, n, r, e[f + 3], 14, -187363961), r = s(r, i, d, n, e[f + 8], 20, 1163531501), n = s(n, r, i, d, e[f + 13], 5, -1444681467), d = s(d, n, r, i, e[f + 2], 9, -51403784), i = s(i, d, n, r, e[f + 7], 14, 1735328473), r = s(r, i, d, n, e[f + 12], 20, -1926607734), n = c(n, r, i, d, e[f + 5], 4, -378558), d = c(d, n, r, i, e[f + 8], 11, -2022574463), i = c(i, d, n, r, e[f + 11], 16, 1839030562), r = c(r, i, d, n, e[f + 14], 23, -35309556), n = c(n, r, i, d, e[f + 1], 4, -1530992060), d = c(d, n, r, i, e[f + 4], 11, 1272893353), i = c(i, d, n, r, e[f + 7], 16, -155497632), r = c(r, i, d, n, e[f + 10], 23, -1094730640), n = c(n, r, i, d, e[f + 13], 4, 681279174), d = c(d, n, r, i, e[f + 0], 11, -358537222), i = c(i, d, n, r, e[f + 3], 16, -722521979), r = c(r, i, d, n, e[f + 6], 23, 76029189), n = c(n, r, i, d, e[f + 9], 4, -640364487), d = c(d, n, r, i, e[f + 12], 11, -421815835), i = c(i, d, n, r, e[f + 15], 16, 530742520), r = c(r, i, d, n, e[f + 2], 23, -995338651), n = l(n, r, i, d, e[f + 0], 6, -198630844), d = l(d, n, r, i, e[f + 7], 10, 1126891415), i = l(i, d, n, r, e[f + 14], 15, -1416354905), r = l(r, i, d, n, e[f + 5], 21, -57434055), n = l(n, r, i, d, e[f + 12], 6, 1700485571), d = l(d, n, r, i, e[f + 3], 10, -1894986606), i = l(i, d, n, r, e[f + 10], 15, -1051523), r = l(r, i, d, n, e[f + 1], 21, -2054922799), n = l(n, r, i, d, e[f + 8], 6, 1873313359), d = l(d, n, r, i, e[f + 15], 10, -30611744), i = l(i, d, n, r, e[f + 6], 15, -1560198380), r = l(r, i, d, n, e[f + 13], 21, 1309151649), n = l(n, r, i, d, e[f + 4], 6, -145523070), d = l(d, n, r, i, e[f + 11], 10, -1120210379), i = l(i, d, n, r, e[f + 2], 15, 718787259), r = l(r, i, d, n, e[f + 9], 21, -343485551), n = u(n, p), r = u(r, m), i = u(i, h), d = u(d, g)
+            }
+            return [n, r, i, d]
+        }
+
+        function i(e, t, n, r, i, a) {
+            return u(d(u(u(t, e), u(r, a)), i), n)
+        }
+
+        function a(e, t, n, r, a, s, c) {
+            return i(t & n | ~t & r, e, t, a, s, c)
+        }
+
+        function s(e, t, n, r, a, s, c) {
+            return i(t & r | n & ~r, e, t, a, s, c)
+        }
+
+        function c(e, t, n, r, a, s, c) {
+            return i(t ^ n ^ r, e, t, a, s, c)
+        }
+
+        function l(e, t, n, r, a, s, c) {
+            return i(n ^ (t | ~r), e, t, a, s, c)
+        }
+
+        function u(e, t) {
+            var n = (e & 65535) + (t & 65535);
+            return (e >> 16) + (t >> 16) + (n >> 16) << 16 | n & 65535
+        }
+
+        function d(e, t) {
+            return e << t | e >>> 32 - t
+        }
+        t.exports = function(e) {
+            return n(e, r)
+        }
+    })),
+    require_hash_base = __commonJSMin(((e, t) => {
+        init_dist$1();
+        var n = require_stream_browserify().Transform,
+            r = require_inherits_browser();
+
+        function i(e) {
+            n.call(this), this._block = new Buffer(e), this._blockSize = e, this._blockOffset = 0, this._length = [0, 0, 0, 0], this._finalized = !1
+        }
+        r(i, n), i.prototype._transform = function(e, t, n) {
+            var r = null;
+            try {
+                t !== `buffer` && (e = new Buffer(e, t)), this.update(e)
+            } catch (e) {
+                r = e
+            }
+            n(r)
+        }, i.prototype._flush = function(e) {
+            var t = null;
+            try {
+                this.push(this._digest())
+            } catch (e) {
+                t = e
+            }
+            e(t)
+        }, i.prototype.update = function(e, t) {
+            if (!Buffer.isBuffer(e) && typeof e != `string`) throw TypeError(`Data must be a string or a buffer`);
+            if (this._finalized) throw Error(`Digest already called`);
+            Buffer.isBuffer(e) || (e = new Buffer(e, t || `binary`));
+            for (var n = this._block, r = 0; this._blockOffset + e.length - r >= this._blockSize;) {
+                for (var i = this._blockOffset; i < this._blockSize;) n[i++] = e[r++];
+                this._update(), this._blockOffset = 0
+            }
+            for (; r < e.length;) n[this._blockOffset++] = e[r++];
+            for (var a = 0, s = e.length * 8; s > 0; ++a) this._length[a] += s, s = this._length[a] / 4294967296 | 0, s > 0 && (this._length[a] -= 4294967296 * s);
+            return this
+        }, i.prototype._update = function(e) {
+            throw Error(`_update is not implemented`)
+        }, i.prototype.digest = function(e) {
+            if (this._finalized) throw Error(`Digest already called`);
+            this._finalized = !0;
+            var t = this._digest();
+            return e !== void 0 && (t = t.toString(e)), t
+        }, i.prototype._digest = function() {
+            throw Error(`_digest is not implemented`)
+        }, t.exports = i
+    })),
+    require_ripemd160 = __commonJSMin(((e, t) => {
+        init_dist$1();
+        var n = require_inherits_browser(),
+            r = require_hash_base();
+
+        function i() {
+            r.call(this, 64), this._a = 1732584193, this._b = 4023233417, this._c = 2562383102, this._d = 271733878, this._e = 3285377520
+        }
+        n(i, r), i.prototype._update = function() {
+            for (var e = Array(16), t = 0; t < 16; ++t) e[t] = this._block.readInt32LE(t * 4);
+            var n = this._a,
+                r = this._b,
+                i = this._c,
+                f = this._d,
+                p = this._e;
+            n = s(n, r, i, f, p, e[0], 0, 11), i = a(i, 10), p = s(p, n, r, i, f, e[1], 0, 14), r = a(r, 10), f = s(f, p, n, r, i, e[2], 0, 15), n = a(n, 10), i = s(i, f, p, n, r, e[3], 0, 12), p = a(p, 10), r = s(r, i, f, p, n, e[4], 0, 5), f = a(f, 10), n = s(n, r, i, f, p, e[5], 0, 8), i = a(i, 10), p = s(p, n, r, i, f, e[6], 0, 7), r = a(r, 10), f = s(f, p, n, r, i, e[7], 0, 9), n = a(n, 10), i = s(i, f, p, n, r, e[8], 0, 11), p = a(p, 10), r = s(r, i, f, p, n, e[9], 0, 13), f = a(f, 10), n = s(n, r, i, f, p, e[10], 0, 14), i = a(i, 10), p = s(p, n, r, i, f, e[11], 0, 15), r = a(r, 10), f = s(f, p, n, r, i, e[12], 0, 6), n = a(n, 10), i = s(i, f, p, n, r, e[13], 0, 7), p = a(p, 10), r = s(r, i, f, p, n, e[14], 0, 9), f = a(f, 10), n = s(n, r, i, f, p, e[15], 0, 8), i = a(i, 10), p = c(p, n, r, i, f, e[7], 1518500249, 7), r = a(r, 10), f = c(f, p, n, r, i, e[4], 1518500249, 6), n = a(n, 10), i = c(i, f, p, n, r, e[13], 1518500249, 8), p = a(p, 10), r = c(r, i, f, p, n, e[1], 1518500249, 13), f = a(f, 10), n = c(n, r, i, f, p, e[10], 1518500249, 11), i = a(i, 10), p = c(p, n, r, i, f, e[6], 1518500249, 9), r = a(r, 10), f = c(f, p, n, r, i, e[15], 1518500249, 7), n = a(n, 10), i = c(i, f, p, n, r, e[3], 1518500249, 15), p = a(p, 10), r = c(r, i, f, p, n, e[12], 1518500249, 7), f = a(f, 10), n = c(n, r, i, f, p, e[0], 1518500249, 12), i = a(i, 10), p = c(p, n, r, i, f, e[9], 1518500249, 15), r = a(r, 10), f = c(f, p, n, r, i, e[5], 1518500249, 9), n = a(n, 10), i = c(i, f, p, n, r, e[2], 1518500249, 11), p = a(p, 10), r = c(r, i, f, p, n, e[14], 1518500249, 7), f = a(f, 10), n = c(n, r, i, f, p, e[11], 1518500249, 13), i = a(i, 10), p = c(p, n, r, i, f, e[8], 1518500249, 12), r = a(r, 10), f = l(f, p, n, r, i, e[3], 1859775393, 11), n = a(n, 10), i = l(i, f, p, n, r, e[10], 1859775393, 13), p = a(p, 10), r = l(r, i, f, p, n, e[14], 1859775393, 6), f = a(f, 10), n = l(n, r, i, f, p, e[4], 1859775393, 7), i = a(i, 10), p = l(p, n, r, i, f, e[9], 1859775393, 14), r = a(r, 10), f = l(f, p, n, r, i, e[15], 1859775393, 9), n = a(n, 10), i = l(i, f, p, n, r, e[8], 1859775393, 13), p = a(p, 10), r = l(r, i, f, p, n, e[1], 1859775393, 15), f = a(f, 10), n = l(n, r, i, f, p, e[2], 1859775393, 14), i = a(i, 10), p = l(p, n, r, i, f, e[7], 1859775393, 8), r = a(r, 10), f = l(f, p, n, r, i, e[0], 1859775393, 13), n = a(n, 10), i = l(i, f, p, n, r, e[6], 1859775393, 6), p = a(p, 10), r = l(r, i, f, p, n, e[13], 1859775393, 5), f = a(f, 10), n = l(n, r, i, f, p, e[11], 1859775393, 12), i = a(i, 10), p = l(p, n, r, i, f, e[5], 1859775393, 7), r = a(r, 10), f = l(f, p, n, r, i, e[12], 1859775393, 5), n = a(n, 10), i = u(i, f, p, n, r, e[1], 2400959708, 11), p = a(p, 10), r = u(r, i, f, p, n, e[9], 2400959708, 12), f = a(f, 10), n = u(n, r, i, f, p, e[11], 2400959708, 14), i = a(i, 10), p = u(p, n, r, i, f, e[10], 2400959708, 15), r = a(r, 10), f = u(f, p, n, r, i, e[0], 2400959708, 14), n = a(n, 10), i = u(i, f, p, n, r, e[8], 2400959708, 15), p = a(p, 10), r = u(r, i, f, p, n, e[12], 2400959708, 9), f = a(f, 10), n = u(n, r, i, f, p, e[4], 2400959708, 8), i = a(i, 10), p = u(p, n, r, i, f, e[13], 2400959708, 9), r = a(r, 10), f = u(f, p, n, r, i, e[3], 2400959708, 14), n = a(n, 10), i = u(i, f, p, n, r, e[7], 2400959708, 5), p = a(p, 10), r = u(r, i, f, p, n, e[15], 2400959708, 6), f = a(f, 10), n = u(n, r, i, f, p, e[14], 2400959708, 8), i = a(i, 10), p = u(p, n, r, i, f, e[5], 2400959708, 6), r = a(r, 10), f = u(f, p, n, r, i, e[6], 2400959708, 5), n = a(n, 10), i = u(i, f, p, n, r, e[2], 2400959708, 12), p = a(p, 10), r = d(r, i, f, p, n, e[4], 2840853838, 9), f = a(f, 10), n = d(n, r, i, f, p, e[0], 2840853838, 15), i = a(i, 10), p = d(p, n, r, i, f, e[5], 2840853838, 5), r = a(r, 10), f = d(f, p, n, r, i, e[9], 2840853838, 11), n = a(n, 10), i = d(i, f, p, n, r, e[7], 2840853838, 6), p = a(p, 10), r = d(r, i, f, p, n, e[12], 2840853838, 8), f = a(f, 10), n = d(n, r, i, f, p, e[2], 2840853838, 13), i = a(i, 10), p = d(p, n, r, i, f, e[10], 2840853838, 12), r = a(r, 10), f = d(f, p, n, r, i, e[14], 2840853838, 5), n = a(n, 10), i = d(i, f, p, n, r, e[1], 2840853838, 12), p = a(p, 10), r = d(r, i, f, p, n, e[3], 2840853838, 13), f = a(f, 10), n = d(n, r, i, f, p, e[8], 2840853838, 14), i = a(i, 10), p = d(p, n, r, i, f, e[11], 2840853838, 11), r = a(r, 10), f = d(f, p, n, r, i, e[6], 2840853838, 8), n = a(n, 10), i = d(i, f, p, n, r, e[15], 2840853838, 5), p = a(p, 10), r = d(r, i, f, p, n, e[13], 2840853838, 6), f = a(f, 10);
+            var m = this._a,
+                h = this._b,
+                g = this._c,
+                _ = this._d,
+                v = this._e;
+            m = d(m, h, g, _, v, e[5], 1352829926, 8), g = a(g, 10), v = d(v, m, h, g, _, e[14], 1352829926, 9), h = a(h, 10), _ = d(_, v, m, h, g, e[7], 1352829926, 9), m = a(m, 10), g = d(g, _, v, m, h, e[0], 1352829926, 11), v = a(v, 10), h = d(h, g, _, v, m, e[9], 1352829926, 13), _ = a(_, 10), m = d(m, h, g, _, v, e[2], 1352829926, 15), g = a(g, 10), v = d(v, m, h, g, _, e[11], 1352829926, 15), h = a(h, 10), _ = d(_, v, m, h, g, e[4], 1352829926, 5), m = a(m, 10), g = d(g, _, v, m, h, e[13], 1352829926, 7), v = a(v, 10), h = d(h, g, _, v, m, e[6], 1352829926, 7), _ = a(_, 10), m = d(m, h, g, _, v, e[15], 1352829926, 8), g = a(g, 10), v = d(v, m, h, g, _, e[8], 1352829926, 11), h = a(h, 10), _ = d(_, v, m, h, g, e[1], 1352829926, 14), m = a(m, 10), g = d(g, _, v, m, h, e[10], 1352829926, 14), v = a(v, 10), h = d(h, g, _, v, m, e[3], 1352829926, 12), _ = a(_, 10), m = d(m, h, g, _, v, e[12], 1352829926, 6), g = a(g, 10), v = u(v, m, h, g, _, e[6], 1548603684, 9), h = a(h, 10), _ = u(_, v, m, h, g, e[11], 1548603684, 13), m = a(m, 10), g = u(g, _, v, m, h, e[3], 1548603684, 15), v = a(v, 10), h = u(h, g, _, v, m, e[7], 1548603684, 7), _ = a(_, 10), m = u(m, h, g, _, v, e[0], 1548603684, 12), g = a(g, 10), v = u(v, m, h, g, _, e[13], 1548603684, 8), h = a(h, 10), _ = u(_, v, m, h, g, e[5], 1548603684, 9), m = a(m, 10), g = u(g, _, v, m, h, e[10], 1548603684, 11), v = a(v, 10), h = u(h, g, _, v, m, e[14], 1548603684, 7), _ = a(_, 10), m = u(m, h, g, _, v, e[15], 1548603684, 7), g = a(g, 10), v = u(v, m, h, g, _, e[8], 1548603684, 12), h = a(h, 10), _ = u(_, v, m, h, g, e[12], 1548603684, 7), m = a(m, 10), g = u(g, _, v, m, h, e[4], 1548603684, 6), v = a(v, 10), h = u(h, g, _, v, m, e[9], 1548603684, 15), _ = a(_, 10), m = u(m, h, g, _, v, e[1], 1548603684, 13), g = a(g, 10), v = u(v, m, h, g, _, e[2], 1548603684, 11), h = a(h, 10), _ = l(_, v, m, h, g, e[15], 1836072691, 9), m = a(m, 10), g = l(g, _, v, m, h, e[5], 1836072691, 7), v = a(v, 10), h = l(h, g, _, v, m, e[1], 1836072691, 15), _ = a(_, 10), m = l(m, h, g, _, v, e[3], 1836072691, 11), g = a(g, 10), v = l(v, m, h, g, _, e[7], 1836072691, 8), h = a(h, 10), _ = l(_, v, m, h, g, e[14], 1836072691, 6), m = a(m, 10), g = l(g, _, v, m, h, e[6], 1836072691, 6), v = a(v, 10), h = l(h, g, _, v, m, e[9], 1836072691, 14), _ = a(_, 10), m = l(m, h, g, _, v, e[11], 1836072691, 12), g = a(g, 10), v = l(v, m, h, g, _, e[8], 1836072691, 13), h = a(h, 10), _ = l(_, v, m, h, g, e[12], 1836072691, 5), m = a(m, 10), g = l(g, _, v, m, h, e[2], 1836072691, 14), v = a(v, 10), h = l(h, g, _, v, m, e[10], 1836072691, 13), _ = a(_, 10), m = l(m, h, g, _, v, e[0], 1836072691, 13), g = a(g, 10), v = l(v, m, h, g, _, e[4], 1836072691, 7), h = a(h, 10), _ = l(_, v, m, h, g, e[13], 1836072691, 5), m = a(m, 10), g = c(g, _, v, m, h, e[8], 2053994217, 15), v = a(v, 10), h = c(h, g, _, v, m, e[6], 2053994217, 5), _ = a(_, 10), m = c(m, h, g, _, v, e[4], 2053994217, 8), g = a(g, 10), v = c(v, m, h, g, _, e[1], 2053994217, 11), h = a(h, 10), _ = c(_, v, m, h, g, e[3], 2053994217, 14), m = a(m, 10), g = c(g, _, v, m, h, e[11], 2053994217, 14), v = a(v, 10), h = c(h, g, _, v, m, e[15], 2053994217, 6), _ = a(_, 10), m = c(m, h, g, _, v, e[0], 2053994217, 14), g = a(g, 10), v = c(v, m, h, g, _, e[5], 2053994217, 6), h = a(h, 10), _ = c(_, v, m, h, g, e[12], 2053994217, 9), m = a(m, 10), g = c(g, _, v, m, h, e[2], 2053994217, 12), v = a(v, 10), h = c(h, g, _, v, m, e[13], 2053994217, 9), _ = a(_, 10), m = c(m, h, g, _, v, e[9], 2053994217, 12), g = a(g, 10), v = c(v, m, h, g, _, e[7], 2053994217, 5), h = a(h, 10), _ = c(_, v, m, h, g, e[10], 2053994217, 15), m = a(m, 10), g = c(g, _, v, m, h, e[14], 2053994217, 8), v = a(v, 10), h = s(h, g, _, v, m, e[12], 0, 8), _ = a(_, 10), m = s(m, h, g, _, v, e[15], 0, 5), g = a(g, 10), v = s(v, m, h, g, _, e[10], 0, 12), h = a(h, 10), _ = s(_, v, m, h, g, e[4], 0, 9), m = a(m, 10), g = s(g, _, v, m, h, e[1], 0, 12), v = a(v, 10), h = s(h, g, _, v, m, e[5], 0, 5), _ = a(_, 10), m = s(m, h, g, _, v, e[8], 0, 14), g = a(g, 10), v = s(v, m, h, g, _, e[7], 0, 6), h = a(h, 10), _ = s(_, v, m, h, g, e[6], 0, 8), m = a(m, 10), g = s(g, _, v, m, h, e[2], 0, 13), v = a(v, 10), h = s(h, g, _, v, m, e[13], 0, 6), _ = a(_, 10), m = s(m, h, g, _, v, e[14], 0, 5), g = a(g, 10), v = s(v, m, h, g, _, e[0], 0, 15), h = a(h, 10), _ = s(_, v, m, h, g, e[3], 0, 13), m = a(m, 10), g = s(g, _, v, m, h, e[9], 0, 11), v = a(v, 10), h = s(h, g, _, v, m, e[11], 0, 11), _ = a(_, 10);
+            var y = this._b + i + _ | 0;
+            this._b = this._c + f + v | 0, this._c = this._d + p + m | 0, this._d = this._e + n + h | 0, this._e = this._a + r + g | 0, this._a = y
+        }, i.prototype._digest = function() {
+            this._block[this._blockOffset++] = 128, this._blockOffset > 56 && (this._block.fill(0, this._blockOffset, 64), this._update(), this._blockOffset = 0), this._block.fill(0, this._blockOffset, 56), this._block.writeUInt32LE(this._length[0], 56), this._block.writeUInt32LE(this._length[1], 60), this._update();
+            var e = new Buffer(20);
+            return e.writeInt32LE(this._a, 0), e.writeInt32LE(this._b, 4), e.writeInt32LE(this._c, 8), e.writeInt32LE(this._d, 12), e.writeInt32LE(this._e, 16), e
+        };
+
+        function a(e, t) {
+            return e << t | e >>> 32 - t
+        }
+
+        function s(e, t, n, r, i, s, c, l) {
+            return a(e + (t ^ n ^ r) + s + c | 0, l) + i | 0
+        }
+
+        function c(e, t, n, r, i, s, c, l) {
+            return a(e + (t & n | ~t & r) + s + c | 0, l) + i | 0
+        }
+
+        function l(e, t, n, r, i, s, c, l) {
+            return a(e + ((t | ~n) ^ r) + s + c | 0, l) + i | 0
+        }
+
+        function u(e, t, n, r, i, s, c, l) {
+            return a(e + (t & r | n & ~r) + s + c | 0, l) + i | 0
+        }
+
+        function d(e, t, n, r, i, s, c, l) {
+            return a(e + (t ^ (n | ~r)) + s + c | 0, l) + i | 0
+        }
+        t.exports = i
+    })),
+    require_to_buffer = __commonJSMin(((e, t) => {
+        var n = require_safe_buffer$1().Buffer,
+            r = require_to_buffer$1(),
+            i = typeof Uint8Array < `u`,
+            a = i && typeof ArrayBuffer < `u` && ArrayBuffer.isView;
+        t.exports = function(e, t, s) {
+            if (typeof e == `string` || n.isBuffer(e) || i && e instanceof Uint8Array || a && a(e)) return r(e, t);
+            throw TypeError(s + ` must be a string, a Buffer, a Uint8Array, or a DataView`)
+        }
+    })),
+    require_sync_browser = __commonJSMin(((e, t) => {
+        var n = require_md5(),
+            r = require_ripemd160(),
+            i = require_sha_js(),
+            a = require_safe_buffer$1().Buffer,
+            s = require_precondition(),
+            c = require_default_encoding(),
+            l = require_to_buffer(),
+            u = a.alloc(128),
+            d = {
+                __proto__: null,
+                md5: 16,
+                sha1: 20,
+                sha224: 28,
+                sha256: 32,
+                sha384: 48,
+                sha512: 64,
+                "sha512-256": 32,
+                ripemd160: 20,
+                rmd160: 20
+            },
+            f = {
+                __proto__: null,
+                "sha-1": `sha1`,
+                "sha-224": `sha224`,
+                "sha-256": `sha256`,
+                "sha-384": `sha384`,
+                "sha-512": `sha512`,
+                "ripemd-160": `ripemd160`
+            };
+
+        function p(e) {
+            return new r().update(e).digest()
+        }
+
+        function m(e) {
+            function t(t) {
+                return i(e).update(t).digest()
+            }
+            return e === `rmd160` || e === `ripemd160` ? p : e === `md5` ? n : t
+        }
+
+        function h(e, t, n) {
+            var r = m(e),
+                i = e === `sha512` || e === `sha384` ? 128 : 64;
+            t.length > i ? t = r(t) : t.length < i && (t = a.concat([t, u], i));
+            for (var s = a.allocUnsafe(i + d[e]), c = a.allocUnsafe(i + d[e]), l = 0; l < i; l++) s[l] = t[l] ^ 54, c[l] = t[l] ^ 92;
+            var f = a.allocUnsafe(i + n + 4);
+            s.copy(f, 0, 0, i), this.ipad1 = f, this.ipad2 = s, this.opad = c, this.alg = e, this.blocksize = i, this.hash = r, this.size = d[e]
+        }
+        h.prototype.run = function(e, t) {
+            return e.copy(t, this.blocksize), this.hash(t).copy(this.opad, this.blocksize), this.hash(this.opad)
+        };
+
+        function g(e, t, n, r, i) {
+            s(n, r), e = l(e, c, `Password`), t = l(t, c, `Salt`);
+            var u = (i || `sha1`).toLowerCase(),
+                p = f[u] || u,
+                m = d[p];
+            if (typeof m != `number` || !m) throw TypeError(`Digest algorithm not supported: ` + i);
+            var g = new h(p, e, t.length),
+                _ = a.allocUnsafe(r),
+                v = a.allocUnsafe(t.length + 4);
+            t.copy(v, 0, 0, t.length);
+            for (var y = 0, b = m, x = Math.ceil(r / b), S = 1; S <= x; S++) {
+                v.writeUInt32BE(S, t.length);
+                for (var C = g.run(v, g.ipad1), w = C, E = 1; E < n; E++) {
+                    w = g.run(w, g.ipad2);
+                    for (var ee = 0; ee < b; ee++) C[ee] ^= w[ee]
+                }
+                C.copy(_, y), y += b
+            }
+            return _
+        }
+        t.exports = g
+    })),
+    require_async = __commonJSMin(((e, t) => {
+        init_dist();
+        var n = require_safe_buffer$1().Buffer,
+            r = require_precondition(),
+            i = require_default_encoding(),
+            a = require_sync_browser(),
+            s = require_to_buffer(),
+            c, l = global.crypto && global.crypto.subtle,
+            u = {
+                sha: `SHA-1`,
+                "sha-1": `SHA-1`,
+                sha1: `SHA-1`,
+                sha256: `SHA-256`,
+                "sha-256": `SHA-256`,
+                sha384: `SHA-384`,
+                "sha-384": `SHA-384`,
+                "sha-512": `SHA-512`,
+                sha512: `SHA-512`
+            },
+            d = [],
+            f;
+
+        function p() {
+            return f || (f = global.process && global.process.nextTick ? global.process.nextTick : global.queueMicrotask ? global.queueMicrotask : global.setImmediate ? global.setImmediate : global.setTimeout, f)
+        }
+
+        function m(e, t, r, i, a) {
+            return l.importKey(`raw`, e, {
+                name: `PBKDF2`
+            }, !1, [`deriveBits`]).then(function(e) {
+                return l.deriveBits({
+                    name: `PBKDF2`,
+                    salt: t,
+                    iterations: r,
+                    hash: {
+                        name: a
+                    }
+                }, e, i << 3)
+            }).then(function(e) {
+                return n.from(e)
+            })
+        }
+
+        function h(e) {
+            if (global.process && !global.process.browser || !l || !l.importKey || !l.deriveBits) return Promise.resolve(!1);
+            if (d[e] !== void 0) return d[e];
+            c = c || n.alloc(8);
+            var t = m(c, c, 10, 128, e).then(function() {
+                return !0
+            }, function() {
+                return !1
+            });
+            return d[e] = t, t
+        }
+
+        function g(e, t) {
+            e.then(function(e) {
+                p()(function() {
+                    t(null, e)
+                })
+            }, function(e) {
+                p()(function() {
+                    t(e)
+                })
+            })
+        }
+        t.exports = function(e, t, n, c, l, d) {
+            typeof l == `function` && (d = l, l = void 0), l = l || `sha1`;
+            var f = u[l.toLowerCase()];
+            if (!f || typeof global.Promise != `function`) p()(function() {
+                var r;
+                try {
+                    r = a(e, t, n, c, l)
+                } catch (e) {
+                    d(e);
                     return
                 }
-                u(!0), h("");
-                const w = {
-                    firstName: a.trim(),
-                    lastName: d.trim()
-                };
-                Yt({
-                    changes: [{
-                        key: fe.firstName,
-                        value: w.firstName
-                    }, {
-                        key: fe.lastName,
-                        value: w.lastName
-                    }],
-                    onSuccess: () => {
-                        n(w), l(w.firstName), s(w.lastName), u(!1), Y.success("Name saved!")
-                    },
-                    onError: v => {
-                        var g;
-                        u(!1), h(((g = v == null ? void 0 : v.message) == null ? void 0 : g.text) || "Unable to save your name. Please try again.")
-                    }
-                })
-            };
-        return e.jsxs("form", {
-            onSubmit: b,
-            children: [e.jsxs(Vt, {
-                children: [e.jsxs("div", {
-                    children: [e.jsx(K, {
-                        htmlFor: "settings-first-name",
-                        children: "First name"
-                    }), e.jsx(B, {
-                        id: "settings-first-name",
-                        autoComplete: "given-name",
-                        value: a,
-                        disabled: c,
-                        onChange: j => l(j.target.value),
-                        maxLength: Xe
-                    })]
-                }), e.jsxs("div", {
-                    children: [e.jsx(K, {
-                        htmlFor: "settings-last-name",
-                        children: y ? "Last initial" : "Last name"
-                    }), e.jsx(B, {
-                        id: "settings-last-name",
-                        autoComplete: "family-name",
-                        value: d,
-                        disabled: c,
-                        onChange: j => s(j.target.value),
-                        maxLength: y ? 1 : Je
-                    })]
-                })]
-            }), p ? e.jsx("div", {
-                role: "alert",
-                style: {
-                    marginTop: 16
-                },
-                children: e.jsx($, {
-                    type: "error",
-                    message: p,
-                    showIcon: !0
-                })
-            }) : null, e.jsx(Ie, {
-                children: e.jsx(m, {
-                    type: "primary",
-                    htmlType: "submit",
-                    disabled: x,
-                    loading: c,
-                    children: "Save name"
-                })
-            })]
-        })
-    },
-    Vt = o.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-  @media (max-width: 500px) {
-    grid-template-columns: 1fr;
-  }
-`,
-    _t = t => /^[A-Za-z0-9][A-Za-z0-9_]{2,19}(?![\s\S])/.test(t),
-    Wt = (t, r) => {
-        const [n, a] = i.useState(null), [l, d] = i.useState(0), s = _t(t);
-        i.useEffect(() => {
-            if (!r || !s) return;
-            let u = !0;
-            a(null);
-            const p = window.setTimeout(() => {
-                _({
-                    url: `/api/user/username-availability?username=${encodeURIComponent(t)}`,
-                    success: h => {
-                        u && a({
-                            username: t,
-                            state: h.available ? "available" : "taken",
-                            message: h.available ? "This username is available." : "This username is already taken. Try another."
-                        })
-                    },
-                    error: h => {
-                        if (!u) return;
-                        const y = (h == null ? void 0 : h.code) === 422;
-                        a({
-                            username: t,
-                            state: y ? "invalid" : "error",
-                            message: y ? h.message.text : "Couldn’t check availability. Please try again."
-                        })
-                    }
-                })
-            }, 350);
-            return () => {
-                u = !1, window.clearTimeout(p)
-            }
-        }, [t, r, s, l]);
-        const c = () => {
-            a(null), d(u => u + 1)
-        };
-        if (!r || !t) return {
-            state: "idle",
-            message: "",
-            retry: c
-        };
-        if (!s) {
-            let u = "Start your username with a letter (A–Z) or number (0–9).";
-            return /\s/.test(t) ? u = "Remove spaces from your username. You can use underscores (_) instead." : /[^A-Za-z0-9_]/.test(t) ? u = "Use only letters (A–Z), numbers (0–9), and underscores (_) in your username." : t.length < 3 ? u = "Your username is too short. Use at least 3 characters." : t.length > 20 && (u = "Your username is too long. Use no more than 20 characters."), {
-                state: "invalid",
-                message: u,
-                retry: c
+                d(null, r)
+            });
+            else {
+                if (r(n, c), e = s(e, i, `Password`), t = s(t, i, `Salt`), typeof d != `function`) throw Error(`No callback provided to pbkdf2`);
+                g(h(f).then(function(r) {
+                    return r ? m(e, t, n, c, f) : a(e, t, n, c, l)
+                }), d)
             }
         }
-        return !n || n.username !== t ? {
-            state: "checking",
-            message: "Checking availability…",
-            retry: c
-        } : {
-            ...n,
-            retry: c
+    })),
+    require_browser$8 = __commonJSMin((e => {
+        e.pbkdf2 = require_async(), e.pbkdf2Sync = require_sync_browser()
+    })),
+    require_utils$3 = __commonJSMin((e => {
+        e.readUInt32BE = function(e, t) {
+            return (e[0 + t] << 24 | e[1 + t] << 16 | e[2 + t] << 8 | e[3 + t]) >>> 0
+        }, e.writeUInt32BE = function(e, t, n) {
+            e[0 + n] = t >>> 24, e[1 + n] = t >>> 16 & 255, e[2 + n] = t >>> 8 & 255, e[3 + n] = t & 255
+        }, e.ip = function(e, t, n, r) {
+            for (var i = 0, a = 0, s = 6; s >= 0; s -= 2) {
+                for (var c = 0; c <= 24; c += 8) i <<= 1, i |= t >>> c + s & 1;
+                for (var c = 0; c <= 24; c += 8) i <<= 1, i |= e >>> c + s & 1
+            }
+            for (var s = 6; s >= 0; s -= 2) {
+                for (var c = 1; c <= 25; c += 8) a <<= 1, a |= t >>> c + s & 1;
+                for (var c = 1; c <= 25; c += 8) a <<= 1, a |= e >>> c + s & 1
+            }
+            n[r + 0] = i >>> 0, n[r + 1] = a >>> 0
+        }, e.rip = function(e, t, n, r) {
+            for (var i = 0, a = 0, s = 0; s < 4; s++)
+                for (var c = 24; c >= 0; c -= 8) i <<= 1, i |= t >>> c + s & 1, i <<= 1, i |= e >>> c + s & 1;
+            for (var s = 4; s < 8; s++)
+                for (var c = 24; c >= 0; c -= 8) a <<= 1, a |= t >>> c + s & 1, a <<= 1, a |= e >>> c + s & 1;
+            n[r + 0] = i >>> 0, n[r + 1] = a >>> 0
+        }, e.pc1 = function(e, t, n, r) {
+            for (var i = 0, a = 0, s = 7; s >= 5; s--) {
+                for (var c = 0; c <= 24; c += 8) i <<= 1, i |= t >> c + s & 1;
+                for (var c = 0; c <= 24; c += 8) i <<= 1, i |= e >> c + s & 1
+            }
+            for (var c = 0; c <= 24; c += 8) i <<= 1, i |= t >> c + s & 1;
+            for (var s = 1; s <= 3; s++) {
+                for (var c = 0; c <= 24; c += 8) a <<= 1, a |= t >> c + s & 1;
+                for (var c = 0; c <= 24; c += 8) a <<= 1, a |= e >> c + s & 1
+            }
+            for (var c = 0; c <= 24; c += 8) a <<= 1, a |= e >> c + s & 1;
+            n[r + 0] = i >>> 0, n[r + 1] = a >>> 0
+        }, e.r28shl = function(e, t) {
+            return e << t & 268435455 | e >>> 28 - t
+        };
+        var t = [14, 11, 17, 4, 27, 23, 25, 0, 13, 22, 7, 18, 5, 9, 16, 24, 2, 20, 12, 21, 1, 8, 15, 26, 15, 4, 25, 19, 9, 1, 26, 16, 5, 11, 23, 8, 12, 7, 17, 0, 22, 3, 10, 14, 6, 20, 27, 24];
+        e.pc2 = function(e, n, r, i) {
+            for (var a = 0, s = 0, c = t.length >>> 1, l = 0; l < c; l++) a <<= 1, a |= e >>> t[l] & 1;
+            for (var l = c; l < t.length; l++) s <<= 1, s |= n >>> t[l] & 1;
+            r[i + 0] = a >>> 0, r[i + 1] = s >>> 0
+        }, e.expand = function(e, t, n) {
+            var r = 0,
+                i = 0;
+            r = (e & 1) << 5 | e >>> 27;
+            for (var a = 23; a >= 15; a -= 4) r <<= 6, r |= e >>> a & 63;
+            for (var a = 11; a >= 3; a -= 4) i |= e >>> a & 63, i <<= 6;
+            i |= (e & 31) << 1 | e >>> 31, t[n + 0] = r >>> 0, t[n + 1] = i >>> 0
+        };
+        var n = [14, 0, 4, 15, 13, 7, 1, 4, 2, 14, 15, 2, 11, 13, 8, 1, 3, 10, 10, 6, 6, 12, 12, 11, 5, 9, 9, 5, 0, 3, 7, 8, 4, 15, 1, 12, 14, 8, 8, 2, 13, 4, 6, 9, 2, 1, 11, 7, 15, 5, 12, 11, 9, 3, 7, 14, 3, 10, 10, 0, 5, 6, 0, 13, 15, 3, 1, 13, 8, 4, 14, 7, 6, 15, 11, 2, 3, 8, 4, 14, 9, 12, 7, 0, 2, 1, 13, 10, 12, 6, 0, 9, 5, 11, 10, 5, 0, 13, 14, 8, 7, 10, 11, 1, 10, 3, 4, 15, 13, 4, 1, 2, 5, 11, 8, 6, 12, 7, 6, 12, 9, 0, 3, 5, 2, 14, 15, 9, 10, 13, 0, 7, 9, 0, 14, 9, 6, 3, 3, 4, 15, 6, 5, 10, 1, 2, 13, 8, 12, 5, 7, 14, 11, 12, 4, 11, 2, 15, 8, 1, 13, 1, 6, 10, 4, 13, 9, 0, 8, 6, 15, 9, 3, 8, 0, 7, 11, 4, 1, 15, 2, 14, 12, 3, 5, 11, 10, 5, 14, 2, 7, 12, 7, 13, 13, 8, 14, 11, 3, 5, 0, 6, 6, 15, 9, 0, 10, 3, 1, 4, 2, 7, 8, 2, 5, 12, 11, 1, 12, 10, 4, 14, 15, 9, 10, 3, 6, 15, 9, 0, 0, 6, 12, 10, 11, 1, 7, 13, 13, 8, 15, 9, 1, 4, 3, 5, 14, 11, 5, 12, 2, 7, 8, 2, 4, 14, 2, 14, 12, 11, 4, 2, 1, 12, 7, 4, 10, 7, 11, 13, 6, 1, 8, 5, 5, 0, 3, 15, 15, 10, 13, 3, 0, 9, 14, 8, 9, 6, 4, 11, 2, 8, 1, 12, 11, 7, 10, 1, 13, 14, 7, 2, 8, 13, 15, 6, 9, 15, 12, 0, 5, 9, 6, 10, 3, 4, 0, 5, 14, 3, 12, 10, 1, 15, 10, 4, 15, 2, 9, 7, 2, 12, 6, 9, 8, 5, 0, 6, 13, 1, 3, 13, 4, 14, 14, 0, 7, 11, 5, 3, 11, 8, 9, 4, 14, 3, 15, 2, 5, 12, 2, 9, 8, 5, 12, 15, 3, 10, 7, 11, 0, 14, 4, 1, 10, 7, 1, 6, 13, 0, 11, 8, 6, 13, 4, 13, 11, 0, 2, 11, 14, 7, 15, 4, 0, 9, 8, 1, 13, 10, 3, 14, 12, 3, 9, 5, 7, 12, 5, 2, 10, 15, 6, 8, 1, 6, 1, 6, 4, 11, 11, 13, 13, 8, 12, 1, 3, 4, 7, 10, 14, 7, 10, 9, 15, 5, 6, 0, 8, 15, 0, 14, 5, 2, 9, 3, 2, 12, 13, 1, 2, 15, 8, 13, 4, 8, 6, 10, 15, 3, 11, 7, 1, 4, 10, 12, 9, 5, 3, 6, 14, 11, 5, 0, 0, 14, 12, 9, 7, 2, 7, 2, 11, 1, 4, 14, 1, 7, 9, 4, 12, 10, 14, 8, 2, 13, 0, 15, 6, 12, 10, 9, 13, 0, 15, 3, 3, 5, 5, 6, 8, 11];
+        e.substitute = function(e, t) {
+            for (var r = 0, i = 0; i < 4; i++) {
+                var a = e >>> 18 - i * 6 & 63,
+                    s = n[i * 64 + a];
+                r <<= 4, r |= s
+            }
+            for (var i = 0; i < 4; i++) {
+                var a = t >>> 18 - i * 6 & 63,
+                    s = n[256 + i * 64 + a];
+                r <<= 4, r |= s
+            }
+            return r >>> 0
+        };
+        var r = [16, 25, 12, 11, 3, 20, 4, 15, 31, 17, 9, 6, 27, 14, 1, 22, 30, 24, 8, 18, 0, 5, 29, 23, 13, 19, 2, 26, 10, 21, 28, 7];
+        e.permute = function(e) {
+            for (var t = 0, n = 0; n < r.length; n++) t <<= 1, t |= e >>> r[n] & 1;
+            return t >>> 0
+        }, e.padSplit = function(e, t, n) {
+            for (var r = e.toString(2); r.length < t;) r = `0` + r;
+            for (var i = [], a = 0; a < t; a += n) i.push(r.slice(a, a + n));
+            return i.join(` `)
         }
-    },
-    qt = () => {
-        const [t, r] = i.useState(null), [n, a] = i.useState(F().username ?? ""), [l, d] = i.useState(!0), [s, c] = i.useState(!1), [u, p] = i.useState(""), h = v => {
-            r(v), a(v.username ?? ""), Be.user.setUsername(v.username)
-        }, y = () => {
-            d(!0), p(""), _({
-                url: "/api/user/username",
-                success: h,
-                error: v => {
-                    var g;
-                    return p(((g = v == null ? void 0 : v.message) == null ? void 0 : g.text) || "Unable to load your username. Please try again.")
-                },
-                both: () => d(!1)
-            })
+    })),
+    require_minimalistic_assert = __commonJSMin(((e, t) => {
+        t.exports = n;
+
+        function n(e, t) {
+            if (!e) throw Error(t || `Assertion failed`)
+        }
+        n.equal = function(e, t, n) {
+            if (e != t) throw Error(n || `Assertion failed: ` + e + ` != ` + t)
+        }
+    })),
+    require_cipher = __commonJSMin(((e, t) => {
+        var n = require_minimalistic_assert();
+
+        function r(e) {
+            this.options = e, this.type = this.options.type, this.blockSize = 8, this._init(), this.buffer = Array(this.blockSize), this.bufferOff = 0, this.padding = e.padding !== !1
+        }
+        t.exports = r, r.prototype._init = function() {}, r.prototype.update = function(e) {
+            return e.length === 0 ? [] : this.type === `decrypt` ? this._updateDecrypt(e) : this._updateEncrypt(e)
+        }, r.prototype._buffer = function(e, t) {
+            for (var n = Math.min(this.buffer.length - this.bufferOff, e.length - t), r = 0; r < n; r++) this.buffer[this.bufferOff + r] = e[t + r];
+            return this.bufferOff += n, n
+        }, r.prototype._flushBuffer = function(e, t) {
+            return this._update(this.buffer, 0, e, t), this.bufferOff = 0, this.blockSize
+        }, r.prototype._updateEncrypt = function(e) {
+            var t = 0,
+                n = 0,
+                r = (this.bufferOff + e.length) / this.blockSize | 0,
+                i = Array(r * this.blockSize);
+            this.bufferOff !== 0 && (t += this._buffer(e, t), this.bufferOff === this.buffer.length && (n += this._flushBuffer(i, n)));
+            for (var a = e.length - (e.length - t) % this.blockSize; t < a; t += this.blockSize) this._update(e, t, i, n), n += this.blockSize;
+            for (; t < e.length; t++, this.bufferOff++) this.buffer[this.bufferOff] = e[t];
+            return i
+        }, r.prototype._updateDecrypt = function(e) {
+            for (var t = 0, n = 0, r = Math.ceil((this.bufferOff + e.length) / this.blockSize) - 1, i = Array(r * this.blockSize); r > 0; r--) t += this._buffer(e, t), n += this._flushBuffer(i, n);
+            return t += this._buffer(e, t), i
+        }, r.prototype.final = function(e) {
+            var t;
+            e && (t = this.update(e));
+            var n = this.type === `encrypt` ? this._finalEncrypt() : this._finalDecrypt();
+            return t ? t.concat(n) : n
+        }, r.prototype._pad = function(e, t) {
+            if (t === 0) return !1;
+            for (; t < e.length;) e[t++] = 0;
+            return !0
+        }, r.prototype._finalEncrypt = function() {
+            if (!this._pad(this.buffer, this.bufferOff)) return [];
+            var e = Array(this.blockSize);
+            return this._update(this.buffer, 0, e, 0), e
+        }, r.prototype._unpad = function(e) {
+            return e
+        }, r.prototype._finalDecrypt = function() {
+            n.equal(this.bufferOff, this.blockSize, `Not enough data to decrypt`);
+            var e = Array(this.blockSize);
+            return this._flushBuffer(e, 0), this._unpad(e)
+        }
+    })),
+    require_des$1 = __commonJSMin(((e, t) => {
+        var n = require_minimalistic_assert(),
+            r = require_inherits_browser(),
+            i = require_utils$3(),
+            a = require_cipher();
+
+        function s() {
+            this.tmp = [, , ], this.keys = null
+        }
+
+        function c(e) {
+            a.call(this, e);
+            var t = new s;
+            this._desState = t, this.deriveKeys(t, e.key)
+        }
+        r(c, a), t.exports = c, c.create = function(e) {
+            return new c(e)
         };
-        i.useEffect(y, []);
-        const x = Wt(n, !!t && !l && n !== t.username),
-            b = !l && !s && !!t && n !== t.username && x.state === "available",
-            j = ["taken", "invalid", "error"].includes(x.state),
-            w = v => {
-                v.preventDefault(), b && (c(!0), p(""), _({
-                    url: "/api/user/username",
-                    data: {
-                        username: n
-                    },
-                    success: g => {
-                        h(g), Y.success("Username saved!"), X({})
-                    },
-                    error: g => {
-                        var I;
-                        p(((I = g == null ? void 0 : g.message) == null ? void 0 : I.text) || "Unable to save your username. Please try again."), (g == null ? void 0 : g.code) === 409 && x.retry()
-                    },
-                    both: () => c(!1)
-                }))
+        var l = [1, 1, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1];
+        c.prototype.deriveKeys = function(e, t) {
+            e.keys = Array(32), n.equal(t.length, this.blockSize, `Invalid key length`);
+            var r = i.readUInt32BE(t, 0),
+                a = i.readUInt32BE(t, 4);
+            i.pc1(r, a, e.tmp, 0), r = e.tmp[0], a = e.tmp[1];
+            for (var s = 0; s < e.keys.length; s += 2) {
+                var c = l[s >>> 1];
+                r = i.r28shl(r, c), a = i.r28shl(a, c), i.pc2(r, a, e.keys, s)
+            }
+        }, c.prototype._update = function(e, t, n, r) {
+            var a = this._desState,
+                s = i.readUInt32BE(e, t),
+                c = i.readUInt32BE(e, t + 4);
+            i.ip(s, c, a.tmp, 0), s = a.tmp[0], c = a.tmp[1], this.type === `encrypt` ? this._encrypt(a, s, c, a.tmp, 0) : this._decrypt(a, s, c, a.tmp, 0), s = a.tmp[0], c = a.tmp[1], i.writeUInt32BE(n, s, r), i.writeUInt32BE(n, c, r + 4)
+        }, c.prototype._pad = function(e, t) {
+            if (this.padding === !1) return !1;
+            for (var n = e.length - t, r = t; r < e.length; r++) e[r] = n;
+            return !0
+        }, c.prototype._unpad = function(e) {
+            if (this.padding === !1) return e;
+            for (var t = e[e.length - 1], r = e.length - t; r < e.length; r++) n.equal(e[r], t);
+            return e.slice(0, e.length - t)
+        }, c.prototype._encrypt = function(e, t, n, r, a) {
+            for (var s = t, c = n, l = 0; l < e.keys.length; l += 2) {
+                var u = e.keys[l],
+                    d = e.keys[l + 1];
+                i.expand(c, e.tmp, 0), u ^= e.tmp[0], d ^= e.tmp[1];
+                var f = i.substitute(u, d),
+                    p = i.permute(f),
+                    m = c;
+                c = (s ^ p) >>> 0, s = m
+            }
+            i.rip(c, s, r, a)
+        }, c.prototype._decrypt = function(e, t, n, r, a) {
+            for (var s = n, c = t, l = e.keys.length - 2; l >= 0; l -= 2) {
+                var u = e.keys[l],
+                    d = e.keys[l + 1];
+                i.expand(s, e.tmp, 0), u ^= e.tmp[0], d ^= e.tmp[1];
+                var f = i.substitute(u, d),
+                    p = i.permute(f),
+                    m = s;
+                s = (c ^ p) >>> 0, c = m
+            }
+            i.rip(s, c, r, a)
+        }
+    })),
+    require_cbc$1 = __commonJSMin((e => {
+        var t = require_minimalistic_assert(),
+            n = require_inherits_browser(),
+            r = {};
+
+        function i(e) {
+            t.equal(e.length, 8, `Invalid IV length`), this.iv = Array(8);
+            for (var n = 0; n < this.iv.length; n++) this.iv[n] = e[n]
+        }
+
+        function a(e) {
+            function t(t) {
+                e.call(this, t), this._cbcInit()
+            }
+            n(t, e);
+            for (var i = Object.keys(r), a = 0; a < i.length; a++) {
+                var s = i[a];
+                t.prototype[s] = r[s]
+            }
+            return t.create = function(e) {
+                return new t(e)
+            }, t
+        }
+        e.instantiate = a, r._cbcInit = function() {
+            var e = new i(this.options.iv);
+            this._cbcState = e
+        }, r._update = function(e, t, n, r) {
+            var i = this._cbcState,
+                a = this.constructor.super_.prototype,
+                s = i.iv;
+            if (this.type === `encrypt`) {
+                for (var c = 0; c < this.blockSize; c++) s[c] ^= e[t + c];
+                a._update.call(this, s, 0, n, r);
+                for (var c = 0; c < this.blockSize; c++) s[c] = n[r + c]
+            } else {
+                a._update.call(this, e, t, n, r);
+                for (var c = 0; c < this.blockSize; c++) n[r + c] ^= s[c];
+                for (var c = 0; c < this.blockSize; c++) s[c] = e[t + c]
+            }
+        }
+    })),
+    require_ede = __commonJSMin(((e, t) => {
+        var n = require_minimalistic_assert(),
+            r = require_inherits_browser(),
+            i = require_cipher(),
+            a = require_des$1();
+
+        function s(e, t) {
+            n.equal(t.length, 24, `Invalid key length`);
+            var r = t.slice(0, 8),
+                i = t.slice(8, 16),
+                s = t.slice(16, 24);
+            this.ciphers = e === `encrypt` ? [a.create({
+                type: `encrypt`,
+                key: r
+            }), a.create({
+                type: `decrypt`,
+                key: i
+            }), a.create({
+                type: `encrypt`,
+                key: s
+            })] : [a.create({
+                type: `decrypt`,
+                key: s
+            }), a.create({
+                type: `encrypt`,
+                key: i
+            }), a.create({
+                type: `decrypt`,
+                key: r
+            })]
+        }
+
+        function c(e) {
+            i.call(this, e);
+            var t = new s(this.type, this.options.key);
+            this._edeState = t
+        }
+        r(c, i), t.exports = c, c.create = function(e) {
+            return new c(e)
+        }, c.prototype._update = function(e, t, n, r) {
+            var i = this._edeState;
+            i.ciphers[0]._update(e, t, n, r), i.ciphers[1]._update(n, r, n, r), i.ciphers[2]._update(n, r, n, r)
+        }, c.prototype._pad = a.prototype._pad, c.prototype._unpad = a.prototype._unpad
+    })),
+    require_des = __commonJSMin((e => {
+        e.utils = require_utils$3(), e.Cipher = require_cipher(), e.DES = require_des$1(), e.CBC = require_cbc$1(), e.EDE = require_ede()
+    })),
+    require_browserify_des = __commonJSMin(((e, t) => {
+        var n = require_cipher_base(),
+            r = require_des(),
+            i = require_inherits_browser(),
+            a = require_safe_buffer$1().Buffer,
+            s = {
+                "des-ede3-cbc": r.CBC.instantiate(r.EDE),
+                "des-ede3": r.EDE,
+                "des-ede-cbc": r.CBC.instantiate(r.EDE),
+                "des-ede": r.EDE,
+                "des-cbc": r.CBC.instantiate(r.DES),
+                "des-ecb": r.DES
             };
-        return e.jsxs("form", {
-            onSubmit: w,
-            children: [e.jsx(K, {
-                htmlFor: "account-username",
-                children: t != null && t.username ? "Change your username" : "Set your username"
-            }), e.jsx(B, {
-                id: "account-username",
-                "aria-describedby": `username-availability${u?" username-error":""}`,
-                "aria-invalid": j || !!u,
-                status: j || u ? "error" : void 0,
-                prefix: e.jsx("span", {
-                    style: {
-                        color: "#81768f",
-                        marginRight: 4
-                    },
-                    children: "@"
-                }),
-                placeholder: "CosmicKit42",
-                autoComplete: "off",
-                autoCapitalize: "none",
-                spellCheck: !1,
-                maxLength: 20,
-                value: n,
-                disabled: l || s || !t,
-                onChange: v => {
-                    a(v.target.value), p("")
-                },
-                style: {
-                    maxWidth: 420
-                }
-            }), e.jsxs("div", {
-                id: "username-availability",
-                role: "status",
-                "aria-live": "polite",
-                style: {
-                    minHeight: 24,
-                    marginTop: 8,
-                    fontSize: 13,
-                    color: j ? "#b42318" : x.state === "available" ? "#237344" : "#706a7c"
-                },
-                children: [x.state === "checking" ? e.jsx(Fe, {
-                    style: {
-                        marginRight: 6
-                    }
-                }) : null, x.state === "available" ? e.jsx(Ee, {
-                    style: {
-                        marginRight: 6
-                    }
-                }) : null, j ? e.jsx(tt, {
-                    style: {
-                        marginRight: 6
-                    }
-                }) : null, x.message, x.state === "error" ? e.jsx(m, {
-                    type: "link",
-                    size: "small",
-                    onClick: x.retry,
-                    children: "Try again"
-                }) : null]
-            }), T() ? e.jsx(Zt, {
-                type: "warning",
-                showIcon: !0,
-                message: "Do not use your real name as your username",
-                description: "Your username is visible to others. Pick one that doesn't include your name or other personal information."
-            }) : null, e.jsx(Ie, {
-                children: e.jsx(m, {
-                    type: "primary",
-                    htmlType: "submit",
-                    loading: s,
-                    disabled: !b,
-                    children: t != null && t.username ? "Save username" : "Add username"
-                })
-            }), u ? e.jsxs("div", {
-                id: "username-error",
-                role: "alert",
-                style: {
-                    marginTop: 12
-                },
-                children: [e.jsx($, {
-                    type: "error",
-                    showIcon: !0,
-                    message: u
-                }), !t && !l ? e.jsx(m, {
-                    onClick: y,
-                    style: {
-                        marginTop: 8
-                    },
-                    children: "Try Again"
-                }) : null]
-            }) : null]
-        })
-    },
-    Zt = o($)`
-  margin: 16px -26px 0;
-  padding: 16px 26px;
-  border-left: 0;
-  border-right: 0;
-  border-radius: 0;
+        s.des = s[`des-cbc`], s.des3 = s[`des-ede3-cbc`], t.exports = c, i(c, n);
 
-  @media (max-width: 600px) {
-    margin-right: -20px;
-    margin-left: -20px;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-`,
-    Kt = t => {
-        const {
-            visible: r,
-            close: n,
-            saving: a,
-            hasSchool: l
-        } = t, [d, s] = i.useState(""), [c, u] = i.useState(!1), [p, h] = i.useState([]), [y, x] = i.useState(""), [b, j] = i.useState(""), w = i.useRef(0);
-        i.useEffect(() => {
-            r || (w.current += 1, s(""), h([]), x(""), j(""), u(!1))
-        }, [r]);
-        const v = g => {
-            if (g.preventDefault(), c || a) return;
-            if (!/^\d{5}$/.test(d)) {
-                j("Enter a valid 5-digit ZIP code.");
-                return
+        function c(e) {
+            n.call(this);
+            var t = e.mode.toLowerCase(),
+                r = s[t],
+                i = e.decrypt ? `decrypt` : `encrypt`,
+                c = e.key;
+            a.isBuffer(c) || (c = a.from(c)), (t === `des-ede` || t === `des-ede-cbc`) && (c = a.concat([c, c.slice(0, 8)]));
+            var l = e.iv;
+            a.isBuffer(l) || (l = a.from(l)), this._des = r.create({
+                key: c,
+                iv: l,
+                type: i
+            })
+        }
+        c.prototype._update = function(e) {
+            return a.from(this._des.update(e))
+        }, c.prototype._final = function() {
+            return a.from(this._des.final())
+        }
+    })),
+    require_ecb = __commonJSMin((e => {
+        e.encrypt = function(e, t) {
+            return e._cipher.encryptBlock(t)
+        }, e.decrypt = function(e, t) {
+            return e._cipher.decryptBlock(t)
+        }
+    })),
+    require_buffer_xor = __commonJSMin(((e, t) => {
+        init_dist$1(), t.exports = function(e, t) {
+            for (var n = Math.min(e.length, t.length), r = new Buffer(n), i = 0; i < n; ++i) r[i] = e[i] ^ t[i];
+            return r
+        }
+    })),
+    require_cbc = __commonJSMin((e => {
+        var t = require_buffer_xor();
+        e.encrypt = function(e, n) {
+            var r = t(n, e._prev);
+            return e._prev = e._cipher.encryptBlock(r), e._prev
+        }, e.decrypt = function(e, n) {
+            var r = e._prev;
+            return e._prev = n, t(e._cipher.decryptBlock(n), r)
+        }
+    })),
+    require_cfb = __commonJSMin((e => {
+        var t = require_safe_buffer$1().Buffer,
+            n = require_buffer_xor();
+
+        function r(e, r, i) {
+            var a = r.length,
+                s = n(r, e._cache);
+            return e._cache = e._cache.slice(a), e._prev = t.concat([e._prev, i ? r : s]), s
+        }
+        e.encrypt = function(e, n, i) {
+            for (var a = t.allocUnsafe(0), s; n.length;)
+                if (e._cache.length === 0 && (e._cache = e._cipher.encryptBlock(e._prev), e._prev = t.allocUnsafe(0)), e._cache.length <= n.length) s = e._cache.length, a = t.concat([a, r(e, n.slice(0, s), i)]), n = n.slice(s);
+                else {
+                    a = t.concat([a, r(e, n, i)]);
+                    break
+                } return a
+        }
+    })),
+    require_cfb8 = __commonJSMin((e => {
+        var t = require_safe_buffer$1().Buffer;
+
+        function n(e, n, r) {
+            var i = e._cipher.encryptBlock(e._prev)[0] ^ n;
+            return e._prev = t.concat([e._prev.slice(1), t.from([r ? n : i])]), i
+        }
+        e.encrypt = function(e, r, i) {
+            for (var a = r.length, s = t.allocUnsafe(a), c = -1; ++c < a;) s[c] = n(e, r[c], i);
+            return s
+        }
+    })),
+    require_cfb1 = __commonJSMin((e => {
+        var t = require_safe_buffer$1().Buffer;
+
+        function n(e, t, n) {
+            for (var i, a = -1, s = 8, c = 0, l, u; ++a < s;) i = e._cipher.encryptBlock(e._prev), l = t & 1 << 7 - a ? 128 : 0, u = i[0] ^ l, c += (u & 128) >> a % 8, e._prev = r(e._prev, n ? l : u);
+            return c
+        }
+
+        function r(e, n) {
+            var r = e.length,
+                i = -1,
+                a = t.allocUnsafe(e.length);
+            for (e = t.concat([e, t.from([n])]); ++i < r;) a[i] = e[i] << 1 | e[i + 1] >> 7;
+            return a
+        }
+        e.encrypt = function(e, r, i) {
+            for (var a = r.length, s = t.allocUnsafe(a), c = -1; ++c < a;) s[c] = n(e, r[c], i);
+            return s
+        }
+    })),
+    require_ofb = __commonJSMin((e => {
+        init_dist$1();
+        var t = require_buffer_xor();
+
+        function n(e) {
+            return e._prev = e._cipher.encryptBlock(e._prev), e._prev
+        }
+        e.encrypt = function(e, r) {
+            for (; e._cache.length < r.length;) e._cache = Buffer.concat([e._cache, n(e)]);
+            var i = e._cache.slice(0, r.length);
+            return e._cache = e._cache.slice(r.length), t(r, i)
+        }
+    })),
+    require_incr32 = __commonJSMin(((e, t) => {
+        function n(e) {
+            for (var t = e.length, n; t--;)
+                if (n = e.readUInt8(t), n === 255) e.writeUInt8(0, t);
+                else {
+                    n++, e.writeUInt8(n, t);
+                    break
+                }
+        }
+        t.exports = n
+    })),
+    require_ctr = __commonJSMin((e => {
+        var t = require_buffer_xor(),
+            n = require_safe_buffer$1().Buffer,
+            r = require_incr32();
+
+        function i(e) {
+            var t = e._cipher.encryptBlockRaw(e._prev);
+            return r(e._prev), t
+        }
+        var a = 16;
+        e.encrypt = function(e, r) {
+            var s = Math.ceil(r.length / a),
+                c = e._cache.length;
+            e._cache = n.concat([e._cache, n.allocUnsafe(s * a)]);
+            for (var l = 0; l < s; l++) {
+                var u = i(e),
+                    d = c + l * a;
+                e._cache.writeUInt32BE(u[0], d + 0), e._cache.writeUInt32BE(u[1], d + 4), e._cache.writeUInt32BE(u[2], d + 8), e._cache.writeUInt32BE(u[3], d + 12)
             }
-            const I = ++w.current;
-            u(!0), j(""), h([]), x(""), R({
-                url: "/api/users/fetch-schools",
-                method: "post",
-                data: {
-                    zipCode: d
-                },
-                success: f => {
-                    I === w.current && (h((f == null ? void 0 : f.schoolList) || []), x(d))
-                },
-                error: () => {
-                    I === w.current && j("We couldn’t find schools right now. Please try searching again.")
-                },
-                both: () => {
-                    I === w.current && u(!1)
-                }
-            })
-        };
-        return e.jsxs(at, {
-            open: r,
-            onClose: a ? void 0 : n,
-            placement: "right",
-            width: 520,
-            title: l ? "Change your school" : "Add your school",
-            closable: !a,
-            maskClosable: !a,
-            keyboard: !a,
-            styles: {
-                header: {
-                    padding: "22px 24px",
-                    borderBottom: "1px solid #e8e5ed"
-                },
-                body: {
-                    padding: 24,
-                    background: "#faf9fc"
-                }
+            var f = e._cache.slice(0, r.length);
+            return e._cache = e._cache.slice(r.length), t(r, f)
+        }
+    })),
+    list_exports = __exportAll({
+        aes128: () => aes128,
+        aes192: () => aes192,
+        aes256: () => aes256,
+        default: () => list_default
+    }),
+    aes128, aes192, aes256, list_default, init_list = __esmMin((() => {
+        aes128 = {
+            cipher: `AES`,
+            key: 128,
+            iv: 16,
+            mode: `CBC`,
+            type: `block`
+        }, aes192 = {
+            cipher: `AES`,
+            key: 192,
+            iv: 16,
+            mode: `CBC`,
+            type: `block`
+        }, aes256 = {
+            cipher: `AES`,
+            key: 256,
+            iv: 16,
+            mode: `CBC`,
+            type: `block`
+        }, list_default = {
+            "aes-128-ecb": {
+                cipher: `AES`,
+                key: 128,
+                iv: 0,
+                mode: `ECB`,
+                type: `block`
             },
-            children: [e.jsxs(Qt, {
-                onSubmit: v,
-                children: [e.jsx(K, {
-                    htmlFor: "school-zip-code",
-                    children: "School ZIP code"
-                }), e.jsxs(Xt, {
-                    children: [e.jsx(B, {
-                        id: "school-zip-code",
-                        placeholder: "e.g. 98101",
-                        prefix: e.jsx(ye, {
-                            style: {
-                                color: "#81768f"
-                            }
-                        }),
-                        inputMode: "numeric",
-                        autoComplete: "postal-code",
-                        maxLength: 5,
-                        value: d,
-                        disabled: a,
-                        "aria-invalid": !!b,
-                        "aria-describedby": `school-search-help${b?" school-search-error":""}`,
-                        status: b ? "error" : void 0,
-                        onChange: g => {
-                            w.current += 1, s(g.target.value), j(""), h([]), x(""), u(!1)
-                        }
-                    }), e.jsx(m, {
-                        type: "primary",
-                        htmlType: "submit",
-                        loading: c,
-                        disabled: a,
-                        children: "Search"
-                    })]
-                }), e.jsx(Jt, {
-                    id: "school-search-help",
-                    children: "US schools only."
-                }), b ? e.jsx($, {
-                    id: "school-search-error",
-                    role: "alert",
-                    type: "error",
-                    showIcon: !0,
-                    message: b,
-                    style: {
-                        marginTop: 14
-                    }
-                }) : null]
-            }), e.jsx("div", {
-                role: "status",
-                "aria-live": "polite",
-                children: a ? e.jsxs(ae, {
-                    children: [e.jsx(ge, {}), e.jsx("p", {
-                        children: "Saving your school…"
-                    })]
-                }) : c ? e.jsxs(ae, {
-                    children: [e.jsx(ge, {}), e.jsx("p", {
-                        children: "Searching for schools…"
-                    })]
-                }) : y ? e.jsx(en, {
-                    children: p.length ? `${p.length} ${p.length===1?"school":"schools"} found in ${y}` : `No schools found in ${y}`
-                }) : null
-            }), !c && !a && p.length ? e.jsx(tn, {
-                "aria-label": "Schools",
-                children: p.map(g => e.jsx("li", {
-                    children: e.jsxs(nn, {
-                        type: "button",
-                        onClick: () => t.selectSchool(g),
-                        children: [e.jsx(oe, {
-                            "aria-hidden": "true",
-                            className: "school-icon"
-                        }), e.jsxs("span", {
-                            children: [e.jsx("strong", {
-                                children: g.schoolName
-                            }), e.jsxs("small", {
-                                children: [g.address.city, ", ", g.address.stateFull]
-                            })]
-                        }), e.jsx(ft, {
-                            "aria-hidden": "true"
-                        })]
-                    })
-                }, g.schoolid))
-            }) : !c && !a && !b ? e.jsxs(ae, {
-                children: [e.jsx(ye, {
-                    "aria-hidden": "true",
-                    style: {
-                        fontSize: 28,
-                        color: "#9a8bae"
-                    }
-                }), e.jsx("p", {
-                    children: y ? "Try another ZIP code." : "Search by ZIP code to find your school."
-                })]
-            }) : null]
-        })
-    },
-    Qt = o.form`
-  padding: 20px;
-  border: 1px solid #e8e5ed;
-  border-radius: 14px;
-  background: #fff;
-`,
-    Xt = o.div`
-  display: flex;
-  gap: 10px;
-  .ant-input-affix-wrapper { min-width: 0; }
-  @media (max-width: 380px) {
-    flex-direction: column;
-  }
-`,
-    Jt = o.p`
-  margin: 12px 0 0;
-  font-size: 12px;
-  line-height: 1.6;
-  color: #706a7c;
-`,
-    ae = o.div`
-  padding: 36px 16px;
-  text-align: center;
-  color: #706a7c;
-  p { margin: 8px 0 0; font-size: 14px; line-height: 1.6; }
-`,
-    en = o.div`
-  margin: 24px 0 12px;
-  color: #706a7c;
-  font-size: 13px;
-  font-weight: 600;
-`,
-    tn = o.ul`
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 10px;
-`,
-    nn = o.button`
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  width: 100%;
-  padding: 18px;
-  text-align: left;
-  font: inherit;
-  color: #3f394d;
-  background: #fff;
-  border: 1px solid #e8e5ed;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: border-color 150ms, background 150ms;
-  > span:nth-child(2) { flex: 1; min-width: 0; }
-  strong { display: block; font-size: 15px; overflow-wrap: anywhere; }
-  small { display: block; margin-top: 4px; color: #706a7c; font-size: 13px; }
-  .school-icon { color: #6d3acb; font-size: 22px; }
-  &:hover { border-color: #b59adf; background: #f8f5fd; }
-  &:focus-visible { outline: 3px solid #6d3acb; outline-offset: 2px; }
-`,
-    an = de(() => {
-        var u;
-        const [t, r] = i.useState(!1), [n, a] = i.useState(!1), l = () => {
-            a(!0)
-        }, d = () => {
-            z.confirm({
-                title: "Leave your school?",
-                content: "Your school will be removed from your account. You can add a school again anytime in Settings.",
-                cancelText: "Cancel",
-                okText: "Leave school",
-                onOk: () => s(null)
-            })
-        }, s = p => {
-            t || (r(!0), R({
-                url: "/api/user/update-school",
-                data: {
-                    schoolDiggerId: p == null ? void 0 : p.schoolid
-                },
-                success: () => {
-                    a(!1), X({
-                        onSuccess: () => {
-                            De(nt)
-                        }
-                    })
-                },
-                both: () => r(!1),
-                error: () => {
-                    re({
-                        default: {
-                            title: "An error ocurred while trying to update your school",
-                            content: "Please try again later or contact support"
-                        }
-                    })
-                }
-            }))
-        }, c = (u = F()) == null ? void 0 : u.schoolName;
-        return e.jsxs(e.Fragment, {
-            children: [c ? e.jsxs(U, {
-                children: [e.jsxs(sn, {
-                    children: [e.jsx(je, {
-                        "aria-hidden": "true",
-                        children: e.jsx(oe, {})
-                    }), e.jsx(on, {
-                        children: c
-                    })]
-                }), e.jsxs(cn, {
-                    children: [e.jsx(m, {
-                        onClick: l,
-                        disabled: t,
-                        children: "Change school"
-                    }), e.jsx(m, {
-                        type: "link",
-                        size: "small",
-                        onClick: d,
-                        disabled: t,
-                        style: {
-                            fontSize: 12
-                        },
-                        children: "Leave this school"
-                    })]
-                })]
-            }) : e.jsxs(rn, {
-                children: [e.jsx(je, {
-                    "aria-hidden": "true",
-                    children: e.jsx(oe, {})
-                }), e.jsx("h3", {
-                    children: "Add your school"
-                }), e.jsx(ln, {
-                    children: "Connect with the educators at your school and discover their kits in your school library."
-                }), e.jsx(m, {
-                    type: "primary",
-                    icon: e.jsx(Ue, {}),
-                    onClick: l,
-                    children: "Add your school"
-                })]
-            }), e.jsx(Kt, {
-                visible: n,
-                saving: t,
-                hasSchool: !!c,
-                close: () => a(!1),
-                selectSchool: s
-            })]
-        })
-    }),
-    je = o.span`
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  flex-shrink: 0;
-  border-radius: 14px;
-  color: #6d3acb;
-  background: #f2ebfc;
-  font-size: 24px;
-`,
-    rn = o.div`
-  padding: 28px 20px;
-  text-align: center;
-  background: #faf9fc;
-  border: 1px dashed #dcd7e5;
-  border-radius: 12px;
-  h3 { margin: 16px 0 8px; font-size: 18px; font-weight: 700; }
-  p { max-width: 360px; margin: 0 auto 20px; }
-`,
-    sn = o.div`
-  display: flex;
-  gap: 14px;
-  align-items: center;
-  min-width: 0;
-  flex: 1 1 250px;
-`,
-    on = o.div`
-  font-size: 16px;
-  font-weight: 600;
-  overflow-wrap: anywhere;
-`,
-    ln = o.p`
-  color: #706a7c;
-  font-size: 14px;
-  line-height: 1.6;
-`,
-    cn = o.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-`,
-    dn = () => e.jsxs(e.Fragment, {
-        children: [e.jsx(P, {
-            title: "Name",
-            children: e.jsx(Ht, {})
-        }), e.jsx(P, {
-            title: "Username",
-            children: e.jsx(qt, {})
-        }), T() ? null : e.jsx(P, {
-            title: "School",
-            children: e.jsx(an, {})
-        })]
-    }),
-    {
-        Option: un
-    } = J,
-    pn = ["$", "€", "¥", "£", "X̶", "₩"],
-    hn = () => {
-        const [t, r] = i.useState(localStorage.getItem(E.currency) || "$"), n = a => {
-            localStorage.setItem(E.currency, a), r(a)
-        };
-        return e.jsx(V, {
-            title: "Currency",
-            description: "Currency to be used while playing Gimkit (non-2D modes)",
-            children: e.jsx(J, {
-                "aria-label": "Currency",
-                value: t,
-                style: {
-                    width: 200
-                },
-                onChange: n,
-                children: pn.map(a => e.jsx(un, {
-                    value: a,
-                    children: a
-                }, a))
-            })
-        })
-    },
-    {
-        Option: mn
-    } = J,
-    xn = st(),
-    gn = () => {
-        const [t, r] = i.useState(rt(localStorage.getItem(E.language)) || "English"), n = a => {
-            const l = it(a);
-            localStorage.setItem(E.language, l), r(a)
-        };
-        return e.jsx(V, {
-            title: "Language",
-            description: "Language used for upgrade names and other text while playing Gimkit (non-2D modes)",
-            children: e.jsx(J, {
-                "aria-label": "Language",
-                value: t,
-                style: {
-                    width: 200
-                },
-                onChange: n,
-                children: xn.map(a => e.jsx(mn, {
-                    value: a,
-                    children: a
-                }, a))
-            })
-        })
-    },
-    fn = () => {
-        const [t, r] = i.useState(!!localStorage.getItem(E.allowGoogleTranslate)), n = a => {
-            a ? localStorage.setItem(E.allowGoogleTranslate, "allow") : localStorage.removeItem(E.allowGoogleTranslate), r(a)
-        };
-        return e.jsx(V, {
-            title: "Allow Google Translate",
-            description: "Allow Google Chrome to translate text inside of live games?",
-            children: e.jsx(ue, {
-                "aria-label": "Allow Google Translate",
-                onClick: n,
-                checked: t
-            })
-        })
-    },
-    yn = () => {
-        const [t, r] = i.useState(!!localStorage.getItem(E.cosmosBlockedInGame)), n = a => {
-            a ? localStorage.setItem(E.cosmosBlockedInGame, "true") : localStorage.removeItem(E.cosmosBlockedInGame), r(a)
-        };
-        return e.jsx(V, {
-            title: "Disable Cosmetics",
-            description: "Gims, trails, and stickers are disabled in-game. All players appear as default Gims.",
-            children: e.jsx(ue, {
-                "aria-label": "Disable cosmetics",
-                onClick: n,
-                checked: t
-            })
-        })
-    },
-    bn = () => {
-        const [t, r] = i.useState(!0), [n, a] = i.useState(!1), [l, d] = i.useState(""), s = () => {
-            _({
-                url: "/api/user/display-name",
-                success: p => {
-                    d(p.name)
-                },
-                both: () => r(!1)
-            })
-        }, c = p => {
-            d(p.target.value)
-        }, u = () => {
-            if (n) return;
-            let p = l;
-            if (p && (p = p.trim(), p.length < 2)) {
-                re({
-                    default: {
-                        title: "Display name must be at least 2 characters long"
-                    }
-                });
-                return
+            "aes-192-ecb": {
+                cipher: `AES`,
+                key: 192,
+                iv: 0,
+                mode: `ECB`,
+                type: `block`
+            },
+            "aes-256-ecb": {
+                cipher: `AES`,
+                key: 256,
+                iv: 0,
+                mode: `ECB`,
+                type: `block`
+            },
+            "aes-128-cbc": {
+                cipher: `AES`,
+                key: 128,
+                iv: 16,
+                mode: `CBC`,
+                type: `block`
+            },
+            "aes-192-cbc": {
+                cipher: `AES`,
+                key: 192,
+                iv: 16,
+                mode: `CBC`,
+                type: `block`
+            },
+            "aes-256-cbc": {
+                cipher: `AES`,
+                key: 256,
+                iv: 16,
+                mode: `CBC`,
+                type: `block`
+            },
+            aes128,
+            aes192,
+            aes256,
+            "aes-128-cfb": {
+                cipher: `AES`,
+                key: 128,
+                iv: 16,
+                mode: `CFB`,
+                type: `stream`
+            },
+            "aes-192-cfb": {
+                cipher: `AES`,
+                key: 192,
+                iv: 16,
+                mode: `CFB`,
+                type: `stream`
+            },
+            "aes-256-cfb": {
+                cipher: `AES`,
+                key: 256,
+                iv: 16,
+                mode: `CFB`,
+                type: `stream`
+            },
+            "aes-128-cfb8": {
+                cipher: `AES`,
+                key: 128,
+                iv: 16,
+                mode: `CFB8`,
+                type: `stream`
+            },
+            "aes-192-cfb8": {
+                cipher: `AES`,
+                key: 192,
+                iv: 16,
+                mode: `CFB8`,
+                type: `stream`
+            },
+            "aes-256-cfb8": {
+                cipher: `AES`,
+                key: 256,
+                iv: 16,
+                mode: `CFB8`,
+                type: `stream`
+            },
+            "aes-128-cfb1": {
+                cipher: `AES`,
+                key: 128,
+                iv: 16,
+                mode: `CFB1`,
+                type: `stream`
+            },
+            "aes-192-cfb1": {
+                cipher: `AES`,
+                key: 192,
+                iv: 16,
+                mode: `CFB1`,
+                type: `stream`
+            },
+            "aes-256-cfb1": {
+                cipher: `AES`,
+                key: 256,
+                iv: 16,
+                mode: `CFB1`,
+                type: `stream`
+            },
+            "aes-128-ofb": {
+                cipher: `AES`,
+                key: 128,
+                iv: 16,
+                mode: `OFB`,
+                type: `stream`
+            },
+            "aes-192-ofb": {
+                cipher: `AES`,
+                key: 192,
+                iv: 16,
+                mode: `OFB`,
+                type: `stream`
+            },
+            "aes-256-ofb": {
+                cipher: `AES`,
+                key: 256,
+                iv: 16,
+                mode: `OFB`,
+                type: `stream`
+            },
+            "aes-128-ctr": {
+                cipher: `AES`,
+                key: 128,
+                iv: 16,
+                mode: `CTR`,
+                type: `stream`
+            },
+            "aes-192-ctr": {
+                cipher: `AES`,
+                key: 192,
+                iv: 16,
+                mode: `CTR`,
+                type: `stream`
+            },
+            "aes-256-ctr": {
+                cipher: `AES`,
+                key: 256,
+                iv: 16,
+                mode: `CTR`,
+                type: `stream`
+            },
+            "aes-128-gcm": {
+                cipher: `AES`,
+                key: 128,
+                iv: 12,
+                mode: `GCM`,
+                type: `auth`
+            },
+            "aes-192-gcm": {
+                cipher: `AES`,
+                key: 192,
+                iv: 12,
+                mode: `GCM`,
+                type: `auth`
+            },
+            "aes-256-gcm": {
+                cipher: `AES`,
+                key: 256,
+                iv: 12,
+                mode: `GCM`,
+                type: `auth`
             }
-            a(!0), _({
-                url: "/api/user/display-name",
-                data: {
-                    name: p
-                },
-                success: h => {
-                    Y.success("Display name updated!"), d(h.name)
-                },
-                error: h => {
-                    re({
-                        e: h,
-                        default: {
-                            title: "Error updating display name"
-                        }
-                    })
-                },
-                both: () => a(!1)
-            })
-        };
-        return Ye(s), e.jsx(V, {
-            title: "Display Name",
-            description: "The name you appear as in-game when hosting a game. Leave empty to use your account name.",
-            children: e.jsxs("div", {
-                className: "flex vc",
-                children: [e.jsx(B, {
-                    "aria-label": "Display name",
-                    disabled: t,
-                    value: l,
-                    maxLength: 20,
-                    style: {
-                        width: 200,
-                        marginRight: 10
-                    },
-                    placeholder: "Ms. Gimkit",
-                    onPressEnter: u,
-                    onChange: c
-                }), e.jsx(m, {
-                    loading: n,
-                    onClick: u,
-                    type: "primary",
-                    children: "Save"
-                })]
-            })
-        })
-    },
-    jn = ["user-preferences"],
-    vn = () => ze({
-        queryKey: [jn],
-        retry: !1,
-        queryFn: () => O({
-            url: "/api/user/preferences"
-        })
-    }),
-    ve = "six-seven-mode",
-    wn = () => {
-        const [t, r] = i.useState(!1), {
-            data: n
-        } = vn();
-        i.useEffect(() => {
-            r((n == null ? void 0 : n[ve]) === !0)
-        }, [n]);
-        const a = l => {
-            r(l), R({
-                url: "/api/user/preferences",
-                data: {
-                    key: ve,
-                    value: l
-                }
-            })
-        };
-        return n ? e.jsx(V, {
-            title: e.jsxs("div", {
-                className: "flex vc",
-                children: ["67 Mode", " ", e.jsx(pe, {
-                    color: "green",
-                    style: {
-                        marginLeft: 5
-                    },
-                    children: "Limited Time"
-                })]
-            }),
-            description: `To be honest, we don't even know what this means. But the kids seem to like it. Ensures your game codes start with "67".`,
-            children: e.jsx(ue, {
-                "aria-label": "67 Mode",
-                onClick: a,
-                checked: t
-            })
-        }) : null
-    },
-    V = t => e.jsx(Te, {
-        children: e.jsxs(Cn, {
-            children: [e.jsxs("div", {
-                children: [e.jsx("h3", {
-                    children: t.title
-                }), e.jsx("p", {
-                    children: t.description
-                })]
-            }), e.jsx($n, {
-                children: t.children
-            })]
-        })
-    }),
-    Sn = () => e.jsxs(e.Fragment, {
-        children: [e.jsx(bn, {}), e.jsx(fn, {}), e.jsx(yn, {}), e.jsx(wn, {}), e.jsxs(kn, {
-            children: [e.jsx("summary", {
-                children: "Legacy options"
-            }), e.jsx(hn, {}), e.jsx(gn, {})]
-        })]
-    }),
-    kn = o.details`
-  background: #fff;
-  border: 1px solid #e8e5ed;
-  border-radius: 16px;
-  margin-bottom: 18px;
-
-  summary {
-    padding: 22px 26px;
-    color: #3f394d;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 16px;
-  }
-
-  summary:focus-visible {
-    outline: 2px solid #6d3acb;
-    outline-offset: 4px;
-  }
-
-  > section {
-    margin: 0;
-    border: 0;
-    border-top: 1px solid #efedf2;
-    border-radius: 0;
-    background: transparent;
-  }
-
-  @media (max-width: 600px) {
-    summary {
-      padding: 20px;
-    }
-  }
-`,
-    Cn = o.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-  > div:first-child {
-    flex: 1 1 240px;
-  }
-  h3 {
-    font-size: 16px;
-    font-weight: 650;
-    margin: 0 0 6px;
-  }
-  p {
-    font-size: 14px;
-    color: #706a7c;
-    line-height: 1.6;
-    margin: 0;
-  }
-`,
-    $n = o.div`
-  max-width: 100%;
-  .flex {
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  .ant-input,
-  .ant-select {
-    max-width: 100%;
-  }
-`,
-    An = o.div`
-  color: #292333;
-  .ant-alert {
-    margin-bottom: 18px;
-  }
-  .ant-btn {
-    border-radius: 9px;
-  }
-`,
-    zn = o.div`
-  padding: 28px;
-  background: #fff;
-  border-radius: 16px;
-  margin-bottom: 18px;
-`,
-    Rn = o.div`
-  & + & {
-    border-top: 1px solid #eee9f2;
-    padding-top: 24px;
-    margin-top: 24px;
-  }
-`,
-    En = o.p`
-  font-size: 14px;
-  color: #746c7f;
-  line-height: 1.6;
-  margin: 16px 0;
-`,
-    we = o.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 18px;
-`,
-    me = o.div`
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  min-width: 0;
-  overflow-wrap: anywhere;
-  p {
-    margin: 4px 0 0;
-    font-size: 13px;
-    color: #77707f;
-    line-height: 1.5;
-  }
-  strong {
-    font-size: 14px;
-  }
-`,
-    xe = o.div`
-  background: #f5f2f8;
-  border-radius: 12px;
-  width: 42px;
-  height: 42px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  color: #877298;
-`,
-    Pe = o.p`
-  font-size: 12px;
-  color: #82798c;
-  margin: 20px 0 0;
-  padding-top: 16px;
-  border-top: 1px solid #efedf2;
-  line-height: 1.6;
-`,
-    Tn = o.div`
-  padding: 12px 10px 18px;
-  text-align: center;
-  color: #8c8098;
-  > .anticon {
-    font-size: 25px;
-  }
-  p {
-    margin: 12px 0 5px;
-    font-weight: 600;
-    font-size: 14px;
-    color: #60546c;
-  }
-  span {
-    font-size: 13px;
-    line-height: 1.6;
-  }
-`,
-    In = o.div`
-  margin-top: -8px;
-`,
-    Pn = o.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 18px 0;
-  & + & {
-    border-top: 1px solid #efedf2;
-  }
-  @media (max-width: 500px) {
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-`,
-    Ln = o.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 6px;
-  flex-shrink: 0;
-  font-size: 14px;
-  a,
-  span {
-    font-size: 12px;
-  }
-  a {
-    color: #8052a7;
-  }
-`,
-    Nn = o.div`
-  color: #3f8068;
-  font-size: 12px;
-  margin-top: 5px;
-`,
-    Mn = o.div`
-  text-align: center;
-  margin-top: 18px;
-`;
-o.p`
-  text-align: center;
-  font-size: 13px;
-  color: #857b8e;
-  line-height: 1.7;
-  a {
-    color: #78509c;
-  }
-`;
-const Le = o.div`
-  padding-top: 8px;
-  p {
-    color: #71667b;
-    line-height: 1.7;
-  }
-`,
-    Q = o.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 18px;
-  background: #f5f0fa;
-  border-radius: 10px;
-  margin: 20px 0;
-  strong {
-    font-size: 22px;
-    color: #553274;
-  }
-`,
-    On = () => ze({
-        queryKey: ["billing-overview"],
-        queryFn: () => O({
-            url: "/api/billing/overview"
-        }),
-        retry: !1,
-        staleTime: 0
-    }),
-    Fn = () => ot({
-        queryKey: ["billing-receipts"],
-        queryFn: ({
-            pageParam: t
-        }) => O({
-            url: `/api/billing/receipts${t?`?cursor=${encodeURIComponent(t)}`:""}`
-        }),
-        getNextPageParam: t => t.nextCursor || void 0,
-        retry: !1
-    }),
-    A = t => new Date(typeof t == "number" ? t * 1e3 : /^\d{4}-\d{2}-\d{2}$/.test(t) ? `${t}T00:00:00` : t).toLocaleDateString(void 0, {
-        month: "short",
-        day: "numeric",
-        year: "numeric"
-    }),
-    Bn = (t, r) => new Intl.NumberFormat(void 0, {
-        style: "currency",
-        currency: r
-    }).format(t / 100),
-    Un = t => {
-        const r = [],
-            n = (s, c) => r.push({
-                icon: s,
-                text: c
-            }),
-            a = t.groups.filter(s => s.active),
-            l = t.subscriptions.find(s => s.id === t.primarySubscriptionId) || t.subscriptions.find(s => ["active", "trialing"].includes(s.status) && s.plan === t.plan),
-            d = t.plan === "basic";
-        if (d) return r;
-        if (t.source === "bulk") a.forEach(s => n("group", `Paid for by ${s.name}${s.expiresAt?` · ${s.renews?"renews":"covered until"} ${A(s.expiresAt)}`:""}.`)), a.length || n("group", "Your plan is provided by your group.");
-        else if (t.source === "metadata") {
-            const s = t.accountCoverage;
-            (s == null ? void 0 : s.type) === "freeTrial" ? n("gift", s.expiresAt ? `Your free trial ends ${A(s.expiresAt)}.` : "You’re on a free trial."): (s == null ? void 0 : s.type) === "payForMe" ? (n("gift", "Paid for using Pay For Me."), s.expiresAt && n("calendar", `Your access continues until ${A(s.expiresAt)}.`)) : (s == null ? void 0 : s.type) === "purchaseOrder" ? (n("document", `Paid by purchase order${s.expiresAt?` through ${A(s.expiresAt)}`:""}.`), n("check", "This plan won’t renew automatically.")) : s != null && s.expiresAt ? n("calendar", `Your access is provided through ${A(s.expiresAt)}.`) : t.providedByMessage ? n("document", t.providedByMessage) : n("document", "Your plan is provided through your account.")
-        } else if (l)
-            if (l.cancelAtPeriodEnd) n("check", "Your subscription is canceled and won’t renew."), n("calendar", `Your ${l.status==="trialing"?"trial":"access"} continues until ${A(l.periodEnd)}.`);
-            else if (l.billingPaused || l.status === "paused") n("attention", "Billing for your personal subscription is paused.");
-        else if (["past_due", "unpaid", "incomplete"].includes(l.status)) n("attention", "Your subscription payment needs attention. Manage it below.");
-        else {
-            const s = l.status === "trialing";
-            if (s ? n("gift", `Your free trial ends ${A(l.periodEnd)}.`) : n("renewal", l.interval === "month" ? "You pay monthly for this plan." : l.interval === "year" ? "You pay annually for this plan." : "You pay for this subscription."), l.pendingUpdate) n("attention", "Your subscription change is awaiting payment.");
-            else if (l.nextCharge) {
-                const c = l.nextCharge;
-                n("calendar", c.amount === 0 ? `No payment is due on your next invoice (${A(c.date)}).` : `${s?"Your first payment":"Your next payment"} is ${Bn(c.amount,c.currency)} on ${A(c.date)}.`)
-            } else l.nextChargeUnavailable && n("attention", "Your next payment details are temporarily unavailable.")
-        } else n("attention", "Your subscription details are temporarily unavailable.");
-        return !d && t.source !== "bulk" && a.forEach(s => n("group", `Also covered by ${s.name}${s.expiresAt?` until ${A(s.expiresAt)}`:""}.`)), r
-    },
-    Dn = {
-        calendar: et,
-        check: Ee,
-        card: he,
-        document: ie,
-        gift: $t,
-        renewal: It,
-        group: Re,
-        attention: lt
-    },
-    Yn = ({
-        billing: t
-    }) => {
-        const r = Un(t);
-        return e.jsxs(Gn, {
-            "aria-labelledby": "billing-plan-title",
-            children: [e.jsx(Hn, {
-                children: e.jsxs("div", {
-                    children: [e.jsx(Vn, {
-                        children: "Your plan"
-                    }), e.jsx("h2", {
-                        id: "billing-plan-title",
-                        children: ce(t.plan).replace(" (Monthly)", "")
-                    })]
-                })
-            }), r.length > 0 && e.jsx(_n, {
-                children: r.map((n, a) => {
-                    const l = Dn[n.icon];
-                    return e.jsxs(Wn, {
-                        children: [e.jsx(qn, {
-                            "aria-hidden": "true",
-                            children: e.jsx(l, {})
-                        }), e.jsx("span", {
-                            children: n.text
-                        })]
-                    }, a)
-                })
-            })]
-        })
-    },
-    Gn = o.section`
-  background: #fff;
-  border: 1px solid #e5e1eb;
-  border-radius: 18px;
-  overflow: hidden;
-  margin-bottom: 24px;
-`,
-    Hn = o.div`
-  padding: 26px 28px 22px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
-  h2 {
-    margin: 4px 0 0;
-    font-size: 29px;
-    letter-spacing: -0.9px;
-    font-weight: 750;
-    color: #292333;
-    line-height: 1.2;
-  }
-  @media (max-width: 600px) {
-    padding: 22px 20px;
-    h2 {
-      font-size: 25px;
-    }
-  }
-`,
-    Vn = o.div`
-  font-size: 12px;
-  color: #84798d;
-`,
-    _n = o.ul`
-  list-style: none;
-  margin: 0;
-  padding: 0 28px 26px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  @media (max-width: 600px) {
-    padding: 0 20px 22px;
-  }
-`,
-    Wn = o.li`
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  font-size: 14px;
-  line-height: 1.6;
-  > span {
-    min-width: 0;
-    overflow-wrap: anywhere;
-  }
-  color: #65576f;
-`,
-    qn = o.span`
-  width: 20px;
-  height: 22px;
-  font-size: 18px;
-  color: #947eaa;
-  flex-shrink: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-`,
-    Zn = [
-        ["break", "Summer break / taking a break"],
-        ["didNotUse", "Didn’t use it much"],
-        ["anotherService", "Using another service"],
-        ["unhappy", "Unhappy with the product"],
-        ["couldNotGetItToWork", "Couldn’t get it to work"],
-        ["cost", "Too expensive"],
-        ["schoolNoPay", "My school won’t pay for it"],
-        ["noAutoRenew", "Don’t want my subscription to renew automatically"],
-        ["leaving", "Leaving the classroom"],
-        ["retiring", "Retiring"],
-        ["other", "Other"]
-    ],
-    Kn = ({
-        subscription: t,
-        loading: r,
-        error: n,
-        onClose: a,
-        onSubmit: l
-    }) => {
-        const [d, s] = i.useState("group-check"), [c, u] = i.useState(""), [p, h] = i.useState(""), y = new Date(t.periodEnd * 1e3).toLocaleDateString(void 0, {
-            month: "short",
-            day: "numeric",
-            year: "numeric"
-        });
-        return e.jsx(z, {
-            open: !0,
-            title: d === "group-check" ? "Are you canceling because you're joining a group license?" : d === "group-info" ? "To get a refund, don't cancel your subscription just yet!" : "Cancel your subscription",
-            onCancel: () => !r && a(),
-            footer: null,
-            closable: !r,
-            maskClosable: !r,
-            keyboard: !r,
-            children: e.jsxs(Qn, {
-                children: [d === "group-check" && e.jsxs(e.Fragment, {
-                    children: [e.jsx(m, {
-                        block: !0,
-                        size: "large",
-                        onClick: () => s("group-info"),
-                        children: "Yes"
-                    }), e.jsx(m, {
-                        block: !0,
-                        size: "large",
-                        onClick: () => s("reason"),
-                        children: "No"
-                    })]
-                }), d === "group-info" && e.jsxs(e.Fragment, {
-                    children: [e.jsxs("p", {
-                        children: ["If you're joining a group license, ask your group manager for the", " ", e.jsx("strong", {
-                            children: "invite link."
-                        }), " ", e.jsx("br", {}), " ", e.jsx("br", {}), "When you open the invite link, your current subscription will automatically be canceled, and you will receive a refund for your unused time on ", ce(t.plan), ". ", e.jsx("br", {}), " ", e.jsx("br", {}), " If you cancel now, you will not be refunded for your unused time."]
-                    }), e.jsx(m, {
-                        block: !0,
-                        type: "primary",
-                        onClick: a,
-                        children: "Got It!"
-                    }), e.jsx(m, {
-                        block: !0,
-                        type: "text",
-                        onClick: () => s("reason"),
-                        children: "Cancel subscription anyway"
-                    })]
-                }), d === "reason" && e.jsxs(e.Fragment, {
-                    children: [e.jsxs("p", {
-                        children: ["Your subscription will stop renewing. You’ll keep access until", " ", e.jsx("strong", {
-                            children: y
-                        }), ", and everything you’ve created stays in your account."]
-                    }), e.jsxs("p", {
-                        id: "cancel-reason-label",
-                        children: ["What made you decide to cancel? ", e.jsx(Xn, {
-                            children: "(optional)"
-                        })]
-                    }), e.jsx(be.Group, {
-                        "aria-labelledby": "cancel-reason-label",
-                        value: c,
-                        onChange: x => u(x.target.value),
-                        disabled: r,
-                        children: Zn.map(([x, b]) => e.jsx(be, {
-                            value: x,
-                            children: b
-                        }, x))
-                    }), c === "other" && e.jsx(B.TextArea, {
-                        "aria-label": "Other cancellation reason",
-                        placeholder: "Tell us more…",
-                        value: p,
-                        onChange: x => h(x.target.value),
-                        maxLength: 2e3,
-                        rows: 3,
-                        disabled: r
-                    }), n && e.jsx($, {
-                        type: "error",
-                        showIcon: !0,
-                        message: n
-                    }), e.jsx(m, {
-                        block: !0,
-                        type: "primary",
-                        danger: !0,
-                        loading: r,
-                        disabled: r,
-                        onClick: () => l(c, c === "other" ? p.trim() : ""),
-                        children: "Cancel subscription"
-                    }), e.jsx(m, {
-                        block: !0,
-                        disabled: r,
-                        onClick: a,
-                        children: "Keep subscription"
-                    })]
-                })]
-            })
-        })
-    },
-    Qn = o.div`
-  p {
-    color: #71667b;
-    line-height: 1.7;
-  }
-  .ant-radio-group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin: 0 0 20px;
-  }
-  .ant-btn + .ant-btn {
-    margin-top: 10px;
-  }
-  textarea {
-    margin-bottom: 18px;
-  }
-  .ant-alert {
-    margin-bottom: 18px;
-  }
-`,
-    Xn = o.span`
-  color: #95899e;
-  font-size: 12px;
-`,
-    L = (t, r) => new Intl.NumberFormat(void 0, {
-        style: "currency",
-        currency: r
-    }).format(t / 100),
-    W = t => new Date(typeof t == "number" ? t * 1e3 : /^\d{4}-\d{2}-\d{2}$/.test(t) ? `${t}T00:00:00` : t).toLocaleDateString(void 0, {
-        month: "short",
-        day: "numeric",
-        year: "numeric"
-    }),
-    Jn = ({
-        subscription: t,
-        canUpdatePaymentMethod: r,
-        busy: n,
-        updateCard: a,
-        previewAnnual: l,
-        onResume: d,
-        onCancel: s
-    }) => e.jsxs(Rn, {
-        children: [e.jsxs(U, {
-            children: [e.jsxs("div", {
-                children: [e.jsx("strong", {
-                    children: ce(t.plan).replace(" (Monthly)", "")
-                }), e.jsxs("p", {
-                    children: [t.amount !== null ? L(t.amount, t.currency) : "Custom pricing", " ", "/", " ", t.interval === "year" ? "year" : t.interval]
-                })]
-            }), t.cancelAtPeriodEnd && e.jsx(pe, {
-                children: "Canceled"
-            })]
-        }), ["past_due", "unpaid", "incomplete"].includes(t.status) && e.jsx($, {
-            style: {
-                margin: "20px 0"
+        }
+    })),
+    require_modes$1 = __commonJSMin(((e, t) => {
+        var n = {
+                ECB: require_ecb(),
+                CBC: require_cbc(),
+                CFB: require_cfb(),
+                CFB8: require_cfb8(),
+                CFB1: require_cfb1(),
+                OFB: require_ofb(),
+                CTR: require_ctr(),
+                GCM: require_ctr()
             },
-            type: "warning",
-            showIcon: !0,
-            message: t.status === "incomplete" ? "Complete your first payment to start your subscription." : "Your subscription payment hasn’t gone through.",
-            description: e.jsxs(e.Fragment, {
-                children: [e.jsx("p", {
-                    children: t.paymentUrl ? "Complete the authentication requested by your bank to finish this payment." : "Update your card and we’ll retry the outstanding subscription payment. If payment still needs attention afterward, contact support."
-                }), e.jsxs(we, {
-                    children: [t.paymentUrl && e.jsxs(m, {
-                        type: "primary",
-                        href: t.paymentUrl,
-                        target: "_blank",
-                        rel: "noopener noreferrer",
-                        children: ["Complete payment ", e.jsx(H, {})]
-                    }), r && e.jsx(m, {
-                        disabled: !!n,
-                        loading: n === "card",
-                        onClick: a,
-                        children: "Update card"
-                    })]
-                })]
-            })
-        }), t.pendingUpdate && !["past_due", "unpaid", "incomplete"].includes(t.status) && e.jsxs(En, {
-            children: ["An update is awaiting payment. Your current plan stays in place until payment is completed.", " ", t.paymentUrl && e.jsxs("a", {
-                href: t.paymentUrl,
-                target: "_blank",
-                rel: "noopener noreferrer",
-                children: ["Complete payment ", e.jsx(H, {})]
-            })]
-        }), e.jsxs(we, {
-            children: [t.canResume && e.jsx(m, {
-                type: "primary",
-                disabled: !!n,
-                onClick: () => d(t),
-                children: "Resume subscription"
-            }), t.canSwitchToAnnual && e.jsx(m, {
-                type: "primary",
-                disabled: !!n,
-                loading: n === t.id,
-                onClick: () => l(t),
-                children: "Change to annual billing"
-            }), !t.cancelAtPeriodEnd && ["active", "trialing", "past_due", "unpaid"].includes(t.status) && e.jsx(m, {
-                disabled: !!n,
-                onClick: () => s(t),
-                children: "Cancel subscription"
-            })]
-        })]
-    }),
-    ea = ({
-        groups: t,
-        hasPersonalSubscription: r
-    }) => t.length ? e.jsxs(P, {
-        title: "Group licenses",
-        children: [t.map(n => e.jsxs(U, {
-            children: [e.jsxs(me, {
-                children: [e.jsx(xe, {
-                    children: e.jsx(Re, {})
-                }), e.jsxs("div", {
-                    children: [e.jsx("strong", {
-                        children: n.name
-                    }), e.jsx("p", {
-                        children: n.expiresAt ? `${n.renews?"Renews":new Date(n.expiresAt).getTime()<Date.now()?"Expired":"Expires"} ${W(n.expiresAt)}` : "No expiration date available"
-                    }), n.statusText && e.jsx("p", {
-                        children: n.statusText
-                    })]
-                })]
-            }), e.jsx(pe, {
-                color: n.active ? "green" : "default",
-                children: n.active ? "Active" : n.deactivatedForNonpayment ? "Deactivated" : "Expired"
-            })]
-        }, n.id)), r && e.jsx(Pe, {
-            children: "Your personal subscription is billed separately."
-        })]
-    }) : null,
-    ta = ({
-        data: t,
-        busy: r,
-        updateCard: n
-    }) => t.canUpdatePaymentMethod ? e.jsxs(P, {
-        title: "Payment method",
-        children: [e.jsxs(U, {
-            children: [e.jsxs(me, {
-                children: [e.jsx(xe, {
-                    children: e.jsx(he, {})
-                }), e.jsxs("div", {
-                    children: [e.jsx("strong", {
-                        children: t.paymentMethod ? `${t.paymentMethod.brand.toUpperCase()} •••• ${t.paymentMethod.last4}` : "No card on file"
-                    }), e.jsx("p", {
-                        children: t.paymentMethod ? `Expires ${String(t.paymentMethod.expMonth).padStart(2,"0")}/${t.paymentMethod.expYear}` : t.source === "bulk" ? "Your group handles payment for your group plan." : "Add a card to use for future payments."
-                    })]
-                })]
-            }), t.canUpdatePaymentMethod && e.jsx(m, {
-                disabled: !!r,
-                loading: r === "card",
-                onClick: n,
-                children: t.paymentMethod ? "Update card" : "Add card"
-            })]
-        }), t.balance !== 0 && e.jsx(Pe, {
-            children: t.balance < 0 ? `Account credit: ${L(-t.balance,t.currency)}. Applied automatically to future invoices.` : `Account balance: ${L(t.balance,t.currency)}.`
-        })]
-    }) : null,
-    na = ({
-        receipts: t
-    }) => {
-        var n;
-        const r = ((n = t.data) == null ? void 0 : n.pages.flatMap(a => a.receipts)) || [];
-        return e.jsx(P, {
-            title: "Receipts",
-            children: t.isLoading ? e.jsx($e, {
-                active: !0,
-                paragraph: {
-                    rows: 3
+            r = (init_list(), __toCommonJS(list_exports).default);
+        for (var i in r) r[i].module = n[r[i].mode];
+        t.exports = r
+    })),
+    require_aes = __commonJSMin(((e, t) => {
+        var n = require_safe_buffer$1().Buffer;
+
+        function r(e) {
+            n.isBuffer(e) || (e = n.from(e));
+            for (var t = e.length / 4 | 0, r = Array(t), i = 0; i < t; i++) r[i] = e.readUInt32BE(i * 4);
+            return r
+        }
+
+        function i(e) {
+            for (var t = 0; t < e.length; e++) e[t] = 0
+        }
+
+        function a(e, t, n, r, i) {
+            for (var a = n[0], s = n[1], c = n[2], l = n[3], u = e[0] ^ t[0], d = e[1] ^ t[1], f = e[2] ^ t[2], p = e[3] ^ t[3], m, h, g, _, v = 4, y = 1; y < i; y++) m = a[u >>> 24] ^ s[d >>> 16 & 255] ^ c[f >>> 8 & 255] ^ l[p & 255] ^ t[v++], h = a[d >>> 24] ^ s[f >>> 16 & 255] ^ c[p >>> 8 & 255] ^ l[u & 255] ^ t[v++], g = a[f >>> 24] ^ s[p >>> 16 & 255] ^ c[u >>> 8 & 255] ^ l[d & 255] ^ t[v++], _ = a[p >>> 24] ^ s[u >>> 16 & 255] ^ c[d >>> 8 & 255] ^ l[f & 255] ^ t[v++], u = m, d = h, f = g, p = _;
+            return m = (r[u >>> 24] << 24 | r[d >>> 16 & 255] << 16 | r[f >>> 8 & 255] << 8 | r[p & 255]) ^ t[v++], h = (r[d >>> 24] << 24 | r[f >>> 16 & 255] << 16 | r[p >>> 8 & 255] << 8 | r[u & 255]) ^ t[v++], g = (r[f >>> 24] << 24 | r[p >>> 16 & 255] << 16 | r[u >>> 8 & 255] << 8 | r[d & 255]) ^ t[v++], _ = (r[p >>> 24] << 24 | r[u >>> 16 & 255] << 16 | r[d >>> 8 & 255] << 8 | r[f & 255]) ^ t[v++], m >>>= 0, h >>>= 0, g >>>= 0, _ >>>= 0, [m, h, g, _]
+        }
+        var s = [0, 1, 2, 4, 8, 16, 32, 64, 128, 27, 54],
+            c = (function() {
+                for (var e = Array(256), t = 0; t < 256; t++) t < 128 ? e[t] = t << 1 : e[t] = t << 1 ^ 283;
+                for (var n = [], r = [], i = [
+                        [],
+                        [],
+                        [],
+                        []
+                    ], a = [
+                        [],
+                        [],
+                        [],
+                        []
+                    ], s = 0, c = 0, l = 0; l < 256; ++l) {
+                    var u = c ^ c << 1 ^ c << 2 ^ c << 3 ^ c << 4;
+                    u = u >>> 8 ^ u & 255 ^ 99, n[s] = u, r[u] = s;
+                    var d = e[s],
+                        f = e[d],
+                        p = e[f],
+                        m = e[u] * 257 ^ u * 16843008;
+                    i[0][s] = m << 24 | m >>> 8, i[1][s] = m << 16 | m >>> 16, i[2][s] = m << 8 | m >>> 24, i[3][s] = m, m = p * 16843009 ^ f * 65537 ^ d * 257 ^ s * 16843008, a[0][u] = m << 24 | m >>> 8, a[1][u] = m << 16 | m >>> 16, a[2][u] = m << 8 | m >>> 24, a[3][u] = m, s === 0 ? s = c = 1 : (s = d ^ e[e[e[p ^ d]]], c ^= e[e[c]])
                 }
-            }) : e.jsxs(e.Fragment, {
-                children: [!!r.length && e.jsx(In, {
-                    children: r.map(a => e.jsxs(Pn, {
-                        children: [e.jsxs(me, {
-                            children: [e.jsx(xe, {
-                                children: e.jsx(ie, {})
-                            }), e.jsxs("div", {
-                                children: [e.jsx("strong", {
-                                    children: a.name
-                                }), e.jsx("p", {
-                                    children: W(a.date)
-                                }), a.refunded > 0 && e.jsx(Nn, {
-                                    children: a.refunded === a.amount ? "Refunded" : `${L(a.refunded,a.currency)} refunded`
-                                })]
-                            })]
-                        }), e.jsxs(Ln, {
-                            children: [e.jsx("strong", {
-                                children: L(a.amount, a.currency)
-                            }), a.url ? e.jsxs("a", {
-                                href: a.url,
-                                target: "_blank",
-                                rel: "noopener noreferrer",
-                                "aria-label": `View receipt for ${a.name}, ${W(a.date)}, ${L(a.amount,a.currency)}`,
-                                children: ["View receipt ", e.jsx(H, {})]
-                            }) : e.jsx("span", {
-                                children: "Receipt unavailable"
-                            })]
-                        })]
-                    }, a.id))
-                }), !r.length && !t.isError && e.jsxs(Tn, {
-                    children: [e.jsx(ie, {}), e.jsx("p", {
-                        children: "No receipts yet"
-                    }), e.jsx("span", {
-                        children: "Payments made from your account will appear here."
-                    })]
-                }), t.isError && e.jsx($, {
-                    type: "error",
-                    message: "We couldn’t load receipts",
-                    action: e.jsx(m, {
-                        onClick: () => t.hasNextPage ? t.fetchNextPage() : t.refetch(),
-                        children: "Try again"
-                    })
-                }), t.hasNextPage && e.jsx(Mn, {
-                    children: e.jsx(m, {
-                        loading: t.isFetchingNextPage,
-                        onClick: () => t.fetchNextPage(),
-                        children: "Load older receipts"
-                    })
-                })]
-            })
-        })
-    },
-    aa = ({
-        annual: t,
-        busy: r,
-        error: n,
-        onClose: a,
-        onSubmit: l
-    }) => e.jsx(z, {
-        title: "Change to annual billing",
-        open: !!t,
-        onCancel: () => !r && a(),
-        onOk: l,
-        okText: "Confirm annual billing",
-        confirmLoading: r === "annual",
-        cancelButtonProps: {
-            disabled: !!r
-        },
-        closable: !r,
-        maskClosable: !r,
-        children: t && e.jsxs(Le, {
-            children: [e.jsxs(Q, {
-                children: [e.jsx("span", {
-                    children: "Annual subscription"
-                }), e.jsxs("strong", {
-                    children: [L(t.quote.annualAmount, t.quote.currency), " / year"]
-                })]
-            }), e.jsxs(Q, {
-                children: [e.jsx("span", {
-                    children: "Due today"
-                }), e.jsx("strong", {
-                    children: L(t.quote.amountDue, t.quote.currency)
-                })]
-            }), e.jsx("p", {
-                children: "Includes credit for your unused monthly time and applicable tax."
-            }), n && e.jsx($, {
-                type: "error",
-                message: n
-            })]
-        })
-    }),
-    ra = ({
-        resume: t,
-        busy: r,
-        error: n,
-        onClose: a,
-        onSubmit: l
-    }) => e.jsx(z, {
-        title: "Resume your subscription?",
-        open: !!t,
-        onCancel: () => !r && a(),
-        onOk: l,
-        okText: "Resume subscription",
-        cancelText: "Keep canceled",
-        confirmLoading: r === "resume",
-        cancelButtonProps: {
-            disabled: !!r
-        },
-        closable: !r,
-        maskClosable: !r,
-        children: t && e.jsxs(Le, {
-            children: [e.jsxs(Q, {
-                children: [e.jsx("span", {
-                    children: "Subscription price"
-                }), e.jsx("strong", {
-                    children: t.amount !== null ? `${L(t.amount,t.currency)} / ${t.interval==="year"?"year":t.interval}` : "Custom pricing"
-                })]
-            }), e.jsxs(Q, {
-                children: [e.jsx("span", {
-                    children: "Next charge"
-                }), e.jsx("strong", {
-                    children: W(t.periodEnd)
-                })]
-            }), e.jsxs("p", {
-                children: ["By resuming, your subscription will automatically charge again on", " ", W(t.periodEnd), "."]
-            }), n && e.jsx($, {
-                type: "error",
-                message: n
-            })]
-        })
-    }),
-    sa = t => {
-        var r, n, a, l;
-        return ((r = t == null ? void 0 : t.message) == null ? void 0 : r.text) || ((l = (a = (n = t == null ? void 0 : t.response) == null ? void 0 : n.data) == null ? void 0 : a.message) == null ? void 0 : l.text) || "We couldn’t complete that request. Please try again."
-    },
-    ia = (t, r) => {
-        const [n, a] = i.useState(null), [l, d] = i.useState(null), [s, c] = i.useState(null), [u, p] = i.useState(null), [h, y] = i.useState(null), x = i.useRef(!1);
-        i.useEffect(() => {
-            const f = new URLSearchParams(window.location.search).get("session_id");
-            !f || x.current || (x.current = !0, a("card"), Ge({
-                sessionId: f,
-                invokeImmediately: !0,
-                onSuccess: () => {
-                    t.refetch(), r.refetch(), Y.success("Your payment method has been updated.");
-                    const C = new URL(window.location.href);
-                    C.searchParams.delete("session_id"), window.history.replaceState(window.history.state, "", C.toString())
-                },
-                onError: () => d("We couldn’t verify your card update. Please refresh or contact support."),
-                onBoth: () => a(null)
-            }))
-        }, []);
-        const b = async (f, C) => {
-            a(f), d(null);
+                return {
+                    SBOX: n,
+                    INV_SBOX: r,
+                    SUB_MIX: i,
+                    INV_SUB_MIX: a
+                }
+            })();
+
+        function l(e) {
+            this._key = r(e), this._reset()
+        }
+        l.blockSize = 16, l.keySize = 32, l.prototype.blockSize = l.blockSize, l.prototype.keySize = l.keySize, l.prototype._reset = function() {
+            for (var e = this._key, t = e.length, n = t + 6, r = (n + 1) * 4, i = [], a = 0; a < t; a++) i[a] = e[a];
+            for (a = t; a < r; a++) {
+                var l = i[a - 1];
+                a % t === 0 ? (l = l << 8 | l >>> 24, l = c.SBOX[l >>> 24] << 24 | c.SBOX[l >>> 16 & 255] << 16 | c.SBOX[l >>> 8 & 255] << 8 | c.SBOX[l & 255], l ^= s[a / t | 0] << 24) : t > 6 && a % t === 4 && (l = c.SBOX[l >>> 24] << 24 | c.SBOX[l >>> 16 & 255] << 16 | c.SBOX[l >>> 8 & 255] << 8 | c.SBOX[l & 255]), i[a] = i[a - t] ^ l
+            }
+            for (var u = [], d = 0; d < r; d++) {
+                var f = r - d,
+                    p = i[f - (d % 4 ? 0 : 4)];
+                d < 4 || f <= 4 ? u[d] = p : u[d] = c.INV_SUB_MIX[0][c.SBOX[p >>> 24]] ^ c.INV_SUB_MIX[1][c.SBOX[p >>> 16 & 255]] ^ c.INV_SUB_MIX[2][c.SBOX[p >>> 8 & 255]] ^ c.INV_SUB_MIX[3][c.SBOX[p & 255]]
+            }
+            this._nRounds = n, this._keySchedule = i, this._invKeySchedule = u
+        }, l.prototype.encryptBlockRaw = function(e) {
+            return e = r(e), a(e, this._keySchedule, c.SUB_MIX, c.SBOX, this._nRounds)
+        }, l.prototype.encryptBlock = function(e) {
+            var t = this.encryptBlockRaw(e),
+                r = n.allocUnsafe(16);
+            return r.writeUInt32BE(t[0], 0), r.writeUInt32BE(t[1], 4), r.writeUInt32BE(t[2], 8), r.writeUInt32BE(t[3], 12), r
+        }, l.prototype.decryptBlock = function(e) {
+            e = r(e);
+            var t = e[1];
+            e[1] = e[3], e[3] = t;
+            var i = a(e, this._invKeySchedule, c.INV_SUB_MIX, c.INV_SBOX, this._nRounds),
+                s = n.allocUnsafe(16);
+            return s.writeUInt32BE(i[0], 0), s.writeUInt32BE(i[3], 4), s.writeUInt32BE(i[2], 8), s.writeUInt32BE(i[1], 12), s
+        }, l.prototype.scrub = function() {
+            i(this._keySchedule), i(this._invKeySchedule), i(this._key)
+        }, t.exports.AES = l
+    })),
+    require_ghash = __commonJSMin(((e, t) => {
+        var n = require_safe_buffer$1().Buffer,
+            r = n.alloc(16, 0);
+
+        function i(e) {
+            return [e.readUInt32BE(0), e.readUInt32BE(4), e.readUInt32BE(8), e.readUInt32BE(12)]
+        }
+
+        function a(e) {
+            var t = n.allocUnsafe(16);
+            return t.writeUInt32BE(e[0] >>> 0, 0), t.writeUInt32BE(e[1] >>> 0, 4), t.writeUInt32BE(e[2] >>> 0, 8), t.writeUInt32BE(e[3] >>> 0, 12), t
+        }
+
+        function s(e) {
+            this.h = e, this.state = n.alloc(16, 0), this.cache = n.allocUnsafe(0)
+        }
+        s.prototype.ghash = function(e) {
+            for (var t = -1; ++t < e.length;) this.state[t] ^= e[t];
+            this._multiply()
+        }, s.prototype._multiply = function() {
+            for (var e = i(this.h), t = [0, 0, 0, 0], n, r, s, c = -1; ++c < 128;) {
+                for (r = !!(this.state[~~(c / 8)] & 1 << 7 - c % 8), r && (t[0] ^= e[0], t[1] ^= e[1], t[2] ^= e[2], t[3] ^= e[3]), s = !!(e[3] & 1), n = 3; n > 0; n--) e[n] = e[n] >>> 1 | (e[n - 1] & 1) << 31;
+                e[0] >>>= 1, s && (e[0] ^= 225 << 24)
+            }
+            this.state = a(t)
+        }, s.prototype.update = function(e) {
+            this.cache = n.concat([this.cache, e]);
+            for (var t; this.cache.length >= 16;) t = this.cache.slice(0, 16), this.cache = this.cache.slice(16), this.ghash(t)
+        }, s.prototype.final = function(e, t) {
+            return this.cache.length && this.ghash(n.concat([this.cache, r], 16)), this.ghash(a([0, e, 0, t])), this.state
+        }, t.exports = s
+    })),
+    require_authCipher = __commonJSMin(((e, t) => {
+        var n = require_aes(),
+            r = require_safe_buffer$1().Buffer,
+            i = require_cipher_base(),
+            a = require_inherits_browser(),
+            s = require_ghash(),
+            c = require_buffer_xor(),
+            l = require_incr32();
+
+        function u(e, t) {
+            var n = 0;
+            e.length !== t.length && n++;
+            for (var r = Math.min(e.length, t.length), i = 0; i < r; ++i) n += e[i] ^ t[i];
+            return n
+        }
+
+        function d(e, t, n) {
+            if (t.length === 12) return e._finID = r.concat([t, r.from([0, 0, 0, 1])]), r.concat([t, r.from([0, 0, 0, 2])]);
+            var i = new s(n),
+                a = t.length,
+                c = a % 16;
+            i.update(t), c && (c = 16 - c, i.update(r.alloc(c, 0))), i.update(r.alloc(8, 0));
+            var u = a * 8,
+                d = r.alloc(8);
+            d.writeUIntBE(u, 0, 8), i.update(d), e._finID = i.state;
+            var f = r.from(e._finID);
+            return l(f), f
+        }
+
+        function f(e, t, a, c) {
+            i.call(this);
+            var l = r.alloc(4, 0);
+            this._cipher = new n.AES(t);
+            var u = this._cipher.encryptBlock(l);
+            this._ghash = new s(u), a = d(this, a, u), this._prev = r.from(a), this._cache = r.allocUnsafe(0), this._secCache = r.allocUnsafe(0), this._decrypt = c, this._alen = 0, this._len = 0, this._mode = e, this._authTag = null, this._called = !1
+        }
+        a(f, i), f.prototype._update = function(e) {
+            if (!this._called && this._alen) {
+                var t = 16 - this._alen % 16;
+                t < 16 && (t = r.alloc(t, 0), this._ghash.update(t))
+            }
+            this._called = !0;
+            var n = this._mode.encrypt(this, e);
+            return this._decrypt ? this._ghash.update(e) : this._ghash.update(n), this._len += e.length, n
+        }, f.prototype._final = function() {
+            if (this._decrypt && !this._authTag) throw Error(`Unsupported state or unable to authenticate data`);
+            var e = c(this._ghash.final(this._alen * 8, this._len * 8), this._cipher.encryptBlock(this._finID));
+            if (this._decrypt && u(e, this._authTag)) throw Error(`Unsupported state or unable to authenticate data`);
+            this._authTag = e, this._cipher.scrub()
+        }, f.prototype.getAuthTag = function() {
+            if (this._decrypt || !r.isBuffer(this._authTag)) throw Error(`Attempting to get auth tag in unsupported state`);
+            return this._authTag
+        }, f.prototype.setAuthTag = function(e) {
+            if (!this._decrypt) throw Error(`Attempting to set auth tag in unsupported state`);
+            this._authTag = e
+        }, f.prototype.setAAD = function(e) {
+            if (this._called) throw Error(`Attempting to set AAD in unsupported state`);
+            this._ghash.update(e), this._alen += e.length
+        }, t.exports = f
+    })),
+    require_streamCipher = __commonJSMin(((e, t) => {
+        var n = require_aes(),
+            r = require_safe_buffer$1().Buffer,
+            i = require_cipher_base(),
+            a = require_inherits_browser();
+
+        function s(e, t, a, s) {
+            i.call(this), this._cipher = new n.AES(t), this._prev = r.from(a), this._cache = r.allocUnsafe(0), this._secCache = r.allocUnsafe(0), this._decrypt = s, this._mode = e
+        }
+        a(s, i), s.prototype._update = function(e) {
+            return this._mode.encrypt(this, e, this._decrypt)
+        }, s.prototype._final = function() {
+            this._cipher.scrub()
+        }, t.exports = s
+    })),
+    require_evp_bytestokey = __commonJSMin(((e, t) => {
+        var n = require_safe_buffer$1().Buffer,
+            r = require_md5_js();
+
+        function i(e, t, i, a) {
+            if (n.isBuffer(e) || (e = n.from(e, `binary`)), t && (n.isBuffer(t) || (t = n.from(t, `binary`)), t.length !== 8)) throw RangeError(`salt should be Buffer with 8 byte length`);
+            for (var s = i / 8, c = n.alloc(s), l = n.alloc(a || 0), u = n.alloc(0); s > 0 || a > 0;) {
+                var d = new r;
+                d.update(u), d.update(e), t && d.update(t), u = d.digest();
+                var f = 0;
+                if (s > 0) {
+                    var p = c.length - s;
+                    f = Math.min(s, u.length), u.copy(c, p, 0, f), s -= f
+                }
+                if (f < u.length && a > 0) {
+                    var m = l.length - a,
+                        h = Math.min(a, u.length - f);
+                    u.copy(l, m, f, f + h), a -= h
+                }
+            }
+            return u.fill(0), {
+                key: c,
+                iv: l
+            }
+        }
+        t.exports = i
+    })),
+    require_encrypter = __commonJSMin((e => {
+        var t = require_modes$1(),
+            n = require_authCipher(),
+            r = require_safe_buffer$1().Buffer,
+            i = require_streamCipher(),
+            a = require_cipher_base(),
+            s = require_aes(),
+            c = require_evp_bytestokey(),
+            l = require_inherits_browser();
+
+        function u(e, t, n) {
+            a.call(this), this._cache = new f, this._cipher = new s.AES(t), this._prev = r.from(n), this._mode = e, this._autopadding = !0
+        }
+        l(u, a), u.prototype._update = function(e) {
+            this._cache.add(e);
+            for (var t, n, i = []; t = this._cache.get();) n = this._mode.encrypt(this, t), i.push(n);
+            return r.concat(i)
+        };
+        var d = r.alloc(16, 16);
+        u.prototype._final = function() {
+            var e = this._cache.flush();
+            if (this._autopadding) return e = this._mode.encrypt(this, e), this._cipher.scrub(), e;
+            if (!e.equals(d)) throw this._cipher.scrub(), Error(`data not multiple of block length`)
+        }, u.prototype.setAutoPadding = function(e) {
+            return this._autopadding = !!e, this
+        };
+
+        function f() {
+            this.cache = r.allocUnsafe(0)
+        }
+        f.prototype.add = function(e) {
+            this.cache = r.concat([this.cache, e])
+        }, f.prototype.get = function() {
+            if (this.cache.length > 15) {
+                var e = this.cache.slice(0, 16);
+                return this.cache = this.cache.slice(16), e
+            }
+            return null
+        }, f.prototype.flush = function() {
+            for (var e = 16 - this.cache.length, t = r.allocUnsafe(e), n = -1; ++n < e;) t.writeUInt8(e, n);
+            return r.concat([this.cache, t])
+        };
+
+        function p(e, a, s) {
+            var c = t[e.toLowerCase()];
+            if (!c) throw TypeError(`invalid suite type`);
+            if (typeof a == `string` && (a = r.from(a)), a.length !== c.key / 8) throw TypeError(`invalid key length ` + a.length);
+            if (typeof s == `string` && (s = r.from(s)), c.mode !== `GCM` && s.length !== c.iv) throw TypeError(`invalid iv length ` + s.length);
+            return c.type === `stream` ? new i(c.module, a, s) : c.type === `auth` ? new n(c.module, a, s) : new u(c.module, a, s)
+        }
+
+        function m(e, n) {
+            var r = t[e.toLowerCase()];
+            if (!r) throw TypeError(`invalid suite type`);
+            var i = c(n, !1, r.key, r.iv);
+            return p(e, i.key, i.iv)
+        }
+        e.createCipheriv = p, e.createCipher = m
+    })),
+    require_decrypter = __commonJSMin((e => {
+        var t = require_authCipher(),
+            n = require_safe_buffer$1().Buffer,
+            r = require_modes$1(),
+            i = require_streamCipher(),
+            a = require_cipher_base(),
+            s = require_aes(),
+            c = require_evp_bytestokey(),
+            l = require_inherits_browser();
+
+        function u(e, t, r) {
+            a.call(this), this._cache = new d, this._last = void 0, this._cipher = new s.AES(t), this._prev = n.from(r), this._mode = e, this._autopadding = !0
+        }
+        l(u, a), u.prototype._update = function(e) {
+            this._cache.add(e);
+            for (var t, r, i = []; t = this._cache.get(this._autopadding);) r = this._mode.decrypt(this, t), i.push(r);
+            return n.concat(i)
+        }, u.prototype._final = function() {
+            var e = this._cache.flush();
+            if (this._autopadding) return f(this._mode.decrypt(this, e));
+            if (e) throw Error(`data not multiple of block length`)
+        }, u.prototype.setAutoPadding = function(e) {
+            return this._autopadding = !!e, this
+        };
+
+        function d() {
+            this.cache = n.allocUnsafe(0)
+        }
+        d.prototype.add = function(e) {
+            this.cache = n.concat([this.cache, e])
+        }, d.prototype.get = function(e) {
+            var t;
+            if (e) {
+                if (this.cache.length > 16) return t = this.cache.slice(0, 16), this.cache = this.cache.slice(16), t
+            } else if (this.cache.length >= 16) return t = this.cache.slice(0, 16), this.cache = this.cache.slice(16), t;
+            return null
+        }, d.prototype.flush = function() {
+            if (this.cache.length) return this.cache
+        };
+
+        function f(e) {
+            var t = e[15];
+            if (t < 1 || t > 16) throw Error(`unable to decrypt data`);
+            for (var n = -1; ++n < t;)
+                if (e[n + (16 - t)] !== t) throw Error(`unable to decrypt data`);
+            if (t !== 16) return e.slice(0, 16 - t)
+        }
+
+        function p(e, a, s) {
+            var c = r[e.toLowerCase()];
+            if (!c) throw TypeError(`invalid suite type`);
+            if (typeof s == `string` && (s = n.from(s)), c.mode !== `GCM` && s.length !== c.iv) throw TypeError(`invalid iv length ` + s.length);
+            if (typeof a == `string` && (a = n.from(a)), a.length !== c.key / 8) throw TypeError(`invalid key length ` + a.length);
+            return c.type === `stream` ? new i(c.module, a, s, !0) : c.type === `auth` ? new t(c.module, a, s, !0) : new u(c.module, a, s)
+        }
+
+        function m(e, t) {
+            var n = r[e.toLowerCase()];
+            if (!n) throw TypeError(`invalid suite type`);
+            var i = c(t, !1, n.key, n.iv);
+            return p(e, i.key, i.iv)
+        }
+        e.createDecipher = m, e.createDecipheriv = p
+    })),
+    require_browser$7 = __commonJSMin((e => {
+        var t = require_encrypter(),
+            n = require_decrypter(),
+            r = (init_list(), __toCommonJS(list_exports).default);
+
+        function i() {
+            return Object.keys(r)
+        }
+        e.createCipher = e.Cipher = t.createCipher, e.createCipheriv = e.Cipheriv = t.createCipheriv, e.createDecipher = e.Decipher = n.createDecipher, e.createDecipheriv = e.Decipheriv = n.createDecipheriv, e.listCiphers = e.getCiphers = i
+    })),
+    require_modes = __commonJSMin((e => {
+        e["des-ecb"] = {
+            key: 8,
+            iv: 0
+        }, e["des-cbc"] = e.des = {
+            key: 8,
+            iv: 8
+        }, e["des-ede3-cbc"] = e.des3 = {
+            key: 24,
+            iv: 8
+        }, e["des-ede3"] = {
+            key: 24,
+            iv: 0
+        }, e["des-ede-cbc"] = {
+            key: 16,
+            iv: 8
+        }, e["des-ede"] = {
+            key: 16,
+            iv: 0
+        }
+    })),
+    require_browser$6 = __commonJSMin((e => {
+        var t = require_browserify_des(),
+            n = require_browser$7(),
+            r = require_modes$1(),
+            i = require_modes(),
+            a = require_evp_bytestokey();
+
+        function s(e, t) {
+            e = e.toLowerCase();
+            var n, s;
+            if (r[e]) n = r[e].key, s = r[e].iv;
+            else if (i[e]) n = i[e].key * 8, s = i[e].iv;
+            else throw TypeError(`invalid suite type`);
+            var c = a(t, !1, n, s);
+            return l(e, c.key, c.iv)
+        }
+
+        function c(e, t) {
+            e = e.toLowerCase();
+            var n, s;
+            if (r[e]) n = r[e].key, s = r[e].iv;
+            else if (i[e]) n = i[e].key * 8, s = i[e].iv;
+            else throw TypeError(`invalid suite type`);
+            var c = a(t, !1, n, s);
+            return u(e, c.key, c.iv)
+        }
+
+        function l(e, a, s) {
+            if (e = e.toLowerCase(), r[e]) return n.createCipheriv(e, a, s);
+            if (i[e]) return new t({
+                key: a,
+                iv: s,
+                mode: e
+            });
+            throw TypeError(`invalid suite type`)
+        }
+
+        function u(e, a, s) {
+            if (e = e.toLowerCase(), r[e]) return n.createDecipheriv(e, a, s);
+            if (i[e]) return new t({
+                key: a,
+                iv: s,
+                mode: e,
+                decrypt: !0
+            });
+            throw TypeError(`invalid suite type`)
+        }
+
+        function d() {
+            return Object.keys(i).concat(n.getCiphers())
+        }
+        e.createCipher = e.Cipher = s, e.createCipheriv = e.Cipheriv = l, e.createDecipher = e.Decipher = c, e.createDecipheriv = e.Decipheriv = u, e.listCiphers = e.getCiphers = d
+    })),
+    require_bn$2 = __commonJSMin(((e, t) => {
+        (function(e, t) {
+            function n(e, t) {
+                if (!e) throw Error(t || `Assertion failed`)
+            }
+
+            function r(e, t) {
+                e.super_ = t;
+                var n = function() {};
+                n.prototype = t.prototype, e.prototype = new n, e.prototype.constructor = e
+            }
+
+            function i(e, t, n) {
+                if (i.isBN(e)) return e;
+                this.negative = 0, this.words = null, this.length = 0, this.red = null, e !== null && ((t === `le` || t === `be`) && (n = t, t = 10), this._init(e || 0, t || 10, n || `be`))
+            }
+            typeof e == `object` ? e.exports = i : t.BN = i, i.BN = i, i.wordSize = 26;
+            var a;
             try {
-                await C()
-            } catch (ee) {
-                d(sa(ee))
-            } finally {
-                a(null)
+                a = typeof window < `u` && window.Buffer !== void 0 ? window.Buffer : require_dist$1().Buffer
+            } catch {}
+            i.isBN = function(e) {
+                return e instanceof i || typeof e == `object` && !!e && e.constructor.wordSize === i.wordSize && Array.isArray(e.words)
+            }, i.max = function(e, t) {
+                return e.cmp(t) > 0 ? e : t
+            }, i.min = function(e, t) {
+                return e.cmp(t) < 0 ? e : t
+            }, i.prototype._init = function(e, t, r) {
+                if (typeof e == `number`) return this._initNumber(e, t, r);
+                if (typeof e == `object`) return this._initArray(e, t, r);
+                t === `hex` && (t = 16), n(t === (t | 0) && t >= 2 && t <= 36), e = e.toString().replace(/\s+/g, ``);
+                var i = 0;
+                e[0] === `-` && (i++, this.negative = 1), i < e.length && (t === 16 ? this._parseHex(e, i, r) : (this._parseBase(e, t, i), r === `le` && this._initArray(this.toArray(), t, r)))
+            }, i.prototype._initNumber = function(e, t, r) {
+                e < 0 && (this.negative = 1, e = -e), e < 67108864 ? (this.words = [e & 67108863], this.length = 1) : e < 4503599627370496 ? (this.words = [e & 67108863, e / 67108864 & 67108863], this.length = 2) : (n(e < 9007199254740992), this.words = [e & 67108863, e / 67108864 & 67108863, 1], this.length = 3), r === `le` && this._initArray(this.toArray(), t, r)
+            }, i.prototype._initArray = function(e, t, r) {
+                if (n(typeof e.length == `number`), e.length <= 0) return this.words = [0], this.length = 1, this;
+                this.length = Math.ceil(e.length / 3), this.words = Array(this.length);
+                for (var i = 0; i < this.length; i++) this.words[i] = 0;
+                var a, s, c = 0;
+                if (r === `be`)
+                    for (i = e.length - 1, a = 0; i >= 0; i -= 3) s = e[i] | e[i - 1] << 8 | e[i - 2] << 16, this.words[a] |= s << c & 67108863, this.words[a + 1] = s >>> 26 - c & 67108863, c += 24, c >= 26 && (c -= 26, a++);
+                else if (r === `le`)
+                    for (i = 0, a = 0; i < e.length; i += 3) s = e[i] | e[i + 1] << 8 | e[i + 2] << 16, this.words[a] |= s << c & 67108863, this.words[a + 1] = s >>> 26 - c & 67108863, c += 24, c >= 26 && (c -= 26, a++);
+                return this.strip()
+            };
+
+            function s(e, t) {
+                var n = e.charCodeAt(t);
+                return n >= 65 && n <= 70 ? n - 55 : n >= 97 && n <= 102 ? n - 87 : n - 48 & 15
             }
-        };
-        return {
-            busy: n,
-            error: l,
-            setError: d,
-            annual: h,
-            resume: s,
-            cancel: u,
-            updateCard: () => b("card", async () => {
-                const f = await O({
-                    url: "/api/billing/create-billing-info-session",
-                    method: "POST"
-                });
-                if (!f.url) throw new Error("No checkout URL");
-                window.location.assign(f.url)
-            }),
-            previewAnnual: f => b(f.id, async () => {
-                const C = await O({
-                    url: "/api/billing/subscription",
-                    method: "POST",
-                    data: {
-                        subscriptionId: f.id,
-                        action: "preview-annual"
+
+            function c(e, t, n) {
+                var r = s(e, n);
+                return n - 1 >= t && (r |= s(e, n - 1) << 4), r
+            }
+            i.prototype._parseHex = function(e, t, n) {
+                this.length = Math.ceil((e.length - t) / 6), this.words = Array(this.length);
+                for (var r = 0; r < this.length; r++) this.words[r] = 0;
+                var i = 0,
+                    a = 0,
+                    s;
+                if (n === `be`)
+                    for (r = e.length - 1; r >= t; r -= 2) s = c(e, t, r) << i, this.words[a] |= s & 67108863, i >= 18 ? (i -= 18, a += 1, this.words[a] |= s >>> 26) : i += 8;
+                else
+                    for (r = (e.length - t) % 2 == 0 ? t + 1 : t; r < e.length; r += 2) s = c(e, t, r) << i, this.words[a] |= s & 67108863, i >= 18 ? (i -= 18, a += 1, this.words[a] |= s >>> 26) : i += 8;
+                this.strip()
+            };
+
+            function l(e, t, n, r) {
+                for (var i = 0, a = Math.min(e.length, n), s = t; s < a; s++) {
+                    var c = e.charCodeAt(s) - 48;
+                    i *= r, i += c >= 49 ? c - 49 + 10 : c >= 17 ? c - 17 + 10 : c
+                }
+                return i
+            }
+            i.prototype._parseBase = function(e, t, n) {
+                this.words = [0], this.length = 1;
+                for (var r = 0, i = 1; i <= 67108863; i *= t) r++;
+                r--, i = i / t | 0;
+                for (var a = e.length - n, s = a % r, c = Math.min(a, a - s) + n, u = 0, d = n; d < c; d += r) u = l(e, d, d + r, t), this.imuln(i), this.words[0] + u < 67108864 ? this.words[0] += u : this._iaddn(u);
+                if (s !== 0) {
+                    var f = 1;
+                    for (u = l(e, d, e.length, t), d = 0; d < s; d++) f *= t;
+                    this.imuln(f), this.words[0] + u < 67108864 ? this.words[0] += u : this._iaddn(u)
+                }
+                this.strip()
+            }, i.prototype.copy = function(e) {
+                e.words = Array(this.length);
+                for (var t = 0; t < this.length; t++) e.words[t] = this.words[t];
+                e.length = this.length, e.negative = this.negative, e.red = this.red
+            }, i.prototype.clone = function() {
+                var e = new i(null);
+                return this.copy(e), e
+            }, i.prototype._expand = function(e) {
+                for (; this.length < e;) this.words[this.length++] = 0;
+                return this
+            }, i.prototype.strip = function() {
+                for (; this.length > 1 && this.words[this.length - 1] === 0;) this.length--;
+                return this._normSign()
+            }, i.prototype._normSign = function() {
+                return this.length === 1 && this.words[0] === 0 && (this.negative = 0), this
+            }, i.prototype.inspect = function() {
+                return (this.red ? `<BN-R: ` : `<BN: `) + this.toString(16) + `>`
+            };
+            var u = `.0.00.000.0000.00000.000000.0000000.00000000.000000000.0000000000.00000000000.000000000000.0000000000000.00000000000000.000000000000000.0000000000000000.00000000000000000.000000000000000000.0000000000000000000.00000000000000000000.000000000000000000000.0000000000000000000000.00000000000000000000000.000000000000000000000000.0000000000000000000000000`.split(`.`),
+                d = [0, 0, 25, 16, 12, 11, 10, 9, 8, 8, 7, 7, 7, 7, 6, 6, 6, 6, 6, 6, 6, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+                f = [0, 0, 33554432, 43046721, 16777216, 48828125, 60466176, 40353607, 16777216, 43046721, 1e7, 19487171, 35831808, 62748517, 7529536, 11390625, 16777216, 24137569, 34012224, 47045881, 64e6, 4084101, 5153632, 6436343, 7962624, 9765625, 11881376, 14348907, 17210368, 20511149, 243e5, 28629151, 33554432, 39135393, 45435424, 52521875, 60466176];
+            i.prototype.toString = function(e, t) {
+                e = e || 10, t = t | 0 || 1;
+                var r;
+                if (e === 16 || e === `hex`) {
+                    r = ``;
+                    for (var i = 0, a = 0, s = 0; s < this.length; s++) {
+                        var c = this.words[s],
+                            l = ((c << i | a) & 16777215).toString(16);
+                        a = c >>> 24 - i & 16777215, i += 2, i >= 26 && (i -= 26, s--), r = a !== 0 || s !== this.length - 1 ? u[6 - l.length] + l + r : l + r
                     }
-                });
-                y({
-                    subscription: f,
-                    quote: C
+                    for (a !== 0 && (r = a.toString(16) + r); r.length % t !== 0;) r = `0` + r;
+                    return this.negative !== 0 && (r = `-` + r), r
+                }
+                if (e === (e | 0) && e >= 2 && e <= 36) {
+                    var p = d[e],
+                        m = f[e];
+                    r = ``;
+                    var h = this.clone();
+                    for (h.negative = 0; !h.isZero();) {
+                        var g = h.modn(m).toString(e);
+                        h = h.idivn(m), r = h.isZero() ? g + r : u[p - g.length] + g + r
+                    }
+                    for (this.isZero() && (r = `0` + r); r.length % t !== 0;) r = `0` + r;
+                    return this.negative !== 0 && (r = `-` + r), r
+                }
+                n(!1, `Base should be between 2 and 36`)
+            }, i.prototype.toNumber = function() {
+                var e = this.words[0];
+                return this.length === 2 ? e += this.words[1] * 67108864 : this.length === 3 && this.words[2] === 1 ? e += 4503599627370496 + this.words[1] * 67108864 : this.length > 2 && n(!1, `Number can only safely store up to 53 bits`), this.negative === 0 ? e : -e
+            }, i.prototype.toJSON = function() {
+                return this.toString(16)
+            }, i.prototype.toBuffer = function(e, t) {
+                return n(a !== void 0), this.toArrayLike(a, e, t)
+            }, i.prototype.toArray = function(e, t) {
+                return this.toArrayLike(Array, e, t)
+            }, i.prototype.toArrayLike = function(e, t, r) {
+                var i = this.byteLength(),
+                    a = r || Math.max(1, i);
+                n(i <= a, `byte array longer than desired length`), n(a > 0, `Requested array length <= 0`), this.strip();
+                var s = t === `le`,
+                    c = new e(a),
+                    l, u, d = this.clone();
+                if (s) {
+                    for (u = 0; !d.isZero(); u++) l = d.andln(255), d.iushrn(8), c[u] = l;
+                    for (; u < a; u++) c[u] = 0
+                } else {
+                    for (u = 0; u < a - i; u++) c[u] = 0;
+                    for (u = 0; !d.isZero(); u++) l = d.andln(255), d.iushrn(8), c[a - u - 1] = l
+                }
+                return c
+            }, Math.clz32 ? i.prototype._countBits = function(e) {
+                return 32 - Math.clz32(e)
+            } : i.prototype._countBits = function(e) {
+                var t = e,
+                    n = 0;
+                return t >= 4096 && (n += 13, t >>>= 13), t >= 64 && (n += 7, t >>>= 7), t >= 8 && (n += 4, t >>>= 4), t >= 2 && (n += 2, t >>>= 2), n + t
+            }, i.prototype._zeroBits = function(e) {
+                if (e === 0) return 26;
+                var t = e,
+                    n = 0;
+                return t & 8191 || (n += 13, t >>>= 13), t & 127 || (n += 7, t >>>= 7), t & 15 || (n += 4, t >>>= 4), t & 3 || (n += 2, t >>>= 2), t & 1 || n++, n
+            }, i.prototype.bitLength = function() {
+                var e = this.words[this.length - 1],
+                    t = this._countBits(e);
+                return (this.length - 1) * 26 + t
+            };
+
+            function p(e) {
+                for (var t = Array(e.bitLength()), n = 0; n < t.length; n++) {
+                    var r = n / 26 | 0,
+                        i = n % 26;
+                    t[n] = (e.words[r] & 1 << i) >>> i
+                }
+                return t
+            }
+            i.prototype.zeroBits = function() {
+                if (this.isZero()) return 0;
+                for (var e = 0, t = 0; t < this.length; t++) {
+                    var n = this._zeroBits(this.words[t]);
+                    if (e += n, n !== 26) break
+                }
+                return e
+            }, i.prototype.byteLength = function() {
+                return Math.ceil(this.bitLength() / 8)
+            }, i.prototype.toTwos = function(e) {
+                return this.negative === 0 ? this.clone() : this.abs().inotn(e).iaddn(1)
+            }, i.prototype.fromTwos = function(e) {
+                return this.testn(e - 1) ? this.notn(e).iaddn(1).ineg() : this.clone()
+            }, i.prototype.isNeg = function() {
+                return this.negative !== 0
+            }, i.prototype.neg = function() {
+                return this.clone().ineg()
+            }, i.prototype.ineg = function() {
+                return this.isZero() || (this.negative ^= 1), this
+            }, i.prototype.iuor = function(e) {
+                for (; this.length < e.length;) this.words[this.length++] = 0;
+                for (var t = 0; t < e.length; t++) this.words[t] = this.words[t] | e.words[t];
+                return this.strip()
+            }, i.prototype.ior = function(e) {
+                return n((this.negative | e.negative) === 0), this.iuor(e)
+            }, i.prototype.or = function(e) {
+                return this.length > e.length ? this.clone().ior(e) : e.clone().ior(this)
+            }, i.prototype.uor = function(e) {
+                return this.length > e.length ? this.clone().iuor(e) : e.clone().iuor(this)
+            }, i.prototype.iuand = function(e) {
+                for (var t = this.length > e.length ? e : this, n = 0; n < t.length; n++) this.words[n] = this.words[n] & e.words[n];
+                return this.length = t.length, this.strip()
+            }, i.prototype.iand = function(e) {
+                return n((this.negative | e.negative) === 0), this.iuand(e)
+            }, i.prototype.and = function(e) {
+                return this.length > e.length ? this.clone().iand(e) : e.clone().iand(this)
+            }, i.prototype.uand = function(e) {
+                return this.length > e.length ? this.clone().iuand(e) : e.clone().iuand(this)
+            }, i.prototype.iuxor = function(e) {
+                var t, n;
+                this.length > e.length ? (t = this, n = e) : (t = e, n = this);
+                for (var r = 0; r < n.length; r++) this.words[r] = t.words[r] ^ n.words[r];
+                if (this !== t)
+                    for (; r < t.length; r++) this.words[r] = t.words[r];
+                return this.length = t.length, this.strip()
+            }, i.prototype.ixor = function(e) {
+                return n((this.negative | e.negative) === 0), this.iuxor(e)
+            }, i.prototype.xor = function(e) {
+                return this.length > e.length ? this.clone().ixor(e) : e.clone().ixor(this)
+            }, i.prototype.uxor = function(e) {
+                return this.length > e.length ? this.clone().iuxor(e) : e.clone().iuxor(this)
+            }, i.prototype.inotn = function(e) {
+                n(typeof e == `number` && e >= 0);
+                var t = Math.ceil(e / 26) | 0,
+                    r = e % 26;
+                this._expand(t), r > 0 && t--;
+                for (var i = 0; i < t; i++) this.words[i] = ~this.words[i] & 67108863;
+                return r > 0 && (this.words[i] = ~this.words[i] & 67108863 >> 26 - r), this.strip()
+            }, i.prototype.notn = function(e) {
+                return this.clone().inotn(e)
+            }, i.prototype.setn = function(e, t) {
+                n(typeof e == `number` && e >= 0);
+                var r = e / 26 | 0,
+                    i = e % 26;
+                return this._expand(r + 1), t ? this.words[r] = this.words[r] | 1 << i : this.words[r] = this.words[r] & ~(1 << i), this.strip()
+            }, i.prototype.iadd = function(e) {
+                var t;
+                if (this.negative !== 0 && e.negative === 0) return this.negative = 0, t = this.isub(e), this.negative ^= 1, this._normSign();
+                if (this.negative === 0 && e.negative !== 0) return e.negative = 0, t = this.isub(e), e.negative = 1, t._normSign();
+                var n, r;
+                this.length > e.length ? (n = this, r = e) : (n = e, r = this);
+                for (var i = 0, a = 0; a < r.length; a++) t = (n.words[a] | 0) + (r.words[a] | 0) + i, this.words[a] = t & 67108863, i = t >>> 26;
+                for (; i !== 0 && a < n.length; a++) t = (n.words[a] | 0) + i, this.words[a] = t & 67108863, i = t >>> 26;
+                if (this.length = n.length, i !== 0) this.words[this.length] = i, this.length++;
+                else if (n !== this)
+                    for (; a < n.length; a++) this.words[a] = n.words[a];
+                return this
+            }, i.prototype.add = function(e) {
+                var t;
+                return e.negative !== 0 && this.negative === 0 ? (e.negative = 0, t = this.sub(e), e.negative ^= 1, t) : e.negative === 0 && this.negative !== 0 ? (this.negative = 0, t = e.sub(this), this.negative = 1, t) : this.length > e.length ? this.clone().iadd(e) : e.clone().iadd(this)
+            }, i.prototype.isub = function(e) {
+                if (e.negative !== 0) {
+                    e.negative = 0;
+                    var t = this.iadd(e);
+                    return e.negative = 1, t._normSign()
+                }
+                if (this.negative !== 0) return this.negative = 0, this.iadd(e), this.negative = 1, this._normSign();
+                var n = this.cmp(e);
+                if (n === 0) return this.negative = 0, this.length = 1, this.words[0] = 0, this;
+                var r, i;
+                n > 0 ? (r = this, i = e) : (r = e, i = this);
+                for (var a = 0, s = 0; s < i.length; s++) t = (r.words[s] | 0) - (i.words[s] | 0) + a, a = t >> 26, this.words[s] = t & 67108863;
+                for (; a !== 0 && s < r.length; s++) t = (r.words[s] | 0) + a, a = t >> 26, this.words[s] = t & 67108863;
+                if (a === 0 && s < r.length && r !== this)
+                    for (; s < r.length; s++) this.words[s] = r.words[s];
+                return this.length = Math.max(this.length, s), r !== this && (this.negative = 1), this.strip()
+            }, i.prototype.sub = function(e) {
+                return this.clone().isub(e)
+            };
+
+            function m(e, t, n) {
+                n.negative = t.negative ^ e.negative;
+                var r = e.length + t.length | 0;
+                n.length = r, r = r - 1 | 0;
+                var i = e.words[0] | 0,
+                    a = t.words[0] | 0,
+                    s = i * a,
+                    c = s & 67108863,
+                    l = s / 67108864 | 0;
+                n.words[0] = c;
+                for (var u = 1; u < r; u++) {
+                    for (var d = l >>> 26, f = l & 67108863, p = Math.min(u, t.length - 1), m = Math.max(0, u - e.length + 1); m <= p; m++) {
+                        var h = u - m | 0;
+                        i = e.words[h] | 0, a = t.words[m] | 0, s = i * a + f, d += s / 67108864 | 0, f = s & 67108863
+                    }
+                    n.words[u] = f | 0, l = d | 0
+                }
+                return l === 0 ? n.length-- : n.words[u] = l | 0, n.strip()
+            }
+            var h = function(e, t, n) {
+                var r = e.words,
+                    i = t.words,
+                    a = n.words,
+                    s = 0,
+                    c, l, u, d = r[0] | 0,
+                    f = d & 8191,
+                    p = d >>> 13,
+                    m = r[1] | 0,
+                    h = m & 8191,
+                    g = m >>> 13,
+                    _ = r[2] | 0,
+                    v = _ & 8191,
+                    y = _ >>> 13,
+                    b = r[3] | 0,
+                    x = b & 8191,
+                    S = b >>> 13,
+                    C = r[4] | 0,
+                    w = C & 8191,
+                    E = C >>> 13,
+                    ee = r[5] | 0,
+                    D = ee & 8191,
+                    O = ee >>> 13,
+                    te = r[6] | 0,
+                    k = te & 8191,
+                    A = te >>> 13,
+                    ne = r[7] | 0,
+                    j = ne & 8191,
+                    M = ne >>> 13,
+                    re = r[8] | 0,
+                    N = re & 8191,
+                    P = re >>> 13,
+                    ie = r[9] | 0,
+                    I = ie & 8191,
+                    L = ie >>> 13,
+                    ae = i[0] | 0,
+                    R = ae & 8191,
+                    z = ae >>> 13,
+                    oe = i[1] | 0,
+                    B = oe & 8191,
+                    V = oe >>> 13,
+                    se = i[2] | 0,
+                    H = se & 8191,
+                    U = se >>> 13,
+                    ce = i[3] | 0,
+                    W = ce & 8191,
+                    G = ce >>> 13,
+                    le = i[4] | 0,
+                    K = le & 8191,
+                    q = le >>> 13,
+                    ue = i[5] | 0,
+                    J = ue & 8191,
+                    Y = ue >>> 13,
+                    de = i[6] | 0,
+                    X = de & 8191,
+                    Z = de >>> 13,
+                    fe = i[7] | 0,
+                    Q = fe & 8191,
+                    pe = fe >>> 13,
+                    me = i[8] | 0,
+                    he = me & 8191,
+                    ge = me >>> 13,
+                    _e = i[9] | 0,
+                    ve = _e & 8191,
+                    $ = _e >>> 13;
+                n.negative = e.negative ^ t.negative, n.length = 19, c = Math.imul(f, R), l = Math.imul(f, z), l = l + Math.imul(p, R) | 0, u = Math.imul(p, z);
+                var ye = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (ye >>> 26) | 0, ye &= 67108863, c = Math.imul(h, R), l = Math.imul(h, z), l = l + Math.imul(g, R) | 0, u = Math.imul(g, z), c = c + Math.imul(f, B) | 0, l = l + Math.imul(f, V) | 0, l = l + Math.imul(p, B) | 0, u = u + Math.imul(p, V) | 0;
+                var be = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (be >>> 26) | 0, be &= 67108863, c = Math.imul(v, R), l = Math.imul(v, z), l = l + Math.imul(y, R) | 0, u = Math.imul(y, z), c = c + Math.imul(h, B) | 0, l = l + Math.imul(h, V) | 0, l = l + Math.imul(g, B) | 0, u = u + Math.imul(g, V) | 0, c = c + Math.imul(f, H) | 0, l = l + Math.imul(f, U) | 0, l = l + Math.imul(p, H) | 0, u = u + Math.imul(p, U) | 0;
+                var xe = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (xe >>> 26) | 0, xe &= 67108863, c = Math.imul(x, R), l = Math.imul(x, z), l = l + Math.imul(S, R) | 0, u = Math.imul(S, z), c = c + Math.imul(v, B) | 0, l = l + Math.imul(v, V) | 0, l = l + Math.imul(y, B) | 0, u = u + Math.imul(y, V) | 0, c = c + Math.imul(h, H) | 0, l = l + Math.imul(h, U) | 0, l = l + Math.imul(g, H) | 0, u = u + Math.imul(g, U) | 0, c = c + Math.imul(f, W) | 0, l = l + Math.imul(f, G) | 0, l = l + Math.imul(p, W) | 0, u = u + Math.imul(p, G) | 0;
+                var Se = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Se >>> 26) | 0, Se &= 67108863, c = Math.imul(w, R), l = Math.imul(w, z), l = l + Math.imul(E, R) | 0, u = Math.imul(E, z), c = c + Math.imul(x, B) | 0, l = l + Math.imul(x, V) | 0, l = l + Math.imul(S, B) | 0, u = u + Math.imul(S, V) | 0, c = c + Math.imul(v, H) | 0, l = l + Math.imul(v, U) | 0, l = l + Math.imul(y, H) | 0, u = u + Math.imul(y, U) | 0, c = c + Math.imul(h, W) | 0, l = l + Math.imul(h, G) | 0, l = l + Math.imul(g, W) | 0, u = u + Math.imul(g, G) | 0, c = c + Math.imul(f, K) | 0, l = l + Math.imul(f, q) | 0, l = l + Math.imul(p, K) | 0, u = u + Math.imul(p, q) | 0;
+                var Ce = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Ce >>> 26) | 0, Ce &= 67108863, c = Math.imul(D, R), l = Math.imul(D, z), l = l + Math.imul(O, R) | 0, u = Math.imul(O, z), c = c + Math.imul(w, B) | 0, l = l + Math.imul(w, V) | 0, l = l + Math.imul(E, B) | 0, u = u + Math.imul(E, V) | 0, c = c + Math.imul(x, H) | 0, l = l + Math.imul(x, U) | 0, l = l + Math.imul(S, H) | 0, u = u + Math.imul(S, U) | 0, c = c + Math.imul(v, W) | 0, l = l + Math.imul(v, G) | 0, l = l + Math.imul(y, W) | 0, u = u + Math.imul(y, G) | 0, c = c + Math.imul(h, K) | 0, l = l + Math.imul(h, q) | 0, l = l + Math.imul(g, K) | 0, u = u + Math.imul(g, q) | 0, c = c + Math.imul(f, J) | 0, l = l + Math.imul(f, Y) | 0, l = l + Math.imul(p, J) | 0, u = u + Math.imul(p, Y) | 0;
+                var we = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (we >>> 26) | 0, we &= 67108863, c = Math.imul(k, R), l = Math.imul(k, z), l = l + Math.imul(A, R) | 0, u = Math.imul(A, z), c = c + Math.imul(D, B) | 0, l = l + Math.imul(D, V) | 0, l = l + Math.imul(O, B) | 0, u = u + Math.imul(O, V) | 0, c = c + Math.imul(w, H) | 0, l = l + Math.imul(w, U) | 0, l = l + Math.imul(E, H) | 0, u = u + Math.imul(E, U) | 0, c = c + Math.imul(x, W) | 0, l = l + Math.imul(x, G) | 0, l = l + Math.imul(S, W) | 0, u = u + Math.imul(S, G) | 0, c = c + Math.imul(v, K) | 0, l = l + Math.imul(v, q) | 0, l = l + Math.imul(y, K) | 0, u = u + Math.imul(y, q) | 0, c = c + Math.imul(h, J) | 0, l = l + Math.imul(h, Y) | 0, l = l + Math.imul(g, J) | 0, u = u + Math.imul(g, Y) | 0, c = c + Math.imul(f, X) | 0, l = l + Math.imul(f, Z) | 0, l = l + Math.imul(p, X) | 0, u = u + Math.imul(p, Z) | 0;
+                var Te = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Te >>> 26) | 0, Te &= 67108863, c = Math.imul(j, R), l = Math.imul(j, z), l = l + Math.imul(M, R) | 0, u = Math.imul(M, z), c = c + Math.imul(k, B) | 0, l = l + Math.imul(k, V) | 0, l = l + Math.imul(A, B) | 0, u = u + Math.imul(A, V) | 0, c = c + Math.imul(D, H) | 0, l = l + Math.imul(D, U) | 0, l = l + Math.imul(O, H) | 0, u = u + Math.imul(O, U) | 0, c = c + Math.imul(w, W) | 0, l = l + Math.imul(w, G) | 0, l = l + Math.imul(E, W) | 0, u = u + Math.imul(E, G) | 0, c = c + Math.imul(x, K) | 0, l = l + Math.imul(x, q) | 0, l = l + Math.imul(S, K) | 0, u = u + Math.imul(S, q) | 0, c = c + Math.imul(v, J) | 0, l = l + Math.imul(v, Y) | 0, l = l + Math.imul(y, J) | 0, u = u + Math.imul(y, Y) | 0, c = c + Math.imul(h, X) | 0, l = l + Math.imul(h, Z) | 0, l = l + Math.imul(g, X) | 0, u = u + Math.imul(g, Z) | 0, c = c + Math.imul(f, Q) | 0, l = l + Math.imul(f, pe) | 0, l = l + Math.imul(p, Q) | 0, u = u + Math.imul(p, pe) | 0;
+                var Ee = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Ee >>> 26) | 0, Ee &= 67108863, c = Math.imul(N, R), l = Math.imul(N, z), l = l + Math.imul(P, R) | 0, u = Math.imul(P, z), c = c + Math.imul(j, B) | 0, l = l + Math.imul(j, V) | 0, l = l + Math.imul(M, B) | 0, u = u + Math.imul(M, V) | 0, c = c + Math.imul(k, H) | 0, l = l + Math.imul(k, U) | 0, l = l + Math.imul(A, H) | 0, u = u + Math.imul(A, U) | 0, c = c + Math.imul(D, W) | 0, l = l + Math.imul(D, G) | 0, l = l + Math.imul(O, W) | 0, u = u + Math.imul(O, G) | 0, c = c + Math.imul(w, K) | 0, l = l + Math.imul(w, q) | 0, l = l + Math.imul(E, K) | 0, u = u + Math.imul(E, q) | 0, c = c + Math.imul(x, J) | 0, l = l + Math.imul(x, Y) | 0, l = l + Math.imul(S, J) | 0, u = u + Math.imul(S, Y) | 0, c = c + Math.imul(v, X) | 0, l = l + Math.imul(v, Z) | 0, l = l + Math.imul(y, X) | 0, u = u + Math.imul(y, Z) | 0, c = c + Math.imul(h, Q) | 0, l = l + Math.imul(h, pe) | 0, l = l + Math.imul(g, Q) | 0, u = u + Math.imul(g, pe) | 0, c = c + Math.imul(f, he) | 0, l = l + Math.imul(f, ge) | 0, l = l + Math.imul(p, he) | 0, u = u + Math.imul(p, ge) | 0;
+                var De = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (De >>> 26) | 0, De &= 67108863, c = Math.imul(I, R), l = Math.imul(I, z), l = l + Math.imul(L, R) | 0, u = Math.imul(L, z), c = c + Math.imul(N, B) | 0, l = l + Math.imul(N, V) | 0, l = l + Math.imul(P, B) | 0, u = u + Math.imul(P, V) | 0, c = c + Math.imul(j, H) | 0, l = l + Math.imul(j, U) | 0, l = l + Math.imul(M, H) | 0, u = u + Math.imul(M, U) | 0, c = c + Math.imul(k, W) | 0, l = l + Math.imul(k, G) | 0, l = l + Math.imul(A, W) | 0, u = u + Math.imul(A, G) | 0, c = c + Math.imul(D, K) | 0, l = l + Math.imul(D, q) | 0, l = l + Math.imul(O, K) | 0, u = u + Math.imul(O, q) | 0, c = c + Math.imul(w, J) | 0, l = l + Math.imul(w, Y) | 0, l = l + Math.imul(E, J) | 0, u = u + Math.imul(E, Y) | 0, c = c + Math.imul(x, X) | 0, l = l + Math.imul(x, Z) | 0, l = l + Math.imul(S, X) | 0, u = u + Math.imul(S, Z) | 0, c = c + Math.imul(v, Q) | 0, l = l + Math.imul(v, pe) | 0, l = l + Math.imul(y, Q) | 0, u = u + Math.imul(y, pe) | 0, c = c + Math.imul(h, he) | 0, l = l + Math.imul(h, ge) | 0, l = l + Math.imul(g, he) | 0, u = u + Math.imul(g, ge) | 0, c = c + Math.imul(f, ve) | 0, l = l + Math.imul(f, $) | 0, l = l + Math.imul(p, ve) | 0, u = u + Math.imul(p, $) | 0;
+                var Oe = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Oe >>> 26) | 0, Oe &= 67108863, c = Math.imul(I, B), l = Math.imul(I, V), l = l + Math.imul(L, B) | 0, u = Math.imul(L, V), c = c + Math.imul(N, H) | 0, l = l + Math.imul(N, U) | 0, l = l + Math.imul(P, H) | 0, u = u + Math.imul(P, U) | 0, c = c + Math.imul(j, W) | 0, l = l + Math.imul(j, G) | 0, l = l + Math.imul(M, W) | 0, u = u + Math.imul(M, G) | 0, c = c + Math.imul(k, K) | 0, l = l + Math.imul(k, q) | 0, l = l + Math.imul(A, K) | 0, u = u + Math.imul(A, q) | 0, c = c + Math.imul(D, J) | 0, l = l + Math.imul(D, Y) | 0, l = l + Math.imul(O, J) | 0, u = u + Math.imul(O, Y) | 0, c = c + Math.imul(w, X) | 0, l = l + Math.imul(w, Z) | 0, l = l + Math.imul(E, X) | 0, u = u + Math.imul(E, Z) | 0, c = c + Math.imul(x, Q) | 0, l = l + Math.imul(x, pe) | 0, l = l + Math.imul(S, Q) | 0, u = u + Math.imul(S, pe) | 0, c = c + Math.imul(v, he) | 0, l = l + Math.imul(v, ge) | 0, l = l + Math.imul(y, he) | 0, u = u + Math.imul(y, ge) | 0, c = c + Math.imul(h, ve) | 0, l = l + Math.imul(h, $) | 0, l = l + Math.imul(g, ve) | 0, u = u + Math.imul(g, $) | 0;
+                var ke = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (ke >>> 26) | 0, ke &= 67108863, c = Math.imul(I, H), l = Math.imul(I, U), l = l + Math.imul(L, H) | 0, u = Math.imul(L, U), c = c + Math.imul(N, W) | 0, l = l + Math.imul(N, G) | 0, l = l + Math.imul(P, W) | 0, u = u + Math.imul(P, G) | 0, c = c + Math.imul(j, K) | 0, l = l + Math.imul(j, q) | 0, l = l + Math.imul(M, K) | 0, u = u + Math.imul(M, q) | 0, c = c + Math.imul(k, J) | 0, l = l + Math.imul(k, Y) | 0, l = l + Math.imul(A, J) | 0, u = u + Math.imul(A, Y) | 0, c = c + Math.imul(D, X) | 0, l = l + Math.imul(D, Z) | 0, l = l + Math.imul(O, X) | 0, u = u + Math.imul(O, Z) | 0, c = c + Math.imul(w, Q) | 0, l = l + Math.imul(w, pe) | 0, l = l + Math.imul(E, Q) | 0, u = u + Math.imul(E, pe) | 0, c = c + Math.imul(x, he) | 0, l = l + Math.imul(x, ge) | 0, l = l + Math.imul(S, he) | 0, u = u + Math.imul(S, ge) | 0, c = c + Math.imul(v, ve) | 0, l = l + Math.imul(v, $) | 0, l = l + Math.imul(y, ve) | 0, u = u + Math.imul(y, $) | 0;
+                var Ae = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Ae >>> 26) | 0, Ae &= 67108863, c = Math.imul(I, W), l = Math.imul(I, G), l = l + Math.imul(L, W) | 0, u = Math.imul(L, G), c = c + Math.imul(N, K) | 0, l = l + Math.imul(N, q) | 0, l = l + Math.imul(P, K) | 0, u = u + Math.imul(P, q) | 0, c = c + Math.imul(j, J) | 0, l = l + Math.imul(j, Y) | 0, l = l + Math.imul(M, J) | 0, u = u + Math.imul(M, Y) | 0, c = c + Math.imul(k, X) | 0, l = l + Math.imul(k, Z) | 0, l = l + Math.imul(A, X) | 0, u = u + Math.imul(A, Z) | 0, c = c + Math.imul(D, Q) | 0, l = l + Math.imul(D, pe) | 0, l = l + Math.imul(O, Q) | 0, u = u + Math.imul(O, pe) | 0, c = c + Math.imul(w, he) | 0, l = l + Math.imul(w, ge) | 0, l = l + Math.imul(E, he) | 0, u = u + Math.imul(E, ge) | 0, c = c + Math.imul(x, ve) | 0, l = l + Math.imul(x, $) | 0, l = l + Math.imul(S, ve) | 0, u = u + Math.imul(S, $) | 0;
+                var je = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (je >>> 26) | 0, je &= 67108863, c = Math.imul(I, K), l = Math.imul(I, q), l = l + Math.imul(L, K) | 0, u = Math.imul(L, q), c = c + Math.imul(N, J) | 0, l = l + Math.imul(N, Y) | 0, l = l + Math.imul(P, J) | 0, u = u + Math.imul(P, Y) | 0, c = c + Math.imul(j, X) | 0, l = l + Math.imul(j, Z) | 0, l = l + Math.imul(M, X) | 0, u = u + Math.imul(M, Z) | 0, c = c + Math.imul(k, Q) | 0, l = l + Math.imul(k, pe) | 0, l = l + Math.imul(A, Q) | 0, u = u + Math.imul(A, pe) | 0, c = c + Math.imul(D, he) | 0, l = l + Math.imul(D, ge) | 0, l = l + Math.imul(O, he) | 0, u = u + Math.imul(O, ge) | 0, c = c + Math.imul(w, ve) | 0, l = l + Math.imul(w, $) | 0, l = l + Math.imul(E, ve) | 0, u = u + Math.imul(E, $) | 0;
+                var Me = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Me >>> 26) | 0, Me &= 67108863, c = Math.imul(I, J), l = Math.imul(I, Y), l = l + Math.imul(L, J) | 0, u = Math.imul(L, Y), c = c + Math.imul(N, X) | 0, l = l + Math.imul(N, Z) | 0, l = l + Math.imul(P, X) | 0, u = u + Math.imul(P, Z) | 0, c = c + Math.imul(j, Q) | 0, l = l + Math.imul(j, pe) | 0, l = l + Math.imul(M, Q) | 0, u = u + Math.imul(M, pe) | 0, c = c + Math.imul(k, he) | 0, l = l + Math.imul(k, ge) | 0, l = l + Math.imul(A, he) | 0, u = u + Math.imul(A, ge) | 0, c = c + Math.imul(D, ve) | 0, l = l + Math.imul(D, $) | 0, l = l + Math.imul(O, ve) | 0, u = u + Math.imul(O, $) | 0;
+                var Ne = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Ne >>> 26) | 0, Ne &= 67108863, c = Math.imul(I, X), l = Math.imul(I, Z), l = l + Math.imul(L, X) | 0, u = Math.imul(L, Z), c = c + Math.imul(N, Q) | 0, l = l + Math.imul(N, pe) | 0, l = l + Math.imul(P, Q) | 0, u = u + Math.imul(P, pe) | 0, c = c + Math.imul(j, he) | 0, l = l + Math.imul(j, ge) | 0, l = l + Math.imul(M, he) | 0, u = u + Math.imul(M, ge) | 0, c = c + Math.imul(k, ve) | 0, l = l + Math.imul(k, $) | 0, l = l + Math.imul(A, ve) | 0, u = u + Math.imul(A, $) | 0;
+                var Pe = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Pe >>> 26) | 0, Pe &= 67108863, c = Math.imul(I, Q), l = Math.imul(I, pe), l = l + Math.imul(L, Q) | 0, u = Math.imul(L, pe), c = c + Math.imul(N, he) | 0, l = l + Math.imul(N, ge) | 0, l = l + Math.imul(P, he) | 0, u = u + Math.imul(P, ge) | 0, c = c + Math.imul(j, ve) | 0, l = l + Math.imul(j, $) | 0, l = l + Math.imul(M, ve) | 0, u = u + Math.imul(M, $) | 0;
+                var Fe = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Fe >>> 26) | 0, Fe &= 67108863, c = Math.imul(I, he), l = Math.imul(I, ge), l = l + Math.imul(L, he) | 0, u = Math.imul(L, ge), c = c + Math.imul(N, ve) | 0, l = l + Math.imul(N, $) | 0, l = l + Math.imul(P, ve) | 0, u = u + Math.imul(P, $) | 0;
+                var Ie = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Ie >>> 26) | 0, Ie &= 67108863, c = Math.imul(I, ve), l = Math.imul(I, $), l = l + Math.imul(L, ve) | 0, u = Math.imul(L, $);
+                var Le = (s + c | 0) + ((l & 8191) << 13) | 0;
+                return s = (u + (l >>> 13) | 0) + (Le >>> 26) | 0, Le &= 67108863, a[0] = ye, a[1] = be, a[2] = xe, a[3] = Se, a[4] = Ce, a[5] = we, a[6] = Te, a[7] = Ee, a[8] = De, a[9] = Oe, a[10] = ke, a[11] = Ae, a[12] = je, a[13] = Me, a[14] = Ne, a[15] = Pe, a[16] = Fe, a[17] = Ie, a[18] = Le, s !== 0 && (a[19] = s, n.length++), n
+            };
+            Math.imul || (h = m);
+
+            function g(e, t, n) {
+                n.negative = t.negative ^ e.negative, n.length = e.length + t.length;
+                for (var r = 0, i = 0, a = 0; a < n.length - 1; a++) {
+                    var s = i;
+                    i = 0;
+                    for (var c = r & 67108863, l = Math.min(a, t.length - 1), u = Math.max(0, a - e.length + 1); u <= l; u++) {
+                        var d = a - u,
+                            f = (e.words[d] | 0) * (t.words[u] | 0),
+                            p = f & 67108863;
+                        s = s + (f / 67108864 | 0) | 0, p = p + c | 0, c = p & 67108863, s = s + (p >>> 26) | 0, i += s >>> 26, s &= 67108863
+                    }
+                    n.words[a] = c, r = s, s = i
+                }
+                return r === 0 ? n.length-- : n.words[a] = r, n.strip()
+            }
+
+            function _(e, t, n) {
+                return new v().mulp(e, t, n)
+            }
+            i.prototype.mulTo = function(e, t) {
+                var n, r = this.length + e.length;
+                return n = this.length === 10 && e.length === 10 ? h(this, e, t) : r < 63 ? m(this, e, t) : r < 1024 ? g(this, e, t) : _(this, e, t), n
+            };
+
+            function v(e, t) {
+                this.x = e, this.y = t
+            }
+            v.prototype.makeRBT = function(e) {
+                for (var t = Array(e), n = i.prototype._countBits(e) - 1, r = 0; r < e; r++) t[r] = this.revBin(r, n, e);
+                return t
+            }, v.prototype.revBin = function(e, t, n) {
+                if (e === 0 || e === n - 1) return e;
+                for (var r = 0, i = 0; i < t; i++) r |= (e & 1) << t - i - 1, e >>= 1;
+                return r
+            }, v.prototype.permute = function(e, t, n, r, i, a) {
+                for (var s = 0; s < a; s++) r[s] = t[e[s]], i[s] = n[e[s]]
+            }, v.prototype.transform = function(e, t, n, r, i, a) {
+                this.permute(a, e, t, n, r, i);
+                for (var s = 1; s < i; s <<= 1)
+                    for (var c = s << 1, l = Math.cos(2 * Math.PI / c), u = Math.sin(2 * Math.PI / c), d = 0; d < i; d += c)
+                        for (var f = l, p = u, m = 0; m < s; m++) {
+                            var h = n[d + m],
+                                g = r[d + m],
+                                _ = n[d + m + s],
+                                v = r[d + m + s],
+                                y = f * _ - p * v;
+                            v = f * v + p * _, _ = y, n[d + m] = h + _, r[d + m] = g + v, n[d + m + s] = h - _, r[d + m + s] = g - v, m !== c && (y = l * f - u * p, p = l * p + u * f, f = y)
+                        }
+            }, v.prototype.guessLen13b = function(e, t) {
+                var n = Math.max(t, e) | 1,
+                    r = n & 1,
+                    i = 0;
+                for (n = n / 2 | 0; n; n >>>= 1) i++;
+                return 1 << i + 1 + r
+            }, v.prototype.conjugate = function(e, t, n) {
+                if (!(n <= 1))
+                    for (var r = 0; r < n / 2; r++) {
+                        var i = e[r];
+                        e[r] = e[n - r - 1], e[n - r - 1] = i, i = t[r], t[r] = -t[n - r - 1], t[n - r - 1] = -i
+                    }
+            }, v.prototype.normalize13b = function(e, t) {
+                for (var n = 0, r = 0; r < t / 2; r++) {
+                    var i = Math.round(e[2 * r + 1] / t) * 8192 + Math.round(e[2 * r] / t) + n;
+                    e[r] = i & 67108863, n = i < 67108864 ? 0 : i / 67108864 | 0
+                }
+                return e
+            }, v.prototype.convert13b = function(e, t, r, i) {
+                for (var a = 0, s = 0; s < t; s++) a += e[s] | 0, r[2 * s] = a & 8191, a >>>= 13, r[2 * s + 1] = a & 8191, a >>>= 13;
+                for (s = 2 * t; s < i; ++s) r[s] = 0;
+                n(a === 0), n(!(a & -8192))
+            }, v.prototype.stub = function(e) {
+                for (var t = Array(e), n = 0; n < e; n++) t[n] = 0;
+                return t
+            }, v.prototype.mulp = function(e, t, n) {
+                var r = 2 * this.guessLen13b(e.length, t.length),
+                    i = this.makeRBT(r),
+                    a = this.stub(r),
+                    s = Array(r),
+                    c = Array(r),
+                    l = Array(r),
+                    u = Array(r),
+                    d = Array(r),
+                    f = Array(r),
+                    p = n.words;
+                p.length = r, this.convert13b(e.words, e.length, s, r), this.convert13b(t.words, t.length, u, r), this.transform(s, a, c, l, r, i), this.transform(u, a, d, f, r, i);
+                for (var m = 0; m < r; m++) {
+                    var h = c[m] * d[m] - l[m] * f[m];
+                    l[m] = c[m] * f[m] + l[m] * d[m], c[m] = h
+                }
+                return this.conjugate(c, l, r), this.transform(c, l, p, a, r, i), this.conjugate(p, a, r), this.normalize13b(p, r), n.negative = e.negative ^ t.negative, n.length = e.length + t.length, n.strip()
+            }, i.prototype.mul = function(e) {
+                var t = new i(null);
+                return t.words = Array(this.length + e.length), this.mulTo(e, t)
+            }, i.prototype.mulf = function(e) {
+                var t = new i(null);
+                return t.words = Array(this.length + e.length), _(this, e, t)
+            }, i.prototype.imul = function(e) {
+                return this.clone().mulTo(e, this)
+            }, i.prototype.imuln = function(e) {
+                n(typeof e == `number`), n(e < 67108864);
+                for (var t = 0, r = 0; r < this.length; r++) {
+                    var i = (this.words[r] | 0) * e,
+                        a = (i & 67108863) + (t & 67108863);
+                    t >>= 26, t += i / 67108864 | 0, t += a >>> 26, this.words[r] = a & 67108863
+                }
+                return t !== 0 && (this.words[r] = t, this.length++), this.length = e === 0 ? 1 : this.length, this
+            }, i.prototype.muln = function(e) {
+                return this.clone().imuln(e)
+            }, i.prototype.sqr = function() {
+                return this.mul(this)
+            }, i.prototype.isqr = function() {
+                return this.imul(this.clone())
+            }, i.prototype.pow = function(e) {
+                var t = p(e);
+                if (t.length === 0) return new i(1);
+                for (var n = this, r = 0; r < t.length && t[r] === 0; r++, n = n.sqr());
+                if (++r < t.length)
+                    for (var a = n.sqr(); r < t.length; r++, a = a.sqr()) t[r] !== 0 && (n = n.mul(a));
+                return n
+            }, i.prototype.iushln = function(e) {
+                n(typeof e == `number` && e >= 0);
+                var t = e % 26,
+                    r = (e - t) / 26,
+                    i = 67108863 >>> 26 - t << 26 - t,
+                    a;
+                if (t !== 0) {
+                    var s = 0;
+                    for (a = 0; a < this.length; a++) {
+                        var c = this.words[a] & i,
+                            l = (this.words[a] | 0) - c << t;
+                        this.words[a] = l | s, s = c >>> 26 - t
+                    }
+                    s && (this.words[a] = s, this.length++)
+                }
+                if (r !== 0) {
+                    for (a = this.length - 1; a >= 0; a--) this.words[a + r] = this.words[a];
+                    for (a = 0; a < r; a++) this.words[a] = 0;
+                    this.length += r
+                }
+                return this.strip()
+            }, i.prototype.ishln = function(e) {
+                return n(this.negative === 0), this.iushln(e)
+            }, i.prototype.iushrn = function(e, t, r) {
+                n(typeof e == `number` && e >= 0);
+                var i = t ? (t - t % 26) / 26 : 0,
+                    a = e % 26,
+                    s = Math.min((e - a) / 26, this.length),
+                    c = 67108863 ^ 67108863 >>> a << a,
+                    l = r;
+                if (i -= s, i = Math.max(0, i), l) {
+                    for (var u = 0; u < s; u++) l.words[u] = this.words[u];
+                    l.length = s
+                }
+                if (s !== 0) {
+                    if (this.length > s)
+                        for (this.length -= s, u = 0; u < this.length; u++) this.words[u] = this.words[u + s];
+                    else this.words[0] = 0, this.length = 1
+                }
+                var d = 0;
+                for (u = this.length - 1; u >= 0 && (d !== 0 || u >= i); u--) {
+                    var f = this.words[u] | 0;
+                    this.words[u] = d << 26 - a | f >>> a, d = f & c
+                }
+                return l && d !== 0 && (l.words[l.length++] = d), this.length === 0 && (this.words[0] = 0, this.length = 1), this.strip()
+            }, i.prototype.ishrn = function(e, t, r) {
+                return n(this.negative === 0), this.iushrn(e, t, r)
+            }, i.prototype.shln = function(e) {
+                return this.clone().ishln(e)
+            }, i.prototype.ushln = function(e) {
+                return this.clone().iushln(e)
+            }, i.prototype.shrn = function(e) {
+                return this.clone().ishrn(e)
+            }, i.prototype.ushrn = function(e) {
+                return this.clone().iushrn(e)
+            }, i.prototype.testn = function(e) {
+                n(typeof e == `number` && e >= 0);
+                var t = e % 26,
+                    r = (e - t) / 26,
+                    i = 1 << t;
+                return this.length <= r ? !1 : !!(this.words[r] & i)
+            }, i.prototype.imaskn = function(e) {
+                n(typeof e == `number` && e >= 0);
+                var t = e % 26,
+                    r = (e - t) / 26;
+                if (n(this.negative === 0, `imaskn works only with positive numbers`), this.length <= r) return this;
+                if (t !== 0 && r++, this.length = Math.min(r, this.length), t !== 0) {
+                    var i = 67108863 ^ 67108863 >>> t << t;
+                    this.words[this.length - 1] &= i
+                }
+                return this.strip()
+            }, i.prototype.maskn = function(e) {
+                return this.clone().imaskn(e)
+            }, i.prototype.iaddn = function(e) {
+                return n(typeof e == `number`), n(e < 67108864), e < 0 ? this.isubn(-e) : this.negative === 0 ? this._iaddn(e) : this.length === 1 && (this.words[0] | 0) < e ? (this.words[0] = e - (this.words[0] | 0), this.negative = 0, this) : (this.negative = 0, this.isubn(e), this.negative = 1, this)
+            }, i.prototype._iaddn = function(e) {
+                this.words[0] += e;
+                for (var t = 0; t < this.length && this.words[t] >= 67108864; t++) this.words[t] -= 67108864, t === this.length - 1 ? this.words[t + 1] = 1 : this.words[t + 1]++;
+                return this.length = Math.max(this.length, t + 1), this
+            }, i.prototype.isubn = function(e) {
+                if (n(typeof e == `number`), n(e < 67108864), e < 0) return this.iaddn(-e);
+                if (this.negative !== 0) return this.negative = 0, this.iaddn(e), this.negative = 1, this;
+                if (this.words[0] -= e, this.length === 1 && this.words[0] < 0) this.words[0] = -this.words[0], this.negative = 1;
+                else
+                    for (var t = 0; t < this.length && this.words[t] < 0; t++) this.words[t] += 67108864, --this.words[t + 1];
+                return this.strip()
+            }, i.prototype.addn = function(e) {
+                return this.clone().iaddn(e)
+            }, i.prototype.subn = function(e) {
+                return this.clone().isubn(e)
+            }, i.prototype.iabs = function() {
+                return this.negative = 0, this
+            }, i.prototype.abs = function() {
+                return this.clone().iabs()
+            }, i.prototype._ishlnsubmul = function(e, t, r) {
+                var i = e.length + r,
+                    a;
+                this._expand(i);
+                var s, c = 0;
+                for (a = 0; a < e.length; a++) {
+                    s = (this.words[a + r] | 0) + c;
+                    var l = (e.words[a] | 0) * t;
+                    s -= l & 67108863, c = (s >> 26) - (l / 67108864 | 0), this.words[a + r] = s & 67108863
+                }
+                for (; a < this.length - r; a++) s = (this.words[a + r] | 0) + c, c = s >> 26, this.words[a + r] = s & 67108863;
+                if (c === 0) return this.strip();
+                for (n(c === -1), c = 0, a = 0; a < this.length; a++) s = -(this.words[a] | 0) + c, c = s >> 26, this.words[a] = s & 67108863;
+                return this.negative = 1, this.strip()
+            }, i.prototype._wordDiv = function(e, t) {
+                var n = this.length - e.length,
+                    r = this.clone(),
+                    a = e,
+                    s = a.words[a.length - 1] | 0;
+                n = 26 - this._countBits(s), n !== 0 && (a = a.ushln(n), r.iushln(n), s = a.words[a.length - 1] | 0);
+                var c = r.length - a.length,
+                    l;
+                if (t !== `mod`) {
+                    l = new i(null), l.length = c + 1, l.words = Array(l.length);
+                    for (var u = 0; u < l.length; u++) l.words[u] = 0
+                }
+                var d = r.clone()._ishlnsubmul(a, 1, c);
+                d.negative === 0 && (r = d, l && (l.words[c] = 1));
+                for (var f = c - 1; f >= 0; f--) {
+                    var p = (r.words[a.length + f] | 0) * 67108864 + (r.words[a.length + f - 1] | 0);
+                    for (p = Math.min(p / s | 0, 67108863), r._ishlnsubmul(a, p, f); r.negative !== 0;) p--, r.negative = 0, r._ishlnsubmul(a, 1, f), r.isZero() || (r.negative ^= 1);
+                    l && (l.words[f] = p)
+                }
+                return l && l.strip(), r.strip(), t !== `div` && n !== 0 && r.iushrn(n), {
+                    div: l || null,
+                    mod: r
+                }
+            }, i.prototype.divmod = function(e, t, r) {
+                if (n(!e.isZero()), this.isZero()) return {
+                    div: new i(0),
+                    mod: new i(0)
+                };
+                var a, s, c;
+                return this.negative !== 0 && e.negative === 0 ? (c = this.neg().divmod(e, t), t !== `mod` && (a = c.div.neg()), t !== `div` && (s = c.mod.neg(), r && s.negative !== 0 && s.iadd(e)), {
+                    div: a,
+                    mod: s
+                }) : this.negative === 0 && e.negative !== 0 ? (c = this.divmod(e.neg(), t), t !== `mod` && (a = c.div.neg()), {
+                    div: a,
+                    mod: c.mod
+                }) : (this.negative & e.negative) === 0 ? e.length > this.length || this.cmp(e) < 0 ? {
+                    div: new i(0),
+                    mod: this
+                } : e.length === 1 ? t === `div` ? {
+                    div: this.divn(e.words[0]),
+                    mod: null
+                } : t === `mod` ? {
+                    div: null,
+                    mod: new i(this.modn(e.words[0]))
+                } : {
+                    div: this.divn(e.words[0]),
+                    mod: new i(this.modn(e.words[0]))
+                } : this._wordDiv(e, t) : (c = this.neg().divmod(e.neg(), t), t !== `div` && (s = c.mod.neg(), r && s.negative !== 0 && s.isub(e)), {
+                    div: c.div,
+                    mod: s
                 })
-            }),
-            switchAnnual: () => b("annual", async () => {
-                const f = await O({
-                    url: "/api/billing/subscription",
-                    method: "POST",
-                    data: {
-                        subscriptionId: h.subscription.id,
-                        action: "switch-annual",
-                        ...h.quote
+            }, i.prototype.div = function(e) {
+                return this.divmod(e, `div`, !1).div
+            }, i.prototype.mod = function(e) {
+                return this.divmod(e, `mod`, !1).mod
+            }, i.prototype.umod = function(e) {
+                return this.divmod(e, `mod`, !0).mod
+            }, i.prototype.divRound = function(e) {
+                var t = this.divmod(e);
+                if (t.mod.isZero()) return t.div;
+                var n = t.div.negative === 0 ? t.mod : t.mod.isub(e),
+                    r = e.ushrn(1),
+                    i = e.andln(1),
+                    a = n.cmp(r);
+                return a < 0 || i === 1 && a === 0 ? t.div : t.div.negative === 0 ? t.div.iaddn(1) : t.div.isubn(1)
+            }, i.prototype.modn = function(e) {
+                n(e <= 67108863);
+                for (var t = (1 << 26) % e, r = 0, i = this.length - 1; i >= 0; i--) r = (t * r + (this.words[i] | 0)) % e;
+                return r
+            }, i.prototype.idivn = function(e) {
+                n(e <= 67108863);
+                for (var t = 0, r = this.length - 1; r >= 0; r--) {
+                    var i = (this.words[r] | 0) + t * 67108864;
+                    this.words[r] = i / e | 0, t = i % e
+                }
+                return this.strip()
+            }, i.prototype.divn = function(e) {
+                return this.clone().idivn(e)
+            }, i.prototype.egcd = function(e) {
+                n(e.negative === 0), n(!e.isZero());
+                var t = this,
+                    r = e.clone();
+                t = t.negative === 0 ? t.clone() : t.umod(e);
+                for (var a = new i(1), s = new i(0), c = new i(0), l = new i(1), u = 0; t.isEven() && r.isEven();) t.iushrn(1), r.iushrn(1), ++u;
+                for (var d = r.clone(), f = t.clone(); !t.isZero();) {
+                    for (var p = 0, m = 1;
+                        (t.words[0] & m) === 0 && p < 26; ++p, m <<= 1);
+                    if (p > 0)
+                        for (t.iushrn(p); p-- > 0;)(a.isOdd() || s.isOdd()) && (a.iadd(d), s.isub(f)), a.iushrn(1), s.iushrn(1);
+                    for (var h = 0, g = 1;
+                        (r.words[0] & g) === 0 && h < 26; ++h, g <<= 1);
+                    if (h > 0)
+                        for (r.iushrn(h); h-- > 0;)(c.isOdd() || l.isOdd()) && (c.iadd(d), l.isub(f)), c.iushrn(1), l.iushrn(1);
+                    t.cmp(r) >= 0 ? (t.isub(r), a.isub(c), s.isub(l)) : (r.isub(t), c.isub(a), l.isub(s))
+                }
+                return {
+                    a: c,
+                    b: l,
+                    gcd: r.iushln(u)
+                }
+            }, i.prototype._invmp = function(e) {
+                n(e.negative === 0), n(!e.isZero());
+                var t = this,
+                    r = e.clone();
+                t = t.negative === 0 ? t.clone() : t.umod(e);
+                for (var a = new i(1), s = new i(0), c = r.clone(); t.cmpn(1) > 0 && r.cmpn(1) > 0;) {
+                    for (var l = 0, u = 1;
+                        (t.words[0] & u) === 0 && l < 26; ++l, u <<= 1);
+                    if (l > 0)
+                        for (t.iushrn(l); l-- > 0;) a.isOdd() && a.iadd(c), a.iushrn(1);
+                    for (var d = 0, f = 1;
+                        (r.words[0] & f) === 0 && d < 26; ++d, f <<= 1);
+                    if (d > 0)
+                        for (r.iushrn(d); d-- > 0;) s.isOdd() && s.iadd(c), s.iushrn(1);
+                    t.cmp(r) >= 0 ? (t.isub(r), a.isub(s)) : (r.isub(t), s.isub(a))
+                }
+                var p = t.cmpn(1) === 0 ? a : s;
+                return p.cmpn(0) < 0 && p.iadd(e), p
+            }, i.prototype.gcd = function(e) {
+                if (this.isZero()) return e.abs();
+                if (e.isZero()) return this.abs();
+                var t = this.clone(),
+                    n = e.clone();
+                t.negative = 0, n.negative = 0;
+                for (var r = 0; t.isEven() && n.isEven(); r++) t.iushrn(1), n.iushrn(1);
+                do {
+                    for (; t.isEven();) t.iushrn(1);
+                    for (; n.isEven();) n.iushrn(1);
+                    var i = t.cmp(n);
+                    if (i < 0) {
+                        var a = t;
+                        t = n, n = a
+                    } else if (i === 0 || n.cmpn(1) === 0) break;
+                    t.isub(n)
+                } while (1);
+                return n.iushln(r)
+            }, i.prototype.invm = function(e) {
+                return this.egcd(e).a.umod(e)
+            }, i.prototype.isEven = function() {
+                return !(this.words[0] & 1)
+            }, i.prototype.isOdd = function() {
+                return (this.words[0] & 1) == 1
+            }, i.prototype.andln = function(e) {
+                return this.words[0] & e
+            }, i.prototype.bincn = function(e) {
+                n(typeof e == `number`);
+                var t = e % 26,
+                    r = (e - t) / 26,
+                    i = 1 << t;
+                if (this.length <= r) return this._expand(r + 1), this.words[r] |= i, this;
+                for (var a = i, s = r; a !== 0 && s < this.length; s++) {
+                    var c = this.words[s] | 0;
+                    c += a, a = c >>> 26, c &= 67108863, this.words[s] = c
+                }
+                return a !== 0 && (this.words[s] = a, this.length++), this
+            }, i.prototype.isZero = function() {
+                return this.length === 1 && this.words[0] === 0
+            }, i.prototype.cmpn = function(e) {
+                var t = e < 0;
+                if (this.negative !== 0 && !t) return -1;
+                if (this.negative === 0 && t) return 1;
+                this.strip();
+                var r;
+                if (this.length > 1) r = 1;
+                else {
+                    t && (e = -e), n(e <= 67108863, `Number is too big`);
+                    var i = this.words[0] | 0;
+                    r = i === e ? 0 : i < e ? -1 : 1
+                }
+                return this.negative === 0 ? r : -r | 0
+            }, i.prototype.cmp = function(e) {
+                if (this.negative !== 0 && e.negative === 0) return -1;
+                if (this.negative === 0 && e.negative !== 0) return 1;
+                var t = this.ucmp(e);
+                return this.negative === 0 ? t : -t | 0
+            }, i.prototype.ucmp = function(e) {
+                if (this.length > e.length) return 1;
+                if (this.length < e.length) return -1;
+                for (var t = 0, n = this.length - 1; n >= 0; n--) {
+                    var r = this.words[n] | 0,
+                        i = e.words[n] | 0;
+                    if (r !== i) {
+                        r < i ? t = -1 : r > i && (t = 1);
+                        break
                     }
-                });
-                y(null), await t.refetch(), r.refetch(), f.pending ? f.paymentUrl || d("Your annual switch is awaiting payment. Contact support to complete it.") : Y.success("You’re now on annual billing.")
-            }),
-            resumeSubscription: () => b("resume", async () => {
-                await O({
-                    url: "/api/billing/subscription",
-                    method: "POST",
-                    data: {
-                        subscriptionId: s.id,
-                        action: "resume"
+                }
+                return t
+            }, i.prototype.gtn = function(e) {
+                return this.cmpn(e) === 1
+            }, i.prototype.gt = function(e) {
+                return this.cmp(e) === 1
+            }, i.prototype.gten = function(e) {
+                return this.cmpn(e) >= 0
+            }, i.prototype.gte = function(e) {
+                return this.cmp(e) >= 0
+            }, i.prototype.ltn = function(e) {
+                return this.cmpn(e) === -1
+            }, i.prototype.lt = function(e) {
+                return this.cmp(e) === -1
+            }, i.prototype.lten = function(e) {
+                return this.cmpn(e) <= 0
+            }, i.prototype.lte = function(e) {
+                return this.cmp(e) <= 0
+            }, i.prototype.eqn = function(e) {
+                return this.cmpn(e) === 0
+            }, i.prototype.eq = function(e) {
+                return this.cmp(e) === 0
+            }, i.red = function(e) {
+                return new E(e)
+            }, i.prototype.toRed = function(e) {
+                return n(!this.red, `Already a number in reduction context`), n(this.negative === 0, `red works only with positives`), e.convertTo(this)._forceRed(e)
+            }, i.prototype.fromRed = function() {
+                return n(this.red, `fromRed works only with numbers in reduction context`), this.red.convertFrom(this)
+            }, i.prototype._forceRed = function(e) {
+                return this.red = e, this
+            }, i.prototype.forceRed = function(e) {
+                return n(!this.red, `Already a number in reduction context`), this._forceRed(e)
+            }, i.prototype.redAdd = function(e) {
+                return n(this.red, `redAdd works only with red numbers`), this.red.add(this, e)
+            }, i.prototype.redIAdd = function(e) {
+                return n(this.red, `redIAdd works only with red numbers`), this.red.iadd(this, e)
+            }, i.prototype.redSub = function(e) {
+                return n(this.red, `redSub works only with red numbers`), this.red.sub(this, e)
+            }, i.prototype.redISub = function(e) {
+                return n(this.red, `redISub works only with red numbers`), this.red.isub(this, e)
+            }, i.prototype.redShl = function(e) {
+                return n(this.red, `redShl works only with red numbers`), this.red.shl(this, e)
+            }, i.prototype.redMul = function(e) {
+                return n(this.red, `redMul works only with red numbers`), this.red._verify2(this, e), this.red.mul(this, e)
+            }, i.prototype.redIMul = function(e) {
+                return n(this.red, `redMul works only with red numbers`), this.red._verify2(this, e), this.red.imul(this, e)
+            }, i.prototype.redSqr = function() {
+                return n(this.red, `redSqr works only with red numbers`), this.red._verify1(this), this.red.sqr(this)
+            }, i.prototype.redISqr = function() {
+                return n(this.red, `redISqr works only with red numbers`), this.red._verify1(this), this.red.isqr(this)
+            }, i.prototype.redSqrt = function() {
+                return n(this.red, `redSqrt works only with red numbers`), this.red._verify1(this), this.red.sqrt(this)
+            }, i.prototype.redInvm = function() {
+                return n(this.red, `redInvm works only with red numbers`), this.red._verify1(this), this.red.invm(this)
+            }, i.prototype.redNeg = function() {
+                return n(this.red, `redNeg works only with red numbers`), this.red._verify1(this), this.red.neg(this)
+            }, i.prototype.redPow = function(e) {
+                return n(this.red && !e.red, `redPow(normalNum)`), this.red._verify1(this), this.red.pow(this, e)
+            };
+            var y = {
+                k256: null,
+                p224: null,
+                p192: null,
+                p25519: null
+            };
+
+            function b(e, t) {
+                this.name = e, this.p = new i(t, 16), this.n = this.p.bitLength(), this.k = new i(1).iushln(this.n).isub(this.p), this.tmp = this._tmp()
+            }
+            b.prototype._tmp = function() {
+                var e = new i(null);
+                return e.words = Array(Math.ceil(this.n / 13)), e
+            }, b.prototype.ireduce = function(e) {
+                var t = e,
+                    n;
+                do this.split(t, this.tmp), t = this.imulK(t), t = t.iadd(this.tmp), n = t.bitLength(); while (n > this.n);
+                var r = n < this.n ? -1 : t.ucmp(this.p);
+                return r === 0 ? (t.words[0] = 0, t.length = 1) : r > 0 ? t.isub(this.p) : t.strip === void 0 ? t._strip() : t.strip(), t
+            }, b.prototype.split = function(e, t) {
+                e.iushrn(this.n, 0, t)
+            }, b.prototype.imulK = function(e) {
+                return e.imul(this.k)
+            };
+
+            function x() {
+                b.call(this, `k256`, `ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff fffffffe fffffc2f`)
+            }
+            r(x, b), x.prototype.split = function(e, t) {
+                for (var n = 4194303, r = Math.min(e.length, 9), i = 0; i < r; i++) t.words[i] = e.words[i];
+                if (t.length = r, e.length <= 9) e.words[0] = 0, e.length = 1;
+                else {
+                    var a = e.words[9];
+                    for (t.words[t.length++] = a & n, i = 10; i < e.length; i++) {
+                        var s = e.words[i] | 0;
+                        e.words[i - 10] = (s & n) << 4 | a >>> 22, a = s
                     }
-                }), c(null), await t.refetch(), Y.success("Your subscription will renew again.")
-            }),
-            cancelSubscription: (f, C) => b("cancel", async () => {
-                await O({
-                    url: "/api/billing/subscription",
-                    method: "POST",
-                    data: {
-                        subscriptionId: u.id,
-                        action: "cancel",
-                        reasonId: f,
-                        otherReason: C
+                    a >>>= 22, e.words[i - 10] = a, a === 0 && e.length > 10 ? e.length -= 10 : e.length -= 9
+                }
+            }, x.prototype.imulK = function(e) {
+                e.words[e.length] = 0, e.words[e.length + 1] = 0, e.length += 2;
+                for (var t = 0, n = 0; n < e.length; n++) {
+                    var r = e.words[n] | 0;
+                    t += r * 977, e.words[n] = t & 67108863, t = r * 64 + (t / 67108864 | 0)
+                }
+                return e.words[e.length - 1] === 0 && (e.length--, e.words[e.length - 1] === 0 && e.length--), e
+            };
+
+            function S() {
+                b.call(this, `p224`, `ffffffff ffffffff ffffffff ffffffff 00000000 00000000 00000001`)
+            }
+            r(S, b);
+
+            function C() {
+                b.call(this, `p192`, `ffffffff ffffffff ffffffff fffffffe ffffffff ffffffff`)
+            }
+            r(C, b);
+
+            function w() {
+                b.call(this, `25519`, `7fffffffffffffff ffffffffffffffff ffffffffffffffff ffffffffffffffed`)
+            }
+            r(w, b), w.prototype.imulK = function(e) {
+                for (var t = 0, n = 0; n < e.length; n++) {
+                    var r = (e.words[n] | 0) * 19 + t,
+                        i = r & 67108863;
+                    r >>>= 26, e.words[n] = i, t = r
+                }
+                return t !== 0 && (e.words[e.length++] = t), e
+            }, i._prime = function(e) {
+                if (y[e]) return y[e];
+                var t;
+                if (e === `k256`) t = new x;
+                else if (e === `p224`) t = new S;
+                else if (e === `p192`) t = new C;
+                else if (e === `p25519`) t = new w;
+                else throw Error(`Unknown prime ` + e);
+                return y[e] = t, t
+            };
+
+            function E(e) {
+                if (typeof e == `string`) {
+                    var t = i._prime(e);
+                    this.m = t.p, this.prime = t
+                } else n(e.gtn(1), `modulus must be greater than 1`), this.m = e, this.prime = null
+            }
+            E.prototype._verify1 = function(e) {
+                n(e.negative === 0, `red works only with positives`), n(e.red, `red works only with red numbers`)
+            }, E.prototype._verify2 = function(e, t) {
+                n((e.negative | t.negative) === 0, `red works only with positives`), n(e.red && e.red === t.red, `red works only with red numbers`)
+            }, E.prototype.imod = function(e) {
+                return this.prime ? this.prime.ireduce(e)._forceRed(this) : e.umod(this.m)._forceRed(this)
+            }, E.prototype.neg = function(e) {
+                return e.isZero() ? e.clone() : this.m.sub(e)._forceRed(this)
+            }, E.prototype.add = function(e, t) {
+                this._verify2(e, t);
+                var n = e.add(t);
+                return n.cmp(this.m) >= 0 && n.isub(this.m), n._forceRed(this)
+            }, E.prototype.iadd = function(e, t) {
+                this._verify2(e, t);
+                var n = e.iadd(t);
+                return n.cmp(this.m) >= 0 && n.isub(this.m), n
+            }, E.prototype.sub = function(e, t) {
+                this._verify2(e, t);
+                var n = e.sub(t);
+                return n.cmpn(0) < 0 && n.iadd(this.m), n._forceRed(this)
+            }, E.prototype.isub = function(e, t) {
+                this._verify2(e, t);
+                var n = e.isub(t);
+                return n.cmpn(0) < 0 && n.iadd(this.m), n
+            }, E.prototype.shl = function(e, t) {
+                return this._verify1(e), this.imod(e.ushln(t))
+            }, E.prototype.imul = function(e, t) {
+                return this._verify2(e, t), this.imod(e.imul(t))
+            }, E.prototype.mul = function(e, t) {
+                return this._verify2(e, t), this.imod(e.mul(t))
+            }, E.prototype.isqr = function(e) {
+                return this.imul(e, e.clone())
+            }, E.prototype.sqr = function(e) {
+                return this.mul(e, e)
+            }, E.prototype.sqrt = function(e) {
+                if (e.isZero()) return e.clone();
+                var t = this.m.andln(3);
+                if (n(t % 2 == 1), t === 3) {
+                    var r = this.m.add(new i(1)).iushrn(2);
+                    return this.pow(e, r)
+                }
+                for (var a = this.m.subn(1), s = 0; !a.isZero() && a.andln(1) === 0;) s++, a.iushrn(1);
+                n(!a.isZero());
+                var c = new i(1).toRed(this),
+                    l = c.redNeg(),
+                    u = this.m.subn(1).iushrn(1),
+                    d = this.m.bitLength();
+                for (d = new i(2 * d * d).toRed(this); this.pow(d, u).cmp(l) !== 0;) d.redIAdd(l);
+                for (var f = this.pow(d, a), p = this.pow(e, a.addn(1).iushrn(1)), m = this.pow(e, a), h = s; m.cmp(c) !== 0;) {
+                    for (var g = m, _ = 0; g.cmp(c) !== 0; _++) g = g.redSqr();
+                    n(_ < h);
+                    var v = this.pow(f, new i(1).iushln(h - _ - 1));
+                    p = p.redMul(v), f = v.redSqr(), m = m.redMul(f), h = _
+                }
+                return p
+            }, E.prototype.invm = function(e) {
+                var t = e._invmp(this.m);
+                return t.negative === 0 ? this.imod(t) : (t.negative = 0, this.imod(t).redNeg())
+            }, E.prototype.pow = function(e, t) {
+                if (t.isZero()) return new i(1).toRed(this);
+                if (t.cmpn(1) === 0) return e.clone();
+                var n = 4,
+                    r = Array(1 << n);
+                r[0] = new i(1).toRed(this), r[1] = e;
+                for (var a = 2; a < r.length; a++) r[a] = this.mul(r[a - 1], e);
+                var s = r[0],
+                    c = 0,
+                    l = 0,
+                    u = t.bitLength() % 26;
+                for (u === 0 && (u = 26), a = t.length - 1; a >= 0; a--) {
+                    for (var d = t.words[a], f = u - 1; f >= 0; f--) {
+                        var p = d >> f & 1;
+                        s !== r[0] && (s = this.sqr(s)), p === 0 && c === 0 ? l = 0 : (c <<= 1, c |= p, l++, (l === n || a === 0 && f === 0) && (s = this.mul(s, r[c]), l = 0, c = 0))
                     }
-                }), p(null), await t.refetch(), Y.success("Your subscription has been canceled.")
-            }),
-            openResume: f => {
-                d(null), c(f)
-            },
-            openCancel: f => {
-                d(null), p(f)
-            },
-            closeAnnual: () => y(null),
-            closeResume: () => c(null),
-            closeCancel: () => {
-                n || p(null)
+                    u = 26
+                }
+                return s
+            }, E.prototype.convertTo = function(e) {
+                var t = e.umod(this.m);
+                return t === e ? t.clone() : t
+            }, E.prototype.convertFrom = function(e) {
+                var t = e.clone();
+                return t.red = null, t
+            }, i.mont = function(e) {
+                return new ee(e)
+            };
+
+            function ee(e) {
+                E.call(this, e), this.shift = this.m.bitLength(), this.shift % 26 != 0 && (this.shift += 26 - this.shift % 26), this.r = new i(1).iushln(this.shift), this.r2 = this.imod(this.r.sqr()), this.rinv = this.r._invmp(this.m), this.minv = this.rinv.mul(this.r).isubn(1).div(this.m), this.minv = this.minv.umod(this.r), this.minv = this.r.sub(this.minv)
+            }
+            r(ee, E), ee.prototype.convertTo = function(e) {
+                return this.imod(e.ushln(this.shift))
+            }, ee.prototype.convertFrom = function(e) {
+                var t = this.imod(e.mul(this.rinv));
+                return t.red = null, t
+            }, ee.prototype.imul = function(e, t) {
+                if (e.isZero() || t.isZero()) return e.words[0] = 0, e.length = 1, e;
+                var n = e.imul(t),
+                    r = n.maskn(this.shift).mul(this.minv).imaskn(this.shift).mul(this.m),
+                    i = n.isub(r).iushrn(this.shift),
+                    a = i;
+                return i.cmp(this.m) >= 0 ? a = i.isub(this.m) : i.cmpn(0) < 0 && (a = i.iadd(this.m)), a._forceRed(this)
+            }, ee.prototype.mul = function(e, t) {
+                if (e.isZero() || t.isZero()) return new i(0)._forceRed(this);
+                var n = e.mul(t),
+                    r = n.maskn(this.shift).mul(this.minv).imaskn(this.shift).mul(this.m),
+                    a = n.isub(r).iushrn(this.shift),
+                    s = a;
+                return a.cmp(this.m) >= 0 ? s = a.isub(this.m) : a.cmpn(0) < 0 && (s = a.iadd(this.m)), s._forceRed(this)
+            }, ee.prototype.invm = function(e) {
+                return this.imod(e._invmp(this.m).mul(this.r2))._forceRed(this)
+            }
+        })(t === void 0 || t, e)
+    })),
+    require_brorand = __commonJSMin(((e, t) => {
+        var n;
+        t.exports = function(e) {
+            return n || (n = new r(null)), n.generate(e)
+        };
+
+        function r(e) {
+            this.rand = e
+        }
+        if (t.exports.Rand = r, r.prototype.generate = function(e) {
+                return this._rand(e)
+            }, r.prototype._rand = function(e) {
+                if (this.rand.getBytes) return this.rand.getBytes(e);
+                for (var t = new Uint8Array(e), n = 0; n < t.length; n++) t[n] = this.rand.getByte();
+                return t
+            }, typeof self == `object`) self.crypto && self.crypto.getRandomValues ? r.prototype._rand = function(e) {
+            var t = new Uint8Array(e);
+            return self.crypto.getRandomValues(t), t
+        } : self.msCrypto && self.msCrypto.getRandomValues ? r.prototype._rand = function(e) {
+            var t = new Uint8Array(e);
+            return self.msCrypto.getRandomValues(t), t
+        } : typeof window == `object` && (r.prototype._rand = function() {
+            throw Error(`Not implemented yet`)
+        });
+        else try {
+            var i = require_crypto_browserify();
+            if (typeof i.randomBytes != `function`) throw Error(`Not supported`);
+            r.prototype._rand = function(e) {
+                return i.randomBytes(e)
+            }
+        } catch {}
+    })),
+    require_mr = __commonJSMin(((e, t) => {
+        var n = require_bn$2(),
+            r = require_brorand();
+
+        function i(e) {
+            this.rand = e || new r.Rand
+        }
+        t.exports = i, i.create = function(e) {
+            return new i(e)
+        }, i.prototype._randbelow = function(e) {
+            var t = e.bitLength(),
+                r = Math.ceil(t / 8);
+            do var i = new n(this.rand.generate(r)); while (i.cmp(e) >= 0);
+            return i
+        }, i.prototype._randrange = function(e, t) {
+            var n = t.sub(e);
+            return e.add(this._randbelow(n))
+        }, i.prototype.test = function(e, t, r) {
+            var i = e.bitLength(),
+                a = n.mont(e),
+                s = new n(1).toRed(a);
+            t || (t = Math.max(1, i / 48 | 0));
+            for (var c = e.subn(1), l = 0; !c.testn(l); l++);
+            for (var u = e.shrn(l), d = c.toRed(a), f = !0; t > 0; t--) {
+                var p = this._randrange(new n(2), c);
+                r && r(p);
+                var m = p.toRed(a).redPow(u);
+                if (m.cmp(s) !== 0 && m.cmp(d) !== 0) {
+                    for (var h = 1; h < l; h++) {
+                        if (m = m.redSqr(), m.cmp(s) === 0) return !1;
+                        if (m.cmp(d) === 0) break
+                    }
+                    if (h === l) return !1
+                }
+            }
+            return f
+        }, i.prototype.getDivisor = function(e, t) {
+            var r = e.bitLength(),
+                i = n.mont(e),
+                a = new n(1).toRed(i);
+            t || (t = Math.max(1, r / 48 | 0));
+            for (var s = e.subn(1), c = 0; !s.testn(c); c++);
+            for (var l = e.shrn(c), u = s.toRed(i); t > 0; t--) {
+                var d = this._randrange(new n(2), s),
+                    f = e.gcd(d);
+                if (f.cmpn(1) !== 0) return f;
+                var p = d.toRed(i).redPow(l);
+                if (p.cmp(a) !== 0 && p.cmp(u) !== 0) {
+                    for (var m = 1; m < c; m++) {
+                        if (p = p.redSqr(), p.cmp(a) === 0) return p.fromRed().subn(1).gcd(e);
+                        if (p.cmp(u) === 0) break
+                    }
+                    if (m === c) return p = p.redSqr(), p.fromRed().subn(1).gcd(e)
+                }
+            }
+            return !1
+        }
+    })),
+    require_generatePrime = __commonJSMin(((e, t) => {
+        var n = require_browser$11();
+        t.exports = v, v.simpleSieve = g, v.fermatTest = _;
+        var r = require_bn$2(),
+            i = new r(24),
+            a = new(require_mr()),
+            s = new r(1),
+            c = new r(2),
+            l = new r(5);
+        new r(16), new r(8);
+        var u = new r(10),
+            d = new r(3);
+        new r(7);
+        var f = new r(11),
+            p = new r(4);
+        new r(12);
+        var m = null;
+
+        function h() {
+            if (m !== null) return m;
+            var e = 1048576,
+                t = [];
+            t[0] = 2;
+            for (var n = 1, r = 3; r < e; r += 2) {
+                for (var i = Math.ceil(Math.sqrt(r)), a = 0; a < n && t[a] <= i && r % t[a] !== 0; a++);
+                n !== a && t[a] <= i || (t[n++] = r)
+            }
+            return m = t, t
+        }
+
+        function g(e) {
+            for (var t = h(), n = 0; n < t.length; n++)
+                if (e.modn(t[n]) === 0) return e.cmpn(t[n]) === 0;
+            return !0
+        }
+
+        function _(e) {
+            var t = r.mont(e);
+            return c.toRed(t).redPow(e.subn(1)).fromRed().cmpn(1) === 0
+        }
+
+        function v(e, t) {
+            if (e < 16) return t === 2 || t === 5 ? new r([140, 123]) : new r([140, 39]);
+            t = new r(t);
+            for (var m, h;;) {
+                for (m = new r(n(Math.ceil(e / 8))); m.bitLength() > e;) m.ishrn(1);
+                if (m.isEven() && m.iadd(s), m.testn(1) || m.iadd(c), !t.cmp(c))
+                    for (; m.mod(i).cmp(f);) m.iadd(p);
+                else if (!t.cmp(l))
+                    for (; m.mod(u).cmp(d);) m.iadd(p);
+                if (h = m.shrn(1), g(h) && g(m) && _(h) && _(m) && a.test(h) && a.test(m)) return m
             }
         }
-    },
-    oa = () => {
-        const t = On(),
-            r = Fn(),
-            n = ia(t, r),
-            a = t.data;
-        return e.jsxs(An, {
-            children: [n.error && e.jsx($, {
-                type: "error",
-                showIcon: !0,
-                message: n.error,
-                closable: !0,
-                onClose: () => n.setError(null)
-            }), t.isLoading ? e.jsx(zn, {
-                children: e.jsx($e, {
-                    active: !0,
-                    paragraph: {
-                        rows: 4
-                    }
-                })
-            }) : t.isError ? e.jsx($, {
-                type: "error",
-                showIcon: !0,
-                message: "We couldn’t load your plan details",
-                action: e.jsx(m, {
-                    onClick: () => t.refetch(),
-                    children: "Try again"
-                })
-            }) : a ? e.jsxs(e.Fragment, {
-                children: [e.jsx(Yn, {
-                    billing: a
-                }), !!a.subscriptions.length && e.jsx(P, {
-                    title: "Your subscription",
-                    children: a.subscriptions.map(l => e.jsx(Jn, {
-                        subscription: l,
-                        canUpdatePaymentMethod: a.canUpdatePaymentMethod,
-                        busy: n.busy,
-                        updateCard: n.updateCard,
-                        previewAnnual: n.previewAnnual,
-                        onResume: n.openResume,
-                        onCancel: n.openCancel
-                    }, l.id))
-                }), e.jsx(ea, {
-                    groups: a.groups,
-                    hasPersonalSubscription: !!a.subscriptions.length
-                }), e.jsx(ta, {
-                    data: a,
-                    busy: n.busy,
-                    updateCard: n.updateCard
-                })]
-            }) : null, e.jsx(na, {
-                receipts: r
-            }), e.jsx(aa, {
-                annual: n.annual,
-                busy: n.busy,
-                error: n.error,
-                onClose: n.closeAnnual,
-                onSubmit: n.switchAnnual
-            }), e.jsx(ra, {
-                resume: n.resume,
-                busy: n.busy,
-                error: n.error,
-                onClose: n.closeResume,
-                onSubmit: n.resumeSubscription
-            }), n.cancel && e.jsx(Kn, {
-                subscription: n.cancel,
-                loading: n.busy === "cancel",
-                error: n.error,
-                onClose: n.closeCancel,
-                onSubmit: n.cancelSubscription
-            }, n.cancel.id)]
-        })
-    },
-    la = () => e.jsxs(ca, {
-        children: [e.jsxs(da, {
-            children: [e.jsx(ua, {
-                children: ["pharlain.jpg", "jeff.jpg", "rebecca.png"].map(t => e.jsx("img", {
-                    src: `/client/img/settings/${t}`,
-                    alt: ""
-                }, t))
-            }), e.jsx("h2", {
-                children: "Friendly folks, here to help."
-            }), e.jsx("p", {
-                children: "No robots, just real humans! Need something? We'll get back to you within 2 business days."
-            })]
-        }), e.jsxs(pa, {
-            children: [e.jsx("h3", {
-                children: "Send us an email"
-            }), e.jsx(ha, {
-                href: "mailto:hello@gimkit.com",
-                children: "hello@gimkit.com"
-            }), e.jsx("p", {
-                children: "Email us and we'll get back to you soon!"
-            }), e.jsxs(ma, {
-                href: "mailto:hello@gimkit.com",
-                children: [e.jsx(Rt, {
-                    "aria-hidden": !0
-                }), " Email support"]
-            })]
-        }), e.jsxs(xa, {
-            children: [e.jsxs(Se, {
-                href: "https://help.gimkit.com",
-                target: "_blank",
-                rel: "noopener noreferrer",
-                children: [e.jsx(Ae, {
-                    "aria-hidden": !0
-                }), e.jsxs("div", {
-                    children: [e.jsx("h3", {
-                        children: "Check our helpdesk"
-                    }), e.jsx("p", {
-                        children: "Your question might have already been answered! Search our helpdesk for an answer."
-                    })]
-                }), e.jsx(H, {
-                    "aria-hidden": !0
-                })]
-            }), e.jsxs(Se, {
-                href: "https://gimkit.nolt.io/",
-                target: "_blank",
-                rel: "noopener noreferrer",
-                children: [e.jsx(ct, {
-                    "aria-hidden": !0
-                }), e.jsxs("div", {
-                    children: [e.jsx("h3", {
-                        children: "Suggest a new feature"
-                    }), e.jsx("p", {
-                        children: "Have something you want to see in Gimkit? Visit our feedback center and suggest a new feature."
-                    })]
-                }), e.jsx(H, {
-                    "aria-hidden": !0
-                })]
-            })]
-        })]
+    })),
+    primes_exports = __exportAll({
+        default: () => primes_default,
+        modp1: () => modp1,
+        modp14: () => modp14,
+        modp15: () => modp15,
+        modp16: () => modp16,
+        modp17: () => modp17,
+        modp18: () => modp18,
+        modp2: () => modp2,
+        modp5: () => modp5
     }),
-    ca = o.div`
-  font-family: ${G.SFPro};
-  text-align: left;
-  a:focus-visible {
-    outline: 3px solid ${S.BackgroundPurple};
-    outline-offset: 4px;
-  }
-`,
-    da = o.section`
-  padding: 16px 0 32px;
-  text-align: left;
-  h2 {
-    margin: 24px 0 12px;
-    font-size: clamp(28px, 3vw, 42px);
-    font-weight: 800;
-    line-height: 1.12;
-    letter-spacing: -0.8px;
-  }
-  p {
-    margin: 0;
-    font-size: 16px;
-    color: #706a7c;
-    line-height: 1.5;
-  }
-`,
-    ua = o.div`
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  img {
-    width: 60px;
-    height: 60px;
-    border: 3px solid ${S.White};
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  img + img {
-    margin-left: -10px;
-  }
-`,
-    pa = o.section`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  justify-content: flex-start;
-  min-width: 0;
-  background: ${S.White};
-  border: 1px solid ${S.BorderGray};
-  border-radius: 14px;
-  padding: 28px;
-  h3 {
-    margin: 0 0 10px;
-    font-size: 15px;
-    font-weight: 600;
-  }
-  p {
-    margin: 12px 0 24px;
-    font-size: 14px;
-    line-height: 1.6;
-    color: #706a7c;
-  }
-  @media (max-width: 500px) {
-    padding: 20px;
-  }
-`,
-    ha = o.a`
-  color: ${S.BackgroundPurple};
-  font-size: clamp(22px, 2.4vw, 32px);
-  font-weight: 700;
-  line-height: 1.2;
-  overflow-wrap: anywhere;
-  text-decoration: none;
-  &:hover {
-    color: ${S.BackgroundPurple};
-    text-decoration: underline;
-  }
-`,
-    ma = o.a`
-  display: inline-flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-  padding: 12px 20px;
-  min-height: 44px;
-  border-radius: 10px;
-  background: ${S.BackgroundPurple};
-  color: ${S.White};
-  font-size: 15px;
-  font-weight: 600;
-  text-decoration: none;
-  &:hover {
-    color: ${S.White};
-    background: #563098;
-  }
-  @media (max-width: 500px) {
-    width: 100%;
-  }
-`,
-    xa = o.div`
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 16px;
-  margin-top: 20px;
-  @media (max-width: 600px) {
-    grid-template-columns: minmax(0, 1fr);
-  }
-`,
-    Se = o.a`
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 22px;
-  border: 1px solid ${S.BorderGray};
-  border-radius: 14px;
-  background: ${S.White};
-  color: #262331;
-  text-decoration: none;
-  > .anticon:first-child {
-    font-size: 22px;
-    color: ${S.BackgroundPurple};
-  }
-  > .anticon:last-child {
-    margin-left: auto;
-    color: #898092;
-  }
-  h3 {
-    margin: 0;
-    font-size: 16px;
-    font-weight: 600;
-  }
-  p {
-    margin: 8px 0 0;
-    color: #706a7c;
-    font-size: 14px;
-    line-height: 1.6;
-  }
-  > .anticon {
-    flex-shrink: 0;
-  }
-  &:hover {
-    border-color: ${S.BackgroundPurple};
-    color: ${S.BackgroundPurple};
-  }
-`,
-    ga = t => {
-        const [r, n] = i.useState("newEmail"), [a, l] = i.useState(""), [d, s] = i.useState(!1), [c, u] = i.useState(!1), [p, h] = i.useState(""), [y, x] = i.useState(""), [b, j] = i.useState(null), w = D => l(D.target.value.toLowerCase()), v = a && dt(a) && a !== F().email, g = () => {
-            v && (s(!0), R({
-                url: "/api/users/register/email-info",
-                method: "post",
-                data: {
-                    email: a
-                },
-                success: D => {
-                    D.accountExists ? (j(`Account already exists with email "${a}"`), s(!1)) : R({
-                        url: "/api/users/requestEmailChange",
-                        method: "post",
-                        data: {
-                            emailToChangeTo: a
-                        },
-                        success: te => {
-                            h(te.encryptedToken), n("code")
-                        },
-                        error: te => j(te),
-                        both: () => s(!1)
-                    })
-                },
-                error: () => s(!1)
-            }))
-        }, I = D => x(D.target.value), f = !!y, C = () => {
-            f && (u(!0), R({
-                url: "/api/users/changeEmail",
-                method: "post",
-                data: {
-                    changeToken: p,
-                    encryptCode: y
-                },
-                success: () => {
-                    X({
-                        onSuccess: () => t.onEmailChange(a)
-                    })
-                },
-                error: D => j(D),
-                both: () => u(!1)
-            }))
-        }, ee = () => r === "newEmail" ? e.jsxs(e.Fragment, {
-            children: [e.jsx("div", {
-                style: {
-                    fontWeight: se.UltraBold,
-                    fontSize: 31
-                },
-                children: "New Account Email"
-            }), e.jsx(B, {
-                onChange: w,
-                placeholder: "please-do-not-ice-me@gimkit.com",
-                size: "large",
-                value: a,
-                autoFocus: !0,
-                onPressEnter: g,
-                maxLength: 256
-            }), e.jsx(m, {
-                type: "primary",
-                disabled: !v,
-                style: {
-                    width: "100%",
-                    marginTop: 7
-                },
-                size: "large",
-                onClick: g,
-                loading: d,
-                children: "Continue"
-            })]
-        }) : r === "code" ? e.jsxs(e.Fragment, {
-            children: [e.jsx("div", {
-                style: {
-                    fontWeight: se.UltraBold,
-                    fontSize: 31
-                },
-                children: "Enter Code"
-            }), e.jsxs("div", {
-                style: {
-                    marginBottom: 9
-                },
-                children: ["A code was just sent to ", e.jsx("b", {
-                    children: a
-                }), ". Please check that email and enter it here. The code expires in 30 minutes."]
-            }), e.jsx(B, {
-                onChange: I,
-                placeholder: "Enter code here...",
-                size: "large",
-                value: y,
-                autoFocus: !0,
-                onPressEnter: C
-            }), e.jsx(m, {
-                type: "primary",
-                disabled: !f,
-                style: {
-                    width: "100%",
-                    marginTop: 7
-                },
-                size: "large",
-                onClick: C,
-                loading: c,
-                children: "Submit"
-            })]
-        }) : null;
-        return e.jsxs(z, {
-            style: {
-                fontFamily: G.SFPro,
-                color: S.Black
-            },
-            footer: null,
-            open: !0,
-            onCancel: t.close,
-            closable: !0,
-            children: [ee(), e.jsx(pt, {
-                error: b,
-                style: {
-                    marginTop: 10
-                }
-            })]
-        })
-    },
-    fa = () => {
-        const [t, r] = i.useState(F().email), [n, a] = i.useState(!1), [l, d] = i.useState(!1), s = F().passwordless, c = u => {
-            z.success({
-                title: "Email changed!",
-                content: `Email changed to "${u}"`
-            }), r(u), a(!1)
+    modp1, modp2, modp5, modp14, modp15, modp16, modp17, modp18, primes_default, init_primes = __esmMin((() => {
+        modp1 = {
+            gen: `02`,
+            prime: `ffffffffffffffffc90fdaa22168c234c4c6628b80dc1cd129024e088a67cc74020bbea63b139b22514a08798e3404ddef9519b3cd3a431b302b0a6df25f14374fe1356d6d51c245e485b576625e7ec6f44c42e9a63a3620ffffffffffffffff`
+        }, modp2 = {
+            gen: `02`,
+            prime: `ffffffffffffffffc90fdaa22168c234c4c6628b80dc1cd129024e088a67cc74020bbea63b139b22514a08798e3404ddef9519b3cd3a431b302b0a6df25f14374fe1356d6d51c245e485b576625e7ec6f44c42e9a637ed6b0bff5cb6f406b7edee386bfb5a899fa5ae9f24117c4b1fe649286651ece65381ffffffffffffffff`
+        }, modp5 = {
+            gen: `02`,
+            prime: `ffffffffffffffffc90fdaa22168c234c4c6628b80dc1cd129024e088a67cc74020bbea63b139b22514a08798e3404ddef9519b3cd3a431b302b0a6df25f14374fe1356d6d51c245e485b576625e7ec6f44c42e9a637ed6b0bff5cb6f406b7edee386bfb5a899fa5ae9f24117c4b1fe649286651ece45b3dc2007cb8a163bf0598da48361c55d39a69163fa8fd24cf5f83655d23dca3ad961c62f356208552bb9ed529077096966d670c354e4abc9804f1746c08ca237327ffffffffffffffff`
+        }, modp14 = {
+            gen: `02`,
+            prime: `ffffffffffffffffc90fdaa22168c234c4c6628b80dc1cd129024e088a67cc74020bbea63b139b22514a08798e3404ddef9519b3cd3a431b302b0a6df25f14374fe1356d6d51c245e485b576625e7ec6f44c42e9a637ed6b0bff5cb6f406b7edee386bfb5a899fa5ae9f24117c4b1fe649286651ece45b3dc2007cb8a163bf0598da48361c55d39a69163fa8fd24cf5f83655d23dca3ad961c62f356208552bb9ed529077096966d670c354e4abc9804f1746c08ca18217c32905e462e36ce3be39e772c180e86039b2783a2ec07a28fb5c55df06f4c52c9de2bcbf6955817183995497cea956ae515d2261898fa051015728e5a8aacaa68ffffffffffffffff`
+        }, modp15 = {
+            gen: `02`,
+            prime: `ffffffffffffffffc90fdaa22168c234c4c6628b80dc1cd129024e088a67cc74020bbea63b139b22514a08798e3404ddef9519b3cd3a431b302b0a6df25f14374fe1356d6d51c245e485b576625e7ec6f44c42e9a637ed6b0bff5cb6f406b7edee386bfb5a899fa5ae9f24117c4b1fe649286651ece45b3dc2007cb8a163bf0598da48361c55d39a69163fa8fd24cf5f83655d23dca3ad961c62f356208552bb9ed529077096966d670c354e4abc9804f1746c08ca18217c32905e462e36ce3be39e772c180e86039b2783a2ec07a28fb5c55df06f4c52c9de2bcbf6955817183995497cea956ae515d2261898fa051015728e5a8aaac42dad33170d04507a33a85521abdf1cba64ecfb850458dbef0a8aea71575d060c7db3970f85a6e1e4c7abf5ae8cdb0933d71e8c94e04a25619dcee3d2261ad2ee6bf12ffa06d98a0864d87602733ec86a64521f2b18177b200cbbe117577a615d6c770988c0bad946e208e24fa074e5ab3143db5bfce0fd108e4b82d120a93ad2caffffffffffffffff`
+        }, modp16 = {
+            gen: `02`,
+            prime: `ffffffffffffffffc90fdaa22168c234c4c6628b80dc1cd129024e088a67cc74020bbea63b139b22514a08798e3404ddef9519b3cd3a431b302b0a6df25f14374fe1356d6d51c245e485b576625e7ec6f44c42e9a637ed6b0bff5cb6f406b7edee386bfb5a899fa5ae9f24117c4b1fe649286651ece45b3dc2007cb8a163bf0598da48361c55d39a69163fa8fd24cf5f83655d23dca3ad961c62f356208552bb9ed529077096966d670c354e4abc9804f1746c08ca18217c32905e462e36ce3be39e772c180e86039b2783a2ec07a28fb5c55df06f4c52c9de2bcbf6955817183995497cea956ae515d2261898fa051015728e5a8aaac42dad33170d04507a33a85521abdf1cba64ecfb850458dbef0a8aea71575d060c7db3970f85a6e1e4c7abf5ae8cdb0933d71e8c94e04a25619dcee3d2261ad2ee6bf12ffa06d98a0864d87602733ec86a64521f2b18177b200cbbe117577a615d6c770988c0bad946e208e24fa074e5ab3143db5bfce0fd108e4b82d120a92108011a723c12a787e6d788719a10bdba5b2699c327186af4e23c1a946834b6150bda2583e9ca2ad44ce8dbbbc2db04de8ef92e8efc141fbecaa6287c59474e6bc05d99b2964fa090c3a2233ba186515be7ed1f612970cee2d7afb81bdd762170481cd0069127d5b05aa993b4ea988d8fddc186ffb7dc90a6c08f4df435c934063199ffffffffffffffff`
+        }, modp17 = {
+            gen: `02`,
+            prime: `ffffffffffffffffc90fdaa22168c234c4c6628b80dc1cd129024e088a67cc74020bbea63b139b22514a08798e3404ddef9519b3cd3a431b302b0a6df25f14374fe1356d6d51c245e485b576625e7ec6f44c42e9a637ed6b0bff5cb6f406b7edee386bfb5a899fa5ae9f24117c4b1fe649286651ece45b3dc2007cb8a163bf0598da48361c55d39a69163fa8fd24cf5f83655d23dca3ad961c62f356208552bb9ed529077096966d670c354e4abc9804f1746c08ca18217c32905e462e36ce3be39e772c180e86039b2783a2ec07a28fb5c55df06f4c52c9de2bcbf6955817183995497cea956ae515d2261898fa051015728e5a8aaac42dad33170d04507a33a85521abdf1cba64ecfb850458dbef0a8aea71575d060c7db3970f85a6e1e4c7abf5ae8cdb0933d71e8c94e04a25619dcee3d2261ad2ee6bf12ffa06d98a0864d87602733ec86a64521f2b18177b200cbbe117577a615d6c770988c0bad946e208e24fa074e5ab3143db5bfce0fd108e4b82d120a92108011a723c12a787e6d788719a10bdba5b2699c327186af4e23c1a946834b6150bda2583e9ca2ad44ce8dbbbc2db04de8ef92e8efc141fbecaa6287c59474e6bc05d99b2964fa090c3a2233ba186515be7ed1f612970cee2d7afb81bdd762170481cd0069127d5b05aa993b4ea988d8fddc186ffb7dc90a6c08f4df435c93402849236c3fab4d27c7026c1d4dcb2602646dec9751e763dba37bdf8ff9406ad9e530ee5db382f413001aeb06a53ed9027d831179727b0865a8918da3edbebcf9b14ed44ce6cbaced4bb1bdb7f1447e6cc254b332051512bd7af426fb8f401378cd2bf5983ca01c64b92ecf032ea15d1721d03f482d7ce6e74fef6d55e702f46980c82b5a84031900b1c9e59e7c97fbec7e8f323a97a7e36cc88be0f1d45b7ff585ac54bd407b22b4154aacc8f6d7ebf48e1d814cc5ed20f8037e0a79715eef29be32806a1d58bb7c5da76f550aa3d8a1fbff0eb19ccb1a313d55cda56c9ec2ef29632387fe8d76e3c0468043e8f663f4860ee12bf2d5b0b7474d6e694f91e6dcc4024ffffffffffffffff`
+        }, modp18 = {
+            gen: `02`,
+            prime: `ffffffffffffffffc90fdaa22168c234c4c6628b80dc1cd129024e088a67cc74020bbea63b139b22514a08798e3404ddef9519b3cd3a431b302b0a6df25f14374fe1356d6d51c245e485b576625e7ec6f44c42e9a637ed6b0bff5cb6f406b7edee386bfb5a899fa5ae9f24117c4b1fe649286651ece45b3dc2007cb8a163bf0598da48361c55d39a69163fa8fd24cf5f83655d23dca3ad961c62f356208552bb9ed529077096966d670c354e4abc9804f1746c08ca18217c32905e462e36ce3be39e772c180e86039b2783a2ec07a28fb5c55df06f4c52c9de2bcbf6955817183995497cea956ae515d2261898fa051015728e5a8aaac42dad33170d04507a33a85521abdf1cba64ecfb850458dbef0a8aea71575d060c7db3970f85a6e1e4c7abf5ae8cdb0933d71e8c94e04a25619dcee3d2261ad2ee6bf12ffa06d98a0864d87602733ec86a64521f2b18177b200cbbe117577a615d6c770988c0bad946e208e24fa074e5ab3143db5bfce0fd108e4b82d120a92108011a723c12a787e6d788719a10bdba5b2699c327186af4e23c1a946834b6150bda2583e9ca2ad44ce8dbbbc2db04de8ef92e8efc141fbecaa6287c59474e6bc05d99b2964fa090c3a2233ba186515be7ed1f612970cee2d7afb81bdd762170481cd0069127d5b05aa993b4ea988d8fddc186ffb7dc90a6c08f4df435c93402849236c3fab4d27c7026c1d4dcb2602646dec9751e763dba37bdf8ff9406ad9e530ee5db382f413001aeb06a53ed9027d831179727b0865a8918da3edbebcf9b14ed44ce6cbaced4bb1bdb7f1447e6cc254b332051512bd7af426fb8f401378cd2bf5983ca01c64b92ecf032ea15d1721d03f482d7ce6e74fef6d55e702f46980c82b5a84031900b1c9e59e7c97fbec7e8f323a97a7e36cc88be0f1d45b7ff585ac54bd407b22b4154aacc8f6d7ebf48e1d814cc5ed20f8037e0a79715eef29be32806a1d58bb7c5da76f550aa3d8a1fbff0eb19ccb1a313d55cda56c9ec2ef29632387fe8d76e3c0468043e8f663f4860ee12bf2d5b0b7474d6e694f91e6dbe115974a3926f12fee5e438777cb6a932df8cd8bec4d073b931ba3bc832b68d9dd300741fa7bf8afc47ed2576f6936ba424663aab639c5ae4f5683423b4742bf1c978238f16cbe39d652de3fdb8befc848ad922222e04a4037c0713eb57a81a23f0c73473fc646cea306b4bcbc8862f8385ddfa9d4b7fa2c087e879683303ed5bdd3a062b3cf5b3a278a66d2a13f83f44f82ddf310ee074ab6a364597e899a0255dc164f31cc50846851df9ab48195ded7ea1b1d510bd7ee74d73faf36bc31ecfa268359046f4eb879f924009438b481c6cd7889a002ed5ee382bc9190da6fc026e479558e4475677e9aa9e3050e2765694dfc81f56e880b96e7160c980dd98edd3dfffffffffffffffff`
+        }, primes_default = {
+            modp1,
+            modp2,
+            modp5,
+            modp14,
+            modp15,
+            modp16,
+            modp17,
+            modp18
+        }
+    })),
+    require_dh = __commonJSMin(((e, t) => {
+        init_dist$1();
+        var n = require_bn$2(),
+            r = new(require_mr()),
+            i = new n(24),
+            a = new n(11),
+            s = new n(10),
+            c = new n(3),
+            l = new n(7),
+            u = require_generatePrime(),
+            d = require_browser$11();
+        t.exports = g;
+
+        function f(e, t) {
+            return t = t || `utf8`, Buffer.isBuffer(e) || (e = new Buffer(e, t)), this._pub = new n(e), this
+        }
+
+        function p(e, t) {
+            return t = t || `utf8`, Buffer.isBuffer(e) || (e = new Buffer(e, t)), this._priv = new n(e), this
+        }
+        var m = {};
+
+        function h(e, t) {
+            var n = t.toString(`hex`),
+                d = [n, e.toString(16)].join(`_`);
+            if (d in m) return m[d];
+            var f = 0;
+            if (e.isEven() || !u.simpleSieve || !u.fermatTest(e) || !r.test(e)) return f += 1, f += n === `02` || n === `05` ? 8 : 4, m[d] = f, f;
+            r.test(e.shrn(1)) || (f += 2);
+            var p;
+            switch (n) {
+                case `02`:
+                    e.mod(i).cmp(a) && (f += 8);
+                    break;
+                case `05`:
+                    p = e.mod(s), p.cmp(c) && p.cmp(l) && (f += 8);
+                    break;
+                default:
+                    f += 4
+            }
+            return m[d] = f, f
+        }
+
+        function g(e, t, r) {
+            this.setGenerator(t), this.__prime = new n(e), this._prime = n.mont(this.__prime), this._primeLen = e.length, this._pub = void 0, this._priv = void 0, this._primeCode = void 0, r ? (this.setPublicKey = f, this.setPrivateKey = p) : this._primeCode = 8
+        }
+        Object.defineProperty(g.prototype, "verifyError", {
+            enumerable: !0,
+            get: function() {
+                return typeof this._primeCode != `number` && (this._primeCode = h(this.__prime, this.__gen)), this._primeCode
+            }
+        }), g.prototype.generateKeys = function() {
+            return this._priv || (this._priv = new n(d(this._primeLen))), this._pub = this._gen.toRed(this._prime).redPow(this._priv).fromRed(), this.getPublicKey()
+        }, g.prototype.computeSecret = function(e) {
+            e = new n(e), e = e.toRed(this._prime);
+            var t = e.redPow(this._priv).fromRed(),
+                r = new Buffer(t.toArray()),
+                i = this.getPrime();
+            if (r.length < i.length) {
+                var a = new Buffer(i.length - r.length);
+                a.fill(0), r = Buffer.concat([a, r])
+            }
+            return r
+        }, g.prototype.getPublicKey = function(e) {
+            return _(this._pub, e)
+        }, g.prototype.getPrivateKey = function(e) {
+            return _(this._priv, e)
+        }, g.prototype.getPrime = function(e) {
+            return _(this.__prime, e)
+        }, g.prototype.getGenerator = function(e) {
+            return _(this._gen, e)
+        }, g.prototype.setGenerator = function(e, t) {
+            return t = t || `utf8`, Buffer.isBuffer(e) || (e = new Buffer(e, t)), this.__gen = e, this._gen = new n(e), this
         };
-        return e.jsxs(e.Fragment, {
-            children: [e.jsxs(U, {
-                children: [e.jsxs("div", {
-                    style: {
-                        minWidth: 0
-                    },
-                    children: [e.jsx("strong", {
-                        children: "Email address"
-                    }), e.jsx("p", {
-                        style: {
-                            overflowWrap: "anywhere"
-                        },
-                        children: t
-                    })]
-                }), e.jsx(m, {
-                    onClick: () => a(!0),
-                    children: "Change email"
-                })]
-            }), e.jsxs(U, {
-                children: [e.jsx("div", {
-                    children: e.jsx("strong", {
-                        children: "Password"
-                    })
-                }), e.jsx(m, {
-                    onClick: () => d(!0),
-                    children: s ? "Add password" : "Change password"
-                })]
-            }), n ? e.jsx(ga, {
-                onEmailChange: c,
-                close: () => a(!1)
-            }) : null, e.jsx(ut, {
-                open: l,
-                close: () => d(!1),
-                defaultEmail: t
-            })]
-        })
-    },
-    ya = t => t === q.educator ? "Educator" : t === q.student ? "Student" : t === q.guardian ? "Parent/Guardian" : t === q.nonSchool ? "Other" : "",
-    ba = () => {
-        const t = () => R({
-                url: "/api/user/request-info",
-                success: a => {
-                    z.info({
-                        title: "Information",
-                        content: e.jsx("div", {
-                            children: Object.keys(a).map(l => e.jsxs("div", {
-                                children: [e.jsx("span", {
-                                    style: {
-                                        fontWeight: se.Bold
-                                    },
-                                    children: l
-                                }), ":", " ", a[l], e.jsx("br", {})]
-                            }, `info-item-${l}`))
-                        })
-                    })
+
+        function _(e, t) {
+            var n = new Buffer(e.toArray());
+            return t ? n.toString(t) : n
+        }
+    })),
+    require_browser$5 = __commonJSMin((e => {
+        init_dist$1();
+        var t = require_generatePrime(),
+            n = (init_primes(), __toCommonJS(primes_exports).default),
+            r = require_dh();
+
+        function i(e) {
+            return new r(new Buffer(n[e].prime, `hex`), new Buffer(n[e].gen, `hex`))
+        }
+        var a = {
+            binary: !0,
+            hex: !0,
+            base64: !0
+        };
+
+        function s(e, n, i, c) {
+            return Buffer.isBuffer(n) || a[n] === void 0 ? s(e, `binary`, n, i) : (n = n || `binary`, c = c || `binary`, i = i || new Buffer([2]), Buffer.isBuffer(i) || (i = new Buffer(i, c)), typeof e == `number` ? new r(t(e, i), i, !0) : (Buffer.isBuffer(e) || (e = new Buffer(e, n)), new r(e, i, !0)))
+        }
+        e.DiffieHellmanGroup = e.createDiffieHellmanGroup = e.getDiffieHellman = i, e.createDiffieHellman = e.DiffieHellman = s
+    })),
+    require_isarray = __commonJSMin(((e, t) => {
+        var n = {}.toString;
+        t.exports = Array.isArray || function(e) {
+            return n.call(e) == `[object Array]`
+        }
+    })),
+    require_stream_browser = __commonJSMin(((e, t) => {
+        t.exports = require_events().EventEmitter
+    })),
+    require_safe_buffer = __commonJSMin(((e, t) => {
+        var n = require_dist$1(),
+            r = n.Buffer;
+
+        function i(e, t) {
+            for (var n in e) t[n] = e[n]
+        }
+        r.from && r.alloc && r.allocUnsafe && r.allocUnsafeSlow ? t.exports = n : (i(n, e), e.Buffer = a);
+
+        function a(e, t, n) {
+            return r(e, t, n)
+        }
+        i(r, a), a.from = function(e, t, n) {
+            if (typeof e == `number`) throw TypeError(`Argument must not be a number`);
+            return r(e, t, n)
+        }, a.alloc = function(e, t, n) {
+            if (typeof e != `number`) throw TypeError(`Argument must be a number`);
+            var i = r(e);
+            return t === void 0 ? i.fill(0) : typeof n == `string` ? i.fill(t, n) : i.fill(t), i
+        }, a.allocUnsafe = function(e) {
+            if (typeof e != `number`) throw TypeError(`Argument must be a number`);
+            return r(e)
+        }, a.allocUnsafeSlow = function(e) {
+            if (typeof e != `number`) throw TypeError(`Argument must be a number`);
+            return n.SlowBuffer(e)
+        }
+    })),
+    require_BufferList = __commonJSMin(((e, t) => {
+        function n(e, t) {
+            if (!(e instanceof t)) throw TypeError(`Cannot call a class as a function`)
+        }
+        var r = require_safe_buffer().Buffer,
+            i = require_util$1();
+
+        function a(e, t, n) {
+            e.copy(t, n)
+        }
+        t.exports = function() {
+            function e() {
+                n(this, e), this.head = null, this.tail = null, this.length = 0
+            }
+            return e.prototype.push = function(e) {
+                var t = {
+                    data: e,
+                    next: null
+                };
+                this.length > 0 ? this.tail.next = t : this.head = t, this.tail = t, ++this.length
+            }, e.prototype.unshift = function(e) {
+                var t = {
+                    data: e,
+                    next: this.head
+                };
+                this.length === 0 && (this.tail = t), this.head = t, ++this.length
+            }, e.prototype.shift = function() {
+                if (this.length !== 0) {
+                    var e = this.head.data;
+                    return this.head = this.length === 1 ? this.tail = null : this.head.next, --this.length, e
                 }
-            }),
-            r = a => {
-                R({
-                    url: "/api/user/reset-account-type",
-                    success: () => {
-                        R({
-                            url: "/logout",
-                            both: () => {
-                                z.success({
-                                    title: "One more thing!",
-                                    content: `When you log back in, choose "${a}" as your role.`,
-                                    onOk: () => {
-                                        window.location.href = Ve
-                                    }
+            }, e.prototype.clear = function() {
+                this.head = this.tail = null, this.length = 0
+            }, e.prototype.join = function(e) {
+                if (this.length === 0) return ``;
+                for (var t = this.head, n = `` + t.data; t = t.next;) n += e + t.data;
+                return n
+            }, e.prototype.concat = function(e) {
+                if (this.length === 0) return r.alloc(0);
+                for (var t = r.allocUnsafe(e >>> 0), n = this.head, i = 0; n;) a(n.data, t, i), i += n.data.length, n = n.next;
+                return t
+            }, e
+        }(), i && i.inspect && i.inspect.custom && (t.exports.prototype[i.inspect.custom] = function() {
+            var e = i.inspect({
+                length: this.length
+            });
+            return this.constructor.name + ` ` + e
+        })
+    })),
+    require_destroy = __commonJSMin(((e, t) => {
+        var n = require_process_nextick_args();
+
+        function r(e, t) {
+            var r = this,
+                i = this._readableState && this._readableState.destroyed,
+                s = this._writableState && this._writableState.destroyed;
+            return i || s ? (t ? t(e) : e && (this._writableState ? this._writableState.errorEmitted || (this._writableState.errorEmitted = !0, n.nextTick(a, this, e)) : n.nextTick(a, this, e)), this) : (this._readableState && (this._readableState.destroyed = !0), this._writableState && (this._writableState.destroyed = !0), this._destroy(e || null, function(e) {
+                !t && e ? r._writableState ? r._writableState.errorEmitted || (r._writableState.errorEmitted = !0, n.nextTick(a, r, e)) : n.nextTick(a, r, e) : t && t(e)
+            }), this)
+        }
+
+        function i() {
+            this._readableState && (this._readableState.destroyed = !1, this._readableState.reading = !1, this._readableState.ended = !1, this._readableState.endEmitted = !1), this._writableState && (this._writableState.destroyed = !1, this._writableState.ended = !1, this._writableState.ending = !1, this._writableState.finalCalled = !1, this._writableState.prefinished = !1, this._writableState.finished = !1, this._writableState.errorEmitted = !1)
+        }
+
+        function a(e, t) {
+            e.emit(`error`, t)
+        }
+        t.exports = {
+            destroy: r,
+            undestroy: i
+        }
+    })),
+    require__stream_writable = __commonJSMin(((e, t) => {
+        init_dist(), init_dist$2();
+        var n = require_process_nextick_args();
+        t.exports = v;
+
+        function r(e) {
+            var t = this;
+            this.next = null, this.entry = null, this.finish = function() {
+                re(t, e)
+            }
+        }
+        var i = !process$1.browser && [`v0.10`, `v0.9.`].indexOf(process$1.version.slice(0, 5)) > -1 ? setImmediate : n.nextTick,
+            a;
+        v.WritableState = g;
+        var s = Object.create(require_util$2());
+        s.inherits = require_inherits_browser();
+        var c = {
+                deprecate: require_browser$12()
+            },
+            l = require_stream_browser(),
+            u = require_safe_buffer().Buffer,
+            d = (global === void 0 ? typeof window < `u` ? window : typeof self < `u` ? self : {} : global).Uint8Array || function() {};
+
+        function f(e) {
+            return u.from(e)
+        }
+
+        function p(e) {
+            return u.isBuffer(e) || e instanceof d
+        }
+        var m = require_destroy();
+        s.inherits(v, l);
+
+        function h() {}
+
+        function g(e, t) {
+            a = a || require__stream_duplex(), e = e || {};
+            var n = t instanceof a;
+            this.objectMode = !!e.objectMode, n && (this.objectMode = this.objectMode || !!e.writableObjectMode);
+            var i = e.highWaterMark,
+                s = e.writableHighWaterMark,
+                c = this.objectMode ? 16 : 16384;
+            this.highWaterMark = i || i === 0 ? i : n && (s || s === 0) ? s : c, this.highWaterMark = Math.floor(this.highWaterMark), this.finalCalled = !1, this.needDrain = !1, this.ending = !1, this.ended = !1, this.finished = !1, this.destroyed = !1;
+            var l = e.decodeStrings === !1;
+            this.decodeStrings = !l, this.defaultEncoding = e.defaultEncoding || `utf8`, this.length = 0, this.writing = !1, this.corked = 0, this.sync = !0, this.bufferProcessing = !1, this.onwrite = function(e) {
+                ee(t, e)
+            }, this.writecb = null, this.writelen = 0, this.bufferedRequest = null, this.lastBufferedRequest = null, this.pendingcb = 0, this.prefinished = !1, this.errorEmitted = !1, this.bufferedRequestCount = 0, this.corkedRequestsFree = new r(this)
+        }
+        g.prototype.getBuffer = function() {
+            for (var e = this.bufferedRequest, t = []; e;) t.push(e), e = e.next;
+            return t
+        }, (function() {
+            try {
+                Object.defineProperty(g.prototype, "buffer", {
+                    get: c.deprecate(function() {
+                        return this.getBuffer()
+                    }, `_writableState.buffer is deprecated. Use _writableState.getBuffer instead.`, `DEP0003`)
+                })
+            } catch {}
+        })();
+        var _;
+        typeof Symbol == `function` && Symbol.hasInstance && typeof Function.prototype[Symbol.hasInstance] == `function` ? (_ = Function.prototype[Symbol.hasInstance], Object.defineProperty(v, Symbol.hasInstance, {
+            value: function(e) {
+                return _.call(this, e) ? !0 : this === v && e && e._writableState instanceof g
+            }
+        })) : _ = function(e) {
+            return e instanceof this
+        };
+
+        function v(e) {
+            if (a = a || require__stream_duplex(), !_.call(v, this) && !(this instanceof a)) return new v(e);
+            this._writableState = new g(e, this), this.writable = !0, e && (typeof e.write == `function` && (this._write = e.write), typeof e.writev == `function` && (this._writev = e.writev), typeof e.destroy == `function` && (this._destroy = e.destroy), typeof e.final == `function` && (this._final = e.final)), l.call(this)
+        }
+        v.prototype.pipe = function() {
+            this.emit(`error`, Error(`Cannot pipe, not readable`))
+        };
+
+        function y(e, t) {
+            var r = Error(`write after end`);
+            e.emit(`error`, r), n.nextTick(t, r)
+        }
+
+        function b(e, t, r, i) {
+            var a = !0,
+                s = !1;
+            return r === null ? s = TypeError(`May not write null values to stream`) : typeof r != `string` && r !== void 0 && !t.objectMode && (s = TypeError(`Invalid non-string/buffer chunk`)), s && (e.emit(`error`, s), n.nextTick(i, s), a = !1), a
+        }
+        v.prototype.write = function(e, t, n) {
+            var r = this._writableState,
+                i = !1,
+                a = !r.objectMode && p(e);
+            return a && !u.isBuffer(e) && (e = f(e)), typeof t == `function` && (n = t, t = null), a ? t = `buffer` : t || (t = r.defaultEncoding), typeof n != `function` && (n = h), r.ended ? y(this, n) : (a || b(this, r, e, n)) && (r.pendingcb++, i = S(this, r, a, e, t, n)), i
+        }, v.prototype.cork = function() {
+            var e = this._writableState;
+            e.corked++
+        }, v.prototype.uncork = function() {
+            var e = this._writableState;
+            e.corked && (e.corked--, !e.writing && !e.corked && !e.bufferProcessing && e.bufferedRequest && te(this, e))
+        }, v.prototype.setDefaultEncoding = function(e) {
+            if (typeof e == `string` && (e = e.toLowerCase()), !([`hex`, `utf8`, `utf-8`, `ascii`, `binary`, `base64`, `ucs2`, `ucs-2`, `utf16le`, `utf-16le`, `raw`].indexOf((e + ``).toLowerCase()) > -1)) throw TypeError(`Unknown encoding: ` + e);
+            return this._writableState.defaultEncoding = e, this
+        };
+
+        function x(e, t, n) {
+            return !e.objectMode && e.decodeStrings !== !1 && typeof t == `string` && (t = u.from(t, n)), t
+        }
+        Object.defineProperty(v.prototype, "writableHighWaterMark", {
+            enumerable: !1,
+            get: function() {
+                return this._writableState.highWaterMark
+            }
+        });
+
+        function S(e, t, n, r, i, a) {
+            if (!n) {
+                var s = x(t, r, i);
+                r !== s && (n = !0, i = `buffer`, r = s)
+            }
+            var c = t.objectMode ? 1 : r.length;
+            t.length += c;
+            var l = t.length < t.highWaterMark;
+            if (l || (t.needDrain = !0), t.writing || t.corked) {
+                var u = t.lastBufferedRequest;
+                t.lastBufferedRequest = {
+                    chunk: r,
+                    encoding: i,
+                    isBuf: n,
+                    callback: a,
+                    next: null
+                }, u ? u.next = t.lastBufferedRequest : t.bufferedRequest = t.lastBufferedRequest, t.bufferedRequestCount += 1
+            } else C(e, t, !1, c, r, i, a);
+            return l
+        }
+
+        function C(e, t, n, r, i, a, s) {
+            t.writelen = r, t.writecb = s, t.writing = !0, t.sync = !0, n ? e._writev(i, t.onwrite) : e._write(i, a, t.onwrite), t.sync = !1
+        }
+
+        function w(e, t, r, i, a) {
+            --t.pendingcb, r ? (n.nextTick(a, i), n.nextTick(j, e, t), e._writableState.errorEmitted = !0, e.emit(`error`, i)) : (a(i), e._writableState.errorEmitted = !0, e.emit(`error`, i), j(e, t))
+        }
+
+        function E(e) {
+            e.writing = !1, e.writecb = null, e.length -= e.writelen, e.writelen = 0
+        }
+
+        function ee(e, t) {
+            var n = e._writableState,
+                r = n.sync,
+                a = n.writecb;
+            if (E(n), t) w(e, n, r, t, a);
+            else {
+                var s = k(n);
+                !s && !n.corked && !n.bufferProcessing && n.bufferedRequest && te(e, n), r ? i(D, e, n, s, a) : D(e, n, s, a)
+            }
+        }
+
+        function D(e, t, n, r) {
+            n || O(e, t), t.pendingcb--, r(), j(e, t)
+        }
+
+        function O(e, t) {
+            t.length === 0 && t.needDrain && (t.needDrain = !1, e.emit(`drain`))
+        }
+
+        function te(e, t) {
+            t.bufferProcessing = !0;
+            var n = t.bufferedRequest;
+            if (e._writev && n && n.next) {
+                var i = t.bufferedRequestCount,
+                    a = Array(i),
+                    s = t.corkedRequestsFree;
+                s.entry = n;
+                for (var c = 0, l = !0; n;) a[c] = n, n.isBuf || (l = !1), n = n.next, c += 1;
+                a.allBuffers = l, C(e, t, !0, t.length, a, ``, s.finish), t.pendingcb++, t.lastBufferedRequest = null, s.next ? (t.corkedRequestsFree = s.next, s.next = null) : t.corkedRequestsFree = new r(t), t.bufferedRequestCount = 0
+            } else {
+                for (; n;) {
+                    var u = n.chunk,
+                        d = n.encoding,
+                        f = n.callback;
+                    if (C(e, t, !1, t.objectMode ? 1 : u.length, u, d, f), n = n.next, t.bufferedRequestCount--, t.writing) break
+                }
+                n === null && (t.lastBufferedRequest = null)
+            }
+            t.bufferedRequest = n, t.bufferProcessing = !1
+        }
+        v.prototype._write = function(e, t, n) {
+            n(Error(`_write() is not implemented`))
+        }, v.prototype._writev = null, v.prototype.end = function(e, t, n) {
+            var r = this._writableState;
+            typeof e == `function` ? (n = e, e = null, t = null) : typeof t == `function` && (n = t, t = null), e != null && this.write(e, t), r.corked && (r.corked = 1, this.uncork()), r.ending || M(this, r, n)
+        };
+
+        function k(e) {
+            return e.ending && e.length === 0 && e.bufferedRequest === null && !e.finished && !e.writing
+        }
+
+        function A(e, t) {
+            e._final(function(n) {
+                t.pendingcb--, n && e.emit(`error`, n), t.prefinished = !0, e.emit(`prefinish`), j(e, t)
+            })
+        }
+
+        function ne(e, t) {
+            !t.prefinished && !t.finalCalled && (typeof e._final == `function` ? (t.pendingcb++, t.finalCalled = !0, n.nextTick(A, e, t)) : (t.prefinished = !0, e.emit(`prefinish`)))
+        }
+
+        function j(e, t) {
+            var n = k(t);
+            return n && (ne(e, t), t.pendingcb === 0 && (t.finished = !0, e.emit(`finish`))), n
+        }
+
+        function M(e, t, r) {
+            t.ending = !0, j(e, t), r && (t.finished ? n.nextTick(r) : e.once(`finish`, r)), t.ended = !0, e.writable = !1
+        }
+
+        function re(e, t, n) {
+            var r = e.entry;
+            for (e.entry = null; r;) {
+                var i = r.callback;
+                t.pendingcb--, i(n), r = r.next
+            }
+            t.corkedRequestsFree.next = e
+        }
+        Object.defineProperty(v.prototype, "destroyed", {
+            get: function() {
+                return this._writableState !== void 0 && this._writableState.destroyed
+            },
+            set: function(e) {
+                this._writableState && (this._writableState.destroyed = e)
+            }
+        }), v.prototype.destroy = m.destroy, v.prototype._undestroy = m.undestroy, v.prototype._destroy = function(e, t) {
+            this.end(), t(e)
+        }
+    })),
+    require__stream_duplex = __commonJSMin(((e, t) => {
+        var n = require_process_nextick_args(),
+            r = Object.keys || function(e) {
+                var t = [];
+                for (var n in e) t.push(n);
+                return t
+            };
+        t.exports = d;
+        var i = Object.create(require_util$2());
+        i.inherits = require_inherits_browser();
+        var a = require__stream_readable(),
+            s = require__stream_writable();
+        i.inherits(d, a);
+        for (var c = r(s.prototype), l = 0; l < c.length; l++) {
+            var u = c[l];
+            d.prototype[u] || (d.prototype[u] = s.prototype[u])
+        }
+
+        function d(e) {
+            if (!(this instanceof d)) return new d(e);
+            a.call(this, e), s.call(this, e), e && e.readable === !1 && (this.readable = !1), e && e.writable === !1 && (this.writable = !1), this.allowHalfOpen = !0, e && e.allowHalfOpen === !1 && (this.allowHalfOpen = !1), this.once(`end`, f)
+        }
+        Object.defineProperty(d.prototype, "writableHighWaterMark", {
+            enumerable: !1,
+            get: function() {
+                return this._writableState.highWaterMark
+            }
+        });
+
+        function f() {
+            this.allowHalfOpen || this._writableState.ended || n.nextTick(p, this)
+        }
+
+        function p(e) {
+            e.end()
+        }
+        Object.defineProperty(d.prototype, "destroyed", {
+            get: function() {
+                return this._readableState === void 0 || this._writableState === void 0 ? !1 : this._readableState.destroyed && this._writableState.destroyed
+            },
+            set: function(e) {
+                this._readableState !== void 0 && this._writableState !== void 0 && (this._readableState.destroyed = e, this._writableState.destroyed = e)
+            }
+        }), d.prototype._destroy = function(e, t) {
+            this.push(null), this.end(), n.nextTick(t, e)
+        }
+    })),
+    require__stream_readable = __commonJSMin(((e, t) => {
+        init_dist(), init_dist$2();
+        var n = require_process_nextick_args();
+        t.exports = x;
+        var r = require_isarray(),
+            i;
+        x.ReadableState = b, require_events().EventEmitter;
+        var a = function(e, t) {
+                return e.listeners(t).length
+            },
+            s = require_stream_browser(),
+            c = require_safe_buffer().Buffer,
+            l = (global === void 0 ? typeof window < `u` ? window : typeof self < `u` ? self : {} : global).Uint8Array || function() {};
+
+        function u(e) {
+            return c.from(e)
+        }
+
+        function d(e) {
+            return c.isBuffer(e) || e instanceof l
+        }
+        var f = Object.create(require_util$2());
+        f.inherits = require_inherits_browser();
+        var p = require_util$1(),
+            m = void 0;
+        m = p && p.debuglog ? p.debuglog(`stream`) : function() {};
+        var h = require_BufferList(),
+            g = require_destroy(),
+            _;
+        f.inherits(x, s);
+        var v = [`error`, `close`, `destroy`, `pause`, `resume`];
+
+        function y(e, t, n) {
+            if (typeof e.prependListener == `function`) return e.prependListener(t, n);
+            !e._events || !e._events[t] ? e.on(t, n) : r(e._events[t]) ? e._events[t].unshift(n) : e._events[t] = [n, e._events[t]]
+        }
+
+        function b(e, t) {
+            i = i || require__stream_duplex(), e = e || {};
+            var n = t instanceof i;
+            this.objectMode = !!e.objectMode, n && (this.objectMode = this.objectMode || !!e.readableObjectMode);
+            var r = e.highWaterMark,
+                a = e.readableHighWaterMark,
+                s = this.objectMode ? 16 : 16384;
+            this.highWaterMark = r || r === 0 ? r : n && (a || a === 0) ? a : s, this.highWaterMark = Math.floor(this.highWaterMark), this.buffer = new h, this.length = 0, this.pipes = null, this.pipesCount = 0, this.flowing = null, this.ended = !1, this.endEmitted = !1, this.reading = !1, this.sync = !0, this.needReadable = !1, this.emittedReadable = !1, this.readableListening = !1, this.resumeScheduled = !1, this.destroyed = !1, this.defaultEncoding = e.defaultEncoding || `utf8`, this.awaitDrain = 0, this.readingMore = !1, this.decoder = null, this.encoding = null, e.encoding && (_ || (_ = require_string_decoder().StringDecoder), this.decoder = new _(e.encoding), this.encoding = e.encoding)
+        }
+
+        function x(e) {
+            if (i = i || require__stream_duplex(), !(this instanceof x)) return new x(e);
+            this._readableState = new b(e, this), this.readable = !0, e && (typeof e.read == `function` && (this._read = e.read), typeof e.destroy == `function` && (this._destroy = e.destroy)), s.call(this)
+        }
+        Object.defineProperty(x.prototype, "destroyed", {
+            get: function() {
+                return this._readableState !== void 0 && this._readableState.destroyed
+            },
+            set: function(e) {
+                this._readableState && (this._readableState.destroyed = e)
+            }
+        }), x.prototype.destroy = g.destroy, x.prototype._undestroy = g.undestroy, x.prototype._destroy = function(e, t) {
+            this.push(null), t(e)
+        }, x.prototype.push = function(e, t) {
+            var n = this._readableState,
+                r;
+            return n.objectMode ? r = !0 : typeof e == `string` && (t = t || n.defaultEncoding, t !== n.encoding && (e = c.from(e, t), t = ``), r = !0), S(this, e, t, !1, r)
+        }, x.prototype.unshift = function(e) {
+            return S(this, e, null, !0, !1)
+        };
+
+        function S(e, t, n, r, i) {
+            var a = e._readableState;
+            if (t === null) a.reading = !1, te(e, a);
+            else {
+                var s;
+                i || (s = w(a, t)), s ? e.emit(`error`, s) : a.objectMode || t && t.length > 0 ? (typeof t != `string` && !a.objectMode && Object.getPrototypeOf(t) !== c.prototype && (t = u(t)), r ? a.endEmitted ? e.emit(`error`, Error(`stream.unshift() after end event`)) : C(e, a, t, !0) : a.ended ? e.emit(`error`, Error(`stream.push() after EOF`)) : (a.reading = !1, a.decoder && !n ? (t = a.decoder.write(t), a.objectMode || t.length !== 0 ? C(e, a, t, !1) : ne(e, a)) : C(e, a, t, !1))) : r || (a.reading = !1)
+            }
+            return E(a)
+        }
+
+        function C(e, t, n, r) {
+            t.flowing && t.length === 0 && !t.sync ? (e.emit(`data`, n), e.read(0)) : (t.length += t.objectMode ? 1 : n.length, r ? t.buffer.unshift(n) : t.buffer.push(n), t.needReadable && k(e)), ne(e, t)
+        }
+
+        function w(e, t) {
+            var n;
+            return !d(t) && typeof t != `string` && t !== void 0 && !e.objectMode && (n = TypeError(`Invalid non-string/buffer chunk`)), n
+        }
+
+        function E(e) {
+            return !e.ended && (e.needReadable || e.length < e.highWaterMark || e.length === 0)
+        }
+        x.prototype.isPaused = function() {
+            return this._readableState.flowing === !1
+        }, x.prototype.setEncoding = function(e) {
+            return _ || (_ = require_string_decoder().StringDecoder), this._readableState.decoder = new _(e), this._readableState.encoding = e, this
+        };
+        var ee = 8388608;
+
+        function D(e) {
+            return e >= ee ? e = ee : (e--, e |= e >>> 1, e |= e >>> 2, e |= e >>> 4, e |= e >>> 8, e |= e >>> 16, e++), e
+        }
+
+        function O(e, t) {
+            return e <= 0 || t.length === 0 && t.ended ? 0 : t.objectMode ? 1 : e === e ? (e > t.highWaterMark && (t.highWaterMark = D(e)), e <= t.length ? e : t.ended ? t.length : (t.needReadable = !0, 0)) : t.flowing && t.length ? t.buffer.head.data.length : t.length
+        }
+        x.prototype.read = function(e) {
+            m(`read`, e), e = parseInt(e, 10);
+            var t = this._readableState,
+                n = e;
+            if (e !== 0 && (t.emittedReadable = !1), e === 0 && t.needReadable && (t.length >= t.highWaterMark || t.ended)) return m(`read: emitReadable`, t.length, t.ended), t.length === 0 && t.ended ? z(this) : k(this), null;
+            if (e = O(e, t), e === 0 && t.ended) return t.length === 0 && z(this), null;
+            var r = t.needReadable;
+            m(`need readable`, r), (t.length === 0 || t.length - e < t.highWaterMark) && (r = !0, m(`length less than watermark`, r)), t.ended || t.reading ? (r = !1, m(`reading or ended`, r)) : r && (m(`do read`), t.reading = !0, t.sync = !0, t.length === 0 && (t.needReadable = !0), this._read(t.highWaterMark), t.sync = !1, t.reading || (e = O(n, t)));
+            var i = e > 0 ? I(e, t) : null;
+            return i === null ? (t.needReadable = !0, e = 0) : t.length -= e, t.length === 0 && (t.ended || (t.needReadable = !0), n !== e && t.ended && z(this)), i !== null && this.emit(`data`, i), i
+        };
+
+        function te(e, t) {
+            if (!t.ended) {
+                if (t.decoder) {
+                    var n = t.decoder.end();
+                    n && n.length && (t.buffer.push(n), t.length += t.objectMode ? 1 : n.length)
+                }
+                t.ended = !0, k(e)
+            }
+        }
+
+        function k(e) {
+            var t = e._readableState;
+            t.needReadable = !1, t.emittedReadable || (m(`emitReadable`, t.flowing), t.emittedReadable = !0, t.sync ? n.nextTick(A, e) : A(e))
+        }
+
+        function A(e) {
+            m(`emit readable`), e.emit(`readable`), ie(e)
+        }
+
+        function ne(e, t) {
+            t.readingMore || (t.readingMore = !0, n.nextTick(j, e, t))
+        }
+
+        function j(e, t) {
+            for (var n = t.length; !t.reading && !t.flowing && !t.ended && t.length < t.highWaterMark && (m(`maybeReadMore read 0`), e.read(0), n !== t.length);) n = t.length;
+            t.readingMore = !1
+        }
+        x.prototype._read = function(e) {
+            this.emit(`error`, Error(`_read() is not implemented`))
+        }, x.prototype.pipe = function(e, t) {
+            var r = this,
+                i = this._readableState;
+            switch (i.pipesCount) {
+                case 0:
+                    i.pipes = e;
+                    break;
+                case 1:
+                    i.pipes = [i.pipes, e];
+                    break;
+                default:
+                    i.pipes.push(e)
+            }
+            i.pipesCount += 1, m(`pipe count=%d opts=%j`, i.pipesCount, t);
+            var s = (!t || t.end !== !1) && e !== process$1.stdout && e !== process$1.stderr ? l : b;
+            i.endEmitted ? n.nextTick(s) : r.once(`end`, s), e.on(`unpipe`, c);
+
+            function c(e, t) {
+                m(`onunpipe`), e === r && t && t.hasUnpiped === !1 && (t.hasUnpiped = !0, f())
+            }
+
+            function l() {
+                m(`onend`), e.end()
+            }
+            var u = M(r);
+            e.on(`drain`, u);
+            var d = !1;
+
+            function f() {
+                m(`cleanup`), e.removeListener(`close`, _), e.removeListener(`finish`, v), e.removeListener(`drain`, u), e.removeListener(`error`, g), e.removeListener(`unpipe`, c), r.removeListener(`end`, l), r.removeListener(`end`, b), r.removeListener(`data`, h), d = !0, i.awaitDrain && (!e._writableState || e._writableState.needDrain) && u()
+            }
+            var p = !1;
+            r.on(`data`, h);
+
+            function h(t) {
+                m(`ondata`), p = !1, !1 === e.write(t) && !p && ((i.pipesCount === 1 && i.pipes === e || i.pipesCount > 1 && B(i.pipes, e) !== -1) && !d && (m(`false write response, pause`, i.awaitDrain), i.awaitDrain++, p = !0), r.pause())
+            }
+
+            function g(t) {
+                m(`onerror`, t), b(), e.removeListener(`error`, g), a(e, `error`) === 0 && e.emit(`error`, t)
+            }
+            y(e, `error`, g);
+
+            function _() {
+                e.removeListener(`finish`, v), b()
+            }
+            e.once(`close`, _);
+
+            function v() {
+                m(`onfinish`), e.removeListener(`close`, _), b()
+            }
+            e.once(`finish`, v);
+
+            function b() {
+                m(`unpipe`), r.unpipe(e)
+            }
+            return e.emit(`pipe`, r), i.flowing || (m(`pipe resume`), r.resume()), e
+        };
+
+        function M(e) {
+            return function() {
+                var t = e._readableState;
+                m(`pipeOnDrain`, t.awaitDrain), t.awaitDrain && t.awaitDrain--, t.awaitDrain === 0 && a(e, `data`) && (t.flowing = !0, ie(e))
+            }
+        }
+        x.prototype.unpipe = function(e) {
+            var t = this._readableState,
+                n = {
+                    hasUnpiped: !1
+                };
+            if (t.pipesCount === 0) return this;
+            if (t.pipesCount === 1) return e && e !== t.pipes || (e || (e = t.pipes), t.pipes = null, t.pipesCount = 0, t.flowing = !1, e && e.emit(`unpipe`, this, n)), this;
+            if (!e) {
+                var r = t.pipes,
+                    i = t.pipesCount;
+                t.pipes = null, t.pipesCount = 0, t.flowing = !1;
+                for (var a = 0; a < i; a++) r[a].emit(`unpipe`, this, {
+                    hasUnpiped: !1
+                });
+                return this
+            }
+            var s = B(t.pipes, e);
+            return s === -1 || (t.pipes.splice(s, 1), --t.pipesCount, t.pipesCount === 1 && (t.pipes = t.pipes[0]), e.emit(`unpipe`, this, n)), this
+        }, x.prototype.on = function(e, t) {
+            var r = s.prototype.on.call(this, e, t);
+            if (e === `data`) this._readableState.flowing !== !1 && this.resume();
+            else if (e === `readable`) {
+                var i = this._readableState;
+                !i.endEmitted && !i.readableListening && (i.readableListening = i.needReadable = !0, i.emittedReadable = !1, i.reading ? i.length && k(this) : n.nextTick(re, this))
+            }
+            return r
+        }, x.prototype.addListener = x.prototype.on;
+
+        function re(e) {
+            m(`readable nexttick read 0`), e.read(0)
+        }
+        x.prototype.resume = function() {
+            var e = this._readableState;
+            return e.flowing || (m(`resume`), e.flowing = !0, N(this, e)), this
+        };
+
+        function N(e, t) {
+            t.resumeScheduled || (t.resumeScheduled = !0, n.nextTick(P, e, t))
+        }
+
+        function P(e, t) {
+            t.reading || (m(`resume read 0`), e.read(0)), t.resumeScheduled = !1, t.awaitDrain = 0, e.emit(`resume`), ie(e), t.flowing && !t.reading && e.read(0)
+        }
+        x.prototype.pause = function() {
+            return m(`call pause flowing=%j`, this._readableState.flowing), !1 !== this._readableState.flowing && (m(`pause`), this._readableState.flowing = !1, this.emit(`pause`)), this
+        };
+
+        function ie(e) {
+            var t = e._readableState;
+            for (m(`flow`, t.flowing); t.flowing && e.read() !== null;);
+        }
+        x.prototype.wrap = function(e) {
+            var t = this,
+                n = this._readableState,
+                r = !1;
+            for (var i in e.on(`end`, function() {
+                    if (m(`wrapped end`), n.decoder && !n.ended) {
+                        var e = n.decoder.end();
+                        e && e.length && t.push(e)
+                    }
+                    t.push(null)
+                }), e.on(`data`, function(i) {
+                    m(`wrapped data`), n.decoder && (i = n.decoder.write(i)), !(n.objectMode && i == null) && (n.objectMode || i && i.length) && (t.push(i) || (r = !0, e.pause()))
+                }), e) this[i] === void 0 && typeof e[i] == `function` && (this[i] = function(t) {
+                return function() {
+                    return e[t].apply(e, arguments)
+                }
+            }(i));
+            for (var a = 0; a < v.length; a++) e.on(v[a], this.emit.bind(this, v[a]));
+            return this._read = function(t) {
+                m(`wrapped _read`, t), r && (r = !1, e.resume())
+            }, this
+        }, Object.defineProperty(x.prototype, "readableHighWaterMark", {
+            enumerable: !1,
+            get: function() {
+                return this._readableState.highWaterMark
+            }
+        }), x._fromList = I;
+
+        function I(e, t) {
+            if (t.length === 0) return null;
+            var n;
+            return t.objectMode ? n = t.buffer.shift() : !e || e >= t.length ? (n = t.decoder ? t.buffer.join(``) : t.buffer.length === 1 ? t.buffer.head.data : t.buffer.concat(t.length), t.buffer.clear()) : n = L(e, t.buffer, t.decoder), n
+        }
+
+        function L(e, t, n) {
+            var r;
+            return e < t.head.data.length ? (r = t.head.data.slice(0, e), t.head.data = t.head.data.slice(e)) : r = e === t.head.data.length ? t.shift() : n ? ae(e, t) : R(e, t), r
+        }
+
+        function ae(e, t) {
+            var n = t.head,
+                r = 1,
+                i = n.data;
+            for (e -= i.length; n = n.next;) {
+                var a = n.data,
+                    s = e > a.length ? a.length : e;
+                if (s === a.length ? i += a : i += a.slice(0, e), e -= s, e === 0) {
+                    s === a.length ? (++r, t.head = n.next ? n.next : t.tail = null) : (t.head = n, n.data = a.slice(s));
+                    break
+                }++r
+            }
+            return t.length -= r, i
+        }
+
+        function R(e, t) {
+            var n = c.allocUnsafe(e),
+                r = t.head,
+                i = 1;
+            for (r.data.copy(n), e -= r.data.length; r = r.next;) {
+                var a = r.data,
+                    s = e > a.length ? a.length : e;
+                if (a.copy(n, n.length - e, 0, s), e -= s, e === 0) {
+                    s === a.length ? (++i, t.head = r.next ? r.next : t.tail = null) : (t.head = r, r.data = a.slice(s));
+                    break
+                }++i
+            }
+            return t.length -= i, n
+        }
+
+        function z(e) {
+            var t = e._readableState;
+            if (t.length > 0) throw Error(`"endReadable()" called on non-empty stream`);
+            t.endEmitted || (t.ended = !0, n.nextTick(oe, t, e))
+        }
+
+        function oe(e, t) {
+            !e.endEmitted && e.length === 0 && (e.endEmitted = !0, t.readable = !1, t.emit(`end`))
+        }
+
+        function B(e, t) {
+            for (var n = 0, r = e.length; n < r; n++)
+                if (e[n] === t) return n;
+            return -1
+        }
+    })),
+    require__stream_transform = __commonJSMin(((e, t) => {
+        t.exports = a;
+        var n = require__stream_duplex(),
+            r = Object.create(require_util$2());
+        r.inherits = require_inherits_browser(), r.inherits(a, n);
+
+        function i(e, t) {
+            var n = this._transformState;
+            n.transforming = !1;
+            var r = n.writecb;
+            if (!r) return this.emit(`error`, Error(`write callback called multiple times`));
+            n.writechunk = null, n.writecb = null, t != null && this.push(t), r(e);
+            var i = this._readableState;
+            i.reading = !1, (i.needReadable || i.length < i.highWaterMark) && this._read(i.highWaterMark)
+        }
+
+        function a(e) {
+            if (!(this instanceof a)) return new a(e);
+            n.call(this, e), this._transformState = {
+                afterTransform: i.bind(this),
+                needTransform: !1,
+                transforming: !1,
+                writecb: null,
+                writechunk: null,
+                writeencoding: null
+            }, this._readableState.needReadable = !0, this._readableState.sync = !1, e && (typeof e.transform == `function` && (this._transform = e.transform), typeof e.flush == `function` && (this._flush = e.flush)), this.on(`prefinish`, s)
+        }
+
+        function s() {
+            var e = this;
+            typeof this._flush == `function` ? this._flush(function(t, n) {
+                c(e, t, n)
+            }) : c(this, null, null)
+        }
+        a.prototype.push = function(e, t) {
+            return this._transformState.needTransform = !1, n.prototype.push.call(this, e, t)
+        }, a.prototype._transform = function(e, t, n) {
+            throw Error(`_transform() is not implemented`)
+        }, a.prototype._write = function(e, t, n) {
+            var r = this._transformState;
+            if (r.writecb = n, r.writechunk = e, r.writeencoding = t, !r.transforming) {
+                var i = this._readableState;
+                (r.needTransform || i.needReadable || i.length < i.highWaterMark) && this._read(i.highWaterMark)
+            }
+        }, a.prototype._read = function(e) {
+            var t = this._transformState;
+            t.writechunk !== null && t.writecb && !t.transforming ? (t.transforming = !0, this._transform(t.writechunk, t.writeencoding, t.afterTransform)) : t.needTransform = !0
+        }, a.prototype._destroy = function(e, t) {
+            var r = this;
+            n.prototype._destroy.call(this, e, function(e) {
+                t(e), r.emit(`close`)
+            })
+        };
+
+        function c(e, t, n) {
+            if (t) return e.emit(`error`, t);
+            if (n != null && e.push(n), e._writableState.length) throw Error(`Calling transform done when ws.length != 0`);
+            if (e._transformState.transforming) throw Error(`Calling transform done when still transforming`);
+            return e.push(null)
+        }
+    })),
+    require__stream_passthrough = __commonJSMin(((e, t) => {
+        t.exports = i;
+        var n = require__stream_transform(),
+            r = Object.create(require_util$2());
+        r.inherits = require_inherits_browser(), r.inherits(i, n);
+
+        function i(e) {
+            if (!(this instanceof i)) return new i(e);
+            n.call(this, e)
+        }
+        i.prototype._transform = function(e, t, n) {
+            n(null, e)
+        }
+    })),
+    require_readable_browser = __commonJSMin(((e, t) => {
+        e = t.exports = require__stream_readable(), e.Stream = e, e.Readable = e, e.Writable = require__stream_writable(), e.Duplex = require__stream_duplex(), e.Transform = require__stream_transform(), e.PassThrough = require__stream_passthrough()
+    })),
+    require_bn$1 = __commonJSMin(((e, t) => {
+        (function(e, t) {
+            function n(e, t) {
+                if (!e) throw Error(t || `Assertion failed`)
+            }
+
+            function r(e, t) {
+                e.super_ = t;
+                var n = function() {};
+                n.prototype = t.prototype, e.prototype = new n, e.prototype.constructor = e
+            }
+
+            function i(e, t, n) {
+                if (i.isBN(e)) return e;
+                this.negative = 0, this.words = null, this.length = 0, this.red = null, e !== null && ((t === `le` || t === `be`) && (n = t, t = 10), this._init(e || 0, t || 10, n || `be`))
+            }
+            typeof e == `object` ? e.exports = i : t.BN = i, i.BN = i, i.wordSize = 26;
+            var a;
+            try {
+                a = typeof window < `u` && window.Buffer !== void 0 ? window.Buffer : require_dist$1().Buffer
+            } catch {}
+            i.isBN = function(e) {
+                return e instanceof i || typeof e == `object` && !!e && e.constructor.wordSize === i.wordSize && Array.isArray(e.words)
+            }, i.max = function(e, t) {
+                return e.cmp(t) > 0 ? e : t
+            }, i.min = function(e, t) {
+                return e.cmp(t) < 0 ? e : t
+            }, i.prototype._init = function(e, t, r) {
+                if (typeof e == `number`) return this._initNumber(e, t, r);
+                if (typeof e == `object`) return this._initArray(e, t, r);
+                t === `hex` && (t = 16), n(t === (t | 0) && t >= 2 && t <= 36), e = e.toString().replace(/\s+/g, ``);
+                var i = 0;
+                e[0] === `-` && (i++, this.negative = 1), i < e.length && (t === 16 ? this._parseHex(e, i, r) : (this._parseBase(e, t, i), r === `le` && this._initArray(this.toArray(), t, r)))
+            }, i.prototype._initNumber = function(e, t, r) {
+                e < 0 && (this.negative = 1, e = -e), e < 67108864 ? (this.words = [e & 67108863], this.length = 1) : e < 4503599627370496 ? (this.words = [e & 67108863, e / 67108864 & 67108863], this.length = 2) : (n(e < 9007199254740992), this.words = [e & 67108863, e / 67108864 & 67108863, 1], this.length = 3), r === `le` && this._initArray(this.toArray(), t, r)
+            }, i.prototype._initArray = function(e, t, r) {
+                if (n(typeof e.length == `number`), e.length <= 0) return this.words = [0], this.length = 1, this;
+                this.length = Math.ceil(e.length / 3), this.words = Array(this.length);
+                for (var i = 0; i < this.length; i++) this.words[i] = 0;
+                var a, s, c = 0;
+                if (r === `be`)
+                    for (i = e.length - 1, a = 0; i >= 0; i -= 3) s = e[i] | e[i - 1] << 8 | e[i - 2] << 16, this.words[a] |= s << c & 67108863, this.words[a + 1] = s >>> 26 - c & 67108863, c += 24, c >= 26 && (c -= 26, a++);
+                else if (r === `le`)
+                    for (i = 0, a = 0; i < e.length; i += 3) s = e[i] | e[i + 1] << 8 | e[i + 2] << 16, this.words[a] |= s << c & 67108863, this.words[a + 1] = s >>> 26 - c & 67108863, c += 24, c >= 26 && (c -= 26, a++);
+                return this._strip()
+            };
+
+            function s(e, t) {
+                var r = e.charCodeAt(t);
+                if (r >= 48 && r <= 57) return r - 48;
+                if (r >= 65 && r <= 70) return r - 55;
+                if (r >= 97 && r <= 102) return r - 87;
+                n(!1, `Invalid character in ` + e)
+            }
+
+            function c(e, t, n) {
+                var r = s(e, n);
+                return n - 1 >= t && (r |= s(e, n - 1) << 4), r
+            }
+            i.prototype._parseHex = function(e, t, n) {
+                this.length = Math.ceil((e.length - t) / 6), this.words = Array(this.length);
+                for (var r = 0; r < this.length; r++) this.words[r] = 0;
+                var i = 0,
+                    a = 0,
+                    s;
+                if (n === `be`)
+                    for (r = e.length - 1; r >= t; r -= 2) s = c(e, t, r) << i, this.words[a] |= s & 67108863, i >= 18 ? (i -= 18, a += 1, this.words[a] |= s >>> 26) : i += 8;
+                else
+                    for (r = (e.length - t) % 2 == 0 ? t + 1 : t; r < e.length; r += 2) s = c(e, t, r) << i, this.words[a] |= s & 67108863, i >= 18 ? (i -= 18, a += 1, this.words[a] |= s >>> 26) : i += 8;
+                this._strip()
+            };
+
+            function l(e, t, r, i) {
+                for (var a = 0, s = 0, c = Math.min(e.length, r), l = t; l < c; l++) {
+                    var u = e.charCodeAt(l) - 48;
+                    a *= i, s = u >= 49 ? u - 49 + 10 : u >= 17 ? u - 17 + 10 : u, n(u >= 0 && s < i, `Invalid character`), a += s
+                }
+                return a
+            }
+            i.prototype._parseBase = function(e, t, n) {
+                this.words = [0], this.length = 1;
+                for (var r = 0, i = 1; i <= 67108863; i *= t) r++;
+                r--, i = i / t | 0;
+                for (var a = e.length - n, s = a % r, c = Math.min(a, a - s) + n, u = 0, d = n; d < c; d += r) u = l(e, d, d + r, t), this.imuln(i), this.words[0] + u < 67108864 ? this.words[0] += u : this._iaddn(u);
+                if (s !== 0) {
+                    var f = 1;
+                    for (u = l(e, d, e.length, t), d = 0; d < s; d++) f *= t;
+                    this.imuln(f), this.words[0] + u < 67108864 ? this.words[0] += u : this._iaddn(u)
+                }
+                this._strip()
+            }, i.prototype.copy = function(e) {
+                e.words = Array(this.length);
+                for (var t = 0; t < this.length; t++) e.words[t] = this.words[t];
+                e.length = this.length, e.negative = this.negative, e.red = this.red
+            };
+
+            function u(e, t) {
+                e.words = t.words, e.length = t.length, e.negative = t.negative, e.red = t.red
+            }
+            if (i.prototype._move = function(e) {
+                    u(e, this)
+                }, i.prototype.clone = function() {
+                    var e = new i(null);
+                    return this.copy(e), e
+                }, i.prototype._expand = function(e) {
+                    for (; this.length < e;) this.words[this.length++] = 0;
+                    return this
+                }, i.prototype._strip = function() {
+                    for (; this.length > 1 && this.words[this.length - 1] === 0;) this.length--;
+                    return this._normSign()
+                }, i.prototype._normSign = function() {
+                    return this.length === 1 && this.words[0] === 0 && (this.negative = 0), this
+                }, typeof Symbol < `u` && typeof Symbol.for == `function`) try {
+                i.prototype[Symbol.for(`nodejs.util.inspect.custom`)] = d
+            } catch {
+                i.prototype.inspect = d
+            } else i.prototype.inspect = d;
+
+            function d() {
+                return (this.red ? `<BN-R: ` : `<BN: `) + this.toString(16) + `>`
+            }
+            var f = `.0.00.000.0000.00000.000000.0000000.00000000.000000000.0000000000.00000000000.000000000000.0000000000000.00000000000000.000000000000000.0000000000000000.00000000000000000.000000000000000000.0000000000000000000.00000000000000000000.000000000000000000000.0000000000000000000000.00000000000000000000000.000000000000000000000000.0000000000000000000000000`.split(`.`),
+                p = [0, 0, 25, 16, 12, 11, 10, 9, 8, 8, 7, 7, 7, 7, 6, 6, 6, 6, 6, 6, 6, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+                m = [0, 0, 33554432, 43046721, 16777216, 48828125, 60466176, 40353607, 16777216, 43046721, 1e7, 19487171, 35831808, 62748517, 7529536, 11390625, 16777216, 24137569, 34012224, 47045881, 64e6, 4084101, 5153632, 6436343, 7962624, 9765625, 11881376, 14348907, 17210368, 20511149, 243e5, 28629151, 33554432, 39135393, 45435424, 52521875, 60466176];
+            i.prototype.toString = function(e, t) {
+                e = e || 10, t = t | 0 || 1;
+                var r;
+                if (e === 16 || e === `hex`) {
+                    r = ``;
+                    for (var i = 0, a = 0, s = 0; s < this.length; s++) {
+                        var c = this.words[s],
+                            l = ((c << i | a) & 16777215).toString(16);
+                        a = c >>> 24 - i & 16777215, i += 2, i >= 26 && (i -= 26, s--), r = a !== 0 || s !== this.length - 1 ? f[6 - l.length] + l + r : l + r
+                    }
+                    for (a !== 0 && (r = a.toString(16) + r); r.length % t !== 0;) r = `0` + r;
+                    return this.negative !== 0 && (r = `-` + r), r
+                }
+                if (e === (e | 0) && e >= 2 && e <= 36) {
+                    var u = p[e],
+                        d = m[e];
+                    r = ``;
+                    var h = this.clone();
+                    for (h.negative = 0; !h.isZero();) {
+                        var g = h.modrn(d).toString(e);
+                        h = h.idivn(d), r = h.isZero() ? g + r : f[u - g.length] + g + r
+                    }
+                    for (this.isZero() && (r = `0` + r); r.length % t !== 0;) r = `0` + r;
+                    return this.negative !== 0 && (r = `-` + r), r
+                }
+                n(!1, `Base should be between 2 and 36`)
+            }, i.prototype.toNumber = function() {
+                var e = this.words[0];
+                return this.length === 2 ? e += this.words[1] * 67108864 : this.length === 3 && this.words[2] === 1 ? e += 4503599627370496 + this.words[1] * 67108864 : this.length > 2 && n(!1, `Number can only safely store up to 53 bits`), this.negative === 0 ? e : -e
+            }, i.prototype.toJSON = function() {
+                return this.toString(16, 2)
+            }, a && (i.prototype.toBuffer = function(e, t) {
+                return this.toArrayLike(a, e, t)
+            }), i.prototype.toArray = function(e, t) {
+                return this.toArrayLike(Array, e, t)
+            };
+            var h = function(e, t) {
+                return e.allocUnsafe ? e.allocUnsafe(t) : new e(t)
+            };
+            i.prototype.toArrayLike = function(e, t, r) {
+                this._strip();
+                var i = this.byteLength(),
+                    a = r || Math.max(1, i);
+                n(i <= a, `byte array longer than desired length`), n(a > 0, `Requested array length <= 0`);
+                var s = h(e, a),
+                    c = t === `le` ? `LE` : `BE`;
+                return this[`_toArrayLike` + c](s, i), s
+            }, i.prototype._toArrayLikeLE = function(e, t) {
+                for (var n = 0, r = 0, i = 0, a = 0; i < this.length; i++) {
+                    var s = this.words[i] << a | r;
+                    e[n++] = s & 255, n < e.length && (e[n++] = s >> 8 & 255), n < e.length && (e[n++] = s >> 16 & 255), a === 6 ? (n < e.length && (e[n++] = s >> 24 & 255), r = 0, a = 0) : (r = s >>> 24, a += 2)
+                }
+                if (n < e.length)
+                    for (e[n++] = r; n < e.length;) e[n++] = 0
+            }, i.prototype._toArrayLikeBE = function(e, t) {
+                for (var n = e.length - 1, r = 0, i = 0, a = 0; i < this.length; i++) {
+                    var s = this.words[i] << a | r;
+                    e[n--] = s & 255, n >= 0 && (e[n--] = s >> 8 & 255), n >= 0 && (e[n--] = s >> 16 & 255), a === 6 ? (n >= 0 && (e[n--] = s >> 24 & 255), r = 0, a = 0) : (r = s >>> 24, a += 2)
+                }
+                if (n >= 0)
+                    for (e[n--] = r; n >= 0;) e[n--] = 0
+            }, Math.clz32 ? i.prototype._countBits = function(e) {
+                return 32 - Math.clz32(e)
+            } : i.prototype._countBits = function(e) {
+                var t = e,
+                    n = 0;
+                return t >= 4096 && (n += 13, t >>>= 13), t >= 64 && (n += 7, t >>>= 7), t >= 8 && (n += 4, t >>>= 4), t >= 2 && (n += 2, t >>>= 2), n + t
+            }, i.prototype._zeroBits = function(e) {
+                if (e === 0) return 26;
+                var t = e,
+                    n = 0;
+                return t & 8191 || (n += 13, t >>>= 13), t & 127 || (n += 7, t >>>= 7), t & 15 || (n += 4, t >>>= 4), t & 3 || (n += 2, t >>>= 2), t & 1 || n++, n
+            }, i.prototype.bitLength = function() {
+                var e = this.words[this.length - 1],
+                    t = this._countBits(e);
+                return (this.length - 1) * 26 + t
+            };
+
+            function g(e) {
+                for (var t = Array(e.bitLength()), n = 0; n < t.length; n++) {
+                    var r = n / 26 | 0,
+                        i = n % 26;
+                    t[n] = e.words[r] >>> i & 1
+                }
+                return t
+            }
+            i.prototype.zeroBits = function() {
+                if (this.isZero()) return 0;
+                for (var e = 0, t = 0; t < this.length; t++) {
+                    var n = this._zeroBits(this.words[t]);
+                    if (e += n, n !== 26) break
+                }
+                return e
+            }, i.prototype.byteLength = function() {
+                return Math.ceil(this.bitLength() / 8)
+            }, i.prototype.toTwos = function(e) {
+                return this.negative === 0 ? this.clone() : this.abs().inotn(e).iaddn(1)
+            }, i.prototype.fromTwos = function(e) {
+                return this.testn(e - 1) ? this.notn(e).iaddn(1).ineg() : this.clone()
+            }, i.prototype.isNeg = function() {
+                return this.negative !== 0
+            }, i.prototype.neg = function() {
+                return this.clone().ineg()
+            }, i.prototype.ineg = function() {
+                return this.isZero() || (this.negative ^= 1), this
+            }, i.prototype.iuor = function(e) {
+                for (; this.length < e.length;) this.words[this.length++] = 0;
+                for (var t = 0; t < e.length; t++) this.words[t] = this.words[t] | e.words[t];
+                return this._strip()
+            }, i.prototype.ior = function(e) {
+                return n((this.negative | e.negative) === 0), this.iuor(e)
+            }, i.prototype.or = function(e) {
+                return this.length > e.length ? this.clone().ior(e) : e.clone().ior(this)
+            }, i.prototype.uor = function(e) {
+                return this.length > e.length ? this.clone().iuor(e) : e.clone().iuor(this)
+            }, i.prototype.iuand = function(e) {
+                for (var t = this.length > e.length ? e : this, n = 0; n < t.length; n++) this.words[n] = this.words[n] & e.words[n];
+                return this.length = t.length, this._strip()
+            }, i.prototype.iand = function(e) {
+                return n((this.negative | e.negative) === 0), this.iuand(e)
+            }, i.prototype.and = function(e) {
+                return this.length > e.length ? this.clone().iand(e) : e.clone().iand(this)
+            }, i.prototype.uand = function(e) {
+                return this.length > e.length ? this.clone().iuand(e) : e.clone().iuand(this)
+            }, i.prototype.iuxor = function(e) {
+                var t, n;
+                this.length > e.length ? (t = this, n = e) : (t = e, n = this);
+                for (var r = 0; r < n.length; r++) this.words[r] = t.words[r] ^ n.words[r];
+                if (this !== t)
+                    for (; r < t.length; r++) this.words[r] = t.words[r];
+                return this.length = t.length, this._strip()
+            }, i.prototype.ixor = function(e) {
+                return n((this.negative | e.negative) === 0), this.iuxor(e)
+            }, i.prototype.xor = function(e) {
+                return this.length > e.length ? this.clone().ixor(e) : e.clone().ixor(this)
+            }, i.prototype.uxor = function(e) {
+                return this.length > e.length ? this.clone().iuxor(e) : e.clone().iuxor(this)
+            }, i.prototype.inotn = function(e) {
+                n(typeof e == `number` && e >= 0);
+                var t = Math.ceil(e / 26) | 0,
+                    r = e % 26;
+                this._expand(t), r > 0 && t--;
+                for (var i = 0; i < t; i++) this.words[i] = ~this.words[i] & 67108863;
+                return r > 0 && (this.words[i] = ~this.words[i] & 67108863 >> 26 - r), this._strip()
+            }, i.prototype.notn = function(e) {
+                return this.clone().inotn(e)
+            }, i.prototype.setn = function(e, t) {
+                n(typeof e == `number` && e >= 0);
+                var r = e / 26 | 0,
+                    i = e % 26;
+                return this._expand(r + 1), t ? this.words[r] = this.words[r] | 1 << i : this.words[r] = this.words[r] & ~(1 << i), this._strip()
+            }, i.prototype.iadd = function(e) {
+                var t;
+                if (this.negative !== 0 && e.negative === 0) return this.negative = 0, t = this.isub(e), this.negative ^= 1, this._normSign();
+                if (this.negative === 0 && e.negative !== 0) return e.negative = 0, t = this.isub(e), e.negative = 1, t._normSign();
+                var n, r;
+                this.length > e.length ? (n = this, r = e) : (n = e, r = this);
+                for (var i = 0, a = 0; a < r.length; a++) t = (n.words[a] | 0) + (r.words[a] | 0) + i, this.words[a] = t & 67108863, i = t >>> 26;
+                for (; i !== 0 && a < n.length; a++) t = (n.words[a] | 0) + i, this.words[a] = t & 67108863, i = t >>> 26;
+                if (this.length = n.length, i !== 0) this.words[this.length] = i, this.length++;
+                else if (n !== this)
+                    for (; a < n.length; a++) this.words[a] = n.words[a];
+                return this
+            }, i.prototype.add = function(e) {
+                var t;
+                return e.negative !== 0 && this.negative === 0 ? (e.negative = 0, t = this.sub(e), e.negative ^= 1, t) : e.negative === 0 && this.negative !== 0 ? (this.negative = 0, t = e.sub(this), this.negative = 1, t) : this.length > e.length ? this.clone().iadd(e) : e.clone().iadd(this)
+            }, i.prototype.isub = function(e) {
+                if (e.negative !== 0) {
+                    e.negative = 0;
+                    var t = this.iadd(e);
+                    return e.negative = 1, t._normSign()
+                }
+                if (this.negative !== 0) return this.negative = 0, this.iadd(e), this.negative = 1, this._normSign();
+                var n = this.cmp(e);
+                if (n === 0) return this.negative = 0, this.length = 1, this.words[0] = 0, this;
+                var r, i;
+                n > 0 ? (r = this, i = e) : (r = e, i = this);
+                for (var a = 0, s = 0; s < i.length; s++) t = (r.words[s] | 0) - (i.words[s] | 0) + a, a = t >> 26, this.words[s] = t & 67108863;
+                for (; a !== 0 && s < r.length; s++) t = (r.words[s] | 0) + a, a = t >> 26, this.words[s] = t & 67108863;
+                if (a === 0 && s < r.length && r !== this)
+                    for (; s < r.length; s++) this.words[s] = r.words[s];
+                return this.length = Math.max(this.length, s), r !== this && (this.negative = 1), this._strip()
+            }, i.prototype.sub = function(e) {
+                return this.clone().isub(e)
+            };
+
+            function _(e, t, n) {
+                n.negative = t.negative ^ e.negative;
+                var r = e.length + t.length | 0;
+                n.length = r, r = r - 1 | 0;
+                var i = e.words[0] | 0,
+                    a = t.words[0] | 0,
+                    s = i * a,
+                    c = s & 67108863,
+                    l = s / 67108864 | 0;
+                n.words[0] = c;
+                for (var u = 1; u < r; u++) {
+                    for (var d = l >>> 26, f = l & 67108863, p = Math.min(u, t.length - 1), m = Math.max(0, u - e.length + 1); m <= p; m++) {
+                        var h = u - m | 0;
+                        i = e.words[h] | 0, a = t.words[m] | 0, s = i * a + f, d += s / 67108864 | 0, f = s & 67108863
+                    }
+                    n.words[u] = f | 0, l = d | 0
+                }
+                return l === 0 ? n.length-- : n.words[u] = l | 0, n._strip()
+            }
+            var v = function(e, t, n) {
+                var r = e.words,
+                    i = t.words,
+                    a = n.words,
+                    s = 0,
+                    c, l, u, d = r[0] | 0,
+                    f = d & 8191,
+                    p = d >>> 13,
+                    m = r[1] | 0,
+                    h = m & 8191,
+                    g = m >>> 13,
+                    _ = r[2] | 0,
+                    v = _ & 8191,
+                    y = _ >>> 13,
+                    b = r[3] | 0,
+                    x = b & 8191,
+                    S = b >>> 13,
+                    C = r[4] | 0,
+                    w = C & 8191,
+                    E = C >>> 13,
+                    ee = r[5] | 0,
+                    D = ee & 8191,
+                    O = ee >>> 13,
+                    te = r[6] | 0,
+                    k = te & 8191,
+                    A = te >>> 13,
+                    ne = r[7] | 0,
+                    j = ne & 8191,
+                    M = ne >>> 13,
+                    re = r[8] | 0,
+                    N = re & 8191,
+                    P = re >>> 13,
+                    ie = r[9] | 0,
+                    I = ie & 8191,
+                    L = ie >>> 13,
+                    ae = i[0] | 0,
+                    R = ae & 8191,
+                    z = ae >>> 13,
+                    oe = i[1] | 0,
+                    B = oe & 8191,
+                    V = oe >>> 13,
+                    se = i[2] | 0,
+                    H = se & 8191,
+                    U = se >>> 13,
+                    ce = i[3] | 0,
+                    W = ce & 8191,
+                    G = ce >>> 13,
+                    le = i[4] | 0,
+                    K = le & 8191,
+                    q = le >>> 13,
+                    ue = i[5] | 0,
+                    J = ue & 8191,
+                    Y = ue >>> 13,
+                    de = i[6] | 0,
+                    X = de & 8191,
+                    Z = de >>> 13,
+                    fe = i[7] | 0,
+                    Q = fe & 8191,
+                    pe = fe >>> 13,
+                    me = i[8] | 0,
+                    he = me & 8191,
+                    ge = me >>> 13,
+                    _e = i[9] | 0,
+                    ve = _e & 8191,
+                    $ = _e >>> 13;
+                n.negative = e.negative ^ t.negative, n.length = 19, c = Math.imul(f, R), l = Math.imul(f, z), l = l + Math.imul(p, R) | 0, u = Math.imul(p, z);
+                var ye = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (ye >>> 26) | 0, ye &= 67108863, c = Math.imul(h, R), l = Math.imul(h, z), l = l + Math.imul(g, R) | 0, u = Math.imul(g, z), c = c + Math.imul(f, B) | 0, l = l + Math.imul(f, V) | 0, l = l + Math.imul(p, B) | 0, u = u + Math.imul(p, V) | 0;
+                var be = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (be >>> 26) | 0, be &= 67108863, c = Math.imul(v, R), l = Math.imul(v, z), l = l + Math.imul(y, R) | 0, u = Math.imul(y, z), c = c + Math.imul(h, B) | 0, l = l + Math.imul(h, V) | 0, l = l + Math.imul(g, B) | 0, u = u + Math.imul(g, V) | 0, c = c + Math.imul(f, H) | 0, l = l + Math.imul(f, U) | 0, l = l + Math.imul(p, H) | 0, u = u + Math.imul(p, U) | 0;
+                var xe = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (xe >>> 26) | 0, xe &= 67108863, c = Math.imul(x, R), l = Math.imul(x, z), l = l + Math.imul(S, R) | 0, u = Math.imul(S, z), c = c + Math.imul(v, B) | 0, l = l + Math.imul(v, V) | 0, l = l + Math.imul(y, B) | 0, u = u + Math.imul(y, V) | 0, c = c + Math.imul(h, H) | 0, l = l + Math.imul(h, U) | 0, l = l + Math.imul(g, H) | 0, u = u + Math.imul(g, U) | 0, c = c + Math.imul(f, W) | 0, l = l + Math.imul(f, G) | 0, l = l + Math.imul(p, W) | 0, u = u + Math.imul(p, G) | 0;
+                var Se = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Se >>> 26) | 0, Se &= 67108863, c = Math.imul(w, R), l = Math.imul(w, z), l = l + Math.imul(E, R) | 0, u = Math.imul(E, z), c = c + Math.imul(x, B) | 0, l = l + Math.imul(x, V) | 0, l = l + Math.imul(S, B) | 0, u = u + Math.imul(S, V) | 0, c = c + Math.imul(v, H) | 0, l = l + Math.imul(v, U) | 0, l = l + Math.imul(y, H) | 0, u = u + Math.imul(y, U) | 0, c = c + Math.imul(h, W) | 0, l = l + Math.imul(h, G) | 0, l = l + Math.imul(g, W) | 0, u = u + Math.imul(g, G) | 0, c = c + Math.imul(f, K) | 0, l = l + Math.imul(f, q) | 0, l = l + Math.imul(p, K) | 0, u = u + Math.imul(p, q) | 0;
+                var Ce = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Ce >>> 26) | 0, Ce &= 67108863, c = Math.imul(D, R), l = Math.imul(D, z), l = l + Math.imul(O, R) | 0, u = Math.imul(O, z), c = c + Math.imul(w, B) | 0, l = l + Math.imul(w, V) | 0, l = l + Math.imul(E, B) | 0, u = u + Math.imul(E, V) | 0, c = c + Math.imul(x, H) | 0, l = l + Math.imul(x, U) | 0, l = l + Math.imul(S, H) | 0, u = u + Math.imul(S, U) | 0, c = c + Math.imul(v, W) | 0, l = l + Math.imul(v, G) | 0, l = l + Math.imul(y, W) | 0, u = u + Math.imul(y, G) | 0, c = c + Math.imul(h, K) | 0, l = l + Math.imul(h, q) | 0, l = l + Math.imul(g, K) | 0, u = u + Math.imul(g, q) | 0, c = c + Math.imul(f, J) | 0, l = l + Math.imul(f, Y) | 0, l = l + Math.imul(p, J) | 0, u = u + Math.imul(p, Y) | 0;
+                var we = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (we >>> 26) | 0, we &= 67108863, c = Math.imul(k, R), l = Math.imul(k, z), l = l + Math.imul(A, R) | 0, u = Math.imul(A, z), c = c + Math.imul(D, B) | 0, l = l + Math.imul(D, V) | 0, l = l + Math.imul(O, B) | 0, u = u + Math.imul(O, V) | 0, c = c + Math.imul(w, H) | 0, l = l + Math.imul(w, U) | 0, l = l + Math.imul(E, H) | 0, u = u + Math.imul(E, U) | 0, c = c + Math.imul(x, W) | 0, l = l + Math.imul(x, G) | 0, l = l + Math.imul(S, W) | 0, u = u + Math.imul(S, G) | 0, c = c + Math.imul(v, K) | 0, l = l + Math.imul(v, q) | 0, l = l + Math.imul(y, K) | 0, u = u + Math.imul(y, q) | 0, c = c + Math.imul(h, J) | 0, l = l + Math.imul(h, Y) | 0, l = l + Math.imul(g, J) | 0, u = u + Math.imul(g, Y) | 0, c = c + Math.imul(f, X) | 0, l = l + Math.imul(f, Z) | 0, l = l + Math.imul(p, X) | 0, u = u + Math.imul(p, Z) | 0;
+                var Te = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Te >>> 26) | 0, Te &= 67108863, c = Math.imul(j, R), l = Math.imul(j, z), l = l + Math.imul(M, R) | 0, u = Math.imul(M, z), c = c + Math.imul(k, B) | 0, l = l + Math.imul(k, V) | 0, l = l + Math.imul(A, B) | 0, u = u + Math.imul(A, V) | 0, c = c + Math.imul(D, H) | 0, l = l + Math.imul(D, U) | 0, l = l + Math.imul(O, H) | 0, u = u + Math.imul(O, U) | 0, c = c + Math.imul(w, W) | 0, l = l + Math.imul(w, G) | 0, l = l + Math.imul(E, W) | 0, u = u + Math.imul(E, G) | 0, c = c + Math.imul(x, K) | 0, l = l + Math.imul(x, q) | 0, l = l + Math.imul(S, K) | 0, u = u + Math.imul(S, q) | 0, c = c + Math.imul(v, J) | 0, l = l + Math.imul(v, Y) | 0, l = l + Math.imul(y, J) | 0, u = u + Math.imul(y, Y) | 0, c = c + Math.imul(h, X) | 0, l = l + Math.imul(h, Z) | 0, l = l + Math.imul(g, X) | 0, u = u + Math.imul(g, Z) | 0, c = c + Math.imul(f, Q) | 0, l = l + Math.imul(f, pe) | 0, l = l + Math.imul(p, Q) | 0, u = u + Math.imul(p, pe) | 0;
+                var Ee = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Ee >>> 26) | 0, Ee &= 67108863, c = Math.imul(N, R), l = Math.imul(N, z), l = l + Math.imul(P, R) | 0, u = Math.imul(P, z), c = c + Math.imul(j, B) | 0, l = l + Math.imul(j, V) | 0, l = l + Math.imul(M, B) | 0, u = u + Math.imul(M, V) | 0, c = c + Math.imul(k, H) | 0, l = l + Math.imul(k, U) | 0, l = l + Math.imul(A, H) | 0, u = u + Math.imul(A, U) | 0, c = c + Math.imul(D, W) | 0, l = l + Math.imul(D, G) | 0, l = l + Math.imul(O, W) | 0, u = u + Math.imul(O, G) | 0, c = c + Math.imul(w, K) | 0, l = l + Math.imul(w, q) | 0, l = l + Math.imul(E, K) | 0, u = u + Math.imul(E, q) | 0, c = c + Math.imul(x, J) | 0, l = l + Math.imul(x, Y) | 0, l = l + Math.imul(S, J) | 0, u = u + Math.imul(S, Y) | 0, c = c + Math.imul(v, X) | 0, l = l + Math.imul(v, Z) | 0, l = l + Math.imul(y, X) | 0, u = u + Math.imul(y, Z) | 0, c = c + Math.imul(h, Q) | 0, l = l + Math.imul(h, pe) | 0, l = l + Math.imul(g, Q) | 0, u = u + Math.imul(g, pe) | 0, c = c + Math.imul(f, he) | 0, l = l + Math.imul(f, ge) | 0, l = l + Math.imul(p, he) | 0, u = u + Math.imul(p, ge) | 0;
+                var De = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (De >>> 26) | 0, De &= 67108863, c = Math.imul(I, R), l = Math.imul(I, z), l = l + Math.imul(L, R) | 0, u = Math.imul(L, z), c = c + Math.imul(N, B) | 0, l = l + Math.imul(N, V) | 0, l = l + Math.imul(P, B) | 0, u = u + Math.imul(P, V) | 0, c = c + Math.imul(j, H) | 0, l = l + Math.imul(j, U) | 0, l = l + Math.imul(M, H) | 0, u = u + Math.imul(M, U) | 0, c = c + Math.imul(k, W) | 0, l = l + Math.imul(k, G) | 0, l = l + Math.imul(A, W) | 0, u = u + Math.imul(A, G) | 0, c = c + Math.imul(D, K) | 0, l = l + Math.imul(D, q) | 0, l = l + Math.imul(O, K) | 0, u = u + Math.imul(O, q) | 0, c = c + Math.imul(w, J) | 0, l = l + Math.imul(w, Y) | 0, l = l + Math.imul(E, J) | 0, u = u + Math.imul(E, Y) | 0, c = c + Math.imul(x, X) | 0, l = l + Math.imul(x, Z) | 0, l = l + Math.imul(S, X) | 0, u = u + Math.imul(S, Z) | 0, c = c + Math.imul(v, Q) | 0, l = l + Math.imul(v, pe) | 0, l = l + Math.imul(y, Q) | 0, u = u + Math.imul(y, pe) | 0, c = c + Math.imul(h, he) | 0, l = l + Math.imul(h, ge) | 0, l = l + Math.imul(g, he) | 0, u = u + Math.imul(g, ge) | 0, c = c + Math.imul(f, ve) | 0, l = l + Math.imul(f, $) | 0, l = l + Math.imul(p, ve) | 0, u = u + Math.imul(p, $) | 0;
+                var Oe = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Oe >>> 26) | 0, Oe &= 67108863, c = Math.imul(I, B), l = Math.imul(I, V), l = l + Math.imul(L, B) | 0, u = Math.imul(L, V), c = c + Math.imul(N, H) | 0, l = l + Math.imul(N, U) | 0, l = l + Math.imul(P, H) | 0, u = u + Math.imul(P, U) | 0, c = c + Math.imul(j, W) | 0, l = l + Math.imul(j, G) | 0, l = l + Math.imul(M, W) | 0, u = u + Math.imul(M, G) | 0, c = c + Math.imul(k, K) | 0, l = l + Math.imul(k, q) | 0, l = l + Math.imul(A, K) | 0, u = u + Math.imul(A, q) | 0, c = c + Math.imul(D, J) | 0, l = l + Math.imul(D, Y) | 0, l = l + Math.imul(O, J) | 0, u = u + Math.imul(O, Y) | 0, c = c + Math.imul(w, X) | 0, l = l + Math.imul(w, Z) | 0, l = l + Math.imul(E, X) | 0, u = u + Math.imul(E, Z) | 0, c = c + Math.imul(x, Q) | 0, l = l + Math.imul(x, pe) | 0, l = l + Math.imul(S, Q) | 0, u = u + Math.imul(S, pe) | 0, c = c + Math.imul(v, he) | 0, l = l + Math.imul(v, ge) | 0, l = l + Math.imul(y, he) | 0, u = u + Math.imul(y, ge) | 0, c = c + Math.imul(h, ve) | 0, l = l + Math.imul(h, $) | 0, l = l + Math.imul(g, ve) | 0, u = u + Math.imul(g, $) | 0;
+                var ke = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (ke >>> 26) | 0, ke &= 67108863, c = Math.imul(I, H), l = Math.imul(I, U), l = l + Math.imul(L, H) | 0, u = Math.imul(L, U), c = c + Math.imul(N, W) | 0, l = l + Math.imul(N, G) | 0, l = l + Math.imul(P, W) | 0, u = u + Math.imul(P, G) | 0, c = c + Math.imul(j, K) | 0, l = l + Math.imul(j, q) | 0, l = l + Math.imul(M, K) | 0, u = u + Math.imul(M, q) | 0, c = c + Math.imul(k, J) | 0, l = l + Math.imul(k, Y) | 0, l = l + Math.imul(A, J) | 0, u = u + Math.imul(A, Y) | 0, c = c + Math.imul(D, X) | 0, l = l + Math.imul(D, Z) | 0, l = l + Math.imul(O, X) | 0, u = u + Math.imul(O, Z) | 0, c = c + Math.imul(w, Q) | 0, l = l + Math.imul(w, pe) | 0, l = l + Math.imul(E, Q) | 0, u = u + Math.imul(E, pe) | 0, c = c + Math.imul(x, he) | 0, l = l + Math.imul(x, ge) | 0, l = l + Math.imul(S, he) | 0, u = u + Math.imul(S, ge) | 0, c = c + Math.imul(v, ve) | 0, l = l + Math.imul(v, $) | 0, l = l + Math.imul(y, ve) | 0, u = u + Math.imul(y, $) | 0;
+                var Ae = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Ae >>> 26) | 0, Ae &= 67108863, c = Math.imul(I, W), l = Math.imul(I, G), l = l + Math.imul(L, W) | 0, u = Math.imul(L, G), c = c + Math.imul(N, K) | 0, l = l + Math.imul(N, q) | 0, l = l + Math.imul(P, K) | 0, u = u + Math.imul(P, q) | 0, c = c + Math.imul(j, J) | 0, l = l + Math.imul(j, Y) | 0, l = l + Math.imul(M, J) | 0, u = u + Math.imul(M, Y) | 0, c = c + Math.imul(k, X) | 0, l = l + Math.imul(k, Z) | 0, l = l + Math.imul(A, X) | 0, u = u + Math.imul(A, Z) | 0, c = c + Math.imul(D, Q) | 0, l = l + Math.imul(D, pe) | 0, l = l + Math.imul(O, Q) | 0, u = u + Math.imul(O, pe) | 0, c = c + Math.imul(w, he) | 0, l = l + Math.imul(w, ge) | 0, l = l + Math.imul(E, he) | 0, u = u + Math.imul(E, ge) | 0, c = c + Math.imul(x, ve) | 0, l = l + Math.imul(x, $) | 0, l = l + Math.imul(S, ve) | 0, u = u + Math.imul(S, $) | 0;
+                var je = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (je >>> 26) | 0, je &= 67108863, c = Math.imul(I, K), l = Math.imul(I, q), l = l + Math.imul(L, K) | 0, u = Math.imul(L, q), c = c + Math.imul(N, J) | 0, l = l + Math.imul(N, Y) | 0, l = l + Math.imul(P, J) | 0, u = u + Math.imul(P, Y) | 0, c = c + Math.imul(j, X) | 0, l = l + Math.imul(j, Z) | 0, l = l + Math.imul(M, X) | 0, u = u + Math.imul(M, Z) | 0, c = c + Math.imul(k, Q) | 0, l = l + Math.imul(k, pe) | 0, l = l + Math.imul(A, Q) | 0, u = u + Math.imul(A, pe) | 0, c = c + Math.imul(D, he) | 0, l = l + Math.imul(D, ge) | 0, l = l + Math.imul(O, he) | 0, u = u + Math.imul(O, ge) | 0, c = c + Math.imul(w, ve) | 0, l = l + Math.imul(w, $) | 0, l = l + Math.imul(E, ve) | 0, u = u + Math.imul(E, $) | 0;
+                var Me = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Me >>> 26) | 0, Me &= 67108863, c = Math.imul(I, J), l = Math.imul(I, Y), l = l + Math.imul(L, J) | 0, u = Math.imul(L, Y), c = c + Math.imul(N, X) | 0, l = l + Math.imul(N, Z) | 0, l = l + Math.imul(P, X) | 0, u = u + Math.imul(P, Z) | 0, c = c + Math.imul(j, Q) | 0, l = l + Math.imul(j, pe) | 0, l = l + Math.imul(M, Q) | 0, u = u + Math.imul(M, pe) | 0, c = c + Math.imul(k, he) | 0, l = l + Math.imul(k, ge) | 0, l = l + Math.imul(A, he) | 0, u = u + Math.imul(A, ge) | 0, c = c + Math.imul(D, ve) | 0, l = l + Math.imul(D, $) | 0, l = l + Math.imul(O, ve) | 0, u = u + Math.imul(O, $) | 0;
+                var Ne = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Ne >>> 26) | 0, Ne &= 67108863, c = Math.imul(I, X), l = Math.imul(I, Z), l = l + Math.imul(L, X) | 0, u = Math.imul(L, Z), c = c + Math.imul(N, Q) | 0, l = l + Math.imul(N, pe) | 0, l = l + Math.imul(P, Q) | 0, u = u + Math.imul(P, pe) | 0, c = c + Math.imul(j, he) | 0, l = l + Math.imul(j, ge) | 0, l = l + Math.imul(M, he) | 0, u = u + Math.imul(M, ge) | 0, c = c + Math.imul(k, ve) | 0, l = l + Math.imul(k, $) | 0, l = l + Math.imul(A, ve) | 0, u = u + Math.imul(A, $) | 0;
+                var Pe = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Pe >>> 26) | 0, Pe &= 67108863, c = Math.imul(I, Q), l = Math.imul(I, pe), l = l + Math.imul(L, Q) | 0, u = Math.imul(L, pe), c = c + Math.imul(N, he) | 0, l = l + Math.imul(N, ge) | 0, l = l + Math.imul(P, he) | 0, u = u + Math.imul(P, ge) | 0, c = c + Math.imul(j, ve) | 0, l = l + Math.imul(j, $) | 0, l = l + Math.imul(M, ve) | 0, u = u + Math.imul(M, $) | 0;
+                var Fe = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Fe >>> 26) | 0, Fe &= 67108863, c = Math.imul(I, he), l = Math.imul(I, ge), l = l + Math.imul(L, he) | 0, u = Math.imul(L, ge), c = c + Math.imul(N, ve) | 0, l = l + Math.imul(N, $) | 0, l = l + Math.imul(P, ve) | 0, u = u + Math.imul(P, $) | 0;
+                var Ie = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Ie >>> 26) | 0, Ie &= 67108863, c = Math.imul(I, ve), l = Math.imul(I, $), l = l + Math.imul(L, ve) | 0, u = Math.imul(L, $);
+                var Le = (s + c | 0) + ((l & 8191) << 13) | 0;
+                return s = (u + (l >>> 13) | 0) + (Le >>> 26) | 0, Le &= 67108863, a[0] = ye, a[1] = be, a[2] = xe, a[3] = Se, a[4] = Ce, a[5] = we, a[6] = Te, a[7] = Ee, a[8] = De, a[9] = Oe, a[10] = ke, a[11] = Ae, a[12] = je, a[13] = Me, a[14] = Ne, a[15] = Pe, a[16] = Fe, a[17] = Ie, a[18] = Le, s !== 0 && (a[19] = s, n.length++), n
+            };
+            Math.imul || (v = _);
+
+            function y(e, t, n) {
+                n.negative = t.negative ^ e.negative, n.length = e.length + t.length;
+                for (var r = 0, i = 0, a = 0; a < n.length - 1; a++) {
+                    var s = i;
+                    i = 0;
+                    for (var c = r & 67108863, l = Math.min(a, t.length - 1), u = Math.max(0, a - e.length + 1); u <= l; u++) {
+                        var d = a - u,
+                            f = (e.words[d] | 0) * (t.words[u] | 0),
+                            p = f & 67108863;
+                        s = s + (f / 67108864 | 0) | 0, p = p + c | 0, c = p & 67108863, s = s + (p >>> 26) | 0, i += s >>> 26, s &= 67108863
+                    }
+                    n.words[a] = c, r = s, s = i
+                }
+                return r === 0 ? n.length-- : n.words[a] = r, n._strip()
+            }
+
+            function b(e, t, n) {
+                return y(e, t, n)
+            }
+            i.prototype.mulTo = function(e, t) {
+                var n, r = this.length + e.length;
+                return n = this.length === 10 && e.length === 10 ? v(this, e, t) : r < 63 ? _(this, e, t) : r < 1024 ? y(this, e, t) : b(this, e, t), n
+            };
+
+            function x(e, t) {
+                this.x = e, this.y = t
+            }
+            x.prototype.makeRBT = function(e) {
+                for (var t = Array(e), n = i.prototype._countBits(e) - 1, r = 0; r < e; r++) t[r] = this.revBin(r, n, e);
+                return t
+            }, x.prototype.revBin = function(e, t, n) {
+                if (e === 0 || e === n - 1) return e;
+                for (var r = 0, i = 0; i < t; i++) r |= (e & 1) << t - i - 1, e >>= 1;
+                return r
+            }, x.prototype.permute = function(e, t, n, r, i, a) {
+                for (var s = 0; s < a; s++) r[s] = t[e[s]], i[s] = n[e[s]]
+            }, x.prototype.transform = function(e, t, n, r, i, a) {
+                this.permute(a, e, t, n, r, i);
+                for (var s = 1; s < i; s <<= 1)
+                    for (var c = s << 1, l = Math.cos(2 * Math.PI / c), u = Math.sin(2 * Math.PI / c), d = 0; d < i; d += c)
+                        for (var f = l, p = u, m = 0; m < s; m++) {
+                            var h = n[d + m],
+                                g = r[d + m],
+                                _ = n[d + m + s],
+                                v = r[d + m + s],
+                                y = f * _ - p * v;
+                            v = f * v + p * _, _ = y, n[d + m] = h + _, r[d + m] = g + v, n[d + m + s] = h - _, r[d + m + s] = g - v, m !== c && (y = l * f - u * p, p = l * p + u * f, f = y)
+                        }
+            }, x.prototype.guessLen13b = function(e, t) {
+                var n = Math.max(t, e) | 1,
+                    r = n & 1,
+                    i = 0;
+                for (n = n / 2 | 0; n; n >>>= 1) i++;
+                return 1 << i + 1 + r
+            }, x.prototype.conjugate = function(e, t, n) {
+                if (!(n <= 1))
+                    for (var r = 0; r < n / 2; r++) {
+                        var i = e[r];
+                        e[r] = e[n - r - 1], e[n - r - 1] = i, i = t[r], t[r] = -t[n - r - 1], t[n - r - 1] = -i
+                    }
+            }, x.prototype.normalize13b = function(e, t) {
+                for (var n = 0, r = 0; r < t / 2; r++) {
+                    var i = Math.round(e[2 * r + 1] / t) * 8192 + Math.round(e[2 * r] / t) + n;
+                    e[r] = i & 67108863, n = i < 67108864 ? 0 : i / 67108864 | 0
+                }
+                return e
+            }, x.prototype.convert13b = function(e, t, r, i) {
+                for (var a = 0, s = 0; s < t; s++) a += e[s] | 0, r[2 * s] = a & 8191, a >>>= 13, r[2 * s + 1] = a & 8191, a >>>= 13;
+                for (s = 2 * t; s < i; ++s) r[s] = 0;
+                n(a === 0), n(!(a & -8192))
+            }, x.prototype.stub = function(e) {
+                for (var t = Array(e), n = 0; n < e; n++) t[n] = 0;
+                return t
+            }, x.prototype.mulp = function(e, t, n) {
+                var r = 2 * this.guessLen13b(e.length, t.length),
+                    i = this.makeRBT(r),
+                    a = this.stub(r),
+                    s = Array(r),
+                    c = Array(r),
+                    l = Array(r),
+                    u = Array(r),
+                    d = Array(r),
+                    f = Array(r),
+                    p = n.words;
+                p.length = r, this.convert13b(e.words, e.length, s, r), this.convert13b(t.words, t.length, u, r), this.transform(s, a, c, l, r, i), this.transform(u, a, d, f, r, i);
+                for (var m = 0; m < r; m++) {
+                    var h = c[m] * d[m] - l[m] * f[m];
+                    l[m] = c[m] * f[m] + l[m] * d[m], c[m] = h
+                }
+                return this.conjugate(c, l, r), this.transform(c, l, p, a, r, i), this.conjugate(p, a, r), this.normalize13b(p, r), n.negative = e.negative ^ t.negative, n.length = e.length + t.length, n._strip()
+            }, i.prototype.mul = function(e) {
+                var t = new i(null);
+                return t.words = Array(this.length + e.length), this.mulTo(e, t)
+            }, i.prototype.mulf = function(e) {
+                var t = new i(null);
+                return t.words = Array(this.length + e.length), b(this, e, t)
+            }, i.prototype.imul = function(e) {
+                return this.clone().mulTo(e, this)
+            }, i.prototype.imuln = function(e) {
+                var t = e < 0;
+                t && (e = -e), n(typeof e == `number`), n(e < 67108864);
+                for (var r = 0, i = 0; i < this.length; i++) {
+                    var a = (this.words[i] | 0) * e,
+                        s = (a & 67108863) + (r & 67108863);
+                    r >>= 26, r += a / 67108864 | 0, r += s >>> 26, this.words[i] = s & 67108863
+                }
+                return r !== 0 && (this.words[i] = r, this.length++), this.length = e === 0 ? 1 : this.length, t ? this.ineg() : this
+            }, i.prototype.muln = function(e) {
+                return this.clone().imuln(e)
+            }, i.prototype.sqr = function() {
+                return this.mul(this)
+            }, i.prototype.isqr = function() {
+                return this.imul(this.clone())
+            }, i.prototype.pow = function(e) {
+                var t = g(e);
+                if (t.length === 0) return new i(1);
+                for (var n = this, r = 0; r < t.length && t[r] === 0; r++, n = n.sqr());
+                if (++r < t.length)
+                    for (var a = n.sqr(); r < t.length; r++, a = a.sqr()) t[r] !== 0 && (n = n.mul(a));
+                return n
+            }, i.prototype.iushln = function(e) {
+                n(typeof e == `number` && e >= 0);
+                var t = e % 26,
+                    r = (e - t) / 26,
+                    i = 67108863 >>> 26 - t << 26 - t,
+                    a;
+                if (t !== 0) {
+                    var s = 0;
+                    for (a = 0; a < this.length; a++) {
+                        var c = this.words[a] & i,
+                            l = (this.words[a] | 0) - c << t;
+                        this.words[a] = l | s, s = c >>> 26 - t
+                    }
+                    s && (this.words[a] = s, this.length++)
+                }
+                if (r !== 0) {
+                    for (a = this.length - 1; a >= 0; a--) this.words[a + r] = this.words[a];
+                    for (a = 0; a < r; a++) this.words[a] = 0;
+                    this.length += r
+                }
+                return this._strip()
+            }, i.prototype.ishln = function(e) {
+                return n(this.negative === 0), this.iushln(e)
+            }, i.prototype.iushrn = function(e, t, r) {
+                n(typeof e == `number` && e >= 0);
+                var i = t ? (t - t % 26) / 26 : 0,
+                    a = e % 26,
+                    s = Math.min((e - a) / 26, this.length),
+                    c = 67108863 ^ 67108863 >>> a << a,
+                    l = r;
+                if (i -= s, i = Math.max(0, i), l) {
+                    for (var u = 0; u < s; u++) l.words[u] = this.words[u];
+                    l.length = s
+                }
+                if (s !== 0) {
+                    if (this.length > s)
+                        for (this.length -= s, u = 0; u < this.length; u++) this.words[u] = this.words[u + s];
+                    else this.words[0] = 0, this.length = 1
+                }
+                var d = 0;
+                for (u = this.length - 1; u >= 0 && (d !== 0 || u >= i); u--) {
+                    var f = this.words[u] | 0;
+                    this.words[u] = d << 26 - a | f >>> a, d = f & c
+                }
+                return l && d !== 0 && (l.words[l.length++] = d), this.length === 0 && (this.words[0] = 0, this.length = 1), this._strip()
+            }, i.prototype.ishrn = function(e, t, r) {
+                return n(this.negative === 0), this.iushrn(e, t, r)
+            }, i.prototype.shln = function(e) {
+                return this.clone().ishln(e)
+            }, i.prototype.ushln = function(e) {
+                return this.clone().iushln(e)
+            }, i.prototype.shrn = function(e) {
+                return this.clone().ishrn(e)
+            }, i.prototype.ushrn = function(e) {
+                return this.clone().iushrn(e)
+            }, i.prototype.testn = function(e) {
+                n(typeof e == `number` && e >= 0);
+                var t = e % 26,
+                    r = (e - t) / 26,
+                    i = 1 << t;
+                return this.length <= r ? !1 : !!(this.words[r] & i)
+            }, i.prototype.imaskn = function(e) {
+                n(typeof e == `number` && e >= 0);
+                var t = e % 26,
+                    r = (e - t) / 26;
+                if (n(this.negative === 0, `imaskn works only with positive numbers`), this.length <= r) return this;
+                if (t !== 0 && r++, this.length = Math.min(r, this.length), t !== 0) {
+                    var i = 67108863 ^ 67108863 >>> t << t;
+                    this.words[this.length - 1] &= i
+                }
+                return this._strip()
+            }, i.prototype.maskn = function(e) {
+                return this.clone().imaskn(e)
+            }, i.prototype.iaddn = function(e) {
+                return n(typeof e == `number`), n(e < 67108864), e < 0 ? this.isubn(-e) : this.negative === 0 ? this._iaddn(e) : this.length === 1 && (this.words[0] | 0) <= e ? (this.words[0] = e - (this.words[0] | 0), this.negative = 0, this) : (this.negative = 0, this.isubn(e), this.negative = 1, this)
+            }, i.prototype._iaddn = function(e) {
+                this.words[0] += e;
+                for (var t = 0; t < this.length && this.words[t] >= 67108864; t++) this.words[t] -= 67108864, t === this.length - 1 ? this.words[t + 1] = 1 : this.words[t + 1]++;
+                return this.length = Math.max(this.length, t + 1), this
+            }, i.prototype.isubn = function(e) {
+                if (n(typeof e == `number`), n(e < 67108864), e < 0) return this.iaddn(-e);
+                if (this.negative !== 0) return this.negative = 0, this.iaddn(e), this.negative = 1, this;
+                if (this.words[0] -= e, this.length === 1 && this.words[0] < 0) this.words[0] = -this.words[0], this.negative = 1;
+                else
+                    for (var t = 0; t < this.length && this.words[t] < 0; t++) this.words[t] += 67108864, --this.words[t + 1];
+                return this._strip()
+            }, i.prototype.addn = function(e) {
+                return this.clone().iaddn(e)
+            }, i.prototype.subn = function(e) {
+                return this.clone().isubn(e)
+            }, i.prototype.iabs = function() {
+                return this.negative = 0, this
+            }, i.prototype.abs = function() {
+                return this.clone().iabs()
+            }, i.prototype._ishlnsubmul = function(e, t, r) {
+                var i = e.length + r,
+                    a;
+                this._expand(i);
+                var s, c = 0;
+                for (a = 0; a < e.length; a++) {
+                    s = (this.words[a + r] | 0) + c;
+                    var l = (e.words[a] | 0) * t;
+                    s -= l & 67108863, c = (s >> 26) - (l / 67108864 | 0), this.words[a + r] = s & 67108863
+                }
+                for (; a < this.length - r; a++) s = (this.words[a + r] | 0) + c, c = s >> 26, this.words[a + r] = s & 67108863;
+                if (c === 0) return this._strip();
+                for (n(c === -1), c = 0, a = 0; a < this.length; a++) s = -(this.words[a] | 0) + c, c = s >> 26, this.words[a] = s & 67108863;
+                return this.negative = 1, this._strip()
+            }, i.prototype._wordDiv = function(e, t) {
+                var n = this.length - e.length,
+                    r = this.clone(),
+                    a = e,
+                    s = a.words[a.length - 1] | 0;
+                n = 26 - this._countBits(s), n !== 0 && (a = a.ushln(n), r.iushln(n), s = a.words[a.length - 1] | 0);
+                var c = r.length - a.length,
+                    l;
+                if (t !== `mod`) {
+                    l = new i(null), l.length = c + 1, l.words = Array(l.length);
+                    for (var u = 0; u < l.length; u++) l.words[u] = 0
+                }
+                var d = r.clone()._ishlnsubmul(a, 1, c);
+                d.negative === 0 && (r = d, l && (l.words[c] = 1));
+                for (var f = c - 1; f >= 0; f--) {
+                    var p = (r.words[a.length + f] | 0) * 67108864 + (r.words[a.length + f - 1] | 0);
+                    for (p = Math.min(p / s | 0, 67108863), r._ishlnsubmul(a, p, f); r.negative !== 0;) p--, r.negative = 0, r._ishlnsubmul(a, 1, f), r.isZero() || (r.negative ^= 1);
+                    l && (l.words[f] = p)
+                }
+                return l && l._strip(), r._strip(), t !== `div` && n !== 0 && r.iushrn(n), {
+                    div: l || null,
+                    mod: r
+                }
+            }, i.prototype.divmod = function(e, t, r) {
+                if (n(!e.isZero()), this.isZero()) return {
+                    div: new i(0),
+                    mod: new i(0)
+                };
+                var a, s, c;
+                return this.negative !== 0 && e.negative === 0 ? (c = this.neg().divmod(e, t), t !== `mod` && (a = c.div.neg()), t !== `div` && (s = c.mod.neg(), r && s.negative !== 0 && s.iadd(e)), {
+                    div: a,
+                    mod: s
+                }) : this.negative === 0 && e.negative !== 0 ? (c = this.divmod(e.neg(), t), t !== `mod` && (a = c.div.neg()), {
+                    div: a,
+                    mod: c.mod
+                }) : (this.negative & e.negative) === 0 ? e.length > this.length || this.cmp(e) < 0 ? {
+                    div: new i(0),
+                    mod: this
+                } : e.length === 1 ? t === `div` ? {
+                    div: this.divn(e.words[0]),
+                    mod: null
+                } : t === `mod` ? {
+                    div: null,
+                    mod: new i(this.modrn(e.words[0]))
+                } : {
+                    div: this.divn(e.words[0]),
+                    mod: new i(this.modrn(e.words[0]))
+                } : this._wordDiv(e, t) : (c = this.neg().divmod(e.neg(), t), t !== `div` && (s = c.mod.neg(), r && s.negative !== 0 && s.isub(e)), {
+                    div: c.div,
+                    mod: s
+                })
+            }, i.prototype.div = function(e) {
+                return this.divmod(e, `div`, !1).div
+            }, i.prototype.mod = function(e) {
+                return this.divmod(e, `mod`, !1).mod
+            }, i.prototype.umod = function(e) {
+                return this.divmod(e, `mod`, !0).mod
+            }, i.prototype.divRound = function(e) {
+                var t = this.divmod(e);
+                if (t.mod.isZero()) return t.div;
+                var n = t.div.negative === 0 ? t.mod : t.mod.isub(e),
+                    r = e.ushrn(1),
+                    i = e.andln(1),
+                    a = n.cmp(r);
+                return a < 0 || i === 1 && a === 0 ? t.div : t.div.negative === 0 ? t.div.iaddn(1) : t.div.isubn(1)
+            }, i.prototype.modrn = function(e) {
+                var t = e < 0;
+                t && (e = -e), n(e <= 67108863);
+                for (var r = (1 << 26) % e, i = 0, a = this.length - 1; a >= 0; a--) i = (r * i + (this.words[a] | 0)) % e;
+                return t ? -i : i
+            }, i.prototype.modn = function(e) {
+                return this.modrn(e)
+            }, i.prototype.idivn = function(e) {
+                var t = e < 0;
+                t && (e = -e), n(e <= 67108863);
+                for (var r = 0, i = this.length - 1; i >= 0; i--) {
+                    var a = (this.words[i] | 0) + r * 67108864;
+                    this.words[i] = a / e | 0, r = a % e
+                }
+                return this._strip(), t ? this.ineg() : this
+            }, i.prototype.divn = function(e) {
+                return this.clone().idivn(e)
+            }, i.prototype.egcd = function(e) {
+                n(e.negative === 0), n(!e.isZero());
+                var t = this,
+                    r = e.clone();
+                t = t.negative === 0 ? t.clone() : t.umod(e);
+                for (var a = new i(1), s = new i(0), c = new i(0), l = new i(1), u = 0; t.isEven() && r.isEven();) t.iushrn(1), r.iushrn(1), ++u;
+                for (var d = r.clone(), f = t.clone(); !t.isZero();) {
+                    for (var p = 0, m = 1;
+                        (t.words[0] & m) === 0 && p < 26; ++p, m <<= 1);
+                    if (p > 0)
+                        for (t.iushrn(p); p-- > 0;)(a.isOdd() || s.isOdd()) && (a.iadd(d), s.isub(f)), a.iushrn(1), s.iushrn(1);
+                    for (var h = 0, g = 1;
+                        (r.words[0] & g) === 0 && h < 26; ++h, g <<= 1);
+                    if (h > 0)
+                        for (r.iushrn(h); h-- > 0;)(c.isOdd() || l.isOdd()) && (c.iadd(d), l.isub(f)), c.iushrn(1), l.iushrn(1);
+                    t.cmp(r) >= 0 ? (t.isub(r), a.isub(c), s.isub(l)) : (r.isub(t), c.isub(a), l.isub(s))
+                }
+                return {
+                    a: c,
+                    b: l,
+                    gcd: r.iushln(u)
+                }
+            }, i.prototype._invmp = function(e) {
+                n(e.negative === 0), n(!e.isZero());
+                var t = this,
+                    r = e.clone();
+                t = t.negative === 0 ? t.clone() : t.umod(e);
+                for (var a = new i(1), s = new i(0), c = r.clone(); t.cmpn(1) > 0 && r.cmpn(1) > 0;) {
+                    for (var l = 0, u = 1;
+                        (t.words[0] & u) === 0 && l < 26; ++l, u <<= 1);
+                    if (l > 0)
+                        for (t.iushrn(l); l-- > 0;) a.isOdd() && a.iadd(c), a.iushrn(1);
+                    for (var d = 0, f = 1;
+                        (r.words[0] & f) === 0 && d < 26; ++d, f <<= 1);
+                    if (d > 0)
+                        for (r.iushrn(d); d-- > 0;) s.isOdd() && s.iadd(c), s.iushrn(1);
+                    t.cmp(r) >= 0 ? (t.isub(r), a.isub(s)) : (r.isub(t), s.isub(a))
+                }
+                var p = t.cmpn(1) === 0 ? a : s;
+                return p.cmpn(0) < 0 && p.iadd(e), p
+            }, i.prototype.gcd = function(e) {
+                if (this.isZero()) return e.abs();
+                if (e.isZero()) return this.abs();
+                var t = this.clone(),
+                    n = e.clone();
+                t.negative = 0, n.negative = 0;
+                for (var r = 0; t.isEven() && n.isEven(); r++) t.iushrn(1), n.iushrn(1);
+                do {
+                    for (; t.isEven();) t.iushrn(1);
+                    for (; n.isEven();) n.iushrn(1);
+                    var i = t.cmp(n);
+                    if (i < 0) {
+                        var a = t;
+                        t = n, n = a
+                    } else if (i === 0 || n.cmpn(1) === 0) break;
+                    t.isub(n)
+                } while (1);
+                return n.iushln(r)
+            }, i.prototype.invm = function(e) {
+                return this.egcd(e).a.umod(e)
+            }, i.prototype.isEven = function() {
+                return !(this.words[0] & 1)
+            }, i.prototype.isOdd = function() {
+                return (this.words[0] & 1) == 1
+            }, i.prototype.andln = function(e) {
+                return this.words[0] & e
+            }, i.prototype.bincn = function(e) {
+                n(typeof e == `number`);
+                var t = e % 26,
+                    r = (e - t) / 26,
+                    i = 1 << t;
+                if (this.length <= r) return this._expand(r + 1), this.words[r] |= i, this;
+                for (var a = i, s = r; a !== 0 && s < this.length; s++) {
+                    var c = this.words[s] | 0;
+                    c += a, a = c >>> 26, c &= 67108863, this.words[s] = c
+                }
+                return a !== 0 && (this.words[s] = a, this.length++), this
+            }, i.prototype.isZero = function() {
+                return this.length === 1 && this.words[0] === 0
+            }, i.prototype.cmpn = function(e) {
+                var t = e < 0;
+                if (this.negative !== 0 && !t) return -1;
+                if (this.negative === 0 && t) return 1;
+                this._strip();
+                var r;
+                if (this.length > 1) r = 1;
+                else {
+                    t && (e = -e), n(e <= 67108863, `Number is too big`);
+                    var i = this.words[0] | 0;
+                    r = i === e ? 0 : i < e ? -1 : 1
+                }
+                return this.negative === 0 ? r : -r | 0
+            }, i.prototype.cmp = function(e) {
+                if (this.negative !== 0 && e.negative === 0) return -1;
+                if (this.negative === 0 && e.negative !== 0) return 1;
+                var t = this.ucmp(e);
+                return this.negative === 0 ? t : -t | 0
+            }, i.prototype.ucmp = function(e) {
+                if (this.length > e.length) return 1;
+                if (this.length < e.length) return -1;
+                for (var t = 0, n = this.length - 1; n >= 0; n--) {
+                    var r = this.words[n] | 0,
+                        i = e.words[n] | 0;
+                    if (r !== i) {
+                        r < i ? t = -1 : r > i && (t = 1);
+                        break
+                    }
+                }
+                return t
+            }, i.prototype.gtn = function(e) {
+                return this.cmpn(e) === 1
+            }, i.prototype.gt = function(e) {
+                return this.cmp(e) === 1
+            }, i.prototype.gten = function(e) {
+                return this.cmpn(e) >= 0
+            }, i.prototype.gte = function(e) {
+                return this.cmp(e) >= 0
+            }, i.prototype.ltn = function(e) {
+                return this.cmpn(e) === -1
+            }, i.prototype.lt = function(e) {
+                return this.cmp(e) === -1
+            }, i.prototype.lten = function(e) {
+                return this.cmpn(e) <= 0
+            }, i.prototype.lte = function(e) {
+                return this.cmp(e) <= 0
+            }, i.prototype.eqn = function(e) {
+                return this.cmpn(e) === 0
+            }, i.prototype.eq = function(e) {
+                return this.cmp(e) === 0
+            }, i.red = function(e) {
+                return new O(e)
+            }, i.prototype.toRed = function(e) {
+                return n(!this.red, `Already a number in reduction context`), n(this.negative === 0, `red works only with positives`), e.convertTo(this)._forceRed(e)
+            }, i.prototype.fromRed = function() {
+                return n(this.red, `fromRed works only with numbers in reduction context`), this.red.convertFrom(this)
+            }, i.prototype._forceRed = function(e) {
+                return this.red = e, this
+            }, i.prototype.forceRed = function(e) {
+                return n(!this.red, `Already a number in reduction context`), this._forceRed(e)
+            }, i.prototype.redAdd = function(e) {
+                return n(this.red, `redAdd works only with red numbers`), this.red.add(this, e)
+            }, i.prototype.redIAdd = function(e) {
+                return n(this.red, `redIAdd works only with red numbers`), this.red.iadd(this, e)
+            }, i.prototype.redSub = function(e) {
+                return n(this.red, `redSub works only with red numbers`), this.red.sub(this, e)
+            }, i.prototype.redISub = function(e) {
+                return n(this.red, `redISub works only with red numbers`), this.red.isub(this, e)
+            }, i.prototype.redShl = function(e) {
+                return n(this.red, `redShl works only with red numbers`), this.red.shl(this, e)
+            }, i.prototype.redMul = function(e) {
+                return n(this.red, `redMul works only with red numbers`), this.red._verify2(this, e), this.red.mul(this, e)
+            }, i.prototype.redIMul = function(e) {
+                return n(this.red, `redMul works only with red numbers`), this.red._verify2(this, e), this.red.imul(this, e)
+            }, i.prototype.redSqr = function() {
+                return n(this.red, `redSqr works only with red numbers`), this.red._verify1(this), this.red.sqr(this)
+            }, i.prototype.redISqr = function() {
+                return n(this.red, `redISqr works only with red numbers`), this.red._verify1(this), this.red.isqr(this)
+            }, i.prototype.redSqrt = function() {
+                return n(this.red, `redSqrt works only with red numbers`), this.red._verify1(this), this.red.sqrt(this)
+            }, i.prototype.redInvm = function() {
+                return n(this.red, `redInvm works only with red numbers`), this.red._verify1(this), this.red.invm(this)
+            }, i.prototype.redNeg = function() {
+                return n(this.red, `redNeg works only with red numbers`), this.red._verify1(this), this.red.neg(this)
+            }, i.prototype.redPow = function(e) {
+                return n(this.red && !e.red, `redPow(normalNum)`), this.red._verify1(this), this.red.pow(this, e)
+            };
+            var S = {
+                k256: null,
+                p224: null,
+                p192: null,
+                p25519: null
+            };
+
+            function C(e, t) {
+                this.name = e, this.p = new i(t, 16), this.n = this.p.bitLength(), this.k = new i(1).iushln(this.n).isub(this.p), this.tmp = this._tmp()
+            }
+            C.prototype._tmp = function() {
+                var e = new i(null);
+                return e.words = Array(Math.ceil(this.n / 13)), e
+            }, C.prototype.ireduce = function(e) {
+                var t = e,
+                    n;
+                do this.split(t, this.tmp), t = this.imulK(t), t = t.iadd(this.tmp), n = t.bitLength(); while (n > this.n);
+                var r = n < this.n ? -1 : t.ucmp(this.p);
+                return r === 0 ? (t.words[0] = 0, t.length = 1) : r > 0 ? t.isub(this.p) : t.strip === void 0 ? t._strip() : t.strip(), t
+            }, C.prototype.split = function(e, t) {
+                e.iushrn(this.n, 0, t)
+            }, C.prototype.imulK = function(e) {
+                return e.imul(this.k)
+            };
+
+            function w() {
+                C.call(this, `k256`, `ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff fffffffe fffffc2f`)
+            }
+            r(w, C), w.prototype.split = function(e, t) {
+                for (var n = 4194303, r = Math.min(e.length, 9), i = 0; i < r; i++) t.words[i] = e.words[i];
+                if (t.length = r, e.length <= 9) e.words[0] = 0, e.length = 1;
+                else {
+                    var a = e.words[9];
+                    for (t.words[t.length++] = a & n, i = 10; i < e.length; i++) {
+                        var s = e.words[i] | 0;
+                        e.words[i - 10] = (s & n) << 4 | a >>> 22, a = s
+                    }
+                    a >>>= 22, e.words[i - 10] = a, a === 0 && e.length > 10 ? e.length -= 10 : e.length -= 9
+                }
+            }, w.prototype.imulK = function(e) {
+                e.words[e.length] = 0, e.words[e.length + 1] = 0, e.length += 2;
+                for (var t = 0, n = 0; n < e.length; n++) {
+                    var r = e.words[n] | 0;
+                    t += r * 977, e.words[n] = t & 67108863, t = r * 64 + (t / 67108864 | 0)
+                }
+                return e.words[e.length - 1] === 0 && (e.length--, e.words[e.length - 1] === 0 && e.length--), e
+            };
+
+            function E() {
+                C.call(this, `p224`, `ffffffff ffffffff ffffffff ffffffff 00000000 00000000 00000001`)
+            }
+            r(E, C);
+
+            function ee() {
+                C.call(this, `p192`, `ffffffff ffffffff ffffffff fffffffe ffffffff ffffffff`)
+            }
+            r(ee, C);
+
+            function D() {
+                C.call(this, `25519`, `7fffffffffffffff ffffffffffffffff ffffffffffffffff ffffffffffffffed`)
+            }
+            r(D, C), D.prototype.imulK = function(e) {
+                for (var t = 0, n = 0; n < e.length; n++) {
+                    var r = (e.words[n] | 0) * 19 + t,
+                        i = r & 67108863;
+                    r >>>= 26, e.words[n] = i, t = r
+                }
+                return t !== 0 && (e.words[e.length++] = t), e
+            }, i._prime = function(e) {
+                if (S[e]) return S[e];
+                var t;
+                if (e === `k256`) t = new w;
+                else if (e === `p224`) t = new E;
+                else if (e === `p192`) t = new ee;
+                else if (e === `p25519`) t = new D;
+                else throw Error(`Unknown prime ` + e);
+                return S[e] = t, t
+            };
+
+            function O(e) {
+                if (typeof e == `string`) {
+                    var t = i._prime(e);
+                    this.m = t.p, this.prime = t
+                } else n(e.gtn(1), `modulus must be greater than 1`), this.m = e, this.prime = null
+            }
+            O.prototype._verify1 = function(e) {
+                n(e.negative === 0, `red works only with positives`), n(e.red, `red works only with red numbers`)
+            }, O.prototype._verify2 = function(e, t) {
+                n((e.negative | t.negative) === 0, `red works only with positives`), n(e.red && e.red === t.red, `red works only with red numbers`)
+            }, O.prototype.imod = function(e) {
+                return this.prime ? this.prime.ireduce(e)._forceRed(this) : (u(e, e.umod(this.m)._forceRed(this)), e)
+            }, O.prototype.neg = function(e) {
+                return e.isZero() ? e.clone() : this.m.sub(e)._forceRed(this)
+            }, O.prototype.add = function(e, t) {
+                this._verify2(e, t);
+                var n = e.add(t);
+                return n.cmp(this.m) >= 0 && n.isub(this.m), n._forceRed(this)
+            }, O.prototype.iadd = function(e, t) {
+                this._verify2(e, t);
+                var n = e.iadd(t);
+                return n.cmp(this.m) >= 0 && n.isub(this.m), n
+            }, O.prototype.sub = function(e, t) {
+                this._verify2(e, t);
+                var n = e.sub(t);
+                return n.cmpn(0) < 0 && n.iadd(this.m), n._forceRed(this)
+            }, O.prototype.isub = function(e, t) {
+                this._verify2(e, t);
+                var n = e.isub(t);
+                return n.cmpn(0) < 0 && n.iadd(this.m), n
+            }, O.prototype.shl = function(e, t) {
+                return this._verify1(e), this.imod(e.ushln(t))
+            }, O.prototype.imul = function(e, t) {
+                return this._verify2(e, t), this.imod(e.imul(t))
+            }, O.prototype.mul = function(e, t) {
+                return this._verify2(e, t), this.imod(e.mul(t))
+            }, O.prototype.isqr = function(e) {
+                return this.imul(e, e.clone())
+            }, O.prototype.sqr = function(e) {
+                return this.mul(e, e)
+            }, O.prototype.sqrt = function(e) {
+                if (e.isZero()) return e.clone();
+                var t = this.m.andln(3);
+                if (n(t % 2 == 1), t === 3) {
+                    var r = this.m.add(new i(1)).iushrn(2);
+                    return this.pow(e, r)
+                }
+                for (var a = this.m.subn(1), s = 0; !a.isZero() && a.andln(1) === 0;) s++, a.iushrn(1);
+                n(!a.isZero());
+                var c = new i(1).toRed(this),
+                    l = c.redNeg(),
+                    u = this.m.subn(1).iushrn(1),
+                    d = this.m.bitLength();
+                for (d = new i(2 * d * d).toRed(this); this.pow(d, u).cmp(l) !== 0;) d.redIAdd(l);
+                for (var f = this.pow(d, a), p = this.pow(e, a.addn(1).iushrn(1)), m = this.pow(e, a), h = s; m.cmp(c) !== 0;) {
+                    for (var g = m, _ = 0; g.cmp(c) !== 0; _++) g = g.redSqr();
+                    n(_ < h);
+                    var v = this.pow(f, new i(1).iushln(h - _ - 1));
+                    p = p.redMul(v), f = v.redSqr(), m = m.redMul(f), h = _
+                }
+                return p
+            }, O.prototype.invm = function(e) {
+                var t = e._invmp(this.m);
+                return t.negative === 0 ? this.imod(t) : (t.negative = 0, this.imod(t).redNeg())
+            }, O.prototype.pow = function(e, t) {
+                if (t.isZero()) return new i(1).toRed(this);
+                if (t.cmpn(1) === 0) return e.clone();
+                var n = 4,
+                    r = Array(1 << n);
+                r[0] = new i(1).toRed(this), r[1] = e;
+                for (var a = 2; a < r.length; a++) r[a] = this.mul(r[a - 1], e);
+                var s = r[0],
+                    c = 0,
+                    l = 0,
+                    u = t.bitLength() % 26;
+                for (u === 0 && (u = 26), a = t.length - 1; a >= 0; a--) {
+                    for (var d = t.words[a], f = u - 1; f >= 0; f--) {
+                        var p = d >> f & 1;
+                        s !== r[0] && (s = this.sqr(s)), p === 0 && c === 0 ? l = 0 : (c <<= 1, c |= p, l++, (l === n || a === 0 && f === 0) && (s = this.mul(s, r[c]), l = 0, c = 0))
+                    }
+                    u = 26
+                }
+                return s
+            }, O.prototype.convertTo = function(e) {
+                var t = e.umod(this.m);
+                return t === e ? t.clone() : t
+            }, O.prototype.convertFrom = function(e) {
+                var t = e.clone();
+                return t.red = null, t
+            }, i.mont = function(e) {
+                return new te(e)
+            };
+
+            function te(e) {
+                O.call(this, e), this.shift = this.m.bitLength(), this.shift % 26 != 0 && (this.shift += 26 - this.shift % 26), this.r = new i(1).iushln(this.shift), this.r2 = this.imod(this.r.sqr()), this.rinv = this.r._invmp(this.m), this.minv = this.rinv.mul(this.r).isubn(1).div(this.m), this.minv = this.minv.umod(this.r), this.minv = this.r.sub(this.minv)
+            }
+            r(te, O), te.prototype.convertTo = function(e) {
+                return this.imod(e.ushln(this.shift))
+            }, te.prototype.convertFrom = function(e) {
+                var t = this.imod(e.mul(this.rinv));
+                return t.red = null, t
+            }, te.prototype.imul = function(e, t) {
+                if (e.isZero() || t.isZero()) return e.words[0] = 0, e.length = 1, e;
+                var n = e.imul(t),
+                    r = n.maskn(this.shift).mul(this.minv).imaskn(this.shift).mul(this.m),
+                    i = n.isub(r).iushrn(this.shift),
+                    a = i;
+                return i.cmp(this.m) >= 0 ? a = i.isub(this.m) : i.cmpn(0) < 0 && (a = i.iadd(this.m)), a._forceRed(this)
+            }, te.prototype.mul = function(e, t) {
+                if (e.isZero() || t.isZero()) return new i(0)._forceRed(this);
+                var n = e.mul(t),
+                    r = n.maskn(this.shift).mul(this.minv).imaskn(this.shift).mul(this.m),
+                    a = n.isub(r).iushrn(this.shift),
+                    s = a;
+                return a.cmp(this.m) >= 0 ? s = a.isub(this.m) : a.cmpn(0) < 0 && (s = a.iadd(this.m)), s._forceRed(this)
+            }, te.prototype.invm = function(e) {
+                return this.imod(e._invmp(this.m).mul(this.r2))._forceRed(this)
+            }
+        })(t === void 0 || t, e)
+    })),
+    require_browserify_rsa = __commonJSMin(((e, t) => {
+        var n = require_bn$1(),
+            r = require_browser$11(),
+            i = require_safe_buffer$1().Buffer;
+
+        function a(e) {
+            var t = e.modulus.byteLength(),
+                i;
+            do i = new n(r(t)); while (i.cmp(e.modulus) >= 0 || !i.umod(e.prime1) || !i.umod(e.prime2));
+            return i
+        }
+
+        function s(e) {
+            var t = a(e);
+            return {
+                blinder: t.toRed(n.mont(e.modulus)).redPow(new n(e.publicExponent)).fromRed(),
+                unblinder: t.invm(e.modulus)
+            }
+        }
+
+        function c(e, t) {
+            var r = s(t),
+                a = t.modulus.byteLength(),
+                c = new n(e).mul(r.blinder).umod(t.modulus),
+                l = c.toRed(n.mont(t.prime1)),
+                u = c.toRed(n.mont(t.prime2)),
+                d = t.coefficient,
+                f = t.prime1,
+                p = t.prime2,
+                m = l.redPow(t.exponent1).fromRed(),
+                h = u.redPow(t.exponent2).fromRed(),
+                g = m.isub(h).imul(d).umod(f).imul(p);
+            return h.iadd(g).imul(r.unblinder).umod(t.modulus).toArrayLike(i, `be`, a)
+        }
+        c.getr = a, t.exports = c
+    })),
+    package_exports = __exportAll({
+        author: () => author,
+        bugs: () => bugs,
+        default: () => package_default,
+        dependencies: () => dependencies,
+        description: () => description,
+        devDependencies: () => devDependencies,
+        files: () => files,
+        homepage: () => homepage,
+        keywords: () => keywords,
+        license: () => `MIT`,
+        main: () => main,
+        name: () => name,
+        repository: () => repository,
+        scripts: () => scripts,
+        version: () => version
+    }),
+    name, version, description, main, files, scripts, repository, keywords, author, license, bugs, homepage, devDependencies, dependencies, package_default, init_package = __esmMin((() => {
+        name = `elliptic`, version = `6.6.1`, description = `EC cryptography`, main = `lib/elliptic.js`, files = [`lib`], scripts = {
+            lint: `eslint lib test`,
+            "lint:fix": `npm run lint -- --fix`,
+            unit: `istanbul test _mocha --reporter=spec test/index.js`,
+            test: `npm run lint && npm run unit`,
+            version: `grunt dist && git add dist/`
+        }, repository = {
+            type: `git`,
+            url: `git@github.com:indutny/elliptic`
+        }, keywords = [`EC`, `Elliptic`, `curve`, `Cryptography`], author = `Fedor Indutny <fedor@indutny.com>`, bugs = {
+            url: `https://github.com/indutny/elliptic/issues`
+        }, homepage = `https://github.com/indutny/elliptic`, devDependencies = {
+            brfs: `^2.0.2`,
+            coveralls: `^3.1.0`,
+            eslint: `^7.6.0`,
+            grunt: `^1.2.1`,
+            "grunt-browserify": `^5.3.0`,
+            "grunt-cli": `^1.3.2`,
+            "grunt-contrib-connect": `^3.0.0`,
+            "grunt-contrib-copy": `^1.0.0`,
+            "grunt-contrib-uglify": `^5.0.0`,
+            "grunt-mocha-istanbul": `^5.0.2`,
+            "grunt-saucelabs": `^9.0.1`,
+            istanbul: `^0.4.5`,
+            mocha: `^8.0.1`
+        }, dependencies = {
+            "bn.js": `^4.11.9`,
+            brorand: `^1.1.0`,
+            "hash.js": `^1.0.0`,
+            "hmac-drbg": `^1.0.1`,
+            inherits: `^2.0.4`,
+            "minimalistic-assert": `^1.0.1`,
+            "minimalistic-crypto-utils": `^1.0.1`
+        }, package_default = {
+            name,
+            version,
+            description,
+            main,
+            files,
+            scripts,
+            repository,
+            keywords,
+            author,
+            license: `MIT`,
+            bugs,
+            homepage,
+            devDependencies,
+            dependencies
+        }
+    })),
+    require_utils$2 = __commonJSMin((e => {
+        var t = e;
+
+        function n(e, t) {
+            if (Array.isArray(e)) return e.slice();
+            if (!e) return [];
+            var n = [];
+            if (typeof e != `string`) {
+                for (var r = 0; r < e.length; r++) n[r] = e[r] | 0;
+                return n
+            }
+            if (t === `hex`) {
+                e = e.replace(/[^a-z0-9]+/gi, ``), e.length % 2 != 0 && (e = `0` + e);
+                for (var r = 0; r < e.length; r += 2) n.push(parseInt(e[r] + e[r + 1], 16))
+            } else
+                for (var r = 0; r < e.length; r++) {
+                    var i = e.charCodeAt(r),
+                        a = i >> 8,
+                        s = i & 255;
+                    a ? n.push(a, s) : n.push(s)
+                }
+            return n
+        }
+        t.toArray = n;
+
+        function r(e) {
+            return e.length === 1 ? `0` + e : e
+        }
+        t.zero2 = r;
+
+        function i(e) {
+            for (var t = ``, n = 0; n < e.length; n++) t += r(e[n].toString(16));
+            return t
+        }
+        t.toHex = i, t.encode = function(e, t) {
+            return t === `hex` ? i(e) : e
+        }
+    })),
+    require_utils$1 = __commonJSMin((e => {
+        var t = e,
+            n = require_bn$2(),
+            r = require_minimalistic_assert(),
+            i = require_utils$2();
+        t.assert = r, t.toArray = i.toArray, t.zero2 = i.zero2, t.toHex = i.toHex, t.encode = i.encode;
+
+        function a(e, t, n) {
+            for (var r = Array(Math.max(e.bitLength(), n) + 1), i = 0; i < r.length; i += 1) r[i] = 0;
+            var a = 1 << t + 1,
+                s = e.clone();
+            for (i = 0; i < r.length; i++) {
+                var c, l = s.andln(a - 1);
+                s.isOdd() ? (c = l > (a >> 1) - 1 ? (a >> 1) - l : l, s.isubn(c)) : c = 0, r[i] = c, s.iushrn(1)
+            }
+            return r
+        }
+        t.getNAF = a;
+
+        function s(e, t) {
+            var n = [
+                [],
+                []
+            ];
+            e = e.clone(), t = t.clone();
+            for (var r = 0, i = 0, a; e.cmpn(-r) > 0 || t.cmpn(-i) > 0;) {
+                var s = e.andln(3) + r & 3,
+                    c = t.andln(3) + i & 3;
+                s === 3 && (s = -1), c === 3 && (c = -1);
+                var l;
+                s & 1 ? (a = e.andln(7) + r & 7, l = (a === 3 || a === 5) && c === 2 ? -s : s) : l = 0, n[0].push(l);
+                var u;
+                c & 1 ? (a = t.andln(7) + i & 7, u = (a === 3 || a === 5) && s === 2 ? -c : c) : u = 0, n[1].push(u), 2 * r === l + 1 && (r = 1 - r), 2 * i === u + 1 && (i = 1 - i), e.iushrn(1), t.iushrn(1)
+            }
+            return n
+        }
+        t.getJSF = s;
+
+        function c(e, t, n) {
+            var r = `_` + t;
+            e.prototype[t] = function() {
+                return this[r] === void 0 ? this[r] = n.call(this) : this[r]
+            }
+        }
+        t.cachedProperty = c;
+
+        function l(e) {
+            return typeof e == `string` ? t.toArray(e, `hex`) : e
+        }
+        t.parseBytes = l;
+
+        function u(e) {
+            return new n(e, `hex`, `le`)
+        }
+        t.intFromLE = u
+    })),
+    require_base$1 = __commonJSMin(((e, t) => {
+        var n = require_bn$2(),
+            r = require_utils$1(),
+            i = r.getNAF,
+            a = r.getJSF,
+            s = r.assert;
+
+        function c(e, t) {
+            this.type = e, this.p = new n(t.p, 16), this.red = t.prime ? n.red(t.prime) : n.mont(this.p), this.zero = new n(0).toRed(this.red), this.one = new n(1).toRed(this.red), this.two = new n(2).toRed(this.red), this.n = t.n && new n(t.n, 16), this.g = t.g && this.pointFromJSON(t.g, t.gRed), this._wnafT1 = [, , , , ], this._wnafT2 = [, , , , ], this._wnafT3 = [, , , , ], this._wnafT4 = [, , , , ], this._bitLength = this.n ? this.n.bitLength() : 0;
+            var r = this.n && this.p.div(this.n);
+            !r || r.cmpn(100) > 0 ? this.redN = null : (this._maxwellTrick = !0, this.redN = this.n.toRed(this.red))
+        }
+        t.exports = c, c.prototype.point = function() {
+            throw Error(`Not implemented`)
+        }, c.prototype.validate = function() {
+            throw Error(`Not implemented`)
+        }, c.prototype._fixedNafMul = function(e, t) {
+            s(e.precomputed);
+            var n = e._getDoubles(),
+                r = i(t, 1, this._bitLength),
+                a = (1 << n.step + 1) - (n.step % 2 == 0 ? 2 : 1);
+            a /= 3;
+            for (var c = [], l = 0, u; l < r.length; l += n.step) {
+                u = 0;
+                for (var d = l + n.step - 1; d >= l; d--) u = (u << 1) + r[d];
+                c.push(u)
+            }
+            for (var f = this.jpoint(null, null, null), p = this.jpoint(null, null, null), m = a; m > 0; m--) {
+                for (l = 0; l < c.length; l++) u = c[l], u === m ? p = p.mixedAdd(n.points[l]) : u === -m && (p = p.mixedAdd(n.points[l].neg()));
+                f = f.add(p)
+            }
+            return f.toP()
+        }, c.prototype._wnafMul = function(e, t) {
+            var n = 4,
+                r = e._getNAFPoints(n);
+            n = r.wnd;
+            for (var a = r.points, c = i(t, n, this._bitLength), l = this.jpoint(null, null, null), u = c.length - 1; u >= 0; u--) {
+                for (var d = 0; u >= 0 && c[u] === 0; u--) d++;
+                if (u >= 0 && d++, l = l.dblp(d), u < 0) break;
+                var f = c[u];
+                s(f !== 0), l = e.type === `affine` ? f > 0 ? l.mixedAdd(a[f - 1 >> 1]) : l.mixedAdd(a[-f - 1 >> 1].neg()) : f > 0 ? l.add(a[f - 1 >> 1]) : l.add(a[-f - 1 >> 1].neg())
+            }
+            return e.type === `affine` ? l.toP() : l
+        }, c.prototype._wnafMulAdd = function(e, t, n, r, s) {
+            for (var c = this._wnafT1, l = this._wnafT2, u = this._wnafT3, d = 0, f = 0, p, m; f < r; f++) {
+                m = t[f];
+                var h = m._getNAFPoints(e);
+                c[f] = h.wnd, l[f] = h.points
+            }
+            for (f = r - 1; f >= 1; f -= 2) {
+                var g = f - 1,
+                    _ = f;
+                if (c[g] !== 1 || c[_] !== 1) u[g] = i(n[g], c[g], this._bitLength), u[_] = i(n[_], c[_], this._bitLength), d = Math.max(u[g].length, d), d = Math.max(u[_].length, d);
+                else {
+                    var v = [t[g], null, null, t[_]];
+                    t[g].y.cmp(t[_].y) === 0 ? (v[1] = t[g].add(t[_]), v[2] = t[g].toJ().mixedAdd(t[_].neg())) : t[g].y.cmp(t[_].y.redNeg()) === 0 ? (v[1] = t[g].toJ().mixedAdd(t[_]), v[2] = t[g].add(t[_].neg())) : (v[1] = t[g].toJ().mixedAdd(t[_]), v[2] = t[g].toJ().mixedAdd(t[_].neg()));
+                    var y = [-3, -1, -5, -7, 0, 7, 5, 1, 3],
+                        b = a(n[g], n[_]);
+                    for (d = Math.max(b[0].length, d), u[g] = Array(d), u[_] = Array(d), p = 0; p < d; p++) {
+                        var x = b[0][p] | 0,
+                            S = b[1][p] | 0;
+                        u[g][p] = y[(x + 1) * 3 + (S + 1)], u[_][p] = 0, l[g] = v
+                    }
+                }
+            }
+            var C = this.jpoint(null, null, null),
+                w = this._wnafT4;
+            for (f = d; f >= 0; f--) {
+                for (var E = 0; f >= 0;) {
+                    var ee = !0;
+                    for (p = 0; p < r; p++) w[p] = u[p][f] | 0, w[p] !== 0 && (ee = !1);
+                    if (!ee) break;
+                    E++, f--
+                }
+                if (f >= 0 && E++, C = C.dblp(E), f < 0) break;
+                for (p = 0; p < r; p++) {
+                    var D = w[p];
+                    D !== 0 && (D > 0 ? m = l[p][D - 1 >> 1] : D < 0 && (m = l[p][-D - 1 >> 1].neg()), C = m.type === `affine` ? C.mixedAdd(m) : C.add(m))
+                }
+            }
+            for (f = 0; f < r; f++) l[f] = null;
+            return s ? C : C.toP()
+        };
+
+        function l(e, t) {
+            this.curve = e, this.type = t, this.precomputed = null
+        }
+        c.BasePoint = l, l.prototype.eq = function() {
+            throw Error(`Not implemented`)
+        }, l.prototype.validate = function() {
+            return this.curve.validate(this)
+        }, c.prototype.decodePoint = function(e, t) {
+            e = r.toArray(e, t);
+            var n = this.p.byteLength();
+            if ((e[0] === 4 || e[0] === 6 || e[0] === 7) && e.length - 1 == 2 * n) return e[0] === 6 ? s(e[e.length - 1] % 2 == 0) : e[0] === 7 && s(e[e.length - 1] % 2 == 1), this.point(e.slice(1, 1 + n), e.slice(1 + n, 1 + 2 * n));
+            if ((e[0] === 2 || e[0] === 3) && e.length - 1 === n) return this.pointFromX(e.slice(1, 1 + n), e[0] === 3);
+            throw Error(`Unknown point format`)
+        }, l.prototype.encodeCompressed = function(e) {
+            return this.encode(e, !0)
+        }, l.prototype._encode = function(e) {
+            var t = this.curve.p.byteLength(),
+                n = this.getX().toArray(`be`, t);
+            return e ? [this.getY().isEven() ? 2 : 3].concat(n) : [4].concat(n, this.getY().toArray(`be`, t))
+        }, l.prototype.encode = function(e, t) {
+            return r.encode(this._encode(t), e)
+        }, l.prototype.precompute = function(e) {
+            if (this.precomputed) return this;
+            var t = {
+                doubles: null,
+                naf: null,
+                beta: null
+            };
+            return t.naf = this._getNAFPoints(8), t.doubles = this._getDoubles(4, e), t.beta = this._getBeta(), this.precomputed = t, this
+        }, l.prototype._hasDoubles = function(e) {
+            if (!this.precomputed) return !1;
+            var t = this.precomputed.doubles;
+            return t ? t.points.length >= Math.ceil((e.bitLength() + 1) / t.step) : !1
+        }, l.prototype._getDoubles = function(e, t) {
+            if (this.precomputed && this.precomputed.doubles) return this.precomputed.doubles;
+            for (var n = [this], r = this, i = 0; i < t; i += e) {
+                for (var a = 0; a < e; a++) r = r.dbl();
+                n.push(r)
+            }
+            return {
+                step: e,
+                points: n
+            }
+        }, l.prototype._getNAFPoints = function(e) {
+            if (this.precomputed && this.precomputed.naf) return this.precomputed.naf;
+            for (var t = [this], n = (1 << e) - 1, r = n === 1 ? null : this.dbl(), i = 1; i < n; i++) t[i] = t[i - 1].add(r);
+            return {
+                wnd: e,
+                points: t
+            }
+        }, l.prototype._getBeta = function() {
+            return null
+        }, l.prototype.dblp = function(e) {
+            for (var t = this, n = 0; n < e; n++) t = t.dbl();
+            return t
+        }
+    })),
+    require_short = __commonJSMin(((e, t) => {
+        var n = require_utils$1(),
+            r = require_bn$2(),
+            i = require_inherits_browser(),
+            a = require_base$1(),
+            s = n.assert;
+
+        function c(e) {
+            a.call(this, `short`, e), this.a = new r(e.a, 16).toRed(this.red), this.b = new r(e.b, 16).toRed(this.red), this.tinv = this.two.redInvm(), this.zeroA = this.a.fromRed().cmpn(0) === 0, this.threeA = this.a.fromRed().sub(this.p).cmpn(-3) === 0, this.endo = this._getEndomorphism(e), this._endoWnafT1 = [, , , , ], this._endoWnafT2 = [, , , , ]
+        }
+        i(c, a), t.exports = c, c.prototype._getEndomorphism = function(e) {
+            if (this.zeroA && this.g && this.n && this.p.modn(3) === 1) {
+                var t, n;
+                if (e.beta) t = new r(e.beta, 16).toRed(this.red);
+                else {
+                    var i = this._getEndoRoots(this.p);
+                    t = i[0].cmp(i[1]) < 0 ? i[0] : i[1], t = t.toRed(this.red)
+                }
+                if (e.lambda) n = new r(e.lambda, 16);
+                else {
+                    var a = this._getEndoRoots(this.n);
+                    this.g.mul(a[0]).x.cmp(this.g.x.redMul(t)) === 0 ? n = a[0] : (n = a[1], s(this.g.mul(n).x.cmp(this.g.x.redMul(t)) === 0))
+                }
+                var c = e.basis ? e.basis.map(function(e) {
+                    return {
+                        a: new r(e.a, 16),
+                        b: new r(e.b, 16)
+                    }
+                }) : this._getEndoBasis(n);
+                return {
+                    beta: t,
+                    lambda: n,
+                    basis: c
+                }
+            }
+        }, c.prototype._getEndoRoots = function(e) {
+            var t = e === this.p ? this.red : r.mont(e),
+                n = new r(2).toRed(t).redInvm(),
+                i = n.redNeg(),
+                a = new r(3).toRed(t).redNeg().redSqrt().redMul(n);
+            return [i.redAdd(a).fromRed(), i.redSub(a).fromRed()]
+        }, c.prototype._getEndoBasis = function(e) {
+            for (var t = this.n.ushrn(Math.floor(this.n.bitLength() / 2)), n = e, i = this.n.clone(), a = new r(1), s = new r(0), c = new r(0), l = new r(1), u, d, f, p, m, h, g, _ = 0, v, y; n.cmpn(0) !== 0;) {
+                var b = i.div(n);
+                v = i.sub(b.mul(n)), y = c.sub(b.mul(a));
+                var x = l.sub(b.mul(s));
+                if (!f && v.cmp(t) < 0) u = g.neg(), d = a, f = v.neg(), p = y;
+                else if (f && ++_ === 2) break;
+                g = v, i = n, n = v, c = a, a = y, l = s, s = x
+            }
+            m = v.neg(), h = y;
+            var S = f.sqr().add(p.sqr());
+            return m.sqr().add(h.sqr()).cmp(S) >= 0 && (m = u, h = d), f.negative && (f = f.neg(), p = p.neg()), m.negative && (m = m.neg(), h = h.neg()), [{
+                a: f,
+                b: p
+            }, {
+                a: m,
+                b: h
+            }]
+        }, c.prototype._endoSplit = function(e) {
+            var t = this.endo.basis,
+                n = t[0],
+                r = t[1],
+                i = r.b.mul(e).divRound(this.n),
+                a = n.b.neg().mul(e).divRound(this.n),
+                s = i.mul(n.a),
+                c = a.mul(r.a),
+                l = i.mul(n.b),
+                u = a.mul(r.b);
+            return {
+                k1: e.sub(s).sub(c),
+                k2: l.add(u).neg()
+            }
+        }, c.prototype.pointFromX = function(e, t) {
+            e = new r(e, 16), e.red || (e = e.toRed(this.red));
+            var n = e.redSqr().redMul(e).redIAdd(e.redMul(this.a)).redIAdd(this.b),
+                i = n.redSqrt();
+            if (i.redSqr().redSub(n).cmp(this.zero) !== 0) throw Error(`invalid point`);
+            var a = i.fromRed().isOdd();
+            return (t && !a || !t && a) && (i = i.redNeg()), this.point(e, i)
+        }, c.prototype.validate = function(e) {
+            if (e.inf) return !0;
+            var t = e.x,
+                n = e.y,
+                r = this.a.redMul(t),
+                i = t.redSqr().redMul(t).redIAdd(r).redIAdd(this.b);
+            return n.redSqr().redISub(i).cmpn(0) === 0
+        }, c.prototype._endoWnafMulAdd = function(e, t, n) {
+            for (var r = this._endoWnafT1, i = this._endoWnafT2, a = 0; a < e.length; a++) {
+                var s = this._endoSplit(t[a]),
+                    c = e[a],
+                    l = c._getBeta();
+                s.k1.negative && (s.k1.ineg(), c = c.neg(!0)), s.k2.negative && (s.k2.ineg(), l = l.neg(!0)), r[a * 2] = c, r[a * 2 + 1] = l, i[a * 2] = s.k1, i[a * 2 + 1] = s.k2
+            }
+            for (var u = this._wnafMulAdd(1, r, i, a * 2, n), d = 0; d < a * 2; d++) r[d] = null, i[d] = null;
+            return u
+        };
+
+        function l(e, t, n, i) {
+            a.BasePoint.call(this, e, `affine`), t === null && n === null ? (this.x = null, this.y = null, this.inf = !0) : (this.x = new r(t, 16), this.y = new r(n, 16), i && (this.x.forceRed(this.curve.red), this.y.forceRed(this.curve.red)), this.x.red || (this.x = this.x.toRed(this.curve.red)), this.y.red || (this.y = this.y.toRed(this.curve.red)), this.inf = !1)
+        }
+        i(l, a.BasePoint), c.prototype.point = function(e, t, n) {
+            return new l(this, e, t, n)
+        }, c.prototype.pointFromJSON = function(e, t) {
+            return l.fromJSON(this, e, t)
+        }, l.prototype._getBeta = function() {
+            if (this.curve.endo) {
+                var e = this.precomputed;
+                if (e && e.beta) return e.beta;
+                var t = this.curve.point(this.x.redMul(this.curve.endo.beta), this.y);
+                if (e) {
+                    var n = this.curve,
+                        r = function(e) {
+                            return n.point(e.x.redMul(n.endo.beta), e.y)
+                        };
+                    e.beta = t, t.precomputed = {
+                        beta: null,
+                        naf: e.naf && {
+                            wnd: e.naf.wnd,
+                            points: e.naf.points.map(r)
+                        },
+                        doubles: e.doubles && {
+                            step: e.doubles.step,
+                            points: e.doubles.points.map(r)
+                        }
+                    }
+                }
+                return t
+            }
+        }, l.prototype.toJSON = function() {
+            return this.precomputed ? [this.x, this.y, this.precomputed && {
+                doubles: this.precomputed.doubles && {
+                    step: this.precomputed.doubles.step,
+                    points: this.precomputed.doubles.points.slice(1)
+                },
+                naf: this.precomputed.naf && {
+                    wnd: this.precomputed.naf.wnd,
+                    points: this.precomputed.naf.points.slice(1)
+                }
+            }] : [this.x, this.y]
+        }, l.fromJSON = function(e, t, n) {
+            typeof t == `string` && (t = JSON.parse(t));
+            var r = e.point(t[0], t[1], n);
+            if (!t[2]) return r;
+
+            function i(t) {
+                return e.point(t[0], t[1], n)
+            }
+            var a = t[2];
+            return r.precomputed = {
+                beta: null,
+                doubles: a.doubles && {
+                    step: a.doubles.step,
+                    points: [r].concat(a.doubles.points.map(i))
+                },
+                naf: a.naf && {
+                    wnd: a.naf.wnd,
+                    points: [r].concat(a.naf.points.map(i))
+                }
+            }, r
+        }, l.prototype.inspect = function() {
+            return this.isInfinity() ? `<EC Point Infinity>` : `<EC Point x: ` + this.x.fromRed().toString(16, 2) + ` y: ` + this.y.fromRed().toString(16, 2) + `>`
+        }, l.prototype.isInfinity = function() {
+            return this.inf
+        }, l.prototype.add = function(e) {
+            if (this.inf) return e;
+            if (e.inf) return this;
+            if (this.eq(e)) return this.dbl();
+            if (this.neg().eq(e) || this.x.cmp(e.x) === 0) return this.curve.point(null, null);
+            var t = this.y.redSub(e.y);
+            t.cmpn(0) !== 0 && (t = t.redMul(this.x.redSub(e.x).redInvm()));
+            var n = t.redSqr().redISub(this.x).redISub(e.x),
+                r = t.redMul(this.x.redSub(n)).redISub(this.y);
+            return this.curve.point(n, r)
+        }, l.prototype.dbl = function() {
+            if (this.inf) return this;
+            var e = this.y.redAdd(this.y);
+            if (e.cmpn(0) === 0) return this.curve.point(null, null);
+            var t = this.curve.a,
+                n = this.x.redSqr(),
+                r = e.redInvm(),
+                i = n.redAdd(n).redIAdd(n).redIAdd(t).redMul(r),
+                a = i.redSqr().redISub(this.x.redAdd(this.x)),
+                s = i.redMul(this.x.redSub(a)).redISub(this.y);
+            return this.curve.point(a, s)
+        }, l.prototype.getX = function() {
+            return this.x.fromRed()
+        }, l.prototype.getY = function() {
+            return this.y.fromRed()
+        }, l.prototype.mul = function(e) {
+            return e = new r(e, 16), this.isInfinity() ? this : this._hasDoubles(e) ? this.curve._fixedNafMul(this, e) : this.curve.endo ? this.curve._endoWnafMulAdd([this], [e]) : this.curve._wnafMul(this, e)
+        }, l.prototype.mulAdd = function(e, t, n) {
+            var r = [this, t],
+                i = [e, n];
+            return this.curve.endo ? this.curve._endoWnafMulAdd(r, i) : this.curve._wnafMulAdd(1, r, i, 2)
+        }, l.prototype.jmulAdd = function(e, t, n) {
+            var r = [this, t],
+                i = [e, n];
+            return this.curve.endo ? this.curve._endoWnafMulAdd(r, i, !0) : this.curve._wnafMulAdd(1, r, i, 2, !0)
+        }, l.prototype.eq = function(e) {
+            return this === e || this.inf === e.inf && (this.inf || this.x.cmp(e.x) === 0 && this.y.cmp(e.y) === 0)
+        }, l.prototype.neg = function(e) {
+            if (this.inf) return this;
+            var t = this.curve.point(this.x, this.y.redNeg());
+            if (e && this.precomputed) {
+                var n = this.precomputed,
+                    r = function(e) {
+                        return e.neg()
+                    };
+                t.precomputed = {
+                    naf: n.naf && {
+                        wnd: n.naf.wnd,
+                        points: n.naf.points.map(r)
+                    },
+                    doubles: n.doubles && {
+                        step: n.doubles.step,
+                        points: n.doubles.points.map(r)
+                    }
+                }
+            }
+            return t
+        }, l.prototype.toJ = function() {
+            return this.inf ? this.curve.jpoint(null, null, null) : this.curve.jpoint(this.x, this.y, this.curve.one)
+        };
+
+        function u(e, t, n, i) {
+            a.BasePoint.call(this, e, `jacobian`), t === null && n === null && i === null ? (this.x = this.curve.one, this.y = this.curve.one, this.z = new r(0)) : (this.x = new r(t, 16), this.y = new r(n, 16), this.z = new r(i, 16)), this.x.red || (this.x = this.x.toRed(this.curve.red)), this.y.red || (this.y = this.y.toRed(this.curve.red)), this.z.red || (this.z = this.z.toRed(this.curve.red)), this.zOne = this.z === this.curve.one
+        }
+        i(u, a.BasePoint), c.prototype.jpoint = function(e, t, n) {
+            return new u(this, e, t, n)
+        }, u.prototype.toP = function() {
+            if (this.isInfinity()) return this.curve.point(null, null);
+            var e = this.z.redInvm(),
+                t = e.redSqr(),
+                n = this.x.redMul(t),
+                r = this.y.redMul(t).redMul(e);
+            return this.curve.point(n, r)
+        }, u.prototype.neg = function() {
+            return this.curve.jpoint(this.x, this.y.redNeg(), this.z)
+        }, u.prototype.add = function(e) {
+            if (this.isInfinity()) return e;
+            if (e.isInfinity()) return this;
+            var t = e.z.redSqr(),
+                n = this.z.redSqr(),
+                r = this.x.redMul(t),
+                i = e.x.redMul(n),
+                a = this.y.redMul(t.redMul(e.z)),
+                s = e.y.redMul(n.redMul(this.z)),
+                c = r.redSub(i),
+                l = a.redSub(s);
+            if (c.cmpn(0) === 0) return l.cmpn(0) === 0 ? this.dbl() : this.curve.jpoint(null, null, null);
+            var u = c.redSqr(),
+                d = u.redMul(c),
+                f = r.redMul(u),
+                p = l.redSqr().redIAdd(d).redISub(f).redISub(f),
+                m = l.redMul(f.redISub(p)).redISub(a.redMul(d)),
+                h = this.z.redMul(e.z).redMul(c);
+            return this.curve.jpoint(p, m, h)
+        }, u.prototype.mixedAdd = function(e) {
+            if (this.isInfinity()) return e.toJ();
+            if (e.isInfinity()) return this;
+            var t = this.z.redSqr(),
+                n = this.x,
+                r = e.x.redMul(t),
+                i = this.y,
+                a = e.y.redMul(t).redMul(this.z),
+                s = n.redSub(r),
+                c = i.redSub(a);
+            if (s.cmpn(0) === 0) return c.cmpn(0) === 0 ? this.dbl() : this.curve.jpoint(null, null, null);
+            var l = s.redSqr(),
+                u = l.redMul(s),
+                d = n.redMul(l),
+                f = c.redSqr().redIAdd(u).redISub(d).redISub(d),
+                p = c.redMul(d.redISub(f)).redISub(i.redMul(u)),
+                m = this.z.redMul(s);
+            return this.curve.jpoint(f, p, m)
+        }, u.prototype.dblp = function(e) {
+            if (e === 0 || this.isInfinity()) return this;
+            if (!e) return this.dbl();
+            var t;
+            if (this.curve.zeroA || this.curve.threeA) {
+                var n = this;
+                for (t = 0; t < e; t++) n = n.dbl();
+                return n
+            }
+            var r = this.curve.a,
+                i = this.curve.tinv,
+                a = this.x,
+                s = this.y,
+                c = this.z,
+                l = c.redSqr().redSqr(),
+                u = s.redAdd(s);
+            for (t = 0; t < e; t++) {
+                var d = a.redSqr(),
+                    f = u.redSqr(),
+                    p = f.redSqr(),
+                    m = d.redAdd(d).redIAdd(d).redIAdd(r.redMul(l)),
+                    h = a.redMul(f),
+                    g = m.redSqr().redISub(h.redAdd(h)),
+                    _ = h.redISub(g),
+                    v = m.redMul(_);
+                v = v.redIAdd(v).redISub(p);
+                var y = u.redMul(c);
+                t + 1 < e && (l = l.redMul(p)), a = g, c = y, u = v
+            }
+            return this.curve.jpoint(a, u.redMul(i), c)
+        }, u.prototype.dbl = function() {
+            return this.isInfinity() ? this : this.curve.zeroA ? this._zeroDbl() : this.curve.threeA ? this._threeDbl() : this._dbl()
+        }, u.prototype._zeroDbl = function() {
+            var e, t, n;
+            if (this.zOne) {
+                var r = this.x.redSqr(),
+                    i = this.y.redSqr(),
+                    a = i.redSqr(),
+                    s = this.x.redAdd(i).redSqr().redISub(r).redISub(a);
+                s = s.redIAdd(s);
+                var c = r.redAdd(r).redIAdd(r),
+                    l = c.redSqr().redISub(s).redISub(s),
+                    u = a.redIAdd(a);
+                u = u.redIAdd(u), u = u.redIAdd(u), e = l, t = c.redMul(s.redISub(l)).redISub(u), n = this.y.redAdd(this.y)
+            } else {
+                var d = this.x.redSqr(),
+                    f = this.y.redSqr(),
+                    p = f.redSqr(),
+                    m = this.x.redAdd(f).redSqr().redISub(d).redISub(p);
+                m = m.redIAdd(m);
+                var h = d.redAdd(d).redIAdd(d),
+                    g = h.redSqr(),
+                    _ = p.redIAdd(p);
+                _ = _.redIAdd(_), _ = _.redIAdd(_), e = g.redISub(m).redISub(m), t = h.redMul(m.redISub(e)).redISub(_), n = this.y.redMul(this.z), n = n.redIAdd(n)
+            }
+            return this.curve.jpoint(e, t, n)
+        }, u.prototype._threeDbl = function() {
+            var e, t, n;
+            if (this.zOne) {
+                var r = this.x.redSqr(),
+                    i = this.y.redSqr(),
+                    a = i.redSqr(),
+                    s = this.x.redAdd(i).redSqr().redISub(r).redISub(a);
+                s = s.redIAdd(s);
+                var c = r.redAdd(r).redIAdd(r).redIAdd(this.curve.a),
+                    l = c.redSqr().redISub(s).redISub(s);
+                e = l;
+                var u = a.redIAdd(a);
+                u = u.redIAdd(u), u = u.redIAdd(u), t = c.redMul(s.redISub(l)).redISub(u), n = this.y.redAdd(this.y)
+            } else {
+                var d = this.z.redSqr(),
+                    f = this.y.redSqr(),
+                    p = this.x.redMul(f),
+                    m = this.x.redSub(d).redMul(this.x.redAdd(d));
+                m = m.redAdd(m).redIAdd(m);
+                var h = p.redIAdd(p);
+                h = h.redIAdd(h);
+                var g = h.redAdd(h);
+                e = m.redSqr().redISub(g), n = this.y.redAdd(this.z).redSqr().redISub(f).redISub(d);
+                var _ = f.redSqr();
+                _ = _.redIAdd(_), _ = _.redIAdd(_), _ = _.redIAdd(_), t = m.redMul(h.redISub(e)).redISub(_)
+            }
+            return this.curve.jpoint(e, t, n)
+        }, u.prototype._dbl = function() {
+            var e = this.curve.a,
+                t = this.x,
+                n = this.y,
+                r = this.z,
+                i = r.redSqr().redSqr(),
+                a = t.redSqr(),
+                s = n.redSqr(),
+                c = a.redAdd(a).redIAdd(a).redIAdd(e.redMul(i)),
+                l = t.redAdd(t);
+            l = l.redIAdd(l);
+            var u = l.redMul(s),
+                d = c.redSqr().redISub(u.redAdd(u)),
+                f = u.redISub(d),
+                p = s.redSqr();
+            p = p.redIAdd(p), p = p.redIAdd(p), p = p.redIAdd(p);
+            var m = c.redMul(f).redISub(p),
+                h = n.redAdd(n).redMul(r);
+            return this.curve.jpoint(d, m, h)
+        }, u.prototype.trpl = function() {
+            if (!this.curve.zeroA) return this.dbl().add(this);
+            var e = this.x.redSqr(),
+                t = this.y.redSqr(),
+                n = this.z.redSqr(),
+                r = t.redSqr(),
+                i = e.redAdd(e).redIAdd(e),
+                a = i.redSqr(),
+                s = this.x.redAdd(t).redSqr().redISub(e).redISub(r);
+            s = s.redIAdd(s), s = s.redAdd(s).redIAdd(s), s = s.redISub(a);
+            var c = s.redSqr(),
+                l = r.redIAdd(r);
+            l = l.redIAdd(l), l = l.redIAdd(l), l = l.redIAdd(l);
+            var u = i.redIAdd(s).redSqr().redISub(a).redISub(c).redISub(l),
+                d = t.redMul(u);
+            d = d.redIAdd(d), d = d.redIAdd(d);
+            var f = this.x.redMul(c).redISub(d);
+            f = f.redIAdd(f), f = f.redIAdd(f);
+            var p = this.y.redMul(u.redMul(l.redISub(u)).redISub(s.redMul(c)));
+            p = p.redIAdd(p), p = p.redIAdd(p), p = p.redIAdd(p);
+            var m = this.z.redAdd(s).redSqr().redISub(n).redISub(c);
+            return this.curve.jpoint(f, p, m)
+        }, u.prototype.mul = function(e, t) {
+            return e = new r(e, t), this.curve._wnafMul(this, e)
+        }, u.prototype.eq = function(e) {
+            if (e.type === `affine`) return this.eq(e.toJ());
+            if (this === e) return !0;
+            var t = this.z.redSqr(),
+                n = e.z.redSqr();
+            if (this.x.redMul(n).redISub(e.x.redMul(t)).cmpn(0) !== 0) return !1;
+            var r = t.redMul(this.z),
+                i = n.redMul(e.z);
+            return this.y.redMul(i).redISub(e.y.redMul(r)).cmpn(0) === 0
+        }, u.prototype.eqXToP = function(e) {
+            var t = this.z.redSqr(),
+                n = e.toRed(this.curve.red).redMul(t);
+            if (this.x.cmp(n) === 0) return !0;
+            for (var r = e.clone(), i = this.curve.redN.redMul(t);;) {
+                if (r.iadd(this.curve.n), r.cmp(this.curve.p) >= 0) return !1;
+                if (n.redIAdd(i), this.x.cmp(n) === 0) return !0
+            }
+        }, u.prototype.inspect = function() {
+            return this.isInfinity() ? `<EC JPoint Infinity>` : `<EC JPoint x: ` + this.x.toString(16, 2) + ` y: ` + this.y.toString(16, 2) + ` z: ` + this.z.toString(16, 2) + `>`
+        }, u.prototype.isInfinity = function() {
+            return this.z.cmpn(0) === 0
+        }
+    })),
+    require_mont = __commonJSMin(((e, t) => {
+        var n = require_bn$2(),
+            r = require_inherits_browser(),
+            i = require_base$1(),
+            a = require_utils$1();
+
+        function s(e) {
+            i.call(this, `mont`, e), this.a = new n(e.a, 16).toRed(this.red), this.b = new n(e.b, 16).toRed(this.red), this.i4 = new n(4).toRed(this.red).redInvm(), this.two = new n(2).toRed(this.red), this.a24 = this.i4.redMul(this.a.redAdd(this.two))
+        }
+        r(s, i), t.exports = s, s.prototype.validate = function(e) {
+            var t = e.normalize().x,
+                n = t.redSqr(),
+                r = n.redMul(t).redAdd(n.redMul(this.a)).redAdd(t);
+            return r.redSqrt().redSqr().cmp(r) === 0
+        };
+
+        function c(e, t, r) {
+            i.BasePoint.call(this, e, `projective`), t === null && r === null ? (this.x = this.curve.one, this.z = this.curve.zero) : (this.x = new n(t, 16), this.z = new n(r, 16), this.x.red || (this.x = this.x.toRed(this.curve.red)), this.z.red || (this.z = this.z.toRed(this.curve.red)))
+        }
+        r(c, i.BasePoint), s.prototype.decodePoint = function(e, t) {
+            return this.point(a.toArray(e, t), 1)
+        }, s.prototype.point = function(e, t) {
+            return new c(this, e, t)
+        }, s.prototype.pointFromJSON = function(e) {
+            return c.fromJSON(this, e)
+        }, c.prototype.precompute = function() {}, c.prototype._encode = function() {
+            return this.getX().toArray(`be`, this.curve.p.byteLength())
+        }, c.fromJSON = function(e, t) {
+            return new c(e, t[0], t[1] || e.one)
+        }, c.prototype.inspect = function() {
+            return this.isInfinity() ? `<EC Point Infinity>` : `<EC Point x: ` + this.x.fromRed().toString(16, 2) + ` z: ` + this.z.fromRed().toString(16, 2) + `>`
+        }, c.prototype.isInfinity = function() {
+            return this.z.cmpn(0) === 0
+        }, c.prototype.dbl = function() {
+            var e = this.x.redAdd(this.z).redSqr(),
+                t = this.x.redSub(this.z).redSqr(),
+                n = e.redSub(t),
+                r = e.redMul(t),
+                i = n.redMul(t.redAdd(this.curve.a24.redMul(n)));
+            return this.curve.point(r, i)
+        }, c.prototype.add = function() {
+            throw Error(`Not supported on Montgomery curve`)
+        }, c.prototype.diffAdd = function(e, t) {
+            var n = this.x.redAdd(this.z),
+                r = this.x.redSub(this.z),
+                i = e.x.redAdd(e.z),
+                a = e.x.redSub(e.z).redMul(n),
+                s = i.redMul(r),
+                c = t.z.redMul(a.redAdd(s).redSqr()),
+                l = t.x.redMul(a.redISub(s).redSqr());
+            return this.curve.point(c, l)
+        }, c.prototype.mul = function(e) {
+            for (var t = e.clone(), n = this, r = this.curve.point(null, null), i = this, a = []; t.cmpn(0) !== 0; t.iushrn(1)) a.push(t.andln(1));
+            for (var s = a.length - 1; s >= 0; s--) a[s] === 0 ? (n = n.diffAdd(r, i), r = r.dbl()) : (r = n.diffAdd(r, i), n = n.dbl());
+            return r
+        }, c.prototype.mulAdd = function() {
+            throw Error(`Not supported on Montgomery curve`)
+        }, c.prototype.jumlAdd = function() {
+            throw Error(`Not supported on Montgomery curve`)
+        }, c.prototype.eq = function(e) {
+            return this.getX().cmp(e.getX()) === 0
+        }, c.prototype.normalize = function() {
+            return this.x = this.x.redMul(this.z.redInvm()), this.z = this.curve.one, this
+        }, c.prototype.getX = function() {
+            return this.normalize(), this.x.fromRed()
+        }
+    })),
+    require_edwards = __commonJSMin(((e, t) => {
+        var n = require_utils$1(),
+            r = require_bn$2(),
+            i = require_inherits_browser(),
+            a = require_base$1(),
+            s = n.assert;
+
+        function c(e) {
+            this.twisted = (e.a | 0) != 1, this.mOneA = this.twisted && (e.a | 0) == -1, this.extended = this.mOneA, a.call(this, `edwards`, e), this.a = new r(e.a, 16).umod(this.red.m), this.a = this.a.toRed(this.red), this.c = new r(e.c, 16).toRed(this.red), this.c2 = this.c.redSqr(), this.d = new r(e.d, 16).toRed(this.red), this.dd = this.d.redAdd(this.d), s(!this.twisted || this.c.fromRed().cmpn(1) === 0), this.oneC = (e.c | 0) == 1
+        }
+        i(c, a), t.exports = c, c.prototype._mulA = function(e) {
+            return this.mOneA ? e.redNeg() : this.a.redMul(e)
+        }, c.prototype._mulC = function(e) {
+            return this.oneC ? e : this.c.redMul(e)
+        }, c.prototype.jpoint = function(e, t, n, r) {
+            return this.point(e, t, n, r)
+        }, c.prototype.pointFromX = function(e, t) {
+            e = new r(e, 16), e.red || (e = e.toRed(this.red));
+            var n = e.redSqr(),
+                i = this.c2.redSub(this.a.redMul(n)),
+                a = this.one.redSub(this.c2.redMul(this.d).redMul(n)),
+                s = i.redMul(a.redInvm()),
+                c = s.redSqrt();
+            if (c.redSqr().redSub(s).cmp(this.zero) !== 0) throw Error(`invalid point`);
+            var l = c.fromRed().isOdd();
+            return (t && !l || !t && l) && (c = c.redNeg()), this.point(e, c)
+        }, c.prototype.pointFromY = function(e, t) {
+            e = new r(e, 16), e.red || (e = e.toRed(this.red));
+            var n = e.redSqr(),
+                i = n.redSub(this.c2),
+                a = n.redMul(this.d).redMul(this.c2).redSub(this.a),
+                s = i.redMul(a.redInvm());
+            if (s.cmp(this.zero) === 0) {
+                if (t) throw Error(`invalid point`);
+                return this.point(this.zero, e)
+            }
+            var c = s.redSqrt();
+            if (c.redSqr().redSub(s).cmp(this.zero) !== 0) throw Error(`invalid point`);
+            return c.fromRed().isOdd() !== t && (c = c.redNeg()), this.point(c, e)
+        }, c.prototype.validate = function(e) {
+            if (e.isInfinity()) return !0;
+            e.normalize();
+            var t = e.x.redSqr(),
+                n = e.y.redSqr(),
+                r = t.redMul(this.a).redAdd(n),
+                i = this.c2.redMul(this.one.redAdd(this.d.redMul(t).redMul(n)));
+            return r.cmp(i) === 0
+        };
+
+        function l(e, t, n, i, s) {
+            a.BasePoint.call(this, e, `projective`), t === null && n === null && i === null ? (this.x = this.curve.zero, this.y = this.curve.one, this.z = this.curve.one, this.t = this.curve.zero, this.zOne = !0) : (this.x = new r(t, 16), this.y = new r(n, 16), this.z = i ? new r(i, 16) : this.curve.one, this.t = s && new r(s, 16), this.x.red || (this.x = this.x.toRed(this.curve.red)), this.y.red || (this.y = this.y.toRed(this.curve.red)), this.z.red || (this.z = this.z.toRed(this.curve.red)), this.t && !this.t.red && (this.t = this.t.toRed(this.curve.red)), this.zOne = this.z === this.curve.one, this.curve.extended && !this.t && (this.t = this.x.redMul(this.y), this.zOne || (this.t = this.t.redMul(this.z.redInvm()))))
+        }
+        i(l, a.BasePoint), c.prototype.pointFromJSON = function(e) {
+            return l.fromJSON(this, e)
+        }, c.prototype.point = function(e, t, n, r) {
+            return new l(this, e, t, n, r)
+        }, l.fromJSON = function(e, t) {
+            return new l(e, t[0], t[1], t[2])
+        }, l.prototype.inspect = function() {
+            return this.isInfinity() ? `<EC Point Infinity>` : `<EC Point x: ` + this.x.fromRed().toString(16, 2) + ` y: ` + this.y.fromRed().toString(16, 2) + ` z: ` + this.z.fromRed().toString(16, 2) + `>`
+        }, l.prototype.isInfinity = function() {
+            return this.x.cmpn(0) === 0 && (this.y.cmp(this.z) === 0 || this.zOne && this.y.cmp(this.curve.c) === 0)
+        }, l.prototype._extDbl = function() {
+            var e = this.x.redSqr(),
+                t = this.y.redSqr(),
+                n = this.z.redSqr();
+            n = n.redIAdd(n);
+            var r = this.curve._mulA(e),
+                i = this.x.redAdd(this.y).redSqr().redISub(e).redISub(t),
+                a = r.redAdd(t),
+                s = a.redSub(n),
+                c = r.redSub(t),
+                l = i.redMul(s),
+                u = a.redMul(c),
+                d = i.redMul(c),
+                f = s.redMul(a);
+            return this.curve.point(l, u, f, d)
+        }, l.prototype._projDbl = function() {
+            var e = this.x.redAdd(this.y).redSqr(),
+                t = this.x.redSqr(),
+                n = this.y.redSqr(),
+                r, i, a, s, c, l;
+            if (this.curve.twisted) {
+                s = this.curve._mulA(t);
+                var u = s.redAdd(n);
+                this.zOne ? (r = e.redSub(t).redSub(n).redMul(u.redSub(this.curve.two)), i = u.redMul(s.redSub(n)), a = u.redSqr().redSub(u).redSub(u)) : (c = this.z.redSqr(), l = u.redSub(c).redISub(c), r = e.redSub(t).redISub(n).redMul(l), i = u.redMul(s.redSub(n)), a = u.redMul(l))
+            } else s = t.redAdd(n), c = this.curve._mulC(this.z).redSqr(), l = s.redSub(c).redSub(c), r = this.curve._mulC(e.redISub(s)).redMul(l), i = this.curve._mulC(s).redMul(t.redISub(n)), a = s.redMul(l);
+            return this.curve.point(r, i, a)
+        }, l.prototype.dbl = function() {
+            return this.isInfinity() ? this : this.curve.extended ? this._extDbl() : this._projDbl()
+        }, l.prototype._extAdd = function(e) {
+            var t = this.y.redSub(this.x).redMul(e.y.redSub(e.x)),
+                n = this.y.redAdd(this.x).redMul(e.y.redAdd(e.x)),
+                r = this.t.redMul(this.curve.dd).redMul(e.t),
+                i = this.z.redMul(e.z.redAdd(e.z)),
+                a = n.redSub(t),
+                s = i.redSub(r),
+                c = i.redAdd(r),
+                l = n.redAdd(t),
+                u = a.redMul(s),
+                d = c.redMul(l),
+                f = a.redMul(l),
+                p = s.redMul(c);
+            return this.curve.point(u, d, p, f)
+        }, l.prototype._projAdd = function(e) {
+            var t = this.z.redMul(e.z),
+                n = t.redSqr(),
+                r = this.x.redMul(e.x),
+                i = this.y.redMul(e.y),
+                a = this.curve.d.redMul(r).redMul(i),
+                s = n.redSub(a),
+                c = n.redAdd(a),
+                l = this.x.redAdd(this.y).redMul(e.x.redAdd(e.y)).redISub(r).redISub(i),
+                u = t.redMul(s).redMul(l),
+                d, f;
+            return this.curve.twisted ? (d = t.redMul(c).redMul(i.redSub(this.curve._mulA(r))), f = s.redMul(c)) : (d = t.redMul(c).redMul(i.redSub(r)), f = this.curve._mulC(s).redMul(c)), this.curve.point(u, d, f)
+        }, l.prototype.add = function(e) {
+            return this.isInfinity() ? e : e.isInfinity() ? this : this.curve.extended ? this._extAdd(e) : this._projAdd(e)
+        }, l.prototype.mul = function(e) {
+            return this._hasDoubles(e) ? this.curve._fixedNafMul(this, e) : this.curve._wnafMul(this, e)
+        }, l.prototype.mulAdd = function(e, t, n) {
+            return this.curve._wnafMulAdd(1, [this, t], [e, n], 2, !1)
+        }, l.prototype.jmulAdd = function(e, t, n) {
+            return this.curve._wnafMulAdd(1, [this, t], [e, n], 2, !0)
+        }, l.prototype.normalize = function() {
+            if (this.zOne) return this;
+            var e = this.z.redInvm();
+            return this.x = this.x.redMul(e), this.y = this.y.redMul(e), this.t && (this.t = this.t.redMul(e)), this.z = this.curve.one, this.zOne = !0, this
+        }, l.prototype.neg = function() {
+            return this.curve.point(this.x.redNeg(), this.y, this.z, this.t && this.t.redNeg())
+        }, l.prototype.getX = function() {
+            return this.normalize(), this.x.fromRed()
+        }, l.prototype.getY = function() {
+            return this.normalize(), this.y.fromRed()
+        }, l.prototype.eq = function(e) {
+            return this === e || this.getX().cmp(e.getX()) === 0 && this.getY().cmp(e.getY()) === 0
+        }, l.prototype.eqXToP = function(e) {
+            var t = e.toRed(this.curve.red).redMul(this.z);
+            if (this.x.cmp(t) === 0) return !0;
+            for (var n = e.clone(), r = this.curve.redN.redMul(this.z);;) {
+                if (n.iadd(this.curve.n), n.cmp(this.curve.p) >= 0) return !1;
+                if (t.redIAdd(r), this.x.cmp(t) === 0) return !0
+            }
+        }, l.prototype.toP = l.prototype.normalize, l.prototype.mixedAdd = l.prototype.add
+    })),
+    require_curve = __commonJSMin((e => {
+        var t = e;
+        t.base = require_base$1(), t.short = require_short(), t.mont = require_mont(), t.edwards = require_edwards()
+    })),
+    require_utils = __commonJSMin((e => {
+        var t = require_minimalistic_assert();
+        e.inherits = require_inherits_browser();
+
+        function n(e, t) {
+            return (e.charCodeAt(t) & 64512) != 55296 || t < 0 || t + 1 >= e.length ? !1 : (e.charCodeAt(t + 1) & 64512) == 56320
+        }
+
+        function r(e, t) {
+            if (Array.isArray(e)) return e.slice();
+            if (!e) return [];
+            var r = [];
+            if (typeof e == `string`) {
+                if (!t)
+                    for (var i = 0, a = 0; a < e.length; a++) {
+                        var s = e.charCodeAt(a);
+                        s < 128 ? r[i++] = s : s < 2048 ? (r[i++] = s >> 6 | 192, r[i++] = s & 63 | 128) : n(e, a) ? (s = 65536 + ((s & 1023) << 10) + (e.charCodeAt(++a) & 1023), r[i++] = s >> 18 | 240, r[i++] = s >> 12 & 63 | 128, r[i++] = s >> 6 & 63 | 128, r[i++] = s & 63 | 128) : (r[i++] = s >> 12 | 224, r[i++] = s >> 6 & 63 | 128, r[i++] = s & 63 | 128)
+                    } else if (t === `hex`)
+                        for (e = e.replace(/[^a-z0-9]+/gi, ``), e.length % 2 != 0 && (e = `0` + e), a = 0; a < e.length; a += 2) r.push(parseInt(e[a] + e[a + 1], 16))
+            } else
+                for (a = 0; a < e.length; a++) r[a] = e[a] | 0;
+            return r
+        }
+        e.toArray = r;
+
+        function i(e) {
+            for (var t = ``, n = 0; n < e.length; n++) t += c(e[n].toString(16));
+            return t
+        }
+        e.toHex = i;
+
+        function a(e) {
+            return (e >>> 24 | e >>> 8 & 65280 | e << 8 & 16711680 | (e & 255) << 24) >>> 0
+        }
+        e.htonl = a;
+
+        function s(e, t) {
+            for (var n = ``, r = 0; r < e.length; r++) {
+                var i = e[r];
+                t === `little` && (i = a(i)), n += l(i.toString(16))
+            }
+            return n
+        }
+        e.toHex32 = s;
+
+        function c(e) {
+            return e.length === 1 ? `0` + e : e
+        }
+        e.zero2 = c;
+
+        function l(e) {
+            return e.length === 7 ? `0` + e : e.length === 6 ? `00` + e : e.length === 5 ? `000` + e : e.length === 4 ? `0000` + e : e.length === 3 ? `00000` + e : e.length === 2 ? `000000` + e : e.length === 1 ? `0000000` + e : e
+        }
+        e.zero8 = l;
+
+        function u(e, n, r, i) {
+            var a = r - n;
+            t(a % 4 == 0);
+            for (var s = Array(a / 4), c = 0, l = n; c < s.length; c++, l += 4) {
+                var u = i === `big` ? e[l] << 24 | e[l + 1] << 16 | e[l + 2] << 8 | e[l + 3] : e[l + 3] << 24 | e[l + 2] << 16 | e[l + 1] << 8 | e[l];
+                s[c] = u >>> 0
+            }
+            return s
+        }
+        e.join32 = u;
+
+        function d(e, t) {
+            for (var n = Array(e.length * 4), r = 0, i = 0; r < e.length; r++, i += 4) {
+                var a = e[r];
+                t === `big` ? (n[i] = a >>> 24, n[i + 1] = a >>> 16 & 255, n[i + 2] = a >>> 8 & 255, n[i + 3] = a & 255) : (n[i + 3] = a >>> 24, n[i + 2] = a >>> 16 & 255, n[i + 1] = a >>> 8 & 255, n[i] = a & 255)
+            }
+            return n
+        }
+        e.split32 = d;
+
+        function f(e, t) {
+            return e >>> t | e << 32 - t
+        }
+        e.rotr32 = f;
+
+        function p(e, t) {
+            return e << t | e >>> 32 - t
+        }
+        e.rotl32 = p;
+
+        function m(e, t) {
+            return e + t >>> 0
+        }
+        e.sum32 = m;
+
+        function h(e, t, n) {
+            return e + t + n >>> 0
+        }
+        e.sum32_3 = h;
+
+        function g(e, t, n, r) {
+            return e + t + n + r >>> 0
+        }
+        e.sum32_4 = g;
+
+        function _(e, t, n, r, i) {
+            return e + t + n + r + i >>> 0
+        }
+        e.sum32_5 = _;
+
+        function v(e, t, n, r) {
+            var i = e[t],
+                a = r + e[t + 1] >>> 0;
+            e[t] = +(a < r) + n + i >>> 0, e[t + 1] = a
+        }
+        e.sum64 = v;
+
+        function y(e, t, n, r) {
+            return +(t + r >>> 0 < t) + e + n >>> 0
+        }
+        e.sum64_hi = y;
+
+        function b(e, t, n, r) {
+            return t + r >>> 0
+        }
+        e.sum64_lo = b;
+
+        function x(e, t, n, r, i, a, s, c) {
+            var l = 0,
+                u = t;
+            return u = u + r >>> 0, l += +(u < t), u = u + a >>> 0, l += +(u < a), u = u + c >>> 0, l += +(u < c), e + n + i + s + l >>> 0
+        }
+        e.sum64_4_hi = x;
+
+        function S(e, t, n, r, i, a, s, c) {
+            return t + r + a + c >>> 0
+        }
+        e.sum64_4_lo = S;
+
+        function C(e, t, n, r, i, a, s, c, l, u) {
+            var d = 0,
+                f = t;
+            return f = f + r >>> 0, d += +(f < t), f = f + a >>> 0, d += +(f < a), f = f + c >>> 0, d += +(f < c), f = f + u >>> 0, d += +(f < u), e + n + i + s + l + d >>> 0
+        }
+        e.sum64_5_hi = C;
+
+        function w(e, t, n, r, i, a, s, c, l, u) {
+            return t + r + a + c + u >>> 0
+        }
+        e.sum64_5_lo = w;
+
+        function E(e, t, n) {
+            return (t << 32 - n | e >>> n) >>> 0
+        }
+        e.rotr64_hi = E;
+
+        function ee(e, t, n) {
+            return (e << 32 - n | t >>> n) >>> 0
+        }
+        e.rotr64_lo = ee;
+
+        function D(e, t, n) {
+            return e >>> n
+        }
+        e.shr64_hi = D;
+
+        function O(e, t, n) {
+            return (e << 32 - n | t >>> n) >>> 0
+        }
+        e.shr64_lo = O
+    })),
+    require_common$1 = __commonJSMin((e => {
+        var t = require_utils(),
+            n = require_minimalistic_assert();
+
+        function r() {
+            this.pending = null, this.pendingTotal = 0, this.blockSize = this.constructor.blockSize, this.outSize = this.constructor.outSize, this.hmacStrength = this.constructor.hmacStrength, this.padLength = this.constructor.padLength / 8, this.endian = `big`, this._delta8 = this.blockSize / 8, this._delta32 = this.blockSize / 32
+        }
+        e.BlockHash = r, r.prototype.update = function(e, n) {
+            if (e = t.toArray(e, n), this.pending = this.pending ? this.pending.concat(e) : e, this.pendingTotal += e.length, this.pending.length >= this._delta8) {
+                e = this.pending;
+                var r = e.length % this._delta8;
+                this.pending = e.slice(e.length - r, e.length), this.pending.length === 0 && (this.pending = null), e = t.join32(e, 0, e.length - r, this.endian);
+                for (var i = 0; i < e.length; i += this._delta32) this._update(e, i, i + this._delta32)
+            }
+            return this
+        }, r.prototype.digest = function(e) {
+            return this.update(this._pad()), n(this.pending === null), this._digest(e)
+        }, r.prototype._pad = function() {
+            var e = this.pendingTotal,
+                t = this._delta8,
+                n = t - (e + this.padLength) % t,
+                r = Array(n + this.padLength);
+            r[0] = 128;
+            for (var i = 1; i < n; i++) r[i] = 0;
+            if (e <<= 3, this.endian === `big`) {
+                for (var a = 8; a < this.padLength; a++) r[i++] = 0;
+                r[i++] = 0, r[i++] = 0, r[i++] = 0, r[i++] = 0, r[i++] = e >>> 24 & 255, r[i++] = e >>> 16 & 255, r[i++] = e >>> 8 & 255, r[i++] = e & 255
+            } else
+                for (r[i++] = e & 255, r[i++] = e >>> 8 & 255, r[i++] = e >>> 16 & 255, r[i++] = e >>> 24 & 255, r[i++] = 0, r[i++] = 0, r[i++] = 0, r[i++] = 0, a = 8; a < this.padLength; a++) r[i++] = 0;
+            return r
+        }
+    })),
+    require_common = __commonJSMin((e => {
+        var t = require_utils().rotr32;
+
+        function n(e, t, n, s) {
+            if (e === 0) return r(t, n, s);
+            if (e === 1 || e === 3) return a(t, n, s);
+            if (e === 2) return i(t, n, s)
+        }
+        e.ft_1 = n;
+
+        function r(e, t, n) {
+            return e & t ^ ~e & n
+        }
+        e.ch32 = r;
+
+        function i(e, t, n) {
+            return e & t ^ e & n ^ t & n
+        }
+        e.maj32 = i;
+
+        function a(e, t, n) {
+            return e ^ t ^ n
+        }
+        e.p32 = a;
+
+        function s(e) {
+            return t(e, 2) ^ t(e, 13) ^ t(e, 22)
+        }
+        e.s0_256 = s;
+
+        function c(e) {
+            return t(e, 6) ^ t(e, 11) ^ t(e, 25)
+        }
+        e.s1_256 = c;
+
+        function l(e) {
+            return t(e, 7) ^ t(e, 18) ^ e >>> 3
+        }
+        e.g0_256 = l;
+
+        function u(e) {
+            return t(e, 17) ^ t(e, 19) ^ e >>> 10
+        }
+        e.g1_256 = u
+    })),
+    require__1 = __commonJSMin(((e, t) => {
+        var n = require_utils(),
+            r = require_common$1(),
+            i = require_common(),
+            a = n.rotl32,
+            s = n.sum32,
+            c = n.sum32_5,
+            l = i.ft_1,
+            u = r.BlockHash,
+            d = [1518500249, 1859775393, 2400959708, 3395469782];
+
+        function f() {
+            if (!(this instanceof f)) return new f;
+            u.call(this), this.h = [1732584193, 4023233417, 2562383102, 271733878, 3285377520], this.W = Array(80)
+        }
+        n.inherits(f, u), t.exports = f, f.blockSize = 512, f.outSize = 160, f.hmacStrength = 80, f.padLength = 64, f.prototype._update = function(e, t) {
+            for (var n = this.W, r = 0; r < 16; r++) n[r] = e[t + r];
+            for (; r < n.length; r++) n[r] = a(n[r - 3] ^ n[r - 8] ^ n[r - 14] ^ n[r - 16], 1);
+            var i = this.h[0],
+                u = this.h[1],
+                f = this.h[2],
+                p = this.h[3],
+                m = this.h[4];
+            for (r = 0; r < n.length; r++) {
+                var h = ~~(r / 20),
+                    g = c(a(i, 5), l(h, u, f, p), m, n[r], d[h]);
+                m = p, p = f, f = a(u, 30), u = i, i = g
+            }
+            this.h[0] = s(this.h[0], i), this.h[1] = s(this.h[1], u), this.h[2] = s(this.h[2], f), this.h[3] = s(this.h[3], p), this.h[4] = s(this.h[4], m)
+        }, f.prototype._digest = function(e) {
+            return e === `hex` ? n.toHex32(this.h, `big`) : n.split32(this.h, `big`)
+        }
+    })),
+    require__256 = __commonJSMin(((e, t) => {
+        var n = require_utils(),
+            r = require_common$1(),
+            i = require_common(),
+            a = require_minimalistic_assert(),
+            s = n.sum32,
+            c = n.sum32_4,
+            l = n.sum32_5,
+            u = i.ch32,
+            d = i.maj32,
+            f = i.s0_256,
+            p = i.s1_256,
+            m = i.g0_256,
+            h = i.g1_256,
+            g = r.BlockHash,
+            _ = [1116352408, 1899447441, 3049323471, 3921009573, 961987163, 1508970993, 2453635748, 2870763221, 3624381080, 310598401, 607225278, 1426881987, 1925078388, 2162078206, 2614888103, 3248222580, 3835390401, 4022224774, 264347078, 604807628, 770255983, 1249150122, 1555081692, 1996064986, 2554220882, 2821834349, 2952996808, 3210313671, 3336571891, 3584528711, 113926993, 338241895, 666307205, 773529912, 1294757372, 1396182291, 1695183700, 1986661051, 2177026350, 2456956037, 2730485921, 2820302411, 3259730800, 3345764771, 3516065817, 3600352804, 4094571909, 275423344, 430227734, 506948616, 659060556, 883997877, 958139571, 1322822218, 1537002063, 1747873779, 1955562222, 2024104815, 2227730452, 2361852424, 2428436474, 2756734187, 3204031479, 3329325298];
+
+        function v() {
+            if (!(this instanceof v)) return new v;
+            g.call(this), this.h = [1779033703, 3144134277, 1013904242, 2773480762, 1359893119, 2600822924, 528734635, 1541459225], this.k = _, this.W = Array(64)
+        }
+        n.inherits(v, g), t.exports = v, v.blockSize = 512, v.outSize = 256, v.hmacStrength = 192, v.padLength = 64, v.prototype._update = function(e, t) {
+            for (var n = this.W, r = 0; r < 16; r++) n[r] = e[t + r];
+            for (; r < n.length; r++) n[r] = c(h(n[r - 2]), n[r - 7], m(n[r - 15]), n[r - 16]);
+            var i = this.h[0],
+                g = this.h[1],
+                _ = this.h[2],
+                v = this.h[3],
+                y = this.h[4],
+                b = this.h[5],
+                x = this.h[6],
+                S = this.h[7];
+            for (a(this.k.length === n.length), r = 0; r < n.length; r++) {
+                var C = l(S, p(y), u(y, b, x), this.k[r], n[r]),
+                    w = s(f(i), d(i, g, _));
+                S = x, x = b, b = y, y = s(v, C), v = _, _ = g, g = i, i = s(C, w)
+            }
+            this.h[0] = s(this.h[0], i), this.h[1] = s(this.h[1], g), this.h[2] = s(this.h[2], _), this.h[3] = s(this.h[3], v), this.h[4] = s(this.h[4], y), this.h[5] = s(this.h[5], b), this.h[6] = s(this.h[6], x), this.h[7] = s(this.h[7], S)
+        }, v.prototype._digest = function(e) {
+            return e === `hex` ? n.toHex32(this.h, `big`) : n.split32(this.h, `big`)
+        }
+    })),
+    require__224 = __commonJSMin(((e, t) => {
+        var n = require_utils(),
+            r = require__256();
+
+        function i() {
+            if (!(this instanceof i)) return new i;
+            r.call(this), this.h = [3238371032, 914150663, 812702999, 4144912697, 4290775857, 1750603025, 1694076839, 3204075428]
+        }
+        n.inherits(i, r), t.exports = i, i.blockSize = 512, i.outSize = 224, i.hmacStrength = 192, i.padLength = 64, i.prototype._digest = function(e) {
+            return e === `hex` ? n.toHex32(this.h.slice(0, 7), `big`) : n.split32(this.h.slice(0, 7), `big`)
+        }
+    })),
+    require__512 = __commonJSMin(((e, t) => {
+        var n = require_utils(),
+            r = require_common$1(),
+            i = require_minimalistic_assert(),
+            a = n.rotr64_hi,
+            s = n.rotr64_lo,
+            c = n.shr64_hi,
+            l = n.shr64_lo,
+            u = n.sum64,
+            d = n.sum64_hi,
+            f = n.sum64_lo,
+            p = n.sum64_4_hi,
+            m = n.sum64_4_lo,
+            h = n.sum64_5_hi,
+            g = n.sum64_5_lo,
+            _ = r.BlockHash,
+            v = [1116352408, 3609767458, 1899447441, 602891725, 3049323471, 3964484399, 3921009573, 2173295548, 961987163, 4081628472, 1508970993, 3053834265, 2453635748, 2937671579, 2870763221, 3664609560, 3624381080, 2734883394, 310598401, 1164996542, 607225278, 1323610764, 1426881987, 3590304994, 1925078388, 4068182383, 2162078206, 991336113, 2614888103, 633803317, 3248222580, 3479774868, 3835390401, 2666613458, 4022224774, 944711139, 264347078, 2341262773, 604807628, 2007800933, 770255983, 1495990901, 1249150122, 1856431235, 1555081692, 3175218132, 1996064986, 2198950837, 2554220882, 3999719339, 2821834349, 766784016, 2952996808, 2566594879, 3210313671, 3203337956, 3336571891, 1034457026, 3584528711, 2466948901, 113926993, 3758326383, 338241895, 168717936, 666307205, 1188179964, 773529912, 1546045734, 1294757372, 1522805485, 1396182291, 2643833823, 1695183700, 2343527390, 1986661051, 1014477480, 2177026350, 1206759142, 2456956037, 344077627, 2730485921, 1290863460, 2820302411, 3158454273, 3259730800, 3505952657, 3345764771, 106217008, 3516065817, 3606008344, 3600352804, 1432725776, 4094571909, 1467031594, 275423344, 851169720, 430227734, 3100823752, 506948616, 1363258195, 659060556, 3750685593, 883997877, 3785050280, 958139571, 3318307427, 1322822218, 3812723403, 1537002063, 2003034995, 1747873779, 3602036899, 1955562222, 1575990012, 2024104815, 1125592928, 2227730452, 2716904306, 2361852424, 442776044, 2428436474, 593698344, 2756734187, 3733110249, 3204031479, 2999351573, 3329325298, 3815920427, 3391569614, 3928383900, 3515267271, 566280711, 3940187606, 3454069534, 4118630271, 4000239992, 116418474, 1914138554, 174292421, 2731055270, 289380356, 3203993006, 460393269, 320620315, 685471733, 587496836, 852142971, 1086792851, 1017036298, 365543100, 1126000580, 2618297676, 1288033470, 3409855158, 1501505948, 4234509866, 1607167915, 987167468, 1816402316, 1246189591];
+
+        function y() {
+            if (!(this instanceof y)) return new y;
+            _.call(this), this.h = [1779033703, 4089235720, 3144134277, 2227873595, 1013904242, 4271175723, 2773480762, 1595750129, 1359893119, 2917565137, 2600822924, 725511199, 528734635, 4215389547, 1541459225, 327033209], this.k = v, this.W = Array(160)
+        }
+        n.inherits(y, _), t.exports = y, y.blockSize = 1024, y.outSize = 512, y.hmacStrength = 192, y.padLength = 128, y.prototype._prepareBlock = function(e, t) {
+            for (var n = this.W, r = 0; r < 32; r++) n[r] = e[t + r];
+            for (; r < n.length; r += 2) {
+                var i = k(n[r - 4], n[r - 3]),
+                    a = A(n[r - 4], n[r - 3]),
+                    s = n[r - 14],
+                    c = n[r - 13],
+                    l = O(n[r - 30], n[r - 29]),
+                    u = te(n[r - 30], n[r - 29]),
+                    d = n[r - 32],
+                    f = n[r - 31];
+                n[r] = p(i, a, s, c, l, u, d, f), n[r + 1] = m(i, a, s, c, l, u, d, f)
+            }
+        }, y.prototype._update = function(e, t) {
+            this._prepareBlock(e, t);
+            var n = this.W,
+                r = this.h[0],
+                a = this.h[1],
+                s = this.h[2],
+                c = this.h[3],
+                l = this.h[4],
+                p = this.h[5],
+                m = this.h[6],
+                _ = this.h[7],
+                v = this.h[8],
+                y = this.h[9],
+                O = this.h[10],
+                te = this.h[11],
+                k = this.h[12],
+                A = this.h[13],
+                ne = this.h[14],
+                j = this.h[15];
+            i(this.k.length === n.length);
+            for (var M = 0; M < n.length; M += 2) {
+                var re = ne,
+                    N = j,
+                    P = ee(v, y),
+                    ie = D(v, y),
+                    I = b(v, y, O, te, k, A),
+                    L = x(v, y, O, te, k, A),
+                    ae = this.k[M],
+                    R = this.k[M + 1],
+                    z = n[M],
+                    oe = n[M + 1],
+                    B = h(re, N, P, ie, I, L, ae, R, z, oe),
+                    V = g(re, N, P, ie, I, L, ae, R, z, oe);
+                re = w(r, a), N = E(r, a), P = S(r, a, s, c, l, p), ie = C(r, a, s, c, l, p);
+                var se = d(re, N, P, ie),
+                    H = f(re, N, P, ie);
+                ne = k, j = A, k = O, A = te, O = v, te = y, v = d(m, _, B, V), y = f(_, _, B, V), m = l, _ = p, l = s, p = c, s = r, c = a, r = d(B, V, se, H), a = f(B, V, se, H)
+            }
+            u(this.h, 0, r, a), u(this.h, 2, s, c), u(this.h, 4, l, p), u(this.h, 6, m, _), u(this.h, 8, v, y), u(this.h, 10, O, te), u(this.h, 12, k, A), u(this.h, 14, ne, j)
+        }, y.prototype._digest = function(e) {
+            return e === `hex` ? n.toHex32(this.h, `big`) : n.split32(this.h, `big`)
+        };
+
+        function b(e, t, n, r, i) {
+            var a = e & n ^ ~e & i;
+            return a < 0 && (a += 4294967296), a
+        }
+
+        function x(e, t, n, r, i, a) {
+            var s = t & r ^ ~t & a;
+            return s < 0 && (s += 4294967296), s
+        }
+
+        function S(e, t, n, r, i) {
+            var a = e & n ^ e & i ^ n & i;
+            return a < 0 && (a += 4294967296), a
+        }
+
+        function C(e, t, n, r, i, a) {
+            var s = t & r ^ t & a ^ r & a;
+            return s < 0 && (s += 4294967296), s
+        }
+
+        function w(e, t) {
+            var n = a(e, t, 28),
+                r = a(t, e, 2),
+                i = a(t, e, 7),
+                s = n ^ r ^ i;
+            return s < 0 && (s += 4294967296), s
+        }
+
+        function E(e, t) {
+            var n = s(e, t, 28),
+                r = s(t, e, 2),
+                i = s(t, e, 7),
+                a = n ^ r ^ i;
+            return a < 0 && (a += 4294967296), a
+        }
+
+        function ee(e, t) {
+            var n = a(e, t, 14),
+                r = a(e, t, 18),
+                i = a(t, e, 9),
+                s = n ^ r ^ i;
+            return s < 0 && (s += 4294967296), s
+        }
+
+        function D(e, t) {
+            var n = s(e, t, 14),
+                r = s(e, t, 18),
+                i = s(t, e, 9),
+                a = n ^ r ^ i;
+            return a < 0 && (a += 4294967296), a
+        }
+
+        function O(e, t) {
+            var n = a(e, t, 1),
+                r = a(e, t, 8),
+                i = c(e, t, 7),
+                s = n ^ r ^ i;
+            return s < 0 && (s += 4294967296), s
+        }
+
+        function te(e, t) {
+            var n = s(e, t, 1),
+                r = s(e, t, 8),
+                i = l(e, t, 7),
+                a = n ^ r ^ i;
+            return a < 0 && (a += 4294967296), a
+        }
+
+        function k(e, t) {
+            var n = a(e, t, 19),
+                r = a(t, e, 29),
+                i = c(e, t, 6),
+                s = n ^ r ^ i;
+            return s < 0 && (s += 4294967296), s
+        }
+
+        function A(e, t) {
+            var n = s(e, t, 19),
+                r = s(t, e, 29),
+                i = l(e, t, 6),
+                a = n ^ r ^ i;
+            return a < 0 && (a += 4294967296), a
+        }
+    })),
+    require__384 = __commonJSMin(((e, t) => {
+        var n = require_utils(),
+            r = require__512();
+
+        function i() {
+            if (!(this instanceof i)) return new i;
+            r.call(this), this.h = [3418070365, 3238371032, 1654270250, 914150663, 2438529370, 812702999, 355462360, 4144912697, 1731405415, 4290775857, 2394180231, 1750603025, 3675008525, 1694076839, 1203062813, 3204075428]
+        }
+        n.inherits(i, r), t.exports = i, i.blockSize = 1024, i.outSize = 384, i.hmacStrength = 192, i.padLength = 128, i.prototype._digest = function(e) {
+            return e === `hex` ? n.toHex32(this.h.slice(0, 12), `big`) : n.split32(this.h.slice(0, 12), `big`)
+        }
+    })),
+    require_sha = __commonJSMin((e => {
+        e.sha1 = require__1(), e.sha224 = require__224(), e.sha256 = require__256(), e.sha384 = require__384(), e.sha512 = require__512()
+    })),
+    require_ripemd = __commonJSMin((e => {
+        var t = require_utils(),
+            n = require_common$1(),
+            r = t.rotl32,
+            i = t.sum32,
+            a = t.sum32_3,
+            s = t.sum32_4,
+            c = n.BlockHash;
+
+        function l() {
+            if (!(this instanceof l)) return new l;
+            c.call(this), this.h = [1732584193, 4023233417, 2562383102, 271733878, 3285377520], this.endian = `little`
+        }
+        t.inherits(l, c), e.ripemd160 = l, l.blockSize = 512, l.outSize = 160, l.hmacStrength = 192, l.padLength = 64, l.prototype._update = function(e, t) {
+            for (var n = this.h[0], c = this.h[1], l = this.h[2], _ = this.h[3], v = this.h[4], y = n, b = c, x = l, S = _, C = v, w = 0; w < 80; w++) {
+                var E = i(r(s(n, u(w, c, l, _), e[p[w] + t], d(w)), h[w]), v);
+                n = v, v = _, _ = r(l, 10), l = c, c = E, E = i(r(s(y, u(79 - w, b, x, S), e[m[w] + t], f(w)), g[w]), C), y = C, C = S, S = r(x, 10), x = b, b = E
+            }
+            E = a(this.h[1], l, S), this.h[1] = a(this.h[2], _, C), this.h[2] = a(this.h[3], v, y), this.h[3] = a(this.h[4], n, b), this.h[4] = a(this.h[0], c, x), this.h[0] = E
+        }, l.prototype._digest = function(e) {
+            return e === `hex` ? t.toHex32(this.h, `little`) : t.split32(this.h, `little`)
+        };
+
+        function u(e, t, n, r) {
+            return e <= 15 ? t ^ n ^ r : e <= 31 ? t & n | ~t & r : e <= 47 ? (t | ~n) ^ r : e <= 63 ? t & r | n & ~r : t ^ (n | ~r)
+        }
+
+        function d(e) {
+            return e <= 15 ? 0 : e <= 31 ? 1518500249 : e <= 47 ? 1859775393 : e <= 63 ? 2400959708 : 2840853838
+        }
+
+        function f(e) {
+            return e <= 15 ? 1352829926 : e <= 31 ? 1548603684 : e <= 47 ? 1836072691 : e <= 63 ? 2053994217 : 0
+        }
+        var p = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 7, 4, 13, 1, 10, 6, 15, 3, 12, 0, 9, 5, 2, 14, 11, 8, 3, 10, 14, 4, 9, 15, 8, 1, 2, 7, 0, 6, 13, 11, 5, 12, 1, 9, 11, 10, 0, 8, 12, 4, 13, 3, 7, 15, 14, 5, 6, 2, 4, 0, 5, 9, 7, 12, 2, 10, 14, 1, 3, 8, 11, 6, 15, 13],
+            m = [5, 14, 7, 0, 9, 2, 11, 4, 13, 6, 15, 8, 1, 10, 3, 12, 6, 11, 3, 7, 0, 13, 5, 10, 14, 15, 8, 12, 4, 9, 1, 2, 15, 5, 1, 3, 7, 14, 6, 9, 11, 8, 12, 2, 10, 0, 4, 13, 8, 6, 4, 1, 3, 11, 15, 0, 5, 12, 2, 13, 9, 7, 10, 14, 12, 15, 10, 4, 1, 5, 8, 7, 6, 2, 13, 14, 0, 3, 9, 11],
+            h = [11, 14, 15, 12, 5, 8, 7, 9, 11, 13, 14, 15, 6, 7, 9, 8, 7, 6, 8, 13, 11, 9, 7, 15, 7, 12, 15, 9, 11, 7, 13, 12, 11, 13, 6, 7, 14, 9, 13, 15, 14, 8, 13, 6, 5, 12, 7, 5, 11, 12, 14, 15, 14, 15, 9, 8, 9, 14, 5, 6, 8, 6, 5, 12, 9, 15, 5, 11, 6, 8, 13, 12, 5, 12, 13, 14, 11, 8, 5, 6],
+            g = [8, 9, 9, 11, 13, 15, 15, 5, 7, 7, 8, 11, 14, 14, 12, 6, 9, 13, 15, 7, 12, 8, 9, 11, 7, 7, 12, 7, 6, 15, 13, 11, 9, 7, 15, 11, 8, 6, 6, 14, 12, 13, 5, 14, 13, 13, 7, 5, 15, 5, 8, 11, 14, 14, 6, 14, 6, 9, 12, 9, 12, 5, 15, 8, 8, 5, 12, 9, 12, 5, 14, 6, 8, 13, 6, 5, 15, 13, 11, 11]
+    })),
+    require_hmac = __commonJSMin(((e, t) => {
+        var n = require_utils(),
+            r = require_minimalistic_assert();
+
+        function i(e, t, r) {
+            if (!(this instanceof i)) return new i(e, t, r);
+            this.Hash = e, this.blockSize = e.blockSize / 8, this.outSize = e.outSize / 8, this.inner = null, this.outer = null, this._init(n.toArray(t, r))
+        }
+        t.exports = i, i.prototype._init = function(e) {
+            e.length > this.blockSize && (e = new this.Hash().update(e).digest()), r(e.length <= this.blockSize);
+            for (var t = e.length; t < this.blockSize; t++) e.push(0);
+            for (t = 0; t < e.length; t++) e[t] ^= 54;
+            for (this.inner = new this.Hash().update(e), t = 0; t < e.length; t++) e[t] ^= 106;
+            this.outer = new this.Hash().update(e)
+        }, i.prototype.update = function(e, t) {
+            return this.inner.update(e, t), this
+        }, i.prototype.digest = function(e) {
+            return this.outer.update(this.inner.digest()), this.outer.digest(e)
+        }
+    })),
+    require_hash = __commonJSMin((e => {
+        var t = e;
+        t.utils = require_utils(), t.common = require_common$1(), t.sha = require_sha(), t.ripemd = require_ripemd(), t.hmac = require_hmac(), t.sha1 = t.sha.sha1, t.sha256 = t.sha.sha256, t.sha224 = t.sha.sha224, t.sha384 = t.sha.sha384, t.sha512 = t.sha.sha512, t.ripemd160 = t.ripemd.ripemd160
+    })),
+    require_secp256k1 = __commonJSMin(((e, t) => {
+        t.exports = {
+            doubles: {
+                step: 4,
+                points: [
+                    [`e60fce93b59e9ec53011aabc21c23e97b2a31369b87a5ae9c44ee89e2a6dec0a`, `f7e3507399e595929db99f34f57937101296891e44d23f0be1f32cce69616821`],
+                    [`8282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508`, `11f8a8098557dfe45e8256e830b60ace62d613ac2f7b17bed31b6eaff6e26caf`],
+                    [`175e159f728b865a72f99cc6c6fc846de0b93833fd2222ed73fce5b551e5b739`, `d3506e0d9e3c79eba4ef97a51ff71f5eacb5955add24345c6efa6ffee9fed695`],
+                    [`363d90d447b00c9c99ceac05b6262ee053441c7e55552ffe526bad8f83ff4640`, `4e273adfc732221953b445397f3363145b9a89008199ecb62003c7f3bee9de9`],
+                    [`8b4b5f165df3c2be8c6244b5b745638843e4a781a15bcd1b69f79a55dffdf80c`, `4aad0a6f68d308b4b3fbd7813ab0da04f9e336546162ee56b3eff0c65fd4fd36`],
+                    [`723cbaa6e5db996d6bf771c00bd548c7b700dbffa6c0e77bcb6115925232fcda`, `96e867b5595cc498a921137488824d6e2660a0653779494801dc069d9eb39f5f`],
+                    [`eebfa4d493bebf98ba5feec812c2d3b50947961237a919839a533eca0e7dd7fa`, `5d9a8ca3970ef0f269ee7edaf178089d9ae4cdc3a711f712ddfd4fdae1de8999`],
+                    [`100f44da696e71672791d0a09b7bde459f1215a29b3c03bfefd7835b39a48db0`, `cdd9e13192a00b772ec8f3300c090666b7ff4a18ff5195ac0fbd5cd62bc65a09`],
+                    [`e1031be262c7ed1b1dc9227a4a04c017a77f8d4464f3b3852c8acde6e534fd2d`, `9d7061928940405e6bb6a4176597535af292dd419e1ced79a44f18f29456a00d`],
+                    [`feea6cae46d55b530ac2839f143bd7ec5cf8b266a41d6af52d5e688d9094696d`, `e57c6b6c97dce1bab06e4e12bf3ecd5c981c8957cc41442d3155debf18090088`],
+                    [`da67a91d91049cdcb367be4be6ffca3cfeed657d808583de33fa978bc1ec6cb1`, `9bacaa35481642bc41f463f7ec9780e5dec7adc508f740a17e9ea8e27a68be1d`],
+                    [`53904faa0b334cdda6e000935ef22151ec08d0f7bb11069f57545ccc1a37b7c0`, `5bc087d0bc80106d88c9eccac20d3c1c13999981e14434699dcb096b022771c8`],
+                    [`8e7bcd0bd35983a7719cca7764ca906779b53a043a9b8bcaeff959f43ad86047`, `10b7770b2a3da4b3940310420ca9514579e88e2e47fd68b3ea10047e8460372a`],
+                    [`385eed34c1cdff21e6d0818689b81bde71a7f4f18397e6690a841e1599c43862`, `283bebc3e8ea23f56701de19e9ebf4576b304eec2086dc8cc0458fe5542e5453`],
+                    [`6f9d9b803ecf191637c73a4413dfa180fddf84a5947fbc9c606ed86c3fac3a7`, `7c80c68e603059ba69b8e2a30e45c4d47ea4dd2f5c281002d86890603a842160`],
+                    [`3322d401243c4e2582a2147c104d6ecbf774d163db0f5e5313b7e0e742d0e6bd`, `56e70797e9664ef5bfb019bc4ddaf9b72805f63ea2873af624f3a2e96c28b2a0`],
+                    [`85672c7d2de0b7da2bd1770d89665868741b3f9af7643397721d74d28134ab83`, `7c481b9b5b43b2eb6374049bfa62c2e5e77f17fcc5298f44c8e3094f790313a6`],
+                    [`948bf809b1988a46b06c9f1919413b10f9226c60f668832ffd959af60c82a0a`, `53a562856dcb6646dc6b74c5d1c3418c6d4dff08c97cd2bed4cb7f88d8c8e589`],
+                    [`6260ce7f461801c34f067ce0f02873a8f1b0e44dfc69752accecd819f38fd8e8`, `bc2da82b6fa5b571a7f09049776a1ef7ecd292238051c198c1a84e95b2b4ae17`],
+                    [`e5037de0afc1d8d43d8348414bbf4103043ec8f575bfdc432953cc8d2037fa2d`, `4571534baa94d3b5f9f98d09fb990bddbd5f5b03ec481f10e0e5dc841d755bda`],
+                    [`e06372b0f4a207adf5ea905e8f1771b4e7e8dbd1c6a6c5b725866a0ae4fce725`, `7a908974bce18cfe12a27bb2ad5a488cd7484a7787104870b27034f94eee31dd`],
+                    [`213c7a715cd5d45358d0bbf9dc0ce02204b10bdde2a3f58540ad6908d0559754`, `4b6dad0b5ae462507013ad06245ba190bb4850f5f36a7eeddff2c27534b458f2`],
+                    [`4e7c272a7af4b34e8dbb9352a5419a87e2838c70adc62cddf0cc3a3b08fbd53c`, `17749c766c9d0b18e16fd09f6def681b530b9614bff7dd33e0b3941817dcaae6`],
+                    [`fea74e3dbe778b1b10f238ad61686aa5c76e3db2be43057632427e2840fb27b6`, `6e0568db9b0b13297cf674deccb6af93126b596b973f7b77701d3db7f23cb96f`],
+                    [`76e64113f677cf0e10a2570d599968d31544e179b760432952c02a4417bdde39`, `c90ddf8dee4e95cf577066d70681f0d35e2a33d2b56d2032b4b1752d1901ac01`],
+                    [`c738c56b03b2abe1e8281baa743f8f9a8f7cc643df26cbee3ab150242bcbb891`, `893fb578951ad2537f718f2eacbfbbbb82314eef7880cfe917e735d9699a84c3`],
+                    [`d895626548b65b81e264c7637c972877d1d72e5f3a925014372e9f6588f6c14b`, `febfaa38f2bc7eae728ec60818c340eb03428d632bb067e179363ed75d7d991f`],
+                    [`b8da94032a957518eb0f6433571e8761ceffc73693e84edd49150a564f676e03`, `2804dfa44805a1e4d7c99cc9762808b092cc584d95ff3b511488e4e74efdf6e7`],
+                    [`e80fea14441fb33a7d8adab9475d7fab2019effb5156a792f1a11778e3c0df5d`, `eed1de7f638e00771e89768ca3ca94472d155e80af322ea9fcb4291b6ac9ec78`],
+                    [`a301697bdfcd704313ba48e51d567543f2a182031efd6915ddc07bbcc4e16070`, `7370f91cfb67e4f5081809fa25d40f9b1735dbf7c0a11a130c0d1a041e177ea1`],
+                    [`90ad85b389d6b936463f9d0512678de208cc330b11307fffab7ac63e3fb04ed4`, `e507a3620a38261affdcbd9427222b839aefabe1582894d991d4d48cb6ef150`],
+                    [`8f68b9d2f63b5f339239c1ad981f162ee88c5678723ea3351b7b444c9ec4c0da`, `662a9f2dba063986de1d90c2b6be215dbbea2cfe95510bfdf23cbf79501fff82`],
+                    [`e4f3fb0176af85d65ff99ff9198c36091f48e86503681e3e6686fd5053231e11`, `1e63633ad0ef4f1c1661a6d0ea02b7286cc7e74ec951d1c9822c38576feb73bc`],
+                    [`8c00fa9b18ebf331eb961537a45a4266c7034f2f0d4e1d0716fb6eae20eae29e`, `efa47267fea521a1a9dc343a3736c974c2fadafa81e36c54e7d2a4c66702414b`],
+                    [`e7a26ce69dd4829f3e10cec0a9e98ed3143d084f308b92c0997fddfc60cb3e41`, `2a758e300fa7984b471b006a1aafbb18d0a6b2c0420e83e20e8a9421cf2cfd51`],
+                    [`b6459e0ee3662ec8d23540c223bcbdc571cbcb967d79424f3cf29eb3de6b80ef`, `67c876d06f3e06de1dadf16e5661db3c4b3ae6d48e35b2ff30bf0b61a71ba45`],
+                    [`d68a80c8280bb840793234aa118f06231d6f1fc67e73c5a5deda0f5b496943e8`, `db8ba9fff4b586d00c4b1f9177b0e28b5b0e7b8f7845295a294c84266b133120`],
+                    [`324aed7df65c804252dc0270907a30b09612aeb973449cea4095980fc28d3d5d`, `648a365774b61f2ff130c0c35aec1f4f19213b0c7e332843967224af96ab7c84`],
+                    [`4df9c14919cde61f6d51dfdbe5fee5dceec4143ba8d1ca888e8bd373fd054c96`, `35ec51092d8728050974c23a1d85d4b5d506cdc288490192ebac06cad10d5d`],
+                    [`9c3919a84a474870faed8a9c1cc66021523489054d7f0308cbfc99c8ac1f98cd`, `ddb84f0f4a4ddd57584f044bf260e641905326f76c64c8e6be7e5e03d4fc599d`],
+                    [`6057170b1dd12fdf8de05f281d8e06bb91e1493a8b91d4cc5a21382120a959e5`, `9a1af0b26a6a4807add9a2daf71df262465152bc3ee24c65e899be932385a2a8`],
+                    [`a576df8e23a08411421439a4518da31880cef0fba7d4df12b1a6973eecb94266`, `40a6bf20e76640b2c92b97afe58cd82c432e10a7f514d9f3ee8be11ae1b28ec8`],
+                    [`7778a78c28dec3e30a05fe9629de8c38bb30d1f5cf9a3a208f763889be58ad71`, `34626d9ab5a5b22ff7098e12f2ff580087b38411ff24ac563b513fc1fd9f43ac`],
+                    [`928955ee637a84463729fd30e7afd2ed5f96274e5ad7e5cb09eda9c06d903ac`, `c25621003d3f42a827b78a13093a95eeac3d26efa8a8d83fc5180e935bcd091f`],
+                    [`85d0fef3ec6db109399064f3a0e3b2855645b4a907ad354527aae75163d82751`, `1f03648413a38c0be29d496e582cf5663e8751e96877331582c237a24eb1f962`],
+                    [`ff2b0dce97eece97c1c9b6041798b85dfdfb6d8882da20308f5404824526087e`, `493d13fef524ba188af4c4dc54d07936c7b7ed6fb90e2ceb2c951e01f0c29907`],
+                    [`827fbbe4b1e880ea9ed2b2e6301b212b57f1ee148cd6dd28780e5e2cf856e241`, `c60f9c923c727b0b71bef2c67d1d12687ff7a63186903166d605b68baec293ec`],
+                    [`eaa649f21f51bdbae7be4ae34ce6e5217a58fdce7f47f9aa7f3b58fa2120e2b3`, `be3279ed5bbbb03ac69a80f89879aa5a01a6b965f13f7e59d47a5305ba5ad93d`],
+                    [`e4a42d43c5cf169d9391df6decf42ee541b6d8f0c9a137401e23632dda34d24f`, `4d9f92e716d1c73526fc99ccfb8ad34ce886eedfa8d8e4f13a7f7131deba9414`],
+                    [`1ec80fef360cbdd954160fadab352b6b92b53576a88fea4947173b9d4300bf19`, `aeefe93756b5340d2f3a4958a7abbf5e0146e77f6295a07b671cdc1cc107cefd`],
+                    [`146a778c04670c2f91b00af4680dfa8bce3490717d58ba889ddb5928366642be`, `b318e0ec3354028add669827f9d4b2870aaa971d2f7e5ed1d0b297483d83efd0`],
+                    [`fa50c0f61d22e5f07e3acebb1aa07b128d0012209a28b9776d76a8793180eef9`, `6b84c6922397eba9b72cd2872281a68a5e683293a57a213b38cd8d7d3f4f2811`],
+                    [`da1d61d0ca721a11b1a5bf6b7d88e8421a288ab5d5bba5220e53d32b5f067ec2`, `8157f55a7c99306c79c0766161c91e2966a73899d279b48a655fba0f1ad836f1`],
+                    [`a8e282ff0c9706907215ff98e8fd416615311de0446f1e062a73b0610d064e13`, `7f97355b8db81c09abfb7f3c5b2515888b679a3e50dd6bd6cef7c73111f4cc0c`],
+                    [`174a53b9c9a285872d39e56e6913cab15d59b1fa512508c022f382de8319497c`, `ccc9dc37abfc9c1657b4155f2c47f9e6646b3a1d8cb9854383da13ac079afa73`],
+                    [`959396981943785c3d3e57edf5018cdbe039e730e4918b3d884fdff09475b7ba`, `2e7e552888c331dd8ba0386a4b9cd6849c653f64c8709385e9b8abf87524f2fd`],
+                    [`d2a63a50ae401e56d645a1153b109a8fcca0a43d561fba2dbb51340c9d82b151`, `e82d86fb6443fcb7565aee58b2948220a70f750af484ca52d4142174dcf89405`],
+                    [`64587e2335471eb890ee7896d7cfdc866bacbdbd3839317b3436f9b45617e073`, `d99fcdd5bf6902e2ae96dd6447c299a185b90a39133aeab358299e5e9faf6589`],
+                    [`8481bde0e4e4d885b3a546d3e549de042f0aa6cea250e7fd358d6c86dd45e458`, `38ee7b8cba5404dd84a25bf39cecb2ca900a79c42b262e556d64b1b59779057e`],
+                    [`13464a57a78102aa62b6979ae817f4637ffcfed3c4b1ce30bcd6303f6caf666b`, `69be159004614580ef7e433453ccb0ca48f300a81d0942e13f495a907f6ecc27`],
+                    [`bc4a9df5b713fe2e9aef430bcc1dc97a0cd9ccede2f28588cada3a0d2d83f366`, `d3a81ca6e785c06383937adf4b798caa6e8a9fbfa547b16d758d666581f33c1`],
+                    [`8c28a97bf8298bc0d23d8c749452a32e694b65e30a9472a3954ab30fe5324caa`, `40a30463a3305193378fedf31f7cc0eb7ae784f0451cb9459e71dc73cbef9482`],
+                    [`8ea9666139527a8c1dd94ce4f071fd23c8b350c5a4bb33748c4ba111faccae0`, `620efabbc8ee2782e24e7c0cfb95c5d735b783be9cf0f8e955af34a30e62b945`],
+                    [`dd3625faef5ba06074669716bbd3788d89bdde815959968092f76cc4eb9a9787`, `7a188fa3520e30d461da2501045731ca941461982883395937f68d00c644a573`],
+                    [`f710d79d9eb962297e4f6232b40e8f7feb2bc63814614d692c12de752408221e`, `ea98e67232d3b3295d3b535532115ccac8612c721851617526ae47a9c77bfc82`]
+                ]
+            },
+            naf: {
+                wnd: 7,
+                points: [
+                    [`f9308a019258c31049344f85f89d5229b531c845836f99b08601f113bce036f9`, `388f7b0f632de8140fe337e62a37f3566500a99934c2231b6cb9fd7584b8e672`],
+                    [`2f8bde4d1a07209355b4a7250a5c5128e88b84bddc619ab7cba8d569b240efe4`, `d8ac222636e5e3d6d4dba9dda6c9c426f788271bab0d6840dca87d3aa6ac62d6`],
+                    [`5cbdf0646e5db4eaa398f365f2ea7a0e3d419b7e0330e39ce92bddedcac4f9bc`, `6aebca40ba255960a3178d6d861a54dba813d0b813fde7b5a5082628087264da`],
+                    [`acd484e2f0c7f65309ad178a9f559abde09796974c57e714c35f110dfc27ccbe`, `cc338921b0a7d9fd64380971763b61e9add888a4375f8e0f05cc262ac64f9c37`],
+                    [`774ae7f858a9411e5ef4246b70c65aac5649980be5c17891bbec17895da008cb`, `d984a032eb6b5e190243dd56d7b7b365372db1e2dff9d6a8301d74c9c953c61b`],
+                    [`f28773c2d975288bc7d1d205c3748651b075fbc6610e58cddeeddf8f19405aa8`, `ab0902e8d880a89758212eb65cdaf473a1a06da521fa91f29b5cb52db03ed81`],
+                    [`d7924d4f7d43ea965a465ae3095ff41131e5946f3c85f79e44adbcf8e27e080e`, `581e2872a86c72a683842ec228cc6defea40af2bd896d3a5c504dc9ff6a26b58`],
+                    [`defdea4cdb677750a420fee807eacf21eb9898ae79b9768766e4faa04a2d4a34`, `4211ab0694635168e997b0ead2a93daeced1f4a04a95c0f6cfb199f69e56eb77`],
+                    [`2b4ea0a797a443d293ef5cff444f4979f06acfebd7e86d277475656138385b6c`, `85e89bc037945d93b343083b5a1c86131a01f60c50269763b570c854e5c09b7a`],
+                    [`352bbf4a4cdd12564f93fa332ce333301d9ad40271f8107181340aef25be59d5`, `321eb4075348f534d59c18259dda3e1f4a1b3b2e71b1039c67bd3d8bcf81998c`],
+                    [`2fa2104d6b38d11b0230010559879124e42ab8dfeff5ff29dc9cdadd4ecacc3f`, `2de1068295dd865b64569335bd5dd80181d70ecfc882648423ba76b532b7d67`],
+                    [`9248279b09b4d68dab21a9b066edda83263c3d84e09572e269ca0cd7f5453714`, `73016f7bf234aade5d1aa71bdea2b1ff3fc0de2a887912ffe54a32ce97cb3402`],
+                    [`daed4f2be3a8bf278e70132fb0beb7522f570e144bf615c07e996d443dee8729`, `a69dce4a7d6c98e8d4a1aca87ef8d7003f83c230f3afa726ab40e52290be1c55`],
+                    [`c44d12c7065d812e8acf28d7cbb19f9011ecd9e9fdf281b0e6a3b5e87d22e7db`, `2119a460ce326cdc76c45926c982fdac0e106e861edf61c5a039063f0e0e6482`],
+                    [`6a245bf6dc698504c89a20cfded60853152b695336c28063b61c65cbd269e6b4`, `e022cf42c2bd4a708b3f5126f16a24ad8b33ba48d0423b6efd5e6348100d8a82`],
+                    [`1697ffa6fd9de627c077e3d2fe541084ce13300b0bec1146f95ae57f0d0bd6a5`, `b9c398f186806f5d27561506e4557433a2cf15009e498ae7adee9d63d01b2396`],
+                    [`605bdb019981718b986d0f07e834cb0d9deb8360ffb7f61df982345ef27a7479`, `2972d2de4f8d20681a78d93ec96fe23c26bfae84fb14db43b01e1e9056b8c49`],
+                    [`62d14dab4150bf497402fdc45a215e10dcb01c354959b10cfe31c7e9d87ff33d`, `80fc06bd8cc5b01098088a1950eed0db01aa132967ab472235f5642483b25eaf`],
+                    [`80c60ad0040f27dade5b4b06c408e56b2c50e9f56b9b8b425e555c2f86308b6f`, `1c38303f1cc5c30f26e66bad7fe72f70a65eed4cbe7024eb1aa01f56430bd57a`],
+                    [`7a9375ad6167ad54aa74c6348cc54d344cc5dc9487d847049d5eabb0fa03c8fb`, `d0e3fa9eca8726909559e0d79269046bdc59ea10c70ce2b02d499ec224dc7f7`],
+                    [`d528ecd9b696b54c907a9ed045447a79bb408ec39b68df504bb51f459bc3ffc9`, `eecf41253136e5f99966f21881fd656ebc4345405c520dbc063465b521409933`],
+                    [`49370a4b5f43412ea25f514e8ecdad05266115e4a7ecb1387231808f8b45963`, `758f3f41afd6ed428b3081b0512fd62a54c3f3afbb5b6764b653052a12949c9a`],
+                    [`77f230936ee88cbbd73df930d64702ef881d811e0e1498e2f1c13eb1fc345d74`, `958ef42a7886b6400a08266e9ba1b37896c95330d97077cbbe8eb3c7671c60d6`],
+                    [`f2dac991cc4ce4b9ea44887e5c7c0bce58c80074ab9d4dbaeb28531b7739f530`, `e0dedc9b3b2f8dad4da1f32dec2531df9eb5fbeb0598e4fd1a117dba703a3c37`],
+                    [`463b3d9f662621fb1b4be8fbbe2520125a216cdfc9dae3debcba4850c690d45b`, `5ed430d78c296c3543114306dd8622d7c622e27c970a1de31cb377b01af7307e`],
+                    [`f16f804244e46e2a09232d4aff3b59976b98fac14328a2d1a32496b49998f247`, `cedabd9b82203f7e13d206fcdf4e33d92a6c53c26e5cce26d6579962c4e31df6`],
+                    [`caf754272dc84563b0352b7a14311af55d245315ace27c65369e15f7151d41d1`, `cb474660ef35f5f2a41b643fa5e460575f4fa9b7962232a5c32f908318a04476`],
+                    [`2600ca4b282cb986f85d0f1709979d8b44a09c07cb86d7c124497bc86f082120`, `4119b88753c15bd6a693b03fcddbb45d5ac6be74ab5f0ef44b0be9475a7e4b40`],
+                    [`7635ca72d7e8432c338ec53cd12220bc01c48685e24f7dc8c602a7746998e435`, `91b649609489d613d1d5e590f78e6d74ecfc061d57048bad9e76f302c5b9c61`],
+                    [`754e3239f325570cdbbf4a87deee8a66b7f2b33479d468fbc1a50743bf56cc18`, `673fb86e5bda30fb3cd0ed304ea49a023ee33d0197a695d0c5d98093c536683`],
+                    [`e3e6bd1071a1e96aff57859c82d570f0330800661d1c952f9fe2694691d9b9e8`, `59c9e0bba394e76f40c0aa58379a3cb6a5a2283993e90c4167002af4920e37f5`],
+                    [`186b483d056a033826ae73d88f732985c4ccb1f32ba35f4b4cc47fdcf04aa6eb`, `3b952d32c67cf77e2e17446e204180ab21fb8090895138b4a4a797f86e80888b`],
+                    [`df9d70a6b9876ce544c98561f4be4f725442e6d2b737d9c91a8321724ce0963f`, `55eb2dafd84d6ccd5f862b785dc39d4ab157222720ef9da217b8c45cf2ba2417`],
+                    [`5edd5cc23c51e87a497ca815d5dce0f8ab52554f849ed8995de64c5f34ce7143`, `efae9c8dbc14130661e8cec030c89ad0c13c66c0d17a2905cdc706ab7399a868`],
+                    [`290798c2b6476830da12fe02287e9e777aa3fba1c355b17a722d362f84614fba`, `e38da76dcd440621988d00bcf79af25d5b29c094db2a23146d003afd41943e7a`],
+                    [`af3c423a95d9f5b3054754efa150ac39cd29552fe360257362dfdecef4053b45`, `f98a3fd831eb2b749a93b0e6f35cfb40c8cd5aa667a15581bc2feded498fd9c6`],
+                    [`766dbb24d134e745cccaa28c99bf274906bb66b26dcf98df8d2fed50d884249a`, `744b1152eacbe5e38dcc887980da38b897584a65fa06cedd2c924f97cbac5996`],
+                    [`59dbf46f8c94759ba21277c33784f41645f7b44f6c596a58ce92e666191abe3e`, `c534ad44175fbc300f4ea6ce648309a042ce739a7919798cd85e216c4a307f6e`],
+                    [`f13ada95103c4537305e691e74e9a4a8dd647e711a95e73cb62dc6018cfd87b8`, `e13817b44ee14de663bf4bc808341f326949e21a6a75c2570778419bdaf5733d`],
+                    [`7754b4fa0e8aced06d4167a2c59cca4cda1869c06ebadfb6488550015a88522c`, `30e93e864e669d82224b967c3020b8fa8d1e4e350b6cbcc537a48b57841163a2`],
+                    [`948dcadf5990e048aa3874d46abef9d701858f95de8041d2a6828c99e2262519`, `e491a42537f6e597d5d28a3224b1bc25df9154efbd2ef1d2cbba2cae5347d57e`],
+                    [`7962414450c76c1689c7b48f8202ec37fb224cf5ac0bfa1570328a8a3d7c77ab`, `100b610ec4ffb4760d5c1fc133ef6f6b12507a051f04ac5760afa5b29db83437`],
+                    [`3514087834964b54b15b160644d915485a16977225b8847bb0dd085137ec47ca`, `ef0afbb2056205448e1652c48e8127fc6039e77c15c2378b7e7d15a0de293311`],
+                    [`d3cc30ad6b483e4bc79ce2c9dd8bc54993e947eb8df787b442943d3f7b527eaf`, `8b378a22d827278d89c5e9be8f9508ae3c2ad46290358630afb34db04eede0a4`],
+                    [`1624d84780732860ce1c78fcbfefe08b2b29823db913f6493975ba0ff4847610`, `68651cf9b6da903e0914448c6cd9d4ca896878f5282be4c8cc06e2a404078575`],
+                    [`733ce80da955a8a26902c95633e62a985192474b5af207da6df7b4fd5fc61cd4`, `f5435a2bd2badf7d485a4d8b8db9fcce3e1ef8e0201e4578c54673bc1dc5ea1d`],
+                    [`15d9441254945064cf1a1c33bbd3b49f8966c5092171e699ef258dfab81c045c`, `d56eb30b69463e7234f5137b73b84177434800bacebfc685fc37bbe9efe4070d`],
+                    [`a1d0fcf2ec9de675b612136e5ce70d271c21417c9d2b8aaaac138599d0717940`, `edd77f50bcb5a3cab2e90737309667f2641462a54070f3d519212d39c197a629`],
+                    [`e22fbe15c0af8ccc5780c0735f84dbe9a790badee8245c06c7ca37331cb36980`, `a855babad5cd60c88b430a69f53a1a7a38289154964799be43d06d77d31da06`],
+                    [`311091dd9860e8e20ee13473c1155f5f69635e394704eaa74009452246cfa9b3`, `66db656f87d1f04fffd1f04788c06830871ec5a64feee685bd80f0b1286d8374`],
+                    [`34c1fd04d301be89b31c0442d3e6ac24883928b45a9340781867d4232ec2dbdf`, `9414685e97b1b5954bd46f730174136d57f1ceeb487443dc5321857ba73abee`],
+                    [`f219ea5d6b54701c1c14de5b557eb42a8d13f3abbcd08affcc2a5e6b049b8d63`, `4cb95957e83d40b0f73af4544cccf6b1f4b08d3c07b27fb8d8c2962a400766d1`],
+                    [`d7b8740f74a8fbaab1f683db8f45de26543a5490bca627087236912469a0b448`, `fa77968128d9c92ee1010f337ad4717eff15db5ed3c049b3411e0315eaa4593b`],
+                    [`32d31c222f8f6f0ef86f7c98d3a3335ead5bcd32abdd94289fe4d3091aa824bf`, `5f3032f5892156e39ccd3d7915b9e1da2e6dac9e6f26e961118d14b8462e1661`],
+                    [`7461f371914ab32671045a155d9831ea8793d77cd59592c4340f86cbc18347b5`, `8ec0ba238b96bec0cbdddcae0aa442542eee1ff50c986ea6b39847b3cc092ff6`],
+                    [`ee079adb1df1860074356a25aa38206a6d716b2c3e67453d287698bad7b2b2d6`, `8dc2412aafe3be5c4c5f37e0ecc5f9f6a446989af04c4e25ebaac479ec1c8c1e`],
+                    [`16ec93e447ec83f0467b18302ee620f7e65de331874c9dc72bfd8616ba9da6b5`, `5e4631150e62fb40d0e8c2a7ca5804a39d58186a50e497139626778e25b0674d`],
+                    [`eaa5f980c245f6f038978290afa70b6bd8855897f98b6aa485b96065d537bd99`, `f65f5d3e292c2e0819a528391c994624d784869d7e6ea67fb18041024edc07dc`],
+                    [`78c9407544ac132692ee1910a02439958ae04877151342ea96c4b6b35a49f51`, `f3e0319169eb9b85d5404795539a5e68fa1fbd583c064d2462b675f194a3ddb4`],
+                    [`494f4be219a1a77016dcd838431aea0001cdc8ae7a6fc688726578d9702857a5`, `42242a969283a5f339ba7f075e36ba2af925ce30d767ed6e55f4b031880d562c`],
+                    [`a598a8030da6d86c6bc7f2f5144ea549d28211ea58faa70ebf4c1e665c1fe9b5`, `204b5d6f84822c307e4b4a7140737aec23fc63b65b35f86a10026dbd2d864e6b`],
+                    [`c41916365abb2b5d09192f5f2dbeafec208f020f12570a184dbadc3e58595997`, `4f14351d0087efa49d245b328984989d5caf9450f34bfc0ed16e96b58fa9913`],
+                    [`841d6063a586fa475a724604da03bc5b92a2e0d2e0a36acfe4c73a5514742881`, `73867f59c0659e81904f9a1c7543698e62562d6744c169ce7a36de01a8d6154`],
+                    [`5e95bb399a6971d376026947f89bde2f282b33810928be4ded112ac4d70e20d5`, `39f23f366809085beebfc71181313775a99c9aed7d8ba38b161384c746012865`],
+                    [`36e4641a53948fd476c39f8a99fd974e5ec07564b5315d8bf99471bca0ef2f66`, `d2424b1b1abe4eb8164227b085c9aa9456ea13493fd563e06fd51cf5694c78fc`],
+                    [`336581ea7bfbbb290c191a2f507a41cf5643842170e914faeab27c2c579f726`, `ead12168595fe1be99252129b6e56b3391f7ab1410cd1e0ef3dcdcabd2fda224`],
+                    [`8ab89816dadfd6b6a1f2634fcf00ec8403781025ed6890c4849742706bd43ede`, `6fdcef09f2f6d0a044e654aef624136f503d459c3e89845858a47a9129cdd24e`],
+                    [`1e33f1a746c9c5778133344d9299fcaa20b0938e8acff2544bb40284b8c5fb94`, `60660257dd11b3aa9c8ed618d24edff2306d320f1d03010e33a7d2057f3b3b6`],
+                    [`85b7c1dcb3cec1b7ee7f30ded79dd20a0ed1f4cc18cbcfcfa410361fd8f08f31`, `3d98a9cdd026dd43f39048f25a8847f4fcafad1895d7a633c6fed3c35e999511`],
+                    [`29df9fbd8d9e46509275f4b125d6d45d7fbe9a3b878a7af872a2800661ac5f51`, `b4c4fe99c775a606e2d8862179139ffda61dc861c019e55cd2876eb2a27d84b`],
+                    [`a0b1cae06b0a847a3fea6e671aaf8adfdfe58ca2f768105c8082b2e449fce252`, `ae434102edde0958ec4b19d917a6a28e6b72da1834aff0e650f049503a296cf2`],
+                    [`4e8ceafb9b3e9a136dc7ff67e840295b499dfb3b2133e4ba113f2e4c0e121e5`, `cf2174118c8b6d7a4b48f6d534ce5c79422c086a63460502b827ce62a326683c`],
+                    [`d24a44e047e19b6f5afb81c7ca2f69080a5076689a010919f42725c2b789a33b`, `6fb8d5591b466f8fc63db50f1c0f1c69013f996887b8244d2cdec417afea8fa3`],
+                    [`ea01606a7a6c9cdd249fdfcfacb99584001edd28abbab77b5104e98e8e3b35d4`, `322af4908c7312b0cfbfe369f7a7b3cdb7d4494bc2823700cfd652188a3ea98d`],
+                    [`af8addbf2b661c8a6c6328655eb96651252007d8c5ea31be4ad196de8ce2131f`, `6749e67c029b85f52a034eafd096836b2520818680e26ac8f3dfbcdb71749700`],
+                    [`e3ae1974566ca06cc516d47e0fb165a674a3dabcfca15e722f0e3450f45889`, `2aeabe7e4531510116217f07bf4d07300de97e4874f81f533420a72eeb0bd6a4`],
+                    [`591ee355313d99721cf6993ffed1e3e301993ff3ed258802075ea8ced397e246`, `b0ea558a113c30bea60fc4775460c7901ff0b053d25ca2bdeee98f1a4be5d196`],
+                    [`11396d55fda54c49f19aa97318d8da61fa8584e47b084945077cf03255b52984`, `998c74a8cd45ac01289d5833a7beb4744ff536b01b257be4c5767bea93ea57a4`],
+                    [`3c5d2a1ba39c5a1790000738c9e0c40b8dcdfd5468754b6405540157e017aa7a`, `b2284279995a34e2f9d4de7396fc18b80f9b8b9fdd270f6661f79ca4c81bd257`],
+                    [`cc8704b8a60a0defa3a99a7299f2e9c3fbc395afb04ac078425ef8a1793cc030`, `bdd46039feed17881d1e0862db347f8cf395b74fc4bcdc4e940b74e3ac1f1b13`],
+                    [`c533e4f7ea8555aacd9777ac5cad29b97dd4defccc53ee7ea204119b2889b197`, `6f0a256bc5efdf429a2fb6242f1a43a2d9b925bb4a4b3a26bb8e0f45eb596096`],
+                    [`c14f8f2ccb27d6f109f6d08d03cc96a69ba8c34eec07bbcf566d48e33da6593`, `c359d6923bb398f7fd4473e16fe1c28475b740dd098075e6c0e8649113dc3a38`],
+                    [`a6cbc3046bc6a450bac24789fa17115a4c9739ed75f8f21ce441f72e0b90e6ef`, `21ae7f4680e889bb130619e2c0f95a360ceb573c70603139862afd617fa9b9f`],
+                    [`347d6d9a02c48927ebfb86c1359b1caf130a3c0267d11ce6344b39f99d43cc38`, `60ea7f61a353524d1c987f6ecec92f086d565ab687870cb12689ff1e31c74448`],
+                    [`da6545d2181db8d983f7dcb375ef5866d47c67b1bf31c8cf855ef7437b72656a`, `49b96715ab6878a79e78f07ce5680c5d6673051b4935bd897fea824b77dc208a`],
+                    [`c40747cc9d012cb1a13b8148309c6de7ec25d6945d657146b9d5994b8feb1111`, `5ca560753be2a12fc6de6caf2cb489565db936156b9514e1bb5e83037e0fa2d4`],
+                    [`4e42c8ec82c99798ccf3a610be870e78338c7f713348bd34c8203ef4037f3502`, `7571d74ee5e0fb92a7a8b33a07783341a5492144cc54bcc40a94473693606437`],
+                    [`3775ab7089bc6af823aba2e1af70b236d251cadb0c86743287522a1b3b0dedea`, `be52d107bcfa09d8bcb9736a828cfa7fac8db17bf7a76a2c42ad961409018cf7`],
+                    [`cee31cbf7e34ec379d94fb814d3d775ad954595d1314ba8846959e3e82f74e26`, `8fd64a14c06b589c26b947ae2bcf6bfa0149ef0be14ed4d80f448a01c43b1c6d`],
+                    [`b4f9eaea09b6917619f6ea6a4eb5464efddb58fd45b1ebefcdc1a01d08b47986`, `39e5c9925b5a54b07433a4f18c61726f8bb131c012ca542eb24a8ac07200682a`],
+                    [`d4263dfc3d2df923a0179a48966d30ce84e2515afc3dccc1b77907792ebcc60e`, `62dfaf07a0f78feb30e30d6295853ce189e127760ad6cf7fae164e122a208d54`],
+                    [`48457524820fa65a4f8d35eb6930857c0032acc0a4a2de422233eeda897612c4`, `25a748ab367979d98733c38a1fa1c2e7dc6cc07db2d60a9ae7a76aaa49bd0f77`],
+                    [`dfeeef1881101f2cb11644f3a2afdfc2045e19919152923f367a1767c11cceda`, `ecfb7056cf1de042f9420bab396793c0c390bde74b4bbdff16a83ae09a9a7517`],
+                    [`6d7ef6b17543f8373c573f44e1f389835d89bcbc6062ced36c82df83b8fae859`, `cd450ec335438986dfefa10c57fea9bcc521a0959b2d80bbf74b190dca712d10`],
+                    [`e75605d59102a5a2684500d3b991f2e3f3c88b93225547035af25af66e04541f`, `f5c54754a8f71ee540b9b48728473e314f729ac5308b06938360990e2bfad125`],
+                    [`eb98660f4c4dfaa06a2be453d5020bc99a0c2e60abe388457dd43fefb1ed620c`, `6cb9a8876d9cb8520609af3add26cd20a0a7cd8a9411131ce85f44100099223e`],
+                    [`13e87b027d8514d35939f2e6892b19922154596941888336dc3563e3b8dba942`, `fef5a3c68059a6dec5d624114bf1e91aac2b9da568d6abeb2570d55646b8adf1`],
+                    [`ee163026e9fd6fe017c38f06a5be6fc125424b371ce2708e7bf4491691e5764a`, `1acb250f255dd61c43d94ccc670d0f58f49ae3fa15b96623e5430da0ad6c62b2`],
+                    [`b268f5ef9ad51e4d78de3a750c2dc89b1e626d43505867999932e5db33af3d80`, `5f310d4b3c99b9ebb19f77d41c1dee018cf0d34fd4191614003e945a1216e423`],
+                    [`ff07f3118a9df035e9fad85eb6c7bfe42b02f01ca99ceea3bf7ffdba93c4750d`, `438136d603e858a3a5c440c38eccbaddc1d2942114e2eddd4740d098ced1f0d8`],
+                    [`8d8b9855c7c052a34146fd20ffb658bea4b9f69e0d825ebec16e8c3ce2b526a1`, `cdb559eedc2d79f926baf44fb84ea4d44bcf50fee51d7ceb30e2e7f463036758`],
+                    [`52db0b5384dfbf05bfa9d472d7ae26dfe4b851ceca91b1eba54263180da32b63`, `c3b997d050ee5d423ebaf66a6db9f57b3180c902875679de924b69d84a7b375`],
+                    [`e62f9490d3d51da6395efd24e80919cc7d0f29c3f3fa48c6fff543becbd43352`, `6d89ad7ba4876b0b22c2ca280c682862f342c8591f1daf5170e07bfd9ccafa7d`],
+                    [`7f30ea2476b399b4957509c88f77d0191afa2ff5cb7b14fd6d8e7d65aaab1193`, `ca5ef7d4b231c94c3b15389a5f6311e9daff7bb67b103e9880ef4bff637acaec`],
+                    [`5098ff1e1d9f14fb46a210fada6c903fef0fb7b4a1dd1d9ac60a0361800b7a00`, `9731141d81fc8f8084d37c6e7542006b3ee1b40d60dfe5362a5b132fd17ddc0`],
+                    [`32b78c7de9ee512a72895be6b9cbefa6e2f3c4ccce445c96b9f2c81e2778ad58`, `ee1849f513df71e32efc3896ee28260c73bb80547ae2275ba497237794c8753c`],
+                    [`e2cb74fddc8e9fbcd076eef2a7c72b0ce37d50f08269dfc074b581550547a4f7`, `d3aa2ed71c9dd2247a62df062736eb0baddea9e36122d2be8641abcb005cc4a4`],
+                    [`8438447566d4d7bedadc299496ab357426009a35f235cb141be0d99cd10ae3a8`, `c4e1020916980a4da5d01ac5e6ad330734ef0d7906631c4f2390426b2edd791f`],
+                    [`4162d488b89402039b584c6fc6c308870587d9c46f660b878ab65c82c711d67e`, `67163e903236289f776f22c25fb8a3afc1732f2b84b4e95dbda47ae5a0852649`],
+                    [`3fad3fa84caf0f34f0f89bfd2dcf54fc175d767aec3e50684f3ba4a4bf5f683d`, `cd1bc7cb6cc407bb2f0ca647c718a730cf71872e7d0d2a53fa20efcdfe61826`],
+                    [`674f2600a3007a00568c1a7ce05d0816c1fb84bf1370798f1c69532faeb1a86b`, `299d21f9413f33b3edf43b257004580b70db57da0b182259e09eecc69e0d38a5`],
+                    [`d32f4da54ade74abb81b815ad1fb3b263d82d6c692714bcff87d29bd5ee9f08f`, `f9429e738b8e53b968e99016c059707782e14f4535359d582fc416910b3eea87`],
+                    [`30e4e670435385556e593657135845d36fbb6931f72b08cb1ed954f1e3ce3ff6`, `462f9bce619898638499350113bbc9b10a878d35da70740dc695a559eb88db7b`],
+                    [`be2062003c51cc3004682904330e4dee7f3dcd10b01e580bf1971b04d4cad297`, `62188bc49d61e5428573d48a74e1c655b1c61090905682a0d5558ed72dccb9bc`],
+                    [`93144423ace3451ed29e0fb9ac2af211cb6e84a601df5993c419859fff5df04a`, `7c10dfb164c3425f5c71a3f9d7992038f1065224f72bb9d1d902a6d13037b47c`],
+                    [`b015f8044f5fcbdcf21ca26d6c34fb8197829205c7b7d2a7cb66418c157b112c`, `ab8c1e086d04e813744a655b2df8d5f83b3cdc6faa3088c1d3aea1454e3a1d5f`],
+                    [`d5e9e1da649d97d89e4868117a465a3a4f8a18de57a140d36b3f2af341a21b52`, `4cb04437f391ed73111a13cc1d4dd0db1693465c2240480d8955e8592f27447a`],
+                    [`d3ae41047dd7ca065dbf8ed77b992439983005cd72e16d6f996a5316d36966bb`, `bd1aeb21ad22ebb22a10f0303417c6d964f8cdd7df0aca614b10dc14d125ac46`],
+                    [`463e2763d885f958fc66cdd22800f0a487197d0a82e377b49f80af87c897b065`, `bfefacdb0e5d0fd7df3a311a94de062b26b80c61fbc97508b79992671ef7ca7f`],
+                    [`7985fdfd127c0567c6f53ec1bb63ec3158e597c40bfe747c83cddfc910641917`, `603c12daf3d9862ef2b25fe1de289aed24ed291e0ec6708703a5bd567f32ed03`],
+                    [`74a1ad6b5f76e39db2dd249410eac7f99e74c59cb83d2d0ed5ff1543da7703e9`, `cc6157ef18c9c63cd6193d83631bbea0093e0968942e8c33d5737fd790e0db08`],
+                    [`30682a50703375f602d416664ba19b7fc9bab42c72747463a71d0896b22f6da3`, `553e04f6b018b4fa6c8f39e7f311d3176290d0e0f19ca73f17714d9977a22ff8`],
+                    [`9e2158f0d7c0d5f26c3791efefa79597654e7a2b2464f52b1ee6c1347769ef57`, `712fcdd1b9053f09003a3481fa7762e9ffd7c8ef35a38509e2fbf2629008373`],
+                    [`176e26989a43c9cfeba4029c202538c28172e566e3c4fce7322857f3be327d66`, `ed8cc9d04b29eb877d270b4878dc43c19aefd31f4eee09ee7b47834c1fa4b1c3`],
+                    [`75d46efea3771e6e68abb89a13ad747ecf1892393dfc4f1b7004788c50374da8`, `9852390a99507679fd0b86fd2b39a868d7efc22151346e1a3ca4726586a6bed8`],
+                    [`809a20c67d64900ffb698c4c825f6d5f2310fb0451c869345b7319f645605721`, `9e994980d9917e22b76b061927fa04143d096ccc54963e6a5ebfa5f3f8e286c1`],
+                    [`1b38903a43f7f114ed4500b4eac7083fdefece1cf29c63528d563446f972c180`, `4036edc931a60ae889353f77fd53de4a2708b26b6f5da72ad3394119daf408f9`]
+                ]
+            }
+        }
+    })),
+    require_curves = __commonJSMin((e => {
+        var t = e,
+            n = require_hash(),
+            r = require_curve(),
+            i = require_utils$1().assert;
+
+        function a(e) {
+            this.curve = e.type === `short` ? new r.short(e) : e.type === `edwards` ? new r.edwards(e) : new r.mont(e), this.g = this.curve.g, this.n = this.curve.n, this.hash = e.hash, i(this.g.validate(), `Invalid curve`), i(this.g.mul(this.n).isInfinity(), `Invalid curve, G*N != O`)
+        }
+        t.PresetCurve = a;
+
+        function s(e, n) {
+            Object.defineProperty(t, e, {
+                configurable: !0,
+                enumerable: !0,
+                get: function() {
+                    var r = new a(n);
+                    return Object.defineProperty(t, e, {
+                        configurable: !0,
+                        enumerable: !0,
+                        value: r
+                    }), r
+                }
+            })
+        }
+        s(`p192`, {
+            type: `short`,
+            prime: `p192`,
+            p: `ffffffff ffffffff ffffffff fffffffe ffffffff ffffffff`,
+            a: `ffffffff ffffffff ffffffff fffffffe ffffffff fffffffc`,
+            b: `64210519 e59c80e7 0fa7e9ab 72243049 feb8deec c146b9b1`,
+            n: `ffffffff ffffffff ffffffff 99def836 146bc9b1 b4d22831`,
+            hash: n.sha256,
+            gRed: !1,
+            g: [`188da80e b03090f6 7cbf20eb 43a18800 f4ff0afd 82ff1012`, `07192b95 ffc8da78 631011ed 6b24cdd5 73f977a1 1e794811`]
+        }), s(`p224`, {
+            type: `short`,
+            prime: `p224`,
+            p: `ffffffff ffffffff ffffffff ffffffff 00000000 00000000 00000001`,
+            a: `ffffffff ffffffff ffffffff fffffffe ffffffff ffffffff fffffffe`,
+            b: `b4050a85 0c04b3ab f5413256 5044b0b7 d7bfd8ba 270b3943 2355ffb4`,
+            n: `ffffffff ffffffff ffffffff ffff16a2 e0b8f03e 13dd2945 5c5c2a3d`,
+            hash: n.sha256,
+            gRed: !1,
+            g: [`b70e0cbd 6bb4bf7f 321390b9 4a03c1d3 56c21122 343280d6 115c1d21`, `bd376388 b5f723fb 4c22dfe6 cd4375a0 5a074764 44d58199 85007e34`]
+        }), s(`p256`, {
+            type: `short`,
+            prime: null,
+            p: `ffffffff 00000001 00000000 00000000 00000000 ffffffff ffffffff ffffffff`,
+            a: `ffffffff 00000001 00000000 00000000 00000000 ffffffff ffffffff fffffffc`,
+            b: `5ac635d8 aa3a93e7 b3ebbd55 769886bc 651d06b0 cc53b0f6 3bce3c3e 27d2604b`,
+            n: `ffffffff 00000000 ffffffff ffffffff bce6faad a7179e84 f3b9cac2 fc632551`,
+            hash: n.sha256,
+            gRed: !1,
+            g: [`6b17d1f2 e12c4247 f8bce6e5 63a440f2 77037d81 2deb33a0 f4a13945 d898c296`, `4fe342e2 fe1a7f9b 8ee7eb4a 7c0f9e16 2bce3357 6b315ece cbb64068 37bf51f5`]
+        }), s(`p384`, {
+            type: `short`,
+            prime: null,
+            p: `ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff fffffffe ffffffff 00000000 00000000 ffffffff`,
+            a: `ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff fffffffe ffffffff 00000000 00000000 fffffffc`,
+            b: `b3312fa7 e23ee7e4 988e056b e3f82d19 181d9c6e fe814112 0314088f 5013875a c656398d 8a2ed19d 2a85c8ed d3ec2aef`,
+            n: `ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff c7634d81 f4372ddf 581a0db2 48b0a77a ecec196a ccc52973`,
+            hash: n.sha384,
+            gRed: !1,
+            g: [`aa87ca22 be8b0537 8eb1c71e f320ad74 6e1d3b62 8ba79b98 59f741e0 82542a38 5502f25d bf55296c 3a545e38 72760ab7`, `3617de4a 96262c6f 5d9e98bf 9292dc29 f8f41dbd 289a147c e9da3113 b5f0b8c0 0a60b1ce 1d7e819d 7a431d7c 90ea0e5f`]
+        }), s(`p521`, {
+            type: `short`,
+            prime: null,
+            p: `000001ff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff`,
+            a: `000001ff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff fffffffc`,
+            b: `00000051 953eb961 8e1c9a1f 929a21a0 b68540ee a2da725b 99b315f3 b8b48991 8ef109e1 56193951 ec7e937b 1652c0bd 3bb1bf07 3573df88 3d2c34f1 ef451fd4 6b503f00`,
+            n: `000001ff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff fffffffa 51868783 bf2f966b 7fcc0148 f709a5d0 3bb5c9b8 899c47ae bb6fb71e 91386409`,
+            hash: n.sha512,
+            gRed: !1,
+            g: [`000000c6 858e06b7 0404e9cd 9e3ecb66 2395b442 9c648139 053fb521 f828af60 6b4d3dba a14b5e77 efe75928 fe1dc127 a2ffa8de 3348b3c1 856a429b f97e7e31 c2e5bd66`, `00000118 39296a78 9a3bc004 5c8a5fb4 2c7d1bd9 98f54449 579b4468 17afbd17 273e662c 97ee7299 5ef42640 c550b901 3fad0761 353c7086 a272c240 88be9476 9fd16650`]
+        }), s(`curve25519`, {
+            type: `mont`,
+            prime: `p25519`,
+            p: `7fffffffffffffff ffffffffffffffff ffffffffffffffff ffffffffffffffed`,
+            a: `76d06`,
+            b: `1`,
+            n: `1000000000000000 0000000000000000 14def9dea2f79cd6 5812631a5cf5d3ed`,
+            hash: n.sha256,
+            gRed: !1,
+            g: [`9`]
+        }), s(`ed25519`, {
+            type: `edwards`,
+            prime: `p25519`,
+            p: `7fffffffffffffff ffffffffffffffff ffffffffffffffff ffffffffffffffed`,
+            a: `-1`,
+            c: `1`,
+            d: `52036cee2b6ffe73 8cc740797779e898 00700a4d4141d8ab 75eb4dca135978a3`,
+            n: `1000000000000000 0000000000000000 14def9dea2f79cd6 5812631a5cf5d3ed`,
+            hash: n.sha256,
+            gRed: !1,
+            g: [`216936d3cd6e53fec0a4e231fdd6dc5c692cc7609525a7b2c9562d608f25d51a`, `6666666666666666666666666666666666666666666666666666666666666658`]
+        });
+        var c;
+        try {
+            c = require_secp256k1()
+        } catch {
+            c = void 0
+        }
+        s(`secp256k1`, {
+            type: `short`,
+            prime: `k256`,
+            p: `ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff fffffffe fffffc2f`,
+            a: `0`,
+            b: `7`,
+            n: `ffffffff ffffffff ffffffff fffffffe baaedce6 af48a03b bfd25e8c d0364141`,
+            h: `1`,
+            hash: n.sha256,
+            beta: `7ae96a2b657c07106e64479eac3434e99cf0497512f58995c1396c28719501ee`,
+            lambda: `5363ad4cc05c30e0a5261c028812645a122e22ea20816678df02967c1b23bd72`,
+            basis: [{
+                a: `3086d221a7d46bcde86c90e49284eb15`,
+                b: `-e4437ed6010e88286f547fa90abfe4c3`
+            }, {
+                a: `114ca50f7a8e2f3f657c1108d9d44cfd8`,
+                b: `3086d221a7d46bcde86c90e49284eb15`
+            }],
+            gRed: !1,
+            g: [`79be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798`, `483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8`, c]
+        })
+    })),
+    require_hmac_drbg = __commonJSMin(((e, t) => {
+        var n = require_hash(),
+            r = require_utils$2(),
+            i = require_minimalistic_assert();
+
+        function a(e) {
+            if (!(this instanceof a)) return new a(e);
+            this.hash = e.hash, this.predResist = !!e.predResist, this.outLen = this.hash.outSize, this.minEntropy = e.minEntropy || this.hash.hmacStrength, this._reseed = null, this.reseedInterval = null, this.K = null, this.V = null;
+            var t = r.toArray(e.entropy, e.entropyEnc || `hex`),
+                n = r.toArray(e.nonce, e.nonceEnc || `hex`),
+                s = r.toArray(e.pers, e.persEnc || `hex`);
+            i(t.length >= this.minEntropy / 8, `Not enough entropy. Minimum is: ` + this.minEntropy + ` bits`), this._init(t, n, s)
+        }
+        t.exports = a, a.prototype._init = function(e, t, n) {
+            var r = e.concat(t).concat(n);
+            this.K = Array(this.outLen / 8), this.V = Array(this.outLen / 8);
+            for (var i = 0; i < this.V.length; i++) this.K[i] = 0, this.V[i] = 1;
+            this._update(r), this._reseed = 1, this.reseedInterval = 281474976710656
+        }, a.prototype._hmac = function() {
+            return new n.hmac(this.hash, this.K)
+        }, a.prototype._update = function(e) {
+            var t = this._hmac().update(this.V).update([0]);
+            e && (t = t.update(e)), this.K = t.digest(), this.V = this._hmac().update(this.V).digest(), e && (this.K = this._hmac().update(this.V).update([1]).update(e).digest(), this.V = this._hmac().update(this.V).digest())
+        }, a.prototype.reseed = function(e, t, n, a) {
+            typeof t != `string` && (a = n, n = t, t = null), e = r.toArray(e, t), n = r.toArray(n, a), i(e.length >= this.minEntropy / 8, `Not enough entropy. Minimum is: ` + this.minEntropy + ` bits`), this._update(e.concat(n || [])), this._reseed = 1
+        }, a.prototype.generate = function(e, t, n, i) {
+            if (this._reseed > this.reseedInterval) throw Error(`Reseed is required`);
+            typeof t != `string` && (i = n, n = t, t = null), n && (n = r.toArray(n, i || `hex`), this._update(n));
+            for (var a = []; a.length < e;) this.V = this._hmac().update(this.V).digest(), a = a.concat(this.V);
+            var s = a.slice(0, e);
+            return this._update(n), this._reseed++, r.encode(s, t)
+        }
+    })),
+    require_key$1 = __commonJSMin(((e, t) => {
+        var n = require_bn$2(),
+            r = require_utils$1().assert;
+
+        function i(e, t) {
+            this.ec = e, this.priv = null, this.pub = null, t.priv && this._importPrivate(t.priv, t.privEnc), t.pub && this._importPublic(t.pub, t.pubEnc)
+        }
+        t.exports = i, i.fromPublic = function(e, t, n) {
+            return t instanceof i ? t : new i(e, {
+                pub: t,
+                pubEnc: n
+            })
+        }, i.fromPrivate = function(e, t, n) {
+            return t instanceof i ? t : new i(e, {
+                priv: t,
+                privEnc: n
+            })
+        }, i.prototype.validate = function() {
+            var e = this.getPublic();
+            return e.isInfinity() ? {
+                result: !1,
+                reason: `Invalid public key`
+            } : e.validate() ? e.mul(this.ec.curve.n).isInfinity() ? {
+                result: !0,
+                reason: null
+            } : {
+                result: !1,
+                reason: `Public key * N != O`
+            } : {
+                result: !1,
+                reason: `Public key is not a point`
+            }
+        }, i.prototype.getPublic = function(e, t) {
+            return typeof e == `string` && (t = e, e = null), this.pub || (this.pub = this.ec.g.mul(this.priv)), t ? this.pub.encode(t, e) : this.pub
+        }, i.prototype.getPrivate = function(e) {
+            return e === `hex` ? this.priv.toString(16, 2) : this.priv
+        }, i.prototype._importPrivate = function(e, t) {
+            this.priv = new n(e, t || 16), this.priv = this.priv.umod(this.ec.curve.n)
+        }, i.prototype._importPublic = function(e, t) {
+            e.x || e.y ? (this.ec.curve.type === `mont` ? r(e.x, `Need x coordinate`) : (this.ec.curve.type === `short` || this.ec.curve.type === `edwards`) && r(e.x && e.y, `Need both x and y coordinate`), this.pub = this.ec.curve.point(e.x, e.y)) : this.pub = this.ec.curve.decodePoint(e, t)
+        }, i.prototype.derive = function(e) {
+            return e.validate() || r(e.validate(), `public point not validated`), e.mul(this.priv).getX()
+        }, i.prototype.sign = function(e, t, n) {
+            return this.ec.sign(e, this, t, n)
+        }, i.prototype.verify = function(e, t, n) {
+            return this.ec.verify(e, t, this, void 0, n)
+        }, i.prototype.inspect = function() {
+            return `<Key priv: ` + (this.priv && this.priv.toString(16, 2)) + ` pub: ` + (this.pub && this.pub.inspect()) + ` >`
+        }
+    })),
+    require_signature$1 = __commonJSMin(((e, t) => {
+        var n = require_bn$2(),
+            r = require_utils$1(),
+            i = r.assert;
+
+        function a(e, t) {
+            if (e instanceof a) return e;
+            this._importDER(e, t) || (i(e.r && e.s, `Signature without r or s`), this.r = new n(e.r, 16), this.s = new n(e.s, 16), this.recoveryParam = e.recoveryParam === void 0 ? null : e.recoveryParam)
+        }
+        t.exports = a;
+
+        function s() {
+            this.place = 0
+        }
+
+        function c(e, t) {
+            var n = e[t.place++];
+            if (!(n & 128)) return n;
+            var r = n & 15;
+            if (r === 0 || r > 4 || e[t.place] === 0) return !1;
+            for (var i = 0, a = 0, s = t.place; a < r; a++, s++) i <<= 8, i |= e[s], i >>>= 0;
+            return i <= 127 ? !1 : (t.place = s, i)
+        }
+
+        function l(e) {
+            for (var t = 0, n = e.length - 1; !e[t] && !(e[t + 1] & 128) && t < n;) t++;
+            return t === 0 ? e : e.slice(t)
+        }
+        a.prototype._importDER = function(e, t) {
+            e = r.toArray(e, t);
+            var i = new s;
+            if (e[i.place++] !== 48) return !1;
+            var a = c(e, i);
+            if (a === !1 || a + i.place !== e.length || e[i.place++] !== 2) return !1;
+            var l = c(e, i);
+            if (l === !1 || e[i.place] & 128) return !1;
+            var u = e.slice(i.place, l + i.place);
+            if (i.place += l, e[i.place++] !== 2) return !1;
+            var d = c(e, i);
+            if (d === !1 || e.length !== d + i.place || e[i.place] & 128) return !1;
+            var f = e.slice(i.place, d + i.place);
+            if (u[0] === 0) {
+                if (u[1] & 128) u = u.slice(1);
+                else return !1
+            }
+            if (f[0] === 0) {
+                if (f[1] & 128) f = f.slice(1);
+                else return !1
+            }
+            return this.r = new n(u), this.s = new n(f), this.recoveryParam = null, !0
+        };
+
+        function u(e, t) {
+            if (t < 128) e.push(t);
+            else {
+                var n = 1 + (Math.log(t) / Math.LN2 >>> 3);
+                for (e.push(n | 128); --n;) e.push(t >>> (n << 3) & 255);
+                e.push(t)
+            }
+        }
+        a.prototype.toDER = function(e) {
+            var t = this.r.toArray(),
+                n = this.s.toArray();
+            for (t[0] & 128 && (t = [0].concat(t)), n[0] & 128 && (n = [0].concat(n)), t = l(t), n = l(n); !n[0] && !(n[1] & 128);) n = n.slice(1);
+            var i = [2];
+            u(i, t.length), i = i.concat(t), i.push(2), u(i, n.length);
+            var a = i.concat(n),
+                s = [48];
+            return u(s, a.length), s = s.concat(a), r.encode(s, e)
+        }
+    })),
+    require_ec = __commonJSMin(((e, t) => {
+        var n = require_bn$2(),
+            r = require_hmac_drbg(),
+            i = require_utils$1(),
+            a = require_curves(),
+            s = require_brorand(),
+            c = i.assert,
+            l = require_key$1(),
+            u = require_signature$1();
+
+        function d(e) {
+            if (!(this instanceof d)) return new d(e);
+            typeof e == `string` && (c(Object.prototype.hasOwnProperty.call(a, e), `Unknown curve ` + e), e = a[e]), e instanceof a.PresetCurve && (e = {
+                curve: e
+            }), this.curve = e.curve.curve, this.n = this.curve.n, this.nh = this.n.ushrn(1), this.g = this.curve.g, this.g = e.curve.g, this.g.precompute(e.curve.n.bitLength() + 1), this.hash = e.hash || e.curve.hash
+        }
+        t.exports = d, d.prototype.keyPair = function(e) {
+            return new l(this, e)
+        }, d.prototype.keyFromPrivate = function(e, t) {
+            return l.fromPrivate(this, e, t)
+        }, d.prototype.keyFromPublic = function(e, t) {
+            return l.fromPublic(this, e, t)
+        }, d.prototype.genKeyPair = function(e) {
+            e || (e = {});
+            for (var t = new r({
+                    hash: this.hash,
+                    pers: e.pers,
+                    persEnc: e.persEnc || `utf8`,
+                    entropy: e.entropy || s(this.hash.hmacStrength),
+                    entropyEnc: e.entropy && e.entropyEnc || `utf8`,
+                    nonce: this.n.toArray()
+                }), i = this.n.byteLength(), a = this.n.sub(new n(2));;) {
+                var c = new n(t.generate(i));
+                if (!(c.cmp(a) > 0)) return c.iaddn(1), this.keyFromPrivate(c)
+            }
+        }, d.prototype._truncateToN = function(e, t, r) {
+            var i;
+            if (n.isBN(e) || typeof e == `number`) e = new n(e, 16), i = e.byteLength();
+            else if (typeof e == `object`) i = e.length, e = new n(e, 16);
+            else {
+                var a = e.toString();
+                i = a.length + 1 >>> 1, e = new n(a, 16)
+            }
+            typeof r != `number` && (r = i * 8);
+            var s = r - this.n.bitLength();
+            return s > 0 && (e = e.ushrn(s)), !t && e.cmp(this.n) >= 0 ? e.sub(this.n) : e
+        }, d.prototype.sign = function(e, t, i, a) {
+            if (typeof i == `object` && (a = i, i = null), a || (a = {}), typeof e != `string` && typeof e != `number` && !n.isBN(e)) {
+                c(typeof e == `object` && e && typeof e.length == `number`, `Expected message to be an array-like, a hex string, or a BN instance`), c(e.length >>> 0 === e.length);
+                for (var s = 0; s < e.length; s++) c((e[s] & 255) === e[s])
+            }
+            t = this.keyFromPrivate(t, i), e = this._truncateToN(e, !1, a.msgBitLength), c(!e.isNeg(), `Can not sign a negative message`);
+            var l = this.n.byteLength(),
+                d = t.getPrivate().toArray(`be`, l),
+                f = e.toArray(`be`, l);
+            c(new n(f).eq(e), `Can not sign message`);
+            for (var p = new r({
+                    hash: this.hash,
+                    entropy: d,
+                    nonce: f,
+                    pers: a.pers,
+                    persEnc: a.persEnc || `utf8`
+                }), m = this.n.sub(new n(1)), h = 0;; h++) {
+                var g = a.k ? a.k(h) : new n(p.generate(this.n.byteLength()));
+                if (g = this._truncateToN(g, !0), !(g.cmpn(1) <= 0 || g.cmp(m) >= 0)) {
+                    var _ = this.g.mul(g);
+                    if (!_.isInfinity()) {
+                        var v = _.getX(),
+                            y = v.umod(this.n);
+                        if (y.cmpn(0) !== 0) {
+                            var b = g.invm(this.n).mul(y.mul(t.getPrivate()).iadd(e));
+                            if (b = b.umod(this.n), b.cmpn(0) !== 0) {
+                                var x = +!!_.getY().isOdd() | (v.cmp(y) === 0 ? 0 : 2);
+                                return a.canonical && b.cmp(this.nh) > 0 && (b = this.n.sub(b), x ^= 1), new u({
+                                    r: y,
+                                    s: b,
+                                    recoveryParam: x
                                 })
                             }
-                        })
+                        }
                     }
-                })
-            },
-            n = () => {
-                T() ? z.confirm({
-                    title: "Are you sure you want to switch to an educator account?",
-                    content: "Doing so will remove you from all your current classes.",
-                    okText: "Yes",
-                    onOk: () => r("Educator")
-                }) : z.confirm({
-                    title: "Are you sure you want to switch to a student account?",
-                    content: "Many educator features are not available with student accounts.",
-                    okText: "Yes",
-                    onOk: () => r("Student")
-                })
+                }
+            }
+        }, d.prototype.verify = function(e, t, n, r, i) {
+            i || (i = {}), e = this._truncateToN(e, !1, i.msgBitLength), n = this.keyFromPublic(n, r), t = new u(t, `hex`);
+            var a = t.r,
+                s = t.s;
+            if (a.cmpn(1) < 0 || a.cmp(this.n) >= 0 || s.cmpn(1) < 0 || s.cmp(this.n) >= 0) return !1;
+            var c = s.invm(this.n),
+                l = c.mul(e).umod(this.n),
+                d = c.mul(a).umod(this.n),
+                f;
+            return this.curve._maxwellTrick ? (f = this.g.jmulAdd(l, n.getPublic(), d), !f.isInfinity() && f.eqXToP(a)) : (f = this.g.mulAdd(l, n.getPublic(), d), !f.isInfinity() && f.getX().umod(this.n).cmp(a) === 0)
+        }, d.prototype.recoverPubKey = function(e, t, r, i) {
+            c((3 & r) === r, `The recovery param is more than two bits`), t = new u(t, i);
+            var a = this.n,
+                s = new n(e),
+                l = t.r,
+                d = t.s,
+                f = r & 1,
+                p = r >> 1;
+            if (l.cmp(this.curve.p.umod(this.curve.n)) >= 0 && p) throw Error(`Unable to find sencond key candinate`);
+            l = p ? this.curve.pointFromX(l.add(this.curve.n), f) : this.curve.pointFromX(l, f);
+            var m = t.r.invm(a),
+                h = a.sub(s).mul(m).umod(a),
+                g = d.mul(m).umod(a);
+            return this.g.mulAdd(h, l, g)
+        }, d.prototype.getKeyRecoveryParam = function(e, t, n, r) {
+            if (t = new u(t, r), t.recoveryParam !== null) return t.recoveryParam;
+            for (var i = 0; i < 4; i++) {
+                var a;
+                try {
+                    a = this.recoverPubKey(e, t, i)
+                } catch {
+                    continue
+                }
+                if (a.eq(n)) return i
+            }
+            throw Error(`Unable to find valid recovery factor`)
+        }
+    })),
+    require_key = __commonJSMin(((e, t) => {
+        var n = require_utils$1(),
+            r = n.assert,
+            i = n.parseBytes,
+            a = n.cachedProperty;
+
+        function s(e, t) {
+            this.eddsa = e, this._secret = i(t.secret), e.isPoint(t.pub) ? this._pub = t.pub : this._pubBytes = i(t.pub)
+        }
+        s.fromPublic = function(e, t) {
+            return t instanceof s ? t : new s(e, {
+                pub: t
+            })
+        }, s.fromSecret = function(e, t) {
+            return t instanceof s ? t : new s(e, {
+                secret: t
+            })
+        }, s.prototype.secret = function() {
+            return this._secret
+        }, a(s, `pubBytes`, function() {
+            return this.eddsa.encodePoint(this.pub())
+        }), a(s, `pub`, function() {
+            return this._pubBytes ? this.eddsa.decodePoint(this._pubBytes) : this.eddsa.g.mul(this.priv())
+        }), a(s, `privBytes`, function() {
+            var e = this.eddsa,
+                t = this.hash(),
+                n = e.encodingLength - 1,
+                r = t.slice(0, e.encodingLength);
+            return r[0] &= 248, r[n] &= 127, r[n] |= 64, r
+        }), a(s, `priv`, function() {
+            return this.eddsa.decodeInt(this.privBytes())
+        }), a(s, `hash`, function() {
+            return this.eddsa.hash().update(this.secret()).digest()
+        }), a(s, `messagePrefix`, function() {
+            return this.hash().slice(this.eddsa.encodingLength)
+        }), s.prototype.sign = function(e) {
+            return r(this._secret, `KeyPair can only verify`), this.eddsa.sign(e, this)
+        }, s.prototype.verify = function(e, t) {
+            return this.eddsa.verify(e, t, this)
+        }, s.prototype.getSecret = function(e) {
+            return r(this._secret, `KeyPair is public only`), n.encode(this.secret(), e)
+        }, s.prototype.getPublic = function(e) {
+            return n.encode(this.pubBytes(), e)
+        }, t.exports = s
+    })),
+    require_signature = __commonJSMin(((e, t) => {
+        var n = require_bn$2(),
+            r = require_utils$1(),
+            i = r.assert,
+            a = r.cachedProperty,
+            s = r.parseBytes;
+
+        function c(e, t) {
+            this.eddsa = e, typeof t != `object` && (t = s(t)), Array.isArray(t) && (i(t.length === e.encodingLength * 2, `Signature has invalid size`), t = {
+                R: t.slice(0, e.encodingLength),
+                S: t.slice(e.encodingLength)
+            }), i(t.R && t.S, `Signature without R or S`), e.isPoint(t.R) && (this._R = t.R), t.S instanceof n && (this._S = t.S), this._Rencoded = Array.isArray(t.R) ? t.R : t.Rencoded, this._Sencoded = Array.isArray(t.S) ? t.S : t.Sencoded
+        }
+        a(c, `S`, function() {
+            return this.eddsa.decodeInt(this.Sencoded())
+        }), a(c, `R`, function() {
+            return this.eddsa.decodePoint(this.Rencoded())
+        }), a(c, `Rencoded`, function() {
+            return this.eddsa.encodePoint(this.R())
+        }), a(c, `Sencoded`, function() {
+            return this.eddsa.encodeInt(this.S())
+        }), c.prototype.toBytes = function() {
+            return this.Rencoded().concat(this.Sencoded())
+        }, c.prototype.toHex = function() {
+            return r.encode(this.toBytes(), `hex`).toUpperCase()
+        }, t.exports = c
+    })),
+    require_eddsa = __commonJSMin(((e, t) => {
+        var n = require_hash(),
+            r = require_curves(),
+            i = require_utils$1(),
+            a = i.assert,
+            s = i.parseBytes,
+            c = require_key(),
+            l = require_signature();
+
+        function u(e) {
+            if (a(e === `ed25519`, `only tested with ed25519 so far`), !(this instanceof u)) return new u(e);
+            e = r[e].curve, this.curve = e, this.g = e.g, this.g.precompute(e.n.bitLength() + 1), this.pointClass = e.point().constructor, this.encodingLength = Math.ceil(e.n.bitLength() / 8), this.hash = n.sha512
+        }
+        t.exports = u, u.prototype.sign = function(e, t) {
+            e = s(e);
+            var n = this.keyFromSecret(t),
+                r = this.hashInt(n.messagePrefix(), e),
+                i = this.g.mul(r),
+                a = this.encodePoint(i),
+                c = this.hashInt(a, n.pubBytes(), e).mul(n.priv()),
+                l = r.add(c).umod(this.curve.n);
+            return this.makeSignature({
+                R: i,
+                S: l,
+                Rencoded: a
+            })
+        }, u.prototype.verify = function(e, t, n) {
+            if (e = s(e), t = this.makeSignature(t), t.S().gte(t.eddsa.curve.n) || t.S().isNeg()) return !1;
+            var r = this.keyFromPublic(n),
+                i = this.hashInt(t.Rencoded(), r.pubBytes(), e),
+                a = this.g.mul(t.S());
+            return t.R().add(r.pub().mul(i)).eq(a)
+        }, u.prototype.hashInt = function() {
+            for (var e = this.hash(), t = 0; t < arguments.length; t++) e.update(arguments[t]);
+            return i.intFromLE(e.digest()).umod(this.curve.n)
+        }, u.prototype.keyFromPublic = function(e) {
+            return c.fromPublic(this, e)
+        }, u.prototype.keyFromSecret = function(e) {
+            return c.fromSecret(this, e)
+        }, u.prototype.makeSignature = function(e) {
+            return e instanceof l ? e : new l(this, e)
+        }, u.prototype.encodePoint = function(e) {
+            var t = e.getY().toArray(`le`, this.encodingLength);
+            return t[this.encodingLength - 1] |= e.getX().isOdd() ? 128 : 0, t
+        }, u.prototype.decodePoint = function(e) {
+            e = i.parseBytes(e);
+            var t = e.length - 1,
+                n = e.slice(0, t).concat(e[t] & -129),
+                r = !!(e[t] & 128),
+                a = i.intFromLE(n);
+            return this.curve.pointFromY(a, r)
+        }, u.prototype.encodeInt = function(e) {
+            return e.toArray(`le`, this.encodingLength)
+        }, u.prototype.decodeInt = function(e) {
+            return i.intFromLE(e)
+        }, u.prototype.isPoint = function(e) {
+            return e instanceof this.pointClass
+        }
+    })),
+    require_elliptic = __commonJSMin((e => {
+        var t = e;
+        t.version = (init_package(), __toCommonJS(package_exports).default).version, t.utils = require_utils$1(), t.rand = require_brorand(), t.curve = require_curve(), t.curves = require_curves(), t.ec = require_ec(), t.eddsa = require_eddsa()
+    })),
+    require_bn = __commonJSMin(((e, t) => {
+        (function(e, t) {
+            function n(e, t) {
+                if (!e) throw Error(t || `Assertion failed`)
+            }
+
+            function r(e, t) {
+                e.super_ = t;
+                var n = function() {};
+                n.prototype = t.prototype, e.prototype = new n, e.prototype.constructor = e
+            }
+
+            function i(e, t, n) {
+                if (i.isBN(e)) return e;
+                this.negative = 0, this.words = null, this.length = 0, this.red = null, e !== null && ((t === `le` || t === `be`) && (n = t, t = 10), this._init(e || 0, t || 10, n || `be`))
+            }
+            typeof e == `object` ? e.exports = i : t.BN = i, i.BN = i, i.wordSize = 26;
+            var a;
+            try {
+                a = typeof window < `u` && window.Buffer !== void 0 ? window.Buffer : require_dist$1().Buffer
+            } catch {}
+            i.isBN = function(e) {
+                return e instanceof i || typeof e == `object` && !!e && e.constructor.wordSize === i.wordSize && Array.isArray(e.words)
+            }, i.max = function(e, t) {
+                return e.cmp(t) > 0 ? e : t
+            }, i.min = function(e, t) {
+                return e.cmp(t) < 0 ? e : t
+            }, i.prototype._init = function(e, t, r) {
+                if (typeof e == `number`) return this._initNumber(e, t, r);
+                if (typeof e == `object`) return this._initArray(e, t, r);
+                t === `hex` && (t = 16), n(t === (t | 0) && t >= 2 && t <= 36), e = e.toString().replace(/\s+/g, ``);
+                var i = 0;
+                e[0] === `-` && (i++, this.negative = 1), i < e.length && (t === 16 ? this._parseHex(e, i, r) : (this._parseBase(e, t, i), r === `le` && this._initArray(this.toArray(), t, r)))
+            }, i.prototype._initNumber = function(e, t, r) {
+                e < 0 && (this.negative = 1, e = -e), e < 67108864 ? (this.words = [e & 67108863], this.length = 1) : e < 4503599627370496 ? (this.words = [e & 67108863, e / 67108864 & 67108863], this.length = 2) : (n(e < 9007199254740992), this.words = [e & 67108863, e / 67108864 & 67108863, 1], this.length = 3), r === `le` && this._initArray(this.toArray(), t, r)
+            }, i.prototype._initArray = function(e, t, r) {
+                if (n(typeof e.length == `number`), e.length <= 0) return this.words = [0], this.length = 1, this;
+                this.length = Math.ceil(e.length / 3), this.words = Array(this.length);
+                for (var i = 0; i < this.length; i++) this.words[i] = 0;
+                var a, s, c = 0;
+                if (r === `be`)
+                    for (i = e.length - 1, a = 0; i >= 0; i -= 3) s = e[i] | e[i - 1] << 8 | e[i - 2] << 16, this.words[a] |= s << c & 67108863, this.words[a + 1] = s >>> 26 - c & 67108863, c += 24, c >= 26 && (c -= 26, a++);
+                else if (r === `le`)
+                    for (i = 0, a = 0; i < e.length; i += 3) s = e[i] | e[i + 1] << 8 | e[i + 2] << 16, this.words[a] |= s << c & 67108863, this.words[a + 1] = s >>> 26 - c & 67108863, c += 24, c >= 26 && (c -= 26, a++);
+                return this._strip()
             };
-        return e.jsxs(e.Fragment, {
-            children: [e.jsxs(U, {
-                children: [e.jsxs("div", {
-                    children: [e.jsx("strong", {
-                        children: "Account type"
-                    }), e.jsx("p", {
-                        children: ya(F().accountType)
-                    })]
-                }), e.jsxs(m, {
-                    onClick: n,
-                    children: ["Switch to ", T() ? "educator" : "student"]
-                })]
-            }), e.jsxs(ke, {
-                children: [e.jsx("summary", {
-                    children: "View data Gimkit has collected on me"
-                }), e.jsx(Ce, {
-                    children: e.jsx(m, {
-                        onClick: t,
-                        children: "View data Gimkit has collected on me"
-                    })
-                })]
-            }), e.jsxs(ke, {
-                $danger: !0,
-                children: [e.jsx("summary", {
-                    children: "Danger zone"
-                }), e.jsx(Ce, {
-                    children: e.jsxs(U, {
-                        children: [e.jsxs("div", {
-                            children: [e.jsx("strong", {
-                                children: "Delete account"
-                            }), e.jsx("p", {
-                                children: "Permanently delete your Gimkit account."
-                            })]
-                        }), e.jsx(m, {
-                            danger: !0,
-                            href: He,
-                            children: "Delete account"
-                        })]
-                    })
-                })]
-            })]
-        })
-    },
-    ke = o.details`
-  margin-top: 20px;
-  border-top: 1px solid #efedf2;
 
-  summary {
-    padding: 18px 0;
-    color: ${({$danger:t})=>t?"#b42318":"#3f394d"};
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-  }
+            function s(e, t) {
+                var r = e.charCodeAt(t);
+                if (r >= 48 && r <= 57) return r - 48;
+                if (r >= 65 && r <= 70) return r - 55;
+                if (r >= 97 && r <= 102) return r - 87;
+                n(!1, `Invalid character in ` + e)
+            }
 
-  summary:focus-visible {
-    outline: 2px solid #6d3acb;
-    outline-offset: 4px;
-    border-radius: 4px;
-  }
+            function c(e, t, n) {
+                var r = s(e, n);
+                return n - 1 >= t && (r |= s(e, n - 1) << 4), r
+            }
+            i.prototype._parseHex = function(e, t, n) {
+                this.length = Math.ceil((e.length - t) / 6), this.words = Array(this.length);
+                for (var r = 0; r < this.length; r++) this.words[r] = 0;
+                var i = 0,
+                    a = 0,
+                    s;
+                if (n === `be`)
+                    for (r = e.length - 1; r >= t; r -= 2) s = c(e, t, r) << i, this.words[a] |= s & 67108863, i >= 18 ? (i -= 18, a += 1, this.words[a] |= s >>> 26) : i += 8;
+                else
+                    for (r = (e.length - t) % 2 == 0 ? t + 1 : t; r < e.length; r += 2) s = c(e, t, r) << i, this.words[a] |= s & 67108863, i >= 18 ? (i -= 18, a += 1, this.words[a] |= s >>> 26) : i += 8;
+                this._strip()
+            };
 
-  & + & {
-    margin-top: 0;
-  }
-`,
-    Ce = o.div`
-  padding: 0 0 18px;
-`,
-    ja = de(() => {
-        const {
-            navigation: t
-        } = i.useContext(le), r = Z.find(n => n.tab === t.currentTab && (!n.educatorOnly || !T())) || Z[0];
-        return e.jsxs(va, {
-            "aria-labelledby": "settings-section-title",
-            children: [e.jsx(wa, {
-                children: e.jsx("h1", {
-                    id: "settings-section-title",
-                    children: r.label
+            function l(e, t, r, i) {
+                for (var a = 0, s = 0, c = Math.min(e.length, r), l = t; l < c; l++) {
+                    var u = e.charCodeAt(l) - 48;
+                    a *= i, s = u >= 49 ? u - 49 + 10 : u >= 17 ? u - 17 + 10 : u, n(u >= 0 && s < i, `Invalid character`), a += s
+                }
+                return a
+            }
+            i.prototype._parseBase = function(e, t, n) {
+                this.words = [0], this.length = 1;
+                for (var r = 0, i = 1; i <= 67108863; i *= t) r++;
+                r--, i = i / t | 0;
+                for (var a = e.length - n, s = a % r, c = Math.min(a, a - s) + n, u = 0, d = n; d < c; d += r) u = l(e, d, d + r, t), this.imuln(i), this.words[0] + u < 67108864 ? this.words[0] += u : this._iaddn(u);
+                if (s !== 0) {
+                    var f = 1;
+                    for (u = l(e, d, e.length, t), d = 0; d < s; d++) f *= t;
+                    this.imuln(f), this.words[0] + u < 67108864 ? this.words[0] += u : this._iaddn(u)
+                }
+                this._strip()
+            }, i.prototype.copy = function(e) {
+                e.words = Array(this.length);
+                for (var t = 0; t < this.length; t++) e.words[t] = this.words[t];
+                e.length = this.length, e.negative = this.negative, e.red = this.red
+            };
+
+            function u(e, t) {
+                e.words = t.words, e.length = t.length, e.negative = t.negative, e.red = t.red
+            }
+            if (i.prototype._move = function(e) {
+                    u(e, this)
+                }, i.prototype.clone = function() {
+                    var e = new i(null);
+                    return this.copy(e), e
+                }, i.prototype._expand = function(e) {
+                    for (; this.length < e;) this.words[this.length++] = 0;
+                    return this
+                }, i.prototype._strip = function() {
+                    for (; this.length > 1 && this.words[this.length - 1] === 0;) this.length--;
+                    return this._normSign()
+                }, i.prototype._normSign = function() {
+                    return this.length === 1 && this.words[0] === 0 && (this.negative = 0), this
+                }, typeof Symbol < `u` && typeof Symbol.for == `function`) try {
+                i.prototype[Symbol.for(`nodejs.util.inspect.custom`)] = d
+            } catch {
+                i.prototype.inspect = d
+            } else i.prototype.inspect = d;
+
+            function d() {
+                return (this.red ? `<BN-R: ` : `<BN: `) + this.toString(16) + `>`
+            }
+            var f = `.0.00.000.0000.00000.000000.0000000.00000000.000000000.0000000000.00000000000.000000000000.0000000000000.00000000000000.000000000000000.0000000000000000.00000000000000000.000000000000000000.0000000000000000000.00000000000000000000.000000000000000000000.0000000000000000000000.00000000000000000000000.000000000000000000000000.0000000000000000000000000`.split(`.`),
+                p = [0, 0, 25, 16, 12, 11, 10, 9, 8, 8, 7, 7, 7, 7, 6, 6, 6, 6, 6, 6, 6, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+                m = [0, 0, 33554432, 43046721, 16777216, 48828125, 60466176, 40353607, 16777216, 43046721, 1e7, 19487171, 35831808, 62748517, 7529536, 11390625, 16777216, 24137569, 34012224, 47045881, 64e6, 4084101, 5153632, 6436343, 7962624, 9765625, 11881376, 14348907, 17210368, 20511149, 243e5, 28629151, 33554432, 39135393, 45435424, 52521875, 60466176];
+            i.prototype.toString = function(e, t) {
+                e = e || 10, t = t | 0 || 1;
+                var r;
+                if (e === 16 || e === `hex`) {
+                    r = ``;
+                    for (var i = 0, a = 0, s = 0; s < this.length; s++) {
+                        var c = this.words[s],
+                            l = ((c << i | a) & 16777215).toString(16);
+                        a = c >>> 24 - i & 16777215, i += 2, i >= 26 && (i -= 26, s--), r = a !== 0 || s !== this.length - 1 ? f[6 - l.length] + l + r : l + r
+                    }
+                    for (a !== 0 && (r = a.toString(16) + r); r.length % t !== 0;) r = `0` + r;
+                    return this.negative !== 0 && (r = `-` + r), r
+                }
+                if (e === (e | 0) && e >= 2 && e <= 36) {
+                    var u = p[e],
+                        d = m[e];
+                    r = ``;
+                    var h = this.clone();
+                    for (h.negative = 0; !h.isZero();) {
+                        var g = h.modrn(d).toString(e);
+                        h = h.idivn(d), r = h.isZero() ? g + r : f[u - g.length] + g + r
+                    }
+                    for (this.isZero() && (r = `0` + r); r.length % t !== 0;) r = `0` + r;
+                    return this.negative !== 0 && (r = `-` + r), r
+                }
+                n(!1, `Base should be between 2 and 36`)
+            }, i.prototype.toNumber = function() {
+                var e = this.words[0];
+                return this.length === 2 ? e += this.words[1] * 67108864 : this.length === 3 && this.words[2] === 1 ? e += 4503599627370496 + this.words[1] * 67108864 : this.length > 2 && n(!1, `Number can only safely store up to 53 bits`), this.negative === 0 ? e : -e
+            }, i.prototype.toJSON = function() {
+                return this.toString(16, 2)
+            }, a && (i.prototype.toBuffer = function(e, t) {
+                return this.toArrayLike(a, e, t)
+            }), i.prototype.toArray = function(e, t) {
+                return this.toArrayLike(Array, e, t)
+            };
+            var h = function(e, t) {
+                return e.allocUnsafe ? e.allocUnsafe(t) : new e(t)
+            };
+            i.prototype.toArrayLike = function(e, t, r) {
+                this._strip();
+                var i = this.byteLength(),
+                    a = r || Math.max(1, i);
+                n(i <= a, `byte array longer than desired length`), n(a > 0, `Requested array length <= 0`);
+                var s = h(e, a),
+                    c = t === `le` ? `LE` : `BE`;
+                return this[`_toArrayLike` + c](s, i), s
+            }, i.prototype._toArrayLikeLE = function(e, t) {
+                for (var n = 0, r = 0, i = 0, a = 0; i < this.length; i++) {
+                    var s = this.words[i] << a | r;
+                    e[n++] = s & 255, n < e.length && (e[n++] = s >> 8 & 255), n < e.length && (e[n++] = s >> 16 & 255), a === 6 ? (n < e.length && (e[n++] = s >> 24 & 255), r = 0, a = 0) : (r = s >>> 24, a += 2)
+                }
+                if (n < e.length)
+                    for (e[n++] = r; n < e.length;) e[n++] = 0
+            }, i.prototype._toArrayLikeBE = function(e, t) {
+                for (var n = e.length - 1, r = 0, i = 0, a = 0; i < this.length; i++) {
+                    var s = this.words[i] << a | r;
+                    e[n--] = s & 255, n >= 0 && (e[n--] = s >> 8 & 255), n >= 0 && (e[n--] = s >> 16 & 255), a === 6 ? (n >= 0 && (e[n--] = s >> 24 & 255), r = 0, a = 0) : (r = s >>> 24, a += 2)
+                }
+                if (n >= 0)
+                    for (e[n--] = r; n >= 0;) e[n--] = 0
+            }, Math.clz32 ? i.prototype._countBits = function(e) {
+                return 32 - Math.clz32(e)
+            } : i.prototype._countBits = function(e) {
+                var t = e,
+                    n = 0;
+                return t >= 4096 && (n += 13, t >>>= 13), t >= 64 && (n += 7, t >>>= 7), t >= 8 && (n += 4, t >>>= 4), t >= 2 && (n += 2, t >>>= 2), n + t
+            }, i.prototype._zeroBits = function(e) {
+                if (e === 0) return 26;
+                var t = e,
+                    n = 0;
+                return t & 8191 || (n += 13, t >>>= 13), t & 127 || (n += 7, t >>>= 7), t & 15 || (n += 4, t >>>= 4), t & 3 || (n += 2, t >>>= 2), t & 1 || n++, n
+            }, i.prototype.bitLength = function() {
+                var e = this.words[this.length - 1],
+                    t = this._countBits(e);
+                return (this.length - 1) * 26 + t
+            };
+
+            function g(e) {
+                for (var t = Array(e.bitLength()), n = 0; n < t.length; n++) {
+                    var r = n / 26 | 0,
+                        i = n % 26;
+                    t[n] = e.words[r] >>> i & 1
+                }
+                return t
+            }
+            i.prototype.zeroBits = function() {
+                if (this.isZero()) return 0;
+                for (var e = 0, t = 0; t < this.length; t++) {
+                    var n = this._zeroBits(this.words[t]);
+                    if (e += n, n !== 26) break
+                }
+                return e
+            }, i.prototype.byteLength = function() {
+                return Math.ceil(this.bitLength() / 8)
+            }, i.prototype.toTwos = function(e) {
+                return this.negative === 0 ? this.clone() : this.abs().inotn(e).iaddn(1)
+            }, i.prototype.fromTwos = function(e) {
+                return this.testn(e - 1) ? this.notn(e).iaddn(1).ineg() : this.clone()
+            }, i.prototype.isNeg = function() {
+                return this.negative !== 0
+            }, i.prototype.neg = function() {
+                return this.clone().ineg()
+            }, i.prototype.ineg = function() {
+                return this.isZero() || (this.negative ^= 1), this
+            }, i.prototype.iuor = function(e) {
+                for (; this.length < e.length;) this.words[this.length++] = 0;
+                for (var t = 0; t < e.length; t++) this.words[t] = this.words[t] | e.words[t];
+                return this._strip()
+            }, i.prototype.ior = function(e) {
+                return n((this.negative | e.negative) === 0), this.iuor(e)
+            }, i.prototype.or = function(e) {
+                return this.length > e.length ? this.clone().ior(e) : e.clone().ior(this)
+            }, i.prototype.uor = function(e) {
+                return this.length > e.length ? this.clone().iuor(e) : e.clone().iuor(this)
+            }, i.prototype.iuand = function(e) {
+                for (var t = this.length > e.length ? e : this, n = 0; n < t.length; n++) this.words[n] = this.words[n] & e.words[n];
+                return this.length = t.length, this._strip()
+            }, i.prototype.iand = function(e) {
+                return n((this.negative | e.negative) === 0), this.iuand(e)
+            }, i.prototype.and = function(e) {
+                return this.length > e.length ? this.clone().iand(e) : e.clone().iand(this)
+            }, i.prototype.uand = function(e) {
+                return this.length > e.length ? this.clone().iuand(e) : e.clone().iuand(this)
+            }, i.prototype.iuxor = function(e) {
+                var t, n;
+                this.length > e.length ? (t = this, n = e) : (t = e, n = this);
+                for (var r = 0; r < n.length; r++) this.words[r] = t.words[r] ^ n.words[r];
+                if (this !== t)
+                    for (; r < t.length; r++) this.words[r] = t.words[r];
+                return this.length = t.length, this._strip()
+            }, i.prototype.ixor = function(e) {
+                return n((this.negative | e.negative) === 0), this.iuxor(e)
+            }, i.prototype.xor = function(e) {
+                return this.length > e.length ? this.clone().ixor(e) : e.clone().ixor(this)
+            }, i.prototype.uxor = function(e) {
+                return this.length > e.length ? this.clone().iuxor(e) : e.clone().iuxor(this)
+            }, i.prototype.inotn = function(e) {
+                n(typeof e == `number` && e >= 0);
+                var t = Math.ceil(e / 26) | 0,
+                    r = e % 26;
+                this._expand(t), r > 0 && t--;
+                for (var i = 0; i < t; i++) this.words[i] = ~this.words[i] & 67108863;
+                return r > 0 && (this.words[i] = ~this.words[i] & 67108863 >> 26 - r), this._strip()
+            }, i.prototype.notn = function(e) {
+                return this.clone().inotn(e)
+            }, i.prototype.setn = function(e, t) {
+                n(typeof e == `number` && e >= 0);
+                var r = e / 26 | 0,
+                    i = e % 26;
+                return this._expand(r + 1), t ? this.words[r] = this.words[r] | 1 << i : this.words[r] = this.words[r] & ~(1 << i), this._strip()
+            }, i.prototype.iadd = function(e) {
+                var t;
+                if (this.negative !== 0 && e.negative === 0) return this.negative = 0, t = this.isub(e), this.negative ^= 1, this._normSign();
+                if (this.negative === 0 && e.negative !== 0) return e.negative = 0, t = this.isub(e), e.negative = 1, t._normSign();
+                var n, r;
+                this.length > e.length ? (n = this, r = e) : (n = e, r = this);
+                for (var i = 0, a = 0; a < r.length; a++) t = (n.words[a] | 0) + (r.words[a] | 0) + i, this.words[a] = t & 67108863, i = t >>> 26;
+                for (; i !== 0 && a < n.length; a++) t = (n.words[a] | 0) + i, this.words[a] = t & 67108863, i = t >>> 26;
+                if (this.length = n.length, i !== 0) this.words[this.length] = i, this.length++;
+                else if (n !== this)
+                    for (; a < n.length; a++) this.words[a] = n.words[a];
+                return this
+            }, i.prototype.add = function(e) {
+                var t;
+                return e.negative !== 0 && this.negative === 0 ? (e.negative = 0, t = this.sub(e), e.negative ^= 1, t) : e.negative === 0 && this.negative !== 0 ? (this.negative = 0, t = e.sub(this), this.negative = 1, t) : this.length > e.length ? this.clone().iadd(e) : e.clone().iadd(this)
+            }, i.prototype.isub = function(e) {
+                if (e.negative !== 0) {
+                    e.negative = 0;
+                    var t = this.iadd(e);
+                    return e.negative = 1, t._normSign()
+                }
+                if (this.negative !== 0) return this.negative = 0, this.iadd(e), this.negative = 1, this._normSign();
+                var n = this.cmp(e);
+                if (n === 0) return this.negative = 0, this.length = 1, this.words[0] = 0, this;
+                var r, i;
+                n > 0 ? (r = this, i = e) : (r = e, i = this);
+                for (var a = 0, s = 0; s < i.length; s++) t = (r.words[s] | 0) - (i.words[s] | 0) + a, a = t >> 26, this.words[s] = t & 67108863;
+                for (; a !== 0 && s < r.length; s++) t = (r.words[s] | 0) + a, a = t >> 26, this.words[s] = t & 67108863;
+                if (a === 0 && s < r.length && r !== this)
+                    for (; s < r.length; s++) this.words[s] = r.words[s];
+                return this.length = Math.max(this.length, s), r !== this && (this.negative = 1), this._strip()
+            }, i.prototype.sub = function(e) {
+                return this.clone().isub(e)
+            };
+
+            function _(e, t, n) {
+                n.negative = t.negative ^ e.negative;
+                var r = e.length + t.length | 0;
+                n.length = r, r = r - 1 | 0;
+                var i = e.words[0] | 0,
+                    a = t.words[0] | 0,
+                    s = i * a,
+                    c = s & 67108863,
+                    l = s / 67108864 | 0;
+                n.words[0] = c;
+                for (var u = 1; u < r; u++) {
+                    for (var d = l >>> 26, f = l & 67108863, p = Math.min(u, t.length - 1), m = Math.max(0, u - e.length + 1); m <= p; m++) {
+                        var h = u - m | 0;
+                        i = e.words[h] | 0, a = t.words[m] | 0, s = i * a + f, d += s / 67108864 | 0, f = s & 67108863
+                    }
+                    n.words[u] = f | 0, l = d | 0
+                }
+                return l === 0 ? n.length-- : n.words[u] = l | 0, n._strip()
+            }
+            var v = function(e, t, n) {
+                var r = e.words,
+                    i = t.words,
+                    a = n.words,
+                    s = 0,
+                    c, l, u, d = r[0] | 0,
+                    f = d & 8191,
+                    p = d >>> 13,
+                    m = r[1] | 0,
+                    h = m & 8191,
+                    g = m >>> 13,
+                    _ = r[2] | 0,
+                    v = _ & 8191,
+                    y = _ >>> 13,
+                    b = r[3] | 0,
+                    x = b & 8191,
+                    S = b >>> 13,
+                    C = r[4] | 0,
+                    w = C & 8191,
+                    E = C >>> 13,
+                    ee = r[5] | 0,
+                    D = ee & 8191,
+                    O = ee >>> 13,
+                    te = r[6] | 0,
+                    k = te & 8191,
+                    A = te >>> 13,
+                    ne = r[7] | 0,
+                    j = ne & 8191,
+                    M = ne >>> 13,
+                    re = r[8] | 0,
+                    N = re & 8191,
+                    P = re >>> 13,
+                    ie = r[9] | 0,
+                    I = ie & 8191,
+                    L = ie >>> 13,
+                    ae = i[0] | 0,
+                    R = ae & 8191,
+                    z = ae >>> 13,
+                    oe = i[1] | 0,
+                    B = oe & 8191,
+                    V = oe >>> 13,
+                    se = i[2] | 0,
+                    H = se & 8191,
+                    U = se >>> 13,
+                    ce = i[3] | 0,
+                    W = ce & 8191,
+                    G = ce >>> 13,
+                    le = i[4] | 0,
+                    K = le & 8191,
+                    q = le >>> 13,
+                    ue = i[5] | 0,
+                    J = ue & 8191,
+                    Y = ue >>> 13,
+                    de = i[6] | 0,
+                    X = de & 8191,
+                    Z = de >>> 13,
+                    fe = i[7] | 0,
+                    Q = fe & 8191,
+                    pe = fe >>> 13,
+                    me = i[8] | 0,
+                    he = me & 8191,
+                    ge = me >>> 13,
+                    _e = i[9] | 0,
+                    ve = _e & 8191,
+                    $ = _e >>> 13;
+                n.negative = e.negative ^ t.negative, n.length = 19, c = Math.imul(f, R), l = Math.imul(f, z), l = l + Math.imul(p, R) | 0, u = Math.imul(p, z);
+                var ye = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (ye >>> 26) | 0, ye &= 67108863, c = Math.imul(h, R), l = Math.imul(h, z), l = l + Math.imul(g, R) | 0, u = Math.imul(g, z), c = c + Math.imul(f, B) | 0, l = l + Math.imul(f, V) | 0, l = l + Math.imul(p, B) | 0, u = u + Math.imul(p, V) | 0;
+                var be = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (be >>> 26) | 0, be &= 67108863, c = Math.imul(v, R), l = Math.imul(v, z), l = l + Math.imul(y, R) | 0, u = Math.imul(y, z), c = c + Math.imul(h, B) | 0, l = l + Math.imul(h, V) | 0, l = l + Math.imul(g, B) | 0, u = u + Math.imul(g, V) | 0, c = c + Math.imul(f, H) | 0, l = l + Math.imul(f, U) | 0, l = l + Math.imul(p, H) | 0, u = u + Math.imul(p, U) | 0;
+                var xe = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (xe >>> 26) | 0, xe &= 67108863, c = Math.imul(x, R), l = Math.imul(x, z), l = l + Math.imul(S, R) | 0, u = Math.imul(S, z), c = c + Math.imul(v, B) | 0, l = l + Math.imul(v, V) | 0, l = l + Math.imul(y, B) | 0, u = u + Math.imul(y, V) | 0, c = c + Math.imul(h, H) | 0, l = l + Math.imul(h, U) | 0, l = l + Math.imul(g, H) | 0, u = u + Math.imul(g, U) | 0, c = c + Math.imul(f, W) | 0, l = l + Math.imul(f, G) | 0, l = l + Math.imul(p, W) | 0, u = u + Math.imul(p, G) | 0;
+                var Se = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Se >>> 26) | 0, Se &= 67108863, c = Math.imul(w, R), l = Math.imul(w, z), l = l + Math.imul(E, R) | 0, u = Math.imul(E, z), c = c + Math.imul(x, B) | 0, l = l + Math.imul(x, V) | 0, l = l + Math.imul(S, B) | 0, u = u + Math.imul(S, V) | 0, c = c + Math.imul(v, H) | 0, l = l + Math.imul(v, U) | 0, l = l + Math.imul(y, H) | 0, u = u + Math.imul(y, U) | 0, c = c + Math.imul(h, W) | 0, l = l + Math.imul(h, G) | 0, l = l + Math.imul(g, W) | 0, u = u + Math.imul(g, G) | 0, c = c + Math.imul(f, K) | 0, l = l + Math.imul(f, q) | 0, l = l + Math.imul(p, K) | 0, u = u + Math.imul(p, q) | 0;
+                var Ce = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Ce >>> 26) | 0, Ce &= 67108863, c = Math.imul(D, R), l = Math.imul(D, z), l = l + Math.imul(O, R) | 0, u = Math.imul(O, z), c = c + Math.imul(w, B) | 0, l = l + Math.imul(w, V) | 0, l = l + Math.imul(E, B) | 0, u = u + Math.imul(E, V) | 0, c = c + Math.imul(x, H) | 0, l = l + Math.imul(x, U) | 0, l = l + Math.imul(S, H) | 0, u = u + Math.imul(S, U) | 0, c = c + Math.imul(v, W) | 0, l = l + Math.imul(v, G) | 0, l = l + Math.imul(y, W) | 0, u = u + Math.imul(y, G) | 0, c = c + Math.imul(h, K) | 0, l = l + Math.imul(h, q) | 0, l = l + Math.imul(g, K) | 0, u = u + Math.imul(g, q) | 0, c = c + Math.imul(f, J) | 0, l = l + Math.imul(f, Y) | 0, l = l + Math.imul(p, J) | 0, u = u + Math.imul(p, Y) | 0;
+                var we = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (we >>> 26) | 0, we &= 67108863, c = Math.imul(k, R), l = Math.imul(k, z), l = l + Math.imul(A, R) | 0, u = Math.imul(A, z), c = c + Math.imul(D, B) | 0, l = l + Math.imul(D, V) | 0, l = l + Math.imul(O, B) | 0, u = u + Math.imul(O, V) | 0, c = c + Math.imul(w, H) | 0, l = l + Math.imul(w, U) | 0, l = l + Math.imul(E, H) | 0, u = u + Math.imul(E, U) | 0, c = c + Math.imul(x, W) | 0, l = l + Math.imul(x, G) | 0, l = l + Math.imul(S, W) | 0, u = u + Math.imul(S, G) | 0, c = c + Math.imul(v, K) | 0, l = l + Math.imul(v, q) | 0, l = l + Math.imul(y, K) | 0, u = u + Math.imul(y, q) | 0, c = c + Math.imul(h, J) | 0, l = l + Math.imul(h, Y) | 0, l = l + Math.imul(g, J) | 0, u = u + Math.imul(g, Y) | 0, c = c + Math.imul(f, X) | 0, l = l + Math.imul(f, Z) | 0, l = l + Math.imul(p, X) | 0, u = u + Math.imul(p, Z) | 0;
+                var Te = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Te >>> 26) | 0, Te &= 67108863, c = Math.imul(j, R), l = Math.imul(j, z), l = l + Math.imul(M, R) | 0, u = Math.imul(M, z), c = c + Math.imul(k, B) | 0, l = l + Math.imul(k, V) | 0, l = l + Math.imul(A, B) | 0, u = u + Math.imul(A, V) | 0, c = c + Math.imul(D, H) | 0, l = l + Math.imul(D, U) | 0, l = l + Math.imul(O, H) | 0, u = u + Math.imul(O, U) | 0, c = c + Math.imul(w, W) | 0, l = l + Math.imul(w, G) | 0, l = l + Math.imul(E, W) | 0, u = u + Math.imul(E, G) | 0, c = c + Math.imul(x, K) | 0, l = l + Math.imul(x, q) | 0, l = l + Math.imul(S, K) | 0, u = u + Math.imul(S, q) | 0, c = c + Math.imul(v, J) | 0, l = l + Math.imul(v, Y) | 0, l = l + Math.imul(y, J) | 0, u = u + Math.imul(y, Y) | 0, c = c + Math.imul(h, X) | 0, l = l + Math.imul(h, Z) | 0, l = l + Math.imul(g, X) | 0, u = u + Math.imul(g, Z) | 0, c = c + Math.imul(f, Q) | 0, l = l + Math.imul(f, pe) | 0, l = l + Math.imul(p, Q) | 0, u = u + Math.imul(p, pe) | 0;
+                var Ee = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Ee >>> 26) | 0, Ee &= 67108863, c = Math.imul(N, R), l = Math.imul(N, z), l = l + Math.imul(P, R) | 0, u = Math.imul(P, z), c = c + Math.imul(j, B) | 0, l = l + Math.imul(j, V) | 0, l = l + Math.imul(M, B) | 0, u = u + Math.imul(M, V) | 0, c = c + Math.imul(k, H) | 0, l = l + Math.imul(k, U) | 0, l = l + Math.imul(A, H) | 0, u = u + Math.imul(A, U) | 0, c = c + Math.imul(D, W) | 0, l = l + Math.imul(D, G) | 0, l = l + Math.imul(O, W) | 0, u = u + Math.imul(O, G) | 0, c = c + Math.imul(w, K) | 0, l = l + Math.imul(w, q) | 0, l = l + Math.imul(E, K) | 0, u = u + Math.imul(E, q) | 0, c = c + Math.imul(x, J) | 0, l = l + Math.imul(x, Y) | 0, l = l + Math.imul(S, J) | 0, u = u + Math.imul(S, Y) | 0, c = c + Math.imul(v, X) | 0, l = l + Math.imul(v, Z) | 0, l = l + Math.imul(y, X) | 0, u = u + Math.imul(y, Z) | 0, c = c + Math.imul(h, Q) | 0, l = l + Math.imul(h, pe) | 0, l = l + Math.imul(g, Q) | 0, u = u + Math.imul(g, pe) | 0, c = c + Math.imul(f, he) | 0, l = l + Math.imul(f, ge) | 0, l = l + Math.imul(p, he) | 0, u = u + Math.imul(p, ge) | 0;
+                var De = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (De >>> 26) | 0, De &= 67108863, c = Math.imul(I, R), l = Math.imul(I, z), l = l + Math.imul(L, R) | 0, u = Math.imul(L, z), c = c + Math.imul(N, B) | 0, l = l + Math.imul(N, V) | 0, l = l + Math.imul(P, B) | 0, u = u + Math.imul(P, V) | 0, c = c + Math.imul(j, H) | 0, l = l + Math.imul(j, U) | 0, l = l + Math.imul(M, H) | 0, u = u + Math.imul(M, U) | 0, c = c + Math.imul(k, W) | 0, l = l + Math.imul(k, G) | 0, l = l + Math.imul(A, W) | 0, u = u + Math.imul(A, G) | 0, c = c + Math.imul(D, K) | 0, l = l + Math.imul(D, q) | 0, l = l + Math.imul(O, K) | 0, u = u + Math.imul(O, q) | 0, c = c + Math.imul(w, J) | 0, l = l + Math.imul(w, Y) | 0, l = l + Math.imul(E, J) | 0, u = u + Math.imul(E, Y) | 0, c = c + Math.imul(x, X) | 0, l = l + Math.imul(x, Z) | 0, l = l + Math.imul(S, X) | 0, u = u + Math.imul(S, Z) | 0, c = c + Math.imul(v, Q) | 0, l = l + Math.imul(v, pe) | 0, l = l + Math.imul(y, Q) | 0, u = u + Math.imul(y, pe) | 0, c = c + Math.imul(h, he) | 0, l = l + Math.imul(h, ge) | 0, l = l + Math.imul(g, he) | 0, u = u + Math.imul(g, ge) | 0, c = c + Math.imul(f, ve) | 0, l = l + Math.imul(f, $) | 0, l = l + Math.imul(p, ve) | 0, u = u + Math.imul(p, $) | 0;
+                var Oe = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Oe >>> 26) | 0, Oe &= 67108863, c = Math.imul(I, B), l = Math.imul(I, V), l = l + Math.imul(L, B) | 0, u = Math.imul(L, V), c = c + Math.imul(N, H) | 0, l = l + Math.imul(N, U) | 0, l = l + Math.imul(P, H) | 0, u = u + Math.imul(P, U) | 0, c = c + Math.imul(j, W) | 0, l = l + Math.imul(j, G) | 0, l = l + Math.imul(M, W) | 0, u = u + Math.imul(M, G) | 0, c = c + Math.imul(k, K) | 0, l = l + Math.imul(k, q) | 0, l = l + Math.imul(A, K) | 0, u = u + Math.imul(A, q) | 0, c = c + Math.imul(D, J) | 0, l = l + Math.imul(D, Y) | 0, l = l + Math.imul(O, J) | 0, u = u + Math.imul(O, Y) | 0, c = c + Math.imul(w, X) | 0, l = l + Math.imul(w, Z) | 0, l = l + Math.imul(E, X) | 0, u = u + Math.imul(E, Z) | 0, c = c + Math.imul(x, Q) | 0, l = l + Math.imul(x, pe) | 0, l = l + Math.imul(S, Q) | 0, u = u + Math.imul(S, pe) | 0, c = c + Math.imul(v, he) | 0, l = l + Math.imul(v, ge) | 0, l = l + Math.imul(y, he) | 0, u = u + Math.imul(y, ge) | 0, c = c + Math.imul(h, ve) | 0, l = l + Math.imul(h, $) | 0, l = l + Math.imul(g, ve) | 0, u = u + Math.imul(g, $) | 0;
+                var ke = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (ke >>> 26) | 0, ke &= 67108863, c = Math.imul(I, H), l = Math.imul(I, U), l = l + Math.imul(L, H) | 0, u = Math.imul(L, U), c = c + Math.imul(N, W) | 0, l = l + Math.imul(N, G) | 0, l = l + Math.imul(P, W) | 0, u = u + Math.imul(P, G) | 0, c = c + Math.imul(j, K) | 0, l = l + Math.imul(j, q) | 0, l = l + Math.imul(M, K) | 0, u = u + Math.imul(M, q) | 0, c = c + Math.imul(k, J) | 0, l = l + Math.imul(k, Y) | 0, l = l + Math.imul(A, J) | 0, u = u + Math.imul(A, Y) | 0, c = c + Math.imul(D, X) | 0, l = l + Math.imul(D, Z) | 0, l = l + Math.imul(O, X) | 0, u = u + Math.imul(O, Z) | 0, c = c + Math.imul(w, Q) | 0, l = l + Math.imul(w, pe) | 0, l = l + Math.imul(E, Q) | 0, u = u + Math.imul(E, pe) | 0, c = c + Math.imul(x, he) | 0, l = l + Math.imul(x, ge) | 0, l = l + Math.imul(S, he) | 0, u = u + Math.imul(S, ge) | 0, c = c + Math.imul(v, ve) | 0, l = l + Math.imul(v, $) | 0, l = l + Math.imul(y, ve) | 0, u = u + Math.imul(y, $) | 0;
+                var Ae = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Ae >>> 26) | 0, Ae &= 67108863, c = Math.imul(I, W), l = Math.imul(I, G), l = l + Math.imul(L, W) | 0, u = Math.imul(L, G), c = c + Math.imul(N, K) | 0, l = l + Math.imul(N, q) | 0, l = l + Math.imul(P, K) | 0, u = u + Math.imul(P, q) | 0, c = c + Math.imul(j, J) | 0, l = l + Math.imul(j, Y) | 0, l = l + Math.imul(M, J) | 0, u = u + Math.imul(M, Y) | 0, c = c + Math.imul(k, X) | 0, l = l + Math.imul(k, Z) | 0, l = l + Math.imul(A, X) | 0, u = u + Math.imul(A, Z) | 0, c = c + Math.imul(D, Q) | 0, l = l + Math.imul(D, pe) | 0, l = l + Math.imul(O, Q) | 0, u = u + Math.imul(O, pe) | 0, c = c + Math.imul(w, he) | 0, l = l + Math.imul(w, ge) | 0, l = l + Math.imul(E, he) | 0, u = u + Math.imul(E, ge) | 0, c = c + Math.imul(x, ve) | 0, l = l + Math.imul(x, $) | 0, l = l + Math.imul(S, ve) | 0, u = u + Math.imul(S, $) | 0;
+                var je = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (je >>> 26) | 0, je &= 67108863, c = Math.imul(I, K), l = Math.imul(I, q), l = l + Math.imul(L, K) | 0, u = Math.imul(L, q), c = c + Math.imul(N, J) | 0, l = l + Math.imul(N, Y) | 0, l = l + Math.imul(P, J) | 0, u = u + Math.imul(P, Y) | 0, c = c + Math.imul(j, X) | 0, l = l + Math.imul(j, Z) | 0, l = l + Math.imul(M, X) | 0, u = u + Math.imul(M, Z) | 0, c = c + Math.imul(k, Q) | 0, l = l + Math.imul(k, pe) | 0, l = l + Math.imul(A, Q) | 0, u = u + Math.imul(A, pe) | 0, c = c + Math.imul(D, he) | 0, l = l + Math.imul(D, ge) | 0, l = l + Math.imul(O, he) | 0, u = u + Math.imul(O, ge) | 0, c = c + Math.imul(w, ve) | 0, l = l + Math.imul(w, $) | 0, l = l + Math.imul(E, ve) | 0, u = u + Math.imul(E, $) | 0;
+                var Me = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Me >>> 26) | 0, Me &= 67108863, c = Math.imul(I, J), l = Math.imul(I, Y), l = l + Math.imul(L, J) | 0, u = Math.imul(L, Y), c = c + Math.imul(N, X) | 0, l = l + Math.imul(N, Z) | 0, l = l + Math.imul(P, X) | 0, u = u + Math.imul(P, Z) | 0, c = c + Math.imul(j, Q) | 0, l = l + Math.imul(j, pe) | 0, l = l + Math.imul(M, Q) | 0, u = u + Math.imul(M, pe) | 0, c = c + Math.imul(k, he) | 0, l = l + Math.imul(k, ge) | 0, l = l + Math.imul(A, he) | 0, u = u + Math.imul(A, ge) | 0, c = c + Math.imul(D, ve) | 0, l = l + Math.imul(D, $) | 0, l = l + Math.imul(O, ve) | 0, u = u + Math.imul(O, $) | 0;
+                var Ne = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Ne >>> 26) | 0, Ne &= 67108863, c = Math.imul(I, X), l = Math.imul(I, Z), l = l + Math.imul(L, X) | 0, u = Math.imul(L, Z), c = c + Math.imul(N, Q) | 0, l = l + Math.imul(N, pe) | 0, l = l + Math.imul(P, Q) | 0, u = u + Math.imul(P, pe) | 0, c = c + Math.imul(j, he) | 0, l = l + Math.imul(j, ge) | 0, l = l + Math.imul(M, he) | 0, u = u + Math.imul(M, ge) | 0, c = c + Math.imul(k, ve) | 0, l = l + Math.imul(k, $) | 0, l = l + Math.imul(A, ve) | 0, u = u + Math.imul(A, $) | 0;
+                var Pe = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Pe >>> 26) | 0, Pe &= 67108863, c = Math.imul(I, Q), l = Math.imul(I, pe), l = l + Math.imul(L, Q) | 0, u = Math.imul(L, pe), c = c + Math.imul(N, he) | 0, l = l + Math.imul(N, ge) | 0, l = l + Math.imul(P, he) | 0, u = u + Math.imul(P, ge) | 0, c = c + Math.imul(j, ve) | 0, l = l + Math.imul(j, $) | 0, l = l + Math.imul(M, ve) | 0, u = u + Math.imul(M, $) | 0;
+                var Fe = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Fe >>> 26) | 0, Fe &= 67108863, c = Math.imul(I, he), l = Math.imul(I, ge), l = l + Math.imul(L, he) | 0, u = Math.imul(L, ge), c = c + Math.imul(N, ve) | 0, l = l + Math.imul(N, $) | 0, l = l + Math.imul(P, ve) | 0, u = u + Math.imul(P, $) | 0;
+                var Ie = (s + c | 0) + ((l & 8191) << 13) | 0;
+                s = (u + (l >>> 13) | 0) + (Ie >>> 26) | 0, Ie &= 67108863, c = Math.imul(I, ve), l = Math.imul(I, $), l = l + Math.imul(L, ve) | 0, u = Math.imul(L, $);
+                var Le = (s + c | 0) + ((l & 8191) << 13) | 0;
+                return s = (u + (l >>> 13) | 0) + (Le >>> 26) | 0, Le &= 67108863, a[0] = ye, a[1] = be, a[2] = xe, a[3] = Se, a[4] = Ce, a[5] = we, a[6] = Te, a[7] = Ee, a[8] = De, a[9] = Oe, a[10] = ke, a[11] = Ae, a[12] = je, a[13] = Me, a[14] = Ne, a[15] = Pe, a[16] = Fe, a[17] = Ie, a[18] = Le, s !== 0 && (a[19] = s, n.length++), n
+            };
+            Math.imul || (v = _);
+
+            function y(e, t, n) {
+                n.negative = t.negative ^ e.negative, n.length = e.length + t.length;
+                for (var r = 0, i = 0, a = 0; a < n.length - 1; a++) {
+                    var s = i;
+                    i = 0;
+                    for (var c = r & 67108863, l = Math.min(a, t.length - 1), u = Math.max(0, a - e.length + 1); u <= l; u++) {
+                        var d = a - u,
+                            f = (e.words[d] | 0) * (t.words[u] | 0),
+                            p = f & 67108863;
+                        s = s + (f / 67108864 | 0) | 0, p = p + c | 0, c = p & 67108863, s = s + (p >>> 26) | 0, i += s >>> 26, s &= 67108863
+                    }
+                    n.words[a] = c, r = s, s = i
+                }
+                return r === 0 ? n.length-- : n.words[a] = r, n._strip()
+            }
+
+            function b(e, t, n) {
+                return y(e, t, n)
+            }
+            i.prototype.mulTo = function(e, t) {
+                var n, r = this.length + e.length;
+                return n = this.length === 10 && e.length === 10 ? v(this, e, t) : r < 63 ? _(this, e, t) : r < 1024 ? y(this, e, t) : b(this, e, t), n
+            };
+
+            function x(e, t) {
+                this.x = e, this.y = t
+            }
+            x.prototype.makeRBT = function(e) {
+                for (var t = Array(e), n = i.prototype._countBits(e) - 1, r = 0; r < e; r++) t[r] = this.revBin(r, n, e);
+                return t
+            }, x.prototype.revBin = function(e, t, n) {
+                if (e === 0 || e === n - 1) return e;
+                for (var r = 0, i = 0; i < t; i++) r |= (e & 1) << t - i - 1, e >>= 1;
+                return r
+            }, x.prototype.permute = function(e, t, n, r, i, a) {
+                for (var s = 0; s < a; s++) r[s] = t[e[s]], i[s] = n[e[s]]
+            }, x.prototype.transform = function(e, t, n, r, i, a) {
+                this.permute(a, e, t, n, r, i);
+                for (var s = 1; s < i; s <<= 1)
+                    for (var c = s << 1, l = Math.cos(2 * Math.PI / c), u = Math.sin(2 * Math.PI / c), d = 0; d < i; d += c)
+                        for (var f = l, p = u, m = 0; m < s; m++) {
+                            var h = n[d + m],
+                                g = r[d + m],
+                                _ = n[d + m + s],
+                                v = r[d + m + s],
+                                y = f * _ - p * v;
+                            v = f * v + p * _, _ = y, n[d + m] = h + _, r[d + m] = g + v, n[d + m + s] = h - _, r[d + m + s] = g - v, m !== c && (y = l * f - u * p, p = l * p + u * f, f = y)
+                        }
+            }, x.prototype.guessLen13b = function(e, t) {
+                var n = Math.max(t, e) | 1,
+                    r = n & 1,
+                    i = 0;
+                for (n = n / 2 | 0; n; n >>>= 1) i++;
+                return 1 << i + 1 + r
+            }, x.prototype.conjugate = function(e, t, n) {
+                if (!(n <= 1))
+                    for (var r = 0; r < n / 2; r++) {
+                        var i = e[r];
+                        e[r] = e[n - r - 1], e[n - r - 1] = i, i = t[r], t[r] = -t[n - r - 1], t[n - r - 1] = -i
+                    }
+            }, x.prototype.normalize13b = function(e, t) {
+                for (var n = 0, r = 0; r < t / 2; r++) {
+                    var i = Math.round(e[2 * r + 1] / t) * 8192 + Math.round(e[2 * r] / t) + n;
+                    e[r] = i & 67108863, n = i < 67108864 ? 0 : i / 67108864 | 0
+                }
+                return e
+            }, x.prototype.convert13b = function(e, t, r, i) {
+                for (var a = 0, s = 0; s < t; s++) a += e[s] | 0, r[2 * s] = a & 8191, a >>>= 13, r[2 * s + 1] = a & 8191, a >>>= 13;
+                for (s = 2 * t; s < i; ++s) r[s] = 0;
+                n(a === 0), n(!(a & -8192))
+            }, x.prototype.stub = function(e) {
+                for (var t = Array(e), n = 0; n < e; n++) t[n] = 0;
+                return t
+            }, x.prototype.mulp = function(e, t, n) {
+                var r = 2 * this.guessLen13b(e.length, t.length),
+                    i = this.makeRBT(r),
+                    a = this.stub(r),
+                    s = Array(r),
+                    c = Array(r),
+                    l = Array(r),
+                    u = Array(r),
+                    d = Array(r),
+                    f = Array(r),
+                    p = n.words;
+                p.length = r, this.convert13b(e.words, e.length, s, r), this.convert13b(t.words, t.length, u, r), this.transform(s, a, c, l, r, i), this.transform(u, a, d, f, r, i);
+                for (var m = 0; m < r; m++) {
+                    var h = c[m] * d[m] - l[m] * f[m];
+                    l[m] = c[m] * f[m] + l[m] * d[m], c[m] = h
+                }
+                return this.conjugate(c, l, r), this.transform(c, l, p, a, r, i), this.conjugate(p, a, r), this.normalize13b(p, r), n.negative = e.negative ^ t.negative, n.length = e.length + t.length, n._strip()
+            }, i.prototype.mul = function(e) {
+                var t = new i(null);
+                return t.words = Array(this.length + e.length), this.mulTo(e, t)
+            }, i.prototype.mulf = function(e) {
+                var t = new i(null);
+                return t.words = Array(this.length + e.length), b(this, e, t)
+            }, i.prototype.imul = function(e) {
+                return this.clone().mulTo(e, this)
+            }, i.prototype.imuln = function(e) {
+                var t = e < 0;
+                t && (e = -e), n(typeof e == `number`), n(e < 67108864);
+                for (var r = 0, i = 0; i < this.length; i++) {
+                    var a = (this.words[i] | 0) * e,
+                        s = (a & 67108863) + (r & 67108863);
+                    r >>= 26, r += a / 67108864 | 0, r += s >>> 26, this.words[i] = s & 67108863
+                }
+                return r !== 0 && (this.words[i] = r, this.length++), this.length = e === 0 ? 1 : this.length, t ? this.ineg() : this
+            }, i.prototype.muln = function(e) {
+                return this.clone().imuln(e)
+            }, i.prototype.sqr = function() {
+                return this.mul(this)
+            }, i.prototype.isqr = function() {
+                return this.imul(this.clone())
+            }, i.prototype.pow = function(e) {
+                var t = g(e);
+                if (t.length === 0) return new i(1);
+                for (var n = this, r = 0; r < t.length && t[r] === 0; r++, n = n.sqr());
+                if (++r < t.length)
+                    for (var a = n.sqr(); r < t.length; r++, a = a.sqr()) t[r] !== 0 && (n = n.mul(a));
+                return n
+            }, i.prototype.iushln = function(e) {
+                n(typeof e == `number` && e >= 0);
+                var t = e % 26,
+                    r = (e - t) / 26,
+                    i = 67108863 >>> 26 - t << 26 - t,
+                    a;
+                if (t !== 0) {
+                    var s = 0;
+                    for (a = 0; a < this.length; a++) {
+                        var c = this.words[a] & i,
+                            l = (this.words[a] | 0) - c << t;
+                        this.words[a] = l | s, s = c >>> 26 - t
+                    }
+                    s && (this.words[a] = s, this.length++)
+                }
+                if (r !== 0) {
+                    for (a = this.length - 1; a >= 0; a--) this.words[a + r] = this.words[a];
+                    for (a = 0; a < r; a++) this.words[a] = 0;
+                    this.length += r
+                }
+                return this._strip()
+            }, i.prototype.ishln = function(e) {
+                return n(this.negative === 0), this.iushln(e)
+            }, i.prototype.iushrn = function(e, t, r) {
+                n(typeof e == `number` && e >= 0);
+                var i = t ? (t - t % 26) / 26 : 0,
+                    a = e % 26,
+                    s = Math.min((e - a) / 26, this.length),
+                    c = 67108863 ^ 67108863 >>> a << a,
+                    l = r;
+                if (i -= s, i = Math.max(0, i), l) {
+                    for (var u = 0; u < s; u++) l.words[u] = this.words[u];
+                    l.length = s
+                }
+                if (s !== 0) {
+                    if (this.length > s)
+                        for (this.length -= s, u = 0; u < this.length; u++) this.words[u] = this.words[u + s];
+                    else this.words[0] = 0, this.length = 1
+                }
+                var d = 0;
+                for (u = this.length - 1; u >= 0 && (d !== 0 || u >= i); u--) {
+                    var f = this.words[u] | 0;
+                    this.words[u] = d << 26 - a | f >>> a, d = f & c
+                }
+                return l && d !== 0 && (l.words[l.length++] = d), this.length === 0 && (this.words[0] = 0, this.length = 1), this._strip()
+            }, i.prototype.ishrn = function(e, t, r) {
+                return n(this.negative === 0), this.iushrn(e, t, r)
+            }, i.prototype.shln = function(e) {
+                return this.clone().ishln(e)
+            }, i.prototype.ushln = function(e) {
+                return this.clone().iushln(e)
+            }, i.prototype.shrn = function(e) {
+                return this.clone().ishrn(e)
+            }, i.prototype.ushrn = function(e) {
+                return this.clone().iushrn(e)
+            }, i.prototype.testn = function(e) {
+                n(typeof e == `number` && e >= 0);
+                var t = e % 26,
+                    r = (e - t) / 26,
+                    i = 1 << t;
+                return this.length <= r ? !1 : !!(this.words[r] & i)
+            }, i.prototype.imaskn = function(e) {
+                n(typeof e == `number` && e >= 0);
+                var t = e % 26,
+                    r = (e - t) / 26;
+                if (n(this.negative === 0, `imaskn works only with positive numbers`), this.length <= r) return this;
+                if (t !== 0 && r++, this.length = Math.min(r, this.length), t !== 0) {
+                    var i = 67108863 ^ 67108863 >>> t << t;
+                    this.words[this.length - 1] &= i
+                }
+                return this._strip()
+            }, i.prototype.maskn = function(e) {
+                return this.clone().imaskn(e)
+            }, i.prototype.iaddn = function(e) {
+                return n(typeof e == `number`), n(e < 67108864), e < 0 ? this.isubn(-e) : this.negative === 0 ? this._iaddn(e) : this.length === 1 && (this.words[0] | 0) <= e ? (this.words[0] = e - (this.words[0] | 0), this.negative = 0, this) : (this.negative = 0, this.isubn(e), this.negative = 1, this)
+            }, i.prototype._iaddn = function(e) {
+                this.words[0] += e;
+                for (var t = 0; t < this.length && this.words[t] >= 67108864; t++) this.words[t] -= 67108864, t === this.length - 1 ? this.words[t + 1] = 1 : this.words[t + 1]++;
+                return this.length = Math.max(this.length, t + 1), this
+            }, i.prototype.isubn = function(e) {
+                if (n(typeof e == `number`), n(e < 67108864), e < 0) return this.iaddn(-e);
+                if (this.negative !== 0) return this.negative = 0, this.iaddn(e), this.negative = 1, this;
+                if (this.words[0] -= e, this.length === 1 && this.words[0] < 0) this.words[0] = -this.words[0], this.negative = 1;
+                else
+                    for (var t = 0; t < this.length && this.words[t] < 0; t++) this.words[t] += 67108864, --this.words[t + 1];
+                return this._strip()
+            }, i.prototype.addn = function(e) {
+                return this.clone().iaddn(e)
+            }, i.prototype.subn = function(e) {
+                return this.clone().isubn(e)
+            }, i.prototype.iabs = function() {
+                return this.negative = 0, this
+            }, i.prototype.abs = function() {
+                return this.clone().iabs()
+            }, i.prototype._ishlnsubmul = function(e, t, r) {
+                var i = e.length + r,
+                    a;
+                this._expand(i);
+                var s, c = 0;
+                for (a = 0; a < e.length; a++) {
+                    s = (this.words[a + r] | 0) + c;
+                    var l = (e.words[a] | 0) * t;
+                    s -= l & 67108863, c = (s >> 26) - (l / 67108864 | 0), this.words[a + r] = s & 67108863
+                }
+                for (; a < this.length - r; a++) s = (this.words[a + r] | 0) + c, c = s >> 26, this.words[a + r] = s & 67108863;
+                if (c === 0) return this._strip();
+                for (n(c === -1), c = 0, a = 0; a < this.length; a++) s = -(this.words[a] | 0) + c, c = s >> 26, this.words[a] = s & 67108863;
+                return this.negative = 1, this._strip()
+            }, i.prototype._wordDiv = function(e, t) {
+                var n = this.length - e.length,
+                    r = this.clone(),
+                    a = e,
+                    s = a.words[a.length - 1] | 0;
+                n = 26 - this._countBits(s), n !== 0 && (a = a.ushln(n), r.iushln(n), s = a.words[a.length - 1] | 0);
+                var c = r.length - a.length,
+                    l;
+                if (t !== `mod`) {
+                    l = new i(null), l.length = c + 1, l.words = Array(l.length);
+                    for (var u = 0; u < l.length; u++) l.words[u] = 0
+                }
+                var d = r.clone()._ishlnsubmul(a, 1, c);
+                d.negative === 0 && (r = d, l && (l.words[c] = 1));
+                for (var f = c - 1; f >= 0; f--) {
+                    var p = (r.words[a.length + f] | 0) * 67108864 + (r.words[a.length + f - 1] | 0);
+                    for (p = Math.min(p / s | 0, 67108863), r._ishlnsubmul(a, p, f); r.negative !== 0;) p--, r.negative = 0, r._ishlnsubmul(a, 1, f), r.isZero() || (r.negative ^= 1);
+                    l && (l.words[f] = p)
+                }
+                return l && l._strip(), r._strip(), t !== `div` && n !== 0 && r.iushrn(n), {
+                    div: l || null,
+                    mod: r
+                }
+            }, i.prototype.divmod = function(e, t, r) {
+                if (n(!e.isZero()), this.isZero()) return {
+                    div: new i(0),
+                    mod: new i(0)
+                };
+                var a, s, c;
+                return this.negative !== 0 && e.negative === 0 ? (c = this.neg().divmod(e, t), t !== `mod` && (a = c.div.neg()), t !== `div` && (s = c.mod.neg(), r && s.negative !== 0 && s.iadd(e)), {
+                    div: a,
+                    mod: s
+                }) : this.negative === 0 && e.negative !== 0 ? (c = this.divmod(e.neg(), t), t !== `mod` && (a = c.div.neg()), {
+                    div: a,
+                    mod: c.mod
+                }) : (this.negative & e.negative) === 0 ? e.length > this.length || this.cmp(e) < 0 ? {
+                    div: new i(0),
+                    mod: this
+                } : e.length === 1 ? t === `div` ? {
+                    div: this.divn(e.words[0]),
+                    mod: null
+                } : t === `mod` ? {
+                    div: null,
+                    mod: new i(this.modrn(e.words[0]))
+                } : {
+                    div: this.divn(e.words[0]),
+                    mod: new i(this.modrn(e.words[0]))
+                } : this._wordDiv(e, t) : (c = this.neg().divmod(e.neg(), t), t !== `div` && (s = c.mod.neg(), r && s.negative !== 0 && s.isub(e)), {
+                    div: c.div,
+                    mod: s
                 })
-            }), r.tab === k.profile ? e.jsx(dn, {}) : null, r.tab === k.account ? e.jsxs(e.Fragment, {
-                children: [e.jsx(P, {
-                    title: "Sign-in details",
-                    children: e.jsx(fa, {})
-                }), e.jsx(P, {
-                    title: "Account management",
-                    children: e.jsx(ba, {})
-                })]
-            }) : null, r.tab === k.gameSettings ? e.jsx(Sn, {}) : null, r.tab === k.billing ? e.jsx(oa, {}) : null, r.tab === k.support ? e.jsx(la, {}) : null]
+            }, i.prototype.div = function(e) {
+                return this.divmod(e, `div`, !1).div
+            }, i.prototype.mod = function(e) {
+                return this.divmod(e, `mod`, !1).mod
+            }, i.prototype.umod = function(e) {
+                return this.divmod(e, `mod`, !0).mod
+            }, i.prototype.divRound = function(e) {
+                var t = this.divmod(e);
+                if (t.mod.isZero()) return t.div;
+                var n = t.div.negative === 0 ? t.mod : t.mod.isub(e),
+                    r = e.ushrn(1),
+                    i = e.andln(1),
+                    a = n.cmp(r);
+                return a < 0 || i === 1 && a === 0 ? t.div : t.div.negative === 0 ? t.div.iaddn(1) : t.div.isubn(1)
+            }, i.prototype.modrn = function(e) {
+                var t = e < 0;
+                t && (e = -e), n(e <= 67108863);
+                for (var r = (1 << 26) % e, i = 0, a = this.length - 1; a >= 0; a--) i = (r * i + (this.words[a] | 0)) % e;
+                return t ? -i : i
+            }, i.prototype.modn = function(e) {
+                return this.modrn(e)
+            }, i.prototype.idivn = function(e) {
+                var t = e < 0;
+                t && (e = -e), n(e <= 67108863);
+                for (var r = 0, i = this.length - 1; i >= 0; i--) {
+                    var a = (this.words[i] | 0) + r * 67108864;
+                    this.words[i] = a / e | 0, r = a % e
+                }
+                return this._strip(), t ? this.ineg() : this
+            }, i.prototype.divn = function(e) {
+                return this.clone().idivn(e)
+            }, i.prototype.egcd = function(e) {
+                n(e.negative === 0), n(!e.isZero());
+                var t = this,
+                    r = e.clone();
+                t = t.negative === 0 ? t.clone() : t.umod(e);
+                for (var a = new i(1), s = new i(0), c = new i(0), l = new i(1), u = 0; t.isEven() && r.isEven();) t.iushrn(1), r.iushrn(1), ++u;
+                for (var d = r.clone(), f = t.clone(); !t.isZero();) {
+                    for (var p = 0, m = 1;
+                        (t.words[0] & m) === 0 && p < 26; ++p, m <<= 1);
+                    if (p > 0)
+                        for (t.iushrn(p); p-- > 0;)(a.isOdd() || s.isOdd()) && (a.iadd(d), s.isub(f)), a.iushrn(1), s.iushrn(1);
+                    for (var h = 0, g = 1;
+                        (r.words[0] & g) === 0 && h < 26; ++h, g <<= 1);
+                    if (h > 0)
+                        for (r.iushrn(h); h-- > 0;)(c.isOdd() || l.isOdd()) && (c.iadd(d), l.isub(f)), c.iushrn(1), l.iushrn(1);
+                    t.cmp(r) >= 0 ? (t.isub(r), a.isub(c), s.isub(l)) : (r.isub(t), c.isub(a), l.isub(s))
+                }
+                return {
+                    a: c,
+                    b: l,
+                    gcd: r.iushln(u)
+                }
+            }, i.prototype._invmp = function(e) {
+                n(e.negative === 0), n(!e.isZero());
+                var t = this,
+                    r = e.clone();
+                t = t.negative === 0 ? t.clone() : t.umod(e);
+                for (var a = new i(1), s = new i(0), c = r.clone(); t.cmpn(1) > 0 && r.cmpn(1) > 0;) {
+                    for (var l = 0, u = 1;
+                        (t.words[0] & u) === 0 && l < 26; ++l, u <<= 1);
+                    if (l > 0)
+                        for (t.iushrn(l); l-- > 0;) a.isOdd() && a.iadd(c), a.iushrn(1);
+                    for (var d = 0, f = 1;
+                        (r.words[0] & f) === 0 && d < 26; ++d, f <<= 1);
+                    if (d > 0)
+                        for (r.iushrn(d); d-- > 0;) s.isOdd() && s.iadd(c), s.iushrn(1);
+                    t.cmp(r) >= 0 ? (t.isub(r), a.isub(s)) : (r.isub(t), s.isub(a))
+                }
+                var p = t.cmpn(1) === 0 ? a : s;
+                return p.cmpn(0) < 0 && p.iadd(e), p
+            }, i.prototype.gcd = function(e) {
+                if (this.isZero()) return e.abs();
+                if (e.isZero()) return this.abs();
+                var t = this.clone(),
+                    n = e.clone();
+                t.negative = 0, n.negative = 0;
+                for (var r = 0; t.isEven() && n.isEven(); r++) t.iushrn(1), n.iushrn(1);
+                do {
+                    for (; t.isEven();) t.iushrn(1);
+                    for (; n.isEven();) n.iushrn(1);
+                    var i = t.cmp(n);
+                    if (i < 0) {
+                        var a = t;
+                        t = n, n = a
+                    } else if (i === 0 || n.cmpn(1) === 0) break;
+                    t.isub(n)
+                } while (1);
+                return n.iushln(r)
+            }, i.prototype.invm = function(e) {
+                return this.egcd(e).a.umod(e)
+            }, i.prototype.isEven = function() {
+                return !(this.words[0] & 1)
+            }, i.prototype.isOdd = function() {
+                return (this.words[0] & 1) == 1
+            }, i.prototype.andln = function(e) {
+                return this.words[0] & e
+            }, i.prototype.bincn = function(e) {
+                n(typeof e == `number`);
+                var t = e % 26,
+                    r = (e - t) / 26,
+                    i = 1 << t;
+                if (this.length <= r) return this._expand(r + 1), this.words[r] |= i, this;
+                for (var a = i, s = r; a !== 0 && s < this.length; s++) {
+                    var c = this.words[s] | 0;
+                    c += a, a = c >>> 26, c &= 67108863, this.words[s] = c
+                }
+                return a !== 0 && (this.words[s] = a, this.length++), this
+            }, i.prototype.isZero = function() {
+                return this.length === 1 && this.words[0] === 0
+            }, i.prototype.cmpn = function(e) {
+                var t = e < 0;
+                if (this.negative !== 0 && !t) return -1;
+                if (this.negative === 0 && t) return 1;
+                this._strip();
+                var r;
+                if (this.length > 1) r = 1;
+                else {
+                    t && (e = -e), n(e <= 67108863, `Number is too big`);
+                    var i = this.words[0] | 0;
+                    r = i === e ? 0 : i < e ? -1 : 1
+                }
+                return this.negative === 0 ? r : -r | 0
+            }, i.prototype.cmp = function(e) {
+                if (this.negative !== 0 && e.negative === 0) return -1;
+                if (this.negative === 0 && e.negative !== 0) return 1;
+                var t = this.ucmp(e);
+                return this.negative === 0 ? t : -t | 0
+            }, i.prototype.ucmp = function(e) {
+                if (this.length > e.length) return 1;
+                if (this.length < e.length) return -1;
+                for (var t = 0, n = this.length - 1; n >= 0; n--) {
+                    var r = this.words[n] | 0,
+                        i = e.words[n] | 0;
+                    if (r !== i) {
+                        r < i ? t = -1 : r > i && (t = 1);
+                        break
+                    }
+                }
+                return t
+            }, i.prototype.gtn = function(e) {
+                return this.cmpn(e) === 1
+            }, i.prototype.gt = function(e) {
+                return this.cmp(e) === 1
+            }, i.prototype.gten = function(e) {
+                return this.cmpn(e) >= 0
+            }, i.prototype.gte = function(e) {
+                return this.cmp(e) >= 0
+            }, i.prototype.ltn = function(e) {
+                return this.cmpn(e) === -1
+            }, i.prototype.lt = function(e) {
+                return this.cmp(e) === -1
+            }, i.prototype.lten = function(e) {
+                return this.cmpn(e) <= 0
+            }, i.prototype.lte = function(e) {
+                return this.cmp(e) <= 0
+            }, i.prototype.eqn = function(e) {
+                return this.cmpn(e) === 0
+            }, i.prototype.eq = function(e) {
+                return this.cmp(e) === 0
+            }, i.red = function(e) {
+                return new O(e)
+            }, i.prototype.toRed = function(e) {
+                return n(!this.red, `Already a number in reduction context`), n(this.negative === 0, `red works only with positives`), e.convertTo(this)._forceRed(e)
+            }, i.prototype.fromRed = function() {
+                return n(this.red, `fromRed works only with numbers in reduction context`), this.red.convertFrom(this)
+            }, i.prototype._forceRed = function(e) {
+                return this.red = e, this
+            }, i.prototype.forceRed = function(e) {
+                return n(!this.red, `Already a number in reduction context`), this._forceRed(e)
+            }, i.prototype.redAdd = function(e) {
+                return n(this.red, `redAdd works only with red numbers`), this.red.add(this, e)
+            }, i.prototype.redIAdd = function(e) {
+                return n(this.red, `redIAdd works only with red numbers`), this.red.iadd(this, e)
+            }, i.prototype.redSub = function(e) {
+                return n(this.red, `redSub works only with red numbers`), this.red.sub(this, e)
+            }, i.prototype.redISub = function(e) {
+                return n(this.red, `redISub works only with red numbers`), this.red.isub(this, e)
+            }, i.prototype.redShl = function(e) {
+                return n(this.red, `redShl works only with red numbers`), this.red.shl(this, e)
+            }, i.prototype.redMul = function(e) {
+                return n(this.red, `redMul works only with red numbers`), this.red._verify2(this, e), this.red.mul(this, e)
+            }, i.prototype.redIMul = function(e) {
+                return n(this.red, `redMul works only with red numbers`), this.red._verify2(this, e), this.red.imul(this, e)
+            }, i.prototype.redSqr = function() {
+                return n(this.red, `redSqr works only with red numbers`), this.red._verify1(this), this.red.sqr(this)
+            }, i.prototype.redISqr = function() {
+                return n(this.red, `redISqr works only with red numbers`), this.red._verify1(this), this.red.isqr(this)
+            }, i.prototype.redSqrt = function() {
+                return n(this.red, `redSqrt works only with red numbers`), this.red._verify1(this), this.red.sqrt(this)
+            }, i.prototype.redInvm = function() {
+                return n(this.red, `redInvm works only with red numbers`), this.red._verify1(this), this.red.invm(this)
+            }, i.prototype.redNeg = function() {
+                return n(this.red, `redNeg works only with red numbers`), this.red._verify1(this), this.red.neg(this)
+            }, i.prototype.redPow = function(e) {
+                return n(this.red && !e.red, `redPow(normalNum)`), this.red._verify1(this), this.red.pow(this, e)
+            };
+            var S = {
+                k256: null,
+                p224: null,
+                p192: null,
+                p25519: null
+            };
+
+            function C(e, t) {
+                this.name = e, this.p = new i(t, 16), this.n = this.p.bitLength(), this.k = new i(1).iushln(this.n).isub(this.p), this.tmp = this._tmp()
+            }
+            C.prototype._tmp = function() {
+                var e = new i(null);
+                return e.words = Array(Math.ceil(this.n / 13)), e
+            }, C.prototype.ireduce = function(e) {
+                var t = e,
+                    n;
+                do this.split(t, this.tmp), t = this.imulK(t), t = t.iadd(this.tmp), n = t.bitLength(); while (n > this.n);
+                var r = n < this.n ? -1 : t.ucmp(this.p);
+                return r === 0 ? (t.words[0] = 0, t.length = 1) : r > 0 ? t.isub(this.p) : t.strip === void 0 ? t._strip() : t.strip(), t
+            }, C.prototype.split = function(e, t) {
+                e.iushrn(this.n, 0, t)
+            }, C.prototype.imulK = function(e) {
+                return e.imul(this.k)
+            };
+
+            function w() {
+                C.call(this, `k256`, `ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff fffffffe fffffc2f`)
+            }
+            r(w, C), w.prototype.split = function(e, t) {
+                for (var n = 4194303, r = Math.min(e.length, 9), i = 0; i < r; i++) t.words[i] = e.words[i];
+                if (t.length = r, e.length <= 9) e.words[0] = 0, e.length = 1;
+                else {
+                    var a = e.words[9];
+                    for (t.words[t.length++] = a & n, i = 10; i < e.length; i++) {
+                        var s = e.words[i] | 0;
+                        e.words[i - 10] = (s & n) << 4 | a >>> 22, a = s
+                    }
+                    a >>>= 22, e.words[i - 10] = a, a === 0 && e.length > 10 ? e.length -= 10 : e.length -= 9
+                }
+            }, w.prototype.imulK = function(e) {
+                e.words[e.length] = 0, e.words[e.length + 1] = 0, e.length += 2;
+                for (var t = 0, n = 0; n < e.length; n++) {
+                    var r = e.words[n] | 0;
+                    t += r * 977, e.words[n] = t & 67108863, t = r * 64 + (t / 67108864 | 0)
+                }
+                return e.words[e.length - 1] === 0 && (e.length--, e.words[e.length - 1] === 0 && e.length--), e
+            };
+
+            function E() {
+                C.call(this, `p224`, `ffffffff ffffffff ffffffff ffffffff 00000000 00000000 00000001`)
+            }
+            r(E, C);
+
+            function ee() {
+                C.call(this, `p192`, `ffffffff ffffffff ffffffff fffffffe ffffffff ffffffff`)
+            }
+            r(ee, C);
+
+            function D() {
+                C.call(this, `25519`, `7fffffffffffffff ffffffffffffffff ffffffffffffffff ffffffffffffffed`)
+            }
+            r(D, C), D.prototype.imulK = function(e) {
+                for (var t = 0, n = 0; n < e.length; n++) {
+                    var r = (e.words[n] | 0) * 19 + t,
+                        i = r & 67108863;
+                    r >>>= 26, e.words[n] = i, t = r
+                }
+                return t !== 0 && (e.words[e.length++] = t), e
+            }, i._prime = function(e) {
+                if (S[e]) return S[e];
+                var t;
+                if (e === `k256`) t = new w;
+                else if (e === `p224`) t = new E;
+                else if (e === `p192`) t = new ee;
+                else if (e === `p25519`) t = new D;
+                else throw Error(`Unknown prime ` + e);
+                return S[e] = t, t
+            };
+
+            function O(e) {
+                if (typeof e == `string`) {
+                    var t = i._prime(e);
+                    this.m = t.p, this.prime = t
+                } else n(e.gtn(1), `modulus must be greater than 1`), this.m = e, this.prime = null
+            }
+            O.prototype._verify1 = function(e) {
+                n(e.negative === 0, `red works only with positives`), n(e.red, `red works only with red numbers`)
+            }, O.prototype._verify2 = function(e, t) {
+                n((e.negative | t.negative) === 0, `red works only with positives`), n(e.red && e.red === t.red, `red works only with red numbers`)
+            }, O.prototype.imod = function(e) {
+                return this.prime ? this.prime.ireduce(e)._forceRed(this) : (u(e, e.umod(this.m)._forceRed(this)), e)
+            }, O.prototype.neg = function(e) {
+                return e.isZero() ? e.clone() : this.m.sub(e)._forceRed(this)
+            }, O.prototype.add = function(e, t) {
+                this._verify2(e, t);
+                var n = e.add(t);
+                return n.cmp(this.m) >= 0 && n.isub(this.m), n._forceRed(this)
+            }, O.prototype.iadd = function(e, t) {
+                this._verify2(e, t);
+                var n = e.iadd(t);
+                return n.cmp(this.m) >= 0 && n.isub(this.m), n
+            }, O.prototype.sub = function(e, t) {
+                this._verify2(e, t);
+                var n = e.sub(t);
+                return n.cmpn(0) < 0 && n.iadd(this.m), n._forceRed(this)
+            }, O.prototype.isub = function(e, t) {
+                this._verify2(e, t);
+                var n = e.isub(t);
+                return n.cmpn(0) < 0 && n.iadd(this.m), n
+            }, O.prototype.shl = function(e, t) {
+                return this._verify1(e), this.imod(e.ushln(t))
+            }, O.prototype.imul = function(e, t) {
+                return this._verify2(e, t), this.imod(e.imul(t))
+            }, O.prototype.mul = function(e, t) {
+                return this._verify2(e, t), this.imod(e.mul(t))
+            }, O.prototype.isqr = function(e) {
+                return this.imul(e, e.clone())
+            }, O.prototype.sqr = function(e) {
+                return this.mul(e, e)
+            }, O.prototype.sqrt = function(e) {
+                if (e.isZero()) return e.clone();
+                var t = this.m.andln(3);
+                if (n(t % 2 == 1), t === 3) {
+                    var r = this.m.add(new i(1)).iushrn(2);
+                    return this.pow(e, r)
+                }
+                for (var a = this.m.subn(1), s = 0; !a.isZero() && a.andln(1) === 0;) s++, a.iushrn(1);
+                n(!a.isZero());
+                var c = new i(1).toRed(this),
+                    l = c.redNeg(),
+                    u = this.m.subn(1).iushrn(1),
+                    d = this.m.bitLength();
+                for (d = new i(2 * d * d).toRed(this); this.pow(d, u).cmp(l) !== 0;) d.redIAdd(l);
+                for (var f = this.pow(d, a), p = this.pow(e, a.addn(1).iushrn(1)), m = this.pow(e, a), h = s; m.cmp(c) !== 0;) {
+                    for (var g = m, _ = 0; g.cmp(c) !== 0; _++) g = g.redSqr();
+                    n(_ < h);
+                    var v = this.pow(f, new i(1).iushln(h - _ - 1));
+                    p = p.redMul(v), f = v.redSqr(), m = m.redMul(f), h = _
+                }
+                return p
+            }, O.prototype.invm = function(e) {
+                var t = e._invmp(this.m);
+                return t.negative === 0 ? this.imod(t) : (t.negative = 0, this.imod(t).redNeg())
+            }, O.prototype.pow = function(e, t) {
+                if (t.isZero()) return new i(1).toRed(this);
+                if (t.cmpn(1) === 0) return e.clone();
+                var n = 4,
+                    r = Array(1 << n);
+                r[0] = new i(1).toRed(this), r[1] = e;
+                for (var a = 2; a < r.length; a++) r[a] = this.mul(r[a - 1], e);
+                var s = r[0],
+                    c = 0,
+                    l = 0,
+                    u = t.bitLength() % 26;
+                for (u === 0 && (u = 26), a = t.length - 1; a >= 0; a--) {
+                    for (var d = t.words[a], f = u - 1; f >= 0; f--) {
+                        var p = d >> f & 1;
+                        s !== r[0] && (s = this.sqr(s)), p === 0 && c === 0 ? l = 0 : (c <<= 1, c |= p, l++, (l === n || a === 0 && f === 0) && (s = this.mul(s, r[c]), l = 0, c = 0))
+                    }
+                    u = 26
+                }
+                return s
+            }, O.prototype.convertTo = function(e) {
+                var t = e.umod(this.m);
+                return t === e ? t.clone() : t
+            }, O.prototype.convertFrom = function(e) {
+                var t = e.clone();
+                return t.red = null, t
+            }, i.mont = function(e) {
+                return new te(e)
+            };
+
+            function te(e) {
+                O.call(this, e), this.shift = this.m.bitLength(), this.shift % 26 != 0 && (this.shift += 26 - this.shift % 26), this.r = new i(1).iushln(this.shift), this.r2 = this.imod(this.r.sqr()), this.rinv = this.r._invmp(this.m), this.minv = this.rinv.mul(this.r).isubn(1).div(this.m), this.minv = this.minv.umod(this.r), this.minv = this.r.sub(this.minv)
+            }
+            r(te, O), te.prototype.convertTo = function(e) {
+                return this.imod(e.ushln(this.shift))
+            }, te.prototype.convertFrom = function(e) {
+                var t = this.imod(e.mul(this.rinv));
+                return t.red = null, t
+            }, te.prototype.imul = function(e, t) {
+                if (e.isZero() || t.isZero()) return e.words[0] = 0, e.length = 1, e;
+                var n = e.imul(t),
+                    r = n.maskn(this.shift).mul(this.minv).imaskn(this.shift).mul(this.m),
+                    i = n.isub(r).iushrn(this.shift),
+                    a = i;
+                return i.cmp(this.m) >= 0 ? a = i.isub(this.m) : i.cmpn(0) < 0 && (a = i.iadd(this.m)), a._forceRed(this)
+            }, te.prototype.mul = function(e, t) {
+                if (e.isZero() || t.isZero()) return new i(0)._forceRed(this);
+                var n = e.mul(t),
+                    r = n.maskn(this.shift).mul(this.minv).imaskn(this.shift).mul(this.m),
+                    a = n.isub(r).iushrn(this.shift),
+                    s = a;
+                return a.cmp(this.m) >= 0 ? s = a.isub(this.m) : a.cmpn(0) < 0 && (s = a.iadd(this.m)), s._forceRed(this)
+            }, te.prototype.invm = function(e) {
+                return this.imod(e._invmp(this.m).mul(this.r2))._forceRed(this)
+            }
+        })(t === void 0 || t, e)
+    })),
+    require_vm_browserify = __commonJSMin((exports => {
+        var indexOf = function(e, t) {
+                if (e.indexOf) return e.indexOf(t);
+                for (var n = 0; n < e.length; n++)
+                    if (e[n] === t) return n;
+                return -1
+            },
+            Object_keys = function(e) {
+                if (Object.keys) return Object.keys(e);
+                var t = [];
+                for (var n in e) t.push(n);
+                return t
+            },
+            forEach = function(e, t) {
+                if (e.forEach) return e.forEach(t);
+                for (var n = 0; n < e.length; n++) t(e[n], n, e)
+            },
+            defineProp = function() {
+                try {
+                    return Object.defineProperty({}, "_", {}),
+                        function(e, t, n) {
+                            Object.defineProperty(e, t, {
+                                writable: !0,
+                                enumerable: !1,
+                                configurable: !0,
+                                value: n
+                            })
+                        }
+                } catch {
+                    return function(e, t, n) {
+                        e[t] = n
+                    }
+                }
+            }(),
+            globals = `Array.Boolean.Date.Error.EvalError.Function.Infinity.JSON.Math.NaN.Number.Object.RangeError.ReferenceError.RegExp.String.SyntaxError.TypeError.URIError.decodeURI.decodeURIComponent.encodeURI.encodeURIComponent.escape.eval.isFinite.isNaN.parseFloat.parseInt.undefined.unescape`.split(`.`);
+
+        function Context() {}
+        Context.prototype = {};
+        var Script = exports.Script = function(e) {
+            if (!(this instanceof Script)) return new Script(e);
+            this.code = e
+        };
+        Script.prototype.runInContext = function(e) {
+            if (!(e instanceof Context)) throw TypeError(`needs a 'context' argument.`);
+            var t = document.createElement(`iframe`);
+            t.style || (t.style = {}), t.style.display = `none`, document.body.appendChild(t);
+            var n = t.contentWindow,
+                r = n.eval,
+                i = n.execScript;
+            !r && i && (i.call(n, `null`), r = n.eval), forEach(Object_keys(e), function(t) {
+                n[t] = e[t]
+            }), forEach(globals, function(t) {
+                e[t] && (n[t] = e[t])
+            });
+            var a = Object_keys(n),
+                s = r.call(n, this.code);
+            return forEach(Object_keys(n), function(t) {
+                (t in e || indexOf(a, t) === -1) && (e[t] = n[t])
+            }), forEach(globals, function(t) {
+                t in e || defineProp(e, t, n[t])
+            }), document.body.removeChild(t), s
+        }, Script.prototype.runInThisContext = function() {
+            return eval(this.code)
+        }, Script.prototype.runInNewContext = function(e) {
+            var t = Script.createContext(e),
+                n = this.runInContext(t);
+            return e && forEach(Object_keys(t), function(n) {
+                e[n] = t[n]
+            }), n
+        }, forEach(Object_keys(Script.prototype), function(e) {
+            exports[e] = Script[e] = function(t) {
+                var n = Script(t);
+                return n[e].apply(n, [].slice.call(arguments, 1))
+            }
+        }), exports.isContext = function(e) {
+            return e instanceof Context
+        }, exports.createScript = function(e) {
+            return exports.Script(e)
+        }, exports.createContext = Script.createContext = function(e) {
+            var t = new Context;
+            return typeof e == `object` && forEach(Object_keys(e), function(n) {
+                t[n] = e[n]
+            }), t
+        }
+    })),
+    require_api = __commonJSMin((e => {
+        var t = require_asn1$1(),
+            n = require_inherits_browser(),
+            r = e;
+        r.define = function(e, t) {
+            return new i(e, t)
+        };
+
+        function i(e, t) {
+            this.name = e, this.body = t, this.decoders = {}, this.encoders = {}
+        }
+        i.prototype._createNamed = function(e) {
+            var t;
+            try {
+                t = require_vm_browserify().runInThisContext(`(function ` + this.name + `(entity) {
+  this._initNamed(entity);
+})`)
+            } catch {
+                t = function(e) {
+                    this._initNamed(e)
+                }
+            }
+            return n(t, e), t.prototype._initNamed = function(t) {
+                e.call(this, t)
+            }, new t(this)
+        }, i.prototype._getDecoder = function(e) {
+            return e = e || `der`, this.decoders.hasOwnProperty(e) || (this.decoders[e] = this._createNamed(t.decoders[e])), this.decoders[e]
+        }, i.prototype.decode = function(e, t, n) {
+            return this._getDecoder(t).decode(e, n)
+        }, i.prototype._getEncoder = function(e) {
+            return e = e || `der`, this.encoders.hasOwnProperty(e) || (this.encoders[e] = this._createNamed(t.encoders[e])), this.encoders[e]
+        }, i.prototype.encode = function(e, t, n) {
+            return this._getEncoder(t).encode(e, n)
+        }
+    })),
+    require_reporter = __commonJSMin((e => {
+        var t = require_inherits_browser();
+
+        function n(e) {
+            this._reporterState = {
+                obj: null,
+                path: [],
+                options: e || {},
+                errors: []
+            }
+        }
+        e.Reporter = n, n.prototype.isError = function(e) {
+            return e instanceof r
+        }, n.prototype.save = function() {
+            var e = this._reporterState;
+            return {
+                obj: e.obj,
+                pathLen: e.path.length
+            }
+        }, n.prototype.restore = function(e) {
+            var t = this._reporterState;
+            t.obj = e.obj, t.path = t.path.slice(0, e.pathLen)
+        }, n.prototype.enterKey = function(e) {
+            return this._reporterState.path.push(e)
+        }, n.prototype.exitKey = function(e) {
+            var t = this._reporterState;
+            t.path = t.path.slice(0, e - 1)
+        }, n.prototype.leaveKey = function(e, t, n) {
+            var r = this._reporterState;
+            this.exitKey(e), r.obj !== null && (r.obj[t] = n)
+        }, n.prototype.path = function() {
+            return this._reporterState.path.join(`/`)
+        }, n.prototype.enterObject = function() {
+            var e = this._reporterState,
+                t = e.obj;
+            return e.obj = {}, t
+        }, n.prototype.leaveObject = function(e) {
+            var t = this._reporterState,
+                n = t.obj;
+            return t.obj = e, n
+        }, n.prototype.error = function(e) {
+            var t, n = this._reporterState,
+                i = e instanceof r;
+            if (t = i ? e : new r(n.path.map(function(e) {
+                    return `[` + JSON.stringify(e) + `]`
+                }).join(``), e.message || e, e.stack), !n.options.partial) throw t;
+            return i || n.errors.push(t), t
+        }, n.prototype.wrapResult = function(e) {
+            var t = this._reporterState;
+            return t.options.partial ? {
+                result: this.isError(e) ? null : e,
+                errors: t.errors
+            } : e
+        };
+
+        function r(e, t) {
+            this.path = e, this.rethrow(t)
+        }
+        t(r, Error), r.prototype.rethrow = function(e) {
+            if (this.message = e + ` at: ` + (this.path || `(shallow)`), Error.captureStackTrace && Error.captureStackTrace(this, r), !this.stack) try {
+                throw Error(this.message)
+            } catch (e) {
+                this.stack = e.stack
+            }
+            return this
+        }
+    })),
+    require_buffer = __commonJSMin((e => {
+        var t = require_inherits_browser(),
+            n = require_base().Reporter,
+            r = require_dist$1().Buffer;
+
+        function i(e, t) {
+            n.call(this, t), r.isBuffer(e) ? (this.base = e, this.offset = 0, this.length = e.length) : this.error(`Input not Buffer`)
+        }
+        t(i, n), e.DecoderBuffer = i, i.prototype.save = function() {
+            return {
+                offset: this.offset,
+                reporter: n.prototype.save.call(this)
+            }
+        }, i.prototype.restore = function(e) {
+            var t = new i(this.base);
+            return t.offset = e.offset, t.length = this.offset, this.offset = e.offset, n.prototype.restore.call(this, e.reporter), t
+        }, i.prototype.isEmpty = function() {
+            return this.offset === this.length
+        }, i.prototype.readUInt8 = function(e) {
+            return this.offset + 1 <= this.length ? this.base.readUInt8(this.offset++, !0) : this.error(e || `DecoderBuffer overrun`)
+        }, i.prototype.skip = function(e, t) {
+            if (!(this.offset + e <= this.length)) return this.error(t || `DecoderBuffer overrun`);
+            var n = new i(this.base);
+            return n._reporterState = this._reporterState, n.offset = this.offset, n.length = this.offset + e, this.offset += e, n
+        }, i.prototype.raw = function(e) {
+            return this.base.slice(e ? e.offset : this.offset, this.length)
+        };
+
+        function a(e, t) {
+            if (Array.isArray(e)) this.length = 0, this.value = e.map(function(e) {
+                return e instanceof a || (e = new a(e, t)), this.length += e.length, e
+            }, this);
+            else if (typeof e == `number`) {
+                if (!(0 <= e && e <= 255)) return t.error(`non-byte EncoderBuffer value`);
+                this.value = e, this.length = 1
+            } else if (typeof e == `string`) this.value = e, this.length = r.byteLength(e);
+            else if (r.isBuffer(e)) this.value = e, this.length = e.length;
+            else return t.error(`Unsupported type: ` + typeof e)
+        }
+        e.EncoderBuffer = a, a.prototype.join = function(e, t) {
+            return e || (e = new r(this.length)), t || (t = 0), this.length === 0 || (Array.isArray(this.value) ? this.value.forEach(function(n) {
+                n.join(e, t), t += n.length
+            }) : (typeof this.value == `number` ? e[t] = this.value : typeof this.value == `string` ? e.write(this.value, t) : r.isBuffer(this.value) && this.value.copy(e, t), t += this.length)), e
+        }
+    })),
+    require_node = __commonJSMin(((e, t) => {
+        var n = require_base().Reporter,
+            r = require_base().EncoderBuffer,
+            i = require_base().DecoderBuffer,
+            a = require_minimalistic_assert(),
+            s = `seq.seqof.set.setof.objid.bool.gentime.utctime.null_.enum.int.objDesc.bitstr.bmpstr.charstr.genstr.graphstr.ia5str.iso646str.numstr.octstr.printstr.t61str.unistr.utf8str.videostr`.split(`.`),
+            c = [`key`, `obj`, `use`, `optional`, `explicit`, `implicit`, `def`, `choice`, `any`, `contains`].concat(s),
+            l = [`_peekTag`, `_decodeTag`, `_use`, `_decodeStr`, `_decodeObjid`, `_decodeTime`, `_decodeNull`, `_decodeInt`, `_decodeBool`, `_decodeList`, `_encodeComposite`, `_encodeStr`, `_encodeObjid`, `_encodeTime`, `_encodeNull`, `_encodeInt`, `_encodeBool`];
+
+        function u(e, t) {
+            var n = {};
+            this._baseState = n, n.enc = e, n.parent = t || null, n.children = null, n.tag = null, n.args = null, n.reverseArgs = null, n.choice = null, n.optional = !1, n.any = !1, n.obj = !1, n.use = null, n.useDecoder = null, n.key = null, n.default = null, n.explicit = null, n.implicit = null, n.contains = null, n.parent || (n.children = [], this._wrap())
+        }
+        t.exports = u;
+        var d = [`enc`, `parent`, `children`, `tag`, `args`, `reverseArgs`, `choice`, `optional`, `any`, `obj`, `use`, `alteredUse`, `key`, `default`, `explicit`, `implicit`, `contains`];
+        u.prototype.clone = function() {
+            var e = this._baseState,
+                t = {};
+            d.forEach(function(n) {
+                t[n] = e[n]
+            });
+            var n = new this.constructor(t.parent);
+            return n._baseState = t, n
+        }, u.prototype._wrap = function() {
+            var e = this._baseState;
+            c.forEach(function(t) {
+                this[t] = function() {
+                    var n = new this.constructor(this);
+                    return e.children.push(n), n[t].apply(n, arguments)
+                }
+            }, this)
+        }, u.prototype._init = function(e) {
+            var t = this._baseState;
+            a(t.parent === null), e.call(this), t.children = t.children.filter(function(e) {
+                return e._baseState.parent === this
+            }, this), a.equal(t.children.length, 1, `Root node can have only one child`)
+        }, u.prototype._useArgs = function(e) {
+            var t = this._baseState,
+                n = e.filter(function(e) {
+                    return e instanceof this.constructor
+                }, this);
+            e = e.filter(function(e) {
+                return !(e instanceof this.constructor)
+            }, this), n.length !== 0 && (a(t.children === null), t.children = n, n.forEach(function(e) {
+                e._baseState.parent = this
+            }, this)), e.length !== 0 && (a(t.args === null), t.args = e, t.reverseArgs = e.map(function(e) {
+                if (typeof e != `object` || e.constructor !== Object) return e;
+                var t = {};
+                return Object.keys(e).forEach(function(n) {
+                    n == (n | 0) && (n |= 0);
+                    var r = e[n];
+                    t[r] = n
+                }), t
+            }))
+        }, l.forEach(function(e) {
+            u.prototype[e] = function() {
+                var t = this._baseState;
+                throw Error(e + ` not implemented for encoding: ` + t.enc)
+            }
+        }), s.forEach(function(e) {
+            u.prototype[e] = function() {
+                var t = this._baseState,
+                    n = Array.prototype.slice.call(arguments);
+                return a(t.tag === null), t.tag = e, this._useArgs(n), this
+            }
+        }), u.prototype.use = function(e) {
+            a(e);
+            var t = this._baseState;
+            return a(t.use === null), t.use = e, this
+        }, u.prototype.optional = function() {
+            var e = this._baseState;
+            return e.optional = !0, this
+        }, u.prototype.def = function(e) {
+            var t = this._baseState;
+            return a(t.default === null), t.default = e, t.optional = !0, this
+        }, u.prototype.explicit = function(e) {
+            var t = this._baseState;
+            return a(t.explicit === null && t.implicit === null), t.explicit = e, this
+        }, u.prototype.implicit = function(e) {
+            var t = this._baseState;
+            return a(t.explicit === null && t.implicit === null), t.implicit = e, this
+        }, u.prototype.obj = function() {
+            var e = this._baseState,
+                t = Array.prototype.slice.call(arguments);
+            return e.obj = !0, t.length !== 0 && this._useArgs(t), this
+        }, u.prototype.key = function(e) {
+            var t = this._baseState;
+            return a(t.key === null), t.key = e, this
+        }, u.prototype.any = function() {
+            var e = this._baseState;
+            return e.any = !0, this
+        }, u.prototype.choice = function(e) {
+            var t = this._baseState;
+            return a(t.choice === null), t.choice = e, this._useArgs(Object.keys(e).map(function(t) {
+                return e[t]
+            })), this
+        }, u.prototype.contains = function(e) {
+            var t = this._baseState;
+            return a(t.use === null), t.contains = e, this
+        }, u.prototype._decode = function(e, t) {
+            var n = this._baseState;
+            if (n.parent === null) return e.wrapResult(n.children[0]._decode(e, t));
+            var r = n.default,
+                a = !0,
+                s = null;
+            if (n.key !== null && (s = e.enterKey(n.key)), n.optional) {
+                var c = null;
+                if (n.explicit === null ? n.implicit === null ? n.tag !== null && (c = n.tag) : c = n.implicit : c = n.explicit, c === null && !n.any) {
+                    var l = e.save();
+                    try {
+                        n.choice === null ? this._decodeGeneric(n.tag, e, t) : this._decodeChoice(e, t), a = !0
+                    } catch {
+                        a = !1
+                    }
+                    e.restore(l)
+                } else if (a = this._peekTag(e, c, n.any), e.isError(a)) return a
+            }
+            var u;
+            if (n.obj && a && (u = e.enterObject()), a) {
+                if (n.explicit !== null) {
+                    var d = this._decodeTag(e, n.explicit);
+                    if (e.isError(d)) return d;
+                    e = d
+                }
+                var f = e.offset;
+                if (n.use === null && n.choice === null) {
+                    if (n.any) var l = e.save();
+                    var p = this._decodeTag(e, n.implicit === null ? n.tag : n.implicit, n.any);
+                    if (e.isError(p)) return p;
+                    n.any ? r = e.raw(l) : e = p
+                }
+                if (t && t.track && n.tag !== null && t.track(e.path(), f, e.length, `tagged`), t && t.track && n.tag !== null && t.track(e.path(), e.offset, e.length, `content`), r = n.any ? r : n.choice === null ? this._decodeGeneric(n.tag, e, t) : this._decodeChoice(e, t), e.isError(r)) return r;
+                if (!n.any && n.choice === null && n.children !== null && n.children.forEach(function(n) {
+                        n._decode(e, t)
+                    }), n.contains && (n.tag === `octstr` || n.tag === `bitstr`)) {
+                    var m = new i(r);
+                    r = this._getUse(n.contains, e._reporterState.obj)._decode(m, t)
+                }
+            }
+            return n.obj && a && (r = e.leaveObject(u)), n.key !== null && (r !== null || a === !0) ? e.leaveKey(s, n.key, r) : s !== null && e.exitKey(s), r
+        }, u.prototype._decodeGeneric = function(e, t, n) {
+            var r = this._baseState;
+            return e === `seq` || e === `set` ? null : e === `seqof` || e === `setof` ? this._decodeList(t, e, r.args[0], n) : /str$/.test(e) ? this._decodeStr(t, e, n) : e === `objid` && r.args ? this._decodeObjid(t, r.args[0], r.args[1], n) : e === `objid` ? this._decodeObjid(t, null, null, n) : e === `gentime` || e === `utctime` ? this._decodeTime(t, e, n) : e === `null_` ? this._decodeNull(t, n) : e === `bool` ? this._decodeBool(t, n) : e === `objDesc` ? this._decodeStr(t, e, n) : e === `int` || e === `enum` ? this._decodeInt(t, r.args && r.args[0], n) : r.use === null ? t.error(`unknown tag: ` + e) : this._getUse(r.use, t._reporterState.obj)._decode(t, n)
+        }, u.prototype._getUse = function(e, t) {
+            var n = this._baseState;
+            return n.useDecoder = this._use(e, t), a(n.useDecoder._baseState.parent === null), n.useDecoder = n.useDecoder._baseState.children[0], n.implicit !== n.useDecoder._baseState.implicit && (n.useDecoder = n.useDecoder.clone(), n.useDecoder._baseState.implicit = n.implicit), n.useDecoder
+        }, u.prototype._decodeChoice = function(e, t) {
+            var n = this._baseState,
+                r = null,
+                i = !1;
+            return Object.keys(n.choice).some(function(a) {
+                var s = e.save(),
+                    c = n.choice[a];
+                try {
+                    var l = c._decode(e, t);
+                    if (e.isError(l)) return !1;
+                    r = {
+                        type: a,
+                        value: l
+                    }, i = !0
+                } catch {
+                    return e.restore(s), !1
+                }
+                return !0
+            }, this), i ? r : e.error(`Choice not matched`)
+        }, u.prototype._createEncoderBuffer = function(e) {
+            return new r(e, this.reporter)
+        }, u.prototype._encode = function(e, t, n) {
+            var r = this._baseState;
+            if (r.default === null || r.default !== e) {
+                var i = this._encodeValue(e, t, n);
+                if (i !== void 0 && !this._skipDefault(i, t, n)) return i
+            }
+        }, u.prototype._encodeValue = function(e, t, r) {
+            var i = this._baseState;
+            if (i.parent === null) return i.children[0]._encode(e, t || new n);
+            var a = null;
+            if (this.reporter = t, i.optional && e === void 0) {
+                if (i.default !== null) e = i.default;
+                else return
+            }
+            var s = null,
+                c = !1;
+            if (i.any) a = this._createEncoderBuffer(e);
+            else if (i.choice) a = this._encodeChoice(e, t);
+            else if (i.contains) s = this._getUse(i.contains, r)._encode(e, t), c = !0;
+            else if (i.children) s = i.children.map(function(n) {
+                if (n._baseState.tag === `null_`) return n._encode(null, t, e);
+                if (n._baseState.key === null) return t.error(`Child should have a key`);
+                var r = t.enterKey(n._baseState.key);
+                if (typeof e != `object`) return t.error(`Child expected, but input is not object`);
+                var i = n._encode(e[n._baseState.key], t, e);
+                return t.leaveKey(r), i
+            }, this).filter(function(e) {
+                return e
+            }), s = this._createEncoderBuffer(s);
+            else if (i.tag === `seqof` || i.tag === `setof`) {
+                if (!(i.args && i.args.length === 1)) return t.error(`Too many args for : ` + i.tag);
+                if (!Array.isArray(e)) return t.error(`seqof/setof, but data is not Array`);
+                var l = this.clone();
+                l._baseState.implicit = null, s = this._createEncoderBuffer(e.map(function(n) {
+                    var r = this._baseState;
+                    return this._getUse(r.args[0], e)._encode(n, t)
+                }, l))
+            } else i.use === null ? (s = this._encodePrimitive(i.tag, e), c = !0) : a = this._getUse(i.use, r)._encode(e, t);
+            var a;
+            if (!i.any && i.choice === null) {
+                var u = i.implicit === null ? i.tag : i.implicit,
+                    d = i.implicit === null ? `universal` : `context`;
+                u === null ? i.use === null && t.error(`Tag could be omitted only for .use()`) : i.use === null && (a = this._encodeComposite(u, c, d, s))
+            }
+            return i.explicit !== null && (a = this._encodeComposite(i.explicit, !1, `context`, a)), a
+        }, u.prototype._encodeChoice = function(e, t) {
+            var n = this._baseState,
+                r = n.choice[e.type];
+            return r || a(!1, e.type + ` not found in ` + JSON.stringify(Object.keys(n.choice))), r._encode(e.value, t)
+        }, u.prototype._encodePrimitive = function(e, t) {
+            var n = this._baseState;
+            if (/str$/.test(e)) return this._encodeStr(t, e);
+            if (e === `objid` && n.args) return this._encodeObjid(t, n.reverseArgs[0], n.args[1]);
+            if (e === `objid`) return this._encodeObjid(t, null, null);
+            if (e === `gentime` || e === `utctime`) return this._encodeTime(t, e);
+            if (e === `null_`) return this._encodeNull();
+            if (e === `int` || e === `enum`) return this._encodeInt(t, n.args && n.reverseArgs[0]);
+            if (e === `bool`) return this._encodeBool(t);
+            if (e === `objDesc`) return this._encodeStr(t, e);
+            throw Error(`Unsupported tag: ` + e)
+        }, u.prototype._isNumstr = function(e) {
+            return /^[0-9 ]*$/.test(e)
+        }, u.prototype._isPrintstr = function(e) {
+            return /^[A-Za-z0-9 '\(\)\+,\-\.\/:=\?]*$/.test(e)
+        }
+    })),
+    require_base = __commonJSMin((e => {
+        var t = e;
+        t.Reporter = require_reporter().Reporter, t.DecoderBuffer = require_buffer().DecoderBuffer, t.EncoderBuffer = require_buffer().EncoderBuffer, t.Node = require_node()
+    })),
+    require_der$2 = __commonJSMin((e => {
+        var t = require_constants();
+        e.tagClass = {
+            0: `universal`,
+            1: `application`,
+            2: `context`,
+            3: `private`
+        }, e.tagClassByName = t._reverse(e.tagClass), e.tag = {
+            0: `end`,
+            1: `bool`,
+            2: `int`,
+            3: `bitstr`,
+            4: `octstr`,
+            5: `null_`,
+            6: `objid`,
+            7: `objDesc`,
+            8: `external`,
+            9: `real`,
+            10: `enum`,
+            11: `embed`,
+            12: `utf8str`,
+            13: `relativeOid`,
+            16: `seq`,
+            17: `set`,
+            18: `numstr`,
+            19: `printstr`,
+            20: `t61str`,
+            21: `videostr`,
+            22: `ia5str`,
+            23: `utctime`,
+            24: `gentime`,
+            25: `graphstr`,
+            26: `iso646str`,
+            27: `genstr`,
+            28: `unistr`,
+            29: `charstr`,
+            30: `bmpstr`
+        }, e.tagByName = t._reverse(e.tag)
+    })),
+    require_constants = __commonJSMin((e => {
+        var t = e;
+        t._reverse = function(e) {
+            var t = {};
+            return Object.keys(e).forEach(function(n) {
+                (n | 0) == n && (n |= 0);
+                var r = e[n];
+                t[r] = n
+            }), t
+        }, t.der = require_der$2()
+    })),
+    require_der$1 = __commonJSMin(((e, t) => {
+        var n = require_inherits_browser(),
+            r = require_asn1$1(),
+            i = r.base,
+            a = r.bignum,
+            s = r.constants.der;
+
+        function c(e) {
+            this.enc = `der`, this.name = e.name, this.entity = e, this.tree = new l, this.tree._init(e.body)
+        }
+        t.exports = c, c.prototype.decode = function(e, t) {
+            return e instanceof i.DecoderBuffer || (e = new i.DecoderBuffer(e, t)), this.tree._decode(e, t)
+        };
+
+        function l(e) {
+            i.Node.call(this, `der`, e)
+        }
+        n(l, i.Node), l.prototype._peekTag = function(e, t, n) {
+            if (e.isEmpty()) return !1;
+            var r = e.save(),
+                i = u(e, `Failed to peek tag: "` + t + `"`);
+            return e.isError(i) ? i : (e.restore(r), i.tag === t || i.tagStr === t || i.tagStr + `of` === t || n)
+        }, l.prototype._decodeTag = function(e, t, n) {
+            var r = u(e, `Failed to decode tag of "` + t + `"`);
+            if (e.isError(r)) return r;
+            var i = d(e, r.primitive, `Failed to get length of "` + t + `"`);
+            if (e.isError(i)) return i;
+            if (!n && r.tag !== t && r.tagStr !== t && r.tagStr + `of` !== t) return e.error(`Failed to match tag: "` + t + `"`);
+            if (r.primitive || i !== null) return e.skip(i, `Failed to match body of: "` + t + `"`);
+            var a = e.save(),
+                s = this._skipUntilEnd(e, `Failed to skip indefinite length body: "` + this.tag + `"`);
+            return e.isError(s) ? s : (i = e.offset - a.offset, e.restore(a), e.skip(i, `Failed to match body of: "` + t + `"`))
+        }, l.prototype._skipUntilEnd = function(e, t) {
+            for (;;) {
+                var n = u(e, t);
+                if (e.isError(n)) return n;
+                var r = d(e, n.primitive, t);
+                if (e.isError(r)) return r;
+                var i = n.primitive || r !== null ? e.skip(r) : this._skipUntilEnd(e, t);
+                if (e.isError(i)) return i;
+                if (n.tagStr === `end`) break
+            }
+        }, l.prototype._decodeList = function(e, t, n, r) {
+            for (var i = []; !e.isEmpty();) {
+                var a = this._peekTag(e, `end`);
+                if (e.isError(a)) return a;
+                var s = n.decode(e, `der`, r);
+                if (e.isError(s) && a) break;
+                i.push(s)
+            }
+            return i
+        }, l.prototype._decodeStr = function(e, t) {
+            if (t === `bitstr`) {
+                var n = e.readUInt8();
+                return e.isError(n) ? n : {
+                    unused: n,
+                    data: e.raw()
+                }
+            }
+            if (t === `bmpstr`) {
+                var r = e.raw();
+                if (r.length % 2 == 1) return e.error(`Decoding of string type: bmpstr length mismatch`);
+                for (var i = ``, a = 0; a < r.length / 2; a++) i += String.fromCharCode(r.readUInt16BE(a * 2));
+                return i
+            }
+            if (t === `numstr`) {
+                var s = e.raw().toString(`ascii`);
+                return this._isNumstr(s) ? s : e.error(`Decoding of string type: numstr unsupported characters`)
+            }
+            if (t === `octstr` || t === `objDesc`) return e.raw();
+            if (t === `printstr`) {
+                var c = e.raw().toString(`ascii`);
+                return this._isPrintstr(c) ? c : e.error(`Decoding of string type: printstr unsupported characters`)
+            }
+            return /str$/.test(t) ? e.raw().toString() : e.error(`Decoding of string type: ` + t + ` unsupported`)
+        }, l.prototype._decodeObjid = function(e, t, n) {
+            for (var r, i = [], a = 0; !e.isEmpty();) {
+                var s = e.readUInt8();
+                a <<= 7, a |= s & 127, s & 128 || (i.push(a), a = 0)
+            }
+            s & 128 && i.push(a);
+            var c = i[0] / 40 | 0,
+                l = i[0] % 40;
+            if (r = n ? i : [c, l].concat(i.slice(1)), t) {
+                var u = t[r.join(` `)];
+                u === void 0 && (u = t[r.join(`.`)]), u !== void 0 && (r = u)
+            }
+            return r
+        }, l.prototype._decodeTime = function(e, t) {
+            var n = e.raw().toString();
+            if (t === `gentime`) var r = n.slice(0, 4) | 0,
+                i = n.slice(4, 6) | 0,
+                a = n.slice(6, 8) | 0,
+                s = n.slice(8, 10) | 0,
+                c = n.slice(10, 12) | 0,
+                l = n.slice(12, 14) | 0;
+            else if (t === `utctime`) {
+                var r = n.slice(0, 2) | 0,
+                    i = n.slice(2, 4) | 0,
+                    a = n.slice(4, 6) | 0,
+                    s = n.slice(6, 8) | 0,
+                    c = n.slice(8, 10) | 0,
+                    l = n.slice(10, 12) | 0;
+                r = r < 70 ? 2e3 + r : 1900 + r
+            } else return e.error(`Decoding ` + t + ` time is not supported yet`);
+            return Date.UTC(r, i - 1, a, s, c, l, 0)
+        }, l.prototype._decodeNull = function(e) {
+            return null
+        }, l.prototype._decodeBool = function(e) {
+            var t = e.readUInt8();
+            return e.isError(t) ? t : t !== 0
+        }, l.prototype._decodeInt = function(e, t) {
+            var n = new a(e.raw());
+            return t && (n = t[n.toString(10)] || n), n
+        }, l.prototype._use = function(e, t) {
+            return typeof e == `function` && (e = e(t)), e._getDecoder(`der`).tree
+        };
+
+        function u(e, t) {
+            var n = e.readUInt8(t);
+            if (e.isError(n)) return n;
+            var r = s.tagClass[n >> 6],
+                i = !(n & 32);
+            if ((n & 31) == 31) {
+                var a = n;
+                for (n = 0;
+                    (a & 128) == 128;) {
+                    if (a = e.readUInt8(t), e.isError(a)) return a;
+                    n <<= 7, n |= a & 127
+                }
+            } else n &= 31;
+            var c = s.tag[n];
+            return {
+                cls: r,
+                primitive: i,
+                tag: n,
+                tagStr: c
+            }
+        }
+
+        function d(e, t, n) {
+            var r = e.readUInt8(n);
+            if (e.isError(r)) return r;
+            if (!t && r === 128) return null;
+            if (!(r & 128)) return r;
+            var i = r & 127;
+            if (i > 4) return e.error(`length octect is too long`);
+            r = 0;
+            for (var a = 0; a < i; a++) {
+                r <<= 8;
+                var s = e.readUInt8(n);
+                if (e.isError(s)) return s;
+                r |= s
+            }
+            return r
+        }
+    })),
+    require_pem$1 = __commonJSMin(((e, t) => {
+        var n = require_inherits_browser(),
+            r = require_dist$1().Buffer,
+            i = require_der$1();
+
+        function a(e) {
+            i.call(this, e), this.enc = `pem`
+        }
+        n(a, i), t.exports = a, a.prototype.decode = function(e, t) {
+            for (var n = e.toString().split(/[\r\n]+/g), a = t.label.toUpperCase(), s = /^-----(BEGIN|END) ([^-]+)-----$/, c = -1, l = -1, u = 0; u < n.length; u++) {
+                var d = n[u].match(s);
+                if (d !== null && d[2] === a) {
+                    if (c === -1) {
+                        if (d[1] !== `BEGIN`) break;
+                        c = u
+                    } else {
+                        if (d[1] !== `END`) break;
+                        l = u;
+                        break
+                    }
+                }
+            }
+            if (c === -1 || l === -1) throw Error(`PEM section not found for: ` + a);
+            var f = n.slice(c + 1, l).join(``);
+            f.replace(/[^a-z0-9\+\/=]+/gi, ``);
+            var p = new r(f, `base64`);
+            return i.prototype.decode.call(this, p, t)
+        }
+    })),
+    require_decoders = __commonJSMin((e => {
+        var t = e;
+        t.der = require_der$1(), t.pem = require_pem$1()
+    })),
+    require_der = __commonJSMin(((e, t) => {
+        var n = require_inherits_browser(),
+            r = require_dist$1().Buffer,
+            i = require_asn1$1(),
+            a = i.base,
+            s = i.constants.der;
+
+        function c(e) {
+            this.enc = `der`, this.name = e.name, this.entity = e, this.tree = new l, this.tree._init(e.body)
+        }
+        t.exports = c, c.prototype.encode = function(e, t) {
+            return this.tree._encode(e, t).join()
+        };
+
+        function l(e) {
+            a.Node.call(this, `der`, e)
+        }
+        n(l, a.Node), l.prototype._encodeComposite = function(e, t, n, i) {
+            var a = d(e, t, n, this.reporter);
+            if (i.length < 128) {
+                var s = new r(2);
+                return s[0] = a, s[1] = i.length, this._createEncoderBuffer([s, i])
+            }
+            for (var c = 1, l = i.length; l >= 256; l >>= 8) c++;
+            var s = new r(2 + c);
+            s[0] = a, s[1] = 128 | c;
+            for (var l = 1 + c, u = i.length; u > 0; l--, u >>= 8) s[l] = u & 255;
+            return this._createEncoderBuffer([s, i])
+        }, l.prototype._encodeStr = function(e, t) {
+            if (t === `bitstr`) return this._createEncoderBuffer([e.unused | 0, e.data]);
+            if (t === `bmpstr`) {
+                for (var n = new r(e.length * 2), i = 0; i < e.length; i++) n.writeUInt16BE(e.charCodeAt(i), i * 2);
+                return this._createEncoderBuffer(n)
+            }
+            return t === `numstr` ? this._isNumstr(e) ? this._createEncoderBuffer(e) : this.reporter.error(`Encoding of string type: numstr supports only digits and space`) : t === `printstr` ? this._isPrintstr(e) ? this._createEncoderBuffer(e) : this.reporter.error(`Encoding of string type: printstr supports only latin upper and lower case letters, digits, space, apostrophe, left and rigth parenthesis, plus sign, comma, hyphen, dot, slash, colon, equal sign, question mark`) : /str$/.test(t) || t === `objDesc` ? this._createEncoderBuffer(e) : this.reporter.error(`Encoding of string type: ` + t + ` unsupported`)
+        }, l.prototype._encodeObjid = function(e, t, n) {
+            if (typeof e == `string`) {
+                if (!t) return this.reporter.error(`string objid given, but no values map found`);
+                if (!t.hasOwnProperty(e)) return this.reporter.error(`objid not found in values map`);
+                e = t[e].split(/[\s\.]+/g);
+                for (var i = 0; i < e.length; i++) e[i] |= 0
+            } else if (Array.isArray(e)) {
+                e = e.slice();
+                for (var i = 0; i < e.length; i++) e[i] |= 0
+            }
+            if (!Array.isArray(e)) return this.reporter.error(`objid() should be either array or string, got: ` + JSON.stringify(e));
+            if (!n) {
+                if (e[1] >= 40) return this.reporter.error(`Second objid identifier OOB`);
+                e.splice(0, 2, e[0] * 40 + e[1])
+            }
+            for (var a = 0, i = 0; i < e.length; i++) {
+                var s = e[i];
+                for (a++; s >= 128; s >>= 7) a++
+            }
+            for (var c = new r(a), l = c.length - 1, i = e.length - 1; i >= 0; i--) {
+                var s = e[i];
+                for (c[l--] = s & 127;
+                    (s >>= 7) > 0;) c[l--] = 128 | s & 127
+            }
+            return this._createEncoderBuffer(c)
+        };
+
+        function u(e) {
+            return e < 10 ? `0` + e : e
+        }
+        l.prototype._encodeTime = function(e, t) {
+            var n, r = new Date(e);
+            return t === `gentime` ? n = [u(r.getFullYear()), u(r.getUTCMonth() + 1), u(r.getUTCDate()), u(r.getUTCHours()), u(r.getUTCMinutes()), u(r.getUTCSeconds()), `Z`].join(``) : t === `utctime` ? n = [u(r.getFullYear() % 100), u(r.getUTCMonth() + 1), u(r.getUTCDate()), u(r.getUTCHours()), u(r.getUTCMinutes()), u(r.getUTCSeconds()), `Z`].join(``) : this.reporter.error(`Encoding ` + t + ` time is not supported yet`), this._encodeStr(n, `octstr`)
+        }, l.prototype._encodeNull = function() {
+            return this._createEncoderBuffer(``)
+        }, l.prototype._encodeInt = function(e, t) {
+            if (typeof e == `string`) {
+                if (!t) return this.reporter.error(`String int or enum given, but no values map`);
+                if (!t.hasOwnProperty(e)) return this.reporter.error(`Values map doesn't contain: ` + JSON.stringify(e));
+                e = t[e]
+            }
+            if (typeof e != `number` && !r.isBuffer(e)) {
+                var n = e.toArray();
+                !e.sign && n[0] & 128 && n.unshift(0), e = new r(n)
+            }
+            if (r.isBuffer(e)) {
+                var i = e.length;
+                e.length === 0 && i++;
+                var a = new r(i);
+                return e.copy(a), e.length === 0 && (a[0] = 0), this._createEncoderBuffer(a)
+            }
+            if (e < 128) return this._createEncoderBuffer(e);
+            if (e < 256) return this._createEncoderBuffer([0, e]);
+            for (var i = 1, s = e; s >= 256; s >>= 8) i++;
+            for (var a = Array(i), s = a.length - 1; s >= 0; s--) a[s] = e & 255, e >>= 8;
+            return a[0] & 128 && a.unshift(0), this._createEncoderBuffer(new r(a))
+        }, l.prototype._encodeBool = function(e) {
+            return this._createEncoderBuffer(e ? 255 : 0)
+        }, l.prototype._use = function(e, t) {
+            return typeof e == `function` && (e = e(t)), e._getEncoder(`der`).tree
+        }, l.prototype._skipDefault = function(e, t, n) {
+            var r = this._baseState,
+                i;
+            if (r.default === null) return !1;
+            var a = e.join();
+            if (r.defaultBuffer === void 0 && (r.defaultBuffer = this._encodeValue(r.default, t, n).join()), a.length !== r.defaultBuffer.length) return !1;
+            for (i = 0; i < a.length; i++)
+                if (a[i] !== r.defaultBuffer[i]) return !1;
+            return !0
+        };
+
+        function d(e, t, n, r) {
+            var i;
+            if (e === `seqof` ? e = `seq` : e === `setof` && (e = `set`), s.tagByName.hasOwnProperty(e)) i = s.tagByName[e];
+            else if (typeof e == `number` && (e | 0) === e) i = e;
+            else return r.error(`Unknown tag: ` + e);
+            return i >= 31 ? r.error(`Multi-octet tag encoding unsupported`) : (t || (i |= 32), i |= s.tagClassByName[n || `universal`] << 6, i)
+        }
+    })),
+    require_pem = __commonJSMin(((e, t) => {
+        var n = require_inherits_browser(),
+            r = require_der();
+
+        function i(e) {
+            r.call(this, e), this.enc = `pem`
+        }
+        n(i, r), t.exports = i, i.prototype.encode = function(e, t) {
+            for (var n = r.prototype.encode.call(this, e).toString(`base64`), i = [`-----BEGIN ` + t.label + `-----`], a = 0; a < n.length; a += 64) i.push(n.slice(a, a + 64));
+            return i.push(`-----END ` + t.label + `-----`), i.join(`
+`)
+        }
+    })),
+    require_encoders = __commonJSMin((e => {
+        var t = e;
+        t.der = require_der(), t.pem = require_pem()
+    })),
+    require_asn1$1 = __commonJSMin((e => {
+        var t = e;
+        t.bignum = require_bn$2(), t.define = require_api().define, t.base = require_base(), t.constants = require_constants(), t.decoders = require_decoders(), t.encoders = require_encoders()
+    })),
+    require_certificate = __commonJSMin(((e, t) => {
+        var n = require_asn1$1(),
+            r = n.define(`Time`, function() {
+                this.choice({
+                    utcTime: this.utctime(),
+                    generalTime: this.gentime()
+                })
+            }),
+            i = n.define(`AttributeTypeValue`, function() {
+                this.seq().obj(this.key(`type`).objid(), this.key(`value`).any())
+            }),
+            a = n.define(`AlgorithmIdentifier`, function() {
+                this.seq().obj(this.key(`algorithm`).objid(), this.key(`parameters`).optional(), this.key(`curve`).objid().optional())
+            }),
+            s = n.define(`SubjectPublicKeyInfo`, function() {
+                this.seq().obj(this.key(`algorithm`).use(a), this.key(`subjectPublicKey`).bitstr())
+            }),
+            c = n.define(`RelativeDistinguishedName`, function() {
+                this.setof(i)
+            }),
+            l = n.define(`RDNSequence`, function() {
+                this.seqof(c)
+            }),
+            u = n.define(`Name`, function() {
+                this.choice({
+                    rdnSequence: this.use(l)
+                })
+            }),
+            d = n.define(`Validity`, function() {
+                this.seq().obj(this.key(`notBefore`).use(r), this.key(`notAfter`).use(r))
+            }),
+            f = n.define(`Extension`, function() {
+                this.seq().obj(this.key(`extnID`).objid(), this.key(`critical`).bool().def(!1), this.key(`extnValue`).octstr())
+            }),
+            p = n.define(`TBSCertificate`, function() {
+                this.seq().obj(this.key(`version`).explicit(0).int().optional(), this.key(`serialNumber`).int(), this.key(`signature`).use(a), this.key(`issuer`).use(u), this.key(`validity`).use(d), this.key(`subject`).use(u), this.key(`subjectPublicKeyInfo`).use(s), this.key(`issuerUniqueID`).implicit(1).bitstr().optional(), this.key(`subjectUniqueID`).implicit(2).bitstr().optional(), this.key(`extensions`).explicit(3).seqof(f).optional())
+            });
+        t.exports = n.define(`X509Certificate`, function() {
+            this.seq().obj(this.key(`tbsCertificate`).use(p), this.key(`signatureAlgorithm`).use(a), this.key(`signatureValue`).bitstr())
         })
+    })),
+    require_asn1 = __commonJSMin((e => {
+        var t = require_asn1$1();
+        e.certificate = require_certificate(), e.RSAPrivateKey = t.define(`RSAPrivateKey`, function() {
+            this.seq().obj(this.key(`version`).int(), this.key(`modulus`).int(), this.key(`publicExponent`).int(), this.key(`privateExponent`).int(), this.key(`prime1`).int(), this.key(`prime2`).int(), this.key(`exponent1`).int(), this.key(`exponent2`).int(), this.key(`coefficient`).int())
+        }), e.RSAPublicKey = t.define(`RSAPublicKey`, function() {
+            this.seq().obj(this.key(`modulus`).int(), this.key(`publicExponent`).int())
+        });
+        var n = t.define(`AlgorithmIdentifier`, function() {
+            this.seq().obj(this.key(`algorithm`).objid(), this.key(`none`).null_().optional(), this.key(`curve`).objid().optional(), this.key(`params`).seq().obj(this.key(`p`).int(), this.key(`q`).int(), this.key(`g`).int()).optional())
+        });
+        e.PublicKey = t.define(`SubjectPublicKeyInfo`, function() {
+            this.seq().obj(this.key(`algorithm`).use(n), this.key(`subjectPublicKey`).bitstr())
+        }), e.PrivateKey = t.define(`PrivateKeyInfo`, function() {
+            this.seq().obj(this.key(`version`).int(), this.key(`algorithm`).use(n), this.key(`subjectPrivateKey`).octstr())
+        }), e.EncryptedPrivateKey = t.define(`EncryptedPrivateKeyInfo`, function() {
+            this.seq().obj(this.key(`algorithm`).seq().obj(this.key(`id`).objid(), this.key(`decrypt`).seq().obj(this.key(`kde`).seq().obj(this.key(`id`).objid(), this.key(`kdeparams`).seq().obj(this.key(`salt`).octstr(), this.key(`iters`).int())), this.key(`cipher`).seq().obj(this.key(`algo`).objid(), this.key(`iv`).octstr()))), this.key(`subjectPrivateKey`).octstr())
+        }), e.DSAPrivateKey = t.define(`DSAPrivateKey`, function() {
+            this.seq().obj(this.key(`version`).int(), this.key(`p`).int(), this.key(`q`).int(), this.key(`g`).int(), this.key(`pub_key`).int(), this.key(`priv_key`).int())
+        }), e.DSAparam = t.define(`DSAparam`, function() {
+            this.int()
+        });
+        var r = t.define(`ECParameters`, function() {
+            this.choice({
+                namedCurve: this.objid()
+            })
+        });
+        e.ECPrivateKey = t.define(`ECPrivateKey`, function() {
+            this.seq().obj(this.key(`version`).int(), this.key(`privateKey`).octstr(), this.key(`parameters`).optional().explicit(0).use(r), this.key(`publicKey`).optional().explicit(1).bitstr())
+        }), e.signature = t.define(`signature`, function() {
+            this.seq().obj(this.key(`r`).int(), this.key(`s`).int())
+        })
+    })),
+    aesid_exports = __exportAll({
+        default: () => aesid_default
     }),
-    va = o.main`
-  min-width: 0;
-  padding: 28px 32px 48px;
-  font-family: ${G.SFPro};
-  h1,
-  h2,
-  h3,
-  input,
-  button,
-  select,
-  textarea {
-    font-family: ${G.SFPro};
-  }
-  @media (max-width: 850px) {
-    padding: 24px 16px 32px;
-  }
-  .ant-card {
-    border-color: #e8e5ed;
-    border-radius: 16px;
-  }
-  .ant-card + .ant-card {
-    margin-top: 18px !important;
-  }
-`,
-    wa = o.div`
-  margin-bottom: 24px;
-  h1 {
-    margin: 0;
-    font-size: 25px;
-    font-weight: 700;
-    letter-spacing: -0.5px;
-  }
-`,
-    Cr = () => (i.useEffect(() => {
-        const t = new URLSearchParams(window.location.search).get("tab"),
-            r = Z.find(n => n.tab === t);
-        r && (!r.educatorOnly || !T()) ? ne.navigation.currentTab = r.tab : T() && (ne.navigation.currentTab = k.profile)
-    }, []), e.jsxs(le.Provider, {
-        value: ne,
-        children: [e.jsx(qe, {}), e.jsx(_e, {
-            theme: {
-                token: {
-                    colorPrimary: "#6d3acb",
-                    borderRadius: 10,
-                    controlHeight: 42,
-                    fontFamily: G.SFPro,
-                    colorText: "#262331",
-                    colorBorder: "#dcd7e5"
+    aesid_default, init_aesid = __esmMin((() => {
+        aesid_default = {
+            "2.16.840.1.101.3.4.1.1": `aes-128-ecb`,
+            "2.16.840.1.101.3.4.1.2": `aes-128-cbc`,
+            "2.16.840.1.101.3.4.1.3": `aes-128-ofb`,
+            "2.16.840.1.101.3.4.1.4": `aes-128-cfb`,
+            "2.16.840.1.101.3.4.1.21": `aes-192-ecb`,
+            "2.16.840.1.101.3.4.1.22": `aes-192-cbc`,
+            "2.16.840.1.101.3.4.1.23": `aes-192-ofb`,
+            "2.16.840.1.101.3.4.1.24": `aes-192-cfb`,
+            "2.16.840.1.101.3.4.1.41": `aes-256-ecb`,
+            "2.16.840.1.101.3.4.1.42": `aes-256-cbc`,
+            "2.16.840.1.101.3.4.1.43": `aes-256-ofb`,
+            "2.16.840.1.101.3.4.1.44": `aes-256-cfb`
+        }
+    })),
+    require_fixProc = __commonJSMin(((e, t) => {
+        var n = /Proc-Type: 4,ENCRYPTED[\n\r]+DEK-Info: AES-((?:128)|(?:192)|(?:256))-CBC,([0-9A-H]+)[\n\r]+([0-9A-z\n\r+/=]+)[\n\r]+/m,
+            r = /^-----BEGIN ((?:.*? KEY)|CERTIFICATE)-----/m,
+            i = /^-----BEGIN ((?:.*? KEY)|CERTIFICATE)-----([0-9A-z\n\r+/=]+)-----END \1-----$/m,
+            a = require_evp_bytestokey(),
+            s = require_browser$7(),
+            c = require_safe_buffer$1().Buffer;
+        t.exports = function(e, t) {
+            var l = e.toString(),
+                u = l.match(n),
+                d;
+            if (u) {
+                var f = `aes` + u[1],
+                    p = c.from(u[2], `hex`),
+                    m = c.from(u[3].replace(/[\r\n]/g, ``), `base64`),
+                    h = a(t, p.slice(0, 8), parseInt(u[1], 10)).key,
+                    g = [],
+                    _ = s.createDecipheriv(f, h, p);
+                g.push(_.update(m)), g.push(_.final()), d = c.concat(g)
+            } else {
+                var v = l.match(i);
+                d = c.from(v[2].replace(/[\r\n]/g, ``), `base64`)
+            }
+            return {
+                tag: l.match(r)[1],
+                data: d
+            }
+        }
+    })),
+    require_parse_asn1 = __commonJSMin(((e, t) => {
+        var n = require_asn1(),
+            r = (init_aesid(), __toCommonJS(aesid_exports).default),
+            i = require_fixProc(),
+            a = require_browser$7(),
+            s = require_browser$8(),
+            c = require_safe_buffer$1().Buffer;
+
+        function l(e, t) {
+            var n = e.algorithm.decrypt.kde.kdeparams.salt,
+                i = parseInt(e.algorithm.decrypt.kde.kdeparams.iters.toString(), 10),
+                l = r[e.algorithm.decrypt.cipher.algo.join(`.`)],
+                u = e.algorithm.decrypt.cipher.iv,
+                d = e.subjectPrivateKey,
+                f = parseInt(l.split(`-`)[1], 10) / 8,
+                p = s.pbkdf2Sync(t, n, i, f, `sha1`),
+                m = a.createDecipheriv(l, p, u),
+                h = [];
+            return h.push(m.update(d)), h.push(m.final()), c.concat(h)
+        }
+
+        function u(e) {
+            var t;
+            typeof e == `object` && !c.isBuffer(e) && (t = e.passphrase, e = e.key), typeof e == `string` && (e = c.from(e));
+            var r = i(e, t),
+                a = r.tag,
+                s = r.data,
+                u, d;
+            switch (a) {
+                case `CERTIFICATE`:
+                    d = n.certificate.decode(s, `der`).tbsCertificate.subjectPublicKeyInfo;
+                case `PUBLIC KEY`:
+                    switch (d || (d = n.PublicKey.decode(s, `der`)), u = d.algorithm.algorithm.join(`.`), u) {
+                        case `1.2.840.113549.1.1.1`:
+                            return n.RSAPublicKey.decode(d.subjectPublicKey.data, `der`);
+                        case `1.2.840.10045.2.1`:
+                            return d.subjectPrivateKey = d.subjectPublicKey, {
+                                type: `ec`,
+                                data: d
+                            };
+                        case `1.2.840.10040.4.1`:
+                            return d.algorithm.params.pub_key = n.DSAparam.decode(d.subjectPublicKey.data, `der`), {
+                                type: `dsa`,
+                                data: d.algorithm.params
+                            };
+                        default:
+                            throw Error(`unknown key id ` + u)
+                    }
+                case `ENCRYPTED PRIVATE KEY`:
+                    s = n.EncryptedPrivateKey.decode(s, `der`), s = l(s, t);
+                case `PRIVATE KEY`:
+                    switch (d = n.PrivateKey.decode(s, `der`), u = d.algorithm.algorithm.join(`.`), u) {
+                        case `1.2.840.113549.1.1.1`:
+                            return n.RSAPrivateKey.decode(d.subjectPrivateKey, `der`);
+                        case `1.2.840.10045.2.1`:
+                            return {
+                                curve: d.algorithm.curve, privateKey: n.ECPrivateKey.decode(d.subjectPrivateKey, `der`).privateKey
+                            };
+                        case `1.2.840.10040.4.1`:
+                            return d.algorithm.params.priv_key = n.DSAparam.decode(d.subjectPrivateKey, `der`), {
+                                type: `dsa`,
+                                params: d.algorithm.params
+                            };
+                        default:
+                            throw Error(`unknown key id ` + u)
+                    }
+                case `RSA PUBLIC KEY`:
+                    return n.RSAPublicKey.decode(s, `der`);
+                case `RSA PRIVATE KEY`:
+                    return n.RSAPrivateKey.decode(s, `der`);
+                case `DSA PRIVATE KEY`:
+                    return {
+                        type: `dsa`, params: n.DSAPrivateKey.decode(s, `der`)
+                    };
+                case `EC PRIVATE KEY`:
+                    return s = n.ECPrivateKey.decode(s, `der`), {
+                        curve: s.parameters.value,
+                        privateKey: s.privateKey
+                    };
+                default:
+                    throw Error(`unknown key type ` + a)
+            }
+        }
+        u.signature = n.signature, t.exports = u
+    })),
+    curves_exports = __exportAll({
+        default: () => curves_default
+    }),
+    curves_default, init_curves = __esmMin((() => {
+        curves_default = {
+            "1.3.132.0.10": `secp256k1`,
+            "1.3.132.0.33": `p224`,
+            "1.2.840.10045.3.1.1": `p192`,
+            "1.2.840.10045.3.1.7": `p256`,
+            "1.3.132.0.34": `p384`,
+            "1.3.132.0.35": `p521`
+        }
+    })),
+    require_sign = __commonJSMin(((e, t) => {
+        var n = require_safe_buffer$1().Buffer,
+            r = require_browser$9(),
+            i = require_browserify_rsa(),
+            a = require_elliptic().ec,
+            s = require_bn(),
+            c = require_parse_asn1(),
+            l = (init_curves(), __toCommonJS(curves_exports).default),
+            u = 1;
+
+        function d(e, t, r, a, s) {
+            var l = c(t);
+            if (l.curve) {
+                if (a !== `ecdsa` && a !== `ecdsa/rsa`) throw Error(`wrong private key type`);
+                return f(e, l)
+            }
+            if (l.type === `dsa`) {
+                if (a !== `dsa`) throw Error(`wrong private key type`);
+                return p(e, l, r)
+            }
+            if (a !== `rsa` && a !== `ecdsa/rsa`) throw Error(`wrong private key type`);
+            if (t.padding !== void 0 && t.padding !== u) throw Error(`illegal or unsupported padding mode`);
+            e = n.concat([s, e]);
+            for (var d = l.modulus.byteLength(), m = [0, 1]; e.length + m.length + 1 < d;) m.push(255);
+            m.push(0);
+            for (var h = -1; ++h < e.length;) m.push(e[h]);
+            return i(m, l)
+        }
+
+        function f(e, t) {
+            var r = l[t.curve.join(`.`)];
+            if (!r) throw Error(`unknown curve ` + t.curve.join(`.`));
+            var i = new a(r).keyFromPrivate(t.privateKey).sign(e);
+            return n.from(i.toDER())
+        }
+
+        function p(e, t, n) {
+            for (var r = t.params.priv_key, i = t.params.p, a = t.params.q, c = t.params.g, l = new s(0), u, d = g(e, a).mod(a), f = !1, p = h(r, a, e, n); f === !1;) u = v(a, p, n), l = y(c, u, i, a), f = u.invm(a).imul(d.add(r.mul(l))).mod(a), f.cmpn(0) === 0 && (f = !1, l = new s(0));
+            return m(l, f)
+        }
+
+        function m(e, t) {
+            e = e.toArray(), t = t.toArray(), e[0] & 128 && (e = [0].concat(e)), t[0] & 128 && (t = [0].concat(t));
+            var r = [48, e.length + t.length + 4, 2, e.length];
+            return r = r.concat(e, [2, t.length], t), n.from(r)
+        }
+
+        function h(e, t, i, a) {
+            if (e = n.from(e.toArray()), e.length < t.byteLength()) {
+                var s = n.alloc(t.byteLength() - e.length);
+                e = n.concat([s, e])
+            }
+            var c = i.length,
+                l = _(i, t),
+                u = n.alloc(c);
+            u.fill(1);
+            var d = n.alloc(c);
+            return d = r(a, d).update(u).update(n.from([0])).update(e).update(l).digest(), u = r(a, d).update(u).digest(), d = r(a, d).update(u).update(n.from([1])).update(e).update(l).digest(), u = r(a, d).update(u).digest(), {
+                k: d,
+                v: u
+            }
+        }
+
+        function g(e, t) {
+            var n = new s(e),
+                r = (e.length << 3) - t.bitLength();
+            return r > 0 && n.ishrn(r), n
+        }
+
+        function _(e, t) {
+            e = g(e, t), e = e.mod(t);
+            var r = n.from(e.toArray());
+            if (r.length < t.byteLength()) {
+                var i = n.alloc(t.byteLength() - r.length);
+                r = n.concat([i, r])
+            }
+            return r
+        }
+
+        function v(e, t, i) {
+            var a, s;
+            do {
+                for (a = n.alloc(0); a.length * 8 < e.bitLength();) t.v = r(i, t.k).update(t.v).digest(), a = n.concat([a, t.v]);
+                s = g(a, e), t.k = r(i, t.k).update(t.v).update(n.from([0])).digest(), t.v = r(i, t.k).update(t.v).digest()
+            } while (s.cmp(e) !== -1);
+            return s
+        }
+
+        function y(e, t, n, r) {
+            return e.toRed(s.mont(n)).redPow(t).fromRed().mod(r)
+        }
+        t.exports = d, t.exports.getKey = h, t.exports.makeKey = v
+    })),
+    require_verify = __commonJSMin(((e, t) => {
+        var n = require_safe_buffer$1().Buffer,
+            r = require_bn(),
+            i = require_elliptic().ec,
+            a = require_parse_asn1(),
+            s = (init_curves(), __toCommonJS(curves_exports).default);
+
+        function c(e, t, i, s, c) {
+            var d = a(i);
+            if (d.type === `ec`) {
+                if (s !== `ecdsa` && s !== `ecdsa/rsa`) throw Error(`wrong public key type`);
+                return l(e, t, d)
+            }
+            if (d.type === `dsa`) {
+                if (s !== `dsa`) throw Error(`wrong public key type`);
+                return u(e, t, d)
+            }
+            if (s !== `rsa` && s !== `ecdsa/rsa`) throw Error(`wrong public key type`);
+            t = n.concat([c, t]);
+            for (var f = d.modulus.byteLength(), p = [1], m = 0; t.length + p.length + 2 < f;) p.push(255), m += 1;
+            p.push(0);
+            for (var h = -1; ++h < t.length;) p.push(t[h]);
+            p = n.from(p);
+            var g = r.mont(d.modulus);
+            e = new r(e).toRed(g), e = e.redPow(new r(d.publicExponent)), e = n.from(e.fromRed().toArray());
+            var _ = +(m < 8);
+            for (f = Math.min(e.length, p.length), e.length !== p.length && (_ = 1), h = -1; ++h < f;) _ |= e[h] ^ p[h];
+            return _ === 0
+        }
+
+        function l(e, t, n) {
+            var r = s[n.data.algorithm.curve.join(`.`)];
+            if (!r) throw Error(`unknown curve ` + n.data.algorithm.curve.join(`.`));
+            var a = new i(r),
+                c = n.data.subjectPrivateKey.data;
+            return a.verify(t, e, c)
+        }
+
+        function u(e, t, n) {
+            var i = n.data.p,
+                s = n.data.q,
+                c = n.data.g,
+                l = n.data.pub_key,
+                u = a.signature.decode(e, `der`),
+                f = u.s,
+                p = u.r;
+            d(f, s), d(p, s);
+            var m = r.mont(i),
+                h = f.invm(s);
+            return c.toRed(m).redPow(new r(t).mul(h).mod(s)).fromRed().mul(l.toRed(m).redPow(p.mul(h).mod(s)).fromRed()).mod(i).mod(s).cmp(p) === 0
+        }
+
+        function d(e, t) {
+            if (e.cmpn(0) <= 0 || e.cmp(t) >= 0) throw Error(`invalid sig`)
+        }
+        t.exports = c
+    })),
+    require_browser$4 = __commonJSMin(((e, t) => {
+        var n = require_safe_buffer$1().Buffer,
+            r = require_browser$10(),
+            i = require_readable_browser(),
+            a = require_inherits_browser(),
+            s = require_sign(),
+            c = require_verify(),
+            l = (init_algorithms(), __toCommonJS(algorithms_exports).default);
+        Object.keys(l).forEach(function(e) {
+            l[e].id = n.from(l[e].id, `hex`), l[e.toLowerCase()] = l[e]
+        });
+
+        function u(e) {
+            i.Writable.call(this);
+            var t = l[e];
+            if (!t) throw Error(`Unknown message digest`);
+            this._hashType = t.hash, this._hash = r(t.hash), this._tag = t.id, this._signType = t.sign
+        }
+        a(u, i.Writable), u.prototype._write = function(e, t, n) {
+            this._hash.update(e), n()
+        }, u.prototype.update = function(e, t) {
+            return this._hash.update(typeof e == `string` ? n.from(e, t) : e), this
+        }, u.prototype.sign = function(e, t) {
+            this.end();
+            var n = s(this._hash.digest(), e, this._hashType, this._signType, this._tag);
+            return t ? n.toString(t) : n
+        };
+
+        function d(e) {
+            i.Writable.call(this);
+            var t = l[e];
+            if (!t) throw Error(`Unknown message digest`);
+            this._hash = r(t.hash), this._tag = t.id, this._signType = t.sign
+        }
+        a(d, i.Writable), d.prototype._write = function(e, t, n) {
+            this._hash.update(e), n()
+        }, d.prototype.update = function(e, t) {
+            return this._hash.update(typeof e == `string` ? n.from(e, t) : e), this
+        }, d.prototype.verify = function(e, t, r) {
+            var i = typeof t == `string` ? n.from(t, r) : t;
+            return this.end(), c(i, this._hash.digest(), e, this._signType, this._tag)
+        };
+
+        function f(e) {
+            return new u(e)
+        }
+
+        function p(e) {
+            return new d(e)
+        }
+        t.exports = {
+            Sign: f,
+            Verify: p,
+            createSign: f,
+            createVerify: p
+        }
+    })),
+    require_browser$3 = __commonJSMin(((e, t) => {
+        init_dist$1();
+        var n = require_elliptic(),
+            r = require_bn$2();
+        t.exports = function(e) {
+            return new a(e)
+        };
+        var i = {
+            secp256k1: {
+                name: `secp256k1`,
+                byteLength: 32
+            },
+            secp224r1: {
+                name: `p224`,
+                byteLength: 28
+            },
+            prime256v1: {
+                name: `p256`,
+                byteLength: 32
+            },
+            prime192v1: {
+                name: `p192`,
+                byteLength: 24
+            },
+            ed25519: {
+                name: `ed25519`,
+                byteLength: 32
+            },
+            secp384r1: {
+                name: `p384`,
+                byteLength: 48
+            },
+            secp521r1: {
+                name: `p521`,
+                byteLength: 66
+            }
+        };
+        i.p224 = i.secp224r1, i.p256 = i.secp256r1 = i.prime256v1, i.p192 = i.secp192r1 = i.prime192v1, i.p384 = i.secp384r1, i.p521 = i.secp521r1;
+
+        function a(e) {
+            this.curveType = i[e], this.curveType || (this.curveType = {
+                name: e
+            }), this.curve = new n.ec(this.curveType.name), this.keys = void 0
+        }
+        a.prototype.generateKeys = function(e, t) {
+            return this.keys = this.curve.genKeyPair(), this.getPublicKey(e, t)
+        }, a.prototype.computeSecret = function(e, t, n) {
+            return t = t || `utf8`, Buffer.isBuffer(e) || (e = new Buffer(e, t)), s(this.curve.keyFromPublic(e).getPublic().mul(this.keys.getPrivate()).getX(), n, this.curveType.byteLength)
+        }, a.prototype.getPublicKey = function(e, t) {
+            var n = this.keys.getPublic(t === `compressed`, !0);
+            return t === `hybrid` && (n[0] = n[n.length - 1] % 2 ? 7 : 6), s(n, e)
+        }, a.prototype.getPrivateKey = function(e) {
+            return s(this.keys.getPrivate(), e)
+        }, a.prototype.setPublicKey = function(e, t) {
+            return t = t || `utf8`, Buffer.isBuffer(e) || (e = new Buffer(e, t)), this.keys._importPublic(e), this
+        }, a.prototype.setPrivateKey = function(e, t) {
+            t = t || `utf8`, Buffer.isBuffer(e) || (e = new Buffer(e, t));
+            var n = new r(e);
+            return n = n.toString(16), this.keys = this.curve.genKeyPair(), this.keys._importPrivate(n), this
+        };
+
+        function s(e, t, n) {
+            Array.isArray(e) || (e = e.toArray());
+            var r = new Buffer(e);
+            if (n && r.length < n) {
+                var i = new Buffer(n - r.length);
+                i.fill(0), r = Buffer.concat([i, r])
+            }
+            return t ? r.toString(t) : r
+        }
+    })),
+    require_mgf = __commonJSMin(((e, t) => {
+        var n = require_browser$10(),
+            r = require_safe_buffer$1().Buffer;
+        t.exports = function(e, t) {
+            for (var a = r.alloc(0), s = 0, c; a.length < t;) c = i(s++), a = r.concat([a, n(`sha1`).update(e).update(c).digest()]);
+            return a.slice(0, t)
+        };
+
+        function i(e) {
+            var t = r.allocUnsafe(4);
+            return t.writeUInt32BE(e, 0), t
+        }
+    })),
+    require_xor = __commonJSMin(((e, t) => {
+        t.exports = function(e, t) {
+            for (var n = e.length, r = -1; ++r < n;) e[r] ^= t[r];
+            return e
+        }
+    })),
+    require_withPublic = __commonJSMin(((e, t) => {
+        var n = require_bn$2(),
+            r = require_safe_buffer$1().Buffer;
+
+        function i(e, t) {
+            return r.from(e.toRed(n.mont(t.modulus)).redPow(new n(t.publicExponent)).fromRed().toArray())
+        }
+        t.exports = i
+    })),
+    require_publicEncrypt = __commonJSMin(((e, t) => {
+        var n = require_parse_asn1(),
+            r = require_browser$11(),
+            i = require_browser$10(),
+            a = require_mgf(),
+            s = require_xor(),
+            c = require_bn$2(),
+            l = require_withPublic(),
+            u = require_browserify_rsa(),
+            d = require_safe_buffer$1().Buffer;
+        t.exports = function(e, t, r) {
+            var i = e.padding ? e.padding : r ? 1 : 4,
+                a = n(e),
+                s;
+            if (i === 4) s = f(a, t);
+            else if (i === 1) s = p(a, t, r);
+            else if (i === 3) {
+                if (s = new c(t), s.cmp(a.modulus) >= 0) throw Error(`data too long for modulus`)
+            } else throw Error(`unknown padding`);
+            return r ? u(s, a) : l(s, a)
+        };
+
+        function f(e, t) {
+            var n = e.modulus.byteLength(),
+                l = t.length,
+                u = i(`sha1`).update(d.alloc(0)).digest(),
+                f = u.length,
+                p = 2 * f;
+            if (l > n - p - 2) throw Error(`message too long`);
+            var m = d.alloc(n - l - p - 2),
+                h = n - f - 1,
+                g = r(f),
+                _ = s(d.concat([u, m, d.alloc(1, 1), t], h), a(g, h)),
+                v = s(g, a(_, f));
+            return new c(d.concat([d.alloc(1), v, _], n))
+        }
+
+        function p(e, t, n) {
+            var r = t.length,
+                i = e.modulus.byteLength();
+            if (r > i - 11) throw Error(`message too long`);
+            var a = n ? d.alloc(i - r - 3, 255) : m(i - r - 3);
+            return new c(d.concat([d.from([0, n ? 1 : 2]), a, d.alloc(1), t], i))
+        }
+
+        function m(e) {
+            for (var t = d.allocUnsafe(e), n = 0, i = r(e * 2), a = 0, s; n < e;) a === i.length && (i = r(e * 2), a = 0), s = i[a++], s && (t[n++] = s);
+            return t
+        }
+    })),
+    require_privateDecrypt = __commonJSMin(((e, t) => {
+        var n = require_parse_asn1(),
+            r = require_mgf(),
+            i = require_xor(),
+            a = require_bn$2(),
+            s = require_browserify_rsa(),
+            c = require_browser$10(),
+            l = require_withPublic(),
+            u = require_safe_buffer$1().Buffer;
+        t.exports = function(e, t, r) {
+            var i = e.padding ? e.padding : r ? 1 : 4,
+                c = n(e),
+                p = c.modulus.byteLength();
+            if (t.length > p || new a(t).cmp(c.modulus) >= 0) throw Error(`decryption error`);
+            var m = r ? l(new a(t), c) : s(t, c),
+                h = u.alloc(p - m.length);
+            if (m = u.concat([h, m], p), i === 4) return d(c, m);
+            if (i === 1) return f(c, m, r);
+            if (i === 3) return m;
+            throw Error(`unknown padding`)
+        };
+
+        function d(e, t) {
+            var n = e.modulus.byteLength(),
+                a = c(`sha1`).update(u.alloc(0)).digest(),
+                s = a.length;
+            if (t[0] !== 0) throw Error(`decryption error`);
+            var l = t.slice(1, s + 1),
+                d = t.slice(s + 1),
+                f = i(d, r(i(l, r(d, s)), n - s - 1));
+            if (p(a, f.slice(0, s))) throw Error(`decryption error`);
+            for (var m = s; f[m] === 0;) m++;
+            if (f[m++] !== 1) throw Error(`decryption error`);
+            return f.slice(m)
+        }
+
+        function f(e, t, n) {
+            for (var r = t.slice(0, 2), i = 2, a = 0; t[i++] !== 0;)
+                if (i >= t.length) {
+                    a++;
+                    break
+                } var s = t.slice(2, i - 1);
+            if ((r.toString(`hex`) !== `0002` && !n || r.toString(`hex`) !== `0001` && n) && a++, s.length < 8 && a++, a) throw Error(`decryption error`);
+            return t.slice(i)
+        }
+
+        function p(e, t) {
+            e = u.from(e), t = u.from(t);
+            var n = 0,
+                r = e.length;
+            e.length !== t.length && (n++, r = Math.min(e.length, t.length));
+            for (var i = -1; ++i < r;) n += e[i] ^ t[i];
+            return n
+        }
+    })),
+    require_browser$2 = __commonJSMin((e => {
+        e.publicEncrypt = require_publicEncrypt(), e.privateDecrypt = require_privateDecrypt(), e.privateEncrypt = function(t, n) {
+            return e.publicEncrypt(t, n, !0)
+        }, e.publicDecrypt = function(t, n) {
+            return e.privateDecrypt(t, n, !0)
+        }
+    })),
+    require_browser$1 = __commonJSMin((e => {
+        init_dist(), init_dist$2();
+
+        function t() {
+            throw Error(`secure random number generation not supported by this browser
+use chrome, FireFox or Internet Explorer 11`)
+        }
+        var n = require_safe_buffer$1(),
+            r = require_browser$11(),
+            i = n.Buffer,
+            a = n.kMaxLength,
+            s = global.crypto || global.msCrypto,
+            c = 2 ** 32 - 1;
+
+        function l(e, t) {
+            if (typeof e != `number` || e !== e) throw TypeError(`offset must be a number`);
+            if (e > c || e < 0) throw TypeError(`offset must be a uint32`);
+            if (e > a || e > t) throw RangeError(`offset out of range`)
+        }
+
+        function u(e, t, n) {
+            if (typeof e != `number` || e !== e) throw TypeError(`size must be a number`);
+            if (e > c || e < 0) throw TypeError(`size must be a uint32`);
+            if (e + t > n || e > a) throw RangeError(`buffer too small`)
+        }
+        s && s.getRandomValues || !process$1.browser ? (e.randomFill = d, e.randomFillSync = p) : (e.randomFill = t, e.randomFillSync = t);
+
+        function d(e, t, n, r) {
+            if (!i.isBuffer(e) && !(e instanceof global.Uint8Array)) throw TypeError(`"buf" argument must be a Buffer or Uint8Array`);
+            if (typeof t == `function`) r = t, t = 0, n = e.length;
+            else if (typeof n == `function`) r = n, n = e.length - t;
+            else if (typeof r != `function`) throw TypeError(`"cb" argument must be a function`);
+            return l(t, e.length), u(n, t, e.length), f(e, t, n, r)
+        }
+
+        function f(e, t, n, i) {
+            if (process$1.browser) {
+                var a = e.buffer,
+                    c = new Uint8Array(a, t, n);
+                if (s.getRandomValues(c), i) {
+                    process$1.nextTick(function() {
+                        i(null, e)
+                    });
+                    return
+                }
+                return e
+            }
+            if (i) r(n, function(n, r) {
+                if (n) return i(n);
+                r.copy(e, t), i(null, e)
+            });
+            else return r(n).copy(e, t), e
+        }
+
+        function p(e, t, n) {
+            if (t === void 0 && (t = 0), !i.isBuffer(e) && !(e instanceof global.Uint8Array)) throw TypeError(`"buf" argument must be a Buffer or Uint8Array`);
+            return l(t, e.length), n === void 0 && (n = e.length - t), u(n, t, e.length), f(e, t, n)
+        }
+    })),
+    require_crypto_browserify = __commonJSMin((e => {
+        e.randomBytes = e.rng = e.pseudoRandomBytes = e.prng = require_browser$11(), e.createHash = e.Hash = require_browser$10(), e.createHmac = e.Hmac = require_browser$9();
+        var t = require_algos(),
+            n = Object.keys(t),
+            r = [`sha1`, `sha224`, `sha256`, `sha384`, `sha512`, `md5`, `rmd160`].concat(n);
+        e.getHashes = function() {
+            return r
+        };
+        var i = require_browser$8();
+        e.pbkdf2 = i.pbkdf2, e.pbkdf2Sync = i.pbkdf2Sync;
+        var a = require_browser$6();
+        e.Cipher = a.Cipher, e.createCipher = a.createCipher, e.Cipheriv = a.Cipheriv, e.createCipheriv = a.createCipheriv, e.Decipher = a.Decipher, e.createDecipher = a.createDecipher, e.Decipheriv = a.Decipheriv, e.createDecipheriv = a.createDecipheriv, e.getCiphers = a.getCiphers, e.listCiphers = a.listCiphers;
+        var s = require_browser$5();
+        e.DiffieHellmanGroup = s.DiffieHellmanGroup, e.createDiffieHellmanGroup = s.createDiffieHellmanGroup, e.getDiffieHellman = s.getDiffieHellman, e.createDiffieHellman = s.createDiffieHellman, e.DiffieHellman = s.DiffieHellman;
+        var c = require_browser$4();
+        e.createSign = c.createSign, e.Sign = c.Sign, e.createVerify = c.createVerify, e.Verify = c.Verify, e.createECDH = require_browser$3();
+        var l = require_browser$2();
+        e.publicEncrypt = l.publicEncrypt, e.privateEncrypt = l.privateEncrypt, e.publicDecrypt = l.publicDecrypt, e.privateDecrypt = l.privateDecrypt;
+        var u = require_browser$1();
+        e.randomFill = u.randomFill, e.randomFillSync = u.randomFillSync, e.createCredentials = function() {
+            throw Error(`sorry, createCredentials is not implemented yet
+we accept pull requests
+https://github.com/browserify/crypto-browserify`)
+        }, e.constants = {
+            DH_CHECK_P_NOT_SAFE_PRIME: 2,
+            DH_CHECK_P_NOT_PRIME: 1,
+            DH_UNABLE_TO_CHECK_GENERATOR: 4,
+            DH_NOT_SUITABLE_GENERATOR: 8,
+            NPN_ENABLED: 1,
+            ALPN_ENABLED: 1,
+            RSA_PKCS1_PADDING: 1,
+            RSA_SSLV23_PADDING: 2,
+            RSA_NO_PADDING: 3,
+            RSA_PKCS1_OAEP_PADDING: 4,
+            RSA_X931_PADDING: 5,
+            RSA_PKCS1_PSS_PADDING: 6,
+            POINT_CONVERSION_COMPRESSED: 2,
+            POINT_CONVERSION_UNCOMPRESSED: 4,
+            POINT_CONVERSION_HYBRID: 6
+        }
+    })),
+    require_dist = __commonJSMin(((e, t) => {
+        init_dist$1();
+        var n = require_crypto_browserify();
+        t.exports = function() {
+            function e(t) {
+                var r = this;
+                this.deriveKey = function(t, r) {
+                    var i = Object.assign({}, e.defaultDeriveKeyOpts, r),
+                        a = i.salt,
+                        s = i.iterations,
+                        c = i.digest;
+                    return n.pbkdf2Sync(t, a, s, 32, c)
+                }, this.encryptString = function(e, t) {
+                    var i = r.deriveKey(t, r._deriveKeyOptions),
+                        a = n.randomBytes(16),
+                        s = n.createCipheriv(`aes-256-gcm`, i, a),
+                        c = s.update(e.toString(), `utf8`, `base64`);
+                    c += s.final(`base64`);
+                    var l = Buffer.from(c).toString(`hex`);
+                    return a.toString(`hex`) + `:` + l
+                }, this.decryptString = function(e, t) {
+                    var i = r.deriveKey(t, r._deriveKeyOptions),
+                        a = e.toString().split(`:`);
+                    if (a.length !== 2) throw Error(`Incorrect format for encrypted string: ` + e);
+                    var s = a[0],
+                        c = a[1],
+                        l = Buffer.from(s, `hex`),
+                        u = Buffer.from(c, `hex`).toString();
+                    return n.createDecipheriv(`aes-256-gcm`, i, l).update(u, `base64`).toString()
+                }, t && (this._deriveKeyOptions = t)
+            }
+            return e.defaultDeriveKeyOpts = {
+                salt: `s41t`,
+                iterations: 1,
+                digest: `sha512`
+            }, e
+        }()
+    })),
+    F, init_F = __esmMin((() => {
+        F = function() {
+            return !1
+        }
+    })),
+    T, init_T = __esmMin((() => {
+        T = function() {
+            return !0
+        }
+    })),
+    ___default, init___ = __esmMin((() => {
+        ___default = {
+            "@@functional/placeholder": !0
+        }
+    }));
+
+function _isPlaceholder(e) {
+    return typeof e == `object` && !!e && e[`@@functional/placeholder`] === !0
+}
+var init__isPlaceholder = __esmMin((() => {}));
+
+function _curry1(e) {
+    return function t(n) {
+        return arguments.length === 0 || _isPlaceholder(n) ? t : e.apply(this, arguments)
+    }
+}
+var init__curry1 = __esmMin((() => {
+    init__isPlaceholder()
+}));
+
+function _curry2(e) {
+    return function t(n, r) {
+        switch (arguments.length) {
+            case 0:
+                return t;
+            case 1:
+                return _isPlaceholder(n) ? t : _curry1(function(t) {
+                    return e(n, t)
+                });
+            default:
+                return _isPlaceholder(n) && _isPlaceholder(r) ? t : _isPlaceholder(n) ? _curry1(function(t) {
+                    return e(t, r)
+                }) : _isPlaceholder(r) ? _curry1(function(t) {
+                    return e(n, t)
+                }) : e(n, r)
+        }
+    }
+}
+var init__curry2 = __esmMin((() => {
+        init__curry1(), init__isPlaceholder()
+    })),
+    add, init_add = __esmMin((() => {
+        init__curry2(), add = _curry2(function(e, t) {
+            return Number(e) + Number(t)
+        })
+    }));
+
+function _concat(e, t) {
+    e = e || [], t = t || [];
+    var n, r = e.length,
+        i = t.length,
+        a = [];
+    for (n = 0; n < r;) a[a.length] = e[n], n += 1;
+    for (n = 0; n < i;) a[a.length] = t[n], n += 1;
+    return a
+}
+var init__concat = __esmMin((() => {}));
+
+function _arity(e, t) {
+    switch (e) {
+        case 0:
+            return function() {
+                return t.apply(this, arguments)
+            };
+        case 1:
+            return function(e) {
+                return t.apply(this, arguments)
+            };
+        case 2:
+            return function(e, n) {
+                return t.apply(this, arguments)
+            };
+        case 3:
+            return function(e, n, r) {
+                return t.apply(this, arguments)
+            };
+        case 4:
+            return function(e, n, r, i) {
+                return t.apply(this, arguments)
+            };
+        case 5:
+            return function(e, n, r, i, a) {
+                return t.apply(this, arguments)
+            };
+        case 6:
+            return function(e, n, r, i, a, s) {
+                return t.apply(this, arguments)
+            };
+        case 7:
+            return function(e, n, r, i, a, s, c) {
+                return t.apply(this, arguments)
+            };
+        case 8:
+            return function(e, n, r, i, a, s, c, l) {
+                return t.apply(this, arguments)
+            };
+        case 9:
+            return function(e, n, r, i, a, s, c, l, u) {
+                return t.apply(this, arguments)
+            };
+        case 10:
+            return function(e, n, r, i, a, s, c, l, u, d) {
+                return t.apply(this, arguments)
+            };
+        default:
+            throw Error(`First argument to _arity must be a non-negative integer no greater than ten`)
+    }
+}
+var init__arity = __esmMin((() => {}));
+
+function _curryN(e, t, n) {
+    return function() {
+        for (var r = [], i = 0, a = e, s = 0; s < t.length || i < arguments.length;) {
+            var c;
+            s < t.length && (!_isPlaceholder(t[s]) || i >= arguments.length) ? c = t[s] : (c = arguments[i], i += 1), r[s] = c, _isPlaceholder(c) || --a, s += 1
+        }
+        return a <= 0 ? n.apply(this, r) : _arity(a, _curryN(e, r, n))
+    }
+}
+var init__curryN = __esmMin((() => {
+        init__arity(), init__isPlaceholder()
+    })),
+    curryN, init_curryN = __esmMin((() => {
+        init__arity(), init__curry1(), init__curry2(), init__curryN(), curryN = _curry2(function(e, t) {
+            return e === 1 ? _curry1(t) : _arity(e, _curryN(e, [], t))
+        })
+    })),
+    addIndex, init_addIndex = __esmMin((() => {
+        init__concat(), init__curry1(), init_curryN(), addIndex = _curry1(function(e) {
+            return curryN(e.length, function() {
+                var t = 0,
+                    n = arguments[0],
+                    r = arguments[arguments.length - 1],
+                    i = Array.prototype.slice.call(arguments, 0);
+                return i[0] = function() {
+                    var e = n.apply(this, _concat(arguments, [t, r]));
+                    return t += 1, e
+                }, e.apply(this, i)
+            })
+        })
+    }));
+
+function _curry3(e) {
+    return function t(n, r, i) {
+        switch (arguments.length) {
+            case 0:
+                return t;
+            case 1:
+                return _isPlaceholder(n) ? t : _curry2(function(t, r) {
+                    return e(n, t, r)
+                });
+            case 2:
+                return _isPlaceholder(n) && _isPlaceholder(r) ? t : _isPlaceholder(n) ? _curry2(function(t, n) {
+                    return e(t, r, n)
+                }) : _isPlaceholder(r) ? _curry2(function(t, r) {
+                    return e(n, t, r)
+                }) : _curry1(function(t) {
+                    return e(n, r, t)
+                });
+            default:
+                return _isPlaceholder(n) && _isPlaceholder(r) && _isPlaceholder(i) ? t : _isPlaceholder(n) && _isPlaceholder(r) ? _curry2(function(t, n) {
+                    return e(t, n, i)
+                }) : _isPlaceholder(n) && _isPlaceholder(i) ? _curry2(function(t, n) {
+                    return e(t, r, n)
+                }) : _isPlaceholder(r) && _isPlaceholder(i) ? _curry2(function(t, r) {
+                    return e(n, t, r)
+                }) : _isPlaceholder(n) ? _curry1(function(t) {
+                    return e(t, r, i)
+                }) : _isPlaceholder(r) ? _curry1(function(t) {
+                    return e(n, t, i)
+                }) : _isPlaceholder(i) ? _curry1(function(t) {
+                    return e(n, r, t)
+                }) : e(n, r, i)
+        }
+    }
+}
+var init__curry3 = __esmMin((() => {
+        init__curry1(), init__curry2(), init__isPlaceholder()
+    })),
+    adjust, init_adjust = __esmMin((() => {
+        init__concat(), init__curry3(), adjust = _curry3(function(e, t, n) {
+            if (e >= n.length || e < -n.length) return n;
+            var r = (e < 0 ? n.length : 0) + e,
+                i = _concat(n);
+            return i[r] = t(n[r]), i
+        })
+    })),
+    _isArray_default, init__isArray = __esmMin((() => {
+        _isArray_default = Array.isArray || function(e) {
+            return e != null && e.length >= 0 && Object.prototype.toString.call(e) === `[object Array]`
+        }
+    }));
+
+function _isTransformer(e) {
+    return e != null && typeof e[`@@transducer/step`] == `function`
+}
+var init__isTransformer = __esmMin((() => {}));
+
+function _dispatchable(e, t, n) {
+    return function() {
+        if (arguments.length === 0) return n();
+        var r = Array.prototype.slice.call(arguments, 0),
+            i = r.pop();
+        if (!_isArray_default(i)) {
+            for (var a = 0; a < e.length;) {
+                if (typeof i[e[a]] == `function`) return i[e[a]].apply(i, r);
+                a += 1
+            }
+            if (_isTransformer(i)) return t.apply(null, r)(i)
+        }
+        return n.apply(this, arguments)
+    }
+}
+var init__dispatchable = __esmMin((() => {
+    init__isArray(), init__isTransformer()
+}));
+
+function _reduced(e) {
+    return e && e[`@@transducer/reduced`] ? e : {
+        "@@transducer/value": e,
+        "@@transducer/reduced": !0
+    }
+}
+var init__reduced = __esmMin((() => {})),
+    _xfBase_default, init__xfBase = __esmMin((() => {
+        _xfBase_default = {
+            init: function() {
+                return this.xf[`@@transducer/init`]()
+            },
+            result: function(e) {
+                return this.xf[`@@transducer/result`](e)
+            }
+        }
+    })),
+    XAll, _xall, init__xall = __esmMin((() => {
+        init__curry2(), init__reduced(), init__xfBase(), XAll = function() {
+            function e(e, t) {
+                this.xf = t, this.f = e, this.all = !0
+            }
+            return e.prototype[`@@transducer/init`] = _xfBase_default.init, e.prototype[`@@transducer/result`] = function(e) {
+                return this.all && (e = this.xf[`@@transducer/step`](e, !0)), this.xf[`@@transducer/result`](e)
+            }, e.prototype[`@@transducer/step`] = function(e, t) {
+                return this.f(t) || (this.all = !1, e = _reduced(this.xf[`@@transducer/step`](e, !1))), e
+            }, e
+        }(), _xall = _curry2(function(e, t) {
+            return new XAll(e, t)
+        })
+    })),
+    all, init_all = __esmMin((() => {
+        init__curry2(), init__dispatchable(), init__xall(), all = _curry2(_dispatchable([`all`], _xall, function(e, t) {
+            for (var n = 0; n < t.length;) {
+                if (!e(t[n])) return !1;
+                n += 1
+            }
+            return !0
+        }))
+    })),
+    max, init_max = __esmMin((() => {
+        init__curry2(), max = _curry2(function(e, t) {
+            return t > e ? t : e
+        })
+    }));
+
+function _map(e, t) {
+    for (var n = 0, r = t.length, i = Array(r); n < r;) i[n] = e(t[n]), n += 1;
+    return i
+}
+var init__map = __esmMin((() => {}));
+
+function _isString(e) {
+    return Object.prototype.toString.call(e) === `[object String]`
+}
+var init__isString = __esmMin((() => {})),
+    _isArrayLike, init__isArrayLike = __esmMin((() => {
+        init__curry1(), init__isArray(), init__isString(), _isArrayLike = _curry1(function(e) {
+            return _isArray_default(e) ? !0 : !e || typeof e != `object` || _isString(e) ? !1 : e.nodeType === 1 ? !!e.length : e.length === 0 || e.length > 0 && e.hasOwnProperty(0) && e.hasOwnProperty(e.length - 1)
+        })
+    }));
+
+function _xwrap(e) {
+    return new XWrap(e)
+}
+var XWrap, init__xwrap = __esmMin((() => {
+        XWrap = function() {
+            function e(e) {
+                this.f = e
+            }
+            return e.prototype[`@@transducer/init`] = function() {
+                throw Error(`init not implemented on XWrap`)
+            }, e.prototype[`@@transducer/result`] = function(e) {
+                return e
+            }, e.prototype[`@@transducer/step`] = function(e, t) {
+                return this.f(e, t)
+            }, e
+        }()
+    })),
+    bind, init_bind = __esmMin((() => {
+        init__arity(), init__curry2(), bind = _curry2(function(e, t) {
+            return _arity(e.length, function() {
+                return e.apply(t, arguments)
+            })
+        })
+    }));
+
+function _arrayReduce(e, t, n) {
+    for (var r = 0, i = n.length; r < i;) {
+        if (t = e[`@@transducer/step`](t, n[r]), t && t[`@@transducer/reduced`]) {
+            t = t[`@@transducer/value`];
+            break
+        }
+        r += 1
+    }
+    return e[`@@transducer/result`](t)
+}
+
+function _iterableReduce(e, t, n) {
+    for (var r = n.next(); !r.done;) {
+        if (t = e[`@@transducer/step`](t, r.value), t && t[`@@transducer/reduced`]) {
+            t = t[`@@transducer/value`];
+            break
+        }
+        r = n.next()
+    }
+    return e[`@@transducer/result`](t)
+}
+
+function _methodReduce(e, t, n, r) {
+    return e[`@@transducer/result`](n[r](bind(e[`@@transducer/step`], e), t))
+}
+
+function _reduce(e, t, n) {
+    if (typeof e == `function` && (e = _xwrap(e)), _isArrayLike(n)) return _arrayReduce(e, t, n);
+    if (typeof n[`fantasy-land/reduce`] == `function`) return _methodReduce(e, t, n, `fantasy-land/reduce`);
+    if (n[symIterator] != null) return _iterableReduce(e, t, n[symIterator]());
+    if (typeof n.next == `function`) return _iterableReduce(e, t, n);
+    if (typeof n.reduce == `function`) return _methodReduce(e, t, n, `reduce`);
+    throw TypeError(`reduce: list must be array or iterable`)
+}
+var symIterator, init__reduce = __esmMin((() => {
+        init__isArrayLike(), init__xwrap(), init_bind(), symIterator = typeof Symbol < `u` ? Symbol.iterator : `@@iterator`
+    })),
+    XMap, _xmap, init__xmap = __esmMin((() => {
+        init__curry2(), init__xfBase(), XMap = function() {
+            function e(e, t) {
+                this.xf = t, this.f = e
+            }
+            return e.prototype[`@@transducer/init`] = _xfBase_default.init, e.prototype[`@@transducer/result`] = _xfBase_default.result, e.prototype[`@@transducer/step`] = function(e, t) {
+                return this.xf[`@@transducer/step`](e, this.f(t))
+            }, e
+        }(), _xmap = _curry2(function(e, t) {
+            return new XMap(e, t)
+        })
+    }));
+
+function _has(e, t) {
+    return Object.prototype.hasOwnProperty.call(t, e)
+}
+var init__has = __esmMin((() => {})),
+    toString$1, _isArguments, init__isArguments = __esmMin((() => {
+        init__has(), toString$1 = Object.prototype.toString, _isArguments = function() {
+            return toString$1.call(arguments) === `[object Arguments]` ? function(e) {
+                return toString$1.call(e) === `[object Arguments]`
+            } : function(e) {
+                return _has(`callee`, e)
+            }
+        }()
+    })),
+    hasEnumBug, nonEnumerableProps, hasArgsEnumBug, contains$1, keys, init_keys = __esmMin((() => {
+        init__curry1(), init__has(), init__isArguments(), hasEnumBug = !{
+            toString: null
+        }.propertyIsEnumerable(`toString`), nonEnumerableProps = [`constructor`, `valueOf`, `isPrototypeOf`, `toString`, `propertyIsEnumerable`, `hasOwnProperty`, `toLocaleString`], hasArgsEnumBug = function() {
+            return arguments.propertyIsEnumerable(`length`)
+        }(), contains$1 = function(e, t) {
+            for (var n = 0; n < e.length;) {
+                if (e[n] === t) return !0;
+                n += 1
+            }
+            return !1
+        }, keys = _curry1(typeof Object.keys == `function` && !hasArgsEnumBug ? function(e) {
+            return Object(e) === e ? Object.keys(e) : []
+        } : function(e) {
+            if (Object(e) !== e) return [];
+            var t, n, r = [],
+                i = hasArgsEnumBug && _isArguments(e);
+            for (t in e) _has(t, e) && (!i || t !== `length`) && (r[r.length] = t);
+            if (hasEnumBug)
+                for (n = nonEnumerableProps.length - 1; n >= 0;) t = nonEnumerableProps[n], _has(t, e) && !contains$1(r, t) && (r[r.length] = t), --n;
+            return r
+        })
+    })),
+    map, init_map = __esmMin((() => {
+        init__curry2(), init__dispatchable(), init__map(), init__reduce(), init__xmap(), init_curryN(), init_keys(), map = _curry2(_dispatchable([`fantasy-land/map`, `map`], _xmap, function(e, t) {
+            switch (Object.prototype.toString.call(t)) {
+                case `[object Function]`:
+                    return curryN(t.length, function() {
+                        return e.call(this, t.apply(this, arguments))
+                    });
+                case `[object Object]`:
+                    return _reduce(function(n, r) {
+                        return n[r] = e(t[r]), n
+                    }, {}, keys(t));
+                default:
+                    return _map(e, t)
+            }
+        }))
+    })),
+    _isInteger_default, init__isInteger = __esmMin((() => {
+        _isInteger_default = Number.isInteger || function(e) {
+            return (e | 0) === e
+        }
+    })),
+    nth, init_nth = __esmMin((() => {
+        init__curry2(), init__isString(), nth = _curry2(function(e, t) {
+            var n = e < 0 ? t.length + e : e;
+            return _isString(t) ? t.charAt(n) : t[n]
+        })
+    })),
+    paths, init_paths = __esmMin((() => {
+        init__curry2(), init__isInteger(), init_nth(), paths = _curry2(function(e, t) {
+            return e.map(function(e) {
+                for (var n = t, r = 0, i; r < e.length;) {
+                    if (n == null) return;
+                    i = e[r], n = _isInteger_default(i) ? nth(i, n) : n[i], r += 1
+                }
+                return n
+            })
+        })
+    })),
+    path, init_path = __esmMin((() => {
+        init__curry2(), init_paths(), path = _curry2(function(e, t) {
+            return paths([e], t)[0]
+        })
+    })),
+    prop, init_prop = __esmMin((() => {
+        init__curry2(), init_path(), prop = _curry2(function(e, t) {
+            return path([e], t)
+        })
+    })),
+    pluck, init_pluck = __esmMin((() => {
+        init__curry2(), init_map(), init_prop(), pluck = _curry2(function(e, t) {
+            return map(prop(e), t)
+        })
+    })),
+    reduce, init_reduce = __esmMin((() => {
+        init__curry3(), init__reduce(), reduce = _curry3(_reduce)
+    })),
+    allPass, init_allPass = __esmMin((() => {
+        init__curry1(), init_curryN(), init_max(), init_pluck(), init_reduce(), allPass = _curry1(function(e) {
+            return curryN(reduce(max, 0, pluck(`length`, e)), function() {
+                for (var t = 0, n = e.length; t < n;) {
+                    if (!e[t].apply(this, arguments)) return !1;
+                    t += 1
+                }
+                return !0
+            })
+        })
+    })),
+    always, init_always = __esmMin((() => {
+        init__curry1(), always = _curry1(function(e) {
+            return function() {
+                return e
+            }
+        })
+    })),
+    and, init_and = __esmMin((() => {
+        init__curry2(), and = _curry2(function(e, t) {
+            return e && t
+        })
+    })),
+    XAny, _xany, init__xany = __esmMin((() => {
+        init__curry2(), init__reduced(), init__xfBase(), XAny = function() {
+            function e(e, t) {
+                this.xf = t, this.f = e, this.any = !1
+            }
+            return e.prototype[`@@transducer/init`] = _xfBase_default.init, e.prototype[`@@transducer/result`] = function(e) {
+                return this.any || (e = this.xf[`@@transducer/step`](e, !1)), this.xf[`@@transducer/result`](e)
+            }, e.prototype[`@@transducer/step`] = function(e, t) {
+                return this.f(t) && (this.any = !0, e = _reduced(this.xf[`@@transducer/step`](e, !0))), e
+            }, e
+        }(), _xany = _curry2(function(e, t) {
+            return new XAny(e, t)
+        })
+    })),
+    any, init_any = __esmMin((() => {
+        init__curry2(), init__dispatchable(), init__xany(), any = _curry2(_dispatchable([`any`], _xany, function(e, t) {
+            for (var n = 0; n < t.length;) {
+                if (e(t[n])) return !0;
+                n += 1
+            }
+            return !1
+        }))
+    })),
+    anyPass, init_anyPass = __esmMin((() => {
+        init__curry1(), init_curryN(), init_max(), init_pluck(), init_reduce(), anyPass = _curry1(function(e) {
+            return curryN(reduce(max, 0, pluck(`length`, e)), function() {
+                for (var t = 0, n = e.length; t < n;) {
+                    if (e[t].apply(this, arguments)) return !0;
+                    t += 1
+                }
+                return !1
+            })
+        })
+    })),
+    ap, init_ap = __esmMin((() => {
+        init__concat(), init__curry2(), init__reduce(), init_map(), ap = _curry2(function(e, t) {
+            return typeof t[`fantasy-land/ap`] == `function` ? t[`fantasy-land/ap`](e) : typeof e.ap == `function` ? e.ap(t) : typeof e == `function` ? function(n) {
+                return e(n)(t(n))
+            } : _reduce(function(e, n) {
+                return _concat(e, map(n, t))
+            }, [], e)
+        })
+    }));
+
+function _aperture(e, t) {
+    for (var n = 0, r = t.length - (e - 1), i = Array(r >= 0 ? r : 0); n < r;) i[n] = Array.prototype.slice.call(t, n, n + e), n += 1;
+    return i
+}
+var init__aperture = __esmMin((() => {})),
+    XAperture, _xaperture, init__xaperture = __esmMin((() => {
+        init__concat(), init__curry2(), init__xfBase(), XAperture = function() {
+            function e(e, t) {
+                this.xf = t, this.pos = 0, this.full = !1, this.acc = Array(e)
+            }
+            return e.prototype[`@@transducer/init`] = _xfBase_default.init, e.prototype[`@@transducer/result`] = function(e) {
+                return this.acc = null, this.xf[`@@transducer/result`](e)
+            }, e.prototype[`@@transducer/step`] = function(e, t) {
+                return this.store(t), this.full ? this.xf[`@@transducer/step`](e, this.getCopy()) : e
+            }, e.prototype.store = function(e) {
+                this.acc[this.pos] = e, this.pos += 1, this.pos === this.acc.length && (this.pos = 0, this.full = !0)
+            }, e.prototype.getCopy = function() {
+                return _concat(Array.prototype.slice.call(this.acc, this.pos), Array.prototype.slice.call(this.acc, 0, this.pos))
+            }, e
+        }(), _xaperture = _curry2(function(e, t) {
+            return new XAperture(e, t)
+        })
+    })),
+    aperture, init_aperture = __esmMin((() => {
+        init__aperture(), init__curry2(), init__dispatchable(), init__xaperture(), aperture = _curry2(_dispatchable([], _xaperture, _aperture))
+    })),
+    append, init_append = __esmMin((() => {
+        init__concat(), init__curry2(), append = _curry2(function(e, t) {
+            return _concat(t, [e])
+        })
+    })),
+    apply, init_apply = __esmMin((() => {
+        init__curry2(), apply = _curry2(function(e, t) {
+            return e.apply(this, t)
+        })
+    })),
+    values, init_values = __esmMin((() => {
+        init__curry1(), init_keys(), values = _curry1(function(e) {
+            for (var t = keys(e), n = t.length, r = [], i = 0; i < n;) r[i] = e[t[i]], i += 1;
+            return r
+        })
+    }));
+
+function mapValues(e, t) {
+    return keys(t).reduce(function(n, r) {
+        return n[r] = e(t[r]), n
+    }, {})
+}
+var applySpec, init_applySpec = __esmMin((() => {
+        init__curry1(), init_apply(), init_curryN(), init_max(), init_pluck(), init_reduce(), init_keys(), init_values(), applySpec = _curry1(function e(t) {
+            return t = mapValues(function(t) {
+                return typeof t == `function` ? t : e(t)
+            }, t), curryN(reduce(max, 0, pluck(`length`, values(t))), function() {
+                var e = arguments;
+                return mapValues(function(t) {
+                    return apply(t, e)
+                }, t)
+            })
+        })
+    })),
+    applyTo, init_applyTo = __esmMin((() => {
+        init__curry2(), applyTo = _curry2(function(e, t) {
+            return t(e)
+        })
+    })),
+    ascend, init_ascend = __esmMin((() => {
+        init__curry3(), ascend = _curry3(function(e, t, n) {
+            var r = e(t),
+                i = e(n);
+            return r < i ? -1 : +(r > i)
+        })
+    })),
+    assoc, init_assoc = __esmMin((() => {
+        init__curry3(), assoc = _curry3(function(e, t, n) {
+            var r = {};
+            for (var i in n) r[i] = n[i];
+            return r[e] = t, r
+        })
+    })),
+    isNil, init_isNil = __esmMin((() => {
+        init__curry1(), isNil = _curry1(function(e) {
+            return e == null
+        })
+    })),
+    assocPath, init_assocPath = __esmMin((() => {
+        init__curry3(), init__has(), init__isArray(), init__isInteger(), init_assoc(), init_isNil(), assocPath = _curry3(function e(t, n, r) {
+            if (t.length === 0) return n;
+            var i = t[0];
+            if (t.length > 1) {
+                var a = !isNil(r) && _has(i, r) ? r[i] : _isInteger_default(t[1]) ? [] : {};
+                n = e(Array.prototype.slice.call(t, 1), n, a)
+            }
+            if (_isInteger_default(i) && _isArray_default(r)) {
+                var s = [].concat(r);
+                return s[i] = n, s
+            }
+            return assoc(i, n, r)
+        })
+    })),
+    nAry, init_nAry = __esmMin((() => {
+        init__curry2(), nAry = _curry2(function(e, t) {
+            switch (e) {
+                case 0:
+                    return function() {
+                        return t.call(this)
+                    };
+                case 1:
+                    return function(e) {
+                        return t.call(this, e)
+                    };
+                case 2:
+                    return function(e, n) {
+                        return t.call(this, e, n)
+                    };
+                case 3:
+                    return function(e, n, r) {
+                        return t.call(this, e, n, r)
+                    };
+                case 4:
+                    return function(e, n, r, i) {
+                        return t.call(this, e, n, r, i)
+                    };
+                case 5:
+                    return function(e, n, r, i, a) {
+                        return t.call(this, e, n, r, i, a)
+                    };
+                case 6:
+                    return function(e, n, r, i, a, s) {
+                        return t.call(this, e, n, r, i, a, s)
+                    };
+                case 7:
+                    return function(e, n, r, i, a, s, c) {
+                        return t.call(this, e, n, r, i, a, s, c)
+                    };
+                case 8:
+                    return function(e, n, r, i, a, s, c, l) {
+                        return t.call(this, e, n, r, i, a, s, c, l)
+                    };
+                case 9:
+                    return function(e, n, r, i, a, s, c, l, u) {
+                        return t.call(this, e, n, r, i, a, s, c, l, u)
+                    };
+                case 10:
+                    return function(e, n, r, i, a, s, c, l, u, d) {
+                        return t.call(this, e, n, r, i, a, s, c, l, u, d)
+                    };
+                default:
+                    throw Error(`First argument to nAry must be a non-negative integer no greater than ten`)
+            }
+        })
+    })),
+    binary, init_binary = __esmMin((() => {
+        init__curry1(), init_nAry(), binary = _curry1(function(e) {
+            return nAry(2, e)
+        })
+    }));
+
+function _isFunction(e) {
+    var t = Object.prototype.toString.call(e);
+    return t === `[object Function]` || t === `[object AsyncFunction]` || t === `[object GeneratorFunction]` || t === `[object AsyncGeneratorFunction]`
+}
+var init__isFunction = __esmMin((() => {})),
+    liftN, init_liftN = __esmMin((() => {
+        init__curry2(), init__reduce(), init_ap(), init_curryN(), init_map(), liftN = _curry2(function(e, t) {
+            var n = curryN(e, t);
+            return curryN(e, function() {
+                return _reduce(ap, map(n, arguments[0]), Array.prototype.slice.call(arguments, 1))
+            })
+        })
+    })),
+    lift, init_lift = __esmMin((() => {
+        init__curry1(), init_liftN(), lift = _curry1(function(e) {
+            return liftN(e.length, e)
+        })
+    })),
+    both, init_both = __esmMin((() => {
+        init__curry2(), init__isFunction(), init_and(), init_lift(), both = _curry2(function(e, t) {
+            return _isFunction(e) ? function() {
+                return e.apply(this, arguments) && t.apply(this, arguments)
+            } : lift(and)(e, t)
+        })
+    })),
+    curry, init_curry = __esmMin((() => {
+        init__curry1(), init_curryN(), curry = _curry1(function(e) {
+            return curryN(e.length, e)
+        })
+    })),
+    call, init_call = __esmMin((() => {
+        init_curry(), call = curry(function(e) {
+            return e.apply(this, Array.prototype.slice.call(arguments, 1))
+        })
+    }));
+
+function _makeFlat(e) {
+    return function t(n) {
+        for (var r, i, a, s = [], c = 0, l = n.length; c < l;) {
+            if (_isArrayLike(n[c]))
+                for (r = e ? t(n[c]) : n[c], a = 0, i = r.length; a < i;) s[s.length] = r[a], a += 1;
+            else s[s.length] = n[c];
+            c += 1
+        }
+        return s
+    }
+}
+var init__makeFlat = __esmMin((() => {
+    init__isArrayLike()
+}));
+
+function _forceReduced(e) {
+    return {
+        "@@transducer/value": e,
+        "@@transducer/reduced": !0
+    }
+}
+var init__forceReduced = __esmMin((() => {})),
+    preservingReduced, _flatCat, init__flatCat = __esmMin((() => {
+        init__forceReduced(), init__isArrayLike(), init__reduce(), init__xfBase(), preservingReduced = function(e) {
+            return {
+                "@@transducer/init": _xfBase_default.init,
+                "@@transducer/result": function(t) {
+                    return e[`@@transducer/result`](t)
+                },
+                "@@transducer/step": function(t, n) {
+                    var r = e[`@@transducer/step`](t, n);
+                    return r[`@@transducer/reduced`] ? _forceReduced(r) : r
+                }
+            }
+        }, _flatCat = function(e) {
+            var t = preservingReduced(e);
+            return {
+                "@@transducer/init": _xfBase_default.init,
+                "@@transducer/result": function(e) {
+                    return t[`@@transducer/result`](e)
+                },
+                "@@transducer/step": function(e, n) {
+                    return _isArrayLike(n) ? _reduce(t, e, n) : _reduce(t, e, [n])
+                }
+            }
+        }
+    })),
+    _xchain, init__xchain = __esmMin((() => {
+        init__curry2(), init__flatCat(), init_map(), _xchain = _curry2(function(e, t) {
+            return map(e, _flatCat(t))
+        })
+    })),
+    chain, init_chain = __esmMin((() => {
+        init__curry2(), init__dispatchable(), init__makeFlat(), init__xchain(), init_map(), chain = _curry2(_dispatchable([`fantasy-land/chain`, `chain`], _xchain, function(e, t) {
+            return typeof t == `function` ? function(n) {
+                return e(t(n))(n)
+            } : _makeFlat(!1)(map(e, t))
+        }))
+    })),
+    clamp, init_clamp = __esmMin((() => {
+        init__curry3(), clamp = _curry3(function(e, t, n) {
+            if (e > t) throw Error(`min must not be greater than max in clamp(min, max, value)`);
+            return n < e ? e : n > t ? t : n
+        })
+    }));
+
+function _cloneRegExp(e) {
+    return new RegExp(e.source, (e.global ? `g` : ``) + (e.ignoreCase ? `i` : ``) + (e.multiline ? `m` : ``) + (e.sticky ? `y` : ``) + (e.unicode ? `u` : ``))
+}
+var init__cloneRegExp = __esmMin((() => {})),
+    type, init_type = __esmMin((() => {
+        init__curry1(), type = _curry1(function(e) {
+            return e === null ? `Null` : e === void 0 ? `Undefined` : Object.prototype.toString.call(e).slice(8, -1)
+        })
+    }));
+
+function _clone(e, t, n, r) {
+    var i = function(i) {
+        for (var a = t.length, s = 0; s < a;) {
+            if (e === t[s]) return n[s];
+            s += 1
+        }
+        for (var c in t[s + 1] = e, n[s + 1] = i, e) i[c] = r ? _clone(e[c], t, n, !0) : e[c];
+        return i
+    };
+    switch (type(e)) {
+        case `Object`:
+            return i({});
+        case `Array`:
+            return i([]);
+        case `Date`:
+            return new Date(e.valueOf());
+        case `RegExp`:
+            return _cloneRegExp(e);
+        default:
+            return e
+    }
+}
+var init__clone = __esmMin((() => {
+        init__cloneRegExp(), init_type()
+    })),
+    clone, init_clone = __esmMin((() => {
+        init__clone(), init__curry1(), clone = _curry1(function(e) {
+            return e != null && typeof e.clone == `function` ? e.clone() : _clone(e, [], [], !0)
+        })
+    })),
+    comparator, init_comparator = __esmMin((() => {
+        init__curry1(), comparator = _curry1(function(e) {
+            return function(t, n) {
+                return e(t, n) ? -1 : +!!e(n, t)
+            }
+        })
+    })),
+    not, init_not = __esmMin((() => {
+        init__curry1(), not = _curry1(function(e) {
+            return !e
+        })
+    })),
+    complement, init_complement = __esmMin((() => {
+        init_lift(), init_not(), complement = lift(not)
+    }));
+
+function _pipe(e, t) {
+    return function() {
+        return t.call(this, e.apply(this, arguments))
+    }
+}
+var init__pipe = __esmMin((() => {}));
+
+function _checkForMethod(e, t) {
+    return function() {
+        var n = arguments.length;
+        if (n === 0) return t();
+        var r = arguments[n - 1];
+        return _isArray_default(r) || typeof r[e] != `function` ? t.apply(this, arguments) : r[e].apply(r, Array.prototype.slice.call(arguments, 0, n - 1))
+    }
+}
+var init__checkForMethod = __esmMin((() => {
+        init__isArray()
+    })),
+    slice, init_slice = __esmMin((() => {
+        init__checkForMethod(), init__curry3(), slice = _curry3(_checkForMethod(`slice`, function(e, t, n) {
+            return Array.prototype.slice.call(n, e, t)
+        }))
+    })),
+    tail, init_tail = __esmMin((() => {
+        init__checkForMethod(), init__curry1(), init_slice(), tail = _curry1(_checkForMethod(`tail`, slice(1, 1 / 0)))
+    }));
+
+function pipe() {
+    if (arguments.length === 0) throw Error(`pipe requires at least one argument`);
+    return _arity(arguments[0].length, reduce(_pipe, arguments[0], tail(arguments)))
+}
+var init_pipe = __esmMin((() => {
+        init__arity(), init__pipe(), init_reduce(), init_tail()
+    })),
+    reverse, init_reverse = __esmMin((() => {
+        init__curry1(), init__isString(), reverse = _curry1(function(e) {
+            return _isString(e) ? e.split(``).reverse().join(``) : Array.prototype.slice.call(e, 0).reverse()
+        })
+    }));
+
+function compose() {
+    if (arguments.length === 0) throw Error(`compose requires at least one argument`);
+    return pipe.apply(this, reverse(arguments))
+}
+var init_compose = __esmMin((() => {
+    init_pipe(), init_reverse()
+}));
+
+function composeK() {
+    if (arguments.length === 0) throw Error(`composeK requires at least one argument`);
+    var e = Array.prototype.slice.call(arguments),
+        t = e.pop();
+    return compose(compose.apply(this, map(chain, e)), t)
+}
+var init_composeK = __esmMin((() => {
+    init_chain(), init_compose(), init_map()
+}));
+
+function _pipeP(e, t) {
+    return function() {
+        var n = this;
+        return e.apply(n, arguments).then(function(e) {
+            return t.call(n, e)
+        })
+    }
+}
+var init__pipeP = __esmMin((() => {}));
+
+function pipeP() {
+    if (arguments.length === 0) throw Error(`pipeP requires at least one argument`);
+    return _arity(arguments[0].length, reduce(_pipeP, arguments[0], tail(arguments)))
+}
+var init_pipeP = __esmMin((() => {
+    init__arity(), init__pipeP(), init_reduce(), init_tail()
+}));
+
+function composeP() {
+    if (arguments.length === 0) throw Error(`composeP requires at least one argument`);
+    return pipeP.apply(this, reverse(arguments))
+}
+var init_composeP = __esmMin((() => {
+        init_pipeP(), init_reverse()
+    })),
+    head, init_head = __esmMin((() => {
+        init_nth(), head = nth(0)
+    }));
+
+function _identity(e) {
+    return e
+}
+var init__identity = __esmMin((() => {})),
+    identity, init_identity = __esmMin((() => {
+        init__curry1(), init__identity(), identity = _curry1(_identity)
+    })),
+    pipeWith, init_pipeWith = __esmMin((() => {
+        init__arity(), init__curry2(), init_head(), init__reduce(), init_tail(), init_identity(), pipeWith = _curry2(function(e, t) {
+            if (t.length <= 0) return identity;
+            var n = head(t),
+                r = tail(t);
+            return _arity(n.length, function() {
+                return _reduce(function(t, n) {
+                    return e.call(this, n, t)
+                }, n.apply(this, arguments), r)
+            })
+        })
+    })),
+    composeWith, init_composeWith = __esmMin((() => {
+        init__curry2(), init_pipeWith(), init_reverse(), composeWith = _curry2(function(e, t) {
+            return pipeWith.apply(this, [e, reverse(t)])
+        })
+    }));
+
+function _arrayFromIterator(e) {
+    for (var t = [], n; !(n = e.next()).done;) t.push(n.value);
+    return t
+}
+var init__arrayFromIterator = __esmMin((() => {}));
+
+function _includesWith(e, t, n) {
+    for (var r = 0, i = n.length; r < i;) {
+        if (e(t, n[r])) return !0;
+        r += 1
+    }
+    return !1
+}
+var init__includesWith = __esmMin((() => {}));
+
+function _functionName(e) {
+    var t = String(e).match(/^function (\w*)/);
+    return t == null ? `` : t[1]
+}
+var init__functionName = __esmMin((() => {}));
+
+function _objectIs(e, t) {
+    return e === t ? e !== 0 || 1 / e == 1 / t : e !== e && t !== t
+}
+var _objectIs_default, init__objectIs = __esmMin((() => {
+    _objectIs_default = typeof Object.is == `function` ? Object.is : _objectIs
+}));
+
+function _uniqContentEquals(e, t, n, r) {
+    var i = _arrayFromIterator(e),
+        a = _arrayFromIterator(t);
+
+    function s(e, t) {
+        return _equals(e, t, n.slice(), r.slice())
+    }
+    return !_includesWith(function(e, t) {
+        return !_includesWith(s, t, e)
+    }, a, i)
+}
+
+function _equals(e, t, n, r) {
+    if (_objectIs_default(e, t)) return !0;
+    var i = type(e);
+    if (i !== type(t) || e == null || t == null) return !1;
+    if (typeof e[`fantasy-land/equals`] == `function` || typeof t[`fantasy-land/equals`] == `function`) return typeof e[`fantasy-land/equals`] == `function` && e[`fantasy-land/equals`](t) && typeof t[`fantasy-land/equals`] == `function` && t[`fantasy-land/equals`](e);
+    if (typeof e.equals == `function` || typeof t.equals == `function`) return typeof e.equals == `function` && e.equals(t) && typeof t.equals == `function` && t.equals(e);
+    switch (i) {
+        case `Arguments`:
+        case `Array`:
+        case `Object`:
+            if (typeof e.constructor == `function` && _functionName(e.constructor) === `Promise`) return e === t;
+            break;
+        case `Boolean`:
+        case `Number`:
+        case `String`:
+            if (!(typeof e == typeof t && _objectIs_default(e.valueOf(), t.valueOf()))) return !1;
+            break;
+        case `Date`:
+            if (!_objectIs_default(e.valueOf(), t.valueOf())) return !1;
+            break;
+        case `Error`:
+            return e.name === t.name && e.message === t.message;
+        case `RegExp`:
+            if (e.source !== t.source || e.global !== t.global || e.ignoreCase !== t.ignoreCase || e.multiline !== t.multiline || e.sticky !== t.sticky || e.unicode !== t.unicode) return !1
+    }
+    for (var a = n.length - 1; a >= 0;) {
+        if (n[a] === e) return r[a] === t;
+        --a
+    }
+    switch (i) {
+        case `Map`:
+            return e.size === t.size && _uniqContentEquals(e.entries(), t.entries(), n.concat([e]), r.concat([t]));
+        case `Set`:
+            return e.size === t.size && _uniqContentEquals(e.values(), t.values(), n.concat([e]), r.concat([t]));
+        case `Arguments`:
+        case `Array`:
+        case `Object`:
+        case `Boolean`:
+        case `Number`:
+        case `String`:
+        case `Date`:
+        case `Error`:
+        case `RegExp`:
+        case `Int8Array`:
+        case `Uint8Array`:
+        case `Uint8ClampedArray`:
+        case `Int16Array`:
+        case `Uint16Array`:
+        case `Int32Array`:
+        case `Uint32Array`:
+        case `Float32Array`:
+        case `Float64Array`:
+        case `ArrayBuffer`:
+            break;
+        default:
+            return !1
+    }
+    var s = keys(e);
+    if (s.length !== keys(t).length) return !1;
+    var c = n.concat([e]),
+        l = r.concat([t]);
+    for (a = s.length - 1; a >= 0;) {
+        var u = s[a];
+        if (!(_has(u, t) && _equals(t[u], e[u], c, l))) return !1;
+        --a
+    }
+    return !0
+}
+var init__equals = __esmMin((() => {
+        init__arrayFromIterator(), init__includesWith(), init__functionName(), init__has(), init__objectIs(), init_keys(), init_type()
+    })),
+    equals, init_equals = __esmMin((() => {
+        init__curry2(), init__equals(), equals = _curry2(function(e, t) {
+            return _equals(e, t, [], [])
+        })
+    }));
+
+function _indexOf(e, t, n) {
+    var r, i;
+    if (typeof e.indexOf == `function`) switch (typeof t) {
+        case `number`:
+            if (t === 0) {
+                for (r = 1 / t; n < e.length;) {
+                    if (i = e[n], i === 0 && 1 / i === r) return n;
+                    n += 1
+                }
+                return -1
+            }
+            if (t !== t) {
+                for (; n < e.length;) {
+                    if (i = e[n], typeof i == `number` && i !== i) return n;
+                    n += 1
+                }
+                return -1
+            }
+            return e.indexOf(t, n);
+        case `string`:
+        case `boolean`:
+        case `function`:
+        case `undefined`:
+            return e.indexOf(t, n);
+        case `object`:
+            if (t === null) return e.indexOf(t, n)
+    }
+    for (; n < e.length;) {
+        if (equals(e[n], t)) return n;
+        n += 1
+    }
+    return -1
+}
+var init__indexOf = __esmMin((() => {
+    init_equals()
+}));
+
+function _includes(e, t) {
+    return _indexOf(t, e, 0) >= 0
+}
+var init__includes = __esmMin((() => {
+    init__indexOf()
+}));
+
+function _quote(e) {
+    return `"` + e.replace(/\\/g, `\\\\`).replace(/[\b]/g, `\\b`).replace(/\f/g, `\\f`).replace(/\n/g, `\\n`).replace(/\r/g, `\\r`).replace(/\t/g, `\\t`).replace(/\v/g, `\\v`).replace(/\0/g, `\\0`).replace(/"/g, `\\"`) + `"`
+}
+var init__quote = __esmMin((() => {})),
+    pad, _toISOString, init__toISOString = __esmMin((() => {
+        pad = function(e) {
+            return (e < 10 ? `0` : ``) + e
+        }, _toISOString = typeof Date.prototype.toISOString == `function` ? function(e) {
+            return e.toISOString()
+        } : function(e) {
+            return e.getUTCFullYear() + `-` + pad(e.getUTCMonth() + 1) + `-` + pad(e.getUTCDate()) + `T` + pad(e.getUTCHours()) + `:` + pad(e.getUTCMinutes()) + `:` + pad(e.getUTCSeconds()) + `.` + (e.getUTCMilliseconds() / 1e3).toFixed(3).slice(2, 5) + `Z`
+        }
+    }));
+
+function _complement(e) {
+    return function() {
+        return !e.apply(this, arguments)
+    }
+}
+var init__complement = __esmMin((() => {}));
+
+function _filter(e, t) {
+    for (var n = 0, r = t.length, i = []; n < r;) e(t[n]) && (i[i.length] = t[n]), n += 1;
+    return i
+}
+var init__filter = __esmMin((() => {}));
+
+function _isObject(e) {
+    return Object.prototype.toString.call(e) === `[object Object]`
+}
+var init__isObject = __esmMin((() => {})),
+    XFilter, _xfilter, init__xfilter = __esmMin((() => {
+        init__curry2(), init__xfBase(), XFilter = function() {
+            function e(e, t) {
+                this.xf = t, this.f = e
+            }
+            return e.prototype[`@@transducer/init`] = _xfBase_default.init, e.prototype[`@@transducer/result`] = _xfBase_default.result, e.prototype[`@@transducer/step`] = function(e, t) {
+                return this.f(t) ? this.xf[`@@transducer/step`](e, t) : e
+            }, e
+        }(), _xfilter = _curry2(function(e, t) {
+            return new XFilter(e, t)
+        })
+    })),
+    filter, init_filter = __esmMin((() => {
+        init__curry2(), init__dispatchable(), init__filter(), init__isObject(), init__reduce(), init__xfilter(), init_keys(), filter = _curry2(_dispatchable([`filter`], _xfilter, function(e, t) {
+            return _isObject(t) ? _reduce(function(n, r) {
+                return e(t[r]) && (n[r] = t[r]), n
+            }, {}, keys(t)) : _filter(e, t)
+        }))
+    })),
+    reject, init_reject = __esmMin((() => {
+        init__complement(), init__curry2(), init_filter(), reject = _curry2(function(e, t) {
+            return filter(_complement(e), t)
+        })
+    }));
+
+function _toString(e, t) {
+    var n = function(n) {
+            var r = t.concat([e]);
+            return _includes(n, r) ? `<Circular>` : _toString(n, r)
+        },
+        r = function(e, t) {
+            return _map(function(t) {
+                return _quote(t) + `: ` + n(e[t])
+            }, t.slice().sort())
+        };
+    switch (Object.prototype.toString.call(e)) {
+        case `[object Arguments]`:
+            return `(function() { return arguments; }(` + _map(n, e).join(`, `) + `))`;
+        case `[object Array]`:
+            return `[` + _map(n, e).concat(r(e, reject(function(e) {
+                return /^\d+$/.test(e)
+            }, keys(e)))).join(`, `) + `]`;
+        case `[object Boolean]`:
+            return typeof e == `object` ? `new Boolean(` + n(e.valueOf()) + `)` : e.toString();
+        case `[object Date]`:
+            return `new Date(` + (isNaN(e.valueOf()) ? n(NaN) : _quote(_toISOString(e))) + `)`;
+        case `[object Null]`:
+            return `null`;
+        case `[object Number]`:
+            return typeof e == `object` ? `new Number(` + n(e.valueOf()) + `)` : 1 / e == -1 / 0 ? `-0` : e.toString(10);
+        case `[object String]`:
+            return typeof e == `object` ? `new String(` + n(e.valueOf()) + `)` : _quote(e);
+        case `[object Undefined]`:
+            return `undefined`;
+        default:
+            if (typeof e.toString == `function`) {
+                var i = e.toString();
+                if (i !== `[object Object]`) return i
+            }
+            return `{` + r(e, keys(e)).join(`, `) + `}`
+    }
+}
+var init__toString = __esmMin((() => {
+        init__includes(), init__map(), init__quote(), init__toISOString(), init_keys(), init_reject()
+    })),
+    toString, init_toString = __esmMin((() => {
+        init__curry1(), init__toString(), toString = _curry1(function(e) {
+            return _toString(e, [])
+        })
+    })),
+    concat, init_concat = __esmMin((() => {
+        init__curry2(), init__isArray(), init__isFunction(), init__isString(), init_toString(), concat = _curry2(function(e, t) {
+            if (_isArray_default(e)) {
+                if (_isArray_default(t)) return e.concat(t);
+                throw TypeError(toString(t) + ` is not an array`)
+            }
+            if (_isString(e)) {
+                if (_isString(t)) return e + t;
+                throw TypeError(toString(t) + ` is not a string`)
+            }
+            if (e != null && _isFunction(e[`fantasy-land/concat`])) return e[`fantasy-land/concat`](t);
+            if (e != null && _isFunction(e.concat)) return e.concat(t);
+            throw TypeError(toString(e) + ` does not have a method named "concat" or "fantasy-land/concat"`)
+        })
+    })),
+    cond, init_cond = __esmMin((() => {
+        init__arity(), init__curry1(), init_map(), init_max(), init_reduce(), cond = _curry1(function(e) {
+            return _arity(reduce(max, 0, map(function(e) {
+                return e[0].length
+            }, e)), function() {
+                for (var t = 0; t < e.length;) {
+                    if (e[t][0].apply(this, arguments)) return e[t][1].apply(this, arguments);
+                    t += 1
+                }
+            })
+        })
+    })),
+    constructN, init_constructN = __esmMin((() => {
+        init__curry2(), init_curry(), init_nAry(), constructN = _curry2(function(e, t) {
+            if (e > 10) throw Error(`Constructor with greater than ten arguments`);
+            return e === 0 ? function() {
+                return new t
+            } : curry(nAry(e, function(e, n, r, i, a, s, c, l, u, d) {
+                switch (arguments.length) {
+                    case 1:
+                        return new t(e);
+                    case 2:
+                        return new t(e, n);
+                    case 3:
+                        return new t(e, n, r);
+                    case 4:
+                        return new t(e, n, r, i);
+                    case 5:
+                        return new t(e, n, r, i, a);
+                    case 6:
+                        return new t(e, n, r, i, a, s);
+                    case 7:
+                        return new t(e, n, r, i, a, s, c);
+                    case 8:
+                        return new t(e, n, r, i, a, s, c, l);
+                    case 9:
+                        return new t(e, n, r, i, a, s, c, l, u);
+                    case 10:
+                        return new t(e, n, r, i, a, s, c, l, u, d)
+                }
+            }))
+        })
+    })),
+    construct, init_construct = __esmMin((() => {
+        init__curry1(), init_constructN(), construct = _curry1(function(e) {
+            return constructN(e.length, e)
+        })
+    })),
+    contains, init_contains = __esmMin((() => {
+        init__includes(), init__curry2(), contains = _curry2(_includes)
+    })),
+    converge, init_converge = __esmMin((() => {
+        init__curry2(), init__map(), init_curryN(), init_max(), init_pluck(), init_reduce(), converge = _curry2(function(e, t) {
+            return curryN(reduce(max, 0, pluck(`length`, t)), function() {
+                var n = arguments,
+                    r = this;
+                return e.apply(r, _map(function(e) {
+                    return e.apply(r, n)
+                }, t))
+            })
+        })
+    })),
+    XReduceBy, _xreduceBy, init__xreduceBy = __esmMin((() => {
+        init__curryN(), init__has(), init__xfBase(), XReduceBy = function() {
+            function e(e, t, n, r) {
+                this.valueFn = e, this.valueAcc = t, this.keyFn = n, this.xf = r, this.inputs = {}
+            }
+            return e.prototype[`@@transducer/init`] = _xfBase_default.init, e.prototype[`@@transducer/result`] = function(e) {
+                for (var t in this.inputs)
+                    if (_has(t, this.inputs) && (e = this.xf[`@@transducer/step`](e, this.inputs[t]), e[`@@transducer/reduced`])) {
+                        e = e[`@@transducer/value`];
+                        break
+                    } return this.inputs = null, this.xf[`@@transducer/result`](e)
+            }, e.prototype[`@@transducer/step`] = function(e, t) {
+                var n = this.keyFn(t);
+                return this.inputs[n] = this.inputs[n] || [n, this.valueAcc], this.inputs[n][1] = this.valueFn(this.inputs[n][1], t), e
+            }, e
+        }(), _xreduceBy = _curryN(4, [], function(e, t, n, r) {
+            return new XReduceBy(e, t, n, r)
+        })
+    })),
+    reduceBy, init_reduceBy = __esmMin((() => {
+        init__clone(), init__curryN(), init__dispatchable(), init__has(), init__reduce(), init__xreduceBy(), reduceBy = _curryN(4, [], _dispatchable([], _xreduceBy, function(e, t, n, r) {
+            return _reduce(function(r, i) {
+                var a = n(i);
+                return r[a] = e(_has(a, r) ? r[a] : _clone(t, [], [], !1), i), r
+            }, {}, r)
+        }))
+    })),
+    countBy, init_countBy = __esmMin((() => {
+        init_reduceBy(), countBy = reduceBy(function(e, t) {
+            return e + 1
+        }, 0)
+    })),
+    dec, init_dec = __esmMin((() => {
+        init_add(), dec = add(-1)
+    })),
+    defaultTo, init_defaultTo = __esmMin((() => {
+        init__curry2(), defaultTo = _curry2(function(e, t) {
+            return t == null || t !== t ? e : t
+        })
+    })),
+    descend, init_descend = __esmMin((() => {
+        init__curry3(), descend = _curry3(function(e, t, n) {
+            var r = e(t),
+                i = e(n);
+            return r > i ? -1 : +(r < i)
+        })
+    }));
+
+function hasOrAdd(e, t, n) {
+    var r = typeof e,
+        i, a;
+    switch (r) {
+        case `string`:
+        case `number`:
+            return e === 0 && 1 / e == -1 / 0 ? n._items[`-0`] ? !0 : (t && (n._items[`-0`] = !0), !1) : n._nativeSet === null ? r in n._items ? e in n._items[r] || (t && (n._items[r][e] = !0), !1) : (t && (n._items[r] = {}, n._items[r][e] = !0), !1) : t ? (i = n._nativeSet.size, n._nativeSet.add(e), a = n._nativeSet.size, a === i) : n._nativeSet.has(e);
+        case `boolean`:
+            if (r in n._items) {
+                var s = +!!e;
+                return n._items[r][s] ? !0 : (t && (n._items[r][s] = !0), !1)
+            }
+            return t && (n._items[r] = e ? [!1, !0] : [!0, !1]), !1;
+        case `function`:
+            return n._nativeSet === null ? r in n._items ? _includes(e, n._items[r]) ? !0 : (t && n._items[r].push(e), !1) : (t && (n._items[r] = [e]), !1) : t ? (i = n._nativeSet.size, n._nativeSet.add(e), a = n._nativeSet.size, a === i) : n._nativeSet.has(e);
+        case `undefined`:
+            return n._items[r] ? !0 : (t && (n._items[r] = !0), !1);
+        case `object`:
+            if (e === null) return n._items.null ? !0 : (t && (n._items.null = !0), !1);
+        default:
+            return r = Object.prototype.toString.call(e), r in n._items ? _includes(e, n._items[r]) ? !0 : (t && n._items[r].push(e), !1) : (t && (n._items[r] = [e]), !1)
+    }
+}
+var _Set, init__Set = __esmMin((() => {
+        init__includes(), _Set = function() {
+            function e() {
+                this._nativeSet = typeof Set == `function` ? new Set : null, this._items = {}
+            }
+            return e.prototype.add = function(e) {
+                return !hasOrAdd(e, !0, this)
+            }, e.prototype.has = function(e) {
+                return hasOrAdd(e, !1, this)
+            }, e
+        }()
+    })),
+    difference, init_difference = __esmMin((() => {
+        init__curry2(), init__Set(), difference = _curry2(function(e, t) {
+            for (var n = [], r = 0, i = e.length, a = t.length, s = new _Set, c = 0; c < a; c += 1) s.add(t[c]);
+            for (; r < i;) s.add(e[r]) && (n[n.length] = e[r]), r += 1;
+            return n
+        })
+    })),
+    differenceWith, init_differenceWith = __esmMin((() => {
+        init__includesWith(), init__curry3(), differenceWith = _curry3(function(e, t, n) {
+            for (var r = [], i = 0, a = t.length; i < a;) !_includesWith(e, t[i], n) && !_includesWith(e, t[i], r) && r.push(t[i]), i += 1;
+            return r
+        })
+    })),
+    dissoc, init_dissoc = __esmMin((() => {
+        init__curry2(), dissoc = _curry2(function(e, t) {
+            var n = {};
+            for (var r in t) n[r] = t[r];
+            return delete n[e], n
+        })
+    })),
+    remove, init_remove = __esmMin((() => {
+        init__curry3(), remove = _curry3(function(e, t, n) {
+            var r = Array.prototype.slice.call(n, 0);
+            return r.splice(e, t), r
+        })
+    })),
+    update, init_update = __esmMin((() => {
+        init__curry3(), init_adjust(), init_always(), update = _curry3(function(e, t, n) {
+            return adjust(e, always(t), n)
+        })
+    })),
+    dissocPath, init_dissocPath = __esmMin((() => {
+        init__curry2(), init__isInteger(), init__isArray(), init_assoc(), init_dissoc(), init_remove(), init_update(), dissocPath = _curry2(function e(t, n) {
+            switch (t.length) {
+                case 0:
+                    return n;
+                case 1:
+                    return _isInteger_default(t[0]) && _isArray_default(n) ? remove(t[0], 1, n) : dissoc(t[0], n);
+                default:
+                    var r = t[0],
+                        i = Array.prototype.slice.call(t, 1);
+                    return n[r] == null ? n : _isInteger_default(r) && _isArray_default(n) ? update(r, e(i, n[r]), n) : assoc(r, e(i, n[r]), n)
+            }
+        })
+    })),
+    divide, init_divide = __esmMin((() => {
+        init__curry2(), divide = _curry2(function(e, t) {
+            return e / t
+        })
+    })),
+    XDrop, _xdrop, init__xdrop = __esmMin((() => {
+        init__curry2(), init__xfBase(), XDrop = function() {
+            function e(e, t) {
+                this.xf = t, this.n = e
+            }
+            return e.prototype[`@@transducer/init`] = _xfBase_default.init, e.prototype[`@@transducer/result`] = _xfBase_default.result, e.prototype[`@@transducer/step`] = function(e, t) {
+                return this.n > 0 ? (--this.n, e) : this.xf[`@@transducer/step`](e, t)
+            }, e
+        }(), _xdrop = _curry2(function(e, t) {
+            return new XDrop(e, t)
+        })
+    })),
+    drop, init_drop = __esmMin((() => {
+        init__curry2(), init__dispatchable(), init__xdrop(), init_slice(), drop = _curry2(_dispatchable([`drop`], _xdrop, function(e, t) {
+            return slice(Math.max(0, e), 1 / 0, t)
+        }))
+    })),
+    XTake, _xtake, init__xtake = __esmMin((() => {
+        init__curry2(), init__reduced(), init__xfBase(), XTake = function() {
+            function e(e, t) {
+                this.xf = t, this.n = e, this.i = 0
+            }
+            return e.prototype[`@@transducer/init`] = _xfBase_default.init, e.prototype[`@@transducer/result`] = _xfBase_default.result, e.prototype[`@@transducer/step`] = function(e, t) {
+                this.i += 1;
+                var n = this.n === 0 ? e : this.xf[`@@transducer/step`](e, t);
+                return this.n >= 0 && this.i >= this.n ? _reduced(n) : n
+            }, e
+        }(), _xtake = _curry2(function(e, t) {
+            return new XTake(e, t)
+        })
+    })),
+    take, init_take = __esmMin((() => {
+        init__curry2(), init__dispatchable(), init__xtake(), init_slice(), take = _curry2(_dispatchable([`take`], _xtake, function(e, t) {
+            return slice(0, e < 0 ? 1 / 0 : e, t)
+        }))
+    }));
+
+function dropLast$1(e, t) {
+    return take(e < t.length ? t.length - e : 0, t)
+}
+var init__dropLast = __esmMin((() => {
+        init_take()
+    })),
+    XDropLast, _xdropLast, init__xdropLast = __esmMin((() => {
+        init__curry2(), init__xfBase(), XDropLast = function() {
+            function e(e, t) {
+                this.xf = t, this.pos = 0, this.full = !1, this.acc = Array(e)
+            }
+            return e.prototype[`@@transducer/init`] = _xfBase_default.init, e.prototype[`@@transducer/result`] = function(e) {
+                return this.acc = null, this.xf[`@@transducer/result`](e)
+            }, e.prototype[`@@transducer/step`] = function(e, t) {
+                return this.full && (e = this.xf[`@@transducer/step`](e, this.acc[this.pos])), this.store(t), e
+            }, e.prototype.store = function(e) {
+                this.acc[this.pos] = e, this.pos += 1, this.pos === this.acc.length && (this.pos = 0, this.full = !0)
+            }, e
+        }(), _xdropLast = _curry2(function(e, t) {
+            return new XDropLast(e, t)
+        })
+    })),
+    dropLast, init_dropLast = __esmMin((() => {
+        init__curry2(), init__dispatchable(), init__dropLast(), init__xdropLast(), dropLast = _curry2(_dispatchable([], _xdropLast, dropLast$1))
+    }));
+
+function dropLastWhile$1(e, t) {
+    for (var n = t.length - 1; n >= 0 && e(t[n]);) --n;
+    return slice(0, n + 1, t)
+}
+var init__dropLastWhile = __esmMin((() => {
+        init_slice()
+    })),
+    XDropLastWhile, _xdropLastWhile, init__xdropLastWhile = __esmMin((() => {
+        init__curry2(), init__reduce(), init__xfBase(), XDropLastWhile = function() {
+            function e(e, t) {
+                this.f = e, this.retained = [], this.xf = t
+            }
+            return e.prototype[`@@transducer/init`] = _xfBase_default.init, e.prototype[`@@transducer/result`] = function(e) {
+                return this.retained = null, this.xf[`@@transducer/result`](e)
+            }, e.prototype[`@@transducer/step`] = function(e, t) {
+                return this.f(t) ? this.retain(e, t) : this.flush(e, t)
+            }, e.prototype.flush = function(e, t) {
+                return e = _reduce(this.xf[`@@transducer/step`], e, this.retained), this.retained = [], this.xf[`@@transducer/step`](e, t)
+            }, e.prototype.retain = function(e, t) {
+                return this.retained.push(t), e
+            }, e
+        }(), _xdropLastWhile = _curry2(function(e, t) {
+            return new XDropLastWhile(e, t)
+        })
+    })),
+    dropLastWhile, init_dropLastWhile = __esmMin((() => {
+        init__curry2(), init__dispatchable(), init__dropLastWhile(), init__xdropLastWhile(), dropLastWhile = _curry2(_dispatchable([], _xdropLastWhile, dropLastWhile$1))
+    })),
+    XDropRepeatsWith, _xdropRepeatsWith, init__xdropRepeatsWith = __esmMin((() => {
+        init__curry2(), init__xfBase(), XDropRepeatsWith = function() {
+            function e(e, t) {
+                this.xf = t, this.pred = e, this.lastValue = void 0, this.seenFirstValue = !1
+            }
+            return e.prototype[`@@transducer/init`] = _xfBase_default.init, e.prototype[`@@transducer/result`] = _xfBase_default.result, e.prototype[`@@transducer/step`] = function(e, t) {
+                var n = !1;
+                return this.seenFirstValue ? this.pred(this.lastValue, t) && (n = !0) : this.seenFirstValue = !0, this.lastValue = t, n ? e : this.xf[`@@transducer/step`](e, t)
+            }, e
+        }(), _xdropRepeatsWith = _curry2(function(e, t) {
+            return new XDropRepeatsWith(e, t)
+        })
+    })),
+    last, init_last = __esmMin((() => {
+        init_nth(), last = nth(-1)
+    })),
+    dropRepeatsWith, init_dropRepeatsWith = __esmMin((() => {
+        init__curry2(), init__dispatchable(), init__xdropRepeatsWith(), init_last(), dropRepeatsWith = _curry2(_dispatchable([], _xdropRepeatsWith, function(e, t) {
+            var n = [],
+                r = 1,
+                i = t.length;
+            if (i !== 0)
+                for (n[0] = t[0]; r < i;) e(last(n), t[r]) || (n[n.length] = t[r]), r += 1;
+            return n
+        }))
+    })),
+    dropRepeats, init_dropRepeats = __esmMin((() => {
+        init__curry1(), init__dispatchable(), init__xdropRepeatsWith(), init_dropRepeatsWith(), init_equals(), dropRepeats = _curry1(_dispatchable([], _xdropRepeatsWith(equals), dropRepeatsWith(equals)))
+    })),
+    XDropWhile, _xdropWhile, init__xdropWhile = __esmMin((() => {
+        init__curry2(), init__xfBase(), XDropWhile = function() {
+            function e(e, t) {
+                this.xf = t, this.f = e
+            }
+            return e.prototype[`@@transducer/init`] = _xfBase_default.init, e.prototype[`@@transducer/result`] = _xfBase_default.result, e.prototype[`@@transducer/step`] = function(e, t) {
+                if (this.f) {
+                    if (this.f(t)) return e;
+                    this.f = null
+                }
+                return this.xf[`@@transducer/step`](e, t)
+            }, e
+        }(), _xdropWhile = _curry2(function(e, t) {
+            return new XDropWhile(e, t)
+        })
+    })),
+    dropWhile, init_dropWhile = __esmMin((() => {
+        init__curry2(), init__dispatchable(), init__xdropWhile(), init_slice(), dropWhile = _curry2(_dispatchable([`dropWhile`], _xdropWhile, function(e, t) {
+            for (var n = 0, r = t.length; n < r && e(t[n]);) n += 1;
+            return slice(n, 1 / 0, t)
+        }))
+    })),
+    or, init_or = __esmMin((() => {
+        init__curry2(), or = _curry2(function(e, t) {
+            return e || t
+        })
+    })),
+    either, init_either = __esmMin((() => {
+        init__curry2(), init__isFunction(), init_lift(), init_or(), either = _curry2(function(e, t) {
+            return _isFunction(e) ? function() {
+                return e.apply(this, arguments) || t.apply(this, arguments)
+            } : lift(or)(e, t)
+        })
+    })),
+    empty, init_empty = __esmMin((() => {
+        init__curry1(), init__isArguments(), init__isArray(), init__isObject(), init__isString(), empty = _curry1(function(e) {
+            return e != null && typeof e[`fantasy-land/empty`] == `function` ? e[`fantasy-land/empty`]() : e != null && e.constructor != null && typeof e.constructor[`fantasy-land/empty`] == `function` ? e.constructor[`fantasy-land/empty`]() : e != null && typeof e.empty == `function` ? e.empty() : e != null && e.constructor != null && typeof e.constructor.empty == `function` ? e.constructor.empty() : _isArray_default(e) ? [] : _isString(e) ? `` : _isObject(e) ? {} : _isArguments(e) ? function() {
+                return arguments
+            }() : void 0
+        })
+    })),
+    takeLast, init_takeLast = __esmMin((() => {
+        init__curry2(), init_drop(), takeLast = _curry2(function(e, t) {
+            return drop(e >= 0 ? t.length - e : 0, t)
+        })
+    })),
+    endsWith, init_endsWith = __esmMin((() => {
+        init__curry2(), init_equals(), init_takeLast(), endsWith = _curry2(function(e, t) {
+            return equals(takeLast(e.length, t), e)
+        })
+    })),
+    eqBy, init_eqBy = __esmMin((() => {
+        init__curry3(), init_equals(), eqBy = _curry3(function(e, t, n) {
+            return equals(e(t), e(n))
+        })
+    })),
+    eqProps, init_eqProps = __esmMin((() => {
+        init__curry3(), init_equals(), eqProps = _curry3(function(e, t, n) {
+            return equals(t[e], n[e])
+        })
+    })),
+    evolve, init_evolve = __esmMin((() => {
+        init__curry2(), evolve = _curry2(function e(t, n) {
+            var r = n instanceof Array ? [] : {},
+                i, a, s;
+            for (a in n) i = t[a], s = typeof i, r[a] = s === `function` ? i(n[a]) : i && s === `object` ? e(i, n[a]) : n[a];
+            return r
+        })
+    })),
+    XFind, _xfind, init__xfind = __esmMin((() => {
+        init__curry2(), init__reduced(), init__xfBase(), XFind = function() {
+            function e(e, t) {
+                this.xf = t, this.f = e, this.found = !1
+            }
+            return e.prototype[`@@transducer/init`] = _xfBase_default.init, e.prototype[`@@transducer/result`] = function(e) {
+                return this.found || (e = this.xf[`@@transducer/step`](e, void 0)), this.xf[`@@transducer/result`](e)
+            }, e.prototype[`@@transducer/step`] = function(e, t) {
+                return this.f(t) && (this.found = !0, e = _reduced(this.xf[`@@transducer/step`](e, t))), e
+            }, e
+        }(), _xfind = _curry2(function(e, t) {
+            return new XFind(e, t)
+        })
+    })),
+    find, init_find = __esmMin((() => {
+        init__curry2(), init__dispatchable(), init__xfind(), find = _curry2(_dispatchable([`find`], _xfind, function(e, t) {
+            for (var n = 0, r = t.length; n < r;) {
+                if (e(t[n])) return t[n];
+                n += 1
+            }
+        }))
+    })),
+    XFindIndex, _xfindIndex, init__xfindIndex = __esmMin((() => {
+        init__curry2(), init__reduced(), init__xfBase(), XFindIndex = function() {
+            function e(e, t) {
+                this.xf = t, this.f = e, this.idx = -1, this.found = !1
+            }
+            return e.prototype[`@@transducer/init`] = _xfBase_default.init, e.prototype[`@@transducer/result`] = function(e) {
+                return this.found || (e = this.xf[`@@transducer/step`](e, -1)), this.xf[`@@transducer/result`](e)
+            }, e.prototype[`@@transducer/step`] = function(e, t) {
+                return this.idx += 1, this.f(t) && (this.found = !0, e = _reduced(this.xf[`@@transducer/step`](e, this.idx))), e
+            }, e
+        }(), _xfindIndex = _curry2(function(e, t) {
+            return new XFindIndex(e, t)
+        })
+    })),
+    findIndex, init_findIndex = __esmMin((() => {
+        init__curry2(), init__dispatchable(), init__xfindIndex(), findIndex = _curry2(_dispatchable([], _xfindIndex, function(e, t) {
+            for (var n = 0, r = t.length; n < r;) {
+                if (e(t[n])) return n;
+                n += 1
+            }
+            return -1
+        }))
+    })),
+    XFindLast, _xfindLast, init__xfindLast = __esmMin((() => {
+        init__curry2(), init__xfBase(), XFindLast = function() {
+            function e(e, t) {
+                this.xf = t, this.f = e
+            }
+            return e.prototype[`@@transducer/init`] = _xfBase_default.init, e.prototype[`@@transducer/result`] = function(e) {
+                return this.xf[`@@transducer/result`](this.xf[`@@transducer/step`](e, this.last))
+            }, e.prototype[`@@transducer/step`] = function(e, t) {
+                return this.f(t) && (this.last = t), e
+            }, e
+        }(), _xfindLast = _curry2(function(e, t) {
+            return new XFindLast(e, t)
+        })
+    })),
+    findLast, init_findLast = __esmMin((() => {
+        init__curry2(), init__dispatchable(), init__xfindLast(), findLast = _curry2(_dispatchable([], _xfindLast, function(e, t) {
+            for (var n = t.length - 1; n >= 0;) {
+                if (e(t[n])) return t[n];
+                --n
+            }
+        }))
+    })),
+    XFindLastIndex, _xfindLastIndex, init__xfindLastIndex = __esmMin((() => {
+        init__curry2(), init__xfBase(), XFindLastIndex = function() {
+            function e(e, t) {
+                this.xf = t, this.f = e, this.idx = -1, this.lastIdx = -1
+            }
+            return e.prototype[`@@transducer/init`] = _xfBase_default.init, e.prototype[`@@transducer/result`] = function(e) {
+                return this.xf[`@@transducer/result`](this.xf[`@@transducer/step`](e, this.lastIdx))
+            }, e.prototype[`@@transducer/step`] = function(e, t) {
+                return this.idx += 1, this.f(t) && (this.lastIdx = this.idx), e
+            }, e
+        }(), _xfindLastIndex = _curry2(function(e, t) {
+            return new XFindLastIndex(e, t)
+        })
+    })),
+    findLastIndex, init_findLastIndex = __esmMin((() => {
+        init__curry2(), init__dispatchable(), init__xfindLastIndex(), findLastIndex = _curry2(_dispatchable([], _xfindLastIndex, function(e, t) {
+            for (var n = t.length - 1; n >= 0;) {
+                if (e(t[n])) return n;
+                --n
+            }
+            return -1
+        }))
+    })),
+    flatten, init_flatten = __esmMin((() => {
+        init__curry1(), init__makeFlat(), flatten = _curry1(_makeFlat(!0))
+    })),
+    flip, init_flip = __esmMin((() => {
+        init__curry1(), init_curryN(), flip = _curry1(function(e) {
+            return curryN(e.length, function(t, n) {
+                var r = Array.prototype.slice.call(arguments, 0);
+                return r[0] = n, r[1] = t, e.apply(this, r)
+            })
+        })
+    })),
+    forEach, init_forEach = __esmMin((() => {
+        init__checkForMethod(), init__curry2(), forEach = _curry2(_checkForMethod(`forEach`, function(e, t) {
+            for (var n = t.length, r = 0; r < n;) e(t[r]), r += 1;
+            return t
+        }))
+    })),
+    forEachObjIndexed, init_forEachObjIndexed = __esmMin((() => {
+        init__curry2(), init_keys(), forEachObjIndexed = _curry2(function(e, t) {
+            for (var n = keys(t), r = 0; r < n.length;) {
+                var i = n[r];
+                e(t[i], i, t), r += 1
+            }
+            return t
+        })
+    })),
+    fromPairs, init_fromPairs = __esmMin((() => {
+        init__curry1(), fromPairs = _curry1(function(e) {
+            for (var t = {}, n = 0; n < e.length;) t[e[n][0]] = e[n][1], n += 1;
+            return t
+        })
+    })),
+    groupBy, init_groupBy = __esmMin((() => {
+        init__checkForMethod(), init__curry2(), init_reduceBy(), groupBy = _curry2(_checkForMethod(`groupBy`, reduceBy(function(e, t) {
+            return e ?? (e = []), e.push(t), e
+        }, null)))
+    })),
+    groupWith, init_groupWith = __esmMin((() => {
+        init__curry2(), groupWith = _curry2(function(e, t) {
+            for (var n = [], r = 0, i = t.length; r < i;) {
+                for (var a = r + 1; a < i && e(t[a - 1], t[a]);) a += 1;
+                n.push(t.slice(r, a)), r = a
+            }
+            return n
+        })
+    })),
+    gt, init_gt = __esmMin((() => {
+        init__curry2(), gt = _curry2(function(e, t) {
+            return e > t
+        })
+    })),
+    gte, init_gte = __esmMin((() => {
+        init__curry2(), gte = _curry2(function(e, t) {
+            return e >= t
+        })
+    })),
+    hasPath, init_hasPath = __esmMin((() => {
+        init__curry2(), init__has(), init_isNil(), hasPath = _curry2(function(e, t) {
+            if (e.length === 0 || isNil(t)) return !1;
+            for (var n = t, r = 0; r < e.length;)
+                if (!isNil(n) && _has(e[r], n)) n = n[e[r]], r += 1;
+                else return !1;
+            return !0
+        })
+    })),
+    has, init_has = __esmMin((() => {
+        init__curry2(), init_hasPath(), has = _curry2(function(e, t) {
+            return hasPath([e], t)
+        })
+    })),
+    hasIn, init_hasIn = __esmMin((() => {
+        init__curry2(), hasIn = _curry2(function(e, t) {
+            return e in t
+        })
+    })),
+    identical, init_identical = __esmMin((() => {
+        init__objectIs(), init__curry2(), identical = _curry2(_objectIs_default)
+    })),
+    ifElse, init_ifElse = __esmMin((() => {
+        init__curry3(), init_curryN(), ifElse = _curry3(function(e, t, n) {
+            return curryN(Math.max(e.length, t.length, n.length), function() {
+                return e.apply(this, arguments) ? t.apply(this, arguments) : n.apply(this, arguments)
+            })
+        })
+    })),
+    inc, init_inc = __esmMin((() => {
+        init_add(), inc = add(1)
+    })),
+    includes, init_includes = __esmMin((() => {
+        init__includes(), init__curry2(), includes = _curry2(_includes)
+    })),
+    indexBy, init_indexBy = __esmMin((() => {
+        init_reduceBy(), indexBy = reduceBy(function(e, t) {
+            return t
+        }, null)
+    })),
+    indexOf, init_indexOf = __esmMin((() => {
+        init__curry2(), init__indexOf(), init__isArray(), indexOf = _curry2(function(e, t) {
+            return typeof t.indexOf == `function` && !_isArray_default(t) ? t.indexOf(e) : _indexOf(t, e, 0)
+        })
+    })),
+    init, init_init = __esmMin((() => {
+        init_slice(), init = slice(0, -1)
+    })),
+    innerJoin, init_innerJoin = __esmMin((() => {
+        init__includesWith(), init__curry3(), init__filter(), innerJoin = _curry3(function(e, t, n) {
+            return _filter(function(t) {
+                return _includesWith(e, t, n)
+            }, t)
+        })
+    })),
+    insert, init_insert = __esmMin((() => {
+        init__curry3(), insert = _curry3(function(e, t, n) {
+            e = e < n.length && e >= 0 ? e : n.length;
+            var r = Array.prototype.slice.call(n, 0);
+            return r.splice(e, 0, t), r
+        })
+    })),
+    insertAll, init_insertAll = __esmMin((() => {
+        init__curry3(), insertAll = _curry3(function(e, t, n) {
+            return e = e < n.length && e >= 0 ? e : n.length, [].concat(Array.prototype.slice.call(n, 0, e), t, Array.prototype.slice.call(n, e))
+        })
+    })),
+    uniqBy, init_uniqBy = __esmMin((() => {
+        init__Set(), init__curry2(), uniqBy = _curry2(function(e, t) {
+            for (var n = new _Set, r = [], i = 0, a, s; i < t.length;) s = t[i], a = e(s), n.add(a) && r.push(s), i += 1;
+            return r
+        })
+    })),
+    uniq, init_uniq = __esmMin((() => {
+        init_identity(), init_uniqBy(), uniq = uniqBy(identity)
+    })),
+    intersection, init_intersection = __esmMin((() => {
+        init__includes(), init__curry2(), init__filter(), init_flip(), init_uniq(), intersection = _curry2(function(e, t) {
+            var n, r;
+            return e.length > t.length ? (n = e, r = t) : (n = t, r = e), uniq(_filter(flip(_includes)(n), r))
+        })
+    })),
+    intersperse, init_intersperse = __esmMin((() => {
+        init__checkForMethod(), init__curry2(), intersperse = _curry2(_checkForMethod(`intersperse`, function(e, t) {
+            for (var n = [], r = 0, i = t.length; r < i;) r === i - 1 ? n.push(t[r]) : n.push(t[r], e), r += 1;
+            return n
+        }))
+    }));
+
+function _objectAssign(e) {
+    if (e == null) throw TypeError(`Cannot convert undefined or null to object`);
+    for (var t = Object(e), n = 1, r = arguments.length; n < r;) {
+        var i = arguments[n];
+        if (i != null)
+            for (var a in i) _has(a, i) && (t[a] = i[a]);
+        n += 1
+    }
+    return t
+}
+var _objectAssign_default, init__objectAssign = __esmMin((() => {
+        init__has(), _objectAssign_default = typeof Object.assign == `function` ? Object.assign : _objectAssign
+    })),
+    objOf, init_objOf = __esmMin((() => {
+        init__curry2(), objOf = _curry2(function(e, t) {
+            var n = {};
+            return n[e] = t, n
+        })
+    }));
+
+function _stepCat(e) {
+    if (_isTransformer(e)) return e;
+    if (_isArrayLike(e)) return _stepCatArray;
+    if (typeof e == `string`) return _stepCatString;
+    if (typeof e == `object`) return _stepCatObject;
+    throw Error(`Cannot create transformer for ` + e)
+}
+var _stepCatArray, _stepCatString, _stepCatObject, init__stepCat = __esmMin((() => {
+        init__objectAssign(), init__identity(), init__isArrayLike(), init__isTransformer(), init_objOf(), _stepCatArray = {
+            "@@transducer/init": Array,
+            "@@transducer/step": function(e, t) {
+                return e.push(t), e
+            },
+            "@@transducer/result": _identity
+        }, _stepCatString = {
+            "@@transducer/init": String,
+            "@@transducer/step": function(e, t) {
+                return e + t
+            },
+            "@@transducer/result": _identity
+        }, _stepCatObject = {
+            "@@transducer/init": Object,
+            "@@transducer/step": function(e, t) {
+                return _objectAssign_default(e, _isArrayLike(t) ? objOf(t[0], t[1]) : t)
+            },
+            "@@transducer/result": _identity
+        }
+    })),
+    into, init_into = __esmMin((() => {
+        init__clone(), init__curry3(), init__isTransformer(), init__reduce(), init__stepCat(), into = _curry3(function(e, t, n) {
+            return _isTransformer(e) ? _reduce(t(e), e[`@@transducer/init`](), n) : _reduce(t(_stepCat(e)), _clone(e, [], [], !1), n)
+        })
+    })),
+    invert, init_invert = __esmMin((() => {
+        init__curry1(), init__has(), init_keys(), invert = _curry1(function(e) {
+            for (var t = keys(e), n = t.length, r = 0, i = {}; r < n;) {
+                var a = t[r],
+                    s = e[a],
+                    c = _has(s, i) ? i[s] : i[s] = [];
+                c[c.length] = a, r += 1
+            }
+            return i
+        })
+    })),
+    invertObj, init_invertObj = __esmMin((() => {
+        init__curry1(), init_keys(), invertObj = _curry1(function(e) {
+            for (var t = keys(e), n = t.length, r = 0, i = {}; r < n;) {
+                var a = t[r];
+                i[e[a]] = a, r += 1
+            }
+            return i
+        })
+    })),
+    invoker, init_invoker = __esmMin((() => {
+        init__curry2(), init__isFunction(), init_curryN(), init_toString(), invoker = _curry2(function(e, t) {
+            return curryN(e + 1, function() {
+                var n = arguments[e];
+                if (n != null && _isFunction(n[t])) return n[t].apply(n, Array.prototype.slice.call(arguments, 0, e));
+                throw TypeError(toString(n) + ` does not have a method named "` + t + `"`)
+            })
+        })
+    })),
+    is, init_is = __esmMin((() => {
+        init__curry2(), is = _curry2(function(e, t) {
+            return t != null && t.constructor === e || t instanceof e
+        })
+    })),
+    isEmpty, init_isEmpty = __esmMin((() => {
+        init__curry1(), init_empty(), init_equals(), isEmpty = _curry1(function(e) {
+            return e != null && equals(e, empty(e))
+        })
+    })),
+    join$1, init_join = __esmMin((() => {
+        init_invoker(), join$1 = invoker(1, `join`)
+    })),
+    juxt, init_juxt = __esmMin((() => {
+        init__curry1(), init_converge(), juxt = _curry1(function(e) {
+            return converge(function() {
+                return Array.prototype.slice.call(arguments, 0)
+            }, e)
+        })
+    })),
+    keysIn, init_keysIn = __esmMin((() => {
+        init__curry1(), keysIn = _curry1(function(e) {
+            var t, n = [];
+            for (t in e) n[n.length] = t;
+            return n
+        })
+    })),
+    lastIndexOf, init_lastIndexOf = __esmMin((() => {
+        init__curry2(), init__isArray(), init_equals(), lastIndexOf = _curry2(function(e, t) {
+            if (typeof t.lastIndexOf == `function` && !_isArray_default(t)) return t.lastIndexOf(e);
+            for (var n = t.length - 1; n >= 0;) {
+                if (equals(t[n], e)) return n;
+                --n
+            }
+            return -1
+        })
+    }));
+
+function _isNumber(e) {
+    return Object.prototype.toString.call(e) === `[object Number]`
+}
+var init__isNumber = __esmMin((() => {})),
+    length, init_length = __esmMin((() => {
+        init__curry1(), init__isNumber(), length = _curry1(function(e) {
+            return e != null && _isNumber(e.length) ? e.length : NaN
+        })
+    })),
+    lens, init_lens = __esmMin((() => {
+        init__curry2(), init_map(), lens = _curry2(function(e, t) {
+            return function(n) {
+                return function(r) {
+                    return map(function(e) {
+                        return t(e, r)
+                    }, n(e(r)))
+                }
+            }
+        })
+    })),
+    lensIndex, init_lensIndex = __esmMin((() => {
+        init__curry1(), init_lens(), init_nth(), init_update(), lensIndex = _curry1(function(e) {
+            return lens(nth(e), update(e))
+        })
+    })),
+    lensPath, init_lensPath = __esmMin((() => {
+        init__curry1(), init_assocPath(), init_lens(), init_path(), lensPath = _curry1(function(e) {
+            return lens(path(e), assocPath(e))
+        })
+    })),
+    lensProp, init_lensProp = __esmMin((() => {
+        init__curry1(), init_assoc(), init_lens(), init_prop(), lensProp = _curry1(function(e) {
+            return lens(prop(e), assoc(e))
+        })
+    })),
+    lt, init_lt = __esmMin((() => {
+        init__curry2(), lt = _curry2(function(e, t) {
+            return e < t
+        })
+    })),
+    lte, init_lte = __esmMin((() => {
+        init__curry2(), lte = _curry2(function(e, t) {
+            return e <= t
+        })
+    })),
+    mapAccum, init_mapAccum = __esmMin((() => {
+        init__curry3(), mapAccum = _curry3(function(e, t, n) {
+            for (var r = 0, i = n.length, a = [], s = [t]; r < i;) s = e(s[0], n[r]), a[r] = s[1], r += 1;
+            return [s[0], a]
+        })
+    })),
+    mapAccumRight, init_mapAccumRight = __esmMin((() => {
+        init__curry3(), mapAccumRight = _curry3(function(e, t, n) {
+            for (var r = n.length - 1, i = [], a = [t]; r >= 0;) a = e(a[0], n[r]), i[r] = a[1], --r;
+            return [a[0], i]
+        })
+    })),
+    mapObjIndexed, init_mapObjIndexed = __esmMin((() => {
+        init__curry2(), init__reduce(), init_keys(), mapObjIndexed = _curry2(function(e, t) {
+            return _reduce(function(n, r) {
+                return n[r] = e(t[r], r, t), n
+            }, {}, keys(t))
+        })
+    })),
+    match, init_match = __esmMin((() => {
+        init__curry2(), match = _curry2(function(e, t) {
+            return t.match(e) || []
+        })
+    })),
+    mathMod, init_mathMod = __esmMin((() => {
+        init__curry2(), init__isInteger(), mathMod = _curry2(function(e, t) {
+            return !_isInteger_default(e) || !_isInteger_default(t) || t < 1 ? NaN : (e % t + t) % t
+        })
+    })),
+    maxBy, init_maxBy = __esmMin((() => {
+        init__curry3(), maxBy = _curry3(function(e, t, n) {
+            return e(n) > e(t) ? n : t
+        })
+    })),
+    sum, init_sum = __esmMin((() => {
+        init_add(), init_reduce(), sum = reduce(add, 0)
+    })),
+    mean, init_mean = __esmMin((() => {
+        init__curry1(), init_sum(), mean = _curry1(function(e) {
+            return sum(e) / e.length
+        })
+    })),
+    median, init_median = __esmMin((() => {
+        init__curry1(), init_mean(), median = _curry1(function(e) {
+            var t = e.length;
+            if (t === 0) return NaN;
+            var n = 2 - t % 2,
+                r = (t - n) / 2;
+            return mean(Array.prototype.slice.call(e, 0).sort(function(e, t) {
+                return e < t ? -1 : +(e > t)
+            }).slice(r, r + n))
+        })
+    })),
+    memoizeWith, init_memoizeWith = __esmMin((() => {
+        init__arity(), init__curry2(), init__has(), memoizeWith = _curry2(function(e, t) {
+            var n = {};
+            return _arity(t.length, function() {
+                var r = e.apply(this, arguments);
+                return _has(r, n) || (n[r] = t.apply(this, arguments)), n[r]
+            })
+        })
+    })),
+    merge, init_merge = __esmMin((() => {
+        init__objectAssign(), init__curry2(), merge = _curry2(function(e, t) {
+            return _objectAssign_default({}, e, t)
+        })
+    })),
+    mergeAll, init_mergeAll = __esmMin((() => {
+        init__objectAssign(), init__curry1(), mergeAll = _curry1(function(e) {
+            return _objectAssign_default.apply(null, [{}].concat(e))
+        })
+    })),
+    mergeWithKey, init_mergeWithKey = __esmMin((() => {
+        init__curry3(), init__has(), mergeWithKey = _curry3(function(e, t, n) {
+            var r = {},
+                i;
+            for (i in t) _has(i, t) && (r[i] = _has(i, n) ? e(i, t[i], n[i]) : t[i]);
+            for (i in n) _has(i, n) && !_has(i, r) && (r[i] = n[i]);
+            return r
+        })
+    })),
+    mergeDeepWithKey, init_mergeDeepWithKey = __esmMin((() => {
+        init__curry3(), init__isObject(), init_mergeWithKey(), mergeDeepWithKey = _curry3(function e(t, n, r) {
+            return mergeWithKey(function(n, r, i) {
+                return _isObject(r) && _isObject(i) ? e(t, r, i) : t(n, r, i)
+            }, n, r)
+        })
+    })),
+    mergeDeepLeft, init_mergeDeepLeft = __esmMin((() => {
+        init__curry2(), init_mergeDeepWithKey(), mergeDeepLeft = _curry2(function(e, t) {
+            return mergeDeepWithKey(function(e, t, n) {
+                return t
+            }, e, t)
+        })
+    })),
+    mergeDeepRight, init_mergeDeepRight = __esmMin((() => {
+        init__curry2(), init_mergeDeepWithKey(), mergeDeepRight = _curry2(function(e, t) {
+            return mergeDeepWithKey(function(e, t, n) {
+                return n
+            }, e, t)
+        })
+    })),
+    mergeDeepWith, init_mergeDeepWith = __esmMin((() => {
+        init__curry3(), init_mergeDeepWithKey(), mergeDeepWith = _curry3(function(e, t, n) {
+            return mergeDeepWithKey(function(t, n, r) {
+                return e(n, r)
+            }, t, n)
+        })
+    })),
+    mergeLeft, init_mergeLeft = __esmMin((() => {
+        init__objectAssign(), init__curry2(), mergeLeft = _curry2(function(e, t) {
+            return _objectAssign_default({}, t, e)
+        })
+    })),
+    mergeRight, init_mergeRight = __esmMin((() => {
+        init__objectAssign(), init__curry2(), mergeRight = _curry2(function(e, t) {
+            return _objectAssign_default({}, e, t)
+        })
+    })),
+    mergeWith, init_mergeWith = __esmMin((() => {
+        init__curry3(), init_mergeWithKey(), mergeWith = _curry3(function(e, t, n) {
+            return mergeWithKey(function(t, n, r) {
+                return e(n, r)
+            }, t, n)
+        })
+    })),
+    min, init_min = __esmMin((() => {
+        init__curry2(), min = _curry2(function(e, t) {
+            return t < e ? t : e
+        })
+    })),
+    minBy, init_minBy = __esmMin((() => {
+        init__curry3(), minBy = _curry3(function(e, t, n) {
+            return e(n) < e(t) ? n : t
+        })
+    })),
+    modulo, init_modulo = __esmMin((() => {
+        init__curry2(), modulo = _curry2(function(e, t) {
+            return e % t
+        })
+    })),
+    move, init_move = __esmMin((() => {
+        init__curry3(), move = _curry3(function(e, t, n) {
+            var r = n.length,
+                i = n.slice(),
+                a = e < 0 ? r + e : e,
+                s = t < 0 ? r + t : t,
+                c = i.splice(a, 1);
+            return a < 0 || a >= n.length || s < 0 || s >= n.length ? n : [].concat(i.slice(0, s), c, i.slice(s, n.length))
+        })
+    })),
+    multiply, init_multiply = __esmMin((() => {
+        init__curry2(), multiply = _curry2(function(e, t) {
+            return e * t
+        })
+    })),
+    negate, init_negate = __esmMin((() => {
+        init__curry1(), negate = _curry1(function(e) {
+            return -e
+        })
+    })),
+    none, init_none = __esmMin((() => {
+        init__complement(), init__curry2(), init_all(), none = _curry2(function(e, t) {
+            return all(_complement(e), t)
+        })
+    })),
+    nthArg, init_nthArg = __esmMin((() => {
+        init__curry1(), init_curryN(), init_nth(), nthArg = _curry1(function(e) {
+            var t = e < 0 ? 1 : e + 1;
+            return curryN(t, function() {
+                return nth(e, arguments)
+            })
+        })
+    })),
+    o, init_o = __esmMin((() => {
+        init__curry3(), o = _curry3(function(e, t, n) {
+            return e(t(n))
+        })
+    }));
+
+function _of(e) {
+    return [e]
+}
+var init__of = __esmMin((() => {})),
+    of, init_of = __esmMin((() => {
+        init__curry1(), init__of(), of = _curry1(_of)
+    })),
+    omit, init_omit = __esmMin((() => {
+        init__curry2(), omit = _curry2(function(e, t) {
+            for (var n = {}, r = {}, i = 0, a = e.length; i < a;) r[e[i]] = 1, i += 1;
+            for (var s in t) r.hasOwnProperty(s) || (n[s] = t[s]);
+            return n
+        })
+    })),
+    once, init_once = __esmMin((() => {
+        init__arity(), init__curry1(), once = _curry1(function(e) {
+            var t = !1,
+                n;
+            return _arity(e.length, function() {
+                return t || (t = !0, n = e.apply(this, arguments)), n
+            })
+        })
+    }));
+
+function _assertPromise(e, t) {
+    if (t == null || !_isFunction(t.then)) throw TypeError("`" + e + "` expected a Promise, received " + _toString(t, []))
+}
+var init__assertPromise = __esmMin((() => {
+        init__isFunction(), init__toString()
+    })),
+    otherwise, init_otherwise = __esmMin((() => {
+        init__curry2(), init__assertPromise(), otherwise = _curry2(function(e, t) {
+            return _assertPromise(`otherwise`, t), t.then(null, e)
+        })
+    })),
+    Identity, over, init_over = __esmMin((() => {
+        init__curry3(), Identity = function(e) {
+            return {
+                value: e,
+                map: function(t) {
+                    return Identity(t(e))
+                }
+            }
+        }, over = _curry3(function(e, t, n) {
+            return e(function(e) {
+                return Identity(t(e))
+            })(n).value
+        })
+    })),
+    pair, init_pair = __esmMin((() => {
+        init__curry2(), pair = _curry2(function(e, t) {
+            return [e, t]
+        })
+    }));
+
+function _createPartialApplicator(e) {
+    return _curry2(function(t, n) {
+        return _arity(Math.max(0, t.length - n.length), function() {
+            return t.apply(this, e(n, arguments))
+        })
+    })
+}
+var init__createPartialApplicator = __esmMin((() => {
+        init__arity(), init__curry2()
+    })),
+    partial, init_partial = __esmMin((() => {
+        init__concat(), init__createPartialApplicator(), partial = _createPartialApplicator(_concat)
+    })),
+    partialRight, init_partialRight = __esmMin((() => {
+        init__concat(), init__createPartialApplicator(), init_flip(), partialRight = _createPartialApplicator(flip(_concat))
+    })),
+    partition, init_partition = __esmMin((() => {
+        init_filter(), init_juxt(), init_reject(), partition = juxt([filter, reject])
+    })),
+    pathEq, init_pathEq = __esmMin((() => {
+        init__curry3(), init_equals(), init_path(), pathEq = _curry3(function(e, t, n) {
+            return equals(path(e, n), t)
+        })
+    })),
+    pathOr, init_pathOr = __esmMin((() => {
+        init__curry3(), init_defaultTo(), init_path(), pathOr = _curry3(function(e, t, n) {
+            return defaultTo(e, path(t, n))
+        })
+    })),
+    pathSatisfies, init_pathSatisfies = __esmMin((() => {
+        init__curry3(), init_path(), pathSatisfies = _curry3(function(e, t, n) {
+            return e(path(t, n))
+        })
+    })),
+    pick, init_pick = __esmMin((() => {
+        init__curry2(), pick = _curry2(function(e, t) {
+            for (var n = {}, r = 0; r < e.length;) e[r] in t && (n[e[r]] = t[e[r]]), r += 1;
+            return n
+        })
+    })),
+    pickAll, init_pickAll = __esmMin((() => {
+        init__curry2(), pickAll = _curry2(function(e, t) {
+            for (var n = {}, r = 0, i = e.length; r < i;) {
+                var a = e[r];
+                n[a] = t[a], r += 1
+            }
+            return n
+        })
+    })),
+    pickBy, init_pickBy = __esmMin((() => {
+        init__curry2(), pickBy = _curry2(function(e, t) {
+            var n = {};
+            for (var r in t) e(t[r], r, t) && (n[r] = t[r]);
+            return n
+        })
+    }));
+
+function pipeK() {
+    if (arguments.length === 0) throw Error(`pipeK requires at least one argument`);
+    return composeK.apply(this, reverse(arguments))
+}
+var init_pipeK = __esmMin((() => {
+        init_composeK(), init_reverse()
+    })),
+    prepend, init_prepend = __esmMin((() => {
+        init__concat(), init__curry2(), prepend = _curry2(function(e, t) {
+            return _concat([e], t)
+        })
+    })),
+    product, init_product = __esmMin((() => {
+        init_multiply(), init_reduce(), product = reduce(multiply, 1)
+    })),
+    useWith, init_useWith = __esmMin((() => {
+        init__curry2(), init_curryN(), useWith = _curry2(function(e, t) {
+            return curryN(t.length, function() {
+                for (var n = [], r = 0; r < t.length;) n.push(t[r].call(this, arguments[r])), r += 1;
+                return e.apply(this, n.concat(Array.prototype.slice.call(arguments, t.length)))
+            })
+        })
+    })),
+    project, init_project = __esmMin((() => {
+        init__map(), init_identity(), init_pickAll(), init_useWith(), project = useWith(_map, [pickAll, identity])
+    })),
+    propEq, init_propEq = __esmMin((() => {
+        init__curry3(), init_equals(), propEq = _curry3(function(e, t, n) {
+            return equals(t, n[e])
+        })
+    })),
+    propIs, init_propIs = __esmMin((() => {
+        init__curry3(), init_is(), propIs = _curry3(function(e, t, n) {
+            return is(e, n[t])
+        })
+    })),
+    propOr, init_propOr = __esmMin((() => {
+        init__curry3(), init_pathOr(), propOr = _curry3(function(e, t, n) {
+            return pathOr(e, [t], n)
+        })
+    })),
+    propSatisfies, init_propSatisfies = __esmMin((() => {
+        init__curry3(), propSatisfies = _curry3(function(e, t, n) {
+            return e(n[t])
+        })
+    })),
+    props, init_props = __esmMin((() => {
+        init__curry2(), init_path(), props = _curry2(function(e, t) {
+            return e.map(function(e) {
+                return path([e], t)
+            })
+        })
+    })),
+    range, init_range = __esmMin((() => {
+        init__curry2(), init__isNumber(), range = _curry2(function(e, t) {
+            if (!(_isNumber(e) && _isNumber(t))) throw TypeError(`Both arguments to range must be numbers`);
+            for (var n = [], r = e; r < t;) n.push(r), r += 1;
+            return n
+        })
+    })),
+    reduceRight, init_reduceRight = __esmMin((() => {
+        init__curry3(), reduceRight = _curry3(function(e, t, n) {
+            for (var r = n.length - 1; r >= 0;) t = e(n[r], t), --r;
+            return t
+        })
+    })),
+    reduceWhile, init_reduceWhile = __esmMin((() => {
+        init__curryN(), init__reduce(), init__reduced(), reduceWhile = _curryN(4, [], function(e, t, n, r) {
+            return _reduce(function(n, r) {
+                return e(n, r) ? t(n, r) : _reduced(n)
+            }, n, r)
+        })
+    })),
+    reduced, init_reduced = __esmMin((() => {
+        init__curry1(), init__reduced(), reduced = _curry1(_reduced)
+    })),
+    times, init_times = __esmMin((() => {
+        init__curry2(), times = _curry2(function(e, t) {
+            var n = Number(t),
+                r = 0,
+                i;
+            if (n < 0 || isNaN(n)) throw RangeError(`n must be a non-negative number`);
+            for (i = Array(n); r < n;) i[r] = e(r), r += 1;
+            return i
+        })
+    })),
+    repeat, init_repeat = __esmMin((() => {
+        init__curry2(), init_always(), init_times(), repeat = _curry2(function(e, t) {
+            return times(always(e), t)
+        })
+    })),
+    replace, init_replace = __esmMin((() => {
+        init__curry3(), replace = _curry3(function(e, t, n) {
+            return n.replace(e, t)
+        })
+    })),
+    scan, init_scan = __esmMin((() => {
+        init__curry3(), scan = _curry3(function(e, t, n) {
+            for (var r = 0, i = n.length, a = [t]; r < i;) t = e(t, n[r]), a[r + 1] = t, r += 1;
+            return a
+        })
+    })),
+    sequence, init_sequence = __esmMin((() => {
+        init__curry2(), init_ap(), init_map(), init_prepend(), init_reduceRight(), sequence = _curry2(function(e, t) {
+            return typeof t.sequence == `function` ? t.sequence(e) : reduceRight(function(e, t) {
+                return ap(map(prepend, e), t)
+            }, e([]), t)
+        })
+    })),
+    set, init_set = __esmMin((() => {
+        init__curry3(), init_always(), init_over(), set = _curry3(function(e, t, n) {
+            return over(e, always(t), n)
+        })
+    })),
+    sort, init_sort = __esmMin((() => {
+        init__curry2(), sort = _curry2(function(e, t) {
+            return Array.prototype.slice.call(t, 0).sort(e)
+        })
+    })),
+    sortBy, init_sortBy = __esmMin((() => {
+        init__curry2(), sortBy = _curry2(function(e, t) {
+            return Array.prototype.slice.call(t, 0).sort(function(t, n) {
+                var r = e(t),
+                    i = e(n);
+                return r < i ? -1 : +(r > i)
+            })
+        })
+    })),
+    sortWith, init_sortWith = __esmMin((() => {
+        init__curry2(), sortWith = _curry2(function(e, t) {
+            return Array.prototype.slice.call(t, 0).sort(function(t, n) {
+                for (var r = 0, i = 0; r === 0 && i < e.length;) r = e[i](t, n), i += 1;
+                return r
+            })
+        })
+    })),
+    split, init_split = __esmMin((() => {
+        init_invoker(), split = invoker(1, `split`)
+    })),
+    splitAt, init_splitAt = __esmMin((() => {
+        init__curry2(), init_length(), init_slice(), splitAt = _curry2(function(e, t) {
+            return [slice(0, e, t), slice(e, length(t), t)]
+        })
+    })),
+    splitEvery, init_splitEvery = __esmMin((() => {
+        init__curry2(), init_slice(), splitEvery = _curry2(function(e, t) {
+            if (e <= 0) throw Error(`First argument to splitEvery must be a positive integer`);
+            for (var n = [], r = 0; r < t.length;) n.push(slice(r, r += e, t));
+            return n
+        })
+    })),
+    splitWhen, init_splitWhen = __esmMin((() => {
+        init__curry2(), splitWhen = _curry2(function(e, t) {
+            for (var n = 0, r = t.length, i = []; n < r && !e(t[n]);) i.push(t[n]), n += 1;
+            return [i, Array.prototype.slice.call(t, n)]
+        })
+    })),
+    startsWith, init_startsWith = __esmMin((() => {
+        init__curry2(), init_equals(), init_take(), startsWith = _curry2(function(e, t) {
+            return equals(take(e.length, t), e)
+        })
+    })),
+    subtract, init_subtract = __esmMin((() => {
+        init__curry2(), subtract = _curry2(function(e, t) {
+            return Number(e) - Number(t)
+        })
+    })),
+    symmetricDifference, init_symmetricDifference = __esmMin((() => {
+        init__curry2(), init_concat(), init_difference(), symmetricDifference = _curry2(function(e, t) {
+            return concat(difference(e, t), difference(t, e))
+        })
+    })),
+    symmetricDifferenceWith, init_symmetricDifferenceWith = __esmMin((() => {
+        init__curry3(), init_concat(), init_differenceWith(), symmetricDifferenceWith = _curry3(function(e, t, n) {
+            return concat(differenceWith(e, t, n), differenceWith(e, n, t))
+        })
+    })),
+    takeLastWhile, init_takeLastWhile = __esmMin((() => {
+        init__curry2(), init_slice(), takeLastWhile = _curry2(function(e, t) {
+            for (var n = t.length - 1; n >= 0 && e(t[n]);) --n;
+            return slice(n + 1, 1 / 0, t)
+        })
+    })),
+    XTakeWhile, _xtakeWhile, init__xtakeWhile = __esmMin((() => {
+        init__curry2(), init__reduced(), init__xfBase(), XTakeWhile = function() {
+            function e(e, t) {
+                this.xf = t, this.f = e
+            }
+            return e.prototype[`@@transducer/init`] = _xfBase_default.init, e.prototype[`@@transducer/result`] = _xfBase_default.result, e.prototype[`@@transducer/step`] = function(e, t) {
+                return this.f(t) ? this.xf[`@@transducer/step`](e, t) : _reduced(e)
+            }, e
+        }(), _xtakeWhile = _curry2(function(e, t) {
+            return new XTakeWhile(e, t)
+        })
+    })),
+    takeWhile, init_takeWhile = __esmMin((() => {
+        init__curry2(), init__dispatchable(), init__xtakeWhile(), init_slice(), takeWhile = _curry2(_dispatchable([`takeWhile`], _xtakeWhile, function(e, t) {
+            for (var n = 0, r = t.length; n < r && e(t[n]);) n += 1;
+            return slice(0, n, t)
+        }))
+    })),
+    XTap, _xtap, init__xtap = __esmMin((() => {
+        init__curry2(), init__xfBase(), XTap = function() {
+            function e(e, t) {
+                this.xf = t, this.f = e
+            }
+            return e.prototype[`@@transducer/init`] = _xfBase_default.init, e.prototype[`@@transducer/result`] = _xfBase_default.result, e.prototype[`@@transducer/step`] = function(e, t) {
+                return this.f(t), this.xf[`@@transducer/step`](e, t)
+            }, e
+        }(), _xtap = _curry2(function(e, t) {
+            return new XTap(e, t)
+        })
+    })),
+    tap, init_tap = __esmMin((() => {
+        init__curry2(), init__dispatchable(), init__xtap(), tap = _curry2(_dispatchable([], _xtap, function(e, t) {
+            return e(t), t
+        }))
+    }));
+
+function _isRegExp(e) {
+    return Object.prototype.toString.call(e) === `[object RegExp]`
+}
+var init__isRegExp = __esmMin((() => {})),
+    test, init_test = __esmMin((() => {
+        init__cloneRegExp(), init__curry2(), init__isRegExp(), init_toString(), test = _curry2(function(e, t) {
+            if (!_isRegExp(e)) throw TypeError(`‘test’ requires a value of type RegExp as its first argument; received ` + toString(e));
+            return _cloneRegExp(e).test(t)
+        })
+    })),
+    andThen, init_andThen = __esmMin((() => {
+        init__curry2(), init__assertPromise(), andThen = _curry2(function(e, t) {
+            return _assertPromise(`andThen`, t), t.then(e)
+        })
+    })),
+    toLower, init_toLower = __esmMin((() => {
+        init_invoker(), toLower = invoker(0, `toLowerCase`)
+    })),
+    toPairs, init_toPairs = __esmMin((() => {
+        init__curry1(), init__has(), toPairs = _curry1(function(e) {
+            var t = [];
+            for (var n in e) _has(n, e) && (t[t.length] = [n, e[n]]);
+            return t
+        })
+    })),
+    toPairsIn, init_toPairsIn = __esmMin((() => {
+        init__curry1(), toPairsIn = _curry1(function(e) {
+            var t = [];
+            for (var n in e) t[t.length] = [n, e[n]];
+            return t
+        })
+    })),
+    toUpper, init_toUpper = __esmMin((() => {
+        init_invoker(), toUpper = invoker(0, `toUpperCase`)
+    })),
+    transduce, init_transduce = __esmMin((() => {
+        init__reduce(), init__xwrap(), init_curryN(), transduce = curryN(4, function(e, t, n, r) {
+            return _reduce(e(typeof t == `function` ? _xwrap(t) : t), n, r)
+        })
+    })),
+    transpose, init_transpose = __esmMin((() => {
+        init__curry1(), transpose = _curry1(function(e) {
+            for (var t = 0, n = []; t < e.length;) {
+                for (var r = e[t], i = 0; i < r.length;) n[i] === void 0 && (n[i] = []), n[i].push(r[i]), i += 1;
+                t += 1
+            }
+            return n
+        })
+    })),
+    traverse, init_traverse = __esmMin((() => {
+        init__curry3(), init_map(), init_sequence(), traverse = _curry3(function(e, t, n) {
+            return typeof n[`fantasy-land/traverse`] == `function` ? n[`fantasy-land/traverse`](t, e) : sequence(e, map(t, n))
+        })
+    })),
+    ws, trim, init_trim = __esmMin((() => {
+        init__curry1(), ws = `	
+\v\f\r \xA0              　\u2028\u2029﻿`, trim = typeof String.prototype.trim != `function` || ws.trim() ? _curry1(function(e) {
+            var t = RegExp(`^[` + ws + `][` + ws + `]*`),
+                n = RegExp(`[` + ws + `][` + ws + `]*$`);
+            return e.replace(t, ``).replace(n, ``)
+        }) : _curry1(function(e) {
+            return e.trim()
+        })
+    })),
+    tryCatch, init_tryCatch = __esmMin((() => {
+        init__arity(), init__concat(), init__curry2(), tryCatch = _curry2(function(e, t) {
+            return _arity(e.length, function() {
+                try {
+                    return e.apply(this, arguments)
+                } catch (e) {
+                    return t.apply(this, _concat([e], arguments))
+                }
+            })
+        })
+    })),
+    unapply, init_unapply = __esmMin((() => {
+        init__curry1(), unapply = _curry1(function(e) {
+            return function() {
+                return e(Array.prototype.slice.call(arguments, 0))
+            }
+        })
+    })),
+    unary, init_unary = __esmMin((() => {
+        init__curry1(), init_nAry(), unary = _curry1(function(e) {
+            return nAry(1, e)
+        })
+    })),
+    uncurryN, init_uncurryN = __esmMin((() => {
+        init__curry2(), init_curryN(), uncurryN = _curry2(function(e, t) {
+            return curryN(e, function() {
+                for (var n = 1, r = t, i = 0, a; n <= e && typeof r == `function`;) a = n === e ? arguments.length : i + r.length, r = r.apply(this, Array.prototype.slice.call(arguments, i, a)), n += 1, i = a;
+                return r
+            })
+        })
+    })),
+    unfold, init_unfold = __esmMin((() => {
+        init__curry2(), unfold = _curry2(function(e, t) {
+            for (var n = e(t), r = []; n && n.length;) r[r.length] = n[0], n = e(n[1]);
+            return r
+        })
+    })),
+    union, init_union = __esmMin((() => {
+        init__concat(), init__curry2(), init_compose(), init_uniq(), union = _curry2(compose(uniq, _concat))
+    })),
+    uniqWith, init_uniqWith = __esmMin((() => {
+        init__includesWith(), init__curry2(), uniqWith = _curry2(function(e, t) {
+            for (var n = 0, r = t.length, i = [], a; n < r;) a = t[n], _includesWith(e, a, i) || (i[i.length] = a), n += 1;
+            return i
+        })
+    })),
+    unionWith, init_unionWith = __esmMin((() => {
+        init__concat(), init__curry3(), init_uniqWith(), unionWith = _curry3(function(e, t, n) {
+            return uniqWith(e, _concat(t, n))
+        })
+    })),
+    unless, init_unless = __esmMin((() => {
+        init__curry3(), unless = _curry3(function(e, t, n) {
+            return e(n) ? n : t(n)
+        })
+    })),
+    unnest, init_unnest = __esmMin((() => {
+        init__identity(), init_chain(), unnest = chain(_identity)
+    })),
+    until, init_until = __esmMin((() => {
+        init__curry3(), until = _curry3(function(e, t, n) {
+            for (var r = n; !e(r);) r = t(r);
+            return r
+        })
+    })),
+    valuesIn, init_valuesIn = __esmMin((() => {
+        init__curry1(), valuesIn = _curry1(function(e) {
+            var t, n = [];
+            for (t in e) n[n.length] = e[t];
+            return n
+        })
+    })),
+    Const, view, init_view = __esmMin((() => {
+        init__curry2(), Const = function(e) {
+            return {
+                value: e,
+                "fantasy-land/map": function() {
+                    return this
+                }
+            }
+        }, view = _curry2(function(e, t) {
+            return e(Const)(t).value
+        })
+    })),
+    when, init_when = __esmMin((() => {
+        init__curry3(), when = _curry3(function(e, t, n) {
+            return e(n) ? t(n) : n
+        })
+    })),
+    where, init_where = __esmMin((() => {
+        init__curry2(), init__has(), where = _curry2(function(e, t) {
+            for (var n in e)
+                if (_has(n, e) && !e[n](t[n])) return !1;
+            return !0
+        })
+    })),
+    whereEq, init_whereEq = __esmMin((() => {
+        init__curry2(), init_equals(), init_map(), init_where(), whereEq = _curry2(function(e, t) {
+            return where(map(equals, e), t)
+        })
+    })),
+    without, init_without = __esmMin((() => {
+        init__includes(), init__curry2(), init_flip(), init_reject(), without = _curry2(function(e, t) {
+            return reject(flip(_includes)(e), t)
+        })
+    })),
+    xor, init_xor = __esmMin((() => {
+        init__curry2(), xor = _curry2(function(e, t) {
+            return !!(!e ^ !t)
+        })
+    })),
+    xprod, init_xprod = __esmMin((() => {
+        init__curry2(), xprod = _curry2(function(e, t) {
+            for (var n = 0, r = e.length, i, a = t.length, s = []; n < r;) {
+                for (i = 0; i < a;) s[s.length] = [e[n], t[i]], i += 1;
+                n += 1
+            }
+            return s
+        })
+    })),
+    zip, init_zip = __esmMin((() => {
+        init__curry2(), zip = _curry2(function(e, t) {
+            for (var n = [], r = 0, i = Math.min(e.length, t.length); r < i;) n[r] = [e[r], t[r]], r += 1;
+            return n
+        })
+    })),
+    zipObj, init_zipObj = __esmMin((() => {
+        init__curry2(), zipObj = _curry2(function(e, t) {
+            for (var n = 0, r = Math.min(e.length, t.length), i = {}; n < r;) i[e[n]] = t[n], n += 1;
+            return i
+        })
+    })),
+    zipWith, init_zipWith = __esmMin((() => {
+        init__curry3(), zipWith = _curry3(function(e, t, n) {
+            for (var r = [], i = 0, a = Math.min(t.length, n.length); i < a;) r[i] = e(t[i], n[i]), i += 1;
+            return r
+        })
+    })),
+    thunkify, init_thunkify = __esmMin((() => {
+        init_curryN(), init__curry1(), thunkify = _curry1(function(e) {
+            return curryN(e.length, function() {
+                var t = arguments;
+                return function() {
+                    return e.apply(this, t)
+                }
+            })
+        })
+    })),
+    es_exports = __exportAll({
+        F: () => F,
+        T: () => T,
+        __: () => ___default,
+        add: () => add,
+        addIndex: () => addIndex,
+        adjust: () => adjust,
+        all: () => all,
+        allPass: () => allPass,
+        always: () => always,
+        and: () => and,
+        andThen: () => andThen,
+        any: () => any,
+        anyPass: () => anyPass,
+        ap: () => ap,
+        aperture: () => aperture,
+        append: () => append,
+        apply: () => apply,
+        applySpec: () => applySpec,
+        applyTo: () => applyTo,
+        ascend: () => ascend,
+        assoc: () => assoc,
+        assocPath: () => assocPath,
+        binary: () => binary,
+        bind: () => bind,
+        both: () => both,
+        call: () => call,
+        chain: () => chain,
+        clamp: () => clamp,
+        clone: () => clone,
+        comparator: () => comparator,
+        complement: () => complement,
+        compose: () => compose,
+        composeK: () => composeK,
+        composeP: () => composeP,
+        composeWith: () => composeWith,
+        concat: () => concat,
+        cond: () => cond,
+        construct: () => construct,
+        constructN: () => constructN,
+        contains: () => contains,
+        converge: () => converge,
+        countBy: () => countBy,
+        curry: () => curry,
+        curryN: () => curryN,
+        dec: () => dec,
+        defaultTo: () => defaultTo,
+        descend: () => descend,
+        difference: () => difference,
+        differenceWith: () => differenceWith,
+        dissoc: () => dissoc,
+        dissocPath: () => dissocPath,
+        divide: () => divide,
+        drop: () => drop,
+        dropLast: () => dropLast,
+        dropLastWhile: () => dropLastWhile,
+        dropRepeats: () => dropRepeats,
+        dropRepeatsWith: () => dropRepeatsWith,
+        dropWhile: () => dropWhile,
+        either: () => either,
+        empty: () => empty,
+        endsWith: () => endsWith,
+        eqBy: () => eqBy,
+        eqProps: () => eqProps,
+        equals: () => equals,
+        evolve: () => evolve,
+        filter: () => filter,
+        find: () => find,
+        findIndex: () => findIndex,
+        findLast: () => findLast,
+        findLastIndex: () => findLastIndex,
+        flatten: () => flatten,
+        flip: () => flip,
+        forEach: () => forEach,
+        forEachObjIndexed: () => forEachObjIndexed,
+        fromPairs: () => fromPairs,
+        groupBy: () => groupBy,
+        groupWith: () => groupWith,
+        gt: () => gt,
+        gte: () => gte,
+        has: () => has,
+        hasIn: () => hasIn,
+        hasPath: () => hasPath,
+        head: () => head,
+        identical: () => identical,
+        identity: () => identity,
+        ifElse: () => ifElse,
+        inc: () => inc,
+        includes: () => includes,
+        indexBy: () => indexBy,
+        indexOf: () => indexOf,
+        init: () => init,
+        innerJoin: () => innerJoin,
+        insert: () => insert,
+        insertAll: () => insertAll,
+        intersection: () => intersection,
+        intersperse: () => intersperse,
+        into: () => into,
+        invert: () => invert,
+        invertObj: () => invertObj,
+        invoker: () => invoker,
+        is: () => is,
+        isEmpty: () => isEmpty,
+        isNil: () => isNil,
+        join: () => join$1,
+        juxt: () => juxt,
+        keys: () => keys,
+        keysIn: () => keysIn,
+        last: () => last,
+        lastIndexOf: () => lastIndexOf,
+        length: () => length,
+        lens: () => lens,
+        lensIndex: () => lensIndex,
+        lensPath: () => lensPath,
+        lensProp: () => lensProp,
+        lift: () => lift,
+        liftN: () => liftN,
+        lt: () => lt,
+        lte: () => lte,
+        map: () => map,
+        mapAccum: () => mapAccum,
+        mapAccumRight: () => mapAccumRight,
+        mapObjIndexed: () => mapObjIndexed,
+        match: () => match,
+        mathMod: () => mathMod,
+        max: () => max,
+        maxBy: () => maxBy,
+        mean: () => mean,
+        median: () => median,
+        memoizeWith: () => memoizeWith,
+        merge: () => merge,
+        mergeAll: () => mergeAll,
+        mergeDeepLeft: () => mergeDeepLeft,
+        mergeDeepRight: () => mergeDeepRight,
+        mergeDeepWith: () => mergeDeepWith,
+        mergeDeepWithKey: () => mergeDeepWithKey,
+        mergeLeft: () => mergeLeft,
+        mergeRight: () => mergeRight,
+        mergeWith: () => mergeWith,
+        mergeWithKey: () => mergeWithKey,
+        min: () => min,
+        minBy: () => minBy,
+        modulo: () => modulo,
+        move: () => move,
+        multiply: () => multiply,
+        nAry: () => nAry,
+        negate: () => negate,
+        none: () => none,
+        not: () => not,
+        nth: () => nth,
+        nthArg: () => nthArg,
+        o: () => o,
+        objOf: () => objOf,
+        of: () => of,
+        omit: () => omit,
+        once: () => once,
+        or: () => or,
+        otherwise: () => otherwise,
+        over: () => over,
+        pair: () => pair,
+        partial: () => partial,
+        partialRight: () => partialRight,
+        partition: () => partition,
+        path: () => path,
+        pathEq: () => pathEq,
+        pathOr: () => pathOr,
+        pathSatisfies: () => pathSatisfies,
+        paths: () => paths,
+        pick: () => pick,
+        pickAll: () => pickAll,
+        pickBy: () => pickBy,
+        pipe: () => pipe,
+        pipeK: () => pipeK,
+        pipeP: () => pipeP,
+        pipeWith: () => pipeWith,
+        pluck: () => pluck,
+        prepend: () => prepend,
+        product: () => product,
+        project: () => project,
+        prop: () => prop,
+        propEq: () => propEq,
+        propIs: () => propIs,
+        propOr: () => propOr,
+        propSatisfies: () => propSatisfies,
+        props: () => props,
+        range: () => range,
+        reduce: () => reduce,
+        reduceBy: () => reduceBy,
+        reduceRight: () => reduceRight,
+        reduceWhile: () => reduceWhile,
+        reduced: () => reduced,
+        reject: () => reject,
+        remove: () => remove,
+        repeat: () => repeat,
+        replace: () => replace,
+        reverse: () => reverse,
+        scan: () => scan,
+        sequence: () => sequence,
+        set: () => set,
+        slice: () => slice,
+        sort: () => sort,
+        sortBy: () => sortBy,
+        sortWith: () => sortWith,
+        split: () => split,
+        splitAt: () => splitAt,
+        splitEvery: () => splitEvery,
+        splitWhen: () => splitWhen,
+        startsWith: () => startsWith,
+        subtract: () => subtract,
+        sum: () => sum,
+        symmetricDifference: () => symmetricDifference,
+        symmetricDifferenceWith: () => symmetricDifferenceWith,
+        tail: () => tail,
+        take: () => take,
+        takeLast: () => takeLast,
+        takeLastWhile: () => takeLastWhile,
+        takeWhile: () => takeWhile,
+        tap: () => tap,
+        test: () => test,
+        thunkify: () => thunkify,
+        times: () => times,
+        toLower: () => toLower,
+        toPairs: () => toPairs,
+        toPairsIn: () => toPairsIn,
+        toString: () => toString,
+        toUpper: () => toUpper,
+        transduce: () => transduce,
+        transpose: () => transpose,
+        traverse: () => traverse,
+        trim: () => trim,
+        tryCatch: () => tryCatch,
+        type: () => type,
+        unapply: () => unapply,
+        unary: () => unary,
+        uncurryN: () => uncurryN,
+        unfold: () => unfold,
+        union: () => union,
+        unionWith: () => unionWith,
+        uniq: () => uniq,
+        uniqBy: () => uniqBy,
+        uniqWith: () => uniqWith,
+        unless: () => unless,
+        unnest: () => unnest,
+        until: () => until,
+        update: () => update,
+        useWith: () => useWith,
+        values: () => values,
+        valuesIn: () => valuesIn,
+        view: () => view,
+        when: () => when,
+        where: () => where,
+        whereEq: () => whereEq,
+        without: () => without,
+        xor: () => xor,
+        xprod: () => xprod,
+        zip: () => zip,
+        zipObj: () => zipObj,
+        zipWith: () => zipWith
+    }),
+    init_es = __esmMin((() => {
+        init_F(), init_T(), init___(), init_add(), init_addIndex(), init_adjust(), init_all(), init_allPass(), init_always(), init_and(), init_any(), init_anyPass(), init_ap(), init_aperture(), init_append(), init_apply(), init_applySpec(), init_applyTo(), init_ascend(), init_assoc(), init_assocPath(), init_binary(), init_bind(), init_both(), init_call(), init_chain(), init_clamp(), init_clone(), init_comparator(), init_complement(), init_compose(), init_composeK(), init_composeP(), init_composeWith(), init_concat(), init_cond(), init_construct(), init_constructN(), init_contains(), init_converge(), init_countBy(), init_curry(), init_curryN(), init_dec(), init_defaultTo(), init_descend(), init_difference(), init_differenceWith(), init_dissoc(), init_dissocPath(), init_divide(), init_drop(), init_dropLast(), init_dropLastWhile(), init_dropRepeats(), init_dropRepeatsWith(), init_dropWhile(), init_either(), init_empty(), init_endsWith(), init_eqBy(), init_eqProps(), init_equals(), init_evolve(), init_filter(), init_find(), init_findIndex(), init_findLast(), init_findLastIndex(), init_flatten(), init_flip(), init_forEach(), init_forEachObjIndexed(), init_fromPairs(), init_groupBy(), init_groupWith(), init_gt(), init_gte(), init_has(), init_hasIn(), init_hasPath(), init_head(), init_identical(), init_identity(), init_ifElse(), init_inc(), init_includes(), init_indexBy(), init_indexOf(), init_init(), init_innerJoin(), init_insert(), init_insertAll(), init_intersection(), init_intersperse(), init_into(), init_invert(), init_invertObj(), init_invoker(), init_is(), init_isEmpty(), init_isNil(), init_join(), init_juxt(), init_keys(), init_keysIn(), init_last(), init_lastIndexOf(), init_length(), init_lens(), init_lensIndex(), init_lensPath(), init_lensProp(), init_lift(), init_liftN(), init_lt(), init_lte(), init_map(), init_mapAccum(), init_mapAccumRight(), init_mapObjIndexed(), init_match(), init_mathMod(), init_max(), init_maxBy(), init_mean(), init_median(), init_memoizeWith(), init_merge(), init_mergeAll(), init_mergeDeepLeft(), init_mergeDeepRight(), init_mergeDeepWith(), init_mergeDeepWithKey(), init_mergeLeft(), init_mergeRight(), init_mergeWith(), init_mergeWithKey(), init_min(), init_minBy(), init_modulo(), init_move(), init_multiply(), init_nAry(), init_negate(), init_none(), init_not(), init_nth(), init_nthArg(), init_o(), init_objOf(), init_of(), init_omit(), init_once(), init_or(), init_otherwise(), init_over(), init_pair(), init_partial(), init_partialRight(), init_partition(), init_path(), init_paths(), init_pathEq(), init_pathOr(), init_pathSatisfies(), init_pick(), init_pickAll(), init_pickBy(), init_pipe(), init_pipeK(), init_pipeP(), init_pipeWith(), init_pluck(), init_prepend(), init_product(), init_project(), init_prop(), init_propEq(), init_propIs(), init_propOr(), init_propSatisfies(), init_props(), init_range(), init_reduce(), init_reduceBy(), init_reduceRight(), init_reduceWhile(), init_reduced(), init_reject(), init_remove(), init_repeat(), init_replace(), init_reverse(), init_scan(), init_sequence(), init_set(), init_slice(), init_sort(), init_sortBy(), init_sortWith(), init_split(), init_splitAt(), init_splitEvery(), init_splitWhen(), init_startsWith(), init_subtract(), init_sum(), init_symmetricDifference(), init_symmetricDifferenceWith(), init_tail(), init_take(), init_takeLast(), init_takeLastWhile(), init_takeWhile(), init_tap(), init_test(), init_andThen(), init_times(), init_toLower(), init_toPairs(), init_toPairsIn(), init_toString(), init_toUpper(), init_transduce(), init_transpose(), init_traverse(), init_trim(), init_tryCatch(), init_type(), init_unapply(), init_unary(), init_uncurryN(), init_unfold(), init_union(), init_unionWith(), init_uniq(), init_uniqBy(), init_uniqWith(), init_unless(), init_unnest(), init_until(), init_update(), init_useWith(), init_values(), init_valuesIn(), init_view(), init_when(), init_where(), init_whereEq(), init_without(), init_xor(), init_xprod(), init_zip(), init_zipObj(), init_zipWith(), init_thunkify()
+    })),
+    require_browser = __commonJSMin(((e, t) => {
+        init_dist$1(), t.exports = n;
+
+        function n(e, t) {
+            if (!Buffer.isBuffer(e)) throw TypeError(`First argument must be a buffer`);
+            if (!Buffer.isBuffer(t)) throw TypeError(`Second argument must be a buffer`);
+            if (e.length !== t.length) throw TypeError(`Input buffers must have the same length`);
+            for (var n = e.length, r = 0, i = -1; ++i < n;) r |= e[i] ^ t[i];
+            return r === 0
+        }
+    })),
+    require_util = __commonJSMin(((e, t) => {
+        var n = require_safe_buffer$1().Buffer,
+            {
+                map: r,
+                join: i,
+                pipe: a,
+                slice: s,
+                curry: c,
+                flip: l,
+                dropLast: u,
+                isEmpty: d,
+                takeLast: f
+            } = (init_es(), __toCommonJS(es_exports)),
+            p = e => ~e,
+            m = (e, t, n = e.length) => a(_, s(t, n), g)(e),
+            h = n.concat,
+            g = n.from,
+            _ = e => Uint8Array.from(e),
+            v = e => e.toString(2),
+            y = a(_, r(p)),
+            b = c((e, t, n) => n.map((n, r, i) => {
+                if (r % t === 0) return e(n, r, i)
+            }).filter((e, n) => n % t === 0)),
+            x = (e, t, n) => {
+                if (d(t) && d(n)) return e;
+                let [r] = f(1, t), [i] = f(1, n);
+                return e = e.replace(new RegExp(r, `g`), i), x(e, u(1, t), u(1, n))
+            },
+            S = c((e, t) => {
+                var n = ``;
+                for (let t = 0; t < e; t++) n += `0`;
+                return n.slice(String(t).length) + t
+            });
+        t.exports = {
+            toBuffer: g,
+            byarr: _,
+            compliment: y,
+            byteToBin: a(Array.from, r(v), r(S(8)), i(``)),
+            nTobin: v,
+            zeroPad: S,
+            binToByte: e => {
+                var t = [];
+                for (let n = 0; n < e.length; n += 8) t.push(a(s(n, n + 8), l(parseInt)(2))(e));
+                return new Uint8Array(t)
+            },
+            concatBuff: h,
+            buffSlice: m,
+            stepMap: b,
+            recursiveReplace: x
+        }
+    })),
+    require_encrypt = __commonJSMin(((e, t) => {
+        var {
+            createCipheriv: n,
+            createDecipheriv: r
+        } = require_browser$6(), i = require_browser$11(), a = require_browser$8().pbkdf2Sync, s = require_browser$9(), {
+            curry: c
+        } = (init_es(), __toCommonJS(es_exports)), l = require_browser(), {
+            toBuffer: u,
+            concatBuff: d,
+            buffSlice: f
+        } = require_util(), p = (e, t) => a(e, t, 1e4, 48, `sha512`), m = e => {
+            let t = i(8),
+                {
+                    iv: r,
+                    key: a,
+                    secret: c
+                } = _(e, t),
+                l = n(`aes-256-ctr`, a, r),
+                u = d([l.update(c, `utf8`), l.final()]);
+            return e.integrity ? d([t, s(`sha256`, a).update(c).digest(), u]) : d([t, u])
+        }, h = e => {
+            let {
+                iv: t,
+                key: n,
+                secret: i,
+                hmacData: a
+            } = v(e, null), c = r(`aes-256-ctr`, n, t), u = d([c.update(i, `utf8`), c.final()]);
+            if (e.integrity && !l(a, s(`sha256`, n).update(u).digest())) throw Error(`Wrong password or Wrong payload (Hmac Integrity failure) `);
+            return u
+        }, g = (e, t, n) => {
+            let r = u(t.data),
+                i = {};
+            e === `encrypt` ? i.secret = r : e === `decrypt` && (n = f(r, 0, 8), t.integrity ? (i.hmacData = f(r, 8, 40), i.secret = f(r, 40)) : i.secret = f(r, 8));
+            let a = p(t.password, n);
+            return i.iv = f(a, 0, 16), i.key = f(a, 16), i
+        }, _ = c(g)(`encrypt`), v = c(g)(`decrypt`);
+        t.exports = {
+            encrypt: m,
+            decrypt: h
+        }
+    })),
+    require_lzutf8 = __commonJSMin(((e, t) => {
+        init_dist$1(), init_dist(), init_dist$2();
+        var n;
+        (function(e) {
+            e.runningInNodeJS = function() {
+                return typeof process$1 == `object` && typeof process$1.versions == `object` && typeof process$1.versions.node == `string`
+            }, e.runningInMainNodeJSModule = function() {
+                return e.runningInNodeJS() && __require.main === t
+            }, e.commonJSAvailable = function() {
+                return typeof t == `object` && typeof t.exports == `object`
+            }, e.runningInWebWorker = function() {
+                return typeof window > `u` && typeof self == `object` && typeof self.addEventListener == `function` && typeof self.close == `function`
+            }, e.runningInNodeChildProcess = function() {
+                return e.runningInNodeJS() && typeof process$1.send == `function`
+            }, e.runningInNullOrigin = function() {
+                return typeof window != `object` || typeof window.location != `object` || typeof document != `object` ? !1 : document.location.protocol !== `http:` && document.location.protocol !== `https:`
+            }, e.webWorkersAvailable = function() {
+                return !(typeof Worker != `function` || e.runningInNullOrigin() || e.runningInNodeJS() || navigator && navigator.userAgent && navigator.userAgent.indexOf(`Android 4.3`) >= 0)
+            }, e.log = function(e, t) {
+                t === void 0 && (t = !1), typeof console == `object` && (console.log(e), t && typeof document == `object` && (document.body.innerHTML += e + `<br/>`))
+            }, e.createErrorMessage = function(t, n) {
+                if (n === void 0 && (n = `Unhandled exception`), t == null) return n;
+                if (n += `: `, typeof t.content == `object`) {
+                    if (e.runningInNodeJS()) return n + t.content.stack;
+                    var r = JSON.stringify(t.content);
+                    return r === `{}` ? n + t.content : n + r
+                }
+                return typeof t.content == `string` ? n + t.content : n + t
+            }, e.printExceptionAndStackTraceToConsole = function(t, n) {
+                n === void 0 && (n = `Unhandled exception`), e.log(e.createErrorMessage(t, n))
+            }, e.getGlobalObject = function() {
+                return typeof global == `object` ? global : typeof window == `object` ? window : typeof self == `object` ? self : {}
+            }, e.toString = Object.prototype.toString, e.commonJSAvailable() && (t.exports = e)
+        })(n || (n = {}));
+        var r;
+        (function(e) {
+            if (typeof Uint8Array == `function` && new Uint8Array(1).subarray(1).byteLength !== 0) {
+                var t = function(e, t) {
+                        var n = function(e, t, n) {
+                            return e < t ? t : e > n ? n : e
+                        };
+                        e |= 0, t |= 0, arguments.length < 1 && (e = 0), arguments.length < 2 && (t = this.length), e < 0 && (e = this.length + e), t < 0 && (t = this.length + t), e = n(e, 0, this.length), t = n(t, 0, this.length);
+                        var r = t - e;
+                        return r < 0 && (r = 0), new this.constructor(this.buffer, this.byteOffset + e * this.BYTES_PER_ELEMENT, r)
+                    },
+                    n = [`Int8Array`, `Uint8Array`, `Uint8ClampedArray`, `Int16Array`, `Uint16Array`, `Int32Array`, `Uint32Array`, `Float32Array`, `Float64Array`],
+                    r = void 0;
+                if (typeof window == `object` ? r = window : typeof self == `object` && (r = self), r !== void 0)
+                    for (var i = 0; i < n.length; i++) r[n[i]] && (r[n[i]].prototype.subarray = t)
+            }
+        })(r || (r = {}));
+        var n;
+        (function(e) {
+            e.AsyncCompressor = function() {
+                function t() {}
+                return t.compressAsync = function(t, n, r) {
+                    var i = new e.Timer,
+                        a = new e.Compressor;
+                    if (!r) throw TypeError(`compressAsync: No callback argument given`);
+                    if (typeof t == `string`) t = e.encodeUTF8(t);
+                    else if (t == null || !(t instanceof Uint8Array)) {
+                        r(void 0, TypeError(`compressAsync: Invalid input argument, only 'string' and 'Uint8Array' are supported`));
+                        return
+                    }
+                    var s = e.ArrayTools.splitByteArray(t, n.blockSize),
+                        c = [],
+                        l = function(t) {
+                            if (t < s.length) {
+                                var u = void 0;
+                                try {
+                                    u = a.compressBlock(s[t])
+                                } catch (e) {
+                                    r(void 0, e);
+                                    return
+                                }
+                                c.push(u), i.getElapsedTime() <= 20 ? l(t + 1) : (e.enqueueImmediate(function() {
+                                    return l(t + 1)
+                                }), i.restart())
+                            } else {
+                                var d = e.ArrayTools.concatUint8Arrays(c);
+                                e.enqueueImmediate(function() {
+                                    var t;
+                                    try {
+                                        t = e.CompressionCommon.encodeCompressedBytes(d, n.outputEncoding)
+                                    } catch (e) {
+                                        r(void 0, e);
+                                        return
+                                    }
+                                    e.enqueueImmediate(function() {
+                                        return r(t)
+                                    })
+                                })
+                            }
+                        };
+                    e.enqueueImmediate(function() {
+                        return l(0)
+                    })
+                }, t.createCompressionStream = function() {
+                    var t = new e.Compressor,
+                        n = new(require_readable_browser$1()).Transform({
+                            decodeStrings: !0,
+                            highWaterMark: 65536
+                        });
+                    return n._transform = function(r, i, a) {
+                        var s;
+                        try {
+                            s = e.BufferTools.uint8ArrayToBuffer(t.compressBlock(e.BufferTools.bufferToUint8Array(r)))
+                        } catch (e) {
+                            n.emit(`error`, e);
+                            return
+                        }
+                        n.push(s), a()
+                    }, n
+                }, t
+            }()
+        })(n || (n = {}));
+        var n;
+        (function(e) {
+            e.AsyncDecompressor = function() {
+                function t() {}
+                return t.decompressAsync = function(t, n, r) {
+                    if (!r) throw TypeError(`decompressAsync: No callback argument given`);
+                    var i = new e.Timer;
+                    try {
+                        t = e.CompressionCommon.decodeCompressedBytes(t, n.inputEncoding)
+                    } catch (e) {
+                        r(void 0, e);
+                        return
+                    }
+                    var a = new e.Decompressor,
+                        s = e.ArrayTools.splitByteArray(t, n.blockSize),
+                        c = [],
+                        l = function(t) {
+                            if (t < s.length) {
+                                var u = void 0;
+                                try {
+                                    u = a.decompressBlock(s[t])
+                                } catch (e) {
+                                    r(void 0, e);
+                                    return
+                                }
+                                c.push(u), i.getElapsedTime() <= 20 ? l(t + 1) : (e.enqueueImmediate(function() {
+                                    return l(t + 1)
+                                }), i.restart())
+                            } else {
+                                var d = e.ArrayTools.concatUint8Arrays(c);
+                                e.enqueueImmediate(function() {
+                                    var t;
+                                    try {
+                                        t = e.CompressionCommon.encodeDecompressedBytes(d, n.outputEncoding)
+                                    } catch (e) {
+                                        r(void 0, e);
+                                        return
+                                    }
+                                    e.enqueueImmediate(function() {
+                                        return r(t)
+                                    })
+                                })
+                            }
+                        };
+                    e.enqueueImmediate(function() {
+                        return l(0)
+                    })
+                }, t.createDecompressionStream = function() {
+                    var t = new e.Decompressor,
+                        n = new(require_readable_browser$1()).Transform({
+                            decodeStrings: !0,
+                            highWaterMark: 65536
+                        });
+                    return n._transform = function(r, i, a) {
+                        var s;
+                        try {
+                            s = e.BufferTools.uint8ArrayToBuffer(t.decompressBlock(e.BufferTools.bufferToUint8Array(r)))
+                        } catch (e) {
+                            n.emit(`error`, e);
+                            return
+                        }
+                        n.push(s), a()
+                    }, n
+                }, t
+            }()
+        })(n || (n = {}));
+        var n;
+        (function(e) {
+            var t;
+            (function(t) {
+                t.compressAsync = function(e, n, r) {
+                    if (n.inputEncoding == `ByteArray` && !(e instanceof Uint8Array)) r(void 0, TypeError(`compressAsync: input is not a Uint8Array`));
+                    else {
+                        var i = {
+                                token: Math.random().toString(),
+                                type: `compress`,
+                                data: e,
+                                inputEncoding: n.inputEncoding,
+                                outputEncoding: n.outputEncoding
+                            },
+                            a = function(e) {
+                                var n = e.data;
+                                n && n.token == i.token && (t.globalWorker.removeEventListener(`message`, a), n.type == `error` ? r(void 0, Error(n.error)) : r(n.data))
+                            };
+                        t.globalWorker.addEventListener(`message`, a), t.globalWorker.postMessage(i, [])
+                    }
+                }, t.decompressAsync = function(e, n, r) {
+                    var i = {
+                            token: Math.random().toString(),
+                            type: `decompress`,
+                            data: e,
+                            inputEncoding: n.inputEncoding,
+                            outputEncoding: n.outputEncoding
+                        },
+                        a = function(e) {
+                            var n = e.data;
+                            n && n.token == i.token && (t.globalWorker.removeEventListener(`message`, a), n.type == `error` ? r(void 0, Error(n.error)) : r(n.data))
+                        };
+                    t.globalWorker.addEventListener(`message`, a), t.globalWorker.postMessage(i, [])
+                }, t.installWebWorkerIfNeeded = function() {
+                    typeof self == `object` && self.document === void 0 && self.addEventListener != null && (self.addEventListener(`message`, function(t) {
+                        var n = t.data;
+                        if (n.type == `compress`) {
+                            var r = void 0;
+                            try {
+                                r = e.compress(n.data, {
+                                    outputEncoding: n.outputEncoding
+                                })
+                            } catch (t) {
+                                self.postMessage({
+                                    token: n.token,
+                                    type: `error`,
+                                    error: e.createErrorMessage(t)
+                                }, []);
+                                return
+                            }
+                            var i = {
+                                token: n.token,
+                                type: `compressionResult`,
+                                data: r,
+                                encoding: n.outputEncoding
+                            };
+                            i.data instanceof Uint8Array && navigator.appVersion.indexOf(`MSIE 10`) === -1 ? self.postMessage(i, [i.data.buffer]) : self.postMessage(i, [])
+                        } else if (n.type == `decompress`) {
+                            var a = void 0;
+                            try {
+                                a = e.decompress(n.data, {
+                                    inputEncoding: n.inputEncoding,
+                                    outputEncoding: n.outputEncoding
+                                })
+                            } catch (t) {
+                                self.postMessage({
+                                    token: n.token,
+                                    type: `error`,
+                                    error: e.createErrorMessage(t)
+                                }, []);
+                                return
+                            }
+                            var i = {
+                                token: n.token,
+                                type: `decompressionResult`,
+                                data: a,
+                                encoding: n.outputEncoding
+                            };
+                            i.data instanceof Uint8Array && navigator.appVersion.indexOf(`MSIE 10`) === -1 ? self.postMessage(i, [i.data.buffer]) : self.postMessage(i, [])
+                        }
+                    }), self.addEventListener(`error`, function(t) {
+                        e.log(e.createErrorMessage(t.error, `Unexpected LZUTF8 WebWorker exception`))
+                    }))
+                }, t.createGlobalWorkerIfNeeded = function() {
+                    if (t.globalWorker) return !0;
+                    if (!e.webWorkersAvailable()) return !1;
+                    if (!t.scriptURI && typeof document == `object`) {
+                        var n = document.getElementById(`lzutf8`);
+                        n != null && (t.scriptURI = n.getAttribute(`src`) || void 0)
+                    }
+                    return t.scriptURI ? (t.globalWorker = new Worker(t.scriptURI), !0) : !1
+                }, t.terminate = function() {
+                    t.globalWorker && (t.globalWorker.terminate(), t.globalWorker = void 0)
+                }
+            })(t = e.WebWorker || (e.WebWorker = {})), t.installWebWorkerIfNeeded()
+        })(n || (n = {}));
+        var n;
+        (function(e) {
+            e.ArraySegment = function() {
+                function e(e, t, n) {
+                    this.container = e, this.startPosition = t, this.length = n
+                }
+                return e.prototype.get = function(e) {
+                    return this.container[this.startPosition + e]
+                }, e.prototype.getInReversedOrder = function(e) {
+                    return this.container[this.startPosition + this.length - 1 - e]
+                }, e.prototype.set = function(e, t) {
+                    this.container[this.startPosition + e] = t
+                }, e
+            }()
+        })(n || (n = {}));
+        var n;
+        (function(e) {
+            (function(e) {
+                e.copyElements = function(e, t, n, r, i) {
+                    for (; i--;) n[r++] = e[t++]
+                }, e.zeroElements = function(e, t, n) {
+                    for (; n--;) e[t++] = 0
+                }, e.countNonzeroValuesInArray = function(e) {
+                    for (var t = 0, n = 0; n < e.length; n++) e[n] && t++;
+                    return t
+                }, e.truncateStartingElements = function(e, t) {
+                    if (e.length <= t) throw RangeError(`truncateStartingElements: Requested length should be smaller than array length`);
+                    for (var n = e.length - t, r = 0; r < t; r++) e[r] = e[n + r];
+                    e.length = t
+                }, e.doubleByteArrayCapacity = function(e) {
+                    var t = new Uint8Array(e.length * 2);
+                    return t.set(e), t
+                }, e.concatUint8Arrays = function(e) {
+                    for (var t = 0, n = 0, r = e; n < r.length; n++) {
+                        var i = r[n];
+                        t += i.length
+                    }
+                    for (var a = new Uint8Array(t), s = 0, c = 0, l = e; c < l.length; c++) {
+                        var i = l[c];
+                        a.set(i, s), s += i.length
+                    }
+                    return a
+                }, e.splitByteArray = function(e, t) {
+                    for (var n = [], r = 0; r < e.length;) {
+                        var i = Math.min(t, e.length - r);
+                        n.push(e.subarray(r, r + i)), r += i
+                    }
+                    return n
+                }
+            })(e.ArrayTools || (e.ArrayTools = {}))
+        })(n || (n = {}));
+        var n;
+        (function(e) {
+            (function(e) {
+                e.convertToUint8ArrayIfNeeded = function(t) {
+                    return typeof Buffer == `function` && Buffer.isBuffer(t) ? e.bufferToUint8Array(t) : t
+                }, e.uint8ArrayToBuffer = function(e) {
+                    if (Buffer.prototype instanceof Uint8Array) {
+                        var t = new Uint8Array(e.buffer, e.byteOffset, e.byteLength);
+                        return Object.setPrototypeOf(t, Buffer.prototype), t
+                    }
+                    for (var n = e.length, r = new Buffer(n), i = 0; i < n; i++) r[i] = e[i];
+                    return r
+                }, e.bufferToUint8Array = function(e) {
+                    if (Buffer.prototype instanceof Uint8Array) return new Uint8Array(e.buffer, e.byteOffset, e.byteLength);
+                    for (var t = e.length, n = new Uint8Array(t), r = 0; r < t; r++) n[r] = e[r];
+                    return n
+                }
+            })(e.BufferTools || (e.BufferTools = {}))
+        })(n || (n = {}));
+        var n;
+        (function(e) {
+            (function(t) {
+                t.getCroppedBuffer = function(e, t, n, r) {
+                    r === void 0 && (r = 0);
+                    var i = new Uint8Array(n + r);
+                    return i.set(e.subarray(t, t + n)), i
+                }, t.getCroppedAndAppendedByteArray = function(t, n, r, i) {
+                    return e.ArrayTools.concatUint8Arrays([t.subarray(n, n + r), i])
+                }, t.detectCompressionSourceEncoding = function(e) {
+                    if (e == null) throw TypeError(`detectCompressionSourceEncoding: input is null or undefined`);
+                    if (typeof e == `string`) return `String`;
+                    if (e instanceof Uint8Array || typeof Buffer == `function` && Buffer.isBuffer(e)) return `ByteArray`;
+                    throw TypeError(`detectCompressionSourceEncoding: input must be of type 'string', 'Uint8Array' or 'Buffer'`)
+                }, t.encodeCompressedBytes = function(t, n) {
+                    switch (n) {
+                        case `ByteArray`:
+                            return t;
+                        case `Buffer`:
+                            return e.BufferTools.uint8ArrayToBuffer(t);
+                        case `Base64`:
+                            return e.encodeBase64(t);
+                        case `BinaryString`:
+                            return e.encodeBinaryString(t);
+                        case `StorageBinaryString`:
+                            return e.encodeStorageBinaryString(t);
+                        default:
+                            throw TypeError(`encodeCompressedBytes: invalid output encoding requested`)
+                    }
+                }, t.decodeCompressedBytes = function(t, n) {
+                    if (n == null) throw TypeError(`decodeCompressedData: Input is null or undefined`);
+                    switch (n) {
+                        case `ByteArray`:
+                        case `Buffer`:
+                            var r = e.BufferTools.convertToUint8ArrayIfNeeded(t);
+                            if (!(r instanceof Uint8Array)) throw TypeError(`decodeCompressedData: 'ByteArray' or 'Buffer' input type was specified but input is not a Uint8Array or Buffer`);
+                            return r;
+                        case `Base64`:
+                            if (typeof t != `string`) throw TypeError(`decodeCompressedData: 'Base64' input type was specified but input is not a string`);
+                            return e.decodeBase64(t);
+                        case `BinaryString`:
+                            if (typeof t != `string`) throw TypeError(`decodeCompressedData: 'BinaryString' input type was specified but input is not a string`);
+                            return e.decodeBinaryString(t);
+                        case `StorageBinaryString`:
+                            if (typeof t != `string`) throw TypeError(`decodeCompressedData: 'StorageBinaryString' input type was specified but input is not a string`);
+                            return e.decodeStorageBinaryString(t);
+                        default:
+                            throw TypeError(`decodeCompressedData: invalid input encoding requested: '` + n + `'`)
+                    }
+                }, t.encodeDecompressedBytes = function(t, n) {
+                    switch (n) {
+                        case `String`:
+                            return e.decodeUTF8(t);
+                        case `ByteArray`:
+                            return t;
+                        case `Buffer`:
+                            if (typeof Buffer != `function`) throw TypeError(`encodeDecompressedBytes: a 'Buffer' type was specified but is not supported at the current envirnment`);
+                            return e.BufferTools.uint8ArrayToBuffer(t);
+                        default:
+                            throw TypeError(`encodeDecompressedBytes: invalid output encoding requested`)
+                    }
+                }
+            })(e.CompressionCommon || (e.CompressionCommon = {}))
+        })(n || (n = {}));
+        var n;
+        (function(e) {
+            var t;
+            (function(t) {
+                var n = [],
+                    r;
+                t.enqueueImmediate = function(e) {
+                    n.push(e), n.length === 1 && r()
+                }, t.initializeScheduler = function() {
+                    var t = function() {
+                        for (var t = 0, r = n; t < r.length; t++) {
+                            var i = r[t];
+                            try {
+                                i.call(void 0)
+                            } catch (t) {
+                                e.printExceptionAndStackTraceToConsole(t, `enqueueImmediate exception`)
+                            }
+                        }
+                        n.length = 0
+                    };
+                    if (e.runningInNodeJS() && (r = function() {
+                            return setImmediate(function() {
+                                return t()
+                            })
+                        }), typeof window == `object` && typeof window.addEventListener == `function` && typeof window.postMessage == `function`) {
+                        var i = `enqueueImmediate-` + Math.random().toString();
+                        window.addEventListener(`message`, function(e) {
+                            e.data === i && t()
+                        });
+                        var a = e.runningInNullOrigin() ? `*` : window.location.href;
+                        r = function() {
+                            return window.postMessage(i, a)
+                        }
+                    } else if (typeof MessageChannel == `function` && typeof MessagePort == `function`) {
+                        var s = new MessageChannel;
+                        s.port1.onmessage = function() {
+                            return t()
+                        }, r = function() {
+                            return s.port2.postMessage(0)
+                        }
+                    } else r = function() {
+                        return setTimeout(function() {
+                            return t()
+                        }, 0)
+                    }
+                }, t.initializeScheduler()
+            })(t = e.EventLoop || (e.EventLoop = {})), e.enqueueImmediate = function(e) {
+                return t.enqueueImmediate(e)
+            }
+        })(n || (n = {}));
+        var n;
+        (function(e) {
+            (function(e) {
+                e.override = function(t, n) {
+                    return e.extend(t, n)
+                }, e.extend = function(e, t) {
+                    if (e == null) throw TypeError(`obj is null or undefined`);
+                    if (typeof e != `object`) throw TypeError(`obj is not an object`);
+                    if (t ?? (t = {}), typeof t != `object`) throw TypeError(`newProperties is not an object`);
+                    if (t != null)
+                        for (var n in t) e[n] = t[n];
+                    return e
+                }
+            })(e.ObjectTools || (e.ObjectTools = {}))
+        })(n || (n = {}));
+        var n;
+        (function(e) {
+            e.getRandomIntegerInRange = function(e, t) {
+                return e + Math.floor(Math.random() * (t - e))
+            }, e.getRandomUTF16StringOfLength = function(t) {
+                for (var n = ``, r = 0; r < t; r++) {
+                    var i = void 0;
+                    do i = e.getRandomIntegerInRange(0, 1114112); while (i >= 55296 && i <= 57343);
+                    n += e.Encoding.CodePoint.decodeToString(i)
+                }
+                return n
+            }
+        })(n || (n = {}));
+        var n;
+        (function(e) {
+            e.StringBuilder = function() {
+                function e(e) {
+                    e === void 0 && (e = 1024), this.outputBufferCapacity = e, this.outputPosition = 0, this.outputString = ``, this.outputBuffer = new Uint16Array(this.outputBufferCapacity)
+                }
+                return e.prototype.appendCharCode = function(e) {
+                    this.outputBuffer[this.outputPosition++] = e, this.outputPosition === this.outputBufferCapacity && this.flushBufferToOutputString()
+                }, e.prototype.appendCharCodes = function(e) {
+                    for (var t = 0, n = e.length; t < n; t++) this.appendCharCode(e[t])
+                }, e.prototype.appendString = function(e) {
+                    for (var t = 0, n = e.length; t < n; t++) this.appendCharCode(e.charCodeAt(t))
+                }, e.prototype.appendCodePoint = function(e) {
+                    if (e <= 65535) this.appendCharCode(e);
+                    else if (e <= 1114111) this.appendCharCode(55296 + (e - 65536 >>> 10)), this.appendCharCode(56320 + (e - 65536 & 1023));
+                    else throw Error(`appendCodePoint: A code point of ` + e + ` cannot be encoded in UTF-16`)
+                }, e.prototype.getOutputString = function() {
+                    return this.flushBufferToOutputString(), this.outputString
+                }, e.prototype.flushBufferToOutputString = function() {
+                    this.outputPosition === this.outputBufferCapacity ? this.outputString += String.fromCharCode.apply(null, this.outputBuffer) : this.outputString += String.fromCharCode.apply(null, this.outputBuffer.subarray(0, this.outputPosition)), this.outputPosition = 0
+                }, e
+            }()
+        })(n || (n = {}));
+        var n;
+        (function(e) {
+            e.Timer = function() {
+                function t() {
+                    this.restart()
+                }
+                return t.prototype.restart = function() {
+                    this.startTime = t.getTimestamp()
+                }, t.prototype.getElapsedTime = function() {
+                    return t.getTimestamp() - this.startTime
+                }, t.prototype.getElapsedTimeAndRestart = function() {
+                    var e = this.getElapsedTime();
+                    return this.restart(), e
+                }, t.prototype.logAndRestart = function(t, n) {
+                    n === void 0 && (n = !0);
+                    var r = this.getElapsedTime(),
+                        i = t + `: ` + r.toFixed(3) + `ms`;
+                    return e.log(i, n), this.restart(), r
+                }, t.getTimestamp = function() {
+                    return this.timestampFunc || this.createGlobalTimestampFunction(), this.timestampFunc()
+                }, t.getMicrosecondTimestamp = function() {
+                    return Math.floor(t.getTimestamp() * 1e3)
+                }, t.createGlobalTimestampFunction = function() {
+                    if (typeof process$1 == `object` && typeof process$1.hrtime == `function`) {
+                        var e = 0;
+                        this.timestampFunc = function() {
+                            var t = process$1.hrtime(),
+                                n = t[0] * 1e3 + t[1] / 1e6;
+                            return e + n
+                        }, e = Date.now() - this.timestampFunc()
+                    } else if (typeof chrome == `object` && chrome.Interval) {
+                        var t = Date.now(),
+                            n = new chrome.Interval;
+                        n.start(), this.timestampFunc = function() {
+                            return t + n.microseconds() / 1e3
+                        }
+                    } else if (typeof performance == `object` && performance.now) {
+                        var r = Date.now() - performance.now();
+                        this.timestampFunc = function() {
+                            return r + performance.now()
+                        }
+                    } else this.timestampFunc = Date.now ? function() {
+                        return Date.now()
+                    } : function() {
+                        return new Date().getTime()
+                    }
+                }, t
+            }()
+        })(n || (n = {}));
+        var n;
+        (function(e) {
+            e.Compressor = function() {
+                function t(t) {
+                    t === void 0 && (t = !0), this.MinimumSequenceLength = 4, this.MaximumSequenceLength = 31, this.MaximumMatchDistance = 32767, this.PrefixHashTableSize = 65537, this.inputBufferStreamOffset = 1, this.prefixHashTable = t && typeof Uint32Array == `function` ? new e.CompressorCustomHashTable(this.PrefixHashTableSize) : new e.CompressorSimpleHashTable(this.PrefixHashTableSize)
+                }
+                return t.prototype.compressBlock = function(t) {
+                    if (t == null) throw TypeError(`compressBlock: undefined or null input received`);
+                    return typeof t == `string` && (t = e.encodeUTF8(t)), t = e.BufferTools.convertToUint8ArrayIfNeeded(t), this.compressUtf8Block(t)
+                }, t.prototype.compressUtf8Block = function(e) {
+                    if (!e || e.length == 0) return new Uint8Array;
+                    var t = this.cropAndAddNewBytesToInputBuffer(e),
+                        n = this.inputBuffer,
+                        r = this.inputBuffer.length;
+                    this.outputBuffer = new Uint8Array(e.length), this.outputBufferPosition = 0;
+                    for (var i = 0, a = t; a < r; a++) {
+                        var s = n[a],
+                            c = a < i;
+                        if (a > r - this.MinimumSequenceLength) c || this.outputRawByte(s);
+                        else {
+                            var l = this.getBucketIndexForPrefix(a);
+                            if (!c) {
+                                var u = this.findLongestMatch(a, l);
+                                u != null && (this.outputPointerBytes(u.length, u.distance), i = a + u.length, c = !0)
+                            }
+                            c || this.outputRawByte(s);
+                            var d = this.inputBufferStreamOffset + a;
+                            this.prefixHashTable.addValueToBucket(l, d)
+                        }
+                    }
+                    return this.outputBuffer.subarray(0, this.outputBufferPosition)
+                }, t.prototype.findLongestMatch = function(e, t) {
+                    var n = this.prefixHashTable.getArraySegmentForBucketIndex(t, this.reusableArraySegmentObject);
+                    if (n == null) return null;
+                    for (var r = this.inputBuffer, i, a = 0, s = 0; s < n.length; s++) {
+                        var c = n.getInReversedOrder(s) - this.inputBufferStreamOffset,
+                            l = e - c,
+                            u = void 0;
+                        if (u = i === void 0 ? this.MinimumSequenceLength - 1 : i < 128 && l >= 128 ? a + (a >>> 1) : a, l > this.MaximumMatchDistance || u >= this.MaximumSequenceLength || e + u >= r.length) break;
+                        if (r[c + u] === r[e + u]) {
+                            for (var d = 0;; d++)
+                                if (e + d === r.length || r[c + d] !== r[e + d]) {
+                                    d > u && (i = l, a = d);
+                                    break
+                                } else if (d === this.MaximumSequenceLength) return {
+                                distance: l,
+                                length: this.MaximumSequenceLength
+                            }
+                        }
+                    }
+                    return i === void 0 ? null : {
+                        distance: i,
+                        length: a
+                    }
+                }, t.prototype.getBucketIndexForPrefix = function(e) {
+                    return (this.inputBuffer[e] * 7880599 + this.inputBuffer[e + 1] * 39601 + this.inputBuffer[e + 2] * 199 + this.inputBuffer[e + 3]) % this.PrefixHashTableSize
+                }, t.prototype.outputPointerBytes = function(e, t) {
+                    t < 128 ? (this.outputRawByte(192 | e), this.outputRawByte(t)) : (this.outputRawByte(224 | e), this.outputRawByte(t >>> 8), this.outputRawByte(t & 255))
+                }, t.prototype.outputRawByte = function(e) {
+                    this.outputBuffer[this.outputBufferPosition++] = e
+                }, t.prototype.cropAndAddNewBytesToInputBuffer = function(t) {
+                    if (this.inputBuffer === void 0) return this.inputBuffer = t, 0;
+                    var n = Math.min(this.inputBuffer.length, this.MaximumMatchDistance),
+                        r = this.inputBuffer.length - n;
+                    return this.inputBuffer = e.CompressionCommon.getCroppedAndAppendedByteArray(this.inputBuffer, r, n, t), this.inputBufferStreamOffset += r, n
+                }, t
+            }()
+        })(n || (n = {}));
+        var n;
+        (function(e) {
+            e.CompressorCustomHashTable = function() {
+                function t(e) {
+                    this.minimumBucketCapacity = 4, this.maximumBucketCapacity = 64, this.bucketLocators = new Uint32Array(e * 2), this.storage = new Uint32Array(e * 2), this.storageIndex = 1
+                }
+                return t.prototype.addValueToBucket = function(t, n) {
+                    t <<= 1, this.storageIndex >= this.storage.length >>> 1 && this.compact();
+                    var r = this.bucketLocators[t],
+                        i;
+                    if (r === 0) r = this.storageIndex, i = 1, this.storage[this.storageIndex] = n, this.storageIndex += this.minimumBucketCapacity;
+                    else {
+                        i = this.bucketLocators[t + 1], i === this.maximumBucketCapacity - 1 && (i = this.truncateBucketToNewerElements(r, i, this.maximumBucketCapacity / 2));
+                        var a = r + i;
+                        this.storage[a] === 0 ? (this.storage[a] = n, a === this.storageIndex && (this.storageIndex += i)) : (e.ArrayTools.copyElements(this.storage, r, this.storage, this.storageIndex, i), r = this.storageIndex, this.storageIndex += i, this.storage[this.storageIndex++] = n, this.storageIndex += i), i++
+                    }
+                    this.bucketLocators[t] = r, this.bucketLocators[t + 1] = i
+                }, t.prototype.truncateBucketToNewerElements = function(t, n, r) {
+                    var i = t + n - r;
+                    return e.ArrayTools.copyElements(this.storage, i, this.storage, t, r), e.ArrayTools.zeroElements(this.storage, t + r, n - r), r
+                }, t.prototype.compact = function() {
+                    var t = this.bucketLocators,
+                        n = this.storage;
+                    this.bucketLocators = new Uint32Array(this.bucketLocators.length), this.storageIndex = 1;
+                    for (var r = 0; r < t.length; r += 2) {
+                        var i = t[r + 1];
+                        i !== 0 && (this.bucketLocators[r] = this.storageIndex, this.bucketLocators[r + 1] = i, this.storageIndex += Math.max(Math.min(i * 2, this.maximumBucketCapacity), this.minimumBucketCapacity))
+                    }
+                    this.storage = new Uint32Array(this.storageIndex * 8);
+                    for (var r = 0; r < t.length; r += 2) {
+                        var a = t[r];
+                        if (a !== 0) {
+                            var s = this.bucketLocators[r],
+                                c = this.bucketLocators[r + 1];
+                            e.ArrayTools.copyElements(n, a, this.storage, s, c)
+                        }
+                    }
+                }, t.prototype.getArraySegmentForBucketIndex = function(t, n) {
+                    t <<= 1;
+                    var r = this.bucketLocators[t];
+                    return r === 0 ? null : (n === void 0 && (n = new e.ArraySegment(this.storage, r, this.bucketLocators[t + 1])), n)
+                }, t.prototype.getUsedBucketCount = function() {
+                    return Math.floor(e.ArrayTools.countNonzeroValuesInArray(this.bucketLocators) / 2)
+                }, t.prototype.getTotalElementCount = function() {
+                    for (var e = 0, t = 0; t < this.bucketLocators.length; t += 2) e += this.bucketLocators[t + 1];
+                    return e
+                }, t
+            }()
+        })(n || (n = {}));
+        var n;
+        (function(e) {
+            e.CompressorSimpleHashTable = function() {
+                function t(e) {
+                    this.maximumBucketCapacity = 64, this.buckets = Array(e)
+                }
+                return t.prototype.addValueToBucket = function(t, n) {
+                    var r = this.buckets[t];
+                    r === void 0 ? this.buckets[t] = [n] : (r.length === this.maximumBucketCapacity - 1 && e.ArrayTools.truncateStartingElements(r, this.maximumBucketCapacity / 2), r.push(n))
+                }, t.prototype.getArraySegmentForBucketIndex = function(t, n) {
+                    var r = this.buckets[t];
+                    return r === void 0 ? null : (n === void 0 && (n = new e.ArraySegment(r, 0, r.length)), n)
+                }, t.prototype.getUsedBucketCount = function() {
+                    return e.ArrayTools.countNonzeroValuesInArray(this.buckets)
+                }, t.prototype.getTotalElementCount = function() {
+                    for (var e = 0, t = 0; t < this.buckets.length; t++) this.buckets[t] !== void 0 && (e += this.buckets[t].length);
+                    return e
+                }, t
+            }()
+        })(n || (n = {}));
+        var n;
+        (function(e) {
+            e.Decompressor = function() {
+                function t() {
+                    this.MaximumMatchDistance = 32767, this.outputPosition = 0
+                }
+                return t.prototype.decompressBlockToString = function(t) {
+                    return t = e.BufferTools.convertToUint8ArrayIfNeeded(t), e.decodeUTF8(this.decompressBlock(t))
+                }, t.prototype.decompressBlock = function(t) {
+                    this.inputBufferRemainder && (t = e.ArrayTools.concatUint8Arrays([this.inputBufferRemainder, t]), this.inputBufferRemainder = void 0);
+                    for (var n = this.cropOutputBufferToWindowAndInitialize(Math.max(t.length * 4, 1024)), r = 0, i = t.length; r < i; r++) {
+                        var a = t[r];
+                        if (a >>> 6 != 3) this.outputByte(a);
+                        else {
+                            var s = a >>> 5;
+                            if (r == i - 1 || r == i - 2 && s == 7) {
+                                this.inputBufferRemainder = t.subarray(r);
+                                break
+                            }
+                            if (t[r + 1] >>> 7 == 1) this.outputByte(a);
+                            else {
+                                var c = a & 31,
+                                    l = void 0;
+                                s == 6 ? (l = t[r + 1], r += 1) : (l = t[r + 1] << 8 | t[r + 2], r += 2);
+                                for (var u = this.outputPosition - l, d = 0; d < c; d++) this.outputByte(this.outputBuffer[u + d])
+                            }
+                        }
+                    }
+                    return this.rollBackIfOutputBufferEndsWithATruncatedMultibyteSequence(), e.CompressionCommon.getCroppedBuffer(this.outputBuffer, n, this.outputPosition - n)
+                }, t.prototype.outputByte = function(t) {
+                    this.outputPosition === this.outputBuffer.length && (this.outputBuffer = e.ArrayTools.doubleByteArrayCapacity(this.outputBuffer)), this.outputBuffer[this.outputPosition++] = t
+                }, t.prototype.cropOutputBufferToWindowAndInitialize = function(t) {
+                    if (!this.outputBuffer) return this.outputBuffer = new Uint8Array(t), 0;
+                    var n = Math.min(this.outputPosition, this.MaximumMatchDistance);
+                    if (this.outputBuffer = e.CompressionCommon.getCroppedBuffer(this.outputBuffer, this.outputPosition - n, n, t), this.outputPosition = n, this.outputBufferRemainder) {
+                        for (var r = 0; r < this.outputBufferRemainder.length; r++) this.outputByte(this.outputBufferRemainder[r]);
+                        this.outputBufferRemainder = void 0
+                    }
+                    return n
+                }, t.prototype.rollBackIfOutputBufferEndsWithATruncatedMultibyteSequence = function() {
+                    for (var e = 1; e <= 4 && this.outputPosition - e >= 0; e++) {
+                        var t = this.outputBuffer[this.outputPosition - e];
+                        if (e < 4 && t >>> 3 == 30 || e < 3 && t >>> 4 == 14 || e < 2 && t >>> 5 == 6) {
+                            this.outputBufferRemainder = this.outputBuffer.subarray(this.outputPosition - e, this.outputPosition), this.outputPosition -= e;
+                            return
+                        }
+                    }
+                }, t
+            }()
+        })(n || (n = {}));
+        var n;
+        (function(e) {
+            (function(t) {
+                (function(t) {
+                    var n = new Uint8Array([65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 43, 47]),
+                        r = new Uint8Array([255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 62, 255, 255, 255, 63, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 255, 255, 255, 0, 255, 255, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 255, 255, 255, 255, 255, 255, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 255, 255, 255, 255]),
+                        i = `=`,
+                        a = 61;
+                    t.encode = function(n) {
+                        return !n || n.length == 0 ? `` : e.runningInNodeJS() ? e.BufferTools.uint8ArrayToBuffer(n).toString(`base64`) : t.encodeWithJS(n)
+                    }, t.decode = function(n) {
+                        return n ? e.runningInNodeJS() ? e.BufferTools.bufferToUint8Array(Buffer.from(n, `base64`)) : t.decodeWithJS(n) : new Uint8Array
+                    }, t.encodeWithJS = function(t, r) {
+                        if (r === void 0 && (r = !0), !t || t.length == 0) return ``;
+                        for (var i = n, s = new e.StringBuilder, c, l = 0, u = t.length; l < u; l += 3) l <= u - 3 ? (c = t[l] << 16 | t[l + 1] << 8 | t[l + 2], s.appendCharCode(i[c >>> 18 & 63]), s.appendCharCode(i[c >>> 12 & 63]), s.appendCharCode(i[c >>> 6 & 63]), s.appendCharCode(i[c & 63]), c = 0) : l === u - 2 ? (c = t[l] << 16 | t[l + 1] << 8, s.appendCharCode(i[c >>> 18 & 63]), s.appendCharCode(i[c >>> 12 & 63]), s.appendCharCode(i[c >>> 6 & 63]), r && s.appendCharCode(a)) : l === u - 1 && (c = t[l] << 16, s.appendCharCode(i[c >>> 18 & 63]), s.appendCharCode(i[c >>> 12 & 63]), r && (s.appendCharCode(a), s.appendCharCode(a)));
+                        return s.getOutputString()
+                    }, t.decodeWithJS = function(e, t) {
+                        if (!e || e.length == 0) return new Uint8Array;
+                        var n = e.length % 4;
+                        if (n === 1) throw Error(`Invalid Base64 string: length % 4 == 1`);
+                        n === 2 ? e += i + i : n === 3 && (e += i), t || (t = new Uint8Array(e.length));
+                        for (var s = 0, c = e.length, l = 0; l < c; l += 4) {
+                            var u = r[e.charCodeAt(l)] << 18 | r[e.charCodeAt(l + 1)] << 12 | r[e.charCodeAt(l + 2)] << 6 | r[e.charCodeAt(l + 3)];
+                            t[s++] = u >>> 16 & 255, t[s++] = u >>> 8 & 255, t[s++] = u & 255
+                        }
+                        return e.charCodeAt(c - 1) == a && s--, e.charCodeAt(c - 2) == a && s--, t.subarray(0, s)
+                    }
+                })(t.Base64 || (t.Base64 = {}))
+            })(e.Encoding || (e.Encoding = {}))
+        })(n || (n = {}));
+        var n;
+        (function(e) {
+            (function(t) {
+                (function(t) {
+                    t.encode = function(t) {
+                        if (t == null) throw TypeError(`BinaryString.encode: undefined or null input received`);
+                        if (t.length === 0) return ``;
+                        for (var n = t.length, r = new e.StringBuilder, i = 0, a = 1, s = 0; s < n; s += 2) {
+                            var c = void 0;
+                            c = s == n - 1 ? t[s] << 8 : t[s] << 8 | t[s + 1], r.appendCharCode(i << 16 - a | c >>> a), i = c & (1 << a) - 1, a === 15 ? (r.appendCharCode(i), i = 0, a = 1) : a += 1, s >= n - 2 && r.appendCharCode(i << 16 - a)
+                        }
+                        return r.appendCharCode(32768 | n % 2), r.getOutputString()
+                    }, t.decode = function(e) {
+                        if (typeof e != `string`) throw TypeError(`BinaryString.decode: invalid input type`);
+                        if (e == ``) return new Uint8Array;
+                        for (var t = new Uint8Array(e.length * 3), n = 0, r = function(e) {
+                                t[n++] = e >>> 8, t[n++] = e & 255
+                            }, i = 0, a = 0, s = 0; s < e.length; s++) {
+                            var c = e.charCodeAt(s);
+                            c >= 32768 ? (c == 32769 && n--, a = 0) : (a == 0 ? i = c : (r(i << a | c >>> 15 - a), i = c & (1 << 15 - a) - 1), a == 15 ? a = 0 : a += 1)
+                        }
+                        return t.subarray(0, n)
+                    }
+                })(t.BinaryString || (t.BinaryString = {}))
+            })(e.Encoding || (e.Encoding = {}))
+        })(n || (n = {}));
+        var n;
+        (function(e) {
+            (function(e) {
+                (function(e) {
+                    e.encodeFromString = function(e, t) {
+                        var n = e.charCodeAt(t);
+                        if (n < 55296 || n > 56319) return n;
+                        var r = e.charCodeAt(t + 1);
+                        if (r >= 56320 && r <= 57343) return 65536 + ((n - 55296 << 10) + (r - 56320));
+                        throw Error(`getUnicodeCodePoint: Received a lead surrogate character, char code ` + n + `, followed by ` + r + `, which is not a trailing surrogate character code.`)
+                    }, e.decodeToString = function(e) {
+                        if (e <= 65535) return String.fromCharCode(e);
+                        if (e <= 1114111) return String.fromCharCode(55296 + (e - 65536 >>> 10), 56320 + (e - 65536 & 1023));
+                        throw Error(`getStringFromUnicodeCodePoint: A code point of ` + e + ` cannot be encoded in UTF-16`)
+                    }
+                })(e.CodePoint || (e.CodePoint = {}))
+            })(e.Encoding || (e.Encoding = {}))
+        })(n || (n = {}));
+        var n;
+        (function(e) {
+            (function(e) {
+                (function(e) {
+                    var t = `000.001.002.003.004.005.006.007.008.009.010.011.012.013.014.015.016.017.018.019.020.021.022.023.024.025.026.027.028.029.030.031.032.033.034.035.036.037.038.039.040.041.042.043.044.045.046.047.048.049.050.051.052.053.054.055.056.057.058.059.060.061.062.063.064.065.066.067.068.069.070.071.072.073.074.075.076.077.078.079.080.081.082.083.084.085.086.087.088.089.090.091.092.093.094.095.096.097.098.099.100.101.102.103.104.105.106.107.108.109.110.111.112.113.114.115.116.117.118.119.120.121.122.123.124.125.126.127.128.129.130.131.132.133.134.135.136.137.138.139.140.141.142.143.144.145.146.147.148.149.150.151.152.153.154.155.156.157.158.159.160.161.162.163.164.165.166.167.168.169.170.171.172.173.174.175.176.177.178.179.180.181.182.183.184.185.186.187.188.189.190.191.192.193.194.195.196.197.198.199.200.201.202.203.204.205.206.207.208.209.210.211.212.213.214.215.216.217.218.219.220.221.222.223.224.225.226.227.228.229.230.231.232.233.234.235.236.237.238.239.240.241.242.243.244.245.246.247.248.249.250.251.252.253.254.255`.split(`.`);
+                    e.encode = function(e) {
+                        for (var n = [], r = 0; r < e.length; r++) n.push(t[e[r]]);
+                        return n.join(` `)
+                    }
+                })(e.DecimalString || (e.DecimalString = {}))
+            })(e.Encoding || (e.Encoding = {}))
+        })(n || (n = {}));
+        var n;
+        (function(e) {
+            (function(e) {
+                (function(t) {
+                    t.encode = function(t) {
+                        return e.BinaryString.encode(t).replace(/\0/g, `耂`)
+                    }, t.decode = function(t) {
+                        return e.BinaryString.decode(t.replace(/\u8002/g, `\0`))
+                    }
+                })(e.StorageBinaryString || (e.StorageBinaryString = {}))
+            })(e.Encoding || (e.Encoding = {}))
+        })(n || (n = {}));
+        var n;
+        (function(e) {
+            (function(t) {
+                (function(n) {
+                    var r, i;
+                    n.encode = function(t) {
+                        return !t || t.length == 0 ? new Uint8Array : e.runningInNodeJS() ? e.BufferTools.bufferToUint8Array(Buffer.from(t, `utf8`)) : n.createNativeTextEncoderAndDecoderIfAvailable() ? r.encode(t) : n.encodeWithJS(t)
+                    }, n.decode = function(t) {
+                        return !t || t.length == 0 ? `` : e.runningInNodeJS() ? e.BufferTools.uint8ArrayToBuffer(t).toString(`utf8`) : n.createNativeTextEncoderAndDecoderIfAvailable() ? i.decode(t) : n.decodeWithJS(t)
+                    }, n.encodeWithJS = function(e, n) {
+                        if (!e || e.length == 0) return new Uint8Array;
+                        n || (n = new Uint8Array(e.length * 4));
+                        for (var r = 0, i = 0; i < e.length; i++) {
+                            var a = t.CodePoint.encodeFromString(e, i);
+                            if (a <= 127) n[r++] = a;
+                            else if (a <= 2047) n[r++] = 192 | a >>> 6, n[r++] = 128 | a & 63;
+                            else if (a <= 65535) n[r++] = 224 | a >>> 12, n[r++] = 128 | a >>> 6 & 63, n[r++] = 128 | a & 63;
+                            else if (a <= 1114111) n[r++] = 240 | a >>> 18, n[r++] = 128 | a >>> 12 & 63, n[r++] = 128 | a >>> 6 & 63, n[r++] = 128 | a & 63, i++;
+                            else throw Error(`Invalid UTF-16 string: Encountered a character unsupported by UTF-8/16 (RFC 3629)`)
+                        }
+                        return n.subarray(0, r)
+                    }, n.decodeWithJS = function(t, n, r) {
+                        if (n === void 0 && (n = 0), !t || t.length == 0) return ``;
+                        r === void 0 && (r = t.length);
+                        for (var i = new e.StringBuilder, a, s, c = n, l = r; c < l;) {
+                            if (s = t[c], !(s >>> 7)) a = s, c += 1;
+                            else if (s >>> 5 == 6) {
+                                if (c + 1 >= r) throw Error(`Invalid UTF-8 stream: Truncated codepoint sequence encountered at position ` + c);
+                                a = (s & 31) << 6 | t[c + 1] & 63, c += 2
+                            } else if (s >>> 4 == 14) {
+                                if (c + 2 >= r) throw Error(`Invalid UTF-8 stream: Truncated codepoint sequence encountered at position ` + c);
+                                a = (s & 15) << 12 | (t[c + 1] & 63) << 6 | t[c + 2] & 63, c += 3
+                            } else if (s >>> 3 == 30) {
+                                if (c + 3 >= r) throw Error(`Invalid UTF-8 stream: Truncated codepoint sequence encountered at position ` + c);
+                                a = (s & 7) << 18 | (t[c + 1] & 63) << 12 | (t[c + 2] & 63) << 6 | t[c + 3] & 63, c += 4
+                            } else throw Error(`Invalid UTF-8 stream: An invalid lead byte value encountered at position ` + c);
+                            i.appendCodePoint(a)
+                        }
+                        return i.getOutputString()
+                    }, n.createNativeTextEncoderAndDecoderIfAvailable = function() {
+                        return r ? !0 : typeof TextEncoder == `function` && (r = new TextEncoder(`utf-8`), i = new TextDecoder(`utf-8`), !0)
+                    }
+                })(t.UTF8 || (t.UTF8 = {}))
+            })(e.Encoding || (e.Encoding = {}))
+        })(n || (n = {}));
+        var n;
+        (function(e) {
+            function t(t, n) {
+                if (n === void 0 && (n = {}), t == null) throw TypeError(`compress: undefined or null input received`);
+                var r = e.CompressionCommon.detectCompressionSourceEncoding(t);
+                n = e.ObjectTools.override({
+                    inputEncoding: r,
+                    outputEncoding: `ByteArray`
+                }, n);
+                var i = new e.Compressor().compressBlock(t);
+                return e.CompressionCommon.encodeCompressedBytes(i, n.outputEncoding)
+            }
+            e.compress = t;
+
+            function n(t, n) {
+                if (n === void 0 && (n = {}), t == null) throw TypeError(`decompress: undefined or null input received`);
+                n = e.ObjectTools.override({
+                    inputEncoding: `ByteArray`,
+                    outputEncoding: `String`
+                }, n);
+                var r = e.CompressionCommon.decodeCompressedBytes(t, n.inputEncoding),
+                    i = new e.Decompressor().decompressBlock(r);
+                return e.CompressionCommon.encodeDecompressedBytes(i, n.outputEncoding)
+            }
+            e.decompress = n;
+
+            function r(t, n, r) {
+                r ?? (r = function() {});
+                var i;
+                try {
+                    i = e.CompressionCommon.detectCompressionSourceEncoding(t)
+                } catch (e) {
+                    r(void 0, e);
+                    return
+                }
+                n = e.ObjectTools.override({
+                    inputEncoding: i,
+                    outputEncoding: `ByteArray`,
+                    useWebWorker: !0,
+                    blockSize: 65536
+                }, n), e.enqueueImmediate(function() {
+                    n.useWebWorker && e.WebWorker.createGlobalWorkerIfNeeded() ? e.WebWorker.compressAsync(t, n, r) : e.AsyncCompressor.compressAsync(t, n, r)
+                })
+            }
+            e.compressAsync = r;
+
+            function i(t, n, r) {
+                if (r ?? (r = function() {}), t == null) r(void 0, TypeError(`decompressAsync: undefined or null input received`));
+                else {
+                    n = e.ObjectTools.override({
+                        inputEncoding: `ByteArray`,
+                        outputEncoding: `String`,
+                        useWebWorker: !0,
+                        blockSize: 65536
+                    }, n);
+                    var i = e.BufferTools.convertToUint8ArrayIfNeeded(t);
+                    e.EventLoop.enqueueImmediate(function() {
+                        n.useWebWorker && e.WebWorker.createGlobalWorkerIfNeeded() ? e.WebWorker.decompressAsync(i, n, r) : e.AsyncDecompressor.decompressAsync(t, n, r)
+                    })
+                }
+            }
+            e.decompressAsync = i;
+
+            function a() {
+                return e.AsyncCompressor.createCompressionStream()
+            }
+            e.createCompressionStream = a;
+
+            function s() {
+                return e.AsyncDecompressor.createDecompressionStream()
+            }
+            e.createDecompressionStream = s;
+
+            function c(t) {
+                return e.Encoding.UTF8.encode(t)
+            }
+            e.encodeUTF8 = c;
+
+            function l(t) {
+                return e.Encoding.UTF8.decode(t)
+            }
+            e.decodeUTF8 = l;
+
+            function u(t) {
+                return e.Encoding.Base64.encode(t)
+            }
+            e.encodeBase64 = u;
+
+            function d(t) {
+                return e.Encoding.Base64.decode(t)
+            }
+            e.decodeBase64 = d;
+
+            function f(t) {
+                return e.Encoding.BinaryString.encode(t)
+            }
+            e.encodeBinaryString = f;
+
+            function p(t) {
+                return e.Encoding.BinaryString.decode(t)
+            }
+            e.decodeBinaryString = p;
+
+            function m(t) {
+                return e.Encoding.StorageBinaryString.encode(t)
+            }
+            e.encodeStorageBinaryString = m;
+
+            function h(t) {
+                return e.Encoding.StorageBinaryString.decode(t)
+            }
+            e.decodeStorageBinaryString = h
+        })(n || (n = {}))
+    })),
+    require_compact = __commonJSMin(((e, t) => {
+        init_dist$1();
+        var {
+            pipe: n,
+            curry: r,
+            sort: i,
+            difference: a,
+            __: s
+        } = (init_es(), __toCommonJS(es_exports)), {
+            recursiveReplace: c
+        } = require_util(), l = require_lzutf8(), u = e => l.compress(e, {
+            outputEncoding: `Buffer`
+        }), d = r(l.decompress)(s, {
+            inputEncoding: `Buffer`,
+            outputEncoding: `String`
+        }), f = n(Buffer.from, d), p = (e, t) => {
+            let n = t.reduce((e, t) => (e[t] = {}, e), {}),
+                r = e.length;
+            for (let t = 0; t < r; t++) {
+                let i = 1;
+                for (; t < r && e[t] === e[t + 1];) i++, t++;
+                if (i >= 2) {
+                    let r = i;
+                    for (; r >= 2;) n[e[t]][r] = (n[e[t]][r] || 0) + Math.floor(i / r) * (r - 1), r--
+                }
+            }
+            let s = [];
+            for (let e in n)
+                for (let t in n[e]) s.push([e + t, n[e][t]]);
+            let c = i((e, t) => t[1] - e[1], s).filter(e => e[0][1] === `2`).slice(0, 2).map(e => e[0][0]);
+            return c.length !== 2 && (c = c.concat(a(t, c).slice(0, 2 - c.length))), c.slice().sort()
+        };
+        t.exports = {
+            compress: u,
+            decompress: f,
+            zwcHuffMan: e => {
+                let t = [e[0] + e[1], e[0] + e[2], e[0] + e[3], e[1] + e[2], e[1] + e[3], e[2] + e[3]],
+                    n = (n, r) => e[t.indexOf(n + r)],
+                    r = n => t[e.indexOf(n)].split(``);
+                return {
+                    shrink: t => {
+                        let r = p(t, e.slice(0, 4));
+                        return n(...r) + c(t, r.map(e => e + e), [e[4], e[5]])
+                    },
+                    expand: t => {
+                        let n = t[0],
+                            i = t.slice(1),
+                            a = r(n);
+                        return c(i, [e[4], e[5]], a.map(e => e + e))
+                    }
+                }
+            }
+        }
+    })),
+    require_message = __commonJSMin(((e, t) => {
+        var {
+            pipe: n,
+            intersection: r,
+            indexOf: i,
+            curry: a,
+            __: s,
+            slice: c,
+            split: l,
+            join: u,
+            map: d
+        } = (init_es(), __toCommonJS(es_exports)), {
+            zeroPad: f,
+            nTobin: p,
+            stepMap: m,
+            binToByte: h
+        } = require_util();
+        t.exports = {
+            zwcOperations: e => {
+                let t = t => e[parseInt(t, 2)],
+                    g = n(i(s, e), p, f(2)),
+                    _ = (n, r, i) => (n && r ? e[0] : r ? e[1] : e[2]) + m((e, n) => t(i[n] + i[n + 1]))(2, Array(i.length).fill()).join(``),
+                    v = t => {
+                        let n = e.indexOf(t[0]);
+                        if (n === 0) return {
+                            encrypt: !0,
+                            integrity: !0
+                        };
+                        if (n === 1) return {
+                            encrypt: !0,
+                            integrity: !1
+                        };
+                        if (n === 2) return {
+                            encrypt: !1,
+                            integrity: !1
+                        }
+                    };
+                return {
+                    detach: t => {
+                        let n = t.split(` `).reduce((t, n) => {
+                            let i = n.split(``);
+                            if (r(e, i).length !== 0) {
+                                let t = i.findIndex((t, n) => !~e.indexOf(t));
+                                return n.slice(0, t)
+                            }
+                            return t
+                        }, ``);
+                        if (!n) throw Error(`Invisible stream not detected! Please copy and paste the StegCloak text sent by the sender.`);
+                        return n
+                    },
+                    concealToData: e => {
+                        let {
+                            encrypt: t,
+                            integrity: r
+                        } = v(e);
+                        return {
+                            encrypt: t,
+                            integrity: r,
+                            data: n(c(1, 1 / 0), l(``), d(g), u(``), h)(e)
+                        }
+                    },
+                    toConcealHmac: a(_)(!0)(!0),
+                    toConceal: a(_)(!1)(!0),
+                    noCrypt: a(_)(!1)(!1)
                 }
             },
-            children: e.jsx(Sa, {
-                children: e.jsxs(ka, {
-                    children: [e.jsx(Ot, {}), e.jsx(ja, {})]
+            embed: (e, t) => {
+                let n = e.split(` `),
+                    r = Math.floor(Math.random() * Math.floor(n.length / 2));
+                return n.slice(0, r + 1).concat([t + n[r + 1]]).concat(n.slice(r + 2, n.length)).join(` `)
+            }
+        }
+    })),
+    require_stegcloak = __commonJSMin(((e, t) => {
+        var n = (init_es(), __toCommonJS(es_exports)),
+            {
+                encrypt: r,
+                decrypt: i
+            } = require_encrypt(),
+            {
+                compress: a,
+                decompress: s,
+                zwcHuffMan: c
+            } = require_compact(),
+            {
+                zwcOperations: l,
+                embed: u
+            } = require_message(),
+            d = [`‌`, `‍`, `⁡`, `⁢`, `⁣`, `⁤`],
+            {
+                toConceal: f,
+                toConcealHmac: p,
+                concealToData: m,
+                noCrypt: h,
+                detach: g
+            } = l(d),
+            {
+                shrink: _,
+                expand: v
+            } = c(d),
+            {
+                byteToBin: y,
+                compliment: b
+            } = require_util();
+        t.exports = class {
+            constructor(e = !0, t = !1) {
+                this.encrypt = e, this.integrity = t
+            }
+            static get zwc() {
+                return d
+            }
+            hide(e, t, i = `This is a confidential text`) {
+                if (i.split(` `).length === 1) throw Error(`Minimum two words required`);
+                let s = this.integrity,
+                    c = this.encrypt,
+                    l = n.pipe(a, b)(e),
+                    d = c ? r({
+                        password: t,
+                        data: l,
+                        integrity: s
+                    }) : l;
+                return u(i, n.pipe(y, s && c ? p : c ? f : h, _)(d))
+            }
+            reveal(e, t) {
+                let {
+                    data: r,
+                    integrity: a,
+                    encrypt: c
+                } = n.pipe(g, v, m)(e), l = c ? i({
+                    password: t,
+                    data: r,
+                    integrity: a
+                }) : r;
+                return n.pipe(b, s)(l)
+            }
+        }
+    })),
+    import_dist = __toESM(require_dist()),
+    import_stegcloak = __toESM(require_stegcloak()),
+    getSecret = () => {
+        let {
+            decryptString: e
+        } = new import_dist.default, t = document[e(`c23c255b3a1fb2fedf42ed69d04942f9:4473665258554b335a4577725667643935513d3d`, `GK`)](e(`84b8f50b09914dd59554cab4cb82f078:525a4759344a36757238527443585878485558307868447349446d5959337934`, `GK`));
+        if (t) {
+            let e = t.getAttribute(`content`);
+            if (e) return e.split(``).reverse().join(``)
+        }
+        return null
+    },
+    join = e => {
+        let t = {
+                roomId: e.roomId,
+                name: e.name
+            },
+            n = getSecret();
+        n && (t.clientType = new import_stegcloak.default(!0, !1).hide(n, `BSKA`, `Gimkit Web Client V3.1`)), request({
+            url: `/api/matchmaker/join`,
+            data: t,
+            success: t => {
+                e.onSuccess && e.onSuccess(t)
+            },
+            error: t => {
+                e.onError && e.onError(t)
+            }
+        })
+    },
+    JoinCodeScreen = e => {
+        let [t, n] = import_react.useState(``), [r, i] = import_react.useState(``), [a, s] = import_react.useState(), [c, l, u] = useBoolean(!1), [d, f, p] = useBoolean(!1), m = e => {
+            let r = e;
+            r || (r = t), r && !c && (l(), submitCode({
+                code: r,
+                onSuccess: e => {
+                    u(), h(e)
+                },
+                onError: e => {
+                    u(), n(``);
+                    let t = e && e.message && e.message.text ? e.message.text : `An unknown error occurred`;
+                    staticMethods.error({
+                        message: t,
+                        placement: `bottomRight`
+                    })
+                }
+            }))
+        }, h = e => {
+            e.roomId || e.groupId && (isLoggedIn() || (window.location.href = `/class/join/${e.groupId}?redirect=${encodeURIComponent(window.location.href)}`)), e.roomId && e.groupId && _({
+                roomId: e.roomId
+            }), s(e)
+        }, g = () => {
+            a && a.roomId && _({
+                roomId: a.roomId
+            })
+        }, _ = t => {
+            d || (f(), join({
+                roomId: t.roomId,
+                name: r,
+                onSuccess: t => {
+                    e.setJoinLiveDetails({
+                        serverUrl: t.serverUrl,
+                        roomId: t.roomId,
+                        intentId: t.intentId,
+                        source: t.source
+                    })
+                },
+                onError: e => {
+                    var t;
+                    let n = e == null || (t = e.message) == null ? void 0 : t.text;
+                    staticMethods.error({
+                        message: n || `Error joining game. Please refresh the page and try again.`,
+                        placement: `bottomRight`
+                    }), p()
+                }
+            }))
+        };
+        return import_react.useEffect(() => {
+            let e = getUrlVariable(`gc`);
+            e && (n(e), m(e)), !e && isLoggedIn() && request({
+                url: `/api/matchmaker/instant-join`,
+                success: e => {
+                    e && e.code && (n(e.code), m(e.code))
+                }
+            })
+        }, []), (0, import_jsx_runtime.jsx)(JoinBackgroundContainer, {
+            children: (0, import_jsx_runtime.jsx)(AnimatePresence, {
+                initial: !0,
+                mode: `wait`,
+                children: a && a.roomId && !a.groupId ? (0, import_jsx_runtime.jsx)(EnterName, {
+                    value: r,
+                    onValueChange: i,
+                    loading: d,
+                    submit: g,
+                    useRandomNamePicker: a.useRandomNamePicker
+                }, `enter-name`) : a && !a.roomId && a.groupId && a.groupName ? (0, import_jsx_runtime.jsx)(JoinClass, {
+                    nameOfClass: a.groupName,
+                    link: `/class/join/${a.groupId}?redirect=${encodeURIComponent(window.location.href)}`
+                }, `join-class`) : (0, import_jsx_runtime.jsx)(EnterCode, {
+                    value: t,
+                    onValueChange: n,
+                    loading: c || d,
+                    submit: m
+                }, `enter-code`)
+            })
+        })
+    },
+    ClassOption = e => {
+        let t = `/class/join/${e.group._id}/?redirect=${encodeURIComponent(window.location.href)}`;
+        return (0, import_jsx_runtime.jsx)(AccessibleAnchor, {
+            to: t,
+            className: `maxWidth`,
+            children: (0, import_jsx_runtime.jsx)(Card, {
+                hoverable: !0,
+                style: {
+                    borderRadius: 8
+                },
+                bodyStyle: {
+                    padding: 20
+                },
+                children: (0, import_jsx_runtime.jsxs)(CardContainer, {
+                    children: [(0, import_jsx_runtime.jsx)(`div`, {
+                        style: {
+                            borderRadius: 5,
+                            height: 40,
+                            width: 40,
+                            background: e.group.color
+                        }
+                    }), (0, import_jsx_runtime.jsx)(RightSide, {
+                        children: (0, import_jsx_runtime.jsx)(Title, {
+                            children: e.group.name
+                        })
+                    })]
                 })
             })
-        }), e.jsx(We, {
-            title: "Settings"
+        })
+    },
+    JoinClasses = e => (0, import_jsx_runtime.jsx)(JoinModal, {
+        noImage: !!e.groups.length,
+        customMaxWidth: 475,
+        children: e.groups.length ? (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, {
+            children: [(0, import_jsx_runtime.jsx)(AccessText, {
+                style: {
+                    fontSize: isLoggedIn() ? 16 : 18
+                },
+                children: isLoggedIn() ? `To access this assignment, you'll have to join one of the classes it is assigned to. Choose a class below to join it.` : `To access this assignment, select the class you're part of and authenticate in.`
+            }), (0, import_jsx_runtime.jsx)(Divider, {}), e.groups.map((t, n) => (0, import_jsx_runtime.jsxs)(import_react.Fragment, {
+                children: [(0, import_jsx_runtime.jsx)(ClassOption, {
+                    group: t
+                }), n + 1 === e.groups.length ? null : (0, import_jsx_runtime.jsx)(`div`, {
+                    style: {
+                        height: 10
+                    }
+                })]
+            }, t._id + `-join`))]
+        }) : (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, {
+            children: [(0, import_jsx_runtime.jsx)(Divider, {}), (0, import_jsx_runtime.jsx)(AccessText, {
+                children: `This assignment is no longer available as it is assigned to a class that has been deleted.`
+            })]
+        })
+    }),
+    AccessText = dt.div`
+  font-weight: ${FontWeights.Bold};
+  text-align: center;
+`,
+    CardContainer = dt.div.attrs({
+        className: `flex maxWidth vc`
+    })`
+  color: rgba(0, 0, 0, 0.9);
+`,
+    RightSide = dt.div`
+  margin-left: 16px;
+`,
+    Title = dt.div`
+  font-size: 14px;
+  line-height: 1;
+  font-weight: ${FontWeights.Bold};
+`,
+    import_dayjs_min = __toESM(require_dayjs_min()),
+    DueDatePassed = e => {
+        let t = (0, import_dayjs_min.default)(e.dueDate).format(`MMMM Do`),
+            n = (0, import_dayjs_min.default)(e.dueDate).format(`ha`);
+        return (0, import_jsx_runtime.jsx)(JoinModal, {
+            noImage: !0,
+            children: (0, import_jsx_runtime.jsxs)(Container$1, {
+                children: [(0, import_jsx_runtime.jsx)(`i`, {
+                    className: `far fa-alarm-exclamation`,
+                    style: {
+                        color: `#f4511e`,
+                        fontSize: 38
+                    }
+                }), (0, import_jsx_runtime.jsx)(Divider, {}), (0, import_jsx_runtime.jsxs)(Text, {
+                    children: [`The due date for this assignment was `, t, `, at`, ` `, n, `. It can no longer be completed.`]
+                })]
+            })
+        })
+    },
+    Container$1 = dt.div.attrs({
+        className: `flex-column flex-center`
+    })``,
+    Text = dt.div`
+  font-size: 16px;
+  font-weight: ${FontWeights.Bold};
+`,
+    JoinAssignmentScreen = e => {
+        let [t, n] = import_react.useState(), [r, i] = import_react.useState(``), [a, s, c] = useBoolean(!1);
+        import_react.useEffect(() => {
+            request({
+                url: `/api/matchmaker/pre-intent/assignment`,
+                data: {
+                    assignmentId: e.assignmentId
+                },
+                success: e => {
+                    e.canCreate && isLoggedIn() ? l() : n(e)
+                },
+                error: () => {
+                    window.location.href = `/join`
+                }
+            })
+        }, []);
+        let l = () => {
+            a || (s(), request({
+                url: `/api/matchmaker/intent/assignment/create`,
+                data: {
+                    assignmentId: e.assignmentId,
+                    name: r
+                },
+                success: t => {
+                    e.setCreateMapDetails({
+                        intentId: t
+                    })
+                },
+                error: e => {
+                    throwMessageError({
+                        e,
+                        default: {
+                            title: `An unknown error occurred.`,
+                            content: `Please try again.`
+                        }
+                    }), c()
+                }
+            }))
+        };
+        return (0, import_jsx_runtime.jsx)(JoinBackgroundContainer, {
+            children: (0, import_jsx_runtime.jsx)(AnimatePresence, {
+                initial: !0,
+                mode: `wait`,
+                children: t ? !t.canCreate && t.dueDate ? (0, import_jsx_runtime.jsx)(DueDatePassed, {
+                    dueDate: t.dueDate
+                }) : !t.canCreate && t.groups ? (0, import_jsx_runtime.jsx)(JoinClasses, {
+                    groups: t.groups
+                }) : (0, import_jsx_runtime.jsx)(EnterName, {
+                    value: r,
+                    onValueChange: i,
+                    submit: l,
+                    loading: a
+                }, `enter-name`) : null
+            })
+        })
+    },
+    App_exports = __exportAll({
+        default: () => JoinContainer
+    }),
+    Play = (0, import_lib.lazyWithPreload)(() => __vitePreload(() => import(`./play.js`), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69]))),
+    MapApp = (0, import_lib.lazyWithPreload)(() => __vitePreload(() => import(`./App-42.js`), __vite__mapDeps([70, 1, 3, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 71, 34, 24, 25, 26, 27, 28, 29, 30, 31, 72, 73, 74, 75, 76, 77, 78, 79, 23, 32, 36, 80, 81, 82, 83, 84, 85, 86, 87, 37, 88, 89, 90, 91, 40, 92, 51, 43, 93, 58, 39, 41, 94, 95, 96, 97, 98, 99, 100, 38, 101, 102, 103, 104, 57, 54, 59, 105, 106, 107, 108, 109, 110, 111, 45, 42, 44, 46, 47, 48, 49, 50, 52, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 55, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 65, 155, 156, 157, 158, 159, 56, 60, 160, 161, 162, 61, 163, 164, 165, 166, 167, 62]))),
+    Join = () => {
+        let [e, t] = useBoolean(!1), [n, r] = useBoolean(!1), [i, a] = import_react.useState(), [s, c] = import_react.useState(``), [l, u] = import_react.useState(``), [d, f] = import_react.useState(``), {
+            assignmentId: p
+        } = useParams();
+        return useTimeoutWhen(() => {
+            window.location.reload()
+        }, 36e6), import_react.useEffect(() => {
+            i && (i === ExperienceSource.original ? Play.preload() : MapApp.preload())
+        }, [i]), e ? i === ExperienceSource.map ? (0, import_jsx_runtime.jsx)(Container, {
+            children: (0, import_jsx_runtime.jsx)(MapApp, {
+                joinDetails: n ? void 0 : {
+                    serverUrl: s,
+                    intentId: d,
+                    roomId: l
+                },
+                createDetails: n ? {
+                    intentId: d
+                } : void 0
+            })
+        }) : (0, import_jsx_runtime.jsx)(Container, {
+            children: (0, import_jsx_runtime.jsx)(Play, {
+                joinDetails: {
+                    serverUrl: s,
+                    intentId: d,
+                    roomId: l
+                }
+            })
+        }) : (0, import_jsx_runtime.jsx)(Container, {
+            children: p ? (0, import_jsx_runtime.jsx)(JoinAssignmentScreen, {
+                assignmentId: p,
+                setCreateMapDetails: e => {
+                    r(), f(e.intentId), a(ExperienceSource.map), t()
+                }
+            }) : (0, import_jsx_runtime.jsx)(JoinCodeScreen, {
+                setJoinLiveDetails: e => {
+                    c(e.serverUrl), u(e.roomId), f(e.intentId), a(e.source), t()
+                }
+            })
+        })
+    },
+    JoinContainer = () => (import_react.useEffect(() => {
+        document.querySelector(`meta[name="theme-color"]`).setAttribute(`content`, `#4252af`)
+    }, []), (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, {
+        children: [(0, import_jsx_runtime.jsx)(Title$1, {
+            title: `Play Gimkit! - Enter game code here`,
+            description: `Join a game of Gimkit, an online strategic game show for the classroom.`
+        }), (0, import_jsx_runtime.jsx)(GlobalStyle, {}), (0, import_jsx_runtime.jsx)(import_react.Suspense, {
+            fallback: (0, import_jsx_runtime.jsx)(Container, {
+                children: (0, import_jsx_runtime.jsx)(JoinBackgroundContainer, {})
+            }),
+            children: (0, import_jsx_runtime.jsx)(Join, {})
         })]
     })),
-    Sa = o.div`
-  min-height: 100vh;
-  width: 100%;
-  background: ${S.Snow};
-  color: #262331;
-  font-family: ${G.SFPro};
-  padding-top: var(--header-height, 80px);
-  box-sizing: border-box;
+    Container = dt.div.attrs({
+        className: `flex-column scroll-y`
+    })`
+  flex: 1;
 `,
-    ka = o.div`
-  display: grid;
-  grid-template-columns: 260px minmax(0, 1fr);
-  align-items: start;
-  @media (max-width: 850px) {
-    grid-template-columns: minmax(0, 1fr);
+    GlobalStyle = ft`
+  html {
+    height: 100%;
+  }
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: ${Colors.Black};
   }
 `;
 export {
-    Cr as
-    default
+    JoinContainer as
+    default, LOCAL_STORAGE_PLAY_AGAIN_LAST_USED_NAME as n, _Class as r, App_exports as t
 };

@@ -1,170 +1,107 @@
 import {
-    G as s
+    t as e
 } from "./GetAssetPath.js";
 import {
-    N as d
-} from "./NewWidthSameAspectRatio.js";
-import {
-    g as l,
-    S as c,
-    j as b,
-    e as u
-} from "./FixSpinePlugin.js";
-import {
-    p as w
+    t
 } from "./playSound.js";
 import {
-    F as v,
-    R as g
+    o as n,
+    s as r
+} from "./FixPhaserBootProcess.js";
+import {
+    t as i
+} from "./isVersion.js";
+import {
+    t as a
+} from "./InPhase.js";
+import {
+    t as o
+} from "./Device.js";
+import {
+    n as s,
+    t as c
 } from "./FetchOptionSchemaProperty.js";
 import {
-    aK as f
-} from "./App-41.js";
-import "./_index.js";
-import "./MapModeType.js";
-import "./MapStyle.js";
-import "./MapSound.js";
-import "./howler.js";
-import "./Button.js";
-import "./polished.esm.js";
-import "./inheritsLoose.js";
-import "./mobxreact.esm.js";
-import "./index-21.js";
-import "./QuizTypes.js";
-import "./TutorialConsts.js";
-import "./ActionButton.js";
-import "./index-5.js";
-import "./index-18.js";
-import "./context.js";
-import "./FontAwesomeIcon.js";
-import "./Centered.js";
-import "./CapitalizeFirstLetter.js";
-import "./index-4.js";
-import "./motion.js";
-import "./index-2.js";
-import "./index-14.js";
-import "./EditOutlined.js";
-import "./styleChecker.js";
-import "./index-3.js";
-import "./CheckOutlined.js";
-import "./CopyOutlined.js";
-import "./SixteenByNineScaler.js";
-import "./index-20.js";
-import "./index-22.js";
-import "./index-1.js";
-import "./progress.js";
-import "./ElementIds.js";
-import "./SeasonTicketName.js";
-import "./useQuery.js";
-import "./___vite-browser-external_commonjs-proxy.js";
-import "./util-1.js";
-import "./util-2.js";
-import "./Shortcut.js";
-import "./Names.js";
-import "./useWillUnmount.js";
-import "./CircularProgress.js";
-import "./clsx.m.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
-import "./index-17.js";
-import "./use-force-update.js";
-import "./GimkitLiveQuestion.js";
-import "./Text.js";
-import "./getCloudinaryUrl.js";
-import "./LazyLatexRenderer.js";
-import "./Tooltip.js";
-import "./use-motion-value.js";
-import "./index-9.js";
-import "./index-23.js";
-import "./useIntervalWhen.js";
-import "./index-10.js";
-import "./move.js";
-import "./react-flip-move.es.js";
-import "./sounds.js";
-import "./App-5.js";
-import "./AnimatedBackground-2.js";
-import "./useDebouncedValue.js";
-import "./CloseCircleOutlined.js";
-import "./FillRemainingSpace.js";
-import "./index-24.js";
-const m = "checkpoint-idle",
-    p = "checkpoint-pop";
-class Ti extends f {
-    constructor(a) {
-        if (super(a), this.bubbleIsReady = !1, this.createdAt = Date.now(), this.onBubbleActiveChange = () => {
-                this.state.active ? (Date.now() - this.createdAt > 1e3 && this.options.playAudio && this.options.visibleInGame && this.cull.isInsideView && w({
-                    path: s("devices/checkpoint/sound.mp3"),
-                    volume: l({
-                        volume: .75,
-                        type: c.soundEffect
-                    })
-                }), this.bubble.view.play(p)) : (this.bubble.view.setAlpha(0), this.tweens.add({
-                    targets: this.bubble.view,
-                    alpha: 1,
-                    duration: 400
-                }), this.bubble.view.play(m))
-            }, this.onStateChange = () => {
-                this.bubbleIsReady && this.onBubbleActiveChange()
-            }, (b() || u()) && (!this.options.visibleInGame || !this.options.enabled)) return;
-        const e = v(this, "width");
-        this.bubble = this.parts.add.animatedSprite({
-            spritesheetId: "checkpoint-device",
-            spritesheetUrl: s("devices/checkpoint/bubble.png"),
-            frameWidth: 500,
-            frameHeight: 492,
-            animations: [{
-                animName: m,
-                frameRate: 1,
-                animFrames: {
-                    start: 0,
-                    end: 0
-                }
-            }, {
-                animName: p,
-                frameRate: 34,
-                animFrames: {
-                    start: 0,
-                    end: 11
-                },
-                repeat: 0
-            }],
-            onReady: i => {
-                const t = d({
-                    width: i.view.width,
-                    height: i.view.height,
-                    newWidth: this.options.width
-                });
-                i.view.displayWidth = t.width, i.view.displayHeight = t.height;
-                const r = t.height / i.view.height,
-                    h = e.min * r,
-                    n = e.max * r;
-                this.visualEditing.add.box({
-                    angle: 0,
-                    rotable: !1,
-                    width: t.width,
-                    height: t.height,
-                    minWidth: e.min,
-                    maxWidth: e.max,
-                    minHeight: h,
-                    maxHeight: n,
-                    onChange: o => {
-                        g(o.x, o.y, {
-                            width: o.width
+    t as l
+} from "./NewWidthSameAspectRatio.js";
+var u = `checkpoint-idle`,
+    d = `checkpoint-pop`,
+    f = class extends o {
+        constructor(o) {
+            if (super(o), this.bubbleIsReady = !1, this.createdAt = Date.now(), this.onBubbleActiveChange = () => {
+                    this.state.active ? (Date.now() - this.createdAt > 1e3 && this.options.playAudio && this.options.visibleInGame && this.cull.isInsideView && t({
+                        path: e(`devices/checkpoint/sound.mp3`),
+                        volume: r({
+                            volume: .75,
+                            type: n.soundEffect
                         })
+                    }), this.bubble.view.play(d)) : (this.bubble.view.setAlpha(0), this.tweens.add({
+                        targets: this.bubble.view,
+                        alpha: 1,
+                        duration: 400
+                    }), this.bubble.view.play(u))
+                }, this.onStateChange = () => {
+                    this.bubbleIsReady && this.onBubbleActiveChange()
+                }, (i() || a()) && (!this.options.visibleInGame || !this.options.enabled)) return;
+            let f = c(this, `width`);
+            this.bubble = this.parts.add.animatedSprite({
+                spritesheetId: `checkpoint-device`,
+                spritesheetUrl: e(`devices/checkpoint/bubble.png`),
+                frameWidth: 500,
+                frameHeight: 492,
+                animations: [{
+                    animName: u,
+                    frameRate: 1,
+                    animFrames: {
+                        start: 0,
+                        end: 0
                     }
-                }), this.tweens.add({
-                    targets: i.view,
-                    y: i.view.y - t.height / 20,
-                    duration: 1500,
-                    yoyo: !0,
-                    repeat: -1,
-                    ease: Phaser.Math.Easing.Sine.InOut
-                }), this.state.active ? (i.view.setAlpha(0), i.view.play(p)) : i.view.play(m), this.bubbleIsReady = !0
-            }
-        })
-    }
-}
+                }, {
+                    animName: d,
+                    frameRate: 34,
+                    animFrames: {
+                        start: 0,
+                        end: 11
+                    },
+                    repeat: 0
+                }],
+                onReady: e => {
+                    let t = l({
+                        width: e.view.width,
+                        height: e.view.height,
+                        newWidth: this.options.width
+                    });
+                    e.view.displayWidth = t.width, e.view.displayHeight = t.height;
+                    let n = t.height / e.view.height,
+                        r = f.min * n,
+                        i = f.max * n;
+                    this.visualEditing.add.box({
+                        angle: 0,
+                        rotable: !1,
+                        width: t.width,
+                        height: t.height,
+                        minWidth: f.min,
+                        maxWidth: f.max,
+                        minHeight: r,
+                        maxHeight: i,
+                        onChange: e => {
+                            s(e.x, e.y, {
+                                width: e.width
+                            })
+                        }
+                    }), this.tweens.add({
+                        targets: e.view,
+                        y: e.view.y - t.height / 20,
+                        duration: 1500,
+                        yoyo: !0,
+                        repeat: -1,
+                        ease: Phaser.Math.Easing.Sine.InOut
+                    }), this.state.active ? (e.view.setAlpha(0), e.view.play(d)) : e.view.play(u), this.bubbleIsReady = !0
+                }
+            })
+        }
+    };
 export {
-    Ti as
+    f as
     default
 };

@@ -1,0 +1,7 @@
+import {
+    t as e
+} from "./colors-1.js";
+var t = e;
+export {
+    t
+};

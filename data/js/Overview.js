@@ -1,74 +1,77 @@
+import "./rolldown-runtime.js";
 import {
-    j as t,
-    U as a,
-    d_ as i,
-    D as s,
-    B as n,
-    d as e
+    t as e
+} from "./react-1.js";
+import {
+    t
+} from "./button.js";
+import {
+    t as n
+} from "./typography.js";
+import {
+    m as r
+} from "./Paths.js";
+import {
+    t as i
+} from "./jsx-runtime.js";
+import {
+    c as a,
+    l as o,
+    y as s
 } from "./_index.js";
 import {
-    a as p
-} from "./Centered.js";
-import {
-    G as m
-} from "./GetAssetPath.js";
-import {
-    A as l
+    t as c
 } from "./AccessibleAnchor.js";
 import {
-    C as h
-} from "./Button.js";
+    t as l
+} from "./GetAssetPath.js";
 import {
-    T as r
-} from "./index-14.js";
-import "./polished.esm.js";
-import "./inheritsLoose.js";
-import "./EditOutlined.js";
-import "./styleChecker.js";
-import "./index-5.js";
-import "./index-3.js";
-import "./index-2.js";
-import "./CheckOutlined.js";
-import "./CopyOutlined.js";
-const F = o => t.jsxs(c, {
-        children: [t.jsx(x, {}), t.jsx(r.Title, {
+    n as u
+} from "./Centered.js";
+import {
+    n as d
+} from "./Button.js";
+e();
+var f = i(),
+    p = e => (0, f.jsxs)(m, {
+        children: [(0, f.jsx)(h, {}), (0, f.jsx)(n.Title, {
             style: {
                 fontFamily: a.FugazOne,
-                textTransform: "uppercase"
+                textTransform: `uppercase`
             },
             level: 1,
-            children: "Publish"
-        }), t.jsxs(r.Text, {
+            children: `Publish`
+        }), (0, f.jsxs)(n.Text, {
             style: {
                 marginTop: 10
             },
-            children: ["Share your map with the world! Publish your map to have it appear on our", " ", t.jsx(l, {
-                to: i,
-                target: "_blank",
+            children: [`Share your map with the world! Publish your map to have it appear on our`, ` `, (0, f.jsx)(c, {
+                to: r,
+                target: `_blank`,
                 style: {
-                    color: h.Yellow,
-                    textDecoration: "underline"
+                    color: d.Yellow,
+                    textDecoration: `underline`
                 },
-                children: "Creative Discovery"
-            }), " ", "page, where anybody can find and play your map!"]
-        }), t.jsx(s, {}), t.jsx(n, {
-            size: "large",
+                children: `Creative Discovery`
+            }), ` `, `page, where anybody can find and play your map!`]
+        }), (0, f.jsx)(s, {}), (0, f.jsx)(t, {
+            size: `large`,
             block: !0,
-            type: "primary",
+            type: `primary`,
             style: {
                 height: 55
             },
-            onClick: o.next,
-            children: "Continue"
+            onClick: e.next,
+            children: `Continue`
         })]
     }),
-    c = e(p).attrs({
-        className: "maxWidth"
+    m = o(u).attrs({
+        className: `maxWidth`
     })`
   text-align: center;
 `,
-    x = e.img.attrs({
-        src: m("publishing/megaphone.svg")
+    h = o.img.attrs({
+        src: l(`publishing/megaphone.svg`)
     })`
   height: 85px;
   margin-bottom: 17px;
@@ -76,6 +79,6 @@ const F = o => t.jsxs(c, {
   transform: rotate(-8deg);
 `;
 export {
-    F as
+    p as
     default
 };

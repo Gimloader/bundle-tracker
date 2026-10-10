@@ -1,158 +1,174 @@
 import {
-    r as n,
-    I as y,
-    _ as P,
-    j as t,
-    B as S,
-    D as x,
-    e as L,
-    F,
-    U as k
+    o as e
+} from "./rolldown-runtime.js";
+import {
+    t
+} from "./react-1.js";
+import {
+    c as n,
+    s as r
+} from "./assertThisInitialized.js";
+import {
+    r as i
+} from "./compact-item.js";
+import {
+    t as a
+} from "./tooltip.js";
+import {
+    t as o
+} from "./button.js";
+import {
+    t as s
+} from "./input.js";
+import {
+    t as c
+} from "./jsx-runtime.js";
+import {
+    c as l,
+    n as u,
+    s as d,
+    y as f
 } from "./_index.js";
 import {
-    a as C,
-    i as a,
-    C as E
-} from "./ContinueButton.js";
-import {
-    T as z
-} from "./index-5.js";
-import {
-    I as m
-} from "./index-3.js";
-var I = {
+    a as p,
+    i as m,
+    t as h
+} from "./StoreContext.js";
+var g = e(t());
+n();
+var _ = {
         icon: {
-            tag: "svg",
+            tag: `svg`,
             attrs: {
-                viewBox: "64 64 896 896",
-                focusable: "false"
+                viewBox: `64 64 896 896`,
+                focusable: `false`
             },
             children: [{
-                tag: "path",
+                tag: `path`,
                 attrs: {
-                    d: "M832 464h-68V240c0-70.7-57.3-128-128-128H388c-70.7 0-128 57.3-128 128v224h-68c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V496c0-17.7-14.3-32-32-32zM332 240c0-30.9 25.1-56 56-56h248c30.9 0 56 25.1 56 56v224H332V240zm460 600H232V536h560v304zM484 701v53c0 4.4 3.6 8 8 8h40c4.4 0 8-3.6 8-8v-53a48.01 48.01 0 10-56 0z"
+                    d: `M832 464h-68V240c0-70.7-57.3-128-128-128H388c-70.7 0-128 57.3-128 128v224h-68c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V496c0-17.7-14.3-32-32-32zM332 240c0-30.9 25.1-56 56-56h248c30.9 0 56 25.1 56 56v224H332V240zm460 600H232V536h560v304zM484 701v53c0 4.4 3.6 8 8 8h40c4.4 0 8-3.6 8-8v-53a48.01 48.01 0 10-56 0z`
                 }
             }]
         },
-        name: "lock",
-        theme: "outlined"
+        name: `lock`,
+        theme: `outlined`
     },
-    b = function(o, c) {
-        return n.createElement(y, P({}, o, {
-            ref: c,
-            icon: I
+    v = g.forwardRef(function(e, t) {
+        return g.createElement(i, r({}, e, {
+            ref: t,
+            icon: _
         }))
-    },
-    M = n.forwardRef(b),
-    g = (e => (e.educator = "educator", e.student = "student", e.guardian = "guardian", e.nonSchool = "nonSchool", e))(g || {});
-const T = e => t.jsx(z, {
-        title: "Learn more on why we collect this data",
-        children: t.jsx(S, {
+    }),
+    y = c(),
+    b = e => (0, y.jsx)(a, {
+        title: `Learn more on why we collect this data`,
+        children: (0, y.jsx)(o, {
             style: {
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center"
+                display: `flex`,
+                justifyContent: `center`,
+                alignItems: `center`
             },
-            shape: "circle",
-            icon: t.jsx(M, {}),
-            href: e.link || "",
-            target: "_blank"
+            shape: `circle`,
+            icon: (0, y.jsx)(v, {}),
+            href: e.link || ``,
+            target: `_blank`
         })
     }),
-    _ = e => t.jsxs("div", {
+    x = e => (0, y.jsxs)(`div`, {
         style: {
-            justifyContent: "space-between"
+            justifyContent: `space-between`
         },
-        className: "flex maxWidth",
-        children: [t.jsx("div", {}), t.jsx(T, {
+        className: `flex maxWidth`,
+        children: [(0, y.jsx)(`div`, {}), (0, y.jsx)(b, {
             link: e.link
         })]
     }),
-    B = 20,
-    H = 25,
-    h = e => t.jsx("div", {
+    S = function(e) {
+        return e.educator = `educator`, e.student = `student`, e.guardian = `guardian`, e.nonSchool = `nonSchool`, e
+    }(S || {}),
+    C = e => (0, y.jsx)(`div`, {
         style: {
-            fontFamily: k.SFPro,
-            fontWeight: F.Bold,
-            color: L.Black,
+            fontFamily: l.SFPro,
+            fontWeight: d.Bold,
+            color: u.Black,
             fontSize: 18
         },
         children: e.children
     }),
-    f = {
-        width: "100%",
-        display: "flex",
+    w = {
+        width: `100%`,
+        display: `flex`,
         marginTop: 0,
         minHeight: 0
     },
-    W = () => {
-        const {
+    T = () => {
+        let {
             login: e
-        } = n.useContext(C), [o, c] = n.useState(e.firstName), [d, N] = n.useState(e.lastName), [i, j] = n.useState(e.password), p = s => c(s.target.value), v = s => N(s.target.value), w = s => j(s.target.value), u = () => {
-            let s = !0;
-            return e.informationNeeded.includes(a.firstName) && (o || (s = !1)), e.informationNeeded.includes(a.lastName) && (d || (s = !1)), e.informationNeeded.includes(a.accountPassword) && (!i || i.length < 6) && (s = !1), s
-        }, r = () => {
-            u() && (o && (e.firstName = o), d && (e.lastName = d), i && (e.password = i), e.informationNeeded.replace(e.informationNeeded.filter(s => s !== a.firstName && s !== a.lastName && s !== a.accountPassword)))
-        }, l = e.accountType === g.student;
-        return t.jsxs(t.Fragment, {
-            children: [t.jsx(h, {
-                children: "First Name"
-            }), t.jsx(m, {
-                maxLength: B,
-                style: f,
-                size: "large",
-                placeholder: "First Name here...",
-                onChange: p,
-                onPressEnter: r,
+        } = g.useContext(h), [t, n] = g.useState(e.firstName), [r, i] = g.useState(e.lastName), [a, o] = g.useState(e.password), c = e => n(e.target.value), l = e => i(e.target.value), u = e => o(e.target.value), d = () => {
+            let n = !0;
+            return e.informationNeeded.includes(m.firstName) && (t || (n = !1)), e.informationNeeded.includes(m.lastName) && (r || (n = !1)), e.informationNeeded.includes(m.accountPassword) && (!a || a.length < 6) && (n = !1), n
+        }, _ = () => {
+            d() && (t && (e.firstName = t), r && (e.lastName = r), a && (e.password = a), e.informationNeeded.replace(e.informationNeeded.filter(e => e !== m.firstName && e !== m.lastName && e !== m.accountPassword)))
+        }, v = e.accountType === S.student;
+        return (0, y.jsxs)(y.Fragment, {
+            children: [(0, y.jsx)(C, {
+                children: `First Name`
+            }), (0, y.jsx)(s, {
+                maxLength: 20,
+                style: w,
+                size: `large`,
+                placeholder: `First Name here...`,
+                onChange: c,
+                onPressEnter: _,
                 autoFocus: !0
-            }), t.jsx("div", {
+            }), (0, y.jsx)(`div`, {
                 style: {
                     height: 10
                 }
-            }), t.jsxs(h, {
-                children: ["Last ", l ? "Initial" : "Name"]
-            }), t.jsx(m, {
-                maxLength: l ? 1 : H,
-                style: f,
-                size: "large",
-                placeholder: `Last ${l?"Initial":"Name"} here...`,
-                onChange: v,
-                onPressEnter: r
-            }), e.informationNeeded.includes(a.accountPassword) && t.jsxs(t.Fragment, {
-                children: [t.jsx(x, {}), t.jsx(h, {
-                    children: "Password"
-                }), t.jsx("div", {
+            }), (0, y.jsxs)(C, {
+                children: [`Last `, v ? `Initial` : `Name`]
+            }), (0, y.jsx)(s, {
+                maxLength: v ? 1 : 25,
+                style: w,
+                size: `large`,
+                placeholder: `Last ${v?`Initial`:`Name`} here...`,
+                onChange: l,
+                onPressEnter: _
+            }), e.informationNeeded.includes(m.accountPassword) && (0, y.jsxs)(y.Fragment, {
+                children: [(0, y.jsx)(f, {}), (0, y.jsx)(C, {
+                    children: `Password`
+                }), (0, y.jsx)(`div`, {
                     style: {
                         fontSize: 12,
                         marginTop: -5,
                         marginBottom: 4
                     },
-                    children: "Must contain at least 6 characters"
-                }), t.jsx(m.Password, {
-                    style: f,
-                    onChange: w,
-                    placeholder: "Password here...",
-                    size: "large",
+                    children: `Must contain at least 6 characters`
+                }), (0, y.jsx)(s.Password, {
+                    style: w,
+                    onChange: u,
+                    placeholder: `Password here...`,
+                    size: `large`,
                     maxLength: 96,
-                    onPressEnter: r
+                    onPressEnter: _
                 })]
-            }), t.jsx(x, {}), t.jsx(E, {
-                disabled: !u(),
-                onClick: r,
+            }), (0, y.jsx)(f, {}), (0, y.jsx)(p, {
+                disabled: !d(),
+                onClick: _,
                 style: {
-                    width: "100%"
+                    width: `100%`
                 },
-                size: "large",
-                children: "Continue"
-            }), t.jsx("div", {
+                size: `large`,
+                children: `Continue`
+            }), (0, y.jsx)(`div`, {
                 style: {
                     height: 10
                 }
-            }), !l && t.jsx(_, {
-                link: "https://www.notion.so/gimkit/First-Last-Name-8983e473b6bb4450aaf2f413702cc061"
+            }), !v && (0, y.jsx)(x, {
+                link: `https://www.notion.so/gimkit/First-Last-Name-8983e473b6bb4450aaf2f413702cc061`
             })]
         })
     };
 export {
-    g as A, B as M, W as N, _ as P, M as R, h as T, H as a
+    v as a, x as i, C as n, S as r, T as t
 };

@@ -1,0 +1,264 @@
+import {
+    o as e
+} from "./rolldown-runtime.js";
+import {
+    C as t,
+    O as n,
+    _ as r,
+    d as i,
+    h as a,
+    v as o
+} from "./utils.js";
+import {
+    t as s
+} from "./react-1.js";
+import {
+    a as c
+} from "./InfoCircleFilled.js";
+import {
+    t as l
+} from "./button.js";
+import {
+    r as u,
+    t as d
+} from "./dropdown.js";
+import {
+    i as f,
+    o as p,
+    r as m,
+    s as h
+} from "./App-4.js";
+import {
+    C as g,
+    d as _,
+    p as v,
+    w as y,
+    x as b
+} from "./Paths.js";
+import {
+    t as x
+} from "./jsx-runtime.js";
+import {
+    t as S
+} from "./App-5.js";
+import {
+    n as C
+} from "./SiteHeaderAlpha.js";
+import {
+    c as w,
+    l as T,
+    s as E,
+    v as D
+} from "./_index.js";
+import {
+    r as O
+} from "./mobxreact.esm.js";
+import {
+    t as k
+} from "./NavigateTo.js";
+import {
+    t as A
+} from "./FontAwesomeIcon.js";
+import {
+    t as j
+} from "./Shortcut.js";
+import {
+    t as M
+} from "./GetPlanName.js";
+var N = e(s()),
+    P = x(),
+    F = e => {
+        let [i, a, s] = n(!1), [x, w] = n(!1), T = o(), E = [], O = N.useMemo(() => () => (0, P.jsx)(P.Fragment, {
+            children: (0, P.jsxs)(u, {
+                style: {
+                    width: 250
+                },
+                children: [(0, P.jsx)(I, {}), [{
+                    name: `Settings`,
+                    icon: () => (0, P.jsx)(A, {
+                        name: `far fa-cog`
+                    }),
+                    onClick: () => k(`/settings`)
+                }, {
+                    name: `Creative`,
+                    onClick: () => k(v),
+                    icon: () => (0, P.jsx)(A, {
+                        name: `far fa-ruler`
+                    }),
+                    blockIf: [r]
+                }, {
+                    name: `Billing`,
+                    icon: () => (0, P.jsx)(A, {
+                        name: `far fa-credit-card`
+                    }),
+                    onClick: () => {
+                        p.navigation.currentTab = h.billing, k(`/settings`)
+                    },
+                    blockIf: [r]
+                }, {
+                    name: `News`,
+                    icon: () => (0, P.jsx)(A, {
+                        name: `far fa-newspaper`
+                    }),
+                    onClick: () => {
+                        a(), w()
+                    }
+                }, {
+                    name: `Group Licenses`,
+                    icon: () => (0, P.jsx)(A, {
+                        name: `far fa-users`
+                    }),
+                    onClick: () => k(y),
+                    blockIf: [r]
+                }, {
+                    name: `GiveKit`,
+                    icon: () => (0, P.jsx)(A, {
+                        name: `far fa-heart`
+                    }),
+                    onClick: () => k(g),
+                    blockIf: [r]
+                }, {
+                    name: `Support`,
+                    icon: () => (0, P.jsx)(A, {
+                        name: `far fa-question-circle`
+                    }),
+                    onClick: () => {
+                        p.navigation.currentTab = h.support, k(`/settings`)
+                    },
+                    blockIf: [r]
+                }, {
+                    name: `Logout`,
+                    icon: () => (0, P.jsx)(A, {
+                        name: `far fa-sign-out-alt`
+                    }),
+                    onClick: () => t({
+                        url: `/logout`,
+                        success: () => {},
+                        both: () => window.open(`/`, `_self`)
+                    })
+                }].filter(e => !e.blockIf || !e.blockIf.some(e => e())).map(e => (0, P.jsx)(u.Item, {
+                    onClick: e.onClick,
+                    children: (0, P.jsxs)(`div`, {
+                        className: `flex vc`,
+                        style: {
+                            textAlign: `center`
+                        },
+                        children: [N.createElement(e.icon), (0, P.jsx)(`div`, {
+                            style: {
+                                marginLeft: 7
+                            },
+                            children: e.name
+                        })]
+                    })
+                }, e.name))]
+            })
+        }), [a]);
+        return E.push({
+            key: `gallery`,
+            item: e => (0, P.jsx)(m, {
+                path: b,
+                icon: (0, P.jsx)(A, {
+                    name: `far fa-search`
+                }),
+                block: e,
+                children: `Discovery`
+            })
+        }), r() && E.push({
+            key: `creative`,
+            item: e => (0, P.jsx)(m, {
+                path: v,
+                icon: (0, P.jsx)(A, {
+                    name: `far fa-ruler`
+                }),
+                block: e,
+                children: `Creative`
+            })
+        }), E.push({
+            key: `rewards`,
+            item: e => (0, P.jsx)(m, {
+                path: _,
+                icon: (0, P.jsx)(A, {
+                    name: `far fa-coins`
+                }),
+                block: e,
+                children: j.name
+            })
+        }), E.push({
+            key: `me`,
+            item: t => (0, P.jsx)(c, {
+                theme: {
+                    algorithm: D.defaultAlgorithm
+                },
+                children: (0, P.jsx)(d, {
+                    trigger: [`click`],
+                    overlay: O,
+                    children: (0, P.jsx)(`div`, {
+                        className: `maxWidth`,
+                        children: (0, P.jsx)(c, {
+                            theme: {
+                                algorithm: e.theme === C.dark ? D.darkAlgorithm : D.defaultAlgorithm
+                            },
+                            children: (0, P.jsx)(m, {
+                                icon: (0, P.jsx)(A, {
+                                    name: `far fa-user`
+                                }),
+                                block: t,
+                                children: t ? `Me` : ``
+                            })
+                        })
+                    })
+                })
+            })
+        }), !T && !r() && E.push({
+            key: `upgrade`,
+            item: t => (0, P.jsx)(`div`, {
+                className: `maxAll`,
+                children: (0, P.jsx)(l, {
+                    size: `large`,
+                    type: `primary`,
+                    onClick: e.showUpgradeModal,
+                    block: t,
+                    children: `Upgrade`
+                })
+            })
+        }), (0, P.jsxs)(P.Fragment, {
+            children: [(0, P.jsx)(f, {
+                items: E
+            }), (0, P.jsx)(N.Suspense, {
+                fallback: null,
+                children: x ? (0, P.jsx)(S, {
+                    open: i,
+                    onClose: s
+                }) : null
+            })]
+        })
+    },
+    I = O(() => {
+        let e = a();
+        return !e || r() && !e.username ? null : (0, P.jsxs)(L, {
+            children: [(0, P.jsx)(R, {
+                children: i(e)
+            }), r() ? null : (0, P.jsx)(z, {
+                children: M(e.type)
+            })]
+        })
+    }),
+    L = T.div`
+  background: rgb(232, 232, 232);
+  margin: 6px 12px;
+  padding: 14px;
+  border-radius: 4px;
+  font-family: ${w.SFPro};
+  color: rgba(0, 0, 0, 0.8);
+`,
+    R = T.div`
+  font-size: 18px;
+  font-weight: ${E.Bold};
+`,
+    z = T.div`
+  font-size: 12px;
+`;
+export {
+    F as
+    default
+};

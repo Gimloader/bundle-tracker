@@ -1,57 +1,80 @@
 import {
-    r as n,
-    b1 as $,
-    b6 as w,
-    b3 as D,
-    am as M,
-    b5 as g,
-    _ as j,
-    aZ as m,
-    x as V,
-    aX as _
-} from "./_index.js";
-var A = ["prefixCls", "className", "style", "checked", "disabled", "defaultChecked", "type", "title", "onChange"],
-    H = n.forwardRef(function(e, a) {
-        var r = e.prefixCls,
-            c = r === void 0 ? "rc-checkbox" : r,
-            d = e.className,
-            u = e.style,
-            x = e.checked,
-            o = e.disabled,
-            f = e.defaultChecked,
-            y = f === void 0 ? !1 : f,
-            v = e.type,
-            h = v === void 0 ? "checkbox" : v,
-            R = e.title,
-            i = e.onChange,
-            E = $(e, A),
-            s = n.useRef(null),
-            p = n.useRef(null),
-            P = w(y, {
-                value: x
+    o as e
+} from "./rolldown-runtime.js";
+import {
+    t
+} from "./react-1.js";
+import {
+    c as n,
+    s as r
+} from "./assertThisInitialized.js";
+import {
+    Ft as i,
+    It as a,
+    Lt as o,
+    Ut as s,
+    lt as c,
+    nt as l,
+    tt as u,
+    ut as d,
+    x as f
+} from "./Compact.js";
+import {
+    v as p
+} from "./color.js";
+n(), o(), d(), l();
+var m = e(s()),
+    h = e(t()),
+    g = [`prefixCls`, `className`, `style`, `checked`, `disabled`, `defaultChecked`, `type`, `title`, `onChange`],
+    _ = (0, h.forwardRef)(function(e, t) {
+        var n = e.prefixCls,
+            o = n === void 0 ? `rc-checkbox` : n,
+            s = e.className,
+            l = e.style,
+            d = e.checked,
+            p = e.disabled,
+            _ = e.defaultChecked,
+            v = _ !== void 0 && _,
+            y = e.type,
+            b = y === void 0 ? `checkbox` : y,
+            x = e.title,
+            S = e.onChange,
+            C = u(e, g),
+            w = (0, h.useRef)(null),
+            T = (0, h.useRef)(null),
+            E = f(v, {
+                value: d
             }),
-            b = D(P, 2),
-            k = b[0],
-            N = b[1];
-        n.useImperativeHandle(a, function() {
+            D = c(E, 2),
+            O = D[0],
+            k = D[1];
+        (0, h.useImperativeHandle)(t, function() {
             return {
-                focus: function(t) {
-                    var l;
-                    (l = s.current) === null || l === void 0 || l.focus(t)
+                focus: function(e) {
+                    var t;
+                    (t = w.current) == null || t.focus(e)
                 },
                 blur: function() {
-                    var t;
-                    (t = s.current) === null || t === void 0 || t.blur()
+                    var e;
+                    (e = w.current) == null || e.blur()
                 },
-                input: s.current,
-                nativeElement: p.current
+                input: w.current,
+                nativeElement: T.current
             }
         });
-        var L = M(c, d, g(g({}, "".concat(c, "-checked"), k), "".concat(c, "-disabled"), o)),
-            S = function(t) {
-                o || ("checked" in e || N(t.target.checked), i == null || i({
-                    target: m(m({}, e), {}, {
-                        type: h,
+        var A = (0, m.default)(o, s, a(a({}, `${o}-checked`, O), `${o}-disabled`, p));
+        return h.createElement(`span`, {
+            className: A,
+            title: x,
+            style: l,
+            ref: T
+        }, h.createElement(`input`, r({}, C, {
+            className: `${o}-input`,
+            ref: w,
+            onChange: function(t) {
+                p || (`checked` in e || k(t.target.checked), S == null || S({
+                    target: i(i({}, e), {}, {
+                        type: b,
                         checked: t.target.checked
                     }),
                     stopPropagation: function() {
@@ -62,37 +85,28 @@ var A = ["prefixCls", "className", "style", "checked", "disabled", "defaultCheck
                     },
                     nativeEvent: t.nativeEvent
                 }))
-            };
-        return n.createElement("span", {
-            className: L,
-            title: R,
-            style: u,
-            ref: p
-        }, n.createElement("input", j({}, E, {
-            className: "".concat(c, "-input"),
-            ref: s,
-            onChange: S,
-            disabled: o,
-            checked: !!k,
-            type: h
-        })), n.createElement("span", {
-            className: "".concat(c, "-inner")
+            },
+            disabled: p,
+            checked: !!O,
+            type: b
+        })), h.createElement(`span`, {
+            className: `${o}-inner`
         }))
     });
 
-function I(e) {
-    const a = V.useRef(null),
-        r = () => {
-            _.cancel(a.current), a.current = null
+function v(e) {
+    let t = h.useRef(null),
+        n = () => {
+            p.cancel(t.current), t.current = null
         };
     return [() => {
-        r(), a.current = _(() => {
-            a.current = null
+        n(), t.current = p(() => {
+            t.current = null
         })
-    }, u => {
-        a.current && (u.stopPropagation(), r()), e == null || e(u)
+    }, r => {
+        t.current && (r.stopPropagation(), n()), e == null || e(r)
     }]
 }
 export {
-    H as C, I as u
+    _ as n, v as t
 };

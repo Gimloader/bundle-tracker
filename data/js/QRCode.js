@@ -1,14 +1,15 @@
 import {
-    j as e
-} from "./_index.js";
+    t as e
+} from "./qr-code.js";
 import {
-    Q as r
-} from "./index-22.js";
-const a = o => e.jsx(r, {
-    value: o.link,
-    size: 300
-});
+    t
+} from "./jsx-runtime.js";
+var n = t(),
+    r = t => (0, n.jsx)(e, {
+        value: t.link,
+        size: 300
+    });
 export {
-    a as
+    r as
     default
 };

@@ -1,37 +1,51 @@
 import {
-    d as y,
-    F as H,
-    j as l,
-    aU as q,
-    r as m,
-    u as F,
-    ar as d,
-    o as D,
-    a9 as L
+    o as e
+} from "./rolldown-runtime.js";
+import {
+    O as t,
+    x as n
+} from "./utils.js";
+import {
+    t as r
+} from "./react-1.js";
+import {
+    t as i
+} from "./select.js";
+import {
+    t as a
+} from "./input.js";
+import {
+    t as o
+} from "./input-number.js";
+import {
+    h as s,
+    p as c
+} from "./decorate.js";
+import {
+    t as l
+} from "./jsx-runtime.js";
+import {
+    l as u,
+    s as d
 } from "./_index.js";
 import {
-    o as M
+    r as f
 } from "./mobxreact.esm.js";
 import {
-    H as h
-} from "./Hook.js";
+    t as p
+} from "./lodash.js";
 import {
-    E as j
+    t as m
 } from "./Sizes.js";
 import {
-    I as P
-} from "./index-3.js";
+    t as h
+} from "./Hook.js";
 import {
-    T as U
-} from "./index-7.js";
-import {
-    S as I
-} from "./index-8.js";
-import {
-    L as $
+    t as g
 } from "./AppTypes.js";
-const A = y.div.attrs({
-        className: "maxWidth flex vc between"
+var _ = e(r()),
+    v = u.div.attrs({
+        className: `maxWidth flex vc between`
     })`
   box-sizing: border-box;
   padding: 13px 20px;
@@ -47,331 +61,336 @@ const A = y.div.attrs({
     transform: scale(1.02);
   }
 `,
-    J = y.div.attrs({
-        className: "flex vc"
+    y = u.div.attrs({
+        className: `flex vc`
     })``,
-    Q = y.div`
+    b = u.div`
   font-size: 23px;
   margin-right: 10px;
 `,
-    R = y.div`
+    x = u.div`
   font-size: 23px;
-  font-weight: ${H.Bold};
+  font-weight: ${d.Bold};
 `,
-    G = y.div`
+    S = u.div`
   font-size: 15px;
   margin-top: -2px;
 `,
-    K = y.div`
+    C = u.div`
   flex-shrink: 0;
   margin-left: 25px;
 `,
-    S = e => l.jsxs(A, {
-        children: [l.jsxs(J, {
-            children: [e.emoji ? l.jsx(Q, {
+    w = l(),
+    T = e => (0, w.jsxs)(v, {
+        children: [(0, w.jsxs)(y, {
+            children: [e.emoji ? (0, w.jsx)(b, {
                 children: e.emoji
-            }) : null, l.jsxs("div", {
-                children: [l.jsx(R, {
+            }) : null, (0, w.jsxs)(`div`, {
+                children: [(0, w.jsx)(x, {
                     children: e.title
-                }), e.description ? l.jsx(G, {
+                }), e.description ? (0, w.jsx)(S, {
                     children: e.description
                 }) : null]
             })]
-        }), l.jsx(K, {
+        }), (0, w.jsx)(C, {
             children: e.children
         })]
     }),
-    _ = e => {
-        const n = t => e.onValueChanged(t);
-        return l.jsx(S, {
-            emoji: e.emoji,
-            title: e.title,
-            description: e.description,
-            children: l.jsx(I, {
-                value: e.value,
-                style: {
-                    width: e.customWidth || j.optionWidth
-                },
-                size: "large",
-                onChange: n,
-                disabled: e.readOnly,
-                children: e.options.map(t => l.jsx(I.Option, {
-                    value: t.value,
-                    children: t.name
-                }, `${e.title||"no-title"}-${t.value}`))
-            })
+    E = p(),
+    D = e => (0, w.jsx)(T, {
+        emoji: e.emoji,
+        title: e.title,
+        description: e.description,
+        children: (0, w.jsx)(i, {
+            value: e.value,
+            style: {
+                width: e.customWidth || m.optionWidth
+            },
+            size: `large`,
+            onChange: t => e.onValueChanged(t),
+            disabled: e.readOnly,
+            children: e.options.map(t => (0, w.jsx)(i.Option, {
+                value: t.value,
+                children: t.name
+            }, `${e.title||`no-title`}-${t.value}`))
         })
-    },
-    X = e => e === "" ? "" : isNaN(Number(e)) ? String(e) : q(Number(e)),
-    Y = e => {
-        const [n, t] = m.useState(e.value), [i, a] = m.useState(e.value), [s, u, o] = F(!1), c = f => {
-            t(f)
+    }),
+    O = e => e === `` ? `` : isNaN(Number(e)) ? String(e) : n(Number(e)),
+    k = e => {
+        let [n, r] = _.useState(e.value), [i, a] = _.useState(e.value), [s, c, l] = t(!1), u = e => {
+            r(e)
         };
-        m.useEffect(() => {
-            a(e.value), t(e.value)
+        _.useEffect(() => {
+            a(e.value), r(e.value)
         }, [e.value]);
-        const r = () => {
-            n !== i && e.onChange(n), o(), t(e.value)
+        let d = () => {
+            n !== i && e.onChange(n), l(), r(e.value)
         };
-        return l.jsx(U, {
+        return (0, w.jsx)(o, {
             ...e,
             value: s ? n : i,
-            onChange: c,
-            onFocus: u,
-            onBlur: r
+            onChange: u,
+            onFocus: c,
+            onBlur: d
         })
     },
-    Z = e => {
-        const n = m.useCallback(i => {
-            if (d.isNil(i) && e.allowEmpty) return i;
-            let a = i ? e.step ? Math.round(i / e.step) * e.step : i : 0;
-            return !d.isNil(e.min) && a < e.min ? a = e.min : !d.isNil(e.max) && a > e.max && (a = e.max), a
+    A = e => {
+        let t = _.useCallback(t => {
+            if ((0, E.isNil)(t) && e.allowEmpty) return t;
+            let n = t ? e.step ? Math.round(t / e.step) * e.step : t : 0;
+            return !(0, E.isNil)(e.min) && n < e.min ? n = e.min : !(0, E.isNil)(e.max) && n > e.max && (n = e.max), n
         }, [e.max, e.min, e.step]);
-        m.useEffect(() => {
-            d.isNil(e.value) || e.max && e.value > e.max && t(n(e.max))
+        _.useEffect(() => {
+            (0, E.isNil)(e.value) || e.max && e.value > e.max && n(t(e.max))
         }, [e.value, e.max]);
-        const t = i => {
-            e.onValueChanged(n(i))
+        let n = n => {
+            e.onValueChanged(t(n))
         };
-        return l.jsx(S, {
+        return (0, w.jsx)(T, {
             emoji: e.emoji,
             title: e.title,
             description: e.description,
-            children: l.jsx(Y, {
-                size: "large",
-                formatter: X,
+            children: (0, w.jsx)(k, {
+                size: `large`,
+                formatter: O,
                 value: e.value,
                 max: e.max,
                 min: e.min,
                 step: e.step,
                 style: {
-                    width: e.customWidth || j.optionWidth
-                },
-                onChange: t,
-                disabled: e.readOnly
-            })
-        })
-    },
-    W = (e, n) => {
-        var i;
-        return (i = JSON.parse(localStorage.getItem($.hookSavedOptions) || "{}")[n]) == null ? void 0 : i[e]
-    },
-    p = e => {
-        var s;
-        const {
-            hookJSON: n,
-            experienceId: t,
-            kitId: i
-        } = e, a = {};
-        return (s = n == null ? void 0 : n.hooks) == null || s.forEach(u => {
-            if (u.type === h.kit) a[u.key] = i || "";
-            else if (u.type == h.selectBox) {
-                const o = u.options;
-                if (o.options.length) {
-                    let c = o.options.find(r => r === o.defaultOption) || o.options[0];
-                    if (t) {
-                        const r = W(u.key, t);
-                        if (r) {
-                            const f = o.options.find(N => N === r);
-                            f && (c = f)
-                        }
-                    }
-                    c && (a[u.key] = c)
-                }
-            } else if (u.type === h.number) {
-                const o = u.options;
-                let c = o.defaultValue;
-                if (t) {
-                    const r = W(u.key, t);
-                    if (!d.isNil(r) && typeof r == "number") {
-                        let f = !1;
-                        (d.isNil(o.min) || r > o.min) && (d.isNil(o.max) || r < o.max) && (d.isNil(o.step) || r % o.step === 0) && (f = !0), f && (c = r)
-                    }
-                }
-                a[u.key] = c
-            }
-        }), a
-    },
-    ee = e => {
-        const n = t => {
-            e.onValueChanged(t.target.value)
-        };
-        return l.jsx(S, {
-            emoji: e.emoji,
-            title: e.title,
-            description: e.description,
-            children: l.jsx(P, {
-                size: "large",
-                value: e.value,
-                placeholder: e.placeholder,
-                style: {
-                    width: e.customWidth || j.optionWidth
+                    width: e.customWidth || m.optionWidth
                 },
                 onChange: n,
                 disabled: e.readOnly
             })
         })
-    };
-var k = (e => (e.editor = "editor", e.experiencePicker = "experiencePicker", e))(k || {}),
-    B = (e => (e.kit = "kit", e))(B || {});
-const b = e => {
-        let n, t;
-        return n = e.key, e.displayName && (n = e.displayName), e.displayDescription && (t = e.displayDescription), {
-            title: n,
-            description: t
+    },
+    j = (e, t) => {
+        var n;
+        return (n = JSON.parse(localStorage.getItem(g.hookSavedOptions) || `{}`)[t]) == null ? void 0 : n[e]
+    },
+    M = e => {
+        var t;
+        let {
+            hookJSON: n,
+            experienceId: r,
+            kitId: i
+        } = e, a = {};
+        return n == null || (t = n.hooks) == null || t.forEach(e => {
+            if (e.type === h.kit) a[e.key] = i || ``;
+            else if (e.type == h.selectBox) {
+                let t = e.options;
+                if (t.options.length) {
+                    let n = t.options.find(e => e === t.defaultOption) || t.options[0];
+                    if (r) {
+                        let i = j(e.key, r);
+                        if (i) {
+                            let e = t.options.find(e => e === i);
+                            e && (n = e)
+                        }
+                    }
+                    n && (a[e.key] = n)
+                }
+            } else if (e.type === h.number) {
+                let t = e.options,
+                    n = t.defaultValue;
+                if (r) {
+                    let i = j(e.key, r);
+                    if (!(0, E.isNil)(i) && typeof i == `number`) {
+                        let e = !1;
+                        ((0, E.isNil)(t.min) || i > t.min) && ((0, E.isNil)(t.max) || i < t.max) && ((0, E.isNil)(t.step) || i % t.step === 0) && (e = !0), e && (n = i)
+                    }
+                }
+                a[e.key] = n
+            }
+        }), a
+    },
+    N = e => (0, w.jsx)(T, {
+        emoji: e.emoji,
+        title: e.title,
+        description: e.description,
+        children: (0, w.jsx)(a, {
+            size: `large`,
+            value: e.value,
+            placeholder: e.placeholder,
+            style: {
+                width: e.customWidth || m.optionWidth
+            },
+            onChange: t => {
+                e.onValueChanged(t.target.value)
+            },
+            disabled: e.readOnly
+        })
+    }),
+    P = function(e) {
+        return e.editor = `editor`, e.experiencePicker = `experiencePicker`, e
+    }({}),
+    F = function(e) {
+        return e.kit = `kit`, e
+    }({}),
+    I = e => {
+        let t, n;
+        return t = e.key, e.displayName && (t = e.displayName), e.displayDescription && (n = e.displayDescription), {
+            title: t,
+            description: n
         }
     },
-    te = e => {
+    L = e => {
         let {
-            title: n,
-            description: t
-        } = b(e.hook);
-        if (e.location === k.editor) {
-            const i = "We're showing this hook for testing purposes, but this hook won't be visible when choosing this map from the Mode Picker.";
-            t ? t += ` - ${i}` : t = i
+            title: t,
+            description: n
+        } = I(e.hook);
+        if (e.location === P.editor) {
+            let e = `We're showing this hook for testing purposes, but this hook won't be visible when choosing this map from the Mode Picker.`;
+            n ? n += ` - ${e}` : n = e
         }
-        return l.jsx(ee, {
-            title: n,
-            description: t,
+        return (0, w.jsx)(N, {
+            title: t,
+            description: n,
             value: e.value,
             onValueChanged: e.onChange,
-            placeholder: "Kit ID",
+            placeholder: `Kit ID`,
             readOnly: e.readOnly
         })
     },
-    ne = e => {
-        const {
-            title: n,
-            description: t
-        } = b(e.hook), i = e.hook.options, a = s => {
-            if (d.isNil(s) && !d.isNil(i.defaultValue)) {
-                e.onChange(i.defaultValue);
-                return
-            }
-            e.onChange(s)
-        };
-        return l.jsx(Z, {
-            title: n,
-            description: t,
+    R = e => {
+        let {
+            title: t,
+            description: n
+        } = I(e.hook), r = e.hook.options;
+        return (0, w.jsx)(A, {
+            title: t,
+            description: n,
             value: e.value,
-            onValueChanged: a,
-            min: i.min,
-            max: i.max,
-            step: i.step,
+            onValueChanged: t => {
+                (0, E.isNil)(t) && !(0, E.isNil)(r.defaultValue) ? e.onChange(r.defaultValue): e.onChange(t)
+            },
+            min: r.min,
+            max: r.max,
+            step: r.step,
             allowEmpty: !0,
             readOnly: e.readOnly
         })
     },
-    ie = e => {
-        const {
-            title: n,
-            description: t
-        } = b(e.hook), i = e.hook.options;
-        return l.jsx(_, {
-            title: n,
-            description: t,
+    z = e => {
+        let {
+            title: t,
+            description: n
+        } = I(e.hook), r = e.hook.options;
+        return (0, w.jsx)(D, {
+            title: t,
+            description: n,
             value: e.value,
             onValueChanged: e.onChange,
-            options: i.options.map(a => ({
-                value: a,
-                name: a
+            options: r.options.map(e => ({
+                value: e,
+                name: e
             })),
             readOnly: e.readOnly
         })
     },
-    ae = e => {
-        const n = e.state[e.hook.key],
-            t = i => {
-                e.modifyState(e.hook.key, i)
+    B = e => {
+        let t = e.state[e.hook.key],
+            n = t => {
+                e.modifyState(e.hook.key, t)
             };
-        return e.hook.type === h.selectBox ? l.jsx(ie, {
-            value: n,
-            onChange: t,
+        return e.hook.type === h.selectBox ? (0, w.jsx)(z, {
+            value: t,
+            onChange: n,
             hook: e.hook,
             readOnly: e.readOnly
-        }) : e.hook.type === h.kit ? l.jsx(te, {
-            value: n,
-            onChange: t,
+        }) : e.hook.type === h.kit ? (0, w.jsx)(L, {
+            value: t,
+            onChange: n,
             hook: e.hook,
             location: e.location,
             readOnly: e.readOnly
-        }) : e.hook.type === h.number ? l.jsx(ne, {
-            value: n,
-            onChange: t,
+        }) : e.hook.type === h.number ? (0, w.jsx)(R, {
+            value: t,
+            onChange: n,
             hook: e.hook,
             readOnly: e.readOnly
         }) : null
-    };
-var O = (e => (e.hookValue = "hookValue", e.modeType = "modeType", e))(O || {}),
-    C = (e => (e.equal = "EQUAL", e.notEqual = "NOT_EQUAL", e))(C || {}),
-    T = (e => (e.equal = "EQUAL", e.notEqual = "NOT_EQUAL", e))(T || {});
-const z = (e, n) => {
-        var i, a;
-        const t = [];
-        return (a = (i = e == null ? void 0 : e.hooks) == null ? void 0 : i.hooks) == null || a.forEach(s => {
-            var o, c;
-            if (s.type === h.kit && !!n[s.key] && e.location === k.experiencePicker) return;
-            if (s.type === h.selectBox) {
-                const r = s.options;
-                if (!((o = r == null ? void 0 : r.options) != null && o.length)) return
-            }(c = s == null ? void 0 : s.hiddenScenarios) != null && c.find(r => {
-                var E, V;
-                return !((E = r.conditions) != null && E.length) ? !1 : !!((V = r.conditions) == null ? void 0 : V.every(v => {
-                    if (v.type === O.hookValue) {
-                        const x = v.options,
-                            g = x.value,
-                            w = n[x.key];
-                        if (x.compare === C.equal) {
-                            if (g == w) return !0
-                        } else if (x.compare === C.notEqual && g != w) return !0
-                    } else if (v.type === O.modeType) {
-                        const x = e.modeType,
-                            g = v.options;
-                        return g.compare === T.equal ? x === g.mode : x !== g.mode
-                    }
-                    return !1
-                }))
-            }) || t.push(s)
-        }), t
     },
-    le = (e, n) => {
-        const t = [];
-        return z({
+    V = function(e) {
+        return e.hookValue = `hookValue`, e.modeType = `modeType`, e
+    }({}),
+    H = function(e) {
+        return e.equal = `EQUAL`, e.notEqual = `NOT_EQUAL`, e
+    }({}),
+    U = function(e) {
+        return e.equal = `EQUAL`, e.notEqual = `NOT_EQUAL`, e
+    }({}),
+    W = (e, t) => {
+        var n;
+        let r = [];
+        return e == null || (n = e.hooks) == null || (n = n.hooks) == null || n.forEach(n => {
+            var i;
+            if (!(n.type === h.kit && t[n.key] && e.location === P.experiencePicker)) {
+                if (n.type === h.selectBox) {
+                    var a;
+                    let e = n.options;
+                    if (!(e != null && (a = e.options) != null && a.length)) return
+                }
+                n != null && (i = n.hiddenScenarios) != null && i.find(n => {
+                    var r, i;
+                    return (r = n.conditions) != null && r.length ? !!((i = n.conditions) != null && i.every(n => {
+                        if (n.type === V.hookValue) {
+                            let e = n.options,
+                                r = e.value,
+                                i = t[e.key];
+                            if (e.compare === H.equal) {
+                                if (r == i) return !0
+                            } else if (e.compare === H.notEqual && r != i) return !0
+                        } else if (n.type === V.modeType) {
+                            let t = e.modeType,
+                                r = n.options;
+                            return r.compare === U.equal ? t === r.mode : t !== r.mode
+                        }
+                        return !1
+                    })) : !1
+                }) || r.push(n)
+            }
+        }), r
+    },
+    G = (e, t) => {
+        let n = [];
+        return W({
             ...e,
-            location: k.editor
-        }, n).forEach(a => {
-            a.type === h.kit && n[a.key] && t.push({
-                type: B.kit,
-                value: n[a.key]
+            location: P.editor
+        }, t).forEach(e => {
+            e.type === h.kit && t[e.key] && n.push({
+                type: F.kit,
+                value: t[e.key]
             })
-        }), d.uniqBy(t, "value")
+        }), (0, E.uniqBy)(n, `value`)
     },
-    me = M(e => {
-        const [n] = m.useState(() => D(e.defaultState || p({
+    K = f(e => {
+        let [t] = _.useState(() => c(e.defaultState || M({
             hookJSON: e.hooks
-        }))), t = (u, o) => {
-            n[u] = o
-        }, i = L(n), a = JSON.stringify(i);
-        m.useEffect(() => {
-            e.onConnectedResourcesChange && e.onConnectedResourcesChange(le(e, i)), !e.readOnly && e.onStateChange && e.onStateChange(i)
-        }, [a, e.readOnly]);
-        const s = z(e, i);
-        return l.jsxs(l.Fragment, {
-            children: [e.header ? e.header(s.length) : null, s.map((u, o) => l.jsxs(m.Fragment, {
-                children: [l.jsx(ae, {
-                    hook: u,
-                    state: i,
-                    modifyState: t,
+        }))), n = (e, n) => {
+            t[e] = n
+        }, r = s(t), i = JSON.stringify(r);
+        _.useEffect(() => {
+            e.onConnectedResourcesChange && e.onConnectedResourcesChange(G(e, r)), !e.readOnly && e.onStateChange && e.onStateChange(r)
+        }, [i, e.readOnly]);
+        let a = W(e, r);
+        return (0, w.jsxs)(w.Fragment, {
+            children: [e.header ? e.header(a.length) : null, a.map((t, i) => (0, w.jsxs)(_.Fragment, {
+                children: [(0, w.jsx)(B, {
+                    hook: t,
+                    state: r,
+                    modifyState: n,
                     location: e.location,
                     readOnly: e.readOnly
-                }), o !== s.length - 1 && l.jsx("div", {
+                }), i !== a.length - 1 && (0, w.jsx)(`div`, {
                     style: {
                         height: 10
                     }
                 })]
-            }, `hook-form-${u.key}`)), e.footer ? e.footer(s.length) : null]
+            }, `hook-form-${t.key}`)), e.footer ? e.footer(a.length) : null]
         })
     });
 export {
-    p as H, B as I, T as M, Z as N, S as O, _ as S, A as a, R as b, G as c, K as d, J as e, me as f, k as g, C as h, O as i, Y as j, X as n
+    x as _, P as a, A as c, D as d, T as f, y as g, S as h, U as i, k as l, v as m, V as n, F as o, C as p, H as r, M as s, K as t, O as u
 };

@@ -1,30 +1,35 @@
+import "./rolldown-runtime.js";
 import {
-    j as n,
-    a5 as l
-} from "./_index.js";
-const i = e => {
-    const a = t => {
-        e.onClick && t.key === "Enter" && (t.preventDefault(), e.onClick())
-    };
-    return e.external || !e.to ? n.jsx("a", {
+    t as e
+} from "./react-1.js";
+import {
+    n as t
+} from "./dist-3.js";
+import {
+    t as n
+} from "./jsx-runtime.js";
+e();
+var r = n(),
+    i = e => e.external || !e.to ? (0, r.jsx)(`a`, {
         href: e.to,
-        tabIndex: Number(e.tabIndex || "0"),
+        tabIndex: Number(e.tabIndex || `0`),
         onClick: e.onClick,
-        onKeyPress: a,
+        onKeyPress: t => {
+            e.onClick && t.key === `Enter` && (t.preventDefault(), e.onClick())
+        },
         className: e.className,
         target: e.target,
         style: e.style,
         children: e.children
-    }) : n.jsx(l, {
+    }) : (0, r.jsx)(t, {
         to: e.to,
-        tabIndex: Number(e.tabIndex || "0"),
+        tabIndex: Number(e.tabIndex || `0`),
         onClick: e.onClick,
         className: e.className,
         target: e.target,
         style: e.style,
         children: e.children
-    })
-};
+    });
 export {
-    i as A
+    i as t
 };

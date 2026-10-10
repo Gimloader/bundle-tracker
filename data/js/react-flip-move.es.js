@@ -1,17 +1,22 @@
 import {
-    x as j,
-    r as g,
-    b2 as W,
-    bf as I
-} from "./_index.js";
+    o as e
+} from "./rolldown-runtime.js";
+import {
+    t
+} from "./react-1.js";
+import {
+    l as n
+} from "./assertThisInitialized.js";
+var r = e(t()),
+    i = e(n());
 
-function x(l) {
-    var e = !1;
+function a(e) {
+    var t = !1;
     return function() {
-        e || (console.warn(l), e = !0)
+        t || (console.warn(e), t = !0)
     }
 }
-var K = x(`
+var o = a(`
 >> Warning, via react-flip-move <<
 
 When using "wrapperless" mode (by supplying 'typeName' of 'null'), strange things happen when the direct parent has the default "static" position.
@@ -20,704 +25,662 @@ FlipMove has added 'position: relative' to this node, to ensure Flip Move animat
 
 To avoid seeing this warning, simply apply a non-static position to that parent node.
 `),
-    V = x(`
+    s = a(`
 >> Warning, via react-flip-move <<
 
 One or more of Flip Move's child elements have the html attribute 'disabled' set to true.
 
 Please note that this will cause animations to break in Internet Explorer 11 and below. Either remove the disabled attribute or set 'animation' to false.
 `),
-    O = {
+    c = {
         elevator: {
             from: {
-                transform: "scale(0)",
-                opacity: "0"
+                transform: `scale(0)`,
+                opacity: `0`
             },
             to: {
-                transform: "",
-                opacity: ""
+                transform: ``,
+                opacity: ``
             }
         },
         fade: {
             from: {
-                opacity: "0"
+                opacity: `0`
             },
             to: {
-                opacity: ""
+                opacity: ``
             }
         },
         accordionVertical: {
             from: {
-                transform: "scaleY(0)",
-                transformOrigin: "center top"
+                transform: `scaleY(0)`,
+                transformOrigin: `center top`
             },
             to: {
-                transform: "",
-                transformOrigin: "center top"
+                transform: ``,
+                transformOrigin: `center top`
             }
         },
         accordionHorizontal: {
             from: {
-                transform: "scaleX(0)",
-                transformOrigin: "left center"
+                transform: `scaleX(0)`,
+                transformOrigin: `left center`
             },
             to: {
-                transform: "",
-                transformOrigin: "left center"
+                transform: ``,
+                transformOrigin: `left center`
             }
         },
         none: null
     },
-    X = {
+    l = {
         elevator: {
             from: {
-                transform: "scale(1)",
-                opacity: "1"
+                transform: `scale(1)`,
+                opacity: `1`
             },
             to: {
-                transform: "scale(0)",
-                opacity: "0"
+                transform: `scale(0)`,
+                opacity: `0`
             }
         },
         fade: {
             from: {
-                opacity: "1"
+                opacity: `1`
             },
             to: {
-                opacity: "0"
+                opacity: `0`
             }
         },
         accordionVertical: {
             from: {
-                transform: "scaleY(1)",
-                transformOrigin: "center top"
+                transform: `scaleY(1)`,
+                transformOrigin: `center top`
             },
             to: {
-                transform: "scaleY(0)",
-                transformOrigin: "center top"
+                transform: `scaleY(0)`,
+                transformOrigin: `center top`
             }
         },
         accordionHorizontal: {
             from: {
-                transform: "scaleX(1)",
-                transformOrigin: "left center"
+                transform: `scaleX(1)`,
+                transformOrigin: `left center`
             },
             to: {
-                transform: "scaleX(0)",
-                transformOrigin: "left center"
+                transform: `scaleX(0)`,
+                transformOrigin: `left center`
             }
         },
         none: null
     },
-    Y = O,
-    y = "elevator",
-    z = "none",
-    N = function(e, r) {
-        for (var t = 0; t < r.length; t++)
-            if (e(r[t], t, r)) return r[t]
+    u = c,
+    d = `elevator`,
+    f = `none`,
+    p = function(e, t) {
+        for (var n = 0; n < t.length; n++)
+            if (e(t[n], n, t)) return t[n]
     },
-    U = function(e, r) {
-        for (var t = 0; t < r.length; t++)
-            if (!e(r[t], t, r)) return !1;
+    m = function(e, t) {
+        for (var n = 0; n < t.length; n++)
+            if (!e(t[n], n, t)) return !1;
         return !0
     },
-    D = function(e) {
-        return D = Array.isArray || function(r) {
-            return Object.prototype.toString.call(r) === "[object Array]"
-        }, D(e)
+    h = function(e) {
+        return h = Array.isArray || function(e) {
+            return Object.prototype.toString.call(e) === `[object Array]`
+        }, h(e)
     };
 
-function $(l) {
-    var e = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : [],
-        r = {};
-    return Object.keys(l).forEach(function(t) {
-        e.indexOf(t) === -1 && (r[t] = l[t])
-    }), r
+function g(e) {
+    var t = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : [],
+        n = {};
+    return Object.keys(e).forEach(function(r) {
+        t.indexOf(r) === -1 && (n[r] = e[r])
+    }), n
 }
 
-function q(l, e) {
-    var r = l === e;
-    if (r) return !0;
-    var t = !D(l) || !D(e),
-        i = l.length !== e.length;
-    return t || i ? !1 : U(function(s, n) {
-        return s === e[n]
-    }, l)
+function _(e, t) {
+    if (e === t) return !0;
+    var n = !h(e) || !h(t),
+        r = e.length !== t.length;
+    return n || r ? !1 : m(function(e, n) {
+        return e === t[n]
+    }, e)
 }
 
-function Z(l) {
-    var e = {};
-    return function(r) {
-        return e[r] || (e[r] = l(r)), e[r]
+function v(e) {
+    var t = {};
+    return function(n) {
+        return t[n] || (t[n] = e(n)), t[n]
     }
 }
-var G = Z(function(l) {
-        return l.replace(/([A-Z])/g, "-$1").toLowerCase()
+var y = v(function(e) {
+        return e.replace(/([A-Z])/g, `-$1`).toLowerCase()
     }),
-    J = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function(l) {
-        return typeof l
-    } : function(l) {
-        return l && typeof Symbol == "function" && l.constructor === Symbol && l !== Symbol.prototype ? "symbol" : typeof l
+    b = typeof Symbol == `function` && typeof Symbol.iterator == `symbol` ? function(e) {
+        return typeof e
+    } : function(e) {
+        return e && typeof Symbol == `function` && e.constructor === Symbol && e !== Symbol.prototype ? `symbol` : typeof e
     },
-    E = function(l, e) {
-        if (!(l instanceof e)) throw new TypeError("Cannot call a class as a function")
+    x = function(e, t) {
+        if (!(e instanceof t)) throw TypeError(`Cannot call a class as a function`)
     },
-    c = Object.assign || function(l) {
-        for (var e = 1; e < arguments.length; e++) {
-            var r = arguments[e];
-            for (var t in r) Object.prototype.hasOwnProperty.call(r, t) && (l[t] = r[t])
+    S = Object.assign || function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+            var n = arguments[t];
+            for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
         }
-        return l
+        return e
     },
-    w = function(l, e) {
-        if (typeof e != "function" && e !== null) throw new TypeError("Super expression must either be null or a function, not " + typeof e);
-        l.prototype = Object.create(e && e.prototype, {
+    C = function(e, t) {
+        if (typeof t != `function` && t !== null) throw TypeError(`Super expression must either be null or a function, not ` + typeof t);
+        e.prototype = Object.create(t && t.prototype, {
             constructor: {
-                value: l,
+                value: e,
                 enumerable: !1,
                 writable: !0,
                 configurable: !0
             }
-        }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(l, e) : l.__proto__ = e)
+        }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
     },
-    P = function(l, e) {
-        if (!l) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-        return e && (typeof e == "object" || typeof e == "function") ? e : l
+    w = function(e, t) {
+        if (!e) throw ReferenceError(`this hasn't been initialised - super() hasn't been called`);
+        return t && (typeof t == `object` || typeof t == `function`) ? t : e
     };
 
-function Q(l) {
-    var e, r;
-    return r = e = (function(t) {
-        w(i, t);
+function T(e) {
+    var t, n = t = function(t) {
+        C(n, t);
 
-        function i() {
-            return E(this, i), P(this, t.apply(this, arguments))
+        function n() {
+            return x(this, n), w(this, t.apply(this, arguments))
         }
-        return i.prototype.checkChildren = function(n) {}, i.prototype.convertProps = function(n) {
-            var o = {
-                children: n.children,
-                easing: n.easing,
-                onStart: n.onStart,
-                onFinish: n.onFinish,
-                onStartAll: n.onStartAll,
-                onFinishAll: n.onFinishAll,
-                typeName: n.typeName,
-                disableAllAnimations: n.disableAllAnimations,
-                getPosition: n.getPosition,
-                maintainContainerHeight: n.maintainContainerHeight,
-                verticalAlignment: n.verticalAlignment,
-                duration: this.convertTimingProp("duration"),
-                delay: this.convertTimingProp("delay"),
-                staggerDurationBy: this.convertTimingProp("staggerDurationBy"),
-                staggerDelayBy: this.convertTimingProp("staggerDelayBy"),
-                appearAnimation: this.convertAnimationProp(n.appearAnimation, Y),
-                enterAnimation: this.convertAnimationProp(n.enterAnimation, O),
-                leaveAnimation: this.convertAnimationProp(n.leaveAnimation, X),
+        return n.prototype.checkChildren = function(e) {}, n.prototype.convertProps = function(e) {
+            var t = {
+                children: e.children,
+                easing: e.easing,
+                onStart: e.onStart,
+                onFinish: e.onFinish,
+                onStartAll: e.onStartAll,
+                onFinishAll: e.onFinishAll,
+                typeName: e.typeName,
+                disableAllAnimations: e.disableAllAnimations,
+                getPosition: e.getPosition,
+                maintainContainerHeight: e.maintainContainerHeight,
+                verticalAlignment: e.verticalAlignment,
+                duration: this.convertTimingProp(`duration`),
+                delay: this.convertTimingProp(`delay`),
+                staggerDurationBy: this.convertTimingProp(`staggerDurationBy`),
+                staggerDelayBy: this.convertTimingProp(`staggerDelayBy`),
+                appearAnimation: this.convertAnimationProp(e.appearAnimation, u),
+                enterAnimation: this.convertAnimationProp(e.enterAnimation, c),
+                leaveAnimation: this.convertAnimationProp(e.leaveAnimation, l),
                 delegated: {}
             };
-            this.checkChildren(o.children);
-            var a = Object.keys(o),
-                d = $(this.props, a);
-            return d.style = c({
-                position: "relative"
-            }, d.style), o.delegated = d, o
-        }, i.prototype.convertTimingProp = function(n) {
-            var o = this.props[n],
-                a = typeof o == "number" ? o : parseInt(o, 10);
-            if (isNaN(a)) {
-                var d = i.defaultProps[n];
-                return d
-            }
-            return a
-        }, i.prototype.convertAnimationProp = function(n, o) {
-            switch (typeof n > "u" ? "undefined" : J(n)) {
-                case "boolean":
-                    return o[n ? y : z];
-                case "string": {
-                    var a = Object.keys(o);
-                    return a.indexOf(n) === -1 ? o[y] : o[n]
-                }
+            this.checkChildren(t.children);
+            var n = Object.keys(t),
+                r = g(this.props, n);
+            return r.style = S({
+                position: `relative`
+            }, r.style), t.delegated = r, t
+        }, n.prototype.convertTimingProp = function(e) {
+            var t = this.props[e],
+                r = typeof t == `number` ? t : parseInt(t, 10);
+            return isNaN(r) ? n.defaultProps[e] : r
+        }, n.prototype.convertAnimationProp = function(e, t) {
+            switch (e === void 0 ? `undefined` : b(e)) {
+                case `boolean`:
+                    return t[e ? d : f];
+                case `string`:
+                    return Object.keys(t).indexOf(e) === -1 ? t[d] : t[e];
                 default:
-                    return n
+                    return e
             }
-        }, i.prototype.render = function() {
-            return j.createElement(l, this.convertProps(this.props))
-        }, i
-    })(g.Component), e.defaultProps = {
-        easing: "ease-in-out",
+        }, n.prototype.render = function() {
+            return r.createElement(e, this.convertProps(this.props))
+        }, n
+    }(r.Component);
+    return t.defaultProps = {
+        easing: `ease-in-out`,
         duration: 350,
         delay: 0,
         staggerDurationBy: 0,
         staggerDelayBy: 0,
-        typeName: "div",
-        enterAnimation: y,
-        leaveAnimation: y,
+        typeName: `div`,
+        enterAnimation: d,
+        leaveAnimation: d,
         disableAllAnimations: !1,
-        getPosition: function(i) {
-            return i.getBoundingClientRect()
+        getPosition: function(e) {
+            return e.getBoundingClientRect()
         },
         maintainContainerHeight: !1,
-        verticalAlignment: "top"
-    }, r
+        verticalAlignment: `top`
+    }, n
 }
 
-function v(l) {
-    var e = l.domNode,
-        r = l.styles;
-    Object.keys(r).forEach(function(t) {
-        e.style.setProperty(G(t), r[t])
+function E(e) {
+    var t = e.domNode,
+        n = e.styles;
+    Object.keys(n).forEach(function(e) {
+        t.style.setProperty(y(e), n[e])
     })
 }
 
-function tt() {
-    var l = {
-        transition: "transitionend",
-        "-o-transition": "oTransitionEnd",
-        "-moz-transition": "transitionend",
-        "-webkit-transition": "webkitTransitionEnd"
+function D() {
+    var e = {
+        transition: `transitionend`,
+        "-o-transition": `oTransitionEnd`,
+        "-moz-transition": `transitionend`,
+        "-webkit-transition": `webkitTransitionEnd`
     };
-    if (typeof document > "u") return "";
-    var e = document.createElement("fakeelement"),
-        r = N(function(t) {
-            return e.style.getPropertyValue(t) !== void 0
-        }, Object.keys(l));
-    return r ? l[r] : ""
+    if (typeof document > `u`) return ``;
+    var t = document.createElement(`fakeelement`),
+        n = p(function(e) {
+            return t.style.getPropertyValue(e) !== void 0
+        }, Object.keys(e));
+    return n ? e[n] : ``
 }
-var et = function(e) {
-        var r = e.childDomNode,
-            t = e.parentDomNode,
-            i = e.getPosition,
-            s = i(t),
-            n = i(r),
-            o = n.top,
-            a = n.left,
-            d = n.right,
-            p = n.bottom,
-            h = n.width,
-            f = n.height;
+var O = function(e) {
+        var t = e.childDomNode,
+            n = e.parentDomNode,
+            r = e.getPosition,
+            i = r(n),
+            a = r(t),
+            o = a.top,
+            s = a.left,
+            c = a.right,
+            l = a.bottom,
+            u = a.width,
+            d = a.height;
         return {
-            top: o - s.top,
-            left: a - s.left,
-            right: s.right - d,
-            bottom: s.bottom - p,
-            width: h,
-            height: f
+            top: o - i.top,
+            left: s - i.left,
+            right: i.right - c,
+            bottom: i.bottom - l,
+            width: u,
+            height: d
         }
     },
-    C = function(e) {
-        var r = e.childDomNode,
-            t = e.childBoundingBox,
-            i = e.parentBoundingBox,
-            s = e.getPosition,
-            n = {
-                top: 0,
-                left: 0
-            },
-            o = t || n,
-            a = i || n,
-            d = s(r),
-            p = {
-                top: d.top - a.top,
-                left: d.left - a.left
-            };
-        return [o.left - p.left, o.top - p.top]
-    },
-    nt = function(e, r) {
-        var t = e.domNode,
-            i = e.boundingBox;
-        if (!(!t || !i)) {
-            var s = window.getComputedStyle(t),
-                n = ["margin-top", "margin-left", "margin-right"],
-                o = n.reduce(function(p, h) {
-                    var f, m = s.getPropertyValue(h);
-                    return c({}, p, (f = {}, f[h] = Number(m.replace("px", "")), f))
-                }, {}),
-                a = r === "bottom" ? i.top - i.height : i.top,
-                d = {
-                    position: "absolute",
-                    top: a - o["margin-top"] + "px",
-                    left: i.left - o["margin-left"] + "px",
-                    right: i.right - o["margin-right"] + "px"
-                };
-            v({
-                domNode: t,
-                styles: d
-            })
-        }
-    },
-    it = function(e) {
-        var r = e.domNode,
-            t = e.parentData,
+    k = function(e) {
+        var t = e.childDomNode,
+            n = e.childBoundingBox,
+            r = e.parentBoundingBox,
             i = e.getPosition,
-            s = t.domNode,
-            n = t.boundingBox;
-        if (!(!s || !n)) {
-            v({
-                domNode: r,
+            a = {
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                height: 0,
+                width: 0
+            },
+            o = n || a,
+            s = r || a,
+            c = i(t),
+            l = {
+                top: c.top - s.top,
+                left: c.left - s.left
+            };
+        return [o.left - l.left, o.top - l.top]
+    },
+    A = function(e, t) {
+        var n = e.domNode,
+            r = e.boundingBox;
+        if (n && r) {
+            var i = window.getComputedStyle(n),
+                a = [`margin-top`, `margin-left`, `margin-right`].reduce(function(e, t) {
+                    var n, r = i.getPropertyValue(t);
+                    return S({}, e, (n = {}, n[t] = Number(r.replace(`px`, ``)), n))
+                }, {});
+            E({
+                domNode: n,
                 styles: {
-                    height: "0"
+                    position: `absolute`,
+                    top: (t === `bottom` ? r.top - r.height : r.top) - a[`margin-top`] + `px`,
+                    left: r.left - a[`margin-left`] + `px`,
+                    right: r.right - a[`margin-right`] + `px`
                 }
-            });
-            var o = n.height,
-                a = i(s).height,
-                d = o - a,
-                p = {
-                    height: d > 0 ? d + "px" : "0"
-                };
-            v({
-                domNode: r,
-                styles: p
             })
         }
     },
-    rt = function(e) {
-        if (typeof HTMLElement > "u") return null;
+    j = function(e) {
+        var t = e.domNode,
+            n = e.parentData,
+            r = e.getPosition,
+            i = n.domNode,
+            a = n.boundingBox;
+        if (i && a) {
+            E({
+                domNode: t,
+                styles: {
+                    height: `0`
+                }
+            });
+            var o = a.height - r(i).height;
+            E({
+                domNode: t,
+                styles: {
+                    height: o > 0 ? o + `px` : `0`
+                }
+            })
+        }
+    },
+    M = function(e) {
+        if (typeof HTMLElement > `u`) return null;
         if (e instanceof HTMLElement) return e;
-        var r = I.findDOMNode(e);
-        return r && r.nodeType === Node.TEXT_NODE ? null : r
+        var t = (0, i.findDOMNode)(e);
+        return t && t.nodeType === Node.TEXT_NODE ? null : t
     },
-    ot = function(e, r) {
-        var t = r.delay,
-            i = r.duration,
-            s = r.staggerDurationBy,
-            n = r.staggerDelayBy,
-            o = r.easing;
-        t += e * n, i += e * s;
-        var a = ["transform", "opacity"];
-        return a.map(function(d) {
-            return d + " " + i + "ms " + o + " " + t + "ms"
-        }).join(", ")
+    N = function(e, t) {
+        var n = t.delay,
+            r = t.duration,
+            i = t.staggerDurationBy,
+            a = t.staggerDelayBy,
+            o = t.easing;
+        return n += e * a, r += e * i, [`transform`, `opacity`].map(function(e) {
+            return e + ` ` + r + `ms ` + o + ` ` + n + `ms`
+        }).join(`, `)
     },
-    b = tt(),
-    at = !b;
+    P = D(),
+    F = !P;
 
-function u(l) {
-    return l.key || ""
+function I(e) {
+    return e.key || ``
 }
 
-function A(l) {
-    return g.Children.toArray(l)
+function L(e) {
+    return r.Children.toArray(e)
 }
-var st = (function(l) {
-        w(e, l);
+var R = T(function(e) {
+    C(t, e);
 
-        function e() {
-            var r, t, i;
-            E(this, e);
-            for (var s = arguments.length, n = Array(s), o = 0; o < s; o++) n[o] = arguments[o];
-            return i = (r = (t = P(this, l.call.apply(l, [this].concat(n))), t), t.state = {
-                children: A(t.props ? t.props.children : []).map(function(a) {
-                    return c({}, a, {
-                        element: a,
-                        appearing: !0
-                    })
+    function t() {
+        var n, r, a;
+        x(this, t);
+        var s = [...arguments];
+        return a = (n = (r = w(this, e.call.apply(e, [this].concat(s))), r), r.state = {
+            children: L(r.props ? r.props.children : []).map(function(e) {
+                return S({}, e, {
+                    element: e,
+                    appearing: !0
                 })
-            }, t.childrenData = {}, t.parentData = {
-                domNode: null,
-                boundingBox: null
-            }, t.heightPlaceholderData = {
-                domNode: null
-            }, t.remainingAnimations = 0, t.childrenToAnimate = [], t.findDOMContainer = function() {
-                var a = W.findDOMNode(t),
-                    d = a && a.parentNode;
-                !d || !(d instanceof HTMLElement) || (window.getComputedStyle(d).position === "static" && (d.style.position = "relative", K()), t.parentData.domNode = d)
-            }, t.runAnimation = function() {
-                var a = t.state.children.filter(t.doesChildNeedToBeAnimated),
-                    d = a.map(function(p) {
-                        return t.computeInitialStyles(p)
-                    });
-                a.forEach(function(p, h) {
-                    t.remainingAnimations += 1, t.childrenToAnimate.push(u(p)), t.animateChild(p, h, d[h])
-                }), typeof t.props.onStartAll == "function" && t.callChildrenHook(t.props.onStartAll)
-            }, t.doesChildNeedToBeAnimated = function(a) {
-                if (!u(a)) return !1;
-                var d = t.getChildData(u(a)),
-                    p = d.domNode,
-                    h = d.boundingBox,
-                    f = t.parentData.boundingBox;
-                if (!p) return !1;
-                var m = t.props,
-                    S = m.appearAnimation,
-                    H = m.enterAnimation,
-                    T = m.leaveAnimation,
-                    F = m.getPosition,
-                    M = a.appearing && S,
-                    _ = a.entering && H,
-                    k = a.leaving && T;
-                if (M || _ || k) return !0;
-                var B = C({
-                        childDomNode: p,
-                        childBoundingBox: h,
-                        parentBoundingBox: f,
-                        getPosition: F
+            })
+        }, r.childrenData = {}, r.parentData = {
+            domNode: null,
+            boundingBox: null
+        }, r.heightPlaceholderData = {
+            domNode: null
+        }, r.remainingAnimations = 0, r.childrenToAnimate = [], r.findDOMContainer = function() {
+            var e = i.findDOMNode(r),
+                t = e && e.parentNode;
+            t && t instanceof HTMLElement && (window.getComputedStyle(t).position === `static` && (t.style.position = `relative`, o()), r.parentData.domNode = t)
+        }, r.runAnimation = function() {
+            var e = r.state.children.filter(r.doesChildNeedToBeAnimated),
+                t = e.map(function(e) {
+                    return r.computeInitialStyles(e)
+                });
+            e.forEach(function(e, n) {
+                r.remainingAnimations += 1, r.childrenToAnimate.push(I(e)), r.animateChild(e, n, t[n])
+            }), typeof r.props.onStartAll == `function` && r.callChildrenHook(r.props.onStartAll)
+        }, r.doesChildNeedToBeAnimated = function(e) {
+            if (!I(e)) return !1;
+            var t = r.getChildData(I(e)),
+                n = t.domNode,
+                i = t.boundingBox,
+                a = r.parentData.boundingBox;
+            if (!n) return !1;
+            var o = r.props,
+                s = o.appearAnimation,
+                c = o.enterAnimation,
+                l = o.leaveAnimation,
+                u = o.getPosition,
+                d = e.appearing && s,
+                f = e.entering && c,
+                p = e.leaving && l;
+            if (d || f || p) return !0;
+            var m = k({
+                    childDomNode: n,
+                    childBoundingBox: i,
+                    parentBoundingBox: a,
+                    getPosition: u
+                }),
+                h = m[0],
+                g = m[1];
+            return h !== 0 || g !== 0
+        }, n), w(r, a)
+    }
+    return t.prototype.componentDidMount = function() {
+        this.props.typeName === null && this.findDOMContainer(), this.props.appearAnimation && !this.isAnimationDisabled(this.props) && (this.prepForAnimation(), this.runAnimation())
+    }, t.prototype.componentDidUpdate = function(e) {
+        this.props.typeName === null && this.findDOMContainer(), !_(L(this.props.children).map(function(e) {
+            return e.key
+        }), L(e.children).map(function(e) {
+            return e.key
+        })) && !this.isAnimationDisabled(this.props) && (this.prepForAnimation(), this.runAnimation())
+    }, t.prototype.calculateNextSetOfChildren = function(e) {
+        var t = this,
+            n = e.map(function(e) {
+                var n = t.findChildByKey(e.key);
+                return S({}, e, {
+                    element: e,
+                    entering: !n || n.leaving
+                })
+            }),
+            r = 0;
+        return this.state.children.forEach(function(i, a) {
+            if (!p(function(e) {
+                    return e.key === I(i)
+                }, e) && t.props.leaveAnimation) {
+                var o = S({}, i, {
+                        leaving: !0
                     }),
-                    R = B[0],
-                    L = B[1];
-                return R !== 0 || L !== 0
-            }, r), P(t, i)
-        }
-        return e.prototype.componentDidMount = function() {
-            this.props.typeName === null && this.findDOMContainer();
-            var t = this.props.appearAnimation && !this.isAnimationDisabled(this.props);
-            t && (this.prepForAnimation(), this.runAnimation())
-        }, e.prototype.componentDidUpdate = function(t) {
-            this.props.typeName === null && this.findDOMContainer();
-            var i = A(this.props.children).map(function(o) {
-                    return o.key
-                }),
-                s = A(t.children).map(function(o) {
-                    return o.key
-                }),
-                n = !q(i, s) && !this.isAnimationDisabled(this.props);
-            n && (this.prepForAnimation(), this.runAnimation())
-        }, e.prototype.calculateNextSetOfChildren = function(t) {
-            var i = this,
-                s = t.map(function(o) {
-                    var a = i.findChildByKey(o.key),
-                        d = !a || a.leaving;
-                    return c({}, o, {
-                        element: o,
-                        entering: d
-                    })
-                }),
-                n = 0;
-            return this.state.children.forEach(function(o, a) {
-                var d = !N(function(f) {
-                    var m = f.key;
-                    return m === u(o)
-                }, t);
-                if (!(!d || !i.props.leaveAnimation)) {
-                    var p = c({}, o, {
-                            leaving: !0
-                        }),
-                        h = a + n;
-                    s.splice(h, 0, p), n += 1
-                }
-            }), s
-        }, e.prototype.prepForAnimation = function() {
-            var t = this,
-                i = this.props,
-                s = i.leaveAnimation,
-                n = i.maintainContainerHeight,
-                o = i.getPosition;
-            if (s) {
-                var a = this.state.children.filter(function(d) {
-                    return d.leaving
-                });
-                a.forEach(function(d) {
-                    var p = t.getChildData(u(d));
-                    !t.isAnimationDisabled(t.props) && p.domNode && p.domNode.disabled && V(), p.boundingBox && nt(p, t.props.verticalAlignment)
-                }), n && this.heightPlaceholderData.domNode && it({
-                    domNode: this.heightPlaceholderData.domNode,
-                    parentData: this.parentData,
-                    getPosition: o
-                })
+                    s = a + r;
+                n.splice(s, 0, o), r += 1
             }
-            this.state.children.forEach(function(d) {
-                var p = t.getChildData(u(d)),
-                    h = p.domNode;
-                h && !d.entering && !d.leaving && v({
-                    domNode: h,
-                    styles: {
-                        transition: ""
-                    }
-                })
+        }), n
+    }, t.prototype.prepForAnimation = function() {
+        var e = this,
+            t = this.props,
+            n = t.leaveAnimation,
+            r = t.maintainContainerHeight,
+            i = t.getPosition;
+        n && (this.state.children.filter(function(e) {
+            return e.leaving
+        }).forEach(function(t) {
+            var n = e.getChildData(I(t));
+            !e.isAnimationDisabled(e.props) && n.domNode && n.domNode.disabled && s(), n.boundingBox && A(n, e.props.verticalAlignment)
+        }), r && this.heightPlaceholderData.domNode && j({
+            domNode: this.heightPlaceholderData.domNode,
+            parentData: this.parentData,
+            getPosition: i
+        })), this.state.children.forEach(function(t) {
+            var n = e.getChildData(I(t)).domNode;
+            n && !t.entering && !t.leaving && E({
+                domNode: n,
+                styles: {
+                    transition: ``
+                }
             })
-        }, e.prototype.UNSAFE_componentWillReceiveProps = function(t) {
-            this.updateBoundingBoxCaches();
-            var i = A(t.children);
-            this.setState({
-                children: this.isAnimationDisabled(t) ? i.map(function(s) {
-                    return c({}, s, {
-                        element: s
-                    })
-                }) : this.calculateNextSetOfChildren(i)
-            })
-        }, e.prototype.animateChild = function(t, i, s) {
-            var n = this,
-                o = this.getChildData(u(t)),
-                a = o.domNode;
-            a && (v({
-                domNode: a,
-                styles: s
-            }), this.props.onStart && this.props.onStart(t, a), requestAnimationFrame(function() {
-                requestAnimationFrame(function() {
-                    var d = {
-                        transition: ot(i, n.props),
-                        transform: "",
-                        opacity: ""
-                    };
-                    t.appearing && n.props.appearAnimation ? d = c({}, d, n.props.appearAnimation.to) : t.entering && n.props.enterAnimation ? d = c({}, d, n.props.enterAnimation.to) : t.leaving && n.props.leaveAnimation && (d = c({}, d, n.props.leaveAnimation.to)), v({
-                        domNode: a,
-                        styles: d
-                    })
+        })
+    }, t.prototype.UNSAFE_componentWillReceiveProps = function(e) {
+        this.updateBoundingBoxCaches();
+        var t = L(e.children);
+        this.setState({
+            children: this.isAnimationDisabled(e) ? t.map(function(e) {
+                return S({}, e, {
+                    element: e
                 })
-            }), this.bindTransitionEndHandler(t))
-        }, e.prototype.bindTransitionEndHandler = function(t) {
-            var i = this,
-                s = this.getChildData(u(t)),
-                n = s.domNode;
-            if (n) {
-                var o = function a(d) {
-                    d.target === n && (n.style.transition = "", i.triggerFinishHooks(t, n), n.removeEventListener(b, a), t.leaving && i.removeChildData(u(t)))
+            }) : this.calculateNextSetOfChildren(t)
+        })
+    }, t.prototype.animateChild = function(e, t, n) {
+        var r = this,
+            i = this.getChildData(I(e)).domNode;
+        i && (E({
+            domNode: i,
+            styles: n
+        }), this.props.onStart && this.props.onStart(e, i), requestAnimationFrame(function() {
+            requestAnimationFrame(function() {
+                var n = {
+                    transition: N(t, r.props),
+                    transform: ``,
+                    opacity: ``
                 };
-                n.addEventListener(b, o)
-            }
-        }, e.prototype.triggerFinishHooks = function(t, i) {
-            var s = this;
-            if (this.props.onFinish && this.props.onFinish(t, i), this.remainingAnimations -= 1, this.remainingAnimations === 0) {
-                var n = this.state.children.filter(function(o) {
-                    var a = o.leaving;
-                    return !a
-                }).map(function(o) {
-                    return c({}, o, {
-                        element: o.element,
-                        appearing: !1,
-                        entering: !1
-                    })
-                });
-                this.setState({
-                    children: n
-                }, function() {
-                    typeof s.props.onFinishAll == "function" && s.callChildrenHook(s.props.onFinishAll), s.childrenToAnimate = []
-                }), this.heightPlaceholderData.domNode && (this.heightPlaceholderData.domNode.style.height = "0")
-            }
-        }, e.prototype.callChildrenHook = function(t) {
-            var i = this,
-                s = [],
-                n = [];
-            this.childrenToAnimate.forEach(function(o) {
-                var a = i.findChildByKey(o);
-                a && (s.push(a), i.hasChildData(o) && n.push(i.getChildData(o).domNode))
-            }), t(s, n)
-        }, e.prototype.updateBoundingBoxCaches = function() {
-            var t = this,
-                i = this.parentData.domNode;
-            if (i) {
-                this.parentData.boundingBox = this.props.getPosition(i);
-                var s = [];
-                this.state.children.forEach(function(n) {
-                    var o = u(n);
-                    if (!o) {
-                        s.push(null);
-                        return
-                    }
-                    if (!t.hasChildData(o)) {
-                        s.push(null);
-                        return
-                    }
-                    var a = t.getChildData(o);
-                    if (!a.domNode || !n) {
-                        s.push(null);
-                        return
-                    }
-                    s.push(et({
-                        childDomNode: a.domNode,
-                        parentDomNode: i,
-                        getPosition: t.props.getPosition
-                    }))
-                }), this.state.children.forEach(function(n, o) {
-                    var a = u(n),
-                        d = s[o];
-                    a && t.setChildData(a, {
-                        boundingBox: d
-                    })
-                })
-            }
-        }, e.prototype.computeInitialStyles = function(t) {
-            if (t.appearing) return this.props.appearAnimation ? this.props.appearAnimation.from : {};
-            if (t.entering) return this.props.enterAnimation ? c({
-                position: "",
-                top: "",
-                left: "",
-                right: "",
-                bottom: ""
-            }, this.props.enterAnimation.from) : {};
-            if (t.leaving) return this.props.leaveAnimation ? this.props.leaveAnimation.from : {};
-            var i = this.getChildData(u(t)),
-                s = i.domNode,
-                n = i.boundingBox,
-                o = this.parentData.boundingBox;
-            if (!s) return {};
-            var a = C({
-                    childDomNode: s,
-                    childBoundingBox: n,
-                    parentBoundingBox: o,
-                    getPosition: this.props.getPosition
-                }),
-                d = a[0],
-                p = a[1];
-            return {
-                transform: "translate(" + d + "px, " + p + "px)"
-            }
-        }, e.prototype.isAnimationDisabled = function(t) {
-            return at || t.disableAllAnimations || t.duration === 0 && t.delay === 0 && t.staggerDurationBy === 0 && t.staggerDelayBy === 0
-        }, e.prototype.findChildByKey = function(t) {
-            return N(function(i) {
-                return u(i) === t
-            }, this.state.children)
-        }, e.prototype.hasChildData = function(t) {
-            return Object.prototype.hasOwnProperty.call(this.childrenData, t)
-        }, e.prototype.getChildData = function(t) {
-            return this.hasChildData(t) ? this.childrenData[t] : {}
-        }, e.prototype.setChildData = function(t, i) {
-            this.childrenData[t] = c({}, this.getChildData(t), i)
-        }, e.prototype.removeChildData = function(t) {
-            delete this.childrenData[t], this.setState(function(i) {
-                return c({}, i, {
-                    children: i.children.filter(function(s) {
-                        return s.element.key !== t
-                    })
+                e.appearing && r.props.appearAnimation ? n = S({}, n, r.props.appearAnimation.to) : e.entering && r.props.enterAnimation ? n = S({}, n, r.props.enterAnimation.to) : e.leaving && r.props.leaveAnimation && (n = S({}, n, r.props.leaveAnimation.to)), E({
+                    domNode: i,
+                    styles: n
                 })
             })
-        }, e.prototype.createHeightPlaceholder = function() {
-            var t = this,
-                i = this.props.typeName,
-                s = i === "ul" || i === "ol",
-                n = s ? "li" : "div";
-            return g.createElement(n, {
-                key: "height-placeholder",
-                ref: function(a) {
-                    t.heightPlaceholderData.domNode = a
-                },
-                style: {
-                    visibility: "hidden",
-                    height: 0
-                }
-            })
-        }, e.prototype.childrenWithRefs = function() {
-            var t = this;
-            return this.state.children.map(function(i) {
-                return g.cloneElement(i.element, {
-                    ref: function(n) {
-                        if (n) {
-                            var o = rt(n);
-                            t.setChildData(u(i), {
-                                domNode: o
-                            })
-                        }
-                    }
+        }), this.bindTransitionEndHandler(e))
+    }, t.prototype.bindTransitionEndHandler = function(e) {
+        var t = this,
+            n = this.getChildData(I(e)).domNode;
+        n && n.addEventListener(P, function r(i) {
+            i.target === n && (n.style.transition = ``, t.triggerFinishHooks(e, n), n.removeEventListener(P, r), e.leaving && t.removeChildData(I(e)))
+        })
+    }, t.prototype.triggerFinishHooks = function(e, t) {
+        var n = this;
+        if (this.props.onFinish && this.props.onFinish(e, t), --this.remainingAnimations, this.remainingAnimations === 0) {
+            var r = this.state.children.filter(function(e) {
+                return !e.leaving
+            }).map(function(e) {
+                return S({}, e, {
+                    element: e.element,
+                    appearing: !1,
+                    entering: !1
                 })
-            })
-        }, e.prototype.render = function() {
-            var t = this,
-                i = this.props,
-                s = i.typeName,
-                n = i.delegated,
-                o = i.leaveAnimation,
-                a = i.maintainContainerHeight,
-                d = this.childrenWithRefs();
-            if (o && a && d.push(this.createHeightPlaceholder()), !s) return d;
-            var p = c({}, n, {
-                children: d,
-                ref: function(f) {
-                    t.parentData.domNode = f
-                }
             });
-            return g.createElement(s, p)
-        }, e
-    })(g.Component),
-    dt = Q(st);
+            this.setState({
+                children: r
+            }, function() {
+                typeof n.props.onFinishAll == `function` && n.callChildrenHook(n.props.onFinishAll), n.childrenToAnimate = []
+            }), this.heightPlaceholderData.domNode && (this.heightPlaceholderData.domNode.style.height = `0`)
+        }
+    }, t.prototype.callChildrenHook = function(e) {
+        var t = this,
+            n = [],
+            r = [];
+        this.childrenToAnimate.forEach(function(e) {
+            var i = t.findChildByKey(e);
+            i && (n.push(i), t.hasChildData(e) && r.push(t.getChildData(e).domNode))
+        }), e(n, r)
+    }, t.prototype.updateBoundingBoxCaches = function() {
+        var e = this,
+            t = this.parentData.domNode;
+        if (t) {
+            this.parentData.boundingBox = this.props.getPosition(t);
+            var n = [];
+            this.state.children.forEach(function(r) {
+                var i = I(r);
+                if (!i) n.push(null);
+                else if (!e.hasChildData(i)) n.push(null);
+                else {
+                    var a = e.getChildData(i);
+                    !a.domNode || !r ? n.push(null) : n.push(O({
+                        childDomNode: a.domNode,
+                        parentDomNode: t,
+                        getPosition: e.props.getPosition
+                    }))
+                }
+            }), this.state.children.forEach(function(t, r) {
+                var i = I(t),
+                    a = n[r];
+                i && e.setChildData(i, {
+                    boundingBox: a
+                })
+            })
+        }
+    }, t.prototype.computeInitialStyles = function(e) {
+        if (e.appearing) return this.props.appearAnimation ? this.props.appearAnimation.from : {};
+        if (e.entering) return this.props.enterAnimation ? S({
+            position: ``,
+            top: ``,
+            left: ``,
+            right: ``,
+            bottom: ``
+        }, this.props.enterAnimation.from) : {};
+        if (e.leaving) return this.props.leaveAnimation ? this.props.leaveAnimation.from : {};
+        var t = this.getChildData(I(e)),
+            n = t.domNode,
+            r = t.boundingBox,
+            i = this.parentData.boundingBox;
+        if (!n) return {};
+        var a = k({
+                childDomNode: n,
+                childBoundingBox: r,
+                parentBoundingBox: i,
+                getPosition: this.props.getPosition
+            }),
+            o = a[0],
+            s = a[1];
+        return {
+            transform: `translate(` + o + `px, ` + s + `px)`
+        }
+    }, t.prototype.isAnimationDisabled = function(e) {
+        return F || e.disableAllAnimations || e.duration === 0 && e.delay === 0 && e.staggerDurationBy === 0 && e.staggerDelayBy === 0
+    }, t.prototype.findChildByKey = function(e) {
+        return p(function(t) {
+            return I(t) === e
+        }, this.state.children)
+    }, t.prototype.hasChildData = function(e) {
+        return Object.prototype.hasOwnProperty.call(this.childrenData, e)
+    }, t.prototype.getChildData = function(e) {
+        return this.hasChildData(e) ? this.childrenData[e] : {}
+    }, t.prototype.setChildData = function(e, t) {
+        this.childrenData[e] = S({}, this.getChildData(e), t)
+    }, t.prototype.removeChildData = function(e) {
+        delete this.childrenData[e], this.setState(function(t) {
+            return S({}, t, {
+                children: t.children.filter(function(t) {
+                    return t.element.key !== e
+                })
+            })
+        })
+    }, t.prototype.createHeightPlaceholder = function() {
+        var e = this,
+            t = this.props.typeName;
+        return (0, r.createElement)(t === `ul` || t === `ol` ? `li` : `div`, {
+            key: `height-placeholder`,
+            ref: function(t) {
+                e.heightPlaceholderData.domNode = t
+            },
+            style: {
+                visibility: `hidden`,
+                height: 0
+            }
+        })
+    }, t.prototype.childrenWithRefs = function() {
+        var e = this;
+        return this.state.children.map(function(t) {
+            return (0, r.cloneElement)(t.element, {
+                ref: function(n) {
+                    if (n) {
+                        var r = M(n);
+                        e.setChildData(I(t), {
+                            domNode: r
+                        })
+                    }
+                }
+            })
+        })
+    }, t.prototype.render = function() {
+        var e = this,
+            t = this.props,
+            n = t.typeName,
+            i = t.delegated,
+            a = t.leaveAnimation,
+            o = t.maintainContainerHeight,
+            s = this.childrenWithRefs();
+        if (a && o && s.push(this.createHeightPlaceholder()), !n) return s;
+        var c = S({}, i, {
+            children: s,
+            ref: function(t) {
+                e.parentData.domNode = t
+            }
+        });
+        return (0, r.createElement)(n, c)
+    }, t
+}(r.Component));
 export {
-    dt as e
+    R as t
 };

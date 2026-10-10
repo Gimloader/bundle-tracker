@@ -1,10 +1,10 @@
-const $ = o => {
-        const r = Math.floor(o / 3600),
-            s = Math.floor(o % 3600 / 60),
-            e = Math.floor(o % 60);
-        return r > 0 ? `${r}:${t(s)}:${t(e)}` : `${s}:${t(e)}`
+var e = e => {
+        let n = Math.floor(e / 3600),
+            r = Math.floor(e % 3600 / 60),
+            i = Math.floor(e % 60);
+        return n > 0 ? `${n}:${t(r)}:${t(i)}` : `${r}:${t(i)}`
     },
-    t = o => o < 10 ? `0${o}` : `${o}`;
+    t = e => e < 10 ? `0${e}` : `${e}`;
 export {
-    $ as S
+    e as t
 };

@@ -1,699 +1,727 @@
 import {
-    r as i,
-    al as F,
-    aP as q,
-    am as k,
-    ai as ne,
-    aj as oe,
-    aQ as ae,
-    ak as M,
-    aR as ie,
-    aS as G,
-    aT as se,
-    j as a,
-    F as le,
-    y as ce,
-    E as me,
-    aU as de,
-    n as pe,
-    z as ue,
-    T as fe,
-    f as ge,
-    A as be
-} from "./_index.js";
+    o as e
+} from "./rolldown-runtime.js";
 import {
-    u as ye,
-    C as he,
-    G as xe,
-    a as je,
-    b as ve
-} from "./App-16.js";
+    E as t,
+    O as n,
+    U as r,
+    t as i,
+    u as a,
+    v as o,
+    w as s,
+    z as c
+} from "./utils.js";
 import {
-    A as Oe
-} from "./AccessibleAnchor.js";
+    t as l
+} from "./react-1.js";
 import {
-    R as Ce
-} from "./DownOutlined.js";
+    l as u
+} from "./dist-3.js";
 import {
-    a as Se
-} from "./index-10.js";
+    t as d
+} from "./tooltip.js";
 import {
-    u as Pe
+    r as f,
+    t as p
+} from "./useClasses.js";
+import {
+    t as m
+} from "./message.js";
+import {
+    a as h,
+    t as g
+} from "./modal.js";
+import {
+    t as _
+} from "./button.js";
+import {
+    t as v
+} from "./dropdown.js";
+import {
+    t as y
+} from "./input.js";
+import {
+    t as b
+} from "./CheckOutlined.js";
+import {
+    t as x
+} from "./EllipsisOutlined.js";
+import {
+    t as ee
+} from "./card.js";
+import {
+    t as S
+} from "./form.js";
+import {
+    t as C
+} from "./space.js";
+import {
+    t as w
+} from "./DeleteOutlined.js";
+import {
+    t as T
+} from "./EditOutlined.js";
+import {
+    t as te
+} from "./App-4.js";
+import {
+    t as E
+} from "./UsergroupAddOutlined.js";
+import {
+    t as D
+} from "./copy-to-clipboard.js";
+import {
+    n as ne
+} from "./Company.js";
+import {
+    t as re
+} from "./jsx-runtime.js";
+import {
+    t as O
 } from "./useQuery.js";
 import {
-    a as Ie,
-    b as Re,
-    u as Ne,
-    R as we
-} from "./ReportAccuracyMeter.js";
+    c as k,
+    l as A,
+    n as j,
+    r as M,
+    s as N,
+    t as ie
+} from "./_index.js";
 import {
-    G as Ee
-} from "./GameReportCompletionLink.js";
+    t as ae
+} from "./Paper.js";
 import {
-    F as Te
-} from "./useClasses.js";
-import "./Paper.js";
-import "./index-2.js";
-import "./index-3.js";
-import "./index-4.js";
-import "./context.js";
-import "./NavigateTo.js";
-import "./index-16.js";
-import "./useForm.js";
-import "./useBreakpoint.js";
-import "./useForceUpdate.js";
-import "./QuestionCircleOutlined.js";
-import "./index-5.js";
-import "./FontAwesomeIcon.js";
-import "./CheckOutlined.js";
-import "./EditOutlined.js";
-import "./UsergroupAddOutlined.js";
-import "./DeleteOutlined.js";
-import "./StopPropagation.js";
-import "./App-2.js";
-import "./Sizes.js";
-import "./motion.js";
-import "./index-1.js";
-import "./price.js";
-import "./TrackPostHogEvent.js";
-import "./StarOutlined.js";
-import "./App-5.js";
-import "./Shortcut.js";
-import "./Names.js";
-import "./App-4.js";
-import "./mobxreact.esm.js";
-import "./index-6.js";
-import "./index-15.js";
-import "./colors.js";
-import "./useWarningOnMountInDevelopment.js";
-import "./move.js";
-import "./getCloudinaryUrl.js";
-import "./polished.esm.js";
-import "./inheritsLoose.js";
-import "./progress.js";
-import "./Player.js";
-import "./Question.js";
-import "./ImagePreview.js";
-import "./LazyLatexRenderer.js";
-import "./index-11.js";
-import "./useBubbleLock.js";
-import "./index-12.js";
-import "./CopyOutlined.js";
-import "./DownloadOutlined.js";
-import "./BarChartOutlined.js";
-import "./styleChecker.js";
-import "./index-8.js";
-import "./index-13.js";
-const E = ({
-    children: e
-}) => {
-    const {
-        getPrefixCls: t
-    } = i.useContext(F), n = t("breadcrumb");
-    return i.createElement("li", {
-        className: `${n}-separator`,
-        "aria-hidden": "true"
-    }, e === "" ? e : e || "/")
-};
-E.__ANT_BREADCRUMB_SEPARATOR = !0;
-var _e = function(e, t) {
-    var n = {};
-    for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
-    if (e != null && typeof Object.getOwnPropertySymbols == "function")
-        for (var o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) t.indexOf(r[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[o]) && (n[r[o]] = e[r[o]]);
-    return n
-};
-
-function $e(e, t) {
-    if (e.title === void 0 || e.title === null) return null;
-    const n = Object.keys(t).join("|");
-    return typeof e.title == "object" ? e.title : String(e.title).replace(new RegExp(`:(${n})`, "g"), (r, o) => t[o] || r)
-}
-
-function W(e, t, n, r) {
-    if (n == null) return null;
-    const {
-        className: o,
-        onClick: l
-    } = t, c = _e(t, ["className", "onClick"]), d = Object.assign(Object.assign({}, q(c, {
-        data: !0,
-        aria: !0
-    })), {
-        onClick: l
+    t as P
+} from "./NavigateTo.js";
+import {
+    t as F
+} from "./FontAwesomeIcon.js";
+import {
+    t as oe
+} from "./App-6.js";
+import {
+    n as I
+} from "./App-2.js";
+import {
+    t as L
+} from "./StopPropagation.js";
+var R = e(l()),
+    z = [`group`],
+    B = e => O({
+        queryKey: [z, e],
+        retry: !1,
+        queryFn: () => s({
+            url: `/api/v1/groups/info/${e}`
+        })
+    }),
+    V = e => M.invalidateQueries([z, e]),
+    H = e(D()),
+    U = re(),
+    W = e => {
+        let t = `${a()}/class/join/${e.groupId}`;
+        return (0, U.jsxs)(U.Fragment, {
+            children: [(0, U.jsxs)(G, {
+                children: [`Have your students visit this link to join `, (0, U.jsx)(`b`, {
+                    children: e.groupName
+                }), `. They will have to authenticate with Google or email.`]
+            }), (0, U.jsx)(ee, {
+                hoverable: !0,
+                style: {
+                    color: j.Black,
+                    fontFamily: k.SFPro,
+                    marginTop: 15
+                },
+                children: (0, U.jsxs)(K, {
+                    children: [(0, U.jsx)(y, {
+                        size: `large`,
+                        value: t,
+                        readOnly: !0
+                    }), (0, U.jsx)(_, {
+                        onClick: () => {
+                            (0, H.default)(t), m.success(`Link copied!`)
+                        },
+                        type: `primary`,
+                        style: {
+                            marginLeft: 10
+                        },
+                        size: `large`,
+                        children: `Copy Link`
+                    })]
+                })
+            })]
+        })
+    },
+    G = A.div`
+  font-size: 20px;
+`,
+    K = A.div.attrs({
+        className: `flex maxWidth vc`
+    })``,
+    se = ie(),
+    ce = R.forwardRef(({
+        rules: e,
+        placeholder: t,
+        onPressEnter: n,
+        value: r,
+        autoFocus: i
+    }, a) => {
+        let [o] = S.useForm();
+        return R.useEffect(() => {
+            o.setFieldsValue({
+                input: r
+            })
+        }, []), R.useImperativeHandle(a, () => ({
+            validate: () => o.validateFields().then(e => e.input)
+        })), (0, U.jsx)(S, {
+            form: o,
+            style: {
+                marginTop: 3
+            },
+            children: (0, U.jsx)(S.Item, {
+                name: `input`,
+                rules: e,
+                children: (0, U.jsx)(y, {
+                    placeholder: t,
+                    onPressEnter: n,
+                    autoFocus: i,
+                    autoComplete: `off`
+                })
+            })
+        })
     });
-    return r !== void 0 ? i.createElement("a", Object.assign({}, d, {
-        className: k(`${e}-link`, o),
-        href: r
-    }), n) : i.createElement("span", Object.assign({}, d, {
-        className: k(`${e}-link`, o)
-    }), n)
-}
 
-function Ae(e, t) {
-    return (r, o, l, c, d) => {
-        if (t) return t(r, o, l, c);
-        const y = $e(r, o);
-        return W(e, r, y, d)
-    }
+function le({
+    rules: e,
+    placeholder: t,
+    modalProps: n = {},
+    okText: r,
+    visible: i,
+    submit: a,
+    close: o,
+    title: s,
+    value: c,
+    afterClose: l,
+    autoFocus: u
+}) {
+    let d = R.useRef(null),
+        f = async () => {
+            try {
+                var e;
+                a(await ((e = d.current) == null ? void 0 : e.validate()))
+            } catch {}
+        };
+    return (0, U.jsx)(g, {
+        ...n,
+        open: i,
+        onOk: f,
+        okText: r,
+        onCancel: () => o(),
+        title: s,
+        afterClose: l,
+        children: (0, U.jsx)(ce, {
+            ref: d,
+            rules: e,
+            value: c,
+            placeholder: t,
+            onPressEnter: f,
+            autoFocus: u ?? !0
+        })
+    })
 }
-var z = function(e, t) {
-    var n = {};
-    for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
-    if (e != null && typeof Object.getOwnPropertySymbols == "function")
-        for (var o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) t.indexOf(r[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[o]) && (n[r[o]] = e[r[o]]);
-    return n
-};
-const U = e => {
-        const {
-            prefixCls: t,
-            separator: n = "/",
-            children: r,
-            menu: o,
-            overlay: l,
-            dropdownProps: c,
-            href: d
-        } = e, b = (p => {
-            if (o || l) {
-                const O = Object.assign({}, c);
-                if (o) {
-                    const h = o || {},
-                        {
-                            items: u
-                        } = h,
-                        g = z(h, ["items"]);
-                    O.menu = Object.assign(Object.assign({}, g), {
-                        items: u == null ? void 0 : u.map((f, m) => {
-                            var {
-                                key: x,
-                                title: P,
-                                label: j,
-                                path: s
-                            } = f, v = z(f, ["key", "title", "label", "path"]);
-                            let I = j ?? P;
-                            return s && (I = i.createElement("a", {
-                                href: `${d}${s}`
-                            }, I)), Object.assign(Object.assign({}, v), {
-                                key: x ?? m,
-                                label: I
+var q = e => new Promise((t, n) => {
+        let r = document.createElement(`div`);
+        document.body.appendChild(r);
+        let i = (0, se.createRoot)(r),
+            {
+                onOk: a,
+                ...o
+            } = e,
+            s = {
+                ...o,
+                submit: u,
+                close: l,
+                visible: !0
+            },
+            c = e => {
+                i.unmount(), r.parentNode && r.parentNode.removeChild(r), e === void 0 ? n(e) : t(e)
+            };
+
+        function l(e) {
+            s = {
+                ...s,
+                visible: !1,
+                afterClose: () => c(e)
+            }, d(s)
+        }
+        async function u(e) {
+            if (a) {
+                let t = await a(e);
+                (t || t === void 0) && l(e)
+            } else l(e)
+        }
+
+        function d(e) {
+            i.render((0, U.jsx)(le, {
+                ...e
+            }))
+        }
+        d(s)
+    }),
+    ue = e => {
+        let n = (n = !0) => {
+            c({
+                url: `/api/v1/groups/invites/${n?`accept`:`deny`}`,
+                data: {
+                    inviteId: e.id
+                },
+                success: () => {
+                    n && m.success(`Student added to class!`), V(e.groupId)
+                },
+                error: e => {
+                    t({
+                        e,
+                        default: {
+                            title: `Error replying to invite`
+                        }
+                    })
+                }
+            })
+        };
+        return (0, U.jsxs)(de, {
+            children: [(0, U.jsxs)(`div`, {
+                className: `flex vc`,
+                style: {
+                    background: `#6200EA`,
+                    color: j.White,
+                    padding: `5px 35px`
+                },
+                children: [(0, U.jsx)(F, {
+                    name: `far fa-exclamation-circle`
+                }), ` `, (0, U.jsx)(`div`, {
+                    style: {
+                        marginLeft: `0.4em`
+                    },
+                    children: `Class Join Request`
+                })]
+            }), (0, U.jsxs)(fe, {
+                children: [(0, U.jsxs)(`div`, {
+                    children: [(0, U.jsx)(`div`, {
+                        children: (0, U.jsx)(`b`, {
+                            children: e.name
+                        })
+                    }), (0, U.jsx)(`div`, {
+                        children: (0, U.jsx)(`i`, {
+                            children: e.email
+                        })
+                    })]
+                }), (0, U.jsx)(`div`, {
+                    children: (0, U.jsxs)(C, {
+                        direction: `horizontal`,
+                        size: 10,
+                        wrap: !0,
+                        align: `center`,
+                        children: [(0, U.jsx)(d, {
+                            title: `Accept`,
+                            children: (0, U.jsx)(_, {
+                                type: `dashed`,
+                                style: {
+                                    color: `#388E3C`
+                                },
+                                icon: (0, U.jsx)(b, {}),
+                                shape: `circle`,
+                                onClick: () => {
+                                    n(!0)
+                                }
+                            })
+                        }), (0, U.jsx)(v, {
+                            menu: {
+                                items: [{
+                                    key: `reject`,
+                                    label: `Decline request`,
+                                    danger: !0,
+                                    onClick: () => {
+                                        n(!1)
+                                    }
+                                }]
+                            },
+                            children: (0, U.jsx)(x, {
+                                style: {
+                                    cursor: `pointer`
+                                }
+                            })
+                        })]
+                    })
+                })]
+            })]
+        })
+    },
+    de = A.div.attrs({
+        className: `maxWidth light-shadow`
+    })`
+  border-radius: 8px;
+  background: ${j.White};
+  overflow: hidden;
+`,
+    fe = A.div.attrs({
+        className: `maxWidth flex between vc`
+    })`
+  padding: 20px 35px;
+`,
+    J = e => {
+        let n = R.useMemo(() => e.data ? [{
+            key: `rename`,
+            label: `Rename class`,
+            icon: (0, U.jsx)(T, {}),
+            onClick: () => {
+                q({
+                    title: `Rename class`,
+                    rules: [{
+                        required: !0,
+                        message: `Name is required`
+                    }, {
+                        max: 28,
+                        message: `Class name must be less than 28 characters`
+                    }],
+                    placeholder: e.data.name,
+                    okText: `Save`,
+                    onOk: async t => {
+                        await s({
+                            url: `/api/v1/groups/rename`,
+                            data: {
+                                groupId: e.data._id,
+                                newName: t
+                            }
+                        }), V(e.data._id)
+                    }
+                })
+            }
+        }, {
+            key: `modify-auto-accept`,
+            label: `${e.data.autoAccept?`Disable`:`Enable`} auto-accept`,
+            icon: (0, U.jsx)(E, {}),
+            onClick: () => {
+                c({
+                    url: `/api/v1/groups/auto-accept`,
+                    data: {
+                        groupId: e.data._id,
+                        autoAcceptOn: !e.data.autoAccept
+                    },
+                    success: () => {
+                        g.success({
+                            title: `Auto-accept ${e.data.autoAccept?`disabled`:`enabled`}`,
+                            content: e.data.autoAccept ? `When students attempt to join this class, you will be asked to approve their request.` : `Students can now join this class without manual approval by visiting the join link.`
+                        }), V(e.data._id)
+                    },
+                    error: e => {
+                        t({
+                            e,
+                            default: {
+                                title: `Error updating auto-accept. Please try agian.`
+                            }
+                        })
+                    }
+                })
+            }
+        }, {
+            key: `delete-class`,
+            label: `Delete class`,
+            icon: (0, U.jsx)(w, {}),
+            danger: !0,
+            onClick: () => {
+                g.confirm({
+                    title: `Are you sure you want to delete this class?`,
+                    okText: `Yes`,
+                    okType: `danger`,
+                    onOk: async () => {
+                        await s({
+                            url: `/api/v1/groups/delete/${e.data._id}`
+                        }), p(), P(r.navigation.homeUrl)
+                    }
+                })
+            }
+        }] : [], [e.data]);
+        return e.data ? (0, U.jsxs)(Y, {
+            children: [(0, U.jsxs)(pe, {
+                children: [(0, U.jsxs)(C, {
+                    direction: `horizontal`,
+                    size: 20,
+                    wrap: !0,
+                    children: [(0, U.jsx)(me, {
+                        style: {
+                            background: e.data.color
+                        }
+                    }), (0, U.jsx)(he, {
+                        children: e.data.name
+                    })]
+                }), (0, U.jsx)(`div`, {
+                    children: e.customRightComponent ? e.customRightComponent : (0, U.jsx)(v, {
+                        menu: {
+                            items: n
+                        },
+                        children: (0, U.jsx)(_, {
+                            icon: (0, U.jsx)(x, {}),
+                            type: `default`,
+                            shape: `circle`
+                        })
+                    })
+                })]
+            }), e.data.invites.length ? (0, U.jsx)(C, {
+                direction: `vertical`,
+                size: 15,
+                className: `maxWidth`,
+                style: {
+                    marginTop: 20
+                },
+                children: e.data.invites.map(t => (0, U.jsx)(ue, {
+                    id: t._id,
+                    name: t.name,
+                    email: t.email,
+                    groupId: e.data._id
+                }, t._id))
+            }) : null]
+        }) : (0, U.jsx)(`div`, {
+            style: {
+                height: 160
+            }
+        })
+    },
+    Y = A.div.attrs({
+        className: `maxWidth`
+    })`
+  padding: 40px 0px;
+  flex-shrink: 0;
+`,
+    pe = A.div.attrs({
+        className: `maxWidth flex vc between`
+    })``,
+    me = A.div`
+  height: 80px;
+  width: 80px;
+  border-radius: 8px;
+`,
+    he = A.div`
+  font-size: 36px;
+  font-weight: ${N.UltraBold};
+`,
+    ge = e => {
+        var t;
+        let [r, i, a] = n(!1), c = t => {
+            o() ? P(`/class/${e.groupId}/student/${t}`) : i()
+        }, l = R.useMemo(() => [{
+            title: `Name`,
+            dataIndex: `name`,
+            key: `name`
+        }, {
+            title: `Email`,
+            dataIndex: `email`,
+            key: `email`
+        }, {
+            title: ``,
+            key: `actions`,
+            align: `right`,
+            render: (t, n) => {
+                let r = [{
+                    key: `${n._id}-rename`,
+                    label: `Change name`,
+                    icon: (0, U.jsx)(T, {}),
+                    onClick: t => {
+                        L(t.domEvent), q({
+                            title: `Change name`,
+                            value: n.name,
+                            placeholder: `Enter new name`,
+                            rules: [{
+                                required: !0,
+                                message: `Name is required`
+                            }, {
+                                max: 40,
+                                message: `Name must be less than 40 characters`
+                            }],
+                            onOk: async t => {
+                                await s({
+                                    url: `/api/v1/groups/members/rename`,
+                                    data: {
+                                        groupMemberId: n._id,
+                                        newName: t
+                                    }
+                                }), m.success(`Student renamed!`), V(e.groupId)
+                            }
+                        })
+                    }
+                }, {
+                    key: `${n._id}-remove`,
+                    label: `Remove`,
+                    icon: (0, U.jsx)(w, {}),
+                    danger: !0,
+                    onClick: t => {
+                        L(t.domEvent), g.confirm({
+                            title: (0, U.jsxs)(`div`, {
+                                style: {
+                                    fontWeight: N.Normal
+                                },
+                                children: [`Are you sure you want to remove `, (0, U.jsx)(`b`, {
+                                    children: n.name
+                                }), ` from this class?`]
+                            }),
+                            okText: `Yes`,
+                            onOk: async () => {
+                                await s({
+                                    url: `/api/v1/groups/members/remove`,
+                                    data: {
+                                        groupMemberId: n._id
+                                    }
+                                }), m.success(`Student removed!`), V(e.groupId)
+                            }
+                        })
+                    }
+                }];
+                return (0, U.jsxs)(C, {
+                    size: `middle`,
+                    children: [(0, U.jsx)(_, {
+                        children: `View Progress`
+                    }), (0, U.jsx)(`div`, {
+                        onClick: e => e.stopPropagation(),
+                        children: (0, U.jsx)(v, {
+                            menu: {
+                                items: r
+                            },
+                            children: (0, U.jsx)(x, {
+                                style: {
+                                    cursor: `pointer`
+                                }
                             })
                         })
-                    })
-                } else l && (O.overlay = l);
-                return i.createElement(Se, Object.assign({
-                    placement: "bottom"
-                }, O), i.createElement("span", {
-                    className: `${t}-overlay-link`
-                }, p, i.createElement(Ce, null)))
-            }
-            return p
-        })(r);
-        return b != null ? i.createElement(i.Fragment, null, i.createElement("li", null, b), n && i.createElement(E, null, n)) : null
-    },
-    V = e => {
-        const {
-            prefixCls: t,
-            children: n,
-            href: r
-        } = e, o = z(e, ["prefixCls", "children", "href"]), {
-            getPrefixCls: l
-        } = i.useContext(F), c = l("breadcrumb", t);
-        return i.createElement(U, Object.assign({}, o, {
-            prefixCls: c
-        }), W(c, o, n, r))
-    };
-V.__ANT_BREADCRUMB_ITEM = !0;
-const Be = e => {
-        const {
-            componentCls: t,
-            iconCls: n,
-            calc: r
-        } = e;
-        return {
-            [t]: Object.assign(Object.assign({}, ae(e)), {
-                color: e.itemColor,
-                fontSize: e.fontSize,
-                [n]: {
-                    fontSize: e.iconFontSize
-                },
-                ol: {
-                    display: "flex",
-                    flexWrap: "wrap",
-                    margin: 0,
-                    padding: 0,
-                    listStyle: "none"
-                },
-                a: Object.assign({
-                    color: e.linkColor,
-                    transition: `color ${e.motionDurationMid}`,
-                    padding: `0 ${M(e.paddingXXS)}`,
-                    borderRadius: e.borderRadiusSM,
-                    height: e.fontHeight,
-                    display: "inline-block",
-                    marginInline: r(e.marginXXS).mul(-1).equal(),
-                    "&:hover": {
-                        color: e.linkHoverColor,
-                        backgroundColor: e.colorBgTextHover
-                    }
-                }, ie(e)),
-                "li:last-child": {
-                    color: e.lastItemColor
-                },
-                [`${t}-separator`]: {
-                    marginInline: e.separatorMargin,
-                    color: e.separatorColor
-                },
-                [`${t}-link`]: {
-                    [`
-          > ${n} + span,
-          > ${n} + a
-        `]: {
-                        marginInlineStart: e.marginXXS
-                    }
-                },
-                [`${t}-overlay-link`]: {
-                    borderRadius: e.borderRadiusSM,
-                    height: e.fontHeight,
-                    display: "inline-block",
-                    padding: `0 ${M(e.paddingXXS)}`,
-                    marginInline: r(e.marginXXS).mul(-1).equal(),
-                    [`> ${n}`]: {
-                        marginInlineStart: e.marginXXS,
-                        fontSize: e.fontSizeIcon
-                    },
-                    "&:hover": {
-                        color: e.linkHoverColor,
-                        backgroundColor: e.colorBgTextHover,
-                        a: {
-                            color: e.linkHoverColor
-                        }
-                    },
-                    a: {
-                        "&:hover": {
-                            backgroundColor: "transparent"
-                        }
-                    }
-                },
-                [`&${e.componentCls}-rtl`]: {
-                    direction: "rtl"
-                }
-            })
-        }
-    },
-    ke = e => ({
-        itemColor: e.colorTextDescription,
-        lastItemColor: e.colorText,
-        iconFontSize: e.fontSize,
-        linkColor: e.colorTextDescription,
-        linkHoverColor: e.colorText,
-        separatorColor: e.colorTextDescription,
-        separatorMargin: e.marginXS
-    }),
-    ze = ne("Breadcrumb", e => {
-        const t = oe(e, {});
-        return Be(t)
-    }, ke);
-var L = function(e, t) {
-    var n = {};
-    for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
-    if (e != null && typeof Object.getOwnPropertySymbols == "function")
-        for (var o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) t.indexOf(r[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[o]) && (n[r[o]] = e[r[o]]);
-    return n
-};
-
-function Fe(e) {
-    const {
-        breadcrumbName: t,
-        children: n
-    } = e, r = L(e, ["breadcrumbName", "children"]), o = Object.assign({
-        title: t
-    }, r);
-    return n && (o.menu = {
-        items: n.map(l => {
-            var {
-                breadcrumbName: c
-            } = l, d = L(l, ["breadcrumbName"]);
-            return Object.assign(Object.assign({}, d), {
-                title: c
-            })
-        })
-    }), o
-}
-
-function Xe(e, t) {
-    return i.useMemo(() => e || (t ? t.map(Fe) : null), [e, t])
-}
-var De = function(e, t) {
-    var n = {};
-    for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
-    if (e != null && typeof Object.getOwnPropertySymbols == "function")
-        for (var o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++) t.indexOf(r[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[o]) && (n[r[o]] = e[r[o]]);
-    return n
-};
-const He = (e, t) => {
-        if (t === void 0) return t;
-        let n = (t || "").replace(/^\//, "");
-        return Object.keys(e).forEach(r => {
-            n = n.replace(`:${r}`, e[r])
-        }), n
-    },
-    N = e => {
-        const {
-            prefixCls: t,
-            separator: n = "/",
-            style: r,
-            className: o,
-            rootClassName: l,
-            routes: c,
-            items: d,
-            children: y,
-            itemRender: b,
-            params: p = {}
-        } = e, O = De(e, ["prefixCls", "separator", "style", "className", "rootClassName", "routes", "items", "children", "itemRender", "params"]), {
-            getPrefixCls: h,
-            direction: u,
-            breadcrumb: g
-        } = i.useContext(F);
-        let f;
-        const m = h("breadcrumb", t),
-            [x, P, j] = ze(m),
-            s = Xe(d, c),
-            v = Ae(m, b);
-        if (s && s.length > 0) {
-            const S = [],
-                R = d || c;
-            f = s.map((C, w) => {
-                const {
-                    path: Q,
-                    key: T,
-                    type: J,
-                    menu: X,
-                    overlay: D,
-                    onClick: Y,
-                    className: Z,
-                    separator: ee,
-                    dropdownProps: re
-                } = C, _ = He(p, Q);
-                _ !== void 0 && S.push(_);
-                const H = T ?? w;
-                if (J === "separator") return i.createElement(E, {
-                    key: H
-                }, ee);
-                const $ = {},
-                    te = w === s.length - 1;
-                X ? $.menu = X : D && ($.overlay = D);
-                let {
-                    href: A
-                } = C;
-                return S.length && _ !== void 0 && (A = `#/${S.join("/")}`), i.createElement(U, Object.assign({
-                    key: H
-                }, $, q(C, {
-                    data: !0,
-                    aria: !0
-                }), {
-                    className: Z,
-                    dropdownProps: re,
-                    href: A,
-                    separator: te ? "" : n,
-                    onClick: Y,
-                    prefixCls: m
-                }), v(C, p, R, S, A))
-            })
-        } else if (y) {
-            const S = G(y).length;
-            f = G(y).map((R, C) => {
-                if (!R) return R;
-                const w = C === S - 1;
-                return se(R, {
-                    separator: w ? "" : n,
-                    key: C
-                })
-            })
-        }
-        const I = k(m, g == null ? void 0 : g.className, {
-                [`${m}-rtl`]: u === "rtl"
-            }, o, l, P, j),
-            K = Object.assign(Object.assign({}, g == null ? void 0 : g.style), r);
-        return x(i.createElement("nav", Object.assign({
-            className: I,
-            style: K
-        }, O), i.createElement("ol", null, f)))
-    };
-N.Item = V;
-N.Separator = E;
-const Me = e => {
-        const {
-            student: t,
-            group: n
-        } = e;
-        return !t || !n ? a.jsx("div", {
-            style: {
-                height: 154
-            }
-        }) : a.jsxs("div", {
-            className: "flex maxWidth between vc",
-            style: {
-                padding: "40px 0px"
-            },
-            children: [a.jsxs("div", {
-                children: [a.jsxs(N, {
-                    children: [a.jsx(N.Item, {
-                        children: a.jsx(Oe, {
-                            to: `/class/${n._id}`,
-                            children: n.name
-                        })
-                    }), a.jsx(N.Item, {
-                        children: "Student Progress"
                     })]
-                }), a.jsx("div", {
-                    style: {
-                        fontSize: "2em",
-                        fontWeight: le.UltraBold,
-                        marginTop: 2
-                    },
-                    children: t.name
-                }), a.jsx("div", {
-                    style: {
-                        marginTop: "0.1em"
-                    },
-                    children: t.email
-                })]
-            }), a.jsx("div", {
-                children: e.children
-            })]
-        })
-    },
-    Ge = "group-member-reports",
-    Le = (e, t) => Pe({
-        queryKey: [Ge, t, {
-            page: e
-        }],
-        keepPreviousData: !0,
-        staleTime: 1e3 * 60,
-        retry: 2,
-        queryFn: () => ce({
-            url: "/api/game-report/fetch-by-group-member",
-            data: {
-                page: e,
-                groupMemberId: t
+                })
             }
+        }], [e.groupId]);
+        return (t = e.members) != null && t.length ? (0, U.jsxs)(U.Fragment, {
+            children: [(0, U.jsx)(f, {
+                size: `large`,
+                dataSource: e.members.sort((e, t) => e.name.localeCompare(t.name)),
+                columns: l,
+                pagination: !1,
+                onRow: e => ({
+                    style: {
+                        cursor: `pointer`
+                    },
+                    onClick: () => {
+                        c(e._id)
+                    }
+                }),
+                rowKey: e => e._id
+            }), (0, U.jsx)(I, {
+                visible: r,
+                close: a,
+                id: `student progress`,
+                copy: {
+                    title: `View student progress with Pro`,
+                    description: `To view all reports for a student in one place, upgrade to ${ne} Pro.`
+                }
+            })]
+        }) : null
+    },
+    X = e => (0, U.jsx)(U.Fragment, {
+        children: (0, U.jsx)(te, {
+            includeSpacer: !0,
+            children: (0, U.jsx)(oe, {
+                options: [{
+                    id: `home`,
+                    label: `Home`,
+                    icon: (0, U.jsx)(F, {
+                        name: `fas fa-home`
+                    }),
+                    path: `/class/${e.id}`
+                }, {
+                    id: `reports`,
+                    label: `Reports`,
+                    icon: (0, U.jsx)(F, {
+                        name: `fas fa-analytics`
+                    }),
+                    path: `/class/${e.id}/reports`
+                }]
+            })
         })
     }),
-    B = 35,
-    qe = e => {
-        const [t, n] = i.useState();
-        return e.totalItems ? a.jsxs("div", {
-            id: "student-report-container",
-            children: [a.jsx(me, {
-                theme: {
-                    components: {
-                        Table: {
-                            cellPaddingBlock: 16,
-                            cellPaddingInline: B
-                        }
-                    }
-                },
-                children: a.jsx(Te, {
-                    dataSource: e.data.map(r => ({
-                        key: r._id,
-                        ...r
-                    })),
-                    columns: We,
-                    bordered: !0,
-                    pagination: !1,
-                    tableLayout: "auto",
-                    size: "large",
-                    onRow: r => ({
-                        onClick: () => {
-                            n(r)
-                        },
+    _e = () => {
+        let {
+            id: e
+        } = u(), {
+            isLoading: t,
+            error: n,
+            data: r
+        } = B(e);
+        return (0, U.jsxs)(U.Fragment, {
+            children: [(0, U.jsx)(i, {
+                title: (r == null ? void 0 : r.name) ?? `Group`
+            }), (0, U.jsxs)(Z, {
+                children: [(0, U.jsx)(X, {
+                    id: e
+                }), (0, U.jsxs)(Q, {
+                    children: [n ? (0, U.jsx)(`div`, {
                         style: {
-                            cursor: "pointer"
+                            height: 35
                         }
-                    }),
-                    loading: {
-                        spinning: e.isFetching,
-                        indicator: null
-                    },
-                    sticky: {
-                        offsetHeader: e.containerTopOffset,
-                        getContainer: () => document.getElementById("student-report-container")
-                    }
-                })
-            }), e.pagination ? a.jsx("div", {
-                className: "maxWidth flex-center",
-                style: {
-                    padding: `${B}px 0px`
-                },
-                children: e.pagination
-            }) : null, t ? a.jsx(Ee, {
-                playerName: e.playerName,
-                gameReportId: t.gameReport,
-                participantId: t._id,
-                close: () => {
-                    n(void 0)
-                }
-            }) : null]
-        }) : a.jsxs("div", {
-            style: {
-                padding: B,
-                flex: 1
-            },
-            className: "flex-column flex-center",
-            children: [a.jsx("img", {
-                src: "/client/img/dashboard/report.svg",
-                style: {
-                    height: 80
-                }
-            }), a.jsxs("div", {
-                style: {
-                    textAlign: "center",
-                    fontSize: "1.15em",
-                    marginTop: 10
-                },
-                children: ["Check back here after this student plays a live game or assignment!", " ", a.jsx("br", {}), "All of their reports will show up here for you to easily check in on their progress."]
-            })]
-        })
-    },
-    We = [{
-        title: "Kit",
-        dataIndex: "kit",
-        key: "report-kit",
-        render: (e, t) => a.jsx(Ie, {
-            kit: e,
-            dateId: t._id
-        })
-    }, {
-        title: "Individual Accuracy",
-        dataIndex: "accuracy",
-        key: "report-accuracy",
-        render: e => a.jsx(Re, {
-            percent: e
-        })
-    }, {
-        title: "Questions Answered",
-        dataIndex: "questionsAnswered",
-        key: "questions-answered",
-        render: e => de(e)
-    }],
-    et = () => {
-        var j;
-        const {
-            id: e,
-            studentId: t
-        } = pe(), [n, r] = ue(), o = Math.max(1, Number(n.get("page")) ?? 1), [l, c] = i.useState(0), d = i.useRef(null);
-        Ne(d, s => {
-            var v;
-            c(((v = s.target) == null ? void 0 : v.offsetTop) ?? 0)
-        });
-        const {
-            isLoading: y,
-            error: b,
-            data: p
-        } = ye(e), {
-            isLoading: O,
-            error: h,
-            data: u,
-            isFetching: g
-        } = Le(o, t);
-        i.useEffect(() => {
-            window.scrollTo(0, 0)
-        }, [o]);
-        const f = i.useMemo(() => {
-                if (b) return b;
-                if (h) return h;
-                if (p && !p.members.find(v => v._id === t)) return {
-                    message: {
-                        text: "This link is invalid. This student may have been removed from your class."
-                    }
-                }
-            }, [b, e, p, h]),
-            m = (j = p == null ? void 0 : p.members) == null ? void 0 : j.find(s => s._id === t),
-            x = !u || !(u != null && u.totalItems) ? null : a.jsx(we, {
-                total: u.totalItems,
-                current: o,
-                onPageChange: s => {
-                    r({
-                        page: s
-                    })
-                }
-            }),
-            P = () => {
-                var s;
-                return ge() ? y || O ? a.jsx(be, {
-                    paragraph: {
-                        rows: 4
-                    },
-                    title: !1,
-                    active: !0,
-                    className: "maxWidth",
-                    style: {
-                        padding: 35
-                    }
-                }) : f ? a.jsx("div", {
-                    style: {
-                        padding: 35
-                    },
-                    children: ((s = f == null ? void 0 : f.message) == null ? void 0 : s.text) || "There was an error fetching this class. Please try again."
-                }) : a.jsx(qe, {
-                    data: u.items,
-                    isFetching: g,
-                    playerName: m == null ? void 0 : m.name,
-                    containerTopOffset: l,
-                    pagination: x,
-                    totalItems: u.totalItems
-                }) : a.jsx("div", {
-                    style: {
-                        padding: 35
-                    },
-                    children: "Upgrade to view student performance data."
-                })
-            };
-        return a.jsxs(he, {
-            children: [a.jsx(fe, {
-                title: (m == null ? void 0 : m.name) || "Student"
-            }), a.jsx(xe, {
-                id: e
-            }), a.jsxs(je, {
-                ref: d,
-                children: [f ? a.jsx("div", {
-                    style: {
-                        height: 35
-                    }
-                }) : a.jsx(Me, {
-                    student: m,
-                    group: p,
-                    children: x
-                }), a.jsx(ve, {
-                    className: "flex",
-                    style: {
-                        padding: 0
-                    },
-                    children: P()
+                    }) : (0, U.jsx)(J, {
+                        data: r
+                    }), (0, U.jsx)($, {
+                        children: (() => {
+                            if (t) return (0, U.jsx)(h, {
+                                paragraph: {
+                                    rows: 4
+                                },
+                                title: !1,
+                                active: !0,
+                                className: `maxWidth`
+                            });
+                            if (n) {
+                                var i;
+                                return (0, U.jsx)(`div`, {
+                                    children: (n == null || (i = n.message) == null ? void 0 : i.text) || `There was an error fetching this class. Please try again.`
+                                })
+                            }
+                            return (0, U.jsxs)(C, {
+                                className: `maxWidth`,
+                                direction: `vertical`,
+                                size: 25,
+                                children: [(0, U.jsx)(W, {
+                                    groupId: e,
+                                    groupName: r.name
+                                }), (0, U.jsx)(ge, {
+                                    members: r.members,
+                                    groupId: e
+                                })]
+                            })
+                        })()
+                    })]
                 })]
             })]
         })
-    };
+    },
+    Z = A.div.attrs({
+        className: `vc flex-column`
+    })`
+  flex: 1;
+  background: ${j.Snow};
+  font-family: ${k.SFPro};
+  color: ${j.Black};
+`,
+    Q = A.div.attrs({
+        className: `flex-column`
+    })`
+  width: 90%;
+  max-width: 1200px;
+  flex: 1;
+`,
+    $ = A(ae).attrs({
+        className: `maxWidth`
+    })`
+  flex: 1;
+  border-radius: 9px;
+  padding: 35px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+`;
 export {
-    et as
-    default
+    Z as Container, $ as Content, Q as ContentContainer, _e as
+    default, J as n, B as r, X as t
 };

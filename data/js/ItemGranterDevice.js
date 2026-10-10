@@ -1,100 +1,39 @@
 import {
-    aK as a,
-    aQ as m,
-    L as h
-} from "./App-41.js";
+    t as e
+} from "./stores-2.js";
 import {
-    s as d,
-    j as n,
-    e as w
-} from "./FixSpinePlugin.js";
+    t
+} from "./isVersion.js";
 import {
-    N as g
+    t as n
+} from "./InPhase.js";
+import {
+    t as r
+} from "./Device.js";
+import {
+    r as i
+} from "./GlobalLocalDepth.js";
+import {
+    Et as a
+} from "./App-42.js";
+import {
+    t as o
 } from "./NewWidthSameAspectRatio.js";
 import {
-    F as c
-} from "./FetchTextureDimensions.js";
-import {
-    B as I,
-    U as l
+    n as s,
+    t as c
 } from "./Assets.js";
-import "./_index.js";
-import "./Button.js";
-import "./polished.esm.js";
-import "./inheritsLoose.js";
-import "./mobxreact.esm.js";
-import "./index-21.js";
-import "./QuizTypes.js";
-import "./MapModeType.js";
-import "./GetAssetPath.js";
-import "./TutorialConsts.js";
-import "./ActionButton.js";
-import "./index-5.js";
-import "./playSound.js";
-import "./MapSound.js";
-import "./howler.js";
-import "./index-18.js";
-import "./context.js";
-import "./FontAwesomeIcon.js";
-import "./Centered.js";
-import "./CapitalizeFirstLetter.js";
-import "./index-4.js";
-import "./motion.js";
-import "./index-2.js";
-import "./index-14.js";
-import "./EditOutlined.js";
-import "./styleChecker.js";
-import "./index-3.js";
-import "./CheckOutlined.js";
-import "./CopyOutlined.js";
-import "./SixteenByNineScaler.js";
-import "./index-20.js";
-import "./index-22.js";
-import "./index-1.js";
-import "./progress.js";
-import "./ElementIds.js";
-import "./SeasonTicketName.js";
-import "./useQuery.js";
-import "./___vite-browser-external_commonjs-proxy.js";
-import "./util-1.js";
-import "./util-2.js";
-import "./Shortcut.js";
-import "./Names.js";
-import "./useWillUnmount.js";
-import "./CircularProgress.js";
-import "./clsx.m.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
-import "./index-17.js";
-import "./use-force-update.js";
-import "./GimkitLiveQuestion.js";
-import "./Text.js";
-import "./getCloudinaryUrl.js";
-import "./LazyLatexRenderer.js";
-import "./Tooltip.js";
-import "./use-motion-value.js";
-import "./index-9.js";
-import "./index-23.js";
-import "./useIntervalWhen.js";
-import "./index-10.js";
-import "./move.js";
-import "./react-flip-move.es.js";
-import "./sounds.js";
-import "./App-5.js";
-import "./AnimatedBackground-2.js";
-import "./useDebouncedValue.js";
-import "./CloseCircleOutlined.js";
-import "./MapStyle.js";
-import "./FillRemainingSpace.js";
-import "./index-24.js";
-class jt extends a {
-    constructor(p) {
-        super(p), this.addBase = () => {
-            const i = m(1);
+import {
+    t as l
+} from "./FetchTextureDimensions.js";
+var u = class extends r {
+    constructor(r) {
+        super(r), this.addBase = () => {
+            let e = a(1);
             this.base = this.parts.add.sprite({
-                ...I,
+                ...c,
                 y: -30,
-                depthChange: i
+                depthChange: e
             }), this.base.view.setScale(.5), this.colliders.add.box({
                 x: 0,
                 y: 10,
@@ -103,27 +42,27 @@ class jt extends a {
             })
         }, this.addItemPreview = () => {
             if (!this.base) return;
-            const i = m(2),
-                t = {
-                    ...l
+            let t = a(2),
+                n = {
+                    ...s
                 };
             if (this.options.itemId) {
-                const e = d.worldOptions.itemOptions.find(s => s.id === this.options.itemId);
-                e && (t.imageId = e.id, t.imageUrl = e.previewImage)
+                let t = e.worldOptions.itemOptions.find(e => e.id === this.options.itemId);
+                t && (n.imageId = t.id, n.imageUrl = t.previewImage)
             }
-            const r = c(t.imageId),
-                o = g({
+            let r = l(n.imageId),
+                i = o({
                     height: r.height,
                     width: r.width,
                     newWidth: 60
                 });
             this.itemPreview = this.parts.add.sprite({
-                imageId: t.imageId,
-                imageUrl: t.imageUrl,
-                depthChange: i,
+                imageId: n.imageId,
+                imageUrl: n.imageUrl,
+                depthChange: t,
                 y: -43,
-                displayWidth: o.width,
-                displayHeight: o.height
+                displayWidth: i.width,
+                displayHeight: i.height
             }), this.itemPreview.view.alpha = .6, this.tweens.add({
                 targets: this.itemPreview.view,
                 y: this.itemPreview.view.y - 10,
@@ -139,10 +78,10 @@ class jt extends a {
                 repeat: -1,
                 ease: Phaser.Math.Easing.Sine.InOut
             })
-        }, !(n() || w()) && (this.layers.setDefaultLayer(h.DepthSortedCharactersAndDevices), this.addBase(), this.addItemPreview())
+        }, !(t() || n()) && (this.layers.setDefaultLayer(i.DepthSortedCharactersAndDevices), this.addBase(), this.addItemPreview())
     }
-}
+};
 export {
-    jt as
+    u as
     default
 };

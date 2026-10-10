@@ -1,37 +1,46 @@
 import {
-    r as a,
-    I as r,
-    _ as l
-} from "./_index.js";
-var c = {
+    o as e
+} from "./rolldown-runtime.js";
+import {
+    t
+} from "./react-1.js";
+import {
+    c as n,
+    s as r
+} from "./assertThisInitialized.js";
+import {
+    r as i
+} from "./compact-item.js";
+var a = e(t());
+n();
+var o = {
         icon: {
-            tag: "svg",
+            tag: `svg`,
             attrs: {
-                viewBox: "64 64 896 896",
-                focusable: "false"
+                viewBox: `64 64 896 896`,
+                focusable: `false`
             },
             children: [{
-                tag: "path",
+                tag: `path`,
                 attrs: {
-                    d: "M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+                    d: `M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z`
                 }
             }, {
-                tag: "path",
+                tag: `path`,
                 attrs: {
-                    d: "M719.4 499.1l-296.1-215A15.9 15.9 0 00398 297v430c0 13.1 14.8 20.5 25.3 12.9l296.1-215a15.9 15.9 0 000-25.8zm-257.6 134V390.9L628.5 512 461.8 633.1z"
+                    d: `M719.4 499.1l-296.1-215A15.9 15.9 0 00398 297v430c0 13.1 14.8 20.5 25.3 12.9l296.1-215a15.9 15.9 0 000-25.8zm-257.6 134V390.9L628.5 512 461.8 633.1z`
                 }
             }]
         },
-        name: "play-circle",
-        theme: "outlined"
+        name: `play-circle`,
+        theme: `outlined`
     },
-    n = function(e, t) {
-        return a.createElement(r, l({}, e, {
+    s = a.forwardRef(function(e, t) {
+        return a.createElement(i, r({}, e, {
             ref: t,
-            icon: c
+            icon: o
         }))
-    },
-    o = a.forwardRef(n);
+    });
 export {
-    o as R
+    s as t
 };

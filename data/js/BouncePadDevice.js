@@ -1,105 +1,49 @@
 import {
-    aK as w,
-    aV as b,
-    T as f,
-    aU as M,
-    aM as v,
-    aN as y,
-    aW as x,
-    L as P
-} from "./App-41.js";
-import {
-    G as c
+    t as e
 } from "./GetAssetPath.js";
 import {
-    g as C,
-    S as A,
-    F as u,
-    I as D,
-    e as V,
-    j as k
-} from "./FixSpinePlugin.js";
+    t
+} from "./lodash.js";
 import {
-    F as I,
-    R as S
-} from "./FetchOptionSchemaProperty.js";
-import {
-    p as B
+    t as n
 } from "./playSound.js";
 import {
-    ar as G
-} from "./_index.js";
-import "./Button.js";
-import "./polished.esm.js";
-import "./inheritsLoose.js";
-import "./mobxreact.esm.js";
-import "./index-21.js";
-import "./QuizTypes.js";
-import "./MapModeType.js";
-import "./TutorialConsts.js";
-import "./ActionButton.js";
-import "./index-5.js";
-import "./index-18.js";
-import "./context.js";
-import "./FontAwesomeIcon.js";
-import "./Centered.js";
-import "./CapitalizeFirstLetter.js";
-import "./index-4.js";
-import "./motion.js";
-import "./index-2.js";
-import "./index-14.js";
-import "./EditOutlined.js";
-import "./styleChecker.js";
-import "./index-3.js";
-import "./CheckOutlined.js";
-import "./CopyOutlined.js";
-import "./SixteenByNineScaler.js";
-import "./index-20.js";
-import "./index-22.js";
-import "./index-1.js";
-import "./progress.js";
-import "./ElementIds.js";
-import "./SeasonTicketName.js";
-import "./useQuery.js";
-import "./___vite-browser-external_commonjs-proxy.js";
-import "./util-1.js";
-import "./util-2.js";
-import "./Shortcut.js";
-import "./Names.js";
-import "./useWillUnmount.js";
-import "./CircularProgress.js";
-import "./clsx.m.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
-import "./index-17.js";
-import "./use-force-update.js";
-import "./GimkitLiveQuestion.js";
-import "./Text.js";
-import "./getCloudinaryUrl.js";
-import "./LazyLatexRenderer.js";
-import "./Tooltip.js";
-import "./howler.js";
-import "./use-motion-value.js";
-import "./index-9.js";
-import "./index-23.js";
-import "./useIntervalWhen.js";
-import "./index-10.js";
-import "./move.js";
-import "./react-flip-move.es.js";
-import "./sounds.js";
-import "./MapSound.js";
-import "./App-5.js";
-import "./AnimatedBackground-2.js";
-import "./useDebouncedValue.js";
-import "./CloseCircleOutlined.js";
-import "./MapStyle.js";
-import "./FillRemainingSpace.js";
-import "./index-24.js";
-const F = {
-        atlasUrl: c("devices/bounce_pad/spine/skeleton.atlas"),
-        jsonUrl: c("devices/bounce_pad/spine/skeleton.json")
+    D as r,
+    o as i,
+    s as a
+} from "./FixPhaserBootProcess.js";
+import {
+    t as o
+} from "./isVersion.js";
+import {
+    r as s,
+    t as c
+} from "./InPhase.js";
+import {
+    t as l
+} from "./FetchMyId.js";
+import {
+    t as u
+} from "./Device.js";
+import {
+    r as d
+} from "./GlobalLocalDepth.js";
+import {
+    E as f,
+    _ as p,
+    k as m,
+    v as h,
+    x as g
+} from "./App-42.js";
+import {
+    n as _,
+    t as v
+} from "./FetchOptionSchemaProperty.js";
+var y = {
+        atlasUrl: e(`devices/bounce_pad/spine/skeleton.atlas`),
+        jsonUrl: e(`devices/bounce_pad/spine/skeleton.json`)
     },
-    n = {
+    b = {
         bounceAngleTolerance: 45,
         boundingBox: {
             width: 130,
@@ -116,134 +60,137 @@ const F = {
             min: 0,
             max: 180
         }
-    };
-var d = (l => (l.use = "use", l))(d || {});
-class Qt extends w {
-    constructor(g) {
-        super(g), this.use = () => {
-            this.cull.isInsideView && B({
-                path: c(`devices/bounce_pad/sound/bounce${G.random(1,2)}.mp3`),
-                volume: C({
-                    volume: b(this.x, this.y) * .7,
-                    type: A.soundEffect
-                })
-            }), this.playAnimation("rebound")
-        }, this.playAnimation = t => {
-            if (!this.spine.view) return;
-            const i = t === "idle";
-            this.spine.view.animationState.setAnimation(0, t, i)
-        }, this.onMessage = t => {
-            t.key === d.use && t.data.characterId !== f() && this.use()
-        }, this.setupView = () => {
-            const t = n.boundingBox.width * this.options.scale,
-                i = n.boundingBox.height * this.options.scale,
-                s = this.options.angle * Math.PI / 180,
-                e = Math.abs(Math.cos(s)),
-                r = Math.abs(Math.sin(s)),
-                o = t * e + i * r,
-                p = t * r + i * e;
-            this.spine = this.parts.add.spine({
-                ...F,
-                spineViewId: this.id,
-                defaultAnimation: "idle",
-                boundingBox: {
-                    left: -o / 2,
-                    right: o / 2,
-                    top: -p / 2,
-                    bottom: p / 2
-                },
-                onReady: a => {
-                    a.view.setScale(n.spine.baseScale * this.options.scale), a.view.angle = this.options.angle;
-                    const h = M(this.options.color),
-                        m = Phaser.Display.Color.ColorToRGBA(h);
-                    a.view.skeleton.slots[1].color.r = m.r / 255, a.view.skeleton.slots[1].color.g = m.g / 255, a.view.skeleton.slots[1].color.b = m.b / 255
-                }
-            })
-        }, this.bounce = (t, i) => {
-            const s = u(t);
-            if (!s) return;
-            this.use();
-            const e = Phaser.Math.DegToRad(i),
-                r = this.options.force,
-                o = Math.cos(e - Math.PI / 2) * r,
-                p = Math.sin(e - Math.PI / 2) * r,
-                a = s.physics.state.lastUsedVelocityToCalculateMovement.x;
-            let h = o;
-            Math.sign(a) !== Math.sign(o) ? h = o + a : Math.abs(a) > Math.abs(o) && (h = a), v({
-                character: s
-            }), y({
-                character: s,
-                x: h,
-                y: p,
-                cancelInertiaOnNextGrounded: !0,
-                limitControlFactor: !0
-            })
-        }, this.onStop = (t, i) => {
-            if (this.skipDownwardAngle(i)) return;
-            const s = u(t);
-            s && (s.physics.state.jump.jumpsLeft = Math.max(1, x({
-                characterId: t
-            }).maxJumps), s.physics.state.jump.jumpCounter = 1)
-        }, this.skipDownwardAngle = t => {
-            if (!this.options.disableDownward) return !1;
-            const i = Phaser.Math.Wrap(t, -180, 180);
-            return i > n.downwardAngles.min && i < n.downwardAngles.max
-        }, this.setupCollider = () => {
-            this.colliders.add.capsule({
-                x: 0,
-                y: 0,
-                r1: n.collisions.width * this.options.scale,
-                r2: n.collisions.height * this.options.scale,
-                angle: this.options.angle,
-                onFresh: (t, i) => {
-                    this.handleCollision(t, i)
-                },
-                onUpdate: (t, i) => {
-                    this.handleCollision(t, i)
-                },
-                onStop: t => {
-                    this.onStop(t, this.options.angle)
-                }
-            })
-        }, this.handleCollision = (t, i) => {
-            if (!i || !(i == null ? void 0 : i.normal1)) return;
-            const e = Phaser.Math.Angle.Between(0, 0, i.normal1.x, i.normal1.y),
-                r = Phaser.Math.RadToDeg(e);
-            if (this.skipDownwardAngle(r)) return;
-            const o = Phaser.Math.Wrap(r - this.options.angle + 90, -180, 180),
-                p = n.bounceAngleTolerance;
-            Math.abs(o) <= p ? this.bounce(t, this.options.angle) : Math.abs(Math.abs(o) - 180) <= p && this.bounce(t, this.options.angle + 180)
-        }, this.setupInViewCallbacks = () => {
-            D() || this.cull.setOnEnterViewCallback(() => {
-                var t;
-                (t = this.spine) != null && t.view && (this.spine.setMixDuration(0), this.playAnimation((this.state.active, "idle")), this.spine.view.updatePose(0), this.spine.resetMixDuration())
-            })
-        }, this.setupVisualEditing = () => {
-            if (V() || k()) return;
-            const t = I(this, "scale"),
-                i = n.boundingBox.width,
-                s = n.boundingBox.height;
-            this.visualEditing.add.box({
-                keepRatio: !0,
-                rotable: !0,
-                angle: this.options.angle,
-                width: i * this.options.scale,
-                height: s * this.options.scale,
-                minWidth: i * t.min,
-                maxWidth: i * t.max,
-                minHeight: s * t.min,
-                maxHeight: s * t.max,
-                onChange: e => {
-                    S(e.x, e.y, {
-                        scale: e.width / i,
-                        angle: e.angle
+    },
+    x = t(),
+    S = function(e) {
+        return e.use = `use`, e
+    }({}),
+    C = class extends u {
+        constructor(t) {
+            super(t), this.use = () => {
+                this.cull.isInsideView && n({
+                    path: e(`devices/bounce_pad/sound/bounce${(0,x.random)(1,2)}.mp3`),
+                    volume: a({
+                        volume: p(this.x, this.y) * .7,
+                        type: i.soundEffect
                     })
-                }
-            })
-        }, this.layers.setDefaultLayer(P.DevicesUnderCharacters), this.setupView(), this.setupCollider(), this.setupVisualEditing(), this.setupInViewCallbacks(), this.cull.setMargin(50)
-    }
-}
+                }), this.playAnimation(`rebound`)
+            }, this.playAnimation = e => {
+                if (!this.spine.view) return;
+                let t = e === `idle`;
+                this.spine.view.animationState.setAnimation(0, e, t)
+            }, this.onMessage = e => {
+                e.key === S.use && e.data.characterId !== l() && this.use()
+            }, this.setupView = () => {
+                let e = b.boundingBox.width * this.options.scale,
+                    t = b.boundingBox.height * this.options.scale,
+                    n = this.options.angle * Math.PI / 180,
+                    r = Math.abs(Math.cos(n)),
+                    i = Math.abs(Math.sin(n)),
+                    a = e * r + t * i,
+                    o = e * i + t * r;
+                this.spine = this.parts.add.spine({
+                    ...y,
+                    spineViewId: this.id,
+                    defaultAnimation: `idle`,
+                    boundingBox: {
+                        left: -a / 2,
+                        right: a / 2,
+                        top: -o / 2,
+                        bottom: o / 2
+                    },
+                    onReady: e => {
+                        e.view.setScale(b.spine.baseScale * this.options.scale), e.view.angle = this.options.angle;
+                        let t = h(this.options.color),
+                            n = Phaser.Display.Color.ColorToRGBA(t);
+                        e.view.skeleton.slots[1].color.r = n.r / 255, e.view.skeleton.slots[1].color.g = n.g / 255, e.view.skeleton.slots[1].color.b = n.b / 255
+                    }
+                })
+            }, this.bounce = (e, t) => {
+                let n = r(e);
+                if (!n) return;
+                this.use();
+                let i = Phaser.Math.DegToRad(t),
+                    a = this.options.force,
+                    o = Math.cos(i - Math.PI / 2) * a,
+                    s = Math.sin(i - Math.PI / 2) * a,
+                    c = n.physics.state.lastUsedVelocityToCalculateMovement.x,
+                    l = o;
+                Math.sign(c) === Math.sign(o) ? Math.abs(c) > Math.abs(o) && (l = c) : l = o + c, m({
+                    character: n
+                }), g({
+                    character: n,
+                    x: l,
+                    y: s,
+                    cancelInertiaOnNextGrounded: !0,
+                    limitControlFactor: !0
+                })
+            }, this.onStop = (e, t) => {
+                if (this.skipDownwardAngle(t)) return;
+                let n = r(e);
+                n && (n.physics.state.jump.jumpsLeft = Math.max(1, f({
+                    characterId: e
+                }).maxJumps), n.physics.state.jump.jumpCounter = 1)
+            }, this.skipDownwardAngle = e => {
+                if (!this.options.disableDownward) return !1;
+                let t = Phaser.Math.Wrap(e, -180, 180);
+                return t > b.downwardAngles.min && t < b.downwardAngles.max
+            }, this.setupCollider = () => {
+                this.colliders.add.capsule({
+                    x: 0,
+                    y: 0,
+                    r1: b.collisions.width * this.options.scale,
+                    r2: b.collisions.height * this.options.scale,
+                    angle: this.options.angle,
+                    onFresh: (e, t) => {
+                        this.handleCollision(e, t)
+                    },
+                    onUpdate: (e, t) => {
+                        this.handleCollision(e, t)
+                    },
+                    onStop: e => {
+                        this.onStop(e, this.options.angle)
+                    }
+                })
+            }, this.handleCollision = (e, t) => {
+                if (!t || !(t != null && t.normal1)) return;
+                let n = Phaser.Math.Angle.Between(0, 0, t.normal1.x, t.normal1.y),
+                    r = Phaser.Math.RadToDeg(n);
+                if (this.skipDownwardAngle(r)) return;
+                let i = Phaser.Math.Wrap(r - this.options.angle + 90, -180, 180),
+                    a = b.bounceAngleTolerance;
+                Math.abs(i) <= a ? this.bounce(e, this.options.angle) : Math.abs(Math.abs(i) - 180) <= a && this.bounce(e, this.options.angle + 180)
+            }, this.setupInViewCallbacks = () => {
+                s() || this.cull.setOnEnterViewCallback(() => {
+                    var e;
+                    (e = this.spine) != null && e.view && (this.spine.setMixDuration(0), this.playAnimation((this.state.active, `idle`)), this.spine.view.updatePose(0), this.spine.resetMixDuration())
+                })
+            }, this.setupVisualEditing = () => {
+                if (c() || o()) return;
+                let e = v(this, `scale`),
+                    t = b.boundingBox.width,
+                    n = b.boundingBox.height;
+                this.visualEditing.add.box({
+                    keepRatio: !0,
+                    rotable: !0,
+                    angle: this.options.angle,
+                    width: t * this.options.scale,
+                    height: n * this.options.scale,
+                    minWidth: t * e.min,
+                    maxWidth: t * e.max,
+                    minHeight: n * e.min,
+                    maxHeight: n * e.max,
+                    onChange: e => {
+                        _(e.x, e.y, {
+                            scale: e.width / t,
+                            angle: e.angle
+                        })
+                    }
+                })
+            }, this.layers.setDefaultLayer(d.DevicesUnderCharacters), this.setupView(), this.setupCollider(), this.setupVisualEditing(), this.setupInViewCallbacks(), this.cull.setMargin(50)
+        }
+    };
 export {
-    Qt as
+    C as
     default
 };

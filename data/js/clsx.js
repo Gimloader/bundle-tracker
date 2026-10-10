@@ -1,19 +1,20 @@
-function a(r) {
-    var f, n, t = "";
-    if (typeof r == "string" || typeof r == "number") t += r;
-    else if (typeof r == "object")
-        if (Array.isArray(r)) {
-            var o = r.length;
-            for (f = 0; f < o; f++) r[f] && (n = a(r[f])) && (t && (t += " "), t += n)
+function e(t) {
+    var n, r, i = ``;
+    if (typeof t == `string` || typeof t == `number`) i += t;
+    else if (typeof t == `object`) {
+        if (Array.isArray(t)) {
+            var a = t.length;
+            for (n = 0; n < a; n++) t[n] && (r = e(t[n])) && (i && (i += ` `), i += r)
         } else
-            for (n in r) r[n] && (t && (t += " "), t += n);
-    return t
+            for (r in t) t[r] && (i && (i += ` `), i += r)
+    }
+    return i
 }
 
-function i() {
-    for (var r, f, n = 0, t = "", o = arguments.length; n < o; n++)(r = arguments[n]) && (f = a(r)) && (t && (t += " "), t += f);
-    return t
+function t() {
+    for (var t, n, r = 0, i = ``, a = arguments.length; r < a; r++)(t = arguments[r]) && (n = e(t)) && (i && (i += ` `), i += n);
+    return i
 }
 export {
-    i as c
+    t
 };

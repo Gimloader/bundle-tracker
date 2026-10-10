@@ -1,14 +1,22 @@
+import "./rolldown-runtime.js";
 import {
-    j as e,
-    a4 as t
+    t as e
+} from "./react-1.js";
+import {
+    t
+} from "./jsx-runtime.js";
+import {
+    b as n
 } from "./_index.js";
-const o = r => r.error ? e.jsx(t, {
-    message: "Error",
-    style: r.style,
-    type: "error",
-    description: r.error && r.error.message && r.error.message.text ? r.error.message.text : typeof r.error == "string" ? r.error : "Unknown Error. Please try again.",
-    showIcon: !0
-}) : null;
+e();
+var r = t(),
+    i = e => e.error ? (0, r.jsx)(n, {
+        message: `Error`,
+        style: e.style,
+        type: `error`,
+        description: e.error && e.error.message && e.error.message.text ? e.error.message.text : typeof e.error == `string` ? e.error : `Unknown Error. Please try again.`,
+        showIcon: !0
+    }) : null;
 export {
-    o as E
+    i as t
 };

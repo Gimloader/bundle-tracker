@@ -1,0 +1,177 @@
+import {
+    o as e
+} from "./rolldown-runtime.js";
+import {
+    t
+} from "./react-1.js";
+import {
+    c as n,
+    s as r
+} from "./assertThisInitialized.js";
+import {
+    At as i,
+    Bt as a,
+    Ct as o,
+    Dt as s,
+    Et as c,
+    Ft as l,
+    Ht as u,
+    Mt as d,
+    Nt as f,
+    Tt as p,
+    Vt as m,
+    wt as h,
+    xt as g
+} from "./Compact.js";
+import {
+    y as _
+} from "./color.js";
+import {
+    S as v
+} from "./_index.js";
+n(), u();
+var y = e(t()),
+    b = y.createContext(null);
+
+function x(e) {
+    var t = e.children,
+        n = e.onBatchResize,
+        r = y.useRef(0),
+        i = y.useRef([]),
+        a = y.useContext(b),
+        o = y.useCallback(function(e, t, o) {
+            r.current += 1;
+            var s = r.current;
+            i.current.push({
+                size: e,
+                element: t,
+                data: o
+            }), Promise.resolve().then(function() {
+                s === r.current && (n == null || n(i.current), i.current = [])
+            }), a == null || a(e, t, o)
+        }, [n, a]);
+    return y.createElement(b.Provider, {
+        value: o
+    }, t)
+}
+var S = new Map;
+
+function C(e) {
+    e.forEach(function(e) {
+        var t, n = e.target;
+        (t = S.get(n)) == null || t.forEach(function(e) {
+            return e(n)
+        })
+    })
+}
+var w = new v(C);
+
+function T(e, t) {
+    S.has(e) || (S.set(e, new Set), w.observe(e)), S.get(e).add(t)
+}
+
+function E(e, t) {
+    S.has(e) && (S.get(e).delete(t), S.get(e).size || (w.unobserve(e), S.delete(e)))
+}
+s(), p();
+var D = function(e) {
+    o(n, e);
+    var t = g(n);
+
+    function n() {
+        return c(this, n), t.apply(this, arguments)
+    }
+    return h(n, [{
+        key: `render`,
+        value: function() {
+            return this.props.children
+        }
+    }]), n
+}(y.Component);
+
+function O(e, t) {
+    var n = e.children,
+        r = e.disabled,
+        a = y.useRef(null),
+        o = y.useRef(null),
+        s = y.useContext(b),
+        c = typeof n == `function`,
+        u = c ? n(a) : n,
+        p = y.useRef({
+            width: -1,
+            height: -1,
+            offsetWidth: -1,
+            offsetHeight: -1
+        }),
+        h = !c && y.isValidElement(u) && d(u),
+        g = h ? i(u) : null,
+        v = f(g, a),
+        x = function() {
+            var e;
+            return _(a.current) || (a.current && m(a.current) === `object` ? _((e = a.current) == null ? void 0 : e.nativeElement) : null) || _(o.current)
+        };
+    y.useImperativeHandle(t, function() {
+        return x()
+    });
+    var S = y.useRef(e);
+    S.current = e;
+    var C = y.useCallback(function(e) {
+        var t = S.current,
+            n = t.onResize,
+            r = t.data,
+            i = e.getBoundingClientRect(),
+            a = i.width,
+            o = i.height,
+            c = e.offsetWidth,
+            u = e.offsetHeight,
+            d = Math.floor(a),
+            f = Math.floor(o);
+        if (p.current.width !== d || p.current.height !== f || p.current.offsetWidth !== c || p.current.offsetHeight !== u) {
+            var m = {
+                width: d,
+                height: f,
+                offsetWidth: c,
+                offsetHeight: u
+            };
+            p.current = m;
+            var h = c === Math.round(a) ? a : c,
+                g = u === Math.round(o) ? o : u,
+                _ = l(l({}, m), {}, {
+                    offsetWidth: h,
+                    offsetHeight: g
+                });
+            s == null || s(_, e, r), n && Promise.resolve().then(function() {
+                n(_, e)
+            })
+        }
+    }, []);
+    return y.useEffect(function() {
+        var e = x();
+        return e && !r && T(e, C),
+            function() {
+                return E(e, C)
+            }
+    }, [a.current, r]), y.createElement(D, {
+        ref: o
+    }, h ? y.cloneElement(u, {
+        ref: v
+    }) : u)
+}
+var k = y.forwardRef(O),
+    A = `rc-observer-key`;
+
+function j(e, t) {
+    var n = e.children;
+    return (typeof n == `function` ? [n] : a(n)).map(function(n, i) {
+        var a = (n == null ? void 0 : n.key) || `${A}-${i}`;
+        return y.createElement(k, r({}, e, {
+            key: a,
+            ref: i === 0 ? t : void 0
+        }), n)
+    })
+}
+var M = y.forwardRef(j);
+M.Collection = x;
+export {
+    M as t
+};

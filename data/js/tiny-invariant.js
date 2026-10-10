@@ -1,0 +1,6 @@
+function e(e, t) {
+    if (!e) throw Error(`Invariant failed`)
+}
+export {
+    e as t
+};

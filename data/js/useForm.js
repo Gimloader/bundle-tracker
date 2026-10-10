@@ -1,142 +1,147 @@
 import {
-    dj as ce,
-    r as Z,
-    bp as fe
-} from "./_index.js";
-const ee = e => typeof e == "object" && e != null && e.nodeType === 1,
-    te = (e, o) => (!o || e !== "hidden") && e !== "visible" && e !== "clip",
-    B = (e, o) => {
+    o as e
+} from "./rolldown-runtime.js";
+import {
+    t
+} from "./react-1.js";
+import {
+    b as n
+} from "./color.js";
+import {
+    d as r
+} from "./ContextIsolator.js";
+var i = e(t()),
+    a = e => typeof e == `object` && !!e && e.nodeType === 1,
+    o = (e, t) => (!t || e !== `hidden`) && e !== `visible` && e !== `clip`,
+    s = (e, t) => {
         if (e.clientHeight < e.scrollHeight || e.clientWidth < e.scrollWidth) {
-            const r = getComputedStyle(e, null);
-            return te(r.overflowY, o) || te(r.overflowX, o) || (l => {
-                const n = (t => {
-                    if (!t.ownerDocument || !t.ownerDocument.defaultView) return null;
+            let n = getComputedStyle(e, null);
+            return o(n.overflowY, t) || o(n.overflowX, t) || (e => {
+                let t = (e => {
+                    if (!e.ownerDocument || !e.ownerDocument.defaultView) return null;
                     try {
-                        return t.ownerDocument.defaultView.frameElement
+                        return e.ownerDocument.defaultView.frameElement
                     } catch {
                         return null
                     }
-                })(l);
-                return !!n && (n.clientHeight < l.scrollHeight || n.clientWidth < l.scrollWidth)
+                })(e);
+                return !!t && (t.clientHeight < e.scrollHeight || t.clientWidth < e.scrollWidth)
             })(e)
         }
         return !1
     },
-    C = (e, o, r, l, n, t, i, c) => t < e && i > o || t > e && i < o ? 0 : t <= e && c <= r || i >= o && c >= r ? t - e - l : i > o && c < r || t < e && c > r ? i - o + n : 0,
-    ae = e => {
-        const o = e.parentElement;
-        return o ?? (e.getRootNode().host || null)
-    },
-    oe = (e, o) => {
-        var r, l, n, t;
-        if (typeof document > "u") return [];
-        const {
+    c = (e, t, n, r, i, a, o, s) => a < e && o > t || a > e && o < t ? 0 : a <= e && s <= n || o >= t && s >= n ? a - e - r : o > t && s < n || a < e && s > n ? o - t + i : 0,
+    l = e => e.parentElement ?? (e.getRootNode().host || null),
+    u = (e, t) => {
+        var n, r;
+        if (typeof document > `u`) return [];
+        let {
             scrollMode: i,
-            block: c,
-            inline: f,
-            boundary: L,
-            skipOverflowHiddenElements: ie
-        } = o, se = typeof L == "function" ? L : p => p !== L;
-        if (!ee(e)) throw new TypeError("Invalid target");
-        const P = document.scrollingElement || document.documentElement,
-            I = [];
-        let a = e;
-        for (; ee(a) && se(a);) {
-            if (a = ae(a), a === P) {
-                I.push(a);
+            block: o,
+            inline: u,
+            boundary: d,
+            skipOverflowHiddenElements: f
+        } = t, p = typeof d == `function` ? d : e => e !== d;
+        if (!a(e)) throw TypeError(`Invalid target`);
+        let m = document.scrollingElement || document.documentElement,
+            h = [],
+            g = e;
+        for (; a(g) && p(g);) {
+            if (g = l(g), g === m) {
+                h.push(g);
                 break
             }
-            a != null && a === document.body && B(a) && !B(document.documentElement) || a != null && B(a, ie) && I.push(a)
+            g != null && g === document.body && s(g) && !s(document.documentElement) || g != null && s(g, f) && h.push(g)
         }
-        const m = (l = (r = window.visualViewport) == null ? void 0 : r.width) != null ? l : innerWidth,
-            b = (t = (n = window.visualViewport) == null ? void 0 : n.height) != null ? t : innerHeight,
+        let _ = ((n = window.visualViewport) == null ? void 0 : n.width) ?? innerWidth,
+            v = ((r = window.visualViewport) == null ? void 0 : r.height) ?? innerHeight,
             {
-                scrollX: w,
-                scrollY: y
+                scrollX: y,
+                scrollY: b
             } = window,
             {
-                height: v,
-                width: F,
-                top: M,
-                right: D,
-                bottom: V,
-                left: _
+                height: x,
+                width: S,
+                top: C,
+                right: w,
+                bottom: T,
+                left: E
             } = e.getBoundingClientRect(),
             {
-                top: z,
-                right: G,
-                bottom: J,
-                left: K
-            } = (p => {
-                const s = window.getComputedStyle(p);
+                top: D,
+                right: O,
+                bottom: k,
+                left: A
+            } = (e => {
+                let t = window.getComputedStyle(e);
                 return {
-                    top: parseFloat(s.scrollMarginTop) || 0,
-                    right: parseFloat(s.scrollMarginRight) || 0,
-                    bottom: parseFloat(s.scrollMarginBottom) || 0,
-                    left: parseFloat(s.scrollMarginLeft) || 0
+                    top: parseFloat(t.scrollMarginTop) || 0,
+                    right: parseFloat(t.scrollMarginRight) || 0,
+                    bottom: parseFloat(t.scrollMarginBottom) || 0,
+                    left: parseFloat(t.scrollMarginLeft) || 0
                 }
-            })(e);
-        let d = c === "start" || c === "nearest" ? M - z : c === "end" ? V + J : M + v / 2 - z + J,
-            u = f === "center" ? _ + F / 2 - K + G : f === "end" ? D + G : _ - K;
-        const A = [];
-        for (let p = 0; p < I.length; p++) {
-            const s = I[p],
+            })(e),
+            j = o === `start` || o === `nearest` ? C - D : o === `end` ? T + k : C + x / 2 - D + k,
+            M = u === `center` ? E + S / 2 - A + O : u === `end` ? w + O : E - A,
+            N = [];
+        for (let e = 0; e < h.length; e++) {
+            let t = h[e],
                 {
-                    height: O,
-                    width: W,
-                    top: N,
-                    right: X,
-                    bottom: Y,
-                    left: j
-                } = s.getBoundingClientRect();
-            if (i === "if-needed" && M >= 0 && _ >= 0 && V <= b && D <= m && (s === P && !B(s) || M >= N && V <= Y && _ >= j && D <= X)) return A;
-            const H = getComputedStyle(s),
-                R = parseInt(H.borderLeftWidth, 10),
-                E = parseInt(H.borderTopWidth, 10),
-                S = parseInt(H.borderRightWidth, 10),
-                T = parseInt(H.borderBottomWidth, 10);
-            let h = 0,
-                g = 0;
-            const x = "offsetWidth" in s ? s.offsetWidth - s.clientWidth - R - S : 0,
-                k = "offsetHeight" in s ? s.offsetHeight - s.clientHeight - E - T : 0,
-                $ = "offsetWidth" in s ? s.offsetWidth === 0 ? 0 : W / s.offsetWidth : 0,
-                q = "offsetHeight" in s ? s.offsetHeight === 0 ? 0 : O / s.offsetHeight : 0;
-            if (P === s) h = c === "start" ? d : c === "end" ? d - b : c === "nearest" ? C(y, y + b, b, E, T, y + d, y + d + v, v) : d - b / 2, g = f === "start" ? u : f === "center" ? u - m / 2 : f === "end" ? u - m : C(w, w + m, m, R, S, w + u, w + u + F, F), h = Math.max(0, h + y), g = Math.max(0, g + w);
+                    height: n,
+                    width: r,
+                    top: a,
+                    right: l,
+                    bottom: d,
+                    left: f
+                } = t.getBoundingClientRect();
+            if (i === `if-needed` && C >= 0 && E >= 0 && T <= v && w <= _ && (t === m && !s(t) || C >= a && T <= d && E >= f && w <= l)) return N;
+            let p = getComputedStyle(t),
+                g = parseInt(p.borderLeftWidth, 10),
+                D = parseInt(p.borderTopWidth, 10),
+                O = parseInt(p.borderRightWidth, 10),
+                k = parseInt(p.borderBottomWidth, 10),
+                A = 0,
+                P = 0,
+                F = `offsetWidth` in t ? t.offsetWidth - t.clientWidth - g - O : 0,
+                I = `offsetHeight` in t ? t.offsetHeight - t.clientHeight - D - k : 0,
+                L = `offsetWidth` in t ? t.offsetWidth === 0 ? 0 : r / t.offsetWidth : 0,
+                R = `offsetHeight` in t ? t.offsetHeight === 0 ? 0 : n / t.offsetHeight : 0;
+            if (m === t) A = o === `start` ? j : o === `end` ? j - v : o === `nearest` ? c(b, b + v, v, D, k, b + j, b + j + x, x) : j - v / 2, P = u === `start` ? M : u === `center` ? M - _ / 2 : u === `end` ? M - _ : c(y, y + _, _, g, O, y + M, y + M + S, S), A = Math.max(0, A + b), P = Math.max(0, P + y);
             else {
-                h = c === "start" ? d - N - E : c === "end" ? d - Y + T + k : c === "nearest" ? C(N, Y, O, E, T + k, d, d + v, v) : d - (N + O / 2) + k / 2, g = f === "start" ? u - j - R : f === "center" ? u - (j + W / 2) + x / 2 : f === "end" ? u - X + S + x : C(j, X, W, R, S + x, u, u + F, F);
-                const {
-                    scrollLeft: Q,
-                    scrollTop: U
-                } = s;
-                h = q === 0 ? 0 : Math.max(0, Math.min(U + h / q, s.scrollHeight - O / q + k)), g = $ === 0 ? 0 : Math.max(0, Math.min(Q + g / $, s.scrollWidth - W / $ + x)), d += U - h, u += Q - g
+                A = o === `start` ? j - a - D : o === `end` ? j - d + k + I : o === `nearest` ? c(a, d, n, D, k + I, j, j + x, x) : j - (a + n / 2) + I / 2, P = u === `start` ? M - f - g : u === `center` ? M - (f + r / 2) + F / 2 : u === `end` ? M - l + O + F : c(f, l, r, g, O + F, M, M + S, S);
+                let {
+                    scrollLeft: e,
+                    scrollTop: i
+                } = t;
+                A = R === 0 ? 0 : Math.max(0, Math.min(i + A / R, t.scrollHeight - n / R + I)), P = L === 0 ? 0 : Math.max(0, Math.min(e + P / L, t.scrollWidth - r / L + F)), j += i - A, M += e - P
             }
-            A.push({
-                el: s,
-                top: h,
-                left: g
+            N.push({
+                el: t,
+                top: A,
+                left: P
             })
         }
-        return A
+        return N
     },
-    de = e => e === !1 ? {
-        block: "end",
-        inline: "nearest"
-    } : (o => o === Object(o) && Object.keys(o).length !== 0)(e) ? e : {
-        block: "start",
-        inline: "nearest"
+    d = e => !1 === e ? {
+        block: `end`,
+        inline: `nearest`
+    } : (e => e === Object(e) && Object.keys(e).length !== 0)(e) ? e : {
+        block: `start`,
+        inline: `nearest`
     };
 
-function ue(e, o) {
-    if (!e.isConnected || !(n => {
-            let t = n;
+function f(e, t) {
+    if (!e.isConnected || !(e => {
+            let t = e;
             for (; t && t.parentNode;) {
                 if (t.parentNode === document) return !0;
                 t = t.parentNode instanceof ShadowRoot ? t.parentNode.host : t.parentNode
             }
             return !1
         })(e)) return;
-    const r = (n => {
-        const t = window.getComputedStyle(n);
+    let n = (e => {
+        let t = window.getComputedStyle(e);
         return {
             top: parseFloat(t.scrollMarginTop) || 0,
             right: parseFloat(t.scrollMarginRight) || 0,
@@ -144,89 +149,89 @@ function ue(e, o) {
             left: parseFloat(t.scrollMarginLeft) || 0
         }
     })(e);
-    if ((n => typeof n == "object" && typeof n.behavior == "function")(o)) return o.behavior(oe(e, o));
-    const l = typeof o == "boolean" || o == null ? void 0 : o.behavior;
-    for (const {
-            el: n,
-            top: t,
-            left: i
+    if ((e => typeof e == `object` && typeof e.behavior == `function`)(t)) return t.behavior(u(e, t));
+    let r = typeof t == `boolean` || t == null ? void 0 : t.behavior;
+    for (let {
+            el: i,
+            top: a,
+            left: o
         }
-        of oe(e, de(o))) {
-        const c = t - r.top + r.bottom,
-            f = i - r.left + r.right;
-        n.scroll({
-            top: c,
-            left: f,
-            behavior: l
+        of u(e, d(t))) {
+        let e = a - n.top + n.bottom,
+            t = o - n.left + n.right;
+        i.scroll({
+            top: e,
+            left: t,
+            behavior: r
         })
     }
 }
-const he = ["parentNode"],
-    ge = "form_item";
+var p = [`parentNode`],
+    m = `form_item`;
 
-function le(e) {
+function h(e) {
     return e === void 0 || e === !1 ? [] : Array.isArray(e) ? e : [e]
 }
 
-function pe(e, o) {
+function g(e, t) {
     if (!e.length) return;
-    const r = e.join("_");
-    return o ? `${o}_${r}` : he.includes(r) ? `${ge}_${r}` : r
+    let n = e.join(`_`);
+    return t ? `${t}_${n}` : p.includes(n) ? `${m}_${n}` : n
 }
 
-function we(e, o, r, l, n, t) {
-    let i = l;
-    return t !== void 0 ? i = t : r.validating ? i = "validating" : e.length ? i = "error" : o.length ? i = "warning" : (r.touched || n && r.validated) && (i = "success"), i
+function _(e, t, n, r, i, a) {
+    let o = r;
+    return a === void 0 ? n.validating ? o = `validating` : e.length ? o = `error` : t.length ? o = `warning` : (n.touched || i && n.validated) && (o = `success`) : o = a, o
 }
-var me = function(e, o) {
-    var r = {};
-    for (var l in e) Object.prototype.hasOwnProperty.call(e, l) && o.indexOf(l) < 0 && (r[l] = e[l]);
-    if (e != null && typeof Object.getOwnPropertySymbols == "function")
-        for (var n = 0, l = Object.getOwnPropertySymbols(e); n < l.length; n++) o.indexOf(l[n]) < 0 && Object.prototype.propertyIsEnumerable.call(e, l[n]) && (r[l[n]] = e[l[n]]);
-    return r
+var v = function(e, t) {
+    var n = {};
+    for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
+    if (e != null && typeof Object.getOwnPropertySymbols == `function`)
+        for (var i = 0, r = Object.getOwnPropertySymbols(e); i < r.length; i++) t.indexOf(r[i]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[i]) && (n[r[i]] = e[r[i]]);
+    return n
 };
 
-function ne(e) {
-    return le(e).join("_")
+function y(e) {
+    return h(e).join(`_`)
 }
 
-function re(e, o) {
-    const r = o.getFieldInstance(e),
-        l = fe(r);
-    if (l) return l;
-    const n = pe(le(e), o.__INTERNAL__.name);
-    if (n) return document.getElementById(n)
+function b(e, t) {
+    let r = t.getFieldInstance(e),
+        i = n(r);
+    if (i) return i;
+    let a = g(h(e), t.__INTERNAL__.name);
+    if (a) return document.getElementById(a)
 }
 
-function ye(e) {
-    const [o] = ce(), r = Z.useRef({}), l = Z.useMemo(() => e ?? Object.assign(Object.assign({}, o), {
+function x(e) {
+    let [t] = r(), n = i.useRef({}), a = i.useMemo(() => e ?? Object.assign(Object.assign({}, t), {
         __INTERNAL__: {
-            itemRef: n => t => {
-                const i = ne(n);
-                t ? r.current[i] = t : delete r.current[i]
+            itemRef: e => t => {
+                let r = y(e);
+                t ? n.current[r] = t : delete n.current[r]
             }
         },
-        scrollToField: (n, t = {}) => {
-            const {
-                focus: i
-            } = t, c = me(t, ["focus"]), f = re(n, l);
-            f && (ue(f, Object.assign({
-                scrollMode: "if-needed",
-                block: "nearest"
-            }, c)), i && l.focusField(n))
+        scrollToField: (e, t = {}) => {
+            let {
+                focus: n
+            } = t, r = v(t, [`focus`]), i = b(e, a);
+            i && (f(i, Object.assign({
+                scrollMode: `if-needed`,
+                block: `nearest`
+            }, r)), n && a.focusField(e))
         },
-        focusField: n => {
-            var t, i;
-            const c = l.getFieldInstance(n);
-            typeof(c == null ? void 0 : c.focus) == "function" ? c.focus(): (i = (t = re(n, l)) === null || t === void 0 ? void 0 : t.focus) === null || i === void 0 || i.call(t)
+        focusField: e => {
+            var t, n;
+            let r = a.getFieldInstance(e);
+            typeof(r == null ? void 0 : r.focus) == `function` ? r.focus(): (n = (t = b(e, a)) == null ? void 0 : t.focus) == null || n.call(t)
         },
-        getFieldInstance: n => {
-            const t = ne(n);
-            return r.current[t]
+        getFieldInstance: e => {
+            let t = y(e);
+            return n.current[t]
         }
-    }), [e, o]);
-    return [l]
+    }), [e, t]);
+    return [a]
 }
 export {
-    le as a, pe as b, we as g, ne as t, ye as u
+    h as a, _ as i, x as n, g as r, y as t
 };

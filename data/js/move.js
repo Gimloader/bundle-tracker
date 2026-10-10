@@ -1,141 +1,142 @@
+import "./Compact.js";
 import {
-    bz as t,
-    di as s
-} from "./_index.js";
-const m = new t("antMoveDownIn", {
+    _ as e
+} from "./color.js";
+import {
+    S as t
+} from "./ContextIsolator.js";
+var n = new e(`antMoveDownIn`, {
         "0%": {
-            transform: "translate3d(0, 100%, 0)",
-            transformOrigin: "0 0",
+            transform: `translate3d(0, 100%, 0)`,
+            transformOrigin: `0 0`,
             opacity: 0
         },
         "100%": {
-            transform: "translate3d(0, 0, 0)",
-            transformOrigin: "0 0",
+            transform: `translate3d(0, 0, 0)`,
+            transformOrigin: `0 0`,
             opacity: 1
         }
     }),
-    f = new t("antMoveDownOut", {
+    r = new e(`antMoveDownOut`, {
         "0%": {
-            transform: "translate3d(0, 0, 0)",
-            transformOrigin: "0 0",
+            transform: `translate3d(0, 0, 0)`,
+            transformOrigin: `0 0`,
             opacity: 1
         },
         "100%": {
-            transform: "translate3d(0, 100%, 0)",
-            transformOrigin: "0 0",
+            transform: `translate3d(0, 100%, 0)`,
+            transformOrigin: `0 0`,
             opacity: 0
         }
     }),
-    c = new t("antMoveLeftIn", {
+    i = new e(`antMoveLeftIn`, {
         "0%": {
-            transform: "translate3d(-100%, 0, 0)",
-            transformOrigin: "0 0",
+            transform: `translate3d(-100%, 0, 0)`,
+            transformOrigin: `0 0`,
             opacity: 0
         },
         "100%": {
-            transform: "translate3d(0, 0, 0)",
-            transformOrigin: "0 0",
+            transform: `translate3d(0, 0, 0)`,
+            transformOrigin: `0 0`,
             opacity: 1
         }
     }),
-    y = new t("antMoveLeftOut", {
+    a = new e(`antMoveLeftOut`, {
         "0%": {
-            transform: "translate3d(0, 0, 0)",
-            transformOrigin: "0 0",
+            transform: `translate3d(0, 0, 0)`,
+            transformOrigin: `0 0`,
             opacity: 1
         },
         "100%": {
-            transform: "translate3d(-100%, 0, 0)",
-            transformOrigin: "0 0",
+            transform: `translate3d(-100%, 0, 0)`,
+            transformOrigin: `0 0`,
             opacity: 0
         }
     }),
-    p = new t("antMoveRightIn", {
+    o = new e(`antMoveRightIn`, {
         "0%": {
-            transform: "translate3d(100%, 0, 0)",
-            transformOrigin: "0 0",
+            transform: `translate3d(100%, 0, 0)`,
+            transformOrigin: `0 0`,
             opacity: 0
         },
         "100%": {
-            transform: "translate3d(0, 0, 0)",
-            transformOrigin: "0 0",
+            transform: `translate3d(0, 0, 0)`,
+            transformOrigin: `0 0`,
             opacity: 1
         }
     }),
-    O = new t("antMoveRightOut", {
+    s = new e(`antMoveRightOut`, {
         "0%": {
-            transform: "translate3d(0, 0, 0)",
-            transformOrigin: "0 0",
+            transform: `translate3d(0, 0, 0)`,
+            transformOrigin: `0 0`,
             opacity: 1
         },
         "100%": {
-            transform: "translate3d(100%, 0, 0)",
-            transformOrigin: "0 0",
+            transform: `translate3d(100%, 0, 0)`,
+            transformOrigin: `0 0`,
             opacity: 0
         }
     }),
-    g = new t("antMoveUpIn", {
-        "0%": {
-            transform: "translate3d(0, -100%, 0)",
-            transformOrigin: "0 0",
-            opacity: 0
-        },
-        "100%": {
-            transform: "translate3d(0, 0, 0)",
-            transformOrigin: "0 0",
-            opacity: 1
-        }
-    }),
-    v = new t("antMoveUpOut", {
-        "0%": {
-            transform: "translate3d(0, 0, 0)",
-            transformOrigin: "0 0",
-            opacity: 1
-        },
-        "100%": {
-            transform: "translate3d(0, -100%, 0)",
-            transformOrigin: "0 0",
-            opacity: 0
-        }
-    }),
-    l = {
+    c = {
         "move-up": {
-            inKeyframes: g,
-            outKeyframes: v
+            inKeyframes: new e(`antMoveUpIn`, {
+                "0%": {
+                    transform: `translate3d(0, -100%, 0)`,
+                    transformOrigin: `0 0`,
+                    opacity: 0
+                },
+                "100%": {
+                    transform: `translate3d(0, 0, 0)`,
+                    transformOrigin: `0 0`,
+                    opacity: 1
+                }
+            }),
+            outKeyframes: new e(`antMoveUpOut`, {
+                "0%": {
+                    transform: `translate3d(0, 0, 0)`,
+                    transformOrigin: `0 0`,
+                    opacity: 1
+                },
+                "100%": {
+                    transform: `translate3d(0, -100%, 0)`,
+                    transformOrigin: `0 0`,
+                    opacity: 0
+                }
+            })
         },
         "move-down": {
-            inKeyframes: m,
-            outKeyframes: f
+            inKeyframes: n,
+            outKeyframes: r
         },
         "move-left": {
-            inKeyframes: c,
-            outKeyframes: y
+            inKeyframes: i,
+            outKeyframes: a
         },
         "move-right": {
-            inKeyframes: p,
-            outKeyframes: O
+            inKeyframes: o,
+            outKeyframes: s
         }
     },
-    d = (n, a) => {
-        const {
-            antCls: o
-        } = n, r = `${o}-${a}`, {
-            inKeyframes: i,
-            outKeyframes: e
-        } = l[a];
-        return [s(r, i, e, n.motionDurationMid), {
+    l = (e, n) => {
+        let {
+            antCls: r
+        } = e, i = `${r}-${n}`, {
+            inKeyframes: a,
+            outKeyframes: o
+        } = c[n];
+        return [t(i, a, o, e.motionDurationMid), {
             [`
-        ${r}-enter,
-        ${r}-appear
+        ${i}-enter,
+        ${i}-appear
       `]: {
                 opacity: 0,
-                animationTimingFunction: n.motionEaseOutCirc
+                animationTimingFunction: e.motionEaseOutCirc
             },
-            [`${r}-leave`]: {
-                animationTimingFunction: n.motionEaseInOutCirc
+            [`${i}-leave`]: {
+                animationTimingFunction: e.motionEaseInOutCirc
             }
         }]
     };
 export {
-    d as i
+    l as t
 };

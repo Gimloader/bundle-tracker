@@ -1,0 +1,8845 @@
+import {
+    o as e,
+    t
+} from "./rolldown-runtime.js";
+import {
+    t as n
+} from "./GetAssetPath.js";
+import {
+    t as r
+} from "./lodash.js";
+import {
+    n as i
+} from "./MapSound.js";
+import {
+    t as a
+} from "./playSound.js";
+import {
+    t as o
+} from "./phaser.js";
+import {
+    t as s
+} from "./defineProperty.js";
+import {
+    d as c,
+    t as l
+} from "./stores-2.js";
+import {
+    t as u
+} from "./MapStyle.js";
+import {
+    t as d
+} from "./FetchScene.js";
+import {
+    t as f
+} from "./isVersion.js";
+import {
+    i as p
+} from "./InPhase.js";
+import {
+    t as m
+} from "./FetchRoom.js";
+var h = r(),
+    g = e(o(), 1);
+if (typeof window < `u` && window.Phaser) {
+    let e = window.require;
+    window.require = t => {
+        if (e) return e(t);
+        if (t === `Phaser`) return window.Phaser
+    }
+}
+var _ = `esotericsoftware.spine.skeletonFile.cache`,
+    v = `esotericsoftware.spine.atlas.cache`,
+    y = `spineSkeletonData`,
+    b = `spineAtlasData`,
+    x = `spine`,
+    S, C, w = class {
+        constructor() {
+            s(this, `entries`, {}), s(this, `size`, 0)
+        }
+        add(e) {
+            let t = this.entries[e];
+            return this.entries[e] = !0, !t && (this.size++, !0)
+        }
+        addAll(e) {
+            let t = this.size;
+            for (var n = 0, r = e.length; n < r; n++) this.add(e[n]);
+            return t != this.size
+        }
+        contains(e) {
+            return this.entries[e]
+        }
+        clear() {
+            this.entries = {}, this.size = 0
+        }
+    },
+    T = class e {
+        constructor(e = 0, t = 0, n = 0, r = 0) {
+            s(this, `r`, void 0), s(this, `g`, void 0), s(this, `b`, void 0), s(this, `a`, void 0), this.r = e, this.g = t, this.b = n, this.a = r
+        }
+        set(e, t, n, r) {
+            return this.r = e, this.g = t, this.b = n, this.a = r, this.clamp()
+        }
+        setFromColor(e) {
+            return this.r = e.r, this.g = e.g, this.b = e.b, this.a = e.a, this
+        }
+        setFromString(e) {
+            return e = e.charAt(0) == `#` ? e.substr(1) : e, this.r = parseInt(e.substr(0, 2), 16) / 255, this.g = parseInt(e.substr(2, 2), 16) / 255, this.b = parseInt(e.substr(4, 2), 16) / 255, this.a = e.length == 8 ? parseInt(e.substr(6, 2), 16) / 255 : 1, this
+        }
+        add(e, t, n, r) {
+            return this.r += e, this.g += t, this.b += n, this.a += r, this.clamp()
+        }
+        clamp() {
+            return this.r < 0 ? this.r = 0 : this.r > 1 && (this.r = 1), this.g < 0 ? this.g = 0 : this.g > 1 && (this.g = 1), this.b < 0 ? this.b = 0 : this.b > 1 && (this.b = 1), this.a < 0 ? this.a = 0 : this.a > 1 && (this.a = 1), this
+        }
+        static rgba8888ToColor(e, t) {
+            e.r = ((t & 4278190080) >>> 24) / 255, e.g = ((t & 16711680) >>> 16) / 255, e.b = ((t & 65280) >>> 8) / 255, e.a = (t & 255) / 255
+        }
+        static rgb888ToColor(e, t) {
+            e.r = ((t & 16711680) >>> 16) / 255, e.g = ((t & 65280) >>> 8) / 255, e.b = (t & 255) / 255
+        }
+        toRgb888() {
+            let e = e => (`0` + (e * 255).toString(16)).slice(-2);
+            return Number(`0x` + e(this.r) + e(this.g) + e(this.b))
+        }
+        static fromString(t) {
+            return new e().setFromString(t)
+        }
+    };
+S = T, s(T, `WHITE`, new S(1, 1, 1, 1)), s(T, `RED`, new S(1, 0, 0, 1)), s(T, `GREEN`, new S(0, 1, 0, 1)), s(T, `BLUE`, new S(0, 0, 1, 1)), s(T, `MAGENTA`, new S(1, 0, 1, 1));
+var E = class e {
+    static clamp(e, t, n) {
+        return e < t ? t : e > n ? n : e
+    }
+    static cosDeg(t) {
+        return Math.cos(t * e.degRad)
+    }
+    static sinDeg(t) {
+        return Math.sin(t * e.degRad)
+    }
+    static atan2Deg(t, n) {
+        return Math.atan2(t, n) * e.degRad
+    }
+    static signum(e) {
+        return e > 0 ? 1 : e < 0 ? -1 : 0
+    }
+    static toInt(e) {
+        return e > 0 ? Math.floor(e) : Math.ceil(e)
+    }
+    static cbrt(e) {
+        let t = Math.abs(e) ** (1 / 3);
+        return e < 0 ? -t : t
+    }
+    static randomTriangular(t, n) {
+        return e.randomTriangularWith(t, n, (t + n) * .5)
+    }
+    static randomTriangularWith(e, t, n) {
+        let r = Math.random(),
+            i = t - e;
+        return r <= (n - e) / i ? e + Math.sqrt(r * i * (n - e)) : t - Math.sqrt((1 - r) * i * (t - n))
+    }
+    static isPowerOfTwo(e) {
+        return e && !(e & e - 1)
+    }
+};
+C = E, s(E, `PI`, 3.1415927), s(E, `PI2`, C.PI * 2), s(E, `invPI2`, 1 / C.PI2), s(E, `radiansToDegrees`, 180 / C.PI), s(E, `radDeg`, C.radiansToDegrees), s(E, `degreesToRadians`, C.PI / 180), s(E, `degRad`, C.degreesToRadians);
+var D = class e {
+    static arrayCopy(e, t, n, r, i) {
+        for (let a = t, o = r; a < t + i; a++, o++) n[o] = e[a]
+    }
+    static arrayFill(e, t, n, r) {
+        for (let i = t; i < n; i++) e[i] = r
+    }
+    static setArraySize(e, t, n = 0) {
+        let r = e.length;
+        if (r == t) return e;
+        if (e.length = t, r < t)
+            for (let i = r; i < t; i++) e[i] = n;
+        return e
+    }
+    static ensureArrayCapacity(t, n, r = 0) {
+        return t.length >= n ? t : e.setArraySize(t, n, r)
+    }
+    static newArray(e, t) {
+        let n = Array(e);
+        for (let r = 0; r < e; r++) n[r] = t;
+        return n
+    }
+    static newFloatArray(t) {
+        if (e.SUPPORTS_TYPED_ARRAYS) return new Float32Array(t);
+        {
+            let e = Array(t);
+            for (let t = 0; t < e.length; t++) e[t] = 0;
+            return e
+        }
+    }
+    static newShortArray(t) {
+        if (e.SUPPORTS_TYPED_ARRAYS) return new Int16Array(t);
+        {
+            let e = Array(t);
+            for (let t = 0; t < e.length; t++) e[t] = 0;
+            return e
+        }
+    }
+    static toFloatArray(t) {
+        return e.SUPPORTS_TYPED_ARRAYS ? new Float32Array(t) : t
+    }
+    static toSinglePrecision(t) {
+        return e.SUPPORTS_TYPED_ARRAYS ? Math.fround(t) : t
+    }
+    static webkit602BugfixHelper(e, t) {}
+    static contains(e, t, n = !0) {
+        for (var r = 0; r < e.length; r++)
+            if (e[r] == t) return !0;
+        return !1
+    }
+    static enumValue(e, t) {
+        return e[t[0].toUpperCase() + t.slice(1)]
+    }
+};
+s(D, `SUPPORTS_TYPED_ARRAYS`, typeof Float32Array < `u`);
+var O = class {
+        constructor(e) {
+            s(this, `items`, []), s(this, `instantiator`, void 0), this.instantiator = e
+        }
+        obtain() {
+            return this.items.length > 0 ? this.items.pop() : this.instantiator()
+        }
+        free(e) {
+            e.reset && e.reset(), this.items.push(e)
+        }
+        freeAll(e) {
+            for (let t = 0; t < e.length; t++) this.free(e[t])
+        }
+        clear() {
+            this.items.length = 0
+        }
+    },
+    k = class {
+        constructor(e = 0, t = 0) {
+            s(this, `x`, void 0), s(this, `y`, void 0), this.x = e, this.y = t
+        }
+        set(e, t) {
+            return this.x = e, this.y = t, this
+        }
+        length() {
+            let e = this.x,
+                t = this.y;
+            return Math.sqrt(e * e + t * t)
+        }
+        normalize() {
+            let e = this.length();
+            return e != 0 && (this.x /= e, this.y /= e), this
+        }
+    },
+    A = class {
+        constructor(e) {
+            if (s(this, `name`, void 0), !e) throw Error(`name cannot be null.`);
+            this.name = e
+        }
+    },
+    j = class e extends A {
+        constructor(t) {
+            super(t), s(this, `id`, e.nextID++), s(this, `bones`, null), s(this, `vertices`, []), s(this, `worldVerticesLength`, 0), s(this, `timelineAttachment`, this)
+        }
+        computeWorldVertices(e, t, n, r, i, a) {
+            n = i + (n >> 1) * a;
+            let o = e.bone.skeleton,
+                s = e.deform,
+                c = this.vertices,
+                l = this.bones;
+            if (!l) {
+                s.length > 0 && (c = s);
+                let o = e.bone,
+                    l = o.worldX,
+                    u = o.worldY,
+                    d = o.a,
+                    f = o.b,
+                    p = o.c,
+                    m = o.d;
+                for (let e = t, o = i; o < n; e += 2, o += a) {
+                    let t = c[e],
+                        n = c[e + 1];
+                    r[o] = t * d + n * f + l, r[o + 1] = t * p + n * m + u
+                }
+                return
+            }
+            let u = 0,
+                d = 0;
+            for (let e = 0; e < t; e += 2) {
+                let e = l[u];
+                u += e + 1, d += e
+            }
+            let f = o.bones;
+            if (s.length == 0)
+                for (let e = i, t = d * 3; e < n; e += a) {
+                    let n = 0,
+                        i = 0,
+                        a = l[u++];
+                    for (a += u; u < a; u++, t += 3) {
+                        let e = f[l[u]],
+                            r = c[t],
+                            a = c[t + 1],
+                            o = c[t + 2];
+                        n += (r * e.a + a * e.b + e.worldX) * o, i += (r * e.c + a * e.d + e.worldY) * o
+                    }
+                    r[e] = n, r[e + 1] = i
+                } else {
+                    let e = s;
+                    for (let t = i, o = d * 3, s = d << 1; t < n; t += a) {
+                        let n = 0,
+                            i = 0,
+                            a = l[u++];
+                        for (a += u; u < a; u++, o += 3, s += 2) {
+                            let t = f[l[u]],
+                                r = c[o] + e[s],
+                                a = c[o + 1] + e[s + 1],
+                                d = c[o + 2];
+                            n += (r * t.a + a * t.b + t.worldX) * d, i += (r * t.c + a * t.d + t.worldY) * d
+                        }
+                        r[t] = n, r[t + 1] = i
+                    }
+                }
+        }
+        copyTo(e) {
+            this.bones ? (e.bones = Array(this.bones.length), D.arrayCopy(this.bones, 0, e.bones, 0, this.bones.length)) : e.bones = null, this.vertices && (e.vertices = D.newFloatArray(this.vertices.length), D.arrayCopy(this.vertices, 0, e.vertices, 0, this.vertices.length)), e.worldVerticesLength = this.worldVerticesLength, e.timelineAttachment = this.timelineAttachment
+        }
+    };
+s(j, `nextID`, 0);
+var M = class e {
+    constructor(t) {
+        s(this, `id`, e.nextID()), s(this, `regions`, void 0), s(this, `start`, 0), s(this, `digits`, 0), s(this, `setupIndex`, 0), this.regions = Array(t)
+    }
+    copy() {
+        let t = new e(this.regions.length);
+        return D.arrayCopy(this.regions, 0, t.regions, 0, this.regions.length), t.start = this.start, t.digits = this.digits, t.setupIndex = this.setupIndex, t
+    }
+    apply(e, t) {
+        let n = e.sequenceIndex;
+        n == -1 && (n = this.setupIndex), n >= this.regions.length && (n = this.regions.length - 1);
+        let r = this.regions[n];
+        t.region != r && (t.region = r, t.updateRegion())
+    }
+    getPath(e, t) {
+        let n = e,
+            r = (this.start + t).toString();
+        for (let e = this.digits - r.length; e > 0; e--) n += `0`;
+        return n += r, n
+    }
+    static nextID() {
+        return e._nextID++
+    }
+};
+s(M, `_nextID`, 0);
+var N;
+(function(e) {
+    e[e.hold = 0] = `hold`, e[e.once = 1] = `once`, e[e.loop = 2] = `loop`, e[e.pingpong = 3] = `pingpong`, e[e.onceReverse = 4] = `onceReverse`, e[e.loopReverse = 5] = `loopReverse`, e[e.pingpongReverse = 6] = `pingpongReverse`
+})(N || (N = {}));
+var ee = [N.hold, N.once, N.loop, N.pingpong, N.onceReverse, N.loopReverse, N.pingpongReverse],
+    P = class {
+        constructor(e, t, n) {
+            if (s(this, `name`, void 0), s(this, `timelines`, []), s(this, `timelineIds`, new w), s(this, `duration`, void 0), !e) throw Error(`name cannot be null.`);
+            this.name = e, this.setTimelines(t), this.duration = n
+        }
+        setTimelines(e) {
+            if (!e) throw Error(`timelines cannot be null.`);
+            this.timelines = e, this.timelineIds.clear();
+            for (var t = 0; t < e.length; t++) this.timelineIds.addAll(e[t].getPropertyIds())
+        }
+        hasTimeline(e) {
+            for (let t = 0; t < e.length; t++)
+                if (this.timelineIds.contains(e[t])) return !0;
+            return !1
+        }
+        apply(e, t, n, r, i, a, o, s) {
+            if (!e) throw Error(`skeleton cannot be null.`);
+            r && this.duration != 0 && (n %= this.duration, t > 0 && (t %= this.duration));
+            let c = this.timelines;
+            for (let r = 0, l = c.length; r < l; r++) c[r].apply(e, t, n, i, a, o, s)
+        }
+    },
+    F;
+(function(e) {
+    e[e.setup = 0] = `setup`, e[e.first = 1] = `first`, e[e.replace = 2] = `replace`, e[e.add = 3] = `add`
+})(F || (F = {}));
+var I;
+(function(e) {
+    e[e.mixIn = 0] = `mixIn`, e[e.mixOut = 1] = `mixOut`
+})(I || (I = {}));
+var L = {
+        rotate: 0,
+        x: 1,
+        y: 2,
+        scaleX: 3,
+        scaleY: 4,
+        shearX: 5,
+        shearY: 6,
+        inherit: 7,
+        rgb: 8,
+        alpha: 9,
+        rgb2: 10,
+        attachment: 11,
+        deform: 12,
+        event: 13,
+        drawOrder: 14,
+        ikConstraint: 15,
+        transformConstraint: 16,
+        pathConstraintPosition: 17,
+        pathConstraintSpacing: 18,
+        pathConstraintMix: 19,
+        physicsConstraintInertia: 20,
+        physicsConstraintStrength: 21,
+        physicsConstraintDamping: 22,
+        physicsConstraintMass: 23,
+        physicsConstraintWind: 24,
+        physicsConstraintGravity: 25,
+        physicsConstraintMix: 26,
+        physicsConstraintReset: 27,
+        sequence: 28
+    },
+    R = class {
+        constructor(e, t) {
+            s(this, `propertyIds`, void 0), s(this, `frames`, void 0), this.propertyIds = t, this.frames = D.newFloatArray(e * this.getFrameEntries())
+        }
+        getPropertyIds() {
+            return this.propertyIds
+        }
+        getFrameEntries() {
+            return 1
+        }
+        getFrameCount() {
+            return this.frames.length / this.getFrameEntries()
+        }
+        getDuration() {
+            return this.frames[this.frames.length - this.getFrameEntries()]
+        }
+        static search1(e, t) {
+            let n = e.length;
+            for (let r = 1; r < n; r++)
+                if (e[r] > t) return r - 1;
+            return n - 1
+        }
+        static search(e, t, n) {
+            let r = e.length;
+            for (let i = n; i < r; i += n)
+                if (e[i] > t) return i - n;
+            return r - n
+        }
+    },
+    z = class extends R {
+        constructor(e, t, n) {
+            super(e, n), s(this, `curves`, void 0), this.curves = D.newFloatArray(e + t * 18), this.curves[e - 1] = 1
+        }
+        setLinear(e) {
+            this.curves[e] = 0
+        }
+        setStepped(e) {
+            this.curves[e] = 1
+        }
+        shrink(e) {
+            let t = this.getFrameCount() + e * 18;
+            if (this.curves.length > t) {
+                let e = D.newFloatArray(t);
+                D.arrayCopy(this.curves, 0, e, 0, t), this.curves = e
+            }
+        }
+        setBezier(e, t, n, r, i, a, o, s, c, l, u) {
+            let d = this.curves,
+                f = this.getFrameCount() + e * 18;
+            n == 0 && (d[t] = 2 + f);
+            let p = (r - a * 2 + s) * .03,
+                m = (i - o * 2 + c) * .03,
+                h = ((a - s) * 3 - r + l) * .006,
+                g = ((o - c) * 3 - i + u) * .006,
+                _ = p * 2 + h,
+                v = m * 2 + g,
+                y = (a - r) * .3 + p + h * .16666667,
+                b = (o - i) * .3 + m + g * .16666667,
+                x = r + y,
+                S = i + b;
+            for (let e = f + 18; f < e; f += 2) d[f] = x, d[f + 1] = S, y += _, b += v, _ += h, v += g, x += y, S += b
+        }
+        getBezierValue(e, t, n, r) {
+            let i = this.curves;
+            if (i[r] > e) {
+                let a = this.frames[t],
+                    o = this.frames[t + n];
+                return o + (e - a) / (i[r] - a) * (i[r + 1] - o)
+            }
+            let a = r + 18;
+            for (r += 2; r < a; r += 2)
+                if (i[r] >= e) {
+                    let t = i[r - 2],
+                        n = i[r - 1];
+                    return n + (e - t) / (i[r] - t) * (i[r + 1] - n)
+                } t += this.getFrameEntries();
+            let o = i[a - 2],
+                s = i[a - 1];
+            return s + (e - o) / (this.frames[t] - o) * (this.frames[t + n] - s)
+        }
+    },
+    B = class extends z {
+        constructor(e, t, n) {
+            super(e, t, [n])
+        }
+        getFrameEntries() {
+            return 2
+        }
+        setFrame(e, t, n) {
+            e <<= 1, this.frames[e] = t, this.frames[e + 1] = n
+        }
+        getCurveValue(e) {
+            let t = this.frames,
+                n = t.length - 2;
+            for (let r = 2; r <= n; r += 2)
+                if (t[r] > e) {
+                    n = r - 2;
+                    break
+                } let r = this.curves[n >> 1];
+            switch (r) {
+                case 0:
+                    let r = t[n],
+                        i = t[n + 1];
+                    return i + (e - r) / (t[n + 2] - r) * (t[n + 2 + 1] - i);
+                case 1:
+                    return t[n + 1]
+            }
+            return this.getBezierValue(e, n, 1, r - 2)
+        }
+        getRelativeValue(e, t, n, r, i) {
+            if (e < this.frames[0]) {
+                switch (n) {
+                    case F.setup:
+                        return i;
+                    case F.first:
+                        return r + (i - r) * t
+                }
+                return r
+            }
+            let a = this.getCurveValue(e);
+            switch (n) {
+                case F.setup:
+                    return i + a * t;
+                case F.first:
+                case F.replace:
+                    a += i - r
+            }
+            return r + a * t
+        }
+        getAbsoluteValue(e, t, n, r, i) {
+            if (e < this.frames[0]) {
+                switch (n) {
+                    case F.setup:
+                        return i;
+                    case F.first:
+                        return r + (i - r) * t
+                }
+                return r
+            }
+            let a = this.getCurveValue(e);
+            return n == F.setup ? i + (a - i) * t : r + (a - r) * t
+        }
+        getAbsoluteValue2(e, t, n, r, i, a) {
+            if (e < this.frames[0]) {
+                switch (n) {
+                    case F.setup:
+                        return i;
+                    case F.first:
+                        return r + (i - r) * t
+                }
+                return r
+            }
+            return n == F.setup ? i + (a - i) * t : r + (a - r) * t
+        }
+        getScaleValue(e, t, n, r, i, a) {
+            if (e < this.frames[0]) {
+                switch (n) {
+                    case F.setup:
+                        return a;
+                    case F.first:
+                        return i + (a - i) * t
+                }
+                return i
+            }
+            let o = this.getCurveValue(e) * a;
+            if (t == 1) return n == F.add ? i + o - a : o;
+            if (r == I.mixOut) switch (n) {
+                case F.setup:
+                    return a + (Math.abs(o) * E.signum(a) - a) * t;
+                case F.first:
+                case F.replace:
+                    return i + (Math.abs(o) * E.signum(i) - i) * t
+            } else {
+                let e = 0;
+                switch (n) {
+                    case F.setup:
+                        return e = Math.abs(a) * E.signum(o), e + (o - e) * t;
+                    case F.first:
+                    case F.replace:
+                        return e = Math.abs(i) * E.signum(o), e + (o - e) * t
+                }
+            }
+            return i + (o - a) * t
+        }
+    },
+    te = class extends z {
+        constructor(e, t, n, r) {
+            super(e, t, [n, r])
+        }
+        getFrameEntries() {
+            return 3
+        }
+        setFrame(e, t, n, r) {
+            e *= 3, this.frames[e] = t, this.frames[e + 1] = n, this.frames[e + 2] = r
+        }
+    },
+    ne = class extends B {
+        constructor(e, t, n) {
+            super(e, t, L.rotate + `|` + n), s(this, `boneIndex`, 0), this.boneIndex = n
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s = e.bones[this.boneIndex];
+            s.active && (s.rotation = this.getRelativeValue(n, i, a, s.rotation, s.data.rotation))
+        }
+    },
+    re = class extends te {
+        constructor(e, t, n) {
+            super(e, t, L.x + `|` + n, L.y + `|` + n), s(this, `boneIndex`, 0), this.boneIndex = n
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s = e.bones[this.boneIndex];
+            if (!s.active) return;
+            let c = this.frames;
+            if (n < c[0]) {
+                switch (a) {
+                    case F.setup:
+                        s.x = s.data.x, s.y = s.data.y;
+                        return;
+                    case F.first:
+                        s.x += (s.data.x - s.x) * i, s.y += (s.data.y - s.y) * i
+                }
+                return
+            }
+            let l = 0,
+                u = 0,
+                d = R.search(c, n, 3),
+                f = this.curves[d / 3];
+            switch (f) {
+                case 0:
+                    let e = c[d];
+                    l = c[d + 1], u = c[d + 2];
+                    let t = (n - e) / (c[d + 3] - e);
+                    l += (c[d + 3 + 1] - l) * t, u += (c[d + 3 + 2] - u) * t;
+                    break;
+                case 1:
+                    l = c[d + 1], u = c[d + 2];
+                    break;
+                default:
+                    l = this.getBezierValue(n, d, 1, f - 2), u = this.getBezierValue(n, d, 2, f + 18 - 2)
+            }
+            switch (a) {
+                case F.setup:
+                    s.x = s.data.x + l * i, s.y = s.data.y + u * i;
+                    break;
+                case F.first:
+                case F.replace:
+                    s.x += (s.data.x + l - s.x) * i, s.y += (s.data.y + u - s.y) * i;
+                    break;
+                case F.add:
+                    s.x += l * i, s.y += u * i
+            }
+        }
+    },
+    ie = class extends B {
+        constructor(e, t, n) {
+            super(e, t, L.x + `|` + n), s(this, `boneIndex`, 0), this.boneIndex = n
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s = e.bones[this.boneIndex];
+            s.active && (s.x = this.getRelativeValue(n, i, a, s.x, s.data.x))
+        }
+    },
+    ae = class extends B {
+        constructor(e, t, n) {
+            super(e, t, L.y + `|` + n), s(this, `boneIndex`, 0), this.boneIndex = n
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s = e.bones[this.boneIndex];
+            s.active && (s.y = this.getRelativeValue(n, i, a, s.y, s.data.y))
+        }
+    },
+    oe = class extends te {
+        constructor(e, t, n) {
+            super(e, t, L.scaleX + `|` + n, L.scaleY + `|` + n), s(this, `boneIndex`, 0), this.boneIndex = n
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s = e.bones[this.boneIndex];
+            if (!s.active) return;
+            let c = this.frames;
+            if (n < c[0]) {
+                switch (a) {
+                    case F.setup:
+                        s.scaleX = s.data.scaleX, s.scaleY = s.data.scaleY;
+                        return;
+                    case F.first:
+                        s.scaleX += (s.data.scaleX - s.scaleX) * i, s.scaleY += (s.data.scaleY - s.scaleY) * i
+                }
+                return
+            }
+            let l, u, d = R.search(c, n, 3),
+                f = this.curves[d / 3];
+            switch (f) {
+                case 0:
+                    let e = c[d];
+                    l = c[d + 1], u = c[d + 2];
+                    let t = (n - e) / (c[d + 3] - e);
+                    l += (c[d + 3 + 1] - l) * t, u += (c[d + 3 + 2] - u) * t;
+                    break;
+                case 1:
+                    l = c[d + 1], u = c[d + 2];
+                    break;
+                default:
+                    l = this.getBezierValue(n, d, 1, f - 2), u = this.getBezierValue(n, d, 2, f + 18 - 2)
+            }
+            if (l *= s.data.scaleX, u *= s.data.scaleY, i == 1) a == F.add ? (s.scaleX += l - s.data.scaleX, s.scaleY += u - s.data.scaleY) : (s.scaleX = l, s.scaleY = u);
+            else {
+                let e = 0,
+                    t = 0;
+                if (o == I.mixOut) switch (a) {
+                    case F.setup:
+                        e = s.data.scaleX, t = s.data.scaleY, s.scaleX = e + (Math.abs(l) * E.signum(e) - e) * i, s.scaleY = t + (Math.abs(u) * E.signum(t) - t) * i;
+                        break;
+                    case F.first:
+                    case F.replace:
+                        e = s.scaleX, t = s.scaleY, s.scaleX = e + (Math.abs(l) * E.signum(e) - e) * i, s.scaleY = t + (Math.abs(u) * E.signum(t) - t) * i;
+                        break;
+                    case F.add:
+                        s.scaleX += (l - s.data.scaleX) * i, s.scaleY += (u - s.data.scaleY) * i
+                } else switch (a) {
+                    case F.setup:
+                        e = Math.abs(s.data.scaleX) * E.signum(l), t = Math.abs(s.data.scaleY) * E.signum(u), s.scaleX = e + (l - e) * i, s.scaleY = t + (u - t) * i;
+                        break;
+                    case F.first:
+                    case F.replace:
+                        e = Math.abs(s.scaleX) * E.signum(l), t = Math.abs(s.scaleY) * E.signum(u), s.scaleX = e + (l - e) * i, s.scaleY = t + (u - t) * i;
+                        break;
+                    case F.add:
+                        s.scaleX += (l - s.data.scaleX) * i, s.scaleY += (u - s.data.scaleY) * i
+                }
+            }
+        }
+    },
+    se = class extends B {
+        constructor(e, t, n) {
+            super(e, t, L.scaleX + `|` + n), s(this, `boneIndex`, 0), this.boneIndex = n
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s = e.bones[this.boneIndex];
+            s.active && (s.scaleX = this.getScaleValue(n, i, a, o, s.scaleX, s.data.scaleX))
+        }
+    },
+    ce = class extends B {
+        constructor(e, t, n) {
+            super(e, t, L.scaleY + `|` + n), s(this, `boneIndex`, 0), this.boneIndex = n
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s = e.bones[this.boneIndex];
+            s.active && (s.scaleY = this.getScaleValue(n, i, a, o, s.scaleY, s.data.scaleY))
+        }
+    },
+    le = class extends te {
+        constructor(e, t, n) {
+            super(e, t, L.shearX + `|` + n, L.shearY + `|` + n), s(this, `boneIndex`, 0), this.boneIndex = n
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s = e.bones[this.boneIndex];
+            if (!s.active) return;
+            let c = this.frames;
+            if (n < c[0]) {
+                switch (a) {
+                    case F.setup:
+                        s.shearX = s.data.shearX, s.shearY = s.data.shearY;
+                        return;
+                    case F.first:
+                        s.shearX += (s.data.shearX - s.shearX) * i, s.shearY += (s.data.shearY - s.shearY) * i
+                }
+                return
+            }
+            let l = 0,
+                u = 0,
+                d = R.search(c, n, 3),
+                f = this.curves[d / 3];
+            switch (f) {
+                case 0:
+                    let e = c[d];
+                    l = c[d + 1], u = c[d + 2];
+                    let t = (n - e) / (c[d + 3] - e);
+                    l += (c[d + 3 + 1] - l) * t, u += (c[d + 3 + 2] - u) * t;
+                    break;
+                case 1:
+                    l = c[d + 1], u = c[d + 2];
+                    break;
+                default:
+                    l = this.getBezierValue(n, d, 1, f - 2), u = this.getBezierValue(n, d, 2, f + 18 - 2)
+            }
+            switch (a) {
+                case F.setup:
+                    s.shearX = s.data.shearX + l * i, s.shearY = s.data.shearY + u * i;
+                    break;
+                case F.first:
+                case F.replace:
+                    s.shearX += (s.data.shearX + l - s.shearX) * i, s.shearY += (s.data.shearY + u - s.shearY) * i;
+                    break;
+                case F.add:
+                    s.shearX += l * i, s.shearY += u * i
+            }
+        }
+    },
+    ue = class extends B {
+        constructor(e, t, n) {
+            super(e, t, L.shearX + `|` + n), s(this, `boneIndex`, 0), this.boneIndex = n
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s = e.bones[this.boneIndex];
+            s.active && (s.shearX = this.getRelativeValue(n, i, a, s.shearX, s.data.shearX))
+        }
+    },
+    de = class extends B {
+        constructor(e, t, n) {
+            super(e, t, L.shearY + `|` + n), s(this, `boneIndex`, 0), this.boneIndex = n
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s = e.bones[this.boneIndex];
+            s.active && (s.shearY = this.getRelativeValue(n, i, a, s.shearY, s.data.shearY))
+        }
+    },
+    fe = class extends R {
+        constructor(e, t) {
+            super(e, [L.inherit + `|` + t]), s(this, `boneIndex`, 0), this.boneIndex = t
+        }
+        getFrameEntries() {
+            return 2
+        }
+        setFrame(e, t, n) {
+            e *= 2, this.frames[e] = t, this.frames[e + 1] = n
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s = e.bones[this.boneIndex];
+            if (!s.active) return;
+            if (o == I.mixOut) {
+                a == F.setup && (s.inherit = s.data.inherit);
+                return
+            }
+            let c = this.frames;
+            n < c[0] ? (a == F.setup || a == F.first) && (s.inherit = s.data.inherit) : s.inherit = this.frames[R.search(c, n, 2) + 1]
+        }
+    },
+    pe = class extends z {
+        constructor(e, t, n) {
+            super(e, t, [L.rgb + `|` + n, L.alpha + `|` + n]), s(this, `slotIndex`, 0), this.slotIndex = n
+        }
+        getFrameEntries() {
+            return 5
+        }
+        setFrame(e, t, n, r, i, a) {
+            e *= 5, this.frames[e] = t, this.frames[e + 1] = n, this.frames[e + 2] = r, this.frames[e + 3] = i, this.frames[e + 4] = a
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s = e.slots[this.slotIndex];
+            if (!s.bone.active) return;
+            let c = this.frames,
+                l = s.color;
+            if (n < c[0]) {
+                let e = s.data.color;
+                switch (a) {
+                    case F.setup:
+                        l.setFromColor(e);
+                        return;
+                    case F.first:
+                        l.add((e.r - l.r) * i, (e.g - l.g) * i, (e.b - l.b) * i, (e.a - l.a) * i)
+                }
+                return
+            }
+            let u = 0,
+                d = 0,
+                f = 0,
+                p = 0,
+                m = R.search(c, n, 5),
+                h = this.curves[m / 5];
+            switch (h) {
+                case 0:
+                    let e = c[m];
+                    u = c[m + 1], d = c[m + 2], f = c[m + 3], p = c[m + 4];
+                    let t = (n - e) / (c[m + 5] - e);
+                    u += (c[m + 5 + 1] - u) * t, d += (c[m + 5 + 2] - d) * t, f += (c[m + 5 + 3] - f) * t, p += (c[m + 5 + 4] - p) * t;
+                    break;
+                case 1:
+                    u = c[m + 1], d = c[m + 2], f = c[m + 3], p = c[m + 4];
+                    break;
+                default:
+                    u = this.getBezierValue(n, m, 1, h - 2), d = this.getBezierValue(n, m, 2, h + 18 - 2), f = this.getBezierValue(n, m, 3, h + 36 - 2), p = this.getBezierValue(n, m, 4, h + 54 - 2)
+            }
+            i == 1 ? l.set(u, d, f, p) : (a == F.setup && l.setFromColor(s.data.color), l.add((u - l.r) * i, (d - l.g) * i, (f - l.b) * i, (p - l.a) * i))
+        }
+    },
+    me = class extends z {
+        constructor(e, t, n) {
+            super(e, t, [L.rgb + `|` + n]), s(this, `slotIndex`, 0), this.slotIndex = n
+        }
+        getFrameEntries() {
+            return 4
+        }
+        setFrame(e, t, n, r, i) {
+            e <<= 2, this.frames[e] = t, this.frames[e + 1] = n, this.frames[e + 2] = r, this.frames[e + 3] = i
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s = e.slots[this.slotIndex];
+            if (!s.bone.active) return;
+            let c = this.frames,
+                l = s.color;
+            if (n < c[0]) {
+                let e = s.data.color;
+                switch (a) {
+                    case F.setup:
+                        l.r = e.r, l.g = e.g, l.b = e.b;
+                        return;
+                    case F.first:
+                        l.r += (e.r - l.r) * i, l.g += (e.g - l.g) * i, l.b += (e.b - l.b) * i
+                }
+                return
+            }
+            let u = 0,
+                d = 0,
+                f = 0,
+                p = R.search(c, n, 4),
+                m = this.curves[p >> 2];
+            switch (m) {
+                case 0:
+                    let e = c[p];
+                    u = c[p + 1], d = c[p + 2], f = c[p + 3];
+                    let t = (n - e) / (c[p + 4] - e);
+                    u += (c[p + 4 + 1] - u) * t, d += (c[p + 4 + 2] - d) * t, f += (c[p + 4 + 3] - f) * t;
+                    break;
+                case 1:
+                    u = c[p + 1], d = c[p + 2], f = c[p + 3];
+                    break;
+                default:
+                    u = this.getBezierValue(n, p, 1, m - 2), d = this.getBezierValue(n, p, 2, m + 18 - 2), f = this.getBezierValue(n, p, 3, m + 36 - 2)
+            }
+            if (i == 1) l.r = u, l.g = d, l.b = f;
+            else {
+                if (a == F.setup) {
+                    let e = s.data.color;
+                    l.r = e.r, l.g = e.g, l.b = e.b
+                }
+                l.r += (u - l.r) * i, l.g += (d - l.g) * i, l.b += (f - l.b) * i
+            }
+        }
+    },
+    he = class extends B {
+        constructor(e, t, n) {
+            super(e, t, L.alpha + `|` + n), s(this, `slotIndex`, 0), this.slotIndex = n
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s = e.slots[this.slotIndex];
+            if (!s.bone.active) return;
+            let c = s.color;
+            if (n < this.frames[0]) {
+                let e = s.data.color;
+                switch (a) {
+                    case F.setup:
+                        c.a = e.a;
+                        return;
+                    case F.first:
+                        c.a += (e.a - c.a) * i
+                }
+                return
+            }
+            let l = this.getCurveValue(n);
+            i == 1 ? c.a = l : (a == F.setup && (c.a = s.data.color.a), c.a += (l - c.a) * i)
+        }
+    },
+    ge = class extends z {
+        constructor(e, t, n) {
+            super(e, t, [L.rgb + `|` + n, L.alpha + `|` + n, L.rgb2 + `|` + n]), s(this, `slotIndex`, 0), this.slotIndex = n
+        }
+        getFrameEntries() {
+            return 8
+        }
+        setFrame(e, t, n, r, i, a, o, s, c) {
+            e <<= 3, this.frames[e] = t, this.frames[e + 1] = n, this.frames[e + 2] = r, this.frames[e + 3] = i, this.frames[e + 4] = a, this.frames[e + 5] = o, this.frames[e + 6] = s, this.frames[e + 7] = c
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s = e.slots[this.slotIndex];
+            if (!s.bone.active) return;
+            let c = this.frames,
+                l = s.color,
+                u = s.darkColor;
+            if (n < c[0]) {
+                let e = s.data.color,
+                    t = s.data.darkColor;
+                switch (a) {
+                    case F.setup:
+                        l.setFromColor(e), u.r = t.r, u.g = t.g, u.b = t.b;
+                        return;
+                    case F.first:
+                        l.add((e.r - l.r) * i, (e.g - l.g) * i, (e.b - l.b) * i, (e.a - l.a) * i), u.r += (t.r - u.r) * i, u.g += (t.g - u.g) * i, u.b += (t.b - u.b) * i
+                }
+                return
+            }
+            let d = 0,
+                f = 0,
+                p = 0,
+                m = 0,
+                h = 0,
+                g = 0,
+                _ = 0,
+                v = R.search(c, n, 8),
+                y = this.curves[v >> 3];
+            switch (y) {
+                case 0:
+                    let e = c[v];
+                    d = c[v + 1], f = c[v + 2], p = c[v + 3], m = c[v + 4], h = c[v + 5], g = c[v + 6], _ = c[v + 7];
+                    let t = (n - e) / (c[v + 8] - e);
+                    d += (c[v + 8 + 1] - d) * t, f += (c[v + 8 + 2] - f) * t, p += (c[v + 8 + 3] - p) * t, m += (c[v + 8 + 4] - m) * t, h += (c[v + 8 + 5] - h) * t, g += (c[v + 8 + 6] - g) * t, _ += (c[v + 8 + 7] - _) * t;
+                    break;
+                case 1:
+                    d = c[v + 1], f = c[v + 2], p = c[v + 3], m = c[v + 4], h = c[v + 5], g = c[v + 6], _ = c[v + 7];
+                    break;
+                default:
+                    d = this.getBezierValue(n, v, 1, y - 2), f = this.getBezierValue(n, v, 2, y + 18 - 2), p = this.getBezierValue(n, v, 3, y + 36 - 2), m = this.getBezierValue(n, v, 4, y + 54 - 2), h = this.getBezierValue(n, v, 5, y + 72 - 2), g = this.getBezierValue(n, v, 6, y + 90 - 2), _ = this.getBezierValue(n, v, 7, y + 108 - 2)
+            }
+            if (i == 1) l.set(d, f, p, m), u.r = h, u.g = g, u.b = _;
+            else {
+                if (a == F.setup) {
+                    l.setFromColor(s.data.color);
+                    let e = s.data.darkColor;
+                    u.r = e.r, u.g = e.g, u.b = e.b
+                }
+                l.add((d - l.r) * i, (f - l.g) * i, (p - l.b) * i, (m - l.a) * i), u.r += (h - u.r) * i, u.g += (g - u.g) * i, u.b += (_ - u.b) * i
+            }
+        }
+    },
+    _e = class extends z {
+        constructor(e, t, n) {
+            super(e, t, [L.rgb + `|` + n, L.rgb2 + `|` + n]), s(this, `slotIndex`, 0), this.slotIndex = n
+        }
+        getFrameEntries() {
+            return 7
+        }
+        setFrame(e, t, n, r, i, a, o, s) {
+            e *= 7, this.frames[e] = t, this.frames[e + 1] = n, this.frames[e + 2] = r, this.frames[e + 3] = i, this.frames[e + 4] = a, this.frames[e + 5] = o, this.frames[e + 6] = s
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s = e.slots[this.slotIndex];
+            if (!s.bone.active) return;
+            let c = this.frames,
+                l = s.color,
+                u = s.darkColor;
+            if (n < c[0]) {
+                let e = s.data.color,
+                    t = s.data.darkColor;
+                switch (a) {
+                    case F.setup:
+                        l.r = e.r, l.g = e.g, l.b = e.b, u.r = t.r, u.g = t.g, u.b = t.b;
+                        return;
+                    case F.first:
+                        l.r += (e.r - l.r) * i, l.g += (e.g - l.g) * i, l.b += (e.b - l.b) * i, u.r += (t.r - u.r) * i, u.g += (t.g - u.g) * i, u.b += (t.b - u.b) * i
+                }
+                return
+            }
+            let d = 0,
+                f = 0,
+                p = 0,
+                m = 0,
+                h = 0,
+                g = 0,
+                _ = R.search(c, n, 7),
+                v = this.curves[_ / 7];
+            switch (v) {
+                case 0:
+                    let e = c[_];
+                    d = c[_ + 1], f = c[_ + 2], p = c[_ + 3], m = c[_ + 4], h = c[_ + 5], g = c[_ + 6];
+                    let t = (n - e) / (c[_ + 7] - e);
+                    d += (c[_ + 7 + 1] - d) * t, f += (c[_ + 7 + 2] - f) * t, p += (c[_ + 7 + 3] - p) * t, m += (c[_ + 7 + 4] - m) * t, h += (c[_ + 7 + 5] - h) * t, g += (c[_ + 7 + 6] - g) * t;
+                    break;
+                case 1:
+                    d = c[_ + 1], f = c[_ + 2], p = c[_ + 3], m = c[_ + 4], h = c[_ + 5], g = c[_ + 6];
+                    break;
+                default:
+                    d = this.getBezierValue(n, _, 1, v - 2), f = this.getBezierValue(n, _, 2, v + 18 - 2), p = this.getBezierValue(n, _, 3, v + 36 - 2), m = this.getBezierValue(n, _, 4, v + 54 - 2), h = this.getBezierValue(n, _, 5, v + 72 - 2), g = this.getBezierValue(n, _, 6, v + 90 - 2)
+            }
+            if (i == 1) l.r = d, l.g = f, l.b = p, u.r = m, u.g = h, u.b = g;
+            else {
+                if (a == F.setup) {
+                    let e = s.data.color,
+                        t = s.data.darkColor;
+                    l.r = e.r, l.g = e.g, l.b = e.b, u.r = t.r, u.g = t.g, u.b = t.b
+                }
+                l.r += (d - l.r) * i, l.g += (f - l.g) * i, l.b += (p - l.b) * i, u.r += (m - u.r) * i, u.g += (h - u.g) * i, u.b += (g - u.b) * i
+            }
+        }
+    },
+    ve = class extends R {
+        constructor(e, t) {
+            super(e, [L.attachment + `|` + t]), s(this, `slotIndex`, 0), s(this, `attachmentNames`, void 0), this.slotIndex = t, this.attachmentNames = Array(e)
+        }
+        getFrameCount() {
+            return this.frames.length
+        }
+        setFrame(e, t, n) {
+            this.frames[e] = t, this.attachmentNames[e] = n
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s = e.slots[this.slotIndex];
+            s.bone.active && (o == I.mixOut ? a == F.setup && this.setAttachment(e, s, s.data.attachmentName) : n < this.frames[0] ? (a == F.setup || a == F.first) && this.setAttachment(e, s, s.data.attachmentName) : this.setAttachment(e, s, this.attachmentNames[R.search1(this.frames, n)]))
+        }
+        setAttachment(e, t, n) {
+            t.setAttachment(n ? e.getAttachment(this.slotIndex, n) : null)
+        }
+    },
+    ye = class extends z {
+        constructor(e, t, n, r) {
+            super(e, t, [L.deform + `|` + n + `|` + r.id]), s(this, `slotIndex`, 0), s(this, `attachment`, void 0), s(this, `vertices`, void 0), this.slotIndex = n, this.attachment = r, this.vertices = Array(e)
+        }
+        getFrameCount() {
+            return this.frames.length
+        }
+        setFrame(e, t, n) {
+            this.frames[e] = t, this.vertices[e] = n
+        }
+        setBezier(e, t, n, r, i, a, o, s, c, l, u) {
+            let d = this.curves,
+                f = this.getFrameCount() + e * 18;
+            n == 0 && (d[t] = 2 + f);
+            let p = (r - a * 2 + s) * .03,
+                m = c * .03 - o * .06,
+                h = ((a - s) * 3 - r + l) * .006,
+                g = (o - c + .33333333) * .018,
+                _ = p * 2 + h,
+                v = m * 2 + g,
+                y = (a - r) * .3 + p + h * .16666667,
+                b = o * .3 + m + g * .16666667,
+                x = r + y,
+                S = b;
+            for (let e = f + 18; f < e; f += 2) d[f] = x, d[f + 1] = S, y += _, b += v, _ += h, v += g, x += y, S += b
+        }
+        getCurvePercent(e, t) {
+            let n = this.curves,
+                r = n[t];
+            switch (r) {
+                case 0:
+                    let n = this.frames[t];
+                    return (e - n) / (this.frames[t + this.getFrameEntries()] - n);
+                case 1:
+                    return 0
+            }
+            if (r -= 2, n[r] > e) {
+                let i = this.frames[t];
+                return n[r + 1] * (e - i) / (n[r] - i)
+            }
+            let i = r + 18;
+            for (r += 2; r < i; r += 2)
+                if (n[r] >= e) {
+                    let t = n[r - 2],
+                        i = n[r - 1];
+                    return i + (e - t) / (n[r] - t) * (n[r + 1] - i)
+                } let a = n[i - 2],
+                o = n[i - 1];
+            return o + (1 - o) * (e - a) / (this.frames[t + this.getFrameEntries()] - a)
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s = e.slots[this.slotIndex];
+            if (!s.bone.active) return;
+            let c = s.getAttachment();
+            if (!c || !(c instanceof j) || c.timelineAttachment != this.attachment) return;
+            let l = s.deform;
+            l.length == 0 && (a = F.setup);
+            let u = this.vertices,
+                d = u[0].length,
+                f = this.frames;
+            if (n < f[0]) {
+                switch (a) {
+                    case F.setup:
+                        l.length = 0;
+                        return;
+                    case F.first:
+                        if (i == 1) {
+                            l.length = 0;
+                            return
+                        }
+                        l.length = d;
+                        let e = c;
+                        if (e.bones) {
+                            i = 1 - i;
+                            for (var p = 0; p < d; p++) l[p] *= i
+                        } else {
+                            let t = e.vertices;
+                            for (var p = 0; p < d; p++) l[p] += (t[p] - l[p]) * i
+                        }
+                }
+                return
+            }
+            if (l.length = d, n >= f[f.length - 1]) {
+                let e = u[f.length - 1];
+                if (i == 1) {
+                    if (a == F.add) {
+                        let t = c;
+                        if (t.bones)
+                            for (let t = 0; t < d; t++) l[t] += e[t];
+                        else {
+                            let n = t.vertices;
+                            for (let t = 0; t < d; t++) l[t] += e[t] - n[t]
+                        }
+                    } else D.arrayCopy(e, 0, l, 0, d)
+                } else switch (a) {
+                    case F.setup: {
+                        let t = c;
+                        if (t.bones)
+                            for (let t = 0; t < d; t++) l[t] = e[t] * i;
+                        else {
+                            let n = t.vertices;
+                            for (let t = 0; t < d; t++) {
+                                let r = n[t];
+                                l[t] = r + (e[t] - r) * i
+                            }
+                        }
+                        break
+                    }
+                    case F.first:
+                    case F.replace:
+                        for (let t = 0; t < d; t++) l[t] += (e[t] - l[t]) * i;
+                        break;
+                    case F.add:
+                        let t = c;
+                        if (t.bones)
+                            for (let t = 0; t < d; t++) l[t] += e[t] * i;
+                        else {
+                            let n = t.vertices;
+                            for (let t = 0; t < d; t++) l[t] += (e[t] - n[t]) * i
+                        }
+                }
+                return
+            }
+            let m = R.search1(f, n),
+                h = this.getCurvePercent(n, m),
+                g = u[m],
+                _ = u[m + 1];
+            if (i == 1) {
+                if (a == F.add) {
+                    let e = c;
+                    if (e.bones)
+                        for (let e = 0; e < d; e++) {
+                            let t = g[e];
+                            l[e] += t + (_[e] - t) * h
+                        } else {
+                            let t = e.vertices;
+                            for (let e = 0; e < d; e++) {
+                                let n = g[e];
+                                l[e] += n + (_[e] - n) * h - t[e]
+                            }
+                        }
+                } else
+                    for (let e = 0; e < d; e++) {
+                        let t = g[e];
+                        l[e] = t + (_[e] - t) * h
+                    }
+            } else switch (a) {
+                case F.setup: {
+                    let e = c;
+                    if (e.bones)
+                        for (let e = 0; e < d; e++) {
+                            let t = g[e];
+                            l[e] = (t + (_[e] - t) * h) * i
+                        } else {
+                            let t = e.vertices;
+                            for (let e = 0; e < d; e++) {
+                                let n = g[e],
+                                    r = t[e];
+                                l[e] = r + (n + (_[e] - n) * h - r) * i
+                            }
+                        }
+                    break
+                }
+                case F.first:
+                case F.replace:
+                    for (let e = 0; e < d; e++) {
+                        let t = g[e];
+                        l[e] += (t + (_[e] - t) * h - l[e]) * i
+                    }
+                    break;
+                case F.add:
+                    let e = c;
+                    if (e.bones)
+                        for (let e = 0; e < d; e++) {
+                            let t = g[e];
+                            l[e] += (t + (_[e] - t) * h) * i
+                        } else {
+                            let t = e.vertices;
+                            for (let e = 0; e < d; e++) {
+                                let n = g[e];
+                                l[e] += (n + (_[e] - n) * h - t[e]) * i
+                            }
+                        }
+            }
+        }
+    },
+    be = class e extends R {
+        constructor(t) {
+            super(t, e.propertyIds), s(this, `events`, void 0), this.events = Array(t)
+        }
+        getFrameCount() {
+            return this.frames.length
+        }
+        setFrame(e, t) {
+            this.frames[e] = t.time, this.events[e] = t
+        }
+        apply(e, t, n, r, i, a, o) {
+            if (!r) return;
+            let s = this.frames,
+                c = this.frames.length;
+            if (t > n) this.apply(e, t, Number.MAX_VALUE, r, i, a, o), t = -1;
+            else if (t >= s[c - 1]) return;
+            if (n < s[0]) return;
+            let l = 0;
+            if (t < s[0]) l = 0;
+            else {
+                l = R.search1(s, t) + 1;
+                let e = s[l];
+                for (; l > 0 && s[l - 1] == e;) l--
+            }
+            for (; l < c && n >= s[l]; l++) r.push(this.events[l])
+        }
+    };
+s(be, `propertyIds`, [`` + L.event]);
+var xe = class e extends R {
+    constructor(t) {
+        super(t, e.propertyIds), s(this, `drawOrders`, void 0), this.drawOrders = Array(t)
+    }
+    getFrameCount() {
+        return this.frames.length
+    }
+    setFrame(e, t, n) {
+        this.frames[e] = t, this.drawOrders[e] = n
+    }
+    apply(e, t, n, r, i, a, o) {
+        if (o == I.mixOut) {
+            a == F.setup && D.arrayCopy(e.slots, 0, e.drawOrder, 0, e.slots.length);
+            return
+        }
+        if (n < this.frames[0]) {
+            (a == F.setup || a == F.first) && D.arrayCopy(e.slots, 0, e.drawOrder, 0, e.slots.length);
+            return
+        }
+        let s = R.search1(this.frames, n),
+            c = this.drawOrders[s];
+        if (!c) D.arrayCopy(e.slots, 0, e.drawOrder, 0, e.slots.length);
+        else {
+            let t = e.drawOrder,
+                n = e.slots;
+            for (let e = 0, r = c.length; e < r; e++) t[e] = n[c[e]]
+        }
+    }
+};
+s(xe, `propertyIds`, [`` + L.drawOrder]);
+var Se = class extends z {
+        constructor(e, t, n) {
+            super(e, t, [L.ikConstraint + `|` + n]), s(this, `constraintIndex`, 0), this.constraintIndex = n
+        }
+        getFrameEntries() {
+            return 6
+        }
+        setFrame(e, t, n, r, i, a, o) {
+            e *= 6, this.frames[e] = t, this.frames[e + 1] = n, this.frames[e + 2] = r, this.frames[e + 3] = i, this.frames[e + 4] = +!!a, this.frames[e + 5] = +!!o
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s = e.ikConstraints[this.constraintIndex];
+            if (!s.active) return;
+            let c = this.frames;
+            if (n < c[0]) {
+                switch (a) {
+                    case F.setup:
+                        s.mix = s.data.mix, s.softness = s.data.softness, s.bendDirection = s.data.bendDirection, s.compress = s.data.compress, s.stretch = s.data.stretch;
+                        return;
+                    case F.first:
+                        s.mix += (s.data.mix - s.mix) * i, s.softness += (s.data.softness - s.softness) * i, s.bendDirection = s.data.bendDirection, s.compress = s.data.compress, s.stretch = s.data.stretch
+                }
+                return
+            }
+            let l = 0,
+                u = 0,
+                d = R.search(c, n, 6),
+                f = this.curves[d / 6];
+            switch (f) {
+                case 0:
+                    let e = c[d];
+                    l = c[d + 1], u = c[d + 2];
+                    let t = (n - e) / (c[d + 6] - e);
+                    l += (c[d + 6 + 1] - l) * t, u += (c[d + 6 + 2] - u) * t;
+                    break;
+                case 1:
+                    l = c[d + 1], u = c[d + 2];
+                    break;
+                default:
+                    l = this.getBezierValue(n, d, 1, f - 2), u = this.getBezierValue(n, d, 2, f + 18 - 2)
+            }
+            a == F.setup ? (s.mix = s.data.mix + (l - s.data.mix) * i, s.softness = s.data.softness + (u - s.data.softness) * i, o == I.mixOut ? (s.bendDirection = s.data.bendDirection, s.compress = s.data.compress, s.stretch = s.data.stretch) : (s.bendDirection = c[d + 3], s.compress = c[d + 4] != 0, s.stretch = c[d + 5] != 0)) : (s.mix += (l - s.mix) * i, s.softness += (u - s.softness) * i, o == I.mixIn && (s.bendDirection = c[d + 3], s.compress = c[d + 4] != 0, s.stretch = c[d + 5] != 0))
+        }
+    },
+    Ce = class extends z {
+        constructor(e, t, n) {
+            super(e, t, [L.transformConstraint + `|` + n]), s(this, `constraintIndex`, 0), this.constraintIndex = n
+        }
+        getFrameEntries() {
+            return 7
+        }
+        setFrame(e, t, n, r, i, a, o, s) {
+            let c = this.frames;
+            e *= 7, c[e] = t, c[e + 1] = n, c[e + 2] = r, c[e + 3] = i, c[e + 4] = a, c[e + 5] = o, c[e + 6] = s
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s = e.transformConstraints[this.constraintIndex];
+            if (!s.active) return;
+            let c = this.frames;
+            if (n < c[0]) {
+                let e = s.data;
+                switch (a) {
+                    case F.setup:
+                        s.mixRotate = e.mixRotate, s.mixX = e.mixX, s.mixY = e.mixY, s.mixScaleX = e.mixScaleX, s.mixScaleY = e.mixScaleY, s.mixShearY = e.mixShearY;
+                        return;
+                    case F.first:
+                        s.mixRotate += (e.mixRotate - s.mixRotate) * i, s.mixX += (e.mixX - s.mixX) * i, s.mixY += (e.mixY - s.mixY) * i, s.mixScaleX += (e.mixScaleX - s.mixScaleX) * i, s.mixScaleY += (e.mixScaleY - s.mixScaleY) * i, s.mixShearY += (e.mixShearY - s.mixShearY) * i
+                }
+                return
+            }
+            let l, u, d, f, p, m, h = R.search(c, n, 7),
+                g = this.curves[h / 7];
+            switch (g) {
+                case 0:
+                    let e = c[h];
+                    l = c[h + 1], u = c[h + 2], d = c[h + 3], f = c[h + 4], p = c[h + 5], m = c[h + 6];
+                    let t = (n - e) / (c[h + 7] - e);
+                    l += (c[h + 7 + 1] - l) * t, u += (c[h + 7 + 2] - u) * t, d += (c[h + 7 + 3] - d) * t, f += (c[h + 7 + 4] - f) * t, p += (c[h + 7 + 5] - p) * t, m += (c[h + 7 + 6] - m) * t;
+                    break;
+                case 1:
+                    l = c[h + 1], u = c[h + 2], d = c[h + 3], f = c[h + 4], p = c[h + 5], m = c[h + 6];
+                    break;
+                default:
+                    l = this.getBezierValue(n, h, 1, g - 2), u = this.getBezierValue(n, h, 2, g + 18 - 2), d = this.getBezierValue(n, h, 3, g + 36 - 2), f = this.getBezierValue(n, h, 4, g + 54 - 2), p = this.getBezierValue(n, h, 5, g + 72 - 2), m = this.getBezierValue(n, h, 6, g + 90 - 2)
+            }
+            if (a == F.setup) {
+                let e = s.data;
+                s.mixRotate = e.mixRotate + (l - e.mixRotate) * i, s.mixX = e.mixX + (u - e.mixX) * i, s.mixY = e.mixY + (d - e.mixY) * i, s.mixScaleX = e.mixScaleX + (f - e.mixScaleX) * i, s.mixScaleY = e.mixScaleY + (p - e.mixScaleY) * i, s.mixShearY = e.mixShearY + (m - e.mixShearY) * i
+            } else s.mixRotate += (l - s.mixRotate) * i, s.mixX += (u - s.mixX) * i, s.mixY += (d - s.mixY) * i, s.mixScaleX += (f - s.mixScaleX) * i, s.mixScaleY += (p - s.mixScaleY) * i, s.mixShearY += (m - s.mixShearY) * i
+        }
+    },
+    we = class extends B {
+        constructor(e, t, n) {
+            super(e, t, L.pathConstraintPosition + `|` + n), s(this, `constraintIndex`, 0), this.constraintIndex = n
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s = e.pathConstraints[this.constraintIndex];
+            s.active && (s.position = this.getAbsoluteValue(n, i, a, s.position, s.data.position))
+        }
+    },
+    Te = class extends B {
+        constructor(e, t, n) {
+            super(e, t, L.pathConstraintSpacing + `|` + n), s(this, `constraintIndex`, 0), this.constraintIndex = n
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s = e.pathConstraints[this.constraintIndex];
+            s.active && (s.spacing = this.getAbsoluteValue(n, i, a, s.spacing, s.data.spacing))
+        }
+    },
+    Ee = class extends z {
+        constructor(e, t, n) {
+            super(e, t, [L.pathConstraintMix + `|` + n]), s(this, `constraintIndex`, 0), this.constraintIndex = n
+        }
+        getFrameEntries() {
+            return 4
+        }
+        setFrame(e, t, n, r, i) {
+            let a = this.frames;
+            e <<= 2, a[e] = t, a[e + 1] = n, a[e + 2] = r, a[e + 3] = i
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s = e.pathConstraints[this.constraintIndex];
+            if (!s.active) return;
+            let c = this.frames;
+            if (n < c[0]) {
+                switch (a) {
+                    case F.setup:
+                        s.mixRotate = s.data.mixRotate, s.mixX = s.data.mixX, s.mixY = s.data.mixY;
+                        return;
+                    case F.first:
+                        s.mixRotate += (s.data.mixRotate - s.mixRotate) * i, s.mixX += (s.data.mixX - s.mixX) * i, s.mixY += (s.data.mixY - s.mixY) * i
+                }
+                return
+            }
+            let l, u, d, f = R.search(c, n, 4),
+                p = this.curves[f >> 2];
+            switch (p) {
+                case 0:
+                    let e = c[f];
+                    l = c[f + 1], u = c[f + 2], d = c[f + 3];
+                    let t = (n - e) / (c[f + 4] - e);
+                    l += (c[f + 4 + 1] - l) * t, u += (c[f + 4 + 2] - u) * t, d += (c[f + 4 + 3] - d) * t;
+                    break;
+                case 1:
+                    l = c[f + 1], u = c[f + 2], d = c[f + 3];
+                    break;
+                default:
+                    l = this.getBezierValue(n, f, 1, p - 2), u = this.getBezierValue(n, f, 2, p + 18 - 2), d = this.getBezierValue(n, f, 3, p + 36 - 2)
+            }
+            if (a == F.setup) {
+                let e = s.data;
+                s.mixRotate = e.mixRotate + (l - e.mixRotate) * i, s.mixX = e.mixX + (u - e.mixX) * i, s.mixY = e.mixY + (d - e.mixY) * i
+            } else s.mixRotate += (l - s.mixRotate) * i, s.mixX += (u - s.mixX) * i, s.mixY += (d - s.mixY) * i
+        }
+    },
+    De = class extends B {
+        constructor(e, t, n, r) {
+            super(e, t, r + `|` + n), s(this, `constraintIndex`, 0), this.constraintIndex = n
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s;
+            if (this.constraintIndex == -1) {
+                let t = n >= this.frames[0] ? this.getCurveValue(n) : 0;
+                for (let r of e.physicsConstraints) r.active && this.global(r.data) && this.set(r, this.getAbsoluteValue2(n, i, a, this.get(r), this.setup(r), t))
+            } else s = e.physicsConstraints[this.constraintIndex], s.active && this.set(s, this.getAbsoluteValue(n, i, a, this.get(s), this.setup(s)))
+        }
+    },
+    Oe = class extends De {
+        constructor(e, t, n) {
+            super(e, t, n, L.physicsConstraintInertia)
+        }
+        setup(e) {
+            return e.data.inertia
+        }
+        get(e) {
+            return e.inertia
+        }
+        set(e, t) {
+            e.inertia = t
+        }
+        global(e) {
+            return e.inertiaGlobal
+        }
+    },
+    ke = class extends De {
+        constructor(e, t, n) {
+            super(e, t, n, L.physicsConstraintStrength)
+        }
+        setup(e) {
+            return e.data.strength
+        }
+        get(e) {
+            return e.strength
+        }
+        set(e, t) {
+            e.strength = t
+        }
+        global(e) {
+            return e.strengthGlobal
+        }
+    },
+    Ae = class extends De {
+        constructor(e, t, n) {
+            super(e, t, n, L.physicsConstraintDamping)
+        }
+        setup(e) {
+            return e.data.damping
+        }
+        get(e) {
+            return e.damping
+        }
+        set(e, t) {
+            e.damping = t
+        }
+        global(e) {
+            return e.dampingGlobal
+        }
+    },
+    je = class extends De {
+        constructor(e, t, n) {
+            super(e, t, n, L.physicsConstraintMass)
+        }
+        setup(e) {
+            return 1 / e.data.massInverse
+        }
+        get(e) {
+            return 1 / e.massInverse
+        }
+        set(e, t) {
+            e.massInverse = 1 / t
+        }
+        global(e) {
+            return e.massGlobal
+        }
+    },
+    Me = class extends De {
+        constructor(e, t, n) {
+            super(e, t, n, L.physicsConstraintWind)
+        }
+        setup(e) {
+            return e.data.wind
+        }
+        get(e) {
+            return e.wind
+        }
+        set(e, t) {
+            e.wind = t
+        }
+        global(e) {
+            return e.windGlobal
+        }
+    },
+    Ne = class extends De {
+        constructor(e, t, n) {
+            super(e, t, n, L.physicsConstraintGravity)
+        }
+        setup(e) {
+            return e.data.gravity
+        }
+        get(e) {
+            return e.gravity
+        }
+        set(e, t) {
+            e.gravity = t
+        }
+        global(e) {
+            return e.gravityGlobal
+        }
+    },
+    Pe = class extends De {
+        constructor(e, t, n) {
+            super(e, t, n, L.physicsConstraintMix)
+        }
+        setup(e) {
+            return e.data.mix
+        }
+        get(e) {
+            return e.mix
+        }
+        set(e, t) {
+            e.mix = t
+        }
+        global(e) {
+            return e.mixGlobal
+        }
+    },
+    Fe = class e extends R {
+        constructor(t, n) {
+            super(t, e.propertyIds), s(this, `constraintIndex`, void 0), this.constraintIndex = n
+        }
+        getFrameCount() {
+            return this.frames.length
+        }
+        setFrame(e, t) {
+            this.frames[e] = t
+        }
+        apply(e, t, n, r, i, a, o) {
+            let s;
+            if (this.constraintIndex != -1 && (s = e.physicsConstraints[this.constraintIndex], !s.active)) return;
+            let c = this.frames;
+            if (t > n) this.apply(e, t, Number.MAX_VALUE, [], i, a, o), t = -1;
+            else if (t >= c[c.length - 1]) return;
+            if (!(n < c[0]) && (t < c[0] || n >= c[R.search1(c, t) + 1])) {
+                if (s != null) s.reset();
+                else
+                    for (let t of e.physicsConstraints) t.active && t.reset()
+            }
+        }
+    };
+s(Fe, `propertyIds`, [L.physicsConstraintReset.toString()]);
+var Ie = class e extends R {
+    constructor(e, t, n) {
+        super(e, [L.sequence + `|` + t + `|` + n.sequence.id]), s(this, `slotIndex`, void 0), s(this, `attachment`, void 0), this.slotIndex = t, this.attachment = n
+    }
+    getFrameEntries() {
+        return e.ENTRIES
+    }
+    getSlotIndex() {
+        return this.slotIndex
+    }
+    getAttachment() {
+        return this.attachment
+    }
+    setFrame(t, n, r, i, a) {
+        let o = this.frames;
+        t *= e.ENTRIES, o[t] = n, o[t + e.MODE] = r | i << 4, o[t + e.DELAY] = a
+    }
+    apply(t, n, r, i, a, o, s) {
+        let c = t.slots[this.slotIndex];
+        if (!c.bone.active) return;
+        let l = c.attachment,
+            u = this.attachment;
+        if (l != u && (!(l instanceof j) || l.timelineAttachment != u)) return;
+        if (s == I.mixOut) {
+            o == F.setup && (c.sequenceIndex = -1);
+            return
+        }
+        let d = this.frames;
+        if (r < d[0]) {
+            (o == F.setup || o == F.first) && (c.sequenceIndex = -1);
+            return
+        }
+        let f = R.search(d, r, e.ENTRIES),
+            p = d[f],
+            m = d[f + e.MODE],
+            h = d[f + e.DELAY];
+        if (!this.attachment.sequence) return;
+        let g = m >> 4,
+            _ = this.attachment.sequence.regions.length,
+            v = ee[m & 15];
+        if (v != N.hold) switch (g += (r - p) / h + 1e-5 | 0, v) {
+            case N.once:
+                g = Math.min(_ - 1, g);
+                break;
+            case N.loop:
+                g %= _;
+                break;
+            case N.pingpong: {
+                let e = (_ << 1) - 2;
+                g = e == 0 ? 0 : g % e, g >= _ && (g = e - g);
+                break
+            }
+            case N.onceReverse:
+                g = Math.max(_ - 1 - g, 0);
+                break;
+            case N.loopReverse:
+                g = _ - 1 - g % _;
+                break;
+            case N.pingpongReverse: {
+                let e = (_ << 1) - 2;
+                g = e == 0 ? 0 : (g + _ - 1) % e, g >= _ && (g = e - g)
+            }
+        }
+        c.sequenceIndex = g
+    }
+};
+s(Ie, `ENTRIES`, 3), s(Ie, `MODE`, 1), s(Ie, `DELAY`, 2);
+var Le = class e {
+    static emptyAnimation() {
+        return e._emptyAnimation
+    }
+    constructor(e) {
+        s(this, `data`, void 0), s(this, `tracks`, []), s(this, `timeScale`, 1), s(this, `unkeyedState`, 0), s(this, `events`, []), s(this, `listeners`, []), s(this, `queue`, new ze(this)), s(this, `propertyIDs`, new w), s(this, `animationsChanged`, !1), s(this, `trackEntryPool`, new O(() => new Re)), this.data = e
+    }
+    update(e) {
+        e *= this.timeScale;
+        let t = this.tracks;
+        for (let n = 0, r = t.length; n < r; n++) {
+            let r = t[n];
+            if (!r) continue;
+            r.animationLast = r.nextAnimationLast, r.trackLast = r.nextTrackLast;
+            let i = e * r.timeScale;
+            if (r.delay > 0) {
+                if (r.delay -= i, r.delay > 0) continue;
+                i = -r.delay, r.delay = 0
+            }
+            let a = r.next;
+            if (a) {
+                let t = r.trackLast - a.delay;
+                if (t >= 0) {
+                    for (a.delay = 0, a.trackTime += r.timeScale == 0 ? 0 : (t / r.timeScale + e) * a.timeScale, r.trackTime += i, this.setCurrent(n, a, !0); a.mixingFrom;) a.mixTime += e, a = a.mixingFrom;
+                    continue
+                }
+            } else if (r.trackLast >= r.trackEnd && !r.mixingFrom) {
+                t[n] = null, this.queue.end(r), this.clearNext(r);
+                continue
+            }
+            if (r.mixingFrom && this.updateMixingFrom(r, e)) {
+                let e = r.mixingFrom;
+                for (r.mixingFrom = null, e && (e.mixingTo = null); e;) this.queue.end(e), e = e.mixingFrom
+            }
+            r.trackTime += i
+        }
+        this.queue.drain()
+    }
+    updateMixingFrom(e, t) {
+        let n = e.mixingFrom;
+        if (!n) return !0;
+        let r = this.updateMixingFrom(n, t);
+        if (n.animationLast = n.nextAnimationLast, n.trackLast = n.nextTrackLast, e.nextTrackLast != -1) {
+            let t = e.mixTime == 0 && n.mixTime == 0;
+            if (e.mixTime >= e.mixDuration || t) return (n.totalAlpha == 0 || e.mixDuration == 0 || t) && (e.mixingFrom = n.mixingFrom, n.mixingFrom != null && (n.mixingFrom.mixingTo = e), e.interruptAlpha = n.interruptAlpha, this.queue.end(n)), r
+        }
+        return n.trackTime += t * n.timeScale, e.mixTime += t, !1
+    }
+    apply(e) {
+        if (!e) throw Error(`skeleton cannot be null.`);
+        this.animationsChanged && this._animationsChanged();
+        let t = this.events,
+            n = this.tracks,
+            r = !1;
+        for (let a = 0, o = n.length; a < o; a++) {
+            let o = n[a];
+            if (!o || o.delay > 0) continue;
+            r = !0;
+            let s = a == 0 ? F.first : o.mixBlend,
+                c = o.alpha;
+            o.mixingFrom ? c *= this.applyMixingFrom(o, e, s) : o.trackTime >= o.trackEnd && !o.next && (c = 0);
+            let l = c >= o.alphaAttachmentThreshold,
+                u = o.animationLast,
+                d = o.getAnimationTime(),
+                f = d,
+                p = t;
+            o.reverse && (f = o.animation.duration - f, p = null);
+            let m = o.animation.timelines,
+                h = m.length;
+            if (a == 0 && c == 1 || s == F.add) {
+                a == 0 && (l = !0);
+                for (let t = 0; t < h; t++) {
+                    D.webkit602BugfixHelper(c, s);
+                    var i = m[t];
+                    i instanceof ve ? this.applyAttachmentTimeline(i, e, f, s, l) : i.apply(e, u, f, p, c, s, I.mixIn)
+                }
+            } else {
+                let t = o.timelineMode,
+                    n = o.shortestRotation,
+                    r = !n && o.timelinesRotation.length != h << 1;
+                r && (o.timelinesRotation.length = h << 1);
+                for (let i = 0; i < h; i++) {
+                    let a = m[i],
+                        d = t[i] == 0 ? s : F.setup;
+                    !n && a instanceof ne ? this.applyRotateTimeline(a, e, f, c, d, o.timelinesRotation, i << 1, r) : a instanceof ve ? this.applyAttachmentTimeline(a, e, f, s, l) : (D.webkit602BugfixHelper(c, s), a.apply(e, u, f, p, c, d, I.mixIn))
+                }
+            }
+            this.queueEvents(o, d), t.length = 0, o.nextAnimationLast = d, o.nextTrackLast = o.trackTime
+        }
+        for (var a = this.unkeyedState + 1, o = e.slots, s = 0, c = e.slots.length; s < c; s++) {
+            var l = o[s];
+            if (l.attachmentState == a) {
+                var u = l.data.attachmentName;
+                l.setAttachment(u ? e.getAttachment(l.data.index, u) : null)
+            }
+        }
+        return this.unkeyedState += 2, this.queue.drain(), r
+    }
+    applyMixingFrom(e, t, n) {
+        let r = e.mixingFrom;
+        r.mixingFrom && this.applyMixingFrom(r, t, n);
+        let i = 0;
+        e.mixDuration == 0 ? (i = 1, n == F.first && (n = F.setup)) : (i = e.mixTime / e.mixDuration, i > 1 && (i = 1), n != F.first && (n = r.mixBlend));
+        let a = i < r.mixAttachmentThreshold,
+            o = i < r.mixDrawOrderThreshold,
+            s = r.animation.timelines,
+            c = s.length,
+            l = r.alpha * e.interruptAlpha,
+            u = l * (1 - i),
+            d = r.animationLast,
+            f = r.getAnimationTime(),
+            p = f,
+            m = null;
+        if (r.reverse ? p = r.animation.duration - p : i < r.eventThreshold && (m = this.events), n == F.add)
+            for (let e = 0; e < c; e++) s[e].apply(t, d, p, m, u, n, I.mixOut);
+        else {
+            let e = r.timelineMode,
+                i = r.timelineHoldMix,
+                f = r.shortestRotation,
+                h = !f && r.timelinesRotation.length != c << 1;
+            h && (r.timelinesRotation.length = c << 1), r.totalAlpha = 0;
+            for (let g = 0; g < c; g++) {
+                let c = s[g],
+                    _ = I.mixOut,
+                    v, y = 0;
+                switch (e[g]) {
+                    case 0:
+                        if (!o && c instanceof xe) continue;
+                        v = n, y = u;
+                        break;
+                    case 1:
+                        v = F.setup, y = u;
+                        break;
+                    case 2:
+                        v = n, y = l;
+                        break;
+                    case 3:
+                        v = F.setup, y = l;
+                        break;
+                    default:
+                        v = F.setup;
+                        let e = i[g];
+                        y = l * Math.max(0, 1 - e.mixTime / e.mixDuration)
+                }
+                r.totalAlpha += y, !f && c instanceof ne ? this.applyRotateTimeline(c, t, p, y, v, r.timelinesRotation, g << 1, h) : c instanceof ve ? this.applyAttachmentTimeline(c, t, p, v, a && y >= r.alphaAttachmentThreshold) : (D.webkit602BugfixHelper(y, n), o && c instanceof xe && v == F.setup && (_ = I.mixIn), c.apply(t, d, p, m, y, v, _))
+            }
+        }
+        return e.mixDuration > 0 && this.queueEvents(r, f), this.events.length = 0, r.nextAnimationLast = f, r.nextTrackLast = r.trackTime, i
+    }
+    applyAttachmentTimeline(e, t, n, r, i) {
+        var a = t.slots[e.slotIndex];
+        a.bone.active && (n < e.frames[0] ? (r == F.setup || r == F.first) && this.setAttachment(t, a, a.data.attachmentName, i) : this.setAttachment(t, a, e.attachmentNames[R.search1(e.frames, n)], i), a.attachmentState <= this.unkeyedState && (a.attachmentState = this.unkeyedState + 1))
+    }
+    setAttachment(e, t, n, r) {
+        t.setAttachment(n ? e.getAttachment(t.data.index, n) : null), r && (t.attachmentState = this.unkeyedState + 2)
+    }
+    applyRotateTimeline(e, t, n, r, i, a, o, s) {
+        if (s && (a[o] = 0), r == 1) {
+            e.apply(t, 0, n, null, 1, i, I.mixIn);
+            return
+        }
+        let c = t.bones[e.boneIndex];
+        if (!c.active) return;
+        let l = e.frames,
+            u = 0,
+            d = 0;
+        if (n < l[0]) switch (i) {
+            case F.setup:
+                c.rotation = c.data.rotation;
+            default:
+                return;
+            case F.first:
+                u = c.rotation, d = c.data.rotation
+        } else u = i == F.setup ? c.data.rotation : c.rotation, d = c.data.rotation + e.getCurveValue(n);
+        let f = 0,
+            p = d - u;
+        if (p -= Math.ceil(p / 360 - .5) * 360, p == 0) f = a[o];
+        else {
+            let e = 0,
+                t = 0;
+            s ? (e = 0, t = p) : (e = a[o], t = a[o + 1]);
+            let n = e - e % 360;
+            f = p + n;
+            let r = p >= 0,
+                i = e >= 0;
+            Math.abs(t) <= 90 && E.signum(t) != E.signum(p) && (Math.abs(e - n) > 180 ? (f += 360 * E.signum(e), i = r) : n == 0 ? i = r : f -= 360 * E.signum(e)), i != r && (f += 360 * E.signum(e)), a[o] = f
+        }
+        a[o + 1] = p, c.rotation = u + f * r
+    }
+    queueEvents(e, t) {
+        let n = e.animationStart,
+            r = e.animationEnd,
+            i = r - n,
+            a = e.trackLast % i,
+            o = this.events,
+            s = 0,
+            c = o.length;
+        for (; s < c; s++) {
+            let t = o[s];
+            if (t.time < a) break;
+            t.time > r || this.queue.event(e, t)
+        }
+        let l = !1;
+        if (e.loop) {
+            if (i == 0) l = !0;
+            else {
+                let t = Math.floor(e.trackTime / i);
+                l = t > 0 && t > Math.floor(e.trackLast / i)
+            }
+        } else l = t >= r && e.animationLast < r;
+        for (l && this.queue.complete(e); s < c; s++) {
+            let t = o[s];
+            t.time < n || this.queue.event(e, t)
+        }
+    }
+    clearTracks() {
+        let e = this.queue.drainDisabled;
+        this.queue.drainDisabled = !0;
+        for (let e = 0, t = this.tracks.length; e < t; e++) this.clearTrack(e);
+        this.tracks.length = 0, this.queue.drainDisabled = e, this.queue.drain()
+    }
+    clearTrack(e) {
+        if (e >= this.tracks.length) return;
+        let t = this.tracks[e];
+        if (!t) return;
+        this.queue.end(t), this.clearNext(t);
+        let n = t;
+        for (;;) {
+            let e = n.mixingFrom;
+            if (!e) break;
+            this.queue.end(e), n.mixingFrom = null, n.mixingTo = null, n = e
+        }
+        this.tracks[t.trackIndex] = null, this.queue.drain()
+    }
+    setCurrent(e, t, n) {
+        let r = this.expandToIndex(e);
+        this.tracks[e] = t, t.previous = null, r && (n && this.queue.interrupt(r), t.mixingFrom = r, r.mixingTo = t, t.mixTime = 0, r.mixingFrom && r.mixDuration > 0 && (t.interruptAlpha *= Math.min(1, r.mixTime / r.mixDuration)), r.timelinesRotation.length = 0), this.queue.start(t)
+    }
+    setAnimation(e, t, n = !1) {
+        let r = this.data.skeletonData.findAnimation(t);
+        if (!r) throw Error(`Animation not found: ` + t);
+        return this.setAnimationWith(e, r, n)
+    }
+    setAnimationWith(e, t, n = !1) {
+        if (!t) throw Error(`animation cannot be null.`);
+        let r = !0,
+            i = this.expandToIndex(e);
+        i && (i.nextTrackLast == -1 ? (this.tracks[e] = i.mixingFrom, this.queue.interrupt(i), this.queue.end(i), this.clearNext(i), i = i.mixingFrom, r = !1) : this.clearNext(i));
+        let a = this.trackEntry(e, t, n, i);
+        return this.setCurrent(e, a, r), this.queue.drain(), a
+    }
+    addAnimation(e, t, n = !1, r = 0) {
+        let i = this.data.skeletonData.findAnimation(t);
+        if (!i) throw Error(`Animation not found: ` + t);
+        return this.addAnimationWith(e, i, n, r)
+    }
+    addAnimationWith(e, t, n = !1, r = 0) {
+        if (!t) throw Error(`animation cannot be null.`);
+        let i = this.expandToIndex(e);
+        if (i)
+            for (; i.next;) i = i.next;
+        let a = this.trackEntry(e, t, n, i);
+        return i ? (i.next = a, a.previous = i, r <= 0 && (r += i.getTrackComplete() - a.mixDuration)) : (this.setCurrent(e, a, !0), this.queue.drain()), a.delay = r, a
+    }
+    setEmptyAnimation(t, n = 0) {
+        let r = this.setAnimationWith(t, e.emptyAnimation(), !1);
+        return r.mixDuration = n, r.trackEnd = n, r
+    }
+    addEmptyAnimation(t, n = 0, r = 0) {
+        let i = this.addAnimationWith(t, e.emptyAnimation(), !1, r);
+        return r <= 0 && (i.delay += i.mixDuration - n), i.mixDuration = n, i.trackEnd = n, i
+    }
+    setEmptyAnimations(e = 0) {
+        let t = this.queue.drainDisabled;
+        this.queue.drainDisabled = !0;
+        for (let t = 0, n = this.tracks.length; t < n; t++) {
+            let n = this.tracks[t];
+            n && this.setEmptyAnimation(n.trackIndex, e)
+        }
+        this.queue.drainDisabled = t, this.queue.drain()
+    }
+    expandToIndex(e) {
+        return e < this.tracks.length ? this.tracks[e] : (D.ensureArrayCapacity(this.tracks, e + 1, null), this.tracks.length = e + 1, null)
+    }
+    trackEntry(e, t, n, r) {
+        let i = this.trackEntryPool.obtain();
+        return i.reset(), i.trackIndex = e, i.animation = t, i.loop = n, i.holdPrevious = !1, i.reverse = !1, i.shortestRotation = !1, i.eventThreshold = 0, i.alphaAttachmentThreshold = 0, i.mixAttachmentThreshold = 0, i.mixDrawOrderThreshold = 0, i.animationStart = 0, i.animationEnd = t.duration, i.animationLast = -1, i.nextAnimationLast = -1, i.delay = 0, i.trackTime = 0, i.trackLast = -1, i.nextTrackLast = -1, i.trackEnd = Number.MAX_VALUE, i.timeScale = 1, i.alpha = 1, i.mixTime = 0, i.mixDuration = r ? this.data.getMix(r.animation, t) : 0, i.interruptAlpha = 1, i.totalAlpha = 0, i.mixBlend = F.replace, i
+    }
+    clearNext(e) {
+        let t = e.next;
+        for (; t;) this.queue.dispose(t), t = t.next;
+        e.next = null
+    }
+    _animationsChanged() {
+        this.animationsChanged = !1, this.propertyIDs.clear();
+        let e = this.tracks;
+        for (let t = 0, n = e.length; t < n; t++) {
+            let n = e[t];
+            if (n) {
+                for (; n.mixingFrom;) n = n.mixingFrom;
+                do(!n.mixingTo || n.mixBlend != F.add) && this.computeHold(n), n = n.mixingTo; while (n)
+            }
+        }
+    }
+    computeHold(e) {
+        let t = e.mixingTo,
+            n = e.animation.timelines,
+            r = e.animation.timelines.length,
+            i = e.timelineMode;
+        i.length = r;
+        let a = e.timelineHoldMix;
+        a.length = 0;
+        let o = this.propertyIDs;
+        if (t && t.holdPrevious)
+            for (let e = 0; e < r; e++) i[e] = o.addAll(n[e].getPropertyIds()) ? 3 : 2;
+        else outer: for (let s = 0; s < r; s++) {
+            let r = n[s],
+                c = r.getPropertyIds();
+            if (!o.addAll(c)) i[s] = 0;
+            else if (!t || r instanceof ve || r instanceof xe || r instanceof be || !t.animation.hasTimeline(c)) i[s] = 1;
+            else {
+                for (let n = t.mixingTo; n; n = n.mixingTo)
+                    if (!n.animation.hasTimeline(c)) {
+                        if (e.mixDuration > 0) {
+                            i[s] = 4, a[s] = n;
+                            continue outer
+                        }
+                        break
+                    } i[s] = 3
+            }
+        }
+    }
+    getCurrent(e) {
+        return e >= this.tracks.length ? null : this.tracks[e]
+    }
+    addListener(e) {
+        if (!e) throw Error(`listener cannot be null.`);
+        this.listeners.push(e)
+    }
+    removeListener(e) {
+        let t = this.listeners.indexOf(e);
+        t >= 0 && this.listeners.splice(t, 1)
+    }
+    clearListeners() {
+        this.listeners.length = 0
+    }
+    clearListenerNotifications() {
+        this.queue.clear()
+    }
+};
+s(Le, `_emptyAnimation`, new P(`<empty>`, [], 0));
+var Re = class {
+        constructor() {
+            s(this, `animation`, null), s(this, `previous`, null), s(this, `next`, null), s(this, `mixingFrom`, null), s(this, `mixingTo`, null), s(this, `listener`, null), s(this, `trackIndex`, 0), s(this, `loop`, !1), s(this, `holdPrevious`, !1), s(this, `reverse`, !1), s(this, `shortestRotation`, !1), s(this, `eventThreshold`, 0), s(this, `mixAttachmentThreshold`, 0), s(this, `alphaAttachmentThreshold`, 0), s(this, `mixDrawOrderThreshold`, 0), s(this, `animationStart`, 0), s(this, `animationEnd`, 0), s(this, `animationLast`, 0), s(this, `nextAnimationLast`, 0), s(this, `delay`, 0), s(this, `trackTime`, 0), s(this, `trackLast`, 0), s(this, `nextTrackLast`, 0), s(this, `trackEnd`, 0), s(this, `timeScale`, 0), s(this, `alpha`, 0), s(this, `mixTime`, 0), s(this, `_mixDuration`, 0), s(this, `interruptAlpha`, 0), s(this, `totalAlpha`, 0), s(this, `mixBlend`, F.replace), s(this, `timelineMode`, []), s(this, `timelineHoldMix`, []), s(this, `timelinesRotation`, [])
+        }
+        get mixDuration() {
+            return this._mixDuration
+        }
+        set mixDuration(e) {
+            this._mixDuration = e
+        }
+        setMixDurationWithDelay(e, t) {
+            this._mixDuration = e, this.previous != null && t <= 0 && (t += this.previous.getTrackComplete() - e), this.delay = t
+        }
+        reset() {
+            this.next = null, this.previous = null, this.mixingFrom = null, this.mixingTo = null, this.animation = null, this.listener = null, this.timelineMode.length = 0, this.timelineHoldMix.length = 0, this.timelinesRotation.length = 0
+        }
+        getAnimationTime() {
+            if (this.loop) {
+                let e = this.animationEnd - this.animationStart;
+                return e == 0 ? this.animationStart : this.trackTime % e + this.animationStart
+            }
+            return Math.min(this.trackTime + this.animationStart, this.animationEnd)
+        }
+        setAnimationLast(e) {
+            this.animationLast = e, this.nextAnimationLast = e
+        }
+        isComplete() {
+            return this.trackTime >= this.animationEnd - this.animationStart
+        }
+        resetRotationDirections() {
+            this.timelinesRotation.length = 0
+        }
+        getTrackComplete() {
+            let e = this.animationEnd - this.animationStart;
+            if (e != 0) {
+                if (this.loop) return e * (1 + (this.trackTime / e | 0));
+                if (this.trackTime < e) return e
+            }
+            return this.trackTime
+        }
+        wasApplied() {
+            return this.nextTrackLast != -1
+        }
+        isNextReady() {
+            return this.next != null && this.nextTrackLast - this.next.delay >= 0
+        }
+    },
+    ze = class {
+        constructor(e) {
+            s(this, `objects`, []), s(this, `drainDisabled`, !1), s(this, `animState`, void 0), this.animState = e
+        }
+        start(e) {
+            this.objects.push(Be.start), this.objects.push(e), this.animState.animationsChanged = !0
+        }
+        interrupt(e) {
+            this.objects.push(Be.interrupt), this.objects.push(e)
+        }
+        end(e) {
+            this.objects.push(Be.end), this.objects.push(e), this.animState.animationsChanged = !0
+        }
+        dispose(e) {
+            this.objects.push(Be.dispose), this.objects.push(e)
+        }
+        complete(e) {
+            this.objects.push(Be.complete), this.objects.push(e)
+        }
+        event(e, t) {
+            this.objects.push(Be.event), this.objects.push(e), this.objects.push(t)
+        }
+        drain() {
+            if (this.drainDisabled) return;
+            this.drainDisabled = !0;
+            let e = this.objects,
+                t = this.animState.listeners;
+            for (let n = 0; n < e.length; n += 2) {
+                let r = e[n],
+                    i = e[n + 1];
+                switch (r) {
+                    case Be.start:
+                        i.listener && i.listener.start && i.listener.start(i);
+                        for (let e = 0; e < t.length; e++) {
+                            let n = t[e];
+                            n.start && n.start(i)
+                        }
+                        break;
+                    case Be.interrupt:
+                        i.listener && i.listener.interrupt && i.listener.interrupt(i);
+                        for (let e = 0; e < t.length; e++) {
+                            let n = t[e];
+                            n.interrupt && n.interrupt(i)
+                        }
+                        break;
+                    case Be.end:
+                        i.listener && i.listener.end && i.listener.end(i);
+                        for (let e = 0; e < t.length; e++) {
+                            let n = t[e];
+                            n.end && n.end(i)
+                        }
+                    case Be.dispose:
+                        i.listener && i.listener.dispose && i.listener.dispose(i);
+                        for (let e = 0; e < t.length; e++) {
+                            let n = t[e];
+                            n.dispose && n.dispose(i)
+                        }
+                        this.animState.trackEntryPool.free(i);
+                        break;
+                    case Be.complete:
+                        i.listener && i.listener.complete && i.listener.complete(i);
+                        for (let e = 0; e < t.length; e++) {
+                            let n = t[e];
+                            n.complete && n.complete(i)
+                        }
+                        break;
+                    case Be.event:
+                        let r = e[n++ + 2];
+                        i.listener && i.listener.event && i.listener.event(i, r);
+                        for (let e = 0; e < t.length; e++) {
+                            let n = t[e];
+                            n.event && n.event(i, r)
+                        }
+                }
+            }
+            this.clear(), this.drainDisabled = !1
+        }
+        clear() {
+            this.objects.length = 0
+        }
+    },
+    Be;
+(function(e) {
+    e[e.start = 0] = `start`, e[e.interrupt = 1] = `interrupt`, e[e.end = 2] = `end`, e[e.dispose = 3] = `dispose`, e[e.complete = 4] = `complete`, e[e.event = 5] = `event`
+})(Be || (Be = {}));
+var Ve = class {
+        constructor(e) {
+            if (s(this, `skeletonData`, void 0), s(this, `animationToMixTime`, {}), s(this, `defaultMix`, 0), !e) throw Error(`skeletonData cannot be null.`);
+            this.skeletonData = e
+        }
+        setMix(e, t, n) {
+            let r = this.skeletonData.findAnimation(e);
+            if (!r) throw Error(`Animation not found: ` + e);
+            let i = this.skeletonData.findAnimation(t);
+            if (!i) throw Error(`Animation not found: ` + t);
+            this.setMixWith(r, i, n)
+        }
+        setMixWith(e, t, n) {
+            if (!e) throw Error(`from cannot be null.`);
+            if (!t) throw Error(`to cannot be null.`);
+            let r = e.name + `.` + t.name;
+            this.animationToMixTime[r] = n
+        }
+        getMix(e, t) {
+            let n = e.name + `.` + t.name,
+                r = this.animationToMixTime[n];
+            return r === void 0 ? this.defaultMix : r
+        }
+    },
+    He = class e extends j {
+        constructor(e) {
+            super(e), s(this, `color`, new T(1, 1, 1, 1))
+        }
+        copy() {
+            let t = new e(this.name);
+            return this.copyTo(t), t.color.setFromColor(this.color), t
+        }
+    },
+    Ue = class e extends j {
+        constructor(e) {
+            super(e), s(this, `endSlot`, null), s(this, `color`, new T(.2275, .2275, .8078, 1))
+        }
+        copy() {
+            let t = new e(this.name);
+            return this.copyTo(t), t.endSlot = this.endSlot, t.color.setFromColor(this.color), t
+        }
+    },
+    We = class {
+        constructor(e) {
+            s(this, `_image`, void 0), this._image = e
+        }
+        getImage() {
+            return this._image
+        }
+    },
+    V;
+(function(e) {
+    e[e.Nearest = 9728] = `Nearest`, e[e.Linear = 9729] = `Linear`, e[e.MipMap = 9987] = `MipMap`, e[e.MipMapNearestNearest = 9984] = `MipMapNearestNearest`, e[e.MipMapLinearNearest = 9985] = `MipMapLinearNearest`, e[e.MipMapNearestLinear = 9986] = `MipMapNearestLinear`, e[e.MipMapLinearLinear = 9987] = `MipMapLinearLinear`
+})(V || (V = {}));
+var Ge;
+(function(e) {
+    e[e.MirroredRepeat = 33648] = `MirroredRepeat`, e[e.ClampToEdge = 33071] = `ClampToEdge`, e[e.Repeat = 10497] = `Repeat`
+})(Ge || (Ge = {}));
+var Ke = class {
+        constructor() {
+            s(this, `texture`, void 0), s(this, `u`, 0), s(this, `v`, 0), s(this, `u2`, 0), s(this, `v2`, 0), s(this, `width`, 0), s(this, `height`, 0), s(this, `degrees`, 0), s(this, `offsetX`, 0), s(this, `offsetY`, 0), s(this, `originalWidth`, 0), s(this, `originalHeight`, 0)
+        }
+    },
+    qe = class {
+        constructor(e) {
+            s(this, `pages`, []), s(this, `regions`, []);
+            let t = new Je(e),
+                n = [, , , , ],
+                r = {};
+            r.size = e => {
+                e.width = parseInt(n[1]), e.height = parseInt(n[2])
+            }, r.format = () => {}, r.filter = e => {
+                e.minFilter = D.enumValue(V, n[1]), e.magFilter = D.enumValue(V, n[2])
+            }, r.repeat = e => {
+                n[1].indexOf(`x`) != -1 && (e.uWrap = Ge.Repeat), n[1].indexOf(`y`) != -1 && (e.vWrap = Ge.Repeat)
+            }, r.pma = e => {
+                e.pma = n[1] == `true`
+            };
+            var i = {};
+            i.xy = e => {
+                e.x = parseInt(n[1]), e.y = parseInt(n[2])
+            }, i.size = e => {
+                e.width = parseInt(n[1]), e.height = parseInt(n[2])
+            }, i.bounds = e => {
+                e.x = parseInt(n[1]), e.y = parseInt(n[2]), e.width = parseInt(n[3]), e.height = parseInt(n[4])
+            }, i.offset = e => {
+                e.offsetX = parseInt(n[1]), e.offsetY = parseInt(n[2])
+            }, i.orig = e => {
+                e.originalWidth = parseInt(n[1]), e.originalHeight = parseInt(n[2])
+            }, i.offsets = e => {
+                e.offsetX = parseInt(n[1]), e.offsetY = parseInt(n[2]), e.originalWidth = parseInt(n[3]), e.originalHeight = parseInt(n[4])
+            }, i.rotate = e => {
+                let t = n[1];
+                t == `true` ? e.degrees = 90 : t != `false` && (e.degrees = parseInt(t))
+            }, i.index = e => {
+                e.index = parseInt(n[1])
+            };
+            let a = t.readLine();
+            for (; a && a.trim().length == 0;) a = t.readLine();
+            for (; a && a.trim().length != 0 && t.readEntry(n, a) != 0;) a = t.readLine();
+            let o = null,
+                c = null,
+                l = null;
+            for (; a !== null;)
+                if (a.trim().length == 0) o = null, a = t.readLine();
+                else if (o) {
+                let e = new Xe(o, a);
+                for (;;) {
+                    let r = t.readEntry(n, a = t.readLine());
+                    if (r == 0) break;
+                    let o = i[n[0]];
+                    if (o) o(e);
+                    else {
+                        c || (c = []), l || (l = []), c.push(n[0]);
+                        let e = [];
+                        for (let t = 0; t < r; t++) e.push(parseInt(n[t + 1]));
+                        l.push(e)
+                    }
+                }
+                e.originalWidth == 0 && e.originalHeight == 0 && (e.originalWidth = e.width, e.originalHeight = e.height), c && c.length > 0 && l && l.length > 0 && (e.names = c, e.values = l, c = null, l = null), e.u = e.x / o.width, e.v = e.y / o.height, e.degrees == 90 ? (e.u2 = (e.x + e.height) / o.width, e.v2 = (e.y + e.width) / o.height) : (e.u2 = (e.x + e.width) / o.width, e.v2 = (e.y + e.height) / o.height), this.regions.push(e)
+            } else {
+                for (o = new Ye(a.trim()); t.readEntry(n, a = t.readLine()) != 0;) {
+                    let e = r[n[0]];
+                    e && e(o)
+                }
+                this.pages.push(o)
+            }
+        }
+        findRegion(e) {
+            for (let t = 0; t < this.regions.length; t++)
+                if (this.regions[t].name == e) return this.regions[t];
+            return null
+        }
+        setTextures(e, t = ``) {
+            for (let n of this.pages) n.setTexture(e.get(t + n.name))
+        }
+        dispose() {
+            for (let t = 0; t < this.pages.length; t++) {
+                var e;
+                (e = this.pages[t].texture) == null || e.dispose()
+            }
+        }
+    },
+    Je = class {
+        constructor(e) {
+            s(this, `lines`, void 0), s(this, `index`, 0), this.lines = e.split(/\r\n|\r|\n/)
+        }
+        readLine() {
+            return this.index >= this.lines.length ? null : this.lines[this.index++]
+        }
+        readEntry(e, t) {
+            if (!t || (t = t.trim(), t.length == 0)) return 0;
+            let n = t.indexOf(`:`);
+            if (n == -1) return 0;
+            e[0] = t.substr(0, n).trim();
+            for (let r = 1, i = n + 1;; r++) {
+                let n = t.indexOf(`,`, i);
+                if (n == -1) return e[r] = t.substr(i).trim(), r;
+                if (e[r] = t.substr(i, n - i).trim(), i = n + 1, r == 4) return 4
+            }
+        }
+    },
+    Ye = class {
+        constructor(e) {
+            s(this, `name`, void 0), s(this, `minFilter`, V.Nearest), s(this, `magFilter`, V.Nearest), s(this, `uWrap`, Ge.ClampToEdge), s(this, `vWrap`, Ge.ClampToEdge), s(this, `texture`, null), s(this, `width`, 0), s(this, `height`, 0), s(this, `pma`, !1), s(this, `regions`, []), this.name = e
+        }
+        setTexture(e) {
+            this.texture = e, e.setFilters(this.minFilter, this.magFilter), e.setWraps(this.uWrap, this.vWrap);
+            for (let t of this.regions) t.texture = e
+        }
+    },
+    Xe = class extends Ke {
+        constructor(e, t) {
+            super(), s(this, `page`, void 0), s(this, `name`, void 0), s(this, `x`, 0), s(this, `y`, 0), s(this, `offsetX`, 0), s(this, `offsetY`, 0), s(this, `originalWidth`, 0), s(this, `originalHeight`, 0), s(this, `index`, 0), s(this, `degrees`, 0), s(this, `names`, null), s(this, `values`, null), this.page = e, this.name = t, e.regions.push(this)
+        }
+    },
+    Ze = class e extends j {
+        constructor(e, t) {
+            super(e), s(this, `region`, null), s(this, `path`, void 0), s(this, `regionUVs`, []), s(this, `uvs`, []), s(this, `triangles`, []), s(this, `color`, new T(1, 1, 1, 1)), s(this, `width`, 0), s(this, `height`, 0), s(this, `hullLength`, 0), s(this, `edges`, []), s(this, `parentMesh`, null), s(this, `sequence`, null), s(this, `tempColor`, new T(0, 0, 0, 0)), this.path = t
+        }
+        updateRegion() {
+            if (!this.region) throw Error(`Region not set.`);
+            let e = this.regionUVs;
+            (!this.uvs || this.uvs.length != e.length) && (this.uvs = D.newFloatArray(e.length));
+            let t = this.uvs,
+                n = this.uvs.length,
+                r = this.region.u,
+                i = this.region.v,
+                a = 0,
+                o = 0;
+            if (this.region instanceof Xe) {
+                let s = this.region,
+                    c = s.page,
+                    l = c.width,
+                    u = c.height;
+                switch (s.degrees) {
+                    case 90:
+                        r -= (s.originalHeight - s.offsetY - s.height) / l, i -= (s.originalWidth - s.offsetX - s.width) / u, a = s.originalHeight / l, o = s.originalWidth / u;
+                        for (let s = 0; s < n; s += 2) t[s] = r + e[s + 1] * a, t[s + 1] = i + (1 - e[s]) * o;
+                        return;
+                    case 180:
+                        r -= (s.originalWidth - s.offsetX - s.width) / l, i -= s.offsetY / u, a = s.originalWidth / l, o = s.originalHeight / u;
+                        for (let s = 0; s < n; s += 2) t[s] = r + (1 - e[s]) * a, t[s + 1] = i + (1 - e[s + 1]) * o;
+                        return;
+                    case 270:
+                        r -= s.offsetY / l, i -= s.offsetX / u, a = s.originalHeight / l, o = s.originalWidth / u;
+                        for (let s = 0; s < n; s += 2) t[s] = r + (1 - e[s + 1]) * a, t[s + 1] = i + e[s] * o;
+                        return
+                }
+                r -= s.offsetX / l, i -= (s.originalHeight - s.offsetY - s.height) / u, a = s.originalWidth / l, o = s.originalHeight / u
+            } else this.region ? (a = this.region.u2 - r, o = this.region.v2 - i) : (r = i = 0, a = o = 1);
+            for (let s = 0; s < n; s += 2) t[s] = r + e[s] * a, t[s + 1] = i + e[s + 1] * o
+        }
+        getParentMesh() {
+            return this.parentMesh
+        }
+        setParentMesh(e) {
+            this.parentMesh = e, e && (this.bones = e.bones, this.vertices = e.vertices, this.worldVerticesLength = e.worldVerticesLength, this.regionUVs = e.regionUVs, this.triangles = e.triangles, this.hullLength = e.hullLength, this.worldVerticesLength = e.worldVerticesLength)
+        }
+        copy() {
+            if (this.parentMesh) return this.newLinkedMesh();
+            let t = new e(this.name, this.path);
+            return t.region = this.region, t.color.setFromColor(this.color), this.copyTo(t), t.regionUVs = Array(this.regionUVs.length), D.arrayCopy(this.regionUVs, 0, t.regionUVs, 0, this.regionUVs.length), t.uvs = Array(this.uvs.length), D.arrayCopy(this.uvs, 0, t.uvs, 0, this.uvs.length), t.triangles = Array(this.triangles.length), D.arrayCopy(this.triangles, 0, t.triangles, 0, this.triangles.length), t.hullLength = this.hullLength, t.sequence = this.sequence == null ? null : this.sequence.copy(), this.edges && (t.edges = Array(this.edges.length), D.arrayCopy(this.edges, 0, t.edges, 0, this.edges.length)), t.width = this.width, t.height = this.height, t
+        }
+        computeWorldVertices(e, t, n, r, i, a) {
+            this.sequence != null && this.sequence.apply(e, this), super.computeWorldVertices(e, t, n, r, i, a)
+        }
+        newLinkedMesh() {
+            let t = new e(this.name, this.path);
+            return t.region = this.region, t.color.setFromColor(this.color), t.timelineAttachment = this.timelineAttachment, t.setParentMesh(this.parentMesh ? this.parentMesh : this), t.region != null && t.updateRegion(), t
+        }
+    },
+    Qe = class e extends j {
+        constructor(e) {
+            super(e), s(this, `lengths`, []), s(this, `closed`, !1), s(this, `constantSpeed`, !1), s(this, `color`, new T(1, 1, 1, 1))
+        }
+        copy() {
+            let t = new e(this.name);
+            return this.copyTo(t), t.lengths = Array(this.lengths.length), D.arrayCopy(this.lengths, 0, t.lengths, 0, this.lengths.length), t.closed = closed, t.constantSpeed = this.constantSpeed, t.color.setFromColor(this.color), t
+        }
+    },
+    $e = class e extends j {
+        constructor(e) {
+            super(e), s(this, `x`, 0), s(this, `y`, 0), s(this, `rotation`, 0), s(this, `color`, new T(.38, .94, 0, 1))
+        }
+        computeWorldPosition(e, t) {
+            return t.x = this.x * e.a + this.y * e.b + e.worldX, t.y = this.x * e.c + this.y * e.d + e.worldY, t
+        }
+        computeWorldRotation(e) {
+            let t = this.rotation * E.degRad,
+                n = Math.cos(t),
+                r = Math.sin(t),
+                i = n * e.a + r * e.b,
+                a = n * e.c + r * e.d;
+            return E.atan2Deg(a, i)
+        }
+        copy() {
+            let t = new e(this.name);
+            return t.x = this.x, t.y = this.y, t.rotation = this.rotation, t.color.setFromColor(this.color), t
+        }
+    },
+    H = class e extends A {
+        constructor(e, t) {
+            super(e), s(this, `x`, 0), s(this, `y`, 0), s(this, `scaleX`, 1), s(this, `scaleY`, 1), s(this, `rotation`, 0), s(this, `width`, 0), s(this, `height`, 0), s(this, `color`, new T(1, 1, 1, 1)), s(this, `path`, void 0), s(this, `region`, null), s(this, `sequence`, null), s(this, `offset`, D.newFloatArray(8)), s(this, `uvs`, D.newFloatArray(8)), s(this, `tempColor`, new T(1, 1, 1, 1)), this.path = t
+        }
+        updateRegion() {
+            if (!this.region) throw Error(`Region not set.`);
+            let e = this.region,
+                t = this.uvs;
+            if (e == null) {
+                t[0] = 0, t[1] = 0, t[2] = 0, t[3] = 1, t[4] = 1, t[5] = 1, t[6] = 1, t[7] = 0;
+                return
+            }
+            let n = this.width / this.region.originalWidth * this.scaleX,
+                r = this.height / this.region.originalHeight * this.scaleY,
+                i = -this.width / 2 * this.scaleX + this.region.offsetX * n,
+                a = -this.height / 2 * this.scaleY + this.region.offsetY * r,
+                o = i + this.region.width * n,
+                s = a + this.region.height * r,
+                c = this.rotation * E.degRad,
+                l = Math.cos(c),
+                u = Math.sin(c),
+                d = this.x,
+                f = this.y,
+                p = i * l + d,
+                m = i * u,
+                h = a * l + f,
+                g = a * u,
+                _ = o * l + d,
+                v = o * u,
+                y = s * l + f,
+                b = s * u,
+                x = this.offset;
+            x[0] = p - g, x[1] = h + m, x[2] = p - b, x[3] = y + m, x[4] = _ - b, x[5] = y + v, x[6] = _ - g, x[7] = h + v, e.degrees == 90 ? (t[0] = e.u2, t[1] = e.v2, t[2] = e.u, t[3] = e.v2, t[4] = e.u, t[5] = e.v, t[6] = e.u2, t[7] = e.v) : (t[0] = e.u, t[1] = e.v2, t[2] = e.u, t[3] = e.v, t[4] = e.u2, t[5] = e.v, t[6] = e.u2, t[7] = e.v2)
+        }
+        computeWorldVertices(e, t, n, r) {
+            this.sequence != null && this.sequence.apply(e, this);
+            let i = e.bone,
+                a = this.offset,
+                o = i.worldX,
+                s = i.worldY,
+                c = i.a,
+                l = i.b,
+                u = i.c,
+                d = i.d,
+                f = 0,
+                p = 0;
+            f = a[0], p = a[1], t[n] = f * c + p * l + o, t[n + 1] = f * u + p * d + s, n += r, f = a[2], p = a[3], t[n] = f * c + p * l + o, t[n + 1] = f * u + p * d + s, n += r, f = a[4], p = a[5], t[n] = f * c + p * l + o, t[n + 1] = f * u + p * d + s, n += r, f = a[6], p = a[7], t[n] = f * c + p * l + o, t[n + 1] = f * u + p * d + s
+        }
+        copy() {
+            let t = new e(this.name, this.path);
+            return t.region = this.region, t.x = this.x, t.y = this.y, t.scaleX = this.scaleX, t.scaleY = this.scaleY, t.rotation = this.rotation, t.width = this.width, t.height = this.height, D.arrayCopy(this.uvs, 0, t.uvs, 0, 8), D.arrayCopy(this.offset, 0, t.offset, 0, 8), t.color.setFromColor(this.color), t.sequence = this.sequence == null ? null : this.sequence.copy(), t
+        }
+    };
+s(H, `X1`, 0), s(H, `Y1`, 1), s(H, `C1R`, 2), s(H, `C1G`, 3), s(H, `C1B`, 4), s(H, `C1A`, 5), s(H, `U1`, 6), s(H, `V1`, 7), s(H, `X2`, 8), s(H, `Y2`, 9), s(H, `C2R`, 10), s(H, `C2G`, 11), s(H, `C2B`, 12), s(H, `C2A`, 13), s(H, `U2`, 14), s(H, `V2`, 15), s(H, `X3`, 16), s(H, `Y3`, 17), s(H, `C3R`, 18), s(H, `C3G`, 19), s(H, `C3B`, 20), s(H, `C3A`, 21), s(H, `U3`, 22), s(H, `V3`, 23), s(H, `X4`, 24), s(H, `Y4`, 25), s(H, `C4R`, 26), s(H, `C4G`, 27), s(H, `C4B`, 28), s(H, `C4A`, 29), s(H, `U4`, 30), s(H, `V4`, 31);
+var et = class {
+        constructor(e) {
+            s(this, `atlas`, void 0), this.atlas = e
+        }
+        loadSequence(e, t, n) {
+            let r = n.regions;
+            for (let i = 0, a = r.length; i < a; i++) {
+                let a = n.getPath(t, i),
+                    o = this.atlas.findRegion(a);
+                if (o == null) throw Error(`Region not found in atlas: ` + a + ` (sequence: ` + e + `)`);
+                r[i] = o
+            }
+        }
+        newRegionAttachment(e, t, n, r) {
+            let i = new H(t, n);
+            if (r != null) this.loadSequence(t, n, r);
+            else {
+                let e = this.atlas.findRegion(n);
+                if (!e) throw Error(`Region not found in atlas: ` + n + ` (region attachment: ` + t + `)`);
+                i.region = e
+            }
+            return i
+        }
+        newMeshAttachment(e, t, n, r) {
+            let i = new Ze(t, n);
+            if (r != null) this.loadSequence(t, n, r);
+            else {
+                let e = this.atlas.findRegion(n);
+                if (!e) throw Error(`Region not found in atlas: ` + n + ` (mesh attachment: ` + t + `)`);
+                i.region = e
+            }
+            return i
+        }
+        newBoundingBoxAttachment(e, t) {
+            return new He(t)
+        }
+        newPathAttachment(e, t) {
+            return new Qe(t)
+        }
+        newPointAttachment(e, t) {
+            return new $e(t)
+        }
+        newClippingAttachment(e, t) {
+            return new Ue(t)
+        }
+    },
+    tt = class {
+        constructor(e, t, n) {
+            if (s(this, `index`, 0), s(this, `name`, void 0), s(this, `parent`, null), s(this, `length`, 0), s(this, `x`, 0), s(this, `y`, 0), s(this, `rotation`, 0), s(this, `scaleX`, 1), s(this, `scaleY`, 1), s(this, `shearX`, 0), s(this, `shearY`, 0), s(this, `inherit`, U.Normal), s(this, `skinRequired`, !1), s(this, `color`, new T), s(this, `icon`, void 0), s(this, `visible`, !1), e < 0) throw Error(`index must be >= 0.`);
+            if (!t) throw Error(`name cannot be null.`);
+            this.index = e, this.name = t, this.parent = n
+        }
+    },
+    U;
+(function(e) {
+    e[e.Normal = 0] = `Normal`, e[e.OnlyTranslation = 1] = `OnlyTranslation`, e[e.NoRotationOrReflection = 2] = `NoRotationOrReflection`, e[e.NoScale = 3] = `NoScale`, e[e.NoScaleOrReflection = 4] = `NoScaleOrReflection`
+})(U || (U = {}));
+var nt = class {
+        constructor(e, t, n) {
+            if (s(this, `data`, void 0), s(this, `skeleton`, void 0), s(this, `parent`, null), s(this, `children`, []), s(this, `x`, 0), s(this, `y`, 0), s(this, `rotation`, 0), s(this, `scaleX`, 0), s(this, `scaleY`, 0), s(this, `shearX`, 0), s(this, `shearY`, 0), s(this, `ax`, 0), s(this, `ay`, 0), s(this, `arotation`, 0), s(this, `ascaleX`, 0), s(this, `ascaleY`, 0), s(this, `ashearX`, 0), s(this, `ashearY`, 0), s(this, `a`, 0), s(this, `b`, 0), s(this, `c`, 0), s(this, `d`, 0), s(this, `worldY`, 0), s(this, `worldX`, 0), s(this, `inherit`, U.Normal), s(this, `sorted`, !1), s(this, `active`, !1), !e) throw Error(`data cannot be null.`);
+            if (!t) throw Error(`skeleton cannot be null.`);
+            this.data = e, this.skeleton = t, this.parent = n, this.setToSetupPose()
+        }
+        isActive() {
+            return this.active
+        }
+        update(e) {
+            this.updateWorldTransformWith(this.ax, this.ay, this.arotation, this.ascaleX, this.ascaleY, this.ashearX, this.ashearY)
+        }
+        updateWorldTransform() {
+            this.updateWorldTransformWith(this.x, this.y, this.rotation, this.scaleX, this.scaleY, this.shearX, this.shearY)
+        }
+        updateWorldTransformWith(e, t, n, r, i, a, o) {
+            this.ax = e, this.ay = t, this.arotation = n, this.ascaleX = r, this.ascaleY = i, this.ashearX = a, this.ashearY = o;
+            let s = this.parent;
+            if (!s) {
+                let s = this.skeleton,
+                    c = s.scaleX,
+                    l = s.scaleY,
+                    u = (n + a) * E.degRad,
+                    d = (n + 90 + o) * E.degRad;
+                this.a = Math.cos(u) * r * c, this.b = Math.cos(d) * i * c, this.c = Math.sin(u) * r * l, this.d = Math.sin(d) * i * l, this.worldX = e * c + s.x, this.worldY = t * l + s.y;
+                return
+            }
+            let c = s.a,
+                l = s.b,
+                u = s.c,
+                d = s.d;
+            switch (this.worldX = c * e + l * t + s.worldX, this.worldY = u * e + d * t + s.worldY, this.inherit) {
+                case U.Normal: {
+                    let e = (n + a) * E.degRad,
+                        t = (n + 90 + o) * E.degRad,
+                        s = Math.cos(e) * r,
+                        f = Math.cos(t) * i,
+                        p = Math.sin(e) * r,
+                        m = Math.sin(t) * i;
+                    this.a = c * s + l * p, this.b = c * f + l * m, this.c = u * s + d * p, this.d = u * f + d * m;
+                    return
+                }
+                case U.OnlyTranslation: {
+                    let e = (n + a) * E.degRad,
+                        t = (n + 90 + o) * E.degRad;
+                    this.a = Math.cos(e) * r, this.b = Math.cos(t) * i, this.c = Math.sin(e) * r, this.d = Math.sin(t) * i;
+                    break
+                }
+                case U.NoRotationOrReflection: {
+                    let e = 1 / this.skeleton.scaleX,
+                        t = 1 / this.skeleton.scaleY;
+                    c *= e, u *= t;
+                    let s = c * c + u * u,
+                        f = 0;
+                    s > 1e-4 ? (s = Math.abs(c * d * t - l * e * u) / s, l = u * s, d = c * s, f = Math.atan2(u, c) * E.radDeg) : (c = 0, u = 0, f = 90 - Math.atan2(d, l) * E.radDeg);
+                    let p = (n + a - f) * E.degRad,
+                        m = (n + o - f + 90) * E.degRad,
+                        h = Math.cos(p) * r,
+                        g = Math.cos(m) * i,
+                        _ = Math.sin(p) * r,
+                        v = Math.sin(m) * i;
+                    this.a = c * h - l * _, this.b = c * g - l * v, this.c = u * h + d * _, this.d = u * g + d * v;
+                    break
+                }
+                case U.NoScale:
+                case U.NoScaleOrReflection: {
+                    n *= E.degRad;
+                    let e = Math.cos(n),
+                        t = Math.sin(n),
+                        s = (c * e + l * t) / this.skeleton.scaleX,
+                        f = (u * e + d * t) / this.skeleton.scaleY,
+                        p = Math.sqrt(s * s + f * f);
+                    p > 1e-5 && (p = 1 / p), s *= p, f *= p, p = Math.sqrt(s * s + f * f), this.inherit == U.NoScale && c * d - l * u < 0 != (this.skeleton.scaleX < 0 != this.skeleton.scaleY < 0) && (p = -p), n = Math.PI / 2 + Math.atan2(f, s);
+                    let m = Math.cos(n) * p,
+                        h = Math.sin(n) * p;
+                    a *= E.degRad, o = (90 + o) * E.degRad;
+                    let g = Math.cos(a) * r,
+                        _ = Math.cos(o) * i,
+                        v = Math.sin(a) * r,
+                        y = Math.sin(o) * i;
+                    this.a = s * g + m * v, this.b = s * _ + m * y, this.c = f * g + h * v, this.d = f * _ + h * y;
+                    break
+                }
+            }
+            this.a *= this.skeleton.scaleX, this.b *= this.skeleton.scaleX, this.c *= this.skeleton.scaleY, this.d *= this.skeleton.scaleY
+        }
+        setToSetupPose() {
+            let e = this.data;
+            this.x = e.x, this.y = e.y, this.rotation = e.rotation, this.scaleX = e.scaleX, this.scaleY = e.scaleY, this.shearX = e.shearX, this.shearY = e.shearY, this.inherit = e.inherit
+        }
+        updateAppliedTransform() {
+            let e = this.parent;
+            if (!e) {
+                this.ax = this.worldX - this.skeleton.x, this.ay = this.worldY - this.skeleton.y, this.arotation = Math.atan2(this.c, this.a) * E.radDeg, this.ascaleX = Math.sqrt(this.a * this.a + this.c * this.c), this.ascaleY = Math.sqrt(this.b * this.b + this.d * this.d), this.ashearX = 0, this.ashearY = Math.atan2(this.a * this.b + this.c * this.d, this.a * this.d - this.b * this.c) * E.radDeg;
+                return
+            }
+            let t = e.a,
+                n = e.b,
+                r = e.c,
+                i = e.d,
+                a = 1 / (t * i - n * r),
+                o = i * a,
+                s = n * a,
+                c = r * a,
+                l = t * a,
+                u = this.worldX - e.worldX,
+                d = this.worldY - e.worldY;
+            this.ax = u * o - d * s, this.ay = d * l - u * c;
+            let f, p, m, h;
+            if (this.inherit == U.OnlyTranslation) f = this.a, p = this.b, m = this.c, h = this.d;
+            else {
+                switch (this.inherit) {
+                    case U.NoRotationOrReflection: {
+                        let e = Math.abs(t * i - n * r) / (t * t + r * r);
+                        n = -r * this.skeleton.scaleX * e / this.skeleton.scaleY, i = t * this.skeleton.scaleY * e / this.skeleton.scaleX, a = 1 / (t * i - n * r), o = i * a, s = n * a;
+                        break
+                    }
+                    case U.NoScale:
+                    case U.NoScaleOrReflection:
+                        let e = E.cosDeg(this.rotation),
+                            u = E.sinDeg(this.rotation);
+                        t = (t * e + n * u) / this.skeleton.scaleX, r = (r * e + i * u) / this.skeleton.scaleY;
+                        let d = Math.sqrt(t * t + r * r);
+                        d > 1e-5 && (d = 1 / d), t *= d, r *= d, d = Math.sqrt(t * t + r * r), this.inherit == U.NoScale && a < 0 != (this.skeleton.scaleX < 0 != this.skeleton.scaleY < 0) && (d = -d);
+                        let f = E.PI / 2 + Math.atan2(r, t);
+                        n = Math.cos(f) * d, i = Math.sin(f) * d, a = 1 / (t * i - n * r), o = i * a, s = n * a, c = r * a, l = t * a
+                }
+                f = o * this.a - s * this.c, p = o * this.b - s * this.d, m = l * this.c - c * this.a, h = l * this.d - c * this.b
+            }
+            if (this.ashearX = 0, this.ascaleX = Math.sqrt(f * f + m * m), this.ascaleX > 1e-4) {
+                let e = f * h - p * m;
+                this.ascaleY = e / this.ascaleX, this.ashearY = -Math.atan2(f * p + m * h, e) * E.radDeg, this.arotation = Math.atan2(m, f) * E.radDeg
+            } else this.ascaleX = 0, this.ascaleY = Math.sqrt(p * p + h * h), this.ashearY = 0, this.arotation = 90 - Math.atan2(h, p) * E.radDeg
+        }
+        getWorldRotationX() {
+            return Math.atan2(this.c, this.a) * E.radDeg
+        }
+        getWorldRotationY() {
+            return Math.atan2(this.d, this.b) * E.radDeg
+        }
+        getWorldScaleX() {
+            return Math.sqrt(this.a * this.a + this.c * this.c)
+        }
+        getWorldScaleY() {
+            return Math.sqrt(this.b * this.b + this.d * this.d)
+        }
+        worldToLocal(e) {
+            let t = 1 / (this.a * this.d - this.b * this.c),
+                n = e.x - this.worldX,
+                r = e.y - this.worldY;
+            return e.x = n * this.d * t - r * this.b * t, e.y = r * this.a * t - n * this.c * t, e
+        }
+        localToWorld(e) {
+            let t = e.x,
+                n = e.y;
+            return e.x = t * this.a + n * this.b + this.worldX, e.y = t * this.c + n * this.d + this.worldY, e
+        }
+        worldToParent(e) {
+            if (e == null) throw Error(`world cannot be null.`);
+            return this.parent == null ? e : this.parent.worldToLocal(e)
+        }
+        parentToWorld(e) {
+            if (e == null) throw Error(`world cannot be null.`);
+            return this.parent == null ? e : this.parent.localToWorld(e)
+        }
+        worldToLocalRotation(e) {
+            let t = E.sinDeg(e),
+                n = E.cosDeg(e);
+            return Math.atan2(this.a * t - this.c * n, this.d * n - this.b * t) * E.radDeg + this.rotation - this.shearX
+        }
+        localToWorldRotation(e) {
+            e -= this.rotation - this.shearX;
+            let t = E.sinDeg(e),
+                n = E.cosDeg(e);
+            return Math.atan2(n * this.c + t * this.d, n * this.a + t * this.b) * E.radDeg
+        }
+        rotateWorld(e) {
+            e *= E.degRad;
+            let t = Math.sin(e),
+                n = Math.cos(e),
+                r = this.a,
+                i = this.b;
+            this.a = n * r - t * this.c, this.b = n * i - t * this.d, this.c = t * r + n * this.c, this.d = t * i + n * this.d
+        }
+    },
+    rt = class {
+        constructor(e, t, n) {
+            s(this, `name`, void 0), s(this, `order`, void 0), s(this, `skinRequired`, void 0), this.name = e, this.order = t, this.skinRequired = n
+        }
+    },
+    it = class {
+        constructor(e, t) {
+            if (s(this, `data`, void 0), s(this, `intValue`, 0), s(this, `floatValue`, 0), s(this, `stringValue`, null), s(this, `time`, 0), s(this, `volume`, 0), s(this, `balance`, 0), !t) throw Error(`data cannot be null.`);
+            this.time = e, this.data = t
+        }
+    },
+    at = class {
+        constructor(e) {
+            s(this, `name`, void 0), s(this, `intValue`, 0), s(this, `floatValue`, 0), s(this, `stringValue`, null), s(this, `audioPath`, null), s(this, `volume`, 0), s(this, `balance`, 0), this.name = e
+        }
+    },
+    ot = class {
+        constructor(e, t) {
+            if (s(this, `data`, void 0), s(this, `bones`, void 0), s(this, `target`, void 0), s(this, `bendDirection`, 0), s(this, `compress`, !1), s(this, `stretch`, !1), s(this, `mix`, 1), s(this, `softness`, 0), s(this, `active`, !1), !e) throw Error(`data cannot be null.`);
+            if (!t) throw Error(`skeleton cannot be null.`);
+            this.data = e, this.bones = [];
+            for (let n = 0; n < e.bones.length; n++) {
+                let r = t.findBone(e.bones[n].name);
+                if (!r) throw Error(`Couldn't find bone ${e.bones[n].name}`);
+                this.bones.push(r)
+            }
+            let n = t.findBone(e.target.name);
+            if (!n) throw Error(`Couldn't find bone ${e.target.name}`);
+            this.target = n, this.mix = e.mix, this.softness = e.softness, this.bendDirection = e.bendDirection, this.compress = e.compress, this.stretch = e.stretch
+        }
+        isActive() {
+            return this.active
+        }
+        setToSetupPose() {
+            let e = this.data;
+            this.mix = e.mix, this.softness = e.softness, this.bendDirection = e.bendDirection, this.compress = e.compress, this.stretch = e.stretch
+        }
+        update(e) {
+            if (this.mix == 0) return;
+            let t = this.target,
+                n = this.bones;
+            switch (n.length) {
+                case 1:
+                    this.apply1(n[0], t.worldX, t.worldY, this.compress, this.stretch, this.data.uniform, this.mix);
+                    break;
+                case 2:
+                    this.apply2(n[0], n[1], t.worldX, t.worldY, this.bendDirection, this.stretch, this.data.uniform, this.softness, this.mix)
+            }
+        }
+        apply1(e, t, n, r, i, a, o) {
+            let s = e.parent;
+            if (!s) throw Error(`IK bone must have parent.`);
+            let c = s.a,
+                l = s.b,
+                u = s.c,
+                d = s.d,
+                f = -e.ashearX - e.arotation,
+                p = 0,
+                m = 0;
+            switch (e.inherit) {
+                case U.OnlyTranslation:
+                    p = (t - e.worldX) * E.signum(e.skeleton.scaleX), m = (n - e.worldY) * E.signum(e.skeleton.scaleY);
+                    break;
+                case U.NoRotationOrReflection:
+                    let r = Math.abs(c * d - l * u) / Math.max(1e-4, c * c + u * u),
+                        i = c / e.skeleton.scaleX,
+                        a = u / e.skeleton.scaleY;
+                    l = -a * r * e.skeleton.scaleX, d = i * r * e.skeleton.scaleY, f += Math.atan2(a, i) * E.radDeg;
+                default:
+                    let o = t - s.worldX,
+                        h = n - s.worldY,
+                        g = c * d - l * u;
+                    Math.abs(g) <= 1e-4 ? (p = 0, m = 0) : (p = (o * d - h * l) / g - e.ax, m = (h * c - o * u) / g - e.ay)
+            }
+            f += Math.atan2(m, p) * E.radDeg, e.ascaleX < 0 && (f += 180), f > 180 ? f -= 360 : f < -180 && (f += 360);
+            let h = e.ascaleX,
+                g = e.ascaleY;
+            if (r || i) {
+                switch (e.inherit) {
+                    case U.NoScale:
+                    case U.NoScaleOrReflection:
+                        p = t - e.worldX, m = n - e.worldY
+                }
+                let s = e.data.length * h;
+                if (s > 1e-4) {
+                    let e = p * p + m * m;
+                    if (r && e < s * s || i && e > s * s) {
+                        let t = (Math.sqrt(e) / s - 1) * o + 1;
+                        h *= t, a && (g *= t)
+                    }
+                }
+            }
+            e.updateWorldTransformWith(e.ax, e.ay, e.arotation + f * o, h, g, e.ashearX, e.ashearY)
+        }
+        apply2(e, t, n, r, i, a, o, s, c) {
+            if (e.inherit != U.Normal || t.inherit != U.Normal) return;
+            let l = e.ax,
+                u = e.ay,
+                d = e.ascaleX,
+                f = e.ascaleY,
+                p = d,
+                m = f,
+                h = t.ascaleX,
+                g = 0,
+                _ = 0,
+                v = 0;
+            d < 0 ? (d = -d, g = 180, v = -1) : (g = 0, v = 1), f < 0 && (f = -f, v = -v), h < 0 ? (h = -h, _ = 180) : _ = 0;
+            let y = t.ax,
+                b = 0,
+                x = 0,
+                S = 0,
+                C = e.a,
+                w = e.b,
+                T = e.c,
+                D = e.d,
+                O = Math.abs(d - f) <= 1e-4;
+            !O || a ? (b = 0, x = C * y + e.worldX, S = T * y + e.worldY) : (b = t.ay, x = C * y + w * b + e.worldX, S = T * y + D * b + e.worldY);
+            let k = e.parent;
+            if (!k) throw Error(`IK parent must itself have a parent.`);
+            C = k.a, w = k.b, T = k.c, D = k.d;
+            let A = C * D - w * T,
+                j = x - k.worldX,
+                M = S - k.worldY;
+            A = Math.abs(A) <= 1e-4 ? 0 : 1 / A;
+            let N = (j * D - M * w) * A - l,
+                ee = (M * C - j * T) * A - u,
+                P = Math.sqrt(N * N + ee * ee),
+                F = t.data.length * h,
+                I, L;
+            if (P < 1e-4) {
+                this.apply1(e, n, r, !1, a, !1, c), t.updateWorldTransformWith(y, b, 0, t.ascaleX, t.ascaleY, t.ashearX, t.ashearY);
+                return
+            }
+            j = n - k.worldX, M = r - k.worldY;
+            let R = (j * D - M * w) * A - l,
+                z = (M * C - j * T) * A - u,
+                B = R * R + z * z;
+            if (s != 0) {
+                s *= d * (h + 1) * .5;
+                let e = Math.sqrt(B),
+                    t = e - P - F * d + s;
+                if (t > 0) {
+                    let n = Math.min(1, t / (s * 2)) - 1;
+                    n = (t - s * (1 - n * n)) / e, R -= n * R, z -= n * z, B = R * R + z * z
+                }
+            }
+            outer: if (O) {
+                F *= d;
+                let e = (B - P * P - F * F) / (2 * P * F);
+                e < -1 ? (e = -1, L = Math.PI * i) : e > 1 ? (e = 1, L = 0, a && (C = (Math.sqrt(B) / (P + F) - 1) * c + 1, p *= C, o && (m *= C))) : L = Math.acos(e) * i, C = P + F * e, w = F * Math.sin(L), I = Math.atan2(z * C - R * w, R * C + z * w)
+            } else {
+                C = d * F, w = f * F;
+                let e = C * C,
+                    t = w * w,
+                    n = Math.atan2(z, R);
+                T = t * P * P + e * B - e * t;
+                let r = -2 * t * P,
+                    a = t - e;
+                if (D = r * r - 4 * a * T, D >= 0) {
+                    let e = Math.sqrt(D);
+                    r < 0 && (e = -e), e = -(r + e) * .5;
+                    let t = e / a,
+                        o = T / e,
+                        s = Math.abs(t) < Math.abs(o) ? t : o;
+                    if (t = B - s * s, t >= 0) {
+                        M = Math.sqrt(t) * i, I = n - Math.atan2(M, s), L = Math.atan2(M / f, (s - P) / d);
+                        break outer
+                    }
+                }
+                let o = E.PI,
+                    s = P - C,
+                    c = s * s,
+                    l = 0,
+                    u = 0,
+                    p = P + C,
+                    m = p * p,
+                    h = 0;
+                T = -C * P / (e - t), T >= -1 && T <= 1 && (T = Math.acos(T), j = C * Math.cos(T) + P, M = w * Math.sin(T), D = j * j + M * M, D < c && (o = T, c = D, s = j, l = M), D > m && (u = T, m = D, p = j, h = M)), B <= (c + m) * .5 ? (I = n - Math.atan2(l * i, s), L = o * i) : (I = n - Math.atan2(h * i, p), L = u * i)
+            }
+            let te = Math.atan2(b, y) * v,
+                ne = e.arotation;
+            I = (I - te) * E.radDeg + g - ne, I > 180 ? I -= 360 : I < -180 && (I += 360), e.updateWorldTransformWith(l, u, ne + I * c, p, m, 0, 0), ne = t.arotation, L = ((L + te) * E.radDeg - t.ashearX) * v + _ - ne, L > 180 ? L -= 360 : L < -180 && (L += 360), t.updateWorldTransformWith(y, b, ne + L * c, t.ascaleX, t.ascaleY, t.ashearX, t.ashearY)
+        }
+    },
+    st = class extends rt {
+        set target(e) {
+            this._target = e
+        }
+        get target() {
+            if (this._target) return this._target;
+            throw Error(`BoneData not set.`)
+        }
+        constructor(e) {
+            super(e, 0, !1), s(this, `bones`, []), s(this, `_target`, null), s(this, `bendDirection`, 0), s(this, `compress`, !1), s(this, `stretch`, !1), s(this, `uniform`, !1), s(this, `mix`, 0), s(this, `softness`, 0)
+        }
+    },
+    ct = class extends rt {
+        set target(e) {
+            this._target = e
+        }
+        get target() {
+            if (this._target) return this._target;
+            throw Error(`SlotData not set.`)
+        }
+        constructor(e) {
+            super(e, 0, !1), s(this, `bones`, []), s(this, `_target`, null), s(this, `positionMode`, lt.Fixed), s(this, `spacingMode`, W.Fixed), s(this, `rotateMode`, ut.Chain), s(this, `offsetRotation`, 0), s(this, `position`, 0), s(this, `spacing`, 0), s(this, `mixRotate`, 0), s(this, `mixX`, 0), s(this, `mixY`, 0)
+        }
+    },
+    lt;
+(function(e) {
+    e[e.Fixed = 0] = `Fixed`, e[e.Percent = 1] = `Percent`
+})(lt || (lt = {}));
+var W;
+(function(e) {
+    e[e.Length = 0] = `Length`, e[e.Fixed = 1] = `Fixed`, e[e.Percent = 2] = `Percent`, e[e.Proportional = 3] = `Proportional`
+})(W || (W = {}));
+var ut;
+(function(e) {
+    e[e.Tangent = 0] = `Tangent`, e[e.Chain = 1] = `Chain`, e[e.ChainScale = 2] = `ChainScale`
+})(ut || (ut = {}));
+var dt = class e {
+    constructor(e, t) {
+        if (s(this, `data`, void 0), s(this, `bones`, void 0), s(this, `target`, void 0), s(this, `position`, 0), s(this, `spacing`, 0), s(this, `mixRotate`, 0), s(this, `mixX`, 0), s(this, `mixY`, 0), s(this, `spaces`, []), s(this, `positions`, []), s(this, `world`, []), s(this, `curves`, []), s(this, `lengths`, []), s(this, `segments`, []), s(this, `active`, !1), !e) throw Error(`data cannot be null.`);
+        if (!t) throw Error(`skeleton cannot be null.`);
+        this.data = e, this.bones = [];
+        for (let n = 0, r = e.bones.length; n < r; n++) {
+            let r = t.findBone(e.bones[n].name);
+            if (!r) throw Error(`Couldn't find bone ${e.bones[n].name}.`);
+            this.bones.push(r)
+        }
+        let n = t.findSlot(e.target.name);
+        if (!n) throw Error(`Couldn't find target bone ${e.target.name}`);
+        this.target = n, this.position = e.position, this.spacing = e.spacing, this.mixRotate = e.mixRotate, this.mixX = e.mixX, this.mixY = e.mixY
+    }
+    isActive() {
+        return this.active
+    }
+    setToSetupPose() {
+        let e = this.data;
+        this.position = e.position, this.spacing = e.spacing, this.mixRotate = e.mixRotate, this.mixX = e.mixX, this.mixY = e.mixY
+    }
+    update(t) {
+        let n = this.target.getAttachment();
+        if (!(n instanceof Qe)) return;
+        let r = this.mixRotate,
+            i = this.mixX,
+            a = this.mixY;
+        if (r == 0 && i == 0 && a == 0) return;
+        let o = this.data,
+            s = o.rotateMode == ut.Tangent,
+            c = o.rotateMode == ut.ChainScale,
+            l = this.bones,
+            u = l.length,
+            d = s ? u : u + 1,
+            f = D.setArraySize(this.spaces, d),
+            p = c ? this.lengths = D.setArraySize(this.lengths, u) : [],
+            m = this.spacing;
+        switch (o.spacingMode) {
+            case W.Percent:
+                if (c)
+                    for (let e = 0, t = d - 1; e < t; e++) {
+                        let t = l[e],
+                            n = t.data.length,
+                            r = n * t.a,
+                            i = n * t.c;
+                        p[e] = Math.sqrt(r * r + i * i)
+                    }
+                D.arrayFill(f, 1, d, m);
+                break;
+            case W.Proportional:
+                let t = 0;
+                for (let n = 0, r = d - 1; n < r;) {
+                    let r = l[n],
+                        i = r.data.length;
+                    if (i < e.epsilon) c && (p[n] = 0), f[++n] = m;
+                    else {
+                        let e = i * r.a,
+                            a = i * r.c,
+                            o = Math.sqrt(e * e + a * a);
+                        c && (p[n] = o), f[++n] = o, t += o
+                    }
+                }
+                if (t > 0) {
+                    t = d / t * m;
+                    for (let e = 1; e < d; e++) f[e] *= t
+                }
+                break;
+            default:
+                let n = o.spacingMode == W.Length;
+                for (let t = 0, r = d - 1; t < r;) {
+                    let r = l[t],
+                        i = r.data.length;
+                    if (i < e.epsilon) c && (p[t] = 0), f[++t] = m;
+                    else {
+                        let e = i * r.a,
+                            a = i * r.c,
+                            o = Math.sqrt(e * e + a * a);
+                        c && (p[t] = o), f[++t] = (n ? i + m : m) * o / i
+                    }
+                }
+        }
+        let h = this.computeWorldPositions(n, d, s),
+            g = h[0],
+            _ = h[1],
+            v = o.offsetRotation,
+            y = !1;
+        if (v == 0) y = o.rotateMode == ut.Chain;
+        else {
+            y = !1;
+            let e = this.target.bone;
+            v *= e.a * e.d - e.b * e.c > 0 ? E.degRad : -E.degRad
+        }
+        for (let e = 0, t = 3; e < u; e++, t += 3) {
+            let n = l[e];
+            n.worldX += (g - n.worldX) * i, n.worldY += (_ - n.worldY) * a;
+            let o = h[t],
+                u = h[t + 1],
+                d = o - g,
+                m = u - _;
+            if (c) {
+                let t = p[e];
+                if (t != 0) {
+                    let e = (Math.sqrt(d * d + m * m) / t - 1) * r + 1;
+                    n.a *= e, n.c *= e
+                }
+            }
+            if (g = o, _ = u, r > 0) {
+                let i = n.a,
+                    a = n.b,
+                    o = n.c,
+                    c = n.d,
+                    l = 0,
+                    u = 0,
+                    p = 0;
+                if (l = s ? h[t - 1] : f[e + 1] == 0 ? h[t + 2] : Math.atan2(m, d), l -= Math.atan2(o, i), y) {
+                    u = Math.cos(l), p = Math.sin(l);
+                    let e = n.data.length;
+                    g += (e * (u * i - p * o) - d) * r, _ += (e * (p * i + u * o) - m) * r
+                } else l += v;
+                l > E.PI ? l -= E.PI2 : l < -E.PI && (l += E.PI2), l *= r, u = Math.cos(l), p = Math.sin(l), n.a = u * i - p * o, n.b = u * a - p * c, n.c = p * i + u * o, n.d = p * a + u * c
+            }
+            n.updateAppliedTransform()
+        }
+    }
+    computeWorldPositions(t, n, r) {
+        let i = this.target,
+            a = this.position,
+            o = this.spaces,
+            s = D.setArraySize(this.positions, n * 3 + 2),
+            c = this.world,
+            l = t.closed,
+            u = t.worldVerticesLength,
+            d = u / 6,
+            f = e.NONE;
+        if (!t.constantSpeed) {
+            let p = t.lengths;
+            d -= l ? 1 : 2;
+            let m = p[d];
+            this.data.positionMode == lt.Percent && (a *= m);
+            let h;
+            switch (this.data.spacingMode) {
+                case W.Percent:
+                    h = m;
+                    break;
+                case W.Proportional:
+                    h = m / n;
+                    break;
+                default:
+                    h = 1
+            }
+            c = D.setArraySize(this.world, 8);
+            for (let g = 0, _ = 0, v = 0; g < n; g++, _ += 3) {
+                let n = o[g] * h;
+                a += n;
+                let y = a;
+                if (l) y %= m, y < 0 && (y += m), v = 0;
+                else if (y < 0) {
+                    f != e.BEFORE && (f = e.BEFORE, t.computeWorldVertices(i, 2, 4, c, 0, 2)), this.addBeforePosition(y, c, 0, s, _);
+                    continue
+                } else if (y > m) {
+                    f != e.AFTER && (f = e.AFTER, t.computeWorldVertices(i, u - 6, 4, c, 0, 2)), this.addAfterPosition(y - m, c, 0, s, _);
+                    continue
+                }
+                for (;; v++) {
+                    let e = p[v];
+                    if (!(y > e)) {
+                        if (v == 0) y /= e;
+                        else {
+                            let t = p[v - 1];
+                            y = (y - t) / (e - t)
+                        }
+                        break
+                    }
+                }
+                v != f && (f = v, l && v == d ? (t.computeWorldVertices(i, u - 4, 4, c, 0, 2), t.computeWorldVertices(i, 0, 4, c, 4, 2)) : t.computeWorldVertices(i, v * 6 + 2, 8, c, 0, 2)), this.addCurvePosition(y, c[0], c[1], c[2], c[3], c[4], c[5], c[6], c[7], s, _, r || g > 0 && n == 0)
+            }
+            return s
+        }
+        l ? (u += 2, c = D.setArraySize(this.world, u), t.computeWorldVertices(i, 2, u - 4, c, 0, 2), t.computeWorldVertices(i, 0, 2, c, u - 4, 2), c[u - 2] = c[0], c[u - 1] = c[1]) : (d--, u -= 4, c = D.setArraySize(this.world, u), t.computeWorldVertices(i, 2, u, c, 0, 2));
+        let p = D.setArraySize(this.curves, d),
+            m = 0,
+            h = c[0],
+            g = c[1],
+            _ = 0,
+            v = 0,
+            y = 0,
+            b = 0,
+            x = 0,
+            S = 0,
+            C = 0,
+            w = 0,
+            T = 0,
+            E = 0,
+            O = 0,
+            k = 0,
+            A = 0,
+            j = 0;
+        for (let e = 0, t = 2; e < d; e++, t += 6) _ = c[t], v = c[t + 1], y = c[t + 2], b = c[t + 3], x = c[t + 4], S = c[t + 5], C = (h - _ * 2 + y) * .1875, w = (g - v * 2 + b) * .1875, T = ((_ - y) * 3 - h + x) * .09375, E = ((v - b) * 3 - g + S) * .09375, O = C * 2 + T, k = w * 2 + E, A = (_ - h) * .75 + C + T * .16666667, j = (v - g) * .75 + w + E * .16666667, m += Math.sqrt(A * A + j * j), A += O, j += k, O += T, k += E, m += Math.sqrt(A * A + j * j), A += O, j += k, m += Math.sqrt(A * A + j * j), A += O + T, j += k + E, m += Math.sqrt(A * A + j * j), p[e] = m, h = x, g = S;
+        this.data.positionMode == lt.Percent && (a *= m);
+        let M;
+        switch (this.data.spacingMode) {
+            case W.Percent:
+                M = m;
+                break;
+            case W.Proportional:
+                M = m / n;
+                break;
+            default:
+                M = 1
+        }
+        let N = this.segments,
+            ee = 0;
+        for (let e = 0, t = 0, i = 0, d = 0; e < n; e++, t += 3) {
+            let n = o[e] * M;
+            a += n;
+            let D = a;
+            if (l) D %= m, D < 0 && (D += m), i = 0;
+            else if (D < 0) {
+                this.addBeforePosition(D, c, 0, s, t);
+                continue
+            } else if (D > m) {
+                this.addAfterPosition(D - m, c, u - 4, s, t);
+                continue
+            }
+            for (;; i++) {
+                let e = p[i];
+                if (!(D > e)) {
+                    if (i == 0) D /= e;
+                    else {
+                        let t = p[i - 1];
+                        D = (D - t) / (e - t)
+                    }
+                    break
+                }
+            }
+            if (i != f) {
+                f = i;
+                let e = i * 6;
+                for (h = c[e], g = c[e + 1], _ = c[e + 2], v = c[e + 3], y = c[e + 4], b = c[e + 5], x = c[e + 6], S = c[e + 7], C = (h - _ * 2 + y) * .03, w = (g - v * 2 + b) * .03, T = ((_ - y) * 3 - h + x) * .006, E = ((v - b) * 3 - g + S) * .006, O = C * 2 + T, k = w * 2 + E, A = (_ - h) * .3 + C + T * .16666667, j = (v - g) * .3 + w + E * .16666667, ee = Math.sqrt(A * A + j * j), N[0] = ee, e = 1; e < 8; e++) A += O, j += k, O += T, k += E, ee += Math.sqrt(A * A + j * j), N[e] = ee;
+                A += O, j += k, ee += Math.sqrt(A * A + j * j), N[8] = ee, A += O + T, j += k + E, ee += Math.sqrt(A * A + j * j), N[9] = ee, d = 0
+            }
+            for (D *= ee;; d++) {
+                let e = N[d];
+                if (!(D > e)) {
+                    if (d == 0) D /= e;
+                    else {
+                        let t = N[d - 1];
+                        D = d + (D - t) / (e - t)
+                    }
+                    break
+                }
+            }
+            this.addCurvePosition(D * .1, h, g, _, v, y, b, x, S, s, t, r || e > 0 && n == 0)
+        }
+        return s
+    }
+    addBeforePosition(e, t, n, r, i) {
+        let a = t[n],
+            o = t[n + 1],
+            s = t[n + 2] - a,
+            c = t[n + 3] - o,
+            l = Math.atan2(c, s);
+        r[i] = a + e * Math.cos(l), r[i + 1] = o + e * Math.sin(l), r[i + 2] = l
+    }
+    addAfterPosition(e, t, n, r, i) {
+        let a = t[n + 2],
+            o = t[n + 3],
+            s = a - t[n],
+            c = o - t[n + 1],
+            l = Math.atan2(c, s);
+        r[i] = a + e * Math.cos(l), r[i + 1] = o + e * Math.sin(l), r[i + 2] = l
+    }
+    addCurvePosition(e, t, n, r, i, a, o, s, c, l, u, d) {
+        if (e == 0 || isNaN(e)) {
+            l[u] = t, l[u + 1] = n, l[u + 2] = Math.atan2(i - n, r - t);
+            return
+        }
+        let f = e * e,
+            p = f * e,
+            m = 1 - e,
+            h = m * m,
+            g = h * m,
+            _ = m * e,
+            v = _ * 3,
+            y = m * v,
+            b = v * e,
+            x = t * g + r * y + a * b + s * p,
+            S = n * g + i * y + o * b + c * p;
+        l[u] = x, l[u + 1] = S, d && (e < .001 ? l[u + 2] = Math.atan2(i - n, r - t) : l[u + 2] = Math.atan2(S - (n * h + i * _ * 2 + o * f), x - (t * h + r * _ * 2 + a * f)))
+    }
+};
+s(dt, `NONE`, -1), s(dt, `BEFORE`, -2), s(dt, `AFTER`, -3), s(dt, `epsilon`, 1e-5);
+var ft = class {
+        set bone(e) {
+            this._bone = e
+        }
+        get bone() {
+            if (this._bone) return this._bone;
+            throw Error(`Bone not set.`)
+        }
+        constructor(e, t) {
+            s(this, `data`, void 0), s(this, `_bone`, null), s(this, `inertia`, 0), s(this, `strength`, 0), s(this, `damping`, 0), s(this, `massInverse`, 0), s(this, `wind`, 0), s(this, `gravity`, 0), s(this, `mix`, 0), s(this, `_reset`, !0), s(this, `ux`, 0), s(this, `uy`, 0), s(this, `cx`, 0), s(this, `cy`, 0), s(this, `tx`, 0), s(this, `ty`, 0), s(this, `xOffset`, 0), s(this, `xVelocity`, 0), s(this, `yOffset`, 0), s(this, `yVelocity`, 0), s(this, `rotateOffset`, 0), s(this, `rotateVelocity`, 0), s(this, `scaleOffset`, 0), s(this, `scaleVelocity`, 0), s(this, `active`, !1), s(this, `skeleton`, void 0), s(this, `remaining`, 0), s(this, `lastTime`, 0), this.data = e, this.skeleton = t, this.bone = t.bones[e.bone.index], this.inertia = e.inertia, this.strength = e.strength, this.damping = e.damping, this.massInverse = e.massInverse, this.wind = e.wind, this.gravity = e.gravity, this.mix = e.mix
+        }
+        reset() {
+            this.remaining = 0, this.lastTime = this.skeleton.time, this._reset = !0, this.xOffset = 0, this.xVelocity = 0, this.yOffset = 0, this.yVelocity = 0, this.rotateOffset = 0, this.rotateVelocity = 0, this.scaleOffset = 0, this.scaleVelocity = 0
+        }
+        setToSetupPose() {
+            let e = this.data;
+            this.inertia = e.inertia, this.strength = e.strength, this.damping = e.damping, this.massInverse = e.massInverse, this.wind = e.wind, this.gravity = e.gravity, this.mix = e.mix
+        }
+        isActive() {
+            return this.active
+        }
+        update(e) {
+            let t = this.mix;
+            if (t == 0) return;
+            let n = this.data.x > 0,
+                r = this.data.y > 0,
+                i = this.data.rotate > 0 || this.data.shearX > 0,
+                a = this.data.scaleX > 0,
+                o = this.bone,
+                s = o.data.length;
+            switch (e) {
+                case gt.none:
+                    return;
+                case gt.reset:
+                    this.reset();
+                case gt.update:
+                    let e = this.skeleton,
+                        c = Math.max(this.skeleton.time - this.lastTime, 0);
+                    this.remaining += c, this.lastTime = e.time;
+                    let l = o.worldX,
+                        u = o.worldY;
+                    if (this._reset) this._reset = !1, this.ux = l, this.uy = u;
+                    else {
+                        let d = this.remaining,
+                            f = this.inertia,
+                            p = this.data.step,
+                            m = this.skeleton.data.referenceScale,
+                            h = -1,
+                            g = this.data.limit * c,
+                            _ = g * Math.abs(e.scaleY);
+                        if (g *= Math.abs(e.scaleX), n || r) {
+                            if (n) {
+                                let e = (this.ux - l) * f;
+                                this.xOffset += e > g ? g : e < -g ? -g : e, this.ux = l
+                            }
+                            if (r) {
+                                let e = (this.uy - u) * f;
+                                this.yOffset += e > _ ? _ : e < -_ ? -_ : e, this.uy = u
+                            }
+                            if (d >= p) {
+                                h = this.damping ** (60 * p);
+                                let t = this.massInverse * p,
+                                    i = this.strength,
+                                    a = this.wind * m * e.scaleX,
+                                    o = this.gravity * m * e.scaleY;
+                                do n && (this.xVelocity += (a - this.xOffset * i) * t, this.xOffset += this.xVelocity * p, this.xVelocity *= h), r && (this.yVelocity -= (o + this.yOffset * i) * t, this.yOffset += this.yVelocity * p, this.yVelocity *= h), d -= p; while (d >= p)
+                            }
+                            n && (o.worldX += this.xOffset * t * this.data.x), r && (o.worldY += this.yOffset * t * this.data.y)
+                        }
+                        if (i || a) {
+                            let e = Math.atan2(o.c, o.a),
+                                n = 0,
+                                r = 0,
+                                c = 0,
+                                l = this.cx - o.worldX,
+                                u = this.cy - o.worldY;
+                            if (l > g ? l = g : l < -g && (l = -g), u > _ ? u = _ : u < -_ && (u = -_), i) {
+                                c = (this.data.rotate + this.data.shearX) * t;
+                                let i = Math.atan2(u + this.ty, l + this.tx) - e - this.rotateOffset * c;
+                                this.rotateOffset += (i - Math.ceil(i * E.invPI2 - .5) * E.PI2) * f, i = this.rotateOffset * c + e, n = Math.cos(i), r = Math.sin(i), a && (i = s * o.getWorldScaleX(), i > 0 && (this.scaleOffset += (l * n + u * r) * f / i))
+                            } else {
+                                n = Math.cos(e), r = Math.sin(e);
+                                let t = s * o.getWorldScaleX();
+                                t > 0 && (this.scaleOffset += (l * n + u * r) * f / t)
+                            }
+                            if (d = this.remaining, d >= p) {
+                                h == -1 && (h = this.damping ** (60 * p));
+                                let t = this.massInverse * p,
+                                    o = this.strength,
+                                    l = this.wind,
+                                    u = ht.yDown ? -this.gravity : this.gravity,
+                                    f = s / m;
+                                for (;;)
+                                    if (d -= p, a && (this.scaleVelocity += (l * n - u * r - this.scaleOffset * o) * t, this.scaleOffset += this.scaleVelocity * p, this.scaleVelocity *= h), i) {
+                                        if (this.rotateVelocity -= ((l * r + u * n) * f + this.rotateOffset * o) * t, this.rotateOffset += this.rotateVelocity * p, this.rotateVelocity *= h, d < p) break;
+                                        let i = this.rotateOffset * c + e;
+                                        n = Math.cos(i), r = Math.sin(i)
+                                    } else if (d < p) break
+                            }
+                        }
+                        this.remaining = d
+                    }
+                    this.cx = o.worldX, this.cy = o.worldY;
+                    break;
+                case gt.pose:
+                    n && (o.worldX += this.xOffset * t * this.data.x), r && (o.worldY += this.yOffset * t * this.data.y)
+            }
+            if (i) {
+                let e = this.rotateOffset * t,
+                    n = 0,
+                    r = 0,
+                    i = 0;
+                if (this.data.shearX > 0) {
+                    let t = 0;
+                    this.data.rotate > 0 && (t = e * this.data.rotate, n = Math.sin(t), r = Math.cos(t), i = o.b, o.b = r * i - n * o.d, o.d = n * i + r * o.d), t += e * this.data.shearX, n = Math.sin(t), r = Math.cos(t), i = o.a, o.a = r * i - n * o.c, o.c = n * i + r * o.c
+                } else e *= this.data.rotate, n = Math.sin(e), r = Math.cos(e), i = o.a, o.a = r * i - n * o.c, o.c = n * i + r * o.c, i = o.b, o.b = r * i - n * o.d, o.d = n * i + r * o.d
+            }
+            if (a) {
+                let e = 1 + this.scaleOffset * t * this.data.scaleX;
+                o.a *= e, o.c *= e
+            }
+            e != gt.pose && (this.tx = s * o.a, this.ty = s * o.c), o.updateAppliedTransform()
+        }
+        translate(e, t) {
+            this.ux -= e, this.uy -= t, this.cx -= e, this.cy -= t
+        }
+        rotate(e, t, n) {
+            let r = n * E.degRad,
+                i = Math.cos(r),
+                a = Math.sin(r),
+                o = this.cx - e,
+                s = this.cy - t;
+            this.translate(o * i - s * a - o, o * a + s * i - s)
+        }
+    },
+    pt = class {
+        constructor(e, t) {
+            if (s(this, `data`, void 0), s(this, `bone`, void 0), s(this, `color`, void 0), s(this, `darkColor`, null), s(this, `attachment`, null), s(this, `attachmentState`, 0), s(this, `sequenceIndex`, -1), s(this, `deform`, []), !e) throw Error(`data cannot be null.`);
+            if (!t) throw Error(`bone cannot be null.`);
+            this.data = e, this.bone = t, this.color = new T, this.darkColor = e.darkColor ? new T : null, this.setToSetupPose()
+        }
+        getSkeleton() {
+            return this.bone.skeleton
+        }
+        getAttachment() {
+            return this.attachment
+        }
+        setAttachment(e) {
+            this.attachment != e && ((!(e instanceof j) || !(this.attachment instanceof j) || e.timelineAttachment != this.attachment.timelineAttachment) && (this.deform.length = 0), this.attachment = e, this.sequenceIndex = -1)
+        }
+        setToSetupPose() {
+            this.color.setFromColor(this.data.color), this.darkColor && this.darkColor.setFromColor(this.data.darkColor), this.data.attachmentName ? (this.attachment = null, this.setAttachment(this.bone.skeleton.getAttachment(this.data.index, this.data.attachmentName))) : this.attachment = null
+        }
+    },
+    mt = class {
+        constructor(e, t) {
+            if (s(this, `data`, void 0), s(this, `bones`, void 0), s(this, `target`, void 0), s(this, `mixRotate`, 0), s(this, `mixX`, 0), s(this, `mixY`, 0), s(this, `mixScaleX`, 0), s(this, `mixScaleY`, 0), s(this, `mixShearY`, 0), s(this, `temp`, new k), s(this, `active`, !1), !e) throw Error(`data cannot be null.`);
+            if (!t) throw Error(`skeleton cannot be null.`);
+            this.data = e, this.bones = [];
+            for (let n = 0; n < e.bones.length; n++) {
+                let r = t.findBone(e.bones[n].name);
+                if (!r) throw Error(`Couldn't find bone ${e.bones[n].name}.`);
+                this.bones.push(r)
+            }
+            let n = t.findBone(e.target.name);
+            if (!n) throw Error(`Couldn't find target bone ${e.target.name}.`);
+            this.target = n, this.mixRotate = e.mixRotate, this.mixX = e.mixX, this.mixY = e.mixY, this.mixScaleX = e.mixScaleX, this.mixScaleY = e.mixScaleY, this.mixShearY = e.mixShearY
+        }
+        isActive() {
+            return this.active
+        }
+        setToSetupPose() {
+            let e = this.data;
+            this.mixRotate = e.mixRotate, this.mixX = e.mixX, this.mixY = e.mixY, this.mixScaleX = e.mixScaleX, this.mixScaleY = e.mixScaleY, this.mixShearY = e.mixShearY
+        }
+        update(e) {
+            (this.mixRotate != 0 || this.mixX != 0 || this.mixY != 0 || this.mixScaleX != 0 || this.mixScaleY != 0 || this.mixShearY != 0) && (this.data.local ? this.data.relative ? this.applyRelativeLocal() : this.applyAbsoluteLocal() : this.data.relative ? this.applyRelativeWorld() : this.applyAbsoluteWorld())
+        }
+        applyAbsoluteWorld() {
+            let e = this.mixRotate,
+                t = this.mixX,
+                n = this.mixY,
+                r = this.mixScaleX,
+                i = this.mixScaleY,
+                a = this.mixShearY,
+                o = t != 0 || n != 0,
+                s = this.target,
+                c = s.a,
+                l = s.b,
+                u = s.c,
+                d = s.d,
+                f = c * d - l * u > 0 ? E.degRad : -E.degRad,
+                p = this.data.offsetRotation * f,
+                m = this.data.offsetShearY * f,
+                h = this.bones;
+            for (let f = 0, g = h.length; f < g; f++) {
+                let g = h[f];
+                if (e != 0) {
+                    let t = g.a,
+                        n = g.b,
+                        r = g.c,
+                        i = g.d,
+                        a = Math.atan2(u, c) - Math.atan2(r, t) + p;
+                    a > E.PI ? a -= E.PI2 : a < -E.PI && (a += E.PI2), a *= e;
+                    let o = Math.cos(a),
+                        s = Math.sin(a);
+                    g.a = o * t - s * r, g.b = o * n - s * i, g.c = s * t + o * r, g.d = s * n + o * i
+                }
+                if (o) {
+                    let e = this.temp;
+                    s.localToWorld(e.set(this.data.offsetX, this.data.offsetY)), g.worldX += (e.x - g.worldX) * t, g.worldY += (e.y - g.worldY) * n
+                }
+                if (r != 0) {
+                    let e = Math.sqrt(g.a * g.a + g.c * g.c);
+                    e != 0 && (e = (e + (Math.sqrt(c * c + u * u) - e + this.data.offsetScaleX) * r) / e), g.a *= e, g.c *= e
+                }
+                if (i != 0) {
+                    let e = Math.sqrt(g.b * g.b + g.d * g.d);
+                    e != 0 && (e = (e + (Math.sqrt(l * l + d * d) - e + this.data.offsetScaleY) * i) / e), g.b *= e, g.d *= e
+                }
+                if (a > 0) {
+                    let e = g.b,
+                        t = g.d,
+                        n = Math.atan2(t, e),
+                        r = Math.atan2(d, l) - Math.atan2(u, c) - (n - Math.atan2(g.c, g.a));
+                    r > E.PI ? r -= E.PI2 : r < -E.PI && (r += E.PI2), r = n + (r + m) * a;
+                    let i = Math.sqrt(e * e + t * t);
+                    g.b = Math.cos(r) * i, g.d = Math.sin(r) * i
+                }
+                g.updateAppliedTransform()
+            }
+        }
+        applyRelativeWorld() {
+            let e = this.mixRotate,
+                t = this.mixX,
+                n = this.mixY,
+                r = this.mixScaleX,
+                i = this.mixScaleY,
+                a = this.mixShearY,
+                o = t != 0 || n != 0,
+                s = this.target,
+                c = s.a,
+                l = s.b,
+                u = s.c,
+                d = s.d,
+                f = c * d - l * u > 0 ? E.degRad : -E.degRad,
+                p = this.data.offsetRotation * f,
+                m = this.data.offsetShearY * f,
+                h = this.bones;
+            for (let f = 0, g = h.length; f < g; f++) {
+                let g = h[f];
+                if (e != 0) {
+                    let t = g.a,
+                        n = g.b,
+                        r = g.c,
+                        i = g.d,
+                        a = Math.atan2(u, c) + p;
+                    a > E.PI ? a -= E.PI2 : a < -E.PI && (a += E.PI2), a *= e;
+                    let o = Math.cos(a),
+                        s = Math.sin(a);
+                    g.a = o * t - s * r, g.b = o * n - s * i, g.c = s * t + o * r, g.d = s * n + o * i
+                }
+                if (o) {
+                    let e = this.temp;
+                    s.localToWorld(e.set(this.data.offsetX, this.data.offsetY)), g.worldX += e.x * t, g.worldY += e.y * n
+                }
+                if (r != 0) {
+                    let e = (Math.sqrt(c * c + u * u) - 1 + this.data.offsetScaleX) * r + 1;
+                    g.a *= e, g.c *= e
+                }
+                if (i != 0) {
+                    let e = (Math.sqrt(l * l + d * d) - 1 + this.data.offsetScaleY) * i + 1;
+                    g.b *= e, g.d *= e
+                }
+                if (a > 0) {
+                    let e = Math.atan2(d, l) - Math.atan2(u, c);
+                    e > E.PI ? e -= E.PI2 : e < -E.PI && (e += E.PI2);
+                    let t = g.b,
+                        n = g.d;
+                    e = Math.atan2(n, t) + (e - E.PI / 2 + m) * a;
+                    let r = Math.sqrt(t * t + n * n);
+                    g.b = Math.cos(e) * r, g.d = Math.sin(e) * r
+                }
+                g.updateAppliedTransform()
+            }
+        }
+        applyAbsoluteLocal() {
+            let e = this.mixRotate,
+                t = this.mixX,
+                n = this.mixY,
+                r = this.mixScaleX,
+                i = this.mixScaleY,
+                a = this.mixShearY,
+                o = this.target,
+                s = this.bones;
+            for (let c = 0, l = s.length; c < l; c++) {
+                let l = s[c],
+                    u = l.arotation;
+                e != 0 && (u += (o.arotation - u + this.data.offsetRotation) * e);
+                let d = l.ax,
+                    f = l.ay;
+                d += (o.ax - d + this.data.offsetX) * t, f += (o.ay - f + this.data.offsetY) * n;
+                let p = l.ascaleX,
+                    m = l.ascaleY;
+                r != 0 && p != 0 && (p = (p + (o.ascaleX - p + this.data.offsetScaleX) * r) / p), i != 0 && m != 0 && (m = (m + (o.ascaleY - m + this.data.offsetScaleY) * i) / m);
+                let h = l.ashearY;
+                a != 0 && (h += (o.ashearY - h + this.data.offsetShearY) * a), l.updateWorldTransformWith(d, f, u, p, m, l.ashearX, h)
+            }
+        }
+        applyRelativeLocal() {
+            let e = this.mixRotate,
+                t = this.mixX,
+                n = this.mixY,
+                r = this.mixScaleX,
+                i = this.mixScaleY,
+                a = this.mixShearY,
+                o = this.target,
+                s = this.bones;
+            for (let c = 0, l = s.length; c < l; c++) {
+                let l = s[c],
+                    u = l.arotation + (o.arotation + this.data.offsetRotation) * e,
+                    d = l.ax + (o.ax + this.data.offsetX) * t,
+                    f = l.ay + (o.ay + this.data.offsetY) * n,
+                    p = l.ascaleX * ((o.ascaleX - 1 + this.data.offsetScaleX) * r + 1),
+                    m = l.ascaleY * ((o.ascaleY - 1 + this.data.offsetScaleY) * i + 1),
+                    h = l.ashearY + (o.ashearY + this.data.offsetShearY) * a;
+                l.updateWorldTransformWith(d, f, u, p, m, l.ashearX, h)
+            }
+        }
+    },
+    ht = class e {
+        get scaleY() {
+            return e.yDown ? -this._scaleY : this._scaleY
+        }
+        set scaleY(e) {
+            this._scaleY = e
+        }
+        constructor(e) {
+            if (s(this, `data`, void 0), s(this, `bones`, void 0), s(this, `slots`, void 0), s(this, `drawOrder`, void 0), s(this, `ikConstraints`, void 0), s(this, `transformConstraints`, void 0), s(this, `pathConstraints`, void 0), s(this, `physicsConstraints`, void 0), s(this, `_updateCache`, []), s(this, `skin`, null), s(this, `color`, void 0), s(this, `scaleX`, 1), s(this, `_scaleY`, 1), s(this, `x`, 0), s(this, `y`, 0), s(this, `time`, 0), !e) throw Error(`data cannot be null.`);
+            this.data = e, this.bones = [];
+            for (let t = 0; t < e.bones.length; t++) {
+                let n = e.bones[t],
+                    r;
+                if (!n.parent) r = new nt(n, this, null);
+                else {
+                    let e = this.bones[n.parent.index];
+                    r = new nt(n, this, e), e.children.push(r)
+                }
+                this.bones.push(r)
+            }
+            this.slots = [], this.drawOrder = [];
+            for (let t = 0; t < e.slots.length; t++) {
+                let n = e.slots[t],
+                    r = this.bones[n.boneData.index],
+                    i = new pt(n, r);
+                this.slots.push(i), this.drawOrder.push(i)
+            }
+            this.ikConstraints = [];
+            for (let t = 0; t < e.ikConstraints.length; t++) {
+                let n = e.ikConstraints[t];
+                this.ikConstraints.push(new ot(n, this))
+            }
+            this.transformConstraints = [];
+            for (let t = 0; t < e.transformConstraints.length; t++) {
+                let n = e.transformConstraints[t];
+                this.transformConstraints.push(new mt(n, this))
+            }
+            this.pathConstraints = [];
+            for (let t = 0; t < e.pathConstraints.length; t++) {
+                let n = e.pathConstraints[t];
+                this.pathConstraints.push(new dt(n, this))
+            }
+            this.physicsConstraints = [];
+            for (let t = 0; t < e.physicsConstraints.length; t++) {
+                let n = e.physicsConstraints[t];
+                this.physicsConstraints.push(new ft(n, this))
+            }
+            this.color = new T(1, 1, 1, 1), this.updateCache()
+        }
+        updateCache() {
+            let e = this._updateCache;
+            e.length = 0;
+            let t = this.bones;
+            for (let e = 0, n = t.length; e < n; e++) {
+                let n = t[e];
+                n.sorted = n.data.skinRequired, n.active = !n.sorted
+            }
+            if (this.skin) {
+                let e = this.skin.bones;
+                for (let t = 0, n = this.skin.bones.length; t < n; t++) {
+                    let n = this.bones[e[t].index];
+                    do n.sorted = !1, n.active = !0, n = n.parent; while (n)
+                }
+            }
+            let n = this.ikConstraints,
+                r = this.transformConstraints,
+                i = this.pathConstraints,
+                a = this.physicsConstraints,
+                o = n.length,
+                s = r.length,
+                c = i.length,
+                l = this.physicsConstraints.length,
+                u = o + s + c + l;
+            outer: for (let e = 0; e < u; e++) {
+                for (let t = 0; t < o; t++) {
+                    let r = n[t];
+                    if (r.data.order == e) {
+                        this.sortIkConstraint(r);
+                        continue outer
+                    }
+                }
+                for (let t = 0; t < s; t++) {
+                    let n = r[t];
+                    if (n.data.order == e) {
+                        this.sortTransformConstraint(n);
+                        continue outer
+                    }
+                }
+                for (let t = 0; t < c; t++) {
+                    let n = i[t];
+                    if (n.data.order == e) {
+                        this.sortPathConstraint(n);
+                        continue outer
+                    }
+                }
+                for (let t = 0; t < l; t++) {
+                    let n = a[t];
+                    if (n.data.order == e) {
+                        this.sortPhysicsConstraint(n);
+                        continue outer
+                    }
+                }
+            }
+            for (let e = 0, n = t.length; e < n; e++) this.sortBone(t[e])
+        }
+        sortIkConstraint(e) {
+            if (e.active = e.target.isActive() && (!e.data.skinRequired || this.skin && D.contains(this.skin.constraints, e.data, !0)), !e.active) return;
+            let t = e.target;
+            this.sortBone(t);
+            let n = e.bones,
+                r = n[0];
+            if (this.sortBone(r), n.length == 1) this._updateCache.push(e), this.sortReset(r.children);
+            else {
+                let t = n[n.length - 1];
+                this.sortBone(t), this._updateCache.push(e), this.sortReset(r.children), t.sorted = !0
+            }
+        }
+        sortPathConstraint(e) {
+            if (e.active = e.target.bone.isActive() && (!e.data.skinRequired || this.skin && D.contains(this.skin.constraints, e.data, !0)), !e.active) return;
+            let t = e.target,
+                n = t.data.index,
+                r = t.bone;
+            this.skin && this.sortPathConstraintAttachment(this.skin, n, r), this.data.defaultSkin && this.data.defaultSkin != this.skin && this.sortPathConstraintAttachment(this.data.defaultSkin, n, r);
+            for (let e = 0, t = this.data.skins.length; e < t; e++) this.sortPathConstraintAttachment(this.data.skins[e], n, r);
+            let i = t.getAttachment();
+            i instanceof Qe && this.sortPathConstraintAttachmentWith(i, r);
+            let a = e.bones,
+                o = a.length;
+            for (let e = 0; e < o; e++) this.sortBone(a[e]);
+            this._updateCache.push(e);
+            for (let e = 0; e < o; e++) this.sortReset(a[e].children);
+            for (let e = 0; e < o; e++) a[e].sorted = !0
+        }
+        sortTransformConstraint(e) {
+            if (e.active = e.target.isActive() && (!e.data.skinRequired || this.skin && D.contains(this.skin.constraints, e.data, !0)), !e.active) return;
+            this.sortBone(e.target);
+            let t = e.bones,
+                n = t.length;
+            if (e.data.local)
+                for (let e = 0; e < n; e++) {
+                    let n = t[e];
+                    this.sortBone(n.parent), this.sortBone(n)
+                } else
+                    for (let e = 0; e < n; e++) this.sortBone(t[e]);
+            this._updateCache.push(e);
+            for (let e = 0; e < n; e++) this.sortReset(t[e].children);
+            for (let e = 0; e < n; e++) t[e].sorted = !0
+        }
+        sortPathConstraintAttachment(e, t, n) {
+            let r = e.attachments[t];
+            if (r)
+                for (let e in r) this.sortPathConstraintAttachmentWith(r[e], n)
+        }
+        sortPathConstraintAttachmentWith(e, t) {
+            if (!(e instanceof Qe)) return;
+            let n = e.bones;
+            if (!n) this.sortBone(t);
+            else {
+                let e = this.bones;
+                for (let t = 0, r = n.length; t < r;) {
+                    let r = n[t++];
+                    for (r += t; t < r;) this.sortBone(e[n[t++]])
+                }
+            }
+        }
+        sortPhysicsConstraint(e) {
+            let t = e.bone;
+            e.active = t.active && (!e.data.skinRequired || this.skin != null && D.contains(this.skin.constraints, e.data, !0)), e.active && (this.sortBone(t), this._updateCache.push(e), this.sortReset(t.children), t.sorted = !0)
+        }
+        sortBone(e) {
+            if (!e || e.sorted) return;
+            let t = e.parent;
+            t && this.sortBone(t), e.sorted = !0, this._updateCache.push(e)
+        }
+        sortReset(e) {
+            for (let t = 0, n = e.length; t < n; t++) {
+                let n = e[t];
+                n.active && (n.sorted && this.sortReset(n.children), n.sorted = !1)
+            }
+        }
+        updateWorldTransform(e) {
+            if (e == null) throw Error(`physics is undefined`);
+            let t = this.bones;
+            for (let e = 0, n = t.length; e < n; e++) {
+                let n = t[e];
+                n.ax = n.x, n.ay = n.y, n.arotation = n.rotation, n.ascaleX = n.scaleX, n.ascaleY = n.scaleY, n.ashearX = n.shearX, n.ashearY = n.shearY
+            }
+            let n = this._updateCache;
+            for (let t = 0, r = n.length; t < r; t++) n[t].update(e)
+        }
+        updateWorldTransformWith(e, t) {
+            if (!t) throw Error(`parent cannot be null.`);
+            let n = this.bones;
+            for (let e = 1, t = n.length; e < t; e++) {
+                let t = n[e];
+                t.ax = t.x, t.ay = t.y, t.arotation = t.rotation, t.ascaleX = t.scaleX, t.ascaleY = t.scaleY, t.ashearX = t.shearX, t.ashearY = t.shearY
+            }
+            let r = this.getRootBone();
+            if (!r) throw Error(`Root bone must not be null.`);
+            let i = t.a,
+                a = t.b,
+                o = t.c,
+                s = t.d;
+            r.worldX = i * this.x + a * this.y + t.worldX, r.worldY = o * this.x + s * this.y + t.worldY;
+            let c = (r.rotation + r.shearX) * E.degRad,
+                l = (r.rotation + 90 + r.shearY) * E.degRad,
+                u = Math.cos(c) * r.scaleX,
+                d = Math.cos(l) * r.scaleY,
+                f = Math.sin(c) * r.scaleX,
+                p = Math.sin(l) * r.scaleY;
+            r.a = (i * u + a * f) * this.scaleX, r.b = (i * d + a * p) * this.scaleX, r.c = (o * u + s * f) * this.scaleY, r.d = (o * d + s * p) * this.scaleY;
+            let m = this._updateCache;
+            for (let t = 0, n = m.length; t < n; t++) {
+                let n = m[t];
+                n != r && n.update(e)
+            }
+        }
+        setToSetupPose() {
+            this.setBonesToSetupPose(), this.setSlotsToSetupPose()
+        }
+        setBonesToSetupPose() {
+            for (let e of this.bones) e.setToSetupPose();
+            for (let e of this.ikConstraints) e.setToSetupPose();
+            for (let e of this.transformConstraints) e.setToSetupPose();
+            for (let e of this.pathConstraints) e.setToSetupPose();
+            for (let e of this.physicsConstraints) e.setToSetupPose()
+        }
+        setSlotsToSetupPose() {
+            let e = this.slots;
+            D.arrayCopy(e, 0, this.drawOrder, 0, e.length);
+            for (let t = 0, n = e.length; t < n; t++) e[t].setToSetupPose()
+        }
+        getRootBone() {
+            return this.bones.length == 0 ? null : this.bones[0]
+        }
+        findBone(e) {
+            if (!e) throw Error(`boneName cannot be null.`);
+            let t = this.bones;
+            for (let n = 0, r = t.length; n < r; n++) {
+                let r = t[n];
+                if (r.data.name == e) return r
+            }
+            return null
+        }
+        findSlot(e) {
+            if (!e) throw Error(`slotName cannot be null.`);
+            let t = this.slots;
+            for (let n = 0, r = t.length; n < r; n++) {
+                let r = t[n];
+                if (r.data.name == e) return r
+            }
+            return null
+        }
+        setSkinByName(e) {
+            let t = this.data.findSkin(e);
+            if (!t) throw Error(`Skin not found: ` + e);
+            this.setSkin(t)
+        }
+        setSkin(e) {
+            if (e != this.skin) {
+                if (e) {
+                    if (this.skin) e.attachAll(this, this.skin);
+                    else {
+                        let t = this.slots;
+                        for (let n = 0, r = t.length; n < r; n++) {
+                            let r = t[n],
+                                i = r.data.attachmentName;
+                            if (i) {
+                                let t = e.getAttachment(n, i);
+                                t && r.setAttachment(t)
+                            }
+                        }
+                    }
+                }
+                this.skin = e, this.updateCache()
+            }
+        }
+        getAttachmentByName(e, t) {
+            let n = this.data.findSlot(e);
+            if (!n) throw Error(`Can't find slot with name ${e}`);
+            return this.getAttachment(n.index, t)
+        }
+        getAttachment(e, t) {
+            if (!t) throw Error(`attachmentName cannot be null.`);
+            if (this.skin) {
+                let n = this.skin.getAttachment(e, t);
+                if (n) return n
+            }
+            return this.data.defaultSkin ? this.data.defaultSkin.getAttachment(e, t) : null
+        }
+        setAttachment(e, t) {
+            if (!e) throw Error(`slotName cannot be null.`);
+            let n = this.slots;
+            for (let r = 0, i = n.length; r < i; r++) {
+                let i = n[r];
+                if (i.data.name == e) {
+                    let n = null;
+                    if (t && (n = this.getAttachment(r, t), !n)) throw Error(`Attachment not found: ` + t + `, for slot: ` + e);
+                    i.setAttachment(n);
+                    return
+                }
+            }
+            throw Error(`Slot not found: ` + e)
+        }
+        findIkConstraint(e) {
+            if (!e) throw Error(`constraintName cannot be null.`);
+            return this.ikConstraints.find(t => t.data.name == e) ?? null
+        }
+        findTransformConstraint(e) {
+            if (!e) throw Error(`constraintName cannot be null.`);
+            return this.transformConstraints.find(t => t.data.name == e) ?? null
+        }
+        findPathConstraint(e) {
+            if (!e) throw Error(`constraintName cannot be null.`);
+            return this.pathConstraints.find(t => t.data.name == e) ?? null
+        }
+        findPhysicsConstraint(e) {
+            if (e == null) throw Error(`constraintName cannot be null.`);
+            return this.physicsConstraints.find(t => t.data.name == e) ?? null
+        }
+        getBoundsRect(e) {
+            let t = new k,
+                n = new k;
+            return this.getBounds(t, n, void 0, e), {
+                x: t.x,
+                y: t.y,
+                width: n.x,
+                height: n.y
+            }
+        }
+        getBounds(t, n, r = [, , ], i = null) {
+            if (!t) throw Error(`offset cannot be null.`);
+            if (!n) throw Error(`size cannot be null.`);
+            let a = this.drawOrder,
+                o = 1 / 0,
+                s = 1 / 0,
+                c = -1 / 0,
+                l = -1 / 0;
+            for (let t = 0, n = a.length; t < n; t++) {
+                let n = a[t];
+                if (!n.bone.active) continue;
+                let u = 0,
+                    d = null,
+                    f = null,
+                    p = n.getAttachment();
+                if (p instanceof H) u = 8, d = D.setArraySize(r, u, 0), p.computeWorldVertices(n, d, 0, 2), f = e.quadTriangles;
+                else if (p instanceof Ze) {
+                    let e = p;
+                    u = e.worldVerticesLength, d = D.setArraySize(r, u, 0), e.computeWorldVertices(n, 0, u, d, 0, 2), f = e.triangles
+                } else if (p instanceof Ue && i != null) {
+                    i.clipStart(n, p);
+                    continue
+                }
+                if (d && f) {
+                    i != null && i.isClipping() && (i.clipTriangles(d, f, f.length), d = i.clippedVertices, u = i.clippedVertices.length);
+                    for (let e = 0, t = d.length; e < t; e += 2) {
+                        let t = d[e],
+                            n = d[e + 1];
+                        o = Math.min(o, t), s = Math.min(s, n), c = Math.max(c, t), l = Math.max(l, n)
+                    }
+                }
+                i != null && i.clipEndWithSlot(n)
+            }
+            i != null && i.clipEnd(), t.set(o, s), n.set(c - o, l - s)
+        }
+        update(e) {
+            this.time += e
+        }
+        physicsTranslate(e, t) {
+            let n = this.physicsConstraints;
+            for (let r = 0, i = n.length; r < i; r++) n[r].translate(e, t)
+        }
+        physicsRotate(e, t, n) {
+            let r = this.physicsConstraints;
+            for (let i = 0, a = r.length; i < a; i++) r[i].rotate(e, t, n)
+        }
+    };
+s(ht, `quadTriangles`, [0, 1, 2, 2, 3, 0]), s(ht, `yDown`, !1);
+var gt;
+(function(e) {
+    e[e.none = 0] = `none`, e[e.reset = 1] = `reset`, e[e.update = 2] = `update`, e[e.pose = 3] = `pose`
+})(gt || (gt = {}));
+var _t = class extends rt {
+        set bone(e) {
+            this._bone = e
+        }
+        get bone() {
+            if (this._bone) return this._bone;
+            throw Error(`BoneData not set.`)
+        }
+        constructor(e) {
+            super(e, 0, !1), s(this, `_bone`, null), s(this, `x`, 0), s(this, `y`, 0), s(this, `rotate`, 0), s(this, `scaleX`, 0), s(this, `shearX`, 0), s(this, `limit`, 0), s(this, `step`, 0), s(this, `inertia`, 0), s(this, `strength`, 0), s(this, `damping`, 0), s(this, `massInverse`, 0), s(this, `wind`, 0), s(this, `gravity`, 0), s(this, `mix`, 0), s(this, `inertiaGlobal`, !1), s(this, `strengthGlobal`, !1), s(this, `dampingGlobal`, !1), s(this, `massGlobal`, !1), s(this, `windGlobal`, !1), s(this, `gravityGlobal`, !1), s(this, `mixGlobal`, !1)
+        }
+    },
+    vt = class {
+        constructor() {
+            s(this, `name`, null), s(this, `bones`, []), s(this, `slots`, []), s(this, `skins`, []), s(this, `defaultSkin`, null), s(this, `events`, []), s(this, `animations`, []), s(this, `ikConstraints`, []), s(this, `transformConstraints`, []), s(this, `pathConstraints`, []), s(this, `physicsConstraints`, []), s(this, `x`, 0), s(this, `y`, 0), s(this, `width`, 0), s(this, `height`, 0), s(this, `referenceScale`, 100), s(this, `version`, null), s(this, `hash`, null), s(this, `fps`, 0), s(this, `imagesPath`, null), s(this, `audioPath`, null)
+        }
+        findBone(e) {
+            if (!e) throw Error(`boneName cannot be null.`);
+            let t = this.bones;
+            for (let n = 0, r = t.length; n < r; n++) {
+                let r = t[n];
+                if (r.name == e) return r
+            }
+            return null
+        }
+        findSlot(e) {
+            if (!e) throw Error(`slotName cannot be null.`);
+            let t = this.slots;
+            for (let n = 0, r = t.length; n < r; n++) {
+                let r = t[n];
+                if (r.name == e) return r
+            }
+            return null
+        }
+        findSkin(e) {
+            if (!e) throw Error(`skinName cannot be null.`);
+            let t = this.skins;
+            for (let n = 0, r = t.length; n < r; n++) {
+                let r = t[n];
+                if (r.name == e) return r
+            }
+            return null
+        }
+        findEvent(e) {
+            if (!e) throw Error(`eventDataName cannot be null.`);
+            let t = this.events;
+            for (let n = 0, r = t.length; n < r; n++) {
+                let r = t[n];
+                if (r.name == e) return r
+            }
+            return null
+        }
+        findAnimation(e) {
+            if (!e) throw Error(`animationName cannot be null.`);
+            let t = this.animations;
+            for (let n = 0, r = t.length; n < r; n++) {
+                let r = t[n];
+                if (r.name == e) return r
+            }
+            return null
+        }
+        findIkConstraint(e) {
+            if (!e) throw Error(`constraintName cannot be null.`);
+            let t = this.ikConstraints;
+            for (let n = 0, r = t.length; n < r; n++) {
+                let r = t[n];
+                if (r.name == e) return r
+            }
+            return null
+        }
+        findTransformConstraint(e) {
+            if (!e) throw Error(`constraintName cannot be null.`);
+            let t = this.transformConstraints;
+            for (let n = 0, r = t.length; n < r; n++) {
+                let r = t[n];
+                if (r.name == e) return r
+            }
+            return null
+        }
+        findPathConstraint(e) {
+            if (!e) throw Error(`constraintName cannot be null.`);
+            let t = this.pathConstraints;
+            for (let n = 0, r = t.length; n < r; n++) {
+                let r = t[n];
+                if (r.name == e) return r
+            }
+            return null
+        }
+        findPhysicsConstraint(e) {
+            if (!e) throw Error(`constraintName cannot be null.`);
+            let t = this.physicsConstraints;
+            for (let n = 0, r = t.length; n < r; n++) {
+                let r = t[n];
+                if (r.name == e) return r
+            }
+            return null
+        }
+    },
+    yt = class {
+        constructor(e = 0, t, n) {
+            s(this, `slotIndex`, void 0), s(this, `name`, void 0), s(this, `attachment`, void 0), this.slotIndex = e, this.name = t, this.attachment = n
+        }
+    },
+    bt = class {
+        constructor(e) {
+            if (s(this, `name`, void 0), s(this, `attachments`, []), s(this, `bones`, []), s(this, `constraints`, []), s(this, `color`, new T(.99607843, .61960787, .30980393, 1)), !e) throw Error(`name cannot be null.`);
+            this.name = e
+        }
+        setAttachment(e, t, n) {
+            if (!n) throw Error(`attachment cannot be null.`);
+            let r = this.attachments;
+            e >= r.length && (r.length = e + 1), r[e] || (r[e] = {}), r[e][t] = n
+        }
+        addSkin(e) {
+            for (let t = 0; t < e.bones.length; t++) {
+                let n = e.bones[t],
+                    r = !1;
+                for (let e = 0; e < this.bones.length; e++)
+                    if (this.bones[e] == n) {
+                        r = !0;
+                        break
+                    } r || this.bones.push(n)
+            }
+            for (let t = 0; t < e.constraints.length; t++) {
+                let n = e.constraints[t],
+                    r = !1;
+                for (let e = 0; e < this.constraints.length; e++)
+                    if (this.constraints[e] == n) {
+                        r = !0;
+                        break
+                    } r || this.constraints.push(n)
+            }
+            let t = e.getAttachments();
+            for (let e = 0; e < t.length; e++) {
+                var n = t[e];
+                this.setAttachment(n.slotIndex, n.name, n.attachment)
+            }
+        }
+        copySkin(e) {
+            for (let t = 0; t < e.bones.length; t++) {
+                let n = e.bones[t],
+                    r = !1;
+                for (let e = 0; e < this.bones.length; e++)
+                    if (this.bones[e] == n) {
+                        r = !0;
+                        break
+                    } r || this.bones.push(n)
+            }
+            for (let t = 0; t < e.constraints.length; t++) {
+                let n = e.constraints[t],
+                    r = !1;
+                for (let e = 0; e < this.constraints.length; e++)
+                    if (this.constraints[e] == n) {
+                        r = !0;
+                        break
+                    } r || this.constraints.push(n)
+            }
+            let t = e.getAttachments();
+            for (let e = 0; e < t.length; e++) {
+                var n = t[e];
+                n.attachment && (n.attachment instanceof Ze ? (n.attachment = n.attachment.newLinkedMesh(), this.setAttachment(n.slotIndex, n.name, n.attachment)) : (n.attachment = n.attachment.copy(), this.setAttachment(n.slotIndex, n.name, n.attachment)))
+            }
+        }
+        getAttachment(e, t) {
+            let n = this.attachments[e];
+            return n ? n[t] : null
+        }
+        removeAttachment(e, t) {
+            let n = this.attachments[e];
+            n && delete n[t]
+        }
+        getAttachments() {
+            let e = [];
+            for (var t = 0; t < this.attachments.length; t++) {
+                let n = this.attachments[t];
+                if (n)
+                    for (let r in n) {
+                        let i = n[r];
+                        i && e.push(new yt(t, r, i))
+                    }
+            }
+            return e
+        }
+        getAttachmentsForSlot(e, t) {
+            let n = this.attachments[e];
+            if (n)
+                for (let r in n) {
+                    let i = n[r];
+                    i && t.push(new yt(e, r, i))
+                }
+        }
+        clear() {
+            this.attachments.length = 0, this.bones.length = 0, this.constraints.length = 0
+        }
+        attachAll(e, t) {
+            let n = 0;
+            for (let r = 0; r < e.slots.length; r++) {
+                let i = e.slots[r],
+                    a = i.getAttachment();
+                if (a && n < t.attachments.length) {
+                    let e = t.attachments[n];
+                    for (let t in e)
+                        if (a == e[t]) {
+                            let e = this.getAttachment(n, t);
+                            e && i.setAttachment(e);
+                            break
+                        }
+                }
+                n++
+            }
+        }
+    },
+    xt = class {
+        constructor(e, t, n) {
+            if (s(this, `index`, 0), s(this, `name`, void 0), s(this, `boneData`, void 0), s(this, `color`, new T(1, 1, 1, 1)), s(this, `darkColor`, null), s(this, `attachmentName`, null), s(this, `blendMode`, St.Normal), s(this, `visible`, !0), e < 0) throw Error(`index must be >= 0.`);
+            if (!t) throw Error(`name cannot be null.`);
+            if (!n) throw Error(`boneData cannot be null.`);
+            this.index = e, this.name = t, this.boneData = n
+        }
+    },
+    St;
+(function(e) {
+    e[e.Normal = 0] = `Normal`, e[e.Additive = 1] = `Additive`, e[e.Multiply = 2] = `Multiply`, e[e.Screen = 3] = `Screen`
+})(St || (St = {}));
+var Ct = class extends rt {
+        set target(e) {
+            this._target = e
+        }
+        get target() {
+            if (this._target) return this._target;
+            throw Error(`BoneData not set.`)
+        }
+        constructor(e) {
+            super(e, 0, !1), s(this, `bones`, []), s(this, `_target`, null), s(this, `mixRotate`, 0), s(this, `mixX`, 0), s(this, `mixY`, 0), s(this, `mixScaleX`, 0), s(this, `mixScaleY`, 0), s(this, `mixShearY`, 0), s(this, `offsetRotation`, 0), s(this, `offsetX`, 0), s(this, `offsetY`, 0), s(this, `offsetScaleX`, 0), s(this, `offsetScaleY`, 0), s(this, `offsetShearY`, 0), s(this, `relative`, !1), s(this, `local`, !1)
+        }
+    },
+    wt = class {
+        constructor(e) {
+            s(this, `scale`, 1), s(this, `attachmentLoader`, void 0), s(this, `linkedMeshes`, []), this.attachmentLoader = e
+        }
+        readSkeletonData(e) {
+            let t = this.scale,
+                n = new vt;
+            n.name = ``;
+            let r = new Tt(e),
+                i = r.readInt32(),
+                a = r.readInt32();
+            n.hash = a == 0 && i == 0 ? null : a.toString(16) + i.toString(16), n.version = r.readString(), n.x = r.readFloat(), n.y = r.readFloat(), n.width = r.readFloat(), n.height = r.readFloat(), n.referenceScale = r.readFloat() * t;
+            let o = r.readBoolean();
+            o && (n.fps = r.readFloat(), n.imagesPath = r.readString(), n.audioPath = r.readString());
+            let s = 0;
+            s = r.readInt(!0);
+            for (let e = 0; e < s; e++) {
+                let e = r.readString();
+                if (!e) throw Error(`String in string table must not be null.`);
+                r.strings.push(e)
+            }
+            s = r.readInt(!0);
+            for (let e = 0; e < s; e++) {
+                let i = r.readString();
+                if (!i) throw Error(`Bone name must not be null.`);
+                let a = e == 0 ? null : n.bones[r.readInt(!0)],
+                    s = new tt(e, i, a);
+                s.rotation = r.readFloat(), s.x = r.readFloat() * t, s.y = r.readFloat() * t, s.scaleX = r.readFloat(), s.scaleY = r.readFloat(), s.shearX = r.readFloat(), s.shearY = r.readFloat(), s.length = r.readFloat() * t, s.inherit = r.readByte(), s.skinRequired = r.readBoolean(), o && (T.rgba8888ToColor(s.color, r.readInt32()), s.icon = r.readString() ?? void 0, s.visible = r.readBoolean()), n.bones.push(s)
+            }
+            s = r.readInt(!0);
+            for (let e = 0; e < s; e++) {
+                let t = r.readString();
+                if (!t) throw Error(`Slot name must not be null.`);
+                let i = n.bones[r.readInt(!0)],
+                    a = new xt(e, t, i);
+                T.rgba8888ToColor(a.color, r.readInt32());
+                let s = r.readInt32();
+                s != -1 && T.rgb888ToColor(a.darkColor = new T, s), a.attachmentName = r.readStringRef(), a.blendMode = r.readInt(!0), o && (a.visible = r.readBoolean()), n.slots.push(a)
+            }
+            s = r.readInt(!0);
+            for (let e = 0, i; e < s; e++) {
+                let e = r.readString();
+                if (!e) throw Error(`IK constraint data name must not be null.`);
+                let a = new st(e);
+                a.order = r.readInt(!0), i = r.readInt(!0);
+                for (let e = 0; e < i; e++) a.bones.push(n.bones[r.readInt(!0)]);
+                a.target = n.bones[r.readInt(!0)];
+                let o = r.readByte();
+                a.skinRequired = !!(o & 1), a.bendDirection = o & 2 ? 1 : -1, a.compress = !!(o & 4), a.stretch = !!(o & 8), a.uniform = !!(o & 16), o & 32 && (a.mix = o & 64 ? r.readFloat() : 1), o & 128 && (a.softness = r.readFloat() * t), n.ikConstraints.push(a)
+            }
+            s = r.readInt(!0);
+            for (let e = 0, i; e < s; e++) {
+                let e = r.readString();
+                if (!e) throw Error(`Transform constraint data name must not be null.`);
+                let a = new Ct(e);
+                a.order = r.readInt(!0), i = r.readInt(!0);
+                for (let e = 0; e < i; e++) a.bones.push(n.bones[r.readInt(!0)]);
+                a.target = n.bones[r.readInt(!0)];
+                let o = r.readByte();
+                a.skinRequired = !!(o & 1), a.local = !!(o & 2), a.relative = !!(o & 4), o & 8 && (a.offsetRotation = r.readFloat()), o & 16 && (a.offsetX = r.readFloat() * t), o & 32 && (a.offsetY = r.readFloat() * t), o & 64 && (a.offsetScaleX = r.readFloat()), o & 128 && (a.offsetScaleY = r.readFloat()), o = r.readByte(), o & 1 && (a.offsetShearY = r.readFloat()), o & 2 && (a.mixRotate = r.readFloat()), o & 4 && (a.mixX = r.readFloat()), o & 8 && (a.mixY = r.readFloat()), o & 16 && (a.mixScaleX = r.readFloat()), o & 32 && (a.mixScaleY = r.readFloat()), o & 64 && (a.mixShearY = r.readFloat()), n.transformConstraints.push(a)
+            }
+            s = r.readInt(!0);
+            for (let e = 0, i; e < s; e++) {
+                let e = r.readString();
+                if (!e) throw Error(`Path constraint data name must not be null.`);
+                let a = new ct(e);
+                a.order = r.readInt(!0), a.skinRequired = r.readBoolean(), i = r.readInt(!0);
+                for (let e = 0; e < i; e++) a.bones.push(n.bones[r.readInt(!0)]);
+                a.target = n.slots[r.readInt(!0)];
+                let o = r.readByte();
+                a.positionMode = o & 1, a.spacingMode = o >> 1 & 3, a.rotateMode = o >> 3 & 3, o & 128 && (a.offsetRotation = r.readFloat()), a.position = r.readFloat(), a.positionMode == lt.Fixed && (a.position *= t), a.spacing = r.readFloat(), (a.spacingMode == W.Length || a.spacingMode == W.Fixed) && (a.spacing *= t), a.mixRotate = r.readFloat(), a.mixX = r.readFloat(), a.mixY = r.readFloat(), n.pathConstraints.push(a)
+            }
+            s = r.readInt(!0);
+            for (let e = 0; e < s; e++) {
+                let e = r.readString();
+                if (!e) throw Error(`Physics constraint data name must not be null.`);
+                let i = new _t(e);
+                i.order = r.readInt(!0), i.bone = n.bones[r.readInt(!0)];
+                let a = r.readByte();
+                i.skinRequired = !!(a & 1), a & 2 && (i.x = r.readFloat()), a & 4 && (i.y = r.readFloat()), a & 8 && (i.rotate = r.readFloat()), a & 16 && (i.scaleX = r.readFloat()), a & 32 && (i.shearX = r.readFloat()), i.limit = (a & 64 ? r.readFloat() : 5e3) * t, i.step = 1 / r.readUnsignedByte(), i.inertia = r.readFloat(), i.strength = r.readFloat(), i.damping = r.readFloat(), i.massInverse = a & 128 ? r.readFloat() : 1, i.wind = r.readFloat(), i.gravity = r.readFloat(), a = r.readByte(), a & 1 && (i.inertiaGlobal = !0), a & 2 && (i.strengthGlobal = !0), a & 4 && (i.dampingGlobal = !0), a & 8 && (i.massGlobal = !0), a & 16 && (i.windGlobal = !0), a & 32 && (i.gravityGlobal = !0), a & 64 && (i.mixGlobal = !0), i.mix = a & 128 ? r.readFloat() : 1, n.physicsConstraints.push(i)
+            }
+            let c = this.readSkin(r, n, !0, o);
+            c && (n.defaultSkin = c, n.skins.push(c));
+            {
+                let e = n.skins.length;
+                for (D.setArraySize(n.skins, s = e + r.readInt(!0)); e < s; e++) {
+                    let t = this.readSkin(r, n, !1, o);
+                    if (!t) throw Error(`readSkin() should not have returned null.`);
+                    n.skins[e] = t
+                }
+            }
+            s = this.linkedMeshes.length;
+            for (let e = 0; e < s; e++) {
+                let t = this.linkedMeshes[e],
+                    r = n.skins[t.skinIndex];
+                if (!t.parent) throw Error(`Linked mesh parent must not be null`);
+                let i = r.getAttachment(t.slotIndex, t.parent);
+                if (!i) throw Error(`Parent mesh not found: ${t.parent}`);
+                t.mesh.timelineAttachment = t.inheritTimeline ? i : t.mesh, t.mesh.setParentMesh(i), t.mesh.region != null && t.mesh.updateRegion()
+            }
+            this.linkedMeshes.length = 0, s = r.readInt(!0);
+            for (let e = 0; e < s; e++) {
+                let e = r.readString();
+                if (!e) throw Error(`Event data name must not be null`);
+                let t = new at(e);
+                t.intValue = r.readInt(!1), t.floatValue = r.readFloat(), t.stringValue = r.readString(), t.audioPath = r.readString(), t.audioPath && (t.volume = r.readFloat(), t.balance = r.readFloat()), n.events.push(t)
+            }
+            s = r.readInt(!0);
+            for (let e = 0; e < s; e++) {
+                let e = r.readString();
+                if (!e) throw Error(`Animatio name must not be null.`);
+                n.animations.push(this.readAnimation(r, e, n))
+            }
+            return n
+        }
+        readSkin(e, t, n, r) {
+            let i = null,
+                a = 0;
+            if (n) {
+                if (a = e.readInt(!0), a == 0) return null;
+                i = new bt(`default`)
+            } else {
+                let n = e.readString();
+                if (!n) throw Error(`Skin name must not be null.`);
+                i = new bt(n), r && T.rgba8888ToColor(i.color, e.readInt32()), i.bones.length = e.readInt(!0);
+                for (let n = 0, r = i.bones.length; n < r; n++) i.bones[n] = t.bones[e.readInt(!0)];
+                for (let n = 0, r = e.readInt(!0); n < r; n++) i.constraints.push(t.ikConstraints[e.readInt(!0)]);
+                for (let n = 0, r = e.readInt(!0); n < r; n++) i.constraints.push(t.transformConstraints[e.readInt(!0)]);
+                for (let n = 0, r = e.readInt(!0); n < r; n++) i.constraints.push(t.pathConstraints[e.readInt(!0)]);
+                for (let n = 0, r = e.readInt(!0); n < r; n++) i.constraints.push(t.physicsConstraints[e.readInt(!0)]);
+                a = e.readInt(!0)
+            }
+            for (let n = 0; n < a; n++) {
+                let n = e.readInt(!0);
+                for (let a = 0, o = e.readInt(!0); a < o; a++) {
+                    let a = e.readStringRef();
+                    if (!a) throw Error(`Attachment name must not be null`);
+                    let o = this.readAttachment(e, t, i, n, a, r);
+                    o && i.setAttachment(n, a, o)
+                }
+            }
+            return i
+        }
+        readAttachment(e, t, n, r, i, a) {
+            let o = this.scale,
+                s = e.readByte(),
+                c = s & 8 ? e.readStringRef() : i;
+            if (!c) throw Error(`Attachment name must not be null`);
+            switch (s & 7) {
+                case Ot.Region: {
+                    let t = s & 16 ? e.readStringRef() : null,
+                        r = s & 32 ? e.readInt32() : 4294967295,
+                        i = s & 64 ? this.readSequence(e) : null,
+                        a = s & 128 ? e.readFloat() : 0,
+                        l = e.readFloat(),
+                        u = e.readFloat(),
+                        d = e.readFloat(),
+                        f = e.readFloat(),
+                        p = e.readFloat(),
+                        m = e.readFloat();
+                    t || (t = c);
+                    let h = this.attachmentLoader.newRegionAttachment(n, c, t, i);
+                    return h ? (h.path = t, h.x = l * o, h.y = u * o, h.scaleX = d, h.scaleY = f, h.rotation = a, h.width = p * o, h.height = m * o, T.rgba8888ToColor(h.color, r), h.sequence = i, i ?? h.updateRegion(), h) : null
+                }
+                case Ot.BoundingBox: {
+                    let t = this.readVertices(e, !!(s & 16)),
+                        r = a ? e.readInt32() : 0,
+                        i = this.attachmentLoader.newBoundingBoxAttachment(n, c);
+                    return i ? (i.worldVerticesLength = t.length, i.vertices = t.vertices, i.bones = t.bones, a && T.rgba8888ToColor(i.color, r), i) : null
+                }
+                case Ot.Mesh: {
+                    let t = s & 16 ? e.readStringRef() : c,
+                        r = s & 32 ? e.readInt32() : 4294967295,
+                        i = s & 64 ? this.readSequence(e) : null,
+                        l = e.readInt(!0),
+                        u = this.readVertices(e, !!(s & 128)),
+                        d = this.readFloatArray(e, u.length, 1),
+                        f = this.readShortArray(e, (u.length - l - 2) * 3),
+                        p = [],
+                        m = 0,
+                        h = 0;
+                    a && (p = this.readShortArray(e, e.readInt(!0)), m = e.readFloat(), h = e.readFloat()), t || (t = c);
+                    let g = this.attachmentLoader.newMeshAttachment(n, c, t, i);
+                    return g ? (g.path = t, T.rgba8888ToColor(g.color, r), g.bones = u.bones, g.vertices = u.vertices, g.worldVerticesLength = u.length, g.triangles = f, g.regionUVs = d, i ?? g.updateRegion(), g.hullLength = l << 1, g.sequence = i, a && (g.edges = p, g.width = m * o, g.height = h * o), g) : null
+                }
+                case Ot.LinkedMesh: {
+                    let t = s & 16 ? e.readStringRef() : c;
+                    if (t == null) throw Error(`Path of linked mesh must not be null`);
+                    let i = s & 32 ? e.readInt32() : 4294967295,
+                        l = s & 64 ? this.readSequence(e) : null,
+                        u = !!(s & 128),
+                        d = e.readInt(!0),
+                        f = e.readStringRef(),
+                        p = 0,
+                        m = 0;
+                    a && (p = e.readFloat(), m = e.readFloat());
+                    let h = this.attachmentLoader.newMeshAttachment(n, c, t, l);
+                    return h ? (h.path = t, T.rgba8888ToColor(h.color, i), h.sequence = l, a && (h.width = p * o, h.height = m * o), this.linkedMeshes.push(new Et(h, d, r, f, u)), h) : null
+                }
+                case Ot.Path: {
+                    let t = !!(s & 16),
+                        r = !!(s & 32),
+                        i = this.readVertices(e, !!(s & 64)),
+                        l = D.newArray(i.length / 6, 0);
+                    for (let t = 0, n = l.length; t < n; t++) l[t] = e.readFloat() * o;
+                    let u = a ? e.readInt32() : 0,
+                        d = this.attachmentLoader.newPathAttachment(n, c);
+                    return d ? (d.closed = t, d.constantSpeed = r, d.worldVerticesLength = i.length, d.vertices = i.vertices, d.bones = i.bones, d.lengths = l, a && T.rgba8888ToColor(d.color, u), d) : null
+                }
+                case Ot.Point: {
+                    let t = e.readFloat(),
+                        r = e.readFloat(),
+                        i = e.readFloat(),
+                        s = a ? e.readInt32() : 0,
+                        l = this.attachmentLoader.newPointAttachment(n, c);
+                    return l ? (l.x = r * o, l.y = i * o, l.rotation = t, a && T.rgba8888ToColor(l.color, s), l) : null
+                }
+                case Ot.Clipping: {
+                    let r = e.readInt(!0),
+                        i = this.readVertices(e, !!(s & 16)),
+                        o = a ? e.readInt32() : 0,
+                        l = this.attachmentLoader.newClippingAttachment(n, c);
+                    return l ? (l.endSlot = t.slots[r], l.worldVerticesLength = i.length, l.vertices = i.vertices, l.bones = i.bones, a && T.rgba8888ToColor(l.color, o), l) : null
+                }
+            }
+            return null
+        }
+        readSequence(e) {
+            let t = new M(e.readInt(!0));
+            return t.start = e.readInt(!0), t.digits = e.readInt(!0), t.setupIndex = e.readInt(!0), t
+        }
+        readVertices(e, t) {
+            let n = this.scale,
+                r = e.readInt(!0),
+                i = new Dt;
+            if (i.length = r << 1, !t) return i.vertices = this.readFloatArray(e, i.length, n), i;
+            let a = [],
+                o = [];
+            for (let t = 0; t < r; t++) {
+                let t = e.readInt(!0);
+                o.push(t);
+                for (let r = 0; r < t; r++) o.push(e.readInt(!0)), a.push(e.readFloat() * n), a.push(e.readFloat() * n), a.push(e.readFloat())
+            }
+            return i.vertices = D.toFloatArray(a), i.bones = o, i
+        }
+        readFloatArray(e, t, n) {
+            let r = Array(t);
+            if (n == 1)
+                for (let n = 0; n < t; n++) r[n] = e.readFloat();
+            else
+                for (let i = 0; i < t; i++) r[i] = e.readFloat() * n;
+            return r
+        }
+        readShortArray(e, t) {
+            let n = Array(t);
+            for (let r = 0; r < t; r++) n[r] = e.readInt(!0);
+            return n
+        }
+        readAnimation(e, t, n) {
+            e.readInt(!0);
+            let r = [],
+                i = this.scale;
+            for (let t = 0, n = e.readInt(!0); t < n; t++) {
+                let t = e.readInt(!0);
+                for (let n = 0, i = e.readInt(!0); n < i; n++) {
+                    let n = e.readByte(),
+                        i = e.readInt(!0),
+                        a = i - 1;
+                    switch (n) {
+                        case Vt: {
+                            let n = new ve(i, t);
+                            for (let t = 0; t < i; t++) n.setFrame(t, e.readFloat(), e.readStringRef());
+                            r.push(n);
+                            break
+                        }
+                        case Ht: {
+                            let n = new pe(i, e.readInt(!0), t),
+                                o = e.readFloat(),
+                                s = e.readUnsignedByte() / 255,
+                                c = e.readUnsignedByte() / 255,
+                                l = e.readUnsignedByte() / 255,
+                                u = e.readUnsignedByte() / 255;
+                            for (let t = 0, r = 0; n.setFrame(t, o, s, c, l, u), t != a; t++) {
+                                let i = e.readFloat(),
+                                    a = e.readUnsignedByte() / 255,
+                                    d = e.readUnsignedByte() / 255,
+                                    f = e.readUnsignedByte() / 255,
+                                    p = e.readUnsignedByte() / 255;
+                                switch (e.readByte()) {
+                                    case sn:
+                                        n.setStepped(t);
+                                        break;
+                                    case cn:
+                                        K(e, n, r++, t, 0, o, i, s, a, 1), K(e, n, r++, t, 1, o, i, c, d, 1), K(e, n, r++, t, 2, o, i, l, f, 1), K(e, n, r++, t, 3, o, i, u, p, 1)
+                                }
+                                o = i, s = a, c = d, l = f, u = p
+                            }
+                            r.push(n);
+                            break
+                        }
+                        case Ut: {
+                            let n = new me(i, e.readInt(!0), t),
+                                o = e.readFloat(),
+                                s = e.readUnsignedByte() / 255,
+                                c = e.readUnsignedByte() / 255,
+                                l = e.readUnsignedByte() / 255;
+                            for (let t = 0, r = 0; n.setFrame(t, o, s, c, l), t != a; t++) {
+                                let i = e.readFloat(),
+                                    a = e.readUnsignedByte() / 255,
+                                    u = e.readUnsignedByte() / 255,
+                                    d = e.readUnsignedByte() / 255;
+                                switch (e.readByte()) {
+                                    case sn:
+                                        n.setStepped(t);
+                                        break;
+                                    case cn:
+                                        K(e, n, r++, t, 0, o, i, s, a, 1), K(e, n, r++, t, 1, o, i, c, u, 1), K(e, n, r++, t, 2, o, i, l, d, 1)
+                                }
+                                o = i, s = a, c = u, l = d
+                            }
+                            r.push(n);
+                            break
+                        }
+                        case Wt: {
+                            let n = new ge(i, e.readInt(!0), t),
+                                o = e.readFloat(),
+                                s = e.readUnsignedByte() / 255,
+                                c = e.readUnsignedByte() / 255,
+                                l = e.readUnsignedByte() / 255,
+                                u = e.readUnsignedByte() / 255,
+                                d = e.readUnsignedByte() / 255,
+                                f = e.readUnsignedByte() / 255,
+                                p = e.readUnsignedByte() / 255;
+                            for (let t = 0, r = 0; n.setFrame(t, o, s, c, l, u, d, f, p), t != a; t++) {
+                                let i = e.readFloat(),
+                                    a = e.readUnsignedByte() / 255,
+                                    m = e.readUnsignedByte() / 255,
+                                    h = e.readUnsignedByte() / 255,
+                                    g = e.readUnsignedByte() / 255,
+                                    _ = e.readUnsignedByte() / 255,
+                                    v = e.readUnsignedByte() / 255,
+                                    y = e.readUnsignedByte() / 255;
+                                switch (e.readByte()) {
+                                    case sn:
+                                        n.setStepped(t);
+                                        break;
+                                    case cn:
+                                        K(e, n, r++, t, 0, o, i, s, a, 1), K(e, n, r++, t, 1, o, i, c, m, 1), K(e, n, r++, t, 2, o, i, l, h, 1), K(e, n, r++, t, 3, o, i, u, g, 1), K(e, n, r++, t, 4, o, i, d, _, 1), K(e, n, r++, t, 5, o, i, f, v, 1), K(e, n, r++, t, 6, o, i, p, y, 1)
+                                }
+                                o = i, s = a, c = m, l = h, u = g, d = _, f = v, p = y
+                            }
+                            r.push(n);
+                            break
+                        }
+                        case Gt: {
+                            let n = new _e(i, e.readInt(!0), t),
+                                o = e.readFloat(),
+                                s = e.readUnsignedByte() / 255,
+                                c = e.readUnsignedByte() / 255,
+                                l = e.readUnsignedByte() / 255,
+                                u = e.readUnsignedByte() / 255,
+                                d = e.readUnsignedByte() / 255,
+                                f = e.readUnsignedByte() / 255;
+                            for (let t = 0, r = 0; n.setFrame(t, o, s, c, l, u, d, f), t != a; t++) {
+                                let i = e.readFloat(),
+                                    a = e.readUnsignedByte() / 255,
+                                    p = e.readUnsignedByte() / 255,
+                                    m = e.readUnsignedByte() / 255,
+                                    h = e.readUnsignedByte() / 255,
+                                    g = e.readUnsignedByte() / 255,
+                                    _ = e.readUnsignedByte() / 255;
+                                switch (e.readByte()) {
+                                    case sn:
+                                        n.setStepped(t);
+                                        break;
+                                    case cn:
+                                        K(e, n, r++, t, 0, o, i, s, a, 1), K(e, n, r++, t, 1, o, i, c, p, 1), K(e, n, r++, t, 2, o, i, l, m, 1), K(e, n, r++, t, 3, o, i, u, h, 1), K(e, n, r++, t, 4, o, i, d, g, 1), K(e, n, r++, t, 5, o, i, f, _, 1)
+                                }
+                                o = i, s = a, c = p, l = m, u = h, d = g, f = _
+                            }
+                            r.push(n);
+                            break
+                        }
+                        case Kt: {
+                            let n = new he(i, e.readInt(!0), t),
+                                o = e.readFloat(),
+                                s = e.readUnsignedByte() / 255;
+                            for (let t = 0, r = 0; n.setFrame(t, o, s), t != a; t++) {
+                                let i = e.readFloat(),
+                                    a = e.readUnsignedByte() / 255;
+                                switch (e.readByte()) {
+                                    case sn:
+                                        n.setStepped(t);
+                                        break;
+                                    case cn:
+                                        K(e, n, r++, t, 0, o, i, s, a, 1)
+                                }
+                                o = i, s = a
+                            }
+                            r.push(n)
+                        }
+                    }
+                }
+            }
+            for (let t = 0, n = e.readInt(!0); t < n; t++) {
+                let t = e.readInt(!0);
+                for (let n = 0, a = e.readInt(!0); n < a; n++) {
+                    let n = e.readByte(),
+                        a = e.readInt(!0);
+                    if (n == Bt) {
+                        let n = new fe(a, t);
+                        for (let t = 0; t < a; t++) n.setFrame(t, e.readFloat(), e.readByte());
+                        r.push(n);
+                        continue
+                    }
+                    let o = e.readInt(!0);
+                    switch (n) {
+                        case At:
+                            r.push(G(e, new ne(a, o, t), 1));
+                            break;
+                        case jt:
+                            r.push(kt(e, new re(a, o, t), i));
+                            break;
+                        case Mt:
+                            r.push(G(e, new ie(a, o, t), i));
+                            break;
+                        case Nt:
+                            r.push(G(e, new ae(a, o, t), i));
+                            break;
+                        case Pt:
+                            r.push(kt(e, new oe(a, o, t), 1));
+                            break;
+                        case Ft:
+                            r.push(G(e, new se(a, o, t), 1));
+                            break;
+                        case It:
+                            r.push(G(e, new ce(a, o, t), 1));
+                            break;
+                        case Lt:
+                            r.push(kt(e, new le(a, o, t), 1));
+                            break;
+                        case Rt:
+                            r.push(G(e, new ue(a, o, t), 1));
+                            break;
+                        case zt:
+                            r.push(G(e, new de(a, o, t), 1))
+                    }
+                }
+            }
+            for (let t = 0, n = e.readInt(!0); t < n; t++) {
+                let t = e.readInt(!0),
+                    n = e.readInt(!0),
+                    a = n - 1,
+                    o = new Se(n, e.readInt(!0), t),
+                    s = e.readByte(),
+                    c = e.readFloat(),
+                    l = s & 1 ? s & 2 ? e.readFloat() : 1 : 0,
+                    u = s & 4 ? e.readFloat() * i : 0;
+                for (let t = 0, n = 0; o.setFrame(t, c, l, u, s & 8 ? 1 : -1, !!(s & 16), !!(s & 32)), t != a; t++) {
+                    s = e.readByte();
+                    let r = e.readFloat(),
+                        a = s & 1 ? s & 2 ? e.readFloat() : 1 : 0,
+                        d = s & 4 ? e.readFloat() * i : 0;
+                    s & 64 ? o.setStepped(t) : s & 128 && (K(e, o, n++, t, 0, c, r, l, a, 1), K(e, o, n++, t, 1, c, r, u, d, i)), c = r, l = a, u = d
+                }
+                r.push(o)
+            }
+            for (let t = 0, n = e.readInt(!0); t < n; t++) {
+                let t = e.readInt(!0),
+                    n = e.readInt(!0),
+                    i = n - 1,
+                    a = new Ce(n, e.readInt(!0), t),
+                    o = e.readFloat(),
+                    s = e.readFloat(),
+                    c = e.readFloat(),
+                    l = e.readFloat(),
+                    u = e.readFloat(),
+                    d = e.readFloat(),
+                    f = e.readFloat();
+                for (let t = 0, n = 0; a.setFrame(t, o, s, c, l, u, d, f), t != i; t++) {
+                    let r = e.readFloat(),
+                        i = e.readFloat(),
+                        p = e.readFloat(),
+                        m = e.readFloat(),
+                        h = e.readFloat(),
+                        g = e.readFloat(),
+                        _ = e.readFloat();
+                    switch (e.readByte()) {
+                        case sn:
+                            a.setStepped(t);
+                            break;
+                        case cn:
+                            K(e, a, n++, t, 0, o, r, s, i, 1), K(e, a, n++, t, 1, o, r, c, p, 1), K(e, a, n++, t, 2, o, r, l, m, 1), K(e, a, n++, t, 3, o, r, u, h, 1), K(e, a, n++, t, 4, o, r, d, g, 1), K(e, a, n++, t, 5, o, r, f, _, 1)
+                    }
+                    o = r, s = i, c = p, l = m, u = h, d = g, f = _
+                }
+                r.push(a)
+            }
+            for (let t = 0, a = e.readInt(!0); t < a; t++) {
+                let t = e.readInt(!0),
+                    a = n.pathConstraints[t];
+                for (let n = 0, o = e.readInt(!0); n < o; n++) {
+                    let n = e.readByte(),
+                        o = e.readInt(!0),
+                        s = e.readInt(!0);
+                    switch (n) {
+                        case Yt:
+                            r.push(G(e, new we(o, s, t), a.positionMode == lt.Fixed ? i : 1));
+                            break;
+                        case Xt:
+                            r.push(G(e, new Te(o, s, t), a.spacingMode == W.Length || a.spacingMode == W.Fixed ? i : 1));
+                            break;
+                        case Zt:
+                            let n = new Ee(o, s, t),
+                                c = e.readFloat(),
+                                l = e.readFloat(),
+                                u = e.readFloat(),
+                                d = e.readFloat();
+                            for (let t = 0, r = 0, i = n.getFrameCount() - 1; n.setFrame(t, c, l, u, d), t != i; t++) {
+                                let i = e.readFloat(),
+                                    a = e.readFloat(),
+                                    o = e.readFloat(),
+                                    s = e.readFloat();
+                                switch (e.readByte()) {
+                                    case sn:
+                                        n.setStepped(t);
+                                        break;
+                                    case cn:
+                                        K(e, n, r++, t, 0, c, i, l, a, 1), K(e, n, r++, t, 1, c, i, u, o, 1), K(e, n, r++, t, 2, c, i, d, s, 1)
+                                }
+                                c = i, l = a, u = o, d = s
+                            }
+                            r.push(n)
+                    }
+                }
+            }
+            for (let t = 0, n = e.readInt(!0); t < n; t++) {
+                let t = e.readInt(!0) - 1;
+                for (let n = 0, i = e.readInt(!0); n < i; n++) {
+                    let n = e.readByte(),
+                        i = e.readInt(!0);
+                    if (n == on) {
+                        let n = new Fe(i, t);
+                        for (let t = 0; t < i; t++) n.setFrame(t, e.readFloat());
+                        r.push(n);
+                        continue
+                    }
+                    let a = e.readInt(!0);
+                    switch (n) {
+                        case Qt:
+                            r.push(G(e, new Oe(i, a, t), 1));
+                            break;
+                        case $t:
+                            r.push(G(e, new ke(i, a, t), 1));
+                            break;
+                        case en:
+                            r.push(G(e, new Ae(i, a, t), 1));
+                            break;
+                        case tn:
+                            r.push(G(e, new je(i, a, t), 1));
+                            break;
+                        case nn:
+                            r.push(G(e, new Me(i, a, t), 1));
+                            break;
+                        case rn:
+                            r.push(G(e, new Ne(i, a, t), 1));
+                            break;
+                        case an:
+                            r.push(G(e, new Pe(i, a, t), 1))
+                    }
+                }
+            }
+            for (let t = 0, a = e.readInt(!0); t < a; t++) {
+                let t = n.skins[e.readInt(!0)];
+                for (let n = 0, a = e.readInt(!0); n < a; n++) {
+                    let n = e.readInt(!0);
+                    for (let a = 0, o = e.readInt(!0); a < o; a++) {
+                        let a = e.readStringRef();
+                        if (!a) throw Error(`attachmentName must not be null.`);
+                        let o = t.getAttachment(n, a),
+                            s = e.readByte(),
+                            c = e.readInt(!0),
+                            l = c - 1;
+                        switch (s) {
+                            case qt: {
+                                let t = o,
+                                    a = t.bones,
+                                    s = t.vertices,
+                                    u = a ? s.length / 3 * 2 : s.length,
+                                    d = new ye(c, e.readInt(!0), n, t),
+                                    f = e.readFloat();
+                                for (let t = 0, n = 0;; t++) {
+                                    let r, o = e.readInt(!0);
+                                    if (o == 0) r = a ? D.newFloatArray(u) : s;
+                                    else {
+                                        r = D.newFloatArray(u);
+                                        let t = e.readInt(!0);
+                                        if (o += t, i == 1)
+                                            for (let n = t; n < o; n++) r[n] = e.readFloat();
+                                        else
+                                            for (let n = t; n < o; n++) r[n] = e.readFloat() * i;
+                                        if (!a)
+                                            for (let e = 0, t = r.length; e < t; e++) r[e] += s[e]
+                                    }
+                                    if (d.setFrame(t, f, r), t == l) break;
+                                    let c = e.readFloat();
+                                    switch (e.readByte()) {
+                                        case sn:
+                                            d.setStepped(t);
+                                            break;
+                                        case cn:
+                                            K(e, d, n++, t, 0, f, c, 0, 1, 1)
+                                    }
+                                    f = c
+                                }
+                                r.push(d);
+                                break
+                            }
+                            case Jt: {
+                                let t = new Ie(c, n, o);
+                                for (let n = 0; n < c; n++) {
+                                    let r = e.readFloat(),
+                                        i = e.readInt32();
+                                    t.setFrame(n, r, ee[i & 15], i >> 4, e.readFloat())
+                                }
+                                r.push(t);
+                                break
+                            }
+                        }
+                    }
+                }
+            }
+            let a = e.readInt(!0);
+            if (a > 0) {
+                let t = new xe(a),
+                    i = n.slots.length;
+                for (let n = 0; n < a; n++) {
+                    let r = e.readFloat(),
+                        a = e.readInt(!0),
+                        o = D.newArray(i, 0);
+                    for (let e = i - 1; e >= 0; e--) o[e] = -1;
+                    let s = D.newArray(i - a, 0),
+                        c = 0,
+                        l = 0;
+                    for (let t = 0; t < a; t++) {
+                        let t = e.readInt(!0);
+                        for (; c != t;) s[l++] = c++;
+                        o[c + e.readInt(!0)] = c++
+                    }
+                    for (; c < i;) s[l++] = c++;
+                    for (let e = i - 1; e >= 0; e--) o[e] == -1 && (o[e] = s[--l]);
+                    t.setFrame(n, r, o)
+                }
+                r.push(t)
+            }
+            let o = e.readInt(!0);
+            if (o > 0) {
+                let t = new be(o);
+                for (let r = 0; r < o; r++) {
+                    let i = e.readFloat(),
+                        a = n.events[e.readInt(!0)],
+                        o = new it(i, a);
+                    o.intValue = e.readInt(!1), o.floatValue = e.readFloat(), o.stringValue = e.readString(), o.stringValue ?? (o.stringValue = a.stringValue), o.data.audioPath && (o.volume = e.readFloat(), o.balance = e.readFloat()), t.setFrame(r, o)
+                }
+                r.push(t)
+            }
+            let s = 0;
+            for (let e = 0, t = r.length; e < t; e++) s = Math.max(s, r[e].getDuration());
+            return new P(t, r, s)
+        }
+    },
+    Tt = class {
+        constructor(e, t = [], n = 0, r = new DataView(e instanceof ArrayBuffer ? e : e.buffer)) {
+            s(this, `strings`, void 0), s(this, `index`, void 0), s(this, `buffer`, void 0), this.strings = t, this.index = n, this.buffer = r
+        }
+        readByte() {
+            return this.buffer.getInt8(this.index++)
+        }
+        readUnsignedByte() {
+            return this.buffer.getUint8(this.index++)
+        }
+        readShort() {
+            let e = this.buffer.getInt16(this.index);
+            return this.index += 2, e
+        }
+        readInt32() {
+            let e = this.buffer.getInt32(this.index);
+            return this.index += 4, e
+        }
+        readInt(e) {
+            let t = this.readByte(),
+                n = t & 127;
+            return t & 128 && (t = this.readByte(), n |= (t & 127) << 7, t & 128 && (t = this.readByte(), n |= (t & 127) << 14, t & 128 && (t = this.readByte(), n |= (t & 127) << 21, t & 128 && (t = this.readByte(), n |= (t & 127) << 28)))), e ? n : n >>> 1 ^ -(n & 1)
+        }
+        readStringRef() {
+            let e = this.readInt(!0);
+            return e == 0 ? null : this.strings[e - 1]
+        }
+        readString() {
+            let e = this.readInt(!0);
+            switch (e) {
+                case 0:
+                    return null;
+                case 1:
+                    return ``
+            }
+            e--;
+            let t = ``;
+            for (let n = 0; n < e;) {
+                let e = this.readUnsignedByte();
+                switch (e >> 4) {
+                    case 12:
+                    case 13:
+                        t += String.fromCharCode((e & 31) << 6 | this.readByte() & 63), n += 2;
+                        break;
+                    case 14:
+                        t += String.fromCharCode((e & 15) << 12 | (this.readByte() & 63) << 6 | this.readByte() & 63), n += 3;
+                        break;
+                    default:
+                        t += String.fromCharCode(e), n++
+                }
+            }
+            return t
+        }
+        readFloat() {
+            let e = this.buffer.getFloat32(this.index);
+            return this.index += 4, e
+        }
+        readBoolean() {
+            return this.readByte() != 0
+        }
+    },
+    Et = class {
+        constructor(e, t, n, r, i) {
+            s(this, `parent`, void 0), s(this, `skinIndex`, void 0), s(this, `slotIndex`, void 0), s(this, `mesh`, void 0), s(this, `inheritTimeline`, void 0), this.mesh = e, this.skinIndex = t, this.slotIndex = n, this.parent = r, this.inheritTimeline = i
+        }
+    },
+    Dt = class {
+        constructor(e = null, t = null, n = 0) {
+            s(this, `bones`, void 0), s(this, `vertices`, void 0), s(this, `length`, void 0), this.bones = e, this.vertices = t, this.length = n
+        }
+    },
+    Ot;
+(function(e) {
+    e[e.Region = 0] = `Region`, e[e.BoundingBox = 1] = `BoundingBox`, e[e.Mesh = 2] = `Mesh`, e[e.LinkedMesh = 3] = `LinkedMesh`, e[e.Path = 4] = `Path`, e[e.Point = 5] = `Point`, e[e.Clipping = 6] = `Clipping`
+})(Ot || (Ot = {}));
+
+function G(e, t, n) {
+    let r = e.readFloat(),
+        i = e.readFloat() * n;
+    for (let a = 0, o = 0, s = t.getFrameCount() - 1; t.setFrame(a, r, i), a != s; a++) {
+        let s = e.readFloat(),
+            c = e.readFloat() * n;
+        switch (e.readByte()) {
+            case sn:
+                t.setStepped(a);
+                break;
+            case cn:
+                K(e, t, o++, a, 0, r, s, i, c, n)
+        }
+        r = s, i = c
+    }
+    return t
+}
+
+function kt(e, t, n) {
+    let r = e.readFloat(),
+        i = e.readFloat() * n,
+        a = e.readFloat() * n;
+    for (let o = 0, s = 0, c = t.getFrameCount() - 1; t.setFrame(o, r, i, a), o != c; o++) {
+        let c = e.readFloat(),
+            l = e.readFloat() * n,
+            u = e.readFloat() * n;
+        switch (e.readByte()) {
+            case sn:
+                t.setStepped(o);
+                break;
+            case cn:
+                K(e, t, s++, o, 0, r, c, i, l, n), K(e, t, s++, o, 1, r, c, a, u, n)
+        }
+        r = c, i = l, a = u
+    }
+    return t
+}
+
+function K(e, t, n, r, i, a, o, s, c, l) {
+    t.setBezier(n, r, i, a, s, e.readFloat(), e.readFloat() * l, e.readFloat(), e.readFloat() * l, o, c)
+}
+var At = 0,
+    jt = 1,
+    Mt = 2,
+    Nt = 3,
+    Pt = 4,
+    Ft = 5,
+    It = 6,
+    Lt = 7,
+    Rt = 8,
+    zt = 9,
+    Bt = 10,
+    Vt = 0,
+    Ht = 1,
+    Ut = 2,
+    Wt = 3,
+    Gt = 4,
+    Kt = 5,
+    qt = 0,
+    Jt = 1,
+    Yt = 0,
+    Xt = 1,
+    Zt = 2,
+    Qt = 0,
+    $t = 1,
+    en = 2,
+    tn = 4,
+    nn = 5,
+    rn = 6,
+    an = 7,
+    on = 8,
+    sn = 1,
+    cn = 2,
+    ln = class {
+        constructor() {
+            s(this, `minX`, 0), s(this, `minY`, 0), s(this, `maxX`, 0), s(this, `maxY`, 0), s(this, `boundingBoxes`, []), s(this, `polygons`, []), s(this, `polygonPool`, new O(() => D.newFloatArray(16)))
+        }
+        update(e, t) {
+            if (!e) throw Error(`skeleton cannot be null.`);
+            let n = this.boundingBoxes,
+                r = this.polygons,
+                i = this.polygonPool,
+                a = e.slots,
+                o = a.length;
+            n.length = 0, i.freeAll(r), r.length = 0;
+            for (let e = 0; e < o; e++) {
+                let t = a[e];
+                if (!t.bone.active) continue;
+                let o = t.getAttachment();
+                if (o instanceof He) {
+                    let e = o;
+                    n.push(e);
+                    let a = i.obtain();
+                    a.length != e.worldVerticesLength && (a = D.newFloatArray(e.worldVerticesLength)), r.push(a), e.computeWorldVertices(t, 0, e.worldVerticesLength, a, 0, 2)
+                }
+            }
+            t ? this.aabbCompute() : (this.minX = 1 / 0, this.minY = 1 / 0, this.maxX = -1 / 0, this.maxY = -1 / 0)
+        }
+        aabbCompute() {
+            let e = 1 / 0,
+                t = 1 / 0,
+                n = -1 / 0,
+                r = -1 / 0,
+                i = this.polygons;
+            for (let a = 0, o = i.length; a < o; a++) {
+                let o = i[a],
+                    s = o;
+                for (let i = 0, a = o.length; i < a; i += 2) {
+                    let a = s[i],
+                        o = s[i + 1];
+                    e = Math.min(e, a), t = Math.min(t, o), n = Math.max(n, a), r = Math.max(r, o)
+                }
+            }
+            this.minX = e, this.minY = t, this.maxX = n, this.maxY = r
+        }
+        aabbContainsPoint(e, t) {
+            return e >= this.minX && e <= this.maxX && t >= this.minY && t <= this.maxY
+        }
+        aabbIntersectsSegment(e, t, n, r) {
+            let i = this.minX,
+                a = this.minY,
+                o = this.maxX,
+                s = this.maxY;
+            if (e <= i && n <= i || t <= a && r <= a || e >= o && n >= o || t >= s && r >= s) return !1;
+            let c = (r - t) / (n - e),
+                l = c * (i - e) + t;
+            if (l > a && l < s || (l = c * (o - e) + t, l > a && l < s)) return !0;
+            let u = (a - t) / c + e;
+            return u > i && u < o || (u = (s - t) / c + e, u > i && u < o)
+        }
+        aabbIntersectsSkeleton(e) {
+            return this.minX < e.maxX && this.maxX > e.minX && this.minY < e.maxY && this.maxY > e.minY
+        }
+        containsPoint(e, t) {
+            let n = this.polygons;
+            for (let r = 0, i = n.length; r < i; r++)
+                if (this.containsPointPolygon(n[r], e, t)) return this.boundingBoxes[r];
+            return null
+        }
+        containsPointPolygon(e, t, n) {
+            let r = e,
+                i = e.length,
+                a = i - 2,
+                o = !1;
+            for (let e = 0; e < i; e += 2) {
+                let i = r[e + 1],
+                    s = r[a + 1];
+                if (i < n && s >= n || s < n && i >= n) {
+                    let c = r[e];
+                    c + (n - i) / (s - i) * (r[a] - c) < t && (o = !o)
+                }
+                a = e
+            }
+            return o
+        }
+        intersectsSegment(e, t, n, r) {
+            let i = this.polygons;
+            for (let a = 0, o = i.length; a < o; a++)
+                if (this.intersectsSegmentPolygon(i[a], e, t, n, r)) return this.boundingBoxes[a];
+            return null
+        }
+        intersectsSegmentPolygon(e, t, n, r, i) {
+            let a = e,
+                o = e.length,
+                s = t - r,
+                c = n - i,
+                l = t * i - n * r,
+                u = a[o - 2],
+                d = a[o - 1];
+            for (let e = 0; e < o; e += 2) {
+                let o = a[e],
+                    f = a[e + 1],
+                    p = u * f - d * o,
+                    m = u - o,
+                    h = d - f,
+                    g = s * h - c * m,
+                    _ = (l * m - s * p) / g;
+                if ((_ >= u && _ <= o || _ >= o && _ <= u) && (_ >= t && _ <= r || _ >= r && _ <= t)) {
+                    let e = (l * h - c * p) / g;
+                    if ((e >= d && e <= f || e >= f && e <= d) && (e >= n && e <= i || e >= i && e <= n)) return !0
+                }
+                u = o, d = f
+            }
+            return !1
+        }
+        getPolygon(e) {
+            if (!e) throw Error(`boundingBox cannot be null.`);
+            let t = this.boundingBoxes.indexOf(e);
+            return t == -1 ? null : this.polygons[t]
+        }
+        getWidth() {
+            return this.maxX - this.minX
+        }
+        getHeight() {
+            return this.maxY - this.minY
+        }
+    },
+    un = class e {
+        constructor() {
+            s(this, `convexPolygons`, []), s(this, `convexPolygonsIndices`, []), s(this, `indicesArray`, []), s(this, `isConcaveArray`, []), s(this, `triangles`, []), s(this, `polygonPool`, new O(() => [])), s(this, `polygonIndicesPool`, new O(() => []))
+        }
+        triangulate(t) {
+            let n = t,
+                r = t.length >> 1,
+                i = this.indicesArray;
+            i.length = 0;
+            for (let e = 0; e < r; e++) i[e] = e;
+            let a = this.isConcaveArray;
+            a.length = 0;
+            for (let t = 0, o = r; t < o; ++t) a[t] = e.isConcave(t, r, n, i);
+            let o = this.triangles;
+            for (o.length = 0; r > 3;) {
+                let t = r - 1,
+                    s = 0,
+                    c = 1;
+                for (;;) {
+                    outer: if (!a[s]) {
+                        let o = i[t] << 1,
+                            l = i[s] << 1,
+                            u = i[c] << 1,
+                            d = n[o],
+                            f = n[o + 1],
+                            p = n[l],
+                            m = n[l + 1],
+                            h = n[u],
+                            g = n[u + 1];
+                        for (let o = (c + 1) % r; o != t; o = (o + 1) % r) {
+                            if (!a[o]) continue;
+                            let t = i[o] << 1,
+                                r = n[t],
+                                s = n[t + 1];
+                            if (e.positiveArea(h, g, d, f, r, s) && e.positiveArea(d, f, p, m, r, s) && e.positiveArea(p, m, h, g, r, s)) break outer
+                        }
+                        break
+                    }if (c == 0) {
+                        do {
+                            if (!a[s]) break;
+                            s--
+                        } while (s > 0);
+                        break
+                    }
+                    t = s,
+                    s = c,
+                    c = (c + 1) % r
+                }
+                o.push(i[(r + s - 1) % r]), o.push(i[s]), o.push(i[(s + 1) % r]), i.splice(s, 1), a.splice(s, 1), r--;
+                let l = (r + s - 1) % r,
+                    u = s == r ? 0 : s;
+                a[l] = e.isConcave(l, r, n, i), a[u] = e.isConcave(u, r, n, i)
+            }
+            return r == 3 && (o.push(i[2]), o.push(i[0]), o.push(i[1])), o
+        }
+        decompose(t, n) {
+            let r = t,
+                i = this.convexPolygons;
+            this.polygonPool.freeAll(i), i.length = 0;
+            let a = this.convexPolygonsIndices;
+            this.polygonIndicesPool.freeAll(a), a.length = 0;
+            let o = this.polygonIndicesPool.obtain();
+            o.length = 0;
+            let s = this.polygonPool.obtain();
+            s.length = 0;
+            let c = -1,
+                l = 0;
+            for (let t = 0, u = n.length; t < u; t += 3) {
+                let u = n[t] << 1,
+                    d = n[t + 1] << 1,
+                    f = n[t + 2] << 1,
+                    p = r[u],
+                    m = r[u + 1],
+                    h = r[d],
+                    g = r[d + 1],
+                    _ = r[f],
+                    v = r[f + 1],
+                    y = !1;
+                if (c == u) {
+                    let t = s.length - 4,
+                        n = e.winding(s[t], s[t + 1], s[t + 2], s[t + 3], _, v),
+                        r = e.winding(_, v, s[0], s[1], s[2], s[3]);
+                    n == l && r == l && (s.push(_), s.push(v), o.push(f), y = !0)
+                }
+                y || (s.length > 0 ? (i.push(s), a.push(o)) : (this.polygonPool.free(s), this.polygonIndicesPool.free(o)), s = this.polygonPool.obtain(), s.length = 0, s.push(p), s.push(m), s.push(h), s.push(g), s.push(_), s.push(v), o = this.polygonIndicesPool.obtain(), o.length = 0, o.push(u), o.push(d), o.push(f), l = e.winding(p, m, h, g, _, v), c = u)
+            }
+            s.length > 0 && (i.push(s), a.push(o));
+            for (let t = 0, n = i.length; t < n; t++) {
+                if (o = a[t], o.length == 0) continue;
+                let r = o[0],
+                    c = o[o.length - 1];
+                s = i[t];
+                let l = s.length - 4,
+                    u = s[l],
+                    d = s[l + 1],
+                    f = s[l + 2],
+                    p = s[l + 3],
+                    m = s[0],
+                    h = s[1],
+                    g = s[2],
+                    _ = s[3],
+                    v = e.winding(u, d, f, p, m, h);
+                for (let l = 0; l < n; l++) {
+                    if (l == t) continue;
+                    let n = a[l];
+                    if (n.length != 3) continue;
+                    let y = n[0],
+                        b = n[1],
+                        x = n[2],
+                        S = i[l],
+                        C = S[S.length - 2],
+                        w = S[S.length - 1];
+                    if (y != r || b != c) continue;
+                    let T = e.winding(u, d, f, p, C, w),
+                        E = e.winding(C, w, m, h, g, _);
+                    T == v && E == v && (S.length = 0, n.length = 0, s.push(C), s.push(w), o.push(x), u = f, d = p, f = C, p = w, l = 0)
+                }
+            }
+            for (let e = i.length - 1; e >= 0; e--) s = i[e], s.length == 0 && (i.splice(e, 1), this.polygonPool.free(s), o = a[e], a.splice(e, 1), this.polygonIndicesPool.free(o));
+            return i
+        }
+        static isConcave(e, t, n, r) {
+            let i = r[(t + e - 1) % t] << 1,
+                a = r[e] << 1,
+                o = r[(e + 1) % t] << 1;
+            return !this.positiveArea(n[i], n[i + 1], n[a], n[a + 1], n[o], n[o + 1])
+        }
+        static positiveArea(e, t, n, r, i, a) {
+            return e * (a - r) + n * (t - a) + i * (r - t) >= 0
+        }
+        static winding(e, t, n, r, i, a) {
+            let o = n - e,
+                s = r - t;
+            return i * s - a * o + o * t - e * s >= 0 ? 1 : -1
+        }
+    },
+    dn = class e {
+        constructor() {
+            s(this, `triangulator`, new un), s(this, `clippingPolygon`, []), s(this, `clipOutput`, []), s(this, `clippedVertices`, []), s(this, `clippedUVs`, []), s(this, `clippedTriangles`, []), s(this, `scratch`, []), s(this, `clipAttachment`, null), s(this, `clippingPolygons`, null)
+        }
+        clipStart(t, n) {
+            if (this.clipAttachment) return 0;
+            this.clipAttachment = n;
+            let r = n.worldVerticesLength,
+                i = D.setArraySize(this.clippingPolygon, r);
+            n.computeWorldVertices(t, 0, r, i, 0, 2);
+            let a = this.clippingPolygon;
+            e.makeClockwise(a);
+            let o = this.clippingPolygons = this.triangulator.decompose(a, this.triangulator.triangulate(a));
+            for (let t = 0, n = o.length; t < n; t++) {
+                let n = o[t];
+                e.makeClockwise(n), n.push(n[0]), n.push(n[1])
+            }
+            return o.length
+        }
+        clipEndWithSlot(e) {
+            this.clipAttachment && this.clipAttachment.endSlot == e.data && this.clipEnd()
+        }
+        clipEnd() {
+            this.clipAttachment && (this.clipAttachment = null, this.clippingPolygons = null, this.clippedVertices.length = 0, this.clippedTriangles.length = 0, this.clippingPolygon.length = 0)
+        }
+        isClipping() {
+            return this.clipAttachment != null
+        }
+        clipTriangles(e, t, n, r, i, a, o, s) {
+            let c, l, u, d, f, p;
+            typeof t == `number` ? (c = n, l = r, u = i, d = a, f = o, p = s) : (c = t, l = n, u = r, d = i, f = a, p = o), u && d && f && typeof p == `boolean` ? this.clipTrianglesRender(e, c, l, u, d, f, p) : this.clipTrianglesNoRender(e, c, l)
+        }
+        clipTrianglesNoRender(e, t, n) {
+            let r = this.clipOutput,
+                i = this.clippedVertices,
+                a = this.clippedTriangles,
+                o = this.clippingPolygons,
+                s = o.length,
+                c = 0;
+            i.length = 0, a.length = 0;
+            for (let l = 0; l < n; l += 3) {
+                let n = t[l] << 1,
+                    u = e[n],
+                    d = e[n + 1];
+                n = t[l + 1] << 1;
+                let f = e[n],
+                    p = e[n + 1];
+                n = t[l + 2] << 1;
+                let m = e[n],
+                    h = e[n + 1];
+                for (let e = 0; e < s; e++) {
+                    let t = i.length;
+                    if (this.clip(u, d, f, p, m, h, o[e], r)) {
+                        let e = r.length;
+                        if (e == 0) continue;
+                        let n = e >> 1,
+                            o = this.clipOutput,
+                            s = D.setArraySize(i, t + n * 2);
+                        for (let n = 0; n < e; n += 2, t += 2) {
+                            let e = o[n],
+                                r = o[n + 1];
+                            s[t] = e, s[t + 1] = r
+                        }
+                        t = a.length;
+                        let l = D.setArraySize(a, t + 3 * (n - 2));
+                        n--;
+                        for (let e = 1; e < n; e++, t += 3) l[t] = c, l[t + 1] = c + e, l[t + 2] = c + e + 1;
+                        c += n + 1
+                    } else {
+                        let e = D.setArraySize(i, t + 6);
+                        e[t] = u, e[t + 1] = d, e[t + 2] = f, e[t + 3] = p, e[t + 4] = m, e[t + 5] = h, t = a.length;
+                        let n = D.setArraySize(a, t + 3);
+                        n[t] = c, n[t + 1] = c + 1, n[t + 2] = c + 2, c += 3;
+                        break
+                    }
+                }
+            }
+        }
+        clipTrianglesRender(e, t, n, r, i, a, o) {
+            let s = this.clipOutput,
+                c = this.clippedVertices,
+                l = this.clippedTriangles,
+                u = this.clippingPolygons,
+                d = u.length,
+                f = o ? 12 : 8,
+                p = 0;
+            c.length = 0, l.length = 0;
+            for (let m = 0; m < n; m += 3) {
+                let n = t[m] << 1,
+                    h = e[n],
+                    g = e[n + 1],
+                    _ = r[n],
+                    v = r[n + 1];
+                n = t[m + 1] << 1;
+                let y = e[n],
+                    b = e[n + 1],
+                    x = r[n],
+                    S = r[n + 1];
+                n = t[m + 2] << 1;
+                let C = e[n],
+                    w = e[n + 1],
+                    T = r[n],
+                    E = r[n + 1];
+                for (let e = 0; e < d; e++) {
+                    let t = c.length;
+                    if (this.clip(h, g, y, b, C, w, u[e], s)) {
+                        let e = s.length;
+                        if (e == 0) continue;
+                        let n = b - w,
+                            r = C - y,
+                            u = h - C,
+                            d = w - g,
+                            m = 1 / (n * u + r * (g - w)),
+                            O = e >> 1,
+                            k = this.clipOutput,
+                            A = D.setArraySize(c, t + O * f);
+                        for (let s = 0; s < e; s += 2, t += f) {
+                            let e = k[s],
+                                c = k[s + 1];
+                            A[t] = e, A[t + 1] = c, A[t + 2] = i.r, A[t + 3] = i.g, A[t + 4] = i.b, A[t + 5] = i.a;
+                            let l = e - C,
+                                f = c - w,
+                                p = (n * l + r * f) * m,
+                                h = (d * l + u * f) * m,
+                                g = 1 - p - h;
+                            A[t + 6] = _ * p + x * h + T * g, A[t + 7] = v * p + S * h + E * g, o && (A[t + 8] = a.r, A[t + 9] = a.g, A[t + 10] = a.b, A[t + 11] = a.a)
+                        }
+                        t = l.length;
+                        let j = D.setArraySize(l, t + 3 * (O - 2));
+                        O--;
+                        for (let e = 1; e < O; e++, t += 3) j[t] = p, j[t + 1] = p + e, j[t + 2] = p + e + 1;
+                        p += O + 1
+                    } else {
+                        let e = D.setArraySize(c, t + 3 * f);
+                        e[t] = h, e[t + 1] = g, e[t + 2] = i.r, e[t + 3] = i.g, e[t + 4] = i.b, e[t + 5] = i.a, o ? (e[t + 6] = _, e[t + 7] = v, e[t + 8] = a.r, e[t + 9] = a.g, e[t + 10] = a.b, e[t + 11] = a.a, e[t + 12] = y, e[t + 13] = b, e[t + 14] = i.r, e[t + 15] = i.g, e[t + 16] = i.b, e[t + 17] = i.a, e[t + 18] = x, e[t + 19] = S, e[t + 20] = a.r, e[t + 21] = a.g, e[t + 22] = a.b, e[t + 23] = a.a, e[t + 24] = C, e[t + 25] = w, e[t + 26] = i.r, e[t + 27] = i.g, e[t + 28] = i.b, e[t + 29] = i.a, e[t + 30] = T, e[t + 31] = E, e[t + 32] = a.r, e[t + 33] = a.g, e[t + 34] = a.b, e[t + 35] = a.a) : (e[t + 6] = _, e[t + 7] = v, e[t + 8] = y, e[t + 9] = b, e[t + 10] = i.r, e[t + 11] = i.g, e[t + 12] = i.b, e[t + 13] = i.a, e[t + 14] = x, e[t + 15] = S, e[t + 16] = C, e[t + 17] = w, e[t + 18] = i.r, e[t + 19] = i.g, e[t + 20] = i.b, e[t + 21] = i.a, e[t + 22] = T, e[t + 23] = E), t = l.length;
+                        let n = D.setArraySize(l, t + 3);
+                        n[t] = p, n[t + 1] = p + 1, n[t + 2] = p + 2, p += 3;
+                        break
+                    }
+                }
+            }
+        }
+        clipTrianglesUnpacked(e, t, n, r) {
+            let i = this.clipOutput,
+                a = this.clippedVertices,
+                o = this.clippedUVs,
+                s = this.clippedTriangles,
+                c = this.clippingPolygons,
+                l = c.length,
+                u = 0;
+            a.length = 0, o.length = 0, s.length = 0;
+            for (let d = 0; d < n; d += 3) {
+                let n = t[d] << 1,
+                    f = e[n],
+                    p = e[n + 1],
+                    m = r[n],
+                    h = r[n + 1];
+                n = t[d + 1] << 1;
+                let g = e[n],
+                    _ = e[n + 1],
+                    v = r[n],
+                    y = r[n + 1];
+                n = t[d + 2] << 1;
+                let b = e[n],
+                    x = e[n + 1],
+                    S = r[n],
+                    C = r[n + 1];
+                for (let e = 0; e < l; e++) {
+                    let t = a.length;
+                    if (this.clip(f, p, g, _, b, x, c[e], i)) {
+                        let e = i.length;
+                        if (e == 0) continue;
+                        let n = _ - x,
+                            r = b - g,
+                            c = f - b,
+                            l = x - p,
+                            d = 1 / (n * c + r * (p - x)),
+                            w = e >> 1,
+                            T = this.clipOutput,
+                            E = D.setArraySize(a, t + w * 2),
+                            O = D.setArraySize(o, t + w * 2);
+                        for (let i = 0; i < e; i += 2, t += 2) {
+                            let e = T[i],
+                                a = T[i + 1];
+                            E[t] = e, E[t + 1] = a;
+                            let o = e - b,
+                                s = a - x,
+                                u = (n * o + r * s) * d,
+                                f = (l * o + c * s) * d,
+                                p = 1 - u - f;
+                            O[t] = m * u + v * f + S * p, O[t + 1] = h * u + y * f + C * p
+                        }
+                        t = s.length;
+                        let k = D.setArraySize(s, t + 3 * (w - 2));
+                        w--;
+                        for (let e = 1; e < w; e++, t += 3) k[t] = u, k[t + 1] = u + e, k[t + 2] = u + e + 1;
+                        u += w + 1
+                    } else {
+                        let e = D.setArraySize(a, t + 6);
+                        e[t] = f, e[t + 1] = p, e[t + 2] = g, e[t + 3] = _, e[t + 4] = b, e[t + 5] = x;
+                        let n = D.setArraySize(o, t + 6);
+                        n[t] = m, n[t + 1] = h, n[t + 2] = v, n[t + 3] = y, n[t + 4] = S, n[t + 5] = C, t = s.length;
+                        let r = D.setArraySize(s, t + 3);
+                        r[t] = u, r[t + 1] = u + 1, r[t + 2] = u + 2, u += 3;
+                        break
+                    }
+                }
+            }
+        }
+        clip(e, t, n, r, i, a, o, s) {
+            let c = s,
+                l = !1,
+                u;
+            o.length % 4 >= 2 ? (u = s, s = this.scratch) : u = this.scratch, u.length = 0, u.push(e), u.push(t), u.push(n), u.push(r), u.push(i), u.push(a), u.push(e), u.push(t), s.length = 0;
+            let d = o.length - 4,
+                f = o;
+            for (let e = 0;; e += 2) {
+                let t = f[e],
+                    n = f[e + 1],
+                    r = t - f[e + 2],
+                    i = n - f[e + 3],
+                    a = s.length,
+                    o = u;
+                for (let e = 0, a = u.length - 2; e < a;) {
+                    let a = o[e],
+                        c = o[e + 1];
+                    e += 2;
+                    let u = o[e],
+                        d = o[e + 1],
+                        f = i * (t - u) > r * (n - d),
+                        p = i * (t - a) - r * (n - c);
+                    if (p > 0) {
+                        if (f) {
+                            s.push(u), s.push(d);
+                            continue
+                        }
+                        let e = u - a,
+                            t = d - c,
+                            n = p / (e * i - t * r);
+                        if (n >= 0 && n <= 1) s.push(a + e * n), s.push(c + t * n);
+                        else {
+                            s.push(u), s.push(d);
+                            continue
+                        }
+                    } else if (f) {
+                        let e = u - a,
+                            t = d - c,
+                            n = p / (e * i - t * r);
+                        if (n >= 0 && n <= 1) s.push(a + e * n), s.push(c + t * n), s.push(u), s.push(d);
+                        else {
+                            s.push(u), s.push(d);
+                            continue
+                        }
+                    }
+                    l = !0
+                }
+                if (a == s.length) return c.length = 0, !0;
+                if (s.push(s[0]), s.push(s[1]), e == d) break;
+                let p = s;
+                s = u, s.length = 0, u = p
+            }
+            if (c != s) {
+                c.length = 0;
+                for (let e = 0, t = s.length - 2; e < t; e++) c[e] = s[e]
+            } else c.length -= 2;
+            return l
+        }
+        static makeClockwise(e) {
+            let t = e,
+                n = e.length,
+                r = t[n - 2] * t[1] - t[0] * t[n - 1],
+                i = 0,
+                a = 0,
+                o = 0,
+                s = 0;
+            for (let e = 0, c = n - 3; e < c; e += 2) i = t[e], a = t[e + 1], o = t[e + 2], s = t[e + 3], r += i * s - o * a;
+            if (!(r < 0))
+                for (let e = 0, r = n - 2, i = n >> 1; e < i; e += 2) {
+                    let n = t[e],
+                        i = t[e + 1],
+                        a = r - e;
+                    t[e] = t[a], t[e + 1] = t[a + 1], t[a] = n, t[a + 1] = i
+                }
+        }
+    },
+    fn = class {
+        constructor(e) {
+            s(this, `attachmentLoader`, void 0), s(this, `scale`, 1), s(this, `linkedMeshes`, []), this.attachmentLoader = e
+        }
+        readSkeletonData(e) {
+            let t = this.scale,
+                n = new vt,
+                r = typeof e == `string` ? JSON.parse(e) : e,
+                i = r.skeleton;
+            if (i && (n.hash = i.hash, n.version = i.spine, n.x = i.x, n.y = i.y, n.width = i.width, n.height = i.height, n.referenceScale = J(i, `referenceScale`, 100) * t, n.fps = i.fps, n.imagesPath = i.images ?? null, n.audioPath = i.audio ?? null), r.bones)
+                for (let e = 0; e < r.bones.length; e++) {
+                    let i = r.bones[e],
+                        a = null,
+                        o = J(i, `parent`, null);
+                    o && (a = n.findBone(o));
+                    let s = new tt(n.bones.length, i.name, a);
+                    s.length = J(i, `length`, 0) * t, s.x = J(i, `x`, 0) * t, s.y = J(i, `y`, 0) * t, s.rotation = J(i, `rotation`, 0), s.scaleX = J(i, `scaleX`, 1), s.scaleY = J(i, `scaleY`, 1), s.shearX = J(i, `shearX`, 0), s.shearY = J(i, `shearY`, 0), s.inherit = D.enumValue(U, J(i, `inherit`, `Normal`)), s.skinRequired = J(i, `skin`, !1);
+                    let c = J(i, `color`, null);
+                    c && s.color.setFromString(c), n.bones.push(s)
+                }
+            if (r.slots)
+                for (let e = 0; e < r.slots.length; e++) {
+                    let t = r.slots[e],
+                        i = t.name,
+                        a = n.findBone(t.bone);
+                    if (!a) throw Error(`Couldn't find bone ${t.bone} for slot ${i}`);
+                    let o = new xt(n.slots.length, i, a),
+                        s = J(t, `color`, null);
+                    s && o.color.setFromString(s);
+                    let c = J(t, `dark`, null);
+                    c && (o.darkColor = T.fromString(c)), o.attachmentName = J(t, `attachment`, null), o.blendMode = D.enumValue(St, J(t, `blend`, `normal`)), o.visible = J(t, `visible`, !0), n.slots.push(o)
+                }
+            if (r.ik)
+                for (let e = 0; e < r.ik.length; e++) {
+                    let i = r.ik[e],
+                        a = new st(i.name);
+                    a.order = J(i, `order`, 0), a.skinRequired = J(i, `skin`, !1);
+                    for (let e = 0; e < i.bones.length; e++) {
+                        let t = n.findBone(i.bones[e]);
+                        if (!t) throw Error(`Couldn't find bone ${i.bones[e]} for IK constraint ${i.name}.`);
+                        a.bones.push(t)
+                    }
+                    let o = n.findBone(i.target);
+                    if (!o) throw Error(`Couldn't find target bone ${i.target} for IK constraint ${i.name}.`);
+                    a.target = o, a.mix = J(i, `mix`, 1), a.softness = J(i, `softness`, 0) * t, a.bendDirection = J(i, `bendPositive`, !0) ? 1 : -1, a.compress = J(i, `compress`, !1), a.stretch = J(i, `stretch`, !1), a.uniform = J(i, `uniform`, !1), n.ikConstraints.push(a)
+                }
+            if (r.transform)
+                for (let e = 0; e < r.transform.length; e++) {
+                    let i = r.transform[e],
+                        a = new Ct(i.name);
+                    a.order = J(i, `order`, 0), a.skinRequired = J(i, `skin`, !1);
+                    for (let e = 0; e < i.bones.length; e++) {
+                        let t = i.bones[e],
+                            r = n.findBone(t);
+                        if (!r) throw Error(`Couldn't find bone ${t} for transform constraint ${i.name}.`);
+                        a.bones.push(r)
+                    }
+                    let o = i.target,
+                        s = n.findBone(o);
+                    if (!s) throw Error(`Couldn't find target bone ${o} for transform constraint ${i.name}.`);
+                    a.target = s, a.local = J(i, `local`, !1), a.relative = J(i, `relative`, !1), a.offsetRotation = J(i, `rotation`, 0), a.offsetX = J(i, `x`, 0) * t, a.offsetY = J(i, `y`, 0) * t, a.offsetScaleX = J(i, `scaleX`, 0), a.offsetScaleY = J(i, `scaleY`, 0), a.offsetShearY = J(i, `shearY`, 0), a.mixRotate = J(i, `mixRotate`, 1), a.mixX = J(i, `mixX`, 1), a.mixY = J(i, `mixY`, a.mixX), a.mixScaleX = J(i, `mixScaleX`, 1), a.mixScaleY = J(i, `mixScaleY`, a.mixScaleX), a.mixShearY = J(i, `mixShearY`, 1), n.transformConstraints.push(a)
+                }
+            if (r.path)
+                for (let e = 0; e < r.path.length; e++) {
+                    let i = r.path[e],
+                        a = new ct(i.name);
+                    a.order = J(i, `order`, 0), a.skinRequired = J(i, `skin`, !1);
+                    for (let e = 0; e < i.bones.length; e++) {
+                        let t = i.bones[e],
+                            r = n.findBone(t);
+                        if (!r) throw Error(`Couldn't find bone ${t} for path constraint ${i.name}.`);
+                        a.bones.push(r)
+                    }
+                    let o = i.target,
+                        s = n.findSlot(o);
+                    if (!s) throw Error(`Couldn't find target slot ${o} for path constraint ${i.name}.`);
+                    a.target = s, a.positionMode = D.enumValue(lt, J(i, `positionMode`, `Percent`)), a.spacingMode = D.enumValue(W, J(i, `spacingMode`, `Length`)), a.rotateMode = D.enumValue(ut, J(i, `rotateMode`, `Tangent`)), a.offsetRotation = J(i, `rotation`, 0), a.position = J(i, `position`, 0), a.positionMode == lt.Fixed && (a.position *= t), a.spacing = J(i, `spacing`, 0), (a.spacingMode == W.Length || a.spacingMode == W.Fixed) && (a.spacing *= t), a.mixRotate = J(i, `mixRotate`, 1), a.mixX = J(i, `mixX`, 1), a.mixY = J(i, `mixY`, a.mixX), n.pathConstraints.push(a)
+                }
+            if (r.physics)
+                for (let e = 0; e < r.physics.length; e++) {
+                    let i = r.physics[e],
+                        a = new _t(i.name);
+                    a.order = J(i, `order`, 0), a.skinRequired = J(i, `skin`, !1);
+                    let o = i.bone,
+                        s = n.findBone(o);
+                    if (s == null) throw Error(`Physics bone not found: ` + o);
+                    a.bone = s, a.x = J(i, `x`, 0), a.y = J(i, `y`, 0), a.rotate = J(i, `rotate`, 0), a.scaleX = J(i, `scaleX`, 0), a.shearX = J(i, `shearX`, 0), a.limit = J(i, `limit`, 5e3) * t, a.step = 1 / J(i, `fps`, 60), a.inertia = J(i, `inertia`, 1), a.strength = J(i, `strength`, 100), a.damping = J(i, `damping`, 1), a.massInverse = 1 / J(i, `mass`, 1), a.wind = J(i, `wind`, 0), a.gravity = J(i, `gravity`, 0), a.mix = J(i, `mix`, 1), a.inertiaGlobal = J(i, `inertiaGlobal`, !1), a.strengthGlobal = J(i, `strengthGlobal`, !1), a.dampingGlobal = J(i, `dampingGlobal`, !1), a.massGlobal = J(i, `massGlobal`, !1), a.windGlobal = J(i, `windGlobal`, !1), a.gravityGlobal = J(i, `gravityGlobal`, !1), a.mixGlobal = J(i, `mixGlobal`, !1), n.physicsConstraints.push(a)
+                }
+            if (r.skins)
+                for (let e = 0; e < r.skins.length; e++) {
+                    let t = r.skins[e],
+                        i = new bt(t.name);
+                    if (t.bones)
+                        for (let e = 0; e < t.bones.length; e++) {
+                            let r = t.bones[e],
+                                a = n.findBone(r);
+                            if (!a) throw Error(`Couldn't find bone ${r} for skin ${t.name}.`);
+                            i.bones.push(a)
+                        }
+                    if (t.ik)
+                        for (let e = 0; e < t.ik.length; e++) {
+                            let r = t.ik[e],
+                                a = n.findIkConstraint(r);
+                            if (!a) throw Error(`Couldn't find IK constraint ${r} for skin ${t.name}.`);
+                            i.constraints.push(a)
+                        }
+                    if (t.transform)
+                        for (let e = 0; e < t.transform.length; e++) {
+                            let r = t.transform[e],
+                                a = n.findTransformConstraint(r);
+                            if (!a) throw Error(`Couldn't find transform constraint ${r} for skin ${t.name}.`);
+                            i.constraints.push(a)
+                        }
+                    if (t.path)
+                        for (let e = 0; e < t.path.length; e++) {
+                            let r = t.path[e],
+                                a = n.findPathConstraint(r);
+                            if (!a) throw Error(`Couldn't find path constraint ${r} for skin ${t.name}.`);
+                            i.constraints.push(a)
+                        }
+                    if (t.physics)
+                        for (let e = 0; e < t.physics.length; e++) {
+                            let r = t.physics[e],
+                                a = n.findPhysicsConstraint(r);
+                            if (!a) throw Error(`Couldn't find physics constraint ${r} for skin ${t.name}.`);
+                            i.constraints.push(a)
+                        }
+                    for (let e in t.attachments) {
+                        let r = n.findSlot(e);
+                        if (!r) throw Error(`Couldn't find slot ${e} for skin ${t.name}.`);
+                        let a = t.attachments[e];
+                        for (let e in a) {
+                            let t = this.readAttachment(a[e], i, r.index, e, n);
+                            t && i.setAttachment(r.index, e, t)
+                        }
+                    }
+                    n.skins.push(i), i.name == "default" && (n.defaultSkin = i)
+                }
+            for (let e = 0, t = this.linkedMeshes.length; e < t; e++) {
+                let t = this.linkedMeshes[e],
+                    r = t.skin ? n.findSkin(t.skin) : n.defaultSkin;
+                if (!r) throw Error(`Skin not found: ${t.skin}`);
+                let i = r.getAttachment(t.slotIndex, t.parent);
+                if (!i) throw Error(`Parent mesh not found: ${t.parent}`);
+                t.mesh.timelineAttachment = t.inheritTimeline ? i : t.mesh, t.mesh.setParentMesh(i), t.mesh.region != null && t.mesh.updateRegion()
+            }
+            if (this.linkedMeshes.length = 0, r.events)
+                for (let e in r.events) {
+                    let t = r.events[e],
+                        i = new at(e);
+                    i.intValue = J(t, `int`, 0), i.floatValue = J(t, `float`, 0), i.stringValue = J(t, `string`, ``), i.audioPath = J(t, `audio`, null), i.audioPath && (i.volume = J(t, `volume`, 1), i.balance = J(t, `balance`, 0)), n.events.push(i)
+                }
+            if (r.animations)
+                for (let e in r.animations) {
+                    let t = r.animations[e];
+                    this.readAnimation(t, e, n)
+                }
+            return n
+        }
+        readAttachment(e, t, n, r, i) {
+            let a = this.scale;
+            switch (r = J(e, `name`, r), J(e, `type`, `region`)) {
+                case `region`: {
+                    let n = J(e, `path`, r),
+                        i = this.readSequence(J(e, `sequence`, null)),
+                        o = this.attachmentLoader.newRegionAttachment(t, r, n, i);
+                    if (!o) return null;
+                    o.path = n, o.x = J(e, `x`, 0) * a, o.y = J(e, `y`, 0) * a, o.scaleX = J(e, `scaleX`, 1), o.scaleY = J(e, `scaleY`, 1), o.rotation = J(e, `rotation`, 0), o.width = e.width * a, o.height = e.height * a, o.sequence = i;
+                    let s = J(e, `color`, null);
+                    return s && o.color.setFromString(s), o.region != null && o.updateRegion(), o
+                }
+                case `boundingbox`: {
+                    let n = this.attachmentLoader.newBoundingBoxAttachment(t, r);
+                    if (!n) return null;
+                    this.readVertices(e, n, e.vertexCount << 1);
+                    let i = J(e, `color`, null);
+                    return i && n.color.setFromString(i), n
+                }
+                case `mesh`:
+                case `linkedmesh`: {
+                    let i = J(e, `path`, r),
+                        o = this.readSequence(J(e, `sequence`, null)),
+                        s = this.attachmentLoader.newMeshAttachment(t, r, i, o);
+                    if (!s) return null;
+                    s.path = i;
+                    let c = J(e, `color`, null);
+                    c && s.color.setFromString(c), s.width = J(e, `width`, 0) * a, s.height = J(e, `height`, 0) * a, s.sequence = o;
+                    let l = J(e, `parent`, null);
+                    if (l) return this.linkedMeshes.push(new pn(s, J(e, `skin`, null), n, l, J(e, `timelines`, !0))), s;
+                    let u = e.uvs;
+                    return this.readVertices(e, s, u.length), s.triangles = e.triangles, s.regionUVs = u, s.region != null && s.updateRegion(), s.edges = J(e, `edges`, null), s.hullLength = J(e, `hull`, 0) * 2, s
+                }
+                case `path`: {
+                    let n = this.attachmentLoader.newPathAttachment(t, r);
+                    if (!n) return null;
+                    n.closed = J(e, `closed`, !1), n.constantSpeed = J(e, `constantSpeed`, !0);
+                    let i = e.vertexCount;
+                    this.readVertices(e, n, i << 1);
+                    let o = D.newArray(i / 3, 0);
+                    for (let t = 0; t < e.lengths.length; t++) o[t] = e.lengths[t] * a;
+                    n.lengths = o;
+                    let s = J(e, `color`, null);
+                    return s && n.color.setFromString(s), n
+                }
+                case `point`: {
+                    let n = this.attachmentLoader.newPointAttachment(t, r);
+                    if (!n) return null;
+                    n.x = J(e, `x`, 0) * a, n.y = J(e, `y`, 0) * a, n.rotation = J(e, `rotation`, 0);
+                    let i = J(e, `color`, null);
+                    return i && n.color.setFromString(i), n
+                }
+                case `clipping`: {
+                    let n = this.attachmentLoader.newClippingAttachment(t, r);
+                    if (!n) return null;
+                    let a = J(e, `end`, null);
+                    a && (n.endSlot = i.findSlot(a));
+                    let o = e.vertexCount;
+                    this.readVertices(e, n, o << 1);
+                    let s = J(e, `color`, null);
+                    return s && n.color.setFromString(s), n
+                }
+            }
+            return null
+        }
+        readSequence(e) {
+            if (e == null) return null;
+            let t = new M(J(e, `count`, 0));
+            return t.start = J(e, `start`, 1), t.digits = J(e, `digits`, 0), t.setupIndex = J(e, `setup`, 0), t
+        }
+        readVertices(e, t, n) {
+            let r = this.scale;
+            t.worldVerticesLength = n;
+            let i = e.vertices;
+            if (n == i.length) {
+                let e = D.toFloatArray(i);
+                if (r != 1)
+                    for (let t = 0, n = i.length; t < n; t++) e[t] *= r;
+                t.vertices = e;
+                return
+            }
+            let a = [],
+                o = [];
+            for (let e = 0, t = i.length; e < t;) {
+                let t = i[e++];
+                o.push(t);
+                for (let n = e + t * 4; e < n; e += 4) o.push(i[e]), a.push(i[e + 1] * r), a.push(i[e + 2] * r), a.push(i[e + 3])
+            }
+            t.bones = o, t.vertices = D.toFloatArray(a)
+        }
+        readAnimation(e, t, n) {
+            let r = this.scale,
+                i = [];
+            if (e.slots)
+                for (let t in e.slots) {
+                    let r = e.slots[t],
+                        a = n.findSlot(t);
+                    if (!a) throw Error(`Slot not found: ` + t);
+                    let o = a.index;
+                    for (let e in r) {
+                        let t = r[e];
+                        if (!t) continue;
+                        let n = t.length;
+                        if (e == `attachment`) {
+                            let e = new ve(n, o);
+                            for (let r = 0; r < n; r++) {
+                                let n = t[r];
+                                e.setFrame(r, J(n, `time`, 0), J(n, `name`, null))
+                            }
+                            i.push(e)
+                        } else if (e == `rgba`) {
+                            let e = new pe(n, n << 2, o),
+                                r = t[0],
+                                a = J(r, `time`, 0),
+                                s = T.fromString(r.color);
+                            for (let n = 0, i = 0;; n++) {
+                                e.setFrame(n, a, s.r, s.g, s.b, s.a);
+                                let o = t[n + 1];
+                                if (!o) {
+                                    e.shrink(i);
+                                    break
+                                }
+                                let c = J(o, `time`, 0),
+                                    l = T.fromString(o.color),
+                                    u = r.curve;
+                                u && (i = q(u, e, i, n, 0, a, c, s.r, l.r, 1), i = q(u, e, i, n, 1, a, c, s.g, l.g, 1), i = q(u, e, i, n, 2, a, c, s.b, l.b, 1), i = q(u, e, i, n, 3, a, c, s.a, l.a, 1)), a = c, s = l, r = o
+                            }
+                            i.push(e)
+                        } else if (e == `rgb`) {
+                            let e = new me(n, n * 3, o),
+                                r = t[0],
+                                a = J(r, `time`, 0),
+                                s = T.fromString(r.color);
+                            for (let n = 0, i = 0;; n++) {
+                                e.setFrame(n, a, s.r, s.g, s.b);
+                                let o = t[n + 1];
+                                if (!o) {
+                                    e.shrink(i);
+                                    break
+                                }
+                                let c = J(o, `time`, 0),
+                                    l = T.fromString(o.color),
+                                    u = r.curve;
+                                u && (i = q(u, e, i, n, 0, a, c, s.r, l.r, 1), i = q(u, e, i, n, 1, a, c, s.g, l.g, 1), i = q(u, e, i, n, 2, a, c, s.b, l.b, 1)), a = c, s = l, r = o
+                            }
+                            i.push(e)
+                        } else if (e == `alpha`) i.push(mn(t, new he(n, n, o), 0, 1));
+                        else if (e == `rgba2`) {
+                            let e = new ge(n, n * 7, o),
+                                r = t[0],
+                                a = J(r, `time`, 0),
+                                s = T.fromString(r.light),
+                                c = T.fromString(r.dark);
+                            for (let n = 0, i = 0;; n++) {
+                                e.setFrame(n, a, s.r, s.g, s.b, s.a, c.r, c.g, c.b);
+                                let o = t[n + 1];
+                                if (!o) {
+                                    e.shrink(i);
+                                    break
+                                }
+                                let l = J(o, `time`, 0),
+                                    u = T.fromString(o.light),
+                                    d = T.fromString(o.dark),
+                                    f = r.curve;
+                                f && (i = q(f, e, i, n, 0, a, l, s.r, u.r, 1), i = q(f, e, i, n, 1, a, l, s.g, u.g, 1), i = q(f, e, i, n, 2, a, l, s.b, u.b, 1), i = q(f, e, i, n, 3, a, l, s.a, u.a, 1), i = q(f, e, i, n, 4, a, l, c.r, d.r, 1), i = q(f, e, i, n, 5, a, l, c.g, d.g, 1), i = q(f, e, i, n, 6, a, l, c.b, d.b, 1)), a = l, s = u, c = d, r = o
+                            }
+                            i.push(e)
+                        } else if (e == `rgb2`) {
+                            let e = new _e(n, n * 6, o),
+                                r = t[0],
+                                a = J(r, `time`, 0),
+                                s = T.fromString(r.light),
+                                c = T.fromString(r.dark);
+                            for (let n = 0, i = 0;; n++) {
+                                e.setFrame(n, a, s.r, s.g, s.b, c.r, c.g, c.b);
+                                let o = t[n + 1];
+                                if (!o) {
+                                    e.shrink(i);
+                                    break
+                                }
+                                let l = J(o, `time`, 0),
+                                    u = T.fromString(o.light),
+                                    d = T.fromString(o.dark),
+                                    f = r.curve;
+                                f && (i = q(f, e, i, n, 0, a, l, s.r, u.r, 1), i = q(f, e, i, n, 1, a, l, s.g, u.g, 1), i = q(f, e, i, n, 2, a, l, s.b, u.b, 1), i = q(f, e, i, n, 3, a, l, c.r, d.r, 1), i = q(f, e, i, n, 4, a, l, c.g, d.g, 1), i = q(f, e, i, n, 5, a, l, c.b, d.b, 1)), a = l, s = u, c = d, r = o
+                            }
+                            i.push(e)
+                        }
+                    }
+                }
+            if (e.bones)
+                for (let t in e.bones) {
+                    let a = e.bones[t],
+                        o = n.findBone(t);
+                    if (!o) throw Error(`Bone not found: ` + t);
+                    let s = o.index;
+                    for (let e in a) {
+                        let t = a[e],
+                            n = t.length;
+                        if (n != 0) {
+                            if (e === `rotate`) i.push(mn(t, new ne(n, n, s), 0, 1));
+                            else if (e === `translate`) {
+                                let e = new re(n, n << 1, s);
+                                i.push(hn(t, e, `x`, `y`, 0, r))
+                            } else if (e === `translatex`) {
+                                let e = new ie(n, n, s);
+                                i.push(mn(t, e, 0, r))
+                            } else if (e === `translatey`) {
+                                let e = new ae(n, n, s);
+                                i.push(mn(t, e, 0, r))
+                            } else if (e === `scale`) {
+                                let e = new oe(n, n << 1, s);
+                                i.push(hn(t, e, `x`, `y`, 1, 1))
+                            } else if (e === `scalex`) {
+                                let e = new se(n, n, s);
+                                i.push(mn(t, e, 1, 1))
+                            } else if (e === `scaley`) {
+                                let e = new ce(n, n, s);
+                                i.push(mn(t, e, 1, 1))
+                            } else if (e === `shear`) {
+                                let e = new le(n, n << 1, s);
+                                i.push(hn(t, e, `x`, `y`, 0, 1))
+                            } else if (e === `shearx`) {
+                                let e = new ue(n, n, s);
+                                i.push(mn(t, e, 0, 1))
+                            } else if (e === `sheary`) {
+                                let e = new de(n, n, s);
+                                i.push(mn(t, e, 0, 1))
+                            } else if (e === `inherit`) {
+                                let e = new fe(n, o.index);
+                                for (let n = 0; n < t.length; n++) {
+                                    let r = t[n];
+                                    e.setFrame(n, J(r, `time`, 0), D.enumValue(U, J(r, `inherit`, `Normal`)))
+                                }
+                                i.push(e)
+                            }
+                        }
+                    }
+                }
+            if (e.ik)
+                for (let t in e.ik) {
+                    let a = e.ik[t],
+                        o = a[0];
+                    if (!o) continue;
+                    let s = n.findIkConstraint(t);
+                    if (!s) throw Error(`IK Constraint not found: ` + t);
+                    let c = n.ikConstraints.indexOf(s),
+                        l = new Se(a.length, a.length << 1, c),
+                        u = J(o, `time`, 0),
+                        d = J(o, `mix`, 1),
+                        f = J(o, `softness`, 0) * r;
+                    for (let e = 0, t = 0;; e++) {
+                        l.setFrame(e, u, d, f, J(o, `bendPositive`, !0) ? 1 : -1, J(o, `compress`, !1), J(o, `stretch`, !1));
+                        let n = a[e + 1];
+                        if (!n) {
+                            l.shrink(t);
+                            break
+                        }
+                        let i = J(n, `time`, 0),
+                            s = J(n, `mix`, 1),
+                            c = J(n, `softness`, 0) * r,
+                            p = o.curve;
+                        p && (t = q(p, l, t, e, 0, u, i, d, s, 1), t = q(p, l, t, e, 1, u, i, f, c, r)), u = i, d = s, f = c, o = n
+                    }
+                    i.push(l)
+                }
+            if (e.transform)
+                for (let t in e.transform) {
+                    let r = e.transform[t],
+                        a = r[0];
+                    if (!a) continue;
+                    let o = n.findTransformConstraint(t);
+                    if (!o) throw Error(`Transform constraint not found: ` + t);
+                    let s = n.transformConstraints.indexOf(o),
+                        c = new Ce(r.length, r.length * 6, s),
+                        l = J(a, `time`, 0),
+                        u = J(a, `mixRotate`, 1),
+                        d = J(a, `mixX`, 1),
+                        f = J(a, `mixY`, d),
+                        p = J(a, `mixScaleX`, 1),
+                        m = J(a, `mixScaleY`, p),
+                        h = J(a, `mixShearY`, 1);
+                    for (let e = 0, t = 0;; e++) {
+                        c.setFrame(e, l, u, d, f, p, m, h);
+                        let n = r[e + 1];
+                        if (!n) {
+                            c.shrink(t);
+                            break
+                        }
+                        let i = J(n, `time`, 0),
+                            o = J(n, `mixRotate`, 1),
+                            s = J(n, `mixX`, 1),
+                            g = J(n, `mixY`, s),
+                            _ = J(n, `mixScaleX`, 1),
+                            v = J(n, `mixScaleY`, _),
+                            y = J(n, `mixShearY`, 1),
+                            b = a.curve;
+                        b && (t = q(b, c, t, e, 0, l, i, u, o, 1), t = q(b, c, t, e, 1, l, i, d, s, 1), t = q(b, c, t, e, 2, l, i, f, g, 1), t = q(b, c, t, e, 3, l, i, p, _, 1), t = q(b, c, t, e, 4, l, i, m, v, 1), t = q(b, c, t, e, 5, l, i, h, y, 1)), l = i, u = o, d = s, f = g, p = _, m = v, p = _, a = n
+                    }
+                    i.push(c)
+                }
+            if (e.path)
+                for (let t in e.path) {
+                    let a = e.path[t],
+                        o = n.findPathConstraint(t);
+                    if (!o) throw Error(`Path constraint not found: ` + t);
+                    let s = n.pathConstraints.indexOf(o);
+                    for (let e in a) {
+                        let t = a[e],
+                            n = t[0];
+                        if (!n) continue;
+                        let c = t.length;
+                        if (e === `position`) {
+                            let e = new we(c, c, s);
+                            i.push(mn(t, e, 0, o.positionMode == lt.Fixed ? r : 1))
+                        } else if (e === `spacing`) {
+                            let e = new Te(c, c, s);
+                            i.push(mn(t, e, 0, o.spacingMode == W.Length || o.spacingMode == W.Fixed ? r : 1))
+                        } else if (e === `mix`) {
+                            let e = new Ee(c, c * 3, s),
+                                r = J(n, `time`, 0),
+                                a = J(n, `mixRotate`, 1),
+                                o = J(n, `mixX`, 1),
+                                l = J(n, `mixY`, o);
+                            for (let i = 0, s = 0;; i++) {
+                                e.setFrame(i, r, a, o, l);
+                                let c = t[i + 1];
+                                if (!c) {
+                                    e.shrink(s);
+                                    break
+                                }
+                                let u = J(c, `time`, 0),
+                                    d = J(c, `mixRotate`, 1),
+                                    f = J(c, `mixX`, 1),
+                                    p = J(c, `mixY`, f),
+                                    m = n.curve;
+                                m && (s = q(m, e, s, i, 0, r, u, a, d, 1), s = q(m, e, s, i, 1, r, u, o, f, 1), s = q(m, e, s, i, 2, r, u, l, p, 1)), r = u, a = d, o = f, l = p, n = c
+                            }
+                            i.push(e)
+                        }
+                    }
+                }
+            if (e.physics)
+                for (let t in e.physics) {
+                    let r = e.physics[t],
+                        a = -1;
+                    if (t.length > 0) {
+                        let e = n.findPhysicsConstraint(t);
+                        if (!e) throw Error(`Physics constraint not found: ` + t);
+                        a = n.physicsConstraints.indexOf(e)
+                    }
+                    for (let e in r) {
+                        let t = r[e],
+                            n = t[0];
+                        if (!n) continue;
+                        let o = t.length;
+                        if (e == `reset`) {
+                            let e = new Fe(o, a);
+                            for (let r = 0; n != null; n = t[r + 1], r++) e.setFrame(r, J(n, `time`, 0));
+                            i.push(e);
+                            continue
+                        }
+                        let s;
+                        if (e == `inertia`) s = new Oe(o, o, a);
+                        else if (e == `strength`) s = new ke(o, o, a);
+                        else if (e == `damping`) s = new Ae(o, o, a);
+                        else if (e == `mass`) s = new je(o, o, a);
+                        else if (e == `wind`) s = new Me(o, o, a);
+                        else if (e == `gravity`) s = new Ne(o, o, a);
+                        else if (e == `mix`) s = new Pe(o, o, a);
+                        else continue;
+                        i.push(mn(t, s, 0, 1))
+                    }
+                }
+            if (e.attachments)
+                for (let t in e.attachments) {
+                    let a = e.attachments[t],
+                        o = n.findSkin(t);
+                    if (!o) throw Error(`Skin not found: ` + t);
+                    for (let e in a) {
+                        let t = a[e],
+                            s = n.findSlot(e);
+                        if (!s) throw Error(`Slot not found: ` + e);
+                        let c = s.index;
+                        for (let e in t) {
+                            let n = t[e],
+                                a = o.getAttachment(c, e);
+                            for (let e in n) {
+                                let t = n[e],
+                                    o = t[0];
+                                if (o) {
+                                    if (e == `deform`) {
+                                        let e = a.bones,
+                                            n = a.vertices,
+                                            s = e ? n.length / 3 * 2 : n.length,
+                                            l = new ye(t.length, t.length, c, a),
+                                            u = J(o, `time`, 0);
+                                        for (let i = 0, a = 0;; i++) {
+                                            let c, d = J(o, `vertices`, null);
+                                            if (!d) c = e ? D.newFloatArray(s) : n;
+                                            else {
+                                                c = D.newFloatArray(s);
+                                                let t = J(o, `offset`, 0);
+                                                if (D.arrayCopy(d, 0, c, t, d.length), r != 1)
+                                                    for (let e = t, n = e + d.length; e < n; e++) c[e] *= r;
+                                                if (!e)
+                                                    for (let e = 0; e < s; e++) c[e] += n[e]
+                                            }
+                                            l.setFrame(i, u, c);
+                                            let f = t[i + 1];
+                                            if (!f) {
+                                                l.shrink(a);
+                                                break
+                                            }
+                                            let p = J(f, `time`, 0),
+                                                m = o.curve;
+                                            m && (a = q(m, l, a, i, 0, u, p, 0, 1, 1)), u = p, o = f
+                                        }
+                                        i.push(l)
+                                    } else if (e == `sequence`) {
+                                        let e = new Ie(t.length, c, a),
+                                            n = 0;
+                                        for (let r = 0; r < t.length; r++) {
+                                            let i = J(o, `delay`, n),
+                                                a = J(o, `time`, 0),
+                                                s = N[J(o, `mode`, `hold`)],
+                                                c = J(o, `index`, 0);
+                                            e.setFrame(r, a, s, c, i), n = i, o = t[r + 1]
+                                        }
+                                        i.push(e)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            if (e.drawOrder) {
+                let t = new xe(e.drawOrder.length),
+                    r = n.slots.length,
+                    a = 0;
+                for (let i = 0; i < e.drawOrder.length; i++, a++) {
+                    let o = e.drawOrder[i],
+                        s = null,
+                        c = J(o, `offsets`, null);
+                    if (c) {
+                        s = D.newArray(r, -1);
+                        let e = D.newArray(r - c.length, 0),
+                            t = 0,
+                            i = 0;
+                        for (let r = 0; r < c.length; r++) {
+                            let a = c[r],
+                                o = n.findSlot(a.slot);
+                            if (!o) throw Error(`Slot not found: ` + o);
+                            let l = o.index;
+                            for (; t != l;) e[i++] = t++;
+                            s[t + a.offset] = t++
+                        }
+                        for (; t < r;) e[i++] = t++;
+                        for (let t = r - 1; t >= 0; t--) s[t] == -1 && (s[t] = e[--i])
+                    }
+                    t.setFrame(a, J(o, `time`, 0), s)
+                }
+                i.push(t)
+            }
+            if (e.events) {
+                let t = new be(e.events.length),
+                    r = 0;
+                for (let i = 0; i < e.events.length; i++, r++) {
+                    let a = e.events[i],
+                        o = n.findEvent(a.name);
+                    if (!o) throw Error(`Event not found: ` + a.name);
+                    let s = new it(D.toSinglePrecision(J(a, `time`, 0)), o);
+                    s.intValue = J(a, `int`, o.intValue), s.floatValue = J(a, `float`, o.floatValue), s.stringValue = J(a, `string`, o.stringValue), s.data.audioPath && (s.volume = J(a, `volume`, 1), s.balance = J(a, `balance`, 0)), t.setFrame(r, s)
+                }
+                i.push(t)
+            }
+            let a = 0;
+            for (let e = 0, t = i.length; e < t; e++) a = Math.max(a, i[e].getDuration());
+            n.animations.push(new P(t, i, a))
+        }
+    },
+    pn = class {
+        constructor(e, t, n, r, i) {
+            s(this, `parent`, void 0), s(this, `skin`, void 0), s(this, `slotIndex`, void 0), s(this, `mesh`, void 0), s(this, `inheritTimeline`, void 0), this.mesh = e, this.skin = t, this.slotIndex = n, this.parent = r, this.inheritTimeline = i
+        }
+    };
+
+function mn(e, t, n, r) {
+    let i = e[0],
+        a = J(i, `time`, 0),
+        o = J(i, `value`, n) * r,
+        s = 0;
+    for (let c = 0;; c++) {
+        t.setFrame(c, a, o);
+        let l = e[c + 1];
+        if (!l) return t.shrink(s), t;
+        let u = J(l, `time`, 0),
+            d = J(l, `value`, n) * r;
+        i.curve && (s = q(i.curve, t, s, c, 0, a, u, o, d, r)), a = u, o = d, i = l
+    }
+}
+
+function hn(e, t, n, r, i, a) {
+    let o = e[0],
+        s = J(o, `time`, 0),
+        c = J(o, n, i) * a,
+        l = J(o, r, i) * a,
+        u = 0;
+    for (let d = 0;; d++) {
+        t.setFrame(d, s, c, l);
+        let f = e[d + 1];
+        if (!f) return t.shrink(u), t;
+        let p = J(f, `time`, 0),
+            m = J(f, n, i) * a,
+            h = J(f, r, i) * a,
+            g = o.curve;
+        g && (u = q(g, t, u, d, 0, s, p, c, m, a), u = q(g, t, u, d, 1, s, p, l, h, a)), s = p, c = m, l = h, o = f
+    }
+}
+
+function q(e, t, n, r, i, a, o, s, c, l) {
+    if (e == `stepped`) return t.setStepped(r), n;
+    let u = i << 2,
+        d = e[u],
+        f = e[u + 1] * l,
+        p = e[u + 2],
+        m = e[u + 3] * l;
+    return t.setBezier(n, r, i, a, s, d, f, p, m, o, c), n + 1
+}
+
+function J(e, t, n) {
+    return e[t] === void 0 ? n : e[t]
+}
+Math.fround === void 0 && (Math.fround = (function(e) {
+    return function(t) {
+        return e[0] = t, e[0]
+    }
+})(new Float32Array(1)));
+var gn = class {
+        constructor(e, t = {
+            alpha: `true`
+        }) {
+            if (s(this, `canvas`, void 0), s(this, `gl`, void 0), s(this, `restorables`, []), e instanceof WebGLRenderingContext || typeof WebGL2RenderingContext < `u` && e instanceof WebGL2RenderingContext) this.gl = e, this.canvas = this.gl.canvas;
+            else {
+                let n = e;
+                this.gl = n.getContext(`webgl2`, t) || n.getContext(`webgl`, t), this.canvas = n, n.addEventListener(`webglcontextlost`, e => {
+                    e && e.preventDefault()
+                }), n.addEventListener(`webglcontextrestored`, e => {
+                    for (let e = 0, t = this.restorables.length; e < t; e++) this.restorables[e].restore()
+                })
+            }
+        }
+        addRestorable(e) {
+            this.restorables.push(e)
+        }
+        removeRestorable(e) {
+            let t = this.restorables.indexOf(e);
+            t > -1 && this.restorables.splice(t, 1)
+        }
+    },
+    _n = class e extends We {
+        constructor(e, t, n = !1) {
+            super(t), s(this, `context`, void 0), s(this, `texture`, null), s(this, `boundUnit`, 0), s(this, `useMipMaps`, !1), this.context = e instanceof gn ? e : new gn(e), this.useMipMaps = n, this.restore(), this.context.addRestorable(this)
+        }
+        setFilters(t, n) {
+            let r = this.context.gl;
+            this.bind(), r.texParameteri(r.TEXTURE_2D, r.TEXTURE_MIN_FILTER, t), r.texParameteri(r.TEXTURE_2D, r.TEXTURE_MAG_FILTER, e.validateMagFilter(n)), this.useMipMaps = e.usesMipMaps(t), this.useMipMaps && r.generateMipmap(r.TEXTURE_2D)
+        }
+        static validateMagFilter(e) {
+            switch (e) {
+                case V.MipMapLinearLinear:
+                case V.MipMapLinearNearest:
+                case V.MipMapNearestLinear:
+                case V.MipMapNearestNearest:
+                    return V.Linear;
+                default:
+                    return e
+            }
+        }
+        static usesMipMaps(e) {
+            switch (e) {
+                case V.MipMapLinearLinear:
+                case V.MipMapLinearNearest:
+                case V.MipMapNearestLinear:
+                case V.MipMapNearestNearest:
+                    return !0;
+                default:
+                    return !1
+            }
+        }
+        setWraps(e, t) {
+            let n = this.context.gl;
+            this.bind(), n.texParameteri(n.TEXTURE_2D, n.TEXTURE_WRAP_S, e), n.texParameteri(n.TEXTURE_2D, n.TEXTURE_WRAP_T, t)
+        }
+        update(t) {
+            let n = this.context.gl;
+            this.texture || (this.texture = this.context.gl.createTexture()), this.bind(), e.DISABLE_UNPACK_PREMULTIPLIED_ALPHA_WEBGL && n.pixelStorei(n.UNPACK_PREMULTIPLY_ALPHA_WEBGL, !1), n.texImage2D(n.TEXTURE_2D, 0, n.RGBA, n.RGBA, n.UNSIGNED_BYTE, this._image), n.texParameteri(n.TEXTURE_2D, n.TEXTURE_MAG_FILTER, n.LINEAR), n.texParameteri(n.TEXTURE_2D, n.TEXTURE_MIN_FILTER, t ? n.LINEAR_MIPMAP_LINEAR : n.LINEAR), n.texParameteri(n.TEXTURE_2D, n.TEXTURE_WRAP_S, n.CLAMP_TO_EDGE), n.texParameteri(n.TEXTURE_2D, n.TEXTURE_WRAP_T, n.CLAMP_TO_EDGE), t && n.generateMipmap(n.TEXTURE_2D)
+        }
+        restore() {
+            this.texture = null, this.update(this.useMipMaps)
+        }
+        bind(e = 0) {
+            let t = this.context.gl;
+            this.boundUnit = e, t.activeTexture(t.TEXTURE0 + e), t.bindTexture(t.TEXTURE_2D, this.texture)
+        }
+        unbind() {
+            let e = this.context.gl;
+            e.activeTexture(e.TEXTURE0 + this.boundUnit), e.bindTexture(e.TEXTURE_2D, null)
+        }
+        dispose() {
+            this.context.removeRestorable(this), this.context.gl.deleteTexture(this.texture)
+        }
+    };
+s(_n, `DISABLE_UNPACK_PREMULTIPLIED_ALPHA_WEBGL`, !1);
+var vn = class {
+        constructor(e = 0, t = 0, n = 0) {
+            s(this, `x`, 0), s(this, `y`, 0), s(this, `z`, 0), this.x = e, this.y = t, this.z = n
+        }
+        setFrom(e) {
+            return this.x = e.x, this.y = e.y, this.z = e.z, this
+        }
+        set(e, t, n) {
+            return this.x = e, this.y = t, this.z = n, this
+        }
+        add(e) {
+            return this.x += e.x, this.y += e.y, this.z += e.z, this
+        }
+        sub(e) {
+            return this.x -= e.x, this.y -= e.y, this.z -= e.z, this
+        }
+        scale(e) {
+            return this.x *= e, this.y *= e, this.z *= e, this
+        }
+        normalize() {
+            let e = this.length();
+            return e == 0 || (e = 1 / e, this.x *= e, this.y *= e, this.z *= e), this
+        }
+        cross(e) {
+            return this.set(this.y * e.z - this.z * e.y, this.z * e.x - this.x * e.z, this.x * e.y - this.y * e.x)
+        }
+        multiply(e) {
+            let t = e.values;
+            return this.set(this.x * t[0] + this.y * t[4] + this.z * t[8] + t[12], this.x * t[1] + this.y * t[5] + this.z * t[9] + t[13], this.x * t[2] + this.y * t[6] + this.z * t[10] + t[14])
+        }
+        project(e) {
+            let t = e.values,
+                n = 1 / (this.x * t[3] + this.y * t[7] + this.z * t[11] + t[15]);
+            return this.set((this.x * t[0] + this.y * t[4] + this.z * t[8] + t[12]) * n, (this.x * t[1] + this.y * t[5] + this.z * t[9] + t[13]) * n, (this.x * t[2] + this.y * t[6] + this.z * t[10] + t[14]) * n)
+        }
+        dot(e) {
+            return this.x * e.x + this.y * e.y + this.z * e.z
+        }
+        length() {
+            return Math.sqrt(this.x * this.x + this.y * this.y + this.z * this.z)
+        }
+        distance(e) {
+            let t = e.x - this.x,
+                n = e.y - this.y,
+                r = e.z - this.z;
+            return Math.sqrt(t * t + n * n + r * r)
+        }
+    },
+    yn, bn = class e {
+        constructor() {
+            s(this, `temp`, new Float32Array(16)), s(this, `values`, new Float32Array(16));
+            let e = this.values;
+            e[0] = 1, e[5] = 1, e[10] = 1, e[15] = 1
+        }
+        set(e) {
+            return this.values.set(e), this
+        }
+        transpose() {
+            let e = this.temp,
+                t = this.values;
+            return e[0] = t[0], e[4] = t[1], e[8] = t[2], e[12] = t[3], e[1] = t[4], e[5] = t[5], e[9] = t[6], e[13] = t[7], e[2] = t[8], e[6] = t[9], e[10] = t[10], e[14] = t[11], e[3] = t[12], e[7] = t[13], e[11] = t[14], e[15] = t[15], this.set(e)
+        }
+        identity() {
+            let e = this.values;
+            return e[0] = 1, e[4] = 0, e[8] = 0, e[12] = 0, e[1] = 0, e[5] = 1, e[9] = 0, e[13] = 0, e[2] = 0, e[6] = 0, e[10] = 1, e[14] = 0, e[3] = 0, e[7] = 0, e[11] = 0, e[15] = 1, this
+        }
+        invert() {
+            let e = this.values,
+                t = this.temp,
+                n = e[3] * e[6] * e[9] * e[12] - e[2] * e[7] * e[9] * e[12] - e[3] * e[5] * e[10] * e[12] + e[1] * e[7] * e[10] * e[12] + e[2] * e[5] * e[11] * e[12] - e[1] * e[6] * e[11] * e[12] - e[3] * e[6] * e[8] * e[13] + e[2] * e[7] * e[8] * e[13] + e[3] * e[4] * e[10] * e[13] - e[0] * e[7] * e[10] * e[13] - e[2] * e[4] * e[11] * e[13] + e[0] * e[6] * e[11] * e[13] + e[3] * e[5] * e[8] * e[14] - e[1] * e[7] * e[8] * e[14] - e[3] * e[4] * e[9] * e[14] + e[0] * e[7] * e[9] * e[14] + e[1] * e[4] * e[11] * e[14] - e[0] * e[5] * e[11] * e[14] - e[2] * e[5] * e[8] * e[15] + e[1] * e[6] * e[8] * e[15] + e[2] * e[4] * e[9] * e[15] - e[0] * e[6] * e[9] * e[15] - e[1] * e[4] * e[10] * e[15] + e[0] * e[5] * e[10] * e[15];
+            if (n == 0) throw Error(`non-invertible matrix`);
+            let r = 1 / n;
+            return t[0] = e[9] * e[14] * e[7] - e[13] * e[10] * e[7] + e[13] * e[6] * e[11] - e[5] * e[14] * e[11] - e[9] * e[6] * e[15] + e[5] * e[10] * e[15], t[4] = e[12] * e[10] * e[7] - e[8] * e[14] * e[7] - e[12] * e[6] * e[11] + e[4] * e[14] * e[11] + e[8] * e[6] * e[15] - e[4] * e[10] * e[15], t[8] = e[8] * e[13] * e[7] - e[12] * e[9] * e[7] + e[12] * e[5] * e[11] - e[4] * e[13] * e[11] - e[8] * e[5] * e[15] + e[4] * e[9] * e[15], t[12] = e[12] * e[9] * e[6] - e[8] * e[13] * e[6] - e[12] * e[5] * e[10] + e[4] * e[13] * e[10] + e[8] * e[5] * e[14] - e[4] * e[9] * e[14], t[1] = e[13] * e[10] * e[3] - e[9] * e[14] * e[3] - e[13] * e[2] * e[11] + e[1] * e[14] * e[11] + e[9] * e[2] * e[15] - e[1] * e[10] * e[15], t[5] = e[8] * e[14] * e[3] - e[12] * e[10] * e[3] + e[12] * e[2] * e[11] - e[0] * e[14] * e[11] - e[8] * e[2] * e[15] + e[0] * e[10] * e[15], t[9] = e[12] * e[9] * e[3] - e[8] * e[13] * e[3] - e[12] * e[1] * e[11] + e[0] * e[13] * e[11] + e[8] * e[1] * e[15] - e[0] * e[9] * e[15], t[13] = e[8] * e[13] * e[2] - e[12] * e[9] * e[2] + e[12] * e[1] * e[10] - e[0] * e[13] * e[10] - e[8] * e[1] * e[14] + e[0] * e[9] * e[14], t[2] = e[5] * e[14] * e[3] - e[13] * e[6] * e[3] + e[13] * e[2] * e[7] - e[1] * e[14] * e[7] - e[5] * e[2] * e[15] + e[1] * e[6] * e[15], t[6] = e[12] * e[6] * e[3] - e[4] * e[14] * e[3] - e[12] * e[2] * e[7] + e[0] * e[14] * e[7] + e[4] * e[2] * e[15] - e[0] * e[6] * e[15], t[10] = e[4] * e[13] * e[3] - e[12] * e[5] * e[3] + e[12] * e[1] * e[7] - e[0] * e[13] * e[7] - e[4] * e[1] * e[15] + e[0] * e[5] * e[15], t[14] = e[12] * e[5] * e[2] - e[4] * e[13] * e[2] - e[12] * e[1] * e[6] + e[0] * e[13] * e[6] + e[4] * e[1] * e[14] - e[0] * e[5] * e[14], t[3] = e[9] * e[6] * e[3] - e[5] * e[10] * e[3] - e[9] * e[2] * e[7] + e[1] * e[10] * e[7] + e[5] * e[2] * e[11] - e[1] * e[6] * e[11], t[7] = e[4] * e[10] * e[3] - e[8] * e[6] * e[3] + e[8] * e[2] * e[7] - e[0] * e[10] * e[7] - e[4] * e[2] * e[11] + e[0] * e[6] * e[11], t[11] = e[8] * e[5] * e[3] - e[4] * e[9] * e[3] - e[8] * e[1] * e[7] + e[0] * e[9] * e[7] + e[4] * e[1] * e[11] - e[0] * e[5] * e[11], t[15] = e[4] * e[9] * e[2] - e[8] * e[5] * e[2] + e[8] * e[1] * e[6] - e[0] * e[9] * e[6] - e[4] * e[1] * e[10] + e[0] * e[5] * e[10], e[0] = t[0] * r, e[4] = t[4] * r, e[8] = t[8] * r, e[12] = t[12] * r, e[1] = t[1] * r, e[5] = t[5] * r, e[9] = t[9] * r, e[13] = t[13] * r, e[2] = t[2] * r, e[6] = t[6] * r, e[10] = t[10] * r, e[14] = t[14] * r, e[3] = t[3] * r, e[7] = t[7] * r, e[11] = t[11] * r, e[15] = t[15] * r, this
+        }
+        determinant() {
+            let e = this.values;
+            return e[3] * e[6] * e[9] * e[12] - e[2] * e[7] * e[9] * e[12] - e[3] * e[5] * e[10] * e[12] + e[1] * e[7] * e[10] * e[12] + e[2] * e[5] * e[11] * e[12] - e[1] * e[6] * e[11] * e[12] - e[3] * e[6] * e[8] * e[13] + e[2] * e[7] * e[8] * e[13] + e[3] * e[4] * e[10] * e[13] - e[0] * e[7] * e[10] * e[13] - e[2] * e[4] * e[11] * e[13] + e[0] * e[6] * e[11] * e[13] + e[3] * e[5] * e[8] * e[14] - e[1] * e[7] * e[8] * e[14] - e[3] * e[4] * e[9] * e[14] + e[0] * e[7] * e[9] * e[14] + e[1] * e[4] * e[11] * e[14] - e[0] * e[5] * e[11] * e[14] - e[2] * e[5] * e[8] * e[15] + e[1] * e[6] * e[8] * e[15] + e[2] * e[4] * e[9] * e[15] - e[0] * e[6] * e[9] * e[15] - e[1] * e[4] * e[10] * e[15] + e[0] * e[5] * e[10] * e[15]
+        }
+        translate(e, t, n) {
+            let r = this.values;
+            return r[12] += e, r[13] += t, r[14] += n, this
+        }
+        copy() {
+            return new e().set(this.values)
+        }
+        projection(e, t, n, r) {
+            this.identity();
+            let i = 1 / Math.tan(Math.PI / 180 * n / 2),
+                a = (t + e) / (e - t),
+                o = 2 * t * e / (e - t),
+                s = this.values;
+            return s[0] = i / r, s[1] = 0, s[2] = 0, s[3] = 0, s[4] = 0, s[5] = i, s[6] = 0, s[7] = 0, s[8] = 0, s[9] = 0, s[10] = a, s[11] = -1, s[12] = 0, s[13] = 0, s[14] = o, s[15] = 0, this
+        }
+        ortho2d(e, t, n, r) {
+            return this.ortho(e, e + n, t, t + r, 0, 1)
+        }
+        ortho(e, t, n, r, i, a) {
+            this.identity();
+            let o = 2 / (t - e),
+                s = 2 / (r - n),
+                c = -2 / (a - i),
+                l = -(t + e) / (t - e),
+                u = -(r + n) / (r - n),
+                d = -(a + i) / (a - i),
+                f = this.values;
+            return f[0] = o, f[1] = 0, f[2] = 0, f[3] = 0, f[4] = 0, f[5] = s, f[6] = 0, f[7] = 0, f[8] = 0, f[9] = 0, f[10] = c, f[11] = 0, f[12] = l, f[13] = u, f[14] = d, f[15] = 1, this
+        }
+        multiply(e) {
+            let t = this.temp,
+                n = this.values,
+                r = e.values;
+            return t[0] = n[0] * r[0] + n[4] * r[1] + n[8] * r[2] + n[12] * r[3], t[4] = n[0] * r[4] + n[4] * r[5] + n[8] * r[6] + n[12] * r[7], t[8] = n[0] * r[8] + n[4] * r[9] + n[8] * r[10] + n[12] * r[11], t[12] = n[0] * r[12] + n[4] * r[13] + n[8] * r[14] + n[12] * r[15], t[1] = n[1] * r[0] + n[5] * r[1] + n[9] * r[2] + n[13] * r[3], t[5] = n[1] * r[4] + n[5] * r[5] + n[9] * r[6] + n[13] * r[7], t[9] = n[1] * r[8] + n[5] * r[9] + n[9] * r[10] + n[13] * r[11], t[13] = n[1] * r[12] + n[5] * r[13] + n[9] * r[14] + n[13] * r[15], t[2] = n[2] * r[0] + n[6] * r[1] + n[10] * r[2] + n[14] * r[3], t[6] = n[2] * r[4] + n[6] * r[5] + n[10] * r[6] + n[14] * r[7], t[10] = n[2] * r[8] + n[6] * r[9] + n[10] * r[10] + n[14] * r[11], t[14] = n[2] * r[12] + n[6] * r[13] + n[10] * r[14] + n[14] * r[15], t[3] = n[3] * r[0] + n[7] * r[1] + n[11] * r[2] + n[15] * r[3], t[7] = n[3] * r[4] + n[7] * r[5] + n[11] * r[6] + n[15] * r[7], t[11] = n[3] * r[8] + n[7] * r[9] + n[11] * r[10] + n[15] * r[11], t[15] = n[3] * r[12] + n[7] * r[13] + n[11] * r[14] + n[15] * r[15], this.set(this.temp)
+        }
+        multiplyLeft(e) {
+            let t = this.temp,
+                n = this.values,
+                r = e.values;
+            return t[0] = r[0] * n[0] + r[4] * n[1] + r[8] * n[2] + r[12] * n[3], t[4] = r[0] * n[4] + r[4] * n[5] + r[8] * n[6] + r[12] * n[7], t[8] = r[0] * n[8] + r[4] * n[9] + r[8] * n[10] + r[12] * n[11], t[12] = r[0] * n[12] + r[4] * n[13] + r[8] * n[14] + r[12] * n[15], t[1] = r[1] * n[0] + r[5] * n[1] + r[9] * n[2] + r[13] * n[3], t[5] = r[1] * n[4] + r[5] * n[5] + r[9] * n[6] + r[13] * n[7], t[9] = r[1] * n[8] + r[5] * n[9] + r[9] * n[10] + r[13] * n[11], t[13] = r[1] * n[12] + r[5] * n[13] + r[9] * n[14] + r[13] * n[15], t[2] = r[2] * n[0] + r[6] * n[1] + r[10] * n[2] + r[14] * n[3], t[6] = r[2] * n[4] + r[6] * n[5] + r[10] * n[6] + r[14] * n[7], t[10] = r[2] * n[8] + r[6] * n[9] + r[10] * n[10] + r[14] * n[11], t[14] = r[2] * n[12] + r[6] * n[13] + r[10] * n[14] + r[14] * n[15], t[3] = r[3] * n[0] + r[7] * n[1] + r[11] * n[2] + r[15] * n[3], t[7] = r[3] * n[4] + r[7] * n[5] + r[11] * n[6] + r[15] * n[7], t[11] = r[3] * n[8] + r[7] * n[9] + r[11] * n[10] + r[15] * n[11], t[15] = r[3] * n[12] + r[7] * n[13] + r[11] * n[14] + r[15] * n[15], this.set(this.temp)
+        }
+        lookAt(t, n, r) {
+            let i = e.xAxis,
+                a = e.yAxis,
+                o = e.zAxis;
+            o.setFrom(n).normalize(), i.setFrom(n).normalize(), i.cross(r).normalize(), a.setFrom(i).cross(o).normalize(), this.identity();
+            let s = this.values;
+            return s[0] = i.x, s[4] = i.y, s[8] = i.z, s[1] = a.x, s[5] = a.y, s[9] = a.z, s[2] = -o.x, s[6] = -o.y, s[10] = -o.z, e.tmpMatrix.identity(), e.tmpMatrix.values[12] = -t.x, e.tmpMatrix.values[13] = -t.y, e.tmpMatrix.values[14] = -t.z, this.multiply(e.tmpMatrix), this
+        }
+    };
+yn = bn, s(bn, `xAxis`, new vn), s(bn, `yAxis`, new vn), s(bn, `zAxis`, new vn), s(bn, `tmpMatrix`, new yn);
+var xn = class {
+        constructor(e, t) {
+            s(this, `position`, new vn(0, 0, 0)), s(this, `direction`, new vn(0, 0, -1)), s(this, `up`, new vn(0, 1, 0)), s(this, `near`, 0), s(this, `far`, 100), s(this, `zoom`, 1), s(this, `viewportWidth`, 0), s(this, `viewportHeight`, 0), s(this, `projectionView`, new bn), s(this, `inverseProjectionView`, new bn), s(this, `projection`, new bn), s(this, `view`, new bn), this.viewportWidth = e, this.viewportHeight = t, this.update()
+        }
+        update() {
+            let e = this.projection,
+                t = this.view,
+                n = this.projectionView,
+                r = this.inverseProjectionView,
+                i = this.zoom,
+                a = this.viewportWidth,
+                o = this.viewportHeight;
+            e.ortho(i * (-a / 2), a / 2 * i, i * (-o / 2), o / 2 * i, this.near, this.far), t.lookAt(this.position, this.direction, this.up), n.set(e.values), n.multiply(t), r.set(n.values).invert()
+        }
+        screenToWorld(e, t, n) {
+            let r = e.x,
+                i = n - e.y - 1;
+            return e.x = 2 * r / t - 1, e.y = 2 * i / n - 1, e.z = 2 * e.z - 1, e.project(this.inverseProjectionView), e
+        }
+        worldToScreen(e, t, n) {
+            return e.project(this.projectionView), e.x = t * (e.x + 1) / 2, e.y = n * (e.y + 1) / 2, e.z = (e.z + 1) / 2, e
+        }
+        setViewport(e, t) {
+            this.viewportWidth = e, this.viewportHeight = t
+        }
+    },
+    Y = class e {
+        getProgram() {
+            return this.program
+        }
+        getVertexShader() {
+            return this.vertexShader
+        }
+        getFragmentShader() {
+            return this.fragmentShader
+        }
+        getVertexShaderSource() {
+            return this.vsSource
+        }
+        getFragmentSource() {
+            return this.fsSource
+        }
+        constructor(e, t, n) {
+            s(this, `vertexShader`, void 0), s(this, `fragmentShader`, void 0), s(this, `context`, void 0), s(this, `vs`, null), s(this, `vsSource`, void 0), s(this, `fs`, null), s(this, `fsSource`, void 0), s(this, `program`, null), s(this, `tmp2x2`, new Float32Array(4)), s(this, `tmp3x3`, new Float32Array(9)), s(this, `tmp4x4`, new Float32Array(16)), this.vertexShader = t, this.fragmentShader = n, this.vsSource = t, this.fsSource = n, this.context = e instanceof gn ? e : new gn(e), this.context.addRestorable(this), this.compile()
+        }
+        compile() {
+            let e = this.context.gl;
+            try {
+                if (this.vs = this.compileShader(e.VERTEX_SHADER, this.vertexShader), !this.vs) throw Error(`Couldn't compile vertex shader.`);
+                if (this.fs = this.compileShader(e.FRAGMENT_SHADER, this.fragmentShader), !this.fs) throw Error(`Couldn#t compile fragment shader.`);
+                this.program = this.compileProgram(this.vs, this.fs)
+            } catch (e) {
+                throw this.dispose(), e
+            }
+        }
+        compileShader(e, t) {
+            let n = this.context.gl,
+                r = n.createShader(e);
+            if (!r) throw Error(`Couldn't create shader.`);
+            if (n.shaderSource(r, t), n.compileShader(r), !n.getShaderParameter(r, n.COMPILE_STATUS)) {
+                let e = `Couldn't compile shader: ` + n.getShaderInfoLog(r);
+                if (n.deleteShader(r), !n.isContextLost()) throw Error(e)
+            }
+            return r
+        }
+        compileProgram(e, t) {
+            let n = this.context.gl,
+                r = n.createProgram();
+            if (!r) throw Error(`Couldn't compile program.`);
+            if (n.attachShader(r, e), n.attachShader(r, t), n.linkProgram(r), !n.getProgramParameter(r, n.LINK_STATUS)) {
+                let e = `Couldn't compile shader program: ` + n.getProgramInfoLog(r);
+                if (n.deleteProgram(r), !n.isContextLost()) throw Error(e)
+            }
+            return r
+        }
+        restore() {
+            this.compile()
+        }
+        bind() {
+            this.context.gl.useProgram(this.program)
+        }
+        unbind() {
+            this.context.gl.useProgram(null)
+        }
+        setUniformi(e, t) {
+            this.context.gl.uniform1i(this.getUniformLocation(e), t)
+        }
+        setUniformf(e, t) {
+            this.context.gl.uniform1f(this.getUniformLocation(e), t)
+        }
+        setUniform2f(e, t, n) {
+            this.context.gl.uniform2f(this.getUniformLocation(e), t, n)
+        }
+        setUniform3f(e, t, n, r) {
+            this.context.gl.uniform3f(this.getUniformLocation(e), t, n, r)
+        }
+        setUniform4f(e, t, n, r, i) {
+            this.context.gl.uniform4f(this.getUniformLocation(e), t, n, r, i)
+        }
+        setUniform2x2f(e, t) {
+            let n = this.context.gl;
+            this.tmp2x2.set(t), n.uniformMatrix2fv(this.getUniformLocation(e), !1, this.tmp2x2)
+        }
+        setUniform3x3f(e, t) {
+            let n = this.context.gl;
+            this.tmp3x3.set(t), n.uniformMatrix3fv(this.getUniformLocation(e), !1, this.tmp3x3)
+        }
+        setUniform4x4f(e, t) {
+            let n = this.context.gl;
+            this.tmp4x4.set(t), n.uniformMatrix4fv(this.getUniformLocation(e), !1, this.tmp4x4)
+        }
+        getUniformLocation(e) {
+            let t = this.context.gl;
+            if (!this.program) throw Error(`Shader not compiled.`);
+            let n = t.getUniformLocation(this.program, e);
+            if (!n && !t.isContextLost()) throw Error(`Couldn't find location for uniform ${e}`);
+            return n
+        }
+        getAttributeLocation(e) {
+            let t = this.context.gl;
+            if (!this.program) throw Error(`Shader not compiled.`);
+            let n = t.getAttribLocation(this.program, e);
+            if (n == -1 && !t.isContextLost()) throw Error(`Couldn't find location for attribute ${e}`);
+            return n
+        }
+        dispose() {
+            this.context.removeRestorable(this);
+            let e = this.context.gl;
+            this.vs && (e.deleteShader(this.vs), this.vs = null), this.fs && (e.deleteShader(this.fs), this.fs = null), this.program && (e.deleteProgram(this.program), this.program = null)
+        }
+        static newColoredTextured(t) {
+            let n = `
+attribute vec4 ${e.POSITION};
+attribute vec4 ${e.COLOR};
+attribute vec2 ${e.TEXCOORDS};
+uniform mat4 ${e.MVP_MATRIX};
+varying vec4 v_color;
+varying vec2 v_texCoords;
+
+void main () {
+	v_color = ${e.COLOR};
+	v_texCoords = ${e.TEXCOORDS};
+	gl_Position = ${e.MVP_MATRIX} * ${e.POSITION};
+}
+`;
+            return new e(t, n, `
+#ifdef GL_ES
+	#define LOWP lowp
+	precision mediump float;
+#else
+	#define LOWP
+#endif
+varying LOWP vec4 v_color;
+varying vec2 v_texCoords;
+uniform sampler2D u_texture;
+
+void main () {
+	gl_FragColor = v_color * texture2D(u_texture, v_texCoords);
+}
+`)
+        }
+        static newTwoColoredTextured(t) {
+            let n = `
+attribute vec4 ${e.POSITION};
+attribute vec4 ${e.COLOR};
+attribute vec4 ${e.COLOR2};
+attribute vec2 ${e.TEXCOORDS};
+uniform mat4 ${e.MVP_MATRIX};
+varying vec4 v_light;
+varying vec4 v_dark;
+varying vec2 v_texCoords;
+
+void main () {
+	v_light = ${e.COLOR};
+	v_dark = ${e.COLOR2};
+	v_texCoords = ${e.TEXCOORDS};
+	gl_Position = ${e.MVP_MATRIX} * ${e.POSITION};
+}
+`;
+            return new e(t, n, `
+#ifdef GL_ES
+	#define LOWP lowp
+	precision mediump float;
+#else
+	#define LOWP
+#endif
+varying LOWP vec4 v_light;
+varying LOWP vec4 v_dark;
+varying vec2 v_texCoords;
+uniform sampler2D u_texture;
+
+void main () {
+	vec4 texColor = texture2D(u_texture, v_texCoords);
+	gl_FragColor.a = texColor.a * v_light.a;
+	gl_FragColor.rgb = ((texColor.a - 1.0) * v_dark.a + 1.0 - texColor.rgb) * v_dark.rgb + texColor.rgb * v_light.rgb;
+}
+`)
+        }
+        static newColored(t) {
+            let n = `
+attribute vec4 ${e.POSITION};
+attribute vec4 ${e.COLOR};
+uniform mat4 ${e.MVP_MATRIX};
+varying vec4 v_color;
+
+void main () {
+	v_color = ${e.COLOR};
+	gl_Position = ${e.MVP_MATRIX} * ${e.POSITION};
+}
+`;
+            return new e(t, n, `
+#ifdef GL_ES
+	#define LOWP lowp
+	precision mediump float;
+#else
+	#define LOWP
+#endif
+varying LOWP vec4 v_color;
+
+void main () {
+	gl_FragColor = v_color;
+}
+`)
+        }
+    };
+s(Y, `MVP_MATRIX`, `u_projTrans`), s(Y, `POSITION`, `a_position`), s(Y, `COLOR`, `a_color`), s(Y, `COLOR2`, `a_color2`), s(Y, `TEXCOORDS`, `a_texCoords`), s(Y, `SAMPLER`, `u_texture`);
+var Sn = class {
+        getAttributes() {
+            return this.attributes
+        }
+        maxVertices() {
+            return this.vertices.length / this.elementsPerVertex
+        }
+        numVertices() {
+            return this.verticesLength / this.elementsPerVertex
+        }
+        setVerticesLength(e) {
+            this.dirtyVertices = !0, this.verticesLength = e
+        }
+        getVertices() {
+            return this.vertices
+        }
+        maxIndices() {
+            return this.indices.length
+        }
+        numIndices() {
+            return this.indicesLength
+        }
+        setIndicesLength(e) {
+            this.dirtyIndices = !0, this.indicesLength = e
+        }
+        getIndices() {
+            return this.indices
+        }
+        getVertexSizeInFloats() {
+            let e = 0;
+            for (var t = 0; t < this.attributes.length; t++) {
+                let n = this.attributes[t];
+                e += n.numElements
+            }
+            return e
+        }
+        constructor(e, t, n, r) {
+            s(this, `attributes`, void 0), s(this, `context`, void 0), s(this, `vertices`, void 0), s(this, `verticesBuffer`, null), s(this, `verticesLength`, 0), s(this, `dirtyVertices`, !1), s(this, `indices`, void 0), s(this, `indicesBuffer`, null), s(this, `indicesLength`, 0), s(this, `dirtyIndices`, !1), s(this, `elementsPerVertex`, 0), this.attributes = t, this.context = e instanceof gn ? e : new gn(e), this.elementsPerVertex = 0;
+            for (let e = 0; e < t.length; e++) this.elementsPerVertex += t[e].numElements;
+            this.vertices = new Float32Array(n * this.elementsPerVertex), this.indices = new Uint16Array(r), this.context.addRestorable(this)
+        }
+        setVertices(e) {
+            if (this.dirtyVertices = !0, e.length > this.vertices.length) throw Error(`Mesh can't store more than ` + this.maxVertices() + ` vertices`);
+            this.vertices.set(e, 0), this.verticesLength = e.length
+        }
+        setIndices(e) {
+            if (this.dirtyIndices = !0, e.length > this.indices.length) throw Error(`Mesh can't store more than ` + this.maxIndices() + ` indices`);
+            this.indices.set(e, 0), this.indicesLength = e.length
+        }
+        draw(e, t) {
+            this.drawWithOffset(e, t, 0, this.indicesLength > 0 ? this.indicesLength : this.verticesLength / this.elementsPerVertex)
+        }
+        drawWithOffset(e, t, n, r) {
+            let i = this.context.gl;
+            (this.dirtyVertices || this.dirtyIndices) && this.update(), this.bind(e), this.indicesLength > 0 ? i.drawElements(t, r, i.UNSIGNED_SHORT, n * 2) : i.drawArrays(t, n, r), this.unbind(e)
+        }
+        bind(e) {
+            let t = this.context.gl;
+            t.bindBuffer(t.ARRAY_BUFFER, this.verticesBuffer);
+            let n = 0;
+            for (let r = 0; r < this.attributes.length; r++) {
+                let i = this.attributes[r],
+                    a = e.getAttributeLocation(i.name);
+                t.enableVertexAttribArray(a), t.vertexAttribPointer(a, i.numElements, t.FLOAT, !1, this.elementsPerVertex * 4, n * 4), n += i.numElements
+            }
+            this.indicesLength > 0 && t.bindBuffer(t.ELEMENT_ARRAY_BUFFER, this.indicesBuffer)
+        }
+        unbind(e) {
+            let t = this.context.gl;
+            for (let n = 0; n < this.attributes.length; n++) {
+                let r = this.attributes[n],
+                    i = e.getAttributeLocation(r.name);
+                t.disableVertexAttribArray(i)
+            }
+            t.bindBuffer(t.ARRAY_BUFFER, null), this.indicesLength > 0 && t.bindBuffer(t.ELEMENT_ARRAY_BUFFER, null)
+        }
+        update() {
+            let e = this.context.gl;
+            this.dirtyVertices && (this.verticesBuffer || (this.verticesBuffer = e.createBuffer()), e.bindBuffer(e.ARRAY_BUFFER, this.verticesBuffer), e.bufferData(e.ARRAY_BUFFER, this.vertices.subarray(0, this.verticesLength), e.DYNAMIC_DRAW), this.dirtyVertices = !1), this.dirtyIndices && (this.indicesBuffer || (this.indicesBuffer = e.createBuffer()), e.bindBuffer(e.ELEMENT_ARRAY_BUFFER, this.indicesBuffer), e.bufferData(e.ELEMENT_ARRAY_BUFFER, this.indices.subarray(0, this.indicesLength), e.DYNAMIC_DRAW), this.dirtyIndices = !1)
+        }
+        restore() {
+            this.verticesBuffer = null, this.indicesBuffer = null, this.update()
+        }
+        dispose() {
+            this.context.removeRestorable(this);
+            let e = this.context.gl;
+            e.deleteBuffer(this.verticesBuffer), e.deleteBuffer(this.indicesBuffer)
+        }
+    },
+    Cn = class {
+        constructor(e, t, n) {
+            s(this, `name`, void 0), s(this, `type`, void 0), s(this, `numElements`, void 0), this.name = e, this.type = t, this.numElements = n
+        }
+    },
+    wn = class extends Cn {
+        constructor() {
+            super(Y.POSITION, On.Float, 2)
+        }
+    },
+    Tn = class extends Cn {
+        constructor(e = 0) {
+            super(Y.TEXCOORDS + (e == 0 ? `` : e), On.Float, 2)
+        }
+    },
+    En = class extends Cn {
+        constructor() {
+            super(Y.COLOR, On.Float, 4)
+        }
+    },
+    Dn = class extends Cn {
+        constructor() {
+            super(Y.COLOR2, On.Float, 4)
+        }
+    },
+    On;
+(function(e) {
+    e[e.Float = 0] = `Float`
+})(On || (On = {}));
+var kn = 1,
+    An = 769,
+    jn = 770,
+    Mn = 771,
+    Nn = 774,
+    Pn = class e {
+        constructor(e, t = !0, n = 10920) {
+            if (s(this, `context`, void 0), s(this, `drawCalls`, 0), s(this, `isDrawing`, !1), s(this, `mesh`, void 0), s(this, `shader`, null), s(this, `lastTexture`, null), s(this, `verticesLength`, 0), s(this, `indicesLength`, 0), s(this, `srcColorBlend`, void 0), s(this, `srcAlphaBlend`, void 0), s(this, `dstBlend`, void 0), s(this, `cullWasEnabled`, !1), n > 10920) throw Error(`Can't have more than 10920 triangles per batch: ` + n);
+            this.context = e instanceof gn ? e : new gn(e);
+            let r = t ? [new wn, new En, new Tn, new Dn] : [new wn, new En, new Tn];
+            this.mesh = new Sn(e, r, n, n * 3);
+            let i = this.context.gl;
+            this.srcColorBlend = i.SRC_ALPHA, this.srcAlphaBlend = i.ONE, this.dstBlend = i.ONE_MINUS_SRC_ALPHA
+        }
+        begin(t) {
+            if (this.isDrawing) throw Error(`PolygonBatch is already drawing. Call PolygonBatch.end() before calling PolygonBatch.begin()`);
+            this.drawCalls = 0, this.shader = t, this.lastTexture = null, this.isDrawing = !0;
+            let n = this.context.gl;
+            n.enable(n.BLEND), n.blendFuncSeparate(this.srcColorBlend, this.dstBlend, this.srcAlphaBlend, this.dstBlend), e.disableCulling && (this.cullWasEnabled = n.isEnabled(n.CULL_FACE), this.cullWasEnabled && n.disable(n.CULL_FACE))
+        }
+        setBlendMode(t, n) {
+            let r = e.blendModesGL[t],
+                i = n ? r.srcRgbPma : r.srcRgb,
+                a = r.srcAlpha,
+                o = r.dstRgb;
+            (this.srcColorBlend != i || this.srcAlphaBlend != a || this.dstBlend != o) && (this.srcColorBlend = i, this.srcAlphaBlend = a, this.dstBlend = o, this.isDrawing && this.flush(), this.context.gl.blendFuncSeparate(i, o, a, o))
+        }
+        draw(e, t, n) {
+            e == this.lastTexture ? (this.verticesLength + t.length > this.mesh.getVertices().length || this.indicesLength + n.length > this.mesh.getIndices().length) && this.flush() : (this.flush(), this.lastTexture = e);
+            let r = this.mesh.numVertices();
+            this.mesh.getVertices().set(t, this.verticesLength), this.verticesLength += t.length, this.mesh.setVerticesLength(this.verticesLength);
+            let i = this.mesh.getIndices();
+            for (let e = this.indicesLength, t = 0; t < n.length; e++, t++) i[e] = n[t] + r;
+            this.indicesLength += n.length, this.mesh.setIndicesLength(this.indicesLength)
+        }
+        flush() {
+            if (this.verticesLength != 0) {
+                if (!this.lastTexture) throw Error(`No texture set.`);
+                if (!this.shader) throw Error(`No shader set.`);
+                this.lastTexture.bind(), this.mesh.draw(this.shader, this.context.gl.TRIANGLES), this.verticesLength = 0, this.indicesLength = 0, this.mesh.setVerticesLength(0), this.mesh.setIndicesLength(0), this.drawCalls++, e.globalDrawCalls++
+            }
+        }
+        end() {
+            if (!this.isDrawing) throw Error(`PolygonBatch is not drawing. Call PolygonBatch.begin() before calling PolygonBatch.end()`);
+            (this.verticesLength > 0 || this.indicesLength > 0) && this.flush(), this.shader = null, this.lastTexture = null, this.isDrawing = !1;
+            let t = this.context.gl;
+            t.disable(t.BLEND), e.disableCulling && this.cullWasEnabled && t.enable(t.CULL_FACE)
+        }
+        getDrawCalls() {
+            return this.drawCalls
+        }
+        static getAndResetGlobalDrawCalls() {
+            let t = e.globalDrawCalls;
+            return e.globalDrawCalls = 0, t
+        }
+        dispose() {
+            this.mesh.dispose()
+        }
+    };
+s(Pn, `disableCulling`, !1), s(Pn, `globalDrawCalls`, 0), s(Pn, `blendModesGL`, [{
+    srcRgb: jn,
+    srcRgbPma: kn,
+    dstRgb: Mn,
+    srcAlpha: kn
+}, {
+    srcRgb: jn,
+    srcRgbPma: kn,
+    dstRgb: kn,
+    srcAlpha: kn
+}, {
+    srcRgb: Nn,
+    srcRgbPma: Nn,
+    dstRgb: Mn,
+    srcAlpha: kn
+}, {
+    srcRgb: kn,
+    srcRgbPma: kn,
+    dstRgb: An,
+    srcAlpha: kn
+}]);
+var Fn = class {
+        constructor(e, t = 10920) {
+            if (s(this, `context`, void 0), s(this, `isDrawing`, !1), s(this, `mesh`, void 0), s(this, `shapeType`, X.Filled), s(this, `color`, new T(1, 1, 1, 1)), s(this, `shader`, null), s(this, `vertexIndex`, 0), s(this, `tmp`, new k), s(this, `srcColorBlend`, void 0), s(this, `srcAlphaBlend`, void 0), s(this, `dstBlend`, void 0), t > 10920) throw Error(`Can't have more than 10920 triangles per batch: ` + t);
+            this.context = e instanceof gn ? e : new gn(e), this.mesh = new Sn(e, [new wn, new En], t, 0);
+            let n = this.context.gl;
+            this.srcColorBlend = n.SRC_ALPHA, this.srcAlphaBlend = n.ONE, this.dstBlend = n.ONE_MINUS_SRC_ALPHA
+        }
+        begin(e) {
+            if (this.isDrawing) throw Error(`ShapeRenderer.begin() has already been called`);
+            this.shader = e, this.vertexIndex = 0, this.isDrawing = !0;
+            let t = this.context.gl;
+            t.enable(t.BLEND), t.blendFuncSeparate(this.srcColorBlend, this.dstBlend, this.srcAlphaBlend, this.dstBlend)
+        }
+        setBlendMode(e, t, n) {
+            this.srcColorBlend = e, this.srcAlphaBlend = t, this.dstBlend = n, this.isDrawing && (this.flush(), this.context.gl.blendFuncSeparate(e, n, t, n))
+        }
+        setColor(e) {
+            this.color.setFromColor(e)
+        }
+        setColorWith(e, t, n, r) {
+            this.color.set(e, t, n, r)
+        }
+        point(e, t, n) {
+            this.check(X.Point, 1), n || (n = this.color), this.vertex(e, t, n)
+        }
+        line(e, t, n, r, i) {
+            this.check(X.Line, 2), this.mesh.getVertices(), this.vertexIndex, i || (i = this.color), this.vertex(e, t, i), this.vertex(n, r, i)
+        }
+        triangle(e, t, n, r, i, a, o, s, c, l) {
+            this.check(e ? X.Filled : X.Line, 3), this.mesh.getVertices(), this.vertexIndex, s || (s = this.color), c || (c = this.color), l || (l = this.color), e ? (this.vertex(t, n, s), this.vertex(r, i, c), this.vertex(a, o, l)) : (this.vertex(t, n, s), this.vertex(r, i, c), this.vertex(r, i, s), this.vertex(a, o, c), this.vertex(a, o, s), this.vertex(t, n, c))
+        }
+        quad(e, t, n, r, i, a, o, s, c, l, u, d, f) {
+            this.check(e ? X.Filled : X.Line, 3), this.mesh.getVertices(), this.vertexIndex, l || (l = this.color), u || (u = this.color), d || (d = this.color), f || (f = this.color), e ? (this.vertex(t, n, l), this.vertex(r, i, u), this.vertex(a, o, d), this.vertex(a, o, d), this.vertex(s, c, f), this.vertex(t, n, l)) : (this.vertex(t, n, l), this.vertex(r, i, u), this.vertex(r, i, u), this.vertex(a, o, d), this.vertex(a, o, d), this.vertex(s, c, f), this.vertex(s, c, f), this.vertex(t, n, l))
+        }
+        rect(e, t, n, r, i, a) {
+            this.quad(e, t, n, t + r, n, t + r, n + i, t, n + i, a, a, a, a)
+        }
+        rectLine(e, t, n, r, i, a, o) {
+            this.check(e ? X.Filled : X.Line, 8), o || (o = this.color);
+            let s = this.tmp.set(i - n, t - r);
+            s.normalize(), a *= .5;
+            let c = s.x * a,
+                l = s.y * a;
+            e ? (this.vertex(t + c, n + l, o), this.vertex(t - c, n - l, o), this.vertex(r + c, i + l, o), this.vertex(r - c, i - l, o), this.vertex(r + c, i + l, o), this.vertex(t - c, n - l, o)) : (this.vertex(t + c, n + l, o), this.vertex(t - c, n - l, o), this.vertex(r + c, i + l, o), this.vertex(r - c, i - l, o), this.vertex(r + c, i + l, o), this.vertex(t + c, n + l, o), this.vertex(r - c, i - l, o), this.vertex(t - c, n - l, o))
+        }
+        x(e, t, n) {
+            this.line(e - n, t - n, e + n, t + n), this.line(e - n, t + n, e + n, t - n)
+        }
+        polygon(e, t, n, r) {
+            if (n < 3) throw Error(`Polygon must contain at least 3 vertices`);
+            this.check(X.Line, n * 2), r || (r = this.color), this.mesh.getVertices(), this.vertexIndex, t <<= 1, n <<= 1;
+            let i = e[t],
+                a = e[t + 1],
+                o = t + n;
+            for (let s = t, c = t + n - 2; s < c; s += 2) {
+                let t = e[s],
+                    n = e[s + 1],
+                    c = 0,
+                    l = 0;
+                s + 2 >= o ? (c = i, l = a) : (c = e[s + 2], l = e[s + 3]), this.vertex(t, n, r), this.vertex(c, l, r)
+            }
+        }
+        circle(e, t, n, r, i, a = 0) {
+            if (a == 0 && (a = Math.max(1, 6 * E.cbrt(r) | 0)), a <= 0) throw Error(`segments must be > 0.`);
+            i || (i = this.color);
+            let o = 2 * E.PI / a,
+                s = Math.cos(o),
+                c = Math.sin(o),
+                l = r,
+                u = 0;
+            if (e) {
+                this.check(X.Filled, a * 3 + 3), a--;
+                for (let e = 0; e < a; e++) {
+                    this.vertex(t, n, i), this.vertex(t + l, n + u, i);
+                    let e = l;
+                    l = s * l - c * u, u = c * e + s * u, this.vertex(t + l, n + u, i)
+                }
+                this.vertex(t, n, i), this.vertex(t + l, n + u, i)
+            } else {
+                this.check(X.Line, a * 2 + 2);
+                for (let e = 0; e < a; e++) {
+                    this.vertex(t + l, n + u, i);
+                    let e = l;
+                    l = s * l - c * u, u = c * e + s * u, this.vertex(t + l, n + u, i)
+                }
+                this.vertex(t + l, n + u, i)
+            }
+            l = r, u = 0, this.vertex(t + l, n + u, i)
+        }
+        curve(e, t, n, r, i, a, o, s, c, l) {
+            this.check(X.Line, c * 2 + 2), l || (l = this.color);
+            let u = 1 / c,
+                d = u * u,
+                f = u * u * u,
+                p = 3 * u,
+                m = 3 * d,
+                h = 6 * d,
+                g = 6 * f,
+                _ = e - n * 2 + i,
+                v = t - r * 2 + a,
+                y = (n - i) * 3 - e + o,
+                b = (r - a) * 3 - t + s,
+                x = e,
+                S = t,
+                C = (n - e) * p + _ * m + y * f,
+                w = (r - t) * p + v * m + b * f,
+                T = _ * h + y * g,
+                E = v * h + b * g,
+                D = y * g,
+                O = b * g;
+            for (; c-- > 0;) this.vertex(x, S, l), x += C, S += w, C += T, w += E, T += D, E += O, this.vertex(x, S, l);
+            this.vertex(x, S, l), this.vertex(o, s, l)
+        }
+        vertex(e, t, n) {
+            let r = this.vertexIndex,
+                i = this.mesh.getVertices();
+            i[r++] = e, i[r++] = t, i[r++] = n.r, i[r++] = n.g, i[r++] = n.b, i[r++] = n.a, this.vertexIndex = r
+        }
+        end() {
+            if (!this.isDrawing) throw Error(`ShapeRenderer.begin() has not been called`);
+            this.flush();
+            let e = this.context.gl;
+            e.disable(e.BLEND), this.isDrawing = !1
+        }
+        flush() {
+            if (this.vertexIndex != 0) {
+                if (!this.shader) throw Error(`No shader set.`);
+                this.mesh.setVerticesLength(this.vertexIndex), this.mesh.draw(this.shader, this.shapeType), this.vertexIndex = 0
+            }
+        }
+        check(e, t) {
+            if (!this.isDrawing) throw Error(`ShapeRenderer.begin() has not been called`);
+            if (this.shapeType == e) {
+                if (this.mesh.maxVertices() - this.mesh.numVertices() < t) this.flush();
+                else return
+            } else this.flush(), this.shapeType = e
+        }
+        dispose() {
+            this.mesh.dispose()
+        }
+    },
+    X;
+(function(e) {
+    e[e.Point = 0] = `Point`, e[e.Line = 1] = `Line`, e[e.Filled = 4] = `Filled`
+})(X || (X = {}));
+var In = class e {
+    constructor(e) {
+        s(this, `boneLineColor`, new T(1, 0, 0, 1)), s(this, `boneOriginColor`, new T(0, 1, 0, 1)), s(this, `attachmentLineColor`, new T(0, 0, 1, .5)), s(this, `triangleLineColor`, new T(1, .64, 0, .5)), s(this, `pathColor`, new T().setFromString(`FF7F00`)), s(this, `clipColor`, new T(.8, 0, 0, 2)), s(this, `aabbColor`, new T(0, 1, 0, .5)), s(this, `drawBones`, !0), s(this, `drawRegionAttachments`, !0), s(this, `drawBoundingBoxes`, !0), s(this, `drawMeshHull`, !0), s(this, `drawMeshTriangles`, !0), s(this, `drawPaths`, !0), s(this, `drawSkeletonXY`, !1), s(this, `drawClipping`, !0), s(this, `premultipliedAlpha`, !1), s(this, `scale`, 1), s(this, `boneWidth`, 2), s(this, `context`, void 0), s(this, `bounds`, new ln), s(this, `temp`, []), s(this, `vertices`, D.newFloatArray(2048)), this.context = e instanceof gn ? e : new gn(e)
+    }
+    draw(t, n, r) {
+        let i = n.x,
+            a = n.y,
+            o = this.context.gl,
+            s = this.premultipliedAlpha ? o.ONE : o.SRC_ALPHA;
+        t.setBlendMode(s, o.ONE, o.ONE_MINUS_SRC_ALPHA);
+        let c = n.bones;
+        if (this.drawBones) {
+            t.setColor(this.boneLineColor);
+            for (let e = 0, n = c.length; e < n; e++) {
+                let n = c[e];
+                if (r && r.indexOf(n.data.name) > -1 || !n.parent) continue;
+                let i = n.data.length * n.a + n.worldX,
+                    a = n.data.length * n.c + n.worldY;
+                t.rectLine(!0, n.worldX, n.worldY, i, a, this.boneWidth * this.scale)
+            }
+            this.drawSkeletonXY && t.x(i, a, 4 * this.scale)
+        }
+        if (this.drawRegionAttachments) {
+            t.setColor(this.attachmentLineColor);
+            let e = n.slots;
+            for (let n = 0, r = e.length; n < r; n++) {
+                let r = e[n],
+                    i = r.getAttachment();
+                if (i instanceof H) {
+                    let e = i,
+                        n = this.vertices;
+                    e.computeWorldVertices(r, n, 0, 2), t.line(n[0], n[1], n[2], n[3]), t.line(n[2], n[3], n[4], n[5]), t.line(n[4], n[5], n[6], n[7]), t.line(n[6], n[7], n[0], n[1])
+                }
+            }
+        }
+        if (this.drawMeshHull || this.drawMeshTriangles) {
+            let e = n.slots;
+            for (let n = 0, r = e.length; n < r; n++) {
+                let r = e[n];
+                if (!r.bone.active) continue;
+                let i = r.getAttachment();
+                if (!(i instanceof Ze)) continue;
+                let a = i,
+                    o = this.vertices;
+                a.computeWorldVertices(r, 0, a.worldVerticesLength, o, 0, 2);
+                let s = a.triangles,
+                    c = a.hullLength;
+                if (this.drawMeshTriangles) {
+                    t.setColor(this.triangleLineColor);
+                    for (let e = 0, n = s.length; e < n; e += 3) {
+                        let n = s[e] * 2,
+                            r = s[e + 1] * 2,
+                            i = s[e + 2] * 2;
+                        t.triangle(!1, o[n], o[n + 1], o[r], o[r + 1], o[i], o[i + 1])
+                    }
+                }
+                if (this.drawMeshHull && c > 0) {
+                    t.setColor(this.attachmentLineColor), c = (c >> 1) * 2;
+                    let e = o[c - 2],
+                        n = o[c - 1];
+                    for (let r = 0, i = c; r < i; r += 2) {
+                        let i = o[r],
+                            a = o[r + 1];
+                        t.line(i, a, e, n), e = i, n = a
+                    }
+                }
+            }
+        }
+        if (this.drawBoundingBoxes) {
+            let e = this.bounds;
+            e.update(n, !0), t.setColor(this.aabbColor), t.rect(!1, e.minX, e.minY, e.getWidth(), e.getHeight());
+            let r = e.polygons,
+                i = e.boundingBoxes;
+            for (let e = 0, n = r.length; e < n; e++) {
+                let n = r[e];
+                t.setColor(i[e].color), t.polygon(n, 0, n.length)
+            }
+        }
+        if (this.drawPaths) {
+            let r = n.slots;
+            for (let n = 0, i = r.length; n < i; n++) {
+                let i = r[n];
+                if (!i.bone.active) continue;
+                let a = i.getAttachment();
+                if (!(a instanceof Qe)) continue;
+                let o = a,
+                    s = o.worldVerticesLength,
+                    c = this.temp = D.setArraySize(this.temp, s, 0);
+                o.computeWorldVertices(i, 0, s, c, 0, 2);
+                let l = this.pathColor,
+                    u = c[2],
+                    d = c[3],
+                    f = 0,
+                    p = 0;
+                if (o.closed) {
+                    t.setColor(l);
+                    let n = c[0],
+                        r = c[1],
+                        i = c[s - 2],
+                        a = c[s - 1];
+                    f = c[s - 4], p = c[s - 3], t.curve(u, d, n, r, i, a, f, p, 32), t.setColor(e.LIGHT_GRAY), t.line(u, d, n, r), t.line(f, p, i, a)
+                }
+                s -= 4;
+                for (let n = 4; n < s; n += 6) {
+                    let r = c[n],
+                        i = c[n + 1],
+                        a = c[n + 2],
+                        o = c[n + 3];
+                    f = c[n + 4], p = c[n + 5], t.setColor(l), t.curve(u, d, r, i, a, o, f, p, 32), t.setColor(e.LIGHT_GRAY), t.line(u, d, r, i), t.line(f, p, a, o), u = f, d = p
+                }
+            }
+        }
+        if (this.drawBones) {
+            t.setColor(this.boneOriginColor);
+            for (let e = 0, n = c.length; e < n; e++) {
+                let n = c[e];
+                r && r.indexOf(n.data.name) > -1 || t.circle(!0, n.worldX, n.worldY, 3 * this.scale, this.boneOriginColor, 8)
+            }
+        }
+        if (this.drawClipping) {
+            let e = n.slots;
+            t.setColor(this.clipColor);
+            for (let n = 0, r = e.length; n < r; n++) {
+                let r = e[n];
+                if (!r.bone.active) continue;
+                let i = r.getAttachment();
+                if (!(i instanceof Ue)) continue;
+                let a = i,
+                    o = a.worldVerticesLength,
+                    s = this.temp = D.setArraySize(this.temp, o, 0);
+                a.computeWorldVertices(r, 0, o, s, 0, 2);
+                for (let e = 0, n = s.length; e < n; e += 2) {
+                    let n = s[e],
+                        r = s[e + 1],
+                        i = s[(e + 2) % s.length],
+                        a = s[(e + 3) % s.length];
+                    t.line(n, r, i, a)
+                }
+            }
+        }
+    }
+    dispose() {}
+};
+s(In, `LIGHT_GRAY`, new T(192 / 255, 192 / 255, 192 / 255, 1)), s(In, `GREEN`, new T(0, 1, 0, 1));
+var Ln = class {
+        constructor(e, t, n) {
+            s(this, `vertices`, void 0), s(this, `numVertices`, void 0), s(this, `numFloats`, void 0), this.vertices = e, this.numVertices = t, this.numFloats = n
+        }
+    },
+    Rn = class e {
+        constructor(e, t = !0) {
+            s(this, `premultipliedAlpha`, !1), s(this, `tempColor`, new T), s(this, `tempColor2`, new T), s(this, `vertices`, void 0), s(this, `vertexSize`, 8), s(this, `twoColorTint`, !1), s(this, `renderable`, new Ln([], 0, 0)), s(this, `clipper`, new dn), s(this, `temp`, new k), s(this, `temp2`, new k), s(this, `temp3`, new T), s(this, `temp4`, new T), this.twoColorTint = t, t && (this.vertexSize += 4), this.vertices = D.newFloatArray(this.vertexSize * 1024)
+        }
+        draw(t, n, r = -1, i = -1, a = null) {
+            let o = this.clipper,
+                s = this.premultipliedAlpha,
+                c = this.twoColorTint,
+                l = null,
+                u = this.renderable,
+                d, f, p = n.drawOrder,
+                m, h = n.color,
+                g = c ? 12 : 8,
+                _ = !1;
+            r == -1 && (_ = !0);
+            for (let n = 0, v = p.length; n < v; n++) {
+                let v = o.isClipping() ? 2 : g,
+                    y = p[n];
+                if (!y.bone.active || (r >= 0 && r == y.data.index && (_ = !0), !_)) {
+                    o.clipEndWithSlot(y);
+                    continue
+                }
+                i >= 0 && i == y.data.index && (_ = !1);
+                let b = y.getAttachment(),
+                    x;
+                if (b instanceof H) {
+                    let t = b;
+                    u.vertices = this.vertices, u.numVertices = 4, u.numFloats = v << 2, t.computeWorldVertices(y, u.vertices, 0, v), f = e.QUAD_TRIANGLES, d = t.uvs, x = t.region.texture, m = t.color
+                } else if (b instanceof Ze) {
+                    let e = b;
+                    u.vertices = this.vertices, u.numVertices = e.worldVerticesLength >> 1, u.numFloats = u.numVertices * v, u.numFloats > u.vertices.length && (u.vertices = this.vertices = D.newFloatArray(u.numFloats)), e.computeWorldVertices(y, 0, e.worldVerticesLength, u.vertices, 0, v), f = e.triangles, x = e.region.texture, d = e.uvs, m = e.color
+                } else if (b instanceof Ue) {
+                    let e = b;
+                    o.clipStart(y, e);
+                    continue
+                } else {
+                    o.clipEndWithSlot(y);
+                    continue
+                }
+                if (x) {
+                    let e = y.color,
+                        n = this.tempColor;
+                    n.r = h.r * e.r * m.r, n.g = h.g * e.g * m.g, n.b = h.b * e.b * m.b, n.a = h.a * e.a * m.a, s && (n.r *= n.a, n.g *= n.a, n.b *= n.a);
+                    let r = this.tempColor2;
+                    y.darkColor ? (s ? (r.r = y.darkColor.r * n.a, r.g = y.darkColor.g * n.a, r.b = y.darkColor.b * n.a) : r.setFromColor(y.darkColor), r.a = +!!s) : r.set(0, 0, 0, 1);
+                    let i = y.data.blendMode;
+                    if (i != l && (l = i, t.setBlendMode(l, s)), o.isClipping()) {
+                        o.clipTriangles(u.vertices, f, f.length, d, n, r, c);
+                        let e = new Float32Array(o.clippedVertices),
+                            i = o.clippedTriangles;
+                        a && a(e, e.length, g), t.draw(x, e, i)
+                    } else {
+                        let e = u.vertices;
+                        if (c)
+                            for (let t = 2, i = 0, a = u.numFloats; t < a; t += g, i += 2) e[t] = n.r, e[t + 1] = n.g, e[t + 2] = n.b, e[t + 3] = n.a, e[t + 4] = d[i], e[t + 5] = d[i + 1], e[t + 6] = r.r, e[t + 7] = r.g, e[t + 8] = r.b, e[t + 9] = r.a;
+                        else
+                            for (let t = 2, r = 0, i = u.numFloats; t < i; t += g, r += 2) e[t] = n.r, e[t + 1] = n.g, e[t + 2] = n.b, e[t + 3] = n.a, e[t + 4] = d[r], e[t + 5] = d[r + 1];
+                        let i = u.vertices.subarray(0, u.numFloats);
+                        a && a(u.vertices, u.numFloats, g), t.draw(x, i, f)
+                    }
+                }
+                o.clipEndWithSlot(y)
+            }
+            o.clipEnd()
+        }
+        getSkeletonClipping() {
+            return this.clipper
+        }
+    };
+s(Rn, `QUAD_TRIANGLES`, [0, 1, 2, 2, 3, 0]);
+var Z = [0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0],
+    zn = [0, 1, 2, 2, 3, 0],
+    Bn = new T(1, 1, 1, 1),
+    Vn = class {
+        constructor(e, t, n = !0) {
+            s(this, `context`, void 0), s(this, `canvas`, void 0), s(this, `camera`, void 0), s(this, `batcher`, void 0), s(this, `twoColorTint`, !1), s(this, `batcherShader`, void 0), s(this, `shapes`, void 0), s(this, `shapesShader`, void 0), s(this, `activeRenderer`, null), s(this, `skeletonRenderer`, void 0), s(this, `skeletonDebugRenderer`, void 0), this.canvas = e, this.context = t instanceof gn ? t : new gn(t), this.twoColorTint = n, this.camera = new xn(e.width, e.height), this.batcherShader = n ? Y.newTwoColoredTextured(this.context) : Y.newColoredTextured(this.context), this.batcher = new Pn(this.context, n), this.shapesShader = Y.newColored(this.context), this.shapes = new Fn(this.context), this.skeletonRenderer = new Rn(this.context, n), this.skeletonDebugRenderer = new In(this.context)
+        }
+        dispose() {
+            this.batcher.dispose(), this.batcherShader.dispose(), this.shapes.dispose(), this.shapesShader.dispose(), this.skeletonDebugRenderer.dispose()
+        }
+        begin() {
+            this.camera.update(), this.enableRenderer(this.batcher)
+        }
+        drawSkeleton(e, t = !1, n = -1, r = -1, i = null) {
+            this.enableRenderer(this.batcher), this.skeletonRenderer.premultipliedAlpha = t, this.skeletonRenderer.draw(this.batcher, e, n, r, i)
+        }
+        drawSkeletonDebug(e, t = !1, n) {
+            this.enableRenderer(this.shapes), this.skeletonDebugRenderer.premultipliedAlpha = t, this.skeletonDebugRenderer.draw(this.shapes, e, n)
+        }
+        drawTexture(e, t, n, r, i, a) {
+            this.enableRenderer(this.batcher), a || (a = Bn);
+            var o = 0;
+            Z[o++] = t, Z[o++] = n, Z[o++] = a.r, Z[o++] = a.g, Z[o++] = a.b, Z[o++] = a.a, Z[o++] = 0, Z[o++] = 1, this.twoColorTint && (Z[o++] = 0, Z[o++] = 0, Z[o++] = 0, Z[o++] = 0), Z[o++] = t + r, Z[o++] = n, Z[o++] = a.r, Z[o++] = a.g, Z[o++] = a.b, Z[o++] = a.a, Z[o++] = 1, Z[o++] = 1, this.twoColorTint && (Z[o++] = 0, Z[o++] = 0, Z[o++] = 0, Z[o++] = 0), Z[o++] = t + r, Z[o++] = n + i, Z[o++] = a.r, Z[o++] = a.g, Z[o++] = a.b, Z[o++] = a.a, Z[o++] = 1, Z[o++] = 0, this.twoColorTint && (Z[o++] = 0, Z[o++] = 0, Z[o++] = 0, Z[o++] = 0), Z[o++] = t, Z[o++] = n + i, Z[o++] = a.r, Z[o++] = a.g, Z[o++] = a.b, Z[o++] = a.a, Z[o++] = 0, Z[o++] = 0, this.twoColorTint && (Z[o++] = 0, Z[o++] = 0, Z[o++] = 0, Z[o] = 0), this.batcher.draw(e, Z, zn)
+        }
+        drawTextureUV(e, t, n, r, i, a, o, s, c, l) {
+            this.enableRenderer(this.batcher), l || (l = Bn);
+            var u = 0;
+            Z[u++] = t, Z[u++] = n, Z[u++] = l.r, Z[u++] = l.g, Z[u++] = l.b, Z[u++] = l.a, Z[u++] = a, Z[u++] = o, this.twoColorTint && (Z[u++] = 0, Z[u++] = 0, Z[u++] = 0, Z[u++] = 0), Z[u++] = t + r, Z[u++] = n, Z[u++] = l.r, Z[u++] = l.g, Z[u++] = l.b, Z[u++] = l.a, Z[u++] = s, Z[u++] = o, this.twoColorTint && (Z[u++] = 0, Z[u++] = 0, Z[u++] = 0, Z[u++] = 0), Z[u++] = t + r, Z[u++] = n + i, Z[u++] = l.r, Z[u++] = l.g, Z[u++] = l.b, Z[u++] = l.a, Z[u++] = s, Z[u++] = c, this.twoColorTint && (Z[u++] = 0, Z[u++] = 0, Z[u++] = 0, Z[u++] = 0), Z[u++] = t, Z[u++] = n + i, Z[u++] = l.r, Z[u++] = l.g, Z[u++] = l.b, Z[u++] = l.a, Z[u++] = a, Z[u++] = c, this.twoColorTint && (Z[u++] = 0, Z[u++] = 0, Z[u++] = 0, Z[u] = 0), this.batcher.draw(e, Z, zn)
+        }
+        drawTextureRotated(e, t, n, r, i, a, o, s, c) {
+            this.enableRenderer(this.batcher), c || (c = Bn);
+            let l = t + a,
+                u = n + o,
+                d = -a,
+                f = -o,
+                p = r - a,
+                m = i - o,
+                h = d,
+                g = f,
+                _ = d,
+                v = m,
+                y = p,
+                b = m,
+                x = p,
+                S = f,
+                C = 0,
+                w = 0,
+                T = 0,
+                D = 0,
+                O = 0,
+                k = 0,
+                A = 0,
+                j = 0;
+            if (s != 0) {
+                let e = E.cosDeg(s),
+                    t = E.sinDeg(s);
+                C = e * h - t * g, w = t * h + e * g, A = e * _ - t * v, j = t * _ + e * v, O = e * y - t * b, k = t * y + e * b, T = O + (C - A), D = k + (w - j)
+            } else C = h, w = g, A = _, j = v, O = y, k = b, T = x, D = S;
+            C += l, w += u, T += l, D += u, O += l, k += u, A += l, j += u;
+            var M = 0;
+            Z[M++] = C, Z[M++] = w, Z[M++] = c.r, Z[M++] = c.g, Z[M++] = c.b, Z[M++] = c.a, Z[M++] = 0, Z[M++] = 1, this.twoColorTint && (Z[M++] = 0, Z[M++] = 0, Z[M++] = 0, Z[M++] = 0), Z[M++] = T, Z[M++] = D, Z[M++] = c.r, Z[M++] = c.g, Z[M++] = c.b, Z[M++] = c.a, Z[M++] = 1, Z[M++] = 1, this.twoColorTint && (Z[M++] = 0, Z[M++] = 0, Z[M++] = 0, Z[M++] = 0), Z[M++] = O, Z[M++] = k, Z[M++] = c.r, Z[M++] = c.g, Z[M++] = c.b, Z[M++] = c.a, Z[M++] = 1, Z[M++] = 0, this.twoColorTint && (Z[M++] = 0, Z[M++] = 0, Z[M++] = 0, Z[M++] = 0), Z[M++] = A, Z[M++] = j, Z[M++] = c.r, Z[M++] = c.g, Z[M++] = c.b, Z[M++] = c.a, Z[M++] = 0, Z[M++] = 0, this.twoColorTint && (Z[M++] = 0, Z[M++] = 0, Z[M++] = 0, Z[M] = 0), this.batcher.draw(e, Z, zn)
+        }
+        drawRegion(e, t, n, r, i, a) {
+            this.enableRenderer(this.batcher), a || (a = Bn);
+            var o = 0;
+            Z[o++] = t, Z[o++] = n, Z[o++] = a.r, Z[o++] = a.g, Z[o++] = a.b, Z[o++] = a.a, Z[o++] = e.u, Z[o++] = e.v2, this.twoColorTint && (Z[o++] = 0, Z[o++] = 0, Z[o++] = 0, Z[o++] = 0), Z[o++] = t + r, Z[o++] = n, Z[o++] = a.r, Z[o++] = a.g, Z[o++] = a.b, Z[o++] = a.a, Z[o++] = e.u2, Z[o++] = e.v2, this.twoColorTint && (Z[o++] = 0, Z[o++] = 0, Z[o++] = 0, Z[o++] = 0), Z[o++] = t + r, Z[o++] = n + i, Z[o++] = a.r, Z[o++] = a.g, Z[o++] = a.b, Z[o++] = a.a, Z[o++] = e.u2, Z[o++] = e.v, this.twoColorTint && (Z[o++] = 0, Z[o++] = 0, Z[o++] = 0, Z[o++] = 0), Z[o++] = t, Z[o++] = n + i, Z[o++] = a.r, Z[o++] = a.g, Z[o++] = a.b, Z[o++] = a.a, Z[o++] = e.u, Z[o++] = e.v, this.twoColorTint && (Z[o++] = 0, Z[o++] = 0, Z[o++] = 0, Z[o] = 0), this.batcher.draw(e.page.texture, Z, zn)
+        }
+        line(e, t, n, r, i, a) {
+            this.enableRenderer(this.shapes), this.shapes.line(e, t, n, r, i)
+        }
+        triangle(e, t, n, r, i, a, o, s, c, l) {
+            this.enableRenderer(this.shapes), this.shapes.triangle(e, t, n, r, i, a, o, s, c, l)
+        }
+        quad(e, t, n, r, i, a, o, s, c, l, u, d, f) {
+            this.enableRenderer(this.shapes), this.shapes.quad(e, t, n, r, i, a, o, s, c, l, u, d, f)
+        }
+        rect(e, t, n, r, i, a) {
+            this.enableRenderer(this.shapes), this.shapes.rect(e, t, n, r, i, a)
+        }
+        rectLine(e, t, n, r, i, a, o) {
+            this.enableRenderer(this.shapes), this.shapes.rectLine(e, t, n, r, i, a, o)
+        }
+        polygon(e, t, n, r) {
+            this.enableRenderer(this.shapes), this.shapes.polygon(e, t, n, r)
+        }
+        circle(e, t, n, r, i, a = 0) {
+            this.enableRenderer(this.shapes), this.shapes.circle(e, t, n, r, i, a)
+        }
+        curve(e, t, n, r, i, a, o, s, c, l) {
+            this.enableRenderer(this.shapes), this.shapes.curve(e, t, n, r, i, a, o, s, c, l)
+        }
+        end() {
+            this.activeRenderer === this.batcher ? this.batcher.end() : this.activeRenderer === this.shapes && this.shapes.end(), this.activeRenderer = null
+        }
+        resize(e) {
+            let t = this.canvas;
+            var n = window.devicePixelRatio || 1,
+                r = Math.round(t.clientWidth * n),
+                i = Math.round(t.clientHeight * n);
+            if ((t.width != r || t.height != i) && (t.width = r, t.height = i), this.context.gl.viewport(0, 0, t.width, t.height), e === Hn.Expand) this.camera.setViewport(r, i);
+            else if (e === Hn.Fit) {
+                let e = t.width,
+                    n = t.height,
+                    r = this.camera.viewportWidth,
+                    i = this.camera.viewportHeight,
+                    a = i / r < n / e ? r / e : i / n;
+                this.camera.setViewport(e * a, n * a)
+            }
+            this.camera.update()
+        }
+        enableRenderer(e) {
+            this.activeRenderer !== e && (this.end(), e instanceof Pn ? (this.batcherShader.bind(), this.batcherShader.setUniform4x4f(Y.MVP_MATRIX, this.camera.projectionView.values), this.batcherShader.setUniformi(`u_texture`, 0), this.batcher.begin(this.batcherShader), this.activeRenderer = this.batcher) : e instanceof Fn ? (this.shapesShader.bind(), this.shapesShader.setUniform4x4f(Y.MVP_MATRIX, this.camera.projectionView.values), this.shapes.begin(this.shapesShader), this.activeRenderer = this.shapes) : this.activeRenderer = this.skeletonDebugRenderer)
+        }
+    },
+    Hn;
+(function(e) {
+    e[e.Stretch = 0] = `Stretch`, e[e.Expand = 1] = `Expand`, e[e.Fit = 2] = `Fit`
+})(Hn || (Hn = {}));
+var Un = Phaser.GameObjects.Components,
+    Wn = Un.ComputedSize,
+    Gn = Un.Depth,
+    Kn = Un.Flip,
+    qn = Un.ScrollFactor,
+    Jn = Un.Transform,
+    Yn = Un.Visible,
+    Xn = Un.Origin,
+    Zn = Un.Alpha;
+
+function Qn(...e) {
+    return t => (Phaser.Class.mixin(t, e), t)
+}
+var $n = Qn(Wn),
+    er = Qn(Gn),
+    tr = Qn(Kn),
+    nr = Qn(qn),
+    rr = Qn(Jn),
+    ir = Qn(Yn),
+    ar = Qn(Xn),
+    or = Qn(Zn),
+    sr = class extends Phaser.GameObjects.GameObject {
+        constructor(e, t) {
+            super(e, t)
+        }
+    },
+    cr = class {
+        constructor(e = !1) {
+            s(this, `clipping`, void 0), this.clipping = e
+        }
+        calculateBounds(e) {
+            if (!e.skeleton) return {
+                x: 0,
+                y: 0,
+                width: 0,
+                height: 0
+            };
+            let t = new ht(e.skeleton.data);
+            t.setToSetupPose(), t.updateWorldTransform(gt.update);
+            let n = t.getBoundsRect(this.clipping ? new dn : void 0);
+            return n.width == -1 / 0 ? {
+                x: 0,
+                y: 0,
+                width: 0,
+                height: 0
+            } : n
+        }
+    },
+    lr = class {
+        constructor(e, t = [], n = .05, r = !1) {
+            s(this, `animation`, void 0), s(this, `skins`, void 0), s(this, `timeStep`, void 0), s(this, `clipping`, void 0), this.animation = e, this.skins = t, this.timeStep = n, this.clipping = r
+        }
+        calculateBounds(e) {
+            if (!e.skeleton || !e.animationState) return {
+                x: 0,
+                y: 0,
+                width: 0,
+                height: 0
+            };
+            let t = new Le(e.animationState.data),
+                n = new ht(e.skeleton.data),
+                r = this.clipping ? new dn : void 0,
+                i = n.data;
+            if (this.skins.length > 0) {
+                let e = new bt(`custom-skin`);
+                for (let t of this.skins) {
+                    let n = i.findSkin(t);
+                    n != null && e.addSkin(n)
+                }
+                n.setSkin(e)
+            }
+            n.setToSetupPose();
+            let a = this.animation == null ? null : i.findAnimation(this.animation);
+            if (a == null) {
+                n.updateWorldTransform(gt.update);
+                let e = n.getBoundsRect(r);
+                return e.width == -1 / 0 ? {
+                    x: 0,
+                    y: 0,
+                    width: 0,
+                    height: 0
+                } : e
+            } {
+                let e = 1 / 0,
+                    i = 1 / 0,
+                    o = -1 / 0,
+                    s = -1 / 0;
+                t.clearTracks(), t.setAnimationWith(0, a, !1);
+                let c = Math.max(a.duration / this.timeStep, 1);
+                for (let a = 0; a < c; a++) {
+                    let c = a > 0 ? this.timeStep : 0;
+                    t.update(c), t.apply(n), n.update(c), n.updateWorldTransform(gt.update);
+                    let l = n.getBoundsRect(r);
+                    e = Math.min(e, l.x), i = Math.min(i, l.y), o = Math.max(o, l.x + l.width), s = Math.max(s, l.y + l.height)
+                }
+                let l = {
+                    x: e,
+                    y: i,
+                    width: o - e,
+                    height: s - i
+                };
+                return l.width == -1 / 0 ? {
+                    x: 0,
+                    y: 0,
+                    width: 0,
+                    height: 0
+                } : l
+            }
+        }
+    },
+    ur = class extends er(ar($n(tr(nr(rr(ir(or(sr)))))))) {
+        constructor(e, t, n, r, i, a, o = new cr) {
+            super(e, window.SPINE_GAME_OBJECT_TYPE ? window.SPINE_GAME_OBJECT_TYPE : x), s(this, `plugin`, void 0), s(this, `boundsProvider`, void 0), s(this, `blendMode`, -1), s(this, `skeleton`, void 0), s(this, `animationStateData`, void 0), s(this, `animationState`, void 0), s(this, `beforeUpdateWorldTransforms`, () => {}), s(this, `afterUpdateWorldTransforms`, () => {}), s(this, `premultipliedAlpha`, !1), this.plugin = t, this.boundsProvider = o, this.setPosition(n, r), this.premultipliedAlpha = this.plugin.isAtlasPremultiplied(a), this.skeleton = this.plugin.createSkeleton(i, a), this.animationStateData = new Ve(this.skeleton.data), this.animationState = new Le(this.animationStateData), this.skeleton.updateWorldTransform(gt.update), this.updateSize()
+        }
+        updateSize() {
+            if (!this.skeleton) return;
+            let e = this.boundsProvider.calculateBounds(this),
+                t = this;
+            t.width = e.width, t.height = e.height, this.displayOriginX = -e.x, this.displayOriginY = -e.y
+        }
+        skeletonToPhaserWorldCoordinates(e) {
+            let t = this.getWorldTransformMatrix(),
+                n = t.a,
+                r = t.b,
+                i = t.c,
+                a = t.d,
+                o = t.tx,
+                s = t.ty,
+                c = e.x,
+                l = e.y;
+            e.x = c * n + l * i + o, e.y = c * r + l * a + s
+        }
+        phaserWorldCoordinatesToSkeleton(e) {
+            let t = this.getWorldTransformMatrix();
+            t = t.invert();
+            let n = t.a,
+                r = t.b,
+                i = t.c,
+                a = t.d,
+                o = t.tx,
+                s = t.ty,
+                c = e.x,
+                l = e.y;
+            e.x = c * n + l * i + o, e.y = c * r + l * a + s
+        }
+        phaserWorldCoordinatesToBone(e, t) {
+            this.phaserWorldCoordinatesToSkeleton(e), t.parent ? t.parent.worldToLocal(e) : t.worldToLocal(e)
+        }
+        updatePose(e) {
+            this.animationState.update(e / 1e3), this.animationState.apply(this.skeleton), this.beforeUpdateWorldTransforms(this), this.skeleton.update(e / 1e3), this.skeleton.updateWorldTransform(gt.update), this.afterUpdateWorldTransforms(this)
+        }
+        preUpdate(e, t) {
+            this.skeleton && this.animationState && this.updatePose(t)
+        }
+        preDestroy() {}
+        willRender(e) {
+            var t = !this.skeleton || !(this.renderFlags !== 15 || this.cameraFilter !== 0 && this.cameraFilter & e.id);
+            if (this.visible || (t = !1), !t && this.parentContainer && this.plugin.webGLRenderer) {
+                var n = this.plugin.webGLRenderer;
+                this.plugin.gl && this.plugin.phaserRenderer instanceof Phaser.Renderer.WebGL.WebGLRenderer && n.batcher.isDrawing && (n.end(), this.plugin.phaserRenderer.pipelines.rebind())
+            }
+            return t
+        }
+        renderWebGL(e, t, n, r) {
+            if (!this.skeleton || !this.animationState || !this.plugin.webGLRenderer) return;
+            let i = this.plugin.webGLRenderer;
+            e.newType && (e.pipelines.clear(), i.begin()), n.addToRenderList(t);
+            let a = Phaser.GameObjects.GetCalcMatrix(t, n, r).calc,
+                o = a.a,
+                s = a.b,
+                c = a.c,
+                l = a.d,
+                u = a.tx,
+                d = a.ty;
+            i.drawSkeleton(this.skeleton, this.premultipliedAlpha, -1, -1, (e, t, n) => {
+                for (let r = 0; r < t; r += n) {
+                    let t = e[r],
+                        n = e[r + 1];
+                    e[r] = t * o + n * c + u, e[r + 1] = t * s + n * l + d
+                }
+            }), e.nextTypeMatch || (i.end(), e.pipelines.rebind())
+        }
+        renderCanvas(e, t, n, r) {
+            if (!this.skeleton || !this.animationState || !this.plugin.canvasRenderer) return;
+            let i = e.currentContext,
+                a = this.plugin.canvasRenderer;
+            a.ctx = i, n.addToRenderList(t);
+            let o = Phaser.GameObjects.GetCalcMatrix(t, n, r).calc,
+                s = this.skeleton;
+            s.x = o.tx, s.y = o.ty, s.scaleX = o.scaleX, s.scaleY = o.scaleY;
+            let c = s.getRootBone();
+            c.rotation = -E.radiansToDegrees * o.rotationNormalized, this.skeleton.updateWorldTransform(gt.update), i.save(), a.draw(s), i.restore()
+        }
+    },
+    dr = class extends We {
+        constructor(e) {
+            super(e)
+        }
+        setFilters(e, t) {}
+        setWraps(e, t) {}
+        dispose() {}
+    },
+    fr = D.newFloatArray(8),
+    pr = class e {
+        constructor(e) {
+            s(this, `ctx`, void 0), s(this, `triangleRendering`, !1), s(this, `debugRendering`, !1), s(this, `vertices`, D.newFloatArray(8192)), s(this, `tempColor`, new T), this.ctx = e
+        }
+        draw(e) {
+            this.triangleRendering ? this.drawTriangles(e) : this.drawImages(e)
+        }
+        drawImages(e) {
+            let t = this.ctx,
+                n = this.tempColor,
+                r = e.color,
+                i = e.drawOrder;
+            this.debugRendering && (t.strokeStyle = `green`);
+            for (let e = 0, a = i.length; e < a; e++) {
+                let a = i[e],
+                    o = a.bone;
+                if (!o.active) continue;
+                let s = a.getAttachment();
+                if (!(s instanceof H)) continue;
+                s.computeWorldVertices(a, fr, 0, 2);
+                let c = s.region,
+                    l = c.texture.getImage(),
+                    u = a.color,
+                    d = s.color;
+                n.set(r.r * u.r * d.r, r.g * u.g * d.g, r.b * u.b * d.b, r.a * u.a * d.a), t.save(), t.transform(o.a, o.c, o.b, o.d, o.worldX, o.worldY), t.translate(s.offset[0], s.offset[1]), t.rotate(s.rotation * Math.PI / 180);
+                let f = s.width / c.originalWidth;
+                t.scale(f * s.scaleX, f * s.scaleY);
+                let p = c.width,
+                    m = c.height;
+                if (t.translate(p / 2, m / 2), s.region.degrees == 90) {
+                    let e = p;
+                    p = m, m = e, t.rotate(-Math.PI / 2)
+                }
+                t.scale(1, -1), t.translate(-p / 2, -m / 2), t.globalAlpha = n.a, t.drawImage(l, l.width * c.u, l.height * c.v, p, m, 0, 0, p, m), this.debugRendering && t.strokeRect(0, 0, p, m), t.restore()
+            }
+        }
+        drawTriangles(t) {
+            let n = this.ctx,
+                r = this.tempColor,
+                i = t.color,
+                a = t.drawOrder,
+                o = null,
+                s = this.vertices,
+                c = null;
+            for (let t = 0, u = a.length; t < u; t++) {
+                let u = a[t],
+                    d = u.getAttachment(),
+                    f;
+                if (d instanceof H) {
+                    let t = d;
+                    s = this.computeRegionVertices(u, t, !1), c = e.QUAD_TRIANGLES, f = t.region.texture.getImage()
+                } else if (d instanceof Ze) {
+                    let e = d;
+                    s = this.computeMeshVertices(u, e, !1), c = e.triangles, f = e.region.texture.getImage()
+                } else continue;
+                if (f) {
+                    u.data.blendMode != o && (o = u.data.blendMode);
+                    let e = u.color,
+                        t = d.color;
+                    r.set(i.r * e.r * t.r, i.g * e.g * t.g, i.b * e.b * t.b, i.a * e.a * t.a), n.globalAlpha = r.a;
+                    for (var l = 0; l < c.length; l += 3) {
+                        let e = c[l] * 8,
+                            t = c[l + 1] * 8,
+                            r = c[l + 2] * 8,
+                            i = s[e],
+                            a = s[e + 1],
+                            o = s[e + 6],
+                            u = s[e + 7],
+                            d = s[t],
+                            p = s[t + 1],
+                            m = s[t + 6],
+                            h = s[t + 7],
+                            g = s[r],
+                            _ = s[r + 1],
+                            v = s[r + 6],
+                            y = s[r + 7];
+                        this.drawTriangle(f, i, a, o, u, d, p, m, h, g, _, v, y), this.debugRendering && (n.strokeStyle = `green`, n.beginPath(), n.moveTo(i, a), n.lineTo(d, p), n.lineTo(g, _), n.lineTo(i, a), n.stroke())
+                    }
+                }
+            }
+            this.ctx.globalAlpha = 1
+        }
+        drawTriangle(e, t, n, r, i, a, o, s, c, l, u, d, f) {
+            let p = this.ctx,
+                m = e.width - 1,
+                h = e.height - 1;
+            r *= m, i *= h, s *= m, c *= h, d *= m, f *= h, p.beginPath(), p.moveTo(t, n), p.lineTo(a, o), p.lineTo(l, u), p.closePath(), a -= t, o -= n, l -= t, u -= n, s -= r, c -= i, d -= r, f -= i;
+            let g = s * f - d * c;
+            if (g == 0) return;
+            g = 1 / g;
+            let _ = (f * a - c * l) * g,
+                v = (f * o - c * u) * g,
+                y = (s * l - d * a) * g,
+                b = (s * u - d * o) * g,
+                x = t - _ * r - y * i,
+                S = n - v * r - b * i;
+            p.save(), p.transform(_, v, y, b, x, S), p.clip(), p.drawImage(e, 0, 0), p.restore()
+        }
+        computeRegionVertices(t, n, r) {
+            let i = t.bone.skeleton.color,
+                a = t.color,
+                o = n.color,
+                s = i.a * a.a * o.a,
+                c = r ? s : 1,
+                l = this.tempColor;
+            l.set(i.r * a.r * o.r * c, i.g * a.g * o.g * c, i.b * a.b * o.b * c, s), n.computeWorldVertices(t, this.vertices, 0, e.VERTEX_SIZE);
+            let u = this.vertices,
+                d = n.uvs;
+            return u[H.C1R] = l.r, u[H.C1G] = l.g, u[H.C1B] = l.b, u[H.C1A] = l.a, u[H.U1] = d[0], u[H.V1] = d[1], u[H.C2R] = l.r, u[H.C2G] = l.g, u[H.C2B] = l.b, u[H.C2A] = l.a, u[H.U2] = d[2], u[H.V2] = d[3], u[H.C3R] = l.r, u[H.C3G] = l.g, u[H.C3B] = l.b, u[H.C3A] = l.a, u[H.U3] = d[4], u[H.V3] = d[5], u[H.C4R] = l.r, u[H.C4G] = l.g, u[H.C4B] = l.b, u[H.C4A] = l.a, u[H.U4] = d[6], u[H.V4] = d[7], u
+        }
+        computeMeshVertices(t, n, r) {
+            let i = t.bone.skeleton.color,
+                a = t.color,
+                o = n.color,
+                s = i.a * a.a * o.a,
+                c = r ? s : 1,
+                l = this.tempColor;
+            l.set(i.r * a.r * o.r * c, i.g * a.g * o.g * c, i.b * a.b * o.b * c, s);
+            let u = n.worldVerticesLength / 2,
+                d = this.vertices;
+            d.length < n.worldVerticesLength && (this.vertices = d = D.newFloatArray(n.worldVerticesLength)), n.computeWorldVertices(t, 0, n.worldVerticesLength, d, 0, e.VERTEX_SIZE);
+            let f = n.uvs;
+            for (let e = 0, t = 0, n = 2; e < u; e++) d[n++] = l.r, d[n++] = l.g, d[n++] = l.b, d[n++] = l.a, d[n++] = f[t++], d[n++] = f[t++], n += 2;
+            return d
+        }
+    };
+s(pr, `QUAD_TRIANGLES`, [0, 1, 2, 2, 3, 0]), s(pr, `VERTEX_SIZE`, 8);
+var mr = class e extends g.Plugins.ScenePlugin {
+    get webGLRenderer() {
+        return e.gameWebGLRenderer
+    }
+    constructor(e, t, n) {
+        super(e, t, n), s(this, `game`, void 0), s(this, `isWebGL`, void 0), s(this, `gl`, void 0), s(this, `canvasRenderer`, void 0), s(this, `phaserRenderer`, void 0), s(this, `skeletonDataCache`, void 0), s(this, `atlasCache`, void 0), this.game = t.game, this.isWebGL = this.game.config.renderType === 2, this.gl = this.isWebGL ? this.game.renderer.gl : null, this.phaserRenderer = this.game.renderer, this.canvasRenderer = null, this.skeletonDataCache = this.game.cache.addCustom(_), this.atlasCache = this.game.cache.addCustom(v), t.registerFileType(`spineJson`, function(e, t, n) {
+            let r = new gr(this, e, t, hr.json, n);
+            return this.addFile(r.files), this
+        }, e), t.registerFileType(`spineBinary`, function(e, t, n) {
+            let r = new gr(this, e, t, hr.binary, n);
+            return this.addFile(r.files), this
+        }, e), t.registerFileType(`spineAtlas`, function(e, t, n, r) {
+            let i = new _r(this, e, t, n, r);
+            return this.addFile(i.files), this
+        }, e), t.registerGameObject(window.SPINE_GAME_OBJECT_TYPE ? window.SPINE_GAME_OBJECT_TYPE : x, function(e, t, r, i, a) {
+            this.scene.sys.renderer instanceof g.Renderer.WebGL.WebGLRenderer && this.scene.sys.renderer.pipelines.clear();
+            let o = this.scene.sys[n],
+                s = new ur(this.scene, o, e, t, r, i, a);
+            return this.displayList.add(s), this.updateList.add(s), this.scene.sys.renderer instanceof g.Renderer.WebGL.WebGLRenderer && this.scene.sys.renderer.pipelines.rebind(), s
+        }, function(e, t = !1) {
+            this.scene.sys.renderer instanceof g.Renderer.WebGL.WebGLRenderer && this.scene.sys.renderer.pipelines.clear();
+            let r = e.x ? e.x : 0,
+                i = e.y ? e.y : 0,
+                a = e.boundsProvider ? e.boundsProvider : void 0,
+                o = this.scene.sys[n],
+                s = new ur(this.scene, o, r, i, e.dataKey, e.atlasKey, a);
+            return t !== void 0 && (e.add = t), this.scene.sys.renderer instanceof g.Renderer.WebGL.WebGLRenderer && this.scene.sys.renderer.pipelines.rebind(), g.GameObjects.BuildGameObject(this.scene, s, e)
+        })
+    }
+    boot() {
+        ht.yDown = !0, this.isWebGL ? (e.gameWebGLRenderer || (e.gameWebGLRenderer = new Vn(this.game.renderer.canvas, this.gl, !0)), this.onResize(), this.game.scale.on(g.Scale.Events.RESIZE, this.onResize, this)) : this.canvasRenderer || (this.canvasRenderer = new pr(this.scene.sys.context));
+        var t = this.systems.events;
+        t.once(`shutdown`, this.shutdown, this), t.once(`destroy`, this.destroy, this), this.game.events.once(`destroy`, this.gameDestroy, this)
+    }
+    onResize() {
+        var e = this.game.renderer,
+            t = this.webGLRenderer;
+        if (e && t) {
+            var n = e.width,
+                r = e.height;
+            t.camera.position.x = n / 2, t.camera.position.y = r / 2, t.camera.up.y = -1, t.camera.direction.z = 1, t.camera.setViewport(n, r)
+        }
+    }
+    shutdown() {
+        this.systems.events.off(`shutdown`, this.shutdown, this), this.isWebGL && this.game.scale.off(g.Scale.Events.RESIZE, this.onResize, this)
+    }
+    destroy() {
+        this.shutdown()
+    }
+    gameDestroy() {
+        this.pluginManager.removeGameObject(window.SPINE_GAME_OBJECT_TYPE ? window.SPINE_GAME_OBJECT_TYPE : x, !0, !0), this.webGLRenderer && this.webGLRenderer.dispose(), e.gameWebGLRenderer = null
+    }
+    getAtlas(e) {
+        let t;
+        if (this.atlasCache.exists(e)) t = this.atlasCache.get(e);
+        else {
+            if (t = new qe(this.game.cache.text.get(e).data), this.isWebGL) {
+                let n = this.gl,
+                    r = n.getParameter(n.UNPACK_PREMULTIPLY_ALPHA_WEBGL);
+                r && n.pixelStorei(n.UNPACK_PREMULTIPLY_ALPHA_WEBGL, !1);
+                for (let r of t.pages) r.setTexture(new _n(n, this.game.textures.get(e + `!` + r.name).getSourceImage(), !1));
+                r && n.pixelStorei(n.UNPACK_PREMULTIPLY_ALPHA_WEBGL, !0)
+            } else
+                for (let n of t.pages) n.setTexture(new dr(this.game.textures.get(e + `!` + n.name).getSourceImage()));
+            this.atlasCache.add(e, t)
+        }
+        return t
+    }
+    isAtlasPremultiplied(e) {
+        let t = this.game.cache.text.get(e);
+        return t ? t.premultipliedAlpha : !1
+    }
+    getSkeletonData(e, t) {
+        let n = this.getAtlas(t),
+            r = e + t,
+            i;
+        if (this.skeletonDataCache.exists(r)) i = this.skeletonDataCache.get(r);
+        else {
+            if (this.game.cache.json.exists(e)) {
+                let t = this.game.cache.json.get(e);
+                i = new fn(new et(n)).readSkeletonData(t)
+            } else {
+                let t = this.game.cache.binary.get(e);
+                i = new wt(new et(n)).readSkeletonData(new Uint8Array(t))
+            }
+            this.skeletonDataCache.add(r, i)
+        }
+        return i
+    }
+    createSkeleton(e, t) {
+        return new ht(this.getSkeletonData(e, t))
+    }
+};
+s(mr, `gameWebGLRenderer`, null), s(mr, `rendererId`, 0);
+var hr;
+(function(e) {
+    e[e.json = 0] = `json`, e[e.binary = 1] = `binary`
+})(hr || (hr = {}));
+var gr = class extends g.Loader.MultiFile {
+        constructor(e, t, n, r, i) {
+            if (typeof t != `string`) {
+                let e = t;
+                t = e.key, n = e.url, r = e.type === `spineJson` ? hr.json : hr.binary, i = e.xhrSettings
+            }
+            let a = null;
+            a = r == hr.json ? new g.Loader.FileTypes.JSONFile(e, {
+                key: t,
+                url: n,
+                extension: `json`,
+                xhrSettings: i
+            }) : new g.Loader.FileTypes.BinaryFile(e, {
+                key: t,
+                url: n,
+                extension: `skel`,
+                xhrSettings: i
+            }), super(e, y, t, [a]), s(this, `fileType`, void 0), this.fileType = r
+        }
+        onFileComplete(e) {
+            this.pending--
+        }
+        addToCache() {
+            this.isReadyToProcess() && this.files[0].addToCache()
+        }
+    },
+    _r = class extends g.Loader.MultiFile {
+        constructor(e, t, n, r, i) {
+            if (typeof t != `string`) {
+                let e = t;
+                t = e.key, n = e.url, r = e.premultipliedAlpha, i = e.xhrSettings
+            }
+            super(e, b, t, [new g.Loader.FileTypes.TextFile(e, {
+                key: t,
+                url: n,
+                xhrSettings: i,
+                extension: `atlas`
+            })]), s(this, `premultipliedAlpha`, void 0), this.premultipliedAlpha = r
+        }
+        onFileComplete(e) {
+            if (this.files.indexOf(e) != -1 && (this.pending--, e.type == `text`)) {
+                var t = e.data.split(/\r\n|\r|\n/);
+                let c = [];
+                c.push(t[0]);
+                for (var n = 1; n < t.length; n++) {
+                    var r = t[n];
+                    r.trim() === `` && n < t.length - 1 && (r = t[n + 1], c.push(r))
+                }
+                let l = e.src.match(/^.*\//) ?? ``;
+                for (var i = 0; i < c.length; i++) {
+                    var a = l + c[i],
+                        o = e.key + `!` + c[i],
+                        s = new g.Loader.FileTypes.ImageFile(this.loader, o, a);
+                    this.loader.keyExists(s) || (this.addToMultiFile(s), this.loader.addFile(s))
+                }
+            }
+        }
+        addToCache() {
+            if (this.isReadyToProcess()) {
+                let e = this.loader.textureManager;
+                for (let t of this.files) t.type == `image` ? e.exists(t.key) || e.addImage(t.key, t.data) : (this.premultipliedAlpha = this.premultipliedAlpha ?? (t.data.indexOf(`pma: true`) >= 0 || t.data.indexOf(`pma:true`) >= 0), t.data = {
+                    data: t.data,
+                    premultipliedAlpha: this.premultipliedAlpha
+                }, t.addToCache())
+            }
+        }
+    };
+window.spine = {
+    SpinePlugin: mr
+}, window[`spine.SpinePlugin`] = mr;
+var vr = t((e => {
+        Object.defineProperty(e, "__esModule", {
+            value: !0
+        }), e.getType = t, e.throwUnknownDataType = n, e.throwUnsupportedData = r;
+
+        function t(e) {
+            return Object.prototype.toString.call(e)
+        }
+
+        function n(e) {
+            throw TypeError(`unsupported data type: ` + t(e))
+        }
+
+        function r(e) {
+            throw TypeError(`unsupported data type: ` + e)
+        }
+    })),
+    yr = t((e => {
+        Object.defineProperty(e, "__esModule", {
+            value: !0
+        }), e.s_to_int = i, e.s_to_big_int = a, e.int_to_s = o, e.big_int_to_s = s, e.num_to_s = l, e.int_str_to_s = u, e.s_to_num = f;
+        var t = ``;
+        for (let e = 0; e < 10; e++) {
+            let n = String.fromCharCode(48 + e);
+            t += n
+        }
+        for (let e = 0; e < 26; e++) {
+            let n = String.fromCharCode(65 + e);
+            t += n
+        }
+        for (let e = 0; e < 26; e++) {
+            let n = String.fromCharCode(97 + e);
+            t += n
+        }
+        var n = t.length,
+            r = {};
+        for (let e = 0; e < n; e++) {
+            let n = t[e];
+            r[n] = e
+        }
+
+        function i(e) {
+            let t = 0,
+                i = 1;
+            for (let a = e.length - 1; a >= 0; a--) {
+                let o = r[e[a]];
+                o *= i, t += o, i *= n
+            }
+            return t
+        }
+
+        function a(e) {
+            let t = BigInt(0),
+                i = BigInt(1),
+                a = BigInt(n);
+            for (let n = e.length - 1; n >= 0; n--) {
+                let o = e[n],
+                    s = BigInt(r[o]);
+                s *= i, t += s, i *= a
+            }
+            return t
+        }
+
+        function o(e) {
+            if (e === 0) return t[0];
+            let r = [];
+            for (; e !== 0;) {
+                let i = e % n,
+                    a = t[i];
+                r.push(a), e -= i, e /= n
+            }
+            return r.reverse().join(``)
+        }
+
+        function s(e) {
+            let r = BigInt(0),
+                i = BigInt(n);
+            if (e === r) return t[0];
+            let a = [];
+            for (; e !== r;) {
+                let n = e % i,
+                    r = t[Number(n)];
+                a.push(r), e /= i
+            }
+            return a.reverse().join(``)
+        }
+
+        function c(e) {
+            return e.split(``).reverse().join(``)
+        }
+
+        function l(e) {
+            if (e < 0) return `-` + l(-e);
+            let [t, n] = e.toString().split(`.`);
+            if (!n) {
+                if (t.includes(`e`)) {
+                    let [e, r] = t.split(`e`);
+                    t = e, n = `0e` + r
+                } else return o(e)
+            }
+            let r;
+            n && ([n, r] = n.split(`e`)), t = u(t), n = c(n), n = u(n);
+            let i = t + `.` + n;
+            if (r) {
+                switch (i += `.`, r[0]) {
+                    case `+`:
+                        r = r.slice(1);
+                        break;
+                    case `-`:
+                        i += `-`, r = r.slice(1)
+                }
+                r = u(r), i += r
+            }
+            return i
+        }
+
+        function u(e) {
+            let t = +e;
+            return t.toString() === e && t + 1 !== t && t - 1 !== t ? o(t) : `:` + s(BigInt(e))
+        }
+
+        function d(e) {
+            return e[0] === `:` ? a(e.substring(1)).toString() : i(e).toString()
+        }
+
+        function f(e) {
+            if (e[0] === `-`) return -f(e.substr(1));
+            let [t, n, r] = e.split(`.`);
+            if (!n) return i(t);
+            t = d(t), n = d(n), n = c(n);
+            let a = t + `.` + n;
+            if (r) {
+                a += `e`;
+                let e = !1;
+                r[0] === `-` && (e = !0, r = r.slice(1)), r = d(r), a += e ? -r : +r
+            }
+            return +a
+        }
+    })),
+    br = t((e => {
+        Object.defineProperty(e, "__esModule", {
+            value: !0
+        }), e.encodeNum = n, e.decodeNum = r, e.decodeKey = i, e.encodeBool = a, e.decodeBool = o, e.encodeStr = s, e.decodeStr = c;
+        var t = yr();
+
+        function n(e) {
+            return e === 1 / 0 ? `N|+` : e === -1 / 0 ? `N|-` : Number.isNaN(e) ? `N|0` : `n|` + (0, t.num_to_s)(e)
+        }
+
+        function r(e) {
+            switch (e) {
+                case `N|+`:
+                    return 1 / 0;
+                case `N|-`:
+                    return -1 / 0;
+                case `N|0`:
+                    return NaN
+            }
+            return e = e.replace(`n|`, ``), (0, t.s_to_num)(e)
+        }
+
+        function i(e) {
+            return typeof e == `number` ? e : (0, t.s_to_int)(e)
+        }
+
+        function a(e) {
+            return e ? `b|T` : `b|F`
+        }
+
+        function o(e) {
+            switch (e) {
+                case `b|T`:
+                    return !0;
+                case `b|F`:
+                    return !1
+            }
+            return !!e
+        }
+
+        function s(e) {
+            switch (e[0] + e[1]) {
+                case `b|`:
+                case `o|`:
+                case `n|`:
+                case `a|`:
+                case `s|`:
+                    e = `s|` + e
+            }
+            return e
+        }
+
+        function c(e) {
+            return e[0] + e[1] === `s|` ? e.substr(2) : e
+        }
+    })),
+    xr = t((e => {
+        Object.defineProperty(e, "__esModule", {
+            value: !0
+        }), e.config = void 0, e.config = {
+            sort_key: !1,
+            error_on_nan: !1,
+            error_on_infinite: !1
+        }
+    })),
+    Sr = t((e => {
+        Object.defineProperty(e, "__esModule", {
+            value: !0
+        }), e.memToValues = a, e.makeInMemoryStore = o, e.makeInMemoryCache = s, e.makeInMemoryMemory = c, e.addValue = d;
+        var t = xr(),
+            n = vr(),
+            r = br(),
+            i = yr();
+
+        function a(e) {
+            return e.store.toArray()
+        }
+
+        function o() {
+            let e = [];
+            return {
+                forEach(t) {
+                    for (let n = 0; n < e.length; n++)
+                        if (t(e[n]) === `break`) return
+                },
+                add(t) {
+                    e.push(t)
+                },
+                toArray() {
+                    return e
+                }
+            }
+        }
+
+        function s() {
+            let e = Object.create(null),
+                t = Object.create(null);
+            return {
+                getValue(t) {
+                    return e[t]
+                },
+                getSchema(e) {
+                    return t[e]
+                },
+                forEachValue(t) {
+                    for (let [n, r] of Object.entries(e))
+                        if (t(n, r) === `break`) return
+                },
+                forEachSchema(e) {
+                    for (let [n, r] of Object.entries(t))
+                        if (e(n, r) === `break`) return
+                },
+                setValue(t, n) {
+                    e[t] = n
+                },
+                setSchema(e, n) {
+                    t[e] = n
+                },
+                hasValue(t) {
+                    return t in e
+                },
+                hasSchema(e) {
+                    return e in t
+                }
+            }
+        }
+
+        function c() {
+            return {
+                store: o(),
+                cache: s(),
+                keyCount: 0
+            }
+        }
+
+        function l(e, t) {
+            if (e.cache.hasValue(t)) return e.cache.getValue(t);
+            let n = e.keyCount++,
+                r = (0, i.num_to_s)(n);
+            return e.store.add(t), e.cache.setValue(t, r), r
+        }
+
+        function u(e, n) {
+            t.config.sort_key && n.sort();
+            let r = n.join(`,`);
+            if (e.cache.hasSchema(r)) return e.cache.getSchema(r);
+            let i = d(e, n, void 0);
+            return e.cache.setSchema(r, i), i
+        }
+
+        function d(e, i, a) {
+            if (i === null) return ``;
+            switch (typeof i) {
+                case `undefined`:
+                    if (Array.isArray(a)) return d(e, null, a);
+                    break;
+                case `object`:
+                    if (i === null) return l(e, null);
+                    if (Array.isArray(i)) {
+                        let t = `a`;
+                        for (let n = 0; n < i.length; n++) {
+                            let r = i[n],
+                                a = r === null ? `_` : d(e, r, i);
+                            t += `|` + a
+                        }
+                        return t === `a` && (t = `a|`), l(e, t)
+                    } {
+                        let t = Object.keys(i);
+                        if (t.length === 0) return l(e, `o|`);
+                        let n = `o`,
+                            r = u(e, t);
+                        n += `|` + r;
+                        for (let r of t) {
+                            let t = i[r],
+                                a = d(e, t, i);
+                            n += `|` + a
+                        }
+                        return l(e, n)
+                    }
+                case `boolean`:
+                    return l(e, (0, r.encodeBool)(i));
+                case `number`:
+                    return Number.isNaN(i) ? (t.config.error_on_nan && (0, n.throwUnsupportedData)(`[number NaN]`), ``) : i === 1 / 0 || i === -1 / 0 ? (t.config.error_on_infinite && (0, n.throwUnsupportedData)(`[number Infinity]`), ``) : l(e, (0, r.encodeNum)(i));
+                case `string`:
+                    return l(e, (0, r.encodeStr)(i))
+            }
+            return (0, n.throwUnknownDataType)(i)
+        }
+    })),
+    Cr = t((e => {
+        Object.defineProperty(e, "__esModule", {
+            value: !0
+        }), e.compress = i, e.decode = s, e.decompress = c;
+        var t = vr(),
+            n = br(),
+            r = Sr();
+
+        function i(e) {
+            let t = (0, r.makeInMemoryMemory)(),
+                n = (0, r.addValue)(t, e, void 0);
+            return [(0, r.memToValues)(t), n]
+        }
+
+        function a(e, t) {
+            if (t === `o|`) return {};
+            let n = {},
+                r = t.split(`|`),
+                i = r[1],
+                a = s(e, i),
+                o = r.length;
+            o - 2 == 1 && !Array.isArray(a) && (a = [a]);
+            for (let t = 2; t < o; t++) {
+                let i = a[t - 2],
+                    o = r[t];
+                o = s(e, o), n[i] = o
+            }
+            return n
+        }
+
+        function o(e, t) {
+            if (t === `a|`) return [];
+            let n = t.split(`|`),
+                r = n.length - 1,
+                i = Array(r);
+            for (let t = 0; t < r; t++) {
+                let r = n[t + 1];
+                r = s(e, r), i[t] = r
+            }
+            return i
+        }
+
+        function s(e, r) {
+            if (r === `` || r === `_`) return null;
+            let i = e[(0, n.decodeKey)(r)];
+            if (i === null) return i;
+            switch (typeof i) {
+                case `undefined`:
+                    return i;
+                case `number`:
+                    return i;
+                case `string`:
+                    switch (i[0] + i[1]) {
+                        case `b|`:
+                            return (0, n.decodeBool)(i);
+                        case `o|`:
+                            return a(e, i);
+                        case `n|`:
+                        case `N|+`:
+                        case `N|-`:
+                        case `N|0`:
+                            return (0, n.decodeNum)(i);
+                        case `a|`:
+                            return o(e, i);
+                        default:
+                            return (0, n.decodeStr)(i)
+                    }
+            }
+            return (0, t.throwUnknownDataType)(i)
+        }
+
+        function c(e) {
+            let [t, n] = e;
+            return s(t, n)
+        }
+    })),
+    wr = t((e => {
+        Object.defineProperty(e, "__esModule", {
+            value: !0
+        }), e.trimUndefined = t, e.trimUndefinedRecursively = n;
+
+        function t(e) {
+            for (let t in e) e[t] === void 0 && delete e[t]
+        }
+
+        function n(e) {
+            r(e, new Set)
+        }
+
+        function r(e, t) {
+            t.add(e);
+            for (let n in e)
+                if (e[n] === void 0) delete e[n];
+                else {
+                    let i = e[n];
+                    i && typeof i == `object` && !t.has(i) && r(i, t)
+                }
+        }
+    })),
+    Tr = t((e => {
+        Object.defineProperty(e, "__esModule", {
+            value: !0
+        }), e.config = e.trimUndefinedRecursively = e.trimUndefined = e.addValue = e.decode = e.decompress = e.compress = void 0;
+        var t = Cr();
+        Object.defineProperty(e, "compress", {
+            enumerable: !0,
+            get: function() {
+                return t.compress
+            }
+        }), Object.defineProperty(e, "decompress", {
+            enumerable: !0,
+            get: function() {
+                return t.decompress
+            }
+        });
+        var n = Cr();
+        Object.defineProperty(e, "decode", {
+            enumerable: !0,
+            get: function() {
+                return n.decode
+            }
+        });
+        var r = Sr();
+        Object.defineProperty(e, "addValue", {
+            enumerable: !0,
+            get: function() {
+                return r.addValue
+            }
+        });
+        var i = wr();
+        Object.defineProperty(e, "trimUndefined", {
+            enumerable: !0,
+            get: function() {
+                return i.trimUndefined
+            }
+        }), Object.defineProperty(e, "trimUndefinedRecursively", {
+            enumerable: !0,
+            get: function() {
+                return i.trimUndefinedRecursively
+            }
+        });
+        var a = xr();
+        Object.defineProperty(e, "config", {
+            enumerable: !0,
+            get: function() {
+                return a.config
+            }
+        })
+    })),
+    Q = function(e) {
+        return e.rest = `rest`, e.run = `run`, e.jumpStart = `jumpStart`, e.jumpMiddleIdle = `jumpMiddleIdle`, e.jumpDownIdle = `jumpDownIdle`, e.wallSlide = `wallSlide`, e.jumpLand = `jumpLand`, e
+    }({}),
+    Er = {
+        rest: `idle`,
+        run: `run`,
+        jumpStart: `jumpStart`,
+        jumpMiddleIdle: `jumpMiddleIdle`,
+        jumpDownIdle: `jumpDownIdle`,
+        wallSlide: `wallSlide`,
+        jumpLand: `jumpLand`
+    },
+    Dr = function(e) {
+        return e.idle = `idle`, e.blink = `blink`, e
+    }({}),
+    $ = {
+        enterAnimationDuration: 350,
+        exitAnimationDuration: 350,
+        body: {
+            animationNames: Er,
+            transition: {
+                defaultDuration: 100 / 1e3,
+                jumpFallingDuration: 450 / 1e3
+            }
+        },
+        eyes: {
+            animationNames: {
+                idle: `eyesOpen`,
+                blink: `eyesBlink`
+            },
+            blinkEvery: 4e3
+        },
+        movementPixels: {
+            rising: e => e * .12,
+            falling: e => e * .12,
+            running: e => e * .001
+        },
+        animationLocks: {
+            jumpStart: {
+                jumpMiddleIdle: 175
+            },
+            jumpLand: {
+                rest: 300,
+                run: 150
+            }
+        },
+        bodyLoopedAnimations: [`rest`, `run`, `wallSlide`],
+        jumpAnimations: [`jumpStart`, `jumpMiddleIdle`, `jumpDownIdle`, `wallSlide`, `jumpLand`]
+    },
+    Or = function(e) {
+        return e.jump = `jump`, e.land = `land`, e
+    }({}),
+    kr = {
+        jump: {
+            url: n(`characters/particles/jump.png`),
+            frameHeight: 88,
+            frameWidth: 495,
+            animation: {
+                frameRate: 24,
+                frames: {
+                    frames: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+                }
+            },
+            offset: {
+                y: -8
+            },
+            scale: .33
+        },
+        land: {
+            url: n(`characters/particles/land.png`),
+            frameHeight: 121,
+            frameWidth: 588,
+            animation: {
+                frameRate: 24,
+                frames: {
+                    frames: [0, 1, 2, 3, 4, 5, 6, 7]
+                }
+            },
+            offset: {
+                y: -5
+            },
+            scale: .18
+        }
+    },
+    Ar = {
+        land: {
+            minimumAirTime: 240
+        }
+    },
+    jr = e => d().characterManager.characters.get(e),
+    Mr = () => l.session.mapStyle === u.platformer,
+    Nr = () => Mr() && !f() && p() && l.me.editing.preferences.topDownControlsActive,
+    Pr = () => l.session.mapStyle === u.topDown,
+    Fr = e => {
+        let t = jr(e.characterId);
+        if (!t || !Mr()) return !1;
+        if (t.isMain) {
+            if (t.physics.state.jump.isJumping && t.physics.state.jump.jumpCounter !== t.physics.prevState.jump.jumpCounter) return !0
+        } else {
+            let e = t.body,
+                n = t.prevBody;
+            if (e.y < n.y && (!t.animation.nonMainCharacterState.grounded && t.animation.prevNonMainCharacterState.grounded || !t.animation.nonMainCharacterState.grounded && t.animation.nonMainCharacterState.currentPoint !== t.animation.prevNonMainCharacterState.currentPoint && t.animation.nonMainCharacterState.pointYChange > t.animation.prevNonMainCharacterState.pointYChange)) return !0
+        }
+        return !1
+    },
+    Ir = e => {
+        let t = jr(e.characterId);
+        return !t || !Mr() ? !1 : t.isMain ? t.physics.state.grounded && !t.physics.prevState.grounded : t.animation.nonMainCharacterState.grounded && !t.animation.prevNonMainCharacterState.grounded
+    },
+    Lr = e => {
+        let t = jr(e.characterId);
+        return !t || !Mr() ? !1 : t.isMain ? Mr() && t.physics.state.jump.isJumping : !t.animation.nonMainCharacterState.grounded
+    },
+    Rr = e => {
+        if (!Mr() || Nr()) return !0;
+        let t = jr(e.characterId);
+        return t ? t.isMain ? t.physics.state.grounded : t.animation.nonMainCharacterState.grounded : !1
+    },
+    zr = {
+        tickRate: 12,
+        debug: !1,
+        skipTilesDebug: !1
+    },
+    Br = e => Math.round(e / 1e3 * zr.tickRate),
+    Vr = {
+        worldScale: 100,
+        staticGridSize: 5
+    },
+    Hr = {
+        width: 64,
+        height: 64
+    },
+    Ur = .3,
+    Wr = 46,
+    Gr = Ur,
+    Kr = {
+        maxHeight: Ur / 2,
+        minWidth: Ur
+    },
+    qr = Ur * 2 * 6.5 / zr.tickRate,
+    Jr = {
+        wallJump: {
+            heightMultiplier: .8,
+            startVelocityX: .5,
+            durationMS: 1e3,
+            forceInputDurationMS: 150,
+            transitionDurationMS: 1e3,
+            neutralWallSpeedChangePerSecond: .5,
+            againstWallSpeedChangePerSecond: .8,
+            withWallSpeedChangePerSecond: .03,
+            speedFactor: 0,
+            slidingDownGravityMultiplier: .2,
+            slidingUpGravityMultiplier: 1.25,
+            slidingCollisionAngleToleranceDeg: 5,
+            cancelDueMovementThreshold: .1,
+            cancelDueMovementMinPercent: .3,
+            coyoteLimitMS: 200
+        },
+        velocity: {
+            inertiaDampingFactor: .9,
+            minVelocityThreshold: .025,
+            inputVelocityControlRecoveryDurationMS: 1e3,
+            disableControllerHelpersAboveInertiaMagnitude: .3
+        },
+        fallVelocityLimit: {
+            wallSlidingTransitionFactor: .5,
+            defaultTransitionFactor: .9
+        },
+        capsule: {
+            topDown: {
+                radius: .2,
+                height: .1,
+                angle: 90
+            },
+            platformer: {
+                radius: .27,
+                height: .06,
+                angle: 0
+            }
+        },
+        topDownBaseSpeed: c.normal / Vr.worldScale / zr.tickRate,
+        platformerGroundSpeed: qr,
+        feetSensorPosition: {
+            topDown: {
+                x: .2,
+                y: 0
+            },
+            platformer: {
+                x: 0,
+                y: .3
+            }
+        },
+        aroundSensorPosition: {
+            topDown: {
+                x: -.18,
+                y: 0
+            },
+            platformer: {
+                x: 0,
+                y: 0
+            }
+        },
+        controllerOffset: .01,
+        climbAngle: Wr,
+        slideAngle: Wr,
+        groundSnapHeight: Gr,
+        autoStep: Kr,
+        groundedGravity: .001,
+        maxGravityPerSecond: 10,
+        timeToMaxGravityMS: 625,
+        yTravelUntilMaxGravity: 3.5,
+        movement: {
+            baseSpeed: qr,
+            ground: {
+                accelerationSpeed: qr / 16,
+                decelerationSpeed: qr / 2,
+                maxAccelerationSpeed: qr / 2.3
+            },
+            air: {
+                accelerationSpeed: qr / 4,
+                decelerationSpeed: qr / 4,
+                maxAccelerationSpeed: qr / 2.3
+            }
+        },
+        jump: {
+            minVelY: .3,
+            maxVelY: 1.2,
+            height: Hr.height * 3 / Vr.worldScale,
+            durationMS: 400,
+            hangTimeMS: 50,
+            subsequentJumpMultiplier: .66,
+            maxJumps: 2,
+            coyoteJumpLimitMS: 200,
+            cooldownMS: 200,
+            cancelJumpIfHitHeadCausesYMovementLessThan: Ur / 3 / (20 / zr.tickRate),
+            airSpeedMinimum: {
+                multiplier: .75,
+                maxSpeed: qr
+            }
+        },
+        jumpLandImpact: {
+            epsilon: .05,
+            jumpShapeCastDistanceMultiplier: 4,
+            landShapeCastDistance: .1
+        },
+        normals: {
+            maxGroundCollision: Math.cos(Math.PI - g.default.Math.DegToRad(Wr)),
+            minHeadCollision: .6
+        },
+        size: 3,
+        inputsStorageLimit: zr.tickRate * 5
+    },
+    Yr = {
+        maxGravityPerSecond: Jr.maxGravityPerSecond,
+        timeToMaxGravityMS: Jr.timeToMaxGravityMS,
+        yTravelUntilMaxGravity: Jr.yTravelUntilMaxGravity,
+        jumpHeight: Jr.jump.height,
+        jumpDurationMS: Jr.jump.durationMS,
+        jumpHangTimeMS: Jr.jump.hangTimeMS,
+        subsequentJumpMultiplier: Jr.jump.subsequentJumpMultiplier
+    },
+    Xr = function(e) {
+        return e.healthAndSheild = `healthAndShield`, e.fragility = `fragility`, e
+    }({}),
+    Zr = function(e) {
+        return e.freeForAll = `Free For All`, e.cooperative = `Cooperative`, e.splitIntoSize = `Split Into Size`, e.specificTeamAmount = `Specific Team Amount`, e
+    }({}),
+    Qr = function(e) {
+        return e.player = `player`, e.team = `team`, e
+    }({}),
+    $r = function(e) {
+        return e.hiToLow = `Highest to lowest`, e.lowToHi = `Lowest to Highest`, e
+    }({}),
+    ei = function(e) {
+        return e.enabled = `Enabled`, e.disabled = `Disabled`, e
+    }({}),
+    ti = function(e) {
+        return e.off = `Off`, e.countdown = `Count Down`, e.countup = `Count Up`, e
+    }({}),
+    ni = function(e) {
+        return e.sky = `sky`, e.pixelStar = `pixelStar`, e.paintedSky = `paintedSky`, e.paintedSkyStripes = `paintedSkyStripes`, e
+    }({}),
+    ri = () => {
+        var e;
+        let t = l.world.mapOptionsJSON;
+        if (t) return JSON.parse(t);
+        let n = (e = m()) == null || (e = e.state) == null ? void 0 : e.mapSettings;
+        if (n) return JSON.parse(n)
+    },
+    ii = () => {
+        var e;
+        return Mr() && !Nr() && ((e = ri()) == null ? void 0 : e.wallJumpEnabled) === !0
+    },
+    ai = Br(Jr.wallJump.coyoteLimitMS),
+    oi = e => {
+        let {
+            character: t
+        } = e;
+        return t.physics.state.grounded || !ii() ? !1 : t.physics.state.wallJump.slidingTicks === ai && t.physics.state.wallJump.slidingSide !== void 0
+    },
+    si = function(e) {
+        return e.music = `music`, e.soundEffect = `soundEffect`, e
+    }({}),
+    ci = e => {
+        let t = i(e.type === `music` ? `musicVolume` : `soundEffectVolume`);
+        return e.volume * (0, h.clamp)(t, 0, 1)
+    },
+    li = class {
+        constructor(e) {
+            this.size = 1, this.currentCount = 1, this.next = () => (this.currentCount++, this.currentCount > this.size && (this.currentCount = 1), this.currentCount), this.size = e
+        }
+    },
+    ui = new li(3),
+    di = new li(3),
+    fi = () => {
+        a({
+            path: n(`sounds/core/platforming/jump/${ui.next()}.mp3`),
+            volume: ci({
+                volume: .37,
+                type: si.soundEffect
+            }),
+            forceCreateNewSound: !0
+        })
+    },
+    pi = () => {
+        a({
+            path: n(`sounds/core/platforming/land/${di.next()}.mp3`),
+            volume: ci({
+                volume: .24,
+                type: si.soundEffect
+            }),
+            forceCreateNewSound: !0
+        })
+    },
+    mi = (e, t) => {
+        let n = e.body,
+            r = e.prevBody,
+            i = g.default.Math.Distance.Between(n.x, n.y, r.x, r.y),
+            a = Math.abs(n.x - r.x);
+        if (Pr() || Nr()) return i > $.movementPixels.running(t) ? Q.run : Q.rest;
+        let o = Rr({
+            characterId: e.id
+        });
+        if (e.isMain ? oi({
+                character: e
+            }) : e.animation.nonMainCharacterState.wallSliding) return Q.wallSlide;
+        if (Fr({
+                characterId: e.id
+            }) && i > $.movementPixels.rising(t)) {
+            let t = e.isMain ? e.physics.prevState.grounded : e.animation.prevNonMainCharacterState.grounded;
+            return !o && t && e.animation.currentBodyAnimation !== Q.jumpStart && e.impactAnimation.play(Or.jump), Q.jumpStart
+        }
+        if (o) {
+            if (Ir({
+                    characterId: e.id
+                }) && (i > $.movementPixels.falling(t) || !e.isMain)) return e.animation.currentBodyAnimation !== Q.jumpLand && Date.now() - e.animation.lastGroundedAnimationAt > Ar.land.minimumAirTime && (e.impactAnimation.play(Or.land), e.isMain && pi()), Q.jumpLand;
+            if (a > $.movementPixels.running(t)) return Q.run
+        } else {
+            let e = n.y < r.y;
+            return e && i > $.movementPixels.rising(t) ? Q.jumpMiddleIdle : i > $.movementPixels.falling(t) ? Q.jumpDownIdle : e ? Q.jumpMiddleIdle : Q.jumpDownIdle
+        }
+        return Lr({
+            characterId: e.id
+        }) ? e.animation.currentBodyAnimation : Q.rest
+    },
+    hi = {
+        COMMON: 0,
+        BODY_SUPPLEMENTAL: 1,
+        MOVEMENT_SUPPLEMENTAL: 2,
+        JUMP_SUPPLEMENTAL: 3,
+        EYES: 4,
+        BODY: 5
+    },
+    gi = class {
+        constructor(e) {
+            this.skinChanged = !1, this.availableAnimations = [], this.currentBodyAnimation = Q.rest, this.bodyAnimationLocked = !1, this.bodyAnimationStartedAt = 0, this.currentEyeAnimation = Dr.idle, this.nonMainCharacterState = {
+                grounded: !0,
+                wallSliding: !1
+            }, this.prevNonMainCharacterState = {
+                ...this.nonMainCharacterState
+            }, this.lastGroundedAnimationAt = 0, this.update = e => {
+                this.character.isMain || (this.nonMainCharacterState.grounded = this.character.movement.nonMainCharacterGrounded, this.nonMainCharacterState.wallSliding = this.character.movement.nonMainCharacterWallSliding);
+                let t = mi(this.character, e);
+                this.playBodyAnimation(t), (t === Q.rest || t === Q.run) && (this.lastGroundedAnimationAt = Date.now()), this.character.isMain || (this.prevNonMainCharacterState = {
+                    ...this.nonMainCharacterState
+                })
+            }, this.setupAnimations = () => {
+                let e = this.character.spine;
+                this.availableAnimations = e.skeleton.data.animations.map(e => e.name), e.animationStateData.defaultMix = $.body.transition.defaultDuration, e.animationStateData.setMix($.body.animationNames.jumpMiddleIdle, $.body.animationNames.jumpDownIdle, $.body.transition.jumpFallingDuration), e.animationStateData.setMix($.eyes.animationNames.blink, $.eyes.animationNames.idle, 0), e.animationStateData.setMix($.eyes.animationNames.idle, $.eyes.animationNames.blink, 0), this.playBodyAnimation(this.currentBodyAnimation), this.playEyeAnimation(this.currentEyeAnimation), this.availableAnimations.includes(`skins-${this.character.skin.skinId}-common`) && this.character.spine.animationState.setAnimation(hi.COMMON, `skins-${this.character.skin.skinId}-common`, !0), this.character.spine.animationState.addListener({
+                    complete: e => {
+                        this.onAnimationComplete(e)
+                    }
+                })
+            }, this.applyIdlePoseForCapture = () => {
+                let e = this.character.spine,
+                    t = Q.rest;
+                this.currentBodyAnimation = t, this.currentEyeAnimation = Dr.idle, this.bodyAnimationLocked = !1, e.animationState.setAnimation(hi.BODY, $.body.animationNames[t], !0), e.animationState.setAnimation(hi.EYES, $.eyes.animationNames[Dr.idle], !0), this.playBodySupplementalAnimation(t), e.updatePose(0)
+            }, this.playBodyAnimation = e => {
+                var t;
+                if (e === this.currentBodyAnimation && !this.skinChanged) return;
+                if (this.bodyAnimationLocked && !this.skinChanged) {
+                    var n;
+                    let t = ((n = $.animationLocks) == null || (n = n[this.currentBodyAnimation]) == null ? void 0 : n[e]) ?? 0;
+                    if (t && Date.now() < this.bodyAnimationStartedAt + t) return
+                }
+                let r = !!((t = $.animationLocks) != null && t[e]);
+                this.bodyAnimationLocked = r, this.bodyAnimationStartedAt = Date.now(), e === Q.rest ? this.startBlinkAnimation() : this.stopBlinkAnimation(), this.currentBodyAnimation = e, this.character.spine.animationState.setAnimation(hi.BODY, $.body.animationNames[e], $.bodyLoopedAnimations.includes(e)), this.character.dimensions.onPotentialDimensionsChange(), this.playBodySupplementalAnimation(e)
+            }, this.playEyeAnimation = e => {
+                (e !== this.currentEyeAnimation || this.skinChanged) && (this.currentEyeAnimation = e, this.character.spine.animationState.setAnimation(hi.EYES, $.eyes.animationNames[e], !0))
+            }, this.playAnimationOrClearTrack = (e, t) => {
+                let n = !1;
+                for (let r of e)
+                    if (this.availableAnimations.includes(r)) {
+                        this.character.spine.animationState.setAnimation(t, r, !0), n = !0;
+                        break
+                    } n || this.character.spine.animationState.clearTrack(t)
+            }, this.playBodySupplementalAnimation = e => {
+                this.playAnimationOrClearTrack([`skins-${this.character.skin.skinId}-${$.body.animationNames[e]}`, `skins-${this.character.skin.skinId}-pose`], hi.BODY_SUPPLEMENTAL), this.playMovementSupplementalAnimation(e), this.playJumpSupplementalAnimation(e)
+            }, this.playMovementSupplementalAnimation = e => {
+                this.playAnimationOrClearTrack([`skins-${this.character.skin.skinId}-movement=${e===Q.rest?`false`:`true`}`], hi.MOVEMENT_SUPPLEMENTAL)
+            }, this.playJumpSupplementalAnimation = e => {
+                let t = $.jumpAnimations.includes(e);
+                this.playAnimationOrClearTrack([`skins-${this.character.skin.skinId}-jumping=${t?`true`:`false`}`], hi.JUMP_SUPPLEMENTAL)
+            }, this.startBlinkAnimation = () => {
+                this.blinkTimer || (this.playEyeAnimation(Dr.idle), this.blinkTimer = window.setTimeout(() => {
+                    this.blinkTimer = null, this.playEyeAnimation(Dr.blink)
+                }, $.eyes.blinkEvery))
+            }, this.stopBlinkAnimation = () => {
+                this.playEyeAnimation(Dr.idle), this.blinkTimer && (window.clearTimeout(this.blinkTimer), this.blinkTimer = null)
+            }, this.onAnimationComplete = e => {
+                e.trackIndex === hi.EYES && this.currentBodyAnimation === Q.rest && this.currentEyeAnimation === Dr.blink && this.startBlinkAnimation()
+            }, this.onSkinChanged = () => {
+                this.skinChanged = !0, this.setupAnimations(), this.skinChanged = !1
+            }, this.suspend = () => {
+                this.blinkTimer && (window.clearTimeout(this.blinkTimer), this.blinkTimer = null)
+            }, this.destroy = () => {
+                this.suspend()
+            }, this.character = e.character
+        }
+    },
+    _i = !1,
+    vi = () => {
+        _i || (_i = !0, delete mr.gameWebGLRenderer, Object.defineProperty(mr.prototype, "gameWebGLRenderer", {
+            value: null,
+            writable: !0,
+            configurable: !0
+        }), Object.defineProperty(mr.prototype, "webGLRenderer", {
+            get: function() {
+                return this.gameWebGLRenderer
+            }
+        }), mr.prototype.boot = function() {
+            ht.yDown = !0, this.isWebGL ? (this.gameWebGLRenderer || (this.gameWebGLRenderer = new Vn(this.game.renderer.canvas, this.gl, !0)), this.onResize(), this.game.scale.on(g.default.Scale.Events.RESIZE, this.onResize, this)) : this.canvasRenderer || (this.canvasRenderer = new pr(this.scene.sys.context));
+            let e = this.systems.events;
+            e.once(`shutdown`, this.shutdown, this), e.once(`destroy`, this.destroy, this), this.game.events.once(`destroy`, this.gameDestroy, this)
+        }, mr.prototype.gameDestroy = function() {
+            this.pluginManager.removeGameObject(window.SPINE_GAME_OBJECT_TYPE ? window.SPINE_GAME_OBJECT_TYPE : x, !0, !0), this.webGLRenderer && this.webGLRenderer.dispose(), this.gameWebGLRenderer = null
+        })
+    },
+    yi = !1,
+    bi = () => {
+        if (yi) return;
+        yi = !0;
+        let e = Phaser.Renderer.WebGL.PipelineManager.prototype.boot;
+        Phaser.Renderer.WebGL.PipelineManager.prototype.boot = function(t, n, r) {
+            if (t != null && t.skipPipelinesAtBoot) {
+                var i = Phaser.Renderer.WebGL.Pipelines.MultiPipeline,
+                    a = new i({
+                        game: this.game
+                    });
+                this.add(`MultiPipeline`, a), this.set(a), this.default = a, this.MULTI_PIPELINE = a
+            } else e.call(this, t, n, r)
+        }
+    };
+export {
+    $ as A, zr as C, jr as D, Pr as E, lr as F, b as I, y as L, Dr as M, Tr as N, kr as O, mr as P, Br as S, Mr as T, Zr as _, fi as a, Hr as b, oi as c, ti as d, Xr as f, ei as g, $r as h, gi as i, Q as j, Or as k, ii as l, Qr as m, vi as n, si as o, ni as p, hi as r, ci as s, bi as t, ri as u, Jr as v, Nr as w, Vr as x, Yr as y
+};

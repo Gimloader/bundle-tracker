@@ -1,254 +1,197 @@
 import {
-    aQ as m,
-    L as e,
-    aK as w,
-    aU as f
-} from "./App-41.js";
-import {
-    e as r,
-    I as g,
-    i as n,
-    j as l
-} from "./FixSpinePlugin.js";
-import {
-    Z as b
-} from "./ZonedDeviceDisplay.js";
-import {
-    G as o
+    t as e
 } from "./GetAssetPath.js";
 import {
-    F as c,
-    R as C
+    n as t,
+    t as n
+} from "./isVersion.js";
+import {
+    r,
+    t as i
+} from "./InPhase.js";
+import {
+    t as a
+} from "./Device.js";
+import {
+    r as o
+} from "./GlobalLocalDepth.js";
+import {
+    Et as s,
+    v as c
+} from "./App-42.js";
+import {
+    t as l
+} from "./ZonedDeviceDisplay.js";
+import {
+    n as u,
+    t as d
 } from "./FetchOptionSchemaProperty.js";
 import {
-    A as _
+    t as f
 } from "./AddIgnoredStaticBodiesWhenCollisionsEnabled.js";
-import "./_index.js";
-import "./Button.js";
-import "./polished.esm.js";
-import "./inheritsLoose.js";
-import "./mobxreact.esm.js";
-import "./index-21.js";
-import "./QuizTypes.js";
-import "./MapModeType.js";
-import "./TutorialConsts.js";
-import "./ActionButton.js";
-import "./index-5.js";
-import "./playSound.js";
-import "./MapSound.js";
-import "./howler.js";
-import "./index-18.js";
-import "./context.js";
-import "./FontAwesomeIcon.js";
-import "./Centered.js";
-import "./CapitalizeFirstLetter.js";
-import "./index-4.js";
-import "./motion.js";
-import "./index-2.js";
-import "./index-14.js";
-import "./EditOutlined.js";
-import "./styleChecker.js";
-import "./index-3.js";
-import "./CheckOutlined.js";
-import "./CopyOutlined.js";
-import "./SixteenByNineScaler.js";
-import "./index-20.js";
-import "./index-22.js";
-import "./index-1.js";
-import "./progress.js";
-import "./ElementIds.js";
-import "./SeasonTicketName.js";
-import "./useQuery.js";
-import "./___vite-browser-external_commonjs-proxy.js";
-import "./util-1.js";
-import "./util-2.js";
-import "./Shortcut.js";
-import "./Names.js";
-import "./useWillUnmount.js";
-import "./CircularProgress.js";
-import "./clsx.m.js";
-import "./index-6.js";
-import "./AccessibleAnchor.js";
-import "./index-17.js";
-import "./use-force-update.js";
-import "./GimkitLiveQuestion.js";
-import "./Text.js";
-import "./getCloudinaryUrl.js";
-import "./LazyLatexRenderer.js";
-import "./Tooltip.js";
-import "./use-motion-value.js";
-import "./index-9.js";
-import "./index-23.js";
-import "./useIntervalWhen.js";
-import "./index-10.js";
-import "./move.js";
-import "./react-flip-move.es.js";
-import "./sounds.js";
-import "./App-5.js";
-import "./AnimatedBackground-2.js";
-import "./useDebouncedValue.js";
-import "./CloseCircleOutlined.js";
-import "./MapStyle.js";
-import "./FillRemainingSpace.js";
-import "./index-24.js";
-var u = (t => (t.none = "None", t.blastball = "Blastball", t))(u || {}),
-    A = (t => (t.left = "Left", t.right = "Right", t))(A || {});
-const y = {
-        imageId: o("devices/ball_zone/icon.png"),
-        imageUrl: o("devices/ball_zone/icon.png")
+var p = function(e) {
+        return e.none = `None`, e.blastball = `Blastball`, e
+    }({}),
+    m = function(e) {
+        return e.left = `Left`, e.right = `Right`, e
+    }({}),
+    h = {
+        imageId: e(`devices/ball_zone/icon.png`),
+        imageUrl: e(`devices/ball_zone/icon.png`)
     },
-    p = {
+    g = {
         side_bottom: {
-            imageId: o("devices/ball_zone/blastball_side_bottom.png"),
-            imageUrl: o("devices/ball_zone/blastball_side_bottom.png")
+            imageId: e(`devices/ball_zone/blastball_side_bottom.png`),
+            imageUrl: e(`devices/ball_zone/blastball_side_bottom.png`)
         },
         side_top: {
-            imageId: o("devices/ball_zone/blastball_side_top.png"),
-            imageUrl: o("devices/ball_zone/blastball_side_top.png")
+            imageId: e(`devices/ball_zone/blastball_side_top.png`),
+            imageUrl: e(`devices/ball_zone/blastball_side_top.png`)
         },
         crossbar: {
-            imageId: o("devices/ball_zone/blastball_crossbar.png"),
-            imageUrl: o("devices/ball_zone/blastball_crossbar.png")
+            imageId: e(`devices/ball_zone/blastball_crossbar.png`),
+            imageUrl: e(`devices/ball_zone/blastball_crossbar.png`)
         },
         dot: {
-            imageId: o("devices/ball_zone/blastball_dot.png"),
-            imageUrl: o("devices/ball_zone/blastball_dot.png")
+            imageId: e(`devices/ball_zone/blastball_dot.png`),
+            imageUrl: e(`devices/ball_zone/blastball_dot.png`)
         }
     },
-    I = t => {
-        const a = i => t.options.side === A.left ? i : -i;
-        t.parts.add.ninePatch({
-            ...p.crossbar,
-            layerId: e.DevicesUnderCharacters,
+    _ = e => {
+        let t = .15,
+            n = t => e.options.side === m.left ? t : -t;
+        e.parts.add.ninePatch({
+            ...g.crossbar,
+            layerId: o.DevicesUnderCharacters,
             columns: [1, 1],
             rows: [200, 200],
-            height: t.options.height,
-            width: 203 * .15,
-            scale: .15,
-            depthChange: m(2),
-            x: a(-t.options.width / 2 + 5),
-            onReady: i => {
-                t.updatePartAlpha(i)
+            height: e.options.height,
+            width: 203 * t,
+            scale: t,
+            depthChange: s(2),
+            x: n(-e.options.width / 2 + 5),
+            onReady: t => {
+                e.updatePartAlpha(t)
             }
-        }), t.parts.add.ninePatch({
-            ...p.side_top,
-            layerId: e.DepthSortedCharactersAndDevices,
+        }), e.parts.add.ninePatch({
+            ...g.side_top,
+            layerId: o.DepthSortedCharactersAndDevices,
             columns: [850, 850],
             rows: [1, 1],
-            height: 606 * .15,
-            width: a(t.options.width + 30),
-            scale: .15,
-            x: a(-5),
-            y: -t.options.height / 2,
-            onReady: i => {
-                t.updatePartAlpha(i)
+            height: 606 * t,
+            width: n(e.options.width + 30),
+            scale: t,
+            x: n(-5),
+            y: -e.options.height / 2,
+            onReady: t => {
+                e.updatePartAlpha(t)
             }
-        }), t.parts.add.ninePatch({
-            ...p.side_bottom,
-            layerId: e.DepthSortedCharactersAndDevices,
+        }), e.parts.add.ninePatch({
+            ...g.side_bottom,
+            layerId: o.DepthSortedCharactersAndDevices,
             columns: [850, 850],
             rows: [1e-5, 1e-5],
-            height: 606 * .15,
-            width: a(t.options.width + 30),
-            scale: .15,
-            x: a(-5),
-            y: t.options.height / 2,
-            onReady: i => {
-                t.updatePartAlpha(i)
+            height: 606 * t,
+            width: n(e.options.width + 30),
+            scale: t,
+            x: n(-5),
+            y: e.options.height / 2,
+            onReady: t => {
+                e.updatePartAlpha(t)
             }
-        }), t.colliders.add.box({
+        }), e.colliders.add.box({
             x: 0,
-            y: -t.options.height / 2 + 10,
-            w: t.options.width + 16,
+            y: -e.options.height / 2 + 10,
+            w: e.options.width + 16,
             h: 50
-        }), t.colliders.add.box({
+        }), e.colliders.add.box({
             x: 0,
-            y: t.options.height / 2 + 10,
-            w: t.options.width + 16,
+            y: e.options.height / 2 + 10,
+            w: e.options.width + 16,
             h: 50
-        }), t.colliders.add.box({
-            x: a(-t.options.width / 2 + 5),
+        }), e.colliders.add.box({
+            x: n(-e.options.width / 2 + 5),
             y: 0,
             w: 28,
-            h: t.options.height
-        }), t.parts.add.sprite({
-            ...p.dot,
-            layerId: e.DepthSortedCharactersAndDevices,
-            x: a(5),
-            y: -t.options.height / 2 + 20,
+            h: e.options.height
+        }), e.parts.add.sprite({
+            ...g.dot,
+            layerId: o.DepthSortedCharactersAndDevices,
+            x: n(5),
+            y: -e.options.height / 2 + 20,
             depthChange: 10,
-            onReady: i => {
-                t.updatePartAlpha(i), i.view.setScale(.15)
+            onReady: n => {
+                e.updatePartAlpha(n), n.view.setScale(t)
             }
-        }), t.parts.add.sprite({
-            ...p.dot,
-            layerId: e.DepthSortedCharactersAndDevices,
-            x: a(5),
-            y: t.options.height / 2 + 20,
+        }), e.parts.add.sprite({
+            ...g.dot,
+            layerId: o.DepthSortedCharactersAndDevices,
+            x: n(5),
+            y: e.options.height / 2 + 20,
             depthChange: 10,
-            onReady: i => {
-                t.updatePartAlpha(i), i.view.setScale(.15)
+            onReady: n => {
+                e.updatePartAlpha(n), n.view.setScale(t)
             }
         })
-    };
-class jt extends w {
-    constructor(d) {
-        if (super(d), this.updatePartAlpha = i => {
-                const s = this.getAlpha();
-                r() && i.updateAlpha(s > 0 ? 1 : 0)
-            }, this.updateAlpha = () => {
-                const i = this.getAlpha();
-                r() && this.parts.forEach(s => {
-                    s.updateAlpha(i > 0 ? 1 : 0)
-                }), this.rect && this.rect.updateAlpha(i)
-            }, this.onStateChange = i => {
-                i === "active" && (this.updateAlpha(), this.state.active && _(this))
-            }, this.checkIfCollidersEnabled = () => this.state.active, this.setupVisualEditing = () => {
-                if (!g() || !n()) return;
-                const i = c(this, "width"),
-                    s = c(this, "height");
-                this.visualEditing.add.box({
-                    width: this.options.width,
-                    height: this.options.height,
-                    angle: 0,
-                    rotable: !1,
-                    minWidth: i.min,
-                    maxWidth: i.max,
-                    minHeight: s.min,
-                    maxHeight: s.max,
-                    keepRatio: !1,
-                    onChange: h => {
-                        C(h.x, h.y, {
-                            width: h.width,
-                            height: h.height
-                        })
-                    }
-                })
-            }, g() && n() && this.parts.add.sprite({
-                ...y,
-                depthChange: m(2)
-            }).view.setScale(.17), r() || l() ? this.options.visibleInGame : b.shouldShow(this)) {
-            this.setupVisualEditing();
-            const i = f(this.options.color);
-            this.rect = this.parts.add.rect({
-                color: i,
-                layerId: e.DevicesUnderCharacters,
-                alpha: this.getAlpha(),
-                width: Math.abs(this.options.width),
-                height: Math.abs(this.options.height),
-                borderColor: i,
-                borderAlpha: r() || l() ? 0 : this.options.backgroundAlpha,
-                borderWidth: 4,
-                depthChange: m(1),
-                ignoreInput: !0
-            }), this.options.style === u.blastball && I(this)
+    },
+    v = class extends a {
+        constructor(e) {
+            if (super(e), this.updatePartAlpha = e => {
+                    let t = this.getAlpha();
+                    i() && e.updateAlpha(+(t > 0))
+                }, this.updateAlpha = () => {
+                    let e = this.getAlpha();
+                    i() && this.parts.forEach(t => {
+                        t.updateAlpha(+(e > 0))
+                    }), this.rect && this.rect.updateAlpha(e)
+                }, this.onStateChange = e => {
+                    e === `active` && (this.updateAlpha(), this.state.active && f(this))
+                }, this.checkIfCollidersEnabled = () => this.state.active, this.setupVisualEditing = () => {
+                    if (!r() || !t()) return;
+                    let e = d(this, `width`),
+                        n = d(this, `height`);
+                    this.visualEditing.add.box({
+                        width: this.options.width,
+                        height: this.options.height,
+                        angle: 0,
+                        rotable: !1,
+                        minWidth: e.min,
+                        maxWidth: e.max,
+                        minHeight: n.min,
+                        maxHeight: n.max,
+                        keepRatio: !1,
+                        onChange: e => {
+                            u(e.x, e.y, {
+                                width: e.width,
+                                height: e.height
+                            })
+                        }
+                    })
+                }, r() && t() && this.parts.add.sprite({
+                    ...h,
+                    depthChange: s(2)
+                }).view.setScale(.17), i() || n() ? this.options.visibleInGame : l.shouldShow(this)) {
+                this.setupVisualEditing();
+                let e = c(this.options.color);
+                this.rect = this.parts.add.rect({
+                    color: e,
+                    layerId: o.DevicesUnderCharacters,
+                    alpha: this.getAlpha(),
+                    width: Math.abs(this.options.width),
+                    height: Math.abs(this.options.height),
+                    borderColor: e,
+                    borderAlpha: i() || n() ? 0 : this.options.backgroundAlpha,
+                    borderWidth: 4,
+                    depthChange: s(1),
+                    ignoreInput: !0
+                }), this.options.style === p.blastball && _(this)
+            }
         }
-    }
-    getAlpha() {
-        return r() ? this.state.active ? this.options.backgroundAlpha : 0 : l() ? this.options.backgroundAlpha : n() && b.shouldShowInnerZone(this) ? this.options.backgroundAlpha : 0
-    }
-}
+        getAlpha() {
+            return i() ? this.state.active ? this.options.backgroundAlpha : 0 : n() || t() && l.shouldShowInnerZone(this) ? this.options.backgroundAlpha : 0
+        }
+    };
 export {
-    jt as BallZoneDevice, jt as
+    v as BallZoneDevice, v as
     default
 };

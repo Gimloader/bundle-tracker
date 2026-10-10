@@ -1,4 +1,4 @@
-const e = ["Bottom", "Lower", "Middle", "Upper", "Top"];
+var e = [`Bottom`, `Lower`, `Middle`, `Upper`, `Top`];
 export {
-    e as T
+    e as t
 };

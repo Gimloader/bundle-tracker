@@ -1,26 +1,26 @@
 import {
-    a1 as i
-} from "./App-41.js";
-const e = [],
-    l = a => e.includes(a),
-    r = a => {
-        const {
+    o as e
+} from "./rolldown-runtime.js";
+import {
+    Vt as t
+} from "./App-42.js";
+var n = e(t()),
+    r = [],
+    i = e => r.includes(e),
+    a = e => {
+        let {
             familyName: t,
-            onLoad: o
-        } = a;
-        if (e.includes(t)) {
-            o && o();
-            return
-        }
-        i.load({
+            onLoad: i
+        } = e;
+        r.includes(t) ? i && i() : n.default.load({
             google: {
                 families: [`${t}:400,700`]
             },
-            fontactive: d => {
-                e.includes(d) || e.push(d), t === d && o && o()
+            fontactive: e => {
+                r.includes(e) || r.push(e), t === e && i && i()
             }
         })
     };
 export {
-    r as L, l as i
+    i as n, a as t
 };
