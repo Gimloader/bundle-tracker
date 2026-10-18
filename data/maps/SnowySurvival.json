@@ -27528,6 +27528,2908 @@
                 "whenValueChangesBroadcastOnChannel": "",
                 "broadcastValueChangesOnGameStart": true
             }
+        },
+        {
+            "id": "NWi30JpGiRfQEvxzvfOfj",
+            "x": 5827,
+            "y": 10681,
+            "depth": 0,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "healthGranter",
+            "options": {
+                "amount": 2,
+                "grantType": "healthFirst",
+                "grantChannel": "grant health human"
+            }
+        },
+        {
+            "id": "qzfG59EOJxRK1FGXbiJJk",
+            "x": 5846,
+            "y": 10578,
+            "depth": 10578.292424435935,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "property",
+            "options": {
+                "propertyName": "grantHealth",
+                "valueType": "boolean",
+                "defaultValueText": "",
+                "defaultValueNumber": 0,
+                "defaultValueBoolean": true,
+                "propertyType": "global",
+                "whenValueChangesBroadcastOnChannel": "",
+                "broadcastValueChangesOnGameStart": false
+            }
+        },
+        {
+            "id": "fRtzJGYVh2UHA0rlNzDu1",
+            "x": 7025,
+            "y": 11280,
+            "depth": 11280.017369020767,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "property",
+            "options": {
+                "propertyName": "passedInitialCountdown",
+                "valueType": "boolean",
+                "defaultValueText": "",
+                "defaultValueNumber": 0,
+                "defaultValueBoolean": false,
+                "propertyType": "global",
+                "whenValueChangesBroadcastOnChannel": "",
+                "broadcastValueChangesOnGameStart": false
+            }
+        },
+        {
+            "id": "BUtqWCI6vlqoNsijwUTe3",
+            "x": 6114,
+            "y": 10830,
+            "depth": 10831.520426673227,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "lifecycle",
+            "options": {
+                "event": "characterJoinsLate",
+                "transmitOnChannel": ""
+            }
+        },
+        {
+            "id": "Ggn2PJtQGPZxZnLu-GDkL",
+            "x": 6291,
+            "y": 10820,
+            "depth": null,
+            "deviceId": "trigger",
+            "options": {
+                "channelToTrigger": "",
+                "triggerWhenReceivingOnChannel": "",
+                "visibleInGame": false,
+                "team": "__ANY_TEAM__",
+                "scope": "global",
+                "allowedModeType": "all",
+                "activeOnGameStart": true,
+                "activateChannel": "",
+                "deactivateChannel": "",
+                "activeScope": "global",
+                "triggeredByPlayerCollision": false
+            }
+        },
+        {
+            "id": "YIVm66Nf6U0Wzqa5vSvDr",
+            "x": 5518,
+            "y": 11371,
+            "depth": 11371.569382384374,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "textExplainer",
+            "options": {
+                "header": "Cursed!",
+                "content": "Now that you're cursed, you'll answer questions to earn snowballs. Use your snowball launcher to knockout players and spread the curse!",
+                "openWhenReceivingFrom": "",
+                "iconImage": "/assets/map/modes/snowInfection/snowflake.svg",
+                "style": "modal",
+                "callToActionStyle": "standard",
+                "group": "",
+                "callToActionLabel": "Got It",
+                "callToActionChannel": "",
+                "secondaryCallToActionLabel": "",
+                "secondaryCallToActionChannel": "",
+                "scope": "player",
+                "backgroundColor": "#161616",
+                "fontFamily": "Outfit",
+                "closableByUser": true,
+                "closeWhenReceivingFrom": "",
+                "whenClosedTransmitOn": ""
+            }
+        },
+        {
+            "id": "TfqsYibg4EI5L-rVbgvvC",
+            "x": 5515,
+            "y": 11003,
+            "depth": 11003.382459849843,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "textExplainer",
+            "options": {
+                "header": "Cursed!",
+                "content": "You were chosen as the first one to get cursed. Now you answer questions to earn snowballs. Use your snowball launcher to knockout players and spread the curse!",
+                "openWhenReceivingFrom": "",
+                "iconImage": "/assets/map/modes/snowInfection/snowflake.svg",
+                "style": "modal",
+                "callToActionStyle": "standard",
+                "group": "",
+                "callToActionLabel": "Got It",
+                "callToActionChannel": "",
+                "secondaryCallToActionLabel": "",
+                "secondaryCallToActionChannel": "",
+                "scope": "global",
+                "backgroundColor": "#161616",
+                "fontFamily": "Outfit",
+                "closableByUser": true,
+                "closeWhenReceivingFrom": "",
+                "whenClosedTransmitOn": ""
+            }
+        },
+        {
+            "id": "Dy6IWUA7089AQ1BPtj5vE",
+            "x": 5970,
+            "y": 7228,
+            "depth": 7434.943995552064,
+            "layerId": "DepthSortedCharactersAndDevices",
+            "deviceId": "textBillboard",
+            "options": {
+                "text": "PROJECT MAP\nRESEARCH",
+                "fontSize": 9,
+                "scope": "global",
+                "googleFont": "Fugaz One",
+                "color": "#000000",
+                "alpha": 0.9,
+                "strokeThickness": 0,
+                "strokeColor": "#FFFFFF",
+                "rotation": 0,
+                "visibleOnGameStart": "Yes",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "veG4ahmlnzFyDLxa8vBHF",
+            "x": 5968,
+            "y": 7435,
+            "depth": 7434.581054486254,
+            "deviceId": "button",
+            "options": {
+                "guiMessage": "Read Case Log",
+                "channel": "",
+                "visibleInGame": false,
+                "interactionDuration": 1,
+                "activeOnStart": true,
+                "activateChannel": "",
+                "deactivateChannel": "",
+                "scope": "global",
+                "radius": 100,
+                "size": 20
+            }
+        },
+        {
+            "id": "8jl1QURRBpSps4ankXuXJ",
+            "x": 9460,
+            "y": 8790,
+            "depth": 8995.823998527529,
+            "layerId": "DepthSortedCharactersAndDevices",
+            "deviceId": "textBillboard",
+            "options": {
+                "text": "IONIC & SVENA",
+                "fontSize": 9,
+                "scope": "global",
+                "googleFont": "Fugaz One",
+                "color": "#ffffff",
+                "alpha": 0.9,
+                "strokeThickness": 0,
+                "strokeColor": "#FFFFFF",
+                "rotation": 0,
+                "visibleOnGameStart": "Yes",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "XCBDSTgQMTs7iOrKy4O0S",
+            "x": 6088,
+            "y": 7228,
+            "depth": 7434.159998016358,
+            "layerId": "DepthSortedCharactersAndDevices",
+            "deviceId": "textBillboard",
+            "options": {
+                "text": "THE WATER\nSUPPLY",
+                "fontSize": 9,
+                "scope": "global",
+                "googleFont": "Fugaz One",
+                "color": "#000000",
+                "alpha": 0.9,
+                "strokeThickness": 0,
+                "strokeColor": "#FFFFFF",
+                "rotation": 0,
+                "visibleOnGameStart": "Yes",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "z-gyuO0ugIkjS-2WLNM34",
+            "x": 9340,
+            "y": 8997,
+            "depth": 8996.498768086654,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "button",
+            "options": {
+                "guiMessage": "Read Case Log",
+                "channel": "",
+                "visibleInGame": false,
+                "interactionDuration": 1,
+                "activeOnStart": true,
+                "activateChannel": "",
+                "deactivateChannel": "",
+                "scope": "global",
+                "radius": 100,
+                "size": 20
+            }
+        },
+        {
+            "id": "bLZkRMsi64Tz4KCNbCVDg",
+            "x": 9342,
+            "y": 8788,
+            "depth": 8996.080000000002,
+            "layerId": "DepthSortedCharactersAndDevices",
+            "deviceId": "textBillboard",
+            "options": {
+                "text": "SUSPICIOUS\nFARM ACTIVITY",
+                "fontSize": 9,
+                "scope": "global",
+                "googleFont": "Fugaz One",
+                "color": "#ffffff",
+                "alpha": 0.9,
+                "strokeThickness": 0,
+                "strokeColor": "#FFFFFF",
+                "rotation": 0,
+                "visibleOnGameStart": "Yes",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "2KioNSSNCGCsObwrTh6lP",
+            "x": 9471,
+            "y": 9074,
+            "depth": 9073.9177136004,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "textExplainer",
+            "options": {
+                "header": "Case Log V-73-M1",
+                "content": "After realizing that our own agents can be cursed, I started to wonder what other potential dangers we may face. Recently, while in the farming area, I noticed some peculiar occurrences that I can't quite explain. The longer I stayed in that area, the more unusual I felt, as though I was being affected in a strange and corrupt way. Upon discussing this with others, I discovered that they did not experience similar effects. However, as a precautionary measure, I suggest that all agents avoid the farming area",
+                "openWhenReceivingFrom": "",
+                "iconImage": "",
+                "style": "modal",
+                "callToActionStyle": "standard",
+                "group": "",
+                "callToActionLabel": "Close",
+                "callToActionChannel": "",
+                "secondaryCallToActionLabel": "",
+                "secondaryCallToActionChannel": "",
+                "scope": "global",
+                "backgroundColor": "#FFFFFF",
+                "fontFamily": "Kalam",
+                "closableByUser": true,
+                "closeWhenReceivingFrom": "",
+                "whenClosedTransmitOn": ""
+            }
+        },
+        {
+            "id": "P7uYG6dC2Y9DSFZt2hYtM",
+            "x": 4961,
+            "y": 10936,
+            "depth": 10935.508676483798,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "movementMeter",
+            "options": {
+                "itemToTrack": "energy",
+                "drainAmount": 25,
+                "drainIntervalMs": 250,
+                "showOutOfItemAlert": false,
+                "outOfItemAlertTitle": "",
+                "outOfItemAlertContent": "",
+                "outOfItemChannel": "",
+                "speedWhenOutOfItem": 0,
+                "useAsDefault": true,
+                "warningAmount": 5,
+                "showWarningAlert": false,
+                "warningAlertTitle": "",
+                "warningAlertContent": "",
+                "warningChannel": "",
+                "activateChannel": "",
+                "deactivateChannel": "become zombie"
+            }
+        },
+        {
+            "id": "Zsv-MnW5zmJ_c67f-qFBV",
+            "x": 5093,
+            "y": 11285,
+            "depth": 11284.779735423865,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "relay",
+            "options": {
+                "relayAs": "All Players On Team...",
+                "team": "1",
+                "channelToTrigger": "",
+                "triggerWhenReceivingOnChannel": ""
+            }
+        },
+        {
+            "id": "j3wfDYu5hpVg88B-Y4vGp",
+            "x": 4832,
+            "y": 11282,
+            "depth": 11281.779735423865,
+            "deviceId": "lifecycle",
+            "options": {
+                "event": "Game Starts",
+                "transmitOnChannel": ""
+            }
+        },
+        {
+            "id": "k69PwrpsGWW-hLrPzpVYJ",
+            "x": 5178,
+            "y": 11281,
+            "depth": 0,
+            "deviceId": "xp",
+            "options": {
+                "amount": 70,
+                "reason": "Survived 1 Minute",
+                "grantOnChannel": "",
+                "useIncrementalGrant": true,
+                "incrementalGrantCharacterRequirement": 15,
+                "useMinimumCharacterCount": true,
+                "minimumCharacterCount": 4
+            }
+        },
+        {
+            "id": "onVy9DxG3sTiMPZYCiBo8",
+            "x": 4962,
+            "y": 11284,
+            "depth": 11283.779735423865,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "repeater",
+            "options": {
+                "startChannel": "",
+                "actionChannel": "",
+                "repeatInterval": 60,
+                "stopRepeatingStrategy": "channel",
+                "timePeriod": 10,
+                "numberOfRepetitions": 5,
+                "stopChannel": "",
+                "maxConcurrentTasksPerPlayer": 3,
+                "triggerTaskOnStart": false
+            }
+        },
+        {
+            "id": "ZsFZnvuNeLUFtS0ese0CK",
+            "x": 4974,
+            "y": 11340,
+            "depth": 11340.397996626541,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "textBillboard",
+            "options": {
+                "text": "Grant survival XP every 60 seconds",
+                "fontSize": 17,
+                "scope": "global",
+                "googleFont": "Roboto",
+                "color": "#000000",
+                "alpha": 1,
+                "strokeThickness": 0,
+                "strokeColor": "#FFFFFF",
+                "rotation": 0,
+                "visibleOnGameStart": "No",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "Wggez9g7NrzruJ-pOT1la",
+            "x": 7025,
+            "y": 9575,
+            "depth": 9575.025775433553,
+            "layerId": "DepthSortedCharactersAndDevices",
+            "deviceId": "prop",
+            "options": {
+                "propId": "Metal Shovel Standing",
+                "Scale": 1,
+                "Angle": 0,
+                "UseColliders": true,
+                "visibleOnGameStart": true,
+                "scope": "global",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": "",
+                "Tint": "#FFFFFF",
+                "Alpha": 1,
+                "FlipX": false,
+                "shadowsEnabled": true,
+                "shadowsPlacement": "Floor",
+                "canBeDamaged": false,
+                "infiniteHealth": false,
+                "health": 100,
+                "healthbar": "Off",
+                "useAdaptiveHealth": false,
+                "adaptiveHealthPerPlayer": 25,
+                "safeTeamId": "_no_safe_team_prop_device",
+                "onDestroyedChannel": "",
+                "grantItemWhenDamaged": false,
+                "itemToGrant": null,
+                "amountOfItem": 1,
+                "healWhenDestroyed": false,
+                "healAfterTime": 3,
+                "healAmount": 25,
+                "healWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "4tBS6NDOLpMsOPmSOuGTr",
+            "x": 6975,
+            "y": 9579,
+            "depth": 9579.025775433553,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "prop",
+            "options": {
+                "propId": "Can 10",
+                "Scale": 1,
+                "Angle": 0,
+                "UseColliders": false,
+                "visibleOnGameStart": true,
+                "scope": "global",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": "",
+                "Tint": "#FFFFFF",
+                "Alpha": 1,
+                "FlipX": false,
+                "shadowsEnabled": true,
+                "shadowsPlacement": "Floor",
+                "canBeDamaged": false,
+                "infiniteHealth": false,
+                "health": 100,
+                "healthbar": "Off",
+                "useAdaptiveHealth": false,
+                "adaptiveHealthPerPlayer": 25,
+                "safeTeamId": "_no_safe_team_prop_device",
+                "onDestroyedChannel": "",
+                "grantItemWhenDamaged": false,
+                "itemToGrant": null,
+                "amountOfItem": 1,
+                "healWhenDestroyed": false,
+                "healAfterTime": 3,
+                "healAmount": 25,
+                "healWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "5eKZkNouuUOYhfNNb7HLP",
+            "x": 6612,
+            "y": 9025,
+            "depth": 9024.555697196321,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "prop",
+            "options": {
+                "propId": "Shell 3",
+                "Scale": 1,
+                "Angle": 0,
+                "UseColliders": true,
+                "visibleOnGameStart": true,
+                "scope": "global",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": "",
+                "Tint": "#FFFFFF",
+                "Alpha": 1,
+                "FlipX": false,
+                "shadowsEnabled": true,
+                "shadowsPlacement": "Floor",
+                "canBeDamaged": false,
+                "infiniteHealth": false,
+                "health": 100,
+                "healthbar": "Off",
+                "useAdaptiveHealth": false,
+                "adaptiveHealthPerPlayer": 25,
+                "safeTeamId": "_no_safe_team_prop_device",
+                "onDestroyedChannel": "",
+                "grantItemWhenDamaged": false,
+                "itemToGrant": null,
+                "amountOfItem": 1,
+                "healWhenDestroyed": false,
+                "healAfterTime": 3,
+                "healAmount": 25,
+                "healWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "rI3ajNLlcCEm65OhsIvHg",
+            "x": 6778,
+            "y": 9427,
+            "depth": 9426.883569414242,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "gimkitLiveQuestion",
+            "options": {
+                "kitId": "",
+                "whenAnsweredCorrectlyTransmitOn": "correct",
+                "whenAnsweredIncorrectlyTransmitOn": "incorrect",
+                "openWhenReceivingOn": "",
+                "closable": true,
+                "textShownWhenAnsweringCorrectly": "+1 Bait",
+                "textShownWhenAnsweringIncorrectly": "",
+                "textShownWhenAnsweringScope": "global",
+                "closeWhenReceivingOn": "",
+                "enableWhenReceivingOn": "",
+                "disableWhenReceivingOn": "",
+                "whenOpenedChannel": "",
+                "whenClosedChannel": "",
+                "sound": "default",
+                "correctSound": "default",
+                "incorrectSound": "default",
+                "actionSound": "default",
+                "useCustomAction": false,
+                "customActionText": "",
+                "channelToTriggerCustomAction": "",
+                "size": 48
+            }
+        },
+        {
+            "id": "J61vQKcrMfsyDvpmOoFGi",
+            "x": 6779,
+            "y": 9490,
+            "depth": null,
+            "deviceId": "textBillboard",
+            "options": {
+                "text": "QUESTION ANSWERING STATION",
+                "fontSize": 11,
+                "scope": "global",
+                "googleFont": "Fugaz One",
+                "color": "#000000",
+                "alpha": 0.6,
+                "strokeThickness": 0,
+                "strokeColor": "#FFFFFF",
+                "rotation": 0,
+                "visibleOnGameStart": "Yes",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "rZEGLvKUcK2gvelLgHyMk",
+            "x": 5344,
+            "y": 11777,
+            "depth": 11777.455318781278,
+            "deviceId": "textExplainer",
+            "options": {
+                "header": "Out of bait!",
+                "content": "You need bait in order to fish. Go earn bait by answering questions at the Question Answering Station!",
+                "openWhenReceivingFrom": "",
+                "iconImage": "/assets/map/inventory/resources/bait.png",
+                "style": "modal",
+                "callToActionStyle": "standard",
+                "group": "",
+                "callToActionLabel": "Close",
+                "callToActionChannel": "",
+                "secondaryCallToActionLabel": "",
+                "secondaryCallToActionChannel": "",
+                "scope": "global",
+                "backgroundColor": "#FFFFFF",
+                "fontFamily": "Outfit",
+                "closableByUser": true,
+                "closeWhenReceivingFrom": "",
+                "whenClosedTransmitOn": ""
+            }
+        },
+        {
+            "id": "Z9sX4t3bx0G-6tRe2fhQv",
+            "x": 5453,
+            "y": 11702,
+            "depth": 11702.455318781278,
+            "deviceId": "wireRepeater",
+            "options": {
+                "delaySeconds": 0,
+                "team": "__ANY_TEAM__"
+            }
+        },
+        {
+            "id": "m1_g1rqUW_YdfeH0uzbeM",
+            "x": 5557,
+            "y": 11763,
+            "depth": 11763.455318781278,
+            "deviceId": "textExplainer",
+            "options": {
+                "header": "",
+                "content": "Looking for fish...",
+                "openWhenReceivingFrom": "",
+                "iconImage": "/assets/map/icons/rod.png",
+                "style": "modal",
+                "callToActionStyle": "standard",
+                "group": "",
+                "callToActionLabel": "",
+                "callToActionChannel": "",
+                "secondaryCallToActionLabel": "",
+                "secondaryCallToActionChannel": "",
+                "scope": "global",
+                "backgroundColor": "#FFFFFF",
+                "fontFamily": "Outfit",
+                "closableByUser": false,
+                "closeWhenReceivingFrom": "",
+                "whenClosedTransmitOn": ""
+            }
+        },
+        {
+            "id": "GYWx13wM7BXbpX8o_sMcs",
+            "x": 5559,
+            "y": 11670,
+            "depth": 11670.455318781278,
+            "deviceId": "soundEffect",
+            "options": {
+                "audioUrl": "/assets/map/sounds/fishing_rod_throw.mp3",
+                "volume": 50,
+                "playWhenReceivingFrom": "",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "oeZkRaIoDdYeJ5IX_pLEi",
+            "x": 6266,
+            "y": 9208,
+            "depth": 9207.866675495236,
+            "deviceId": "button",
+            "options": {
+                "guiMessage": "Cast Fishing Rod",
+                "channel": "attempt fish",
+                "visibleInGame": false,
+                "interactionDuration": 0,
+                "activeOnStart": true,
+                "activateChannel": "",
+                "deactivateChannel": "",
+                "scope": "global",
+                "radius": 222.48384273683686,
+                "size": 26
+            }
+        },
+        {
+            "id": "La81S9z6HiQCKB4-5nMzF",
+            "x": 6375,
+            "y": 9219,
+            "depth": 9218.852283261362,
+            "deviceId": "button",
+            "options": {
+                "guiMessage": "Cast Fishing Rod",
+                "channel": "attempt fish",
+                "visibleInGame": false,
+                "interactionDuration": 0,
+                "activeOnStart": true,
+                "activateChannel": "",
+                "deactivateChannel": "",
+                "scope": "global",
+                "radius": 222.48384273683686,
+                "size": 26
+            }
+        },
+        {
+            "id": "pw3GYNHu2m4VNO842_U4G",
+            "x": 6334,
+            "y": 9260,
+            "depth": 9260.219740766566,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "button",
+            "options": {
+                "guiMessage": "Cast Fishing Rod",
+                "channel": "attempt fish",
+                "visibleInGame": false,
+                "interactionDuration": 0,
+                "activeOnStart": true,
+                "activateChannel": "",
+                "deactivateChannel": "",
+                "scope": "global",
+                "radius": 222.48384273683686,
+                "size": 20.835217828033215
+            }
+        },
+        {
+            "id": "zKzxi2FNa2U7hYfkENElI",
+            "x": 5343,
+            "y": 11699,
+            "depth": 11699.330897432012,
+            "deviceId": "vendingMachine",
+            "options": {
+                "grantAction": "Broadcast On Channel",
+                "requiredItemId": "bait",
+                "amountOfRequiredItem": 1,
+                "grantedItemId": null,
+                "amountOfGrantedItem": 1,
+                "purchaseChannel": "",
+                "visibleInGame": false,
+                "grantedItemImageUrl": "",
+                "grantedItemName": "",
+                "grantedItemDescription": "",
+                "deactivateOnPurchase": false,
+                "useAdaptiveCost": false,
+                "adaptiveCostIncreasePerPlayer": 0,
+                "allowFunding": false,
+                "fundingScope": "global",
+                "useLimitedStock": false,
+                "maxStock": 10,
+                "maxStockScope": "global",
+                "attachCostToNameWhenHidden": true,
+                "activeOnStart": true,
+                "activeScope": "player",
+                "activateChannel": "",
+                "deactivateChannel": "",
+                "allowedPurchaseTeam": "__ANY_TEAM__",
+                "attemptToPurchaseChannel": "attempt fish",
+                "onAttemptedPurchaseFailedChannel": "",
+                "interactionDuration": 1,
+                "matchItemRarity": false,
+                "backgroundColor1": "#d44224",
+                "backgroundColor2": "#f7d253",
+                "raysColor": "#f7d253",
+                "numberOfRays": 16,
+                "raysWidthFactor": 1.25,
+                "raysAlpha": 0.5,
+                "raysAdditive": false,
+                "soundEnabled": false,
+                "showShadow": false,
+                "width": 250,
+                "height": 250,
+                "radius": 100
+            }
+        },
+        {
+            "id": "Pac7PjdtqYY_KWi1J9HCH",
+            "x": 5288,
+            "y": 12104,
+            "depth": 12105.056005202703,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "textExplainer",
+            "options": {
+                "header": "Gray Fish Caught!",
+                "content": "A gray(t) catch.",
+                "openWhenReceivingFrom": "grayfish caught",
+                "iconImage": "/assets/map/inventory/resources/gray_fish.png",
+                "style": "modal",
+                "callToActionStyle": "standard",
+                "group": "",
+                "callToActionLabel": "Fish Again",
+                "callToActionChannel": "attempt fish",
+                "secondaryCallToActionLabel": "Close",
+                "secondaryCallToActionChannel": "",
+                "scope": "global",
+                "backgroundColor": "#FFFFFF",
+                "fontFamily": "Outfit",
+                "closableByUser": true,
+                "closeWhenReceivingFrom": "",
+                "whenClosedTransmitOn": ""
+            }
+        },
+        {
+            "id": "_foN_uBQ3usSZp6cXbeca",
+            "x": 5288,
+            "y": 12174,
+            "depth": 12174.416831614279,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "itemGranter",
+            "options": {
+                "itemId": "gray-fish",
+                "itemChange": 1,
+                "grantWhenReceivingFromChannel": "grayfish caught",
+                "fullStrategy": "overflow",
+                "replaceWhenFull": false
+            }
+        },
+        {
+            "id": "rp-ARiIclqzfUm5nJ0Vgn",
+            "x": 5409,
+            "y": 12175,
+            "depth": 12175.302937227136,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "itemGranter",
+            "options": {
+                "itemId": "green-fish",
+                "itemChange": 1,
+                "grantWhenReceivingFromChannel": "greenfish caught",
+                "fullStrategy": "overflow",
+                "replaceWhenFull": false
+            }
+        },
+        {
+            "id": "Qa8aRzxK-CGmY83i1zKAE",
+            "x": 5522,
+            "y": 12175,
+            "depth": 12175.302937210949,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "itemGranter",
+            "options": {
+                "itemId": "blue-fish",
+                "itemChange": 1,
+                "grantWhenReceivingFromChannel": "bluefish caught",
+                "fullStrategy": "overflow",
+                "replaceWhenFull": false
+            }
+        },
+        {
+            "id": "hD1do1sm0RkNDl_CkM_M2",
+            "x": 5522,
+            "y": 12105,
+            "depth": 12105.942110799373,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "textExplainer",
+            "options": {
+                "header": "Blue Fish Caught!",
+                "content": "Just blending in...",
+                "openWhenReceivingFrom": "bluefish caught",
+                "iconImage": "/assets/map/inventory/resources/blue_fish.png",
+                "style": "modal",
+                "callToActionStyle": "standard",
+                "group": "",
+                "callToActionLabel": "Fish Again",
+                "callToActionChannel": "attempt fish",
+                "secondaryCallToActionLabel": "Close",
+                "secondaryCallToActionChannel": "",
+                "scope": "global",
+                "backgroundColor": "#FFFFFF",
+                "fontFamily": "Outfit",
+                "closableByUser": true,
+                "closeWhenReceivingFrom": "",
+                "whenClosedTransmitOn": ""
+            }
+        },
+        {
+            "id": "5Y11moPx4xj-rgZp6AgeS",
+            "x": 5639,
+            "y": 12177,
+            "depth": 12177.075148436665,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "itemGranter",
+            "options": {
+                "itemId": "purple-fish",
+                "itemChange": 1,
+                "grantWhenReceivingFromChannel": "purplefish caught",
+                "fullStrategy": "overflow",
+                "replaceWhenFull": false
+            }
+        },
+        {
+            "id": "ao3PLr-yiejMGAiDatjFv",
+            "x": 5639,
+            "y": 12107,
+            "depth": 12107.71432202509,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "textExplainer",
+            "options": {
+                "header": "Purple Fish Caught!",
+                "content": "Believe it or not, I'm all natural.",
+                "openWhenReceivingFrom": "purplefish caught",
+                "iconImage": "/assets/map/inventory/resources/purple_fish.png",
+                "style": "modal",
+                "callToActionStyle": "standard",
+                "group": "",
+                "callToActionLabel": "Fish Again",
+                "callToActionChannel": "attempt fish",
+                "secondaryCallToActionLabel": "Close",
+                "secondaryCallToActionChannel": "",
+                "scope": "global",
+                "backgroundColor": "#FFFFFF",
+                "fontFamily": "Outfit",
+                "closableByUser": true,
+                "closeWhenReceivingFrom": "",
+                "whenClosedTransmitOn": ""
+            }
+        },
+        {
+            "id": "k8b9EXetXx__bzF0K9NKT",
+            "x": 5760,
+            "y": 12176,
+            "depth": 12176.189042812708,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "itemGranter",
+            "options": {
+                "itemId": "gim-fish",
+                "itemChange": 1,
+                "grantWhenReceivingFromChannel": "gimfish caught",
+                "fullStrategy": "overflow",
+                "replaceWhenFull": false
+            }
+        },
+        {
+            "id": "-kxKxuOIrjAOKR1guvTnY",
+            "x": 5409,
+            "y": 12105,
+            "depth": 12105.94211081556,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "textExplainer",
+            "options": {
+                "header": "Green Fish Caught!",
+                "content": "Just because I'm green, doesn't mean I'm healthy.",
+                "openWhenReceivingFrom": "greenfish caught",
+                "iconImage": "/assets/map/inventory/resources/green_fish.png",
+                "style": "modal",
+                "callToActionStyle": "standard",
+                "group": "",
+                "callToActionLabel": "Fish Again",
+                "callToActionChannel": "attempt fish",
+                "secondaryCallToActionLabel": "Close",
+                "secondaryCallToActionChannel": "",
+                "scope": "global",
+                "backgroundColor": "#FFFFFF",
+                "fontFamily": "Outfit",
+                "closableByUser": true,
+                "closeWhenReceivingFrom": "",
+                "whenClosedTransmitOn": ""
+            }
+        },
+        {
+            "id": "7ZqcZ1cAUMCYL1HFGQ0Ul",
+            "x": 5683,
+            "y": 11710,
+            "depth": null,
+            "deviceId": "soundEffect",
+            "options": {
+                "audioUrl": "/assets/map/sounds/open_chest.mp3",
+                "volume": 40,
+                "playWhenReceivingFrom": "fished",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "MdNtoIDMlAHB6yukVj4rx",
+            "x": 6782,
+            "y": 9322,
+            "depth": 9322,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "itemGranter",
+            "options": {
+                "itemId": "bait",
+                "itemChange": 1,
+                "grantWhenReceivingFromChannel": "",
+                "fullStrategy": "overflow",
+                "replaceWhenFull": false
+            }
+        },
+        {
+            "id": "erYfBUr4DhpE511EYQapD",
+            "x": 7082,
+            "y": 7338,
+            "depth": 7338.242608781893,
+            "layerId": "DepthSortedCharactersAndDevices",
+            "deviceId": "prop",
+            "options": {
+                "propId": "Office Plant 3",
+                "Scale": 0.7831184813891474,
+                "Angle": 0,
+                "UseColliders": true,
+                "visibleOnGameStart": true,
+                "scope": "global",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": "",
+                "Tint": "#FFFFFF",
+                "Alpha": 1,
+                "FlipX": false,
+                "shadowsEnabled": true,
+                "shadowsPlacement": "Floor",
+                "canBeDamaged": false,
+                "infiniteHealth": false,
+                "health": 100,
+                "healthbar": "Off",
+                "useAdaptiveHealth": false,
+                "adaptiveHealthPerPlayer": 25,
+                "safeTeamId": "_no_safe_team_prop_device",
+                "onDestroyedChannel": "",
+                "grantItemWhenDamaged": false,
+                "itemToGrant": null,
+                "amountOfItem": 1,
+                "healWhenDestroyed": false,
+                "healAfterTime": 3,
+                "healAmount": 25,
+                "healWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "qYzP5SB_X0WP5rY-FYptw",
+            "x": 7034,
+            "y": 7337,
+            "depth": 7337.495894457253,
+            "layerId": "DepthSortedCharactersAndDevices",
+            "deviceId": "prop",
+            "options": {
+                "propId": "Office Plant 3",
+                "Scale": 0.7831184813891474,
+                "Angle": 0,
+                "UseColliders": true,
+                "visibleOnGameStart": true,
+                "scope": "global",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": "",
+                "Tint": "#FFFFFF",
+                "Alpha": 1,
+                "FlipX": false,
+                "shadowsEnabled": true,
+                "shadowsPlacement": "Floor",
+                "canBeDamaged": false,
+                "infiniteHealth": false,
+                "health": 100,
+                "healthbar": "Off",
+                "useAdaptiveHealth": false,
+                "adaptiveHealthPerPlayer": 25,
+                "safeTeamId": "_no_safe_team_prop_device",
+                "onDestroyedChannel": "",
+                "grantItemWhenDamaged": false,
+                "itemToGrant": null,
+                "amountOfItem": 1,
+                "healWhenDestroyed": false,
+                "healAfterTime": 3,
+                "healAmount": 25,
+                "healWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "w_QxrvLt0C5mAbLh6Y6iu",
+            "x": 6768,
+            "y": 7245,
+            "depth": 7244.855302261723,
+            "layerId": "DepthSortedCharactersAndDevices",
+            "deviceId": "prop",
+            "options": {
+                "propId": "Stool Echo",
+                "Scale": 0.77908688872718,
+                "Angle": 0,
+                "UseColliders": true,
+                "visibleOnGameStart": true,
+                "scope": "global",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": "",
+                "Tint": "#FFFFFF",
+                "Alpha": 1,
+                "FlipX": false,
+                "shadowsEnabled": true,
+                "shadowsPlacement": "Floor",
+                "canBeDamaged": false,
+                "infiniteHealth": false,
+                "health": 100,
+                "healthbar": "Off",
+                "useAdaptiveHealth": false,
+                "adaptiveHealthPerPlayer": 25,
+                "safeTeamId": "_no_safe_team_prop_device",
+                "onDestroyedChannel": "",
+                "grantItemWhenDamaged": false,
+                "itemToGrant": null,
+                "amountOfItem": 1,
+                "healWhenDestroyed": false,
+                "healAfterTime": 3,
+                "healAmount": 25,
+                "healWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "M-ZMuYWT0D-4BsX_OBVjB",
+            "x": 6768,
+            "y": 7381,
+            "depth": 7380.855302261723,
+            "layerId": "DepthSortedCharactersAndDevices",
+            "deviceId": "prop",
+            "options": {
+                "propId": "Stool Echo",
+                "Scale": 0.77908688872718,
+                "Angle": 0,
+                "UseColliders": true,
+                "visibleOnGameStart": true,
+                "scope": "global",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": "",
+                "Tint": "#FFFFFF",
+                "Alpha": 1,
+                "FlipX": false,
+                "shadowsEnabled": true,
+                "shadowsPlacement": "Floor",
+                "canBeDamaged": false,
+                "infiniteHealth": false,
+                "health": 100,
+                "healthbar": "Off",
+                "useAdaptiveHealth": false,
+                "adaptiveHealthPerPlayer": 25,
+                "safeTeamId": "_no_safe_team_prop_device",
+                "onDestroyedChannel": "",
+                "grantItemWhenDamaged": false,
+                "itemToGrant": null,
+                "amountOfItem": 1,
+                "healWhenDestroyed": false,
+                "healAfterTime": 3,
+                "healAmount": 25,
+                "healWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "GT65NdBm-v8twabuuMel0",
+            "x": 7405,
+            "y": 7360,
+            "depth": 7359.768938811483,
+            "deviceId": "shadow",
+            "options": {
+                "width": 300,
+                "height": 130
+            }
+        },
+        {
+            "id": "nXlZepZxAEaMvv2FzQ67K",
+            "x": 7407,
+            "y": 7279,
+            "depth": 7279.129246034651,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "vendingMachine",
+            "options": {
+                "grantAction": "Grant Item",
+                "requiredItemId": "energy",
+                "amountOfRequiredItem": 5000,
+                "grantedItemId": "snowballs",
+                "amountOfGrantedItem": 32,
+                "purchaseChannel": "",
+                "visibleInGame": true,
+                "grantedItemImageUrl": "",
+                "grantedItemName": "Snowballs (32)",
+                "grantedItemDescription": "",
+                "deactivateOnPurchase": false,
+                "useAdaptiveCost": false,
+                "adaptiveCostIncreasePerPlayer": 0,
+                "allowFunding": false,
+                "fundingScope": "global",
+                "useLimitedStock": false,
+                "maxStock": 10,
+                "maxStockScope": "global",
+                "attachCostToNameWhenHidden": true,
+                "activeOnStart": true,
+                "activeScope": "player",
+                "activateChannel": "",
+                "deactivateChannel": "",
+                "allowedPurchaseTeam": "__ANY_TEAM__",
+                "attemptToPurchaseChannel": "",
+                "onAttemptedPurchaseFailedChannel": "",
+                "interactionDuration": 1,
+                "matchItemRarity": false,
+                "backgroundColor1": "#24c5d4",
+                "backgroundColor2": "#5487f7",
+                "raysColor": "#7af2ff",
+                "numberOfRays": 16,
+                "raysWidthFactor": 1.25,
+                "raysAlpha": 0.5,
+                "raysAdditive": false,
+                "soundEnabled": true,
+                "showShadow": false,
+                "width": 250,
+                "height": 250,
+                "radius": 100
+            }
+        },
+        {
+            "id": "7-hHG3MdRocgEBhBrMCtS",
+            "x": 6887,
+            "y": 11487,
+            "depth": 11487.175425640815,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "guiDevice",
+            "options": {
+                "type": "Text",
+                "position": "Top Left",
+                "text": "First Curse: 0:20",
+                "trackedItemId": null,
+                "showTrackedItemMaximumAmount": false,
+                "whenButtonClickedTransmitOnChannel": "",
+                "showOnGameStart": true,
+                "color": "#ff4203",
+                "contentScope": "global",
+                "visibilityScope": "global",
+                "showWhenReceivingFromChannel": "",
+                "hideWhenReceivingFromChannel": ""
+            }
+        },
+        {
+            "id": "Ttuyu_2vDQ2EE24SalB8t",
+            "x": 9452,
+            "y": 7637,
+            "depth": 7637.166666666666,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "craftingTable",
+            "options": {
+                "style": "plant",
+                "craftingScope": "global",
+                "group": "",
+                "useCrafterCollectionAdvantage": true,
+                "channelItemBeginsCrafting": "",
+                "channelItemFinishesCrafting": "",
+                "channelItemCollected": "",
+                "channelItemDisposed": ""
+            }
+        },
+        {
+            "id": "iOI7Jc2tQqKpwreHTgJuR",
+            "x": 9452,
+            "y": 7777,
+            "depth": 7777.166666666666,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "craftingTable",
+            "options": {
+                "style": "plant",
+                "craftingScope": "global",
+                "group": "",
+                "useCrafterCollectionAdvantage": true,
+                "channelItemBeginsCrafting": "",
+                "channelItemFinishesCrafting": "",
+                "channelItemCollected": "",
+                "channelItemDisposed": ""
+            }
+        },
+        {
+            "id": "V8kwIw0olq7jsS3yDQ4Uq",
+            "x": 9596,
+            "y": 7637,
+            "depth": 7637.333333333332,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "craftingTable",
+            "options": {
+                "style": "plant",
+                "craftingScope": "global",
+                "group": "",
+                "useCrafterCollectionAdvantage": true,
+                "channelItemBeginsCrafting": "",
+                "channelItemFinishesCrafting": "",
+                "channelItemCollected": "",
+                "channelItemDisposed": ""
+            }
+        },
+        {
+            "id": "SEWeccgjSnr6y2jsbtwBh",
+            "x": 9596,
+            "y": 7777,
+            "depth": 7777.333333333332,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "craftingTable",
+            "options": {
+                "style": "plant",
+                "craftingScope": "global",
+                "group": "",
+                "useCrafterCollectionAdvantage": true,
+                "channelItemBeginsCrafting": "",
+                "channelItemFinishesCrafting": "",
+                "channelItemCollected": "",
+                "channelItemDisposed": ""
+            }
+        },
+        {
+            "id": "npilkLUFLD795fVJAJ27l",
+            "x": 9740,
+            "y": 7637,
+            "depth": 7637.333333333332,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "craftingTable",
+            "options": {
+                "style": "plant",
+                "craftingScope": "global",
+                "group": "",
+                "useCrafterCollectionAdvantage": true,
+                "channelItemBeginsCrafting": "",
+                "channelItemFinishesCrafting": "",
+                "channelItemCollected": "",
+                "channelItemDisposed": ""
+            }
+        },
+        {
+            "id": "IfXJ89ADM-qEYCRjZn6Fb",
+            "x": 9740,
+            "y": 7777,
+            "depth": 7777.333333333332,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "craftingTable",
+            "options": {
+                "style": "plant",
+                "craftingScope": "global",
+                "group": "",
+                "useCrafterCollectionAdvantage": true,
+                "channelItemBeginsCrafting": "",
+                "channelItemFinishesCrafting": "",
+                "channelItemCollected": "",
+                "channelItemDisposed": ""
+            }
+        },
+        {
+            "id": "Wbv0L41wv0tqrkHITU3c-",
+            "x": 9884,
+            "y": 7777,
+            "depth": 7777.499999999998,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "craftingTable",
+            "options": {
+                "style": "plant",
+                "craftingScope": "global",
+                "group": "",
+                "useCrafterCollectionAdvantage": true,
+                "channelItemBeginsCrafting": "",
+                "channelItemFinishesCrafting": "",
+                "channelItemCollected": "",
+                "channelItemDisposed": ""
+            }
+        },
+        {
+            "id": "jX0AuNtmwcpQPaL1iFJRR",
+            "x": 9884,
+            "y": 7637,
+            "depth": 7637.499999999998,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "craftingTable",
+            "options": {
+                "style": "plant",
+                "craftingScope": "global",
+                "group": "",
+                "useCrafterCollectionAdvantage": true,
+                "channelItemBeginsCrafting": "",
+                "channelItemFinishesCrafting": "",
+                "channelItemCollected": "",
+                "channelItemDisposed": ""
+            }
+        },
+        {
+            "id": "eZ4K3wxWMUnSfcS4xC5Fb",
+            "x": 10013,
+            "y": 7521,
+            "depth": 0,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "craftingRecipe",
+            "options": {
+                "item": "shield-can",
+                "itemAmount": 2,
+                "numberOfIngredients": 1,
+                "ingredient1Item": "energy",
+                "ingredient1Amount": 5000,
+                "ingredient2Item": null,
+                "ingredient2Amount": 10,
+                "ingredient3Item": null,
+                "ingredient3Amount": 10,
+                "ingredient4Item": null,
+                "ingredient4Amount": 10,
+                "ingredient5Item": null,
+                "ingredient5Amount": 10,
+                "timeToCraftMs": 20000,
+                "itemDisposes": false,
+                "disposeItemAfterMs": 5000,
+                "group": "",
+                "activeOnGameStart": true,
+                "whenCraftingStartsChannel": "",
+                "whenCraftedChannel": "",
+                "activeScope": "global",
+                "activateChannel": "",
+                "deactivateChannel": ""
+            }
+        },
+        {
+            "id": "JqHIOeBq4i-pd7inmLgKJ",
+            "x": 10006,
+            "y": 7597,
+            "depth": 0,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "craftingRecipe",
+            "options": {
+                "item": "medpack",
+                "itemAmount": 1,
+                "numberOfIngredients": 1,
+                "ingredient1Item": "energy",
+                "ingredient1Amount": 15000,
+                "ingredient2Item": null,
+                "ingredient2Amount": 10,
+                "ingredient3Item": null,
+                "ingredient3Amount": 10,
+                "ingredient4Item": null,
+                "ingredient4Amount": 10,
+                "ingredient5Item": null,
+                "ingredient5Amount": 10,
+                "timeToCraftMs": 20000,
+                "itemDisposes": false,
+                "disposeItemAfterMs": 5000,
+                "group": "",
+                "activeOnGameStart": true,
+                "whenCraftingStartsChannel": "",
+                "whenCraftedChannel": "",
+                "activeScope": "global",
+                "activateChannel": "",
+                "deactivateChannel": ""
+            }
+        },
+        {
+            "id": "6XbOQ6ecLlAePvYHopHJ6",
+            "x": 10005,
+            "y": 7982,
+            "depth": 0,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "craftingRecipe",
+            "options": {
+                "item": "snowball_launcher_legendary",
+                "itemAmount": 1,
+                "numberOfIngredients": 1,
+                "ingredient1Item": "gim-fish",
+                "ingredient1Amount": 1,
+                "ingredient2Item": null,
+                "ingredient2Amount": 10,
+                "ingredient3Item": null,
+                "ingredient3Amount": 10,
+                "ingredient4Item": null,
+                "ingredient4Amount": 10,
+                "ingredient5Item": null,
+                "ingredient5Amount": 10,
+                "timeToCraftMs": 30000,
+                "itemDisposes": false,
+                "disposeItemAfterMs": 5000,
+                "group": "",
+                "activeOnGameStart": true,
+                "whenCraftingStartsChannel": "",
+                "whenCraftedChannel": "",
+                "activeScope": "global",
+                "activateChannel": "",
+                "deactivateChannel": ""
+            }
+        },
+        {
+            "id": "4b2wTPsop-F9zGDSM9Ahs",
+            "x": 5558,
+            "y": 11846,
+            "depth": null,
+            "deviceId": "trigger",
+            "options": {
+                "channelToTrigger": "",
+                "triggerWhenReceivingOnChannel": "",
+                "triggerDelay": 1.5,
+                "visibleInGame": false,
+                "team": "__ANY_TEAM__",
+                "scope": "global",
+                "allowedModeType": "all",
+                "activeOnGameStart": true,
+                "activateChannel": "",
+                "deactivateChannel": "",
+                "activeScope": "global",
+                "triggeredByPlayerCollision": false
+            }
+        },
+        {
+            "id": "QRVlXqsKBZHZY7NkaYlGj",
+            "x": 4755,
+            "y": 6984,
+            "depth": null,
+            "deviceId": "prop",
+            "options": {
+                "propId": "Safe 2",
+                "Scale": 1,
+                "Angle": 0,
+                "UseColliders": true,
+                "visibleOnGameStart": true,
+                "scope": "global",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": "",
+                "Tint": "#FFFFFF",
+                "Alpha": 1,
+                "FlipX": false,
+                "shadowsEnabled": true,
+                "shadowsPlacement": "Floor",
+                "canBeDamaged": false,
+                "infiniteHealth": false,
+                "health": 100,
+                "healthbar": "Off",
+                "useAdaptiveHealth": false,
+                "adaptiveHealthPerPlayer": 25,
+                "safeTeamId": "_no_safe_team_prop_device",
+                "onDestroyedChannel": "",
+                "grantItemWhenDamaged": false,
+                "itemToGrant": null,
+                "amountOfItem": 1,
+                "healWhenDestroyed": false,
+                "healAfterTime": 3,
+                "healAmount": 25,
+                "healWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "avPLhL3jpyZqxOBgbWMDf",
+            "x": 5215,
+            "y": 6951,
+            "depth": 6951.34951382306,
+            "deviceId": "prop",
+            "options": {
+                "propId": "bare-tree-1",
+                "Scale": 1,
+                "Angle": 0,
+                "UseColliders": true,
+                "visibleOnGameStart": true,
+                "scope": "global",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": "",
+                "Tint": "#FFFFFF",
+                "Alpha": 1,
+                "FlipX": false,
+                "shadowsEnabled": true,
+                "shadowsPlacement": "Floor",
+                "canBeDamaged": false,
+                "infiniteHealth": false,
+                "health": 100,
+                "healthbar": "Off",
+                "useAdaptiveHealth": false,
+                "adaptiveHealthPerPlayer": 25,
+                "safeTeamId": "_no_safe_team_prop_device",
+                "onDestroyedChannel": "",
+                "grantItemWhenDamaged": false,
+                "itemToGrant": null,
+                "amountOfItem": 1,
+                "healWhenDestroyed": false,
+                "healAfterTime": 3,
+                "healAmount": 25,
+                "healWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "JtE9rBbYFw14z2t9z7Hyo",
+            "x": 5168,
+            "y": 12172,
+            "depth": 12172.644620388563,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "itemGranter",
+            "options": {
+                "itemId": "plastic-bottle",
+                "itemChange": 1,
+                "grantWhenReceivingFromChannel": "plasticbottle caught",
+                "fullStrategy": "overflow",
+                "replaceWhenFull": false
+            }
+        },
+        {
+            "id": "bXB50UPt6IPvL-pLerX1m",
+            "x": 5510,
+            "y": 12292,
+            "depth": 12292.72048515197,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "textBillboard",
+            "options": {
+                "text": "Fishing",
+                "fontSize": 17,
+                "scope": "global",
+                "googleFont": "Roboto",
+                "color": "#000000",
+                "alpha": 1,
+                "strokeThickness": 0,
+                "strokeColor": "#FFFFFF",
+                "rotation": 0,
+                "visibleOnGameStart": "No",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "OtgwVjnyegDvzztgxEtP-",
+            "x": 5168,
+            "y": 12102,
+            "depth": 12103.283793976987,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "textExplainer",
+            "options": {
+                "header": "Plastic Bottle Caught!",
+                "content": "Probably not much you can do with this.",
+                "openWhenReceivingFrom": "plasticbottle caught",
+                "iconImage": "/assets/map/inventory/resources/plastic_bottle.png",
+                "style": "modal",
+                "callToActionStyle": "standard",
+                "group": "",
+                "callToActionLabel": "Fish Again",
+                "callToActionChannel": "attempt fish",
+                "secondaryCallToActionLabel": "Close",
+                "secondaryCallToActionChannel": "",
+                "scope": "global",
+                "backgroundColor": "#FFFFFF",
+                "fontFamily": "Outfit",
+                "closableByUser": true,
+                "closeWhenReceivingFrom": "",
+                "whenClosedTransmitOn": ""
+            }
+        },
+        {
+            "id": "32MoSKxOpWmxD-cCmtTcY",
+            "x": 10002,
+            "y": 8056,
+            "depth": 0,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "craftingRecipe",
+            "options": {
+                "item": "gold-key",
+                "itemAmount": 1,
+                "numberOfIngredients": 1,
+                "ingredient1Item": "gim-fish",
+                "ingredient1Amount": 1,
+                "ingredient2Item": null,
+                "ingredient2Amount": 10,
+                "ingredient3Item": null,
+                "ingredient3Amount": 10,
+                "ingredient4Item": null,
+                "ingredient4Amount": 10,
+                "ingredient5Item": null,
+                "ingredient5Amount": 10,
+                "timeToCraftMs": 60000,
+                "itemDisposes": false,
+                "disposeItemAfterMs": 5000,
+                "group": "",
+                "activeOnGameStart": true,
+                "whenCraftingStartsChannel": "",
+                "whenCraftedChannel": "",
+                "activeScope": "global",
+                "activateChannel": "",
+                "deactivateChannel": ""
+            }
+        },
+        {
+            "id": "qzw5_wPnyLw7PvbHgPw2k",
+            "x": 4385,
+            "y": 6940,
+            "depth": 6940.141346571793,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "textExplainer",
+            "options": {
+                "header": "Message From The Crafter",
+                "content": "Vesper, if you're reading this, it means the experiment worked. You know how sometimes you vaguely remember past experiences but then it feels like you're starting fresh when you wake up? Well, I'm writing this note in the past and if you're reading it now, that means communication between our existences somehow survived. This note has survived unique existences. Vesper, please try to send a signal back. If I hear from you, it would change everything.",
+                "openWhenReceivingFrom": "",
+                "iconImage": "",
+                "style": "modal",
+                "callToActionStyle": "standard",
+                "group": "",
+                "callToActionLabel": "Close",
+                "callToActionChannel": "",
+                "secondaryCallToActionLabel": "",
+                "secondaryCallToActionChannel": "",
+                "scope": "global",
+                "backgroundColor": "#FFFFFF",
+                "fontFamily": "Kalam",
+                "closableByUser": true,
+                "closeWhenReceivingFrom": "",
+                "whenClosedTransmitOn": ""
+            }
+        },
+        {
+            "id": "F3dnDYK5NoJav971CI6nk",
+            "x": 5143,
+            "y": 10951,
+            "depth": 10950.358087998458,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "guiDevice",
+            "options": {
+                "type": "Tracked Item",
+                "position": "Top Right",
+                "text": "",
+                "trackedItemId": "energy",
+                "showTrackedItemMaximumAmount": false,
+                "whenButtonClickedTransmitOnChannel": "",
+                "showOnGameStart": true,
+                "color": "#ffffff",
+                "contentScope": "global",
+                "visibilityScope": "player",
+                "showWhenReceivingFromChannel": "",
+                "hideWhenReceivingFromChannel": "become zombie"
+            }
+        },
+        {
+            "id": "8dONcnvzHsGGD9B0099vM",
+            "x": 5104,
+            "y": 10890,
+            "depth": null,
+            "deviceId": "soundEffect",
+            "options": {
+                "audioUrl": "/assets/map/sounds/power-down.mp3",
+                "volume": 32,
+                "playWhenReceivingFrom": "",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "7NlhG4uzoQd6aXLd1aPAj",
+            "x": 5766,
+            "y": 12261,
+            "depth": 0,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "xp",
+            "options": {
+                "amount": 500,
+                "reason": "GimFish Caught",
+                "grantOnChannel": "gimfish caught",
+                "useIncrementalGrant": false,
+                "incrementalGrantCharacterRequirement": 10,
+                "useMinimumCharacterCount": false,
+                "minimumCharacterCount": 6
+            }
+        },
+        {
+            "id": "1cjsXCZ7HEc1Gd3Csm1F3",
+            "x": 4857,
+            "y": 6903,
+            "depth": 6903.854506929866,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "vendingMachine",
+            "options": {
+                "grantAction": "Broadcast On Channel",
+                "requiredItemId": "gold-key",
+                "amountOfRequiredItem": 10,
+                "grantedItemId": null,
+                "amountOfGrantedItem": 1,
+                "purchaseChannel": "open vault",
+                "visibleInGame": false,
+                "grantedItemImageUrl": "",
+                "grantedItemName": "Unlock The Vault",
+                "grantedItemDescription": "Gather 10 Gold Keys to unlock the vault.",
+                "deactivateOnPurchase": true,
+                "useAdaptiveCost": false,
+                "adaptiveCostIncreasePerPlayer": 0,
+                "allowFunding": false,
+                "fundingScope": "global",
+                "useLimitedStock": false,
+                "maxStock": 10,
+                "maxStockScope": "global",
+                "attachCostToNameWhenHidden": false,
+                "activeOnStart": true,
+                "activeScope": "global",
+                "activateChannel": "",
+                "deactivateChannel": "",
+                "allowedPurchaseTeam": "__ANY_TEAM__",
+                "attemptToPurchaseChannel": "",
+                "onAttemptedPurchaseFailedChannel": "",
+                "interactionDuration": 5,
+                "matchItemRarity": false,
+                "backgroundColor1": "#d44224",
+                "backgroundColor2": "#f7d253",
+                "raysColor": "#f7d253",
+                "numberOfRays": 16,
+                "raysWidthFactor": 1.25,
+                "raysAlpha": 0.5,
+                "raysAdditive": false,
+                "soundEnabled": false,
+                "showShadow": false,
+                "width": 250,
+                "height": 250,
+                "radius": 191
+            }
+        },
+        {
+            "id": "piOeqyZO_LfU8dSZMzYHV",
+            "x": 5760,
+            "y": 12106,
+            "depth": 12106.828216401133,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "textExplainer",
+            "options": {
+                "header": "GimFish Caught!",
+                "content": "You're representing Gimkit...so look sharp.",
+                "openWhenReceivingFrom": "gimfish caught",
+                "iconImage": "/assets/map/inventory/resources/gimfish.png",
+                "style": "modal",
+                "callToActionStyle": "standard",
+                "group": "",
+                "callToActionLabel": "Fish Again",
+                "callToActionChannel": "attempt fish",
+                "secondaryCallToActionLabel": "Close",
+                "secondaryCallToActionChannel": "",
+                "scope": "global",
+                "backgroundColor": "#FFFFFF",
+                "fontFamily": "Outfit",
+                "closableByUser": true,
+                "closeWhenReceivingFrom": "",
+                "whenClosedTransmitOn": ""
+            }
+        },
+        {
+            "id": "1I0UZFOR1EyNBI_WBfpHD",
+            "x": 8474,
+            "y": 9370,
+            "depth": 9370,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "soundEffect",
+            "options": {
+                "audioUrl": "/assets/map/modes/snowInfection/message.mp3",
+                "volume": 45,
+                "playWhenReceivingFrom": "",
+                "characterType": "all"
+            }
+        },
+        {
+            "id": "QNSshBLBkXPGuSXAhiEKc",
+            "x": 8469,
+            "y": 9578,
+            "depth": null,
+            "deviceId": "wireRepeater",
+            "options": {
+                "delaySeconds": 0,
+                "team": "__ANY_TEAM__"
+            }
+        },
+        {
+            "id": "OUARPC-0jpB12ikiu6YPi",
+            "x": 4694,
+            "y": 10683,
+            "depth": 10683,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "gimkitLiveQuestion",
+            "options": {
+                "kitId": "",
+                "whenAnsweredCorrectlyTransmitOn": "correct",
+                "whenAnsweredIncorrectlyTransmitOn": "incorrect",
+                "openWhenReceivingOn": "",
+                "closable": true,
+                "textShownWhenAnsweringCorrectly": "",
+                "textShownWhenAnsweringIncorrectly": "",
+                "textShownWhenAnsweringScope": "player",
+                "closeWhenReceivingOn": "",
+                "enableWhenReceivingOn": "",
+                "disableWhenReceivingOn": "",
+                "whenOpenedChannel": "",
+                "whenClosedChannel": "",
+                "sound": "default",
+                "correctSound": "default",
+                "incorrectSound": "default",
+                "actionSound": "default",
+                "useCustomAction": false,
+                "customActionText": "",
+                "channelToTriggerCustomAction": "",
+                "size": 48
+            }
+        },
+        {
+            "id": "CJZKzPOaUcNsADDQWD4Vr",
+            "x": 10550,
+            "y": 9020,
+            "depth": 9020.02688215709,
+            "deviceId": "prop",
+            "options": {
+                "propId": "snow-log-horizontal",
+                "Scale": 1,
+                "Angle": 0,
+                "UseColliders": true,
+                "visibleOnGameStart": true,
+                "scope": "global",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": "",
+                "Tint": "#FFFFFF",
+                "Alpha": 1,
+                "FlipX": false,
+                "shadowsEnabled": true,
+                "shadowsPlacement": "Floor",
+                "canBeDamaged": false,
+                "infiniteHealth": false,
+                "health": 100,
+                "healthbar": "Off",
+                "useAdaptiveHealth": false,
+                "adaptiveHealthPerPlayer": 25,
+                "safeTeamId": "_no_safe_team_prop_device",
+                "onDestroyedChannel": "",
+                "grantItemWhenDamaged": false,
+                "itemToGrant": null,
+                "amountOfItem": 1,
+                "healWhenDestroyed": false,
+                "healAfterTime": 3,
+                "healAmount": 25,
+                "healWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "SlU5uwsDEEDiyJ4Fd-4GG",
+            "x": 10238,
+            "y": 7257,
+            "depth": null,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "prop",
+            "options": {
+                "propId": "small-snow-pile-1",
+                "Scale": 1,
+                "Angle": 0,
+                "UseColliders": true,
+                "visibleOnGameStart": true,
+                "scope": "global",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": "",
+                "Tint": "#FFFFFF",
+                "Alpha": 1,
+                "FlipX": true,
+                "shadowsEnabled": true,
+                "shadowsPlacement": "Floor",
+                "canBeDamaged": false,
+                "infiniteHealth": false,
+                "health": 100,
+                "healthbar": "Off",
+                "useAdaptiveHealth": false,
+                "adaptiveHealthPerPlayer": 25,
+                "safeTeamId": "_no_safe_team_prop_device",
+                "onDestroyedChannel": "",
+                "grantItemWhenDamaged": false,
+                "itemToGrant": null,
+                "amountOfItem": 1,
+                "healWhenDestroyed": false,
+                "healAfterTime": 3,
+                "healAmount": 25,
+                "healWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "YcP246skPETMV3WNHFxpD",
+            "x": 10008,
+            "y": 7673,
+            "depth": 0,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "craftingRecipe",
+            "options": {
+                "item": "snowball_launcher_common",
+                "itemAmount": 1,
+                "numberOfIngredients": 1,
+                "ingredient1Item": "gray-fish",
+                "ingredient1Amount": 10,
+                "ingredient2Item": null,
+                "ingredient2Amount": 10,
+                "ingredient3Item": null,
+                "ingredient3Amount": 10,
+                "ingredient4Item": null,
+                "ingredient4Amount": 10,
+                "ingredient5Item": null,
+                "ingredient5Amount": 10,
+                "timeToCraftMs": 30000,
+                "itemDisposes": false,
+                "disposeItemAfterMs": 5000,
+                "group": "",
+                "activeOnGameStart": true,
+                "whenCraftingStartsChannel": "",
+                "whenCraftedChannel": "",
+                "activeScope": "global",
+                "activateChannel": "",
+                "deactivateChannel": ""
+            }
+        },
+        {
+            "id": "dWhWvs9l0jjVBQyH7n-ta",
+            "x": 10008,
+            "y": 7747,
+            "depth": 0,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "craftingRecipe",
+            "options": {
+                "item": "snowball_launcher_uncommon",
+                "itemAmount": 1,
+                "numberOfIngredients": 1,
+                "ingredient1Item": "green-fish",
+                "ingredient1Amount": 7,
+                "ingredient2Item": null,
+                "ingredient2Amount": 10,
+                "ingredient3Item": null,
+                "ingredient3Amount": 10,
+                "ingredient4Item": null,
+                "ingredient4Amount": 10,
+                "ingredient5Item": null,
+                "ingredient5Amount": 10,
+                "timeToCraftMs": 30000,
+                "itemDisposes": false,
+                "disposeItemAfterMs": 5000,
+                "group": "",
+                "activeOnGameStart": true,
+                "whenCraftingStartsChannel": "",
+                "whenCraftedChannel": "",
+                "activeScope": "global",
+                "activateChannel": "",
+                "deactivateChannel": ""
+            }
+        },
+        {
+            "id": "yNJgxzW_or_S9h3NwBpCQ",
+            "x": 10007,
+            "y": 7827,
+            "depth": 0,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "craftingRecipe",
+            "options": {
+                "item": "snowball_launcher_rare",
+                "itemAmount": 1,
+                "numberOfIngredients": 1,
+                "ingredient1Item": "blue-fish",
+                "ingredient1Amount": 4,
+                "ingredient2Item": null,
+                "ingredient2Amount": 10,
+                "ingredient3Item": null,
+                "ingredient3Amount": 10,
+                "ingredient4Item": null,
+                "ingredient4Amount": 10,
+                "ingredient5Item": null,
+                "ingredient5Amount": 10,
+                "timeToCraftMs": 30000,
+                "itemDisposes": false,
+                "disposeItemAfterMs": 5000,
+                "group": "",
+                "activeOnGameStart": true,
+                "whenCraftingStartsChannel": "",
+                "whenCraftedChannel": "",
+                "activeScope": "global",
+                "activateChannel": "",
+                "deactivateChannel": ""
+            }
+        },
+        {
+            "id": "2KzB3iCTfcMJy7ZsqOnqS",
+            "x": 10006,
+            "y": 7906,
+            "depth": 0,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "craftingRecipe",
+            "options": {
+                "item": "snowball_launcher_epic",
+                "itemAmount": 1,
+                "numberOfIngredients": 1,
+                "ingredient1Item": "purple-fish",
+                "ingredient1Amount": 2,
+                "ingredient2Item": null,
+                "ingredient2Amount": 10,
+                "ingredient3Item": null,
+                "ingredient3Amount": 10,
+                "ingredient4Item": null,
+                "ingredient4Amount": 10,
+                "ingredient5Item": null,
+                "ingredient5Amount": 10,
+                "timeToCraftMs": 30000,
+                "itemDisposes": false,
+                "disposeItemAfterMs": 5000,
+                "group": "",
+                "activeOnGameStart": true,
+                "whenCraftingStartsChannel": "",
+                "whenCraftedChannel": "",
+                "activeScope": "global",
+                "activateChannel": "",
+                "deactivateChannel": ""
+            }
+        },
+        {
+            "id": "iAvURDsxxuH8-pgAafa3n",
+            "x": 6212,
+            "y": 7866,
+            "depth": null,
+            "deviceId": "prop",
+            "options": {
+                "propId": "Laptop",
+                "Scale": 1,
+                "Angle": 0,
+                "UseColliders": true,
+                "visibleOnGameStart": true,
+                "scope": "global",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": "",
+                "Tint": "#FFFFFF",
+                "Alpha": 1,
+                "FlipX": false,
+                "shadowsEnabled": true,
+                "shadowsPlacement": "Beneath Prop",
+                "canBeDamaged": false,
+                "infiniteHealth": false,
+                "health": 100,
+                "healthbar": "Off",
+                "useAdaptiveHealth": false,
+                "adaptiveHealthPerPlayer": 25,
+                "safeTeamId": "_no_safe_team_prop_device",
+                "onDestroyedChannel": "",
+                "grantItemWhenDamaged": false,
+                "itemToGrant": null,
+                "amountOfItem": 1,
+                "healWhenDestroyed": false,
+                "healAfterTime": 3,
+                "healAmount": 25,
+                "healWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "zVjHxmHVG32KhEW39zh2O",
+            "x": 10098,
+            "y": 8142,
+            "depth": null,
+            "deviceId": "inventoryItemManager",
+            "options": {
+                "itemId": "chemicals",
+                "useAsDefault": true,
+                "activateWhenReceivingFrom": "",
+                "useMaxAmount": false,
+                "maxAmount": 10,
+                "overrideRespawnBehavior": false,
+                "respawnBehavior": "Keep",
+                "showAlert": true,
+                "customItemName": "Chemical Supreme",
+                "customItemDescription": "A dangerous substance. Be careful.",
+                "whenItemAmountChangesChannel": "",
+                "clearItemFromInventoryOnChannel": "",
+                "updateProperty": false,
+                "property": ""
+            }
+        },
+        {
+            "id": "ohPEdPse5CjwjYn-0Ji7_",
+            "x": 9909,
+            "y": 8139,
+            "depth": null,
+            "deviceId": "lifecycle",
+            "options": {
+                "event": "Game Starts",
+                "transmitOnChannel": ""
+            }
+        },
+        {
+            "id": "M59Me19tVS6rDl3QbEHmV",
+            "x": 8468,
+            "y": 9530,
+            "depth": null,
+            "deviceId": "prop",
+            "options": {
+                "propId": "Command Table On",
+                "Scale": 1,
+                "Angle": 0,
+                "UseColliders": true,
+                "visibleOnGameStart": false,
+                "scope": "global",
+                "showWhenReceivingFrom": "charged with chemical",
+                "hideWhenReceivingFrom": "",
+                "Tint": "#FFFFFF",
+                "Alpha": 1,
+                "FlipX": false,
+                "shadowsEnabled": true,
+                "shadowsPlacement": "Floor",
+                "canBeDamaged": false,
+                "infiniteHealth": false,
+                "health": 100,
+                "healthbar": "Off",
+                "useAdaptiveHealth": false,
+                "adaptiveHealthPerPlayer": 25,
+                "safeTeamId": "_no_safe_team_prop_device",
+                "onDestroyedChannel": "",
+                "grantItemWhenDamaged": false,
+                "itemToGrant": null,
+                "amountOfItem": 1,
+                "healWhenDestroyed": false,
+                "healAfterTime": 3,
+                "healAmount": 25,
+                "healWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "eW8umuhDJIJyQ1hiSL_FF",
+            "x": 8468,
+            "y": 9530,
+            "depth": 9529.75,
+            "layerId": "DepthSortedCharactersAndDevices",
+            "deviceId": "prop",
+            "options": {
+                "propId": "Command Table Off",
+                "Scale": 1,
+                "Angle": 0,
+                "UseColliders": true,
+                "visibleOnGameStart": true,
+                "scope": "global",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": "charged with chemical",
+                "Tint": "#FFFFFF",
+                "Alpha": 1,
+                "FlipX": false,
+                "shadowsEnabled": true,
+                "shadowsPlacement": "Floor",
+                "canBeDamaged": false,
+                "infiniteHealth": false,
+                "health": 100,
+                "healthbar": "Off",
+                "useAdaptiveHealth": false,
+                "adaptiveHealthPerPlayer": 25,
+                "safeTeamId": "_no_safe_team_prop_device",
+                "onDestroyedChannel": "",
+                "grantItemWhenDamaged": false,
+                "itemToGrant": null,
+                "amountOfItem": 1,
+                "healWhenDestroyed": false,
+                "healAfterTime": 3,
+                "healAmount": 25,
+                "healWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "dSJOhaW13Vc4XGDEpPnzz",
+            "x": 6246,
+            "y": 7888,
+            "depth": 7888,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "button",
+            "options": {
+                "guiMessage": "View Computer",
+                "channel": "",
+                "visibleInGame": false,
+                "interactionDuration": 1,
+                "activeOnStart": false,
+                "activateChannel": "open vault",
+                "deactivateChannel": "",
+                "scope": "global",
+                "radius": 100,
+                "size": 26
+            }
+        },
+        {
+            "id": "02EvBj9sR96gmU1-eHZNi",
+            "x": 6056,
+            "y": 12376,
+            "depth": 12376.12272667078,
+            "deviceId": "textExplainer",
+            "options": {
+                "header": "",
+                "content": "The experiment works. There is a way to communicate between existences!",
+                "openWhenReceivingFrom": "",
+                "iconImage": "",
+                "style": "banner",
+                "callToActionStyle": "standard",
+                "group": "",
+                "callToActionLabel": "Next",
+                "callToActionChannel": "",
+                "secondaryCallToActionLabel": "",
+                "secondaryCallToActionChannel": "",
+                "scope": "global",
+                "backgroundColor": "#FFFFFF",
+                "fontFamily": "Outfit",
+                "closableByUser": false,
+                "closeWhenReceivingFrom": "",
+                "whenClosedTransmitOn": ""
+            }
+        },
+        {
+            "id": "bvT2V6M846IKF2ACr2jJR",
+            "x": 6177,
+            "y": 12378,
+            "depth": 12378.12272667078,
+            "deviceId": "textExplainer",
+            "options": {
+                "header": "",
+                "content": "How were you able to communicate with me? I've been struggling--",
+                "openWhenReceivingFrom": "",
+                "iconImage": "",
+                "style": "banner",
+                "callToActionStyle": "standard",
+                "group": "",
+                "callToActionLabel": "Next",
+                "callToActionChannel": "",
+                "secondaryCallToActionLabel": "",
+                "secondaryCallToActionChannel": "",
+                "scope": "global",
+                "backgroundColor": "#FFFFFF",
+                "fontFamily": "Outfit",
+                "closableByUser": false,
+                "closeWhenReceivingFrom": "",
+                "whenClosedTransmitOn": ""
+            }
+        },
+        {
+            "id": "jaypUEk1d9zZpB-Fx9dmy",
+            "x": 6304,
+            "y": 12378,
+            "depth": 12378.12272667078,
+            "deviceId": "textExplainer",
+            "options": {
+                "header": "",
+                "content": "Wait, wait. You're not Vesper.",
+                "openWhenReceivingFrom": "",
+                "iconImage": "",
+                "style": "banner",
+                "callToActionStyle": "standard",
+                "group": "",
+                "callToActionLabel": "Next",
+                "callToActionChannel": "",
+                "secondaryCallToActionLabel": "",
+                "secondaryCallToActionChannel": "",
+                "scope": "global",
+                "backgroundColor": "#FFFFFF",
+                "fontFamily": "Outfit",
+                "closableByUser": false,
+                "closeWhenReceivingFrom": "",
+                "whenClosedTransmitOn": ""
+            }
+        },
+        {
+            "id": "afZauqXdkY4z4AyXIgyhK",
+            "x": 5946,
+            "y": 12376,
+            "depth": 12376.12272667078,
+            "deviceId": "textExplainer",
+            "options": {
+                "header": "",
+                "content": "Oh my goodness, Vesper. You did it!",
+                "openWhenReceivingFrom": "success message to the crafter",
+                "iconImage": "",
+                "style": "banner",
+                "callToActionStyle": "standard",
+                "group": "",
+                "callToActionLabel": "Next",
+                "callToActionChannel": "",
+                "secondaryCallToActionLabel": "",
+                "secondaryCallToActionChannel": "",
+                "scope": "global",
+                "backgroundColor": "#FFFFFF",
+                "fontFamily": "Outfit",
+                "closableByUser": false,
+                "closeWhenReceivingFrom": "",
+                "whenClosedTransmitOn": ""
+            }
+        },
+        {
+            "id": "4MqQL-UW0u8YVdffNTykG",
+            "x": 6428,
+            "y": 12377,
+            "depth": 12377.12272667078,
+            "deviceId": "textExplainer",
+            "options": {
+                "header": "",
+                "content": "No, no, you're something much worse. You're the one that has been...",
+                "openWhenReceivingFrom": "",
+                "iconImage": "",
+                "style": "banner",
+                "callToActionStyle": "standard",
+                "group": "",
+                "callToActionLabel": "Next",
+                "callToActionChannel": "",
+                "secondaryCallToActionLabel": "",
+                "secondaryCallToActionChannel": "",
+                "scope": "global",
+                "backgroundColor": "#FFFFFF",
+                "fontFamily": "Outfit",
+                "closableByUser": false,
+                "closeWhenReceivingFrom": "",
+                "whenClosedTransmitOn": ""
+            }
+        },
+        {
+            "id": "MG9aW4ojNdMPW4JLK2QDU",
+            "x": 6556,
+            "y": 12377,
+            "depth": 12377.12272667078,
+            "deviceId": "textExplainer",
+            "options": {
+                "header": "",
+                "content": "Nevermind. Look, I don't trust you.",
+                "openWhenReceivingFrom": "",
+                "iconImage": "",
+                "style": "banner",
+                "callToActionStyle": "standard",
+                "group": "",
+                "callToActionLabel": "Next",
+                "callToActionChannel": "",
+                "secondaryCallToActionLabel": "",
+                "secondaryCallToActionChannel": "",
+                "scope": "global",
+                "backgroundColor": "#FFFFFF",
+                "fontFamily": "Outfit",
+                "closableByUser": false,
+                "closeWhenReceivingFrom": "",
+                "whenClosedTransmitOn": ""
+            }
+        },
+        {
+            "id": "sn8YLmzCZtqrH5rOWKFAw",
+            "x": 6674,
+            "y": 12379,
+            "depth": 12379.06136333539,
+            "deviceId": "textExplainer",
+            "options": {
+                "header": "",
+                "content": "Maybe interexistence communication is opening a can of worms I'm not ready for.",
+                "openWhenReceivingFrom": "",
+                "iconImage": "",
+                "style": "banner",
+                "callToActionStyle": "standard",
+                "group": "",
+                "callToActionLabel": "Next",
+                "callToActionChannel": "",
+                "secondaryCallToActionLabel": "",
+                "secondaryCallToActionChannel": "",
+                "scope": "global",
+                "backgroundColor": "#FFFFFF",
+                "fontFamily": "Outfit",
+                "closableByUser": false,
+                "closeWhenReceivingFrom": "",
+                "whenClosedTransmitOn": ""
+            }
+        },
+        {
+            "id": "T1khUCSpGBsniTddalqMl",
+            "x": 6803,
+            "y": 12381,
+            "depth": 12381,
+            "deviceId": "textExplainer",
+            "options": {
+                "header": "",
+                "content": "For my own safety, I must go. I hope you never find me.",
+                "openWhenReceivingFrom": "",
+                "iconImage": "",
+                "style": "banner",
+                "callToActionStyle": "standard",
+                "group": "",
+                "callToActionLabel": "Close",
+                "callToActionChannel": "",
+                "secondaryCallToActionLabel": "",
+                "secondaryCallToActionChannel": "",
+                "scope": "global",
+                "backgroundColor": "#FFFFFF",
+                "fontFamily": "Outfit",
+                "closableByUser": true,
+                "closeWhenReceivingFrom": "",
+                "whenClosedTransmitOn": ""
+            }
+        },
+        {
+            "id": "wNrR5beW2V4D0ka1FCAbN",
+            "x": 8489,
+            "y": 9479,
+            "depth": 9542.084207485073,
+            "layerId": "DepthSortedCharactersAndDevices",
+            "deviceId": "button",
+            "options": {
+                "guiMessage": "Broadcast Message To The Crafter",
+                "channel": "success message to the crafter",
+                "visibleInGame": false,
+                "interactionDuration": 5,
+                "activeOnStart": false,
+                "activateChannel": "charged with chemical",
+                "deactivateChannel": "success message to the crafter",
+                "scope": "global",
+                "radius": 168.95789625746204,
+                "size": 26
+            }
+        },
+        {
+            "id": "E9VdZt-75ADhO8KH9DqmU",
+            "x": 6099,
+            "y": 7512,
+            "depth": 7512,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "textExplainer",
+            "options": {
+                "header": "Case Log E-11-SQ",
+                "content": "When we arrived, I was confused about what was happening because this place is so different from any place I've been before. There is snow, sand, and dirt all in the same area, which doesn't seem to make sense. While trying to figure out what's going on, I keep seeing the term \"Project Map\" appear, but I don't know what it means. I wonder if there is a map that could help me find answers. However, with the cursed roaming around and Vortex nearby, I can't do research as carefully as I would like. Despite the",
+                "openWhenReceivingFrom": "",
+                "iconImage": "",
+                "style": "modal",
+                "callToActionStyle": "standard",
+                "group": "",
+                "callToActionLabel": "Close",
+                "callToActionChannel": "",
+                "secondaryCallToActionLabel": "",
+                "secondaryCallToActionChannel": "",
+                "scope": "global",
+                "backgroundColor": "#FFFFFF",
+                "fontFamily": "Kalam",
+                "closableByUser": true,
+                "closeWhenReceivingFrom": "",
+                "whenClosedTransmitOn": ""
+            }
+        },
+        {
+            "id": "Nmn9AvKtF6UlJbg1TF7hX",
+            "x": 6387,
+            "y": 12431,
+            "depth": 12429.855176594692,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "textBillboard",
+            "options": {
+                "text": "The Crafter Lines",
+                "fontSize": 17,
+                "scope": "global",
+                "googleFont": "Roboto",
+                "color": "#000000",
+                "alpha": 1,
+                "strokeThickness": 0,
+                "strokeColor": "#FFFFFF",
+                "rotation": 0,
+                "visibleOnGameStart": "No",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "BMDFz04LuDOgFRW1giwzh",
+            "x": 5060,
+            "y": 10613,
+            "depth": 0,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "startingInventory",
+            "options": {
+                "itemId": "energy",
+                "itemAmount": 1000,
+                "equipOnGrant": false,
+                "grantDuringPhase": "game",
+                "grantForSavedCharacters": false,
+                "enabled": true
+            }
+        },
+        {
+            "id": "aZV-RzBrLoLF8cUuju4dY",
+            "x": 6727,
+            "y": 11479,
+            "depth": 0,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "xp",
+            "options": {
+                "amount": 175,
+                "reason": "Knockout",
+                "grantOnChannel": "",
+                "useIncrementalGrant": true,
+                "incrementalGrantCharacterRequirement": 8,
+                "useMinimumCharacterCount": false,
+                "minimumCharacterCount": 6
+            }
+        },
+        {
+            "id": "SVW-VH8XFufAThRjcl6De",
+            "x": 5407,
+            "y": 10946,
+            "depth": 10946.57519094981,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "relay",
+            "options": {
+                "relayAs": "Random Player On Team",
+                "team": "1",
+                "channelToTrigger": "become zombie",
+                "triggerWhenReceivingOnChannel": "select random zombie"
+            }
+        },
+        {
+            "id": "IELzFwYv-5VPbfEO0Oh-4",
+            "x": 5776,
+            "y": 11008,
+            "depth": 11007.4492148654,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "notification",
+            "options": {
+                "title": "First Curse!",
+                "description": "The first player has been cursed! Watch out!",
+                "notifyChannel": "",
+                "notificationType": "warning",
+                "notificationPlacement": "topRight",
+                "notificationDurationStrategy": "manual",
+                "customDurationSeconds": 6,
+                "sendTo": "characterTriggering"
+            }
+        },
+        {
+            "id": "b5Xv6i3hwJaOjFPMxv0xZ",
+            "x": 5691,
+            "y": 11010,
+            "depth": 11010.319686624882,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "relay",
+            "options": {
+                "relayAs": "All Other Players",
+                "team": "1",
+                "channelToTrigger": "",
+                "triggerWhenReceivingOnChannel": ""
+            }
+        },
+        {
+            "id": "IfHWe1wgmpKmFaauATZDX",
+            "x": 5604,
+            "y": 10926,
+            "depth": 10925.016894805538,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "trigger",
+            "options": {
+                "channelToTrigger": "",
+                "triggerWhenReceivingOnChannel": "",
+                "triggerDelay": null,
+                "visibleInGame": false,
+                "team": "__ANY_TEAM__",
+                "maxTriggers": 1,
+                "scope": "global",
+                "allowedModeType": "all",
+                "activeOnGameStart": true,
+                "activateChannel": "",
+                "deactivateChannel": "",
+                "activeScope": "global",
+                "triggeredByPlayerCollision": false
+            }
+        },
+        {
+            "id": "JavV2tescqotNBfWotjoR",
+            "x": 5281,
+            "y": 10929,
+            "depth": 10928.248906607323,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "trigger",
+            "options": {
+                "channelToTrigger": "",
+                "triggerWhenReceivingOnChannel": "initial countdown end",
+                "triggerDelay": null,
+                "visibleInGame": false,
+                "team": "__ANY_TEAM__",
+                "scope": "global",
+                "allowedModeType": "all",
+                "activeOnGameStart": true,
+                "activateChannel": "",
+                "deactivateChannel": "",
+                "activeScope": "global",
+                "triggeredByPlayerCollision": false
+            }
+        },
+        {
+            "id": "xc1PHIz0xuuVM3PFL6wY2",
+            "x": 5516,
+            "y": 11131,
+            "depth": 11131.671449070152,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "textBillboard",
+            "options": {
+                "text": "Randomly infect firsts player after 20 seconds",
+                "fontSize": 17,
+                "scope": "global",
+                "googleFont": "Roboto",
+                "color": "#000000",
+                "alpha": 1,
+                "strokeThickness": 0,
+                "strokeColor": "#FFFFFF",
+                "rotation": 0,
+                "visibleOnGameStart": "No",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "9jG-Cl7SR2D-ligTpUgfF",
+            "x": 5365,
+            "y": 10996,
+            "depth": 10995.926953395081,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "textBillboard",
+            "options": {
+                "text": "Player 2",
+                "fontSize": 17,
+                "scope": "global",
+                "googleFont": "Roboto",
+                "color": "#000000",
+                "alpha": 1,
+                "strokeThickness": 0,
+                "strokeColor": "#FFFFFF",
+                "rotation": 0,
+                "visibleOnGameStart": "No",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "vH7kao7LacXPoNUJ2D5KC",
+            "x": 5369,
+            "y": 11075,
+            "depth": 11074.788041358694,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "textBillboard",
+            "options": {
+                "text": "Player 3",
+                "fontSize": 17,
+                "scope": "global",
+                "googleFont": "Roboto",
+                "color": "#000000",
+                "alpha": 1,
+                "strokeThickness": 0,
+                "strokeColor": "#FFFFFF",
+                "rotation": 0,
+                "visibleOnGameStart": "No",
+                "showWhenReceivingFrom": "",
+                "hideWhenReceivingFrom": ""
+            }
+        },
+        {
+            "id": "Np7fdHEoHyQld-kQNQFuA",
+            "x": 5280,
+            "y": 11016,
+            "depth": 11014.86682289523,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "trigger",
+            "options": {
+                "channelToTrigger": "",
+                "triggerWhenReceivingOnChannel": "",
+                "triggerDelay": 1,
+                "visibleInGame": false,
+                "team": "__ANY_TEAM__",
+                "scope": "global",
+                "allowedModeType": "all",
+                "activeOnGameStart": true,
+                "activateChannel": "",
+                "deactivateChannel": "",
+                "activeScope": "global",
+                "triggeredByPlayerCollision": false
+            }
+        },
+        {
+            "id": "-UBhIa3odZ74sUlP6fNBq",
+            "x": 5278,
+            "y": 11101,
+            "depth": 11100.153490698745,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "trigger",
+            "options": {
+                "channelToTrigger": "",
+                "triggerWhenReceivingOnChannel": "",
+                "triggerDelay": 2,
+                "visibleInGame": false,
+                "team": "__ANY_TEAM__",
+                "scope": "global",
+                "allowedModeType": "all",
+                "activeOnGameStart": true,
+                "activateChannel": "",
+                "deactivateChannel": "",
+                "activeScope": "global",
+                "triggeredByPlayerCollision": false
+            }
+        },
+        {
+            "id": "RMMOjKi9HFpEdUQD2MNuM",
+            "x": 6357,
+            "y": 7882,
+            "depth": 0,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "passwordLock",
+            "options": {
+                "password": "LwMXzNxy",
+                "onSuccessChannel": "recipe",
+                "openChannel": "",
+                "useMaxAttempts": true,
+                "maxAttempts": 10,
+                "maxAttemptsScope": "global",
+                "outOfAttemptsChannel": ""
+            }
+        },
+        {
+            "id": "X8SwBm7U6uTWXpALV04HN",
+            "x": 10200,
+            "y": 8133,
+            "depth": null,
+            "deviceId": "trigger",
+            "options": {
+                "channelToTrigger": "chemical in hand",
+                "triggerWhenReceivingOnChannel": "has chemical",
+                "visibleInGame": false,
+                "team": "__ANY_TEAM__",
+                "maxTriggers": 1,
+                "scope": "global",
+                "allowedModeType": "all",
+                "activeOnGameStart": true,
+                "activateChannel": "",
+                "deactivateChannel": "",
+                "activeScope": "global",
+                "triggeredByPlayerCollision": false
+            }
+        },
+        {
+            "id": "XYNoNCighJtZRaKAjvIBj",
+            "x": 8457,
+            "y": 9479,
+            "depth": 9542.084207485073,
+            "layerId": "DepthSortedCharactersAndDevices",
+            "deviceId": "button",
+            "options": {
+                "guiMessage": "Charge With Chemical Supreme",
+                "channel": "charged with chemical",
+                "visibleInGame": false,
+                "interactionDuration": 5,
+                "activeOnStart": false,
+                "activateChannel": "chemical in hand",
+                "deactivateChannel": "charged with chemical",
+                "scope": "player",
+                "radius": 168.95789625746204,
+                "size": 26
+            }
+        },
+        {
+            "id": "TfRkS-gvDSpOpYF_jSyY8",
+            "x": 8473,
+            "y": 9468,
+            "depth": 9531,
+            "layerId": "DepthSortedCharactersAndDevices",
+            "deviceId": "button",
+            "options": {
+                "guiMessage": "Broadcast Message To The Crafter",
+                "channel": "",
+                "visibleInGame": false,
+                "interactionDuration": 5,
+                "activeOnStart": false,
+                "activateChannel": "open vault",
+                "deactivateChannel": "chemical in hand",
+                "scope": "global",
+                "radius": 168.95789625746204,
+                "size": 26
+            }
+        },
+        {
+            "id": "WWSX9-OEf8NxqyGepSlXn",
+            "x": 7024,
+            "y": 11424,
+            "depth": 11424.175425640815,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "countdown",
+            "options": {
+                "minutes": 0,
+                "seconds": 20,
+                "startWhenReceivingFrom": "",
+                "onEndTransmitOn": "initial countdown end"
+            }
+        },
+        {
+            "id": "2JxwCHfhkqH3XWr4RU4mH",
+            "x": 10003,
+            "y": 8140,
+            "depth": 0,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "craftingRecipe",
+            "options": {
+                "item": "chemicals",
+                "itemAmount": 1,
+                "numberOfIngredients": 4,
+                "ingredient1Item": "gold-key",
+                "ingredient1Amount": 30,
+                "ingredient2Item": "blue-fish",
+                "ingredient2Amount": 10,
+                "ingredient3Item": "green-fish",
+                "ingredient3Amount": 5,
+                "ingredient4Item": "plastic-bottle",
+                "ingredient4Amount": 500,
+                "ingredient5Item": null,
+                "ingredient5Amount": 10,
+                "timeToCraftMs": 600000,
+                "itemDisposes": true,
+                "disposeItemAfterMs": 10000,
+                "group": "",
+                "activeOnGameStart": false,
+                "whenCraftingStartsChannel": "",
+                "whenCraftedChannel": "",
+                "activeScope": "global",
+                "activateChannel": "recipe",
+                "deactivateChannel": ""
+            }
+        },
+        {
+            "id": "N-BTtSrXn0xBRqI0R__Cd",
+            "x": 6457,
+            "y": 7892,
+            "depth": 7892.300100487976,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "textExplainer",
+            "options": {
+                "header": "Chemical Supreme Recipe",
+                "content": "30 Gold Keys, 10 Blue Fish, 5 Green Fish, and roughly 5,000 grams of plastic. Yes, it’s a bit gross, but somehow this unique combination creates a substance so powerful, we don’t yet understand all it can do. Since the substance is so unstable, it is recommend all agents stay away from Chemical Supreme.",
+                "openWhenReceivingFrom": "recipe",
+                "iconImage": "/assets/map/inventory/resources/chemicals.png",
+                "style": "modal",
+                "callToActionStyle": "standard",
+                "group": "",
+                "callToActionLabel": "Close",
+                "callToActionChannel": "",
+                "secondaryCallToActionLabel": "",
+                "secondaryCallToActionChannel": "",
+                "scope": "global",
+                "backgroundColor": "#FFFFFF",
+                "fontFamily": "Outfit",
+                "closableByUser": true,
+                "closeWhenReceivingFrom": "",
+                "whenClosedTransmitOn": ""
+            }
+        },
+        {
+            "id": "9K1kBfVcJXw7PXbJxqr3e",
+            "x": 6816,
+            "y": 11819,
+            "depth": 11819.774595904177,
+            "layerId": "DevicesUnderCharacters",
+            "deviceId": "textExplainer",
+            "options": {
+                "header": "Welcome To Snowy Survival.",
+                "content": "The cursed are coming. Run away and survive as long as you can. Get knocked out and you'll become cursed too!",
+                "openWhenReceivingFrom": "",
+                "iconImage": "/assets/map/modes/snowInfection/snowflake.svg",
+                "style": "modal",
+                "callToActionStyle": "standard",
+                "group": "",
+                "callToActionLabel": "Got It",
+                "callToActionChannel": "",
+                "secondaryCallToActionLabel": "",
+                "secondaryCallToActionChannel": "",
+                "scope": "player",
+                "backgroundColor": "#161616",
+                "fontFamily": "Outfit",
+                "closableByUser": true,
+                "closeWhenReceivingFrom": "",
+                "whenClosedTransmitOn": ""
+            }
         }
     ],
     "codeGrids": {
@@ -28616,6 +31518,970 @@
                 },
                 "triggerType": "WHEN_TRIGGERED",
                 "updatedAt": 1677092850
+            }
+        },
+        "Ggn2PJtQGPZxZnLu-GDkL": {
+            "LtcO97jCX": {
+                "createdAt": 1677094065,
+                "json": {
+                    "blocks": {
+                        "languageVersion": 0,
+                        "blocks": [
+                            {
+                                "type": "controls_if",
+                                "id": "t*om{h=XUWsHfDy#8E[y",
+                                "x": 210,
+                                "y": 150,
+                                "inputs": {
+                                    "IF0": {
+                                        "block": {
+                                            "type": "logic_compare",
+                                            "id": "86-w3up;V*TRNZ5sTwUb",
+                                            "fields": {
+                                                "OP": "EQ"
+                                            },
+                                            "inputs": {
+                                                "A": {
+                                                    "block": {
+                                                        "type": "get_property",
+                                                        "id": "V3%/Fw_{P?U5|~O|kFgV",
+                                                        "inputs": {
+                                                            "get_property": {
+                                                                "block": {
+                                                                    "type": "text",
+                                                                    "id": "E+CIQC5EKUQ/zt,).SHQ",
+                                                                    "fields": {
+                                                                        "TEXT": "passedInitialCountdown"
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "B": {
+                                                    "block": {
+                                                        "type": "logic_boolean",
+                                                        "id": "FC360;OPYQM/Z6jKg{l)",
+                                                        "fields": {
+                                                            "BOOL": "TRUE"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "DO0": {
+                                        "block": {
+                                            "type": "message_broadcaster",
+                                            "id": "on-Q]IG#MoZ~#1CkD@Rn",
+                                            "inputs": {
+                                                "broadcast_message_on_channel": {
+                                                    "block": {
+                                                        "type": "text",
+                                                        "id": ".!6DbTqmZUKMiytS{t${",
+                                                        "fields": {
+                                                            "TEXT": "become zombie"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                "triggerType": "WHEN_TRIGGERED",
+                "updatedAt": 1677094087
+            }
+        },
+        "YIVm66Nf6U0Wzqa5vSvDr": {
+            "vH87UxGrH": {
+                "createdAt": 1676976916,
+                "json": {
+                    "blocks": {
+                        "languageVersion": 0,
+                        "blocks": [
+                            {
+                                "type": "set_content",
+                                "id": "@V@T_1KZ={7x^0{;O+NG",
+                                "x": 130,
+                                "y": 130,
+                                "inputs": {
+                                    "set_content": {
+                                        "block": {
+                                            "type": "text_join",
+                                            "id": "Jl]f-cR55[N@5P?d70L!",
+                                            "extraState": {
+                                                "itemCount": 2
+                                            },
+                                            "inputs": {
+                                                "ADD0": {
+                                                    "block": {
+                                                        "type": "get_property",
+                                                        "id": "0ge-cH/wOXZt9sGe7ZKN",
+                                                        "inputs": {
+                                                            "get_property": {
+                                                                "block": {
+                                                                    "type": "text",
+                                                                    "id": "WM!Ys$:qz[K6a_8*WsU*",
+                                                                    "fields": {
+                                                                        "TEXT": "knockedOutBy"
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "ADD1": {
+                                                    "block": {
+                                                        "type": "text",
+                                                        "id": "8fecNF.|LH?M_qB8}W=L",
+                                                        "fields": {
+                                                            "TEXT": " got you. Now that you're cursed, you'll answer questions to earn snowballs. Use your snowball launcher to knockout players and spread the curse!"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                "triggerType": "wire",
+                "updatedAt": 1677094219
+            }
+        },
+        "7-hHG3MdRocgEBhBrMCtS": {
+            "yKelYsNCJ": {
+                "createdAt": 1676946823,
+                "json": {
+                    "blocks": {
+                        "languageVersion": 0,
+                        "blocks": [
+                            {
+                                "type": "set_gui_text",
+                                "id": "Lw#nox`)yF5iaQZ~{1F-",
+                                "x": 130,
+                                "y": 70,
+                                "inputs": {
+                                    "set_text": {
+                                        "block": {
+                                            "type": "text_join",
+                                            "id": "eUptpfg}(}D7bT`@OL.I",
+                                            "extraState": {
+                                                "itemCount": 2
+                                            },
+                                            "inputs": {
+                                                "ADD0": {
+                                                    "block": {
+                                                        "type": "text",
+                                                        "id": "l@IX*Dyw)ZM8eh:E?6fz",
+                                                        "fields": {
+                                                            "TEXT": "First Curse: "
+                                                        }
+                                                    }
+                                                },
+                                                "ADD1": {
+                                                    "block": {
+                                                        "type": "get_property",
+                                                        "id": "n!,`c?Rrer?=2(c)B/RB",
+                                                        "inputs": {
+                                                            "get_property": {
+                                                                "block": {
+                                                                    "type": "text",
+                                                                    "id": "Ny,h=yX|5@^9T%ZFOyuz",
+                                                                    "fields": {
+                                                                        "TEXT": "Countdown Time"
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                "triggerType": "channel_radio",
+                "triggerValue": "Countdown Time Change",
+                "updatedAt": 1676946860
+            }
+        },
+        "4b2wTPsop-F9zGDSM9Ahs": {
+            "4YAJdaNl2": {
+                "createdAt": 1677109334,
+                "json": {
+                    "blocks": {
+                        "languageVersion": 0,
+                        "blocks": [
+                            {
+                                "type": "variables_set",
+                                "id": "HR^zt?,qn8ExK({k6H{z",
+                                "x": 110,
+                                "y": 70,
+                                "fields": {
+                                    "VAR": {
+                                        "id": "y_yJ!fJip*?Y#TRzbxRh"
+                                    }
+                                },
+                                "inputs": {
+                                    "VALUE": {
+                                        "block": {
+                                            "type": "math_random_int",
+                                            "id": "}E2SiMqgCb!)$R3`BF%a",
+                                            "inputs": {
+                                                "FROM": {
+                                                    "block": {
+                                                        "type": "math_number",
+                                                        "id": "w~Or#j%56KcDf^9_x*I@",
+                                                        "fields": {
+                                                            "NUM": 0
+                                                        }
+                                                    }
+                                                },
+                                                "TO": {
+                                                    "block": {
+                                                        "type": "math_number",
+                                                        "id": "PSgO7yk4R*`=y3^{T3DT",
+                                                        "fields": {
+                                                            "NUM": 1000
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "next": {
+                                    "block": {
+                                        "type": "controls_if",
+                                        "id": "02r*V^j#Ne2Q$Ayu7z7}",
+                                        "extraState": {
+                                            "elseIfCount": 4,
+                                            "hasElse": true
+                                        },
+                                        "inputs": {
+                                            "IF0": {
+                                                "block": {
+                                                    "type": "logic_compare",
+                                                    "id": ")p5}jwcJaVwZ4hQyyN%%",
+                                                    "fields": {
+                                                        "OP": "LT"
+                                                    },
+                                                    "inputs": {
+                                                        "A": {
+                                                            "block": {
+                                                                "type": "variables_get",
+                                                                "id": "$y^3}G3Hpgfg!;q};kKN",
+                                                                "fields": {
+                                                                    "VAR": {
+                                                                        "id": "y_yJ!fJip*?Y#TRzbxRh"
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "B": {
+                                                            "block": {
+                                                                "type": "math_number",
+                                                                "id": "4}K?|/xa]cHpY%M(XpJ@",
+                                                                "fields": {
+                                                                    "NUM": 401
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "DO0": {
+                                                "block": {
+                                                    "type": "message_broadcaster",
+                                                    "id": "yEhf8(Gg4oi|:^2S*Gp%",
+                                                    "inputs": {
+                                                        "broadcast_message_on_channel": {
+                                                            "block": {
+                                                                "type": "text",
+                                                                "id": "uSGGHWOBH0bJ53l*7$f-",
+                                                                "fields": {
+                                                                    "TEXT": "plasticbottle caught"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "IF1": {
+                                                "block": {
+                                                    "type": "logic_compare",
+                                                    "id": "KT*E?hv[8kQPcRwDeWNb",
+                                                    "fields": {
+                                                        "OP": "LT"
+                                                    },
+                                                    "inputs": {
+                                                        "A": {
+                                                            "block": {
+                                                                "type": "variables_get",
+                                                                "id": "|yU(SjeUqZW2Gi~}Iv;z",
+                                                                "fields": {
+                                                                    "VAR": {
+                                                                        "id": "y_yJ!fJip*?Y#TRzbxRh"
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "B": {
+                                                            "block": {
+                                                                "type": "math_number",
+                                                                "id": "SC0k66CmTvzDkj]n%zHr",
+                                                                "fields": {
+                                                                    "NUM": 701
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "DO1": {
+                                                "block": {
+                                                    "type": "message_broadcaster",
+                                                    "id": "V5jtV6!?B~eCi?N*]ScF",
+                                                    "inputs": {
+                                                        "broadcast_message_on_channel": {
+                                                            "block": {
+                                                                "type": "text",
+                                                                "id": "rp(E.o_JRyLMcOYDYd+Y",
+                                                                "fields": {
+                                                                    "TEXT": "grayfish caught"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "IF2": {
+                                                "block": {
+                                                    "type": "logic_compare",
+                                                    "id": "MHZ(FMz`GC){!(}^t=wD",
+                                                    "fields": {
+                                                        "OP": "LT"
+                                                    },
+                                                    "inputs": {
+                                                        "A": {
+                                                            "block": {
+                                                                "type": "variables_get",
+                                                                "id": "1^5t}dvS4(vmq|bPNSV/",
+                                                                "fields": {
+                                                                    "VAR": {
+                                                                        "id": "y_yJ!fJip*?Y#TRzbxRh"
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "B": {
+                                                            "block": {
+                                                                "type": "math_number",
+                                                                "id": "V-$YpmW.PqI7*V:1)))E",
+                                                                "fields": {
+                                                                    "NUM": 851
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "DO2": {
+                                                "block": {
+                                                    "type": "message_broadcaster",
+                                                    "id": "WRHBB9og?_c_/7zrtR)C",
+                                                    "inputs": {
+                                                        "broadcast_message_on_channel": {
+                                                            "block": {
+                                                                "type": "text",
+                                                                "id": "QjWu,7/}9*z8BNHqj-4X",
+                                                                "fields": {
+                                                                    "TEXT": "greenfish caught"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "IF3": {
+                                                "block": {
+                                                    "type": "logic_compare",
+                                                    "id": "fV1Eaz_`~s5RHG*RXdQY",
+                                                    "fields": {
+                                                        "OP": "LT"
+                                                    },
+                                                    "inputs": {
+                                                        "A": {
+                                                            "block": {
+                                                                "type": "variables_get",
+                                                                "id": "6F]Fi%Kq82xoTp,:7s6(",
+                                                                "fields": {
+                                                                    "VAR": {
+                                                                        "id": "y_yJ!fJip*?Y#TRzbxRh"
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "B": {
+                                                            "block": {
+                                                                "type": "math_number",
+                                                                "id": "hIgx4nx~3$J:C#?y{UM7",
+                                                                "fields": {
+                                                                    "NUM": 941
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "DO3": {
+                                                "block": {
+                                                    "type": "message_broadcaster",
+                                                    "id": "N3M5.-4@DnT~L(3,MAt7",
+                                                    "inputs": {
+                                                        "broadcast_message_on_channel": {
+                                                            "block": {
+                                                                "type": "text",
+                                                                "id": "jqiq;4T:aCAWucY=T.g}",
+                                                                "fields": {
+                                                                    "TEXT": "bluefish caught"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "IF4": {
+                                                "block": {
+                                                    "type": "logic_compare",
+                                                    "id": "U(+rN418lA7k_272skg?",
+                                                    "fields": {
+                                                        "OP": "LT"
+                                                    },
+                                                    "inputs": {
+                                                        "A": {
+                                                            "block": {
+                                                                "type": "variables_get",
+                                                                "id": "g@2Q~+yO~APhW94|;A^l",
+                                                                "fields": {
+                                                                    "VAR": {
+                                                                        "id": "y_yJ!fJip*?Y#TRzbxRh"
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "B": {
+                                                            "block": {
+                                                                "type": "math_number",
+                                                                "id": "~p=)_:$S5=|r,c#vylfL",
+                                                                "fields": {
+                                                                    "NUM": 991
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "DO4": {
+                                                "block": {
+                                                    "type": "message_broadcaster",
+                                                    "id": "4*.%]hQ1(^tU)y_AH]+K",
+                                                    "inputs": {
+                                                        "broadcast_message_on_channel": {
+                                                            "block": {
+                                                                "type": "text",
+                                                                "id": "Qo[pT5efYdhgpde`4X+9",
+                                                                "fields": {
+                                                                    "TEXT": "purplefish caught"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "ELSE": {
+                                                "block": {
+                                                    "type": "message_broadcaster",
+                                                    "id": "CPbYuE7zJUpJ9#d#1-C+",
+                                                    "inputs": {
+                                                        "broadcast_message_on_channel": {
+                                                            "block": {
+                                                                "type": "text",
+                                                                "id": ";96JQE~Qt.q~HmaPH3g~",
+                                                                "fields": {
+                                                                    "TEXT": "gimfish caught"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "next": {
+                                            "block": {
+                                                "type": "message_broadcaster",
+                                                "id": "2F*kE1=a6E`+CjN{G{Zy",
+                                                "inputs": {
+                                                    "broadcast_message_on_channel": {
+                                                        "block": {
+                                                            "type": "text",
+                                                            "id": "$lw]_-r!yF22!2Tb0Pao",
+                                                            "fields": {
+                                                                "TEXT": "fished"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "variables": [
+                        {
+                            "name": "number",
+                            "id": "y_yJ!fJip*?Y#TRzbxRh"
+                        }
+                    ]
+                },
+                "triggerType": "WHEN_TRIGGERED",
+                "updatedAt": 1677112313
+            }
+        },
+        "OUARPC-0jpB12ikiu6YPi": {
+            "LHs_2d7V1": {
+                "createdAt": 1676674134,
+                "json": {
+                    "blocks": {
+                        "languageVersion": 0,
+                        "blocks": [
+                            {
+                                "type": "controls_if",
+                                "id": "ez?bJXHyyS0hg4OStC3=",
+                                "x": 150,
+                                "y": 230,
+                                "extraState": {
+                                    "hasElse": true
+                                },
+                                "inputs": {
+                                    "IF0": {
+                                        "block": {
+                                            "type": "logic_compare",
+                                            "id": "HqeEQfpMob}ELXlfL3!4",
+                                            "fields": {
+                                                "OP": "EQ"
+                                            },
+                                            "inputs": {
+                                                "A": {
+                                                    "block": {
+                                                        "type": "get_property",
+                                                        "id": "`zoN{u/ss@oXG;Q59Xx$",
+                                                        "inputs": {
+                                                            "get_property": {
+                                                                "block": {
+                                                                    "type": "text",
+                                                                    "id": "|6j80`Vn:Fk~B^Z21ZSP",
+                                                                    "fields": {
+                                                                        "TEXT": "isZombie"
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "B": {
+                                                    "block": {
+                                                        "type": "logic_boolean",
+                                                        "id": "#!Bxu+xHXiUKL@WE~GbP",
+                                                        "fields": {
+                                                            "BOOL": "FALSE"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "DO0": {
+                                        "block": {
+                                            "type": "message_correct_answer",
+                                            "id": "QjKVQH[*)zR-N*npHV|J",
+                                            "inputs": {
+                                                "set_message_shown_when_player_answers_correctly": {
+                                                    "block": {
+                                                        "type": "text_join",
+                                                        "id": "EzxNG?)Ryb2*a)FY@AR|",
+                                                        "extraState": {
+                                                            "itemCount": 3
+                                                        },
+                                                        "inputs": {
+                                                            "ADD0": {
+                                                                "block": {
+                                                                    "type": "text",
+                                                                    "id": "@]q;-vNLJ8^ov80C@_9I",
+                                                                    "fields": {
+                                                                        "TEXT": "+"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "ADD1": {
+                                                                "block": {
+                                                                    "type": "get_property",
+                                                                    "id": "`4lU|^*xEMmlvpM_yhsp",
+                                                                    "inputs": {
+                                                                        "get_property": {
+                                                                            "block": {
+                                                                                "type": "text",
+                                                                                "id": "%SG{axG_R/BC4iTtwB$M",
+                                                                                "fields": {
+                                                                                    "TEXT": "energyPerQuestion"
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "ADD2": {
+                                                                "block": {
+                                                                    "type": "text",
+                                                                    "id": "i0wSC?kqMsCtck@@^V?*",
+                                                                    "fields": {
+                                                                        "TEXT": " Energy"
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "ELSE": {
+                                        "block": {
+                                            "type": "message_correct_answer",
+                                            "id": "zP^nV2[]{`c-Kl1C:`@L",
+                                            "inputs": {
+                                                "set_message_shown_when_player_answers_correctly": {
+                                                    "block": {
+                                                        "type": "text_join",
+                                                        "id": "/%X+/|9GkG]GwSfXy9wt",
+                                                        "extraState": {
+                                                            "itemCount": 3
+                                                        },
+                                                        "inputs": {
+                                                            "ADD0": {
+                                                                "block": {
+                                                                    "type": "text",
+                                                                    "id": "RfcGxIvMYOW2$eCnDyBL",
+                                                                    "fields": {
+                                                                        "TEXT": "+"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "ADD1": {
+                                                                "block": {
+                                                                    "type": "get_property",
+                                                                    "id": "n:DFDBFV%a9d[YItN)$I",
+                                                                    "inputs": {
+                                                                        "get_property": {
+                                                                            "block": {
+                                                                                "type": "text",
+                                                                                "id": "pn6*RhrdAogir(J$V8FN",
+                                                                                "fields": {
+                                                                                    "TEXT": "snowballsPerQuestion"
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "ADD2": {
+                                                                "block": {
+                                                                    "type": "text",
+                                                                    "id": "^agsMJx2A3$T__k2s]B(",
+                                                                    "fields": {
+                                                                        "TEXT": " Snowballs"
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                "triggerType": "wire",
+                "updatedAt": 1677093273
+            }
+        },
+        "zVjHxmHVG32KhEW39zh2O": {
+            "cHEcztgGp": {
+                "createdAt": 1677278224,
+                "json": {
+                    "blocks": {
+                        "languageVersion": 0,
+                        "blocks": [
+                            {
+                                "type": "controls_if",
+                                "id": "ToCK`Xzzj=|Sc-QOGE9V",
+                                "x": 270,
+                                "y": 50,
+                                "inputs": {
+                                    "IF0": {
+                                        "block": {
+                                            "type": "logic_compare",
+                                            "id": "7=~A]D0ef$yrIWpNjfg.",
+                                            "fields": {
+                                                "OP": "GT"
+                                            },
+                                            "inputs": {
+                                                "A": {
+                                                    "block": {
+                                                        "type": "get_amount",
+                                                        "id": ")tP8|/cLsH^:jx~QW~!d"
+                                                    }
+                                                },
+                                                "B": {
+                                                    "block": {
+                                                        "type": "math_number",
+                                                        "id": "8exX8fp4+Q]Yg:yD1p%Z",
+                                                        "fields": {
+                                                            "NUM": 0
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "DO0": {
+                                        "block": {
+                                            "type": "message_broadcaster",
+                                            "id": "C|-X+!=yEYryo%O,)3$Z",
+                                            "inputs": {
+                                                "broadcast_message_on_channel": {
+                                                    "block": {
+                                                        "type": "text",
+                                                        "id": "fVj;:HOlgVyDP#p$R_XP",
+                                                        "fields": {
+                                                            "TEXT": "has chemical"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                "triggerType": "WHEN_AMOUNT_OF_ITEM_CHANGES",
+                "updatedAt": 1677278290
+            }
+        },
+        "Np7fdHEoHyQld-kQNQFuA": {
+            "Zfdj6vVMO": {
+                "createdAt": 1677264889,
+                "json": {
+                    "blocks": {
+                        "languageVersion": 0,
+                        "blocks": [
+                            {
+                                "type": "controls_if",
+                                "id": "2kGX6vS|p|i$29ar3@Gz",
+                                "x": 150,
+                                "y": 170,
+                                "inputs": {
+                                    "IF0": {
+                                        "block": {
+                                            "type": "logic_compare",
+                                            "id": ".aG;p0jEQ+*U@Iks%=df",
+                                            "fields": {
+                                                "OP": "GT"
+                                            },
+                                            "inputs": {
+                                                "A": {
+                                                    "block": {
+                                                        "type": "get_property",
+                                                        "id": "En9sRv%Op7lHv;XV98:H",
+                                                        "inputs": {
+                                                            "get_property": {
+                                                                "block": {
+                                                                    "type": "text",
+                                                                    "id": "B2Z}nAC3|uRQgpx7i_tz",
+                                                                    "fields": {
+                                                                        "TEXT": "team 1 player count"
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "B": {
+                                                    "block": {
+                                                        "type": "math_number",
+                                                        "id": "ObjuYSQM_`p.zHqNB4MH",
+                                                        "fields": {
+                                                            "NUM": 1
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "DO0": {
+                                        "block": {
+                                            "type": "message_broadcaster",
+                                            "id": "n.;~y#ibda=Zzn(DRc~;",
+                                            "inputs": {
+                                                "broadcast_message_on_channel": {
+                                                    "block": {
+                                                        "type": "text",
+                                                        "id": "|P^!,.mUSu)$Xba607S%",
+                                                        "fields": {
+                                                            "TEXT": "select random zombie"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                "triggerType": "WHEN_TRIGGERED",
+                "updatedAt": 1677265184
+            }
+        },
+        "-UBhIa3odZ74sUlP6fNBq": {
+            "Zfdj6vVMO": {
+                "createdAt": 1677264889,
+                "json": {
+                    "blocks": {
+                        "languageVersion": 0,
+                        "blocks": [
+                            {
+                                "type": "controls_if",
+                                "id": "2kGX6vS|p|i$29ar3@Gz",
+                                "x": 150,
+                                "y": 170,
+                                "inputs": {
+                                    "IF0": {
+                                        "block": {
+                                            "type": "logic_compare",
+                                            "id": ".aG;p0jEQ+*U@Iks%=df",
+                                            "fields": {
+                                                "OP": "GT"
+                                            },
+                                            "inputs": {
+                                                "A": {
+                                                    "block": {
+                                                        "type": "get_property",
+                                                        "id": "En9sRv%Op7lHv;XV98:H",
+                                                        "inputs": {
+                                                            "get_property": {
+                                                                "block": {
+                                                                    "type": "text",
+                                                                    "id": "B2Z}nAC3|uRQgpx7i_tz",
+                                                                    "fields": {
+                                                                        "TEXT": "team 1 player count"
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "B": {
+                                                    "block": {
+                                                        "type": "math_number",
+                                                        "id": "ObjuYSQM_`p.zHqNB4MH",
+                                                        "fields": {
+                                                            "NUM": 1
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "DO0": {
+                                        "block": {
+                                            "type": "message_broadcaster",
+                                            "id": "n.;~y#ibda=Zzn(DRc~;",
+                                            "inputs": {
+                                                "broadcast_message_on_channel": {
+                                                    "block": {
+                                                        "type": "text",
+                                                        "id": "|P^!,.mUSu)$Xba607S%",
+                                                        "fields": {
+                                                            "TEXT": "select random zombie"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                "triggerType": "WHEN_TRIGGERED",
+                "updatedAt": 1677265193
+            }
+        },
+        "WWSX9-OEf8NxqyGepSlXn": {
+            "IH97MLh-R": {
+                "createdAt": 1676946911,
+                "json": {
+                    "blocks": {
+                        "languageVersion": 0,
+                        "blocks": [
+                            {
+                                "type": "set_property",
+                                "id": "$2Jhw@5h3j;FL6v63-[+",
+                                "x": 190,
+                                "y": 230,
+                                "inputs": {
+                                    "set_property": {
+                                        "block": {
+                                            "type": "text",
+                                            "id": "z2:H4BN;o}H(61cea-at",
+                                            "fields": {
+                                                "TEXT": "Countdown Time"
+                                            }
+                                        }
+                                    },
+                                    "value": {
+                                        "block": {
+                                            "type": "get_time_left_formatted",
+                                            "id": "Se{;/_,lA9$]sj/Gc;p4"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                "triggerType": "OnTick",
+                "updatedAt": 1676946932
             }
         }
     }
