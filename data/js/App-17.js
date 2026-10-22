@@ -19,7 +19,7 @@ import {
 } from "./dist-3.js";
 import {
     t as d
-} from "./tooltip.js";
+} from "./tooltip-1.js";
 import {
     r as f,
     t as p
@@ -30,10 +30,10 @@ import {
 import {
     a as h,
     t as g
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as _
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as v
 } from "./dropdown.js";
@@ -51,7 +51,7 @@ import {
 } from "./card.js";
 import {
     t as S
-} from "./form.js";
+} from "./form-1.js";
 import {
     t as C
 } from "./space.js";

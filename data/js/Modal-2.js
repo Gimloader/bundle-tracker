@@ -22,7 +22,7 @@ import {
 } from "./_index.js";
 import {
     t as u
-} from "./Button.js";
+} from "./Button-2.js";
 import {
     f as d,
     t as f

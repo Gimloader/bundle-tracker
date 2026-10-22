@@ -24,7 +24,7 @@ import {
 } from "./message.js";
 import {
     t as m
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as ee
 } from "./input.js";
@@ -69,7 +69,7 @@ import {
 } from "./CircularProgress.js";
 import {
     t as A
-} from "./Button.js";
+} from "./Button-2.js";
 import {
     n as j,
     r as M,

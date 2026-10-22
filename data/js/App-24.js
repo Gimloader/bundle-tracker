@@ -17,10 +17,10 @@ import {
 } from "./message.js";
 import {
     t as s
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as c
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as l
 } from "./input.js";

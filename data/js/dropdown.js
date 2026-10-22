@@ -51,13 +51,13 @@ import {
     i as F,
     o as I,
     t as L
-} from "./tooltip.js";
+} from "./tooltip-1.js";
 import {
     t as R
 } from "./useCSSVarCls.js";
 import {
     t as z
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as B
 } from "./collapse.js";

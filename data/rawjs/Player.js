@@ -1,4 +1,4 @@
-import{o as e}from"./rolldown-runtime.js";import{O as t,n,v as r}from"./utils.js";import{t as i}from"./react-1.js";import{t as a}from"./tooltip.js";import{t as o}from"./button.js";import{t as s}from"./card.js";import{t as c}from"./Question.js";import{t as l}from"./DownloadOutlined.js";import{n as u}from"./Company.js";import{t as d}from"./jsx-runtime.js";import{l as f,n as p,s as m,y as h}from"./_index.js";import{n as g}from"./App-2.js";var _=e(i()),v={Red:`#d32f2f`,Green:`#388e3c`,Blue:`#303f9f`},y=d(),b=f.div`
+import{o as e}from"./rolldown-runtime.js";import{O as t,n,v as r}from"./utils.js";import{t as i}from"./react-1.js";import{t as a}from"./tooltip-1.js";import{t as o}from"./button-1.js";import{t as s}from"./card.js";import{t as c}from"./Question.js";import{t as l}from"./DownloadOutlined.js";import{n as u}from"./Company.js";import{t as d}from"./jsx-runtime.js";import{l as f,n as p,s as m,y as h}from"./_index.js";import{n as g}from"./App-2.js";var _=e(i()),v={Red:`#d32f2f`,Green:`#388e3c`,Blue:`#303f9f`},y=d(),b=f.div`
   display: flex;
   flex-direction: row;
   align-items: center;

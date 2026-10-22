@@ -6,7 +6,7 @@ import {
 } from "./_index.js";
 import {
     n
-} from "./Button.js";
+} from "./Button-2.js";
 var r = t.div.attrs({
         className: `maxWidth`
     })`

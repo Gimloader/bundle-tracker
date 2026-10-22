@@ -19,10 +19,10 @@ import {
 } from "./dist-3.js";
 import {
     t as te
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as u
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as d
 } from "./input.js";
@@ -62,7 +62,7 @@ import {
 } from "./CircularProgress.js";
 import {
     n as E
-} from "./Button.js";
+} from "./Button-2.js";
 import {
     n as D
 } from "./App-44.js";

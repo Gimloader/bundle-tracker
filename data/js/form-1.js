@@ -68,7 +68,7 @@ import {
 } from "./useLocale.js";
 import {
     t as K
-} from "./tooltip.js";
+} from "./tooltip-1.js";
 import {
     n as q,
     t as oe
@@ -82,7 +82,7 @@ import {
 import {
     n as le,
     r as ue
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as de
 } from "./collapse.js";

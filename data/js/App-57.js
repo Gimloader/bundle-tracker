@@ -6,7 +6,7 @@ import {
 } from "./react-1.js";
 import {
     t as n
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as r
 } from "./dropdown.js";
@@ -39,7 +39,7 @@ import {
 } from "./Centered.js";
 import {
     n as m
-} from "./Button.js";
+} from "./Button-2.js";
 import {
     t as h
 } from "./motion.js";

@@ -38,7 +38,7 @@ import {
 } from "./useClasses.js";
 import {
     a as b
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     n as x
 } from "./dropdown.js";

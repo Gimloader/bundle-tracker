@@ -44,7 +44,7 @@ import {
 } from "./ContextIsolator.js";
 import {
     t as j
-} from "./tooltip.js";
+} from "./tooltip-1.js";
 var M = e(t()),
     N = e(r()),
     P = e(p());

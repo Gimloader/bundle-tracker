@@ -15,7 +15,7 @@ import {
 } from "./_index.js";
 import {
     n as a
-} from "./Button.js";
+} from "./Button-2.js";
 import {
     f as o,
     t as s

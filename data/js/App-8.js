@@ -23,10 +23,10 @@ import {
 } from "./dist-3.js";
 import {
     t as h
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as g
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as _
 } from "./select.js";

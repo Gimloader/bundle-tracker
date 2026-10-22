@@ -14,10 +14,10 @@ import {
 } from "./react-1.js";
 import {
     t as c
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as l
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as u
 } from "./input.js";

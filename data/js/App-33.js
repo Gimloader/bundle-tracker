@@ -11,7 +11,7 @@ import {
 } from "./react-1.js";
 import {
     t as a
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as o
 } from "./spin.js";

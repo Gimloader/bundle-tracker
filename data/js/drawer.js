@@ -47,7 +47,7 @@ import {
     i as te,
     o as A,
     s as j
-} from "./modal.js";
+} from "./modal-1.js";
 var M = e(d());
 b();
 var N = e(t()),

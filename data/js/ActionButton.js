@@ -9,13 +9,13 @@ import {
 } from "./react-1.js";
 import {
     t as r
-} from "./tooltip.js";
+} from "./tooltip-1.js";
 import {
     t as i
 } from "./jsx-runtime.js";
 import {
     t as a
-} from "./Button.js";
+} from "./Button-2.js";
 import {
     t as o
 } from "./TutorialConsts.js";

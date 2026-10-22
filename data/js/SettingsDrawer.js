@@ -9,10 +9,10 @@ import {
 } from "./InfoCircleFilled.js";
 import {
     t as r
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as ee
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as i
 } from "./select.js";
@@ -40,7 +40,7 @@ import {
 } from "./_index.js";
 import {
     n as te
-} from "./Button.js";
+} from "./Button-2.js";
 import {
     a as h,
     i as g,

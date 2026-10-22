@@ -15,7 +15,7 @@ import {
 } from "./_index.js";
 import {
     n as o
-} from "./Button.js";
+} from "./Button-2.js";
 import {
     t as s
 } from "./Hook.js";

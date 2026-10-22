@@ -15,7 +15,7 @@ import {
 } from "./react-1.js";
 import {
     a as s
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as c
 } from "./jsx-runtime.js";

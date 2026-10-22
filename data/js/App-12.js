@@ -11,7 +11,7 @@ import {
 } from "./react-1.js";
 import {
     t as a
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as o
 } from "./input.js";

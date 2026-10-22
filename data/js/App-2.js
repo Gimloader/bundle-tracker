@@ -23,10 +23,10 @@ import {
 } from "./message.js";
 import {
     t as p
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as m
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as ee
 } from "./input.js";

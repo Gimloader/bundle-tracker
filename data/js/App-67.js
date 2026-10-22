@@ -38,7 +38,7 @@ import {
 } from "./Centered.js";
 import {
     n as g
-} from "./Button.js";
+} from "./Button-2.js";
 import {
     t as _
 } from "./phaser.js";

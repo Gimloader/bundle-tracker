@@ -11,10 +11,10 @@ import {
 } from "./react-1.js";
 import {
     t as a
-} from "./tooltip.js";
+} from "./tooltip-1.js";
 import {
     t as o
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as s
 } from "./card.js";

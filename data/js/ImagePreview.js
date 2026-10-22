@@ -6,7 +6,7 @@ import {
 } from "./react-1.js";
 import {
     t as n
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as r
 } from "./jsx-runtime.js";

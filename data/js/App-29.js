@@ -14,7 +14,7 @@ import {
 } from "./dist-3.js";
 import {
     t as o
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as s
 } from "./spin.js";

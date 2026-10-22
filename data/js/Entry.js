@@ -14,7 +14,7 @@ import {
 } from "./react-1.js";
 import {
     t as c
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as l
 } from "./spin.js";
@@ -42,7 +42,7 @@ import {
 } from "./Centered.js";
 import {
     t as y
-} from "./Button.js";
+} from "./Button-2.js";
 import {
     t as b
 } from "./AnimatedBackground-1.js";

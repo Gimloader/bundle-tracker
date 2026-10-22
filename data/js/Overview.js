@@ -4,7 +4,7 @@ import {
 } from "./react-1.js";
 import {
     t
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as n
 } from "./typography.js";
@@ -30,7 +30,7 @@ import {
 } from "./Centered.js";
 import {
     n as d
-} from "./Button.js";
+} from "./Button-2.js";
 e();
 var f = i(),
     p = e => (0, f.jsxs)(m, {

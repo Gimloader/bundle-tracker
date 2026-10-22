@@ -21,7 +21,7 @@ import {
 } from "./useClasses.js";
 import {
     a as l
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     n as u
 } from "./Company.js";

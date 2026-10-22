@@ -63,16 +63,16 @@ import {
 } from "./useLocale.js";
 import {
     t as H
-} from "./tooltip.js";
+} from "./tooltip-1.js";
 import {
     t as U
 } from "./pickAttrs.js";
 import {
     l as ae
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as W
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as oe
 } from "./collapse.js";

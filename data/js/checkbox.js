@@ -29,7 +29,7 @@ import {
 import {
     i as g,
     r as _
-} from "./button.js";
+} from "./button-1.js";
 import {
     n as v,
     t as y

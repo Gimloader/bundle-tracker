@@ -22,7 +22,7 @@ import {
 } from "./react-1.js";
 import {
     a as g
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as _
 } from "./progress.js";

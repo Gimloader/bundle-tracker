@@ -14,10 +14,10 @@ import {
 } from "./message.js";
 import {
     t as o
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as s
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as c
 } from "./select.js";
@@ -29,7 +29,7 @@ import {
 } from "./checkbox.js";
 import {
     t as d
-} from "./form.js";
+} from "./form-1.js";
 import {
     t as f
 } from "./slider.js";
@@ -73,7 +73,7 @@ import {
 } from "./OwnsSeasonTicket.js";
 import {
     n as D
-} from "./Button.js";
+} from "./Button-2.js";
 import {
     n as O,
     t as k

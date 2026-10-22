@@ -13,7 +13,7 @@ import {
 } from "./react-1.js";
 import {
     t as s
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     n as c,
     t as l

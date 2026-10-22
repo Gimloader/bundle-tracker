@@ -69,7 +69,7 @@ import {
     t as pe,
     u as M,
     v as me
-} from "./Tooltip.js";
+} from "./Tooltip-2.js";
 import {
     t as N
 } from "./howler.js";

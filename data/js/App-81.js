@@ -7,10 +7,10 @@ import {
 } from "./react-1.js";
 import {
     t as n
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as r
-} from "./button.js";
+} from "./button-1.js";
 import {
     r as i,
     t as a
@@ -46,7 +46,7 @@ import {
 } from "./mobxreact.esm.js";
 import {
     n as y
-} from "./Button.js";
+} from "./Button-2.js";
 import {
     t as b
 } from "./lodash.js";

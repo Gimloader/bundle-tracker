@@ -22,14 +22,14 @@ import {
     n as f,
     r as p,
     u as m
-} from "./tooltip.js";
+} from "./tooltip-1.js";
 import {
     o as h,
     s as g
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     r as _
-} from "./button.js";
+} from "./button-1.js";
 var v = e(t()),
     y = e(i()),
     b = e => {

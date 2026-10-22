@@ -61,7 +61,7 @@ import {
 } from "./pickAttrs.js";
 import {
     t as B
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as V
 } from "./useVariants.js";

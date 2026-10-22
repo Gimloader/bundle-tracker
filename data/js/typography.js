@@ -38,7 +38,7 @@ import {
 } from "./useLocale.js";
 import {
     t as S
-} from "./tooltip.js";
+} from "./tooltip-1.js";
 import {
     t as C
 } from "./styleChecker.js";

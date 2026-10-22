@@ -20,10 +20,10 @@ import {
 } from "./message.js";
 import {
     t as u
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as d
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as f
 } from "./input.js";

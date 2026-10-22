@@ -4,7 +4,7 @@ import {
 } from "./react-1.js";
 import {
     t
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as n
 } from "./space.js";
@@ -37,7 +37,7 @@ import {
 } from "./SeasonTicketName.js";
 import {
     n as m
-} from "./Button.js";
+} from "./Button-2.js";
 e();
 var h = s(),
     g = `https://docs.creative.gimkit.com/general/publishing/community-rules-for-publishing-with-gimkit-creative`,

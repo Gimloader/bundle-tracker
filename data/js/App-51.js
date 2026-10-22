@@ -35,7 +35,7 @@ import {
 import {
     n as m,
     t as h
-} from "./Button.js";
+} from "./Button-2.js";
 import {
     t as ee
 } from "./playSound.js";

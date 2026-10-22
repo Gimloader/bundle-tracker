@@ -6,7 +6,7 @@ import {
 } from "./react-1.js";
 import {
     t as n
-} from "./button.js";
+} from "./button-1.js";
 import {
     f as r,
     i,

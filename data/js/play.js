@@ -36,10 +36,10 @@ import {
 } from "./Compact.js";
 import {
     t as T
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as E
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as te
 } from "./input.js";
@@ -124,7 +124,7 @@ import {
     t as Ge,
     v as Ke,
     y as qe
-} from "./Tooltip.js";
+} from "./Tooltip-2.js";
 import {
     C as Je,
     D as Ye,

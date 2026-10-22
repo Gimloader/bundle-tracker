@@ -21,7 +21,7 @@ import {
 } from "./react-1.js";
 import {
     t as h
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as g
 } from "./input.js";

@@ -14,7 +14,7 @@ import {
 } from "./react-1.js";
 import {
     t as c
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as l
 } from "./spin.js";

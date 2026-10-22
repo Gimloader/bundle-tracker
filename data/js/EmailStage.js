@@ -14,10 +14,10 @@ import {
 } from "./message.js";
 import {
     t as o
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as s
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as c
 } from "./input.js";

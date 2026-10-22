@@ -35,7 +35,7 @@ import {
 import {
     i as v,
     r as y
-} from "./button.js";
+} from "./button-1.js";
 import {
     n as b,
     t as x

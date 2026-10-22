@@ -10,7 +10,7 @@ import {
 } from "./react-1.js";
 import {
     t as i
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as a
 } from "./input.js";

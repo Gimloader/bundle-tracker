@@ -14,13 +14,13 @@ import {
 } from "./compact-item.js";
 import {
     t as o
-} from "./tooltip.js";
+} from "./tooltip-1.js";
 import {
     t as s
 } from "./message.js";
 import {
     t as c
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as l
 } from "./space.js";
@@ -56,7 +56,7 @@ import {
 } from "./Centered.js";
 import {
     n as S
-} from "./Button.js";
+} from "./Button-2.js";
 import {
     t as C
 } from "./useStore.js";

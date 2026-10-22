@@ -27,7 +27,7 @@ import {
 } from "./GetAssetPath.js";
 import {
     n as d
-} from "./Button.js";
+} from "./Button-2.js";
 import {
     t as f
 } from "./motion.js";

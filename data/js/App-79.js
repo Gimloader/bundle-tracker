@@ -17,10 +17,10 @@ import {
 } from "./message.js";
 import {
     t as l
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as u
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as d
 } from "./input.js";
@@ -51,7 +51,7 @@ import {
 } from "./AccessibleAnchor.js";
 import {
     n as C
-} from "./Button.js";
+} from "./Button-2.js";
 import {
     n as w,
     t as T

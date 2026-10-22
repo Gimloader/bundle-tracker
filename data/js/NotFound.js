@@ -30,7 +30,7 @@ import {
 } from "./useCSSVarCls.js";
 import {
     t as m
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as h
 } from "./App-4.js";

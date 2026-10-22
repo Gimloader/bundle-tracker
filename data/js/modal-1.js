@@ -76,7 +76,7 @@ import {
     a as ue,
     n as de,
     t as W
-} from "./button.js";
+} from "./button-1.js";
 import {
     n as G
 } from "./PurePanel.js";

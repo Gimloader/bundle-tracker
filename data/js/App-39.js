@@ -17,17 +17,17 @@ import {
 } from "./dist-3.js";
 import {
     t as l
-} from "./tooltip.js";
+} from "./tooltip-1.js";
 import {
     t as u
 } from "./message.js";
 import {
     a as d,
     t as ee
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as f
-} from "./button.js";
+} from "./button-1.js";
 import {
     r as p,
     t as m

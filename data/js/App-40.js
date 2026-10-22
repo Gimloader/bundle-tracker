@@ -37,7 +37,7 @@ import {
 } from "./NavigateTo.js";
 import {
     t as g
-} from "./Button.js";
+} from "./Button-2.js";
 import {
     t as _
 } from "./ImagePreview.js";

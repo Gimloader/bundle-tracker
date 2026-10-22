@@ -12,7 +12,7 @@ import {
 } from "./InfoCircleFilled.js";
 import {
     t as i
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as a
 } from "./select.js";
@@ -48,7 +48,7 @@ import {
 } from "./Centered.js";
 import {
     n as v
-} from "./Button.js";
+} from "./Button-2.js";
 import {
     t as ee
 } from "./motion.js";

@@ -1,4 +1,4 @@
-import{t as e}from"./typography.js";import{l as t}from"./_index.js";import{n}from"./Button.js";var r=t.div.attrs({className:`maxWidth`})`
+import{t as e}from"./typography.js";import{l as t}from"./_index.js";import{n}from"./Button-2.js";var r=t.div.attrs({className:`maxWidth`})`
   padding: 17px;
   background: rgba(255, 255, 255, 0.08);
   border-radius: 6px;

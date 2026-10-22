@@ -32,7 +32,7 @@ import {
 } from "./mobxreact.esm.js";
 import {
     t as m
-} from "./Button.js";
+} from "./Button-2.js";
 import {
     t as ee
 } from "./confetti.js";

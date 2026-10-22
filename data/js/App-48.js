@@ -22,7 +22,7 @@ import {
 } from "./compact-item.js";
 import {
     t as l
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as u
 } from "./select.js";

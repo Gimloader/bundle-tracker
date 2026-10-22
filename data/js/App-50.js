@@ -10,10 +10,10 @@ import {
 } from "./react-1.js";
 import {
     t as i
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as a
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as o
 } from "./input.js";
@@ -25,7 +25,7 @@ import {
 } from "./checkbox.js";
 import {
     t as l
-} from "./form.js";
+} from "./form-1.js";
 import {
     t as u
 } from "./App-4.js";

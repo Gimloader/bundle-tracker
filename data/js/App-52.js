@@ -35,7 +35,7 @@ import {
 import {
     n as p,
     t as m
-} from "./Button.js";
+} from "./Button-2.js";
 import {
     t as h
 } from "./lodash.js";

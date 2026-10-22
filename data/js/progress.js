@@ -36,7 +36,7 @@ import {
 } from "./InfoCircleFilled.js";
 import {
     t as w
-} from "./tooltip.js";
+} from "./tooltip-1.js";
 import {
     n as T
 } from "./useCSSVarCls.js";

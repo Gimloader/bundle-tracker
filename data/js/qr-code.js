@@ -45,7 +45,7 @@ import {
 } from "./pickAttrs.js";
 import {
     t as k
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as A
 } from "./spin.js";

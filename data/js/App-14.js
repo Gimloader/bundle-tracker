@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/QRCode.js", "assets/qr-code.js", "assets/rolldown-runtime.js", "assets/react-1.js", "assets/assertThisInitialized.js", "assets/Compact.js", "assets/color.js", "assets/compact-item.js", "assets/useLocale.js", "assets/pickAttrs.js", "assets/button.js", "assets/spin.js", "assets/jsx-runtime.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/QRCode.js", "assets/qr-code.js", "assets/rolldown-runtime.js", "assets/react-1.js", "assets/assertThisInitialized.js", "assets/Compact.js", "assets/color.js", "assets/compact-item.js", "assets/useLocale.js", "assets/pickAttrs.js", "assets/button-1.js", "assets/spin.js", "assets/jsx-runtime.js"]))) => i.map(i => d[i]);
 import {
     o as e
 } from "./rolldown-runtime.js";
@@ -35,16 +35,16 @@ import {
 } from "./compact-item.js";
 import {
     t as y
-} from "./tooltip.js";
+} from "./tooltip-1.js";
 import {
     t as re
 } from "./message.js";
 import {
     t as b
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as x
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as ie
 } from "./select.js";

@@ -42,7 +42,7 @@ import {
 import {
     n as h,
     t as g
-} from "./Button.js";
+} from "./Button-2.js";
 var _ = e(n());
 r();
 var v = {

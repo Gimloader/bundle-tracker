@@ -28,7 +28,7 @@ import {
     l as g,
     o as _,
     t as v
-} from "./tooltip.js";
+} from "./tooltip-1.js";
 var y = e(t()),
     b = e(r()),
     x = e => e ? typeof e == `function` ? e() : e : null,

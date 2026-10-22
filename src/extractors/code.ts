@@ -118,18 +118,20 @@ export default async function extractCode(force: boolean, push: boolean) {
     const nameCounts: Record<string, number> = {};
     
     for(const name of names) {
-        nameCounts[name] ??= 0;
-        nameCounts[name]++;
+        const lower = name.toLowerCase();
+        nameCounts[lower] ??= 0;
+        nameCounts[lower]++;
     }
     
     const nameCountup = {};
     for(let i = 0; i < names.length; i++) {
-        if(nameCounts[names[i]] === 1) {
+        const lower = names[i].toLowerCase();
+        if(nameCounts[lower] === 1) {
             urlMap[urls[i]] = names[i] + ".js";
         } else {
-            nameCountup[names[i]] ??= 0;
-            nameCountup[names[i]]++;
-            urlMap[urls[i]] = `${names[i]}-${nameCountup[names[i]]}.js`;
+            nameCountup[lower] ??= 0;
+            nameCountup[lower]++;
+            urlMap[urls[i]] = `${names[i]}-${nameCountup[lower]}.js`;
         }
     }
     

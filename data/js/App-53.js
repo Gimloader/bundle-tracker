@@ -23,7 +23,7 @@ import {
 import {
     n as c,
     t as l
-} from "./Button.js";
+} from "./Button-2.js";
 import {
     f as u,
     t as d

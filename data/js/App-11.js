@@ -36,10 +36,10 @@ import {
 import {
     a as b,
     t as x
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as S
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as C
 } from "./select.js";

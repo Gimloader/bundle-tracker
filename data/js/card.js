@@ -20,7 +20,7 @@ import {
 } from "./color.js";
 import {
     a as f
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as p
 } from "./useVariants.js";

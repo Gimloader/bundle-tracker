@@ -25,16 +25,16 @@ import {
 } from "./compact-item.js";
 import {
     t as h
-} from "./tooltip.js";
+} from "./tooltip-1.js";
 import {
     t as g
 } from "./message.js";
 import {
     t as _
-} from "./modal.js";
+} from "./modal-1.js";
 import {
     t as v
-} from "./button.js";
+} from "./button-1.js";
 import {
     t as y
 } from "./dropdown.js";
@@ -100,7 +100,7 @@ import {
 } from "./mobxreact.esm.js";
 import {
     t as ce
-} from "./Tooltip.js";
+} from "./Tooltip-2.js";
 import {
     t as le
 } from "./getCloudinaryUrl.js";
