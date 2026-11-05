@@ -18,13 +18,16 @@ export async function sendEmbed(embed: any, error?: boolean) {
         ...embed
     }
 
+    const pingRole = error ? process.env.ERR_PING_ROLE_ID : process.env.PING_ROLE_ID;
+    const content = pingRole ? `<@&${pingRole}>` : null;
+
     await fetch(webhook, {
         method: "POST",
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            content: null,
+            content,
             embeds: [
                 embedWithDefaults
             ],
